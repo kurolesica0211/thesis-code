@@ -85,55 +85,36 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Anne-Marie
+Anne Ferelith Fenella Bowes-Lyon (4 December 1917 – 26 September 1980), later styled Viscountess Anson and later Princess Anne of Denmark, was a British noblewoman and member of the Danish royal family by marriage, and a first cousin of Elizabeth II.
+Born into the Bowes-Lyon family, she married Thomas Anson, Viscount Anson, and had two children, Patrick Anson, 5th Earl of Lichfield, and Lady Elizabeth Shakerley, before divorcing Anson in 1948.
+She became a princess of Denmark by her second marriage to Prince Georg of Denmark in 1950.
+Family
 
+Anne Bowes-Lyon was born in Washington, D.C., in 1917.
+John Herbert Bowes-Lyon and her mother was the Hon.
+Fenella Hepburn-Stuart-Forbes-Trefusis, daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+Anne's paternal grandfather was Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne.
+She was a niece of Queen Elizabeth the Queen Mother.
+Anne had three younger sisters, two of whom were Nerissa and Katherine Bowes-Lyon, who were institutionalized in 1941 for severe intellectual disability.
+Apart from early deceased Patricia (1916–1917), Nerissa (1919–1986) and Katherine (1926–2014), Anne also had one younger sister, Diana Cinderella Somervell (1923–1986).
+Marriages
 
-Queen Sofía of Spain
+Anne married Lieutenant-Colonel Thomas William Arnold Anson (1913–1958) on 28 April 1938.
+As her husband held the courtesy title of Viscount Anson, Anne was styled Viscountess Anson upon their marriage.
+On 16 September 1950, at Glamis Castle, Anne, Viscountess Anson subsequently married Prince Georg of Denmark, upon which she became Her Highness Princess Anne of Denmark.
+Death
 
-
-Marina, consort of Prince Michael
-
-
-Princess Theodora of Greece and Denmark (Greek: Θεοδώρα Ντε Γκρες, romanized: Theodora de Grèce; born 9 June 1983), also known under her stage name Theodora Greece, is a British-Greek actress and member of the Greek and Danish royal families.
-She is the fourth child and younger daughter of deposed King Constantine II of Greece and Queen Anne-Marie of Greece.
-Theodora made her television debut in 2011 as Alison Montgomery in the American soap opera The Bold and the Beautiful.
-Biography
-
-Early life
-
-Theodora was born on 9 June 1983 at St Mary's Hospital, London.
-She is the younger daughter and fourth of the five children of the deposed Greek king Constantine II and his wife, Anne-Marie of Denmark.
-Education
-
-Theodora attended Woldingham School, an all-girls boarding school in Surrey, England, between 1994 and 2001.
-After a gap year spent at St Philip's College in Alice Springs, Australia, Theodora attended Brown University where she received her Bachelor of Arts on 28 May 2006 in Theatre Arts, having also attended Northeastern University in Boston.
-Career
-
-In April 2010, Theodora moved to Los Angeles to pursue an acting career, appearing in supporting roles under the stage name Theodora Greece.
-Personal life
-
-On 16 November 2018, it was announced that Princess Theodora was engaged to American attorney Matthew Jeremiah Kumar.
-On 28 September 2024, Theodora married Kumar in a Greek Orthodox ceremony officiated by Metropolitan Dorotheos II of Syros at the Metropolitan Cathedral of Athens.
-Guests included 250 friends and relatives, including members of European royal families, such as the bride's aunt, Queen Sofia of Spain, and Infanta Cristina of Spain, Infanta Elena of Spain, Princess Alexandra of Sayn-Wittgenstein-Berleburg, Count Michael Ahlefeldt-Laurvig-Bille, Princess Benedikte of Denmark, Crown Prince Alexander of Yugoslavia, Crown Princess Katherine of Serbia, and Prince Christian of Hanover.
-Two of her brothers, Crown Prince Pavlos and Prince Philippos, and her nephew Prince Achileas-Andreas, served as groomsmen.
-Her nieces, Princess Maria-Olympia and Arrietta Morales y de Grecia, served as bridesmaids.
-For the ceremony, Theodora wore a custom gown by Celia Kritharioti, an Irish lace veil that once belonged to her great-grandmother Princess Margaret of Connaught, and a Cartier diamond tiara that was given to Princess Margaret of Connaught by Abbas II of Egypt.
-The veil and tiara have been worn by all of Queen Ingrid of Denmark's female descendants.
-Οn 20 December 2024, Theodora, along with the other members of the former royal family acquired Greek citizenship, under the surname Theodora de Grèce.
-The family was deprived of citizenship in 1994 when the former King Constantine refused to acquire a surname, as required by law for all Greek citizens.
-Filmography
-
-Ancestry
-
-Her paternal grandparents were King Paul of Greece and Frederica of Hanover.
-Her maternal grandparents are Frederik IX of Denmark and Ingrid of Sweden.
-As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princess, and because King Christian's second son, Prince William of Denmark, was elected "George I, King of the Hellenes" in 1863, her father (George's great-grandson) inherited the throne of Greece in 1964.
+Anne died in 1980, aged 62, in London of a heart attack.
+She is buried alongside her second husband, Prince George of Denmark, at Bernstorffpark, Gentofte, Denmark.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +130,9 @@ As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princes
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +147,23 @@ As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princes
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,193 +455,271 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (aa75bfca-37ae-4b12-8514-e5e1fd768c66)
- Call ID: aa75bfca-37ae-4b12-8514-e5e1fd768c66
+  AssignClass (15aad273-0d05-4ab7-a4e4-de88f73091aa)
+ Call ID: 15aad273-0d05-4ab7-a4e4-de88f73091aa
   Args:
     type: :Person
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (25759b6e-4031-46b1-8d95-bb9a93b8153c)
- Call ID: 25759b6e-4031-46b1-8d95-bb9a93b8153c
+    source: :Anne_Bowes-Lyon
+  AssignClass (10472a15-6e65-4262-b112-0cffb59c93ab)
+ Call ID: 10472a15-6e65-4262-b112-0cffb59c93ab
   Args:
+    source: :Anne_Bowes-Lyon
     type: :Woman
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AddLiteral (552fb7ac-d6aa-484b-8eaf-fc0edd08d843)
- Call ID: 552fb7ac-d6aa-484b-8eaf-fc0edd08d843
+  AddLiteral (ab4222fa-f9a2-41b5-9f9a-f4b310692df7)
+ Call ID: ab4222fa-f9a2-41b5-9f9a-f4b310692df7
   Args:
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: Princess_Theodora_of_Greece_and_Denmark
-    literal_value: Theodora Greece
-  AssignClass (948551cf-a2cb-4fbb-bd44-69c22729d47a)
- Call ID: 948551cf-a2cb-4fbb-bd44-69c22729d47a
+    source: :Anne_Bowes-Lyon
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1917
+  AddLiteral (318d8191-4e5d-4a5d-8712-331ede2f5a58)
+ Call ID: 318d8191-4e5d-4a5d-8712-331ede2f5a58
+  Args:
+    source: :Anne_Bowes-Lyon
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1980
+  AssignClass (a59ec291-91a0-4f40-8016-662e97270755)
+ Call ID: a59ec291-91a0-4f40-8016-662e97270755
   Args:
     type: :Person
-    source: King_Constantine_II_of_Greece
-  AssignClass (77d5b7d8-17c5-47b4-a7dc-2ecb217d748f)
- Call ID: 77d5b7d8-17c5-47b4-a7dc-2ecb217d748f
+    source: :John_Herbert_Bowes-Lyon
+  AssignClass (76530c1c-de18-4cd3-ad53-e180637453e7)
+ Call ID: 76530c1c-de18-4cd3-ad53-e180637453e7
   Args:
+    source: :John_Herbert_Bowes-Lyon
     type: :Man
-    source: King_Constantine_II_of_Greece
-  AssignClass (ba858885-a534-46dd-89a7-1625d8052898)
- Call ID: ba858885-a534-46dd-89a7-1625d8052898
+  AssignClass (4a718db7-d49d-4e72-9e31-b5cb0c27893a)
+ Call ID: 4a718db7-d49d-4e72-9e31-b5cb0c27893a
   Args:
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
     type: :Person
-    source: Queen_Anne-Marie_of_Greece
-  AssignClass (2010e73f-c685-436f-a1d3-1f0dd8deb4fa)
- Call ID: 2010e73f-c685-436f-a1d3-1f0dd8deb4fa
+  AssignClass (3495e1ac-5cbc-4c56-ae35-3417c71c09e3)
+ Call ID: 3495e1ac-5cbc-4c56-ae35-3417c71c09e3
   Args:
     type: :Woman
-    source: Queen_Anne-Marie_of_Greece
-  AddTriple (6647e664-c39c-48fa-b89e-f297081ac42e)
- Call ID: 6647e664-c39c-48fa-b89e-f297081ac42e
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AddTriple (430b3b67-d94c-4d23-afd9-5bf62dfa25f3)
+ Call ID: 430b3b67-d94c-4d23-afd9-5bf62dfa25f3
   Args:
-    target: King_Constantine_II_of_Greece
-    source: Princess_Theodora_of_Greece_and_Denmark
+    target: :John_Herbert_Bowes-Lyon
     relation: :hasFather
-  AddTriple (88e163ed-5058-4d60-b802-57d51aa6b42f)
- Call ID: 88e163ed-5058-4d60-b802-57d51aa6b42f
+    source: :Anne_Bowes-Lyon
+  AddTriple (57c9d3ce-4a48-43d9-adc1-f5304688a8f3)
+ Call ID: 57c9d3ce-4a48-43d9-adc1-f5304688a8f3
   Args:
-    target: Queen_Anne-Marie_of_Greece
     relation: :hasMother
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (c381f050-c09b-4ffa-b478-a8d97e200612)
- Call ID: c381f050-c09b-4ffa-b478-a8d97e200612
+    source: :Anne_Bowes-Lyon
+    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AssignClass (cdff9806-8cb2-4259-b00c-1c04c0b008b7)
+ Call ID: cdff9806-8cb2-4259-b00c-1c04c0b008b7
   Args:
+    source: :Thomas_Anson
     type: :Person
-    source: Matthew_Jeremiah_Kumar
-  AssignClass (751f8f23-d6d8-4a3c-94c4-d13a0121858f)
- Call ID: 751f8f23-d6d8-4a3c-94c4-d13a0121858f
+  AssignClass (cdd3e82e-1b8b-4f5c-b4d9-50c28737a2b4)
+ Call ID: cdd3e82e-1b8b-4f5c-b4d9-50c28737a2b4
   Args:
+    source: :Thomas_Anson
     type: :Man
-    source: Matthew_Jeremiah_Kumar
-  AddTriple (db277fef-795e-48fc-b2ba-a5ea805f0a41)
- Call ID: db277fef-795e-48fc-b2ba-a5ea805f0a41
+  AddLiteral (c1ad2792-3040-41f5-885c-05792cde4120)
+ Call ID: c1ad2792-3040-41f5-885c-05792cde4120
   Args:
-    target: Matthew_Jeremiah_Kumar
-    source: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasRelation
-  AddLiteral (e1180631-7e88-47ac-a0c8-e54178049550)
- Call ID: e1180631-7e88-47ac-a0c8-e54178049550
-  Args:
+    source: :Anne_Bowes-Lyon
     relation: :hasMarriageYear
-    literal_value: 2024
-    source: Princess_Theodora_of_Greece_and_Denmark
-    literal_type: xsd:positiveInteger
-  AssignClass (8dacaec5-9e28-4def-bb66-3be8d788e9b2)
- Call ID: 8dacaec5-9e28-4def-bb66-3be8d788e9b2
+    literal_type: xsd:integer
+    literal_value: 1938
+  AssignClass (12ccbee7-816c-4ef1-a21a-9a64390b400b)
+ Call ID: 12ccbee7-816c-4ef1-a21a-9a64390b400b
   Args:
+    source: :Patrick_Anson
     type: :Person
-    source: King_Paul_of_Greece
-  AssignClass (4049b12a-05ed-4d90-b12b-f6223f9ff488)
- Call ID: 4049b12a-05ed-4d90-b12b-f6223f9ff488
+  AssignClass (60ec3b7e-1a39-4126-8e6b-f3b4060fea91)
+ Call ID: 60ec3b7e-1a39-4126-8e6b-f3b4060fea91
   Args:
+    source: :Patrick_Anson
     type: :Man
-    source: King_Paul_of_Greece
-  AssignClass (cf01142e-8504-4dc1-ab92-48577c75e4ba)
- Call ID: cf01142e-8504-4dc1-ab92-48577c75e4ba
+  AssignClass (90638835-4e2a-465d-9c7c-80a69318dfc0)
+ Call ID: 90638835-4e2a-465d-9c7c-80a69318dfc0
   Args:
     type: :Person
-    source: Frederica_of_Hanover
-  AssignClass (15fbb88c-0131-46b6-98d9-4cf28853680c)
- Call ID: 15fbb88c-0131-46b6-98d9-4cf28853680c
+    source: :Elizabeth_Shakerley
+  AssignClass (4c377f58-dc77-4bb7-b65d-210bd4badd27)
+ Call ID: 4c377f58-dc77-4bb7-b65d-210bd4badd27
   Args:
     type: :Woman
-    source: Frederica_of_Hanover
-  AddTriple (861eda93-7ae5-4d7e-b2d1-1703c5641157)
- Call ID: 861eda93-7ae5-4d7e-b2d1-1703c5641157
+    source: :Elizabeth_Shakerley
+  AddTriple (029ba041-39a2-4b3d-9d4f-2e940de28f55)
+ Call ID: 029ba041-39a2-4b3d-9d4f-2e940de28f55
   Args:
-    target: King_Paul_of_Greece
-    source: King_Constantine_II_of_Greece
+    target: :Patrick_Anson
+    source: :Anne_Bowes-Lyon
+    relation: :hasChild
+  AddTriple (25c57194-8bd3-4852-ba1b-770b3f87e269)
+ Call ID: 25c57194-8bd3-4852-ba1b-770b3f87e269
+  Args:
+    relation: :hasChild
+    source: :Anne_Bowes-Lyon
+    target: :Elizabeth_Shakerley
+  AddTriple (59545cd8-6975-4887-97a1-9266c72f6e98)
+ Call ID: 59545cd8-6975-4887-97a1-9266c72f6e98
+  Args:
+    target: :Patrick_Anson
+    relation: :hasChild
+    source: :Thomas_Anson
+  AddTriple (c0a7e1ea-fcdc-45da-b02f-38afb994af42)
+ Call ID: c0a7e1ea-fcdc-45da-b02f-38afb994af42
+  Args:
+    source: :Thomas_Anson
+    relation: :hasChild
+    target: :Elizabeth_Shakerley
+  AssignClass (76410973-86e3-411f-aed3-fb6c50d28962)
+ Call ID: 76410973-86e3-411f-aed3-fb6c50d28962
+  Args:
+    type: :Person
+    source: :Prince_Georg_of_Denmark
+  AssignClass (2626591b-098d-415b-84af-04dbc1a30a97)
+ Call ID: 2626591b-098d-415b-84af-04dbc1a30a97
+  Args:
+    type: :Man
+    source: :Prince_Georg_of_Denmark
+  AddLiteral (ccc1d8e4-28ac-44c6-89c2-4fbba9df7c8d)
+ Call ID: ccc1d8e4-28ac-44c6-89c2-4fbba9df7c8d
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: :Anne_Bowes-Lyon
+    literal_value: 1950
+  AssignClass (952c8979-eaf2-40a2-9a23-0659edcfb633)
+ Call ID: 952c8979-eaf2-40a2-9a23-0659edcfb633
+  Args:
+    type: :Person
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
+  AssignClass (41757d46-029e-412d-95b4-de25eccbbf73)
+ Call ID: 41757d46-029e-412d-95b4-de25eccbbf73
+  Args:
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
+    type: :Man
+  AddTriple (14b4e820-4f08-40cc-92c5-240a7a040e68)
+ Call ID: 14b4e820-4f08-40cc-92c5-240a7a040e68
+  Args:
+    target: :Charles_Hepburn-Stuart-Forbes-Trefusis
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
     relation: :hasFather
-  AddTriple (9a7f76c4-b0eb-4972-9ec3-4f50f8933fcd)
- Call ID: 9a7f76c4-b0eb-4972-9ec3-4f50f8933fcd
-  Args:
-    target: Frederica_of_Hanover
-    source: King_Constantine_II_of_Greece
-    relation: :hasMother
-  AssignClass (660e74e0-72e2-4cd8-afb9-96fe54c7aa31)
- Call ID: 660e74e0-72e2-4cd8-afb9-96fe54c7aa31
+  AssignClass (20f89fcc-3334-4877-be48-f559be0a7611)
+ Call ID: 20f89fcc-3334-4877-be48-f559be0a7611
   Args:
     type: :Person
-    source: Frederik_IX_of_Denmark
-  AssignClass (d7bc0041-ba5b-4028-890f-b00676c70a53)
- Call ID: d7bc0041-ba5b-4028-890f-b00676c70a53
+    source: :Claude_Bowes-Lyon
+  AssignClass (78179012-4b82-49aa-9616-6daa515b2194)
+ Call ID: 78179012-4b82-49aa-9616-6daa515b2194
   Args:
     type: :Man
-    source: Frederik_IX_of_Denmark
-  AssignClass (65384ec7-d2a0-40d5-9872-66d5eab64521)
- Call ID: 65384ec7-d2a0-40d5-9872-66d5eab64521
+    source: :Claude_Bowes-Lyon
+  AddTriple (128cda28-7d9c-4538-ab89-681dab0b281c)
+ Call ID: 128cda28-7d9c-4538-ab89-681dab0b281c
   Args:
-    type: :Person
-    source: Ingrid_of_Sweden
-  AssignClass (f5aed058-e7ca-47ad-bac3-c16f78db26be)
- Call ID: f5aed058-e7ca-47ad-bac3-c16f78db26be
-  Args:
-    type: :Woman
-    source: Ingrid_of_Sweden
-  AddTriple (7339681d-b894-4938-82ea-aa6df8ed5846)
- Call ID: 7339681d-b894-4938-82ea-aa6df8ed5846
-  Args:
-    target: Frederik_IX_of_Denmark
+    source: :John_Herbert_Bowes-Lyon
     relation: :hasFather
-    source: Queen_Anne-Marie_of_Greece
-  AddTriple (fb19daba-bb4c-4dd6-9f4b-a19ebc00ff38)
- Call ID: fb19daba-bb4c-4dd6-9f4b-a19ebc00ff38
-  Args:
-    target: Ingrid_of_Sweden
-    source: Queen_Anne-Marie_of_Greece
-    relation: :hasMother
-  AssignClass (dbdd40ef-d1c5-4983-8c64-155b5fa7a46b)
- Call ID: dbdd40ef-d1c5-4983-8c64-155b5fa7a46b
+    target: :Claude_Bowes-Lyon
+  AssignClass (2278b0c5-998a-4a3f-8939-a79cc9d7389f)
+ Call ID: 2278b0c5-998a-4a3f-8939-a79cc9d7389f
   Args:
     type: :Person
-    source: Crown_Prince_Pavlos
-  AssignClass (327727eb-44ef-4e7e-8236-89c21cb444b1)
- Call ID: 327727eb-44ef-4e7e-8236-89c21cb444b1
+    source: :Nerissa_Bowes-Lyon
+  AssignClass (d533a63d-6e03-4cf1-94e7-24cdf6375763)
+ Call ID: d533a63d-6e03-4cf1-94e7-24cdf6375763
   Args:
-    type: :Man
-    source: Crown_Prince_Pavlos
-  AddTriple (eafbe033-08de-4489-a291-989876c62224)
- Call ID: eafbe033-08de-4489-a291-989876c62224
+    source: :Nerissa_Bowes-Lyon
+    type: :Woman
+  AssignClass (62a85fde-fd05-470f-b3bc-55d86a30e27f)
+ Call ID: 62a85fde-fd05-470f-b3bc-55d86a30e27f
   Args:
-    target: Princess_Theodora_of_Greece_and_Denmark
-    relation: :isBrotherOf
-    source: Crown_Prince_Pavlos
-  AssignClass (e90d3632-75a5-4c32-9769-3f0f67cfa3b1)
- Call ID: e90d3632-75a5-4c32-9769-3f0f67cfa3b1
+    source: :Katherine_Bowes-Lyon
+    type: :Person
+  AssignClass (dded68cd-8a54-477e-910a-9c3929439e40)
+ Call ID: dded68cd-8a54-477e-910a-9c3929439e40
+  Args:
+    source: :Katherine_Bowes-Lyon
+    type: :Woman
+  AssignClass (89906426-cdd1-4fa9-856e-cc8e1c51da2f)
+ Call ID: 89906426-cdd1-4fa9-856e-cc8e1c51da2f
   Args:
     type: :Person
-    source: Prince_Philippos
-  AssignClass (325a1177-141b-44a1-b9a3-64c0d1e288bd)
- Call ID: 325a1177-141b-44a1-b9a3-64c0d1e288bd
+    source: :Patricia_Bowes-Lyon
+  AssignClass (daa366df-0396-4b1a-9ae6-ed0811bbf2be)
+ Call ID: daa366df-0396-4b1a-9ae6-ed0811bbf2be
   Args:
-    type: :Man
-    source: Prince_Philippos
-  AddTriple (dbe6638b-759a-4376-9a20-a17d71dbe377)
- Call ID: dbe6638b-759a-4376-9a20-a17d71dbe377
-  Args:
-    source: Prince_Philippos
-    relation: :isBrotherOf
-    target: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (3f065368-7ea4-4124-91e4-cc6799e0b30b)
- Call ID: 3f065368-7ea4-4124-91e4-cc6799e0b30b
+    source: :Patricia_Bowes-Lyon
+    type: :Woman
+  AssignClass (efdf54f7-b889-4a1f-a53d-032ed79c1b88)
+ Call ID: efdf54f7-b889-4a1f-a53d-032ed79c1b88
   Args:
     type: :Person
-    source: Queen_Sofia_of_Spain
-  AssignClass (5cbe2f99-78a3-4fe0-83c0-d704567c7266)
- Call ID: 5cbe2f99-78a3-4fe0-83c0-d704567c7266
+    source: :Diana_Cinderella_Somervell
+  AssignClass (4577b6b8-b03e-47bf-8c36-80f86a9ac669)
+ Call ID: 4577b6b8-b03e-47bf-8c36-80f86a9ac669
   Args:
     type: :Woman
-    source: Queen_Sofia_of_Spain
-  AddTriple (50b763ed-5be9-4beb-9532-887ec820b390)
- Call ID: 50b763ed-5be9-4beb-9532-887ec820b390
+    source: :Diana_Cinderella_Somervell
+  AddTriple (ecc64b5f-8008-499d-8378-a049c4a065fe)
+ Call ID: ecc64b5f-8008-499d-8378-a049c4a065fe
   Args:
-    relation: :isAuntOf
-    source: Queen_Sofia_of_Spain
-    target: Princess_Theodora_of_Greece_and_Denmark
-  Finish (9262e9b6-e2f2-4fa3-9433-f023bcfb8a9e)
- Call ID: 9262e9b6-e2f2-4fa3-9433-f023bcfb8a9e
+    target: :Nerissa_Bowes-Lyon
+    source: :Anne_Bowes-Lyon
+    relation: :isSiblingOf
+  AddTriple (dcd2a4fa-36de-4dfa-9582-3b6a36f9c262)
+ Call ID: dcd2a4fa-36de-4dfa-9582-3b6a36f9c262
   Args:
+    relation: :isSiblingOf
+    source: :Anne_Bowes-Lyon
+    target: :Katherine_Bowes-Lyon
+  AddTriple (98965154-8da6-4b5d-a2cf-82a8ccfe48bf)
+ Call ID: 98965154-8da6-4b5d-a2cf-82a8ccfe48bf
+  Args:
+    target: :Patricia_Bowes-Lyon
+    relation: :isSiblingOf
+    source: :Anne_Bowes-Lyon
+  AddTriple (5265d882-f0d9-4f8d-be39-c79df7674cba)
+ Call ID: 5265d882-f0d9-4f8d-be39-c79df7674cba
+  Args:
+    target: :Diana_Cinderella_Somervell
+    relation: :isSiblingOf
+    source: :Anne_Bowes-Lyon
+  Finish (fc5a80b0-6e4b-42a9-b3c2-a62cd0b9ff7d)
+ Call ID: fc5a80b0-6e4b-42a9-b3c2-a62cd0b9ff7d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -711,50 +860,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Crown_Prince_Pavlos a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-  data:Prince_Philippos a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-  data:Queen_Sofia_of_Spain a :Person,
+  data:Anne_Bowes-Lyon a :Person,
           :Woman ;
-      :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .
+      :hasBirthYear 1917 ;
+      :hasChild data:Elizabeth_Shakerley,
+          data:Patrick_Anson ;
+      :hasDeathYear 1980 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMarriageYear 1938,
+          1950 ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+      :isSiblingOf data:Diana_Cinderella_Somervell,
+          data:Katherine_Bowes-Lyon,
+          data:Nerissa_Bowes-Lyon,
+          data:Patricia_Bowes-Lyon .
 
-  data:Frederica_of_Hanover a :Person,
+  data:Prince_Georg_of_Denmark a :Man,
+          :Person .
+
+  data:Thomas_Anson a :Man,
+          :Person ;
+      :hasChild data:Elizabeth_Shakerley,
+          data:Patrick_Anson .
+
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+          :Person .
+
+  data:Claude_Bowes-Lyon a :Man,
+          :Person .
+
+  data:Diana_Cinderella_Somervell a :Person,
           :Woman .
 
-  data:Frederik_IX_of_Denmark a :Man,
-          :Person .
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+          :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Ingrid_of_Sweden a :Person,
+  data:John_Herbert_Bowes-Lyon a :Man,
+          :Person ;
+      :hasFather data:Claude_Bowes-Lyon .
+
+  data:Katherine_Bowes-Lyon a :Person,
           :Woman .
 
-  data:King_Constantine_II_of_Greece a :Man,
-          :Person ;
-      :hasFather data:King_Paul_of_Greece ;
-      :hasMother data:Frederica_of_Hanover .
+  data:Nerissa_Bowes-Lyon a :Person,
+          :Woman .
 
-  data:King_Paul_of_Greece a :Man,
+  data:Patricia_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Elizabeth_Shakerley a :Person,
+          :Woman .
+
+  data:Patrick_Anson a :Man,
           :Person .
-
-  data:Matthew_Jeremiah_Kumar a :Man,
-          :Person .
-
-  data:Queen_Anne-Marie_of_Greece a :Person,
-          :Woman ;
-      :hasFather data:Frederik_IX_of_Denmark ;
-      :hasMother data:Ingrid_of_Sweden .
-
-  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :alsoKnownAs "Theodora Greece"^^xsd:string ;
-      :hasFather data:King_Constantine_II_of_Greece ;
-      :hasMarriageYear "2024"^^xsd:positiveInteger ;
-      :hasMother data:Queen_Anne-Marie_of_Greece ;
-      :hasRelation data:Matthew_Jeremiah_Kumar .
 
 
 
@@ -766,158 +925,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9443fa3b-69c8-4362-9920-5a1df714a404)
- Call ID: 9443fa3b-69c8-4362-9920-5a1df714a404
+  ValidateShacl (0bafb038-6dc7-4f3d-a276-d8c080b047bb)
+ Call ID: 0bafb038-6dc7-4f3d-a276-d8c080b047bb
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to King_Paul_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon', assigned as the father of 'John_Herbert_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Paul_of_Greece, :Ancestor)
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to Frederica_of_Hanover via hasMother, but the target node is missing the required class :Ancestor.
+      The node 'John_Herbert_Bowes-Lyon', assigned as the father of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Frederik_IX_of_Denmark via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon', assigned as the father of 'John_Herbert_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to King_Paul_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis', assigned as the father of 'Fenella_Hepburn-Stuart-Forbes-Trefusis', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Paul_of_Greece, :Ancestor)
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to King_Constantine_II_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Fenella_Hepburn-Stuart-Forbes-Trefusis', assigned as the mother of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Constantine_II_of_Greece, :Ancestor)
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Ingrid_of_Sweden via hasMother, but the target node is missing the required class :Ancestor.
+      The node 'John_Herbert_Bowes-Lyon', assigned as the father of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to Frederica_of_Hanover via hasMother, but the target node is missing the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon', assigned as the father of 'John_Herbert_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to Queen_Anne-Marie_of_Greece via hasMother, but the target node is missing the required class :Ancestor.
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis', assigned as the father of 'Fenella_Hepburn-Stuart-Forbes-Trefusis', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne-Marie_of_Greece, :Ancestor)
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Frederik_IX_of_Denmark via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Fenella_Hepburn-Stuart-Forbes-Trefusis', assigned as the mother of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to King_Paul_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis', assigned as the father of 'Fenella_Hepburn-Stuart-Forbes-Trefusis', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Paul_of_Greece, :Ancestor)
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to King_Constantine_II_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
+      The node 'John_Herbert_Bowes-Lyon', assigned as the father of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Constantine_II_of_Greece, :Ancestor)
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Ingrid_of_Sweden via hasMother, but the target node is missing the required class :Ancestor.
+      The node 'Fenella_Hepburn-Stuart-Forbes-Trefusis', assigned as the mother of 'Anne_Bowes-Lyon', does not belong to the required classes ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node King_Constantine_II_of_Greece is related to Frederica_of_Hanover via hasMother, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to Queen_Anne-Marie_of_Greece via hasMother, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne-Marie_of_Greece, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Frederik_IX_of_Denmark via hasFather, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to King_Constantine_II_of_Greece via hasFather, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Constantine_II_of_Greece, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Queen_Anne-Marie_of_Greece is related to Ingrid_of_Sweden via hasMother, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Theodora_of_Greece_and_Denmark is related to Queen_Anne-Marie_of_Greece via hasMother, but the target node is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne-Marie_of_Greece, :Ancestor)
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
 
 
 
@@ -926,44 +1037,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (27d628a6-be94-4eeb-8169-d69d326f3767)
- Call ID: 27d628a6-be94-4eeb-8169-d69d326f3767
+  AssignClass (974d2305-0adf-458f-997d-090a0fc6c83a)
+ Call ID: 974d2305-0adf-458f-997d-090a0fc6c83a
   Args:
     type: :Ancestor
-    source: King_Paul_of_Greece
-  AssignClass (6c1abffd-dba2-4a46-b630-a99dd01f3e8b)
- Call ID: 6c1abffd-dba2-4a46-b630-a99dd01f3e8b
+    source: :Claude_Bowes-Lyon
+  AssignClass (6828ad3e-a593-45ea-90f0-ec47e4f0f3dc)
+ Call ID: 6828ad3e-a593-45ea-90f0-ec47e4f0f3dc
   Args:
     type: :Ancestor
-    source: Frederica_of_Hanover
-  AssignClass (e8f8eb17-5cb4-43c5-8947-503ace95fb5c)
- Call ID: e8f8eb17-5cb4-43c5-8947-503ace95fb5c
+    source: :John_Herbert_Bowes-Lyon
+  AssignClass (d0e799f5-3ab0-4ab2-8c07-1a062a098e35)
+ Call ID: d0e799f5-3ab0-4ab2-8c07-1a062a098e35
   Args:
     type: :Ancestor
-    source: Frederik_IX_of_Denmark
-  AssignClass (aeea43c7-6d6b-4019-ab08-8225f80e9ff5)
- Call ID: aeea43c7-6d6b-4019-ab08-8225f80e9ff5
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
+  AssignClass (db8b8f57-85b8-4a3f-a109-8d5358885a63)
+ Call ID: db8b8f57-85b8-4a3f-a109-8d5358885a63
   Args:
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
     type: :Ancestor
-    source: Ingrid_of_Sweden
-  AssignClass (c1d6ad76-12c6-44be-a23c-7c51d8a7f8ba)
- Call ID: c1d6ad76-12c6-44be-a23c-7c51d8a7f8ba
+  Finish (dcbd7a50-5d2c-4757-b2ac-d958aa245f97)
+ Call ID: dcbd7a50-5d2c-4757-b2ac-d958aa245f97
   Args:
-    type: :Ancestor
-    source: King_Constantine_II_of_Greece
-  AssignClass (7d7a2718-5a3b-43db-a18e-d9e3d275cc85)
- Call ID: 7d7a2718-5a3b-43db-a18e-d9e3d275cc85
-  Args:
-    type: :Ancestor
-    source: Queen_Anne-Marie_of_Greece
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -984,65 +1080,77 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Crown_Prince_Pavlos a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-  data:Prince_Philippos a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-  data:Queen_Sofia_of_Spain a :Person,
+  data:Anne_Bowes-Lyon a :Person,
           :Woman ;
-      :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .
+      :hasBirthYear 1917 ;
+      :hasChild data:Elizabeth_Shakerley,
+          data:Patrick_Anson ;
+      :hasDeathYear 1980 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMarriageYear 1938,
+          1950 ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+      :isSiblingOf data:Diana_Cinderella_Somervell,
+          data:Katherine_Bowes-Lyon,
+          data:Nerissa_Bowes-Lyon,
+          data:Patricia_Bowes-Lyon .
 
-  data:Frederica_of_Hanover a :Ancestor,
-          :Person,
+  data:Prince_Georg_of_Denmark a :Man,
+          :Person .
+
+  data:Thomas_Anson a :Man,
+          :Person ;
+      :hasChild data:Elizabeth_Shakerley,
+          data:Patrick_Anson .
+
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Diana_Cinderella_Somervell a :Person,
           :Woman .
 
-  data:Frederik_IX_of_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Ingrid_of_Sweden a :Ancestor,
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:King_Constantine_II_of_Greece a :Ancestor,
+  data:John_Herbert_Bowes-Lyon a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:King_Paul_of_Greece ;
-      :hasMother data:Frederica_of_Hanover .
+      :hasFather data:Claude_Bowes-Lyon .
 
-  data:King_Paul_of_Greece a :Ancestor,
-          :Man,
+  data:Katherine_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Nerissa_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Patricia_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Elizabeth_Shakerley a :Person,
+          :Woman .
+
+  data:Patrick_Anson a :Man,
           :Person .
 
-  data:Matthew_Jeremiah_Kumar a :Man,
-          :Person .
-
-  data:Queen_Anne-Marie_of_Greece a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Frederik_IX_of_Denmark ;
-      :hasMother data:Ingrid_of_Sweden .
-
-  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :alsoKnownAs "Theodora Greece"^^xsd:string ;
-      :hasFather data:King_Constantine_II_of_Greece ;
-      :hasMarriageYear "2024"^^xsd:positiveInteger ;
-      :hasMother data:Queen_Anne-Marie_of_Greece ;
-      :hasRelation data:Matthew_Jeremiah_Kumar .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (42f92e34-ede1-4674-a598-b81fc3b90f52)
- Call ID: 42f92e34-ede1-4674-a598-b81fc3b90f52
+  ValidateShacl (0c27a39c-4672-4f3c-bfda-ca4a99810e96)
+ Call ID: 0c27a39c-4672-4f3c-bfda-ca4a99810e96
   Args:
 
 ================================= Tool Message =================================
@@ -1053,6 +1161,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a19abecf-080a-4df4-ab88-a88f00c4065c)
- Call ID: a19abecf-080a-4df4-ab88-a88f00c4065c
+  Finish (bf27a62b-7b87-41ce-bfde-340251176c83)
+ Call ID: bf27a62b-7b87-41ce-bfde-340251176c83
   Args:

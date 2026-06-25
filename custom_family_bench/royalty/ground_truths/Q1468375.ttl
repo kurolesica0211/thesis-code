@@ -7,16 +7,76 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Margareta_of_Romania a :Person ;
+    rdfs:label "Margareta of Romania" ;
+    data:posIndicesFull "29602:29622" ;
+    data:wdtLink wdt:Q663875 ;
+    :alsoKnownAs "Margareta I of Romania",
+        "Margareta, Custodian of the Crown of Romania",
+        "Margareta, Custodian of the Romanian Crown",
+        "Queen Margareta I",
+        "Queen Margareta I of Romania" ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Elena_of_Romania a :Person ;
+    rdfs:label "Princess Elena of Romania" ;
+    data:posIndicesFull "20259:20285" ;
+    data:posIndicesPart "20759:20766",
+        "20891:20899",
+        "21692:21699",
+        "21873:21880",
+        "22060:22067",
+        "22172:22179",
+        "22440:22447",
+        "22721:22728",
+        "22868:22875",
+        "23412:23419",
+        "23477:23484",
+        "23656:23663",
+        "24875:24882",
+        "25235:25243",
+        "25649:25657",
+        "25658:25663",
+        "26144:26152",
+        "26222:26229",
+        "26361:26369",
+        "26370:26375",
+        "26884:26891",
+        "27442:27449",
+        "27474:27482",
+        "27953:27960",
+        "28131:28138",
+        "28323:28330",
+        "28420:28428",
+        "28429:28434" ;
+    data:wdtLink wdt:Q2423576 ;
+    :alsoKnownAs "Elena de Roumanie",
+        "The Princess Elena",
+        "The Princess Elena of Romania" ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Princess_Sophie_of_Romania a :Person ;
+    rdfs:label "Princess Sophie of Romania" ;
+    data:wdtLink wdt:Q1468375 ;
+    :alsoKnownAs "Princess Sofia of Romania",
+        "Sophie de Roumanie",
+        "The Princess Sofia of Romania",
+        "The Princess Sophie of Romania" ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Carol_II_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Carol_II_of_Romania a :Person ;
     rdfs:label "Carol II of Romania" ;
     data:posIndicesFull "1132:1140",
         "1276:1284",
@@ -78,223 +138,50 @@ data:Carol_II_of_Romania a :Ancestor,
     data:wdtLink wdt:Q212897 ;
     :alsoKnownAs "Carol II",
         "Charles II" ;
-    :hasChild data:Michael_I_of_Romania ;
-    :hasSex data:male ;
-    :hasSon data:Michael_I_of_Romania ;
-    :isFatherOf data:Michael_I_of_Romania ;
-    :isParentOf data:Michael_I_of_Romania .
+    :hasSex data:male .
 
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul of Greece" ;
-    data:posIndicesFull "19473:19494",
-        "19478:19494",
-        "21329:21348",
-        "21334:21348" ;
-    data:posIndicesPart "19733:19739",
+data:Constantine_I_of_Greece a :Person ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "3385:3403",
+        "3385:3413",
+        "3390:3403",
+        "3390:3413" ;
+    data:posIndicesPart "19368:19374",
+        "19488:19494",
+        "19733:19739",
+        "19766:19777",
         "19781:19787",
+        "19810:19816",
         "19997:20003",
-        "20247:20253" ;
-    data:wdtLink wdt:Q155394 ;
-    :alsoKnownAs "King Paul I of Greece",
-        "King Paul of Greece",
-        "King Pavlos I of Greece",
-        "Paul I of Greece",
-        "Pavlos I of Greece" ;
-    :hasSex data:male ;
-    :hasSister data:Helen_of_Greece_and_Denmark,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isBrotherOf data:Helen_of_Greece_and_Denmark,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSiblingOf data:Helen_of_Greece_and_Denmark,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isUncleOf data:Michael_I_of_Romania .
-
-data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Irene, Duchess of Aosta" ;
-    data:posIndicesFull "16315:16347",
-        "17646:17678",
-        "19792:19828" ;
-    data:posIndicesPart "16979:16987",
-        "17981:17989",
-        "18186:18194",
-        "18604:18612",
-        "20196:20204",
-        "20891:20899",
-        "25235:25243",
-        "25649:25657",
-        "26144:26152",
-        "26361:26369",
-        "27474:27482",
-        "28420:28428" ;
-    data:wdtLink wdt:Q236770 ;
-    :alsoKnownAs "Princess Irene of Greece and Denmark" ;
-    :hasBrother data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Helen_of_Greece_and_Denmark,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isAuntOf data:Michael_I_of_Romania ;
-    :isSiblingOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSisterOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Princess_Katherine_of_Greece_and_Denmark .
-
-data:Princess_Katherine_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Katherine of Greece and Denmark" ;
-    data:posIndicesFull "19647:19670" ;
-    data:posIndicesPart "20196:20204",
         "20247:20253",
-        "20891:20899",
-        "25235:25243",
-        "25649:25657",
-        "26144:26152",
-        "26361:26369",
-        "27474:27482",
-        "28420:28428" ;
-    data:wdtLink wdt:Q242338 ;
-    :alsoKnownAs "Lady Katherine Brandram",
-        "Princess Aikaterini of Greece and Denmark" ;
-    :hasBrother data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Helen_of_Greece_and_Denmark,
-        data:Princess_Irene-_Duchess_of_Aosta ;
-    :isAuntOf data:Michael_I_of_Romania ;
-    :isSiblingOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta ;
-    :isSisterOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta .
+        "21342:21348",
+        "9528:9534" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasSex data:male .
 
-data:Queen_Anne_of_Romania a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Anne of Romania" ;
-    data:posIndicesFull "15117:15147",
-        "2339:2369",
-        "25069:25079",
-        "26798:26808",
-        "26857:26865",
-        "28917:28927",
-        "9580:9610" ;
-    data:posIndicesPart "13090:13097",
-        "13260:13267",
-        "13434:13441",
-        "13596:13603",
-        "14072:14079",
-        "14127:14132",
-        "14312:14317",
-        "14506:14513",
-        "15291:15296",
-        "15383:15387",
-        "15498:15502",
-        "16112:16119",
-        "16420:16424",
-        "16711:16718",
-        "16988:16992",
-        "17063:17067",
-        "17303:17310",
-        "17935:17940",
-        "17966:17970",
-        "18063:18067",
-        "18221:18225",
-        "18525:18529",
-        "18804:18808",
-        "19007:19011",
-        "19569:19574",
-        "19585:19592",
-        "19600:19605",
-        "19890:19894",
-        "20168:20173",
-        "20218:20225",
-        "20230:20235",
-        "20338:20342",
-        "20759:20766",
-        "20900:20904",
-        "21297:21302",
-        "21692:21699",
-        "21873:21880",
-        "22060:22067",
-        "22172:22179",
-        "22440:22447",
-        "22721:22728",
-        "22868:22875",
-        "23412:23419",
-        "23477:23484",
-        "23656:23663",
-        "24875:24882",
-        "2534:2541",
-        "26222:26229",
-        "2635:2642",
-        "27442:27449",
-        "27953:27960",
-        "28131:28138",
-        "28323:28330",
-        "3070:3077",
-        "3180:3187",
-        "3222:3229",
-        "3334:3341",
-        "3705:3712",
-        "5159:5166",
-        "5196:5203",
-        "5819:5826",
-        "5867:5874",
-        "6566:6573",
-        "6845:6852",
-        "6888:6895",
-        "7385:7392",
-        "8518:8525",
-        "9115:9122",
-        "9771:9778",
-        "9853:9860" ;
-    data:wdtLink wdt:Q563765 ;
-    :alsoKnownAs "Princess Anne of Bourbon-Parma",
-        "Queen Anne",
-        "Queen Anne, Queen Consort of Romania" ;
-    :hasChild data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :hasDaughter data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :hasSex data:female ;
-    :isMotherOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isParentOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania .
-
-data:Helen_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Helen_of_Greece_and_Denmark a :Person ;
     rdfs:label "Helen of Greece and Denmark" ;
     data:posIndicesFull "15274:15285",
         "17600:17630" ;
     data:posIndicesPart "18667:18674",
         "19270:19277",
         "19368:19374",
+        "19488:19494",
         "19733:19739",
         "19744:19751",
         "19781:19787",
+        "19810:19816",
+        "19821:19828",
         "19927:19934",
         "19997:20003",
         "20008:20015",
-        "20247:20253" ;
+        "20247:20253",
+        "21342:21348" ;
     data:wdtLink wdt:Q162177 ;
     :alsoKnownAs "Helen, Queen Mother of Romania",
         "Helen, The Queen Mother of Romania",
@@ -305,131 +192,10 @@ data:Helen_of_Greece_and_Denmark a :Ancestor,
         "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
         "Queen Helen, The Queen Mother of Romania",
         "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
-    :hasBrother data:Paul_of_Greece ;
-    :hasChild data:Michael_I_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :hasSon data:Michael_I_of_Romania ;
-    :isMotherOf data:Michael_I_of_Romania ;
-    :isParentOf data:Michael_I_of_Romania ;
-    :isSiblingOf data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSisterOf data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark .
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:female .
 
-data:Margareta_of_Romania a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Margareta of Romania" ;
-    data:posIndicesFull "29602:29622" ;
-    data:wdtLink wdt:Q663875 ;
-    :alsoKnownAs "Margareta I of Romania",
-        "Margareta, Custodian of the Crown of Romania",
-        "Margareta, Custodian of the Romanian Crown",
-        "Queen Margareta I",
-        "Queen Margareta I of Romania" ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
-    :hasParent data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isSiblingOf data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isSisterOf data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania .
-
-data:Princess_Elena_of_Romania a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Elena of Romania" ;
-    data:posIndicesFull "20259:20285" ;
-    data:posIndicesPart "20759:20766",
-        "20891:20899",
-        "21692:21699",
-        "21873:21880",
-        "22060:22067",
-        "22172:22179",
-        "22440:22447",
-        "22721:22728",
-        "22868:22875",
-        "23412:23419",
-        "23477:23484",
-        "23656:23663",
-        "24875:24882",
-        "25235:25243",
-        "25649:25657",
-        "25658:25663",
-        "26144:26152",
-        "26222:26229",
-        "26361:26369",
-        "26370:26375",
-        "26884:26891",
-        "27442:27449",
-        "27474:27482",
-        "27953:27960",
-        "28131:28138",
-        "28323:28330",
-        "28420:28428",
-        "28429:28434" ;
-    data:wdtLink wdt:Q2423576 ;
-    :alsoKnownAs "Elena de Roumanie",
-        "The Princess Elena",
-        "The Princess Elena of Romania" ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
-    :hasParent data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Margareta_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isSiblingOf data:Margareta_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isSisterOf data:Margareta_of_Romania,
-        data:Princess_Sophie_of_Romania .
-
-data:Princess_Sophie_of_Romania a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Sophie of Romania" ;
-    data:wdtLink wdt:Q1468375 ;
-    :alsoKnownAs "Princess Sofia of Romania",
-        "Sophie de Roumanie",
-        "The Princess Sofia of Romania",
-        "The Princess Sophie of Romania" ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
-    :hasParent data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isSiblingOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :isSisterOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania .
-
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Michael_I_of_Romania a :Person ;
     rdfs:label "Michael I of Romania" ;
     data:posIndicesFull "0:9",
         "15083:15092",
@@ -629,25 +395,96 @@ data:Michael_I_of_Romania a :Ancestor,
         "King Michael I of the Romanians",
         "Michael I",
         "Michael I of the Romanians" ;
-    :hasChild data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :hasDaughter data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :hasFather data:Carol_II_of_Romania ;
-    :hasMother data:Helen_of_Greece_and_Denmark ;
     :hasParent data:Carol_II_of_Romania,
         data:Helen_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Carol_II_of_Romania,
-        data:Helen_of_Greece_and_Denmark ;
-    :isFatherOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isParentOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania,
-        data:Princess_Sophie_of_Romania ;
-    :isSonOf data:Carol_II_of_Romania,
-        data:Helen_of_Greece_and_Denmark .
+    :hasSex data:male .
+
+data:Queen_Anne_of_Romania a :Person ;
+    rdfs:label "Queen Anne of Romania" ;
+    data:posIndicesFull "15117:15147",
+        "2339:2369",
+        "25069:25079",
+        "26798:26808",
+        "26857:26865",
+        "28917:28927",
+        "9580:9610" ;
+    data:posIndicesPart "13090:13097",
+        "13260:13267",
+        "13434:13441",
+        "13596:13603",
+        "14072:14079",
+        "14127:14132",
+        "14312:14317",
+        "14506:14513",
+        "15291:15296",
+        "15383:15387",
+        "15498:15502",
+        "16112:16119",
+        "16420:16424",
+        "16711:16718",
+        "16988:16992",
+        "17063:17067",
+        "17303:17310",
+        "17935:17940",
+        "17966:17970",
+        "18063:18067",
+        "18221:18225",
+        "18525:18529",
+        "18804:18808",
+        "19007:19011",
+        "19569:19574",
+        "19585:19592",
+        "19600:19605",
+        "19890:19894",
+        "20168:20173",
+        "20218:20225",
+        "20230:20235",
+        "20338:20342",
+        "20759:20766",
+        "20900:20904",
+        "21297:21302",
+        "21692:21699",
+        "21873:21880",
+        "22060:22067",
+        "22172:22179",
+        "22440:22447",
+        "22721:22728",
+        "22868:22875",
+        "23412:23419",
+        "23477:23484",
+        "23656:23663",
+        "24875:24882",
+        "2534:2541",
+        "26222:26229",
+        "2635:2642",
+        "27442:27449",
+        "27953:27960",
+        "28131:28138",
+        "28323:28330",
+        "3070:3077",
+        "3180:3187",
+        "3222:3229",
+        "3334:3341",
+        "3705:3712",
+        "5159:5166",
+        "5196:5203",
+        "5819:5826",
+        "5867:5874",
+        "6566:6573",
+        "6845:6852",
+        "6888:6895",
+        "7385:7392",
+        "8518:8525",
+        "9115:9122",
+        "9771:9778",
+        "9853:9860" ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma",
+        "Queen Anne",
+        "Queen Anne, Queen Consort of Romania" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

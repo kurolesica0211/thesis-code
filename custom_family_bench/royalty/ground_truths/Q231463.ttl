@@ -7,215 +7,45 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
-    data:posIndicesFull "3163:3206",
-        "405:448",
-        "793:836" ;
-    data:posIndicesPart "10235:10240",
-        "10273:10278",
-        "10279:10283",
-        "10617:10623",
-        "10765:10771",
-        "11496:11502",
-        "11839:11844",
-        "11845:11849",
-        "11860:11865",
-        "11866:11870",
-        "11916:11922",
-        "11983:11989",
-        "12101:12107",
-        "12203:12211",
-        "12275:12280",
-        "12310:12316",
-        "12574:12582",
-        "12664:12670",
-        "12786:12791",
-        "12792:12796",
-        "12801:12806",
-        "13132:13138",
-        "13749:13757",
-        "13934:13942",
-        "14146:14154",
-        "14208:14213",
-        "14287:14292",
-        "14293:14297",
-        "14408:14416",
-        "14593:14598",
-        "14599:14603",
-        "14852:14857",
-        "1677:1685",
-        "1918:1923",
-        "2263:2269",
-        "2903:2908",
-        "3007:3012",
-        "3013:3017",
-        "3372:3380",
-        "3392:3400",
-        "3467:3475",
-        "3485:3490",
-        "3521:3527",
-        "3535:3539",
-        "3675:3679",
-        "3799:3807",
-        "3866:3872",
-        "4023:4031",
-        "4131:4139",
-        "4405:4413",
-        "4570:4578",
-        "4666:4671",
-        "4672:4676",
-        "4879:4884",
-        "4885:4889",
-        "5027:5032",
-        "5097:5102",
-        "5230:5235",
-        "5384:5389",
-        "5437:5442",
-        "5836:5841",
-        "5842:5846",
-        "5854:5867",
-        "5871:5877",
-        "5920:5925",
-        "5958:5964",
-        "6016:6021",
-        "6103:6108",
-        "6109:6113",
-        "621:625",
-        "6319:6325",
-        "6391:6396",
-        "6688:6693",
-        "6694:6698",
-        "6707:6720",
-        "6724:6730",
-        "6799:6807",
-        "6956:6961",
-        "6962:6966",
-        "7028:7036",
-        "7133:7138",
-        "7318:7323",
-        "7412:7418",
-        "7439:7447",
-        "7633:7638",
-        "7758:7766",
-        "8231:8236",
-        "8237:8241",
-        "8630:8636",
-        "9115:9121",
-        "9195:9200",
-        "926:934",
-        "9349:9357",
-        "9424:9429",
-        "9430:9434",
-        "9760:9765",
-        "9766:9770",
-        "9814:9822",
-        "9989:9994" ;
-    data:wdtLink wdt:Q312819 ;
-    :hasSex data:male .
-
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marina of Greece and Denmark" ;
-    data:posIndicesFull "14939:14976" ;
-    data:posIndicesPart "15011:15017",
-        "15042:15048",
-        "15080:15086" ;
-    data:wdtLink wdt:Q170184 ;
-    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
-        "Princess Marina of Greece and Denmark, The Duchess of Kent",
-        "Princess Marina, The Duchess Of Kent" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis II" ;
-    data:posIndicesFull "2939:2959",
-        "2939:2995" ;
-    data:wdtLink wdt:Q57976 ;
-    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II." ;
-    :hasChild data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :isFatherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
-
-data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Augusta Reuss of Köstritz" ;
-    data:posIndicesFull "291:325",
-        "3062:3096" ;
-    data:posIndicesPart "10639:10647",
-        "13594:13602",
-        "1553:1561",
-        "2518:2526",
-        "4857:4865",
-        "5704:5712" ;
-    data:wdtLink wdt:Q63095 ;
-    :hasChild data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :isMotherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
-
-data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
     data:posIndicesFull "0:38",
         "118:155",
         "126:155",
         "14:38" ;
-    data:posIndicesPart "10088:10093",
-        "10165:10170",
-        "10241:10248",
-        "10331:10336",
-        "10476:10481",
-        "10543:10548",
-        "10585:10590",
-        "10996:11001",
-        "11213:11218",
-        "11290:11295",
-        "11348:11353",
-        "11432:11437",
-        "11924:11929",
+    data:posIndicesPart "10129:10136",
+        "10222:10227",
+        "10299:10304",
+        "10375:10382",
+        "10465:10470",
+        "10610:10615",
+        "10677:10682",
+        "10719:10724",
+        "11130:11135",
+        "11347:11352",
+        "11424:11429",
+        "11482:11487",
+        "11566:11571",
+        "12058:12063",
         "1220:1225",
-        "12281:12288",
-        "12492:12497",
-        "12807:12814",
-        "12934:12939",
-        "13150:13157",
-        "13485:13490",
-        "14214:14221",
-        "14257:14262",
-        "14431:14438",
-        "14858:14865",
-        "14886:14891",
-        "14918:14923",
-        "15000:15005",
+        "12415:12422",
+        "12780:12785",
+        "13095:13102",
+        "13222:13227",
+        "13438:13445",
+        "13773:13778",
+        "14502:14509",
+        "14545:14550",
+        "14719:14726",
         "1506:1511",
-        "15114:15119",
-        "15406:15411",
-        "15413:15418",
+        "15146:15153",
+        "15174:15179",
+        "15206:15211",
+        "15288:15293",
+        "15402:15407",
         "1567:1572",
+        "15694:15699",
+        "15701:15706",
         "1651:1656",
         "1713:1718",
         "1924:1931",
@@ -270,27 +100,200 @@ data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
         "7734:7739",
         "7965:7970",
         "8030:8035",
-        "8375:8380",
-        "8476:8481",
-        "8513:8518",
-        "8754:8759",
-        "8822:8827",
-        "9201:9208",
-        "9359:9364",
-        "9703:9708",
-        "9995:10002" ;
+        "8509:8514",
+        "8610:8615",
+        "8647:8652",
+        "8888:8893",
+        "8956:8961",
+        "9335:9342",
+        "9493:9498",
+        "9837:9842" ;
     data:wdtLink wdt:Q231463 ;
     :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia",
         "Maria Pavlovna of Russia",
         "Maria Pavlovna the Elder",
         "Marie of Mecklenburg-Schwerin" ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
     :hasParent data:Frederick_Francis_II,
         data:Princess_Augusta_Reuss_of_Köstritz ;
-    :hasSex data:female ;
-    :isChildOf data:Frederick_Francis_II,
-        data:Princess_Augusta_Reuss_of_Köstritz ;
-    :isDaughterOf data:Frederick_Francis_II,
-        data:Princess_Augusta_Reuss_of_Köstritz .
+    :hasSex data:female .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
+    data:posIndicesFull "3163:3206",
+        "405:448",
+        "793:836" ;
+    data:posIndicesPart "10123:10128",
+        "10369:10374",
+        "10407:10412",
+        "10751:10757",
+        "10899:10905",
+        "11630:11636",
+        "11973:11978",
+        "11994:11999",
+        "12050:12056",
+        "12117:12123",
+        "12235:12241",
+        "12337:12345",
+        "12409:12414",
+        "12444:12450",
+        "12862:12870",
+        "12952:12958",
+        "13074:13079",
+        "13089:13094",
+        "13420:13426",
+        "14037:14045",
+        "14222:14230",
+        "14434:14442",
+        "14496:14501",
+        "14575:14580",
+        "14696:14704",
+        "14881:14886",
+        "15140:15145",
+        "1677:1685",
+        "1918:1923",
+        "2263:2269",
+        "2903:2908",
+        "3007:3012",
+        "3372:3380",
+        "3392:3400",
+        "3467:3475",
+        "3485:3490",
+        "3521:3527",
+        "3799:3807",
+        "3866:3872",
+        "4023:4031",
+        "4131:4139",
+        "4405:4413",
+        "4570:4578",
+        "4666:4671",
+        "4879:4884",
+        "5027:5032",
+        "5097:5102",
+        "5230:5235",
+        "5384:5389",
+        "5437:5442",
+        "5836:5841",
+        "5854:5867",
+        "5871:5877",
+        "5920:5925",
+        "5958:5964",
+        "6016:6021",
+        "6103:6108",
+        "6319:6325",
+        "6391:6396",
+        "6688:6693",
+        "6707:6720",
+        "6724:6730",
+        "6799:6807",
+        "6956:6961",
+        "7028:7036",
+        "7133:7138",
+        "7318:7323",
+        "7412:7418",
+        "7439:7447",
+        "7633:7638",
+        "7758:7766",
+        "8231:8236",
+        "8764:8770",
+        "9249:9255",
+        "926:934",
+        "9329:9334",
+        "9483:9491",
+        "9558:9563",
+        "9894:9899",
+        "9948:9956" ;
+    data:wdtLink wdt:Q312819 ;
+    :hasSex data:male .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "15227:15264" ;
+    data:posIndicesPart "15299:15305",
+        "15330:15336",
+        "15368:15374" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasSex data:female .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
+    data:posIndicesFull "10413:10417",
+        "11979:11983",
+        "12000:12004",
+        "12654:12659",
+        "13080:13084",
+        "14581:14585",
+        "14642:14657",
+        "14887:14891",
+        "223:227",
+        "2909:2914",
+        "2967:2971",
+        "3013:3017",
+        "3169:3173",
+        "3535:3539",
+        "3675:3679",
+        "411:415",
+        "4672:4676",
+        "4885:4889",
+        "5842:5846",
+        "6109:6113",
+        "621:625",
+        "6694:6698",
+        "6962:6966",
+        "7639:7644",
+        "799:803",
+        "8237:8241",
+        "8476:8480",
+        "9564:9568",
+        "9900:9904" ;
+    data:posIndicesPart "10773:10781",
+        "13882:13890",
+        "1553:1561",
+        "2518:2526",
+        "5500:5508" ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky",
+        "Grand Duchess Victoria Feodorovna of Russia",
+        "Princess Victoria Melita of Edinburgh",
+        "Victoria Feodorovna of Russia",
+        "Victoria Melita",
+        "Victoria Melita of Edinburgh",
+        "Victoria Melita of Saxe-Coburg-Gotha",
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_II a :Person ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "2939:2959",
+        "2939:2995" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasSex data:male .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Person ;
+    rdfs:label "Princess Augusta Reuss of Köstritz" ;
+    data:posIndicesFull "291:325",
+        "3062:3096" ;
+    data:posIndicesPart "10773:10781",
+        "13882:13890",
+        "1553:1561",
+        "2518:2526",
+        "4857:4865",
+        "5704:5712" ;
+    data:wdtLink wdt:Q63095 ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

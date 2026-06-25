@@ -85,17 +85,53 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Carlo Alessandro della Torre e Tasso, 3rd Duke of Castel Duino (born 10 February 1952) is the current head of the Castel Duino branch of the House of Thurn and Taxis.
-Family
+Duke Henry of Mecklenburg-Schwerin (German: Heinrich Wladimir Albrecht Ernst; Dutch: Hendrik Vladimir Albrecht Ernst; 19 April 1876 – 3 July 1934) was Prince of the Netherlands from 7 February 1901 until his death in 1934 as the husband of Queen Wilhelmina.
+Biography
 
-Carlo Alessandro is the only child of Raimundo, 2nd Duke of Castel Duino and his wife Princess Eugénie of Greece and Denmark.
-He is a maternal second cousin of Charles III, King of the United Kingdom, through their shared great-grandparents, King George I and Queen Olga of Greece, born a Grand Duchess of Russia.
+Henry of Mecklenburg-Schwerin was born on 19 April 1876 in Schwerin.
+He was the youngest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin, and his third wife, Princess Marie of Schwarzburg-Rudolstadt.
+On 6 February 1901, Henry was created a Prince of the Netherlands and the next day, 7 February, married Queen Wilhelmina in The Hague.
+Their only child together, Princess Juliana, was born in 1909.
+Henry also fathered at least one illegitimate child, Pim Lier by his mistress Willemina Martina Wenneker (1887–1973).
+Born in 1918, Lier eventually rose to prominence in post-war Dutch politics as chairman of the extreme-right Centre Party.
+The birth of a son out of wedlock was likely symptomatic of the duke's increasingly strained relationship with his wife.
+Henry attended and even presided over the festivities, but Wilhelmina stayed away and stated that she was prevented from attending by her personal religious conviction that the type of event should not take place on a Sunday.
+Henry became the 279th Knight Grand Cross of the Portuguese Order of the Tower and Sword, and in 1924, he was appointed as the 1,157th Knight of the Spanish Order of the Golden Fleece.
+He died in The Hague, Netherlands, on 3 July 1934, aged 58.
+Scouting
+
+Henry successfully merged the two Dutch Boy Scout organisations Nederlandse Padvinders Organisatie (NPO, Netherlands Pathfinder Organisation) and the Nederlandse Padvinders Bond (NPB, Netherlands Pathfinder Federation) on 11 December 1915 to form De Nederlandse Padvinders (NPV, The Netherlands Pathfinders).
+Extramarital relationships
+
+Prince Henry was known to have had numerous extra-marital affairs.
+It is rumored that he fathered between three and ten illegitimate children; however, firm proof remains elusive, except for Albrecht Willem Lier, known as the above-noted Pim Lier (22 July 1918 – 9 April 2015).
+During her widowhood, Queen Wilhelmina paid monthly allowances to three known ex-mistresses: Julia Cervey in Geneva (ƒ200 per month), Wilhelmine Steiner in Zurich (ƒ500 per month), and Mien Lier-Wenneker (1887–1973), in The Hague (ƒ500 per month).
+Mien Abbo-Wenneker (later Lier-Wenneker), gave birth to a total of six children; the older two, sisters Christina Margaretha Abbo and Edith Abbo (later Sheep-Abbo) were ostensibly the daughters of Mien's first husband, Dhr.
+Abbo, but strongly rumored to have been fathered by Prince Henry.
+In 1919, Mien married Lieutenant Jan Derk Lier, a former aide-de-camp to Prince Henry.
+A grant of one hundred thousand guilders was arranged for Lt. Lier from the State by police chief François van 't Sant, whom Queen Wilhelmina engaged to verify the facts of her husband's extramarital relationships and children.
+The male parent of the remaining three children was not verified as being either Prince Henry or Lt. Lier.
+Subsequent to their birth, no additional allowance was settled on the family; in fact, the monthly allowance of one thousand guilders to Lt. Jan Derk Lier was halved by van't Sant after a short period, although the allowance to his wife continued.
+Honours and awards
+
+Ancestry
+
+See also
+
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +147,9 @@ He is a maternal second cousin of Charles III, King of the United Kingdom, throu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +164,23 @@ He is a maternal second cousin of Charles III, King of the United Kingdom, throu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +198,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +303,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +323,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +333,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +373,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,76 +472,284 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (98b910e9-d730-444d-a931-9d8afc2a8a1f)
- Call ID: 98b910e9-d730-444d-a931-9d8afc2a8a1f
+  AssignClass (5f4f110c-d53f-4a9b-8ee2-aa0bb7bcad92)
+ Call ID: 5f4f110c-d53f-4a9b-8ee2-aa0bb7bcad92
   Args:
-    source: :CarloAlessandro
     type: :Man
-  AssignClass (bd7507a7-09e2-4bf0-9557-8b2d868f97f5)
- Call ID: bd7507a7-09e2-4bf0-9557-8b2d868f97f5
+    source: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (7984f343-0f05-453c-b03a-f558c8c0fefb)
+ Call ID: 7984f343-0f05-453c-b03a-f558c8c0fefb
   Args:
-    source: :CarloAlessandro
     type: :Person
-  AddLiteral (3a634c50-146e-4b2d-a418-53f01054148d)
- Call ID: 3a634c50-146e-4b2d-a418-53f01054148d
+    source: :Henry_of_Mecklenburg-Schwerin
+  AddLiteral (4e73a6f2-3b35-4c3e-9078-7ab78230a2a8)
+ Call ID: 4e73a6f2-3b35-4c3e-9078-7ab78230a2a8
   Args:
-    literal_value: 1952
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :CarloAlessandro
-  AssignClass (7923c3c1-bc1a-4139-82da-54cc34f857a6)
- Call ID: 7923c3c1-bc1a-4139-82da-54cc34f857a6
+    literal_type: xsd:integer
+    literal_value: 1876
+    source: :Henry_of_Mecklenburg-Schwerin
+  AddLiteral (7f4a6cba-f42d-415a-bf19-0fbf8c5061a6)
+ Call ID: 7f4a6cba-f42d-415a-bf19-0fbf8c5061a6
   Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1934
+    source: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (73bbf16e-8e3f-4926-b729-668d3a1e09cc)
+ Call ID: 73bbf16e-8e3f-4926-b729-668d3a1e09cc
+  Args:
+    source: :Frederick_Francis_II
     type: :Man
-    source: :Raimundo
-  AssignClass (6988fcf6-10f1-4f6e-a412-f5937a5c011c)
- Call ID: 6988fcf6-10f1-4f6e-a412-f5937a5c011c
+  AssignClass (e86cc178-2f55-417e-a53f-2702f04445d1)
+ Call ID: e86cc178-2f55-417e-a53f-2702f04445d1
   Args:
     type: :Person
-    source: :Raimundo
-  AssignClass (0041edc2-3ef2-4f7f-99e0-6099f1947311)
- Call ID: 0041edc2-3ef2-4f7f-99e0-6099f1947311
+    source: :Frederick_Francis_II
+  AssignClass (e4068fe7-5280-4486-9c63-70afb4aa5ba9)
+ Call ID: e4068fe7-5280-4486-9c63-70afb4aa5ba9
   Args:
     type: :Woman
-    source: :EugenieOfGreeceAndDenmark
-  AssignClass (9a053489-538e-4dd9-85b4-ac7497e58a94)
- Call ID: 9a053489-538e-4dd9-85b4-ac7497e58a94
+    source: :Marie_of_Schwarzburg-Rudolstadt
+  AssignClass (ff1a926b-1226-4887-8b68-c660c257de61)
+ Call ID: ff1a926b-1226-4887-8b68-c660c257de61
   Args:
     type: :Person
-    source: :EugenieOfGreeceAndDenmark
-  AddTriple (3c6f8139-0633-4d5b-91fc-1aaf3ee7f41e)
- Call ID: 3c6f8139-0633-4d5b-91fc-1aaf3ee7f41e
+    source: :Marie_of_Schwarzburg-Rudolstadt
+  AddTriple (9e5b8106-75de-4d18-9d62-3233e26d2d9d)
+ Call ID: 9e5b8106-75de-4d18-9d62-3233e26d2d9d
   Args:
-    relation: :hasFather
-    target: :Raimundo
-    source: :CarloAlessandro
-  AddTriple (042638e0-2a92-45aa-ab8d-b52c99c5d014)
- Call ID: 042638e0-2a92-45aa-ab8d-b52c99c5d014
+    source: :Frederick_Francis_II
+    target: :Henry_of_Mecklenburg-Schwerin
+    relation: :isFatherOf
+  AddTriple (393e0245-e820-4258-ab02-60986654d72b)
+ Call ID: 393e0245-e820-4258-ab02-60986654d72b
   Args:
-    source: :CarloAlessandro
-    relation: :hasMother
-    target: :EugenieOfGreeceAndDenmark
-  AddTriple (d4f328e7-46cc-4934-8274-a199ae5e254c)
- Call ID: d4f328e7-46cc-4934-8274-a199ae5e254c
+    source: :Marie_of_Schwarzburg-Rudolstadt
+    relation: :isMotherOf
+    target: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (17f4a2ca-54d0-4d56-be2b-d6d8445141fb)
+ Call ID: 17f4a2ca-54d0-4d56-be2b-d6d8445141fb
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :CarloAlessandro
-  AddTriple (15c322b2-9f13-4391-9c7f-d97f60948210)
- Call ID: 15c322b2-9f13-4391-9c7f-d97f60948210
+    source: :Wilhelmina
+    type: :Woman
+  AssignClass (4925dac4-4291-4bff-adc3-33bd79af4cb2)
+ Call ID: 4925dac4-4291-4bff-adc3-33bd79af4cb2
   Args:
-    source: :Raimundo
-    target: :Male
-    relation: :hasSex
-  AddTriple (c308438d-b10f-4c60-93e4-38694bce7935)
- Call ID: c308438d-b10f-4c60-93e4-38694bce7935
+    source: :Wilhelmina
+    type: :Person
+  AddLiteral (a608a7a3-1dc8-49df-ad2e-f79420e9a3e0)
+ Call ID: a608a7a3-1dc8-49df-ad2e-f79420e9a3e0
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :EugenieOfGreeceAndDenmark
-  Finish (e578ad9d-2f74-4598-9880-81781fd2a4d6)
- Call ID: e578ad9d-2f74-4598-9880-81781fd2a4d6
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1901
+    source: :Henry_of_Mecklenburg-Schwerin
+  AddTriple (b9ca3d5c-0a75-4581-afea-8d70a621972d)
+ Call ID: b9ca3d5c-0a75-4581-afea-8d70a621972d
   Args:
+    target: :Wilhelmina
+    relation: :hasRelation
+    source: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (22982e7b-ac43-483e-b041-8b93a6a52517)
+ Call ID: 22982e7b-ac43-483e-b041-8b93a6a52517
+  Args:
+    source: :Juliana
+    type: :Woman
+  AssignClass (38366bd7-f103-4244-80f3-249e55727613)
+ Call ID: 38366bd7-f103-4244-80f3-249e55727613
+  Args:
+    source: :Juliana
+    type: :Person
+  AddTriple (bb86ce3b-fa12-4cfb-95ee-2f03f03df127)
+ Call ID: bb86ce3b-fa12-4cfb-95ee-2f03f03df127
+  Args:
+    source: :Henry_of_Mecklenburg-Schwerin
+    relation: :isFatherOf
+    target: :Juliana
+  AddTriple (6d5db5dc-4d3e-4861-8aa7-68881b92a55a)
+ Call ID: 6d5db5dc-4d3e-4861-8aa7-68881b92a55a
+  Args:
+    source: :Wilhelmina
+    relation: :isMotherOf
+    target: :Juliana
+  AssignClass (ff169150-99e1-4a29-9582-8304156fc794)
+ Call ID: ff169150-99e1-4a29-9582-8304156fc794
+  Args:
+    type: :Man
+    source: :Pim_Lier
+  AssignClass (b3664340-1d2e-450f-93fe-4f40f979d948)
+ Call ID: b3664340-1d2e-450f-93fe-4f40f979d948
+  Args:
+    type: :Person
+    source: :Pim_Lier
+  AssignClass (fd2c7a67-e993-4eb9-81be-b34f224a3dfa)
+ Call ID: fd2c7a67-e993-4eb9-81be-b34f224a3dfa
+  Args:
+    source: :Willemina_Martina_Wenneker
+    type: :Woman
+  AssignClass (45f5c0de-2981-4aba-a1ab-4d5f4108a2bc)
+ Call ID: 45f5c0de-2981-4aba-a1ab-4d5f4108a2bc
+  Args:
+    source: :Willemina_Martina_Wenneker
+    type: :Person
+  AddTriple (aa520dc2-adc0-4f97-8f29-c9286331df5d)
+ Call ID: aa520dc2-adc0-4f97-8f29-c9286331df5d
+  Args:
+    relation: :isFatherOf
+    target: :Pim_Lier
+    source: :Henry_of_Mecklenburg-Schwerin
+  AddTriple (cc09bc4a-81d7-4846-ac3e-2754e5761809)
+ Call ID: cc09bc4a-81d7-4846-ac3e-2754e5761809
+  Args:
+    target: :Pim_Lier
+    relation: :isMotherOf
+    source: :Willemina_Martina_Wenneker
+  AssignClass (5bfaab49-e044-4ec9-9a53-99a9932dcd98)
+ Call ID: 5bfaab49-e044-4ec9-9a53-99a9932dcd98
+  Args:
+    type: :Man
+    source: :Jan_Derk_Lier
+  AssignClass (7f3a319a-8de3-42d0-865d-be430e955553)
+ Call ID: 7f3a319a-8de3-42d0-865d-be430e955553
+  Args:
+    source: :Jan_Derk_Lier
+    type: :Person
+  AddTriple (ef7039f4-ab61-4564-b93b-423e39833bd8)
+ Call ID: ef7039f4-ab61-4564-b93b-423e39833bd8
+  Args:
+    source: :Jan_Derk_Lier
+    relation: :hasRelation
+    target: :Willemina_Martina_Wenneker
+  AssignClass (c7106e5f-5e01-4caf-a9d7-9bb8ebc5b656)
+ Call ID: c7106e5f-5e01-4caf-a9d7-9bb8ebc5b656
+  Args:
+    type: :Woman
+    source: :Christina_Margaretha_Abbo
+  AssignClass (b3391bba-dd7d-48f2-912e-319677adb576)
+ Call ID: b3391bba-dd7d-48f2-912e-319677adb576
+  Args:
+    type: :Person
+    source: :Christina_Margaretha_Abbo
+  AssignClass (53870453-1fa3-430f-96da-13f77502b635)
+ Call ID: 53870453-1fa3-430f-96da-13f77502b635
+  Args:
+    type: :Woman
+    source: :Edith_Abbo
+  AssignClass (12d435f8-0264-4d71-9266-6733b5efb09c)
+ Call ID: 12d435f8-0264-4d71-9266-6733b5efb09c
+  Args:
+    source: :Edith_Abbo
+    type: :Person
+  AddTriple (abde8a14-a757-4766-bbb4-324359f6be1a)
+ Call ID: abde8a14-a757-4766-bbb4-324359f6be1a
+  Args:
+    source: :Willemina_Martina_Wenneker
+    relation: :isMotherOf
+    target: :Christina_Margaretha_Abbo
+  AddTriple (7b49d4ac-e494-4e92-8534-410e74a7a505)
+ Call ID: 7b49d4ac-e494-4e92-8534-410e74a7a505
+  Args:
+    source: :Willemina_Martina_Wenneker
+    relation: :isMotherOf
+    target: :Edith_Abbo
+  AddTriple (c5b00c3e-4dd1-40c7-b8f4-93985aa3f037)
+ Call ID: c5b00c3e-4dd1-40c7-b8f4-93985aa3f037
+  Args:
+    target: :Edith_Abbo
+    relation: :isSisterOf
+    source: :Christina_Margaretha_Abbo
+  Finish (67e192bb-1af2-48ae-a170-f860a7df110e)
+ Call ID: 67e192bb-1af2-48ae-a170-f860a7df110e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -468,20 +802,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CarloAlessandro a :Man,
+  data:Frederick_Francis_II a :Man,
           :Person ;
-      :hasBirthYear 1952 ;
-      :hasFather data:Raimundo ;
-      :hasMother data:EugenieOfGreeceAndDenmark ;
-      :hasSex data:Male .
+      :isFatherOf data:Henry_of_Mecklenburg-Schwerin .
 
-  data:EugenieOfGreeceAndDenmark a :Person,
+  data:Jan_Derk_Lier a :Man,
+          :Person ;
+      :hasRelation data:Willemina_Martina_Wenneker .
+
+  data:Marie_of_Schwarzburg-Rudolstadt a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Henry_of_Mecklenburg-Schwerin .
 
-  data:Raimundo a :Man,
+  data:Christina_Margaretha_Abbo a :Person,
+          :Woman ;
+      :isSisterOf data:Edith_Abbo .
+
+  data:Wilhelmina a :Person,
+          :Woman ;
+      :isMotherOf data:Juliana .
+
+  data:Willemina_Martina_Wenneker a :Person,
+          :Woman ;
+      :isMotherOf data:Christina_Margaretha_Abbo,
+          data:Edith_Abbo,
+          data:Pim_Lier .
+
+  data:Edith_Abbo a :Person,
+          :Woman .
+
+  data:Henry_of_Mecklenburg-Schwerin a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasBirthYear 1876 ;
+      :hasDeathYear 1934 ;
+      :hasMarriageYear 1901 ;
+      :hasRelation data:Wilhelmina ;
+      :isFatherOf data:Juliana,
+          data:Pim_Lier .
+
+  data:Juliana a :Person,
+          :Woman .
+
+  data:Pim_Lier a :Man,
+          :Person .
 
 
 
@@ -493,254 +856,54 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5cace954-6ede-4e0a-9d8d-673a7db0cecc)
- Call ID: 5cace954-6ede-4e0a-9d8d-673a7db0cecc
+  ValidateShacl (effbfe57-213c-4c3a-aa34-ff14ba0b1337)
+ Call ID: effbfe57-213c-4c3a-aa34-ff14ba0b1337
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:5
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
+      The node Frederick_Francis_II acts as a subject for the property :isFatherOf but lacks the required :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_Francis_II', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
+      The node Henry_of_Mecklenburg-Schwerin acts as a subject for the property :isFatherOf but lacks the required :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Henry_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node 'Raimundo' used as the father of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Man.
+      The node Willemina_Martina_Wenneker acts as a subject for the property :isMotherOf but lacks the required :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Man')
+      AssignClass(node='Willemina_Martina_Wenneker', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark' used as the mother of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Woman.
+      The node Wilhelmina acts as a subject for the property :isMotherOf but lacks the required :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Woman')
+      AssignClass(node='Wilhelmina', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
+      The node Marie_of_Schwarzburg-Rudolstadt acts as a subject for the property :isMotherOf but lacks the required :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Raimundo' used as the father of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Man')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark' used as the mother of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Woman')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Raimundo' used as the father of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Man')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark' used as the mother of 'CarloAlessandro' is not assigned to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Woman')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'CarloAlessandro' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property :hasSex on node 'Raimundo' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node 'EugenieOfGreeceAndDenmark' is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Marie_of_Schwarzburg-Rudolstadt', class=':Ancestor')
 
 
 
@@ -749,19 +912,43 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (f27cb418-ece9-4137-9dc0-b8e98c875865)
- Call ID: f27cb418-ece9-4137-9dc0-b8e98c875865
+  AssignClass (77d73298-cdbe-4ab6-8838-28e4e6fa1dc3)
+ Call ID: 77d73298-cdbe-4ab6-8838-28e4e6fa1dc3
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (b74bce1c-bc96-4b5b-a1cf-8767df7f32dd)
- Call ID: b74bce1c-bc96-4b5b-a1cf-8767df7f32dd
+    source: :Frederick_Francis_II
+    type: :Ancestor
+  AssignClass (5058ddad-2c3e-4f41-ac57-94c787899287)
+ Call ID: 5058ddad-2c3e-4f41-ac57-94c787899287
   Args:
-    source: :Female
-    type: :Sex
-  ValidateShacl (60bc3092-960e-4307-a60f-e5644b3b9d75)
- Call ID: 60bc3092-960e-4307-a60f-e5644b3b9d75
+    source: :Henry_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (43e709ed-b085-480e-ac5b-f4a70c3df24d)
+ Call ID: 43e709ed-b085-480e-ac5b-f4a70c3df24d
   Args:
+    type: :Ancestor
+    source: :Willemina_Martina_Wenneker
+  AssignClass (1865d2ec-002f-4a48-82bc-d6ea092732a3)
+ Call ID: 1865d2ec-002f-4a48-82bc-d6ea092732a3
+  Args:
+    source: :Wilhelmina
+    type: :Ancestor
+  AssignClass (923233b9-0e01-40e6-9781-8f9d8e81c6d9)
+ Call ID: 923233b9-0e01-40e6-9781-8f9d8e81c6d9
+  Args:
+    source: :Marie_of_Schwarzburg-Rudolstadt
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -774,134 +961,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CarloAlessandro a :Man,
-          :Person ;
-      :hasBirthYear 1952 ;
-      :hasFather data:Raimundo ;
-      :hasMother data:EugenieOfGreeceAndDenmark ;
-      :hasSex data:Male .
-
-  data:EugenieOfGreeceAndDenmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Raimundo a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Male a :Sex .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Raimundo', identified as the father of 'CarloAlessandro', is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark', identified as the mother of 'CarloAlessandro', is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Raimundo' is missing the class ':Man', which is required for the 'hasFather' relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Man')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark' is missing the class ':Woman', which is required for the 'hasMother' relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Woman')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Raimundo' must be explicitly categorized as an ':Ancestor' to satisfy the range constraints of the 'hasFather' property for 'CarloAlessandro'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Raimundo', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'EugenieOfGreeceAndDenmark' must be explicitly categorized as an ':Ancestor' to satisfy the range constraints of the 'hasMother' property for 'CarloAlessandro'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='EugenieOfGreeceAndDenmark', class=':Ancestor')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (d094ad01-3c20-47fe-92eb-630dc7c1c492)
- Call ID: d094ad01-3c20-47fe-92eb-630dc7c1c492
-  Args:
-    type: :Ancestor
-    source: :Raimundo
-  AssignClass (230b4c77-c750-452d-bd10-5585001a15dd)
- Call ID: 230b4c77-c750-452d-bd10-5585001a15dd
-  Args:
-    type: :Ancestor
-    source: :EugenieOfGreeceAndDenmark
-  ValidateShacl (57dc3121-b98c-47f3-9a76-79d63476a9c6)
- Call ID: 57dc3121-b98c-47f3-9a76-79d63476a9c6
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:CarloAlessandro a :Man,
-          :Person ;
-      :hasBirthYear 1952 ;
-      :hasFather data:Raimundo ;
-      :hasMother data:EugenieOfGreeceAndDenmark ;
-      :hasSex data:Male .
-
-  data:EugenieOfGreeceAndDenmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Raimundo a :Ancestor,
+  data:Frederick_Francis_II a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
+      :isFatherOf data:Henry_of_Mecklenburg-Schwerin .
 
-  data:Male a :Sex .
+  data:Jan_Derk_Lier a :Man,
+          :Person ;
+      :hasRelation data:Willemina_Martina_Wenneker .
+
+  data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Henry_of_Mecklenburg-Schwerin .
+
+  data:Christina_Margaretha_Abbo a :Person,
+          :Woman ;
+      :isSisterOf data:Edith_Abbo .
+
+  data:Wilhelmina a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Juliana .
+
+  data:Willemina_Martina_Wenneker a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Christina_Margaretha_Abbo,
+          data:Edith_Abbo,
+          data:Pim_Lier .
+
+  data:Edith_Abbo a :Person,
+          :Woman .
+
+  data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1876 ;
+      :hasDeathYear 1934 ;
+      :hasMarriageYear 1901 ;
+      :hasRelation data:Wilhelmina ;
+      :isFatherOf data:Juliana,
+          data:Pim_Lier .
+
+  data:Juliana a :Person,
+          :Woman .
+
+  data:Pim_Lier a :Man,
+          :Person .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (304cc195-eb78-4246-8063-49645c2fecc5)
+ Call ID: 304cc195-eb78-4246-8063-49645c2fecc5
+  Args:
 
 ================================= Tool Message =================================
 
@@ -911,6 +1028,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5b5a17b9-a6a7-4a78-86e0-664db1f1b1d5)
- Call ID: 5b5a17b9-a6a7-4a78-86e0-664db1f1b1d5
+  Finish (5991cfcd-60aa-4438-98e7-ef441befa571)
+ Call ID: 5991cfcd-60aa-4438-98e7-ef441befa571
   Args:

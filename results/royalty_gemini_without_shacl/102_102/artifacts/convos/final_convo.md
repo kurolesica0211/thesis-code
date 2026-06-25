@@ -94,6 +94,8 @@ Princess Alexandra worked for UNESCO
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +111,9 @@ Princess Alexandra worked for UNESCO
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +128,23 @@ Princess Alexandra worked for UNESCO
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,121 +436,171 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (78afb8f0-da37-4995-9f67-12de059f1975)
- Call ID: 78afb8f0-da37-4995-9f67-12de059f1975
+  AssignClass (1742b181-fa16-4437-bb04-ebc0ca2bbdc9)
+ Call ID: 1742b181-fa16-4437-bb04-ebc0ca2bbdc9
   Args:
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     type: :Woman
-  AssignClass (9fce0525-f70e-450f-a428-9fbcdf36145f)
- Call ID: 9fce0525-f70e-450f-a428-9fbcdf36145f
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AssignClass (55d73835-1de7-4ea2-bbe3-1eb0c851173f)
+ Call ID: 55d73835-1de7-4ea2-bbe3-1eb0c851173f
   Args:
     type: :Person
     source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-  AddLiteral (c7b76932-a7a1-4294-bfa5-8789b9b71892)
- Call ID: c7b76932-a7a1-4294-bfa5-8789b9b71892
+  AddLiteral (f32e1f55-e0f1-4120-8cb1-5de72061c729)
+ Call ID: f32e1f55-e0f1-4120-8cb1-5de72061c729
   Args:
     literal_value: 1970
     source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-    relation: :hasBirthYear
     literal_type: xsd:integer
-  AssignClass (29f56e09-1f01-442c-abbc-29a9b8af4575)
- Call ID: 29f56e09-1f01-442c-abbc-29a9b8af4575
+    relation: :hasBirthYear
+  AssignClass (fccc5589-e930-47c6-aee7-ef56116ec18e)
+ Call ID: fccc5589-e930-47c6-aee7-ef56116ec18e
   Args:
     type: :Man
     source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (68c479fb-d2de-46b5-b0d9-c40fa1d313a7)
- Call ID: 68c479fb-d2de-46b5-b0d9-c40fa1d313a7
+  AssignClass (c9a86891-8f10-40c4-a522-22eb39c06dd3)
+ Call ID: c9a86891-8f10-40c4-a522-22eb39c06dd3
   Args:
     source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
     type: :Person
-  AssignClass (871e60dd-797f-4c9e-b20c-78d96ced0139)
- Call ID: 871e60dd-797f-4c9e-b20c-78d96ced0139
+  AssignClass (c5a89dce-f771-4de3-acf9-0dfb838cb723)
+ Call ID: c5a89dce-f771-4de3-acf9-0dfb838cb723
   Args:
+    source: Princess_Benedikte_of_Denmark
     type: :Woman
-    source: Princess_Benedikte_of_Denmark
-  AssignClass (0ecd88b9-9a3e-4b22-8b95-d35a3568d322)
- Call ID: 0ecd88b9-9a3e-4b22-8b95-d35a3568d322
+  AssignClass (a1055afe-0618-4d2a-8682-a0019658d0a5)
+ Call ID: a1055afe-0618-4d2a-8682-a0019658d0a5
   Args:
+    source: Princess_Benedikte_of_Denmark
     type: :Person
-    source: Princess_Benedikte_of_Denmark
-  AddTriple (f4241009-8a99-4267-8bdc-200a0e9b702b)
- Call ID: f4241009-8a99-4267-8bdc-200a0e9b702b
+  AddTriple (54df6e8a-62c8-449f-aaa6-afa51c696ab0)
+ Call ID: 54df6e8a-62c8-449f-aaa6-afa51c696ab0
   Args:
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     relation: :hasFather
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     target: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (d72affbe-265a-4f3e-af3b-11ee2f7d3023)
- Call ID: d72affbe-265a-4f3e-af3b-11ee2f7d3023
+  AddTriple (7704fc1b-b633-4e10-a467-cbaa12302dd1)
+ Call ID: 7704fc1b-b633-4e10-a467-cbaa12302dd1
   Args:
-    relation: :hasMother
     source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     target: Princess_Benedikte_of_Denmark
-  AssignClass (ef521c3f-ac20-4ba8-839f-109597882646)
- Call ID: ef521c3f-ac20-4ba8-839f-109597882646
+    relation: :hasMother
+  AssignClass (a5306ffe-965a-456c-ae38-edd2c878a1fc)
+ Call ID: a5306ffe-965a-456c-ae38-edd2c878a1fc
   Args:
     type: :Man
     source: Prince_Gustav
-  AssignClass (a007f5bb-f280-4220-a56f-521dc29a8217)
- Call ID: a007f5bb-f280-4220-a56f-521dc29a8217
+  AssignClass (e4d8e2c6-5271-448e-bc49-6558211dfbf1)
+ Call ID: e4d8e2c6-5271-448e-bc49-6558211dfbf1
   Args:
-    source: Prince_Gustav
     type: :Person
-  AssignClass (2d7d9e0d-ff19-423d-b88d-932796db4358)
- Call ID: 2d7d9e0d-ff19-423d-b88d-932796db4358
+    source: Prince_Gustav
+  AssignClass (fc0731a9-ff8f-4938-9151-a77091bc761e)
+ Call ID: fc0731a9-ff8f-4938-9151-a77091bc761e
   Args:
     type: :Woman
     source: Princess_Nathalie
-  AssignClass (fd7bff86-af6f-4ff1-9ace-a771e09b287b)
- Call ID: fd7bff86-af6f-4ff1-9ace-a771e09b287b
+  AssignClass (e92b9060-3d5f-42bd-a09b-77ec09dfab46)
+ Call ID: e92b9060-3d5f-42bd-a09b-77ec09dfab46
   Args:
     source: Princess_Nathalie
     type: :Person
-  AddTriple (35ab9298-2b00-4803-ab7d-740e280ef84a)
- Call ID: 35ab9298-2b00-4803-ab7d-740e280ef84a
+  AddTriple (a27a162b-49fe-46cb-ba06-42ac8163584a)
+ Call ID: a27a162b-49fe-46cb-ba06-42ac8163584a
   Args:
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-    relation: :isSiblingOf
-    target: Prince_Gustav
-  AddTriple (544fa960-7b9c-4b43-9fbe-3738272c753e)
- Call ID: 544fa960-7b9c-4b43-9fbe-3738272c753e
+    target: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
+    source: Prince_Gustav
+    relation: :hasFather
+  AddTriple (1e40f962-2761-4044-8f2a-6c61c754d127)
+ Call ID: 1e40f962-2761-4044-8f2a-6c61c754d127
   Args:
-    relation: :isSiblingOf
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-    target: Princess_Nathalie
-  AssignClass (4f2cc4fd-0692-4d0a-ba8e-6e5541ff6da4)
- Call ID: 4f2cc4fd-0692-4d0a-ba8e-6e5541ff6da4
+    target: Princess_Benedikte_of_Denmark
+    source: Prince_Gustav
+    relation: :hasMother
+  AddTriple (2b03b2e0-1de8-47ee-80bd-2aedc491f622)
+ Call ID: 2b03b2e0-1de8-47ee-80bd-2aedc491f622
+  Args:
+    source: Princess_Nathalie
+    target: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
+    relation: :hasFather
+  AddTriple (7f37c2a9-4161-46d0-8779-c4631fb7cf8e)
+ Call ID: 7f37c2a9-4161-46d0-8779-c4631fb7cf8e
+  Args:
+    target: Princess_Benedikte_of_Denmark
+    source: Princess_Nathalie
+    relation: :hasMother
+  AssignClass (f2dbd616-d36b-4261-ac02-9527f828a22c)
+ Call ID: f2dbd616-d36b-4261-ac02-9527f828a22c
   Args:
     source: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
     type: :Man
-  AssignClass (cc92e4a8-030d-46ee-b1a8-eee00f995f10)
- Call ID: cc92e4a8-030d-46ee-b1a8-eee00f995f10
+  AssignClass (db647202-cca7-499c-aca0-944bf1b50dfb)
+ Call ID: db647202-cca7-499c-aca0-944bf1b50dfb
   Args:
-    source: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
     type: :Person
-  AddLiteral (e5feeb19-d835-4df2-9572-f2bbbdd048d6)
- Call ID: e5feeb19-d835-4df2-9572-f2bbbdd048d6
+    source: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
+  AddLiteral (3b97cbf7-f8bb-407a-b10b-213dcf4795b6)
+ Call ID: 3b97cbf7-f8bb-407a-b10b-213dcf4795b6
   Args:
     literal_value: 1998
-    relation: :hasMarriageYear
     source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     literal_type: xsd:integer
-  AssignClass (2ff1692b-34d2-4380-8f88-63585b262df1)
- Call ID: 2ff1692b-34d2-4380-8f88-63585b262df1
+    relation: :hasMarriageYear
+  AddTriple (0209d122-48b4-412d-a8e0-1a2617b61d67)
+ Call ID: 0209d122-48b4-412d-a8e0-1a2617b61d67
   Args:
-    source: Count_Michael_of_Ahlefeldt-Laurvig-Bille
+    relation: :hasRelation
+    target: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AssignClass (d97fca34-0f6d-429d-bebd-ca34bf59763f)
+ Call ID: d97fca34-0f6d-429d-bebd-ca34bf59763f
+  Args:
     type: :Man
-  AssignClass (919ee104-7ee9-4e50-a0fb-1f8a39cde1ad)
- Call ID: 919ee104-7ee9-4e50-a0fb-1f8a39cde1ad
+    source: Count_Michael_of_Ahlefeldt-Laurvig-Bille
+  AssignClass (3625d7ec-380d-4fdb-b08f-ce902340ac05)
+ Call ID: 3625d7ec-380d-4fdb-b08f-ce902340ac05
   Args:
     type: :Person
     source: Count_Michael_of_Ahlefeldt-Laurvig-Bille
-  AddLiteral (30de4876-13d3-4b0f-bdf6-90b879325328)
- Call ID: 30de4876-13d3-4b0f-bdf6-90b879325328
+  AddLiteral (307515b6-1aca-43c4-b7dc-c2f961661fd4)
+ Call ID: 307515b6-1aca-43c4-b7dc-c2f961661fd4
   Args:
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     literal_value: 2019
     literal_type: xsd:integer
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     relation: :hasMarriageYear
-  Finish (6b468939-4ed4-4fd5-9063-2a5885560ef0)
- Call ID: 6b468939-4ed4-4fd5-9063-2a5885560ef0
+  AddTriple (52c9c219-c429-4dd7-aeb4-4de881208884)
+ Call ID: 52c9c219-c429-4dd7-aeb4-4de881208884
+  Args:
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    target: Count_Michael_of_Ahlefeldt-Laurvig-Bille
+    relation: :hasRelation
+  AssignClass (8acc692a-c775-4f97-b2d5-2d38f125a40f)
+ Call ID: 8acc692a-c775-4f97-b2d5-2d38f125a40f
+  Args:
+    type: :Woman
+    source: Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille
+  AssignClass (a328536e-73ee-425a-960b-6fabc1708928)
+ Call ID: a328536e-73ee-425a-960b-6fabc1708928
+  Args:
+    source: Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille
+    type: :Person
+  AssignClass (240d984c-f387-45c4-a659-2ea6272c734a)
+ Call ID: 240d984c-f387-45c4-a659-2ea6272c734a
+  Args:
+    source: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+    type: :Man
+  AssignClass (c27ad9bb-5892-4633-a7db-d211bfddaf99)
+ Call ID: c27ad9bb-5892-4633-a7db-d211bfddaf99
+  Args:
+    type: :Person
+    source: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+  AddTriple (23b40571-7269-470c-8102-e7adb66564d3)
+ Call ID: 23b40571-7269-470c-8102-e7adb66564d3
+  Args:
+    target: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+    source: Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille
+    relation: :hasRelation
+  Finish (678a1443-c442-43fa-813e-59f4d4621769)
+ Call ID: 678a1443-c442-43fa-813e-59f4d4621769
   Args:

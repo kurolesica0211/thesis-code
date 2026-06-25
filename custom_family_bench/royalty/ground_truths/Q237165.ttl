@@ -7,34 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "17:29" ;
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "392:401",
+        "392:410" ;
     data:posIndicesPart "1591:1596",
         "1708:1713" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isMotherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain .
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasParent data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male .
 
-data:Infanta_Margarita-_Duchess_of_Soria a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Margarita-_Duchess_of_Soria a :Person ;
     rdfs:label "Infanta Margarita, Duchess of Soria" ;
     data:posIndicesFull "130:165",
         "191:206" ;
@@ -55,63 +42,16 @@ data:Infanta_Margarita-_Duchess_of_Soria a :Person,
     data:wdtLink wdt:Q237165 ;
     :alsoKnownAs "Margarita Maria",
         "Margarita Maria de Borbón y de Borbón, Infanta de España" ;
-    :hasBrother data:Juan_Carlos_I_of_Spain ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
     :hasParent data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:female ;
-    :isAuntOf data:Felipe_VI_of_Spain ;
-    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isDaughterOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
-    :isSisterOf data:Juan_Carlos_I_of_Spain .
+    :hasSex data:female .
 
-data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Juan, Count of Barcelona" ;
-    data:posIndicesFull "518:550" ;
-    data:posIndicesPart "1637:1641" ;
-    data:wdtLink wdt:Q313857 ;
-    :alsoKnownAs "Infante Juan of Barcelona" ;
-    :hasChild data:Infanta_Margarita-_Duchess_of_Soria,
-        data:Juan_Carlos_I_of_Spain ;
-    :hasDaughter data:Infanta_Margarita-_Duchess_of_Soria ;
-    :hasSex data:male ;
-    :hasSon data:Juan_Carlos_I_of_Spain ;
-    :isFatherOf data:Infanta_Margarita-_Duchess_of_Soria,
-        data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Infanta_Margarita-_Duchess_of_Soria,
-        data:Juan_Carlos_I_of_Spain .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Felipe VI of Spain" ;
-    data:posIndicesFull "392:401",
-        "392:410" ;
-    data:posIndicesPart "1591:1596",
-        "1708:1713" ;
-    data:wdtLink wdt:Q191045 ;
-    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
-        "Felipe VI",
-        "Philip John Paul Alphonse of All Saints of Bourbon",
-        "Philip VI of Spain" ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:wdtLink a owl:AnnotationProperty .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
     rdfs:label "Juan Carlos I of Spain" ;
     data:posIndicesFull "348:361" ;
     data:posIndicesPart "1591:1596",
@@ -122,16 +62,18 @@ data:Juan_Carlos_I_of_Spain a :Ancestor,
     data:wdtLink wdt:Q19943 ;
     :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
         "Juan Carlos I" ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
     :hasParent data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Margarita-_Duchess_of_Soria ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isBrotherOf data:Infanta_Margarita-_Duchess_of_Soria ;
-    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isFatherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria ;
-    :isSonOf data:Infante_Juan-_Count_of_Barcelona .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:Infante_Juan-_Count_of_Barcelona a :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:posIndicesFull "518:550" ;
+    data:posIndicesPart "1637:1641" ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

@@ -2,70 +2,72 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandrine_Irene_of_Prussia a :Person,
+data:Konrad a :Man ;
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein .
+
+data:Prince_Frederick_Alfred a :Man ;
+    :hasFather data:Prince_Georg .
+
+data:Prince_Frederick_Konrad a :Man ;
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Margot_Gr%C3%B6ssler .
+
+data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Ancestor,
+        :Man ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1958 .
+
+data:Count_Ernst_of_Lippe-Biesterfeld a :Ancestor,
+        :Man .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
         :Woman ;
-    :hasAncestor data:Queen_Victoria ;
-    :hasBirthYear 1915 ;
-    :hasBrother data:Frederick_brother,
-        data:Hubertus_brother,
-        data:Louis_Ferdinand_brother,
-        data:Wilhelm_brother ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Wilhelm_German_Crown_Prince ;
-    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasSex data:Female ;
-    :hasSister data:Cecilie_sister .
+    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
+data:Emma_Carola_Passavant a :Ancestor,
         :Woman ;
-    :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :hasSex data:Female .
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1971 .
 
-data:Cecilie_sister a :Person,
+data:Erika_W%C3%A4gner a :Ancestor,
         :Woman .
 
-data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
-        :Man,
-        :Person .
+data:Friedrich_Gr%C3%B6ssler a :Ancestor,
+        :Man .
 
-data:Frederick_brother a :Man,
-        :Person .
+data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+        :Man .
 
-data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
+data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
 
-data:Hubertus_brother a :Man,
-        :Person .
+data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
+    :hasMother data:Emma_Carola_Passavant .
 
-data:Louis_Ferdinand_brother a :Man,
-        :Person .
+data:Bernhard_Prince_of_Saxe-Meiningen a :Ancestor,
+        :Man ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Prince_Georg ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein,
+        data:Margot_Gr%C3%B6ssler .
 
-data:Male a :Sex .
+data:Margot_Gr%C3%B6ssler a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Friedrich_Gr%C3%B6ssler ;
+    :hasMother data:Erika_W%C3%A4gner .
 
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Wilhelm_German_Crown_Prince a :Ancestor,
-        :Man,
-        :Person ;
-    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II_German_Emperor ;
-    :hasSex data:Male .
-
-data:Wilhelm_II_German_Emperor a :Ancestor,
-        :Man,
-        :Person .
-
-data:Wilhelm_brother a :Man,
-        :Person .
-
-data:Female a :Sex .
+data:Prince_Georg a :Ancestor,
+        :Man .
 

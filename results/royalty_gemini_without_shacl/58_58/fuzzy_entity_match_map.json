@@ -16,14 +16,14 @@
       "qid": "Q154308",
       "label": "Manuel II of Portugal",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Amélie_of_Orléans",
       "qid": "Q236965",
       "label": "Amélie of Orléans",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -38,11 +38,11 @@
       "ground_truth_qid": "Q236965",
       "ground_truth_label": "Amélie of Orléans",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Amélie of Orléans",
       "best_candidate_label": "Amélie of Orléans",
       "best_candidate_qid": "Q236965",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -56,11 +56,11 @@
       "ground_truth_qid": "Q154308",
       "ground_truth_label": "Manuel II of Portugal",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Manuel II",
       "best_candidate_label": "Manuel II of Portugal",
       "best_candidate_qid": "Q154308",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -75,11 +75,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Manuel the Patriot",
+      "best_candidate_label": "Manuel II of Portugal",
+      "best_candidate_qid": "Q154308",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.4117647058823529
     },
     {
       "extracted_uri": "http://example.org/data/Carlos_I",
@@ -96,7 +96,7 @@
       "best_candidate_match_text": "Manuel II of Portugal",
       "best_candidate_label": "Manuel II of Portugal",
       "best_candidate_qid": "Q154308",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.27586206896551724
     },
     {
@@ -114,49 +114,13 @@
       "best_candidate_match_text": "Manuel the Unfortunate",
       "best_candidate_label": "Manuel II of Portugal",
       "best_candidate_qid": "Q154308",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.24242424242424243
-    },
-    {
-      "extracted_uri": "http://example.org/data/Maria_Pia_of_Savoy",
-      "extracted_local_name": "Maria_Pia_of_Savoy",
-      "embedding_text": "Maria Pia of Savoy",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
-    },
-    {
-      "extracted_uri": "http://example.org/data/William_Prince_of_Hohenzollern",
-      "extracted_local_name": "William_Prince_of_Hohenzollern",
-      "embedding_text": "William Prince of Hohenzollern",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
     }
   ],
   "summary": {
-    "entities_total": 7,
+    "entities_total": 5,
     "entities_matched": 2,
-    "entities_unmatched": 5
+    "entities_unmatched": 3
   }
 }

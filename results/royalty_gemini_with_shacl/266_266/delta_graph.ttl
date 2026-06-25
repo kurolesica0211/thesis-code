@@ -2,60 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_Feodorovna a :Person,
+data:Luis_Filipe a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1908 ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Amelie_dOrleans ;
+    :isSiblingOf data:Manuel_II .
+
+data:Patricia_of_Connaught a :Person,
         :Woman ;
-    :hasMarriageYear data:1926 .
+    :hasFather data:Arthur_Duke_of_Connaught ;
+    :hasMother data:Louise_Margaret_of_Prussia .
 
-data:Paul_Romanovsky_Ilyinsky a :Man,
-        :Person ;
-    :hasFather data:Dmitri_Pavlovich ;
-    :hasMother data:Audrey_Emery .
+data:Prince_Albert a :Man,
+        :Person .
 
-data:Sergei_Alexandrovich a :Man,
-        :Person ;
-    :hasBrother data:Paul_Alexandrovich .
+data:Queen_Victoria a :Person,
+        :Woman .
 
-data:1926 a :DomainEntity .
-
-data:Alexander_II a :Ancestor,
+data:Arthur_Duke_of_Connaught a :Ancestor,
         :Man,
         :Person .
 
-data:Dmitri_Pavlovich a :Ancestor,
+data:Louise_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Luis_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Amelie_dOrleans .
+
+data:Amelie_dOrleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Carlos_I a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1942 ;
-    :hasFather data:Paul_Alexandrovich ;
-    :hasMarriageYear 1926 ;
-    :hasMother data:Alexandra_Georgievna ;
-    :hasRelation data:Audrey_Emery ;
-    :hasSex data:Male_Node ;
-    :hasSister data:Maria_Pavlovna .
-
-data:Male_Node a :Male,
-        :Sex .
-
-data:Maria_Alexandrovna a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Maria_Pavlovna a :Person,
-        :Woman ;
-    :hasFather data:Paul_Alexandrovich ;
-    :hasMother data:Alexandra_Georgievna .
-
-data:Alexandra_Georgievna a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Audrey_Emery a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Paul_Alexandrovich a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Alexander_II ;
-    :hasMother data:Maria_Alexandrovna .
+    :hasFather data:Luis_I .
 

@@ -80,15 +80,12 @@ Sarah is a godmother to Prince Harry, Duke of Sussex, Lady Rose Gilman, and Lady
 She also has half-siblings on her father's side: Polly Fry (born 1960), Lady Frances Armstrong-Jones (born 1979), and Jasper Cable-Alexander (born 1998).
 Sarah and her brother, David, then Viscount Linley, grew up in the nursery of Kensington Palace, Apartment 10.
 Their parents' marriage was fractious; the couple formally separated when Sarah was 12 and divorced when she was 14.
-She and her brother spent weekends, depending on with which parent, at either Nymans or Royal Lodge.
 Holidays were given to the royal estates at Sandringham and Balmoral, where Sarah did landscape painting.
 Sarah was a bridesmaid at the wedding of her cousin Charles, Prince of Wales, and Lady Diana Spencer.
-She also studied art at the Royal Academy Schools.
 The film's producer, her relative John Knatchbull, 7th Baron Brabourne (son-in-law of Louis Mountbatten, 1st Earl Mountbatten of Burma), gave her a job as an intern assisting the wardrobe department and studying wood gilding under her father's cousin Thomas Messel.
 Professional life
 
 Chatto has been exhibiting her work, always under the name Sarah Armstrong-Jones, at The Redfern Gallery since 1995.
-In 2004, she became vice president of the Royal Ballet, of which her mother had been president.
 Chatto does not undertake public duties and is not considered a "working royal".
 However, it has been reported that she was close to her aunt Queen Elizabeth II.
 Chatto is frequently seen attending public events such as jubilees and funerals, as well as semi-private royal family events, such as the Sandringham Christmas service, with her sons.
@@ -104,6 +101,8 @@ Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her fi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +118,9 @@ Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her fi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +135,23 @@ Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her fi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,149 +443,170 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (529ee0c9-4ccb-4c5c-adb9-82e712daceb6)
- Call ID: 529ee0c9-4ccb-4c5c-adb9-82e712daceb6
+  AssignClass (5b7493ef-0f80-414f-9f24-29d4f03d8675)
+ Call ID: 5b7493ef-0f80-414f-9f24-29d4f03d8675
   Args:
+    source: Sarah_Chatto
     type: :Woman
-    source: SarahChatto
-  AssignClass (841f3fd9-88f2-4a67-9ed2-9c7d4118f301)
- Call ID: 841f3fd9-88f2-4a67-9ed2-9c7d4118f301
+  AssignClass (a0a2e3f9-2757-480e-8413-22c4aba25a8e)
+ Call ID: a0a2e3f9-2757-480e-8413-22c4aba25a8e
   Args:
+    source: Princess_Margaret
     type: :Woman
-    source: PrincessMargaret
-  AssignClass (bcd97942-9d46-4922-9b26-c76f3e400c0d)
- Call ID: bcd97942-9d46-4922-9b26-c76f3e400c0d
+  AssignClass (e7b0eab4-e449-48f7-9c82-af856a41b788)
+ Call ID: e7b0eab4-e449-48f7-9c82-af856a41b788
   Args:
+    source: Antony_Armstrong-Jones
     type: :Man
-    source: AntonyArmstrongJones
-  AssignClass (af871906-a6b2-4c3d-8060-5e15d7e3db0d)
- Call ID: af871906-a6b2-4c3d-8060-5e15d7e3db0d
+  AssignClass (81224826-d620-4816-9edd-5b66724eda0c)
+ Call ID: 81224826-d620-4816-9edd-5b66724eda0c
   Args:
+    source: David_Armstrong-Jones
     type: :Man
-    source: DavidArmstrongJones
-  AssignClass (b163a935-4a32-46ec-ac97-832792a68706)
- Call ID: b163a935-4a32-46ec-ac97-832792a68706
+  AssignClass (8c4b0957-c311-4a68-8c98-9be83afc7f8d)
+ Call ID: 8c4b0957-c311-4a68-8c98-9be83afc7f8d
   Args:
-    source: KingCharlesIII
+    source: King_Charles_III
     type: :Man
-  AssignClass (eae83228-e8ed-4679-afdf-8d1447912a57)
- Call ID: eae83228-e8ed-4679-afdf-8d1447912a57
+  AssignClass (59f914f9-0e8e-424a-9c25-4c1a57d29246)
+ Call ID: 59f914f9-0e8e-424a-9c25-4c1a57d29246
   Args:
+    source: Daniel_Chatto
     type: :Man
-    source: DanielChatto
-  AssignClass (9901e7f7-3da3-467a-9762-262b844c83bb)
- Call ID: 9901e7f7-3da3-467a-9762-262b844c83bb
+  AssignClass (1144dd9f-b9ae-422b-84f8-ef14d692efe6)
+ Call ID: 1144dd9f-b9ae-422b-84f8-ef14d692efe6
   Args:
+    source: Tom_Chatto
     type: :Man
-    source: TomChatto
-  AssignClass (271651ce-ee33-48b2-b231-c102593accf8)
- Call ID: 271651ce-ee33-48b2-b231-c102593accf8
+  AssignClass (777d8b93-7969-459c-a1b4-96a8d9a6971f)
+ Call ID: 777d8b93-7969-459c-a1b4-96a8d9a6971f
   Args:
+    source: Ros_Chatto
     type: :Woman
-    source: RosChatto
-  AssignClass (d7058dde-d9ee-4ca6-827d-f7ed78020abb)
- Call ID: d7058dde-d9ee-4ca6-827d-f7ed78020abb
+  AssignClass (129e4316-497a-4d48-970c-53bc0609cbf6)
+ Call ID: 129e4316-497a-4d48-970c-53bc0609cbf6
   Args:
+    source: Polly_Fry
     type: :Woman
-    source: PollyFry
-  AssignClass (669d2e74-b4a5-49a0-b652-8805be79f3c7)
- Call ID: 669d2e74-b4a5-49a0-b652-8805be79f3c7
+  AssignClass (38e8d092-16cb-4d3b-a391-8d1ce316c121)
+ Call ID: 38e8d092-16cb-4d3b-a391-8d1ce316c121
   Args:
-    source: FrancesArmstrongJones
+    source: Lady_Frances_Armstrong-Jones
     type: :Woman
-  AssignClass (f897ccce-a40e-455a-b0c3-b6284ea8d90b)
- Call ID: f897ccce-a40e-455a-b0c3-b6284ea8d90b
+  AssignClass (3f1a51ff-3374-40bd-bb15-23a5e122ad79)
+ Call ID: 3f1a51ff-3374-40bd-bb15-23a5e122ad79
   Args:
-    source: JasperCableAlexander
+    source: Jasper_Cable-Alexander
     type: :Man
-  AddLiteral (cd56207e-ce29-4348-b084-f8bca2796680)
- Call ID: cd56207e-ce29-4348-b084-f8bca2796680
+  AddLiteral (bdef1900-c082-4cda-850f-8ae16ec867da)
+ Call ID: bdef1900-c082-4cda-850f-8ae16ec867da
   Args:
-    relation: :hasBirthYear
-    source: SarahChatto
-    literal_type: xsd:integer
     literal_value: 1964
-  AddTriple (9466235a-61d2-4a3a-9a9b-738abd828633)
- Call ID: 9466235a-61d2-4a3a-9a9b-738abd828633
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Sarah_Chatto
+  AddTriple (a6f08fc6-a69a-4cda-880f-f62b16a4b5cf)
+ Call ID: a6f08fc6-a69a-4cda-880f-f62b16a4b5cf
   Args:
-    target: PrincessMargaret
     relation: :hasMother
-    source: SarahChatto
-  AddTriple (2f72a19a-d470-4cbd-80a4-4ba68b67b292)
- Call ID: 2f72a19a-d470-4cbd-80a4-4ba68b67b292
+    source: Sarah_Chatto
+    target: Princess_Margaret
+  AddTriple (eecfca5e-3bbc-4fba-8ab7-d93ca7f435b2)
+ Call ID: eecfca5e-3bbc-4fba-8ab7-d93ca7f435b2
   Args:
-    target: AntonyArmstrongJones
-    source: SarahChatto
+    target: Antony_Armstrong-Jones
     relation: :hasFather
-  AddTriple (cd4066c1-783f-44a1-b5b8-63cb5c9ba7b8)
- Call ID: cd4066c1-783f-44a1-b5b8-63cb5c9ba7b8
+    source: Sarah_Chatto
+  AddTriple (ddb891b4-5b8b-4fdb-a8c4-bf19d843e5ac)
+ Call ID: ddb891b4-5b8b-4fdb-a8c4-bf19d843e5ac
   Args:
+    target: David_Armstrong-Jones
     relation: :hasBrother
-    source: SarahChatto
-    target: DavidArmstrongJones
-  AddTriple (9292fa76-9015-4903-9fdf-b88f081faf25)
- Call ID: 9292fa76-9015-4903-9fdf-b88f081faf25
-  Args:
-    source: DavidArmstrongJones
-    relation: :hasMother
-    target: PrincessMargaret
-  AddTriple (8033fc8c-0c3e-4dc7-8ed9-c786ebf7352e)
- Call ID: 8033fc8c-0c3e-4dc7-8ed9-c786ebf7352e
+    source: Sarah_Chatto
+  AddTriple (2885ba39-5262-42c1-b371-f5d2090b1483)
+ Call ID: 2885ba39-5262-42c1-b371-f5d2090b1483
   Args:
     relation: :hasFather
-    source: DavidArmstrongJones
-    target: AntonyArmstrongJones
-  AddTriple (84324216-64dc-4e08-9685-d825bae2a6c7)
- Call ID: 84324216-64dc-4e08-9685-d825bae2a6c7
+    source: David_Armstrong-Jones
+    target: Antony_Armstrong-Jones
+  AddTriple (ecfb0739-84e0-4d24-8617-22c12a3e6faa)
+ Call ID: ecfb0739-84e0-4d24-8617-22c12a3e6faa
   Args:
-    source: DanielChatto
-    relation: :hasFather
-    target: TomChatto
-  AddTriple (8821e6d4-f6fb-4a6a-985e-d65683f133ea)
- Call ID: 8821e6d4-f6fb-4a6a-985e-d65683f133ea
-  Args:
-    target: RosChatto
     relation: :hasMother
-    source: DanielChatto
-  AddLiteral (62165be1-c925-4866-8d49-f58887a10032)
- Call ID: 62165be1-c925-4866-8d49-f58887a10032
+    source: David_Armstrong-Jones
+    target: Princess_Margaret
+  AddTriple (1bd8afe2-3c07-4562-bfd4-310feff0740f)
+ Call ID: 1bd8afe2-3c07-4562-bfd4-310feff0740f
+  Args:
+    relation: :hasFather
+    source: Polly_Fry
+    target: Antony_Armstrong-Jones
+  AddTriple (85f55c63-d2a0-4272-a176-6c08d8776b68)
+ Call ID: 85f55c63-d2a0-4272-a176-6c08d8776b68
+  Args:
+    relation: :hasFather
+    source: Lady_Frances_Armstrong-Jones
+    target: Antony_Armstrong-Jones
+  AddTriple (70e1baf9-65fb-480f-8d24-be071f1d680a)
+ Call ID: 70e1baf9-65fb-480f-8d24-be071f1d680a
+  Args:
+    relation: :hasFather
+    source: Jasper_Cable-Alexander
+    target: Antony_Armstrong-Jones
+  AddTriple (47bf7e73-f3bb-492a-814b-161e6bee1de5)
+ Call ID: 47bf7e73-f3bb-492a-814b-161e6bee1de5
+  Args:
+    target: Tom_Chatto
+    source: Daniel_Chatto
+    relation: :hasFather
+  AddTriple (9f3e9d29-a314-440b-b5cb-2c1d43de9e50)
+ Call ID: 9f3e9d29-a314-440b-b5cb-2c1d43de9e50
+  Args:
+    relation: :hasMother
+    source: Daniel_Chatto
+    target: Ros_Chatto
+  AddLiteral (b89524f6-a7a6-4f3d-8d8e-97399b0f9321)
+ Call ID: b89524f6-a7a6-4f3d-8d8e-97399b0f9321
   Args:
     relation: :hasBirthYear
-    source: PollyFry
+    source: Tom_Chatto
     literal_type: xsd:integer
+    literal_value: 1920
+  AddLiteral (51aa591e-c9fa-47e3-8953-e8bb47637b3e)
+ Call ID: 51aa591e-c9fa-47e3-8953-e8bb47637b3e
+  Args:
+    literal_value: 1982
+    relation: :hasDeathYear
+    source: Tom_Chatto
+    literal_type: xsd:integer
+  AddLiteral (3aa83cf1-5af8-4e30-8369-41cb6bb16154)
+ Call ID: 3aa83cf1-5af8-4e30-8369-41cb6bb16154
+  Args:
+    source: Ros_Chatto
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2012
+  AddLiteral (cc77276d-840d-41bb-9836-78bfb8938d0f)
+ Call ID: cc77276d-840d-41bb-9836-78bfb8938d0f
+  Args:
     literal_value: 1960
-  AddLiteral (0e68dc1f-fed0-470f-8f11-51f6fed72d09)
- Call ID: 0e68dc1f-fed0-470f-8f11-51f6fed72d09
-  Args:
     relation: :hasBirthYear
+    source: Polly_Fry
+    literal_type: xsd:integer
+  AddLiteral (e56a692d-5896-4136-9525-224cb5ca3f18)
+ Call ID: e56a692d-5896-4136-9525-224cb5ca3f18
+  Args:
     literal_value: 1979
-    literal_type: xsd:integer
-    source: FrancesArmstrongJones
-  AddLiteral (8938cd0f-602c-44e1-8668-b4e51aa91a2a)
- Call ID: 8938cd0f-602c-44e1-8668-b4e51aa91a2a
-  Args:
-    literal_value: 1998
-    literal_type: xsd:integer
-    source: JasperCableAlexander
     relation: :hasBirthYear
-  AddTriple (b2fc2375-abe4-4cbf-ad96-8854d004017f)
- Call ID: b2fc2375-abe4-4cbf-ad96-8854d004017f
+    source: Lady_Frances_Armstrong-Jones
+    literal_type: xsd:integer
+  AddLiteral (a8c05aec-505d-4b1b-ab42-b8ff992c8179)
+ Call ID: a8c05aec-505d-4b1b-ab42-b8ff992c8179
   Args:
-    relation: :hasFather
-    source: PollyFry
-    target: AntonyArmstrongJones
-  AddTriple (16daf37c-dc69-49d4-a4ec-ce834b80cd66)
- Call ID: 16daf37c-dc69-49d4-a4ec-ce834b80cd66
-  Args:
-    source: FrancesArmstrongJones
-    relation: :hasFather
-    target: AntonyArmstrongJones
-  AddTriple (b437bfb8-9a0a-4e8c-aade-cef4aa0e65d6)
- Call ID: b437bfb8-9a0a-4e8c-aade-cef4aa0e65d6
-  Args:
-    source: JasperCableAlexander
-    relation: :hasFather
-    target: AntonyArmstrongJones
-  Finish (4a7b563a-b4fe-4f74-9443-a0df423d4931)
- Call ID: 4a7b563a-b4fe-4f74-9443-a0df423d4931
+    source: Jasper_Cable-Alexander
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1998
+  Finish (6f5c65ad-a61d-4363-8193-4ccc8fa3a0ef)
+ Call ID: 6f5c65ad-a61d-4363-8193-4ccc8fa3a0ef
   Args:

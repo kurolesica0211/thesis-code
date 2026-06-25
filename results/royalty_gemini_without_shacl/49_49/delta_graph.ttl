@@ -2,36 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederik_IX a :Ancestor,
-        :Man,
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Christian_IX a :Man,
+        :Person ;
+    :isFatherOf data:Frederik_VIII .
+
+data:Frederick_Francis_III a :Man,
+        :Person ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Gustaf_VI_Adolf_of_Sweden a :Man,
+        :Person ;
+    :isFatherOf data:Ingrid_of_Sweden .
+
+data:Louise_of_Sweden a :Person,
+        :Woman ;
+    :isMotherOf data:Christian_X .
+
+data:Margaret_of_Connaught a :Person,
+        :Woman ;
+    :isMotherOf data:Ingrid_of_Sweden .
+
+data:Margrethe_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Frederik_IX,
+        data:Ingrid_of_Sweden .
+
+data:Frederik_IX a :Man,
         :Person ;
     :hasBirthYear 1899 ;
-    :hasBrother data:Knud ;
-    :hasDaughter data:Margrethe_II ;
     :hasDeathYear 1972 ;
     :hasFather data:Christian_X ;
-    :hasMarriageYear data:1935 ;
+    :hasMarriageYear 1935 ;
     :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
     :hasRelation data:Ingrid_of_Sweden ;
-    :knownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string .
+    :isSiblingOf data:Knud .
 
-data:1935 a :DomainEntity .
-
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Christian_X a :Ancestor,
-        :Man,
-        :Person .
-
-data:Ingrid_of_Sweden a :Ancestor,
-        :Person,
-        :Woman .
+data:Frederik_VIII a :Man,
+        :Person ;
+    :isFatherOf data:Christian_X .
 
 data:Knud a :Man,
         :Person .
 
-data:Margrethe_II a :Person,
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
+
+data:Christian_X a :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
         :Woman .
 

@@ -69,120 +69,36 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+George William, Hereditary Prince of Hanover, Duke of Brunswick-Lüneburg (German: Georg Wilhelm Christian Albert Edward Alexander Friedrich Ernst Waldemar Adolf; 28 October 1880 – 20 May 1912) was a German prince from the House of Hanover.
+He was the second child and eldest son of Ernest Augustus, Crown Prince of Hanover and Duke of Cumberland, and Princess Thyra of Denmark.
+His father was the only son of George V of Hanover and his mother was the youngest daughter of Christian IX of Denmark.
+His great-grandfather, Prince Ernest Augustus, Duke of Cumberland and Teviotdale, the fifth son of George III of the United Kingdom, became king of Hanover in 1837 because Salic Law barred Queen Victoria from inheriting the Hanoverian throne.
+His godparents included his maternal grandfather Christian IX of Denmark, his uncle George I of Greece, his uncle Frederick, Crown Prince of Denmark, his uncle Alexander Alexandrovich, Tsarevich of Russia, his uncle Albert Edward, Prince of Wales, his uncle Prince Valdemar of Denmark, Prince George, Duke of Cambridge, and William, Duke of Brunswick.
+The family had lived in exile in Austria since the Kingdom of Hanover was annexed by Prussia in the aftermath of the 1866 Austro-Prussian War.
+His father succeeded as pretender to the Hanoverian throne and as Duke of Cumberland and Teviotdale in the peerage of Great Britain in 1878.
+He represented his father at the funeral of Edward VII and the coronation of George V.
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+When his kinsman William, Duke of Brunswick, died unmarried in 1884, George William was his heir after his father.
+Otto von Bismarck blocked Crown Ernest Augustus's claim because he had never relinquished his claim to Hanover and instead appointed Prince Albert of Prussia regent.
+Prince Albert died in 1906 and Crown Ernest Augustus offered that he and George William would renounce their claims to Brunswick to allow his second son Prince Ernest Augustus to succeed.
+The Bundesrat rejected this and appointed Duke John Albert of Mecklenburg as regent.
+The younger Ernest Augustus finally succeeded in 1913 after he married the German Emperor's daughter after George William's death.
+Death
 
-
-The Dowager Duchess of Calabria
-
-
-Leonor, Princess of Asturias
-(Leonor de Todos los Santos de Borbón y Ortiz; born 31 October 2005) is the heir presumptive to the Spanish throne.
-She is the elder daughter of King Felipe VI and Queen Letizia.
-Leonor was born during the reign of her paternal grandfather, King Juan Carlos I.
-On 17 August 2023, Leonor joined the General Military Academy to start her 3-year military education.
-In 2014, following her father's accession to the throne after the abdication of her grandfather, Leonor was granted all the traditional titles of the heir to the Spanish crown.
-These are Princess of Asturias, Princess of Girona, Princess of Viana, Duchess of Montblanc, Countess of Cervera, and Lady of Balaguer.
-Leonor was formally proclaimed heir before the Cortes on 31 October 2023, her 18th birthday.
-Should Leonor ascend to the throne as expected, she will be Spain's first queen regnant since her fourth great-grandmother Isabella II, who reigned from 1833 to 1868.
-Early life and education
-
-Leonor was born on 31 October 2005 at 01:46, three weeks before her due date, to Felipe and Letizia, then the Prince and Princess of Asturias, during the reign of her paternal grandfather, King Juan Carlos I, in the Ruber International Hospital in Madrid using a caesarean section necessitated by non-progression of labour.
-Shortly after her birth, Leonor's umbilical cord stem cells were sent to a blood bank in Tucson, Arizona.
-This decision sparked public debate in Spain, as the blood bank was private and located abroad.
-Leonor left the Ruber International Hospital with her parents on 7 November 2005.
-Like her father, Leonor was baptised – with water from the Jordan River – in a Romanesque baptismal font that has been used to christen Spanish princes since the 17th century.
-Her godparents were her paternal grandparents, King Juan Carlos I and Queen Sofía.
-She received the name of Leonor de Todos los Santos.
-During her early months, Leonor developed a small angioma, a benign tumor of blood vessels, on her nose.
-Leonor's education began at Escuela Infantil Guardia Real, the daycare for the children of the Spanish Royal Guard.
-Leonor was reported to have good grades during her studies in Rosales.
-In September 2021, Leonor began studying a 2-year International Baccalaureate program at the UWC Atlantic College in the Llantwit Major, Wales.
-Leonor also attended summer camps in the United States.
-She is fluent in Spanish, Catalan and English (the latter learnt from her British nanny and also from her grandmother, Queen Sofía) and has studied French, Galician, Basque, Arabic and Mandarin.
-Military service
-
-In preparation for her role as Spain's commander-in-chief, following her father's footsteps, Leonor is currently spending three years of army, naval and air force training at the General Military Academy in Zaragoza, the Naval Military Academy in Marín and the General Air Academy in Murcia, respectively.
-In this sense, in March 2023, the minister of defense, Margarita Robles, announced that the government had approved a royal decree for Leonor to begin a 3-year military training education program.
-Leonor chose to use both of her parents surnames "Borbón Ortiz" in her military career.
-Also, whilst attending the military academies, Leonor will renounce her salary and any money that cadets receive.
-Leonor swore an oath of allegiance to the Spanish flag at the General Military Academy on 7 October 2023, in the presence of her parents.
-In January 2024, Leonor participated in the 24th Sports Championship of Military Academies for Officers, competing in fencing and volleyball as one of the representatives of the General Military Academy.
-Leonor was promoted to the rank of Cadet Ensign (Spanish: Alférez) and awarded the Grand Cross of Military Merit by her father King Felipe VI on 3 July 2024.
-In September 2024, Leonor and other students from the Naval School conducted seamanship instruction activities in the Pontevedra Estuary.
-On 8 January 2025, she boarded the training ship Juan Sebastián de Elcano, beginning three days later a five-month voyage in which she trained as a sailor and visited many Latin American countries, as well as New York City.
-After disembarking at this last port, the heir to the Crown returned to Spain by plane to embark for a month on the frigate Blas de Lezo, where she participated in naval maneuvers with live fire.
-On 16 July 2025, Leonor was promoted to the rank of as Midshipman of 2nd grade and awarded the Grand Cross of Naval Merit by her father.
-On 1 September 2025, Leonor started her third and final year of military training in the General Air and Space Academy in San Javier.
-On 25 April 2026, Leonor participated in the 25th Inter-University Canoeing Regatta held in Santiago de la Ribera, on the Mar Menor.
-Princess of Asturias
-
-Early years
-
-In May 2014, Leonor made her first official visit to the San Javier Air Force base in Murcia.
-On 18 June 2014, King Juan Carlos signed the Abdication Act, and the following day at the stroke of midnight (18–19 June 2014)
-Leonor's father ascended the throne becoming King Felipe VI, and Leonor became his heir presumptive and Princess of Asturias.
-In October 2014, a wax figure of Leonor was unveiled at the Museo de Cera in Madrid.
-On 20 May 2015, Leonor received First Communion as per Catholic custom.
-According to the Spanish constitution of 1978, the succession to the Spanish throne is under a system of male-preference cognatic primogeniture, meaning that Leonor, as the elder of Felipe's two daughters, is first in line to inherit the throne.
-Under the current law, however, if her father has a legitimate son while still king, Leonor would be displaced in the line of succession and again become an infanta of Spain.
-There have been discussions about changing the succession law to absolute primogeniture, allowing for the inheritance of the eldest child, regardless of sex; however, the birth of Leonor, followed by that of her younger sister Sofía, stalled these plans.
-Coinciding with the 50th birthday of King Felipe, in January 2018, the King officially gave Leonor the collar of the Golden Fleece in a ceremony at the Royal Palace of Madrid.
-In September 2018, Leonor conducted her first public engagement outside the palace by accompanying her parents to Covadonga to celebrate the 1300th anniversary of the Kingdom of Asturias.
-On 31 October 2018, Leonor gave her first public speech, held at the Instituto Cervantes in Madrid, where she read the first article of the Constitution of Spain.
-She made her first significant speech at Premio Princesa de Asturias on 18 October 2019.
-She made her first speech on 4 November 2019 at the Princess of Girona Foundation awards in Barcelona, in which she spoke in Spanish, Catalan, English and Arabic.
-Leonor carried out her first public solo engagement on 24 March 2021 by attending a ceremony to mark the 30th anniversary of the Instituto Cervantes.
-Leonor made her first official international trip on 16 July 2022.
-She did it without the presence of her parents, although she was accompanied by her younger sister, Infanta Sofía.
-Together, they attended a match between Spain and Denmark at the UEFA Women's Euro 2022.
-In December 2022, Leonor visited the Spanish Red Cross headquarters in Madrid where she met young volunteers of The Red Cross Youth, the youth section of the Spanish Red Cross.
-In July 2025 she alongside Infanta Sofía attended the match between England and Spain for the UEFA Women’s Euro 2025.
-Heir's oath
-
-The Royal Household made public on 22 September 2023 that, as required under the Spanish Constitution, the princess would swear allegiance to the Constitution and the King upon reaching the age of majority.
-At the  Palacio de las Cortes the royal family received state honors, and the Princess of Asturias took her oath before a joint session of the Spanish Parliament, which received her oath with an ovation of more than four minutes.
-After this ceremony, the royal family and the main authorities of the country went to the Royal Palace, where her father, King Felipe, awarded her with the Collar of the Order of Charles III, the highest civil honor in Spain.
-The entire paternal and maternal family attended this private event, as well as the Greek royal family, represented by Queen Anne-Marie and Princess Alexia and her husband, some members of the House of Bourbon-Two Sicilies including Prince Pedro, Duke of Calabria, representatives of the Bulgarian royal family, and Princess Miriam Ghazi.
-Official agenda
-
-On 6 January 2024, Leonor attended the Pascua Militar for the first time, a more than two-centuries-old Spanish military celebration.
-On 12 July 2024, Leonor made her first official foreign visit.
-In this trip, Leonor, who was accompanied by the Portuguese leader, the Spanish foreign minister, José Manuel Albares, and the private secretary to the king, Camilo Villarino, focused her activities on environmental protection and ocean conservation, visiting the Lisbon Oceanarium and attending a debate on ocean protection.
-She also visited the Jerónimos Monastery, where she paid tribute to the poet Luís de Camões, and later went to Belém Palace, where delegations from both countries met and had a lunch, and where President Rebelo de Sousa awarded Leonor the Grand Cross of the Military Order of Christ.
-On 25 October 2024, she attended the Princess of Asturias Awards ceremony for the first time as an adult, being in charge of giving the speech to the winners and, later, declaring the event closed and convening the awards for its next edition.
-On 4 August 2025, Leonor along with her sister Infanta Sofía attended the annual reception at Marivent Palace for authorities and relevant citizens of the Balearic Islands.
-The reception was also attended by King Felipe VI, Queen Letizia, and Queen Sofía.
-This event marked the first reception attended by Leonor and Sofía.
-From 26 to 27 September 2025, Leonor made an official visit —with her parents— to the Chartered Community of Navarre.
-The two-day trip was made to celebrate the 600th anniversary of the title of Princess of Viana, one of the titles of the heir to the Crown —as heir of the ancient Kingdom of Navarre—.
-On 24 October 2025, she presided over the seventh edition of the Princess of Asturias Awards.
-As Leonor is the heir to the throne, King Felipe confessed the 2026 ceremony would only be her presiding over it.
-Titles, styles, honours and arms
-
-As children of the prince of Asturias, Leonor was born infanta and initially styled "Her Royal Highness Infanta Doña Leonor".
-Upon her father's accession to the throne, Leonor became the heir presumptive to the Spanish throne, and she inherited the traditional titles of the heir:
-Princess of Asturias, Princess of Girona, Princess of Viana, Duchess of Montblanc, Countess of Cervera and Lady of Balaguer.
-Leonor is the 36th person to bear the title of princess of Asturias since its creation in 1388.
-Since then, Leonor is generally styled as "Her Royal Highness The Princess of Asturias", although depending on the province of the country, another title may be added.
-For example, when visiting the territories of the former Crown of Aragon, she is usually titled "Her Royal Highness the Princess of Asturias and Girona" and, in Navarre, she is referred as "Her Royal Highness the Princess of Asturias and Viana".
-Honours
-
-As heir to the throne, she is the nominal chairwoman of the Princess of Asturias Foundation and the Princess of Girona Foundation.
-Coins
-
-On 31 October 2023, the Royal Mint of Spain minted a gold-silver coin which depicts Leonor, to commemorate her coming of age as an emblematic event.
-Other
-
-A collector stamp was made in her honor alongside her father King Felipe, to commemorate 50 years since the end of the dictatorship of former leader Francisco Franco.
+On 20 May 1912, George William was killed, aged 31, in a car crash near Nackel, Brandenburg, while driving from Prague to Copenhagen to attend the funeral of his uncle, Frederick VIII of Denmark.
+In response to George William's death, Wilhelm II, German Emperor, sent his sons Prince Eitel Friedrich and Prince August Wilhelm of Prussia to Nackel and sent a message of condolence to the Duke of Cumberland.
+In response to this friendly gesture, the Duke sent his only surviving son, Ernest Augustus, to Berlin to thank the Emperor.
+In Berlin, Ernest Augustus met and fell in love with the emperor's only daughter, Princess Victoria Louise of Prussia.
+They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, and the Emperor approved Ernest Augustus's succession to the duchy of Brunswick shortly after.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -198,39 +114,9 @@ A collector stamp was made in her honor alongside her father King Felipe, to com
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -245,6 +131,23 @@ A collector stamp was made in her honor alongside her father King Felipe, to com
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -262,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -329,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -360,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -372,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -380,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -418,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -433,279 +439,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (33bd29c7-01dc-4399-95e8-eefb2c064699)
- Call ID: 33bd29c7-01dc-4399-95e8-eefb2c064699
+  AssignClass (539ed3c8-07e5-4cd5-8edf-da1cec26485e)
+ Call ID: 539ed3c8-07e5-4cd5-8edf-da1cec26485e
   Args:
+    source: George_William_of_Hanover
     type: :Man
-    source: Juan_Carlos_I
-  AssignClass (ff567ec6-de53-4b57-8842-f6d4941cea81)
- Call ID: ff567ec6-de53-4b57-8842-f6d4941cea81
+  AssignClass (0c1f2063-f45d-4a9e-8e75-ad606ad47997)
+ Call ID: 0c1f2063-f45d-4a9e-8e75-ad606ad47997
   Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (aad93ef5-0909-4116-9389-5f64855192f8)
- Call ID: aad93ef5-0909-4116-9389-5f64855192f8
+    source: George_William_of_Hanover
+    type: :Person
+  AddLiteral (b6387ff4-e62b-4acc-8a63-d1bb89afb424)
+ Call ID: b6387ff4-e62b-4acc-8a63-d1bb89afb424
   Args:
-    type: :Man
-    source: Felipe_VI
-  AssignClass (beb995d4-8654-4b5d-9dd3-d3958702267e)
- Call ID: beb995d4-8654-4b5d-9dd3-d3958702267e
-  Args:
-    type: :Woman
-    source: Letizia
-  AssignClass (92b07e21-ec0a-426b-853f-7011f2e848f1)
- Call ID: 92b07e21-ec0a-426b-853f-7011f2e848f1
-  Args:
-    type: :Woman
-    source: Leonor
-  AssignClass (fc24baa5-4a80-4eb1-8dd7-43617dd6abcf)
- Call ID: fc24baa5-4a80-4eb1-8dd7-43617dd6abcf
-  Args:
-    type: :Woman
-    source: Sofia_infanta
-  AddTriple (b6737fe4-fe83-4919-917a-2bb6e2a16a70)
- Call ID: b6737fe4-fe83-4919-917a-2bb6e2a16a70
-  Args:
-    source: Juan_Carlos_I
-    target: :Male
-    relation: :hasSex
-  AddTriple (9d988c59-c7f2-4019-9ab5-b5f7fb554354)
- Call ID: 9d988c59-c7f2-4019-9ab5-b5f7fb554354
-  Args:
-    source: Sofia
-    target: :Female
-    relation: :hasSex
-  AddTriple (fc131ff4-b86a-4bb9-a6c0-49ec57a8df82)
- Call ID: fc131ff4-b86a-4bb9-a6c0-49ec57a8df82
-  Args:
-    source: Felipe_VI
-    target: :Male
-    relation: :hasSex
-  AddTriple (813987fe-e661-4764-a73f-319bccc9878d)
- Call ID: 813987fe-e661-4764-a73f-319bccc9878d
-  Args:
-    source: Letizia
-    relation: :hasSex
-    target: :Female
-  AddTriple (f7655b45-1b99-475c-acc3-a345ff35c05d)
- Call ID: f7655b45-1b99-475c-acc3-a345ff35c05d
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Leonor
-  AddTriple (a216a19d-ea4e-4434-820e-9c93433fc75f)
- Call ID: a216a19d-ea4e-4434-820e-9c93433fc75f
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Sofia_infanta
-  AddTriple (f8817060-0ee1-4501-a842-a16ed3a77a49)
- Call ID: f8817060-0ee1-4501-a842-a16ed3a77a49
-  Args:
-    source: Felipe_VI
-    target: :Juan_Carlos_I
-    relation: :hasFather
-  AddTriple (72d825b2-10fa-4c46-8980-34cd8cdf48bd)
- Call ID: 72d825b2-10fa-4c46-8980-34cd8cdf48bd
-  Args:
-    source: Felipe_VI
-    target: :Sofia
-    relation: :hasMother
-  AddTriple (5ee3ebbc-3cc3-4871-ba57-e320ff53a336)
- Call ID: 5ee3ebbc-3cc3-4871-ba57-e320ff53a336
-  Args:
-    target: :Felipe_VI
-    relation: :hasFather
-    source: Leonor
-  AddTriple (2ae2fd62-ba31-48ae-aa7f-e88fe2258ed8)
- Call ID: 2ae2fd62-ba31-48ae-aa7f-e88fe2258ed8
-  Args:
-    target: :Letizia
-    relation: :hasMother
-    source: Leonor
-  AddTriple (74dfc908-76c8-4c5b-af8e-7a427620aaaf)
- Call ID: 74dfc908-76c8-4c5b-af8e-7a427620aaaf
-  Args:
-    relation: :hasFather
-    target: :Felipe_VI
-    source: Sofia_infanta
-  AddTriple (950b22e1-cb95-48f2-8739-db07c48aceb9)
- Call ID: 950b22e1-cb95-48f2-8739-db07c48aceb9
-  Args:
-    source: Sofia_infanta
-    relation: :hasMother
-    target: :Letizia
-  AddTriple (be30964f-aca3-4259-ab35-5879f0802326)
- Call ID: be30964f-aca3-4259-ab35-5879f0802326
-  Args:
-    source: Leonor
-    relation: :isSisterOf
-    target: :Sofia_infanta
-  AddTriple (39805dd8-c4f4-484e-b37d-c1edc812f3ae)
- Call ID: 39805dd8-c4f4-484e-b37d-c1edc812f3ae
-  Args:
-    relation: :isSisterOf
-    target: :Leonor
-    source: Sofia_infanta
-  AddLiteral (f3583aa8-9589-4873-b798-04c06147b291)
- Call ID: f3583aa8-9589-4873-b798-04c06147b291
-  Args:
-    source: Leonor
     literal_type: xsd:integer
-    literal_value: 2005
+    literal_value: 1880
+    source: George_William_of_Hanover
     relation: :hasBirthYear
-  Finish (ade48484-f8d6-4e0f-bafc-16613df90ad7)
- Call ID: ade48484-f8d6-4e0f-bafc-16613df90ad7
+  AddLiteral (269690cc-a65d-4710-9881-7d47bfc2b7fc)
+ Call ID: 269690cc-a65d-4710-9881-7d47bfc2b7fc
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Juan_Carlos_I a :Man ;
-      :hasSex data:Male .
-
-  data:Leonor a :Woman ;
-      :hasBirthYear 2005 ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :hasSex data:Female ;
-      :isSisterOf data:Sofia_infanta .
-
-  data:Sofia a :Woman ;
-      :hasSex data:Female .
-
-  data:Sofia_infanta a :Woman ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :hasSex data:Female ;
-      :isSisterOf data:Leonor .
-
-  data:Felipe_VI a :Man ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sofia ;
-      :hasSex data:Male .
-
-  data:Letizia a :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (fad8a0f3-5697-4bfc-8d62-f4c5d5634bd5)
- Call ID: fad8a0f3-5697-4bfc-8d62-f4c5d5634bd5
+    source: George_William_of_Hanover
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1912
+  AssignClass (57985a65-55a1-4011-96cf-b5d654b9cc81)
+ Call ID: 57985a65-55a1-4011-96cf-b5d654b9cc81
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (1762fab1-ba16-4d5f-b3f8-a3e912d87002)
- Call ID: 1762fab1-ba16-4d5f-b3f8-a3e912d87002
+    type: :Man
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (59606f9d-4630-4535-9b84-7107b400ffb7)
+ Call ID: 59606f9d-4630-4535-9b84-7107b400ffb7
   Args:
-    type: :Sex
-    source: Female
-  Finish (97a5f635-5f56-495f-9152-2d0bf54647a0)
- Call ID: 97a5f635-5f56-495f-9152-2d0bf54647a0
+    type: :Person
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (00bb32be-96bb-458b-a13b-c4b2a990ca5e)
+ Call ID: 00bb32be-96bb-458b-a13b-c4b2a990ca5e
+  Args:
+    type: :Woman
+    source: Princess_Thyra_of_Denmark
+  AssignClass (7b107808-a28e-42d6-a6e2-d98d2ae4bca9)
+ Call ID: 7b107808-a28e-42d6-a6e2-d98d2ae4bca9
+  Args:
+    source: Princess_Thyra_of_Denmark
+    type: :Person
+  AddTriple (84243795-05d6-4e18-a736-646e660b1957)
+ Call ID: 84243795-05d6-4e18-a736-646e660b1957
+  Args:
+    source: George_William_of_Hanover
+    relation: :hasFather
+    target: Ernest_Augustus_Crown_Prince_of_Hanover
+  AddTriple (90080f6c-2ffa-44b1-b4fa-51537048d46a)
+ Call ID: 90080f6c-2ffa-44b1-b4fa-51537048d46a
+  Args:
+    target: Princess_Thyra_of_Denmark
+    relation: :hasMother
+    source: George_William_of_Hanover
+  AssignClass (36aebac6-0784-4cbf-ab94-207d8f1b9c7f)
+ Call ID: 36aebac6-0784-4cbf-ab94-207d8f1b9c7f
+  Args:
+    source: George_V_of_Hanover
+    type: :Man
+  AssignClass (0e9f7601-ed58-4dba-9a3f-ac6167cdb187)
+ Call ID: 0e9f7601-ed58-4dba-9a3f-ac6167cdb187
+  Args:
+    source: George_V_of_Hanover
+    type: :Person
+  AddTriple (b4ad910c-6f5b-4ee4-8cf4-8ea15a6469c6)
+ Call ID: b4ad910c-6f5b-4ee4-8cf4-8ea15a6469c6
+  Args:
+    target: George_V_of_Hanover
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    relation: :hasFather
+  AssignClass (0eb5cc3c-126c-4ca5-916e-959f0135815d)
+ Call ID: 0eb5cc3c-126c-4ca5-916e-959f0135815d
+  Args:
+    type: :Man
+    source: Christian_IX_of_Denmark
+  AssignClass (b447febf-3d50-45a1-905b-3afbe406b41d)
+ Call ID: b447febf-3d50-45a1-905b-3afbe406b41d
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Person
+  AddTriple (283f9a0e-857e-41b0-9aa4-f35ad00103f9)
+ Call ID: 283f9a0e-857e-41b0-9aa4-f35ad00103f9
+  Args:
+    target: Christian_IX_of_Denmark
+    source: Princess_Thyra_of_Denmark
+    relation: :hasFather
+  AssignClass (d4605fff-2e71-408e-adbb-83e8fcb1dcb6)
+ Call ID: d4605fff-2e71-408e-adbb-83e8fcb1dcb6
+  Args:
+    type: :Man
+    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
+  AssignClass (9b541032-a7d1-4ec6-8661-21af6550c9b0)
+ Call ID: 9b541032-a7d1-4ec6-8661-21af6550c9b0
+  Args:
+    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
+    type: :Person
+  AssignClass (710f34b5-0a77-4ab5-988b-db1b34fedcc8)
+ Call ID: 710f34b5-0a77-4ab5-988b-db1b34fedcc8
+  Args:
+    type: :Man
+    source: George_III_of_the_United_Kingdom
+  AssignClass (36062325-2922-45cf-b609-860053b1f44a)
+ Call ID: 36062325-2922-45cf-b609-860053b1f44a
+  Args:
+    source: George_III_of_the_United_Kingdom
+    type: :Person
+  AddTriple (10a401aa-d1b5-4645-bcfb-8a7ede9353c0)
+ Call ID: 10a401aa-d1b5-4645-bcfb-8a7ede9353c0
+  Args:
+    target: George_III_of_the_United_Kingdom
+    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
+    relation: :hasFather
+  AddTriple (7563066a-eaeb-4d3a-b234-5166a74775d8)
+ Call ID: 7563066a-eaeb-4d3a-b234-5166a74775d8
+  Args:
+    relation: :hasFather
+    source: George_V_of_Hanover
+    target: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
+  AssignClass (218de4e5-fc43-4ba7-b04c-be38942b9a2f)
+ Call ID: 218de4e5-fc43-4ba7-b04c-be38942b9a2f
+  Args:
+    source: Prince_Ernest_Augustus_the_younger
+    type: :Man
+  AssignClass (6c3aa7a8-98ab-4d42-be43-14d1004aa117)
+ Call ID: 6c3aa7a8-98ab-4d42-be43-14d1004aa117
+  Args:
+    source: Prince_Ernest_Augustus_the_younger
+    type: :Person
+  AddTriple (ad3d8019-b3af-473b-9014-8c4f5427193e)
+ Call ID: ad3d8019-b3af-473b-9014-8c4f5427193e
+  Args:
+    source: Prince_Ernest_Augustus_the_younger
+    relation: :hasFather
+    target: Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (7474924c-dcd9-4171-b013-1ae6d877189c)
+ Call ID: 7474924c-dcd9-4171-b013-1ae6d877189c
+  Args:
+    source: Princess_Victoria_Louise_of_Prussia
+    type: :Woman
+  AssignClass (d19ed75f-6f4b-4296-89f8-9de3d708771f)
+ Call ID: d19ed75f-6f4b-4296-89f8-9de3d708771f
+  Args:
+    type: :Person
+    source: Princess_Victoria_Louise_of_Prussia
+  AddLiteral (9a0c699e-5cad-46b9-ae8d-89e1ef23c7d3)
+ Call ID: 9a0c699e-5cad-46b9-ae8d-89e1ef23c7d3
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1913
+    source: Prince_Ernest_Augustus_the_younger
+    relation: :hasMarriageYear
+  AddTriple (fbb6b43c-c321-410e-b7a2-4909c391de83)
+ Call ID: fbb6b43c-c321-410e-b7a2-4909c391de83
+  Args:
+    target: Princess_Victoria_Louise_of_Prussia
+    relation: :hasRelation
+    source: Prince_Ernest_Augustus_the_younger
+  Finish (cb40eb50-8227-4147-9d6d-0ce3b9918f49)
+ Call ID: cb40eb50-8227-4147-9d6d-0ce3b9918f49
   Args:

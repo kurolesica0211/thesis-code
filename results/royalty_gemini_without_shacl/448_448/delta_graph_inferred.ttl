@@ -1,0 +1,386 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    :hasRelation data:Louise_Mountbatten ;
+    :hasSister data:Louise_Mountbatten ;
+    :isAuntOf data:Patricia_Mountbatten ;
+    :isBloodrelationOf data:Louise_Mountbatten ;
+    :isSiblingOf data:Louise_Mountbatten ;
+    :isSisterOf data:Louise_Mountbatten .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :isBloodrelationOf data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh .
+
+data:Lady_Doreen_Browne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:John_Ulick_Knatchbull ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Lady_Doreen_Browne ;
+    :hasSon data:John_Ulick_Knatchbull ;
+    :isAncestorOf data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isAuntOf data:John_Ulick_Knatchbull ;
+    :isBloodrelationOf data:Lady_Doreen_Browne ;
+    :isMotherOf data:John_Ulick_Knatchbull ;
+    :isParentOf data:John_Ulick_Knatchbull ;
+    :isSiblingOf data:Lady_Doreen_Browne ;
+    :isSisterOf data:Lady_Doreen_Browne .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasChild data:Patricia_Mountbatten ;
+    :hasDaughter data:Patricia_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Timothy_Knatchbull ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isFatherOf data:Patricia_Mountbatten ;
+    :isParentOf data:Patricia_Mountbatten ;
+    :isSiblingOf data:Louis_Mountbatten ;
+    :isUncleOf data:Patricia_Mountbatten .
+
+data:Michael_Knatchbull a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Knatchbull ;
+    :hasChild data:John_Ulick_Knatchbull ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSon data:John_Ulick_Knatchbull ;
+    :isAncestorOf data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBloodrelationOf data:Michael_Knatchbull ;
+    :isBrotherOf data:Michael_Knatchbull ;
+    :isFatherOf data:John_Ulick_Knatchbull ;
+    :isParentOf data:John_Ulick_Knatchbull ;
+    :isSiblingOf data:Michael_Knatchbull ;
+    :isUncleOf data:John_Ulick_Knatchbull .
+
+data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
+        :Woman ;
+    :hasAncestor data:John_Ulick_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :isBloodrelationOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isDaughterOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSisterOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull .
+
+data:Nicholas_Timothy_Charles_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:John_Ulick_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :isBloodrelationOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBrotherOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:John_Ulick_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :isBloodrelationOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBrotherOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Timothy_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:John_Ulick_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasFather data:John_Ulick_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :isBloodrelationOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBrotherOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Patricia_Mountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasChild data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasDaughter data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasParent data:Louis_Mountbatten ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSister data:Patricia_Mountbatten ;
+    :hasSon data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isAuntOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBloodrelationOf data:Patricia_Mountbatten ;
+    :isChildOf data:Louis_Mountbatten ;
+    :isDaughterOf data:Louis_Mountbatten ;
+    :isMotherOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isParentOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSiblingOf data:Patricia_Mountbatten ;
+    :isSisterOf data:Patricia_Mountbatten .
+
+data:John_Ulick_Knatchbull a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Lady_Doreen_Browne,
+        data:Michael_Knatchbull ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:John_Ulick_Knatchbull ;
+    :hasChild data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :hasDaughter data:Lady_Amanda_Patricia_Victoria_Knatchbull ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Michael_Knatchbull ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Lady_Doreen_Browne ;
+    :hasParent data:Lady_Doreen_Browne,
+        data:Michael_Knatchbull ;
+    :hasRelation data:John_Ulick_Knatchbull,
+        data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Lady_Doreen_Browne,
+        data:Louis_Mountbatten,
+        data:Michael_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Patricia_Mountbatten,
+        data:Philip_Duke_of_Edinburgh,
+        data:Timothy_Knatchbull ;
+    :hasSon data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isBloodrelationOf data:John_Ulick_Knatchbull ;
+    :isBrotherOf data:John_Ulick_Knatchbull ;
+    :isChildOf data:Lady_Doreen_Browne,
+        data:Michael_Knatchbull ;
+    :isFatherOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isParentOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :isSiblingOf data:John_Ulick_Knatchbull ;
+    :isSonOf data:Lady_Doreen_Browne,
+        data:Michael_Knatchbull ;
+    :isUncleOf data:Lady_Amanda_Patricia_Victoria_Knatchbull,
+        data:Nicholas_Timothy_Charles_Knatchbull,
+        data:Norton_Louis_Philip_Knatchbull,
+        data:Timothy_Knatchbull ;
+    :knownAs "John Brabourne"^^xsd:string .
+

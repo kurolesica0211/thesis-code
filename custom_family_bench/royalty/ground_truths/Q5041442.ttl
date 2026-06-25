@@ -7,39 +7,52 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "429:437" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "442:462",
+        "448:462" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino a :Person ;
+    rdfs:label "Prince Carlo Alessandro, 3rd Duke of Castel Duino" ;
+    data:wdtLink wdt:Q5041442 ;
+    :alsoKnownAs "Carlo Alessandro della Torre e Tasso, Duke di Castel Duino",
+        "Prince Carlo Alessandro della Torre e Tasso, Duke di Castel Duino" ;
+    :hasParent data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Carlo Alessandro, 3rd Duke of Castel Duino" ;
-    data:wdtLink wdt:Q5041442 ;
-    :alsoKnownAs "Carlo Alessandro della Torre e Tasso, Duke di Castel Duino",
-        "Prince Carlo Alessandro della Torre e Tasso, Duke di Castel Duino" ;
-    :hasMother data:Princess_Eugénie_of_Greece_and_Denmark ;
-    :hasParent data:Princess_Eugénie_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Eugénie_of_Greece_and_Denmark ;
-    :isSonOf data:Princess_Eugénie_of_Greece_and_Denmark .
-
-data:Princess_Eugénie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Eugénie_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Eugénie of Greece and Denmark" ;
     data:posIndicesFull "268:306",
         "277:306" ;
-    data:posIndicesPart "456:462" ;
     data:wdtLink wdt:Q2379307 ;
     :alsoKnownAs "Eugénie of Greece and Denmark",
         "Princess Eugenie of Greece and Denmark" ;
-    :hasChild data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
-    :isMotherOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
-    :isParentOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

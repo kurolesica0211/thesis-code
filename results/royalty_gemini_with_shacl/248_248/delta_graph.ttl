@@ -2,41 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_Alexander_Mowatt a :Man,
-        :Person ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
+data:Marie_Therese_of_Wurttemberg a :Woman ;
+    :hasBirthYear 1934 ;
+    :hasBrother data:Carl_Duke_of_Wurttemberg ;
+    :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Rosa_of_Austria ;
+    :hasRelation data:Henri_Count_of_Clermont .
 
-data:Zenouska_May_Mowatt a :Person,
-        :Woman ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
+data:Carl_Duke_of_Wurttemberg a :Man ;
+    :hasRelation data:Diane_dOrleans .
 
-data:James_Ogilvy a :Man,
-        :Person ;
-    :hasBirthYear 1964 ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasMother data:Alexandra_of_Kent ;
-    :isBrotherOf data:Marina_Ogilvy .
+data:Henri_Count_of_Clermont a :Man ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasSister data:Diane_dOrleans .
 
-data:Alexandra_of_Kent a :Ancestor,
-        :Person,
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
         :Woman .
 
-data:Angus_Ogilvy a :Ancestor,
-        :Man,
-        :Person .
+data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+        :Man .
 
-data:Paul_Julian_Mowatt a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1962 .
+data:Rosa_of_Austria a :Ancestor,
+        :Woman .
 
-data:Marina_Ogilvy a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1966 ;
-    :hasBrother data:James_Ogilvy ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasMother data:Alexandra_of_Kent .
+data:Diane_dOrleans a :Woman .
 

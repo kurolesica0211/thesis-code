@@ -85,32 +85,62 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-John Herbert Bowes-Lyon (1 April 1886 – 7 February 1930) was the second son of the 14th
-Earl of Strathmore and Kinghorne and the Countess of Strathmore and Kinghorne, and the brother of Elizabeth Bowes-Lyon, the future Queen Elizabeth the Queen Mother.
-He was the uncle of Queen Elizabeth II, although he died when she was a small child and before her sister Princess Margaret was born.
-Early life
+Heinrich XIII Prinz Reuss (German: Heinrich XIII.
+Prinz Reuß, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}pronounced ; born 4 December 1951) is a German businessman, far-right and monarchist activist, and member of the aristocratic – formerly sovereign – House of Reuss.
+A proponent of the Reichsbürger movement and antisemitic conspiracy theories, Reuss was arrested by German Federal Police in December 2022 due to his alleged leadership in the 2022 German coup d'état plot.
+Biography
 
-John Bowes-Lyon was educated at Eton and New College, Oxford, where he played first-class cricket for the university side in three matches in 1906 and 1907, playing as a fast-medium bowler.
-Marriage and children
+Personal life and ancestry
 
-On 29 September 1914, Bowes-Lyon married Fenella Hepburn-Stuart-Forbes-Trefusis (19 August 1889 – 19 July 1966), the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-They had five daughters:
+Reuss was born in Büdingen on 4 December 1951, the fifth of six children and the fourth son born to Prince Heinrich I Reuss and Duchess Woizlawa Feodora of Mecklenburg, who was in turn the only child of the German colonial governor Duke Adolf Friedrich of Mecklenburg.
+Reuss's parents, like all German nobility, had become private citizens in 1919 upon the adoption of the Weimar Constitution, which abolished any privileges and titles that had previously existed for nobility.
+The House of Reuss, from which Reuss is descended, dates to the 12th century and historically administered the regions of Gera and Greiz, a non-contiguous mini-state in what is today Eastern Thuringia.
+Reuss left the family association at his own request around 2009.
+Reuss married Iranian-born Susan Doukht Jalali in 1989, and they have two children, including a son named Heinrich XXVIII (born circa 1991) and a daughter Elena, who has Down syndrome and was born in 1989.
+His wife uses the name Princess Susan Reuss and works as a naturopath.
+Reuss is also reported to have as a girlfriend a Russian national identified by prosecutors as "Vitalia B.", aged 39 in 2022, at their arrest who allegedly had some role in the coup plot.
+Business and family activities
 
+Reuss worked as a real estate developer, operating a company named Büro Prinz Reuss in Frankfurt, and also produced sparkling wine.
+In 1945, the Communist land reform in the Soviet occupation zone (East Germany) expropriated all movable and immovable assets of the House of Reuss.
+Following the reunification of Germany in 1990, Reuss tried to have properties restituted.
+The clan, which consisted of five large families, wanted Gera townhouses, four castles, extensive forestry and agricultural property and the Jugendstil Reuss Theater in Gera, then held by the city of Gera in Thuringia.
+Concerning the theater, Reuss and the mayor of Gera were unable to negotiate a settlement, each blaming the other.
+Reuss spent much of his fortune on lawsuits seeking restitution, but with little success.
+In 2017, he supported the reinterment of the remains of a number of his ancestors, most prominent among them Henry II, Count of Reuss-Gera, in their original location.
+Views and conspiracy theories
 
-World War I
+Many of Reuss's views are consistent with monarchism.
+He has spoken in favour of low flat tax for all citizens and against debt-based business models hailing the 10 percent rate in the former Principality of Reuss, saying it let Reuss's citizens lead "happy lives" because it was "straightforward and transparent".
+Reuss contended that the modern German government and European Union were more distant and inaccessible than feudal princes.
+Reuss also gave speeches claiming that Germany had been a vassal state since the Second World War.
+At World Web Forum in Zürich in 2019, Reuss gave a speech accusing the Rothschilds and Freemasons of responsibility for the wars of the 20th century, expressing antisemitic conspiracy theories.
+On 22 December 2018, Reuss and his mother attended the unveiling of a "Flame of Peace" sculpture in Gera in honor of her 100th birthday by the heads of the Vienna-based Association for the Promotion of Peace.
+In 2020, Reuss participated in the celebration of the first International Day of Conscience event in Vienna.
+Assault on journalist Peter Hagen
 
-Before the outbreak of World War I, Bowes-Lyon worked as a stockbroker in the City of London for the firm Rowe and Pitman.
-While receiving treatment in the UK, he admitted having experienced a nervous breakdown in 1912 and also suffered from neurasthenia.
-Death
+In August 2022, Reuss attended an official reception held by Thomas Weigelt, the mayor of Bad Lobenstein, where Reuss's hunting lodge Jagdschloss Waidmannsheil  is located.
+Weigelt was known to be sympathetic to the Reichsbürger movement and journalist Peter Hagen asked him why someone associated with the Reichsbürger scene like Reuss would be invited to an official event.
+The next day Hagen approached the mayor at the market festival and tried to film him in familiar conversation with Reuss and AfD-politician Uwe Thrum.
+Afterwards, the current head of the Reuss family, Heinrich XIV Fürst Reuss , objected to his involvement in local politics "in the strongest possible way".
+He called Heinrich XIII, his third cousin, a "distant relative" and "a confused old man peddling in conspiracy theories".
+Involvement in 2022 German coup plot
 
-Bowes-Lyon died at the family home of Glamis Castle just after midnight on the morning of 7 February 1930 of pneumonia, aged 43, leaving his widow to care for their four young children.
-Bowes-Lyon's widow, Fenella Trefusis, was a leading guest at the 1947 wedding of Princess Elizabeth and Philip Mountbatten.
+On 7 December 2022, Reuss was arrested at his home in the Westend district of Frankfurt during an extensive raid of alleged far-right conspirators planning a coup d'état.
+According to police, the coup's conspirators—which included former Bundestag member Birgit Malsack-Winkemann—were proponents of the Reichsbürger movement who hoped to install the 71-year-old Reuss as head of state Reuss's hunting lodge Jagdschloss Waidmannsheil  in Saaldorf , Thuringia was allegedly the site of weapons stockpiles and meetings regarding the conspiracy.
+Reuss and "Vitalia B." are reported to have reached out to the Russian government via its Consulate General in Leipzig, presumably for assistance in the coup.
+Heinrich XIV Fürst Reuss distanced himself and his family again after Reuss was arrested in 2022, calling Reuss a "confused old man" and "a marginal figure" and noting that their last common ancestor lived in the early 19th century.
+He said Reuss's behaviour was a "catastrophe" for the family, whose heritage as tolerant and cosmopolitan rulers was now associated with "terrorists and reactionaries".
+He believes Reuss's anti-government views derive from his resentment at the German judicial system for its failure to recognize his claims to family properties expropriated at the end of World War II.
+The trial of Reuss and eight other plotters began on 21 May 2024 in Frankfurt.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +156,9 @@ Bowes-Lyon's widow, Fenella Trefusis, was a leading guest at the 1947 wedding of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +173,23 @@ Bowes-Lyon's widow, Fenella Trefusis, was a leading guest at the 1947 wedding of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +207,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +289,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +312,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +332,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +342,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +382,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,100 +481,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e8529ea8-691f-431c-b1f4-f8b1e8f58c17)
- Call ID: e8529ea8-691f-431c-b1f4-f8b1e8f58c17
+  AssignClass (731dc87a-1ca8-44bd-bae4-bb0ad9b13beb)
+ Call ID: 731dc87a-1ca8-44bd-bae4-bb0ad9b13beb
   Args:
     type: :Man
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (0d61ac33-28af-47a7-ac90-753ef9d6a03b)
- Call ID: 0d61ac33-28af-47a7-ac90-753ef9d6a03b
+    source: Heinrich_XIII_Prinz_Reuss
+  AssignClass (1ef8fa8a-4023-4bf2-acb1-eb2e6ab7bcf7)
+ Call ID: 1ef8fa8a-4023-4bf2-acb1-eb2e6ab7bcf7
   Args:
     type: :Person
-    source: John_Herbert_Bowes-Lyon
-  AddLiteral (a869d8ec-739a-454e-86c7-af0a8bfafb42)
- Call ID: a869d8ec-739a-454e-86c7-af0a8bfafb42
+    source: Heinrich_XIII_Prinz_Reuss
+  AddLiteral (711b3a50-dde5-4dbd-8229-b9081d986397)
+ Call ID: 711b3a50-dde5-4dbd-8229-b9081d986397
   Args:
-    source: John_Herbert_Bowes-Lyon
-    literal_type: xsd:string
     relation: :hasBirthYear
-    literal_value: 1886
-  AddLiteral (59e80aaa-8afe-4d08-9f41-04c152abf986)
- Call ID: 59e80aaa-8afe-4d08-9f41-04c152abf986
+    literal_value: 1951
+    literal_type: xsd:integer
+    source: Heinrich_XIII_Prinz_Reuss
+  AssignClass (ad282b17-2449-46bf-880d-dff23dbd678c)
+ Call ID: ad282b17-2449-46bf-880d-dff23dbd678c
   Args:
-    source: John_Herbert_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 1930
-    literal_type: xsd:string
-  AddTriple (cc024640-2536-48ff-a455-a9f023be6549)
- Call ID: cc024640-2536-48ff-a455-a9f023be6549
+    source: Prince_Heinrich_I_Reuss
+    type: :Man
+  AssignClass (284344f3-99ff-4355-a009-34acd3b54acf)
+ Call ID: 284344f3-99ff-4355-a009-34acd3b54acf
   Args:
-    source: John_Herbert_Bowes-Lyon
-    target: :Male
-    relation: :hasSex
-  AssignClass (ccd83d99-ac9b-4617-ad40-25153133b10e)
- Call ID: ccd83d99-ac9b-4617-ad40-25153133b10e
+    source: Prince_Heinrich_I_Reuss
+    type: :Person
+  AssignClass (0c419533-6052-45a7-a1f0-1d247088269a)
+ Call ID: 0c419533-6052-45a7-a1f0-1d247088269a
+  Args:
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+    type: :Woman
+  AssignClass (ecbb44b7-519f-4a26-bf66-48ce0cb84094)
+ Call ID: ecbb44b7-519f-4a26-bf66-48ce0cb84094
   Args:
     type: :Person
-    source: Elizabeth_Bowes-Lyon
-  AssignClass (902e3a35-ebac-4613-817a-7958745288e5)
- Call ID: 902e3a35-ebac-4613-817a-7958745288e5
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+  AddTriple (c4f128b5-8707-4854-96eb-13b79aa9a866)
+ Call ID: c4f128b5-8707-4854-96eb-13b79aa9a866
   Args:
-    type: :Woman
-    source: Elizabeth_Bowes-Lyon
-  AddTriple (dc58e948-d33f-4407-8188-12ae5801f6bb)
- Call ID: dc58e948-d33f-4407-8188-12ae5801f6bb
+    target: Prince_Heinrich_I_Reuss
+    relation: :hasFather
+    source: Heinrich_XIII_Prinz_Reuss
+  AddTriple (471b7ab5-fec4-4432-9204-56ab66fe9d2d)
+ Call ID: 471b7ab5-fec4-4432-9204-56ab66fe9d2d
   Args:
-    relation: :hasSister
-    target: :Elizabeth_Bowes-Lyon
-    source: John_Herbert_Bowes-Lyon
-  AddTriple (422fe5c9-c84b-47d7-8465-a85f99f37837)
- Call ID: 422fe5c9-c84b-47d7-8465-a85f99f37837
-  Args:
-    relation: :isBrotherOf
-    target: :Elizabeth_Bowes-Lyon
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (0be6d4fa-99ad-4d25-a116-0265da366a77)
- Call ID: 0be6d4fa-99ad-4d25-a116-0265da366a77
-  Args:
-    type: :Person
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (cf696e2e-7496-4b3d-b560-0eb6c7600d8a)
- Call ID: cf696e2e-7496-4b3d-b560-0eb6c7600d8a
-  Args:
-    type: :Woman
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AddLiteral (acdb9f8f-1c38-42fb-be60-37a91d9cb8a1)
- Call ID: acdb9f8f-1c38-42fb-be60-37a91d9cb8a1
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1914
-    literal_type: xsd:string
-    source: John_Herbert_Bowes-Lyon
-  AddTriple (249d8bf6-11f7-4689-9d84-d4ed6aab2b73)
- Call ID: 249d8bf6-11f7-4689-9d84-d4ed6aab2b73
-  Args:
-    source: John_Herbert_Bowes-Lyon
-    relation: :hasRelation
-    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (d3327954-381a-47d5-9427-9565b88f9978)
- Call ID: d3327954-381a-47d5-9427-9565b88f9978
+    target: Duchess_Woizlawa_Feodora_of_Mecklenburg
+    relation: :hasMother
+    source: Heinrich_XIII_Prinz_Reuss
+  AssignClass (b48fa727-df53-440d-81d1-70c1523fe88a)
+ Call ID: b48fa727-df53-440d-81d1-70c1523fe88a
   Args:
     type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (9d130ad2-05d0-45cf-ac54-9c46c6fac492)
- Call ID: 9d130ad2-05d0-45cf-ac54-9c46c6fac492
+    source: Duke_Adolf_Friedrich_of_Mecklenburg
+  AssignClass (1a842860-1202-4683-8b99-e5d9c6dc3cf0)
+ Call ID: 1a842860-1202-4683-8b99-e5d9c6dc3cf0
   Args:
+    source: Duke_Adolf_Friedrich_of_Mecklenburg
     type: :Person
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (50cb7be3-b24b-4095-9477-c4f1b0dc0908)
- Call ID: 50cb7be3-b24b-4095-9477-c4f1b0dc0908
+  AddTriple (2881184b-0ded-45ed-a6f6-37aba87912c9)
+ Call ID: 2881184b-0ded-45ed-a6f6-37aba87912c9
   Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasFather
+    target: Duke_Adolf_Friedrich_of_Mecklenburg
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+  AssignClass (e89cfb7d-d081-42b2-ba37-dc7c3d940f2d)
+ Call ID: e89cfb7d-d081-42b2-ba37-dc7c3d940f2d
+  Args:
+    type: :Woman
+    source: Susan_Doukht_Jalali
+  AssignClass (be62701f-b032-4e73-a865-7bb4befe7671)
+ Call ID: be62701f-b032-4e73-a865-7bb4befe7671
+  Args:
+    source: Susan_Doukht_Jalali
+    type: :Person
+  AddTriple (c3761755-2c82-4d4f-8e7a-b61313f5edb2)
+ Call ID: c3761755-2c82-4d4f-8e7a-b61313f5edb2
+  Args:
+    source: Heinrich_XIII_Prinz_Reuss
+    target: Susan_Doukht_Jalali
+    relation: :hasRelation
+  AddLiteral (945ea774-4628-4a8d-b135-e92487352c29)
+ Call ID: 945ea774-4628-4a8d-b135-e92487352c29
+  Args:
+    literal_value: 1989
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Heinrich_XIII_Prinz_Reuss
+  AssignClass (028acb06-ac98-4e6f-97bf-03013e37cfdf)
+ Call ID: 028acb06-ac98-4e6f-97bf-03013e37cfdf
+  Args:
+    type: :Man
+    source: Heinrich_XXVIII
+  AssignClass (d780d6b5-ad2c-4785-a3cb-24cc267ed600)
+ Call ID: d780d6b5-ad2c-4785-a3cb-24cc267ed600
+  Args:
+    source: Heinrich_XXVIII
+    type: :Person
+  AddTriple (e9ce9e3e-18f1-43d1-911b-ea1021585eab)
+ Call ID: e9ce9e3e-18f1-43d1-911b-ea1021585eab
+  Args:
+    source: Heinrich_XIII_Prinz_Reuss
+    target: Heinrich_XXVIII
+    relation: :hasSon
+  AssignClass (f68d1228-bbed-49e3-af24-0969979ead25)
+ Call ID: f68d1228-bbed-49e3-af24-0969979ead25
+  Args:
+    type: :Woman
+    source: Elena
+  AssignClass (fad40b73-194c-4376-8643-aaab9fb68e79)
+ Call ID: fad40b73-194c-4376-8643-aaab9fb68e79
+  Args:
+    source: Elena
+    type: :Person
+  AddTriple (33e2e0ba-9b64-4923-9f8d-e50416b11668)
+ Call ID: 33e2e0ba-9b64-4923-9f8d-e50416b11668
+  Args:
+    source: Heinrich_XIII_Prinz_Reuss
+    target: Elena
     relation: :hasDaughter
-    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  Finish (d7591b59-e917-4ae2-919f-ead4eee955e0)
- Call ID: d7591b59-e917-4ae2-919f-ead4eee955e0
+  AssignClass (d8dd4899-d72e-41d4-9256-3989459959b1)
+ Call ID: d8dd4899-d72e-41d4-9256-3989459959b1
   Args:
+    type: :Man
+    source: Heinrich_XIV_Fuerst_Reuss
+  AssignClass (b30e4d43-75dd-422c-916c-fc053ea8c346)
+ Call ID: b30e4d43-75dd-422c-916c-fc053ea8c346
+  Args:
+    source: Heinrich_XIV_Fuerst_Reuss
+    type: :Person
+  AddTriple (ded8cddf-f8a1-4875-ad6a-f924bc2de77d)
+ Call ID: ded8cddf-f8a1-4875-ad6a-f924bc2de77d
+  Args:
+    target: Heinrich_XIV_Fuerst_Reuss
+    relation: :isBloodrelationOf
+    source: Heinrich_XIII_Prinz_Reuss
+  Finish (3c83b6b7-2047-4268-b73a-47b2dee69de6)
+ Call ID: 3c83b6b7-2047-4268-b73a-47b2dee69de6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -523,24 +724,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+  data:Heinrich_XIII_Prinz_Reuss a :Man,
           :Person ;
-      :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+      :hasBirthYear 1951 ;
+      :hasDaughter data:Elena ;
+      :hasFather data:Prince_Heinrich_I_Reuss ;
+      :hasMarriageYear 1989 ;
+      :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
+      :hasRelation data:Susan_Doukht_Jalali ;
+      :hasSon data:Heinrich_XXVIII ;
+      :isBloodrelationOf data:Heinrich_XIV_Fuerst_Reuss .
 
-  data:John_Herbert_Bowes-Lyon a :Man,
-          :Person ;
-      :hasBirthYear "1886"^^xsd:string ;
-      :hasDeathYear "1930"^^xsd:string ;
-      :hasMarriageYear "1914"^^xsd:string ;
-      :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :hasSex data:Male ;
-      :hasSister data:Elizabeth_Bowes-Lyon ;
-      :isBrotherOf data:Elizabeth_Bowes-Lyon .
+  data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Person,
+          :Woman ;
+      :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
 
-  data:Elizabeth_Bowes-Lyon a :Person,
+  data:Duke_Adolf_Friedrich_of_Mecklenburg a :Man,
+          :Person .
+
+  data:Elena a :Person,
           :Woman .
 
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+  data:Heinrich_XIV_Fuerst_Reuss a :Man,
+          :Person .
+
+  data:Heinrich_XXVIII a :Man,
+          :Person .
+
+  data:Prince_Heinrich_I_Reuss a :Man,
+          :Person .
+
+  data:Susan_Doukht_Jalali a :Person,
           :Woman .
 
 
@@ -553,78 +767,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3cc8726a-e8db-426b-be94-a2082e145cb6)
- Call ID: 3cc8726a-e8db-426b-be94-a2082e145cb6
+  ValidateShacl (0597ba12-d3da-4969-bc05-b531ac32dba1)
+ Call ID: 0597ba12-d3da-4969-bc05-b531ac32dba1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Prince_Heinrich_I_Reuss is assigned as the father of Heinrich_XIII_Prinz_Reuss but does not possess the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Heinrich_I_Reuss, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Duchess_Woizlawa_Feodora_of_Mecklenburg is assigned as the mother of Heinrich_XIII_Prinz_Reuss but does not possess the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Duchess_Woizlawa_Feodora_of_Mecklenburg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Duke_Adolf_Friedrich_of_Mecklenburg is assigned as the father of Duchess_Woizlawa_Feodora_of_Mecklenburg but does not possess the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Duke_Adolf_Friedrich_of_Mecklenburg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Prince_Heinrich_I_Reuss is missing the :Ancestor class, preventing it from being a valid value for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Heinrich_I_Reuss, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Duchess_Woizlawa_Feodora_of_Mecklenburg is missing the :Ancestor class, preventing it from being a valid value for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Duchess_Woizlawa_Feodora_of_Mecklenburg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Duke_Adolf_Friedrich_of_Mecklenburg is missing the :Ancestor class, preventing it from being a valid value for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Duke_Adolf_Friedrich_of_Mecklenburg, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Prince_Heinrich_I_Reuss is missing the :Ancestor class, preventing it from being a valid value for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Heinrich_I_Reuss, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for node 'John_Herbert_Bowes-Lyon' is not defined as an instance of the class ':Sex'.
+      The node Duchess_Woizlawa_Feodora_of_Mecklenburg is missing the :Ancestor class, preventing it from being a valid value for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Duchess_Woizlawa_Feodora_of_Mecklenburg, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Duke_Adolf_Friedrich_of_Mecklenburg is missing the :Ancestor class, preventing it from being a valid value for the :hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Duke_Adolf_Friedrich_of_Mecklenburg, :Ancestor)
 
 
 
@@ -633,19 +855,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (63cd355b-03cd-4205-9e2f-b39f93556e4a)
- Call ID: 63cd355b-03cd-4205-9e2f-b39f93556e4a
+  AssignClass (cd88c352-5e63-4be6-86d2-851ad059932b)
+ Call ID: cd88c352-5e63-4be6-86d2-851ad059932b
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (73227d24-116d-4e8a-8a8a-a14b0ae4fe4f)
- Call ID: 73227d24-116d-4e8a-8a8a-a14b0ae4fe4f
+    source: Prince_Heinrich_I_Reuss
+    type: :Ancestor
+  AssignClass (ba282af6-42d3-45a4-a540-e54bb206c066)
+ Call ID: ba282af6-42d3-45a4-a540-e54bb206c066
   Args:
-    source: :Female
-    type: :Sex
-  ValidateShacl (e6aeb0e5-860d-45d9-90c2-a27c031bada7)
- Call ID: e6aeb0e5-860d-45d9-90c2-a27c031bada7
+    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
+    type: :Ancestor
+  AssignClass (24f85252-e589-4aa1-8a66-482d51328d68)
+ Call ID: 24f85252-e589-4aa1-8a66-482d51328d68
   Args:
+    source: Duke_Adolf_Friedrich_of_Mecklenburg
+    type: :Ancestor
+  ValidateShacl (6f2bf20f-99b7-40d2-be8c-3c08472a3871)
+ Call ID: 6f2bf20f-99b7-40d2-be8c-3c08472a3871
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -658,28 +889,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+  data:Heinrich_XIII_Prinz_Reuss a :Man,
           :Person ;
-      :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+      :hasBirthYear 1951 ;
+      :hasDaughter data:Elena ;
+      :hasFather data:Prince_Heinrich_I_Reuss ;
+      :hasMarriageYear 1989 ;
+      :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
+      :hasRelation data:Susan_Doukht_Jalali ;
+      :hasSon data:Heinrich_XXVIII ;
+      :isBloodrelationOf data:Heinrich_XIV_Fuerst_Reuss .
 
-  data:Female a :Sex .
+  data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
 
-  data:John_Herbert_Bowes-Lyon a :Man,
-          :Person ;
-      :hasBirthYear "1886"^^xsd:string ;
-      :hasDeathYear "1930"^^xsd:string ;
-      :hasMarriageYear "1914"^^xsd:string ;
-      :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :hasSex data:Male ;
-      :hasSister data:Elizabeth_Bowes-Lyon ;
-      :isBrotherOf data:Elizabeth_Bowes-Lyon .
+  data:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Male a :Sex .
-
-  data:Elizabeth_Bowes-Lyon a :Person,
+  data:Elena a :Person,
           :Woman .
 
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+  data:Heinrich_XIV_Fuerst_Reuss a :Man,
+          :Person .
+
+  data:Heinrich_XXVIII a :Man,
+          :Person .
+
+  data:Prince_Heinrich_I_Reuss a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Susan_Doukht_Jalali a :Person,
           :Woman .
 
 
@@ -692,6 +935,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (78865cb5-c7f4-49e9-98ec-af64f9557599)
- Call ID: 78865cb5-c7f4-49e9-98ec-af64f9557599
+  Finish (12c45ab5-a5dc-4318-a7af-0839d6b06db4)
+ Call ID: 12c45ab5-a5dc-4318-a7af-0839d6b06db4
   Args:

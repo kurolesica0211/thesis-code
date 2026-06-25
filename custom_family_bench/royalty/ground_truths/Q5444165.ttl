@@ -7,64 +7,19 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Elizabeth_Cator a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth Cator" ;
-    data:posIndicesFull "97:117" ;
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "200:218",
+        "206:218" ;
     data:posIndicesPart "1312:1321" ;
-    data:wdtLink wdt:Q75240065 ;
-    :alsoKnownAs "Elizabeth Bowes-Lyon",
-        "Elizabeth Margaret Bowes-Lyon",
-        "Elizabeth Margaret Cator" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George VI" ;
-    data:posIndicesFull "1336:1350",
-        "1341:1350",
-        "157:171",
-        "162:171" ;
-    data:wdtLink wdt:Q280856 ;
-    :alsoKnownAs "Albert Frederick Arthur George",
-        "Albert Frederick Arthur George Windsor",
-        "Albert Windsor",
-        "Bertie",
-        "George Windsor",
-        "H.M. King George VI",
-        "Industrial Prince",
-        "King George VI",
-        "Prince Albert Frederick Arthur George of Cornwall and York",
-        "Prince Albert Frederick Arthur George of Wales",
-        "Prince Albert Frederick Arthur George of York",
-        "Prince Albert Frederick Arthur George, Duke of York",
-        "Prince Albert of Cornwall and York",
-        "Prince Albert of Wales",
-        "Prince Albert of York",
-        "Prince Albert, Duke of York",
-        "The Prince Albert Frederick Arthur George of the United Kingdom",
-        "The Prince Albert Frederick Arthur George, Duke of York",
-        "The Prince Albert of the United Kingdom",
-        "The Prince Albert, Duke of York" ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:male ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II .
-
-data:Fergus_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Fergus_Bowes-Lyon a :Person ;
     rdfs:label "Fergus Bowes-Lyon" ;
     data:posIndicesFull "0:17",
         "245:262" ;
@@ -83,63 +38,16 @@ data:Fergus_Bowes-Lyon a :Man,
         "881:886",
         "887:891" ;
     data:wdtLink wdt:Q5444165 ;
-    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
     :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSonOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :isUncleOf data:Elizabeth_II .
+    :hasSex data:male .
 
-data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne" ;
-    data:posIndicesFull "1107:1163" ;
-    data:posIndicesPart "1461:1466",
-        "1467:1471" ;
-    data:wdtLink wdt:Q238820 ;
-    :alsoKnownAs "Cecilia Nina Bowes-Lyon, Countess of Strathmore and Kinghorne",
-        "Cecilia Nina Cavendish-Bentinck" ;
-    :hasChild data:Fergus_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasDaughter data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSon data:Fergus_Bowes-Lyon ;
-    :isMotherOf data:Fergus_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isParentOf data:Fergus_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "200:218",
-        "206:218" ;
-    data:posIndicesPart "1312:1321" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasFather data:George_VI ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :isChildOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "200:215",
         "97:117" ;
@@ -160,16 +68,20 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:Fergus_Bowes-Lyon ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
     :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :hasSex data:female ;
-    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :isDaughterOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Fergus_Bowes-Lyon ;
-    :isSisterOf data:Fergus_Bowes-Lyon .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne" ;
+    data:posIndicesFull "1107:1163" ;
+    data:posIndicesPart "1461:1466",
+        "1467:1471" ;
+    data:wdtLink wdt:Q238820 ;
+    :alsoKnownAs "Cecilia Nina Bowes-Lyon, Countess of Strathmore and Kinghorne",
+        "Cecilia Nina Cavendish-Bentinck" ;
+    :hasSex data:female .
+
+data:female a :Female .
 

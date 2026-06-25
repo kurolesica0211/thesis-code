@@ -16,56 +16,31 @@
       "qid": "Q16018831",
       "label": "Mary Malcolm",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Ian_Malcolm",
       "qid": "Q3147302",
       "label": "Ian Malcolm",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Jeanne_Marie_Langtry",
       "qid": "Q84795732",
       "label": "Jeanne Marie Langtry",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
-      "qid": "Q116062",
-      "label": "Princess Alice of Battenberg",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Lillie_Langtry",
       "qid": "Q297743",
       "label": "Lillie Langtry",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Ian_Malcolm",
-      "extracted_local_name": "Ian_Malcolm",
-      "embedding_text": "Ian Malcolm",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Ian_Malcolm",
-      "ground_truth_qid": "Q3147302",
-      "ground_truth_label": "Ian Malcolm",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Ian Malcolm",
-      "best_candidate_label": "Ian Malcolm",
-      "best_candidate_qid": "Q3147302",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/Jeanne_Langtry",
       "extracted_local_name": "Jeanne_Langtry",
@@ -77,11 +52,11 @@
       "ground_truth_qid": "Q84795732",
       "ground_truth_label": "Jeanne Marie Langtry",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Jeanne Langtry",
       "best_candidate_label": "Jeanne Marie Langtry",
       "best_candidate_qid": "Q84795732",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,11 +70,11 @@
       "ground_truth_qid": "Q297743",
       "ground_truth_label": "Lillie Langtry",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Lillie Langtry",
       "best_candidate_label": "Lillie Langtry",
       "best_candidate_qid": "Q297743",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -113,17 +88,35 @@
       "ground_truth_qid": "Q16018831",
       "ground_truth_label": "Mary Malcolm",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Mary Malcolm",
       "best_candidate_label": "Mary Malcolm",
       "best_candidate_qid": "Q16018831",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Basil_Bartlett",
-      "extracted_local_name": "Basil_Bartlett",
-      "embedding_text": "Basil Bartlett",
+      "extracted_uri": "http://example.org/data/Sir_Ian_Malcolm",
+      "extracted_local_name": "Sir_Ian_Malcolm",
+      "embedding_text": "Sir Ian Malcolm",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8461538461538461,
+      "ground_truth_uri": "http://example.com/data#Ian_Malcolm",
+      "ground_truth_qid": "Q3147302",
+      "ground_truth_label": "Ian Malcolm",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Ian Malcolm",
+      "best_candidate_label": "Ian Malcolm",
+      "best_candidate_qid": "Q3147302",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8461538461538461
+    },
+    {
+      "extracted_uri": "http://example.org/data/Sir_Basil_Bartlett",
+      "extracted_local_name": "Sir_Basil_Bartlett",
+      "embedding_text": "Sir Basil Bartlett",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -132,11 +125,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Sir Ian Zachary Malcolm",
+      "best_candidate_match_text": "Ian Malcolm",
       "best_candidate_label": "Ian Malcolm",
       "best_candidate_qid": "Q3147302",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.32432432432432434
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3448275862068966
     }
   ],
   "summary": {

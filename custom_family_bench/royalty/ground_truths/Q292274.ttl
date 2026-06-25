@@ -7,197 +7,25 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Marie-Chantal-_Crown_Princess_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
-    data:posIndicesFull "422:437" ;
-    data:posIndicesPart "1348:1356",
-        "1900:1905",
-        "1938:1943",
-        "1944:1952",
-        "2028:2033",
-        "2143:2151",
-        "2354:2362",
-        "2432:2440",
-        "3128:3136",
-        "3321:3327",
-        "765:770" ;
-    data:wdtLink wdt:Q243049 ;
-    :alsoKnownAs "Mari Santal",
-        "Mari Santal Miler",
-        "Maria of Greece",
-        "Marie Chantal",
-        "Marie-Chantal Miller",
-        "Marie-Chantel Miller" ;
+data:Princess_Benedikte_of_Denmark a :Person ;
+    rdfs:label "Princess Benedikte of Denmark" ;
+    data:posIndicesFull "1869:1898" ;
+    data:posIndicesPart "2019:2027",
+        "2230:2238",
+        "2308:2316",
+        "2421:2428",
+        "2975:2982",
+        "3004:3012",
+        "3073:3080" ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandra of Sayn-Wittgenstein-Berleburg" ;
-    data:posIndicesFull "1779:1828",
-        "1788:1828" ;
-    data:posIndicesPart "2143:2151",
-        "2354:2362",
-        "2432:2440",
-        "3128:3136" ;
-    data:wdtLink wdt:Q1797989 ;
-    :alsoKnownAs "Alexandra Rosemarie Ingrid Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg",
-        "Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg",
-        "Alexandra of Sayn-Wittgenstein-Berleburg",
-        "Princess Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg" ;
-    :hasMother data:Princess_Benedikte_of_Denmark ;
-    :hasParent data:Princess_Benedikte_of_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Benedikte_of_Denmark ;
-    :isDaughterOf data:Princess_Benedikte_of_Denmark .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "2958:2967",
-        "2958:2978",
-        "3010:3018" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isMotherOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain .
-
-data:Frederik_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederik IX of Denmark" ;
-    data:posIndicesFull "3010:3021",
-        "3010:3032" ;
-    data:posIndicesPart "3099:3106",
-        "3197:3204" ;
-    data:wdtLink wdt:Q151312 ;
-    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
-        "Frederick IX",
-        "Frederik IX",
-        "King Frederick IX of Denmark",
-        "King Frederik IX of Denmark" ;
-    :hasChild data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasDaughter data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isParentOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
-
-data:Infanta_Cristina_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Cristina of Spain" ;
-    data:posIndicesFull "1728:1744",
-        "1728:1753" ;
-    data:wdtLink wdt:Q230580 ;
-    :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
-        "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
-        "Infanta Cristina" ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSisterOf data:Infanta_Elena-_Duchess_of_Lugo .
-
-data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Elena, Duchess of Lugo" ;
-    data:posIndicesFull "1755:1768",
-        "1755:1777" ;
-    data:wdtLink wdt:Q54386 ;
-    :alsoKnownAs "Elena Maria Isabela Dominica de Silas de Borbón y Grecia, Infanta de España",
-        "Elena de Borbón",
-        "Infanta Elena",
-        "Infanta Elena of Spain" ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Cristina_of_Spain ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Infanta_Cristina_of_Spain ;
-    :isSisterOf data:Infanta_Cristina_of_Spain .
-
-data:Ingrid_of_Sweden a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Ingrid of Sweden" ;
-    data:posIndicesFull "2529:2541",
-        "3037:3053" ;
-    data:wdtLink wdt:Q163010 ;
-    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
-        "Ingrid of Sweden",
-        "Ingrid, Queen of Denmark",
-        "Princess Ingrid of Sweden",
-        "Queen Ingrid" ;
-    :hasChild data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasDaughter data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isParentOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
-
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul of Greece" ;
-    data:posIndicesFull "2934:2953",
-        "2939:2953" ;
-    data:posIndicesPart "3321:3327" ;
-    data:wdtLink wdt:Q155394 ;
-    :alsoKnownAs "King Paul I of Greece",
-        "King Paul of Greece",
-        "King Pavlos I of Greece",
-        "Paul I of Greece",
-        "Pavlos I of Greece" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isFatherOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain .
-
-data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Theodora_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Theodora of Greece and Denmark" ;
     data:posIndicesFull "1273:1288",
         "226:241",
@@ -206,19 +34,20 @@ data:Princess_Theodora_of_Greece_and_Denmark a :Person,
     data:posIndicesPart "1348:1356",
         "1357:1365",
         "1445:1453",
+        "1779:1787",
         "1944:1952",
-        "2143:2151",
-        "2241:2249",
-        "2354:2362",
-        "2432:2440",
-        "2545:2552",
-        "2596:2604",
-        "2708:2716",
-        "3099:3106",
-        "3107:3115",
-        "3128:3136",
-        "3197:3204",
-        "3321:3327",
+        "2019:2027",
+        "2117:2125",
+        "2230:2238",
+        "2308:2316",
+        "2421:2428",
+        "2472:2480",
+        "2584:2592",
+        "2975:2982",
+        "2983:2991",
+        "3004:3012",
+        "3073:3080",
+        "3197:3203",
         "439:447",
         "581:589",
         "774:781",
@@ -228,28 +57,40 @@ data:Princess_Theodora_of_Greece_and_Denmark a :Person,
     :alsoKnownAs "Theodora Greece",
         "Theodora of Greece and Denmark",
         "Theodora zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece and Denmark" ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Queen_Anne-Marie_of_Greece ;
     :hasParent data:Constantine_II_of_Greece,
         data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:female ;
-    :isChildOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isDaughterOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece .
+    :hasSex data:female .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1702:1713",
+        "1702:1722",
+        "19:30",
+        "19:39" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "2790:2806",
+    data:posIndicesFull "2666:2682",
         "377:393",
         "382:396",
         "382:406",
         "726:742",
         "731:745" ;
-    data:posIndicesPart "3321:3327" ;
+    data:posIndicesPart "3197:3203" ;
     data:wdtLink wdt:Q151773 ;
     :alsoKnownAs "Constantine 2 of Greece",
         "Constantine Glucksburg",
@@ -262,67 +103,14 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasChild data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
     :hasParent data:Frederica_of_Hanover,
         data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isFatherOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isUncleOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
+    :hasSex data:male .
 
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Benedikte of Denmark" ;
-    data:posIndicesFull "1869:1898" ;
-    data:posIndicesPart "2143:2151",
-        "2354:2362",
-        "2432:2440",
-        "2545:2552",
-        "3099:3106",
-        "3128:3136",
-        "3197:3204" ;
-    data:wdtLink wdt:Q817052 ;
-    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
-        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
-    :hasChild data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
-    :hasParent data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Anne-Marie_of_Greece ;
-    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isMotherOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :isParentOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Queen_Anne-Marie_of_Greece .
-
-data:Queen_Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Anne-Marie_of_Greece a :Person ;
     rdfs:label "Queen Anne-Marie of Greece" ;
     data:posIndicesFull "411:437" ;
-    data:posIndicesPart "3321:3327",
+    data:posIndicesPart "3197:3203",
         "760:764",
         "765:770" ;
     data:wdtLink wdt:Q564889 ;
@@ -330,57 +118,61 @@ data:Queen_Anne-Marie_of_Greece a :Ancestor,
         "Anne-Marie Dagmar Ingrid",
         "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
         "Princess Anne-Marie of Denmark" ;
-    :hasChild data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
     :hasParent data:Frederik_IX_of_Denmark,
         data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Benedikte_of_Denmark ;
-    :isAuntOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isMotherOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
-    :isSisterOf data:Princess_Benedikte_of_Denmark .
+    :hasSex data:female .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "1702:1713",
-        "1702:1722",
-        "19:30",
-        "19:39" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasChild data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isDaughterOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isMotherOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "2834:2843",
+        "2834:2854",
+        "2886:2894" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Frederik_IX_of_Denmark a :Person ;
+    rdfs:label "Frederik IX of Denmark" ;
+    data:posIndicesFull "2886:2897",
+        "2886:2908" ;
+    data:posIndicesPart "2975:2982",
+        "3073:3080" ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg",
+        "Frederick IX",
+        "Frederik IX",
+        "King Frederick IX of Denmark",
+        "King Frederik IX of Denmark" ;
+    :hasSex data:male .
+
+data:Ingrid_of_Sweden a :Person ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "2405:2417",
+        "2913:2929" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasSex data:female .
+
+data:Paul_of_Greece a :Person ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "2810:2829",
+        "2815:2829" ;
+    data:posIndicesPart "3197:3203" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

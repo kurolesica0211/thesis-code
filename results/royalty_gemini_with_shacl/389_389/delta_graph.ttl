@@ -2,50 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amanda_Patricia_Victoria_Ellingworth a :Person,
-        :Woman ;
-    :formerlyKnownAs "The Honourable Amanda Knatchbull"^^xsd:string ;
-    :hasAncestor data:Louis_Mountbatten,
-        data:Princess_Alice,
-        data:Queen_Victoria ;
-    :hasBirthYear 1957 ;
-    :hasFather data:7th_Baron_Brabourne ;
-    :hasMarriageYear 1987 ;
-    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
-    :hasRelation data:Charles_Vincent_Ellingworth ;
-    :knownAs "Amanda Patricia Victoria Ellingworth"^^xsd:string .
-
-data:Charles_Prince_of_Wales a :Man,
-        :Person .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
-        :Person,
-        :Woman .
-
-data:7th_Baron_Brabourne a :Ancestor,
-        :Man,
-        :Person .
-
-data:Charles_Vincent_Ellingworth a :Man,
-        :Person .
-
-data:Louis_Mountbatten a :Ancestor,
-        :Man,
+data:MichaelClaudeHamiltonBowes-Lyon a :Man,
         :Person ;
-    :isUncleOf data:Prince_Philip .
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMarriageYear 1928 ;
+    :hasRelation data:ElizabethMargaretCator ;
+    :hasSister data:ElizabethTheQueenMother ;
+    :hasSon data:FergusBowesLyon ;
+    :isUncleOf data:ElizabethII ;
+    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
 
-data:Prince_Philip a :Man,
+data:ClaudeBowesLyon a :Ancestor,
+        :Man,
         :Person .
 
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Princess_Alice .
-
-data:Princess_Alice a :Ancestor,
-        :Person,
+data:ElizabethII a :Person,
         :Woman .
+
+data:ElizabethMargaretCator a :Person,
+        :Woman ;
+    :hasFather data:JohnCator .
+
+data:ElizabethTheQueenMother a :Person,
+        :Woman .
+
+data:FergusBowesLyon a :Man,
+        :Person .
+
+data:JohnCator a :Ancestor,
+        :Man,
+        :Person .
 

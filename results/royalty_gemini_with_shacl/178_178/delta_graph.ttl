@@ -2,45 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Prince_Claus_of_the_Netherlands a :Man,
+        :Person ;
+    :hasFather data:Klaus_Felix_von_Amsberg .
+
+data:Elise_von_Vieregg a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1904 ;
-    :hasDeathYear 1985 ;
-    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear 1929 ;
-    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-    :hasRelation data:Jan_Kanty_Zamoyski .
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1951 .
 
-data:Alfonso_XII_of_Spain a :Ancestor,
-        :Man,
-        :Person .
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
 
-data:Andrzej_Zamoyski a :Ancestor,
-        :Man,
-        :Person .
-
-data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person .
-
-data:Jan_Kanty_Zamoyski a :Ancestor,
+data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Andrzej_Zamoyski ;
-    :hasMother data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
 
-data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Maria_Christina_of_Austria a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
-        :Person,
+data:Gosta_von_dem_Bussche-Haddenhausen a :Person,
         :Woman ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Maria_Christina_of_Austria .
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Klaus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Elise_von_Vieregg ;
+    :hasRelation data:Gosta_von_dem_Bussche-Haddenhausen .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1856 ;
+    :hasDeathYear 1929 .
 

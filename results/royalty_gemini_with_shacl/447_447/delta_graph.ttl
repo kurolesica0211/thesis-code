@@ -2,63 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:JohnUlickKnatchbull a :Man,
-        :Person ;
-    :hasBirthYear 1924 ;
-    :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-    :hasDeathYear 2005 ;
-    :hasFather data:MichaelKnatchbull ;
-    :hasMarriageYear 1946 ;
-    :hasMother data:LadyDoreenBrowne ;
-    :hasRelation data:PatriciaMountbatten ;
-    :hasSex data:MaleNode ;
-    :hasSon data:NicholasTimothyCharlesKnatchbull,
-        data:NortonLouisPhilipKnatchbull,
-        data:TimothyKnatchbull ;
-    :knownAs "John Brabourne"^^xsd:string .
-
-data:LouiseMountbatten a :Person,
+data:Charlotte_Wellesley a :Person,
         :Woman ;
-    :isAuntOf data:PatriciaMountbatten .
+    :hasBirthYear 1990 ;
+    :hasBrother data:Arthur_Wellesley ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMarriageYear 2016 ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasRelation data:Alejandro_Santo_Domingo ;
+    :hasSister data:Mary_Wellesley .
 
-data:Male a :Sex .
+data:Alejandro_Santo_Domingo a :Man,
+        :Person .
 
-data:PhilipDukeOfEdinburgh a :Man,
-        :Person ;
-    :isBloodrelationOf data:PatriciaMountbatten .
+data:Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Frederick_of_Prussia ;
+    :hasMother data:Brigid_Guinness .
 
-data:LadyDoreenBrowne a :Ancestor,
+data:Arthur_Wellesley a :Man,
+        :Person .
+
+data:Brigid_Guinness a :Ancestor,
         :Person,
         :Woman .
 
-data:LouisMountbatten a :Ancestor,
+data:Charles_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Valerian_Wellesley .
+
+data:Frederick_of_Prussia a :Ancestor,
         :Man,
         :Person .
 
-data:MaleNode a :Male,
-        :Sex .
-
-data:MichaelKnatchbull a :Ancestor,
-        :Man,
-        :Person .
-
-data:LadyAmandaPatriciaVictoriaKnatchbull a :Person,
+data:Mary_Wellesley a :Person,
         :Woman .
 
-data:NicholasTimothyCharlesKnatchbull a :Man,
-        :Person .
-
-data:NortonLouisPhilipKnatchbull a :Man,
-        :Person .
-
-data:TimothyKnatchbull a :Man,
-        :Person .
-
-data:PatriciaMountbatten a :Person,
-        :Woman ;
-    :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-    :hasFather data:LouisMountbatten ;
-    :hasSon data:NicholasTimothyCharlesKnatchbull,
-        data:NortonLouisPhilipKnatchbull,
-        data:TimothyKnatchbull .
+data:Valerian_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 2014 .
 

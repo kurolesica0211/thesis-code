@@ -69,24 +69,59 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duchess Donata of Mecklenburg (born 11 March 1956) is the senior remaining member of the House of Mecklenburg-Schwerin.
-Since there are no males left in the family, the Schwerin branch itself is considered extinct due to the Salic law of succession, leaving Mecklenburg-Strelitz as the only remaining line of the House of Mecklenburg.
-Duchess of Mecklenburg
+Don Carlos María Alfonso Marcelo de Borbón-Dos Sicilias y Borbón-Parma, Infante of Spain, Duke of Calabria (16 January 1938 – 5 October 2015) was, at his death, the last male infante of Spain during the reigns of his cousins King Juan Carlos I and King Felipe VI.
+Early life and education
 
-She was born in Kiel in the state of Schleswig-Holstein the eldest daughter of Duke Christian Louis of Mecklenburg-Schwerin and his wife Princess Barbara of Prussia (1920-1994).
-Her father was the younger brother to the last surviving male of the House of Mecklenburg-Schwerin, Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin.
-Her mother was the daughter of Princess Charlotte of Saxe-Altenburg, the eldest daughter of Ernst II, the last duke of Saxe-Altenburg.
-Donata had only one sister Edwina (born 25 September 1960), and as her uncle had no children the House of Mecklenburg-Schwerin became extinct in the male line in 2001 when her uncle died.
-As a result, the Mecklenburg-Strelitz line, headed by Borwin, Duke of Mecklenburg, will become the only surviving line of the House of Mecklenburg when both Donata and Edwina are dead.
-Her paternal grandfather was the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
-She is also a descendant of Christian IX of Denmark as her paternal grandmother, Alexandra of Hanover and Cumberland, a daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark, was the youngest daughter and fifth child of Christian IX of Denmark and Louise of Hesse-Kassel.
-Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Duke Louis IV and Alice, Grand Duchess of Hesse and by Rhine, the second daughter of Queen Victoria.
+The second of three children and the only son of Infante Alfonso de Borbón-Dos Sicilias y Borbón (1901–1964) and Princess Alicia of Bourbon-Parma (1917–2017), he was born during his parents' exile from republican Spain in Lausanne, Switzerland.
+As the elder son of Prince Carlo of Bourbon-Two Sicilies by Mercedes, Princess of Asturias (1880–1904), the eldest child of Alfonso XII of Spain, Alfonso had been heir presumptive to the Spanish throne between the death in childbirth of his mother and the birth in May 1907 of a son to his mother's brother, King Alfonso XIII.
+If Mateu Morral’s attempt to assassinate King Alfonso XIII of Spain had succeeded, Infante Alfonso (Infante Carlos's father) would have become at that moment the King of Spain.
+Raised from infancy side-by-side with his future king, Juan Carlos I (Carlos's elder by 11 days), the cousins attended school together first in Switzerland and later in Spain.
+Carlos was chosen by the Spanish pretender, Don Juan de Borbón, Count of Barcelona, to become Juan Carlos's roommate at a boarding school that Don Juan and Spain's dictator Francisco Franco agreed to establish to bring the potential future king from his family's exile in Portugal to be educated in Spain.
+In November 1948 Carlos and Juan Carlos took up residence there, along with eight selected sons of the aristocracy (and one commoner, the future cabinet member José Luis Leal Maldonado) and a team of tutors selected by Don Juan, including as headmaster the liberal scholar José Garrido, along with a traditionalist chaplain, Ignacio de Zulueta.
+Family
+
+Carlos lived in Madrid with his family.
+Carlos met his future wife, Princess Anne of Orléans, in Madrid, at the wedding of his elder sister, Princess Teresa, with Don Iñigo Moreno, future Marquess of Laula.
+In May 1962 they met again at the wedding in Athens of Infante Juan Carlos to Princess Sophia, daughter of the Greek king Paul of the Hellenes, appearing together at each of several occasions over the course of the week-long wedding celebrations.
+Two months later, Anne was invited to and visited the home of Carlos's parents at Toledana.
+Although both were Roman Catholic Bourbons by male-line descent, a disagreement now erupted between the couple's fathers about the dynastic claim of Carlos's father to the legacy of the deposed House of Bourbon-Two Sicilies dynasty, whose last undisputed head, Ferdinand, Duke of Calabria, died without a son in January 1960.
+Carlos's father, Infante Alfonso, had asserted himself as rightful heir because his late father, Carlo of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
+Anne's father Henri, Count of Paris, however, upheld the claim of Ferdinand's next younger brother, Prince Ranieri, Duke of Castro (1883–1973) to the headship of the house, contending that Carlo had renounced his and his future descendants' Sicilian rights when he married the Spanish heiress presumptive, Mercedes of Asturias, in 1901, no doubt being mindful that his own claim to be head of the royal House of France depended upon the validity of the 1713 renunciation of a senior Bourbon prince, Philip V of Spain, in favor of the junior House of Orléans.
+Carlos's father died in 1964, and with patience, persistence and compromise from afar, he eventually obtained the hand of his bride.
+The 250 guests received one of two different invitations from either the bride's parents or the groom; the former referred to the bride's marriage to HRH Prince Carlos of Bourbon, while the latter announced the wedding of Princess Anne of France to the Duke of Calabria.
+Issue
+
+The couple had five children:
+
+
+Endeavors
+
+Departing Europe to spend a year abroad after his broken engagement, Carlos rounded out his study of the law with internships at several banks in the Americas, notably Chase Manhattan in New York, the National Bank of Mexico and the Banco Popular del Peru.
+Following marriage, Carlos and his wife remained for sometime guests of the Marquès de Decio, head of the household of Infante Alfonso in his capacity as Duke of Calabria.
+Carlos then launched a professional specialization in financial law and banking.
+After his father's death in 1964 he also managed his family's large agricultural holdings in Spain.
+Claimant
+
+Infante Carlos was one of two claimants of the dignity of Head of the Royal House of the Two Sicilies.
+The other claimant was his second cousin Prince Carlo of Bourbon-Two Sicilies, Duke of Castro.
+Infante Carlos was also one of two claimants to the Grand Magistery of the Sacred Military Constantinian Order of Saint George; the other claimant is Carlo, Duke of Castro.
+Infante Carlos was the senior male-line descendant of Ferdinand IV and III of Naples and Sicily (Ferdinand I of the Two Sicilies) and as such "first born legitimate heir of the Farnese" (primogenito legittimo farnesiano), as Ferdinand was designated by his father, King Charles III of Spain, on 16 October 1759 (ten days after abdicating the Two Sicilies Crown).
+Although Ferdinand had two elder brothers, his eldest brother was mentally impaired and deemed unfit to inherit any crown; his next eldest brother, meanwhile, was his father's heir to the crown of Spain; treaty provisions prevented the union of the crowns of Spain, Naples and Sicily on the head of one person.
+Titles and honors
+
+Titles
+
+Prince Carlos was created an Infante of Spain by King Juan Carlos I of Spain by Royal Decree 2412 dated 16 December 1994 as the "representative of a line linked historically to the Spanish Crown".
+Infante Carlos was also President of the Spanish Foundation of the United World College, President of the Patronato of the Naval Museum, President of the Spanish Confederation of Foundations, President of the Iberoamerican Confederation of Foundations, President of the Foundation of San Benito de Alcántara, and President of the Foundation for the Protection of Nature (Fundación Fondo para la Protección de la Naturaleza).
+Under the traditional succession laws of the Kingdom of Navarre, Carlos's mother Infanta Alicia, born a Princess of Bourbon-Parma, was the claimant to that throne, which was formally united with the Kingdom of France in the seventeenth century.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +137,9 @@ Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Du
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +154,23 @@ Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Du
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +188,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +270,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +293,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +313,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +323,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +363,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,312 +462,182 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (64b16b8f-adaa-4bd0-bcbe-bb16c18c68f8)
- Call ID: 64b16b8f-adaa-4bd0-bcbe-bb16c18c68f8
+  AssignClass (cc4da4df-1896-48cd-8003-ce5c5420f616)
+ Call ID: cc4da4df-1896-48cd-8003-ce5c5420f616
   Args:
-    source: DonataOfMecklenburg
-    type: :Woman
-  AssignClass (1119a672-cfa4-4123-b72a-03da0ba3400b)
- Call ID: 1119a672-cfa4-4123-b72a-03da0ba3400b
-  Args:
-    type: :Person
-    source: DonataOfMecklenburg
-  AddLiteral (d5570cc8-1df7-4e4f-80ad-d96e6d202cce)
- Call ID: d5570cc8-1df7-4e4f-80ad-d96e6d202cce
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: DonataOfMecklenburg
-    literal_value: 1956
-  AssignClass (a37de5d7-0157-412d-82a0-856aa2c59321)
- Call ID: a37de5d7-0157-412d-82a0-856aa2c59321
-  Args:
+    source: Carlos_de_Borbón-Dos_Sicilias
     type: :Man
-    source: ChristianLouisOfMecklenburgSchwerin
-  AssignClass (4e2737fd-27be-467a-8475-0e748eff16d0)
- Call ID: 4e2737fd-27be-467a-8475-0e748eff16d0
+  AssignClass (c28d8968-4826-4601-acf8-a40f11c25b25)
+ Call ID: c28d8968-4826-4601-acf8-a40f11c25b25
   Args:
-    source: ChristianLouisOfMecklenburgSchwerin
     type: :Person
-  AssignClass (f5e24e60-f414-492f-bbaf-afa5d3569a73)
- Call ID: f5e24e60-f414-492f-bbaf-afa5d3569a73
+    source: Carlos_de_Borbón-Dos_Sicilias
+  AddLiteral (195aec43-f9ac-49f4-8a19-b8d6f85c548f)
+ Call ID: 195aec43-f9ac-49f4-8a19-b8d6f85c548f
   Args:
-    type: :Woman
-    source: BarbaraOfPrussia
-  AssignClass (7b14d7f1-4407-46b8-b5b3-b2c18712f844)
- Call ID: 7b14d7f1-4407-46b8-b5b3-b2c18712f844
-  Args:
-    source: BarbaraOfPrussia
-    type: :Person
-  AddLiteral (bf17b019-3d7b-49e0-8421-9db69c8d6a2f)
- Call ID: bf17b019-3d7b-49e0-8421-9db69c8d6a2f
-  Args:
-    relation: :hasBirthYear
-    source: BarbaraOfPrussia
+    literal_value: 1938
+    source: Carlos_de_Borbón-Dos_Sicilias
     literal_type: xsd:integer
-    literal_value: 1920
-  AddLiteral (0535609b-37f7-4a97-b8a6-15bbf0251f4f)
- Call ID: 0535609b-37f7-4a97-b8a6-15bbf0251f4f
+    relation: :hasBirthYear
+  AddLiteral (3b371ae0-a4c3-40ee-b75b-34c968e3cfed)
+ Call ID: 3b371ae0-a4c3-40ee-b75b-34c968e3cfed
   Args:
-    literal_value: 1994
+    literal_value: 2015
+    source: Carlos_de_Borbón-Dos_Sicilias
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: BarbaraOfPrussia
-    literal_type: xsd:integer
-  AddTriple (6efb625d-e413-4a4b-8c06-618fa693a625)
- Call ID: 6efb625d-e413-4a4b-8c06-618fa693a625
+  AssignClass (c6e3b4e0-e044-4f64-85f0-6da053c89a99)
+ Call ID: c6e3b4e0-e044-4f64-85f0-6da053c89a99
   Args:
-    target: ChristianLouisOfMecklenburgSchwerin
-    relation: :hasFather
-    source: DonataOfMecklenburg
-  AddTriple (72df175a-dbe6-4aa1-8cdf-04b5548fcbe0)
- Call ID: 72df175a-dbe6-4aa1-8cdf-04b5548fcbe0
-  Args:
-    source: DonataOfMecklenburg
-    target: BarbaraOfPrussia
-    relation: :hasMother
-  AssignClass (f23b48ec-7d0b-4ae0-89f3-b66d7d2111eb)
- Call ID: f23b48ec-7d0b-4ae0-89f3-b66d7d2111eb
-  Args:
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
     type: :Man
-    source: FriedrichFranzOfMecklenburgSchwerin
-  AssignClass (48af26bf-fa2e-4918-85d4-a9e639131f61)
- Call ID: 48af26bf-fa2e-4918-85d4-a9e639131f61
+  AssignClass (0aba2740-bdaa-40a5-9589-9fcc7fb401f1)
+ Call ID: 0aba2740-bdaa-40a5-9589-9fcc7fb401f1
   Args:
-    source: FriedrichFranzOfMecklenburgSchwerin
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
     type: :Person
-  AddTriple (7c33ee09-c332-451a-b897-ab4cce32aec6)
- Call ID: 7c33ee09-c332-451a-b897-ab4cce32aec6
+  AddLiteral (69b36155-ecbc-49e0-ac67-398d160455a3)
+ Call ID: 69b36155-ecbc-49e0-ac67-398d160455a3
   Args:
-    source: ChristianLouisOfMecklenburgSchwerin
-    target: FriedrichFranzOfMecklenburgSchwerin
-    relation: :isBrotherOf
-  AssignClass (c0335d8b-4949-435b-9fa8-954281f22d31)
- Call ID: c0335d8b-4949-435b-9fa8-954281f22d31
-  Args:
-    source: EdwinaOfMecklenburg
-    type: :Woman
-  AssignClass (49be7d1b-4a01-4a13-8c00-bca99d4e05ab)
- Call ID: 49be7d1b-4a01-4a13-8c00-bca99d4e05ab
-  Args:
-    type: :Person
-    source: EdwinaOfMecklenburg
-  AddLiteral (6e6da8a4-fe11-4f2e-add8-114529e6908b)
- Call ID: 6e6da8a4-fe11-4f2e-add8-114529e6908b
-  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: EdwinaOfMecklenburg
+    literal_value: 1901
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
+  AddLiteral (a6c7ecf0-a4ec-460a-b13e-e2145694b7ca)
+ Call ID: a6c7ecf0-a4ec-460a-b13e-e2145694b7ca
+  Args:
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
+    literal_value: 1964
     literal_type: xsd:integer
-    literal_value: 1960
-  AddTriple (ed88d6be-71b9-4dfc-bc0f-8b492b0ccf41)
- Call ID: ed88d6be-71b9-4dfc-bc0f-8b492b0ccf41
+    relation: :hasDeathYear
+  AssignClass (1d7ee78b-b527-453d-8125-23c0e32383b9)
+ Call ID: 1d7ee78b-b527-453d-8125-23c0e32383b9
   Args:
-    source: EdwinaOfMecklenburg
-    target: DonataOfMecklenburg
-    relation: :isSisterOf
-  AddTriple (00dafacb-97f8-41ad-9318-5fb2a18a4a41)
- Call ID: 00dafacb-97f8-41ad-9318-5fb2a18a4a41
+    source: Alicia_of_Bourbon-Parma
+    type: :Woman
+  AssignClass (19943aff-7b52-467a-896d-56d953ba19c8)
+ Call ID: 19943aff-7b52-467a-896d-56d953ba19c8
   Args:
-    source: EdwinaOfMecklenburg
-    target: ChristianLouisOfMecklenburgSchwerin
+    source: Alicia_of_Bourbon-Parma
+    type: :Person
+  AddLiteral (5e7153ba-96cf-4b2b-b888-5b2542e1f710)
+ Call ID: 5e7153ba-96cf-4b2b-b888-5b2542e1f710
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1917
+    source: Alicia_of_Bourbon-Parma
+  AddLiteral (8be38892-52fc-4bcc-9d41-1f0b239099ea)
+ Call ID: 8be38892-52fc-4bcc-9d41-1f0b239099ea
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2017
+    source: Alicia_of_Bourbon-Parma
+  AddTriple (8db6ef39-c0e7-4366-acb3-394a1e5b910d)
+ Call ID: 8db6ef39-c0e7-4366-acb3-394a1e5b910d
+  Args:
+    source: Carlos_de_Borbón-Dos_Sicilias
     relation: :hasFather
-  AddTriple (d28e96e9-29f3-49ee-abfc-c6673acab09f)
- Call ID: d28e96e9-29f3-49ee-abfc-c6673acab09f
+    target: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
+  AddTriple (2937f07c-7127-413c-98b2-aa051e2f5d7c)
+ Call ID: 2937f07c-7127-413c-98b2-aa051e2f5d7c
   Args:
-    source: EdwinaOfMecklenburg
-    target: BarbaraOfPrussia
+    source: Carlos_de_Borbón-Dos_Sicilias
+    target: Alicia_of_Bourbon-Parma
     relation: :hasMother
-  AssignClass (a703c2c0-2ba1-4bd1-aaec-9326479d70e5)
- Call ID: a703c2c0-2ba1-4bd1-aaec-9326479d70e5
+  AssignClass (71a73f67-dcef-40d2-97b7-57eeda3e5011)
+ Call ID: 71a73f67-dcef-40d2-97b7-57eeda3e5011
+  Args:
+    source: Carlo_of_Bourbon-Two_Sicilies
+    type: :Man
+  AssignClass (6d3bb621-a280-4f8a-b5d9-51036167967c)
+ Call ID: 6d3bb621-a280-4f8a-b5d9-51036167967c
+  Args:
+    source: Carlo_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (79234541-8831-4c86-91a8-e69b747521a2)
+ Call ID: 79234541-8831-4c86-91a8-e69b747521a2
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Carlo_of_Bourbon-Two_Sicilies
+    literal_value: 1870
+  AddLiteral (6c42bf01-a7ac-4377-a153-3ca546062ae1)
+ Call ID: 6c42bf01-a7ac-4377-a153-3ca546062ae1
+  Args:
+    source: Carlo_of_Bourbon-Two_Sicilies
+    literal_value: 1949
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (4d245e62-96e4-4189-8859-5a78d3d969b1)
+ Call ID: 4d245e62-96e4-4189-8859-5a78d3d969b1
   Args:
     type: :Woman
-    source: CharlotteOfSaxeAltenburg
-  AssignClass (67255e5a-bfcf-41b6-a7ae-59057becd323)
- Call ID: 67255e5a-bfcf-41b6-a7ae-59057becd323
+    source: Mercedes_Princess_of_Asturias
+  AssignClass (5f0a062e-0f76-4f6b-9db2-0514966fd8e4)
+ Call ID: 5f0a062e-0f76-4f6b-9db2-0514966fd8e4
   Args:
     type: :Person
-    source: CharlotteOfSaxeAltenburg
-  AddTriple (89bd85ba-43b3-4e4b-8636-77bfc4ac5056)
- Call ID: 89bd85ba-43b3-4e4b-8636-77bfc4ac5056
+    source: Mercedes_Princess_of_Asturias
+  AddLiteral (af8e38b0-a8b4-46f3-8eec-c3593c201cc1)
+ Call ID: af8e38b0-a8b4-46f3-8eec-c3593c201cc1
   Args:
-    target: BarbaraOfPrussia
-    relation: :isMotherOf
-    source: CharlotteOfSaxeAltenburg
-  AssignClass (e206a6d7-6319-4140-bef8-7592382eef59)
- Call ID: e206a6d7-6319-4140-bef8-7592382eef59
+    source: Mercedes_Princess_of_Asturias
+    literal_value: 1880
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (879ef082-bdd5-496e-8d6b-809af559addb)
+ Call ID: 879ef082-bdd5-496e-8d6b-809af559addb
   Args:
-    type: :Man
-    source: ErnstIIOfSaxeAltenburg
-  AssignClass (4c197d20-0334-46c7-a57d-200a36e83660)
- Call ID: 4c197d20-0334-46c7-a57d-200a36e83660
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1904
+    source: Mercedes_Princess_of_Asturias
+  AddTriple (00ae9d75-fa8c-464c-9d74-89f698eb924b)
+ Call ID: 00ae9d75-fa8c-464c-9d74-89f698eb924b
   Args:
-    source: ErnstIIOfSaxeAltenburg
+    target: Carlo_of_Bourbon-Two_Sicilies
+    relation: :hasFather
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
+  AddTriple (f78a84b7-1658-4bee-b945-200d8200c445)
+ Call ID: f78a84b7-1658-4bee-b945-200d8200c445
+  Args:
+    target: Mercedes_Princess_of_Asturias
+    relation: :hasMother
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_Borbón
+  AssignClass (784786cc-3b95-4138-932f-42db0d8eeba3)
+ Call ID: 784786cc-3b95-4138-932f-42db0d8eeba3
+  Args:
+    source: Teresa_of_Bourbon-Dos_Sicilias
+    type: :Woman
+  AssignClass (ff0c1eaf-9142-4701-b6ac-deb4600f7cdd)
+ Call ID: ff0c1eaf-9142-4701-b6ac-deb4600f7cdd
+  Args:
+    source: Teresa_of_Bourbon-Dos_Sicilias
     type: :Person
-  AddTriple (242255d3-c2ad-4ac0-bc55-2dfb55b50a75)
- Call ID: 242255d3-c2ad-4ac0-bc55-2dfb55b50a75
+  AddTriple (528aa4e0-20c0-4f54-aa85-8aaac070bdc4)
+ Call ID: 528aa4e0-20c0-4f54-aa85-8aaac070bdc4
   Args:
-    relation: :isFatherOf
-    target: CharlotteOfSaxeAltenburg
-    source: ErnstIIOfSaxeAltenburg
-  AssignClass (e02da58d-b5a9-4793-837a-622ab94cb119)
- Call ID: e02da58d-b5a9-4793-837a-622ab94cb119
-  Args:
-    type: :Man
-    source: FrederickFrancisIVOfMecklenburgSchwerin
-  AssignClass (f4a1322e-ff32-45c9-897c-fd370dccad96)
- Call ID: f4a1322e-ff32-45c9-897c-fd370dccad96
-  Args:
-    type: :Person
-    source: FrederickFrancisIVOfMecklenburgSchwerin
-  AddTriple (c514f359-8629-4809-90cc-803b97551188)
- Call ID: c514f359-8629-4809-90cc-803b97551188
-  Args:
-    source: FrederickFrancisIVOfMecklenburgSchwerin
-    relation: :isFatherOf
-    target: ChristianLouisOfMecklenburgSchwerin
-  AssignClass (8ca06e76-ad6e-491d-80d2-deadabba6fcc)
- Call ID: 8ca06e76-ad6e-491d-80d2-deadabba6fcc
-  Args:
-    type: :Man
-    source: ChristianIXOfDenmark
-  AssignClass (315792ad-c488-40d4-acbe-1ca9ae94b8e4)
- Call ID: 315792ad-c488-40d4-acbe-1ca9ae94b8e4
-  Args:
-    source: ChristianIXOfDenmark
-    type: :Person
-  AssignClass (1fc691d8-d4e3-40b3-b4a3-e76940f94a1e)
- Call ID: 1fc691d8-d4e3-40b3-b4a3-e76940f94a1e
+    source: Carlos_de_Borbón-Dos_Sicilias
+    target: Teresa_of_Bourbon-Dos_Sicilias
+    relation: :hasSister
+  AssignClass (1cc66d45-b6f5-4ac5-9157-0b2fada5f3c2)
+ Call ID: 1cc66d45-b6f5-4ac5-9157-0b2fada5f3c2
   Args:
     type: :Woman
-    source: AlexandraOfHanoverAndCumberland
-  AssignClass (0b8528e3-6d89-4e68-a321-a10e0c8964b1)
- Call ID: 0b8528e3-6d89-4e68-a321-a10e0c8964b1
+    source: Anne_of_Orléans
+  AssignClass (5af8a7d2-1f9e-4c7c-bef8-65856b77e084)
+ Call ID: 5af8a7d2-1f9e-4c7c-bef8-65856b77e084
   Args:
     type: :Person
-    source: AlexandraOfHanoverAndCumberland
-  AddTriple (f6b6d700-60a1-40af-9a5d-1cbfd82fa7cc)
- Call ID: f6b6d700-60a1-40af-9a5d-1cbfd82fa7cc
+    source: Anne_of_Orléans
+  AddTriple (9fa612fa-0c76-4e63-8823-f69827fd1380)
+ Call ID: 9fa612fa-0c76-4e63-8823-f69827fd1380
   Args:
-    relation: :isMotherOf
-    target: ChristianLouisOfMecklenburgSchwerin
-    source: AlexandraOfHanoverAndCumberland
-  AssignClass (24ad6e01-4b1d-411b-b928-8c3c154b3aeb)
- Call ID: 24ad6e01-4b1d-411b-b928-8c3c154b3aeb
-  Args:
-    source: ErnestAugustusCrownPrinceOfHanover
-    type: :Man
-  AssignClass (b7eebbec-1be7-4c0f-8a47-6ca2bac8d34f)
- Call ID: b7eebbec-1be7-4c0f-8a47-6ca2bac8d34f
-  Args:
-    type: :Person
-    source: ErnestAugustusCrownPrinceOfHanover
-  AssignClass (7d9990ed-6076-4658-aa54-2607a49cf9aa)
- Call ID: 7d9990ed-6076-4658-aa54-2607a49cf9aa
-  Args:
-    source: ThyraOfDenmark
-    type: :Woman
-  AssignClass (b52ff313-cb29-44e2-af2e-9f4526c49dde)
- Call ID: b52ff313-cb29-44e2-af2e-9f4526c49dde
-  Args:
-    source: ThyraOfDenmark
-    type: :Person
-  AddTriple (de8d14a9-16f5-4ef8-b2d0-6f42ec1f389c)
- Call ID: de8d14a9-16f5-4ef8-b2d0-6f42ec1f389c
-  Args:
-    relation: :isFatherOf
-    target: AlexandraOfHanoverAndCumberland
-    source: ErnestAugustusCrownPrinceOfHanover
-  AddTriple (e693986e-f3c2-42ca-b9b3-428f79de0361)
- Call ID: e693986e-f3c2-42ca-b9b3-428f79de0361
-  Args:
-    source: ThyraOfDenmark
-    target: AlexandraOfHanoverAndCumberland
-    relation: :isMotherOf
-  AssignClass (9f75253d-b908-4d6e-a1bf-b1b08baba71a)
- Call ID: 9f75253d-b908-4d6e-a1bf-b1b08baba71a
-  Args:
-    source: LouiseOfHesseKassel
-    type: :Woman
-  AssignClass (733bd64f-6bf8-4373-8f12-6dd760929821)
- Call ID: 733bd64f-6bf8-4373-8f12-6dd760929821
-  Args:
-    type: :Person
-    source: LouiseOfHesseKassel
-  AddTriple (d41f6b41-d19b-467e-9144-7fe2fdff3302)
- Call ID: d41f6b41-d19b-467e-9144-7fe2fdff3302
-  Args:
-    source: ChristianIXOfDenmark
-    target: ThyraOfDenmark
-    relation: :isFatherOf
-  AddTriple (1be8fa00-6a4e-40ad-81c1-db6b2483b2bb)
- Call ID: 1be8fa00-6a4e-40ad-81c1-db6b2483b2bb
-  Args:
-    target: ThyraOfDenmark
-    relation: :isMotherOf
-    source: LouiseOfHesseKassel
-  AssignClass (c996a115-c727-4560-96b1-16ca80b41dca)
- Call ID: c996a115-c727-4560-96b1-16ca80b41dca
-  Args:
-    source: SigismundOfPrussia
-    type: :Man
-  AssignClass (7e1ec2c5-d041-4f7b-8f83-1c0606eb119f)
- Call ID: 7e1ec2c5-d041-4f7b-8f83-1c0606eb119f
-  Args:
-    type: :Person
-    source: SigismundOfPrussia
-  AddTriple (aa5cc623-6e8b-4a0a-9748-2d482d08f9fa)
- Call ID: aa5cc623-6e8b-4a0a-9748-2d482d08f9fa
-  Args:
-    target: BarbaraOfPrussia
-    relation: :isFatherOf
-    source: SigismundOfPrussia
-  AssignClass (44591ef1-4856-48aa-b372-5234090ea72b)
- Call ID: 44591ef1-4856-48aa-b372-5234090ea72b
-  Args:
-    type: :Man
-    source: LouisIVOfHesse
-  AssignClass (f9db6820-8f3f-4c4a-a475-0f26cf01ad0a)
- Call ID: f9db6820-8f3f-4c4a-a475-0f26cf01ad0a
-  Args:
-    type: :Person
-    source: LouisIVOfHesse
-  AssignClass (1367093d-b4f3-4670-917d-0387a1875f88)
- Call ID: 1367093d-b4f3-4670-917d-0387a1875f88
-  Args:
-    type: :Woman
-    source: AliceOfHesseAndByRhine
-  AssignClass (8f52c3cd-7828-4698-a5b8-3becbfadff41)
- Call ID: 8f52c3cd-7828-4698-a5b8-3becbfadff41
-  Args:
-    source: AliceOfHesseAndByRhine
-    type: :Person
-  AssignClass (62026d0f-e604-48a4-831c-a06487e78a7f)
- Call ID: 62026d0f-e604-48a4-831c-a06487e78a7f
-  Args:
-    type: :Woman
-    source: QueenVictoria
-  AssignClass (7006b21a-b057-4fd1-a082-1be132a6c6d1)
- Call ID: 7006b21a-b057-4fd1-a082-1be132a6c6d1
-  Args:
-    source: QueenVictoria
-    type: :Person
-  AddTriple (0dec43ac-cfa6-47e9-a5f9-07c5c1430c53)
- Call ID: 0dec43ac-cfa6-47e9-a5f9-07c5c1430c53
-  Args:
-    target: AliceOfHesseAndByRhine
-    relation: :isFatherOf
-    source: QueenVictoria
-  AddTriple (fe4300fe-9a39-46d0-b6b4-b38cc4010e30)
- Call ID: fe4300fe-9a39-46d0-b6b4-b38cc4010e30
-  Args:
-    source: LouisIVOfHesse
-    target: SigismundOfPrussia
-    relation: :isFatherOf
-  AddTriple (18fe3a79-7bfb-4db9-832c-dfe93e726102)
- Call ID: 18fe3a79-7bfb-4db9-832c-dfe93e726102
-  Args:
-    source: AliceOfHesseAndByRhine
-    target: SigismundOfPrussia
-    relation: :isMotherOf
-  Finish (f55a5b4c-8a37-40e1-aca6-9ad313b32508)
- Call ID: f55a5b4c-8a37-40e1-aca6-9ad313b32508
+    relation: :hasRelation
+    target: Anne_of_Orléans
+    source: Carlos_de_Borbón-Dos_Sicilias
+  Finish (5e2f7293-0726-4175-b723-3fa48f3b6d06)
+ Call ID: 5e2f7293-0726-4175-b723-3fa48f3b6d06
   Args:

@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael a :Man .\n\ndata:Prince_Michael%2Ctarget :hasMarriageYear data:Princess_Marina .\n\ndata:Prince_Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:King_Constantine_II ;\n    :hasMother data:Queen_Anne-Marie .\n\ndata:Queen_Sofia_of_Spain a :Woman .\n\ndata:King_Constantine_II a :Man .\n\ndata:Princess_Marina a :Woman .\n\ndata:Queen_Anne-Marie a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman .\n\ndata:Michael a :Man .\n\ndata:Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Sof%C3%ADa_of_Spain a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael a :Man ;\n    :hasRelation data:Princess_Marina .\n\ndata:Prince_Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:King_Constantine_II ;\n    :hasMother data:Queen_Anne-Marie .\n\ndata:Queen_Sofia_of_Spain a :Woman .\n\ndata:King_Constantine_II a :Man .\n\ndata:Princess_Marina a :Woman .\n\ndata:Queen_Anne-Marie a :Woman .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Michael a :Man ;\n    :hasRelation data:Princess_Marina .\n\ndata:Prince_Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:King_Constantine_II ;\n    :hasMother data:Queen_Anne-Marie .\n\ndata:Queen_Sofia_of_Spain a :Woman .\n\ndata:King_Constantine_II a :Man .\n\ndata:Princess_Marina a :Woman .\n\ndata:Queen_Anne-Marie a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Marina a :Woman .\n\ndata:Michael a :Man .\n\ndata:Philippos_of_Greece_and_Denmark a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Constantine_II ;\n    :hasMother data:Anne-Marie .\n\ndata:Sof%C3%ADa_of_Spain a :Woman .\n\ndata:Anne-Marie a :Woman .\n\ndata:Constantine_II a :Man .\n\n"
     }
 ]

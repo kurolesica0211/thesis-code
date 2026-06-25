@@ -85,25 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Moritz, Landgrave of Hesse (legally Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen; 6 August 1926 – 23 May 2013) was the son of Prince Philip, Landgrave of Hesse, and the head of the House of Hesse, also known as the House of Brabant.
-Life
+Prince Waldemar William Louis Frederick Victor of Prussia (German: Waldemar Wilhelm Ludwig Friedrich Viktor Heinrich; 20 March 1889 at Kiel – 2 May 1945 at Tutzing, Bavaria) was the eldest son of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
+Biography
 
-Landgrave Moritz was born at Racconigi Castle, in Italy.
-During the Second World War, Moritz's mother, Princess Mafalda of Savoy, was arrested by the Nazis for alleged subversive activities and died in the Buchenwald concentration camp in 1944 as a result of a U.S. bombing raid on the camp.
-Moritz and his siblings (Heinrich, Otto and Elisabeth) were given sanctuary in the Vatican under the care of their uncle Louis, Prince of Hesse and by Rhine and aunt Margaret Campbell Geddes who adopted them.
-Prince Louis of Hesse and by Rhine, the last head of the Hesse-Darmstadt line, died in 1968, at which time Moritz's father succeeded him as head of the entire house.
-Moritz became the head of the House of Hesse after the death of his father Philip on 25 October 1980.
-Moritz was a world-famous art collector.
-He presided over the Foundation of the House of Hesse which is the proprietor of the Kronberg Palace Hotel and several manor estates and palaces.
-Marriage and children
+Marriage
 
-Moritz married Princess Tatiana of Sayn-Wittgenstein-Berleburg, daughter of Prince Gustav Albrecht.
+Waldemar married Princess Calixta of Lippe (14 October 1895 – 15 December 1982) on 14 August 1919 at Hemmelmark.
+Haemophilia and death
+
+Waldemar, like his maternal first cousin, Tsarevich Alexei Nikolaevich of Russia; maternal uncle Prince Friedrich of Hesse and by Rhine; and youngest brother Henry, had haemophilia.
+He and his wife fled their home in light of the Russian advance, arriving in Tutzing, where Waldemar was able to receive his last blood transfusion.
+The U.S. Army overran the area the next day, on 1 May 1945, and diverted all medical resources to treat nearby concentration camp victims, preventing Waldemar's doctor from treating him.
+Waldemar died the following day, on 2 May.
+Honours and awards
+
+Prince Waldemar received the following awards:
+
+
+Ancestry
+
+References
+
+External links
+
+@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Prince Waldemar of Prussia (1889-1945) at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +132,9 @@ Moritz married Princess Tatiana of Sayn-Wittgenstein-Berleburg, daughter of Prin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +149,23 @@ Moritz married Princess Tatiana of Sayn-Wittgenstein-Berleburg, daughter of Prin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,127 +457,123 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9a08d29e-3b6e-437d-ac02-5c2693ab0203)
- Call ID: 9a08d29e-3b6e-437d-ac02-5c2693ab0203
+  AssignClass (c60fdb66-8831-46a9-b186-4790209557ba)
+ Call ID: c60fdb66-8831-46a9-b186-4790209557ba
   Args:
+    source: :Prince_Waldemar_of_Prussia
     type: :Man
-    source: Moritz
-  AssignClass (6711afce-6b11-4491-96a0-d0d3e61f6238)
- Call ID: 6711afce-6b11-4491-96a0-d0d3e61f6238
+  AssignClass (edda92ea-dcf9-412a-95e0-7fa87e424b58)
+ Call ID: edda92ea-dcf9-412a-95e0-7fa87e424b58
   Args:
-    type: :Man
-    source: Philip
-  AssignClass (46854945-4c08-48ba-93b1-392820fc382f)
- Call ID: 46854945-4c08-48ba-93b1-392820fc382f
-  Args:
-    type: :Woman
-    source: MafaldaOfSavoy
-  AssignClass (54ab4d47-78ef-4d03-948e-3debb42ba6b1)
- Call ID: 54ab4d47-78ef-4d03-948e-3debb42ba6b1
-  Args:
-    type: :Man
-    source: Heinrich
-  AssignClass (208ebb8f-e96e-4fa2-a1c0-d658a9da2b64)
- Call ID: 208ebb8f-e96e-4fa2-a1c0-d658a9da2b64
-  Args:
-    type: :Man
-    source: Otto
-  AssignClass (4ddf2c12-77e9-4b4f-bef3-b5333c28beb9)
- Call ID: 4ddf2c12-77e9-4b4f-bef3-b5333c28beb9
-  Args:
-    type: :Woman
-    source: Elisabeth
-  AssignClass (57958635-cd30-47fd-a4c1-a70a7e14264a)
- Call ID: 57958635-cd30-47fd-a4c1-a70a7e14264a
-  Args:
-    type: :Man
-    source: LouisOfHesseAndByRhine
-  AssignClass (d925d3fd-bb18-48f1-9962-3e7938d7a322)
- Call ID: d925d3fd-bb18-48f1-9962-3e7938d7a322
-  Args:
-    type: :Woman
-    source: MargaretCampbellGeddes
-  AssignClass (8628f075-8ee8-44e8-a543-5d20c2908e1b)
- Call ID: 8628f075-8ee8-44e8-a543-5d20c2908e1b
-  Args:
-    type: :Woman
-    source: TatianaOfSaynWittgensteinBerleburg
-  AssignClass (9b266352-8ac1-4720-8ce9-071c327caac3)
- Call ID: 9b266352-8ac1-4720-8ce9-071c327caac3
-  Args:
-    type: :Man
-    source: GustavAlbrecht
-  AddLiteral (89b15026-9837-47ee-9199-fccdb2097d7a)
- Call ID: 89b15026-9837-47ee-9199-fccdb2097d7a
-  Args:
-    literal_type: xsd:string
-    source: Moritz
-    literal_value: Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen
-    relation: :alsoKnownAs
-  AddLiteral (04fcf805-fe9c-41cc-a2ee-d533cc95eb3a)
- Call ID: 04fcf805-fe9c-41cc-a2ee-d533cc95eb3a
+    source: :Prince_Waldemar_of_Prussia
+    type: :Person
+  AddLiteral (7810c3b0-bcde-41af-a29a-24a9d6e542df)
+ Call ID: 7810c3b0-bcde-41af-a29a-24a9d6e542df
   Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1926
-    source: Moritz
-  AddLiteral (7a0a3c3c-f41a-49bf-a335-a3dd340862c2)
- Call ID: 7a0a3c3c-f41a-49bf-a335-a3dd340862c2
+    source: :Prince_Waldemar_of_Prussia
+    literal_value: 1889
+  AddLiteral (e609be87-b91a-49e3-bccf-4f0240f2ea22)
+ Call ID: e609be87-b91a-49e3-bccf-4f0240f2ea22
   Args:
-    literal_type: xsd:integer
-    literal_value: 2013
-    source: Moritz
     relation: :hasDeathYear
-  AddTriple (fdb667ce-5207-427d-81a0-1c4cfc520435)
- Call ID: fdb667ce-5207-427d-81a0-1c4cfc520435
+    source: :Prince_Waldemar_of_Prussia
+    literal_type: xsd:integer
+    literal_value: 1945
+  AssignClass (98241a44-8c8c-48b5-8b7b-76087623a21a)
+ Call ID: 98241a44-8c8c-48b5-8b7b-76087623a21a
   Args:
-    source: Moritz
-    target: Philip
+    source: :Prince_Henry_of_Prussia
+    type: :Man
+  AssignClass (c6a38c9d-e2d0-4430-80fa-afc82b801565)
+ Call ID: c6a38c9d-e2d0-4430-80fa-afc82b801565
+  Args:
+    source: :Prince_Henry_of_Prussia
+    type: :Person
+  AssignClass (d930abbf-8cab-412f-bc69-2940d14a09b5)
+ Call ID: d930abbf-8cab-412f-bc69-2940d14a09b5
+  Args:
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Woman
+  AssignClass (6c0cf1de-055d-4f44-83a8-2bc4a1916731)
+ Call ID: 6c0cf1de-055d-4f44-83a8-2bc4a1916731
+  Args:
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Person
+  AddTriple (41cd17b7-8aed-4c34-981c-5e56fb0f133b)
+ Call ID: 41cd17b7-8aed-4c34-981c-5e56fb0f133b
+  Args:
     relation: :hasFather
-  AddTriple (16168c7a-ad57-4b62-994e-56d192f7be72)
- Call ID: 16168c7a-ad57-4b62-994e-56d192f7be72
+    source: :Prince_Waldemar_of_Prussia
+    target: :Prince_Henry_of_Prussia
+  AddTriple (eb970293-2522-44be-a761-dcfae35940f6)
+ Call ID: eb970293-2522-44be-a761-dcfae35940f6
   Args:
+    target: :Princess_Irene_of_Hesse_and_by_Rhine
+    source: :Prince_Waldemar_of_Prussia
     relation: :hasMother
-    target: MafaldaOfSavoy
-    source: Moritz
-  AddTriple (79b0096f-14c0-4598-ad11-13921ac8d414)
- Call ID: 79b0096f-14c0-4598-ad11-13921ac8d414
+  AssignClass (1f3811e0-abd6-43f6-8a51-cf17f9349f5c)
+ Call ID: 1f3811e0-abd6-43f6-8a51-cf17f9349f5c
   Args:
-    target: Heinrich
-    relation: :hasBrother
-    source: Moritz
-  AddTriple (c9327751-8236-4aee-a210-9bd4c8f55a1f)
- Call ID: c9327751-8236-4aee-a210-9bd4c8f55a1f
+    source: :Princess_Calixta_of_Lippe
+    type: :Woman
+  AssignClass (59c74d2b-f16e-4807-af70-b10e4e7ecbaf)
+ Call ID: 59c74d2b-f16e-4807-af70-b10e4e7ecbaf
   Args:
-    relation: :hasBrother
-    target: Otto
-    source: Moritz
-  AddTriple (cd39202f-aece-4888-8c52-3d803c2be50d)
- Call ID: cd39202f-aece-4888-8c52-3d803c2be50d
+    source: :Princess_Calixta_of_Lippe
+    type: :Person
+  AddTriple (5f064268-5ff4-4428-a1eb-e8fdf5718d51)
+ Call ID: 5f064268-5ff4-4428-a1eb-e8fdf5718d51
   Args:
-    source: Moritz
-    target: Elisabeth
-    relation: :hasSister
-  AddTriple (8be6159b-fc3a-4c31-908a-cb3d730e3062)
- Call ID: 8be6159b-fc3a-4c31-908a-cb3d730e3062
+    target: :Princess_Calixta_of_Lippe
+    source: :Prince_Waldemar_of_Prussia
+    relation: :hasRelation
+  AddLiteral (043f1598-773a-4ab8-8d65-5cb7288766b2)
+ Call ID: 043f1598-773a-4ab8-8d65-5cb7288766b2
   Args:
-    source: LouisOfHesseAndByRhine
-    relation: :isUncleOf
-    target: Moritz
-  AddTriple (e25d2974-e969-4aac-b5dd-19d9a2f082aa)
- Call ID: e25d2974-e969-4aac-b5dd-19d9a2f082aa
-  Args:
-    source: Moritz
+    literal_value: 1919
+    literal_type: xsd:integer
+    source: :Prince_Waldemar_of_Prussia
     relation: :hasMarriageYear
-    target: TatianaOfSaynWittgensteinBerleburg
-  AddTriple (27ce8356-0c79-4f90-9306-23796b5f4031)
- Call ID: 27ce8356-0c79-4f90-9306-23796b5f4031
+  AssignClass (682d8f53-def3-46a8-88d5-5018c41bf1fa)
+ Call ID: 682d8f53-def3-46a8-88d5-5018c41bf1fa
   Args:
-    target: GustavAlbrecht
-    relation: :hasFather
-    source: TatianaOfSaynWittgensteinBerleburg
-  Finish (d3b443c6-795d-48e0-b396-0f28c4fc9f64)
- Call ID: d3b443c6-795d-48e0-b396-0f28c4fc9f64
+    source: :Prince_Henry_youngest_brother
+    type: :Man
+  AssignClass (e60ad602-d2c5-4007-adfe-ab77e9bc931d)
+ Call ID: e60ad602-d2c5-4007-adfe-ab77e9bc931d
+  Args:
+    source: :Prince_Henry_youngest_brother
+    type: :Person
+  AddTriple (770c7a66-e6b1-4e7e-82b6-850cfd1d66cd)
+ Call ID: 770c7a66-e6b1-4e7e-82b6-850cfd1d66cd
+  Args:
+    target: :Prince_Waldemar_of_Prussia
+    relation: :isBrotherOf
+    source: :Prince_Henry_youngest_brother
+  AssignClass (91330474-fb87-410b-94a7-663387e6d326)
+ Call ID: 91330474-fb87-410b-94a7-663387e6d326
+  Args:
+    source: :Prince_Friedrich_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (ad39a2c5-89ea-46db-a034-78b5da838031)
+ Call ID: ad39a2c5-89ea-46db-a034-78b5da838031
+  Args:
+    source: :Prince_Friedrich_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (83d25de9-da4e-409f-a297-c9caed92c99f)
+ Call ID: 83d25de9-da4e-409f-a297-c9caed92c99f
+  Args:
+    source: :Tsarevich_Alexei_Nikolaevich_of_Russia
+    type: :Man
+  AssignClass (7a78956b-7ed0-415b-a284-be8069de8ec4)
+ Call ID: 7a78956b-7ed0-415b-a284-be8069de8ec4
+  Args:
+    source: :Tsarevich_Alexei_Nikolaevich_of_Russia
+    type: :Person
+  Finish (d620ad18-0481-4359-8a74-de87f9488375)
+ Call ID: d620ad18-0481-4359-8a74-de87f9488375
   Args:
 
 ================================= Tool Message =================================
@@ -564,36 +663,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:LouisOfHesseAndByRhine a :Man ;
-      :isUncleOf data:Moritz .
+  data:Prince_Friedrich_of_Hesse_and_by_Rhine a :Man,
+          :Person .
 
-  data:MargaretCampbellGeddes a :Woman .
+  data:Prince_Henry_youngest_brother a :Man,
+          :Person ;
+      :isBrotherOf data:Prince_Waldemar_of_Prussia .
 
-  data:Elisabeth a :Woman .
+  data:Tsarevich_Alexei_Nikolaevich_of_Russia a :Man,
+          :Person .
 
-  data:GustavAlbrecht a :Man .
+  data:Prince_Henry_of_Prussia a :Man,
+          :Person .
 
-  data:Heinrich a :Man .
+  data:Prince_Waldemar_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1945 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMarriageYear 1919 ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Princess_Calixta_of_Lippe .
 
-  data:MafaldaOfSavoy a :Woman .
+  data:Princess_Calixta_of_Lippe a :Person,
+          :Woman .
 
-  data:Moritz a :Man ;
-      :alsoKnownAs "Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen"^^xsd:string ;
-      :hasBirthYear 1926 ;
-      :hasBrother data:Heinrich,
-          data:Otto ;
-      :hasDeathYear 2013 ;
-      :hasFather data:Philip ;
-      :hasMarriageYear data:TatianaOfSaynWittgensteinBerleburg ;
-      :hasMother data:MafaldaOfSavoy ;
-      :hasSister data:Elisabeth .
-
-  data:Otto a :Man .
-
-  data:Philip a :Man .
-
-  data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
-      :hasFather data:GustavAlbrecht .
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+          :Woman .
 
 
 
@@ -605,86 +701,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d54ac9ae-c756-4814-b885-a9cb662af099)
- Call ID: d54ac9ae-c756-4814-b885-a9cb662af099
+  ValidateShacl (0a5b5e6c-43b4-4f49-a6a1-1da5d0612008)
+ Call ID: 0a5b5e6c-43b4-4f49-a6a1-1da5d0612008
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Philip' assigned as the father of 'Moritz' lacks the required class ':Ancestor'.
+      The node Prince_Henry_of_Prussia is missing the required class :Ancestor, which is expected for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, :Ancestor)
+      AssignClass(Prince_Henry_of_Prussia, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'MafaldaOfSavoy' assigned as the mother of 'Moritz' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_Hesse_and_by_Rhine is missing the required class :Ancestor, which is expected for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MafaldaOfSavoy, :Ancestor)
+      AssignClass(Princess_Irene_of_Hesse_and_by_Rhine, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'GustavAlbrecht' assigned as the father of 'TatianaOfSaynWittgensteinBerleburg' lacks the required class ':Ancestor'.
+      The node Prince_Henry_of_Prussia is missing the required class :Ancestor, which is expected for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GustavAlbrecht, :Ancestor)
+      AssignClass(Prince_Henry_of_Prussia, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Philip' assigned as the father of 'Moritz' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_Hesse_and_by_Rhine is missing the required class :Ancestor, which is expected for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, :Ancestor)
+      AssignClass(Princess_Irene_of_Hesse_and_by_Rhine, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'MafaldaOfSavoy' assigned as the mother of 'Moritz' lacks the required class ':Ancestor'.
+      The node Prince_Henry_of_Prussia is missing the required class :Ancestor, which is expected for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MafaldaOfSavoy, :Ancestor)
+      AssignClass(Prince_Henry_of_Prussia, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'GustavAlbrecht' assigned as the father of 'TatianaOfSaynWittgensteinBerleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GustavAlbrecht, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Philip' assigned as the father of 'Moritz' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, :Ancestor)
-
-
-  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'MafaldaOfSavoy' assigned as the mother of 'Moritz' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_Hesse_and_by_Rhine is missing the required class :Ancestor, which is expected for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MafaldaOfSavoy, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'GustavAlbrecht' assigned as the father of 'TatianaOfSaynWittgensteinBerleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GustavAlbrecht, :Ancestor)
+      AssignClass(Princess_Irene_of_Hesse_and_by_Rhine, :Ancestor)
 
 
 
@@ -693,28 +765,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0a305eb3-eb40-4a61-9449-bb365778a96d)
- Call ID: 0a305eb3-eb40-4a61-9449-bb365778a96d
+  AssignClass (2ec4d6e9-d5ba-42ba-9267-a0c83332b951)
+ Call ID: 2ec4d6e9-d5ba-42ba-9267-a0c83332b951
   Args:
-    source: Philip
+    source: :Prince_Henry_of_Prussia
     type: :Ancestor
-  AssignClass (964da98f-d3fd-4f4c-bb68-7de34dca857a)
- Call ID: 964da98f-d3fd-4f4c-bb68-7de34dca857a
+  AssignClass (9cc1acbe-d457-48e7-b057-ef1f2af22cac)
+ Call ID: 9cc1acbe-d457-48e7-b057-ef1f2af22cac
   Args:
-    source: MafaldaOfSavoy
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
     type: :Ancestor
-  AssignClass (0c3715a3-e5d8-40c9-a5af-2ce050395acb)
- Call ID: 0c3715a3-e5d8-40c9-a5af-2ce050395acb
-  Args:
-    source: GustavAlbrecht
-    type: :Ancestor
-  ValidateShacl (bce82df8-3a09-4fd6-9f41-f80909f3dceb)
- Call ID: bce82df8-3a09-4fd6-9f41-f80909f3dceb
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -727,41 +787,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:LouisOfHesseAndByRhine a :Man ;
-      :isUncleOf data:Moritz .
+  data:Prince_Friedrich_of_Hesse_and_by_Rhine a :Man,
+          :Person .
 
-  data:MargaretCampbellGeddes a :Woman .
+  data:Prince_Henry_youngest_brother a :Man,
+          :Person ;
+      :isBrotherOf data:Prince_Waldemar_of_Prussia .
 
-  data:Elisabeth a :Woman .
+  data:Tsarevich_Alexei_Nikolaevich_of_Russia a :Man,
+          :Person .
 
-  data:GustavAlbrecht a :Ancestor,
-          :Man .
+  data:Prince_Henry_of_Prussia a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Heinrich a :Man .
+  data:Prince_Waldemar_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1945 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMarriageYear 1919 ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Princess_Calixta_of_Lippe .
 
-  data:MafaldaOfSavoy a :Ancestor,
+  data:Princess_Calixta_of_Lippe a :Person,
           :Woman .
 
-  data:Moritz a :Man ;
-      :alsoKnownAs "Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen"^^xsd:string ;
-      :hasBirthYear 1926 ;
-      :hasBrother data:Heinrich,
-          data:Otto ;
-      :hasDeathYear 2013 ;
-      :hasFather data:Philip ;
-      :hasMarriageYear data:TatianaOfSaynWittgensteinBerleburg ;
-      :hasMother data:MafaldaOfSavoy ;
-      :hasSister data:Elisabeth .
-
-  data:Otto a :Man .
-
-  data:Philip a :Ancestor,
-          :Man .
-
-  data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
-      :hasFather data:GustavAlbrecht .
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
+          :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (7e9c4fd8-5dea-4cf5-836a-8c737494b11b)
+ Call ID: 7e9c4fd8-5dea-4cf5-836a-8c737494b11b
+  Args:
 
 ================================= Tool Message =================================
 
@@ -771,6 +835,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (94aa1bd2-88f8-4bd9-9209-65db56740905)
- Call ID: 94aa1bd2-88f8-4bd9-9209-65db56740905
+  Finish (3cb85827-126c-4e7a-a638-dea45e28a962)
+ Call ID: 3cb85827-126c-4e7a-a638-dea45e28a962
   Args:

@@ -69,72 +69,24 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Grand Duchess Elena Vladimirovna of Russia (Russian: Елена Владимировна Романова, romanized: Yelena Vladimirovna Romanova; 29 January 1882 – 13 March 1957) was the only daughter and youngest child of Grand Duke Vladimir Alexandrovich of Russia and Duchess Marie of Mecklenburg-Schwerin.
-Her husband was Prince Nicholas of Greece and Denmark and they were both first cousins of Emperor Nicholas II of Russia.
-She was also the first cousin of Alexandrine of Mecklenburg-Schwerin, Queen of Denmark, and the maternal grandmother of Prince Edward, Duke of Kent, Princess Alexandra, and Prince Michael of Kent.
-Queen Juliana of the Netherlands was also her half-first cousin.
-Early life
+Prince Ferdinand of Bourbon-Two Sicilies, Duke of Castro (Ferdinando Maria Andrea Alfonso Marcus; 28 May 1926 – 20 March 2008) was a claimant to the headship of the former Royal House of the Two Sicilies.
+Biography
 
-Elena and her three surviving older brothers, Kirill, Boris, and Andrei, had an English nanny and spoke English as their first language.
-The young Elena had a temper and was sometimes out of control.
-Elena, raised by a mother who was highly conscious of her social status, was also considered snobbish by some.
-"
-
-
+Ferdinand was born in Podzamcze, the son of Prince Ranieri, Duke of Castro, and his wife Countess Maria Carolina Zamoyska.
 Marriage and children
 
-She was engaged to Prince Max of Baden, but Max backed out of the engagement.
-Elena's mother was furious and society gossiped about Elena's difficulty in finding a husband.
-At one point in 1899, the 17-year-old Elena was reputedly engaged to Archduke Franz Ferdinand of Austria; however, this came to nothing as he fell in love with Countess Sophie Chotek.
-Prince Nicholas of Greece and Denmark, the third son of George I of Greece, first proposed in 1900, but Elena's mother was reluctant to allow her daughter to marry a younger son with no real fortune or prospects of inheriting a throne.
-She finally agreed to let Elena marry Nicholas, who was Elena's second cousin through his mother Olga Constantinovna of Russia and her father Vladimir Alexandrovich of Russia, in 1902 after it became clear that no other offers were on the horizon.
-The couple married on 29 August 1902 in Tsarskoye Selo, Russia.
-Like many imperial weddings, it was a grand affair, and was attended by the Emperor and Empress of Russia, the King and Queen of the Hellenes, among other royals and nobility of Russia.
-Elena's "grand manner" irritated some people at court.
-According to the British diplomat Francis Elliot, there was an incident between Elena and her sister-in-law Princess Marie Bonaparte:
-Allegedly, Elena refused to greet Marie and "drew back her skirts as if not to be touched by her."
-Elena thought that Marie was beneath her, because her grandfather operated the Monte Carlo Casino.
-Elena looked down on another sister-in-law Princess Alice of Battenberg because of the latter's morganatic blood.
-The Dowager Empress wrote that Elena "has a very brusque and arrogant tone that can shock people.
-"
+Ferdinand was married in Giez on 23 July 1949 to Chantal de Chevron-Villette (1925–2005), and they had three children:
 
 
-Wealth and residences
-
-As a Russian grand duchess, Elena had been received an annuity of 15,000 roubles each year from birth, allowing her to accumulate a private fortune of approximately 300,000 roubles.
-Upon her marriage her annuity ceased, and instead she received the customary imperial dowry of a Russian Grand Duchess, amounting to 1,000,000 roubles.
-The dowry capital was held in Russia, from which Elena was paid an annual income of 50,000 roubles.
-After a honeymoon at Ropsha, Elena and Nicholas travelled to the Kingdom of Greece aboard the Amphitrite and settled in a wing of the Royal Palace in Athens whilst their own residence was prepared.
-In late 1902 they purchased a large house near the city centre, which was thereafter known as the Nicholas Palace.
-Elena commissioned the royal architect Anastasios Metaxas to enlarge it with a Ziller-inspired second block, linked by a glazed atrium that illuminated the mansion’s core works.
-Contemporaries described the Nicholas Palace as very modern for its time, with hot and cold running water.
-Elena and Nicholas reportedly led a relatively simple but comfortable life in Athens.
-Prince and Princess Nicholas took up residence at the newly-renovated Nicholas Palace in 1904.
-And as a result, the Nicholas Palace was leased to the Hotel Grande Bretagne during the 1920s, who used the building as a 60-bed luxury annex known as the “Petit Palais”.
-The Italian Government later purchased the Nicholas Palace from Elena in 1955; the site has subsequently remained the home of the Italian Embassy in Athens ever since.
-Issue
-
-Prince and Princess Nicholas of Greece and Denmark had three daughters:
-
-
-Grand Duchess Elena suffered from ill health after the birth of Princess Marina, which caused her husband anguish.
-According to her niece, Princess Sophie of Greece, Grand Duchess Elena's priorities throughout her life remained as follows: “God first, the Grand Dukes of Russia then and finally everything else.”
-Thus, the Grand Duchess and her husband, Prince Nicholas, visited Russia annually to visit their relatives.
-Life in exile
-
-The family was later affected by the turmoil of the Russian Revolution of 1917 and the subsequent turmoil in Greece, which became a republic and resulted in the family living in France for a time.
-While living in France, Grand Duchess Elena became deeply involved in charity work for Russian exiles, particularly children.
-Short of money due to their exile from Greece and the loss of their Russian income, Prince Nicholas and his family lived in reduced circumstances.
-Grand Duchess Elena's jewel collection, as well as Prince Nicholas' own artwork, were their sources of income.
-Princess Olga of Greece married Prince Paul of Yugoslavia; Princess Elizabeth of Greece married Count Karl Theodor zu Toerring-Jettenbach, son of Duchess Sophie Adelheid in Bavaria and scion of an old and rich Bavarian mediatized family; and Princess Marina of Greece married Prince George, Duke of Kent in November 1934.
-Grand Duchess Elena became a widow early in 1938, as Prince Nicholas suffered a heart attack and died suddenly.
-She remained in Greece throughout the Second World War, dying there in 1957.
+As the marriage was initially considered morganatic, Ferdinand’s children were considered ineligible for the throne of Two-Scillies.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -150,39 +102,9 @@ She remained in Greece throughout the Second World War, dying there in 1957.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -197,6 +119,23 @@ She remained in Greece throughout the Second World War, dying there in 1957.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -214,6 +153,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,29 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -312,6 +258,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -324,6 +278,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -332,17 +288,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -370,6 +328,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -385,181 +427,93 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d78b2510-dd18-4e7b-9e62-10e4c4bd163b)
- Call ID: d78b2510-dd18-4e7b-9e62-10e4c4bd163b
+  AssignClass (30a3bfb3-9485-4803-bc51-5a70a3d98cb1)
+ Call ID: 30a3bfb3-9485-4803-bc51-5a70a3d98cb1
   Args:
-    type: :Woman
-    source: :Elena_Vladimirovna_of_Russia
-  AssignClass (c136568d-13d3-4382-9b1e-df6f4dec595f)
- Call ID: c136568d-13d3-4382-9b1e-df6f4dec595f
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+    type: :Man
+  AssignClass (533e390b-154b-446b-86ca-55b1e7844f4e)
+ Call ID: 533e390b-154b-446b-86ca-55b1e7844f4e
   Args:
     type: :Person
-    source: :Elena_Vladimirovna_of_Russia
-  AddLiteral (8ff5f248-b5fd-4cc5-8e69-20ad30a2c128)
- Call ID: 8ff5f248-b5fd-4cc5-8e69-20ad30a2c128
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+  AddLiteral (18dd7978-98ed-42b2-9c6f-6c9d0ed127a6)
+ Call ID: 18dd7978-98ed-42b2-9c6f-6c9d0ed127a6
   Args:
-    source: :Elena_Vladimirovna_of_Russia
-    literal_value: 1882
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (756b61e4-d5e8-429d-bc63-1c5fbcc6ca00)
- Call ID: 756b61e4-d5e8-429d-bc63-1c5fbcc6ca00
+    literal_type: xsd:integer
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+    literal_value: 1926
+  AddLiteral (17ffb898-0540-4e2b-bffa-e1a1cc8b9adc)
+ Call ID: 17ffb898-0540-4e2b-bffa-e1a1cc8b9adc
   Args:
     literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1957
-    source: :Elena_Vladimirovna_of_Russia
-  AssignClass (f0bf79bb-e640-452c-8888-146224c2988f)
- Call ID: f0bf79bb-e640-452c-8888-146224c2988f
+    literal_value: 2008
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+  AssignClass (4f1d1d51-dc63-4551-8ef8-fadc2b2bff97)
+ Call ID: 4f1d1d51-dc63-4551-8ef8-fadc2b2bff97
   Args:
-    source: :Vladimir_Alexandrovich_of_Russia
     type: :Man
-  AssignClass (123bf7ec-4106-431b-adfc-434dd0fdb798)
- Call ID: 123bf7ec-4106-431b-adfc-434dd0fdb798
+    source: :Ranieri_of_Bourbon-Two_Sicilies
+  AssignClass (f9ad31a1-865e-4d85-9fbb-6cc0429d2660)
+ Call ID: f9ad31a1-865e-4d85-9fbb-6cc0429d2660
   Args:
-    type: :Ancestor
-    source: :Vladimir_Alexandrovich_of_Russia
-  AssignClass (17357da5-3862-4607-8690-fb9aef7b35d6)
- Call ID: 17357da5-3862-4607-8690-fb9aef7b35d6
+    type: :Person
+    source: :Ranieri_of_Bourbon-Two_Sicilies
+  AddTriple (b7018a1c-ffd2-484c-951d-17842e2a74de)
+ Call ID: b7018a1c-ffd2-484c-951d-17842e2a74de
   Args:
-    type: :Woman
-    source: :Marie_of_Mecklenburg-Schwerin
-  AssignClass (8f0eb11c-e33c-42ab-9d94-6d8ca9f681a3)
- Call ID: 8f0eb11c-e33c-42ab-9d94-6d8ca9f681a3
-  Args:
-    source: :Marie_of_Mecklenburg-Schwerin
-    type: :Ancestor
-  AddTriple (4aab8cf0-eab0-492f-aac1-f1f3d0b4b1eb)
- Call ID: 4aab8cf0-eab0-492f-aac1-f1f3d0b4b1eb
-  Args:
-    target: :Vladimir_Alexandrovich_of_Russia
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+    target: :Ranieri_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    source: :Elena_Vladimirovna_of_Russia
-  AddTriple (a8047d7d-f3f7-40c9-8e7c-0b0b139754cb)
- Call ID: a8047d7d-f3f7-40c9-8e7c-0b0b139754cb
+  AssignClass (8dab3d75-014a-4242-908e-3ae989d684fb)
+ Call ID: 8dab3d75-014a-4242-908e-3ae989d684fb
+  Args:
+    source: :Maria_Carolina_Zamoyska
+    type: :Woman
+  AssignClass (c77f2c8a-be2f-4aa3-996e-1471ed756fa5)
+ Call ID: c77f2c8a-be2f-4aa3-996e-1471ed756fa5
+  Args:
+    source: :Maria_Carolina_Zamoyska
+    type: :Person
+  AddTriple (1f50f21a-a714-48b0-8adf-b4d0a6bee57f)
+ Call ID: 1f50f21a-a714-48b0-8adf-b4d0a6bee57f
   Args:
     relation: :hasMother
-    target: :Marie_of_Mecklenburg-Schwerin
-    source: :Elena_Vladimirovna_of_Russia
-  AssignClass (cd5dfd3b-e770-4b75-abeb-f5ac568cc518)
- Call ID: cd5dfd3b-e770-4b75-abeb-f5ac568cc518
+    target: :Maria_Carolina_Zamoyska
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+  AssignClass (11aaa5b2-0549-4a29-9d7b-cdbd73c9d26f)
+ Call ID: 11aaa5b2-0549-4a29-9d7b-cdbd73c9d26f
   Args:
-    type: :Man
-    source: :Nicholas_of_Greece_and_Denmark
-  AssignClass (66db12fd-4f35-48dc-bb4a-6d7d066f1cd0)
- Call ID: 66db12fd-4f35-48dc-bb4a-6d7d066f1cd0
+    type: :Woman
+    source: :Chantal_de_Chevron-Villette
+  AssignClass (82bd626c-4bd4-4a5b-8945-b7423cea73c1)
+ Call ID: 82bd626c-4bd4-4a5b-8945-b7423cea73c1
   Args:
-    source: :Nicholas_of_Greece_and_Denmark
     type: :Person
-  AddTriple (dac93e59-54cc-437f-8475-c70b641c20f5)
- Call ID: dac93e59-54cc-437f-8475-c70b641c20f5
-  Args:
-    target: :Nicholas_of_Greece_and_Denmark
-    relation: :hasRelation
-    source: :Elena_Vladimirovna_of_Russia
-  AddLiteral (b6594c2d-2487-4c7a-9b33-5eb29bae425f)
- Call ID: b6594c2d-2487-4c7a-9b33-5eb29bae425f
+    source: :Chantal_de_Chevron-Villette
+  AddLiteral (77d0e525-f481-43a0-84e2-34811fafdc51)
+ Call ID: 77d0e525-f481-43a0-84e2-34811fafdc51
   Args:
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1902
-    source: :Elena_Vladimirovna_of_Russia
-  AssignClass (7b602254-f688-491d-a09f-98d6e537cb7f)
- Call ID: 7b602254-f688-491d-a09f-98d6e537cb7f
+    source: :Ferdinand_of_Bourbon-Two_Sicilies
+    literal_value: 1949
+  AddLiteral (736090dd-5245-4ef5-914a-b70d45307dd3)
+ Call ID: 736090dd-5245-4ef5-914a-b70d45307dd3
   Args:
-    source: :Kirill_of_Russia
-    type: :Man
-  AssignClass (543c3e98-21f1-428a-9b6e-7fa19002a6d6)
- Call ID: 543c3e98-21f1-428a-9b6e-7fa19002a6d6
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1925
+    source: :Chantal_de_Chevron-Villette
+  AddLiteral (420928bc-54ce-4243-8439-a9d3486af226)
+ Call ID: 420928bc-54ce-4243-8439-a9d3486af226
   Args:
-    source: :Kirill_of_Russia
-    type: :Person
-  AssignClass (e7f3cd56-569b-494b-b1fb-3588138e16ae)
- Call ID: e7f3cd56-569b-494b-b1fb-3588138e16ae
-  Args:
-    type: :Man
-    source: :Boris_of_Russia
-  AssignClass (99ff7aae-ffcb-4b40-983c-0009b8d5b385)
- Call ID: 99ff7aae-ffcb-4b40-983c-0009b8d5b385
-  Args:
-    source: :Boris_of_Russia
-    type: :Person
-  AssignClass (95b081e7-40c2-49d9-91c0-a62950975530)
- Call ID: 95b081e7-40c2-49d9-91c0-a62950975530
-  Args:
-    type: :Man
-    source: :Andrei_of_Russia
-  AssignClass (73df7f4f-96ba-4adc-8c4e-a8915e63e2b6)
- Call ID: 73df7f4f-96ba-4adc-8c4e-a8915e63e2b6
-  Args:
-    type: :Person
-    source: :Andrei_of_Russia
-  AddTriple (b6cf2c27-220c-4775-ac45-851f1be2262a)
- Call ID: b6cf2c27-220c-4775-ac45-851f1be2262a
-  Args:
-    target: :Kirill_of_Russia
-    relation: :hasBrother
-    source: :Elena_Vladimirovna_of_Russia
-  AddTriple (66613362-687a-4f6a-9b55-b740285673a7)
- Call ID: 66613362-687a-4f6a-9b55-b740285673a7
-  Args:
-    source: :Elena_Vladimirovna_of_Russia
-    target: :Boris_of_Russia
-    relation: :hasBrother
-  AddTriple (92772417-3c4f-4f70-af75-6490d34d9594)
- Call ID: 92772417-3c4f-4f70-af75-6490d34d9594
-  Args:
-    target: :Andrei_of_Russia
-    relation: :hasBrother
-    source: :Elena_Vladimirovna_of_Russia
-  AssignClass (22c52a25-db3d-4cab-b04d-c7bbf8b8d225)
- Call ID: 22c52a25-db3d-4cab-b04d-c7bbf8b8d225
-  Args:
-    type: :Woman
-    source: :Olga_of_Greece
-  AssignClass (a3407f6f-563d-4fb9-9667-b83c69ca7501)
- Call ID: a3407f6f-563d-4fb9-9667-b83c69ca7501
-  Args:
-    type: :Person
-    source: :Olga_of_Greece
-  AssignClass (6dde7f2a-c3d9-47b8-93d8-a4b4b7560ee2)
- Call ID: 6dde7f2a-c3d9-47b8-93d8-a4b4b7560ee2
-  Args:
-    source: :Elizabeth_of_Greece
-    type: :Woman
-  AssignClass (f577e276-eaa3-4c65-b87f-b05df8145709)
- Call ID: f577e276-eaa3-4c65-b87f-b05df8145709
-  Args:
-    type: :Person
-    source: :Elizabeth_of_Greece
-  AssignClass (e3b299e9-6956-49a4-b9bd-0b0cc2db641f)
- Call ID: e3b299e9-6956-49a4-b9bd-0b0cc2db641f
-  Args:
-    source: :Marina_of_Greece
-    type: :Woman
-  AssignClass (4098d623-c475-4327-b5fe-92b15e2447dc)
- Call ID: 4098d623-c475-4327-b5fe-92b15e2447dc
-  Args:
-    type: :Person
-    source: :Marina_of_Greece
-  AddTriple (48828179-fc39-441c-ba28-6d6bd9135265)
- Call ID: 48828179-fc39-441c-ba28-6d6bd9135265
-  Args:
-    source: :Elena_Vladimirovna_of_Russia
-    relation: :hasDaughter
-    target: :Olga_of_Greece
-  AddTriple (36a5472a-efe6-4a60-acb3-68d245157c06)
- Call ID: 36a5472a-efe6-4a60-acb3-68d245157c06
-  Args:
-    relation: :hasDaughter
-    target: :Elizabeth_of_Greece
-    source: :Elena_Vladimirovna_of_Russia
-  AddTriple (d5623282-e6e3-47ec-9535-a94fd94d0f25)
- Call ID: d5623282-e6e3-47ec-9535-a94fd94d0f25
-  Args:
-    source: :Elena_Vladimirovna_of_Russia
-    relation: :hasDaughter
-    target: :Marina_of_Greece
-  Finish (5a98bf20-88ad-48fb-8c03-6fd6f2b2df93)
- Call ID: 5a98bf20-88ad-48fb-8c03-6fd6f2b2df93
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 2005
+    source: :Chantal_de_Chevron-Villette
+  Finish (578cacea-5279-4c69-a645-4124e9069ff4)
+ Call ID: 578cacea-5279-4c69-a645-4124e9069ff4
   Args:

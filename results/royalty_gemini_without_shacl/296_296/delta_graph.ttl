@@ -2,23 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Robert_Jeremy_Hugh_Lascelles a :Man,
-        :Person ;
-    :hasAncestor data:King_George_V ;
-    :hasBirthYear 1955 ;
-    :hasBrother data:James_Lascelles ;
-    :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;
-    :hasMother data:Marion_Stein .
+data:PrinceMichaelOfGreeceAndDenmark a :Man ;
+    :hasBirthYear 1939 ;
+    :hasFather data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasMother data:PrincessFrancoiseOfOrleans .
 
-data:George_Lascelles_7th_Earl_of_Harewood a :Ancestor,
-        :Man .
+data:PrincessXeniaGeorgievnaOfRussia a :Woman ;
+    :hasMother data:MarieOfGreece .
 
-data:James_Lascelles a :Man,
-        :Person .
+data:InfantaIsabelDeOrleansYBorbon a :Woman .
 
-data:King_George_V a :Ancestor,
-        :Man .
+data:IsabelleDOrleans a :Woman ;
+    :hasFather data:PhilippeComteDeParis ;
+    :hasMother data:InfantaIsabelDeOrleansYBorbon .
 
-data:Marion_Stein a :Ancestor,
-        :Woman .
+data:JeanDOrleans a :Man .
+
+data:KingConstantineI a :Man .
+
+data:KingGeorgeIOfGreece a :Man .
+
+data:PhilippeComteDeParis a :Man .
+
+data:PrinceAndrew a :Man .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Man ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:KingConstantineI,
+        data:PrinceAndrew,
+        data:PrinceGeorge,
+        data:PrinceNicholas ;
+    :hasDeathYear 1940 ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMother data:QueenOlga ;
+    :hasSister data:MarieOfGreece ;
+    :knownAs "Christo"^^xsd:string .
+
+data:PrinceGeorge a :Man .
+
+data:PrinceNicholas a :Man .
+
+data:PrincessFrancoiseOfOrleans a :Woman ;
+    :hasFather data:JeanDOrleans ;
+    :hasMother data:IsabelleDOrleans .
+
+data:QueenOlga a :Woman .
+
+data:MarieOfGreece a :Woman .
 

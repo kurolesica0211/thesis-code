@@ -85,88 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Prince Henry Victor Louis Frederick of Prussia (German: Heinrich Viktor Ludwig Friedrich; 9 January 1900 – 26 February 1904), was the third son and youngest child of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
+He was a grandson of Frederick III, German Emperor, through his father and a great-grandson of Queen Victoria.
+Life
 
+Prince Heinrich was born on 9 January 1900, in Kiel.
+His father was pleased by the birth of yet another son, especially such a handsome one, as the Prince had blonde hair.
+The newborn Prince immediately received the title Prince of Prussia with the style Royal Highness, and was baptised
+His older brothers were Prince Waldemar, a namesake of his uncle, and Prince Sigismund, a namesake of his other deceased uncle.
+The Prince was diagnosed with haemophilia as a young child, but, despite this, was a very cheerful and lively boy who liked to play a lot.
+As Henry grew older he became more aware of his condition.
+Death
 
-Princess Tomislav
+On 25 February, Princess Irene left Heinrich unsupervised for a few minutes while she went to fetch something.
+The playful Prince climbed a chair, and then he climbed onto the table.
+He started to scream, which immediately attracted the Princess' attention.
+However, experiencing this condition, it was certain the young Prince would die.
+Aftermath
 
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Alexander, Crown Prince of Yugoslavia (Serbian: Александар Карађорђевић, Престолонаследник Југославије, romanized: Aleksandar Karađorđević, Prestolonaslednik Jugoslavije; born 17 July 1945), is the head of the House of Karađorđević, the former royal house of the defunct Kingdom of Yugoslavia and its predecessor the Kingdom of Serbia.
-Alexander is the only child of King Peter II and Princess Alexandra of Greece and Denmark.
-He held the position of crown prince in the Democratic Federal Yugoslavia for the first four-and-a-half months of his life, until the declaration of the Federal People's Republic of Yugoslavia later in November 1945, when the monarchy was abolished.
-In public he claims the crowned royal title of "Alexander II Karadjordjevic" (Serbian: Александар II Карађорђевић, Aleksandar II Karađorđević) as a pretender to the throne.
-Through his father, Alexander is a direct descendant of Queen Victoria, through his great-great-grandfather Prince Alfred, Duke of Saxe-Coburg and Gotha, Victoria's second eldest son.
-Alexander is known for his support of constitutional monarchism and his humanitarian work.
-He left Yugoslavia in April 1941 and arrived in London in June 1941.
-Commenting on the event and what happened to his father, Crown Prince Alexander said, "He  was too straight.
-On 29 November 1943, AVNOJ (formed by the Partisans) declared themselves the sovereign communist government of Yugoslavia and announced that they would take away all legal rights from the Royal government.
-On 10 August 1945, less than a month after Alexander's birth, AVNOJ named the country Democratic Federal Yugoslavia.
-On 29 November 1945, the country was declared a communist republic and changed its name to People's Federal Republic of Yugoslavia.
-In 1947, all members of Alexander's family except for his granduncle Prince George were deprived of their Yugoslav citizenship and their property was confiscated.
-As of 8 July 2015, the High Court in Belgrade found that decree 392, issued by the Presidency of the Presidium of the National Assembly on 3 August 1947, which deprived King Peter II and other members of the House of Karađorđević of their citizenship, was null and void from the moment of its adoption, in the parts pertaining to Crown Prince Alexander, and that all of its legal consequences are thus null and void.
-Birth and childhood
-
-Alexander was born in Suite 212 of Claridge's Hotel in Brook Street, Mayfair, London, on 17 July 1945.
-The British Government is said to have temporarily ceded sovereignty over the suite in which the birth occurred to Yugoslavia so that the crown prince would be born on Yugoslav territory, though the story may be apocryphal, as there exists no documentary record of this.
-Another part of the story says that a box of soil from the homeland was placed under the bed, so the Prince could be born on Yugoslav soil.
-It is now Suite 214 and known as the 'Alexander Suite'.
-He was the only child of King Peter II and Queen Alexandra of Yugoslavia.
-His parents were relatively unable to take care of him due to their various health and financial problems, so Alexander was raised by his maternal grandmother, Princess Aspasia of Greece and Denmark.
-Military service
-
-Alexander graduated from the Royal Military Academy Sandhurst in 1966 and was commissioned as an officer into the British Army's 16th/5th The Queen's Royal Lancers regiment, rising to the rank of captain.
-After leaving the army in 1972, Alexander, who speaks several languages, pursued a career in international business.
-, he married Princess Maria da Gloria of Orléans-Braganza (b. 1946) from the Brazilian imperial family, at the parish church of St. Mary Magdalene.
-They are double 4th cousins once removed as both are descendants of Prince Ferdinand of Saxe-Coburg and Gotha (1785–1851) and Princess Maria Antonia von Koháry (1797–1862), as well as of Pedro I, Emperor of Brazil and Archduchess Maria Leopoldina of Austria.
-They have three sons: Peter (born 5 February 1980), and fraternal twins: Philip and Alexander (both born 15 January 1982).
-Alexander and Maria da Gloria divorced on 19 February 1985.
-Maria da Gloria married Ignacio de Medina, Duke of Segorbe (b. 1947), while Crown Prince Alexander married Katherine Clairy Batis, daughter of Robert Batis and Anna Dosti, civilly on 20 September 1985, and religiously the following day, at St. Sava Serbian Orthodox Church, Notting Hill, London.
-Since their marriage, she is known as Crown Princess Katherine, as per the royal family's website.
-On 16 December 2017, Alexander attended with his wife the state funeral of his first cousin once removed, King Michael of Romania in Bucharest, along with other heads of European royal families and invited guests.
-On 19 September 2022, Crown Prince Alexander and his wife Katherine attended the state funeral of his godmother Queen Elizabeth II.
-On 6 February 2024, following the news about King Charles' health, Alexander himself revealed that he had been treated for early stage prostate cancer in December 2023.
-Return to Yugoslavia
-
-Alexander first came to Yugoslavia in 1991.
-He actively worked with the opposition to Slobodan Milošević and moved to Yugoslavia after Milošević had been deposed in 2000.
-On 27 February 2001, the parliament of the Federal Republic of Yugoslavia (FRY) passed legislation conferring citizenship on members of the Karađorđević family.
-The legislation may also have effectively annulled a decree stripping the family of its citizenship of the Socialist Federal Republic of Yugoslavia (SFRY) in 1947.
-Belief in constitutional monarchy
-
-Alexander is a proponent of re-creating a constitutional monarchy in Serbia and sees himself as the rightful king.
-He believes that monarchy could give Serbia "stability, continuity and unity".
-A number of political parties and organizations support a constitutional parliamentary monarchy in Serbia.
-The assassinated former Serbian Prime Minister Zoran Đinđić was often seen in the company of the prince and his family, supporting their campaigns and projects, although his Democratic Party never publicly embraced monarchism.
-Crown Prince Alexander has vowed to stay out of politics.
-He and Princess Katherine spend considerable time engaging in humanitarian work.
-The Crown Prince has, however, increasingly participated in public functions alongside the leaders of Serbia, the former Yugoslav republics and members of the diplomatic corps.
-On 11 May 2006, he hosted a reception at the Royal Palace for delegates attending a summit on Serbia and Montenegro.
-The reception was attended by the Governor of the National Bank of Serbia, as well as ambassadors and diplomats from Slovenia, Poland, Brazil, Japan, the United States, and Austria.
-In addition, we in Serbia and Montenegro must take into account that whatever form we take within the European Union, we have only but one choice and that is to work for the common good of all member nations.
-It is also central to take into account that stability in our region will be enhanced when Serbia is fully at peace with itself.
-The Crown Prince raised the issue of a royal restoration in the immediate aftermath of the vote.
-I strongly believe in a Constitutional Parliamentary Kingdom of Serbia.
-Again, we need to be proud, a strong Serbia that is at peace with itself and with its neighbors.
-Only if we have a form of governance close to the Serbian soul: the Kingdom of Serbia.
-What is most important is the interest of Serbia.
-I am ready to meet all our politicians; we have to work together for the common good of Serbia, and to be friends in the name of the future of our country.
-I appeal for mature democratic debate in the interest of Serbia.
-Serbia must have clear and realistic objectives.
-The public also had reservations with Alexander's apparent lack of knowledge of the Serbian language.
-On 27 July 2015, newspaper Blic published a poll "Da li Srbija treba da bude monarhija?" ("Should Serbia be a monarchy?"); 49.8% respondents expressed support in a reconstitution of monarchy, 44.6% were opposed and 5.5% were indifferent.
-In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they had collected over 123,000 signatures of support for a referendum on Alexander being named king, short of the 150,000 needed to force a constitutional amendment.
+Prince Heinrich's premature death would later very much affect the Princess, who would withdraw into herself.
+One of his older brothers, Prince Waldemar, also had haemophilia.
+The middle sibling, Prince Sigismund, was unaffected by the disease.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -182,39 +129,9 @@ In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -229,6 +146,23 @@ In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -246,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -313,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -344,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -356,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -364,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -402,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -417,230 +454,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ee0263b7-6704-4a7a-8116-70a42ba489c1)
- Call ID: ee0263b7-6704-4a7a-8116-70a42ba489c1
+  AssignClass (adcdacad-41db-40e1-ade2-7fe49b9cac97)
+ Call ID: adcdacad-41db-40e1-ade2-7fe49b9cac97
+  Args:
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    type: :Person
+  AssignClass (ae5a37bf-10ce-4d45-a3bc-47d05df6f207)
+ Call ID: ae5a37bf-10ce-4d45-a3bc-47d05df6f207
   Args:
     type: :Man
-    source: Alexander_Crown_Prince_of_Yugoslavia
-  AssignClass (e1a89e35-8358-4933-a2c8-cec3bbc145da)
- Call ID: e1a89e35-8358-4933-a2c8-cec3bbc145da
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+  AddLiteral (1b56866f-6a2c-4518-9b50-bc24efea1f1c)
+ Call ID: 1b56866f-6a2c-4518-9b50-bc24efea1f1c
   Args:
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1900
+  AddLiteral (031c74fe-85ac-40ad-8bb5-3cd87d627321)
+ Call ID: 031c74fe-85ac-40ad-8bb5-3cd87d627321
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1904
+    literal_type: xsd:integer
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+  AssignClass (287c7c47-3920-4b23-819b-22b962b99b76)
+ Call ID: 287c7c47-3920-4b23-819b-22b962b99b76
+  Args:
+    source: :Prince_Henry_of_Prussia
     type: :Person
-    source: Alexander_Crown_Prince_of_Yugoslavia
-  AddLiteral (645f7ce0-666e-4cf6-8a4b-9987ba3435e0)
- Call ID: 645f7ce0-666e-4cf6-8a4b-9987ba3435e0
+  AssignClass (03c39aba-c64e-46fa-93e5-d68d776b5a0a)
+ Call ID: 03c39aba-c64e-46fa-93e5-d68d776b5a0a
   Args:
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AssignClass (60a9d490-030d-4b1d-8061-70f7f599c3fd)
- Call ID: 60a9d490-030d-4b1d-8061-70f7f599c3fd
-  Args:
-    source: King_Peter_II
     type: :Man
-  AssignClass (02df7ec0-09ca-4786-9386-5b7c17cf9504)
- Call ID: 02df7ec0-09ca-4786-9386-5b7c17cf9504
+    source: :Prince_Henry_of_Prussia
+  AssignClass (2edf8f2c-50fa-4f82-ae1d-9fe186639563)
+ Call ID: 2edf8f2c-50fa-4f82-ae1d-9fe186639563
   Args:
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
     type: :Person
-    source: King_Peter_II
-  AssignClass (7f9e83c1-456c-4a72-8e24-550371db05b3)
- Call ID: 7f9e83c1-456c-4a72-8e24-550371db05b3
+  AssignClass (976d1d97-e5e8-41a0-8f8d-d4ebe2f8dbd6)
+ Call ID: 976d1d97-e5e8-41a0-8f8d-d4ebe2f8dbd6
   Args:
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
     type: :Woman
-    source: Princess_Alexandra_of_Greece_and_Denmark
-  AssignClass (677b62b4-4961-4487-a57b-b9519803672e)
- Call ID: 677b62b4-4961-4487-a57b-b9519803672e
+  AddTriple (b7c255fe-1d14-4426-b556-045ae78af0e0)
+ Call ID: b7c255fe-1d14-4426-b556-045ae78af0e0
   Args:
-    type: :Person
-    source: Princess_Alexandra_of_Greece_and_Denmark
-  AddTriple (ad995fc8-aa1b-4871-956c-db9cd85d5b0d)
- Call ID: ad995fc8-aa1b-4871-956c-db9cd85d5b0d
-  Args:
-    source: Alexander_Crown_Prince_of_Yugoslavia
     relation: :hasFather
-    target: King_Peter_II
-  AddTriple (c5955828-2aab-4f95-8bbe-23fd88b8fa37)
- Call ID: c5955828-2aab-4f95-8bbe-23fd88b8fa37
+    target: :Prince_Henry_of_Prussia
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+  AddTriple (71c36b55-12ee-4c63-b233-2721f13bb88c)
+ Call ID: 71c36b55-12ee-4c63-b233-2721f13bb88c
   Args:
-    target: Princess_Alexandra_of_Greece_and_Denmark
+    target: :Princess_Irene_of_Hesse_and_by_Rhine
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
     relation: :hasMother
-    source: Alexander_Crown_Prince_of_Yugoslavia
-  AssignClass (b6365886-bc30-4e69-838a-479b4a993c3e)
- Call ID: b6365886-bc30-4e69-838a-479b4a993c3e
+  AssignClass (aea5f721-cdb5-4bbe-886a-09c257f520c7)
+ Call ID: aea5f721-cdb5-4bbe-886a-09c257f520c7
   Args:
-    type: :Woman
-    source: Princess_Maria_da_Gloria_of_Orleans-Braganza
-  AssignClass (54e3981b-7e3b-48e4-9c5e-f79c3ca074e8)
- Call ID: 54e3981b-7e3b-48e4-9c5e-f79c3ca074e8
-  Args:
+    source: :Prince_Waldemar
     type: :Person
-    source: Princess_Maria_da_Gloria_of_Orleans-Braganza
-  AssignClass (6cfa01b7-8a00-493f-90a4-661660e610d1)
- Call ID: 6cfa01b7-8a00-493f-90a4-661660e610d1
+  AssignClass (fa51b43b-68a1-4504-a5cb-b90d00f91258)
+ Call ID: fa51b43b-68a1-4504-a5cb-b90d00f91258
   Args:
-    source: Peter_son_of_Alexander
+    source: :Prince_Waldemar
     type: :Man
-  AssignClass (b346d331-d744-4f28-85d5-5ec447515a8f)
- Call ID: b346d331-d744-4f28-85d5-5ec447515a8f
+  AddTriple (614fbf1b-204e-4a26-9f5c-d7af83c62221)
+ Call ID: 614fbf1b-204e-4a26-9f5c-d7af83c62221
   Args:
-    source: Peter_son_of_Alexander
+    relation: :isSiblingOf
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: :Prince_Waldemar
+  AssignClass (4cb4a6a3-0472-4d61-b9d7-d02807362724)
+ Call ID: 4cb4a6a3-0472-4d61-b9d7-d02807362724
+  Args:
     type: :Person
-  AssignClass (3a888acc-3fa5-4170-987b-0a5ba4fc2147)
- Call ID: 3a888acc-3fa5-4170-987b-0a5ba4fc2147
+    source: :Prince_Sigismund
+  AssignClass (f8530f65-1085-4ad3-9e81-ca72d94e8176)
+ Call ID: f8530f65-1085-4ad3-9e81-ca72d94e8176
   Args:
+    source: :Prince_Sigismund
     type: :Man
-    source: Philip_son_of_Alexander
-  AssignClass (9628a404-eb3a-468a-b1c6-0bcf69f15032)
- Call ID: 9628a404-eb3a-468a-b1c6-0bcf69f15032
+  AddTriple (48c08f56-5358-48ca-9bcc-c254ac9dfcab)
+ Call ID: 48c08f56-5358-48ca-9bcc-c254ac9dfcab
   Args:
-    source: Philip_son_of_Alexander
+    target: :Prince_Sigismund
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    relation: :isSiblingOf
+  AssignClass (404c3b6f-8c5f-4f2b-ae6e-d37c3349c1a8)
+ Call ID: 404c3b6f-8c5f-4f2b-ae6e-d37c3349c1a8
+  Args:
+    source: :Frederick_III_German_Emperor
     type: :Person
-  AssignClass (60f46746-b088-4f84-a4d1-3efc552b393f)
- Call ID: 60f46746-b088-4f84-a4d1-3efc552b393f
-  Args:
-    type: :Man
-    source: Alexander_son_of_Alexander
-  AssignClass (95bb6003-b3ff-4ec8-bc85-dcf78ec0e7d5)
- Call ID: 95bb6003-b3ff-4ec8-bc85-dcf78ec0e7d5
-  Args:
-    type: :Person
-    source: Alexander_son_of_Alexander
-  AddTriple (4d6d8b05-c426-4613-a7f8-42e91ad4c7e2)
- Call ID: 4d6d8b05-c426-4613-a7f8-42e91ad4c7e2
-  Args:
-    source: Peter_son_of_Alexander
-    relation: :hasFather
-    target: Alexander_Crown_Prince_of_Yugoslavia
-  AddTriple (f3295e4f-1924-4a18-b147-1a3275ce7426)
- Call ID: f3295e4f-1924-4a18-b147-1a3275ce7426
-  Args:
-    source: Peter_son_of_Alexander
-    relation: :hasMother
-    target: Princess_Maria_da_Gloria_of_Orleans-Braganza
-  AddTriple (ee192283-eef3-4e1c-af54-8541a522043a)
- Call ID: ee192283-eef3-4e1c-af54-8541a522043a
-  Args:
-    target: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasFather
-    source: Philip_son_of_Alexander
-  AddTriple (91acb269-e7a8-4142-9770-2af901c82513)
- Call ID: 91acb269-e7a8-4142-9770-2af901c82513
-  Args:
-    relation: :hasMother
-    target: Princess_Maria_da_Gloria_of_Orleans-Braganza
-    source: Philip_son_of_Alexander
-  AddTriple (2a22b388-52a1-4138-b9cb-7ddd1a17e619)
- Call ID: 2a22b388-52a1-4138-b9cb-7ddd1a17e619
-  Args:
-    source: Alexander_son_of_Alexander
-    target: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasFather
-  AddTriple (13a0230d-fb96-4663-bb52-87dec8a1294c)
- Call ID: 13a0230d-fb96-4663-bb52-87dec8a1294c
-  Args:
-    source: Alexander_son_of_Alexander
-    relation: :hasMother
-    target: Princess_Maria_da_Gloria_of_Orleans-Braganza
-  AssignClass (09b37db7-86be-4bda-a6a6-976bf0fb4a31)
- Call ID: 09b37db7-86be-4bda-a6a6-976bf0fb4a31
-  Args:
-    source: Crown_Princess_Katherine
-    type: :Woman
-  AssignClass (5a6d1fc9-d9b9-4683-afae-36f1df2df11e)
- Call ID: 5a6d1fc9-d9b9-4683-afae-36f1df2df11e
-  Args:
-    source: Crown_Princess_Katherine
-    type: :Person
-  AssignClass (49281b47-6c37-4cb3-bc55-2b3d893f78b7)
- Call ID: 49281b47-6c37-4cb3-bc55-2b3d893f78b7
+  AssignClass (e8a6dac9-0615-4b87-b7ce-ab79d1b7f34f)
+ Call ID: e8a6dac9-0615-4b87-b7ce-ab79d1b7f34f
   Args:
     type: :Man
-    source: Robert_Batis
-  AssignClass (14c593d6-9bc9-45d4-a817-469e1167104e)
- Call ID: 14c593d6-9bc9-45d4-a817-469e1167104e
+    source: :Frederick_III_German_Emperor
+  AddTriple (7baace10-dd9f-45a9-bcbb-bfb32c6b514a)
+ Call ID: 7baace10-dd9f-45a9-bcbb-bfb32c6b514a
   Args:
-    source: Robert_Batis
-    type: :Person
-  AssignClass (3b0989ab-0284-40a0-ad72-74dd0da0e226)
- Call ID: 3b0989ab-0284-40a0-ad72-74dd0da0e226
-  Args:
-    type: :Woman
-    source: Anna_Dosti
-  AssignClass (fded3d36-665e-446f-a2f3-ff80294e2a55)
- Call ID: fded3d36-665e-446f-a2f3-ff80294e2a55
-  Args:
-    source: Anna_Dosti
-    type: :Person
-  AddTriple (11a07f63-ff03-468b-8fe1-2b9bc986ed85)
- Call ID: 11a07f63-ff03-468b-8fe1-2b9bc986ed85
-  Args:
-    source: Crown_Princess_Katherine
     relation: :hasFather
-    target: Robert_Batis
-  AddTriple (b7d3a160-b29d-4d6f-a3d7-82554357ba0c)
- Call ID: b7d3a160-b29d-4d6f-a3d7-82554357ba0c
+    source: :Prince_Henry_of_Prussia
+    target: :Frederick_III_German_Emperor
+  AssignClass (71410485-1ab2-464e-8e52-b539068632b1)
+ Call ID: 71410485-1ab2-464e-8e52-b539068632b1
   Args:
-    relation: :hasMother
-    target: Anna_Dosti
-    source: Crown_Princess_Katherine
-  AssignClass (fb79625f-da12-4af8-bdd8-bfaf3fb8a476)
- Call ID: fb79625f-da12-4af8-bdd8-bfaf3fb8a476
-  Args:
-    type: :Woman
-    source: Princess_Aspasia_of_Greece_and_Denmark
-  AssignClass (3a8715a1-413b-4491-bc4a-4ee5ab1444f8)
- Call ID: 3a8715a1-413b-4491-bc4a-4ee5ab1444f8
-  Args:
-    source: Princess_Aspasia_of_Greece_and_Denmark
+    source: :Queen_Victoria
     type: :Person
-  Finish (3d491c97-3bfa-4c1c-86fd-5d7a4c90757a)
- Call ID: 3d491c97-3bfa-4c1c-86fd-5d7a4c90757a
+  AssignClass (5586f07c-ccc0-43db-894e-27ce7698acac)
+ Call ID: 5586f07c-ccc0-43db-894e-27ce7698acac
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Queen_Victoria
+    type: :Woman
+  AddTriple (46969421-b4ab-4019-9c2c-aa79b958f54e)
+ Call ID: 46969421-b4ab-4019-9c2c-aa79b958f54e
+  Args:
+    source: :Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: :Queen_Victoria
+    relation: :hasAncestor
 
 ================================= Tool Message =================================
 
@@ -733,372 +666,145 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_son_of_Alexander a :Man,
+  data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
           :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
+      :hasAncestor data:Queen_Victoria ;
+      :hasBirthYear 1900 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :isSiblingOf data:Prince_Sigismund,
+          data:Prince_Waldemar .
 
-  data:Crown_Princess_Katherine a :Person,
-          :Woman ;
-      :hasFather data:Robert_Batis ;
-      :hasMother data:Anna_Dosti .
-
-  data:Peter_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Philip_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Princess_Aspasia_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Anna_Dosti a :Person,
-          :Woman .
-
-  data:King_Peter_II a :Man,
+  data:Frederick_III_German_Emperor a :Man,
           :Person .
 
-  data:Princess_Alexandra_of_Greece_and_Denmark a :Person,
-          :Woman .
+  data:Prince_Henry_of_Prussia a :Man,
+          :Person ;
+      :hasFather data:Frederick_III_German_Emperor .
 
-  data:Robert_Batis a :Man,
+  data:Prince_Sigismund a :Man,
           :Person .
 
-  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
-          :Person ;
-      :hasFather data:King_Peter_II ;
-      :hasMother data:Princess_Alexandra_of_Greece_and_Denmark ;
-      :hasSex "Male"^^xsd:string .
+  data:Prince_Waldemar a :Man,
+          :Person .
 
-  data:Princess_Maria_da_Gloria_of_Orleans-Braganza a :Person,
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Person,
           :Woman .
 
 
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (1ea4b983-1d19-45f7-8248-ea58ec588bf2)
- Call ID: 1ea4b983-1d19-45f7-8248-ea58ec588bf2
+  ValidateShacl (e84497c5-ad47-42c3-b05f-68bfba1d0c95)
+ Call ID: e84497c5-ad47-42c3-b05f-68bfba1d0c95
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:38
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
+      The node Queen_Victoria is listed as an ancestor of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Peter_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
+      Frederick_III_German_Emperor is set as the father of Prince_Henry_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
+      AssignClass(node='Frederick_III_German_Emperor', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Alexander_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
+      Prince_Henry_of_Prussia is set as the father of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'King_Peter_II' used as the father of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Man' or ':Ancestor'.
+      Princess_Irene_of_Hesse_and_by_Rhine is set as the mother of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Peter_II', ':Man')
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Philip_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
+      The node Queen_Victoria is listed as an ancestor of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Peter_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
+      Prince_Henry_of_Prussia is set as the father of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Alexander_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
+      Frederick_III_German_Emperor is set as the father of Prince_Henry_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
+      AssignClass(node='Frederick_III_German_Emperor', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Princess_Alexandra_of_Greece_and_Denmark' used as the mother of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Woman' or ':Ancestor'.
+      Princess_Irene_of_Hesse_and_by_Rhine is set as the mother of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Alexandra_of_Greece_and_Denmark', ':Woman')
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Philip_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
+      The node Queen_Victoria is listed as an ancestor of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
+      Frederick_III_German_Emperor is set as the father of Prince_Henry_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Frederick_III_German_Emperor', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
+      Prince_Henry_of_Prussia is set as the father of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Robert_Batis' used as the father of 'Crown_Princess_Katherine' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Robert_Batis', ':Man')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Alexander_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Philip_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Peter_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'King_Peter_II' used as the father of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Peter_II', ':Man')
-
-
-  Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anna_Dosti' used as the mother of 'Crown_Princess_Katherine' does not have the required class ':Woman' or ':Ancestor'.
+      Princess_Irene_of_Hesse_and_by_Rhine is set as the mother of Prince_Henry_Victor_Louis_Frederick_of_Prussia, but the node lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Anna_Dosti', ':Woman')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Alexander_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Philip_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Peter_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Alexandra_of_Greece_and_Denmark' used as the mother of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Alexandra_of_Greece_and_Denmark', ':Woman')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Robert_Batis' used as the father of 'Crown_Princess_Katherine' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Robert_Batis', ':Man')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Alexander_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Philip_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'King_Peter_II' used as the father of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Peter_II', ':Man')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Crown_Prince_of_Yugoslavia' used as the father of 'Peter_son_of_Alexander' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexander_Crown_Prince_of_Yugoslavia', ':Man')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anna_Dosti' used as the mother of 'Crown_Princess_Katherine' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anna_Dosti', ':Woman')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Alexander_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Philip_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Alexandra_of_Greece_and_Denmark' used as the mother of 'Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Alexandra_of_Greece_and_Denmark', ':Woman')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Maria_da_Gloria_of_Orleans-Braganza' used as the mother of 'Peter_son_of_Alexander' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_da_Gloria_of_Orleans-Braganza', ':Woman')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Robert_Batis' used as the father of 'Crown_Princess_Katherine' does not have the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Robert_Batis', ':Man')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anna_Dosti' used as the mother of 'Crown_Princess_Katherine' does not have the required class ':Woman' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anna_Dosti', ':Woman')
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
 
 
 
@@ -1107,32 +813,26 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (9fb184c1-8eb6-4e00-84f5-97aa0f846454)
- Call ID: 9fb184c1-8eb6-4e00-84f5-97aa0f846454
+  AssignClass (8224fd3a-3d17-4182-adbd-5819bdeba765)
+ Call ID: 8224fd3a-3d17-4182-adbd-5819bdeba765
   Args:
-    relation: :hasSex
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    literal_type: xsd:string
-    literal_value: Male
-  AssignClass (0481ad32-b970-497d-9eed-46581e773156)
- Call ID: 0481ad32-b970-497d-9eed-46581e773156
+    source: :Queen_Victoria
+    type: :Ancestor
+  AssignClass (7310b214-caf0-4ba6-8cc9-2aeadcbbd95a)
+ Call ID: 7310b214-caf0-4ba6-8cc9-2aeadcbbd95a
   Args:
-    source: Male_Sex_Node
-    type: :Male
-  AssignClass (bafa99fc-8e4e-4e3e-bbcc-80dc1115c0f3)
- Call ID: bafa99fc-8e4e-4e3e-bbcc-80dc1115c0f3
+    source: :Frederick_III_German_Emperor
+    type: :Ancestor
+  AssignClass (c81d4cbd-7931-4796-b951-c7ad1a57c847)
+ Call ID: c81d4cbd-7931-4796-b951-c7ad1a57c847
   Args:
-    type: :Sex
-    source: Male_Sex_Node
-  AddTriple (a4d87ec7-afc9-437d-8e7a-765f5148ef11)
- Call ID: a4d87ec7-afc9-437d-8e7a-765f5148ef11
+    source: :Prince_Henry_of_Prussia
+    type: :Ancestor
+  AssignClass (a7d5cc5d-29f3-4f40-a5be-9fe21fb74ba1)
+ Call ID: a7d5cc5d-29f3-4f40-a5be-9fe21fb74ba1
   Args:
-    target: Male_Sex_Node
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasSex
-  ValidateShacl (b6bb27aa-0e6c-466c-99c9-fbc8c9225fcd)
- Call ID: b6bb27aa-0e6c-466c-99c9-fbc8c9225fcd
-  Args:
+    source: :Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -1151,301 +851,40 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_son_of_Alexander a :Man,
+  data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
           :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
+      :hasAncestor data:Queen_Victoria ;
+      :hasBirthYear 1900 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :isSiblingOf data:Prince_Sigismund,
+          data:Prince_Waldemar .
 
-  data:Crown_Princess_Katherine a :Person,
-          :Woman ;
-      :hasFather data:Robert_Batis ;
-      :hasMother data:Anna_Dosti .
-
-  data:Peter_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Philip_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Princess_Aspasia_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Anna_Dosti a :Person,
-          :Woman .
-
-  data:King_Peter_II a :Man,
+  data:Frederick_III_German_Emperor a :Ancestor,
+          :Man,
           :Person .
 
-  data:Male_Sex_Node a :Male,
-          :Sex .
+  data:Prince_Henry_of_Prussia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Frederick_III_German_Emperor .
 
-  data:Princess_Alexandra_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Robert_Batis a :Man,
+  data:Prince_Sigismund a :Man,
           :Person .
 
-  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
-          :Person ;
-      :hasFather data:King_Peter_II ;
-      :hasMother data:Princess_Alexandra_of_Greece_and_Denmark ;
-      :hasSex data:Male_Sex_Node .
+  data:Prince_Waldemar a :Man,
+          :Person .
 
-  data:Princess_Maria_da_Gloria_of_Orleans-Braganza a :Person,
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
           :Woman .
 
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:30
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a father 'King_Peter_II' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Peter_II, :Man)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a mother 'Princess_Alexandra_of_Greece_and_Denmark' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alexandra_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a father 'Robert_Batis' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Batis, :Man)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a father 'King_Peter_II' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Peter_II, :Man)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a mother 'Anna_Dosti' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anna_Dosti, :Woman)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a mother 'Princess_Alexandra_of_Greece_and_Denmark' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alexandra_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a father 'Robert_Batis' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Batis, :Man)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a father 'King_Peter_II' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Peter_II, :Man)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a father 'Alexander_Crown_Prince_of_Yugoslavia' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Crown_Prince_of_Yugoslavia, :Man)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a mother 'Anna_Dosti' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anna_Dosti, :Woman)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Philip_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Alexander_Crown_Prince_of_Yugoslavia' has a mother 'Princess_Alexandra_of_Greece_and_Denmark' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alexandra_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Peter_son_of_Alexander' has a mother 'Princess_Maria_da_Gloria_of_Orleans-Braganza' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_da_Gloria_of_Orleans-Braganza, :Woman)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a father 'Robert_Batis' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Batis, :Man)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Crown_Princess_Katherine' has a mother 'Anna_Dosti' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anna_Dosti, :Woman)
-
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -1453,120 +892,9 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e1773b31-b2ce-4491-97ef-151fbcb86baf)
- Call ID: e1773b31-b2ce-4491-97ef-151fbcb86baf
+  ValidateShacl (3792a4ff-0af0-45f1-9eab-7bac77890c31)
+ Call ID: 3792a4ff-0af0-45f1-9eab-7bac77890c31
   Args:
-    type: :Ancestor
-    source: Alexander_Crown_Prince_of_Yugoslavia
-  AssignClass (b7b18e52-daa4-457c-9a9e-770486780b1e)
- Call ID: b7b18e52-daa4-457c-9a9e-770486780b1e
-  Args:
-    source: King_Peter_II
-    type: :Ancestor
-  AssignClass (3927fac7-3fa1-4874-b62e-6ef05f2939e4)
- Call ID: 3927fac7-3fa1-4874-b62e-6ef05f2939e4
-  Args:
-    source: Princess_Maria_da_Gloria_of_Orleans-Braganza
-    type: :Ancestor
-  AssignClass (3ce1c24d-958d-4d9b-a2e9-6628abb926da)
- Call ID: 3ce1c24d-958d-4d9b-a2e9-6628abb926da
-  Args:
-    source: Princess_Alexandra_of_Greece_and_Denmark
-    type: :Ancestor
-  AssignClass (eaae1e36-9576-4e98-98c4-60d4d2347163)
- Call ID: eaae1e36-9576-4e98-98c4-60d4d2347163
-  Args:
-    source: Robert_Batis
-    type: :Ancestor
-  AssignClass (de7d6801-d3e3-4666-88aa-99e96c7a3d28)
- Call ID: de7d6801-d3e3-4666-88aa-99e96c7a3d28
-  Args:
-    source: Anna_Dosti
-    type: :Ancestor
-  ValidateShacl (673b3c8c-fbb9-4b24-bba7-e410fce6c3f2)
- Call ID: 673b3c8c-fbb9-4b24-bba7-e410fce6c3f2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:Alexander_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Crown_Princess_Katherine a :Person,
-          :Woman ;
-      :hasFather data:Robert_Batis ;
-      :hasMother data:Anna_Dosti .
-
-  data:Peter_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Philip_son_of_Alexander a :Man,
-          :Person ;
-      :hasFather data:Alexander_Crown_Prince_of_Yugoslavia ;
-      :hasMother data:Princess_Maria_da_Gloria_of_Orleans-Braganza .
-
-  data:Princess_Aspasia_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Anna_Dosti a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:King_Peter_II a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Male_Sex_Node a :Male,
-          :Sex .
-
-  data:Princess_Alexandra_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Robert_Batis a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Alexander_Crown_Prince_of_Yugoslavia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:King_Peter_II ;
-      :hasMother data:Princess_Alexandra_of_Greece_and_Denmark ;
-      :hasSex data:Male_Sex_Node .
-
-  data:Princess_Maria_da_Gloria_of_Orleans-Braganza a :Ancestor,
-          :Person,
-          :Woman .
-
-
 
 ================================= Tool Message =================================
 
@@ -1576,6 +904,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e4d36d68-d496-407c-9b6c-02ff40aca01e)
- Call ID: e4d36d68-d496-407c-9b6c-02ff40aca01e
+  Finish (ed360d19-beee-48a0-b281-20e8e31750bc)
+ Call ID: ed360d19-beee-48a0-b281-20e8e31750bc
   Args:

@@ -2,40 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Christina_of_Wurttemberg a :Person,
+data:Alexia a :Person,
         :Woman ;
-    :isDaughterOf data:Helena_of_Austria,
-        data:Philipp_Albrecht_of_Wurttemberg .
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :isSisterOf data:Catharina-Amalia .
 
-data:Albrecht_of_Wurttemberg a :Man,
-        :Person .
-
-data:Margarete_Sophie_of_Austria a :Person,
-        :Woman .
-
-data:Maria_Cristina_of_Bourbon_Two_Sicilies a :Person,
-        :Woman .
-
-data:Peter_Ferdinand a :Man,
-        :Person .
-
-data:Rosa_of_Austria a :Person,
+data:Ariane a :Person,
         :Woman ;
-    :hasMarriageYear 1928 ;
-    :isSisterOf data:Helena_of_Austria .
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :isSisterOf data:Catharina-Amalia .
 
-data:Helena_of_Austria a :Person,
-        :Woman ;
-    :hasBirthYear 1903 ;
-    :hasDeathYear 1924 ;
-    :hasFather data:Peter_Ferdinand ;
-    :hasMarriageYear 1923 ;
-    :hasMother data:Maria_Cristina_of_Bourbon_Two_Sicilies ;
-    :hasRelation data:Philipp_Albrecht_of_Wurttemberg .
-
-data:Philipp_Albrecht_of_Wurttemberg a :Man,
+data:Constantijn a :Man,
         :Person ;
-    :hasFather data:Albrecht_of_Wurttemberg ;
-    :hasMother data:Margarete_Sophie_of_Austria ;
-    :hasRelation data:Rosa_of_Austria .
+    :hasMother data:Beatrix .
+
+data:Mart%C3%ADn_Zorreguieta a :Man,
+        :Person ;
+    :hasFather data:Jorge_Zorreguieta ;
+    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti .
+
+data:Beatrix a :Person,
+        :Woman .
+
+data:Catharina-Amalia a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima .
+
+data:Jorge_Zorreguieta a :Man,
+        :Person .
+
+data:Mar%C3%ADa_del_Carmen_Cerruti a :Person,
+        :Woman .
+
+data:M%C3%A1xima a :Person,
+        :Woman ;
+    :hasFather data:Jorge_Zorreguieta ;
+    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti .
+
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasMother data:Beatrix .
 

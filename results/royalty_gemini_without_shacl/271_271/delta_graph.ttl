@@ -2,21 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
-        :Man,
+data:Edward_Edmund_Maximilian_George_Windsor a :Man,
         :Person ;
-    :isFatherOf data:Julia_Caroline_Rawlinson .
+    :hasBirthYear 1988 ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Countess_of_St_Andrews ;
+    :knownAs data:Eddy_Downpatrick .
 
-data:James_Robert_Bruce_Ogilvy a :Man,
+data:Eddy_Downpatrick a :Person .
+
+data:George_Windsor_Earl_of_St_Andrews a :Man,
         :Person ;
-    :hasBirthYear 1964 ;
-    :hasMarriageYear 1988 ;
-    :hasRelation data:Julia_Caroline_Rawlinson ;
-    :hasSister data:Marina_Ogilvy .
+    :hasFather data:Prince_Edward_Duke_of_Kent .
 
-data:Marina_Ogilvy a :Person,
-        :Woman .
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person .
 
-data:Julia_Caroline_Rawlinson a :Person,
+data:Sylvana_Countess_of_St_Andrews a :Person,
         :Woman .
 

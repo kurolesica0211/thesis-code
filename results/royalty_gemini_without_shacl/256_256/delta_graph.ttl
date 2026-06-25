@@ -2,52 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Albert_Mountbatten a :Man,
+data:3rd_Marquess_of_Milford_Haven a :Man,
         :Person ;
-    :hasBirthYear 1886 ;
-    :hasDeathYear 1960 ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMarriageYear 1917 ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasRelation data:Lady_Irene_Denison ;
-    :hasSister data:Princess_Victoria_Eugenia ;
-    :knownAs "Drino"^^xsd:string .
+    :isFatherOf data:George_Ivar_Louis_Mountbatten .
 
-data:Alfonso_XIII_of_Spain a :Man,
-        :Person .
+data:George_Alfred_Walker a :Man,
+        :Person ;
+    :isFatherOf data:Sarah_Georgina_Walker .
 
-data:Julie_Countess_of_Hauke a :Ancestor,
-        :Person,
+data:Janet_Mercedes_Bryce a :Person,
+        :Woman ;
+    :isMotherOf data:George_Ivar_Louis_Mountbatten .
+
+data:Jean_Maureen_Hatton a :Person,
+        :Woman ;
+    :isMotherOf data:Sarah_Georgina_Walker .
+
+data:Lord_Ivar_Mountbatten a :Man,
+        :Person ;
+    :isBrotherOf data:George_Ivar_Louis_Mountbatten .
+
+data:Michael_Spencer a :Man,
+        :Person ;
+    :hasRelation data:Sarah_Georgina_Walker .
+
+data:Clare_Husted_Steel a :Person,
         :Woman .
 
-data:Lady_Irene_Denison a :Person,
-        :Woman .
+data:Male a :Male .
 
-data:Prince_Albert a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man,
+data:George_Ivar_Louis_Mountbatten a :Man,
         :Person ;
-    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julie_Countess_of_Hauke .
+    :hasBirthYear 1961 ;
+    :hasMarriageYear 1989,
+        1997 ;
+    :hasRelation data:Clare_Husted_Steel,
+        data:Sarah_Georgina_Walker ;
+    :hasSex data:Male .
 
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Albert ;
-    :hasMother data:Queen_Victoria .
-
-data:Princess_Victoria_Eugenia a :Person,
-        :Woman ;
-    :hasRelation data:Alfonso_XIII_of_Spain .
-
-data:Queen_Victoria a :Ancestor,
-        :Person,
+data:Sarah_Georgina_Walker a :Person,
         :Woman .
 

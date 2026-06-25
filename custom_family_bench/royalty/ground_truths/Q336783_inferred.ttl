@@ -1,0 +1,149 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sarah_Walker a :Person,
+        :Woman ;
+    rdfs:label "Sarah Walker"^^xsd:string ;
+    data:posIndicesFull "603:624"^^xsd:string ;
+    data:posIndicesPart "765:771"^^xsd:string,
+        "796:802"^^xsd:string,
+        "878:884"^^xsd:string ;
+    data:wdtLink wdt:Q75240463 ;
+    :alsoKnownAs "Sarah Georgina Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Sarah Georgina Walker"^^xsd:string,
+        "Sarah Georgina, Marchioness of Milford Haven"^^xsd:string,
+        "Sarah Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Sarah, Marchioness of Milford Haven"^^xsd:string ;
+    :hasRelation data:Sarah_Walker ;
+    :hasSex data:female ;
+    :hasSister data:Sarah_Walker ;
+    :isBloodrelationOf data:Sarah_Walker ;
+    :isSiblingOf data:Sarah_Walker ;
+    :isSisterOf data:Sarah_Walker .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "0:60"^^xsd:string ;
+    data:posIndicesPart "1082:1089"^^xsd:string,
+        "1090:1095"^^xsd:string,
+        "1196:1203"^^xsd:string,
+        "1204:1209"^^xsd:string,
+        "207:214"^^xsd:string,
+        "215:220"^^xsd:string,
+        "249:257"^^xsd:string,
+        "261:268"^^xsd:string,
+        "269:274"^^xsd:string,
+        "506:514"^^xsd:string,
+        "518:525"^^xsd:string,
+        "526:531"^^xsd:string,
+        "548:559"^^xsd:string,
+        "573:580"^^xsd:string,
+        "581:586"^^xsd:string,
+        "751:757"^^xsd:string,
+        "778:785"^^xsd:string,
+        "786:791"^^xsd:string,
+        "942:949"^^xsd:string,
+        "950:955"^^xsd:string ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven"^^xsd:string,
+        "George Ivar Louis Mountbatten, Earl of Medina"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string ;
+    :hasAncestor data:Janet_Bryce ;
+    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasMother data:Janet_Bryce ;
+    :hasParent data:Janet_Bryce ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isChildOf data:Janet_Bryce ;
+    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSonOf data:Janet_Bryce .
+
+data:Janet_Bryce a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Janet Bryce"^^xsd:string ;
+    data:posIndicesFull "279:299"^^xsd:string ;
+    data:wdtLink wdt:Q75383906 ;
+    :alsoKnownAs "Janet Mercedes Bryce"^^xsd:string,
+        "Janet Mercedes Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Janet Mountbatten, Marchioness of Milford Haven"^^xsd:string ;
+    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten ;
+    :hasSex data:female ;
+    :hasSister data:Janet_Bryce ;
+    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAuntOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBloodrelationOf data:Janet_Bryce ;
+    :isMotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSiblingOf data:Janet_Bryce ;
+    :isSisterOf data:Janet_Bryce .
+
+data:Lord_Ivar_Mountbatten a :Man,
+        :Person ;
+    rdfs:label "Lord Ivar Mountbatten"^^xsd:string ;
+    data:posIndicesFull "322:343"^^xsd:string,
+        "327:343"^^xsd:string ;
+    data:posIndicesPart "1077:1081"^^xsd:string,
+        "1191:1195"^^xsd:string,
+        "548:559"^^xsd:string,
+        "568:572"^^xsd:string,
+        "773:777"^^xsd:string,
+        "910:914"^^xsd:string,
+        "937:941"^^xsd:string ;
+    data:wdtLink wdt:Q6679418 ;
+    :alsoKnownAs "Ivar Alexander Michael Mountbatten"^^xsd:string,
+        "Ivar Mountbatten"^^xsd:string,
+        "Lord Ivar Alexander Michael Mountbatten"^^xsd:string ;
+    :hasAncestor data:Janet_Bryce ;
+    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasMother data:Janet_Bryce ;
+    :hasParent data:Janet_Bryce ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isChildOf data:Janet_Bryce ;
+    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSonOf data:Janet_Bryce .
+

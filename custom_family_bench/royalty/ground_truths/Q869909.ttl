@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Heinrich_of_Hesse_and_by_Rhine a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Heinrich_of_Hesse_and_by_Rhine a :Person ;
     rdfs:label "Prince Heinrich of Hesse and by Rhine" ;
     data:posIndicesFull "0:63",
         "116:130",
@@ -34,24 +26,24 @@ data:Prince_Heinrich_of_Hesse_and_by_Rhine a :Man,
     :alsoKnownAs "Enrico d'Assia",
         "Heinrich Wilhelm Konstantin Viktor Franz Prinz von Hessen-Kassel",
         "Prince Heinrich Wilhelm Konstantin Viktor Franz of Hesse-Kassel" ;
-    :hasMother data:Princess_Mafalda_of_Savoy ;
     :hasParent data:Princess_Mafalda_of_Savoy ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Mafalda_of_Savoy ;
-    :isSonOf data:Princess_Mafalda_of_Savoy .
+    :hasSex data:male .
 
-data:Princess_Mafalda_of_Savoy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Mafalda_of_Savoy a :Person ;
     rdfs:label "Princess Mafalda of Savoy" ;
     data:posIndicesFull "184:209",
         "382:407" ;
     data:wdtLink wdt:Q235832 ;
     :alsoKnownAs "Princess Mafalda, Landgravine of Hesse-Kassel" ;
-    :hasChild data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
-    :isMotherOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
-    :isParentOf data:Prince_Heinrich_of_Hesse_and_by_Rhine .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

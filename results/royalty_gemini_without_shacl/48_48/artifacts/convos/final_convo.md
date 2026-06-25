@@ -125,6 +125,7 @@ Engineers reclaimed vast amounts of land that had been under water by building t
 However, Wilhelmina intervened because she felt the planned location was "too close" to the royal family's summer residence.
 Aside from economical and security matters, Queen Wilhelmina used most of the 1930s to find a suitable husband for Juliana.
 Many prospects from the United Kingdom and Sweden either declined or were turned down by Juliana.
+Finally, mother and daughter found a suitable match in German Prince Bernhard of Lippe-Biesterfeld.
 Wilhelmina had her lawyers draft a very detailed prenuptial agreement that specified exactly what her future son-in-law could and could not do.
 World War II
 
@@ -177,12 +178,21 @@ Eponyms
 Lèse-majesté case
 
 After Wilhelmina had taken office in 1890, rumours were spread by Socialist satirical magazine De Roode Duivel ("The Red Devil") that William III was not her real father, but Emma's confidant, Sebastiaan Mattheus Sigismund de Ranitz .
+References
+
+Sources
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -198,39 +208,9 @@ After Wilhelmina had taken office in 1890, rumours were spread by Socialist sati
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -245,6 +225,23 @@ After Wilhelmina had taken office in 1890, rumours were spread by Socialist sati
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -262,6 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -329,29 +341,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -360,6 +364,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -372,6 +384,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -380,17 +394,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -418,6 +434,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -433,181 +533,187 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4cbc1508-9d45-44e1-a566-83dc84a03b84)
- Call ID: 4cbc1508-9d45-44e1-a566-83dc84a03b84
+  AssignClass (4398cbae-982b-4b1d-809e-8731186c0a5c)
+ Call ID: 4398cbae-982b-4b1d-809e-8731186c0a5c
   Args:
     type: :Person
-    source: Wilhelmina
-  AssignClass (f6b527f0-37cb-462b-a382-d5eca6ca497d)
- Call ID: f6b527f0-37cb-462b-a382-d5eca6ca497d
+    source: :Wilhelmina
+  AssignClass (cfe652a4-8435-4da0-a480-75139ed3a2bb)
+ Call ID: cfe652a4-8435-4da0-a480-75139ed3a2bb
   Args:
+    source: :Wilhelmina
     type: :Woman
-    source: Wilhelmina
-  AssignClass (a6ca0482-c460-45d8-beb3-93895d678075)
- Call ID: a6ca0482-c460-45d8-beb3-93895d678075
+  AddLiteral (86559cd3-71b7-4ba7-a06b-de4c5cfc0abc)
+ Call ID: 86559cd3-71b7-4ba7-a06b-de4c5cfc0abc
   Args:
-    source: William_III
-    type: :Person
-  AssignClass (a56b5978-767b-43be-9b6e-30e80afb15e0)
- Call ID: a56b5978-767b-43be-9b6e-30e80afb15e0
-  Args:
-    type: :Man
-    source: William_III
-  AssignClass (55caeae2-048b-4e52-bf4a-4f3dfb0183ec)
- Call ID: 55caeae2-048b-4e52-bf4a-4f3dfb0183ec
-  Args:
-    source: Emma_of_Waldeck_and_Pyrmont
-    type: :Person
-  AssignClass (5d586650-66c4-49d6-864e-eb90bf5a5f22)
- Call ID: 5d586650-66c4-49d6-864e-eb90bf5a5f22
-  Args:
-    source: Emma_of_Waldeck_and_Pyrmont
-    type: :Woman
-  AssignClass (7e19f6e5-4e96-41b7-84c3-0f36354461f2)
- Call ID: 7e19f6e5-4e96-41b7-84c3-0f36354461f2
-  Args:
-    type: :Person
-    source: Juliana
-  AssignClass (0571afde-6156-44d2-b9a1-687cbf3f883c)
- Call ID: 0571afde-6156-44d2-b9a1-687cbf3f883c
-  Args:
-    type: :Woman
-    source: Juliana
-  AssignClass (56eb2955-1b8a-46b1-9531-333033107046)
- Call ID: 56eb2955-1b8a-46b1-9531-333033107046
-  Args:
-    source: Henry_of_Mecklenburg-Schwerin
-    type: :Person
-  AssignClass (301a8d94-986e-4627-b3b5-254e28cccba4)
- Call ID: 301a8d94-986e-4627-b3b5-254e28cccba4
-  Args:
-    type: :Man
-    source: Henry_of_Mecklenburg-Schwerin
-  AssignClass (b3ab4be2-9e99-4ade-964d-0bd8012a9ff5)
- Call ID: b3ab4be2-9e99-4ade-964d-0bd8012a9ff5
-  Args:
-    source: Beatrix
-    type: :Person
-  AssignClass (2782e550-e4ee-487d-af36-95190804c11b)
- Call ID: 2782e550-e4ee-487d-af36-95190804c11b
-  Args:
-    source: Beatrix
-    type: :Woman
-  AssignClass (7ac71720-5376-4518-96e6-e52bad6524c8)
- Call ID: 7ac71720-5376-4518-96e6-e52bad6524c8
-  Args:
-    source: Sophie_of_Wurttemberg
-    type: :Person
-  AssignClass (cf3a24c4-64c0-493f-976f-4ed907ad2fe6)
- Call ID: cf3a24c4-64c0-493f-976f-4ed907ad2fe6
-  Args:
-    type: :Woman
-    source: Sophie_of_Wurttemberg
-  AssignClass (7ae5f37c-ff5b-4300-a24e-e6d97eed1c24)
- Call ID: 7ae5f37c-ff5b-4300-a24e-e6d97eed1c24
-  Args:
-    source: Alexander
-    type: :Person
-  AssignClass (53c84aef-7c86-4249-becf-2a955191da2f)
- Call ID: 53c84aef-7c86-4249-becf-2a955191da2f
-  Args:
-    source: Alexander
-    type: :Man
-  AssignClass (020447a0-1c2b-4db2-ac37-90b4c58cfc48)
- Call ID: 020447a0-1c2b-4db2-ac37-90b4c58cfc48
-  Args:
-    type: :Person
-    source: Frederick
-  AssignClass (f2851d97-62a5-458f-9cb7-11d151245b4c)
- Call ID: f2851d97-62a5-458f-9cb7-11d151245b4c
-  Args:
-    type: :Man
-    source: Frederick
-  AssignClass (83fe5236-b8f7-438a-bb11-448236b00ec6)
- Call ID: 83fe5236-b8f7-438a-bb11-448236b00ec6
-  Args:
-    source: Margriet
-    type: :Person
-  AssignClass (0e087bac-9d53-4a6e-9e4b-b0d9886f26ea)
- Call ID: 0e087bac-9d53-4a6e-9e4b-b0d9886f26ea
-  Args:
-    type: :Woman
-    source: Margriet
-  AddLiteral (f50d7902-8a02-41cb-b21e-0930a5771431)
- Call ID: f50d7902-8a02-41cb-b21e-0930a5771431
-  Args:
-    source: Wilhelmina
     literal_value: 1880
+    source: :Wilhelmina
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (e131111c-40f0-4c9f-9415-8603a15862a6)
- Call ID: e131111c-40f0-4c9f-9415-8603a15862a6
+  AddLiteral (78891f32-9007-41e7-b62a-6bef1c858f67)
+ Call ID: 78891f32-9007-41e7-b62a-6bef1c858f67
   Args:
+    relation: :hasDeathYear
     literal_type: xsd:integer
     literal_value: 1962
-    relation: :hasDeathYear
-    source: Wilhelmina
-  AddTriple (29de8d94-a991-4e8f-8d32-576350ca83d6)
- Call ID: 29de8d94-a991-4e8f-8d32-576350ca83d6
+    source: :Wilhelmina
+  AssignClass (3fc5cf75-2c91-49d5-bf9e-11ae2e24d655)
+ Call ID: 3fc5cf75-2c91-49d5-bf9e-11ae2e24d655
   Args:
+    source: :WilliamIII
+    type: :Person
+  AssignClass (141b26f6-9a09-48d8-b051-7ba21984c083)
+ Call ID: 141b26f6-9a09-48d8-b051-7ba21984c083
+  Args:
+    source: :WilliamIII
+    type: :Man
+  AssignClass (8343405c-920d-4a75-8c55-cad5a115aa31)
+ Call ID: 8343405c-920d-4a75-8c55-cad5a115aa31
+  Args:
+    type: :Person
+    source: :Emma
+  AssignClass (cb5ee035-166f-45d6-9a68-36761f1a6730)
+ Call ID: cb5ee035-166f-45d6-9a68-36761f1a6730
+  Args:
+    source: :Emma
+    type: :Woman
+  AddTriple (0771e437-e876-4546-a2d5-47fb5bb0a875)
+ Call ID: 0771e437-e876-4546-a2d5-47fb5bb0a875
+  Args:
+    source: :Wilhelmina
+    target: :WilliamIII
     relation: :hasFather
-    source: Wilhelmina
-    target: William_III
-  AddTriple (eff69e98-7fe0-4e9d-8b67-b2418f45b74a)
- Call ID: eff69e98-7fe0-4e9d-8b67-b2418f45b74a
+  AddTriple (69ffd879-c3b6-4d6a-91b8-5e8d26584047)
+ Call ID: 69ffd879-c3b6-4d6a-91b8-5e8d26584047
   Args:
+    source: :Wilhelmina
+    target: :Emma
     relation: :hasMother
-    target: Emma_of_Waldeck_and_Pyrmont
-    source: Wilhelmina
-  AddTriple (b121bdb1-bdf5-4655-b186-603c36a9b6e6)
- Call ID: b121bdb1-bdf5-4655-b186-603c36a9b6e6
+  AssignClass (37f647dc-7e0a-4195-b396-dda6f15d6cd4)
+ Call ID: 37f647dc-7e0a-4195-b396-dda6f15d6cd4
   Args:
-    relation: :hasFather
-    source: Juliana
-    target: Henry_of_Mecklenburg-Schwerin
-  AddTriple (631b9206-132b-4807-ba9b-02b5a85b6dc8)
- Call ID: 631b9206-132b-4807-ba9b-02b5a85b6dc8
+    type: :Person
+    source: :Henry
+  AssignClass (8b9b6889-c92f-4672-b91e-4fe2540d3562)
+ Call ID: 8b9b6889-c92f-4672-b91e-4fe2540d3562
   Args:
-    relation: :hasMother
-    source: Juliana
-    target: Wilhelmina
-  AddTriple (7ba2201c-5f06-4055-9ef9-bd71f0f72ff6)
- Call ID: 7ba2201c-5f06-4055-9ef9-bd71f0f72ff6
-  Args:
-    relation: :hasMother
-    source: Beatrix
-    target: Juliana
-  AddTriple (bbee3565-8f9d-4ccd-9e1a-bec7fbf8df09)
- Call ID: bbee3565-8f9d-4ccd-9e1a-bec7fbf8df09
-  Args:
-    target: Juliana
-    source: Margriet
-    relation: :hasMother
-  AddTriple (1971c88f-dcc2-4ba8-88ec-74049ae5f042)
- Call ID: 1971c88f-dcc2-4ba8-88ec-74049ae5f042
-  Args:
-    source: Alexander
-    target: William_III
-    relation: :hasFather
-  AddTriple (4844a9df-f0f7-4be6-b048-b2263630eb7d)
- Call ID: 4844a9df-f0f7-4be6-b048-b2263630eb7d
-  Args:
-    source: Alexander
-    target: Sophie_of_Wurttemberg
-    relation: :hasMother
-  AddLiteral (5f50f4cf-059c-406f-9ba2-4e8bc08c91f3)
- Call ID: 5f50f4cf-059c-406f-9ba2-4e8bc08c91f3
-  Args:
-    source: Wilhelmina
-    relation: :hasMarriageYear
-    literal_value: 1901
-    literal_type: xsd:integer
-  AddTriple (14ae1f8a-0af4-4409-b699-48eafbdea9d4)
- Call ID: 14ae1f8a-0af4-4409-b699-48eafbdea9d4
+    type: :Man
+    source: :Henry
+  AddTriple (0ec1cf35-affc-4b08-b10d-c08cbed64f31)
+ Call ID: 0ec1cf35-affc-4b08-b10d-c08cbed64f31
   Args:
     relation: :hasRelation
-    target: Henry_of_Mecklenburg-Schwerin
-    source: Wilhelmina
-  Finish (3a7220de-b6b0-4483-a1bd-47c997c9f547)
- Call ID: 3a7220de-b6b0-4483-a1bd-47c997c9f547
+    target: :Henry
+    source: :Wilhelmina
+  AddLiteral (3ad1fa88-d9f4-4985-b5af-a873a366e1da)
+ Call ID: 3ad1fa88-d9f4-4985-b5af-a873a366e1da
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1901
+    source: :Wilhelmina
+  AssignClass (89c95508-19b1-4994-a884-ed3e7d4731a7)
+ Call ID: 89c95508-19b1-4994-a884-ed3e7d4731a7
+  Args:
+    source: :Juliana
+    type: :Person
+  AssignClass (c03b6524-7b9d-4b04-b06e-4b05ffd2857f)
+ Call ID: c03b6524-7b9d-4b04-b06e-4b05ffd2857f
+  Args:
+    type: :Woman
+    source: :Juliana
+  AddTriple (fbc62550-f080-4820-8bc5-78ef7d2e6ea0)
+ Call ID: fbc62550-f080-4820-8bc5-78ef7d2e6ea0
+  Args:
+    relation: :hasMother
+    source: :Juliana
+    target: :Wilhelmina
+  AddTriple (7ba429af-5e87-496b-b444-9a5c64ef3970)
+ Call ID: 7ba429af-5e87-496b-b444-9a5c64ef3970
+  Args:
+    source: :Juliana
+    target: :Henry
+    relation: :hasFather
+  AssignClass (3522126d-0d6f-46c6-9b8b-c8f4a75492b2)
+ Call ID: 3522126d-0d6f-46c6-9b8b-c8f4a75492b2
+  Args:
+    source: :Beatrix
+    type: :Person
+  AssignClass (4f732d92-a099-4a6d-acde-e960c165806e)
+ Call ID: 4f732d92-a099-4a6d-acde-e960c165806e
+  Args:
+    type: :Woman
+    source: :Beatrix
+  AddTriple (96ff239d-2cfa-43e0-bc9a-219694ba959b)
+ Call ID: 96ff239d-2cfa-43e0-bc9a-219694ba959b
+  Args:
+    relation: :hasMother
+    target: :Juliana
+    source: :Beatrix
+  AssignClass (209c7178-1992-4ef0-a995-ba7aff917d1d)
+ Call ID: 209c7178-1992-4ef0-a995-ba7aff917d1d
+  Args:
+    type: :Person
+    source: :Margriet
+  AssignClass (991c23ac-642a-4242-a4ca-ec58f2367b68)
+ Call ID: 991c23ac-642a-4242-a4ca-ec58f2367b68
+  Args:
+    source: :Margriet
+    type: :Woman
+  AddTriple (aee939e9-cbae-4a07-be46-6d36fe65bf7e)
+ Call ID: aee939e9-cbae-4a07-be46-6d36fe65bf7e
+  Args:
+    target: :Juliana
+    source: :Margriet
+    relation: :hasMother
+  AssignClass (ea6dc7d6-adc7-4cfe-809e-ce0925500545)
+ Call ID: ea6dc7d6-adc7-4cfe-809e-ce0925500545
+  Args:
+    source: :Sophie
+    type: :Person
+  AssignClass (441dda57-98f1-44e5-b628-cb2c0a1daf08)
+ Call ID: 441dda57-98f1-44e5-b628-cb2c0a1daf08
+  Args:
+    type: :Woman
+    source: :Sophie
+  AddTriple (67acda60-95f6-4fd2-b3c7-b071b85d9ac7)
+ Call ID: 67acda60-95f6-4fd2-b3c7-b071b85d9ac7
+  Args:
+    source: :WilliamIII
+    target: :Sophie
+    relation: :hasRelation
+  AssignClass (717c61a2-5dae-43c0-83ab-8b3c28f31abf)
+ Call ID: 717c61a2-5dae-43c0-83ab-8b3c28f31abf
+  Args:
+    source: :Alexander
+    type: :Person
+  AssignClass (e5cf0cb8-210b-4ea5-9c48-787f38be80a2)
+ Call ID: e5cf0cb8-210b-4ea5-9c48-787f38be80a2
+  Args:
+    type: :Man
+    source: :Alexander
+  AddTriple (44564210-b1dd-453f-a7b4-a8ec7a35dc73)
+ Call ID: 44564210-b1dd-453f-a7b4-a8ec7a35dc73
+  Args:
+    relation: :hasFather
+    target: :WilliamIII
+    source: :Alexander
+  AddTriple (fd31af31-a1d6-4958-a0dc-2d89869bc4c1)
+ Call ID: fd31af31-a1d6-4958-a0dc-2d89869bc4c1
+  Args:
+    relation: :hasMother
+    source: :Alexander
+    target: :Sophie
+  AssignClass (e112fec7-e056-42d5-8b26-dec2abfde078)
+ Call ID: e112fec7-e056-42d5-8b26-dec2abfde078
+  Args:
+    source: :Frederick
+    type: :Person
+  AssignClass (82272061-3ccc-46b4-94b6-2d3d4f9d3b73)
+ Call ID: 82272061-3ccc-46b4-94b6-2d3d4f9d3b73
+  Args:
+    type: :Man
+    source: :Frederick
+  Finish (ffa319fd-619b-4303-9b89-7ab21bf1eb61)
+ Call ID: ffa319fd-619b-4303-9b89-7ab21bf1eb61
   Args:

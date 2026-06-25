@@ -2,45 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Victor_Emmanuel_II_of_Italy a :Man .
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:King_Alfonso_XIII .
 
-data:Prince_Aimone_4th_Duke_of_Aosta a :Man ;
-    :hasBirthYear 1900 ;
-    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Prince_Amedeo_son_of_Aimone,
-        data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
-    :hasMarriageYear 1939 ;
-    :hasMother data:Princess_Helene_of_Orleans .
-
-data:King_Constantine_I a :Man .
-
-data:Philippe_comte_de_Paris a :Man .
-
-data:Prince_Amedeo_1st_Duke_of_Aosta a :Man .
-
-data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man ;
-    :hasFather data:Prince_Emanuele_Filiberto_Duke_of_Aosta ;
-    :hasMother data:Princess_Helene_of_Orleans .
-
-data:Prince_Amedeo_son_of_Aimone a :Man ;
+data:Prince_Amedeo_Duke_of_Aosta_son a :Man,
+        :Person ;
+    :hasFather data:Prince_Aimone ;
     :hasMother data:Princess_Irene_of_Greece_and_Denmark .
 
-data:Princess_Irene_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:King_Constantine_I ;
-    :hasMother data:Princess_Sophie_of_Prussia .
+data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi a :Man,
+        :Person ;
+    :isUncleOf data:Prince_Aimone .
 
-data:Princess_Marie_Isabelle_of_Orleans a :Woman .
+data:Victor_Emmanuel_III a :Man,
+        :Person .
 
-data:Princess_Sophie_of_Prussia a :Woman .
+data:King_Alfonso_XIII a :Man,
+        :Person .
 
-data:Vittoria_dal_Pozzo a :Woman .
+data:King_Constantine_I a :Man,
+        :Person .
 
-data:Prince_Emanuele_Filiberto_Duke_of_Aosta a :Man ;
+data:Philippe_comte_de_Paris a :Man,
+        :Person .
+
+data:Prince_Amedeo_1st_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person .
+
+data:Prince_Emanuele_Filiberto a :Man,
+        :Person ;
     :hasFather data:Prince_Amedeo_1st_Duke_of_Aosta ;
     :hasMother data:Vittoria_dal_Pozzo .
 
-data:Princess_Helene_of_Orleans a :Woman ;
+data:Princess_Helene_of_Orleans a :Person,
+        :Woman ;
     :hasFather data:Philippe_comte_de_Paris ;
     :hasMother data:Princess_Marie_Isabelle_of_Orleans .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:King_Constantine_I ;
+    :hasMother data:Princess_Sophie_of_Prussia .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Person,
+        :Woman .
+
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman .
+
+data:Vittoria_dal_Pozzo a :Person,
+        :Woman .
+
+data:Prince_Aimone a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Prince_Emanuele_Filiberto ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Helene_of_Orleans .
 

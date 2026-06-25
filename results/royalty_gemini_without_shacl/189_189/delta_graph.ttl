@@ -2,49 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Granville_James_Leveson-Gower a :Man,
+data:Howard_Oxenberg a :Man,
         :Person ;
-    :formerlyKnownAs "Lord Leveson"^^xsd:string ;
-    :hasBirthYear 1918 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:William_Leveson-Gower ;
-    :hasMarriageYear 1958 ;
-    :hasMother data:Rose_Bowes-Lyon ;
-    :hasRelation data:Doon_Aileen_Plunket .
+    :hasMarriageYear 1960 .
 
-data:Aileen_Sibell_Mary_Guinness a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Edward_Guinness .
-
-data:Brindsley_Sheridan_Bushe_Plunket a :Ancestor,
-        :Man,
+data:Manuel_Ulloa_Elias a :Man,
         :Person ;
-    :hasFather data:William_Plunket .
+    :hasMarriageYear 1987 .
 
-data:Claude_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person .
+data:Neil_Balfour_of_Dawyck a :Man,
+        :Person ;
+    :hasMarriageYear 1969 .
 
-data:Doon_Aileen_Plunket a :Person,
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
         :Woman ;
-    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
-    :hasMother data:Aileen_Sibell_Mary_Guinness .
+    :hasBirthYear 1936 ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nicholas_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
 
-data:Edward_Guinness a :Ancestor,
-        :Man,
+data:Prince_Alexander_of_Yugoslavia a :Man,
         :Person .
 
-data:Rose_Bowes-Lyon a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Claude_Bowes-Lyon .
-
-data:William_Leveson-Gower a :Ancestor,
-        :Man,
+data:Prince_Nicholas_of_Yugoslavia a :Man,
         :Person .
 
-data:William_Plunket a :Ancestor,
-        :Man,
+data:Prince_Paul_of_Yugoslavia a :Man,
         :Person .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman .
 

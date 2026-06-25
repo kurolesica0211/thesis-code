@@ -2,42 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cristina a :Person,
-        :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sof%C3%ADa .
-
-data:Elena a :Person,
-        :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sof%C3%ADa .
-
-data:Felipe_VI a :Man,
-        :Person ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sof%C3%ADa .
-
-data:Constantine_II a :Man,
-        :Person .
-
-data:Frederica_of_Hanover a :Person,
-        :Woman .
-
-data:Irene a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
-
-data:Juan_Carlos_I a :Man,
-        :Person .
-
 data:Sof%C3%ADa a :Person,
         :Woman ;
     :hasBirthYear 1938 ;
     :hasBrother data:Constantine_II ;
-    :hasFather data:Paul_of_Greece ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :hasFather data:King_Paul ;
     :hasMarriageYear 1962 ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasSister data:Irene .
+    :hasMother data:Queen_Frederica ;
+    :hasRelation data:Juan_Carlos_I ;
+    :hasSister data:Princess_Irene .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Constantine_II a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:King_Paul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Queen_Sophia_of_Greece .
+
+data:Princess_Irene a :Person,
+        :Woman .
+
+data:Princess_Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Frederica a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Princess_Victoria_Louise_of_Prussia .
+
+data:Queen_Sophia_of_Greece a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Cristina a :Person,
+        :Woman .
+
+data:Elena a :Person,
+        :Woman .
+
+data:Felipe_VI a :Man,
+        :Person .
 

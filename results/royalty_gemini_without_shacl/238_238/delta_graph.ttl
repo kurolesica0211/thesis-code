@@ -2,27 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,
-        :Woman ;
-    :hasAncestor data:King_Juan_Carlos_I ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Inaki_Urdangarin ;
-    :hasMother data:Infanta_Cristina ;
-    :hasRelation data:Juan_Urquijo .
-
-data:Inaki_Urdangarin a :Man,
-        :Person .
-
-data:Infanta_Cristina a :Person,
-        :Woman .
-
-data:Juan_Urquijo a :Man,
+data:Franz_Ulrich_Kinsky a :Man,
         :Person ;
-    :hasAncestor data:Princess_Teresa_Duchess_of_Salerno .
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich_Kinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Roberta_Cavanagh .
 
-data:King_Juan_Carlos_I a :Man,
+data:Helena_Victoria_Hutten-Czapska a :Person,
+        :Woman .
+
+data:Anne_Rowell a :Person,
+        :Woman .
+
+data:Hilmar_von_dem_Bussche-Haddenhausen a :Man,
         :Person .
 
-data:Princess_Teresa_Duchess_of_Salerno a :Person,
-        :Woman .
+data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman ;
+    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .
+
+data:Roberta_Cavanagh a :Person,
+        :Woman ;
+    :hasFather data:Roberto_Cavanagh ;
+    :hasMother data:Anne_Rowell .
+
+data:Roberto_Cavanagh a :Man,
+        :Person .
+
+data:Ulrich_Kinsky a :Man,
+        :Person .
 

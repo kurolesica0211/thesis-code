@@ -69,24 +69,84 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Alessandro Torlonia, 5th Prince of Civitella-Cesi (7 December 1911 – 1 May/12 May 1986) was an Italian banking heir and a member of the House of Torlonia.
-About
+Prince Joachim Franz Humbert of Prussia (17 December 1890 – 18 July 1920) was the youngest son and sixth child of Wilhelm II, German Emperor, by his first wife, Augusta Victoria of Schleswig-Holstein.
+Prince Joachim was educated as an officer and participated in the First World War.
+Early life
 
-Born in Rome on 7 December 1911, Torlonia was the son of Marino Torlonia, 4th Prince di Civitella-Cesi and his American wife, Mary Elsie Moore.
-Don Alessandro's youngest sister was Donna Marina Torlonia di Civitella-Cesi, grandmother of the American actress Brooke Shields.
-In 1941, when his mother was dying in New York City, Torlonia took a high speed boat from Portugal and was arrested in error by FBI, thinking he was an enemy of the state and taken to Ellis Island.
-Not to be confused with his cousin with the same name, Alessandro Torlonia (1925–2017), Prince of Fucino and Prince assistant to the papal throne, head of another branch of the family.
-In the 1980s, this cousin Torlonia held the title as the "richest man in Rome", as he was the heir to a banking fortune and owner of the famous Torlonia Collection of ancient art.
-He died in the Palazzo Nuñez-Torlonia, Rome, in 1986.
-Marriage and children
+Birth and family
 
-On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Beatriz of Spain (1909–2002), a daughter of King Alfonso XIII of Spain and of Princess Victoria Eugenie of Battenberg.
+Prince Joachim was born on 17 December 1890, two years after his father had become the German Emperor, at the Berlin Palace in central Berlin.
+He was the sixth and youngest son of Emperor Wilhelm II, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+Education
+
+Prince Joachim spent his childhood with his siblings at the New Palace in Potsdam, and his school days at the Prinzenhaus in Plön, in his mother's ancestral Schleswig-Holstein, as his brothers had been before him.
+Marriage
+
+On 11 March 1916 in Berlin, Joachim married Princess Marie-Auguste of Anhalt (10 June 1898 – 22 May 1983), the daughter of Eduard, Duke of Anhalt and his wife Princess Luise of Saxe-Altenburg (daughter of Prince Moritz of Saxe-Altenburg).
+He and Marie-Auguste had been engaged since 14 October of the previous year.
+The wedding was celebrated at Bellevue Palace, and was attended by Joachim's father and mother, the Duke and Duchess of Anhalt, as well as other relatives.
+The couple had one son, Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul (15 December 1916 in Potsdam – 22 January 1975 in Arica, Chile).
+Their grandson, Prince Franz Wilhelm, married Maria Vladimirovna of Russia, a claimant to the Imperial Russian throne.
+Candidate for thrones
+
+Ireland
+
+During the Easter Rising in Dublin in 1916, some republican leaders, including Patrick Pearse and Joseph Plunkett, contemplated giving the throne of an independent Ireland to Prince Joachim.
+Pearse and Plunkett thought that if the rising were successful and Germany won the First World War, an independent Ireland would be a monarchy with a German prince as king, like Romania and Bulgaria before it.
+The fact that Joachim did not speak English was also considered an advantage, as he might be more disposed to learning and promoting the use of the Irish language.
+He would naturally turn to those who were more Irish and Gaelic, as to his friends, for the non-nationalist element in our country had shown themselves to be so bitterly anti-German.
+For the first generation or so it would be an advantage, in view of our natural weakness, to have a ruler who linked us with a dominant European power, and thereafter, when we were better prepared to stand alone, or when it might be undesirable that our ruler should turn by personal choice to one power rather than be guided by what was most natural and beneficial for our country, the ruler of that time would have become completely Irish."
+
+Ernest Blythe recalled that in January 1915 he heard Plunkett and Thomas MacDonagh express support for the idea at an Irish Volunteers meeting.
+Georgia
+
+After Georgia's declaration of independence following the Russian Revolution of 1917, Joachim was briefly considered by the German representative Count Friedrich Werner von der Schulenburg and Georgian royalists as a candidate for the Georgian throne.
+The Germans presented various proposals to incorporate Lithuania into the German Empire, particularly Prussia.
+One such proposal offered the crown of Lithuania to Joachim.
+On 4 June 1918, they voted to offer the Lithuanian throne to the German noble Wilhelm Karl, Duke of Urach.
+Divorce and death
+
+Following the German Revolution in November 1918, the Emperor was forced to abdicate, thus depriving Joachim of his titles, position and prospects for heading any newly established monarchies in Europe.
+On 31 May 1918, Joachim was examined by the psychiatrist Robert Gaupp, who submitted a report concluding that he "was incurably ill, both mentally and physically ... was extremely easily emotionally and sexually aroused", and "was inclined to 'violent, uncontrollably exploding outbursts of anger in which all self-control  lost'".
+The relationship between Joachim and his wife had already started to deteriorate.
+According to one report, Marie-Auguste had previously abandoned her husband and child to run away with another man, had been forcibly brought back home on the orders of the Kaiser, but had filed for divorce as soon as the war ended, when she saw that her husband's family were at their lowest ebb.
+According to Hans von Gontard, who served as the Kaiser's Hofmarschall in exile, Joachim was "quite out of control and had beaten his wife".
+Following the divorce, Joachim shot himself in Potsdam on 18 July 1920.
+His own brother Prince Eitel Friedrich of Prussia commented that he suffered from "a fit of excessive dementia".
+Kaiser Wilhelm's reaction to the news of his son's suicide was one of fury, commenting that he was outraged "that the oaf should have done this, too, to us and especially to his mother!"
+She desperately wanted to believe that his death had been accidental but she knew better.
+
+
+Children and grandchildren
+
+The only issue of the marriage of Prince Joachim and Princess Marie-Auguste was their son, Prince Karl Franz Josef Wilhelm Friedrich Eduard of Prussia (15 December 1916 – 22 January 1975).
+On 5 October 1940, Prince Karl married Princess Henriette Hermine Wanda Ida Luise von Schönaich-Carolath (25 November 1918 –
+They were the parents of three children:
+
+
+After the divorce, Prince Karl married, morganatically, Luise Dora Hartmann (5 September 1909 – 23 April 1961) on 9 November 1946.
+Prince Karl's last marriage was to Eva Maria Herrera y Valdeavellano (10 June 1922 – 6 March 1987) on 20 July 1959 in Lima, Peru.
+They were married until Prince Karl's death and had two daughters;
+
+
+Regimental Commissions
+
+Honours
+
+Prince Joachim received the following orders and decorations:
+Ancestry
+
+Portrayal in fiction
+
+Prince Joachim was played by American actor Jesse Plemons and portrayed as the main antagonist in the 2021 Disney fantasy adventure film Jungle Cruise.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +162,9 @@ On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Be
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +179,23 @@ On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Be
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +213,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +295,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +318,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +338,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +348,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +388,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,142 +487,243 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5913f938-4d72-46c1-a1f4-f9f847aa2b75)
- Call ID: 5913f938-4d72-46c1-a1f4-f9f847aa2b75
-  Args:
-    source: Alessandro_Torlonia
-    type: :Man
-  AssignClass (f58228c1-d208-4bbd-ba67-565127b802b7)
- Call ID: f58228c1-d208-4bbd-ba67-565127b802b7
+  AssignClass (e0eea93e-73c7-4969-bf5f-c6d115ae3c3e)
+ Call ID: e0eea93e-73c7-4969-bf5f-c6d115ae3c3e
   Args:
     type: :Man
-    source: Marino_Torlonia
-  AssignClass (1d07167e-7cb2-4c98-9f76-f5e1452ea2a7)
- Call ID: 1d07167e-7cb2-4c98-9f76-f5e1452ea2a7
+    source: Prince_Joachim_of_Prussia
+  AssignClass (1cb15572-91ac-4e85-b5b4-4351b2b56545)
+ Call ID: 1cb15572-91ac-4e85-b5b4-4351b2b56545
   Args:
-    type: :Woman
-    source: Mary_Elsie_Moore
-  AssignClass (78ea5c99-bb24-4499-bf1a-8f53ffe98628)
- Call ID: 78ea5c99-bb24-4499-bf1a-8f53ffe98628
+    source: Prince_Joachim_of_Prussia
+    type: :Person
+  AssignClass (2dd13f7c-1f19-4944-97ca-7777910e74a2)
+ Call ID: 2dd13f7c-1f19-4944-97ca-7777910e74a2
   Args:
-    source: Marina_Torlonia
-    type: :Woman
-  AssignClass (a3628a72-4510-4fec-8a19-65478055d931)
- Call ID: a3628a72-4510-4fec-8a19-65478055d931
-  Args:
-    source: Brooke_Shields
-    type: :Woman
-  AssignClass (7422e26a-9be1-4e92-b10d-b2b8894ccc44)
- Call ID: 7422e26a-9be1-4e92-b10d-b2b8894ccc44
-  Args:
-    source: Alessandro_Torlonia_Cousin
+    source: Wilhelm_II_German_Emperor
     type: :Man
-  AssignClass (d6c17708-89d7-474c-b411-8eafe678cbaf)
- Call ID: d6c17708-89d7-474c-b411-8eafe678cbaf
+  AssignClass (6098d860-730e-4792-b43c-a36e0154f5e3)
+ Call ID: 6098d860-730e-4792-b43c-a36e0154f5e3
+  Args:
+    source: Wilhelm_II_German_Emperor
+    type: :Person
+  AssignClass (3b2d1256-0aa5-44f9-8e37-6f4c9777d4d5)
+ Call ID: 3b2d1256-0aa5-44f9-8e37-6f4c9777d4d5
   Args:
     type: :Woman
-    source: Beatriz_of_Spain
-  AssignClass (7c5a782e-450d-428c-8604-8dd560f6b51d)
- Call ID: 7c5a782e-450d-428c-8604-8dd560f6b51d
+    source: Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (d1c5ee59-1003-48c9-a944-da5e94b06b2a)
+ Call ID: d1c5ee59-1003-48c9-a944-da5e94b06b2a
   Args:
-    source: Alfonso_XIII_of_Spain
-    type: :Man
-  AssignClass (5ec7da1a-08ff-44f2-adb0-e5527b5c73e7)
- Call ID: 5ec7da1a-08ff-44f2-adb0-e5527b5c73e7
+    source: Augusta_Victoria_of_Schleswig-Holstein
+    type: :Person
+  AddLiteral (35a35f81-c553-4f5b-93c7-ef462d97acd3)
+ Call ID: 35a35f81-c553-4f5b-93c7-ef462d97acd3
   Args:
-    type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (b27c7741-c67a-4385-b4c1-eccbabc3c016)
- Call ID: b27c7741-c67a-4385-b4c1-eccbabc3c016
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1911
+    literal_value: 1890
     relation: :hasBirthYear
-    source: Alessandro_Torlonia
-  AddLiteral (013adb41-18de-4b36-8779-68bf3adbb2a3)
- Call ID: 013adb41-18de-4b36-8779-68bf3adbb2a3
-  Args:
+    source: Prince_Joachim_of_Prussia
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1986
-    source: Alessandro_Torlonia
-  AddTriple (3a447108-99bf-4290-9b91-be4b0f901e37)
- Call ID: 3a447108-99bf-4290-9b91-be4b0f901e37
+  AddLiteral (39fbf3ad-0828-465b-ae35-727280ea16a0)
+ Call ID: 39fbf3ad-0828-465b-ae35-727280ea16a0
   Args:
-    target: Marino_Torlonia
-    source: Alessandro_Torlonia
+    relation: :hasDeathYear
+    literal_value: 1920
+    literal_type: xsd:integer
+    source: Prince_Joachim_of_Prussia
+  AddTriple (0c3ff660-317b-4f1e-be0e-f07aef1e2e93)
+ Call ID: 0c3ff660-317b-4f1e-be0e-f07aef1e2e93
+  Args:
     relation: :hasFather
-  AddTriple (9707a62b-bf7a-4006-a1b8-c909ee0ad612)
- Call ID: 9707a62b-bf7a-4006-a1b8-c909ee0ad612
+    source: Prince_Joachim_of_Prussia
+    target: Wilhelm_II_German_Emperor
+  AddTriple (d77f55c5-c4b3-46a8-98f1-e5494b91e44a)
+ Call ID: d77f55c5-c4b3-46a8-98f1-e5494b91e44a
   Args:
-    target: Mary_Elsie_Moore
-    source: Alessandro_Torlonia
     relation: :hasMother
-  AddTriple (2218a3b6-0a79-4c25-8095-eda0420b497c)
- Call ID: 2218a3b6-0a79-4c25-8095-eda0420b497c
+    target: Augusta_Victoria_of_Schleswig-Holstein
+    source: Prince_Joachim_of_Prussia
+  AssignClass (a7ca53c3-b9ca-4861-831f-353f80b0fbbc)
+ Call ID: a7ca53c3-b9ca-4861-831f-353f80b0fbbc
   Args:
-    target: Marina_Torlonia
-    relation: :hasSister
-    source: Alessandro_Torlonia
-  AddTriple (09507ace-7da4-4cd2-8366-58c49f23fd8e)
- Call ID: 09507ace-7da4-4cd2-8366-58c49f23fd8e
+    type: :Woman
+    source: Princess_Marie-Auguste_of_Anhalt
+  AssignClass (82621e0f-3e82-43a8-b8bf-b39c382a965b)
+ Call ID: 82621e0f-3e82-43a8-b8bf-b39c382a965b
   Args:
-    source: Marina_Torlonia
-    relation: :isMotherOf
-    target: Brooke_Shields
-  AddLiteral (b28a6448-ca5a-4e57-83e0-619e3ec38f03)
- Call ID: b28a6448-ca5a-4e57-83e0-619e3ec38f03
-  Args:
-    source: Alessandro_Torlonia_Cousin
-    literal_value: 1925
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (394baca2-7535-4bc8-8681-0a18e029e741)
- Call ID: 394baca2-7535-4bc8-8681-0a18e029e741
+    type: :Person
+    source: Princess_Marie-Auguste_of_Anhalt
+  AddLiteral (92d491eb-5d93-4065-bd2b-07f7eded9e7b)
+ Call ID: 92d491eb-5d93-4065-bd2b-07f7eded9e7b
   Args:
     literal_type: xsd:integer
-    source: Alessandro_Torlonia_Cousin
-    relation: :hasDeathYear
-    literal_value: 2017
-  AddLiteral (560b9e70-91b3-4644-a3aa-cc8b8342a3e2)
- Call ID: 560b9e70-91b3-4644-a3aa-cc8b8342a3e2
-  Args:
-    source: Alessandro_Torlonia
-    literal_value: 1935
+    source: Prince_Joachim_of_Prussia
+    literal_value: 1916
     relation: :hasMarriageYear
+  AddTriple (9bc56b4f-6dc2-4fab-8aa7-6d513392a699)
+ Call ID: 9bc56b4f-6dc2-4fab-8aa7-6d513392a699
+  Args:
+    source: Prince_Joachim_of_Prussia
+    target: Princess_Marie-Auguste_of_Anhalt
+    relation: :hasRelation
+  AssignClass (cefd31f5-d8a6-4103-aa35-6da059cfe778)
+ Call ID: cefd31f5-d8a6-4103-aa35-6da059cfe778
+  Args:
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    type: :Man
+  AssignClass (214afb37-1015-4c6c-a71f-b32c17d33a93)
+ Call ID: 214afb37-1015-4c6c-a71f-b32c17d33a93
+  Args:
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    type: :Person
+  AddTriple (94e76492-73e3-4132-b04a-d6a752dc9b3c)
+ Call ID: 94e76492-73e3-4132-b04a-d6a752dc9b3c
+  Args:
+    target: Prince_Joachim_of_Prussia
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    relation: :hasFather
+  AddTriple (39841fbd-30b2-41de-b4f9-27cf976a27f0)
+ Call ID: 39841fbd-30b2-41de-b4f9-27cf976a27f0
+  Args:
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    target: Princess_Marie-Auguste_of_Anhalt
+    relation: :hasMother
+  AddLiteral (5a2d8fff-c62b-4336-8604-ac5c3fb20346)
+ Call ID: 5a2d8fff-c62b-4336-8604-ac5c3fb20346
+  Args:
     literal_type: xsd:integer
-  AddTriple (33cec21b-0933-4a77-a54f-bcedd3b0dab1)
- Call ID: 33cec21b-0933-4a77-a54f-bcedd3b0dab1
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    literal_value: 1916
+    relation: :hasBirthYear
+  AddLiteral (15c40f19-6e82-4a56-ab0d-d79bc5a0d8b6)
+ Call ID: 15c40f19-6e82-4a56-ab0d-d79bc5a0d8b6
+  Args:
+    literal_type: xsd:integer
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    relation: :hasDeathYear
+    literal_value: 1975
+  AssignClass (b36b32d0-de57-4a95-8d54-dd3e9e366e1b)
+ Call ID: b36b32d0-de57-4a95-8d54-dd3e9e366e1b
+  Args:
+    type: :Man
+    source: Eduard_Duke_of_Anhalt
+  AssignClass (177517ad-65fd-4d26-bf0c-6d0114015db8)
+ Call ID: 177517ad-65fd-4d26-bf0c-6d0114015db8
+  Args:
+    source: Eduard_Duke_of_Anhalt
+    type: :Person
+  AssignClass (5481e6f2-1676-49f0-b161-c9d71fab2cd8)
+ Call ID: 5481e6f2-1676-49f0-b161-c9d71fab2cd8
+  Args:
+    type: :Woman
+    source: Princess_Luise_of_Saxe-Altenburg
+  AssignClass (ddb7ddba-4e5c-4325-9114-ee7783832361)
+ Call ID: ddb7ddba-4e5c-4325-9114-ee7783832361
+  Args:
+    source: Princess_Luise_of_Saxe-Altenburg
+    type: :Person
+  AddTriple (baf732fa-5dad-41f7-995c-6e4be742760d)
+ Call ID: baf732fa-5dad-41f7-995c-6e4be742760d
+  Args:
+    source: Princess_Marie-Auguste_of_Anhalt
+    target: Eduard_Duke_of_Anhalt
+    relation: :hasFather
+  AddTriple (0cbf925a-ec9a-4350-a890-82ec32683a10)
+ Call ID: 0cbf925a-ec9a-4350-a890-82ec32683a10
+  Args:
+    relation: :hasMother
+    target: Princess_Luise_of_Saxe-Altenburg
+    source: Princess_Marie-Auguste_of_Anhalt
+  AssignClass (7d7f6f1a-b375-4fb5-92d4-9c3cb240c917)
+ Call ID: 7d7f6f1a-b375-4fb5-92d4-9c3cb240c917
+  Args:
+    type: :Man
+    source: Prince_Moritz_of_Saxe-Altenburg
+  AssignClass (674257cb-9891-45f0-ab43-09dfaa2cdd6d)
+ Call ID: 674257cb-9891-45f0-ab43-09dfaa2cdd6d
+  Args:
+    source: Prince_Moritz_of_Saxe-Altenburg
+    type: :Person
+  AddTriple (c96ddfec-de47-4dea-a4ff-854bb584144c)
+ Call ID: c96ddfec-de47-4dea-a4ff-854bb584144c
+  Args:
+    source: Princess_Luise_of_Saxe-Altenburg
+    target: Prince_Moritz_of_Saxe-Altenburg
+    relation: :hasFather
+  AssignClass (29d2f848-08b9-484b-9ac3-93cbcd98f94f)
+ Call ID: 29d2f848-08b9-484b-9ac3-93cbcd98f94f
+  Args:
+    type: :Man
+    source: Prince_Franz_Wilhelm
+  AssignClass (29f4b38a-148a-47d5-acc9-4f33965e79ab)
+ Call ID: 29f4b38a-148a-47d5-acc9-4f33965e79ab
+  Args:
+    source: Prince_Franz_Wilhelm
+    type: :Person
+  AssignClass (ead88671-af07-4e54-8d34-019988c2ff36)
+ Call ID: ead88671-af07-4e54-8d34-019988c2ff36
+  Args:
+    source: Maria_Vladimirovna_of_Russia
+    type: :Woman
+  AssignClass (36979dce-dcc9-438b-8d01-829e43792256)
+ Call ID: 36979dce-dcc9-438b-8d01-829e43792256
+  Args:
+    source: Maria_Vladimirovna_of_Russia
+    type: :Person
+  AddTriple (b3c03fe2-1260-47eb-ac5c-5bb5458841f7)
+ Call ID: b3c03fe2-1260-47eb-ac5c-5bb5458841f7
+  Args:
+    source: Prince_Franz_Wilhelm
+    target: Maria_Vladimirovna_of_Russia
+    relation: :hasRelation
+  AssignClass (6d1061a3-f0b5-41c4-bffc-2675d8d33a5e)
+ Call ID: 6d1061a3-f0b5-41c4-bffc-2675d8d33a5e
+  Args:
+    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
+    type: :Woman
+  AssignClass (13f8da8e-3f32-4862-93b8-0036d83f6a93)
+ Call ID: 13f8da8e-3f32-4862-93b8-0036d83f6a93
+  Args:
+    type: :Person
+    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
+  AddTriple (86478422-19bb-4180-88a4-a90561456b17)
+ Call ID: 86478422-19bb-4180-88a4-a90561456b17
+  Args:
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    target: Princess_Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
+    relation: :hasRelation
+  AssignClass (0ed7cdf0-3f79-458a-b8b8-4e21340058b8)
+ Call ID: 0ed7cdf0-3f79-458a-b8b8-4e21340058b8
+  Args:
+    type: :Woman
+    source: Luise_Dora_Hartmann
+  AssignClass (bd7291fe-d88d-4df9-8bed-e0d7203f00a0)
+ Call ID: bd7291fe-d88d-4df9-8bed-e0d7203f00a0
+  Args:
+    source: Luise_Dora_Hartmann
+    type: :Person
+  AddTriple (ed62bca2-873a-4d13-9a08-8fbfe3662f79)
+ Call ID: ed62bca2-873a-4d13-9a08-8fbfe3662f79
+  Args:
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    target: Luise_Dora_Hartmann
+    relation: :hasRelation
+  AssignClass (145e8c18-616f-4add-ad57-7abefc17dd44)
+ Call ID: 145e8c18-616f-4add-ad57-7abefc17dd44
+  Args:
+    source: Eva_Maria_Herrera_y_Valdeavellano
+    type: :Woman
+  AssignClass (560b2385-791d-43fc-a56d-308f03430d69)
+ Call ID: 560b2385-791d-43fc-a56d-308f03430d69
+  Args:
+    type: :Person
+    source: Eva_Maria_Herrera_y_Valdeavellano
+  AddTriple (eae40f62-d153-422b-bee8-6128ea69c5b2)
+ Call ID: eae40f62-d153-422b-bee8-6128ea69c5b2
   Args:
     relation: :hasRelation
-    source: Alessandro_Torlonia
-    target: Beatriz_of_Spain
-  AddLiteral (4406c668-e7fc-4422-a1a2-1a38906d1f42)
- Call ID: 4406c668-e7fc-4422-a1a2-1a38906d1f42
-  Args:
-    source: Beatriz_of_Spain
-    literal_value: 1909
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (72e7fd06-0e6c-4f14-89bd-833353778669)
- Call ID: 72e7fd06-0e6c-4f14-89bd-833353778669
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2002
-    source: Beatriz_of_Spain
-  AddTriple (84469668-26d6-43f9-bcd0-6b2b32e412b7)
- Call ID: 84469668-26d6-43f9-bcd0-6b2b32e412b7
-  Args:
-    source: Beatriz_of_Spain
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-  AddTriple (d1c135b0-77c1-44b1-a655-f5c0ef91af7d)
- Call ID: d1c135b0-77c1-44b1-a655-f5c0ef91af7d
-  Args:
-    target: Victoria_Eugenie_of_Battenberg
-    source: Beatriz_of_Spain
-    relation: :hasMother
-  Finish (1ee9f1d3-d4db-4c83-9dc3-3dcc19b563b1)
- Call ID: 1ee9f1d3-d4db-4c83-9dc3-3dcc19b563b1
+    target: Eva_Maria_Herrera_y_Valdeavellano
+    source: Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+  Finish (662df696-bf00-4c05-86ed-337cb28ced0a)
+ Call ID: 662df696-bf00-4c05-86ed-337cb28ced0a
   Args:

@@ -69,31 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Herzeleide Ina-Marie Sophie Charlotte Else of Prussia (25 December 1918 – 22 March 1989) was a member of the deposed House of Hohenzollern.
-She was the only daughter of Prince Oskar of Prussia (the second youngest son of Emperor Wilhelm II) and his initially morganatic wife, Countess Ina Marie von Bassewitz.
-She is the mother of Ernst-Johann Biron, Prince of Courland, the current head of the House of Biron.
-Biography
+Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin (German: Friedrich Franz Erbgroßherzog von Mecklenburg-Schwerin; 22 April 1910 – 31 July 2001) was the heir apparent to the throne of Mecklenburg-Schwerin and a member of the Waffen-SS.
+Early life
 
-Family and early life
+He was born in Schwerin, the eldest child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife Princess Alexandra of Hanover, a daughter of Crown Prince Ernest Augustus of Hanover (a first-cousin once removed of Queen Victoria) and Princess Thyra of Denmark, the youngest daughter of King Christian IX of Denmark.
+He did not succeed to the throne, as the Grand Duchy was replaced with the Free State of Mecklenburg-Schwerin.
+Upon the promulgation of the Weimar Constitution on 11 August 1919, titles of sovereigns such as emperor/empress, king/queen, grand duke/grand duchess, etc. were abolished.
+He therefore became known as Friedrich Franz Herzog von Mecklenburg-Schwerin (or Friedrich Franz, Duke of Mecklenburg-Schwerin) de facto since the establishment of the Free State of Mecklenburg-Schwerin.
+Post monarchy
 
-Countess Herzeleide-Ina-Marie von Ruppin was born in Bristow, Mecklenburg, on 25 December 1918, shortly after the defeat of the German Empire and the collapse of the monarchy.
-She was consequently given the name Herzeleide, meaning "heart's sorrow".
-She had three brothers: Oscar, Burchard, and Wilhelm-Karl.
-Herzeleide and her brothers became Princess/Prince of Prussia on 21 June 1920 when their parents' morganatic marriage was recognised as dynastic by the deposed Emperor Wilhelm II.
-In early 1938, Herzeleide was one of three bridesmaids at the wedding of the future King Paul of Greece to Frederica of Hanover, her first cousin.
-Marriage and issue
-
-On 15 August 1938 in Potsdam Garrison Church, Herzeleide married Prince Karl Biron von Courland (15 June 1907 – 28 February 1982).
-Karl was the eldest son and heir of Prince Gustav Biron of Courland and Françoise Lévisse de Montigny, daughter of Marquis de Jaucourt.
-Along with the bride and groom's parents, in attendance were the former German Crown Prince Wilhelm and Emperor Wilhelm's consort, Empress Hermine.
-All male guests wore uniforms of the former German army.
-The couple's honeymoon plans included a visit to Doorn to pay respects to Emperor Wilhelm in exile, the bride's paternal grandfather.
+In May 1931 against the will of his father, Friedrich Franz joined the SS and by 1936 he had been promoted to the rank of Hauptsturmführer (Captain).
+In May 1943, a family council was called by the Grand Ducal family and Friedrich Franz was passed over as heir (of the family estates) in favour of his younger brother Duke Christian Louis, who would instead inherit the family property.
+Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter of Walter von Schaper and his wife Baroness Louise von Münchhausen, on 11 June 1941 at Schloß Wiligrad, near the Lake Schwerin.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +104,9 @@ The couple's honeymoon plans included a visit to Doorn to pay respects to Empero
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +121,23 @@ The couple's honeymoon plans included a visit to Doorn to pay respects to Empero
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,222 +429,195 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (292e2763-c35b-47f8-bc4b-cd993fe28374)
- Call ID: 292e2763-c35b-47f8-bc4b-cd993fe28374
+  AssignClass (e1774568-2436-4622-a53c-0d278c16956e)
+ Call ID: e1774568-2436-4622-a53c-0d278c16956e
   Args:
-    source: Herzeleide_of_Prussia
-    type: :Woman
-  AssignClass (4ddcca47-747a-4d98-80c7-d693e0085c5e)
- Call ID: 4ddcca47-747a-4d98-80c7-d693e0085c5e
+    source: Friedrich_Franz
+    type: :Man
+  AssignClass (b66d4964-11e7-45ec-8646-dc6eca8a784a)
+ Call ID: b66d4964-11e7-45ec-8646-dc6eca8a784a
   Args:
+    source: Friedrich_Franz
     type: :Person
-    source: Herzeleide_of_Prussia
-  AddLiteral (96eb8b61-1337-4162-8f0a-49233cf0aaed)
- Call ID: 96eb8b61-1337-4162-8f0a-49233cf0aaed
+  AddLiteral (dfe19095-4405-4c7b-9aa8-2cdd955d99f7)
+ Call ID: dfe19095-4405-4c7b-9aa8-2cdd955d99f7
   Args:
     literal_type: xsd:integer
+    source: Friedrich_Franz
     relation: :hasBirthYear
-    literal_value: 1918
-    source: Herzeleide_of_Prussia
-  AddLiteral (f5750278-d16f-4197-a5fa-bab6ac01b665)
- Call ID: f5750278-d16f-4197-a5fa-bab6ac01b665
+    literal_value: 1910
+  AddLiteral (8e411626-7618-4737-8d19-a14f9b1a06a1)
+ Call ID: 8e411626-7618-4737-8d19-a14f9b1a06a1
   Args:
     literal_type: xsd:integer
-    source: Herzeleide_of_Prussia
-    literal_value: 1989
     relation: :hasDeathYear
-  AssignClass (d1dbe3eb-7f1a-469e-931f-3e1f92b94e11)
- Call ID: d1dbe3eb-7f1a-469e-931f-3e1f92b94e11
+    source: Friedrich_Franz
+    literal_value: 2001
+  AssignClass (c4d9b200-4041-4fb7-b532-53528e5181db)
+ Call ID: c4d9b200-4041-4fb7-b532-53528e5181db
   Args:
+    source: Frederick_Francis_IV
     type: :Man
-    source: Oskar_of_Prussia
-  AssignClass (6d135b24-4af4-44d4-a705-8ff46107be03)
- Call ID: 6d135b24-4af4-44d4-a705-8ff46107be03
+  AssignClass (494a7f7f-c74e-4609-b1c4-d5fb7e4b94fb)
+ Call ID: 494a7f7f-c74e-4609-b1c4-d5fb7e4b94fb
   Args:
-    source: Oskar_of_Prussia
-    type: :Ancestor
-  AssignClass (6492c2e2-1e29-466f-bb69-42e3cdeb070d)
- Call ID: 6492c2e2-1e29-466f-bb69-42e3cdeb070d
-  Args:
+    source: Frederick_Francis_IV
     type: :Person
-    source: Oskar_of_Prussia
-  AddTriple (0b61f204-25eb-4f8f-a802-a551747cf71c)
- Call ID: 0b61f204-25eb-4f8f-a802-a551747cf71c
+  AssignClass (c3664f58-b18a-4172-9c47-2236003ce895)
+ Call ID: c3664f58-b18a-4172-9c47-2236003ce895
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :hasFather
-    target: Oskar_of_Prussia
-  AssignClass (9fb67ba3-84a2-4f59-bd8a-60982a7d7434)
- Call ID: 9fb67ba3-84a2-4f59-bd8a-60982a7d7434
-  Args:
+    source: Alexandra_of_Hanover
     type: :Woman
-    source: Ina_Marie_von_Bassewitz
-  AssignClass (cd941e2c-a9b1-491c-a4ae-43b494b27384)
- Call ID: cd941e2c-a9b1-491c-a4ae-43b494b27384
+  AssignClass (f2e9c2c4-09d3-4884-ad1a-f44a56302275)
+ Call ID: f2e9c2c4-09d3-4884-ad1a-f44a56302275
   Args:
-    source: Ina_Marie_von_Bassewitz
-    type: :Ancestor
-  AssignClass (524ef760-c1fc-4acd-abd4-be4ca5b99abb)
- Call ID: 524ef760-c1fc-4acd-abd4-be4ca5b99abb
-  Args:
-    source: Ina_Marie_von_Bassewitz
+    source: Alexandra_of_Hanover
     type: :Person
-  AddTriple (57552f31-92f6-42d6-9362-2f9fddfb7052)
- Call ID: 57552f31-92f6-42d6-9362-2f9fddfb7052
+  AddTriple (2b298855-f464-49a4-8a90-b81cec2ff34e)
+ Call ID: 2b298855-f464-49a4-8a90-b81cec2ff34e
   Args:
+    target: Frederick_Francis_IV
+    relation: :hasFather
+    source: Friedrich_Franz
+  AddTriple (62574699-a4ec-437a-8fbf-70467cd4f00d)
+ Call ID: 62574699-a4ec-437a-8fbf-70467cd4f00d
+  Args:
+    source: Friedrich_Franz
     relation: :hasMother
-    target: Ina_Marie_von_Bassewitz
-    source: Herzeleide_of_Prussia
-  AssignClass (d43d38f2-b734-4510-90dc-3bc88f96b6ad)
- Call ID: d43d38f2-b734-4510-90dc-3bc88f96b6ad
+    target: Alexandra_of_Hanover
+  AssignClass (47f20c8e-b00b-4d56-bee2-e2415a3e23c9)
+ Call ID: 47f20c8e-b00b-4d56-bee2-e2415a3e23c9
   Args:
+    source: Ernest_Augustus_of_Hanover
     type: :Man
-    source: Ernst-Johann_Biron
-  AssignClass (29eb8432-3296-42f3-84ea-bfdc8ff7c0e5)
- Call ID: 29eb8432-3296-42f3-84ea-bfdc8ff7c0e5
+  AssignClass (96c520ec-f41c-41ab-b586-84d01af413e6)
+ Call ID: 96c520ec-f41c-41ab-b586-84d01af413e6
   Args:
-    source: Ernst-Johann_Biron
+    source: Ernest_Augustus_of_Hanover
     type: :Person
-  AddTriple (3cdbe62e-ed8e-4112-97f1-9e191d8be436)
- Call ID: 3cdbe62e-ed8e-4112-97f1-9e191d8be436
+  AssignClass (36158880-082d-41d3-9bfd-b5f1953a12f3)
+ Call ID: 36158880-082d-41d3-9bfd-b5f1953a12f3
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :isMotherOf
-    target: Ernst-Johann_Biron
-  AssignClass (a8351a11-6bfa-41ab-ae83-3d98ead10d86)
- Call ID: a8351a11-6bfa-41ab-ae83-3d98ead10d86
+    source: Thyra_of_Denmark
+    type: :Woman
+  AssignClass (0078f428-97bb-4fb4-8293-9bd4c917f01f)
+ Call ID: 0078f428-97bb-4fb4-8293-9bd4c917f01f
   Args:
+    source: Thyra_of_Denmark
+    type: :Person
+  AddTriple (f3255a36-9e67-4f3d-a214-32f77eee7d9b)
+ Call ID: f3255a36-9e67-4f3d-a214-32f77eee7d9b
+  Args:
+    source: Alexandra_of_Hanover
+    relation: :hasFather
+    target: Ernest_Augustus_of_Hanover
+  AddTriple (4335c36d-dbb5-422c-a3d0-8901693bb3e2)
+ Call ID: 4335c36d-dbb5-422c-a3d0-8901693bb3e2
+  Args:
+    target: Thyra_of_Denmark
+    source: Alexandra_of_Hanover
+    relation: :hasMother
+  AssignClass (fca05703-24c9-478f-9239-830124c14304)
+ Call ID: fca05703-24c9-478f-9239-830124c14304
+  Args:
+    source: Christian_IX_of_Denmark
     type: :Man
-    source: Oscar_brother
-  AssignClass (23e1afd4-991e-416b-a986-320ea67aaf47)
- Call ID: 23e1afd4-991e-416b-a986-320ea67aaf47
+  AssignClass (d9192ace-63c4-4b04-a494-14095b507fa2)
+ Call ID: d9192ace-63c4-4b04-a494-14095b507fa2
   Args:
+    source: Christian_IX_of_Denmark
     type: :Person
-    source: Oscar_brother
-  AddTriple (ac67bd56-5660-4fd1-9f10-fa80dfca8c10)
- Call ID: ac67bd56-5660-4fd1-9f10-fa80dfca8c10
+  AddTriple (9495a3e1-a04c-408a-8614-37a51d8bf163)
+ Call ID: 9495a3e1-a04c-408a-8614-37a51d8bf163
   Args:
-    relation: :hasBrother
-    target: Oscar_brother
-    source: Herzeleide_of_Prussia
-  AssignClass (014c69e8-5615-480f-800e-9cf7badfed7e)
- Call ID: 014c69e8-5615-480f-800e-9cf7badfed7e
+    source: Thyra_of_Denmark
+    relation: :hasFather
+    target: Christian_IX_of_Denmark
+  AssignClass (2d338cfd-3ed0-44cf-b94e-0a0df6a4f6e6)
+ Call ID: 2d338cfd-3ed0-44cf-b94e-0a0df6a4f6e6
   Args:
+    source: Christian_Louis
     type: :Man
-    source: Burchard
-  AssignClass (e8110310-3915-4390-ac01-8d7c943efa27)
- Call ID: e8110310-3915-4390-ac01-8d7c943efa27
+  AssignClass (34f12f92-dd73-4899-9eb9-75dc88db2799)
+ Call ID: 34f12f92-dd73-4899-9eb9-75dc88db2799
   Args:
-    source: Burchard
+    source: Christian_Louis
     type: :Person
-  AddTriple (200882ab-a0aa-433d-a2b0-c95e63062daa)
- Call ID: 200882ab-a0aa-433d-a2b0-c95e63062daa
+  AddTriple (dfd2c938-c94f-45be-b920-cb49d9eebb58)
+ Call ID: dfd2c938-c94f-45be-b920-cb49d9eebb58
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :hasBrother
-    target: Burchard
-  AssignClass (72cd0f8b-ff13-42bb-a2c7-a1ce8a88b758)
- Call ID: 72cd0f8b-ff13-42bb-a2c7-a1ce8a88b758
+    target: Friedrich_Franz
+    source: Christian_Louis
+    relation: :isBrotherOf
+  AssignClass (7cc27962-232b-498b-b1c8-d392a377a5d9)
+ Call ID: 7cc27962-232b-498b-b1c8-d392a377a5d9
   Args:
-    type: :Man
-    source: Wilhelm-Karl
-  AssignClass (514ad4fc-a3b6-4f84-9e74-588a039081d2)
- Call ID: 514ad4fc-a3b6-4f84-9e74-588a039081d2
+    source: Karin_Elisabeth_von_Schaper
+    type: :Woman
+  AssignClass (d8ef0cee-612d-43cf-b792-58fd195014a1)
+ Call ID: d8ef0cee-612d-43cf-b792-58fd195014a1
   Args:
-    source: Wilhelm-Karl
+    source: Karin_Elisabeth_von_Schaper
     type: :Person
-  AddTriple (14469035-0747-4c3c-9b2d-a861caadd678)
- Call ID: 14469035-0747-4c3c-9b2d-a861caadd678
+  AddLiteral (56bdf104-f5b7-419b-bbd2-bd1b74f122f0)
+ Call ID: 56bdf104-f5b7-419b-bbd2-bd1b74f122f0
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :hasBrother
-    target: Wilhelm-Karl
-  AssignClass (b09999a5-9fa2-42f3-a0af-23c28938c72c)
- Call ID: b09999a5-9fa2-42f3-a0af-23c28938c72c
-  Args:
-    source: Karl_Biron_von_Courland
-    type: :Man
-  AssignClass (f73d2b60-af18-45f4-a9b8-c1fc3997331a)
- Call ID: f73d2b60-af18-45f4-a9b8-c1fc3997331a
-  Args:
-    type: :Person
-    source: Karl_Biron_von_Courland
-  AddLiteral (8becd6a8-b6a3-4ff2-8cdb-dcbaf3545b45)
- Call ID: 8becd6a8-b6a3-4ff2-8cdb-dcbaf3545b45
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1938
-    source: Herzeleide_of_Prussia
+    relation: :hasBirthYear
+    source: Karin_Elisabeth_von_Schaper
     literal_type: xsd:integer
-  AddTriple (993c27c8-f2bc-4a40-84da-985ee2dbbe3c)
- Call ID: 993c27c8-f2bc-4a40-84da-985ee2dbbe3c
+    literal_value: 1920
+  AddLiteral (19a70124-d3a4-4e13-a817-413e8016a28c)
+ Call ID: 19a70124-d3a4-4e13-a817-413e8016a28c
   Args:
-    source: Herzeleide_of_Prussia
+    literal_type: xsd:integer
+    source: Karin_Elisabeth_von_Schaper
+    relation: :hasDeathYear
+    literal_value: 2012
+  AddLiteral (00e7f32a-2852-46e2-a5b2-2d8d93850128)
+ Call ID: 00e7f32a-2852-46e2-a5b2-2d8d93850128
+  Args:
+    literal_type: xsd:integer
+    source: Friedrich_Franz
+    relation: :hasMarriageYear
+    literal_value: 1941
+  AddTriple (a5934882-9f64-477a-9f4a-7988a928b598)
+ Call ID: a5934882-9f64-477a-9f4a-7988a928b598
+  Args:
+    target: Karin_Elisabeth_von_Schaper
+    source: Friedrich_Franz
     relation: :hasRelation
-    target: Karl_Biron_von_Courland
-  AssignClass (fdac4b1d-2c61-44dd-87a8-a1af179a3f07)
- Call ID: fdac4b1d-2c61-44dd-87a8-a1af179a3f07
+  AssignClass (c6d5e4ec-857c-4aeb-b4e7-4c6143e90034)
+ Call ID: c6d5e4ec-857c-4aeb-b4e7-4c6143e90034
   Args:
+    source: Walter_von_Schaper
     type: :Man
-    source: Gustav_Biron_of_Courland
-  AssignClass (5376201a-cc5d-4aa8-9d94-1c1a36b5fa97)
- Call ID: 5376201a-cc5d-4aa8-9d94-1c1a36b5fa97
+  AssignClass (5ca223bb-d5db-47dc-b66a-2ddeb2574ada)
+ Call ID: 5ca223bb-d5db-47dc-b66a-2ddeb2574ada
   Args:
-    type: :Ancestor
-    source: Gustav_Biron_of_Courland
-  AssignClass (bc67e563-2d13-48a7-a0e2-69d06f735886)
- Call ID: bc67e563-2d13-48a7-a0e2-69d06f735886
-  Args:
+    source: Walter_von_Schaper
     type: :Person
-    source: Gustav_Biron_of_Courland
-  AddTriple (061b4cd1-36f8-432b-a364-086fb5ed267a)
- Call ID: 061b4cd1-36f8-432b-a364-086fb5ed267a
+  AssignClass (d1530145-4055-4a1d-8d87-6a4f3c12492d)
+ Call ID: d1530145-4055-4a1d-8d87-6a4f3c12492d
   Args:
-    source: Karl_Biron_von_Courland
-    target: Gustav_Biron_of_Courland
-    relation: :hasFather
-  AssignClass (3ea9403d-37ce-4ad7-b164-e577e7e33fb8)
- Call ID: 3ea9403d-37ce-4ad7-b164-e577e7e33fb8
-  Args:
+    source: Louise_von_Münchhausen
     type: :Woman
-    source: Francoise_Levisse_de_Montigny
-  AssignClass (d18815e0-d6c4-42c3-a1f9-9d5d8a8118e8)
- Call ID: d18815e0-d6c4-42c3-a1f9-9d5d8a8118e8
+  AssignClass (631439c5-00fc-454f-a828-cbbfb41f855b)
+ Call ID: 631439c5-00fc-454f-a828-cbbfb41f855b
   Args:
-    type: :Ancestor
-    source: Francoise_Levisse_de_Montigny
-  AssignClass (fc3d7579-f683-4ecb-b563-2739f56bb775)
- Call ID: fc3d7579-f683-4ecb-b563-2739f56bb775
-  Args:
+    source: Louise_von_Münchhausen
     type: :Person
-    source: Francoise_Levisse_de_Montigny
-  AddTriple (9177f64e-7c0d-4e06-9dfa-d91910d3ae67)
- Call ID: 9177f64e-7c0d-4e06-9dfa-d91910d3ae67
+  AddTriple (92960703-35bd-4c74-b899-ee6a042f7006)
+ Call ID: 92960703-35bd-4c74-b899-ee6a042f7006
   Args:
-    source: Karl_Biron_von_Courland
-    target: Francoise_Levisse_de_Montigny
-    relation: :hasMother
-  AssignClass (8682a7f0-bcfc-4770-9ec6-d7fd14ead9c0)
- Call ID: 8682a7f0-bcfc-4770-9ec6-d7fd14ead9c0
-  Args:
-    type: :Man
-    source: Wilhelm_II
-  AssignClass (0227ec4b-6e7a-4bcb-b49b-d4f269288239)
- Call ID: 0227ec4b-6e7a-4bcb-b49b-d4f269288239
-  Args:
-    type: :Ancestor
-    source: Wilhelm_II
-  AssignClass (338ad53f-29ae-4330-9381-10f2f87a9283)
- Call ID: 338ad53f-29ae-4330-9381-10f2f87a9283
-  Args:
-    source: Wilhelm_II
-    type: :Person
-  AddTriple (fa78ead6-0bb4-40a6-a782-8ccbaf98e276)
- Call ID: fa78ead6-0bb4-40a6-a782-8ccbaf98e276
-  Args:
-    source: Oskar_of_Prussia
-    target: Wilhelm_II
     relation: :hasFather
-  Finish (38995ec0-e59d-4d4c-a66a-f66133cd7a96)
- Call ID: 38995ec0-e59d-4d4c-a66a-f66133cd7a96
+    source: Karin_Elisabeth_von_Schaper
+    target: Walter_von_Schaper
+  AddTriple (c5078143-6320-47b7-a6d5-14c6015282e1)
+ Call ID: c5078143-6320-47b7-a6d5-14c6015282e1
+  Args:
+    target: Louise_von_Münchhausen
+    source: Karin_Elisabeth_von_Schaper
+    relation: :hasMother
+  Finish (fc2ed560-7058-4963-b31f-95edc7b2fb45)
+ Call ID: fc2ed560-7058-4963-b31f-95edc7b2fb45
   Args:

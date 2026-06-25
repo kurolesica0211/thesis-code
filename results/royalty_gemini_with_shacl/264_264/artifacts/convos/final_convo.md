@@ -85,268 +85,49 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-William, Prince of Wales (William Arthur Philip Louis; born 21 June 1982), is the heir apparent to the British throne.
-He is the elder son of King Charles III and Diana, Princess of Wales.
-William was born during the reign of his paternal grandmother, Queen Elizabeth II.
-He earned a Master of Arts degree in geography at the University of St Andrews, where he met his future wife, Catherine Middleton.
-After university, William trained at the Royal Military Academy Sandhurst before serving with the Blues and Royals.
-William performs official duties and engagements on behalf of the monarch.
-He is patron of multiple charitable and military organisations, including the Tusk Trust, Centrepoint, The Passage, Wales Air Ambulance, and London's Air Ambulance Charity.
-William was made Duke of Cambridge immediately before his wedding in April 2011.
-The following day, he was made Prince of Wales.
-Early life
-
-William was born at 9:03 pm on 21 June 1982 at St Mary's Hospital, London, during the reign of his paternal grandmother, Queen Elizabeth II.
-He was the first child of Charles, Prince of Wales (later King Charles III), and his first wife, Diana, Princess of Wales.
-Buckingham Palace announced his name – William Arthur Philip Louis – on 28 June.
-He was christened in the Music Room at Buckingham Palace by the then Archbishop of Canterbury, Robert Runcie, on 4 August, which also marked the 82nd birthday of his paternal great-grandmother, Queen Elizabeth the Queen Mother.
-William was the first child born to a Prince and Princess of Wales since Prince John was born to Prince George and Princess Mary (later King George V and Queen Mary) in July 1905.
-When he was nine months old, William accompanied his parents on their 1983 tour of Australia and New Zealand, marking his first trip overseas.
-It was also the first time that a royal baby had been taken on an overseas tour.
-Family photographs of William and his parents on the grounds of Government House in Auckland received significant global coverage.
-They have been credited as a major reason for the Buzzy Bee toy, which William had been playing with, becoming a New Zealand cultural icon.
-His younger brother, Prince Harry, was born in September 1984.
-Known informally as "Wills" within his family, William was nicknamed "Willy" by his brother and "Wombat" by his mother.
-Diana sought to give her sons broader and more typical life experiences beyond a royal upbringing, taking them to Walt Disney World, McDonald's, AIDS clinics, and shelters for the homeless.
-According to the biographer, Robert Lacey, William –  described as a "rambunctious" and "bratty" child – became "more reflective", with a "noticeably quiet character", after he began boarding school.
-Diana was reported to have described him as "my little wise old man", and by his early teens she had begun to rely on him as a confidant.
-William carried out his first public engagement while accompanying his parents on a visit to Llandaff on Saint David's Day in 1991.
-He and Harry travelled to Canada on an official visit with their parents in 1991, and again with Charles in 1998.
-William's parents divorced in 1996.
-Diana died in a car accident in the early hours of 31 August 1997.
-William, then aged 15, was staying at Balmoral Castle with his 12-year-old brother, his father, and his grandparents at the time.
-The following morning, Charles informed William and Harry of their mother's death.
-William was reportedly uncertain about whether he should walk behind his mother's coffin during the funeral procession.
-His grandfather, Prince Philip, Duke of Edinburgh, told him: "If you don't walk, I think you'll regret it later.
-At the funeral, William and Harry walked alongside their father, grandfather, and maternal uncle, Charles Spencer, 9th Earl Spencer, behind the funeral cortège from Kensington Palace to Westminster Abbey.
-After his mother's death, William stated that he had been "in a state of shock for many years".
-He and Harry inherited the majority of the £12.9 million left by their mother on their respective 30th birthdays, a figure that had grown to £10 million each by 2014.
-They also received the original lyrics and score of "Candle in the Wind" by Bernie Taupin and Elton John, as performed by the latter at Diana's funeral.
-In 2002, The Times reported that William and Harry would also share £4.9 million from trust funds established by their great-grandmother, the Queen Mother on their respective 21st birthdays, as well as £8 million upon their respective 40th birthdays.
-Education
-
-William was educated at private schools.
-The decision to send William to Eton broke with royal tradition, as his father and grandfather had both attended Gordonstoun.
-The royal family and the press agreed that William would be allowed to study free from media intrusion in exchange for periodic official updates.
-In June 1991, he was admitted to the Royal Berkshire Hospital after being accidentally hit on the forehead by a fellow pupil wielding a golf club.
-After leaving Eton, William took a gap year.
-In 2001, William enrolled at the University of St Andrews in Scotland.
-Early appointments and duties
-
-At the age of 21, William became a Counsellor of State.
-In 2009, the Queen established a private office for William and Harry, with David Manning as their adviser.
-Manning accompanied William on his first official tour in January 2010, during which he visited Auckland and Wellington.
-In March 2011, William visited Christchurch shortly after the earthquake, speaking at the memorial service in Hagley Park on behalf of his grandmother.
-Before attending Sandhurst, William did a three-week internship at several institutions, including the Bank of England, the London Stock Exchange, and Lloyd's of London.
-In April 2019, Kensington Palace announced that William had completed a three-week internship at MI5, MI6, and GCHQ, during which he monitored extreme Islamist terror cells, identified potential threats abroad, and observed code‐breaking technology.
-Military and air ambulance service
-
-Having decided on a military career, William was admitted to the Royal Military Academy Sandhurst in January 2006.
-As "Lieutenant Wales" – a name derived from his father's then title, Prince of Wales – he followed his brother into the Blues and Royals in December that year as a second lieutenant, after which he spent five months training for the post at Bovington Camp in Dorset.
-Although the Queen approved William serving on the frontline, his position as second‐in‐line to the throne at the time raised doubts about whether he could be deployed to combat.
-William instead trained with the Royal Navy and the Royal Air Force, obtaining his commission as a sub-lieutenant in the former and a flying officer in the latter, both broadly equivalent to the army rank of lieutenant.
-After completing his training, he undertook an attachment with the Royal Air Force at RAF Cranwell.
-During this secondment, William flew to Afghanistan in a C-17 Globemaster that repatriated the body of Trooper Robert Pearson.
-He was then seconded to train with the Royal Navy, completing an accelerated Naval Officer training course at the Britannia Royal Naval College.
-Whilst serving on HMS Iron Duke in July 2008, William participated in a £40m drug seizure in the Atlantic, north-east of Barbados.
-As part of his training across all branches of the military in 2008 and 2009, William spent up to six weeks with the Special Air Service, the Special Boat Service, and the Special Reconnaissance Regiment.
-This made him the first member of the British royal family since Henry VII to live in Wales.
-William's first rescue mission as co-pilot of an RAF Sea King came in October 2010, responding to an emergency call from Liverpool Coastguard.
-In July 2015, William began working full-time as a pilot with the East Anglian Air Ambulance (EAAA), based at Cambridge Airport, which he described as a natural progression from his previous search‐and‐rescue role.
-William spoke about working irregular shifts and dealing largely with critical-care cases, and later discussed the impact of witnessing trauma and bereavement on his mental health and personal life.
-The BBC wrote that he had been "exposed to the National Health Service in a way that no other senior royal has been or possibly ever will be.
-"
+Princess Beatrix*
 
 
-William left his position with EAAA in July 2017 to assume full-time royal duties.
-In February 2023, he became patron of the Wales Air Ambulance charity.
-Personal life
-
-Relationship with Catherine Middleton
-
-In 2001, William met Catherine Middleton, while they were students in residence at St Salvator's Hall at the University of St Andrews, and they became close friends.
-She reportedly caught William's attention at a charity fashion show at the university in 2002.
-During their second year, William shared a flat with Middleton and two other friends.
-They also began staying at a cottage on the Balmoral estate known as Tam-Na-Ghar, which had been given to William by the Queen Mother shortly before her death.
-Media attention became so intense that William asked the press to keep their distance from Middleton.
-In December 2006, Middleton and her family attended William's passing-out parade at the Royal Military Academy Sandhurst.
-In April 2007, William and Middleton were reported to have separated.
-Middleton and her family attended the Concert for Diana three months later; the couple were subsequently reported to have "rekindled their relationship".
-She also attended the Order of the Garter procession at Windsor Castle in June 2008, where William was made a Royal Knight of the Garter.
-In June 2010, the couple moved into a cottage on the Bodorgan Estate in Anglesey, Wales, where they lived until 2014.
-Marriage and children
-
-The couple became engaged in October 2010 at a remote alpine cabin on Mount Kenya during a 10-day trip to the Lewa Wildlife Conservancy to celebrate William's completion of the RAF helicopter search-and-rescue course.
-William gave his fiancée his mother's engagement ring.
-William and Catherine have three children: Prince George, born in July 2013; Princess Charlotte, born in May 2015; and Prince Louis, born in April 2018; all three were born at St Mary's Hospital in London.
-William and Catherine used Nottingham Cottage as their London residence until 2013, when £4.5 million renovations completed at Apartment 1A at Kensington Palace, which remains their official residence in the capital.
-Duke of Cambridge
-
-William was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus on the day of his wedding in April 2011.
-He and Catherine toured Canada that summer.
-In September 2013, William and Catherine visited Singapore, Malaysia, Tuvalu, and the Solomon Islands as part of the Queen's Diamond Jubilee celebrations.
-William hosted his first investiture ceremony at Buckingham Palace in October that year.
-In April 2014, he and Catherine undertook a royal tour of New Zealand and Australia, accompanied by their son George.
-In August that year, the couple, along with Harry, represented the royal family at World War I commemorations in Belgium.
-In December, the couple visited New York and Washington DC, where William delivered a speech at the World Bank condemning the illegal wildlife trade.
-In 2015 and 2016, William embarked on visits to several Asian countries, including Japan, China, Bhutan, and India; he was the first royal to visit mainland China in almost three decades, with the press describing his diplomacy as "deft" and "polished".
-Countries visited by William and Catherine in 2017 included France, Poland, Germany, and Belgium.
-In June 2018, William toured Jordan, Israel, and Palestine.
-William and Catherine toured Pakistan in October 2019, marking the royal family's first visit to the country in 13 years.
-In November 2020, it was reported that William had tested positive for COVID‐19 in April but had chosen not to alert the media to "avoid alarming the nation".
-In December that year, the couple embarked on a tour of England, Scotland, and Wales via the British Royal Train "to pay tribute to the inspiring work" of communities and charities in 2020.
-In his capacity as Lord High Commissioner to the General Assembly of the Church of Scotland, William toured the country with Catherine in May 2021.
-At the unveiling of the National Windrush Monument in London, William described the tour as "an opportunity to reflect" and condemned the racism experienced by members of the Windrush generation and British minorities in 2022.
-In May 2022, he attended the State Opening of Parliament for the first time as a counsellor of state, where his father delivered the Queen's Speech on behalf of Elizabeth II.
-Prince of Wales
-
-Queen Elizabeth II died on 8 September 2022, and William's father succeeded as King Charles III.
-William, now heir apparent, was created Prince of Wales by his father on 9 September.
-Controversy surrounding the title became a topic of public debate in Wales.
-As the eldest son of the British monarch, William inherited the Duchy of Cornwall, a £1.3 billion private estate established in 1337 to provide an income for the monarch's eldest son.
-The duchy paid him £23.6 million in his first full year as Duke of Cornwall.
-William and Catherine visited Anglesey and Swansea on 27 September 2022, marking their first visit to Wales since becoming Prince and Princess of Wales.
-In February 2023, they visited Falmouth, their first visit to the region since becoming Duke and Duchess of Cornwall.
-In October 2023, William and Catherine condemned the October 7 attacks on Israel.
-In February 2024, William visited the British Red Cross headquarters, met aid workers assisting civilians in the Gaza–Israel conflict, and issued a government-approved call to end the fighting.
-In December 2024, William attended the official reopening of the Notre-Dame cathedral in Paris, where he greeted the president-elect of the United States, Donald Trump, and later held a private meeting with him to discuss UK-US relations.
-In April 2025, William attended the funeral of Pope Francis on behalf of his father.
-On 6 November that year, William attended the 2025 United Nations Climate Change Conference in Belém in place of Charles III; The Daily Telegraph described his address as "his highest-profile speech to date".
-Charity work
-
-William became aware of HIV/AIDS in the mid-1990s when he accompanied his mother and brother on visits to shelters and clinics for patients.
-In January 2005, he and Harry volunteered at a British Red Cross aid distribution centre to pack emergency supplies for countries affected by the 2004 Boxing Day tsunami.
-That December, William spent two weeks in North Wales with Mountain Rescue England and Wales (MREW).
-In May 2007, he became patron of MREW and president of the Royal Marsden Hospital, the latter a role previously held by his mother.
-In January 2025, William was announced as the hospital's joint royal patron alongside Catherine.
-In July 2007, William and Harry organised the Concert for Diana in memory of their mother, benefitting the charities and patronages of Diana, William, and Harry.
-In 2010, William became a patron of 100 Women in Hedge Funds' philanthropic initiatives for the following three years.
-BAFTA has since established the Prince William BAFTA Bursary to support junior creatives in the UK with costs needed to progress in film, television, or games.
-In March 2011, he and Catherine set up a gift fund through The Foundation of Prince William and Prince Harry to allow well‐wishers to donate to charities supporting the armed forces, children, the elderly, art, sport, and conservation in lieu of wedding gifts.
-The foundation was renamed The Royal Foundation of The Prince and Princess of Wales in September 2022.
-In 2011 and 2015, William served as patron of British Army officer Henry Worsley's second and third expeditions to the South Pole, the latter raising money for the Endeavour Fund.
-Humanitarian causes
-
-In March 2020, William appeared in a video for the National Emergencies Trust, launching a fundraising appeal to support charities during the COVID‐19 pandemic.
-In December 2020, William and Catherine became joint patrons of NHS Charities Together.
-In March 2022, amid the Russian invasion of Ukraine, William and Catherine made a donation to support refugees.
-In July 2023, William became patron of the appeal to launch The Fleming Centre, aimed at driving a global movement to tackle antimicrobial resistance.
-In July 2024, he and Catherine made donations to support victims of Hurricane Beryl.
-In January 2025, William was announced as patron of the College of Paramedics.
-Conservation
-
-William became patron of the Tusk Trust in December 2005, a charity that works to conserve wildlife and support community development across Africa.
-In 2013, he succeeded his grandfather, the Duke of Edinburgh, as president of Fields in Trust and transitioned into the role of patron in 2024.
-In 2014, Jane Goodall stated that William had expressed the view that all ivory in the royal collection should be destroyed.
-William has occasionally commented on the effects of overpopulation on African wildlife, though his remarks have been criticised for not addressing resource consumption and population density.
-After two years of research, William launched the Earthshot Prize in October 2020, designed to provide funding and incentives for environmental solutions over the following decade.
-He also appeared in an ITV documentary, Prince William: A Planet For Us All, discussing environmental issues.
-In 2021, William made a private donation to the Thin Green Line Foundation, which provides grants to the families of conservation rangers killed while protecting wildlife.
-William has advocated stricter penalties for poachers and wildlife traffickers, having spoken at the Illegal Wildlife Trade Conference in 2018 and supported a 2022 US court sentencing of a man responsible for trafficking rhinoceros horns and elephant ivory.
-LGBT rights
-
-William has spoken in support LGBT rights as part of his work against cyberbullying, emphasising the importance of being "proud of the person you are" and highlighting the effects of online abuse and discrimination.
-In 2016, he appeared in the July issue of Attitude, becoming the first member of the royal family to feature on the cover of a gay magazine.
-In June 2023, William hosted a Pride Month discussion with mental‐health charity volunteers at Royal Vauxhall Tavern.
-Mental health
-
-Since 2009, William has been patron of Child Bereavement UK, which supports children and families who have lost a loved one.
-In 2016, the Royal Foundation launched several mental‐health initiatives, including Heads Together, a campaign led by William, Catherine, and Harry to de‐stigmatise mental health.
-Later that month, William and Catherine, together with Harry and his wife  Meghan, launched Shout, the United Kingdom's first 24/7 text-messaging service for people experiencing mental‐health crises.
-William later volunteered on the crisis helpline during the COVID-19 lockdowns.
-He attributes his interest in mental health to his experiences as an air‐ambulance pilot, his work with the homeless, veterans' welfare, and Catherine's anti‐addiction advocacy.
-In March 2020, William and Catherine began supporting a new mental‐health initiative by Public Health England during the COVID‐19 pandemic.
-In September 2020, William established the Emergency Responders Senior Leaders Board, commissioned by the Royal Foundation to research the mental health and wellbeing of emergency responders, in partnership with King's College London and the Open University.
-In May 2021 and 2022, William and Catherine voiced the Mental Health Minute message, broadcast on every UK radio station, encouraging people to support those experiencing loneliness.
-In September 2023, William unveiled two organisations partnering with the Duchy of Cornwall to improve mental wellbeing and provide mental‐health services for its tenants.
-In October 2023, to mark World Mental Health Day, he and Catherine took part in a youth forum in Birmingham, Exploring our Emotional Worlds, alongside BBC Radio 1 and the charity The Mix.
-In December 2024, he and Catherine jointly funded a pilot scheme with Norfolk and Waveney Mind to support rural and farming communities on the Sandringham estate.
-In March 2025, William was announced as patron of We Are Farming Minds.
-Homelessness
-
-In September 2005, William became patron of Centrepoint, a charity assisting homeless young people.
-William has been patron of The Passage since 2019, having first visited the centre in 1993 with his mother.
-In June 2023, William launched Homewards after two years of development, aiming to end homelessness in the United Kingdom.
-The five‐year initiative focuses on six pilot locations, each receiving initial seed funding from the Royal Foundation and working with private‐sector and grassroots charity partners.
-In February 2024, William, in partnership with the Cornish charity St Petrocs, announced plans to build 24 homes on Duchy of Cornwall land in Nansledan to provide temporary accommodation for people experiencing homelessness.
-Sport
-
-William often plays polo to raise money for charity.
-He became president of England's Football Association (FA) in May 2006 and vice-royal patron of the Welsh Rugby Union (WRU) in February 2007, supporting the Queen as patron.
-That same year, the WRU's decision to name the Prince William Cup drew criticism from those who believed it would have been more appropriate to name it after Ray Gravell.
-William became patron of the WRU and the FA in 2016 and 2024, respectively.
-In December 2010, William, alongside David Cameron, attended a meeting with FIFA vice-president Chung Mong-joon, during which Chung suggested a vote‐trading deal for England's 2018 World Cup bid.
-In 2011, William, as president of the FA, voted against Australia's 2022 FIFA bid and instead supported South Korea, despite being Australia's future heir.
-In February 2021, following an investigation into racist abuse directed at Marcus Rashford, William released a statement as FA president denouncing "racist abuse... whether on the pitch, in the stands, or on social media" as "despicable" adding that "we all have a responsibility" to create an environment of tolerance and accountability.
-In May 2007, William became patron of the English Schools' Swimming Association.
-In 2012, alongside Catherine and Harry, he launched Coach Core, a programme established after the 2012 Olympics to provide apprenticeship opportunities for aspiring professional coaches.
-In May 2020, he appeared in the BBC One Documentary Football, Prince William and Our Mental Health, part of a campaign encouraging men to discuss mental‐health issues using football as a shared medium.
-Both William and Harry are enthusiastic motorcyclists; William has owned a Ducati 1198 S Corse.
-In May 2014, William, like his father and grandfather, became president of the British Sub-Aqua Club (BSAC).
-In November 2022, William was criticised by Welsh football supporters and Welsh actor Michael Sheen for holding the Prince of Wales title while maintaining affiliations with the England national football team, particularly after he presented jerseys to the squad ahead of the 2022 FIFA World Cup, in which both Wales and England were placed in the same Group B. William commented that he had supported the England football team from a very young age but happily supported Welsh rugby union – of which he is patron – over England.
-Public image
-
-William has been one of the most popular members of the British royal family since his birth.
-Ruth La Ferla of The New York Times contrasted William's "refined" and "polite" appeal with Leonardo DiCaprio's "bad-boy" popularity.
-Following his marriage, William's public image assumed a more "staid" and fatherly demeanour, having "settled into a stable domestic order".
-Anne McElvoy has described William's public personality as a "genial presence" with a "tougher side", combined with elements of his mother's "inimitable style".
-Much of his royal work focuses on "big bet" projects, rather than "plaques and patronages".
-In a 2016 interview, William said his aim was to keep the royal family relevant over the next 20 years.
-William and Catherine's close partnership has been described by The Times as a "good double act", with both valuing normality, privacy, and control.
-In 2011, Time magazine listed him as one of the most influential people in the world alongside his then-newlywed wife Catherine.
-He was found to be the most popular member of the royal family by YouGov in December 2022 and September 2023, and as the second most popular in April 2024.
-In December 2024, The Daily Telegraph included William in its annual list of best-dressed celebrities.
-In 2025, he was listed alongside Catherine on the inaugural Time 100 Philanthropy list; that year, the couple also topped Tatler's social power index.
-Privacy and the media
-
-The death of Diana, Princess of Wales, while being chased by the paparazzi in 1997, has shaped William and Catherine's cautious approach to the media.
-In 2005, William spoke with ITV reporter Tom Bradby and concluded that it was likely their voicemails were being accessed.
-An investigation led by Deputy Assistant Commissioner Peter Clarke found that the compromised voicemail accounts belonged to William's aides, including Jamie Lowther-Pinkerton, rather than the prince himself.
-However, Clive Goodman later stated that he had hacked William's phone on 35 occasions.
-Andy Coulson, editor of News of the World from 2003 to 2007, apologised to William and his brother for invading their privacy, accepting "ultimate responsibility" for Goodman's actions.
-William later sued News Group Newspapers, publisher of News of the World and The Sun, resulting in an out-of-court settlement in 2020.
-He and Harry initially brought a private claim through mutual solicitors, though Harry later pursued his case separately with new representation.
-At the time of Middleton's 25th birthday in January 2007, William issued a statement saying that the level of media intrusion had become intolerable.
-In April 2009, William's lawyers secured an apology from the Daily Star over a false claim that he had "wrecked" a $2 million training aircraft.
-In September 2012, the French edition of Closer and the Italian magazine Chi published topless photos of Catherine sunbathing at Château d'Autet.
-William and Catherine filed both a criminal complaint and a civil suit in Nanterre.
-In October 2014, Catherine and William issued a legal warning to a freelance photographer for "harassing and following" their son George and his nanny.
-In August 2015, Kensington Palace released a letter describing the media's "dangerous" attempts to photograph George and Charlotte.
-In November 2016, William issued a statement supporting Harry and his girlfriend, Meghan Markle, following their complaints about press intrusion.
-During a visit to the BBC studios in central London in November 2018, William criticised social‐media companies for failing to address misinformation and for their role in fuelling social problems.
-In June 2022, a three‐minute video of William confronting paparazzi photographer Terry Harris was posted on Harris's YouTube channel.
-Recorded in January 2021, it shows William objecting as Harris attempted to film his family during a bike ride near Anmer Hall.
-In October 2025, Harry named William and Catherine in his court case against Associated Newspapers, alleging that private investigators had been employed to gather information about them, including a payment for details of William's 21st-birthday party in 2003.
-Later that month, William and Catherine won a privacy case in France against Paris Match over unauthorised photos during a family ski trip in the Alps.
+Princess Margriet*Pieter van Vollenhoven*
 
 
-Titles, styles, and honours
+Prince Constantijn of the Netherlands (Constantijn Christof Frederik Aschwin; born 11 October 1969) is the third and youngest son of the former Dutch queen, Beatrix, and her husband, Claus von Amsberg, and is the younger brother of the reigning Dutch king, Willem-Alexander.
+Life and career
 
-Titles and styles
+Prince Constantijn was born on 11 October 1969 at  Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht following the births of his brothers, Willem-Alexander (b. 1967), and Johan Friso (1968–2013).
+His godparents are former King Constantine II of Greece (1940–2023), Prince Aschwin of Lippe-Biesterfeld, Axel Freiherr von dem Bussche-Streithorst, Max Kohnstamm, and Corinne de Beaufort-Sickinghe.
+Prince Constantijn studied law at Leiden University, becoming a lawyer, and then worked at the Brussels department of the (Dutch) European Union commissioner of foreign relations, Hans van den Broek.
+Furthermore, he has a part-time position at the Netherlands Ministry of Foreign Affairs in The Hague.
+Prince Constantijn rarely attends public events in his capacity as a member of the Dutch royal family.
+Marriage and family
 
-William has been a British prince since birth and was known as "His Royal Highness Prince William of Wales" until April 2011.
-He was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus by Elizabeth II on the day of his wedding.
-As the eldest son of the monarch, William automatically became Duke of Cornwall, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles, and Prince and Great Steward of Scotland upon his father's accession on 8 September 2022.
-From 8 to 9 September, he was styled "His Royal Highness the Duke of Cornwall and Cambridge".
-On 9 September, Charles announced William's creation as Prince of Wales, the traditional title for the male heir apparent to the British monarch.
-William has since been known as "His Royal Highness the Prince of Wales", except in Scotland, where he is styled "His Royal Highness the Duke of Rothesay" instead.
-Honours
+The engagement of Prince Constantijn and Petra Laurentien Brinkhorst was announced on 16 December 2000.
+Prince Constantijn and Princess Laurentien have three children: Eloise (b. 2002), Claus-Casimir (b. 2004), and Leonore (b. 2006).
+Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although they continue to be members of the royal family and remain in the line of succession.
+Honours and arms
 
-William is a Royal Knight Companion of the Most Noble Order of the Garter (KG), an Extra Knight of the Most Ancient and Most Noble Order of the Thistle (KT), Great Master of the Most Honourable Order of the Bath (GCB), a member of the Privy Council of the United Kingdom (PC), and a Personal Aide-de-Camp (ADC) to the sovereign.
+National
+
+Foreign
+
+Arms
+
 Ancestry
 
-William descends through his father from both the House of Windsor and the House of Oldenburg, one of Europe's oldest royal dynasties.
-Through his mother, William descends from the Earls Spencer – a cadet branch of the Spencer family descended from the earls of Sunderland (the senior branch are now also dukes of Marlborough); from the Barons Fermoy; and, more distantly from Henry FitzRoy, 1st Duke of Grafton, and Charles Lennox, 1st Duke of Richmond – two illegitimate sons of King Charles II.
-As king, William would be the first monarch since the death of Anne in 1714 to descend undisputedly from Charles I, and the first to descend from Charles II.
-William's matrilineal line traces back to Eliza Kewark, a housekeeper to his 18th‐century ancestor Theodore Forbes, a Scottish merchant working for the East India Company Surat.
-Genealogist William Addams Reitwiesner assumed Kewark was Armenian.
-In June 2013, genealogical DNA tests on two of William's distant matrilineal cousins confirmed that Kewark was matrilineally of Indian descent.
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -362,39 +143,9 @@ In June 2013, genealogical DNA tests on two of William's distant matrilineal cou
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -409,6 +160,23 @@ In June 2013, genealogical DNA tests on two of William's distant matrilineal cou
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -426,6 +194,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -493,29 +276,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -524,6 +299,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -536,6 +319,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -544,17 +329,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -582,6 +369,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -597,189 +468,185 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d54e8c0f-4b99-408d-834f-81fdc98e8459)
- Call ID: d54e8c0f-4b99-408d-834f-81fdc98e8459
-  Args:
-    type: :Man
-    source: William
-  AssignClass (db8fcba1-0ab5-474a-bf49-4fcdd1c73617)
- Call ID: db8fcba1-0ab5-474a-bf49-4fcdd1c73617
-  Args:
-    type: :Man
-    source: Charles_III
-  AssignClass (97ec5cf8-1549-4aa0-8b23-f88200d452e7)
- Call ID: 97ec5cf8-1549-4aa0-8b23-f88200d452e7
+  AssignClass (a3b7ff2f-bf29-4682-84a0-9177d304d931)
+ Call ID: a3b7ff2f-bf29-4682-84a0-9177d304d931
   Args:
     type: :Woman
-    source: Diana_Spencer
-  AssignClass (cac5ef3a-d972-4457-87f6-395aac449f44)
- Call ID: cac5ef3a-d972-4457-87f6-395aac449f44
+    source: Beatrix
+  AssignClass (a14f0cd5-e826-4542-93d0-8ab24b59c961)
+ Call ID: a14f0cd5-e826-4542-93d0-8ab24b59c961
+  Args:
+    source: Margriet
+    type: :Woman
+  AssignClass (8fe23765-53a6-4c96-882b-a5828c03af23)
+ Call ID: 8fe23765-53a6-4c96-882b-a5828c03af23
+  Args:
+    source: Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (677675bf-ab85-42d5-9a3e-1be3f9413fab)
+ Call ID: 677675bf-ab85-42d5-9a3e-1be3f9413fab
   Args:
     type: :Man
-    source: Prince_Harry
-  AssignClass (689ba2f7-27e1-400a-93a2-78be77d1b24c)
- Call ID: 689ba2f7-27e1-400a-93a2-78be77d1b24c
+    source: Constantijn
+  AssignClass (621d4379-45c0-4b5e-80bd-e4284cda3721)
+ Call ID: 621d4379-45c0-4b5e-80bd-e4284cda3721
+  Args:
+    source: Claus_von_Amsberg
+    type: :Man
+  AssignClass (62085247-186b-4173-94c3-16cc6aa186d2)
+ Call ID: 62085247-186b-4173-94c3-16cc6aa186d2
+  Args:
+    type: :Man
+    source: Willem-Alexander
+  AssignClass (040fc723-5810-4eff-91c8-ae7292a3af3d)
+ Call ID: 040fc723-5810-4eff-91c8-ae7292a3af3d
+  Args:
+    type: :Man
+    source: Johan_Friso
+  AssignClass (ab0b2aea-3cde-4c47-8fa9-b13676eaee1d)
+ Call ID: ab0b2aea-3cde-4c47-8fa9-b13676eaee1d
   Args:
     type: :Woman
-    source: Catherine_Middleton
-  AssignClass (b0e3dfc7-c552-46ed-a203-94b036b01bf3)
- Call ID: b0e3dfc7-c552-46ed-a203-94b036b01bf3
-  Args:
-    type: :Man
-    source: Prince_George
-  AssignClass (1d1ea5eb-f8dc-4426-89d8-c576e34b8b7a)
- Call ID: 1d1ea5eb-f8dc-4426-89d8-c576e34b8b7a
+    source: Laurentien_Brinkhorst
+  AssignClass (61ab0bcd-c06c-4dc4-a1da-03c49eb388aa)
+ Call ID: 61ab0bcd-c06c-4dc4-a1da-03c49eb388aa
   Args:
     type: :Woman
-    source: Princess_Charlotte
-  AssignClass (5148a371-23b5-4bc6-8948-803733ac56a2)
- Call ID: 5148a371-23b5-4bc6-8948-803733ac56a2
+    source: Eloise
+  AssignClass (0d7f540c-5e1d-4945-842d-6e62217a8387)
+ Call ID: 0d7f540c-5e1d-4945-842d-6e62217a8387
   Args:
+    source: Claus-Casimir
     type: :Man
-    source: Prince_Louis
-  AssignClass (bb9b9fd9-b630-4360-b724-5c814996fe20)
- Call ID: bb9b9fd9-b630-4360-b724-5c814996fe20
+  AssignClass (f542bbf0-763a-4fd7-b489-848cb416b551)
+ Call ID: f542bbf0-763a-4fd7-b489-848cb416b551
   Args:
     type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (86b177b8-e6b8-4eb9-8153-e6906c5d8e82)
- Call ID: 86b177b8-e6b8-4eb9-8153-e6906c5d8e82
+    source: Leonore
+  AddLiteral (18e1573c-e723-439c-abfd-bce85421e322)
+ Call ID: 18e1573c-e723-439c-abfd-bce85421e322
   Args:
-    type: :Man
-    source: Prince_Philip
-  AssignClass (8b19dee4-1749-43a7-9c5d-c6986a477e34)
- Call ID: 8b19dee4-1749-43a7-9c5d-c6986a477e34
-  Args:
-    type: :Man
-    source: Charles_Spencer
-  AddLiteral (6623d0fd-0586-45d7-8257-cf1ffadac565)
- Call ID: 6623d0fd-0586-45d7-8257-cf1ffadac565
-  Args:
-    source: William
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1982
-  AddTriple (1b513f01-b5e8-41a6-9b6b-f6c95136e7f0)
- Call ID: 1b513f01-b5e8-41a6-9b6b-f6c95136e7f0
+    literal_value: 1969
+    literal_type: xsd:integer
+    source: Constantijn
+  AddLiteral (6139de55-5bfd-4173-b0a0-816dc136a6b2)
+ Call ID: 6139de55-5bfd-4173-b0a0-816dc136a6b2
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1967
+    literal_type: xsd:integer
+    source: Willem-Alexander
+  AddLiteral (a7eac7fa-b1e4-4424-96ab-46f8d4a61b63)
+ Call ID: a7eac7fa-b1e4-4424-96ab-46f8d4a61b63
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1968
+    literal_type: xsd:integer
+    source: Johan_Friso
+  AddLiteral (56afe8f8-6aaf-4c05-9f57-645b36d95596)
+ Call ID: 56afe8f8-6aaf-4c05-9f57-645b36d95596
+  Args:
+    source: Johan_Friso
+    literal_type: xsd:integer
+    literal_value: 2013
+    relation: :hasDeathYear
+  AddLiteral (bcf4b0a6-4de3-4165-ad85-056b4e91f2ca)
+ Call ID: bcf4b0a6-4de3-4165-ad85-056b4e91f2ca
+  Args:
+    literal_type: xsd:integer
+    source: Eloise
+    relation: :hasBirthYear
+    literal_value: 2002
+  AddLiteral (d99fcca7-3b13-46cc-a91f-9e57ad231f43)
+ Call ID: d99fcca7-3b13-46cc-a91f-9e57ad231f43
+  Args:
+    source: Claus-Casimir
+    literal_type: xsd:integer
+    literal_value: 2004
+    relation: :hasBirthYear
+  AddLiteral (830caf7e-1ec4-493a-a7f3-630d0f20b030)
+ Call ID: 830caf7e-1ec4-493a-a7f3-630d0f20b030
+  Args:
+    literal_value: 2006
+    relation: :hasBirthYear
+    source: Leonore
+    literal_type: xsd:integer
+  AddTriple (b158c01b-a5d8-4b1b-9394-963cda75ba7d)
+ Call ID: b158c01b-a5d8-4b1b-9394-963cda75ba7d
   Args:
     relation: :hasFather
-    target: Charles_III
-    source: William
-  AddTriple (35e3ec16-a74a-471f-9fca-212c721956dd)
- Call ID: 35e3ec16-a74a-471f-9fca-212c721956dd
+    source: Constantijn
+    target: Claus_von_Amsberg
+  AddTriple (14841b28-9f98-4362-819f-7d395850993f)
+ Call ID: 14841b28-9f98-4362-819f-7d395850993f
   Args:
-    target: Diana_Spencer
+    target: Beatrix
+    source: Constantijn
     relation: :hasMother
-    source: William
-  AddTriple (74efbf6b-ccc6-483f-b242-126fa58a5409)
- Call ID: 74efbf6b-ccc6-483f-b242-126fa58a5409
+  AddTriple (b48de992-ce4d-4c5d-93b7-90daa89da4b2)
+ Call ID: b48de992-ce4d-4c5d-93b7-90daa89da4b2
   Args:
-    source: William
-    relation: :hasBrother
-    target: Prince_Harry
-  AddTriple (c098f436-5654-44c1-b596-a6baf9f56290)
- Call ID: c098f436-5654-44c1-b596-a6baf9f56290
-  Args:
-    source: William
-    target: Prince_George
-    relation: :hasChild
-  AddTriple (c8cbebf5-cb9e-43b2-9027-98a57a2b93b5)
- Call ID: c8cbebf5-cb9e-43b2-9027-98a57a2b93b5
-  Args:
-    relation: :hasChild
-    target: Princess_Charlotte
-    source: William
-  AddTriple (c36b1180-0034-4a08-91f7-1ce5efc4d929)
- Call ID: c36b1180-0034-4a08-91f7-1ce5efc4d929
-  Args:
-    target: Prince_Louis
-    relation: :hasChild
-    source: William
-  AddTriple (505e266a-3cc8-419f-a1b5-ef70a1573642)
- Call ID: 505e266a-3cc8-419f-a1b5-ef70a1573642
-  Args:
-    source: Prince_George
     relation: :hasFather
-    target: William
-  AddTriple (4701e151-bdcd-4e32-9c5f-799de29d3451)
- Call ID: 4701e151-bdcd-4e32-9c5f-799de29d3451
+    target: Claus_von_Amsberg
+    source: Willem-Alexander
+  AddTriple (94f3ceb7-877f-4af2-8e5e-fc3df7680a2f)
+ Call ID: 94f3ceb7-877f-4af2-8e5e-fc3df7680a2f
   Args:
-    source: Princess_Charlotte
-    target: William
+    relation: :hasMother
+    target: Beatrix
+    source: Willem-Alexander
+  AddTriple (db5413a2-5d01-43b5-8c70-2034f398bc04)
+ Call ID: db5413a2-5d01-43b5-8c70-2034f398bc04
+  Args:
     relation: :hasFather
-  AddTriple (9fbe3260-488c-4376-855a-74487500e63a)
- Call ID: 9fbe3260-488c-4376-855a-74487500e63a
+    source: Johan_Friso
+    target: Claus_von_Amsberg
+  AddTriple (e7ea1b29-021a-44aa-a6b3-75b4156f8cfc)
+ Call ID: e7ea1b29-021a-44aa-a6b3-75b4156f8cfc
   Args:
-    target: William
+    relation: :hasMother
+    source: Johan_Friso
+    target: Beatrix
+  AddTriple (0cf38679-3bad-4eff-8116-5f36fbb3597f)
+ Call ID: 0cf38679-3bad-4eff-8116-5f36fbb3597f
+  Args:
+    source: Eloise
+    target: Constantijn
     relation: :hasFather
-    source: Prince_Louis
-  AddTriple (993f553b-1293-4742-a974-2ab3f41617e2)
- Call ID: 993f553b-1293-4742-a974-2ab3f41617e2
+  AddTriple (888b935a-8af8-469d-9203-14d4ff4556f2)
+ Call ID: 888b935a-8af8-469d-9203-14d4ff4556f2
   Args:
+    source: Eloise
+    target: Laurentien_Brinkhorst
     relation: :hasMother
-    target: Catherine_Middleton
-    source: Prince_George
-  AddTriple (6a21d197-e6f4-455d-bc86-326136fcbc33)
- Call ID: 6a21d197-e6f4-455d-bc86-326136fcbc33
+  AddTriple (446c3baa-07aa-4b10-9aa3-d6acec0cf365)
+ Call ID: 446c3baa-07aa-4b10-9aa3-d6acec0cf365
   Args:
-    source: Princess_Charlotte
-    target: Catherine_Middleton
-    relation: :hasMother
-  AddTriple (341022b8-7552-4fdb-b70e-43513db158ad)
- Call ID: 341022b8-7552-4fdb-b70e-43513db158ad
-  Args:
-    source: Prince_Louis
-    target: Catherine_Middleton
-    relation: :hasMother
-  AddTriple (c229757d-36f0-4f23-8343-c6d420aba4f6)
- Call ID: c229757d-36f0-4f23-8343-c6d420aba4f6
-  Args:
-    source: Prince_Harry
-    target: Charles_III
+    target: Constantijn
+    source: Claus-Casimir
     relation: :hasFather
-  AddTriple (bfd92e2f-b4d2-4d75-ad11-f15b7d79c7c2)
- Call ID: bfd92e2f-b4d2-4d75-ad11-f15b7d79c7c2
-  Args:
-    source: Prince_Harry
-    relation: :hasMother
-    target: Diana_Spencer
-  AddTriple (f1a72568-37d6-4164-a8e5-c805cac6f688)
- Call ID: f1a72568-37d6-4164-a8e5-c805cac6f688
-  Args:
-    target: Queen_Elizabeth_II
-    relation: :hasMother
-    source: William
-  RemoveTriple (52c8609d-6b74-4d1b-8f47-51c107e19fd9)
- Call ID: 52c8609d-6b74-4d1b-8f47-51c107e19fd9
+  AddTriple (2a029d4f-3fd4-4ebc-b24d-c0cad93bcfc0)
+ Call ID: 2a029d4f-3fd4-4ebc-b24d-c0cad93bcfc0
   Args:
     relation: :hasMother
-    target: Queen_Elizabeth_II
-    source: William
-  AddTriple (5ffe1635-ac7a-49a7-86ef-604dc7b8c40a)
- Call ID: 5ffe1635-ac7a-49a7-86ef-604dc7b8c40a
+    target: Laurentien_Brinkhorst
+    source: Claus-Casimir
+  AddTriple (6c0ef810-682b-416c-8e51-b5a294a9f24a)
+ Call ID: 6c0ef810-682b-416c-8e51-b5a294a9f24a
   Args:
-    source: William
-    relation: :hasAncestor
-    target: Queen_Elizabeth_II
-  AddTriple (1e9742b8-608d-4574-9431-066997a5936a)
- Call ID: 1e9742b8-608d-4574-9431-066997a5936a
-  Args:
-    source: Charles_III
-    target: Prince_Philip
+    source: Leonore
+    target: Constantijn
     relation: :hasFather
-  AddTriple (777133d8-b673-4e64-9721-71541e227634)
- Call ID: 777133d8-b673-4e64-9721-71541e227634
+  AddTriple (6340a7de-97f0-4885-850e-7ebababc33d0)
+ Call ID: 6340a7de-97f0-4885-850e-7ebababc33d0
   Args:
-    relation: :isBrotherOf
-    target: Diana_Spencer
-    source: Charles_Spencer
-  Finish (6b14821d-f0d5-4c53-b4f9-0f4b4e83c577)
- Call ID: 6b14821d-f0d5-4c53-b4f9-0f4b4e83c577
+    relation: :hasMother
+    source: Leonore
+    target: Laurentien_Brinkhorst
+  Finish (8bd81eff-565c-40c0-aa7e-2311414f931e)
+ Call ID: 8bd81eff-565c-40c0-aa7e-2311414f931e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -904,45 +771,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Spencer a :Man ;
-      :isBrotherOf data:Diana_Spencer .
+  data:Claus-Casimir a :Man ;
+      :hasBirthYear 2004 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_George a :Man ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
+  data:Eloise a :Woman ;
+      :hasBirthYear 2002 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_Harry a :Man ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer .
+  data:Johan_Friso a :Man ;
+      :hasBirthYear 1968 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
 
-  data:Prince_Louis a :Man ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
+  data:Leonore a :Woman ;
+      :hasBirthYear 2006 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_Philip a :Man .
+  data:Margriet a :Woman .
 
-  data:Princess_Charlotte a :Woman ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
+  data:Pieter_van_Vollenhoven a :Man .
 
-  data:Queen_Elizabeth_II a :Woman .
+  data:Willem-Alexander a :Man ;
+      :hasBirthYear 1967 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
 
-  data:Charles_III a :Man ;
-      :hasFather data:Prince_Philip .
+  data:Beatrix a :Woman .
 
-  data:Catherine_Middleton a :Woman .
+  data:Claus_von_Amsberg a :Man .
 
-  data:Diana_Spencer a :Woman .
+  data:Constantijn a :Man ;
+      :hasBirthYear 1969 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
 
-  data:William a :Man ;
-      :hasAncestor data:Queen_Elizabeth_II ;
-      :hasBirthYear 1982 ;
-      :hasBrother data:Prince_Harry ;
-      :hasChild data:Prince_George,
-          data:Prince_Louis,
-          data:Princess_Charlotte ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer .
+  data:Laurentien_Brinkhorst a :Woman .
 
 
 
@@ -954,8 +822,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (0b550e02-008d-4ff6-85a5-bce75ef9788e)
- Call ID: 0b550e02-008d-4ff6-85a5-bce75ef9788e
+  ValidateShacl (72339f91-f07c-41e1-a85e-1add8d21a9aa)
+ Call ID: 72339f91-f07c-41e1-a85e-1add8d21a9aa
   Args:
 
 ================================= Tool Message =================================
@@ -965,291 +833,291 @@ Total violations:36
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is assigned as an ancestor to William, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_George, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Philip is assigned as the father of Charles_III, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Philip, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of William, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_George, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of William, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is assigned as an ancestor to William, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_George, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Philip is assigned as the father of Charles_III, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Philip, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of William, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_George, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of William, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is assigned as an ancestor to William, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [25]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_George, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [26]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Claus_von_Amsberg for property hasFather on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
 
 
   Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Philip is assigned as the father of Charles_III, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Philip, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Claus-Casimir is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Charles_III is assigned as the father of William, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Johan_Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_III, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [30]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of Prince_Harry, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [31]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_George, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [32]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Beatrix for property hasMother on node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Beatrix', class=':Ancestor')
 
 
   Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Prince_Louis, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Diana_Spencer is assigned as the mother of William, but it lacks the required class :Ancestor.
+      The value Constantijn for property hasFather on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Diana_Spencer, :Ancestor)
+      AssignClass(node='Constantijn', class=':Ancestor')
 
 
   Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William is assigned as the father of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Leonore is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
   Violation [36]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Catherine_Middleton is assigned as the mother of Princess_Charlotte, but it lacks the required class :Ancestor.
+      The value Laurentien_Brinkhorst for property hasMother on node Eloise is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Middleton, :Ancestor)
+      AssignClass(node='Laurentien_Brinkhorst', class=':Ancestor')
 
 
 
@@ -1258,47 +1126,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (db76429b-5569-4745-9a9e-211da65221df)
- Call ID: db76429b-5569-4745-9a9e-211da65221df
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Ancestor
-  AssignClass (f56e5d93-3996-412e-a9c6-40e39cc82848)
- Call ID: f56e5d93-3996-412e-a9c6-40e39cc82848
-  Args:
-    source: Charles_III
-    type: :Ancestor
-  AssignClass (5f8dce36-9423-4060-a00c-9739e90973f3)
- Call ID: 5f8dce36-9423-4060-a00c-9739e90973f3
+  AssignClass (93481a4d-a8f5-4392-914c-c586e7cd7d5a)
+ Call ID: 93481a4d-a8f5-4392-914c-c586e7cd7d5a
   Args:
     type: :Ancestor
-    source: William
-  AssignClass (4376f2e7-a9fd-412b-86b2-6261d1c5e3ad)
- Call ID: 4376f2e7-a9fd-412b-86b2-6261d1c5e3ad
+    source: Beatrix
+  AssignClass (98929170-a616-4529-adb2-b261e9df4ff4)
+ Call ID: 98929170-a616-4529-adb2-b261e9df4ff4
   Args:
-    source: Prince_Philip
+    source: Claus_von_Amsberg
     type: :Ancestor
-  AssignClass (9687dbf5-7e8d-41f4-9cc3-3700aadd4ce3)
- Call ID: 9687dbf5-7e8d-41f4-9cc3-3700aadd4ce3
+  AssignClass (bbde9392-dad2-4cb4-a0aa-fca2870b60df)
+ Call ID: bbde9392-dad2-4cb4-a0aa-fca2870b60df
   Args:
     type: :Ancestor
-    source: Diana_Spencer
-  AssignClass (ce52ea1f-d4d5-42f3-bb69-029bc9479565)
- Call ID: ce52ea1f-d4d5-42f3-bb69-029bc9479565
+    source: Constantijn
+  AssignClass (403126b8-460e-45de-8a66-2040b9024926)
+ Call ID: 403126b8-460e-45de-8a66-2040b9024926
   Args:
-    source: Catherine_Middleton
+    source: Laurentien_Brinkhorst
     type: :Ancestor
-  Finish (cabecfd8-b045-4d11-96f9-7152afcbb7cd)
- Call ID: cabecfd8-b045-4d11-96f9-7152afcbb7cd
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1319,64 +1166,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Spencer a :Man ;
-      :isBrotherOf data:Diana_Spencer .
+  data:Claus-Casimir a :Man ;
+      :hasBirthYear 2004 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_George a :Man ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
+  data:Eloise a :Woman ;
+      :hasBirthYear 2002 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_Harry a :Man ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer .
+  data:Johan_Friso a :Man ;
+      :hasBirthYear 1968 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
 
-  data:Prince_Louis a :Man ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
+  data:Leonore a :Woman ;
+      :hasBirthYear 2006 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien_Brinkhorst .
 
-  data:Prince_Philip a :Ancestor,
+  data:Margriet a :Woman .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Willem-Alexander a :Man ;
+      :hasBirthYear 1967 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
+
+  data:Beatrix a :Ancestor,
+          :Woman .
+
+  data:Claus_von_Amsberg a :Ancestor,
           :Man .
 
-  data:Princess_Charlotte a :Woman ;
-      :hasFather data:William ;
-      :hasMother data:Catherine_Middleton .
-
-  data:Queen_Elizabeth_II a :Ancestor,
-          :Woman .
-
-  data:Charles_III a :Ancestor,
+  data:Constantijn a :Ancestor,
           :Man ;
-      :hasFather data:Prince_Philip .
+      :hasBirthYear 1969 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMother data:Beatrix .
 
-  data:Catherine_Middleton a :Ancestor,
+  data:Laurentien_Brinkhorst a :Ancestor,
           :Woman .
 
-  data:Diana_Spencer a :Ancestor,
-          :Woman .
 
-  data:William a :Ancestor,
-          :Man ;
-      :hasAncestor data:Queen_Elizabeth_II ;
-      :hasBirthYear 1982 ;
-      :hasBrother data:Prince_Harry ;
-      :hasChild data:Prince_George,
-          data:Prince_Louis,
-          data:Princess_Charlotte ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (06c1376e-60fa-4bc9-a057-7f756a7eb04b)
- Call ID: 06c1376e-60fa-4bc9-a057-7f756a7eb04b
+  ValidateShacl (66c95d3f-d3c6-431b-a100-fafc02f06083)
+ Call ID: 66c95d3f-d3c6-431b-a100-fafc02f06083
   Args:
 
 ================================= Tool Message =================================
@@ -1387,6 +1229,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (134a48e4-bc9e-4575-ad5d-ebe68f4333df)
- Call ID: 134a48e4-bc9e-4575-ad5d-ebe68f4333df
+  Finish (1a6afc58-8624-4d3e-a8c2-74c7a470a795)
+ Call ID: 1a6afc58-8624-4d3e-a8c2-74c7a470a795
   Args:

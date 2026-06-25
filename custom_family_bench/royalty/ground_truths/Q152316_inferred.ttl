@@ -1,0 +1,1456 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Meghan-_Duchess_of_Sussex a :Person,
+        :Woman ;
+    rdfs:label "Meghan, Duchess of Sussex"^^xsd:string ;
+    data:posIndicesFull "1085:1098"^^xsd:string,
+        "16120:16133"^^xsd:string ;
+    data:posIndicesPart "1127:1133"^^xsd:string,
+        "1266:1272"^^xsd:string,
+        "1339:1345"^^xsd:string,
+        "1431:1437"^^xsd:string,
+        "16891:16897"^^xsd:string,
+        "16924:16931"^^xsd:string,
+        "16935:16941"^^xsd:string,
+        "17132:17138"^^xsd:string,
+        "17299:17306"^^xsd:string,
+        "17884:17891"^^xsd:string,
+        "18110:18117"^^xsd:string,
+        "18155:18162"^^xsd:string,
+        "21326:21332"^^xsd:string,
+        "21523:21529"^^xsd:string,
+        "25355:25361"^^xsd:string,
+        "25446:25453"^^xsd:string,
+        "25457:25463"^^xsd:string,
+        "25607:25614"^^xsd:string,
+        "25813:25820"^^xsd:string,
+        "25856:25863"^^xsd:string,
+        "26619:26626"^^xsd:string,
+        "26859:26866"^^xsd:string,
+        "26985:26991"^^xsd:string,
+        "27255:27262"^^xsd:string,
+        "27558:27564"^^xsd:string,
+        "27935:27941"^^xsd:string,
+        "28011:28017"^^xsd:string,
+        "28193:28199"^^xsd:string,
+        "28644:28650"^^xsd:string,
+        "28801:28807"^^xsd:string,
+        "29556:29562"^^xsd:string,
+        "32335:32341"^^xsd:string,
+        "32526:32532"^^xsd:string,
+        "32791:32798"^^xsd:string,
+        "32940:32946"^^xsd:string,
+        "34520:34526"^^xsd:string,
+        "34773:34779"^^xsd:string,
+        "35336:35342"^^xsd:string,
+        "37764:37770"^^xsd:string,
+        "37936:37943"^^xsd:string,
+        "37947:37953"^^xsd:string,
+        "38781:38788"^^xsd:string,
+        "38920:38926"^^xsd:string,
+        "40780:40786"^^xsd:string,
+        "41847:41854"^^xsd:string,
+        "42397:42403"^^xsd:string,
+        "42474:42481"^^xsd:string,
+        "42485:42491"^^xsd:string,
+        "42767:42773"^^xsd:string,
+        "42841:42847"^^xsd:string,
+        "42885:42892"^^xsd:string,
+        "42896:42902"^^xsd:string,
+        "42948:42954"^^xsd:string,
+        "43056:43062"^^xsd:string,
+        "43266:43272"^^xsd:string,
+        "43434:43440"^^xsd:string,
+        "43560:43567"^^xsd:string,
+        "43603:43609"^^xsd:string,
+        "43663:43669"^^xsd:string,
+        "48519:48525"^^xsd:string,
+        "49119:49125"^^xsd:string,
+        "49796:49802"^^xsd:string,
+        "50064:50070"^^xsd:string,
+        "50178:50184"^^xsd:string,
+        "50549:50555"^^xsd:string,
+        "50612:50618"^^xsd:string,
+        "51188:51194"^^xsd:string,
+        "53158:53164"^^xsd:string,
+        "55527:55533"^^xsd:string,
+        "59604:59610"^^xsd:string,
+        "59796:59803"^^xsd:string,
+        "59807:59813"^^xsd:string,
+        "59876:59883"^^xsd:string,
+        "60021:60028"^^xsd:string,
+        "60607:60613"^^xsd:string,
+        "60705:60711"^^xsd:string,
+        "61195:61202"^^xsd:string,
+        "61305:61311"^^xsd:string,
+        "61950:61956"^^xsd:string,
+        "62296:62302"^^xsd:string,
+        "64297:64303"^^xsd:string,
+        "64346:64352"^^xsd:string,
+        "64785:64791"^^xsd:string,
+        "64897:64903"^^xsd:string,
+        "65049:65056"^^xsd:string,
+        "65804:65810"^^xsd:string,
+        "66066:66072"^^xsd:string ;
+    data:wdtLink wdt:Q3304418 ;
+    :alsoKnownAs "Duchess Meghan"^^xsd:string,
+        "Duchess Rachel"^^xsd:string,
+        "Meghan Markle"^^xsd:string,
+        "Meghan Sussex"^^xsd:string,
+        "Rachel Markle"^^xsd:string,
+        "Rachel Meghan Markle"^^xsd:string,
+        "Rachel Sussex"^^xsd:string ;
+    :hasRelation data:Meghan-_Duchess_of_Sussex ;
+    :hasSex data:female ;
+    :hasSister data:Meghan-_Duchess_of_Sussex ;
+    :isBloodrelationOf data:Meghan-_Duchess_of_Sussex ;
+    :isSiblingOf data:Meghan-_Duchess_of_Sussex ;
+    :isSisterOf data:Meghan-_Duchess_of_Sussex .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Diana-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Diana, Princess of Wales"^^xsd:string ;
+    data:posIndicesFull "169:174"^^xsd:string,
+        "169:193"^^xsd:string,
+        "1737:1742"^^xsd:string,
+        "1737:1761"^^xsd:string,
+        "20789:20792"^^xsd:string,
+        "2153:2158"^^xsd:string,
+        "26118:26121"^^xsd:string,
+        "26122:26126"^^xsd:string,
+        "26282:26288"^^xsd:string,
+        "2633:2638"^^xsd:string,
+        "3092:3097"^^xsd:string,
+        "3353:3358"^^xsd:string,
+        "35823:35828"^^xsd:string,
+        "35905:35910"^^xsd:string,
+        "48060:48079"^^xsd:string,
+        "50870:50874"^^xsd:string,
+        "60252:60255"^^xsd:string,
+        "67597:67600"^^xsd:string,
+        "9186:9205"^^xsd:string ;
+    data:posIndicesPart "15907:15915"^^xsd:string,
+        "37186:37191"^^xsd:string,
+        "42818:42823"^^xsd:string,
+        "43229:43234"^^xsd:string,
+        "5704:5709"^^xsd:string,
+        "57653:57658"^^xsd:string,
+        "64614:64619"^^xsd:string,
+        "914:922"^^xsd:string,
+        "926:931"^^xsd:string ;
+    data:wdtLink wdt:Q9685 ;
+    :alsoKnownAs "Diana"^^xsd:string,
+        "Diana Frances Spencer"^^xsd:string,
+        "Diana Princess of Wales"^^xsd:string,
+        "Diana Spencer"^^xsd:string,
+        "Lady Di"^^xsd:string,
+        "Lady Diana Frances Spencer"^^xsd:string,
+        "Lady Diana Spencer"^^xsd:string,
+        "Princess Di"^^xsd:string,
+        "Princess Diana"^^xsd:string,
+        "The People's Princess"^^xsd:string,
+        "The Princess of Wales"^^xsd:string ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasRelation data:Diana-_Princess_of_Wales,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Diana-_Princess_of_Wales ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Diana-_Princess_of_Wales ;
+    :isMotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Diana-_Princess_of_Wales ;
+    :isSisterOf data:Diana-_Princess_of_Wales .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "3299:3305"^^xsd:string ;
+    data:posIndicesPart "17014:17020"^^xsd:string,
+        "58457:58463"^^xsd:string,
+        "58803:58809"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasBrother data:George_VI ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:George_VI ;
+    :isBrotherOf data:George_VI ;
+    :isFatherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:George_VI ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "12691:12706"^^xsd:string,
+        "12835:12850"^^xsd:string,
+        "1619:1634"^^xsd:string,
+        "16841:16856"^^xsd:string,
+        "17557:17572"^^xsd:string,
+        "28070:28085"^^xsd:string,
+        "3526:3541"^^xsd:string,
+        "3542:3558"^^xsd:string,
+        "3719:3735"^^xsd:string ;
+    data:posIndicesPart "18077:18082"^^xsd:string,
+        "19085:19091"^^xsd:string,
+        "19317:19323"^^xsd:string,
+        "23457:23462"^^xsd:string,
+        "23901:23906"^^xsd:string,
+        "24818:24823"^^xsd:string,
+        "2482:2488"^^xsd:string,
+        "25177:25182"^^xsd:string,
+        "26343:26348"^^xsd:string,
+        "26933:26938"^^xsd:string,
+        "2967:2973"^^xsd:string,
+        "35849:35855"^^xsd:string,
+        "39377:39383"^^xsd:string,
+        "39780:39786"^^xsd:string,
+        "41742:41747"^^xsd:string,
+        "49083:49088"^^xsd:string,
+        "53233:53242"^^xsd:string,
+        "55454:55460"^^xsd:string,
+        "56316:56322"^^xsd:string,
+        "61349:61354"^^xsd:string,
+        "61651:61656"^^xsd:string,
+        "62877:62882"^^xsd:string,
+        "66451:66457"^^xsd:string,
+        "66922:66928"^^xsd:string,
+        "9215:9220"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "10122:10127"^^xsd:string,
+        "10379:10384"^^xsd:string,
+        "12437:12443"^^xsd:string,
+        "13298:13304"^^xsd:string,
+        "13655:13659"^^xsd:string,
+        "14250:14254"^^xsd:string,
+        "14554:14560"^^xsd:string,
+        "14714:14720"^^xsd:string,
+        "1489:1493"^^xsd:string,
+        "15078:15083"^^xsd:string,
+        "15094:15098"^^xsd:string,
+        "17389:17395"^^xsd:string,
+        "17469:17475"^^xsd:string,
+        "17954:17960"^^xsd:string,
+        "18845:18851"^^xsd:string,
+        "2092:2098"^^xsd:string,
+        "215:219"^^xsd:string,
+        "21849:21854"^^xsd:string,
+        "2254:2258"^^xsd:string,
+        "23330:23335"^^xsd:string,
+        "23348:23352"^^xsd:string,
+        "23762:23768"^^xsd:string,
+        "26824:26830"^^xsd:string,
+        "2713:2719"^^xsd:string,
+        "28354:28358"^^xsd:string,
+        "28860:28866"^^xsd:string,
+        "29405:29411"^^xsd:string,
+        "29757:29763"^^xsd:string,
+        "29955:29961"^^xsd:string,
+        "30732:30738"^^xsd:string,
+        "31193:31199"^^xsd:string,
+        "36667:36671"^^xsd:string,
+        "3856:3860"^^xsd:string,
+        "38969:38973"^^xsd:string,
+        "39368:39372"^^xsd:string,
+        "3940:3945"^^xsd:string,
+        "39574:39580"^^xsd:string,
+        "41233:41237"^^xsd:string,
+        "41697:41701"^^xsd:string,
+        "42276:42280"^^xsd:string,
+        "43050:43054"^^xsd:string,
+        "46152:46158"^^xsd:string,
+        "46507:46511"^^xsd:string,
+        "47052:47058"^^xsd:string,
+        "47557:47561"^^xsd:string,
+        "48655:48659"^^xsd:string,
+        "48690:48694"^^xsd:string,
+        "4940:4945"^^xsd:string,
+        "52408:52414"^^xsd:string,
+        "52535:52541"^^xsd:string,
+        "54348:54353"^^xsd:string,
+        "553:558"^^xsd:string,
+        "56304:56308"^^xsd:string,
+        "56584:56588"^^xsd:string,
+        "58615:58621"^^xsd:string,
+        "58752:58758"^^xsd:string,
+        "5929:5933"^^xsd:string,
+        "60332:60338"^^xsd:string,
+        "61160:61166"^^xsd:string,
+        "62365:62369"^^xsd:string,
+        "6287:6291"^^xsd:string,
+        "63386:63390"^^xsd:string,
+        "63422:63426"^^xsd:string,
+        "63458:63462"^^xsd:string,
+        "6353:6357"^^xsd:string,
+        "64937:64943"^^xsd:string,
+        "7415:7419"^^xsd:string,
+        "7537:7542"^^xsd:string,
+        "9379:9383"^^xsd:string,
+        "9901:9905"^^xsd:string ;
+    data:posIndicesPart "15907:15915"^^xsd:string,
+        "914:922"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Prince_George_of_Wales a :Man,
+        :Person ;
+    rdfs:label "Prince George of Wales"^^xsd:string ;
+    data:posIndicesFull "58418:58431"^^xsd:string ;
+    data:posIndicesPart "58803:58809"^^xsd:string,
+        "64614:64619"^^xsd:string ;
+    data:wdtLink wdt:Q13590412 ;
+    :alsoKnownAs "George Alexander Louis Mountbatten-Windsor"^^xsd:string,
+        "George Alexander Louis of Cambridge"^^xsd:string,
+        "George Alexander Louis of Cornwall and Cambridge"^^xsd:string,
+        "George Alexander Louis of Wales"^^xsd:string,
+        "George Cambridge"^^xsd:string,
+        "George Mountbatten-Windsor"^^xsd:string,
+        "George of Cambridge"^^xsd:string,
+        "George of Cornwall and Cambridge"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "Prince George"^^xsd:string,
+        "Prince George Alexander Louis"^^xsd:string,
+        "Prince George Alexander Louis of Cambridge"^^xsd:string,
+        "Prince George Alexander Louis of Cornwall and Cambridge"^^xsd:string,
+        "Prince George Alexander Louis of Wales"^^xsd:string,
+        "Prince George of Cambridge"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasBrother data:Prince_George_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasParent data:William-_Prince_of_Wales ;
+    :hasRelation data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_George_of_Wales ;
+    :isBrotherOf data:Prince_George_of_Wales ;
+    :isChildOf data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George_of_Wales ;
+    :isSonOf data:William-_Prince_of_Wales .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "26113:26121"^^xsd:string,
+        "3114:3122"^^xsd:string,
+        "46781:46787"^^xsd:string,
+        "49769:49782"^^xsd:string,
+        "8217:8230"^^xsd:string ;
+    data:posIndicesPart "17031:17038"^^xsd:string,
+        "17535:17542"^^xsd:string,
+        "3997:4008"^^xsd:string,
+        "6446:6453"^^xsd:string,
+        "66821:66828"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Anne-_Princess_Royal a :Person,
+        :Woman ;
+    rdfs:label "Anne, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "8309:8322"^^xsd:string ;
+    data:posIndicesPart "10962:10967"^^xsd:string,
+        "12547:12552"^^xsd:string,
+        "12642:12647"^^xsd:string,
+        "13207:13212"^^xsd:string,
+        "13487:13492"^^xsd:string,
+        "13981:13986"^^xsd:string,
+        "14340:14345"^^xsd:string,
+        "14440:14445"^^xsd:string,
+        "14506:14511"^^xsd:string,
+        "14635:14640"^^xsd:string,
+        "14791:14796"^^xsd:string,
+        "15907:15915"^^xsd:string,
+        "16709:16714"^^xsd:string,
+        "19177:19182"^^xsd:string,
+        "22047:22052"^^xsd:string,
+        "22541:22546"^^xsd:string,
+        "23499:23504"^^xsd:string,
+        "24857:24862"^^xsd:string,
+        "26707:26712"^^xsd:string,
+        "27043:27048"^^xsd:string,
+        "27544:27549"^^xsd:string,
+        "29604:29609"^^xsd:string,
+        "29734:29739"^^xsd:string,
+        "30099:30104"^^xsd:string,
+        "36679:36684"^^xsd:string,
+        "38266:38271"^^xsd:string,
+        "38658:38663"^^xsd:string,
+        "42404:42409"^^xsd:string,
+        "42513:42518"^^xsd:string,
+        "42848:42853"^^xsd:string,
+        "42955:42960"^^xsd:string,
+        "43063:43068"^^xsd:string,
+        "43273:43278"^^xsd:string,
+        "43441:43446"^^xsd:string,
+        "43670:43675"^^xsd:string,
+        "46909:46914"^^xsd:string,
+        "48718:48723"^^xsd:string,
+        "49497:49502"^^xsd:string,
+        "49723:49728"^^xsd:string,
+        "50201:50206"^^xsd:string,
+        "50724:50729"^^xsd:string,
+        "52041:52046"^^xsd:string,
+        "52073:52078"^^xsd:string,
+        "54335:54340"^^xsd:string,
+        "54807:54812"^^xsd:string,
+        "57576:57581"^^xsd:string,
+        "60464:60469"^^xsd:string,
+        "60896:60901"^^xsd:string,
+        "64567:64572"^^xsd:string,
+        "64870:64875"^^xsd:string,
+        "65003:65008"^^xsd:string,
+        "65077:65082"^^xsd:string,
+        "65163:65168"^^xsd:string,
+        "65677:65682"^^xsd:string,
+        "66670:66675"^^xsd:string,
+        "66885:66890"^^xsd:string ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom"^^xsd:string,
+        "Anne Mountbatten-Windsor"^^xsd:string,
+        "Princess Anne"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise of Edinburgh"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "Princess Anne of Edinburgh"^^xsd:string,
+        "Princess Anne, Princess Royal"^^xsd:string,
+        "Princess Anne, The Princess Royal"^^xsd:string,
+        "The Princess Anne"^^xsd:string,
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "The Princess Anne, Princess Royal"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isAuntOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isDaughterOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III .
+
+data:Prince_Harry-_Duke_of_Sussex a :Man,
+        :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex"^^xsd:string ;
+    data:posIndicesFull "0:12"^^xsd:string,
+        "0:28"^^xsd:string,
+        "1011:1020"^^xsd:string,
+        "10491:10500"^^xsd:string,
+        "1495:1504"^^xsd:string,
+        "1781:1807"^^xsd:string,
+        "23372:23381"^^xsd:string,
+        "257:266"^^xsd:string,
+        "29328:29340"^^xsd:string,
+        "30:56"^^xsd:string,
+        "32661:32673"^^xsd:string,
+        "33298:33307"^^xsd:string,
+        "33565:33574"^^xsd:string,
+        "34046:34055"^^xsd:string,
+        "35066:35075"^^xsd:string,
+        "36215:36227"^^xsd:string,
+        "37357:37366"^^xsd:string,
+        "3885:3894"^^xsd:string,
+        "47074:47083"^^xsd:string,
+        "48372:48381"^^xsd:string,
+        "49655:49664"^^xsd:string,
+        "50279:50288"^^xsd:string,
+        "5439:5451"^^xsd:string,
+        "59485:59497"^^xsd:string,
+        "63316:63328"^^xsd:string,
+        "63704:63713"^^xsd:string,
+        "64534:64543"^^xsd:string,
+        "64582:64594"^^xsd:string,
+        "64582:64603"^^xsd:string,
+        "64683:64694"^^xsd:string,
+        "65252:65261"^^xsd:string,
+        "66191:66200"^^xsd:string,
+        "8812:8821"^^xsd:string,
+        "9239:9248"^^xsd:string,
+        "9924:9933"^^xsd:string ;
+    data:posIndicesPart "10136:10141"^^xsd:string,
+        "10553:10558"^^xsd:string,
+        "10646:10651"^^xsd:string,
+        "10915:10920"^^xsd:string,
+        "11127:11132"^^xsd:string,
+        "1117:1122"^^xsd:string,
+        "11290:11295"^^xsd:string,
+        "11460:11465"^^xsd:string,
+        "11620:11625"^^xsd:string,
+        "11775:11780"^^xsd:string,
+        "12015:12020"^^xsd:string,
+        "12177:12182"^^xsd:string,
+        "1256:1261"^^xsd:string,
+        "12591:12596"^^xsd:string,
+        "12915:12920"^^xsd:string,
+        "13320:13325"^^xsd:string,
+        "13381:13386"^^xsd:string,
+        "1350:1355"^^xsd:string,
+        "13534:13539"^^xsd:string,
+        "13745:13750"^^xsd:string,
+        "14021:14026"^^xsd:string,
+        "14168:14173"^^xsd:string,
+        "1423:1428"^^xsd:string,
+        "1448:1453"^^xsd:string,
+        "14610:14615"^^xsd:string,
+        "14740:14744"^^xsd:string,
+        "14883:14888"^^xsd:string,
+        "15224:15229"^^xsd:string,
+        "15292:15297"^^xsd:string,
+        "15441:15446"^^xsd:string,
+        "15615:15620"^^xsd:string,
+        "15872:15877"^^xsd:string,
+        "15892:15897"^^xsd:string,
+        "16071:16076"^^xsd:string,
+        "16214:16219"^^xsd:string,
+        "16436:16441"^^xsd:string,
+        "16585:16590"^^xsd:string,
+        "1675:1681"^^xsd:string,
+        "16883:16887"^^xsd:string,
+        "16891:16897"^^xsd:string,
+        "16903:16908"^^xsd:string,
+        "16935:16941"^^xsd:string,
+        "17143:17148"^^xsd:string,
+        "17290:17294"^^xsd:string,
+        "17713:17717"^^xsd:string,
+        "17875:17879"^^xsd:string,
+        "18146:18150"^^xsd:string,
+        "18246:18251"^^xsd:string,
+        "18360:18365"^^xsd:string,
+        "18427:18432"^^xsd:string,
+        "18540:18545"^^xsd:string,
+        "18993:18998"^^xsd:string,
+        "19467:19472"^^xsd:string,
+        "1947:1952"^^xsd:string,
+        "19661:19666"^^xsd:string,
+        "19739:19744"^^xsd:string,
+        "20031:20036"^^xsd:string,
+        "20260:20265"^^xsd:string,
+        "20432:20437"^^xsd:string,
+        "2048:2053"^^xsd:string,
+        "20962:20967"^^xsd:string,
+        "21318:21322"^^xsd:string,
+        "21326:21332"^^xsd:string,
+        "21540:21545"^^xsd:string,
+        "21681:21686"^^xsd:string,
+        "21951:21956"^^xsd:string,
+        "22030:22035"^^xsd:string,
+        "22158:22163"^^xsd:string,
+        "22653:22658"^^xsd:string,
+        "22836:22841"^^xsd:string,
+        "2304:2309"^^xsd:string,
+        "23081:23086"^^xsd:string,
+        "23280:23285"^^xsd:string,
+        "23471:23476"^^xsd:string,
+        "23558:23563"^^xsd:string,
+        "23848:23853"^^xsd:string,
+        "23939:23944"^^xsd:string,
+        "24099:24104"^^xsd:string,
+        "2423:2428"^^xsd:string,
+        "24424:24429"^^xsd:string,
+        "24512:24517"^^xsd:string,
+        "24562:24567"^^xsd:string,
+        "24825:24830"^^xsd:string,
+        "24962:24967"^^xsd:string,
+        "25135:25141"^^xsd:string,
+        "25300:25305"^^xsd:string,
+        "25437:25441"^^xsd:string,
+        "25457:25463"^^xsd:string,
+        "25514:25519"^^xsd:string,
+        "25598:25602"^^xsd:string,
+        "25804:25808"^^xsd:string,
+        "25847:25851"^^xsd:string,
+        "26035:26039"^^xsd:string,
+        "26308:26312"^^xsd:string,
+        "26483:26488"^^xsd:string,
+        "2650:2655"^^xsd:string,
+        "26610:26614"^^xsd:string,
+        "26850:26854"^^xsd:string,
+        "26975:26980"^^xsd:string,
+        "27148:27153"^^xsd:string,
+        "27246:27250"^^xsd:string,
+        "27345:27350"^^xsd:string,
+        "27469:27474"^^xsd:string,
+        "27734:27739"^^xsd:string,
+        "27834:27839"^^xsd:string,
+        "28001:28006"^^xsd:string,
+        "28183:28188"^^xsd:string,
+        "28387:28392"^^xsd:string,
+        "28522:28527"^^xsd:string,
+        "28791:28796"^^xsd:string,
+        "2893:2898"^^xsd:string,
+        "28996:29001"^^xsd:string,
+        "29847:29852"^^xsd:string,
+        "30060:30065"^^xsd:string,
+        "30252:30256"^^xsd:string,
+        "30433:30437"^^xsd:string,
+        "30617:30622"^^xsd:string,
+        "30665:30670"^^xsd:string,
+        "31067:31072"^^xsd:string,
+        "31273:31278"^^xsd:string,
+        "31405:31410"^^xsd:string,
+        "31459:31464"^^xsd:string,
+        "31690:31695"^^xsd:string,
+        "31917:31922"^^xsd:string,
+        "32051:32056"^^xsd:string,
+        "32325:32330"^^xsd:string,
+        "32782:32786"^^xsd:string,
+        "32932:32937"^^xsd:string,
+        "33228:33233"^^xsd:string,
+        "33976:33981"^^xsd:string,
+        "3403:3408"^^xsd:string,
+        "34399:34404"^^xsd:string,
+        "34510:34515"^^xsd:string,
+        "34763:34768"^^xsd:string,
+        "35306:35311"^^xsd:string,
+        "35344:35349"^^xsd:string,
+        "35550:35555"^^xsd:string,
+        "35925:35930"^^xsd:string,
+        "35949:35954"^^xsd:string,
+        "36287:36292"^^xsd:string,
+        "36421:36426"^^xsd:string,
+        "3661:3666"^^xsd:string,
+        "36649:36654"^^xsd:string,
+        "36742:36747"^^xsd:string,
+        "36831:36836"^^xsd:string,
+        "36991:36995"^^xsd:string,
+        "37082:37087"^^xsd:string,
+        "37176:37182"^^xsd:string,
+        "37559:37564"^^xsd:string,
+        "37756:37760"^^xsd:string,
+        "37764:37770"^^xsd:string,
+        "37927:37931"^^xsd:string,
+        "37947:37953"^^xsd:string,
+        "37968:37973"^^xsd:string,
+        "38125:38129"^^xsd:string,
+        "38280:38285"^^xsd:string,
+        "38401:38406"^^xsd:string,
+        "38487:38492"^^xsd:string,
+        "38772:38776"^^xsd:string,
+        "38910:38915"^^xsd:string,
+        "39385:39390"^^xsd:string,
+        "39921:39926"^^xsd:string,
+        "40066:40071"^^xsd:string,
+        "40382:40387"^^xsd:string,
+        "40515:40520"^^xsd:string,
+        "41150:41155"^^xsd:string,
+        "41336:41341"^^xsd:string,
+        "41526:41531"^^xsd:string,
+        "4167:4172"^^xsd:string,
+        "41767:41772"^^xsd:string,
+        "41838:41842"^^xsd:string,
+        "41886:41891"^^xsd:string,
+        "42038:42042"^^xsd:string,
+        "42397:42403"^^xsd:string,
+        "42465:42469"^^xsd:string,
+        "42485:42491"^^xsd:string,
+        "42641:42646"^^xsd:string,
+        "42757:42762"^^xsd:string,
+        "42841:42847"^^xsd:string,
+        "42876:42880"^^xsd:string,
+        "42896:42902"^^xsd:string,
+        "42948:42954"^^xsd:string,
+        "43056:43062"^^xsd:string,
+        "43266:43272"^^xsd:string,
+        "43434:43440"^^xsd:string,
+        "43551:43555"^^xsd:string,
+        "43614:43619"^^xsd:string,
+        "43663:43669"^^xsd:string,
+        "43725:43730"^^xsd:string,
+        "4380:4385"^^xsd:string,
+        "43845:43851"^^xsd:string,
+        "43991:43996"^^xsd:string,
+        "44001:44007"^^xsd:string,
+        "44197:44202"^^xsd:string,
+        "44452:44457"^^xsd:string,
+        "44945:44950"^^xsd:string,
+        "45207:45212"^^xsd:string,
+        "45420:45425"^^xsd:string,
+        "4556:4561"^^xsd:string,
+        "45579:45584"^^xsd:string,
+        "45703:45708"^^xsd:string,
+        "45846:45851"^^xsd:string,
+        "46060:46065"^^xsd:string,
+        "46126:46131"^^xsd:string,
+        "46251:46256"^^xsd:string,
+        "46440:46445"^^xsd:string,
+        "46609:46614"^^xsd:string,
+        "46775:46780"^^xsd:string,
+        "4730:4735"^^xsd:string,
+        "47370:47375"^^xsd:string,
+        "47432:47437"^^xsd:string,
+        "47524:47530"^^xsd:string,
+        "47639:47644"^^xsd:string,
+        "47827:47832"^^xsd:string,
+        "47945:47950"^^xsd:string,
+        "48010:48015"^^xsd:string,
+        "48081:48086"^^xsd:string,
+        "4830:4836"^^xsd:string,
+        "48509:48514"^^xsd:string,
+        "48837:48842"^^xsd:string,
+        "49109:49114"^^xsd:string,
+        "49251:49256"^^xsd:string,
+        "4976:4981"^^xsd:string,
+        "49895:49900"^^xsd:string,
+        "50054:50059"^^xsd:string,
+        "50168:50173"^^xsd:string,
+        "50399:50404"^^xsd:string,
+        "50539:50544"^^xsd:string,
+        "50602:50607"^^xsd:string,
+        "51000:51005"^^xsd:string,
+        "51178:51183"^^xsd:string,
+        "5135:5140"^^xsd:string,
+        "51592:51596"^^xsd:string,
+        "51654:51659"^^xsd:string,
+        "51798:51803"^^xsd:string,
+        "51893:51898"^^xsd:string,
+        "52094:52100"^^xsd:string,
+        "52232:52237"^^xsd:string,
+        "52733:52738"^^xsd:string,
+        "52791:52796"^^xsd:string,
+        "52970:52975"^^xsd:string,
+        "53022:53027"^^xsd:string,
+        "53150:53154"^^xsd:string,
+        "53158:53164"^^xsd:string,
+        "53634:53639"^^xsd:string,
+        "53775:53780"^^xsd:string,
+        "53968:53973"^^xsd:string,
+        "54191:54196"^^xsd:string,
+        "54403:54408"^^xsd:string,
+        "54501:54506"^^xsd:string,
+        "54631:54636"^^xsd:string,
+        "54997:55002"^^xsd:string,
+        "55114:55119"^^xsd:string,
+        "55310:55315"^^xsd:string,
+        "5537:5542"^^xsd:string,
+        "55662:55667"^^xsd:string,
+        "55974:55979"^^xsd:string,
+        "56742:56747"^^xsd:string,
+        "56891:56896"^^xsd:string,
+        "57004:57009"^^xsd:string,
+        "57246:57251"^^xsd:string,
+        "57326:57331"^^xsd:string,
+        "57643:57649"^^xsd:string,
+        "5769:5774"^^xsd:string,
+        "57752:57757"^^xsd:string,
+        "57901:57906"^^xsd:string,
+        "58096:58101"^^xsd:string,
+        "58241:58246"^^xsd:string,
+        "58561:58566"^^xsd:string,
+        "5890:5895"^^xsd:string,
+        "59069:59074"^^xsd:string,
+        "59138:59143"^^xsd:string,
+        "59386:59391"^^xsd:string,
+        "59597:59602"^^xsd:string,
+        "59787:59791"^^xsd:string,
+        "59807:59813"^^xsd:string,
+        "60012:60016"^^xsd:string,
+        "60168:60173"^^xsd:string,
+        "60597:60602"^^xsd:string,
+        "60695:60700"^^xsd:string,
+        "61062:61067"^^xsd:string,
+        "61142:61146"^^xsd:string,
+        "61186:61190"^^xsd:string,
+        "61295:61300"^^xsd:string,
+        "61627:61632"^^xsd:string,
+        "61882:61887"^^xsd:string,
+        "61940:61945"^^xsd:string,
+        "62183:62188"^^xsd:string,
+        "62371:62376"^^xsd:string,
+        "62545:62550"^^xsd:string,
+        "62731:62736"^^xsd:string,
+        "6293:6298"^^xsd:string,
+        "63028:63033"^^xsd:string,
+        "63360:63365"^^xsd:string,
+        "63487:63492"^^xsd:string,
+        "6359:6364"^^xsd:string,
+        "63917:63922"^^xsd:string,
+        "64287:64292"^^xsd:string,
+        "64785:64791"^^xsd:string,
+        "64889:64893"^^xsd:string,
+        "64897:64903"^^xsd:string,
+        "65040:65044"^^xsd:string,
+        "65472:65477"^^xsd:string,
+        "65794:65799"^^xsd:string,
+        "66056:66061"^^xsd:string,
+        "6638:6643"^^xsd:string,
+        "66559:66564"^^xsd:string,
+        "66684:66689"^^xsd:string,
+        "66843:66848"^^xsd:string,
+        "67147:67151"^^xsd:string,
+        "67188:67192"^^xsd:string,
+        "67247:67252"^^xsd:string,
+        "67617:67622"^^xsd:string,
+        "6779:6784"^^xsd:string,
+        "6997:7002"^^xsd:string,
+        "7192:7197"^^xsd:string,
+        "7471:7476"^^xsd:string,
+        "756:761"^^xsd:string,
+        "7572:7577"^^xsd:string,
+        "7719:7724"^^xsd:string,
+        "7853:7858"^^xsd:string,
+        "7968:7973"^^xsd:string,
+        "8111:8116"^^xsd:string,
+        "8283:8288"^^xsd:string,
+        "8516:8521"^^xsd:string,
+        "8608:8613"^^xsd:string,
+        "8916:8921"^^xsd:string,
+        "9179:9184"^^xsd:string,
+        "9540:9545"^^xsd:string,
+        "9597:9602"^^xsd:string ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales"^^xsd:string,
+        "Harry Sussex"^^xsd:string,
+        "Harry Wales"^^xsd:string,
+        "Harry Windsor"^^xsd:string,
+        "Henry Charles Albert David"^^xsd:string,
+        "Henry Sussex"^^xsd:string,
+        "Henry Wales"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Harry"^^xsd:string,
+        "Prince Harry of Wales"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry Charles Albert"^^xsd:string,
+        "Prince Henry Charles Albert David"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry, Duke of Sussex"^^xsd:string,
+        "Prince Henry, Duke of Sussex, KCVO"^^xsd:string,
+        "The Prince Henry, Duke of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana-_Princess_of_Wales ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasRelation data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isUncleOf data:Prince_George_of_Wales .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "14307:14320"^^xsd:string,
+        "24344:24357"^^xsd:string,
+        "27901:27914"^^xsd:string,
+        "27901:27933"^^xsd:string,
+        "2801:2814"^^xsd:string,
+        "2801:2833"^^xsd:string,
+        "39316:39329"^^xsd:string ;
+    data:posIndicesPart "10044:10050"^^xsd:string,
+        "14740:14744"^^xsd:string,
+        "16883:16887"^^xsd:string,
+        "17290:17294"^^xsd:string,
+        "17713:17717"^^xsd:string,
+        "17875:17879"^^xsd:string,
+        "18146:18150"^^xsd:string,
+        "21318:21322"^^xsd:string,
+        "25135:25141"^^xsd:string,
+        "25437:25441"^^xsd:string,
+        "25598:25602"^^xsd:string,
+        "25804:25808"^^xsd:string,
+        "25847:25851"^^xsd:string,
+        "26035:26039"^^xsd:string,
+        "26308:26312"^^xsd:string,
+        "26610:26614"^^xsd:string,
+        "26850:26854"^^xsd:string,
+        "27246:27250"^^xsd:string,
+        "30252:30256"^^xsd:string,
+        "30433:30437"^^xsd:string,
+        "32782:32786"^^xsd:string,
+        "36991:36995"^^xsd:string,
+        "37176:37182"^^xsd:string,
+        "37756:37760"^^xsd:string,
+        "37927:37931"^^xsd:string,
+        "38125:38129"^^xsd:string,
+        "38772:38776"^^xsd:string,
+        "41838:41842"^^xsd:string,
+        "42038:42042"^^xsd:string,
+        "42465:42469"^^xsd:string,
+        "42876:42880"^^xsd:string,
+        "43551:43555"^^xsd:string,
+        "43845:43851"^^xsd:string,
+        "44001:44007"^^xsd:string,
+        "47524:47530"^^xsd:string,
+        "4830:4836"^^xsd:string,
+        "51592:51596"^^xsd:string,
+        "52094:52100"^^xsd:string,
+        "53150:53154"^^xsd:string,
+        "57643:57649"^^xsd:string,
+        "59787:59791"^^xsd:string,
+        "60012:60016"^^xsd:string,
+        "61142:61146"^^xsd:string,
+        "61186:61190"^^xsd:string,
+        "64889:64893"^^xsd:string,
+        "65040:65044"^^xsd:string,
+        "67147:67151"^^xsd:string,
+        "67188:67192"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III .
+
+data:William-_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William, Prince of Wales"^^xsd:string ;
+    data:posIndicesFull "2039:2046"^^xsd:string,
+        "2058:2065"^^xsd:string,
+        "23481:23488"^^xsd:string,
+        "23546:23553"^^xsd:string,
+        "2531:2538"^^xsd:string,
+        "2903:2910"^^xsd:string,
+        "35789:35796"^^xsd:string,
+        "35912:35919"^^xsd:string,
+        "36153:36160"^^xsd:string,
+        "36196:36210"^^xsd:string,
+        "36203:36210"^^xsd:string,
+        "3761:3768"^^xsd:string,
+        "4320:4327"^^xsd:string,
+        "511:518"^^xsd:string,
+        "511:535"^^xsd:string,
+        "54843:54850"^^xsd:string,
+        "58826:58833"^^xsd:string,
+        "67269:67276"^^xsd:string,
+        "67487:67494"^^xsd:string,
+        "67627:67634"^^xsd:string,
+        "877:884"^^xsd:string ;
+    data:posIndicesPart "1675:1681"^^xsd:string,
+        "1685:1690"^^xsd:string,
+        "25135:25141"^^xsd:string,
+        "37176:37182"^^xsd:string,
+        "37186:37191"^^xsd:string,
+        "42818:42823"^^xsd:string,
+        "43229:43234"^^xsd:string,
+        "43845:43851"^^xsd:string,
+        "44001:44007"^^xsd:string,
+        "47524:47530"^^xsd:string,
+        "4830:4836"^^xsd:string,
+        "52094:52100"^^xsd:string,
+        "5704:5709"^^xsd:string,
+        "57643:57649"^^xsd:string,
+        "57653:57658"^^xsd:string,
+        "64614:64619"^^xsd:string ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam"^^xsd:string,
+        "Prince William"^^xsd:string,
+        "Prince William Arthur Philip Louis of Wales"^^xsd:string,
+        "Prince William Arthur Philip Louis, Duke of Cambridge"^^xsd:string,
+        "Prince William of Wales"^^xsd:string,
+        "Prince William, Duke of Cambridge"^^xsd:string,
+        "William Arthur Philip Louis"^^xsd:string,
+        "William Arthur Philip Louis Mountbatten-Windsor"^^xsd:string,
+        "William Arthur Philip Louis, Prince of Wales"^^xsd:string,
+        "William Cambridge"^^xsd:string,
+        "William Wales"^^xsd:string,
+        "William Windsor"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasChild data:Prince_George_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana-_Princess_of_Wales ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_George_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isFatherOf data:Prince_George_of_Wales ;
+    :isParentOf data:Prince_George_of_Wales ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isUncleOf data:Prince_George_of_Wales .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "1619:1637"^^xsd:string,
+        "1625:1637"^^xsd:string,
+        "16841:16859"^^xsd:string,
+        "16847:16859"^^xsd:string,
+        "17557:17575"^^xsd:string,
+        "17563:17575"^^xsd:string,
+        "28070:28088"^^xsd:string,
+        "28076:28088"^^xsd:string,
+        "64745:64757"^^xsd:string,
+        "65626:65638"^^xsd:string,
+        "66714:66726"^^xsd:string ;
+    data:posIndicesPart "53233:53242"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "148:160"^^xsd:string,
+        "148:164"^^xsd:string,
+        "153:164"^^xsd:string,
+        "1698:1710"^^xsd:string,
+        "1698:1714"^^xsd:string,
+        "1703:1714"^^xsd:string,
+        "6472:6481"^^xsd:string,
+        "67230:67242"^^xsd:string,
+        "8673:8687"^^xsd:string ;
+    data:posIndicesPart "15191:15198"^^xsd:string,
+        "18515:18522"^^xsd:string,
+        "2590:2597"^^xsd:string,
+        "27164:27171"^^xsd:string,
+        "2858:2865"^^xsd:string,
+        "46386:46393"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+

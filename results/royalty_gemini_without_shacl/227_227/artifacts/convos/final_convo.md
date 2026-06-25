@@ -69,27 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Waldemar of Prussia (Joachim Friedrich Ernst Waldemar; 10 February 1868 – 27 March 1879) was the sixth child and youngest son of the German Crown Prince and Crown Princess, later Emperor Frederick III and Empress Victoria.
-Prince Waldemar was a grandson of both William I, German Emperor, and Queen Victoria of the United Kingdom.
-Biography
+The Duke of Castro  The Duchess of Castro
 
-Early life
 
-Waldemar was the favourite of both the Princess Royal and her husband.
-Waldemar had a "fun loving" character and a great sense of humour and love for animals and sports.
-On one occasion, when visiting his grandmother, Queen Victoria, Waldemar let loose his pet crocodile in her study, much to the shock of the middle-aged queen.
-The Princess Royal wrote that she would be unhappy when Waldemar went off to school, "as he is my very own boy."
-She seemed to prefer Waldemar over his elder brothers Wilhelm and Heinrich.
-Death
+Princess Maria Chiara of Bourbon-Two Sicilies, Duchess of Noto and Capri (Italian: Maria Chiara di Borbone delle
+Early life, family, and education
 
-Less than four months after the deaths of his maternal aunt, Alice, Grand Duchess of Hesse and cousin, Marie, Waldemar became seriously ill with diphtheria and died in Berlin, Germany on 27 March 1879.
-He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, near the main altar and his elder brother Prince Sigismund of Prussia.
+Maria Chiara was born in Rome on 1 January, 2005 to Prince Carlo, Duke of Castro and Camilla Crociani.
+She is the younger sister of Princess Maria Carolina.
+She grew up between Paris, Monte Carlo, and Rome.
+Her godparents are Princess Michael of Kent, Princess Victoria zu Windisch-Graetz, Prince Augusto Ruffo di Calabria, and Sergio Mantegazza.
+Adult life and charity work
+
+Maria Chiara is a patroness of the Monaco-based charity Rokethon, which raises money for abandoned dogs, and an ambassador of the ocean conservation nonprofit organization Passion Sea Project.
+She co-launched the YouTube channel Carolina & Chiara with her sister, which they started during the COVID-19 pandemic.
+In 2023, she attended the Monaco Grand Prix with Christian, Crown Prince of Denmark.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +107,9 @@ He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +124,23 @@ He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,175 +432,344 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ae58a91d-f603-4387-8bff-adf524781d74)
- Call ID: ae58a91d-f603-4387-8bff-adf524781d74
+  AssignClass (5bd4431e-a6ba-4015-baec-1cce85c917d9)
+ Call ID: 5bd4431e-a6ba-4015-baec-1cce85c917d9
   Args:
-    source: :Prince_Waldemar_of_Prussia
-    type: :Man
-  AssignClass (dfd1a6b6-690d-4da3-a3cc-ee4390feae74)
- Call ID: dfd1a6b6-690d-4da3-a3cc-ee4390feae74
-  Args:
-    source: :Prince_Waldemar_of_Prussia
     type: :Person
-  AddLiteral (9579f4ce-20e1-4c4e-a77a-b619926414c3)
- Call ID: 9579f4ce-20e1-4c4e-a77a-b619926414c3
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5577df63-df79-4aed-a977-ce61726bc1af)
+ Call ID: 5577df63-df79-4aed-a977-ce61726bc1af
   Args:
-    literal_value: Joachim Friedrich Ernst Waldemar
-    relation: :alsoKnownAs
-    source: :Prince_Waldemar_of_Prussia
-    literal_type: xsd:string
-  AddLiteral (7199e140-0e0c-437c-8356-5ed2eee38539)
- Call ID: 7199e140-0e0c-437c-8356-5ed2eee38539
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f325a7c6-3ea9-43fb-99b1-b94576eb1c9b)
+ Call ID: f325a7c6-3ea9-43fb-99b1-b94576eb1c9b
   Args:
-    source: :Prince_Waldemar_of_Prussia
+    type: :Person
+    source: Prince_Carlo_Duke_of_Castro
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Prince_Carlo_Duke_of_Castro a :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (3b7453e0-4c34-4f66-a6d7-39d0910a7843)
+ Call ID: 3b7453e0-4c34-4f66-a6d7-39d0910a7843
+  Args:
+    source: Prince_Carlo_Duke_of_Castro
+    type: :Man
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a4d4d23d-6e9e-412d-b229-808d112a8246)
+ Call ID: a4d4d23d-6e9e-412d-b229-808d112a8246
+  Args:
+    type: :Person
+    source: Camilla_Crociani
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Camilla_Crociani a :Person .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (9a80c8f6-8c3a-4dd5-98bb-1427ea771dab)
+ Call ID: 9a80c8f6-8c3a-4dd5-98bb-1427ea771dab
+  Args:
+    source: Camilla_Crociani
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (40fc697d-1df6-4bc6-911c-304e4ae2de4a)
+ Call ID: 40fc697d-1df6-4bc6-911c-304e4ae2de4a
+  Args:
+    literal_value: 2005
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1868
-  AddLiteral (aa174a21-837d-4a2d-baef-e5f69ed6f613)
- Call ID: aa174a21-837d-4a2d-baef-e5f69ed6f613
-  Args:
-    literal_value: 1879
-    source: :Prince_Waldemar_of_Prussia
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (05e7bcc8-b89f-498c-9127-bcd081081479)
- Call ID: 05e7bcc8-b89f-498c-9127-bcd081081479
-  Args:
-    type: :Man
-    source: :Frederick_III
-  AssignClass (bdcd57bd-27ca-4e23-91fe-6279d90b2711)
- Call ID: bdcd57bd-27ca-4e23-91fe-6279d90b2711
-  Args:
-    source: :Frederick_III
-    type: :Person
-  AssignClass (eac1a3ee-9ae7-4b43-aa3f-7cccf419f9a3)
- Call ID: eac1a3ee-9ae7-4b43-aa3f-7cccf419f9a3
-  Args:
-    source: :Victoria_Empress
-    type: :Woman
-  AssignClass (60478cd4-c1fe-4131-9f97-03be8a5f34ca)
- Call ID: 60478cd4-c1fe-4131-9f97-03be8a5f34ca
-  Args:
-    type: :Person
-    source: :Victoria_Empress
-  AddTriple (10c2e329-33b6-4423-b5ac-09bd21ed8b9f)
- Call ID: 10c2e329-33b6-4423-b5ac-09bd21ed8b9f
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (04b90eca-33d3-414a-8148-3f4045103b1f)
+ Call ID: 04b90eca-33d3-414a-8148-3f4045103b1f
   Args:
     relation: :hasFather
-    target: :Frederick_III
-    source: :Prince_Waldemar_of_Prussia
-  AddTriple (3a0d836e-9965-4f77-a934-18aedcfe2055)
- Call ID: 3a0d836e-9965-4f77-a934-18aedcfe2055
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
+    target: Prince_Carlo_Duke_of_Castro
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 ;
+      :hasFather data:Prince_Carlo_Duke_of_Castro .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (1db4955d-034b-4cb3-ab2a-e3e885c69453)
+ Call ID: 1db4955d-034b-4cb3-ab2a-e3e885c69453
   Args:
     relation: :hasMother
-    source: :Prince_Waldemar_of_Prussia
-    target: :Victoria_Empress
-  AssignClass (d70f7bfd-9238-4ca0-b13a-2d4c9f90f826)
- Call ID: d70f7bfd-9238-4ca0-b13a-2d4c9f90f826
+    target: Camilla_Crociani
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 ;
+      :hasFather data:Prince_Carlo_Duke_of_Castro ;
+      :hasMother data:Camilla_Crociani .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (989dc992-0401-45a3-8ff0-7afe176b43c0)
+ Call ID: 989dc992-0401-45a3-8ff0-7afe176b43c0
   Args:
-    type: :Man
-    source: :William_I
-  AssignClass (58f4316e-f385-412e-a6e9-9c3ddf930917)
- Call ID: 58f4316e-f385-412e-a6e9-9c3ddf930917
-  Args:
-    source: :William_I
     type: :Person
-  AssignClass (6aa29cf7-7888-4a5c-b6f7-0d0b88da7f22)
- Call ID: 6aa29cf7-7888-4a5c-b6f7-0d0b88da7f22
+    source: Princess_Maria_Carolina
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Maria_Carolina a :Person .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 ;
+      :hasFather data:Prince_Carlo_Duke_of_Castro ;
+      :hasMother data:Camilla_Crociani .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (269ad5fd-2690-4d84-8777-4fb1f6253ab4)
+ Call ID: 269ad5fd-2690-4d84-8777-4fb1f6253ab4
   Args:
-    source: :Queen_Victoria
+    source: Princess_Maria_Carolina
     type: :Woman
-  AssignClass (ffdb8755-e033-4775-96d4-aa290b88fb0e)
- Call ID: ffdb8755-e033-4775-96d4-aa290b88fb0e
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Maria_Carolina a :Person,
+          :Woman .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 ;
+      :hasFather data:Prince_Carlo_Duke_of_Castro ;
+      :hasMother data:Camilla_Crociani .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (a00396ac-4e9f-403e-b5db-9099d5aed230)
+ Call ID: a00396ac-4e9f-403e-b5db-9099d5aed230
   Args:
-    type: :Person
-    source: :Queen_Victoria
-  AddTriple (075bc4a4-68dd-4d5b-b015-97e9b0d18d94)
- Call ID: 075bc4a4-68dd-4d5b-b015-97e9b0d18d94
-  Args:
-    relation: :hasAncestor
-    source: :Prince_Waldemar_of_Prussia
-    target: :William_I
-  AddTriple (f404fa7f-85ef-473e-8a3c-25490fe225f4)
- Call ID: f404fa7f-85ef-473e-8a3c-25490fe225f4
-  Args:
-    relation: :hasAncestor
-    source: :Prince_Waldemar_of_Prussia
-    target: :Queen_Victoria
-  AssignClass (ed0bc000-e560-44b3-b9a4-d7ffc8310c4a)
- Call ID: ed0bc000-e560-44b3-b9a4-d7ffc8310c4a
-  Args:
-    source: :Wilhelm
-    type: :Man
-  AssignClass (a14254e4-2603-46ad-8072-932dfc81a794)
- Call ID: a14254e4-2603-46ad-8072-932dfc81a794
-  Args:
-    type: :Person
-    source: :Wilhelm
-  AssignClass (c407b542-6899-4ed4-a1c1-c9c69c3f9ef5)
- Call ID: c407b542-6899-4ed4-a1c1-c9c69c3f9ef5
-  Args:
-    type: :Man
-    source: :Heinrich
-  AssignClass (7f17a062-c994-449f-b1ae-0bdc20e80e23)
- Call ID: 7f17a062-c994-449f-b1ae-0bdc20e80e23
-  Args:
-    type: :Person
-    source: :Heinrich
-  AddTriple (394ba332-fcd4-435a-959f-3571597d9c31)
- Call ID: 394ba332-fcd4-435a-959f-3571597d9c31
-  Args:
-    relation: :isBrotherOf
-    target: :Prince_Waldemar_of_Prussia
-    source: :Wilhelm
-  AddTriple (14e3e8b1-4ff2-4209-88c7-9f69b639d56f)
- Call ID: 14e3e8b1-4ff2-4209-88c7-9f69b639d56f
-  Args:
-    relation: :isBrotherOf
-    target: :Prince_Waldemar_of_Prussia
-    source: :Heinrich
-  AssignClass (8e6d2141-387c-4f02-b25d-0831dd55896b)
- Call ID: 8e6d2141-387c-4f02-b25d-0831dd55896b
-  Args:
-    source: :Alice_of_Hesse
-    type: :Woman
-  AssignClass (13b8716a-70e6-4a5c-ba83-74701b1514eb)
- Call ID: 13b8716a-70e6-4a5c-ba83-74701b1514eb
-  Args:
-    source: :Alice_of_Hesse
-    type: :Person
-  AddTriple (60bd89a4-8a32-4dc2-bb52-3bc7047c36d2)
- Call ID: 60bd89a4-8a32-4dc2-bb52-3bc7047c36d2
-  Args:
-    relation: :isAuntOf
-    source: :Alice_of_Hesse
-    target: :Prince_Waldemar_of_Prussia
-  AssignClass (ef149eed-2781-42cd-b836-0e95f0048cc3)
- Call ID: ef149eed-2781-42cd-b836-0e95f0048cc3
-  Args:
-    source: :Marie_cousin
-    type: :Woman
-  AssignClass (c9ad2363-c439-4b85-ab9f-f139697c9658)
- Call ID: c9ad2363-c439-4b85-ab9f-f139697c9658
-  Args:
-    type: :Person
-    source: :Marie_cousin
-  AssignClass (2a66f1a4-fc81-4148-bd9c-8208879cc405)
- Call ID: 2a66f1a4-fc81-4148-bd9c-8208879cc405
-  Args:
-    type: :Man
-    source: :Prince_Sigismund_of_Prussia
-  AssignClass (c9f1cc3e-ed5f-4de3-b14a-481e674fe653)
- Call ID: c9f1cc3e-ed5f-4de3-b14a-481e674fe653
-  Args:
-    type: :Person
-    source: :Prince_Sigismund_of_Prussia
-  AddTriple (2c40f083-8526-4bbf-b1d0-88c1385da825)
- Call ID: 2c40f083-8526-4bbf-b1d0-88c1385da825
-  Args:
-    relation: :isBrotherOf
-    source: :Prince_Sigismund_of_Prussia
-    target: :Prince_Waldemar_of_Prussia
-  Finish (c62a60c9-a564-4ddd-a0c8-87d3246e1478)
- Call ID: c62a60c9-a564-4ddd-a0c8-87d3246e1478
+    source: Princess_Maria_Chiara_of_Bourbon-Two_Sicilies
+    target: Princess_Maria_Carolina
+    relation: :hasSister
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 2005 ;
+      :hasFather data:Prince_Carlo_Duke_of_Castro ;
+      :hasMother data:Camilla_Crociani ;
+      :hasSister data:Princess_Maria_Carolina .
+
+  data:Camilla_Crociani a :Person,
+          :Woman .
+
+  data:Prince_Carlo_Duke_of_Castro a :Man,
+          :Person .
+
+  data:Princess_Maria_Carolina a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (574c08d3-315a-4b90-a20d-c766aaa1df5a)
+ Call ID: 574c08d3-315a-4b90-a20d-c766aaa1df5a
   Args:

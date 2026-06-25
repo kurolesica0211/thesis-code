@@ -1,0 +1,342 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Patricia_Mountbatten a :Person,
+        :Woman ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSisterOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten .
+
+data:Herbert_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Herbert_Hicks ;
+    :hasChild data:David_Nightingale_Hicks ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSon data:David_Nightingale_Hicks ;
+    :isAncestorOf data:David_Nightingale_Hicks,
+        data:India_Hicks ;
+    :isBloodrelationOf data:Herbert_Hicks ;
+    :isBrotherOf data:Herbert_Hicks ;
+    :isFatherOf data:David_Nightingale_Hicks ;
+    :isParentOf data:David_Nightingale_Hicks ;
+    :isSiblingOf data:Herbert_Hicks ;
+    :isUncleOf data:David_Nightingale_Hicks .
+
+data:Iris_Elsie_Platten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:David_Nightingale_Hicks ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:Iris_Elsie_Platten ;
+    :hasSon data:David_Nightingale_Hicks ;
+    :isAncestorOf data:David_Nightingale_Hicks,
+        data:India_Hicks ;
+    :isAuntOf data:David_Nightingale_Hicks ;
+    :isBloodrelationOf data:Iris_Elsie_Platten ;
+    :isMotherOf data:David_Nightingale_Hicks ;
+    :isParentOf data:David_Nightingale_Hicks ;
+    :isSiblingOf data:Iris_Elsie_Platten ;
+    :isSisterOf data:Iris_Elsie_Platten .
+
+data:1st_Baron_Mount_Temple a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:1st_Baron_Mount_Temple ;
+    :hasChild data:Edwina_Ashley ;
+    :hasDaughter data:Edwina_Ashley ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :isAncestorOf data:Edwina_Ashley,
+        data:India_Hicks,
+        data:Pamela_Hicks ;
+    :isBloodrelationOf data:1st_Baron_Mount_Temple ;
+    :isBrotherOf data:1st_Baron_Mount_Temple ;
+    :isFatherOf data:Edwina_Ashley ;
+    :isParentOf data:Edwina_Ashley ;
+    :isSiblingOf data:1st_Baron_Mount_Temple ;
+    :isUncleOf data:Edwina_Ashley .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Louis_Mountbatten ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSon data:Louis_Mountbatten ;
+    :isAncestorOf data:India_Hicks,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Louis_Mountbatten ;
+    :isParentOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Louis_Mountbatten .
+
+data:Princess_Victoria_of_Hesse a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Louis_Mountbatten ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:Princess_Victoria_of_Hesse ;
+    :hasSon data:Louis_Mountbatten ;
+    :isAncestorOf data:India_Hicks,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks ;
+    :isAuntOf data:Louis_Mountbatten ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse ;
+    :isMotherOf data:Louis_Mountbatten ;
+    :isParentOf data:Louis_Mountbatten ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse ;
+    :isSisterOf data:Princess_Victoria_of_Hesse .
+
+data:Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:1st_Baron_Mount_Temple ;
+    :hasChild data:Pamela_Hicks ;
+    :hasDaughter data:Pamela_Hicks ;
+    :hasFather data:1st_Baron_Mount_Temple ;
+    :hasParent data:1st_Baron_Mount_Temple ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:Edwina_Ashley ;
+    :isAncestorOf data:India_Hicks,
+        data:Pamela_Hicks ;
+    :isAuntOf data:Pamela_Hicks ;
+    :isBloodrelationOf data:Edwina_Ashley ;
+    :isChildOf data:1st_Baron_Mount_Temple ;
+    :isDaughterOf data:1st_Baron_Mount_Temple ;
+    :isMotherOf data:Pamela_Hicks ;
+    :isParentOf data:Pamela_Hicks ;
+    :isSiblingOf data:Edwina_Ashley ;
+    :isSisterOf data:Edwina_Ashley .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :hasBirthYear 1929 ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten ;
+    :hasParent data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :isAncestorOf data:India_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isChildOf data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isSonOf data:Herbert_Hicks,
+        data:Iris_Elsie_Platten ;
+    :isUncleOf data:India_Hicks .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasBrother data:Louis_Mountbatten ;
+    :hasChild data:Pamela_Hicks ;
+    :hasDaughter data:Pamela_Hicks ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :isAncestorOf data:India_Hicks,
+        data:Pamela_Hicks ;
+    :isBloodrelationOf data:Louis_Mountbatten ;
+    :isBrotherOf data:Louis_Mountbatten ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :isFatherOf data:Pamela_Hicks ;
+    :isParentOf data:Pamela_Hicks ;
+    :isSiblingOf data:Louis_Mountbatten ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :isUncleOf data:Pamela_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasAncestor data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Pamela_Hicks ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:India_Hicks ;
+    :isBloodrelationOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Pamela_Hicks ;
+    :isSiblingOf data:India_Hicks ;
+    :isSisterOf data:India_Hicks .
+
+data:Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:1st_Baron_Mount_Temple,
+        data:Edwina_Ashley,
+        data:Louis_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasBirthYear 1929 ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley ;
+    :hasParent data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :hasRelation data:1st_Baron_Mount_Temple,
+        data:David_Nightingale_Hicks,
+        data:Edwina_Ashley,
+        data:Herbert_Hicks,
+        data:India_Hicks,
+        data:Iris_Elsie_Platten,
+        data:Louis_Mountbatten,
+        data:Pamela_Hicks,
+        data:Patricia_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse ;
+    :hasSister data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isAncestorOf data:India_Hicks ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isChildOf data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :isDaughterOf data:Edwina_Ashley,
+        data:Louis_Mountbatten ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSisterOf data:Pamela_Hicks,
+        data:Patricia_Mountbatten .
+

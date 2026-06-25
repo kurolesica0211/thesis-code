@@ -69,38 +69,19 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ferdinand Pius (Ferdinando Pio Maria), Duke of Calabria and Castro (25 July 1869, Rome – 7 January 1960, Lindau), was head of the House of Bourbon-Two Sicilies and pretender to the throne of the extinct Kingdom of the Two Sicilies from 1934 to 1960.
-Family
+Princess Anne of Orléans (Anne Hélène Marie; 5 August 1906 – 19 March 1986) was a member of the House of Orléans and the Duchess of Aosta by marriage.
+She was the daughter of Prince Jean, Duke of Guise, and Princess Isabelle of Orléans.
+Marriage and issue
 
-Ferdinand was the eldest child of Prince Alfonso, Count of Caserta and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-He was a grandson of Ferdinand II of the Two Sicilies and an older brother of Prince Carlos of Bourbon-Two Sicilies, Maria Immaculata, Princess Johann Georg of Saxony, Maria Cristina, Archduchess Peter Ferdinand of Austria, Maria di Grazia, Princess Imperial of Brazil, Prince Ranieri, Duke of Castro, Prince Philip of Bourbon-Two Sicilies, and Prince Gabriel of Bourbon-Two Sicilies.
-Marriage
-
-Ferdinand married Princess Maria Ludwiga Theresia of Bavaria, daughter of King Ludwig III of Bavaria on 31 May 1897.
-They had six children:
-
-
-Ferdinand and Maria lived for many years at Villa Amsee, Lindau.
-Disputed succession
-
-Following Ferdinand's death, the headship of the House of Bourbon-Two Sicilies was claimed by both his nephew Infante Alfonso, Duke of Calabria, and his brother Prince Ranieri, Duke of Castro, and remains disputed between their descendants.
-The basis of Alfonso’s claim was that his late father, Prince Carlos of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
-But Henri, Count of Paris, upheld the claim of Ferdinand's younger brother, Prince Ranieri, Duke of Castro (1883–1973), contending that Carlos had renounced his rights of succession for himself and his descendants in 1901 when he married the Spanish heiress presumptive María de las Mercedes, Princess of Asturias.
-The Count of Paris was well aware that his own claim to the French throne depended on the validity of the renunciation in 1713 of Philip V of Spain, in favor of the junior House of Orléans.
-In 1900, Prince Carlos had executed the Act of Cannes, in anticipation of his marriage to María de las Mercedes, and in 1901 he became a Spanish subject and accepted the title of Infante.
-The position of Ranieri was that by so doing Carlos had renounced any claim to the throne of the Two Sicilies.
-But Alfonso had a different interpretation, which was that the Act of Cannes would have taken effect only if Mercedes and Carlos had succeeded to the Spanish throne.
-He also argued that the Act of Cannes was invalid under the succession rules of the house of Two Sicilies.
-Military service
-
-Ferdinand initially served in the Spanish Army, and after leaving service held the honorary rank of Comandante of the General Staff of the Spanish Army.
-Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), which was renamed in honor of him.
+She married at Naples, Italy, on 5 November 1927, her first cousin Prince Amedeo of Savoy, Duke of Aosta (1898–1942).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +97,9 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +114,23 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +148,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +253,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +273,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +283,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +323,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,117 +422,99 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ab1306f9-7fe9-4630-8cc9-49a254a2bb57)
- Call ID: ab1306f9-7fe9-4630-8cc9-49a254a2bb57
+  AssignClass (c6d73d40-ab0f-4ac3-80ec-05ac9d972e53)
+ Call ID: c6d73d40-ab0f-4ac3-80ec-05ac9d972e53
   Args:
-    type: :Man
-    source: Ferdinand_Pius
-  AssignClass (e5db065a-19d6-4490-9328-fc0c69818af6)
- Call ID: e5db065a-19d6-4490-9328-fc0c69818af6
-  Args:
-    source: Ferdinand_Pius
+    source: :PrincessAnneOfOrleans
     type: :Person
-  AddLiteral (2acb0d3d-a81b-412d-a22e-3c973db05093)
- Call ID: 2acb0d3d-a81b-412d-a22e-3c973db05093
+  AssignClass (7458f31f-f6e5-4939-9d99-b6a4233f31dc)
+ Call ID: 7458f31f-f6e5-4939-9d99-b6a4233f31dc
+  Args:
+    source: :PrincessAnneOfOrleans
+    type: :Woman
+  AddLiteral (e5d9003e-b023-468c-9536-d718f92eba59)
+ Call ID: e5d9003e-b023-468c-9536-d718f92eba59
   Args:
     literal_type: xsd:integer
-    literal_value: 1869
-    source: Ferdinand_Pius
+    literal_value: 1906
     relation: :hasBirthYear
-  AddLiteral (56506f85-4d08-4faa-8b4b-1ebcf83f91b4)
- Call ID: 56506f85-4d08-4faa-8b4b-1ebcf83f91b4
+    source: :PrincessAnneOfOrleans
+  AddLiteral (577421ee-1fc4-45b1-95c7-855cdda73da3)
+ Call ID: 577421ee-1fc4-45b1-95c7-855cdda73da3
   Args:
-    source: Ferdinand_Pius
-    literal_value: 1960
     literal_type: xsd:integer
+    literal_value: 1986
     relation: :hasDeathYear
-  AssignClass (a1608feb-f7ad-4b0e-9fdd-74bf36c4a1ed)
- Call ID: a1608feb-f7ad-4b0e-9fdd-74bf36c4a1ed
+    source: :PrincessAnneOfOrleans
+  AssignClass (0638a709-65bb-413e-9efd-29349d894bc7)
+ Call ID: 0638a709-65bb-413e-9efd-29349d894bc7
   Args:
+    source: :PrinceJeanDukeOfGuise
+    type: :Person
+  AssignClass (39745fb8-f008-45a7-80fd-f8f2d6f35949)
+ Call ID: 39745fb8-f008-45a7-80fd-f8f2d6f35949
+  Args:
+    source: :PrinceJeanDukeOfGuise
     type: :Man
-    source: Alfonso_Count_of_Caserta
-  AssignClass (877d8cfd-fbdd-47fa-ac86-111915b2a715)
- Call ID: 877d8cfd-fbdd-47fa-ac86-111915b2a715
+  AssignClass (72f05133-62b0-40a4-979f-d04072d0e5c8)
+ Call ID: 72f05133-62b0-40a4-979f-d04072d0e5c8
   Args:
+    source: :PrincessIsabelleOfOrleans
     type: :Person
-    source: Alfonso_Count_of_Caserta
-  AssignClass (93b3de1d-004a-4896-bcbf-9431e9d0263a)
- Call ID: 93b3de1d-004a-4896-bcbf-9431e9d0263a
+  AssignClass (c0bd58d4-3da2-4ade-b442-db6aab375ee1)
+ Call ID: c0bd58d4-3da2-4ade-b442-db6aab375ee1
   Args:
+    source: :PrincessIsabelleOfOrleans
     type: :Woman
-    source: Maria_Antonietta
-  AssignClass (85dd986f-7389-4c8d-a299-fc4a0f0b88ea)
- Call ID: 85dd986f-7389-4c8d-a299-fc4a0f0b88ea
+  AddTriple (7a985ea5-6e6d-4a11-82d7-fb3b5f4b32ee)
+ Call ID: 7a985ea5-6e6d-4a11-82d7-fb3b5f4b32ee
   Args:
-    source: Maria_Antonietta
-    type: :Person
-  AddTriple (ecc361f4-95a8-43fe-ae4f-d071b01097eb)
- Call ID: ecc361f4-95a8-43fe-ae4f-d071b01097eb
-  Args:
+    target: :PrinceJeanDukeOfGuise
+    source: :PrincessAnneOfOrleans
     relation: :hasFather
-    target: Alfonso_Count_of_Caserta
-    source: Ferdinand_Pius
-  AddTriple (8ddf61db-d33e-42cd-b471-d22f324afe48)
- Call ID: 8ddf61db-d33e-42cd-b471-d22f324afe48
+  AddTriple (e9331ffa-4938-4cfb-bacf-f7c9c0a870d1)
+ Call ID: e9331ffa-4938-4cfb-bacf-f7c9c0a870d1
   Args:
+    target: :PrincessIsabelleOfOrleans
     relation: :hasMother
-    target: Maria_Antonietta
-    source: Ferdinand_Pius
-  AssignClass (a3e4b4de-9533-46f9-a2b4-a74a344fd217)
- Call ID: a3e4b4de-9533-46f9-a2b4-a74a344fd217
+    source: :PrincessAnneOfOrleans
+  AssignClass (831b8d7e-3479-4206-b380-93b8d48a0546)
+ Call ID: 831b8d7e-3479-4206-b380-93b8d48a0546
   Args:
+    source: :PrinceAmedeoOfSavoyDukeOfAosta
+    type: :Person
+  AssignClass (19e982b6-911d-4e7c-9576-73d8c5b9c276)
+ Call ID: 19e982b6-911d-4e7c-9576-73d8c5b9c276
+  Args:
+    source: :PrinceAmedeoOfSavoyDukeOfAosta
     type: :Man
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (b7f33492-66ba-4e36-a5da-114c64b8190a)
- Call ID: b7f33492-66ba-4e36-a5da-114c64b8190a
+  AddLiteral (ab1ac82c-1eda-4b6a-8d4b-89b437b5234c)
+ Call ID: ab1ac82c-1eda-4b6a-8d4b-89b437b5234c
   Args:
-    source: Ferdinand_II_of_the_Two_Sicilies
-    type: :Person
-  AddTriple (ca7026a3-3910-48f7-9ba7-6dc74d99c84a)
- Call ID: ca7026a3-3910-48f7-9ba7-6dc74d99c84a
-  Args:
-    source: Ferdinand_Pius
-    relation: :hasAncestor
-    target: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (0ef91b75-02eb-4a18-8198-1440f3665f82)
- Call ID: 0ef91b75-02eb-4a18-8198-1440f3665f82
-  Args:
-    type: :Woman
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-  AssignClass (46a75a9f-e798-4984-9bfd-5594798fdb32)
- Call ID: 46a75a9f-e798-4984-9bfd-5594798fdb32
-  Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    type: :Person
-  AddLiteral (529e2510-a331-4050-9c83-ebb1bf775b55)
- Call ID: 529e2510-a331-4050-9c83-ebb1bf775b55
-  Args:
+    source: :PrinceAmedeoOfSavoyDukeOfAosta
+    relation: :hasBirthYear
+    literal_value: 1898
     literal_type: xsd:integer
-    literal_value: 1897
-    source: Ferdinand_Pius
+  AddLiteral (986bcbe2-f161-4ad3-9548-63f24ad25d64)
+ Call ID: 986bcbe2-f161-4ad3-9548-63f24ad25d64
+  Args:
+    relation: :hasDeathYear
+    source: :PrinceAmedeoOfSavoyDukeOfAosta
+    literal_type: xsd:integer
+    literal_value: 1942
+  AddLiteral (80f2da63-da6d-40e3-9043-d7175390c1c6)
+ Call ID: 80f2da63-da6d-40e3-9043-d7175390c1c6
+  Args:
+    source: :PrincessAnneOfOrleans
     relation: :hasMarriageYear
-  AddTriple (57687f9c-8ecd-4e77-b21d-76ebb144990f)
- Call ID: 57687f9c-8ecd-4e77-b21d-76ebb144990f
+    literal_value: 1927
+    literal_type: xsd:integer
+  AddTriple (649ebc6d-2312-41a9-a7d8-48c42c6eecfa)
+ Call ID: 649ebc6d-2312-41a9-a7d8-48c42c6eecfa
   Args:
-    target: Maria_Ludwiga_Theresia_of_Bavaria
     relation: :hasRelation
-    source: Ferdinand_Pius
-  AssignClass (6fa8a4cd-dcbf-4804-b7f4-7e7b2643c90a)
- Call ID: 6fa8a4cd-dcbf-4804-b7f4-7e7b2643c90a
-  Args:
-    source: Ludwig_III_of_Bavaria
-    type: :Man
-  AssignClass (ccba54ff-b77b-4f21-b2fa-26c83a148fb0)
- Call ID: ccba54ff-b77b-4f21-b2fa-26c83a148fb0
-  Args:
-    type: :Person
-    source: Ludwig_III_of_Bavaria
-  AddTriple (44e5a2b1-9cca-494c-9bfd-7dcfa289700c)
- Call ID: 44e5a2b1-9cca-494c-9bfd-7dcfa289700c
-  Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    target: Ludwig_III_of_Bavaria
-    relation: :hasFather
-  Finish (9a07d8b5-9d64-479b-8a06-67b69d066556)
- Call ID: 9a07d8b5-9d64-479b-8a06-67b69d066556
+    source: :PrincessAnneOfOrleans
+    target: :PrinceAmedeoOfSavoyDukeOfAosta
+  Finish (52734930-e96b-47fe-9ce3-0f8bbad84978)
+ Call ID: 52734930-e96b-47fe-9ce3-0f8bbad84978
   Args:

@@ -7,10 +7,16 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Robert-_Archduke_of_Austria-Este a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Princess_Luisa_Maria_of_Belgium a :Person ;
+    rdfs:label "Princess Luisa Maria of Belgium" ;
+    data:wdtLink wdt:Q2057996 ;
+    :alsoKnownAs "Luisa Maria Anna Martine Pilar",
+        "Luisa Maria de Belgique, Princesse de Belgique",
+        "Luisa Maria van België" ;
+    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:female .
+
+data:Robert-_Archduke_of_Austria-Este a :Person ;
     rdfs:label "Robert, Archduke of Austria-Este" ;
     data:posIndicesFull "1138:1170" ;
     data:wdtLink wdt:Q112108 ;
@@ -25,10 +31,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Person ;
     rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
     data:posIndicesFull "37:54" ;
     data:posIndicesPart "1009:1016",
@@ -55,23 +58,9 @@ data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
         "969:973" ;
     data:wdtLink wdt:Q170194 ;
     :alsoKnownAs "Astrid of Belgium" ;
-    :hasChild data:Princess_Luisa_Maria_of_Belgium ;
-    :hasDaughter data:Princess_Luisa_Maria_of_Belgium ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Luisa_Maria_of_Belgium ;
-    :isParentOf data:Princess_Luisa_Maria_of_Belgium .
+    :hasSex data:female .
 
-data:Princess_Luisa_Maria_of_Belgium a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Luisa Maria of Belgium" ;
-    data:wdtLink wdt:Q2057996 ;
-    :alsoKnownAs "Luisa Maria Anna Martine Pilar",
-        "Luisa Maria de Belgique, Princesse de Belgique",
-        "Luisa Maria van België" ;
-    :hasMother data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :isDaughterOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
+data:male a :Male .
+
+data:female a :Female .
 

@@ -7,29 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
-    data:posIndicesFull "245:283" ;
-    data:wdtLink wdt:Q2085981 ;
-    :hasChild data:Princess_Feodora_of_Saxe-Meiningen ;
-    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Feodora_of_Saxe-Meiningen ;
-    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen .
-
-data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Feodora_of_Saxe-Meiningen a :Person ;
     rdfs:label "Princess Feodora of Saxe-Meiningen" ;
     data:posIndicesFull "0:16",
         "0:34" ;
@@ -52,9 +30,22 @@ data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
         "726:735" ;
     data:wdtLink wdt:Q66639 ;
     :alsoKnownAs "Princess Feodora" ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
     :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "245:283" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasSex data:female .
+
+data:female a :Female .
 

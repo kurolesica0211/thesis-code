@@ -281,7 +281,7 @@ def collect_extracted_entities(graph: Graph) -> list[URIRef]:
     return sorted(entities, key=str)
 
 
-def collect_candidate_entities(graph: Graph, start_entity: URIRef, max_depth: int = 2) -> dict[str, int]:
+def collect_candidate_entities(graph: Graph, start_entity: URIRef, max_depth: int = 3) -> dict[str, int]:
     candidates: dict[str, int] = {str(start_entity): 0}
     frontier: set[URIRef] = {start_entity}
     visited: set[URIRef] = {start_entity}
@@ -678,7 +678,7 @@ def build_folder_payload(
     main_entity = entity_by_qid[item_qid]
     main_label = label_by_qid.get(item_qid) or article_label or local_name(str(main_entity))
 
-    candidate_entities = collect_candidate_entities(ground_truth_graph, main_entity, max_depth=2)
+    candidate_entities = collect_candidate_entities(ground_truth_graph, main_entity, max_depth=3)
     candidate_entities = {
         uri: depth
         for uri, depth in candidate_entities.items()

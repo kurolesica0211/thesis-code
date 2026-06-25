@@ -85,56 +85,145 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Princess Beatrix*
 
 
-The Count of ÉvreuxThe Countess of Évreux
+Princess Margriet*Pieter van Vollenhoven*
 
 
-Princess Béatrice
+Beatrix (Beatrix Wilhelmina Armgard, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Dutch pronunciation:  i; born 31 January 1938) is a member of the Dutch royal house who reigned as Queen of the Netherlands from 30 April 1980 until her abdication in 2013.
+Beatrix was born during the reign of her maternal grandmother, Queen Wilhelmina, and became heiress presumptive upon the accession of her mother, Queen Juliana, in 1948.
+Beatrix attended a public primary school in Canada during World War II, and then finished her primary and secondary education in the Netherlands in the post-war period.
+In 1966, Beatrix married Claus von Amsberg, a German diplomat, with whom she had three children.
+When her mother abdicated on 30 April 1980, Beatrix succeeded her as queen.
+Beatrix's reign saw the country's Caribbean territories reshaped with Aruba's secession and becoming its own constituent country within the kingdom in 1986.
+This was followed by the dissolution of the Netherlands Antilles in 2010, which created the new special municipalities of Bonaire, Sint Eustatius, and Saba, and the two new constituent countries of Curaçao and Sint Maarten.
+On Koninginnedag (Queensday), 30 April 2013, Beatrix abdicated in favour of her eldest son, Willem-Alexander.
+At the time of her abdication at age 75, Beatrix was the oldest reigning monarch in the country's history.
+Early life
+
+Princess Beatrix Wilhelmina Armgard was born on 31 January 1938 at Soestdijk Palace in Baarn, Netherlands, as the first child of Princess Juliana of the Netherlands and her husband, Prince Bernhard of Lippe-Biesterfeld.
+Beatrix was baptised on 12 May 1938 in the Great Church in The Hague.
+Her five godparents were King Leopold III of Belgium; Princess Alice, Countess of Athlone; Beatrix's maternal great-great-aunt Elisabeth, Princess of Erbach-Schönberg; her paternal great-uncle Duke Adolf Friedrich of Mecklenburg; and Countess Allene de Kotzebue.
+Beatrix's middle names are the first names of her grandmothers, Queen Wilhelmina of the Netherlands and Armgard, Princess of Lippe-Biesterfeld.
+When Beatrix was one year old, in 1939, her younger sister Princess Irene was born.
+World War II broke out in the Netherlands on 10 May 1940 (Westfeldzug).
+One month later, Beatrix went to Ottawa, Ontario, Canada, with her mother Juliana and her sister Irene, while her father Bernhard and maternal grandmother Queen Wilhelmina remained in London.
+While on Bigwin Island, the constitution of the Netherlands was stored in the safe of Bigwin Inn's rotunda building.
+Princess Juliana and her family were remembered for their "down to earth" friendliness, general gratefulness and great reverence for their homeland and people, to whom they paid homage by refraining from all luxuries offered to guests at the resort that was once billed as the largest and most luxurious summer resort in Canada.
+In the years following the shuttering and neglect of the island resort, the "Juliana" cottages were well maintained and preserved in an informal tribute to Princess Juliana and her family.
+In appreciation for the protection of her and her daughters, Princess Juliana established the custom of delivery to the Canadian government every spring of tulips, which is the centrepiece of the Canadian Tulip Festival.
+The second sister of Beatrix, Princess Margriet, was born in Ottawa in 1943.
+During their exile in Canada, Beatrix attended nursery and Rockcliffe Park Public School, a primary school where she was known as "Trixie Orange".
+On 5 May 1945, the German troops in the Netherlands surrendered.
+The family returned to the Netherlands on 2 August 1945.
+Beatrix went to the progressive primary school De Werkplaats in Bilthoven run by pacifist social reformers Kees Boeke and Beatrice Boeke-Cadbury.
+On 6 September 1948, her mother succeeded her grandmother Wilhelmina as Queen of the Netherlands.
+Since she had no brothers, Beatrix became the heiress presumptive to the Dutch throne at the age of ten.
+Education
+
+In April 1950, Princess Beatrix entered the Incrementum, a part of Baarnsch Lyceum, where, in 1956, she passed her school graduation examinations in the subjects of arts and classics.
+In 1954, Beatrix served as a bridesmaid at the wedding of Baroness van Randwijck and Mr. T Boey.
+On 31 January 1956, Beatrix celebrated her 18th birthday.
+From that date, under the Constitution of the Netherlands, she was entitled to assume the Royal Prerogative.
+In the course of her studies she also attended lectures on the cultures of Suriname and the Netherlands Antilles, the Charter for the Kingdom of the Netherlands, international affairs, international law, history and European law.
+Political involvement
+
+In 1965, Beatrix became engaged to the German aristocrat Claus von Amsberg, a diplomat working for the German Foreign Office.
+Prince Claus had served in the Hitler Youth and the Wehrmacht and therefore was easily associated with German Nazism.
+Protests included slogans like "Claus 'raus!"
+(Claus out!) and "Mijn fiets terug" ("Return my bicycle" – a reference to German soldiers confiscating Dutch bicycles during WWII).
+As time went on, Prince Claus became one of the most popular members of the Dutch monarchy.
+On 25 November 1975, Beatrix and Prince Claus attended the independence ceremony of Suriname, held in the new nation's capital, Paramaribo, representing her mother the Queen.
+As a monarch, Beatrix had weekly meetings with the prime minister.
+Beatrix is a member of the Bilderberg Group.
+Marriage and children
+
+Engagement to Claus
+
+On 28 June 1965, the engagement of Princess Beatrix to the German diplomat Claus von Amsberg was announced.
+Claus and Beatrix had met at the wedding-eve party of Princess Tatjana of Sayn-Wittgenstein-Berleburg and Moritz, Landgrave of Hesse, in summer 1964.
+After Parliament consented to the marriage, Claus von Amsberg became a Dutch citizen, and upon his marriage became Prince Claus of the Netherlands, Jonkheer van Amsberg.
+Wedding, 1966
+
+Beatrix married Claus von Amsberg on 10 March 1966 in civil and religious ceremonies.
+The senior bridesmaids were the bride's youngest sister, Princess Christina of the Netherlands; Princess Christina of Sweden; Lady Elizabeth Anson; Joanna Roëll; Eugénie Loudon; and the bridegroom's sister, Christina von Amsberg.
+The junior bridesmaids were Daphne Stewart-Clark and Carolijn Alting von Geusau, with page boys Joachim Jencquel and Markus von Oeynhausen-Sierstorpff.
+They lived at Drakensteyn Castle in Lage Vuursche with their children until Beatrix ascended the throne.
+Accession and inauguration
+
+From the 1970s, Beatrix began to prepare more intensively for her future position as head of state.
+She made many trips abroad with Prince Claus, including a controversial one to the Soviet Union.
+After the Lockheed affair, Beatrix and Claus began to delve into the royal household and made plans to adapt it.
+In addition, they asked advisers to prepare for Beatrix's reign.
+On 31 January 1980, the birthday of her eldest daughter and heiress presumptive, Queen Juliana announced during a live television speech that she wished to abdicate on 30 April in favor of her daughter Beatrix.
+That Beatrix would succeed her mother as queen was not a matter of course when she was born.
+It was only after it was clear that Juliana was biologically unable to have any more children, let alone a son, that Beatrix was certain that she was the intended successor.
+On 30 April 1980, Juliana abdicated, and Beatrix became the 13th member of the House of Orange to reign over the Netherlands.
+Reign
+
+Beatrix's constitutional duties included those typically accorded to a head of state; this includes having to sign every piece of legislation before it becomes law, formally appointing various officials, receiving and accrediting ambassadors, and awarding honours and medals, among others.
+Beatrix was rarely quoted directly in the press during her reign, for the government information service (Rijksvoorlichtingsdienst) made it a condition of interviews that she should not be quoted.
+It did not apply to her son Prince Willem-Alexander.
+Throughout much of her reign, Beatrix had a considerable role in the cabinet formation process; notably she appointed the informateur and formateur, the person who leads the negotiations that ultimately lead to the formation of a government.
+Beatrix was included in Andy Warhol's portrait series in 1985 as one of four Reigning Queens, alongside Elizabeth II, Margrethe II of Denmark and Ntfombi of Eswatini.
+On 1 January 1986, Aruba seceded from the Netherlands Antilles and became a separate constituent country within the Dutch Kingdom.
+Kissed by a bystander
+
+During 1988 Queen's Day, Queen Beatrix was kissed by a bystander, later identified as Maarten Rijkers, when she walked through the crowd of people at a flea market in the Jordaan.
+When Beatrix walked alongside Rijkers he said "Give me a kiss, girl", after which he gave her a hug and two kisses.
+Later years
+
+On 6 October 2002, the Queen's husband, Prince Claus, died after a long illness.
+On 8 February 2005, Beatrix received a rare honorary doctorate from Leiden University, an honour the Queen does not usually accept.
+Beatrix was to tie the prestigious medal to the standard of the incumbents of the 1st Independent Polish Parachute Brigade.
+On 30 April 2009, Beatrix and other members of the royal family were targeted in a car attack by a man named Karst Tates.
+Within hours, Beatrix made a rare televised address to express her shock and condolences.
+Abdication
+
+In a broadcast on national media on 28 January 2013, Beatrix announced her intention to abdicate on 30 April (Koninginnedag), when she would have been on the throne for exactly 33 years.
+Beatrix stated that it was time to "place the responsibility for the country in the hands of a new generation."
+Her heir apparent was her eldest son, Prince Willem-Alexander.
+The broadcast was followed by a statement from Prime Minister Mark Rutte who paid tribute to Beatrix, saying "Since her investiture in 1980, she has applied herself heart and soul to Dutch society."
+Post-abdication
+
+Beatrix continues to undertake some royal duties and is a patron of many organisations.
+Honorific eponyms
+
+Beatrix has given her name to a number of facilities in the Netherlands and beyond.
+These include:
 
 
-The Duke of OrléansThe Duchess of Orléans
+A few parks in the country also bear her name:
 
 
-The Dowager Countess of La Marche
+It has been speculated that Beatrix is De Onbekende Beeldhouwer (Unknown Sculptor), whose work has been appearing in Amsterdam since 1983.
+Titles, styles, honours and arms
 
+Princess Beatrix has held titles throughout her life, as a granddaughter or daughter of a monarch, and eventually as the Sovereign.
+Beatrix's official title was Her Majesty the Queen of the Netherlands, Princess of Orange-Nassau, etc., etc., etc.
+She signed official documents with only "Beatrix".
+Beatrix has received honours and awards from countries around the world, both during her life as a princess and as a monarch.
+From birth till her inauguration as queen, she had the following name and titles, to which she reverted after her abdication: Her Royal Highness Princess Beatrix of the Netherlands, Princess of Orange-Nassau, Princess of Lippe-Biesterfeld.
+Prime Ministers during her reign
 
-The Countess of Schönborn-Buchheim
+Notes
 
+References
 
-Princess Hélène, Countess of Limburg Stirum
+Books
 
+External links
 
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Charles Philippe Marie Louis d'Orléans (born 3 March 1973) is a member of the House of Orléans.
-He is the elder of two sons of Prince Michel d'Orléans and his former wife Béatrice Pasquier de Franclieu.
-His paternal grandfather was Prince Henri d'Orléans, the Orléanist pretender to the French throne.
-The couple's only child, Princess Isabelle d'Orléans, was born on 22 February 2012 in Lisbon, Portugal.
-Her godparents are Princess Maria Theodora zu Löwenstein-Wertheim-Freudenberg and Felipe VI of Spain (then Prince of Asturias).
-Charles-Philippe and Naomi-Valeska's child, Princess Élisabeth Victoire Jeanne Marie d'Orléans, was born on 15 April 2026 in Monaco.
-His acceptance of this role placed the order under the sanction of a dynastic prince of the House of Bourbon, in what is said to be a continuation of a tradition established since the 13th century when the Order of Saint Lazarus came under the protection of King Philippe le Bel.
-Title controversy
-
-On 8 December 2004, he received the title "Duke of Anjou" from his uncle Prince Henri d'Orléans, head of the House of Orléans.
-There is some controversy in the use of this title by an Orléans prince.
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -150,39 +239,9 @@ There is some controversy in the use of this title by an Orléans prince.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -197,6 +256,23 @@ There is some controversy in the use of this title by an Orléans prince.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -214,6 +290,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,29 +372,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -312,6 +395,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -324,6 +415,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -332,17 +425,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -370,6 +465,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -385,137 +564,179 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (53b04b3b-2dbe-4953-a385-d226ed31c9c1)
- Call ID: 53b04b3b-2dbe-4953-a385-d226ed31c9c1
+  AssignClass (1b1e5346-1764-4d7b-b687-0ac91aa252eb)
+ Call ID: 1b1e5346-1764-4d7b-b687-0ac91aa252eb
   Args:
-    type: :Man
-    source: Charles Philippe Marie Louis d'Orléans
-  AssignClass (3a018f5f-e320-4fe1-8bee-146fa4ea21b9)
- Call ID: 3a018f5f-e320-4fe1-8bee-146fa4ea21b9
-  Args:
-    type: :Man
-    source: Prince Michel d'Orléans
-  AssignClass (4e026526-5ae4-46e8-8636-4b53717e3b0f)
- Call ID: 4e026526-5ae4-46e8-8636-4b53717e3b0f
-  Args:
+    source: Beatrix
     type: :Woman
-    source: Béatrice Pasquier de Franclieu
-  AssignClass (3a14fe56-c382-4c2c-b628-bbd58b4e3b52)
- Call ID: 3a14fe56-c382-4c2c-b628-bbd58b4e3b52
+  AssignClass (9ef0db92-27dd-4dbc-9d10-831aa97421c2)
+ Call ID: 9ef0db92-27dd-4dbc-9d10-831aa97421c2
   Args:
-    type: :Man
-    source: Prince Henri d'Orléans
-  AssignClass (bd58a2e8-329d-44b1-9640-fd980aa40699)
- Call ID: bd58a2e8-329d-44b1-9640-fd980aa40699
+    source: Beatrix
+    type: :Person
+  AddLiteral (6fbe308b-c946-4dda-b0ba-d0a831940ed9)
+ Call ID: 6fbe308b-c946-4dda-b0ba-d0a831940ed9
   Args:
-    source: Princess Isabelle d'Orléans
-    type: :Woman
-  AssignClass (d16271c9-3243-4327-b2e7-db5f022341b7)
- Call ID: d16271c9-3243-4327-b2e7-db5f022341b7
-  Args:
-    source: Princess Élisabeth Victoire Jeanne Marie d'Orléans
-    type: :Woman
-  AssignClass (0ac14650-ba1c-4e63-813b-559a67d4cffe)
- Call ID: 0ac14650-ba1c-4e63-813b-559a67d4cffe
-  Args:
-    type: :Woman
-    source: Naomi-Valeska
-  AddLiteral (d781ab1f-8541-4085-a9aa-1afde1220bd1)
- Call ID: d781ab1f-8541-4085-a9aa-1afde1220bd1
-  Args:
+    literal_value: 1938
+    relation: :hasBirthYear
+    source: Beatrix
     literal_type: xsd:integer
-    source: Charles Philippe Marie Louis d'Orléans
-    relation: :hasBirthYear
-    literal_value: 1973
-  AddTriple (7145c9a8-82e6-4625-aacb-25553c39d657)
- Call ID: 7145c9a8-82e6-4625-aacb-25553c39d657
+  AssignClass (4f690052-8c1d-483c-8743-4dae08d363a7)
+ Call ID: 4f690052-8c1d-483c-8743-4dae08d363a7
   Args:
-    target: Prince Michel d'Orléans
-    source: Charles Philippe Marie Louis d'Orléans
+    source: Juliana
+    type: :Woman
+  AssignClass (8ea1f9cb-aeb5-4c3c-ade1-fce2bb6a7748)
+ Call ID: 8ea1f9cb-aeb5-4c3c-ade1-fce2bb6a7748
+  Args:
+    source: Juliana
+    type: :Person
+  AssignClass (d761cf41-3174-4f5c-ac54-5dffcdcbf87b)
+ Call ID: d761cf41-3174-4f5c-ac54-5dffcdcbf87b
+  Args:
+    type: :Man
+    source: Bernhard
+  AssignClass (91025ed5-5347-4b5d-a62f-17dff2790dc4)
+ Call ID: 91025ed5-5347-4b5d-a62f-17dff2790dc4
+  Args:
+    source: Bernhard
+    type: :Person
+  AddTriple (2e3345fe-9865-4a7b-8e45-1443139a3962)
+ Call ID: 2e3345fe-9865-4a7b-8e45-1443139a3962
+  Args:
+    source: Beatrix
+    relation: :hasMother
+    target: Juliana
+  AddTriple (4171568a-4bb6-4cf0-8e5e-6917cca5a9b0)
+ Call ID: 4171568a-4bb6-4cf0-8e5e-6917cca5a9b0
+  Args:
+    source: Beatrix
     relation: :hasFather
-  AddTriple (96efbd67-546d-45c5-b3c9-8decec49d517)
- Call ID: 96efbd67-546d-45c5-b3c9-8decec49d517
+    target: Bernhard
+  AssignClass (3437c980-a29e-48a4-a474-a40a320809d9)
+ Call ID: 3437c980-a29e-48a4-a474-a40a320809d9
+  Args:
+    type: :Woman
+    source: Irene
+  AssignClass (1fe668ea-11f3-4c97-a6f3-07a39aadc2e5)
+ Call ID: 1fe668ea-11f3-4c97-a6f3-07a39aadc2e5
+  Args:
+    type: :Person
+    source: Irene
+  AddTriple (65a042a1-3c04-4afd-b7cb-1afabd226db1)
+ Call ID: 65a042a1-3c04-4afd-b7cb-1afabd226db1
+  Args:
+    target: Irene
+    source: Beatrix
+    relation: :isSisterOf
+  AddTriple (349d2030-a4fd-40f5-b3a0-a86172c36477)
+ Call ID: 349d2030-a4fd-40f5-b3a0-a86172c36477
+  Args:
+    source: Irene
+    relation: :hasMother
+    target: Juliana
+  AddTriple (9e3e9003-5433-4128-8e0f-7db931c37ced)
+ Call ID: 9e3e9003-5433-4128-8e0f-7db931c37ced
+  Args:
+    target: Bernhard
+    relation: :hasFather
+    source: Irene
+  AssignClass (2b9ba280-eaed-48f0-bf97-9dded12aaa08)
+ Call ID: 2b9ba280-eaed-48f0-bf97-9dded12aaa08
+  Args:
+    type: :Woman
+    source: Margriet
+  AssignClass (af269f32-6030-453e-bbaf-8a952841455a)
+ Call ID: af269f32-6030-453e-bbaf-8a952841455a
+  Args:
+    type: :Person
+    source: Margriet
+  AddTriple (ac2ea90d-f2e7-4bc6-86df-8b8957edab6c)
+ Call ID: ac2ea90d-f2e7-4bc6-86df-8b8957edab6c
+  Args:
+    target: Margriet
+    relation: :isSisterOf
+    source: Beatrix
+  AddTriple (8bea828b-081c-4cbf-ac5e-68dac0e89a52)
+ Call ID: 8bea828b-081c-4cbf-ac5e-68dac0e89a52
   Args:
     relation: :hasMother
-    source: Charles Philippe Marie Louis d'Orléans
-    target: Béatrice Pasquier de Franclieu
-  AddTriple (0d0d8217-975c-497d-94d9-8bb933e58c92)
- Call ID: 0d0d8217-975c-497d-94d9-8bb933e58c92
+    source: Margriet
+    target: Juliana
+  AddTriple (449662be-c228-4c4f-8574-38c92f8d8f4e)
+ Call ID: 449662be-c228-4c4f-8574-38c92f8d8f4e
   Args:
-    target: Prince Henri d'Orléans
-    source: Charles Philippe Marie Louis d'Orléans
+    target: Bernhard
+    source: Margriet
     relation: :hasFather
-  AddTriple (883740bc-29c1-422e-aeb8-e8ee518fef35)
- Call ID: 883740bc-29c1-422e-aeb8-e8ee518fef35
+  AssignClass (0d7ddabb-6a29-4438-9949-bfa62eda62e5)
+ Call ID: 0d7ddabb-6a29-4438-9949-bfa62eda62e5
+  Args:
+    source: Claus_von_Amsberg
+    type: :Man
+  AssignClass (8e213756-df68-40b8-8cc4-e55c8efb281f)
+ Call ID: 8e213756-df68-40b8-8cc4-e55c8efb281f
+  Args:
+    type: :Person
+    source: Claus_von_Amsberg
+  AddTriple (981d29d4-919f-422b-9dd8-53c776b9ebf8)
+ Call ID: 981d29d4-919f-422b-9dd8-53c776b9ebf8
+  Args:
+    source: Beatrix
+    relation: :hasRelation
+    target: Claus_von_Amsberg
+  AddLiteral (f70904a3-eaaa-484b-9925-2df563a8748a)
+ Call ID: f70904a3-eaaa-484b-9925-2df563a8748a
+  Args:
+    literal_value: 1966
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Beatrix
+  AssignClass (f9f6a251-4a97-41a1-80d8-ec4153eb8f1e)
+ Call ID: f9f6a251-4a97-41a1-80d8-ec4153eb8f1e
+  Args:
+    type: :Man
+    source: Willem-Alexander
+  AssignClass (56a91e69-4136-4412-9e0d-197edfa1b9b9)
+ Call ID: 56a91e69-4136-4412-9e0d-197edfa1b9b9
+  Args:
+    type: :Person
+    source: Willem-Alexander
+  AddTriple (31f3cfe1-aa19-4dd2-88a2-0448e188b4c2)
+ Call ID: 31f3cfe1-aa19-4dd2-88a2-0448e188b4c2
+  Args:
+    relation: :isSonOf
+    source: Willem-Alexander
+    target: Beatrix
+  AddTriple (682b7a45-7cfd-4665-8d23-5ce426b7be8b)
+ Call ID: 682b7a45-7cfd-4665-8d23-5ce426b7be8b
   Args:
     relation: :hasFather
-    source: Charles Philippe Marie Louis d'Orléans
-    target: Prince Henri d'Orléans
-  RemoveTriple (61238716-e34d-40c6-baaa-b54f163083bc)
- Call ID: 61238716-e34d-40c6-baaa-b54f163083bc
+    source: Willem-Alexander
+    target: Claus_von_Amsberg
+  Finish (9164ed4c-2f6b-47e2-87a2-d017c5dd8a84)
+ Call ID: 9164ed4c-2f6b-47e2-87a2-d017c5dd8a84
   Args:
-    target: Prince Henri d'Orléans
-    source: Charles Philippe Marie Louis d'Orléans
-    relation: :hasFather
-  AddTriple (bf15b1dc-8bca-4c7a-9a56-0f30912434b6)
- Call ID: bf15b1dc-8bca-4c7a-9a56-0f30912434b6
-  Args:
-    target: Prince Henri d'Orléans
-    source: Charles Philippe Marie Louis d'Orléans
-    relation: :hasAncestor
-  AddTriple (e082d74c-5d88-4e9e-986c-3bb686a35778)
- Call ID: e082d74c-5d88-4e9e-986c-3bb686a35778
-  Args:
-    target: Prince Michel d'Orléans
-    source: Charles Philippe Marie Louis d'Orléans
-    relation: :hasFather
-  AddTriple (58cdd67d-99eb-4c7c-92f9-2efad472e05e)
- Call ID: 58cdd67d-99eb-4c7c-92f9-2efad472e05e
-  Args:
-    target: Béatrice Pasquier de Franclieu
-    relation: :hasMother
-    source: Charles Philippe Marie Louis d'Orléans
-  AddTriple (a1493391-4295-4372-9b43-57f95dba6c35)
- Call ID: a1493391-4295-4372-9b43-57f95dba6c35
-  Args:
-    target: Charles Philippe Marie Louis d'Orléans
-    relation: :hasFather
-    source: Princess Isabelle d'Orléans
-  AddTriple (b3161dc3-f71c-4e27-9597-e719be342b2a)
- Call ID: b3161dc3-f71c-4e27-9597-e719be342b2a
-  Args:
-    relation: :hasMother
-    source: Princess Isabelle d'Orléans
-    target: Béatrice Pasquier de Franclieu
-  AddLiteral (046da933-5848-4603-a3fc-d394f79d518d)
- Call ID: 046da933-5848-4603-a3fc-d394f79d518d
-  Args:
-    literal_value: 2012-02-22
-    literal_type: xsd:date
-    relation: :hasBirthYear
-    source: Princess Isabelle d'Orléans
-  AddTriple (20df3eaf-d966-4386-91c2-b4ca6145ec94)
- Call ID: 20df3eaf-d966-4386-91c2-b4ca6145ec94
-  Args:
-    source: Princess Élisabeth Victoire Jeanne Marie d'Orléans
-    relation: :hasFather
-    target: Charles Philippe Marie Louis d'Orléans
-  AddTriple (7c72217f-cd1a-4353-8593-5b89717da534)
- Call ID: 7c72217f-cd1a-4353-8593-5b89717da534
-  Args:
-    relation: :hasMother
-    source: Princess Élisabeth Victoire Jeanne Marie d'Orléans
-    target: Naomi-Valeska
-  AddLiteral (5062c961-8ea7-4ac1-baeb-dc8adab4c632)
- Call ID: 5062c961-8ea7-4ac1-baeb-dc8adab4c632
-  Args:
-    relation: :hasBirthYear
-    source: Princess Élisabeth Victoire Jeanne Marie d'Orléans
-    literal_type: xsd:date
-    literal_value: 2026-04-15
-  Finish (9d553a43-6e75-472e-8e6e-af2d06fe9598)
- Call ID: 9d553a43-6e75-472e-8e6e-af2d06fe9598
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -608,29 +829,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_%C3%89lisabeth_Victoire_Jeanne_Marie_d%27Orl%C3%A9ans a :Woman ;
-      :hasBirthYear "2026-04-15"^^xsd:date ;
-      :hasFather data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans ;
-      :hasMother data:Naomi-Valeska .
+  data:Willem-Alexander a :Man,
+          :Person ;
+      :hasFather data:Claus_von_Amsberg ;
+      :isSonOf data:Beatrix .
 
-  data:Princess_Isabelle_d%27Orl%C3%A9ans a :Woman ;
-      :hasBirthYear "2012-02-22"^^xsd:date ;
-      :hasFather data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans ;
-      :hasMother data:B%C3%A9atrice_Pasquier_de_Franclieu .
+  data:Beatrix a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasFather data:Bernhard ;
+      :hasMarriageYear 1966 ;
+      :hasMother data:Juliana ;
+      :hasRelation data:Claus_von_Amsberg ;
+      :isSisterOf data:Irene,
+          data:Margriet .
 
-  data:Naomi-Valeska a :Woman .
+  data:Irene a :Person,
+          :Woman ;
+      :hasFather data:Bernhard ;
+      :hasMother data:Juliana .
 
-  data:Prince_Henri_d%27Orl%C3%A9ans a :Man .
+  data:Margriet a :Person,
+          :Woman ;
+      :hasFather data:Bernhard ;
+      :hasMother data:Juliana .
 
-  data:Prince_Michel_d%27Orl%C3%A9ans a :Man .
+  data:Claus_von_Amsberg a :Man,
+          :Person .
 
-  data:B%C3%A9atrice_Pasquier_de_Franclieu a :Woman .
+  data:Bernhard a :Man,
+          :Person .
 
-  data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans a :Man ;
-      :hasAncestor data:Prince_Henri_d%27Orl%C3%A9ans ;
-      :hasBirthYear 1973 ;
-      :hasFather data:Prince_Michel_d%27Orl%C3%A9ans ;
-      :hasMother data:B%C3%A9atrice_Pasquier_de_Franclieu .
+  data:Juliana a :Person,
+          :Woman .
 
 
 
@@ -642,182 +873,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4ac7e06a-6009-4bbe-870d-9414801892e4)
- Call ID: 4ac7e06a-6009-4bbe-870d-9414801892e4
+  ValidateShacl (8191d492-6701-43f2-809d-3817d1207994)
+ Call ID: 8191d492-6701-43f2-809d-3817d1207994
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Prince_Henri_d'Orléans, identified as an ancestor of Charles_Philippe_Marie_Louis_d'Orléans, lacks the required :Ancestor class.
+      The node 'Beatrix' is the value of the 'isSonOf' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henri_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Beatrix', class: ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Charles_Philippe_Marie_Louis_d'Orléans, Prince_Michel_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Claus_von_Amsberg' is the value of the 'hasFather' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michel_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Claus_von_Amsberg', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The mother of Charles_Philippe_Marie_Louis_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Beatrix' is the value of the 'isSonOf' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Beatrix', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Henri_d'Orléans, identified as an ancestor of Charles_Philippe_Marie_Louis_d'Orléans, lacks the required :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henri_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Princess_Isabelle_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Irene', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Charles_Philippe_Marie_Louis_d'Orléans, Prince_Michel_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Claus_von_Amsberg' is the value of the 'hasFather' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michel_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Claus_von_Amsberg', class: ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Naomi-Valeska, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Naomi-Valeska', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Princess_Isabelle_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Charles_Philippe_Marie_Louis_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Irene', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Prince_Henri_d'Orléans, identified as an ancestor of Charles_Philippe_Marie_Louis_d'Orléans, lacks the required :Ancestor class.
+      The node 'Beatrix' is the value of the 'isSonOf' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henri_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Beatrix', class: ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Princess_Isabelle_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Charles_Philippe_Marie_Louis_d'Orléans, Prince_Michel_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Irene', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michel_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Naomi-Valeska, is missing the mandatory :Ancestor class.
+      The node 'Claus_von_Amsberg' is the value of the 'hasFather' relationship from 'Willem-Alexander', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Naomi-Valeska', class=':Ancestor')
+      AssignClass(node: 'Claus_von_Amsberg', class: ':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Princess_Isabelle_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Charles_Philippe_Marie_Louis_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Irene', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Princess_Isabelle_d'Orléans, Charles_Philippe_Marie_Louis_d'Orléans, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Philippe_Marie_Louis_d'Orléans', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother of Princess_Élisabeth_Victoire_Jeanne_Marie_d'Orléans, Naomi-Valeska, is missing the mandatory :Ancestor class.
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Naomi-Valeska', class=':Ancestor')
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
 
 
   Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Bernhard' is the value of the 'hasFather' relationship from 'Irene', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Bernhard', class: ':Ancestor')
+
+
+  Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Princess_Isabelle_d'Orléans, Béatrice_Pasquier_de_Franclieu, is missing the mandatory :Ancestor class.
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Margriet', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Béatrice_Pasquier_de_Franclieu', class=':Ancestor')
+      AssignClass(node: 'Juliana', class: ':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Beatrix', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Juliana', class: ':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Juliana' is the value of the 'hasMother' relationship from 'Irene', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Juliana', class: ':Ancestor')
 
 
 
@@ -826,38 +1081,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (2954c1c5-6c60-4006-a92d-40dc7aa426bd)
- Call ID: 2954c1c5-6c60-4006-a92d-40dc7aa426bd
+  AssignClass (3871dabe-ce08-4cd9-b72c-a2b286a8cc1f)
+ Call ID: 3871dabe-ce08-4cd9-b72c-a2b286a8cc1f
   Args:
     type: :Ancestor
-    source: Prince Henri d'Orléans
-  AssignClass (d9eaa2c1-5b4b-4cc3-98ed-9d0d94f9b824)
- Call ID: d9eaa2c1-5b4b-4cc3-98ed-9d0d94f9b824
+    source: Beatrix
+  AssignClass (84753d1d-c62c-4b6f-b5f9-2296ca143bdb)
+ Call ID: 84753d1d-c62c-4b6f-b5f9-2296ca143bdb
   Args:
     type: :Ancestor
-    source: Prince Michel d'Orléans
-  AssignClass (611b832d-26fd-4b30-9e22-acfa4485fce1)
- Call ID: 611b832d-26fd-4b30-9e22-acfa4485fce1
+    source: Claus_von_Amsberg
+  AssignClass (7c75b8be-2a8f-4a7b-9dbb-25cf78400940)
+ Call ID: 7c75b8be-2a8f-4a7b-9dbb-25cf78400940
   Args:
+    source: Bernhard
     type: :Ancestor
-    source: Béatrice Pasquier de Franclieu
-  AssignClass (0f54e7b0-93c9-4764-9f9f-7ae23bc2e820)
- Call ID: 0f54e7b0-93c9-4764-9f9f-7ae23bc2e820
+  AssignClass (3716e615-48fd-426c-bca4-af189a321602)
+ Call ID: 3716e615-48fd-426c-bca4-af189a321602
   Args:
+    source: Juliana
     type: :Ancestor
-    source: Charles Philippe Marie Louis d'Orléans
-  AssignClass (0575dcf2-98b9-489a-9f70-7b515ea8dfaa)
- Call ID: 0575dcf2-98b9-489a-9f70-7b515ea8dfaa
-  Args:
-    type: :Ancestor
-    source: Naomi-Valeska
-  Finish (7d37d696-2d12-4f54-a94c-77c2fc66a855)
- Call ID: 7d37d696-2d12-4f54-a94c-77c2fc66a855
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -878,47 +1121,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_%C3%89lisabeth_Victoire_Jeanne_Marie_d%27Orl%C3%A9ans a :Woman ;
-      :hasBirthYear "2026-04-15"^^xsd:date ;
-      :hasFather data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans ;
-      :hasMother data:Naomi-Valeska .
+  data:Willem-Alexander a :Man,
+          :Person ;
+      :hasFather data:Claus_von_Amsberg ;
+      :isSonOf data:Beatrix .
 
-  data:Princess_Isabelle_d%27Orl%C3%A9ans a :Woman ;
-      :hasBirthYear "2012-02-22"^^xsd:date ;
-      :hasFather data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans ;
-      :hasMother data:B%C3%A9atrice_Pasquier_de_Franclieu .
+  data:Beatrix a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasFather data:Bernhard ;
+      :hasMarriageYear 1966 ;
+      :hasMother data:Juliana ;
+      :hasRelation data:Claus_von_Amsberg ;
+      :isSisterOf data:Irene,
+          data:Margriet .
 
-  data:Naomi-Valeska a :Ancestor,
+  data:Irene a :Person,
+          :Woman ;
+      :hasFather data:Bernhard ;
+      :hasMother data:Juliana .
+
+  data:Margriet a :Person,
+          :Woman ;
+      :hasFather data:Bernhard ;
+      :hasMother data:Juliana .
+
+  data:Claus_von_Amsberg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Bernhard a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Juliana a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Prince_Henri_d%27Orl%C3%A9ans a :Ancestor,
-          :Man .
 
-  data:Prince_Michel_d%27Orl%C3%A9ans a :Ancestor,
-          :Man .
-
-  data:B%C3%A9atrice_Pasquier_de_Franclieu a :Ancestor,
-          :Woman .
-
-  data:Charles_Philippe_Marie_Louis_d%27Orl%C3%A9ans a :Ancestor,
-          :Man ;
-      :hasAncestor data:Prince_Henri_d%27Orl%C3%A9ans ;
-      :hasBirthYear 1973 ;
-      :hasFather data:Prince_Michel_d%27Orl%C3%A9ans ;
-      :hasMother data:B%C3%A9atrice_Pasquier_de_Franclieu .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (307c6393-8cec-41ed-a0bf-a8b60d60ae9f)
- Call ID: 307c6393-8cec-41ed-a0bf-a8b60d60ae9f
+  ValidateShacl (ec1663cb-d557-4b73-ae14-9bbb9408cbef)
+ Call ID: ec1663cb-d557-4b73-ae14-9bbb9408cbef
   Args:
 
 ================================= Tool Message =================================
@@ -929,6 +1177,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8d1e41c0-c4f9-4c54-b0d2-0d6be3a8ce71)
- Call ID: 8d1e41c0-c4f9-4c54-b0d2-0d6be3a8ce71
+  Finish (214f650c-6cf4-4bec-aea6-fbca260ab812)
+ Call ID: 214f650c-6cf4-4bec-aea6-fbca260ab812
   Args:

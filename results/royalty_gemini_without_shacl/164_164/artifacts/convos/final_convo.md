@@ -69,29 +69,52 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Grand Duchess Kira Kirillovna of Russia (9 May 1909 – 8 September 1967) was the second daughter of Grand Duke Kirill Vladimirovich of Russia and Princess Victoria Melita of Saxe-Coburg and Gotha.
+She married Prince Louis Ferdinand of Prussia, grandson of the last German Emperor Wilhelm II.
+Early life
 
+Grand Duchess Kira Kirilovna of Russia was born on 9 May 1909, at her parents' house on Avenue Henri Martin in Paris.
+Named after her father, she was the second child of Grand Duke Kirill Vladimirovich of Russia, and his wife, Princess Victoria Melita of Saxe-Coburg and Gotha.
+In addition, her mother had divorced her former husband, Ernest Louis, Grand Duke of Hesse, the brother of the Tsarina Alexandra Feodorovna.
+In 1908, after the death of Grand Duke Alexei Alexandrovich and before Kira's birth, Nicholas II restored Kirill to his rank of captain in the Imperial Russian Navy and his position as aide de camp to the emperor.
+He was given the title Grand Duke of Russia and from then on his wife was styled as Her Imperial Highness Grand Duchess Viktoria Feodorovna.
+Kira and her elder sister, Maria, had a privileged childhood.
+Kira's early years were spent in luxury at her father's palace at 13 Glinka Street in Saint Petersburg, where her parents entertained their guests lavishly.
+During World War I, Kira's father served as the commander of a unit of the Naval Guards, while her mother oversaw a motorized ambulance.
+At the outbreak of the Russian revolution, Kira's father marched to the Tauride Palace at the head of the Naval Guards before the establishment of the Russian Provisional Government.
+In June, Kira's father obtained permission from the provisional government to move to Finland.
+Kira, eight at the time, recalled that they rode on a public train.
+The family waited in Finland, hoping that the White guard would defeat the Bolsheviks and they could return to Russia.
+Kira, then age nine, amused herself by taking long walks hunting for mushrooms, and as a treat went to the cinema every Friday.
+Grand Duke Kirill's family stayed in Finland until May 1920.
+Family
 
-Princess Margriet*Pieter van Vollenhoven*
+The family eventually left Finland and headed first to Coburg and then to Saint-Briac, France.
+Kira was born Princess Kira Kirillovna of Russia, but her father later gave her illegally the title "Grand Duchess" when he declared himself Guardian of the Throne in 1924.
+Dowager Empress Maria Feodorovna openly mocked Kirill's pretension.
+Blonde-haired, blue-eyed Kira, high-spirited and straightforward also had an even temper.
+Kira also frequently visited her cousins at various royal courts or attended house parties in the United Kingdom.
+Princess Kira had some difficulty finding a suitable husband.
+She was interested in the hemophiliac Alfonso, Prince of Asturias, son of Alfonso XIII of Spain, but was disappointed when the prince showed more interest in one of the daughters of Prince Nicholas of Greece.
+Later, she was fond of Prince Constantine "Teddy" Soutzo, a Romanian aristocrat.
+Finally, Kira married Prince Louis Ferdinand of Prussia in 1938.
+After World War II
 
-
-Countess Leonore of Orange-Nassau, Jonkvrouwe van Amsberg (Leonore Marie Irene Enrica; born 3 June 2006), is a member of the Dutch royal family.
-She is the third child and second daughter of Prince Constantijn of the Netherlands and Princess Laurentien of the Netherlands.
-Life and education
-
-Countess Leonore was born on 3 June 2006 at HMC Bronovo in The Hague, Netherlands, as the third child and second daughter of Prince Constantijn and Princess Laurentien.
-After spending the early years of her life partly in Belgium where her family lived while her parents worked, Countess Leonore later relocated with her family to the Netherlands in 2015.
-Since September 2022, she has been studying at UWC Atlantic College in Wales, a United World College known for its international education programme, the same school attended by her cousin, Princess Alexia.
-Titles and styles
-
-By royal decree of 11 May 2001 (nr. 227), it was determined that the children born from the marriage of Prince Constantijn and Princess Laurentien of the Netherlands would bear the title Count/Countess of Orange‐Nassau and the honorific Jonkheer/Jonkvrouwe van Amsberg with the surname Van Oranje-Nassau van Amsberg.
-Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although continue to be members of the royal family.
+Kira was called upon to testify in the case of Anna Anderson, the woman who claimed to be Grand Duchess Anastasia Nikolaevna of Russia.
+Kira had met Anderson briefly in 1952 at the urging of her mother-in-law, Crown Princess Cecilie of Prussia, who believed Anderson's claim.
+Kira was not convinced.
+Kira had last seen Anastasia when she was a child of seven.
+Kira's uncle, Grand Duke Andrei Vladimirovich of Russia had been convinced Anderson was Anastasia, but her father and mother were unconvinced by Anderson's claim.
+In later years, Kira was disappointed when her eldest son, Friedrich Wilhelm, renounced his rights to the title and married a commoner.
+She was in good spirits on a visit to her brother Grand Duke Vladimir of Russia at Saint-Briac in September 1967, where she ate well and dumped several spoonfuls of sugar into her coffee, commenting, "God forbid I should eat anything healthy!"
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +130,9 @@ Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Co
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +147,23 @@ Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Co
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,55 +455,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (65024007-9594-4d15-94dd-eb8b8b85ac57)
- Call ID: 65024007-9594-4d15-94dd-eb8b8b85ac57
+  AssignClass (654e509d-ca4f-44be-93e9-edaa304897b1)
+ Call ID: 654e509d-ca4f-44be-93e9-edaa304897b1
   Args:
-    source: :Countess_Leonore_of_Orange-Nassau
+    source: Kira_Kirillovna_of_Russia
     type: :Woman
-  AssignClass (f1699bd5-7c4e-4583-b4bd-452f48b1b5ef)
- Call ID: f1699bd5-7c4e-4583-b4bd-452f48b1b5ef
+  AssignClass (1de193c4-e481-418c-a258-bb4c3948bc18)
+ Call ID: 1de193c4-e481-418c-a258-bb4c3948bc18
   Args:
-    source: :Countess_Leonore_of_Orange-Nassau
+    source: Kira_Kirillovna_of_Russia
     type: :Person
-  AssignClass (9d1df348-614e-483b-9f3f-4e5eace0c308)
- Call ID: 9d1df348-614e-483b-9f3f-4e5eace0c308
+  AddLiteral (0d34580e-cabb-45ee-959d-dba474732448)
+ Call ID: 0d34580e-cabb-45ee-959d-dba474732448
   Args:
-    source: :Prince_Constantijn_of_the_Netherlands
-    type: :Man
-  AssignClass (ea5141b9-c391-4773-a5f0-fbc5bc69194f)
- Call ID: ea5141b9-c391-4773-a5f0-fbc5bc69194f
-  Args:
-    type: :Person
-    source: :Prince_Constantijn_of_the_Netherlands
-  AssignClass (bfececbb-aef2-461a-a0cb-5af61d60c1e4)
- Call ID: bfececbb-aef2-461a-a0cb-5af61d60c1e4
-  Args:
-    type: :Woman
-    source: :Princess_Laurentien_of_the_Netherlands
-  AssignClass (7863843e-8d0e-48a2-9125-b9d99f997a56)
- Call ID: 7863843e-8d0e-48a2-9125-b9d99f997a56
-  Args:
-    source: :Princess_Laurentien_of_the_Netherlands
-    type: :Person
-  AddLiteral (6cd3abb0-9eb3-4ec4-923d-88e6cb346e64)
- Call ID: 6cd3abb0-9eb3-4ec4-923d-88e6cb346e64
-  Args:
-    source: :Countess_Leonore_of_Orange-Nassau
+    literal_value: 1909
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 2006
-  AddTriple (565257d0-d2cd-4188-b943-618b2f75e836)
- Call ID: 565257d0-d2cd-4188-b943-618b2f75e836
+    source: Kira_Kirillovna_of_Russia
+  AddLiteral (0461a148-a3a9-4206-9a2a-2a6609f7df2e)
+ Call ID: 0461a148-a3a9-4206-9a2a-2a6609f7df2e
   Args:
-    source: :Countess_Leonore_of_Orange-Nassau
-    target: :Prince_Constantijn_of_the_Netherlands
+    literal_value: 1967
+    literal_type: xsd:integer
+    source: Kira_Kirillovna_of_Russia
+    relation: :hasDeathYear
+  AssignClass (04325859-2ec3-4aa0-bba9-05ebf0573888)
+ Call ID: 04325859-2ec3-4aa0-bba9-05ebf0573888
+  Args:
+    source: Kirill_Vladimirovich_of_Russia
+    type: :Man
+  AssignClass (c022c7f7-d64c-4e4a-bdfa-38b85d7a53be)
+ Call ID: c022c7f7-d64c-4e4a-bdfa-38b85d7a53be
+  Args:
+    type: :Person
+    source: Kirill_Vladimirovich_of_Russia
+  AssignClass (9cb34e40-f437-424c-bc4c-307e4e83e872)
+ Call ID: 9cb34e40-f437-424c-bc4c-307e4e83e872
+  Args:
+    type: :Woman
+    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+  AssignClass (43d70243-16de-4a15-9425-b176ec9a7180)
+ Call ID: 43d70243-16de-4a15-9425-b176ec9a7180
+  Args:
+    type: :Person
+    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+  AddTriple (f6612fc9-e13c-407e-b509-40b9fb49ad9d)
+ Call ID: f6612fc9-e13c-407e-b509-40b9fb49ad9d
+  Args:
     relation: :hasFather
-  AddTriple (16bef227-f7c0-4361-8f8c-1c6f9155e636)
- Call ID: 16bef227-f7c0-4361-8f8c-1c6f9155e636
+    target: Kirill_Vladimirovich_of_Russia
+    source: Kira_Kirillovna_of_Russia
+  AddTriple (dcdc65da-5019-4a19-8f9d-43998fea3af2)
+ Call ID: dcdc65da-5019-4a19-8f9d-43998fea3af2
   Args:
-    target: :Princess_Laurentien_of_the_Netherlands
-    source: :Countess_Leonore_of_Orange-Nassau
+    target: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    source: Kira_Kirillovna_of_Russia
     relation: :hasMother
-  Finish (63cb61c4-d836-4bcc-8d19-e87ed4bdbbec)
- Call ID: 63cb61c4-d836-4bcc-8d19-e87ed4bdbbec
+  AssignClass (1d9d48b7-1a81-4377-8330-f029af698bbb)
+ Call ID: 1d9d48b7-1a81-4377-8330-f029af698bbb
+  Args:
+    source: Louis_Ferdinand_of_Prussia
+    type: :Man
+  AssignClass (e099d1c1-228c-4eac-a6b0-f606e323d337)
+ Call ID: e099d1c1-228c-4eac-a6b0-f606e323d337
+  Args:
+    source: Louis_Ferdinand_of_Prussia
+    type: :Person
+  AddLiteral (a9216f0c-89ff-4890-82e5-e1d27300084d)
+ Call ID: a9216f0c-89ff-4890-82e5-e1d27300084d
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1938
+    relation: :hasMarriageYear
+    source: Kira_Kirillovna_of_Russia
+  AddTriple (2a3f651e-f5a2-428b-ad35-01ae1c6f96cf)
+ Call ID: 2a3f651e-f5a2-428b-ad35-01ae1c6f96cf
+  Args:
+    relation: :hasRelation
+    source: Kira_Kirillovna_of_Russia
+    target: Louis_Ferdinand_of_Prussia
+  AssignClass (a28153f0-37a0-49f9-aee9-32cc1e5004fc)
+ Call ID: a28153f0-37a0-49f9-aee9-32cc1e5004fc
+  Args:
+    source: Maria_of_Russia
+    type: :Woman
+  AssignClass (6716d26f-f1c5-465b-8d48-d14861cb6318)
+ Call ID: 6716d26f-f1c5-465b-8d48-d14861cb6318
+  Args:
+    type: :Person
+    source: Maria_of_Russia
+  AddTriple (cbd2deb2-34a7-4fa7-8fb1-4763b3ba9c76)
+ Call ID: cbd2deb2-34a7-4fa7-8fb1-4763b3ba9c76
+  Args:
+    source: Kira_Kirillovna_of_Russia
+    target: Maria_of_Russia
+    relation: :hasSister
+  AssignClass (f56f44a9-c1e5-4bd5-a73e-a53312f75b4d)
+ Call ID: f56f44a9-c1e5-4bd5-a73e-a53312f75b4d
+  Args:
+    source: Ernest_Louis_of_Hesse
+    type: :Man
+  AssignClass (2fc18dca-3708-42e1-92d5-d757020da6e0)
+ Call ID: 2fc18dca-3708-42e1-92d5-d757020da6e0
+  Args:
+    type: :Person
+    source: Ernest_Louis_of_Hesse
+  AddTriple (1c7e26bb-04ae-4761-8829-19a42a61a562)
+ Call ID: 1c7e26bb-04ae-4761-8829-19a42a61a562
+  Args:
+    target: Ernest_Louis_of_Hesse
+    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    relation: :hasRelation
+  AssignClass (18983a86-b3c4-425d-b12c-e533245b0de3)
+ Call ID: 18983a86-b3c4-425d-b12c-e533245b0de3
+  Args:
+    type: :Woman
+    source: Alexandra_Feodorovna_Tsarina
+  AssignClass (34d757db-4a48-4796-8650-855cf32a3a8f)
+ Call ID: 34d757db-4a48-4796-8650-855cf32a3a8f
+  Args:
+    type: :Person
+    source: Alexandra_Feodorovna_Tsarina
+  AddTriple (014df353-7022-4594-b7bd-aabe8f6b9842)
+ Call ID: 014df353-7022-4594-b7bd-aabe8f6b9842
+  Args:
+    relation: :hasSister
+    source: Alexandra_Feodorovna_Tsarina
+    target: Ernest_Louis_of_Hesse
+  AssignClass (5193228b-00a3-439a-9566-c5325bcaa141)
+ Call ID: 5193228b-00a3-439a-9566-c5325bcaa141
+  Args:
+    type: :Man
+    source: Friedrich_Wilhelm_of_Prussia
+  AssignClass (a33d396b-2812-466a-a8cb-f4c35894126a)
+ Call ID: a33d396b-2812-466a-a8cb-f4c35894126a
+  Args:
+    source: Friedrich_Wilhelm_of_Prussia
+    type: :Person
+  AddTriple (c4475ed7-5f97-49e8-b92a-dcae529c3b1a)
+ Call ID: c4475ed7-5f97-49e8-b92a-dcae529c3b1a
+  Args:
+    target: Friedrich_Wilhelm_of_Prussia
+    source: Kira_Kirillovna_of_Russia
+    relation: :hasSon
+  AssignClass (2fac3658-40c0-4269-a433-54b2c7ad1f6c)
+ Call ID: 2fac3658-40c0-4269-a433-54b2c7ad1f6c
+  Args:
+    type: :Man
+    source: Vladimir_of_Russia
+  AssignClass (817dc4df-6976-4ae1-af83-f535c36d7735)
+ Call ID: 817dc4df-6976-4ae1-af83-f535c36d7735
+  Args:
+    source: Vladimir_of_Russia
+    type: :Person
+  AddTriple (790a2dc7-a444-488b-a2f6-9132aa5ca1f4)
+ Call ID: 790a2dc7-a444-488b-a2f6-9132aa5ca1f4
+  Args:
+    target: Vladimir_of_Russia
+    source: Kira_Kirillovna_of_Russia
+    relation: :hasBrother
+  AssignClass (dc6a5a10-e1d0-4031-bc36-41ba21b030fa)
+ Call ID: dc6a5a10-e1d0-4031-bc36-41ba21b030fa
+  Args:
+    source: Andrei_Vladimirovich_of_Russia
+    type: :Man
+  AssignClass (3ab627ca-04ab-432f-9e62-0434b89320ae)
+ Call ID: 3ab627ca-04ab-432f-9e62-0434b89320ae
+  Args:
+    source: Andrei_Vladimirovich_of_Russia
+    type: :Person
+  AddTriple (a0a9f370-8e8d-4fc0-a5b3-9d16e7dd7e0b)
+ Call ID: a0a9f370-8e8d-4fc0-a5b3-9d16e7dd7e0b
+  Args:
+    relation: :hasRelation
+    source: Kira_Kirillovna_of_Russia
+    target: Andrei_Vladimirovich_of_Russia
+  Finish (c54eb3fb-db22-47d5-abf2-43538452da86)
+ Call ID: c54eb3fb-db22-47d5-abf2-43538452da86
   Args:

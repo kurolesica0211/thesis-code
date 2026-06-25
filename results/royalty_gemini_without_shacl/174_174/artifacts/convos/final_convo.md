@@ -69,48 +69,55 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
-Biography
+Princess Katherine of Greece and Denmark (Greek: Αικατερίνη; 4 May 1913 – 2 October 2007), styled in the United Kingdom as Lady Katherine Brandram from 1947 until 2007, was the third daughter and youngest child of King Constantine I of Greece and Princess Sophia of Prussia.
+Early life
 
-Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
-She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
-At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
-As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
-The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
-Alexia grew up in exile and was raised in between Rome and London.
-The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
-Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
-Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
-Marriage and children
+Katherine was born on 4 May 1913 in the Royal Palace in Athens, a few weeks after her paternal grandfather, King George I of Greece, was assassinated in Thessaloniki.
+Her godparents were Olga Constantinovna (the Dowager Queen of Greece, her paternal grandmother), Alexandra (the Dowager Queen of the United Kingdom, her paternal grandfather's sister and her maternal grandmother's sister-in-law), George V (the King of the United Kingdom, her mother's maternal cousin and her father's paternal cousin), Wilhelm II, German Emperor (her maternal uncle), The Greek Navy (represented by the Minister of Marine) and The Greek Army (represented by the Minister of War).
+Katherine had five siblings – three brothers (George, Alexander and Paul, each of whom would become King of the Hellenes) and two sisters (Princess Helen, who married Crown Prince Carol of Romania, and Princess Irene who married Prince Aimone of Savoy, Duke of Spoleto).
+They were reinstated following Alexander's death in 1920, but Constantine abdicated again in 1922.
+The family moved to Villa Sparta in Florence, where Katherine took up painting.
+Her second brother George became King George II in 1922, but was deposed in 1924.
+Katherine was educated in England, at a boarding school at Broadstairs and then North Foreland Lodge.
+She and the future Elizabeth II were bridesmaids at the wedding of her first cousin, Princess Marina, to Prince George in 1934.
+Return to Greece and marriage
 
-Queen Anne-Marie
-
-
-Queen Sofía of Spain
-
-
-Marina, consort of Prince Michael
-
-
-On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
-In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
-Alexia and Carlos were the only two people out of the thirteen on board to be injured.
-Alexia suffered a broken collarbone and Carlos a fractured kneecap.
-At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
-Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
-Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
-The couple have four children: 
+Her brother George was reinstated as king in 1935, and Katherine returned to Greece with her sister, Irene.
+In 1941, after Greece had been overrun by Axis forces, she fled to South Africa with her third brother, Paul, in a Sunderland flying boat, where she worked as a nurse at a hospital in Cape Town.
+On 1 April at the Royal Palace, three weeks prior to the wedding, her brother King George had a stroke and died shortly after in Katherine's presence.
+George was succeeded on the Greek throne by Katherine's third brother Paul, who acted as best man at the wedding, which took place according to schedule on 21 April 1947.
+On 25 August 1947, King George VI granted her the rank and title of a duke's daughter and she became known as Lady Katherine Brandram.
+According to her obituary in The Daily Telegraph, "Lady Katherine lived quietly but remained in close touch with her own and the British royal families.
+She attended the Queen's wedding to Prince Philip (her first cousin on her father’s side and second cousin once removed on her mother’s side), and was a guest at the service to mark Prince Philip's 80th birthday at St George's Chapel, Windsor, in 2001.
+"
 
 
-Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
-Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
-The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
+After the death of Infanta Beatriz of Spain in 2002, Katherine was the last surviving great-granddaughter of Queen Victoria, as well the last surviving grandchild of Frederick III, German Emperor and Victoria, Princess Royal.
+Count Carl Johan Bernadotte of Sweden (31 October 1916 – 5 May 2012) as Queen Victoria's last living great-grandchild.
+From the time of the death of her eldest sister Queen Helen, Queen Mother of Romania in 1982, to the time of her own death, she was Queen Victoria's most senior female line descendant.
+Her death marked the end of all female-line direct descendants of Frederick III, German Emperor and Victoria, Princess Royal.
+Issue
+
+Princess Katherine of Greece and Denmark and Major Richard Campbell Andrew Brandram had one child, a son:
+
+
+Bibliography
+
+Ancestry
+
+References
+
+External links
+
+@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Princess Katherine of Greece and Denmark at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +133,9 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +150,23 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,185 +458,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (215beaf5-3647-4ad4-aa86-9bd39bdf09d0)
- Call ID: 215beaf5-3647-4ad4-aa86-9bd39bdf09d0
+  AssignClass (1864814f-1be3-4adb-8f16-8c770a616c63)
+ Call ID: 1864814f-1be3-4adb-8f16-8c770a616c63
   Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
     type: :Woman
-    source: Alexia
-  AssignClass (b6d76502-c4a1-48c2-8c9e-e53f6dddcbab)
- Call ID: b6d76502-c4a1-48c2-8c9e-e53f6dddcbab
+  AssignClass (2740fa12-bbd3-4beb-8cc9-da63bdf18922)
+ Call ID: 2740fa12-bbd3-4beb-8cc9-da63bdf18922
   Args:
-    source: Constantine_II
-    type: :Man
-  AssignClass (6c01e942-30dc-450b-bf7f-2542000fcf0a)
- Call ID: 6c01e942-30dc-450b-bf7f-2542000fcf0a
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    type: :Person
+  AddLiteral (02e623d5-4f88-41e5-9472-ec7ca75f441a)
+ Call ID: 02e623d5-4f88-41e5-9472-ec7ca75f441a
   Args:
-    source: Anne-Marie
-    type: :Woman
-  AssignClass (99e84cac-fc9a-4952-89e0-8ada8893edcc)
- Call ID: 99e84cac-fc9a-4952-89e0-8ada8893edcc
-  Args:
-    source: Pavlos
-    type: :Man
-  AssignClass (bd6003af-5bd8-40f6-afe3-35dc56211fba)
- Call ID: bd6003af-5bd8-40f6-afe3-35dc56211fba
-  Args:
-    source: Carlos_Javier_Morales_Quintana
-    type: :Man
-  AssignClass (a7fb3714-b375-44f0-9cdf-4356cfaf140e)
- Call ID: a7fb3714-b375-44f0-9cdf-4356cfaf140e
-  Args:
-    type: :Woman
-    source: Theodora
-  AssignClass (87f852db-732c-4292-8904-fdc3cbd51989)
- Call ID: 87f852db-732c-4292-8904-fdc3cbd51989
-  Args:
-    source: Maria-Olympia
-    type: :Woman
-  AssignClass (8cf158bc-3c90-435d-abdf-165d21fb6844)
- Call ID: 8cf158bc-3c90-435d-abdf-165d21fb6844
-  Args:
-    type: :Woman
-    source: Mafalda
-  AssignClass (0322c81c-90b9-4cb2-b3a6-b5a533c0c39f)
- Call ID: 0322c81c-90b9-4cb2-b3a6-b5a533c0c39f
-  Args:
-    type: :Man
-    source: Kyril
-  AssignClass (6babbec8-2811-4571-bd5b-d9ae6bc81042)
- Call ID: 6babbec8-2811-4571-bd5b-d9ae6bc81042
-  Args:
-    source: Simeon
-    type: :Man
-  AssignClass (58e65dc5-5edc-4749-a3c9-4a9e36142198)
- Call ID: 58e65dc5-5edc-4749-a3c9-4a9e36142198
-  Args:
-    source: Ingrid
-    type: :Woman
-  AssignClass (1e04460c-95c1-425a-85f7-b0c4933baa2b)
- Call ID: 1e04460c-95c1-425a-85f7-b0c4933baa2b
-  Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (c5117f59-232f-454f-8c77-14ad4477ad9f)
- Call ID: c5117f59-232f-454f-8c77-14ad4477ad9f
-  Args:
-    source: Felipe_VI
-    type: :Man
-  AssignClass (05a8d382-eba4-4554-9864-6be4f7c6092f)
- Call ID: 05a8d382-eba4-4554-9864-6be4f7c6092f
-  Args:
-    source: Michael
-    type: :Man
-  AssignClass (513f0f58-ab48-40a6-91ec-aae9dee2078c)
- Call ID: 513f0f58-ab48-40a6-91ec-aae9dee2078c
-  Args:
-    type: :Woman
-    source: Marina
-  AddLiteral (2745431e-a5fe-45a4-a515-128e8a652f79)
- Call ID: 2745431e-a5fe-45a4-a515-128e8a652f79
-  Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    literal_type: xsd:integer
     relation: :hasBirthYear
+    literal_value: 1913
+  AddLiteral (68040484-4813-4334-98b3-be13a8dedd3a)
+ Call ID: 68040484-4813-4334-98b3-be13a8dedd3a
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2007
     literal_type: xsd:integer
-    source: Alexia
-    literal_value: 1965
-  AddTriple (ce146ab0-f3b6-41a4-bc31-6f7b8e2bd54e)
- Call ID: ce146ab0-f3b6-41a4-bc31-6f7b8e2bd54e
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (4d4a3ceb-3aa8-4a92-b5d3-e51d581c4ee6)
+ Call ID: 4d4a3ceb-3aa8-4a92-b5d3-e51d581c4ee6
   Args:
-    target: Constantine_II
+    literal_value: Lady Katherine Brandram
+    relation: :knownAs
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    literal_type: xsd:string
+  AssignClass (b2528295-d809-4493-b583-39d43fa9fbf4)
+ Call ID: b2528295-d809-4493-b583-39d43fa9fbf4
+  Args:
+    type: :Man
+    source: :King_Constantine_I_of_Greece
+  AssignClass (655dbde5-1b65-4ccc-9279-4c98f3110a14)
+ Call ID: 655dbde5-1b65-4ccc-9279-4c98f3110a14
+  Args:
+    type: :Person
+    source: :King_Constantine_I_of_Greece
+  AssignClass (d00ebcf4-9b85-42e6-a335-29f71202c29c)
+ Call ID: d00ebcf4-9b85-42e6-a335-29f71202c29c
+  Args:
+    type: :Woman
+    source: :Princess_Sophia_of_Prussia
+  AssignClass (3b786b8a-ac4f-48e4-8f5c-41fe0b385cc1)
+ Call ID: 3b786b8a-ac4f-48e4-8f5c-41fe0b385cc1
+  Args:
+    type: :Person
+    source: :Princess_Sophia_of_Prussia
+  AddTriple (07149ee3-297c-4d6f-8ed9-66e91c7bbd15)
+ Call ID: 07149ee3-297c-4d6f-8ed9-66e91c7bbd15
+  Args:
     relation: :hasFather
-    source: Alexia
-  AddTriple (7b41bb56-6718-4f3d-be50-8a0494568e54)
- Call ID: 7b41bb56-6718-4f3d-be50-8a0494568e54
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    target: :King_Constantine_I_of_Greece
+  AddTriple (0787ea13-515f-439d-b08f-d4a4ceb6eb63)
+ Call ID: 0787ea13-515f-439d-b08f-d4a4ceb6eb63
   Args:
-    source: Alexia
-    target: Anne-Marie
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    target: :Princess_Sophia_of_Prussia
     relation: :hasMother
-  AddTriple (c3985780-690b-4322-8bd5-935fa4604e68)
- Call ID: c3985780-690b-4322-8bd5-935fa4604e68
+  AssignClass (11c98bae-9f07-479f-abc0-58b7031e6141)
+ Call ID: 11c98bae-9f07-479f-abc0-58b7031e6141
   Args:
-    source: Pavlos
-    relation: :isBrotherOf
-    target: Alexia
-  AddTriple (6a8c7cbc-bc42-4c37-ad8e-c47ebd516058)
- Call ID: 6a8c7cbc-bc42-4c37-ad8e-c47ebd516058
+    source: :George_King_of_the_Hellenes
+    type: :Man
+  AssignClass (b97dc85e-e487-46da-8336-820aa7b1527b)
+ Call ID: b97dc85e-e487-46da-8336-820aa7b1527b
   Args:
-    relation: :isSisterOf
-    target: Alexia
-    source: Theodora
-  AddTriple (84d087b9-97d5-4bf9-9ea3-32dd8c92713c)
- Call ID: 84d087b9-97d5-4bf9-9ea3-32dd8c92713c
+    type: :Person
+    source: :George_King_of_the_Hellenes
+  AssignClass (9221cb3a-0ffd-4b45-b851-52cdf4517ff1)
+ Call ID: 9221cb3a-0ffd-4b45-b851-52cdf4517ff1
   Args:
-    relation: :hasFather
-    target: Constantine_II
-    source: Alexia
-  AddTriple (16ac7e74-21e8-4e58-ac8c-4099ffa079b6)
- Call ID: 16ac7e74-21e8-4e58-ac8c-4099ffa079b6
+    type: :Man
+    source: :Alexander_King_of_the_Hellenes
+  AssignClass (25b4e6dd-ee22-451a-9e71-f0d214a3b72b)
+ Call ID: 25b4e6dd-ee22-451a-9e71-f0d214a3b72b
   Args:
-    source: Alexia
-    relation: :hasMother
-    target: Anne-Marie
-  AddTriple (28b5aa6b-744a-4b42-9d33-ad5ac5939a41)
- Call ID: 28b5aa6b-744a-4b42-9d33-ad5ac5939a41
+    type: :Person
+    source: :Alexander_King_of_the_Hellenes
+  AssignClass (c750e35d-8af9-47a2-aa66-8ecb445d6cfe)
+ Call ID: c750e35d-8af9-47a2-aa66-8ecb445d6cfe
   Args:
-    source: Pavlos
-    relation: :hasFather
-    target: Constantine_II
-  AddTriple (135cc5ab-928b-499e-9f18-d85f9d3d5872)
- Call ID: 135cc5ab-928b-499e-9f18-d85f9d3d5872
+    type: :Man
+    source: :Paul_King_of_the_Hellenes
+  AssignClass (8eb99692-4fdb-4b75-b11e-31d720d2a397)
+ Call ID: 8eb99692-4fdb-4b75-b11e-31d720d2a397
   Args:
-    target: Anne-Marie
-    relation: :hasMother
-    source: Pavlos
-  AddLiteral (dbe24535-51ca-4a0a-81d4-9b94fe979ca2)
- Call ID: dbe24535-51ca-4a0a-81d4-9b94fe979ca2
+    type: :Person
+    source: :Paul_King_of_the_Hellenes
+  AssignClass (20f2e502-ed1a-4189-b2d7-17e46f9ff03e)
+ Call ID: 20f2e502-ed1a-4189-b2d7-17e46f9ff03e
   Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1999
-    source: Alexia
-  AddTriple (b5304871-c2f2-49b5-a817-fd7d7441331d)
- Call ID: b5304871-c2f2-49b5-a817-fd7d7441331d
+    type: :Woman
+    source: :Princess_Helen_of_Greece_and_Denmark
+  AssignClass (b7893bda-390a-42fa-8dbc-d8f35634decd)
+ Call ID: b7893bda-390a-42fa-8dbc-d8f35634decd
   Args:
-    target: Carlos_Javier_Morales_Quintana
+    source: :Princess_Helen_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (b5cbe5cd-52a5-45f6-bfe9-58a122185d1e)
+ Call ID: b5cbe5cd-52a5-45f6-bfe9-58a122185d1e
+  Args:
+    type: :Woman
+    source: :Princess_Irene_of_Greece_and_Denmark
+  AssignClass (bdb13afc-7655-4396-898b-4d8d55d48f0c)
+ Call ID: bdb13afc-7655-4396-898b-4d8d55d48f0c
+  Args:
+    type: :Person
+    source: :Princess_Irene_of_Greece_and_Denmark
+  AddTriple (53664f11-5506-45b3-b896-57eb89bf7ec3)
+ Call ID: 53664f11-5506-45b3-b896-57eb89bf7ec3
+  Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    target: :George_King_of_the_Hellenes
+    relation: :hasBrother
+  AddTriple (30ce8efc-a306-437d-8d45-b558e31e270f)
+ Call ID: 30ce8efc-a306-437d-8d45-b558e31e270f
+  Args:
+    relation: :hasBrother
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    target: :Alexander_King_of_the_Hellenes
+  AddTriple (ab2fd449-d7c9-4ab1-bec8-acb7fed5cdc8)
+ Call ID: ab2fd449-d7c9-4ab1-bec8-acb7fed5cdc8
+  Args:
+    relation: :hasBrother
+    target: :Paul_King_of_the_Hellenes
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddTriple (2814f941-2b54-4f51-a8e0-b29e2582dc8f)
+ Call ID: 2814f941-2b54-4f51-a8e0-b29e2582dc8f
+  Args:
+    target: :Princess_Helen_of_Greece_and_Denmark
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasSister
+  AddTriple (606560d4-049d-4551-99bd-2e3e522b095b)
+ Call ID: 606560d4-049d-4551-99bd-2e3e522b095b
+  Args:
+    target: :Princess_Irene_of_Greece_and_Denmark
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasSister
+  AssignClass (b3abf115-02ca-429e-baa4-ed8356b9dd17)
+ Call ID: b3abf115-02ca-429e-baa4-ed8356b9dd17
+  Args:
+    source: :Major_Richard_Campbell_Andrew_Brandram
+    type: :Man
+  AssignClass (75ccd929-906c-48df-ac4b-7bf01ac3a522)
+ Call ID: 75ccd929-906c-48df-ac4b-7bf01ac3a522
+  Args:
+    source: :Major_Richard_Campbell_Andrew_Brandram
+    type: :Person
+  AddTriple (9cb928b2-6f74-4a32-8ee5-0ba9b28c14f2)
+ Call ID: 9cb928b2-6f74-4a32-8ee5-0ba9b28c14f2
+  Args:
+    target: :Major_Richard_Campbell_Andrew_Brandram
+    source: :Princess_Katherine_of_Greece_and_Denmark
     relation: :hasRelation
-    source: Alexia
-  AddTriple (ef88f4c8-dae0-457f-857e-e4d8f3a19bca)
- Call ID: ef88f4c8-dae0-457f-857e-e4d8f3a19bca
-  Args:
-    source: Mafalda
-    target: Kyril
-    relation: :isDaughterOf
-  AddTriple (c8b365c5-b311-49cf-972f-272a1be2c45b)
- Call ID: c8b365c5-b311-49cf-972f-272a1be2c45b
-  Args:
-    source: Kyril
-    target: Simeon
-    relation: :isSonOf
-  AddTriple (abf02845-4e81-4dfb-9b46-e8141774d9ee)
- Call ID: abf02845-4e81-4dfb-9b46-e8141774d9ee
-  Args:
-    target: Anne-Marie
-    relation: :isSisterOf
-    source: Sofia
-  AddTriple (87de5697-43eb-4a00-a551-48b9c98e918f)
- Call ID: 87de5697-43eb-4a00-a551-48b9c98e918f
-  Args:
-    target: Anne-Marie
-    relation: :isSisterOf
-    source: Ingrid
-  AddTriple (bb589058-b7de-4c6d-993f-ca697135fd10)
- Call ID: bb589058-b7de-4c6d-993f-ca697135fd10
-  Args:
-    source: Sofia
-    relation: :isSisterOf
-    target: Alexia
-  AddTriple (e98c8861-0810-4872-9f25-27d4cb140ed5)
- Call ID: e98c8861-0810-4872-9f25-27d4cb140ed5
-  Args:
-    source: Michael
-    target: Marina
-    relation: :isFatherOf
-  Finish (e8fe5d0f-939b-4b7a-a4d2-4e802aab742e)
- Call ID: e8fe5d0f-939b-4b7a-a4d2-4e802aab742e
+  Finish (2f826a19-62e1-485e-8352-8774b9eb1c16)
+ Call ID: 2f826a19-62e1-485e-8352-8774b9eb1c16
   Args:

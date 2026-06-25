@@ -7,46 +7,73 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Prince_Maximilian-_Margrave_of_Baden a :Person ;
+    rdfs:label "Prince Maximilian, Margrave of Baden" ;
+    data:posIndicesFull "449:485" ;
+    data:posIndicesPart "1238:1246",
+        "763:769",
+        "806:812" ;
+    data:wdtLink wdt:Q1913939 ;
+    :alsoKnownAs "Maximilian Andreas Friedrich Gustav Ernst August Bernhard Prinz von Baden" ;
+    :hasParent data:Prince_Berthold-_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "276:289",
-        "276:308",
-        "763:776",
-        "763:798",
-        "770:798",
-        "806:819",
-        "806:838" ;
-    data:posIndicesPart "612:618" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isUncleOf data:Prince_Maximilian-_Margrave_of_Baden .
+data:Prince_Andrew_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark" ;
+    data:posIndicesFull "612:647",
+        "619:647" ;
+    data:posIndicesPart "763:769",
+        "780:786",
+        "791:798",
+        "806:812",
+        "921:928" ;
+    data:wdtLink wdt:Q156531 ;
+    :alsoKnownAs "Andrew of Greece and Denmark" ;
+    :hasSex data:male .
 
-data:Princess_Marie_Louise_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Berthold-_Margrave_of_Baden a :Person ;
+    rdfs:label "Prince Berthold, Margrave of Baden" ;
+    data:posIndicesFull "0:37" ;
+    data:posIndicesPart "1151:1159",
+        "1238:1246",
+        "276:282",
+        "524:532",
+        "703:708",
+        "709:714",
+        "763:769",
+        "806:812" ;
+    data:wdtLink wdt:Q62602 ;
+    :alsoKnownAs "Berthold Prinz und Markgraf von Baden" ;
+    :hasParent data:Princess_Marie_Louise_of_Hanover ;
+    :hasSex data:male .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "612:647",
+        "652:680",
+        "661:666",
+        "661:680",
+        "972:976" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:Princess_Marie_Louise_of_Hanover a :Person ;
     rdfs:label "Princess Marie Louise of Hanover" ;
     data:posIndicesFull "490:522" ;
     data:wdtLink wdt:Q271998 ;
@@ -54,72 +81,23 @@ data:Princess_Marie_Louise_of_Hanover a :Ancestor,
         "Princess Marie Louise of Hanover",
         "Princess Marie Louise of Hanover and Cumberland",
         "Princess Marie Louise, Margravine of Baden" ;
-    :hasChild data:Prince_Berthold-_Margrave_of_Baden ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Berthold-_Margrave_of_Baden ;
-    :isMotherOf data:Prince_Berthold-_Margrave_of_Baden ;
-    :isParentOf data:Prince_Berthold-_Margrave_of_Baden .
+    :hasSex data:female .
 
-data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Person ;
     rdfs:label "Princess Theodora of Greece and Denmark" ;
     data:posIndicesFull "351:390",
         "559:598" ;
-    data:posIndicesPart "921:928" ;
+    data:posIndicesPart "780:786",
+        "791:798",
+        "921:928" ;
     data:wdtLink wdt:Q255382 ;
     :alsoKnownAs "Princess Theodora, Margravine of Baden",
         "Theodora, Margravine of Baden" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasChild data:Prince_Maximilian-_Margrave_of_Baden ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isMotherOf data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isParentOf data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
 
-data:Prince_Berthold-_Margrave_of_Baden a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Berthold, Margrave of Baden" ;
-    data:posIndicesFull "0:37" ;
-    data:posIndicesPart "1024:1032",
-        "524:532",
-        "612:618",
-        "703:708",
-        "709:714",
-        "937:945" ;
-    data:wdtLink wdt:Q62602 ;
-    :alsoKnownAs "Berthold Prinz und Markgraf von Baden" ;
-    :hasChild data:Prince_Maximilian-_Margrave_of_Baden ;
-    :hasMother data:Princess_Marie_Louise_of_Hanover ;
-    :hasParent data:Princess_Marie_Louise_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isChildOf data:Princess_Marie_Louise_of_Hanover ;
-    :isFatherOf data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isParentOf data:Prince_Maximilian-_Margrave_of_Baden ;
-    :isSonOf data:Princess_Marie_Louise_of_Hanover .
+data:female a :Female .
 
-data:Prince_Maximilian-_Margrave_of_Baden a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Maximilian, Margrave of Baden" ;
-    data:posIndicesFull "449:485" ;
-    data:posIndicesPart "1024:1032" ;
-    data:wdtLink wdt:Q1913939 ;
-    :alsoKnownAs "Maximilian Andreas Friedrich Gustav Ernst August Bernhard Prinz von Baden" ;
-    :hasFather data:Prince_Berthold-_Margrave_of_Baden ;
-    :hasMother data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :hasParent data:Prince_Berthold-_Margrave_of_Baden,
-        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Berthold-_Margrave_of_Baden,
-        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isSonOf data:Prince_Berthold-_Margrave_of_Baden,
-        data:Princess_Theodora_of_Greece_and_Denmark_1 .
+data:male a :Male .
 

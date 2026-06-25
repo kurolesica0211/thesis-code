@@ -1,0 +1,233 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "4372:4376"^^xsd:string,
+        "540:545"^^xsd:string,
+        "816:820"^^xsd:string,
+        "987:991"^^xsd:string ;
+    data:posIndicesPart "1617:1625"^^xsd:string,
+        "1712:1720"^^xsd:string,
+        "1789:1797"^^xsd:string,
+        "2089:2097"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isAuntOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Prince_Karl_Emich_of_Leiningen a :Man,
+        :Person ;
+    rdfs:label "Prince Karl Emich of Leiningen"^^xsd:string ;
+    data:posIndicesFull "1307:1327"^^xsd:string,
+        "285:312"^^xsd:string,
+        "379:399"^^xsd:string,
+        "5241:5261"^^xsd:string,
+        "70:100"^^xsd:string,
+        "7:34"^^xsd:string ;
+    data:posIndicesPart "1559:1568"^^xsd:string,
+        "1758:1767"^^xsd:string,
+        "1856:1862"^^xsd:string,
+        "1863:1867"^^xsd:string,
+        "1868:1873"^^xsd:string,
+        "2039:2045"^^xsd:string,
+        "2049:2058"^^xsd:string,
+        "2124:2133"^^xsd:string,
+        "2164:2168"^^xsd:string,
+        "2169:2174"^^xsd:string,
+        "2287:2293"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2309:2313"^^xsd:string,
+        "2317:2326"^^xsd:string,
+        "2445:2451"^^xsd:string,
+        "2452:2457"^^xsd:string,
+        "2502:2511"^^xsd:string,
+        "2612:2618"^^xsd:string,
+        "2710:2714"^^xsd:string,
+        "2715:2720"^^xsd:string,
+        "2801:2805"^^xsd:string,
+        "2806:2811"^^xsd:string,
+        "3016:3020"^^xsd:string,
+        "3021:3026"^^xsd:string,
+        "3319:3328"^^xsd:string,
+        "3419:3428"^^xsd:string,
+        "3596:3600"^^xsd:string,
+        "3705:3709"^^xsd:string,
+        "3710:3715"^^xsd:string,
+        "3889:3893"^^xsd:string,
+        "3894:3899"^^xsd:string,
+        "4260:4266"^^xsd:string,
+        "4517:4521"^^xsd:string,
+        "4522:4527"^^xsd:string,
+        "4703:4707"^^xsd:string,
+        "4708:4713"^^xsd:string,
+        "4885:4891"^^xsd:string,
+        "5330:5334"^^xsd:string,
+        "5335:5340"^^xsd:string,
+        "5633:5637"^^xsd:string,
+        "5638:5643"^^xsd:string,
+        "5712:5716"^^xsd:string,
+        "5717:5722"^^xsd:string ;
+    data:wdtLink wdt:Q7244117 ;
+    :alsoKnownAs "Emperor Nicholas III"^^xsd:string,
+        "Karl-Emich Nikolaus Friedrich Hermann Erbprinz zu Leiningen"^^xsd:string,
+        "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasAncestor data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Prince_Karl_Emich_of_Leiningen ;
+    :hasFather data:Emich-_7th_Prince_of_Leiningen ;
+    :hasParent data:Emich-_7th_Prince_of_Leiningen ;
+    :hasRelation data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isBrotherOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isChildOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isSiblingOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSonOf data:Emich-_7th_Prince_of_Leiningen .
+
+data:Emich-_7th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Emich, 7th Prince of Leiningen"^^xsd:string ;
+    data:posIndicesFull "476:506"^^xsd:string ;
+    data:posIndicesPart "1260:1265"^^xsd:string,
+        "1559:1568"^^xsd:string,
+        "1758:1767"^^xsd:string,
+        "1856:1862"^^xsd:string,
+        "1868:1873"^^xsd:string,
+        "2039:2045"^^xsd:string,
+        "2049:2058"^^xsd:string,
+        "2124:2133"^^xsd:string,
+        "2169:2174"^^xsd:string,
+        "2287:2293"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2317:2326"^^xsd:string,
+        "2445:2451"^^xsd:string,
+        "2452:2457"^^xsd:string,
+        "2502:2511"^^xsd:string,
+        "2612:2618"^^xsd:string,
+        "2715:2720"^^xsd:string,
+        "2806:2811"^^xsd:string,
+        "3021:3026"^^xsd:string,
+        "3319:3328"^^xsd:string,
+        "3419:3428"^^xsd:string,
+        "3710:3715"^^xsd:string,
+        "3894:3899"^^xsd:string,
+        "4260:4266"^^xsd:string,
+        "4522:4527"^^xsd:string,
+        "4708:4713"^^xsd:string,
+        "4885:4891"^^xsd:string,
+        "5112:5117"^^xsd:string,
+        "5186:5192"^^xsd:string,
+        "5335:5340"^^xsd:string,
+        "5638:5643"^^xsd:string,
+        "5717:5722"^^xsd:string ;
+    data:wdtLink wdt:Q5371081 ;
+    :hasAncestor data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Emich-_7th_Prince_of_Leiningen ;
+    :hasChild data:Prince_Karl_Emich_of_Leiningen ;
+    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_Emich_of_Leiningen ;
+    :isAncestorOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isBloodrelationOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isBrotherOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isChildOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isFatherOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isParentOf data:Prince_Karl_Emich_of_Leiningen ;
+    :isSiblingOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isSonOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isUncleOf data:Prince_Karl_Emich_of_Leiningen .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "764:780"^^xsd:string ;
+    data:posIndicesPart "1016:1022"^^xsd:string,
+        "1057:1063"^^xsd:string,
+        "1424:1429"^^xsd:string,
+        "1430:1437"^^xsd:string,
+        "1438:1443"^^xsd:string,
+        "1460:1466"^^xsd:string,
+        "3946:3951"^^xsd:string,
+        "4249:4255"^^xsd:string,
+        "4366:4371"^^xsd:string,
+        "955:961"^^xsd:string,
+        "981:986"^^xsd:string ;
+    data:wdtLink wdt:Q778200 ;
+    :alsoKnownAs "Maria Kirillovna"^^xsd:string,
+        "Maria Kirillovna of Russia"^^xsd:string,
+        "Maria Kirillovna, Princess of Leiningen"^^xsd:string ;
+    :hasAncestor data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasChild data:Emich-_7th_Prince_of_Leiningen ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Emich-_7th_Prince_of_Leiningen,
+        data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Prince_Karl_Emich_of_Leiningen,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasSon data:Emich-_7th_Prince_of_Leiningen ;
+    :isAncestorOf data:Emich-_7th_Prince_of_Leiningen,
+        data:Prince_Karl_Emich_of_Leiningen ;
+    :isAuntOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isChildOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isParentOf data:Emich-_7th_Prince_of_Leiningen ;
+    :isSiblingOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Kirillovna_of_Russia .
+

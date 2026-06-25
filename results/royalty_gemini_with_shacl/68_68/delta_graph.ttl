@@ -2,37 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:CharlesAugustus a :Man,
-        :Person ;
+data:Michael a :Man ;
+    :hasFather data:Charles_Augustus .
+
+data:Charles_Augustus a :Ancestor,
+        :Man ;
     :hasBirthYear 1912 ;
     :hasDeathYear 1988 ;
-    :hasFather data:WilhelmErnst ;
+    :hasFather data:Wilhelm_Ernst ;
     :hasMarriageYear 1944 ;
-    :hasMother data:Feodora ;
-    :hasRelation data:Elisabeth ;
-    :hasSon data:Michael .
+    :hasMother data:Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .
 
-data:Elisabeth a :Person,
-        :Woman ;
-    :hasFather data:Othmar ;
-    :hasMother data:Maud .
+data:Elisabeth_of_Wangenheim-Winterstein a :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+    :hasMother data:Maud_von_Tr%C3%BCtzschler .
 
-data:Feodora a :Ancestor,
-        :Person,
+data:Feodora_of_Saxe-Meiningen a :Ancestor,
         :Woman .
 
-data:Maud a :Ancestor,
-        :Person,
+data:Maud_von_Tr%C3%BCtzschler a :Ancestor,
         :Woman .
 
-data:Michael a :Man,
-        :Person .
+data:Othmar_Baron_von_Wangenheim-Winterstein a :Ancestor,
+        :Man .
 
-data:Othmar a :Ancestor,
-        :Man,
-        :Person .
-
-data:WilhelmErnst a :Ancestor,
-        :Man,
-        :Person .
+data:Wilhelm_Ernst a :Ancestor,
+        :Man .
 

@@ -2,48 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_VI a :Man .
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasRelation data:Major_Richard_Campbell_Andrew_Brandram ;
+    :hasSister data:Princess_Helen_of_Greece_and_Denmark,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :knownAs "Lady Katherine Brandram"^^xsd:string .
 
-data:Ingrid a :Woman ;
-    :isSisterOf data:Anne-Marie .
+data:Alexander_King_of_the_Hellenes a :Man,
+        :Person .
 
-data:Mafalda a :Woman ;
-    :isDaughterOf data:Kyril .
+data:George_King_of_the_Hellenes a :Man,
+        :Person .
 
-data:Maria-Olympia a :Woman .
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
 
-data:Michael a :Man ;
-    :isFatherOf data:Marina .
+data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+        :Person .
 
-data:Pavlos a :Man ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie ;
-    :isBrotherOf data:Alexia .
+data:Paul_King_of_the_Hellenes a :Man,
+        :Person .
 
-data:Sofia a :Woman ;
-    :isSisterOf data:Alexia,
-        data:Anne-Marie .
+data:Princess_Helen_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Theodora a :Woman ;
-    :isSisterOf data:Alexia .
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Carlos_Javier_Morales_Quintana a :Man .
-
-data:Kyril a :Man ;
-    :isSonOf data:Simeon .
-
-data:Marina a :Woman .
-
-data:Simeon a :Man .
-
-data:Constantine_II a :Man .
-
-data:Alexia a :Woman ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Constantine_II ;
-    :hasMarriageYear 1999 ;
-    :hasMother data:Anne-Marie ;
-    :hasRelation data:Carlos_Javier_Morales_Quintana .
-
-data:Anne-Marie a :Woman .
+data:Princess_Sophia_of_Prussia a :Person,
+        :Woman .
 

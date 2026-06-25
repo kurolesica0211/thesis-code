@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean-Christophe_Prince_Napol%C3%A9on a :Man,
+        :Person ;
+    :hasBrother data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :hasRelation data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isBrotherOf data:Jean-Christophe_Prince_Napol%C3%A9on ;
+    :isSiblingOf data:Jean-Christophe_Prince_Napol%C3%A9on .
+
+data:King_Albert_II a :Man,
+        :Person ;
+    :hasBrother data:King_Albert_II ;
+    :hasRelation data:King_Albert_II ;
+    :isBloodrelationOf data:King_Albert_II ;
+    :isBrotherOf data:King_Albert_II ;
+    :isSiblingOf data:King_Albert_II .
+
+data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,
+        :Woman ;
+    :hasRelation data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este ;
+    :hasSister data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este ;
+    :isBloodrelationOf data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este ;
+    :isSiblingOf data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este ;
+    :isSisterOf data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este .
+
+data:Prince_Nikolaus_of_Liechtenstein a :Man,
+        :Person ;
+    :hasBrother data:Prince_Nikolaus_of_Liechtenstein ;
+    :hasRelation data:Prince_Nikolaus_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Nikolaus_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Nikolaus_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Nikolaus_of_Liechtenstein .
+
+data:Princess_Beatrice_of_York a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrice_of_York ;
+    :hasSister data:Princess_Beatrice_of_York ;
+    :isBloodrelationOf data:Princess_Beatrice_of_York ;
+    :isSiblingOf data:Princess_Beatrice_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York .
+
+data:Princess_Elisabeth_Duchess_of_Brabant a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Elisabeth_Duchess_of_Brabant ;
+    :hasSister data:Princess_Elisabeth_Duchess_of_Brabant ;
+    :isBloodrelationOf data:Princess_Elisabeth_Duchess_of_Brabant ;
+    :isSiblingOf data:Princess_Elisabeth_Duchess_of_Brabant ;
+    :isSisterOf data:Princess_Elisabeth_Duchess_of_Brabant .
+
+data:Princess_Margaretha_of_Luxembourg a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaretha_of_Luxembourg ;
+    :hasSister data:Princess_Margaretha_of_Luxembourg ;
+    :isBloodrelationOf data:Princess_Margaretha_of_Luxembourg ;
+    :isSiblingOf data:Princess_Margaretha_of_Luxembourg ;
+    :isSisterOf data:Princess_Margaretha_of_Luxembourg .
+
+data:Queen_Fabiola a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Fabiola ;
+    :hasSister data:Queen_Fabiola ;
+    :isBloodrelationOf data:Queen_Fabiola ;
+    :isSiblingOf data:Queen_Fabiola ;
+    :isSisterOf data:Queen_Fabiola .
+
+data:Queen_Paola a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Paola ;
+    :hasSister data:Queen_Paola ;
+    :isBloodrelationOf data:Queen_Paola ;
+    :isSiblingOf data:Queen_Paola ;
+    :isSisterOf data:Queen_Paola .
+
+data:Lorenz_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Lorenz_Archduke_of_Austria-Este ;
+    :hasChild data:Amedeo_of_Austria-Este ;
+    :hasRelation data:Amedeo_of_Austria-Este,
+        data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :hasSon data:Amedeo_of_Austria-Este ;
+    :isAncestorOf data:Amedeo_of_Austria-Este ;
+    :isBloodrelationOf data:Lorenz_Archduke_of_Austria-Este ;
+    :isBrotherOf data:Lorenz_Archduke_of_Austria-Este ;
+    :isFatherOf data:Amedeo_of_Austria-Este ;
+    :isParentOf data:Amedeo_of_Austria-Este ;
+    :isSiblingOf data:Lorenz_Archduke_of_Austria-Este ;
+    :isUncleOf data:Amedeo_of_Austria-Este .
+
+data:Princess_Astrid_of_Belgium a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Amedeo_of_Austria-Este ;
+    :hasRelation data:Amedeo_of_Austria-Este,
+        data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :hasSister data:Princess_Astrid_of_Belgium ;
+    :hasSon data:Amedeo_of_Austria-Este ;
+    :isAncestorOf data:Amedeo_of_Austria-Este ;
+    :isAuntOf data:Amedeo_of_Austria-Este ;
+    :isBloodrelationOf data:Princess_Astrid_of_Belgium ;
+    :isMotherOf data:Amedeo_of_Austria-Este ;
+    :isParentOf data:Amedeo_of_Austria-Este ;
+    :isSiblingOf data:Princess_Astrid_of_Belgium ;
+    :isSisterOf data:Princess_Astrid_of_Belgium .
+
+data:Amedeo_of_Austria-Este a :Man,
+        :Person ;
+    :hasAncestor data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Amedeo_of_Austria-Este ;
+    :hasFather data:Lorenz_Archduke_of_Austria-Este ;
+    :hasMother data:Princess_Astrid_of_Belgium ;
+    :hasParent data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :hasRelation data:Amedeo_of_Austria-Este,
+        data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :isBloodrelationOf data:Amedeo_of_Austria-Este ;
+    :isBrotherOf data:Amedeo_of_Austria-Este ;
+    :isChildOf data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium ;
+    :isSiblingOf data:Amedeo_of_Austria-Este ;
+    :isSonOf data:Lorenz_Archduke_of_Austria-Este,
+        data:Princess_Astrid_of_Belgium .
+

@@ -2,66 +2,95 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Francoise_Marie_de_Bourbon a :Person,
+data:Charles_Louis_dOrleans a :Man,
+        :Person ;
+    :hasFather data:Jacques_dOrleans .
+
+data:Diane_dOrleans a :Person,
         :Woman ;
-    :hasFather data:Louis_XIV .
+    :isSisterOf data:Henri_dOrleans .
 
-data:Henri_son_of_Henri a :Man,
+data:Foulques_dOrleans a :Man,
         :Person ;
+    :hasFather data:Jacques_dOrleans .
+
+data:Francois_dOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Francois_dOrleans_son_of_Henri a :Man,
+        :Person ;
+    :hasFather data:Henri_dOrleans .
+
+data:Jean_Robert_Boeuf a :Man,
+        :Person .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasFather data:Henri_dOrleans .
+
+data:Louis_Alphonse_Duke_of_Anjou a :Man,
+        :Person .
+
+data:Marie_dOrleans a :Person,
+        :Woman ;
     :hasFather data:Henri_dOrleans ;
-    :hasRelation data:Micaela_Cousino_Quinones_de_Leon .
+    :hasMother data:Marie_Therese_of_Wurttemberg .
 
-data:Michel a :Man,
+data:Michel_dOrleans a :Man,
         :Person ;
-    :hasFather data:Henri_dOrleans .
+    :isBrotherOf data:Henri_dOrleans .
 
-data:Philippe_Duke_of_Orleans a :Ancestor,
-        :Man,
+data:Prince_Gundakar_of_Liechtenstein a :Man,
         :Person .
 
-data:Prince_Eudes_Duke_of_Angouleme a :Man,
-        :Person .
-
-data:Thibaut a :Man,
+data:Thibaut_dOrleans a :Man,
         :Person ;
-    :hasFather data:Henri_dOrleans .
+    :isBrotherOf data:Henri_dOrleans .
 
-data:Isabelle_of_Orleans_Braganza a :Person,
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+        :Person,
         :Woman .
 
-data:Jean_Duke_of_Guise a :Ancestor,
-        :Man,
-        :Person .
-
-data:Louis_Philippe_I a :Ancestor,
-        :Man,
-        :Person .
-
-data:Louis_XIII a :Ancestor,
-        :Man,
-        :Person .
-
-data:Micaela_Cousino_Quinones_de_Leon a :Person,
-        :Woman .
-
-data:Philippe_I_Duke_of_Orleans a :Ancestor,
+data:Henri_Count_of_Paris a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Louis_XIII .
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 .
 
-data:Louis_XIV a :Ancestor,
+data:Luis_Cousino_y_Sebire a :Ancestor,
         :Man,
         :Person .
+
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Jacques_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :isBrotherOf data:Henri_dOrleans .
+
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
 
 data:Henri_dOrleans a :Ancestor,
         :Man,
         :Person ;
-    :hasAncestor data:Louis_Philippe_I,
-        data:Louis_XIV,
-        data:Philippe_I_Duke_of_Orleans ;
-    :hasBirthYear 1908 ;
-    :hasDeathYear 1999 ;
-    :hasFather data:Jean_Duke_of_Guise ;
-    :hasMarriageYear 1931 ;
-    :hasRelation data:Isabelle_of_Orleans_Braganza .
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Marie_Therese_of_Wurttemberg,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
 

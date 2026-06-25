@@ -1,0 +1,536 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_V a :Man ;
+    :hasBrother data:George_V ;
+    :hasRelation data:George_V ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isSiblingOf data:George_V .
+
+data:Louise_of_Mecklenburg-Strelitz a :Woman ;
+    :hasRelation data:Louise_of_Mecklenburg-Strelitz ;
+    :hasSister data:Louise_of_Mecklenburg-Strelitz ;
+    :isBloodrelationOf data:Louise_of_Mecklenburg-Strelitz ;
+    :isSiblingOf data:Louise_of_Mecklenburg-Strelitz ;
+    :isSisterOf data:Louise_of_Mecklenburg-Strelitz .
+
+data:Nicholas_II a :Man ;
+    :hasBrother data:Nicholas_II ;
+    :hasRelation data:Nicholas_II ;
+    :isBloodrelationOf data:Nicholas_II ;
+    :isBrotherOf data:Nicholas_II ;
+    :isSiblingOf data:Nicholas_II .
+
+data:Queen_Victoria a :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Joachim a :Man ;
+    :hasBrother data:Joachim ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise ;
+    :isBloodrelationOf data:Joachim,
+        data:Victoria_Louise ;
+    :isBrotherOf data:Joachim,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Joachim,
+        data:Victoria_Louise ;
+    :isUncleOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Felipe_VI ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isFatherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isUncleOf data:Felipe_VI .
+
+data:Augusta_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Victoria_Louise ;
+    :hasDaughter data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Augusta_Victoria ;
+    :isAncestorOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Victoria_Louise,
+        data:Welf_Henry ;
+    :isAuntOf data:Victoria_Louise ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isMotherOf data:Victoria_Louise ;
+    :isParentOf data:Victoria_Louise ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Wilhelm_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Victoria_Louise ;
+    :hasDaughter data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Victoria_Louise,
+        data:Welf_Henry ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Victoria_Louise ;
+    :isParentOf data:Victoria_Louise ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Victoria_Louise .
+
+data:Felipe_VI a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Frederica,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica ;
+    :hasParent data:Frederica,
+        data:Paul_of_Greece ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isChildOf data:Frederica,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Felipe_VI ;
+    :isSonOf data:Frederica,
+        data:Paul_of_Greece .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasChild data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasDaughter data:Frederica ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSon data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :isAncestorOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isFatherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isParentOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover ;
+    :isUncleOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry .
+
+data:Christian_Oscar a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica ;
+    :isBloodrelationOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBrotherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isUncleOf data:Felipe_VI .
+
+data:Ernest_Augustus_Junior a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica ;
+    :isBloodrelationOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBrotherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isUncleOf data:Felipe_VI .
+
+data:George_William a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica ;
+    :isBloodrelationOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBrotherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isUncleOf data:Felipe_VI .
+
+data:Welf_Henry a :Man ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica ;
+    :isBloodrelationOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBrotherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSonOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isUncleOf data:Felipe_VI .
+
+data:Frederica a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasChild data:Felipe_VI ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :hasParent data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Felipe_VI ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isChildOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isDaughterOf data:Ernest_Augustus_of_Hanover,
+        data:Victoria_Louise ;
+    :isMotherOf data:Felipe_VI ;
+    :isParentOf data:Felipe_VI ;
+    :isSiblingOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSisterOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry .
+
+data:Victoria_Louise a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Joachim ;
+    :hasChild data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :hasDaughter data:Frederica ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria,
+        data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Joachim,
+        data:Paul_of_Greece,
+        data:Victoria_Louise,
+        data:Welf_Henry,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise ;
+    :hasSon data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:George_William,
+        data:Welf_Henry ;
+    :isAncestorOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Felipe_VI,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isAuntOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isBloodrelationOf data:Joachim,
+        data:Victoria_Louise ;
+    :isChildOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isDaughterOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isMotherOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isParentOf data:Christian_Oscar,
+        data:Ernest_Augustus_Junior,
+        data:Frederica,
+        data:George_William,
+        data:Welf_Henry ;
+    :isSiblingOf data:Joachim,
+        data:Victoria_Louise ;
+    :isSisterOf data:Joachim,
+        data:Victoria_Louise .
+

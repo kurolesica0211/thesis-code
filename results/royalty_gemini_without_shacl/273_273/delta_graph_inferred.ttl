@@ -1,0 +1,217 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sylvana_Tomaselli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :hasDaughter data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Sylvana_Tomaselli ;
+    :isAncestorOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isAuntOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Sylvana_Tomaselli ;
+    :isMotherOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isParentOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSiblingOf data:Sylvana_Tomaselli ;
+    :isSisterOf data:Sylvana_Tomaselli .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:George_Windsor_Earl_of_St_Andrews ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSon data:George_Windsor_Earl_of_St_Andrews ;
+    :isAncestorOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isParentOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:George_Windsor_Earl_of_St_Andrews .
+
+data:Sir_William_Worsley_4th_Baronet a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_William_Worsley_4th_Baronet ;
+    :hasChild data:Katharine_Duchess_of_Kent ;
+    :hasDaughter data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :isAncestorOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Sir_William_Worsley_4th_Baronet ;
+    :isBrotherOf data:Sir_William_Worsley_4th_Baronet ;
+    :isFatherOf data:Katharine_Duchess_of_Kent ;
+    :isParentOf data:Katharine_Duchess_of_Kent ;
+    :isSiblingOf data:Sir_William_Worsley_4th_Baronet ;
+    :isUncleOf data:Katharine_Duchess_of_Kent .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man,
+        :Person ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBrotherOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor .
+
+data:Lady_Amelia_Windsor a :Person,
+        :Woman ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSisterOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Sir_William_Worsley_4th_Baronet ;
+    :hasChild data:George_Windsor_Earl_of_St_Andrews ;
+    :hasFather data:Sir_William_Worsley_4th_Baronet ;
+    :hasParent data:Sir_William_Worsley_4th_Baronet ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :hasSon data:George_Windsor_Earl_of_St_Andrews ;
+    :isAncestorOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isAuntOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isChildOf data:Sir_William_Worsley_4th_Baronet ;
+    :isDaughterOf data:Sir_William_Worsley_4th_Baronet ;
+    :isMotherOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isParentOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:George_Windsor_Earl_of_St_Andrews a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet ;
+    :hasBrother data:George_Windsor_Earl_of_St_Andrews ;
+    :hasChild data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :hasDaughter data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :isAncestorOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isBrotherOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isParentOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSiblingOf data:George_Windsor_Earl_of_St_Andrews ;
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor .
+
+data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :hasParent data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Tomaselli ;
+    :hasRelation data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Katharine_Duchess_of_Kent,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sir_William_Worsley_4th_Baronet,
+        data:Sylvana_Tomaselli ;
+    :hasSister data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isBloodrelationOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isChildOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Tomaselli ;
+    :isDaughterOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor ;
+    :isSisterOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Amelia_Windsor,
+        data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor .
+

@@ -1,0 +1,174 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBrother data:Charles_III ;
+    :hasRelation data:Charles_III ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isSiblingOf data:Charles_III .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman ;
+    :hasRelation data:Diana_Princess_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :isBloodrelationOf data:Diana_Princess_of_Wales ;
+    :isSiblingOf data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Diana_Princess_of_Wales .
+
+data:Catherine_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :hasDaughter data:Charlotte_Elizabeth_Diana ;
+    :hasRelation data:Catherine_Princess_of_Wales,
+        data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Catherine_Princess_of_Wales ;
+    :hasSon data:George,
+        data:Louis ;
+    :isAncestorOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isAuntOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isBloodrelationOf data:Catherine_Princess_of_Wales ;
+    :isMotherOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isParentOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isSiblingOf data:Catherine_Princess_of_Wales ;
+    :isSisterOf data:Catherine_Princess_of_Wales .
+
+data:William_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Prince_of_Wales ;
+    :hasChild data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :hasDaughter data:Charlotte_Elizabeth_Diana ;
+    :hasRelation data:Catherine_Princess_of_Wales,
+        data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis,
+        data:William_Prince_of_Wales ;
+    :hasSon data:George,
+        data:Louis ;
+    :isAncestorOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isBloodrelationOf data:William_Prince_of_Wales ;
+    :isBrotherOf data:William_Prince_of_Wales ;
+    :isFatherOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isParentOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isSiblingOf data:William_Prince_of_Wales ;
+    :isUncleOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis .
+
+data:Charlotte_Elizabeth_Diana a :Person,
+        :Woman ;
+    :hasAncestor data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasBirthYear 2015 ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasRelation data:Catherine_Princess_of_Wales,
+        data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Charlotte_Elizabeth_Diana ;
+    :isBloodrelationOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :isDaughterOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isSisterOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :knownAs "Charlotte Cambridge"^^xsd:string .
+
+data:George a :Man,
+        :Person ;
+    :hasAncestor data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasRelation data:Catherine_Princess_of_Wales,
+        data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Charlotte_Elizabeth_Diana ;
+    :isBloodrelationOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isBrotherOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isSonOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales .
+
+data:Louis a :Man,
+        :Person ;
+    :hasAncestor data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :hasRelation data:Catherine_Princess_of_Wales,
+        data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Charlotte_Elizabeth_Diana ;
+    :isBloodrelationOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isBrotherOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isChildOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Charlotte_Elizabeth_Diana,
+        data:George,
+        data:Louis ;
+    :isSonOf data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales .
+

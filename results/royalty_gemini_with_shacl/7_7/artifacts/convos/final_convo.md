@@ -118,6 +118,8 @@ Finnian Anson (born 2014).
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +135,9 @@ Finnian Anson (born 2014).
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +152,23 @@ Finnian Anson (born 2014).
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,160 +460,240 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (18d56dff-8f12-4d33-90f5-e7f7afe93274)
- Call ID: 18d56dff-8f12-4d33-90f5-e7f7afe93274
-  Args:
-    type: :Man
-    source: Patrick_Anson_5th_Earl_of_Lichfield
-  AssignClass (58c1f47c-6a8e-46d4-bf32-2a1c65a5db11)
- Call ID: 58c1f47c-6a8e-46d4-bf32-2a1c65a5db11
-  Args:
-    type: :Man
-    source: Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield
-  AssignClass (8c12ea78-1b21-4994-955b-aade9a0fea59)
- Call ID: 8c12ea78-1b21-4994-955b-aade9a0fea59
-  Args:
-    type: :Man
-    source: Thomas_Anson_1st_Viscount_Anson
-  AssignClass (ac0428c6-55dd-442e-b334-b6124e5975d7)
- Call ID: ac0428c6-55dd-442e-b334-b6124e5975d7
-  Args:
-    type: :Man
-    source: Thomas_William_Arnold_Anson_Viscount_Anson
-  AssignClass (614094f6-7ee0-444b-8e6a-721695119061)
- Call ID: 614094f6-7ee0-444b-8e6a-721695119061
-  Args:
-    type: :Man
-    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-  AssignClass (d2ec67d4-3dda-443f-9e63-84613b64957a)
- Call ID: d2ec67d4-3dda-443f-9e63-84613b64957a
-  Args:
-    type: :Woman
-    source: Lady_Leonora_Mary_Grosvenor
-  AssignClass (ec932585-69d7-433c-a5a1-24985051a549)
- Call ID: ec932585-69d7-433c-a5a1-24985051a549
-  Args:
-    type: :Woman
-    source: Lady_Henrietta_Conyngham
-  AssignClass (56a53684-0a96-4bd9-b627-7735388efd17)
- Call ID: 56a53684-0a96-4bd9-b627-7735388efd17
-  Args:
-    type: :Man
-    source: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
-  AssignClass (abf16e59-0aa5-4df6-aedc-1119765ad0c7)
- Call ID: abf16e59-0aa5-4df6-aedc-1119765ad0c7
-  Args:
-    type: :Man
-    source: Finnian_Anson
-  AddLiteral (207856cc-61ee-4f9a-a551-3f8b052df22a)
- Call ID: 207856cc-61ee-4f9a-a551-3f8b052df22a
+  AssignClass (42852610-8d2d-4166-8257-9798e8f20dc5)
+ Call ID: 42852610-8d2d-4166-8257-9798e8f20dc5
   Args:
     source: Patrick_Anson_5th_Earl_of_Lichfield
+    type: :Man
+  AssignClass (d402363f-c432-4c14-9497-fbf9aa37ffe6)
+ Call ID: d402363f-c432-4c14-9497-fbf9aa37ffe6
+  Args:
+    source: Patrick_Anson_5th_Earl_of_Lichfield
+    type: :Person
+  AddLiteral (9f83db24-766a-43ba-a952-925ca4612eaa)
+ Call ID: 9f83db24-766a-43ba-a952-925ca4612eaa
+  Args:
     literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1960
-  AddLiteral (052c724c-ad55-4095-bb02-429f22c4ff67)
- Call ID: 052c724c-ad55-4095-bb02-429f22c4ff67
-  Args:
-    source: Patrick_Anson_5th_Earl_of_Lichfield
     literal_value: 2005
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (73c07534-953c-4bf4-b185-ba14d59ffe1c)
- Call ID: 73c07534-953c-4bf4-b185-ba14d59ffe1c
+    source: Patrick_Anson_5th_Earl_of_Lichfield
+  AssignClass (c4608fed-42dd-4609-90d2-7b24bfc7c7c5)
+ Call ID: c4608fed-42dd-4609-90d2-7b24bfc7c7c5
   Args:
-    literal_value: 1795
+    type: :Man
+    source: Thomas_Anson_2nd_Viscount_Anson
+  AssignClass (c7c55883-fb6c-429b-bdee-a20d3b76a667)
+ Call ID: c7c55883-fb6c-429b-bdee-a20d3b76a667
+  Args:
+    source: Thomas_Anson_2nd_Viscount_Anson
+    type: :Person
+  AddLiteral (a26d8868-83c8-4d7e-8fea-8929b230f1ac)
+ Call ID: a26d8868-83c8-4d7e-8fea-8929b230f1ac
+  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield
-  AddLiteral (951c9832-f94f-495c-9345-08a015ff3323)
- Call ID: 951c9832-f94f-495c-9345-08a015ff3323
+    literal_value: 1795
+    source: Thomas_Anson_2nd_Viscount_Anson
+  AddLiteral (14db3bdb-4121-4de1-9083-507eb03996c4)
+ Call ID: 14db3bdb-4121-4de1-9083-507eb03996c4
   Args:
-    literal_type: xsd:integer
     relation: :hasDeathYear
     literal_value: 1854
-    source: Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield
-  AddLiteral (b34f3121-dc41-46fc-8cd1-163a6742c9a5)
- Call ID: b34f3121-dc41-46fc-8cd1-163a6742c9a5
+    source: Thomas_Anson_2nd_Viscount_Anson
+    literal_type: xsd:integer
+  AssignClass (910e3d3e-307a-4c95-bf5f-222fe2902640)
+ Call ID: 910e3d3e-307a-4c95-bf5f-222fe2902640
   Args:
+    source: Thomas_Anson_1st_Viscount_Anson
+    type: :Man
+  AssignClass (a2091035-6c98-44fa-8e96-2cf6ca78b43e)
+ Call ID: a2091035-6c98-44fa-8e96-2cf6ca78b43e
+  Args:
+    type: :Person
+    source: Thomas_Anson_1st_Viscount_Anson
+  AddTriple (a6b03d7a-871a-48b7-ba46-93d3fe9649dd)
+ Call ID: a6b03d7a-871a-48b7-ba46-93d3fe9649dd
+  Args:
+    source: Thomas_Anson_1st_Viscount_Anson
+    relation: :isFatherOf
+    target: Thomas_Anson_2nd_Viscount_Anson
+  AssignClass (f1d7220c-3261-4a27-83c4-376dfbc274c3)
+ Call ID: f1d7220c-3261-4a27-83c4-376dfbc274c3
+  Args:
+    type: :Man
     source: Thomas_William_Arnold_Anson_Viscount_Anson
+  AssignClass (85c52c55-d57b-4934-b98d-807e9e7d9bed)
+ Call ID: 85c52c55-d57b-4934-b98d-807e9e7d9bed
+  Args:
+    type: :Person
+    source: Thomas_William_Arnold_Anson_Viscount_Anson
+  AddLiteral (3f6a2967-c982-4a17-9d4d-cbda75d387f2)
+ Call ID: 3f6a2967-c982-4a17-9d4d-cbda75d387f2
+  Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
     literal_value: 1913
-  AddLiteral (a50567b6-2a40-4ae4-9063-0adf77d6879b)
- Call ID: a50567b6-2a40-4ae4-9063-0adf77d6879b
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1958
     source: Thomas_William_Arnold_Anson_Viscount_Anson
-  AddLiteral (ca61b240-f762-4954-9c28-d016a284fe89)
- Call ID: ca61b240-f762-4954-9c28-d016a284fe89
+  AddLiteral (23d1736d-bc53-4b8e-b576-4019e3b53df8)
+ Call ID: 23d1736d-bc53-4b8e-b576-4019e3b53df8
   Args:
-    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Thomas_William_Arnold_Anson_Viscount_Anson
+    relation: :hasDeathYear
+    literal_value: 1958
+  AddTriple (c4e9e0f2-5b25-46b4-b5cb-5cd4b4b8bfa4)
+ Call ID: c4e9e0f2-5b25-46b4-b5cb-5cd4b4b8bfa4
+  Args:
+    source: Thomas_William_Arnold_Anson_Viscount_Anson
+    target: Patrick_Anson_5th_Earl_of_Lichfield
+    relation: :isFatherOf
+  AssignClass (50e93e3e-2ef3-4d28-9aa1-6d1720b0f316)
+ Call ID: 50e93e3e-2ef3-4d28-9aa1-6d1720b0f316
+  Args:
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    type: :Man
+  AssignClass (11e7877b-1d64-41ff-889a-548780b9a9b2)
+ Call ID: 11e7877b-1d64-41ff-889a-548780b9a9b2
+  Args:
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    type: :Person
+  AddLiteral (c709310a-de5c-4aee-8fd4-59e124f49adf)
+ Call ID: c709310a-de5c-4aee-8fd4-59e124f49adf
+  Args:
     literal_type: xsd:integer
     literal_value: 1978
-    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-  AddLiteral (bd8a5f5e-efa2-470e-a41f-f9d014f1785f)
- Call ID: bd8a5f5e-efa2-470e-a41f-f9d014f1785f
-  Args:
     relation: :hasBirthYear
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+  AddTriple (b1c96b55-15cb-4f02-93ae-1a2f6e0c08b3)
+ Call ID: b1c96b55-15cb-4f02-93ae-1a2f6e0c08b3
+  Args:
+    source: Patrick_Anson_5th_Earl_of_Lichfield
+    target: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    relation: :isFatherOf
+  AssignClass (4e4bc4cb-6821-4884-9101-d29295475aab)
+ Call ID: 4e4bc4cb-6821-4884-9101-d29295475aab
+  Args:
+    type: :Woman
+    source: Lady_Leonora_Mary_Grosvenor
+  AssignClass (1a942885-1cfc-4dbf-9568-467e206ce34b)
+ Call ID: 1a942885-1cfc-4dbf-9568-467e206ce34b
+  Args:
+    type: :Person
+    source: Lady_Leonora_Mary_Grosvenor
+  AddTriple (b7b4640c-605f-4bf4-8632-3c5ca4b552d1)
+ Call ID: b7b4640c-605f-4bf4-8632-3c5ca4b552d1
+  Args:
+    source: Lady_Leonora_Mary_Grosvenor
+    target: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    relation: :isMotherOf
+  AssignClass (0204450a-542e-4885-ac5f-7c07929059dd)
+ Call ID: 0204450a-542e-4885-ac5f-7c07929059dd
+  Args:
+    type: :Man
+    source: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
+  AssignClass (994a2bf9-0601-4f48-800b-60008c033240)
+ Call ID: 994a2bf9-0601-4f48-800b-60008c033240
+  Args:
+    type: :Person
+    source: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
+  AddLiteral (13e5b7ab-a197-4d0a-ac45-748af35e8594)
+ Call ID: 13e5b7ab-a197-4d0a-ac45-748af35e8594
+  Args:
     literal_type: xsd:integer
+    relation: :hasBirthYear
     literal_value: 2011
     source: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
-  AddLiteral (badd669c-59e1-4770-8e5d-dbf7d6782161)
- Call ID: badd669c-59e1-4770-8e5d-dbf7d6782161
+  AddTriple (bb967fca-3f28-4fdf-b3ef-b52eb85b7980)
+ Call ID: bb967fca-3f28-4fdf-b3ef-b52eb85b7980
+  Args:
+    relation: :isFatherOf
+    target: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+  AssignClass (53dfdc95-f72a-4892-aaa1-e42523d27a30)
+ Call ID: 53dfdc95-f72a-4892-aaa1-e42523d27a30
+  Args:
+    type: :Man
+    source: Finnian_Anson
+  AssignClass (19a82a5d-fa92-4a45-a776-08392a3bc1fd)
+ Call ID: 19a82a5d-fa92-4a45-a776-08392a3bc1fd
   Args:
     source: Finnian_Anson
+    type: :Person
+  AddLiteral (3e2ffbd6-f4e0-4555-bfc3-37ef81b7fb47)
+ Call ID: 3e2ffbd6-f4e0-4555-bfc3-37ef81b7fb47
+  Args:
+    literal_type: xsd:integer
     literal_value: 2014
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (476adb3e-45ea-4f88-90eb-93a506d7e85e)
- Call ID: 476adb3e-45ea-4f88-90eb-93a506d7e85e
-  Args:
-    source: Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield
-    target: Thomas_Anson_1st_Viscount_Anson
-    relation: :hasFather
-  AddTriple (3ef13c77-1230-47ae-954d-c37ae4faea55)
- Call ID: 3ef13c77-1230-47ae-954d-c37ae4faea55
-  Args:
-    relation: :hasFather
-    target: Thomas_William_Arnold_Anson_Viscount_Anson
-    source: Patrick_Anson_5th_Earl_of_Lichfield
-  AddTriple (280f4b52-59b8-4b24-8ade-bdeb2dbff949)
- Call ID: 280f4b52-59b8-4b24-8ade-bdeb2dbff949
-  Args:
-    relation: :hasFather
-    target: Patrick_Anson_5th_Earl_of_Lichfield
-    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-  AddTriple (ce8da1ce-0789-4d30-88a6-9f5ffa21cfae)
- Call ID: ce8da1ce-0789-4d30-88a6-9f5ffa21cfae
-  Args:
-    relation: :hasMother
-    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-    target: Lady_Leonora_Mary_Grosvenor
-  AddTriple (fbf07368-1992-4cf3-9076-6502142f3381)
- Call ID: fbf07368-1992-4cf3-9076-6502142f3381
-  Args:
-    target: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-    source: Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson
-    relation: :hasFather
-  AddTriple (fc4f8258-cdd0-41d3-9641-7f1074ba2aa4)
- Call ID: fc4f8258-cdd0-41d3-9641-7f1074ba2aa4
-  Args:
-    relation: :hasFather
-    target: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
     source: Finnian_Anson
-  AddLiteral (c5b1ea02-14b0-4ad1-9d60-3e85976ffe35)
- Call ID: c5b1ea02-14b0-4ad1-9d60-3e85976ffe35
+  AddTriple (df48bb76-fdad-4c09-8318-0e61ddb8a461)
+ Call ID: df48bb76-fdad-4c09-8318-0e61ddb8a461
   Args:
-    source: Patrick_Anson_5th_Earl_of_Lichfield
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: Patrick Lichfield
-  Finish (fea8f0e9-59b7-44cc-b0be-a67f4ea11d6a)
- Call ID: fea8f0e9-59b7-44cc-b0be-a67f4ea11d6a
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    target: Finnian_Anson
+    relation: :isFatherOf
+  AssignClass (efc35f4d-213e-4040-8c16-4a1aa1f051fe)
+ Call ID: efc35f4d-213e-4040-8c16-4a1aa1f051fe
   Args:
+    type: :Woman
+    source: Lady_Henrietta_Conyngham
+  AssignClass (48958d54-71fa-41c8-beb4-db05e9dc2645)
+ Call ID: 48958d54-71fa-41c8-beb4-db05e9dc2645
+  Args:
+    type: :Person
+    source: Lady_Henrietta_Conyngham
+  AddLiteral (e155f9af-cd74-4f69-8bbf-f9fe72ef720a)
+ Call ID: e155f9af-cd74-4f69-8bbf-f9fe72ef720a
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 2009
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+  AddTriple (db4c3338-70c4-48cf-8d6d-1bfa83f80947)
+ Call ID: db4c3338-70c4-48cf-8d6d-1bfa83f80947
+  Args:
+    source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
+    target: Lady_Henrietta_Conyngham
+    relation: :hasRelation
+  Finish (2b0ae30a-3904-4a56-95d8-61dd74311d73)
+ Call ID: 2b0ae30a-3904-4a56-95d8-61dd74311d73
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -626,39 +798,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Finnian_Anson a :Man ;
-      :hasBirthYear 2014 ;
-      :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+  data:Lady_Leonora_Mary_Grosvenor a :Person,
+          :Woman ;
+      :isMotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
 
-  data:Lady_Henrietta_Conyngham a :Woman .
+  data:Thomas_Anson_1st_Viscount_Anson a :Man,
+          :Person ;
+      :isFatherOf data:Thomas_Anson_2nd_Viscount_Anson .
 
-  data:Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield a :Man ;
-      :hasBirthYear 1795 ;
-      :hasDeathYear 1854 ;
-      :hasFather data:Thomas_Anson_1st_Viscount_Anson .
-
-  data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man ;
-      :hasBirthYear 2011 ;
-      :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
-
-  data:Lady_Leonora_Mary_Grosvenor a :Woman .
-
-  data:Patrick_Anson_5th_Earl_of_Lichfield a :Man ;
-      :hasDeathYear 1960,
-          2005 ;
-      :hasFather data:Thomas_William_Arnold_Anson_Viscount_Anson ;
-      :knownAs "Patrick Lichfield"^^xsd:string .
-
-  data:Thomas_Anson_1st_Viscount_Anson a :Man .
-
-  data:Thomas_William_Arnold_Anson_Viscount_Anson a :Man ;
+  data:Thomas_William_Arnold_Anson_Viscount_Anson a :Man,
+          :Person ;
       :hasBirthYear 1913 ;
-      :hasDeathYear 1958 .
+      :hasDeathYear 1958 ;
+      :isFatherOf data:Patrick_Anson_5th_Earl_of_Lichfield .
 
-  data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Man ;
+  data:Finnian_Anson a :Man,
+          :Person ;
+      :hasBirthYear 2014 .
+
+  data:Lady_Henrietta_Conyngham a :Person,
+          :Woman .
+
+  data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+          :Person ;
+      :hasDeathYear 2005 ;
+      :isFatherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+
+  data:Thomas_Anson_2nd_Viscount_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1795 ;
+      :hasDeathYear 1854 .
+
+  data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man,
+          :Person ;
+      :hasBirthYear 2011 .
+
+  data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Man,
+          :Person ;
       :hasBirthYear 1978 ;
-      :hasFather data:Patrick_Anson_5th_Earl_of_Lichfield ;
-      :hasMother data:Lady_Leonora_Mary_Grosvenor .
+      :hasMarriageYear 2009 ;
+      :hasRelation data:Lady_Henrietta_Conyngham ;
+      :isFatherOf data:Finnian_Anson,
+          data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson .
 
 
 
@@ -670,158 +851,54 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (73e8d72e-2650-48bc-bd61-0178dced7b0f)
- Call ID: 73e8d72e-2650-48bc-bd61-0178dced7b0f
+  ValidateShacl (406ee04e-7d67-4c55-86d7-377d51346b52)
+ Call ID: 406ee04e-7d67-4c55-86d7-377d51346b52
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:5
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
+      The node Patrick_Anson_5th_Earl_of_Lichfield is acting as a father, but it is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
+      AssignClass(node='Patrick_Anson_5th_Earl_of_Lichfield', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value node Thomas_Anson_1st_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
+      The node Thomas_William_Arnold_Anson_Viscount_Anson is acting as a father, but it is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_Anson_1st_Viscount_Anson, :Ancestor)
+      AssignClass(node='Thomas_William_Arnold_Anson_Viscount_Anson', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value node Thomas_William_Arnold_Anson_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
+      The node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield is acting as a father, but it is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Arnold_Anson_Viscount_Anson, :Ancestor)
+      AssignClass(node='Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value node Patrick_Anson_5th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
+      The node Thomas_Anson_1st_Viscount_Anson is acting as a father, but it is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Patrick_Anson_5th_Earl_of_Lichfield, :Ancestor)
+      AssignClass(node='Thomas_Anson_1st_Viscount_Anson', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
+      The node Lady_Leonora_Mary_Grosvenor is acting as a mother, but it is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Leonora_Mary_Grosvenor does not belong to the required classes :Ancestor or :Woman for the property :hasMother.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Leonora_Mary_Grosvenor, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_Anson_1st_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_Anson_1st_Viscount_Anson, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Patrick_Anson_5th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Patrick_Anson_5th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Arnold_Anson_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Arnold_Anson_Viscount_Anson, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Leonora_Mary_Grosvenor does not belong to the required classes :Ancestor or :Woman for the property :hasMother.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Leonora_Mary_Grosvenor, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_Anson_1st_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_Anson_1st_Viscount_Anson, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Patrick_Anson_5th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Patrick_Anson_5th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Thomas_William_Arnold_Anson_Viscount_Anson does not belong to the required classes :Ancestor or :Man for the property :hasFather.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thomas_William_Arnold_Anson_Viscount_Anson, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Leonora_Mary_Grosvenor does not belong to the required classes :Ancestor or :Woman for the property :hasMother.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Leonora_Mary_Grosvenor, :Ancestor)
+      AssignClass(node='Lady_Leonora_Mary_Grosvenor', class=':Ancestor')
 
 
 
@@ -830,43 +907,31 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (26ba344d-66ef-42d4-8ebe-af39cf252177)
- Call ID: 26ba344d-66ef-42d4-8ebe-af39cf252177
-  Args:
-    type: :Ancestor
-    source: Thomas_Anson_1st_Viscount_Anson
-  AssignClass (8e38e2c3-bc4c-47b2-904d-6e496e5e6c80)
- Call ID: 8e38e2c3-bc4c-47b2-904d-6e496e5e6c80
-  Args:
-    type: :Ancestor
-    source: Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield
-  AssignClass (c03e6c43-a889-4388-a131-2bfebdaa85fe)
- Call ID: c03e6c43-a889-4388-a131-2bfebdaa85fe
-  Args:
-    type: :Ancestor
-    source: Thomas_William_Arnold_Anson_Viscount_Anson
-  AssignClass (1d63c817-a283-4785-a708-5a3d901c507e)
- Call ID: 1d63c817-a283-4785-a708-5a3d901c507e
+  AssignClass (05777480-b426-44a1-83d0-608c9b603b7d)
+ Call ID: 05777480-b426-44a1-83d0-608c9b603b7d
   Args:
     type: :Ancestor
     source: Patrick_Anson_5th_Earl_of_Lichfield
-  AssignClass (6a941c30-5851-4506-8d05-7c37942961ac)
- Call ID: 6a941c30-5851-4506-8d05-7c37942961ac
+  AssignClass (cdf3a689-1ed5-4a43-a958-d711cb96a894)
+ Call ID: cdf3a689-1ed5-4a43-a958-d711cb96a894
+  Args:
+    source: Thomas_William_Arnold_Anson_Viscount_Anson
+    type: :Ancestor
+  AssignClass (7b84adb4-cdca-416d-95a9-959c354241c1)
+ Call ID: 7b84adb4-cdca-416d-95a9-959c354241c1
   Args:
     type: :Ancestor
     source: Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield
-  AssignClass (abec70dc-e9f7-44f3-a97d-480edc183c30)
- Call ID: abec70dc-e9f7-44f3-a97d-480edc183c30
+  AssignClass (3567927d-986b-458b-a389-1c5b3b69131c)
+ Call ID: 3567927d-986b-458b-a389-1c5b3b69131c
   Args:
     type: :Ancestor
-    source: Lady_Leonora_Mary_Grosvenor
-  ValidateShacl (561cabc4-0b0d-41b0-9991-903a44213f0b)
- Call ID: 561cabc4-0b0d-41b0-9991-903a44213f0b
+    source: Thomas_Anson_1st_Viscount_Anson
+  AssignClass (22b85ccb-ca5c-4ec1-8dab-60920b2520a4)
+ Call ID: 22b85ccb-ca5c-4ec1-8dab-60920b2520a4
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Lady_Leonora_Mary_Grosvenor
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -891,47 +956,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Finnian_Anson a :Man ;
-      :hasBirthYear 2014 ;
-      :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
-
-  data:Lady_Henrietta_Conyngham a :Woman .
-
-  data:Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield a :Ancestor,
-          :Man ;
-      :hasBirthYear 1795 ;
-      :hasDeathYear 1854 ;
-      :hasFather data:Thomas_Anson_1st_Viscount_Anson .
-
-  data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man ;
-      :hasBirthYear 2011 ;
-      :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
-
   data:Lady_Leonora_Mary_Grosvenor a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
+
+  data:Thomas_Anson_1st_Viscount_Anson a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Thomas_Anson_2nd_Viscount_Anson .
+
+  data:Thomas_William_Arnold_Anson_Viscount_Anson a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1958 ;
+      :isFatherOf data:Patrick_Anson_5th_Earl_of_Lichfield .
+
+  data:Finnian_Anson a :Man,
+          :Person ;
+      :hasBirthYear 2014 .
+
+  data:Lady_Henrietta_Conyngham a :Person,
           :Woman .
 
   data:Patrick_Anson_5th_Earl_of_Lichfield a :Ancestor,
-          :Man ;
-      :hasDeathYear 1960,
-          2005 ;
-      :hasFather data:Thomas_William_Arnold_Anson_Viscount_Anson ;
-      :knownAs "Patrick Lichfield"^^xsd:string .
+          :Man,
+          :Person ;
+      :hasDeathYear 2005 ;
+      :isFatherOf data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
 
-  data:Thomas_Anson_1st_Viscount_Anson a :Ancestor,
-          :Man .
+  data:Thomas_Anson_2nd_Viscount_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1795 ;
+      :hasDeathYear 1854 .
 
-  data:Thomas_William_Arnold_Anson_Viscount_Anson a :Ancestor,
-          :Man ;
-      :hasBirthYear 1913 ;
-      :hasDeathYear 1958 .
+  data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man,
+          :Person ;
+      :hasBirthYear 2011 .
 
   data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Ancestor,
-          :Man ;
+          :Man,
+          :Person ;
       :hasBirthYear 1978 ;
-      :hasFather data:Patrick_Anson_5th_Earl_of_Lichfield ;
-      :hasMother data:Lady_Leonora_Mary_Grosvenor .
+      :hasMarriageYear 2009 ;
+      :hasRelation data:Lady_Henrietta_Conyngham ;
+      :isFatherOf data:Finnian_Anson,
+          data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (3fd97156-3089-4512-8ca1-16744a7e5b84)
+ Call ID: 3fd97156-3089-4512-8ca1-16744a7e5b84
+  Args:
 
 ================================= Tool Message =================================
 
@@ -941,6 +1022,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (62fafafb-e132-4e50-be5e-5183a5b44256)
- Call ID: 62fafafb-e132-4e50-be5e-5183a5b44256
+  Finish (1c72202f-1e66-45d1-980e-6fa81f3b3f41)
+ Call ID: 1c72202f-1e66-45d1-980e-6fa81f3b3f41
   Args:

@@ -1,0 +1,184 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasChild data:Henry_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasSon data:Henry_of_Battenberg ;
+    :isAncestorOf data:Henry_of_Battenberg,
+        data:Leopold_Mountbatten ;
+    :isBloodrelationOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Henry_of_Battenberg ;
+    :isParentOf data:Henry_of_Battenberg ;
+    :isSiblingOf data:Alexander_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Henry_of_Battenberg .
+
+data:Julia_Princess_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Henry_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasSister data:Julia_Princess_of_Battenberg ;
+    :hasSon data:Henry_of_Battenberg ;
+    :isAncestorOf data:Henry_of_Battenberg,
+        data:Leopold_Mountbatten ;
+    :isAuntOf data:Henry_of_Battenberg ;
+    :isBloodrelationOf data:Julia_Princess_of_Battenberg ;
+    :isMotherOf data:Henry_of_Battenberg ;
+    :isParentOf data:Henry_of_Battenberg ;
+    :isSiblingOf data:Julia_Princess_of_Battenberg ;
+    :isSisterOf data:Julia_Princess_of_Battenberg .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isAncestorOf data:Beatrice_of_the_United_Kingdom,
+        data:Leopold_Mountbatten ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Beatrice_of_the_United_Kingdom .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatrice_of_the_United_Kingdom ;
+    :hasDaughter data:Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Beatrice_of_the_United_Kingdom,
+        data:Leopold_Mountbatten ;
+    :isAuntOf data:Beatrice_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Beatrice_of_the_United_Kingdom ;
+    :isParentOf data:Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Leopold_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Leopold_Mountbatten ;
+    :hasDeathYear 1922 ;
+    :hasFather data:Henry_of_Battenberg ;
+    :hasMother data:Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Leopold_Mountbatten ;
+    :isBrotherOf data:Leopold_Mountbatten ;
+    :isChildOf data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg ;
+    :isSiblingOf data:Leopold_Mountbatten ;
+    :isSonOf data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg .
+
+data:Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Leopold_Mountbatten ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasSister data:Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Leopold_Mountbatten ;
+    :isAncestorOf data:Leopold_Mountbatten ;
+    :isAuntOf data:Leopold_Mountbatten ;
+    :isBloodrelationOf data:Beatrice_of_the_United_Kingdom ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Leopold_Mountbatten ;
+    :isParentOf data:Leopold_Mountbatten ;
+    :isSiblingOf data:Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Beatrice_of_the_United_Kingdom .
+
+data:Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julia_Princess_of_Battenberg ;
+    :hasBrother data:Henry_of_Battenberg ;
+    :hasChild data:Leopold_Mountbatten ;
+    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg ;
+    :hasParent data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julia_Princess_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse_and_by_Rhine,
+        data:Beatrice_of_the_United_Kingdom,
+        data:Henry_of_Battenberg,
+        data:Julia_Princess_of_Battenberg,
+        data:Leopold_Mountbatten,
+        data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasSon data:Leopold_Mountbatten ;
+    :isAncestorOf data:Leopold_Mountbatten ;
+    :isBloodrelationOf data:Henry_of_Battenberg ;
+    :isBrotherOf data:Henry_of_Battenberg ;
+    :isChildOf data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julia_Princess_of_Battenberg ;
+    :isFatherOf data:Leopold_Mountbatten ;
+    :isParentOf data:Leopold_Mountbatten ;
+    :isSiblingOf data:Henry_of_Battenberg ;
+    :isSonOf data:Alexander_of_Hesse_and_by_Rhine,
+        data:Julia_Princess_of_Battenberg ;
+    :isUncleOf data:Leopold_Mountbatten .
+

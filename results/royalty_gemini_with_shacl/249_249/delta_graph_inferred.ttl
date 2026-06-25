@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Ogilvy a :Man ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:James_Ogilvy ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isBloodrelationOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isBrotherOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isSiblingOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isUncleOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
+
+data:Princess_Alexandra_of_Kent a :Ancestor,
+        :Woman ;
+    :hasChild data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasDaughter data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Princess_Alexandra_of_Kent,
+        data:Zenouska_May_Mowatt ;
+    :hasSister data:Princess_Alexandra_of_Kent ;
+    :isAncestorOf data:Christian_Alexander_Mowatt,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :isAuntOf data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Kent ;
+    :isMotherOf data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isParentOf data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isSiblingOf data:Princess_Alexandra_of_Kent ;
+    :isSisterOf data:Princess_Alexandra_of_Kent .
+
+data:Sir_Angus_Ogilvy a :Ancestor,
+        :Man ;
+    :hasBrother data:Sir_Angus_Ogilvy ;
+    :hasChild data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasDaughter data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Sir_Angus_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :isAncestorOf data:Christian_Alexander_Mowatt,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :isBloodrelationOf data:Sir_Angus_Ogilvy ;
+    :isBrotherOf data:Sir_Angus_Ogilvy ;
+    :isFatherOf data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isParentOf data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isSiblingOf data:Sir_Angus_Ogilvy ;
+    :isUncleOf data:Marina_Victoria_Alexandra_Ogilvy .
+
+data:Paul_Julian_Mowatt a :Ancestor,
+        :Man ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:Paul_Julian_Mowatt ;
+    :hasChild data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :hasDaughter data:Zenouska_May_Mowatt ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :hasSon data:Christian_Alexander_Mowatt ;
+    :isAncestorOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isBloodrelationOf data:Paul_Julian_Mowatt ;
+    :isBrotherOf data:Paul_Julian_Mowatt ;
+    :isFatherOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isParentOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isSiblingOf data:Paul_Julian_Mowatt ;
+    :isUncleOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
+
+data:Zenouska_May_Mowatt a :Woman ;
+    :hasAncestor data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasBirthYear 1990 ;
+    :hasBrother data:Christian_Alexander_Mowatt ;
+    :hasFather data:Paul_Julian_Mowatt ;
+    :hasMother data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasParent data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :hasSister data:Zenouska_May_Mowatt ;
+    :isBloodrelationOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isChildOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt ;
+    :isDaughterOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt ;
+    :isSiblingOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isSisterOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
+
+data:Christian_Alexander_Mowatt a :Man ;
+    :hasAncestor data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasBirthYear 1993 ;
+    :hasBrother data:Christian_Alexander_Mowatt ;
+    :hasFather data:Paul_Julian_Mowatt ;
+    :hasMother data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasParent data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :hasSister data:Zenouska_May_Mowatt ;
+    :isBloodrelationOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isBrotherOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isChildOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt ;
+    :isSiblingOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isSonOf data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt .
+
+data:Marina_Victoria_Alexandra_Ogilvy a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:James_Ogilvy ;
+    :hasChild data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :hasDaughter data:Zenouska_May_Mowatt ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMarriageYear 1990 ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
+    :hasParent data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasRelation data:Christian_Alexander_Mowatt,
+        data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy,
+        data:Paul_Julian_Mowatt,
+        data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy,
+        data:Zenouska_May_Mowatt ;
+    :hasSister data:Marina_Victoria_Alexandra_Ogilvy ;
+    :hasSon data:Christian_Alexander_Mowatt ;
+    :isAncestorOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isAuntOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isBloodrelationOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isChildOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isDaughterOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isMotherOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isParentOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :isSiblingOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy ;
+    :isSisterOf data:James_Ogilvy,
+        data:Marina_Victoria_Alexandra_Ogilvy .
+

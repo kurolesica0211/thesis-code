@@ -69,47 +69,178 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Count Ingolf of Rosenborg RE (born 17 February 1940) is a Danish count and former prince.
-Born Prince Ingolf of Denmark (Danish: Prins
-Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage til Danmark), he appeared likely to some day become king until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his first cousin Princess Margrethe and her two younger sisters.
-Family
+Queen Anne-Marie
 
-Ingolf was born at Sorgenfri Palace, Sorgenfri, as His Highness Prince Ingolf of Denmark.
-Loss of place in succession
 
-From the 1947 death of his grandfather, Christian X of Denmark, Ingolf stood only behind his father in the order of hereditary succession to the throne and was expected to become king in his turn.
-His father, Prince Knud, was then the heir presumptive, due to succeed Ingolf's uncle King Frederik IX, who had three daughters but no sons.
-In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
-Ingolf was thus relegated to fifth in the line of succession to the Danish throne, but more importantly, he now ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
-The princess became Queen Margrethe II in 1972 and reigned until 2024.
-Ingolf's place in the line of succession, were he still eligible, would be no higher than eleventh today.
-Loss of dynastic rights
+Queen Sofía of Spain
 
-In 1968, now with little hope of ascending the throne, Ingolf chose to forfeit his right of succession to the throne by marrying without having received the royal assent of the monarch in the Council of State.
-The king's permission to marry was not sought because it was expected to be denied, since Ingolf's fiancée was an untitled commoner.
-Though Frederik IX had liberalized traditional practice by allowing royal spouses who were not themselves royal, but who claimed noble blood and were known by courtesy titles (Anne Bowes-Lyon was the granddaughter of an earl and through her first marriage to the son of an earl bore the title of viscountess; Henri de Laborde de Monpezat used the title of count, though his family's claim to nobility was later acknowledged to be flawed), it would not be until 1995 that Margrethe II would allow her children to marry commoners with neither title nor claim to noble blood.
-Ingolf was given the title count of Rosenborg and the style of Excellency, as was customary in the 20th century for Danish princes who forfeited their dynastic rights.
-Prior to his son's wedding, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after marriage.
-But the king refused, on the grounds that other males of the dynasty who had been demoted to counts of Rosenborg upon marriage might try to reclaim their royal rank if Ingolf were allowed to do so, despite marrying a commoner as they had done.
-So, in 1968, Ingolf forfeited his rights to the throne and took the title count of Rosenborg.
-His younger brother Christian did the same three years later.
-Ingolf married firstly Inge Terney (21 January 1938 in Copenhagen – 21 July 1996 in Velje), daughter of Georg Terney (1906–1977), hardware storer, and wife Jenny Kamilla Hansen (1908–1990), on 13 January 1968, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark.
-After being widowed, he married secondly Sussie Hjorhøy-Pedersen (born 20 February 1950 in Copenhagen), daughter of Frederick Walter Pedersen and wife Ruth Hjorhøy, who thus became "Her Excellency Countess Sussie of Rosenborg" on 7 March 1998, at Egtved, Denmark.
-Ingolf is godfather to his grandnephew, Leopold Rosanes af Rosenborg, who is the grandson of his brother Christian.
-Public role
 
-Count Ingolf usually takes part in major public events associated with the royal family; he and Countess Sussie attended the May 2004 wedding of Crown Prince Frederik at Copenhagen Cathedral, and the subsequent reception at Fredensborg Palace.
-On some occasions, they are listed as members of the royal family, such as when they attended the wedding of Prince Joachim in 2008 and the luncheon to celebrate the 75th birthday of Prince Henrik at Fredensborg Palace on 11 June 2009 On other occasions, such as the celebrations for the Queen's 70th birthday, they are listed along with non-royal guests, but even in these cases at the ceremonies themselves they are usually given precedence immediately after his sister Princess Elisabeth of Denmark.
-Count Ingolf and Countess Sussie attended the Queen's ruby-jubilee (40th-anniversary) celebrations.
-In 1964, when still Prince Ingolf, he acted as groomsman to his third cousin, Constantine II of Greece, on his marriage to Princess Anne-Marie of Denmark (also Ingolf's first cousin).
-Ingolf receives an annual allowance of 1.4 million kroner according to the Danish Royal House website.
-His sister, Princess Elisabeth, did not receive such an allowance, though she remained in the line of succession.
+Marina, consort of Prince Michael
+
+
+Queen Margrethe II
+
+
+Anne-Marie RE (Greek: Άννα-Μαρία, romanized: Ánna-María; born Princess Anne-Marie Dagmar Ingrid of Denmark, 30 August 1946) is a Danish princess who was Queen of Greece as the consort of King Constantine II from their marriage on 18 September 1964 until the abolition of the Greek monarchy on 1 June 1973.
+Anne-Marie is the youngest daughter of Frederik IX of Denmark and Ingrid of Sweden.
+In 1964, she married Constantine and became queen consort of Greece.
+As queen, Anne-Marie spent much of her time working for a charitable foundation known as "Her Majesty's Fund", a foundation established by her mother-in-law, Queen Frederica of Greece.
+In 1967, Anne-Marie and her family were forced into exile upon the rise of a military dictatorship.
+Anne-Marie and her family were stripped of their Greek citizenship and had their property revoked, leading them to sue in the European Court of Human Rights.
+From the compensation she earned, Anne-Marie set up the "Anne-Marie Foundation", which provided assistance to people in rural areas of Greece.
+In 2013, she and Constantine moved back to Greece.
+They moved to Athens in 2022, where Constantine died in January the following year.
+Birth and family
+
+Anne-Marie was born on 30 August 1946 at Frederik VIII's Palace, an 18th-century palace which forms part of the Amalienborg Palace complex in central Copenhagen.
+She was the third and last daughter and child of Crown Prince Frederik and Crown Princess Ingrid of Denmark.
+Her father was the eldest son of Christian X of Denmark and Alexandrine of Mecklenburg-Schwerin; her mother, born a princess of Sweden, was the only daughter of the Crown Prince of Sweden (later King Gustaf VI Adolf) and Princess Margaret of Connaught.
+At birth, Anne-Marie had two elder sisters: Princess Margrethe (later queen of Denmark) and Princess Benedikte (who became princess of Sayn-Wittgenstein-Berleburg).
+Anne-Marie was baptised on 9 October at the Holmen Church in Copenhagen.
+Her godparents were her paternal grandparents, King Christian X and Queen Alexandrine of Denmark; her maternal grandfather, Crown Prince Gustaf Adolf of Sweden; her maternal uncle Prince Bertil, Duke of Halland; her paternal great-uncle King Haakon VII of Norway; her paternal great-aunt Princess Dagmar of Denmark; her grandfather's cousin Prince George of Greece and Denmark; her father's cousin, Crown Princess Märtha of Norway; Queen Mary of the United Kingdom; and Crown Princess Juliana of the Netherlands.
+Anne-Marie is a great-great-granddaughter of both Queen Victoria and Christian IX of Denmark.
+Therefore, she is related to many other members of European royalty, such as her future husband Constantine II, who is also a great-great-grandchild of both Queen Victoria and Christian IX of Denmark.
+Moreover, Anne-Marie is the maternal aunt of Frederik X of Denmark, the first cousin of Carl XVI Gustaf of Sweden, and an aunt by marriage of Felipe VI of Spain.
+Early life
+
+Anne-Marie and her sisters grew up in apartments at Frederik VIII's Palace at Amalienborg in Copenhagen and in Fredensborg Palace in North Zealand.
+On 20 April 1947, less than a year after Anne-Marie's birth, her grandfather, Christian X, died, and her father ascended the throne as King Frederik IX.
+At the time of her father's accession to the throne, only males could ascend the throne of Denmark.
+As Anne-Marie's parents had no sons, it was assumed that her paternal uncle, Prince Knud, would one day assume the throne.
+The popularity of Frederik IX and his daughters and the more prominent role of women in Danish life paved the way for a new Act of Succession in 1953 which permitted female succession to the throne following the principle of male-preference primogeniture, where a female can ascend to the throne if she has no brothers.
+Her eldest sister, Margrethe, therefore became heir presumptive, and Benedikte and Anne-Marie became second and third in the line of succession.
+Anne-Marie was educated at N. Zahle's School, a private school in Copenhagen, from 1952 to 1961.
+Upon returning from schooling, Anne-Marie undertook childcare work for a few years.
+Marriage
+
+In 1959, at the age of 13, Anne-Marie first met her future husband, her third cousin Constantine, Crown Prince of Greece, who accompanied his parents, King Paul and Queen Frederica, on a state visit to Denmark.
+Constantine at the time was 19 years old.
+They met a second time in Denmark in 1961, when Constantine declared to his parents his intention to marry Anne-Marie.
+The pair became secretly engaged without telling the public nor members of their families due to Frederik IX's opposition to their relationship because of her young age.
+They met again in Athens in May 1962 at the wedding of Constantine's older sister, Princess Sophia of Greece and Denmark, and Prince Juan Carlos of Spain.
+Anne-Marie was a bridesmaid, while Constantine was a groomsman for the future monarchs of Spain.
+Following this, Anne-Marie began studying the history of Greece and the history of the Greek monarchy, as well as taking Modern Greek lessons in order to learn the language of the country her husband was to reign over.
+Constantine's mother, Frederica, initially requested that one million dollars be spent on the wedding, however, the private office of the Danish royal family denied this.
+In July 1964, the announcement of the engagement of Constantine and Anne-Marie raised the polite protests of the Left in Denmark.
+Previously, on 6 March 1964, King Paul died, and Constantine succeeded him as King of the Hellenes.
+However, Frederica requested that their marriage take place on its original date.
+Anne-Marie and Constantine were married on 18 September 1964 (two weeks after Anne-Marie's 18th birthday) in the Metropolis, the Greek Orthodox Cathedral of Athens.
+Anne-Marie converted from Lutheranism to the Greek Orthodox Church 7 months and 3 days after her marriage.
+There was a special permission, for this, from the Archbishop of Athens and all Greece, who is the head of the Orthodox Church of Greece.
+Also, as she was marrying a foreign ruler, consent to the marriage was given on the condition that Anne-Marie renounce her succession rights to the Danish throne for herself and her descendants.
+Queen of the Hellenes
+
+As Queen of Greece, Anne-Marie's initial primary role was to provide the nation with an heir who would eventually take over as King.
+Anne-Marie spent much of her time working for a charitable foundation known as "Her Majesty's Fund" and later as the "Anne-Marie Foundation", which provided assistance to people in rural areas of Greece.
+Her Majesty's Fund was an organisation set up by Frederica during her husband's reign which aimed at assisting the poor and disadvantaged.
+Anne-Marie also worked closely with the Red Cross and other not-for-profit charities.
+On 10 July 1965, Queen Anne-Marie gave birth at the villa Mon Repos in Corfu to her first child, Princess Alexia, who was heir presumptive to the throne of Greece, from her birth until the birth of her younger brother Crown Prince Pavlos on 20 May 1967 in accordance with Greece's order of succession adhering to male-preference primogeniture.
+At the time of Alexia and Pavlos' births, political stability within Greece was diminishing due to a schism between Constantine and the Prime Minister Georgios Papandreou, who wished to demote the minister of defence, Petros Garoufalias, in order to assume office himself.
+A group of Greek soldiers in April 1967 overthrew the government of the new Prime Minister, Panagiotis Kanellopoulos, which marked the beginning of a military dictatorship in Greece.
+The royal family was left unaware and in order to avoid fighting, Constantine and Anne-Marie agreed to recognise the dictatorship against their will, however many members of the public therefore believed that they supported and even funded the coup.
+The following month, Anne-Marie gave birth to a son, Pavlos, who immediately assumed the position of Crown Prince of Greece from his sister.
+At his baptism, Anne-Marie and Constantine decided to make Frederica his godmother and the Hellenic Army his godfather figure.
+Margrethe II of Denmark, the future queen of Denmark, was married to Henri de Laborde de Monpezat at their wedding on 10 June 1967.
+Anne-Marie, the sister of Margrethe, and Constantine were subsequently denied an invite to their wedding, further ruining relations for a period of time.
+Exile
+
+In December 1967, Constantine attempted to shake off the military's authoritarian regime by trying to stage a counter-coup with the help of his political allies.
+Upon the coup's abandonment, the military junta in Greece strongly advised Anne-Marie and Constantine to leave the country.
+Anne-Marie and Constantine fled to nearby Italy and sought refuge at the Greek Embassy in Rome, where Anne-Marie and Constantine became puppet monarchs.
+After two months of refuge at the Greek Embassy, Anne-Marie and Constantine received greeting from Moritz, Landgrave of Hesse, who organised to put them up at the Villa Polissena, an Italian palace where Moritz himself had previously lived upon his family's exile.
+Anne-Marie eventually agreed with Constantine to move to 13 Via di Porta Latina, where a large villa owned by Countess Cristina Paolozzi was located.
+Possibly due to stress and worry, Anne-Marie suffered a miscarriage in early 1968.
+Anne-Marie fell pregnant again in February of the next year and gave birth to Prince Nikolaos of Greece and Denmark.
+Anne-Marie and Constantine established a small school in their villa to preserve the Greek culture among their children.
+Despite the expansion of their family, Anne-Marie and Constantine had been experiencing some marital struggles in the early 1970s.
+It was reported that Anne-Marie in 1974 was considering filing a divorce and moving back to Denmark, however, their relationship was repaired and even "strengthened" as a result.
+Throughout this time, although they were living in exile, Anne-Marie and Constantine still formally remained the monarchs of Greece.
+They were still allowed to represent Greece and the Greek crown at international royal events.
+For example, the pair attended the 21st birthday of Charles, Prince of Wales, in 1969, the 2500th anniversary of the founding of the Persian Empire in 1971, and the baptism in Madrid of François, the eldest son of Alfonso, Duke of Anjou and Cádiz.
+One of the last events Anne-Marie and Constantine attended as the monarchs of Greece was the funeral of Frederik IX, Anne-Marie's father, whom she grieved deeply.
+Dethronement
+
+The military junta in Greece began noticeably distancing itself from the monarchy when Georgios Zoitakis replaced Georgios Papadopoulos as the Regent of Greece.
+In 1972, Constantine's face was replaced on coins by a phoenix, a symbol of the Greek military and the national bird of Greece.(Palmer & Greece 1990, p. 114)
+Anne-Marie and Constantine were officially dethroned by the 1974 Greek republic referendum on 29 July 1974.
+Margrethe II immediately agreed to house Anne-Marie, Constantine and their family in Amalienborg for a year.
+Anne-Marie moved with her family to England.
+The military dictatorship in Greece collapsed in 1974 after a failed coup d'état, which aimed to unite Greece and Cyprus.
+It was hoped that their positions as King and Queen of the Hellenes would be restored as democracy was reinstated, but another referendum confirmed that the monarchy would stay abolished and the Third Hellenic Republic was finally formed.
+The new Greek government continued to enforce the exile of Anne-Marie and her family as they saw them as a threat to the new republic.
+They were denied entry into the country even for Frederica's funeral.
+Frederica had died in exile in February 1981 in Madrid, where she had been staying with her daughter, Sofía.
+In London, Anne-Marie established with Constantine the Hellenic College of London to again help their children learn the Greek language and culture.
+Anne-Marie and Constantine received financial aid from Hussein of Jordan and Mohammad Reza Pahlavi, the Shah of Iran.
+Following a miscarriage in 1980, Anne-Marie and Constantine agreed to expand their family.
+After the christening of Prince Peter of Yugoslavia, whom Anne-Marie and Constantine baptised, the couple welcomed Princess Theodora in June 1983 and later Prince Philippos in April 1986.
+In 1989, the silver anniversary of Anne-Marie's marriage to Constantine was celebrated at Kronborg Castle in Denmark.
+Return to Greece
+
+The government of Greece in 1991 granted Anne-Marie and Constantine permission to retrieve over 68 tonnes of their belongings to either keep or sell.
+Two years later, the couple were allowed to enter Greece again in a private visit on their yacht with their children.
+When the family stopped for oil at a port in southern Greece, Anne-Marie and Constantine were swarmed with crowds of people and press, who greeted them with cheers and claps.
+This was called evidence that the pair still held "real influence in Greece".
+Finally, the government stripped the Greek royal family of their Greek citizenship and passport, unless they renounced their dynastic rights, abandoned the name "of Greece" and swore an oath to the republic.
+Anne-Marie and Constantine called it "the greatest insult in this world for a Greek to be told that he is not a Greek".
+In addition, they were accused by the Greek government of tampering with the 1974 republic referendum results by officiating the marriage of Pavlos and Marie-Chantal Miller in London as a real princely marriage.
+Anne-Marie and Constantine, along with Princess Irene and Princess Katherine, made the decision to take the Greek government to court in April 1996 over the confiscation of their citizenships and properties.
+The Supreme Civil and Criminal Court of Greece agreed with their discrimination claim, however, the Council of State overrode their decision and stated that the removal of their passports was a measure taken that conforms with the constitution of the Third Republic.
+As a result, the family took Greece to court in the European Court of Human Rights and sued them for €200 million.
+Of the €200 million claim, Anne-Marie and Constantine won €12 million, Irene won €900,000 and Katherine €300,000.
+Although originally requesting Spanish citizenships, Anne-Marie eventually requested from her sister, Margrethe II, to have Danish diplomatic passports established in the names of the members of the Greek royal family.
+She agreed and in their Danish passports, their names were established as "HM Queen Anne-Marie" and "HM King Constantine II".
+In 2003, Constantine used the money they received to establish the Anna-Maria Foundation, a not-for-profit organisation aimed to provide aid to victims of natural disasters, particularly those of floods, earthquakes and bushfires.
+Since 2019, Anne-Marie has headed the foundation as its president.
+On 14 August 2004, Anne-Marie and her husband Constantine visited their former home in Athens, the former Royal Palace, which is now the Presidential Palace, for the first time since 1967.
+They were received by then-President of Greece Costis Stephanopoulos along with other members of the International Olympic Committee, of which Constantine was an honorary member.
+In December 2004, Constantine, Anne-Marie and their children were again invited to pay a personal private visit by President Stephanopoulos.
+Once the games concluded, the government announced that Anne-Marie and Constantine's exile would finally be revoked.
+In 2013, Anne-Marie and Constantine returned to reside in Greece.
+They sold their home in London for €11.5 million and announced their return to Greece.
+He and his wife, Anne-Marie, purchased a villa in Porto Cheli, Peloponnese residing there until they relocated to Athens in the spring of 2022.
+For her 60th birthday, Anne-Marie boarded the cruise ship the Aphroessa, which Constantine had organised for her.
+Constantine began experiencing health and mobility issues, leading to him requiring more care from Anne-Marie.
+On 10 January 2023, Anne-Marie became widowed when her husband died of a stroke at the private Hygeia Hospital in Athens at the age of 82.
+On 19 December 2024, Anne-Marie's children and five of her grandchildren applied for Greek citizenship, selecting the surname "Ντε Γκρες" (De Grèce; "of Greece").
+Anne-Marie did not apply, with it being reported that she was "not interested".
+Titles, styles, honours, and arms
+
+Titles and styles
+
+She has been the titular Queen of the Hellenes since 1973.
+This title is not recognized under the terms of the republican Constitution of Greece.
+Honours
+
+National
+
+Foreign
+
+Arms and monogram
+
+The coats of arms of Queen Anne-Marie combine the 1936–1973 royal coat of arms of Greece and the 1948–1972 coat of arms of Denmark which was current at the time of her marriage in 1964.
+Issue
+
+Constantine and Anne-Marie had five children:
+
+
+Ancestry
+
+References
+
+Citations
+
+Bibliography
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +256,9 @@ His sister, Princess Elisabeth, did not receive such an allowance, though she re
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +273,23 @@ His sister, Princess Elisabeth, did not receive such an allowance, though she re
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +307,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +389,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +412,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +432,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +442,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +482,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,464 +581,268 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (33190744-49e6-4bf8-990f-c9727ceeb4f5)
- Call ID: 33190744-49e6-4bf8-990f-c9727ceeb4f5
+  AssignClass (2399546b-a970-4a88-8659-93277e83be76)
+ Call ID: 2399546b-a970-4a88-8659-93277e83be76
   Args:
-    type: :Man
-    source: Ingolf_of_Rosenborg
-  AssignClass (f56f3da9-d90a-4251-8eda-ed64a4b70051)
- Call ID: f56f3da9-d90a-4251-8eda-ed64a4b70051
+    type: :Woman
+    source: Anne-Marie
+  AssignClass (4b91624e-5301-4fa2-82d0-e6dd3f2cfb9f)
+ Call ID: 4b91624e-5301-4fa2-82d0-e6dd3f2cfb9f
   Args:
+    source: Anne-Marie
     type: :Person
-    source: Ingolf_of_Rosenborg
-  AddLiteral (ddbc68fa-c66b-4478-90f1-d9ff1be28b5b)
- Call ID: ddbc68fa-c66b-4478-90f1-d9ff1be28b5b
+  AddLiteral (df63d2a9-7d68-4240-974f-9022b5b9ff7e)
+ Call ID: df63d2a9-7d68-4240-974f-9022b5b9ff7e
   Args:
     literal_type: xsd:integer
-    source: Ingolf_of_Rosenborg
-    literal_value: 1940
+    source: Anne-Marie
+    literal_value: 1946
     relation: :hasBirthYear
-  AddTriple (72b937ca-5d2b-4cc1-928e-d46911db5c58)
- Call ID: 72b937ca-5d2b-4cc1-928e-d46911db5c58
+  AssignClass (d6b84bc0-76f1-4bc4-b9f9-b93da24c29dd)
+ Call ID: d6b84bc0-76f1-4bc4-b9f9-b93da24c29dd
   Args:
-    relation: :hasSex
-    target: :Male
-    source: Ingolf_of_Rosenborg
-  AssignClass (b81a9397-b227-4af4-9b48-201c09508385)
- Call ID: b81a9397-b227-4af4-9b48-201c09508385
-  Args:
+    source: Frederik_IX_of_Denmark
     type: :Man
-    source: Christian_X_of_Denmark
-  AssignClass (79fd2bfd-3dbc-4662-a8f4-bd91679c1cab)
- Call ID: 79fd2bfd-3dbc-4662-a8f4-bd91679c1cab
+  AssignClass (8a87c2ca-9b09-49fd-add5-cb0c815cb50b)
+ Call ID: 8a87c2ca-9b09-49fd-add5-cb0c815cb50b
   Args:
-    type: :Ancestor
-    source: Christian_X_of_Denmark
-  AddTriple (e4721b17-95bf-4efe-8eef-b42bc646e692)
- Call ID: e4721b17-95bf-4efe-8eef-b42bc646e692
+    type: :Person
+    source: Frederik_IX_of_Denmark
+  AssignClass (e6817ddd-694a-4979-a2e7-13b4e4b6e6b5)
+ Call ID: e6817ddd-694a-4979-a2e7-13b4e4b6e6b5
   Args:
-    source: Christian_X_of_Denmark
-    target: Knud_of_Denmark
-    relation: :isFatherOf
-  AssignClass (f6a8cd9a-feca-4f48-a86f-56551b4a254a)
- Call ID: f6a8cd9a-feca-4f48-a86f-56551b4a254a
+    source: Ingrid_of_Sweden
+    type: :Woman
+  AssignClass (8116a93d-f113-4852-9d68-cc4a1e8acce9)
+ Call ID: 8116a93d-f113-4852-9d68-cc4a1e8acce9
   Args:
-    type: :Man
-    source: Knud_of_Denmark
-  AssignClass (bf4cbc41-d34c-4b56-bb59-11313690bd10)
- Call ID: bf4cbc41-d34c-4b56-bb59-11313690bd10
+    type: :Person
+    source: Ingrid_of_Sweden
+  AddTriple (a194c8ff-77f3-4f95-b2ec-f8a7115bd420)
+ Call ID: a194c8ff-77f3-4f95-b2ec-f8a7115bd420
   Args:
-    type: :Ancestor
-    source: Knud_of_Denmark
-  AddTriple (56b30d6b-31fc-48f6-863d-5dbd6d372505)
- Call ID: 56b30d6b-31fc-48f6-863d-5dbd6d372505
-  Args:
-    target: Knud_of_Denmark
-    source: Ingolf_of_Rosenborg
+    source: Anne-Marie
+    target: Frederik_IX_of_Denmark
     relation: :hasFather
-  AddTriple (e7c2cb0f-05fe-4211-acb1-ae376a1a2fe1)
- Call ID: e7c2cb0f-05fe-4211-acb1-ae376a1a2fe1
+  AddTriple (6d74023d-55e1-4f63-bb51-c4a257df2c49)
+ Call ID: 6d74023d-55e1-4f63-bb51-c4a257df2c49
   Args:
-    target: Christian_of_Rosenborg
-    source: Ingolf_of_Rosenborg
-    relation: :hasBrother
-  AssignClass (6e697451-6bd9-40ed-962e-74a5192ccc2f)
- Call ID: 6e697451-6bd9-40ed-962e-74a5192ccc2f
+    target: Ingrid_of_Sweden
+    source: Anne-Marie
+    relation: :hasMother
+  AssignClass (1b19825c-0e15-4b93-912d-2d34af6f596f)
+ Call ID: 1b19825c-0e15-4b93-912d-2d34af6f596f
   Args:
+    source: Constantine_II_of_Greece
     type: :Man
-    source: Christian_of_Rosenborg
-  AssignClass (54217e70-7893-4762-86ea-d956325c5a10)
- Call ID: 54217e70-7893-4762-86ea-d956325c5a10
+  AssignClass (b64e37e2-ea15-4f2e-9f59-7fae25d68f78)
+ Call ID: b64e37e2-ea15-4f2e-9f59-7fae25d68f78
   Args:
+    source: Constantine_II_of_Greece
     type: :Person
-    source: Christian_of_Rosenborg
-  AssignClass (d2b98cb2-f650-41cc-9e7d-906defd45691)
- Call ID: d2b98cb2-f650-41cc-9e7d-906defd45691
+  AddLiteral (8df5da61-c626-4780-8102-5218e902b00b)
+ Call ID: 8df5da61-c626-4780-8102-5218e902b00b
   Args:
-    type: :Woman
-    source: Inge_Terney
-  AssignClass (f6f39b76-1178-4b1b-80dc-48080e2b4217)
- Call ID: f6f39b76-1178-4b1b-80dc-48080e2b4217
-  Args:
-    type: :Person
-    source: Inge_Terney
-  AddLiteral (1558d061-0fc7-481e-82e1-f31c226fe4fd)
- Call ID: 1558d061-0fc7-481e-82e1-f31c226fe4fd
-  Args:
+    source: Anne-Marie
     literal_type: xsd:integer
-    source: Inge_Terney
-    literal_value: 1938
-    relation: :hasBirthYear
-  AddLiteral (bec1e92f-1a61-43f4-af8f-4818f0869e2b)
- Call ID: bec1e92f-1a61-43f4-af8f-4818f0869e2b
-  Args:
-    literal_type: xsd:integer
-    source: Inge_Terney
-    literal_value: 1996
-    relation: :hasDeathYear
-  AddLiteral (78e3fb64-43bd-4636-a93b-f99eb5278241)
- Call ID: 78e3fb64-43bd-4636-a93b-f99eb5278241
-  Args:
+    literal_value: 1964
     relation: :hasMarriageYear
-    literal_value: 1968
-    source: Ingolf_of_Rosenborg
-    literal_type: xsd:integer
-  AssignClass (ed03444b-a8e8-4744-9e8e-09b3cee7eed5)
- Call ID: ed03444b-a8e8-4744-9e8e-09b3cee7eed5
+  AddTriple (c77c3a5e-0c08-424d-8261-b2d65c3bc3ac)
+ Call ID: c77c3a5e-0c08-424d-8261-b2d65c3bc3ac
   Args:
-    type: :Man
-    source: Georg_Terney
-  AssignClass (42dcf605-f725-46dc-8fde-77a2d3d019c7)
- Call ID: 42dcf605-f725-46dc-8fde-77a2d3d019c7
+    relation: :hasRelation
+    source: Anne-Marie
+    target: Constantine_II_of_Greece
+  AssignClass (5c699137-2e0e-4df8-911c-e16d605e0a01)
+ Call ID: 5c699137-2e0e-4df8-911c-e16d605e0a01
   Args:
-    type: :Ancestor
-    source: Georg_Terney
-  AssignClass (3c447568-258f-4776-98b0-4320bd1e7f56)
- Call ID: 3c447568-258f-4776-98b0-4320bd1e7f56
-  Args:
+    source: Princess_Alexia
     type: :Woman
-    source: Jenny_Kamilla_Hansen
-  AssignClass (2ccedd08-9282-49a9-aeeb-e68b941c11b7)
- Call ID: 2ccedd08-9282-49a9-aeeb-e68b941c11b7
-  Args:
-    type: :Ancestor
-    source: Jenny_Kamilla_Hansen
-  AddTriple (c2c33f2f-6e5e-4605-94a8-9c666b329e3c)
- Call ID: c2c33f2f-6e5e-4605-94a8-9c666b329e3c
-  Args:
-    relation: :isFatherOf
-    source: Georg_Terney
-    target: Inge_Terney
-  AddTriple (f2091845-29e1-44cd-a49a-193f3067a4ac)
- Call ID: f2091845-29e1-44cd-a49a-193f3067a4ac
-  Args:
-    relation: :isMotherOf
-    source: Jenny_Kamilla_Hansen
-    target: Inge_Terney
-  AssignClass (b5ff8eef-6a26-484d-b335-27efe7985de6)
- Call ID: b5ff8eef-6a26-484d-b335-27efe7985de6
-  Args:
-    type: :Woman
-    source: Sussie_Hjorhøy-Pedersen
-  AssignClass (9c6c5c7b-4003-45bf-885b-8e861494f205)
- Call ID: 9c6c5c7b-4003-45bf-885b-8e861494f205
+  AssignClass (81740ce5-7e88-4e91-8204-45645f618451)
+ Call ID: 81740ce5-7e88-4e91-8204-45645f618451
   Args:
     type: :Person
-    source: Sussie_Hjorhøy-Pedersen
-  AddLiteral (c5e19dab-fec8-4d2d-ac5b-0f842bfe9d28)
- Call ID: c5e19dab-fec8-4d2d-ac5b-0f842bfe9d28
+    source: Princess_Alexia
+  AddTriple (565f5336-9a91-461e-ba6a-e976a48eae40)
+ Call ID: 565f5336-9a91-461e-ba6a-e976a48eae40
   Args:
-    source: Sussie_Hjorhøy-Pedersen
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1950
-  AssignClass (80651ad8-29a2-436e-963a-ac06c1136aac)
- Call ID: 80651ad8-29a2-436e-963a-ac06c1136aac
+    source: Anne-Marie
+    target: Princess_Alexia
+    relation: :hasChild
+  AddTriple (58f1e81e-faf7-4b80-9fdc-5b5590da3b79)
+ Call ID: 58f1e81e-faf7-4b80-9fdc-5b5590da3b79
   Args:
+    relation: :hasFather
+    source: Princess_Alexia
+    target: Constantine_II_of_Greece
+  AssignClass (b816e196-cea8-4576-ad97-0027d5b0f44e)
+ Call ID: b816e196-cea8-4576-ad97-0027d5b0f44e
+  Args:
+    source: Crown_Prince_Pavlos
     type: :Man
-    source: Frederick_Walter_Pedersen
-  AssignClass (11461852-f38f-4011-a4f0-c105bfeed9c4)
- Call ID: 11461852-f38f-4011-a4f0-c105bfeed9c4
-  Args:
-    type: :Ancestor
-    source: Frederick_Walter_Pedersen
-  AssignClass (95003b57-2ae7-4ac9-ba5f-5358fb28c538)
- Call ID: 95003b57-2ae7-4ac9-ba5f-5358fb28c538
-  Args:
-    type: :Woman
-    source: Ruth_Hjorhøy
-  AssignClass (cdc54712-8c74-4a91-9b2f-7f34ca138488)
- Call ID: cdc54712-8c74-4a91-9b2f-7f34ca138488
-  Args:
-    type: :Ancestor
-    source: Ruth_Hjorhøy
-  AddTriple (c3c3cd48-dd4d-4ab1-bf5e-09b807abdd67)
- Call ID: c3c3cd48-dd4d-4ab1-bf5e-09b807abdd67
-  Args:
-    source: Frederick_Walter_Pedersen
-    target: Sussie_Hjorhøy-Pedersen
-    relation: :isFatherOf
-  AddTriple (1e5bd88a-204a-4b1c-816c-afd0a6bd56af)
- Call ID: 1e5bd88a-204a-4b1c-816c-afd0a6bd56af
-  Args:
-    source: Ruth_Hjorhøy
-    target: Sussie_Hjorhøy-Pedersen
-    relation: :isMotherOf
-  AssignClass (1f88bfe5-c7ef-436a-81ab-7448ad938def)
- Call ID: 1f88bfe5-c7ef-436a-81ab-7448ad938def
-  Args:
-    type: :Man
-    source: Leopold_Rosanes_af_Rosenborg
-  AssignClass (61c8a4ce-d99a-4212-8af5-9f5862531d16)
- Call ID: 61c8a4ce-d99a-4212-8af5-9f5862531d16
+  AssignClass (17fe65d4-3393-47bf-a0cc-3fa8c8792308)
+ Call ID: 17fe65d4-3393-47bf-a0cc-3fa8c8792308
   Args:
     type: :Person
-    source: Leopold_Rosanes_af_Rosenborg
-  AddTriple (bed6fb09-f58d-4bf7-96fa-623472553d80)
- Call ID: bed6fb09-f58d-4bf7-96fa-623472553d80
+    source: Crown_Prince_Pavlos
+  AddTriple (c3ad6846-064f-41ae-8731-dc72aacfa1a2)
+ Call ID: c3ad6846-064f-41ae-8731-dc72aacfa1a2
   Args:
-    relation: :isSonOf
-    source: Leopold_Rosanes_af_Rosenborg
-    target: Christian_of_Rosenborg
-  AssignClass (99aa2f05-d885-479b-8f4e-c47fae62d90a)
- Call ID: 99aa2f05-d885-479b-8f4e-c47fae62d90a
+    relation: :hasChild
+    source: Anne-Marie
+    target: Crown_Prince_Pavlos
+  AddTriple (a6fe7b35-ac64-4866-8d76-0d091308695b)
+ Call ID: a6fe7b35-ac64-4866-8d76-0d091308695b
   Args:
-    type: :Woman
-    source: Elisabeth_of_Denmark
-  AssignClass (e95b6c39-514e-4a5b-be11-e81a4d829fff)
- Call ID: e95b6c39-514e-4a5b-be11-e81a4d829fff
+    relation: :hasFather
+    source: Crown_Prince_Pavlos
+    target: Constantine_II_of_Greece
+  AssignClass (e5083aca-1d2d-41f0-a9ae-b916f145ea4f)
+ Call ID: e5083aca-1d2d-41f0-a9ae-b916f145ea4f
+  Args:
+    source: Prince_Nikolaos
+    type: :Man
+  AssignClass (2dc708d9-33b8-4e4c-b2a8-2dae6f8fa11b)
+ Call ID: 2dc708d9-33b8-4e4c-b2a8-2dae6f8fa11b
   Args:
     type: :Person
-    source: Elisabeth_of_Denmark
-  AddTriple (557e6e5b-2d76-4d1a-ad27-b57d16d6d655)
- Call ID: 557e6e5b-2d76-4d1a-ad27-b57d16d6d655
+    source: Prince_Nikolaos
+  AddTriple (997e2172-03e9-4af9-bb29-21340a1e2851)
+ Call ID: 997e2172-03e9-4af9-bb29-21340a1e2851
   Args:
-    source: Ingolf_of_Rosenborg
-    target: Elisabeth_of_Denmark
-    relation: :hasSister
-  Finish (e55a42eb-4e8c-4326-b06b-43e11ed30204)
- Call ID: e55a42eb-4e8c-4326-b06b-43e11ed30204
+    source: Anne-Marie
+    target: Prince_Nikolaos
+    relation: :hasChild
+  AddTriple (7e55e2cd-ca61-4889-b4ef-35d54f71bf55)
+ Call ID: 7e55e2cd-ca61-4889-b4ef-35d54f71bf55
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Christian_X_of_Denmark a :Ancestor,
-          :Man ;
-      :isFatherOf data:Knud_of_Denmark .
-
-  data:Frederick_Walter_Pedersen a :Ancestor,
-          :Man ;
-      :isFatherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
-
-  data:Georg_Terney a :Ancestor,
-          :Man ;
-      :isFatherOf data:Inge_Terney .
-
-  data:Ingolf_of_Rosenborg a :Man,
-          :Person ;
-      :hasBirthYear 1940 ;
-      :hasBrother data:Christian_of_Rosenborg ;
-      :hasFather data:Knud_of_Denmark ;
-      :hasMarriageYear 1968 ;
-      :hasSex data:Male ;
-      :hasSister data:Elisabeth_of_Denmark .
-
-  data:Jenny_Kamilla_Hansen a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Inge_Terney .
-
-  data:Leopold_Rosanes_af_Rosenborg a :Man,
-          :Person ;
-      :isSonOf data:Christian_of_Rosenborg .
-
-  data:Ruth_Hjorh%C3%B8y a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
-
-  data:Elisabeth_of_Denmark a :Person,
-          :Woman .
-
-  data:Christian_of_Rosenborg a :Man,
-          :Person .
-
-  data:Inge_Terney a :Person,
-          :Woman ;
-      :hasBirthYear 1938 ;
-      :hasDeathYear 1996 .
-
-  data:Knud_of_Denmark a :Ancestor,
-          :Man .
-
-  data:Sussie_Hjorh%C3%B8y-Pedersen a :Person,
-          :Woman ;
-      :hasBirthYear 1950 .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (7baef99f-61ce-4500-9b32-3ac3617a75aa)
- Call ID: 7baef99f-61ce-4500-9b32-3ac3617a75aa
+    target: Constantine_II_of_Greece
+    source: Prince_Nikolaos
+    relation: :hasFather
+  AssignClass (7ce9a277-175d-49b2-bb0c-a43f94641e2e)
+ Call ID: 7ce9a277-175d-49b2-bb0c-a43f94641e2e
   Args:
-    source: :Male
-    type: :Sex
-  Finish (31440e6e-8d1c-4de5-a411-cc1c61e270a8)
- Call ID: 31440e6e-8d1c-4de5-a411-cc1c61e270a8
+    type: :Woman
+    source: Princess_Theodora
+  AssignClass (50788c8d-cd94-41bf-8af1-ca1a06878178)
+ Call ID: 50788c8d-cd94-41bf-8af1-ca1a06878178
+  Args:
+    source: Princess_Theodora
+    type: :Person
+  AddTriple (9a319c56-38e6-4ca0-a996-9e6123242c12)
+ Call ID: 9a319c56-38e6-4ca0-a996-9e6123242c12
+  Args:
+    relation: :hasChild
+    target: Princess_Theodora
+    source: Anne-Marie
+  AddTriple (f31a5b63-98b1-4557-9bc3-beb0cf35c10a)
+ Call ID: f31a5b63-98b1-4557-9bc3-beb0cf35c10a
+  Args:
+    target: Constantine_II_of_Greece
+    source: Princess_Theodora
+    relation: :hasFather
+  AssignClass (d2b1f441-c9ab-40e1-a3b0-19915aeb4e5c)
+ Call ID: d2b1f441-c9ab-40e1-a3b0-19915aeb4e5c
+  Args:
+    type: :Man
+    source: Prince_Philippos
+  AssignClass (6e92f4bb-7aed-4b9e-843c-2e2ba3d18f93)
+ Call ID: 6e92f4bb-7aed-4b9e-843c-2e2ba3d18f93
+  Args:
+    source: Prince_Philippos
+    type: :Person
+  AddTriple (f47c1ece-f681-430a-9319-5cda7278393b)
+ Call ID: f47c1ece-f681-430a-9319-5cda7278393b
+  Args:
+    target: Prince_Philippos
+    source: Anne-Marie
+    relation: :hasChild
+  AddTriple (bf2886dc-43b7-40cb-835f-d87d2b9ff5b3)
+ Call ID: bf2886dc-43b7-40cb-835f-d87d2b9ff5b3
+  Args:
+    source: Prince_Philippos
+    target: Constantine_II_of_Greece
+    relation: :hasFather
+  AssignClass (b2029f72-0363-4a4c-baba-c8560fa7d014)
+ Call ID: b2029f72-0363-4a4c-baba-c8560fa7d014
+  Args:
+    source: Queen_Margrethe_II
+    type: :Woman
+  AssignClass (00d75892-c74e-4450-804f-dd18995da802)
+ Call ID: 00d75892-c74e-4450-804f-dd18995da802
+  Args:
+    type: :Person
+    source: Queen_Margrethe_II
+  AddTriple (d7d70120-b091-4619-bac1-35bc1e6b257e)
+ Call ID: d7d70120-b091-4619-bac1-35bc1e6b257e
+  Args:
+    relation: :isSisterOf
+    source: Anne-Marie
+    target: Queen_Margrethe_II
+  AssignClass (e42800c6-ea15-4313-8531-4e92c62d42b2)
+ Call ID: e42800c6-ea15-4313-8531-4e92c62d42b2
+  Args:
+    type: :Woman
+    source: Princess_Benedikte
+  AssignClass (971ab95a-ada7-437b-987d-1a89373fc8a4)
+ Call ID: 971ab95a-ada7-437b-987d-1a89373fc8a4
+  Args:
+    source: Princess_Benedikte
+    type: :Person
+  AddTriple (2d811cb4-e268-4033-af5c-e65955911909)
+ Call ID: 2d811cb4-e268-4033-af5c-e65955911909
+  Args:
+    relation: :isSisterOf
+    target: Princess_Benedikte
+    source: Anne-Marie
+  AssignClass (b07a4d31-d855-4dbc-bbc3-6c240d988d04)
+ Call ID: b07a4d31-d855-4dbc-bbc3-6c240d988d04
+  Args:
+    source: Queen_Frederica_of_Greece
+    type: :Woman
+  AssignClass (c3dae9a1-10f4-4a4a-886b-d5d093f8eb2e)
+ Call ID: c3dae9a1-10f4-4a4a-886b-d5d093f8eb2e
+  Args:
+    type: :Person
+    source: Queen_Frederica_of_Greece
+  AddTriple (d0fdb086-a1e8-41c8-ae62-4ac5d25d985f)
+ Call ID: d0fdb086-a1e8-41c8-ae62-4ac5d25d985f
+  Args:
+    source: Constantine_II_of_Greece
+    target: Queen_Frederica_of_Greece
+    relation: :hasMother
+  AssignClass (abf77c0b-b109-405e-b8b4-e1fe7cfc4798)
+ Call ID: abf77c0b-b109-405e-b8b4-e1fe7cfc4798
+  Args:
+    source: King_Paul_of_Greece
+    type: :Man
+  AssignClass (773bd741-b0d4-44c9-96e8-f4711e4ca421)
+ Call ID: 773bd741-b0d4-44c9-96e8-f4711e4ca421
+  Args:
+    type: :Person
+    source: King_Paul_of_Greece
+  AddTriple (5543e233-e80a-4a27-9a84-19c821528d25)
+ Call ID: 5543e233-e80a-4a27-9a84-19c821528d25
+  Args:
+    relation: :hasFather
+    source: Constantine_II_of_Greece
+    target: King_Paul_of_Greece
+  AssignClass (eaaf1dbd-0426-4d55-aa69-975ccc96a9ad)
+ Call ID: eaaf1dbd-0426-4d55-aa69-975ccc96a9ad
+  Args:
+    source: Queen_Sofia_of_Spain
+    type: :Woman
+  AssignClass (61cdab4a-af72-44a9-a226-fb4ee27003a7)
+ Call ID: 61cdab4a-af72-44a9-a226-fb4ee27003a7
+  Args:
+    type: :Person
+    source: Queen_Sofia_of_Spain
+  AddTriple (1c20680b-4131-4b7c-a04e-8dae6860be76)
+ Call ID: 1c20680b-4131-4b7c-a04e-8dae6860be76
+  Args:
+    target: Queen_Sofia_of_Spain
+    source: Constantine_II_of_Greece
+    relation: :isSisterOf
+  Finish (06b5186e-44a5-4a92-881f-9409a48f367e)
+ Call ID: 06b5186e-44a5-4a92-881f-9409a48f367e
   Args:

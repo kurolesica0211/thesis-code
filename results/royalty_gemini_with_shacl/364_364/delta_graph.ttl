@@ -2,45 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Dr_Oskar_Hohenzollern a :Man .
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
 
-data:Oskar_Prince_of_Prussia a :Man ;
-    :hasBirthYear 1888 ;
-    :hasBrother data:Adalbert,
-        data:August_Wilhelm,
-        data:Crown_Prince_Wilhelm,
-        data:Eitel_Friedrich,
-        data:Joachim ;
-    :hasDeathYear 1958 ;
-    :hasFather data:Wilhelm_II ;
-    :hasMarriageYear 1914 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasRelation data:Ina-Marie_von_Bassewitz ;
-    :hasSister data:Viktoria_Luise ;
-    :hasSon data:Oskar_son_of_Oskar,
-        data:Wilhelm_Karl .
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person ;
+    :isBrotherOf data:Philipp_Prince_of_Hesse .
 
-data:Adalbert a :Man .
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
 
-data:August_Wilhelm a :Man .
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :isSonOf data:Philipp_Prince_of_Hesse .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+data:Queen_Victoria a :Person,
         :Woman .
 
-data:Crown_Prince_Wilhelm a :Man .
+data:Sophie_of_Prussia a :Person,
+        :Woman ;
+    :isSisterOf data:Margaret_of_Prussia .
 
-data:Eitel_Friedrich a :Man .
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :isBrotherOf data:Philipp_Prince_of_Hesse .
 
-data:Ina-Marie_von_Bassewitz a :Woman .
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
 
-data:Joachim a :Man .
+data:Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy .
 
-data:Oskar_son_of_Oskar a :Man .
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man,
+        :Person .
 
-data:Viktoria_Luise a :Woman .
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
 
-data:Wilhelm_II a :Ancestor,
-        :Man .
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isSisterOf data:Wilhelm_II_German_Emperor .
 
-data:Wilhelm_Karl a :Man .
+data:Philipp_Prince_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Mafalda_of_Savoy .
 

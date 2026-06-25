@@ -69,24 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg, Prince of Saxe-Meiningen (11 October 1892 – 6 January 1946) was the head of the house of Saxe-Meiningen from 1941 until his death.
-He was born in Kassel as the eldest son of Prince Frederick Johann of Saxe-Meiningen (1861-1914) and Countess Adelaide of Lippe-Biesterfeld (1870–1948).
-His father was a son of Georg II, Duke of Saxe-Meiningen and his mother a daughter of Count Ernst of Lippe-Biesterfeld.
-Georg studied law at the Universities of Munich and Jena.
-Georg suspended his studies to serve in World War I and saw action as a captain in a cavalry regiment.
-After the death of his uncle Ernst on 29 December 1941, Georg succeeded to the headship of the house of Saxe-Meiningen and assumed the title of Duke of Saxe-Meiningen and style Georg III.
-Georg and his family were expropriated without compensation in 1945.
-Georg, who served as a major in the Wehrmacht died in the Russian prisoner of war camp near Cherepovets (Tscherepowetz in German) in Northern Russia.
-His heir was his second and only surviving son Prince Frederick Alfred who renounced the succession, being a monk in 1953, allowing it to pass to his uncle Bernhard.
+Anton-Günther, Duke of Oldenburg (Anton-Günther Friedrich August Wilhelm Josias von Holstein-Gottorp, Erbgroßherzog von Oldenburg, Prinz von Lübeck; 16 January 1923 – 20 September 2014) was the head of the Grand Ducal Family of Oldenburg.
+Life
+
+He was born in Lensahn the son of Hereditary Grand Duke Nikolaus of Oldenburg (1897–1970) and his first wife Princess Helena of Waldeck and Pyrmont (1899–1948).
+Duke Anton-Günther was a grandson of Frederick Augustus II, the last Grand Duke of Oldenburg, and through his mother a grandson of Friedrich, the last Prince of Waldeck and Pyrmont.
+He studied for a Diploma in Forestry and succeeded as head of the Grand Ducal Family of Oldenburg upon the death of his father, the Hereditary Grand Duke, on 3 April 1970.
+The ancestral home of the House of Oldenburg is Oldenburg castle, nowadays a museum owned by the state.
+Private seats of the Duke of Oldenburg are Rastede Palace near Oldenburg and Güldenstein Manor, Harmsdorf, in Schleswig-Holstein.
+Eutin Castle in Schleswig-Holstein is a museum owned by a family foundation set up by Duke Anton-Günther.
+According to his obituary issued by the family his ancestral titles (however not all part of his official German surname) were: HRH The Duke of Oldenburg, Heir in Norway, Duke of Schleswig, Holstein, Stormarn, Dithmarschen and Oldenburg, Prince of Lübeck and Birkenfeld, Lord of Jever and Knyphausen.
 Marriage and children
 
-He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Marie von Korff genannt Schmising-Kerssenbrock (Darmstadt, 31 May 1895
+Duke Anton-Günther was married to Princess Ameli of Löwenstein-Wertheim-Freudenberg (1923-2016) at Kreuzwertheim on 7 August 1951.
+They have two children:
+
+
+The Duke and the Duchess lived at Güldenstein Manor, Harmsdorf, Schleswig Holstein.
+The Duke also owned Eutin Castle and Rastede Castle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +110,9 @@ He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Mar
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +127,23 @@ He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Mar
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,172 +435,351 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7a67da56-df1e-4a2f-adf6-3f8edc1e2d67)
- Call ID: 7a67da56-df1e-4a2f-adf6-3f8edc1e2d67
+  AssignClass (18da7c7f-9fff-47e1-a3ab-a9cb57308af0)
+ Call ID: 18da7c7f-9fff-47e1-a3ab-a9cb57308af0
   Args:
-    source: Georg_Prince_of_Saxe-Meiningen
+    source: Anton-Günther_Duke_of_Oldenburg
     type: :Man
-  AssignClass (0f6a674b-f93d-45b3-b0d9-57d38dc73831)
- Call ID: 0f6a674b-f93d-45b3-b0d9-57d38dc73831
+  AssignClass (f85df5fc-b264-4935-9593-8ae3da2b69e9)
+ Call ID: f85df5fc-b264-4935-9593-8ae3da2b69e9
   Args:
-    type: :Person
-    source: Georg_Prince_of_Saxe-Meiningen
-  AddLiteral (111fb194-1bd1-451c-9630-31a5f24b6bd5)
- Call ID: 111fb194-1bd1-451c-9630-31a5f24b6bd5
-  Args:
-    source: Georg_Prince_of_Saxe-Meiningen
-    literal_type: xsd:integer
-    literal_value: 1892
-    relation: :hasBirthYear
-  AddLiteral (1e35e05a-4408-43ee-ae96-bc3656956b64)
- Call ID: 1e35e05a-4408-43ee-ae96-bc3656956b64
-  Args:
-    literal_type: xsd:integer
-    source: Georg_Prince_of_Saxe-Meiningen
-    relation: :hasDeathYear
-    literal_value: 1946
-  AssignClass (573faef6-3aba-4c69-acfd-92c8b23554e0)
- Call ID: 573faef6-3aba-4c69-acfd-92c8b23554e0
-  Args:
+    source: Nikolaus_of_Oldenburg
     type: :Man
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AssignClass (b5fe2102-f57f-44fb-9d77-0391f5a6772e)
- Call ID: b5fe2102-f57f-44fb-9d77-0391f5a6772e
+  AssignClass (c6cbc7e8-b7b8-4a56-95a0-deb88dc58320)
+ Call ID: c6cbc7e8-b7b8-4a56-95a0-deb88dc58320
   Args:
-    type: :Person
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AddLiteral (d2cda314-1168-4803-9508-0c525ebe362c)
- Call ID: d2cda314-1168-4803-9508-0c525ebe362c
-  Args:
-    literal_type: xsd:integer
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-    relation: :hasBirthYear
-    literal_value: 1861
-  AddLiteral (4d7b4c39-a9c0-4afe-8c91-0308ea65cef0)
- Call ID: 4d7b4c39-a9c0-4afe-8c91-0308ea65cef0
-  Args:
-    literal_value: 1914
-    relation: :hasDeathYear
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-    literal_type: xsd:integer
-  AssignClass (488a20c4-8b27-409f-8ddc-1cffa4d021c8)
- Call ID: 488a20c4-8b27-409f-8ddc-1cffa4d021c8
-  Args:
+    source: Helena_of_Waldeck_and_Pyrmont
     type: :Woman
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-  AssignClass (617017a3-bc88-4033-b857-dfc5882c5199)
- Call ID: 617017a3-bc88-4033-b857-dfc5882c5199
+  AssignClass (71ccf319-054d-47bd-8540-8d0d4b75edfb)
+ Call ID: 71ccf319-054d-47bd-8540-8d0d4b75edfb
   Args:
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-    type: :Person
-  AddLiteral (71717690-ffd4-4a78-adbc-d3c2b26425b3)
- Call ID: 71717690-ffd4-4a78-adbc-d3c2b26425b3
+    source: Frederick_Augustus_II
+    type: :Man
+  AssignClass (de9699e2-d420-4e9c-b945-3c2c70433c7d)
+ Call ID: de9699e2-d420-4e9c-b945-3c2c70433c7d
+  Args:
+    source: Friedrich_of_Waldeck_and_Pyrmont
+    type: :Man
+  AssignClass (bfe50966-97f2-4da9-8f64-ec71c04faa1b)
+ Call ID: bfe50966-97f2-4da9-8f64-ec71c04faa1b
+  Args:
+    source: Ameli_of_Löwenstein-Wertheim-Freudenberg
+    type: :Woman
+  AddLiteral (33c6c238-5ab8-4682-98c9-b8e7b2fc86b7)
+ Call ID: 33c6c238-5ab8-4682-98c9-b8e7b2fc86b7
+  Args:
+    source: Anton-Günther_Duke_of_Oldenburg
+    relation: :hasBirthYear
+    literal_value: 1923
+    literal_type: xsd:integer
+  AddLiteral (05e2a50b-1eb6-4707-82f6-d108afab3481)
+ Call ID: 05e2a50b-1eb6-4707-82f6-d108afab3481
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2014
+    source: Anton-Günther_Duke_of_Oldenburg
+    literal_type: xsd:integer
+  AddLiteral (e309ada3-fd9e-4006-8858-5f38e8e95e3c)
+ Call ID: e309ada3-fd9e-4006-8858-5f38e8e95e3c
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1897
+    source: Nikolaus_of_Oldenburg
+    literal_type: xsd:integer
+  AddLiteral (ef3d2d5a-681d-4cf7-ad7f-bbb8f97deb16)
+ Call ID: ef3d2d5a-681d-4cf7-ad7f-bbb8f97deb16
   Args:
     literal_type: xsd:integer
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-    literal_value: 1870
-    relation: :hasBirthYear
-  AddLiteral (1e472e47-1b3d-4345-aeba-6cb8afa57569)
- Call ID: 1e472e47-1b3d-4345-aeba-6cb8afa57569
+    source: Nikolaus_of_Oldenburg
+    relation: :hasDeathYear
+    literal_value: 1970
+  AddLiteral (737e21c3-5bea-4667-87f8-383d4081d432)
+ Call ID: 737e21c3-5bea-4667-87f8-383d4081d432
   Args:
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasBirthYear
+    literal_value: 1899
+    source: Helena_of_Waldeck_and_Pyrmont
+    literal_type: xsd:integer
+  AddLiteral (fff6eff1-e9a9-4de8-a3ee-fc60cec6f133)
+ Call ID: fff6eff1-e9a9-4de8-a3ee-fc60cec6f133
+  Args:
     literal_type: xsd:integer
     relation: :hasDeathYear
     literal_value: 1948
-  AddTriple (c0ad22c8-3111-47bf-a812-afbcc7414436)
- Call ID: c0ad22c8-3111-47bf-a812-afbcc7414436
+    source: Helena_of_Waldeck_and_Pyrmont
+  AddLiteral (09c61107-8369-4ab4-82df-daf7d7893609)
+ Call ID: 09c61107-8369-4ab4-82df-daf7d7893609
   Args:
-    source: Georg_Prince_of_Saxe-Meiningen
-    relation: :hasFather
-    target: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AddTriple (f8ef0173-0d89-4d18-a101-dbf058c2deda)
- Call ID: f8ef0173-0d89-4d18-a101-dbf058c2deda
-  Args:
-    target: Countess_Adelaide_of_Lippe-Biesterfeld
-    source: Georg_Prince_of_Saxe-Meiningen
-    relation: :hasMother
-  AssignClass (b624334f-2049-4a33-875d-574759834a80)
- Call ID: b624334f-2049-4a33-875d-574759834a80
-  Args:
-    source: Georg_II_Duke_of_Saxe-Meiningen
-    type: :Man
-  AssignClass (1e0d9fda-9a80-4ae9-8f45-7405c62455d4)
- Call ID: 1e0d9fda-9a80-4ae9-8f45-7405c62455d4
-  Args:
-    source: Georg_II_Duke_of_Saxe-Meiningen
-    type: :Person
-  AddTriple (5e1fd867-517f-4042-854f-1873503e32fb)
- Call ID: 5e1fd867-517f-4042-854f-1873503e32fb
-  Args:
-    target: Georg_II_Duke_of_Saxe-Meiningen
-    relation: :hasFather
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AssignClass (ab01a2f5-86e1-429d-9f5a-56fb0af4b064)
- Call ID: ab01a2f5-86e1-429d-9f5a-56fb0af4b064
-  Args:
-    source: Count_Ernst_of_Lippe-Biesterfeld
-    type: :Man
-  AssignClass (9c31e870-d3f7-41de-b27e-df3055909309)
- Call ID: 9c31e870-d3f7-41de-b27e-df3055909309
-  Args:
-    source: Count_Ernst_of_Lippe-Biesterfeld
-    type: :Person
-  AddTriple (0ceb1341-0e8d-45c0-8834-e072d07c2f98)
- Call ID: 0ceb1341-0e8d-45c0-8834-e072d07c2f98
-  Args:
-    relation: :hasFather
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-    target: Count_Ernst_of_Lippe-Biesterfeld
-  AssignClass (7c37f956-3e82-41d9-ba60-ff466ecceca2)
- Call ID: 7c37f956-3e82-41d9-ba60-ff466ecceca2
-  Args:
-    source: Prince_Frederick_Alfred
-    type: :Man
-  AssignClass (9d4c1610-1a7e-4526-8072-7a3ddfe32c5d)
- Call ID: 9d4c1610-1a7e-4526-8072-7a3ddfe32c5d
-  Args:
-    type: :Person
-    source: Prince_Frederick_Alfred
-  AddTriple (f27b635b-4720-4934-85b5-eb4159581dd8)
- Call ID: f27b635b-4720-4934-85b5-eb4159581dd8
-  Args:
-    target: Georg_Prince_of_Saxe-Meiningen
-    relation: :hasFather
-    source: Prince_Frederick_Alfred
-  AssignClass (d94bdc3b-9587-46e9-9e0c-60bd86bd4182)
- Call ID: d94bdc3b-9587-46e9-9e0c-60bd86bd4182
-  Args:
-    source: Bernhard
-    type: :Man
-  AssignClass (7e0e2f93-7556-4b3d-9a52-c275221af999)
- Call ID: 7e0e2f93-7556-4b3d-9a52-c275221af999
-  Args:
-    type: :Person
-    source: Bernhard
-  AssignClass (52914436-45b3-4434-b637-103cb5576bbb)
- Call ID: 52914436-45b3-4434-b637-103cb5576bbb
-  Args:
-    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
-    type: :Woman
-  AssignClass (618e07f0-0d3b-4b8f-9d7f-e430ce11fad8)
- Call ID: 618e07f0-0d3b-4b8f-9d7f-e430ce11fad8
-  Args:
-    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
-    type: :Person
-  AddLiteral (82769c48-5aa4-4484-9196-d11e2ca7af73)
- Call ID: 82769c48-5aa4-4484-9196-d11e2ca7af73
-  Args:
-    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
-    literal_type: xsd:integer
-    literal_value: 1895
+    source: Ameli_of_Löwenstein-Wertheim-Freudenberg
+    literal_value: 1923
     relation: :hasBirthYear
-  AddLiteral (1ddb99a4-f55c-4f21-96f2-d59fe81240ff)
- Call ID: 1ddb99a4-f55c-4f21-96f2-d59fe81240ff
+    literal_type: xsd:integer
+  AddLiteral (aac24dbe-4753-4ede-b399-94c50c787755)
+ Call ID: aac24dbe-4753-4ede-b399-94c50c787755
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 2016
+    source: Ameli_of_Löwenstein-Wertheim-Freudenberg
+  AddTriple (5e6c09bf-5062-45e1-9ae3-e82ee3886de2)
+ Call ID: 5e6c09bf-5062-45e1-9ae3-e82ee3886de2
+  Args:
+    relation: :hasFather
+    source: Anton-Günther_Duke_of_Oldenburg
+    target: Nikolaus_of_Oldenburg
+  AddTriple (9de3bcfb-6dce-42c1-8ffe-c58bbab61830)
+ Call ID: 9de3bcfb-6dce-42c1-8ffe-c58bbab61830
+  Args:
+    relation: :hasMother
+    source: Anton-Günther_Duke_of_Oldenburg
+    target: Helena_of_Waldeck_and_Pyrmont
+  AddTriple (c8209521-7540-4f86-b044-817cb1ccb8e8)
+ Call ID: c8209521-7540-4f86-b044-817cb1ccb8e8
+  Args:
+    source: Anton-Günther_Duke_of_Oldenburg
+    relation: :hasMarriageYear
+    target: 1951
+  AddTriple (70a5595f-b681-4b45-b600-1f188e8cdd4d)
+ Call ID: 70a5595f-b681-4b45-b600-1f188e8cdd4d
+  Args:
+    target: Ameli_of_Löwenstein-Wertheim-Freudenberg
+    relation: :hasRelation
+    source: Anton-Günther_Duke_of_Oldenburg
+  AddTriple (fcc5af3a-f653-4323-b741-ecb24a26a968)
+ Call ID: fcc5af3a-f653-4323-b741-ecb24a26a968
+  Args:
+    target: Frederick_Augustus_II
+    source: Anton-Günther_Duke_of_Oldenburg
+    relation: :hasAncestor
+  AddTriple (983bbdac-14d9-41a1-9927-4f86cb1d3cff)
+ Call ID: 983bbdac-14d9-41a1-9927-4f86cb1d3cff
+  Args:
+    target: Friedrich_of_Waldeck_and_Pyrmont
+    source: Anton-Günther_Duke_of_Oldenburg
+    relation: :hasAncestor
+  Finish (2b295782-cd6f-4a07-a5f8-5d74b2865f6f)
+ Call ID: 2b295782-cd6f-4a07-a5f8-5d74b2865f6f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man ;
+      :hasAncestor data:Frederick_Augustus_II,
+          data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMarriageYear data:1951 ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .
+
+  data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2016 .
+
+  data:Frederick_Augustus_II a :Man .
+
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Man .
+
+  data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1948 .
+
+  data:Nikolaus_of_Oldenburg a :Man ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1970 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1951']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (9a92c138-688e-41f3-b63f-1f962dfdf127)
+ Call ID: 9a92c138-688e-41f3-b63f-1f962dfdf127
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1951
+    source: Anton-Günther_Duke_of_Oldenburg
+  AddLiteral (bbee0ad8-0ec2-440a-a514-c728caad84bc)
+ Call ID: bbee0ad8-0ec2-440a-a514-c728caad84bc
+  Args:
+    source: Anton-Günther_Duke_of_Oldenburg
+    literal_type: xsd:string
+    literal_value: 1951
+    relation: :hasMarriageYear
+  Finish (b188c4e5-7d86-4c80-b024-4e8f42f07bf9)
+ Call ID: b188c4e5-7d86-4c80-b024-4e8f42f07bf9
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man ;
+      :hasAncestor data:Frederick_Augustus_II,
+          data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMarriageYear data:1951,
+          "1951"^^xsd:string ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .
+
+  data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2016 .
+
+  data:Frederick_Augustus_II a :Man .
+
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Man .
+
+  data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1948 .
+
+  data:Nikolaus_of_Oldenburg a :Man ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1970 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1951']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (8517db5d-79a3-4841-b147-16e1e6a49cfc)
+ Call ID: 8517db5d-79a3-4841-b147-16e1e6a49cfc
   Args:
     relation: :hasMarriageYear
-    literal_value: 1919
-    literal_type: xsd:integer
-    source: Georg_Prince_of_Saxe-Meiningen
-  Finish (05504ecd-73b9-48fd-8603-25ce73388ef0)
- Call ID: 05504ecd-73b9-48fd-8603-25ce73388ef0
+    target: 1951
+    source: Anton-Günther_Duke_of_Oldenburg
+  Finish (9ca1a077-67d6-4456-966c-c1f8f41b0613)
+ Call ID: 9ca1a077-67d6-4456-966c-c1f8f41b0613
   Args:

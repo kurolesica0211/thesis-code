@@ -69,21 +69,22 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Wittekind Adolf Heinrich Georg-Wilhelm, Prince of Waldeck and Pyrmont (Wittekind Adolf Heinrich Georg-Wilhelm Fürst zu Waldeck und Pyrmont; 9 March 1936 – 16 December 2024), was a member of the German nobility who from 1967 to 2024 was head of the House of Waldeck and Pyrmont.
-Biography
+Prince Frederick George William Christopher of Prussia (German: Friedrich Georg Wilhelm Christoph Prinz von Preußen; 19 December 1911 – 20 April 1966), also known as Friedrich von Preussen in the United Kingdom, was the fourth son of Crown Prince Wilhelm of Germany and Duchess Cecilie of Mecklenburg-Schwerin.
+Marriage and issue
 
-Born in Arolsen (now Bad Arolsen) in Hesse, Germany, Wittekind was the only son of Josias Georg Wilhelm Adolf, Hereditary Prince of Waldeck and Pyrmont (1896−1967), an SS officer later found guilty of war crimes, and Duchess Altburg Marie Mathilde von Oldenburg (1903–2001), daughter of Frederick Augustus II, Grand Duke of Oldenburg.
-He was the great-nephew of Emma of Waldeck and Pyrmont (later Queen of the Netherlands and Grand Duchess of Luxembourg) and thus a second cousin of Queen Beatrix of the Netherlands, whom he welcomed to Arolsen Castle in both 2008, on the 150th anniversary of Queen Emma's birth, and 2016, to celebrate his own 80th birthday.
-Wittekind became head of the House of Waldeck and Pyrmont on his father's death in 1967.
-Marriage and family
+Prince Frederick married Lady Brigid Guinness on 30 July 1945 at Little Hadham.
+British naturalisation in 1947
 
-On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Saurau (born 1956), with whom he had three sons, including Carl-Anton, who succeeded him as Prince of Waldeck and Pyrmont.
+He renounced his German citizenship in 1947.
+He was naturalised as a British citizen in October 1947 under the name Friedrich von Preussen (having also been known during residence in the UK as "George Mansfield").
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +100,9 @@ On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Sa
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +117,23 @@ On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Sa
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +151,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +233,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +256,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +276,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +286,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +326,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,142 +425,99 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (58da2f32-3172-4525-8adc-2136b4dd608b)
- Call ID: 58da2f32-3172-4525-8adc-2136b4dd608b
+  AssignClass (1e2fb676-04df-4f29-8e07-c222e10dfac4)
+ Call ID: 1e2fb676-04df-4f29-8e07-c222e10dfac4
   Args:
-    type: :Man
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (fa53e9b4-3d09-4e16-b4ba-c3a6a20d9960)
- Call ID: fa53e9b4-3d09-4e16-b4ba-c3a6a20d9960
-  Args:
+    source: :Prince_Frederick_of_Prussia
     type: :Person
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddLiteral (79fa9f48-72b2-420f-b501-da20b2ef150b)
- Call ID: 79fa9f48-72b2-420f-b501-da20b2ef150b
+  AssignClass (b80d25b5-9c9f-4553-b98f-f3caa9242270)
+ Call ID: b80d25b5-9c9f-4553-b98f-f3caa9242270
   Args:
+    source: :Prince_Frederick_of_Prussia
+    type: :Man
+  AddLiteral (9a635918-36ed-4ae7-b76c-a58153ab835c)
+ Call ID: 9a635918-36ed-4ae7-b76c-a58153ab835c
+  Args:
+    source: :Prince_Frederick_of_Prussia
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-    literal_value: 1936
-  AddLiteral (97415186-2f15-4598-8cdd-1f9b163b93a1)
- Call ID: 97415186-2f15-4598-8cdd-1f9b163b93a1
+    literal_value: 1911
+  AddLiteral (0ba985c6-41c2-4eb3-a5a1-b031cb31dd53)
+ Call ID: 0ba985c6-41c2-4eb3-a5a1-b031cb31dd53
   Args:
-    literal_value: 2024
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-    literal_type: xsd:integer
+    source: :Prince_Frederick_of_Prussia
+    literal_value: 1966
     relation: :hasDeathYear
-  AssignClass (8dfb1fce-1098-46b7-99cf-2f5e67faf0e7)
- Call ID: 8dfb1fce-1098-46b7-99cf-2f5e67faf0e7
+    literal_type: xsd:integer
+  AddLiteral (d594e274-8e2f-4f3c-88ca-38dab1b9921f)
+ Call ID: d594e274-8e2f-4f3c-88ca-38dab1b9921f
   Args:
-    type: :Man
-    source: Josias_Georg_Wilhelm_Adolf
-  AssignClass (65dc5859-f23f-4df5-bbdb-15ec697ce9d5)
- Call ID: 65dc5859-f23f-4df5-bbdb-15ec697ce9d5
+    literal_value: Friedrich von Preussen
+    relation: :knownAs
+    literal_type: xsd:string
+    source: :Prince_Frederick_of_Prussia
+  AddLiteral (aa050dbb-71ea-4b16-9671-e77d6b394ab7)
+ Call ID: aa050dbb-71ea-4b16-9671-e77d6b394ab7
+  Args:
+    source: :Prince_Frederick_of_Prussia
+    literal_type: xsd:string
+    relation: :knownAs
+    literal_value: George Mansfield
+  AssignClass (4017d293-3809-4ef6-aab4-f5daaa95752a)
+ Call ID: 4017d293-3809-4ef6-aab4-f5daaa95752a
   Args:
     type: :Person
-    source: Josias_Georg_Wilhelm_Adolf
-  AddLiteral (bcf5715c-28f5-42aa-a22c-ef473ce7dd2f)
- Call ID: bcf5715c-28f5-42aa-a22c-ef473ce7dd2f
+    source: :Crown_Prince_Wilhelm_of_Germany
+  AssignClass (060f86cf-7563-46f6-a1ae-8c7ac64306b3)
+ Call ID: 060f86cf-7563-46f6-a1ae-8c7ac64306b3
   Args:
-    source: Josias_Georg_Wilhelm_Adolf
-    literal_value: 1896
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (a37e7ca5-b6a7-453d-a6db-6661df1ed683)
- Call ID: a37e7ca5-b6a7-453d-a6db-6661df1ed683
+    source: :Crown_Prince_Wilhelm_of_Germany
+    type: :Man
+  AssignClass (526e4477-56d2-4c6d-a378-547823b9c9ae)
+ Call ID: 526e4477-56d2-4c6d-a378-547823b9c9ae
   Args:
-    source: Josias_Georg_Wilhelm_Adolf
-    literal_value: 1967
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (ec6983e2-c700-4aa4-855c-c79584f11cba)
- Call ID: ec6983e2-c700-4aa4-855c-c79584f11cba
+    source: :Duchess_Cecilie_of_Mecklenburg-Schwerin
+    type: :Person
+  AssignClass (aaa04eca-8313-4439-9927-6a09a327f31e)
+ Call ID: aaa04eca-8313-4439-9927-6a09a327f31e
   Args:
     type: :Woman
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AssignClass (cd89e638-15d5-4898-bf89-b93e5896973e)
- Call ID: cd89e638-15d5-4898-bf89-b93e5896973e
+    source: :Duchess_Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (00f9aed2-3be3-4cec-93da-3f775565ff08)
+ Call ID: 00f9aed2-3be3-4cec-93da-3f775565ff08
   Args:
-    type: :Person
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AddLiteral (0a6f7edd-877c-4f26-98ea-dabdc2d8e605)
- Call ID: 0a6f7edd-877c-4f26-98ea-dabdc2d8e605
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1903
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AddLiteral (3f355aa6-2566-492e-ae3e-cfef7bf692d9)
- Call ID: 3f355aa6-2566-492e-ae3e-cfef7bf692d9
-  Args:
-    literal_value: 2001
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (ac89d79c-58cd-4918-b748-dff3c44c8fb7)
- Call ID: ac89d79c-58cd-4918-b748-dff3c44c8fb7
-  Args:
+    target: :Crown_Prince_Wilhelm_of_Germany
+    source: :Prince_Frederick_of_Prussia
     relation: :hasFather
-    target: Josias_Georg_Wilhelm_Adolf
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddTriple (5553f400-4606-4769-b365-6787aa050d1c)
- Call ID: 5553f400-4606-4769-b365-6787aa050d1c
+  AddTriple (02940216-138d-4208-9195-10ac48a0fd14)
+ Call ID: 02940216-138d-4208-9195-10ac48a0fd14
   Args:
-    target: Altburg_Marie_Mathilde_von_Oldenburg
     relation: :hasMother
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (a95ffe97-ff8e-4faa-b694-e8e29ecee9a4)
- Call ID: a95ffe97-ff8e-4faa-b694-e8e29ecee9a4
+    source: :Prince_Frederick_of_Prussia
+    target: :Duchess_Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (ad46443e-6448-42dc-8691-6133133d1fff)
+ Call ID: ad46443e-6448-42dc-8691-6133133d1fff
+  Args:
+    source: :Lady_Brigid_Guinness
+    type: :Person
+  AssignClass (0beb96b7-54bc-4ac1-a0d7-0863226996ef)
+ Call ID: 0beb96b7-54bc-4ac1-a0d7-0863226996ef
   Args:
     type: :Woman
-    source: Cecilia_von_Goess-Saurau
-  AssignClass (25fb2216-65c2-41c5-b63f-ca93dbf99d5c)
- Call ID: 25fb2216-65c2-41c5-b63f-ca93dbf99d5c
+    source: :Lady_Brigid_Guinness
+  AddTriple (13b955ef-c65b-4441-9ff4-76430ff3e6e3)
+ Call ID: 13b955ef-c65b-4441-9ff4-76430ff3e6e3
   Args:
-    type: :Person
-    source: Cecilia_von_Goess-Saurau
-  AddLiteral (90dfc822-d160-4c7e-9da2-6ba7e4977245)
- Call ID: 90dfc822-d160-4c7e-9da2-6ba7e4977245
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1956
-    source: Cecilia_von_Goess-Saurau
-  AddLiteral (3c66b867-60d2-4bb1-a130-7a12c5db246a)
- Call ID: 3c66b867-60d2-4bb1-a130-7a12c5db246a
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1988
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddTriple (e00803a4-50b8-40f0-ac52-06b9fa65082e)
- Call ID: e00803a4-50b8-40f0-ac52-06b9fa65082e
-  Args:
+    target: :Lady_Brigid_Guinness
+    source: :Prince_Frederick_of_Prussia
     relation: :hasRelation
-    target: Cecilia_von_Goess-Saurau
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (c6a833d1-5e00-46bc-86e6-7bac38dfa77d)
- Call ID: c6a833d1-5e00-46bc-86e6-7bac38dfa77d
+  AddLiteral (f40cc111-777e-4225-b309-1b461f6677b9)
+ Call ID: f40cc111-777e-4225-b309-1b461f6677b9
   Args:
-    type: :Man
-    source: Carl-Anton
-  AssignClass (764406ab-cda6-45e8-bb87-8513832bcd05)
- Call ID: 764406ab-cda6-45e8-bb87-8513832bcd05
-  Args:
-    type: :Person
-    source: Carl-Anton
-  AddTriple (234be491-0c88-47ef-8ee9-9f9f4735491e)
- Call ID: 234be491-0c88-47ef-8ee9-9f9f4735491e
-  Args:
-    relation: :hasFather
-    target: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-    source: Carl-Anton
-  AddTriple (8aaf8c41-83ed-4258-ac56-a9be63db96d6)
- Call ID: 8aaf8c41-83ed-4258-ac56-a9be63db96d6
-  Args:
-    source: Carl-Anton
-    target: Cecilia_von_Goess-Saurau
-    relation: :hasMother
-  Finish (179eb461-1734-4f35-8725-4bbd5e4f69af)
- Call ID: 179eb461-1734-4f35-8725-4bbd5e4f69af
+    source: :Prince_Frederick_of_Prussia
+    literal_value: 1945
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  Finish (4fcacb75-0ae9-4457-b509-838cfcbb4274)
+ Call ID: 4fcacb75-0ae9-4457-b509-838cfcbb4274
   Args:

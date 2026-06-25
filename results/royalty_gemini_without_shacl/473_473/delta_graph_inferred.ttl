@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra a :Woman ;
+    :hasRelation data:Alexandra ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+
+data:Albrecht a :Man ;
+    :hasBirthYear 1954 ;
+    :hasBrother data:Albrecht,
+        data:Karl_Friedrich ;
+    :hasRelation data:Albrecht,
+        data:Friedrich_Wilhelm,
+        data:Karl_Friedrich,
+        data:Margarita_of_Leiningen ;
+    :isBloodrelationOf data:Albrecht,
+        data:Karl_Friedrich ;
+    :isBrotherOf data:Albrecht,
+        data:Karl_Friedrich ;
+    :isSiblingOf data:Albrecht,
+        data:Karl_Friedrich .
+
+data:Friedrich_Wilhelm a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_Wilhelm ;
+    :hasChild data:Karl_Friedrich ;
+    :hasRelation data:Albrecht,
+        data:Friedrich_Wilhelm,
+        data:Karl_Friedrich,
+        data:Margarita_of_Leiningen ;
+    :hasSon data:Karl_Friedrich ;
+    :isAncestorOf data:Karl_Friedrich ;
+    :isBloodrelationOf data:Friedrich_Wilhelm ;
+    :isBrotherOf data:Friedrich_Wilhelm ;
+    :isFatherOf data:Karl_Friedrich ;
+    :isParentOf data:Karl_Friedrich ;
+    :isSiblingOf data:Friedrich_Wilhelm ;
+    :isUncleOf data:Karl_Friedrich .
+
+data:Margarita_of_Leiningen a :Ancestor,
+        :Woman ;
+    :hasChild data:Karl_Friedrich ;
+    :hasRelation data:Albrecht,
+        data:Friedrich_Wilhelm,
+        data:Karl_Friedrich,
+        data:Margarita_of_Leiningen ;
+    :hasSister data:Margarita_of_Leiningen ;
+    :hasSon data:Karl_Friedrich ;
+    :isAncestorOf data:Karl_Friedrich ;
+    :isAuntOf data:Karl_Friedrich ;
+    :isBloodrelationOf data:Margarita_of_Leiningen ;
+    :isMotherOf data:Karl_Friedrich ;
+    :isParentOf data:Karl_Friedrich ;
+    :isSiblingOf data:Margarita_of_Leiningen ;
+    :isSisterOf data:Margarita_of_Leiningen .
+
+data:Karl_Friedrich a :Man ;
+    :hasAncestor data:Friedrich_Wilhelm,
+        data:Margarita_of_Leiningen ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Albrecht,
+        data:Karl_Friedrich ;
+    :hasFather data:Friedrich_Wilhelm ;
+    :hasMother data:Margarita_of_Leiningen ;
+    :hasParent data:Friedrich_Wilhelm,
+        data:Margarita_of_Leiningen ;
+    :hasRelation data:Albrecht,
+        data:Friedrich_Wilhelm,
+        data:Karl_Friedrich,
+        data:Margarita_of_Leiningen ;
+    :isBloodrelationOf data:Albrecht,
+        data:Karl_Friedrich ;
+    :isBrotherOf data:Albrecht,
+        data:Karl_Friedrich ;
+    :isChildOf data:Friedrich_Wilhelm,
+        data:Margarita_of_Leiningen ;
+    :isSiblingOf data:Albrecht,
+        data:Karl_Friedrich ;
+    :isSonOf data:Friedrich_Wilhelm,
+        data:Margarita_of_Leiningen .
+

@@ -2,31 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Gonzalo a :Man,
-        :Person ;
-    :hasBirthYear 1937 ;
-    :hasBrother data:Alfonso ;
-    :hasDeathYear 2000 ;
-    :hasFather data:Jaime ;
-    :hasMother data:Emmanuelle_de_Dampierre .
+data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen a :Man ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 2007 ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMarriageYear 1952 ;
+    :hasMother data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim ;
+    :hasSex data:Male .
 
-data:Victoria_Eugenie a :Ancestor,
-        :Person,
-        :Woman .
+data:Armgard_Else_Helene_von_Veltheim a :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Friedrich_von_Veltheim ;
+    :hasMother data:Ottonie_von_Alvensleben ;
+    :hasSex data:Female .
 
-data:Alfonso a :Man,
-        :Person .
+data:Countess_Ina_Marie_von_Bassewitz a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person .
+data:Friedrich_von_Veltheim a :Ancestor,
+        :Man ;
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1955 ;
+    :hasSex data:Male .
 
-data:Emmanuelle_de_Dampierre a :Ancestor,
-        :Person,
-        :Woman .
+data:Ottonie_von_Alvensleben a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1960 ;
+    :hasSex data:Female .
 
-data:Jaime a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Alfonso_XIII .
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

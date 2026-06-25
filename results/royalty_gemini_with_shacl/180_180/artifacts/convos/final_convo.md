@@ -85,26 +85,43 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Karl Adolf Andreas Prinz von Hesse (German: Karl Adolf Andreas Prinz Von Hessen; 26 March 1937 – 23 March 2022) was a member of the German electoral House of Hesse-Kassel.
-He was a first cousin of King Charles III of the United Kingdom through his uncle Prince Philip.
-Early life and ancestry
+Thomas Patrick John Anson, 5th Earl of Lichfield (25 April 1939 – 11 November 2005), was an English photographer from the Anson family.
+He inherited the Earldom of Lichfield in 1960 from his paternal grandfather.
+In his professional practice he was known as Patrick Lichfield.
+Biography
 
-Born on 26  March 1937 in Berlin, into an elder line of the House of Hesse, a house directly descended from the House of Brabant, Karl Adolf Andreas was the eldest son of Prince Christoph of Hesse and his wife, Princess Sophie of Greece and Denmark, youngest sister of Prince Philip, Duke of Edinburgh.
-In 1946, his mother was married again to Prince George William of Hanover, maternal grandson of Wilhelm II.
-Orphaned by his father at an early age, Karl was later adopted by one of his paternal uncles, Prince Wolfgang of Hesse, in 1952.
-Related to most European dynasties, Karl participated in the major events of the gotha.
-In 1954, he and his family were invited to take part in the Cruise of the Kings, organized by King Paul of Greece and his wife Queen Frederica.
-Karl briefly discussed his mother's childhood and her ties to the Nazi regime in a documentary in 2015 about his uncle, Prince Philip:
+Thomas Patrick John Anson was born on 25 April 1939.
+He was the only son of Lieutenant-Colonel Thomas William Arnold Anson, Viscount Anson (1913–1958), the eldest son and heir apparent of Thomas Edward Anson, 4th Earl of Lichfield (1883–1960).
+His mother was born Anne Bowes-Lyon (1917–1980), a niece of Queen Elizabeth the Queen Mother.
+His parents divorced in 1948, and his mother subsequently became Princess Anne of Denmark after her remarriage to Prince Georg of Denmark in 1950.
+He had one sister, Lady Elizabeth Georgiana Anson (1941–2020), who married Sir Geoffrey Adam Shakerley, 6th Baronet.
+Lichfield was educated at two boarding independent schools: Wellesley House School in the coastal town of Broadstairs in Kent, and Harrow School in Harrow on the Hill in north-west London, followed by the Royal Military Academy Sandhurst.
+His father died in 1958, leaving Patrick to succeed as 5th Earl of Lichfield when his grandfather died in 1960.
+Lichfield joined the Grenadier Guards in 1959.
+He was selected to take the official photographs of the wedding of the Prince and Princess of Wales in 1981, and subsequently became one of the UK's best-known photographers.
+He was chosen by Queen Elizabeth II and the Duke of Edinburgh to take official pictures of her Golden Jubilee in 2002.
+He also cameoed in the British sitcom Keeping Up Appearances, appearing in the episode "Sea Fever" as a passenger on the Queen Elizabeth 2.
+Lichfield resided in an apartment at the former family seat of Shugborough Hall, near Cannock Chase in Staffordshire.
+Marriage and children
+
+On 8 March 1975 Lichfield married Lady Leonora Grosvenor, elder daughter of Robert Grosvenor, 5th Duke of Westminster and Hon.
+The Countess of Lichfield has not remarried and has retained her title.
+She and the Earl had one son and two daughters together:
+
+
+Lichfield's most recent partner was the biographer Lady Annunziata Asquith, daughter of Julian Asquith, 2nd Earl of Oxford and Asquith.
 Death
 
-Prince Karl of Hesse died in Munich, at the age of 84 years, on March 23, 2022.
-}} Media related to Karl Adolf Andreas of Hesse at Wikimedia Commons
+On 10 November 2005, Lichfield suffered a major stroke and died the following day at the John Radcliffe Hospital in Oxford.
+Lichfield's apartment at Shugborough now houses an exhibition of his work, together with a recreation of his studio.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +137,9 @@ Prince Karl of Hesse died in Munich, at the age of 84 years, on March 23, 2022.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +154,23 @@ Prince Karl of Hesse died in Munich, at the age of 84 years, on March 23, 2022.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +188,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +270,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +293,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +313,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +323,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +363,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,91 +462,399 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3ee91795-053d-478d-aad1-6c4d251c5772)
- Call ID: 3ee91795-053d-478d-aad1-6c4d251c5772
+  AssignClass (c25c2782-f895-481b-88cf-1a77980951d5)
+ Call ID: c25c2782-f895-481b-88cf-1a77980951d5
   Args:
     type: :Man
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
-  AssignClass (c5a078bc-6889-4717-bb16-5464d6e31fdf)
- Call ID: c5a078bc-6889-4717-bb16-5464d6e31fdf
+    source: Thomas_Patrick_John_Anson
+  AssignClass (230da5af-2e57-4b6d-8242-53fac6936415)
+ Call ID: 230da5af-2e57-4b6d-8242-53fac6936415
   Args:
     type: :Person
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
-  AssignClass (343a57a2-7b85-4d9b-9046-62207958a3c4)
- Call ID: 343a57a2-7b85-4d9b-9046-62207958a3c4
+    source: Thomas_Patrick_John_Anson
+  AddLiteral (dace8478-7571-471f-be25-bbd38eecc1a5)
+ Call ID: dace8478-7571-471f-be25-bbd38eecc1a5
   Args:
+    literal_value: 1939
+    relation: :hasBirthYear
+    source: Thomas_Patrick_John_Anson
+    literal_type: xsd:integer
+  AddLiteral (afdfe2fd-0c28-4615-9836-1393ffc37957)
+ Call ID: afdfe2fd-0c28-4615-9836-1393ffc37957
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2005
+    source: Thomas_Patrick_John_Anson
+    literal_type: xsd:integer
+  AddLiteral (8a71a3b2-bc25-4886-9e25-0bc004488890)
+ Call ID: 8a71a3b2-bc25-4886-9e25-0bc004488890
+  Args:
+    relation: :knownAs
+    literal_value: Patrick Lichfield
+    source: Thomas_Patrick_John_Anson
+    literal_type: xsd:string
+  AssignClass (7812ef8b-438f-4ce0-831f-4a612802c308)
+ Call ID: 7812ef8b-438f-4ce0-831f-4a612802c308
+  Args:
+    source: Thomas_William_Arnold_Anson
     type: :Man
-    source: Prince_Christoph_of_Hesse
-  AssignClass (4b24059f-546c-4774-86e7-003a9e2e4fa7)
- Call ID: 4b24059f-546c-4774-86e7-003a9e2e4fa7
+  AssignClass (8fdf18c4-7c04-4b92-a79a-54b2cc5fb50b)
+ Call ID: 8fdf18c4-7c04-4b92-a79a-54b2cc5fb50b
   Args:
-    source: Prince_Christoph_of_Hesse
+    source: Thomas_William_Arnold_Anson
     type: :Person
-  AssignClass (691f99f1-39f2-41bf-919c-1bf131ba6059)
- Call ID: 691f99f1-39f2-41bf-919c-1bf131ba6059
-  Args:
-    source: Princess_Sophie_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (57aa02dd-7b02-4ea7-be19-ad0c055bf07d)
- Call ID: 57aa02dd-7b02-4ea7-be19-ad0c055bf07d
-  Args:
-    type: :Person
-    source: Princess_Sophie_of_Greece_and_Denmark
-  AssignClass (908b577e-9fa1-4e26-a700-7935233998f1)
- Call ID: 908b577e-9fa1-4e26-a700-7935233998f1
-  Args:
-    type: :Man
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (508264ea-2e53-4db0-994d-64cbeb3975cd)
- Call ID: 508264ea-2e53-4db0-994d-64cbeb3975cd
-  Args:
-    type: :Person
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (3123a097-f740-43f5-a493-7cea923640ab)
- Call ID: 3123a097-f740-43f5-a493-7cea923640ab
-  Args:
-    type: :Man
-    source: Prince_Wolfgang_of_Hesse
-  AssignClass (0f1936e5-bded-40af-9497-102901f0227b)
- Call ID: 0f1936e5-bded-40af-9497-102901f0227b
-  Args:
-    type: :Person
-    source: Prince_Wolfgang_of_Hesse
-  AddLiteral (a828b938-90fd-4ac1-a4a4-4f9c3365d330)
- Call ID: a828b938-90fd-4ac1-a4a4-4f9c3365d330
+  AddLiteral (893551b4-c214-4841-907f-ee05e336ad94)
+ Call ID: 893551b4-c214-4841-907f-ee05e336ad94
   Args:
     literal_type: xsd:integer
-    literal_value: 1937
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
+    source: Thomas_William_Arnold_Anson
     relation: :hasBirthYear
-  AddLiteral (152abb9e-0f3a-42f0-a490-bfdfacc94824)
- Call ID: 152abb9e-0f3a-42f0-a490-bfdfacc94824
+    literal_value: 1913
+  AddLiteral (63a590d3-c068-41b3-a034-343029bf338e)
+ Call ID: 63a590d3-c068-41b3-a034-343029bf338e
   Args:
-    literal_value: 2022
+    literal_value: 1958
+    relation: :hasDeathYear
+    source: Thomas_William_Arnold_Anson
+    literal_type: xsd:integer
+  AddTriple (8cd0a638-adfd-4e48-99ba-23cccebd628b)
+ Call ID: 8cd0a638-adfd-4e48-99ba-23cccebd628b
+  Args:
+    relation: :isFatherOf
+    target: Thomas_Patrick_John_Anson
+    source: Thomas_William_Arnold_Anson
+  AssignClass (8b756452-d034-46df-90d8-eabbd7f5427d)
+ Call ID: 8b756452-d034-46df-90d8-eabbd7f5427d
+  Args:
+    type: :Man
+    source: Thomas_Edward_Anson
+  AssignClass (c14d0891-68c9-4338-a333-fc2ffc9b275e)
+ Call ID: c14d0891-68c9-4338-a333-fc2ffc9b275e
+  Args:
+    type: :Person
+    source: Thomas_Edward_Anson
+  AddLiteral (a333499b-324b-4be0-9353-c6465669c3c2)
+ Call ID: a333499b-324b-4be0-9353-c6465669c3c2
+  Args:
+    literal_value: 1883
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Thomas_Edward_Anson
+  AddLiteral (2a43d1a6-aed8-4a14-98a5-76c35e724f61)
+ Call ID: 2a43d1a6-aed8-4a14-98a5-76c35e724f61
+  Args:
+    source: Thomas_Edward_Anson
     literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
-  AddTriple (a0a12de0-746d-4970-bccd-50384107c04e)
- Call ID: a0a12de0-746d-4970-bccd-50384107c04e
+    literal_value: 1960
+  AddTriple (5444cbef-c9de-4e7d-b063-51bdb2e3dae7)
+ Call ID: 5444cbef-c9de-4e7d-b063-51bdb2e3dae7
   Args:
-    target: Prince_Christoph_of_Hesse
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
-    relation: :hasFather
-  AddTriple (de625119-6ea7-481d-923b-a9995573a2f0)
- Call ID: de625119-6ea7-481d-923b-a9995573a2f0
+    source: Thomas_Edward_Anson
+    target: Thomas_William_Arnold_Anson
+    relation: :isFatherOf
+  AssignClass (51bbf53c-88e6-4727-b651-6d5797821fa1)
+ Call ID: 51bbf53c-88e6-4727-b651-6d5797821fa1
   Args:
-    relation: :hasMother
-    target: Princess_Sophie_of_Greece_and_Denmark
-    source: Karl_Adolf_Andreas_Prinz_von_Hesse
-  AddTriple (cade51b0-56d4-4c06-ad6e-8d874b5844c2)
- Call ID: cade51b0-56d4-4c06-ad6e-8d874b5844c2
+    type: :Woman
+    source: Anne_Bowes-Lyon
+  AssignClass (b00aebfc-8d12-4e33-b6c2-2b8f8a466472)
+ Call ID: b00aebfc-8d12-4e33-b6c2-2b8f8a466472
   Args:
-    source: Princess_Sophie_of_Greece_and_Denmark
-    target: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+    source: Anne_Bowes-Lyon
+  AddLiteral (4fe36e88-13e4-476d-b04f-c814bb5ed98c)
+ Call ID: 4fe36e88-13e4-476d-b04f-c814bb5ed98c
+  Args:
+    literal_value: 1917
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Anne_Bowes-Lyon
+  AddLiteral (570a8c6d-40d9-4f12-9050-1f30de52e54e)
+ Call ID: 570a8c6d-40d9-4f12-9050-1f30de52e54e
+  Args:
+    literal_type: xsd:integer
+    source: Anne_Bowes-Lyon
+    relation: :hasDeathYear
+    literal_value: 1980
+  AddTriple (5cb4a6c7-a1f4-4f96-83ec-ce916ce08a88)
+ Call ID: 5cb4a6c7-a1f4-4f96-83ec-ce916ce08a88
+  Args:
+    source: Anne_Bowes-Lyon
+    target: Thomas_Patrick_John_Anson
+    relation: :isMotherOf
+  AssignClass (9d020733-30b4-4e43-8f3d-2f5744f3b8e2)
+ Call ID: 9d020733-30b4-4e43-8f3d-2f5744f3b8e2
+  Args:
+    type: :Woman
+    source: Elizabeth_Georgiana_Anson
+  AssignClass (7bca2d93-67a6-4b5d-8807-8bc4c231a62f)
+ Call ID: 7bca2d93-67a6-4b5d-8807-8bc4c231a62f
+  Args:
+    source: Elizabeth_Georgiana_Anson
+    type: :Person
+  AddLiteral (c27a006e-95f5-4966-a16d-8ae1caa953c0)
+ Call ID: c27a006e-95f5-4966-a16d-8ae1caa953c0
+  Args:
+    literal_type: xsd:integer
+    source: Elizabeth_Georgiana_Anson
+    literal_value: 1941
+    relation: :hasBirthYear
+  AddLiteral (dd7c7312-b2b9-4a49-b680-84029ee21fac)
+ Call ID: dd7c7312-b2b9-4a49-b680-84029ee21fac
+  Args:
+    literal_value: 2020
+    relation: :hasDeathYear
+    source: Elizabeth_Georgiana_Anson
+    literal_type: xsd:integer
+  AddTriple (ac45ec68-060b-4f65-beaf-45ffd1e08f5f)
+ Call ID: ac45ec68-060b-4f65-beaf-45ffd1e08f5f
+  Args:
+    target: Thomas_Patrick_John_Anson
+    source: Elizabeth_Georgiana_Anson
     relation: :isSisterOf
-  Finish (c6aef529-404f-416c-8367-709ea8758dec)
- Call ID: c6aef529-404f-416c-8367-709ea8758dec
+  AddTriple (e695cc59-c43b-4806-a0fe-259f1d58dc71)
+ Call ID: e695cc59-c43b-4806-a0fe-259f1d58dc71
   Args:
+    relation: :isFatherOf
+    target: Elizabeth_Georgiana_Anson
+    source: Thomas_William_Arnold_Anson
+  AddTriple (efb1dc1a-a6e9-4224-95fa-dc200553853f)
+ Call ID: efb1dc1a-a6e9-4224-95fa-dc200553853f
+  Args:
+    relation: :isMotherOf
+    source: Anne_Bowes-Lyon
+    target: Elizabeth_Georgiana_Anson
+  AssignClass (4f35c304-a967-4e5e-8200-f9e46de1a7c8)
+ Call ID: 4f35c304-a967-4e5e-8200-f9e46de1a7c8
+  Args:
+    type: :Woman
+    source: Leonora_Grosvenor
+  AssignClass (140e7496-38e7-4535-92f6-5b7ecd90addc)
+ Call ID: 140e7496-38e7-4535-92f6-5b7ecd90addc
+  Args:
+    type: :Person
+    source: Leonora_Grosvenor
+  AddTriple (21f4bec5-782c-4f3c-90ea-4e863dca2133)
+ Call ID: 21f4bec5-782c-4f3c-90ea-4e863dca2133
+  Args:
+    target: Leonora_Grosvenor
+    source: Thomas_Patrick_John_Anson
+    relation: :hasRelation
+  AddLiteral (847acb97-8466-464d-afec-9c22cfc02bb9)
+ Call ID: 847acb97-8466-464d-afec-9c22cfc02bb9
+  Args:
+    literal_type: xsd:integer
+    source: Thomas_Patrick_John_Anson
+    relation: :hasMarriageYear
+    literal_value: 1975
+  AssignClass (c686c8d9-011e-4efc-9dac-1be91556eeae)
+ Call ID: c686c8d9-011e-4efc-9dac-1be91556eeae
+  Args:
+    type: :Man
+    source: Robert_Grosvenor
+  AssignClass (9a69770d-50bc-4ace-9cad-360f72c6f949)
+ Call ID: 9a69770d-50bc-4ace-9cad-360f72c6f949
+  Args:
+    source: Robert_Grosvenor
+    type: :Person
+  AddTriple (b1ec7424-abbf-45fb-a4f4-cf85100611b6)
+ Call ID: b1ec7424-abbf-45fb-a4f4-cf85100611b6
+  Args:
+    source: Robert_Grosvenor
+    target: Leonora_Grosvenor
+    relation: :isFatherOf
+  AssignClass (3b5e3aaa-4046-4cee-b5f9-6bfe37b25fac)
+ Call ID: 3b5e3aaa-4046-4cee-b5f9-6bfe37b25fac
+  Args:
+    source: Annunziata_Asquith
+    type: :Woman
+  AssignClass (c1dbc337-3cb8-4d0a-a6e1-47d6431309f8)
+ Call ID: c1dbc337-3cb8-4d0a-a6e1-47d6431309f8
+  Args:
+    type: :Person
+    source: Annunziata_Asquith
+  AddTriple (a62cf1b5-9123-456d-b26f-a59e914229b2)
+ Call ID: a62cf1b5-9123-456d-b26f-a59e914229b2
+  Args:
+    relation: :hasRelation
+    target: Annunziata_Asquith
+    source: Thomas_Patrick_John_Anson
+  AssignClass (2b80ef04-4cb3-4511-86ad-cb3bf834633a)
+ Call ID: 2b80ef04-4cb3-4511-86ad-cb3bf834633a
+  Args:
+    source: Julian_Asquith
+    type: :Man
+  AssignClass (8cffb1a3-1b26-4667-8398-06a5303451b5)
+ Call ID: 8cffb1a3-1b26-4667-8398-06a5303451b5
+  Args:
+    type: :Person
+    source: Julian_Asquith
+  AddTriple (da0674d2-2690-4560-8b4f-6190cd779fdd)
+ Call ID: da0674d2-2690-4560-8b4f-6190cd779fdd
+  Args:
+    source: Julian_Asquith
+    target: Annunziata_Asquith
+    relation: :isFatherOf
+  AssignClass (dec904e5-8f7a-4019-b544-2f3fb992bf70)
+ Call ID: dec904e5-8f7a-4019-b544-2f3fb992bf70
+  Args:
+    type: :Man
+    source: Prince_Georg_of_Denmark
+  AssignClass (fc6bb8f1-c2b6-4bf5-b35d-cb08845b1d98)
+ Call ID: fc6bb8f1-c2b6-4bf5-b35d-cb08845b1d98
+  Args:
+    type: :Person
+    source: Prince_Georg_of_Denmark
+  AddTriple (032d558e-9ef6-4d98-ac78-67c338ce8d82)
+ Call ID: 032d558e-9ef6-4d98-ac78-67c338ce8d82
+  Args:
+    source: Anne_Bowes-Lyon
+    target: Prince_Georg_of_Denmark
+    relation: :hasRelation
+  AssignClass (7f4042ec-96db-46aa-ad6e-fd29015cd646)
+ Call ID: 7f4042ec-96db-46aa-ad6e-fd29015cd646
+  Args:
+    source: Geoffrey_Adam_Shakerley
+    type: :Man
+  AssignClass (e764733b-9ba4-4201-9c37-88157cf7e1d5)
+ Call ID: e764733b-9ba4-4201-9c37-88157cf7e1d5
+  Args:
+    type: :Person
+    source: Geoffrey_Adam_Shakerley
+  AddTriple (a51f28f6-01ea-494b-bd06-29c43405c983)
+ Call ID: a51f28f6-01ea-494b-bd06-29c43405c983
+  Args:
+    relation: :hasRelation
+    target: Geoffrey_Adam_Shakerley
+    source: Elizabeth_Georgiana_Anson
+  Finish (e68af003-fc64-4c0d-9697-8a671f8ba06c)
+ Call ID: e68af003-fc64-4c0d-9697-8a671f8ba06c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -504,25 +919,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1937 ;
-      :hasDeathYear 2022 ;
-      :hasFather data:Prince_Christoph_of_Hesse ;
-      :hasMother data:Princess_Sophie_of_Greece_and_Denmark .
-
-  data:Prince_Wolfgang_of_Hesse a :Man,
-          :Person .
-
-  data:Prince_Christoph_of_Hesse a :Man,
-          :Person .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person .
-
-  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+  data:Anne_Bowes-Lyon a :Person,
           :Woman ;
-      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1980 ;
+      :hasRelation data:Prince_Georg_of_Denmark ;
+      :isMotherOf data:Elizabeth_Georgiana_Anson,
+          data:Thomas_Patrick_John_Anson .
+
+  data:Julian_Asquith a :Man,
+          :Person ;
+      :isFatherOf data:Annunziata_Asquith .
+
+  data:Robert_Grosvenor a :Man,
+          :Person ;
+      :isFatherOf data:Leonora_Grosvenor .
+
+  data:Thomas_Edward_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1960 ;
+      :isFatherOf data:Thomas_William_Arnold_Anson .
+
+  data:Geoffrey_Adam_Shakerley a :Man,
+          :Person .
+
+  data:Prince_Georg_of_Denmark a :Man,
+          :Person .
+
+  data:Thomas_William_Arnold_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1958 ;
+      :isFatherOf data:Elizabeth_Georgiana_Anson,
+          data:Thomas_Patrick_John_Anson .
+
+  data:Annunziata_Asquith a :Person,
+          :Woman .
+
+  data:Elizabeth_Georgiana_Anson a :Person,
+          :Woman ;
+      :hasBirthYear 1941 ;
+      :hasDeathYear 2020 ;
+      :hasRelation data:Geoffrey_Adam_Shakerley ;
+      :isSisterOf data:Thomas_Patrick_John_Anson .
+
+  data:Leonora_Grosvenor a :Person,
+          :Woman .
+
+  data:Thomas_Patrick_John_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1939 ;
+      :hasDeathYear 2005 ;
+      :hasMarriageYear 1975 ;
+      :hasRelation data:Annunziata_Asquith,
+          data:Leonora_Grosvenor ;
+      :knownAs "Patrick Lichfield"^^xsd:string .
 
 
 
@@ -534,62 +986,54 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (faf581f2-b46e-48ed-a624-3a9b2a991f8f)
- Call ID: faf581f2-b46e-48ed-a624-3a9b2a991f8f
+  ValidateShacl (750317bb-086d-4520-87b5-6a421d3d6063)
+ Call ID: 750317bb-086d-4520-87b5-6a421d3d6063
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:5
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Prince_Christoph_of_Hesse, acting as the father of Karl_Adolf_Andreas_Prinz_von_Hesse, is missing the required class :Ancestor.
+      The node Thomas_William_Arnold_Anson is identified as a subject of the property isFatherOf, which requires the subject to be an instance of the class :Ancestor. The node currently lacks this classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Christoph_of_Hesse', class=':Ancestor')
+      AssignClass(node='Thomas_William_Arnold_Anson', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Princess_Sophie_of_Greece_and_Denmark, acting as the mother of Karl_Adolf_Andreas_Prinz_von_Hesse, is missing the required class :Ancestor.
+      The node Thomas_Edward_Anson is identified as a subject of the property isFatherOf, which requires the subject to be an instance of the class :Ancestor. The node currently lacks this classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Sophie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Thomas_Edward_Anson', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Prince_Christoph_of_Hesse is missing the mandatory :Ancestor class classification for the :hasFather relationship.
+      The node Julian_Asquith is identified as a subject of the property isFatherOf, which requires the subject to be an instance of the class :Ancestor. The node currently lacks this classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Christoph_of_Hesse', class=':Ancestor')
+      AssignClass(node='Julian_Asquith', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Princess_Sophie_of_Greece_and_Denmark is missing the mandatory :Ancestor class classification for the :hasMother relationship.
+      The node Robert_Grosvenor is identified as a subject of the property isFatherOf, which requires the subject to be an instance of the class :Ancestor. The node currently lacks this classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Sophie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Robert_Grosvenor', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Prince_Christoph_of_Hesse is missing the mandatory :Ancestor class classification for the :hasFather relationship.
+      The node Anne_Bowes-Lyon is identified as a subject of the property isMotherOf, which requires the subject to be an instance of the class :Ancestor. The node currently lacks this classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Christoph_of_Hesse', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Sophie_of_Greece_and_Denmark is missing the mandatory :Ancestor class classification for the :hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Sophie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
 
 
 
@@ -598,19 +1042,43 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3e288590-4fb6-4ec3-858f-4cdb441ba224)
- Call ID: 3e288590-4fb6-4ec3-858f-4cdb441ba224
+  AssignClass (69cdb165-6815-4004-8acf-0212962e0ff9)
+ Call ID: 69cdb165-6815-4004-8acf-0212962e0ff9
   Args:
-    source: Prince_Christoph_of_Hesse
+    source: Thomas_William_Arnold_Anson
     type: :Ancestor
-  AssignClass (89a700e4-27f7-4306-ad65-feba5c729f92)
- Call ID: 89a700e4-27f7-4306-ad65-feba5c729f92
+  AssignClass (10ce8085-c4c6-44b7-901a-64b61e0a2ed9)
+ Call ID: 10ce8085-c4c6-44b7-901a-64b61e0a2ed9
+  Args:
+    source: Thomas_Edward_Anson
+    type: :Ancestor
+  AssignClass (f0b88a9e-3a4e-4fe0-9b6b-9478b9dae362)
+ Call ID: f0b88a9e-3a4e-4fe0-9b6b-9478b9dae362
   Args:
     type: :Ancestor
-    source: Princess_Sophie_of_Greece_and_Denmark
-  Finish (dff76903-ba9d-4d3c-8097-e0639afe59b5)
- Call ID: dff76903-ba9d-4d3c-8097-e0639afe59b5
+    source: Julian_Asquith
+  AssignClass (d74c3fab-6b20-438a-8e0e-6f83b9cc7850)
+ Call ID: d74c3fab-6b20-438a-8e0e-6f83b9cc7850
   Args:
+    source: Robert_Grosvenor
+    type: :Ancestor
+  AssignClass (c4ff5bd1-e949-4ad7-ba6d-ca86108f676b)
+ Call ID: c4ff5bd1-e949-4ad7-ba6d-ca86108f676b
+  Args:
+    source: Anne_Bowes-Lyon
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -623,40 +1091,76 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1937 ;
-      :hasDeathYear 2022 ;
-      :hasFather data:Prince_Christoph_of_Hesse ;
-      :hasMother data:Princess_Sophie_of_Greece_and_Denmark .
-
-  data:Prince_Wolfgang_of_Hesse a :Man,
-          :Person .
-
-  data:Prince_Christoph_of_Hesse a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person .
-
-  data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+  data:Anne_Bowes-Lyon a :Ancestor,
           :Person,
           :Woman ;
-      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1980 ;
+      :hasRelation data:Prince_Georg_of_Denmark ;
+      :isMotherOf data:Elizabeth_Georgiana_Anson,
+          data:Thomas_Patrick_John_Anson .
+
+  data:Julian_Asquith a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Annunziata_Asquith .
+
+  data:Robert_Grosvenor a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Leonora_Grosvenor .
+
+  data:Thomas_Edward_Anson a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1960 ;
+      :isFatherOf data:Thomas_William_Arnold_Anson .
+
+  data:Geoffrey_Adam_Shakerley a :Man,
+          :Person .
+
+  data:Prince_Georg_of_Denmark a :Man,
+          :Person .
+
+  data:Thomas_William_Arnold_Anson a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1958 ;
+      :isFatherOf data:Elizabeth_Georgiana_Anson,
+          data:Thomas_Patrick_John_Anson .
+
+  data:Annunziata_Asquith a :Person,
+          :Woman .
+
+  data:Elizabeth_Georgiana_Anson a :Person,
+          :Woman ;
+      :hasBirthYear 1941 ;
+      :hasDeathYear 2020 ;
+      :hasRelation data:Geoffrey_Adam_Shakerley ;
+      :isSisterOf data:Thomas_Patrick_John_Anson .
+
+  data:Leonora_Grosvenor a :Person,
+          :Woman .
+
+  data:Thomas_Patrick_John_Anson a :Man,
+          :Person ;
+      :hasBirthYear 1939 ;
+      :hasDeathYear 2005 ;
+      :hasMarriageYear 1975 ;
+      :hasRelation data:Annunziata_Asquith,
+          data:Leonora_Grosvenor ;
+      :knownAs "Patrick Lichfield"^^xsd:string .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (6f614a03-ddbc-497d-8cb9-dbce8390c216)
- Call ID: 6f614a03-ddbc-497d-8cb9-dbce8390c216
+  ValidateShacl (d9f9adfc-02ff-4060-86ef-fba36681184f)
+ Call ID: d9f9adfc-02ff-4060-86ef-fba36681184f
   Args:
 
 ================================= Tool Message =================================
@@ -667,6 +1171,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e2915fe2-2eca-4f33-9734-c158fa614af4)
- Call ID: e2915fe2-2eca-4f33-9734-c158fa614af4
+  Finish (702366c3-0d53-4a6c-a558-c0912513c6d0)
+ Call ID: 702366c3-0d53-4a6c-a558-c0912513c6d0
   Args:

@@ -1,0 +1,339 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:WilhelmII a :Ancestor,
+        :Man ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:VictoriaLouise ;
+    :hasDaughter data:VictoriaLouise ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :isAncestorOf data:PrincessFrederica,
+        data:VictoriaLouise ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:VictoriaLouise ;
+    :isParentOf data:VictoriaLouise ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:VictoriaLouise .
+
+data:ErnestAugustusOfHanover a :Ancestor,
+        :Man ;
+    :hasBrother data:ErnestAugustusOfHanover ;
+    :hasChild data:ErnestAugustus,
+        data:PrincePaul ;
+    :hasRelation data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSon data:ErnestAugustus,
+        data:PrincePaul ;
+    :isAncestorOf data:ErnestAugustus,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica ;
+    :isBloodrelationOf data:ErnestAugustusOfHanover ;
+    :isBrotherOf data:ErnestAugustusOfHanover ;
+    :isFatherOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isParentOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isSiblingOf data:ErnestAugustusOfHanover ;
+    :isUncleOf data:ErnestAugustus,
+        data:PrincePaul .
+
+data:PrincessThyra a :Ancestor,
+        :Woman ;
+    :hasChild data:ErnestAugustus,
+        data:PrincePaul ;
+    :hasRelation data:ErnestAugustus,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSister data:PrincessThyra ;
+    :hasSon data:ErnestAugustus,
+        data:PrincePaul ;
+    :isAncestorOf data:ErnestAugustus,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica ;
+    :isAuntOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isBloodrelationOf data:PrincessThyra ;
+    :isMotherOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isParentOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isSiblingOf data:PrincessThyra ;
+    :isSisterOf data:PrincessThyra .
+
+data:Christian a :Man ;
+    :hasBrother data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :isBloodrelationOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isBrotherOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isSiblingOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isUncleOf data:PrinceErnestAugustus,
+        data:PrincessFrederica .
+
+data:George a :Man ;
+    :hasBrother data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :isBloodrelationOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isBrotherOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isSiblingOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isUncleOf data:PrinceErnestAugustus,
+        data:PrincessFrederica .
+
+data:VictoriaLouise a :Ancestor,
+        :Woman ;
+    :hasAncestor data:WilhelmII ;
+    :hasChild data:PrincessFrederica ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasFather data:WilhelmII ;
+    :hasParent data:WilhelmII ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSister data:VictoriaLouise ;
+    :isAncestorOf data:PrincessFrederica ;
+    :isAuntOf data:PrincessFrederica ;
+    :isBloodrelationOf data:VictoriaLouise ;
+    :isChildOf data:WilhelmII ;
+    :isDaughterOf data:WilhelmII ;
+    :isMotherOf data:PrincessFrederica ;
+    :isParentOf data:PrincessFrederica ;
+    :isSiblingOf data:VictoriaLouise ;
+    :isSisterOf data:VictoriaLouise .
+
+data:PrinceErnestAugustus a :Man ;
+    :hasAncestor data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:PrincePaul,
+        data:PrincessThyra ;
+    :hasBrother data:PrinceErnestAugustus ;
+    :hasFather data:ErnestAugustus,
+        data:PrincePaul ;
+    :hasParent data:ErnestAugustus,
+        data:PrincePaul ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isBrotherOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustus,
+        data:PrincePaul ;
+    :isSiblingOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isSonOf data:ErnestAugustus,
+        data:PrincePaul .
+
+data:PrincessFrederica a :Woman ;
+    :hasAncestor data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:PrincePaul,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasBrother data:PrinceErnestAugustus ;
+    :hasFather data:ErnestAugustus,
+        data:PrincePaul ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:VictoriaLouise ;
+    :hasParent data:ErnestAugustus,
+        data:PrincePaul,
+        data:VictoriaLouise ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSister data:PrincessFrederica ;
+    :isBloodrelationOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isChildOf data:ErnestAugustus,
+        data:PrincePaul,
+        data:VictoriaLouise ;
+    :isDaughterOf data:ErnestAugustus,
+        data:PrincePaul,
+        data:VictoriaLouise ;
+    :isSiblingOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isSisterOf data:PrinceErnestAugustus,
+        data:PrincessFrederica .
+
+data:PrincePaul a :Ancestor,
+        :Man ;
+    :hasAncestor data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :hasBrother data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :hasChild data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:PrincessThyra ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:PrincessThyra ;
+    :hasSon data:PrinceErnestAugustus ;
+    :isAncestorOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isBloodrelationOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isBrotherOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :isFatherOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isParentOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isSiblingOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :isUncleOf data:PrinceErnestAugustus,
+        data:PrincessFrederica .
+
+data:ErnestAugustus a :Ancestor,
+        :Man ;
+    :hasAncestor data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :hasChild data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :hasDaughter data:PrincessFrederica ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:PrincessThyra ;
+    :hasParent data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :hasRelation data:Christian,
+        data:ErnestAugustus,
+        data:ErnestAugustusOfHanover,
+        data:George,
+        data:PrinceErnestAugustus,
+        data:PrincePaul,
+        data:PrincessFrederica,
+        data:PrincessThyra,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasSon data:PrinceErnestAugustus ;
+    :isAncestorOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isBloodrelationOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isBrotherOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isChildOf data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :isFatherOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isParentOf data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :isSiblingOf data:Christian,
+        data:ErnestAugustus,
+        data:George,
+        data:PrincePaul ;
+    :isSonOf data:ErnestAugustusOfHanover,
+        data:PrincessThyra ;
+    :isUncleOf data:PrinceErnestAugustus,
+        data:PrincessFrederica .
+

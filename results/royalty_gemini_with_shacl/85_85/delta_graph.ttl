@@ -2,41 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:VictoriaMarieEsmeMargarita a :Person,
-        :Woman ;
-    :hasBirthYear 1991 ;
-    :isDaughterOf data:DesmondDeSilva,
-        data:Katarina .
-
-data:DesmondDeSilva a :Ancestor,
-        :Man,
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
         :Person .
 
-data:George a :Man,
-        :Person .
-
-data:Katarina a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1959 ;
-    :hasBrother data:George,
-        data:Michael,
-        data:NikolaOfYugoslavia ;
-    :hasFather data:TomislavOfYugoslavia ;
-    :hasMarriageYear 1987 ;
-    :hasMother data:MargaritaOfBaden .
-
-data:MargaritaOfBaden a :Ancestor,
-        :Person,
+data:Elizabeth_II a :Person,
         :Woman .
 
-data:Michael a :Man,
+data:Katarina_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:George_of_Yugoslavia,
+        data:Michael_of_Yugoslavia,
+        data:Nikola_of_Yugoslavia ;
+    :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+    :hasFather data:Tomislav_of_Yugoslavia ;
+    :hasMarriageYear data:Desmond_de_Silva,
+        1987 ;
+    :hasMother data:Margarita_of_Baden .
+
+data:George_of_Yugoslavia a :Man,
         :Person .
 
-data:NikolaOfYugoslavia a :Man,
+data:Margarita_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Theodora_Margravine_of_Baden ;
+    :hasSex data:Female .
+
+data:Michael_of_Yugoslavia a :Man,
         :Person .
 
-data:TomislavOfYugoslavia a :Ancestor,
+data:Nikola_of_Yugoslavia a :Man,
+        :Person .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Theodora_Margravine_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasSex data:Female .
+
+data:Tomislav_of_Yugoslavia a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
+
+data:Victoria_Marie_Esme_Margarita a :Person,
+        :Woman ;
+    :hasFather data:Desmond_de_Silva .
+
+data:Desmond_de_Silva a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

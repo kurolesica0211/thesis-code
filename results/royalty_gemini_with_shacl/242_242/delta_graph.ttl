@@ -2,35 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ana_Luna_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-    :hasMother data:Maria_da_Gloria .
+data:Princess_Marie_Alexandra_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Prince_Maximilian_of_Baden ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasRelation data:Prince_Wolfgang_of_Hesse .
 
-data:Marija a :Woman ;
-    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Danica_Marinkovi%C4%87 .
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person .
 
-data:Sol_Mar%C3%ADa_de_la_Blanca_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-    :hasMother data:Maria_da_Gloria .
+data:Grand_Duchess_Maria_Nikolaevna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1876 .
 
-data:Stefan a :Man ;
-    :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Danica_Marinkovi%C4%87 .
+data:Maximilian_Duke_of_Leuchtenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1852 .
 
-data:Alexander_%28Crown_Prince%29 a :Ancestor,
-        :Man .
+data:Prince_Maximilian_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Prince_Wilhelm_of_Baden ;
+    :hasMother data:Princess_Maria_Maximilianovna_of_Leuchtenberg .
 
-data:Peter a :Man .
+data:Prince_Wilhelm_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1829 ;
+    :hasDeathYear 1897 .
 
-data:Danica_Marinkovi%C4%87 a :Ancestor,
-        :Woman .
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 .
 
-data:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
-        :Man ;
-    :hasBirthYear 1982 ;
-    :hasBrother data:Peter ;
-    :hasFather data:Alexander_%28Crown_Prince%29 ;
-    :hasMother data:Maria_da_Gloria .
+data:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1841 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasMother data:Grand_Duchess_Maria_Nikolaevna .
 
-data:Maria_da_Gloria a :Ancestor,
-        :Woman .
+data:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
 

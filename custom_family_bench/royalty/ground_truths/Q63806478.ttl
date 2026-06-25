@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Elizabeth_Cator a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Elizabeth_Cator a :Person ;
     rdfs:label "Elizabeth Cator" ;
     data:posIndicesFull "527:551" ;
     data:posIndicesPart "621:626",
@@ -21,16 +18,19 @@ data:Elizabeth_Cator a :Ancestor,
         "Elizabeth Margaret Cator" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "173:191",
+        "179:191" ;
+    data:posIndicesPart "663:672" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Michael_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Michael_Bowes-Lyon a :Person ;
     rdfs:label "Michael Bowes-Lyon" ;
     data:posIndicesFull "0:34" ;
     data:posIndicesPart "204:209",
@@ -51,49 +51,15 @@ data:Michael_Bowes-Lyon a :Ancestor,
     :alsoKnownAs "Hon. Michael Bowes-Lyon",
         "Hon. Michael Claude Hamilton Bowes-Lyon",
         "Michael Claude Hamilton Bowes-Lyon" ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II .
+    :hasSex data:male .
 
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George VI" ;
-    data:posIndicesFull "686:713" ;
-    data:wdtLink wdt:Q280856 ;
-    :alsoKnownAs "Albert Frederick Arthur George",
-        "Albert Frederick Arthur George Windsor",
-        "Albert Windsor",
-        "Bertie",
-        "George Windsor",
-        "H.M. King George VI",
-        "Industrial Prince",
-        "King George VI",
-        "Prince Albert Frederick Arthur George of Cornwall and York",
-        "Prince Albert Frederick Arthur George of Wales",
-        "Prince Albert Frederick Arthur George of York",
-        "Prince Albert Frederick Arthur George, Duke of York",
-        "Prince Albert of Cornwall and York",
-        "Prince Albert of Wales",
-        "Prince Albert of York",
-        "Prince Albert, Duke of York",
-        "The Prince Albert Frederick Arthur George of the United Kingdom",
-        "The Prince Albert Frederick Arthur George, Duke of York",
-        "The Prince Albert of the United Kingdom",
-        "The Prince Albert, Duke of York" ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:male ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "118:133",
         "134:150",
@@ -114,34 +80,9 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:Michael_Bowes-Lyon ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Michael_Bowes-Lyon ;
-    :isSisterOf data:Michael_Bowes-Lyon .
+    :hasSex data:female .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "173:191",
-        "179:191" ;
-    data:posIndicesPart "663:672" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasFather data:George_VI ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :isChildOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother .
+data:male a :Male .
+
+data:female a :Female .
 

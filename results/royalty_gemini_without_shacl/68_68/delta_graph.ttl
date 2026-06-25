@@ -2,28 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Augustus_of_Saxe-Weimar-Eisenach a :Man ;
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :isMotherOf data:Charles_Augustus .
+
+data:Maud_von_Tr%C3%BCtzschler a :Person,
+        :Woman ;
+    :isMotherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Othmar_Baron_von_Wangenheim-Winterstein a :Man,
+        :Person ;
+    :isFatherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+data:Wilhelm_Ernst a :Man,
+        :Person ;
+    :isFatherOf data:Charles_Augustus .
+
+data:Michael a :Man,
+        :Person .
+
+data:Charles_Augustus a :Man,
+        :Person ;
     :hasBirthYear 1912 ;
     :hasDeathYear 1988 ;
-    :hasFather data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
     :hasMarriageYear 1944 ;
-    :hasMother data:Feodora_of_Saxe-Meiningen ;
     :hasRelation data:Elisabeth_of_Wangenheim-Winterstein ;
-    :isFatherOf data:Michael_of_Saxe-Weimar-Eisenach .
+    :isFatherOf data:Michael .
 
-data:Elisabeth_of_Wangenheim-Winterstein a :Woman ;
+data:Elisabeth_of_Wangenheim-Winterstein a :Person,
+        :Woman ;
     :hasBirthYear 1912 ;
-    :hasDeathYear 2010 ;
-    :hasFather data:Othmar_von_Wangenheim-Winterstein ;
-    :hasMother data:Maud_von_Tr%C3%BCtzschler .
-
-data:Feodora_of_Saxe-Meiningen a :Woman .
-
-data:Maud_von_Tr%C3%BCtzschler a :Woman .
-
-data:Michael_of_Saxe-Weimar-Eisenach a :Man .
-
-data:Othmar_von_Wangenheim-Winterstein a :Man .
-
-data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man .
+    :hasDeathYear 2010 .
 

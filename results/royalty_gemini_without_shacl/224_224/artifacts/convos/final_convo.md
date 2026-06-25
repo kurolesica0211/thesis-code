@@ -69,56 +69,145 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Princess Beatrix*
 
 
-The Count of ÉvreuxThe Countess of Évreux
+Princess Margriet*Pieter van Vollenhoven*
 
 
-Princess Béatrice
+Beatrix (Beatrix Wilhelmina Armgard, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Dutch pronunciation:  i; born 31 January 1938) is a member of the Dutch royal house who reigned as Queen of the Netherlands from 30 April 1980 until her abdication in 2013.
+Beatrix was born during the reign of her maternal grandmother, Queen Wilhelmina, and became heiress presumptive upon the accession of her mother, Queen Juliana, in 1948.
+Beatrix attended a public primary school in Canada during World War II, and then finished her primary and secondary education in the Netherlands in the post-war period.
+In 1966, Beatrix married Claus von Amsberg, a German diplomat, with whom she had three children.
+When her mother abdicated on 30 April 1980, Beatrix succeeded her as queen.
+Beatrix's reign saw the country's Caribbean territories reshaped with Aruba's secession and becoming its own constituent country within the kingdom in 1986.
+This was followed by the dissolution of the Netherlands Antilles in 2010, which created the new special municipalities of Bonaire, Sint Eustatius, and Saba, and the two new constituent countries of Curaçao and Sint Maarten.
+On Koninginnedag (Queensday), 30 April 2013, Beatrix abdicated in favour of her eldest son, Willem-Alexander.
+At the time of her abdication at age 75, Beatrix was the oldest reigning monarch in the country's history.
+Early life
+
+Princess Beatrix Wilhelmina Armgard was born on 31 January 1938 at Soestdijk Palace in Baarn, Netherlands, as the first child of Princess Juliana of the Netherlands and her husband, Prince Bernhard of Lippe-Biesterfeld.
+Beatrix was baptised on 12 May 1938 in the Great Church in The Hague.
+Her five godparents were King Leopold III of Belgium; Princess Alice, Countess of Athlone; Beatrix's maternal great-great-aunt Elisabeth, Princess of Erbach-Schönberg; her paternal great-uncle Duke Adolf Friedrich of Mecklenburg; and Countess Allene de Kotzebue.
+Beatrix's middle names are the first names of her grandmothers, Queen Wilhelmina of the Netherlands and Armgard, Princess of Lippe-Biesterfeld.
+When Beatrix was one year old, in 1939, her younger sister Princess Irene was born.
+World War II broke out in the Netherlands on 10 May 1940 (Westfeldzug).
+One month later, Beatrix went to Ottawa, Ontario, Canada, with her mother Juliana and her sister Irene, while her father Bernhard and maternal grandmother Queen Wilhelmina remained in London.
+While on Bigwin Island, the constitution of the Netherlands was stored in the safe of Bigwin Inn's rotunda building.
+Princess Juliana and her family were remembered for their "down to earth" friendliness, general gratefulness and great reverence for their homeland and people, to whom they paid homage by refraining from all luxuries offered to guests at the resort that was once billed as the largest and most luxurious summer resort in Canada.
+In the years following the shuttering and neglect of the island resort, the "Juliana" cottages were well maintained and preserved in an informal tribute to Princess Juliana and her family.
+In appreciation for the protection of her and her daughters, Princess Juliana established the custom of delivery to the Canadian government every spring of tulips, which is the centrepiece of the Canadian Tulip Festival.
+The second sister of Beatrix, Princess Margriet, was born in Ottawa in 1943.
+During their exile in Canada, Beatrix attended nursery and Rockcliffe Park Public School, a primary school where she was known as "Trixie Orange".
+On 5 May 1945, the German troops in the Netherlands surrendered.
+The family returned to the Netherlands on 2 August 1945.
+Beatrix went to the progressive primary school De Werkplaats in Bilthoven run by pacifist social reformers Kees Boeke and Beatrice Boeke-Cadbury.
+On 6 September 1948, her mother succeeded her grandmother Wilhelmina as Queen of the Netherlands.
+Since she had no brothers, Beatrix became the heiress presumptive to the Dutch throne at the age of ten.
+Education
+
+In April 1950, Princess Beatrix entered the Incrementum, a part of Baarnsch Lyceum, where, in 1956, she passed her school graduation examinations in the subjects of arts and classics.
+In 1954, Beatrix served as a bridesmaid at the wedding of Baroness van Randwijck and Mr. T Boey.
+On 31 January 1956, Beatrix celebrated her 18th birthday.
+From that date, under the Constitution of the Netherlands, she was entitled to assume the Royal Prerogative.
+In the course of her studies she also attended lectures on the cultures of Suriname and the Netherlands Antilles, the Charter for the Kingdom of the Netherlands, international affairs, international law, history and European law.
+Political involvement
+
+In 1965, Beatrix became engaged to the German aristocrat Claus von Amsberg, a diplomat working for the German Foreign Office.
+Prince Claus had served in the Hitler Youth and the Wehrmacht and therefore was easily associated with German Nazism.
+Protests included slogans like "Claus 'raus!"
+(Claus out!) and "Mijn fiets terug" ("Return my bicycle" – a reference to German soldiers confiscating Dutch bicycles during WWII).
+As time went on, Prince Claus became one of the most popular members of the Dutch monarchy.
+On 25 November 1975, Beatrix and Prince Claus attended the independence ceremony of Suriname, held in the new nation's capital, Paramaribo, representing her mother the Queen.
+As a monarch, Beatrix had weekly meetings with the prime minister.
+Beatrix is a member of the Bilderberg Group.
+Marriage and children
+
+Engagement to Claus
+
+On 28 June 1965, the engagement of Princess Beatrix to the German diplomat Claus von Amsberg was announced.
+Claus and Beatrix had met at the wedding-eve party of Princess Tatjana of Sayn-Wittgenstein-Berleburg and Moritz, Landgrave of Hesse, in summer 1964.
+After Parliament consented to the marriage, Claus von Amsberg became a Dutch citizen, and upon his marriage became Prince Claus of the Netherlands, Jonkheer van Amsberg.
+Wedding, 1966
+
+Beatrix married Claus von Amsberg on 10 March 1966 in civil and religious ceremonies.
+The senior bridesmaids were the bride's youngest sister, Princess Christina of the Netherlands; Princess Christina of Sweden; Lady Elizabeth Anson; Joanna Roëll; Eugénie Loudon; and the bridegroom's sister, Christina von Amsberg.
+The junior bridesmaids were Daphne Stewart-Clark and Carolijn Alting von Geusau, with page boys Joachim Jencquel and Markus von Oeynhausen-Sierstorpff.
+They lived at Drakensteyn Castle in Lage Vuursche with their children until Beatrix ascended the throne.
+Accession and inauguration
+
+From the 1970s, Beatrix began to prepare more intensively for her future position as head of state.
+She made many trips abroad with Prince Claus, including a controversial one to the Soviet Union.
+After the Lockheed affair, Beatrix and Claus began to delve into the royal household and made plans to adapt it.
+In addition, they asked advisers to prepare for Beatrix's reign.
+On 31 January 1980, the birthday of her eldest daughter and heiress presumptive, Queen Juliana announced during a live television speech that she wished to abdicate on 30 April in favor of her daughter Beatrix.
+That Beatrix would succeed her mother as queen was not a matter of course when she was born.
+It was only after it was clear that Juliana was biologically unable to have any more children, let alone a son, that Beatrix was certain that she was the intended successor.
+On 30 April 1980, Juliana abdicated, and Beatrix became the 13th member of the House of Orange to reign over the Netherlands.
+Reign
+
+Beatrix's constitutional duties included those typically accorded to a head of state; this includes having to sign every piece of legislation before it becomes law, formally appointing various officials, receiving and accrediting ambassadors, and awarding honours and medals, among others.
+Beatrix was rarely quoted directly in the press during her reign, for the government information service (Rijksvoorlichtingsdienst) made it a condition of interviews that she should not be quoted.
+It did not apply to her son Prince Willem-Alexander.
+Throughout much of her reign, Beatrix had a considerable role in the cabinet formation process; notably she appointed the informateur and formateur, the person who leads the negotiations that ultimately lead to the formation of a government.
+Beatrix was included in Andy Warhol's portrait series in 1985 as one of four Reigning Queens, alongside Elizabeth II, Margrethe II of Denmark and Ntfombi of Eswatini.
+On 1 January 1986, Aruba seceded from the Netherlands Antilles and became a separate constituent country within the Dutch Kingdom.
+Kissed by a bystander
+
+During 1988 Queen's Day, Queen Beatrix was kissed by a bystander, later identified as Maarten Rijkers, when she walked through the crowd of people at a flea market in the Jordaan.
+When Beatrix walked alongside Rijkers he said "Give me a kiss, girl", after which he gave her a hug and two kisses.
+Later years
+
+On 6 October 2002, the Queen's husband, Prince Claus, died after a long illness.
+On 8 February 2005, Beatrix received a rare honorary doctorate from Leiden University, an honour the Queen does not usually accept.
+Beatrix was to tie the prestigious medal to the standard of the incumbents of the 1st Independent Polish Parachute Brigade.
+On 30 April 2009, Beatrix and other members of the royal family were targeted in a car attack by a man named Karst Tates.
+Within hours, Beatrix made a rare televised address to express her shock and condolences.
+Abdication
+
+In a broadcast on national media on 28 January 2013, Beatrix announced her intention to abdicate on 30 April (Koninginnedag), when she would have been on the throne for exactly 33 years.
+Beatrix stated that it was time to "place the responsibility for the country in the hands of a new generation."
+Her heir apparent was her eldest son, Prince Willem-Alexander.
+The broadcast was followed by a statement from Prime Minister Mark Rutte who paid tribute to Beatrix, saying "Since her investiture in 1980, she has applied herself heart and soul to Dutch society."
+Post-abdication
+
+Beatrix continues to undertake some royal duties and is a patron of many organisations.
+Honorific eponyms
+
+Beatrix has given her name to a number of facilities in the Netherlands and beyond.
+These include:
 
 
-The Duke of OrléansThe Duchess of Orléans
+A few parks in the country also bear her name:
 
 
-The Dowager Countess of La Marche
+It has been speculated that Beatrix is De Onbekende Beeldhouwer (Unknown Sculptor), whose work has been appearing in Amsterdam since 1983.
+Titles, styles, honours and arms
 
+Princess Beatrix has held titles throughout her life, as a granddaughter or daughter of a monarch, and eventually as the Sovereign.
+Beatrix's official title was Her Majesty the Queen of the Netherlands, Princess of Orange-Nassau, etc., etc., etc.
+She signed official documents with only "Beatrix".
+Beatrix has received honours and awards from countries around the world, both during her life as a princess and as a monarch.
+From birth till her inauguration as queen, she had the following name and titles, to which she reverted after her abdication: Her Royal Highness Princess Beatrix of the Netherlands, Princess of Orange-Nassau, Princess of Lippe-Biesterfeld.
+Prime Ministers during her reign
 
-The Countess of Schönborn-Buchheim
+Notes
 
+References
 
-Princess Hélène, Countess of Limburg Stirum
+Books
 
+External links
 
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Charles Philippe Marie Louis d'Orléans (born 3 March 1973) is a member of the House of Orléans.
-He is the elder of two sons of Prince Michel d'Orléans and his former wife Béatrice Pasquier de Franclieu.
-His paternal grandfather was Prince Henri d'Orléans, the Orléanist pretender to the French throne.
-The couple's only child, Princess Isabelle d'Orléans, was born on 22 February 2012 in Lisbon, Portugal.
-Her godparents are Princess Maria Theodora zu Löwenstein-Wertheim-Freudenberg and Felipe VI of Spain (then Prince of Asturias).
-Charles-Philippe and Naomi-Valeska's child, Princess Élisabeth Victoire Jeanne Marie d'Orléans, was born on 15 April 2026 in Monaco.
-His acceptance of this role placed the order under the sanction of a dynastic prince of the House of Bourbon, in what is said to be a continuation of a tradition established since the 13th century when the Order of Saint Lazarus came under the protection of King Philippe le Bel.
-Title controversy
-
-On 8 December 2004, he received the title "Duke of Anjou" from his uncle Prince Henri d'Orléans, head of the House of Orléans.
-There is some controversy in the use of this title by an Orléans prince.
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +223,9 @@ There is some controversy in the use of this title by an Orléans prince.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +240,23 @@ There is some controversy in the use of this title by an Orléans prince.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +356,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +379,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +399,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +409,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +449,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,104 +548,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (430e33d2-adb6-45b2-b348-c6d5b28e82c2)
- Call ID: 430e33d2-adb6-45b2-b348-c6d5b28e82c2
+  AssignClass (b935bdb5-41e9-475f-915e-84dd01eaee87)
+ Call ID: b935bdb5-41e9-475f-915e-84dd01eaee87
   Args:
-    type: :Man
-    source: Charles_Philippe_d_Orleans
-  AssignClass (88a47082-7503-4bda-873b-12af2a0a11df)
- Call ID: 88a47082-7503-4bda-873b-12af2a0a11df
-  Args:
-    source: Michel_d_Orleans
-    type: :Man
-  AssignClass (449f9c56-d4db-459d-a81f-b3d5875380aa)
- Call ID: 449f9c56-d4db-459d-a81f-b3d5875380aa
-  Args:
-    source: Beatrice_Pasquier_de_Franclieu
+    source: Beatrix
     type: :Woman
-  AssignClass (ba94746a-899e-4474-a39b-98a217117f1e)
- Call ID: ba94746a-899e-4474-a39b-98a217117f1e
+  AssignClass (81aa3f62-270b-4bf9-95d5-eed7fdbea8b0)
+ Call ID: 81aa3f62-270b-4bf9-95d5-eed7fdbea8b0
   Args:
-    type: :Man
-    source: Henri_d_Orleans
-  AssignClass (36aade62-da7d-43ad-9eaa-1f798b687df2)
- Call ID: 36aade62-da7d-43ad-9eaa-1f798b687df2
+    type: :Person
+    source: Beatrix
+  AddLiteral (0f559074-da82-440c-825b-afaa403ca64f)
+ Call ID: 0f559074-da82-440c-825b-afaa403ca64f
   Args:
-    source: Isabelle_d_Orleans
-    type: :Woman
-  AssignClass (81b3e1af-38cc-4ca0-b709-96098b1fba27)
- Call ID: 81b3e1af-38cc-4ca0-b709-96098b1fba27
-  Args:
-    type: :Woman
-    source: Naomi-Valeska
-  AssignClass (e771b8ca-d74c-4ecb-b82f-a00e1c42fdd5)
- Call ID: e771b8ca-d74c-4ecb-b82f-a00e1c42fdd5
-  Args:
-    type: :Woman
-    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
-  AddLiteral (2ffc43c4-4088-4cd2-b4e7-f90212f2bf38)
- Call ID: 2ffc43c4-4088-4cd2-b4e7-f90212f2bf38
-  Args:
-    source: Charles_Philippe_d_Orleans
-    relation: :hasBirthYear
-    literal_value: 1973
-    literal_type: xsd:integer
-  AddTriple (1f2bb4e1-db23-4f5d-9547-e099e3621be3)
- Call ID: 1f2bb4e1-db23-4f5d-9547-e099e3621be3
-  Args:
-    relation: :hasFather
-    source: Charles_Philippe_d_Orleans
-    target: Michel_d_Orleans
-  AddTriple (a9144c89-3536-454e-98da-565a82c8ad34)
- Call ID: a9144c89-3536-454e-98da-565a82c8ad34
-  Args:
-    target: Beatrice_Pasquier_de_Franclieu
-    source: Charles_Philippe_d_Orleans
-    relation: :hasMother
-  AddTriple (4583a7b7-5e5b-4898-adae-77def5954cc5)
- Call ID: 4583a7b7-5e5b-4898-adae-77def5954cc5
-  Args:
-    source: Charles_Philippe_d_Orleans
-    relation: :hasFather
-    target: Henri_d_Orleans
-  AddTriple (625ab4dd-2eb1-43be-9f95-717619f8594f)
- Call ID: 625ab4dd-2eb1-43be-9f95-717619f8594f
-  Args:
-    target: Charles_Philippe_d_Orleans
-    relation: :hasFather
-    source: Isabelle_d_Orleans
-  AddTriple (f4b77643-e970-4ca9-8212-badd41350c97)
- Call ID: f4b77643-e970-4ca9-8212-badd41350c97
-  Args:
-    relation: :hasMother
-    source: Isabelle_d_Orleans
-    target: Beatrice_Pasquier_de_Franclieu
-  AddLiteral (f970f338-d765-4954-bbc3-4388fdb350a2)
- Call ID: f970f338-d765-4954-bbc3-4388fdb350a2
-  Args:
-    source: Isabelle_d_Orleans
-    literal_value: 2012
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (11dda2eb-3cf1-4b21-9497-8b575f3be885)
- Call ID: 11dda2eb-3cf1-4b21-9497-8b575f3be885
-  Args:
-    relation: :hasFather
-    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
-    target: Charles_Philippe_d_Orleans
-  AddTriple (f8983f3a-38dd-4344-8d9c-50ff2007b474)
- Call ID: f8983f3a-38dd-4344-8d9c-50ff2007b474
-  Args:
-    target: Naomi-Valeska
-    relation: :hasMother
-    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
-  AddLiteral (39c6f6c9-6baa-4ddc-9256-5d5fb7272d17)
- Call ID: 39c6f6c9-6baa-4ddc-9256-5d5fb7272d17
-  Args:
+    literal_value: 1938
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 2026
-    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
-  Finish (facdb5b8-564f-44ad-a123-3f89eea13744)
- Call ID: facdb5b8-564f-44ad-a123-3f89eea13744
+    source: Beatrix
+  AssignClass (3f9153a0-943d-4318-9258-ac73cef2df38)
+ Call ID: 3f9153a0-943d-4318-9258-ac73cef2df38
+  Args:
+    source: Juliana
+    type: :Woman
+  AssignClass (577d8c8c-6bd1-4ff0-a770-6aaf1e190bb6)
+ Call ID: 577d8c8c-6bd1-4ff0-a770-6aaf1e190bb6
+  Args:
+    type: :Person
+    source: Juliana
+  AddTriple (0afecd6e-0295-483b-9ed0-86e085184c26)
+ Call ID: 0afecd6e-0295-483b-9ed0-86e085184c26
+  Args:
+    relation: :hasMother
+    target: Juliana
+    source: Beatrix
+  AssignClass (3f3e99c9-698f-4d8a-9af2-a0dbc7caca11)
+ Call ID: 3f3e99c9-698f-4d8a-9af2-a0dbc7caca11
+  Args:
+    source: Bernhard
+    type: :Man
+  AssignClass (50a559b3-8b5a-4f9d-a753-71a6e949a54f)
+ Call ID: 50a559b3-8b5a-4f9d-a753-71a6e949a54f
+  Args:
+    type: :Person
+    source: Bernhard
+  AddTriple (ec0eba4d-c558-4890-ac2c-372dadcf932c)
+ Call ID: ec0eba4d-c558-4890-ac2c-372dadcf932c
+  Args:
+    source: Beatrix
+    target: Bernhard
+    relation: :hasFather
+  AssignClass (ba045db8-4283-405f-a716-bdc1a796235b)
+ Call ID: ba045db8-4283-405f-a716-bdc1a796235b
+  Args:
+    source: Irene
+    type: :Woman
+  AssignClass (bbb03648-f9d2-461c-95f0-6ccf820d889c)
+ Call ID: bbb03648-f9d2-461c-95f0-6ccf820d889c
+  Args:
+    source: Irene
+    type: :Person
+  AddTriple (dee34df5-c859-4ff4-b38c-b8779fc66bc2)
+ Call ID: dee34df5-c859-4ff4-b38c-b8779fc66bc2
+  Args:
+    source: Beatrix
+    target: Irene
+    relation: :hasSister
+  AssignClass (a4ef2009-9490-424c-9478-9be06a071c57)
+ Call ID: a4ef2009-9490-424c-9478-9be06a071c57
+  Args:
+    source: Margriet
+    type: :Woman
+  AssignClass (ed4f7f59-c09d-454c-92ef-991f4e9c0fb8)
+ Call ID: ed4f7f59-c09d-454c-92ef-991f4e9c0fb8
+  Args:
+    type: :Person
+    source: Margriet
+  AddTriple (9191660e-2c81-40d1-91fb-2851f617c7ca)
+ Call ID: 9191660e-2c81-40d1-91fb-2851f617c7ca
+  Args:
+    target: Margriet
+    relation: :hasSister
+    source: Beatrix
+  AssignClass (f7482f1c-cf00-4aba-8c33-e0cfb4df57ee)
+ Call ID: f7482f1c-cf00-4aba-8c33-e0cfb4df57ee
+  Args:
+    source: Claus_von_Amsberg
+    type: :Man
+  AssignClass (3561246e-3268-4d40-aa0f-31919d54593d)
+ Call ID: 3561246e-3268-4d40-aa0f-31919d54593d
+  Args:
+    source: Claus_von_Amsberg
+    type: :Person
+  AddTriple (2f9210c6-1a8e-4007-b80c-f29d9f4e4fe4)
+ Call ID: 2f9210c6-1a8e-4007-b80c-f29d9f4e4fe4
+  Args:
+    source: Beatrix
+    relation: :hasRelation
+    target: Claus_von_Amsberg
+  AddLiteral (67268a82-e49f-460a-b66b-a1548c11f733)
+ Call ID: 67268a82-e49f-460a-b66b-a1548c11f733
+  Args:
+    source: Beatrix
+    relation: :hasMarriageYear
+    literal_value: 1966
+    literal_type: xsd:integer
+  AssignClass (477d3427-9a6b-4003-8016-24925ea3cbb7)
+ Call ID: 477d3427-9a6b-4003-8016-24925ea3cbb7
+  Args:
+    type: :Man
+    source: Willem-Alexander
+  AssignClass (a6b30c6d-1944-4344-9584-b71a54c2b88e)
+ Call ID: a6b30c6d-1944-4344-9584-b71a54c2b88e
+  Args:
+    type: :Person
+    source: Willem-Alexander
+  AddTriple (5919a20e-8898-4273-863c-6ebc1c6a5437)
+ Call ID: 5919a20e-8898-4273-863c-6ebc1c6a5437
+  Args:
+    source: Willem-Alexander
+    relation: :hasMother
+    target: Beatrix
+  Finish (3a784518-7a63-45fb-ac60-9f60ef7861ce)
+ Call ID: 3a784518-7a63-45fb-ac60-9f60ef7861ce
   Args:

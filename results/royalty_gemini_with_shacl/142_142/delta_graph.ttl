@@ -2,33 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:MariaPavlovnaOfRussia a :Ancestor,
-        :Person,
+data:Cristina a :Person,
         :Woman ;
-    :hasBirthYear 1854 ;
-    :hasDeathYear 1920 ;
-    :hasFather data:FriedrichFranzIIOfMecklenburgSchwerin ;
-    :hasMarriageYear 1874 ;
-    :hasMother data:AugustaReussOfKostritz ;
-    :hasRelation data:VladimirAlexandrovichOfRussia ;
-    :hasSex data:Female .
+    :hasBirthYear 1965 ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMarriageYear 1997 ;
+    :hasMother data:Sofia .
 
-data:AugustaReussOfKostritz a :Ancestor,
-        :Person,
+data:Elena a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia .
 
-data:FriedrichFranzIIOfMecklenburgSchwerin a :Ancestor,
-        :Man,
+data:Felipe_VI a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia .
 
-data:VladimirAlexandrovichOfRussia a :Ancestor,
+data:Inaki_Urdangarin a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Sofia a :Ancestor,
+        :Person,
+        :Woman .
 

@@ -121,10 +121,8 @@ By tradition, Danish kings were alternately named either Frederik or Christian.
 She chose to maintain this by assuming the position of a Christian, and thus named her elder son Frederik.
 In 1974, she and Henrik purchased Château de Cayx in the wine district of Cahors in Southern France.
 Among others, Margrethe is the godmother of King Willem-Alexander of the Netherlands, Crown Prince Haakon of Norway and Prince Carl Philip of Sweden as well as actress Ellen Hillingsø and politician Marcus Knuth.
-She is a close personal friend of Queen Sonja of Norway with whom she shares a love of the arts.
 Margrethe announced in 2008 that her male-line descendants would bear the additional title of Count or Countess of Monpezat in recognition of her husband's ancestry.
 In 2022, the Queen announced that, from the start of 2023, the descendants of Prince Joachim will only be able to use their titles of Count and Countess of Monpezat, their previous titles of Prince and Princess of Denmark ceasing to exist.
-To allow the children, who were never expected to hold an official role within the royal family, to have normal lives, the Queen wanted "to create a framework for the four grandchildren, to a much greater degree, to be able to shape their own existence without being limited by the special considerations and obligations that a formal affiliation with the Royal House as an institution implies".
 Her son, Joachim, daughter-in-law, Marie, former daughter-in-law, Alexandra, and eldest grandson, Nikolai, publicly expressed shock and confusion because of the decision, after which Margrethe released a statement in which she said that it saddened her that she had upset Joachim's family.
 Along with her late husband, Margrethe has kept dachshunds since the 1970s.
 As of April 2026, she has one dog, the dachshund Tilia, who was Prince Henrik's dog until his death in 2018 (her own dog, Helike, passed away the same year).
@@ -138,13 +136,7 @@ She ascended the throne on Frederik's death on 14 January, becoming the first fe
 The following day, Prime Minister Jens Otto Krag led her formal proclamation ceremony from the balcony of Christiansborg Palace, in which she also announced her royal motto as "God's help, the love of the people, Denmark's strength" (Danish: Guds hjælp, folkets kærlighed, Danmarks styrke).
 Her regnal number was chosen in recognition of Margrethe I, the 14th-century queen regnant of the Kalmar Union.
 As queen, she relinquished all the monarch's former titles except the title to Denmark, hence her style "By the Grace of God, Queen of Denmark" (Danish: Margrethe den Anden, af Guds Nåde Danmarks Dronning).
-Constitutional role
-
-The Queen's main tasks were to represent the kingdom abroad and to be a unifying figure at home.
 As a constitutional sovereign, Margrethe took no part in party politics and does not express any political opinions.
-The Queen held a meeting with the prime minister and the foreign affairs minister every Wednesday, unless either she or the prime minister was outside of the kingdom.
-After an election where the incumbent prime minister does not have a majority behind him or her, the Queen held a "Dronningerunde" (Queen's meeting) in which she met the chairmen of each of the Danish political parties.
-Once the government had been formed, the Queen formally appointed it.
 In practice, nearly all of the Queen's formal powers were exercised by the Cabinet of Denmark.
 It was customary for Margrethe, as the Danish monarch, to host the annual New Year levées.
 Every year on 1 January, a banquet was held for the government, the Speaker of the Danish Parliament, representatives of official Denmark and the Royal Court at Christian VIII's Palace at Amalienborg.
@@ -167,8 +159,6 @@ In an interview within the 2016 book De dybeste rødder (The Deepest Roots), acc
 Silver, Ruby and Golden Jubilees
 
 Margrethe marked her Silver Jubilee in 1997 with a religious service and a gala dinner attended by fellow Scandinavian royals.
-The Queen's Golden Jubilee was marked on 14 January 2022, with celebrations to take place later in the year.
-In September, following the death of Queen Elizabeth II of the United Kingdom, it was announced by the Royal House that it was "Her Majesty The Queen's wish that a number of adjustments be made" to the upcoming celebrations.
 Between Elizabeth II's death and her abdication, Margrethe was Europe's longest-reigning monarch, the world's only queen regnant, and the longest-serving incumbent female head of state.
 Sitting reign record
 
@@ -176,7 +166,6 @@ In July 2023, the Danish Royal House recognized Margrethe II as Denmark's longes
 Though Christian IV reigned for more than 59 years between 1588 and 1648, he was not officially installed until 1596, ruling with a "guardian government" up until then.
 , Margrethe announced her abdication, which took place on 14 January 2024, the 52nd anniversary of her accession to the throne.
 Margrethe's elder son, Frederik, assumed the throne as Frederik X. Mirroring her first New Year Address in 1973, she said of the succession: "The support and assistance which I have received throughout the years, have been crucial to the success of my task.
-It is my hope that the new King and Queen will be met with the same trust and devotion which have fallen to my lot.
 "
 
 
@@ -187,13 +176,8 @@ In October 2025, Margrethe undertook her first official visit abroad after her a
 Health issues
 
 Queen Margrethe II has had a number of health issues.
-On 9 February 2022, the Danish court disclosed in a press release that the Queen had contracted COVID-19.
-On 13 February, the Queen was able to leave home isolation after having had a mild case of the virus.
 On 21 September 2022, the Danish Royal House disclosed in a press release that Margrethe had tested positive for COVID-19 a second time after attending the state funeral of Elizabeth II, her third cousin, in London.
-On 22 February 2023, the Queen underwent "major back surgery" at Rigshospitalet due to continued back pain.
-In a statement the following day, a representative for the Queen said that the surgery had gone well and that she had already been up for a walk.
 Margrethe has been a chain smoker and was well known for her tobacco habit.
-On 23 November 2006, the Danish newspaper B.T. printed an announcement from the Royal Court that the Queen would henceforth smoke only in private.
 In 2023, the Court confirmed that Margrethe had quit smoking in connection with her back surgery the same year.
 Public image and style
 
@@ -202,7 +186,6 @@ Margrethe wears designs by former Pierre Balmain designer Erik Mortensen, Jørge
 
 
 A 2012 poll showed support for the monarchy in Denmark remained consistently high at around 82%, compared to less than half when she acceded to the throne in 1972.
-The Queen has been depicted on the annual christmas seal twice—as a child in 1942 and following her accession to the throne in 1972.
 Margrethe was included in Andy Warhol's portrait series in 1985 as one of four Reigning Queens, along with queens Ntfombi of Eswatini, Elizabeth II and Beatrix of the Netherlands.
 Tributes
 
@@ -216,7 +199,6 @@ Margrethe has maintained avid engagement with the creative arts throughout her r
 Archaeology
 
 Margrethe is known for her strong archaeological passion and has participated in several excavations, including in Italy, Egypt, Denmark, Sudan and South America.
-In 1952, she visited the archaeological site at Illerup Ådal with her paternal grandmother, Queen Alexandrine, which was her first visit to an excavation site.
 She shared this interest with her grandfather, Gustaf VI Adolf of Sweden, with whom she visited multiple archaeological digs, among them in Etruria in 1962.
 In the 2019 biography Dronning Margrethe, Margrethe revealed that if she hadn't been destined to become queen, she would have "tried to become an archaeologist".
 Church textiles
@@ -229,15 +211,12 @@ Découpage
 
 Since the mid-1970s, Margrethe has been using the découpage technique, which involves combining clippings from periodicals and books for new motifs.
 The découpage often references literary, mythological, or art-historical topics, and is often displayed in royal palaces, particularly Christian VII's Palace at Amalienborg.
-Sealed with a protective lacquer, the Queen's découpage works generally have references to literary, mythological or art-historical topics.
 Margrethe's découpage works have also been used in various books and films, including Prince Henrik's poetry collections Cantabile (2000) and Frihjul (2010).
 Embroidery
 
 As a child, Margrethe preferred drawing rather than needlework, but since 1960, numerous embroideries have been presented as gifts or used in the Queen's own rooms.
 The embroideries are made from patterns that Margrethe herself creates on graph paper, which includes twining shapes and the recipient's monogram.
-The Queen has designed several embroideries for the Danish Handcraft Guild, including patterns for calendars, cushion covers and dinner mats.
 Margrethe has also designed evening bags and spectacle cases for friends and family members, including Christmas calendars for all of the grandchildren, cushion covers and furniture covers for the palaces, and fireplace screens for Fredensborg Palace.
-The Queen's private embroideries were exhibited at Koldinghus Castle in 2021.
 Films
 
 The Queen has worked as a screenwriter alongside Per Brink Abrahamsen on the two Hans Christian Andersen adaptations The Snow Queen  from 2000 and The Wild Swans  from 2009.
@@ -252,7 +231,6 @@ She has also designed her own personal monogram; the personal monograms of her s
 Scenography and costume design
 
 Over the years, Margrethe has become involved in ballet as a scenographer and costume designer.
-The Queen designed 51 costumes for the 2023 film Ehrengard: The Art of Seduction as well as 81 découpages that were the basis for the sets.
 Margrethe has designed sets and costumes for numerous ballets.
 Since 2001, she has worked with the Tivoli Ballet Theatre:
 
@@ -264,7 +242,6 @@ Visual art
 
 Margrethe is an accomplished painter and has exhibited many of her works over the years.
 In 2000, she illustrated Prince Henrik's poetry collection Cantabile.
-Under the title From mountains to coast, she and her close friend, Queen Sonja of Norway, exhibited selected works inspired by nature at the Barony Rosendal in 2015.
 Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe and the former made up of her secondary names Ingrid, Alexandrine and Þórhildur), her illustrations were used for Danish editions of The Lord of the Rings, which she was encouraged to illustrate in the early 1970s.
 
 
@@ -272,6 +249,8 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -287,39 +266,9 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -334,6 +283,23 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -351,6 +317,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -418,29 +399,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -449,6 +422,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -461,6 +442,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -469,17 +452,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -507,6 +492,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -522,198 +591,200 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8b1e00d4-ae1e-4460-93d7-829d4d5d57ec)
- Call ID: 8b1e00d4-ae1e-4460-93d7-829d4d5d57ec
+  AssignClass (6ada9083-d730-4651-a89e-dce5f4e3b97e)
+ Call ID: 6ada9083-d730-4651-a89e-dce5f4e3b97e
+  Args:
+    type: :Person
+    source: :Margrethe_II
+  AssignClass (c46b82da-f2f9-46e9-b5a8-834bb3e850d4)
+ Call ID: c46b82da-f2f9-46e9-b5a8-834bb3e850d4
   Args:
     type: :Woman
-    source: Margrethe_II
-  AssignClass (292ccdd8-a292-43d3-8282-045b7901a85a)
- Call ID: 292ccdd8-a292-43d3-8282-045b7901a85a
+    source: :Margrethe_II
+  AddLiteral (cce9e2aa-dde2-45cd-b3b3-606562128198)
+ Call ID: cce9e2aa-dde2-45cd-b3b3-606562128198
   Args:
-    source: Margrethe_II
-    type: :Person
-  AddLiteral (14156179-860c-4f63-a4e9-70f505535dab)
- Call ID: 14156179-860c-4f63-a4e9-70f505535dab
+    relation: :knownAs
+    literal_value: Margrethe Alexandrine Þórhildur Ingrid
+    literal_type: xsd:string
+    source: :Margrethe_II
+  AddLiteral (de4ee34b-432c-4235-959c-454b32dbce58)
+ Call ID: de4ee34b-432c-4235-959c-454b32dbce58
   Args:
-    literal_type: xsd:integer
-    literal_value: 1940
-    source: Margrethe_II
+    source: :Margrethe_II
+    literal_type: xsd:string
+    literal_value: Daisy
+    relation: :alsoKnownAs
+  AddLiteral (0504c667-021b-45d0-8c28-8d4e83628c6f)
+ Call ID: 0504c667-021b-45d0-8c28-8d4e83628c6f
+  Args:
     relation: :hasBirthYear
-  AssignClass (4920f4b0-77fb-4dea-9c13-5fa84ed96f69)
- Call ID: 4920f4b0-77fb-4dea-9c13-5fa84ed96f69
-  Args:
-    type: :Man
-    source: Frederik_IX
-  AssignClass (1bb1d006-a6e3-41ce-94a8-06f78b41d77d)
- Call ID: 1bb1d006-a6e3-41ce-94a8-06f78b41d77d
-  Args:
-    source: Frederik_IX
-    type: :Person
-  AssignClass (837eff99-109f-42ac-a127-62aff9f3420e)
- Call ID: 837eff99-109f-42ac-a127-62aff9f3420e
-  Args:
-    type: :Woman
-    source: Ingrid
-  AssignClass (5c5d2661-29c8-49e4-b0ea-25ed58195097)
- Call ID: 5c5d2661-29c8-49e4-b0ea-25ed58195097
-  Args:
-    source: Ingrid
-    type: :Person
-  AddTriple (629a3348-b16b-49b3-b8d3-d9785b943631)
- Call ID: 629a3348-b16b-49b3-b8d3-d9785b943631
-  Args:
-    target: Frederik_IX
-    source: Margrethe_II
-    relation: :hasFather
-  AddTriple (a88bfefe-5268-49db-b973-f29854c78b57)
- Call ID: a88bfefe-5268-49db-b973-f29854c78b57
-  Args:
-    source: Margrethe_II
-    relation: :hasMother
-    target: Ingrid
-  AssignClass (d64f73fb-7d11-43f2-a526-edbebe974b7c)
- Call ID: d64f73fb-7d11-43f2-a526-edbebe974b7c
-  Args:
-    type: :Man
-    source: Henrik
-  AssignClass (94758bed-eff7-4228-88d6-b9e9f8c8b0f0)
- Call ID: 94758bed-eff7-4228-88d6-b9e9f8c8b0f0
-  Args:
-    source: Henrik
-    type: :Person
-  AddTriple (dfd43134-8d4e-4e97-9aed-0c815d7f6f0d)
- Call ID: dfd43134-8d4e-4e97-9aed-0c815d7f6f0d
-  Args:
-    target: Henrik
-    relation: :hasRelation
-    source: Margrethe_II
-  AddLiteral (bd478215-cfbd-4ad7-8848-c13929f7b75b)
- Call ID: bd478215-cfbd-4ad7-8848-c13929f7b75b
-  Args:
-    literal_value: 1967
-    source: Margrethe_II
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-  AssignClass (99135218-cef1-4b07-8ab9-bee0256b9dcc)
- Call ID: 99135218-cef1-4b07-8ab9-bee0256b9dcc
+    source: :Margrethe_II
+    literal_value: 1940
+  AssignClass (5ba8c6b4-0ba7-4e8b-ba66-f92ade5a4482)
+ Call ID: 5ba8c6b4-0ba7-4e8b-ba66-f92ade5a4482
   Args:
-    source: Frederik_X
-    type: :Man
-  AssignClass (855dc411-a10d-489b-8a95-f0308242f0e4)
- Call ID: 855dc411-a10d-489b-8a95-f0308242f0e4
-  Args:
-    source: Frederik_X
+    source: :Frederik_IX
     type: :Person
-  AssignClass (8ca3d1fa-0d88-498f-abb3-eb43dc298342)
- Call ID: 8ca3d1fa-0d88-498f-abb3-eb43dc298342
+  AssignClass (1ae513ee-8de4-480a-8db6-be37cafc2f5c)
+ Call ID: 1ae513ee-8de4-480a-8db6-be37cafc2f5c
   Args:
+    source: :Frederik_IX
     type: :Man
-    source: Joachim
-  AssignClass (cc067654-6e60-4e56-9ae3-36e7fdd2141c)
- Call ID: cc067654-6e60-4e56-9ae3-36e7fdd2141c
+  AddTriple (3770f256-dae2-40b2-bd4c-99ce48a545b5)
+ Call ID: 3770f256-dae2-40b2-bd4c-99ce48a545b5
   Args:
-    source: Joachim
-    type: :Person
-  AddTriple (795494bc-1f74-4099-8cd0-34059e3e22be)
- Call ID: 795494bc-1f74-4099-8cd0-34059e3e22be
-  Args:
-    target: Frederik_X
-    source: Margrethe_II
-    relation: :hasSon
-  AddTriple (7e3c9f4d-03fb-40de-817b-6818d2492d48)
- Call ID: 7e3c9f4d-03fb-40de-817b-6818d2492d48
-  Args:
-    relation: :hasSon
-    source: Margrethe_II
-    target: Joachim
-  AssignClass (bda77966-11c0-4e3f-baa3-8ea6b3c6a98c)
- Call ID: bda77966-11c0-4e3f-baa3-8ea6b3c6a98c
-  Args:
-    type: :Man
-    source: Christian_X
-  AssignClass (cd456162-ba96-4edd-8466-455310532e39)
- Call ID: cd456162-ba96-4edd-8466-455310532e39
-  Args:
-    type: :Person
-    source: Christian_X
-  AddTriple (ed47190d-5218-47fe-846b-dba4d6407651)
- Call ID: ed47190d-5218-47fe-846b-dba4d6407651
-  Args:
-    target: Christian_X
-    source: Frederik_IX
+    source: :Margrethe_II
+    target: :Frederik_IX
     relation: :hasFather
-  AssignClass (35898c3b-3bf8-4efd-a28d-addd7c09e240)
- Call ID: 35898c3b-3bf8-4efd-a28d-addd7c09e240
+  AssignClass (c6bf339b-c1c3-4acc-bd21-30d1179fdd87)
+ Call ID: c6bf339b-c1c3-4acc-bd21-30d1179fdd87
   Args:
-    type: :Man
-    source: Gustaf_VI_Adolf
-  AssignClass (89e70b14-be69-4616-8f1f-32f6244c7607)
- Call ID: 89e70b14-be69-4616-8f1f-32f6244c7607
-  Args:
-    source: Gustaf_VI_Adolf
     type: :Person
-  AddTriple (3cf6a16d-e6f1-41e3-8e0d-9753db0b1a57)
- Call ID: 3cf6a16d-e6f1-41e3-8e0d-9753db0b1a57
-  Args:
-    target: Gustaf_VI_Adolf
-    relation: :hasFather
-    source: Ingrid
-  AssignClass (3511eb74-12c7-4ab9-9730-34e200a2b974)
- Call ID: 3511eb74-12c7-4ab9-9730-34e200a2b974
+    source: :Ingrid_of_Sweden
+  AssignClass (81c4a341-5a05-48ee-9fa4-0ca1cbb1ec6f)
+ Call ID: 81c4a341-5a05-48ee-9fa4-0ca1cbb1ec6f
   Args:
     type: :Woman
-    source: Benedikte
-  AssignClass (bf2f92fe-3c0d-4278-9e01-220754c9a4c9)
- Call ID: bf2f92fe-3c0d-4278-9e01-220754c9a4c9
+    source: :Ingrid_of_Sweden
+  AddTriple (8e65f911-a074-4fce-a622-1a81633cd55f)
+ Call ID: 8e65f911-a074-4fce-a622-1a81633cd55f
+  Args:
+    relation: :hasMother
+    source: :Margrethe_II
+    target: :Ingrid_of_Sweden
+  AssignClass (453e6a84-9d94-4e9d-beae-4cee8961a433)
+ Call ID: 453e6a84-9d94-4e9d-beae-4cee8961a433
+  Args:
+    source: :Christian_X
+    type: :Person
+  AssignClass (5b8a38fa-7359-453f-a519-3cbfbb0a640f)
+ Call ID: 5b8a38fa-7359-453f-a519-3cbfbb0a640f
+  Args:
+    source: :Christian_X
+    type: :Man
+  AddTriple (63a6ed42-cb3c-4bbf-82dc-716744def0d5)
+ Call ID: 63a6ed42-cb3c-4bbf-82dc-716744def0d5
+  Args:
+    relation: :hasFather
+    target: :Christian_X
+    source: :Frederik_IX
+  AssignClass (9d1977b5-8140-49ad-816b-b33df0eae6bf)
+ Call ID: 9d1977b5-8140-49ad-816b-b33df0eae6bf
+  Args:
+    source: :Gustaf_VI_Adolf
+    type: :Person
+  AssignClass (9f17411d-b921-4faa-b30c-b64af93d9617)
+ Call ID: 9f17411d-b921-4faa-b30c-b64af93d9617
+  Args:
+    source: :Gustaf_VI_Adolf
+    type: :Man
+  AddTriple (1c21f2be-fb7d-4d3e-ac42-727950910865)
+ Call ID: 1c21f2be-fb7d-4d3e-ac42-727950910865
+  Args:
+    relation: :hasFather
+    source: :Ingrid_of_Sweden
+    target: :Gustaf_VI_Adolf
+  AssignClass (2397f4bb-afcf-44d8-9a3d-519e81f3016b)
+ Call ID: 2397f4bb-afcf-44d8-9a3d-519e81f3016b
+  Args:
+    source: :Henrik_of_Denmark
+    type: :Person
+  AssignClass (7c934949-4a87-4b59-9ce5-c7d6df1edec9)
+ Call ID: 7c934949-4a87-4b59-9ce5-c7d6df1edec9
+  Args:
+    type: :Man
+    source: :Henrik_of_Denmark
+  AddLiteral (d0f7cae2-ce1a-485c-8667-633950e4050a)
+ Call ID: d0f7cae2-ce1a-485c-8667-633950e4050a
+  Args:
+    literal_type: xsd:integer
+    source: :Margrethe_II
+    literal_value: 1967
+    relation: :hasMarriageYear
+  AddTriple (e91fd1c8-76eb-40d9-9f12-f996ec94b216)
+ Call ID: e91fd1c8-76eb-40d9-9f12-f996ec94b216
+  Args:
+    relation: :hasRelation
+    target: :Henrik_of_Denmark
+    source: :Margrethe_II
+  AssignClass (151662e7-6a76-48f7-973d-d7f113c31afb)
+ Call ID: 151662e7-6a76-48f7-973d-d7f113c31afb
+  Args:
+    source: :Frederik_X
+    type: :Person
+  AssignClass (b660d682-a221-40ee-861e-f2b5578c8d08)
+ Call ID: b660d682-a221-40ee-861e-f2b5578c8d08
+  Args:
+    source: :Frederik_X
+    type: :Man
+  AddTriple (b97c8115-3a54-4e69-a29f-a0d29a1bd4ad)
+ Call ID: b97c8115-3a54-4e69-a29f-a0d29a1bd4ad
+  Args:
+    relation: :hasSon
+    target: :Frederik_X
+    source: :Margrethe_II
+  AddTriple (337b54b8-3f3f-46b4-8253-f6bd5ecdb32b)
+ Call ID: 337b54b8-3f3f-46b4-8253-f6bd5ecdb32b
+  Args:
+    target: :Henrik_of_Denmark
+    source: :Frederik_X
+    relation: :hasFather
+  AssignClass (b079e473-6312-46fd-86c1-7e0a0570b74d)
+ Call ID: b079e473-6312-46fd-86c1-7e0a0570b74d
   Args:
     type: :Person
-    source: Benedikte
-  AssignClass (f888f7f8-c14f-4f26-8436-f9a3e0f271bb)
- Call ID: f888f7f8-c14f-4f26-8436-f9a3e0f271bb
+    source: :Joachim_of_Denmark
+  AssignClass (b4f1df1e-8fbb-4340-8043-66bb355c4452)
+ Call ID: b4f1df1e-8fbb-4340-8043-66bb355c4452
   Args:
-    source: Anne-Marie
+    source: :Joachim_of_Denmark
+    type: :Man
+  AddTriple (e37dab58-b4b0-43fc-b8db-0b5cff6e9b04)
+ Call ID: e37dab58-b4b0-43fc-b8db-0b5cff6e9b04
+  Args:
+    target: :Joachim_of_Denmark
+    source: :Margrethe_II
+    relation: :hasSon
+  AddTriple (2fec9f4c-3b07-493b-81df-fb56a488939f)
+ Call ID: 2fec9f4c-3b07-493b-81df-fb56a488939f
+  Args:
+    relation: :hasFather
+    source: :Joachim_of_Denmark
+    target: :Henrik_of_Denmark
+  AssignClass (f8ad6db0-dbcc-428f-978d-3e052c91a3d4)
+ Call ID: f8ad6db0-dbcc-428f-978d-3e052c91a3d4
+  Args:
+    type: :Person
+    source: :Benedikte_of_Denmark
+  AssignClass (75db433f-9f20-4fc3-84e8-f9ebc246047a)
+ Call ID: 75db433f-9f20-4fc3-84e8-f9ebc246047a
+  Args:
     type: :Woman
-  AssignClass (6dd314fe-2ba2-4877-8ff9-0e8d58e791c9)
- Call ID: 6dd314fe-2ba2-4877-8ff9-0e8d58e791c9
+    source: :Benedikte_of_Denmark
+  AddTriple (bb317052-583f-492b-8df5-6a77bf2b9746)
+ Call ID: bb317052-583f-492b-8df5-6a77bf2b9746
   Args:
+    relation: :hasSister
+    source: :Margrethe_II
+    target: :Benedikte_of_Denmark
+  AssignClass (51a1fa0b-318e-49ba-87a4-0cbb67520eea)
+ Call ID: 51a1fa0b-318e-49ba-87a4-0cbb67520eea
+  Args:
+    source: :Anne_Marie_of_Denmark
     type: :Person
-    source: Anne-Marie
-  AddTriple (1b7c0586-d73b-4827-8d5d-25979e79287c)
- Call ID: 1b7c0586-d73b-4827-8d5d-25979e79287c
+  AssignClass (d4345355-4636-444b-a424-8f992ae52e5f)
+ Call ID: d4345355-4636-444b-a424-8f992ae52e5f
   Args:
-    source: Margrethe_II
-    relation: :hasSister
-    target: Benedikte
-  AddTriple (79eb4e1b-6b52-46e9-9238-7aeb6564d62f)
- Call ID: 79eb4e1b-6b52-46e9-9238-7aeb6564d62f
+    source: :Anne_Marie_of_Denmark
+    type: :Woman
+  AddTriple (ed9a310b-606f-4789-9177-c308dba2d052)
+ Call ID: ed9a310b-606f-4789-9177-c308dba2d052
   Args:
     relation: :hasSister
-    source: Margrethe_II
-    target: Anne-Marie
-  AddTriple (dcf4b113-b094-4773-92eb-3ece47ce4d26)
- Call ID: dcf4b113-b094-4773-92eb-3ece47ce4d26
-  Args:
-    target: Frederik_IX
-    source: Benedikte
-    relation: :hasFather
-  AddTriple (4b390bd1-5aee-4250-b62e-fa023e87767f)
- Call ID: 4b390bd1-5aee-4250-b62e-fa023e87767f
-  Args:
-    target: Frederik_IX
-    relation: :hasFather
-    source: Anne-Marie
-  AddTriple (7e5925ef-6f3a-4f6f-ab87-a3f14b3f05f5)
- Call ID: 7e5925ef-6f3a-4f6f-ab87-a3f14b3f05f5
-  Args:
-    target: Ingrid
-    relation: :hasMother
-    source: Benedikte
-  AddTriple (7121f0c3-1f88-470b-adea-fed9563dea48)
- Call ID: 7121f0c3-1f88-470b-adea-fed9563dea48
-  Args:
-    target: Ingrid
-    source: Anne-Marie
-    relation: :hasMother
-  Finish (e32819b5-689d-4375-b2b2-785ae28d9560)
- Call ID: e32819b5-689d-4375-b2b2-785ae28d9560
+    target: :Anne_Marie_of_Denmark
+    source: :Margrethe_II
+  Finish (b26264c0-d21a-4aed-bb37-b4f0628e75e8)
+ Call ID: b26264c0-d21a-4aed-bb37-b4f0628e75e8
   Args:

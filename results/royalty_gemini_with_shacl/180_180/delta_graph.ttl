@@ -2,25 +2,65 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Karl_Adolf_Andreas_Prinz_von_Hesse a :Man,
-        :Person ;
-    :hasBirthYear 1937 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Prince_Christoph_of_Hesse ;
-    :hasMother data:Princess_Sophie_of_Greece_and_Denmark .
-
-data:Prince_Wolfgang_of_Hesse a :Man,
-        :Person .
-
-data:Prince_Christoph_of_Hesse a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Philip_Duke_of_Edinburgh a :Man,
-        :Person .
-
-data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+data:Anne_Bowes-Lyon a :Ancestor,
         :Person,
         :Woman ;
-    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Prince_Georg_of_Denmark ;
+    :isMotherOf data:Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson .
+
+data:Julian_Asquith a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Annunziata_Asquith .
+
+data:Robert_Grosvenor a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Leonora_Grosvenor .
+
+data:Thomas_Edward_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1960 ;
+    :isFatherOf data:Thomas_William_Arnold_Anson .
+
+data:Geoffrey_Adam_Shakerley a :Man,
+        :Person .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Thomas_William_Arnold_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958 ;
+    :isFatherOf data:Elizabeth_Georgiana_Anson,
+        data:Thomas_Patrick_John_Anson .
+
+data:Annunziata_Asquith a :Person,
+        :Woman .
+
+data:Elizabeth_Georgiana_Anson a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 2020 ;
+    :hasRelation data:Geoffrey_Adam_Shakerley ;
+    :isSisterOf data:Thomas_Patrick_John_Anson .
+
+data:Leonora_Grosvenor a :Person,
+        :Woman .
+
+data:Thomas_Patrick_John_Anson a :Man,
+        :Person ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2005 ;
+    :hasMarriageYear 1975 ;
+    :hasRelation data:Annunziata_Asquith,
+        data:Leonora_Grosvenor ;
+    :knownAs "Patrick Lichfield"^^xsd:string .
 

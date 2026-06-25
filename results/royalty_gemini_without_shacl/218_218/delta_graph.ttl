@@ -2,12 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
-        :Woman ;
-    :hasAncestor data:Isabelle_d%27Orl%C3%A9ans ;
-    :hasBirthYear 1976 .
+data:August_Aleksander_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1697 ;
+    :hasDeathYear 1782 ;
+    :hasSon data:Adam_Jerzy_Czartoryski .
 
-data:Isabelle_d%27Orl%C3%A9ans a :Ancestor,
-        :Person,
+data:Izabela_Czartoryska a :Person,
+        :Woman ;
+    :hasSon data:Adam_Jerzy_Czartoryski .
+
+data:Tamara_Czartoryska a :Person,
+        :Woman ;
+    :hasFather data:Adam_Karol_Czartoryski .
+
+data:Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Ludwik_Piotr_Czartoryski ;
+    :hasFather data:Augustyn_Jozef_Czartoryski ;
+    :hasMother data:Maria_de_los_Dolores_Bourbon_Two_Sicilies .
+
+data:Ludwik_Piotr_Czartoryski a :Man,
+        :Person ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Augustyn_Jozef_Czartoryski ;
+    :hasMother data:Maria_de_los_Dolores_Bourbon_Two_Sicilies .
+
+data:Zofia_von_Donhoff a :Person,
         :Woman .
+
+data:Adam_Jerzy_Czartoryski a :Man,
+        :Person ;
+    :hasMother data:Zofia_von_Donhoff .
+
+data:Augustyn_Jozef_Czartoryski a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1946 .
+
+data:Maria_de_los_Dolores_Bourbon_Two_Sicilies a :Person,
+        :Woman ;
+    :hasDeathYear 1996 .
 

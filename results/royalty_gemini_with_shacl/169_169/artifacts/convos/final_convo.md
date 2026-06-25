@@ -85,41 +85,57 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Margrethe II
+Infanta Pilar, Duchess of Badajoz, Viscountess of La Torre (Spanish: María del Pilar Alfonsa Juana
+Luisa Ignacia y Todos los Santos de Borbón y Borbón; 30 July 1936 – 8 January 2020), sometimes known more simply as Pilar de Borbón, was the elder daughter of Infante Juan, Count of Barcelona and Princess María Mercedes of the Two Sicilies, and older sister of King Juan Carlos I.
 
 
-Count Nikolai of Monpezat SK (born Prince Nikolai of Denmark; 28 August 1999) is a member of the Danish royal family.
-He is the eldest son of Prince Joachim and his first wife, Alexandra, Countess of Frederiksborg, the eldest grandchild of Queen Margrethe II and Prince Henrik, and the eldest nephew of King Frederik X.
-Biography
+Early life
 
-Nikolai was born a prince of Denmark at Rigshospitalet in Copenhagen on 28 August 1999.
-He is the oldest grandchild of Queen Margrethe II and her late husband, Prince Henrik.
-Nikolai was baptised in the chapel of the Fredensborg Palace on 6 November 1999 by the Danish Chaplain-in-Ordinary, Christian Thodberg.
-At the christening, the musical work Lys på din vej, composed by Frederik Magle and dedicated to the prince, was performed for the first time.
-His godparents are his paternal uncle King Frederik X, his maternal aunt Nicola Baird, Prince Edward, Duke of Edinburgh, Peter Steenstrup and Camilla Flint.
-After their divorce in 2005, Prince Joachim and Alexandra had joint custody of the prince and his brother Prince Felix.
-Nikolai and Felix have two half-siblings, Henrik and Athena, from their father's second marriage to Marie Cavallier.
-Nikolai was confirmed on 18 May 2013 in Fredensborg Palace Church in the presence of his immediate family and all his godparents.
-Like his father and uncle, Nikolai attended Krebs School in Copenhagen.
-As part of that course, in 2023, Nikolai moved to Australia to take a semester at University of Technology Sydney.
-In early 2018, Nikolai signed as a fashion model with the agency Scoop Models.
-In February 2023, Nikolai signed as a model for Elite Model World - Paris under the name of 'Nikolai'.
-Subsequently, in May he also signed with Barcelona-based modeling agency Sight Management Studio as 'Count Nikolai of Monpezat'.
-In June 2024, Nikolai graduated from Copenhagen Business School with a Master of Science in Merchandising degree (cand.merc.).
-In December 2025, it was announced that Nikolai would make his acting debut in the film adaptation of Hjalmar Söderberg's novel Doktor Glas (1905).
+Infanta Pilar was the firstborn daughter of Juan de Borbón y Battenberg and María de las Mercedes de Borbón y Orleans, Counts of Barcelona, she was born in Ville Saint Blaise, home of the counts of Barcelona in Cannes (Alpes-Maritimes, France), on 30 July 1936.
+She was baptized in Cannes, in the church of Rins, with the name of María del Pilar Alfonsa Juana
+Her godparents were her paternal grandfather, King Alfonso XIII and her maternal grandmother the Princess Louise of Orléans, although Alfonso XIII acted by delegation as he did not want to meet his wife Queen Victoria Eugenia.
+From her birth, as the daughter of the heir to the Crown of Spain she was given the title of Infanta of Spain with treatment of Royal Highness.
+In 1941, after the resignation of Alfonso XIII, her father became the holder of the dynastic rights of the Spanish Crown in exile.
+Together with her parents and her brother Juan Carlos, she took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+On this trip, Juan Carlos met the hosts' 15-year-old daughter, Sofia, his future wife, for the first time.
+At the wedding of her brother Juan Carlos I of Spain with Princess Sofía of Greece, in 1962, she was one of eight bridesmaids.
+Marriage and family
+
+Pilar needed to renounce her rights of succession to the Spanish throne to marry a commoner as stipulated by the Pragmatic Sanction of Charles III on marriages of members of the royal family.
+To honor the marriage, Infante Juan, Count of Barcelona, created her Duchess of Badajoz.
+Equestrian sport
+
+Pilar de Borbón had been supporting international equestrian sport.
+She was President of the International Equestrian Federation from 1994 to 2006, succeeded by HRH Princess Haya bint al Hussein.
+From 1996 to 2006 she was a member of the International Olympic Committee for Spain, when she became an honorary member, and Member of the Executive Board of the Spanish Olympic Committee.
+Philanthropic and other activities
+
+Pilar de Borbón was one of the founders of Asociación Nuevo Futuro ("New Future Association") in 1968, an international child support organization, and was its president and then president of honor.
+The event even received the visit of the Queens of Spain, Letizia and Sofia.
+Pilar de Borbón was also a member of the board of directors of the Queen Sofía Spanish Institute in New York City, president of the World Monuments Fund España and, from 2007 to 2009, president of Europa Nostra, the European Federation for the Defense of Cultural Heritage.
+She was also a music fan and accompanied her brother, King Juan Carlos of Spain, and nephews to bullfighting matches.
+Financial holdings
+
+Mossack Fonseca files document that in August 1974, Pilar de Borbón became president and director of the Panama-registered company Delantera Financiera SA (registered May 1969) with her husband as secretary-treasurer and director.
+In 1993, London-based Timothy Lloyd who had represented the undisclosed owner of the company said that Pilar de Borbón owned it.
+After March 1993, the intermediary representing the company was Madrid-based Gómez-Acebo & Pombo  Abogados, a law firm founded by Pilar de Borbón's brother-in-law Ignacio Gómez-Acebo .
+From July 2006 until its dissolution in June 2014, five days before the installation of her nephew Felipe VI, Pilar de Borbón's son Bruno Alejandro Gómez-Acebo Borbón was director and treasurer of the company.
+Illness and death
+
+Pilar was operated for an intestinal obstruction on 2 February 2019 in Madrid, and was diagnosed with colon cancer in 2019, being made public in May of the same year.
+On 28 January, her funeral was held in El Escorial basilica, attended by her nephew King Felipe VI, former Queen of the Netherlands, Princess Beatrix, her brother Juan Carlos I and Queen Sofía, cousin-in-law by marriage Queen Margarita (wife of Simeon II of Bulgaria), the Duke of Braganza Duarte Pio, and Spanish political authorities represented by Deputy Prime Minister Carmen Calvo, Mayor of Madrid José Luis Martínez-Almeida and President of the Congress of Deputies Meritxell Batet.
 Titles, styles and honours
 
-Titles and styles
-
-Originally styled "His Highness Prince Nikolai of Denmark", Nikolai's style was expanded on 29 April 2008 to "His Highness Prince Nikolai of Denmark, Count of Monpezat".
-In September 2022, Queen Margrethe II decided to restrict the titles Prince and Princess to the direct line of succession to the throne.
-Since 1 January 2023, Count Nikolai is known as "His Excellency Count Nikolai of Monpezat".
+As daughter of the prince of Asturias, Pilar was born infanta of Spain with the style of Royal Highness.
+Later, her father granted her the title of Duchess of Badajoz, a title of the Royal House that cannot be inherited by her children.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -135,39 +151,9 @@ Since 1 January 2023, Count Nikolai is known as "His Excellency Count Nikolai of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -182,6 +168,23 @@ Since 1 January 2023, Count Nikolai is known as "His Excellency Count Nikolai of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -199,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -309,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -317,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -355,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -370,235 +476,116 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (78c9378e-f2c0-4844-9c2c-c36cdccb1a59)
- Call ID: 78c9378e-f2c0-4844-9c2c-c36cdccb1a59
+  AssignClass (a181eece-8255-4522-a4d0-61bd34d6cc7b)
+ Call ID: a181eece-8255-4522-a4d0-61bd34d6cc7b
   Args:
-    type: :Man
-    source: Nikolai
-  AssignClass (b1131b25-a97d-4db0-9b0d-f1ccc6dedcab)
- Call ID: b1131b25-a97d-4db0-9b0d-f1ccc6dedcab
-  Args:
-    source: Nikolai
-    type: :Person
-  AssignClass (d213298f-c1cb-4d5c-b77a-7824ead8b0b1)
- Call ID: d213298f-c1cb-4d5c-b77a-7824ead8b0b1
-  Args:
-    source: Joachim
-    type: :Man
-  AssignClass (06f6ea4e-0359-44f2-bbe0-6fb17459c229)
- Call ID: 06f6ea4e-0359-44f2-bbe0-6fb17459c229
-  Args:
-    source: Joachim
-    type: :Person
-  AssignClass (d2020da0-065d-4c47-ac23-dce3b91957e8)
- Call ID: d2020da0-065d-4c47-ac23-dce3b91957e8
-  Args:
+    source: Infanta_Pilar
     type: :Woman
-    source: Alexandra
-  AssignClass (2b72f20b-3859-4f23-adcc-4e78fbd2926e)
- Call ID: 2b72f20b-3859-4f23-adcc-4e78fbd2926e
+  AssignClass (aeff34d6-05ce-4095-96b8-e2f6679fd695)
+ Call ID: aeff34d6-05ce-4095-96b8-e2f6679fd695
   Args:
-    source: Alexandra
+    source: Infanta_Pilar
     type: :Person
-  AssignClass (72cb6791-e968-4953-820b-9171d029403f)
- Call ID: 72cb6791-e968-4953-820b-9171d029403f
+  AssignClass (d22599e1-862f-4e5a-95b7-b9656798dab2)
+ Call ID: d22599e1-862f-4e5a-95b7-b9656798dab2
   Args:
+    type: :Man
+    source: Juan_Count_of_Barcelona
+  AssignClass (dda27beb-9107-4279-8d74-442446ed3013)
+ Call ID: dda27beb-9107-4279-8d74-442446ed3013
+  Args:
+    source: Juan_Count_of_Barcelona
+    type: :Person
+  AssignClass (41aeeb0c-60b0-4395-ad1b-8b31cc4eb934)
+ Call ID: 41aeeb0c-60b0-4395-ad1b-8b31cc4eb934
+  Args:
+    source: Maria_Mercedes_of_the_Two_Sicilies
     type: :Woman
-    source: Margrethe_II
-  AssignClass (c02eb334-9a6e-4c7a-961b-677ab6562480)
- Call ID: c02eb334-9a6e-4c7a-961b-677ab6562480
+  AssignClass (147a4970-773f-4e34-b8de-37a6f65c9148)
+ Call ID: 147a4970-773f-4e34-b8de-37a6f65c9148
   Args:
-    source: Margrethe_II
+    source: Maria_Mercedes_of_the_Two_Sicilies
     type: :Person
-  AssignClass (bd78c5f0-c259-4a89-b91a-012524c61287)
- Call ID: bd78c5f0-c259-4a89-b91a-012524c61287
-  Args:
-    source: Henrik_Prince
-    type: :Man
-  AssignClass (ab70367c-5d08-4a30-a779-bcfafa1347e6)
- Call ID: ab70367c-5d08-4a30-a779-bcfafa1347e6
-  Args:
-    type: :Person
-    source: Henrik_Prince
-  AssignClass (121ea709-0786-4a5f-9c86-834557eca467)
- Call ID: 121ea709-0786-4a5f-9c86-834557eca467
+  AssignClass (0f5f3d76-d662-476c-b3c3-49b64e4c00ac)
+ Call ID: 0f5f3d76-d662-476c-b3c3-49b64e4c00ac
   Args:
     type: :Man
-    source: Frederik_X
-  AssignClass (782b5428-64aa-44e9-a354-d6f027353a38)
- Call ID: 782b5428-64aa-44e9-a354-d6f027353a38
+    source: Juan_Carlos_I
+  AssignClass (4a1003e7-6fec-4cd3-bd92-cc37ad3f2cc7)
+ Call ID: 4a1003e7-6fec-4cd3-bd92-cc37ad3f2cc7
   Args:
-    source: Frederik_X
+    source: Juan_Carlos_I
     type: :Person
-  AssignClass (3e70aa8a-b969-4e1d-9ca1-517ee57e836e)
- Call ID: 3e70aa8a-b969-4e1d-9ca1-517ee57e836e
+  AddLiteral (5c5afe59-ee09-43b9-bc02-347e62fc9769)
+ Call ID: 5c5afe59-ee09-43b9-bc02-347e62fc9769
   Args:
-    type: :Man
-    source: Felix
-  AssignClass (1cfa678c-1ecb-4711-9a41-c3fbb29c4b17)
- Call ID: 1cfa678c-1ecb-4711-9a41-c3fbb29c4b17
-  Args:
-    type: :Person
-    source: Felix
-  AssignClass (0f5b2b6c-54fe-4118-93ea-4ee4e46276bc)
- Call ID: 0f5b2b6c-54fe-4118-93ea-4ee4e46276bc
-  Args:
-    source: Henrik_HalfSibling
-    type: :Man
-  AssignClass (5e2bad6b-2e90-41ed-920b-ee3034f9300c)
- Call ID: 5e2bad6b-2e90-41ed-920b-ee3034f9300c
-  Args:
-    type: :Person
-    source: Henrik_HalfSibling
-  AssignClass (f997b247-ed46-4925-9556-5f09c2eabb29)
- Call ID: f997b247-ed46-4925-9556-5f09c2eabb29
-  Args:
-    source: Athena
-    type: :Woman
-  AssignClass (95ced544-8863-4ede-bcb4-1c7ecb94e848)
- Call ID: 95ced544-8863-4ede-bcb4-1c7ecb94e848
-  Args:
-    source: Athena
-    type: :Person
-  AssignClass (bedf89ff-ed68-48a0-90b7-e878620813e1)
- Call ID: bedf89ff-ed68-48a0-90b7-e878620813e1
-  Args:
-    source: Marie_Cavallier
-    type: :Woman
-  AssignClass (fd2bfc4b-3a51-419c-9e81-8c581706d5d4)
- Call ID: fd2bfc4b-3a51-419c-9e81-8c581706d5d4
-  Args:
-    type: :Person
-    source: Marie_Cavallier
-  AddLiteral (658f4de5-03ac-48a1-8a6c-97ae74f7d0ce)
- Call ID: 658f4de5-03ac-48a1-8a6c-97ae74f7d0ce
-  Args:
-    literal_value: 1999
-    source: Nikolai
+    source: Infanta_Pilar
+    literal_value: 1936
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddTriple (6fcbffc4-e927-4726-a893-81ee1b1ce5ec)
- Call ID: 6fcbffc4-e927-4726-a893-81ee1b1ce5ec
+  AddLiteral (66c5186b-8e09-46ae-bbff-35cb6a53fdb7)
+ Call ID: 66c5186b-8e09-46ae-bbff-35cb6a53fdb7
   Args:
-    target: Joachim
-    source: Nikolai
-    relation: :hasFather
-  AddTriple (bc32ae37-4ab5-49e2-bdd5-2c54cd433b9a)
- Call ID: bc32ae37-4ab5-49e2-bdd5-2c54cd433b9a
-  Args:
-    source: Nikolai
-    relation: :hasMother
-    target: Alexandra
-  AddTriple (c680e7a9-bc83-4cc5-9cc6-951bf9fae65e)
- Call ID: c680e7a9-bc83-4cc5-9cc6-951bf9fae65e
-  Args:
-    target: Joachim
-    relation: :hasFather
-    source: Felix
-  AddTriple (9722414a-896a-4066-bc67-e28bf04491a3)
- Call ID: 9722414a-896a-4066-bc67-e28bf04491a3
-  Args:
-    relation: :hasMother
-    source: Felix
-    target: Alexandra
-  AddTriple (6d01c9f8-9789-428f-b66f-c38adf0ef7c0)
- Call ID: 6d01c9f8-9789-428f-b66f-c38adf0ef7c0
+    relation: :hasDeathYear
+    literal_value: 2020
+    source: Infanta_Pilar
+    literal_type: xsd:integer
+  AddTriple (452fc458-7171-48d7-a081-921fd52b44e0)
+ Call ID: 452fc458-7171-48d7-a081-921fd52b44e0
   Args:
     relation: :hasFather
-    source: Henrik_HalfSibling
-    target: Joachim
-  AddTriple (b2204242-e00a-4f83-9017-0284cfa0c2fe)
- Call ID: b2204242-e00a-4f83-9017-0284cfa0c2fe
+    source: Infanta_Pilar
+    target: Juan_Count_of_Barcelona
+  AddTriple (4f45bc09-3fa2-43bf-93ab-03f522b950ad)
+ Call ID: 4f45bc09-3fa2-43bf-93ab-03f522b950ad
   Args:
-    target: Marie_Cavallier
+    source: Infanta_Pilar
+    target: Maria_Mercedes_of_the_Two_Sicilies
     relation: :hasMother
-    source: Henrik_HalfSibling
-  AddTriple (5eae5bff-fe8d-40fe-b675-eb67273f34d7)
- Call ID: 5eae5bff-fe8d-40fe-b675-eb67273f34d7
+  AddTriple (fa569438-cf2a-4400-8e25-2923d065aa7d)
+ Call ID: fa569438-cf2a-4400-8e25-2923d065aa7d
   Args:
-    relation: :hasFather
-    source: Athena
-    target: Joachim
-  AddTriple (8740328f-775b-47bc-94b6-35858c5cea96)
- Call ID: 8740328f-775b-47bc-94b6-35858c5cea96
+    relation: :isSisterOf
+    target: Juan_Carlos_I
+    source: Infanta_Pilar
+  AddTriple (36a12c8e-68e1-4d4c-9572-62d41e3160a4)
+ Call ID: 36a12c8e-68e1-4d4c-9572-62d41e3160a4
   Args:
-    target: Marie_Cavallier
-    source: Athena
-    relation: :hasMother
-  AddTriple (0e531746-ed57-4bf7-ad96-a0ab8109d2bb)
- Call ID: 0e531746-ed57-4bf7-ad96-a0ab8109d2bb
+    source: Infanta_Pilar
+    target: Juan_Carlos_I
+    relation: :hasBrother
+  AddLiteral (939f2237-4407-4b85-b339-f9da72599a12)
+ Call ID: 939f2237-4407-4b85-b339-f9da72599a12
   Args:
-    target: Joachim
-    relation: :hasSon
-    source: Margrethe_II
-  AddTriple (4d40aba2-43f7-4835-b1a4-bd0eb4deec9c)
- Call ID: 4d40aba2-43f7-4835-b1a4-bd0eb4deec9c
-  Args:
-    relation: :hasSon
-    source: Henrik_Prince
-    target: Joachim
-  AddLiteral (3656eddd-322d-4c67-a91d-031a6233d438)
- Call ID: 3656eddd-322d-4c67-a91d-031a6233d438
-  Args:
+    relation: :alsoKnownAs
+    source: Infanta_Pilar
+    literal_value: Pilar de Borbón
     literal_type: xsd:string
-    literal_value: Count Nikolai of Monpezat
-    relation: :knownAs
-    source: Nikolai
-  Finish (c5fcd3c8-d23f-4c85-9bd1-69385b33cd09)
- Call ID: c5fcd3c8-d23f-4c85-9bd1-69385b33cd09
+  AssignClass (64fb1bad-a500-4bc7-ac6f-a407d2b3fafb)
+ Call ID: 64fb1bad-a500-4bc7-ac6f-a407d2b3fafb
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Bruno_Alejandro_Gomez-Acebo_Borbon
+    type: :Man
+  AssignClass (459f13dc-a9db-4076-94fb-35b1ada928a3)
+ Call ID: 459f13dc-a9db-4076-94fb-35b1ada928a3
+  Args:
+    source: Bruno_Alejandro_Gomez-Acebo_Borbon
+    type: :Person
+  AddTriple (ba645ef8-5942-4739-9b62-fbb24ca70c68)
+ Call ID: ba645ef8-5942-4739-9b62-fbb24ca70c68
+  Args:
+    relation: :isSonOf
+    target: Infanta_Pilar
+    source: Bruno_Alejandro_Gomez-Acebo_Borbon
+  AddTriple (42b0f558-fff7-4602-ba79-5b8970facd6a)
+ Call ID: 42b0f558-fff7-4602-ba79-5b8970facd6a
+  Args:
+    target: Bruno_Alejandro_Gomez-Acebo_Borbon
+    source: Infanta_Pilar
+    relation: :hasSon
+  Finish (54e57fdb-9f6d-435c-bd42-69ed7551ada2)
+ Call ID: 54e57fdb-9f6d-435c-bd42-69ed7551ada2
+  Args:
 
 ================================= Tool Message =================================
 
@@ -679,46 +666,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Athena a :Person,
-          :Woman ;
-      :hasFather data:Joachim ;
-      :hasMother data:Marie_Cavallier .
-
-  data:Felix a :Man,
+  data:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,
           :Person ;
-      :hasFather data:Joachim ;
-      :hasMother data:Alexandra .
+      :isSonOf data:Infanta_Pilar .
 
-  data:Frederik_X a :Man,
+  data:Infanta_Pilar a :Person,
+          :Woman ;
+      :alsoKnownAs "Pilar de Borbón"^^xsd:string ;
+      :hasBirthYear 1936 ;
+      :hasBrother data:Juan_Carlos_I ;
+      :hasDeathYear 2020 ;
+      :hasFather data:Juan_Count_of_Barcelona ;
+      :hasMother data:Maria_Mercedes_of_the_Two_Sicilies ;
+      :hasSon data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+      :isSisterOf data:Juan_Carlos_I .
+
+  data:Juan_Count_of_Barcelona a :Man,
           :Person .
 
-  data:Henrik_HalfSibling a :Man,
-          :Person ;
-      :hasFather data:Joachim ;
-      :hasMother data:Marie_Cavallier .
-
-  data:Henrik_Prince a :Man,
-          :Person ;
-      :hasSon data:Joachim .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSon data:Joachim .
-
-  data:Nikolai a :Man,
-          :Person ;
-      :hasBirthYear 1999 ;
-      :hasFather data:Joachim ;
-      :hasMother data:Alexandra ;
-      :knownAs "Count Nikolai of Monpezat"^^xsd:string .
-
-  data:Alexandra a :Person,
+  data:Maria_Mercedes_of_the_Two_Sicilies a :Person,
           :Woman .
 
-  data:Marie_Cavallier a :Person,
-          :Woman .
-
-  data:Joachim a :Man,
+  data:Juan_Carlos_I a :Man,
           :Person .
 
 
@@ -731,206 +700,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (df7167d7-2cf4-42b7-8566-9b4bcc212076)
- Call ID: df7167d7-2cf4-42b7-8566-9b4bcc212076
+  ValidateShacl (73a83c91-ae86-4dd8-bad3-dd1cdb0848ea)
+ Call ID: 73a83c91-ae86-4dd8-bad3-dd1cdb0848ea
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Nikolai' does not have the required class ':Ancestor'.
+      The node 'Infanta_Pilar' is indicated as a parent of 'Bruno_Alejandro_Gomez-Acebo_Borbon' via 'isSonOf', but 'Infanta_Pilar' lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
+      AssignClass(node='Infanta_Pilar', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
+      This is a duplicate validation error regarding the missing ':Ancestor' class for 'Infanta_Pilar' in the 'isSonOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
+      AssignClass(node='Infanta_Pilar', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Felix' does not have the required class ':Ancestor'.
+      The node 'Juan_Count_of_Barcelona' is listed as the father of 'Infanta_Pilar', but it is missing the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
+      AssignClass(node='Juan_Count_of_Barcelona', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Nikolai' does not have the required class ':Ancestor'.
+      The node 'Maria_Mercedes_of_the_Two_Sicilies' is listed as the mother of 'Infanta_Pilar', but it is missing the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
+      AssignClass(node='Maria_Mercedes_of_the_Two_Sicilies', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
+      This is a recurring validation error regarding the missing ':Ancestor' class for 'Infanta_Pilar' in the 'isSonOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
+      AssignClass(node='Infanta_Pilar', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Felix' does not have the required class ':Ancestor'.
+      This is a recurring validation error regarding the missing ':Ancestor' class for 'Juan_Count_of_Barcelona' in the 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
+      AssignClass(node='Juan_Count_of_Barcelona', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Nikolai' does not have the required class ':Ancestor'.
+      This is a recurring validation error regarding the missing ':Ancestor' class for 'Maria_Mercedes_of_the_Two_Sicilies' in the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
+      AssignClass(node='Maria_Mercedes_of_the_Two_Sicilies', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Athena' does not have the required class ':Ancestor'.
+      This is a recurring validation error regarding the missing ':Ancestor' class for 'Juan_Count_of_Barcelona' in the 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
+      AssignClass(node='Juan_Count_of_Barcelona', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Felix' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Nikolai' does not have the required class ':Ancestor'.
+      This is a recurring validation error regarding the missing ':Ancestor' class for 'Maria_Mercedes_of_the_Two_Sicilies' in the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Athena' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Felix' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Nikolai' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Felix' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Athena' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Nikolai' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Henrik_HalfSibling' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Alexandra' for property 'hasMother' of focus node 'Felix' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Alexandra', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Athena' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Joachim' for property 'hasFather' of focus node 'Athena' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Joachim', ':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie_Cavallier' for property 'hasMother' of focus node 'Athena' does not have the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie_Cavallier', ':Ancestor')
+      AssignClass(node='Maria_Mercedes_of_the_Two_Sicilies', class=':Ancestor')
 
 
 
@@ -939,42 +788,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (f5075300-8edd-4bae-bf8b-8f02fa5f56fd)
- Call ID: f5075300-8edd-4bae-bf8b-8f02fa5f56fd
-  Args:
-    source: Joachim
-    type: :Ancestor
-  AssignClass (108f3ca3-7865-40a7-be77-2dc4c0ee72d3)
- Call ID: 108f3ca3-7865-40a7-be77-2dc4c0ee72d3
+  AssignClass (7e552a31-ceff-47b4-bb58-dd6d86910aa8)
+ Call ID: 7e552a31-ceff-47b4-bb58-dd6d86910aa8
   Args:
     type: :Ancestor
-    source: Alexandra
-  AssignClass (43b6c87c-bebe-4e93-934c-0bc46ae095d6)
- Call ID: 43b6c87c-bebe-4e93-934c-0bc46ae095d6
+    source: Infanta_Pilar
+  AssignClass (e741f60d-d19e-4cd3-ae17-9a853fb3b7b6)
+ Call ID: e741f60d-d19e-4cd3-ae17-9a853fb3b7b6
   Args:
-    source: Marie_Cavallier
+    source: Juan_Count_of_Barcelona
     type: :Ancestor
-  AssignClass (22c6967d-3875-4837-aa04-c7ff92e33b5b)
- Call ID: 22c6967d-3875-4837-aa04-c7ff92e33b5b
+  AssignClass (8d6ac1b9-ce3e-415b-af78-a34fb85ca517)
+ Call ID: 8d6ac1b9-ce3e-415b-af78-a34fb85ca517
   Args:
-    source: Margrethe_II
     type: :Ancestor
-  AssignClass (d63009be-7de8-49a5-8247-5f5928663daa)
- Call ID: d63009be-7de8-49a5-8247-5f5928663daa
-  Args:
-    source: Henrik_Prince
-    type: :Ancestor
-  ValidateShacl (16aace7d-b869-4ae9-9585-a6dfebbc1be0)
- Call ID: 16aace7d-b869-4ae9-9585-a6dfebbc1be0
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Maria_Mercedes_of_the_Two_Sicilies
 
 ================================= Tool Message =================================
 
@@ -991,54 +819,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Athena a :Person,
-          :Woman ;
-      :hasFather data:Joachim ;
-      :hasMother data:Marie_Cavallier .
-
-  data:Felix a :Man,
+  data:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,
           :Person ;
-      :hasFather data:Joachim ;
-      :hasMother data:Alexandra .
+      :isSonOf data:Infanta_Pilar .
 
-  data:Frederik_X a :Man,
-          :Person .
-
-  data:Henrik_HalfSibling a :Man,
-          :Person ;
-      :hasFather data:Joachim ;
-      :hasMother data:Marie_Cavallier .
-
-  data:Henrik_Prince a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSon data:Joachim .
-
-  data:Margrethe_II a :Ancestor,
+  data:Infanta_Pilar a :Ancestor,
           :Person,
           :Woman ;
-      :hasSon data:Joachim .
+      :alsoKnownAs "Pilar de Borbón"^^xsd:string ;
+      :hasBirthYear 1936 ;
+      :hasBrother data:Juan_Carlos_I ;
+      :hasDeathYear 2020 ;
+      :hasFather data:Juan_Count_of_Barcelona ;
+      :hasMother data:Maria_Mercedes_of_the_Two_Sicilies ;
+      :hasSon data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+      :isSisterOf data:Juan_Carlos_I .
 
-  data:Nikolai a :Man,
-          :Person ;
-      :hasBirthYear 1999 ;
-      :hasFather data:Joachim ;
-      :hasMother data:Alexandra ;
-      :knownAs "Count Nikolai of Monpezat"^^xsd:string .
-
-  data:Alexandra a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Marie_Cavallier a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Joachim a :Ancestor,
+  data:Juan_Count_of_Barcelona a :Ancestor,
           :Man,
           :Person .
 
+  data:Maria_Mercedes_of_the_Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
 
+  data:Juan_Carlos_I a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e9a0dce8-22da-46ff-8e8d-ac406b071c07)
+ Call ID: e9a0dce8-22da-46ff-8e8d-ac406b071c07
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1048,6 +864,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (83a24b95-cb1c-49b3-bd93-959e3a6d9315)
- Call ID: 83a24b95-cb1c-49b3-bd93-959e3a6d9315
+  Finish (b5af6323-9ba9-45ee-bcbd-7b1817724c81)
+ Call ID: b5af6323-9ba9-45ee-bcbd-7b1817724c81
   Args:

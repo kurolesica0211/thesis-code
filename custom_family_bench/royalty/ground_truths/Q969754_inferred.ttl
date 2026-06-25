@@ -1,0 +1,148 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "424:442"^^xsd:string ;
+    data:posIndicesPart "468:476"^^xsd:string,
+        "619:627"^^xsd:string,
+        "721:729"^^xsd:string,
+        "730:738"^^xsd:string,
+        "829:837"^^xsd:string ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string,
+        "Isabelle d’Orléans"^^xsd:string,
+        "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string ;
+    :hasRelation data:Princess_Isabelle_dOrléans_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans_1 ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSisterOf data:Princess_Isabelle_dOrléans_1 .
+
+data:Amélie_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Amélie of Orléans"^^xsd:string ;
+    data:posIndicesFull "1106:1118"^^xsd:string,
+        "1293:1305"^^xsd:string ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans"^^xsd:string,
+        "Maria Amélia"^^xsd:string,
+        "Marie Amelie d'Orleans"^^xsd:string,
+        "Marie Amelie of Orleans"^^xsd:string,
+        "Marie Amélie d'Orléans"^^xsd:string,
+        "Marie Amélie of Orléans"^^xsd:string ;
+    :hasAncestor data:Princess_María_Isabel_of_Orléans ;
+    :hasBrother data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :isBloodrelationOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Princess_María_Isabel_of_Orléans ;
+    :isSiblingOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isSisterOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier .
+
+data:Ferdinand_dOrléans-_Duke_of_Montpensier a :Man,
+        :Person ;
+    rdfs:label "Ferdinand d'Orléans, Duke of Montpensier"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "50:121"^^xsd:string ;
+    data:posIndicesPart "1223:1227"^^xsd:string,
+        "1231:1242"^^xsd:string,
+        "1341:1345"^^xsd:string,
+        "1596:1600"^^xsd:string,
+        "1753:1762"^^xsd:string,
+        "2085:2094"^^xsd:string,
+        "2139:2143"^^xsd:string,
+        "2147:2158"^^xsd:string,
+        "233:242"^^xsd:string,
+        "379:388"^^xsd:string,
+        "672:676"^^xsd:string,
+        "760:769"^^xsd:string,
+        "771:775"^^xsd:string,
+        "932:941"^^xsd:string,
+        "943:947"^^xsd:string ;
+    data:wdtLink wdt:Q969754 ;
+    :alsoKnownAs "Ferdinand François Philippe Marie Laurent d'Orléans, Duc de Montpensier"^^xsd:string ;
+    :hasAncestor data:Princess_María_Isabel_of_Orléans ;
+    :hasBrother data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :hasSister data:Amélie_of_Orléans ;
+    :isBloodrelationOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isBrotherOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isSiblingOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isSonOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "1776:1788"^^xsd:string,
+        "2099:2111"^^xsd:string,
+        "418:432"^^xsd:string ;
+    data:posIndicesPart "2056:2062"^^xsd:string,
+        "468:476"^^xsd:string,
+        "619:627"^^xsd:string,
+        "721:729"^^xsd:string,
+        "829:837"^^xsd:string,
+        "951:958"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :hasDaughter data:Amélie_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :hasSon data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isAncestorOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isAuntOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isParentOf data:Amélie_of_Orléans,
+        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+

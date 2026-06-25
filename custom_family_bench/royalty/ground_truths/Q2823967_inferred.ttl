@@ -1,0 +1,168 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Augustyn_Józef_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Augustyn Józef Czartoryski"^^xsd:string ;
+    data:posIndicesFull "3417:3443"^^xsd:string,
+        "561:587"^^xsd:string ;
+    data:posIndicesPart "1157:1165"^^xsd:string,
+        "1357:1365"^^xsd:string,
+        "1588:1599"^^xsd:string,
+        "1686:1697"^^xsd:string,
+        "1816:1827"^^xsd:string,
+        "1913:1924"^^xsd:string,
+        "2027:2038"^^xsd:string,
+        "2261:2272"^^xsd:string,
+        "2413:2424"^^xsd:string,
+        "2434:2445"^^xsd:string,
+        "2505:2516"^^xsd:string,
+        "2720:2731"^^xsd:string,
+        "2826:2837"^^xsd:string,
+        "2968:2979"^^xsd:string,
+        "3001:3012"^^xsd:string,
+        "3237:3248"^^xsd:string,
+        "3738:3749"^^xsd:string,
+        "3894:3905"^^xsd:string,
+        "3966:3977"^^xsd:string,
+        "4019:4030"^^xsd:string,
+        "4055:4066"^^xsd:string,
+        "4116:4127"^^xsd:string,
+        "4271:4282"^^xsd:string,
+        "4456:4467"^^xsd:string,
+        "4583:4594"^^xsd:string,
+        "4711:4722"^^xsd:string,
+        "707:718"^^xsd:string,
+        "801:812"^^xsd:string,
+        "851:862"^^xsd:string,
+        "978:989"^^xsd:string ;
+    data:wdtLink wdt:Q2083425 ;
+    :alsoKnownAs "Augustyn Jozef Czartoryski"^^xsd:string,
+        "Prince Joseph August Czartoryski"^^xsd:string ;
+    :hasBrother data:Augustyn_Józef_Czartoryski ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski ;
+    :isBloodrelationOf data:Augustyn_Józef_Czartoryski ;
+    :isBrotherOf data:Augustyn_Józef_Czartoryski ;
+    :isFatherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Augustyn_Józef_Czartoryski ;
+    :isUncleOf data:Adam_Karol_Czartoryski .
+
+data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María de los Dolores of Bourbon-Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "614:667"^^xsd:string ;
+    data:posIndicesPart "1015:1018"^^xsd:string,
+        "1170:1178"^^xsd:string,
+        "1179:1186"^^xsd:string,
+        "1828:1835"^^xsd:string,
+        "2742:2750"^^xsd:string,
+        "2751:2756"^^xsd:string,
+        "2760:2763"^^xsd:string,
+        "2764:2771"^^xsd:string,
+        "3082:3090"^^xsd:string ;
+    data:wdtLink wdt:Q2635204 ;
+    :alsoKnownAs "Princess Dolores of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski ;
+    :isAuntOf data:Adam_Karol_Czartoryski ;
+    :isBloodrelationOf data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies .
+
+data:Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    rdfs:label "Adam Karol Czartoryski"^^xsd:string ;
+    data:posIndicesFull "1229:1251"^^xsd:string,
+        "1465:1487"^^xsd:string,
+        "3047:3069"^^xsd:string,
+        "3786:3808"^^xsd:string,
+        "517:539"^^xsd:string,
+        "7:29"^^xsd:string ;
+    data:posIndicesPart "1217:1221"^^xsd:string,
+        "1222:1227"^^xsd:string,
+        "1298:1302"^^xsd:string,
+        "1303:1308"^^xsd:string,
+        "1588:1599"^^xsd:string,
+        "1686:1697"^^xsd:string,
+        "1811:1815"^^xsd:string,
+        "1816:1827"^^xsd:string,
+        "1913:1924"^^xsd:string,
+        "2027:2038"^^xsd:string,
+        "2261:2272"^^xsd:string,
+        "2413:2424"^^xsd:string,
+        "2434:2445"^^xsd:string,
+        "2505:2516"^^xsd:string,
+        "2720:2731"^^xsd:string,
+        "2826:2837"^^xsd:string,
+        "3226:3230"^^xsd:string,
+        "3237:3248"^^xsd:string,
+        "3738:3749"^^xsd:string,
+        "3966:3977"^^xsd:string,
+        "4019:4030"^^xsd:string,
+        "4055:4066"^^xsd:string,
+        "4116:4127"^^xsd:string,
+        "4271:4282"^^xsd:string,
+        "437:448"^^xsd:string,
+        "4456:4467"^^xsd:string,
+        "4583:4594"^^xsd:string,
+        "4711:4722"^^xsd:string,
+        "4785:4789"^^xsd:string,
+        "4790:4795"^^xsd:string,
+        "707:718"^^xsd:string,
+        "801:812"^^xsd:string,
+        "851:862"^^xsd:string,
+        "978:989"^^xsd:string ;
+    data:wdtLink wdt:Q2823967 ;
+    :alsoKnownAs "Prince Adam Czartoryski"^^xsd:string ;
+    :hasAncestor data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Adam_Karol_Czartoryski ;
+    :hasFather data:Augustyn_Józef_Czartoryski ;
+    :hasMother data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski ;
+    :isChildOf data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Adam_Karol_Czartoryski ;
+    :isSonOf data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies .
+

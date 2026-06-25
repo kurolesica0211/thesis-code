@@ -2,40 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard a :Man,
-        :Person .
+data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man ;
+    :hasAncestor data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMarriageYear "1951"^^xsd:string ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .
 
-data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Person,
-        :Woman ;
-    :hasBirthYear 1895 .
+data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2016 .
 
-data:Prince_Frederick_Alfred a :Man,
-        :Person ;
-    :hasFather data:Georg_Prince_of_Saxe-Meiningen .
+data:Frederick_Augustus_II a :Man .
 
-data:Count_Ernst_of_Lippe-Biesterfeld a :Man,
-        :Person .
+data:Friedrich_of_Waldeck_and_Pyrmont a :Man .
 
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
-        :Woman ;
-    :hasBirthYear 1870 ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 .
 
-data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
-        :Person .
-
-data:Georg_Prince_of_Saxe-Meiningen a :Man,
-        :Person ;
-    :hasBirthYear 1892 ;
-    :hasDeathYear 1946 ;
-    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld .
-
-data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man,
-        :Person ;
-    :hasBirthYear 1861 ;
-    :hasDeathYear 1914 ;
-    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+data:Nikolaus_of_Oldenburg a :Man ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 .
 

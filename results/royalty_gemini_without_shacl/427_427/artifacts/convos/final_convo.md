@@ -69,30 +69,106 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Kraft, 9th Prince of Hohenlohe-Langenburg (German: Kraft Alexander Ernst Ludwig Georg Emich Fürst zu Hohenlohe-Langenburg; 25 June 1935 – 16 March 2004), was a German prince and landowner who was titular head of the House of Hohenlohe-Langenburg.
-He was a nephew of Prince Philip, Duke of Edinburgh, a nephew-in-law of Queen Elizabeth II, and thus a first cousin of King Charles III.
-Early life
+The Prince
 
-Kraft was born on 25 June 1935 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
-The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to his parents' membership of the Nazi Party.
-Six years later, however and his parents and sister, Princess Beatrix, were seated in the royal box at  his aunt's coronation in Westminster Abbey.
-Activities
 
-In 1960, Kraft succeeded his father as titular Prince of Hohenlohe-Langenburg.
-In 1965, he received his aunt and uncle, Queen Elizabeth II and Prince Philip, Duke of Edinburgh, at the damaged castle during their state visit to West Germany.
-He sold Weikersheim Palace to the state of Baden-Württemberg in 1967 to cover the cost of the restoration.
-His wife at the time, Charlotte, an art historian who represented Germany at Christie's, assisted in the restoration.
-Marriage and family
+Princess Marie Christine
 
-Kraft married, firstly, Princess Charlotte of Croÿ (born 1938) on 5 June 1965.
-He and Charlotte were divorced in 1990.
-He maintained relations with his British royal relatives, attending family events such as the wedding of Prince Charles and Lady Diana Spencer in 1981 and the wedding of Prince Andrew and Sarah Ferguson in 1986.
+
+
+
+
+Princess Josephine
+
+
+The Duchess of Montpensier
+
+
+The Count of ÉvreuxThe Countess of Évreux
+
+
+Princess Béatrice
+
+
+The Duke of OrléansThe Duchess of Orléans
+
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Princess Marie of Liechtenstein (née Princess Marie Isabelle Marguerite Anne Geneviève of Orléans; born Boulogne-Billancourt, France on 3 January 1959) is the eldest daughter of Prince Henri, Count of Paris, Duke of France and his former wife Duchess Marie Thérèse of Württemberg.
+She is the wife of Prince Gundakar of Liechtenstein, a great-grandson of Prince Alfred of Liechtenstein.
+Youth
+
+Her paternal grandfather, the Comte de Paris, head of the Orléanist House of France, received a letter of congratulations upon the princess's birth from General Charles de Gaulle.
+Baptised 17 days after her birth by Maurice, Cardinal Feltin, the Archbishop of Paris, in the chapel of the Archdiocese, her god-parents were two of her grandparents; Philipp Albrecht, Duke of Wurttemberg and Isabelle d'Orléans, Duchess of Guise.
+
+
+Princess Marie's early childhood was spent in Paris where, from October 1959 to April 1962, her father worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
+For some months in that year Marie attended a private, parochial day school in Paris, before being sent to boarding school at Cours Dupanloup in Boulogne-sur-Seine in 1968 and Sacré-Coeur de Saint-Maur.
+Upon receiving her bac, Marie enrolled at the Institut Catholique de Paris where she obtained a language interpretation degree in German and English after completing the Institut Supérieur d'Interprétariat et de Traduction curriculum.
+Career
+
+As the eldest of five children, two of whom are intellectually disabled, much of Princess Marie's professional and volunteer work has been in behalf of children with special needs.
+In 1984 Marie moved back to Geneva to organise the Enfants et Jeunes de la rue ("Street Kids") programme as part of the BICE, conducting outreach in various countries, including Colombia and Brazil.
+Transferred by BICE back to Paris, the princess became head of the Commission on Special Medical-Pedagogical Services, which sponsors humanitarian conferences in Europe and the developing world.
+Marriage
+
+While on work assignment in Rio de Janeiro in September 1988, Marie attended a dinner hosted by Princess Isabel of Brazil (born 1944), where she met their mutual cousin Prince Gundakar of Liechtenstein (grandson of Prince Alfred Roman of Liechtenstein).
+Marie and Gundakar encountered each other again in November 1988 at the wedding of two more mutual cousins, Duchess Mathilde of Wurttemberg and the Hereditary Count Erich von Waldburg-Zeil.
+On 11 February 1989 the couple were received by Marie's paternal grandfather, Monseigneur the Count of Paris, at his Chantilly estate, after which the couple's betrothal was announced to the media (the fiancée's father had been informed of the engagement earlier that day by a hand-delivered letter written by Marie's mother, Marie Thérèse of Württemberg, Duchess of Montpensier.
+Although the Count of Clermont stated in a 12 May 1989 Point de Vue interview that it had been three years since he had seen Marie, he and his second wife, Michaela Cousino, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Clermont further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
+However, it was on this occasion that Clermont learned that he would not be escorting Marie to her bridesgroom during the wedding.
+Meanwhile, the Duchess of Montpensier had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of the Count of Paris, the head of the dynasty who, until then, had largely sided with the Duchess de Montpensier in opposition to the dissolution of his son's first marriage.
+Moreover, the duchess had also rebuffed Monseigneur's offers to host the wedding at the Chapelle royale de Dreux or to commission the wedding gown from a major French haute couturier.
+Her grandfather reportedly called the decision "treason", as tradition dictated that a French princess of the Blood Royal weds in France unless the groom is the ruler or heir apparent of a foreign realm.
+Princess Marie spent much time there in her youth during visits to her maternal grandparents.
+However, because her mother's brother Carl, Duke of Wurttemberg, now lived there with his wife Diane d'Orléans, sister of the Count of Clermont and daughter of the Count of Paris, relatives and members of foreign royal dynasties found themselves being urged by two sets of siblings, long married to each other, to take opposite sides in the families' quarrel.
+Marie declared, "It's in that castle that I've been happiest.
+Marie wed her prince civilly at Dreux's city hall on 22 July 1989, and religiously in the castle church of Friedrichshafen, on 29 July 1989.
+Only eight persons, including bride and groom, attended the civil wedding in France (including the Duchess of Montpensier, her son Prince Jean, Duke of Vendôme, and a brother of the groom).
+Although 250 guests attended the ceremony in Germany, absent were the Count of Clermont, the Count of Paris and all but two of Clermont's eight siblings; the hostess Diane, Duchess of Wurttemberg, was present, as was her brother Prince Jacques, Duke of Orléans, and their mother, Madame the Countess of Paris.
+This was the first marriage of a member of the House of Orléans into a reigning dynasty since the 1929 wedding of Princess Françoise of Orléans to Prince Christopher of Greece.
+Gundakar is a third cousin of his sovereign, Hans Adam II of Liechtenstein, and is in the line of succession to that principality's throne.
+Gundakar Albert Alfred Petrus of Liechtenstein is the eldest son of Prince Johann of Liechtenstein and Princess Clothilde of Thurn und Taxis.
+He has a twin sister, Princess Diemut, and five younger siblings.
+Children
+
+The couple have five children together:
+
+
+Princess Marie Isabelle is the godmother of Infanta Maria Francisca of Portugal and Princess Thérèse d'Orléans.
+
+
+Honours
+
+Titles:
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +184,9 @@ He maintained relations with his British royal relatives, attending family event
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +201,23 @@ He maintained relations with his British royal relatives, attending family event
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +317,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +340,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +360,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +370,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +410,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,346 +509,111 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0ce133a0-7e61-4189-b9dc-ee1316214cd5)
- Call ID: 0ce133a0-7e61-4189-b9dc-ee1316214cd5
+  AssignClass (f8fd4cb5-7866-4f27-9192-348ce97e16c6)
+ Call ID: f8fd4cb5-7866-4f27-9192-348ce97e16c6
+  Args:
+    source: :PrincessMarieOfLiechtenstein
+    type: :Woman
+  AssignClass (31569bed-db91-4349-bb5e-7af72cac4840)
+ Call ID: 31569bed-db91-4349-bb5e-7af72cac4840
+  Args:
+    source: :PrinceHenriCountOfParis
+    type: :Man
+  AssignClass (c3577088-bacb-4e63-94ec-2aae73fd8d37)
+ Call ID: c3577088-bacb-4e63-94ec-2aae73fd8d37
+  Args:
+    source: :DuchessMarieThereseOfWurttemberg
+    type: :Woman
+  AssignClass (a7832954-f8ba-46bf-80f2-467b06fa4046)
+ Call ID: a7832954-f8ba-46bf-80f2-467b06fa4046
   Args:
     type: :Man
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AssignClass (b41b79c9-4dd6-403c-9b4c-a13e12dfaa80)
- Call ID: b41b79c9-4dd6-403c-9b4c-a13e12dfaa80
-  Args:
-    type: :Person
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AddLiteral (37e0c3c3-b52a-412e-8a5a-722771fd6e50)
- Call ID: 37e0c3c3-b52a-412e-8a5a-722771fd6e50
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_value: 1935
-  AddLiteral (0bc52271-281f-485b-b11d-f5d7ffcf5202)
- Call ID: 0bc52271-281f-485b-b11d-f5d7ffcf5202
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_value: 2004
-  AssignClass (983d0ce0-1aeb-437b-aaa4-c773c3999619)
- Call ID: 983d0ce0-1aeb-437b-aaa4-c773c3999619
+    source: :PrinceGundakarOfLiechtenstein
+  AssignClass (31ef0d43-c139-4d09-9736-ba8e60f65681)
+ Call ID: 31ef0d43-c139-4d09-9736-ba8e60f65681
   Args:
     type: :Man
-    source: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
-  AssignClass (6012d0b6-d76f-42ff-8a53-02aa12ff6694)
- Call ID: 6012d0b6-d76f-42ff-8a53-02aa12ff6694
+    source: :PrinceAlfredOfLiechtenstein
+  AssignClass (0e2dacbe-efe6-4305-82bd-3ef1b6408294)
+ Call ID: 0e2dacbe-efe6-4305-82bd-3ef1b6408294
   Args:
-    type: :Person
-    source: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
-  AssignClass (b2211ecd-6625-407b-9901-38f8e778a26d)
- Call ID: b2211ecd-6625-407b-9901-38f8e778a26d
+    type: :Man
+    source: :PrinceJohannOfLiechtenstein
+  AssignClass (4a986f66-2742-41d2-9e1e-389fb6a93b52)
+ Call ID: 4a986f66-2742-41d2-9e1e-389fb6a93b52
   Args:
     type: :Woman
-    source: Princess_Margarita_of_Greece_and_Denmark
-  AssignClass (10dbec1e-0f38-45e6-a15a-fa30513421a1)
- Call ID: 10dbec1e-0f38-45e6-a15a-fa30513421a1
+    source: :PrincessClothildeOfThurnUndTaxis
+  AssignClass (5f1feeef-c6cd-41a0-84f6-9d7c3c1d5829)
+ Call ID: 5f1feeef-c6cd-41a0-84f6-9d7c3c1d5829
   Args:
-    type: :Person
-    source: Princess_Margarita_of_Greece_and_Denmark
-  AddTriple (ecc7854c-6273-47ed-84f8-54b520296e4e)
- Call ID: ecc7854c-6273-47ed-84f8-54b520296e4e
+    source: :PrincessDiemutOfLiechtenstein
+    type: :Woman
+  AssignClass (4c27bd7e-d163-4076-a678-402a60e44259)
+ Call ID: 4c27bd7e-d163-4076-a678-402a60e44259
   Args:
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    target: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
+    source: :PhilippAlbrechtDukeOfWurttemberg
+    type: :Man
+  AssignClass (db8da893-68a4-49af-89f8-a210b5640760)
+ Call ID: db8da893-68a4-49af-89f8-a210b5640760
+  Args:
+    type: :Woman
+    source: :IsabelleDOrleansDuchessOfGuise
+  AddTriple (ad2b12ce-4c19-49ca-b323-d6c80da28570)
+ Call ID: ad2b12ce-4c19-49ca-b323-d6c80da28570
+  Args:
+    source: :PrincessMarieOfLiechtenstein
+    target: :PrinceHenriCountOfParis
     relation: :hasFather
-  AddTriple (432db2bc-f228-4209-9649-f21cccf5f381)
- Call ID: 432db2bc-f228-4209-9649-f21cccf5f381
+  AddTriple (c433416e-e353-47b9-8517-346c8fe71e6f)
+ Call ID: c433416e-e353-47b9-8517-346c8fe71e6f
   Args:
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    target: Princess_Margarita_of_Greece_and_Denmark
     relation: :hasMother
-  AssignClass (742dd0b7-6f20-43a3-80bd-32cf56bac4d8)
- Call ID: 742dd0b7-6f20-43a3-80bd-32cf56bac4d8
-  Args:
-    type: :Woman
-    source: Princess_Beatrix_of_Hohenlohe-Langenburg
-  AssignClass (29205a61-093f-4b97-aeaf-3b892aec1344)
- Call ID: 29205a61-093f-4b97-aeaf-3b892aec1344
-  Args:
-    type: :Person
-    source: Princess_Beatrix_of_Hohenlohe-Langenburg
-  AddTriple (cb02bdc3-1354-4775-88e0-0f5e3b3f1d30)
- Call ID: cb02bdc3-1354-4775-88e0-0f5e3b3f1d30
-  Args:
-    target: Kraft_Prince_of_Hohenlohe-Langenburg
-    relation: :isSisterOf
-    source: Princess_Beatrix_of_Hohenlohe-Langenburg
-  AssignClass (a8053df4-eb86-4104-bcb6-086dd9768e98)
- Call ID: a8053df4-eb86-4104-bcb6-086dd9768e98
-  Args:
-    type: :Man
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (4bdfd3ad-6317-46fb-a444-826599249ae2)
- Call ID: 4bdfd3ad-6317-46fb-a444-826599249ae2
-  Args:
-    type: :Person
-    source: Prince_Philip_Duke_of_Edinburgh
-  AddTriple (d8ac1dd3-d77e-426c-ba56-d156920a1fc8)
- Call ID: d8ac1dd3-d77e-426c-ba56-d156920a1fc8
-  Args:
-    source: Princess_Margarita_of_Greece_and_Denmark
-    relation: :isSisterOf
-    target: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (cc7a98a4-51bb-46d3-ac9c-18d61cd546ad)
- Call ID: cc7a98a4-51bb-46d3-ac9c-18d61cd546ad
-  Args:
-    type: :Woman
-    source: Princess_Charlotte_of_Croy
-  AssignClass (effdbf6e-704b-46e8-a11a-65125936d502)
- Call ID: effdbf6e-704b-46e8-a11a-65125936d502
-  Args:
-    type: :Person
-    source: Princess_Charlotte_of_Croy
-  AddTriple (4ea974ca-4de7-4d3d-84ca-ab4dc26bbcbd)
- Call ID: 4ea974ca-4de7-4d3d-84ca-ab4dc26bbcbd
-  Args:
-    target: 1965
-    relation: :hasMarriageYear
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AddLiteral (96502363-e2df-4b91-a827-718574d91855)
- Call ID: 96502363-e2df-4b91-a827-718574d91855
-  Args:
-    literal_value: 1965
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  Finish (82c5a669-b86c-4ddd-8953-408ccfb0a230)
- Call ID: 82c5a669-b86c-4ddd-8953-408ccfb0a230
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
-          :Woman ;
-      :isSisterOf data:Kraft_Prince_of_Hohenlohe-Langenburg .
-
-  data:Princess_Charlotte_of_Croy a :Person,
-          :Woman .
-
-  data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,
-          :Person .
-
-  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,
-          :Person ;
-      :hasBirthYear 1935 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
-      :hasMarriageYear data:1965,
-          1965 ;
-      :hasMother data:Princess_Margarita_of_Greece_and_Denmark .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person .
-
-  data:Princess_Margarita_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1965']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (ddbcc2c4-0ba2-4d5a-afc1-410c83a7c4d7)
- Call ID: ddbcc2c4-0ba2-4d5a-afc1-410c83a7c4d7
-  Args:
-    literal_value: 1965
-    relation: :hasMarriageYear
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_type: xsd:integer
-  AddLiteral (2bff28f5-5a59-4ea4-9c33-c8fdf61caae3)
- Call ID: 2bff28f5-5a59-4ea4-9c33-c8fdf61caae3
-  Args:
-    relation: :hasMarriageYear
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_value: 1965
-    literal_type: xsd:string
-  Finish (f74df57e-284f-47e5-9b27-92bbf733bbc2)
- Call ID: f74df57e-284f-47e5-9b27-92bbf733bbc2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
-          :Woman ;
-      :isSisterOf data:Kraft_Prince_of_Hohenlohe-Langenburg .
-
-  data:Princess_Charlotte_of_Croy a :Person,
-          :Woman .
-
-  data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,
-          :Person .
-
-  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,
-          :Person ;
-      :hasBirthYear 1935 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
-      :hasMarriageYear data:1965,
-          "1965"^^xsd:string ;
-      :hasMother data:Princess_Margarita_of_Greece_and_Denmark .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person .
-
-  data:Princess_Margarita_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1965']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (889d1ad0-f032-4ee1-be92-dc041f1f52f4)
- Call ID: 889d1ad0-f032-4ee1-be92-dc041f1f52f4
-  Args:
-    target: 1965
-    relation: :hasMarriageYear
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AddLiteral (92107a5c-1d55-46f2-a1c1-81a232c4ff54)
- Call ID: 92107a5c-1d55-46f2-a1c1-81a232c4ff54
+    source: :PrincessMarieOfLiechtenstein
+    target: :DuchessMarieThereseOfWurttemberg
+  AddLiteral (c34ea883-00b7-4767-ad97-1b4c84081ac3)
+ Call ID: c34ea883-00b7-4767-ad97-1b4c84081ac3
   Args:
     literal_type: xsd:integer
-    literal_value: 1965
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    relation: :hasMarriageYear
-  Finish (ee744554-e07e-475d-8e72-647a83acf7bd)
- Call ID: ee744554-e07e-475d-8e72-647a83acf7bd
+    relation: :hasBirthYear
+    literal_value: 1959
+    source: :PrincessMarieOfLiechtenstein
+  AddTriple (b323de4e-7161-49e3-882d-434d8672fefd)
+ Call ID: b323de4e-7161-49e3-882d-434d8672fefd
+  Args:
+    relation: :hasFather
+    target: :PrinceJohannOfLiechtenstein
+    source: :PrinceGundakarOfLiechtenstein
+  AddTriple (7185da48-c9ae-4d9f-9a23-3c87e808c289)
+ Call ID: 7185da48-c9ae-4d9f-9a23-3c87e808c289
+  Args:
+    source: :PrinceGundakarOfLiechtenstein
+    target: :PrincessClothildeOfThurnUndTaxis
+    relation: :hasMother
+  AddTriple (d5e57b6d-5bb5-469f-bc83-4093a804e918)
+ Call ID: d5e57b6d-5bb5-469f-bc83-4093a804e918
+  Args:
+    relation: :hasSister
+    source: :PrinceGundakarOfLiechtenstein
+    target: :PrincessDiemutOfLiechtenstein
+  AddTriple (916c03bb-c599-4353-805c-0a0eab50ed14)
+ Call ID: 916c03bb-c599-4353-805c-0a0eab50ed14
+  Args:
+    source: :PrincessDiemutOfLiechtenstein
+    target: :PrinceJohannOfLiechtenstein
+    relation: :hasFather
+  AddTriple (d13eb505-8d00-4c44-afd3-ee6bbfb350ba)
+ Call ID: d13eb505-8d00-4c44-afd3-ee6bbfb350ba
+  Args:
+    relation: :hasMother
+    source: :PrincessDiemutOfLiechtenstein
+    target: :PrincessClothildeOfThurnUndTaxis
+  AddTriple (19e810ee-0e32-4c33-a989-226205857f06)
+ Call ID: 19e810ee-0e32-4c33-a989-226205857f06
+  Args:
+    source: :PrinceGundakarOfLiechtenstein
+    target: :PrinceAlfredOfLiechtenstein
+    relation: :hasAncestor
+  Finish (20c7b6d4-f7c0-4624-8b39-94ec5f59ee47)
+ Call ID: 20c7b6d4-f7c0-4624-8b39-94ec5f59ee47
   Args:

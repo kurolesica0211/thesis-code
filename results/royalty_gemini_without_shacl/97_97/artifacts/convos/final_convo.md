@@ -141,6 +141,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -156,39 +158,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -203,6 +175,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -220,6 +209,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,29 +291,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -318,6 +314,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -330,6 +334,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -338,17 +344,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -376,6 +384,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -391,107 +483,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (09a917f0-f1bb-4efb-ad96-9fd73a5ae52b)
- Call ID: 09a917f0-f1bb-4efb-ad96-9fd73a5ae52b
+  AssignClass (d7b35f2b-8269-4141-948a-2fe30467bf74)
+ Call ID: d7b35f2b-8269-4141-948a-2fe30467bf74
   Args:
     type: :Woman
-    source: Princess_Margarita_of_Bourbon_Parma
-  AssignClass (cd28100e-1c7e-470f-aba0-0d1561f79b7d)
- Call ID: cd28100e-1c7e-470f-aba0-0d1561f79b7d
+    source: :Princess_Margarita_of_Bourbon-Parma
+  AssignClass (583757b5-0a97-4a61-b77e-56d803a5f383)
+ Call ID: 583757b5-0a97-4a61-b77e-56d803a5f383
   Args:
-    source: Princess_Irene_of_the_Netherlands
+    type: :Person
+    source: :Princess_Margarita_of_Bourbon-Parma
+  AssignClass (0e43fd9b-0c2f-4c71-945c-f033c2372581)
+ Call ID: 0e43fd9b-0c2f-4c71-945c-f033c2372581
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
     type: :Woman
-  AssignClass (956cba0c-13d8-42be-b405-ac5cead024ba)
- Call ID: 956cba0c-13d8-42be-b405-ac5cead024ba
+  AssignClass (c4e71530-de04-495c-80bb-cce3601525b7)
+ Call ID: c4e71530-de04-495c-80bb-cce3601525b7
+  Args:
+    type: :Person
+    source: :Princess_Irene_of_the_Netherlands
+  AssignClass (ae13da41-78d9-4c6a-a15b-f9733b4b5e68)
+ Call ID: ae13da41-78d9-4c6a-a15b-f9733b4b5e68
   Args:
     type: :Man
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (6e22b4a2-0105-45f1-a744-042f215ad3d1)
- Call ID: 6e22b4a2-0105-45f1-a744-042f215ad3d1
+    source: :Carlos_Hugo_Duke_of_Parma
+  AssignClass (9d2fd4d7-4f03-4a49-b007-3642cac20921)
+ Call ID: 9d2fd4d7-4f03-4a49-b007-3642cac20921
   Args:
-    source: Prince_Jaime
-    type: :Man
-  AssignClass (f04ac455-83c5-45ca-9e26-6b29772ae1f5)
- Call ID: f04ac455-83c5-45ca-9e26-6b29772ae1f5
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Person
+  AddTriple (81534fd3-5333-4510-bd4b-611cd1a5d1c1)
+ Call ID: 81534fd3-5333-4510-bd4b-611cd1a5d1c1
   Args:
-    type: :Man
-    source: Prince_Carlos
-  AssignClass (fd1749a4-82e2-42ba-999c-d5565602c2ed)
- Call ID: fd1749a4-82e2-42ba-999c-d5565602c2ed
-  Args:
-    source: Princess_Carolina
-    type: :Woman
-  AssignClass (836e7da9-a2e3-4d5d-b8de-2fd802940076)
- Call ID: 836e7da9-a2e3-4d5d-b8de-2fd802940076
-  Args:
-    source: Queen_Juliana
-    type: :Woman
-  AssignClass (fe250d46-b730-4329-bdcc-17362c43a8ce)
- Call ID: fe250d46-b730-4329-bdcc-17362c43a8ce
-  Args:
-    source: Prince_Bernhard
-    type: :Man
-  AssignClass (f64917f4-cbd4-4f0b-bff3-d1238d654f0a)
- Call ID: f64917f4-cbd4-4f0b-bff3-d1238d654f0a
-  Args:
-    source: Edwin_Karel_Willem_de_Roy_van_Zuydewijn
-    type: :Man
-  AddTriple (4c7dfaca-0eb1-474d-a17a-eea7f154f44d)
- Call ID: 4c7dfaca-0eb1-474d-a17a-eea7f154f44d
-  Args:
-    source: Princess_Margarita_of_Bourbon_Parma
-    target: Princess_Irene_of_the_Netherlands
     relation: :hasMother
-  AddTriple (98c36e75-1535-47fa-b59b-134b0b4fe3f4)
- Call ID: 98c36e75-1535-47fa-b59b-134b0b4fe3f4
+    source: :Princess_Margarita_of_Bourbon-Parma
+    target: :Princess_Irene_of_the_Netherlands
+  AddTriple (c9488376-fd7a-426c-b97f-6c40eb1e523c)
+ Call ID: c9488376-fd7a-426c-b97f-6c40eb1e523c
   Args:
     relation: :hasFather
-    target: Carlos_Hugo_Duke_of_Parma
-    source: Princess_Margarita_of_Bourbon_Parma
-  AddLiteral (9d5c3207-3e3d-4b1a-9fb5-46997e1b06f0)
- Call ID: 9d5c3207-3e3d-4b1a-9fb5-46997e1b06f0
+    target: :Carlos_Hugo_Duke_of_Parma
+    source: :Princess_Margarita_of_Bourbon-Parma
+  AssignClass (3b3e36d1-9810-415d-bcf9-c1ca584c117c)
+ Call ID: 3b3e36d1-9810-415d-bcf9-c1ca584c117c
   Args:
-    relation: :hasBirthYear
-    literal_value: 1972
-    literal_type: xsd:integer
-    source: Princess_Margarita_of_Bourbon_Parma
-  AddTriple (1b79c64e-19f4-44e4-af92-7a89bcc2ce51)
- Call ID: 1b79c64e-19f4-44e4-af92-7a89bcc2ce51
+    type: :Man
+    source: :Prince_Jaime
+  AssignClass (65107e20-96a4-4b65-be25-6e0ee5367fcb)
+ Call ID: 65107e20-96a4-4b65-be25-6e0ee5367fcb
   Args:
-    relation: :isSiblingOf
-    target: Prince_Jaime
-    source: Princess_Margarita_of_Bourbon_Parma
-  AddTriple (2b8eb216-0bb2-41a4-8bc1-ebb06f3c6b7a)
- Call ID: 2b8eb216-0bb2-41a4-8bc1-ebb06f3c6b7a
+    source: :Prince_Jaime
+    type: :Person
+  AddTriple (700f711a-e7ef-453b-91a9-be965bdba1f0)
+ Call ID: 700f711a-e7ef-453b-91a9-be965bdba1f0
   Args:
     relation: :isSiblingOf
-    target: Prince_Carlos
-    source: Princess_Margarita_of_Bourbon_Parma
-  AddTriple (92538b64-d042-4d66-b042-a8ca0b06970d)
- Call ID: 92538b64-d042-4d66-b042-a8ca0b06970d
+    target: :Prince_Jaime
+    source: :Princess_Margarita_of_Bourbon-Parma
+  AssignClass (e89a04c2-d3a2-435e-92cf-172521806d59)
+ Call ID: e89a04c2-d3a2-435e-92cf-172521806d59
   Args:
-    target: Princess_Carolina
-    source: Princess_Margarita_of_Bourbon_Parma
+    source: :Prince_Carlos
+    type: :Man
+  AssignClass (a0a031c8-3417-4f5b-979d-937173bf54d8)
+ Call ID: a0a031c8-3417-4f5b-979d-937173bf54d8
+  Args:
+    source: :Prince_Carlos
+    type: :Person
+  AddTriple (4c3f3822-5346-4e4f-8161-576d74991dec)
+ Call ID: 4c3f3822-5346-4e4f-8161-576d74991dec
+  Args:
     relation: :isSiblingOf
-  AddTriple (f3e37151-1801-417d-b273-6d6019ad8d5f)
- Call ID: f3e37151-1801-417d-b273-6d6019ad8d5f
+    source: :Princess_Margarita_of_Bourbon-Parma
+    target: :Prince_Carlos
+  AssignClass (c8ae79ca-18f3-44fa-89ee-69ad9ae71ef8)
+ Call ID: c8ae79ca-18f3-44fa-89ee-69ad9ae71ef8
   Args:
-    target: Princess_Irene_of_the_Netherlands
-    source: Prince_Bernhard
-    relation: :isFatherOf
-  AddTriple (1c73ad41-396c-4e09-8255-b27963522405)
- Call ID: 1c73ad41-396c-4e09-8255-b27963522405
+    type: :Woman
+    source: :Princess_Carolina
+  AssignClass (438d0028-b5cc-4e5e-8d48-498603d7d25c)
+ Call ID: 438d0028-b5cc-4e5e-8d48-498603d7d25c
   Args:
-    target: Princess_Irene_of_the_Netherlands
-    source: Queen_Juliana
-    relation: :isMotherOf
-  AddLiteral (65db03bc-30b1-48e2-b2f4-7c4f44a7b675)
- Call ID: 65db03bc-30b1-48e2-b2f4-7c4f44a7b675
+    source: :Princess_Carolina
+    type: :Person
+  AddTriple (bd4c22f7-7f7d-4c1c-8f95-abfa1e1d6da6)
+ Call ID: bd4c22f7-7f7d-4c1c-8f95-abfa1e1d6da6
   Args:
-    relation: :hasMarriageYear
+    relation: :isSiblingOf
+    source: :Princess_Margarita_of_Bourbon-Parma
+    target: :Princess_Carolina
+  AssignClass (d479fe95-6c22-4612-94d9-4aa22a488f68)
+ Call ID: d479fe95-6c22-4612-94d9-4aa22a488f68
+  Args:
+    source: :Queen_Juliana
+    type: :Woman
+  AssignClass (4ac6af74-7f56-432a-8ede-7fee54b9f280)
+ Call ID: 4ac6af74-7f56-432a-8ede-7fee54b9f280
+  Args:
+    source: :Queen_Juliana
+    type: :Person
+  AssignClass (ca4fd649-5b35-488a-8c11-3ce72626052d)
+ Call ID: ca4fd649-5b35-488a-8c11-3ce72626052d
+  Args:
+    type: :Man
+    source: :Prince_Bernhard
+  AssignClass (8b1bf6c9-4831-4e99-b4fb-5916d0377781)
+ Call ID: 8b1bf6c9-4831-4e99-b4fb-5916d0377781
+  Args:
+    source: :Prince_Bernhard
+    type: :Person
+  AddTriple (0d097ccc-bc89-408a-bb11-fe304368f5f3)
+ Call ID: 0d097ccc-bc89-408a-bb11-fe304368f5f3
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
+    target: :Queen_Juliana
+    relation: :hasMother
+  AddTriple (4527b6e8-dfc9-4551-9f9f-dc1fabf29bd8)
+ Call ID: 4527b6e8-dfc9-4551-9f9f-dc1fabf29bd8
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
+    target: :Prince_Bernhard
+    relation: :hasFather
+  AssignClass (456d00db-0582-4dee-b4dc-5180e24cef03)
+ Call ID: 456d00db-0582-4dee-b4dc-5180e24cef03
+  Args:
+    type: :Man
+    source: :Edwin_Karel_Willem_de_Roy_van_Zuydewijn
+  AssignClass (fd2385bf-839e-4837-87e2-fde121f85a35)
+ Call ID: fd2385bf-839e-4837-87e2-fde121f85a35
+  Args:
+    type: :Person
+    source: :Edwin_Karel_Willem_de_Roy_van_Zuydewijn
+  AddLiteral (ae5cdaf7-54ce-4524-9ebb-e62fcf637c40)
+ Call ID: ae5cdaf7-54ce-4524-9ebb-e62fcf637c40
+  Args:
+    source: :Princess_Margarita_of_Bourbon-Parma
     literal_value: 2001
+    relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: Princess_Margarita_of_Bourbon_Parma
-  Finish (2ee75f72-9dd4-43f9-9b20-f5a1f152a18b)
- Call ID: 2ee75f72-9dd4-43f9-9b20-f5a1f152a18b
+  Finish (ba88bf1b-3d9d-47e1-bf2e-6050cd4d4289)
+ Call ID: ba88bf1b-3d9d-47e1-bf2e-6050cd4d4289
   Args:

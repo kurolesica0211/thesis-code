@@ -2,26 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ernst_August_of_Lippe a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1990 ;
-    :hasFather data:Julius_Ernst_of_Lippe ;
-    :hasMarriageYear 1948 ;
-    :hasMother data:Marie_of_Mecklenburg-Strelitz ;
-    :hasRelation data:Christa_von_Arnim ;
-    :isFatherOf data:Friedrich_Wilhelm_of_Lippe .
+data:AlfonsoDukeOfCalabria a :Man ;
+    :hasFather data:CarlosBourbonTwoSicilies .
 
-data:Christa_von_Arnim a :Person,
-        :Woman .
+data:FerdinandPius a :Man ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:MariaLudwigaTheresiaOfBavaria ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony .
 
-data:Friedrich_Wilhelm_of_Lippe a :Man,
-        :Person .
+data:AlfonsoCountOfCaserta a :Ancestor,
+        :Man ;
+    :hasFather data:FerdinandII .
 
-data:Julius_Ernst_of_Lippe a :Ancestor,
+data:ArchduchessPeterFerdinandOfAustria a :Woman .
+
+data:FerdinandII a :Ancestor,
         :Man .
 
-data:Marie_of_Mecklenburg-Strelitz a :Ancestor,
+data:GabrielBourbonTwoSicilies a :Man .
+
+data:LudwigIIIBavaria a :Ancestor,
+        :Man .
+
+data:MariaAntonietta a :Ancestor,
         :Woman .
+
+data:MariaCristina a :Woman .
+
+data:MariaDiGrazia a :Woman .
+
+data:MariaImmaculata a :Woman .
+
+data:MariaLudwigaTheresiaOfBavaria a :Woman ;
+    :hasFather data:LudwigIIIBavaria .
+
+data:PhilipBourbonTwoSicilies a :Man .
+
+data:PrincessImperialOfBrazil a :Woman .
+
+data:PrincessJohannGeorgOfSaxony a :Woman .
+
+data:RanieriDukeOfCastro a :Man .
+
+data:CarlosBourbonTwoSicilies a :Ancestor,
+        :Man .
 

@@ -85,28 +85,31 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Dame Sarah Rose Troughton (née Colman; born 3
-Early life
+Rose Constance Leveson-Gower, Countess Granville (née Bowes-Lyon; 6 May 1890 – 17 November 1967) was the third daughter of the 14th Earl of Strathmore and Kinghorne by his wife, Cecilia Cavendish-Bentinck.
+An elder sister of Queen Elizabeth the Queen Mother, she was therefore a maternal aunt of Queen Elizabeth II.
 
-Troughton was born in Paddington in 1953.
-She is the eldest of the five children of Sir Timothy Colman, a past Lord Lieutenant of Norfolk, and Lady Mary Cecilia Bowes-Lyon, a granddaughter of Claude Bowes-Lyon, 14th
-Her ancestor Jeremiah Colman (1777–1851) made a fortune from Colman's mustard, a business which eventually grew into Reckitt & Colman, of which her father was a director until 1989.
-Public life
 
-From 1990 to 2000, Troughton was lady-in-waiting to the Duchess of Kent.
-As Lord Lieutenant, Troughton's public duties include overseeing arrangements for visits to Wiltshire by members of the Royal Family and escorting royal visitors; representing the King at events and presenting awards and medals on his behalf; liaising with the Wiltshire units of the Royal Navy, Army and Royal Air Force; leading the local magistracy as chairman of the Lord Chancellor's Advisory Committee on Justices of the Peace; and advising on nominations for national honours.
-In January 2013, Troughton was appointed a Commander of the Order of St John by the Queen, and advanced to Dame of Grace of the order in 2021.
-A BBC News article described Troughton as one of Camilla's longstanding personal friends.
-Troughton was appointed a Dame Commander of the Royal Victorian Order in the 2025 New Year Honours.
-Personal life
+Life and family
 
-In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Service, and the eldest son of Sir Charles Troughton, chairman of W H Smith.
+On 24 May 1916, Lady Rose Bowes-Lyon married The Hon.
+William Leveson-Gower, who succeeded to his childless brother's earldom on 21 July 1939.
+As a result, she was styled as Countess Granville.
+The couple had two children:
+
+
+The Countess Granville stood godmother to her niece, Princess Margaret Rose of York, at the latter's christening on 3 October 1930.
+She was also awarded the honorary degree of Doctor of Laws (LL.D.) by Queen's University Belfast.
+Lord Granville died on 25 June 1953, aged 72.
+Lady Granville outlived him by fourteen years when she died on 17 November 1967, aged 77.
+She was the last surviving sibling of Queen Elizabeth The Queen Mother.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +125,9 @@ In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Servi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +142,23 @@ In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Servi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,167 +450,140 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2b9cd229-3975-45e3-a4d5-d548a3a99209)
- Call ID: 2b9cd229-3975-45e3-a4d5-d548a3a99209
+  AssignClass (8ea15c9b-60b7-42d7-a737-8d566b90b407)
+ Call ID: 8ea15c9b-60b7-42d7-a737-8d566b90b407
   Args:
+    source: :RoseConstanceLevesonGower
     type: :Woman
-    source: :SarahRoseTroughton
-  AssignClass (0244f9a3-b85f-4ba9-8835-c14ff08a2852)
- Call ID: 0244f9a3-b85f-4ba9-8835-c14ff08a2852
+  AssignClass (e6243391-3637-4c81-8a4f-45b33984cda3)
+ Call ID: e6243391-3637-4c81-8a4f-45b33984cda3
   Args:
     type: :Person
-    source: :SarahRoseTroughton
-  AddLiteral (06e2409f-ea41-408e-9e4d-4763fa854d76)
- Call ID: 06e2409f-ea41-408e-9e4d-4763fa854d76
+    source: :RoseConstanceLevesonGower
+  AddLiteral (d6adf1ae-fdc8-46af-85fc-5f4b4f95fe03)
+ Call ID: d6adf1ae-fdc8-46af-85fc-5f4b4f95fe03
   Args:
-    literal_type: xsd:int
-    literal_value: 1953
+    source: :RoseConstanceLevesonGower
+    literal_value: 1890
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :SarahRoseTroughton
-  AssignClass (72b2ecb2-23a3-4350-8fa0-11fda262ee63)
- Call ID: 72b2ecb2-23a3-4350-8fa0-11fda262ee63
+  AddLiteral (d8839413-038a-455e-aaed-fa80bf0f0d77)
+ Call ID: d8839413-038a-455e-aaed-fa80bf0f0d77
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1967
+    source: :RoseConstanceLevesonGower
+    relation: :hasDeathYear
+  AssignClass (2ff68fe9-ff99-467a-bb77-1166276e6592)
+ Call ID: 2ff68fe9-ff99-467a-bb77-1166276e6592
   Args:
     type: :Man
-    source: :TimothyColman
-  AssignClass (a8a548f8-d4e6-42fa-9783-a561302bd1d6)
- Call ID: a8a548f8-d4e6-42fa-9783-a561302bd1d6
+    source: :14thEarlOfStrathmoreAndKinghorne
+  AssignClass (866e4a37-9f7b-4278-be74-e05a091a748b)
+ Call ID: 866e4a37-9f7b-4278-be74-e05a091a748b
   Args:
     type: :Person
-    source: :TimothyColman
-  AssignClass (c7c95db0-b9f8-43a7-9e92-c8bd80ab40de)
- Call ID: c7c95db0-b9f8-43a7-9e92-c8bd80ab40de
-  Args:
-    type: :Ancestor
-    source: :TimothyColman
-  AssignClass (5079fcf7-6e75-45df-9d8a-891137a56a67)
- Call ID: 5079fcf7-6e75-45df-9d8a-891137a56a67
+    source: :14thEarlOfStrathmoreAndKinghorne
+  AssignClass (e10cfcf1-1b1c-4921-8350-a5e33405de94)
+ Call ID: e10cfcf1-1b1c-4921-8350-a5e33405de94
   Args:
     type: :Woman
-    source: :MaryCeciliaBowesLyon
-  AssignClass (7a82741a-a14a-4bb4-bfa0-a35d550ebee1)
- Call ID: 7a82741a-a14a-4bb4-bfa0-a35d550ebee1
+    source: :CeciliaCavendishBentinck
+  AssignClass (5106974a-cf5f-44db-85ef-596ec78f3d4f)
+ Call ID: 5106974a-cf5f-44db-85ef-596ec78f3d4f
   Args:
+    source: :CeciliaCavendishBentinck
     type: :Person
-    source: :MaryCeciliaBowesLyon
-  AssignClass (b4d20d31-ba55-4612-9b84-8cfbb971503e)
- Call ID: b4d20d31-ba55-4612-9b84-8cfbb971503e
+  AddTriple (1fa9367a-6d5d-4c9c-b364-396c294e2477)
+ Call ID: 1fa9367a-6d5d-4c9c-b364-396c294e2477
   Args:
-    type: :Ancestor
-    source: :MaryCeciliaBowesLyon
-  AddTriple (7c17fc3c-dd3e-4d79-8c98-166f1e83459c)
- Call ID: 7c17fc3c-dd3e-4d79-8c98-166f1e83459c
-  Args:
+    target: :14thEarlOfStrathmoreAndKinghorne
     relation: :hasFather
-    target: :TimothyColman
-    source: :SarahRoseTroughton
-  AddTriple (ab9518a4-79b4-4157-9f31-b55d948ead96)
- Call ID: ab9518a4-79b4-4157-9f31-b55d948ead96
+    source: :RoseConstanceLevesonGower
+  AddTriple (cd0b484d-7cf1-4eca-a436-2762146de1bb)
+ Call ID: cd0b484d-7cf1-4eca-a436-2762146de1bb
   Args:
-    source: :SarahRoseTroughton
-    target: :MaryCeciliaBowesLyon
+    source: :RoseConstanceLevesonGower
+    target: :CeciliaCavendishBentinck
     relation: :hasMother
-  AssignClass (f264a720-641c-4f52-888d-1d82d4a15d6b)
- Call ID: f264a720-641c-4f52-888d-1d82d4a15d6b
+  AssignClass (4ae6f99d-f715-47b0-b065-0a7da17feaf2)
+ Call ID: 4ae6f99d-f715-47b0-b065-0a7da17feaf2
   Args:
+    type: :Woman
+    source: :QueenElizabethTheQueenMother
+  AssignClass (b47f6737-0058-4ec0-9a64-819b52084a71)
+ Call ID: b47f6737-0058-4ec0-9a64-819b52084a71
+  Args:
+    source: :QueenElizabethTheQueenMother
+    type: :Person
+  AddTriple (62c6b7d7-87e7-4c76-a652-016fc93e941b)
+ Call ID: 62c6b7d7-87e7-4c76-a652-016fc93e941b
+  Args:
+    relation: :isSisterOf
+    target: :QueenElizabethTheQueenMother
+    source: :RoseConstanceLevesonGower
+  AssignClass (c33f12f4-770d-4d10-8908-223dc27f3acb)
+ Call ID: c33f12f4-770d-4d10-8908-223dc27f3acb
+  Args:
+    type: :Woman
+    source: :QueenElizabethII
+  AssignClass (7a56476e-f1c9-4597-aa3e-a0596ed28b7b)
+ Call ID: 7a56476e-f1c9-4597-aa3e-a0596ed28b7b
+  Args:
+    source: :QueenElizabethII
+    type: :Person
+  AddTriple (1a45fd4f-1a5a-4a33-b5c5-05e7c43405ac)
+ Call ID: 1a45fd4f-1a5a-4a33-b5c5-05e7c43405ac
+  Args:
+    target: :QueenElizabethII
+    relation: :isAuntOf
+    source: :RoseConstanceLevesonGower
+  AssignClass (45542c92-99e9-4c68-afe4-76d05b6e5920)
+ Call ID: 45542c92-99e9-4c68-afe4-76d05b6e5920
+  Args:
+    source: :WilliamLevesonGower
     type: :Man
-    source: :JeremiahColman
-  AssignClass (b4916747-b3ce-4eec-80a8-1f1c9a06c04f)
- Call ID: b4916747-b3ce-4eec-80a8-1f1c9a06c04f
+  AssignClass (e7983bc3-fc9f-4997-a378-c5c03b359cae)
+ Call ID: e7983bc3-fc9f-4997-a378-c5c03b359cae
   Args:
     type: :Person
-    source: :JeremiahColman
-  AssignClass (14455779-fd6e-4833-b5d7-7b52546445f2)
- Call ID: 14455779-fd6e-4833-b5d7-7b52546445f2
+    source: :WilliamLevesonGower
+  AddLiteral (83e3d554-155d-4f12-a30f-f1e022e0aecf)
+ Call ID: 83e3d554-155d-4f12-a30f-f1e022e0aecf
   Args:
-    type: :Ancestor
-    source: :JeremiahColman
-  AddTriple (4037489f-4329-4591-bdc2-8064ca093b61)
- Call ID: 4037489f-4329-4591-bdc2-8064ca093b61
-  Args:
-    source: :SarahRoseTroughton
-    target: :JeremiahColman
-    relation: :hasAncestor
-  AssignClass (a46d1437-4b46-4e0f-a6eb-1f83130f6bb9)
- Call ID: a46d1437-4b46-4e0f-a6eb-1f83130f6bb9
-  Args:
-    type: :Man
-    source: :ClaudeBowesLyon
-  AssignClass (582e7fd4-516d-4c3d-a71b-c795175adb31)
- Call ID: 582e7fd4-516d-4c3d-a71b-c795175adb31
-  Args:
-    type: :Person
-    source: :ClaudeBowesLyon
-  AssignClass (92e333ca-46e1-4e42-ae95-1e2f6eb8e27b)
- Call ID: 92e333ca-46e1-4e42-ae95-1e2f6eb8e27b
-  Args:
-    type: :Ancestor
-    source: :ClaudeBowesLyon
-  AddTriple (c7736b9d-c1ea-48f9-8cf8-e003f2343661)
- Call ID: c7736b9d-c1ea-48f9-8cf8-e003f2343661
-  Args:
-    source: :MaryCeciliaBowesLyon
-    relation: :hasAncestor
-    target: :ClaudeBowesLyon
-  AssignClass (034c3f66-b20a-49e8-8b6f-f4845c20fd25)
- Call ID: 034c3f66-b20a-49e8-8b6f-f4845c20fd25
-  Args:
-    type: :Man
-    source: :PeterTroughton
-  AssignClass (3606cca2-0397-47f4-9578-c305e48f48b8)
- Call ID: 3606cca2-0397-47f4-9578-c305e48f48b8
-  Args:
-    type: :Person
-    source: :PeterTroughton
-  AddLiteral (9cb9bc65-c4eb-4526-9d43-87da7b624291)
- Call ID: 9cb9bc65-c4eb-4526-9d43-87da7b624291
-  Args:
-    literal_type: xsd:int
-    literal_value: 1948
-    relation: :hasBirthYear
-    source: :PeterTroughton
-  AddLiteral (d3c1cfe7-b0d9-4d83-a350-47c659d76e9d)
- Call ID: d3c1cfe7-b0d9-4d83-a350-47c659d76e9d
-  Args:
-    source: :SarahRoseTroughton
-    literal_value: 1977
     relation: :hasMarriageYear
-    literal_type: xsd:int
-  AssignClass (05e4dfa0-fe61-4ab5-b705-3cf8e29d1e34)
- Call ID: 05e4dfa0-fe61-4ab5-b705-3cf8e29d1e34
+    literal_value: 1916
+    literal_type: xsd:integer
+    source: :RoseConstanceLevesonGower
+  AddTriple (a4387a5d-09cd-4bf4-9a27-3515c33ea7df)
+ Call ID: a4387a5d-09cd-4bf4-9a27-3515c33ea7df
   Args:
-    type: :Man
-    source: :CharlesTroughton
-  AssignClass (b02ec254-9020-4b75-945c-df7533c6c0fb)
- Call ID: b02ec254-9020-4b75-945c-df7533c6c0fb
+    source: :RoseConstanceLevesonGower
+    target: :WilliamLevesonGower
+    relation: :hasRelation
+  AssignClass (8845d486-bb6d-4170-b553-c4beedb6a107)
+ Call ID: 8845d486-bb6d-4170-b553-c4beedb6a107
+  Args:
+    type: :Woman
+    source: :PrincessMargaretRoseOfYork
+  AssignClass (c2b11061-5ca4-4ca4-ba61-269002adb998)
+ Call ID: c2b11061-5ca4-4ca4-ba61-269002adb998
   Args:
     type: :Person
-    source: :CharlesTroughton
-  AssignClass (8398d9e2-dc99-40b5-8275-ce7ec83d6263)
- Call ID: 8398d9e2-dc99-40b5-8275-ce7ec83d6263
+    source: :PrincessMargaretRoseOfYork
+  AddTriple (04cf21c7-df62-4c93-993f-e64ca5da4289)
+ Call ID: 04cf21c7-df62-4c93-993f-e64ca5da4289
   Args:
-    type: :Ancestor
-    source: :CharlesTroughton
-  AddTriple (e3ff7b04-086f-4f6f-b2ac-51575223e1f1)
- Call ID: e3ff7b04-086f-4f6f-b2ac-51575223e1f1
+    target: :PrincessMargaretRoseOfYork
+    relation: :isAuntOf
+    source: :RoseConstanceLevesonGower
+  AddLiteral (a59682f6-91f4-48eb-b223-56dc85b9e749)
+ Call ID: a59682f6-91f4-48eb-b223-56dc85b9e749
   Args:
-    source: :PeterTroughton
-    relation: :hasFather
-    target: :CharlesTroughton
-  Finish (17cdd4e8-93a7-4b44-8612-7529b85da830)
- Call ID: 17cdd4e8-93a7-4b44-8612-7529b85da830
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :WilliamLevesonGower
+    literal_value: 1953
+    literal_type: xsd:integer
+    relation: :hasDeathYear
 
 ================================= Tool Message =================================
 
@@ -618,52 +684,170 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PeterTroughton a :Man,
+  data:RoseConstanceLevesonGower a :Person,
+          :Woman ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1967 ;
+      :hasFather data:14thEarlOfStrathmoreAndKinghorne ;
+      :hasMarriageYear 1916 ;
+      :hasMother data:CeciliaCavendishBentinck ;
+      :hasRelation data:WilliamLevesonGower ;
+      :isAuntOf data:PrincessMargaretRoseOfYork,
+          data:QueenElizabethII ;
+      :isSisterOf data:QueenElizabethTheQueenMother .
+
+  data:14thEarlOfStrathmoreAndKinghorne a :Man,
+          :Person .
+
+  data:CeciliaCavendishBentinck a :Person,
+          :Woman .
+
+  data:PrincessMargaretRoseOfYork a :Person,
+          :Woman .
+
+  data:QueenElizabethII a :Person,
+          :Woman .
+
+  data:QueenElizabethTheQueenMother a :Person,
+          :Woman .
+
+  data:WilliamLevesonGower a :Man,
           :Person ;
-      :hasBirthYear "1948"^^xsd:int ;
-      :hasFather data:CharlesTroughton .
-
-  data:SarahRoseTroughton a :Person,
-          :Woman ;
-      :hasAncestor data:JeremiahColman ;
-      :hasBirthYear "1953"^^xsd:int ;
-      :hasFather data:TimothyColman ;
-      :hasMarriageYear "1977"^^xsd:int ;
-      :hasMother data:MaryCeciliaBowesLyon .
-
-  data:CharlesTroughton a :Ancestor,
-          :Man,
-          :Person .
-
-  data:ClaudeBowesLyon a :Ancestor,
-          :Man,
-          :Person .
-
-  data:JeremiahColman a :Ancestor,
-          :Man,
-          :Person .
-
-  data:MaryCeciliaBowesLyon a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasAncestor data:ClaudeBowesLyon .
-
-  data:TimothyColman a :Ancestor,
-          :Man,
-          :Person .
+      :hasDeathYear 1953 .
 
 
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (40e4bd64-dc49-4236-8d19-40d1cdbe184a)
- Call ID: 40e4bd64-dc49-4236-8d19-40d1cdbe184a
+  ValidateShacl (4f286bbf-f71a-44e4-94ae-d1d18d79d097)
+ Call ID: 4f286bbf-f71a-44e4-94ae-d1d18d79d097
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:6
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14thEarlOfStrathmoreAndKinghorne' is assigned as the father of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='14thEarlOfStrathmoreAndKinghorne', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'CeciliaCavendishBentinck' is assigned as the mother of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CeciliaCavendishBentinck', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14thEarlOfStrathmoreAndKinghorne' is assigned as the father of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='14thEarlOfStrathmoreAndKinghorne', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'CeciliaCavendishBentinck' is assigned as the mother of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CeciliaCavendishBentinck', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14thEarlOfStrathmoreAndKinghorne' is assigned as the father of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='14thEarlOfStrathmoreAndKinghorne', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'CeciliaCavendishBentinck' is assigned as the mother of 'RoseConstanceLevesonGower', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CeciliaCavendishBentinck', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f27b0ccd-2efd-4702-8b82-07d5505e1140)
+ Call ID: f27b0ccd-2efd-4702-8b82-07d5505e1140
+  Args:
+    type: :Ancestor
+    source: :14thEarlOfStrathmoreAndKinghorne
+  AssignClass (37dd1f71-c828-4cc7-8bb9-55f6e5fee789)
+ Call ID: 37dd1f71-c828-4cc7-8bb9-55f6e5fee789
+  Args:
+    source: :CeciliaCavendishBentinck
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:RoseConstanceLevesonGower a :Person,
+          :Woman ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1967 ;
+      :hasFather data:14thEarlOfStrathmoreAndKinghorne ;
+      :hasMarriageYear 1916 ;
+      :hasMother data:CeciliaCavendishBentinck ;
+      :hasRelation data:WilliamLevesonGower ;
+      :isAuntOf data:PrincessMargaretRoseOfYork,
+          data:QueenElizabethII ;
+      :isSisterOf data:QueenElizabethTheQueenMother .
+
+  data:14thEarlOfStrathmoreAndKinghorne a :Ancestor,
+          :Man,
+          :Person .
+
+  data:CeciliaCavendishBentinck a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:PrincessMargaretRoseOfYork a :Person,
+          :Woman .
+
+  data:QueenElizabethII a :Person,
+          :Woman .
+
+  data:QueenElizabethTheQueenMother a :Person,
+          :Woman .
+
+  data:WilliamLevesonGower a :Man,
+          :Person ;
+      :hasDeathYear 1953 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a553d15d-1068-4983-bee8-ee582b7b31c8)
+ Call ID: a553d15d-1068-4983-bee8-ee582b7b31c8
   Args:
 
 ================================= Tool Message =================================
@@ -674,6 +858,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0ccaf74d-87d9-4a1d-9621-5c4f553d37cc)
- Call ID: 0ccaf74d-87d9-4a1d-9621-5c4f553d37cc
+  Finish (7031423c-a144-40ef-97fa-5f705bb89750)
+ Call ID: 7031423c-a144-40ef-97fa-5f705bb89750
   Args:

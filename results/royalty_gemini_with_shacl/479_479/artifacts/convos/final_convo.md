@@ -85,28 +85,57 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Archduhess Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia of Austria(German: Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia, Erzherzogin von Österreich; 22 September 1906 – 17 September 1983) was a member of the Tuscan branch of the House of Habsburg-Lorraine and an Archduchess of Austria and Princess of Bohemia, Hungary, and Tuscany by birth.
-Through her marriage to Philipp Albrecht, Duke of Württemberg, Rosa was also a member of the House of Württemberg and Duchess consort of Württemberg.
-Early life
-
-Rosa was the fourth and youngest child of Archduke Peter Ferdinand, Prince of Tuscany, and his wife, Princess Maria Cristina of Bourbon-Two Sicilies.
-Marriage and issue
-
-Rosa married Philipp Albrecht, Duke of Württemberg, eldest child and son of Albrecht, Duke of Württemberg, and his wife, Archduchess Margarete Sophie of Austria, on 1 August 1928 in Friedrichshafen.
-Rosa and Philipp Albrecht had two sons and four daughters:
+King Juan Carlos IQueen Sofía
 
 
-Ancestry
+The Duchess of Soria and HernaniThe Duke of Soria and Hernani
 
-References
 
-Bibliography
+The Dowager Duchess of Calabria
+
+
+Infanta Sofía of Spain (Sofía de Todos los Santos de Borbón y Ortiz; born 29 April 2007) is a member of the Spanish royal family.
+She is the younger daughter of King Felipe VI and Queen Letizia and, as such, is second in the line of succession to the Spanish throne behind her sister, Leonor, Princess of Asturias.
+Sofía was born at the Ruber International Hospital in Madrid during the reign of her paternal grandfather, King Juan Carlos.
+Early life and family
+
+Infanta Sofía was born on 29 April 2007 at 16:50 (CET) at the Ruber International Hospital in Madrid by means of a caesarean section, two days after due date.
+The parents, then the Prince and Princess of Asturias, did the same with Leonor's cells: they were taken to a private center in Arizona, which caused controversy in Spain.
+Sofía was named after her paternal grandmother, Queen Sofía.
+Education
+
+Like her older sister, in 2009, Sofía started her education at the Escuela Infantil Guardia Real, the daycare for the children of the Spanish Royal Guard.
+After announcing in April 2025 that the Infanta had decided not to undergo military service, in July 2025 the Royal Household confirmed that she would study Politics and International Relations at Forward College, an institution affiliated with the University of London.
+Activities
+
+As Infanta of Spain, it is very common to see her in official events with her parents and sister, such as the opening of Parliament, the National Day parade or the Princess of Asturias and Princess of Girona Awards ceremonies.
+In 2021, Infanta Sofía and Princess Leonor participated in their first joint act without their parents, representing the "A Tree for Europe" campaign of the European youth association Equipo Europa .
+On 16 July 2022, she accompanied her sister Leonor in her first international trip.
+In late August 2023, she travelled with her mother, Queen Letizia, to Australia to see the final of the 2023 FIFA Women's World Cup between Spain and England.
+The Queen and the Infanta delivered the trophy to the World Champions, Spain, and celebrated with them on the pitch.
+In July 2024, she travelled with her father, King Felipe, to watch the Spanish national football team compete in the UEFA Euro 2024 final.
+The photography contest aims to showcase the beauty of Spain.
+On 5 December 2024 announced that the photography contest would only feature Sofía and not her parents or her older sister.
+Sofía is due to present the second edition of the photography contest later in 2025.
+In addition, to the photography contest a painting contest formerly known as “Ciudad de Hellín (City of Hellín)” will be changed to the “Certamen Internacional de Pintura “Infanta Sofía” de Hellín (International Painting Contest of Infanata Sofía of Hellín)” to honor her.
+At the end of the month, she attended the Princess of Girona Awards ceremony and the UEFA Women's Euro 2025 final.
+On 4 August 2025, Infanta Sofía along with her sister Leonor, Princess of Asturias attended the annual reception at Marivent Palace for Balearic Islands' authorities and personalities.
+The reception also had King Felipe VI, Queen Letizia, and Queen Sofia in attendance.
+This event marked the first reception attended by Leonor and Sofía.
+Her older sister Leonor’s first official visit to Portugal took place on 12 July 2024.
+In January 2026, Sofía attended the funeral of Princess Irene of Greece and Denmark and replaced her grandmother, Queen Sofía, in some public events.
+Titles, styles and honours
+
+As children of the prince of Asturias, Sofía was born infanta and styled "Her Royal Highness Infanta Doña Sofia".
+Although with the same dignity and status as a prince, Sofia does not hold the title of princess, because in Spain only the heir to the Crown is allowed to carry that title.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +151,9 @@ Bibliography
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +168,23 @@ Bibliography
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,152 +476,124 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (85cf4db5-79b8-4a56-baf6-8cc79d041581)
- Call ID: 85cf4db5-79b8-4a56-baf6-8cc79d041581
+  AssignClass (e192f431-cea7-45dc-aa90-a0a3665e5d41)
+ Call ID: e192f431-cea7-45dc-aa90-a0a3665e5d41
+  Args:
+    type: :Person
+    source: :Infanta_Sofia_of_Spain
+  AssignClass (48d34786-cdd5-4b30-99eb-40e840bfaae5)
+ Call ID: 48d34786-cdd5-4b30-99eb-40e840bfaae5
+  Args:
+    source: :Infanta_Sofia_of_Spain
+    type: :Woman
+  AssignClass (bfed6565-49e4-476f-8c28-5a1e8cb34d47)
+ Call ID: bfed6565-49e4-476f-8c28-5a1e8cb34d47
+  Args:
+    source: :King_Felipe_VI
+    type: :Person
+  AssignClass (c11e1b8c-6cd7-4f24-b4e7-c51888ca4e3f)
+ Call ID: c11e1b8c-6cd7-4f24-b4e7-c51888ca4e3f
+  Args:
+    source: :King_Felipe_VI
+    type: :Man
+  AssignClass (26aa05dd-cf00-4580-80bb-b08b74c27775)
+ Call ID: 26aa05dd-cf00-4580-80bb-b08b74c27775
+  Args:
+    type: :Person
+    source: :Queen_Letizia
+  AssignClass (d34e2f14-0989-40c2-b5ee-ace10ce21271)
+ Call ID: d34e2f14-0989-40c2-b5ee-ace10ce21271
+  Args:
+    source: :Queen_Letizia
+    type: :Woman
+  AssignClass (5504b950-a1f4-4c56-b337-625934482002)
+ Call ID: 5504b950-a1f4-4c56-b337-625934482002
+  Args:
+    source: :Leonor_Princess_of_Asturias
+    type: :Person
+  AssignClass (5ed756f3-b9b6-4fe1-9e0e-ddf8ce9a673c)
+ Call ID: 5ed756f3-b9b6-4fe1-9e0e-ddf8ce9a673c
+  Args:
+    source: :Leonor_Princess_of_Asturias
+    type: :Woman
+  AssignClass (2deb7591-9a52-48d3-8aa2-9cd0478cd0e9)
+ Call ID: 2deb7591-9a52-48d3-8aa2-9cd0478cd0e9
+  Args:
+    type: :Person
+    source: :King_Juan_Carlos_I
+  AssignClass (c7949f63-950d-461f-a03a-ca395b8729e7)
+ Call ID: c7949f63-950d-461f-a03a-ca395b8729e7
+  Args:
+    source: :King_Juan_Carlos_I
+    type: :Man
+  AssignClass (bb108474-b0f0-4f85-a532-b690ad1367a3)
+ Call ID: bb108474-b0f0-4f85-a532-b690ad1367a3
+  Args:
+    type: :Person
+    source: :Queen_Sofia
+  AssignClass (c05d2717-e798-406d-89be-a5ddbef4b49d)
+ Call ID: c05d2717-e798-406d-89be-a5ddbef4b49d
   Args:
     type: :Woman
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-  AssignClass (b05d0ffc-e411-4d4d-8ef3-1ba2bbff28a3)
- Call ID: b05d0ffc-e411-4d4d-8ef3-1ba2bbff28a3
+    source: :Queen_Sofia
+  AddTriple (d8472d77-de61-4526-a3a4-d13cdc35d146)
+ Call ID: d8472d77-de61-4526-a3a4-d13cdc35d146
   Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    type: :Person
-  AddLiteral (82c9f58d-36e7-4b4d-9105-e606e7e67a75)
- Call ID: 82c9f58d-36e7-4b4d-9105-e606e7e67a75
+    relation: :hasFather
+    source: :Infanta_Sofia_of_Spain
+    target: :King_Felipe_VI
+  AddTriple (d3c24064-fe2a-4fee-8452-ed38318f9af2)
+ Call ID: d3c24064-fe2a-4fee-8452-ed38318f9af2
   Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    literal_value: 1906
+    source: :Infanta_Sofia_of_Spain
+    relation: :hasMother
+    target: :Queen_Letizia
+  AddTriple (9eae6c64-77b3-4c61-abfb-7f1dbf302527)
+ Call ID: 9eae6c64-77b3-4c61-abfb-7f1dbf302527
+  Args:
+    source: :Infanta_Sofia_of_Spain
+    relation: :isSisterOf
+    target: :Leonor_Princess_of_Asturias
+  AddTriple (b8537bdb-4ff3-48f6-924e-5a9b1320e23c)
+ Call ID: b8537bdb-4ff3-48f6-924e-5a9b1320e23c
+  Args:
+    relation: :isSisterOf
+    source: :Leonor_Princess_of_Asturias
+    target: :Infanta_Sofia_of_Spain
+  AddTriple (f7af6a4f-c136-4723-aade-8db321406db1)
+ Call ID: f7af6a4f-c136-4723-aade-8db321406db1
+  Args:
+    target: :King_Felipe_VI
+    relation: :hasFather
+    source: :Leonor_Princess_of_Asturias
+  AddTriple (d401ff2d-37c1-42eb-8cfe-44025ebba9c9)
+ Call ID: d401ff2d-37c1-42eb-8cfe-44025ebba9c9
+  Args:
+    relation: :hasMother
+    source: :Leonor_Princess_of_Asturias
+    target: :Queen_Letizia
+  AddLiteral (27ad953b-d079-4dce-9022-6d6c95ef0cf8)
+ Call ID: 27ad953b-d079-4dce-9022-6d6c95ef0cf8
+  Args:
+    literal_value: 2007
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (2ac26931-8a68-4105-a41e-5b0df4291dd9)
- Call ID: 2ac26931-8a68-4105-a41e-5b0df4291dd9
+    source: :Infanta_Sofia_of_Spain
+  AddTriple (66d6ce7e-5749-40e2-ac33-aa28f3c85c67)
+ Call ID: 66d6ce7e-5749-40e2-ac33-aa28f3c85c67
   Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    literal_value: 1983
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (2e8a8f10-a8c3-433b-9e5a-bc565a55d1df)
- Call ID: 2e8a8f10-a8c3-433b-9e5a-bc565a55d1df
-  Args:
-    source: Peter_Ferdinand
-    type: :Man
-  AssignClass (cad72e86-cfc0-4991-aaeb-c1a688b34ec8)
- Call ID: cad72e86-cfc0-4991-aaeb-c1a688b34ec8
-  Args:
-    type: :Ancestor
-    source: Peter_Ferdinand
-  AssignClass (eb9cee9f-e4bf-42c5-a23e-3bee952355fe)
- Call ID: eb9cee9f-e4bf-42c5-a23e-3bee952355fe
-  Args:
-    source: Peter_Ferdinand
-    type: :Person
-  AssignClass (9ccb3db1-af3c-4d20-a291-7541bcd4b453)
- Call ID: 9ccb3db1-af3c-4d20-a291-7541bcd4b453
-  Args:
-    type: :Woman
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (e2769315-1100-4852-99b8-412a3aeff5d9)
- Call ID: e2769315-1100-4852-99b8-412a3aeff5d9
-  Args:
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    type: :Ancestor
-  AssignClass (81a97963-3638-4e79-8044-bd8fa36709f9)
- Call ID: 81a97963-3638-4e79-8044-bd8fa36709f9
-  Args:
-    type: :Person
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddTriple (74c69906-0297-4e95-8685-c0a977436d23)
- Call ID: 74c69906-0297-4e95-8685-c0a977436d23
-  Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    target: Peter_Ferdinand
+    source: :King_Felipe_VI
     relation: :hasFather
-  AddTriple (7410bf8b-c60b-42b3-b9e2-ce58f9f466a8)
- Call ID: 7410bf8b-c60b-42b3-b9e2-ce58f9f466a8
+    target: :King_Juan_Carlos_I
+  AddTriple (86a47f79-7354-49d2-8cc4-1cae4e5b99fb)
+ Call ID: 86a47f79-7354-49d2-8cc4-1cae4e5b99fb
   Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    target: Maria_Cristina_of_Bourbon-Two_Sicilies
+    target: :Queen_Sofia
     relation: :hasMother
-  AssignClass (12b7316c-f57b-4dd2-b98f-c56f60dd9abd)
- Call ID: 12b7316c-f57b-4dd2-b98f-c56f60dd9abd
+    source: :King_Felipe_VI
+  Finish (73345ec9-8eec-4f96-b1b3-9265d3f9b3f4)
+ Call ID: 73345ec9-8eec-4f96-b1b3-9265d3f9b3f4
   Args:
-    type: :Man
-    source: Philipp_Albrecht_Duke_of_Württemberg
-  AssignClass (26f60648-9e5b-4cdf-a2c2-17a4b6dc937f)
- Call ID: 26f60648-9e5b-4cdf-a2c2-17a4b6dc937f
-  Args:
-    source: Philipp_Albrecht_Duke_of_Württemberg
-    type: :Person
-  AssignClass (35fa4eab-bd09-417b-a235-bc8481902dc4)
- Call ID: 35fa4eab-bd09-417b-a235-bc8481902dc4
-  Args:
-    source: Albrecht_Duke_of_Württemberg
-    type: :Man
-  AssignClass (ba90c9d7-e012-4b8a-8256-2064258f4ac6)
- Call ID: ba90c9d7-e012-4b8a-8256-2064258f4ac6
-  Args:
-    source: Albrecht_Duke_of_Württemberg
-    type: :Ancestor
-  AssignClass (e14ee112-9339-40a3-b9a7-7f73d757f7ad)
- Call ID: e14ee112-9339-40a3-b9a7-7f73d757f7ad
-  Args:
-    source: Albrecht_Duke_of_Württemberg
-    type: :Person
-  AssignClass (e97e8f19-b90d-4012-86c9-2154b3ff69da)
- Call ID: e97e8f19-b90d-4012-86c9-2154b3ff69da
-  Args:
-    source: Margarete_Sophie_of_Austria
-    type: :Woman
-  AssignClass (7641bac8-8944-4645-be5f-8f8654ab38b2)
- Call ID: 7641bac8-8944-4645-be5f-8f8654ab38b2
-  Args:
-    type: :Ancestor
-    source: Margarete_Sophie_of_Austria
-  AssignClass (6a07601e-e03b-4bd2-bfc0-cc7cafa1a416)
- Call ID: 6a07601e-e03b-4bd2-bfc0-cc7cafa1a416
-  Args:
-    source: Margarete_Sophie_of_Austria
-    type: :Person
-  AddTriple (13f39bef-8f37-4d22-b69a-7bb8389fd5b8)
- Call ID: 13f39bef-8f37-4d22-b69a-7bb8389fd5b8
-  Args:
-    relation: :hasFather
-    target: Albrecht_Duke_of_Württemberg
-    source: Philipp_Albrecht_Duke_of_Württemberg
-  AddTriple (d3a678d0-3017-45a3-b424-395e3a92e291)
- Call ID: d3a678d0-3017-45a3-b424-395e3a92e291
-  Args:
-    source: Philipp_Albrecht_Duke_of_Württemberg
-    relation: :hasMother
-    target: Margarete_Sophie_of_Austria
-  AddLiteral (b06ee7cd-6f05-4f38-8fca-d86b2eb1a0e3)
- Call ID: b06ee7cd-6f05-4f38-8fca-d86b2eb1a0e3
-  Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    literal_value: 1928
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (cf477f6a-22cf-44ac-af6c-cd334428aa37)
- Call ID: cf477f6a-22cf-44ac-af6c-cd334428aa37
-  Args:
-    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
-    relation: :hasRelation
-    target: Philipp_Albrecht_Duke_of_Württemberg
-  Finish (5d0b11f2-6f90-4ecb-820a-1c266c05aba4)
- Call ID: 5d0b11f2-6f90-4ecb-820a-1c266c05aba4
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -591,35 +682,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,
+  data:Infanta_Sofia_of_Spain a :Person,
           :Woman ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1983 ;
-      :hasFather data:Peter_Ferdinand ;
-      :hasMarriageYear 1928 ;
-      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg .
+      :hasBirthYear 2007 ;
+      :hasFather data:King_Felipe_VI ;
+      :hasMother data:Queen_Letizia ;
+      :isSisterOf data:Leonor_Princess_of_Asturias .
 
-  data:Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
-          :Man,
+  data:King_Juan_Carlos_I a :Man,
           :Person .
 
-  data:Margarete_Sophie_of_Austria a :Ancestor,
-          :Person,
+  data:Leonor_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI ;
+      :hasMother data:Queen_Letizia ;
+      :isSisterOf data:Infanta_Sofia_of_Spain .
+
+  data:Queen_Sofia a :Person,
           :Woman .
 
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Peter_Ferdinand a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man,
+  data:King_Felipe_VI a :Man,
           :Person ;
-      :hasFather data:Albrecht_Duke_of_W%C3%BCrttemberg ;
-      :hasMother data:Margarete_Sophie_of_Austria .
+      :hasFather data:King_Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia .
+
+  data:Queen_Letizia a :Person,
+          :Woman .
 
 
 
@@ -631,9 +719,241 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c1d75df4-e8f6-4020-b5c4-ba4260746c4d)
- Call ID: c1d75df4-e8f6-4020-b5c4-ba4260746c4d
+  ValidateShacl (2dbbda1e-1fd9-4188-b0ca-b12cfc659e67)
+ Call ID: 2dbbda1e-1fd9-4188-b0ca-b12cfc659e67
   Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:18
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Juan_Carlos_I does not have the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Sofia does not have the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Sofia', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI does not have the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Juan_Carlos_I is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia does not have the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Sofia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Sofia', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Juan_Carlos_I is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Sofia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Sofia', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Felipe_VI is missing the :Ancestor class definition required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Letizia is missing the :Ancestor class definition required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Letizia', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5d31fc8a-edf1-4c6b-b152-ebb181714ee0)
+ Call ID: 5d31fc8a-edf1-4c6b-b152-ebb181714ee0
+  Args:
+    source: :King_Juan_Carlos_I
+    type: :Ancestor
+  AssignClass (914e975d-8afc-47c0-9c74-0af5d1832fa5)
+ Call ID: 914e975d-8afc-47c0-9c74-0af5d1832fa5
+  Args:
+    source: :Queen_Sofia
+    type: :Ancestor
+  AssignClass (5c4ffc0c-70a1-45e6-97a1-c2234537a3a5)
+ Call ID: 5c4ffc0c-70a1-45e6-97a1-c2234537a3a5
+  Args:
+    type: :Ancestor
+    source: :King_Felipe_VI
+  AssignClass (4faf80e7-c6da-4017-b57c-3c4d46aa56c4)
+ Call ID: 4faf80e7-c6da-4017-b57c-3c4d46aa56c4
+  Args:
+    source: :Queen_Letizia
+    type: :Ancestor
+  ValidateShacl (c36c61cb-28ed-4d12-ab0c-129b67f33d04)
+ Call ID: c36c61cb-28ed-4d12-ab0c-129b67f33d04
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Infanta_Sofia_of_Spain a :Person,
+          :Woman ;
+      :hasBirthYear 2007 ;
+      :hasFather data:King_Felipe_VI ;
+      :hasMother data:Queen_Letizia ;
+      :isSisterOf data:Leonor_Princess_of_Asturias .
+
+  data:King_Juan_Carlos_I a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Leonor_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI ;
+      :hasMother data:Queen_Letizia ;
+      :isSisterOf data:Infanta_Sofia_of_Spain .
+
+  data:Queen_Sofia a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:King_Felipe_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:King_Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia .
+
+  data:Queen_Letizia a :Ancestor,
+          :Person,
+          :Woman .
+
+
 
 ================================= Tool Message =================================
 
@@ -643,6 +963,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9c3545ad-1811-4f42-a45b-f5bd27b8800a)
- Call ID: 9c3545ad-1811-4f42-a45b-f5bd27b8800a
+  Finish (c0c9b53e-7e6b-4dce-bf69-ce550b4620dc)
+ Call ID: c0c9b53e-7e6b-4dce-bf69-ce550b4620dc
   Args:

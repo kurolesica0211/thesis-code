@@ -7,16 +7,28 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Alexander_Lascelles-_Viscount_Lascelles a :Person ;
+    rdfs:label "Alexander Lascelles, Viscount Lascelles" ;
+    data:posIndicesFull "0:45" ;
+    data:posIndicesPart "344:353",
+        "437:446",
+        "517:526" ;
+    data:wdtLink wdt:Q4719359 ;
+    :alsoKnownAs "Alexander Edgar Lascelles, Viscount Lascelles",
+        "Hon. Alexander Edgar Lascelles",
+        "Hon. Alexander Lascelles",
+        "Orly Lascelles" ;
+    :hasParent data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:David_Lascelles-_8th_Earl_of_Harewood a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:David_Lascelles-_8th_Earl_of_Harewood a :Person ;
     rdfs:label "David Lascelles, 8th Earl of Harewood" ;
     data:posIndicesFull "123:160" ;
     data:posIndicesPart "252:260",
@@ -28,16 +40,9 @@ data:David_Lascelles-_8th_Earl_of_Harewood a :Ancestor,
         "David Henry George Lascelles, 8th Earl of Harewood",
         "David Henry George Lascelles, Viscount Lascelles",
         "David Lascelles, Viscount Lascelles" ;
-    :hasChild data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :hasSex data:male ;
-    :hasSon data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :isFatherOf data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :isParentOf data:Alexander_Lascelles-_Viscount_Lascelles .
+    :hasSex data:male .
 
-data:Margaret_Messenger a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Margaret_Messenger a :Person ;
     rdfs:label "Margaret Messenger" ;
     data:posIndicesFull "181:212" ;
     data:wdtLink wdt:Q75381841 ;
@@ -46,32 +51,9 @@ data:Margaret_Messenger a :Ancestor,
         "Margaret Rosalind Messenger",
         "Margaret Rosalind, Viscountess Lascelles",
         "Margaret, Viscountess Lascelles" ;
-    :hasChild data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :hasSex data:female ;
-    :hasSon data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :isMotherOf data:Alexander_Lascelles-_Viscount_Lascelles ;
-    :isParentOf data:Alexander_Lascelles-_Viscount_Lascelles .
+    :hasSex data:female .
 
-data:Alexander_Lascelles-_Viscount_Lascelles a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alexander Lascelles, Viscount Lascelles" ;
-    data:posIndicesFull "0:45" ;
-    data:posIndicesPart "344:353",
-        "437:446",
-        "517:526" ;
-    data:wdtLink wdt:Q4719359 ;
-    :alsoKnownAs "Alexander Edgar Lascelles, Viscount Lascelles",
-        "Hon. Alexander Edgar Lascelles",
-        "Hon. Alexander Lascelles",
-        "Orly Lascelles" ;
-    :hasFather data:David_Lascelles-_8th_Earl_of_Harewood ;
-    :hasMother data:Margaret_Messenger ;
-    :hasParent data:David_Lascelles-_8th_Earl_of_Harewood,
-        data:Margaret_Messenger ;
-    :hasSex data:male ;
-    :isChildOf data:David_Lascelles-_8th_Earl_of_Harewood,
-        data:Margaret_Messenger ;
-    :isSonOf data:David_Lascelles-_8th_Earl_of_Harewood,
-        data:Margaret_Messenger .
+data:female a :Female .
+
+data:male a :Male .
 

@@ -69,54 +69,87 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Christina Oxenberg (born December 27, 1962) is an American writer, humorist, and fashion designer.
-Her two knitwear clothing lines, Christina Oxenberg and Ox, have appeared in Barneys, Bloomingdale's, and luxury boutiques throughout the world.
-Oxenberg is the daughter of Princess Elizabeth of Yugoslavia and is a descendant of the Serbian House of Karađorđević.
+Infanta Beatriz of Spain, Princess of Civitella-Cesi (Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg; 22 June 1909 – 22 November 2002) was a daughter of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg, wife of Alessandro Torlonia, 5th Prince di Civitella-Cesi.
+She was a paternal aunt of King Juan Carlos I.
+
+
+Childhood
+
+Born at the royal palace of La Granja, San Ildefonso near Segovia, Spain on 22 June 1909, Infanta Beatriz was the third child among the six surviving children of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg.
+She was named Beatriz after her maternal grandmother, Princess Beatrice of the United Kingdom, the youngest daughter of Queen Victoria; Isabel for her great-aunt, Infanta Isabel; Federica for Princess Frederica of Hanover in whose house her parents had become engaged; Alfonsa after her father; Eugenia for Empress Eugénie of the French, her mother's godmother, Cristina and Maria for Maria Christina of Austria, her paternal grandmother, Teresia after Empress Maria Theresa and Ladislaa after Ladislaus the Posthumous.
+Infanta Beatriz was educated within the walls of the Palacio de Oriente by English nannies.
+Infanta Beatriz and her sister Maria Cristina, two years her junior, yearned to go to private schools like the daughters of the nobility who frequented the palace as their playmates, but, following Spanish tradition, they were educated by governesses and private tutors.
+Their parents placed great importance on outdoor exercise and Infanta Beatriz became fond of sports.
 Early life
 
-Christina Oxenberg was born in New York City.
-She is a daughter of Princess Elizabeth of Yugoslavia (born 1936) and her first husband Howard Oxenberg (1919–2010), a Jewish self-made textile and clothing tycoon and close friend of the Kennedy family.
-Princess Elizabeth is the only daughter of Prince Paul of Yugoslavia (who served as regent for his cousin's eldest son King Peter II of Yugoslavia) and Princess Olga of Greece and Denmark.
-She has a full sister, Catherine Oxenberg, and a half-brother on her mother's side, Neil Balfour (born 1970).
-On her father's side she has a half-brother, Robert Oxenberg, and two half-sisters Starr Oxenberg and Ashley Harcourt.
-She is a first cousin of Prince Edward, Duke of Kent, and also a maternal second cousin of Queen Sofía of Spain, making her a second cousin once removed of King Charles III.
-Career
+During the late 1920s, Infanta Beatriz and her sister Infanta Cristina presided at a number of official engagements while heading various institutions and sponsoring events.
+Beatriz and her sister took nursing classes, helping twice a week at the Red Cross in Madrid from 9 am to 1 pm and from 3 to 7 pm.
+Beatriz was president of the Red Cross in San Sebastián, working there during the royal family's summer vacation.
+Beatriz, who resembled her Spanish relatives, was a brunette, tall and lean like her father.
+In 1929, Infanta Beatriz turned twenty years old.
+She fell in love with Miguel Primo de Rivera y Sáenz de Heredia, the youngest son of Miguel Primo de Rivera, who served as Prime Minister of Spain from 1923 to January 1930 with dictatorial powers.
+Because Beatriz and her sister could be carriers of hemophilia, like their mother, King Alphonso XIII was reluctant to follow the tradition of finding husbands for them among Catholic royal princes.
+The two sisters' constant companions were their cousins Alvaro, Alonso and Ataúlfo de Orleans y Borbón, the three sons of Infante Alfonso de Orleans y Borbón.
+It was expected that Infanta Beatriz would marry Alonso and Maria Cristina, Alvaro, but nothing came out of it as their companionship was interrupted when the turbulent political situation in Spain derailed their lives.
+Exile
 
-After high school, Oxenberg worked various jobs in New York ranging from a secretary to a roller-rink attendant.
-Upon her return, Oxenberg secured a job at Studio 54.
-In 1994, Simon & Schuster commissioned Oxenberg to write a semi-autobiographical novel that would eventually be published as Royal Blue.
-As a result of the book, Oxenberg appeared on the cover of New York Magazine and was profiled in People.
-In 2000, Oxenberg went on hiatus from writing and took a job at Robert F. Kennedy Jr.'s Waterkeeper Alliance.
-The two discussed the possibility of a clothing line using Oxenberg's name.
-From 2002 to 2010, Oxenberg produced two clothing lines (Christina Oxenberg and Ox).
-Christina Oxenberg would go on to self-publish several collections of short stories between 2010 and 2014, including Do These Gloves Make My Ass Look Fat?, Life is Short: Read Short Stories, and When in Doubt...Double the Dosage.
-Since 2012 Oxenberg has contributed articles to Key West weekly magazine Konk Life.
-In 2014, Oxenberg helped organize a visit by John Hemingway (Ernest Hemingway's grandson) to David Wolkowsky's Tennessee Williams Collection.
-In 2015, Christina Oxenberg moved to Serbia for a year to write and research her book, Royal Dynasty – An Insider's History of the Serbian Royal Family, which was published in Serbian in 2015 by the publisher, Laguna.
-For her work, Oxenberg received an award from the Serbian Academy of Sciences and Arts in 2016.
-Subsequently, Oxenberg was interviewed by the Sunday Times, Radio Gorgeous and Tatler, and she presented the book at the Oxford Literary Festival on 22 March 2018.
-Bibliography
+The support that Alfonso XIII gave to the unpopular dictatorship of Primo de Rivera discredited the king.
+Lacking the backing of the military forces, King Alfonso felt obliged to leave the country the same day, but did not abdicate, hoping to be called back to the throne.
+Infanta Beatriz, her mother and her siblings, except for Infante Don Juan, who was away on assignment in the Spanish navy, were left behind in Madrid.
+The marriage of their parents was unhappy and even in Spain the King and Queen led separate lives.
+Queen Victoria Eugenie moved to London and later to Lausanne, Switzerland and the two infantas lived for a time with her.
+In 1933 the king moved to Rapallo and as life was too isolated for Beatriz and her sister in Lausanne, they moved with their father to Italy.
+At their daughters' insistence, King Alfonso moved to Rome and rented a house for them there.
+Infanta Beatriz and her sister became friends with the members of the Italian royal family and quickly adapted to life in Rome.
+Beatriz, who was spending summer vacation in Pörtschach am Wörthersee in Austria, was driving a car with her brother Gonzalo as passenger.
+Marriage and issue
 
-Novels
+At the time of her brother's death, Infanta Beatriz was looking forward to her wedding.
+While visiting Ostia, she was introduced to an Italian aristocrat, Alessandro Torlonia, 5th Prince di Civitella-Cesi.
+Torlonia, who had inherited large estates from his father in 1933, was the son of Marino, 4th Prince di Civitella-Cesi and Mary Elsie Moore, an American heiress.
+His family had acquired a fortune in the 18th and 19th centuries by administering the finances of the Vatican, receiving the title of Prince of Civitella-Cesi in 1803 from Pope Pius VII.
+Although Don Alessandro was a prince, he did not belong to a reigning or formerly reigning dynasty, so Beatriz had to marry him morganatically, renouncing her rights of succession to the throne of Spain.
+Alfonso XIII,
+The wedding took place on 14 January 1935 at the Church of the Gesù with Beatriz wearing a 20-foot train, a coronet of orange blossom holding her veil in place, in the presence of King Alfonso, the King and Queen of Italy and some 52 princes of the blood royal.
+Thousands of Spaniards traveled from Spain to give support to the deposed royal family in what became a political event.
+However, neither Queen Victoria Eugenie nor Beatriz's eldest brother, Alfonso, Count of Covadonga, who were on bad terms with the King, attended the wedding.
+Infanta Beatriz of Spain, Princess of Civitella-Cesi, and her husband had four children, eleven grandchildren and nineteen great-grandchildren:
 
 
-Short story collections
+Later life
 
-
-Autobiographies
-
-
-Ancestry
-
-Christina Oxenberg is a direct descendant of Karađorđe, a peasant from Šumadija region in today's Serbia, leader of First Serbian Uprising against the Ottomans, and founder of the Karađorđević Dynasty; of King George I of Greece; of Tsar Alexander II of Russia; of King George II of Great Britain, Empress Catherine II of Russia, and  William the Conqueror, through Frederick of Mecklenburg-Schwerin.
-Oxenberg's maternal grandmother, Princess Olga, was the daughter of Grand Duchess Elena Vladimirovna of Russia and Prince Nicholas of Greece and Denmark, himself the son of another Romanov grand duchess, Queen Olga Konstantinovna of the Hellenes and her Danish-born husband King George of Greece, brother of Queen Alexandra of the United Kingdom and the Empress Maria Fyodorovna.
-Princess Olga was the sister of Princess Marina, who married Prince George, Duke of Kent (an uncle of Queen Elizabeth II); and Olga/Marina were also paternal first cousins of the Duke of Edinburgh (husband of Queen Elizabeth II) through their respective fathers Prince Nicholas of Greece and Denmark and Prince Andrew of Greece and Denmark, who were brothers.
+Infanta Beatriz settled with her husband in the Palazzo Torlonia, a 16th-century Early Renaissance town house on Via della Conciliazione in Rome.
+King Alfonso XIII died in 1941 and as the situation deteriorated in Italy during World War II, Infanta Beatriz with her family joined her siblings in Lausanne, spending the rest of the war close to their mother Queen Victoria Eugenie.
+Beatriz returned to Italy after the war and dwelt there for the rest of her life.
+In 1950, while staying with her brother Juan, in Estoril, Portugal, Infanta Beatriz obtained authorization from Francisco Franco to make a visit to Spain.
+She returned to Spain on 25 August 1950 for the first time since her departure to exile almost twenty years earlier.
+They stayed at the Ritz hotel in Madrid visiting the palace of la Granja, where the Infanta was born, and the Cathedral-Basilica of Our Lady of the Pillar in Zaragoza.
+Infanta Beatriz was received with such a manifestation of support for the monarchy that after only a week, of a planned much longer visit, the government gave her only twenty four hours to leave the country.
+Although the family tried to arrange a marriage for the Infanta's daughter, Sandra, with King Baudouin of Belgium, she caused her parents concern when in 1958 she married Clemente Lequio, a widower with a son, who was given the title "Count Lequio di Assaba" in 1963 by Umberto II of Italy.
+Their son, Alesandro Lequio, moved to Spain in 1991 working initially for Fiat.
+Married to the Italian model Antonia Dell’Atte, a muse in the late 1980s of Giorgio Armani, Alessandro Lequio quickly became a favorite of the Spanish jet set and tabloids, when, after his divorce, he began a relationship with Ana Obregón, a Spanish actress and television presenter.
+Infanta Beatriz's eldest son, Marco, married three times and had three children, one in each marriage.
+His eldest son, Don Giovanni Torlonia, is a well known designer.
+Infanta Beatriz's second son, Marino, died unmarried in 1995 of HIV-related illnesses.
+The youngest child, Olimpia, married in 1965 Paul-Annick Weiller (1933–1998), the first son of the aviator Paul-Louis Weiller of the Javal family.
+Among their six children is Princess Sibilla of Luxembourg.
+Infanta Beatriz remained very fond of Spain and supported the claims to the Spanish throne of her brother Don Juan.
+In 1962, she joined the Spanish royal family in the celebration in Athens for the wedding of her nephew the future King Don Juan Carlos with Princess Sophia of Greece.
+A femur fracture in 1973 never healed completely, affecting Infanta Beatriz's mobility for the rest of her life.
+Her fragile health did not allow her to join her family at the ascension to the throne of King Juan Carlos, the wedding of the Infantas Elena and Cristina or the ceremonies for the return to Spain of the remains of her parents and siblings who had died in exile.
+Nevertheless, Infanta Beatriz not only survived all of her siblings, but visited Spain again in 1998 to visit la Granja.
+In 1999, the Infanta gave an interview with ¡Hola! Magazine, where she discussed her life and the years of the Royal Family's exile from Spain.
+She made her last visit to Spain in 2001 to be with her sister-in-law Doña Maria and returned to the Palacio de la Magdalena, near Santander, where 70 years earlier she had spent her summer vacation for 17 consecutive years until 1930.
+She died at her home in Palazzo Torlonia, Rome on 22 November 2002 at 93 years 5 months.
+She was the last surviving legitimate child of Alfonso XIII and the last surviving legitimate grandchild of Alfonso XII of Spain.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +165,9 @@ Princess Olga was the sister of Princess Marina, who married Prince George, Duke
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +182,23 @@ Princess Olga was the sister of Princess Marina, who married Prince George, Duke
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +216,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +298,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +321,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +341,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +351,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +391,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,145 +490,241 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (650f3483-7041-4082-944e-68d8332550f8)
- Call ID: 650f3483-7041-4082-944e-68d8332550f8
+  AssignClass (4f361cf8-e40c-4b81-a3f0-c7a79daa9523)
+ Call ID: 4f361cf8-e40c-4b81-a3f0-c7a79daa9523
   Args:
+    source: :Infanta_Beatriz_of_Spain
     type: :Woman
-    source: Christina Oxenberg
-  AddLiteral (40d915b9-8c50-4e5e-9084-accf15295ddf)
- Call ID: 40d915b9-8c50-4e5e-9084-accf15295ddf
+  AssignClass (6c72efcc-95ba-4e04-af9c-ad32459ea2d2)
+ Call ID: 6c72efcc-95ba-4e04-af9c-ad32459ea2d2
+  Args:
+    source: :Infanta_Beatriz_of_Spain
+    type: :Person
+  AddLiteral (dac3c0c2-1970-47cb-adfe-d0303cb79f2f)
+ Call ID: dac3c0c2-1970-47cb-adfe-d0303cb79f2f
+  Args:
+    relation: :knownAs
+    literal_type: xsd:string
+    literal_value: Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg
+    source: :Infanta_Beatriz_of_Spain
+  AddLiteral (4b335474-5c40-417a-8053-00fd56c24408)
+ Call ID: 4b335474-5c40-417a-8053-00fd56c24408
   Args:
     relation: :hasBirthYear
-    source: Christina Oxenberg
-    literal_value: 1962
     literal_type: xsd:integer
-  AssignClass (c30dc63c-5944-47c0-ab6e-1432e6d8dcb7)
- Call ID: c30dc63c-5944-47c0-ab6e-1432e6d8dcb7
+    literal_value: 1909
+    source: :Infanta_Beatriz_of_Spain
+  AddLiteral (5eb0f48e-8107-4add-9fc1-abae208cc418)
+ Call ID: 5eb0f48e-8107-4add-9fc1-abae208cc418
   Args:
-    source: Princess Elizabeth of Yugoslavia
-    type: :Woman
-  AddLiteral (02194715-60c6-4130-8925-fb3c6aa2958f)
- Call ID: 02194715-60c6-4130-8925-fb3c6aa2958f
-  Args:
-    source: Princess Elizabeth of Yugoslavia
-    relation: :hasBirthYear
+    source: :Infanta_Beatriz_of_Spain
+    literal_value: 2002
     literal_type: xsd:integer
-    literal_value: 1936
-  AddTriple (4e762f9f-aca8-489b-8028-e9ceb54db2e5)
- Call ID: 4e762f9f-aca8-489b-8028-e9ceb54db2e5
-  Args:
-    target: Princess Elizabeth of Yugoslavia
-    relation: :hasMother
-    source: Christina Oxenberg
-  AssignClass (d882e15d-764b-4ade-a355-6917a66afdb9)
- Call ID: d882e15d-764b-4ade-a355-6917a66afdb9
-  Args:
-    type: :Man
-    source: Howard Oxenberg
-  AddLiteral (6ad37d55-7410-4310-a0e7-f8fdee4e611e)
- Call ID: 6ad37d55-7410-4310-a0e7-f8fdee4e611e
-  Args:
-    literal_value: 1919
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Howard Oxenberg
-  AddLiteral (c6dc3b4b-97b4-4b91-91ac-93d7e3f5b907)
- Call ID: c6dc3b4b-97b4-4b91-91ac-93d7e3f5b907
-  Args:
     relation: :hasDeathYear
-    source: Howard Oxenberg
-    literal_value: 2010
-    literal_type: xsd:integer
-  AddTriple (98f4b3d9-634a-4f88-8161-fb7311708c44)
- Call ID: 98f4b3d9-634a-4f88-8161-fb7311708c44
+  AssignClass (e7027738-03ce-45e4-87a9-fb1ccf86f3f4)
+ Call ID: e7027738-03ce-45e4-87a9-fb1ccf86f3f4
   Args:
-    source: Christina Oxenberg
-    relation: :hasFather
-    target: Howard Oxenberg
-  AssignClass (64e5e954-8ca2-4024-8ca4-d87ae1589e17)
- Call ID: 64e5e954-8ca2-4024-8ca4-d87ae1589e17
-  Args:
+    source: :King_Alfonso_XIII_of_Spain
     type: :Man
-    source: Prince Paul of Yugoslavia
-  AddTriple (44aa0afe-e7ee-42ec-a335-7f0aa55294ef)
- Call ID: 44aa0afe-e7ee-42ec-a335-7f0aa55294ef
+  AssignClass (da54113e-ef3c-4d75-b454-da8b3913a636)
+ Call ID: da54113e-ef3c-4d75-b454-da8b3913a636
   Args:
-    target: Prince Paul of Yugoslavia
-    source: Princess Elizabeth of Yugoslavia
+    source: :King_Alfonso_XIII_of_Spain
+    type: :Person
+  AssignClass (207c1d47-e7bc-42c4-866f-ce8391b8d5ab)
+ Call ID: 207c1d47-e7bc-42c4-866f-ce8391b8d5ab
+  Args:
+    source: :Victoria_Eugenie_of_Battenberg
+    type: :Woman
+  AssignClass (6f4ae42a-44cc-4015-afdb-b744c8a34310)
+ Call ID: 6f4ae42a-44cc-4015-afdb-b744c8a34310
+  Args:
+    source: :Victoria_Eugenie_of_Battenberg
+    type: :Person
+  AddTriple (9773fcd9-ae3b-4033-9508-2e100632d97d)
+ Call ID: 9773fcd9-ae3b-4033-9508-2e100632d97d
+  Args:
+    target: :King_Alfonso_XIII_of_Spain
+    source: :Infanta_Beatriz_of_Spain
     relation: :hasFather
-  AssignClass (723dfea3-9897-4b3c-9e51-bfcfc6c62aa5)
- Call ID: 723dfea3-9897-4b3c-9e51-bfcfc6c62aa5
+  AddTriple (281261a0-1d0f-4cfd-88f7-b64f0e22b5ac)
+ Call ID: 281261a0-1d0f-4cfd-88f7-b64f0e22b5ac
   Args:
-    type: :Woman
-    source: Princess Olga of Greece and Denmark
-  AddTriple (9438621a-808a-4096-ab39-2d0212b19405)
- Call ID: 9438621a-808a-4096-ab39-2d0212b19405
-  Args:
-    target: Princess Olga of Greece and Denmark
-    source: Princess Elizabeth of Yugoslavia
     relation: :hasMother
-  AssignClass (702ac1f5-e144-487d-8c29-4654be93e6ac)
- Call ID: 702ac1f5-e144-487d-8c29-4654be93e6ac
+    source: :Infanta_Beatriz_of_Spain
+    target: :Victoria_Eugenie_of_Battenberg
+  AssignClass (31eb921c-50a0-46b0-b70e-0a1699255328)
+ Call ID: 31eb921c-50a0-46b0-b70e-0a1699255328
   Args:
+    source: :Alessandro_Torlonia
+    type: :Man
+  AssignClass (40b23c0d-2e20-4a9e-aca7-ccaa3fad823c)
+ Call ID: 40b23c0d-2e20-4a9e-aca7-ccaa3fad823c
+  Args:
+    source: :Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi
+    type: :Man
+  AssignClass (6215a29f-1135-42c0-a56e-404626bd76ab)
+ Call ID: 6215a29f-1135-42c0-a56e-404626bd76ab
+  Args:
+    source: :Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi
+    type: :Person
+  AddTriple (f5681c89-f3f6-453b-9e7c-10f55d977f7b)
+ Call ID: f5681c89-f3f6-453b-9e7c-10f55d977f7b
+  Args:
+    relation: :hasRelation
+    target: :Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi
+    source: :Infanta_Beatriz_of_Spain
+  AddLiteral (1889c52a-23df-41d5-a33c-530f166af6a6)
+ Call ID: 1889c52a-23df-41d5-a33c-530f166af6a6
+  Args:
+    source: :Infanta_Beatriz_of_Spain
+    literal_value: 1935
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (3c6a6b67-9db5-4fa9-996f-800f731d09c9)
+ Call ID: 3c6a6b67-9db5-4fa9-996f-800f731d09c9
+  Args:
+    source: :King_Juan_Carlos_I
+    type: :Man
+  AssignClass (5e3b8d52-0f91-45f6-b68b-b0ad5abd0bd6)
+ Call ID: 5e3b8d52-0f91-45f6-b68b-b0ad5abd0bd6
+  Args:
+    source: :King_Juan_Carlos_I
+    type: :Person
+  AddTriple (b0dce79e-7964-41e3-8ccd-c830736c1cbd)
+ Call ID: b0dce79e-7964-41e3-8ccd-c830736c1cbd
+  Args:
+    source: :Infanta_Beatriz_of_Spain
+    target: :King_Juan_Carlos_I
+    relation: :isAuntOf
+  AssignClass (fa60a3c9-5791-457c-bd92-a04b1174fd5a)
+ Call ID: fa60a3c9-5791-457c-bd92-a04b1174fd5a
+  Args:
+    source: :Maria_Cristina
     type: :Woman
-    source: Catherine Oxenberg
-  AddTriple (7d8186b6-65dc-46eb-b80d-a61f899e266f)
- Call ID: 7d8186b6-65dc-46eb-b80d-a61f899e266f
+  AssignClass (e780f2e3-6b7c-4bdc-bc48-013479adf4d7)
+ Call ID: e780f2e3-6b7c-4bdc-bc48-013479adf4d7
+  Args:
+    source: :Maria_Cristina
+    type: :Person
+  AddTriple (44b374c8-aa29-4f05-be3f-33b352272182)
+ Call ID: 44b374c8-aa29-4f05-be3f-33b352272182
   Args:
     relation: :hasSister
-    source: Christina Oxenberg
-    target: Catherine Oxenberg
-  AssignClass (7c23264f-6b7e-4dd5-933e-d904a05b3b0e)
- Call ID: 7c23264f-6b7e-4dd5-933e-d904a05b3b0e
+    target: :Maria_Cristina
+    source: :Infanta_Beatriz_of_Spain
+  AssignClass (09480d12-185c-4c3d-a3c2-50ea7e314880)
+ Call ID: 09480d12-185c-4c3d-a3c2-50ea7e314880
   Args:
+    source: :Gonzalo
     type: :Man
-    source: Neil Balfour
-  AddLiteral (4e96bee2-895c-46f8-a1b1-6a5ec37da8ff)
- Call ID: 4e96bee2-895c-46f8-a1b1-6a5ec37da8ff
+  AssignClass (2a9496c9-52be-4004-8912-8d271621ece0)
+ Call ID: 2a9496c9-52be-4004-8912-8d271621ece0
   Args:
-    literal_type: xsd:integer
-    literal_value: 1970
-    source: Neil Balfour
-    relation: :hasBirthYear
-  AddTriple (1553f730-2b88-4fb3-9268-fdfa816b0b48)
- Call ID: 1553f730-2b88-4fb3-9268-fdfa816b0b48
+    source: :Gonzalo
+    type: :Person
+  AddTriple (23ecdb25-8350-4863-8548-3b08e2d15fd4)
+ Call ID: 23ecdb25-8350-4863-8548-3b08e2d15fd4
   Args:
-    target: Princess Elizabeth of Yugoslavia
-    source: Neil Balfour
-    relation: :hasMother
-  AssignClass (17c0f53b-2265-4d37-be8a-b0ab4c3a28d1)
- Call ID: 17c0f53b-2265-4d37-be8a-b0ab4c3a28d1
+    target: :Gonzalo
+    source: :Infanta_Beatriz_of_Spain
+    relation: :hasBrother
+  AssignClass (7117c13b-cf63-4dad-966b-0cbb485e03f6)
+ Call ID: 7117c13b-cf63-4dad-966b-0cbb485e03f6
   Args:
-    source: Robert Oxenberg
+    source: :Don_Juan
     type: :Man
-  AddTriple (6953a34a-fdf0-47b6-aa32-40d88256707e)
- Call ID: 6953a34a-fdf0-47b6-aa32-40d88256707e
+  AssignClass (5d07753c-503e-4c69-a69b-f28e7d178817)
+ Call ID: 5d07753c-503e-4c69-a69b-f28e7d178817
   Args:
-    target: Howard Oxenberg
-    relation: :hasFather
-    source: Robert Oxenberg
-  AssignClass (2cbe8256-c308-4849-8486-75bade521806)
- Call ID: 2cbe8256-c308-4849-8486-75bade521806
+    source: :Don_Juan
+    type: :Person
+  AddTriple (1c661327-0b33-498c-baae-923bc131d959)
+ Call ID: 1c661327-0b33-498c-baae-923bc131d959
   Args:
-    source: Starr Oxenberg
+    target: :Don_Juan
+    source: :Infanta_Beatriz_of_Spain
+    relation: :hasBrother
+  AssignClass (47d51e66-d79e-4840-ade0-5834586e8cec)
+ Call ID: 47d51e66-d79e-4840-ade0-5834586e8cec
+  Args:
+    source: :Alfonso_Count_of_Covadonga
+    type: :Man
+  AssignClass (019d0f45-6762-4d7e-a905-2120469005e2)
+ Call ID: 019d0f45-6762-4d7e-a905-2120469005e2
+  Args:
+    source: :Alfonso_Count_of_Covadonga
+    type: :Person
+  AddTriple (9a09b8e7-1b7f-4b44-8ce7-5cd069dff560)
+ Call ID: 9a09b8e7-1b7f-4b44-8ce7-5cd069dff560
+  Args:
+    relation: :hasBrother
+    source: :Infanta_Beatriz_of_Spain
+    target: :Alfonso_Count_of_Covadonga
+  AssignClass (550f5dbe-2d77-40ef-acce-83fbed68b034)
+ Call ID: 550f5dbe-2d77-40ef-acce-83fbed68b034
+  Args:
+    source: :Sandra
     type: :Woman
-  AddTriple (36a9dbd0-e23d-4976-b1b8-264c14578240)
- Call ID: 36a9dbd0-e23d-4976-b1b8-264c14578240
+  AssignClass (c61abe70-9cbe-4103-b965-fb6f41590de5)
+ Call ID: c61abe70-9cbe-4103-b965-fb6f41590de5
   Args:
-    relation: :hasFather
-    source: Starr Oxenberg
-    target: Howard Oxenberg
-  AssignClass (cedeaf93-dfe6-4680-9ab9-d0b8a55bc2ce)
- Call ID: cedeaf93-dfe6-4680-9ab9-d0b8a55bc2ce
+    source: :Sandra
+    type: :Person
+  AddTriple (72faff96-63ef-402e-baa2-f587613f082f)
+ Call ID: 72faff96-63ef-402e-baa2-f587613f082f
   Args:
-    source: Ashley Harcourt
+    relation: :hasDaughter
+    target: :Sandra
+    source: :Infanta_Beatriz_of_Spain
+  AssignClass (90f8c367-2a71-4526-bb66-6c2d7bd72fae)
+ Call ID: 90f8c367-2a71-4526-bb66-6c2d7bd72fae
+  Args:
+    source: :Marco
+    type: :Man
+  AssignClass (7bfab879-46bd-4ed9-bf40-6eb1418e753f)
+ Call ID: 7bfab879-46bd-4ed9-bf40-6eb1418e753f
+  Args:
+    source: :Marco
+    type: :Person
+  AddTriple (650e1ab8-6034-43d2-be07-7fc8beeb18c9)
+ Call ID: 650e1ab8-6034-43d2-be07-7fc8beeb18c9
+  Args:
+    target: :Marco
+    source: :Infanta_Beatriz_of_Spain
+    relation: :hasSon
+  AssignClass (c6fc5c2b-7834-4a5c-9aa4-0e897f874f28)
+ Call ID: c6fc5c2b-7834-4a5c-9aa4-0e897f874f28
+  Args:
+    source: :Marino_son_of_Beatriz
+    type: :Man
+  AssignClass (35cc88a6-9750-47f3-9f15-84e20464eff4)
+ Call ID: 35cc88a6-9750-47f3-9f15-84e20464eff4
+  Args:
+    source: :Marino_son_of_Beatriz
+    type: :Person
+  AddTriple (cba741dc-dc62-46da-9c71-79c179ad4e8a)
+ Call ID: cba741dc-dc62-46da-9c71-79c179ad4e8a
+  Args:
+    relation: :hasSon
+    source: :Infanta_Beatriz_of_Spain
+    target: :Marino_son_of_Beatriz
+  AssignClass (dcff2c92-f4b7-4b62-b186-707f11dfcfb8)
+ Call ID: dcff2c92-f4b7-4b62-b186-707f11dfcfb8
+  Args:
+    source: :Olimpia
     type: :Woman
-  AddTriple (73a427d7-a4eb-42af-aedd-eadefa0408fa)
- Call ID: 73a427d7-a4eb-42af-aedd-eadefa0408fa
+  AssignClass (5b755489-6ebd-4a73-a9cc-6a943cc8010d)
+ Call ID: 5b755489-6ebd-4a73-a9cc-6a943cc8010d
   Args:
-    target: Howard Oxenberg
-    source: Ashley Harcourt
-    relation: :hasFather
-  Finish (92ddcb40-f38f-4404-adbe-758507685d23)
- Call ID: 92ddcb40-f38f-4404-adbe-758507685d23
+    source: :Olimpia
+    type: :Person
+  AddTriple (ba630386-8eda-45b7-afc7-335d2e443157)
+ Call ID: ba630386-8eda-45b7-afc7-335d2e443157
+  Args:
+    target: :Olimpia
+    source: :Infanta_Beatriz_of_Spain
+    relation: :hasDaughter
+  Finish (43363a3b-a3f2-49fd-97ab-d9694a6f1d9f)
+ Call ID: 43363a3b-a3f2-49fd-97ab-d9694a6f1d9f
   Args:

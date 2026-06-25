@@ -2,59 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_IX a :Man .
+data:Prince_Lorenz_of_Belgium a :Man,
+        :Person ;
+    :hasAncestor data:Emperor_Charles_I_of_Austria ;
+    :hasBirthYear 1955 ;
+    :hasFather data:Robert_Archduke_of_Austria-Este ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Archduchess_Margaret ;
+    :hasRelation data:Princess_Astrid_of_Belgium ;
+    :hasSex data:Male .
 
-data:Christian_son_of_Knud a :Man ;
-    :hasFather data:Knud ;
-    :hasMother data:Caroline-Mathilde .
-
-data:Elisabeth a :Woman ;
-    :hasFather data:Knud ;
-    :hasMother data:Caroline-Mathilde .
-
-data:Gustav a :Man .
-
-data:Harald a :Man .
-
-data:Ingolf a :Man ;
-    :hasFather data:Knud ;
-    :hasMother data:Caroline-Mathilde .
-
-data:Margrethe_II a :Woman ;
-    :hasFather data:Frederik_IX .
-
-data:Crown_Prince_Frederik a :Ancestor,
-        :Man .
-
-data:Frederik_VIII a :Ancestor,
-        :Man ;
-    :hasFather data:Crown_Prince_Frederik .
-
-data:Helena a :Ancestor,
-        :Woman .
-
-data:Alexandrine a :Ancestor,
-        :Woman .
-
-data:Christian_X a :Ancestor,
-        :Man ;
-    :hasFather data:Frederik_VIII .
-
-data:Frederik_IX a :Ancestor,
-        :Man ;
-    :hasFather data:Christian_X ;
-    :hasMother data:Alexandrine .
-
-data:Caroline-Mathilde a :Ancestor,
+data:Archduchess_Margaret a :Ancestor,
+        :Person,
         :Woman ;
-    :hasMother data:Helena .
+    :hasSex data:Female .
 
-data:Knud a :Ancestor,
-        :Man ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1976 ;
-    :hasFather data:Christian_X ;
-    :hasMarriageYear 1933 ;
-    :hasMother data:Alexandrine ;
-    :isBrotherOf data:Frederik_IX .
+data:Emperor_Charles_I_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:King_Albert_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Princess_Astrid_of_Belgium a :Person,
+        :Woman ;
+    :hasFather data:King_Albert_II ;
+    :hasMother data:Queen_Paola ;
+    :hasSex data:Female .
+
+data:Queen_Paola a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Robert_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

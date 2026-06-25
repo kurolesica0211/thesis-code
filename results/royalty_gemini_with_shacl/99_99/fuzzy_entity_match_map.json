@@ -16,49 +16,49 @@
       "qid": "Q177769",
       "label": "Princess Feodora of Saxe-Meiningen",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Bernhard_III-_Duke_of_Saxe-Meiningen",
       "qid": "Q61104",
       "label": "Bernhard III, Duke of Saxe-Meiningen",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Charlotte_of_Prussia",
       "qid": "Q58670",
       "label": "Princess Charlotte of Prussia",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Margaret_of_Prussia",
-      "qid": "Q61338",
-      "label": "Princess Margaret of Prussia",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Wilhelm_II",
-      "qid": "Q2677",
-      "label": "Wilhelm II",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Frederick_III-_German_Emperor",
       "qid": "Q58600",
       "label": "Frederick III, German Emperor",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Victoria-_Princess_Royal",
       "qid": "Q116728",
       "label": "Victoria, Princess Royal",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Margaret_of_Prussia",
+      "qid": "Q61338",
+      "label": "Princess Margaret of Prussia",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelm_II",
+      "qid": "Q2677",
+      "label": "Wilhelm II",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -73,11 +73,11 @@
       "ground_truth_qid": "Q58670",
       "ground_truth_label": "Princess Charlotte of Prussia",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Charlotte of Prussia",
       "best_candidate_label": "Princess Charlotte of Prussia",
       "best_candidate_qid": "Q58670",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -91,11 +91,11 @@
       "ground_truth_qid": "Q177769",
       "ground_truth_label": "Princess Feodora of Saxe-Meiningen",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Feodora of Saxe-Meiningen",
       "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
       "best_candidate_qid": "Q177769",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -109,11 +109,11 @@
       "ground_truth_qid": "Q58600",
       "ground_truth_label": "Frederick III, German Emperor",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Friedrich III of Germany",
       "best_candidate_label": "Frederick III, German Emperor",
       "best_candidate_qid": "Q58600",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -127,11 +127,11 @@
       "ground_truth_qid": "Q61104",
       "ground_truth_label": "Bernhard III, Duke of Saxe-Meiningen",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Bernhard III- Duke of Saxe-Meiningen",
       "best_candidate_label": "Bernhard III, Duke of Saxe-Meiningen",
       "best_candidate_qid": "Q61104",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9857142857142858
     },
     {
@@ -145,11 +145,11 @@
       "ground_truth_qid": "Q116728",
       "ground_truth_label": "Victoria, Princess Royal",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Victoria",
       "best_candidate_label": "Victoria, Princess Royal",
       "best_candidate_qid": "Q116728",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8333333333333333
     },
     {
@@ -167,7 +167,7 @@
       "best_candidate_match_text": "Friedrich Wilhelm Viktor Albert von Hohenzollern",
       "best_candidate_label": "Wilhelm II",
       "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3764705882352941
     }
   ],

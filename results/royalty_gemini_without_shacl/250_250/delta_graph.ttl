@@ -2,35 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:GeorgeMountbatten a :Man,
+data:Ernst_August_Brother a :Man,
         :Person ;
-    :hasBirthYear 1892 ;
-    :hasDeathYear 1938 ;
-    :hasFather data:LouisMountbatten1stMarquess ;
-    :hasMarriageYear 1916 ;
-    :hasMother data:VictoriaOfHesse ;
-    :hasRelation data:NadejdaMikhailovnaDeTorby ;
-    :isSiblingOf data:LouisMountbatten1stEarl,
-        data:PrincessAlice,
-        data:QueenLouiseOfSweden .
+    :isBrotherOf data:Ludwig_Rudolf_of_Hanover .
 
-data:LouisMountbatten1stEarl a :Man .
+data:Otto_Heinrich a :Man,
+        :Person ;
+    :hasFather data:Ludwig_Rudolf_of_Hanover ;
+    :hasMother data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
 
-data:LouisMountbatten1stMarquess a :Ancestor,
-        :Man .
+data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli a :Man,
+        :Person .
 
-data:MichaelMikhailovichRomanov a :Man .
+data:Ernst_August_Prince_of_Hanover a :Man,
+        :Person .
 
-data:NadejdaMikhailovnaDeTorby a :Woman ;
-    :hasFather data:MichaelMikhailovichRomanov ;
-    :hasMother data:SophieVonMerenberg .
-
-data:PrincessAlice a :Woman .
-
-data:QueenLouiseOfSweden a :Woman .
-
-data:SophieVonMerenberg a :Woman .
-
-data:VictoriaOfHesse a :Ancestor,
+data:Maria_Perpetua_Euphemia_von_Auersperg a :Person,
         :Woman .
+
+data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
+
+data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Person,
+        :Woman ;
+    :hasFather data:Ariprand_von_Thurn_und_Valsassina-Como-Vercelli ;
+    :hasMother data:Maria_Perpetua_Euphemia_von_Auersperg .
+
+data:Ludwig_Rudolf_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Isabella_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
 

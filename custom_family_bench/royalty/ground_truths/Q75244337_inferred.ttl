@@ -1,0 +1,363 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Paul of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "1064:1082"^^xsd:string ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich"^^xsd:string,
+        "Paul Karageorgevich"^^xsd:string,
+        "Paul of Yugoslavia"^^xsd:string,
+        "Pavle Karađorđević"^^xsd:string,
+        "Prince of Yugoslavia Paul"^^xsd:string,
+        "Prince of Yugoslavia Pavle"^^xsd:string,
+        "Prince of Yugoslavia Pavle Karađorđević"^^xsd:string ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Princess_Elizabeth_of_Serbia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1335:1370"^^xsd:string,
+        "1344:1370"^^xsd:string ;
+    data:posIndicesPart "1694:1702"^^xsd:string,
+        "2010:2018"^^xsd:string,
+        "2144:2152"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasChild data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isAuntOf data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Howard Oxenberg"^^xsd:string ;
+    data:posIndicesFull "976:991"^^xsd:string ;
+    data:posIndicesPart "1105:1113"^^xsd:string,
+        "1195:1203"^^xsd:string,
+        "1447:1455"^^xsd:string,
+        "1746:1754"^^xsd:string,
+        "1833:1841"^^xsd:string,
+        "1924:1932"^^xsd:string,
+        "2197:2205"^^xsd:string,
+        "2299:2307"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2687:2695"^^xsd:string,
+        "2799:2807"^^xsd:string,
+        "2809:2817"^^xsd:string,
+        "2944:2952"^^xsd:string,
+        "3075:3083"^^xsd:string,
+        "3198:3206"^^xsd:string,
+        "3263:3271"^^xsd:string,
+        "3298:3306"^^xsd:string,
+        "3664:3672"^^xsd:string,
+        "3759:3767"^^xsd:string,
+        "3838:3846"^^xsd:string,
+        "3937:3945"^^xsd:string ;
+    data:wdtLink wdt:Q75393300 ;
+    :hasBrother data:Howard_Oxenberg ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Oxenberg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg ;
+    :isBloodrelationOf data:Howard_Oxenberg ;
+    :isBrotherOf data:Howard_Oxenberg ;
+    :isFatherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSiblingOf data:Howard_Oxenberg ;
+    :isUncleOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:India_Oxenberg a :Person,
+        :Woman ;
+    rdfs:label "India Oxenberg"^^xsd:string ;
+    data:posIndicesFull "0:20"^^xsd:string ;
+    data:posIndicesPart "1105:1113"^^xsd:string,
+        "1195:1203"^^xsd:string,
+        "1447:1455"^^xsd:string,
+        "1746:1754"^^xsd:string,
+        "1833:1841"^^xsd:string,
+        "1924:1932"^^xsd:string,
+        "2197:2205"^^xsd:string,
+        "2299:2307"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "254:262"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2687:2695"^^xsd:string,
+        "2799:2807"^^xsd:string,
+        "2809:2817"^^xsd:string,
+        "2944:2952"^^xsd:string,
+        "3075:3083"^^xsd:string,
+        "3198:3206"^^xsd:string,
+        "3263:3271"^^xsd:string,
+        "3298:3306"^^xsd:string,
+        "3664:3672"^^xsd:string,
+        "3759:3767"^^xsd:string,
+        "3838:3846"^^xsd:string,
+        "3937:3945"^^xsd:string,
+        "553:561"^^xsd:string,
+        "687:695"^^xsd:string,
+        "779:787"^^xsd:string ;
+    data:wdtLink wdt:Q75244337 ;
+    :alsoKnownAs "India Riven Oxenberg"^^xsd:string ;
+    :hasAncestor data:Catherine_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasMother data:Catherine_Oxenberg ;
+    :hasParent data:Catherine_Oxenberg ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:India_Oxenberg ;
+    :isBloodrelationOf data:India_Oxenberg ;
+    :isChildOf data:Catherine_Oxenberg ;
+    :isDaughterOf data:Catherine_Oxenberg ;
+    :isSiblingOf data:India_Oxenberg ;
+    :isSisterOf data:India_Oxenberg .
+
+data:Christina_Oxenberg a :Person,
+        :Woman ;
+    rdfs:label "Christina Oxenberg"^^xsd:string ;
+    data:posIndicesFull "1418:1436"^^xsd:string ;
+    data:posIndicesPart "1447:1455"^^xsd:string,
+        "1746:1754"^^xsd:string,
+        "1833:1841"^^xsd:string,
+        "1924:1932"^^xsd:string,
+        "2197:2205"^^xsd:string,
+        "2299:2307"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2687:2695"^^xsd:string,
+        "2799:2807"^^xsd:string,
+        "2809:2817"^^xsd:string,
+        "2944:2952"^^xsd:string,
+        "3075:3083"^^xsd:string,
+        "3198:3206"^^xsd:string,
+        "3263:3271"^^xsd:string,
+        "3298:3306"^^xsd:string,
+        "3664:3672"^^xsd:string,
+        "3759:3767"^^xsd:string,
+        "3838:3846"^^xsd:string,
+        "3937:3945"^^xsd:string ;
+    data:wdtLink wdt:Q27107390 ;
+    :hasAncestor data:Howard_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAuntOf data:India_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:Princess_Elizabeth_of_Serbia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Elizabeth of Serbia"^^xsd:string ;
+    data:posIndicesFull "114:146"^^xsd:string,
+        "939:971"^^xsd:string ;
+    data:posIndicesPart "1084:1093"^^xsd:string,
+        "1172:1178"^^xsd:string,
+        "1694:1702"^^xsd:string,
+        "2010:2018"^^xsd:string,
+        "2144:2152"^^xsd:string,
+        "524:532"^^xsd:string ;
+    data:wdtLink wdt:Q257926 ;
+    :alsoKnownAs "Elizabeth Karageorgievich, Princess of Yugoslavia"^^xsd:string,
+        "Jelisaveta Karađorđević"^^xsd:string,
+        "Princess Elizabeth of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasChild data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Serbia ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:India_Oxenberg ;
+    :isAuntOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Serbia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSiblingOf data:Princess_Elizabeth_of_Serbia ;
+    :isSisterOf data:Princess_Elizabeth_of_Serbia .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Catherine Oxenberg"^^xsd:string ;
+    data:posIndicesFull "366:384"^^xsd:string,
+        "733:751"^^xsd:string ;
+    data:posIndicesPart "1105:1113"^^xsd:string,
+        "1195:1203"^^xsd:string,
+        "1447:1455"^^xsd:string,
+        "1746:1754"^^xsd:string,
+        "1833:1841"^^xsd:string,
+        "1924:1932"^^xsd:string,
+        "2197:2205"^^xsd:string,
+        "2299:2307"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2687:2695"^^xsd:string,
+        "2799:2807"^^xsd:string,
+        "2809:2817"^^xsd:string,
+        "2944:2952"^^xsd:string,
+        "3075:3083"^^xsd:string,
+        "3198:3206"^^xsd:string,
+        "3263:3271"^^xsd:string,
+        "3298:3306"^^xsd:string,
+        "3341:3350"^^xsd:string,
+        "3444:3453"^^xsd:string,
+        "3551:3560"^^xsd:string,
+        "3664:3672"^^xsd:string,
+        "3759:3767"^^xsd:string,
+        "3838:3846"^^xsd:string,
+        "3937:3945"^^xsd:string,
+        "553:561"^^xsd:string,
+        "779:787"^^xsd:string ;
+    data:wdtLink wdt:Q235284 ;
+    :alsoKnownAs "Catherine van Dien"^^xsd:string ;
+    :hasAncestor data:Howard_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasChild data:India_Oxenberg ;
+    :hasDaughter data:India_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Serbia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Oxenberg,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAncestorOf data:India_Oxenberg ;
+    :isAuntOf data:India_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isMotherOf data:India_Oxenberg ;
+    :isParentOf data:India_Oxenberg ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+

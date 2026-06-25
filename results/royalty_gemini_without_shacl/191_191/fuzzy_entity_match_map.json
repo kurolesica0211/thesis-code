@@ -1,43 +1,43 @@
 {
   "run_directory": "results/royalty_gemini_without_shacl",
   "task_directory": "results/royalty_gemini_without_shacl/191_191",
-  "text_file": "Q261322.txt",
-  "text_key": "Q261322",
-  "article": "https://en.wikipedia.org/wiki/Princess_Isabelle_of_Orl%C3%A9ans_(1878%E2%80%931961)",
-  "article_key": "Princess Isabelle of Orléans",
+  "text_file": "Q260525.txt",
+  "text_key": "Q260525",
+  "article": "https://en.wikipedia.org/wiki/Princess_H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans",
+  "article_key": "Princess Hélène of Orléans",
   "main_entity": {
-    "uri": "http://example.com/data#Princess_Isabelle_dOrléans",
-    "qid": "Q261322",
-    "label": "Princess Isabelle d’Orléans"
+    "uri": "http://example.com/data#Princess_Hélène_of_Orléans",
+    "qid": "Q260525",
+    "label": "Princess Hélène of Orléans"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Princess_Isabelle_dOrléans",
-      "qid": "Q261322",
-      "label": "Princess Isabelle d’Orléans",
+      "uri": "http://example.com/data#Princess_Hélène_of_Orléans",
+      "qid": "Q260525",
+      "label": "Princess Hélène of Orléans",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Philippe-_Count_of_Paris",
       "qid": "Q354477",
       "label": "Prince Philippe, Count of Paris",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_María_Isabel_of_Orléans",
       "qid": "Q242879",
       "label": "Princess María Isabel of Orléans",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Philippe_Count_of_Paris",
-      "extracted_local_name": "Philippe_Count_of_Paris",
-      "embedding_text": "Philippe Count of Paris",
+      "extracted_uri": "http://example.org/data/PhilippeCountOfParis",
+      "extracted_local_name": "PhilippeCountOfParis",
+      "embedding_text": "Philippe Count Of Paris",
       "extracted_gender": "male",
       "matched": true,
       "score": 0.8888888888888888,
@@ -45,35 +45,35 @@
       "ground_truth_qid": "Q354477",
       "ground_truth_label": "Prince Philippe, Count of Paris",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Philippe- Count of Paris",
       "best_candidate_label": "Prince Philippe, Count of Paris",
       "best_candidate_qid": "Q354477",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8888888888888888
     },
     {
-      "extracted_uri": "http://example.org/data/Isabelle_of_Orleans",
-      "extracted_local_name": "Isabelle_of_Orleans",
-      "embedding_text": "Isabelle of Orleans",
+      "extracted_uri": "http://example.org/data/HeleneOfOrleans",
+      "extracted_local_name": "HeleneOfOrleans",
+      "embedding_text": "Helene Of Orleans",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.8200000000000001,
-      "ground_truth_uri": "http://example.com/data#Princess_Isabelle_dOrléans",
-      "ground_truth_qid": "Q261322",
-      "ground_truth_label": "Princess Isabelle d’Orléans",
+      "score": 0.7857142857142857,
+      "ground_truth_uri": "http://example.com/data#Princess_Hélène_of_Orléans",
+      "ground_truth_qid": "Q260525",
+      "ground_truth_label": "Princess Hélène of Orléans",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Isabelle of Orleans",
-      "best_candidate_label": "Princess Isabelle d’Orléans",
-      "best_candidate_qid": "Q261322",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8200000000000001
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Helene of Orleans",
+      "best_candidate_label": "Princess Hélène of Orléans",
+      "best_candidate_qid": "Q260525",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7857142857142857
     },
     {
-      "extracted_uri": "http://example.org/data/Maria_Isabel_of_Spain",
-      "extracted_local_name": "Maria_Isabel_of_Spain",
-      "embedding_text": "Maria Isabel of Spain",
+      "extracted_uri": "http://example.org/data/MariaIsabelOfSpain",
+      "extracted_local_name": "MariaIsabelOfSpain",
+      "embedding_text": "Maria Isabel Of Spain",
       "extracted_gender": "female",
       "matched": true,
       "score": 0.7428571428571429,
@@ -81,17 +81,17 @@
       "ground_truth_qid": "Q242879",
       "ground_truth_label": "Princess María Isabel of Orléans",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Maria Isabella",
       "best_candidate_label": "Princess María Isabel of Orléans",
       "best_candidate_qid": "Q242879",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7428571428571429
     },
     {
-      "extracted_uri": "http://example.org/data/Francoise_dOrleans",
-      "extracted_local_name": "Francoise_dOrleans",
-      "embedding_text": "Francoise d Orleans",
+      "extracted_uri": "http://example.org/data/AmelieOfOrleans",
+      "extracted_local_name": "AmelieOfOrleans",
+      "embedding_text": "Amelie Of Orleans",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -100,17 +100,17 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Isabelle d Orléans",
-      "best_candidate_label": "Princess Isabelle d’Orléans",
-      "best_candidate_qid": "Q261322",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.6521739130434783
+      "best_candidate_match_text": "Louis-Philippe Albert d'Orléans",
+      "best_candidate_label": "Prince Philippe, Count of Paris",
+      "best_candidate_qid": "Q354477",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4583333333333333
     },
     {
-      "extracted_uri": "http://example.org/data/Philippe_of_Orleans_Duke_of_Orleans",
-      "extracted_local_name": "Philippe_of_Orleans_Duke_of_Orleans",
-      "embedding_text": "Philippe of Orleans Duke of Orleans",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/IsabelleDuchessOfGuise",
+      "extracted_local_name": "IsabelleDuchessOfGuise",
+      "embedding_text": "Isabelle Duchess Of Guise",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -118,34 +118,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Maria Isabella",
+      "best_candidate_label": "Princess María Isabel of Orléans",
+      "best_candidate_qid": "Q242879",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.358974358974359
     },
     {
-      "extracted_uri": "http://example.org/data/Prince_Jean_Duke_of_Guise",
-      "extracted_local_name": "Prince_Jean_Duke_of_Guise",
-      "embedding_text": "Prince Jean Duke of Guise",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
-    },
-    {
-      "extracted_uri": "http://example.org/data/Robert_Duke_of_Chartres",
-      "extracted_local_name": "Robert_Duke_of_Chartres",
-      "embedding_text": "Robert Duke of Chartres",
+      "extracted_uri": "http://example.org/data/PhilippeDukeOfOrleans",
+      "extracted_local_name": "PhilippeDukeOfOrleans",
+      "embedding_text": "Philippe Duke Of Orleans",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -162,8 +144,8 @@
     }
   ],
   "summary": {
-    "entities_total": 7,
+    "entities_total": 6,
     "entities_matched": 3,
-    "entities_unmatched": 4
+    "entities_unmatched": 3
   }
 }

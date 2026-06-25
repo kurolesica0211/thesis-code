@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Constantine_Alexios_of_Greece_and_Denmark a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Constantine_Alexios_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince Constantine Alexios of Greece and Denmark" ;
     data:posIndicesFull "78:126",
         "85:126" ;
@@ -50,47 +42,14 @@ data:Prince_Constantine_Alexios_of_Greece_and_Denmark a :Man,
         "Prince Konstantinos-Alexios of Greece and Denmark" ;
     :hasSex data:male .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "19:30",
-        "19:39" ;
-    data:posIndicesPart "1003:1008",
-        "729:734" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Nikolaos_of_Greece_and_Denmark,
-        data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
-
-data:Prince_Nikolaos_of_Greece_and_Denmark a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Nikolaos_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince Nikolaos of Greece and Denmark" ;
     data:posIndicesFull "888:925" ;
     data:wdtLink wdt:Q583639 ;
-    :hasFather data:Constantine_II_of_Greece ;
     :hasParent data:Constantine_II_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isBrotherOf data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isChildOf data:Constantine_II_of_Greece ;
-    :isSiblingOf data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isSonOf data:Constantine_II_of_Greece ;
-    :isUncleOf data:Prince_Constantine_Alexios_of_Greece_and_Denmark .
+    :hasSex data:male .
 
-data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexia_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Alexia of Greece and Denmark" ;
     data:posIndicesFull "97:126" ;
     data:posIndicesPart "1052:1060",
@@ -107,20 +66,25 @@ data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
         "Alexia zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Princess of Greece",
         "Princess Alexia, Mrs Morales",
         "Princess Alexia, Mrs. Morales" ;
-    :hasBrother data:Prince_Nikolaos_of_Greece_and_Denmark ;
-    :hasFather data:Constantine_II_of_Greece ;
     :hasParent data:Constantine_II_of_Greece ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Constantine_Alexios_of_Greece_and_Denmark ;
-    :isChildOf data:Constantine_II_of_Greece ;
-    :isDaughterOf data:Constantine_II_of_Greece ;
-    :isSiblingOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
-    :isSisterOf data:Prince_Nikolaos_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "962:970" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
     data:posIndicesFull "660:674" ;
     data:posIndicesPart "1124:1135",
@@ -141,16 +105,10 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark,
-        data:Princess_Alexia_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Alexia_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Prince_Nikolaos_of_Greece_and_Denmark,
-        data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark,
-        data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isSiblingOf data:Queen_Sofía_of_Spain .
+    :hasParent data:Frederica_of_Hanover ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

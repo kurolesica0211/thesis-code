@@ -2,50 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amanda_Knatchbull a :Person,
-        :Woman ;
-    :hasSex data:Female ;
-    :isDaughterOf data:John_Knatchbull,
-        data:Patricia_Mountbatten .
-
-data:Nicholas_Knatchbull a :Man,
+data:Mark_Lascelles a :Man,
         :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:John_Knatchbull,
-        data:Patricia_Mountbatten .
+    :hasFather data:George_Henry_Hubert_Lascelles ;
+    :hasMother data:Patricia_Bambi_Tuckwell ;
+    :hasSex data:Male .
 
-data:Earl_Mountbatten_of_Burma a :Ancestor,
+data:Queen_Mary_Princess_Royal a :Person .
+
+data:George_Henry_Hubert_Lascelles a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Henry_6th_Earl_of_Harewood ;
+    :hasMarriageYear 1949,
+        1967 ;
+    :hasMother data:Princess_Mary_Princess_Royal ;
+    :hasRelation data:Marion_Stein,
+        data:Patricia_Bambi_Tuckwell ;
+    :hasSex data:Male .
+
+data:Henry_6th_Earl_of_Harewood a :Ancestor,
         :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Edwina_Ashley a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Lady_Pamela_Hicks a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Patricia_Mountbatten a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2017 ;
-    :hasFather data:Earl_Mountbatten_of_Burma ;
-    :hasMarriageYear 1946 ;
-    :hasMother data:Edwina_Ashley ;
-    :hasRelation data:John_Knatchbull ;
-    :hasSex data:Female ;
-    :isSisterOf data:Lady_Pamela_Hicks .
-
-data:John_Knatchbull a :Ancestor,
+data:King_George_V a :Ancestor,
         :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Male a :Sex .
+data:Marion_Stein a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Mary_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasSex data:Female .
+
+data:Queen_Mary a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Patricia_Bambi_Tuckwell a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
 
 data:Female a :Sex .
+
+data:Male a :Sex .
 

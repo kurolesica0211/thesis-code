@@ -1,0 +1,319 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AnnaDosti a :Ancestor,
+        :Woman ;
+    :hasChild data:KatherineClairyBatis ;
+    :hasDaughter data:KatherineClairyBatis ;
+    :hasRelation data:AnnaDosti,
+        data:KatherineClairyBatis,
+        data:RobertBatis ;
+    :hasSister data:AnnaDosti ;
+    :isAncestorOf data:KatherineClairyBatis ;
+    :isAuntOf data:KatherineClairyBatis ;
+    :isBloodrelationOf data:AnnaDosti ;
+    :isMotherOf data:KatherineClairyBatis ;
+    :isParentOf data:KatherineClairyBatis ;
+    :isSiblingOf data:AnnaDosti ;
+    :isSisterOf data:AnnaDosti .
+
+data:RobertBatis a :Ancestor,
+        :Man ;
+    :hasBrother data:RobertBatis ;
+    :hasChild data:KatherineClairyBatis ;
+    :hasDaughter data:KatherineClairyBatis ;
+    :hasRelation data:AnnaDosti,
+        data:KatherineClairyBatis,
+        data:RobertBatis ;
+    :isAncestorOf data:KatherineClairyBatis ;
+    :isBloodrelationOf data:RobertBatis ;
+    :isBrotherOf data:RobertBatis ;
+    :isFatherOf data:KatherineClairyBatis ;
+    :isParentOf data:KatherineClairyBatis ;
+    :isSiblingOf data:RobertBatis ;
+    :isUncleOf data:KatherineClairyBatis .
+
+data:KatherineClairyBatis a :Woman ;
+    :hasAncestor data:AnnaDosti,
+        data:RobertBatis ;
+    :hasFather data:RobertBatis ;
+    :hasMother data:AnnaDosti ;
+    :hasParent data:AnnaDosti,
+        data:RobertBatis ;
+    :hasRelation data:AnnaDosti,
+        data:KatherineClairyBatis,
+        data:RobertBatis ;
+    :hasSister data:KatherineClairyBatis ;
+    :isBloodrelationOf data:KatherineClairyBatis ;
+    :isChildOf data:AnnaDosti,
+        data:RobertBatis ;
+    :isDaughterOf data:AnnaDosti,
+        data:RobertBatis ;
+    :isSiblingOf data:KatherineClairyBatis ;
+    :isSisterOf data:KatherineClairyBatis .
+
+data:PeterII a :Ancestor,
+        :Man ;
+    :hasBrother data:PeterII ;
+    :hasChild data:Alexander ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBloodrelationOf data:PeterII ;
+    :isBrotherOf data:PeterII ;
+    :isFatherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:PeterII ;
+    :isUncleOf data:Alexander .
+
+data:AspasiaOfGreeceAndDenmark a :Ancestor,
+        :Woman ;
+    :hasChild data:AlexandraOfGreeceAndDenmark ;
+    :hasDaughter data:AlexandraOfGreeceAndDenmark ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :hasSister data:AspasiaOfGreeceAndDenmark ;
+    :isAncestorOf data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:Peter,
+        data:Philip ;
+    :isAuntOf data:AlexandraOfGreeceAndDenmark ;
+    :isBloodrelationOf data:AspasiaOfGreeceAndDenmark ;
+    :isMotherOf data:AlexandraOfGreeceAndDenmark ;
+    :isParentOf data:AlexandraOfGreeceAndDenmark ;
+    :isSiblingOf data:AspasiaOfGreeceAndDenmark ;
+    :isSisterOf data:AspasiaOfGreeceAndDenmark .
+
+data:AlexandraOfGreeceAndDenmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AspasiaOfGreeceAndDenmark ;
+    :hasChild data:Alexander ;
+    :hasMother data:AspasiaOfGreeceAndDenmark ;
+    :hasParent data:AspasiaOfGreeceAndDenmark ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :hasSister data:AlexandraOfGreeceAndDenmark ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isAuntOf data:Alexander ;
+    :isBloodrelationOf data:AlexandraOfGreeceAndDenmark ;
+    :isChildOf data:AspasiaOfGreeceAndDenmark ;
+    :isDaughterOf data:AspasiaOfGreeceAndDenmark ;
+    :isMotherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:AlexandraOfGreeceAndDenmark ;
+    :isSisterOf data:AlexandraOfGreeceAndDenmark .
+
+data:MariaDaGloria a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :hasSister data:MariaDaGloria ;
+    :hasSon data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isAncestorOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isAuntOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBloodrelationOf data:MariaDaGloria ;
+    :isMotherOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isParentOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isSiblingOf data:MariaDaGloria ;
+    :isSisterOf data:MariaDaGloria .
+
+data:Alexander2 a :Man ;
+    :hasAncestor data:Alexander,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:PeterII ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :hasFather data:Alexander ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:Alexander,
+        data:MariaDaGloria ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :isBloodrelationOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBrotherOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isChildOf data:Alexander,
+        data:MariaDaGloria ;
+    :isSiblingOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isSonOf data:Alexander,
+        data:MariaDaGloria .
+
+data:Peter a :Man ;
+    :hasAncestor data:Alexander,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:PeterII ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :hasFather data:Alexander ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:Alexander,
+        data:MariaDaGloria ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :isBloodrelationOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBrotherOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isChildOf data:Alexander,
+        data:MariaDaGloria ;
+    :isSiblingOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isSonOf data:Alexander,
+        data:MariaDaGloria .
+
+data:Philip a :Man ;
+    :hasAncestor data:Alexander,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:PeterII ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :hasFather data:Alexander ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:Alexander,
+        data:MariaDaGloria ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :isBloodrelationOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBrotherOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isChildOf data:Alexander,
+        data:MariaDaGloria ;
+    :isSiblingOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isSonOf data:Alexander,
+        data:MariaDaGloria .
+
+data:Alexander a :Ancestor,
+        :Man ;
+    :hasAncestor data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:PeterII ;
+    :hasBirthYear 1945 ;
+    :hasBrother data:Alexander ;
+    :hasChild data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :hasFather data:PeterII ;
+    :hasMother data:AlexandraOfGreeceAndDenmark ;
+    :hasParent data:AlexandraOfGreeceAndDenmark,
+        data:PeterII ;
+    :hasRelation data:Alexander,
+        data:Alexander2,
+        data:AlexandraOfGreeceAndDenmark,
+        data:AspasiaOfGreeceAndDenmark,
+        data:MariaDaGloria,
+        data:Peter,
+        data:PeterII,
+        data:Philip ;
+    :hasSon data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isAncestorOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isBloodrelationOf data:Alexander ;
+    :isBrotherOf data:Alexander ;
+    :isChildOf data:AlexandraOfGreeceAndDenmark,
+        data:PeterII ;
+    :isFatherOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isParentOf data:Alexander2,
+        data:Peter,
+        data:Philip ;
+    :isSiblingOf data:Alexander ;
+    :isSonOf data:AlexandraOfGreeceAndDenmark,
+        data:PeterII ;
+    :isUncleOf data:Alexander2,
+        data:Peter,
+        data:Philip .
+

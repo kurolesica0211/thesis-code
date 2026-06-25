@@ -7,18 +7,16 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Margaret_Rhodes a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Margaret_Rhodes a :Person ;
     rdfs:label "Margaret Rhodes" ;
     data:posIndicesFull "0:15",
-        "351:371" ;
-    data:posIndicesPart "1089:1095",
-        "1191:1197",
-        "1327:1333",
-        "1746:1752",
-        "1780:1788",
-        "963:969" ;
+        "263:283" ;
+    data:posIndicesPart "1019:1025",
+        "1170:1176",
+        "1204:1212",
+        "655:661",
+        "781:787",
+        "883:889" ;
     data:wdtLink wdt:Q6759834 ;
     :alsoKnownAs "Hon Margaret Elphinstone",
         "Hon Margaret Rhodes",
@@ -27,66 +25,24 @@ data:Margaret_Rhodes a :Person,
         "Margaret Elphinstone" ;
     :hasSex data:female .
 
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
+    data:posIndicesFull "384:404" ;
+    data:posIndicesPart "1087:1091",
+        "504:508" ;
+    data:wdtLink wdt:Q6779476 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon",
+        "Lady Mary Frances Bowes-Lyon",
+        "Mary Frances Elphinstone, Lady Elphinstone" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Mary_Elphinstone-_Lady_Elphinstone a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
-    data:posIndicesFull "472:492" ;
-    data:posIndicesPart "1663:1667",
-        "812:816" ;
-    data:wdtLink wdt:Q6779476 ;
-    :alsoKnownAs "Lady Mary Bowes-Lyon",
-        "Lady Mary Frances Bowes-Lyon",
-        "Mary Frances Elphinstone, Lady Elphinstone" ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "101:116",
-        "117:133",
-        "1253:1268",
-        "154:169",
-        "287:303",
-        "513:528",
-        "529:545",
-        "856:871",
-        "872:888" ;
-    data:posIndicesPart "1052:1057",
-        "1165:1170",
-        "1399:1404",
-        "586:595",
-        "639:644",
-        "700:709" ;
-    data:wdtLink wdt:Q10633 ;
-    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
-        "Elizabeth Angela Marguerite, Duchess of York",
-        "Elizabeth Bowes-Lyon",
-        "Elizabeth, Duchess of York",
-        "Elizabeth, Queen Consort of the British Empire",
-        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
-        "Hon. Elizabeth Bowes-Lyon",
-        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
-        "Lady Elizabeth Bowes-Lyon",
-        "Queen Elizabeth",
-        "Queen Elizabeth Angela Marguerite",
-        "Queen-Empress Elizabeth",
-        "The Queen Mother",
-        "The Queen Mum" ;
-    :hasSex data:female ;
-    :hasSister data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isSiblingOf data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isSisterOf data:Mary_Elphinstone-_Lady_Elphinstone .
+data:female a :Female .
 

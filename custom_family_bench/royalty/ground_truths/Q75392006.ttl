@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Heinrich_XIII_Prinz_Reuss a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Heinrich_XIII_Prinz_Reuss a :Person ;
     rdfs:label "Heinrich XIII Prinz Reuss" ;
     data:posIndicesFull "0:25" ;
     data:posIndicesPart "1161:1166",
@@ -68,9 +66,13 @@ data:Heinrich_XIII_Prinz_Reuss a :Man,
         "Prince Heinrich XIII" ;
     :hasSex data:male .
 
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
 

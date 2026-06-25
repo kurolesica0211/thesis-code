@@ -2,42 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexia_of_Greece_and_Denmark a :Woman ;
-    :hasBirthYear 1965 ;
-    :hasBrother data:Pavlos_of_Greece ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMarriageYear 1999 ;
-    :hasMother data:Anne-Marie_of_Greece ;
-    :hasRelation data:Carlos_Javier_Morales_Quintana ;
-    :hasSister data:Theodora_of_Greece .
+data:Nicholas_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Earl_of_St_Andrews ;
+    :hasFather data:Prince_Edward%2C_Duke_of_Kent ;
+    :hasMother data:Katharine%2C_Duchess_of_Kent ;
+    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski ;
+    :hasSex data:Male ;
+    :hasSister data:Lady_Helen_Taylor .
 
-data:Felipe_VI_of_Spain a :Man .
+data:Earl_of_St_Andrews a :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Ingrid_of_Denmark a :Woman .
+data:Katharine%2C_Duchess_of_Kent a :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Mafalda_of_Preslav a :Woman ;
-    :hasFather data:Kyril_of_Preslav .
+data:Lady_Helen_Taylor a :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Maria-Olympia_of_Greece a :Woman .
+data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski a :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Sofia_of_Spain a :Woman .
+data:Prince_Edward%2C_Duke_of_Kent a :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Carlos_Javier_Morales_Quintana a :Man .
+data:Female a :Female .
 
-data:Kyril_of_Preslav a :Man ;
-    :hasFather data:Simeon_of_Bulgaria .
-
-data:Pavlos_of_Greece a :Man ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Anne-Marie_of_Greece .
-
-data:Simeon_of_Bulgaria a :Man .
-
-data:Theodora_of_Greece a :Woman ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Anne-Marie_of_Greece .
-
-data:Anne-Marie_of_Greece a :Woman .
-
-data:Constantine_II_of_Greece a :Man .
+data:Male a :Male .
 

@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sophie_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophie of Württemberg"^^xsd:string ;
+    data:posIndicesFull "221:242"^^xsd:string ;
+    data:posIndicesPart "1410:1416"^^xsd:string,
+        "347:353"^^xsd:string,
+        "565:571"^^xsd:string,
+        "767:773"^^xsd:string ;
+    data:wdtLink wdt:Q168674 ;
+    :alsoKnownAs "Princess Sophie of Württemberg"^^xsd:string,
+        "Queen Sophie of the Netherlands"^^xsd:string,
+        "Queen Sophie, Queen Consort of the Netherlands"^^xsd:string,
+        "Sofia Federica di Württemberg"^^xsd:string,
+        "Sophie, Queen Consort of the Netherlands"^^xsd:string ;
+    :hasChild data:Prince_Maurice_of_the_Netherlands ;
+    :hasRelation data:Prince_Maurice_of_the_Netherlands,
+        data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Sophie_of_Württemberg ;
+    :hasSon data:Prince_Maurice_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Maurice_of_the_Netherlands ;
+    :isAuntOf data:Prince_Maurice_of_the_Netherlands ;
+    :isBloodrelationOf data:Sophie_of_Württemberg ;
+    :isMotherOf data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Maurice_of_the_Netherlands ;
+    :isSiblingOf data:Sophie_of_Württemberg ;
+    :isSisterOf data:Sophie_of_Württemberg .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William III of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1549:1560"^^xsd:string,
+        "165:200"^^xsd:string,
+        "170:181"^^xsd:string,
+        "170:200"^^xsd:string,
+        "331:342"^^xsd:string,
+        "641:652"^^xsd:string,
+        "688:699"^^xsd:string,
+        "968:979"^^xsd:string ;
+    data:posIndicesPart "1081:1088"^^xsd:string,
+        "1749:1760"^^xsd:string,
+        "455:462"^^xsd:string ;
+    data:wdtLink wdt:Q125649 ;
+    :alsoKnownAs "King William III of the Netherlands"^^xsd:string,
+        "Prince William of Orange"^^xsd:string,
+        "Willem III"^^xsd:string,
+        "Willem III der Nederlanden"^^xsd:string,
+        "Willem III of the Netherlands"^^xsd:string,
+        "William III"^^xsd:string,
+        "Z.M. den Koning"^^xsd:string ;
+    :hasBrother data:William_III_of_the_Netherlands ;
+    :hasChild data:Prince_Maurice_of_the_Netherlands ;
+    :hasRelation data:Prince_Maurice_of_the_Netherlands,
+        data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Maurice_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Maurice_of_the_Netherlands ;
+    :isBloodrelationOf data:William_III_of_the_Netherlands ;
+    :isBrotherOf data:William_III_of_the_Netherlands ;
+    :isFatherOf data:Prince_Maurice_of_the_Netherlands ;
+    :isParentOf data:Prince_Maurice_of_the_Netherlands ;
+    :isSiblingOf data:William_III_of_the_Netherlands ;
+    :isUncleOf data:Prince_Maurice_of_the_Netherlands .
+
+data:Prince_Maurice_of_the_Netherlands a :Man,
+        :Person ;
+    rdfs:label "Prince Maurice of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "0:33"^^xsd:string,
+        "7:33"^^xsd:string ;
+    data:posIndicesPart "1115:1122"^^xsd:string,
+        "1198:1204"^^xsd:string,
+        "1205:1212"^^xsd:string,
+        "1497:1503"^^xsd:string,
+        "1504:1511"^^xsd:string,
+        "1607:1613"^^xsd:string,
+        "1735:1741"^^xsd:string,
+        "1749:1760"^^xsd:string,
+        "1788:1794"^^xsd:string,
+        "266:273"^^xsd:string,
+        "818:824"^^xsd:string,
+        "825:832"^^xsd:string ;
+    data:wdtLink wdt:Q2735203 ;
+    :alsoKnownAs "Maurice of the Netherlands"^^xsd:string,
+        "Maurits of the Netherlands"^^xsd:string,
+        "Maurits van Oranje-Nassau"^^xsd:string,
+        "Prince Maurits of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasBrother data:Prince_Maurice_of_the_Netherlands ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_Württemberg ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasRelation data:Prince_Maurice_of_the_Netherlands,
+        data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Maurice_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Maurice_of_the_Netherlands ;
+    :isChildOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Maurice_of_the_Netherlands ;
+    :isSonOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands .
+

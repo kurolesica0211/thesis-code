@@ -1,0 +1,292 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasRelation data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Juan_Carlos_I,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isSiblingOf data:Ferdinand_II_of_the_Two_Sicilies .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Elena,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Victoria_Eugenie ;
+    :hasSister data:Victoria_Eugenie ;
+    :hasSon data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Juan_Count_of_Barcelona ;
+    :isAuntOf data:Juan_Count_of_Barcelona ;
+    :isBloodrelationOf data:Victoria_Eugenie ;
+    :isMotherOf data:Juan_Count_of_Barcelona ;
+    :isParentOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Victoria_Eugenie ;
+    :isSisterOf data:Victoria_Eugenie .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasBrother data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Elena,
+        data:Juan_Carlos_I,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Louise_of_Orleans ;
+    :hasDaughter data:Louise_of_Orleans ;
+    :hasRelation data:Elena,
+        data:Juan_Carlos_I,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris ;
+    :isAncestorOf data:Elena,
+        data:Juan_Carlos_I,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Louise_of_Orleans ;
+    :isParentOf data:Louise_of_Orleans ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Louise_of_Orleans .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :hasDaughter data:Beatriz_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Elena,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Victoria_Eugenie ;
+    :hasSon data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isParentOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Elena,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Victoria_Eugenie ;
+    :hasSister data:Beatriz_of_Spain ;
+    :isBloodrelationOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isDaughterOf data:Alfonso_XIII ;
+    :isSiblingOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isSisterOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona .
+
+data:Louise_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Philippe_Count_of_Paris ;
+    :hasChild data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasParent data:Philippe_Count_of_Paris ;
+    :hasRelation data:Elena,
+        data:Juan_Carlos_I,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris ;
+    :hasSister data:Louise_of_Orleans ;
+    :isAncestorOf data:Elena,
+        data:Juan_Carlos_I,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Louise_of_Orleans ;
+    :isChildOf data:Philippe_Count_of_Paris ;
+    :isDaughterOf data:Philippe_Count_of_Paris ;
+    :isMotherOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Louise_of_Orleans ;
+    :isSisterOf data:Louise_of_Orleans .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasParent data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Victoria_Eugenie ;
+    :hasSister data:Elena ;
+    :isBloodrelationOf data:Elena ;
+    :isChildOf data:Juan_Carlos_I ;
+    :isDaughterOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Elena ;
+    :isSisterOf data:Elena .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Elena,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Victoria_Eugenie ;
+    :hasSister data:Beatriz_of_Spain ;
+    :isBloodrelationOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :isSiblingOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Elena ;
+    :hasDaughter data:Elena ;
+    :hasMother data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Victoria_Eugenie ;
+    :isAncestorOf data:Elena ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isChildOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Elena ;
+    :isParentOf data:Elena ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isSonOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Elena .
+
+data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Louise_of_Orleans,
+        data:Philippe_Count_of_Paris ;
+    :hasBirthYear 1910 ;
+    :hasChild data:Juan_Carlos_I ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orleans ;
+    :hasParent data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orleans ;
+    :hasRelation data:Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Elena,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Louise_of_Orleans,
+        data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Victoria_Eugenie ;
+    :hasSister data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Elena,
+        data:Juan_Carlos_I ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orleans ;
+    :isDaughterOf data:Carlos_of_Bourbon-Two_Sicilies,
+        data:Louise_of_Orleans ;
+    :isMotherOf data:Juan_Carlos_I ;
+    :isParentOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+

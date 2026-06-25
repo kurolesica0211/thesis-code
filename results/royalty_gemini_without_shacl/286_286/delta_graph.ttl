@@ -2,45 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_of_Wurttemberg a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Prince_Bertrand a :Man,
+        :Person .
 
-data:Jean_dOrleans a :Man,
+data:Rafael_of_Orl%C3%A9ans-Braganza a :Man,
         :Person ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Marie-Therese_of_Wurttemberg ;
-    :hasRelation data:Philomena_de_Tornos_y_Steinhart ;
-    :hasSex data:Male .
+    :hasBirthYear 1986 ;
+    :hasBrother data:Prince_Pedro_Luiz ;
+    :hasFather data:Prince_Ant%C3%B4nio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasSister data:Princess_Am%C3%A9lia,
+        data:Princess_Maria_Gabriela .
 
-data:Princess_Chantal_of_Orleans a :Person,
+data:Antoine_13th_Prince_of_Ligne a :Man,
+        :Person .
+
+data:Prince_Ant%C3%B4nio a :Man,
+        :Person ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Pedro_Henrique ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Prince_Pedro_Henrique a :Man,
+        :Person .
+
+data:Prince_Pedro_Luiz a :Man,
+        :Person .
+
+data:Princess_Alix_of_Luxembourg a :Person,
+        :Woman .
+
+data:Princess_Am%C3%A9lia a :Person,
+        :Woman .
+
+data:Princess_Christine_of_Ligne a :Person,
         :Woman ;
-    :hasSex data:Female ;
-    :isSisterOf data:Henri_Count_of_Paris .
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Princess_Alix_of_Luxembourg .
 
-data:Henri_VI_Count_of_Paris a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person,
+        :Woman .
 
-data:Marie-Therese_of_Wurttemberg a :Person,
-        :Woman ;
-    :hasBirthYear 1934 ;
-    :hasSex data:Female .
-
-data:Philomena_de_Tornos_y_Steinhart a :Person,
-        :Woman ;
-    :hasBirthYear 1977 ;
-    :hasSex data:Female .
-
-data:Henri_Count_of_Paris a :Man,
-        :Person ;
-    :hasBirthYear 1933 ;
-    :hasDeathYear 2019 ;
-    :hasFather data:Henri_VI_Count_of_Paris ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Princess_Maria_Gabriela a :Person,
+        :Woman .
 

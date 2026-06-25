@@ -69,49 +69,25 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
-John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
-Background
+Michael Albemarle Bowes-Lyon (29 May 1940 – 30 October 2023) was a British banker and nephew of Queen Elizabeth The Queen Mother.
+Biography
 
-Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
-Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
-Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
-Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
-Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
-The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
-Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
-Controversy
-
-Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
-According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
-When Nerissa died in 1986, none of her family attended the funeral.
-Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
-Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
-The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
-Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
-David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
-According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
-Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
-The Queen's Hidden Cousins
-
-In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
-The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
-"
-
-
-Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
-Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
-She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
-Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
-Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
+Bowes-Lyon was the second son and youngest child of Lieutenant-Colonel
+The Honourable Michael Claude Hamilton Bowes-Lyon (1893–1953) and Elizabeth Margaret Cator (1899–1959).
+He was page to his cousin, Princess Margaret, at the coronation of Queen Elizabeth II in 1953.
+He was also page to his aunt, the Queen Mother, when she was installed as chancellor of the University of London in November 1955.
+Bowes-Lyon was recruited to Coutts in 1963, later joining the board of directors in 1969.
+Subsequently, Bowes-Lyon received the courtesy title The Honourable and precedence of the younger son of an earl by royal warrant of precedence on 15 February 1974.
+He was a favourite nephew of Queen Elizabeth The Queen Mother and a frequent guest of hers at Royal Lodge.
+Bowes-Lyon died at the age of 83 on 30 October 2023.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +103,9 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +120,23 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +154,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +236,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +259,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +279,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +289,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +329,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,100 +428,316 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (eb7f3191-d75b-4686-b3c4-b64a4e71f2f8)
- Call ID: eb7f3191-d75b-4686-b3c4-b64a4e71f2f8
-  Args:
-    source: Nerissa Jane Irene Bowes-Lyon
-    type: :Woman
-  AssignClass (991b4565-fcd5-4aac-899b-56e06eedf4f5)
- Call ID: 991b4565-fcd5-4aac-899b-56e06eedf4f5
-  Args:
-    source: Katherine Juliet Bowes-Lyon
-    type: :Woman
-  AssignClass (f257fb2b-5529-40b9-8da3-87736c4d96ec)
- Call ID: f257fb2b-5529-40b9-8da3-87736c4d96ec
-  Args:
-    source: John Herbert Bowes-Lyon
-    type: :Man
-  AssignClass (9f22fdca-7479-41f2-8d11-9a7cee0db8f1)
- Call ID: 9f22fdca-7479-41f2-8d11-9a7cee0db8f1
-  Args:
-    source: Fenella Hepburn-Stuart-Forbes-Trefusis
-    type: :Woman
-  AssignClass (405b144e-8f99-442c-96ef-1a005ebedb19)
- Call ID: 405b144e-8f99-442c-96ef-1a005ebedb19
+  AssignClass (71184893-c27f-4fd0-98ed-21ac14428e75)
+ Call ID: 71184893-c27f-4fd0-98ed-21ac14428e75
   Args:
     type: :Man
-    source: Claude Bowes-Lyon
-  AssignClass (d328db70-b769-4847-94c0-7c00e3c22f6f)
- Call ID: d328db70-b769-4847-94c0-7c00e3c22f6f
+    source: Michael_Albemarle_Bowes-Lyon
+  AssignClass (bd011251-caee-4a3e-9563-0b25f1370c37)
+ Call ID: bd011251-caee-4a3e-9563-0b25f1370c37
   Args:
-    source: Cecilia Bowes-Lyon
+    type: :Person
+    source: Michael_Albemarle_Bowes-Lyon
+  AddLiteral (90123483-9426-492c-bdcb-f903eda621ee)
+ Call ID: 90123483-9426-492c-bdcb-f903eda621ee
+  Args:
+    relation: :hasBirthYear
+    source: Michael_Albemarle_Bowes-Lyon
+    literal_value: 1940
+    literal_type: xsd:integer
+  AddLiteral (2e1b326f-5c0f-4e42-9d77-13bd6b76124c)
+ Call ID: 2e1b326f-5c0f-4e42-9d77-13bd6b76124c
+  Args:
+    relation: :hasDeathYear
+    source: Michael_Albemarle_Bowes-Lyon
+    literal_type: xsd:integer
+    literal_value: 2023
+  AddTriple (3f7a1167-12b8-4ddc-a483-982a196bdfef)
+ Call ID: 3f7a1167-12b8-4ddc-a483-982a196bdfef
+  Args:
+    source: Michael_Albemarle_Bowes-Lyon
+    relation: :hasSex
+    target: :Male
+  AssignClass (6a1580ab-f1a7-4399-b662-91211244719e)
+ Call ID: 6a1580ab-f1a7-4399-b662-91211244719e
+  Args:
+    type: :Man
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (884be7d9-4088-4eda-9a84-1c947b46987a)
+ Call ID: 884be7d9-4088-4eda-9a84-1c947b46987a
+  Args:
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+    type: :Person
+  AddLiteral (04613c4b-50e1-4563-858f-3562e48d1cdc)
+ Call ID: 04613c4b-50e1-4563-858f-3562e48d1cdc
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1893
+    relation: :hasBirthYear
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AddLiteral (166d5227-43cb-46de-b9a3-e9efa9cc4b72)
+ Call ID: 166d5227-43cb-46de-b9a3-e9efa9cc4b72
+  Args:
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1953
+  AddTriple (1705157c-23fc-4793-927b-3a6b8cbccab0)
+ Call ID: 1705157c-23fc-4793-927b-3a6b8cbccab0
+  Args:
+    source: Michael_Albemarle_Bowes-Lyon
+    relation: :hasFather
+    target: :Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (951346cd-0762-4630-a034-d253a297ba50)
+ Call ID: 951346cd-0762-4630-a034-d253a297ba50
+  Args:
     type: :Woman
-  AddLiteral (ff8d3978-1e34-466c-ad35-c3f2e17d5612)
- Call ID: ff8d3978-1e34-466c-ad35-c3f2e17d5612
+    source: Elizabeth_Margaret_Cator
+  AssignClass (d9725fa0-e0f5-4522-9af3-96a3da9005d6)
+ Call ID: d9725fa0-e0f5-4522-9af3-96a3da9005d6
   Args:
-    source: Nerissa Jane Irene Bowes-Lyon
+    type: :Person
+    source: Elizabeth_Margaret_Cator
+  AddLiteral (07aee4e8-ae52-41d3-a934-6fcbb5774d41)
+ Call ID: 07aee4e8-ae52-41d3-a934-6fcbb5774d41
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1899
+    source: Elizabeth_Margaret_Cator
     relation: :hasBirthYear
-    literal_value: 1919
-    literal_type: xsd:integer
-  AddLiteral (abf7fe69-af28-4f4b-b9a6-da5279ff04a8)
- Call ID: abf7fe69-af28-4f4b-b9a6-da5279ff04a8
+  AddLiteral (487ee8d4-6461-46c8-b74b-f9a49e24900f)
+ Call ID: 487ee8d4-6461-46c8-b74b-f9a49e24900f
   Args:
-    source: Nerissa Jane Irene Bowes-Lyon
     relation: :hasDeathYear
-    literal_value: 1986
+    source: Elizabeth_Margaret_Cator
+    literal_value: 1959
     literal_type: xsd:integer
-  AddLiteral (6c50f7dc-3fff-4482-8d58-216c1f8fbe9b)
- Call ID: 6c50f7dc-3fff-4482-8d58-216c1f8fbe9b
+  AddTriple (4393c0e9-0753-44fd-97df-eae8041d26aa)
+ Call ID: 4393c0e9-0753-44fd-97df-eae8041d26aa
   Args:
-    source: Katherine Juliet Bowes-Lyon
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1926
-  AddLiteral (35f48b57-ca7c-4aa2-b2bf-f01d7a0d5df9)
- Call ID: 35f48b57-ca7c-4aa2-b2bf-f01d7a0d5df9
-  Args:
-    source: Katherine Juliet Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 2014
-    literal_type: xsd:integer
-  AddTriple (17d2e643-ce8c-41e7-90d6-72403951b833)
- Call ID: 17d2e643-ce8c-41e7-90d6-72403951b833
-  Args:
-    relation: :hasFather
-    target: John Herbert Bowes-Lyon
-    source: Nerissa Jane Irene Bowes-Lyon
-  AddTriple (4cfc471e-797a-47ab-9daa-d53a5a3aa48e)
- Call ID: 4cfc471e-797a-47ab-9daa-d53a5a3aa48e
-  Args:
-    source: Nerissa Jane Irene Bowes-Lyon
+    source: Michael_Albemarle_Bowes-Lyon
     relation: :hasMother
-    target: Fenella Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (c1bbfbac-cf21-4aa9-bbce-62a6b41d9d3d)
- Call ID: c1bbfbac-cf21-4aa9-bbce-62a6b41d9d3d
+    target: :Elizabeth_Margaret_Cator
+  AssignClass (70067cb1-e60d-4aaf-8dd8-05ad864fde26)
+ Call ID: 70067cb1-e60d-4aaf-8dd8-05ad864fde26
   Args:
-    source: Katherine Juliet Bowes-Lyon
-    target: John Herbert Bowes-Lyon
-    relation: :hasFather
-  AddTriple (521ce257-ade8-4295-b107-5ee25a5d2776)
- Call ID: 521ce257-ade8-4295-b107-5ee25a5d2776
+    type: :Woman
+    source: Princess_Margaret
+  AssignClass (0f31ea41-a645-4691-aafe-9dd41d214493)
+ Call ID: 0f31ea41-a645-4691-aafe-9dd41d214493
   Args:
-    relation: :hasMother
-    target: Fenella Hepburn-Stuart-Forbes-Trefusis
-    source: Katherine Juliet Bowes-Lyon
-  AddTriple (cdd668cc-0ade-4c40-8906-8e10ef5a8480)
- Call ID: cdd668cc-0ade-4c40-8906-8e10ef5a8480
+    source: Princess_Margaret
+    type: :Person
+  AssignClass (e2807acc-063a-4197-9092-9760c0f862eb)
+ Call ID: e2807acc-063a-4197-9092-9760c0f862eb
   Args:
-    source: John Herbert Bowes-Lyon
-    relation: :hasFather
-    target: Claude Bowes-Lyon
-  AddTriple (d1ae3377-2fee-42a0-a662-b61f58a67c4c)
- Call ID: d1ae3377-2fee-42a0-a662-b61f58a67c4c
+    source: Queen_Elizabeth_The_Queen_Mother
+    type: :Woman
+  AssignClass (01c378d8-37b6-4584-894a-b16cad669130)
+ Call ID: 01c378d8-37b6-4584-894a-b16cad669130
   Args:
-    relation: :hasMother
-    target: Cecilia Bowes-Lyon
-    source: John Herbert Bowes-Lyon
-  Finish (451eba9e-5312-40b5-a720-77fd7b265720)
- Call ID: 451eba9e-5312-40b5-a720-77fd7b265720
+    source: Queen_Elizabeth_The_Queen_Mother
+    type: :Person
+  AssignClass (d6efc692-03d4-4c7d-b12f-ee1e1c77ff87)
+ Call ID: d6efc692-03d4-4c7d-b12f-ee1e1c77ff87
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (33ced60a-3fd4-4559-8c2b-e2d159ee6192)
+ Call ID: 33ced60a-3fd4-4559-8c2b-e2d159ee6192
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  Finish (eb7633e3-6988-4a47-bccd-c87ba19c9e8c)
+ Call ID: eb7633e3-6988-4a47-bccd-c87ba19c9e8c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Michael_Albemarle_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasSex data:Male .
+
+  data:Princess_Margaret a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
+
+  data:Elizabeth_Margaret_Cator a :Person,
+          :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1959 .
+
+  data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (124a6adf-e15d-44d7-af96-5332ccfe31d1)
+ Call ID: 124a6adf-e15d-44d7-af96-5332ccfe31d1
+  Args:
+    source: Male
+    type: :Sex
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Michael_Albemarle_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasSex data:Male .
+
+  data:Princess_Margaret a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
+
+  data:Elizabeth_Margaret_Cator a :Person,
+          :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1959 .
+
+  data:Male a :Sex .
+
+  data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (1289fc3c-1516-4998-ac22-36113b07d5d5)
+ Call ID: 1289fc3c-1516-4998-ac22-36113b07d5d5
   Args:

@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hermann_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Karl_Leiningen ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Marie_Louise_Bulgaria ;\n    :hasRelation data:Deborah_Cully ;\n    :hasSex data:Male ;\n    :knownAs \"Mr. Hermann Leiningen\"^^xsd:string .\n\ndata:Deborah_Cully a :Person,\n        :Woman ;\n    :hasBirthYear 1961 ;\n    :hasSex data:Female .\n\ndata:Karl_Leiningen a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Marie_Louise_Bulgaria a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,\n        :Woman ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1983 ;\n    :hasFather data:Peter_Ferdinand_of_Tuscany ;\n    :hasMarriageYear 1928 ;\n    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .\n\ndata:Albrecht_of_W%C3%BCrttemberg a :Man,\n        :Person .\n\ndata:Margarete_Sophie_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Tuscany a :Man,\n        :Person .\n\ndata:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;\n    :hasMother data:Margarete_Sophie_of_Austria .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hermann_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Karl_Leiningen ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Marie_Louise_Bulgaria ;\n    :hasRelation data:Deborah_Cully ;\n    :hasSex data:Male ;\n    :knownAs \"Mr. Hermann Leiningen\"^^xsd:string .\n\ndata:Deborah_Cully a :Person,\n        :Woman ;\n    :hasBirthYear 1961 ;\n    :hasSex data:Female .\n\ndata:Karl_Leiningen a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Marie_Louise_Bulgaria a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Hermann_Leiningen a :Man,\n        :Person ;\n    :hasBirthYear 1963 ;\n    :hasFather data:Karl_Leiningen ;\n    :hasMarriageYear 1987 ;\n    :hasMother data:Marie_Louise_Bulgaria ;\n    :hasRelation data:Deborah_Cully ;\n    :hasSex data:Male ;\n    :knownAs \"Mr. Hermann Leiningen\"^^xsd:string .\n\ndata:Deborah_Cully a :Person,\n        :Woman ;\n    :hasBirthYear 1961 ;\n    :hasSex data:Female .\n\ndata:Karl_Leiningen a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Marie_Louise_Bulgaria a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,\n        :Woman ;\n    :hasBirthYear 1906 ;\n    :hasDeathYear 1983 ;\n    :hasFather data:Peter_Ferdinand_of_Tuscany ;\n    :hasMarriageYear 1928 ;\n    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;\n    :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .\n\ndata:Albrecht_of_W%C3%BCrttemberg a :Man,\n        :Person .\n\ndata:Margarete_Sophie_of_Austria a :Person,\n        :Woman .\n\ndata:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Peter_Ferdinand_of_Tuscany a :Man,\n        :Person .\n\ndata:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;\n    :hasMother data:Margarete_Sophie_of_Austria .\n\n"
     }
 ]

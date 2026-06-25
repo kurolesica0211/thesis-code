@@ -1,0 +1,168 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Christian_X_of_Denmark a :Man ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSister data:Anastasia_Mikhailovna_of_Russia ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasChild data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man ;
+    :hasAncestor data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasBrother data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasParent data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasAncestor data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anastasia_Mikhailovna_of_Russia,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasSex data:Female ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Anastasia_Mikhailovna_of_Russia,
+        data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
+

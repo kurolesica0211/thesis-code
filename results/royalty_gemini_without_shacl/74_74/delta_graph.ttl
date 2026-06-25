@@ -2,33 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Kent a :Woman ;
-    :hasFather data:George_Duke_of_Kent ;
-    :hasMother data:Princess_Marina .
-
-data:Edward_Duke_of_Kent a :Man ;
-    :hasFather data:George_Duke_of_Kent ;
-    :hasMother data:Princess_Marina .
-
-data:Michael_of_Kent a :Man ;
-    :hasFather data:George_Duke_of_Kent ;
-    :hasMother data:Princess_Marina .
-
-data:Edward_VIII a :Man .
-
-data:George_V a :Man .
-
-data:George_VI a :Man .
-
-data:Queen_Mary a :Woman .
-
-data:George_Duke_of_Kent a :Man ;
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
     :hasBirthYear 1902 ;
+    :hasChild data:Alexandra_child,
+        data:Edward_child,
+        data:Michael_child ;
     :hasDeathYear 1942 ;
-    :hasFather data:George_V ;
+    :hasFather data:King_George_V ;
+    :hasMarriageYear 1934 ;
     :hasMother data:Queen_Mary ;
+    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;
     :isBrotherOf data:Edward_VIII,
         data:George_VI .
 
-data:Princess_Marina a :Woman .
+data:Alexandra_child a :Person,
+        :Woman ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:Edward_child a :Man,
+        :Person ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:George_VI a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Michael_child a :Man,
+        :Person ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman .
 

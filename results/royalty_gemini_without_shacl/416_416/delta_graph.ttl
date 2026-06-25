@@ -2,53 +2,26 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Philippe_Duke_of_Orleans a :Man,
+data:Prince_Hubertus_of_Prussia a :Man,
         :Person ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1926 ;
-    :hasFather data:Philippe_Count_of_Paris ;
-    :hasMarriageYear 1896 ;
-    :hasMother data:Isabelle_of_Orleans ;
-    :hasRelation data:Maria_Dorothea_of_Austria ;
-    :hasSister data:Amelie_of_Orleans,
-        data:Helene_Duchess_of_Aosta ;
-    :hasSon data:Philippe_Debien ;
-    :isSiblingOf data:Jean_Duke_of_Guise .
+    :hasBirthYear 1909 ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
 
-data:Amelie_of_Orleans a :Person,
-        :Woman .
-
-data:Clementine_of_Orleans a :Person,
-        :Woman .
-
-data:Helene_Duchess_of_Aosta a :Person,
-        :Woman .
-
-data:Isabelle_of_Orleans a :Person,
-        :Woman .
-
-data:Jean_Duke_of_Guise a :Man,
-        :Person .
-
-data:Joseph_Karl_of_Austria a :Man,
-        :Person .
-
-data:Louis_Philippe_I a :Man,
-        :Person .
-
-data:Maria_Dorothea_of_Austria a :Person,
+data:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Person,
         :Woman ;
-    :hasFather data:Joseph_Karl_of_Austria ;
-    :hasMother data:Clementine_of_Orleans .
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 .
 
-data:Nina a :Person,
+data:Crown_Prince_Wilhelm_of_Germany a :Man,
+        :Person .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
         :Woman .
 
-data:Philippe_Count_of_Paris a :Man,
-        :Person ;
-    :hasFather data:Louis_Philippe_I .
-
-data:Philippe_Debien a :Man,
-        :Person ;
-    :hasMother data:Nina .
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person .
 

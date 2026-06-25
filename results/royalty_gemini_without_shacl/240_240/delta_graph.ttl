@@ -2,44 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,
-        :Person ;
-    :hasBirthYear 1998 ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Infanta_Elena_Duchess_of_Lugo ;
-    :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
-    :knownAs "Froilán"^^xsd:string .
+data:Infanta_Sofia a :Person,
+        :Woman ;
+    :hasParent data:Felipe_VI .
 
-data:Amalio_de_Marichalar_y_Bruguera a :Ancestor,
-        :Man,
+data:Leonor_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasParent data:Felipe_VI .
+
+data:Victoria_Federica_de_Marichalar_y_Borbon a :Person,
+        :Woman ;
+    :hasBirthYear 2000 ;
+    :hasBrother data:Felipe_de_Marichalar ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena .
+
+data:Felipe_de_Marichalar a :Man,
         :Person .
 
-data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Ancestor,
-        :Person,
-        :Woman .
+data:Infanta_Elena a :Person,
+        :Woman ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sofia_of_Spain .
 
-data:Juan_Carlos_I a :Ancestor,
-        :Man,
+data:Jaime_de_Marichalar a :Man,
         :Person .
 
-data:Sof%C3%ADa_of_Spain a :Ancestor,
-        :Person,
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Sofia_of_Spain a :Person,
         :Woman .
 
-data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
-        :Woman ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Infanta_Elena_Duchess_of_Lugo .
-
-data:Infanta_Elena_Duchess_of_Lugo a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sof%C3%ADa_of_Spain .
-
-data:Jaime_de_Marichalar a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
-    :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .
+data:Felipe_VI a :Man,
+        :Person .
 

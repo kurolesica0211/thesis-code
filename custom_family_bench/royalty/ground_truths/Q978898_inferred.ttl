@@ -1,0 +1,113 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Christine of Ligne"^^xsd:string ;
+    data:posIndicesFull "1012:1039"^^xsd:string ;
+    data:posIndicesPart "1280:1288"^^xsd:string,
+        "1372:1377"^^xsd:string,
+        "1383:1391"^^xsd:string,
+        "1446:1451"^^xsd:string,
+        "1543:1552"^^xsd:string,
+        "3654:3662"^^xsd:string,
+        "3671:3676"^^xsd:string ;
+    data:wdtLink wdt:Q7244586 ;
+    :alsoKnownAs "Christine, Princess Imperial of Brazil"^^xsd:string,
+        "Princess Christine of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :hasRelation data:Pedro_Luiz_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Christine_of_Ligne ;
+    :hasSon data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isAncestorOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isAuntOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isBloodrelationOf data:Princess_Christine_of_Ligne ;
+    :isMotherOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isParentOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isSiblingOf data:Princess_Christine_of_Ligne ;
+    :isSisterOf data:Princess_Christine_of_Ligne .
+
+data:Pedro_Luiz_de_Orleans_e_Bragança a :Man,
+        :Person ;
+    rdfs:label "Pedro Luiz de Orleans e Bragança"^^xsd:string ;
+    data:posIndicesFull "0:30"^^xsd:string ;
+    data:posIndicesPart "1062:1067"^^xsd:string,
+        "1068:1072"^^xsd:string,
+        "1117:1124"^^xsd:string,
+        "1127:1135"^^xsd:string,
+        "1175:1180"^^xsd:string,
+        "1689:1693"^^xsd:string,
+        "1833:1838"^^xsd:string,
+        "1976:1981"^^xsd:string,
+        "210:215"^^xsd:string,
+        "2157:2162"^^xsd:string,
+        "2173:2178"^^xsd:string,
+        "2191:2196"^^xsd:string,
+        "2197:2201"^^xsd:string,
+        "2292:2296"^^xsd:string,
+        "2582:2587"^^xsd:string,
+        "2588:2592"^^xsd:string,
+        "2619:2624"^^xsd:string,
+        "2625:2629"^^xsd:string,
+        "2701:2705"^^xsd:string,
+        "2733:2738"^^xsd:string,
+        "2739:2743"^^xsd:string,
+        "2947:2952"^^xsd:string,
+        "2987:2992"^^xsd:string,
+        "2993:2997"^^xsd:string,
+        "3114:3118"^^xsd:string,
+        "3257:3262"^^xsd:string,
+        "3263:3267"^^xsd:string,
+        "3460:3468"^^xsd:string,
+        "3566:3570"^^xsd:string,
+        "3745:3750"^^xsd:string,
+        "3751:3755"^^xsd:string,
+        "3916:3921"^^xsd:string,
+        "3922:3926"^^xsd:string,
+        "398:403"^^xsd:string,
+        "4073:4078"^^xsd:string,
+        "4079:4083"^^xsd:string,
+        "436:441"^^xsd:string,
+        "442:446"^^xsd:string,
+        "659:664"^^xsd:string,
+        "665:669"^^xsd:string,
+        "798:803"^^xsd:string,
+        "804:808"^^xsd:string,
+        "868:873"^^xsd:string,
+        "874:878"^^xsd:string ;
+    data:wdtLink wdt:Q978898 ;
+    :alsoKnownAs "Pedro Luis of Orleans-Braganza"^^xsd:string,
+        "Pedro Luiz of Orléans-Braganza"^^xsd:string,
+        "Pedro Luís van Orléans-Braganza"^^xsd:string ;
+    :hasAncestor data:Princess_Christine_of_Ligne ;
+    :hasBrother data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Pedro_Luiz_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isBrotherOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isChildOf data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
+    :isSonOf data:Princess_Christine_of_Ligne .
+

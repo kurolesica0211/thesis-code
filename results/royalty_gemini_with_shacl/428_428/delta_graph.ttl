@@ -2,46 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Rose_Constance_Leveson-Gower a :Person,
-        :Woman ;
-    :formerlyKnownAs data:Rose_Bowes-Lyon ;
-    :hasBirthYear 1890 ;
-    :hasDeathYear 1967 ;
-    :hasMarriageYear 1916 ;
-    :hasRelation data:William_Leveson-Gower ;
-    :hasSex data:Female_Sex_Node ;
-    :isAuntOf data:Princess_Margaret_Rose_of_York,
-        data:Queen_Elizabeth_II ;
-    :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,
-        data:Cecilia_Cavendish-Bentinck ;
-    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;
-    :knownAs data:Countess_Granville .
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1939 ;
+    :hasChild data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga_Duchess_of_Aosta ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Princess_Francoise_dOrleans ;
+    :hasRelation data:Marina_Karella .
 
-data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person .
-
-data:Cecilia_Cavendish-Bentinck a :Ancestor,
+data:Elli_Chalikiopoulos a :Ancestor,
         :Person,
         :Woman .
 
-data:Countess_Granville a :Person .
+data:Jean_dOrleans_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person .
 
-data:Female_Sex_Node a :Female,
-        :Sex .
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
 
-data:Princess_Margaret_Rose_of_York a :Person,
-        :Woman .
+data:Marina_Karella a :Person,
+        :Woman ;
+    :hasFather data:Theodoros_Karellas ;
+    :hasMother data:Elli_Chalikiopoulos .
 
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_The_Queen_Mother a :Person,
-        :Woman .
-
-data:Rose_Bowes-Lyon a :Person .
-
-data:William_Leveson-Gower a :Man,
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
         :Person ;
-    :hasDeathYear 1953 .
+    :hasFather data:King_George_I_of_Greece .
+
+data:Princess_Alexandra_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Francoise_dOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Jean_dOrleans_Duke_of_Guise .
+
+data:Princess_Olga_Duchess_of_Aosta a :Person,
+        :Woman .
+
+data:Theodoros_Karellas a :Ancestor,
+        :Man,
+        :Person .
 

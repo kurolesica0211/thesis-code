@@ -16,80 +16,84 @@
       "qid": "Q170191",
       "label": "Princess Alexandra, Lady Ogilvy",
       "distance": 0,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Edward_VIII",
-      "qid": "Q590227",
-      "label": "Edward VIII",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#George_VI",
-      "qid": "Q280856",
-      "label": "George VI",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
-      "qid": "Q158258",
-      "label": "Prince Edward, Duke of Kent",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
       "qid": "Q160770",
       "label": "Prince George, Duke of Kent",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Marina_of_Greece_and_Denmark",
       "qid": "Q170184",
       "label": "Princess Marina of Greece and Denmark",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Elizabeth_II",
-      "qid": "Q9682",
-      "label": "Elizabeth II",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_V",
       "qid": "Q269412",
       "label": "George V",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Grand_Duchess_Elena_Vladimirovna_of_Russia",
       "qid": "Q232483",
       "label": "Grand Duchess Elena Vladimirovna of Russia",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Nicholas_of_Greece_and_Denmark",
       "qid": "Q170160",
       "label": "Prince Nicholas of Greece and Denmark",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
-      "qid": "Q232732",
-      "label": "Princess Maria of Greece and Denmark",
-      "distance": 2,
-      "gender": "female"
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_VI",
+      "qid": "Q280856",
+      "label": "George VI",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
+    {
+      "extracted_uri": "http://example.org/data/George_V",
+      "extracted_local_name": "George_V",
+      "embedding_text": "George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
     {
       "extracted_uri": "http://example.org/data/Grand_Duchess_Elena_Vladimirovna_of_Russia",
       "extracted_local_name": "Grand_Duchess_Elena_Vladimirovna_of_Russia",
@@ -101,29 +105,47 @@
       "ground_truth_qid": "Q232483",
       "ground_truth_label": "Grand Duchess Elena Vladimirovna of Russia",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Grand Duchess Elena Vladimirovna of Russia",
       "best_candidate_label": "Grand Duchess Elena Vladimirovna of Russia",
       "best_candidate_qid": "Q232483",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/King_George_V",
-      "extracted_local_name": "King_George_V",
-      "embedding_text": "King George V",
+      "extracted_uri": "http://example.org/data/Prince_Edward",
+      "extracted_local_name": "Prince_Edward",
+      "embedding_text": "Prince Edward",
       "extracted_gender": "male",
       "matched": true,
       "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#George_V",
-      "ground_truth_qid": "Q269412",
-      "ground_truth_label": "George V",
+      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "ground_truth_qid": "Q158258",
+      "ground_truth_label": "Prince Edward, Duke of Kent",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "King George V",
-      "best_candidate_label": "George V",
-      "best_candidate_qid": "Q269412",
-      "best_candidate_gender": "male",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Edward",
+      "best_candidate_label": "Prince Edward, Duke of Kent",
+      "best_candidate_qid": "Q158258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_George%2C_Duke_of_Kent",
+      "extracted_local_name": "Prince_George%2C_Duke_of_Kent",
+      "embedding_text": "Prince George, Duke of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
+      "ground_truth_qid": "Q160770",
+      "ground_truth_label": "Prince George, Duke of Kent",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince George, Duke of Kent",
+      "best_candidate_label": "Prince George, Duke of Kent",
+      "best_candidate_qid": "Q160770",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -137,11 +159,11 @@
       "ground_truth_qid": "Q170160",
       "ground_truth_label": "Prince Nicholas of Greece and Denmark",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Nicholas of Greece and Denmark",
       "best_candidate_label": "Prince Nicholas of Greece and Denmark",
       "best_candidate_qid": "Q170160",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -155,48 +177,12 @@
       "ground_truth_qid": "Q170184",
       "ground_truth_label": "Princess Marina of Greece and Denmark",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Marina of Greece and Denmark",
       "best_candidate_label": "Princess Marina of Greece and Denmark",
       "best_candidate_qid": "Q170184",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Prince_Edward_Duke_of_Kent",
-      "extracted_local_name": "Prince_Edward_Duke_of_Kent",
-      "embedding_text": "Prince Edward Duke of Kent",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9855072463768115,
-      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
-      "ground_truth_qid": "Q158258",
-      "ground_truth_label": "Prince Edward, Duke of Kent",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Edward- Duke of Kent",
-      "best_candidate_label": "Prince Edward, Duke of Kent",
-      "best_candidate_qid": "Q158258",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9855072463768115
-    },
-    {
-      "extracted_uri": "http://example.org/data/Prince_George_Duke_of_Kent",
-      "extracted_local_name": "Prince_George_Duke_of_Kent",
-      "embedding_text": "Prince George Duke of Kent",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9855072463768115,
-      "ground_truth_uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
-      "ground_truth_qid": "Q160770",
-      "ground_truth_label": "Prince George, Duke of Kent",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince George- Duke of Kent",
-      "best_candidate_label": "Prince George, Duke of Kent",
-      "best_candidate_qid": "Q160770",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9855072463768115
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Alexandra",
@@ -209,11 +195,11 @@
       "ground_truth_qid": "Q170191",
       "ground_truth_label": "Princess Alexandra, Lady Ogilvy",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Alexandra- Lady Ogilvy",
       "best_candidate_label": "Princess Alexandra, Lady Ogilvy",
       "best_candidate_qid": "Q170191",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7903225806451613
     },
     {
@@ -228,11 +214,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Elizabeth Alexandra Mary",
-      "best_candidate_label": "Elizabeth II",
-      "best_candidate_qid": "Q9682",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.47058823529411764
+      "best_candidate_match_text": "Albert Frederick Arthur George",
+      "best_candidate_label": "George VI",
+      "best_candidate_qid": "Q280856",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.25
     },
     {
       "extracted_uri": "http://example.org/data/Sir_Angus_Ogilvy",
@@ -249,7 +235,7 @@
       "best_candidate_match_text": "H.M. King George VI",
       "best_candidate_label": "George VI",
       "best_candidate_qid": "Q280856",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4
     }
   ],

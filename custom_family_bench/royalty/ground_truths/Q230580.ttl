@@ -7,70 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Iñaki_Urdangarin a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Iñaki Urdangarin" ;
-    data:posIndicesFull "1160:1176",
-        "588:604" ;
-    data:posIndicesPart "1325:1335" ;
-    data:wdtLink wdt:Q356560 ;
-    :alsoKnownAs "Don Iñaki Urdangarin Liebaert" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "157:165" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :isMotherOf data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Queen_Sofía_of_Spain .
-
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Juan Carlos I of Spain" ;
-    data:posIndicesFull "282:295" ;
-    data:posIndicesPart "1802:1807",
-        "671:675",
-        "676:682" ;
-    data:wdtLink wdt:Q19943 ;
-    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
-        "Juan Carlos I" ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasSex data:male ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isFatherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
-
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Felipe_VI_of_Spain a :Person ;
     rdfs:label "Felipe VI of Spain" ;
     data:posIndicesFull "2617:2626",
         "408:417" ;
@@ -80,26 +17,11 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "Felipe VI",
         "Philip John Paul Alphonse of All Saints of Bourbon",
         "Philip VI of Spain" ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isBrotherOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSonOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain .
+    :hasSex data:male .
 
-data:Infanta_Cristina_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Cristina_of_Spain a :Person ;
     rdfs:label "Infanta Cristina of Spain" ;
     data:posIndicesFull "130:146",
         "2104:2120",
@@ -126,26 +48,11 @@ data:Infanta_Cristina_of_Spain a :Ancestor,
     :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
         "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
         "Infanta Cristina" ;
-    :hasBrother data:Felipe_VI_of_Spain ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Felipe_VI_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSisterOf data:Felipe_VI_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
+    :hasSex data:female .
 
-data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Elena-_Duchess_of_Lugo a :Person ;
     rdfs:label "Infanta Elena, Duchess of Lugo" ;
     data:posIndicesFull "441:454",
         "441:471" ;
@@ -164,26 +71,46 @@ data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
         "Elena de Borbón",
         "Infanta Elena",
         "Infanta Elena of Spain" ;
-    :hasBrother data:Felipe_VI_of_Spain ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Cristina_of_Spain ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isSisterOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain .
+    :hasSex data:female .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Iñaki_Urdangarin a :Person ;
+    rdfs:label "Iñaki Urdangarin" ;
+    data:posIndicesFull "1160:1176",
+        "588:604" ;
+    data:posIndicesPart "1325:1335" ;
+    data:wdtLink wdt:Q356560 ;
+    :alsoKnownAs "Don Iñaki Urdangarin Liebaert" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "157:165" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "282:295" ;
+    data:posIndicesPart "1802:1807",
+        "671:675",
+        "676:682" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasSex data:male .
+
+data:Queen_Sofía_of_Spain a :Person ;
     rdfs:label "Queen Sofía of Spain" ;
     data:posIndicesFull "17:29",
         "310:321" ;
@@ -194,21 +121,10 @@ data:Queen_Sofía_of_Spain a :Ancestor,
         "Queen Sofia of Spain",
         "Queen Sofía",
         "Queen Sofía, Queen Consort of Spain" ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasMother data:Frederica_of_Hanover ;
     :hasParent data:Frederica_of_Hanover ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isChildOf data:Frederica_of_Hanover ;
-    :isDaughterOf data:Frederica_of_Hanover ;
-    :isMotherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

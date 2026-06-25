@@ -16,55 +16,73 @@
       "qid": "Q1878458",
       "label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
-      "qid": "Q29574",
-      "label": "Beatrix of the Netherlands",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Pieter_van_Vollenhoven",
       "qid": "Q301365",
       "label": "Pieter van Vollenhoven",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Margriet_of_the_Netherlands",
       "qid": "Q268821",
       "label": "Princess Margriet of the Netherlands",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Juliana_of_the_Netherlands",
       "qid": "Q154946",
       "label": "Juliana of the Netherlands",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Beatrix_of_the_Netherlands",
+      "qid": "Q29574",
+      "label": "Beatrix of the Netherlands",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Bernhard_van_Vollenhoven",
-      "extracted_local_name": "Bernhard_van_Vollenhoven",
-      "embedding_text": "Bernhard van Vollenhoven",
+      "extracted_uri": "http://example.org/data/Pieter_van_Vollenhoven",
+      "extracted_local_name": "Pieter_van_Vollenhoven",
+      "embedding_text": "Pieter van Vollenhoven",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.782608695652174,
+      "score": 1.0,
       "ground_truth_uri": "http://example.com/data#Pieter_van_Vollenhoven",
       "ground_truth_qid": "Q301365",
       "ground_truth_label": "Pieter van Vollenhoven",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Pieter van Vollenhoven",
       "best_candidate_label": "Pieter van Vollenhoven",
       "best_candidate_qid": "Q301365",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.782608695652174
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Bernhard_van_Vollenhoven",
+      "extracted_local_name": "Prince_Bernhard_van_Vollenhoven",
+      "embedding_text": "Prince Bernhard van Vollenhoven",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.860655737704918,
+      "ground_truth_uri": "http://example.com/data#Prince_Bernhard_of_Orange-Nassau-Vollenhoven",
+      "ground_truth_qid": "Q1878458",
+      "ground_truth_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Bernhard of Orange-Nassau-Vollenhoven",
+      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
+      "best_candidate_qid": "Q1878458",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.860655737704918
     },
     {
       "extracted_uri": "http://example.org/data/Annette_Sekreve",
@@ -81,7 +99,7 @@
       "best_candidate_match_text": "Juliana of the Netherlands",
       "best_candidate_label": "Juliana of the Netherlands",
       "best_candidate_qid": "Q154946",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.34146341463414637
     },
     {
@@ -99,7 +117,7 @@
       "best_candidate_match_text": "Pieter van Vollenhoven",
       "best_candidate_label": "Pieter van Vollenhoven",
       "best_candidate_qid": "Q301365",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7333333333333333
     },
     {
@@ -114,29 +132,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Beatrix van Oranje",
-      "best_candidate_label": "Beatrix of the Netherlands",
-      "best_candidate_qid": "Q29574",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.4
-    },
-    {
-      "extracted_uri": "http://example.org/data/Pieter_van_Vollenhoven",
-      "extracted_local_name": "Pieter_van_Vollenhoven",
-      "embedding_text": "Pieter van Vollenhoven",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_qid": "Q1878458",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.5757575757575758
+      "best_candidate_match_text": "Pieter van Vollenhoven",
+      "best_candidate_label": "Pieter van Vollenhoven",
+      "best_candidate_qid": "Q301365",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6101694915254238
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Floris",
@@ -150,11 +150,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Bernhard Lucas Emmanuel of Orange-Nassau, van Vollenhoven",
-      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_qid": "Q1878458",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.2571428571428571
+      "best_candidate_match_text": "Beatrix of Orange",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Maurits",
@@ -168,11 +168,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Bernhard Lucas Emmanuel of Orange-Nassau, van Vollenhoven",
-      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_qid": "Q1878458",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.2535211267605634
+      "best_candidate_match_text": "Beatrix Wilhelmina Armgard",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Pieter-Christiaan",
@@ -186,11 +186,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Bernhard of Orange-Nassau, van Vollenhoven",
-      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_qid": "Q1878458",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.18181818181818182
+      "best_candidate_match_text": "Juliana of the Netherlands",
+      "best_candidate_label": "Juliana of the Netherlands",
+      "best_candidate_qid": "Q154946",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Margriet",
@@ -207,7 +207,7 @@
       "best_candidate_match_text": "Margriet van Oranje",
       "best_candidate_label": "Princess Margriet of the Netherlands",
       "best_candidate_qid": "Q268821",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4444444444444444
     },
     {
@@ -222,16 +222,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Bernhard of Orange-Nassau, van Vollenhoven",
-      "best_candidate_label": "Prince Bernhard of Orange-Nassau-Vollenhoven",
-      "best_candidate_qid": "Q1878458",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.6835443037974683
+      "best_candidate_match_text": "Beatrix van Oranje",
+      "best_candidate_label": "Beatrix of the Netherlands",
+      "best_candidate_qid": "Q29574",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
     }
   ],
   "summary": {
     "entities_total": 10,
-    "entities_matched": 1,
-    "entities_unmatched": 9
+    "entities_matched": 2,
+    "entities_unmatched": 8
   }
 }

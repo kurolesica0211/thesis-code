@@ -1,0 +1,98 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Armin-_Prince_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Armin, Prince of Lippe"^^xsd:string ;
+    data:posIndicesFull "450:472"^^xsd:string ;
+    data:posIndicesPart "505:511"^^xsd:string,
+        "663:668"^^xsd:string,
+        "723:729"^^xsd:string ;
+    data:wdtLink wdt:Q73464 ;
+    :alsoKnownAs "Armin Prinz zur Lippe"^^xsd:string ;
+    :hasBrother data:Armin-_Prince_of_Lippe ;
+    :hasChild data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :hasRelation data:Armin-_Prince_of_Lippe,
+        data:Stephan-_Hereditary_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSex data:male ;
+    :hasSon data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isAncestorOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isBloodrelationOf data:Armin-_Prince_of_Lippe ;
+    :isBrotherOf data:Armin-_Prince_of_Lippe ;
+    :isFatherOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isParentOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isSiblingOf data:Armin-_Prince_of_Lippe ;
+    :isUncleOf data:Stephan-_Hereditary_Prince_of_Lippe .
+
+data:Traute_Becker a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Traute Becker"^^xsd:string ;
+    data:posIndicesFull "486:499"^^xsd:string ;
+    data:wdtLink wdt:Q75374290 ;
+    :alsoKnownAs "Dr. Traute, Princess of Lippe"^^xsd:string,
+        "Traute Prinzessin zur Lippe"^^xsd:string,
+        "Traute, Princess of Lippe"^^xsd:string ;
+    :hasChild data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :hasRelation data:Armin-_Prince_of_Lippe,
+        data:Stephan-_Hereditary_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSex data:female ;
+    :hasSister data:Traute_Becker ;
+    :hasSon data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isAncestorOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isAuntOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isBloodrelationOf data:Traute_Becker ;
+    :isMotherOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isParentOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isSiblingOf data:Traute_Becker ;
+    :isSisterOf data:Traute_Becker .
+
+data:Stephan-_Hereditary_Prince_of_Lippe a :Man,
+        :Person ;
+    rdfs:label "Stephan, Hereditary Prince of Lippe"^^xsd:string ;
+    data:posIndicesFull "26:72"^^xsd:string ;
+    data:posIndicesPart "411:416"^^xsd:string,
+        "505:511"^^xsd:string,
+        "663:668"^^xsd:string,
+        "723:729"^^xsd:string,
+        "730:737"^^xsd:string ;
+    data:wdtLink wdt:Q7608111 ;
+    :alsoKnownAs "Stephan Leopold Justus Richard Prinz zur Lippe"^^xsd:string ;
+    :hasAncestor data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasBrother data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :hasFather data:Armin-_Prince_of_Lippe ;
+    :hasMother data:Traute_Becker ;
+    :hasParent data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasRelation data:Armin-_Prince_of_Lippe,
+        data:Stephan-_Hereditary_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isBrotherOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isChildOf data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker ;
+    :isSiblingOf data:Stephan-_Hereditary_Prince_of_Lippe ;
+    :isSonOf data:Armin-_Prince_of_Lippe,
+        data:Traute_Becker .
+

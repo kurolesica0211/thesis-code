@@ -7,34 +7,41 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
+    data:posIndicesFull "353:380" ;
+    data:posIndicesPart "641:652" ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
+        "George Medina",
+        "George Milford Haven",
+        "George Mountbatten, Earl of Medina",
+        "Prince George Louis Victor Henry Serge of Battenberg",
+        "Prince George of Battenberg" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person ;
+    rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven" ;
+    data:posIndicesFull "353:380",
+        "385:422" ;
+    data:posIndicesPart "641:652" ;
+    data:wdtLink wdt:Q259488 ;
+    :alsoKnownAs "Countess Nada de Torby",
+        "Countess Nadejda Mikhailovna de Torby",
+        "Countess Nadejda de Torby",
+        "Nada Mountbatten",
+        "Nada de Torby",
+        "Nadejda Medina",
+        "Nadejda Mikhailovna Mountbatten, Countess of Medina",
+        "Nadejda Mikhailovna Mountbatten, Marchioness of Milford Haven",
+        "Nadejda Milford Haven",
+        "Nadejda Mountbatten, Countess of Medina",
+        "Nadejda de Torby",
+        "Princess George of Battenberg" ;
+    :hasSex data:female .
 
-data:wdtLink a owl:AnnotationProperty .
-
-data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
-    data:posIndicesFull "160:209" ;
-    data:posIndicesPart "291:302",
-        "360:366",
-        "641:652" ;
-    data:wdtLink wdt:Q336783 ;
-    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
-        "George Ivar Louis Mountbatten, Earl of Medina",
-        "George Mountbatten, Earl of Medina" ;
-    :hasChild data:Tatiana_Mountbatten ;
-    :hasDaughter data:Tatiana_Mountbatten ;
-    :hasSex data:male ;
-    :isFatherOf data:Tatiana_Mountbatten ;
-    :isParentOf data:Tatiana_Mountbatten .
-
-data:Tatiana_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Tatiana_Mountbatten a :Person ;
     rdfs:label "Tatiana Mountbatten" ;
     data:posIndicesFull "111:130" ;
     data:posIndicesPart "291:302",
@@ -45,9 +52,27 @@ data:Tatiana_Mountbatten a :Person,
     data:wdtLink wdt:Q58301908 ;
     :alsoKnownAs "Lady Tatiana Helen Georgia Mountbatten",
         "Tatiana Helen Georgia Mountbatten" ;
-    :hasFather data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
     :hasParent data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :hasSex data:female ;
-    :isChildOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :isDaughterOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
+    data:posIndicesFull "160:209" ;
+    data:posIndicesPart "291:302",
+        "641:652" ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
+        "George Ivar Louis Mountbatten, Earl of Medina",
+        "George Mountbatten, Earl of Medina" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

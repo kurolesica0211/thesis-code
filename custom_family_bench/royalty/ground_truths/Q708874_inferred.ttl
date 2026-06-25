@@ -1,0 +1,112 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Amélie_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Amélie of Orléans"^^xsd:string ;
+    data:posIndicesFull "800:817"^^xsd:string ;
+    data:posIndicesPart "1593:1600"^^xsd:string,
+        "1846:1853"^^xsd:string,
+        "3436:3443"^^xsd:string,
+        "3797:3804"^^xsd:string ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans"^^xsd:string,
+        "Maria Amélia"^^xsd:string,
+        "Marie Amelie d'Orleans"^^xsd:string,
+        "Marie Amelie of Orleans"^^xsd:string,
+        "Marie Amélie d'Orléans"^^xsd:string,
+        "Marie Amélie of Orléans"^^xsd:string ;
+    :hasRelation data:Amélie_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :isBloodrelationOf data:Amélie_of_Orléans ;
+    :isSiblingOf data:Amélie_of_Orléans ;
+    :isSisterOf data:Amélie_of_Orléans .
+
+data:Prince_Philippe-_Duke_of_Orléans a :Man,
+        :Person ;
+    rdfs:label "Prince Philippe, Duke of Orléans"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string ;
+    data:posIndicesPart "1007:1015"^^xsd:string,
+        "1079:1087"^^xsd:string,
+        "1180:1188"^^xsd:string,
+        "1281:1289"^^xsd:string,
+        "1385:1393"^^xsd:string,
+        "1400:1406"^^xsd:string,
+        "1415:1419"^^xsd:string,
+        "1577:1583"^^xsd:string,
+        "1593:1600"^^xsd:string,
+        "1764:1772"^^xsd:string,
+        "1846:1853"^^xsd:string,
+        "1893:1901"^^xsd:string,
+        "198:206"^^xsd:string,
+        "2050:2058"^^xsd:string,
+        "2129:2137"^^xsd:string,
+        "2258:2266"^^xsd:string,
+        "2561:2569"^^xsd:string,
+        "2638:2646"^^xsd:string,
+        "267:275"^^xsd:string,
+        "2799:2807"^^xsd:string,
+        "2899:2907"^^xsd:string,
+        "2931:2939"^^xsd:string,
+        "3048:3056"^^xsd:string,
+        "3060:3068"^^xsd:string,
+        "3256:3264"^^xsd:string,
+        "3436:3443"^^xsd:string,
+        "3562:3570"^^xsd:string,
+        "3789:3793"^^xsd:string,
+        "3797:3804"^^xsd:string,
+        "3840:3848"^^xsd:string,
+        "392:400"^^xsd:string,
+        "3960:3968"^^xsd:string,
+        "4061:4069"^^xsd:string,
+        "4131:4139"^^xsd:string,
+        "424:432"^^xsd:string,
+        "4339:4343"^^xsd:string,
+        "4368:4376"^^xsd:string,
+        "4556:4560"^^xsd:string,
+        "4561:4569"^^xsd:string,
+        "539:547"^^xsd:string,
+        "782:790"^^xsd:string,
+        "827:833"^^xsd:string,
+        "910:918"^^xsd:string ;
+    data:wdtLink wdt:Q708874 ;
+    :alsoKnownAs "Prince Louis Robert, Duke of Orleans"^^xsd:string ;
+    :hasBrother data:Prince_Philippe-_Duke_of_Orléans ;
+    :hasRelation data:Prince_Philippe-_Duke_of_Orléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Philippe-_Duke_of_Orléans ;
+    :isBrotherOf data:Prince_Philippe-_Duke_of_Orléans ;
+    :isSiblingOf data:Prince_Philippe-_Duke_of_Orléans .
+
+data:Princess_Isabelle_dOrléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "325:353"^^xsd:string ;
+    data:posIndicesPart "1823:1831"^^xsd:string,
+        "3413:3421"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasRelation data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+

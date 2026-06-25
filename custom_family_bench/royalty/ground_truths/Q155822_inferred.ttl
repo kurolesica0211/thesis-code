@@ -1,0 +1,1133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Aspasia_Manos a :Person,
+        :Woman ;
+    rdfs:label "Aspasia Manos"^^xsd:string ;
+    data:posIndicesFull "35098:35111"^^xsd:string,
+        "38628:38641"^^xsd:string ;
+    data:posIndicesPart "42384:42391"^^xsd:string ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou"^^xsd:string,
+        "Princess Aspasia of Greece and Denmark"^^xsd:string ;
+    :hasRelation data:Aspasia_Manos ;
+    :hasSex data:female ;
+    :hasSister data:Aspasia_Manos ;
+    :isBloodrelationOf data:Aspasia_Manos ;
+    :isSiblingOf data:Aspasia_Manos ;
+    :isSisterOf data:Aspasia_Manos .
+
+data:Carol_II_of_Romania a :Man,
+        :Person ;
+    rdfs:label "Carol II of Romania"^^xsd:string ;
+    data:posIndicesFull "37194:37202"^^xsd:string,
+        "42583:42591"^^xsd:string,
+        "42583:42602"^^xsd:string ;
+    data:posIndicesPart "38000:38005"^^xsd:string,
+        "38009:38016"^^xsd:string,
+        "38193:38200"^^xsd:string,
+        "41770:41777"^^xsd:string,
+        "42722:42729"^^xsd:string ;
+    data:wdtLink wdt:Q212897 ;
+    :alsoKnownAs "Carol II"^^xsd:string,
+        "Charles II"^^xsd:string ;
+    :hasBrother data:Carol_II_of_Romania ;
+    :hasRelation data:Carol_II_of_Romania ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Carol_II_of_Romania ;
+    :isBrotherOf data:Carol_II_of_Romania ;
+    :isSiblingOf data:Carol_II_of_Romania .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "3019:3028"^^xsd:string,
+        "3255:3264"^^xsd:string,
+        "354:363"^^xsd:string,
+        "7104:7113"^^xsd:string,
+        "7206:7215"^^xsd:string,
+        "7267:7276"^^xsd:string,
+        "7473:7482"^^xsd:string,
+        "8043:8052"^^xsd:string ;
+    data:posIndicesPart "6168:6175"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "10085:10093"^^xsd:string,
+        "15359:15367"^^xsd:string,
+        "15678:15686"^^xsd:string,
+        "18017:18025"^^xsd:string,
+        "18635:18643"^^xsd:string,
+        "22837:22845"^^xsd:string,
+        "23281:23289"^^xsd:string,
+        "23715:23723"^^xsd:string,
+        "42068:42076"^^xsd:string,
+        "9564:9572"^^xsd:string ;
+    data:posIndicesPart "10286:10292"^^xsd:string,
+        "10600:10606"^^xsd:string,
+        "11419:11425"^^xsd:string,
+        "11516:11522"^^xsd:string,
+        "13023:13029"^^xsd:string,
+        "13870:13876"^^xsd:string,
+        "14388:14394"^^xsd:string,
+        "14681:14687"^^xsd:string,
+        "14995:15001"^^xsd:string,
+        "16153:16159"^^xsd:string,
+        "16448:16454"^^xsd:string,
+        "17239:17245"^^xsd:string,
+        "17505:17511"^^xsd:string,
+        "18212:18218"^^xsd:string,
+        "18531:18537"^^xsd:string,
+        "19172:19178"^^xsd:string,
+        "19232:19238"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "20078:20084"^^xsd:string,
+        "20162:20168"^^xsd:string,
+        "20415:20421"^^xsd:string,
+        "23017:23023"^^xsd:string,
+        "23120:23126"^^xsd:string,
+        "23791:23797"^^xsd:string,
+        "24795:24801"^^xsd:string,
+        "24934:24940"^^xsd:string,
+        "25273:25279"^^xsd:string,
+        "25535:25541"^^xsd:string,
+        "25576:25582"^^xsd:string,
+        "25641:25647"^^xsd:string,
+        "25918:25924"^^xsd:string,
+        "26467:26473"^^xsd:string,
+        "26579:26585"^^xsd:string,
+        "27876:27882"^^xsd:string,
+        "28386:28392"^^xsd:string,
+        "28889:28895"^^xsd:string,
+        "29171:29177"^^xsd:string,
+        "29971:29977"^^xsd:string,
+        "30228:30234"^^xsd:string,
+        "30468:30474"^^xsd:string,
+        "30624:30630"^^xsd:string,
+        "30710:30716"^^xsd:string,
+        "30829:30835"^^xsd:string,
+        "30919:30925"^^xsd:string,
+        "31197:31203"^^xsd:string,
+        "31234:31240"^^xsd:string,
+        "31338:31344"^^xsd:string,
+        "31454:31460"^^xsd:string,
+        "32186:32192"^^xsd:string,
+        "32836:32842"^^xsd:string,
+        "33381:33387"^^xsd:string,
+        "33795:33801"^^xsd:string,
+        "34277:34283"^^xsd:string,
+        "34344:34350"^^xsd:string,
+        "34991:34997"^^xsd:string,
+        "35568:35574"^^xsd:string,
+        "35884:35890"^^xsd:string,
+        "36223:36229"^^xsd:string,
+        "36234:36240"^^xsd:string,
+        "36864:36870"^^xsd:string,
+        "36945:36951"^^xsd:string,
+        "37332:37338"^^xsd:string,
+        "37802:37808"^^xsd:string,
+        "38501:38507"^^xsd:string,
+        "39063:39069"^^xsd:string,
+        "39592:39598"^^xsd:string,
+        "40151:40157"^^xsd:string,
+        "40220:40226"^^xsd:string,
+        "41004:41010"^^xsd:string,
+        "41068:41074"^^xsd:string,
+        "41225:41231"^^xsd:string,
+        "41289:41295"^^xsd:string,
+        "41618:41624"^^xsd:string,
+        "41879:41885"^^xsd:string,
+        "42839:42845"^^xsd:string,
+        "43084:43090"^^xsd:string,
+        "43867:43873"^^xsd:string,
+        "43949:43955"^^xsd:string,
+        "9631:9637"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "23863:23879"^^xsd:string,
+        "281:297"^^xsd:string,
+        "36371:36387"^^xsd:string,
+        "8402:8418"^^xsd:string ;
+    data:posIndicesPart "10164:10175"^^xsd:string,
+        "10286:10292"^^xsd:string,
+        "11516:11522"^^xsd:string,
+        "11860:11871"^^xsd:string,
+        "13023:13029"^^xsd:string,
+        "13870:13876"^^xsd:string,
+        "14388:14394"^^xsd:string,
+        "14457:14468"^^xsd:string,
+        "14681:14687"^^xsd:string,
+        "14995:15001"^^xsd:string,
+        "15480:15486"^^xsd:string,
+        "15808:15819"^^xsd:string,
+        "15870:15881"^^xsd:string,
+        "16153:16159"^^xsd:string,
+        "16219:16230"^^xsd:string,
+        "16448:16454"^^xsd:string,
+        "17239:17245"^^xsd:string,
+        "17505:17511"^^xsd:string,
+        "1751:1757"^^xsd:string,
+        "18212:18218"^^xsd:string,
+        "1879:1890"^^xsd:string,
+        "19172:19178"^^xsd:string,
+        "19232:19238"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "20078:20084"^^xsd:string,
+        "20162:20168"^^xsd:string,
+        "20415:20421"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "21511:21522"^^xsd:string,
+        "21859:21870"^^xsd:string,
+        "22073:22084"^^xsd:string,
+        "22308:22319"^^xsd:string,
+        "23017:23023"^^xsd:string,
+        "23120:23126"^^xsd:string,
+        "23765:23771"^^xsd:string,
+        "23966:23977"^^xsd:string,
+        "2454:2465"^^xsd:string,
+        "24795:24801"^^xsd:string,
+        "24934:24940"^^xsd:string,
+        "25131:25142"^^xsd:string,
+        "25273:25279"^^xsd:string,
+        "25576:25582"^^xsd:string,
+        "25641:25647"^^xsd:string,
+        "25918:25924"^^xsd:string,
+        "2623:2634"^^xsd:string,
+        "26467:26473"^^xsd:string,
+        "26579:26585"^^xsd:string,
+        "27876:27882"^^xsd:string,
+        "28386:28392"^^xsd:string,
+        "28889:28895"^^xsd:string,
+        "29171:29177"^^xsd:string,
+        "29682:29693"^^xsd:string,
+        "29971:29977"^^xsd:string,
+        "30228:30234"^^xsd:string,
+        "30468:30474"^^xsd:string,
+        "30624:30630"^^xsd:string,
+        "30710:30716"^^xsd:string,
+        "30829:30835"^^xsd:string,
+        "30919:30925"^^xsd:string,
+        "31197:31203"^^xsd:string,
+        "31234:31240"^^xsd:string,
+        "31338:31344"^^xsd:string,
+        "31454:31460"^^xsd:string,
+        "32186:32192"^^xsd:string,
+        "33121:33132"^^xsd:string,
+        "33577:33588"^^xsd:string,
+        "33743:33754"^^xsd:string,
+        "33795:33801"^^xsd:string,
+        "34277:34283"^^xsd:string,
+        "34344:34350"^^xsd:string,
+        "34744:34755"^^xsd:string,
+        "34991:34997"^^xsd:string,
+        "35568:35574"^^xsd:string,
+        "35884:35890"^^xsd:string,
+        "36234:36240"^^xsd:string,
+        "36641:36652"^^xsd:string,
+        "36945:36951"^^xsd:string,
+        "37332:37338"^^xsd:string,
+        "37802:37808"^^xsd:string,
+        "38501:38507"^^xsd:string,
+        "39063:39069"^^xsd:string,
+        "39592:39598"^^xsd:string,
+        "40220:40226"^^xsd:string,
+        "41068:41074"^^xsd:string,
+        "41289:41295"^^xsd:string,
+        "41879:41885"^^xsd:string,
+        "42839:42845"^^xsd:string,
+        "5849:5860"^^xsd:string,
+        "585:596"^^xsd:string,
+        "5871:5882"^^xsd:string,
+        "5900:5906"^^xsd:string,
+        "5984:5995"^^xsd:string,
+        "6365:6376"^^xsd:string,
+        "6612:6618"^^xsd:string,
+        "6670:6681"^^xsd:string,
+        "7744:7750"^^xsd:string,
+        "7834:7845"^^xsd:string,
+        "8182:8193"^^xsd:string,
+        "8552:8563"^^xsd:string,
+        "8707:8713"^^xsd:string,
+        "876:882"^^xsd:string,
+        "8891:8897"^^xsd:string,
+        "9775:9786"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "1672:1685"^^xsd:string,
+        "23863:23881"^^xsd:string,
+        "23868:23881"^^xsd:string,
+        "26246:26259"^^xsd:string,
+        "26619:26632"^^xsd:string,
+        "26756:26769"^^xsd:string,
+        "26895:26908"^^xsd:string,
+        "27731:27744"^^xsd:string,
+        "27819:27832"^^xsd:string,
+        "28584:28597"^^xsd:string,
+        "28940:28953"^^xsd:string,
+        "29232:29245"^^xsd:string,
+        "29479:29492"^^xsd:string,
+        "31379:31392"^^xsd:string,
+        "31799:31812"^^xsd:string,
+        "32404:32417"^^xsd:string,
+        "32774:32787"^^xsd:string,
+        "32965:32978"^^xsd:string,
+        "33483:33496"^^xsd:string,
+        "34477:34490"^^xsd:string,
+        "36194:36207"^^xsd:string,
+        "36371:36389"^^xsd:string,
+        "36376:36389"^^xsd:string,
+        "37354:37367"^^xsd:string,
+        "37884:37897"^^xsd:string,
+        "38357:38370"^^xsd:string,
+        "38823:38836"^^xsd:string,
+        "39614:39627"^^xsd:string,
+        "39905:39918"^^xsd:string,
+        "40292:40305"^^xsd:string,
+        "40808:40821"^^xsd:string,
+        "40972:40985"^^xsd:string,
+        "41107:41120"^^xsd:string,
+        "41323:41336"^^xsd:string ;
+    data:posIndicesPart "10164:10175"^^xsd:string,
+        "10286:10292"^^xsd:string,
+        "11516:11522"^^xsd:string,
+        "11860:11871"^^xsd:string,
+        "13023:13029"^^xsd:string,
+        "13870:13876"^^xsd:string,
+        "14388:14394"^^xsd:string,
+        "14457:14468"^^xsd:string,
+        "14681:14687"^^xsd:string,
+        "14995:15001"^^xsd:string,
+        "15480:15486"^^xsd:string,
+        "15808:15819"^^xsd:string,
+        "15870:15881"^^xsd:string,
+        "16153:16159"^^xsd:string,
+        "16219:16230"^^xsd:string,
+        "16448:16454"^^xsd:string,
+        "17239:17245"^^xsd:string,
+        "17505:17511"^^xsd:string,
+        "1751:1757"^^xsd:string,
+        "18212:18218"^^xsd:string,
+        "1879:1890"^^xsd:string,
+        "19172:19178"^^xsd:string,
+        "19232:19238"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "20078:20084"^^xsd:string,
+        "20162:20168"^^xsd:string,
+        "20415:20421"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "21511:21522"^^xsd:string,
+        "21859:21870"^^xsd:string,
+        "22073:22084"^^xsd:string,
+        "22308:22319"^^xsd:string,
+        "23017:23023"^^xsd:string,
+        "23120:23126"^^xsd:string,
+        "23765:23771"^^xsd:string,
+        "23966:23977"^^xsd:string,
+        "2454:2465"^^xsd:string,
+        "24795:24801"^^xsd:string,
+        "24934:24940"^^xsd:string,
+        "25131:25142"^^xsd:string,
+        "25273:25279"^^xsd:string,
+        "25576:25582"^^xsd:string,
+        "25641:25647"^^xsd:string,
+        "25918:25924"^^xsd:string,
+        "2623:2634"^^xsd:string,
+        "26467:26473"^^xsd:string,
+        "26579:26585"^^xsd:string,
+        "27876:27882"^^xsd:string,
+        "28386:28392"^^xsd:string,
+        "28889:28895"^^xsd:string,
+        "29171:29177"^^xsd:string,
+        "29682:29693"^^xsd:string,
+        "29971:29977"^^xsd:string,
+        "30228:30234"^^xsd:string,
+        "30468:30474"^^xsd:string,
+        "30624:30630"^^xsd:string,
+        "30710:30716"^^xsd:string,
+        "30829:30835"^^xsd:string,
+        "30919:30925"^^xsd:string,
+        "31197:31203"^^xsd:string,
+        "31234:31240"^^xsd:string,
+        "31338:31344"^^xsd:string,
+        "32186:32192"^^xsd:string,
+        "33121:33132"^^xsd:string,
+        "33577:33588"^^xsd:string,
+        "33743:33754"^^xsd:string,
+        "33795:33801"^^xsd:string,
+        "34277:34283"^^xsd:string,
+        "34344:34350"^^xsd:string,
+        "34744:34755"^^xsd:string,
+        "34991:34997"^^xsd:string,
+        "35568:35574"^^xsd:string,
+        "35884:35890"^^xsd:string,
+        "36641:36652"^^xsd:string,
+        "36945:36951"^^xsd:string,
+        "37802:37808"^^xsd:string,
+        "38501:38507"^^xsd:string,
+        "39063:39069"^^xsd:string,
+        "39592:39598"^^xsd:string,
+        "41289:41295"^^xsd:string,
+        "41879:41885"^^xsd:string,
+        "42839:42845"^^xsd:string,
+        "5849:5860"^^xsd:string,
+        "5871:5882"^^xsd:string,
+        "5900:5906"^^xsd:string,
+        "5984:5995"^^xsd:string,
+        "6365:6376"^^xsd:string,
+        "6612:6618"^^xsd:string,
+        "6670:6681"^^xsd:string,
+        "7744:7750"^^xsd:string,
+        "7834:7845"^^xsd:string,
+        "8182:8193"^^xsd:string,
+        "8552:8563"^^xsd:string,
+        "8707:8713"^^xsd:string,
+        "8891:8897"^^xsd:string,
+        "9775:9786"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece .
+
+data:Prince_August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "14642:14646"^^xsd:string ;
+    data:posIndicesPart "15264:15270"^^xsd:string,
+        "16363:16369"^^xsd:string,
+        "17124:17130"^^xsd:string,
+        "17611:17617"^^xsd:string,
+        "17785:17791"^^xsd:string,
+        "17942:17948"^^xsd:string,
+        "18156:18162"^^xsd:string,
+        "18509:18515"^^xsd:string,
+        "18524:18530"^^xsd:string,
+        "18797:18803"^^xsd:string,
+        "19487:19493"^^xsd:string,
+        "20439:20445"^^xsd:string,
+        "21637:21643"^^xsd:string,
+        "22002:22008"^^xsd:string,
+        "23345:23351"^^xsd:string,
+        "24305:24311"^^xsd:string,
+        "24537:24543"^^xsd:string,
+        "29066:29072"^^xsd:string,
+        "32829:32835"^^xsd:string,
+        "33359:33365"^^xsd:string,
+        "33545:33551"^^xsd:string,
+        "36304:36310"^^xsd:string,
+        "36987:36993"^^xsd:string,
+        "37147:37153"^^xsd:string,
+        "37993:37999"^^xsd:string,
+        "39322:39328"^^xsd:string,
+        "40441:40447"^^xsd:string,
+        "40782:40788"^^xsd:string,
+        "42704:42710"^^xsd:string ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+
+data:Prince_Joachim_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Prussia"^^xsd:string ;
+    data:posIndicesFull "12306:12313"^^xsd:string ;
+    data:posIndicesPart "15264:15270"^^xsd:string,
+        "16363:16369"^^xsd:string,
+        "17785:17791"^^xsd:string,
+        "17942:17948"^^xsd:string,
+        "18156:18162"^^xsd:string,
+        "18509:18515"^^xsd:string,
+        "18524:18530"^^xsd:string,
+        "18797:18803"^^xsd:string,
+        "19487:19493"^^xsd:string,
+        "20439:20445"^^xsd:string,
+        "21637:21643"^^xsd:string,
+        "22002:22008"^^xsd:string,
+        "23345:23351"^^xsd:string,
+        "24305:24311"^^xsd:string,
+        "32829:32835"^^xsd:string,
+        "33359:33365"^^xsd:string,
+        "33545:33551"^^xsd:string,
+        "36304:36310"^^xsd:string,
+        "36987:36993"^^xsd:string,
+        "37147:37153"^^xsd:string,
+        "37993:37999"^^xsd:string,
+        "40441:40447"^^xsd:string,
+        "40782:40788"^^xsd:string,
+        "42704:42710"^^xsd:string ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim"^^xsd:string,
+        "Joachim Franz Hubert"^^xsd:string,
+        "Prince Joachim Franz Humbert of Prussia"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+
+data:Frederick_III-_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick III, German Emperor"^^xsd:string ;
+    data:posIndicesFull "354:383"^^xsd:string ;
+    data:posIndicesPart "10785:10791"^^xsd:string,
+        "12144:12151"^^xsd:string,
+        "12576:12583"^^xsd:string,
+        "12883:12890"^^xsd:string,
+        "1324:1330"^^xsd:string,
+        "1597:1604"^^xsd:string,
+        "26715:26721"^^xsd:string,
+        "27343:27349"^^xsd:string,
+        "28157:28163"^^xsd:string,
+        "29895:29901"^^xsd:string,
+        "32075:32082"^^xsd:string,
+        "33414:33420"^^xsd:string,
+        "3562:3568"^^xsd:string,
+        "3686:3693"^^xsd:string,
+        "3753:3759"^^xsd:string,
+        "4391:4397"^^xsd:string,
+        "4482:4488"^^xsd:string,
+        "4489:4496"^^xsd:string,
+        "7096:7103"^^xsd:string,
+        "7198:7205"^^xsd:string,
+        "8791:8797"^^xsd:string,
+        "8860:8867"^^xsd:string ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany"^^xsd:string,
+        "Friedrich III"^^xsd:string,
+        "Friedrich III of Germany"^^xsd:string,
+        "Friedrich Wilhelm Nikolaus Karl"^^xsd:string,
+        "King Frederick III of Prussia"^^xsd:string,
+        "Kronprinz Friedrich Wilhelm"^^xsd:string ;
+    :hasBrother data:Frederick_III-_German_Emperor ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Frederick_III-_German_Emperor ;
+    :isBrotherOf data:Frederick_III-_German_Emperor ;
+    :isFatherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Frederick_III-_German_Emperor ;
+    :isUncleOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "3067:3091"^^xsd:string,
+        "473:497"^^xsd:string,
+        "6406:6423"^^xsd:string,
+        "7465:7482"^^xsd:string ;
+    data:posIndicesPart "10050:10055"^^xsd:string,
+        "10521:10529"^^xsd:string,
+        "10828:10836"^^xsd:string,
+        "11165:11173"^^xsd:string,
+        "11185:11193"^^xsd:string,
+        "11293:11298"^^xsd:string,
+        "1182:1190"^^xsd:string,
+        "12014:12022"^^xsd:string,
+        "1214:1219"^^xsd:string,
+        "12189:12197"^^xsd:string,
+        "12418:12423"^^xsd:string,
+        "13127:13135"^^xsd:string,
+        "13570:13575"^^xsd:string,
+        "13694:13702"^^xsd:string,
+        "14239:14244"^^xsd:string,
+        "14264:14272"^^xsd:string,
+        "14320:14328"^^xsd:string,
+        "14428:14433"^^xsd:string,
+        "15658:15666"^^xsd:string,
+        "16483:16491"^^xsd:string,
+        "16670:16678"^^xsd:string,
+        "16937:16942"^^xsd:string,
+        "16983:16991"^^xsd:string,
+        "19324:19329"^^xsd:string,
+        "19435:19440"^^xsd:string,
+        "19800:19805"^^xsd:string,
+        "19818:19826"^^xsd:string,
+        "20685:20693"^^xsd:string,
+        "21037:21042"^^xsd:string,
+        "21284:21292"^^xsd:string,
+        "22726:22731"^^xsd:string,
+        "2331:2336"^^xsd:string,
+        "23492:23500"^^xsd:string,
+        "23608:23613"^^xsd:string,
+        "24195:24200"^^xsd:string,
+        "24280:24285"^^xsd:string,
+        "24442:24447"^^xsd:string,
+        "24462:24467"^^xsd:string,
+        "24848:24853"^^xsd:string,
+        "25096:25104"^^xsd:string,
+        "27045:27050"^^xsd:string,
+        "27137:27142"^^xsd:string,
+        "29621:29626"^^xsd:string,
+        "31565:31570"^^xsd:string,
+        "31671:31679"^^xsd:string,
+        "31775:31780"^^xsd:string,
+        "3182:3190"^^xsd:string,
+        "3191:3196"^^xsd:string,
+        "31965:31970"^^xsd:string,
+        "3227:3235"^^xsd:string,
+        "32599:32604"^^xsd:string,
+        "3277:3285"^^xsd:string,
+        "33626:33631"^^xsd:string,
+        "33657:33662"^^xsd:string,
+        "34020:34025"^^xsd:string,
+        "34255:34260"^^xsd:string,
+        "34445:34450"^^xsd:string,
+        "35135:35143"^^xsd:string,
+        "35478:35483"^^xsd:string,
+        "35957:35962"^^xsd:string,
+        "36693:36698"^^xsd:string,
+        "36890:36898"^^xsd:string,
+        "36927:36935"^^xsd:string,
+        "37549:37554"^^xsd:string,
+        "37591:37596"^^xsd:string,
+        "37662:37667"^^xsd:string,
+        "37968:37976"^^xsd:string,
+        "38809:38814"^^xsd:string,
+        "40392:40397"^^xsd:string,
+        "40686:40691"^^xsd:string,
+        "4068:4076"^^xsd:string,
+        "41260:41265"^^xsd:string,
+        "41943:41948"^^xsd:string,
+        "42494:42502"^^xsd:string,
+        "44150:44155"^^xsd:string,
+        "44208:44213"^^xsd:string,
+        "5027:5035"^^xsd:string,
+        "5146:5154"^^xsd:string,
+        "5412:5420"^^xsd:string,
+        "5491:5499"^^xsd:string,
+        "5515:5523"^^xsd:string,
+        "6809:6817"^^xsd:string,
+        "6909:6914"^^xsd:string,
+        "7732:7740"^^xsd:string,
+        "8660:8668"^^xsd:string,
+        "9074:9079"^^xsd:string,
+        "9198:9203"^^xsd:string,
+        "9975:9980"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isAuntOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "11647:11651"^^xsd:string,
+        "13468:13472"^^xsd:string,
+        "14536:14540"^^xsd:string,
+        "18281:18309"^^xsd:string,
+        "18290:18309"^^xsd:string,
+        "25897:25901"^^xsd:string,
+        "26102:26106"^^xsd:string,
+        "27392:27396"^^xsd:string,
+        "35983:35987"^^xsd:string,
+        "36156:36160"^^xsd:string,
+        "4560:4565"^^xsd:string,
+        "4654:4659"^^xsd:string,
+        "6495:6499"^^xsd:string,
+        "9136:9140"^^xsd:string,
+        "977:981"^^xsd:string ;
+    data:posIndicesPart "10521:10529"^^xsd:string,
+        "11185:11193"^^xsd:string,
+        "12014:12022"^^xsd:string,
+        "13127:13135"^^xsd:string,
+        "13694:13702"^^xsd:string,
+        "15658:15666"^^xsd:string,
+        "16483:16491"^^xsd:string,
+        "16983:16991"^^xsd:string,
+        "17067:17075"^^xsd:string,
+        "19818:19826"^^xsd:string,
+        "20685:20693"^^xsd:string,
+        "21284:21292"^^xsd:string,
+        "23492:23500"^^xsd:string,
+        "2843:2851"^^xsd:string,
+        "2855:2862"^^xsd:string,
+        "2918:2926"^^xsd:string,
+        "2975:2982"^^xsd:string,
+        "3054:3061"^^xsd:string,
+        "3165:3172"^^xsd:string,
+        "31671:31679"^^xsd:string,
+        "3182:3190"^^xsd:string,
+        "35135:35143"^^xsd:string,
+        "36890:36898"^^xsd:string,
+        "36927:36935"^^xsd:string,
+        "3723:3730"^^xsd:string,
+        "3793:3800"^^xsd:string,
+        "37968:37976"^^xsd:string,
+        "4014:4021"^^xsd:string,
+        "42494:42502"^^xsd:string,
+        "43002:43010"^^xsd:string,
+        "44315:44323"^^xsd:string,
+        "4814:4822"^^xsd:string,
+        "5027:5035"^^xsd:string,
+        "5146:5154"^^xsd:string,
+        "5515:5523"^^xsd:string,
+        "5645:5653"^^xsd:string,
+        "7732:7740"^^xsd:string,
+        "8068:8075"^^xsd:string,
+        "8660:8668"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Sophia of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "44454:44476"^^xsd:string ;
+    data:posIndicesPart "10180:10186"^^xsd:string,
+        "10318:10324"^^xsd:string,
+        "10401:10407"^^xsd:string,
+        "11002:11008"^^xsd:string,
+        "1105:1111"^^xsd:string,
+        "11675:11681"^^xsd:string,
+        "11849:11855"^^xsd:string,
+        "12378:12384"^^xsd:string,
+        "12478:12484"^^xsd:string,
+        "12666:12672"^^xsd:string,
+        "12818:12824"^^xsd:string,
+        "12852:12858"^^xsd:string,
+        "13031:13037"^^xsd:string,
+        "13365:13371"^^xsd:string,
+        "13531:13537"^^xsd:string,
+        "13813:13819"^^xsd:string,
+        "14003:14009"^^xsd:string,
+        "14692:14698"^^xsd:string,
+        "15150:15156"^^xsd:string,
+        "15824:15830"^^xsd:string,
+        "1582:1588"^^xsd:string,
+        "16074:16080"^^xsd:string,
+        "16518:16524"^^xsd:string,
+        "16799:16805"^^xsd:string,
+        "17161:17167"^^xsd:string,
+        "18544:18550"^^xsd:string,
+        "18950:18956"^^xsd:string,
+        "1905:1911"^^xsd:string,
+        "19606:19612"^^xsd:string,
+        "1964:1970"^^xsd:string,
+        "20505:20511"^^xsd:string,
+        "20804:20810"^^xsd:string,
+        "21073:21079"^^xsd:string,
+        "21246:21252"^^xsd:string,
+        "21417:21423"^^xsd:string,
+        "21500:21506"^^xsd:string,
+        "21749:21755"^^xsd:string,
+        "22099:22105"^^xsd:string,
+        "22375:22381"^^xsd:string,
+        "23373:23379"^^xsd:string,
+        "23892:23898"^^xsd:string,
+        "23982:23988"^^xsd:string,
+        "24549:24555"^^xsd:string,
+        "25147:25153"^^xsd:string,
+        "2540:2546"^^xsd:string,
+        "2733:2739"^^xsd:string,
+        "28024:28030"^^xsd:string,
+        "28403:28409"^^xsd:string,
+        "2855:2862"^^xsd:string,
+        "28736:28742"^^xsd:string,
+        "29698:29704"^^xsd:string,
+        "2975:2982"^^xsd:string,
+        "3054:3061"^^xsd:string,
+        "31635:31641"^^xsd:string,
+        "3165:3172"^^xsd:string,
+        "32030:32036"^^xsd:string,
+        "32337:32343"^^xsd:string,
+        "32631:32637"^^xsd:string,
+        "33137:33143"^^xsd:string,
+        "33756:33762"^^xsd:string,
+        "33876:33882"^^xsd:string,
+        "34075:34081"^^xsd:string,
+        "34594:34600"^^xsd:string,
+        "34773:34779"^^xsd:string,
+        "35248:35254"^^xsd:string,
+        "35548:35554"^^xsd:string,
+        "35695:35701"^^xsd:string,
+        "36058:36064"^^xsd:string,
+        "37023:37029"^^xsd:string,
+        "37155:37161"^^xsd:string,
+        "3723:3730"^^xsd:string,
+        "37372:37378"^^xsd:string,
+        "37902:37908"^^xsd:string,
+        "3793:3800"^^xsd:string,
+        "38206:38212"^^xsd:string,
+        "38474:38480"^^xsd:string,
+        "385:391"^^xsd:string,
+        "39149:39155"^^xsd:string,
+        "4014:4021"^^xsd:string,
+        "40310:40316"^^xsd:string,
+        "41177:41183"^^xsd:string,
+        "41420:41426"^^xsd:string,
+        "41517:41523"^^xsd:string,
+        "41907:41913"^^xsd:string,
+        "42181:42187"^^xsd:string,
+        "42415:42421"^^xsd:string,
+        "42791:42797"^^xsd:string,
+        "43382:43388"^^xsd:string,
+        "43539:43545"^^xsd:string,
+        "43604:43610"^^xsd:string,
+        "44176:44182"^^xsd:string,
+        "44284:44290"^^xsd:string,
+        "692:698"^^xsd:string,
+        "8068:8075"^^xsd:string,
+        "8431:8437"^^xsd:string,
+        "8494:8500"^^xsd:string,
+        "959:965"^^xsd:string,
+        "9791:9797"^^xsd:string ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece"^^xsd:string,
+        "Queen Sophia, Queen Consort of Greece"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "11717:11727"^^xsd:string,
+        "1331:1346"^^xsd:string,
+        "1339:1349"^^xsd:string,
+        "14792:14807"^^xsd:string,
+        "14800:14810"^^xsd:string,
+        "16040:16055"^^xsd:string,
+        "16048:16058"^^xsd:string,
+        "3427:3437"^^xsd:string,
+        "43280:43295"^^xsd:string,
+        "43288:43298"^^xsd:string,
+        "6637:6652"^^xsd:string,
+        "7327:7342"^^xsd:string,
+        "7335:7345"^^xsd:string,
+        "9310:9325"^^xsd:string,
+        "9318:9328"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isAncestorOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia .
+

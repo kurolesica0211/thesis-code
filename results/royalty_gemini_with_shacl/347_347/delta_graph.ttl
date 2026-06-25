@@ -2,31 +2,93 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Tatiana_Mountbatten a :Person,
-        :Woman ;
-    :hasBirthYear "1990"^^xsd:string ;
-    :hasBrother data:Henry_Mountbatten_Earl_of_Medina ;
-    :hasFather data:George_Mountbatten_4th_Marquess_of_Milford_Haven ;
-    :hasMother data:Sarah_Georgina_Walker ;
-    :hasSex data:Female_Sex .
-
-data:Henry_Mountbatten_Earl_of_Medina a :Man,
-        :Person ;
-    :hasParent data:George_Mountbatten_4th_Marquess_of_Milford_Haven,
-        data:Sarah_Georgina_Walker ;
-    :hasSex data:Male_Sex .
-
-data:Female_Sex a :Female .
-
-data:George_Mountbatten_4th_Marquess_of_Milford_Haven a :Ancestor,
+data:Count_Ariprand_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male_Sex .
+    :hasBirthYear 1925 ;
+    :hasDeathYear 1996 .
 
-data:Male_Sex a :Male .
+data:Ernst_August_von_Hannover_1954 a :Man,
+        :Person ;
+    :hasBirthYear 1954 ;
+    :hasBrother data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasDaughter data:Princess_Alexandra_1999 ;
+    :hasFather data:Prince_Ernest_Augustus_of_Hannover_1914 ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSon data:Prince_Christian_1985,
+        data:Prince_Ernst_August_1983 .
 
-data:Sarah_Georgina_Walker a :Ancestor,
+data:Otto_Heinrich a :Man,
+        :Person ;
+    :hasFather data:Prince_Ludwig_Rudolph_of_Hannover ;
+    :hasMother data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+
+data:Albert_II_Prince_of_Monaco a :Man,
+        :Person .
+
+data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :hasBirthYear 1929 .
+
+data:Johann_Gustav_Hans_Hochuli a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1912 .
+
+data:Prince_Christian_1985 a :Man,
+        :Person ;
+    :hasBirthYear 1985 ;
+    :hasMother data:Chantal_Hochuli .
+
+data:Prince_Ernest_Augustus_of_Hannover_1914 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1987 .
+
+data:Prince_Ernst_August_1983 a :Man,
+        :Person ;
+    :hasBirthYear 1983 ;
+    :hasMother data:Chantal_Hochuli .
+
+data:Prince_Rainier_III_of_Monaco a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Alexandra_1999 a :Person,
+        :Woman ;
+    :hasBirthYear 1999 ;
+    :hasMother data:Princess_Caroline_of_Monaco .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 1980 .
+
+data:Rosmarie_Lembeck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2011 .
+
+data:Prince_Ludwig_Rudolph_of_Hannover a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Albert_II_Prince_of_Monaco ;
+    :hasFather data:Prince_Rainier_III_of_Monaco .
+
+data:Chantal_Hochuli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1955 ;
+    :hasFather data:Johann_Gustav_Hans_Hochuli ;
+    :hasMother data:Rosmarie_Lembeck .
 

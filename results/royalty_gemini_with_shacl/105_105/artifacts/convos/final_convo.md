@@ -127,6 +127,8 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -142,39 +144,9 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -189,6 +161,23 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -206,6 +195,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,29 +277,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -304,6 +300,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -316,6 +320,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -324,17 +330,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -362,6 +370,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -377,83 +469,137 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (dd40ebc4-bef4-4867-9200-44bf348c8d48)
- Call ID: dd40ebc4-bef4-4867-9200-44bf348c8d48
+  AssignClass (ce240514-99ae-42dd-9e80-cf6e9fa45d36)
+ Call ID: ce240514-99ae-42dd-9e80-cf6e9fa45d36
   Args:
     type: :Man
-    source: Prince Carlo of Bourbon-Two Sicilies
-  AssignClass (6a9b47b3-4721-43bc-a5ed-4ce56897364d)
- Call ID: 6a9b47b3-4721-43bc-a5ed-4ce56897364d
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (9685844e-2f37-40df-9c11-88e7363f2f0a)
+ Call ID: 9685844e-2f37-40df-9c11-88e7363f2f0a
   Args:
-    type: :Man
-    source: Prince Ferdinand
-  AssignClass (dfeee622-ead8-420a-900d-dd2b1c67a4ce)
- Call ID: dfeee622-ead8-420a-900d-dd2b1c67a4ce
-  Args:
-    type: :Woman
-    source: Chantal de Chevron-Villette
-  AssignClass (1699187c-240f-4adf-b014-080ee5aedace)
- Call ID: 1699187c-240f-4adf-b014-080ee5aedace
-  Args:
-    type: :Woman
-    source: Camilla Crociani
-  AssignClass (ce691c03-9d92-4dd3-a225-a3eb26e48692)
- Call ID: ce691c03-9d92-4dd3-a225-a3eb26e48692
-  Args:
-    type: :Man
-    source: Camillo Crociani
-  AssignClass (61d8d743-db00-4c70-a292-412840b43a99)
- Call ID: 61d8d743-db00-4c70-a292-412840b43a99
-  Args:
-    type: :Woman
-    source: Edy Vessel
-  AddLiteral (7e2ea5a5-4fbf-4e0d-8b34-dad94c717f11)
- Call ID: 7e2ea5a5-4fbf-4e0d-8b34-dad94c717f11
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (6acae9a7-20b5-4a25-89bb-686da9c155c4)
+ Call ID: 6acae9a7-20b5-4a25-89bb-686da9c155c4
   Args:
     literal_value: 1963
-    literal_type: xsd:integer
+    literal_type: xsd:positiveInteger
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
     relation: :hasBirthYear
-    source: Prince Carlo of Bourbon-Two Sicilies
-  AddTriple (80fa66e1-761c-4164-a79f-240b250f33ac)
- Call ID: 80fa66e1-761c-4164-a79f-240b250f33ac
+  AssignClass (71927f38-a47e-4b21-be8f-35df7ef0f95d)
+ Call ID: 71927f38-a47e-4b21-be8f-35df7ef0f95d
   Args:
+    source: Prince_Ferdinand_Duke_of_Castro
+    type: :Man
+  AssignClass (acc1ef7f-df23-42f2-8432-3bfe2a97a049)
+ Call ID: acc1ef7f-df23-42f2-8432-3bfe2a97a049
+  Args:
+    type: :Person
+    source: Prince_Ferdinand_Duke_of_Castro
+  AssignClass (94ffe35c-d00d-49d5-8957-2ef1b5915806)
+ Call ID: 94ffe35c-d00d-49d5-8957-2ef1b5915806
+  Args:
+    type: :Woman
+    source: Chantal_de_Chevron-Villette
+  AssignClass (bba5f075-7f66-4bc2-b67b-b6e12fc0728d)
+ Call ID: bba5f075-7f66-4bc2-b67b-b6e12fc0728d
+  Args:
+    type: :Person
+    source: Chantal_de_Chevron-Villette
+  AddTriple (42c58da6-a320-4182-9f04-bd335ae9d8c2)
+ Call ID: 42c58da6-a320-4182-9f04-bd335ae9d8c2
+  Args:
+    target: Prince_Ferdinand_Duke_of_Castro
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    target: Prince Ferdinand
-    source: Prince Carlo of Bourbon-Two Sicilies
-  AddTriple (d66ca7f2-fbe0-4f39-a211-4d96be922d38)
- Call ID: d66ca7f2-fbe0-4f39-a211-4d96be922d38
+  AddTriple (c1e8f375-c033-49c8-9307-4f8559e214ac)
+ Call ID: c1e8f375-c033-49c8-9307-4f8559e214ac
   Args:
-    target: Chantal de Chevron-Villette
+    target: Chantal_de_Chevron-Villette
     relation: :hasMother
-    source: Prince Carlo of Bourbon-Two Sicilies
-  AddTriple (d26c24bf-b5a1-4034-b139-ea49271c963d)
- Call ID: d26c24bf-b5a1-4034-b139-ea49271c963d
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (eb6fb124-759e-4fe8-b289-d45d6c18a46a)
+ Call ID: eb6fb124-759e-4fe8-b289-d45d6c18a46a
   Args:
-    relation: :hasFather
-    target: Camillo Crociani
-    source: Camilla Crociani
-  AddTriple (316d4b51-fd27-409d-b2e7-c859add66a22)
- Call ID: 316d4b51-fd27-409d-b2e7-c859add66a22
+    type: :Woman
+    source: Camilla_Crociani
+  AssignClass (84b376f9-b84c-4909-badb-ea10a23f9d60)
+ Call ID: 84b376f9-b84c-4909-badb-ea10a23f9d60
   Args:
-    source: Camilla Crociani
-    target: Edy Vessel
-    relation: :hasMother
-  AddLiteral (f4bf1007-38a6-45af-ad27-97d290d70785)
- Call ID: f4bf1007-38a6-45af-ad27-97d290d70785
+    source: Camilla_Crociani
+    type: :Person
+  AddTriple (cb8a443f-6f21-48de-878e-760def2a3cb4)
+ Call ID: cb8a443f-6f21-48de-878e-760def2a3cb4
   Args:
-    source: Prince Carlo of Bourbon-Two Sicilies
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1998
-  AddTriple (fc620181-4bc4-452f-ae13-c1483f6007b3)
- Call ID: fc620181-4bc4-452f-ae13-c1483f6007b3
-  Args:
-    source: Prince Carlo of Bourbon-Two Sicilies
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
     relation: :hasRelation
-    target: Camilla Crociani
-  Finish (71a7406a-5229-484c-9a90-aa436ef94ba1)
- Call ID: 71a7406a-5229-484c-9a90-aa436ef94ba1
+    target: Camilla_Crociani
+  AddLiteral (60f3e38d-52aa-438f-9c09-21a2942fa7de)
+ Call ID: 60f3e38d-52aa-438f-9c09-21a2942fa7de
   Args:
+    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+    relation: :hasMarriageYear
+    literal_type: xsd:positiveInteger
+    literal_value: 1998
+  AssignClass (057b8254-553c-48ee-9bdc-d168675646b9)
+ Call ID: 057b8254-553c-48ee-9bdc-d168675646b9
+  Args:
+    source: Camillo_Crociani
+    type: :Man
+  AssignClass (2a949b08-fc77-4f23-a88c-02bd2183ab9c)
+ Call ID: 2a949b08-fc77-4f23-a88c-02bd2183ab9c
+  Args:
+    type: :Person
+    source: Camillo_Crociani
+  AssignClass (832d8444-7de3-4f05-a5dd-10b09f947d57)
+ Call ID: 832d8444-7de3-4f05-a5dd-10b09f947d57
+  Args:
+    source: Edy_Vessel
+    type: :Woman
+  AssignClass (e5b21e87-10b2-4007-ae39-3c26c478807e)
+ Call ID: e5b21e87-10b2-4007-ae39-3c26c478807e
+  Args:
+    type: :Person
+    source: Edy_Vessel
+  AddTriple (3226b531-f4e8-461d-9103-2f09494d444e)
+ Call ID: 3226b531-f4e8-461d-9103-2f09494d444e
+  Args:
+    relation: :hasFather
+    source: Camilla_Crociani
+    target: Camillo_Crociani
+  AddTriple (91c91f5b-d379-4318-a5c0-c7aaa852c5c0)
+ Call ID: 91c91f5b-d379-4318-a5c0-c7aaa852c5c0
+  Args:
+    target: Edy_Vessel
+    source: Camilla_Crociani
+    relation: :hasMother
+  Finish (ace6eceb-ac2b-4d0d-bfea-44a4b95de130)
+ Call ID: ace6eceb-ac2b-4d0d-bfea-44a4b95de130
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -510,24 +656,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Prince_Ferdinand ;
-      :hasMarriageYear 1998 ;
+  data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,
+          :Person ;
+      :hasBirthYear "1963"^^xsd:positiveInteger ;
+      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+      :hasMarriageYear "1998"^^xsd:positiveInteger ;
       :hasMother data:Chantal_de_Chevron-Villette ;
       :hasRelation data:Camilla_Crociani .
 
-  data:Camilla_Crociani a :Woman ;
+  data:Camilla_Crociani a :Person,
+          :Woman ;
       :hasFather data:Camillo_Crociani ;
       :hasMother data:Edy_Vessel .
 
-  data:Camillo_Crociani a :Man .
+  data:Camillo_Crociani a :Man,
+          :Person .
 
-  data:Chantal_de_Chevron-Villette a :Woman .
+  data:Chantal_de_Chevron-Villette a :Person,
+          :Woman .
 
-  data:Edy_Vessel a :Woman .
+  data:Edy_Vessel a :Person,
+          :Woman .
 
-  data:Prince_Ferdinand a :Man .
+  data:Prince_Ferdinand_Duke_of_Castro a :Man,
+          :Person .
 
 
 
@@ -539,8 +691,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b1c326c5-9340-4536-bf9b-ee74d1fe4967)
- Call ID: b1c326c5-9340-4536-bf9b-ee74d1fe4967
+  ValidateShacl (4abbc5aa-0f4b-470a-99c3-f16d16d4782f)
+ Call ID: 4abbc5aa-0f4b-470a-99c3-f16d16d4782f
   Args:
 
 ================================= Tool Message =================================
@@ -552,97 +704,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Ferdinand is used as the father of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Prince_Ferdinand_Duke_of_Castro' assigned to the 'hasFather' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ferdinand, :Ancestor)
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Chantal_de_Chevron-Villette is used as the mother of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Chantal_de_Chevron-Villette' assigned to the 'hasMother' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Chantal_de_Chevron-Villette, :Ancestor)
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Ferdinand is used as the father of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Camillo_Crociani' assigned to the 'hasFather' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ferdinand, :Ancestor)
+      AssignClass(node='Camillo_Crociani', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Camillo_Crociani is used as the father of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Prince_Ferdinand_Duke_of_Castro' assigned to the 'hasFather' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Camillo_Crociani, :Ancestor)
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Chantal_de_Chevron-Villette is used as the mother of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Edy_Vessel' assigned to the 'hasMother' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Chantal_de_Chevron-Villette, :Ancestor)
+      AssignClass(node='Edy_Vessel', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Edy_Vessel is used as the mother of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Chantal_de_Chevron-Villette' assigned to the 'hasMother' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edy_Vessel, :Ancestor)
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Ferdinand is used as the father of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Camillo_Crociani' assigned to the 'hasFather' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ferdinand, :Ancestor)
+      AssignClass(node='Camillo_Crociani', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Camillo_Crociani is used as the father of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Prince_Ferdinand_Duke_of_Castro' assigned to the 'hasFather' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Camillo_Crociani, :Ancestor)
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Chantal_de_Chevron-Villette is used as the mother of Prince_Carlo_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The value node 'Edy_Vessel' assigned to the 'hasMother' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Chantal_de_Chevron-Villette, :Ancestor)
+      AssignClass(node='Edy_Vessel', class=':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Edy_Vessel is used as the mother of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Chantal_de_Chevron-Villette' assigned to the 'hasMother' property of 'Prince_Carlo_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edy_Vessel, :Ancestor)
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Camillo_Crociani is used as the father of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Camillo_Crociani' assigned to the 'hasFather' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Camillo_Crociani, :Ancestor)
+      AssignClass(node='Camillo_Crociani', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Edy_Vessel is used as the mother of Camilla_Crociani but lacks the required :Ancestor class.
+      The value node 'Edy_Vessel' assigned to the 'hasMother' property of 'Camilla_Crociani' is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edy_Vessel, :Ancestor)
+      AssignClass(node='Edy_Vessel', class=':Ancestor')
 
 
 
@@ -651,29 +803,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (b25203d3-29e3-442f-aef5-af28e40f6141)
- Call ID: b25203d3-29e3-442f-aef5-af28e40f6141
+  AssignClass (3b12c583-5602-4dc4-8280-b069d361b9fa)
+ Call ID: 3b12c583-5602-4dc4-8280-b069d361b9fa
   Args:
     type: :Ancestor
-    source: Prince Ferdinand
-  AssignClass (c271c644-7cb1-492b-80c5-f60c8622b869)
- Call ID: c271c644-7cb1-492b-80c5-f60c8622b869
-  Args:
-    source: Chantal de Chevron-Villette
-    type: :Ancestor
-  AssignClass (9d17f0da-2dce-4f7b-aa41-a6d48b92bd80)
- Call ID: 9d17f0da-2dce-4f7b-aa41-a6d48b92bd80
+    source: Prince_Ferdinand_Duke_of_Castro
+  AssignClass (3220a0eb-17a8-48ea-980f-f0737784f4d5)
+ Call ID: 3220a0eb-17a8-48ea-980f-f0737784f4d5
   Args:
     type: :Ancestor
-    source: Camillo Crociani
-  AssignClass (5ead25e4-e23d-4eab-85e3-d17bef7436e9)
- Call ID: 5ead25e4-e23d-4eab-85e3-d17bef7436e9
+    source: Chantal_de_Chevron-Villette
+  AssignClass (f0ec6e19-be33-4329-acd4-01cdf2f2b5da)
+ Call ID: f0ec6e19-be33-4329-acd4-01cdf2f2b5da
   Args:
-    source: Edy Vessel
+    source: Camillo_Crociani
     type: :Ancestor
-  ValidateShacl (72817e87-6041-4424-81cf-b68fceac7a36)
- Call ID: 72817e87-6041-4424-81cf-b68fceac7a36
+  AssignClass (ac26faf1-6ce5-4d52-8b2a-4908bb505f57)
+ Call ID: ac26faf1-6ce5-4d52-8b2a-4908bb505f57
   Args:
+    source: Edy_Vessel
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -694,30 +843,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Prince_Ferdinand ;
-      :hasMarriageYear 1998 ;
+  data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,
+          :Person ;
+      :hasBirthYear "1963"^^xsd:positiveInteger ;
+      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+      :hasMarriageYear "1998"^^xsd:positiveInteger ;
       :hasMother data:Chantal_de_Chevron-Villette ;
       :hasRelation data:Camilla_Crociani .
 
-  data:Camilla_Crociani a :Woman ;
+  data:Camilla_Crociani a :Person,
+          :Woman ;
       :hasFather data:Camillo_Crociani ;
       :hasMother data:Edy_Vessel .
 
   data:Camillo_Crociani a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
   data:Chantal_de_Chevron-Villette a :Ancestor,
+          :Person,
           :Woman .
 
   data:Edy_Vessel a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Prince_Ferdinand a :Ancestor,
-          :Man .
+  data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (46c2e52b-b11c-4f99-9e8e-05d73a795702)
+ Call ID: 46c2e52b-b11c-4f99-9e8e-05d73a795702
+  Args:
 
 ================================= Tool Message =================================
 
@@ -727,6 +890,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (eaabe28c-9f06-44c5-ae2f-1cb4c85ff855)
- Call ID: eaabe28c-9f06-44c5-ae2f-1cb4c85ff855
+  Finish (b2e6e785-b137-4d0e-9985-6dfbce83f6cc)
+ Call ID: b2e6e785-b137-4d0e-9985-6dfbce83f6cc
   Args:

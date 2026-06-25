@@ -1,0 +1,305 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Brigid_Guinness a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Brigid Guinness"^^xsd:string ;
+    data:posIndicesFull "609:636"^^xsd:string,
+        "646:661"^^xsd:string ;
+    data:wdtLink wdt:Q6469999 ;
+    :alsoKnownAs "Brigid Katharine Rachel Guinness"^^xsd:string,
+        "Brigid Katharine Rachel Ness"^^xsd:string,
+        "Brigid Ness"^^xsd:string,
+        "Lady Brigid Katharine Rachel Guinness"^^xsd:string,
+        "Lady Brigid Katharine Rachel Ness"^^xsd:string,
+        "Lady Brigid Ness"^^xsd:string,
+        "Princess Frederick of Prussia"^^xsd:string ;
+    :hasChild data:Princess_Antonia_of_Prussia ;
+    :hasDaughter data:Princess_Antonia_of_Prussia ;
+    :hasRelation data:Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Brigid_Guinness ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :isAuntOf data:Princess_Antonia_of_Prussia ;
+    :isBloodrelationOf data:Brigid_Guinness ;
+    :isMotherOf data:Princess_Antonia_of_Prussia ;
+    :isParentOf data:Princess_Antonia_of_Prussia ;
+    :isSiblingOf data:Brigid_Guinness ;
+    :isSisterOf data:Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Frederick of Prussia"^^xsd:string ;
+    data:posIndicesFull "609:636"^^xsd:string ;
+    data:wdtLink wdt:Q70632 ;
+    :alsoKnownAs "Friedrich Georg Wilhelm Christoph Prinz von Preussen"^^xsd:string,
+        "Friedrich Georg Wilhelm Christoph Prinz von Preußen"^^xsd:string,
+        "Friedrich von Preussen"^^xsd:string,
+        "Prince Frederick George William Christopher of Prussia"^^xsd:string,
+        "Prince Friedrich Georg Wilhelm Christoph Prinz of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Princess_Antonia_of_Prussia ;
+    :hasDaughter data:Princess_Antonia_of_Prussia ;
+    :hasRelation data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Princess_Antonia_of_Prussia ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Princess_Antonia_of_Prussia ;
+    :isParentOf data:Princess_Antonia_of_Prussia ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Princess_Antonia_of_Prussia .
+
+data:Arthur_Wellesley-_Earl_of_Mornington a :Man,
+        :Person ;
+    rdfs:label "Arthur Wellesley, Earl of Mornington"^^xsd:string ;
+    data:posIndicesFull "934:970"^^xsd:string ;
+    data:wdtLink wdt:Q4800637 ;
+    :alsoKnownAs "Arthur Douro"^^xsd:string,
+        "Arthur Gerald Wellesley, Earl of Mornington"^^xsd:string,
+        "Arthur Gerald Wellesley, Marquess of Douro"^^xsd:string,
+        "Arthur Mornington"^^xsd:string,
+        "Arthur Wellesley, Marquess of Douro"^^xsd:string ;
+    :hasAncestor data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasBrother data:Arthur_Wellesley-_Earl_of_Mornington ;
+    :hasFather data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasRelation data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSex data:male ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBrotherOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :isSiblingOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSonOf data:Charles_Wellesley-_9th_Duke_of_Wellington .
+
+data:Charles_Wellesley-_9th_Duke_of_Wellington a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles Wellesley, 9th Duke of Wellington"^^xsd:string ;
+    data:posIndicesFull "271:307"^^xsd:string ;
+    data:posIndicesPart "363:372"^^xsd:string,
+        "378:382"^^xsd:string,
+        "386:396"^^xsd:string,
+        "443:447"^^xsd:string,
+        "451:461"^^xsd:string,
+        "499:503"^^xsd:string,
+        "530:534"^^xsd:string ;
+    data:wdtLink wdt:Q2960441 ;
+    :alsoKnownAs "Arthur Charles Valerian Wellesley, 9th Duke of Wellington"^^xsd:string,
+        "Arthur Charles Valerian Wellesley, Marquess of Douro, 10th Duke of Ciudad Rodrigo, Grandee of Spain"^^xsd:string,
+        "Charles Wellesley, Marquess of Douro"^^xsd:string,
+        "The Lord Douro"^^xsd:string ;
+    :hasBrother data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasChild data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasRelation data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSex data:male ;
+    :hasSon data:Arthur_Wellesley-_Earl_of_Mornington ;
+    :isAncestorOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :isBrotherOf data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :isFatherOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isParentOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :isUncleOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Princess_Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Antonia of Prussia"^^xsd:string ;
+    data:posIndicesFull "239:266"^^xsd:string ;
+    data:posIndicesPart "566:574"^^xsd:string,
+        "575:582"^^xsd:string ;
+    data:wdtLink wdt:Q7244552 ;
+    :alsoKnownAs "Princess Antonia Elizabeth Brigid Luise of Prussia"^^xsd:string,
+        "Princess Antonia of Prussia, The Duchess of Wellington"^^xsd:string ;
+    :hasAncestor data:Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMother data:Brigid_Guinness ;
+    :hasParent data:Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Brigid_Guinness,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Antonia_of_Prussia ;
+    :isAncestorOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Princess_Antonia_of_Prussia ;
+    :isChildOf data:Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isDaughterOf data:Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isMotherOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Princess_Antonia_of_Prussia ;
+    :isSisterOf data:Princess_Antonia_of_Prussia .
+
+data:Lady_Charlotte_Wellesley a :Person,
+        :Woman ;
+    rdfs:label "Lady Charlotte Wellesley"^^xsd:string ;
+    data:posIndicesFull "0:33"^^xsd:string,
+        "154:178"^^xsd:string,
+        "159:178"^^xsd:string,
+        "5:33"^^xsd:string ;
+    data:posIndicesPart "1018:1022"^^xsd:string,
+        "1023:1032"^^xsd:string,
+        "1121:1125"^^xsd:string,
+        "1126:1135"^^xsd:string,
+        "363:372"^^xsd:string,
+        "641:645"^^xsd:string,
+        "683:687"^^xsd:string,
+        "688:697"^^xsd:string,
+        "822:826"^^xsd:string,
+        "827:836"^^xsd:string ;
+    data:wdtLink wdt:Q75383463 ;
+    :alsoKnownAs "Charlotte Anne Santo Domingo"^^xsd:string,
+        "Charlotte Anne Wellesley"^^xsd:string,
+        "Charlotte Santo Domingo"^^xsd:string,
+        "Charlotte Wellesley"^^xsd:string,
+        "Lady Charlotte Anne Santo Domingo"^^xsd:string,
+        "Lady Charlotte Anne Wellesley"^^xsd:string,
+        "Lady Charlotte Santo Domingo"^^xsd:string ;
+    :hasAncestor data:Brigid_Guinness,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasBrother data:Arthur_Wellesley-_Earl_of_Mornington ;
+    :hasFather data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasMother data:Princess_Antonia_of_Prussia ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :hasRelation data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :isDaughterOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :isSiblingOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman ;
+    rdfs:label "Lady Mary Wellesley"^^xsd:string ;
+    data:posIndicesFull "975:994"^^xsd:string,
+        "980:994"^^xsd:string ;
+    data:posIndicesPart "1018:1022"^^xsd:string,
+        "1121:1125"^^xsd:string ;
+    data:wdtLink wdt:Q75383406 ;
+    :alsoKnownAs "Lady Mary Louise Wellesley"^^xsd:string,
+        "Lady Mary Luise Wellesley"^^xsd:string,
+        "Mary Louise Wellesley"^^xsd:string,
+        "Mary Luise Wellesley"^^xsd:string,
+        "Mary Wellesley"^^xsd:string ;
+    :hasAncestor data:Brigid_Guinness,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasBrother data:Arthur_Wellesley-_Earl_of_Mornington ;
+    :hasFather data:Charles_Wellesley-_9th_Duke_of_Wellington ;
+    :hasMother data:Princess_Antonia_of_Prussia ;
+    :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :hasRelation data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Brigid_Guinness,
+        data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley,
+        data:Prince_Frederick_of_Prussia,
+        data:Princess_Antonia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isChildOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :isDaughterOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
+        data:Princess_Antonia_of_Prussia ;
+    :isSiblingOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Arthur_Wellesley-_Earl_of_Mornington,
+        data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+

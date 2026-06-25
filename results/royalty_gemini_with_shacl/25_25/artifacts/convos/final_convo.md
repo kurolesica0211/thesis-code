@@ -172,6 +172,8 @@ Louise is buried beside her husband and his first wife, Crown Princess Margaret,
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -187,39 +189,9 @@ Louise is buried beside her husband and his first wife, Crown Princess Margaret,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -234,6 +206,23 @@ Louise is buried beside her husband and his first wife, Crown Princess Margaret,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -251,6 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -318,29 +322,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -349,6 +345,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -361,6 +365,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -369,17 +375,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -407,6 +415,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -422,168 +514,166 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (00efc365-add2-4867-b731-54bbca6442f3)
- Call ID: 00efc365-add2-4867-b731-54bbca6442f3
+  AssignClass (603f4dab-9ef2-437a-b25f-cac975a6c556)
+ Call ID: 603f4dab-9ef2-437a-b25f-cac975a6c556
   Args:
     type: :Woman
-    source: Louise_Mountbatten
-  AssignClass (c93af68d-0c79-4854-b84c-a67cff48952e)
- Call ID: c93af68d-0c79-4854-b84c-a67cff48952e
+    source: :Louise_Mountbatten
+  AssignClass (a48101eb-7204-4d35-b5a4-704348eb63a3)
+ Call ID: a48101eb-7204-4d35-b5a4-704348eb63a3
   Args:
-    source: Louise_Mountbatten
     type: :Person
-  AddLiteral (50908bd0-b557-4bc0-909f-2f951b431d31)
- Call ID: 50908bd0-b557-4bc0-909f-2f951b431d31
+    source: :Louise_Mountbatten
+  AddLiteral (3347eebd-99c9-4cba-9b72-3d3e3d9ca5b1)
+ Call ID: 3347eebd-99c9-4cba-9b72-3d3e3d9ca5b1
   Args:
-    literal_value: Louise Alexandra Marie Irene Mountbatten
-    source: Louise_Mountbatten
-    relation: :knownAs
-    literal_type: xsd:string
-  AddLiteral (0d815396-0a19-4a8d-9664-f47192de6353)
- Call ID: 0d815396-0a19-4a8d-9664-f47192de6353
-  Args:
-    source: Louise_Mountbatten
-    literal_value: Princess Louise of Battenberg
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-  AddLiteral (334a3a41-13c2-40fd-9a64-34e9189c863f)
- Call ID: 334a3a41-13c2-40fd-9a64-34e9189c863f
-  Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Louise_Mountbatten
-    literal_value: Lady Louise Mountbatten
-  AddLiteral (f917d69b-989d-45ec-a119-b223aaaf6b56)
- Call ID: f917d69b-989d-45ec-a119-b223aaaf6b56
-  Args:
-    source: Louise_Mountbatten
+    relation: :hasBirthYear
+    source: :Louise_Mountbatten
     literal_value: 1889
     literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (3db9de40-564f-4ac3-902b-682171fd3474)
- Call ID: 3db9de40-564f-4ac3-902b-682171fd3474
+  AddLiteral (fa9578bd-8a08-490b-bafe-d91e7b33ed21)
+ Call ID: fa9578bd-8a08-490b-bafe-d91e7b33ed21
   Args:
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Louise_Mountbatten
     literal_value: 1965
-  AssignClass (dff46542-5600-490b-91dc-5f8b57f10b63)
- Call ID: dff46542-5600-490b-91dc-5f8b57f10b63
+    source: :Louise_Mountbatten
+    relation: :hasDeathYear
+  AddLiteral (3b07601e-5b24-498f-95e8-793e8008590f)
+ Call ID: 3b07601e-5b24-498f-95e8-793e8008590f
   Args:
+    source: :Louise_Mountbatten
+    literal_value: Louise Alexandra Marie Irene Mountbatten
+    literal_type: xsd:string
+    relation: :knownAs
+  AddLiteral (4567cc53-e382-4721-9c39-d6bcb0c349a1)
+ Call ID: 4567cc53-e382-4721-9c39-d6bcb0c349a1
+  Args:
+    literal_type: xsd:string
+    literal_value: Princess Louise of Battenberg
+    source: :Louise_Mountbatten
+    relation: :formerlyKnownAs
+  AddLiteral (33148b09-0624-4171-aa33-d808319c9a34)
+ Call ID: 33148b09-0624-4171-aa33-d808319c9a34
+  Args:
+    literal_value: Lady Louise Mountbatten
+    source: :Louise_Mountbatten
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AssignClass (09726455-2273-4695-ab1e-2b6b0a793250)
+ Call ID: 09726455-2273-4695-ab1e-2b6b0a793250
+  Args:
+    source: :Prince_Louis_of_Battenberg
     type: :Man
-    source: Prince_Louis_of_Battenberg
-  AssignClass (f4671f44-590d-4104-8503-480fb07a8cc0)
- Call ID: f4671f44-590d-4104-8503-480fb07a8cc0
+  AssignClass (12489cc9-a259-4dec-8de1-7558b629a827)
+ Call ID: 12489cc9-a259-4dec-8de1-7558b629a827
+  Args:
+    source: :Prince_Louis_of_Battenberg
+    type: :Person
+  AssignClass (c7a3a1da-1956-4bec-b0a1-23f6570fc458)
+ Call ID: c7a3a1da-1956-4bec-b0a1-23f6570fc458
   Args:
     type: :Ancestor
-    source: Prince_Louis_of_Battenberg
-  AddTriple (2da6c58c-4781-455d-99e6-ddbae7045080)
- Call ID: 2da6c58c-4781-455d-99e6-ddbae7045080
+    source: :Prince_Louis_of_Battenberg
+  AddTriple (a61efd38-7fa0-481d-8b73-26775c664276)
+ Call ID: a61efd38-7fa0-481d-8b73-26775c664276
   Args:
-    target: Prince_Louis_of_Battenberg
     relation: :hasFather
-    source: Louise_Mountbatten
-  AssignClass (09c30ad7-0d3a-4f4b-a6df-363d4ea2ed2b)
- Call ID: 09c30ad7-0d3a-4f4b-a6df-363d4ea2ed2b
+    target: :Prince_Louis_of_Battenberg
+    source: :Louise_Mountbatten
+  AssignClass (779a4ebf-e8d9-4e28-8fb1-a20bcda5247e)
+ Call ID: 779a4ebf-e8d9-4e28-8fb1-a20bcda5247e
   Args:
-    source: Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Woman
-  AssignClass (f9ae93b0-b65b-47de-a518-7c661269f738)
- Call ID: f9ae93b0-b65b-47de-a518-7c661269f738
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+  AssignClass (f8200955-ae5d-4c76-ac1a-202ee6b92787)
+ Call ID: f8200955-ae5d-4c76-ac1a-202ee6b92787
   Args:
-    source: Princess_Victoria_of_Hesse_and_by_Rhine
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (6f72a8e5-697f-4e35-a3cc-1467c27515e0)
+ Call ID: 6f72a8e5-697f-4e35-a3cc-1467c27515e0
+  Args:
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Ancestor
-  AddTriple (a5946e0b-c30a-4740-963e-a517b71b9d86)
- Call ID: a5946e0b-c30a-4740-963e-a517b71b9d86
+  AddTriple (fad0d137-2cc4-433a-8d32-59c93bfd6f65)
+ Call ID: fad0d137-2cc4-433a-8d32-59c93bfd6f65
   Args:
-    source: Louise_Mountbatten
-    target: Princess_Victoria_of_Hesse_and_by_Rhine
     relation: :hasMother
-  AssignClass (40216b64-df66-432b-b578-b5d7b2e4447f)
- Call ID: 40216b64-df66-432b-b578-b5d7b2e4447f
+    target: :Princess_Victoria_of_Hesse_and_by_Rhine
+    source: :Louise_Mountbatten
+  AssignClass (5cb115c1-578b-4a40-be54-a1228d29bd7c)
+ Call ID: 5cb115c1-578b-4a40-be54-a1228d29bd7c
   Args:
-    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
     type: :Man
-  AddTriple (1ee89aa6-e995-46c6-8069-d824fe027bf3)
- Call ID: 1ee89aa6-e995-46c6-8069-d824fe027bf3
+    source: :Lord_Mountbatten
+  AssignClass (fb0a0ad7-f5ca-4008-a05a-c9be52260c20)
+ Call ID: fb0a0ad7-f5ca-4008-a05a-c9be52260c20
   Args:
-    source: Louise_Mountbatten
-    relation: :hasBrother
-    target: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
-  AssignClass (8548a82c-80db-4fb6-a734-f5ccbf74a51c)
- Call ID: 8548a82c-80db-4fb6-a734-f5ccbf74a51c
+    source: :Lord_Mountbatten
+    type: :Person
+  AddTriple (f0fe0908-1713-4f0a-b992-7564bd06db1b)
+ Call ID: f0fe0908-1713-4f0a-b992-7564bd06db1b
   Args:
-    source: Princess_Alice_of_Battenberg
+    relation: :isSiblingOf
+    target: :Lord_Mountbatten
+    source: :Louise_Mountbatten
+  AssignClass (87bb4840-48bb-4134-ae30-7de29408ea69)
+ Call ID: 87bb4840-48bb-4134-ae30-7de29408ea69
+  Args:
+    source: :Princess_Alice_of_Battenberg
     type: :Woman
-  AddTriple (7ad2b7de-c646-4fbe-abf0-6af54bbb7b8e)
- Call ID: 7ad2b7de-c646-4fbe-abf0-6af54bbb7b8e
+  AssignClass (94fd92eb-0b03-4c16-b841-f37f2c0a5e73)
+ Call ID: 94fd92eb-0b03-4c16-b841-f37f2c0a5e73
   Args:
-    relation: :hasSister
-    target: Princess_Alice_of_Battenberg
-    source: Louise_Mountbatten
-  AssignClass (83717f40-b7b6-46e6-b613-63f963b55522)
- Call ID: 83717f40-b7b6-46e6-b613-63f963b55522
+    source: :Princess_Alice_of_Battenberg
+    type: :Person
+  AddTriple (059bea07-4412-4033-a973-76b14e8aba02)
+ Call ID: 059bea07-4412-4033-a973-76b14e8aba02
   Args:
-    source: Prince_Philip_Duke_of_Edinburgh
+    source: :Louise_Mountbatten
+    target: :Princess_Alice_of_Battenberg
+    relation: :isSiblingOf
+  AssignClass (e28a7265-cfd3-4ec6-afdc-a87f4ba798b5)
+ Call ID: e28a7265-cfd3-4ec6-afdc-a87f4ba798b5
+  Args:
+    source: :Prince_Philip_Duke_of_Edinburgh
     type: :Man
-  AddTriple (e66e4449-2bc7-4302-a732-51e2a36718e5)
- Call ID: e66e4449-2bc7-4302-a732-51e2a36718e5
+  AssignClass (e91dc078-955c-46c7-9150-fedb46317c92)
+ Call ID: e91dc078-955c-46c7-9150-fedb46317c92
   Args:
-    target: Princess_Alice_of_Battenberg
+    type: :Person
+    source: :Prince_Philip_Duke_of_Edinburgh
+  AddTriple (d2c69274-bb6d-4ad3-8033-b3b0a03887b0)
+ Call ID: d2c69274-bb6d-4ad3-8033-b3b0a03887b0
+  Args:
     relation: :hasMother
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (16341cec-7351-4bec-a773-b9de77f8f0ca)
- Call ID: 16341cec-7351-4bec-a773-b9de77f8f0ca
+    target: :Princess_Alice_of_Battenberg
+    source: :Prince_Philip_Duke_of_Edinburgh
+  AssignClass (e016ead4-f024-4648-aba5-950685b1941b)
+ Call ID: e016ead4-f024-4648-aba5-950685b1941b
   Args:
+    source: :King_Gustaf_VI_Adolf
     type: :Man
-    source: Gustaf_VI_Adolf
-  AssignClass (8f023008-dc4a-4ce8-9747-47f53565a51a)
- Call ID: 8f023008-dc4a-4ce8-9747-47f53565a51a
+  AssignClass (d9ba3b94-00f2-49a0-a8e3-98095109b8e3)
+ Call ID: d9ba3b94-00f2-49a0-a8e3-98095109b8e3
   Args:
-    type: :Ancestor
-    source: Gustaf_VI_Adolf
-  AddLiteral (c0626416-acb8-49a9-9e83-dff4e553e8c3)
- Call ID: c0626416-acb8-49a9-9e83-dff4e553e8c3
+    source: :King_Gustaf_VI_Adolf
+    type: :Person
+  AddLiteral (7ec8e63a-3139-4f6d-968f-495129e9671b)
+ Call ID: 7ec8e63a-3139-4f6d-968f-495129e9671b
   Args:
+    source: :Louise_Mountbatten
     literal_value: 1923
-    source: Louise_Mountbatten
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-  AddTriple (24c95ce5-0f99-49de-bae0-653391eacbda)
- Call ID: 24c95ce5-0f99-49de-bae0-653391eacbda
+    relation: :hasMarriageYear
+  AddTriple (1eca3bba-1999-4bcf-9a93-b5a5d4178da4)
+ Call ID: 1eca3bba-1999-4bcf-9a93-b5a5d4178da4
   Args:
-    source: Louise_Mountbatten
-    target: Gustaf_VI_Adolf
+    target: :King_Gustaf_VI_Adolf
+    source: :Louise_Mountbatten
     relation: :hasRelation
-  AssignClass (d02824b1-0762-410c-ba36-b21291e8e1a0)
- Call ID: d02824b1-0762-410c-ba36-b21291e8e1a0
-  Args:
-    source: Stillborn_Daughter_of_Louise
-    type: :Woman
-  AddTriple (25ce503d-766f-45f2-976c-8aabf52e1d12)
- Call ID: 25ce503d-766f-45f2-976c-8aabf52e1d12
-  Args:
-    source: Louise_Mountbatten
-    target: Stillborn_Daughter_of_Louise
-    relation: :hasDaughter
-  AssignClass (f3848696-79a6-46fa-bdf9-98b69fdbcdb0)
- Call ID: f3848696-79a6-46fa-bdf9-98b69fdbcdb0
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AssignClass (c65b85ba-4a8f-4f4d-a804-8b215911da39)
- Call ID: c65b85ba-4a8f-4f4d-a804-8b215911da39
-  Args:
-    type: :Ancestor
-    source: Queen_Victoria
-  AddTriple (a14c461f-8751-4d4c-ad16-41d2aee9511a)
- Call ID: a14c461f-8751-4d4c-ad16-41d2aee9511a
-  Args:
-    target: Queen_Victoria
-    relation: :hasAncestor
-    source: Louise_Mountbatten
-  Finish (864a4443-a3a7-43d3-91cc-e5237927f607)
- Call ID: 864a4443-a3a7-43d3-91cc-e5237927f607
+  Finish (2b0f918e-5963-4f0b-ad04-e9f242e3222f)
+ Call ID: 2b0f918e-5963-4f0b-ad04-e9f242e3222f
   Args:
 
 ================================= Tool Message =================================
@@ -705,38 +795,36 @@ The final data graph after all the edits:
           :Woman ;
       :alsoKnownAs "Lady Louise Mountbatten"^^xsd:string ;
       :formerlyKnownAs "Princess Louise of Battenberg"^^xsd:string ;
-      :hasAncestor data:Queen_Victoria ;
       :hasBirthYear 1889 ;
-      :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
-      :hasDaughter data:Stillborn_Daughter_of_Louise ;
       :hasDeathYear 1965 ;
       :hasFather data:Prince_Louis_of_Battenberg ;
       :hasMarriageYear 1923 ;
       :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-      :hasRelation data:Gustaf_VI_Adolf ;
-      :hasSister data:Princess_Alice_of_Battenberg ;
+      :hasRelation data:King_Gustaf_VI_Adolf ;
+      :isSiblingOf data:Lord_Mountbatten,
+          data:Princess_Alice_of_Battenberg ;
       :knownAs "Louise Alexandra Marie Irene Mountbatten"^^xsd:string .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person ;
       :hasMother data:Princess_Alice_of_Battenberg .
 
-  data:Gustaf_VI_Adolf a :Ancestor,
-          :Man .
+  data:King_Gustaf_VI_Adolf a :Man,
+          :Person .
 
-  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .
+  data:Lord_Mountbatten a :Man,
+          :Person .
 
   data:Prince_Louis_of_Battenberg a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
   data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Queen_Victoria a :Ancestor,
+  data:Princess_Alice_of_Battenberg a :Person,
           :Woman .
-
-  data:Stillborn_Daughter_of_Louise a :Woman .
-
-  data:Princess_Alice_of_Battenberg a :Woman .
 
 
 
@@ -748,8 +836,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f6315c1f-ca89-45f2-8121-27f0518ff5e7)
- Call ID: f6315c1f-ca89-45f2-8121-27f0518ff5e7
+  ValidateShacl (a6fb13b4-7b09-414a-bd9a-7f77e2d2f18f)
+ Call ID: a6fb13b4-7b09-414a-bd9a-7f77e2d2f18f
   Args:
 
 ================================= Tool Message =================================
@@ -761,25 +849,25 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Alice_of_Battenberg is missing the required class :Ancestor, which is mandatory for the object of the hasMother property.
+      The node 'Princess_Alice_of_Battenberg' is missing the mandatory ':Ancestor' class, which is required for the 'hasMother' property of 'Prince_Philip_Duke_of_Edinburgh'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Princess_Alice_of_Battenberg.
+      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The current validation indicates that the value node Princess_Alice_of_Battenberg must be classified as an :Ancestor to satisfy the range constraints of the hasMother relationship.
+      The node 'Princess_Alice_of_Battenberg' is missing the mandatory ':Ancestor' class, which is required for the 'hasMother' property of 'Prince_Philip_Duke_of_Edinburgh'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Princess_Alice_of_Battenberg.
+      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Alice_of_Battenberg does not currently possess the :Ancestor class, which is a required constraint for the target of a hasMother relationship.
+      The node 'Princess_Alice_of_Battenberg' is missing the mandatory ':Ancestor' class, which is required for the 'hasMother' property of 'Prince_Philip_Duke_of_Edinburgh'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Princess_Alice_of_Battenberg.
+      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
 
 
 
@@ -788,11 +876,11 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (86c6ac0b-b5d9-44cd-92e9-b92b3d968395)
- Call ID: 86c6ac0b-b5d9-44cd-92e9-b92b3d968395
+  AssignClass (30c18c5c-0332-4ea5-b7ad-cee91c377bed)
+ Call ID: 30c18c5c-0332-4ea5-b7ad-cee91c377bed
   Args:
-    source: Princess_Alice_of_Battenberg
     type: :Ancestor
+    source: :Princess_Alice_of_Battenberg
 
 ================================= Tool Message =================================
 
@@ -805,38 +893,36 @@ The final data graph after all the edits:
           :Woman ;
       :alsoKnownAs "Lady Louise Mountbatten"^^xsd:string ;
       :formerlyKnownAs "Princess Louise of Battenberg"^^xsd:string ;
-      :hasAncestor data:Queen_Victoria ;
       :hasBirthYear 1889 ;
-      :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
-      :hasDaughter data:Stillborn_Daughter_of_Louise ;
       :hasDeathYear 1965 ;
       :hasFather data:Prince_Louis_of_Battenberg ;
       :hasMarriageYear 1923 ;
       :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-      :hasRelation data:Gustaf_VI_Adolf ;
-      :hasSister data:Princess_Alice_of_Battenberg ;
+      :hasRelation data:King_Gustaf_VI_Adolf ;
+      :isSiblingOf data:Lord_Mountbatten,
+          data:Princess_Alice_of_Battenberg ;
       :knownAs "Louise Alexandra Marie Irene Mountbatten"^^xsd:string .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Man ;
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person ;
       :hasMother data:Princess_Alice_of_Battenberg .
 
-  data:Gustaf_VI_Adolf a :Ancestor,
-          :Man .
+  data:King_Gustaf_VI_Adolf a :Man,
+          :Person .
 
-  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .
+  data:Lord_Mountbatten a :Man,
+          :Person .
 
   data:Prince_Louis_of_Battenberg a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
   data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
           :Woman .
-
-  data:Queen_Victoria a :Ancestor,
-          :Woman .
-
-  data:Stillborn_Daughter_of_Louise a :Woman .
 
   data:Princess_Alice_of_Battenberg a :Ancestor,
+          :Person,
           :Woman .
 
 
@@ -845,8 +931,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (1ece9730-4bac-47d7-9477-8f367480db32)
- Call ID: 1ece9730-4bac-47d7-9477-8f367480db32
+  ValidateShacl (c32577d2-eb47-43f0-bb28-86790de6a6c4)
+ Call ID: c32577d2-eb47-43f0-bb28-86790de6a6c4
   Args:
 
 ================================= Tool Message =================================
@@ -857,6 +943,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (33fd4052-b356-442a-94cf-519e5e4ef13b)
- Call ID: 33fd4052-b356-442a-94cf-519e5e4ef13b
+  Finish (f35af77c-0f51-4117-8121-9d9f93773bb7)
+ Call ID: f35af77c-0f51-4117-8121-9d9f93773bb7
   Args:

@@ -2,59 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Person,
+data:David a :Man ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:Margaret .
+
+data:Sarah a :Woman ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:Margaret .
+
+data:CeciliaBowesLyon a :Ancestor,
         :Woman .
 
-data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person .
+data:ClaudeBowesLyon a :Ancestor,
+        :Man .
 
-data:David_Armstrong-Jones a :Man,
-        :Person ;
-    :hasFather data:Antony_Armstrong-Jones_Earl_of_Snowdon .
+data:ElizabethII a :Woman ;
+    :hasFather data:GeorgeVI ;
+    :hasMother data:ElizabethQueenMother .
 
-data:King_George_V a :Ancestor,
-        :Man,
-        :Person .
+data:GeorgeV a :Ancestor,
+        :Man .
 
-data:King_George_VI a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
+data:Mary a :Ancestor,
+        :Woman .
 
-data:Princess_Margaret a :Person,
+data:AntonyArmstrongJones a :Ancestor,
+        :Man .
+
+data:ElizabethQueenMother a :Ancestor,
+        :Woman ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMother data:CeciliaBowesLyon .
+
+data:GeorgeVI a :Ancestor,
+        :Man ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:Mary .
+
+data:Margaret a :Ancestor,
         :Woman ;
     :hasBirthYear 1930 ;
-    :hasDaughter data:Sarah_Armstrong-Jones ;
     :hasDeathYear 2002 ;
-    :hasFather data:King_George_VI ;
+    :hasFather data:GeorgeVI ;
     :hasMarriageYear 1960 ;
-    :hasMother data:Queen_Elizabeth_The_Queen_Mother ;
-    :hasSister data:Queen_Elizabeth_II ;
-    :hasSon data:David_Armstrong-Jones ;
-    :knownAs "Margaret Rose"^^xsd:string .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman ;
-    :hasSister data:Princess_Margaret .
-
-data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
-
-data:Queen_Mary a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Sarah_Armstrong-Jones a :Person,
-        :Woman ;
-    :hasFather data:Antony_Armstrong-Jones_Earl_of_Snowdon .
-
-data:Antony_Armstrong-Jones_Earl_of_Snowdon a :Ancestor,
-        :Man,
-        :Person .
+    :hasMother data:ElizabethQueenMother ;
+    :hasSister data:ElizabethII .
 

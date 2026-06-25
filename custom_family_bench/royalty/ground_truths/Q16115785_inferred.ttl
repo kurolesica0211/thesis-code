@@ -1,0 +1,67 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Irakli Bagration of Mukhrani"^^xsd:string ;
+    data:posIndicesFull "284:312"^^xsd:string ;
+    data:posIndicesPart "478:487"^^xsd:string,
+        "516:525"^^xsd:string ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli"^^xsd:string,
+        "Prince Irakli Georgeievich Bagration-Moukhransky"^^xsd:string ;
+    :hasBrother data:Irakli_Bagration_of_Mukhrani ;
+    :hasChild data:Mariam_de_Bagration ;
+    :hasDaughter data:Mariam_de_Bagration ;
+    :hasRelation data:Irakli_Bagration_of_Mukhrani,
+        data:Mariam_de_Bagration ;
+    :hasSex data:male ;
+    :isAncestorOf data:Mariam_de_Bagration ;
+    :isBloodrelationOf data:Irakli_Bagration_of_Mukhrani ;
+    :isBrotherOf data:Irakli_Bagration_of_Mukhrani ;
+    :isFatherOf data:Mariam_de_Bagration ;
+    :isParentOf data:Mariam_de_Bagration ;
+    :isSiblingOf data:Irakli_Bagration_of_Mukhrani ;
+    :isUncleOf data:Mariam_de_Bagration .
+
+data:Mariam_de_Bagration a :Person,
+        :Woman ;
+    rdfs:label "Mariam de Bagration"^^xsd:string ;
+    data:posIndicesFull "75:103"^^xsd:string,
+        "84:103"^^xsd:string ;
+    data:posIndicesPart "213:219"^^xsd:string,
+        "478:487"^^xsd:string,
+        "516:525"^^xsd:string ;
+    data:wdtLink wdt:Q16115785 ;
+    :alsoKnownAs "Princess Maria de la Paz Bagration-Moukhranskaya"^^xsd:string,
+        "Princess Mariam de Bagration"^^xsd:string ;
+    :hasAncestor data:Irakli_Bagration_of_Mukhrani ;
+    :hasFather data:Irakli_Bagration_of_Mukhrani ;
+    :hasParent data:Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Irakli_Bagration_of_Mukhrani,
+        data:Mariam_de_Bagration ;
+    :hasSex data:female ;
+    :hasSister data:Mariam_de_Bagration ;
+    :isBloodrelationOf data:Mariam_de_Bagration ;
+    :isChildOf data:Irakli_Bagration_of_Mukhrani ;
+    :isDaughterOf data:Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Mariam_de_Bagration ;
+    :isSisterOf data:Mariam_de_Bagration .
+

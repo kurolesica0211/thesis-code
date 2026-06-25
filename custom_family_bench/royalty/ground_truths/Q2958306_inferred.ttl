@@ -1,0 +1,70 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Prince_Michel_dOrléans a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Michel d'Orléans"^^xsd:string ;
+    data:posIndicesFull "537:560"^^xsd:string,
+        "544:560"^^xsd:string ;
+    data:posIndicesPart "1029:1038"^^xsd:string,
+        "1155:1161"^^xsd:string,
+        "1449:1455"^^xsd:string,
+        "1462:1471"^^xsd:string,
+        "1568:1574"^^xsd:string,
+        "642:648"^^xsd:string,
+        "655:664"^^xsd:string,
+        "755:764"^^xsd:string,
+        "923:929"^^xsd:string ;
+    data:wdtLink wdt:Q3311149 ;
+    :alsoKnownAs "Michel Joseph Benoît Marie d'Orléans"^^xsd:string,
+        "Michel d'Orléans"^^xsd:string ;
+    :hasBrother data:Prince_Michel_dOrléans ;
+    :hasChild data:Prince_Charles-Philippe_dOrléans ;
+    :hasRelation data:Prince_Charles-Philippe_dOrléans,
+        data:Prince_Michel_dOrléans ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Charles-Philippe_dOrléans ;
+    :isAncestorOf data:Prince_Charles-Philippe_dOrléans ;
+    :isBloodrelationOf data:Prince_Michel_dOrléans ;
+    :isBrotherOf data:Prince_Michel_dOrléans ;
+    :isFatherOf data:Prince_Charles-Philippe_dOrléans ;
+    :isParentOf data:Prince_Charles-Philippe_dOrléans ;
+    :isSiblingOf data:Prince_Michel_dOrléans ;
+    :isUncleOf data:Prince_Charles-Philippe_dOrléans .
+
+data:Prince_Charles-Philippe_dOrléans a :Man,
+        :Person ;
+    rdfs:label "Prince Charles-Philippe d'Orléans"^^xsd:string ;
+    data:wdtLink wdt:Q2958306 ;
+    :alsoKnownAs "Charles-Philippe Marie Louis d'Orléans"^^xsd:string,
+        "Charles-Philippe d'Orléans, duc d'Anjou"^^xsd:string ;
+    :hasAncestor data:Prince_Michel_dOrléans ;
+    :hasBrother data:Prince_Charles-Philippe_dOrléans ;
+    :hasFather data:Prince_Michel_dOrléans ;
+    :hasParent data:Prince_Michel_dOrléans ;
+    :hasRelation data:Prince_Charles-Philippe_dOrléans,
+        data:Prince_Michel_dOrléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Charles-Philippe_dOrléans ;
+    :isBrotherOf data:Prince_Charles-Philippe_dOrléans ;
+    :isChildOf data:Prince_Michel_dOrléans ;
+    :isSiblingOf data:Prince_Charles-Philippe_dOrléans ;
+    :isSonOf data:Prince_Michel_dOrléans .
+

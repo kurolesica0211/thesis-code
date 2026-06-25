@@ -1,24 +1,12 @@
 {
     "translation": [
         {
-            "iteration": 1,
-            "shacl_tool_call_id": "37eba6b5-fdd0-4588-b9bf-07363b48c68c",
-            "metadata": {
-                "input_tokens": 52385,
-                "output_tokens": 4825,
-                "total_tokens": 57210,
-                "input_token_details": {
-                    "cache_read": 0
-                }
-            }
-        },
-        {
             "iteration": 2,
-            "shacl_tool_call_id": "68ce8b5d-a5dd-49e9-bb62-5c1794f1b139",
+            "shacl_tool_call_id": "037faa77-6f59-46ef-acec-021d09c59d45",
             "metadata": {
-                "input_tokens": 2502,
-                "output_tokens": 336,
-                "total_tokens": 2838,
+                "input_tokens": 19162,
+                "output_tokens": 1596,
+                "total_tokens": 20758,
                 "input_token_details": {
                     "cache_read": 0
                 }
@@ -27,38 +15,46 @@
     ],
     "final": [
         {
-            "iteration": 4,
+            "iteration": 5,
             "metadata": [
                 {
-                    "input_tokens": 30869,
-                    "output_tokens": 1178,
-                    "total_tokens": 32047,
+                    "input_tokens": 11849,
+                    "output_tokens": 1358,
+                    "total_tokens": 13207,
                     "input_token_details": {
-                        "cache_read": 30864
+                        "cache_read": 11844
                     }
                 },
                 {
-                    "input_tokens": 41490,
-                    "output_tokens": 112,
-                    "total_tokens": 41602,
+                    "input_tokens": 14676,
+                    "output_tokens": 10,
+                    "total_tokens": 14686,
                     "input_token_details": {
-                        "cache_read": 30864
+                        "cache_read": 11844
                     }
                 },
                 {
-                    "input_tokens": 42662,
-                    "output_tokens": 84,
-                    "total_tokens": 42746,
+                    "input_tokens": 17152,
+                    "output_tokens": 252,
+                    "total_tokens": 17404,
                     "input_token_details": {
-                        "cache_read": 30864
+                        "cache_read": 11844
                     }
                 },
                 {
-                    "input_tokens": 43290,
+                    "input_tokens": 18214,
+                    "output_tokens": 10,
+                    "total_tokens": 18224,
+                    "input_token_details": {
+                        "cache_read": 11844
+                    }
+                },
+                {
+                    "input_tokens": 18246,
                     "output_tokens": 8,
-                    "total_tokens": 43298,
+                    "total_tokens": 18254,
                     "input_token_details": {
-                        "cache_read": 30864
+                        "cache_read": 11844
                     }
                 }
             ]

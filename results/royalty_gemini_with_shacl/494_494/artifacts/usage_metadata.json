@@ -1,31 +1,52 @@
 {
-    "translation": [],
+    "translation": [
+        {
+            "iteration": 1,
+            "shacl_tool_call_id": "a5d0c2dc-9fef-46e5-b31f-b200ab641783",
+            "metadata": {
+                "input_tokens": 30758,
+                "output_tokens": 2700,
+                "total_tokens": 33458,
+                "input_token_details": {
+                    "cache_read": 0
+                }
+            }
+        }
+    ],
     "final": [
         {
-            "iteration": 3,
+            "iteration": 4,
             "metadata": [
                 {
-                    "input_tokens": 24013,
-                    "output_tokens": 1330,
-                    "total_tokens": 25343,
+                    "input_tokens": 11157,
+                    "output_tokens": 1642,
+                    "total_tokens": 12799,
                     "input_token_details": {
-                        "cache_read": 24008
+                        "cache_read": 11152
                     }
                 },
                 {
-                    "input_tokens": 27072,
+                    "input_tokens": 18685,
+                    "output_tokens": 270,
+                    "total_tokens": 18955,
+                    "input_token_details": {
+                        "cache_read": 11152
+                    }
+                },
+                {
+                    "input_tokens": 19901,
                     "output_tokens": 10,
-                    "total_tokens": 27082,
+                    "total_tokens": 19911,
                     "input_token_details": {
-                        "cache_read": 24008
+                        "cache_read": 11152
                     }
                 },
                 {
-                    "input_tokens": 27104,
+                    "input_tokens": 19933,
                     "output_tokens": 8,
-                    "total_tokens": 27112,
+                    "total_tokens": 19941,
                     "input_token_details": {
-                        "cache_read": 24008
+                        "cache_read": 11152
                     }
                 }
             ]

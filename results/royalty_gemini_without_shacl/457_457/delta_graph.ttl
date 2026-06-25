@@ -2,36 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Daisy_Isadora_Louise_Knatchbull a :Person,
-        :Woman ;
-    :hasBirthYear 1992 ;
-    :hasBrother data:Frederick_Freddy_Knatchbull ;
-    :hasFather data:Philip_Knatchbull ;
-    :hasMother data:Atalanta_Cowan .
+data:Alexis_Ferdinand a :Man,
+        :Person ;
+    :hasDeathYear 2010 ;
+    :isChildOf data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg .
 
-data:Giovanni_Damiani a :Man,
+data:Archduchess_Sophie_of_Austria a :Person .
+
+data:Ferdinand_Karl_Max_of_Austria a :Man,
         :Person .
 
-data:Atalanta_Cowan a :Ancestor,
-        :Person,
+data:Helene_of_T%C3%B6rring-Jettenbach a :Person,
+        :Woman .
+
+data:Sophie_Habsburg a :Person,
         :Woman ;
-    :hasBirthYear 1962 .
+    :alsoKnownAs data:Archduchess_Sophie_of_Austria ;
+    :hasBirthYear 1959 ;
+    :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+    :hasMother data:Helene_of_T%C3%B6rring-Jettenbach ;
+    :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .
 
-data:Freddy a :Person .
-
-data:Frederick_Freddy_Knatchbull a :Man,
-        :Person ;
-    :hasBirthYear 2003 ;
-    :hasFather data:Philip_Knatchbull ;
-    :hasMother data:Wendy_Leach ;
-    :knownAs data:Freddy .
-
-data:Wendy_Leach a :Person,
-        :Woman ;
-    :hasBirthYear 1966 .
-
-data:Philip_Knatchbull a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1961 .
+data:Mariano_Hugo_of_Windisch-Graetz a :Man,
+        :Person .
 

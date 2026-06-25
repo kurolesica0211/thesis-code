@@ -81,7 +81,6 @@ Early life
 Margaret was born at 9:22 pm on 21 August 1930 at Glamis Castle in Scotland, her mother's ancestral home.
 She was the younger daughter and second child of Prince Albert, Duke of York (later King George VI), and Elizabeth, Duchess of York (later Queen Elizabeth the Queen Mother).
 Margaret was the first British prince or princess to be born in Scotland since Robert Stuart, Duke of Kintyre, in 1602.
-Registration of the birth was delayed for several days to avoid her being number 13 in the parish register.
 At the time of her birth, Margaret was fourth in the line of succession to the British throne.
 Her father was the second son of King George V and Queen Mary, and her mother was the youngest daughter of Claude Bowes-Lyon, 14th
 Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
@@ -289,7 +288,6 @@ Margaret remained close friends with them both.
 Public life
 
 According to Margaret, her first solo public engagement was presenting a prize at the Princess Margaret Rose School in Windsor when she was 12.
-Among her first official engagements was launching the ocean liner Edinburgh Castle in Belfast in 1947.
 Subsequently, Margaret went on multiple tours of various places; in her first major tour she joined her parents and sister for a tour of South Africa in 1947.
 As colonies of the British Commonwealth of Nations sought nationhood, Margaret represented the Crown at independence ceremonies in Jamaica in 1962 and Tuvalu and Dominica in 1978.
 In August 1979, Margaret's second cousin once-removed Lord Mountbatten and members of his family were killed by a bomb planted by the Provisional Irish Republican Army.
@@ -389,6 +387,8 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -404,39 +404,9 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -451,6 +421,23 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -468,6 +455,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -535,29 +537,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -566,6 +560,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -578,6 +580,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -586,17 +590,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -624,6 +630,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -639,234 +729,215 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1632be31-0070-4e0d-82be-05aea5c9f0b0)
- Call ID: 1632be31-0070-4e0d-82be-05aea5c9f0b0
+  AssignClass (facd5894-cc3b-4f9d-8549-7cd91173f41e)
+ Call ID: facd5894-cc3b-4f9d-8549-7cd91173f41e
   Args:
+    source: :Margaret
     type: :Woman
-    source: :PrincessMargaret
-  AssignClass (56510a8c-a64f-4ed3-8981-37fa4f3f84c7)
- Call ID: 56510a8c-a64f-4ed3-8981-37fa4f3f84c7
+  AssignClass (32ef0a49-1c72-4ff2-9264-2d5e6e9f768e)
+ Call ID: 32ef0a49-1c72-4ff2-9264-2d5e6e9f768e
   Args:
+    source: :Margaret
     type: :Person
-    source: :PrincessMargaret
-  AddLiteral (94c8ee0f-bf2b-4ffe-8700-80305e14d191)
- Call ID: 94c8ee0f-bf2b-4ffe-8700-80305e14d191
+  AddLiteral (51c1deba-74b5-499e-bb16-6e0b1dd4f3c1)
+ Call ID: 51c1deba-74b5-499e-bb16-6e0b1dd4f3c1
   Args:
-    relation: :hasBirthYear
-    source: :PrincessMargaret
     literal_value: 1930
+    source: :Margaret
     literal_type: xsd:integer
-  AddLiteral (f600e66a-7321-4358-841b-6a1d6392afcf)
- Call ID: f600e66a-7321-4358-841b-6a1d6392afcf
+    relation: :hasBirthYear
+  AddLiteral (4d3d2d7e-2263-41e6-853e-16e3dec4f27f)
+ Call ID: 4d3d2d7e-2263-41e6-853e-16e3dec4f27f
   Args:
-    literal_value: 2002
-    source: :PrincessMargaret
     literal_type: xsd:integer
     relation: :hasDeathYear
-  AddLiteral (5dc8815b-7bb5-42e9-8d3b-72998aa3ba6e)
- Call ID: 5dc8815b-7bb5-42e9-8d3b-72998aa3ba6e
+    source: :Margaret
+    literal_value: 2002
+  AssignClass (7402b36d-1ea9-4c26-9ef6-b4b85dbec1d3)
+ Call ID: 7402b36d-1ea9-4c26-9ef6-b4b85dbec1d3
   Args:
-    relation: :knownAs
-    literal_value: Margaret Rose
-    source: :PrincessMargaret
-    literal_type: xsd:string
-  AssignClass (cea6019b-abaf-46d9-8782-2720262309e1)
- Call ID: cea6019b-abaf-46d9-8782-2720262309e1
-  Args:
-    source: :KingGeorgeVI
+    source: :GeorgeVI
     type: :Man
-  AssignClass (e14bf97e-1cc8-4c68-97b0-231608c7e01d)
- Call ID: e14bf97e-1cc8-4c68-97b0-231608c7e01d
+  AssignClass (9ecfe598-3e82-40c3-8521-13678df48a28)
+ Call ID: 9ecfe598-3e82-40c3-8521-13678df48a28
   Args:
+    source: :GeorgeVI
     type: :Person
-    source: :KingGeorgeVI
-  AssignClass (a0b9d4cc-dbc1-4f0e-bae9-e6d103d0f481)
- Call ID: a0b9d4cc-dbc1-4f0e-bae9-e6d103d0f481
+  AssignClass (b829f0e6-a5f3-4e1e-9326-d20fff5eff51)
+ Call ID: b829f0e6-a5f3-4e1e-9326-d20fff5eff51
   Args:
-    type: :Ancestor
-    source: :KingGeorgeVI
-  AssignClass (571edc63-6032-4167-8167-f4a8ae3a79e2)
- Call ID: 571edc63-6032-4167-8167-f4a8ae3a79e2
-  Args:
-    source: :QueenElizabethTheQueenMother
+    source: :ElizabethQueenMother
     type: :Woman
-  AssignClass (28b4c22a-e00e-451a-b401-e6e04544a171)
- Call ID: 28b4c22a-e00e-451a-b401-e6e04544a171
+  AssignClass (d602bce7-2a0d-49b8-b79a-54f508bf7785)
+ Call ID: d602bce7-2a0d-49b8-b79a-54f508bf7785
   Args:
-    source: :QueenElizabethTheQueenMother
+    source: :ElizabethQueenMother
     type: :Person
-  AssignClass (27d41e1b-6a1e-4b6c-8b4e-3ae92333d6f3)
- Call ID: 27d41e1b-6a1e-4b6c-8b4e-3ae92333d6f3
+  AddTriple (0bd4196a-6673-4ba6-a679-e350adbcfdba)
+ Call ID: 0bd4196a-6673-4ba6-a679-e350adbcfdba
   Args:
-    source: :QueenElizabethTheQueenMother
-    type: :Ancestor
-  AddTriple (dc6c2619-7f63-4545-8755-3c6669509327)
- Call ID: dc6c2619-7f63-4545-8755-3c6669509327
-  Args:
+    source: :Margaret
     relation: :hasFather
-    target: :KingGeorgeVI
-    source: :PrincessMargaret
-  AddTriple (6b77f57d-efb9-45f9-adda-087efe27b66e)
- Call ID: 6b77f57d-efb9-45f9-adda-087efe27b66e
+    target: :GeorgeVI
+  AddTriple (58242176-1640-4711-b8e4-ac8ff026a044)
+ Call ID: 58242176-1640-4711-b8e4-ac8ff026a044
+  Args:
+    target: :ElizabethQueenMother
+    relation: :hasMother
+    source: :Margaret
+  AssignClass (20ed8afd-0189-47f5-8ada-494a0d5a5f54)
+ Call ID: 20ed8afd-0189-47f5-8ada-494a0d5a5f54
+  Args:
+    source: :ElizabethII
+    type: :Woman
+  AssignClass (d30b2642-42f2-473b-958f-7c2c9cd714ea)
+ Call ID: d30b2642-42f2-473b-958f-7c2c9cd714ea
+  Args:
+    source: :ElizabethII
+    type: :Person
+  AddTriple (e8087858-bdfa-4c4c-8033-d12f1fc26bec)
+ Call ID: e8087858-bdfa-4c4c-8033-d12f1fc26bec
+  Args:
+    source: :Margaret
+    relation: :hasSister
+    target: :ElizabethII
+  AddTriple (22f41d7d-3e3c-48cc-99c8-e817567e10f8)
+ Call ID: 22f41d7d-3e3c-48cc-99c8-e817567e10f8
+  Args:
+    relation: :hasSister
+    target: :Margaret
+    source: :ElizabethII
+  AssignClass (47bc4285-f715-4d38-9de9-953a3ff60b73)
+ Call ID: 47bc4285-f715-4d38-9de9-953a3ff60b73
+  Args:
+    source: :GeorgeV
+    type: :Man
+  AssignClass (c7f19bf3-64aa-4230-92c8-48a993b3a8e7)
+ Call ID: c7f19bf3-64aa-4230-92c8-48a993b3a8e7
+  Args:
+    source: :GeorgeV
+    type: :Person
+  AssignClass (6d9e1dd3-d38b-47cf-bf27-ce3d006d396c)
+ Call ID: 6d9e1dd3-d38b-47cf-bf27-ce3d006d396c
+  Args:
+    source: :QueenMary
+    type: :Woman
+  AssignClass (3bf651eb-7c3a-48c9-b1c2-0c72b6aa073d)
+ Call ID: 3bf651eb-7c3a-48c9-b1c2-0c72b6aa073d
+  Args:
+    source: :QueenMary
+    type: :Person
+  AddTriple (b98930a5-27f4-40e5-9636-9fa884944619)
+ Call ID: b98930a5-27f4-40e5-9636-9fa884944619
+  Args:
+    target: :GeorgeV
+    relation: :hasFather
+    source: :GeorgeVI
+  AddTriple (c5059ca3-0bc7-4299-8e66-9070410ed6ad)
+ Call ID: c5059ca3-0bc7-4299-8e66-9070410ed6ad
+  Args:
+    source: :GeorgeVI
+    relation: :hasMother
+    target: :QueenMary
+  AssignClass (99c3e0ec-2078-4583-913a-3610d3a0c865)
+ Call ID: 99c3e0ec-2078-4583-913a-3610d3a0c865
+  Args:
+    source: :ClaudeBowesLyon
+    type: :Man
+  AssignClass (73356cb7-aa8b-4724-b232-3ea64f7cc8ad)
+ Call ID: 73356cb7-aa8b-4724-b232-3ea64f7cc8ad
+  Args:
+    source: :ClaudeBowesLyon
+    type: :Person
+  AssignClass (be197913-1a99-4277-a104-1cb240c02563)
+ Call ID: be197913-1a99-4277-a104-1cb240c02563
+  Args:
+    source: :CeciliaBowesLyon
+    type: :Woman
+  AssignClass (0a159991-867f-447b-bcac-8217b505ff90)
+ Call ID: 0a159991-867f-447b-bcac-8217b505ff90
+  Args:
+    source: :CeciliaBowesLyon
+    type: :Person
+  AddTriple (0b4e12f2-f3ea-462d-b85b-90b2bd541c9f)
+ Call ID: 0b4e12f2-f3ea-462d-b85b-90b2bd541c9f
+  Args:
+    source: :ElizabethQueenMother
+    target: :ClaudeBowesLyon
+    relation: :hasFather
+  AddTriple (131c68b3-3794-4d8b-9068-ca5a5bece581)
+ Call ID: 131c68b3-3794-4d8b-9068-ca5a5bece581
   Args:
     relation: :hasMother
-    target: :QueenElizabethTheQueenMother
-    source: :PrincessMargaret
-  AssignClass (0b3c18f7-e25c-46c7-939c-a23c149bdaeb)
- Call ID: 0b3c18f7-e25c-46c7-939c-a23c149bdaeb
+    target: :CeciliaBowesLyon
+    source: :ElizabethQueenMother
+  AssignClass (963fae1f-8076-4fa3-9d5b-68fab744979c)
+ Call ID: 963fae1f-8076-4fa3-9d5b-68fab744979c
   Args:
-    type: :Woman
-    source: :QueenElizabethII
-  AssignClass (51c51827-b7d9-4af8-b203-049e4834bb9a)
- Call ID: 51c51827-b7d9-4af8-b203-049e4834bb9a
-  Args:
-    type: :Person
-    source: :QueenElizabethII
-  AddTriple (2938d40f-1019-4c05-aff6-bc3439673485)
- Call ID: 2938d40f-1019-4c05-aff6-bc3439673485
-  Args:
-    relation: :isSisterOf
-    target: :QueenElizabethII
-    source: :PrincessMargaret
-  AddTriple (0d5fc220-1500-462a-8e50-7a8ead56e88d)
- Call ID: 0d5fc220-1500-462a-8e50-7a8ead56e88d
-  Args:
-    target: :PrincessMargaret
-    relation: :isSisterOf
-    source: :QueenElizabethII
-  AssignClass (393df21b-0602-427e-9d58-f60cbf5e6e5e)
- Call ID: 393df21b-0602-427e-9d58-f60cbf5e6e5e
-  Args:
+    source: :AntonyArmstrongJones
     type: :Man
-    source: :AntonyArmstrongJones
-  AssignClass (bf789eed-76db-4b8e-bfe9-d6f45f70660b)
- Call ID: bf789eed-76db-4b8e-bfe9-d6f45f70660b
+  AssignClass (9e2565b5-290c-4f06-bda5-33620a68e936)
+ Call ID: 9e2565b5-290c-4f06-bda5-33620a68e936
   Args:
     source: :AntonyArmstrongJones
     type: :Person
-  AddLiteral (85811064-ae41-46bc-817b-82c3827c3f6f)
- Call ID: 85811064-ae41-46bc-817b-82c3827c3f6f
+  AddLiteral (1e3ba29e-a890-41af-8496-f9d4cc489170)
+ Call ID: 1e3ba29e-a890-41af-8496-f9d4cc489170
   Args:
-    source: :PrincessMargaret
+    source: :Margaret
     literal_value: 1960
     literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (8a1c728c-edc2-4e1f-ba07-1f97e9c6accf)
- Call ID: 8a1c728c-edc2-4e1f-ba07-1f97e9c6accf
+  AddTriple (4a3d2707-be31-4f4e-aca3-b953aecd5ba6)
+ Call ID: 4a3d2707-be31-4f4e-aca3-b953aecd5ba6
   Args:
-    source: :PrincessMargaret
+    source: :Margaret
+    relation: :hasRelation
+    target: :AntonyArmstrongJones
+  AssignClass (0f0a5982-6c33-4fd1-955e-2b3d3568dfe3)
+ Call ID: 0f0a5982-6c33-4fd1-955e-2b3d3568dfe3
+  Args:
+    source: :David
+    type: :Man
+  AssignClass (6381f43c-5e69-4125-adda-f1dbfce2786d)
+ Call ID: 6381f43c-5e69-4125-adda-f1dbfce2786d
+  Args:
+    source: :David
+    type: :Person
+  AssignClass (eae2f6ec-3264-483c-a350-76321a6b7506)
+ Call ID: eae2f6ec-3264-483c-a350-76321a6b7506
+  Args:
+    source: :Sarah
+    type: :Woman
+  AssignClass (3585b4a1-8399-4e1f-9f47-cc93f7c8b99b)
+ Call ID: 3585b4a1-8399-4e1f-9f47-cc93f7c8b99b
+  Args:
+    source: :Sarah
+    type: :Person
+  AddTriple (57ec19e0-f098-4d8b-be8b-b195caae4f99)
+ Call ID: 57ec19e0-f098-4d8b-be8b-b195caae4f99
+  Args:
+    source: :Margaret
+    relation: :hasSon
     target: :David
-    relation: :hasChild
-  AddTriple (6c3a001f-7f69-49a2-b14d-ce6caabd89b3)
- Call ID: 6c3a001f-7f69-49a2-b14d-ce6caabd89b3
+  AddTriple (3a6d788c-7525-441f-b797-5dc756d52a79)
+ Call ID: 3a6d788c-7525-441f-b797-5dc756d52a79
   Args:
-    source: :PrincessMargaret
-    relation: :hasChild
+    source: :Margaret
+    relation: :hasDaughter
     target: :Sarah
-  AssignClass (3ba17db7-6fad-4f0f-882f-fb19661189df)
- Call ID: 3ba17db7-6fad-4f0f-882f-fb19661189df
+  AddTriple (fd3452c1-bda9-4ec4-bddb-b588518e14a7)
+ Call ID: fd3452c1-bda9-4ec4-bddb-b588518e14a7
   Args:
+    relation: :hasFather
+    target: :AntonyArmstrongJones
     source: :David
-    type: :Man
-  AssignClass (bc39c742-0f7c-470f-9148-cb745a069d4e)
- Call ID: bc39c742-0f7c-470f-9148-cb745a069d4e
-  Args:
-    type: :Person
-    source: :David
-  AssignClass (a0176613-c180-44ce-b0f4-f7ab1f1b4f0a)
- Call ID: a0176613-c180-44ce-b0f4-f7ab1f1b4f0a
-  Args:
-    type: :Woman
-    source: :Sarah
-  AssignClass (b5a2db15-f054-4471-a762-e1796ab71f05)
- Call ID: b5a2db15-f054-4471-a762-e1796ab71f05
+  AddTriple (35884b72-07c9-477e-a228-bc3cb5fc23b2)
+ Call ID: 35884b72-07c9-477e-a228-bc3cb5fc23b2
   Args:
     source: :Sarah
-    type: :Person
-  AssignClass (d45c4b15-8612-4a8d-95df-9333314b55b6)
- Call ID: d45c4b15-8612-4a8d-95df-9333314b55b6
-  Args:
-    type: :Man
-    source: :KingGeorgeV
-  AssignClass (71fae8a4-da91-4815-a916-5a3e1d044439)
- Call ID: 71fae8a4-da91-4815-a916-5a3e1d044439
-  Args:
-    source: :KingGeorgeV
-    type: :Person
-  AssignClass (eadc4824-7878-4833-8ead-b59963e1cf53)
- Call ID: eadc4824-7878-4833-8ead-b59963e1cf53
-  Args:
-    source: :KingGeorgeV
-    type: :Ancestor
-  AssignClass (dacd30e1-17f7-4052-9a8a-568df108268a)
- Call ID: dacd30e1-17f7-4052-9a8a-568df108268a
-  Args:
-    type: :Woman
-    source: :QueenMary
-  AssignClass (225fb54a-2f17-472b-9e8f-a70699b94d62)
- Call ID: 225fb54a-2f17-472b-9e8f-a70699b94d62
-  Args:
-    type: :Person
-    source: :QueenMary
-  AssignClass (80be3619-045e-45a5-bda3-2356e4e3d898)
- Call ID: 80be3619-045e-45a5-bda3-2356e4e3d898
-  Args:
-    source: :QueenMary
-    type: :Ancestor
-  AddTriple (42ae9349-6496-4612-952e-d130ca125b23)
- Call ID: 42ae9349-6496-4612-952e-d130ca125b23
-  Args:
-    source: :KingGeorgeVI
     relation: :hasFather
-    target: :KingGeorgeV
-  AddTriple (6c69985a-7714-4fb1-b78b-36ca63adf93d)
- Call ID: 6c69985a-7714-4fb1-b78b-36ca63adf93d
-  Args:
-    relation: :hasMother
-    target: :QueenMary
-    source: :KingGeorgeVI
-  AssignClass (72802136-70a2-4cea-97d3-b0a46f676371)
- Call ID: 72802136-70a2-4cea-97d3-b0a46f676371
-  Args:
-    source: :ClaudeBowesLyon
-    type: :Man
-  AssignClass (37d0185f-00f2-4177-b897-8c519a1e3deb)
- Call ID: 37d0185f-00f2-4177-b897-8c519a1e3deb
-  Args:
-    type: :Person
-    source: :ClaudeBowesLyon
-  AssignClass (38b30080-d20f-4a38-8498-ec6debec953b)
- Call ID: 38b30080-d20f-4a38-8498-ec6debec953b
-  Args:
-    type: :Ancestor
-    source: :ClaudeBowesLyon
-  AssignClass (3aee7a4f-6269-4833-aea2-e2a5a0e60ca7)
- Call ID: 3aee7a4f-6269-4833-aea2-e2a5a0e60ca7
-  Args:
-    source: :CeciliaBowesLyon
-    type: :Woman
-  AssignClass (d9c610c3-718a-4932-9d86-33eebef685ae)
- Call ID: d9c610c3-718a-4932-9d86-33eebef685ae
-  Args:
-    type: :Person
-    source: :CeciliaBowesLyon
-  AssignClass (d727a975-411c-4ddd-b712-d58655b71bc8)
- Call ID: d727a975-411c-4ddd-b712-d58655b71bc8
-  Args:
-    source: :CeciliaBowesLyon
-    type: :Ancestor
-  AddTriple (03f72cad-17d3-455b-aabe-fd2c781ac228)
- Call ID: 03f72cad-17d3-455b-aabe-fd2c781ac228
-  Args:
-    source: :QueenElizabethTheQueenMother
-    relation: :hasFather
-    target: :ClaudeBowesLyon
-  AddTriple (13f3cc25-6c16-4f63-b73f-a8a1a6b63e9b)
- Call ID: 13f3cc25-6c16-4f63-b73f-a8a1a6b63e9b
-  Args:
-    source: :QueenElizabethTheQueenMother
-    target: :CeciliaBowesLyon
-    relation: :hasMother
-  Finish (613e8cf2-b57c-402b-afef-72af956281a6)
- Call ID: 613e8cf2-b57c-402b-afef-72af956281a6
+    target: :AntonyArmstrongJones
+  Finish (6bd6fbd5-7cf7-4e6d-bbc5-59bd05a5067f)
+ Call ID: 6bd6fbd5-7cf7-4e6d-bbc5-59bd05a5067f
   Args:

@@ -2,42 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-        :Woman ;
-    :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
-
-data:Prince_Louis_Ferdinand_son a :Man,
+data:Edward_VII a :Man,
         :Person ;
-    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
-    :isFatherOf data:Georg_Friedrich_Prince_of_Prussia .
+    :isFatherOf data:King_George_V .
 
-data:Wilhelm_II a :Man,
-        :Person .
-
-data:Georg_Friedrich_Prince_of_Prussia a :Man,
-        :Person .
-
-data:Grand_Duke_Kyril_Vladimirovich a :Man,
-        :Person .
-
-data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+data:Prince_John a :Man,
         :Person ;
-    :hasBirthYear 1907 ;
-    :hasBrother data:Prince_Wilhelm_of_Prussia ;
-    :hasDeathYear 1994 ;
-    :hasFather data:German_Crown_Prince_William ;
-    :hasMarriageYear 1938 ;
-    :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
-    :isSonOf data:German_Crown_Prince_William .
+    :hasBirthYear 1905 ;
+    :hasDeathYear 1919 ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :isSiblingOf data:Prince_Albert,
+        data:Prince_Edward,
+        data:Prince_George,
+        data:Prince_Henry,
+        data:Princess_Mary ;
+    :knownAs "Johnnie"^^xsd:string .
 
-data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+data:Prince_Albert a :Man,
+        :Person .
+
+data:Prince_Edward a :Man,
+        :Person .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Prince_Henry a :Man,
+        :Person .
+
+data:Princess_Mary a :Person,
         :Woman .
 
-data:German_Crown_Prince_William a :Man,
-        :Person .
+data:Queen_Mary a :Person,
+        :Woman .
 
-data:Prince_Wilhelm_of_Prussia a :Man,
+data:King_George_V a :Man,
         :Person .
 

@@ -85,72 +85,50 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Custodian of the Crown  Prince Radu
+Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
+Biography
+
+Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
+She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
+At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
+As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
+The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
+Alexia grew up in exile and was raised in between Rome and London.
+The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
+Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
+Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
+Marriage and children
+
+Queen Anne-Marie
 
 
-Princess Elena 
-Princess Irina 
-Princess Sophie 
-Princess Maria 
+Queen Sofía of Spain
 
 
-Princess Elena of Romania (born 15 November 1950) is the second daughter of King Michael I and Queen Anne of Romania.
-Elena is first in the line of succession to the former Romanian throne and headship of the House of Romania as her elder sister Margareta's heir presumptive.
-Early life
-
-Birth
-
-Elena was born on 15 November 1950 at Clinique de Montchoisi in Lausanne, Switzerland as the second daughter of King Michael I and Queen Anne.
-She was baptised in the Orthodox faith; her godmothers were her paternal grandmother Helen, Queen Mother of Romania (who was also her namesake) and also Queen Mary of the United Kingdom.
-Childhood
-
-Elena spent her childhood at her family homes in Lausanne, Switzerland, and in the United Kingdom at Ayot House, St Lawrence, Hertfordshire; during holidays she and her sisters spent time with their grandmother, Helen, Queen Mother in Florence, Italy at Villa Sparta and in Denmark with Princess Margaret and Prince René.
-Education
-
-Elena received her primary education in Switzerland and her secondary at Effingham House in Little Common, Bexhill-on-Sea, East Sussex; she was fond of sports during her school years, playing on goal defence in the netball team.
-Careers
-
-In the mid-1970s, Elena taught handicapped children for a short period of time in London and after her leaving, she began a two-year course in art restoration; following the end of her course she worked in an art restoration firm in London.
-Activities
-
-In the 1980s Elena along with her first husband Robin Medforth-Mills started a project to train 45 handicapped Ethiopian refugees in printing, bookbinding and leatherwork.
-In 1982 Elena founded an International school in Gezira, Sudan.
-In 1990 along with Elena’s first husband, the then-Lord Mayor of Newcastle, Terry Cooney, and Harry Charrington was a founder-member of the North-East Relief Fund for Romania, which helped victims of the Ceaușescu regime.
-On 26 June 2011, Elena and her second husband Alexander Nixon visited the Queen Elizabeth Sixth Form College in Darlington, County Durham, England to present awards to students who went to Romania for voluntary work and helping to build and repair housing in Brașov, a project based around the Roma community.
-On 3 October 2011, Elena attended the 100th commemorative anniversary of the historic Western travels of ʻAbdu'l-Bahá in London, as a great-granddaughter of Queen Marie who had converted to the Baháʼí Faith, Elena spoke of how her great grandmother's Baháʼí legacy has inspired her to help those of need.
-On 25 April 2012, for the Diamond Jubilee festivities of Queen Elizabeth II, Elena and her second husband inaugurated Royal teas: the UK's only Royal Tea room in Stanhope, County Durham.
-Following the inauguration, on 19 May Elena along with King Michael I, Crown Princess Margareta, her brother-in-law Prince Radu, her husband Alexander Nixon and her son Prince Nicholas attended a Military parade at Windsor Great Park and a Garden party at Windsor Castle hosted by Prince Andrew, Duke of York and Prince Edward, Earl of Wessex.
-Elena also annually attends the Guildhall banquet of the Guild of Freemen of the City of London and the delegation of the Two Sicilian Sacred Military Constantinian Order of Saint George in London.
-In Romania
-
-After 50 years of exile of the Romanian royal family from Romania, in 1990 Elena's sisters Crown Princess Margareta and Princess Sophie visited Romania for the first time following the Romanian Revolution and the overthrow of the Communist dictator Nicolae Ceaușescu in December 1989, she along with the royal family were involved in helping the Romanians.
-Elena's first official appearance in Romania was on 19 April 1992 on Easter Day along with former King Michael I, his wife Anne, her first husband Robin Medforth-Mills, and her son Nicholas, where they were met with hundreds of thousands of supporters; Elena and her son Nicholas famously waved the Royal Flag from a balcony in Revolution Square.
-She came again on Christmas Day of 1997 when the entire royal family entered Romania for the first time after 50 years of exile.
-Since her first visit Elena occasionally visited Romania for family gatherings and for occasions such as: the 60th-birthday celebration of Crown Princess Margareta and the 90th-birthday celebrations of King Michael I.
-However, since 2013 Elena has increased her activities in Romania by attending investiture ceremonies, presenting awards, book launches and Christmas gatherings.
-Elena was present at the lying in state of King Michael
-I in December 2017 and Queen Anne in August 2016 (held firstly at Peleș Castle, and then in the Throne Room of the Royal Palace in both cases), at their public funerals in Bucharest and at their burials in Curtea de Argeș.
-Elena currently spends her time between Britain with her second husband Alexander and her daughter Elisabeta-Karina at her estate in Easington, County Durham and in Romania at Elisabeta Palace.
-Marriages
-
-First marriage
-
-On 20 July 1983, Elena married Robin Medforth-Mills (1942–2002) in a civil ceremony at Durham, England.
-The wedding party included King Michael I, his cousin former King Constantine II of Greece and his wife Queen Anne-Marie, who all served as Koumbaros; bridesmaids included her youngest sister Princess Maria, her second cousins Princess Alexia of Greece and Denmark and Princess Mafalda of Savoy; and also Fabiola Fruchaud, daughter of Princess Tatiana Radziwiłł.
-Elena and Robin had two children:
+Marina, consort of Prince Michael
 
 
-They were divorced on 28 November 1991 after 8 years of marriage.
-Second marriage
+On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
+In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
+Alexia and Carlos were the only two people out of the thirteen on board to be injured.
+Alexia suffered a broken collarbone and Carlos a fractured kneecap.
+At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
+Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
+Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
+The couple have four children: 
 
-Elena was remarried on 14 August 1998 in a civil ceremony at Peterlee to Alexander Philips Nixon McAteer (born 22 October 1964).
-Elena and Alexander married religiously at the Coronation Cathedral, Alba Iulia, on 11 September 2013, privately.
+
+Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
+Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
+The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +144,9 @@ Elena and Alexander married religiously at the Coronation Cathedral, Alba Iulia,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +161,23 @@ Elena and Alexander married religiously at the Coronation Cathedral, Alba Iulia,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +195,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +277,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +300,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +320,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +330,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +370,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,145 +469,307 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d4b048fa-e0d7-457f-93a3-e81ccb5766b9)
- Call ID: d4b048fa-e0d7-457f-93a3-e81ccb5766b9
+  AssignClass (fb231521-d445-48e9-bc9a-1d0f70502084)
+ Call ID: fb231521-d445-48e9-bc9a-1d0f70502084
+  Args:
+    type: :Person
+    source: :Alexia
+  AssignClass (5e9c0b13-5c16-4b6d-a1af-613aa0325de9)
+ Call ID: 5e9c0b13-5c16-4b6d-a1af-613aa0325de9
   Args:
     type: :Woman
-    source: Princess_Elena
-  AssignClass (0781a320-cb95-4a22-b3f6-a6077f73a014)
- Call ID: 0781a320-cb95-4a22-b3f6-a6077f73a014
+    source: :Alexia
+  AssignClass (67329c69-169f-47e6-8fe4-477590c7c801)
+ Call ID: 67329c69-169f-47e6-8fe4-477590c7c801
   Args:
+    type: :Person
+    source: :ConstantineII
+  AssignClass (74de6467-03b2-4b3f-b7bc-6973ce145660)
+ Call ID: 74de6467-03b2-4b3f-b7bc-6973ce145660
+  Args:
+    source: :ConstantineII
     type: :Man
-    source: King_Michael_I
-  AssignClass (efa59931-196d-4102-bf03-5a58dddce96d)
- Call ID: efa59931-196d-4102-bf03-5a58dddce96d
+  AssignClass (7269082f-faeb-450d-84eb-de55dd60680a)
+ Call ID: 7269082f-faeb-450d-84eb-de55dd60680a
   Args:
+    type: :Ancestor
+    source: :ConstantineII
+  AssignClass (4939ba36-c883-4585-bdc5-6dffe666cc0f)
+ Call ID: 4939ba36-c883-4585-bdc5-6dffe666cc0f
+  Args:
+    type: :Person
+    source: :Anne-Marie
+  AssignClass (2990646a-7cb3-4138-b597-1fa007a0268b)
+ Call ID: 2990646a-7cb3-4138-b597-1fa007a0268b
+  Args:
+    source: :Anne-Marie
     type: :Woman
-    source: Queen_Anne
-  AssignClass (69deaafc-49b1-4277-90fb-18b1bf3415f3)
- Call ID: 69deaafc-49b1-4277-90fb-18b1bf3415f3
+  AssignClass (18b5edef-0db2-44c4-8f1c-98c30c1ac7ee)
+ Call ID: 18b5edef-0db2-44c4-8f1c-98c30c1ac7ee
   Args:
-    type: :Woman
-    source: Princess_Margareta
-  AssignClass (187575f4-dd09-497b-bf07-22e978e680c4)
- Call ID: 187575f4-dd09-497b-bf07-22e978e680c4
+    type: :Ancestor
+    source: :Anne-Marie
+  AddLiteral (08f46b3b-75fc-4f44-9b21-7730afb34c91)
+ Call ID: 08f46b3b-75fc-4f44-9b21-7730afb34c91
   Args:
-    type: :Man
-    source: Prince_Radu
-  AssignClass (4058af52-6036-45e4-bd51-6cdd3f0d561f)
- Call ID: 4058af52-6036-45e4-bd51-6cdd3f0d561f
-  Args:
-    type: :Woman
-    source: Princess_Irina
-  AssignClass (0fc1665d-ed6a-47b7-9c9f-50f1325a56b9)
- Call ID: 0fc1665d-ed6a-47b7-9c9f-50f1325a56b9
-  Args:
-    type: :Woman
-    source: Princess_Sophie
-  AssignClass (2da224a9-7c21-40d1-9bc8-80569dbc6534)
- Call ID: 2da224a9-7c21-40d1-9bc8-80569dbc6534
-  Args:
-    type: :Woman
-    source: Princess_Maria
-  AssignClass (7866bc58-32f8-4c64-a0c8-210ab45bff6a)
- Call ID: 7866bc58-32f8-4c64-a0c8-210ab45bff6a
-  Args:
-    type: :Man
-    source: Robin_Medforth-Mills
-  AssignClass (e1ff14a0-4a63-45c3-a878-029fe64dab76)
- Call ID: e1ff14a0-4a63-45c3-a878-029fe64dab76
-  Args:
-    type: :Man
-    source: Alexander_Nixon_McAteer
-  AssignClass (bf75192f-2043-492c-a522-2dc6da643568)
- Call ID: bf75192f-2043-492c-a522-2dc6da643568
-  Args:
-    type: :Man
-    source: Prince_Nicholas
-  AssignClass (67895fc5-5fd0-4a6a-8afa-a4fa465fba20)
- Call ID: 67895fc5-5fd0-4a6a-8afa-a4fa465fba20
-  Args:
-    type: :Woman
-    source: Elisabeta-Karina
-  AddLiteral (9e588a7e-fc1c-44ce-b8d7-636589327d37)
- Call ID: 9e588a7e-fc1c-44ce-b8d7-636589327d37
-  Args:
-    literal_value: 1950
-    relation: :hasBirthYear
-    source: Princess_Elena
     literal_type: xsd:integer
-  AddTriple (624ea396-6212-4e62-b9fc-68f4abed861e)
- Call ID: 624ea396-6212-4e62-b9fc-68f4abed861e
+    literal_value: 1965
+    relation: :hasBirthYear
+    source: :Alexia
+  AddTriple (7c9ced67-6462-4b7c-abc9-ed4e4d9c38ec)
+ Call ID: 7c9ced67-6462-4b7c-abc9-ed4e4d9c38ec
   Args:
-    source: Princess_Elena
+    target: :ConstantineII
     relation: :hasFather
-    target: King_Michael_I
-  AddTriple (f8242309-ad90-45bb-842d-eafd7793f2ea)
- Call ID: f8242309-ad90-45bb-842d-eafd7793f2ea
+    source: :Alexia
+  AddTriple (01347622-4754-4f20-bb5d-80b9d7be803a)
+ Call ID: 01347622-4754-4f20-bb5d-80b9d7be803a
   Args:
-    source: Princess_Elena
+    target: :Anne-Marie
     relation: :hasMother
-    target: Queen_Anne
-  AddTriple (fd02815b-9f18-4230-9d76-2166d4ba4981)
- Call ID: fd02815b-9f18-4230-9d76-2166d4ba4981
+    source: :Alexia
+  AssignClass (ed778e43-849c-47cd-a731-c9738045edd0)
+ Call ID: ed778e43-849c-47cd-a731-c9738045edd0
   Args:
-    relation: :hasSister
-    source: Princess_Elena
-    target: Princess_Margareta
-  AddTriple (c1fa43db-c17b-4ab9-b5f4-227035f7aae8)
- Call ID: c1fa43db-c17b-4ab9-b5f4-227035f7aae8
+    source: :Pavlos
+    type: :Person
+  AssignClass (d8f8d248-f253-4b5f-a523-f7db26f39a25)
+ Call ID: d8f8d248-f253-4b5f-a523-f7db26f39a25
   Args:
-    target: Princess_Irina
-    source: Princess_Elena
-    relation: :hasSister
-  AddTriple (e327c190-9b52-4a47-8f07-23391c98e6f9)
- Call ID: e327c190-9b52-4a47-8f07-23391c98e6f9
+    source: :Pavlos
+    type: :Man
+  AddTriple (0e8d6b10-c834-4b7d-8030-080568e68443)
+ Call ID: 0e8d6b10-c834-4b7d-8030-080568e68443
   Args:
-    target: Princess_Sophie
-    relation: :hasSister
-    source: Princess_Elena
-  AddTriple (232467e9-c5d2-4609-b222-92f929727d14)
- Call ID: 232467e9-c5d2-4609-b222-92f929727d14
+    target: :Pavlos
+    relation: :hasBrother
+    source: :Alexia
+  AddTriple (051058c5-8276-4c01-bbf0-2dc02afade83)
+ Call ID: 051058c5-8276-4c01-bbf0-2dc02afade83
   Args:
-    relation: :hasSister
-    source: Princess_Elena
-    target: Princess_Maria
-  AddTriple (592c3734-3b49-430e-8909-c4cbb53fdc61)
- Call ID: 592c3734-3b49-430e-8909-c4cbb53fdc61
+    relation: :hasParent
+    source: :Pavlos
+    target: :ConstantineII
+  AddTriple (69148c82-ac87-4565-a894-5a9a53d338ea)
+ Call ID: 69148c82-ac87-4565-a894-5a9a53d338ea
   Args:
-    source: Princess_Elena
-    relation: :hasSon
-    target: Prince_Nicholas
-  AddTriple (545bdfe7-443a-48ac-add4-54dbffe2e24e)
- Call ID: 545bdfe7-443a-48ac-add4-54dbffe2e24e
+    target: :Anne-Marie
+    source: :Pavlos
+    relation: :hasParent
+  AssignClass (4402a93c-97a9-4e95-9bd6-a01546038619)
+ Call ID: 4402a93c-97a9-4e95-9bd6-a01546038619
   Args:
-    target: Elisabeta-Karina
-    source: Princess_Elena
-    relation: :hasDaughter
-  AddLiteral (29ffb424-834e-4813-b5f5-db6328b5a87f)
- Call ID: 29ffb424-834e-4813-b5f5-db6328b5a87f
+    type: :Person
+    source: :CarlosJavierMoralesQuintana
+  AssignClass (ee44598c-7b8f-4ba8-8d40-10c42ee09cde)
+ Call ID: ee44598c-7b8f-4ba8-8d40-10c42ee09cde
   Args:
-    literal_value: 1983
-    literal_type: xsd:integer
-    source: Princess_Elena
+    type: :Man
+    source: :CarlosJavierMoralesQuintana
+  AddTriple (a7b2e8a4-5018-4469-9a7b-ba6a71e705b1)
+ Call ID: a7b2e8a4-5018-4469-9a7b-ba6a71e705b1
+  Args:
+    relation: :hasRelation
+    source: :Alexia
+    target: :CarlosJavierMoralesQuintana
+  AddLiteral (8107d06f-0568-4f27-87f8-03456b78e704)
+ Call ID: 8107d06f-0568-4f27-87f8-03456b78e704
+  Args:
+    source: :Alexia
     relation: :hasMarriageYear
-  AddLiteral (39bc3c89-8723-4a94-a386-af03267f2ad8)
- Call ID: 39bc3c89-8723-4a94-a386-af03267f2ad8
-  Args:
-    literal_value: 1998
+    literal_value: 1999
     literal_type: xsd:integer
-    source: Princess_Elena
-    relation: :hasMarriageYear
-  AddLiteral (9c9b313f-5be5-42b8-a38d-ef2bca3f7b63)
- Call ID: 9c9b313f-5be5-42b8-a38d-ef2bca3f7b63
+  AssignClass (cda17d03-cb95-4568-9f9a-c66ce27b854c)
+ Call ID: cda17d03-cb95-4568-9f9a-c66ce27b854c
   Args:
-    relation: :hasBirthYear
-    source: Alexander_Nixon_McAteer
-    literal_type: xsd:integer
-    literal_value: 1964
-  Finish (7161895a-cb97-43db-a8df-ed9a1cb32502)
- Call ID: 7161895a-cb97-43db-a8df-ed9a1cb32502
+    type: :Person
+    source: :Theodora
+  AssignClass (3d45cb45-e9bd-4d3d-82c6-9cde9000796d)
+ Call ID: 3d45cb45-e9bd-4d3d-82c6-9cde9000796d
   Args:
+    source: :Theodora
+    type: :Woman
+  AddTriple (4dcef026-3dcb-4d10-b71b-00416331c942)
+ Call ID: 4dcef026-3dcb-4d10-b71b-00416331c942
+  Args:
+    target: :Theodora
+    source: :Alexia
+    relation: :hasSister
+  AssignClass (d04130ed-5fa5-4476-8e85-f7fa34fcd3e7)
+ Call ID: d04130ed-5fa5-4476-8e85-f7fa34fcd3e7
+  Args:
+    type: :Person
+    source: :Maria-Olympia
+  AssignClass (6915cec7-d765-48e0-b931-77851c63c226)
+ Call ID: 6915cec7-d765-48e0-b931-77851c63c226
+  Args:
+    type: :Woman
+    source: :Maria-Olympia
+  AssignClass (aa8581f1-d16d-4301-a7a3-f0e67a0a9b72)
+ Call ID: aa8581f1-d16d-4301-a7a3-f0e67a0a9b72
+  Args:
+    source: :Mafalda
+    type: :Person
+  AssignClass (79f56698-2423-438b-9d44-a4c267a5945c)
+ Call ID: 79f56698-2423-438b-9d44-a4c267a5945c
+  Args:
+    type: :Woman
+    source: :Mafalda
+  AssignClass (64897cc4-d0a4-40aa-8080-f63106032444)
+ Call ID: 64897cc4-d0a4-40aa-8080-f63106032444
+  Args:
+    source: :Kyril
+    type: :Person
+  AssignClass (54009f26-a631-42be-9a30-3a13e0a4ac2f)
+ Call ID: 54009f26-a631-42be-9a30-3a13e0a4ac2f
+  Args:
+    type: :Man
+    source: :Kyril
+  AssignClass (801d4931-4129-4654-b8a1-6a54984a531d)
+ Call ID: 801d4931-4129-4654-b8a1-6a54984a531d
+  Args:
+    source: :Simeon
+    type: :Person
+  AssignClass (131f74e3-7e92-4f1f-9958-650b1b9b21f0)
+ Call ID: 131f74e3-7e92-4f1f-9958-650b1b9b21f0
+  Args:
+    type: :Man
+    source: :Simeon
+  AddTriple (551bb681-786d-4154-a820-435077c10924)
+ Call ID: 551bb681-786d-4154-a820-435077c10924
+  Args:
+    target: :Kyril
+    source: :Mafalda
+    relation: :hasFather
+  AddTriple (6a137cfc-1414-4250-99ae-e6193d2ef8e8)
+ Call ID: 6a137cfc-1414-4250-99ae-e6193d2ef8e8
+  Args:
+    source: :Kyril
+    relation: :hasFather
+    target: :Simeon
+  AssignClass (cc8f0f18-a608-4ee5-8acb-65a9d71324de)
+ Call ID: cc8f0f18-a608-4ee5-8acb-65a9d71324de
+  Args:
+    type: :Person
+    source: :Sofia
+  AssignClass (f8c9e0e0-ad43-4767-9210-8c1ab207cdfc)
+ Call ID: f8c9e0e0-ad43-4767-9210-8c1ab207cdfc
+  Args:
+    source: :Sofia
+    type: :Woman
+  AddTriple (5d377035-6fed-47ff-a7e5-e3be3b25d631)
+ Call ID: 5d377035-6fed-47ff-a7e5-e3be3b25d631
+  Args:
+    target: :Alexia
+    relation: :isAuntOf
+    source: :Sofia
+  AssignClass (3cc4196e-4460-46f9-a5a8-2811725f5d2e)
+ Call ID: 3cc4196e-4460-46f9-a5a8-2811725f5d2e
+  Args:
+    type: :Person
+    source: :FelipeVI
+  AssignClass (aad60d28-8ffe-455a-a081-4aad23b971e7)
+ Call ID: aad60d28-8ffe-455a-a081-4aad23b971e7
+  Args:
+    source: :FelipeVI
+    type: :Man
+  AddTriple (acc700c6-bb26-4180-955e-fe7e981e9079)
+ Call ID: acc700c6-bb26-4180-955e-fe7e981e9079
+  Args:
+    source: :Alexia
+    relation: :hasRelation
+    target: :FelipeVI
+  AssignClass (d54b6ba4-e9f2-4568-8bdb-3d5373730ce6)
+ Call ID: d54b6ba4-e9f2-4568-8bdb-3d5373730ce6
+  Args:
+    type: :Person
+    source: :Ingrid
+  AssignClass (a565de37-8076-44db-806d-58eaf0f248a9)
+ Call ID: a565de37-8076-44db-806d-58eaf0f248a9
+  Args:
+    type: :Woman
+    source: :Ingrid
+  AddTriple (e2a8d8f9-fbff-47b5-8fff-5dff7969333b)
+ Call ID: e2a8d8f9-fbff-47b5-8fff-5dff7969333b
+  Args:
+    target: :Ingrid
+    relation: :hasMother
+    source: :Anne-Marie
+  Finish (1aeeff10-ad93-4b71-9da5-cbe85659d66c)
+ Call ID: 1aeeff10-ad93-4b71-9da5-cbe85659d66c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -640,41 +870,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Nixon_McAteer a :Man ;
-      :hasBirthYear 1964 .
+  data:Mafalda a :Person,
+          :Woman ;
+      :hasFather data:Kyril .
 
-  data:Prince_Radu a :Man .
+  data:Maria-Olympia a :Person,
+          :Woman .
 
-  data:Princess_Elena a :Woman ;
-      :hasBirthYear 1950 ;
-      :hasDaughter data:Elisabeta-Karina ;
-      :hasFather data:King_Michael_I ;
-      :hasMarriageYear 1983,
-          1998 ;
-      :hasMother data:Queen_Anne ;
-      :hasSister data:Princess_Irina,
-          data:Princess_Margareta,
-          data:Princess_Maria,
-          data:Princess_Sophie ;
-      :hasSon data:Prince_Nicholas .
+  data:Sofia a :Person,
+          :Woman ;
+      :isAuntOf data:Alexia .
 
-  data:Robin_Medforth-Mills a :Man .
+  data:Alexia a :Person,
+          :Woman ;
+      :hasBirthYear 1965 ;
+      :hasBrother data:Pavlos ;
+      :hasFather data:ConstantineII ;
+      :hasMarriageYear 1999 ;
+      :hasMother data:Anne-Marie ;
+      :hasRelation data:CarlosJavierMoralesQuintana,
+          data:FelipeVI ;
+      :hasSister data:Theodora .
 
-  data:Elisabeta-Karina a :Woman .
+  data:CarlosJavierMoralesQuintana a :Man,
+          :Person .
 
-  data:King_Michael_I a :Man .
+  data:FelipeVI a :Man,
+          :Person .
 
-  data:Prince_Nicholas a :Man .
+  data:Ingrid a :Person,
+          :Woman .
 
-  data:Princess_Irina a :Woman .
+  data:Kyril a :Man,
+          :Person ;
+      :hasFather data:Simeon .
 
-  data:Princess_Margareta a :Woman .
+  data:Pavlos a :Man,
+          :Person ;
+      :hasParent data:Anne-Marie,
+          data:ConstantineII .
 
-  data:Princess_Maria a :Woman .
+  data:Simeon a :Man,
+          :Person .
 
-  data:Princess_Sophie a :Woman .
+  data:Theodora a :Person,
+          :Woman .
 
-  data:Queen_Anne a :Woman .
+  data:Anne-Marie a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Ingrid .
+
+  data:ConstantineII a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -686,62 +935,94 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (06170b5f-ffdc-4113-85c5-5360f9f1f0b9)
- Call ID: 06170b5f-ffdc-4113-85c5-5360f9f1f0b9
+  ValidateShacl (96c87026-10e6-4f0e-971d-92c71a2706f6)
+ Call ID: 96c87026-10e6-4f0e-971d-92c71a2706f6
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:10
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Michael_I linked via hasFather to Princess_Elena is missing the required class :Ancestor.
+      The node 'Simeon', used as the father of 'Kyril', lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Simeon'.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Anne linked via hasMother to Princess_Elena is missing the required class :Ancestor.
+      The node 'Kyril', used as the father of 'Mafalda', lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Kyril'.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Michael_I linked via hasFather to Princess_Elena is missing the required class :Ancestor.
+      The node 'Simeon', used as the father of 'Kyril', lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Simeon'.
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Anne linked via hasMother to Princess_Elena is missing the required class :Ancestor.
+      The node 'Ingrid', used as the mother of 'Anne-Marie', lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Ingrid'.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Michael_I linked via hasFather to Princess_Elena is missing the required class :Ancestor.
+      The node 'Ingrid', used as the mother of 'Anne-Marie', lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Ingrid'.
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Kyril', used as the father of 'Mafalda', lacks the required class ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign ':Ancestor' to 'Kyril'.
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Simeon', used as the father of 'Kyril', lacks the required class ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign ':Ancestor' to 'Simeon'.
+
+
+  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Anne linked via hasMother to Princess_Elena is missing the required class :Ancestor.
+      The node 'Ingrid', used as the mother of 'Anne-Marie', lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne, :Ancestor)
+      Use AssignClass to assign ':Ancestor' to 'Ingrid'.
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Kyril', used as the father of 'Mafalda', lacks the required class ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign ':Ancestor' to 'Kyril'.
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Ingrid', used as the mother of 'Anne-Marie', lacks the required class ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign ':Ancestor' to 'Ingrid'.
 
 
 
@@ -750,19 +1031,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (9a3be49d-9ddb-4da6-bb5d-c80fdc4acaa1)
- Call ID: 9a3be49d-9ddb-4da6-bb5d-c80fdc4acaa1
-  Args:
-    source: King_Michael_I
-    type: :Ancestor
-  AssignClass (b451adc6-7687-4838-9410-b962aeed153c)
- Call ID: b451adc6-7687-4838-9410-b962aeed153c
+  AssignClass (eebb693b-5f22-47b2-82e6-c6d6b5b8080d)
+ Call ID: eebb693b-5f22-47b2-82e6-c6d6b5b8080d
   Args:
     type: :Ancestor
-    source: Queen_Anne
-  ValidateShacl (f82f1e90-5b95-45f4-ad7c-a338e25ef0cc)
- Call ID: f82f1e90-5b95-45f4-ad7c-a338e25ef0cc
+    source: :Simeon
+  AssignClass (4150e960-2918-475c-b722-378aea7f008f)
+ Call ID: 4150e960-2918-475c-b722-378aea7f008f
   Args:
+    source: :Kyril
+    type: :Ancestor
+  AssignClass (6e3fc507-6712-4993-9aa9-3fcf1262c778)
+ Call ID: 6e3fc507-6712-4993-9aa9-3fcf1262c778
+  Args:
+    type: :Ancestor
+    source: :Ingrid
+  Finish (5c876a64-331c-4944-ad41-36c5f4696c81)
+ Call ID: 5c876a64-331c-4944-ad41-36c5f4696c81
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -775,45 +1065,77 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Nixon_McAteer a :Man ;
-      :hasBirthYear 1964 .
+  data:Mafalda a :Person,
+          :Woman ;
+      :hasFather data:Kyril .
 
-  data:Prince_Radu a :Man .
-
-  data:Princess_Elena a :Woman ;
-      :hasBirthYear 1950 ;
-      :hasDaughter data:Elisabeta-Karina ;
-      :hasFather data:King_Michael_I ;
-      :hasMarriageYear 1983,
-          1998 ;
-      :hasMother data:Queen_Anne ;
-      :hasSister data:Princess_Irina,
-          data:Princess_Margareta,
-          data:Princess_Maria,
-          data:Princess_Sophie ;
-      :hasSon data:Prince_Nicholas .
-
-  data:Robin_Medforth-Mills a :Man .
-
-  data:Elisabeta-Karina a :Woman .
-
-  data:King_Michael_I a :Ancestor,
-          :Man .
-
-  data:Prince_Nicholas a :Man .
-
-  data:Princess_Irina a :Woman .
-
-  data:Princess_Margareta a :Woman .
-
-  data:Princess_Maria a :Woman .
-
-  data:Princess_Sophie a :Woman .
-
-  data:Queen_Anne a :Ancestor,
+  data:Maria-Olympia a :Person,
           :Woman .
 
+  data:Sofia a :Person,
+          :Woman ;
+      :isAuntOf data:Alexia .
 
+  data:Alexia a :Person,
+          :Woman ;
+      :hasBirthYear 1965 ;
+      :hasBrother data:Pavlos ;
+      :hasFather data:ConstantineII ;
+      :hasMarriageYear 1999 ;
+      :hasMother data:Anne-Marie ;
+      :hasRelation data:CarlosJavierMoralesQuintana,
+          data:FelipeVI ;
+      :hasSister data:Theodora .
+
+  data:CarlosJavierMoralesQuintana a :Man,
+          :Person .
+
+  data:FelipeVI a :Man,
+          :Person .
+
+  data:Ingrid a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Kyril a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Simeon .
+
+  data:Pavlos a :Man,
+          :Person ;
+      :hasParent data:Anne-Marie,
+          data:ConstantineII .
+
+  data:Simeon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Theodora a :Person,
+          :Woman .
+
+  data:Anne-Marie a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Ingrid .
+
+  data:ConstantineII a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b29d9023-6ba2-4283-9442-7e6443a4dad7)
+ Call ID: b29d9023-6ba2-4283-9442-7e6443a4dad7
+  Args:
 
 ================================= Tool Message =================================
 
@@ -823,6 +1145,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e28c069b-c824-4c0b-9b8a-621107d95a91)
- Call ID: e28c069b-c824-4c0b-9b8a-621107d95a91
+  Finish (ba2dbcfd-282f-420f-8c00-db59adc3cfbd)
+ Call ID: ba2dbcfd-282f-420f-8c00-db59adc3cfbd
   Args:

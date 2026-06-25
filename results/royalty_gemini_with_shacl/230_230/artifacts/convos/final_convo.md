@@ -85,93 +85,65 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince John of the United Kingdom (John Charles Francis; 12 July 1905 – 18 January 1919) was the fifth son and youngest of the six children of King George V and Queen Mary.
-At the time of his birth, his father was heir apparent to John's grandfather Edward VII.
-In 1910, John's father acceded to the throne upon Edward VII's death, and John became fifth in the line of succession to the British throne.
-In 1909, it was discovered that John had epilepsy.
-John's seclusion was subsequently brought forward as evidence of the royal family's inhumanity.
-However, contrary to the belief that he was hidden from an early age, John was a fully-fledged member of the family for most of his life, appearing frequently in public until after his 11th birthday, when his condition became severe.
-Birth
+Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
+He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
+Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
+Phillips attended the University of Exeter and later worked for Jaguar Racing.
+In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
+Early life and education
 
-John was born at 3:05 am on 12 July 1905 at York Cottage on the Sandringham Estate, during the reign of his paternal grandfather, King Edward VII.
-He was the youngest child and fifth son of George, Prince of Wales (later King George V), and Mary, Princess of Wales (later Queen Mary).
-He was named John despite the name's traditionally unlucky associations within the royal family, and was informally known as Johnnie.
-As a grandchild in the male line of the reigning British monarch, and a son of the Prince of Wales, he was formally styled His Royal Highness Prince John of Wales from birth until his father's accession to the throne in 1910.
-John was christened on 3 August in the parish church of St Mary Magdalene at Sandringham, with the Reverend Canon John Neale Dalton officiating.
-His godparents were King Carlos I of Portugal; his uncles Prince Carl of Denmark and Alexander Duff, 1st Duke of Fife; his great-granduncle Prince Johann of Schleswig-Holstein-Sonderburg-Glücksburg; and three of his first cousins once removed, the Duke and Duchess of Sparta, and Princess Alice, Countess of Athlone.
-John's father stood proxy for King Carlos, Prince Carl, Prince Johann, and the Duke of Fife, while his aunt Princess Victoria stood proxy for the Duchess of Sparta and Princess Alice.
-Childhood and illness
+Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
+He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
+Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
+His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
+Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
+Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
+Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
+Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+Career
 
-Much of John's early life was spent at Sandringham with his siblings – ​Prince Edward (known as David, later King Edward VIII), Prince Albert (known as Bertie, later King George VI), Princess Mary, Prince Henry, and Prince George – ​under the care of their nanny Charlotte "Lala" Bill.
-In 1909, John's grandaunt, the Dowager Empress of Russia, wrote to her son Tsar Nicholas II that "George's children are very nice ...
-The little ones, George and Johnny are both charming and very amusing".
-John's aunt Princess Alice, Countess of Athlone described him as "very quaint and one evening when Uncle George returned from stalking he bent over Aunt May and kissed her, and they heard Johnny soliloquize, 'She kissed Papa, ugly old man!'"
-George V once told U.S. President Theodore Roosevelt that "all  children  obedient, except John" – ​apparently because he alone, among the royal children, escaped punishment from their father.
-Though a "large and handsome" baby, John had become "winsome" and "painfully slow" by his fourth birthday.
-When his father became king, John did not attend his parents' coronation on 22 June 1911, as this was considered too risky for his health; cynics suggested that the family feared their reputation might be damaged by any incident involving him.
-Although John was deemed not "presentable to the outside world," the king continued to show interest in him, offering him "kindness and affection".
-During his years at Sandringham, John exhibited repetitive behaviours as well as regular misbehaviour and insubordination; as one account put it, "he simply didn't understand he needed to .
-"
+After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
+He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
+In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
+In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
+In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
+Royal funeral participation
 
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
+On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
+Personal life
 
-In 1912, Prince George, John's closest sibling, began St Peter's Court Preparatory School in Broadstairs.
-The following summer, The Times reported that John would not attend Broadstairs the next term, and that the King and Queen had not yet decided whether to send him to school at all.
-After the outbreak of World War I, John rarely saw his parents, who were often away on official duties, or his siblings, who were either at boarding school or serving in the military.
-Wood Farm
+Relationships
 
-In 1916, as his seizures became more frequent and severe, John was sent to live at Wood Farm, where Bill assumed responsibility for his care.
-At Wood Farm, John became, in the words of one biographer, "a satellite with his own little household on an outlying farm on the Sandringham estate ...
-"
+Elizabeth Iorio and Tara Swain
 
+Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
+Autumn Kelly
 
-After the summer of 1916, John was rarely seen outside the Sandringham estate and passed entirely into Bill's care.
-When Queen Alexandra wrote that John "is very proud of his house but is longing for a companion", Queen Mary departed from usual royal practice by arranging for local children to be brought in as playmates.
-One of these was Winifred Thomas, a young girl from Halifax who had been sent to live with her aunt and uncle, who managed the royal stables at Sandringham, in the hope that her asthma would improve.
-John had known Winifred years earlier, before World War I.
-John also played with his elder siblings during their visits; on one occasion, when his two eldest brothers came to see him, the Prince of Wales "took him for a run in a kind of a push-cart, and they both disappeared from view.
-"
+In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
+If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
+Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
+The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
+Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
+The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
+On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
+On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
+Lindsay Wallace
 
+After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
+Harriet Sperling
 
-Death
-
-John's seizures intensified, and Bill later wrote "we dared not let him be with his brothers and sister, because it upsets them so much, with the attacks getting so bad and coming so often."
-Biographer Denis Judd writes that John's "seclusion and "abnormality" must have been disturbing to his brothers and sister", noting that he had been "a friendly, outgoing little boy, much loved by his brothers and sister, a sort of mascot for the family".
-On 18 January 1919, after a severe seizure, John died in his sleep at Wood Farm at 5:30 pm, aged 13.
-Queen Mary wrote in her diary that the news was:
-
-a great shock, tho' for the poor little boy's restless soul, death came as a great relief.
-broke the news to George and  motored down to Wood Farm.
-Mary later wrote to Emily Alcock, an old friend, that:
-
-for  it is a great relief, as his malady was becoming worse as he grew older, & he has thus been spared much suffering.
-George described his son's death as "the greatest mercy possible".
-On 20 January, the Daily Mirror reported that "when the Prince passed away his face bore an angelic smile"; the article also made the first public mention of John's epilepsy.
-His funeral took place the next day at St Mary Magdalene parish church, with John Neale Dalton officiating.
-Queen Mary wrote:
-
-Canon Dalton & Dr Brownhill  conducted the service which was awfully sad and touching.
-Queen Alexandra wrote to Queen Mary that "now  two darling Johnnies lie side by side".
-Legacy
-
-
-Edward, who was 11 years older than John and had hardly known him, regarded his brother's death as "little more than a regrettable nuisance."
-He wrote an insensitive letter to Queen Mary, now lost, to which she did not reply.
-In her final diary reference to John, Mary wrote simply: "miss the dear child very much indeed."
-She gave Winifred Thomas several of John's books, inscribed "In memory of our dear little Prince."
-Bill kept a portrait of John above her mantelpiece, together with a letter from him that read "nanny, I love you."
-In the 21st century, John's seclusion has been cited as evidence of the Windsors' "heartlessness".
-One author has written that the royal family believed such afflictions might pass through their blood, which was then still regarded as purer than that of a commoner, and therefore wished to conceal as much as possible about John's illness.
-Others have suggested that John was sent to Wood Farm to provide him with the best environment available under the "austere" conditions of World War I.
-Another author has stated that the family were "frightened and ashamed of John's illness", while yet another has noted that John's life is "usually portrayed either as tragedy or conspiracy".
-At the time of Edward VIII's abdication, an attempt was made to discredit Albert, now George VI, by implying that he suffered from falling fits like John.
-In 1998, the discovery of two volumes of family photographs briefly returned John to public attention.
-The Lost Prince, a biographical drama about John's life written and directed by Stephen Poliakoff, was released in 2003.
+By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -187,39 +159,9 @@ The Lost Prince, a biographical drama about John's life written and directed by 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -234,6 +176,23 @@ The Lost Prince, a biographical drama about John's life written and directed by 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -251,6 +210,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -318,29 +292,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -349,6 +315,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -361,6 +335,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -369,17 +345,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -407,6 +385,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -422,130 +484,481 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4cd24ef0-4473-441b-95d1-f822bd978432)
- Call ID: 4cd24ef0-4473-441b-95d1-f822bd978432
+  AssignClass (b697229e-f377-41cf-bc28-93b25c70501b)
+ Call ID: b697229e-f377-41cf-bc28-93b25c70501b
   Args:
     type: :Man
-    source: Prince_John
-  AssignClass (cc902962-e16b-4c99-8997-a3fcfd8a9076)
- Call ID: cc902962-e16b-4c99-8997-a3fcfd8a9076
+    source: Peter_Phillips
+  AssignClass (6a2d55c1-93a9-4ffc-b710-d1b95eb70669)
+ Call ID: 6a2d55c1-93a9-4ffc-b710-d1b95eb70669
   Args:
-    type: :Man
-    source: King_George_V
-  AssignClass (d5619585-83e9-4be0-885d-885f2e38f8c1)
- Call ID: d5619585-83e9-4be0-885d-885f2e38f8c1
+    source: Peter_Phillips
+    type: :Person
+  AddLiteral (ecd78ea3-343b-4c52-b521-3e1fcb1a5fe7)
+ Call ID: ecd78ea3-343b-4c52-b521-3e1fcb1a5fe7
   Args:
-    source: Queen_Mary
-    type: :Woman
-  AssignClass (0cb6c005-383f-45cf-b9c0-519a8304d08c)
- Call ID: 0cb6c005-383f-45cf-b9c0-519a8304d08c
-  Args:
-    type: :Man
-    source: King_Edward_VII
-  AddTriple (b54da898-22af-43fb-8dbe-7303f3824993)
- Call ID: b54da898-22af-43fb-8dbe-7303f3824993
-  Args:
-    source: Prince_John
-    relation: :hasFather
-    target: King_George_V
-  AddTriple (6206540e-091f-41c5-bd37-cf36645c608c)
- Call ID: 6206540e-091f-41c5-bd37-cf36645c608c
-  Args:
-    source: Prince_John
-    target: Queen_Mary
-    relation: :hasMother
-  AddTriple (46b12b49-2ade-45db-b17a-726a58d28b67)
- Call ID: 46b12b49-2ade-45db-b17a-726a58d28b67
-  Args:
-    relation: :hasFather
-    target: King_Edward_VII
-    source: King_George_V
-  AddLiteral (bf80f4e5-dce9-41d9-a1c8-0842c81a1dcc)
- Call ID: bf80f4e5-dce9-41d9-a1c8-0842c81a1dcc
-  Args:
-    source: Prince_John
-    literal_value: Johnnie
-    literal_type: xsd:string
-    relation: :knownAs
-  AddLiteral (84be9b80-7e00-4f1d-b0a9-af6a2b20fff5)
- Call ID: 84be9b80-7e00-4f1d-b0a9-af6a2b20fff5
-  Args:
-    source: Prince_John
-    literal_value: John Charles Francis
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-  AddLiteral (49dbab3d-f1bf-4643-b588-31fc32e61c31)
- Call ID: 49dbab3d-f1bf-4643-b588-31fc32e61c31
-  Args:
-    literal_value: 1905
-    source: Prince_John
     literal_type: xsd:integer
+    source: Peter_Phillips
     relation: :hasBirthYear
-  AddLiteral (1c552bbf-54e7-463e-8ad7-08e897b4923b)
- Call ID: 1c552bbf-54e7-463e-8ad7-08e897b4923b
+    literal_value: 1977
+  AssignClass (31e4b474-a16f-42fa-9b75-0f67736fe6e7)
+ Call ID: 31e4b474-a16f-42fa-9b75-0f67736fe6e7
   Args:
-    relation: :hasDeathYear
-    literal_value: 1919
-    source: Prince_John
-    literal_type: xsd:integer
-  AssignClass (8d06623a-6787-4186-9bbe-bd7185c17d11)
- Call ID: 8d06623a-6787-4186-9bbe-bd7185c17d11
-  Args:
-    type: :Man
-    source: Prince_Edward
-  AssignClass (005b6d74-a562-4e03-a7d3-22f66ba51474)
- Call ID: 005b6d74-a562-4e03-a7d3-22f66ba51474
-  Args:
-    type: :Man
-    source: Prince_Albert
-  AssignClass (32f42137-0798-4623-b197-4af4dda10f4a)
- Call ID: 32f42137-0798-4623-b197-4af4dda10f4a
-  Args:
-    source: Princess_Mary
     type: :Woman
-  AssignClass (e7c1e26c-b843-43eb-8ce2-ad7bfdcdab05)
- Call ID: e7c1e26c-b843-43eb-8ce2-ad7bfdcdab05
+    source: Anne_Princess_Royal
+  AssignClass (41db3cbf-d5fb-4472-8dd4-48381868fe5c)
+ Call ID: 41db3cbf-d5fb-4472-8dd4-48381868fe5c
+  Args:
+    source: Anne_Princess_Royal
+    type: :Person
+  AssignClass (7ee1fee9-94ea-447d-b8bc-cc074999baee)
+ Call ID: 7ee1fee9-94ea-447d-b8bc-cc074999baee
   Args:
     type: :Man
-    source: Prince_Henry
-  AssignClass (d0a8c7d2-8b04-4b63-a8af-ec888c7895e8)
- Call ID: d0a8c7d2-8b04-4b63-a8af-ec888c7895e8
+    source: Mark_Phillips
+  AssignClass (730bf9c8-765d-499f-b5d5-d091605507ca)
+ Call ID: 730bf9c8-765d-499f-b5d5-d091605507ca
+  Args:
+    source: Mark_Phillips
+    type: :Person
+  AddTriple (557f6391-928c-4af0-8550-ea192b6417c3)
+ Call ID: 557f6391-928c-4af0-8550-ea192b6417c3
+  Args:
+    target: Anne_Princess_Royal
+    source: Peter_Phillips
+    relation: :hasMother
+  AddTriple (183aae27-a0a6-4da1-9e0a-39b4416fd798)
+ Call ID: 183aae27-a0a6-4da1-9e0a-39b4416fd798
+  Args:
+    relation: :hasFather
+    source: Peter_Phillips
+    target: Mark_Phillips
+  AssignClass (9b09ed69-71ba-45ea-bd2d-29b6ab267bf0)
+ Call ID: 9b09ed69-71ba-45ea-bd2d-29b6ab267bf0
   Args:
     type: :Man
-    source: Prince_George
-  AddTriple (81ed006e-97e9-4d10-be39-5382975ed5cf)
- Call ID: 81ed006e-97e9-4d10-be39-5382975ed5cf
+    source: King_Charles_III
+  AssignClass (a0566b62-e10e-477c-a37a-6f58f3cbea47)
+ Call ID: a0566b62-e10e-477c-a37a-6f58f3cbea47
   Args:
-    target: Prince_John
-    relation: :isBrotherOf
-    source: Prince_Edward
-  AddTriple (3fa384fe-19a7-4392-b5f6-8cc5b56a02a0)
- Call ID: 3fa384fe-19a7-4392-b5f6-8cc5b56a02a0
+    type: :Person
+    source: King_Charles_III
+  AssignClass (b6746522-12e2-434e-afc0-7a3ed2e77e41)
+ Call ID: b6746522-12e2-434e-afc0-7a3ed2e77e41
   Args:
-    source: Prince_Albert
-    relation: :isBrotherOf
-    target: Prince_John
-  AddTriple (9451475b-7c54-4201-bb46-fc08c09e54ca)
- Call ID: 9451475b-7c54-4201-bb46-fc08c09e54ca
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (bbe301d6-b3d4-460a-abc2-edac46328824)
+ Call ID: bbe301d6-b3d4-460a-abc2-edac46328824
   Args:
-    source: Princess_Mary
-    target: Prince_John
-    relation: :isSisterOf
-  AddTriple (8687070f-ad6d-4da6-844c-69d85156f5f2)
- Call ID: 8687070f-ad6d-4da6-844c-69d85156f5f2
+    type: :Person
+    source: Queen_Elizabeth_II
+  AssignClass (7f268e6c-f57e-4cf4-9b3f-7d63829f0f63)
+ Call ID: 7f268e6c-f57e-4cf4-9b3f-7d63829f0f63
   Args:
-    source: Prince_Henry
-    target: Prince_John
-    relation: :isBrotherOf
-  AddTriple (0612ae1b-c676-4ac2-9d8c-8373c98ea8f3)
- Call ID: 0612ae1b-c676-4ac2-9d8c-8373c98ea8f3
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (5e61197d-29df-4076-8e5b-3c25d30a20c3)
+ Call ID: 5e61197d-29df-4076-8e5b-3c25d30a20c3
   Args:
-    source: Prince_George
-    relation: :isBrotherOf
-    target: Prince_John
-  Finish (7aada20a-8bf5-4ebd-a8dd-f98f694f5d14)
- Call ID: 7aada20a-8bf5-4ebd-a8dd-f98f694f5d14
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+  AddTriple (235431a3-8b18-402f-a9b6-c5d9e2a286ee)
+ Call ID: 235431a3-8b18-402f-a9b6-c5d9e2a286ee
   Args:
+    relation: :isMotherOf
+    target: Anne_Princess_Royal
+    source: Queen_Elizabeth_II
+  AddTriple (ddbbaf3b-3f95-4648-91d3-c697f88860b3)
+ Call ID: ddbbaf3b-3f95-4648-91d3-c697f88860b3
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    target: Anne_Princess_Royal
+    relation: :isFatherOf
+  AddTriple (607bc592-3c98-44d0-be75-eab72bba0ea1)
+ Call ID: 607bc592-3c98-44d0-be75-eab72bba0ea1
+  Args:
+    relation: :isMotherOf
+    source: Queen_Elizabeth_II
+    target: King_Charles_III
+  AddTriple (80ef3664-7e16-4122-88d1-cd7262fa61e4)
+ Call ID: 80ef3664-7e16-4122-88d1-cd7262fa61e4
+  Args:
+    target: King_Charles_III
+    source: Prince_Philip_Duke_of_Edinburgh
+    relation: :isFatherOf
+  AssignClass (715f1b54-b647-4dbd-90f5-a35e3afd0064)
+ Call ID: 715f1b54-b647-4dbd-90f5-a35e3afd0064
+  Args:
+    source: Zara_Tindall
+    type: :Woman
+  AssignClass (3b404b34-f063-4af4-a9ac-c3ed3c09cb0b)
+ Call ID: 3b404b34-f063-4af4-a9ac-c3ed3c09cb0b
+  Args:
+    type: :Person
+    source: Zara_Tindall
+  AddTriple (16f3d721-37d3-4c98-ab49-6123ba3e9454)
+ Call ID: 16f3d721-37d3-4c98-ab49-6123ba3e9454
+  Args:
+    relation: :hasSister
+    source: Peter_Phillips
+    target: Zara_Tindall
+  AddTriple (86aaec3d-4303-42b9-9ec1-9fd108bcb058)
+ Call ID: 86aaec3d-4303-42b9-9ec1-9fd108bcb058
+  Args:
+    relation: :hasMother
+    target: Anne_Princess_Royal
+    source: Zara_Tindall
+  AddTriple (f5d98730-8caa-44ec-8e38-9231e5a5b111)
+ Call ID: f5d98730-8caa-44ec-8e38-9231e5a5b111
+  Args:
+    relation: :hasFather
+    target: Mark_Phillips
+    source: Zara_Tindall
+  AssignClass (deb8a900-fa65-4811-b735-0ae7419ee673)
+ Call ID: deb8a900-fa65-4811-b735-0ae7419ee673
+  Args:
+    source: Felicity_Wade
+    type: :Woman
+  AssignClass (8bfc8e6c-8d7d-4f7f-aad6-6641be20075b)
+ Call ID: 8bfc8e6c-8d7d-4f7f-aad6-6641be20075b
+  Args:
+    type: :Person
+    source: Felicity_Wade
+  AddTriple (9d6977d2-8fc1-4110-b145-201f74d87de8)
+ Call ID: 9d6977d2-8fc1-4110-b145-201f74d87de8
+  Args:
+    target: Mark_Phillips
+    source: Felicity_Wade
+    relation: :hasFather
+  AssignClass (2955de62-51f6-4ea2-a636-3323d97e189f)
+ Call ID: 2955de62-51f6-4ea2-a636-3323d97e189f
+  Args:
+    type: :Woman
+    source: Heather_Tonkin
+  AssignClass (690b2645-26d7-4686-8b82-f53b4da2630c)
+ Call ID: 690b2645-26d7-4686-8b82-f53b4da2630c
+  Args:
+    type: :Person
+    source: Heather_Tonkin
+  AddTriple (1009813f-aa88-4513-b3ad-ba6b617f7421)
+ Call ID: 1009813f-aa88-4513-b3ad-ba6b617f7421
+  Args:
+    relation: :hasMother
+    target: Heather_Tonkin
+    source: Felicity_Wade
+  AssignClass (64c38d7b-8be2-4cbf-9da2-50e39ffcce5c)
+ Call ID: 64c38d7b-8be2-4cbf-9da2-50e39ffcce5c
+  Args:
+    type: :Woman
+    source: Stephanie_Phillips
+  AssignClass (971fd63b-4849-4293-9311-879a8cf6368f)
+ Call ID: 971fd63b-4849-4293-9311-879a8cf6368f
+  Args:
+    type: :Person
+    source: Stephanie_Phillips
+  AddTriple (c597c046-49cc-4f7c-b1c9-b9b771e018d1)
+ Call ID: c597c046-49cc-4f7c-b1c9-b9b771e018d1
+  Args:
+    source: Stephanie_Phillips
+    target: Mark_Phillips
+    relation: :hasFather
+  AssignClass (e76b33b1-5c9e-4af4-a27a-49f8bfae842c)
+ Call ID: e76b33b1-5c9e-4af4-a27a-49f8bfae842c
+  Args:
+    type: :Woman
+    source: Sandy_Pflueger
+  AssignClass (01c04e93-ffc4-49a1-9e1a-83557746b051)
+ Call ID: 01c04e93-ffc4-49a1-9e1a-83557746b051
+  Args:
+    type: :Person
+    source: Sandy_Pflueger
+  AddTriple (1139ce2a-2686-434f-a496-9a29eff5c25e)
+ Call ID: 1139ce2a-2686-434f-a496-9a29eff5c25e
+  Args:
+    relation: :hasMother
+    target: Sandy_Pflueger
+    source: Stephanie_Phillips
+  AssignClass (5ab82224-6cea-4f91-9bfe-455928f7a7cc)
+ Call ID: 5ab82224-6cea-4f91-9bfe-455928f7a7cc
+  Args:
+    source: Autumn_Kelly
+    type: :Woman
+  AssignClass (37b07973-908d-4465-8ee1-887a0fcea00b)
+ Call ID: 37b07973-908d-4465-8ee1-887a0fcea00b
+  Args:
+    source: Autumn_Kelly
+    type: :Person
+  AddLiteral (45dfb83a-3595-42d7-b1a5-c9587e2739ac)
+ Call ID: 45dfb83a-3595-42d7-b1a5-c9587e2739ac
+  Args:
+    source: Peter_Phillips
+    literal_type: xsd:integer
+    literal_value: 2008
+    relation: :hasMarriageYear
+  AddTriple (71c49800-f83b-46d0-8237-97429caf49e1)
+ Call ID: 71c49800-f83b-46d0-8237-97429caf49e1
+  Args:
+    relation: :hasRelation
+    source: Peter_Phillips
+    target: Autumn_Kelly
+  AssignClass (03cf6221-4908-461e-bba5-d76f2d281628)
+ Call ID: 03cf6221-4908-461e-bba5-d76f2d281628
+  Args:
+    type: :Woman
+    source: Savannah_Anne_Kathleen
+  AssignClass (8f043013-214a-4930-a30d-5d4293799d23)
+ Call ID: 8f043013-214a-4930-a30d-5d4293799d23
+  Args:
+    type: :Person
+    source: Savannah_Anne_Kathleen
+  AddTriple (a95d1c5b-cfad-4b05-bc5f-2f0492b367fc)
+ Call ID: a95d1c5b-cfad-4b05-bc5f-2f0492b367fc
+  Args:
+    relation: :hasMother
+    source: Savannah_Anne_Kathleen
+    target: Autumn_Kelly
+  AddTriple (ab133cb1-48bb-49d7-8b71-7a7c527dc402)
+ Call ID: ab133cb1-48bb-49d7-8b71-7a7c527dc402
+  Args:
+    target: Peter_Phillips
+    source: Savannah_Anne_Kathleen
+    relation: :hasFather
+  AssignClass (54183bf9-ff76-4a09-b4e1-884bc2148743)
+ Call ID: 54183bf9-ff76-4a09-b4e1-884bc2148743
+  Args:
+    source: Isla_Elizabeth
+    type: :Woman
+  AssignClass (6e00480c-7e9a-4b4c-920b-9e5653f8d2dd)
+ Call ID: 6e00480c-7e9a-4b4c-920b-9e5653f8d2dd
+  Args:
+    source: Isla_Elizabeth
+    type: :Person
+  AddTriple (cd66e55c-5873-4993-b089-820b8b976b3f)
+ Call ID: cd66e55c-5873-4993-b089-820b8b976b3f
+  Args:
+    source: Isla_Elizabeth
+    target: Autumn_Kelly
+    relation: :hasMother
+  AddTriple (0f26babd-a5b3-44e5-994a-e2a8be3188a4)
+ Call ID: 0f26babd-a5b3-44e5-994a-e2a8be3188a4
+  Args:
+    relation: :hasFather
+    source: Isla_Elizabeth
+    target: Peter_Phillips
+  AssignClass (4c98c563-72b5-4d6a-8df6-863be76b7899)
+ Call ID: 4c98c563-72b5-4d6a-8df6-863be76b7899
+  Args:
+    type: :Woman
+    source: Lindsay_Wallace
+  AssignClass (f6033c4c-aae6-44a2-b1f7-48283cf788d9)
+ Call ID: f6033c4c-aae6-44a2-b1f7-48283cf788d9
+  Args:
+    source: Lindsay_Wallace
+    type: :Person
+  AddTriple (94ad0789-55f6-4b0f-8df8-ddc2ddc74ae8)
+ Call ID: 94ad0789-55f6-4b0f-8df8-ddc2ddc74ae8
+  Args:
+    relation: :hasRelation
+    source: Peter_Phillips
+    target: Lindsay_Wallace
+  AssignClass (27bf5d75-e007-46f9-97e3-5047290d88ca)
+ Call ID: 27bf5d75-e007-46f9-97e3-5047290d88ca
+  Args:
+    source: Harriet_Sperling
+    type: :Woman
+  AssignClass (66b3b350-0c3f-41fa-8bef-8a1f01a7cbe3)
+ Call ID: 66b3b350-0c3f-41fa-8bef-8a1f01a7cbe3
+  Args:
+    source: Harriet_Sperling
+    type: :Person
+  AddTriple (55bd24ac-d78a-4416-acea-e37417f31df3)
+ Call ID: 55bd24ac-d78a-4416-acea-e37417f31df3
+  Args:
+    relation: :hasRelation
+    target: Harriet_Sperling
+    source: Peter_Phillips
+  AssignClass (fb8d22d7-12e7-4ebc-abd6-1587546d2da6)
+ Call ID: fb8d22d7-12e7-4ebc-abd6-1587546d2da6
+  Args:
+    type: :Man
+    source: Rupert_Sanders
+  AssignClass (3dbc7d07-aaab-47fe-b7a3-7c39de43cac8)
+ Call ID: 3dbc7d07-aaab-47fe-b7a3-7c39de43cac8
+  Args:
+    source: Rupert_Sanders
+    type: :Person
+  AddTriple (08d994a4-d811-474c-a19f-31fa5615a4c3)
+ Call ID: 08d994a4-d811-474c-a19f-31fa5615a4c3
+  Args:
+    relation: :hasFather
+    target: Rupert_Sanders
+    source: Harriet_Sperling
+  AssignClass (2cf0ea9d-19e3-4490-9151-1b7c62905429)
+ Call ID: 2cf0ea9d-19e3-4490-9151-1b7c62905429
+  Args:
+    type: :Woman
+    source: Queen_Camilla
+  AssignClass (2fd89d4d-0f8d-4dbe-9369-3df9c770bfb2)
+ Call ID: 2fd89d4d-0f8d-4dbe-9369-3df9c770bfb2
+  Args:
+    type: :Person
+    source: Queen_Camilla
+  Finish (0269c4dc-0dbc-4ee2-833d-ce685ed1a0f5)
+ Call ID: 0269c4dc-0dbc-4ee2-833d-ce685ed1a0f5
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -634,35 +1047,82 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Albert a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Felicity_Wade a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
 
-  data:Prince_Edward a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Isla_Elizabeth a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
 
-  data:Prince_George a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person ;
+      :isFatherOf data:Anne_Princess_Royal,
+          data:King_Charles_III .
 
-  data:Prince_Henry a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Queen_Camilla a :Person,
+          :Woman .
 
-  data:Princess_Mary a :Woman ;
-      :isSisterOf data:Prince_John .
+  data:Queen_Elizabeth_II a :Person,
+          :Woman ;
+      :isMotherOf data:Anne_Princess_Royal,
+          data:King_Charles_III .
 
-  data:King_Edward_VII a :Man .
+  data:Savannah_Anne_Kathleen a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
 
-  data:King_George_V a :Man ;
-      :hasFather data:King_Edward_VII .
+  data:Stephanie_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
 
-  data:Queen_Mary a :Woman .
+  data:Harriet_Sperling a :Person,
+          :Woman ;
+      :hasFather data:Rupert_Sanders .
 
-  data:Prince_John a :Man ;
-      :alsoKnownAs "John Charles Francis"^^xsd:string ;
-      :hasBirthYear 1905 ;
-      :hasDeathYear 1919 ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary ;
-      :knownAs "Johnnie"^^xsd:string .
+  data:Heather_Tonkin a :Person,
+          :Woman .
+
+  data:Lindsay_Wallace a :Person,
+          :Woman .
+
+  data:Rupert_Sanders a :Man,
+          :Person .
+
+  data:Sandy_Pflueger a :Person,
+          :Woman .
+
+  data:Zara_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:King_Charles_III a :Man,
+          :Person .
+
+  data:Peter_Phillips a :Man,
+          :Person ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasRelation data:Autumn_Kelly,
+          data:Harriet_Sperling,
+          data:Lindsay_Wallace ;
+      :hasSister data:Zara_Tindall .
+
+  data:Autumn_Kelly a :Person,
+          :Woman .
+
+  data:Anne_Princess_Royal a :Person,
+          :Woman .
+
+  data:Mark_Phillips a :Man,
+          :Person .
 
 
 
@@ -674,86 +1134,342 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (94c4e7a8-ee38-47a7-a101-8945728ef180)
- Call ID: 94c4e7a8-ee38-47a7-a101-8945728ef180
+  ValidateShacl (f501404f-4477-4c37-bece-8cf6b8db0f69)
+ Call ID: f501404f-4477-4c37-bece-8cf6b8db0f69
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:41
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasFather pointing to King_George_V, but King_George_V is not classified as an Ancestor.
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Peter_Phillips' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_George_V', class: ':Ancestor')
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_George_V has a property hasFather pointing to King_Edward_VII, but King_Edward_VII is not classified as an Ancestor.
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Peter_Phillips' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Edward_VII', class: ':Ancestor')
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasMother pointing to Queen_Mary, but Queen_Mary is not classified as an Ancestor.
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Queen_Mary', class: ':Ancestor')
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasFather pointing to King_George_V, but King_George_V is not classified as an Ancestor.
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Zara_Tindall' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_George_V', class: ':Ancestor')
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_George_V has a property hasFather pointing to King_Edward_VII, but King_Edward_VII is not classified as an Ancestor.
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Felicity_Wade' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Edward_VII', class: ':Ancestor')
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasMother pointing to Queen_Mary, but Queen_Mary is not classified as an Ancestor.
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Queen_Mary', class: ':Ancestor')
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasFather pointing to King_George_V, but King_George_V is not classified as an Ancestor.
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_George_V', class: ':Ancestor')
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_George_V has a property hasFather pointing to King_Edward_VII, but King_Edward_VII is not classified as an Ancestor.
+      The node 'Rupert_Sanders' used as the value for 'hasFather' of 'Harriet_Sperling' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Edward_VII', class: ':Ancestor')
+      AssignClass(node='Rupert_Sanders', class=':Ancestor')
 
 
   Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Peter_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_John has a property hasMother pointing to Queen_Mary, but Queen_Mary is not classified as an Ancestor.
+      The node 'Sandy_Pflueger' used as the value for 'hasMother' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Queen_Mary', class: ':Ancestor')
+      AssignClass(node='Sandy_Pflueger', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Zara_Tindall' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Heather_Tonkin' used as the value for 'hasMother' of 'Felicity_Wade' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Heather_Tonkin', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Peter_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Zara_Tindall' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Felicity_Wade' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Rupert_Sanders' used as the value for 'hasFather' of 'Harriet_Sperling' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Rupert_Sanders', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Peter_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Sandy_Pflueger' used as the value for 'hasMother' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Sandy_Pflueger', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Zara_Tindall' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Heather_Tonkin' used as the value for 'hasMother' of 'Felicity_Wade' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Heather_Tonkin', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Peter_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Zara_Tindall' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Rupert_Sanders' used as the value for 'hasFather' of 'Harriet_Sperling' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Rupert_Sanders', class=':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Mark_Phillips' used as the value for 'hasFather' of 'Felicity_Wade' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mark_Phillips', class=':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Peter_Phillips' used as the value for 'hasFather' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Peter_Phillips', class=':Ancestor')
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Sandy_Pflueger' used as the value for 'hasMother' of 'Stephanie_Phillips' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Sandy_Pflueger', class=':Ancestor')
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne_Princess_Royal' used as the value for 'hasMother' of 'Zara_Tindall' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Heather_Tonkin' used as the value for 'hasMother' of 'Felicity_Wade' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Heather_Tonkin', class=':Ancestor')
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Savannah_Anne_Kathleen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Autumn_Kelly' used as the value for 'hasMother' of 'Isla_Elizabeth' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Autumn_Kelly', class=':Ancestor')
+
+
+  Violation [40]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'Prince_Philip_Duke_of_Edinburgh' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Philip_Duke_of_Edinburgh', class=':Ancestor')
+
+
+  Violation [41]:
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    LLM-provided explanation of the violation:
+      The node 'Queen_Elizabeth_II' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
 
 
 
@@ -762,24 +1478,78 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c3f8e31d-2950-4694-a6f5-2ce0815ad763)
- Call ID: c3f8e31d-2950-4694-a6f5-2ce0815ad763
+  AssignClass (cf6c6bdc-581a-4236-9b6a-f453b4ff37b4)
+ Call ID: cf6c6bdc-581a-4236-9b6a-f453b4ff37b4
   Args:
     type: :Ancestor
-    source: King_George_V
-  AssignClass (ce57509a-7137-48bd-b050-2bfe9ebfc801)
- Call ID: ce57509a-7137-48bd-b050-2bfe9ebfc801
+    source: Mark_Phillips
+  AssignClass (ea63ba71-5924-41c2-b4d8-5e1bbb5d5f37)
+ Call ID: ea63ba71-5924-41c2-b4d8-5e1bbb5d5f37
+  Args:
+    source: Anne_Princess_Royal
+    type: :Ancestor
+  AssignClass (f3fa1df6-9744-4d62-8a8f-49fde805078b)
+ Call ID: f3fa1df6-9744-4d62-8a8f-49fde805078b
+  Args:
+    source: Peter_Phillips
+    type: :Ancestor
+  AssignClass (db8613ec-3064-4228-88b8-9ecdefe699a0)
+ Call ID: db8613ec-3064-4228-88b8-9ecdefe699a0
+  Args:
+    source: Rupert_Sanders
+    type: :Ancestor
+  AssignClass (381dfbad-2013-43e5-9c6b-4bb4557dbb59)
+ Call ID: 381dfbad-2013-43e5-9c6b-4bb4557dbb59
   Args:
     type: :Ancestor
-    source: King_Edward_VII
-  AssignClass (dfe938bf-3e23-45e1-a120-7138233d923a)
- Call ID: dfe938bf-3e23-45e1-a120-7138233d923a
+    source: Sandy_Pflueger
+  AssignClass (8395f45c-ec18-4e1c-9cef-e31cd6a0dd0c)
+ Call ID: 8395f45c-ec18-4e1c-9cef-e31cd6a0dd0c
+  Args:
+    source: Heather_Tonkin
+    type: :Ancestor
+  AssignClass (295b9e5f-e85f-4258-bcfc-8e1b6b2b6e80)
+ Call ID: 295b9e5f-e85f-4258-bcfc-8e1b6b2b6e80
+  Args:
+    source: Autumn_Kelly
+    type: :Ancestor
+  AssignClass (3e7999b8-4d9c-4849-be75-b8db3a8bd352)
+ Call ID: 3e7999b8-4d9c-4849-be75-b8db3a8bd352
   Args:
     type: :Ancestor
-    source: Queen_Mary
-  ValidateShacl (6d4214a2-d6dc-4d86-9033-34b04c0949d2)
- Call ID: 6d4214a2-d6dc-4d86-9033-34b04c0949d2
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (e8f5e0d6-849b-475b-be0c-468625c5171b)
+ Call ID: e8f5e0d6-849b-475b-be0c-468625c5171b
   Args:
+    type: :Ancestor
+    source: Queen_Elizabeth_II
+  Finish (79391b3f-2237-4768-9171-da47ee9dda36)
+ Call ID: 79391b3f-2237-4768-9171-da47ee9dda36
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -796,40 +1566,105 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Albert a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Felicity_Wade a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
 
-  data:Prince_Edward a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Isla_Elizabeth a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
 
-  data:Prince_George a :Man ;
-      :isBrotherOf data:Prince_John .
+  data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Anne_Princess_Royal,
+          data:King_Charles_III .
 
-  data:Prince_Henry a :Man ;
-      :isBrotherOf data:Prince_John .
-
-  data:Princess_Mary a :Woman ;
-      :isSisterOf data:Prince_John .
-
-  data:King_Edward_VII a :Ancestor,
-          :Man .
-
-  data:King_George_V a :Ancestor,
-          :Man ;
-      :hasFather data:King_Edward_VII .
-
-  data:Queen_Mary a :Ancestor,
+  data:Queen_Camilla a :Person,
           :Woman .
 
-  data:Prince_John a :Man ;
-      :alsoKnownAs "John Charles Francis"^^xsd:string ;
-      :hasBirthYear 1905 ;
-      :hasDeathYear 1919 ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary ;
-      :knownAs "Johnnie"^^xsd:string .
+  data:Queen_Elizabeth_II a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Anne_Princess_Royal,
+          data:King_Charles_III .
+
+  data:Savannah_Anne_Kathleen a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
+
+  data:Stephanie_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
+
+  data:Harriet_Sperling a :Person,
+          :Woman ;
+      :hasFather data:Rupert_Sanders .
+
+  data:Heather_Tonkin a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Lindsay_Wallace a :Person,
+          :Woman .
+
+  data:Rupert_Sanders a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Sandy_Pflueger a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Zara_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:King_Charles_III a :Man,
+          :Person .
+
+  data:Peter_Phillips a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasRelation data:Autumn_Kelly,
+          data:Harriet_Sperling,
+          data:Lindsay_Wallace ;
+      :hasSister data:Zara_Tindall .
+
+  data:Autumn_Kelly a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Anne_Princess_Royal a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Mark_Phillips a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (f8f343df-afba-4e15-b562-d0721743041e)
+ Call ID: f8f343df-afba-4e15-b562-d0721743041e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -839,6 +1674,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (921e3705-c932-4a5f-a57d-b0d15f3bb9a6)
- Call ID: 921e3705-c932-4a5f-a57d-b0d15f3bb9a6
+  Finish (84527370-78d5-48f9-afae-d1837194293c)
+ Call ID: 84527370-78d5-48f9-afae-d1837194293c
   Args:

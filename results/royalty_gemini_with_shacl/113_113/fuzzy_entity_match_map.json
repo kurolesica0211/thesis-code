@@ -16,35 +16,28 @@
       "qid": "Q1943652",
       "label": "Prince Ranieri, Duke of Castro",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Alfonso-_Duke_of_Calabria",
-      "qid": "Q1333222",
-      "label": "Infante Alfonso, Duke of Calabria",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Alfonso-_Count_of_Caserta",
       "qid": "Q439014",
       "label": "Prince Alfonso, Count of Caserta",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
-      "qid": "Q2290508",
-      "label": "Prince Ferdinand Pius, Duke of Calabria",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies",
       "qid": "Q255400",
       "label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
       "distance": 1,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
+      "qid": "Q2290508",
+      "label": "Prince Ferdinand Pius, Duke of Calabria",
+      "distance": 2,
+      "gender": null
     }
   ],
   "entities": [
@@ -59,11 +52,11 @@
       "ground_truth_qid": "Q255400",
       "ground_truth_label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Maria Antonietta of Bourbon-Two Sicilies",
       "best_candidate_label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
       "best_candidate_qid": "Q255400",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -76,12 +69,12 @@
       "ground_truth_uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
       "ground_truth_qid": "Q2290508",
       "ground_truth_label": "Prince Ferdinand Pius, Duke of Calabria",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Ferdinand Pius- Duke of Calabria",
       "best_candidate_label": "Prince Ferdinand Pius, Duke of Calabria",
       "best_candidate_qid": "Q2290508",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9914529914529915
     },
     {
@@ -95,11 +88,11 @@
       "ground_truth_qid": "Q439014",
       "ground_truth_label": "Prince Alfonso, Count of Caserta",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Alfonso- Count of Caserta",
       "best_candidate_label": "Prince Alfonso, Count of Caserta",
       "best_candidate_qid": "Q439014",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9876543209876543
     },
     {
@@ -113,11 +106,11 @@
       "ground_truth_qid": "Q1943652",
       "ground_truth_label": "Prince Ranieri, Duke of Castro",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Ranieri- Duke of Castro",
       "best_candidate_label": "Prince Ranieri, Duke of Castro",
       "best_candidate_qid": "Q1943652",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.75
     },
     {
@@ -132,11 +125,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Maria Antonietta of Bourbon-Two Sicilies",
-      "best_candidate_label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
-      "best_candidate_qid": "Q255400",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.0
+      "best_candidate_match_text": "Alfonso Maria Giuseppe Alberto",
+      "best_candidate_label": "Prince Alfonso, Count of Caserta",
+      "best_candidate_qid": "Q439014",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.41935483870967744
     }
   ],
   "summary": {

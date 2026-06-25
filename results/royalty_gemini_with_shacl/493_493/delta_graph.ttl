@@ -2,51 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
-        :Man ;
-    :hasBirthYear 1823 ;
-    :hasDeathYear 1883 .
-
-data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+data:Louise_of_Orleans a :Person,
         :Woman ;
-    :hasBirthYear 1850 ;
-    :hasDeathYear 1922 .
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1958 ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .
 
-data:Woizlawa_Feodora_Princess_Reuss a :Person,
-        :Woman ;
-    :hasBirthYear 1918 ;
-    :hasDeathYear 2019 ;
-    :hasMarriageYear 1939 ;
-    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;
-    :hasRelation data:Heinrich_I_Prinz_Reuss .
+data:Antoine_Duke_of_Montpensier a :Ancestor,
+        :Man,
+        :Person .
 
-data:Heinrich_I_Prinz_Reuss a :Man,
+data:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
         :Person ;
-    :hasBirthYear 1910 ;
-    :hasDeathYear 1982 ;
-    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
-    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
 
-data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,
-        :Man .
-
-data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,
-        :Man ;
-    :hasBirthYear 1887 ;
-    :hasDeathYear 1956 .
-
-data:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,
+data:Luisa_Fernanda_of_Spain a :Ancestor,
+        :Person,
         :Woman .
 
-data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,
-        :Woman ;
-    :hasBirthYear 1884 ;
-    :hasDeathYear 1968 .
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman .
 
-data:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,
+data:Marie_Isabelle_dOrleans a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 1889 ;
-    :hasDeathYear 1918 ;
-    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
-    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Luisa_Fernanda_of_Spain .
 

@@ -1,0 +1,97 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Lady_Helen_Marina_Lucy_Windsor a :Person ;
+    :hasRelation data:Lady_Helen_Marina_Lucy_Windsor ;
+    :isBloodrelationOf data:Lady_Helen_Marina_Lucy_Windsor ;
+    :isSiblingOf data:Lady_Helen_Marina_Lucy_Windsor .
+
+data:Timothy_Verner_Taylor a :Man ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:Timothy_Verner_Taylor ;
+    :hasRelation data:Timothy_Verner_Taylor ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Timothy_Verner_Taylor ;
+    :isBrotherOf data:Timothy_Verner_Taylor ;
+    :isSiblingOf data:Timothy_Verner_Taylor .
+
+data:King_George_V a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_V ;
+    :hasRelation data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Lady_Helen_Taylor,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isSiblingOf data:King_George_V .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Woman ;
+    :hasChild data:Lady_Helen_Taylor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasRelation data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Lady_Helen_Taylor,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSex data:Female ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :isAncestorOf data:Lady_Helen_Taylor ;
+    :isAuntOf data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isMotherOf data:Lady_Helen_Taylor ;
+    :isParentOf data:Lady_Helen_Taylor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:Lady_Helen_Taylor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasRelation data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Lady_Helen_Taylor,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Lady_Helen_Taylor ;
+    :isParentOf data:Lady_Helen_Taylor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Lady_Helen_Taylor .
+
+data:Lady_Helen_Taylor a :Woman ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Katharine_Duchess_of_Kent,
+        data:King_George_V,
+        data:Lady_Helen_Taylor,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasSex data:Female ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Lady_Helen_Taylor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isDaughterOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:Lady_Helen_Taylor ;
+    :isSisterOf data:Lady_Helen_Taylor ;
+    :knownAs data:Lady_Helen_Marina_Lucy_Windsor .
+

@@ -2,36 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Aage a :Man,
-        :Person ;
-    :hasFather data:Prince_Valdemar_of_Denmark ;
-    :hasMother data:Marie_dOrleans .
+data:King_Christian_IX_of_Denmark a :Man .
+
+data:Prince_Constantine_of_Greece a :Man ;
+    :isBrotherOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece a :Man ;
+    :isBrotherOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Prince_Roland_Bonaparte a :Ancestor,
+        :Man ;
+    :isFatherOf data:Princess_Marie_Bonaparte .
+
+data:Prince_Valdemar_of_Denmark a :Ancestor,
+        :Man ;
+    :isBrotherOf data:Marie_dOrleans ;
+    :isFatherOf data:Prince_Aage ;
+    :isUncleOf data:Prince_George_of_Greece_and_Denmark .
+
+data:Evgenia a :Woman .
 
 data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
+        :Man .
 
-data:King_Christian_IX a :Ancestor,
-        :Man,
-        :Person .
-
-data:Marie_dOrleans a :Ancestor,
-        :Person,
-        :Woman .
+data:Marie_dOrleans a :Woman .
 
 data:Olga_Konstantinovna_of_Russia a :Ancestor,
-        :Person,
         :Woman .
 
-data:Prince_Constantine a :Man,
-        :Person .
+data:Petros a :Man .
 
-data:Prince_George_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasAncestor data:King_Christian_IX ;
+data:Prince_Aage a :Man .
+
+data:Princess_Marie_Bonaparte a :Woman .
+
+data:Prince_George_of_Greece_and_Denmark a :Man ;
     :hasBirthYear 1869 ;
-    :hasBrother data:Prince_Constantine,
-        data:Prince_Nicholas ;
     :hasDaughter data:Evgenia ;
     :hasDeathYear 1957 ;
     :hasFather data:George_I_of_Greece ;
@@ -39,23 +45,4 @@ data:Prince_George_of_Greece_and_Denmark a :Man,
     :hasMother data:Olga_Konstantinovna_of_Russia ;
     :hasRelation data:Princess_Marie_Bonaparte ;
     :hasSon data:Petros .
-
-data:Prince_Nicholas a :Man,
-        :Person .
-
-data:Prince_Valdemar_of_Denmark a :Ancestor,
-        :Man,
-        :Person ;
-    :isUncleOf data:Prince_George_of_Greece_and_Denmark .
-
-data:Princess_Marie_Bonaparte a :Person,
-        :Woman ;
-    :hasDaughter data:Evgenia ;
-    :hasSon data:Petros .
-
-data:Evgenia a :Person,
-        :Woman .
-
-data:Petros a :Man,
-        :Person .
 

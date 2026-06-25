@@ -85,45 +85,285 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Dom Luís Filipe, Prince Royal of Portugal, Duke of Braganza (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Portuguese pronunciation: ; 21 March 1887 – 1 February 1908) was the eldest son and heir apparent of King Carlos I of Portugal until his assassination.
-Born in 1887, when his father was still Prince Royal, he was styled Prince of Beira at birth.
-After his paternal grandfather King Luís I of Portugal died, he became Prince Royal of Portugal and Duke of Braganza as heir apparent to the throne.
-Following the Lisbon Regicide that saw him and his father killed, his younger brother Manuel II became King of Portugal.
+William, Prince of Wales (William Arthur Philip Louis; born 21 June 1982), is the heir apparent to the British throne.
+He is the elder son of King Charles III and Diana, Princess of Wales.
+William was born during the reign of his paternal grandmother, Queen Elizabeth II.
+He earned a Master of Arts degree in geography at the University of St Andrews, where he met his future wife, Catherine Middleton.
+After university, William trained at the Royal Military Academy Sandhurst before serving with the Blues and Royals.
+William performs official duties and engagements on behalf of the monarch.
+He is patron of multiple charitable and military organisations, including the Tusk Trust, Centrepoint, The Passage, Wales Air Ambulance, and London's Air Ambulance Charity.
+William was made Duke of Cambridge immediately before his wedding in April 2011.
+The following day, he was made Prince of Wales.
 Early life
 
-Luís Filipe Maria Carlos Amélio Fernando Víctor Manuel António Lourenço Miguel Rafael Gabriel Gonzaga Xavier Francisco de Assis Bento was born in Lisbon, the elder son of Carlos, Prince Royal of Portugal (later King Carlos I of Portugal), and Princess Amélie d'Orléans, a member of the House of Braganza.
-Two years after his birth, Dom Luís Filipe inherited all his father's royal princely titles when his father became king.
-He was himself re-styled Prince Royal, and at the same time inherited the Dukedom of Braganza (as 21st Duke), which brought with it the largest private fortune in Portugal at that time, completely at the disposal of the heir to the Portuguese crown.
-In 1907, the Prince Royal acted as regent of the kingdom while his father was outside the country.
-The same year he made a very successful official visit to the Portuguese colonies in Africa, the first member of the royal family ever to visit them.
-Dom Luís Filipe was the pupil of the African war hero Mouzinho de Albuquerque, and like all the Braganzas, showed many aptitudes in the arts, besides his pursuing a military education.
-Around the time of Dom Luís Filipe's assassination, negotiations for marriage to his cousin Princess Patricia of Connaught were underway.
-Princess Patricia was the granddaughter of Queen Victoria of the United Kingdom and Prince Albert of Saxe-Coburg and Gotha, the daughter of British Prince Arthur, Duke of Connaught and Strathearn, and Princess Louise Margaret of Prussia.
-Lisbon Regicide
+William was born at 9:03 pm on 21 June 1982 at St Mary's Hospital, London, during the reign of his paternal grandmother, Queen Elizabeth II.
+He was the first child of Charles, Prince of Wales (later King Charles III), and his first wife, Diana, Princess of Wales.
+Buckingham Palace announced his name – William Arthur Philip Louis – on 28 June.
+He was christened in the Music Room at Buckingham Palace by the then Archbishop of Canterbury, Robert Runcie, on 4 August, which also marked the 82nd birthday of his paternal great-grandmother, Queen Elizabeth the Queen Mother.
+William was the first child born to a Prince and Princess of Wales since Prince John was born to Prince George and Princess Mary (later King George V and Queen Mary) in July 1905.
+When he was nine months old, William accompanied his parents on their 1983 tour of Australia and New Zealand, marking his first trip overseas.
+It was also the first time that a royal baby had been taken on an overseas tour.
+Family photographs of William and his parents on the grounds of Government House in Auckland received significant global coverage.
+They have been credited as a major reason for the Buzzy Bee toy, which William had been playing with, becoming a New Zealand cultural icon.
+His younger brother, Prince Harry, was born in September 1984.
+The brothers were raised at Kensington Palace in London, and at Highgrove House in Gloucestershire.
+Known informally as "Wills" within his family, William was nicknamed "Willy" by his brother and "Wombat" by his mother.
+Diana sought to give her sons broader and more typical life experiences beyond a royal upbringing, taking them to Walt Disney World, McDonald's, AIDS clinics, and shelters for the homeless.
+According to the biographer, Robert Lacey, William –  described as a "rambunctious" and "bratty" child – became "more reflective", with a "noticeably quiet character", after he began boarding school.
+Diana was reported to have described him as "my little wise old man", and by his early teens she had begun to rely on him as a confidant.
+William carried out his first public engagement while accompanying his parents on a visit to Llandaff on Saint David's Day in 1991.
+He and Harry travelled to Canada on an official visit with their parents in 1991, and again with Charles in 1998.
+William's parents divorced in 1996.
+Diana died in a car accident in the early hours of 31 August 1997.
+William, then aged 15, was staying at Balmoral Castle with his 12-year-old brother, his father, and his grandparents at the time.
+The following morning, Charles informed William and Harry of their mother's death.
+William was reportedly uncertain about whether he should walk behind his mother's coffin during the funeral procession.
+His grandfather, Prince Philip, Duke of Edinburgh, told him: "If you don't walk, I think you'll regret it later.
+At the funeral, William and Harry walked alongside their father, grandfather, and maternal uncle, Charles Spencer, 9th Earl Spencer, behind the funeral cortège from Kensington Palace to Westminster Abbey.
+After his mother's death, William stated that he had been "in a state of shock for many years".
+He and Harry inherited the majority of the £12.9 million left by their mother on their respective 30th birthdays, a figure that had grown to £10 million each by 2014.
+In 2014, the brothers inherited their mother's wedding dress, along with many of her personal possessions, including dresses, diamond tiaras, jewels, letters, and paintings.
+They also received the original lyrics and score of "Candle in the Wind" by Bernie Taupin and Elton John, as performed by the latter at Diana's funeral.
+In 2002, The Times reported that William and Harry would also share £4.9 million from trust funds established by their great-grandmother, the Queen Mother on their respective 21st birthdays, as well as £8 million upon their respective 40th birthdays.
+Education
 
-On 1 February 1908, Luís Filipe and his family were returning to Lisbon from Vila Viçosa Palace.
-Alfredo Luís da Costa and Manuel Buiça, two members of a revolutionary society called the Carbonária, shot at all the royal family, hitting his father King Carlos, Luís Filipe, and his younger brother Infante Manuel, Duke of Beja.
-Carlos I died immediately, while Luís Filipe lived for another twenty minutes.
-Manuel survived the attack, having only been shot in the arm, while the queen was unharmed.
-Manuel succeeded to the throne as Manuel II.
-Luís Filipe is buried next to his father and forefathers in the Royal Pantheon of the House of Braganza in Lisbon.
-His younger brother, King Manuel II of Portugal, and his mother, Queen Maria Amélia, are buried opposite.
-On 5 October 1910, the monarchy under the reign of his surviving younger brother, Manuel II, was overthrown in a military coup and the First Portuguese Republic was established.
+William was educated at private schools.
+The decision to send William to Eton broke with royal tradition, as his father and grandfather had both attended Gordonstoun.
+The royal family and the press agreed that William would be allowed to study free from media intrusion in exchange for periodic official updates.
+In June 1991, he was admitted to the Royal Berkshire Hospital after being accidentally hit on the forehead by a fellow pupil wielding a golf club.
+After leaving Eton, William took a gap year.
+In 2001, William enrolled at the University of St Andrews in Scotland.
+Early appointments and duties
+
+At the age of 21, William became a Counsellor of State.
+In 2009, the Queen established a private office for William and Harry, with David Manning as their adviser.
+Manning accompanied William on his first official tour in January 2010, during which he visited Auckland and Wellington.
+The visit drew crowds of "many thousands", and the public reception was noted as being similarly positive to that of his mother's 1983 tour.
+In March 2011, William visited Christchurch shortly after the earthquake, speaking at the memorial service in Hagley Park on behalf of his grandmother.
+Before attending Sandhurst, William did a three-week internship at several institutions, including the Bank of England, the London Stock Exchange, and Lloyd's of London.
+In April 2019, Kensington Palace announced that William had completed a three-week internship at MI5, MI6, and GCHQ, during which he monitored extreme Islamist terror cells, identified potential threats abroad, and observed code‐breaking technology.
+Military and air ambulance service
+
+Having decided on a military career, William was admitted to the Royal Military Academy Sandhurst in January 2006.
+As "Lieutenant Wales" – a name derived from his father's then title, Prince of Wales – he followed his brother into the Blues and Royals in December that year as a second lieutenant, after which he spent five months training for the post at Bovington Camp in Dorset.
+Although the Queen approved William serving on the frontline, his position as second‐in‐line to the throne at the time raised doubts about whether he could be deployed to combat.
+William instead trained with the Royal Navy and the Royal Air Force, obtaining his commission as a sub-lieutenant in the former and a flying officer in the latter, both broadly equivalent to the army rank of lieutenant.
+After completing his training, he undertook an attachment with the Royal Air Force at RAF Cranwell.
+During this secondment, William flew to Afghanistan in a C-17 Globemaster that repatriated the body of Trooper Robert Pearson.
+He was then seconded to train with the Royal Navy, completing an accelerated Naval Officer training course at the Britannia Royal Naval College.
+Whilst serving on HMS Iron Duke in July 2008, William participated in a £40m drug seizure in the Atlantic, north-east of Barbados.
+As part of his training across all branches of the military in 2008 and 2009, William spent up to six weeks with the Special Air Service, the Special Boat Service, and the Special Reconnaissance Regiment.
+This made him the first member of the British royal family since Henry VII to live in Wales.
+William's first rescue mission as co-pilot of an RAF Sea King came in October 2010, responding to an emergency call from Liverpool Coastguard.
+In July 2015, William began working full-time as a pilot with the East Anglian Air Ambulance (EAAA), based at Cambridge Airport, which he described as a natural progression from his previous search‐and‐rescue role.
+William spoke about working irregular shifts and dealing largely with critical-care cases, and later discussed the impact of witnessing trauma and bereavement on his mental health and personal life.
+The BBC wrote that he had been "exposed to the National Health Service in a way that no other senior royal has been or possibly ever will be.
+"
+
+
+William left his position with EAAA in July 2017 to assume full-time royal duties.
+In May 2020, he granted permission for the charity to use Kensington Palace's private lawn as a refuelling point during the COVID-19 pandemic.
+In February 2023, he became patron of the Wales Air Ambulance charity.
+Personal life
+
+Relationship with Catherine Middleton
+
+In 2001, William met Catherine Middleton, while they were students in residence at St Salvator's Hall at the University of St Andrews, and they became close friends.
+She reportedly caught William's attention at a charity fashion show at the university in 2002.
+During their second year, William shared a flat with Middleton and two other friends.
+They also began staying at a cottage on the Balmoral estate known as Tam-Na-Ghar, which had been given to William by the Queen Mother shortly before her death.
+Media attention became so intense that William asked the press to keep their distance from Middleton.
+In December 2006, Middleton and her family attended William's passing-out parade at the Royal Military Academy Sandhurst.
+In April 2007, William and Middleton were reported to have separated.
+Middleton and her family attended the Concert for Diana three months later; the couple were subsequently reported to have "rekindled their relationship".
+She also attended the Order of the Garter procession at Windsor Castle in June 2008, where William was made a Royal Knight of the Garter.
+In June 2010, the couple moved into a cottage on the Bodorgan Estate in Anglesey, Wales, where they lived until 2014.
+Marriage and children
+
+The couple became engaged in October 2010 at a remote alpine cabin on Mount Kenya during a 10-day trip to the Lewa Wildlife Conservancy to celebrate William's completion of the RAF helicopter search-and-rescue course.
+William gave his fiancée his mother's engagement ring.
+The wedding took place at Westminster Abbey on 29 April 2011.
+The global audience for the ceremony was estimated at around 300 million, while 26 million watched the event live in Britain alone.
+William and Catherine have three children: Prince George, born in July 2013; Princess Charlotte, born in May 2015; and Prince Louis, born in April 2018; all three were born at St Mary's Hospital in London.
+William and Catherine used Nottingham Cottage as their London residence until 2013, when £4.5 million renovations completed at Apartment 1A at Kensington Palace, which remains their official residence in the capital.
+The couple were given the country house Anmer Hall, on the Sandringham estate, as a wedding gift from the Queen, and lived there from 2015 to 2017.
+Kensington Palace was their primary residence until 2022, and Adelaide Cottage in Windsor until October 2025.
+Duke of Cambridge
+
+William was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus on the day of his wedding in April 2011.
+He and Catherine toured Canada that summer.
+In September 2013, William and Catherine visited Singapore, Malaysia, Tuvalu, and the Solomon Islands as part of the Queen's Diamond Jubilee celebrations.
+William hosted his first investiture ceremony at Buckingham Palace in October that year.
+In April 2014, he and Catherine undertook a royal tour of New Zealand and Australia, accompanied by their son George.
+In August that year, the couple, along with Harry, represented the royal family at World War I commemorations in Belgium.
+In December, the couple visited New York and Washington DC, where William delivered a speech at the World Bank condemning the illegal wildlife trade.
+In 2015 and 2016, William embarked on visits to several Asian countries, including Japan, China, Bhutan, and India; he was the first royal to visit mainland China in almost three decades, with the press describing his diplomacy as "deft" and "polished".
+Countries visited by William and Catherine in 2017 included France, Poland, Germany, and Belgium.
+These visits, like others, were undertaken at the request of the Foreign Office and were interpreted as supporting UK-European relations in the post-Brexit context.
+In June 2018, William toured Jordan, Israel, and Palestine.
+William and Catherine toured Pakistan in October 2019, marking the royal family's first visit to the country in 13 years.
+In November 2020, it was reported that William had tested positive for COVID‐19 in April but had chosen not to alert the media to "avoid alarming the nation".
+In December that year, the couple embarked on a tour of England, Scotland, and Wales via the British Royal Train "to pay tribute to the inspiring work" of communities and charities in 2020.
+In his capacity as Lord High Commissioner to the General Assembly of the Church of Scotland, William toured the country with Catherine in May 2021.
+In March 2022, they embarked on a tour of Belize, the Bahamas, and Jamaica as part of the Queen's Platinum Jubilee celebrations.
+At the unveiling of the National Windrush Monument in London, William described the tour as "an opportunity to reflect" and condemned the racism experienced by members of the Windrush generation and British minorities in 2022.
+In May 2022, he attended the State Opening of Parliament for the first time as a counsellor of state, where his father delivered the Queen's Speech on behalf of Elizabeth II.
+Prince of Wales
+
+Queen Elizabeth II died on 8 September 2022, and William's father succeeded as King Charles III.
+William, now heir apparent, was created Prince of Wales by his father on 9 September.
+Controversy surrounding the title became a topic of public debate in Wales.
+Senedd Llywydd Elin Jones stated that an investiture was not constitutionally required and likely unnecessary, a view echoed by Kensington Palace, which said it was "not on the table".
+As the eldest son of the British monarch, William inherited the Duchy of Cornwall, a £1.3 billion private estate established in 1337 to provide an income for the monarch's eldest son.
+The duchy paid him £23.6 million in his first full year as Duke of Cornwall.
+William and Catherine visited Anglesey and Swansea on 27 September 2022, marking their first visit to Wales since becoming Prince and Princess of Wales.
+In February 2023, they visited Falmouth, their first visit to the region since becoming Duke and Duchess of Cornwall.
+In October 2023, William and Catherine condemned the October 7 attacks on Israel.
+In February 2024, William visited the British Red Cross headquarters, met aid workers assisting civilians in the Gaza–Israel conflict, and issued a government-approved call to end the fighting.
+In December 2024, William attended the official reopening of the Notre-Dame cathedral in Paris, where he greeted the president-elect of the United States, Donald Trump, and later held a private meeting with him to discuss UK-US relations.
+In April 2025, William attended the funeral of Pope Francis on behalf of his father.
+In October 2025, he appeared on the Apple TV+ series The Reluctant Traveler, described by commentators as his "most open and authentic" interview, in which he discussed his family life and the need for the monarchy to remain "fit for purpose".
+On 6 November that year, William attended the 2025 United Nations Climate Change Conference in Belém in place of Charles III; The Daily Telegraph described his address as "his highest-profile speech to date".
+Charity work
+
+William became aware of HIV/AIDS in the mid-1990s when he accompanied his mother and brother on visits to shelters and clinics for patients.
+In January 2005, he and Harry volunteered at a British Red Cross aid distribution centre to pack emergency supplies for countries affected by the 2004 Boxing Day tsunami.
+That December, William spent two weeks in North Wales with Mountain Rescue England and Wales (MREW).
+In May 2007, he became patron of MREW and president of the Royal Marsden Hospital, the latter a role previously held by his mother.
+In January 2025, William was announced as the hospital's joint royal patron alongside Catherine.
+In July 2007, William and Harry organised the Concert for Diana in memory of their mother, benefitting the charities and patronages of Diana, William, and Harry.
+In 2010, William became a patron of 100 Women in Hedge Funds' philanthropic initiatives for the following three years.
+BAFTA has since established the Prince William BAFTA Bursary to support junior creatives in the UK with costs needed to progress in film, television, or games.
+In March 2011, he and Catherine set up a gift fund through The Foundation of Prince William and Prince Harry to allow well‐wishers to donate to charities supporting the armed forces, children, the elderly, art, sport, and conservation in lieu of wedding gifts.
+The foundation was renamed The Royal Foundation of The Prince and Princess of Wales in September 2022.
+In 2011 and 2015, William served as patron of British Army officer Henry Worsley's second and third expeditions to the South Pole, the latter raising money for the Endeavour Fund.
+Humanitarian causes
+
+In March 2020, William appeared in a video for the National Emergencies Trust, launching a fundraising appeal to support charities during the COVID‐19 pandemic.
+In December 2020, William and Catherine became joint patrons of NHS Charities Together.
+In March 2022, amid the Russian invasion of Ukraine, William and Catherine made a donation to support refugees.
+In July 2023, William became patron of the appeal to launch The Fleming Centre, aimed at driving a global movement to tackle antimicrobial resistance.
+In July 2024, he and Catherine made donations to support victims of Hurricane Beryl.
+In January 2025, William was announced as patron of the College of Paramedics.
+Conservation
+
+William became patron of the Tusk Trust in December 2005, a charity that works to conserve wildlife and support community development across Africa.
+In 2013, he succeeded his grandfather, the Duke of Edinburgh, as president of Fields in Trust and transitioned into the role of patron in 2024.
+In 2014, Jane Goodall stated that William had expressed the view that all ivory in the royal collection should be destroyed.
+William has occasionally commented on the effects of overpopulation on African wildlife, though his remarks have been criticised for not addressing resource consumption and population density.
+After two years of research, William launched the Earthshot Prize in October 2020, designed to provide funding and incentives for environmental solutions over the following decade.
+He also appeared in an ITV documentary, Prince William: A Planet For Us All, discussing environmental issues.
+In 2021, William made a private donation to the Thin Green Line Foundation, which provides grants to the families of conservation rangers killed while protecting wildlife.
+William has advocated stricter penalties for poachers and wildlife traffickers, having spoken at the Illegal Wildlife Trade Conference in 2018 and supported a 2022 US court sentencing of a man responsible for trafficking rhinoceros horns and elephant ivory.
+LGBT rights
+
+William has spoken in support LGBT rights as part of his work against cyberbullying, emphasising the importance of being "proud of the person you are" and highlighting the effects of online abuse and discrimination.
+In 2016, he appeared in the July issue of Attitude, becoming the first member of the royal family to feature on the cover of a gay magazine.
+In June 2023, William hosted a Pride Month discussion with mental‐health charity volunteers at Royal Vauxhall Tavern.
+Mental health
+
+Since 2009, William has been patron of Child Bereavement UK, which supports children and families who have lost a loved one.
+In 2016, the Royal Foundation launched several mental‐health initiatives, including Heads Together, a campaign led by William, Catherine, and Harry to de‐stigmatise mental health.
+Later that month, William and Catherine, together with Harry and his wife  Meghan, launched Shout, the United Kingdom's first 24/7 text-messaging service for people experiencing mental‐health crises.
+William later volunteered on the crisis helpline during the COVID-19 lockdowns.
+He attributes his interest in mental health to his experiences as an air‐ambulance pilot, his work with the homeless, veterans' welfare, and Catherine's anti‐addiction advocacy.
+In March 2020, William and Catherine began supporting a new mental‐health initiative by Public Health England during the COVID‐19 pandemic.
+In September 2020, William established the Emergency Responders Senior Leaders Board, commissioned by the Royal Foundation to research the mental health and wellbeing of emergency responders, in partnership with King's College London and the Open University.
+In May 2021 and 2022, William and Catherine voiced the Mental Health Minute message, broadcast on every UK radio station, encouraging people to support those experiencing loneliness.
+In September 2023, William unveiled two organisations partnering with the Duchy of Cornwall to improve mental wellbeing and provide mental‐health services for its tenants.
+In October 2023, to mark World Mental Health Day, he and Catherine took part in a youth forum in Birmingham, Exploring our Emotional Worlds, alongside BBC Radio 1 and the charity The Mix.
+In December 2024, he and Catherine jointly funded a pilot scheme with Norfolk and Waveney Mind to support rural and farming communities on the Sandringham estate.
+In March 2025, William was announced as patron of We Are Farming Minds.
+Homelessness
+
+In September 2005, William became patron of Centrepoint, a charity assisting homeless young people.
+William has been patron of The Passage since 2019, having first visited the centre in 1993 with his mother.
+In June 2023, William launched Homewards after two years of development, aiming to end homelessness in the United Kingdom.
+The five‐year initiative focuses on six pilot locations, each receiving initial seed funding from the Royal Foundation and working with private‐sector and grassroots charity partners.
+In February 2024, William, in partnership with the Cornish charity St Petrocs, announced plans to build 24 homes on Duchy of Cornwall land in Nansledan to provide temporary accommodation for people experiencing homelessness.
+Sport
+
+William often plays polo to raise money for charity.
+He became president of England's Football Association (FA) in May 2006 and vice-royal patron of the Welsh Rugby Union (WRU) in February 2007, supporting the Queen as patron.
+That same year, the WRU's decision to name the Prince William Cup drew criticism from those who believed it would have been more appropriate to name it after Ray Gravell.
+William became patron of the WRU and the FA in 2016 and 2024, respectively.
+In December 2010, William, alongside David Cameron, attended a meeting with FIFA vice-president Chung Mong-joon, during which Chung suggested a vote‐trading deal for England's 2018 World Cup bid.
+In 2011, William, as president of the FA, voted against Australia's 2022 FIFA bid and instead supported South Korea, despite being Australia's future heir.
+In February 2021, following an investigation into racist abuse directed at Marcus Rashford, William released a statement as FA president denouncing "racist abuse... whether on the pitch, in the stands, or on social media" as "despicable" adding that "we all have a responsibility" to create an environment of tolerance and accountability.
+In May 2007, William became patron of the English Schools' Swimming Association.
+In 2012, alongside Catherine and Harry, he launched Coach Core, a programme established after the 2012 Olympics to provide apprenticeship opportunities for aspiring professional coaches.
+In May 2020, he appeared in the BBC One Documentary Football, Prince William and Our Mental Health, part of a campaign encouraging men to discuss mental‐health issues using football as a shared medium.
+Both William and Harry are enthusiastic motorcyclists; William has owned a Ducati 1198 S Corse.
+In May 2014, William, like his father and grandfather, became president of the British Sub-Aqua Club (BSAC).
+In November 2022, William was criticised by Welsh football supporters and Welsh actor Michael Sheen for holding the Prince of Wales title while maintaining affiliations with the England national football team, particularly after he presented jerseys to the squad ahead of the 2022 FIFA World Cup, in which both Wales and England were placed in the same Group B. William commented that he had supported the England football team from a very young age but happily supported Welsh rugby union – of which he is patron – over England.
+Public image
+
+William has been one of the most popular members of the British royal family since his birth.
+Having lived a public life from infancy, he was regarded as a "heartthrob" and eligible young man in adulthood, a status often compared to that of his father.
+Ruth La Ferla of The New York Times contrasted William's "refined" and "polite" appeal with Leonardo DiCaprio's "bad-boy" popularity.
+Following his marriage, William's public image assumed a more "staid" and fatherly demeanour, having "settled into a stable domestic order".
+Anne McElvoy has described William's public personality as a "genial presence" with a "tougher side", combined with elements of his mother's "inimitable style".
+Much of his royal work focuses on "big bet" projects, rather than "plaques and patronages".
+In a 2016 interview, William said his aim was to keep the royal family relevant over the next 20 years.
+William and Catherine's close partnership has been described by The Times as a "good double act", with both valuing normality, privacy, and control.
+In 2011, Time magazine listed him as one of the most influential people in the world alongside his then-newlywed wife Catherine.
+He was found to be the most popular member of the royal family by YouGov in December 2022 and September 2023, and as the second most popular in April 2024.
+In December 2024, The Daily Telegraph included William in its annual list of best-dressed celebrities.
+In 2025, he was listed alongside Catherine on the inaugural Time 100 Philanthropy list; that year, the couple also topped Tatler's social power index.
+Privacy and the media
+
+The death of Diana, Princess of Wales, while being chased by the paparazzi in 1997, has shaped William and Catherine's cautious approach to the media.
+In 2005, William spoke with ITV reporter Tom Bradby and concluded that it was likely their voicemails were being accessed.
+An investigation led by Deputy Assistant Commissioner Peter Clarke found that the compromised voicemail accounts belonged to William's aides, including Jamie Lowther-Pinkerton, rather than the prince himself.
+However, Clive Goodman later stated that he had hacked William's phone on 35 occasions.
+Andy Coulson, editor of News of the World from 2003 to 2007, apologised to William and his brother for invading their privacy, accepting "ultimate responsibility" for Goodman's actions.
+William later sued News Group Newspapers, publisher of News of the World and The Sun, resulting in an out-of-court settlement in 2020.
+He and Harry initially brought a private claim through mutual solicitors, though Harry later pursued his case separately with new representation.
+At the time of Middleton's 25th birthday in January 2007, William issued a statement saying that the level of media intrusion had become intolerable.
+In April 2009, William's lawyers secured an apology from the Daily Star over a false claim that he had "wrecked" a $2 million training aircraft.
+In September 2012, the French edition of Closer and the Italian magazine Chi published topless photos of Catherine sunbathing at Château d'Autet.
+William and Catherine filed both a criminal complaint and a civil suit in Nanterre.
+In October 2014, Catherine and William issued a legal warning to a freelance photographer for "harassing and following" their son George and his nanny.
+In August 2015, Kensington Palace released a letter describing the media's "dangerous" attempts to photograph George and Charlotte.
+In November 2016, William issued a statement supporting Harry and his girlfriend, Meghan Markle, following their complaints about press intrusion.
+During a visit to the BBC studios in central London in November 2018, William criticised social‐media companies for failing to address misinformation and for their role in fuelling social problems.
+In June 2022, a three‐minute video of William confronting paparazzi photographer Terry Harris was posted on Harris's YouTube channel.
+Recorded in January 2021, it shows William objecting as Harris attempted to film his family during a bike ride near Anmer Hall.
+Kensington Palace described the video as a breach of privacy and requested its removal from public platforms.
+In October 2025, Harry named William and Catherine in his court case against Associated Newspapers, alleging that private investigators had been employed to gather information about them, including a payment for details of William's 21st-birthday party in 2003.
+Later that month, William and Catherine won a privacy case in France against Paris Match over unauthorised photos during a family ski trip in the Alps.
+
+
+Titles, styles, and honours
+
+Titles and styles
+
+William has been a British prince since birth and was known as "His Royal Highness Prince William of Wales" until April 2011.
+He was created Duke of Cambridge, Earl of Strathearn, and Baron Carrickfergus by Elizabeth II on the day of his wedding.
+As the eldest son of the monarch, William automatically became Duke of Cornwall, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles, and Prince and Great Steward of Scotland upon his father's accession on 8 September 2022.
+From 8 to 9 September, he was styled "His Royal Highness the Duke of Cornwall and Cambridge".
+On 9 September, Charles announced William's creation as Prince of Wales, the traditional title for the male heir apparent to the British monarch.
+William has since been known as "His Royal Highness the Prince of Wales", except in Scotland, where he is styled "His Royal Highness the Duke of Rothesay" instead.
 Honours
 
-Domestic
+William is a Royal Knight Companion of the Most Noble Order of the Garter (KG), an Extra Knight of the Most Ancient and Most Noble Order of the Thistle (KT), Great Master of the Most Honourable Order of the Bath (GCB), a member of the Privy Council of the United Kingdom (PC), and a Personal Aide-de-Camp (ADC) to the sovereign.
+Ancestry
 
-Foreign
-
-Arms
-
-Luis Filipe bore as heir to the throne the arms of his father; differenced by a Label of three points Or.
+William descends through his father from both the House of Windsor and the House of Oldenburg, one of Europe's oldest royal dynasties.
+More specifically, his Oldenburg line derives from the cadet branch known as the House of Glücksburg.
+Through his mother, William descends from the Earls Spencer – a cadet branch of the Spencer family descended from the earls of Sunderland (the senior branch are now also dukes of Marlborough); from the Barons Fermoy; and, more distantly from Henry FitzRoy, 1st Duke of Grafton, and Charles Lennox, 1st Duke of Richmond – two illegitimate sons of King Charles II.
+As king, William would be the first monarch since the death of Anne in 1714 to descend undisputedly from Charles I, and the first to descend from Charles II.
+William's matrilineal line traces back to Eliza Kewark, a housekeeper to his 18th‐century ancestor Theodore Forbes, a Scottish merchant working for the East India Company Surat.
+Genealogist William Addams Reitwiesner assumed Kewark was Armenian.
+In June 2013, genealogical DNA tests on two of William's distant matrilineal cousins confirmed that Kewark was matrilineally of Indian descent.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -139,39 +379,9 @@ Luis Filipe bore as heir to the throne the arms of his father; differenced by a 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -186,6 +396,23 @@ Luis Filipe bore as heir to the throne the arms of his father; differenced by a 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -203,6 +430,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,29 +512,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -301,6 +535,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -313,6 +555,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -321,17 +565,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -359,6 +605,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -374,88 +704,256 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (77716a96-f5fe-4356-9297-05880be5db04)
- Call ID: 77716a96-f5fe-4356-9297-05880be5db04
+  AssignClass (388e9e6a-c9fc-4f0b-8c36-8fc4616a91e4)
+ Call ID: 388e9e6a-c9fc-4f0b-8c36-8fc4616a91e4
   Args:
-    source: :LuisFilipe
     type: :Man
-  AssignClass (1904fda7-db3e-49bf-b789-015ecccc5f3f)
- Call ID: 1904fda7-db3e-49bf-b789-015ecccc5f3f
+    source: William_Prince_of_Wales
+  AssignClass (07eccecf-5ee8-4887-bc6a-58b39fc8246f)
+ Call ID: 07eccecf-5ee8-4887-bc6a-58b39fc8246f
   Args:
-    source: :CarlosI
+    source: Charles_III
     type: :Man
-  AssignClass (04295686-da35-467a-8d47-7af57c3a4da1)
- Call ID: 04295686-da35-467a-8d47-7af57c3a4da1
+  AssignClass (a665b98d-d6ea-43bc-92dd-9ebe3eea78c8)
+ Call ID: a665b98d-d6ea-43bc-92dd-9ebe3eea78c8
   Args:
-    source: :AmelieOrleans
     type: :Woman
-  AssignClass (4c763b8a-d4d5-4fcb-9738-b8bf530eccbc)
- Call ID: 4c763b8a-d4d5-4fcb-9738-b8bf530eccbc
+    source: Diana_Princess_of_Wales
+  AssignClass (31adeb71-c8a4-417c-a20b-67e3a0a05809)
+ Call ID: 31adeb71-c8a4-417c-a20b-67e3a0a05809
   Args:
     type: :Man
-    source: :ManuelII
-  AddLiteral (48e7950d-a477-4638-beea-8bb16418e1c6)
- Call ID: 48e7950d-a477-4638-beea-8bb16418e1c6
+    source: Prince_Harry
+  AssignClass (e8891013-623c-4901-a170-45aa5c545b5a)
+ Call ID: e8891013-623c-4901-a170-45aa5c545b5a
+  Args:
+    type: :Woman
+    source: Catherine_Middleton
+  AssignClass (29f07e2c-8c50-43a8-8b33-e5ee427bc464)
+ Call ID: 29f07e2c-8c50-43a8-8b33-e5ee427bc464
+  Args:
+    source: Prince_George
+    type: :Man
+  AssignClass (3dabc4c0-7b94-4794-8f3c-50049e6932da)
+ Call ID: 3dabc4c0-7b94-4794-8f3c-50049e6932da
+  Args:
+    type: :Woman
+    source: Princess_Charlotte
+  AssignClass (963da1e5-65c6-451e-b2e4-686267e207b8)
+ Call ID: 963da1e5-65c6-451e-b2e4-686267e207b8
+  Args:
+    source: Prince_Louis
+    type: :Man
+  AssignClass (58f71a97-cc38-4cbf-a239-d71ce6d9b066)
+ Call ID: 58f71a97-cc38-4cbf-a239-d71ce6d9b066
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (be594f42-de1f-4933-a6e4-1461930c641b)
+ Call ID: be594f42-de1f-4933-a6e4-1461930c641b
+  Args:
+    source: Queen_Elizabeth_the_Queen_Mother
+    type: :Woman
+  AssignClass (f8496ef2-000c-43ac-be85-2ff794399cf0)
+ Call ID: f8496ef2-000c-43ac-be85-2ff794399cf0
+  Args:
+    type: :Man
+    source: Prince_Philip
+  AssignClass (1486b60a-19d6-4e24-af97-8bf16b415914)
+ Call ID: 1486b60a-19d6-4e24-af97-8bf16b415914
+  Args:
+    source: Charles_Spencer_9th_Earl_Spencer
+    type: :Man
+  AddLiteral (e8f36f08-5941-4ce6-aaee-2337ac5493f7)
+ Call ID: e8f36f08-5941-4ce6-aaee-2337ac5493f7
   Args:
     literal_type: xsd:integer
-    literal_value: 1887
-    source: :LuisFilipe
     relation: :hasBirthYear
-  AddLiteral (6176db45-c301-40ab-a637-582fa90d80a2)
- Call ID: 6176db45-c301-40ab-a637-582fa90d80a2
+    source: William_Prince_of_Wales
+    literal_value: 1982
+  AddTriple (15924a3f-ebca-4812-a0a9-c5e0099749ad)
+ Call ID: 15924a3f-ebca-4812-a0a9-c5e0099749ad
   Args:
-    relation: :hasDeathYear
-    source: :LuisFilipe
-    literal_value: 1908
-    literal_type: xsd:integer
-  AddTriple (6a244737-9450-4c20-ac00-1238786dbd1e)
- Call ID: 6a244737-9450-4c20-ac00-1238786dbd1e
-  Args:
-    source: :LuisFilipe
     relation: :hasFather
-    target: :CarlosI
-  AddTriple (250f3156-369f-4d14-8eb7-2c3e190c3616)
- Call ID: 250f3156-369f-4d14-8eb7-2c3e190c3616
+    target: Charles_III
+    source: William_Prince_of_Wales
+  AddTriple (9d3b49c1-997a-400a-9b7b-624967dcbaa3)
+ Call ID: 9d3b49c1-997a-400a-9b7b-624967dcbaa3
   Args:
     relation: :hasMother
-    target: :AmelieOrleans
-    source: :LuisFilipe
-  AddTriple (221ad82f-9427-4204-8681-8377ea9c100b)
- Call ID: 221ad82f-9427-4204-8681-8377ea9c100b
+    target: Diana_Princess_of_Wales
+    source: William_Prince_of_Wales
+  AddTriple (551ce2b2-2ed0-4855-9606-a6e41ea8ed2a)
+ Call ID: 551ce2b2-2ed0-4855-9606-a6e41ea8ed2a
   Args:
+    source: William_Prince_of_Wales
     relation: :hasBrother
-    target: :ManuelII
-    source: :LuisFilipe
-  AddTriple (abf99b74-7501-4d87-9e52-794ecc2fb6ec)
- Call ID: abf99b74-7501-4d87-9e52-794ecc2fb6ec
+    target: Prince_Harry
+  AddTriple (5b47276b-3a0a-4a3c-b910-6fbd02e1a961)
+ Call ID: 5b47276b-3a0a-4a3c-b910-6fbd02e1a961
   Args:
-    source: :LuisFilipe
-    relation: :hasSex
-    target: :Male
-  AddTriple (25b799bd-ec21-4ec3-aab4-3351f3c00a02)
- Call ID: 25b799bd-ec21-4ec3-aab4-3351f3c00a02
+    target: Prince_George
+    relation: :hasChild
+    source: William_Prince_of_Wales
+  AddTriple (6a0a4821-3c58-441c-90d7-32107b4a8a0c)
+ Call ID: 6a0a4821-3c58-441c-90d7-32107b4a8a0c
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :CarlosI
-  AddTriple (3719a45b-5278-4a1c-8f56-9ad7f16c8b85)
- Call ID: 3719a45b-5278-4a1c-8f56-9ad7f16c8b85
+    relation: :hasChild
+    target: Princess_Charlotte
+    source: William_Prince_of_Wales
+  AddTriple (9ed26c7f-2979-463c-8efd-af90d50ef9da)
+ Call ID: 9ed26c7f-2979-463c-8efd-af90d50ef9da
   Args:
-    source: :AmelieOrleans
-    relation: :hasSex
-    target: :Female
-  AddTriple (9e5989c6-03a9-4771-9c6c-a0506a8b3464)
- Call ID: 9e5989c6-03a9-4771-9c6c-a0506a8b3464
+    source: William_Prince_of_Wales
+    target: Prince_Louis
+    relation: :hasChild
+  AddTriple (bf7fcbe3-3044-480a-bfd4-6c5e03c4b3d9)
+ Call ID: bf7fcbe3-3044-480a-bfd4-6c5e03c4b3d9
   Args:
-    source: :ManuelII
-    relation: :hasSex
-    target: :Male
-  ValidateShacl (748628a2-0ed7-49b8-a72d-bced8f50c9ca)
- Call ID: 748628a2-0ed7-49b8-a72d-bced8f50c9ca
+    source: Catherine_Middleton
+    target: Prince_George
+    relation: :hasChild
+  AddTriple (3c398a1d-8667-491e-8172-8bd02ca47509)
+ Call ID: 3c398a1d-8667-491e-8172-8bd02ca47509
   Args:
-  Finish (3e582b05-9cf1-44aa-8034-a3421680e9f5)
- Call ID: 3e582b05-9cf1-44aa-8034-a3421680e9f5
+    relation: :hasChild
+    target: Princess_Charlotte
+    source: Catherine_Middleton
+  AddTriple (9a05394b-56e8-47d6-831d-360ca1f55d9d)
+ Call ID: 9a05394b-56e8-47d6-831d-360ca1f55d9d
   Args:
+    relation: :hasChild
+    target: Prince_Louis
+    source: Catherine_Middleton
+  AddTriple (254eb768-0a1c-486e-ab86-57294e560348)
+ Call ID: 254eb768-0a1c-486e-ab86-57294e560348
+  Args:
+    target: William_Prince_of_Wales
+    relation: :hasFather
+    source: Prince_George
+  AddTriple (782a181e-cf79-4c54-9134-feea93ce261c)
+ Call ID: 782a181e-cf79-4c54-9134-feea93ce261c
+  Args:
+    source: Prince_George
+    relation: :hasMother
+    target: Catherine_Middleton
+  AddTriple (04ac641c-e0dc-4781-a673-a46fd9c01153)
+ Call ID: 04ac641c-e0dc-4781-a673-a46fd9c01153
+  Args:
+    source: Princess_Charlotte
+    relation: :hasFather
+    target: William_Prince_of_Wales
+  AddTriple (c8983f71-983f-4cff-82cf-7109abcaf34d)
+ Call ID: c8983f71-983f-4cff-82cf-7109abcaf34d
+  Args:
+    target: Catherine_Middleton
+    relation: :hasMother
+    source: Princess_Charlotte
+  AddTriple (7dc6e99b-e0c8-464d-95f1-bf679e4ef7c5)
+ Call ID: 7dc6e99b-e0c8-464d-95f1-bf679e4ef7c5
+  Args:
+    target: William_Prince_of_Wales
+    relation: :hasFather
+    source: Prince_Louis
+  AddTriple (6d0922fd-0c16-4772-a020-fc7cd4bdd86d)
+ Call ID: 6d0922fd-0c16-4772-a020-fc7cd4bdd86d
+  Args:
+    relation: :hasMother
+    target: Catherine_Middleton
+    source: Prince_Louis
+  AddTriple (d027c0c1-2c2d-4cfb-bba7-d3a1c7600bb3)
+ Call ID: d027c0c1-2c2d-4cfb-bba7-d3a1c7600bb3
+  Args:
+    target: Charles_III
+    relation: :hasFather
+    source: Prince_Harry
+  AddTriple (3cc2ba63-b3d0-409a-97e0-c41ecf8fd227)
+ Call ID: 3cc2ba63-b3d0-409a-97e0-c41ecf8fd227
+  Args:
+    source: Prince_Harry
+    target: Diana_Princess_of_Wales
+    relation: :hasMother
+  AddTriple (87205cac-f7c8-4a84-8ade-5ca6db45541e)
+ Call ID: 87205cac-f7c8-4a84-8ade-5ca6db45541e
+  Args:
+    target: Queen_Elizabeth_II
+    relation: :hasMother
+    source: Charles_III
+  Finish (44ec5dec-8012-456a-8fcf-e0a42ae49b4b)
+ Call ID: 44ec5dec-8012-456a-8fcf-e0a42ae49b4b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -512,334 +1010,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:LuisFilipe a :Man ;
-      :hasBirthYear 1887 ;
-      :hasBrother data:ManuelII ;
-      :hasDeathYear 1908 ;
-      :hasFather data:CarlosI ;
-      :hasMother data:AmelieOrleans ;
-      :hasSex data:Male .
+  data:Charles_Spencer_9th_Earl_Spencer a :Man .
 
-  data:AmelieOrleans a :Woman ;
-      :hasSex data:Female .
+  data:Prince_Philip a :Man .
 
-  data:CarlosI a :Man ;
-      :hasSex data:Male .
+  data:Queen_Elizabeth_the_Queen_Mother a :Woman .
 
-  data:ManuelII a :Man ;
-      :hasSex data:Male .
+  data:Prince_Harry a :Man ;
+      :hasFather data:Charles_III ;
+      :hasMother data:Diana_Princess_of_Wales .
 
+  data:Queen_Elizabeth_II a :Woman .
 
+  data:Charles_III a :Man ;
+      :hasMother data:Queen_Elizabeth_II .
 
-================================= Tool Message =================================
+  data:Diana_Princess_of_Wales a :Woman .
 
-VALIDATION RESULTS
-Total violations:38
-Violations:
+  data:Prince_George a :Man ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
 
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+  data:Prince_Louis a :Man ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
 
+  data:Princess_Charlotte a :Woman ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
 
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+  data:Catherine_Middleton a :Woman ;
+      :hasChild data:Prince_George,
+          data:Prince_Louis,
+          data:Princess_Charlotte .
 
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'CarlosI' linked via 'hasFather' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosI', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AmelieOrleans' linked via 'hasMother' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AmelieOrleans', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'CarlosI' linked via 'hasFather' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosI', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AmelieOrleans' linked via 'hasMother' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AmelieOrleans', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'CarlosI' linked via 'hasFather' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosI', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AmelieOrleans' linked via 'hasMother' to 'LuisFilipe' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AmelieOrleans', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'LuisFilipe' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'ManuelII' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'CarlosI' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AmelieOrleans' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
+  data:William_Prince_of_Wales a :Man ;
+      :hasBirthYear 1982 ;
+      :hasBrother data:Prince_Harry ;
+      :hasChild data:Prince_George,
+          data:Prince_Louis,
+          data:Princess_Charlotte ;
+      :hasFather data:Charles_III ;
+      :hasMother data:Diana_Princess_of_Wales .
 
 
 
@@ -851,32 +1063,318 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (6f098198-f0a5-46c6-ac4c-fc70032cc4ee)
- Call ID: 6f098198-f0a5-46c6-ac4c-fc70032cc4ee
+  ValidateShacl (d45df383-6244-4590-8cdf-dc7b1b469be3)
+ Call ID: d45df383-6244-4590-8cdf-dc7b1b469be3
   Args:
-    type: :Sex
-    source: :Male
-  AssignClass (df382f50-e03b-4261-a684-d02522c386c1)
- Call ID: df382f50-e03b-4261-a684-d02522c386c1
-  Args:
-    type: :Sex
-    source: :Female
-  AssignClass (dd990bad-b028-4e3f-abc5-4e63774772fe)
- Call ID: dd990bad-b028-4e3f-abc5-4e63774772fe
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:33
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Queen_Elizabeth_II lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Queen_Elizabeth_II lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node Charles_III lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_III, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Queen_Elizabeth_II lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Diana_Princess_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Diana_Princess_of_Wales, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node William_Prince_of_Wales lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Prince_of_Wales, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node Catherine_Middleton lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Middleton, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (6017d26a-2132-46c7-abe7-1dc9d54adabe)
+ Call ID: 6017d26a-2132-46c7-abe7-1dc9d54adabe
   Args:
     type: :Ancestor
-    source: :CarlosI
-  AssignClass (456006b0-b9f0-44ec-8ce6-352ea5769bff)
- Call ID: 456006b0-b9f0-44ec-8ce6-352ea5769bff
+    source: William_Prince_of_Wales
+  AssignClass (e3c929fa-d1ab-4ba8-84fd-d213d19a22e5)
+ Call ID: e3c929fa-d1ab-4ba8-84fd-d213d19a22e5
   Args:
-    source: :AmelieOrleans
     type: :Ancestor
-  ValidateShacl (b472fcfc-97d5-4255-88d8-582c4308ee9b)
- Call ID: b472fcfc-97d5-4255-88d8-582c4308ee9b
+    source: Charles_III
+  AssignClass (e9291379-5258-4b56-aaf3-e28b69f23ce5)
+ Call ID: e9291379-5258-4b56-aaf3-e28b69f23ce5
   Args:
-  Finish (46a0aaa5-78d0-4060-a274-4b7fd339a1a6)
- Call ID: 46a0aaa5-78d0-4060-a274-4b7fd339a1a6
+    type: :Ancestor
+    source: Catherine_Middleton
+  AssignClass (82d9d2f2-f924-4646-8787-dd2d267a308f)
+ Call ID: 82d9d2f2-f924-4646-8787-dd2d267a308f
   Args:
+    type: :Ancestor
+    source: Queen_Elizabeth_II
+  AssignClass (a1d849a7-bc38-40c6-933a-e754eb29a4a6)
+ Call ID: a1d849a7-bc38-40c6-933a-e754eb29a4a6
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Ancestor
+  Finish (a281cb5f-cce3-4fe6-a522-fb7928428b33)
+ Call ID: a281cb5f-cce3-4fe6-a522-fb7928428b33
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -897,34 +1395,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:LuisFilipe a :Man ;
-      :hasBirthYear 1887 ;
-      :hasBrother data:ManuelII ;
-      :hasDeathYear 1908 ;
-      :hasFather data:CarlosI ;
-      :hasMother data:AmelieOrleans ;
-      :hasSex data:Male .
+  data:Charles_Spencer_9th_Earl_Spencer a :Man .
 
-  data:AmelieOrleans a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
+  data:Prince_Philip a :Man .
 
-  data:CarlosI a :Ancestor,
+  data:Queen_Elizabeth_the_Queen_Mother a :Woman .
+
+  data:Prince_Harry a :Man ;
+      :hasFather data:Charles_III ;
+      :hasMother data:Diana_Princess_of_Wales .
+
+  data:Queen_Elizabeth_II a :Ancestor,
+          :Woman .
+
+  data:Charles_III a :Ancestor,
           :Man ;
-      :hasSex data:Male .
+      :hasMother data:Queen_Elizabeth_II .
 
-  data:Female a :Sex .
+  data:Diana_Princess_of_Wales a :Ancestor,
+          :Woman .
 
-  data:ManuelII a :Man ;
-      :hasSex data:Male .
+  data:Prince_George a :Man ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
 
-  data:Male a :Sex .
+  data:Prince_Louis a :Man ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
+
+  data:Princess_Charlotte a :Woman ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Middleton .
+
+  data:Catherine_Middleton a :Ancestor,
+          :Woman ;
+      :hasChild data:Prince_George,
+          data:Prince_Louis,
+          data:Princess_Charlotte .
+
+  data:William_Prince_of_Wales a :Ancestor,
+          :Man ;
+      :hasBirthYear 1982 ;
+      :hasBrother data:Prince_Harry ;
+      :hasChild data:Prince_George,
+          data:Prince_Louis,
+          data:Princess_Charlotte ;
+      :hasFather data:Charles_III ;
+      :hasMother data:Diana_Princess_of_Wales .
 
 
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
 
 ================================= Tool Message =================================
 
@@ -934,8 +1453,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (08075a28-cacb-4470-966f-f1da6ba702da)
- Call ID: 08075a28-cacb-4470-966f-f1da6ba702da
+  ValidateShacl (b65a1321-ad43-49ea-a889-4e0713b03c25)
+ Call ID: b65a1321-ad43-49ea-a889-4e0713b03c25
   Args:
 
 ================================= Tool Message =================================
@@ -946,6 +1465,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c47924b3-71ba-430b-90cb-0a81abb799f4)
- Call ID: c47924b3-71ba-430b-90cb-0a81abb799f4
+  Finish (fbe5da2c-49c7-4962-9531-9e9642e4b0c3)
+ Call ID: fbe5da2c-49c7-4962-9531-9e9642e4b0c3
   Args:

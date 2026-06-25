@@ -1,0 +1,146 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "1398:1415"^^xsd:string,
+        "575:604"^^xsd:string ;
+    data:posIndicesPart "844:852"^^xsd:string,
+        "957:965"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Karl_von_Habsburg .
+
+data:Archduchess_Eleonore_of_Austria a :Person,
+        :Woman ;
+    rdfs:label "Archduchess Eleonore of Austria"^^xsd:string ;
+    data:posIndicesFull "0:21"^^xsd:string,
+        "0:32"^^xsd:string,
+        "1120:1141"^^xsd:string ;
+    data:posIndicesPart "276:284"^^xsd:string,
+        "689:696"^^xsd:string,
+        "760:767"^^xsd:string ;
+    data:wdtLink wdt:Q8951675 ;
+    :alsoKnownAs "Eleonore Jelena Maria del Pilar Iona Erzherzogin von Österreich"^^xsd:string,
+        "Eleonore von Habsburg"^^xsd:string,
+        "Eleonore von Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasBrother data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasParent data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Eleonore_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isChildOf data:Karl_von_Habsburg ;
+    :isDaughterOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSisterOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria .
+
+data:Archduke_Ferdinand_Zvonimir_of_Austria a :Man,
+        :Person ;
+    rdfs:label "Archduke Ferdinand Zvonimir of Austria"^^xsd:string ;
+    data:posIndicesFull "802:820"^^xsd:string ;
+    data:wdtLink wdt:Q1032270 ;
+    :alsoKnownAs "Ferdinand Erzherzog von Österreich"^^xsd:string,
+        "Ferdinand Habsburg"^^xsd:string,
+        "Ferdinand Zvonimir Maria Balthus Keith Michael Otto Antal Bahnam Leonhard von Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasBrother data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasParent data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSister data:Archduchess_Eleonore_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isBrotherOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isChildOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSonOf data:Karl_von_Habsburg .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Karl von Habsburg"^^xsd:string ;
+    data:posIndicesFull "186:203"^^xsd:string,
+        "335:352"^^xsd:string ;
+    data:posIndicesPart "844:852"^^xsd:string,
+        "957:965"^^xsd:string ;
+    data:wdtLink wdt:Q78515 ;
+    :alsoKnownAs "Karl Thomas Erzherzog von Österreich"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasBrother data:Karl_von_Habsburg ;
+    :hasChild data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasDaughter data:Archduchess_Eleonore_of_Austria ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isAncestorOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isBloodrelationOf data:Karl_von_Habsburg ;
+    :isBrotherOf data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isParentOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSiblingOf data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria .
+

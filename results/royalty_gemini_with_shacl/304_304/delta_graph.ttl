@@ -2,59 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Mountstuart_Elphinstone a :Man,
-        :Person ;
-    :hasBirthYear 1980 ;
-    :hasFather data:James_Elphinstone ;
-    :hasMother data:Willa_Mary_Gabrielle_Chetwode ;
-    :hasSex data:Male .
+data:CountessEmmaLuanaNinetteSophie a :Woman ;
+    :hasFather data:PrinceFriso ;
+    :hasMother data:MabelWisseSmit .
 
-data:Andrew_Elphinstone a :Ancestor,
-        :Man,
-        :Person ;
-    :hasMother data:Mary_Bowes-Lyon ;
-    :hasSex data:Male .
+data:CountessJoannaZariaNicolineMilou a :Woman ;
+    :hasFather data:PrinceFriso ;
+    :hasMother data:MabelWisseSmit .
 
-data:Elizabeth_The_Queen_Mother a :Person,
+data:ClausVonAmsberg a :Ancestor,
+        :Man .
+
+data:KingWillemAlexander a :Man .
+
+data:PrinceBernhard a :Ancestor,
+        :Man .
+
+data:PrinceConstantijn a :Man .
+
+data:QueenBeatrix a :Ancestor,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana .
 
-data:George_Chetwode a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:QueenJuliana a :Ancestor,
+        :Woman .
 
-data:James_Elphinstone a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Andrew_Elphinstone ;
-    :hasSex data:Male .
+data:MabelWisseSmit a :Ancestor,
+        :Woman .
 
-data:Mary_Bowes-Lyon a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female ;
-    :isSisterOf data:Elizabeth_The_Queen_Mother .
-
-data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
-    :hasSex data:Female .
-
-data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:George_Chetwode ;
-    :hasMother data:Willa_Elliot-Murray-Kynynmound ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:PrinceFriso a :Ancestor,
+        :Man ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:ClausVonAmsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:QueenBeatrix ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn .
 

@@ -2,22 +2,14 @@
     "translation": [],
     "final": [
         {
-            "iteration": 2,
+            "iteration": 1,
             "metadata": [
                 {
-                    "input_tokens": 9315,
-                    "output_tokens": 1183,
-                    "total_tokens": 10498,
+                    "input_tokens": 13671,
+                    "output_tokens": 856,
+                    "total_tokens": 14527,
                     "input_token_details": {
-                        "cache_read": 9310
-                    }
-                },
-                {
-                    "input_tokens": 11930,
-                    "output_tokens": 494,
-                    "total_tokens": 12424,
-                    "input_token_details": {
-                        "cache_read": 9310
+                        "cache_read": 13666
                     }
                 }
             ]

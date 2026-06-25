@@ -2,38 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Athena a :Woman ;
-    :hasFather data:Joachim ;
-    :hasMother data:MarieCavallier .
+data:Bruno_Alejandro_Gomez_Acebo_Borbon a :Man,
+        :Person ;
+    :isSonOf data:Infanta_Pilar .
 
-data:Felix a :Man ;
-    :hasFather data:Joachim ;
-    :hasMother data:Alexandra .
+data:Princess_Louise_of_Orleans a :Person,
+        :Woman .
 
-data:FrederikX a :Man .
+data:Alfonso_XIII a :Man,
+        :Person .
 
-data:Henrik a :Man .
+data:Infanta_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Infante_Juan ;
+    :hasMother data:Maria_Mercedes .
 
-data:HenrikJunior a :Man ;
-    :hasFather data:Joachim ;
-    :hasMother data:MarieCavallier .
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Infante_Juan ;
+    :hasMother data:Maria_Mercedes .
 
-data:MargretheII a :Woman .
+data:Infante_Juan a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII .
 
-data:Nikolai a :Man ;
-    :formerlyKnownAs data:PrinceNikolaiOfDenmark ;
-    :hasBirthYear 1999 ;
-    :hasFather data:Joachim ;
-    :hasMother data:Alexandra ;
-    :knownAs data:CountNikolaiOfMonpezat .
-
-data:CountNikolaiOfMonpezat a :DomainEntity .
-
-data:PrinceNikolaiOfDenmark a :DomainEntity .
-
-data:Alexandra a :Woman .
-
-data:MarieCavallier a :Woman .
-
-data:Joachim a :Man .
+data:Maria_Mercedes a :Person,
+        :Woman .
 

@@ -1,0 +1,536 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Angus_Ogilvy a :Man,
+        :Person ;
+    rdfs:label "Angus Ogilvy"^^xsd:string ;
+    data:posIndicesFull "2652:2676"^^xsd:string,
+        "5838:5850"^^xsd:string,
+        "597:613"^^xsd:string,
+        "601:613"^^xsd:string ;
+    data:posIndicesPart "2790:2796"^^xsd:string,
+        "3133:3139"^^xsd:string,
+        "3246:3252"^^xsd:string,
+        "3325:3331"^^xsd:string,
+        "3392:3398"^^xsd:string ;
+    data:wdtLink wdt:Q544609 ;
+    :alsoKnownAs "Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Angus Ogilvy"^^xsd:string,
+        "Hon. Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Sir Angus Ogilvy"^^xsd:string,
+        "Rt. Hon. Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Rt. Hon. Sir Angus Ogilvy"^^xsd:string,
+        "Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Sir Angus Ogilvy"^^xsd:string ;
+    :hasBrother data:Angus_Ogilvy ;
+    :hasRelation data:Angus_Ogilvy ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Angus_Ogilvy ;
+    :isBrotherOf data:Angus_Ogilvy ;
+    :isSiblingOf data:Angus_Ogilvy .
+
+data:male a :Male .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1088:1130"^^xsd:string,
+        "958:1000"^^xsd:string ;
+    data:posIndicesPart "1340:1347"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "2054:2093"^^xsd:string,
+        "916:953"^^xsd:string ;
+    data:posIndicesPart "6410:6416"^^xsd:string,
+        "6877:6883"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    rdfs:label "Edward VIII"^^xsd:string ;
+    data:posIndicesFull "1750:1763"^^xsd:string,
+        "1822:1838"^^xsd:string,
+        "1827:1838"^^xsd:string,
+        "310:321"^^xsd:string ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor"^^xsd:string,
+        "Duke of Windsor"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David Windsor"^^xsd:string,
+        "Edward VIII Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward VIII Edward VIII, King of the United Kingdom"^^xsd:string,
+        "Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward Windsor"^^xsd:string,
+        "Edward, Duke of Windsor"^^xsd:string,
+        "Edward, Prince of Wales"^^xsd:string,
+        "King Edward VIII"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward, Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:George_VI a :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "1950:1964"^^xsd:string,
+        "1955:1964"^^xsd:string,
+        "326:335"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "289:297"^^xsd:string,
+        "829:842"^^xsd:string,
+        "834:842"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isAncestorOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "1710:1726"^^xsd:string,
+        "1714:1726"^^xsd:string,
+        "1750:1763"^^xsd:string,
+        "199:211"^^xsd:string,
+        "2961:2977"^^xsd:string,
+        "2965:2977"^^xsd:string,
+        "797:809"^^xsd:string ;
+    data:posIndicesPart "419:425"^^xsd:string,
+        "434:438"^^xsd:string,
+        "5626:5630"^^xsd:string,
+        "6877:6883"^^xsd:string,
+        "6892:6896"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Alexandra-_Lady_Ogilvy a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra, Lady Ogilvy"^^xsd:string ;
+    data:posIndicesFull "0:46"^^xsd:string,
+        "2349:2364"^^xsd:string,
+        "48:89"^^xsd:string ;
+    data:posIndicesPart "1060:1069"^^xsd:string,
+        "1209:1217"^^xsd:string,
+        "1324:1332"^^xsd:string,
+        "1444:1452"^^xsd:string,
+        "1596:1604"^^xsd:string,
+        "1646:1654"^^xsd:string,
+        "1840:1849"^^xsd:string,
+        "2122:2130"^^xsd:string,
+        "2171:2179"^^xsd:string,
+        "2447:2456"^^xsd:string,
+        "2504:2512"^^xsd:string,
+        "2625:2634"^^xsd:string,
+        "2714:2720"^^xsd:string,
+        "2747:2751"^^xsd:string,
+        "2752:2761"^^xsd:string,
+        "2790:2796"^^xsd:string,
+        "2807:2816"^^xsd:string,
+        "2923:2932"^^xsd:string,
+        "3041:3049"^^xsd:string,
+        "3133:3139"^^xsd:string,
+        "3246:3252"^^xsd:string,
+        "3280:3289"^^xsd:string,
+        "3320:3324"^^xsd:string,
+        "3325:3331"^^xsd:string,
+        "3378:3387"^^xsd:string,
+        "3392:3398"^^xsd:string,
+        "373:382"^^xsd:string,
+        "4005:4014"^^xsd:string,
+        "4134:4143"^^xsd:string,
+        "4276:4284"^^xsd:string,
+        "4368:4377"^^xsd:string,
+        "4514:4522"^^xsd:string,
+        "4523:4532"^^xsd:string,
+        "4578:4587"^^xsd:string,
+        "4736:4745"^^xsd:string,
+        "4831:4839"^^xsd:string,
+        "4840:4849"^^xsd:string,
+        "5036:5045"^^xsd:string,
+        "5314:5323"^^xsd:string,
+        "5384:5393"^^xsd:string,
+        "556:565"^^xsd:string,
+        "5691:5700"^^xsd:string,
+        "5913:5922"^^xsd:string,
+        "6005:6014"^^xsd:string,
+        "6196:6205"^^xsd:string,
+        "6450:6459"^^xsd:string,
+        "6606:6615"^^xsd:string,
+        "661:670"^^xsd:string,
+        "6666:6674"^^xsd:string,
+        "6675:6684"^^xsd:string,
+        "6827:6835"^^xsd:string,
+        "6836:6845"^^xsd:string ;
+    data:wdtLink wdt:Q170191 ;
+    :alsoKnownAs "Alexandra Helen Elizabeth Olga Christabel"^^xsd:string,
+        "Alexandra Helen Elizabeth Olga Christabel Windsor"^^xsd:string,
+        "Alexandra Kent"^^xsd:string,
+        "Alexandra Windsor"^^xsd:string,
+        "HRH Princess Alexandra of Kent"^^xsd:string,
+        "Princess Alexandra Helen Elizabeth Olga Christabel of Kent"^^xsd:string,
+        "Princess Alexandra, The Hon. Lady Ogilvy"^^xsd:string,
+        "Princess Alexandra, The Honourable Lady Ogilvy"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSisterOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince George, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "184:211"^^xsd:string,
+        "191:211"^^xsd:string,
+        "782:809"^^xsd:string,
+        "789:809"^^xsd:string ;
+    data:posIndicesPart "1679:1683"^^xsd:string,
+        "419:425"^^xsd:string,
+        "434:438"^^xsd:string,
+        "5626:5630"^^xsd:string,
+        "6877:6883"^^xsd:string,
+        "6892:6896"^^xsd:string ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales"^^xsd:string,
+        "George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "George Kent"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "George, Duke of Kent"^^xsd:string,
+        "Prince George Edward Alexander Edmund of Wales"^^xsd:string,
+        "Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "Prince George of Wales"^^xsd:string,
+        "The Prince George Edward Alexander Edmund of the United Kingdom"^^xsd:string,
+        "The Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "The Prince George of the United Kingdom"^^xsd:string,
+        "The Prince George, Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasDaughter data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "217:254"^^xsd:string,
+        "863:900"^^xsd:string ;
+    data:posIndicesPart "1209:1217"^^xsd:string,
+        "1324:1332"^^xsd:string,
+        "1444:1452"^^xsd:string,
+        "1596:1604"^^xsd:string,
+        "1646:1654"^^xsd:string,
+        "2122:2130"^^xsd:string,
+        "2171:2179"^^xsd:string,
+        "2504:2512"^^xsd:string,
+        "3041:3049"^^xsd:string,
+        "3419:3425"^^xsd:string,
+        "3585:3591"^^xsd:string,
+        "3705:3711"^^xsd:string,
+        "3827:3833"^^xsd:string,
+        "4276:4284"^^xsd:string,
+        "4514:4522"^^xsd:string,
+        "4831:4839"^^xsd:string,
+        "6410:6416"^^xsd:string,
+        "6666:6674"^^xsd:string,
+        "6827:6835"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasDaughter data:Princess_Alexandra-_Lady_Ogilvy ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra-_Lady_Ogilvy,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Alexandra-_Lady_Ogilvy ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+

@@ -69,38 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia (26 December 1912 – 12 June 1985) was the only son of Prince August Wilhelm of Prussia and Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg.
+Princess Herzeleide Ina-Marie Sophie Charlotte Else of Prussia (25 December 1918 – 22 March 1989) was a member of the deposed House of Hohenzollern.
+She was the only daughter of Prince Oskar of Prussia (the second youngest son of Emperor Wilhelm II) and his initially morganatic wife, Countess Ina Marie von Bassewitz.
+She is the mother of Ernst-Johann Biron, Prince of Courland, the current head of the House of Biron.
+Biography
+
 Family and early life
 
-Prince Alexander of Prussia was born on 26 December 1912 to Prince August Wilhelm of Prussia and his wife Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg.
-August Wilhelm was a younger son of Kaiser Wilhelm II.
-His parents divorced in 1920 and his mother remarried less than two years later; custody of the young prince was awarded to Alexander's father.
-Alexander attended the 1932 wedding of the Swedish prince Gustaf Adolf, Duke of Västerbotten with Princess Sibylla of Saxe-Coburg-Gotha in the former duchy of Coburg; it was the first time that a member of the German imperial family had entered the duchy since it became a republic, or specifically a part of Bavaria in November 1919 after the ruling duke, Carl Eduard, had ended his reign on 14 November 1918.
-Nazi Party and military career
+Countess Herzeleide-Ina-Marie von Ruppin was born in Bristow, Mecklenburg, on 25 December 1918, shortly after the defeat of the German Empire and the collapse of the monarchy.
+She was consequently given the name Herzeleide, meaning "heart's sorrow".
+She had three brothers: Oscar, Burchard, and Wilhelm-Karl.
+Herzeleide and her brothers became Princess/Prince of Prussia on 21 June 1920 when their parents' morganatic marriage was recognised as dynastic by the deposed Emperor Wilhelm II.
+In early 1938, Herzeleide was one of three bridesmaids at the wedding of the future King Paul of Greece to Frederica of Hanover, her first cousin.
+Marriage and issue
 
-As of November 1939, Prince Alexander was a first lieutenant in the Air Force Signal Corps, stationed in Wiesbaden.
-Like his father, who became a prominent supporter of the Nazi Party, Alexander became an early supporter.
-Prince August had secret hopes that Chancellor Adolf Hitler "would one day hoist him or his son Alexander up to the vacant throne of the Kaiser".
-The support that father and son gave to the emerging party caused strong disagreements among the Hohenzollerns, with Wilhelm II urging them both to leave the party.
-In 1933, Alexander quit the SA and became a private in the German regular army.
-Unlike many other German princes, who became the targets of Hitler's mistrust and were removed from their commands in the military, Alexander was the only Hohenzollern allowed to remain at his post.
-Marriage
-
-On 19 December 1938 in the Dresden garrison church, Alexander non-dynastically married Armgard Weygand (22 August 1912 – 3 December 2001), daughter of Major Friedrich Weygand and Karla Franziska Oheim.
-She was married from 1928 to 1933 to Werner Rosendorff, airman in the German Air Force, and was originally from Wiesbaden, where Alexander Ferdinand was stationed.
-They had one son:
-
-
-Death
-
-Prince Alexander Ferdinand died on 12 June 1985 at Wiesbaden.
-}} Media related to Prince Alexander Ferdinand of Prussia at Wikimedia Commons
+On 15 August 1938 in Potsdam Garrison Church, Herzeleide married Prince Karl Biron von Courland (15 June 1907 – 28 February 1982).
+Karl was the eldest son and heir of Prince Gustav Biron of Courland and Françoise Lévisse de Montigny, daughter of Marquis de Jaucourt.
+Along with the bride and groom's parents, in attendance were the former German Crown Prince Wilhelm and Emperor Wilhelm's consort, Empress Hermine.
+All male guests wore uniforms of the former German army.
+The couple's honeymoon plans included a visit to Doorn to pay respects to Emperor Wilhelm in exile, the bride's paternal grandfather.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +111,9 @@ Prince Alexander Ferdinand died on 12 June 1985 at Wiesbaden.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +128,23 @@ Prince Alexander Ferdinand died on 12 June 1985 at Wiesbaden.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,151 +436,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f61058e0-e167-4e8e-8d45-5f2e48c15f68)
- Call ID: f61058e0-e167-4e8e-8d45-5f2e48c15f68
-  Args:
-    type: :Man
-    source: :Alexander_of_Prussia
-  AssignClass (7c879f20-b998-4bcb-b2dc-55f63f1da2a4)
- Call ID: 7c879f20-b998-4bcb-b2dc-55f63f1da2a4
-  Args:
-    type: :Person
-    source: :Alexander_of_Prussia
-  AssignClass (f38b8b6f-d164-410f-ad48-9f6948d4f64b)
- Call ID: f38b8b6f-d164-410f-ad48-9f6948d4f64b
-  Args:
-    source: :August_Wilhelm_of_Prussia
-    type: :Man
-  AssignClass (de5f7159-b5e0-452f-8269-79692ad04b07)
- Call ID: de5f7159-b5e0-452f-8269-79692ad04b07
-  Args:
-    source: :August_Wilhelm_of_Prussia
-    type: :Person
-  AssignClass (dc3bec17-74b1-4ef0-ab1d-66196ba185b9)
- Call ID: dc3bec17-74b1-4ef0-ab1d-66196ba185b9
-  Args:
-    source: :Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg
-    type: :Woman
-  AssignClass (65787a40-2c86-4bad-aa8f-89f1838e67c7)
- Call ID: 65787a40-2c86-4bad-aa8f-89f1838e67c7
-  Args:
-    source: :Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg
-    type: :Person
-  AssignClass (6c20a0fd-af29-423d-937e-6359f9abeb12)
- Call ID: 6c20a0fd-af29-423d-937e-6359f9abeb12
-  Args:
-    type: :Man
-    source: :Wilhelm_II
-  AssignClass (d9ffd141-6e2f-4c79-a24e-502789c33f61)
- Call ID: d9ffd141-6e2f-4c79-a24e-502789c33f61
-  Args:
-    source: :Wilhelm_II
-    type: :Person
-  AssignClass (7fd8147d-5e34-4e78-bc7e-6d4184a2e6cf)
- Call ID: 7fd8147d-5e34-4e78-bc7e-6d4184a2e6cf
-  Args:
-    source: :Armgard_Weygand
-    type: :Woman
-  AssignClass (076bc7b0-df4a-4226-b850-b501b5524d30)
- Call ID: 076bc7b0-df4a-4226-b850-b501b5524d30
-  Args:
-    type: :Person
-    source: :Armgard_Weygand
-  AssignClass (3d7b2dc5-c856-43ba-aec0-c034a048264b)
- Call ID: 3d7b2dc5-c856-43ba-aec0-c034a048264b
-  Args:
-    source: :Friedrich_Weygand
-    type: :Man
-  AssignClass (fb54093b-9619-44d5-8cf7-5c80cff343c0)
- Call ID: fb54093b-9619-44d5-8cf7-5c80cff343c0
-  Args:
-    type: :Person
-    source: :Friedrich_Weygand
-  AssignClass (67777765-ea26-4951-894f-3cf3c0fb36b3)
- Call ID: 67777765-ea26-4951-894f-3cf3c0fb36b3
+  AssignClass (e707f929-522f-4a81-a1f8-4f82559eaef7)
+ Call ID: e707f929-522f-4a81-a1f8-4f82559eaef7
   Args:
     type: :Woman
-    source: :Karla_Franziska_Oheim
-  AssignClass (7f4b0c95-c554-4fdd-b3c1-e4cac40541de)
- Call ID: 7f4b0c95-c554-4fdd-b3c1-e4cac40541de
+    source: Herzeleide_of_Prussia
+  AssignClass (41118333-9582-43b3-8a0c-01d10bb51130)
+ Call ID: 41118333-9582-43b3-8a0c-01d10bb51130
   Args:
+    source: Herzeleide_of_Prussia
     type: :Person
-    source: :Karla_Franziska_Oheim
-  AssignClass (44e3aebc-b71e-4d52-ba67-980daea5844f)
- Call ID: 44e3aebc-b71e-4d52-ba67-980daea5844f
+  AddLiteral (9085ada0-3a29-4dc6-92f9-5e9e4a71453c)
+ Call ID: 9085ada0-3a29-4dc6-92f9-5e9e4a71453c
   Args:
-    source: :Werner_Rosendorff
-    type: :Man
-  AssignClass (5d23f701-d1fb-40a5-92b5-8f1f71edf049)
- Call ID: 5d23f701-d1fb-40a5-92b5-8f1f71edf049
-  Args:
-    type: :Person
-    source: :Werner_Rosendorff
-  AddLiteral (4b611669-47a7-4b97-a23d-723bdaccdbb7)
- Call ID: 4b611669-47a7-4b97-a23d-723bdaccdbb7
-  Args:
-    literal_type: xsd:integer
-    source: :Alexander_of_Prussia
-    literal_value: 1912
+    literal_value: 1918
     relation: :hasBirthYear
-  AddLiteral (9fbf70e5-1c63-468b-8827-676772237863)
- Call ID: 9fbf70e5-1c63-468b-8827-676772237863
+    source: Herzeleide_of_Prussia
+    literal_type: xsd:integer
+  AddLiteral (9fe22018-dc79-4d18-9d2a-3bbea2bade94)
+ Call ID: 9fe22018-dc79-4d18-9d2a-3bbea2bade94
   Args:
     relation: :hasDeathYear
-    literal_value: 1985
-    source: :Alexander_of_Prussia
+    literal_value: 1989
+    source: Herzeleide_of_Prussia
     literal_type: xsd:integer
-  AddTriple (ddba1184-55e2-49d4-b004-cfb217b47cf3)
- Call ID: ddba1184-55e2-49d4-b004-cfb217b47cf3
+  AssignClass (2c6933a0-c902-4b64-9676-8f0df4f7f7c8)
+ Call ID: 2c6933a0-c902-4b64-9676-8f0df4f7f7c8
+  Args:
+    type: :Man
+    source: Oskar_of_Prussia
+  AssignClass (93297c98-790b-4e52-8e03-8d3ad7aa90ea)
+ Call ID: 93297c98-790b-4e52-8e03-8d3ad7aa90ea
+  Args:
+    type: :Person
+    source: Oskar_of_Prussia
+  AssignClass (27276c7f-ae92-4957-ba66-e0b7f975c75f)
+ Call ID: 27276c7f-ae92-4957-ba66-e0b7f975c75f
+  Args:
+    source: Ina_Marie_von_Bassewitz
+    type: :Woman
+  AssignClass (ab81c6cc-33f5-4b23-8a41-134269fb79ee)
+ Call ID: ab81c6cc-33f5-4b23-8a41-134269fb79ee
+  Args:
+    type: :Person
+    source: Ina_Marie_von_Bassewitz
+  AddTriple (815322ee-82d7-431a-9b58-1ba67d92f126)
+ Call ID: 815322ee-82d7-431a-9b58-1ba67d92f126
   Args:
     relation: :hasFather
-    target: :August_Wilhelm_of_Prussia
-    source: :Alexander_of_Prussia
-  AddTriple (ee87084d-653a-4b1d-9ee3-9b45804365de)
- Call ID: ee87084d-653a-4b1d-9ee3-9b45804365de
+    target: Oskar_of_Prussia
+    source: Herzeleide_of_Prussia
+  AddTriple (0f5cd0c0-ff66-4405-bd10-e37f380b718f)
+ Call ID: 0f5cd0c0-ff66-4405-bd10-e37f380b718f
   Args:
-    source: :Alexander_of_Prussia
+    source: Herzeleide_of_Prussia
+    target: Ina_Marie_von_Bassewitz
     relation: :hasMother
-    target: :Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AddTriple (9bdd8e46-6f58-41f9-9b29-707f775e1604)
- Call ID: 9bdd8e46-6f58-41f9-9b29-707f775e1604
+  AssignClass (0297c68b-dd45-4790-9e94-e6cba13edb0c)
+ Call ID: 0297c68b-dd45-4790-9e94-e6cba13edb0c
   Args:
-    target: :Wilhelm_II
-    relation: :hasFather
-    source: :August_Wilhelm_of_Prussia
-  AddTriple (47aafc58-29ec-4164-94fd-6877f9bcd46f)
- Call ID: 47aafc58-29ec-4164-94fd-6877f9bcd46f
+    source: Ernst-Johann_Biron
+    type: :Man
+  AssignClass (e7cc27aa-aabf-4c78-b1e1-19ea9535d395)
+ Call ID: e7cc27aa-aabf-4c78-b1e1-19ea9535d395
   Args:
-    relation: :hasFather
-    target: :Friedrich_Weygand
-    source: :Armgard_Weygand
-  AddTriple (9de47a28-b15b-4361-a598-2ee3b7a4b909)
- Call ID: 9de47a28-b15b-4361-a598-2ee3b7a4b909
+    type: :Person
+    source: Ernst-Johann_Biron
+  AddTriple (b681562a-2bc1-4998-8ca4-991cb5e99117)
+ Call ID: b681562a-2bc1-4998-8ca4-991cb5e99117
   Args:
-    source: :Armgard_Weygand
-    target: :Karla_Franziska_Oheim
     relation: :hasMother
-  AddLiteral (439f4241-4095-4916-9925-5a041754387b)
- Call ID: 439f4241-4095-4916-9925-5a041754387b
+    target: Herzeleide_of_Prussia
+    source: Ernst-Johann_Biron
+  AssignClass (9929c4f6-10aa-4492-9a5b-08a24a1de83a)
+ Call ID: 9929c4f6-10aa-4492-9a5b-08a24a1de83a
   Args:
+    type: :Man
+    source: Oscar_brother
+  AssignClass (9f5def7f-8fed-41f9-b759-5f842bc0d003)
+ Call ID: 9f5def7f-8fed-41f9-b759-5f842bc0d003
+  Args:
+    source: Oscar_brother
+    type: :Person
+  AssignClass (74a5db1b-a24f-4ad8-a3bd-823769a96cc8)
+ Call ID: 74a5db1b-a24f-4ad8-a3bd-823769a96cc8
+  Args:
+    type: :Man
+    source: Burchard_brother
+  AssignClass (2a0c546d-5d03-4164-91be-0ce2d39c46cb)
+ Call ID: 2a0c546d-5d03-4164-91be-0ce2d39c46cb
+  Args:
+    type: :Person
+    source: Burchard_brother
+  AssignClass (ade783a1-2339-4d65-af50-b4697fe36532)
+ Call ID: ade783a1-2339-4d65-af50-b4697fe36532
+  Args:
+    source: Wilhelm-Karl_brother
+    type: :Man
+  AssignClass (ceeabf4a-1db1-437c-b22d-c46ce11c41f4)
+ Call ID: ceeabf4a-1db1-437c-b22d-c46ce11c41f4
+  Args:
+    source: Wilhelm-Karl_brother
+    type: :Person
+  AddTriple (f9584984-86c0-47ee-b883-39f8dc40e5bc)
+ Call ID: f9584984-86c0-47ee-b883-39f8dc40e5bc
+  Args:
+    relation: :hasBrother
+    target: Oscar_brother
+    source: Herzeleide_of_Prussia
+  AddTriple (0ca4db38-13c6-4ae4-8d10-9d77d0451042)
+ Call ID: 0ca4db38-13c6-4ae4-8d10-9d77d0451042
+  Args:
+    target: Burchard_brother
+    source: Herzeleide_of_Prussia
+    relation: :hasBrother
+  AddTriple (b3bef754-f646-49c5-a994-00bf4dc17b75)
+ Call ID: b3bef754-f646-49c5-a994-00bf4dc17b75
+  Args:
+    relation: :hasBrother
+    source: Herzeleide_of_Prussia
+    target: Wilhelm-Karl_brother
+  AssignClass (3711b99d-f23a-40b1-8495-44bb66d2803e)
+ Call ID: 3711b99d-f23a-40b1-8495-44bb66d2803e
+  Args:
+    source: Karl_Biron_von_Courland
+    type: :Man
+  AssignClass (c4bc2d4e-91bf-4bb2-b86e-d327074f596e)
+ Call ID: c4bc2d4e-91bf-4bb2-b86e-d327074f596e
+  Args:
+    source: Karl_Biron_von_Courland
+    type: :Person
+  AddLiteral (d7652aa3-1207-4f45-8f03-20c8b5b62832)
+ Call ID: d7652aa3-1207-4f45-8f03-20c8b5b62832
+  Args:
+    literal_type: xsd:integer
+    source: Herzeleide_of_Prussia
     literal_value: 1938
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: :Alexander_of_Prussia
-  AddLiteral (ab488005-d189-4f38-900a-ddc29a007ddd)
- Call ID: ab488005-d189-4f38-900a-ddc29a007ddd
+  AddTriple (94590f91-995f-42ec-a232-451ebdce57b4)
+ Call ID: 94590f91-995f-42ec-a232-451ebdce57b4
   Args:
-    source: :Armgard_Weygand
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1912
-  AddLiteral (195b6080-3907-43ee-be2c-a1277e80d189)
- Call ID: 195b6080-3907-43ee-be2c-a1277e80d189
+    relation: :hasRelation
+    source: Herzeleide_of_Prussia
+    target: Karl_Biron_von_Courland
+  AssignClass (53390fab-079e-4dfd-a5a3-6d6c22aac2b5)
+ Call ID: 53390fab-079e-4dfd-a5a3-6d6c22aac2b5
   Args:
-    literal_value: 2001
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: :Armgard_Weygand
-  Finish (20f6f96c-b7ec-41d3-a791-934ef3f23898)
- Call ID: 20f6f96c-b7ec-41d3-a791-934ef3f23898
+    type: :Man
+    source: Gustav_Biron_of_Courland
+  AssignClass (a59e903b-cdaf-48c0-8d8d-7af983a7c46e)
+ Call ID: a59e903b-cdaf-48c0-8d8d-7af983a7c46e
+  Args:
+    type: :Person
+    source: Gustav_Biron_of_Courland
+  AssignClass (e7ca0f8e-1188-4ea2-a52c-be3a4f04ee4d)
+ Call ID: e7ca0f8e-1188-4ea2-a52c-be3a4f04ee4d
+  Args:
+    source: Francoise_Levisse_de_Montigny
+    type: :Woman
+  AssignClass (b6c07c55-40f9-4e2a-9929-743b76ed7beb)
+ Call ID: b6c07c55-40f9-4e2a-9929-743b76ed7beb
+  Args:
+    source: Francoise_Levisse_de_Montigny
+    type: :Person
+  AddTriple (442e5731-8a5f-4a9c-92e2-1bd089ddd4a6)
+ Call ID: 442e5731-8a5f-4a9c-92e2-1bd089ddd4a6
+  Args:
+    source: Karl_Biron_von_Courland
+    target: Gustav_Biron_of_Courland
+    relation: :hasFather
+  AddTriple (128719f2-1460-462f-aef3-bfe1217bc894)
+ Call ID: 128719f2-1460-462f-aef3-bfe1217bc894
+  Args:
+    source: Karl_Biron_von_Courland
+    target: Francoise_Levisse_de_Montigny
+    relation: :hasMother
+  Finish (311aff57-f51f-483f-9670-d0d460d0ce3d)
+ Call ID: 311aff57-f51f-483f-9670-d0d460d0ce3d
   Args:

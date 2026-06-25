@@ -69,39 +69,61 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Donatus, Prince and Landgrave of Hesse (legally Heinrich Donatus Philipp Umberto Prinz und Landgraf von Hessen; born 17 October 1966) is a German businessman and the head of the House of Brabant and the House of Hesse.
-He is the eldest son and successor of German aristocrat Moritz, Landgrave of Hesse, and his former wife, Princess Tatiana of Sayn-Wittgenstein-Berleburg (b. 1940).
-Donatus's father became the head of the Hesse-Cassel line on the death of his own father, Landgrave Philipp in 1980.
-Having also been the adopted son and heir of his distant cousin, Louis, Prince of Hesse and by Rhine, the latter's death in 1968 as the last male of the Hesse-Darmstadt branch left Moritz head of the entire House of Hesse, to which Donatus succeeded.
-Profession
+Prince Philippe, Duke of Orléans (French: Louis Philippe Robert; 6 February 1869 – 28 March 1926) was the Orléanist pretender to the throne of France from 1894 to 1926 as Philippe VIII.
+Early life
 
-Donatus directs the Hessische Hausstiftung (Foundation of the House of Hesse), a foundation (see below) established to curate and showcase the cultural heritage and history of the House of Hesse, a dynasty which ruled the Electorate of Hesse-Cassel until 1866, the Grand Duchy of Hesse and by Rhine until 1918, and whose male-line antecedents and co-lateral ties include the Protestant leader Philip the Magnanimous, the Swedish king Frederick I, Russia's last tsarina Alexandra Feodorovna, the exiled Spanish queen Victoria Eugenie of Battenberg, and Britain's last viceroy of India, the assassinated Louis, Earl Mountbatten of Burma.
-Donatus also manages Prinz von Hessen, a winery specializing in production of varietal vintages on his 45 hectare vineyard.
-Marriage and issue
+Philippe was born at York House, Twickenham, near London, the son of Philippe, Count of Paris, by his wife (and first cousin), Princess Isabelle of Orléans.
+He was baptised with the names Louis-Philippe-Robert, and was called Philippe.
+His family lived in the United Kingdom from the abdication and banishment of his great-grandfather Louis Philippe I, King of the French, in 1848, and returned to France in 1871 following the fall of the Second French Empire.
+However, they again took refuge in England in 1886, when the French Republic exiled them following the wedding in Paris of Philippe's sister Amélie of Orléans to Crown Prince Carlos of Portugal.
+Returning therefore to France in 1871 with his parents, Philippe was educated at home at the Château d'Eu and at the Collège Stanislas de Paris.
+In 1880 Philippe's father granted him the title Duc d'Orléans.
+Military career
 
-Donatus married the daughter of German industrial heir and Chinese honorary citizen Count Hubertus von Faber-Castell, Countess Floria Franziska Marie-Luisa Erika von Faber-Castell (born 14 October 1974, Düsseldorf), in a civil ceremony in Wiesbaden on 25 April 2003.
-Prince Donatus and Floria Franziska are 6th cousins, as both descended from Frederick II, Landgrave of Hesse-Kassel and his first wife Princess Mary of Great Britain.
-Held at the Johanneskirche and followed by a grand ball in the Green Salon, state room of the former Friedrichshof palace in Kronberg (now a luxury hotel and golf course owned by the House of Hesse's family foundation) where Donatus's ancestress, the German Empress Frederick, Princess Royal, lived in widowhood, more than 300 guests were present.
-Among them were Caroline, Princess of Hanover, Princess Benedikte of Denmark, and Gloria, Princess of Thurn and Taxis.
-Representative appearances
+Philippe began his military education at the École spéciale militaire de Saint-Cyr.
+In October 1889, Philippe went to Switzerland to complete a course in military theory.
+While there he fathered a son, Philippe Debien, by Nina, an actress working in the casino at Lausanne.
+Drawn to explore the "unknown", Philippe asked Prince George, Duke of Cambridge, to send him to a military post in the Himalayas.
+While in the East, he undertook a hunting and exploratory expedition in Nepal with his cousin Prince Henri of Orléans, went mountain-climbing in Tibet, and visited Afghanistan, Ceylon, and the Persian Gulf, before being posted back to Britain.
+Prior to his imprisonment in France, Philippe had been unofficially engaged to his first cousin Princess Marguerite of Orléans, but the engagement was cancelled when Philippe's involvement with the Australian opera singer Nellie Melba was revealed.
+Armstrong filed for divorce from Melba on the grounds of adultery, naming Philippe as co-respondent; the case was eventually dropped.
+In September 1890, Philippe accompanied his father on a two-month trip to the United States and Canada.
+On 12 November 1890, while in Philadelphia, Philippe joined the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States (MOLLUS) - a military society composed of officers who had served the Union in the American Civil War and their descendants - by right of his father's service in the Union Army.
+In December 1890, Philippe applied unsuccessfully to serve in the Russian Army.
+In March 1894, Philippe went to Egypt and Palestine with his sister Hélène, Duchess of Aosta.
+Claimant to the defunct throne
 
-In 2021, Donatus was one of only 30 mourners at Prince Philip, the Duke of Edinburgh's, funeral at St George's Chapel, Windsor Castle.
-King Charles III appointed Donatus his personal representative to the funeral of his first cousin Maximilian, Margrave of Baden, on 13 January 2023.
-Although, as a descendant of Queen Victoria, he is only a distant relative of today's British royals who are more closely related to some other princes of Hesse, descendants of Prince Philip's sister Sophie, there is a close connection to the British royal family through Donatus' adoptive grandparents, Louis, Prince of Hesse and by Rhine, and his wife Margaret Campbell Geddes, who were relatives and close friends of Queen Elizabeth II and Prince Philip, as Philip's sister Cecilie had been married to Louis' elder brother Georg Donatus, Hereditary Grand Duke of Hesse.
-The late Queen, Prince Philip and Charles (then Prince of Wales) have visited Wolfsgarten on several occasions.
-Ancestry
+Upon the death of his father on 8 September 1894, Philippe became the Orléanist claimant to the defunct French throne.
+He was known to monarchists as Philippe VIII.
+In October 1895, Philippe was named as co-respondent in the divorce case of Woolston v. Woolston.
+Unlike his great grandfather, Louis Philippe I, Philippe claimed grand mastership of the Order of the Holy Spirit as intrinsic to his dynastic claim to the throne, and sometimes wore the breast star of the order.
+On 5 November 1896, in Vienna, Philippe married Archduchess Maria Dorothea of Austria (1867–1932), a daughter of Archduke Joseph Karl of Austria, Palatine of Hungary, and granddaughter of Princess Clémentine of Orléans, as well as a niece of Marie Henriette of Austria, Queen Consort of the Belgians.
+While travelling in Geneva in 1898, Philippe narrowly missed being assassinated by Luigi Lucheni, an anarchist, who vowed to kill the next member of a royal family that he saw.
+He explored parts of the northeastern coast of Greenland, Denmark, in 1905 during his Duke of Orléans Arctic Expedition on ship Belgica.
+Philippe continued to reside in the United Kingdom until 1912, when he moved his primary residence to Belgium.
+In 1914, Philippe and his wife Maria Dorothea were legally separated.
+At the outbreak of the First World War, Philippe again tried unsuccessfully to join the French army.
+In 1926, Philippe died of pneumonia at the Palais d'Orléans in Palermo, Sicily, Italy.
+Having no legitimate issue, he was succeeded as pretender to the defunct throne of France by his cousin and brother in law, Jean, Duke of Guise.
+Publications
 
-Foundation of the House of Hesse
+Philippe wrote a number of works based on his many travels: 
 
-Founded in 1928, the Foundation of the House of Hesse is the successor institution of a family trust that had been established in 1830, confiscated by the Kingdom of Prussia in 1866, and re-established after partial restitution in 1878.
-The latter is mainly shown at Fasanerie Palace in Eichenzell, Hesse, a former summer palace of the Prince Abbots of Fulda that had been taken over by the Landgraves of Hesse after the secularization and mediatisation of the Prince-bishopric of Fulda in 1803.
-The Landgrave and his family live in Wolfsgarten and Panker.
+
+He also published a collection of the papers of his father and of the Henri, comte de Chambord:
+Honours
+
+In popular culture
+
+Duke Philippe of Orleans briefly appears in an urban fantasy novel for children, The Master Key (1901) by L. Frank Baum.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +139,9 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +156,23 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +190,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +272,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +295,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +315,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +325,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +365,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,127 +464,431 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4787c449-5775-415e-8edc-6b6400a67e21)
- Call ID: 4787c449-5775-415e-8edc-6b6400a67e21
+  AssignClass (fa1d7f26-c4cb-4d6c-9380-5d5eb65b347e)
+ Call ID: fa1d7f26-c4cb-4d6c-9380-5d5eb65b347e
   Args:
     type: :Man
-    source: Donatus
-  AssignClass (11cd7700-1f6f-4c0a-aed8-f5159aab7dc2)
- Call ID: 11cd7700-1f6f-4c0a-aed8-f5159aab7dc2
+    source: Philippe
+  AssignClass (eb8e2c71-9a66-4542-ada5-3e9f6588e7c7)
+ Call ID: eb8e2c71-9a66-4542-ada5-3e9f6588e7c7
   Args:
+    source: Philippe_Count_of_Paris
     type: :Man
-    source: Moritz
-  AssignClass (bd428053-e105-4eb7-93b0-a7a38d7c85e8)
- Call ID: bd428053-e105-4eb7-93b0-a7a38d7c85e8
+  AssignClass (2739c49a-d151-4d1c-9ec1-c7bd7b1c133e)
+ Call ID: 2739c49a-d151-4d1c-9ec1-c7bd7b1c133e
+  Args:
+    source: Princess_Isabelle_of_Orléans
+    type: :Woman
+  AssignClass (d0c5e698-c76f-4a54-8acf-95fab35b6320)
+ Call ID: d0c5e698-c76f-4a54-8acf-95fab35b6320
+  Args:
+    source: Philippe_Debien
+    type: :Man
+  AssignClass (61e96eb2-f22c-4856-a32c-89ee65d4ea02)
+ Call ID: 61e96eb2-f22c-4856-a32c-89ee65d4ea02
+  Args:
+    source: Nina
+    type: :Woman
+  AssignClass (2889fe4f-e15d-4a3a-bb25-dd2c33735cf8)
+ Call ID: 2889fe4f-e15d-4a3a-bb25-dd2c33735cf8
   Args:
     type: :Woman
-    source: Tatiana
-  AssignClass (a0add781-24ff-40ad-934b-134678302c98)
- Call ID: a0add781-24ff-40ad-934b-134678302c98
+    source: Amélie_of_Orléans
+  AssignClass (dd2da924-5aff-4580-b068-acc5205f83aa)
+ Call ID: dd2da924-5aff-4580-b068-acc5205f83aa
   Args:
-    type: :Man
-    source: Philipp
-  AssignClass (d278405d-98f7-481d-93a1-af1194de4a44)
- Call ID: d278405d-98f7-481d-93a1-af1194de4a44
-  Args:
-    type: :Man
-    source: Louis
-  AssignClass (eebbf5ef-84d0-48e6-8e2f-5aeb0754a7b2)
- Call ID: eebbf5ef-84d0-48e6-8e2f-5aeb0754a7b2
+    source: Princess_Marguerite_of_Orléans
+    type: :Woman
+  AssignClass (c9c52aaf-b812-478a-8e76-ffc69a77c9de)
+ Call ID: c9c52aaf-b812-478a-8e76-ffc69a77c9de
   Args:
     type: :Woman
-    source: FloriaFranziska
-  AssignClass (2d48ab0c-b46b-4caa-8d05-18195af614b2)
- Call ID: 2d48ab0c-b46b-4caa-8d05-18195af614b2
-  Args:
-    type: :Man
-    source: Hubertus
-  AssignClass (375cc268-8e07-4486-9b35-955ffebaef5d)
- Call ID: 375cc268-8e07-4486-9b35-955ffebaef5d
-  Args:
-    type: :Man
-    source: FrederickII
-  AssignClass (359d9627-0f3f-4b0c-8cb1-4cdd426a40cc)
- Call ID: 359d9627-0f3f-4b0c-8cb1-4cdd426a40cc
+    source: Hélène_Duchess_of_Aosta
+  AssignClass (eaad01ef-5a4c-4a92-95d6-e368dde36050)
+ Call ID: eaad01ef-5a4c-4a92-95d6-e368dde36050
   Args:
     type: :Woman
-    source: Mary
-  AddLiteral (e60dcf23-c1d4-4694-9ffa-de691631526f)
- Call ID: e60dcf23-c1d4-4694-9ffa-de691631526f
+    source: Archduchess_Maria_Dorothea_of_Austria
+  AssignClass (ac9250b8-7cd2-4c19-9756-18ef5a694828)
+ Call ID: ac9250b8-7cd2-4c19-9756-18ef5a694828
   Args:
-    literal_value: 1966
-    source: Donatus
-    relation: :hasBirthYear
+    type: :Man
+    source: Archduke_Joseph_Karl_of_Austria
+  AssignClass (221b1eda-5e5d-4a75-b119-72902bfae1cb)
+ Call ID: 221b1eda-5e5d-4a75-b119-72902bfae1cb
+  Args:
+    type: :Woman
+    source: Princess_Clémentine_of_Orléans
+  AssignClass (a39d902d-8f5c-4f4e-8be1-aa2ea8de6178)
+ Call ID: a39d902d-8f5c-4f4e-8be1-aa2ea8de6178
+  Args:
+    source: Jean_Duke_of_Guise
+    type: :Man
+  AssignClass (1d366f3e-1e0b-4219-8b59-499d440a754d)
+ Call ID: 1d366f3e-1e0b-4219-8b59-499d440a754d
+  Args:
+    source: Louis_Philippe_I
+    type: :Man
+  AddLiteral (3bc48e77-4c9b-47ed-9fef-c1be549e7f4a)
+ Call ID: 3bc48e77-4c9b-47ed-9fef-c1be549e7f4a
+  Args:
     literal_type: xsd:integer
-  AddLiteral (42c10ed0-2647-48cc-ad56-b1c9144c679c)
- Call ID: 42c10ed0-2647-48cc-ad56-b1c9144c679c
-  Args:
-    source: Tatiana
-    literal_type: xsd:integer
+    literal_value: 1869
     relation: :hasBirthYear
-    literal_value: 1940
-  AddLiteral (9fbee8f7-2748-44f5-87fc-371bdabb47de)
- Call ID: 9fbee8f7-2748-44f5-87fc-371bdabb47de
+    source: Philippe
+  AddLiteral (5e30fc77-0d42-4e24-8c2d-a58059150935)
+ Call ID: 5e30fc77-0d42-4e24-8c2d-a58059150935
   Args:
-    relation: :hasBirthYear
+    source: Philippe
+    literal_value: 1926
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: FloriaFranziska
-    literal_value: 1974
-  AddLiteral (6c907368-52ae-4ea3-ab93-957e936e5eb4)
- Call ID: 6c907368-52ae-4ea3-ab93-957e936e5eb4
+  AddTriple (0c1f8d5d-944a-49ff-89ad-dd3320ed1755)
+ Call ID: 0c1f8d5d-944a-49ff-89ad-dd3320ed1755
   Args:
-    literal_value: 2003
+    relation: :hasFather
+    source: Philippe
+    target: Philippe_Count_of_Paris
+  AddTriple (63182ce0-6160-4997-bc15-ef4e934f0f01)
+ Call ID: 63182ce0-6160-4997-bc15-ef4e934f0f01
+  Args:
+    relation: :hasMother
+    target: Princess_Isabelle_of_Orléans
+    source: Philippe
+  AddTriple (fbce39dd-ee90-46f5-8634-339eb9a015c2)
+ Call ID: fbce39dd-ee90-46f5-8634-339eb9a015c2
+  Args:
+    source: Philippe_Debien
+    target: Philippe
+    relation: :hasFather
+  AddTriple (cf2d2bd8-de47-436c-9618-83d283195781)
+ Call ID: cf2d2bd8-de47-436c-9618-83d283195781
+  Args:
+    source: Philippe_Debien
+    target: Nina
+    relation: :hasMother
+  AddTriple (b05da435-0999-4ffe-a1b2-7691a3d67c07)
+ Call ID: b05da435-0999-4ffe-a1b2-7691a3d67c07
+  Args:
+    relation: :isSisterOf
+    target: Philippe
+    source: Amélie_of_Orléans
+  AddTriple (4af4161b-c8bf-4467-8d4e-52ff1c8fbe1f)
+ Call ID: 4af4161b-c8bf-4467-8d4e-52ff1c8fbe1f
+  Args:
+    relation: :isSisterOf
+    target: Philippe
+    source: Hélène_Duchess_of_Aosta
+  AddTriple (7900d284-2fd8-4a52-a6d0-263befba6fb5)
+ Call ID: 7900d284-2fd8-4a52-a6d0-263befba6fb5
+  Args:
+    relation: :hasFather
+    target: Archduke_Joseph_Karl_of_Austria
+    source: Archduchess_Maria_Dorothea_of_Austria
+  AddTriple (74f5cc71-30da-4549-9193-a36fb4774765)
+ Call ID: 74f5cc71-30da-4549-9193-a36fb4774765
+  Args:
+    source: Archduchess_Maria_Dorothea_of_Austria
+    target: Princess_Clémentine_of_Orléans
+    relation: :hasMother
+  AddTriple (507d48be-7e27-4fef-b2b1-25f2e5bef16a)
+ Call ID: 507d48be-7e27-4fef-b2b1-25f2e5bef16a
+  Args:
+    source: Philippe
+    target: 1896
+    relation: :hasMarriageYear
+  AddTriple (1062a158-37f2-40a9-a8ea-1c56e0970c1b)
+ Call ID: 1062a158-37f2-40a9-a8ea-1c56e0970c1b
+  Args:
+    relation: :hasParent
+    source: Philippe
+    target: Philippe_Count_of_Paris
+  AddTriple (bae6cba9-4941-40aa-bc89-585b1464a689)
+ Call ID: bae6cba9-4941-40aa-bc89-585b1464a689
+  Args:
+    source: Philippe
+    target: Princess_Isabelle_of_Orléans
+    relation: :hasParent
+  Finish (5e46a0f9-114f-4231-a21d-1303f0724b36)
+ Call ID: 5e46a0f9-114f-4231-a21d-1303f0724b36
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman ;
+      :isSisterOf data:Philippe .
+
+  data:Archduchess_Maria_Dorothea_of_Austria a :Woman ;
+      :hasFather data:Archduke_Joseph_Karl_of_Austria ;
+      :hasMother data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans .
+
+  data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta a :Woman ;
+      :isSisterOf data:Philippe .
+
+  data:Jean_Duke_of_Guise a :Man .
+
+  data:Louis_Philippe_I a :Man .
+
+  data:Philippe_Debien a :Man ;
+      :hasFather data:Philippe ;
+      :hasMother data:Nina .
+
+  data:Princess_Marguerite_of_Orl%C3%A9ans a :Woman .
+
+  data:Archduke_Joseph_Karl_of_Austria a :Man .
+
+  data:Nina a :Woman .
+
+  data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans a :Woman .
+
+  data:Philippe_Count_of_Paris a :Man .
+
+  data:Princess_Isabelle_of_Orl%C3%A9ans a :Woman .
+
+  data:Philippe a :Man ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1926 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear data:1896 ;
+      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;
+      :hasParent data:Philippe_Count_of_Paris,
+          data:Princess_Isabelle_of_Orl%C3%A9ans .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1896']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (75541029-54c2-4565-a37e-f32cfaf8d1da)
+ Call ID: 75541029-54c2-4565-a37e-f32cfaf8d1da
+  Args:
+    literal_value: 1896
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Philippe
+  AddLiteral (cb234405-b923-403b-a143-bafef667b371)
+ Call ID: cb234405-b923-403b-a143-bafef667b371
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1896
+    source: Philippe
+    literal_type: xsd:string
+  Finish (79ad5aa7-114e-41c7-8cf9-f4c846b1a2a3)
+ Call ID: 79ad5aa7-114e-41c7-8cf9-f4c846b1a2a3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman ;
+      :isSisterOf data:Philippe .
+
+  data:Archduchess_Maria_Dorothea_of_Austria a :Woman ;
+      :hasFather data:Archduke_Joseph_Karl_of_Austria ;
+      :hasMother data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans .
+
+  data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta a :Woman ;
+      :isSisterOf data:Philippe .
+
+  data:Jean_Duke_of_Guise a :Man .
+
+  data:Louis_Philippe_I a :Man .
+
+  data:Philippe_Debien a :Man ;
+      :hasFather data:Philippe ;
+      :hasMother data:Nina .
+
+  data:Princess_Marguerite_of_Orl%C3%A9ans a :Woman .
+
+  data:Archduke_Joseph_Karl_of_Austria a :Man .
+
+  data:Nina a :Woman .
+
+  data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans a :Woman .
+
+  data:Philippe_Count_of_Paris a :Man .
+
+  data:Princess_Isabelle_of_Orl%C3%A9ans a :Woman .
+
+  data:Philippe a :Man ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1926 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear data:1896,
+          "1896"^^xsd:string ;
+      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;
+      :hasParent data:Philippe_Count_of_Paris,
+          data:Princess_Isabelle_of_Orl%C3%A9ans .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1896']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (2ad1447f-4b1a-449d-85ac-701d3498117f)
+ Call ID: 2ad1447f-4b1a-449d-85ac-701d3498117f
+  Args:
+    relation: :hasMarriageYear
+    target: 1896
+    source: Philippe
+  AddLiteral (484d7d90-77e3-45c1-91b8-4ea2d0cc36a9)
+ Call ID: 484d7d90-77e3-45c1-91b8-4ea2d0cc36a9
+  Args:
+    source: Philippe
+    literal_value: 1896
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: Donatus
-  AddTriple (1ef534e2-30b3-4aff-86b0-19b778f62a28)
- Call ID: 1ef534e2-30b3-4aff-86b0-19b778f62a28
-  Args:
-    source: Donatus
-    relation: :hasFather
-    target: Moritz
-  AddTriple (c74dbe41-6ba9-4547-9c1e-ea45318977b6)
- Call ID: c74dbe41-6ba9-4547-9c1e-ea45318977b6
-  Args:
-    target: Tatiana
-    relation: :hasMother
-    source: Donatus
-  AddTriple (92c4b757-b1ed-40ed-844e-584362465a28)
- Call ID: 92c4b757-b1ed-40ed-844e-584362465a28
-  Args:
-    target: Philipp
-    relation: :hasFather
-    source: Moritz
-  AddTriple (b77b88aa-7847-4e65-a21c-e0dd4786b7ce)
- Call ID: b77b88aa-7847-4e65-a21c-e0dd4786b7ce
-  Args:
-    target: Hubertus
-    relation: :hasFather
-    source: FloriaFranziska
-  AddTriple (f1ebaa7d-74d3-4659-a5d6-4bdad1de89da)
- Call ID: f1ebaa7d-74d3-4659-a5d6-4bdad1de89da
-  Args:
-    relation: :isAncestorOf
-    source: FrederickII
-    target: Donatus
-  AddTriple (ce6d842a-acbc-4a91-a458-f9bb1e7bfa06)
- Call ID: ce6d842a-acbc-4a91-a458-f9bb1e7bfa06
-  Args:
-    relation: :isAncestorOf
-    source: FrederickII
-    target: FloriaFranziska
-  AddTriple (2d1b65db-95fe-4d40-97a5-777318907541)
- Call ID: 2d1b65db-95fe-4d40-97a5-777318907541
-  Args:
-    target: Donatus
-    relation: :isAncestorOf
-    source: Mary
-  AddTriple (c37fd2a5-21bf-4d31-8ece-91a093232916)
- Call ID: c37fd2a5-21bf-4d31-8ece-91a093232916
-  Args:
-    target: FloriaFranziska
-    relation: :isAncestorOf
-    source: Mary
-  Finish (cb3aa7d1-5bf0-4615-974e-047fad33a474)
- Call ID: cb3aa7d1-5bf0-4615-974e-047fad33a474
+  Finish (b6c2acbc-d8ad-4be7-9496-db3277cbeeb5)
+ Call ID: b6c2acbc-d8ad-4be7-9496-db3277cbeeb5
   Args:

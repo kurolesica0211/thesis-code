@@ -2,49 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adelaide_of_Saxe-Meiningen a :Person,
+data:Isabelle_of_Orl%C3%A9ans a :Person,
         :Woman ;
-    :hasBirthYear 1891 ;
-    :hasBrother data:Prince_Bernard,
-        data:Prince_George ;
-    :hasDeathYear 1971 ;
-    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;
-    :hasMarriageYear 1914 ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld .
+    :hasBirthYear 1878 ;
+    :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Maria_Isabel_of_Spain ;
+    :hasRelation data:Jean_Duke_of_Guise .
 
-data:Prince_Adalbert_of_Prussia a :Man,
-        :Person .
-
-data:Prince_Henry_of_Bavaria a :Man,
-        :Person .
-
-data:Prince_Henry_of_Bavaria_Parent_placeholder a :Person ;
-    :hasFather data:Ludwig_III_of_Bavaria .
-
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
-        :Woman ;
-    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
-
-data:Ernst_Count_of_Lippe-Biesterfeld a :Man,
-        :Person .
-
-data:Feodora_of_Hohenlohe-Langenburg a :Person,
+data:Fran%C3%A7oise_d_Orl%C3%A9ans a :Person,
         :Woman .
 
-data:George_II_of_Saxe-Meiningen a :Man,
-        :Person .
-
-data:Ludwig_III_of_Bavaria a :Man,
-        :Person .
-
-data:Prince_Bernard a :Man,
-        :Person .
-
-data:Prince_Frederick_John_of_Saxe-Meiningen a :Man,
+data:Jean_Duke_of_Guise a :Man,
         :Person ;
-    :hasFather data:George_II_of_Saxe-Meiningen ;
-    :hasMother data:Feodora_of_Hohenlohe-Langenburg .
+    :hasFather data:Robert_Duke_of_Chartres ;
+    :hasMother data:Fran%C3%A7oise_d_Orl%C3%A9ans .
 
-data:Prince_George a :Man,
+data:Maria_Isabel_of_Spain a :Person,
+        :Woman .
+
+data:Philippe_Count_of_Paris a :Man,
+        :Person .
+
+data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man,
+        :Person .
+
+data:Robert_Duke_of_Chartres a :Man,
         :Person .
 

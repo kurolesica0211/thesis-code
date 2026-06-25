@@ -1,0 +1,352 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Borbon a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_de_Borbon ;
+    :hasChild data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSon data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBloodrelationOf data:Alfonso_de_Borbon ;
+    :isBrotherOf data:Alfonso_de_Borbon ;
+    :isFatherOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isParentOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Alfonso_de_Borbon ;
+    :isUncleOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor,
+        :Woman ;
+    :hasChild data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSon data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isAuntOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBloodrelationOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isMotherOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isParentOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSisterOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Francisco a :Man ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBrother data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasParent data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBrotherOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isChildOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSiblingOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSonOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isUncleOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+
+data:Maria_Margarita_Vargas_Santaella a :Ancestor,
+        :Woman ;
+    :hasChild data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :hasDaughter data:Eugenie ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Maria_Margarita_Vargas_Santaella ;
+    :hasSon data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isAuntOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBloodrelationOf data:Maria_Margarita_Vargas_Santaella ;
+    :isMotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isParentOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSiblingOf data:Maria_Margarita_Vargas_Santaella ;
+    :isSisterOf data:Maria_Margarita_Vargas_Santaella .
+
+data:Alphonse a :Man ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Eugenie a :Woman ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isDaughterOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSisterOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+
+data:Henri a :Man ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis a :Man ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBrother data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSister data:Eugenie ;
+    :isBloodrelationOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBrotherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSonOf data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella .
+
+data:Louis_Alphonse_de_Bourbon a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :hasChild data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :hasDaughter data:Eugenie ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasParent data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso_de_Borbon,
+        data:Alphonse,
+        data:Eugenie,
+        data:Francisco,
+        data:Henri,
+        data:Louis,
+        data:Louis_Alphonse_de_Bourbon,
+        data:Maria_Margarita_Vargas_Santaella,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasSon data:Alphonse,
+        data:Henri,
+        data:Louis ;
+    :isAncestorOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isBloodrelationOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isBrotherOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isChildOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isFatherOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isParentOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis ;
+    :isSiblingOf data:Francisco,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isSonOf data:Alfonso_de_Borbon,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isUncleOf data:Alphonse,
+        data:Eugenie,
+        data:Henri,
+        data:Louis .
+

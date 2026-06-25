@@ -69,18 +69,70 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg (30 September 1966 – 24 April 2010), better known by his racing alias Leonhard "Leo" Löwenstein, was a German prince and endurance race driver participating in the VLN.
-Personal life
+Lady Louise Alice Elizabeth Mary Mountbatten-Windsor (born 8 November 2003) is a member of the British royal family.
+She is the elder child and only daughter of Prince Edward, Duke of Edinburgh, and Sophie, Duchess of Edinburgh.
+Louise is the youngest niece of King Charles III.
+She was born during the reign of her paternal grandmother, Queen Elizabeth II, and at the time of her birth was eighth in the line of succession to the British throne; as of 2026, she is 17th.
+Early life and education
 
-Löwenstein was the eldest son and heir to Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg, who became Hereditary Prince in 1990 upon the death of his grandfather.
-(although as heir to the Roman Catholic branch of the Princely House of Löwenstein he may have been barred by the Act of Settlement from eligibility for succession to the British throne).
-Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria, where they ran a vineyard.
+Lady Louise Alice Elizabeth Mary Mountbatten-Windsor was born prematurely at 11:32 pm on 8 November 2003 at Frimley Park Hospital, Surrey.
+Her mother, Sophie, then Countess of Wessex, had been taken there by ambulance from the family home at Bagshot Park.
+Her father, Prince Edward, then Earl of Wessex, and the youngest child of Queen Elizabeth II and Prince Philip, was not present for the birth, which occurred suddenly while he was on an official visit to Mauritius.
+Louise was delivered by emergency Caesarean section due to a placental abruption that caused significant blood loss to both mother and child.
+She was transferred to the neo-natal unit at St George's Hospital, Tooting, London, while her mother remained at Frimley Park.
+Louise returned to Frimley Park on 13 November and was discharged on 23 November, four days after her mother.
+Her name, Louise Alice Elizabeth Mary, was announced on 26 November.
+She was baptised in the Private Chapel at Windsor Castle on 24 April 2004 by David Conner, the Dean of Windsor.
+Her godparents are Lady Sarah Chatto, Lord Ivar Mountbatten, Lady Alexandra Etherington, Francesca Schwarzenbach, and Rupert Elliott.
+Louise was the last child to wear the original royal christening gown.
+Born with esotropia, Louise underwent an operation in 2006 in an unsuccessful attempt to correct the condition.
+Louise attended St George's School, Windsor Castle, before moving to St Mary's School Ascot in 2017 from Year 9.
+While at school, she took part in The Duke of Edinburgh's Award.
+Louise began studying English at the University of St Andrews in September 2022.
+Military training
+
+In 2024, Louise joined the British Army's University Officers' Training Corps (UOTC) unit, Tayforth UOTC, an Army Reserve formation made up of students from the University of St Andrews and other institutions in the surrounding region.
+Official appearances
+
+In 2011, aged 7, Louise was a bridesmaid at the wedding of Prince William and Catherine Middleton.
+In August 2018, she accompanied her mother, patron of UK Sail Training, to Haslar Marina in Portsmouth Harbour to meet a group of young girls working towards earning their qualification on an entry-level course of the Royal Yachting Association.
+Later that month, mother and daughter attended the final of the Hockey Women's World Cup in London; the Duchess is the patron of England Hockey.
+To celebrate Louise's 15th birthday in November 2018, they made a cameo appearance on Strictly Come Dancing, watching the BBC programme from the audience.
+In December, Louise joined her mother at the International Horse Show at Olympia, London.
+In September 2020, Louise participated in the Great British Beach Clean with her family at Southsea Beach, in support of the Marine Conservation Society.
+Following the death of her grandfather, Prince Philip, Louise accompanied her parents to a church service at the Royal Chapel of All Saints on 11 April 2021.
+She attended Trooping the Colour in June, where she joined her family on the balcony; the Platinum Jubilee National Service of Thanksgiving; and the Platinum Party at the Palace.
+Following the death of her grandmother, Queen Elizabeth II, on 8 September 2022, Louise stood vigil for 15 minutes at the Queen's coffin at Westminster Hall with her brother James and six cousins on 17 September.
+On 6 May 2023, Louise attended the coronation of King Charles III and Queen Camilla.
+On 7 May, she attended the Coronation Concert at Windsor Castle.
+Personal interests
+
+Louise is a member of Girlguiding, of which her grandmother was patron and her mother is president.
+Her mother was a Brownie and a Guide when she was a child.
+Louise was taught to ride at an early age, and joined her father on horseback during the Queen's 90th birthday celebrations in Windsor in 2016.
+She has taken up carriage driving, a sport popularised in Britain by her grandfather, Prince Philip.
+In May 2017, she was responsible for leading the carriages of the Champagne Laurent-Perrier Meet of the British Driving Society at the Royal Windsor Horse Show.
+In May 2019, Louise took part in the Private Driving Singles carriage drive at the Royal Windsor Horse Show and achieved third place.
+In 2022, she drove one of his carriages in front of the Queen at the Royal Windsor Horse Show.
+Titles, styles, and honours
+
+Titles and styles
+
+Louise is styled as "Lady Louise Mountbatten-Windsor", although at the time of her birth the palace also used the style "Lady Louise Windsor" in some of its announcements.
+At birth, she automatically became a princess of the United Kingdom under the terms of the 1917 letters patent, which assigned princely status and the style of Royal Highness to all children of a monarch's sons.
+However, when her parents married, Elizabeth II announced via a Buckingham Palace press release that their children would be styled as the children of an earl rather than as prince or princess.
+In 2020, her mother stated that Louise retained her royal title and style and could choose whether to use it from the age of 18.
+Honours
+
+In June 2008, to recognise a visit by Louise's father to the Canadian province of Manitoba, a lake in the north of the province was named Lake Louise.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +148,9 @@ Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +165,23 @@ Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +199,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +304,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +324,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +334,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +374,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,58 +473,125 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (89333566-0225-4617-954c-537a55913f7b)
- Call ID: 89333566-0225-4617-954c-537a55913f7b
+  AssignClass (d5ded9e0-da9e-466e-83fe-b1bad52a5735)
+ Call ID: d5ded9e0-da9e-466e-83fe-b1bad52a5735
   Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
     type: :Person
-  AssignClass (51b84983-35b7-4142-b346-7ce5e8c39cfa)
- Call ID: 51b84983-35b7-4142-b346-7ce5e8c39cfa
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
+  AssignClass (423e0fb5-0775-4963-9aad-302255a4a467)
+ Call ID: 423e0fb5-0775-4963-9aad-302255a4a467
+  Args:
+    type: :Woman
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
+  AssignClass (67974c8f-292b-4353-b60e-faa74327a7d2)
+ Call ID: 67974c8f-292b-4353-b60e-faa74327a7d2
+  Args:
+    source: Prince Edward, Duke of Edinburgh
+    type: :Person
+  AssignClass (30d420a5-2397-423f-b67b-9e7e3cf3b5e9)
+ Call ID: 30d420a5-2397-423f-b67b-9e7e3cf3b5e9
   Args:
     type: :Man
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  AddLiteral (0107d07e-b19d-4eec-b238-03e2865d561f)
- Call ID: 0107d07e-b19d-4eec-b238-03e2865d561f
+    source: Prince Edward, Duke of Edinburgh
+  AssignClass (378b00a4-2264-4ae2-9f2e-644608885730)
+ Call ID: 378b00a4-2264-4ae2-9f2e-644608885730
   Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-    relation: :knownAs
-    literal_value: Leonhard "Leo" Löwenstein
-    literal_type: xsd:string
-  AddLiteral (9bd8bd0c-e176-4e69-b57d-f52069c0a78d)
- Call ID: 9bd8bd0c-e176-4e69-b57d-f52069c0a78d
+    type: :Person
+    source: Sophie, Duchess of Edinburgh
+  AssignClass (41e0f05f-e248-432f-b303-78b7319ce39c)
+ Call ID: 41e0f05f-e248-432f-b303-78b7319ce39c
   Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
+    type: :Woman
+    source: Sophie, Duchess of Edinburgh
+  AssignClass (73157f9d-4bde-45b1-843c-77186c90814f)
+ Call ID: 73157f9d-4bde-45b1-843c-77186c90814f
+  Args:
+    source: King Charles III
+    type: :Person
+  AssignClass (28a74b31-9a1d-45b4-ba95-3ca0917aeacb)
+ Call ID: 28a74b31-9a1d-45b4-ba95-3ca0917aeacb
+  Args:
+    type: :Man
+    source: King Charles III
+  AssignClass (3231bf4c-2804-42fb-a393-6f2e5fdfd206)
+ Call ID: 3231bf4c-2804-42fb-a393-6f2e5fdfd206
+  Args:
+    source: Queen Elizabeth II
+    type: :Person
+  AssignClass (b69d91a3-00df-42a6-9f9d-32b495282d11)
+ Call ID: b69d91a3-00df-42a6-9f9d-32b495282d11
+  Args:
+    type: :Woman
+    source: Queen Elizabeth II
+  AssignClass (3a2e46e2-598f-40ab-ac65-14ef80ff6eaf)
+ Call ID: 3a2e46e2-598f-40ab-ac65-14ef80ff6eaf
+  Args:
+    type: :Person
+    source: Prince Philip
+  AssignClass (109793c5-40f2-45f0-8c7b-99f53370e9fb)
+ Call ID: 109793c5-40f2-45f0-8c7b-99f53370e9fb
+  Args:
+    source: Prince Philip
+    type: :Man
+  AssignClass (e1c79389-f122-4bb3-a2f1-0e71dd4d6a74)
+ Call ID: e1c79389-f122-4bb3-a2f1-0e71dd4d6a74
+  Args:
+    type: :Person
+    source: James
+  AssignClass (d4f014ec-3c65-4d41-9a36-d67d9c3ea28e)
+ Call ID: d4f014ec-3c65-4d41-9a36-d67d9c3ea28e
+  Args:
+    source: James
+    type: :Man
+  AddLiteral (4f1024f1-110c-4ea7-b98e-6f3a04716937)
+ Call ID: 4f1024f1-110c-4ea7-b98e-6f3a04716937
+  Args:
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
     relation: :hasBirthYear
+    literal_value: 2003
     literal_type: xsd:integer
-    literal_value: 1966
-  AddLiteral (5a006a90-8441-4ae9-b491-2045cd4ffe47)
- Call ID: 5a006a90-8441-4ae9-b491-2045cd4ffe47
+  AddTriple (fdd98603-9ce3-40dd-ac72-660925735b66)
+ Call ID: fdd98603-9ce3-40dd-ac72-660925735b66
   Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-    relation: :hasDeathYear
-    literal_value: 2010
-    literal_type: xsd:integer
-  AssignClass (bd262574-f609-4520-b111-0d93590da95d)
- Call ID: bd262574-f609-4520-b111-0d93590da95d
-  Args:
-    type: :Person
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  AssignClass (0bfca899-cc4f-49a3-a2f8-89d06565138d)
- Call ID: 0bfca899-cc4f-49a3-a2f8-89d06565138d
-  Args:
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-    type: :Man
-  AssignClass (92a27bb8-30ff-44b7-8a31-d51a87f88e21)
- Call ID: 92a27bb8-30ff-44b7-8a31-d51a87f88e21
-  Args:
-    type: :Ancestor
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  AddTriple (abc85031-94de-417e-8204-1e7218acf236)
- Call ID: abc85031-94de-417e-8204-1e7218acf236
-  Args:
-    target: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
     relation: :hasFather
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  Finish (548143d4-6e9b-48bf-9794-47e7a93439b8)
- Call ID: 548143d4-6e9b-48bf-9794-47e7a93439b8
+    target: Prince Edward, Duke of Edinburgh
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
+  AddTriple (7d018a05-6005-47c6-a720-5b054a460295)
+ Call ID: 7d018a05-6005-47c6-a720-5b054a460295
+  Args:
+    relation: :hasMother
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
+    target: Sophie, Duchess of Edinburgh
+  AddTriple (0b801721-0a1e-4f4b-b765-5f667d8a91e8)
+ Call ID: 0b801721-0a1e-4f4b-b765-5f667d8a91e8
+  Args:
+    relation: :hasFather
+    source: Prince Edward, Duke of Edinburgh
+    target: Prince Philip
+  AddTriple (0b1211e4-6b86-40c3-9e8d-65f30b54adc2)
+ Call ID: 0b1211e4-6b86-40c3-9e8d-65f30b54adc2
+  Args:
+    source: Prince Edward, Duke of Edinburgh
+    target: Queen Elizabeth II
+    relation: :hasMother
+  AddTriple (671e7b9b-78ef-4ff3-8ea6-9c142883b30b)
+ Call ID: 671e7b9b-78ef-4ff3-8ea6-9c142883b30b
+  Args:
+    target: James
+    source: Lady Louise Alice Elizabeth Mary Mountbatten-Windsor
+    relation: :hasBrother
+  AddTriple (35e09084-1711-4d83-b861-de8f45491ead)
+ Call ID: 35e09084-1711-4d83-b861-de8f45491ead
+  Args:
+    relation: :hasParent
+    target: Prince Edward, Duke of Edinburgh
+    source: James
+  AddTriple (4287d16c-0630-4b56-9939-7d346fc96e48)
+ Call ID: 4287d16c-0630-4b56-9939-7d346fc96e48
+  Args:
+    relation: :hasParent
+    target: Sophie, Duchess of Edinburgh
+    source: James
+  Finish (c56c7efa-534a-46d0-b238-20d873dd99be)
+ Call ID: c56c7efa-534a-46d0-b238-20d873dd99be
   Args:

@@ -2,18 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
+data:Alfonso_XIII a :Man,
         :Person ;
     :alsoKnownAs "El Africano"^^xsd:string,
+        "King Buby"^^xsd:string,
         "the African"^^xsd:string ;
     :hasBirthYear 1886 ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan ;
     :hasDeathYear 1941 ;
     :hasFather data:Alfonso_XII ;
     :hasMarriageYear 1906 ;
-    :hasMother data:Maria_Christina_of_Austria ;
-    :hasRelation data:Victoria_Eugenie_of_Battenberg ;
-    :hasSon data:Alfonso_Prince_of_Asturias,
+    :hasMother data:Maria_Christina_of_Austria .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    :hasChild data:Alfonso_Prince_of_Asturias,
         data:Gonzalo,
         data:Jaime,
         data:Juan .
@@ -25,14 +31,6 @@ data:Alfonso_XII a :Ancestor,
 data:Maria_Christina_of_Austria a :Ancestor,
         :Person,
         :Woman .
-
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSon data:Alfonso_Prince_of_Asturias,
-        data:Gonzalo,
-        data:Jaime,
-        data:Juan .
 
 data:Alfonso_Prince_of_Asturias a :Man,
         :Person .

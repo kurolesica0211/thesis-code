@@ -7,177 +7,154 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Emmanuelle_de_Dampierre a :Person ;
+    rdfs:label "Emmanuelle de Dampierre" ;
+    data:posIndicesFull "3191:3214" ;
+    data:wdtLink wdt:Q3052995 ;
+    :alsoKnownAs "Emanuela de Dampierre",
+        "Emmanuela de Dampierre",
+        "Manuela Dampierre" ;
+    :hasSex data:female .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Carmen_Martínez-Bordiú_y_Franco a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Carmen Martínez-Bordiú y Franco" ;
-    data:posIndicesFull "766:797" ;
-    data:posIndicesPart "2597:2603",
-        "3899:3905",
-        "3963:3969",
-        "3970:3976",
-        "3993:3999",
-        "4228:4234",
-        "4307:4313" ;
-    data:wdtLink wdt:Q2939617 ;
-    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco",
-        "Dona Maria del Carmen Martinez-Bordiu y Franco" ;
-    :hasChild data:Louis_Alphonse_de_Bourbon ;
-    :hasSex data:female ;
-    :hasSon data:Louis_Alphonse_de_Bourbon ;
-    :isMotherOf data:Louis_Alphonse_de_Bourbon ;
-    :isParentOf data:Louis_Alphonse_de_Bourbon .
-
-data:María_Margarita_Vargas_Santaella a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "María Margarita Vargas Santaella" ;
-    data:posIndicesFull "4417:4449" ;
-    data:posIndicesPart "4804:4809",
-        "4810:4819",
-        "5354:5360" ;
-    data:wdtLink wdt:Q3296460 ;
-    :alsoKnownAs "Marie Marguerite, Duchess of Anjou" ;
-    :hasChild data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon ;
-    :hasDaughter data:Eugénie_de_Bourbon ;
-    :hasSex data:female ;
-    :hasSon data:Louis_de_Bourbon ;
-    :isMotherOf data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon ;
-    :isParentOf data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon .
-
-data:Eugénie_de_Bourbon a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Eugénie_de_Bourbon a :Person ;
     rdfs:label "Eugénie de Bourbon" ;
-    data:posIndicesFull "5177:5194",
-        "5177:5203" ;
+    data:posIndicesFull "5455:5472",
+        "5455:5481" ;
     data:wdtLink wdt:Q16999217 ;
     :alsoKnownAs "Eugenia de Borbón",
         "Eugenia de Borbón y Vargas",
         "Eugenia de Borbón y de Vargas",
         "Princess Eugénie of Bourbon" ;
-    :hasBrother data:Louis_de_Bourbon ;
-    :hasFather data:Louis_Alphonse_de_Bourbon ;
-    :hasMother data:María_Margarita_Vargas_Santaella ;
     :hasParent data:Louis_Alphonse_de_Bourbon,
         data:María_Margarita_Vargas_Santaella ;
-    :hasSex data:female ;
-    :isChildOf data:Louis_Alphonse_de_Bourbon,
-        data:María_Margarita_Vargas_Santaella ;
-    :isDaughterOf data:Louis_Alphonse_de_Bourbon,
-        data:María_Margarita_Vargas_Santaella ;
-    :isSiblingOf data:Louis_de_Bourbon ;
-    :isSisterOf data:Louis_de_Bourbon .
+    :hasSex data:female .
 
-data:Louis_de_Bourbon a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Jaime-_Duke_of_Segovia a :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia" ;
+    data:posIndicesFull "1217:1247",
+        "640:670" ;
+    data:posIndicesPart "1288:1293",
+        "1448:1452",
+        "1917:1921",
+        "2750:2754",
+        "3578:3582",
+        "5047:5051",
+        "5653:5657",
+        "5693:5697",
+        "5895:5899",
+        "843:847",
+        "949:953" ;
+    data:wdtLink wdt:Q703780 ;
+    :hasSex data:male .
+
+data:Louis_de_Bourbon a :Person ;
     rdfs:label "Louis de Bourbon" ;
     data:wdtLink wdt:Q12495326 ;
     :alsoKnownAs "Luis de Borbón Vargas",
         "Luis de Borbón y Vargas",
         "Luis de Borbón y de Vargas",
         "Prince Louis, Duke of Burgundy" ;
-    :hasFather data:Louis_Alphonse_de_Bourbon ;
-    :hasMother data:María_Margarita_Vargas_Santaella ;
     :hasParent data:Louis_Alphonse_de_Bourbon,
         data:María_Margarita_Vargas_Santaella ;
-    :hasSex data:male ;
-    :hasSister data:Eugénie_de_Bourbon ;
-    :isBrotherOf data:Eugénie_de_Bourbon ;
-    :isChildOf data:Louis_Alphonse_de_Bourbon,
-        data:María_Margarita_Vargas_Santaella ;
-    :isSiblingOf data:Eugénie_de_Bourbon ;
-    :isSonOf data:Louis_Alphonse_de_Bourbon,
-        data:María_Margarita_Vargas_Santaella .
+    :hasSex data:male .
 
-data:Louis_Alphonse_de_Bourbon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Carmen_Martínez-Bordiú_y_Franco a :Person ;
+    rdfs:label "Carmen Martínez-Bordiú y Franco" ;
+    data:posIndicesFull "1000:1031" ;
+    data:posIndicesPart "2875:2881",
+        "4177:4183",
+        "4241:4247",
+        "4248:4254",
+        "4271:4277",
+        "4506:4512",
+        "4585:4591" ;
+    data:wdtLink wdt:Q2939617 ;
+    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco",
+        "Dona Maria del Carmen Martinez-Bordiu y Franco" ;
+    :hasSex data:female .
+
+data:Louis_Alphonse_de_Bourbon a :Person ;
     rdfs:label "Louis Alphonse de Bourbon" ;
     data:posIndicesFull "0:25",
         "284:292",
-        "3658:3683" ;
-    data:posIndicesPart "1129:1136",
-        "1197:1202",
-        "1203:1211",
-        "1311:1316",
-        "1317:1325",
-        "1395:1400",
-        "1401:1409",
-        "1511:1516",
-        "1517:1525",
-        "1647:1654",
-        "1893:1898",
-        "1899:1907",
-        "1953:1958",
-        "1959:1967",
-        "2068:2073",
-        "2180:2185",
-        "2186:2194",
-        "2320:2325",
-        "2326:2334",
-        "2414:2421",
-        "2444:2451",
-        "2525:2530",
-        "2531:2539",
-        "2693:2698",
-        "2699:2707",
-        "2785:2790",
-        "2836:2841",
-        "2842:2850",
-        "2970:2975",
-        "2976:2984",
-        "3255:3260",
-        "3261:3269",
+        "3936:3961" ;
+    data:posIndicesPart "1128:1135",
+        "1363:1370",
+        "1475:1480",
+        "1481:1489",
+        "1589:1594",
+        "1595:1603",
+        "1673:1678",
+        "1679:1687",
+        "1789:1794",
+        "1795:1803",
+        "1925:1932",
+        "2171:2176",
+        "2177:2185",
+        "2231:2236",
+        "2237:2245",
+        "2346:2351",
+        "2458:2463",
+        "2464:2472",
+        "2598:2603",
+        "2604:2612",
+        "2692:2699",
+        "2722:2729",
+        "2803:2808",
+        "2809:2817",
+        "2971:2976",
+        "2977:2985",
+        "3063:3068",
+        "3114:3119",
+        "3120:3128",
+        "3248:3253",
+        "3254:3262",
         "333:338",
-        "3382:3389",
-        "3746:3751",
-        "3752:3760",
-        "3838:3843",
-        "3844:3852",
-        "4380:4385",
-        "4386:4394",
-        "4712:4717",
-        "4718:4726",
-        "4785:4790",
-        "4791:4799",
+        "3533:3538",
+        "3539:3547",
+        "3660:3667",
+        "4024:4029",
+        "4030:4038",
+        "4116:4121",
+        "4122:4130",
+        "4658:4663",
+        "4664:4672",
         "493:498",
-        "4963:4970",
+        "4990:4995",
+        "4996:5004",
         "499:507",
-        "5240:5245",
-        "5250:5258",
+        "5063:5068",
+        "5069:5077",
+        "5241:5248",
         "535:540",
         "541:549",
-        "643:648",
-        "649:657",
-        "894:901" ;
+        "5518:5523",
+        "5528:5536",
+        "877:882",
+        "883:891" ;
     data:wdtLink wdt:Q1871533 ;
     :alsoKnownAs "Louis XX",
         "Luis Alfonso de Borbón y de Martinez" ;
-    :hasChild data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon ;
-    :hasDaughter data:Eugénie_de_Bourbon ;
-    :hasMother data:Carmen_Martínez-Bordiú_y_Franco ;
     :hasParent data:Carmen_Martínez-Bordiú_y_Franco ;
-    :hasSex data:male ;
-    :hasSon data:Louis_de_Bourbon ;
-    :isChildOf data:Carmen_Martínez-Bordiú_y_Franco ;
-    :isFatherOf data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon ;
-    :isParentOf data:Eugénie_de_Bourbon,
-        data:Louis_de_Bourbon ;
-    :isSonOf data:Carmen_Martínez-Bordiú_y_Franco .
+    :hasSex data:male .
+
+data:María_Margarita_Vargas_Santaella a :Person ;
+    rdfs:label "María Margarita Vargas Santaella" ;
+    data:posIndicesFull "4695:4727" ;
+    data:posIndicesPart "5082:5087",
+        "5088:5097",
+        "5784:5790" ;
+    data:wdtLink wdt:Q3296460 ;
+    :alsoKnownAs "Marie Marguerite, Duchess of Anjou" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

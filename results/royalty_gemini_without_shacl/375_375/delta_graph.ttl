@@ -2,50 +2,16 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Denys_Rhodes a :Man,
-        :Person .
+data:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman .
 
-data:John_Alexander_Elphinstone a :Man,
-        :Person ;
-    :hasBirthYear 1914 ;
-    :hasBrother data:Andrew_Charles_Victor_Elphinstone ;
-    :hasDeathYear 1975 ;
-    :hasFather data:Sidney_Elphinstone ;
-    :hasMother data:Lady_Mary_Bowes-Lyon ;
-    :hasRelation data:Princess_Margaret,
-        data:Queen_Elizabeth_II ;
-    :hasSister data:Margaret_Elphinstone .
+data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Emperor_Wilhelm_II_of_Germany ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .
 
-data:Queen_Elizabeth_The_Queen_Mother a :Person,
-        :Woman .
+data:Emperor_Wilhelm_II_of_Germany a :Man .
 
-data:Alexander_Murray a :Man,
-        :Person .
-
-data:Andrew_Charles_Victor_Elphinstone a :Man,
-        :Person .
-
-data:Lady_Constance_Euphemia_Woronzow_Murray a :Person,
-        :Woman ;
-    :hasFather data:Alexander_Murray .
-
-data:Lady_Mary_Bowes-Lyon a :Person,
-        :Woman .
-
-data:Margaret_Elphinstone a :Person,
-        :Woman .
-
-data:Princess_Margaret a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:Sidney_Elphinstone a :Man,
-        :Person ;
-    :hasFather data:William_Elphinstone ;
-    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .
-
-data:William_Elphinstone a :Man,
-        :Person .
+data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .
 

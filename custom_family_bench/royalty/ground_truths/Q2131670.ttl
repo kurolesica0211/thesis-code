@@ -7,164 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Crown Prince of Hanover" ;
-    data:posIndicesFull "282:322" ;
-    data:posIndicesPart "1027:1033",
-        "1155:1162",
-        "1607:1612",
-        "1684:1691",
-        "1747:1753",
-        "1778:1783",
-        "1900:1906",
-        "2435:2441",
-        "2879:2886",
-        "421:428",
-        "521:527",
-        "646:653",
-        "866:871",
-        "872:878",
-        "972:978",
-        "999:1005" ;
-    data:wdtLink wdt:Q437001 ;
-    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
-    :hasChild data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isFatherOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover .
-
-data:Thyra-_Crown_Princess_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Thyra, Crown Princess of Hanover" ;
-    data:posIndicesFull "351:376" ;
-    data:posIndicesPart "1155:1162",
-        "1607:1612",
-        "1684:1691",
-        "1778:1783",
-        "2879:2886",
-        "421:428",
-        "646:653",
-        "866:871" ;
-    data:wdtLink wdt:Q217504 ;
-    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark",
-        "Princess Thyra of Denmark" ;
-    :hasChild data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :hasSex data:female ;
-    :hasSon data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isMotherOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover .
-
-data:Prince_Adalbert_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Adalbert of Prussia" ;
-    data:posIndicesFull "1714:1738" ;
-    data:posIndicesPart "1747:1753",
-        "1900:1906",
-        "2435:2441" ;
-    data:wdtLink wdt:Q50998 ;
-    :alsoKnownAs "Prince Adalbert Ferdinand Berengar Viktor of Prussia" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "2462:2494" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasBrother data:Prince_Adalbert_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
-    :isBrotherOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Prince_Eitel_Friedrich_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Eitel Friedrich of Prussia" ;
-    data:posIndicesFull "2442:2457" ;
-    data:wdtLink wdt:Q62056 ;
-    :alsoKnownAs "Eitel Friedrich",
-        "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
-        "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen" ;
-    :hasBrother data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
-    :isBrotherOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Georg Wilhelm, Hereditary Prince of Hanover" ;
-    data:wdtLink wdt:Q2131670 ;
-    :alsoKnownAs "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf of Hanover",
-        "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf of Hanover, Hereditary Prince of Hanover",
-        "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf, Hereditary Prince of Hanover",
-        "Prince Georg Wilhelm of Hanover, Hereditary Prince of Hanover" ;
-    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
-    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
-    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :hasSex data:male ;
-    :isBrotherOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Frederica_of_Hanover a :Person ;
     rdfs:label "Frederica of Hanover" ;
     data:posIndicesFull "2327:2336",
         "855:864" ;
@@ -175,48 +18,27 @@ data:Frederica_of_Hanover a :Ancestor,
     :alsoKnownAs "Fredericka",
         "Friederike Luise von Griechenland",
         "Princess Fredericka" ;
-    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
-    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasParent data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:female ;
-    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isDaughterOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia .
+    :hasParent data:Ernst_August-_Duke_of_Brunswick ;
+    :hasSex data:female .
 
-data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Viktoria Luise of Prussia" ;
-    data:posIndicesFull "2772:2807",
-        "2781:2807" ;
-    data:wdtLink wdt:Q57529 ;
-    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
-        "Princess Victoria Louise of Prussia",
-        "Victoria Louise Adelaide Matilda",
-        "Viktoria Luise of Prussia",
-        "Viktoria Luise, Duchess Consort of Brunswick" ;
-    :hasBrother data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasChild data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasSex data:female ;
-    :isMotherOf data:Frederica_of_Hanover ;
-    :isParentOf data:Frederica_of_Hanover ;
-    :isSiblingOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isSisterOf data:Prince_Adalbert_of_Prussia,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia .
+data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover a :Person ;
+    rdfs:label "Prince Georg Wilhelm, Hereditary Prince of Hanover" ;
+    data:wdtLink wdt:Q2131670 ;
+    :alsoKnownAs "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf of Hanover",
+        "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf of Hanover, Hereditary Prince of Hanover",
+        "Prince Georg Wilhelm Christian Albert Edward Alexander Friedrich Waldemar Ernst Adolf, Hereditary Prince of Hanover",
+        "Prince Georg Wilhelm of Hanover, Hereditary Prince of Hanover" ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male .
 
-data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
     rdfs:label "Ernst August, Duke of Brunswick" ;
     data:posIndicesFull "1613:1628",
         "1784:1799",
@@ -234,25 +56,60 @@ data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
         "1492:1496",
         "1500:1509",
         "1977:1981",
+        "2469:2475",
         "2545:2549" ;
     data:wdtLink wdt:Q57672 ;
     :alsoKnownAs "Ernest August I, Duke of Brunswick",
         "Ernest Augustus",
         "Ernst August I of Brunswick" ;
-    :hasBrother data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :hasChild data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
     :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
         data:Thyra-_Crown_Princess_of_Hanover ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :isFatherOf data:Frederica_of_Hanover ;
-    :isParentOf data:Frederica_of_Hanover ;
-    :isSiblingOf data:Prince_Georg_Wilhelm-_Hereditary_Prince_of_Hanover ;
-    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover .
+    :hasSex data:male .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover" ;
+    data:posIndicesFull "282:322" ;
+    data:posIndicesPart "1027:1033",
+        "1155:1162",
+        "1607:1612",
+        "1684:1691",
+        "1714:1720",
+        "1747:1753",
+        "1778:1783",
+        "1900:1906",
+        "2435:2441",
+        "2462:2468",
+        "2469:2475",
+        "2879:2886",
+        "421:428",
+        "521:527",
+        "646:653",
+        "866:871",
+        "872:878",
+        "972:978",
+        "999:1005" ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
+    :hasSex data:male .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Person ;
+    rdfs:label "Thyra, Crown Princess of Hanover" ;
+    data:posIndicesFull "351:376" ;
+    data:posIndicesPart "1155:1162",
+        "1607:1612",
+        "1684:1691",
+        "1778:1783",
+        "2772:2780",
+        "2879:2886",
+        "421:428",
+        "646:653",
+        "866:871" ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark",
+        "Princess Thyra of Denmark" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

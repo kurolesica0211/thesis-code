@@ -2,38 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FrederickFrancisIV a :Man,
-        :Person .
+data:Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1885 ;
+    :hasDeathYear 1942 .
 
-data:MarieAntoinetteOfMecklenburgSchwerin a :Person,
+data:Joseph_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1889 .
+
+data:Maria_Luise_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1883 .
+
+data:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
         :Woman ;
     :alsoKnownAs "Manette"^^xsd:string ;
     :hasBirthYear 1884 ;
     :hasDeathYear 1944 ;
-    :hasFather data:DukePaulFrederickOfMecklenburg ;
-    :hasMother data:PrincessMarieOfWindischGraetz ;
-    :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,
-        data:DukeHeinrichBorwinOfMecklenburgSchwerin,
-        data:DukeJosephOfMecklenburgSchwerin,
-        data:DukePaulFriedrichOfMecklenburg .
+    :hasFather data:Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Marie_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
 
-data:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,
-        :Woman .
-
-data:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,
+data:Paul_Friedrich_of_Mecklenburg a :Man,
         :Person .
 
-data:DukeJosephOfMecklenburgSchwerin a :Man,
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
         :Person .
 
-data:DukePaulFrederickOfMecklenburg a :Ancestor,
-        :Man,
-        :Person .
-
-data:DukePaulFriedrichOfMecklenburg a :Man,
-        :Person .
-
-data:PrincessMarieOfWindischGraetz a :Ancestor,
+data:Marie_of_Windisch-Graetz a :Ancestor,
         :Person,
         :Woman .
+
+data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person .
 

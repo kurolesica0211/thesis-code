@@ -1,0 +1,145 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Michael_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "224:242"^^xsd:string,
+        "674:692"^^xsd:string ;
+    data:posIndicesPart "2657:2661"^^xsd:string,
+        "2673:2677"^^xsd:string,
+        "2777:2782"^^xsd:string,
+        "598:603"^^xsd:string,
+        "604:608"^^xsd:string,
+        "643:648"^^xsd:string,
+        "649:653"^^xsd:string ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Claude Hamilton Bowes-Lyon"^^xsd:string,
+        "Michael Claude Hamilton Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasRelation data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon .
+
+data:Isobel_Weatherall a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Isobel Weatherall"^^xsd:string ;
+    data:posIndicesFull "303:320"^^xsd:string,
+        "821:838"^^xsd:string ;
+    data:wdtLink wdt:Q75248473 ;
+    :alsoKnownAs "Isobel Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel Bowes-Lyon, Lady Glamis"^^xsd:string,
+        "Isobel Charlotte Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel Charlotte Bowes-Lyon, Lady Glamis"^^xsd:string,
+        "Isobel Charlotte Weatherall"^^xsd:string,
+        "Isobel Charlotte, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel, Countess of Strathmore and Kinghorne"^^xsd:string ;
+    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne,
+        data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female ;
+    :hasSister data:Isobel_Weatherall ;
+    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAuntOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Isobel_Weatherall ;
+    :isMotherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Isobel_Weatherall ;
+    :isSisterOf data:Isobel_Weatherall .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "224:242"^^xsd:string,
+        "224:281"^^xsd:string,
+        "674:692"^^xsd:string,
+        "674:731"^^xsd:string ;
+    data:posIndicesPart "1143:1147"^^xsd:string,
+        "1157:1167"^^xsd:string,
+        "1374:1384"^^xsd:string,
+        "1409:1419"^^xsd:string,
+        "1558:1562"^^xsd:string,
+        "1647:1657"^^xsd:string,
+        "1815:1825"^^xsd:string,
+        "1979:1989"^^xsd:string,
+        "2152:2162"^^xsd:string,
+        "2208:2218"^^xsd:string,
+        "2325:2329"^^xsd:string,
+        "2389:2393"^^xsd:string,
+        "2567:2577"^^xsd:string,
+        "2582:2591"^^xsd:string,
+        "2593:2603"^^xsd:string,
+        "2657:2661"^^xsd:string,
+        "2673:2677"^^xsd:string,
+        "2777:2782"^^xsd:string,
+        "432:442"^^xsd:string,
+        "598:603"^^xsd:string,
+        "604:608"^^xsd:string,
+        "643:648"^^xsd:string,
+        "649:653"^^xsd:string,
+        "887:897"^^xsd:string ;
+    data:wdtLink wdt:Q335615 ;
+    :alsoKnownAs "Michael Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne,
+        data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne a :Man,
+        :Person ;
+    rdfs:label "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:wdtLink wdt:Q7518316 ;
+    :alsoKnownAs "Simon Patrick Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasAncestor data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasBrother data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasFather data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Isobel_Weatherall ;
+    :hasParent data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne,
+        data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isChildOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSonOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+

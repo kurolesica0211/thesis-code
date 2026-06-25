@@ -2,38 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_Christina_Manley a :Person,
-        :Woman .
-
-data:Prince_Joachim_of_Denmark a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1969 ;
-    :hasChild data:Count_Henrik,
-        data:Countess_Athena ;
-    :hasMarriageYear 1995,
-        2007 ;
-    :hasMother data:Queen_Margrethe_II ;
-    :hasRelation data:Alexandra_Christina_Manley,
-        data:Marie_Cavallier ;
-    :isSonOf data:Queen_Margrethe_II .
-
-data:Count_Henrik a :Man,
-        :Person ;
-    :hasMother data:Marie_Cavallier .
-
-data:Countess_Athena a :Person,
+data:Athena_of_Monpezat a :Person,
         :Woman ;
-    :hasMother data:Marie_Cavallier .
+    :hasSex data:Female ;
+    :isDaughterOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
 
-data:Queen_Margrethe_II a :Ancestor,
+data:Frederik_X%2Ctarget a :Person ;
+    :isBrotherOf data:Joachim_of_Denmark ;
+    :isSonOf data:Margrethe_II .
+
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSonOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
+
+data:Alexandra_Christina_Manley a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Frederik_X%7D a :Person .
+
+data:Margrethe_II a :Ancestor,
         :Person,
         :Woman ;
-    :hasChild data:Prince_Joachim_of_Denmark .
+    :hasSex data:Female ;
+    :isMotherOf data:Frederik_X,
+        data:Joachim_of_Denmark .
+
+data:Male a :Sex .
 
 data:Marie_Cavallier a :Ancestor,
         :Person,
         :Woman ;
-    :hasChild data:Count_Henrik,
-        data:Countess_Athena .
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Joachim_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasMarriageYear 1995,
+        2007 ;
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Marie_Cavallier ;
+    :hasSex data:Male ;
+    :isBrotherOf data:Frederik_X%7D ;
+    :isSonOf data:Margrethe_II .
 

@@ -85,139 +85,101 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Grand Duke Andrei Vladimirovich of Russia (Russian: Андре́й Влади́мирович; 14 May  1879 – 30 October 1956) was the youngest son of Grand Duke Vladimir Alexandrovich of Russia, and thus a grandson of Emperor Alexander II and the first cousin of Nicholas II, the last Russian emperor.
-In 1900, he began an affair with the famous ballerina Mathilde Kschessinska, becoming the third grand duke to fall for her.
-Grand Duke Andrei followed a military career and graduated from the  Alexandrovskaya Military Law academy in Saint Petersburg in 1905.
-He took part in World War I, but was away from real combat, spending most of the conflict at Russia's General Staff headquarters or in idle time in ceremonial positions in Saint Petersburg.
-In February 1917, shortly before the fall of the Russian monarchy, Grand Duke Andrei left Saint Petersburg to join his mother in Kislovodsk in the northern Caucasus.
-After the October Revolution of November 1917, he was briefly arrested along with his brother, Grand Duke Boris, but they escaped.
-He departed revolutionary Russia in March 1920, being the last grand duke to leave for exile.
-In 1921, he married his longtime mistress, Mathilde Kschessinska (1872-1971), and recognized her son Vladimir (or "Vova") as his own.
-After World War II, Grand Duke Andrei lived in reduced circumstances.
-At his death at age 77, he was the last surviving Russian grand duke born in Imperial Russia.
-Early life
+The Crown PrinceThe Crown Princess
 
-Grand Duke Andrei Vladimirovich of Russia was born on 14 May  1879 in Tsarskoye Selo, at his parents country residence, the Vladimir Villa.
-He was the youngest of the four Vladimirovich sons; a sister followed him a few years later, and the eldest of his brothers died in early childhood.
-His father, Grand Duke Vladimir Alexandrovich, a brother of Tsar Alexander III of Russia, was a renowned patron of the arts.
-Andrei's mother, Grand Duchess, Maria Pavlovna, née a Duchess of Mecklenburg-Schwerin, was one of the greatest hostesses of Russian society.
-Both parents doted on their four surviving children: Andrei, his two eldest brothers, Kirill and Boris, and their younger sister, Grand Duchess Elena.
-Raised by British nannies, English was Andrei's first language.
-Grand Duke Andrei grew up in opulence.
-The family's main residence was the Vladimir Palace in Saint Petersburg, but as his father preferred country life, they spent the greater part of the year at the Vladimir Villa, a mansion in Tsarskoye Selo, returning to Saint Petersburg during the winter.
-The children also accompanied their parents in many of their travels abroad to France, Germany and Italy, staying in Coburg, Paris, Berlin and Schwerin.
-Following Romanov tradition, Andrei was destined to follow a military career.
-While his eldest brother, Kirill, chose the Imperial navy, Andrei and his brother Boris joined the infantry.
-Andrei began his military service in August 1898 as lieutenant in the Guards Horse-Artillery Brigade.
-In spite of his appointments, Grand Duke Andrei did not have much interest in his military career.
-Relationship with Kschessinska
 
-Grand Duke Andrei was tall, shy and good looking.
-He was a good friend of his cousin Grand Duke Michael Alexandrovich, who was a year older.
-In February 1900, Grand Duke Andrei was invited by his brothers, Grand Dukes Kirill and Boris, to a dinner party at the house of Mathilde Kschessinska.
-Grand Duke Andrei sat next to his hostess during the dinner, but accidentally spilt a glass of red wine on her.
-Mathilde, attracted to the young grand duke, seven years her junior, took the incident as good omen.
-She subsequently began a long time affair with Grand Duke Sergei Mikhailovich of Russia, Nicholas and Andrei's first cousin once removed.
-As she was not in love with Sergei, but enjoyed his company and protection, Mathilde pursued a relationship with Grand Duke Andrei, the third Romanov to become involved with her.
-Grand Duke Sergei tolerated their affair, remaining a close and loyal friend to the famous ballerina, but the relationship between the two grand dukes grew tense.
-Both grand dukes were at first convinced they were the child's father.
-After the Revolution, Kschessinska and Grand Duke Andrei maintained that Andrei was the father.
-The child, who became known within the family by his nickname, Vova, received the name and patronymic Vladimir Sergeievich.
-Grand Duke Sergei was devoted to the child, looking after mother and son until his exile and subsequent execution following the fall of the Russian monarchy.
-The question of Vladimir's paternity remains unresolved.
-However, most sources attribute the paternity to Grand Duke Andrei Vladimirovich, whom the child resembled.
-A Russian Grand Duke
+Princess Tomislav
 
-In 1903, Grand Duke Andrei purchased his own palace.
-As upkeep of the mansion was expensive, it was sold to Grand Duke Andrei for 400 thousand rubles.
-Grand Duke Andrei seldom lived there.
-Grand Duke Andrei could neither openly live together with Mathilda nor did there exist the possibility of contracting a morganatic marriage with her.
-The couple always had to travel with his Aide-de-camp, Feodor Von Kube, and when Grand Duke Andrei was invited to events, Mathilda could not join him.
-As a member of the Russian Imperial family, Grand Duke Andrei took some duties of representation.
-In 1911, he visited Ferdinand I of Bulgaria for a second time as a representative of Russia, and he was appointed senator in that year.
-In the summer of 1912, Grand Duke Andrei fell ill with bronchitis.
-Fearing the onset of tuberculosis, he was sent to recuperate in the Crimea, staying in a palace owned by his cousin Grand Duke Nikolai Nikolayevich.
-Upon his return to Russia, Andrei Vladimirovich took part in the 300th anniversary celebrations of the Romanov dynasty.
-Villa Alam was completely remodeled and Andrei and Mathilde returned there in the spring of 1914, hoping to stay there every spring.
-War and revolution
 
-With the outbreak of World War I, Grand Duke Andrei joined the staff at the headquarters of the Northwestern front fighting against Germany.
-By 1916, Grand Duke Andrei joined other members of his family in political intrigues against the Empress who was in charge of the government in Saint Petersburg while Nicholas II was away at Russia's war military headquarters.
-In December 1916, the Assassination of Rasputin, in which Grand Duke Dmitri Pavlovich and Prince Felix Yusupov took part, divided the Romanov family further.
-Grand Duke Andrei joined many of his relatives in asking for clemency for the culprits.
-As Andrei's ambitious mother intrigued against Empress Alexandra, Nicholas II ordered the Grand Duchess to leave Saint Petersburg for a time.
-After a short personal interview with Nicholas II, on 16 January 1917, Grand Duke Andrei left for Kislovodsk, a spa resort town in the Caucasus.
-Andrei Vladimirovich and his mother were in Kislovodsk when Nicholas II was forced to abdicate at the outbreak of the February Revolution.
-The diaries of Grand Duke Andrei, written while he was in the army in the North-Eastern Front (1914–1915) and in Petrograd (1916–1917), have survived at the State Archives of the Russian Federation.
-In July 1917, Mathilde and her son escaped the disturbance in Saint Petersburg, joining Andrei in Kislovodsk.
-However, they could not live together as Grand Duchess Maria Pavlovna was reluctant to acknowledge their presence.
-Andrei found separate living arrangements for them while he settled in a different villa with his brother Grand Duke Boris, who arrived in September.
-During the period of the provisional government Grand Duke Andrei, his brother and mother lived mostly undisturbed in Kislovodsk, protected by local Cossacks.
-Seventeen of the 52 Romanovs living in Russia were executed during the red terror.
-Escaping the Bolsheviks
+Princess Alexander
 
-The Bolsheviks arrested Grand Duke Andrei and his brother Boris on the night of 7 August 1918, after a systematic search of their villa.
-Likely to be rearrested, the two grand dukes escaped to the surrounding mountains with Andrei's aide-de-camp, Colonel Von Kube, on 26 August 1918.
-They lived in hiding for almost five weeks, moving from village to village under protection of the Kabarda tribes, sheltered by Colonel Andrei Shkuro and his band of loyal Cossacks.
-On the evening of 23 September, Grand Duke Andrei, his brother Boris and Colonel Von Kube returned to the city on horseback, accompanied by Kabardian nobles who had protected them.
-During their time hiding in the mountains, Andrei allowed his beard to become overgrown.
-However, Grand Duchess Maria Pavlovna was determined to remain in Russia hoping that the White movement would prevail and Andrei's brother, Grand Duke Kirill Vladimirovich, would be installed as Tsar.
-It was suggested that Grand Duke Andrei should join the White army of General Anton Denikin, but the grand duchess opposed the idea, stating that members of the Romanov family should not take part in Russia's civil war.
-Against his mother's wishes, Grand Duke Boris left with his future wife, Zinaida Rashevskaya, in March 1919.
-On 29 March, Admiral Edward Hobart Seymour, commander of the British fleet in the Black Sea, offered to take Grand Duke Andrei and his mother to Constantinople, but Grand Duchess Maria Pavlovna again flatly refused.
-By Christmas, the Red army was to retake Kislovodsk and Grand Duke Andrei, with his mother and their entourage, decided to go to Novorossiysk, on the eastern coast of the Black Sea, where General Peter Wrangel had kept the Reds away.
-One day before their departure from Kislovodsk, Von Kube, Andrei's faithful adjutant, died of typhus.
-Grand Duke Andrei and his mother were the last Romanovs to leave Russia for exile.
-Exile
 
-Once in Venice, Grand Duke Andrei accompanied his mother via train to Cannes, on the French Riviera.
-Grand Duchess Maria Pavlovna died a few months later in September 1920.
-During her illness in Contrexéville, Grand Duke Andrei was reunited for the first time in exile with his three siblings.
-At his mother's death the last obstacle for Grand Duke Andrei to marry Mathilde Kchessinska was lifted.
-Andrei asked permission to marry Kchessinska from his brother Grand Duke Kirill and from Empress Maria Feodorovna, widow of Tsar Alexander III, the senior members of the Romanov family; both gave their consent.
-Grand Duke Andrei also claimed paternity of Kchessinska's son, Prince Vladimir Romanovsky-Krasinsky (30 June 1902 – 23 April 1974).
-In 1924, Grand Duke Andrei's eldest brother, Kirill, proclaimed himself Tsar in exile.
-Grand Duke Andrei supported his brother's claim.
-Grand Duke Kirill granted to Mathilde and her son the titles of Princess and Prince Romanovsky-Krasinsky, with the treatment of Serene Highness.
-During their first years in exile, Grand Duke Andrei and his wife were in better economic circumstances than many of the other Romanovs.
-Tsar Nicholas II made his relatives sell their properties abroad, repatriating their fortune to Russia during the war, but Grand Duke Andrei was able to keep Villa Alam in Cap-d'Ail because the property was under Mathilda's name.
-To have cash flow and maintain his standard of living, Andrei sold the jewel collection that he inherited from his mother, and he mortgaged Villa Alam.
-They traveled frequently to Paris, and Grand Duke Andrei was also active in philanthropic work, raising funds for Russian refugees.
-In 1928, Grand Duke Andrei became one of the few members of the Romanov family to believe the claim of Anna Anderson, the best known of several impostors who claimed to be the youngest daughter of Tsar Nicholas II, Grand Duchess Anastasia.
-Anderson was on the eve of her first trip to the United States when Grand Duke Andrei visited her once in January 1928.
-Although he had not been particularly close to Nicholas II and his family, Grand Duke Andrei had met the real Anastasia in family events through the years and while in service as aide-de-camp to the Tsar.
-Grand Duke Kirill protested his brother's support of Anderson and discouraged his intervention in the case.
-In later years, Grand Duke Andrei recanted his opinion.
-Grand Duke Andrei and his wife liked to gamble.
-Last years
+Princess Elizabeth
 
-During the 1930s, Mathilde's ballet school prospered, allowing Grand Duke Andrei and his family to have a comfortable, yet modest life.
-Andrei Vladimirovich also kept in touch with his Romanov relatives, particularly his brothers and many of his cousins, such as Grand Duke Dmitri Pavlovich, Grand Duchess Maria Pavlovna, Jr. and Prince Gabriel Constantinovich.
-His relationship with his sister, Grand Duchess Elena Vladimirovna of Russia, became strained as she never truly accepted Mathilde as a member of the family.
-At the outbreak of World War II, under the threat of a German bombing of Paris, Grand Duke Andrei and his family moved to Le Vésinet.
-Following the German invasion of France, they fled by train to Grand Duke Boris's Villa in Biarritz.
-Prince Vladimir Romanovsky-Krasinsky (who took a Westernized version of his mother's Polish name, Krzesińska, hyphenated with the adjective version of his father's name) was spoiled by his parents and never had an independent life.
-Vladimir was arrested by the Gestapo and held in a camp for Russian emigrants in Compiègne.
-Grand Duke Andrei visited German Police Headquarters multiple times and asked for help from Russian émigrés to get his son released, but neither group would help him.
-Vladimir was finally freed after 119 days in detention.
-During the war years the two other surviving grand dukes died; Grand Duke Dmitri Pavlovich in 1942 and Grand Duke Boris in 1943.
-With the death of his brother Boris, Andrei became the last surviving Grand Duke of the Romanov dynasty who had been born in Imperial Russia.
-Grand Duke Andrei's last years were marked by increasingly frail health and straitened financial circumstances.
-To balance his finances, he relied partially on economic aid from his nephew, Grand Duke Vladimir Kirillovich.
-In 1954, Grand Duke Andrei became a godfather of Grand Duke Vladimir's only child, Grand Duchess Maria Vladimirovna of Russia, the current claimant to the headship of the Romanov family.
-Despite poor health, Grand Duke Andrei lived to be 77 years old, an age reached by few in the Romanov family.
-He surpassed the longevity record held by his great-uncle, Grand Duke Michael Nikolaevich, by almost six months.
-On the morning of 31 October 1956, Grand Duke Andrei worked in his study.
-Prince Vladimir Romanovsky-Krasinsky died unmarried and childless in France in 1974, three years after his mother.
-Portrayal
 
-Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a Russian biopic from director Alexei Uchitel released in 2017.
+Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
+In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
+In 2022, he became the hereditary prince, following his elder brother's renunciation.
+Early life and education
+
+Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
+Philip is the fraternal twin of Alexander.
+His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
+Philip lived in Virginia until 1984.
+Philip's parents divorced in 1985.
+After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
+Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
+Together with his twin brother, Philip was educated in London and Canterbury.
+In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
+In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
+In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
+In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
+After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
+Personal life
+
+After completing his studies, Philip started to work for financial institutions in the City of London.
+Most recently, Philip has been working with a renowned global asset manager in London.
+Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
+Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
+Marriage and children
+
+On 24 July 2017, his parents announced his engagement to Danica Marinković.
+Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
+Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
+His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
+It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
+Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
+Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
+Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
+On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
+They named her Princess Marija.
+Public life
+
+Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
+The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
+On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
+Prince in Serbia (2020–2022)
+Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
+With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
+In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
+On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
+Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
+In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
+On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
+In December 2021, Philip voiced support for the environmental protests in Serbia.
+In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
+Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
+Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
+On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
+Hereditary Prince (2022–present)
+
+On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
+Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
+The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
+His father, Crown Prince Alexander, did not attend the event.
+The Crown Prince was dissatisfied with Peter's renunciation.
+A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
+On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
+Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
+In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
+Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
+On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
+In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
+Arms
+
+Ancestry
+
+Philip is a member of the House of Karađorđević.
+Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
+Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -233,39 +195,9 @@ Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a R
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -280,6 +212,23 @@ Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a R
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -297,6 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -364,29 +328,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -395,6 +351,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -407,6 +371,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -415,17 +381,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -453,6 +421,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -468,226 +520,123 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c45d52bb-6bed-4380-848c-7ae6bdea164f)
- Call ID: c45d52bb-6bed-4380-848c-7ae6bdea164f
+  AssignClass (be24243f-6c5b-4bec-a747-916513499a9a)
+ Call ID: be24243f-6c5b-4bec-a747-916513499a9a
   Args:
     type: :Man
-    source: Grand Duke Andrei Vladimirovich of Russia
-  AssignClass (c9702d6b-7947-4bdf-9bb9-d2cb5deeb56e)
- Call ID: c9702d6b-7947-4bdf-9bb9-d2cb5deeb56e
+    source: PhilipKarađorđević
+  AssignClass (4dbaab21-a2fb-4435-93f7-6035b953ff8b)
+ Call ID: 4dbaab21-a2fb-4435-93f7-6035b953ff8b
   Args:
-    type: :Person
-    source: Grand Duke Andrei Vladimirovich of Russia
-  AddLiteral (7b769099-bb99-4dce-b536-1b94a629f9dc)
- Call ID: 7b769099-bb99-4dce-b536-1b94a629f9dc
+    type: :Man
+    source: AlexanderKarađorđević
+  AssignClass (08c0e63b-ce60-43c2-9720-0cf97e8bdc87)
+ Call ID: 08c0e63b-ce60-43c2-9720-0cf97e8bdc87
+  Args:
+    source: MariaDaGloria
+    type: :Woman
+  AssignClass (bccd73b9-d5d2-4abb-84aa-042308b8d016)
+ Call ID: bccd73b9-d5d2-4abb-84aa-042308b8d016
+  Args:
+    source: PeterKarađorđević
+    type: :Man
+  AssignClass (d15ca2af-f29a-4dcd-9284-41fe8d183fd7)
+ Call ID: d15ca2af-f29a-4dcd-9284-41fe8d183fd7
+  Args:
+    type: :Woman
+    source: DanicaMarinković
+  AssignClass (b275d6e1-1862-4ee2-9bc8-165eb410bb29)
+ Call ID: b275d6e1-1862-4ee2-9bc8-165eb410bb29
+  Args:
+    source: StefanKarađorđević
+    type: :Man
+  AssignClass (4b7247cf-6942-42b5-808b-148730240b67)
+ Call ID: 4b7247cf-6942-42b5-808b-148730240b67
+  Args:
+    type: :Woman
+    source: MarijaKarađorđević
+  AddLiteral (0339072d-daad-4784-8077-fa37f41ff4a7)
+ Call ID: 0339072d-daad-4784-8077-fa37f41ff4a7
   Args:
     relation: :hasBirthYear
-    literal_value: 1879
-    source: Grand Duke Andrei Vladimirovich of Russia
     literal_type: xsd:integer
-  AddLiteral (0e6aa71a-4363-46ad-9e34-9d915215f85a)
- Call ID: 0e6aa71a-4363-46ad-9e34-9d915215f85a
+    literal_value: 1982
+    source: PhilipKarađorđević
+  AddTriple (7f8e0bc3-9026-4981-b264-6a783e6fa4ed)
+ Call ID: 7f8e0bc3-9026-4981-b264-6a783e6fa4ed
   Args:
-    literal_value: 1956
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Grand Duke Andrei Vladimirovich of Russia
-  AssignClass (09733aac-d207-4cf1-9c86-b423fb8b0971)
- Call ID: 09733aac-d207-4cf1-9c86-b423fb8b0971
-  Args:
-    type: :Man
-    source: Grand Duke Vladimir Alexandrovich of Russia
-  AssignClass (d70f040b-2492-44ba-b937-5cf267cb8cbe)
- Call ID: d70f040b-2492-44ba-b937-5cf267cb8cbe
-  Args:
-    type: :Ancestor
-    source: Grand Duke Vladimir Alexandrovich of Russia
-  AssignClass (9dd48614-1640-45d5-a4a0-6a0dfb593881)
- Call ID: 9dd48614-1640-45d5-a4a0-6a0dfb593881
-  Args:
-    type: :Person
-    source: Grand Duke Vladimir Alexandrovich of Russia
-  AddTriple (3d34b62e-2cdb-4685-b571-2d9dfa10b446)
- Call ID: 3d34b62e-2cdb-4685-b571-2d9dfa10b446
-  Args:
-    target: Grand Duke Vladimir Alexandrovich of Russia
-    source: Grand Duke Andrei Vladimirovich of Russia
+    source: PhilipKarađorđević
+    target: AlexanderKarađorđević
     relation: :hasFather
-  AssignClass (9668c79d-bbdc-4f4a-83b9-889585ab0115)
- Call ID: 9668c79d-bbdc-4f4a-83b9-889585ab0115
+  AddTriple (87b21214-bbed-4705-add7-43770e9a50d3)
+ Call ID: 87b21214-bbed-4705-add7-43770e9a50d3
   Args:
-    type: :Woman
-    source: Grand Duchess Maria Pavlovna
-  AssignClass (0b5c96fe-5866-4b8e-848d-ca6a00932e55)
- Call ID: 0b5c96fe-5866-4b8e-848d-ca6a00932e55
-  Args:
-    type: :Ancestor
-    source: Grand Duchess Maria Pavlovna
-  AssignClass (82f8c024-41f1-45c7-bcd7-83de38b6e845)
- Call ID: 82f8c024-41f1-45c7-bcd7-83de38b6e845
-  Args:
-    type: :Person
-    source: Grand Duchess Maria Pavlovna
-  AddTriple (e5ca1e92-0821-4317-9ed4-6e97174faa41)
- Call ID: e5ca1e92-0821-4317-9ed4-6e97174faa41
-  Args:
-    target: Grand Duchess Maria Pavlovna
-    source: Grand Duke Andrei Vladimirovich of Russia
+    target: MariaDaGloria
+    source: PhilipKarađorđević
     relation: :hasMother
-  AssignClass (9a7dc9e0-423f-485b-b380-bd25e9f2e3bb)
- Call ID: 9a7dc9e0-423f-485b-b380-bd25e9f2e3bb
+  AddTriple (20587e5e-4a61-4225-9ab2-85c105f93884)
+ Call ID: 20587e5e-4a61-4225-9ab2-85c105f93884
   Args:
-    type: :Woman
-    source: Mathilde Kschessinska
-  AssignClass (7d2a5d58-89f3-4df0-9087-d3f6ddc39856)
- Call ID: 7d2a5d58-89f3-4df0-9087-d3f6ddc39856
-  Args:
-    type: :Person
-    source: Mathilde Kschessinska
-  AddLiteral (6f600f28-b5c8-4f69-bab2-d7e62a7d7bdb)
- Call ID: 6f600f28-b5c8-4f69-bab2-d7e62a7d7bdb
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1872
-    literal_type: xsd:integer
-    source: Mathilde Kschessinska
-  AddLiteral (ea1fc8fc-d5ea-46e2-8eca-7c5cb95fb407)
- Call ID: ea1fc8fc-d5ea-46e2-8eca-7c5cb95fb407
-  Args:
-    source: Mathilde Kschessinska
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1971
-  AddLiteral (0b3db4e3-6be6-45f5-9b00-532797650810)
- Call ID: 0b3db4e3-6be6-45f5-9b00-532797650810
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1921
-    literal_type: xsd:integer
-    source: Grand Duke Andrei Vladimirovich of Russia
-  AddTriple (82340855-ea9f-43e7-92f4-71f123001295)
- Call ID: 82340855-ea9f-43e7-92f4-71f123001295
-  Args:
-    source: Grand Duke Andrei Vladimirovich of Russia
-    target: Mathilde Kschessinska
-    relation: :hasRelation
-  AssignClass (2f96bfe5-18eb-4ae4-ab40-7267acda101f)
- Call ID: 2f96bfe5-18eb-4ae4-ab40-7267acda101f
-  Args:
-    type: :Man
-    source: Vladimir Romanovsky-Krasinsky
-  AssignClass (84e9e249-516f-4867-a52f-8b9079bacd00)
- Call ID: 84e9e249-516f-4867-a52f-8b9079bacd00
-  Args:
-    type: :Person
-    source: Vladimir Romanovsky-Krasinsky
-  AddTriple (f26fe3e3-0f10-4c3d-b29a-195ccef52459)
- Call ID: f26fe3e3-0f10-4c3d-b29a-195ccef52459
-  Args:
-    source: Vladimir Romanovsky-Krasinsky
-    target: Mathilde Kschessinska
-    relation: :isSonOf
-  AddTriple (5a355251-1df7-4e43-9afb-96de19c3ecc4)
- Call ID: 5a355251-1df7-4e43-9afb-96de19c3ecc4
-  Args:
-    target: Grand Duke Andrei Vladimirovich of Russia
-    source: Vladimir Romanovsky-Krasinsky
-    relation: :isSonOf
-  AssignClass (fdca8aed-de8c-4454-aaeb-3fc003f8a2ae)
- Call ID: fdca8aed-de8c-4454-aaeb-3fc003f8a2ae
-  Args:
-    type: :Man
-    source: Grand Duke Kirill Vladimirovich
-  AssignClass (afc28026-5df4-4f37-90a2-270f4bbb0c30)
- Call ID: afc28026-5df4-4f37-90a2-270f4bbb0c30
-  Args:
-    type: :Person
-    source: Grand Duke Kirill Vladimirovich
-  AddTriple (f0e9eb82-099e-497f-8108-bc4dfe4afb3e)
- Call ID: f0e9eb82-099e-497f-8108-bc4dfe4afb3e
+    target: PeterKarađorđević
+    source: PhilipKarađorđević
+    relation: :isBrotherOf
+  AddTriple (6eb4931c-42fc-4454-a4e2-725c598e81f2)
+ Call ID: 6eb4931c-42fc-4454-a4e2-725c598e81f2
   Args:
     relation: :isBrotherOf
-    target: Grand Duke Andrei Vladimirovich of Russia
-    source: Grand Duke Kirill Vladimirovich
-  AssignClass (482d3b51-c02f-42c8-9840-59d815fe7bc6)
- Call ID: 482d3b51-c02f-42c8-9840-59d815fe7bc6
+    source: PeterKarađorđević
+    target: PhilipKarađorđević
+  AddTriple (71e56611-c318-40c7-977e-2d4bb4a152bb)
+ Call ID: 71e56611-c318-40c7-977e-2d4bb4a152bb
   Args:
-    type: :Man
-    source: Grand Duke Boris
-  AssignClass (a0b5d081-2cfb-4b1a-a5d0-2a76585098b8)
- Call ID: a0b5d081-2cfb-4b1a-a5d0-2a76585098b8
+    target: AlexanderKarađorđević
+    source: PeterKarađorđević
+    relation: :hasFather
+  AddTriple (48ef710c-aa44-4aeb-b03a-27b1b9a20d6b)
+ Call ID: 48ef710c-aa44-4aeb-b03a-27b1b9a20d6b
   Args:
-    type: :Person
-    source: Grand Duke Boris
-  AddTriple (fcde5806-b86f-4d33-ae6c-489a7c67397a)
- Call ID: fcde5806-b86f-4d33-ae6c-489a7c67397a
+    relation: :hasMother
+    target: MariaDaGloria
+    source: PeterKarađorđević
+  AddTriple (e5aeb98b-294a-485f-beef-a237cfbb7af8)
+ Call ID: e5aeb98b-294a-485f-beef-a237cfbb7af8
   Args:
-    relation: :isBrotherOf
-    source: Grand Duke Boris
-    target: Grand Duke Andrei Vladimirovich of Russia
-  AssignClass (1a4f8c04-f787-4047-b533-ac15f9c07c39)
- Call ID: 1a4f8c04-f787-4047-b533-ac15f9c07c39
+    source: PhilipKarađorđević
+    target: AlexanderKarađorđević
+    relation: :hasFather
+  AddTriple (ebdda7f9-6a8f-42cb-931b-7d2e7225b626)
+ Call ID: ebdda7f9-6a8f-42cb-931b-7d2e7225b626
   Args:
-    type: :Woman
-    source: Grand Duchess Elena Vladimirovna
-  AssignClass (d2a4c83d-15e0-47fd-a769-f58842bd2fa2)
- Call ID: d2a4c83d-15e0-47fd-a769-f58842bd2fa2
+    relation: :hasMother
+    target: MariaDaGloria
+    source: PhilipKarađorđević
+  AddTriple (b6dcbc61-986c-49c8-9638-787ec7328779)
+ Call ID: b6dcbc61-986c-49c8-9638-787ec7328779
   Args:
-    type: :Person
-    source: Grand Duchess Elena Vladimirovna
-  AddTriple (ca1efdea-9d0b-499e-bb02-c3428f478113)
- Call ID: ca1efdea-9d0b-499e-bb02-c3428f478113
+    source: StefanKarađorđević
+    target: PhilipKarađorđević
+    relation: :hasFather
+  AddTriple (0b26c1ba-552b-4ced-baa3-31a3851f5ab4)
+ Call ID: 0b26c1ba-552b-4ced-baa3-31a3851f5ab4
   Args:
-    relation: :isSisterOf
-    target: Grand Duke Andrei Vladimirovich of Russia
-    source: Grand Duchess Elena Vladimirovna
-  Finish (c8589a54-bb42-40fc-902d-1c25e1914566)
- Call ID: c8589a54-bb42-40fc-902d-1c25e1914566
+    source: StefanKarađorđević
+    target: DanicaMarinković
+    relation: :hasMother
+  AddTriple (22d4cdde-b728-4e5c-a703-4fac0c164972)
+ Call ID: 22d4cdde-b728-4e5c-a703-4fac0c164972
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasFather
+    target: PhilipKarađorđević
+    source: MarijaKarađorđević
+  AddTriple (cd851e42-4c31-42f2-ae31-2cbe7be7f2fa)
+ Call ID: cd851e42-4c31-42f2-ae31-2cbe7be7f2fa
+  Args:
+    relation: :hasMother
+    source: MarijaKarađorđević
+    target: DanicaMarinković
+  Finish (220752b3-90e7-4e8e-b4dc-c1138a4f9350)
+ Call ID: 220752b3-90e7-4e8e-b4dc-c1138a4f9350
+  Args:
 
 ================================= Tool Message =================================
 
@@ -772,44 +721,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Grand_Duchess_Elena_Vladimirovna a :Person,
-          :Woman ;
-      :isSisterOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:MarijaKara%C4%91or%C4%91evi%C4%87 a :Woman ;
+      :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:DanicaMarinkovi%C4%87 .
 
-  data:Grand_Duke_Boris a :Man,
-          :Person ;
-      :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:StefanKara%C4%91or%C4%91evi%C4%87 a :Man ;
+      :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:DanicaMarinkovi%C4%87 .
 
-  data:Grand_Duke_Kirill_Vladimirovich a :Man,
-          :Person ;
-      :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:PeterKara%C4%91or%C4%91evi%C4%87 a :Man ;
+      :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:MariaDaGloria ;
+      :isBrotherOf data:PhilipKara%C4%91or%C4%91evi%C4%87 .
 
-  data:Vladimir_Romanovsky-Krasinsky a :Man,
-          :Person ;
-      :isSonOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia,
-          data:Mathilde_Kschessinska .
+  data:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Man .
 
-  data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
-          :Person,
-          :Woman .
+  data:DanicaMarinkovi%C4%87 a :Woman .
 
-  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
-          :Man,
-          :Person .
+  data:MariaDaGloria a :Woman .
 
-  data:Mathilde_Kschessinska a :Person,
-          :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1971 .
-
-  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man,
-          :Person ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1956 ;
-      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-      :hasMarriageYear 1921 ;
-      :hasMother data:Grand_Duchess_Maria_Pavlovna ;
-      :hasRelation data:Mathilde_Kschessinska .
+  data:PhilipKara%C4%91or%C4%91evi%C4%87 a :Man ;
+      :hasBirthYear 1982 ;
+      :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:MariaDaGloria ;
+      :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87 .
 
 
 
@@ -821,62 +756,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d3315036-047d-4c8b-8e73-49baf2d21a0a)
- Call ID: d3315036-047d-4c8b-8e73-49baf2d21a0a
+  ValidateShacl (5f206d74-da63-462f-bac0-afc663f6dbe2)
+ Call ID: 5f206d74-da63-462f-bac0-afc663f6dbe2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mathilde_Kschessinska is linked as an ancestor via 'isSonOf', but it is missing the required class ':Ancestor'.
+      The person AlexanderKarađorđević is assigned to the hasFather property for PhilipKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mathilde_Kschessinska, :Ancestor)
+      AssignClass(AlexanderKarađorđević, Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Grand_Duke_Andrei_Vladimirovich_of_Russia is linked as an ancestor via 'isSonOf', but it is missing the required class ':Ancestor'.
+      The person AlexanderKarađorđević is assigned to the hasFather property for PeterKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Grand_Duke_Andrei_Vladimirovich_of_Russia, :Ancestor)
+      AssignClass(AlexanderKarađorđević, Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mathilde_Kschessinska is incorrectly classified as a son of Vladimir_Romanovsky-Krasinsky; the 'isSonOf' relationship is logically invalid for a female individual.
+      The person PhilipKarađorđević is assigned to the hasFather property for StefanKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Vladimir_Romanovsky-Krasinsky, :isSonOf, Mathilde_Kschessinska)
+      AssignClass(PhilipKarađorđević, Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Grand_Duke_Andrei_Vladimirovich_of_Russia is listed as an ancestor, but the range of ':isSonOf' requires the ':Ancestor' class to be explicitly assigned.
+      The person MariaDaGloria is assigned to the hasMother property for PhilipKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Grand_Duke_Andrei_Vladimirovich_of_Russia, :Ancestor)
+      AssignClass(MariaDaGloria, Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mathilde_Kschessinska is incorrectly linked via 'isSonOf', which should only be used to denote male descendants/ancestor relationships.
+      The person MariaDaGloria is assigned to the hasMother property for PeterKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Vladimir_Romanovsky-Krasinsky, :isSonOf, Mathilde_Kschessinska)
+      AssignClass(MariaDaGloria, Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Grand_Duke_Andrei_Vladimirovich_of_Russia has already been addressed, but ensure the ':Ancestor' class is assigned to satisfy the property range constraint.
+      The person DanicaMarinković is assigned to the hasMother property for StefanKarađorđević, but it is missing the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Grand_Duke_Andrei_Vladimirovich_of_Russia, :Ancestor)
+      AssignClass(DanicaMarinković, Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PhilipKarađorđević is assigned to the hasFather property for StefanKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PhilipKarađorđević, Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PhilipKarađorđević is assigned to the hasFather property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PhilipKarađorđević, Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person AlexanderKarađorđević is assigned to the hasFather property for PhilipKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AlexanderKarađorđević, Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person AlexanderKarađorđević is assigned to the hasFather property for PeterKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AlexanderKarađorđević, Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person DanicaMarinković is assigned to the hasMother property for StefanKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(DanicaMarinković, Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person DanicaMarinković is assigned to the hasMother property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(DanicaMarinković, Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person MariaDaGloria is assigned to the hasMother property for PhilipKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(MariaDaGloria, Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person MariaDaGloria is assigned to the hasMother property for PeterKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(MariaDaGloria, Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PhilipKarađorđević is assigned to the hasFather property for StefanKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PhilipKarađorđević, Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PhilipKarađorđević is assigned to the hasFather property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PhilipKarađorđević, Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person AlexanderKarađorđević is assigned to the hasFather property for PhilipKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AlexanderKarađorđević, Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person AlexanderKarađorđević is assigned to the hasFather property for PeterKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AlexanderKarađorđević, Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person DanicaMarinković is assigned to the hasMother property for StefanKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(DanicaMarinković, Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person DanicaMarinković is assigned to the hasMother property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(DanicaMarinković, Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person MariaDaGloria is assigned to the hasMother property for PhilipKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(MariaDaGloria, Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person MariaDaGloria is assigned to the hasMother property for PeterKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(MariaDaGloria, Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PhilipKarađorđević is assigned to the hasFather property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PhilipKarađorđević, Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person DanicaMarinković is assigned to the hasMother property for MarijaKarađorđević, but it is missing the required Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(DanicaMarinković, Ancestor)
 
 
 
@@ -885,30 +964,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (74477597-03fc-48b3-9cef-a46a10ceb42d)
- Call ID: 74477597-03fc-48b3-9cef-a46a10ceb42d
+  AssignClass (adbb07fe-4e74-4b82-8af2-82fc49c1704e)
+ Call ID: adbb07fe-4e74-4b82-8af2-82fc49c1704e
+  Args:
+    source: AlexanderKarađorđević
+    type: :Ancestor
+  AssignClass (7cea21d4-15f5-444a-a72f-bf67cd143247)
+ Call ID: 7cea21d4-15f5-444a-a72f-bf67cd143247
+  Args:
+    source: PhilipKarađorđević
+    type: :Ancestor
+  AssignClass (3c2955e7-209c-4760-b39c-3fe226b68607)
+ Call ID: 3c2955e7-209c-4760-b39c-3fe226b68607
   Args:
     type: :Ancestor
-    source: Mathilde Kschessinska
-  AssignClass (29ffacd4-874e-49da-8ba5-586829f93b06)
- Call ID: 29ffacd4-874e-49da-8ba5-586829f93b06
+    source: MariaDaGloria
+  AssignClass (220ffa29-0c7a-480a-bc11-790beea42007)
+ Call ID: 220ffa29-0c7a-480a-bc11-790beea42007
   Args:
-    source: Grand Duke Andrei Vladimirovich of Russia
+    source: DanicaMarinković
     type: :Ancestor
-  RemoveTriple (ec25faf8-2ef5-41fb-958e-1cc9c4a0d7f0)
- Call ID: ec25faf8-2ef5-41fb-958e-1cc9c4a0d7f0
-  Args:
-    target: Mathilde Kschessinska
-    relation: :isSonOf
-    source: Vladimir Romanovsky-Krasinsky
-  AddTriple (2f3af650-5eb6-443d-beb2-7ad4e3175945)
- Call ID: 2f3af650-5eb6-443d-beb2-7ad4e3175945
-  Args:
-    relation: :hasMother
-    source: Vladimir Romanovsky-Krasinsky
-    target: Mathilde Kschessinska
-  ValidateShacl (4482e7e9-61ad-4e2d-93ab-0b6d6705259b)
- Call ID: 4482e7e9-61ad-4e2d-93ab-0b6d6705259b
+  Finish (b3f641fe-a04a-46a7-90a0-a398888cbcdd)
+ Call ID: b3f641fe-a04a-46a7-90a0-a398888cbcdd
   Args:
 
 ================================= Tool Message =================================
@@ -930,48 +1007,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Grand_Duchess_Elena_Vladimirovna a :Person,
-          :Woman ;
-      :isSisterOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:MarijaKara%C4%91or%C4%91evi%C4%87 a :Woman ;
+      :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:DanicaMarinkovi%C4%87 .
 
-  data:Grand_Duke_Boris a :Man,
-          :Person ;
-      :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:StefanKara%C4%91or%C4%91evi%C4%87 a :Man ;
+      :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:DanicaMarinkovi%C4%87 .
 
-  data:Grand_Duke_Kirill_Vladimirovich a :Man,
-          :Person ;
-      :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:PeterKara%C4%91or%C4%91evi%C4%87 a :Man ;
+      :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:MariaDaGloria ;
+      :isBrotherOf data:PhilipKara%C4%91or%C4%91evi%C4%87 .
 
-  data:Vladimir_Romanovsky-Krasinsky a :Man,
-          :Person ;
-      :hasMother data:Mathilde_Kschessinska ;
-      :isSonOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+  data:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+          :Man .
 
-  data:Grand_Duchess_Maria_Pavlovna a :Ancestor,
-          :Person,
+  data:DanicaMarinkovi%C4%87 a :Ancestor,
           :Woman .
 
-  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
-          :Man,
-          :Person .
+  data:MariaDaGloria a :Ancestor,
+          :Woman .
 
-  data:Mathilde_Kschessinska a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1971 .
-
-  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1956 ;
-      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-      :hasMarriageYear 1921 ;
-      :hasMother data:Grand_Duchess_Maria_Pavlovna ;
-      :hasRelation data:Mathilde_Kschessinska .
+  data:PhilipKara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+          :Man ;
+      :hasBirthYear 1982 ;
+      :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:MariaDaGloria ;
+      :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87 .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e65bedc7-64c9-4339-9fe2-1ac0fee8fa03)
+ Call ID: e65bedc7-64c9-4339-9fe2-1ac0fee8fa03
+  Args:
 
 ================================= Tool Message =================================
 
@@ -981,6 +1058,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9431fc37-c749-4c69-b7f0-567a2edb068a)
- Call ID: 9431fc37-c749-4c69-b7f0-567a2edb068a
+  Finish (a9706ecf-a909-411f-a80c-38f4c0eff8b0)
+ Call ID: a9706ecf-a909-411f-a80c-38f4c0eff8b0
   Args:

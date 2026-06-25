@@ -2,40 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_Henry_Hubert_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 1923 ;
-    :hasDeathYear 2011 ;
-    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;
-    :hasMarriageYear 1949,
-        1967 ;
-    :hasMother data:Princess_Mary_Princess_Royal ;
-    :hasSon data:Mark_Lascelles .
+data:Count_Claus-Casimir_of_Orange-Nassau a :Man ;
+    :hasBirthYear 2004 ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien .
 
-data:Marion_Stein a :Person,
+data:Countess_Tatiana_Razumovsky_von_Wigstein a :Woman .
+
+data:Ed_P_Spanjaard a :Man .
+
+data:King_Willem-Alexander a :Man .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Maurits_of_Orange-Nassau a :Man .
+
+data:Princess_Beatrix a :Woman ;
+    :hasMother data:Queen_Juliana .
+
+data:Princess_Margriet a :Woman ;
+    :hasMother data:Queen_Juliana .
+
+data:Prince_Constantijn a :Ancestor,
+        :Man .
+
+data:Princess_Laurentien a :Ancestor,
         :Woman .
 
-data:Patricia_Tuckwell a :Person,
-        :Woman .
-
-data:Henry_Lascelles_6th_Earl_of_Harewood a :Ancestor,
-        :Man,
-        :Person .
-
-data:King_George_V a :Ancestor,
-        :Man,
-        :Person .
-
-data:Mark_Lascelles a :Man,
-        :Person .
-
-data:Princess_Mary_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
-
-data:Queen_Mary a :Ancestor,
-        :Person,
+data:Queen_Juliana a :Ancestor,
         :Woman .
 

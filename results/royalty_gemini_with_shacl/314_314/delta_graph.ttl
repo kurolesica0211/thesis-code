@@ -2,24 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:CarloAlessandro a :Man,
-        :Person ;
-    :hasBirthYear 1952 ;
-    :hasFather data:Raimundo ;
-    :hasMother data:EugenieOfGreeceAndDenmark ;
-    :hasSex data:Male .
-
-data:EugenieOfGreeceAndDenmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Raimundo a :Ancestor,
+data:Frederick_Francis_II a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :isFatherOf data:Henry_of_Mecklenburg-Schwerin .
 
-data:Male a :Sex .
+data:Jan_Derk_Lier a :Man,
+        :Person ;
+    :hasRelation data:Willemina_Martina_Wenneker .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Henry_of_Mecklenburg-Schwerin .
+
+data:Christina_Margaretha_Abbo a :Person,
+        :Woman ;
+    :isSisterOf data:Edith_Abbo .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Juliana .
+
+data:Willemina_Martina_Wenneker a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Christina_Margaretha_Abbo,
+        data:Edith_Abbo,
+        data:Pim_Lier .
+
+data:Edith_Abbo a :Person,
+        :Woman .
+
+data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1934 ;
+    :hasMarriageYear 1901 ;
+    :hasRelation data:Wilhelmina ;
+    :isFatherOf data:Juliana,
+        data:Pim_Lier .
+
+data:Juliana a :Person,
+        :Woman .
+
+data:Pim_Lier a :Man,
+        :Person .
 

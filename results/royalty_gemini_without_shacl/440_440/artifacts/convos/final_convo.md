@@ -69,53 +69,51 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
+John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
+Background
+
+Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
+Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
+Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
+Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
+Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
+The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
+Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
+Controversy
+
+Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
+According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
+When Nerissa died in 1986, none of her family attended the funeral.
+Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
+Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
+The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
+Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
+David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
+According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
+Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
+The Queen's Hidden Cousins
+
+In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
+The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
+"
 
 
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Prince Hugo de Bourbon de Parme (Carlos Hugo Roderik Sybren; born 20 January 1997), formerly Hugo Klynstra, is a member of the extended Dutch royal family as the son of Prince Carlos, Hereditary Duke of Parma.
-Born out of wedlock, he was denied titles and family rights by his father until the Dutch Council of State ruled in his favor in 2018, granting him the style and title of His Royal Highness Prince Carlos Hugo
-Roderik Sybren de Bourbon de Parme.
-Despite the ruling, he is neither a member of the Dutch royal house (although considered a member of the extended Dutch royal family) nor a member of the House of Bourbon-Parma and is not in the line of succession to the defunct Parmese throne.
-Early life and family
-
-Carlos Hugo Roderik Sybren Klynstra was born in Nijmegen on 20 January 1997 to Prince Carlos de Bourbon de Parme, Prince of Piacenza and his friend Brigitte Klynstra.
-Due to being an illegitimate son, he was not born a prince.
-His father told Dutch media that Hugo's birth was "his mother's wish" and an "independent decision", denying his son any family rights.
-His maternal grandmother, Ingrid Pieksma-Klynstra, was the wife of Adolph Roderik Ernst Leopold, Count of Rechteren-Limpurg.
-Through his father, he is a grandson of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands.
-He is the first great-grandchild of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-He is also a great-grandson of Prince Xavier of Bourbon-Parma and Madeleine de Bourbon-Busset.
-Upon the death of his grandfather, Carlos Hugo, in 2010, his father became the titular Duke of Parma and Piacenza, Carlist claimant to the Spanish throne, and the Head of the House of Bourbon-Parma.
-According to a royal decree of Queen Beatrix in 1996, his father is also a Dutch prince.
-He is the half-brother of Princess Luisa of Parma, Marchioness of Castell'Arquato, Princess Cecilia of Parma, Countess of Berceto and Prince Carlos of Parma, The Prince of Piacenza.
-Legal dispute over title
-
-Upon turning eighteen in 2015, Hugo went to court to have his surname changed from Klynstra to his father's surname, 'de Bourbon de Parme', and claimed the dutch noble title of prince.
-The Hereditary Duke of Parma insisted that he had a formal agreement with Hugo's mother that their relationship was "no-strings-attached" and that there would be "no family entanglement" following Hugo's conception.
-In 2016 the Ministry of Justice and Security ruled in favor of Hugo's claim and granted him the use of his father's surname.
-On 28 February 2018, the Dutch Council of State ruled in Hugo's favor, stating that Dutch law on nobility was clear and that the circumstances of Hugo's birth are irrelevant, granting Hugo the right to claim both his father's surname and (dutch) noble title and address.
-As such, he became His Royal Highness Prince Carlos Hugo Roderik Sybren de Bourbon de Parme.
-The title of 'Prince(ss) de Bourbon de Parme' is a Dutch title, bestowed by Queen Beatrix in 1996, and does not mean that Hugo automatically became a member of the House of Bourbon-Parma.
-The court ruling stated that membership to the House of Bourbon-Parma is "a private matter for the royal house itself".
-As such, he is not in the line of succession to the defunct Parma throne.
-Titles and styles
-
-References
-
-
-
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
+Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
+She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
+Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
+Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +129,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +146,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,248 +454,150 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (81f505e3-4884-4bbc-a0d7-fd07d99cb3c3)
- Call ID: 81f505e3-4884-4bbc-a0d7-fd07d99cb3c3
+  AssignClass (e620130b-0e00-46d1-bed6-b4f629bb7051)
+ Call ID: e620130b-0e00-46d1-bed6-b4f629bb7051
   Args:
+    source: Nerissa_Bowes-Lyon
+    type: :Woman
+  AssignClass (3c0d8b2f-0bda-4f6c-b679-fb13a80f7728)
+ Call ID: 3c0d8b2f-0bda-4f6c-b679-fb13a80f7728
+  Args:
+    source: Katherine_Bowes-Lyon
+    type: :Woman
+  AssignClass (ec29c1ab-d0e6-4519-ab72-df51af95b8a0)
+ Call ID: ec29c1ab-d0e6-4519-ab72-df51af95b8a0
+  Args:
+    source: John_Herbert_Bowes-Lyon
     type: :Man
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-  AssignClass (d2823582-bbcb-4489-bf5d-b0771e33edd8)
- Call ID: d2823582-bbcb-4489-bf5d-b0771e33edd8
+  AssignClass (eb975bd7-cb04-4599-b4c8-ea67bed5fe1e)
+ Call ID: eb975bd7-cb04-4599-b4c8-ea67bed5fe1e
   Args:
-    type: :Person
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-  AssignClass (a517342a-57b5-46f2-97d9-f67e0da48d3f)
- Call ID: a517342a-57b5-46f2-97d9-f67e0da48d3f
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Woman
+  AssignClass (dfa54d30-9a95-4c3c-adf1-6277229b6101)
+ Call ID: dfa54d30-9a95-4c3c-adf1-6277229b6101
   Args:
-    source: Prince_Carlos_de_Bourbon_de_Parme
+    source: Claude_Bowes-Lyon
     type: :Man
-  AssignClass (799974cb-53f2-49dc-a088-1c619eef227d)
- Call ID: 799974cb-53f2-49dc-a088-1c619eef227d
+  AssignClass (cd0f013f-f967-42f6-b4b8-671a2be8d784)
+ Call ID: cd0f013f-f967-42f6-b4b8-671a2be8d784
   Args:
-    type: :Person
-    source: Prince_Carlos_de_Bourbon_de_Parme
-  AssignClass (35875c3e-f8b6-4333-b106-77fae9389a4f)
- Call ID: 35875c3e-f8b6-4333-b106-77fae9389a4f
-  Args:
-    source: Brigitte_Klynstra
+    source: Cecilia_Bowes-Lyon
     type: :Woman
-  AssignClass (7f6a0144-5966-4d08-99c3-c47b160f3c48)
- Call ID: 7f6a0144-5966-4d08-99c3-c47b160f3c48
+  AssignClass (bcd58020-b4c7-4792-b2da-e70e5e3a0256)
+ Call ID: bcd58020-b4c7-4792-b2da-e70e5e3a0256
   Args:
-    source: Brigitte_Klynstra
-    type: :Person
-  AssignClass (78a6936b-e28c-4b32-9560-8c76ed88d8d1)
- Call ID: 78a6936b-e28c-4b32-9560-8c76ed88d8d1
-  Args:
-    type: :Woman
-    source: Ingrid_Pieksma-Klynstra
-  AssignClass (362dbdc1-2110-4ee2-b6d5-d8c061abd790)
- Call ID: 362dbdc1-2110-4ee2-b6d5-d8c061abd790
-  Args:
-    type: :Person
-    source: Ingrid_Pieksma-Klynstra
-  AssignClass (f479c859-1860-454f-9c75-505df5a18f79)
- Call ID: f479c859-1860-454f-9c75-505df5a18f79
-  Args:
-    source: Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
     type: :Man
-  AssignClass (688127cb-d5ab-4e4a-8201-a9044d06b63c)
- Call ID: 688127cb-d5ab-4e4a-8201-a9044d06b63c
+  AssignClass (cf686a3d-fc05-4d85-b5aa-01168bdf0a8d)
+ Call ID: cf686a3d-fc05-4d85-b5aa-01168bdf0a8d
   Args:
-    type: :Person
-    source: Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
-  AssignClass (1cebed92-e255-4c3f-86c8-229459337180)
- Call ID: 1cebed92-e255-4c3f-86c8-229459337180
-  Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
     type: :Man
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (47f338b4-486f-43fd-a0dd-d4853e00e471)
- Call ID: 47f338b4-486f-43fd-a0dd-d4853e00e471
+  AssignClass (89bb2ac7-d0bc-46e0-81fb-294ca0a4f8aa)
+ Call ID: 89bb2ac7-d0bc-46e0-81fb-294ca0a4f8aa
   Args:
-    type: :Person
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (3276efa0-409c-4437-a491-6a7d6045e75f)
- Call ID: 3276efa0-409c-4437-a491-6a7d6045e75f
-  Args:
+    source: Harriet_Williamina_Hepburn-Forbes
     type: :Woman
-    source: Princess_Irene_of_the_Netherlands
-  AssignClass (4dcccda5-06c9-4288-ade3-96d331bf19d4)
- Call ID: 4dcccda5-06c9-4288-ade3-96d331bf19d4
+  AssignClass (861144cf-3779-49ba-aa92-7fc9f7a43327)
+ Call ID: 861144cf-3779-49ba-aa92-7fc9f7a43327
   Args:
-    type: :Person
-    source: Princess_Irene_of_the_Netherlands
-  AssignClass (fadfcf2e-f01d-49f1-8717-d9511555e3f4)
- Call ID: fadfcf2e-f01d-49f1-8717-d9511555e3f4
-  Args:
-    source: Queen_Juliana_of_the_Netherlands
+    source: Lady_Jane_McDonnell
     type: :Woman
-  AssignClass (e5d235ee-d23e-4729-ae5c-ee2f8d621fa5)
- Call ID: e5d235ee-d23e-4729-ae5c-ee2f8d621fa5
-  Args:
-    type: :Person
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (9ca3a4a3-68c1-4a41-be84-bf3360fb89cd)
- Call ID: 9ca3a4a3-68c1-4a41-be84-bf3360fb89cd
-  Args:
-    type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AssignClass (b09544a4-a80b-40eb-9a5d-0827d9725010)
- Call ID: b09544a4-a80b-40eb-9a5d-0827d9725010
-  Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    type: :Person
-  AssignClass (c0e09466-f6dd-448c-bab3-7ddbf631bbad)
- Call ID: c0e09466-f6dd-448c-bab3-7ddbf631bbad
-  Args:
-    type: :Man
-    source: Prince_Xavier_of_Bourbon-Parma
-  AssignClass (8354d04e-c0aa-4b6e-9cbf-37bedfc66842)
- Call ID: 8354d04e-c0aa-4b6e-9cbf-37bedfc66842
-  Args:
-    type: :Person
-    source: Prince_Xavier_of_Bourbon-Parma
-  AssignClass (9cbe27d0-063d-437a-ae16-a0e47a99213c)
- Call ID: 9cbe27d0-063d-437a-ae16-a0e47a99213c
-  Args:
-    source: Madeleine_de_Bourbon-Busset
-    type: :Woman
-  AssignClass (841bfde6-365c-40e5-9fe9-87d981235798)
- Call ID: 841bfde6-365c-40e5-9fe9-87d981235798
-  Args:
-    source: Madeleine_de_Bourbon-Busset
-    type: :Person
-  AssignClass (49a5781f-11eb-4eb4-8d37-56454f94a121)
- Call ID: 49a5781f-11eb-4eb4-8d37-56454f94a121
-  Args:
-    source: Princess_Luisa_of_Parma
-    type: :Woman
-  AssignClass (c3367aca-1ee8-4039-96a6-506ab2981940)
- Call ID: c3367aca-1ee8-4039-96a6-506ab2981940
-  Args:
-    type: :Person
-    source: Princess_Luisa_of_Parma
-  AssignClass (10094dc1-b77b-4075-8c7a-b1c8494b5819)
- Call ID: 10094dc1-b77b-4075-8c7a-b1c8494b5819
-  Args:
-    source: Princess_Cecilia_of_Parma
-    type: :Woman
-  AssignClass (980f142c-3475-414d-a14d-173219d3f18a)
- Call ID: 980f142c-3475-414d-a14d-173219d3f18a
-  Args:
-    type: :Person
-    source: Princess_Cecilia_of_Parma
-  AssignClass (cbba8a0c-9667-4a82-9291-ebaf525fd27d)
- Call ID: cbba8a0c-9667-4a82-9291-ebaf525fd27d
-  Args:
-    source: Prince_Carlos_of_Parma
-    type: :Man
-  AssignClass (102533ce-0a25-4387-b3a6-b9188fd1a809)
- Call ID: 102533ce-0a25-4387-b3a6-b9188fd1a809
-  Args:
-    source: Prince_Carlos_of_Parma
-    type: :Person
-  AssignClass (384e47c1-c517-40ce-976d-93fcb0f7f6d9)
- Call ID: 384e47c1-c517-40ce-976d-93fcb0f7f6d9
-  Args:
-    source: Queen_Beatrix
-    type: :Woman
-  AssignClass (f5c6da4e-c13a-446e-abcb-87dadba346d5)
- Call ID: f5c6da4e-c13a-446e-abcb-87dadba346d5
-  Args:
-    source: Queen_Beatrix
-    type: :Person
-  AddTriple (ff194977-02ef-479b-9aee-ac9259294d7a)
- Call ID: ff194977-02ef-479b-9aee-ac9259294d7a
-  Args:
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-    target: Prince_Carlos_de_Bourbon_de_Parme
-    relation: :hasFather
-  AddTriple (06a9cbfe-5ff0-48f7-864d-f18700924945)
- Call ID: 06a9cbfe-5ff0-48f7-864d-f18700924945
-  Args:
-    relation: :hasMother
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-    target: Brigitte_Klynstra
-  AddLiteral (53c13267-fd12-4847-b422-404be1598ac9)
- Call ID: 53c13267-fd12-4847-b422-404be1598ac9
+  AddLiteral (b0de525d-ab9a-4d19-8751-db4c6a01a84c)
+ Call ID: b0de525d-ab9a-4d19-8751-db4c6a01a84c
   Args:
     literal_type: xsd:integer
+    source: Nerissa_Bowes-Lyon
+    literal_value: 1919
     relation: :hasBirthYear
-    literal_value: 1997
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-  AddTriple (290aa170-c033-456e-b060-dd7aecbac539)
- Call ID: 290aa170-c033-456e-b060-dd7aecbac539
+  AddLiteral (56a642dd-2f8a-4441-88c8-0fc0403e61cd)
+ Call ID: 56a642dd-2f8a-4441-88c8-0fc0403e61cd
+  Args:
+    source: Nerissa_Bowes-Lyon
+    literal_type: xsd:integer
+    literal_value: 1986
+    relation: :hasDeathYear
+  AddLiteral (1b71994a-5eb2-402b-93f2-f6231dc2f04c)
+ Call ID: 1b71994a-5eb2-402b-93f2-f6231dc2f04c
+  Args:
+    literal_value: 1926
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Katherine_Bowes-Lyon
+  AddLiteral (ec451f96-c41d-45a9-b9c2-0ca56425839d)
+ Call ID: ec451f96-c41d-45a9-b9c2-0ca56425839d
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2014
+    source: Katherine_Bowes-Lyon
+    literal_type: xsd:integer
+  AddTriple (11c9ee3a-8c9b-43fd-8cbf-35450ec85100)
+ Call ID: 11c9ee3a-8c9b-43fd-8cbf-35450ec85100
+  Args:
+    source: Nerissa_Bowes-Lyon
+    relation: :hasFather
+    target: John_Herbert_Bowes-Lyon
+  AddTriple (ae02991f-a4db-4876-b726-20c967a20e44)
+ Call ID: ae02991f-a4db-4876-b726-20c967a20e44
+  Args:
+    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasMother
+    source: Nerissa_Bowes-Lyon
+  AddTriple (d0b53608-a981-41a9-83b8-3297ec09d056)
+ Call ID: d0b53608-a981-41a9-83b8-3297ec09d056
+  Args:
+    source: Katherine_Bowes-Lyon
+    relation: :hasFather
+    target: John_Herbert_Bowes-Lyon
+  AddTriple (3793f1c2-7113-4a03-81cf-6bd1249e5830)
+ Call ID: 3793f1c2-7113-4a03-81cf-6bd1249e5830
+  Args:
+    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasMother
+    source: Katherine_Bowes-Lyon
+  AddTriple (54f72e28-3a17-4aa8-a6c2-8724f244a69e)
+ Call ID: 54f72e28-3a17-4aa8-a6c2-8724f244a69e
+  Args:
+    source: John_Herbert_Bowes-Lyon
+    relation: :hasFather
+    target: Claude_Bowes-Lyon
+  AddTriple (9c4ca7f3-8dae-4f9b-bbcb-58036f21ccbe)
+ Call ID: 9c4ca7f3-8dae-4f9b-bbcb-58036f21ccbe
   Args:
     relation: :hasMother
-    target: Ingrid_Pieksma-Klynstra
-    source: Brigitte_Klynstra
-  AddTriple (283b9987-b4f4-4c75-b16b-16fd2eb5698b)
- Call ID: 283b9987-b4f4-4c75-b16b-16fd2eb5698b
+    target: Cecilia_Bowes-Lyon
+    source: John_Herbert_Bowes-Lyon
+  AddTriple (12b98de5-2bb8-428f-89a0-8a463c4e1bbb)
+ Call ID: 12b98de5-2bb8-428f-89a0-8a463c4e1bbb
   Args:
     relation: :hasFather
-    target: Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
-    source: Brigitte_Klynstra
-  AddTriple (d4bea461-1aee-4807-a03f-9dc312ef27f3)
- Call ID: d4bea461-1aee-4807-a03f-9dc312ef27f3
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AddTriple (2a44aa3b-2c3b-4347-9ea4-33c828ad816f)
+ Call ID: 2a44aa3b-2c3b-4347-9ea4-33c828ad816f
   Args:
-    source: Prince_Carlos_de_Bourbon_de_Parme
-    target: Carlos_Hugo_Duke_of_Parma
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
     relation: :hasFather
-  AddTriple (15be6c5e-a887-4b2b-b506-d2291aa867dc)
- Call ID: 15be6c5e-a887-4b2b-b506-d2291aa867dc
+  AddTriple (b4a743e3-c936-4666-8f8c-f5220cf87a2a)
+ Call ID: b4a743e3-c936-4666-8f8c-f5220cf87a2a
   Args:
-    source: Prince_Carlos_de_Bourbon_de_Parme
-    target: Princess_Irene_of_the_Netherlands
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
     relation: :hasMother
-  AddTriple (cb11fcee-a569-43d2-9fc1-15ea9cd90788)
- Call ID: cb11fcee-a569-43d2-9fc1-15ea9cd90788
+    target: Harriet_Williamina_Hepburn-Forbes
+  AddTriple (a4d0dd03-c751-424a-8709-3e9b4f3f3273)
+ Call ID: a4d0dd03-c751-424a-8709-3e9b4f3f3273
   Args:
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    source: Princess_Irene_of_the_Netherlands
-    relation: :hasFather
-  AddTriple (45d98e8d-3132-40e1-875f-427218c328ab)
- Call ID: 45d98e8d-3132-40e1-875f-427218c328ab
-  Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
+    target: Harriet_Williamina_Hepburn-Forbes
     relation: :hasMother
-    target: Queen_Juliana_of_the_Netherlands
-    source: Princess_Irene_of_the_Netherlands
-  AddTriple (36fbfc88-df8f-4390-bcf3-3d0b1872003b)
- Call ID: 36fbfc88-df8f-4390-bcf3-3d0b1872003b
+  AddTriple (547bd2d1-bbae-43fb-9196-d8205bd40d90)
+ Call ID: 547bd2d1-bbae-43fb-9196-d8205bd40d90
   Args:
-    relation: :hasFather
-    source: Prince_Carlos_de_Bourbon_de_Parme
-    target: Prince_Xavier_of_Bourbon-Parma
-  AddTriple (6f9f25f2-1829-4ae4-add8-f207539f290e)
- Call ID: 6f9f25f2-1829-4ae4-add8-f207539f290e
-  Args:
+    target: Lady_Jane_McDonnell
     relation: :hasMother
-    target: Madeleine_de_Bourbon-Busset
-    source: Prince_Carlos_de_Bourbon_de_Parme
-  AddTriple (ea9cb03c-7ffb-4310-b089-15da4ecf27cc)
- Call ID: ea9cb03c-7ffb-4310-b089-15da4ecf27cc
-  Args:
-    target: Prince_Carlos_de_Bourbon_de_Parme
-    source: Princess_Luisa_of_Parma
-    relation: :hasFather
-  AddTriple (5cf9c84d-fa80-426a-88c9-10af20cbc146)
- Call ID: 5cf9c84d-fa80-426a-88c9-10af20cbc146
-  Args:
-    relation: :hasFather
-    target: Prince_Carlos_de_Bourbon_de_Parme
-    source: Princess_Cecilia_of_Parma
-  AddTriple (c47e7a84-b2d1-430a-994f-db916b3132cc)
- Call ID: c47e7a84-b2d1-430a-994f-db916b3132cc
-  Args:
-    relation: :hasFather
-    target: Prince_Carlos_de_Bourbon_de_Parme
-    source: Prince_Carlos_of_Parma
-  AddLiteral (481d2e14-047c-4043-9884-3086973fbe5f)
- Call ID: 481d2e14-047c-4043-9884-3086973fbe5f
-  Args:
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-    literal_value: Hugo Klynstra
-    source: Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
-  Finish (244ee846-7d2b-41f9-bdf9-b9c72f2cbc0b)
- Call ID: 244ee846-7d2b-41f9-bdf9-b9c72f2cbc0b
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+  Finish (9e1ac248-0eb4-44ef-9549-1e4ffec0d681)
+ Call ID: 9e1ac248-0eb4-44ef-9549-1e4ffec0d681
   Args:

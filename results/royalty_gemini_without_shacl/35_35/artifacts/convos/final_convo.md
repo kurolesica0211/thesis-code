@@ -73,6 +73,8 @@ Louis Alphonse de Bourbon, Duke of Anjou (Spanish: Luis Alfonso Gonzalo Víctor 
 His claim is based on his descent from Louis XIV (r. 1643–1715) through his grandson Philip V of Spain.
 The rival Orleanist pretenders argue that this, as well as being born a Spanish citizen, makes Louis Alphonse ineligible for the throne.
 Louis Alphonse is patrilineally the senior great-grandson of King Alfonso XIII of Spain.
+His grandfather Infante Jaime, Duke of Segovia, renounced his rights to the Spanish throne for himself and his descendants owing to his deafness.
+Since the death of his father in 1989, he has used the courtesy title of Duke of Anjou.
 Early life
 
 Birth
@@ -80,6 +82,7 @@ Birth
 Louis Alphonse was born in Madrid, the second son of Alfonso de Borbón, Duke of Anjou and Cádiz, and of his wife María del Carmen Martínez-Bordiú y Franco, eldest granddaughter of Francisco Franco.
 Alfonso was at that time the dauphin (using "Duke of Bourbon" as title of pretence) according to those who supported the claim of his father, Infante Jaime, Duke of Segovia to the French throne.
 On 20 March 1975, Jaime died, and Alfonso then asserted his claim to be Head of the House of Bourbon and Legitimist claimant to the throne of France.
+As such, he took the title "Duke of Anjou".
 Childhood
 
 Louis Alphonse's parents separated in 1982, and their Catholic marriage was annulled in 1986.
@@ -118,13 +121,20 @@ French Legitimists recognize her as Eugénie, Madame Royale,: 47  the style comm
 
 
 The couple had twin sons, Louis and Alphonse, on 28 May 2010 in New York City.
+Their father has conferred upon them the historic French titles of, respectively, Duke of Burgundy (duc de Bourgogne) and Duke of Berry (duc de Berry).
 In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
+47 
+
+
+Their fourth child, Henri, was born on 1 February 2019 in New York and was granted the title of Duke of Touraine (duc de Touraine) by his father.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +150,9 @@ In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +167,23 @@ In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,183 +475,190 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (19e23701-f82f-4ef9-873e-e0e70c0d35fe)
- Call ID: 19e23701-f82f-4ef9-873e-e0e70c0d35fe
+  AssignClass (b7d5aeb3-8967-4c41-bcab-32156d9a7a90)
+ Call ID: b7d5aeb3-8967-4c41-bcab-32156d9a7a90
   Args:
     type: :Man
     source: Louis_Alphonse_de_Bourbon
-  AddLiteral (82712084-35a6-4248-986c-4339ea498bc4)
- Call ID: 82712084-35a6-4248-986c-4339ea498bc4
+  AssignClass (e6585b07-eec4-46e0-a19c-392d0705cccd)
+ Call ID: e6585b07-eec4-46e0-a19c-392d0705cccd
   Args:
-    relation: :hasBirthYear
-    literal_value: 1974
-    source: Louis_Alphonse_de_Bourbon
-    literal_type: xsd:integer
-  AssignClass (706d1815-5c22-48df-a356-c4a31ff1e073)
- Call ID: 706d1815-5c22-48df-a356-c4a31ff1e073
-  Args:
-    type: :Man
     source: Alfonso_de_Borbon
-  AssignClass (4f277be6-864d-48a2-93b1-467fe1577c6a)
- Call ID: 4f277be6-864d-48a2-93b1-467fe1577c6a
+    type: :Man
+  AssignClass (9bf409f7-0dc3-456a-97f2-810d3fc21143)
+ Call ID: 9bf409f7-0dc3-456a-97f2-810d3fc21143
   Args:
-    type: :Woman
     source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AddTriple (9491f0bf-fb64-4695-85d1-7a1395c174c3)
- Call ID: 9491f0bf-fb64-4695-85d1-7a1395c174c3
-  Args:
-    target: Alfonso_de_Borbon
-    relation: :hasFather
-    source: Louis_Alphonse_de_Bourbon
-  AddTriple (9bec44f8-f235-4acf-b7e5-83778428b81b)
- Call ID: 9bec44f8-f235-4acf-b7e5-83778428b81b
-  Args:
-    source: Louis_Alphonse_de_Bourbon
-    relation: :hasMother
-    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (91586bde-d608-4693-b9f5-b8a2ad831bd6)
- Call ID: 91586bde-d608-4693-b9f5-b8a2ad831bd6
-  Args:
-    type: :Man
-    source: Francisco_de_Borbon
-  AddTriple (cd92e84a-c51c-4a07-b5a4-f013614e7f9a)
- Call ID: cd92e84a-c51c-4a07-b5a4-f013614e7f9a
-  Args:
-    relation: :hasBrother
-    target: Francisco_de_Borbon
-    source: Louis_Alphonse_de_Bourbon
-  AddTriple (0ba238ba-f027-44a2-821f-492db243aea6)
- Call ID: 0ba238ba-f027-44a2-821f-492db243aea6
-  Args:
-    relation: :hasFather
-    target: Alfonso_de_Borbon
-    source: Francisco_de_Borbon
-  AddTriple (3566b93f-a9ce-43e0-b9d2-d12523644ea5)
- Call ID: 3566b93f-a9ce-43e0-b9d2-d12523644ea5
-  Args:
-    source: Francisco_de_Borbon
-    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    relation: :hasMother
-  AddLiteral (7b7375cb-4175-4b76-a8bc-f5c3fa3702ab)
- Call ID: 7b7375cb-4175-4b76-a8bc-f5c3fa3702ab
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1984
-    literal_type: xsd:integer
-    source: Francisco_de_Borbon
-  AssignClass (371665cb-6259-48cc-a50b-a38fbc0c625b)
- Call ID: 371665cb-6259-48cc-a50b-a38fbc0c625b
-  Args:
-    type: :Man
-    source: Jaime_de_Borbon
-  AddTriple (cc0e8bcc-f42c-41a8-b7a7-006e2bcf59b4)
- Call ID: cc0e8bcc-f42c-41a8-b7a7-006e2bcf59b4
-  Args:
-    target: Jaime_de_Borbon
-    relation: :hasFather
-    source: Alfonso_de_Borbon
-  AddLiteral (4f94e9c6-fa64-44a8-8c1c-c7ce68cbe091)
- Call ID: 4f94e9c6-fa64-44a8-8c1c-c7ce68cbe091
-  Args:
-    literal_value: 1975
-    relation: :hasDeathYear
-    source: Jaime_de_Borbon
-    literal_type: xsd:integer
-  AssignClass (5071c6a8-7f91-4c8f-bb89-1ec8e9559aa3)
- Call ID: 5071c6a8-7f91-4c8f-bb89-1ec8e9559aa3
+    type: :Woman
+  AssignClass (21eead22-5a7a-4620-bae9-67cfc4c34c69)
+ Call ID: 21eead22-5a7a-4620-bae9-67cfc4c34c69
   Args:
     type: :Man
     source: Francisco_Franco
-  AddTriple (65137d19-6f15-4c01-b054-c1da1502464b)
- Call ID: 65137d19-6f15-4c01-b054-c1da1502464b
+  AssignClass (91bb7990-399f-46e0-987c-bd894cc969da)
+ Call ID: 91bb7990-399f-46e0-987c-bd894cc969da
   Args:
-    target: Francisco_Franco
-    relation: :hasFather
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (357fb5b4-68e4-4201-9013-0c4719618e75)
- Call ID: 357fb5b4-68e4-4201-9013-0c4719618e75
-  Args:
-    type: :Woman
-    source: Maria_Margarita_Vargas_Santaella
-  AddTriple (f844c8ba-c6e6-4989-86e0-ed81ad1fe824)
- Call ID: f844c8ba-c6e6-4989-86e0-ed81ad1fe824
-  Args:
-    source: Louis_Alphonse_de_Bourbon
-    relation: :hasRelation
-    target: Maria_Margarita_Vargas_Santaella
-  AssignClass (856618e1-d4d3-4794-957d-b04757100e2b)
- Call ID: 856618e1-d4d3-4794-957d-b04757100e2b
-  Args:
-    type: :Woman
-    source: Eugenie_de_Borbon_y_Vargas
-  AddTriple (cd3f15ec-6b3a-4fb9-93f0-a333d22ddf6c)
- Call ID: cd3f15ec-6b3a-4fb9-93f0-a333d22ddf6c
-  Args:
-    target: Louis_Alphonse_de_Bourbon
-    relation: :hasFather
-    source: Eugenie_de_Borbon_y_Vargas
-  AddTriple (b41371a4-ec6b-49b3-88bd-c91c4b865ab3)
- Call ID: b41371a4-ec6b-49b3-88bd-c91c4b865ab3
-  Args:
-    source: Eugenie_de_Borbon_y_Vargas
-    relation: :hasMother
-    target: Maria_Margarita_Vargas_Santaella
-  AssignClass (0d781d60-ae37-4f12-a274-368767cc6383)
- Call ID: 0d781d60-ae37-4f12-a274-368767cc6383
+    source: Infante_Jaime
+    type: :Man
+  AssignClass (888742ca-d7f4-4452-9c50-db6b6b4bc9da)
+ Call ID: 888742ca-d7f4-4452-9c50-db6b6b4bc9da
   Args:
     type: :Man
-    source: Louis_de_Borbon_y_Vargas
-  AddTriple (e207c7cc-92c7-4a24-ab85-ce37cef85542)
- Call ID: e207c7cc-92c7-4a24-ab85-ce37cef85542
+    source: Francisco_de_Borbon
+  AssignClass (0c80de8f-8ef2-4e4b-bbde-1e5ec2663081)
+ Call ID: 0c80de8f-8ef2-4e4b-bbde-1e5ec2663081
   Args:
-    source: Louis_de_Borbon_y_Vargas
-    target: Louis_Alphonse_de_Bourbon
-    relation: :hasFather
-  AddTriple (43db1d5a-3512-4b43-b9d7-14993a059751)
- Call ID: 43db1d5a-3512-4b43-b9d7-14993a059751
-  Args:
-    relation: :hasMother
-    target: Maria_Margarita_Vargas_Santaella
-    source: Louis_de_Borbon_y_Vargas
-  AssignClass (f78cd3f6-2f43-4ffe-b2ff-f4f44b5dc600)
- Call ID: f78cd3f6-2f43-4ffe-b2ff-f4f44b5dc600
-  Args:
+    source: Alfonso_XIII
     type: :Man
-    source: Alphonse_de_Borbon_y_Vargas
-  AddTriple (aa649251-d82c-4797-8b77-04bbae6ffd83)
- Call ID: aa649251-d82c-4797-8b77-04bbae6ffd83
-  Args:
-    source: Alphonse_de_Borbon_y_Vargas
-    relation: :hasFather
-    target: Louis_Alphonse_de_Bourbon
-  AddTriple (60b36961-315f-423f-a84a-828754f5d38d)
- Call ID: 60b36961-315f-423f-a84a-828754f5d38d
-  Args:
-    source: Alphonse_de_Borbon_y_Vargas
-    relation: :hasMother
-    target: Maria_Margarita_Vargas_Santaella
-  AssignClass (4658d4ae-f4e7-4065-8cc2-97d355763353)
- Call ID: 4658d4ae-f4e7-4065-8cc2-97d355763353
-  Args:
-    type: :Man
-    source: Victor_Vargas
-  AddTriple (742eced8-63a6-412b-b6cb-2ba427e50b9b)
- Call ID: 742eced8-63a6-412b-b6cb-2ba427e50b9b
-  Args:
-    source: Maria_Margarita_Vargas_Santaella
-    target: Victor_Vargas
-    relation: :hasFather
-  AssignClass (14481a11-143c-4e7b-a9bf-9e495c3f861e)
- Call ID: 14481a11-143c-4e7b-a9bf-9e495c3f861e
+  AssignClass (78b0e2d5-350b-4a80-8389-cd820ff51455)
+ Call ID: 78b0e2d5-350b-4a80-8389-cd820ff51455
   Args:
     type: :Woman
     source: Emmanuelle_de_Dampierre
-  AddTriple (b7283c5f-dc03-4051-bb6f-b6ac024d3027)
- Call ID: b7283c5f-dc03-4051-bb6f-b6ac024d3027
+  AssignClass (93ad9582-4084-4926-8b2e-db7d07c59939)
+ Call ID: 93ad9582-4084-4926-8b2e-db7d07c59939
+  Args:
+    type: :Woman
+    source: Maria_Margarita_Vargas_Santaella
+  AssignClass (6f340255-67bb-4dc2-8952-186c1fc79b57)
+ Call ID: 6f340255-67bb-4dc2-8952-186c1fc79b57
+  Args:
+    type: :Man
+    source: Victor_Vargas
+  AssignClass (a984a798-0cb6-4568-9e0f-633b34c73890)
+ Call ID: a984a798-0cb6-4568-9e0f-633b34c73890
+  Args:
+    type: :Woman
+    source: Eugenie_de_Borbon_y_Vargas
+  AssignClass (a43cbc09-5c23-4aa0-be59-a50845b32e68)
+ Call ID: a43cbc09-5c23-4aa0-be59-a50845b32e68
+  Args:
+    source: Louis_de_Borbon_y_Vargas
+    type: :Man
+  AssignClass (053cbef2-6f04-4cc9-ad91-1f52540e40e2)
+ Call ID: 053cbef2-6f04-4cc9-ad91-1f52540e40e2
+  Args:
+    source: Alphonse_de_Borbon_y_Vargas
+    type: :Man
+  AssignClass (52241923-42ea-4313-9758-c499d6ef935c)
+ Call ID: 52241923-42ea-4313-9758-c499d6ef935c
+  Args:
+    source: Henri_de_Borbon_y_Vargas
+    type: :Man
+  AssignClass (263d2f73-b9b2-40aa-b4ea-9e9ffa12f34c)
+ Call ID: 263d2f73-b9b2-40aa-b4ea-9e9ffa12f34c
+  Args:
+    source: Carmen_Franco
+    type: :Woman
+  AddLiteral (f8d78fe6-ef37-421f-be78-4bb5556b42d7)
+ Call ID: f8d78fe6-ef37-421f-be78-4bb5556b42d7
+  Args:
+    literal_value: 1974
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Louis_Alphonse_de_Bourbon
+  AddTriple (a6161c24-d181-4d43-918a-9c49f86a4845)
+ Call ID: a6161c24-d181-4d43-918a-9c49f86a4845
+  Args:
+    source: Louis_Alphonse_de_Bourbon
+    target: Alfonso_de_Borbon
+    relation: :hasFather
+  AddTriple (2d6263d5-7a97-402c-b8f4-6cd22c49ff16)
+ Call ID: 2d6263d5-7a97-402c-b8f4-6cd22c49ff16
+  Args:
+    source: Louis_Alphonse_de_Bourbon
+    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    relation: :hasMother
+  AddTriple (c6938390-f11f-4854-8061-40a5dc7a9e6b)
+ Call ID: c6938390-f11f-4854-8061-40a5dc7a9e6b
+  Args:
+    source: Alfonso_de_Borbon
+    target: Infante_Jaime
+    relation: :hasFather
+  AddTriple (e2b8f054-a3ac-4c6a-b016-6739363531c1)
+ Call ID: e2b8f054-a3ac-4c6a-b016-6739363531c1
+  Args:
+    source: Louis_Alphonse_de_Bourbon
+    relation: :hasFather
+    target: Francisco_de_Borbon
+  AddTriple (8b57de55-04a7-41d0-9f24-fa798e2e6483)
+ Call ID: 8b57de55-04a7-41d0-9f24-fa798e2e6483
+  Args:
+    target: Alfonso_XIII
+    relation: :hasFather
+    source: Infante_Jaime
+  AddTriple (f3c32d4b-1392-44ba-85a0-5e5af17dad6b)
+ Call ID: f3c32d4b-1392-44ba-85a0-5e5af17dad6b
   Args:
     source: Alfonso_de_Borbon
     relation: :hasMother
     target: Emmanuelle_de_Dampierre
-  Finish (4bef61e8-dde5-4978-89dd-6cc03a36d869)
- Call ID: 4bef61e8-dde5-4978-89dd-6cc03a36d869
+  AddTriple (b37c0246-de62-4d0c-b82e-a2def37e3711)
+ Call ID: b37c0246-de62-4d0c-b82e-a2def37e3711
+  Args:
+    target: Francisco_Franco
+    relation: :hasFather
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+  AddTriple (c5ac2b6b-a022-4b67-91ff-9a29ebec96a1)
+ Call ID: c5ac2b6b-a022-4b67-91ff-9a29ebec96a1
+  Args:
+    source: Eugenie_de_Borbon_y_Vargas
+    relation: :hasFather
+    target: Louis_Alphonse_de_Bourbon
+  AddTriple (fc5b6ece-5201-4460-8bc6-c81b4f89bd36)
+ Call ID: fc5b6ece-5201-4460-8bc6-c81b4f89bd36
+  Args:
+    relation: :hasMother
+    target: Maria_Margarita_Vargas_Santaella
+    source: Eugenie_de_Borbon_y_Vargas
+  AddTriple (d5fcd96a-d76e-477d-aa76-19361a853c3f)
+ Call ID: d5fcd96a-d76e-477d-aa76-19361a853c3f
+  Args:
+    source: Louis_de_Borbon_y_Vargas
+    target: Louis_Alphonse_de_Bourbon
+    relation: :hasFather
+  AddTriple (e2009629-4663-45eb-97ab-93389911dd95)
+ Call ID: e2009629-4663-45eb-97ab-93389911dd95
+  Args:
+    relation: :hasMother
+    target: Maria_Margarita_Vargas_Santaella
+    source: Louis_de_Borbon_y_Vargas
+  AddTriple (babf1f90-71e6-4d58-b944-f5b9ca275c3b)
+ Call ID: babf1f90-71e6-4d58-b944-f5b9ca275c3b
+  Args:
+    source: Alphonse_de_Borbon_y_Vargas
+    target: Louis_Alphonse_de_Bourbon
+    relation: :hasFather
+  AddTriple (fe66985c-0b15-42ee-8c40-7972b44ad136)
+ Call ID: fe66985c-0b15-42ee-8c40-7972b44ad136
+  Args:
+    source: Alphonse_de_Borbon_y_Vargas
+    relation: :hasMother
+    target: Maria_Margarita_Vargas_Santaella
+  AddTriple (4045e469-7580-450d-8c5f-a1b474b1e628)
+ Call ID: 4045e469-7580-450d-8c5f-a1b474b1e628
+  Args:
+    target: Louis_Alphonse_de_Bourbon
+    relation: :hasFather
+    source: Henri_de_Borbon_y_Vargas
+  AddTriple (6263f786-5ae5-498e-8a8c-124841210892)
+ Call ID: 6263f786-5ae5-498e-8a8c-124841210892
+  Args:
+    relation: :hasMother
+    target: Maria_Margarita_Vargas_Santaella
+    source: Henri_de_Borbon_y_Vargas
+  AddTriple (1143ff51-26f7-4469-ae93-b136311b1b20)
+ Call ID: 1143ff51-26f7-4469-ae93-b136311b1b20
+  Args:
+    target: Victor_Vargas
+    relation: :hasFather
+    source: Maria_Margarita_Vargas_Santaella
+  AddTriple (6e4705f3-960d-4980-899b-24061f2523d7)
+ Call ID: 6e4705f3-960d-4980-899b-24061f2523d7
+  Args:
+    relation: :hasMother
+    target: Carmen_Franco
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+  Finish (5aa146d9-5bf7-47a7-b4a1-a8b34ee1cb0f)
+ Call ID: 5aa146d9-5bf7-47a7-b4a1-a8b34ee1cb0f
   Args:

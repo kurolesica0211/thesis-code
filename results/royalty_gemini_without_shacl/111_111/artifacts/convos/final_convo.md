@@ -71,7 +71,6 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 India Amanda Caroline Hicks (born 5 September 1967) is a British designer, writer, businesswoman and former fashion model.
 After graduating from the New England School of Photography, Hicks became an interior designer and a model for Ralph Lauren, among others.
-She moved to the Bahamas in 1996, where she published books, promoted home and beauty products, and introduced a line of jewellery.
 Hicks travels frequently to disaster sites in her role with the non-profit organisation Global Empowerment Mission.
 A daughter of Lady Pamela Hicks, she is a maternal descendant of the House of Mountbatten and a relative of the British royal family.
 Early life
@@ -92,12 +91,10 @@ Career
 After graduating college, Hicks' father introduced her to Emilio Pucci in Florence, Italy, where she modelled swimsuits.
 Hicks moved to the Bahamas in 1996.
 In the Bahamas, Hicks restored homes, invested and remodelled a hotel, and published several books on design and lifestyle.
-Her first book called Island Life was a design book with photographs of Hibiscus Hill, a house she designed.
 Hicks also started a boutique shop in the Bahamas called the Sugar Mill Trading Company with business partner Linda Griffin.
 From 2005 to 2014, Hicks worked with Crabtree & Evelyn as a spokeswoman and creative consultant for home and skincare products.
 The company created the India Hicks Island Living and India Hicks Island Night lines of soaps, candles, and perfumes.
 In 2008, Hicks co-hosted the second season of the Bravo interior design show Top Design in Los Angeles, California.
-She introduced her own line of jewellery in 2011.
 Hicks also became a public commentator on events surrounding the royal family and the 2011 wedding of Prince William and Catherine Middleton.
 In 2015, Hicks created an e-commerce venture called India Hicks Inc. with partners Nicholas Keuper and HauteLook.
 Hicks also worked with the Home Shopping Network on a line of bedding products called India Hicks Island Living.
@@ -108,7 +105,6 @@ He was previously in a relationship with her cousin, Lady Helen Windsor and then
 India and David re-connected as adults during a holiday in the Bahamas.
 The couple have a house, "America Farm" in Ewelme, Oxfordshire, built on land that Hicks had inherited and replacing two redundant farm workers' cottages.
 Hicks' book about the project, India Hicks:
-The Story of Four Houses – A Slice of England, was published by  Rizzoli International Publications in 2018.
 Hicks has competed in several marathons.
 In 2020, Hicks pleaded guilty at Uxbridge Magistrates' Court to shoplifting a coat and was ordered to pay costs and a victim surcharge.
 Her spokesperson stated: "The court accepted that at the time of taking the coat, India had simply been absent-minded and hadn't intended to leave without paying for it".
@@ -118,6 +114,8 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +131,9 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +148,23 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,71 +456,71 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4da8bc9d-0353-4298-bd9d-febe96bf9b34)
- Call ID: 4da8bc9d-0353-4298-bd9d-febe96bf9b34
+  AssignClass (c89c79ab-cbb3-46a3-aa2d-25f70aa59d36)
+ Call ID: c89c79ab-cbb3-46a3-aa2d-25f70aa59d36
   Args:
-    type: :Person
-    source: India_Hicks
-  AssignClass (2f678997-376f-4017-833d-601db074e2be)
- Call ID: 2f678997-376f-4017-833d-601db074e2be
-  Args:
+    source: India Hicks
     type: :Woman
-    source: India_Hicks
-  AssignClass (5dcf9fd1-7cbf-49af-9b59-cbd76d828b01)
- Call ID: 5dcf9fd1-7cbf-49af-9b59-cbd76d828b01
+  AssignClass (e7de127f-4cc9-4b0c-8371-ad9cb6c1256a)
+ Call ID: e7de127f-4cc9-4b0c-8371-ad9cb6c1256a
   Args:
-    source: Lady_Pamela_Mountbatten
+    source: India Hicks
     type: :Person
-  AssignClass (e6d71ec7-805e-4c07-bb38-dc77a01d5e51)
- Call ID: e6d71ec7-805e-4c07-bb38-dc77a01d5e51
-  Args:
-    source: Lady_Pamela_Mountbatten
-    type: :Woman
-  AssignClass (c764e8a4-d1d1-45d9-abf9-cc6a56fc0c54)
- Call ID: c764e8a4-d1d1-45d9-abf9-cc6a56fc0c54
-  Args:
-    source: David_Nightingale_Hicks
-    type: :Person
-  AssignClass (36b24dec-4294-47f4-8e0c-ccb85cb54761)
- Call ID: 36b24dec-4294-47f4-8e0c-ccb85cb54761
-  Args:
-    source: David_Nightingale_Hicks
-    type: :Man
-  AddTriple (1055e7fa-06e9-4e65-acb4-c59b06004f97)
- Call ID: 1055e7fa-06e9-4e65-acb4-c59b06004f97
-  Args:
-    source: India_Hicks
-    target: Lady_Pamela_Mountbatten
-    relation: :hasMother
-  AddTriple (8b57409a-6234-48bf-87db-fee1638cb539)
- Call ID: 8b57409a-6234-48bf-87db-fee1638cb539
-  Args:
-    source: India_Hicks
-    relation: :hasFather
-    target: David_Nightingale_Hicks
-  AddLiteral (03c967db-39dc-4560-ac0b-5ff977ca4c0d)
- Call ID: 03c967db-39dc-4560-ac0b-5ff977ca4c0d
+  AddLiteral (fec8494d-6285-46b8-a156-940d27d8aa42)
+ Call ID: fec8494d-6285-46b8-a156-940d27d8aa42
   Args:
     literal_type: xsd:integer
     literal_value: 1967
-    source: India_Hicks
+    source: India Hicks
     relation: :hasBirthYear
-  AssignClass (78107fad-90db-4cef-a66f-5d0a18174b20)
- Call ID: 78107fad-90db-4cef-a66f-5d0a18174b20
+  AssignClass (501c192e-7fe3-48cb-8ba2-4f34a8082917)
+ Call ID: 501c192e-7fe3-48cb-8ba2-4f34a8082917
   Args:
-    source: David_Flint_Wood
+    type: :Woman
+    source: Lady Pamela Mountbatten
+  AssignClass (e95b1f0d-1e3e-4344-b400-4958493f2f20)
+ Call ID: e95b1f0d-1e3e-4344-b400-4958493f2f20
+  Args:
+    source: Lady Pamela Mountbatten
     type: :Person
-  AssignClass (7bddf910-2af9-4046-a27c-3d3489acf249)
- Call ID: 7bddf910-2af9-4046-a27c-3d3489acf249
+  AssignClass (0e75e37e-f33e-4fd0-b421-248f31df6f3c)
+ Call ID: 0e75e37e-f33e-4fd0-b421-248f31df6f3c
   Args:
     type: :Man
-    source: David_Flint_Wood
-  AddTriple (0fc47930-4d4a-4035-b3b9-348ba79ae8ed)
- Call ID: 0fc47930-4d4a-4035-b3b9-348ba79ae8ed
+    source: David Nightingale Hicks
+  AssignClass (38101376-640a-4c56-ac83-13ec50a827bd)
+ Call ID: 38101376-640a-4c56-ac83-13ec50a827bd
   Args:
-    target: David_Flint_Wood
+    source: David Nightingale Hicks
+    type: :Person
+  AddTriple (14d99aae-84ee-4f88-88d1-f6931ee92993)
+ Call ID: 14d99aae-84ee-4f88-88d1-f6931ee92993
+  Args:
+    target: Lady Pamela Mountbatten
+    source: India Hicks
+    relation: :hasMother
+  AddTriple (f31c448c-efcc-42c8-898c-e2d8162e17e4)
+ Call ID: f31c448c-efcc-42c8-898c-e2d8162e17e4
+  Args:
+    relation: :hasFather
+    source: India Hicks
+    target: David Nightingale Hicks
+  AssignClass (63cfac64-33ac-41e9-ab4b-177bdd4b2a23)
+ Call ID: 63cfac64-33ac-41e9-ab4b-177bdd4b2a23
+  Args:
+    source: David Flint Wood
+    type: :Man
+  AssignClass (ec4b419f-73ef-430c-bc1a-542ac29c2fbe)
+ Call ID: ec4b419f-73ef-430c-bc1a-542ac29c2fbe
+  Args:
+    source: David Flint Wood
+    type: :Person
+  AddTriple (797fec8e-9ecb-4813-8f40-34227c4730c4)
+ Call ID: 797fec8e-9ecb-4813-8f40-34227c4730c4
+  Args:
+    target: David Flint Wood
     relation: :hasRelation
-    source: India_Hicks
-  Finish (a79f1bfa-ed82-4510-89a2-061e02b4989b)
- Call ID: a79f1bfa-ed82-4510-89a2-061e02b4989b
+    source: India Hicks
+  Finish (af379772-1c79-49fa-bd48-5591270b37d7)
+ Call ID: af379772-1c79-49fa-bd48-5591270b37d7
   Args:

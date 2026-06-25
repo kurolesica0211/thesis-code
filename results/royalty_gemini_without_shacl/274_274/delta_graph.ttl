@@ -2,29 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
-        :Person ;
-    :hasBirthYear 1885 ;
-    :hasDeathYear 1949 ;
-    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear 1916 ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Princess_Marie_Louise_of_Orleans .
-
-data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
-
-data:Prince_Emmanuel_Duke_of_Vendome a :Man,
-        :Person .
-
-data:Princess_Henriette_of_Belgium a :Person,
-        :Woman .
-
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Princess_Marie_Louise_of_Orleans a :Person,
+data:Lady_Amelia_Windsor a :Person,
         :Woman ;
-    :hasFather data:Prince_Emmanuel_Duke_of_Vendome ;
-    :hasMother data:Princess_Henriette_of_Belgium .
+    :hasBirthYear 1995 ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Lady_Marina_Windsor .
+
+data:Lord_Nicholas_Windsor a :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man,
+        :Person .
+
+data:George_V a :Man,
+        :Person .
+
+data:George_Windsor_Earl_of_St_Andrews a :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Lady_Marina_Windsor a :Person,
+        :Woman .
+
+data:Mary_of_Teck a :Person,
+        :Woman .
+
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Mary_of_Teck .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Sir_William_Worsley_4th_Baronet a :Man,
+        :Person .
+
+data:Sylvana_Tomaselli a :Person,
+        :Woman .
+
+data:Katharine_Duchess_of_Kent a :Person,
+        :Woman ;
+    :hasFather data:Sir_William_Worsley_4th_Baronet .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
 

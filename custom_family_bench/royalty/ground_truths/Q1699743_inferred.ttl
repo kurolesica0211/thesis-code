@@ -1,0 +1,80 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Davina_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Davina Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "229:256"^^xsd:string,
+        "301:317"^^xsd:string ;
+    data:posIndicesPart "1001:1007"^^xsd:string,
+        "367:373"^^xsd:string,
+        "586:591"^^xsd:string,
+        "592:596"^^xsd:string ;
+    data:wdtLink wdt:Q75253177 ;
+    :alsoKnownAs "Davina Dalrymple, Countess of Stair"^^xsd:string,
+        "Davina Dalrymple, Viscountess Dalrymple"^^xsd:string,
+        "Davina Katherine Bowes-Lyon"^^xsd:string,
+        "Davina Katherine Dalrymple, Countess of Stair"^^xsd:string,
+        "Davina Katherine Dalrymple, Viscountess Dalrymple"^^xsd:string,
+        "Davina Stair"^^xsd:string ;
+    :hasChild data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :hasRelation data:Davina_Bowes-Lyon,
+        data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :hasSex data:female ;
+    :hasSister data:Davina_Bowes-Lyon ;
+    :hasSon data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isAncestorOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isAuntOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isBloodrelationOf data:Davina_Bowes-Lyon ;
+    :isMotherOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isParentOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isSiblingOf data:Davina_Bowes-Lyon ;
+    :isSisterOf data:Davina_Bowes-Lyon .
+
+data:John_Dalrymple-_14th_Earl_of_Stair a :Man,
+        :Person ;
+    rdfs:label "John Dalrymple, 14th Earl of Stair"^^xsd:string ;
+    data:posIndicesFull "0:46"^^xsd:string ;
+    data:posIndicesPart "1061:1066"^^xsd:string,
+        "1106:1111"^^xsd:string,
+        "161:166"^^xsd:string,
+        "190:194"^^xsd:string,
+        "195:204"^^xsd:string,
+        "211:215"^^xsd:string,
+        "219:224"^^xsd:string,
+        "351:356"^^xsd:string,
+        "686:695"^^xsd:string,
+        "918:923"^^xsd:string ;
+    data:wdtLink wdt:Q1699743 ;
+    :alsoKnownAs "John David James Dalrymple, 14th Earl of Stair"^^xsd:string,
+        "John Stair"^^xsd:string ;
+    :hasAncestor data:Davina_Bowes-Lyon ;
+    :hasBrother data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :hasMother data:Davina_Bowes-Lyon ;
+    :hasParent data:Davina_Bowes-Lyon ;
+    :hasRelation data:Davina_Bowes-Lyon,
+        data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isBrotherOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isChildOf data:Davina_Bowes-Lyon ;
+    :isSiblingOf data:John_Dalrymple-_14th_Earl_of_Stair ;
+    :isSonOf data:Davina_Bowes-Lyon .
+

@@ -69,59 +69,21 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Princess Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies (Full Italian name: Maria Immacolata Speranza Pia Teresa Cristina Filomena Lucia Anna Isabella Cecilia Apollonia Barbara Agnese Zenobia, Principessa di Borbone delle
+Due Sicilie,) (30 October 1874 – 28 November 1947) was the fourth child and eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
+Marriage
 
-
-Princess Tomislav
-
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Peter Karageorgevitch (Serbian Cyrillic: Петар Карађорђевић, romanized: Petar Karađorđević; born 5 February 1980), also known as Prince Peter of Serbia and Yugoslavia, is an American born Spanish-Serbian graphic designer and a member of the House of Karađorđević.
-He is the oldest grandchild and the first grandson of the last Yugoslav king, Peter II.
-Between his birth and his renunciation in 2022, he was known as the Hereditary Prince.
-Early life and education
-
-Peter is the first son and the oldest child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and Princess Maria da Gloria of Orléans-Braganza.
-His godfather was Prince Alexander of Yugoslavia, a son of Prince Paul of Yugoslavia.
-His godmother is Anne, Princess Royal.
-Peter has two younger brothers, twins Philip and Alexander (born 1982).
-Peter's parents divorced in 1985.
-After the divorce, his father married Katherine Clairy Batis later that year, while his mother married Ignacio, Duke of Segorbe later that year also.
-Through his mother, Peter has two younger half-sisters, Sol María de la Blanca Medina y Orléans-Braganza, Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, Countess of Ricla (b. 1988).
-In 1991, Peter with his father and brothers briefly visited Belgrade, Yugoslavia.
-In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Peter eligible for a Yugoslav citizenship.
-In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
-In June 1998, Peter graduated from The King's School, Canterbury, in England, having obtained three A-levels in Art, Spanish, and French, and ten GCSEs.
-Public life
-
-Prince Peter attended the reburial of his grandparents King Peter II and Queen Alexandra, great-grandmother Queen Maria, and great-uncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Peter placing the Karađorđević Crown.
-On 17 July 2015, Prince Peter and his brothers were present at their father's 70th birthday celebration in Belgrade.
-On 27 April 2022, Prince Peter renounced his title of Hereditary Prince – for himself and his descendants – in favor of his younger brother Philip.
-The ceremony took place in Seville at Casa de Pilatos in the presence of his mother Princess Maria da Gloria, his stepfather the 19th Duke of Segorbe, his brother Philip, his sister-in-law Princess Danica, his half sister the 54th Countess of Ampurias, Ljubodrag Grujić, member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević, and Nikola Stanković, Chief of Staff of the Crown Prince.
-His father, Crown Prince Alexander, did not attend the event, and was dissatisfied with Peter's renunciation.
-Personal life
-
-Prince Peter used to work in a field of graphic design and art direction in London and New York City.
-Peter has a daughter named Dolores Luna Noor born in 2017 by Lauren Estelle Jones (b. 1984).
-Honours
-
-Ancestors
-
-Peter is a member of the House of Karađorđević.
-Through his father, Peter descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Peter descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and king Charles III of Spain.
+Maria Immaculata married Prince Johann Georg of Saxony, sixth child and second-eldest son of George of Saxony and his wife Maria Anna of Portugal, on 30 October 1906 in Cannes.
+Her mother-in-law, Maria Anna, was the daughter of Maria II of Portugal and her husband Ferdinand II of Portugal.
+The couple did not have children, but Maria Immaculata cared for the children of her brother-in-law Frederick Augustus III of Saxony.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -137,39 +99,9 @@ Through his mother, Peter descends from the Emperor Pedro II of Brazil, and king
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -184,6 +116,23 @@ Through his mother, Peter descends from the Emperor Pedro II of Brazil, and king
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -201,6 +150,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,29 +232,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -299,6 +255,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -311,6 +275,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -319,17 +285,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -357,6 +325,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -372,179 +424,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (772941cf-abe9-4d1c-b4ac-198bb9e7541c)
- Call ID: 772941cf-abe9-4d1c-b4ac-198bb9e7541c
+  AssignClass (4f72fcdb-8065-4e5d-a89f-e9388a725ca5)
+ Call ID: 4f72fcdb-8065-4e5d-a89f-e9388a725ca5
   Args:
-    source: Peter_Karageorgevitch
-    type: :Man
-  AssignClass (fd4de57e-10bb-4762-9d10-dd9de8000341)
- Call ID: fd4de57e-10bb-4762-9d10-dd9de8000341
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (b1dd3c70-d3f5-40e8-8992-3d0957eb315c)
+ Call ID: b1dd3c70-d3f5-40e8-8992-3d0957eb315c
   Args:
     type: :Person
-    source: Peter_Karageorgevitch
-  AddLiteral (89f629ff-f300-4d3d-bb3f-30a34b2def48)
- Call ID: 89f629ff-f300-4d3d-bb3f-30a34b2def48
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AddLiteral (b6585026-8f73-400c-88e0-135bb8fde104)
+ Call ID: b6585026-8f73-400c-88e0-135bb8fde104
   Args:
-    literal_value: Prince Peter of Serbia and Yugoslavia
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Peter_Karageorgevitch
-  AddLiteral (0e5b1cb3-08a7-49a4-87d0-4da608c8ff80)
- Call ID: 0e5b1cb3-08a7-49a4-87d0-4da608c8ff80
-  Args:
-    literal_type: xsd:string
-    source: Peter_Karageorgevitch
-    relation: :formerlyKnownAs
-    literal_value: Hereditary Prince
-  AddLiteral (79db761b-9cb9-4a2f-9c49-03aa6461e14c)
- Call ID: 79db761b-9cb9-4a2f-9c49-03aa6461e14c
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    literal_value: 1874
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (4945bd8e-e05f-49a5-9092-c2489d8df38c)
+ Call ID: 4945bd8e-e05f-49a5-9092-c2489d8df38c
   Args:
     literal_type: xsd:integer
-    source: Peter_Karageorgevitch
-    relation: :hasBirthYear
-    literal_value: 1980
-  AssignClass (1e4dd0ec-a0ee-4d78-bac0-7dc161e7345f)
- Call ID: 1e4dd0ec-a0ee-4d78-bac0-7dc161e7345f
+    relation: :hasDeathYear
+    literal_value: 1947
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AssignClass (97687fba-2cb2-424c-9faf-f2ed6fd27be8)
+ Call ID: 97687fba-2cb2-424c-9faf-f2ed6fd27be8
   Args:
+    source: Alfonso_of_Bourbon-Two_Sicilies
     type: :Man
-    source: Alexander_Yugoslavia
-  AssignClass (a889bcac-327f-4ec1-9a3a-712090552bd3)
- Call ID: a889bcac-327f-4ec1-9a3a-712090552bd3
+  AssignClass (ef825655-724d-4d71-ae4b-4e47eb7b5bb8)
+ Call ID: ef825655-724d-4d71-ae4b-4e47eb7b5bb8
   Args:
     type: :Person
-    source: Alexander_Yugoslavia
-  AssignClass (3ab80e20-23ca-4927-ba32-53d8229fc8c3)
- Call ID: 3ab80e20-23ca-4927-ba32-53d8229fc8c3
+    source: Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (d1e21d9e-88f1-412c-96e9-f307510bb4f5)
+ Call ID: d1e21d9e-88f1-412c-96e9-f307510bb4f5
   Args:
     type: :Woman
-    source: Maria_da_Gloria
-  AssignClass (06e3f19d-fa63-4d81-a75c-10dad68d21d0)
- Call ID: 06e3f19d-fa63-4d81-a75c-10dad68d21d0
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (063ba211-f3e8-4195-8c2b-d831550defad)
+ Call ID: 063ba211-f3e8-4195-8c2b-d831550defad
   Args:
-    source: Maria_da_Gloria
     type: :Person
-  AddTriple (ad6456aa-e2e1-4693-8ffe-52e4c07d7f6a)
- Call ID: ad6456aa-e2e1-4693-8ffe-52e4c07d7f6a
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AddTriple (b8dc422d-5f10-4abe-8166-22b4bebd04b8)
+ Call ID: b8dc422d-5f10-4abe-8166-22b4bebd04b8
   Args:
-    source: Peter_Karageorgevitch
     relation: :hasFather
-    target: Alexander_Yugoslavia
-  AddTriple (01b174a1-08c6-4a52-9bfd-6ab7f7e53dd3)
- Call ID: 01b174a1-08c6-4a52-9bfd-6ab7f7e53dd3
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    target: Alfonso_of_Bourbon-Two_Sicilies
+  AddTriple (226c6da6-554c-4807-a17a-4f80b617cc6b)
+ Call ID: 226c6da6-554c-4807-a17a-4f80b617cc6b
   Args:
-    source: Peter_Karageorgevitch
+    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    target: Maria_da_Gloria
-  AssignClass (3d35239c-8684-4e2c-b8b5-731c8841c521)
- Call ID: 3d35239c-8684-4e2c-b8b5-731c8841c521
+  AssignClass (d6659f5e-59e3-410d-a27e-c08970c388aa)
+ Call ID: d6659f5e-59e3-410d-a27e-c08970c388aa
   Args:
+    source: Johann_Georg_of_Saxony
     type: :Man
-    source: Philip_Karageorgevitch
-  AssignClass (0f99432c-1096-4050-a702-da1e13847cd0)
- Call ID: 0f99432c-1096-4050-a702-da1e13847cd0
-  Args:
-    source: Philip_Karageorgevitch
-    type: :Person
-  AddTriple (a45aa2c3-ad27-4429-a225-2bdbb3ed99d7)
- Call ID: a45aa2c3-ad27-4429-a225-2bdbb3ed99d7
-  Args:
-    target: Philip_Karageorgevitch
-    source: Peter_Karageorgevitch
-    relation: :hasBrother
-  AssignClass (149dc905-859a-4ab3-a634-22995ad25c0c)
- Call ID: 149dc905-859a-4ab3-a634-22995ad25c0c
-  Args:
-    type: :Man
-    source: Alexander_Jr_Karageorgevitch
-  AssignClass (ba4821d7-dbca-4dec-93ed-cfd989d4352d)
- Call ID: ba4821d7-dbca-4dec-93ed-cfd989d4352d
+  AssignClass (f2c87680-c29b-40cc-b035-72ce238c4671)
+ Call ID: f2c87680-c29b-40cc-b035-72ce238c4671
   Args:
     type: :Person
-    source: Alexander_Jr_Karageorgevitch
-  AddTriple (6fa52b03-d14b-4870-96e1-0fe43e3ce9a2)
- Call ID: 6fa52b03-d14b-4870-96e1-0fe43e3ce9a2
-  Args:
-    source: Peter_Karageorgevitch
-    relation: :hasBrother
-    target: Alexander_Jr_Karageorgevitch
-  AssignClass (506cdd06-2c80-44ed-827d-d800486ec01c)
- Call ID: 506cdd06-2c80-44ed-827d-d800486ec01c
-  Args:
-    type: :Woman
-    source: Dolores_Luna_Noor
-  AssignClass (2ff557a7-ee45-4f9c-83b3-9259f0efabcf)
- Call ID: 2ff557a7-ee45-4f9c-83b3-9259f0efabcf
-  Args:
-    type: :Person
-    source: Dolores_Luna_Noor
-  AddTriple (94656023-d773-4be6-88b1-7e06eabbb61e)
- Call ID: 94656023-d773-4be6-88b1-7e06eabbb61e
-  Args:
-    target: Dolores_Luna_Noor
-    source: Peter_Karageorgevitch
-    relation: :hasDaughter
-  AddLiteral (dc76e737-8aac-4639-9d41-ba55b4ab1d9f)
- Call ID: dc76e737-8aac-4639-9d41-ba55b4ab1d9f
+    source: Johann_Georg_of_Saxony
+  AddLiteral (6c8fa419-9c63-426c-aa85-343b29ffee2b)
+ Call ID: 6c8fa419-9c63-426c-aa85-343b29ffee2b
   Args:
     literal_type: xsd:integer
-    source: Dolores_Luna_Noor
-    relation: :hasBirthYear
-    literal_value: 2017
-  AssignClass (82791e0b-de37-4eb7-9f41-8ca395dc618e)
- Call ID: 82791e0b-de37-4eb7-9f41-8ca395dc618e
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    literal_value: 1906
+    relation: :hasMarriageYear
+  AddTriple (8d3fef7f-51e8-40c7-91e3-f2626e0a3c9c)
+ Call ID: 8d3fef7f-51e8-40c7-91e3-f2626e0a3c9c
+  Args:
+    target: Johann_Georg_of_Saxony
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    relation: :hasRelation
+  AssignClass (d635f268-a0dc-4ac2-978a-e28bf5b7c2ca)
+ Call ID: d635f268-a0dc-4ac2-978a-e28bf5b7c2ca
+  Args:
+    type: :Man
+    source: George_of_Saxony
+  AssignClass (518ca630-4d60-4479-9580-7d301d530d5e)
+ Call ID: 518ca630-4d60-4479-9580-7d301d530d5e
+  Args:
+    source: George_of_Saxony
+    type: :Person
+  AssignClass (c1b9c647-1594-429d-bc15-105d2fb7e1b0)
+ Call ID: c1b9c647-1594-429d-bc15-105d2fb7e1b0
   Args:
     type: :Woman
-    source: Lauren_Estelle_Jones
-  AssignClass (dc27350a-554a-4d9c-a214-2da07a703d0a)
- Call ID: dc27350a-554a-4d9c-a214-2da07a703d0a
+    source: Maria_Anna_of_Portugal
+  AssignClass (edea653f-32cb-494d-92d8-6aa7a0047676)
+ Call ID: edea653f-32cb-494d-92d8-6aa7a0047676
   Args:
-    source: Lauren_Estelle_Jones
     type: :Person
-  AddTriple (22879756-6733-4c24-9ed8-744efcf4b54e)
- Call ID: 22879756-6733-4c24-9ed8-744efcf4b54e
+    source: Maria_Anna_of_Portugal
+  AddTriple (82cdfcc8-2ddc-4210-8640-e4fdbf971481)
+ Call ID: 82cdfcc8-2ddc-4210-8640-e4fdbf971481
   Args:
-    source: Dolores_Luna_Noor
+    target: George_of_Saxony
+    relation: :hasFather
+    source: Johann_Georg_of_Saxony
+  AddTriple (776fb90a-fa48-4dcd-8bea-19e9b239a869)
+ Call ID: 776fb90a-fa48-4dcd-8bea-19e9b239a869
+  Args:
+    target: Maria_Anna_of_Portugal
     relation: :hasMother
-    target: Lauren_Estelle_Jones
-  AddLiteral (40173553-3267-4994-bb12-1133fd87e2d5)
- Call ID: 40173553-3267-4994-bb12-1133fd87e2d5
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Lauren_Estelle_Jones
-    literal_value: 1984
-  AssignClass (f1aa53b1-cdca-4be8-b289-50506b7548df)
- Call ID: f1aa53b1-cdca-4be8-b289-50506b7548df
+    source: Johann_Georg_of_Saxony
+  AssignClass (bbeb2d09-540f-4d8a-9ec6-73366fef4db5)
+ Call ID: bbeb2d09-540f-4d8a-9ec6-73366fef4db5
   Args:
     type: :Woman
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
-  AssignClass (0404c13c-e0fe-4738-982c-1dcd3c2391f6)
- Call ID: 0404c13c-e0fe-4738-982c-1dcd3c2391f6
+    source: Maria_II_of_Portugal
+  AssignClass (2162fd2f-8f0a-4d45-a807-b0a1a6b12367)
+ Call ID: 2162fd2f-8f0a-4d45-a807-b0a1a6b12367
+  Args:
+    source: Maria_II_of_Portugal
+    type: :Person
+  AssignClass (9f8482b2-fa2b-4907-a555-11469ed752e4)
+ Call ID: 9f8482b2-fa2b-4907-a555-11469ed752e4
+  Args:
+    source: Ferdinand_II_of_Portugal
+    type: :Man
+  AssignClass (634f595b-e1e6-4be5-872f-e0d7c7812fe8)
+ Call ID: 634f595b-e1e6-4be5-872f-e0d7c7812fe8
   Args:
     type: :Person
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
-  AddTriple (7f845f35-9cb2-4be9-8c40-07f96cda6c2b)
- Call ID: 7f845f35-9cb2-4be9-8c40-07f96cda6c2b
+    source: Ferdinand_II_of_Portugal
+  AddTriple (fbedc4fb-be41-4999-87dc-37017a290b8c)
+ Call ID: fbedc4fb-be41-4999-87dc-37017a290b8c
   Args:
-    target: Maria_da_Gloria
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
+    target: Maria_II_of_Portugal
     relation: :hasMother
-  AssignClass (7898ffa6-d9be-4bf9-a8d8-8e14b270be31)
- Call ID: 7898ffa6-d9be-4bf9-a8d8-8e14b270be31
+    source: Maria_Anna_of_Portugal
+  AddTriple (98d84fd7-c250-4466-baaf-037bc5f096a3)
+ Call ID: 98d84fd7-c250-4466-baaf-037bc5f096a3
   Args:
-    source: Ana_Luna_Medina_y_Orleans_Braganza
-    type: :Woman
-  AssignClass (c3817b0d-e978-437a-a91f-790adcd6622d)
- Call ID: c3817b0d-e978-437a-a91f-790adcd6622d
+    relation: :hasFather
+    source: Maria_Anna_of_Portugal
+    target: Ferdinand_II_of_Portugal
+  AssignClass (68c4a468-d735-4f6c-ac70-13971c1dbdca)
+ Call ID: 68c4a468-d735-4f6c-ac70-13971c1dbdca
   Args:
-    source: Ana_Luna_Medina_y_Orleans_Braganza
+    type: :Man
+    source: Frederick_Augustus_III_of_Saxony
+  AssignClass (29858aa7-4be9-4683-b4fb-100aa2c0fdf0)
+ Call ID: 29858aa7-4be9-4683-b4fb-100aa2c0fdf0
+  Args:
+    source: Frederick_Augustus_III_of_Saxony
     type: :Person
-  AddTriple (d37a92ba-1adb-4b4d-b7a5-fa6ff6ae98c3)
- Call ID: d37a92ba-1adb-4b4d-b7a5-fa6ff6ae98c3
+  AddTriple (4c8c5050-ffad-45e7-a7d9-6d5b7b4af402)
+ Call ID: 4c8c5050-ffad-45e7-a7d9-6d5b7b4af402
   Args:
-    source: Ana_Luna_Medina_y_Orleans_Braganza
-    relation: :hasMother
-    target: Maria_da_Gloria
-  Finish (44d15daa-a0db-434e-89e8-709b6c2782d3)
- Call ID: 44d15daa-a0db-434e-89e8-709b6c2782d3
+    target: Frederick_Augustus_III_of_Saxony
+    relation: :hasBrother
+    source: Johann_Georg_of_Saxony
+  Finish (9c3d05ab-9c52-4b5e-894a-528a21993346)
+ Call ID: 9c3d05ab-9c52-4b5e-894a-528a21993346
   Args:

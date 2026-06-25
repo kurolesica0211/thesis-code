@@ -2,58 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Hendrik_of_the_Netherlands a :Man,
-        :Person ;
-    :hasSister data:Elisabeth_of_Mecklenburg-Schwerin .
+data:Amedeo_Michele a :Man ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece .
 
-data:Sophia_Charlotte_of_Oldenburg a :Person,
-        :Woman ;
-    :isDaughterOf data:Elisabeth_Anna_of_Oldenburg,
-        data:Frederick_Augustus_II_of_Oldenburg .
+data:Isabella_Vita_Marina a :Woman ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece .
 
-data:Adolph_of_Schwarzburg-Rudolstadt a :Man,
-        :Person .
+data:Umberto a :Man ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece .
 
-data:Alexandrine_of_Prussia a :Person,
-        :Woman .
+data:Amedeo%2C_5th_Duke_of_Aosta a :Man .
 
-data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1955 ;
-    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
-    :hasMarriageYear 1896 ;
-    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
-    :hasRelation data:Frederick_Augustus_II_of_Oldenburg ;
-    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-        data:Marie_of_Russia .
+data:Princess_Alexandra a :Woman ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella .
 
-data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-        :Person .
+data:The%C3%B3doros_Kar%C3%A9llas a :Man .
 
-data:Frederick_Francis_II_of_Mecklenburg a :Man,
-        :Person ;
-    :hasFather data:Paul_Frederick_of_Mecklenburg ;
-    :hasMother data:Alexandrine_of_Prussia .
+data:Marina_Karella a :Woman ;
+    :hasFather data:The%C3%B3doros_Kar%C3%A9llas .
 
-data:Marie_of_Russia a :Person,
-        :Woman .
+data:Prince_Michael_of_Greece_and_Denmark a :Man .
 
-data:Marie_of_Schwarzburg-Rudolstadt a :Person,
-        :Woman ;
-    :hasFather data:Adolph_of_Schwarzburg-Rudolstadt ;
-    :hasMother data:Mathilde_of_Sch%C3%B6nburg-Waldenburg .
+data:Prince_Aimone%2C_Duke_of_Aosta a :Man ;
+    :hasFather data:Amedeo%2C_5th_Duke_of_Aosta .
 
-data:Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Person,
-        :Woman .
-
-data:Paul_Frederick_of_Mecklenburg a :Man,
-        :Person .
-
-data:Elisabeth_Anna_of_Oldenburg a :Person,
-        :Woman .
-
-data:Frederick_Augustus_II_of_Oldenburg a :Man,
-        :Person ;
-    :hasRelation data:Elisabeth_Anna_of_Oldenburg .
+data:Princess_Olga_of_Greece a :Woman ;
+    :hasBirthYear 1971 ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella ;
+    :hasSister data:Princess_Alexandra .
 

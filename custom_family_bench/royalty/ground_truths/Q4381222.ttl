@@ -7,33 +7,27 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Samuel_Chatto a :Person ;
+    rdfs:label "Samuel Chatto" ;
+    data:posIndicesFull "0:13" ;
+    data:posIndicesPart "295:301",
+        "394:400",
+        "467:473",
+        "536:542",
+        "631:637",
+        "848:854" ;
+    data:wdtLink wdt:Q4381222 ;
+    :hasParent data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "281:293",
-        "740:752" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isAuntOf data:Lady_Sarah_Chatto ;
-    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
-
-data:Daniel_Chatto a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Daniel_Chatto a :Person ;
     rdfs:label "Daniel Chatto" ;
     data:posIndicesFull "159:172" ;
     data:posIndicesPart "295:301",
@@ -45,57 +39,9 @@ data:Daniel_Chatto a :Ancestor,
     data:wdtLink wdt:Q331657 ;
     :alsoKnownAs "Daniel St George Chatto",
         "Daniel St. George Chatto" ;
-    :hasChild data:Samuel_Chatto ;
-    :hasSex data:male ;
-    :hasSon data:Samuel_Chatto ;
-    :isFatherOf data:Samuel_Chatto ;
-    :isParentOf data:Samuel_Chatto .
+    :hasSex data:male .
 
-data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret, Countess of Snowdon" ;
-    data:posIndicesFull "220:258" ;
-    data:wdtLink wdt:Q153815 ;
-    :alsoKnownAs "Margaret Rose",
-        "Margaret Windsor",
-        "Margaret York" ;
-    :hasChild data:Lady_Sarah_Chatto ;
-    :hasDaughter data:Lady_Sarah_Chatto ;
-    :hasSex data:female ;
-    :hasSister data:Elizabeth_II ;
-    :isMotherOf data:Lady_Sarah_Chatto ;
-    :isParentOf data:Lady_Sarah_Chatto ;
-    :isSiblingOf data:Elizabeth_II ;
-    :isSisterOf data:Elizabeth_II .
-
-data:Samuel_Chatto a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Samuel Chatto" ;
-    data:posIndicesFull "0:13" ;
-    data:posIndicesPart "295:301",
-        "394:400",
-        "467:473",
-        "536:542",
-        "631:637",
-        "848:854" ;
-    data:wdtLink wdt:Q4381222 ;
-    :hasFather data:Daniel_Chatto ;
-    :hasMother data:Lady_Sarah_Chatto ;
-    :hasParent data:Daniel_Chatto,
-        data:Lady_Sarah_Chatto ;
-    :hasSex data:male ;
-    :isChildOf data:Daniel_Chatto,
-        data:Lady_Sarah_Chatto ;
-    :isSonOf data:Daniel_Chatto,
-        data:Lady_Sarah_Chatto .
-
-data:Lady_Sarah_Chatto a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Sarah_Chatto a :Person ;
     rdfs:label "Lady Sarah Chatto" ;
     data:posIndicesFull "137:154" ;
     data:posIndicesPart "295:301",
@@ -110,13 +56,19 @@ data:Lady_Sarah_Chatto a :Ancestor,
         "Sarah Armstrong-Jones",
         "Sarah Frances Elizabeth Armstrong-Jones",
         "Sarah Frances Elizabeth Chatto" ;
-    :hasChild data:Samuel_Chatto ;
-    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
     :hasParent data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:female ;
-    :hasSon data:Samuel_Chatto ;
-    :isChildOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isDaughterOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isMotherOf data:Samuel_Chatto ;
-    :isParentOf data:Samuel_Chatto .
+    :hasSex data:female .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Person ;
+    rdfs:label "Princess Margaret, Countess of Snowdon" ;
+    data:posIndicesFull "220:258" ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose",
+        "Margaret Windsor",
+        "Margaret York" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

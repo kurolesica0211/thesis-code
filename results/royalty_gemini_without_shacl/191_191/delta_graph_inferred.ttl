@@ -1,0 +1,174 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EmanueleFilibertoDukeOfAosta a :Man,
+        :Person ;
+    :hasBrother data:EmanueleFilibertoDukeOfAosta ;
+    :hasRelation data:EmanueleFilibertoDukeOfAosta ;
+    :isBloodrelationOf data:EmanueleFilibertoDukeOfAosta ;
+    :isBrotherOf data:EmanueleFilibertoDukeOfAosta ;
+    :isSiblingOf data:EmanueleFilibertoDukeOfAosta .
+
+data:OttoCampini a :Man,
+        :Person ;
+    :hasBrother data:OttoCampini ;
+    :hasRelation data:OttoCampini ;
+    :isBloodrelationOf data:OttoCampini ;
+    :isBrotherOf data:OttoCampini ;
+    :isSiblingOf data:OttoCampini .
+
+data:MariaIsabelOfSpain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:HeleneOfOrleans ;
+    :hasDaughter data:HeleneOfOrleans ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :hasSister data:MariaIsabelOfSpain ;
+    :isAncestorOf data:HeleneOfOrleans ;
+    :isAuntOf data:HeleneOfOrleans ;
+    :isBloodrelationOf data:MariaIsabelOfSpain ;
+    :isMotherOf data:HeleneOfOrleans ;
+    :isParentOf data:HeleneOfOrleans ;
+    :isSiblingOf data:MariaIsabelOfSpain ;
+    :isSisterOf data:MariaIsabelOfSpain .
+
+data:PhilippeCountOfParis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PhilippeCountOfParis ;
+    :hasChild data:HeleneOfOrleans ;
+    :hasDaughter data:HeleneOfOrleans ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :isAncestorOf data:HeleneOfOrleans ;
+    :isBloodrelationOf data:PhilippeCountOfParis ;
+    :isBrotherOf data:PhilippeCountOfParis ;
+    :isFatherOf data:HeleneOfOrleans ;
+    :isParentOf data:HeleneOfOrleans ;
+    :isSiblingOf data:PhilippeCountOfParis ;
+    :isUncleOf data:HeleneOfOrleans .
+
+data:AmelieOfOrleans a :Person,
+        :Woman ;
+    :hasBrother data:PhilippeDukeOfOrleans ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :hasSister data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise ;
+    :isBloodrelationOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSiblingOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSisterOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans .
+
+data:IsabelleDuchessOfGuise a :Person,
+        :Woman ;
+    :hasBrother data:PhilippeDukeOfOrleans ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :hasSister data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise ;
+    :isBloodrelationOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSiblingOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSisterOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans .
+
+data:PhilippeDukeOfOrleans a :Man,
+        :Person ;
+    :hasBrother data:PhilippeDukeOfOrleans ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :hasSister data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise ;
+    :isBloodrelationOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isBrotherOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSiblingOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans .
+
+data:HeleneOfOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis ;
+    :hasBirthYear 1871 ;
+    :hasBrother data:PhilippeDukeOfOrleans ;
+    :hasDeathYear 1951 ;
+    :hasFather data:PhilippeCountOfParis ;
+    :hasMarriageYear 1895,
+        1936 ;
+    :hasMother data:MariaIsabelOfSpain ;
+    :hasParent data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis ;
+    :hasRelation data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis,
+        data:PhilippeDukeOfOrleans ;
+    :hasSister data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise ;
+    :isBloodrelationOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isChildOf data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis ;
+    :isDaughterOf data:MariaIsabelOfSpain,
+        data:PhilippeCountOfParis ;
+    :isSiblingOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans ;
+    :isSisterOf data:AmelieOfOrleans,
+        data:HeleneOfOrleans,
+        data:IsabelleDuchessOfGuise,
+        data:PhilippeDukeOfOrleans .
+

@@ -85,39 +85,132 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Feodora of Saxe-Meiningen (Feodora Karola Charlotte Marie Adelheid Auguste Mathilde; 29 May 1890 – 12 March 1972) was the eldest child of Prince Friedrich Johann of Saxe-Meiningen, a younger son of Georg II, Duke of Saxe-Meiningen, and Countess Adelaide of Lippe-Biesterfeld, a daughter of Ernst, Count of Lippe-Biesterfeld.
-By marriage, she was known as Grand Duchess of Saxe-Weimar-Eisenach.
-Biography
+The Custodian of the Crown  Prince Radu
 
+
+Princess Elena 
+Princess Irina 
+Princess Sophie 
+Princess Maria 
+
+
+Margareta of Romania, self-styled as Custodian of the Romanian Crown, (Romanian: Custode al Coroanei române; born 26 March 1949) is the eldest daughter of King Michael I and Queen Anne of Romania.
+She assumed her father's duties in March 2016, upon his retirement, and has claimed the headship of the House of Romania since his death on 5 December 2017.
+She also heads the Margareta of Romania Royal Foundation.
+Until 2011, Margareta also used the style of a princess of Hohenzollern.
+Margareta has four sisters and no brothers or children.
+Her heir presumptive is her next sister, Princess Elena of Romania.
+Under the defunct royal constitutions of 1923 and 1938 which followed agnatic primogeniture, Margareta and her sisters would not have been in the line of succession to the throne.
+On 30 December 2007, King Michael designated Margareta as heir presumptive to the defunct throne by an act that is not recognized by the Romanian government and lacks legal validity without approval by Romania's Parliament.
+On the same occasion, Michael also requested that, should the Romanian Parliament consider restoring the monarchy, the Salic law of succession not be reinstated, allowing female succession.
+According to the new statute of the Romanian Royal House as declared by Michael, no illegitimate descendants or collateral lines may claim dynastic privileges, titles or rank and any such are excluded from the Royal House of Romania and from the line of succession to the throne.
+Early life
+
+Birth
+
+Margareta was born on 26 March 1949 at Clinique de Montchoisi in Lausanne, Switzerland, as the first of King Michael I and Queen Anne's five daughters.
+Her godmother was her maternal grandmother Princess Margaret of Denmark who was also her namesake.
+She was followed by four sisters: Princess Elena (born 1950), Princess Irina (born 1953), Princess Sophie (born 1957) and Princess Maria (born 1964).
+Childhood
+
+Margareta spent her childhood at family homes in Lausanne and at Ayot House, St Lawrence, in Hertfordshire, England.
+During holidays she and her sisters spent time with their grandparents; paternally with Helen, Queen Mother, at Villa Sparta in Italy and maternally, with Princess Margaret and her husband Prince René of Bourbon-Parma in Copenhagen.
+Margareta met Queen Elizabeth II of the United Kingdom for the first time in the summer of 1952 at Balmoral Castle, when she was three years old.
+In her childhood, she spent holidays with Prince Charles and his sister, Princess Anne, who were close to Margareta, as well as Prince Amedeo, Duke of Aosta (her cousin), and the Greek, Danish and Luxembourg royal families.
+Queen Helen's interest in horses influenced Margareta to become an equestrian.
+In 1964, along with five other princesses, Margareta was a bridesmaid at the wedding of Princess Anne-Marie of Denmark to King Constantine II of Greece.
+Education
+
+Early education
+
+In 1956, Margareta lived with Queen Helen for six months at her villa in Florence, attending kindergarten until returning to Switzerland, where she attended a primary school, with Princess Sophie, from age six to nine.
+Margareta said in an interview in 2007.
+Further education
+
+Margareta studied sociology, political science and public international law at the University of Edinburgh in Scotland, graduating in 1974.
+Known there as "Margareta de Roumanie", for the first few weeks she felt a depressing "sense of foreignness" but later became active in campus politics, becoming a member of the students' representative council.
+"
+
+
+While at the university during her twenties, Margareta was involved in a five-year romantic relationship with Gordon Brown, who would serve as Prime Minister of the United Kingdom from 2007 to 2010; in 2007, she was interviewed by an editor of The Daily Telegraph: "It was a very solid and romantic story; I never stopped loving him, but one day it didn't seem right any more, it was politics, politics, politics, and I needed nurturing," she said.
+In the summer of 1989 Margareta resigned from her job as civil unrest started in Romania.
+Romania
+
+Romanian revolution
+
+In mid 1989, civil and governmental unrest started arising in the Eastern Bloc as the loosening of control of Eastern Europe by the Soviet Union had triggered most of the impact for the former states which started a Revolutionary wave leading to the Revolutions of 1989.
+On 25 December, Ceaușescu and his wife Deputy Prime Minister Elena Ceaușescu were deposed, captured and executed by orders from a Drumhead military tribunal; 42 years of the Socialist Republic of Romania had ended.
+The revolution was the first overthrow of the ruling governmental system since King Michael's coup which he successfully staged in 1944 by arresting members of the military government which supported Nazi Germany.
+During the Revolution, all members of the Royal Family took a part to console the situation outside of Romania.
+Arrival in Romania
+
+While she was visiting one orphanage, a child in a filthy cot died in front of her.
+It spurred her to establish the Princess Margareta of Romania Foundation in 1990.
+A 25th anniversary celebration of Margareta's return to Romania was held at the Romanian Athenaeum, followed by a dinner at the CEC Palace with Romania's Prime Minister Victor Ponta and Senate President Călin Popescu-Tăriceanu; around 200 other prominent guests participated in the festivities.
+Margareta also hosted a March 2015 gala at the dynasty's historical family seat, Peleș Castle, in honour of the Romanian Rugby Union, attended by Klaus Johannis, the first incumbent Romanian president to pay an official visit to the former royal family.
+Romanian Red Cross
+
+On 15 May 2015, the General Assembly of the Romanian Red Cross elected Margareta as President of the Romanian Red Cross.
+The Red Cross was instituted as a Romanian branch of the International Red Cross in 1876, under the reign of her great-great-granduncle King Carol I of Romania.
+Although at Margareta's birth she was not expected to inherit the defunct Romanian throne and the headship of the Romanian royal family, the birth of four younger sisters and no brother meant that without a change in the royal family's succession laws, male members of the House of Hohenzollern-Sigmaringen would succeed her father as pretenders to the Romanian throne, in accordance with the Salic law enshrined in both the defunct royal Romanian Constitution of 1923 and the defunct Statute of the Romanian royal house, dated 1884.
+In 1997 King Michael designated Margareta as successor to "all prerogatives and rights" of his, indicating his desire for a gender-blind succession to the throne; although there was much consideration of altering the line of succession, no actions were taken until 30 December 2007, when King Michael I issued the statutes for the Royal House, called The Fundamental Rules of the Royal House of Romania.
+Following the announcement of The Fundamental Rules, King Michael asked the Romanian Government that, should it consider restoring the monarchy, it should also abolish the Salic law of succession.
+Margareta does not use the title of queen; instead she claims the title "Custodian of the Romanian Crown", with the style "Her Majesty", a title that Michael offered her.
+Paul-Philippe Hohenzollern (son of King Michael's illegitimate half-brother, Carol Lambrino) denounced King Michael's actions of creating The Fundamental Rules and severing ties with the House of Hohenzollern-Sigmaringen.
+Although Margareta has no official role within the politics of Romania to maintain ties with other countries, she has fostered diplomatic relationships with numerous foreign dignitaries in her capacity as a head of the House of Romania.
 Marriage
 
-During a summer visit to the palace Wilhelmshöhe, Feodora was urged by her kinsman Emperor Wilhelm II to make a match with the widowed Wilhelm Ernst, Grand Duke of Saxe-Weimar-Eisenach.
-This was seen by many to be due to mutual ill will between Wilhelm and Feodora's grandfather Georg II, Duke of Saxe-Meiningen, whose morganatic wedding to Ellen Franz had displeased many royal personages like Wilhelm.
-Wilhelm's disapproval was even more surprising in that he had recently allowed the marriage between a Hohenzollern dynast (Prince Frederick William of Prussia) with a much lower-ranked member of the nobility (Princess Agatha of Hohenlohe-Schillingsfürst); it was considered odd that he refused to recognize one equal marriage yet acknowledged another lesser match, especially when the latter was within his own family and subject to the rigid Hohenzollern house laws.
-The Emperor's boycott of the wedding was so strongly resented in Saxe-Meiningen that, when newspapers announced that Wilhelm would not be attending the wedding, the official communication from the royal palace declared that he had never been invited.
-On 14 January 1910 in Meiningen, Feodora was married to Wilhelm Ernst.
-She was his second wife (his first wife Princess Caroline Reuss, Elder Line had died childless after eighteen months of marriage in 1905).
-Court life
+In 1994, Margareta met Radu Duda, a Romanian citizen and part-time actor, through the work of the Princess Margareta Foundation.
+Radu Duda was accorded the style "Radu, Prince of Hohenzollern-Veringen" on 1 January 1999, and was subsequently styled "His Royal Highness Radu, Prince of Romania", being referred to by King Michael on 30 December 2007, as future "Prince Consort of Romania".
+In Margareta's company and, more often alone, he has represented the former royal family publicly on various occasions.
+Controversies
+
+BAE Systems, one of the donors to the Princess Margareta of Romania Foundation, and its representatives have been involved in a corruption scandal involving purchase by the Romanian government of two decommissioned UK Royal Navy frigates (Coventry and London) refurbished by BAE, for which an alleged £7 million bribe was paid, some of which, it has also been alleged, ended up in the pockets of the Hohenzollern royal family to which Margareta belongs.
+The "Gardianul" newspaper, noting that both Margareta and her husband, as Special Representative of the Government, had met a number of times with the BAE Systems representatives before and after the signing of the governmental contract, inquired whether the royal family was involved in any lobbying on behalf of the company.
+Political support
+
+The main pro-monarchist party PNŢCD, currently extra-parliamentary, is ambiguous in its support for Margareta.
+Prior to his death, King Michael had not given up the hope for the restoration of the throne: "We are trying to make people understand what Romanian monarchy was and what it can still do.
+"
 
 
-Feodora's marriage was unhappy; the Weimar court was generally considered to be one of the most stifling and etiquette-driven in Germany.
-Feodora was unhappy in such an environment; at the age of 23, reports leaked out that she was staying at a sanatorium for her health.
-Feodora was very popular among the middle and lower classes of Weimar; this was largely attributed to her charm and kindness to the poor and suffering.
-Feodora died on 12 March 1972 in Freiburg
-Issue
-
-Feodora and her husband had four children:
+In a July 2013 survey about a potential restoration of monarchy in Romania, 19% of respondents gave Margareta as their favorite, while 29.9% supported her father.
+In December 2017, on the backdrop of the increased capital of trust in the Royal House of Romania, re-emerging with the death of King Michael, the executive chairman of the ruling Social Democratic Party Nicolae Bădălau said that one could organize a referendum on the transition to the monarchical ruling form, arguing that "it is not a bad thing, considering that the countries that have the monarchs are developed countries", being a project of the future.
+At the same time, the leader of the coalition party and the president of the Senate of Romania, Călin Popescu-Tăriceanu, reinforced this idea, claiming that he is a convinced monarchist and "constitutional monarchy has the advantage of placing the monarch over political games, case: the president, instead of being an arbitrator, prefers to be a player.
+"
 
 
-Ancestry
+Honours and awards
+
+Honours
+
+Dynastic
+
+Ecclesiastical
+
+Foreign
+
+Honorary titles and medals
+
+In Romania
+
+Outside Romania
+
+Publications
+
+See also
 
 References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +226,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +243,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +277,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +359,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +382,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +402,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +412,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +452,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,143 +551,201 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (46ee4acc-7fec-4192-8fb4-8f46ef32214d)
- Call ID: 46ee4acc-7fec-4192-8fb4-8f46ef32214d
+  AssignClass (31862e54-bf12-456f-ba1f-afb6f06b4e88)
+ Call ID: 31862e54-bf12-456f-ba1f-afb6f06b4e88
   Args:
-    source: Feodora_of_Saxe-Meiningen
+    source: Margareta_of_Romania
     type: :Woman
-  AssignClass (30cf15fa-bf1f-4120-abaa-15f62f095da3)
- Call ID: 30cf15fa-bf1f-4120-abaa-15f62f095da3
+  AssignClass (761adbf8-571f-4f58-b861-b6ad02f6c4a1)
+ Call ID: 761adbf8-571f-4f58-b861-b6ad02f6c4a1
   Args:
-    source: Feodora_of_Saxe-Meiningen
-    type: :Person
-  AssignClass (2f6dd0c9-1b6b-4240-bfad-e896dec5e4a8)
- Call ID: 2f6dd0c9-1b6b-4240-bfad-e896dec5e4a8
-  Args:
+    source: King_Michael_I
     type: :Man
-    source: Friedrich_Johann_of_Saxe-Meiningen
-  AssignClass (1385eb68-6709-4cf5-ba0f-780087983b8c)
- Call ID: 1385eb68-6709-4cf5-ba0f-780087983b8c
+  AssignClass (738c836c-58f4-4302-ba8b-53bce71e91fa)
+ Call ID: 738c836c-58f4-4302-ba8b-53bce71e91fa
   Args:
-    source: Friedrich_Johann_of_Saxe-Meiningen
-    type: :Person
-  AssignClass (6b918a8f-b9e5-45a7-b690-70fedaacd1e1)
- Call ID: 6b918a8f-b9e5-45a7-b690-70fedaacd1e1
-  Args:
-    source: Georg_II_Duke_of_Saxe-Meiningen
-    type: :Man
-  AssignClass (ce82df10-d2d5-4030-9b6b-bd137314b6c8)
- Call ID: ce82df10-d2d5-4030-9b6b-bd137314b6c8
-  Args:
-    source: Georg_II_Duke_of_Saxe-Meiningen
-    type: :Person
-  AssignClass (327bb9bf-ebb5-443c-b9c0-aa420814d837)
- Call ID: 327bb9bf-ebb5-443c-b9c0-aa420814d837
-  Args:
-    source: Adelaide_of_Lippe-Biesterfeld
+    source: Queen_Anne_of_Romania
     type: :Woman
-  AssignClass (fbbffd43-2ec4-431f-8cff-fccde906faa7)
- Call ID: fbbffd43-2ec4-431f-8cff-fccde906faa7
+  AssignClass (16a26aae-0d4f-460c-aa3d-36f6f6275a6c)
+ Call ID: 16a26aae-0d4f-460c-aa3d-36f6f6275a6c
   Args:
-    type: :Person
-    source: Adelaide_of_Lippe-Biesterfeld
-  AssignClass (dda6c82a-f3f1-4295-b3b2-cea57554955e)
- Call ID: dda6c82a-f3f1-4295-b3b2-cea57554955e
-  Args:
-    type: :Man
-    source: Ernst_Count_of_Lippe-Biesterfeld
-  AssignClass (1f189225-1e96-4496-af4a-eecfa8354798)
- Call ID: 1f189225-1e96-4496-af4a-eecfa8354798
-  Args:
-    source: Ernst_Count_of_Lippe-Biesterfeld
-    type: :Person
-  AssignClass (5bb48bdd-e564-468a-8b36-f83e1803d7bc)
- Call ID: 5bb48bdd-e564-468a-8b36-f83e1803d7bc
-  Args:
-    source: Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
-    type: :Man
-  AssignClass (a12e1cd9-22a8-474d-ac11-6c1f9548bdf3)
- Call ID: a12e1cd9-22a8-474d-ac11-6c1f9548bdf3
-  Args:
-    type: :Person
-    source: Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
-  AssignClass (183097b5-67a9-4fb8-a3cb-4cbe9a0b655e)
- Call ID: 183097b5-67a9-4fb8-a3cb-4cbe9a0b655e
-  Args:
+    source: Princess_Elena_of_Romania
     type: :Woman
-    source: Caroline_Reuss_Elder_Line
-  AssignClass (8e2cccd8-a044-482c-8a71-62401a1c3d6b)
- Call ID: 8e2cccd8-a044-482c-8a71-62401a1c3d6b
+  AssignClass (56999466-c312-49ab-8550-4723859d6173)
+ Call ID: 56999466-c312-49ab-8550-4723859d6173
   Args:
-    type: :Person
-    source: Caroline_Reuss_Elder_Line
-  AddLiteral (acba94e4-150a-490f-8474-a1a1a6a324ab)
- Call ID: acba94e4-150a-490f-8474-a1a1a6a324ab
+    source: Princess_Irina_of_Romania
+    type: :Woman
+  AssignClass (0b3b48c6-a2b0-4709-9ad0-2d9cf9c19d70)
+ Call ID: 0b3b48c6-a2b0-4709-9ad0-2d9cf9c19d70
+  Args:
+    source: Princess_Sophie_of_Romania
+    type: :Woman
+  AssignClass (70478fe1-6d21-40ac-87b6-22273bbf271c)
+ Call ID: 70478fe1-6d21-40ac-87b6-22273bbf271c
+  Args:
+    source: Princess_Maria_of_Romania
+    type: :Woman
+  AssignClass (b613b813-96df-4a70-af85-c4c8b346b827)
+ Call ID: b613b813-96df-4a70-af85-c4c8b346b827
+  Args:
+    source: Prince_Radu_of_Romania
+    type: :Man
+  AddLiteral (2448e727-2160-4876-944c-2eb8d96436be)
+ Call ID: 2448e727-2160-4876-944c-2eb8d96436be
+  Args:
+    source: Margareta_of_Romania
+    literal_value: 1949
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (c578a34a-d7f4-46cc-bc2f-8bd0a89632dd)
+ Call ID: c578a34a-d7f4-46cc-bc2f-8bd0a89632dd
+  Args:
+    relation: :hasFather
+    target: King_Michael_I
+    source: Margareta_of_Romania
+  AddTriple (eccc557f-0dfa-4dc1-a107-1df241b3eecd)
+ Call ID: eccc557f-0dfa-4dc1-a107-1df241b3eecd
+  Args:
+    target: Queen_Anne_of_Romania
+    relation: :hasMother
+    source: Margareta_of_Romania
+  AddTriple (555c7523-5f9a-4e9a-b2aa-582215bc8908)
+ Call ID: 555c7523-5f9a-4e9a-b2aa-582215bc8908
+  Args:
+    relation: :isSisterOf
+    target: Margareta_of_Romania
+    source: Princess_Elena_of_Romania
+  AddTriple (1e94d9f2-7bdf-43e3-ae4f-599a2b92009b)
+ Call ID: 1e94d9f2-7bdf-43e3-ae4f-599a2b92009b
+  Args:
+    source: Princess_Irina_of_Romania
+    target: Margareta_of_Romania
+    relation: :isSisterOf
+  AddTriple (44cc36f7-b273-4523-8aea-9566ae257b54)
+ Call ID: 44cc36f7-b273-4523-8aea-9566ae257b54
+  Args:
+    source: Princess_Sophie_of_Romania
+    relation: :isSisterOf
+    target: Margareta_of_Romania
+  AddTriple (68297e7a-5558-427d-953f-03e23d66f55b)
+ Call ID: 68297e7a-5558-427d-953f-03e23d66f55b
+  Args:
+    relation: :isSisterOf
+    target: Margareta_of_Romania
+    source: Princess_Maria_of_Romania
+  AddTriple (42494bff-9ad1-446f-b039-910a4dc73120)
+ Call ID: 42494bff-9ad1-446f-b039-910a4dc73120
+  Args:
+    source: Princess_Elena_of_Romania
+    target: King_Michael_I
+    relation: :hasFather
+  AddTriple (0c8f5fb1-a361-4b66-b18d-1e83f7555e8b)
+ Call ID: 0c8f5fb1-a361-4b66-b18d-1e83f7555e8b
+  Args:
+    source: Princess_Elena_of_Romania
+    relation: :hasMother
+    target: Queen_Anne_of_Romania
+  AddTriple (a711fe4d-eabd-42f0-a013-c37b117d6806)
+ Call ID: a711fe4d-eabd-42f0-a013-c37b117d6806
+  Args:
+    source: Princess_Irina_of_Romania
+    target: King_Michael_I
+    relation: :hasFather
+  AddTriple (a63b2495-6398-43eb-beab-00666d30e7ad)
+ Call ID: a63b2495-6398-43eb-beab-00666d30e7ad
+  Args:
+    source: Princess_Irina_of_Romania
+    relation: :hasMother
+    target: Queen_Anne_of_Romania
+  AddTriple (04cf28fe-36fc-4a1a-949c-65d84636df0b)
+ Call ID: 04cf28fe-36fc-4a1a-949c-65d84636df0b
+  Args:
+    target: King_Michael_I
+    relation: :hasFather
+    source: Princess_Sophie_of_Romania
+  AddTriple (9991b70d-ec48-4fdd-9917-d17dae6ee5ac)
+ Call ID: 9991b70d-ec48-4fdd-9917-d17dae6ee5ac
+  Args:
+    relation: :hasMother
+    target: Queen_Anne_of_Romania
+    source: Princess_Sophie_of_Romania
+  AddTriple (caa43c44-5d9b-4bed-bda9-457de66e62a0)
+ Call ID: caa43c44-5d9b-4bed-bda9-457de66e62a0
+  Args:
+    relation: :hasFather
+    target: King_Michael_I
+    source: Princess_Maria_of_Romania
+  AddTriple (ee405b8a-4a1e-4fb0-b010-31650cc95324)
+ Call ID: ee405b8a-4a1e-4fb0-b010-31650cc95324
+  Args:
+    source: Princess_Maria_of_Romania
+    relation: :hasMother
+    target: Queen_Anne_of_Romania
+  AddLiteral (6ab5d7e5-1d57-4984-afe1-c2fffa4f72be)
+ Call ID: 6ab5d7e5-1d57-4984-afe1-c2fffa4f72be
   Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Feodora_of_Saxe-Meiningen
-    literal_value: 1890
-  AddLiteral (e35fc3f0-d048-4f6d-b759-4ae7ecb3911c)
- Call ID: e35fc3f0-d048-4f6d-b759-4ae7ecb3911c
+    source: Princess_Elena_of_Romania
+    literal_value: 1950
+  AddLiteral (9db1da3c-8c06-4388-8b44-0dc8ca8c6904)
+ Call ID: 9db1da3c-8c06-4388-8b44-0dc8ca8c6904
   Args:
-    relation: :hasDeathYear
+    literal_value: 1953
+    source: Princess_Irina_of_Romania
     literal_type: xsd:integer
-    source: Feodora_of_Saxe-Meiningen
-    literal_value: 1972
-  AddLiteral (90a19abf-3ba9-4fff-84a1-ec46a8824eda)
- Call ID: 90a19abf-3ba9-4fff-84a1-ec46a8824eda
+    relation: :hasBirthYear
+  AddLiteral (039f7bb5-1a80-41f8-bca3-3ff3258b45eb)
+ Call ID: 039f7bb5-1a80-41f8-bca3-3ff3258b45eb
   Args:
-    source: Feodora_of_Saxe-Meiningen
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: Grand Duchess of Saxe-Weimar-Eisenach
-  AddTriple (6836439a-5792-4967-9c62-f3462881055c)
- Call ID: 6836439a-5792-4967-9c62-f3462881055c
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Princess_Sophie_of_Romania
+    literal_value: 1957
+  AddLiteral (b163a696-6da2-48fb-967c-a3daf1ef32f8)
+ Call ID: b163a696-6da2-48fb-967c-a3daf1ef32f8
   Args:
-    source: Feodora_of_Saxe-Meiningen
-    relation: :hasFather
-    target: Friedrich_Johann_of_Saxe-Meiningen
-  AddTriple (19ae5589-ea3a-4405-85a2-43b6e24ff8bb)
- Call ID: 19ae5589-ea3a-4405-85a2-43b6e24ff8bb
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1964
+    source: Princess_Maria_of_Romania
+  AddTriple (5bc09325-5271-4903-adba-deb6f8bfb0fa)
+ Call ID: 5bc09325-5271-4903-adba-deb6f8bfb0fa
   Args:
-    target: Adelaide_of_Lippe-Biesterfeld
-    source: Feodora_of_Saxe-Meiningen
-    relation: :hasMother
-  AddTriple (0a189303-b2c1-4c83-b7ef-49def5c7c9eb)
- Call ID: 0a189303-b2c1-4c83-b7ef-49def5c7c9eb
+    source: Margareta_of_Romania
+    relation: :hasRelation
+    target: Prince_Radu_of_Romania
+  AddLiteral (2f18227a-281c-494e-8c49-e57c3b8103d2)
+ Call ID: 2f18227a-281c-494e-8c49-e57c3b8103d2
   Args:
-    relation: :hasFather
-    source: Friedrich_Johann_of_Saxe-Meiningen
-    target: Georg_II_Duke_of_Saxe-Meiningen
-  AddTriple (c9278e49-e3cd-478e-bcef-afd27848e0be)
- Call ID: c9278e49-e3cd-478e-bcef-afd27848e0be
-  Args:
-    source: Adelaide_of_Lippe-Biesterfeld
-    relation: :hasFather
-    target: Ernst_Count_of_Lippe-Biesterfeld
-  AddLiteral (79df613b-b7cf-4cf7-b971-8d3666f39b61)
- Call ID: 79df613b-b7cf-4cf7-b971-8d3666f39b61
-  Args:
+    source: Margareta_of_Romania
+    literal_value: 1994
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: Feodora_of_Saxe-Meiningen
-    literal_value: 1910
-  AddTriple (712e7ef8-8613-49f3-b916-66c6895eac7a)
- Call ID: 712e7ef8-8613-49f3-b916-66c6895eac7a
+  Finish (b964de78-c948-4b20-9c9f-57935853e39c)
+ Call ID: b964de78-c948-4b20-9c9f-57935853e39c
   Args:
-    relation: :hasRelation
-    source: Feodora_of_Saxe-Meiningen
-    target: Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
-  AddTriple (20b7ffbd-3c32-45bd-9cdd-02a779c4df0f)
- Call ID: 20b7ffbd-3c32-45bd-9cdd-02a779c4df0f
-  Args:
-    target: Caroline_Reuss_Elder_Line
-    source: Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
-    relation: :hasRelation
-  Finish (955046b7-7013-47b3-ab54-8d71d8511b21)
- Call ID: 955046b7-7013-47b3-ab54-8d71d8511b21
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -605,36 +846,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Feodora_of_Saxe-Meiningen a :Person,
-          :Woman ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
-      :hasMarriageYear 1910 ;
-      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
-      :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-      :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
+  data:Princess_Elena_of_Romania a :Woman ;
+      :hasBirthYear 1950 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Adelaide_of_Lippe-Biesterfeld a :Person,
-          :Woman ;
-      :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
+  data:Princess_Irina_of_Romania a :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Caroline_Reuss_Elder_Line a :Person,
-          :Woman .
+  data:Princess_Maria_of_Romania a :Woman ;
+      :hasBirthYear 1964 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Ernst_Count_of_Lippe-Biesterfeld a :Man,
-          :Person .
+  data:Princess_Sophie_of_Romania a :Woman ;
+      :hasBirthYear 1957 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
-          :Person ;
-      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+  data:Prince_Radu_of_Romania a :Man .
 
-  data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
-          :Person .
+  data:Margareta_of_Romania a :Woman ;
+      :hasBirthYear 1949 ;
+      :hasFather data:King_Michael_I ;
+      :hasMarriageYear 1994 ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :hasRelation data:Prince_Radu_of_Romania .
 
-  data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
-          :Person ;
-      :hasRelation data:Caroline_Reuss_Elder_Line .
+  data:King_Michael_I a :Man .
+
+  data:Queen_Anne_of_Romania a :Woman .
 
 
 
@@ -646,835 +893,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (77a861ac-8983-44a2-9c71-c60b049f428c)
- Call ID: 77a861ac-8983-44a2-9c71-c60b049f428c
+  ValidateShacl (0339ecd8-eb43-4a66-8937-f0c80c0e1857)
+ Call ID: 0339ecd8-eb43-4a66-8937-f0c80c0e1857
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Georg_II_Duke_of_Saxe-Meiningen used for the property :hasFather of node Friedrich_Johann_of_Saxe-Meiningen is missing the required :Ancestor class.
+      The node Princess_Sophie_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Georg_II_Duke_of_Saxe-Meiningen', class=':Ancestor')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Georg_II_Duke_of_Saxe-Meiningen used for the property :hasFather of node Friedrich_Johann_of_Saxe-Meiningen is missing the required :Man class.
+      The node Princess_Irina_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Georg_II_Duke_of_Saxe-Meiningen', class=':Man')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Friedrich_Johann_of_Saxe-Meiningen used for the property :hasFather of node Feodora_of_Saxe-Meiningen is missing the required :Ancestor class.
+      The node Margareta_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Johann_of_Saxe-Meiningen', class=':Ancestor')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Ernst_Count_of_Lippe-Biesterfeld used for the property :hasFather of node Adelaide_of_Lippe-Biesterfeld is missing the required :Ancestor class.
+      The node Princess_Maria_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_Count_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Adelaide_of_Lippe-Biesterfeld used for the property :hasMother of node Feodora_of_Saxe-Meiningen is missing the required :Ancestor class.
+      The node Princess_Elena_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adelaide_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Georg_II_Duke_of_Saxe-Meiningen used for the property :hasFather of node Friedrich_Johann_of_Saxe-Meiningen is missing the required :Ancestor class.
+      The node Princess_Sophie_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Georg_II_Duke_of_Saxe-Meiningen', class=':Ancestor')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Friedrich_Johann_of_Saxe-Meiningen used for the property :hasFather of node Feodora_of_Saxe-Meiningen is missing the required :Man class.
+      The node Princess_Irina_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Johann_of_Saxe-Meiningen', class=':Man')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Ernst_Count_of_Lippe-Biesterfeld used for the property :hasFather of node Adelaide_of_Lippe-Biesterfeld is missing the required :Man class.
+      The node Margareta_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_Count_of_Lippe-Biesterfeld', class=':Man')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Adelaide_of_Lippe-Biesterfeld used for the property :hasMother of node Feodora_of_Saxe-Meiningen is missing the required :Woman class.
+      The node Princess_Maria_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adelaide_of_Lippe-Biesterfeld', class=':Woman')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Friedrich_Johann_of_Saxe-Meiningen used for the property :hasFather of node Feodora_of_Saxe-Meiningen is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Johann_of_Saxe-Meiningen', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Ernst_Count_of_Lippe-Biesterfeld used for the property :hasFather of node Adelaide_of_Lippe-Biesterfeld is missing the required :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_Count_of_Lippe-Biesterfeld', class=':Man')
-
-
-  Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Adelaide_of_Lippe-Biesterfeld used for the property :hasMother of node Feodora_of_Saxe-Meiningen is missing the required :Woman class.
+      The node Princess_Elena_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adelaide_of_Lippe-Biesterfeld', class=':Woman')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (5b8ccaea-2880-4d2d-9b09-33f10a8a0cbe)
- Call ID: 5b8ccaea-2880-4d2d-9b09-33f10a8a0cbe
-  Args:
-    type: :Ancestor
-    source: Georg_II_Duke_of_Saxe-Meiningen
-  AssignClass (60bf89e2-ca03-48dc-a166-c9ea09c43403)
- Call ID: 60bf89e2-ca03-48dc-a166-c9ea09c43403
-  Args:
-    source: Friedrich_Johann_of_Saxe-Meiningen
-    type: :Ancestor
-  AssignClass (bd9740ad-c5a8-4952-8bb6-1e39f563d441)
- Call ID: bd9740ad-c5a8-4952-8bb6-1e39f563d441
-  Args:
-    type: :Ancestor
-    source: Ernst_Count_of_Lippe-Biesterfeld
-  AssignClass (82ce4e1b-1cc9-428b-b7e7-da565bb45788)
- Call ID: 82ce4e1b-1cc9-428b-b7e7-da565bb45788
-  Args:
-    source: Adelaide_of_Lippe-Biesterfeld
-    type: :Ancestor
-  AddTriple (89a90973-0211-432e-980d-ee2dafab6d13)
- Call ID: 89a90973-0211-432e-980d-ee2dafab6d13
-  Args:
-    relation: :hasSex
-    source: Feodora_of_Saxe-Meiningen
-    target: Female
-  AddTriple (89d42abf-a904-45ce-af67-8ad143331eac)
- Call ID: 89d42abf-a904-45ce-af67-8ad143331eac
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Friedrich_Johann_of_Saxe-Meiningen
-  AddTriple (d2537253-3545-4d9a-95ce-201990e76328)
- Call ID: d2537253-3545-4d9a-95ce-201990e76328
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Adelaide_of_Lippe-Biesterfeld
-  AddTriple (89b71ea8-ff37-4767-b812-048b17791534)
- Call ID: 89b71ea8-ff37-4767-b812-048b17791534
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Georg_II_Duke_of_Saxe-Meiningen
-  AddTriple (11d3506a-7b96-459b-b854-1887d891fb8c)
- Call ID: 11d3506a-7b96-459b-b854-1887d891fb8c
-  Args:
-    relation: :hasSex
-    source: Ernst_Count_of_Lippe-Biesterfeld
-    target: Male
-  AddTriple (477e289e-df2b-42a4-97c7-4a65a887fb9d)
- Call ID: 477e289e-df2b-42a4-97c7-4a65a887fb9d
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
-  AddTriple (c7f9f622-ea49-4e22-8b45-2b80e319c435)
- Call ID: c7f9f622-ea49-4e22-8b45-2b80e319c435
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Caroline_Reuss_Elder_Line
-  Finish (85f065fe-3233-4751-85e7-23ce0f7f2195)
- Call ID: 85f065fe-3233-4751-85e7-23ce0f7f2195
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Feodora_of_Saxe-Meiningen a :Person,
-          :Woman ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
-      :hasMarriageYear 1910 ;
-      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
-      :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-      :hasSex data:Female ;
-      :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
-
-  data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Ernst_Count_of_Lippe-Biesterfeld ;
-      :hasSex data:Female .
-
-  data:Caroline_Reuss_Elder_Line a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen ;
-      :hasSex data:Male .
-
-  data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
-          :Person ;
-      :hasRelation data:Caroline_Reuss_Elder_Line ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e3070dc2-e559-4aa2-a53a-20eb101ee9e5)
- Call ID: e3070dc2-e559-4aa2-a53a-20eb101ee9e5
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:68
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Princess_Sophie_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Irina_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
+      The node Margareta_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Maria_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Princess_Elena_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Sophie_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
+      The node Princess_Irina_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Margareta_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Princess_Maria_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Elena_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Margareta_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Maria_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
+      The node Princess_Elena_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Sophie_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Irina_of_Romania has a 'hasFather' relationship with King_Michael_I, but King_Michael_I is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(King_Michael_I, :Ancestor)
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Margareta_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [27]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
+      The node Princess_Maria_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [28]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
+      The node Princess_Elena_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
+      The node Princess_Sophie_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
+      The node Princess_Irina_of_Romania has a 'hasMother' relationship with Queen_Anne_of_Romania, but Queen_Anne_of_Romania is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Ernst_Count_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Friedrich_Johann_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Georg_II_Duke_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Caroline_Reuss_Elder_Line' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Feodora_of_Saxe-Meiningen' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Adelaide_of_Lippe-Biesterfeld' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Queen_Anne_of_Romania, :Ancestor)
 
 
 
@@ -1483,18 +1149,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (1bd45103-d079-47bf-b81e-65ba7c1d1e9d)
- Call ID: 1bd45103-d079-47bf-b81e-65ba7c1d1e9d
+  AssignClass (9ef6c144-4c76-4283-ae9e-734568718f7a)
+ Call ID: 9ef6c144-4c76-4283-ae9e-734568718f7a
   Args:
-    type: :Sex
-    source: Female
-  AssignClass (95154586-3a32-463e-bb58-b0b3e6bf954d)
- Call ID: 95154586-3a32-463e-bb58-b0b3e6bf954d
+    source: King_Michael_I
+    type: :Ancestor
+  AssignClass (0c4e186f-0f33-419d-b7a4-7a8bd2d667de)
+ Call ID: 0c4e186f-0f33-419d-b7a4-7a8bd2d667de
   Args:
-    type: :Sex
-    source: Male
-  Finish (3f015889-032a-49ae-9ac8-4a0799a3cf46)
- Call ID: 3f015889-032a-49ae-9ac8-4a0799a3cf46
+    type: :Ancestor
+    source: Queen_Anne_of_Romania
+  ValidateShacl (25d07e91-4413-44d4-b34b-9f345b6285b0)
+ Call ID: 25d07e91-4413-44d4-b34b-9f345b6285b0
   Args:
 
 ================================= Tool Message =================================
@@ -1508,65 +1174,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Feodora_of_Saxe-Meiningen a :Person,
-          :Woman ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
-      :hasMarriageYear 1910 ;
-      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
-      :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-      :hasSex data:Female ;
-      :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
+  data:Princess_Elena_of_Romania a :Woman ;
+      :hasBirthYear 1950 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Ernst_Count_of_Lippe-Biesterfeld ;
-      :hasSex data:Female .
+  data:Princess_Irina_of_Romania a :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Caroline_Reuss_Elder_Line a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Princess_Maria_of_Romania a :Woman ;
+      :hasBirthYear 1964 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Princess_Sophie_of_Romania a :Woman ;
+      :hasBirthYear 1957 ;
+      :hasFather data:King_Michael_I ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :isSisterOf data:Margareta_of_Romania .
 
-  data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen ;
-      :hasSex data:Male .
+  data:Prince_Radu_of_Romania a :Man .
 
-  data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Margareta_of_Romania a :Woman ;
+      :hasBirthYear 1949 ;
+      :hasFather data:King_Michael_I ;
+      :hasMarriageYear 1994 ;
+      :hasMother data:Queen_Anne_of_Romania ;
+      :hasRelation data:Prince_Radu_of_Romania .
 
-  data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
-          :Person ;
-      :hasRelation data:Caroline_Reuss_Elder_Line ;
-      :hasSex data:Male .
+  data:King_Michael_I a :Ancestor,
+          :Man .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Queen_Anne_of_Romania a :Ancestor,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (921549e4-836d-4261-90fe-093572a7f44c)
- Call ID: 921549e4-836d-4261-90fe-093572a7f44c
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1576,6 +1223,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (aa5be17f-959a-4109-a1b5-46e3837244f5)
- Call ID: aa5be17f-959a-4109-a1b5-46e3837244f5
+  Finish (1c760c8f-52d4-4945-acc3-18d6aa3b3fef)
+ Call ID: 1c760c8f-52d4-4945-acc3-18d6aa3b3fef
   Args:

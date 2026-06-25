@@ -1,0 +1,1525 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "3757:3785"^^xsd:string,
+        "883:900"^^xsd:string,
+        "9303:9320"^^xsd:string ;
+    data:posIndicesPart "10373:10384"^^xsd:string,
+        "10388:10393"^^xsd:string,
+        "10469:10480"^^xsd:string,
+        "11730:11735"^^xsd:string,
+        "15861:15872"^^xsd:string,
+        "20854:20859"^^xsd:string,
+        "21336:21347"^^xsd:string,
+        "21351:21356"^^xsd:string,
+        "3889:3894"^^xsd:string,
+        "7577:7588"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Louise Mountbatten"^^xsd:string ;
+    data:posIndicesFull "3757:3785"^^xsd:string,
+        "3766:3785"^^xsd:string,
+        "878:900"^^xsd:string,
+        "883:900"^^xsd:string,
+        "9303:9320"^^xsd:string ;
+    data:posIndicesPart "10373:10384"^^xsd:string,
+        "10469:10480"^^xsd:string,
+        "11107:11113"^^xsd:string,
+        "12102:12108"^^xsd:string,
+        "14305:14311"^^xsd:string,
+        "15861:15872"^^xsd:string,
+        "21336:21347"^^xsd:string,
+        "3899:3905"^^xsd:string,
+        "7577:7588"^^xsd:string,
+        "8780:8786"^^xsd:string ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm"^^xsd:string,
+        "Lady Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Lady Louise Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Louise of Battenberg"^^xsd:string,
+        "Louise of Sweden"^^xsd:string,
+        "Mrs Olsson"^^xsd:string,
+        "Princess Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Princess Louise of Battenberg"^^xsd:string,
+        "Queen Louise of Sweden"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "6592:6610"^^xsd:string,
+        "6597:6610"^^xsd:string,
+        "8076:8089"^^xsd:string,
+        "9520:9533"^^xsd:string ;
+    data:posIndicesPart "16613:16619"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "13324:13333"^^xsd:string,
+        "17660:17669"^^xsd:string,
+        "19249:19258"^^xsd:string ;
+    data:posIndicesPart "13688:13694"^^xsd:string,
+        "13893:13899"^^xsd:string,
+        "16613:16619"^^xsd:string,
+        "17055:17061"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17367:17373"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "18406:18412"^^xsd:string,
+        "18652:18658"^^xsd:string,
+        "18915:18921"^^xsd:string,
+        "19719:19725"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "20835:20842"^^xsd:string,
+        "20847:20853"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "21696:21702"^^xsd:string,
+        "22426:22432"^^xsd:string,
+        "22707:22713"^^xsd:string,
+        "22774:22780"^^xsd:string,
+        "22794:22800"^^xsd:string,
+        "22890:22896"^^xsd:string,
+        "22937:22943"^^xsd:string,
+        "23054:23060"^^xsd:string,
+        "23232:23238"^^xsd:string,
+        "23534:23540"^^xsd:string,
+        "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo"^^xsd:string,
+        "Prince Christophoros of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince George of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "14265:14300"^^xsd:string,
+        "788:825"^^xsd:string ;
+    data:posIndicesPart "1110:1116"^^xsd:string,
+        "11571:11577"^^xsd:string,
+        "11633:11639"^^xsd:string,
+        "12151:12157"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "12762:12768"^^xsd:string,
+        "13317:13323"^^xsd:string,
+        "13688:13694"^^xsd:string,
+        "13893:13899"^^xsd:string,
+        "16613:16619"^^xsd:string,
+        "16763:16769"^^xsd:string,
+        "17055:17061"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17367:17373"^^xsd:string,
+        "17653:17659"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "18406:18412"^^xsd:string,
+        "18652:18658"^^xsd:string,
+        "18915:18921"^^xsd:string,
+        "19242:19248"^^xsd:string,
+        "19719:19725"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "20835:20842"^^xsd:string,
+        "20847:20853"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "21696:21702"^^xsd:string,
+        "2241:2247"^^xsd:string,
+        "22426:22432"^^xsd:string,
+        "22707:22713"^^xsd:string,
+        "22774:22780"^^xsd:string,
+        "22794:22800"^^xsd:string,
+        "22890:22896"^^xsd:string,
+        "22937:22943"^^xsd:string,
+        "23054:23060"^^xsd:string,
+        "23232:23238"^^xsd:string,
+        "23534:23540"^^xsd:string,
+        "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "2598:2604"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "4443:4449"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4726:4732"^^xsd:string,
+        "4982:4988"^^xsd:string,
+        "5543:5549"^^xsd:string,
+        "5680:5686"^^xsd:string,
+        "5841:5847"^^xsd:string,
+        "6649:6655"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "9184:9190"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9572:9578"^^xsd:string,
+        "9801:9807"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q170396 ;
+    :alsoKnownAs "Prince Georgios of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "12926:12939"^^xsd:string,
+        "16936:16949"^^xsd:string,
+        "17850:17863"^^xsd:string,
+        "19403:19416"^^xsd:string,
+        "23123:23131"^^xsd:string,
+        "24066:24074"^^xsd:string,
+        "2640:2653"^^xsd:string,
+        "338:351"^^xsd:string,
+        "4139:4152"^^xsd:string,
+        "4693:4706"^^xsd:string,
+        "8105:8118"^^xsd:string,
+        "8530:8543"^^xsd:string,
+        "874:882"^^xsd:string,
+        "9598:9611"^^xsd:string ;
+    data:posIndicesPart "10373:10384"^^xsd:string,
+        "10469:10480"^^xsd:string,
+        "15861:15872"^^xsd:string,
+        "21336:21347"^^xsd:string,
+        "3408:3414"^^xsd:string,
+        "4265:4271"^^xsd:string,
+        "5317:5323"^^xsd:string,
+        "5418:5424"^^xsd:string,
+        "5504:5510"^^xsd:string,
+        "6069:6075"^^xsd:string,
+        "7577:7588"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Anne-_Princess_Royal a :Person,
+        :Woman ;
+    rdfs:label "Anne, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "10921:10937"^^xsd:string,
+        "10925:10937"^^xsd:string,
+        "14982:14998"^^xsd:string,
+        "14986:14998"^^xsd:string,
+        "16271:16285"^^xsd:string,
+        "16275:16285"^^xsd:string,
+        "22074:22087"^^xsd:string,
+        "24053:24069"^^xsd:string,
+        "24057:24069"^^xsd:string,
+        "3746:3756"^^xsd:string,
+        "482:494"^^xsd:string,
+        "9881:9895"^^xsd:string,
+        "9885:9895"^^xsd:string ;
+    data:posIndicesPart "10207:10215"^^xsd:string,
+        "10328:10336"^^xsd:string,
+        "11892:11900"^^xsd:string,
+        "12296:12304"^^xsd:string,
+        "12783:12791"^^xsd:string,
+        "1296:1304"^^xsd:string,
+        "14319:14327"^^xsd:string,
+        "16561:16569"^^xsd:string,
+        "17163:17171"^^xsd:string,
+        "17382:17390"^^xsd:string,
+        "17778:17783"^^xsd:string,
+        "17935:17943"^^xsd:string,
+        "1871:1876"^^xsd:string,
+        "18851:18856"^^xsd:string,
+        "19117:19125"^^xsd:string,
+        "1959:1967"^^xsd:string,
+        "20260:20268"^^xsd:string,
+        "20802:20810"^^xsd:string,
+        "20864:20872"^^xsd:string,
+        "21043:21051"^^xsd:string,
+        "21159:21164"^^xsd:string,
+        "21254:21262"^^xsd:string,
+        "21402:21407"^^xsd:string,
+        "21608:21616"^^xsd:string,
+        "21726:21731"^^xsd:string,
+        "21756:21761"^^xsd:string,
+        "2190:2198"^^xsd:string,
+        "22276:22284"^^xsd:string,
+        "22582:22590"^^xsd:string,
+        "22716:22724"^^xsd:string,
+        "23802:23810"^^xsd:string,
+        "2390:2398"^^xsd:string,
+        "24514:24522"^^xsd:string,
+        "24587:24595"^^xsd:string,
+        "24646:24654"^^xsd:string,
+        "24715:24723"^^xsd:string,
+        "24778:24786"^^xsd:string,
+        "25903:25908"^^xsd:string,
+        "2736:2741"^^xsd:string,
+        "4751:4759"^^xsd:string,
+        "6366:6371"^^xsd:string,
+        "6449:6454"^^xsd:string,
+        "8313:8321"^^xsd:string ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom"^^xsd:string,
+        "Anne Mountbatten-Windsor"^^xsd:string,
+        "Princess Anne"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise of Edinburgh"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "Princess Anne of Edinburgh"^^xsd:string,
+        "Princess Anne, Princess Royal"^^xsd:string,
+        "Princess Anne, The Princess Royal"^^xsd:string,
+        "The Princess Anne"^^xsd:string,
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "The Princess Anne, Princess Royal"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isDaughterOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh .
+
+data:Charles_III a :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "2555:2567"^^xsd:string,
+        "2555:2571"^^xsd:string,
+        "2560:2571"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Prince_Edward-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "23840:23853"^^xsd:string ;
+    data:posIndicesPart "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string,
+        "25368:25372"^^xsd:string,
+        "25376:25385"^^xsd:string ;
+    data:wdtLink wdt:Q154920 ;
+    :alsoKnownAs "Edward Antony Richard Louis"^^xsd:string,
+        "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex"^^xsd:string,
+        "Edward Mountbatten-Windsor"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward Antony Richard Louis of the United Kingdom"^^xsd:string,
+        "Prince Edward of the United Kingdom"^^xsd:string,
+        "The Prince Edward Antony Richard Louis of the United Kingdom"^^xsd:string,
+        "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar"^^xsd:string,
+        "The Prince Edward of the United Kingdom"^^xsd:string,
+        "The Prince Edward, Earl of Wessex and Forfar"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Louis of Battenberg"^^xsd:string ;
+    data:posIndicesFull "3757:3785"^^xsd:string,
+        "3766:3785"^^xsd:string ;
+    data:posIndicesPart "11571:11577"^^xsd:string,
+        "11633:11639"^^xsd:string,
+        "11730:11735"^^xsd:string,
+        "12151:12157"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "12762:12768"^^xsd:string,
+        "13317:13323"^^xsd:string,
+        "13688:13694"^^xsd:string,
+        "13893:13899"^^xsd:string,
+        "17055:17061"^^xsd:string,
+        "17367:17373"^^xsd:string,
+        "17653:17659"^^xsd:string,
+        "18406:18412"^^xsd:string,
+        "18652:18658"^^xsd:string,
+        "18915:18921"^^xsd:string,
+        "19242:19248"^^xsd:string,
+        "19719:19725"^^xsd:string,
+        "20847:20853"^^xsd:string,
+        "20854:20859"^^xsd:string,
+        "21696:21702"^^xsd:string,
+        "22426:22432"^^xsd:string,
+        "22707:22713"^^xsd:string,
+        "22774:22780"^^xsd:string,
+        "22794:22800"^^xsd:string,
+        "22890:22896"^^xsd:string,
+        "22937:22943"^^xsd:string,
+        "23054:23060"^^xsd:string,
+        "23232:23238"^^xsd:string,
+        "23534:23540"^^xsd:string,
+        "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string,
+        "3889:3894"^^xsd:string,
+        "4726:4732"^^xsd:string,
+        "7554:7564"^^xsd:string,
+        "9184:9190"^^xsd:string,
+        "9801:9807"^^xsd:string ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg"^^xsd:string,
+        "Count Louis of Battenberg"^^xsd:string,
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis Alexander of Battenberg"^^xsd:string,
+        "Louis Milford Haven"^^xsd:string,
+        "Louis Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis of Battenberg"^^xsd:string,
+        "Prince Louis Alexander of Battenberg"^^xsd:string,
+        "Sir Louis Alexander Mountbatten"^^xsd:string,
+        "Sir Louis Mountbatten"^^xsd:string ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "9:40"^^xsd:string ;
+    data:posIndicesPart "10098:10107"^^xsd:string,
+        "10207:10215"^^xsd:string,
+        "10311:10320"^^xsd:string,
+        "10328:10336"^^xsd:string,
+        "10552:10561"^^xsd:string,
+        "10813:10822"^^xsd:string,
+        "1092:1101"^^xsd:string,
+        "11557:11566"^^xsd:string,
+        "11758:11767"^^xsd:string,
+        "11892:11900"^^xsd:string,
+        "11999:12008"^^xsd:string,
+        "12217:12226"^^xsd:string,
+        "12296:12304"^^xsd:string,
+        "12783:12791"^^xsd:string,
+        "1296:1304"^^xsd:string,
+        "13224:13233"^^xsd:string,
+        "13482:13491"^^xsd:string,
+        "13624:13633"^^xsd:string,
+        "1366:1375"^^xsd:string,
+        "13964:13973"^^xsd:string,
+        "14081:14090"^^xsd:string,
+        "14319:14327"^^xsd:string,
+        "14405:14414"^^xsd:string,
+        "14533:14542"^^xsd:string,
+        "14679:14688"^^xsd:string,
+        "15042:15051"^^xsd:string,
+        "15147:15156"^^xsd:string,
+        "15338:15347"^^xsd:string,
+        "15448:15457"^^xsd:string,
+        "15654:15663"^^xsd:string,
+        "1575:1584"^^xsd:string,
+        "15798:15807"^^xsd:string,
+        "16030:16039"^^xsd:string,
+        "16122:16131"^^xsd:string,
+        "16290:16298"^^xsd:string,
+        "16463:16472"^^xsd:string,
+        "16561:16569"^^xsd:string,
+        "16613:16619"^^xsd:string,
+        "16774:16783"^^xsd:string,
+        "16917:16926"^^xsd:string,
+        "17163:17171"^^xsd:string,
+        "1723:1732"^^xsd:string,
+        "17277:17286"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17382:17390"^^xsd:string,
+        "17549:17558"^^xsd:string,
+        "17935:17943"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "18159:18168"^^xsd:string,
+        "19051:19060"^^xsd:string,
+        "19117:19125"^^xsd:string,
+        "19268:19277"^^xsd:string,
+        "1930:1939"^^xsd:string,
+        "1959:1967"^^xsd:string,
+        "19799:19808"^^xsd:string,
+        "20260:20268"^^xsd:string,
+        "20430:20439"^^xsd:string,
+        "20580:20589"^^xsd:string,
+        "20802:20810"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "20835:20842"^^xsd:string,
+        "20864:20872"^^xsd:string,
+        "21043:21051"^^xsd:string,
+        "21189:21198"^^xsd:string,
+        "21254:21262"^^xsd:string,
+        "21449:21458"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "21608:21616"^^xsd:string,
+        "21841:21850"^^xsd:string,
+        "2190:2198"^^xsd:string,
+        "22012:22020"^^xsd:string,
+        "22109:22118"^^xsd:string,
+        "22276:22284"^^xsd:string,
+        "22456:22465"^^xsd:string,
+        "22582:22590"^^xsd:string,
+        "22716:22724"^^xsd:string,
+        "22955:22964"^^xsd:string,
+        "2329:2338"^^xsd:string,
+        "23346:23355"^^xsd:string,
+        "23648:23657"^^xsd:string,
+        "23802:23810"^^xsd:string,
+        "2390:2398"^^xsd:string,
+        "24421:24430"^^xsd:string,
+        "24514:24522"^^xsd:string,
+        "24587:24595"^^xsd:string,
+        "24646:24654"^^xsd:string,
+        "24715:24723"^^xsd:string,
+        "24778:24786"^^xsd:string,
+        "2482:2491"^^xsd:string,
+        "24847:24856"^^xsd:string,
+        "25011:25020"^^xsd:string,
+        "25079:25088"^^xsd:string,
+        "25201:25210"^^xsd:string,
+        "25478:25487"^^xsd:string,
+        "25631:25640"^^xsd:string,
+        "25879:25888"^^xsd:string,
+        "25920:25929"^^xsd:string,
+        "25971:25980"^^xsd:string,
+        "2598:2604"^^xsd:string,
+        "2710:2719"^^xsd:string,
+        "2842:2851"^^xsd:string,
+        "3068:3077"^^xsd:string,
+        "3216:3225"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "3821:3830"^^xsd:string,
+        "4088:4097"^^xsd:string,
+        "408:417"^^xsd:string,
+        "4443:4449"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4751:4759"^^xsd:string,
+        "4841:4850"^^xsd:string,
+        "4982:4988"^^xsd:string,
+        "5214:5223"^^xsd:string,
+        "5543:5549"^^xsd:string,
+        "5632:5641"^^xsd:string,
+        "5680:5686"^^xsd:string,
+        "5841:5847"^^xsd:string,
+        "5926:5935"^^xsd:string,
+        "6481:6490"^^xsd:string,
+        "6649:6655"^^xsd:string,
+        "6762:6771"^^xsd:string,
+        "694:703"^^xsd:string,
+        "6961:6970"^^xsd:string,
+        "7078:7087"^^xsd:string,
+        "7243:7252"^^xsd:string,
+        "7594:7603"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "7872:7881"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "8237:8246"^^xsd:string,
+        "8313:8321"^^xsd:string,
+        "8651:8660"^^xsd:string,
+        "8991:9000"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9475:9484"^^xsd:string,
+        "960:969"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q240317 ;
+    :alsoKnownAs "Margarita of Greece and Denmark"^^xsd:string,
+        "Margarita of Hohenlohe-Langenburg"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Sophie of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "21641:21666"^^xsd:string,
+        "21641:21678"^^xsd:string,
+        "2265:2290"^^xsd:string,
+        "2265:2302"^^xsd:string ;
+    data:posIndicesPart "10207:10215"^^xsd:string,
+        "10328:10336"^^xsd:string,
+        "11892:11900"^^xsd:string,
+        "12296:12304"^^xsd:string,
+        "12783:12791"^^xsd:string,
+        "13302:13308"^^xsd:string,
+        "14319:14327"^^xsd:string,
+        "16290:16298"^^xsd:string,
+        "16561:16569"^^xsd:string,
+        "16613:16619"^^xsd:string,
+        "17163:17171"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17382:17390"^^xsd:string,
+        "17935:17943"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "19117:19125"^^xsd:string,
+        "19287:19293"^^xsd:string,
+        "20260:20268"^^xsd:string,
+        "20454:20460"^^xsd:string,
+        "20802:20810"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "20835:20842"^^xsd:string,
+        "20864:20872"^^xsd:string,
+        "21043:21051"^^xsd:string,
+        "21254:21262"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "22012:22020"^^xsd:string,
+        "22276:22284"^^xsd:string,
+        "22582:22590"^^xsd:string,
+        "22716:22724"^^xsd:string,
+        "23802:23810"^^xsd:string,
+        "2390:2398"^^xsd:string,
+        "24514:24522"^^xsd:string,
+        "24587:24595"^^xsd:string,
+        "24646:24654"^^xsd:string,
+        "24715:24723"^^xsd:string,
+        "24778:24786"^^xsd:string,
+        "2598:2604"^^xsd:string,
+        "3029:3035"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "4443:4449"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4751:4759"^^xsd:string,
+        "4982:4988"^^xsd:string,
+        "5543:5549"^^xsd:string,
+        "5680:5686"^^xsd:string,
+        "5841:5847"^^xsd:string,
+        "6649:6655"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "8313:8321"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q630371 ;
+    :alsoKnownAs "Princess Sophie of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "4063:4086"^^xsd:string,
+        "4068:4076"^^xsd:string,
+        "4068:4086"^^xsd:string,
+        "5088:5096"^^xsd:string ;
+    data:posIndicesPart "16613:16619"^^xsd:string,
+        "16763:16769"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "4443:4449"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "5543:5549"^^xsd:string,
+        "5680:5686"^^xsd:string,
+        "5841:5847"^^xsd:string,
+        "6649:6655"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9572:9578"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "11345:11351"^^xsd:string,
+        "11423:11427"^^xsd:string,
+        "11523:11528"^^xsd:string,
+        "12196:12201"^^xsd:string,
+        "12507:12511"^^xsd:string,
+        "12663:12668"^^xsd:string,
+        "12969:12974"^^xsd:string,
+        "13155:13160"^^xsd:string,
+        "13585:13589"^^xsd:string,
+        "13724:13728"^^xsd:string,
+        "14100:14105"^^xsd:string,
+        "14790:14795"^^xsd:string,
+        "15299:15303"^^xsd:string,
+        "15875:15880"^^xsd:string,
+        "15999:16003"^^xsd:string,
+        "1715:1719"^^xsd:string,
+        "17172:17177"^^xsd:string,
+        "17208:17212"^^xsd:string,
+        "17944:17949"^^xsd:string,
+        "19584:19588"^^xsd:string,
+        "19955:19983"^^xsd:string,
+        "19964:19969"^^xsd:string,
+        "19964:19983"^^xsd:string,
+        "2063:2067"^^xsd:string,
+        "2084:2089"^^xsd:string,
+        "21052:21057"^^xsd:string,
+        "21134:21138"^^xsd:string,
+        "21263:21268"^^xsd:string,
+        "21408:21414"^^xsd:string,
+        "22899:22903"^^xsd:string,
+        "23684:23690"^^xsd:string,
+        "23783:23787"^^xsd:string,
+        "23990:23996"^^xsd:string,
+        "24814:24818"^^xsd:string,
+        "25042:25047"^^xsd:string,
+        "25187:25191"^^xsd:string,
+        "25404:25409"^^xsd:string,
+        "2640:2675"^^xsd:string,
+        "2680:2708"^^xsd:string,
+        "2689:2694"^^xsd:string,
+        "2689:2708"^^xsd:string,
+        "2742:2748"^^xsd:string,
+        "338:373"^^xsd:string,
+        "3419:3424"^^xsd:string,
+        "3787:3792"^^xsd:string,
+        "378:406"^^xsd:string,
+        "387:392"^^xsd:string,
+        "387:406"^^xsd:string,
+        "4276:4281"^^xsd:string,
+        "4385:4389"^^xsd:string,
+        "4435:4439"^^xsd:string,
+        "4760:4765"^^xsd:string,
+        "5206:5210"^^xsd:string,
+        "5294:5300"^^xsd:string,
+        "5512:5517"^^xsd:string,
+        "5755:5760"^^xsd:string,
+        "5994:5998"^^xsd:string,
+        "6242:6247"^^xsd:string,
+        "6455:6461"^^xsd:string,
+        "8264:8268"^^xsd:string,
+        "8322:8327"^^xsd:string,
+        "8686:8690"^^xsd:string,
+        "8831:8837"^^xsd:string,
+        "9467:9471"^^xsd:string ;
+    data:posIndicesPart "10207:10215"^^xsd:string,
+        "10328:10336"^^xsd:string,
+        "11892:11900"^^xsd:string,
+        "12296:12304"^^xsd:string,
+        "12783:12791"^^xsd:string,
+        "1296:1304"^^xsd:string,
+        "14319:14327"^^xsd:string,
+        "16290:16298"^^xsd:string,
+        "16561:16569"^^xsd:string,
+        "17382:17390"^^xsd:string,
+        "19117:19125"^^xsd:string,
+        "1959:1967"^^xsd:string,
+        "20260:20268"^^xsd:string,
+        "20802:20810"^^xsd:string,
+        "20864:20872"^^xsd:string,
+        "21608:21616"^^xsd:string,
+        "22012:22020"^^xsd:string,
+        "22276:22284"^^xsd:string,
+        "22582:22590"^^xsd:string,
+        "22716:22724"^^xsd:string,
+        "23802:23810"^^xsd:string,
+        "2390:2398"^^xsd:string,
+        "24514:24522"^^xsd:string,
+        "24587:24595"^^xsd:string,
+        "7554:7564"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "2640:2675"^^xsd:string,
+        "2647:2675"^^xsd:string,
+        "338:373"^^xsd:string,
+        "345:373"^^xsd:string ;
+    data:posIndicesPart "1110:1116"^^xsd:string,
+        "11571:11577"^^xsd:string,
+        "11633:11639"^^xsd:string,
+        "12151:12157"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "12762:12768"^^xsd:string,
+        "13317:13323"^^xsd:string,
+        "13688:13694"^^xsd:string,
+        "13893:13899"^^xsd:string,
+        "16613:16619"^^xsd:string,
+        "17055:17061"^^xsd:string,
+        "17304:17310"^^xsd:string,
+        "17367:17373"^^xsd:string,
+        "17653:17659"^^xsd:string,
+        "17972:17978"^^xsd:string,
+        "18406:18412"^^xsd:string,
+        "18652:18658"^^xsd:string,
+        "18915:18921"^^xsd:string,
+        "19242:19248"^^xsd:string,
+        "19719:19725"^^xsd:string,
+        "20824:20830"^^xsd:string,
+        "20835:20842"^^xsd:string,
+        "20847:20853"^^xsd:string,
+        "21587:21593"^^xsd:string,
+        "21696:21702"^^xsd:string,
+        "2241:2247"^^xsd:string,
+        "22426:22432"^^xsd:string,
+        "22707:22713"^^xsd:string,
+        "22774:22780"^^xsd:string,
+        "22794:22800"^^xsd:string,
+        "22890:22896"^^xsd:string,
+        "22937:22943"^^xsd:string,
+        "23054:23060"^^xsd:string,
+        "23232:23238"^^xsd:string,
+        "23534:23540"^^xsd:string,
+        "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "3408:3414"^^xsd:string,
+        "4265:4271"^^xsd:string,
+        "4443:4449"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4726:4732"^^xsd:string,
+        "4982:4988"^^xsd:string,
+        "5317:5323"^^xsd:string,
+        "5418:5424"^^xsd:string,
+        "5504:5510"^^xsd:string,
+        "5543:5549"^^xsd:string,
+        "5680:5686"^^xsd:string,
+        "5841:5847"^^xsd:string,
+        "6069:6075"^^xsd:string,
+        "6649:6655"^^xsd:string,
+        "7819:7825"^^xsd:string,
+        "8007:8013"^^xsd:string,
+        "9184:9190"^^xsd:string,
+        "9391:9397"^^xsd:string,
+        "9801:9807"^^xsd:string,
+        "9925:9931"^^xsd:string ;
+    data:wdtLink wdt:Q156531 ;
+    :alsoKnownAs "Andrew of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "1915:1928"^^xsd:string,
+        "20120:20133"^^xsd:string,
+        "20154:20172"^^xsd:string,
+        "201:214"^^xsd:string,
+        "201:233"^^xsd:string,
+        "24335:24348"^^xsd:string ;
+    data:posIndicesPart "1110:1116"^^xsd:string,
+        "11571:11577"^^xsd:string,
+        "11633:11639"^^xsd:string,
+        "11743:11747"^^xsd:string,
+        "12151:12157"^^xsd:string,
+        "12241:12247"^^xsd:string,
+        "12352:12358"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "12762:12768"^^xsd:string,
+        "13317:13323"^^xsd:string,
+        "13425:13429"^^xsd:string,
+        "13688:13694"^^xsd:string,
+        "13893:13899"^^xsd:string,
+        "16579:16583"^^xsd:string,
+        "17055:17061"^^xsd:string,
+        "17367:17373"^^xsd:string,
+        "17653:17659"^^xsd:string,
+        "17749:17755"^^xsd:string,
+        "18406:18412"^^xsd:string,
+        "18652:18658"^^xsd:string,
+        "18915:18921"^^xsd:string,
+        "19242:19248"^^xsd:string,
+        "19693:19697"^^xsd:string,
+        "19719:19725"^^xsd:string,
+        "20697:20701"^^xsd:string,
+        "20847:20853"^^xsd:string,
+        "21696:21702"^^xsd:string,
+        "22367:22373"^^xsd:string,
+        "2241:2247"^^xsd:string,
+        "22426:22432"^^xsd:string,
+        "22658:22662"^^xsd:string,
+        "22707:22713"^^xsd:string,
+        "22774:22780"^^xsd:string,
+        "22794:22800"^^xsd:string,
+        "22890:22896"^^xsd:string,
+        "22937:22943"^^xsd:string,
+        "23054:23060"^^xsd:string,
+        "23232:23238"^^xsd:string,
+        "23534:23540"^^xsd:string,
+        "23855:23859"^^xsd:string,
+        "24170:24176"^^xsd:string,
+        "24493:24499"^^xsd:string,
+        "24558:24564"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "25368:25372"^^xsd:string,
+        "25376:25385"^^xsd:string,
+        "3709:3713"^^xsd:string,
+        "4726:4732"^^xsd:string,
+        "8404:8410"^^xsd:string,
+        "8435:8439"^^xsd:string,
+        "8443:8452"^^xsd:string,
+        "9184:9190"^^xsd:string,
+        "9801:9807"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh .
+

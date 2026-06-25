@@ -7,25 +7,115 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Christopher of Greece and Denmark" ;
-    data:posIndicesFull "1180:1189",
-        "502:511",
-        "606:615" ;
-    data:posIndicesPart "1437:1443",
-        "1639:1645",
-        "1715:1721",
-        "1751:1757",
-        "769:775" ;
-    data:wdtLink wdt:Q447757 ;
-    :alsoKnownAs "Christo",
-        "Prince Christophoros of Greece and Denmark" ;
-    :hasSex data:male ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Sophie_of_Greece_and_Denmark .
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "502:509",
+        "589:612",
+        "594:602",
+        "594:612",
+        "996:1003" ;
+    data:posIndicesPart "1281:1287" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Prince_Karl_of_Hesse a :Person ;
+    rdfs:label "Prince Karl of Hesse" ;
+    data:posIndicesFull "1442:1462" ;
+    data:posIndicesPart "2257:2263",
+        "2324:2329",
+        "2338:2344",
+        "2721:2727",
+        "3065:3071",
+        "3326:3331" ;
+    data:wdtLink wdt:Q2464604 ;
+    :alsoKnownAs "Karl Adolf Andreas Prinz von Hessen-Kassel",
+        "Karl Adolf Andreas of Hesse",
+        "Karl Adolf Andreas von Hessen-Kassel",
+        "Karl Prinz von Hessen-Kassel",
+        "Karl van Hessen-Kassel",
+        "Karl von Hessen-Kassel",
+        "Prince Karl Adolf Andreas of Hesse" ;
+    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "629:642",
+        "629:661" ;
+    data:posIndicesPart "1010:1016",
+        "1274:1280",
+        "1476:1482",
+        "1552:1558",
+        "1588:1594",
+        "2257:2263",
+        "2338:2344",
+        "2721:2727",
+        "3065:3071" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male .
+
+data:Princess_Christina_Margarethe_of_Hesse a :Person ;
+    rdfs:label "Princess Christina Margarethe of Hesse" ;
+    data:posIndicesFull "0:38",
+        "9:38" ;
+    data:posIndicesPart "1139:1148",
+        "1349:1358",
+        "1402:1410",
+        "1423:1428",
+        "1493:1498",
+        "1512:1520",
+        "1533:1538",
+        "1628:1636",
+        "1847:1856",
+        "1986:1994",
+        "2002:2011",
+        "2027:2035",
+        "2122:2131",
+        "2302:2310",
+        "2311:2320",
+        "2324:2329",
+        "2417:2425",
+        "2539:2547",
+        "2548:2557",
+        "269:277",
+        "278:287",
+        "2838:2847",
+        "2983:2992",
+        "302:307",
+        "3142:3150",
+        "3189:3198",
+        "3304:3312",
+        "3313:3322",
+        "3326:3331",
+        "663:672",
+        "726:731",
+        "784:789",
+        "840:849" ;
+    data:wdtLink wdt:Q6530298 ;
+    :alsoKnownAs "Christina Margarethe of Hesse",
+        "Christine of Hesse-Cassel" ;
+    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -33,63 +123,20 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Beatrix of Hohenlohe-Langenburg" ;
-    data:posIndicesFull "2190:2230" ;
-    data:posIndicesPart "2465:2473",
-        "2580:2588",
-        "2702:2710",
-        "3445:3453",
-        "3607:3615" ;
-    data:wdtLink wdt:Q75384169 ;
-    :hasSex data:female .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "1152:1169",
-        "1159:1169",
-        "1159:1170",
-        "665:675",
-        "665:676" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia ;
-    :isUncleOf data:Prince_Christoph_of_Hesse-Kassel .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "1037:1065",
-        "1046:1065" ;
-    data:posIndicesPart "1565:1573",
-        "1675:1683",
-        "1791:1799",
-        "2149:2157",
-        "2465:2473",
-        "2580:2588",
-        "2702:2710",
-        "3445:3453",
-        "3607:3615" ;
+    data:posIndicesFull "874:902",
+        "883:902" ;
+    data:posIndicesPart "1402:1410",
+        "1512:1520",
+        "1628:1636",
+        "1986:1994",
+        "2027:2035",
+        "2302:2310",
+        "2417:2425",
+        "2539:2547",
+        "3142:3150",
+        "3304:3312" ;
     data:wdtLink wdt:Q61338 ;
     :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
         "Margaret of Prussia",
@@ -102,108 +149,51 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasChild data:Prince_Christoph_of_Hesse-Kassel ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Christoph_of_Hesse-Kassel ;
-    :isMotherOf data:Prince_Christoph_of_Hesse-Kassel ;
-    :isParentOf data:Prince_Christoph_of_Hesse-Kassel ;
-    :isSiblingOf data:Wilhelm_II ;
-    :isSisterOf data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "2420:2433",
-        "249:262",
-        "2501:2514",
-        "2884:2897",
-        "3368:3381" ;
-    data:posIndicesPart "3106:3112" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasBrother data:Charles_III ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Charles_III ;
-    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Charles_III ;
-    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+data:Prince_Christoph_of_Hesse-Kassel a :Person ;
+    rdfs:label "Prince Christoph of Hesse-Kassel" ;
+    data:posIndicesFull "332:357",
+        "436:461" ;
+    data:posIndicesPart "1010:1016",
+        "1017:1026",
+        "1274:1280",
+        "1423:1428",
+        "1476:1482",
+        "1493:1498",
+        "1533:1538",
+        "1552:1558",
+        "1588:1594",
+        "2257:2263",
+        "2324:2329",
+        "2338:2344",
+        "2721:2727",
+        "3065:3071",
+        "3326:3331",
+        "726:731",
+        "784:789" ;
+    data:wdtLink wdt:Q2314771 ;
+    :alsoKnownAs "Prince Christoph Ernst August of Hesse",
+        "Prince Christoph of Hesse" ;
+    :hasParent data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles III" ;
-    data:posIndicesFull "169:181",
-        "169:185",
-        "174:185",
-        "174:207" ;
-    data:wdtLink wdt:Q43274 ;
-    :alsoKnownAs "C III",
-        "Charles III of England",
-        "Charles III of the United Kingdom",
-        "Charles Mountbatten-Windsor",
-        "Charles Philip Arthur George",
-        "Charles Philip Arthur George Mountbatten-Windsor",
-        "Charles Philip Arthur George Windsor",
-        "Charles Philip Arthur George, Prince of Wales",
-        "Charles Wales",
-        "Charles Windsor",
-        "Charles the Third",
-        "HM King Charles III",
-        "His Majesty",
-        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
-        "His Majesty The King",
-        "His Royal Highness Charles III of Great Britain",
-        "King Charles",
-        "King Charles III",
-        "King of England",
-        "Prince Charles",
-        "Prince Charles Philip Arthur George of Edinburgh",
-        "Prince Charles Philip Arthur George, Prince of Wales",
-        "Prince Charles of Edinburgh",
-        "Prince Charles, Duke of Rothesay",
-        "Prince Charles, Prince of Wales",
-        "The Prince Charles Philip Arthur George, Prince of Wales",
-        "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
-    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
-    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alice_of_Battenberg a :Person ;
     rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "1891:1897",
-        "2158:2163",
-        "3031:3035",
-        "342:346",
-        "868:872" ;
-    data:posIndicesPart "1565:1573",
-        "1675:1683",
-        "1791:1799",
-        "2465:2473",
-        "2580:2588",
-        "2702:2710",
-        "3445:3453",
-        "3607:3615" ;
+    data:posIndicesFull "1728:1734",
+        "179:183",
+        "1995:2000",
+        "2868:2872",
+        "705:709" ;
+    data:posIndicesPart "1402:1410",
+        "1512:1520",
+        "1628:1636",
+        "2027:2035",
+        "2302:2310",
+        "2417:2425",
+        "2539:2547",
+        "3142:3150",
+        "3304:3312" ;
     data:wdtLink wdt:Q116062 ;
     :alsoKnownAs "Alice",
         "Alice of Battenberg",
@@ -214,214 +204,30 @@ data:Princess_Alice_of_Battenberg a :Ancestor,
         "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
         "Victoria Alice Elizabeth Julia Marie",
         "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Sophie_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Prince_Karl_of_Hesse a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Karl of Hesse" ;
-    data:posIndicesFull "1605:1625" ;
-    data:posIndicesPart "2487:2492",
-        "3629:3634" ;
-    data:wdtLink wdt:Q2464604 ;
-    :alsoKnownAs "Karl Adolf Andreas Prinz von Hessen-Kassel",
-        "Karl Adolf Andreas of Hesse",
-        "Karl Adolf Andreas von Hessen-Kassel",
-        "Karl Prinz von Hessen-Kassel",
-        "Karl van Hessen-Kassel",
-        "Karl von Hessen-Kassel",
-        "Prince Karl Adolf Andreas of Hesse" ;
-    :hasFather data:Prince_Christoph_of_Hesse-Kassel ;
-    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Christina_Margarethe_of_Hesse ;
-    :isBrotherOf data:Princess_Christina_Margarethe_of_Hesse ;
-    :isChildOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isSiblingOf data:Princess_Christina_Margarethe_of_Hesse ;
-    :isSonOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark .
-
-data:Princess_Christina_Margarethe_of_Hesse a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Christina Margarethe of Hesse" ;
-    data:posIndicesFull "0:38",
-        "9:38" ;
-    data:posIndicesPart "1003:1012",
-        "1302:1311",
-        "1512:1521",
-        "1565:1573",
-        "1586:1591",
-        "1656:1661",
-        "1675:1683",
-        "1696:1701",
-        "1791:1799",
-        "2010:2019",
-        "2149:2157",
-        "2165:2174",
-        "2285:2294",
-        "2465:2473",
-        "2474:2483",
-        "2487:2492",
-        "2580:2588",
-        "2702:2710",
-        "2711:2720",
-        "3001:3010",
-        "3286:3295",
-        "3445:3453",
-        "3492:3501",
-        "3607:3615",
-        "3616:3625",
-        "3629:3634",
-        "432:440",
-        "441:450",
-        "465:470",
-        "826:835",
-        "889:894",
-        "947:952" ;
-    data:wdtLink wdt:Q6530298 ;
-    :alsoKnownAs "Christina Margarethe of Hesse",
-        "Christine of Hesse-Cassel" ;
-    :hasBrother data:Prince_Karl_of_Hesse ;
-    :hasFather data:Prince_Christoph_of_Hesse-Kassel ;
-    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isDaughterOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Karl_of_Hesse ;
-    :isSisterOf data:Prince_Karl_of_Hesse .
-
-data:Prince_Christoph_of_Hesse-Kassel a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Christoph of Hesse-Kassel" ;
-    data:posIndicesFull "495:520",
-        "599:624" ;
-    data:posIndicesPart "1173:1179",
-        "1437:1443",
-        "1586:1591",
-        "1639:1645",
-        "1656:1661",
-        "1696:1701",
-        "1715:1721",
-        "1751:1757",
-        "2487:2492",
-        "3629:3634",
-        "889:894",
-        "947:952" ;
-    data:wdtLink wdt:Q2314771 ;
-    :alsoKnownAs "Prince Christoph Ernst August of Hesse",
-        "Prince Christoph of Hesse" ;
-    :hasChild data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :hasDaughter data:Princess_Christina_Margarethe_of_Hesse ;
-    :hasMother data:Princess_Margaret_of_Prussia ;
-    :hasParent data:Princess_Margaret_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Karl_of_Hesse ;
-    :isChildOf data:Princess_Margaret_of_Prussia ;
-    :isFatherOf data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :isParentOf data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :isSonOf data:Princess_Margaret_of_Prussia .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "792:805",
-        "792:824" ;
-    data:posIndicesPart "1173:1179",
-        "1437:1443",
-        "1639:1645",
-        "1715:1721",
-        "1751:1757" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isBrotherOf data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isFatherOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isSiblingOf data:Princess_Sophie_of_Greece_and_Denmark ;
-    :isSonOf data:Princess_Alice_of_Battenberg ;
-    :isUncleOf data:Prince_Karl_of_Hesse,
-        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
-        data:Princess_Christina_Margarethe_of_Hesse .
-
-data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Sophie_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Sophie of Greece and Denmark" ;
-    data:posIndicesFull "537:562",
-        "537:574",
-        "689:714",
-        "689:726" ;
-    data:posIndicesPart "1565:1573",
-        "1675:1683",
-        "1791:1799",
-        "2149:2157",
-        "2465:2473",
-        "2580:2588",
-        "2702:2710",
-        "3445:3453",
-        "3607:3615" ;
+    data:posIndicesFull "374:399",
+        "374:411",
+        "526:551",
+        "526:563" ;
+    data:posIndicesPart "1402:1410",
+        "1512:1520",
+        "1628:1636",
+        "1986:1994",
+        "2027:2035",
+        "2302:2310",
+        "2417:2425",
+        "2539:2547",
+        "3142:3150",
+        "3304:3312" ;
     data:wdtLink wdt:Q630371 ;
     :alsoKnownAs "Princess Sophie of Greece" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasChild data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :hasDaughter data:Princess_Christina_Margarethe_of_Hesse ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
     :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Karl_of_Hesse ;
-    :isAuntOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isDaughterOf data:Princess_Alice_of_Battenberg ;
-    :isMotherOf data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :isParentOf data:Prince_Karl_of_Hesse,
-        data:Princess_Christina_Margarethe_of_Hesse ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

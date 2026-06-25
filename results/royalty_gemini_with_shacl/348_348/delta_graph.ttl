@@ -2,48 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Francoise_Cazaudehore a :Person,
-        :Woman .
-
-data:Prince_Juan_Jorge_de_Bagration_Mukhrani a :Man,
+data:Carlos_Enrique a :Man,
         :Person ;
-    :hasBirthYear 1977 ;
-    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
-    :hasMarriageYear 2014 ;
-    :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
-    :hasRelation data:Kristine_Dzidziguri ;
-    :hasSex data:Male .
+    :isChildOf data:Carlos_Duke_of_Parma .
 
-data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
-        :Person,
+data:Gloria_Irene a :Person,
         :Woman ;
-    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+    :isChildOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
 
-data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Ancestor,
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
         :Man,
         :Person .
 
-data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Ferdinand_of_Bavaria .
-
-data:Kristine_Dzidziguri a :Person,
-        :Woman .
-
-data:Male a :Sex .
-
-data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+data:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
-    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+    :hasBirthYear 1972 ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Carlos_Duke_of_Parma,
+        data:Princess_Carolina,
+        data:Princess_Margarita .
 
-data:Prince_Ferdinand_of_Bavaria a :Ancestor,
-        :Man,
-        :Person .
+data:Princess_Carolina a :Person,
+        :Woman .
 
-data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Margarita a :Person,
+        :Woman .
+
+data:Carlos_Duke_of_Parma a :Ancestor,
         :Man,
         :Person .
 

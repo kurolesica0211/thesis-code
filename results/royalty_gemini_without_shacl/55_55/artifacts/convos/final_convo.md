@@ -73,7 +73,6 @@ George II (Greek: Γεώργιος Β', romanized: Geórgios II; 19 July  1890 �
 The eldest son of King Constantine I of Greece and Princess Sophia of Prussia, George followed his father into exile in 1917 following the National Schism, while his younger brother Alexander was installed as king.
 Constantine was restored to the throne in 1920 after Alexander's death, but was forced to abdicate two years later in the aftermath of the Greco-Turkish War.
 Greece was proclaimed a republic in March 1924 and George was formally deposed and stripped of Greek nationality.
-The king supported Ioannis Metaxas' 1936 self-coup, which established an authoritarian, nationalist and anti-communist dictatorship known as 4th of August Regime.
 Greece was overrun following a German invasion in April 1941, forcing George into his third exile.
 At the end of the war, George returned to Greece after a 1946 referendum had preserved the monarchy.
 Early life
@@ -82,7 +81,6 @@ Birth and childhood
 
 George was born at the royal villa at Tatoi, near Athens, the eldest son of Crown Prince Constantine of Greece and the crown princess, Sophia of Prussia.
 George was named after his paternal grandfather, King George I of Greece, following traditional Greek naming practices.
-He was baptized on 18 August  1890; his godparents included Queen Victoria.
 George was the eldest of six siblings, born between 1890 and 1913, and spent most of his childhood in Athens in a villa on Kifisias Avenue.
 As a child, George also made numerous visits to Great Britain, where he stayed for several weeks to visit his British relatives.
 George also made visits to Germany to see his mother's family and they stayed in Schlosshotel Kronberg with his grandmother Victoria, but also took summer holidays in Corfu and Venice, travelling on their private yacht, Amphritrite IV.
@@ -107,9 +105,6 @@ When the First Balkan War commenced in October 1912, George returned to Greece t
 George and his brother, Alexander, served as officers on his father's staff.
 George served in numerous battles, which was criticised by the media as it put the country's future monarch as risk of being killed.
 One such battle that George participated in was the capture of Thessaloniki on 8 November  1912, which marked major progress for Greece in the war.
-Crown Prince
-
-World War I
 On 18 March  1913, George's grandfather and the reigning king, George I, was assassinated while taking his daily walk in Thessaloniki.
 Crown Prince Constantine, whose popularity had grown due to Greece's successes in the First Balkan War, acceded to the throne as King Constantine I. George thus became the Crown Prince of Greece at age 23.
 In the early weeks of being crown prince, George and his family moved to their new residence, where George developed a close friendship with his uncle, Prince Christopher, who was only two years older than him.
@@ -142,7 +137,6 @@ Almost all members of the royal family moved with them after Venizelos returned 
 The family were financially strained and Constantine soon became ill.
 At the Treaty of Sèvres and Treaty of Neuilly-sur-Seine, part of the end of World War I, Greece made territorial gains in Thrace and Anatolia.
 Although initially seen as gains to the country, Greece soon fell into the Second Greco-Turkish War in 1919.
-Tension between Venizelos and the royal family remained high and was not helped when Alexander decided to marry aristocrat Aspasia Manos, rather than a foreign royal, which dismayed Venizelos.
 According to historian Marlene Eilers Koenig, George was in love with his cousin Anastasia de Torby, however their relationship was opposed by George's mother, Sophia, as Anastasia was the result of a morganatic marriage.
 George later became engaged in October 1920 to Elisabeth of Romania, who had been in touch with George since 1911.
 George had previously asked Elisabeth to marry in 1914, but she declined off the advice of her great-aunt, Elisabeth of Wied, who thought of George as being two small and too English.
@@ -178,7 +172,6 @@ George officially ascended to the throne as George II, but did not receive a hap
 In Greece, there had been greater political instability since the 1922 Greek coup d'état, which influenced Constantine's abdication, and a large influx of refugees from Asia Minor as a result of the war.
 George and Elisabeth were confined to Tatoi and were highly monitored by the government, while George worried about the growing instability in Greece and criticism from the former Allies, who had previously refused to recognise Constantine's second reign.
 All six of them had been strong supporters of the monarchy and their executions were to the dismay of George, who had lost his right to pardon and could not intervene in the trial.
-Continued opposition to the royal family was occurring, such as the arrest of Prince Andrew on 26 October at the royal residence of Mon Repos on Corfu.
 The Greek government was criticised by George V of the United Kingdom, Alfonso XIII of Spain and Pope Pius XI, before Andrew's sentence was reduced to capital banishment in order to avoid sanctions.
 On 5 December , a British ship was sent to transport Andrew and his family, including the young Prince Philip, out of Greece and to Britain, to the dismay of George.
 Constantine died in Palermo on 11 January 1923  without being granted a state funeral, which left George considering abdication.
@@ -261,7 +254,6 @@ Home front
 
 On 2 June 1940 Frederica gave birth to the future Constantine II.
 Mussolini commenced a violent propaganda campaign against Greece and accused George, who had declared Greece's neutrality, of harbouring British ships in Greek waters.
-On 15 August an Italian submarine sunk the Elli, which was escorting a ship of pilgrims off Tinos.
 The Nazi government in Germany proposed mediation between Italy and Greece.
 Hitler promised that if George, who he saw as an anglophile, abdicated from the throne, Germany would guarantee no Italian invasion of Greece and grant Greece territories off the coast of the Balkans.
 George was outraged at this proposition and stated, " would do better to not stick their noses in the affairs of this country if they know what is good for them!"
@@ -287,7 +279,6 @@ King-in-exile
 Throughout the Axis occupation, George remained the internationally recognised head of state, backed by the Greek government-in-exile and the Free Greek Forces.
 However, the British Foreign Office found George exceedingly difficult to deal with.
 He was deeply obstinate about upholding what he regarded as his royal prerogatives.
-He proved notably unwilling to compromise with those who wanted a clear break with the 4th of August Regime.
 As late as 1942, George kept on Cabinet ministers from the Metaxas regime, most notably Maniadakis.
 The Greek royals' presence in Egypt upset Farouk of Egypt and his pro-Italian ministry, forcing George to find a new place of refuge for the family.
 George VI of the United Kingdom opposed having Frederica in Britain out of worry that she would bring attention to the British royal family's German origins.
@@ -295,11 +286,9 @@ After deliberation, George and Paul only were granted permission to reside in Lo
 George, Wallach, Paul and Levidis stationed themselves at Claridge's in Mayfair.
 George and Tsouderos organised with Winston Churchill and the British Cabinet the placement of Greek troops in the Middle East and the purification of the Greek army by eliminating communist and Venizelist ideals.
 On 22 October 1941, George finally, yet reluctantly, drafted with his Cabinet-in-exile, due to pressure from the British government and republican Greek opposition, a decree that would establish a new parliamentary regime and the dissolution of Metaxas's dictatorship by restoring the previously abolished articles; articles 5, 6, 10, 12, 14, 20 and 95.
-The decree was signed on 4 February 1942, finally abolishing the 4th of August Regime.
 The following month, George and Tsouderos returned to Egypt to organise Greek troops and stayed there until June.
 George travelled to the United States and met with President Franklin D. Roosevelt, before flying to London and then Cairo.
 Perhaps deeply paranoid and insecure, George believed that the British government was plotting to prevent his return to Greece, despite all of the evidence to the contrary.
-Edward Warner of the Southern Department of the Foreign Office wrote in March 1942 that the king was "under the extraordinary impression that the Foreign Office was 'pro-Republican and anti-himself'".
 George repeatedly asked that Soteriadis be replaced with a monarchist.
 One of George's few friends was Churchill, who was determined to see him restored and often backed the king's complaints against his own officials.
 In occupied Greece, however, the leftist partisans of the National Liberation Front (EAM) and National Popular Liberation Army (ELAS), now unfettered by Metaxas's oppression, had become the largest Greek Resistance movement, enjoying considerable popular support.
@@ -371,6 +360,8 @@ Various Greek coins bearing the image of George II have been issued by the Bank 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -386,39 +377,9 @@ Various Greek coins bearing the image of George II have been issued by the Bank 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -433,6 +394,23 @@ Various Greek coins bearing the image of George II have been issued by the Bank 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -450,6 +428,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -517,29 +510,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -548,6 +533,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -560,6 +553,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -568,17 +563,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -606,6 +603,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -621,175 +702,370 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a5adfbaa-5bc2-4e1c-91c1-9b375d363cb0)
- Call ID: a5adfbaa-5bc2-4e1c-91c1-9b375d363cb0
+  AssignClass (96dc2542-479a-4618-bf00-2105fa8c739d)
+ Call ID: 96dc2542-479a-4618-bf00-2105fa8c739d
   Args:
     type: :Man
-    source: George_II_of_Greece
-  AssignClass (180d9477-a4f2-4607-92a7-7bfd83a56019)
- Call ID: 180d9477-a4f2-4607-92a7-7bfd83a56019
+    source: :GeorgeII
+  AssignClass (5aa1a010-320a-41b7-b6c9-a9bde22f9448)
+ Call ID: 5aa1a010-320a-41b7-b6c9-a9bde22f9448
   Args:
+    source: :GeorgeII
     type: :Person
-    source: George_II_of_Greece
-  AddLiteral (b407e883-4fc0-41a7-9a50-b7c04b755928)
- Call ID: b407e883-4fc0-41a7-9a50-b7c04b755928
+  AddLiteral (c94b9c0f-40ae-4af0-baf6-6e8709e75234)
+ Call ID: c94b9c0f-40ae-4af0-baf6-6e8709e75234
   Args:
-    relation: :hasBirthYear
-    literal_value: 1890
     literal_type: xsd:integer
-    source: George_II_of_Greece
-  AddLiteral (f201322b-0e8d-4090-938d-119bc177e997)
- Call ID: f201322b-0e8d-4090-938d-119bc177e997
+    literal_value: 1890
+    relation: :hasBirthYear
+    source: :GeorgeII
+  AddLiteral (6c904474-713c-4388-b447-8069039a5a4b)
+ Call ID: 6c904474-713c-4388-b447-8069039a5a4b
   Args:
-    source: George_II_of_Greece
-    relation: :hasDeathYear
     literal_value: 1947
     literal_type: xsd:integer
-  AssignClass (19be7430-c0e7-4bac-a53c-3cd35f24f94f)
- Call ID: 19be7430-c0e7-4bac-a53c-3cd35f24f94f
+    source: :GeorgeII
+    relation: :hasDeathYear
+  AssignClass (b693b3df-fa6e-43e1-9a4a-b8275aa1f424)
+ Call ID: b693b3df-fa6e-43e1-9a4a-b8275aa1f424
   Args:
+    source: :ConstantineI
     type: :Man
-    source: Constantine_I_of_Greece
-  AssignClass (880f863b-0fbc-45a3-8792-ac2be4d268db)
- Call ID: 880f863b-0fbc-45a3-8792-ac2be4d268db
+  AssignClass (b963d2b9-ae27-44c3-b1bf-cdbb157faf35)
+ Call ID: b963d2b9-ae27-44c3-b1bf-cdbb157faf35
   Args:
-    source: Constantine_I_of_Greece
+    source: :ConstantineI
     type: :Person
-  AssignClass (6581f8b0-bca3-4f5c-bc0f-a220f324718a)
- Call ID: 6581f8b0-bca3-4f5c-bc0f-a220f324718a
+  AssignClass (061ca367-eb5e-4e97-94e2-ed73490b34f9)
+ Call ID: 061ca367-eb5e-4e97-94e2-ed73490b34f9
   Args:
+    source: :SophiaOfPrussia
     type: :Woman
-    source: Sophia_of_Prussia
-  AssignClass (88172cdf-ce9f-4baf-82f0-1b7f83ce0bd0)
- Call ID: 88172cdf-ce9f-4baf-82f0-1b7f83ce0bd0
+  AssignClass (c833a652-f87a-4020-bb82-1432d00e4be5)
+ Call ID: c833a652-f87a-4020-bb82-1432d00e4be5
   Args:
-    source: Sophia_of_Prussia
+    source: :SophiaOfPrussia
     type: :Person
-  AddTriple (668351dd-9f8e-4bf4-8603-fcb46814d534)
- Call ID: 668351dd-9f8e-4bf4-8603-fcb46814d534
+  AddTriple (69d2eab2-26dd-4e48-b52e-86be3d0d0484)
+ Call ID: 69d2eab2-26dd-4e48-b52e-86be3d0d0484
   Args:
     relation: :hasFather
-    target: Constantine_I_of_Greece
-    source: George_II_of_Greece
-  AddTriple (f9af42d6-a48e-461e-9e25-cb2726a0c5d1)
- Call ID: f9af42d6-a48e-461e-9e25-cb2726a0c5d1
+    target: :ConstantineI
+    source: :GeorgeII
+  AddTriple (ab895a31-f218-4f49-b79f-43ffd4df3ff0)
+ Call ID: ab895a31-f218-4f49-b79f-43ffd4df3ff0
   Args:
+    source: :GeorgeII
+    target: :SophiaOfPrussia
     relation: :hasMother
-    source: George_II_of_Greece
-    target: Sophia_of_Prussia
-  AssignClass (79f82342-7954-46cc-a1d8-b5e77f26d268)
- Call ID: 79f82342-7954-46cc-a1d8-b5e77f26d268
+  AssignClass (18f4d625-d153-4e56-bea4-ad101e6897c7)
+ Call ID: 18f4d625-d153-4e56-bea4-ad101e6897c7
   Args:
+    source: :Alexander
     type: :Man
-    source: Alexander_of_Greece
-  AssignClass (ee86c0be-816d-4f61-bfe6-34ef91a98d4d)
- Call ID: ee86c0be-816d-4f61-bfe6-34ef91a98d4d
+  AssignClass (cc419226-63bd-4ed8-a4e5-8fcdfba4b429)
+ Call ID: cc419226-63bd-4ed8-a4e5-8fcdfba4b429
   Args:
-    source: Alexander_of_Greece
+    source: :Alexander
     type: :Person
-  AddTriple (6d199501-b136-4693-b333-47ff1e8cf6ba)
- Call ID: 6d199501-b136-4693-b333-47ff1e8cf6ba
+  AddTriple (9b0cca88-62c1-4cee-a506-c019fe78bd73)
+ Call ID: 9b0cca88-62c1-4cee-a506-c019fe78bd73
   Args:
     relation: :hasBrother
-    source: George_II_of_Greece
-    target: Alexander_of_Greece
-  AssignClass (0642bf88-5aaf-4425-a27b-a89583ec7453)
- Call ID: 0642bf88-5aaf-4425-a27b-a89583ec7453
+    target: :Alexander
+    source: :GeorgeII
+  AssignClass (6e85d374-00a6-4860-810b-77ccef15eb3b)
+ Call ID: 6e85d374-00a6-4860-810b-77ccef15eb3b
   Args:
-    source: Helen_of_Greece
-    type: :Woman
-  AssignClass (17bde27c-5013-4283-817d-a9181a0252b2)
- Call ID: 17bde27c-5013-4283-817d-a9181a0252b2
-  Args:
-    source: Helen_of_Greece
-    type: :Person
-  AddTriple (a301187e-7291-42a9-b832-08b7afd0aee2)
- Call ID: a301187e-7291-42a9-b832-08b7afd0aee2
-  Args:
-    target: Helen_of_Greece
-    source: George_II_of_Greece
-    relation: :hasSister
-  AssignClass (3ffc317e-9b6b-4a34-b795-1a2eb801c7e4)
- Call ID: 3ffc317e-9b6b-4a34-b795-1a2eb801c7e4
-  Args:
-    type: :Woman
-    source: Katherine_of_Greece
-  AssignClass (a615fdfb-1a5c-46bf-8c15-02e37849b408)
- Call ID: a615fdfb-1a5c-46bf-8c15-02e37849b408
-  Args:
-    type: :Person
-    source: Katherine_of_Greece
-  AddTriple (8e9a4cb4-e9ca-480f-a68e-7b3e7d5b964e)
- Call ID: 8e9a4cb4-e9ca-480f-a68e-7b3e7d5b964e
-  Args:
-    source: George_II_of_Greece
-    target: Katherine_of_Greece
-    relation: :hasSister
-  AssignClass (b8544c19-4a5a-47d7-be03-c89d330b277d)
- Call ID: b8544c19-4a5a-47d7-be03-c89d330b277d
-  Args:
-    source: Paul_of_Greece
     type: :Man
-  AssignClass (44b41343-f136-4914-9d32-e9bfb96ff859)
- Call ID: 44b41343-f136-4914-9d32-e9bfb96ff859
+    source: :GeorgeI
+  AssignClass (9ca02a9d-6c66-416a-9352-5c754eee3eb3)
+ Call ID: 9ca02a9d-6c66-416a-9352-5c754eee3eb3
   Args:
+    source: :GeorgeI
     type: :Person
-    source: Paul_of_Greece
-  AddTriple (162d423f-9c94-46c3-9e81-a9ba8a5e1b18)
- Call ID: 162d423f-9c94-46c3-9e81-a9ba8a5e1b18
-  Args:
-    relation: :hasBrother
-    source: George_II_of_Greece
-    target: Paul_of_Greece
-  AssignClass (423802b2-1080-474d-8a10-9272d5b44e1e)
- Call ID: 423802b2-1080-474d-8a10-9272d5b44e1e
-  Args:
-    type: :Woman
-    source: Irene_of_Greece
-  AssignClass (b30162d7-7e55-404e-a0e4-df78f4c346f2)
- Call ID: b30162d7-7e55-404e-a0e4-df78f4c346f2
-  Args:
-    type: :Person
-    source: Irene_of_Greece
-  AddTriple (3231535b-6746-4d14-be13-e8ab23ea2f02)
- Call ID: 3231535b-6746-4d14-be13-e8ab23ea2f02
-  Args:
-    relation: :hasSister
-    target: Irene_of_Greece
-    source: George_II_of_Greece
-  AssignClass (7dc30db5-a306-4b8e-9fd4-b3f0ca5d909b)
- Call ID: 7dc30db5-a306-4b8e-9fd4-b3f0ca5d909b
-  Args:
-    source: George_I_of_Greece
-    type: :Man
-  AssignClass (014e076f-cf29-40e8-836e-3286427f72c3)
- Call ID: 014e076f-cf29-40e8-836e-3286427f72c3
-  Args:
-    source: George_I_of_Greece
-    type: :Person
-  AddTriple (21425b2f-c2b5-4457-9ed2-3cc2530d0fe2)
- Call ID: 21425b2f-c2b5-4457-9ed2-3cc2530d0fe2
+  AddTriple (9096ab15-1523-495b-9887-338894df0b33)
+ Call ID: 9096ab15-1523-495b-9887-338894df0b33
   Args:
     relation: :hasFather
-    source: Constantine_I_of_Greece
-    target: George_I_of_Greece
-  AssignClass (3bcde40f-e1c1-470e-a084-bc5445e619f5)
- Call ID: 3bcde40f-e1c1-470e-a084-bc5445e619f5
+    target: :GeorgeI
+    source: :ConstantineI
+  AssignClass (0f550e1f-c693-49a5-a188-57f2084fe7db)
+ Call ID: 0f550e1f-c693-49a5-a188-57f2084fe7db
   Args:
+    source: :Helen
     type: :Woman
-    source: Elisabeth_of_Romania
-  AssignClass (d1d8f762-f05d-4495-adfe-a3b7b88e37c0)
- Call ID: d1d8f762-f05d-4495-adfe-a3b7b88e37c0
+  AssignClass (61718a55-3985-478c-a62e-cf4074df3542)
+ Call ID: 61718a55-3985-478c-a62e-cf4074df3542
   Args:
-    source: Elisabeth_of_Romania
+    source: :Helen
     type: :Person
-  AddLiteral (e91e1dd2-c6fd-4a46-b7a5-dc45a82ec5d3)
- Call ID: e91e1dd2-c6fd-4a46-b7a5-dc45a82ec5d3
+  AddTriple (3784de21-b705-4cff-b3eb-101f4f279481)
+ Call ID: 3784de21-b705-4cff-b3eb-101f4f279481
+  Args:
+    relation: :hasSister
+    target: :Helen
+    source: :GeorgeII
+  AssignClass (3190f637-36f2-45d4-89d4-b0da9d3dfa99)
+ Call ID: 3190f637-36f2-45d4-89d4-b0da9d3dfa99
+  Args:
+    source: :Katherine
+    type: :Woman
+  AssignClass (4427aaec-5e0d-4100-bf79-09e5ae4911b6)
+ Call ID: 4427aaec-5e0d-4100-bf79-09e5ae4911b6
+  Args:
+    type: :Person
+    source: :Katherine
+  AddTriple (b4aa234e-391c-4d2d-9428-0d0c2b4e349a)
+ Call ID: b4aa234e-391c-4d2d-9428-0d0c2b4e349a
+  Args:
+    source: :GeorgeII
+    relation: :hasSister
+    target: :Katherine
+  AssignClass (5562e439-a8cb-4029-a3bb-aeae04e2a542)
+ Call ID: 5562e439-a8cb-4029-a3bb-aeae04e2a542
+  Args:
+    type: :Man
+    source: :Christopher
+  AssignClass (43e6acc6-6b85-4291-94e1-e18ffb13f617)
+ Call ID: 43e6acc6-6b85-4291-94e1-e18ffb13f617
+  Args:
+    type: :Person
+    source: :Christopher
+  AddTriple (d83ef38d-2596-45bf-aa8a-bee728d2681a)
+ Call ID: d83ef38d-2596-45bf-aa8a-bee728d2681a
+  Args:
+    target: :GeorgeII
+    relation: :isUncleOf
+    source: :Christopher
+  AssignClass (78fc8bba-77b5-4e5c-af5d-ad7a101af017)
+ Call ID: 78fc8bba-77b5-4e5c-af5d-ad7a101af017
+  Args:
+    source: :ElisabethOfRomania
+    type: :Woman
+  AssignClass (8626537b-9cb8-4c18-9404-bdf8a4be967c)
+ Call ID: 8626537b-9cb8-4c18-9404-bdf8a4be967c
+  Args:
+    source: :ElisabethOfRomania
+    type: :Person
+  AddTriple (801388b0-12fb-4935-90ba-dbc461dca2a9)
+ Call ID: 801388b0-12fb-4935-90ba-dbc461dca2a9
+  Args:
+    target: :ElisabethOfRomania
+    relation: :hasRelation
+    source: :GeorgeII
+  AddLiteral (f1e20750-3cf2-4fed-8f5a-3b9fcbd76a1e)
+ Call ID: f1e20750-3cf2-4fed-8f5a-3b9fcbd76a1e
   Args:
     relation: :hasMarriageYear
-    literal_value: 1921
+    source: :GeorgeII
     literal_type: xsd:integer
-    source: George_II_of_Greece
-  Finish (b677f54b-674b-43ed-b11d-dc70f9d73376)
- Call ID: b677f54b-674b-43ed-b11d-dc70f9d73376
+    literal_value: 1921
+  AssignClass (0081f445-63cd-4722-bc81-263d88f884e7)
+ Call ID: 0081f445-63cd-4722-bc81-263d88f884e7
+  Args:
+    type: :Man
+    source: :Paul
+  AssignClass (32f07538-1ab8-429c-8b86-1ee4dd3efa8d)
+ Call ID: 32f07538-1ab8-429c-8b86-1ee4dd3efa8d
+  Args:
+    source: :Paul
+    type: :Person
+  AddTriple (f2f2f814-7070-4f62-b802-81f67ff63011)
+ Call ID: f2f2f814-7070-4f62-b802-81f67ff63011
+  Args:
+    relation: :hasBrother
+    target: :Paul
+    source: :GeorgeII
+  AssignClass (97c42887-711d-40da-a7e2-e2cb3680e4ef)
+ Call ID: 97c42887-711d-40da-a7e2-e2cb3680e4ef
+  Args:
+    source: :FerdinandI
+    type: :Man
+  AssignClass (4ad03ee0-cdf3-4784-94f9-7c6a62289e37)
+ Call ID: 4ad03ee0-cdf3-4784-94f9-7c6a62289e37
+  Args:
+    source: :FerdinandI
+    type: :Person
+  AssignClass (3e802de3-f5bf-46ca-9d82-4cb1c265fa62)
+ Call ID: 3e802de3-f5bf-46ca-9d82-4cb1c265fa62
+  Args:
+    type: :Woman
+    source: :MarieOfRomania
+  AssignClass (c6c008fc-6bab-4050-9053-e233f13d0cb1)
+ Call ID: c6c008fc-6bab-4050-9053-e233f13d0cb1
+  Args:
+    source: :MarieOfRomania
+    type: :Person
+  AddTriple (5fdfef1c-c62d-46fe-a34d-7a619c368920)
+ Call ID: 5fdfef1c-c62d-46fe-a34d-7a619c368920
+  Args:
+    source: :ElisabethOfRomania
+    relation: :hasFather
+    target: :FerdinandI
+  AddTriple (a7ee0eb5-bb99-4541-940e-b32121688801)
+ Call ID: a7ee0eb5-bb99-4541-940e-b32121688801
+  Args:
+    source: :ElisabethOfRomania
+    target: :MarieOfRomania
+    relation: :hasMother
+  AssignClass (72e5ee2e-4ec5-495e-8632-3ab4c3d2b682)
+ Call ID: 72e5ee2e-4ec5-495e-8632-3ab4c3d2b682
+  Args:
+    source: :CarolOfRomania
+    type: :Man
+  AssignClass (d74ccb54-54f7-4173-8470-1dcf6ded911d)
+ Call ID: d74ccb54-54f7-4173-8470-1dcf6ded911d
+  Args:
+    type: :Person
+    source: :CarolOfRomania
+  AddTriple (35ac0c22-2172-46b1-a4af-9cbf43fbc165)
+ Call ID: 35ac0c22-2172-46b1-a4af-9cbf43fbc165
+  Args:
+    relation: :hasBrother
+    target: :CarolOfRomania
+    source: :ElisabethOfRomania
+  AssignClass (72ab8eb8-6e02-4a98-a273-fd74446cded2)
+ Call ID: 72ab8eb8-6e02-4a98-a273-fd74446cded2
+  Args:
+    type: :Man
+    source: :Andrew
+  AssignClass (c074f95c-790e-4b72-8ac0-a4febe7bb47d)
+ Call ID: c074f95c-790e-4b72-8ac0-a4febe7bb47d
+  Args:
+    source: :Andrew
+    type: :Person
+  AddTriple (5b9b7ff7-482d-4d79-8e33-64f7c97d61b9)
+ Call ID: 5b9b7ff7-482d-4d79-8e33-64f7c97d61b9
+  Args:
+    relation: :hasBrother
+    target: :ConstantineI
+    source: :Andrew
+  AssignClass (37b5798f-1e4a-4bf3-a4da-1bb270c61a0a)
+ Call ID: 37b5798f-1e4a-4bf3-a4da-1bb270c61a0a
+  Args:
+    type: :Man
+    source: :Philip
+  AssignClass (b00fdea6-c881-45c1-aee9-294dd575ffff)
+ Call ID: b00fdea6-c881-45c1-aee9-294dd575ffff
+  Args:
+    source: :Philip
+    type: :Person
+  AddTriple (db414534-706f-4ef3-af0d-da9b03df7ddc)
+ Call ID: db414534-706f-4ef3-af0d-da9b03df7ddc
+  Args:
+    target: :Andrew
+    relation: :hasFather
+    source: :Philip
+  AssignClass (cb7057e6-6c99-47fc-be2b-a82bc3f61f03)
+ Call ID: cb7057e6-6c99-47fc-be2b-a82bc3f61f03
+  Args:
+    type: :Woman
+    source: :OlgaConstantinovna
+  AssignClass (10793874-e2c9-4403-8918-816bd61b48c2)
+ Call ID: 10793874-e2c9-4403-8918-816bd61b48c2
+  Args:
+    source: :OlgaConstantinovna
+    type: :Person
+  AddTriple (b4821c89-191c-47a1-af29-faafd3d64de5)
+ Call ID: b4821c89-191c-47a1-af29-faafd3d64de5
+  Args:
+    source: :ConstantineI
+    relation: :hasMother
+    target: :OlgaConstantinovna
+  AssignClass (238a8021-8de7-42eb-884d-5d6fc1828545)
+ Call ID: 238a8021-8de7-42eb-884d-5d6fc1828545
+  Args:
+    source: :Irene
+    type: :Woman
+  AssignClass (83e63eae-aa6b-4aef-82b1-29d0ba912df1)
+ Call ID: 83e63eae-aa6b-4aef-82b1-29d0ba912df1
+  Args:
+    type: :Person
+    source: :Irene
+  AddTriple (26e94d82-e357-4af0-b379-24330b38e4d6)
+ Call ID: 26e94d82-e357-4af0-b379-24330b38e4d6
+  Args:
+    source: :GeorgeII
+    relation: :hasSister
+    target: :Irene
+  AssignClass (9609a142-5e8b-4c64-a5e4-f4222d47928d)
+ Call ID: 9609a142-5e8b-4c64-a5e4-f4222d47928d
+  Args:
+    type: :Woman
+    source: :FredericaOfHanover
+  AssignClass (1b4713fc-f08b-421d-bdf3-225259abd387)
+ Call ID: 1b4713fc-f08b-421d-bdf3-225259abd387
+  Args:
+    source: :FredericaOfHanover
+    type: :Person
+  AddTriple (e1c9a7fb-3a4e-4b41-aadf-250ea9f1db85)
+ Call ID: e1c9a7fb-3a4e-4b41-aadf-250ea9f1db85
+  Args:
+    target: :FredericaOfHanover
+    relation: :hasRelation
+    source: :Paul
+  AddLiteral (2bef14e8-b72e-49be-893a-43219ea7afc4)
+ Call ID: 2bef14e8-b72e-49be-893a-43219ea7afc4
+  Args:
+    relation: :hasMarriageYear
+    source: :Paul
+    literal_type: xsd:integer
+    literal_value: 1938
+  AssignClass (4430f4b6-2713-44bd-b4d9-9b37c48073ed)
+ Call ID: 4430f4b6-2713-44bd-b4d9-9b37c48073ed
+  Args:
+    type: :Man
+    source: :ConstantineII
+  AssignClass (586b3e04-7e1d-41a0-9552-9737a0ff2b80)
+ Call ID: 586b3e04-7e1d-41a0-9552-9737a0ff2b80
+  Args:
+    type: :Person
+    source: :ConstantineII
+  AddTriple (652dff95-2bb7-4102-83e6-81a39d89d830)
+ Call ID: 652dff95-2bb7-4102-83e6-81a39d89d830
+  Args:
+    source: :ConstantineII
+    target: :Paul
+    relation: :hasFather
+  AddTriple (579aed74-dd71-4ec5-b878-b6abc5998a65)
+ Call ID: 579aed74-dd71-4ec5-b878-b6abc5998a65
+  Args:
+    relation: :hasMother
+    target: :FredericaOfHanover
+    source: :ConstantineII
+  AssignClass (53db2e8c-c89f-4900-a7ae-d8e900c148d5)
+ Call ID: 53db2e8c-c89f-4900-a7ae-d8e900c148d5
+  Args:
+    source: :VictoriaLouise
+    type: :Woman
+  AssignClass (75f491b1-a608-4fe1-b200-5eacfafb9f42)
+ Call ID: 75f491b1-a608-4fe1-b200-5eacfafb9f42
+  Args:
+    type: :Person
+    source: :VictoriaLouise
+  AddTriple (f5292c66-7dba-4f72-ae4e-482312a5397d)
+ Call ID: f5292c66-7dba-4f72-ae4e-482312a5397d
+  Args:
+    source: :FredericaOfHanover
+    relation: :hasMother
+    target: :VictoriaLouise
+  AssignClass (bb767ea0-d6e0-4d70-917b-0c285063e257)
+ Call ID: bb767ea0-d6e0-4d70-917b-0c285063e257
+  Args:
+    type: :Man
+    source: :Aimone
+  AssignClass (bc1b2480-a0ad-44ba-bc4d-9fd085f90b01)
+ Call ID: bc1b2480-a0ad-44ba-bc4d-9fd085f90b01
+  Args:
+    type: :Person
+    source: :Aimone
+  AddTriple (ab1253f0-ec45-46ba-9280-ababa85abeca)
+ Call ID: ab1253f0-ec45-46ba-9280-ababa85abeca
+  Args:
+    source: :Irene
+    target: :Aimone
+    relation: :hasRelation
+  Finish (5754ade1-9cab-4f6d-a465-bf7952c7679e)
+ Call ID: 5754ade1-9cab-4f6d-a465-bf7952c7679e
   Args:

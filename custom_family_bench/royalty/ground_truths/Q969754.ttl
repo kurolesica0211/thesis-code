@@ -7,97 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Carlos_I_of_Portugal a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Carlos I of Portugal" ;
-    data:posIndicesFull "493:513" ;
-    data:wdtLink wdt:Q158874 ;
-    :alsoKnownAs "Carlos I, King of Portugal",
-        "Carlos de Bragança",
-        "Carlos the Diplomat",
-        "Carlos the Martyr",
-        "King of Portugal Carlos Ferdinand-Louis-Marie-Francois d'Assise",
-        "King of Portugal Carlos I",
-        "King of Portugal Charles I" ;
-    :hasSex data:male .
-
-data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Carlos, Duke of Calabria" ;
-    data:posIndicesFull "854:891",
-        "861:891" ;
-    data:posIndicesPart "1223:1227",
-        "1341:1345",
-        "1596:1600",
-        "2139:2143",
-        "943:947" ;
-    data:wdtLink wdt:Q526743 ;
-    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria",
-        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma",
-        "Carlos of Bourbon-Two Sicilies",
-        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
-        "Prince Carlos of Bourbon-Two Sicilies" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Jean_dOrléans_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Jean d’Orléans" ;
-    data:posIndicesFull "748:769",
-        "755:769" ;
-    data:posIndicesPart "1207:1213",
-        "1558:1564",
-        "1583:1589",
-        "1611:1617",
-        "1646:1652",
-        "1691:1697",
-        "925:931" ;
-    data:wdtLink wdt:Q578791 ;
-    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
-        "Jean d’Orléans",
-        "Prince Jean Pierre Clément Marie d’Orléans",
-        "Prince Jean, Duke of Guise" ;
-    :hasChild data:Princess_Isabelle_dOrléans_1 ;
-    :hasDaughter data:Princess_Isabelle_dOrléans_1 ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Isabelle_dOrléans_1 ;
-    :isParentOf data:Princess_Isabelle_dOrléans_1 .
-
-data:Princess_Isabelle_dOrléans_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Isabelle d’Orléans" ;
-    data:posIndicesFull "424:442" ;
-    data:posIndicesPart "468:476",
-        "619:627",
-        "721:729",
-        "730:738",
-        "829:837" ;
-    data:wdtLink wdt:Q273237 ;
-    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans",
-        "Isabelle d’Orléans",
-        "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
-    :hasFather data:Prince_Jean_dOrléans_1 ;
-    :hasParent data:Prince_Jean_dOrléans_1 ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Jean_dOrléans_1 ;
-    :isDaughterOf data:Prince_Jean_dOrléans_1 .
-
-data:Amélie_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Amélie_of_Orléans a :Person ;
     rdfs:label "Amélie of Orléans" ;
     data:posIndicesFull "1106:1118",
         "1293:1305" ;
@@ -108,19 +18,10 @@ data:Amélie_of_Orléans a :Ancestor,
         "Marie Amelie of Orleans",
         "Marie Amélie d'Orléans",
         "Marie Amélie of Orléans" ;
-    :hasBrother data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
-    :hasMother data:Princess_María_Isabel_of_Orléans ;
     :hasParent data:Princess_María_Isabel_of_Orléans ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Isabelle_dOrléans_1 ;
-    :isChildOf data:Princess_María_Isabel_of_Orléans ;
-    :isDaughterOf data:Princess_María_Isabel_of_Orléans ;
-    :isSiblingOf data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
-    :isSisterOf data:Ferdinand_dOrléans-_Duke_of_Montpensier .
+    :hasSex data:female .
 
-data:Ferdinand_dOrléans-_Duke_of_Montpensier a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Ferdinand_dOrléans-_Duke_of_Montpensier a :Person ;
     rdfs:label "Ferdinand d'Orléans, Duke of Montpensier" ;
     data:posIndicesFull "0:40",
         "50:121" ;
@@ -135,25 +36,38 @@ data:Ferdinand_dOrléans-_Duke_of_Montpensier a :Man,
         "233:242",
         "379:388",
         "672:676",
+        "760:769",
         "771:775",
         "932:941",
         "943:947" ;
     data:wdtLink wdt:Q969754 ;
     :alsoKnownAs "Ferdinand François Philippe Marie Laurent d'Orléans, Duc de Montpensier" ;
-    :hasMother data:Princess_María_Isabel_of_Orléans ;
     :hasParent data:Princess_María_Isabel_of_Orléans ;
-    :hasSex data:male ;
-    :hasSister data:Amélie_of_Orléans ;
-    :isBrotherOf data:Amélie_of_Orléans ;
-    :isChildOf data:Princess_María_Isabel_of_Orléans ;
-    :isSiblingOf data:Amélie_of_Orléans ;
-    :isSonOf data:Princess_María_Isabel_of_Orléans ;
-    :isUncleOf data:Princess_Isabelle_dOrléans_1 .
+    :hasSex data:male .
 
-data:Princess_María_Isabel_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Isabelle_dOrléans_1 a :Person ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "424:442" ;
+    data:posIndicesPart "468:476",
+        "619:627",
+        "721:729",
+        "730:738",
+        "829:837" ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans",
+        "Isabelle d’Orléans",
+        "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Princess_María_Isabel_of_Orléans a :Person ;
     rdfs:label "Princess María Isabel of Orléans" ;
     data:posIndicesFull "1776:1788",
         "2099:2111",
@@ -169,13 +83,7 @@ data:Princess_María_Isabel_of_Orléans a :Ancestor,
         "Maria Isabella",
         "Princess Maria Isabel of Orléans, Infanta of Spain",
         "Princess Marie Isabelle of Orleans" ;
-    :hasChild data:Amélie_of_Orléans,
-        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
-    :hasDaughter data:Amélie_of_Orléans ;
-    :hasSex data:female ;
-    :hasSon data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
-    :isMotherOf data:Amélie_of_Orléans,
-        data:Ferdinand_dOrléans-_Duke_of_Montpensier ;
-    :isParentOf data:Amélie_of_Orléans,
-        data:Ferdinand_dOrléans-_Duke_of_Montpensier .
+    :hasSex data:female .
+
+data:female a :Female .
 

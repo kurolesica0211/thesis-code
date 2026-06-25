@@ -2,48 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:HenrietteVonSchonaichCarolath a :Person,
+data:PaulFrederickOfMecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1852 ;
+    :hasDeathYear 1923 ;
+    :hasFather data:FrederickFrancisII ;
+    :hasMarriageYear 1881 ;
+    :hasMother data:AugustaReussOfKostritz ;
+    :hasRelation data:FrederickFrancisIV,
+        data:MarieOfWindischGraetz .
+
+data:AugustaReussOfKostritz a :Person,
         :Woman ;
-    :isMotherOf data:FranzWilhelmPrinzVonPreussen .
+    :hasFather data:HenryLXIIIReussOfKostritz .
 
-data:QueenVictoria a :Person,
-        :Woman .
-
-data:VladimirOfRussia a :Man,
-        :Person ;
-    :isFatherOf data:MariaVladimirovnaOfRussia .
-
-data:WilhelmII a :Man,
-        :Person ;
-    :isFatherOf data:JoachimOfPrussia .
-
-data:FriedrichChristian a :Man,
+data:FrederickFrancisII a :Man,
         :Person .
 
-data:JoachimOfPrussia a :Man,
-        :Person ;
-    :isFatherOf data:KarlFranzOfPrussia .
+data:FrederickFrancisIV a :Man,
+        :Person .
 
-data:KarlFranzOfPrussia a :Man,
-        :Person ;
-    :isFatherOf data:FranzWilhelmPrinzVonPreussen .
+data:HenryLXIIIReussOfKostritz a :Man,
+        :Person .
 
-data:Male a :Male .
+data:HugoOfWindischGraetz a :Man,
+        :Person .
 
-data:NadiaNourElEtreby a :Person,
-        :Woman ;
-    :hasBirthYear 1949 .
-
-data:FranzWilhelmPrinzVonPreussen a :Man,
-        :Person ;
-    :hasBirthYear 1943 ;
-    :hasBrother data:FriedrichChristian ;
-    :hasMarriageYear 1976,
-        2019 ;
-    :hasRelation data:MariaVladimirovnaOfRussia,
-        data:NadiaNourElEtreby ;
-    :hasSex data:Male .
-
-data:MariaVladimirovnaOfRussia a :Person,
+data:LouiseOfMecklenburgSchwerin a :Person,
         :Woman .
+
+data:MarieOfWindischGraetz a :Person,
+        :Woman ;
+    :hasFather data:HugoOfWindischGraetz ;
+    :hasMother data:LouiseOfMecklenburgSchwerin .
 

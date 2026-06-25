@@ -1,0 +1,172 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSister data:Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Anne_of_Orl%C3%A9ans ;
+    :isSisterOf data:Anne_of_Orl%C3%A9ans .
+
+data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
+        :Woman ;
+    :hasBrother data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isBloodrelationOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isSiblingOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isSisterOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias .
+
+data:Alicia_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSister data:Alicia_of_Bourbon-Parma ;
+    :hasSon data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isAncestorOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isAuntOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isBloodrelationOf data:Alicia_of_Bourbon-Parma ;
+    :isMotherOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isParentOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isSiblingOf data:Alicia_of_Bourbon-Parma ;
+    :isSisterOf data:Alicia_of_Bourbon-Parma .
+
+data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :hasDeathYear 1949 ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSon data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isAncestorOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isBloodrelationOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isParentOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isSiblingOf data:Carlo_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n .
+
+data:Mercedes_Princess_of_Asturias a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasChild data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :hasDeathYear 1904 ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSister data:Mercedes_Princess_of_Asturias ;
+    :hasSon data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isAncestorOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isAuntOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Mercedes_Princess_of_Asturias ;
+    :isMotherOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isParentOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isSiblingOf data:Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Mercedes_Princess_of_Asturias .
+
+data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Mercedes_Princess_of_Asturias ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :hasChild data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Mercedes_Princess_of_Asturias ;
+    :hasParent data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSon data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isAncestorOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isChildOf data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Mercedes_Princess_of_Asturias ;
+    :isFatherOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isParentOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :isSonOf data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Mercedes_Princess_of_Asturias ;
+    :isUncleOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias .
+
+data:Carlos_de_Borb%C3%B3n-Dos_Sicilias a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Mercedes_Princess_of_Asturias ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Carlos_de_Borb%C3%B3n-Dos_Sicilias ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :hasParent data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:Anne_of_Orl%C3%A9ans,
+        data:Carlo_of_Bourbon-Two_Sicilies,
+        data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Mercedes_Princess_of_Asturias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isBloodrelationOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isBrotherOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isChildOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :isSiblingOf data:Carlos_de_Borb%C3%B3n-Dos_Sicilias,
+        data:Teresa_of_Bourbon-Dos_Sicilias ;
+    :isSonOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma .
+

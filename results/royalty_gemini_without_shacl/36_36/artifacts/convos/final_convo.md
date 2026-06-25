@@ -71,16 +71,20 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Wilhelm Heinrich Michael Louis Ferdinand Friedrich Franz Wladimir Prinz von Preussen (22 March 1940 – 3 April 2014) was a descendant of the Hohenzollern dynasty which ruled Germany until the end of World War I.
 His great-grandfather Wilhelm II was the German Emperor and King of Prussia until 1918.
+Although Kaiser Wilhelm died in exile and his family was stripped of much of its wealth and recognition of its rank and titles by the German Republic, Michael spent nearly all of his life in Germany.
 Biography
 
 Michael was the second son of Louis Ferdinand, Prince of Prussia, and Grand Duchess Kira Kirillovna of Russia.
 Having made the decision to contract a non-dynastic marriage, he submitted to his father (then head of the family) a renunciation on behalf of himself and his future descendants to the family's claim to the defunct thrones of Imperial Germany and Royal Prussia, executed at Bremen on 29 August 1966.
+Along with his elder brother, Michael eventually repudiated the implications of his renunciation claiming, in a lawsuit against his nephew Georg Friedrich Prinz von Preussen, that the forfeiture of an equal share with his siblings in the family's remaining fortune, the bulk of which had been placed in a trust for William II's heir, was discriminatory.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +100,9 @@ Having made the decision to contract a non-dynastic marriage, he submitted to hi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +117,23 @@ Having made the decision to contract a non-dynastic marriage, he submitted to hi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +151,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +233,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +256,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +276,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +286,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +326,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,85 +425,94 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b0cb1377-02ba-41b8-ad7b-22da0e00b6ef)
- Call ID: b0cb1377-02ba-41b8-ad7b-22da0e00b6ef
+  AssignClass (017990a3-b159-4a32-87d5-21d2c103d7e5)
+ Call ID: 017990a3-b159-4a32-87d5-21d2c103d7e5
   Args:
     source: :Michael_Prinz_von_Preussen
     type: :Man
-  AssignClass (83c6f95c-7b06-4f7b-9fd9-d78009c60a9d)
- Call ID: 83c6f95c-7b06-4f7b-9fd9-d78009c60a9d
+  AssignClass (30563a7f-6fe6-4b8e-9956-1e8020bfab35)
+ Call ID: 30563a7f-6fe6-4b8e-9956-1e8020bfab35
   Args:
     source: :Michael_Prinz_von_Preussen
     type: :Person
-  AddLiteral (3799947f-0128-46a8-8d87-c9e23d10d0bf)
- Call ID: 3799947f-0128-46a8-8d87-c9e23d10d0bf
+  AddLiteral (afbec6a9-8250-469d-807e-59413a2c2be3)
+ Call ID: afbec6a9-8250-469d-807e-59413a2c2be3
   Args:
-    literal_type: xsd:string
-    literal_value: Wilhelm Heinrich Michael Louis Ferdinand Friedrich Franz Wladimir Prinz von Preussen
     source: :Michael_Prinz_von_Preussen
-    relation: :knownAs
-  AddLiteral (ad3c30e3-ffdd-4e41-8f66-a34628e8e373)
- Call ID: ad3c30e3-ffdd-4e41-8f66-a34628e8e373
-  Args:
-    relation: :hasBirthYear
-    source: :Michael_Prinz_von_Preussen
+    literal_type: xsd:integer
     literal_value: 1940
-    literal_type: xsd:integer
-  AddLiteral (1afe8966-a537-4f52-911f-b40ac0ce766a)
- Call ID: 1afe8966-a537-4f52-911f-b40ac0ce766a
+    relation: :hasBirthYear
+  AddLiteral (d57ffcfb-13c1-4f69-aba2-9ef40304d4a7)
+ Call ID: d57ffcfb-13c1-4f69-aba2-9ef40304d4a7
   Args:
     literal_type: xsd:integer
-    literal_value: 2014
     source: :Michael_Prinz_von_Preussen
+    literal_value: 2014
     relation: :hasDeathYear
-  AssignClass (fc17f79c-58af-4980-97c8-88cf4ddb7a6f)
- Call ID: fc17f79c-58af-4980-97c8-88cf4ddb7a6f
+  AssignClass (5b2df6a0-3a34-491b-a141-41bf72916fd4)
+ Call ID: 5b2df6a0-3a34-491b-a141-41bf72916fd4
+  Args:
+    source: :Wilhelm_II
+    type: :Man
+  AssignClass (e86b420d-9023-43e3-ab8b-32625dba6b48)
+ Call ID: e86b420d-9023-43e3-ab8b-32625dba6b48
+  Args:
+    source: :Wilhelm_II
+    type: :Person
+  AssignClass (a4eb510c-6be3-4784-b488-928905c7b396)
+ Call ID: a4eb510c-6be3-4784-b488-928905c7b396
   Args:
     type: :Man
-    source: :Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (c3334b7b-e473-41a1-8dde-25d5569611fa)
- Call ID: c3334b7b-e473-41a1-8dde-25d5569611fa
+    source: :Louis_Ferdinand_Prinz_von_Preussen
+  AssignClass (89a6419f-a833-4030-bbba-c8382807b3af)
+ Call ID: 89a6419f-a833-4030-bbba-c8382807b3af
   Args:
-    source: :Louis_Ferdinand_Prince_of_Prussia
     type: :Person
-  AssignClass (e97b044b-624c-45bb-bee2-c23611891da8)
- Call ID: e97b044b-624c-45bb-bee2-c23611891da8
+    source: :Louis_Ferdinand_Prinz_von_Preussen
+  AssignClass (73bb9c71-4a5f-40f9-a389-394251bdd924)
+ Call ID: 73bb9c71-4a5f-40f9-a389-394251bdd924
   Args:
+    source: :Kira_Kirillovna_of_Russia
     type: :Woman
-    source: :Grand_Duchess_Kira_Kirillovna_of_Russia
-  AssignClass (b3c45945-1c46-4650-a293-83f4fd88c036)
- Call ID: b3c45945-1c46-4650-a293-83f4fd88c036
+  AssignClass (8dc58e0a-8c22-46a1-926f-a52a603355b8)
+ Call ID: 8dc58e0a-8c22-46a1-926f-a52a603355b8
   Args:
-    source: :Grand_Duchess_Kira_Kirillovna_of_Russia
+    source: :Kira_Kirillovna_of_Russia
     type: :Person
-  AddTriple (77194855-333a-47dd-8595-14601892efbc)
- Call ID: 77194855-333a-47dd-8595-14601892efbc
+  AssignClass (4550f99e-4973-4d16-9062-85e556042093)
+ Call ID: 4550f99e-4973-4d16-9062-85e556042093
+  Args:
+    source: :Georg_Friedrich_Prinz_von_Preussen
+    type: :Man
+  AssignClass (1a127551-9c4a-4810-a481-39548cc9acf6)
+ Call ID: 1a127551-9c4a-4810-a481-39548cc9acf6
+  Args:
+    type: :Person
+    source: :Georg_Friedrich_Prinz_von_Preussen
+  AddTriple (8da9cf9c-0ce2-4a64-bc9b-15e9bc86618f)
+ Call ID: 8da9cf9c-0ce2-4a64-bc9b-15e9bc86618f
   Args:
     relation: :hasFather
     source: :Michael_Prinz_von_Preussen
-    target: :Louis_Ferdinand_Prince_of_Prussia
-  AddTriple (2d5e859e-328b-468b-841f-eab65f8a609c)
- Call ID: 2d5e859e-328b-468b-841f-eab65f8a609c
+    target: :Louis_Ferdinand_Prinz_von_Preussen
+  AddTriple (933d7ad4-c5b4-4710-9884-3bfe6869e674)
+ Call ID: 933d7ad4-c5b4-4710-9884-3bfe6869e674
   Args:
-    relation: :hasMother
     source: :Michael_Prinz_von_Preussen
-    target: :Grand_Duchess_Kira_Kirillovna_of_Russia
-  AssignClass (ebe7bca6-c82c-4809-a554-300eab42cae0)
- Call ID: ebe7bca6-c82c-4809-a554-300eab42cae0
-  Args:
-    source: :Wilhelm_II
-    type: :Man
-  AssignClass (8f30d3fa-91fa-44a2-9252-50502ec95250)
- Call ID: 8f30d3fa-91fa-44a2-9252-50502ec95250
-  Args:
-    type: :Person
-    source: :Wilhelm_II
-  AddTriple (9197e483-c6bc-4920-95fb-63f16921db72)
- Call ID: 9197e483-c6bc-4920-95fb-63f16921db72
+    target: :Kira_Kirillovna_of_Russia
+    relation: :hasMother
+  AddTriple (685ffc38-b4f6-4d28-8ce9-bc94eb69d879)
+ Call ID: 685ffc38-b4f6-4d28-8ce9-bc94eb69d879
   Args:
     relation: :hasAncestor
     source: :Michael_Prinz_von_Preussen
     target: :Wilhelm_II
-  Finish (c7ea6c1a-e003-48f5-876f-72750a744b40)
- Call ID: c7ea6c1a-e003-48f5-876f-72750a744b40
+  AddTriple (c6b27268-5907-43b2-86db-ce979fbe824a)
+ Call ID: c6b27268-5907-43b2-86db-ce979fbe824a
+  Args:
+    relation: :isChildOf
+    target: :Michael_Prinz_von_Preussen
+    source: :Georg_Friedrich_Prinz_von_Preussen
+  Finish (4b332604-8c4b-4760-af8c-42a4f8a087d5)
+ Call ID: 4b332604-8c4b-4760-af8c-42a4f8a087d5
   Args:

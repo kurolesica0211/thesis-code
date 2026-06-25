@@ -69,52 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Alexander Patrick Gregers Richard Windsor, Earl of Ulster (born 24 October 1974), is a member of the British royal family and the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
+He is the heir apparent to the dukedom of Gloucester and is the second cousin of Charles III.
+He is also sometimes referred to as Alex Ulster.
+Early life and education
 
+Alexander Patrick Gregers Richard Windsor was born prematurely on 24 October 1974 at St Mary's Hospital, London.
+He is the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
+Alexander attended Eton College and later graduated with a degree in war studies from King's College London in 1996.
+Military career
 
-The Count of ÉvreuxThe Countess of Évreux
+Alexander was commissioned in the King's Royal Hussars on 10 April 1998 as a subaltern (second lieutenant) with seniority from 14 April 1995; he was given the service number 548299.
+Marriage and family
 
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Duchess Marie-Thérèse of Württemberg (German: Marie Therese Nadejda Albertine Rosa Philippine Margarethe Christine Helene Josepha Martina Leopoldine Herzogin von Württemberg; born 12 November 1934) is a German-born aristocrat.
-Family
-
-Marie Thérèse was the fifth child and fourth daughter of Philipp Albrecht, Duke of Württemberg, and his second wife, Archduchess Rosa of Austria, Princess of Tuscany.
-She was born at Altshausen Castle, Baden-Württemberg, Germany.
-Three years later, her younger brother Carl, Duke of Württemberg, would marry Henri's younger sister, Princess Diane d'Orléans.
-She received the title Duchess of Montpensier from her former father-in-law after divorce.
+On 22 June 2002, Alexander married Claire Booth, a physician, at the Queen's Chapel, St James's Palace.
+Lady Ulster is a professor of Gene Therapy and Paediatric Immunology at University College London's Great Ormond Street Institute of Child Health.
+Alexander continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +108,9 @@ She received the title Duchess of Montpensier from her former father-in-law afte
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +125,23 @@ She received the title Duchess of Montpensier from her former father-in-law afte
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,97 +433,85 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f649dd3c-bd82-423e-97db-a16ba2aef19c)
- Call ID: f649dd3c-bd82-423e-97db-a16ba2aef19c
-  Args:
-    type: :Woman
-    source: Marie_Thérèse_of_Württemberg
-  AssignClass (60809686-5708-4ded-bf21-991952409337)
- Call ID: 60809686-5708-4ded-bf21-991952409337
-  Args:
-    type: :Person
-    source: Marie_Thérèse_of_Württemberg
-  AddLiteral (9f54e687-fd80-436e-be37-2563b99231c9)
- Call ID: 9f54e687-fd80-436e-be37-2563b99231c9
-  Args:
-    source: Marie_Thérèse_of_Württemberg
-    literal_value: 1934
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AssignClass (bb4775a4-79b8-466c-a5f0-8abd377e2997)
- Call ID: bb4775a4-79b8-466c-a5f0-8abd377e2997
+  AssignClass (bfc848ea-ec1f-48bd-b977-5fcd139c0f19)
+ Call ID: bfc848ea-ec1f-48bd-b977-5fcd139c0f19
   Args:
     type: :Man
-    source: Philipp_Albrecht_Duke_of_Württemberg
-  AssignClass (4b21112a-f0eb-4613-be4f-b3deee757152)
- Call ID: 4b21112a-f0eb-4613-be4f-b3deee757152
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+  AssignClass (e0eb7aa5-cd4c-4d4a-a362-e8dd2b8f6110)
+ Call ID: e0eb7aa5-cd4c-4d4a-a362-e8dd2b8f6110
   Args:
     type: :Person
-    source: Philipp_Albrecht_Duke_of_Württemberg
-  AssignClass (7bb44c45-1cb6-4bd0-9ea8-2afe7b5cba30)
- Call ID: 7bb44c45-1cb6-4bd0-9ea8-2afe7b5cba30
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+  AddLiteral (786ccf65-7db2-4a3a-ad51-fdce95df4481)
+ Call ID: 786ccf65-7db2-4a3a-ad51-fdce95df4481
   Args:
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    literal_value: 1974
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (5c003ec9-a242-44ed-9eb0-e5141464daef)
+ Call ID: 5c003ec9-a242-44ed-9eb0-e5141464daef
+  Args:
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    literal_value: Alex Ulster
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AssignClass (10e80046-3db5-4f2f-8e3a-e3ba78259c86)
+ Call ID: 10e80046-3db5-4f2f-8e3a-e3ba78259c86
+  Args:
+    source: Prince_Richard_Duke_of_Gloucester
+    type: :Man
+  AssignClass (ff7295d6-63df-435b-a32a-fc556ad25f80)
+ Call ID: ff7295d6-63df-435b-a32a-fc556ad25f80
+  Args:
+    type: :Person
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (8187a7c1-6039-45b3-9e58-f67e76eb29fa)
+ Call ID: 8187a7c1-6039-45b3-9e58-f67e76eb29fa
+  Args:
+    source: Birgitte_Duchess_of_Gloucester
     type: :Woman
-    source: Rosa_of_Austria
-  AssignClass (efbdffd5-6d2a-42a1-ac3c-13be79468d6d)
- Call ID: efbdffd5-6d2a-42a1-ac3c-13be79468d6d
+  AssignClass (452d4c66-4542-4ae2-9cca-8332061c3ca8)
+ Call ID: 452d4c66-4542-4ae2-9cca-8332061c3ca8
   Args:
+    source: Birgitte_Duchess_of_Gloucester
     type: :Person
-    source: Rosa_of_Austria
-  AddTriple (697bed1e-f6c2-48ee-90a2-919346eafc59)
- Call ID: 697bed1e-f6c2-48ee-90a2-919346eafc59
+  AddTriple (8b2a2c40-b89a-426a-b3ae-edaf8bfc9543)
+ Call ID: 8b2a2c40-b89a-426a-b3ae-edaf8bfc9543
   Args:
     relation: :hasFather
-    source: Marie_Thérèse_of_Württemberg
-    target: Philipp_Albrecht_Duke_of_Württemberg
-  AddTriple (1a6072bc-6666-4695-82bc-701033a4deb6)
- Call ID: 1a6072bc-6666-4695-82bc-701033a4deb6
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    target: Prince_Richard_Duke_of_Gloucester
+  AddTriple (7afa3c0d-a926-45ba-868a-cbe6ea585843)
+ Call ID: 7afa3c0d-a926-45ba-868a-cbe6ea585843
   Args:
-    source: Marie_Thérèse_of_Württemberg
-    target: Rosa_of_Austria
     relation: :hasMother
-  AssignClass (7cfe9404-e96b-4c5c-b3be-ec8693a15faa)
- Call ID: 7cfe9404-e96b-4c5c-b3be-ec8693a15faa
-  Args:
-    type: :Man
-    source: Carl_Duke_of_Württemberg
-  AssignClass (cfb02248-783e-4a83-96d0-7a4b216ca586)
- Call ID: cfb02248-783e-4a83-96d0-7a4b216ca586
-  Args:
-    type: :Person
-    source: Carl_Duke_of_Württemberg
-  AddTriple (73e235f6-a07b-4d6d-b81f-415f54c3eb84)
- Call ID: 73e235f6-a07b-4d6d-b81f-415f54c3eb84
-  Args:
-    relation: :isBrotherOf
-    target: Marie_Thérèse_of_Württemberg
-    source: Carl_Duke_of_Württemberg
-  AssignClass (5912c326-568c-480a-8754-9cb52a21de2d)
- Call ID: 5912c326-568c-480a-8754-9cb52a21de2d
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    target: Birgitte_Duchess_of_Gloucester
+  AssignClass (ad3a8762-3d98-42d4-beb7-2201e70c04ec)
+ Call ID: ad3a8762-3d98-42d4-beb7-2201e70c04ec
   Args:
     type: :Woman
-    source: Diane_dOrléans
-  AssignClass (6e110f4e-13b2-4de9-ab5a-6d94e21b9896)
- Call ID: 6e110f4e-13b2-4de9-ab5a-6d94e21b9896
+    source: Claire_Booth
+  AssignClass (838c55c7-79ca-40ba-a4a5-ce02b7f47882)
+ Call ID: 838c55c7-79ca-40ba-a4a5-ce02b7f47882
   Args:
+    source: Claire_Booth
     type: :Person
-    source: Diane_dOrléans
-  AddTriple (81b41ace-3854-4c7d-9bba-330c6564da91)
- Call ID: 81b41ace-3854-4c7d-9bba-330c6564da91
+  AddTriple (f3d43249-989f-474a-9bfe-d650d3e68165)
+ Call ID: f3d43249-989f-474a-9bfe-d650d3e68165
   Args:
-    target: Henri
-    source: Diane_dOrléans
-    relation: :isSisterOf
-  AssignClass (55c0233c-f2ee-4574-acd4-14869e4f1d39)
- Call ID: 55c0233c-f2ee-4574-acd4-14869e4f1d39
+    relation: :hasRelation
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    target: Claire_Booth
+  AddLiteral (d2cf2c26-622d-4c52-9d47-44faeefac0b0)
+ Call ID: d2cf2c26-622d-4c52-9d47-44faeefac0b0
   Args:
-    type: :Man
-    source: Henri
-  AssignClass (5f0c3277-0276-4ce1-827d-f3eaa90cb783)
- Call ID: 5f0c3277-0276-4ce1-827d-f3eaa90cb783
-  Args:
-    type: :Person
-    source: Henri
-  Finish (fc8bfeb6-f302-4e0b-aed2-b5f0d81895ec)
- Call ID: fc8bfeb6-f302-4e0b-aed2-b5f0d81895ec
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 2002
+  Finish (38d16f97-9fe2-4f2b-88e2-db9ab496c715)
+ Call ID: 38d16f97-9fe2-4f2b-88e2-db9ab496c715
   Args:

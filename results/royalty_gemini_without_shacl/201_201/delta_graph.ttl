@@ -2,44 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ferdinando_IV_of_Tuscany a :Man,
-        :Person ;
-    :hasSex data:Male ;
-    :isFatherOf data:Peter_Ferdinand_of_Austria .
+data:Frederick_William_IV a :Man ;
+    :hasBrother data:Wilhelm_I .
 
-data:Gottfried_of_Austria a :Man,
-        :Person ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1984 ;
-    :hasFather data:Peter_Ferdinand_of_Austria ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Dorothea_of_Bavaria ;
-    :hasSex data:Male .
+data:Joachim a :Man ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
 
-data:Dorothea_of_Bavaria a :Person,
-        :Woman ;
-    :hasFather data:Franz_of_Bavaria ;
-    :hasMother data:Isabella_Antonie_of_Croy ;
-    :hasSex data:Female .
+data:Victoria_Louise a :Woman ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
 
-data:Franz_of_Bavaria a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:1881 a :DomainEntity .
 
-data:Isabella_Antonie_of_Croy a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:1889 a :DomainEntity .
 
-data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:1922 a :DomainEntity .
 
-data:Peter_Ferdinand_of_Austria a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Constantine a :Man .
 
-data:Female a :Sex .
+data:Frederick_III a :Man ;
+    :hasFather data:Wilhelm_I .
 
-data:Male a :Sex .
+data:Hermine_Reuss_of_Greiz a :Woman .
+
+data:Prince_Albert a :Man .
+
+data:Queen_Victoria a :Woman .
+
+data:Sophia a :Woman ;
+    :hasMarriageYear data:1889 ;
+    :hasRelation data:Constantine .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Wilhelm_I a :Man .
+
+data:Wilhelm_II a :Man ;
+    :hasBirthYear 1859 ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear data:1881,
+        data:1922 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Augusta_Victoria,
+        data:Hermine_Reuss_of_Greiz ;
+    :hasSister data:Sophia .
+
+data:Augusta_Victoria a :Woman .
 

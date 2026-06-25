@@ -1,0 +1,263 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Valerie-_Margravine_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Valerie, Margravine of Baden"^^xsd:string ;
+    data:posIndicesFull "1104:1134"^^xsd:string ;
+    data:posIndicesPart "1257:1267"^^xsd:string,
+        "1294:1304"^^xsd:string,
+        "1467:1475"^^xsd:string,
+        "1734:1739"^^xsd:string,
+        "1890:1898"^^xsd:string,
+        "1954:1962"^^xsd:string ;
+    data:wdtLink wdt:Q6425396 ;
+    :alsoKnownAs "Archduchess Valerie of Austria"^^xsd:string,
+        "Valerie Isabella Erzherzogin von Österreich"^^xsd:string ;
+    :hasChild data:Prince_Bernhard-_Margrave_of_Baden ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSon data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isAncestorOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isAuntOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isBloodrelationOf data:Princess_Valerie-_Margravine_of_Baden ;
+    :isMotherOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isParentOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isSiblingOf data:Princess_Valerie-_Margravine_of_Baden ;
+    :isSisterOf data:Princess_Valerie-_Margravine_of_Baden .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "321:334"^^xsd:string,
+        "321:353"^^xsd:string ;
+    data:posIndicesPart "1065:1069"^^xsd:string,
+        "1437:1443"^^xsd:string,
+        "1838:1844"^^xsd:string,
+        "1911:1917"^^xsd:string,
+        "687:693"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Prince_Maximilian-_Margrave_of_Baden .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "427:431"^^xsd:string ;
+    data:posIndicesPart "1208:1216"^^xsd:string,
+        "1467:1475"^^xsd:string,
+        "1890:1898"^^xsd:string,
+        "1954:1962"^^xsd:string,
+        "640:648"^^xsd:string,
+        "789:797"^^xsd:string,
+        "873:881"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Prince_Maximilian-_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Maximilian, Margrave of Baden"^^xsd:string ;
+    data:wdtLink wdt:Q1913939 ;
+    :alsoKnownAs "Maximilian Andreas Friedrich Gustav Ernst August Bernhard Prinz von Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasBrother data:Prince_Maximilian-_Margrave_of_Baden ;
+    :hasChild data:Prince_Bernhard-_Margrave_of_Baden ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasParent data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isAncestorOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isChildOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isFatherOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isParentOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isSonOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isUncleOf data:Prince_Bernhard-_Margrave_of_Baden .
+
+data:Prince_Bernhard-_Margrave_of_Baden a :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard, Margrave of Baden"^^xsd:string ;
+    data:posIndicesFull "80:117"^^xsd:string ;
+    data:posIndicesPart "1024:1029"^^xsd:string,
+        "1046:1054"^^xsd:string,
+        "1058:1063"^^xsd:string,
+        "1244:1252"^^xsd:string,
+        "1321:1329"^^xsd:string,
+        "1437:1443"^^xsd:string,
+        "1444:1452"^^xsd:string,
+        "1515:1523"^^xsd:string,
+        "1553:1561"^^xsd:string,
+        "1567:1575"^^xsd:string,
+        "1734:1739"^^xsd:string,
+        "1838:1844"^^xsd:string,
+        "1911:1917"^^xsd:string,
+        "541:549"^^xsd:string,
+        "553:558"^^xsd:string,
+        "687:693"^^xsd:string ;
+    data:wdtLink wdt:Q96731 ;
+    :alsoKnownAs "Bernhard Max Erbprinz von Baden"^^xsd:string,
+        "Bernhard Prinz und Markgraf von Baden"^^xsd:string ;
+    :hasAncestor data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasBrother data:Prince_Bernhard-_Margrave_of_Baden ;
+    :hasFather data:Prince_Maximilian-_Margrave_of_Baden ;
+    :hasMother data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasParent data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isBrotherOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isChildOf data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :isSiblingOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isSonOf data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Theodora of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "259:298"^^xsd:string,
+        "574:613"^^xsd:string ;
+    data:posIndicesPart "1208:1216"^^xsd:string,
+        "1467:1475"^^xsd:string,
+        "1890:1898"^^xsd:string,
+        "1954:1962"^^xsd:string,
+        "640:648"^^xsd:string,
+        "789:797"^^xsd:string,
+        "873:881"^^xsd:string ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden"^^xsd:string,
+        "Theodora, Margravine of Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Prince_Maximilian-_Margrave_of_Baden ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSon data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isAncestorOf data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isAuntOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isParentOf data:Prince_Maximilian-_Margrave_of_Baden ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 .
+

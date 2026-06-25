@@ -92,15 +92,12 @@ Early life and education
 
 David Albert Charles Armstrong-Jones was born at 10:45 am on 3 November 1961, at Clarence House, London, the son of Princess Margaret and Antony Armstrong-Jones, 1st Earl of Snowdon.
 His godparents were his aunt Queen Elizabeth II, Lady Elizabeth Cavendish, Patrick Plunket, 7th Baron Plunket, Lord Rupert Nevill, and Simon Phipps.
-At the age of five, Linley began lessons in the Buckingham Palace schoolroom with his cousin Prince Andrew.
 He has one full sister, Lady Sarah Chatto (née Armstrong-Jones), and two paternal half-sisters, Lady Frances von Hofmannsthal (née Armstrong-Jones) and Polly Fry.
 Professional life
 
 Linley opened a workshop in Dorking, where he designed and made furniture for three years before setting up his own company, David Linley Furniture Limited (now known as Linley), where he makes bespoke furniture, upholstery, and interior design products known for their neoclassical appearance and use of inlaid woods.
 Accordingly, the first Earl Snowdon was also created Baron Armstrong-Jones, and retained his seat in the Lords until his death in 2017, whereupon his son inherited the earldom but not the life peerage or the seat.
-Only hereditary peers were eligible to stand in this election, and only the 31 hereditary crossbencher peers sitting in the Lords at the time were eligible to vote.
 Serena Alleyne Stanhope (born 1 March 1970, Limerick, Ireland), daughter of Viscount Petersham (later the 12th Earl of Harrington) at St. Margaret's Church, Westminster.
-Through her father, Stanhope descends from Henry FitzRoy, 1st Duke of Grafton, one of the illegitimate children of Charles II of England.
 He and his wife have two children:
 
 
@@ -116,6 +113,8 @@ In 2012, his son, styled by courtesy as Viscount Linley since January 2017, was 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +130,9 @@ In 2012, his son, styled by courtesy as Viscount Linley since January 2017, was 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +147,23 @@ In 2012, his son, styled by courtesy as Viscount Linley since January 2017, was 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,112 +455,249 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f03a34d6-c158-4f5c-8d7b-0b4916e0b5c4)
- Call ID: f03a34d6-c158-4f5c-8d7b-0b4916e0b5c4
+  AssignClass (b8f22802-83cb-487f-92eb-8296e68f6549)
+ Call ID: b8f22802-83cb-487f-92eb-8296e68f6549
   Args:
+    source: David_Albert_Charles_Armstrong-Jones
     type: :Man
-    source: :DavidArmstrongJones
-  AssignClass (1bd0cd62-d3e3-48f1-8d6a-1851dab4318e)
- Call ID: 1bd0cd62-d3e3-48f1-8d6a-1851dab4318e
+  AssignClass (127b0d84-4195-4a72-b3fd-c9ea4c9f27ea)
+ Call ID: 127b0d84-4195-4a72-b3fd-c9ea4c9f27ea
   Args:
-    type: :Man
-    source: :AntonyArmstrongJones
-  AssignClass (ba0dd08d-c410-4f0b-ab6d-a8cb6f2064ef)
- Call ID: ba0dd08d-c410-4f0b-ab6d-a8cb6f2064ef
+    source: David_Albert_Charles_Armstrong-Jones
+    type: :Person
+  AddLiteral (78659978-aa82-429e-a113-181855e70dcb)
+ Call ID: 78659978-aa82-429e-a113-181855e70dcb
   Args:
-    type: :Woman
-    source: :PrincessMargaret
-  AssignClass (c820f9da-9d1c-4409-a84e-f7ae70819935)
- Call ID: c820f9da-9d1c-4409-a84e-f7ae70819935
-  Args:
-    type: :Woman
-    source: :LadySarahChatto
-  AssignClass (aae03ae6-d120-42d9-b5c2-9232d4900d0d)
- Call ID: aae03ae6-d120-42d9-b5c2-9232d4900d0d
-  Args:
-    type: :Woman
-    source: :LadyFrancesVonHofmannsthal
-  AssignClass (920b6899-c6dc-41f3-97dd-0647a8144ee8)
- Call ID: 920b6899-c6dc-41f3-97dd-0647a8144ee8
-  Args:
-    type: :Woman
-    source: :PollyFry
-  AssignClass (69c90930-17fc-48c7-a900-b7279ec5c451)
- Call ID: 69c90930-17fc-48c7-a900-b7279ec5c451
-  Args:
-    type: :Woman
-    source: :SerenaAlleyneStanhope
-  AssignClass (ca98d551-c4bf-4479-8e11-b702bed88168)
- Call ID: ca98d551-c4bf-4479-8e11-b702bed88168
-  Args:
-    type: :Woman
-    source: :LadyMargaritaArmstrongJones
-  AddLiteral (be274321-fb71-487f-a3d1-9971fc71290a)
- Call ID: be274321-fb71-487f-a3d1-9971fc71290a
-  Args:
+    source: David_Albert_Charles_Armstrong-Jones
     literal_value: 1961
-    source: :DavidArmstrongJones
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (d2632079-7e88-45fd-bb51-13c6c85d79de)
- Call ID: d2632079-7e88-45fd-bb51-13c6c85d79de
+    literal_type: xsd:integer
+  AddLiteral (8e80e0af-8f67-4044-b178-9ec190256375)
+ Call ID: 8e80e0af-8f67-4044-b178-9ec190256375
   Args:
-    relation: :knownAs
-    source: :DavidArmstrongJones
-    literal_type: xsd:string
+    source: David_Albert_Charles_Armstrong-Jones
     literal_value: David Linley
-  AddLiteral (8602ff32-08f2-4dee-9c3f-56ad553e0da7)
- Call ID: 8602ff32-08f2-4dee-9c3f-56ad553e0da7
-  Args:
-    relation: :formerlyKnownAs
-    literal_value: Viscount Linley
     literal_type: xsd:string
-    source: :DavidArmstrongJones
-  AddTriple (a3ca7d8b-a5f3-4b31-9dfe-5677898bcaa0)
- Call ID: a3ca7d8b-a5f3-4b31-9dfe-5677898bcaa0
+    relation: :knownAs
+  AssignClass (8d1e5cc0-62f8-45b7-8d44-d47fb5e3471b)
+ Call ID: 8d1e5cc0-62f8-45b7-8d44-d47fb5e3471b
   Args:
-    relation: :hasFather
-    target: :AntonyArmstrongJones
-    source: :DavidArmstrongJones
-  AddTriple (685eda93-f9ca-4b20-bf9c-e664c7a73a84)
- Call ID: 685eda93-f9ca-4b20-bf9c-e664c7a73a84
+    source: Antony_Armstrong-Jones
+    type: :Man
+  AssignClass (8e9cfd26-4945-48b2-b9a7-178c6972290f)
+ Call ID: 8e9cfd26-4945-48b2-b9a7-178c6972290f
   Args:
-    source: :DavidArmstrongJones
-    relation: :hasMother
-    target: :PrincessMargaret
-  AddTriple (ec5b880f-5406-4189-9fe5-39bdac5dd862)
- Call ID: ec5b880f-5406-4189-9fe5-39bdac5dd862
+    source: Antony_Armstrong-Jones
+    type: :Person
+  AddTriple (55ce0827-9cd1-4c0c-877d-cbf26864b5d2)
+ Call ID: 55ce0827-9cd1-4c0c-877d-cbf26864b5d2
   Args:
-    source: :DavidArmstrongJones
-    relation: :hasSister
-    target: :LadySarahChatto
-  AddTriple (c3869a72-8739-4f65-b90a-e987279d500a)
- Call ID: c3869a72-8739-4f65-b90a-e987279d500a
-  Args:
-    source: :AntonyArmstrongJones
+    source: Antony_Armstrong-Jones
     relation: :isFatherOf
-    target: :LadyFrancesVonHofmannsthal
-  AddTriple (b967f6fc-f571-403b-9f30-bee188827963)
- Call ID: b967f6fc-f571-403b-9f30-bee188827963
+    target: David_Albert_Charles_Armstrong-Jones
+  AssignClass (dd684c48-e841-4fab-9c61-19d604427293)
+ Call ID: dd684c48-e841-4fab-9c61-19d604427293
   Args:
-    source: :AntonyArmstrongJones
+    source: Princess_Margaret
+    type: :Woman
+  AssignClass (0f0e9341-727f-424a-896d-d5a500a17eb3)
+ Call ID: 0f0e9341-727f-424a-896d-d5a500a17eb3
+  Args:
+    source: Princess_Margaret
+    type: :Person
+  AddTriple (138e343d-feee-4119-975e-4e1da5b6c029)
+ Call ID: 138e343d-feee-4119-975e-4e1da5b6c029
+  Args:
+    source: Princess_Margaret
+    target: David_Albert_Charles_Armstrong-Jones
+    relation: :isMotherOf
+  AssignClass (14bd0d5d-a950-41c2-b414-6738402d8125)
+ Call ID: 14bd0d5d-a950-41c2-b414-6738402d8125
+  Args:
+    source: King_George_VI
+    type: :Man
+  AssignClass (d326a1bd-21a9-47dc-8b9b-2c60c07d7ca7)
+ Call ID: d326a1bd-21a9-47dc-8b9b-2c60c07d7ca7
+  Args:
+    source: King_George_VI
+    type: :Person
+  AddTriple (6be5da43-ed50-4dc1-ace3-611ff5f93c5e)
+ Call ID: 6be5da43-ed50-4dc1-ace3-611ff5f93c5e
+  Args:
+    source: King_George_VI
     relation: :isFatherOf
-    target: :PollyFry
-  AddTriple (aaab5937-e389-4a44-a3a8-47d5933cc085)
- Call ID: aaab5937-e389-4a44-a3a8-47d5933cc085
+    target: Princess_Margaret
+  AssignClass (db849235-8b0d-4e9e-b449-0e58d6fc75b8)
+ Call ID: db849235-8b0d-4e9e-b449-0e58d6fc75b8
   Args:
-    source: :DavidArmstrongJones
-    relation: :isFatherOf
-    target: :LadyMargaritaArmstrongJones
-  AddTriple (ce3ca0e7-c80a-4b1a-b0dd-1b9f1113a47d)
- Call ID: ce3ca0e7-c80a-4b1a-b0dd-1b9f1113a47d
+    source: Lady_Sarah_Chatto
+    type: :Woman
+  AssignClass (7fb746d2-2e7b-4ed9-bc70-a1ff7c08884a)
+ Call ID: 7fb746d2-2e7b-4ed9-bc70-a1ff7c08884a
   Args:
-    target: :SerenaAlleyneStanhope
+    source: Lady_Sarah_Chatto
+    type: :Person
+  AddTriple (7858038c-6a10-41b1-8b90-3111fdf9c2fe)
+ Call ID: 7858038c-6a10-41b1-8b90-3111fdf9c2fe
+  Args:
+    relation: :isSisterOf
+    target: David_Albert_Charles_Armstrong-Jones
+    source: Lady_Sarah_Chatto
+  AssignClass (249c9658-1b70-4db3-b465-bfc32ee16549)
+ Call ID: 249c9658-1b70-4db3-b465-bfc32ee16549
+  Args:
+    source: Lady_Frances_von_Hofmannsthal
+    type: :Woman
+  AssignClass (5b3c3e2b-a49f-4884-935d-2de359b6f149)
+ Call ID: 5b3c3e2b-a49f-4884-935d-2de359b6f149
+  Args:
+    source: Lady_Frances_von_Hofmannsthal
+    type: :Person
+  AddTriple (8b1eca04-410b-4c6e-8525-4600193e3fd4)
+ Call ID: 8b1eca04-410b-4c6e-8525-4600193e3fd4
+  Args:
+    source: Lady_Frances_von_Hofmannsthal
+    target: David_Albert_Charles_Armstrong-Jones
+    relation: :isSisterOf
+  AssignClass (18996f37-d60e-4490-b301-9cb2cb266c7a)
+ Call ID: 18996f37-d60e-4490-b301-9cb2cb266c7a
+  Args:
+    source: Polly_Fry
+    type: :Woman
+  AssignClass (87e6bc1d-1143-4e7e-9111-782c28ca2d89)
+ Call ID: 87e6bc1d-1143-4e7e-9111-782c28ca2d89
+  Args:
+    source: Polly_Fry
+    type: :Person
+  AddTriple (ff19d337-f9da-4830-abaa-1a7568aebf60)
+ Call ID: ff19d337-f9da-4830-abaa-1a7568aebf60
+  Args:
+    target: David_Albert_Charles_Armstrong-Jones
+    relation: :isSisterOf
+    source: Polly_Fry
+  AssignClass (3b70cdd1-6b24-432a-8ed5-66f5a491572a)
+ Call ID: 3b70cdd1-6b24-432a-8ed5-66f5a491572a
+  Args:
+    source: Serena_Alleyne_Stanhope
+    type: :Woman
+  AssignClass (43ed87ac-e4ef-448c-ba8f-22e67d16c5d8)
+ Call ID: 43ed87ac-e4ef-448c-ba8f-22e67d16c5d8
+  Args:
+    source: Serena_Alleyne_Stanhope
+    type: :Person
+  AddTriple (6ec0488f-77a4-420d-8525-31a5bf5f52fc)
+ Call ID: 6ec0488f-77a4-420d-8525-31a5bf5f52fc
+  Args:
     relation: :hasRelation
-    source: :DavidArmstrongJones
-  Finish (0b4f32e8-8868-407b-af1a-50a7b00de914)
- Call ID: 0b4f32e8-8868-407b-af1a-50a7b00de914
+    target: Serena_Alleyne_Stanhope
+    source: David_Albert_Charles_Armstrong-Jones
+  AssignClass (0f379fdf-8af0-4010-ab79-7d6118db3d6b)
+ Call ID: 0f379fdf-8af0-4010-ab79-7d6118db3d6b
   Args:
+    source: Lady_Margarita_Armstrong-Jones
+    type: :Woman
+  AssignClass (75a72342-a5f9-4d7a-8ddc-578dc1729f9a)
+ Call ID: 75a72342-a5f9-4d7a-8ddc-578dc1729f9a
+  Args:
+    source: Lady_Margarita_Armstrong-Jones
+    type: :Person
+  AddTriple (265ba94a-039a-4a92-8837-e5681df462b7)
+ Call ID: 265ba94a-039a-4a92-8837-e5681df462b7
+  Args:
+    source: Lady_Margarita_Armstrong-Jones
+    relation: :isChildOf
+    target: David_Albert_Charles_Armstrong-Jones
+  AddTriple (da802637-553c-4f61-8690-e73797a9bd12)
+ Call ID: da802637-553c-4f61-8690-e73797a9bd12
+  Args:
+    relation: :isChildOf
+    target: Serena_Alleyne_Stanhope
+    source: Lady_Margarita_Armstrong-Jones
+  AssignClass (04b93132-fddd-42c5-bd27-dd1e559a711d)
+ Call ID: 04b93132-fddd-42c5-bd27-dd1e559a711d
+  Args:
+    source: Viscount_Linley_son
+    type: :Man
+  AssignClass (ae6d4ae6-14c0-489b-9c7e-7fa396234e6b)
+ Call ID: ae6d4ae6-14c0-489b-9c7e-7fa396234e6b
+  Args:
+    source: Viscount_Linley_son
+    type: :Person
+  AddTriple (4129a0ed-7511-4792-9e1e-25e5f52d5e0c)
+ Call ID: 4129a0ed-7511-4792-9e1e-25e5f52d5e0c
+  Args:
+    source: Viscount_Linley_son
+    target: David_Albert_Charles_Armstrong-Jones
+    relation: :isChildOf
+  AddTriple (e7516084-673c-4487-b60f-1fef38226697)
+ Call ID: e7516084-673c-4487-b60f-1fef38226697
+  Args:
+    target: Serena_Alleyne_Stanhope
+    relation: :isChildOf
+    source: Viscount_Linley_son
+  Finish (956162ca-7488-4e84-8c2e-3943977f3206)
+ Call ID: 956162ca-7488-4e84-8c2e-3943977f3206
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -548,31 +774,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:DavidArmstrongJones a :Man ;
-      :formerlyKnownAs "Viscount Linley"^^xsd:string ;
+  data:Antony_Armstrong-Jones a :Man,
+          :Person ;
+      :isFatherOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:King_George_VI a :Man,
+          :Person ;
+      :isFatherOf data:Princess_Margaret .
+
+  data:Lady_Frances_von_Hofmannsthal a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:Lady_Margarita_Armstrong-Jones a :Person,
+          :Woman ;
+      :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+          data:Serena_Alleyne_Stanhope .
+
+  data:Lady_Sarah_Chatto a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:Polly_Fry a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:Viscount_Linley_son a :Man,
+          :Person ;
+      :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+          data:Serena_Alleyne_Stanhope .
+
+  data:Princess_Margaret a :Person,
+          :Woman ;
+      :isMotherOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:Serena_Alleyne_Stanhope a :Person,
+          :Woman .
+
+  data:David_Albert_Charles_Armstrong-Jones a :Man,
+          :Person ;
       :hasBirthYear 1961 ;
-      :hasFather data:AntonyArmstrongJones ;
-      :hasMother data:PrincessMargaret ;
-      :hasRelation data:SerenaAlleyneStanhope ;
-      :hasSister data:LadySarahChatto ;
-      :isFatherOf data:LadyMargaritaArmstrongJones ;
+      :hasRelation data:Serena_Alleyne_Stanhope ;
       :knownAs "David Linley"^^xsd:string .
-
-  data:AntonyArmstrongJones a :Man ;
-      :isFatherOf data:LadyFrancesVonHofmannsthal,
-          data:PollyFry .
-
-  data:LadyFrancesVonHofmannsthal a :Woman .
-
-  data:LadyMargaritaArmstrongJones a :Woman .
-
-  data:LadySarahChatto a :Woman .
-
-  data:PollyFry a :Woman .
-
-  data:PrincessMargaret a :Woman .
-
-  data:SerenaAlleyneStanhope a :Woman .
 
 
 
@@ -584,78 +827,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8c62d264-d436-4e06-b852-dcaf0d716e80)
- Call ID: 8c62d264-d436-4e06-b852-dcaf0d716e80
+  ValidateShacl (72cef0a2-898f-4420-adc6-447ea471c0f1)
+ Call ID: 72cef0a2-898f-4420-adc6-447ea471c0f1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:15
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'AntonyArmstrongJones' assigned as the father of 'DavidArmstrongJones' is missing the required ':Ancestor' class.
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Viscount_Linley_son, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to AntonyArmstrongJones.
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'PrincessMargaret' assigned as the mother of 'DavidArmstrongJones' is missing the required ':Ancestor' class.
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Viscount_Linley_son, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to PrincessMargaret.
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'AntonyArmstrongJones' acting as the father of 'DavidArmstrongJones' is missing the required ':Ancestor' class.
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Viscount_Linley_son, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to AntonyArmstrongJones.
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'PrincessMargaret' acting as the mother of 'DavidArmstrongJones' is missing the required ':Ancestor' class.
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Viscount_Linley_son, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to PrincessMargaret.
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'AntonyArmstrongJones' is missing the required ':Ancestor' class.
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to AntonyArmstrongJones.
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'PrincessMargaret' is missing the required ':Ancestor' class.
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to PrincessMargaret.
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'AntonyArmstrongJones' is used as a subject for 'isFatherOf' but lacks the mandatory ':Ancestor' class.
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Viscount_Linley_son, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to AntonyArmstrongJones.
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
 
 
   Violation [8]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Viscount_Linley_son, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person David_Albert_Charles_Armstrong-Jones is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but David_Albert_Charles_Armstrong-Jones is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Albert_Charles_Armstrong-Jones, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Serena_Alleyne_Stanhope is identified as an ancestor of Lady_Margarita_Armstrong-Jones, but Serena_Alleyne_Stanhope is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Serena_Alleyne_Stanhope, :Ancestor)
+
+
+  Violation [13]:
     SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node 'DavidArmstrongJones' is used as a subject for 'isFatherOf' but lacks the mandatory ':Ancestor' class.
+      King_George_VI is listed as a father in an :isFatherOf relationship, but is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to DavidArmstrongJones.
+      AssignClass(King_George_VI, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      Antony_Armstrong-Jones is listed as a father in an :isFatherOf relationship, but is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Antony_Armstrong-Jones, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    LLM-provided explanation of the violation:
+      Princess_Margaret is listed as a mother in an :isMotherOf relationship, but is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margaret, :Ancestor)
 
 
 
@@ -664,24 +963,39 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (2c126f2a-9f60-4f4d-8b9a-1c0ef06a7c08)
- Call ID: 2c126f2a-9f60-4f4d-8b9a-1c0ef06a7c08
+  AssignClass (79d41bae-3bf8-49a6-bbbf-b6baff989cb6)
+ Call ID: 79d41bae-3bf8-49a6-bbbf-b6baff989cb6
   Args:
     type: :Ancestor
-    source: :AntonyArmstrongJones
-  AssignClass (f93e8a66-e284-49da-b6f1-77024ea82a65)
- Call ID: f93e8a66-e284-49da-b6f1-77024ea82a65
+    source: David_Albert_Charles_Armstrong-Jones
+  AssignClass (e3226d24-eb76-41b7-b601-72db10b89cab)
+ Call ID: e3226d24-eb76-41b7-b601-72db10b89cab
   Args:
-    source: :PrincessMargaret
+    source: Serena_Alleyne_Stanhope
     type: :Ancestor
-  AssignClass (3e3d08be-2fb6-4ea9-8b86-e58d2bd0aebd)
- Call ID: 3e3d08be-2fb6-4ea9-8b86-e58d2bd0aebd
+  AssignClass (9d8013d2-3735-4509-831d-57961d83446b)
+ Call ID: 9d8013d2-3735-4509-831d-57961d83446b
   Args:
-    source: :DavidArmstrongJones
     type: :Ancestor
-  ValidateShacl (f0c47f48-f49e-4971-8622-fb8989b7432c)
- Call ID: f0c47f48-f49e-4971-8622-fb8989b7432c
+    source: King_George_VI
+  AssignClass (5bd6e922-fabe-4ed7-a92e-b01e91a448c3)
+ Call ID: 5bd6e922-fabe-4ed7-a92e-b01e91a448c3
   Args:
+    type: :Ancestor
+    source: Antony_Armstrong-Jones
+  AssignClass (f1f8ac69-1486-43f8-9ea8-3cf09e13521a)
+ Call ID: f1f8ac69-1486-43f8-9ea8-3cf09e13521a
+  Args:
+    type: :Ancestor
+    source: Princess_Margaret
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -698,36 +1012,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:DavidArmstrongJones a :Ancestor,
-          :Man ;
-      :formerlyKnownAs "Viscount Linley"^^xsd:string ;
-      :hasBirthYear 1961 ;
-      :hasFather data:AntonyArmstrongJones ;
-      :hasMother data:PrincessMargaret ;
-      :hasRelation data:SerenaAlleyneStanhope ;
-      :hasSister data:LadySarahChatto ;
-      :isFatherOf data:LadyMargaritaArmstrongJones ;
-      :knownAs "David Linley"^^xsd:string .
+  data:Antony_Armstrong-Jones a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:David_Albert_Charles_Armstrong-Jones .
 
-  data:AntonyArmstrongJones a :Ancestor,
-          :Man ;
-      :isFatherOf data:LadyFrancesVonHofmannsthal,
-          data:PollyFry .
+  data:King_George_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Princess_Margaret .
 
-  data:LadyFrancesVonHofmannsthal a :Woman .
+  data:Lady_Frances_von_Hofmannsthal a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-  data:LadyMargaritaArmstrongJones a :Woman .
+  data:Lady_Margarita_Armstrong-Jones a :Person,
+          :Woman ;
+      :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+          data:Serena_Alleyne_Stanhope .
 
-  data:LadySarahChatto a :Woman .
+  data:Lady_Sarah_Chatto a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-  data:PollyFry a :Woman .
+  data:Polly_Fry a :Person,
+          :Woman ;
+      :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-  data:PrincessMargaret a :Ancestor,
+  data:Viscount_Linley_son a :Man,
+          :Person ;
+      :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+          data:Serena_Alleyne_Stanhope .
+
+  data:Princess_Margaret a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:David_Albert_Charles_Armstrong-Jones .
+
+  data:Serena_Alleyne_Stanhope a :Ancestor,
+          :Person,
           :Woman .
 
-  data:SerenaAlleyneStanhope a :Woman .
+  data:David_Albert_Charles_Armstrong-Jones a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasRelation data:Serena_Alleyne_Stanhope ;
+      :knownAs "David Linley"^^xsd:string .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (48f13766-c38b-4f46-b896-ad1cc8c3681f)
+ Call ID: 48f13766-c38b-4f46-b896-ad1cc8c3681f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -737,6 +1078,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2c9412bc-fe57-469a-af10-dca46c10e6be)
- Call ID: 2c9412bc-fe57-469a-af10-dca46c10e6be
+  Finish (9350b572-7d19-43e3-85a8-93141da0297e)
+ Call ID: 9350b572-7d19-43e3-85a8-93141da0297e
   Args:

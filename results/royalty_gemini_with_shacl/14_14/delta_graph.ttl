@@ -5,14 +5,13 @@
 data:Diana_Princess_of_Wales a :Person,
         :Woman .
 
-data:Lilibet_Diana_Mountbatten-Windsor a :Person,
+data:Princess_Lilibet_of_Sussex a :Person,
         :Woman ;
-    :alsoKnownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string ;
     :hasBirthYear 2021 ;
-    :hasBrother data:Prince_Archie ;
     :hasFather data:Prince_Harry ;
     :hasMother data:Meghan_Duchess_of_Sussex ;
-    :knownAs "Princess Lilibet of Sussex"^^xsd:string .
+    :isSiblingOf data:Prince_Archie ;
+    :knownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string .
 
 data:Queen_Elizabeth_II a :Person,
         :Woman .

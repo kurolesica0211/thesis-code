@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Archduchess Helene, Archduchess Ferdinand of Austria"^^xsd:string ;
+    data:posIndicesFull "300:337"^^xsd:string ;
+    data:posIndicesPart "1040:1049"^^xsd:string,
+        "408:415"^^xsd:string ;
+    data:wdtLink wdt:Q23659419 ;
+    :alsoKnownAs "Countess Helene of Toerring-Jettenbach"^^xsd:string,
+        "Helene Gräfin zu Törring-Jettenbach"^^xsd:string,
+        "Helene Marina Elisabeth Gräfin zu Törring-Jettenbach"^^xsd:string,
+        "Helene zu Törring-Jettenbach"^^xsd:string ;
+    :hasChild data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasDaughter data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasRelation data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria,
+        data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isAncestorOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isAuntOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isMotherOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isParentOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isSiblingOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isSisterOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria .
+
+data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person,
+        :Woman ;
+    rdfs:label "Archduchess Sophie, Princess of Windisch-Graetz"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string ;
+    data:posIndicesPart "187:193"^^xsd:string,
+        "498:506"^^xsd:string,
+        "540:546"^^xsd:string,
+        "611:619"^^xsd:string,
+        "686:694"^^xsd:string,
+        "814:820"^^xsd:string,
+        "890:896"^^xsd:string,
+        "938:946"^^xsd:string,
+        "947:953"^^xsd:string,
+        "978:986"^^xsd:string,
+        "987:993"^^xsd:string ;
+    data:wdtLink wdt:Q7562997 ;
+    :alsoKnownAs "Sofia de Habsburg"^^xsd:string,
+        "Sophie Franziska Maria Germaine Erzherzogin von Österreich"^^xsd:string,
+        "Sophie Franziska Maria Germaine Habsburg"^^xsd:string,
+        "Sophie Franziska Maria Germaine of Habsburg-Lorraine, Archduchess of Austria"^^xsd:string,
+        "Sophie Franziska of Austria"^^xsd:string ;
+    :hasAncestor data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :hasMother data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :hasParent data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :hasRelation data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria,
+        data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isChildOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isDaughterOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
+    :isSiblingOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
+    :isSisterOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz .
+

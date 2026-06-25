@@ -69,33 +69,18 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Henry Victor Louis Frederick of Prussia (German: Heinrich Viktor Ludwig Friedrich; 9 January 1900 – 26 February 1904), was the third son and youngest child of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
-He was a grandson of Frederick III, German Emperor, through his father and a great-grandson of Queen Victoria.
-Life
+Karl Friedrich Emich Meinrad Benedikt Fidelis Maria Michael Gerold Prinz von Hohenzollern (born 20 April 1952) is the eldest son of the late Friedrich Wilhelm, Prince of Hohenzollern, and Princess Margarita of Leiningen.
+Residences
 
-Prince Heinrich was born on 9 January 1900, in Kiel.
-His father was pleased by the birth of yet another son, especially such a handsome one, as the Prince had blonde hair.
-The newborn Prince immediately received the title Prince of Prussia with the style Royal Highness, and was baptised
-His older brothers were Prince Waldemar, a namesake of his uncle, and Prince Sigismund, a namesake of his other deceased uncle.
-The Prince was diagnosed with haemophilia as a young child, but, despite this, was a very cheerful and lively boy who liked to play a lot.
-As Henry grew older he became more aware of his condition.
-Death
-
-On 25 February, Princess Irene left Heinrich unsupervised for a few minutes while she went to fetch something.
-The playful Prince climbed a chair, and then he climbed onto the table.
-He started to scream, which immediately attracted the Princess' attention.
-However, experiencing this condition, it was certain the young Prince would die.
-Aftermath
-
-Prince Heinrich's premature death would later very much affect the Princess, who would withdraw into herself.
-One of his older brothers, Prince Waldemar, also had haemophilia.
-The middle sibling, Prince Sigismund, was unaffected by the disease.
+Karl Friedrich lives on his hunting estate Josefslust House, whereas the nearby hunting lodge is used by his brother Albrecht (born 1954) and the nearby Krauchenwies estate by his ex-wife, Princess Alexandra.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +96,9 @@ The middle sibling, Prince Sigismund, was unaffected by the disease.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +113,23 @@ The middle sibling, Prince Sigismund, was unaffected by the disease.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +147,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +229,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +252,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +272,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +282,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +322,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,94 +421,69 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9f69b2f5-94a3-4c62-9a4d-6629a1a9e7e1)
- Call ID: 9f69b2f5-94a3-4c62-9a4d-6629a1a9e7e1
+  AssignClass (d81076b9-804c-4b6e-94a1-d48d76738d87)
+ Call ID: d81076b9-804c-4b6e-94a1-d48d76738d87
   Args:
-    type: :Person
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AssignClass (c168b69a-f253-4d49-8b7a-055492546368)
- Call ID: c168b69a-f253-4d49-8b7a-055492546368
+    source: Karl_Friedrich
+    type: :Man
+  AssignClass (1a0ccb3f-8cb6-40f0-876a-6b7c07f017e7)
+ Call ID: 1a0ccb3f-8cb6-40f0-876a-6b7c07f017e7
   Args:
     type: :Man
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AssignClass (b382a7a8-566c-4a7b-b262-fb6cd787958c)
- Call ID: b382a7a8-566c-4a7b-b262-fb6cd787958c
-  Args:
-    type: :Person
-    source: Prince_Henry_of_Prussia
-  AssignClass (6b65401d-4d07-4a2a-8b4f-d4ffb54311bb)
- Call ID: 6b65401d-4d07-4a2a-8b4f-d4ffb54311bb
-  Args:
-    type: :Man
-    source: Prince_Henry_of_Prussia
-  AssignClass (29444e23-04c3-4386-8be6-de1e47c53a9f)
- Call ID: 29444e23-04c3-4386-8be6-de1e47c53a9f
-  Args:
-    type: :Person
-    source: Princess_Irene_of_Hesse_and_by_Rhine
-  AssignClass (d4e06ae9-d272-4ac4-9cfd-782da3844309)
- Call ID: d4e06ae9-d272-4ac4-9cfd-782da3844309
+    source: Friedrich_Wilhelm
+  AssignClass (8abe8f22-30d6-44b9-b449-c47f1e3b1ef0)
+ Call ID: 8abe8f22-30d6-44b9-b449-c47f1e3b1ef0
   Args:
     type: :Woman
-    source: Princess_Irene_of_Hesse_and_by_Rhine
-  AssignClass (a27e64bf-93f2-4e2a-8fd0-7679e0c35d9e)
- Call ID: a27e64bf-93f2-4e2a-8fd0-7679e0c35d9e
+    source: Margarita_of_Leiningen
+  AssignClass (84eed021-c7f9-451b-a624-3597671968fc)
+ Call ID: 84eed021-c7f9-451b-a624-3597671968fc
   Args:
-    type: :Person
-    source: Prince_Waldemar
-  AssignClass (5b5f88ea-f75c-467f-843f-9421228adef8)
- Call ID: 5b5f88ea-f75c-467f-843f-9421228adef8
-  Args:
+    source: Albrecht
     type: :Man
-    source: Prince_Waldemar
-  AssignClass (e0c3d7e4-cfc5-4702-a545-6f72d8130248)
- Call ID: e0c3d7e4-cfc5-4702-a545-6f72d8130248
+  AssignClass (73bf2230-b8b1-4b29-922d-d8b436c86043)
+ Call ID: 73bf2230-b8b1-4b29-922d-d8b436c86043
   Args:
-    type: :Person
-    source: Prince_Sigismund
-  AssignClass (994b409c-ef62-4182-a5c2-38914bcf5ebf)
- Call ID: 994b409c-ef62-4182-a5c2-38914bcf5ebf
+    source: Alexandra
+    type: :Woman
+  AddLiteral (7d914d06-33aa-41ab-a665-31b18c50163e)
+ Call ID: 7d914d06-33aa-41ab-a665-31b18c50163e
   Args:
-    type: :Man
-    source: Prince_Sigismund
-  AddTriple (f850e2c1-203b-4846-b7c6-31f1c5d33619)
- Call ID: f850e2c1-203b-4846-b7c6-31f1c5d33619
-  Args:
-    relation: :hasFather
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    target: Prince_Henry_of_Prussia
-  AddTriple (de6d4d67-2e7b-4efc-b04f-db96e14340e4)
- Call ID: de6d4d67-2e7b-4efc-b04f-db96e14340e4
-  Args:
-    target: Princess_Irene_of_Hesse_and_by_Rhine
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    relation: :hasMother
-  AddTriple (e3bee258-ae90-4913-9273-6c311840664c)
- Call ID: e3bee258-ae90-4913-9273-6c311840664c
-  Args:
-    relation: :isBrotherOf
-    source: Prince_Waldemar
-    target: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AddTriple (2358650b-d4f4-4fcf-8f37-7716a359bab4)
- Call ID: 2358650b-d4f4-4fcf-8f37-7716a359bab4
-  Args:
-    relation: :isBrotherOf
-    target: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    source: Prince_Sigismund
-  AddLiteral (f0af4431-3837-477f-b367-bab45ac8bac2)
- Call ID: f0af4431-3837-477f-b367-bab45ac8bac2
-  Args:
-    literal_type: xsd:integer
+    source: Karl_Friedrich
     relation: :hasBirthYear
-    literal_value: 1900
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AddLiteral (ecc71c86-3041-4137-8e5f-ddf5ff905072)
- Call ID: ecc71c86-3041-4137-8e5f-ddf5ff905072
-  Args:
+    literal_value: 1952
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1904
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  Finish (cd8b4417-4190-45bb-8109-307e875b748b)
- Call ID: cd8b4417-4190-45bb-8109-307e875b748b
+  AddTriple (882338d0-00ad-41e9-90a1-47af5b7f53ee)
+ Call ID: 882338d0-00ad-41e9-90a1-47af5b7f53ee
+  Args:
+    source: Karl_Friedrich
+    target: Friedrich_Wilhelm
+    relation: :hasFather
+  AddTriple (074a73cf-2217-420a-9348-4f985b342d23)
+ Call ID: 074a73cf-2217-420a-9348-4f985b342d23
+  Args:
+    target: Margarita_of_Leiningen
+    relation: :hasMother
+    source: Karl_Friedrich
+  AddLiteral (31371e1e-f3cd-4300-8b1e-66a543ee563f)
+ Call ID: 31371e1e-f3cd-4300-8b1e-66a543ee563f
+  Args:
+    source: Albrecht
+    literal_value: 1954
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (540ccb92-783b-4d91-8194-38bd9e60d8ac)
+ Call ID: 540ccb92-783b-4d91-8194-38bd9e60d8ac
+  Args:
+    relation: :isSiblingOf
+    target: Albrecht
+    source: Karl_Friedrich
+  AddTriple (facb7dad-4c45-473a-ae74-59d275ac7f0b)
+ Call ID: facb7dad-4c45-473a-ae74-59d275ac7f0b
+  Args:
+    relation: :isSiblingOf
+    target: Karl_Friedrich
+    source: Albrecht
+  Finish (05fa88ba-5c5c-44bb-a265-7f8722db21cd)
+ Call ID: 05fa88ba-5c5c-44bb-a265-7f8722db21cd
   Args:

@@ -1,0 +1,205 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Beatrice_of_York a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of York"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "0:44"^^xsd:string,
+        "1910:1923"^^xsd:string,
+        "2862:2879"^^xsd:string,
+        "4517:4530"^^xsd:string,
+        "6260:6273"^^xsd:string,
+        "7300:7317"^^xsd:string,
+        "7300:7325"^^xsd:string,
+        "7496:7513"^^xsd:string,
+        "7496:7540"^^xsd:string ;
+    data:posIndicesPart "1111:1119"^^xsd:string,
+        "1219:1227"^^xsd:string,
+        "133:141"^^xsd:string,
+        "1407:1415"^^xsd:string,
+        "1477:1485"^^xsd:string,
+        "1749:1757"^^xsd:string,
+        "1785:1789"^^xsd:string,
+        "1880:1884"^^xsd:string,
+        "2051:2059"^^xsd:string,
+        "2230:2238"^^xsd:string,
+        "2420:2428"^^xsd:string,
+        "2557:2561"^^xsd:string,
+        "2570:2578"^^xsd:string,
+        "2717:2725"^^xsd:string,
+        "292:300"^^xsd:string,
+        "2994:3002"^^xsd:string,
+        "3214:3222"^^xsd:string,
+        "3307:3315"^^xsd:string,
+        "3484:3492"^^xsd:string,
+        "4075:4083"^^xsd:string,
+        "4114:4122"^^xsd:string,
+        "4260:4268"^^xsd:string,
+        "429:437"^^xsd:string,
+        "4409:4417"^^xsd:string,
+        "4666:4674"^^xsd:string,
+        "5067:5075"^^xsd:string,
+        "5227:5235"^^xsd:string,
+        "5416:5424"^^xsd:string,
+        "543:547"^^xsd:string,
+        "549:557"^^xsd:string,
+        "5512:5520"^^xsd:string,
+        "5737:5745"^^xsd:string,
+        "5934:5942"^^xsd:string,
+        "6060:6068"^^xsd:string,
+        "6092:6096"^^xsd:string,
+        "6224:6232"^^xsd:string,
+        "6433:6437"^^xsd:string,
+        "6476:6484"^^xsd:string,
+        "648:656"^^xsd:string,
+        "6693:6697"^^xsd:string,
+        "6719:6727"^^xsd:string,
+        "684:692"^^xsd:string,
+        "6938:6942"^^xsd:string,
+        "7015:7023"^^xsd:string,
+        "7091:7099"^^xsd:string,
+        "801:809"^^xsd:string,
+        "896:904"^^xsd:string,
+        "989:997"^^xsd:string ;
+    data:wdtLink wdt:Q165657 ;
+    :alsoKnownAs "Bea York"^^xsd:string,
+        "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York"^^xsd:string,
+        "Beatrice York"^^xsd:string,
+        "H.R.H. Princess Beatrice of York"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary of York"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary, Mrs Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary, Mrs. Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs Edoardo Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs. Mapelli Mozzi"^^xsd:string ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasRelation data:Princess_Beatrice_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_York ;
+    :isAncestorOf data:Sienna_Mapelli_Mozzi ;
+    :isAuntOf data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Princess_Beatrice_of_York ;
+    :isMotherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Princess_Beatrice_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Edoardo Mapelli Mozzi"^^xsd:string ;
+    data:posIndicesFull "23:44"^^xsd:string,
+        "309:330"^^xsd:string,
+        "3617:3638"^^xsd:string,
+        "7519:7540"^^xsd:string ;
+    data:posIndicesPart "3661:3668"^^xsd:string,
+        "3669:3674"^^xsd:string,
+        "3781:3788"^^xsd:string,
+        "3789:3794"^^xsd:string,
+        "3952:3959"^^xsd:string,
+        "3986:3993"^^xsd:string,
+        "3994:3999"^^xsd:string,
+        "4127:4134"^^xsd:string,
+        "4135:4140"^^xsd:string,
+        "4277:4284"^^xsd:string,
+        "4285:4290"^^xsd:string ;
+    data:wdtLink wdt:Q68688016 ;
+    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi"^^xsd:string,
+        "Count Edoardo Mapelli Mozzi"^^xsd:string,
+        "Edoardo Alessandro Mapelli Mozzi"^^xsd:string ;
+    :hasBrother data:Edoardo_Mapelli_Mozzi ;
+    :hasChild data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi,
+        data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :isAncestorOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Edoardo_Mapelli_Mozzi ;
+    :isBrotherOf data:Edoardo_Mapelli_Mozzi ;
+    :isFatherOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Edoardo_Mapelli_Mozzi ;
+    :isUncleOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi .
+
+data:Q131934987 a :Person,
+        :Woman ;
+    rdfs:label "Q131934987"^^xsd:string ;
+    data:wdtLink wdt:Q131934987 ;
+    :hasAncestor data:Edoardo_Mapelli_Mozzi ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasParent data:Edoardo_Mapelli_Mozzi ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi,
+        data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi ;
+    :isSiblingOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isSisterOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi .
+
+data:Sienna_Mapelli_Mozzi a :Person,
+        :Woman ;
+    rdfs:label "Sienna Mapelli Mozzi"^^xsd:string ;
+    data:posIndicesFull "4822:4852"^^xsd:string ;
+    data:posIndicesPart "4936:4942"^^xsd:string ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi"^^xsd:string ;
+    :hasAncestor data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice_of_York ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasRelation data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York,
+        data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isSiblingOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi ;
+    :isSisterOf data:Q131934987,
+        data:Sienna_Mapelli_Mozzi .
+

@@ -7,41 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Marie_Auguste_of_Anhalt a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marie Auguste of Anhalt" ;
-    data:posIndicesFull "154:186",
-        "373:405" ;
-    data:posIndicesPart "1090:1095",
-        "1096:1103",
-        "1156:1161",
-        "1162:1169",
-        "1287:1292",
-        "1293:1300",
-        "1736:1744",
-        "1826:1834" ;
-    data:wdtLink wdt:Q63014 ;
-    :alsoKnownAs "Marie Auguste Prinzessin von Anhalt",
-        "Marie of Anhalt",
-        "Princess Marie Augustine of Anhalt",
-        "Princess Marie-Auguste of Anhalt" ;
-    :hasChild data:Prince_Karl_Franz_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Karl_Franz_of_Prussia ;
-    :isMotherOf data:Prince_Karl_Franz_of_Prussia ;
-    :isParentOf data:Prince_Karl_Franz_of_Prussia .
-
-data:Prince_Eitel_Friedrich_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Eitel_Friedrich_of_Prussia a :Person ;
     rdfs:label "Prince Eitel Friedrich of Prussia" ;
     data:posIndicesFull "858:891",
         "865:880" ;
@@ -52,54 +18,10 @@ data:Prince_Eitel_Friedrich_of_Prussia a :Man,
     :alsoKnownAs "Eitel Friedrich",
         "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
         "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen" ;
-    :hasBrother data:Prince_Joachim_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
     :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Joachim_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isSiblingOf data:Prince_Joachim_of_Prussia ;
-    :isSonOf data:Wilhelm_II ;
-    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+    :hasSex data:male .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "1924:1934",
-        "214:224",
-        "214:240" ;
-    data:posIndicesPart "1317:1324",
-        "1410:1417",
-        "2006:2013",
-        "979:986" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isFatherOf data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia .
-
-data:Prince_Karl_Franz_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Karl_Franz_of_Prussia a :Person ;
     rdfs:label "Prince Karl Franz of Prussia" ;
     data:posIndicesFull "0:64",
         "7:23" ;
@@ -130,20 +52,17 @@ data:Prince_Karl_Franz_of_Prussia a :Ancestor,
     :alsoKnownAs "Karl Franz Joseph",
         "Karl Franz Joseph Prinz von Preußen",
         "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia" ;
-    :hasFather data:Prince_Joachim_of_Prussia ;
-    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;
     :hasParent data:Prince_Joachim_of_Prussia,
         data:Princess_Marie_Auguste_of_Anhalt ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Joachim_of_Prussia,
-        data:Princess_Marie_Auguste_of_Anhalt ;
-    :isSonOf data:Prince_Joachim_of_Prussia,
-        data:Princess_Marie_Auguste_of_Anhalt .
+    :hasSex data:male .
 
-data:Prince_Joachim_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Joachim_of_Prussia a :Person ;
     rdfs:label "Prince Joachim of Prussia" ;
     data:posIndicesFull "124:149",
         "131:138",
@@ -158,16 +77,52 @@ data:Prince_Joachim_of_Prussia a :Ancestor,
     :alsoKnownAs "Joachim",
         "Joachim Franz Hubert",
         "Prince Joachim Franz Humbert of Prussia" ;
-    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasChild data:Prince_Karl_Franz_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
     :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Karl_Franz_of_Prussia ;
-    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
-    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
-    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isSonOf data:Wilhelm_II .
+    :hasSex data:male .
+
+data:Princess_Marie_Auguste_of_Anhalt a :Person ;
+    rdfs:label "Princess Marie Auguste of Anhalt" ;
+    data:posIndicesFull "154:186",
+        "373:405" ;
+    data:posIndicesPart "1090:1095",
+        "1096:1103",
+        "1156:1161",
+        "1162:1169",
+        "1287:1292",
+        "1293:1300",
+        "1736:1744",
+        "1826:1834" ;
+    data:wdtLink wdt:Q63014 ;
+    :alsoKnownAs "Marie Auguste Prinzessin von Anhalt",
+        "Marie of Anhalt",
+        "Princess Marie Augustine of Anhalt",
+        "Princess Marie-Auguste of Anhalt" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "1924:1934",
+        "214:224",
+        "214:240" ;
+    data:posIndicesPart "1317:1324",
+        "1410:1417",
+        "2006:2013",
+        "979:986" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

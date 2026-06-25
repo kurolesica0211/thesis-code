@@ -2,51 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wilhelm_II a :Man,
-        :Person ;
-    :alsoKnownAs "Friedrich Wilhelm Viktor Albert"^^xsd:string ;
-    :hasBirthYear 1859 ;
-    :hasDaughter data:Victoria_Louise_of_Prussia ;
-    :hasDeathYear 1941 ;
-    :hasFather data:Frederick_William_III_father ;
-    :hasMarriageYear 1881,
-        1922 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Hermine_Reuss_of_Greiz ;
-    :hasSister data:Sophia_of_Prussia ;
-    :hasSon data:Joachim_of_Prussia .
+data:King_Constantine_II_of_Greece a :Man .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-        :Woman .
+data:King_Frederik_X_of_Denmark a :Man .
 
-data:Frederick_William_III_father a :Ancestor,
-        :Man,
-        :Person .
+data:Konstantin_Gustav_Heinrich_Richard a :Man ;
+    :hasBirthYear 2010 ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Male .
 
-data:Hermine_Reuss_of_Greiz a :Person,
-        :Woman .
+data:Louisa_Margareta_Benedikte_Hanna a :Woman ;
+    :hasBirthYear 2015 ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Female .
 
-data:Joachim_of_Prussia a :Man,
-        :Person .
+data:Queen_Margrethe_II_of_Denmark a :Woman .
 
-data:Prince_Albert a :Ancestor,
-        :Man,
-        :Person .
+data:Heinrich-Wilhelm_Johannsmann a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
 
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman .
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
 
-data:Sophia_of_Prussia a :Person,
-        :Woman .
-
-data:Victoria_Louise_of_Prussia a :Person,
-        :Woman .
-
-data:Victoria_Princess_Royal a :Ancestor,
-        :Person,
+data:Princess_Benedikte_of_Denmark a :Ancestor,
         :Woman ;
-    :hasFather data:Prince_Albert ;
-    :hasMother data:Queen_Victoria .
+    :hasSex data:Female .
+
+data:Alexander_Johannsmann a :Ancestor,
+        :Man ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Heinrich-Wilhelm_Johannsmann ;
+    :hasSex data:Male .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1975 ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

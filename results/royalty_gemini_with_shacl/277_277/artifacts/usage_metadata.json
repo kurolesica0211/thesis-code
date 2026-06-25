@@ -2,23 +2,23 @@
     "translation": [
         {
             "iteration": 2,
-            "shacl_tool_call_id": "3f7f5b4c-334e-4729-a874-c950c8cf30ef",
+            "shacl_tool_call_id": "aceadabd-8877-48d3-b200-27fa0a29227c",
             "metadata": {
-                "input_tokens": 21958,
-                "output_tokens": 2497,
-                "total_tokens": 24455,
+                "input_tokens": 12022,
+                "output_tokens": 978,
+                "total_tokens": 13000,
                 "input_token_details": {
-                    "cache_read": 20226
+                    "cache_read": 0
                 }
             }
         },
         {
-            "iteration": 4,
-            "shacl_tool_call_id": "8b517aae-bd37-42a2-b1a7-f78c7fcc2328",
+            "iteration": 3,
+            "shacl_tool_call_id": "3d4d97f4-43a4-4fb7-9c8a-161731e4eb21",
             "metadata": {
-                "input_tokens": 1581,
-                "output_tokens": 267,
-                "total_tokens": 1848,
+                "input_tokens": 60776,
+                "output_tokens": 4774,
+                "total_tokens": 65550,
                 "input_token_details": {
                     "cache_read": 0
                 }
@@ -27,62 +27,46 @@
     ],
     "final": [
         {
-            "iteration": 7,
+            "iteration": 5,
             "metadata": [
                 {
-                    "input_tokens": 9623,
-                    "output_tokens": 1099,
-                    "total_tokens": 10722,
+                    "input_tokens": 10535,
+                    "output_tokens": 786,
+                    "total_tokens": 11321,
                     "input_token_details": {
-                        "cache_read": 9618
+                        "cache_read": 10530
                     }
                 },
                 {
-                    "input_tokens": 12128,
+                    "input_tokens": 12237,
                     "output_tokens": 10,
-                    "total_tokens": 12138,
+                    "total_tokens": 12247,
                     "input_token_details": {
-                        "cache_read": 9618
+                        "cache_read": 10530
                     }
                 },
                 {
-                    "input_tokens": 17097,
-                    "output_tokens": 240,
-                    "total_tokens": 17337,
+                    "input_tokens": 13756,
+                    "output_tokens": 708,
+                    "total_tokens": 14464,
                     "input_token_details": {
-                        "cache_read": 9618
+                        "cache_read": 10530
                     }
                 },
                 {
-                    "input_tokens": 18101,
-                    "output_tokens": 10,
-                    "total_tokens": 18111,
+                    "input_tokens": 22344,
+                    "output_tokens": 56,
+                    "total_tokens": 22400,
                     "input_token_details": {
-                        "cache_read": 9618
+                        "cache_read": 10530
                     }
                 },
                 {
-                    "input_tokens": 18494,
-                    "output_tokens": 41,
-                    "total_tokens": 18535,
-                    "input_token_details": {
-                        "cache_read": 9618
-                    }
-                },
-                {
-                    "input_tokens": 19079,
-                    "output_tokens": 10,
-                    "total_tokens": 19089,
-                    "input_token_details": {
-                        "cache_read": 9618
-                    }
-                },
-                {
-                    "input_tokens": 19111,
+                    "input_tokens": 22890,
                     "output_tokens": 8,
-                    "total_tokens": 19119,
+                    "total_tokens": 22898,
                     "input_token_details": {
-                        "cache_read": 9618
+                        "cache_read": 10530
                     }
                 }
             ]

@@ -1,0 +1,130 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "234:248"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasRelation data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Princess_Maria_Pia_of_Savoy a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Pia of Savoy"^^xsd:string ;
+    data:posIndicesFull "884:911"^^xsd:string ;
+    data:posIndicesPart "1143:1148"^^xsd:string,
+        "1149:1152"^^xsd:string,
+        "1196:1201"^^xsd:string,
+        "1202:1205"^^xsd:string,
+        "1302:1310"^^xsd:string,
+        "1405:1413"^^xsd:string,
+        "1665:1673"^^xsd:string,
+        "1733:1741"^^xsd:string ;
+    data:wdtLink wdt:Q922418 ;
+    :alsoKnownAs "Maria Pia di Savoia"^^xsd:string,
+        "Maria Pia di Savoia-Carignano, Principessa d'Italia"^^xsd:string ;
+    :hasRelation data:Princess_Maria_Pia_of_Savoy ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSisterOf data:Princess_Maria_Pia_of_Savoy .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "225:260"^^xsd:string,
+        "234:260"^^xsd:string ;
+    data:posIndicesPart "1121:1127"^^xsd:string,
+        "1302:1310"^^xsd:string,
+        "1405:1413"^^xsd:string,
+        "1665:1673"^^xsd:string,
+        "1733:1741"^^xsd:string,
+        "364:372"^^xsd:string,
+        "405:411"^^xsd:string,
+        "416:423"^^xsd:string,
+        "508:516"^^xsd:string,
+        "723:729"^^xsd:string,
+        "967:975"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia ;
+    :isAuntOf data:Prince_Alexander_of_Serbia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Prince Alexander of Serbia"^^xsd:string ;
+    data:posIndicesFull "0:30"^^xsd:string ;
+    data:posIndicesPart "1129:1138"^^xsd:string,
+        "1182:1191"^^xsd:string,
+        "1248:1254"^^xsd:string,
+        "1387:1396"^^xsd:string,
+        "1485:1491"^^xsd:string,
+        "1548:1554"^^xsd:string,
+        "1712:1718"^^xsd:string,
+        "1719:1728"^^xsd:string,
+        "1833:1839"^^xsd:string,
+        "2047:2053"^^xsd:string,
+        "2101:2110"^^xsd:string,
+        "2200:2209"^^xsd:string,
+        "2302:2308"^^xsd:string,
+        "2309:2318"^^xsd:string,
+        "2455:2461"^^xsd:string,
+        "2462:2471"^^xsd:string,
+        "2576:2582"^^xsd:string,
+        "283:292"^^xsd:string,
+        "451:457"^^xsd:string,
+        "480:486"^^xsd:string,
+        "579:585"^^xsd:string,
+        "866:875"^^xsd:string ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Serbia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Alexander_of_Serbia ;
+    :isBrotherOf data:Prince_Alexander_of_Serbia ;
+    :isChildOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia ;
+    :isSonOf data:Princess_Olga_of_Greece_and_Denmark .
+

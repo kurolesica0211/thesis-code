@@ -2,29 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Hubertus_of_Prussia .
+data:Alfonso a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_of_Barcelona ;
+    :hasMother data:Maria_Mercedes ;
+    :isBrotherOf data:Juan_Carlos_I .
 
-data:Wilhelm_of_Germany a :Ancestor,
+data:Alfonso_de_Orleans a :Man,
+        :Person .
+
+data:Fernando_Cento a :Man,
+        :Person .
+
+data:Francisco_Franco a :Man,
+        :Person .
+
+data:Maria_Cristina a :Person,
+        :Woman .
+
+data:Pilar a :Person,
+        :Woman .
+
+data:Alfonso_XIII a :Ancestor,
         :Man,
-        :Person ;
-    :isFatherOf data:Hubertus_of_Prussia .
+        :Person .
 
-data:Wilhelm_of_Prussia a :Man,
-        :Person ;
-    :isBrotherOf data:Hubertus_of_Prussia .
+data:Juan_Carlos_I a :Man,
+        :Person .
 
-data:Magdalena_Reuss_of_K%C3%B6stritz a :Person,
-        :Woman ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 2009 .
+data:Juan_of_Barcelona a :Ancestor,
+        :Man,
+        :Person .
 
-data:Hubertus_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 1950 ;
-    :hasMarriageYear 1943 ;
-    :hasRelation data:Magdalena_Reuss_of_K%C3%B6stritz .
+data:Maria_Mercedes a :Ancestor,
+        :Person,
+        :Woman .
 

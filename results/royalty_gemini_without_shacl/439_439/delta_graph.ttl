@@ -2,39 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_Bowes-Lyon a :Woman ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMother data:Cecilia_Bowes-Lyon ;
-    :isSisterOf data:John_Herbert_Bowes-Lyon .
+data:PatriciaMaud a :Woman ;
+    :isSisterOf data:LadyMaryCeciliaColman .
 
-data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
-    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
-    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+data:TimothyColman a :Man ;
+    :hasFather data:GeoffreyColman .
 
-data:Katherine_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1926 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-    :isSisterOf data:Nerissa_Bowes-Lyon .
+data:CeciliaBowes-Lyon a :Woman .
 
-data:Nerissa_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-    :isSisterOf data:Katherine_Bowes-Lyon .
+data:ClaudeBowes-Lyon a :Man .
 
-data:Cecilia_Bowes-Lyon a :Woman .
+data:ElizabethMargaretCator a :Woman .
 
-data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .
+data:FergusMichaelClaude a :Man .
 
-data:Claude_Bowes-Lyon a :Man .
+data:GeoffreyColman a :Man .
 
-data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
-    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
+data:LadyMaryCeciliaColman a :Woman ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasDeathYear 2021 ;
+    :hasFather data:MichaelBowes-Lyon ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:ElizabethMargaretCator .
 
-data:John_Herbert_Bowes-Lyon a :Man ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMother data:Cecilia_Bowes-Lyon .
+data:MichaelAlbemarle a :Man .
+
+data:MichaelBowes-Lyon a :Man ;
+    :hasFather data:ClaudeBowes-Lyon ;
+    :hasMother data:CeciliaBowes-Lyon .
 

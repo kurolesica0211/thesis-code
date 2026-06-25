@@ -7,65 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Carmen_Martínez-Bordiú_y_Franco a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Carmen Martínez-Bordiú y Franco" ;
-    data:posIndicesFull "5189:5235",
-        "5204:5235" ;
-    data:posIndicesPart "5381:5387",
-        "5444:5450",
-        "5457:5463",
-        "5509:5515",
-        "5550:5556",
-        "5679:5685" ;
-    data:wdtLink wdt:Q2939617 ;
-    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco",
-        "Dona Maria del Carmen Martinez-Bordiu y Franco" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Fernand_Sanz a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Fernand Sanz" ;
-    data:posIndicesFull "7837:7849" ;
-    data:wdtLink wdt:Q26455 ;
-    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala" ;
-    :hasBrother data:Alfonso_XIII ;
-    :hasSex data:male ;
-    :isBrotherOf data:Alfonso_XIII ;
-    :isSiblingOf data:Alfonso_XIII ;
-    :isUncleOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia .
-
-data:Emmanuelle_de_Dampierre a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Emmanuelle de Dampierre" ;
-    data:posIndicesFull "2249:2270",
-        "590:611" ;
-    data:posIndicesPart "6352:6361" ;
-    data:wdtLink wdt:Q3052995 ;
-    :alsoKnownAs "Emanuela de Dampierre",
-        "Emmanuela de Dampierre",
-        "Manuela Dampierre" ;
-    :hasChild data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :isMotherOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :isParentOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz .
-
-data:Alfonso-_Prince_of_Asturias a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso-_Prince_of_Asturias a :Person ;
     rdfs:label "Alfonso, Prince of Asturias" ;
     data:posIndicesFull "1612:1639" ;
     data:posIndicesPart "2067:2074",
@@ -101,12 +43,12 @@ data:Alfonso-_Prince_of_Asturias a :Man,
         "7368:7375",
         "7433:7439",
         "7470:7476",
-        "8027:8033",
-        "8054:8060",
-        "8165:8172",
-        "8209:8216",
-        "8256:8263",
-        "8385:8392" ;
+        "7631:7637",
+        "7658:7664",
+        "7769:7776",
+        "7813:7820",
+        "7860:7867",
+        "7989:7996" ;
     data:wdtLink wdt:Q518846 ;
     :alsoKnownAs "Alfons de Borbo i de Battenberg",
         "Alfons de Borbó i de Battenberg",
@@ -116,36 +58,77 @@ data:Alfonso-_Prince_of_Asturias a :Man,
         "Alfonso, Count of Covadonga",
         "Alphonse de Bourbon",
         "Infante Alfonso, Count of Covadonga" ;
-    :hasBrother data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasFather data:Alfonso_XIII ;
     :hasParent data:Alfonso_XIII ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Jaime-_Duke_of_Segovia ;
-    :isChildOf data:Alfonso_XIII ;
-    :isSiblingOf data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSonOf data:Alfonso_XIII ;
-    :isUncleOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz .
+    :hasSex data:male .
 
-data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Carmen_Martínez-Bordiú_y_Franco a :Person ;
+    rdfs:label "Carmen Martínez-Bordiú y Franco" ;
+    data:posIndicesFull "5189:5235",
+        "5204:5235" ;
+    data:posIndicesPart "5381:5387",
+        "5444:5450",
+        "5457:5463",
+        "5509:5515",
+        "5550:5556",
+        "5679:5685" ;
+    data:wdtLink wdt:Q2939617 ;
+    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco",
+        "Dona Maria del Carmen Martinez-Bordiu y Franco" ;
+    :hasSex data:female .
+
+data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz a :Person ;
     rdfs:label "Prince Alfonso de Bourbon, Duke of Cádiz" ;
     data:wdtLink wdt:Q603075 ;
-    :hasFather data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasMother data:Emmanuelle_de_Dampierre ;
     :hasParent data:Emmanuelle_de_Dampierre,
         data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasSex data:male ;
-    :isChildOf data:Emmanuelle_de_Dampierre,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSonOf data:Emmanuelle_de_Dampierre,
-        data:Infante_Jaime-_Duke_of_Segovia .
+    :hasSex data:male .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Emmanuelle_de_Dampierre a :Person ;
+    rdfs:label "Emmanuelle de Dampierre" ;
+    data:posIndicesFull "2249:2270",
+        "590:611" ;
+    data:posIndicesPart "6352:6361" ;
+    data:wdtLink wdt:Q3052995 ;
+    :alsoKnownAs "Emanuela de Dampierre",
+        "Emmanuela de Dampierre",
+        "Manuela Dampierre" ;
+    :hasSex data:female .
+
+data:Infante_Jaime-_Duke_of_Segovia a :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia" ;
+    data:posIndicesFull "501:531" ;
+    data:posIndicesPart "1840:1847",
+        "1852:1857",
+        "2015:2019",
+        "2023:2030",
+        "2208:2215",
+        "2472:2479",
+        "2752:2759",
+        "3096:3103",
+        "3307:3314",
+        "5887:5894",
+        "6163:6168",
+        "632:636",
+        "6473:6477",
+        "6651:6655",
+        "6700:6705",
+        "6770:6774",
+        "7006:7010",
+        "712:717",
+        "7263:7267",
+        "7451:7455",
+        "7567:7571" ;
+    data:wdtLink wdt:Q703780 ;
+    :hasParent data:Alfonso_XIII ;
+    :hasSex data:male .
+
+data:Alfonso_XIII a :Person ;
     rdfs:label "Alfonso XIII" ;
     data:posIndicesFull "2548:2560",
         "262:274",
@@ -182,10 +165,10 @@ data:Alfonso_XIII a :Ancestor,
         "6860:6867",
         "7230:7237",
         "7368:7375",
-        "8165:8172",
-        "8209:8216",
-        "8256:8263",
-        "8385:8392",
+        "7769:7776",
+        "7813:7820",
+        "7860:7867",
+        "7989:7996",
         "882:889" ;
     data:wdtLink wdt:Q18363 ;
     :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
@@ -194,57 +177,9 @@ data:Alfonso_XIII a :Ancestor,
         "Don Alfonso de Borbon y Habsburgo",
         "Don Alfonso de Borbón y Habsburgo",
         "The African" ;
-    :hasBrother data:Fernand_Sanz ;
-    :hasChild data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasSex data:male ;
-    :hasSon data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isBrotherOf data:Fernand_Sanz ;
-    :isFatherOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isParentOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSiblingOf data:Fernand_Sanz .
+    :hasSex data:male .
 
-data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Jaime, Duke of Segovia" ;
-    data:posIndicesFull "501:531" ;
-    data:posIndicesPart "1840:1847",
-        "1852:1857",
-        "2015:2019",
-        "2023:2030",
-        "2208:2215",
-        "2472:2479",
-        "2752:2759",
-        "3096:3103",
-        "3307:3314",
-        "5887:5894",
-        "6163:6168",
-        "632:636",
-        "6473:6477",
-        "6651:6655",
-        "6700:6705",
-        "6770:6774",
-        "7006:7010",
-        "712:717",
-        "7263:7267",
-        "7451:7455",
-        "7567:7571" ;
-    data:wdtLink wdt:Q703780 ;
-    :hasBrother data:Alfonso-_Prince_of_Asturias ;
-    :hasChild data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :hasFather data:Alfonso_XIII ;
-    :hasParent data:Alfonso_XIII ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :isBrotherOf data:Alfonso-_Prince_of_Asturias ;
-    :isChildOf data:Alfonso_XIII ;
-    :isFatherOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :isParentOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
-    :isSiblingOf data:Alfonso-_Prince_of_Asturias ;
-    :isSonOf data:Alfonso_XIII .
+data:female a :Female .
+
+data:male a :Male .
 

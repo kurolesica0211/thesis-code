@@ -7,78 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Princess_Béatrice_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Béatrice of the Two Sicilies" ;
+    data:posIndicesFull "765:806" ;
+    data:posIndicesPart "1480:1483",
+        "1484:1492",
+        "1856:1864",
+        "2009:2017" ;
+    data:wdtLink wdt:Q4925346 ;
+    :alsoKnownAs "Béatrice Marie Caroline Louise Françoise de Bourbon",
+        "Princess Beatrice of Bourbon-Two Sicilies",
+        "Princess Beatrice of the Two Sicilies" ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasSex data:female .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Camilla-_Duchess_of_Castro a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Camilla, Duchess of Castro" ;
-    data:posIndicesFull "465:481" ;
-    data:posIndicesPart "1856:1864",
-        "2009:2017",
-        "721:729" ;
-    data:wdtLink wdt:Q4994262 ;
-    :alsoKnownAs "Camilla Crociani",
-        "Camilla de Bourbon des Deux-Siciles",
-        "Camilla di Borbone delle Due Sicilie",
-        "Princess Camilla, The Duchess of Castro",
-        "Queen Camilla of the Two Sicilies",
-        "Queen Camilla, Queen Consort of the Two Sicilies",
-        "Queen Camilla, The Queen Consort of the Two Sicilies" ;
-    :hasChild data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :hasDaughter data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :isParentOf data:Princess_Maria_Carolina-_Duchess_of_Calabria .
-
-data:Jean-Christophe-_Prince_Napoléon a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Jean-Christophe, Prince Napoléon" ;
-    data:posIndicesFull "833:865" ;
-    data:posIndicesPart "1558:1564",
-        "1591:1597",
-        "967:973" ;
-    data:wdtLink wdt:Q620337 ;
-    :alsoKnownAs "Jean-Christophe Louis Ferdinand Alberic Bonaparte, Prince Napoléon",
-        "Jean-Christophe Louis Ferdinand Albéric Napoléon Bonaparte",
-        "Jean-Christophe Napoléon" ;
-    :hasMother data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :hasParent data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :isSonOf data:Princess_Béatrice_of_the_Two_Sicilies .
-
-data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Ferdinando, Duke of Castro" ;
-    data:posIndicesFull "660:692" ;
-    data:posIndicesPart "1558:1564",
-        "1591:1597",
-        "967:973" ;
-    data:wdtLink wdt:Q2324276 ;
-    :alsoKnownAs "Ferdinando Maria",
-        "Ferdinando Maria Andrea Alfonso Marcus" ;
-    :hasChild data:Prince_Carlo-_Duke_of_Castro,
-        data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :hasDaughter data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
-    :isFatherOf data:Prince_Carlo-_Duke_of_Castro,
-        data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :isParentOf data:Prince_Carlo-_Duke_of_Castro,
-        data:Princess_Béatrice_of_the_Two_Sicilies .
-
-data:Princess_Maria_Carolina-_Duchess_of_Calabria a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_Carolina-_Duchess_of_Calabria a :Person ;
     rdfs:label "Princess Maria Carolina, Duchess of Calabria" ;
     data:posIndicesFull "135:160" ;
     data:posIndicesPart "1039:1044",
@@ -109,20 +52,17 @@ data:Princess_Maria_Carolina-_Duchess_of_Calabria a :Person,
         "Princess Maria Carolina of Bourbon Two Sicilies, The Duchess of Calabria",
         "Princess Maria Carolina of Bourbon Two Sicilies, The Duchess of Calabria, The Duchess of Palermo",
         "Princess Maria Carolina, Duchess of Calabria, Duchess of Palermo" ;
-    :hasFather data:Prince_Carlo-_Duke_of_Castro ;
-    :hasMother data:Princess_Camilla-_Duchess_of_Castro ;
     :hasParent data:Prince_Carlo-_Duke_of_Castro,
         data:Princess_Camilla-_Duchess_of_Castro ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Carlo-_Duke_of_Castro,
-        data:Princess_Camilla-_Duchess_of_Castro ;
-    :isDaughterOf data:Prince_Carlo-_Duke_of_Castro,
-        data:Princess_Camilla-_Duchess_of_Castro .
+    :hasSex data:female .
 
-data:Prince_Carlo-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Carlo-_Duke_of_Castro a :Person ;
     rdfs:label "Prince Carlo, Duke of Castro" ;
     data:posIndicesFull "302:330" ;
     data:posIndicesPart "1083:1088",
@@ -132,49 +72,43 @@ data:Prince_Carlo-_Duke_of_Castro a :Ancestor,
         "528:533",
         "559:563",
         "567:573",
+        "850:856",
         "967:973" ;
     data:wdtLink wdt:Q1850305 ;
     :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies",
         "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro" ;
-    :hasChild data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :hasDaughter data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
     :hasParent data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :isBrotherOf data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isFatherOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :isParentOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :isSiblingOf data:Princess_Béatrice_of_the_Two_Sicilies ;
-    :isSonOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isUncleOf data:Jean-Christophe-_Prince_Napoléon .
+    :hasSex data:male .
 
-data:Princess_Béatrice_of_the_Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Béatrice of the Two Sicilies" ;
-    data:posIndicesFull "765:806" ;
-    data:posIndicesPart "1480:1483",
-        "1484:1492",
-        "1856:1864",
-        "2009:2017" ;
-    data:wdtLink wdt:Q4925346 ;
-    :alsoKnownAs "Béatrice Marie Caroline Louise Françoise de Bourbon",
-        "Princess Beatrice of Bourbon-Two Sicilies",
-        "Princess Beatrice of the Two Sicilies" ;
-    :hasBrother data:Prince_Carlo-_Duke_of_Castro ;
-    :hasChild data:Jean-Christophe-_Prince_Napoléon ;
-    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasParent data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasSex data:female ;
-    :hasSon data:Jean-Christophe-_Prince_Napoléon ;
-    :isAuntOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
-    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isDaughterOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isMotherOf data:Jean-Christophe-_Prince_Napoléon ;
-    :isParentOf data:Jean-Christophe-_Prince_Napoléon ;
-    :isSiblingOf data:Prince_Carlo-_Duke_of_Castro ;
-    :isSisterOf data:Prince_Carlo-_Duke_of_Castro .
+data:Princess_Camilla-_Duchess_of_Castro a :Person ;
+    rdfs:label "Princess Camilla, Duchess of Castro" ;
+    data:posIndicesFull "465:481" ;
+    data:posIndicesPart "1856:1864",
+        "2009:2017",
+        "721:729" ;
+    data:wdtLink wdt:Q4994262 ;
+    :alsoKnownAs "Camilla Crociani",
+        "Camilla de Bourbon des Deux-Siciles",
+        "Camilla di Borbone delle Due Sicilie",
+        "Princess Camilla, The Duchess of Castro",
+        "Queen Camilla of the Two Sicilies",
+        "Queen Camilla, Queen Consort of the Two Sicilies",
+        "Queen Camilla, The Queen Consort of the Two Sicilies" ;
+    :hasSex data:female .
+
+data:Prince_Ferdinando-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro" ;
+    data:posIndicesFull "660:692" ;
+    data:posIndicesPart "1558:1564",
+        "1591:1597",
+        "850:856",
+        "967:973" ;
+    data:wdtLink wdt:Q2324276 ;
+    :alsoKnownAs "Ferdinando Maria",
+        "Ferdinando Maria Andrea Alfonso Marcus" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

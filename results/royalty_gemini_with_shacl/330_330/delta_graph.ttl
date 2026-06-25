@@ -2,32 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lennart_Bernadotte a :Man ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
-    :hasMarriageYear 1932,
-        1972 ;
-    :hasMother data:Maria_Pavlovna_of_Russia ;
-    :hasRelation data:Karin_Emma_Louise_Nissvandt,
-        data:Sonja_Anita_Maria_Haunz ;
-    :hasSex data:Male_Sex_Resource .
-
-data:Karin_Emma_Louise_Nissvandt a :Woman ;
-    :hasSex data:Female_Sex_Resource .
-
-data:Maria_Pavlovna_of_Russia a :Ancestor,
+data:Cecilia_Bowes-Lyon a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female_Sex_Resource .
+    :isMotherOf data:Fergus_Bowes-Lyon .
 
-data:Sonja_Anita_Maria_Haunz a :Woman ;
-    :hasSex data:Female_Sex_Resource .
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Fergus_Bowes-Lyon .
 
-data:Wilhelm_Duke_of_S%C3%B6dermanland a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex_Resource .
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :isSisterOf data:Fergus_Bowes-Lyon .
 
-data:Male_Sex_Resource a :Male .
+data:John_Bowes-Lyon a :Man,
+        :Person ;
+    :isBrotherOf data:Fergus_Bowes-Lyon .
 
-data:Female_Sex_Resource a :Female .
+data:Rosemary a :Person,
+        :Woman ;
+    :isDaughterOf data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon .
+
+data:William_Frederick_Martin a :Man,
+        :Person .
+
+data:Christian_Norah_Dawson-Damer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:William_Frederick_Martin .
+
+data:Fergus_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1915 ;
+    :hasMarriageYear 1914 ;
+    :hasRelation data:Christian_Norah_Dawson-Damer .
 

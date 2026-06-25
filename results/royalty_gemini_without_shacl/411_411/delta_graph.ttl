@@ -2,46 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1979 ;
-    :hasFather data:Otto_Eugen_Tiedemann ;
-    :hasMother data:Luise_Amalia_Klein .
+data:ChristianLouisOfMecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:FrederickFrancisIV ;
+    :hasMarriageYear 1954 ;
+    :hasMother data:PrincessAlexandraOfHanover ;
+    :hasRelation data:PrincessBarbaraOfPrussia ;
+    :isSiblingOf data:ThyraMecklenburg .
 
-data:Donna_Emanuela_de_Dampierre a :Woman .
+data:ErnestAugustusCrownPrinceOfHanover a :Man,
+        :Person .
 
-data:Infante_Jaime_of_Spain a :Man ;
-    :hasBirthYear 1908 ;
-    :hasBrother data:Alfonso_Prince_of_Asturias,
-        data:Infante_Gonzalo,
-        data:Infante_Juan_Count_of_Barcelona ;
-    :hasDeathYear 1975 ;
-    :hasFather data:King_Alfonso_XIII_of_Spain ;
-    :hasMother data:Princess_Victoria_Eugenie_of_Battenberg ;
-    :hasSister data:Infanta_Beatriz,
-        data:Infanta_Maria_Cristina ;
-    :hasSon data:Alfonso_de_Borbon_son_of_Jaime,
-        data:Gonzalo_son_of_Jaime .
+data:FrederickFrancisIV a :Man,
+        :Person .
 
-data:Alfonso_Prince_of_Asturias a :Man .
+data:PrinceSigismundOfPrussia a :Man,
+        :Person .
 
-data:Alfonso_de_Borbon_son_of_Jaime a :Man .
+data:PrincessAlexandraOfHanover a :Person,
+        :Woman ;
+    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
+    :hasMother data:PrincessThyraOfDenmark .
 
-data:Gonzalo_son_of_Jaime a :Man .
+data:PrincessBarbaraOfPrussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:PrinceSigismundOfPrussia ;
+    :hasMother data:PrincessCharlotteOfSaxeAltenburg .
 
-data:Infanta_Beatriz a :Woman .
+data:PrincessCharlotteOfSaxeAltenburg a :Person,
+        :Woman .
 
-data:Infanta_Maria_Cristina a :Woman .
+data:PrincessThyraOfDenmark a :Person,
+        :Woman .
 
-data:Infante_Gonzalo a :Man .
-
-data:Infante_Juan_Count_of_Barcelona a :Man .
-
-data:King_Alfonso_XIII_of_Spain a :Man .
-
-data:Luise_Amalia_Klein a :Woman .
-
-data:Otto_Eugen_Tiedemann a :Man .
-
-data:Princess_Victoria_Eugenie_of_Battenberg a :Woman .
+data:ThyraMecklenburg a :Person,
+        :Woman .
 

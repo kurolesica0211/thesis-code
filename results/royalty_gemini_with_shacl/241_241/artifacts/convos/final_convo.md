@@ -85,25 +85,40 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Marie Alexandra of Baden (Marie Alexandra Thyra Victoria Louise Carola Hilda; 1 August 1902 – 29 January 1944) was a Hessian princess by marriage.
-Family
+Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Lord of Tejada GE (born 17 July 1998), widely known as Froilán, is the elder child and only son of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
+He is the maternal-line grandson of King Juan Carlos I and Queen Sofía of Spain, and the nephew of King Felipe VI.
+He is the paternal-line grandson of Amalio de Marichalar y Bruguera, VIII Count of Ripalda and Concepción Sáenz de Tejada, Lady of Tejada.
+He is fourth in the line of succession to the Spanish throne, after his cousins (King Felipe's daughters) Leonor, Princess of Asturias, and Infanta Sofía of Spain and his mother, Elena.
+He has a sister two years younger, Victoria de Marichalar y Borbón.
+Early life
 
-She was the only daughter and elder child of Prince Maximilian of Baden (1867–1929) and Princess Marie Louise of Hanover and Cumberland.
-Her paternal grandparents were Prince Wilhelm of Baden (1829–97) and Princess Maria Maximilianovna of Leuchtenberg (1841–1914), a daughter of Maximilian, Duke of Leuchtenberg (1817–52) and Grand Duchess Maria Nikolaevna (1819–1876).
-Princess Marie-Louise of Hanover (1879–1948) was a daughter of Ernest Augustus, Crown Prince of Hanover, claimant of the annexed Kingdom of Hanover.
-Marriage
+Birth and christening
 
-On 17 September 1924, she married her fourth cousin Prince Wolfgang of Hesse (1896–1989).
-Death
+Felipe de Marichalar y Borbón was born on 17 July 1998 at Ruber International Hospital in Madrid.
+He was baptized on Sunday 4 October 1998 day of the feast of San Francisco de Asis and on the eve of San Froilán, patron of Lugo, the mass was celebrated in the audience hall of the Zarzuela Palace.
+His godparents were his maternal grandfather, Juan Carlos of Spain, and his paternal grandmother, Concepción Sáez de Tejada y Fernández de Boadilla, Dowager Countess of Ripalda (1929–2014).
+Froilán took a course at Cottesmore, a boarding prep school in West Sussex, to return the following year, in 2011, to Colegio Santa María del Pilar in Madrid, where he remained for three years.
+On 9 April 2012, Felipe de Marichalar accidentally shot himself in his right foot while he was on a farm of his father's family in Garray (Soria).
+The judge dismissed the case against Jaime de Marichalar, considering it not gross negligence but a small misdemeanor.
+The tuition, which for each course amounted to $45,000, was paid for by his maternal grandfather King Juan Carlos I.
 
-Princess Marie Alexandra was killed in an attack by the U.S. Army Air Forces during an air-raid on Frankfurt am Main on 29–30 January 1944 during World War II.
-She and seven other women, who were aid workers, were killed when the cellar, in which they had taken refuge, collapsed under the weight of the building, rendering Marie Alexandra's body barely recognisable.
+
+He then began his higher education studies, majoring in Business Administration and Management at the College for International Studies in Madrid, a Spanish Higher Education institution associated with Endicott College.
+In January 2023 it was announced that Felipe would be going to live in the United Arab Emirates with his grandfather, Juan Carlos I. Froilán will work for the ADNOC oil company, owned by the Minister of Advanced Technology of the United Arab Emirates, Sultan Ahmed Al-Jaber.
+Titles, styles, honours and arms
+
+He is styled as The Most Excellent Don Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Grandee of Spain and Caballero Divisoro Hijodalgo of the Illustrious Solar de Tejada
+
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +134,9 @@ She and seven other women, who were aid workers, were killed when the cellar, in
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +151,23 @@ She and seven other women, who were aid workers, were killed when the cellar, in
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,249 +459,157 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4fe8507e-9103-4a40-95e7-5226b79ce779)
- Call ID: 4fe8507e-9103-4a40-95e7-5226b79ce779
+  AssignClass (63d4602c-451c-4523-ad73-2115917738dc)
+ Call ID: 63d4602c-451c-4523-ad73-2115917738dc
   Args:
-    source: Marie_Alexandra_of_Baden
-    type: :Woman
-  AddLiteral (f999ab9c-76cd-4409-832f-645e8cc19647)
- Call ID: f999ab9c-76cd-4409-832f-645e8cc19647
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    type: :Person
+  AssignClass (64359579-b445-46c5-be64-945ae8fbb9c9)
+ Call ID: 64359579-b445-46c5-be64-945ae8fbb9c9
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Marie_Alexandra_of_Baden
-    literal_value: 1902
-  AddLiteral (d2daf9f2-54f5-44a2-98a0-7393c4fa0be4)
- Call ID: d2daf9f2-54f5-44a2-98a0-7393c4fa0be4
-  Args:
-    source: Marie_Alexandra_of_Baden
-    literal_value: 1944
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (aa6e3f43-1915-4d23-94e6-2639b98642f1)
- Call ID: aa6e3f43-1915-4d23-94e6-2639b98642f1
-  Args:
-    source: Maximilian_of_Baden
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
     type: :Man
-  AddLiteral (aaa34caa-e79d-4a2e-a4c1-16ca09256e27)
- Call ID: aaa34caa-e79d-4a2e-a4c1-16ca09256e27
+  AddLiteral (edceef27-c98e-4aae-97ae-6e85b16a39b5)
+ Call ID: edceef27-c98e-4aae-97ae-6e85b16a39b5
   Args:
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Maximilian_of_Baden
-    literal_value: 1867
-  AddLiteral (a99eed24-d41b-4dbd-a01f-391854257cc9)
- Call ID: a99eed24-d41b-4dbd-a01f-391854257cc9
+    literal_value: 1998
+  AddLiteral (2c3537cd-b74d-4d09-a521-132cd3aa561c)
+ Call ID: 2c3537cd-b74d-4d09-a521-132cd3aa561c
   Args:
-    relation: :hasDeathYear
-    literal_value: 1929
-    source: Maximilian_of_Baden
-    literal_type: xsd:integer
-  AssignClass (dde4f563-c0df-466e-8022-15e8ad5cf55b)
- Call ID: dde4f563-c0df-466e-8022-15e8ad5cf55b
+    literal_type: xsd:string
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    relation: :knownAs
+    literal_value: Froilán
+  AssignClass (a97be013-4743-4cb1-936f-ee90747e0413)
+ Call ID: a97be013-4743-4cb1-936f-ee90747e0413
+  Args:
+    type: :Person
+    source: Infanta_Elena_Duchess_of_Lugo
+  AssignClass (3f1360f4-f562-429f-bc30-e49513379bb7)
+ Call ID: 3f1360f4-f562-429f-bc30-e49513379bb7
   Args:
     type: :Woman
-    source: Marie_Louise_of_Hanover_and_Cumberland
-  AddLiteral (eebf2dbd-b447-4a64-a19e-574963c256dd)
- Call ID: eebf2dbd-b447-4a64-a19e-574963c256dd
+    source: Infanta_Elena_Duchess_of_Lugo
+  AssignClass (a46c8cbb-4d7b-4923-8b63-84060af70013)
+ Call ID: a46c8cbb-4d7b-4923-8b63-84060af70013
   Args:
-    literal_type: xsd:integer
-    literal_value: 1879
-    source: Marie_Louise_of_Hanover_and_Cumberland
-    relation: :hasBirthYear
-  AddLiteral (cabad229-d41e-4e69-b87d-8f7806b7976e)
- Call ID: cabad229-d41e-4e69-b87d-8f7806b7976e
+    type: :Person
+    source: Jaime_de_Marichalar
+  AssignClass (1e24e7c2-5ea8-44af-8346-3188fdd88834)
+ Call ID: 1e24e7c2-5ea8-44af-8346-3188fdd88834
   Args:
-    relation: :hasDeathYear
-    source: Marie_Louise_of_Hanover_and_Cumberland
-    literal_value: 1948
-    literal_type: xsd:integer
-  AddTriple (4e1f3c45-06c8-4874-88c5-a22c45825ee3)
- Call ID: 4e1f3c45-06c8-4874-88c5-a22c45825ee3
+    source: Jaime_de_Marichalar
+    type: :Man
+  AddTriple (f3d48268-9099-47ed-9abe-ac3e7bd4c892)
+ Call ID: f3d48268-9099-47ed-9abe-ac3e7bd4c892
   Args:
-    relation: :hasFather
-    source: Marie_Alexandra_of_Baden
-    target: Maximilian_of_Baden
-  AddTriple (7879ec53-75e9-4f24-8f95-0be3baa2463e)
- Call ID: 7879ec53-75e9-4f24-8f95-0be3baa2463e
-  Args:
-    source: Marie_Alexandra_of_Baden
-    target: Marie_Louise_of_Hanover_and_Cumberland
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
     relation: :hasMother
-  AssignClass (5473d1db-957f-402c-8d43-09b42833568a)
- Call ID: 5473d1db-957f-402c-8d43-09b42833568a
-  Args:
-    type: :Man
-    source: Wilhelm_of_Baden
-  AddLiteral (481d247a-f306-40a0-a5bd-d2f4e62c9e2a)
- Call ID: 481d247a-f306-40a0-a5bd-d2f4e62c9e2a
-  Args:
-    source: Wilhelm_of_Baden
-    literal_value: 1829
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (c9f4cfb8-7a5f-445d-a513-7fa285a0bec6)
- Call ID: c9f4cfb8-7a5f-445d-a513-7fa285a0bec6
-  Args:
-    literal_value: 1897
-    source: Wilhelm_of_Baden
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (87cc8d67-1c49-4f48-97fa-1a1b4f7510ee)
- Call ID: 87cc8d67-1c49-4f48-97fa-1a1b4f7510ee
-  Args:
-    type: :Woman
-    source: Maria_Maximilianovna_of_Leuchtenberg
-  AddLiteral (a3293b9c-baaa-4ebf-a4bd-85a51a4c2cbd)
- Call ID: a3293b9c-baaa-4ebf-a4bd-85a51a4c2cbd
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Maria_Maximilianovna_of_Leuchtenberg
-    literal_value: 1841
-  AddLiteral (96346879-1fe6-4c1f-81c7-0cd2b624f19a)
- Call ID: 96346879-1fe6-4c1f-81c7-0cd2b624f19a
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1914
-    source: Maria_Maximilianovna_of_Leuchtenberg
-    literal_type: xsd:integer
-  AddTriple (4a056943-c14f-4e0a-9d1c-2558a35820ff)
- Call ID: 4a056943-c14f-4e0a-9d1c-2558a35820ff
+    target: Infanta_Elena_Duchess_of_Lugo
+  AddTriple (eb83f498-7716-4a5e-ac83-359262623716)
+ Call ID: eb83f498-7716-4a5e-ac83-359262623716
   Args:
     relation: :hasFather
-    target: Wilhelm_of_Baden
-    source: Maximilian_of_Baden
-  AddTriple (85e32bd8-4f9a-471f-8547-3792d34feede)
- Call ID: 85e32bd8-4f9a-471f-8547-3792d34feede
+    target: Jaime_de_Marichalar
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+  AssignClass (ea95b8ce-dc54-4247-9b2b-3d6a853ed5bc)
+ Call ID: ea95b8ce-dc54-4247-9b2b-3d6a853ed5bc
   Args:
-    source: Maximilian_of_Baden
-    target: Maria_Maximilianovna_of_Leuchtenberg
-    relation: :hasMother
-  AssignClass (e345ab64-8e2e-42dc-896e-e672a5fc984b)
- Call ID: e345ab64-8e2e-42dc-896e-e672a5fc984b
+    source: King_Juan_Carlos_I
+    type: :Person
+  AssignClass (fb450816-a27b-40d9-9694-189b53742cc0)
+ Call ID: fb450816-a27b-40d9-9694-189b53742cc0
   Args:
-    source: Maximilian_Duke_of_Leuchtenberg
+    source: King_Juan_Carlos_I
     type: :Man
-  AddLiteral (adec4de0-8567-4ff8-b672-327c5c626824)
- Call ID: adec4de0-8567-4ff8-b672-327c5c626824
+  AssignClass (203e14e3-631e-4477-922d-1d3f3c10e49d)
+ Call ID: 203e14e3-631e-4477-922d-1d3f3c10e49d
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1817
-    source: Maximilian_Duke_of_Leuchtenberg
-  AddLiteral (829fb5c1-c728-43bf-ae13-1397d46ccc0b)
- Call ID: 829fb5c1-c728-43bf-ae13-1397d46ccc0b
+    type: :Person
+    source: Queen_Sofia_of_Spain
+  AssignClass (c54cdef6-3b5a-448c-9fd5-e3b77a9fae70)
+ Call ID: c54cdef6-3b5a-448c-9fd5-e3b77a9fae70
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1852
-    source: Maximilian_Duke_of_Leuchtenberg
-  AssignClass (e6c056de-8f8e-4d57-8aca-e468ca70fc93)
- Call ID: e6c056de-8f8e-4d57-8aca-e468ca70fc93
-  Args:
-    source: Maria_Nikolaevna
     type: :Woman
-  AddLiteral (15171083-a231-4b13-91d3-bd00ab38de89)
- Call ID: 15171083-a231-4b13-91d3-bd00ab38de89
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1819
-    source: Maria_Nikolaevna
-  AddLiteral (087cef9b-5f95-46da-9d68-24b69663d97e)
- Call ID: 087cef9b-5f95-46da-9d68-24b69663d97e
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Maria_Nikolaevna
-    literal_value: 1876
-  AddTriple (96191dfe-a97d-40a7-8373-6cdb47d505b8)
- Call ID: 96191dfe-a97d-40a7-8373-6cdb47d505b8
+    source: Queen_Sofia_of_Spain
+  AddTriple (c31a26e9-05ac-4169-b9f8-1b00013f94ec)
+ Call ID: c31a26e9-05ac-4169-b9f8-1b00013f94ec
   Args:
     relation: :hasFather
-    target: Maximilian_Duke_of_Leuchtenberg
-    source: Maria_Maximilianovna_of_Leuchtenberg
-  AddTriple (686a0e26-3f99-464f-acd6-6f0a908c6688)
- Call ID: 686a0e26-3f99-464f-acd6-6f0a908c6688
+    target: King_Juan_Carlos_I
+    source: Infanta_Elena_Duchess_of_Lugo
+  AddTriple (34323af3-15c2-4554-b3ee-97cc6df7b3c0)
+ Call ID: 34323af3-15c2-4554-b3ee-97cc6df7b3c0
   Args:
     relation: :hasMother
-    source: Maria_Maximilianovna_of_Leuchtenberg
-    target: Maria_Nikolaevna
-  AssignClass (8327cd95-419e-4bc9-b96b-a1f33dae8ac0)
- Call ID: 8327cd95-419e-4bc9-b96b-a1f33dae8ac0
+    target: Queen_Sofia_of_Spain
+    source: Infanta_Elena_Duchess_of_Lugo
+  AssignClass (0ffba2d9-0388-4257-a413-2bdcbdbc2645)
+ Call ID: 0ffba2d9-0388-4257-a413-2bdcbdbc2645
+  Args:
+    source: Amalio_de_Marichalar_y_Bruguera
+    type: :Person
+  AssignClass (9afa8053-0906-4ae4-96f4-69d056af721b)
+ Call ID: 9afa8053-0906-4ae4-96f4-69d056af721b
   Args:
     type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (9a721421-30bf-461b-b7e0-9c89e78b885e)
- Call ID: 9a721421-30bf-461b-b7e0-9c89e78b885e
+    source: Amalio_de_Marichalar_y_Bruguera
+  AssignClass (ed1c6131-8919-47d9-affb-4f72378e4c1e)
+ Call ID: ed1c6131-8919-47d9-affb-4f72378e4c1e
+  Args:
+    type: :Person
+    source: Concepcion_Saenz_de_Tejada
+  AssignClass (61615891-e9d8-47e4-ae5f-fd82aea8c3ac)
+ Call ID: 61615891-e9d8-47e4-ae5f-fd82aea8c3ac
+  Args:
+    type: :Woman
+    source: Concepcion_Saenz_de_Tejada
+  AddTriple (68dcfdad-c86e-471d-b4ee-e3e74ac45888)
+ Call ID: 68dcfdad-c86e-471d-b4ee-e3e74ac45888
+  Args:
+    source: Jaime_de_Marichalar
+    target: Amalio_de_Marichalar_y_Bruguera
+    relation: :hasFather
+  AddTriple (cec144ce-e308-40a1-bd72-fc404aa94dd3)
+ Call ID: cec144ce-e308-40a1-bd72-fc404aa94dd3
+  Args:
+    target: Concepcion_Saenz_de_Tejada
+    relation: :hasMother
+    source: Jaime_de_Marichalar
+  AssignClass (0b1b1b97-13af-49a3-9c99-2d9e0ffbb37a)
+ Call ID: 0b1b1b97-13af-49a3-9c99-2d9e0ffbb37a
+  Args:
+    type: :Person
+    source: Victoria_de_Marichalar_y_Borbon
+  AssignClass (ba3f5afc-86ad-42b7-b4ee-c5c3455deb14)
+ Call ID: ba3f5afc-86ad-42b7-b4ee-c5c3455deb14
+  Args:
+    type: :Woman
+    source: Victoria_de_Marichalar_y_Borbon
+  AddTriple (fbdd2c47-8598-4242-9873-320d8316e1a2)
+ Call ID: fbdd2c47-8598-4242-9873-320d8316e1a2
+  Args:
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    relation: :hasSister
+    target: Victoria_de_Marichalar_y_Borbon
+  AddTriple (e29cef91-e83a-4a2b-a5d7-3f35fc00186b)
+ Call ID: e29cef91-e83a-4a2b-a5d7-3f35fc00186b
+  Args:
+    relation: :hasMother
+    target: Infanta_Elena_Duchess_of_Lugo
+    source: Victoria_de_Marichalar_y_Borbon
+  AddTriple (9b10a1e2-165b-4738-8a09-db906cfb6f1e)
+ Call ID: 9b10a1e2-165b-4738-8a09-db906cfb6f1e
   Args:
     relation: :hasFather
-    source: Marie_Louise_of_Hanover_and_Cumberland
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (7fb04dae-7189-41fe-9c70-affbff39a3d9)
- Call ID: 7fb04dae-7189-41fe-9c70-affbff39a3d9
+    target: Jaime_de_Marichalar
+    source: Victoria_de_Marichalar_y_Borbon
+  Finish (61db73eb-ba63-4269-9feb-c4d4d5999b3d)
+ Call ID: 61db73eb-ba63-4269-9feb-c4d4d5999b3d
   Args:
-    type: :Man
-    source: Wolfgang_of_Hesse
-  AddLiteral (a25047f1-5d10-4d13-9492-2dc51df72bf6)
- Call ID: a25047f1-5d10-4d13-9492-2dc51df72bf6
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Wolfgang_of_Hesse
-    literal_value: 1896
-  AddLiteral (612f0eb7-af5c-43c8-97a3-05b398f72d87)
- Call ID: 612f0eb7-af5c-43c8-97a3-05b398f72d87
-  Args:
-    literal_type: xsd:integer
-    source: Wolfgang_of_Hesse
-    literal_value: 1989
-    relation: :hasDeathYear
-  AddLiteral (16f974f0-fca4-4bfa-bc57-3c4bf6936640)
- Call ID: 16f974f0-fca4-4bfa-bc57-3c4bf6936640
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1924
-    source: Marie_Alexandra_of_Baden
-    literal_type: xsd:integer
-  AddTriple (7af2581c-24a6-41c7-a98a-96a66fd59961)
- Call ID: 7af2581c-24a6-41c7-a98a-96a66fd59961
-  Args:
-    source: Marie_Alexandra_of_Baden
-    target: Wolfgang_of_Hesse
-    relation: :hasRelation
-  Finish (0168e9a1-f2e9-4b65-974b-86a6a8f33a1f)
- Call ID: 0168e9a1-f2e9-4b65-974b-86a6a8f33a1f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -709,48 +722,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marie_Alexandra_of_Baden a :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1944 ;
-      :hasFather data:Maximilian_of_Baden ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Marie_Louise_of_Hanover_and_Cumberland ;
-      :hasRelation data:Wolfgang_of_Hesse .
+  data:Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon a :Man,
+          :Person ;
+      :hasBirthYear 1998 ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena_Duchess_of_Lugo ;
+      :hasSister data:Victoria_de_Marichalar_y_Borbon ;
+      :knownAs "Froilán"^^xsd:string .
 
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man .
+  data:Amalio_de_Marichalar_y_Bruguera a :Man,
+          :Person .
 
-  data:Maria_Maximilianovna_of_Leuchtenberg a :Woman ;
-      :hasBirthYear 1841 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
-      :hasMother data:Maria_Nikolaevna .
+  data:Concepcion_Saenz_de_Tejada a :Person,
+          :Woman .
 
-  data:Maria_Nikolaevna a :Woman ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1876 .
+  data:King_Juan_Carlos_I a :Man,
+          :Person .
 
-  data:Marie_Louise_of_Hanover_and_Cumberland a :Woman ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
+  data:Queen_Sofia_of_Spain a :Person,
+          :Woman .
 
-  data:Maximilian_Duke_of_Leuchtenberg a :Man ;
-      :hasBirthYear 1817 ;
-      :hasDeathYear 1852 .
+  data:Victoria_de_Marichalar_y_Borbon a :Person,
+          :Woman ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena_Duchess_of_Lugo .
 
-  data:Maximilian_of_Baden a :Man ;
-      :hasBirthYear 1867 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:Wilhelm_of_Baden ;
-      :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .
+  data:Infanta_Elena_Duchess_of_Lugo a :Person,
+          :Woman ;
+      :hasFather data:King_Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia_of_Spain .
 
-  data:Wilhelm_of_Baden a :Man ;
-      :hasBirthYear 1829 ;
-      :hasDeathYear 1897 .
-
-  data:Wolfgang_of_Hesse a :Man ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1989 .
+  data:Jaime_de_Marichalar a :Man,
+          :Person ;
+      :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
+      :hasMother data:Concepcion_Saenz_de_Tejada .
 
 
 
@@ -762,182 +767,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e8aa70dc-f91c-47a9-92b1-85e1c70d08f4)
- Call ID: e8aa70dc-f91c-47a9-92b1-85e1c70d08f4
+  ValidateShacl (d762f1c8-4714-4e73-a07b-4defd02f84ec)
+ Call ID: d762f1c8-4714-4e73-a07b-4defd02f84ec
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_of_Baden is missing the required class :Ancestor.
+      The value node Amalio_de_Marichalar_y_Bruguera is missing the required :Ancestor class for the :hasFather relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_of_Baden', class=':Ancestor')
+      AssignClass(Amalio_de_Marichalar_y_Bruguera, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Maximilianovna_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Maximilianovna_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Wilhelm_of_Baden is missing the required class :Ancestor.
+      The value node Concepcion_Saenz_de_Tejada is missing the required :Ancestor class for the :hasMother relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_of_Baden', class=':Ancestor')
+      AssignClass(Concepcion_Saenz_de_Tejada, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Augustus_Crown_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is missing the required class :Ancestor.
+      The value node Amalio_de_Marichalar_y_Bruguera is missing the required :Ancestor class for the :hasFather relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_of_Baden', class=':Ancestor')
+      AssignClass(Amalio_de_Marichalar_y_Bruguera, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_Duke_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_Duke_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Maximilianovna_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node King_Juan_Carlos_I is missing the required :Ancestor class for the :hasFather relationship with Infanta_Elena_Duchess_of_Lugo.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Maximilianovna_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(King_Juan_Carlos_I, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover_and_Cumberland is missing the required class :Ancestor.
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Victoria_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Louise_of_Hanover_and_Cumberland', class=':Ancestor')
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_Nikolaevna is missing the required class :Ancestor.
+      The value node Concepcion_Saenz_de_Tejada is missing the required :Ancestor class for the :hasMother relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Nikolaevna', class=':Ancestor')
+      AssignClass(Concepcion_Saenz_de_Tejada, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Wilhelm_of_Baden is missing the required class :Ancestor.
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_of_Baden', class=':Ancestor')
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
+      The value node Queen_Sofia_of_Spain is missing the required :Ancestor class for the :hasMother relationship with Infanta_Elena_Duchess_of_Lugo.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Augustus_Crown_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(Queen_Sofia_of_Spain, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is missing the required class :Ancestor.
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Victoria_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_of_Baden', class=':Ancestor')
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_Duke_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node Amalio_de_Marichalar_y_Bruguera is missing the required :Ancestor class for the :hasFather relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_Duke_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(Amalio_de_Marichalar_y_Bruguera, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Maximilianovna_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Maximilianovna_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover_and_Cumberland is missing the required class :Ancestor.
+      The value node King_Juan_Carlos_I is missing the required :Ancestor class for the :hasFather relationship with Infanta_Elena_Duchess_of_Lugo.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Louise_of_Hanover_and_Cumberland', class=':Ancestor')
+      AssignClass(King_Juan_Carlos_I, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Nikolaevna is missing the required class :Ancestor.
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Victoria_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Nikolaevna', class=':Ancestor')
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maximilian_Duke_of_Leuchtenberg is missing the required class :Ancestor.
+      The value node Concepcion_Saenz_de_Tejada is missing the required :Ancestor class for the :hasMother relationship with Jaime_de_Marichalar.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_Duke_of_Leuchtenberg', class=':Ancestor')
+      AssignClass(Concepcion_Saenz_de_Tejada, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Augustus_Crown_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is missing the required class :Ancestor.
+      The value node Queen_Sofia_of_Spain is missing the required :Ancestor class for the :hasMother relationship with Infanta_Elena_Duchess_of_Lugo.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maximilian_of_Baden', class=':Ancestor')
+      AssignClass(Queen_Sofia_of_Spain, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_Nikolaevna is missing the required class :Ancestor.
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Victoria_de_Marichalar_y_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Nikolaevna', class=':Ancestor')
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
   Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node King_Juan_Carlos_I is missing the required :Ancestor class for the :hasFather relationship with Infanta_Elena_Duchess_of_Lugo.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Juan_Carlos_I, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Jaime_de_Marichalar is missing the required :Ancestor class for the :hasFather relationship with Victoria_de_Marichalar_y_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jaime_de_Marichalar, :Ancestor)
+
+
+  Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover_and_Cumberland is missing the required class :Ancestor.
+      The value node Queen_Sofia_of_Spain is missing the required :Ancestor class for the :hasMother relationship with Infanta_Elena_Duchess_of_Lugo.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Louise_of_Hanover_and_Cumberland', class=':Ancestor')
+      AssignClass(Queen_Sofia_of_Spain, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Infanta_Elena_Duchess_of_Lugo is missing the required :Ancestor class for the :hasMother relationship with Victoria_de_Marichalar_y_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Infanta_Elena_Duchess_of_Lugo, :Ancestor)
 
 
 
@@ -946,234 +975,36 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7638ad6b-eb89-4e41-b04b-5ba106cb37ec)
- Call ID: 7638ad6b-eb89-4e41-b04b-5ba106cb37ec
+  AssignClass (41b688bf-21b1-468f-96a7-a62d37574cc4)
+ Call ID: 41b688bf-21b1-468f-96a7-a62d37574cc4
   Args:
+    source: Amalio_de_Marichalar_y_Bruguera
     type: :Ancestor
-    source: Wilhelm_of_Baden
-  AssignClass (41bc1fbc-17f6-461f-821a-81be24c8ff29)
- Call ID: 41bc1fbc-17f6-461f-821a-81be24c8ff29
+  AssignClass (2cf80162-7850-4e32-a651-9c69d1e8d5a9)
+ Call ID: 2cf80162-7850-4e32-a651-9c69d1e8d5a9
   Args:
-    source: Maria_Maximilianovna_of_Leuchtenberg
+    source: Jaime_de_Marichalar
     type: :Ancestor
-  AssignClass (d5cbf2e2-a4b7-4f81-97e0-8f568472c3f2)
- Call ID: d5cbf2e2-a4b7-4f81-97e0-8f568472c3f2
+  AssignClass (233aa401-459a-48cc-a283-537b4a15eea9)
+ Call ID: 233aa401-459a-48cc-a283-537b4a15eea9
   Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    source: Concepcion_Saenz_de_Tejada
     type: :Ancestor
-  AssignClass (0c1691bc-c332-49f0-9527-c33190455c56)
- Call ID: 0c1691bc-c332-49f0-9527-c33190455c56
+  AssignClass (d544aa46-c740-4605-89f3-ff1194c8c96c)
+ Call ID: d544aa46-c740-4605-89f3-ff1194c8c96c
   Args:
-    source: Maximilian_of_Baden
+    source: Infanta_Elena_Duchess_of_Lugo
     type: :Ancestor
-  AssignClass (52e970b9-2f1e-4828-b69d-e63a8c1e664e)
- Call ID: 52e970b9-2f1e-4828-b69d-e63a8c1e664e
+  AssignClass (f46072cd-6a9d-40bf-b8c2-13eed64230d0)
+ Call ID: f46072cd-6a9d-40bf-b8c2-13eed64230d0
   Args:
-    source: Maximilian_Duke_of_Leuchtenberg
+    source: King_Juan_Carlos_I
     type: :Ancestor
-  AssignClass (b9e934ce-e266-40a4-b3c3-c120762612ac)
- Call ID: b9e934ce-e266-40a4-b3c3-c120762612ac
+  AssignClass (26286a85-a8e9-4fb3-a49a-bc0b7e5238e0)
+ Call ID: 26286a85-a8e9-4fb3-a49a-bc0b7e5238e0
   Args:
+    source: Queen_Sofia_of_Spain
     type: :Ancestor
-    source: Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (59518e2c-cc70-4511-ba6c-3cdf7f838f0f)
- Call ID: 59518e2c-cc70-4511-ba6c-3cdf7f838f0f
-  Args:
-    source: Maria_Nikolaevna
-    type: :Ancestor
-  AssignClass (7e0e8316-177d-4d4a-b846-3b0eda46191d)
- Call ID: 7e0e8316-177d-4d4a-b846-3b0eda46191d
-  Args:
-    source: Marie_Alexandra_of_Baden
-    type: :Person
-  AssignClass (76242dc8-a7cb-40c9-a468-24a9f6e80c6b)
- Call ID: 76242dc8-a7cb-40c9-a468-24a9f6e80c6b
-  Args:
-    type: :Person
-    source: Maximilian_of_Baden
-  AssignClass (e2068f00-0fea-49cb-b07c-0c610bf78d37)
- Call ID: e2068f00-0fea-49cb-b07c-0c610bf78d37
-  Args:
-    type: :Person
-    source: Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (cfbb0a52-868f-4c97-932d-7ce0bf250eaf)
- Call ID: cfbb0a52-868f-4c97-932d-7ce0bf250eaf
-  Args:
-    source: Wilhelm_of_Baden
-    type: :Person
-  AssignClass (bb2df25e-894b-4bf4-9988-4ab3bbb0d81e)
- Call ID: bb2df25e-894b-4bf4-9988-4ab3bbb0d81e
-  Args:
-    type: :Person
-    source: Maria_Maximilianovna_of_Leuchtenberg
-  AssignClass (14e356d8-2eb8-4d63-a6f8-92190941c131)
- Call ID: 14e356d8-2eb8-4d63-a6f8-92190941c131
-  Args:
-    type: :Person
-    source: Maximilian_Duke_of_Leuchtenberg
-  AssignClass (cd3d1253-de41-4ae7-8de6-25b0e0a1f01d)
- Call ID: cd3d1253-de41-4ae7-8de6-25b0e0a1f01d
-  Args:
-    source: Maria_Nikolaevna
-    type: :Person
-  AssignClass (b56812d5-2410-40c8-970d-08e025915b18)
- Call ID: b56812d5-2410-40c8-970d-08e025915b18
-  Args:
-    type: :Person
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (f6f5bf2f-d6fb-49d2-a3e2-758dd4a7ace5)
- Call ID: f6f5bf2f-d6fb-49d2-a3e2-758dd4a7ace5
-  Args:
-    type: :Person
-    source: Wolfgang_of_Hesse
-  AddTriple (03d22ba9-38f8-4fdb-9a75-3f687b1e20a8)
- Call ID: 03d22ba9-38f8-4fdb-9a75-3f687b1e20a8
-  Args:
-    source: Marie_Alexandra_of_Baden
-    relation: :hasSex
-    target: :Female
-  AddTriple (bf0b0cd6-bc50-4f46-b818-19f3f2a38cf2)
- Call ID: bf0b0cd6-bc50-4f46-b818-19f3f2a38cf2
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Maximilian_of_Baden
-  AddTriple (208e3ea6-1a88-4c3c-a182-3daa373b9f58)
- Call ID: 208e3ea6-1a88-4c3c-a182-3daa373b9f58
-  Args:
-    relation: :hasSex
-    source: Marie_Louise_of_Hanover_and_Cumberland
-    target: :Female
-  AddTriple (75dbcdd4-a9c4-49f0-a117-517d88276877)
- Call ID: 75dbcdd4-a9c4-49f0-a117-517d88276877
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Wilhelm_of_Baden
-  AddTriple (3b8d188a-a879-4947-bab6-edd70dd52f30)
- Call ID: 3b8d188a-a879-4947-bab6-edd70dd52f30
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Maria_Maximilianovna_of_Leuchtenberg
-  AddTriple (84b7fbc1-ca25-4cac-8695-a8a351bae807)
- Call ID: 84b7fbc1-ca25-4cac-8695-a8a351bae807
-  Args:
-    target: :Male
-    source: Maximilian_Duke_of_Leuchtenberg
-    relation: :hasSex
-  AddTriple (c15faf5f-2dd7-465a-a697-de6dd7a0d465)
- Call ID: c15faf5f-2dd7-465a-a697-de6dd7a0d465
-  Args:
-    source: Maria_Nikolaevna
-    relation: :hasSex
-    target: :Female
-  AddTriple (b127aec9-6dad-4eb2-a788-0ee484ca6db5)
- Call ID: b127aec9-6dad-4eb2-a788-0ee484ca6db5
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasSex
-    target: :Male
-  AddTriple (dc6f1f5c-e4ab-44a8-a87f-e163df03dc56)
- Call ID: dc6f1f5c-e4ab-44a8-a87f-e163df03dc56
-  Args:
-    source: Wolfgang_of_Hesse
-    relation: :hasSex
-    target: :Male
-  AssignClass (7a436093-1318-4663-bc12-6741f8435b9f)
- Call ID: 7a436093-1318-4663-bc12-6741f8435b9f
-  Args:
-    type: :Sex
-    source: :Female
-  AssignClass (45bde82a-5b9f-4685-8934-7f60a806c903)
- Call ID: 45bde82a-5b9f-4685-8934-7f60a806c903
-  Args:
-    source: :Male
-    type: :Sex
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1202,77 +1033,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marie_Alexandra_of_Baden a :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1944 ;
-      :hasFather data:Maximilian_of_Baden ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Marie_Louise_of_Hanover_and_Cumberland ;
-      :hasRelation data:Wolfgang_of_Hesse ;
-      :hasSex data:Female .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-          :Man,
+  data:Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasBirthYear 1998 ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena_Duchess_of_Lugo ;
+      :hasSister data:Victoria_de_Marichalar_y_Borbon ;
+      :knownAs "Froilán"^^xsd:string .
 
-  data:Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+  data:Amalio_de_Marichalar_y_Bruguera a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Concepcion_Saenz_de_Tejada a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:King_Juan_Carlos_I a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Queen_Sofia_of_Spain a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Victoria_de_Marichalar_y_Borbon a :Person,
+          :Woman ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena_Duchess_of_Lugo .
+
+  data:Infanta_Elena_Duchess_of_Lugo a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1841 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
-      :hasMother data:Maria_Nikolaevna ;
-      :hasSex data:Female .
+      :hasFather data:King_Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia_of_Spain .
 
-  data:Maria_Nikolaevna a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1876 ;
-      :hasSex data:Female .
-
-  data:Marie_Louise_of_Hanover_and_Cumberland a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasSex data:Female .
-
-  data:Maximilian_Duke_of_Leuchtenberg a :Ancestor,
+  data:Jaime_de_Marichalar a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1817 ;
-      :hasDeathYear 1852 ;
-      :hasSex data:Male .
-
-  data:Maximilian_of_Baden a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1867 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:Wilhelm_of_Baden ;
-      :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
-      :hasSex data:Male .
-
-  data:Wilhelm_of_Baden a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1829 ;
-      :hasDeathYear 1897 ;
-      :hasSex data:Male .
-
-  data:Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1989 ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+      :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
+      :hasMother data:Concepcion_Saenz_de_Tejada .
 
 
 
@@ -1280,8 +1080,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (36cc799f-2627-40d5-b70b-f45b200f8efc)
- Call ID: 36cc799f-2627-40d5-b70b-f45b200f8efc
+  ValidateShacl (21347cf2-f5e9-44a1-91dd-ef9355f97920)
+ Call ID: 21347cf2-f5e9-44a1-91dd-ef9355f97920
   Args:
 
 ================================= Tool Message =================================
@@ -1292,6 +1092,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3caab8d0-10ab-4c21-aff2-d3499dd0d18b)
- Call ID: 3caab8d0-10ab-4c21-aff2-d3499dd0d18b
+  Finish (60bfee53-f37d-4b09-851b-4d7408d1be36)
+ Call ID: 60bfee53-f37d-4b09-851b-4d7408d1be36
   Args:

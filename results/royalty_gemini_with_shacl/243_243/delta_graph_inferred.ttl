@@ -1,0 +1,199 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isBrotherOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isSiblingOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Crown_Prince_Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Alexander ;
+    :hasChild data:Filip_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSon data:Filip_Karadjordjevic ;
+    :isAncestorOf data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Crown_Prince_Alexander ;
+    :isBrotherOf data:Crown_Prince_Alexander ;
+    :isFatherOf data:Filip_Karadjordjevic ;
+    :isParentOf data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Crown_Prince_Alexander ;
+    :isUncleOf data:Filip_Karadjordjevic .
+
+data:Princess_Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Filip_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Princess_Maria_da_Gloria ;
+    :hasSon data:Filip_Karadjordjevic ;
+    :isAncestorOf data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Filip_Karadjordjevic ;
+    :isBloodrelationOf data:Princess_Maria_da_Gloria ;
+    :isMotherOf data:Filip_Karadjordjevic ;
+    :isParentOf data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Princess_Maria_da_Gloria ;
+    :isSisterOf data:Princess_Maria_da_Gloria .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Danica_Marinkovic ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Danica_Marinkovic ;
+    :isMotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Danica_Marinkovic ;
+    :isSisterOf data:Danica_Marinkovic .
+
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasAncestor data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Princess_Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isDaughterOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSisterOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Princess_Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBrotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSonOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic .
+
+data:Filip_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Alexander,
+        data:Princess_Maria_da_Gloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasFather data:Crown_Prince_Alexander ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :hasParent data:Crown_Prince_Alexander,
+        data:Princess_Maria_da_Gloria ;
+    :hasRelation data:Crown_Prince_Alexander,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Princess_Maria_da_Gloria,
+        data:Stefan_Karadjordjevic ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isBrotherOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isChildOf data:Crown_Prince_Alexander,
+        data:Princess_Maria_da_Gloria ;
+    :isFatherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :isSonOf data:Crown_Prince_Alexander,
+        data:Princess_Maria_da_Gloria ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+

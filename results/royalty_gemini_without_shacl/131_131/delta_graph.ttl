@@ -2,48 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Richard_of_Hesse a :Man,
-        :Person ;
-    :alsoKnownAs "Richard Wilhelm Leopold"^^xsd:string ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1969 ;
-    :hasFather data:Frederick_Charles_of_Hesse ;
-    :hasMother data:Margaret_of_Prussia ;
-    :hasSex data:Male ;
-    :isBrotherOf data:Christoph_of_Hesse-Kassel,
-        data:Philippe_of_Hesse,
-        data:Wolfgang_of_Hesse ;
-    :knownAs "Ri"^^xsd:string .
+data:Juan_Carlos_I a :Man ;
+    :isFatherOf data:Felipe_VI .
 
-data:Christoph_of_Hesse-Kassel a :Man,
-        :Person ;
-    :hasFather data:Frederick_Charles_of_Hesse ;
-    :hasMarriageYear 1930 ;
-    :hasMother data:Margaret_of_Prussia ;
-    :hasRelation data:Sophie_of_Greece_and_Denmark ;
-    :hasSex data:Male .
+data:Letizia a :Woman ;
+    :isMotherOf data:Leonor,
+        data:Sofia_Infanta .
 
-data:Philippe_of_Hesse a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Sofia a :Woman ;
+    :isMotherOf data:Felipe_VI .
 
-data:Sophie_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Felipe_VI a :Man ;
+    :isFatherOf data:Leonor,
+        data:Sofia_Infanta .
 
-data:Wolfgang_of_Hesse a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Leonor a :Woman ;
+    :hasBirthYear 2005 .
 
-data:Female a :Sex .
-
-data:Frederick_Charles_of_Hesse a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Margaret_of_Prussia a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Male a :Sex .
+data:Sofia_Infanta a :Woman .
 

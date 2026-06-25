@@ -92,6 +92,7 @@ In 2020, Beatrice married Edoardo Mapelli Mozzi, an English-born property develo
 Early life and education
 
 Beatrice was born at 8:18 pm on 8 August 1988 at the Portland Hospital in London, to the then Duke and Duchess of York.
+She is the fifth grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
 Beatrice was baptised in the Chapel Royal at St James's Palace on 20 December.
 Her younger sister, Princess Eugenie, was born in 1990.
 Beatrice's parents divorced amicably when she was seven years old and agreed to joint custody of their two children.
@@ -149,12 +150,13 @@ In 2016, she, her mother, and her sister Eugenie collaborated with the British c
 In 2018, Children in Crisis merged with Street Child, a children's charity active in multiple countries, with Beatrice serving as its ambassador.
 Beatrice took part in a South Asia Tour in 2016 that lasted nine days.
 A few weeks later, she attended the 2016 Asia Game Changer Awards Dinner at the United Nations in New York City, which honoured Ruit and others.
-She and Charles Rockefeller presented Ruit with his Asia Society Asia Game Changer Award.
 Beatrice is the founder of Big Change, a charity she established with six friends to encourage young people to develop skills "outside a traditional academic curriculum".
 In May 2018, she attended the Met Gala in New York City.
 In March 2019, Beatrice was elected to the board of the UK charity the Outward Bound Trust as a trustee, after her father succeeded to the royal patronage from his father, the Duke of Edinburgh.
 In May 2019, she was honoured at a New York City gala for her work with Friends Without a Border.
+In April 2022, in her capacity as an ambassador for the charity Made By Dyslexia, she and her husband took part in the first World Dyslexia Assembly, hosted by Prince Carl Philip of Sweden.
 In February 2023, Beatrice was named patron of the British Skin Foundation.
+In July 2025, she was appointed patron of the Chartered College of Teaching, a role previously held by her grandfather Prince Philip.
 In November 2025, Beatrice was appointed deputy patron of Outward Bound Trust.
 Titles, styles, and arms
 
@@ -168,6 +170,8 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -183,39 +187,9 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -230,6 +204,23 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -247,6 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -314,29 +320,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -345,6 +343,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -357,6 +363,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -365,17 +373,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -403,6 +413,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -418,124 +512,277 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8c944168-c2c4-415f-8f3d-d933d84c545e)
- Call ID: 8c944168-c2c4-415f-8f3d-d933d84c545e
+  AssignClass (b7722e92-b9ff-4c5b-b638-704a295ddada)
+ Call ID: b7722e92-b9ff-4c5b-b638-704a295ddada
   Args:
+    source: Princess_Beatrice
     type: :Woman
-    source: :Beatrice_York
-  AssignClass (52a7cfd8-e57a-4633-987f-02d5c3b7d458)
- Call ID: 52a7cfd8-e57a-4633-987f-02d5c3b7d458
+  AssignClass (2f7f8310-ef3b-4cdb-9cf3-1ef65e4b62aa)
+ Call ID: 2f7f8310-ef3b-4cdb-9cf3-1ef65e4b62aa
   Args:
-    type: :Man
-    source: :Andrew_Mountbatten-Windsor
-  AssignClass (3e3adc51-b78b-4626-9b6a-29e3c53efb7c)
- Call ID: 3e3adc51-b78b-4626-9b6a-29e3c53efb7c
-  Args:
-    source: :Sarah_Ferguson
-    type: :Woman
-  AssignClass (e01d1e07-79ca-4815-8c4e-ca1eaa36956f)
- Call ID: e01d1e07-79ca-4815-8c4e-ca1eaa36956f
-  Args:
-    type: :Man
-    source: :Edoardo_Mapelli_Mozzi
-  AssignClass (22c5d399-770d-4fa2-8b17-590cb0d23d12)
- Call ID: 22c5d399-770d-4fa2-8b17-590cb0d23d12
-  Args:
-    type: :Woman
-    source: :Eugenie_York
-  AssignClass (c26afff1-6581-4c64-b81d-ddfe4ef24e74)
- Call ID: c26afff1-6581-4c64-b81d-ddfe4ef24e74
-  Args:
-    type: :Woman
-    source: :Sienna_Elizabeth_Mapelli_Mozzi
-  AssignClass (9ca6bdf7-b8cb-4643-afcb-d1003ef0b0ac)
- Call ID: 9ca6bdf7-b8cb-4643-afcb-d1003ef0b0ac
-  Args:
-    source: :Athena_Elizabeth_Rose
-    type: :Woman
-  AddLiteral (3f723aef-b4c9-450e-896a-24ba14578230)
- Call ID: 3f723aef-b4c9-450e-896a-24ba14578230
+    type: :Person
+    source: Princess_Beatrice
+  AddLiteral (b2b99b88-0256-4617-8b4a-874bc233edfe)
+ Call ID: b2b99b88-0256-4617-8b4a-874bc233edfe
   Args:
     literal_type: xsd:integer
-    literal_value: 1988
-    source: :Beatrice_York
+    source: Princess_Beatrice
     relation: :hasBirthYear
-  AddTriple (f927a3a9-baaf-47d8-aa51-25c9dff89f57)
- Call ID: f927a3a9-baaf-47d8-aa51-25c9dff89f57
+    literal_value: 1988
+  AssignClass (f61afd86-8a1a-455c-9115-6828eac0c601)
+ Call ID: f61afd86-8a1a-455c-9115-6828eac0c601
   Args:
-    target: :Andrew_Mountbatten-Windsor
+    type: :Man
+    source: Andrew_Mountbatten-Windsor
+  AssignClass (307ef461-66e6-4296-8960-5852c32f34fc)
+ Call ID: 307ef461-66e6-4296-8960-5852c32f34fc
+  Args:
+    type: :Person
+    source: Andrew_Mountbatten-Windsor
+  AssignClass (0faa8104-81fd-4380-b192-c47a17a19fca)
+ Call ID: 0faa8104-81fd-4380-b192-c47a17a19fca
+  Args:
+    source: Sarah_Ferguson
+    type: :Woman
+  AssignClass (fd961924-343a-4dd3-9629-1209f40216a4)
+ Call ID: fd961924-343a-4dd3-9629-1209f40216a4
+  Args:
+    type: :Person
+    source: Sarah_Ferguson
+  AddTriple (9e1b57d1-300a-4ad1-a135-4f6720fc5a12)
+ Call ID: 9e1b57d1-300a-4ad1-a135-4f6720fc5a12
+  Args:
+    target: Andrew_Mountbatten-Windsor
+    source: Princess_Beatrice
     relation: :hasFather
-    source: :Beatrice_York
-  AddTriple (65403dd5-8cc6-4885-b190-99945b8dd6fb)
- Call ID: 65403dd5-8cc6-4885-b190-99945b8dd6fb
+  AddTriple (0e446bf3-32f3-4f7f-92d8-fb25096765e4)
+ Call ID: 0e446bf3-32f3-4f7f-92d8-fb25096765e4
   Args:
     relation: :hasMother
-    target: :Sarah_Ferguson
-    source: :Beatrice_York
-  AddTriple (d237b6af-5981-47fb-aec1-65c17f75e355)
- Call ID: d237b6af-5981-47fb-aec1-65c17f75e355
+    source: Princess_Beatrice
+    target: Sarah_Ferguson
+  AssignClass (a12adacf-ecc0-4537-a509-c83c4990cc6f)
+ Call ID: a12adacf-ecc0-4537-a509-c83c4990cc6f
   Args:
-    target: :Eugenie_York
-    relation: :hasSister
-    source: :Beatrice_York
-  AddTriple (2e723d32-610b-4584-afae-d3f17fda0d92)
- Call ID: 2e723d32-610b-4584-afae-d3f17fda0d92
+    source: Princess_Eugenie
+    type: :Woman
+  AssignClass (b0f3ce86-b671-4b68-a328-3b1489d2fdcc)
+ Call ID: b0f3ce86-b671-4b68-a328-3b1489d2fdcc
   Args:
+    type: :Person
+    source: Princess_Eugenie
+  AddTriple (2eaa8fd2-8130-4acb-a53e-fde21e976ed3)
+ Call ID: 2eaa8fd2-8130-4acb-a53e-fde21e976ed3
+  Args:
+    source: Princess_Eugenie
     relation: :isSisterOf
-    target: :Beatrice_York
-    source: :Eugenie_York
-  AddLiteral (9810ebcf-4c48-4a22-8a68-6e22865c9da0)
- Call ID: 9810ebcf-4c48-4a22-8a68-6e22865c9da0
+    target: Princess_Beatrice
+  AddTriple (67e202ff-aabd-4237-b04b-cd40c3045b98)
+ Call ID: 67e202ff-aabd-4237-b04b-cd40c3045b98
   Args:
-    literal_type: xsd:integer
-    literal_value: 2020
-    source: :Beatrice_York
-    relation: :hasMarriageYear
-  AddTriple (f3aa78a8-5701-4875-bd71-58c8a973c08f)
- Call ID: f3aa78a8-5701-4875-bd71-58c8a973c08f
+    target: Andrew_Mountbatten-Windsor
+    relation: :hasFather
+    source: Princess_Eugenie
+  AddTriple (1279ee3d-f436-4d44-8dab-3eb60cdbeac1)
+ Call ID: 1279ee3d-f436-4d44-8dab-3eb60cdbeac1
   Args:
+    target: Sarah_Ferguson
+    source: Princess_Eugenie
+    relation: :hasMother
+  AssignClass (87ee4d35-2a53-4e97-8656-2e9e0c111826)
+ Call ID: 87ee4d35-2a53-4e97-8656-2e9e0c111826
+  Args:
+    type: :Man
+    source: Edoardo_Mapelli_Mozzi
+  AssignClass (b1ff54f4-44eb-4fa3-a817-57a6c0868db0)
+ Call ID: b1ff54f4-44eb-4fa3-a817-57a6c0868db0
+  Args:
+    source: Edoardo_Mapelli_Mozzi
+    type: :Person
+  AddTriple (b729c2e1-d764-4403-beca-df875e6754b1)
+ Call ID: b729c2e1-d764-4403-beca-df875e6754b1
+  Args:
+    source: Princess_Beatrice
     relation: :hasRelation
-    target: :Edoardo_Mapelli_Mozzi
-    source: :Beatrice_York
-  AddTriple (b54ee117-c9c5-48d3-96ca-ae1512319032)
- Call ID: b54ee117-c9c5-48d3-96ca-ae1512319032
+    target: Edoardo_Mapelli_Mozzi
+  AddLiteral (eab088f0-eb9d-4b72-be06-408b2e2653d7)
+ Call ID: eab088f0-eb9d-4b72-be06-408b2e2653d7
   Args:
-    source: :Beatrice_York
-    target: :Sienna_Elizabeth_Mapelli_Mozzi
-    relation: :hasDaughter
-  AddTriple (c8df1652-556b-42d2-8210-20ee2183475c)
- Call ID: c8df1652-556b-42d2-8210-20ee2183475c
+    literal_value: 2020
+    literal_type: xsd:integer
+    source: Princess_Beatrice
+    relation: :hasMarriageYear
+  AssignClass (4605e585-22a6-43be-a9bc-130b6f6f8524)
+ Call ID: 4605e585-22a6-43be-a9bc-130b6f6f8524
   Args:
-    target: :Athena_Elizabeth_Rose
-    relation: :hasDaughter
-    source: :Beatrice_York
-  AddTriple (d9cbca2a-90e4-4ca7-b26b-8b3b5e7af930)
- Call ID: d9cbca2a-90e4-4ca7-b26b-8b3b5e7af930
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+    type: :Woman
+  AssignClass (cea7b666-2c06-4f8a-8611-865e81a1bbb6)
+ Call ID: cea7b666-2c06-4f8a-8611-865e81a1bbb6
+  Args:
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+    type: :Person
+  AddTriple (251a1db9-42fb-4b5f-93d0-6eb3af6af799)
+ Call ID: 251a1db9-42fb-4b5f-93d0-6eb3af6af799
+  Args:
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+    relation: :hasFather
+    target: Edoardo_Mapelli_Mozzi
+  AddTriple (eab77dee-f64a-4b93-bd95-f553d12e71c5)
+ Call ID: eab77dee-f64a-4b93-bd95-f553d12e71c5
+  Args:
+    relation: :hasMother
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+    target: Princess_Beatrice
+  AssignClass (96b06932-ff66-4b0b-a538-5c54501dd764)
+ Call ID: 96b06932-ff66-4b0b-a538-5c54501dd764
+  Args:
+    source: Athena_Elizabeth_Rose
+    type: :Woman
+  AssignClass (5986788e-2c3d-4a41-847c-c70dc558a713)
+ Call ID: 5986788e-2c3d-4a41-847c-c70dc558a713
+  Args:
+    source: Athena_Elizabeth_Rose
+    type: :Person
+  AddTriple (0e5963a0-de6d-4977-9dc6-1175b826e806)
+ Call ID: 0e5963a0-de6d-4977-9dc6-1175b826e806
+  Args:
+    target: Edoardo_Mapelli_Mozzi
+    source: Athena_Elizabeth_Rose
+    relation: :hasFather
+  AddTriple (033e7239-bbe0-4ae0-92c5-7cd7ad556efc)
+ Call ID: 033e7239-bbe0-4ae0-92c5-7cd7ad556efc
+  Args:
+    target: Princess_Beatrice
+    relation: :hasMother
+    source: Athena_Elizabeth_Rose
+  AssignClass (b71c1776-ebe4-4ed0-90d1-35beaab2b143)
+ Call ID: b71c1776-ebe4-4ed0-90d1-35beaab2b143
+  Args:
+    source: Alex_Mapelli-Mozzi
+    type: :Man
+  AssignClass (52df2c04-af74-4b61-93c4-ec481f133a2d)
+ Call ID: 52df2c04-af74-4b61-93c4-ec481f133a2d
+  Args:
+    type: :Person
+    source: Alex_Mapelli-Mozzi
+  AddTriple (5cc2fa51-c7ce-48ae-bfa3-0b981f93ae33)
+ Call ID: 5cc2fa51-c7ce-48ae-bfa3-0b981f93ae33
   Args:
     relation: :hasFather
-    target: :Edoardo_Mapelli_Mozzi
-    source: :Sienna_Elizabeth_Mapelli_Mozzi
-  AddTriple (f28073cd-fd03-4d3c-893e-6f35ae09f493)
- Call ID: f28073cd-fd03-4d3c-893e-6f35ae09f493
+    source: Edoardo_Mapelli_Mozzi
+    target: Alex_Mapelli-Mozzi
+  AssignClass (faa9159d-eb35-4476-9e30-9c573acba482)
+ Call ID: faa9159d-eb35-4476-9e30-9c573acba482
   Args:
-    target: :Beatrice_York
-    relation: :hasMother
-    source: :Sienna_Elizabeth_Mapelli_Mozzi
-  AddTriple (ae0a8366-174d-4553-a326-38373c13df99)
- Call ID: ae0a8366-174d-4553-a326-38373c13df99
+    type: :Man
+    source: Paolo_Mapelli_Mozzi
+  AssignClass (b5b5d340-30e6-4e4a-94fc-6a701ace70ea)
+ Call ID: b5b5d340-30e6-4e4a-94fc-6a701ace70ea
   Args:
-    source: :Athena_Elizabeth_Rose
-    target: :Edoardo_Mapelli_Mozzi
-    relation: :hasFather
-  AddTriple (118ddd1e-f828-4d0e-98b0-4fb7a6c8f544)
- Call ID: 118ddd1e-f828-4d0e-98b0-4fb7a6c8f544
+    type: :Person
+    source: Paolo_Mapelli_Mozzi
+  AssignClass (04683d25-9fbd-4f5e-947e-31871be04ac1)
+ Call ID: 04683d25-9fbd-4f5e-947e-31871be04ac1
   Args:
-    source: :Athena_Elizabeth_Rose
-    relation: :hasMother
-    target: :Beatrice_York
-  Finish (e38fb6ba-df1f-4c11-8e52-88bdae5ae137)
- Call ID: e38fb6ba-df1f-4c11-8e52-88bdae5ae137
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (8f84790c-e2ea-4e75-977a-17b75198d565)
+ Call ID: 8f84790c-e2ea-4e75-977a-17b75198d565
   Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AssignClass (35e6b198-fe01-4d97-a042-bd8cb47f8a9f)
+ Call ID: 35e6b198-fe01-4d97-a042-bd8cb47f8a9f
+  Args:
+    type: :Man
+    source: Prince_Philip
+  AssignClass (4de89f08-8c54-4d53-abf9-7bc828c23297)
+ Call ID: 4de89f08-8c54-4d53-abf9-7bc828c23297
+  Args:
+    type: :Person
+    source: Prince_Philip
+  AssignClass (9f07c89f-3040-4891-a3ea-481b4167ef8c)
+ Call ID: 9f07c89f-3040-4891-a3ea-481b4167ef8c
+  Args:
+    type: :Man
+    source: King_Charles_III
+  AssignClass (a314b58d-e44d-4cf1-8cc6-da5e1bdf1ba2)
+ Call ID: a314b58d-e44d-4cf1-8cc6-da5e1bdf1ba2
+  Args:
+    type: :Person
+    source: King_Charles_III
+  Finish (dcf81fe8-86a6-4a66-97fc-70fb3dc9c7fc)
+ Call ID: dcf81fe8-86a6-4a66-97fc-70fb3dc9c7fc
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -620,32 +867,54 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_Mountbatten-Windsor a :Man .
-
-  data:Athena_Elizabeth_Rose a :Woman ;
+  data:Athena_Elizabeth_Rose a :Person,
+          :Woman ;
       :hasFather data:Edoardo_Mapelli_Mozzi ;
-      :hasMother data:Beatrice_York .
+      :hasMother data:Princess_Beatrice .
 
-  data:Eugenie_York a :Woman ;
-      :isSisterOf data:Beatrice_York .
+  data:King_Charles_III a :Man,
+          :Person .
 
-  data:Sarah_Ferguson a :Woman .
+  data:Paolo_Mapelli_Mozzi a :Man,
+          :Person .
 
-  data:Sienna_Elizabeth_Mapelli_Mozzi a :Woman ;
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Princess_Eugenie a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson ;
+      :isSisterOf data:Princess_Beatrice .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+          :Woman ;
       :hasFather data:Edoardo_Mapelli_Mozzi ;
-      :hasMother data:Beatrice_York .
+      :hasMother data:Princess_Beatrice .
 
-  data:Beatrice_York a :Woman ;
+  data:Alex_Mapelli-Mozzi a :Man,
+          :Person .
+
+  data:Andrew_Mountbatten-Windsor a :Man,
+          :Person .
+
+  data:Sarah_Ferguson a :Person,
+          :Woman .
+
+  data:Edoardo_Mapelli_Mozzi a :Man,
+          :Person ;
+      :hasFather data:Alex_Mapelli-Mozzi .
+
+  data:Princess_Beatrice a :Person,
+          :Woman ;
       :hasBirthYear 1988 ;
-      :hasDaughter data:Athena_Elizabeth_Rose,
-          data:Sienna_Elizabeth_Mapelli_Mozzi ;
       :hasFather data:Andrew_Mountbatten-Windsor ;
       :hasMarriageYear 2020 ;
       :hasMother data:Sarah_Ferguson ;
-      :hasRelation data:Edoardo_Mapelli_Mozzi ;
-      :hasSister data:Eugenie_York .
-
-  data:Edoardo_Mapelli_Mozzi a :Man .
+      :hasRelation data:Edoardo_Mapelli_Mozzi .
 
 
 
@@ -657,158 +926,230 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (69e71972-ac37-4d48-a297-77e8e9354cdb)
- Call ID: 69e71972-ac37-4d48-a297-77e8e9354cdb
+  ValidateShacl (c3d17023-eb85-482c-af0f-3bcf0ca754d4)
+ Call ID: c3d17023-eb85-482c-af0f-3bcf0ca754d4
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:27
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Alex_Mapelli-Mozzi lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Alex_Mapelli-Mozzi, :Man)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Andrew_Mountbatten-Windsor, :Man)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Andrew_Mountbatten-Windsor is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
+      AssignClass(Andrew_Mountbatten-Windsor, :Man)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Edoardo_Mapelli_Mozzi, :Man)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Alex_Mapelli-Mozzi lacks the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Alex_Mapelli-Mozzi, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sarah_Ferguson is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
+      AssignClass(Edoardo_Mapelli_Mozzi, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Sarah_Ferguson lacks the required class :Woman for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Sarah_Ferguson, :Woman)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Sarah_Ferguson lacks the required class :Woman for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Sarah_Ferguson, :Woman)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Andrew_Mountbatten-Windsor is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Princess_Beatrice lacks the required class :Woman for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
+      AssignClass(Princess_Beatrice, :Woman)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Princess_Beatrice lacks the required class :Woman for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Princess_Beatrice, :Woman)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sarah_Ferguson is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Edoardo_Mapelli_Mozzi, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Edoardo_Mapelli_Mozzi is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Alex_Mapelli-Mozzi lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Edoardo_Mapelli_Mozzi', class=':Ancestor')
+      AssignClass(Alex_Mapelli-Mozzi, :Man)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Andrew_Mountbatten-Windsor is missing the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Man for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
+      AssignClass(Edoardo_Mapelli_Mozzi, :Man)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Sarah_Ferguson lacks the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Sarah_Ferguson, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Beatrice_York is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Sarah_Ferguson lacks the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrice_York', class=':Ancestor')
+      AssignClass(Sarah_Ferguson, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sarah_Ferguson is missing the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The value node Princess_Beatrice lacks the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
+      AssignClass(Princess_Beatrice, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Beatrice lacks the required class :Ancestor for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Beatrice, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Man for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Man)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Andrew_Mountbatten-Windsor lacks the required class :Man for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Man)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Man for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edoardo_Mapelli_Mozzi, :Man)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Edoardo_Mapelli_Mozzi lacks the required class :Man for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edoardo_Mapelli_Mozzi, :Man)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sarah_Ferguson lacks the required class :Woman for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Woman)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sarah_Ferguson lacks the required class :Woman for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Woman)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Beatrice lacks the required class :Woman for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Beatrice, :Woman)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Beatrice lacks the required class :Woman for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Beatrice, :Woman)
 
 
 
@@ -817,29 +1158,83 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (570eda42-a087-4ef1-8674-373f80b95b9e)
- Call ID: 570eda42-a087-4ef1-8674-373f80b95b9e
+  AssignClass (75d94af3-d02c-4677-bd20-df1ca9ff33f9)
+ Call ID: 75d94af3-d02c-4677-bd20-df1ca9ff33f9
+  Args:
+    type: :Man
+    source: Alex_Mapelli-Mozzi
+  AssignClass (22bbb880-2f86-4cb5-bdf9-1bc8b977fc10)
+ Call ID: 22bbb880-2f86-4cb5-bdf9-1bc8b977fc10
+  Args:
+    type: :Man
+    source: Andrew_Mountbatten-Windsor
+  AssignClass (99a68096-2709-48e1-ab92-37658c3dc58e)
+ Call ID: 99a68096-2709-48e1-ab92-37658c3dc58e
+  Args:
+    source: Edoardo_Mapelli_Mozzi
+    type: :Man
+  AssignClass (c8d49a48-db19-4a01-a2e9-cd93ec4723e5)
+ Call ID: c8d49a48-db19-4a01-a2e9-cd93ec4723e5
   Args:
     type: :Ancestor
-    source: :Edoardo_Mapelli_Mozzi
-  AssignClass (38a42ae4-5e19-414c-bd87-59225d9538b5)
- Call ID: 38a42ae4-5e19-414c-bd87-59225d9538b5
+    source: Alex_Mapelli-Mozzi
+  AssignClass (33163474-4c26-482b-a7d7-bb429ccd502d)
+ Call ID: 33163474-4c26-482b-a7d7-bb429ccd502d
   Args:
-    source: :Andrew_Mountbatten-Windsor
+    source: Edoardo_Mapelli_Mozzi
     type: :Ancestor
-  AssignClass (296c0867-32f6-4f80-813f-e92381792696)
- Call ID: 296c0867-32f6-4f80-813f-e92381792696
+  AssignClass (bdfbb391-0056-4756-8c98-e81fed450c59)
+ Call ID: bdfbb391-0056-4756-8c98-e81fed450c59
   Args:
-    source: :Beatrice_York
+    source: Sarah_Ferguson
+    type: :Woman
+  AssignClass (cab1f7ac-f085-46ff-a31b-1093eccd34bd)
+ Call ID: cab1f7ac-f085-46ff-a31b-1093eccd34bd
+  Args:
+    type: :Woman
+    source: Princess_Beatrice
+  AssignClass (69904918-dde0-4d96-8dff-071f011e0598)
+ Call ID: 69904918-dde0-4d96-8dff-071f011e0598
+  Args:
+    source: Andrew_Mountbatten-Windsor
     type: :Ancestor
-  AssignClass (debe01e5-d304-4a6c-bbbe-a699149d8c40)
- Call ID: debe01e5-d304-4a6c-bbbe-a699149d8c40
+  AssignClass (c1d70bbb-af42-4e93-ae30-ca1cece4ab5c)
+ Call ID: c1d70bbb-af42-4e93-ae30-ca1cece4ab5c
   Args:
     type: :Ancestor
-    source: :Sarah_Ferguson
-  ValidateShacl (f4a5daa2-46a8-4bb7-9dfd-ca8cb86eb4aa)
- Call ID: f4a5daa2-46a8-4bb7-9dfd-ca8cb86eb4aa
+    source: Sarah_Ferguson
+  AssignClass (4d6cbd35-9efe-4c10-baad-ac3327282fb8)
+ Call ID: 4d6cbd35-9efe-4c10-baad-ac3327282fb8
   Args:
+    type: :Ancestor
+    source: Princess_Beatrice
+  Finish (4c42632c-7c84-41dd-b52a-a0aced83c519)
+ Call ID: 4c42632c-7c84-41dd-b52a-a0aced83c519
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -860,38 +1255,73 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_Mountbatten-Windsor a :Ancestor,
-          :Man .
-
-  data:Athena_Elizabeth_Rose a :Woman ;
+  data:Athena_Elizabeth_Rose a :Person,
+          :Woman ;
       :hasFather data:Edoardo_Mapelli_Mozzi ;
-      :hasMother data:Beatrice_York .
+      :hasMother data:Princess_Beatrice .
 
-  data:Eugenie_York a :Woman ;
-      :isSisterOf data:Beatrice_York .
+  data:King_Charles_III a :Man,
+          :Person .
 
-  data:Sarah_Ferguson a :Ancestor,
+  data:Paolo_Mapelli_Mozzi a :Man,
+          :Person .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Princess_Eugenie a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson ;
+      :isSisterOf data:Princess_Beatrice .
+
+  data:Queen_Elizabeth_II a :Person,
           :Woman .
 
-  data:Sienna_Elizabeth_Mapelli_Mozzi a :Woman ;
+  data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+          :Woman ;
       :hasFather data:Edoardo_Mapelli_Mozzi ;
-      :hasMother data:Beatrice_York .
+      :hasMother data:Princess_Beatrice .
 
-  data:Beatrice_York a :Ancestor,
+  data:Alex_Mapelli-Mozzi a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Andrew_Mountbatten-Windsor a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Sarah_Ferguson a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Edoardo_Mapelli_Mozzi a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Alex_Mapelli-Mozzi .
+
+  data:Princess_Beatrice a :Ancestor,
+          :Person,
           :Woman ;
       :hasBirthYear 1988 ;
-      :hasDaughter data:Athena_Elizabeth_Rose,
-          data:Sienna_Elizabeth_Mapelli_Mozzi ;
       :hasFather data:Andrew_Mountbatten-Windsor ;
       :hasMarriageYear 2020 ;
       :hasMother data:Sarah_Ferguson ;
-      :hasRelation data:Edoardo_Mapelli_Mozzi ;
-      :hasSister data:Eugenie_York .
-
-  data:Edoardo_Mapelli_Mozzi a :Ancestor,
-          :Man .
+      :hasRelation data:Edoardo_Mapelli_Mozzi .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (3a921e33-a719-4cb1-9d03-7c6b0dcdcecd)
+ Call ID: 3a921e33-a719-4cb1-9d03-7c6b0dcdcecd
+  Args:
 
 ================================= Tool Message =================================
 
@@ -901,6 +1331,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8a2ef915-3a3c-424e-ab9a-374f4fff4ed1)
- Call ID: 8a2ef915-3a3c-424e-ab9a-374f4fff4ed1
+  Finish (5ea22c36-1ce8-4962-a125-09bac42c1537)
+ Call ID: 5ea22c36-1ce8-4962-a125-09bac42c1537
   Args:

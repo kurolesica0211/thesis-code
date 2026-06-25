@@ -85,33 +85,18 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Henry Victor Louis Frederick of Prussia (German: Heinrich Viktor Ludwig Friedrich; 9 January 1900 – 26 February 1904), was the third son and youngest child of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
-He was a grandson of Frederick III, German Emperor, through his father and a great-grandson of Queen Victoria.
-Life
+Karl Friedrich Emich Meinrad Benedikt Fidelis Maria Michael Gerold Prinz von Hohenzollern (born 20 April 1952) is the eldest son of the late Friedrich Wilhelm, Prince of Hohenzollern, and Princess Margarita of Leiningen.
+Residences
 
-Prince Heinrich was born on 9 January 1900, in Kiel.
-His father was pleased by the birth of yet another son, especially such a handsome one, as the Prince had blonde hair.
-The newborn Prince immediately received the title Prince of Prussia with the style Royal Highness, and was baptised
-His older brothers were Prince Waldemar, a namesake of his uncle, and Prince Sigismund, a namesake of his other deceased uncle.
-The Prince was diagnosed with haemophilia as a young child, but, despite this, was a very cheerful and lively boy who liked to play a lot.
-As Henry grew older he became more aware of his condition.
-Death
-
-On 25 February, Princess Irene left Heinrich unsupervised for a few minutes while she went to fetch something.
-The playful Prince climbed a chair, and then he climbed onto the table.
-He started to scream, which immediately attracted the Princess' attention.
-However, experiencing this condition, it was certain the young Prince would die.
-Aftermath
-
-Prince Heinrich's premature death would later very much affect the Princess, who would withdraw into herself.
-One of his older brothers, Prince Waldemar, also had haemophilia.
-The middle sibling, Prince Sigismund, was unaffected by the disease.
+Karl Friedrich lives on his hunting estate Josefslust House, whereas the nearby hunting lodge is used by his brother Albrecht (born 1954) and the nearby Krauchenwies estate by his ex-wife, Princess Alexandra.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +112,9 @@ The middle sibling, Prince Sigismund, was unaffected by the disease.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +129,23 @@ The middle sibling, Prince Sigismund, was unaffected by the disease.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,168 +437,91 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (844259c3-0c17-4991-9a6b-8c617efe3db5)
- Call ID: 844259c3-0c17-4991-9a6b-8c617efe3db5
+  AssignClass (db3e4e55-c20a-465b-abd1-5439cbcb0b7c)
+ Call ID: db3e4e55-c20a-465b-abd1-5439cbcb0b7c
+  Args:
+    source: Karl_Friedrich_von_Hohenzollern
+    type: :Man
+  AssignClass (b3036e8a-b172-4f7f-8331-952701d58531)
+ Call ID: b3036e8a-b172-4f7f-8331-952701d58531
+  Args:
+    source: Karl_Friedrich_von_Hohenzollern
+    type: :Person
+  AddLiteral (275cd657-9edb-4c9a-bedb-341e65711637)
+ Call ID: 275cd657-9edb-4c9a-bedb-341e65711637
+  Args:
+    literal_type: xsd:integer
+    source: Karl_Friedrich_von_Hohenzollern
+    relation: :hasBirthYear
+    literal_value: 1952
+  AssignClass (df54b9f4-0e44-4ec9-87fb-b9048b211913)
+ Call ID: df54b9f4-0e44-4ec9-87fb-b9048b211913
   Args:
     type: :Man
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AssignClass (b7cd25c1-90ad-43e2-a4cf-acabecbd9c60)
- Call ID: b7cd25c1-90ad-43e2-a4cf-acabecbd9c60
+    source: Friedrich_Wilhelm_von_Hohenzollern
+  AssignClass (56fb9dca-d51d-440a-ab9d-3299d07a1612)
+ Call ID: 56fb9dca-d51d-440a-ab9d-3299d07a1612
   Args:
     type: :Person
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AddLiteral (cb6cca33-0443-4193-9b1f-baa57f16428f)
- Call ID: cb6cca33-0443-4193-9b1f-baa57f16428f
+    source: Friedrich_Wilhelm_von_Hohenzollern
+  AssignClass (34d9efe7-83a6-4245-a5f2-860c56bdc992)
+ Call ID: 34d9efe7-83a6-4245-a5f2-860c56bdc992
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    relation: :hasSex
-  AddLiteral (9c659f51-e1ae-4b9b-8178-06b2f7065ecb)
- Call ID: 9c659f51-e1ae-4b9b-8178-06b2f7065ecb
+    source: Margarita_of_Leiningen
+    type: :Woman
+  AssignClass (c4c4e435-4492-44c7-b6f5-2efef0ea3edf)
+ Call ID: c4c4e435-4492-44c7-b6f5-2efef0ea3edf
   Args:
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    type: :Person
+    source: Margarita_of_Leiningen
+  AddTriple (bf528c39-d763-48b3-943a-45ab2af0ca1d)
+ Call ID: bf528c39-d763-48b3-943a-45ab2af0ca1d
+  Args:
+    source: Karl_Friedrich_von_Hohenzollern
+    relation: :hasFather
+    target: Friedrich_Wilhelm_von_Hohenzollern
+  AddTriple (f5f4b5f8-9ead-4e1e-b4f3-d8d195e249de)
+ Call ID: f5f4b5f8-9ead-4e1e-b4f3-d8d195e249de
+  Args:
+    target: Margarita_of_Leiningen
+    relation: :hasMother
+    source: Karl_Friedrich_von_Hohenzollern
+  AssignClass (62e0b77b-abdc-4ed5-b500-3ac79deaf166)
+ Call ID: 62e0b77b-abdc-4ed5-b500-3ac79deaf166
+  Args:
+    source: Albrecht_von_Hohenzollern
+    type: :Man
+  AssignClass (5cdc0b29-e47c-402a-80b6-73402a2b18a6)
+ Call ID: 5cdc0b29-e47c-402a-80b6-73402a2b18a6
+  Args:
+    type: :Person
+    source: Albrecht_von_Hohenzollern
+  AddLiteral (d97925be-8519-409c-ab0a-a6285e87a799)
+ Call ID: d97925be-8519-409c-ab0a-a6285e87a799
+  Args:
+    literal_value: 1954
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1900
-  AddLiteral (7f0ee3bb-b2dc-41f3-b025-f9659ffb4462)
- Call ID: 7f0ee3bb-b2dc-41f3-b025-f9659ffb4462
+    source: Albrecht_von_Hohenzollern
+  AddTriple (eaeae68a-96b5-440a-81f9-10956646e19e)
+ Call ID: eaeae68a-96b5-440a-81f9-10956646e19e
   Args:
-    literal_value: 1904
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-  AssignClass (18cf45f3-83ee-48fc-9ccb-a62a70921ac5)
- Call ID: 18cf45f3-83ee-48fc-9ccb-a62a70921ac5
+    target: Albrecht_von_Hohenzollern
+    relation: :hasBrother
+    source: Karl_Friedrich_von_Hohenzollern
+  AssignClass (2dd88ece-487a-41c6-86f1-55db9260997d)
+ Call ID: 2dd88ece-487a-41c6-86f1-55db9260997d
   Args:
-    type: :Man
-    source: Prince_Henry_of_Prussia
-  AssignClass (98625e21-23e5-4d4c-b804-d0f3f6c96f80)
- Call ID: 98625e21-23e5-4d4c-b804-d0f3f6c96f80
-  Args:
-    source: Prince_Henry_of_Prussia
-    type: :Person
-  AssignClass (cdef47c4-0760-4baf-bda7-dbcd83f0a8e1)
- Call ID: cdef47c4-0760-4baf-bda7-dbcd83f0a8e1
-  Args:
+    source: Alexandra_of_Hohenzollern
     type: :Woman
-    source: Princess_Irene_of_Hesse_and_by_Rhine
-  AssignClass (9e52173e-96b3-4077-8676-bf623ab52d76)
- Call ID: 9e52173e-96b3-4077-8676-bf623ab52d76
+  AssignClass (a989ad41-1e01-4402-ba91-f56e021bafc6)
+ Call ID: a989ad41-1e01-4402-ba91-f56e021bafc6
   Args:
-    source: Princess_Irene_of_Hesse_and_by_Rhine
+    source: Alexandra_of_Hohenzollern
     type: :Person
-  AddTriple (04a3a5ea-1cb5-4439-81d1-6aa703e9ea30)
- Call ID: 04a3a5ea-1cb5-4439-81d1-6aa703e9ea30
+  Finish (4bed161c-4358-4687-8b66-470221b821e1)
+ Call ID: 4bed161c-4358-4687-8b66-470221b821e1
   Args:
-    target: Prince_Henry_of_Prussia
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    relation: :hasFather
-  AddTriple (eecd9b5b-55e3-4f05-81ed-18d5a067e306)
- Call ID: eecd9b5b-55e3-4f05-81ed-18d5a067e306
-  Args:
-    relation: :hasMother
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    target: Princess_Irene_of_Hesse_and_by_Rhine
-  AssignClass (15baf0b8-3695-484a-a545-0549c35a1ad6)
- Call ID: 15baf0b8-3695-484a-a545-0549c35a1ad6
-  Args:
-    type: :Man
-    source: Prince_Waldemar
-  AssignClass (44f2a4f9-0571-4968-8250-d3a138679e88)
- Call ID: 44f2a4f9-0571-4968-8250-d3a138679e88
-  Args:
-    type: :Person
-    source: Prince_Waldemar
-  AssignClass (bd303e65-6626-4f84-b621-7ea9cfbd706e)
- Call ID: bd303e65-6626-4f84-b621-7ea9cfbd706e
-  Args:
-    type: :Man
-    source: Prince_Sigismund
-  AssignClass (17df3a12-86b8-42d5-91ae-b0c755611c0c)
- Call ID: 17df3a12-86b8-42d5-91ae-b0c755611c0c
-  Args:
-    type: :Person
-    source: Prince_Sigismund
-  AddTriple (cdc75b03-bf13-4a3c-ac96-c598e4ef0283)
- Call ID: cdc75b03-bf13-4a3c-ac96-c598e4ef0283
-  Args:
-    target: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    relation: :isBrotherOf
-    source: Prince_Waldemar
-  AddTriple (35c02aac-f8df-4e7d-9a7a-194b1416ea89)
- Call ID: 35c02aac-f8df-4e7d-9a7a-194b1416ea89
-  Args:
-    target: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    source: Prince_Sigismund
-    relation: :isBrotherOf
-  AddTriple (8e1f7e81-bcdc-45e4-b880-6af800d698e4)
- Call ID: 8e1f7e81-bcdc-45e4-b880-6af800d698e4
-  Args:
-    source: Frederick_III_German_Emperor
-    relation: :isFatherOf
-    target: Prince_Henry_of_Prussia
-  AssignClass (751c4ff2-d354-43e9-bb88-c72312245ccf)
- Call ID: 751c4ff2-d354-43e9-bb88-c72312245ccf
-  Args:
-    source: Frederick_III_German_Emperor
-    type: :Man
-  AssignClass (f63587b0-1748-4e60-b59b-f7ca3df6f3cc)
- Call ID: f63587b0-1748-4e60-b59b-f7ca3df6f3cc
-  Args:
-    type: :Person
-    source: Frederick_III_German_Emperor
-  AddTriple (32077c15-24ce-48d6-9720-77b3b08c57f7)
- Call ID: 32077c15-24ce-48d6-9720-77b3b08c57f7
-  Args:
-    relation: :hasAncestor
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    target: Queen_Victoria
-  AssignClass (9182a50c-7671-4293-bb31-a706dbd66b0c)
- Call ID: 9182a50c-7671-4293-bb31-a706dbd66b0c
-  Args:
-    source: Queen_Victoria
-    type: :Woman
-  AssignClass (db1133d9-72cc-431c-9c9f-f83eec6bcd83)
- Call ID: db1133d9-72cc-431c-9c9f-f83eec6bcd83
-  Args:
-    source: Queen_Victoria
-    type: :Person
-  Finish (f0180f5e-e9f6-4150-95a6-d3339c740ced)
- Call ID: f0180f5e-e9f6-4150-95a6-d3339c740ced
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -588,35 +586,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_III_German_Emperor a :Man,
-          :Person ;
-      :isFatherOf data:Prince_Henry_of_Prussia .
-
-  data:Prince_Sigismund a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-  data:Prince_Waldemar a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-  data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+  data:Alexandra_of_Hohenzollern a :Person,
           :Woman .
 
-  data:Queen_Victoria a :Person,
-          :Woman .
-
-  data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
+  data:Karl_Friedrich_von_Hohenzollern a :Man,
           :Person ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1904 ;
-      :hasFather data:Prince_Henry_of_Prussia ;
-      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
-      :hasSex "Male"^^xsd:string .
+      :hasBirthYear 1952 ;
+      :hasBrother data:Albrecht_von_Hohenzollern ;
+      :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
+      :hasMother data:Margarita_of_Leiningen .
 
-  data:Prince_Henry_of_Prussia a :Man,
+  data:Albrecht_von_Hohenzollern a :Man,
+          :Person ;
+      :hasBirthYear 1954 .
+
+  data:Friedrich_Wilhelm_von_Hohenzollern a :Man,
           :Person .
+
+  data:Margarita_of_Leiningen a :Person,
+          :Woman .
 
 
 
@@ -628,158 +616,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1449080a-0869-4a7f-962a-397999945019)
- Call ID: 1449080a-0869-4a7f-962a-397999945019
+  ValidateShacl (84f24b91-a753-41f0-9ec3-559e42d29419)
+ Call ID: 84f24b91-a753-41f0-9ec3-559e42d29419
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
+      The node Friedrich_Wilhelm_von_Hohenzollern, identified as the father of Karl_Friedrich_von_Hohenzollern, is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Friedrich_Wilhelm_von_Hohenzollern, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as an ancestor for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
+      The node Margarita_of_Leiningen, identified as the mother of Karl_Friedrich_von_Hohenzollern, is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(Margarita_of_Leiningen, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Prince_Henry_of_Prussia' used as a father for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
+      The node Friedrich_Wilhelm_von_Hohenzollern is missing the required :Ancestor class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
+      AssignClass(Friedrich_Wilhelm_von_Hohenzollern, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Princess_Irene_of_Hesse_and_by_Rhine' used as a mother for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
+      The node Margarita_of_Leiningen is missing the required :Ancestor class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
+      AssignClass(Margarita_of_Leiningen, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
+      The node Friedrich_Wilhelm_von_Hohenzollern is missing the required :Ancestor class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Friedrich_Wilhelm_von_Hohenzollern, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as an ancestor for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Prince_Henry_of_Prussia' used as a father for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
-
-
-  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Princess_Irene_of_Hesse_and_by_Rhine' used as a mother for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
+      The node Margarita_of_Leiningen is missing the required :Ancestor class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as an ancestor for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Prince_Henry_of_Prussia' used as a father for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Irene_of_Hesse_and_by_Rhine' used as a mother for 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Prince_Henry_Victor_Louis_Frederick_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Frederick_III_German_Emperor' is acting as a father, but it is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III_German_Emperor', class=':Ancestor')
+      AssignClass(Margarita_of_Leiningen, :Ancestor)
 
 
 
@@ -788,76 +680,16 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (3357f13d-e728-4094-9aac-cf8fa41a2157)
- Call ID: 3357f13d-e728-4094-9aac-cf8fa41a2157
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    relation: :hasSex
-  AssignClass (815a00e4-c010-4743-8888-9b862addc939)
- Call ID: 815a00e4-c010-4743-8888-9b862addc939
-  Args:
-    source: Male_Entity
-    type: :Male
-  AssignClass (49a1c100-c539-4659-8b4a-ef65e691a92c)
- Call ID: 49a1c100-c539-4659-8b4a-ef65e691a92c
-  Args:
-    type: :Sex
-    source: Male_Entity
-  AddTriple (d8d33fc8-b8eb-4efa-8973-e326fa4efd8f)
- Call ID: d8d33fc8-b8eb-4efa-8973-e326fa4efd8f
-  Args:
-    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
-    target: Male_Entity
-    relation: :hasSex
-  AssignClass (15f4fcdb-cd46-4ccd-83a8-86fcbffcd142)
- Call ID: 15f4fcdb-cd46-4ccd-83a8-86fcbffcd142
-  Args:
-    source: Queen_Victoria
-    type: :Ancestor
-  AssignClass (17553c08-326d-4f36-b2ed-0be187780d1f)
- Call ID: 17553c08-326d-4f36-b2ed-0be187780d1f
+  AssignClass (8e2180f3-0efe-4b64-aac5-064a0e69b0bc)
+ Call ID: 8e2180f3-0efe-4b64-aac5-064a0e69b0bc
   Args:
     type: :Ancestor
-    source: Prince_Henry_of_Prussia
-  AssignClass (a3eb989f-021c-4ad4-8ccc-95ed2ba8d5aa)
- Call ID: a3eb989f-021c-4ad4-8ccc-95ed2ba8d5aa
+    source: Friedrich_Wilhelm_von_Hohenzollern
+  AssignClass (d88b6ed7-f671-4598-a139-c65e1a0ecbe2)
+ Call ID: d88b6ed7-f671-4598-a139-c65e1a0ecbe2
   Args:
-    source: Princess_Irene_of_Hesse_and_by_Rhine
+    source: Margarita_of_Leiningen
     type: :Ancestor
-  AssignClass (6f803456-075f-448c-a07d-ba81745eb8a5)
- Call ID: 6f803456-075f-448c-a07d-ba81745eb8a5
-  Args:
-    type: :Ancestor
-    source: Frederick_III_German_Emperor
-  Finish (8af77525-e9ca-48c3-bd16-0fc957ff3d7f)
- Call ID: 8af77525-e9ca-48c3-bd16-0fc957ff3d7f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -870,55 +702,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_III_German_Emperor a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Prince_Henry_of_Prussia .
-
-  data:Prince_Sigismund a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-  data:Prince_Waldemar a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-  data:Male_Entity a :Male,
-          :Sex .
-
-  data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
-          :Person,
+  data:Alexandra_of_Hohenzollern a :Person,
           :Woman .
 
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
+  data:Karl_Friedrich_von_Hohenzollern a :Man,
           :Person ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1904 ;
-      :hasFather data:Prince_Henry_of_Prussia ;
-      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
-      :hasSex data:Male_Entity .
+      :hasBirthYear 1952 ;
+      :hasBrother data:Albrecht_von_Hohenzollern ;
+      :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
+      :hasMother data:Margarita_of_Leiningen .
 
-  data:Prince_Henry_of_Prussia a :Ancestor,
+  data:Albrecht_von_Hohenzollern a :Man,
+          :Person ;
+      :hasBirthYear 1954 .
+
+  data:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,
           :Man,
           :Person .
 
+  data:Margarita_of_Leiningen a :Ancestor,
+          :Person,
+          :Woman .
 
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (54e4ce55-330f-4c4c-9d48-a12fff06d704)
- Call ID: 54e4ce55-330f-4c4c-9d48-a12fff06d704
+  ValidateShacl (3d6f20cd-9263-461a-941d-c5bc512eceb1)
+ Call ID: 3d6f20cd-9263-461a-941d-c5bc512eceb1
   Args:
 
 ================================= Tool Message =================================
@@ -929,6 +742,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (979f5aaf-0470-4dc0-ba97-9722742191ee)
- Call ID: 979f5aaf-0470-4dc0-ba97-9722742191ee
+  Finish (dbe02370-893c-4815-b418-4d0a92bd578d)
+ Call ID: dbe02370-893c-4815-b418-4d0a92bd578d
   Args:

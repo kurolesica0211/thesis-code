@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isSiblingOf data:Prince_Philip .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Meghan_Duchess_of_Sussex a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Meghan_Duchess_of_Sussex ;
+    :hasSon data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAuntOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Meghan_Duchess_of_Sussex ;
+    :isMotherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSiblingOf data:Meghan_Duchess_of_Sussex ;
+    :isSisterOf data:Meghan_Duchess_of_Sussex .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Prince_Harry_Duke_of_Sussex ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasSon data:Prince_Harry_Duke_of_Sussex ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor,
+        data:Prince_Harry_Duke_of_Sussex ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isFatherOf data:Prince_Harry_Duke_of_Sussex ;
+    :isParentOf data:Prince_Harry_Duke_of_Sussex ;
+    :isSiblingOf data:King_Charles_III ;
+    :isUncleOf data:Prince_Harry_Duke_of_Sussex .
+
+data:Prince_Harry_Duke_of_Sussex a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Charles_III ;
+    :hasBrother data:Prince_Harry_Duke_of_Sussex ;
+    :hasChild data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasFather data:King_Charles_III ;
+    :hasParent data:King_Charles_III ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasSon data:Archie_Harrison_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Prince_Harry_Duke_of_Sussex ;
+    :isBrotherOf data:Prince_Harry_Duke_of_Sussex ;
+    :isChildOf data:King_Charles_III ;
+    :isFatherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Harry_Duke_of_Sussex ;
+    :isSonOf data:King_Charles_III ;
+    :isUncleOf data:Archie_Harrison_Mountbatten-Windsor .
+
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasAncestor data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 2019 ;
+    :hasBrother data:Archie_Harrison_Mountbatten-Windsor ;
+    :hasFather data:Prince_Harry_Duke_of_Sussex ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :hasParent data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex ;
+    :hasRelation data:Archie_Harrison_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isBrotherOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isChildOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex ;
+    :isSiblingOf data:Archie_Harrison_Mountbatten-Windsor ;
+    :isSonOf data:Meghan_Duchess_of_Sussex,
+        data:Prince_Harry_Duke_of_Sussex .
+

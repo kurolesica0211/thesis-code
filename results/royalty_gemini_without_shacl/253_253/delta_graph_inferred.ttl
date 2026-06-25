@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pieter_van_Vollenhoven a :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrix ;
+    :hasSister data:Princess_Beatrix ;
+    :isBloodrelationOf data:Princess_Beatrix ;
+    :isSiblingOf data:Princess_Beatrix ;
+    :isSisterOf data:Princess_Beatrix .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Queen_Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Claus-Casimir_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien,
+        data:Queen_Juliana ;
+    :hasSister data:Queen_Juliana ;
+    :isAncestorOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isBloodrelationOf data:Queen_Juliana ;
+    :isSiblingOf data:Queen_Juliana ;
+    :isSisterOf data:Queen_Juliana .
+
+data:Prince_Constantijn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Constantijn ;
+    :hasChild data:Claus-Casimir_of_Orange-Nassau ;
+    :hasRelation data:Claus-Casimir_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien,
+        data:Queen_Juliana ;
+    :hasSon data:Claus-Casimir_of_Orange-Nassau ;
+    :isAncestorOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isBloodrelationOf data:Prince_Constantijn ;
+    :isBrotherOf data:Prince_Constantijn ;
+    :isFatherOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isParentOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isSiblingOf data:Prince_Constantijn ;
+    :isUncleOf data:Claus-Casimir_of_Orange-Nassau .
+
+data:Princess_Laurentien a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Claus-Casimir_of_Orange-Nassau ;
+    :hasRelation data:Claus-Casimir_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien,
+        data:Queen_Juliana ;
+    :hasSister data:Princess_Laurentien ;
+    :hasSon data:Claus-Casimir_of_Orange-Nassau ;
+    :isAncestorOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isAuntOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isBloodrelationOf data:Princess_Laurentien ;
+    :isMotherOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isParentOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isSiblingOf data:Princess_Laurentien ;
+    :isSisterOf data:Princess_Laurentien .
+
+data:Claus-Casimir_of_Orange-Nassau a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Constantijn,
+        data:Princess_Laurentien,
+        data:Queen_Juliana ;
+    :hasBirthYear 2004 ;
+    :hasBrother data:Claus-Casimir_of_Orange-Nassau ;
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien ;
+    :hasParent data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :hasRelation data:Claus-Casimir_of_Orange-Nassau,
+        data:Prince_Constantijn,
+        data:Princess_Laurentien,
+        data:Queen_Juliana ;
+    :isBloodrelationOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isBrotherOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isChildOf data:Prince_Constantijn,
+        data:Princess_Laurentien ;
+    :isSiblingOf data:Claus-Casimir_of_Orange-Nassau ;
+    :isSonOf data:Prince_Constantijn,
+        data:Princess_Laurentien .
+

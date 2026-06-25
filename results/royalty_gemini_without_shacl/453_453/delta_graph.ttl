@@ -2,50 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_VI a :Man .
+data:John_Herbert_Bowes-Lyon a :Man ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1930 ;
+    :hasMarriageYear 1914 ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+    :isSonOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Countess_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Queen_Elizabeth_II .
 
-data:Ingrid a :Woman ;
-    :isMotherOf data:Anne-Marie .
+data:14th_Earl_of_Strathmore_and_Kinghorne a :Man .
 
-data:Mafalda a :Woman ;
-    :isDaughterOf data:Kyril .
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man .
 
-data:Maria-Olympia a :Woman .
+data:Countess_of_Strathmore_and_Kinghorne a :Woman .
 
-data:Sofia a :Woman ;
-    :isAuntOf data:Alexia .
+data:Elizabeth_Bowes-Lyon a :Woman .
 
-data:Carlos_Javier_Morales_Quintana a :Man .
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1966 ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
 
-data:Kyril a :Man ;
-    :isSonOf data:Simeon .
-
-data:Simeon a :Man .
-
-data:Pavlos a :Man ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie ;
-    :isBrotherOf data:Alexia .
-
-data:Theodora a :Woman ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie ;
-    :isSisterOf data:Alexia .
-
-data:Constantine_II a :Man ;
-    :isFatherOf data:Alexia,
-        data:Pavlos,
-        data:Theodora .
-
-data:Anne-Marie a :Woman ;
-    :isMotherOf data:Alexia,
-        data:Pavlos,
-        data:Theodora .
-
-data:Alexia a :Woman ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Constantine_II ;
-    :hasMarriageYear 1999 ;
-    :hasMother data:Anne-Marie ;
-    :hasRelation data:Carlos_Javier_Morales_Quintana .
+data:Queen_Elizabeth_II a :Woman .
 

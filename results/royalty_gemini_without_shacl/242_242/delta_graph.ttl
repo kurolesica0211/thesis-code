@@ -2,29 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:MarijaKara%C4%91or%C4%91evi%C4%87 a :Woman ;
-    :hasFather data:FilipKara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:DanicaMarinkovi%C4%87 .
+data:Princess_Marie_Alexandra_of_Baden a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasRelation data:Prince_Wolfgang_of_Hesse .
 
-data:StefanKara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasFather data:FilipKara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:DanicaMarinkovi%C4%87 .
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man .
 
-data:PeterKara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:MariaDaGloria .
+data:Grand_Duchess_Maria_Nikolaevna a :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1876 .
 
-data:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Man .
+data:Maximilian_Duke_of_Leuchtenberg a :Man ;
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1852 .
 
-data:FilipKara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasBirthYear 1982 ;
-    :hasBrother data:PeterKara%C4%91or%C4%91evi%C4%87 ;
-    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
-    :hasMarriageYear 2017 ;
-    :hasMother data:MariaDaGloria ;
-    :hasRelation data:DanicaMarinkovi%C4%87 .
+data:Prince_Maximilian_of_Baden a :Man ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 .
 
-data:MariaDaGloria a :Woman .
+data:Prince_Wilhelm_of_Baden a :Man ;
+    :hasBirthYear 1829 ;
+    :hasDeathYear 1897 .
 
-data:DanicaMarinkovi%C4%87 a :Woman .
+data:Prince_Wolfgang_of_Hesse a :Man ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 .
+
+data:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Woman ;
+    :hasBirthYear 1841 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasMother data:Grand_Duchess_Maria_Nikolaevna .
+
+data:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Woman ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
 

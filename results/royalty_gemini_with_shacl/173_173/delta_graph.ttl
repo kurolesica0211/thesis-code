@@ -2,39 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Katherine_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1913 ;
-    :hasBrother data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasDeathYear 2007 ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasSister data:Helen_of_Greece,
-        data:Irene_of_Greece ;
-    :knownAs "Lady Katherine Brandram"^^xsd:string .
-
-data:Alexander_of_Greece a :Man,
-        :Person .
-
-data:Constantine_I_of_Greece a :Ancestor,
+data:King_Paul_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:George_II_of_Greece a :Man,
-        :Person .
-
-data:Helen_of_Greece a :Person,
-        :Woman .
-
-data:Irene_of_Greece a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
-
-data:Sophia_of_Prussia a :Ancestor,
+data:Queen_Frederica a :Ancestor,
         :Person,
         :Woman .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2026 ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasMother data:Queen_Frederica ;
+    :isSisterOf data:King_Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain .
+
+data:King_Constantine_II_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:Irene_of_Greece_and_Denmark,
+        data:Queen_Sofia_of_Spain .
+
+data:Queen_Sofia_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Irene_of_Greece_and_Denmark,
+        data:King_Constantine_II_of_Greece .
 

@@ -2,23 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_von_Hohenzollern a :Person,
-        :Woman .
-
-data:Karl_Friedrich_von_Hohenzollern a :Man,
-        :Person ;
-    :hasBirthYear 1952 ;
-    :hasBrother data:Albrecht_von_Hohenzollern ;
-    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
-    :hasMother data:Margarita_of_Leiningen .
-
-data:Albrecht_von_Hohenzollern a :Man,
-        :Person ;
-    :hasBirthYear 1954 .
-
-data:Friedrich_Wilhelm_von_Hohenzollern a :Man,
+data:Carl_of_Leiningen a :Man,
         :Person .
 
-data:Margarita_of_Leiningen a :Person,
+data:Emich_Kirill a :Man,
+        :Person ;
+    :hasBirthYear 1926 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMother data:Maria_Kirillovna_of_Russia .
+
+data:Queen_Victoria a :Person,
         :Woman .
+
+data:Ileana_of_Romania a :Person,
+        :Woman .
+
+data:Karl_6th_Prince_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 .
+
+data:Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
+
+data:Maria_Alexandrovna_of_Russia a :Person,
+        :Woman .
+
+data:Maria_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Victoria_Melita_of_Edinburgh ;
+    :hasRelation data:Marie_of_Romania ;
+    :isSiblingOf data:Ileana_of_Romania .
+
+data:Marie_of_Romania a :Person,
+        :Woman .
+
+data:Victoria_Melita_of_Edinburgh a :Person,
+        :Woman ;
+    :hasMother data:Maria_Alexandrovna_of_Russia .
 

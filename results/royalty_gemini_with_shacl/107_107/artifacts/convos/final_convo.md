@@ -130,6 +130,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -145,39 +147,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -192,6 +164,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -209,6 +198,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,29 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,6 +303,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -319,6 +323,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -327,17 +333,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -365,6 +373,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -380,210 +472,273 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ad3769fd-5f19-48f6-a7c2-0183cd19fa62)
- Call ID: ad3769fd-5f19-48f6-a7c2-0183cd19fa62
+  AssignClass (57e2b23f-eea0-41db-8c30-49a62dea764c)
+ Call ID: 57e2b23f-eea0-41db-8c30-49a62dea764c
   Args:
     type: :Man
-    source: :Bernhard_van_Vollenhoven
-  AssignClass (26d1a9aa-10fc-4ddc-9830-6515339ba190)
- Call ID: 26d1a9aa-10fc-4ddc-9830-6515339ba190
+    source: :Prince_Bernhard_van_Vollenhoven
+  AssignClass (e030a48a-2219-4768-a47e-8fcc1e9cdb8c)
+ Call ID: e030a48a-2219-4768-a47e-8fcc1e9cdb8c
   Args:
-    source: :Bernhard_van_Vollenhoven
+    source: :Prince_Bernhard_van_Vollenhoven
     type: :Person
-  AssignClass (7052e8d4-3cc4-4947-8a6d-4f2a35ba07c9)
- Call ID: 7052e8d4-3cc4-4947-8a6d-4f2a35ba07c9
+  AssignClass (0d6f9780-b128-45a5-ac1a-f3cb6f3475f2)
+ Call ID: 0d6f9780-b128-45a5-ac1a-f3cb6f3475f2
   Args:
     type: :Woman
-    source: :Annette_Sekreve
-  AssignClass (5bfdd7df-1954-4a2c-a67d-826d40db47db)
- Call ID: 5bfdd7df-1954-4a2c-a67d-826d40db47db
+    source: :Princess_Margriet
+  AssignClass (c17062de-fdf1-456f-b377-498889dfaf74)
+ Call ID: c17062de-fdf1-456f-b377-498889dfaf74
   Args:
     type: :Person
-    source: :Annette_Sekreve
-  AssignClass (feb99ad9-f2fa-4b9f-afdc-4424078d0c66)
- Call ID: feb99ad9-f2fa-4b9f-afdc-4424078d0c66
-  Args:
     source: :Princess_Margriet
-    type: :Woman
-  AssignClass (abc2a78a-0c08-4460-b456-38c60b9bcddf)
- Call ID: abc2a78a-0c08-4460-b456-38c60b9bcddf
-  Args:
-    source: :Princess_Margriet
-    type: :Person
-  AssignClass (099dde42-2439-47a3-8dd4-0e799a9afcfe)
- Call ID: 099dde42-2439-47a3-8dd4-0e799a9afcfe
+  AssignClass (ff560c50-91e3-43fe-90f5-8580cecc674b)
+ Call ID: ff560c50-91e3-43fe-90f5-8580cecc674b
   Args:
     type: :Man
     source: :Pieter_van_Vollenhoven
-  AssignClass (21d14300-b7dc-4514-a45a-b697e8893bb5)
- Call ID: 21d14300-b7dc-4514-a45a-b697e8893bb5
+  AssignClass (f664c958-faff-4533-99ae-6cdf21e3dc5b)
+ Call ID: f664c958-faff-4533-99ae-6cdf21e3dc5b
   Args:
     source: :Pieter_van_Vollenhoven
     type: :Person
-  AssignClass (a27ec1b9-cef2-4748-8cfd-1b5fe495ed68)
- Call ID: a27ec1b9-cef2-4748-8cfd-1b5fe495ed68
+  AssignClass (74740a49-dc97-479b-af04-7a2cf01a80a0)
+ Call ID: 74740a49-dc97-479b-af04-7a2cf01a80a0
   Args:
     source: :Prince_Maurits
     type: :Man
-  AssignClass (c4d8c826-cb06-4cbd-b43d-a210470e5d83)
- Call ID: c4d8c826-cb06-4cbd-b43d-a210470e5d83
+  AssignClass (2d1fa2c6-f57d-404e-a683-c01d8670e024)
+ Call ID: 2d1fa2c6-f57d-404e-a683-c01d8670e024
   Args:
     type: :Person
     source: :Prince_Maurits
-  AssignClass (492ce60c-3b75-44da-8ab0-0fa0aeeb5d5a)
- Call ID: 492ce60c-3b75-44da-8ab0-0fa0aeeb5d5a
+  AssignClass (02970c8d-4383-415b-b4ae-78e58c4e25bd)
+ Call ID: 02970c8d-4383-415b-b4ae-78e58c4e25bd
   Args:
-    type: :Man
     source: :Prince_Pieter-Christiaan
-  AssignClass (48390a1d-0711-415e-a627-45e177a3df45)
- Call ID: 48390a1d-0711-415e-a627-45e177a3df45
+    type: :Man
+  AssignClass (6d2580c2-4da6-4ad1-9400-f8311519724c)
+ Call ID: 6d2580c2-4da6-4ad1-9400-f8311519724c
   Args:
     source: :Prince_Pieter-Christiaan
     type: :Person
-  AssignClass (f4008105-07e7-4e39-a8d0-751b06f7fb0e)
- Call ID: f4008105-07e7-4e39-a8d0-751b06f7fb0e
+  AssignClass (859f56a0-ea7e-4dd8-9547-bfb5667792d2)
+ Call ID: 859f56a0-ea7e-4dd8-9547-bfb5667792d2
+  Args:
+    type: :Man
+    source: :Prince_Floris
+  AssignClass (93f11f6d-d7e7-4047-93ce-c9c5b0db6c1e)
+ Call ID: 93f11f6d-d7e7-4047-93ce-c9c5b0db6c1e
   Args:
     source: :Prince_Floris
-    type: :Man
-  AssignClass (b4343c71-d331-43f5-a020-18883b0368da)
- Call ID: b4343c71-d331-43f5-a020-18883b0368da
+    type: :Person
+  AssignClass (11c916da-5fff-43dd-a7ef-77392079e303)
+ Call ID: 11c916da-5fff-43dd-a7ef-77392079e303
+  Args:
+    source: :Annette_Sekreve
+    type: :Woman
+  AssignClass (e2e0f48c-f398-41b1-bc2e-f30c8184efbd)
+ Call ID: e2e0f48c-f398-41b1-bc2e-f30c8184efbd
   Args:
     type: :Person
-    source: :Prince_Floris
-  AssignClass (8daf58ad-c821-4db2-9f39-777eb49f65ca)
- Call ID: 8daf58ad-c821-4db2-9f39-777eb49f65ca
+    source: :Annette_Sekreve
+  AssignClass (86c64d19-6698-4ab5-ad02-c797b1b366d9)
+ Call ID: 86c64d19-6698-4ab5-ad02-c797b1b366d9
   Args:
     type: :Woman
     source: :Isabella_Lily_Juliana_van_Vollenhoven
-  AssignClass (ec772f0b-f9cf-44a8-84de-7250e37b4baa)
- Call ID: ec772f0b-f9cf-44a8-84de-7250e37b4baa
+  AssignClass (e1b18af9-0eb7-437b-890c-70c030089a2f)
+ Call ID: e1b18af9-0eb7-437b-890c-70c030089a2f
   Args:
     source: :Isabella_Lily_Juliana_van_Vollenhoven
     type: :Person
-  AssignClass (834388c9-0981-4582-9365-ddea7f06e590)
- Call ID: 834388c9-0981-4582-9365-ddea7f06e590
-  Args:
-    type: :Man
-    source: :Samuel_Bernhard_Louis_van_Vollenhoven
-  AssignClass (577b682d-3e58-4731-8739-8b91c6d71157)
- Call ID: 577b682d-3e58-4731-8739-8b91c6d71157
+  AssignClass (fa6ec669-c1b2-4ff4-83b1-233b47346263)
+ Call ID: fa6ec669-c1b2-4ff4-83b1-233b47346263
   Args:
     source: :Samuel_Bernhard_Louis_van_Vollenhoven
-    type: :Person
-  AssignClass (bf380b72-b946-4c23-9fc7-48899515643c)
- Call ID: bf380b72-b946-4c23-9fc7-48899515643c
-  Args:
-    source: :Benjamin_Pieter_Floris_van_Vollenhoven
     type: :Man
-  AssignClass (2a4a8170-4c7e-4a1e-bf45-8641e87aedd4)
- Call ID: 2a4a8170-4c7e-4a1e-bf45-8641e87aedd4
+  AssignClass (1e3c9906-dcc0-45a8-bbc4-bff497dfcc0b)
+ Call ID: 1e3c9906-dcc0-45a8-bbc4-bff497dfcc0b
+  Args:
+    type: :Person
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+  AssignClass (5922af48-533e-4516-8b2b-d070fff0dc70)
+ Call ID: 5922af48-533e-4516-8b2b-d070fff0dc70
+  Args:
+    type: :Man
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
+  AssignClass (290d7a21-3f4c-4844-8f2e-377d80d070b7)
+ Call ID: 290d7a21-3f4c-4844-8f2e-377d80d070b7
   Args:
     source: :Benjamin_Pieter_Floris_van_Vollenhoven
     type: :Person
-  AddLiteral (9efd08df-1ed0-4c65-9076-c6df6ad5def5)
- Call ID: 9efd08df-1ed0-4c65-9076-c6df6ad5def5
+  AddLiteral (63406f07-c903-4848-bde0-a849098a3e6f)
+ Call ID: 63406f07-c903-4848-bde0-a849098a3e6f
   Args:
-    source: :Bernhard_van_Vollenhoven
+    literal_value: 1969
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1969
-  AddTriple (a6317129-5112-4424-b345-e5f65809ac57)
- Call ID: a6317129-5112-4424-b345-e5f65809ac57
+    source: :Prince_Bernhard_van_Vollenhoven
+  AddTriple (a15ffbce-2571-4424-8e59-8b3a5864e3fb)
+ Call ID: a15ffbce-2571-4424-8e59-8b3a5864e3fb
   Args:
-    source: :Bernhard_van_Vollenhoven
-    relation: :hasMother
+    source: :Prince_Bernhard_van_Vollenhoven
     target: :Princess_Margriet
-  AddTriple (238e0f06-377e-46c9-bf85-bb441165dbbf)
- Call ID: 238e0f06-377e-46c9-bf85-bb441165dbbf
+    relation: :hasMother
+  AddTriple (ba07cd21-fc4c-4519-9b5c-991cbca954bd)
+ Call ID: ba07cd21-fc4c-4519-9b5c-991cbca954bd
   Args:
     relation: :hasFather
     target: :Pieter_van_Vollenhoven
-    source: :Bernhard_van_Vollenhoven
-  AddTriple (1bd85242-a0c3-4382-9e7c-ef1ff7ca31e5)
- Call ID: 1bd85242-a0c3-4382-9e7c-ef1ff7ca31e5
+    source: :Prince_Bernhard_van_Vollenhoven
+  AddTriple (2087b9ba-788a-4f9f-80dd-7e08b1fe3d40)
+ Call ID: 2087b9ba-788a-4f9f-80dd-7e08b1fe3d40
   Args:
-    source: :Bernhard_van_Vollenhoven
-    relation: :hasBrother
-    target: :Prince_Maurits
-  AddTriple (c489cefc-412e-4fdd-85e2-b0c03795842d)
- Call ID: c489cefc-412e-4fdd-85e2-b0c03795842d
+    source: :Prince_Maurits
+    target: :Prince_Bernhard_van_Vollenhoven
+    relation: :isBrotherOf
+  AddTriple (7a7884d4-b368-46ad-a360-17eeaca29cf2)
+ Call ID: 7a7884d4-b368-46ad-a360-17eeaca29cf2
   Args:
-    target: :Prince_Pieter-Christiaan
-    relation: :hasBrother
-    source: :Bernhard_van_Vollenhoven
-  AddTriple (60a198c5-8a77-4fb7-83ca-3bd410f8feaf)
- Call ID: 60a198c5-8a77-4fb7-83ca-3bd410f8feaf
+    source: :Prince_Pieter-Christiaan
+    target: :Prince_Bernhard_van_Vollenhoven
+    relation: :isBrotherOf
+  AddTriple (ebf3e962-663d-498d-96e7-502daf914328)
+ Call ID: ebf3e962-663d-498d-96e7-502daf914328
   Args:
-    relation: :hasBrother
-    target: :Prince_Floris
-    source: :Bernhard_van_Vollenhoven
-  AddTriple (38c69f4c-0d90-4525-8471-c774932d87f5)
- Call ID: 38c69f4c-0d90-4525-8471-c774932d87f5
+    source: :Prince_Floris
+    target: :Prince_Bernhard_van_Vollenhoven
+    relation: :isBrotherOf
+  AddTriple (4e874c21-437a-4991-b725-57c6310ed437)
+ Call ID: 4e874c21-437a-4991-b725-57c6310ed437
   Args:
-    source: :Bernhard_van_Vollenhoven
-    relation: :hasChild
-    target: :Isabella_Lily_Juliana_van_Vollenhoven
-  AddTriple (9a5042ee-5385-4e31-b3ab-f3d86117a7b8)
- Call ID: 9a5042ee-5385-4e31-b3ab-f3d86117a7b8
+    relation: :hasMother
+    target: :Princess_Margriet
+    source: :Prince_Maurits
+  AddTriple (d5f19bc1-13ca-4e4b-8708-a83bdf64738a)
+ Call ID: d5f19bc1-13ca-4e4b-8708-a83bdf64738a
   Args:
-    source: :Bernhard_van_Vollenhoven
-    relation: :hasChild
-    target: :Samuel_Bernhard_Louis_van_Vollenhoven
-  AddTriple (9d7226df-cd1c-4435-a44c-f51ef51fa758)
- Call ID: 9d7226df-cd1c-4435-a44c-f51ef51fa758
+    source: :Prince_Maurits
+    target: :Pieter_van_Vollenhoven
+    relation: :hasFather
+  AddTriple (5675bae0-4b38-46ba-868d-922a771a628b)
+ Call ID: 5675bae0-4b38-46ba-868d-922a771a628b
   Args:
-    source: :Bernhard_van_Vollenhoven
-    target: :Benjamin_Pieter_Floris_van_Vollenhoven
-    relation: :hasChild
-  AddTriple (529ed02b-137a-4346-aa80-f6a5404b32cb)
- Call ID: 529ed02b-137a-4346-aa80-f6a5404b32cb
+    relation: :hasMother
+    target: :Princess_Margriet
+    source: :Prince_Pieter-Christiaan
+  AddTriple (2b21e36a-006c-4969-8c93-32e46c9f0075)
+ Call ID: 2b21e36a-006c-4969-8c93-32e46c9f0075
   Args:
-    target: :Isabella_Lily_Juliana_van_Vollenhoven
-    relation: :hasChild
-    source: :Annette_Sekreve
-  AddTriple (1f000a32-a9fb-4aa6-b1cf-6f0205767a36)
- Call ID: 1f000a32-a9fb-4aa6-b1cf-6f0205767a36
+    relation: :hasFather
+    target: :Pieter_van_Vollenhoven
+    source: :Prince_Pieter-Christiaan
+  AddTriple (0dbd069b-328f-42e9-be96-a5595f1669ed)
+ Call ID: 0dbd069b-328f-42e9-be96-a5595f1669ed
   Args:
-    relation: :hasChild
-    target: :Samuel_Bernhard_Louis_van_Vollenhoven
-    source: :Annette_Sekreve
-  AddTriple (5d1f072c-4c38-4dac-998d-ef5a9e44f7bc)
- Call ID: 5d1f072c-4c38-4dac-998d-ef5a9e44f7bc
+    source: :Prince_Floris
+    target: :Princess_Margriet
+    relation: :hasMother
+  AddTriple (3243c54c-1884-4d5e-ba11-6dd11bb6a358)
+ Call ID: 3243c54c-1884-4d5e-ba11-6dd11bb6a358
   Args:
-    source: :Annette_Sekreve
-    relation: :hasChild
-    target: :Benjamin_Pieter_Floris_van_Vollenhoven
-  AddLiteral (a1b739b9-d012-44ca-8b1b-feacb06a5c98)
- Call ID: a1b739b9-d012-44ca-8b1b-feacb06a5c98
+    source: :Prince_Floris
+    relation: :hasFather
+    target: :Pieter_van_Vollenhoven
+  AddLiteral (e7b74da5-a096-4c84-8499-7aee6f22a535)
+ Call ID: e7b74da5-a096-4c84-8499-7aee6f22a535
   Args:
-    relation: :hasBirthYear
     literal_value: 1972
     literal_type: xsd:integer
+    relation: :hasBirthYear
     source: :Annette_Sekreve
-  AddLiteral (45ea5965-3d14-4643-a0ee-b4c717ef3639)
- Call ID: 45ea5965-3d14-4643-a0ee-b4c717ef3639
+  AddTriple (9551d488-393e-42ad-9959-2edd4c09ddef)
+ Call ID: 9551d488-393e-42ad-9959-2edd4c09ddef
   Args:
-    literal_type: xsd:integer
+    source: :Prince_Bernhard_van_Vollenhoven
+    target: :Isabella_Lily_Juliana_van_Vollenhoven
+    relation: :hasChild
+  AddTriple (980fa360-b52a-4534-acbb-46d54af79ac6)
+ Call ID: 980fa360-b52a-4534-acbb-46d54af79ac6
+  Args:
+    target: :Isabella_Lily_Juliana_van_Vollenhoven
+    relation: :hasChild
+    source: :Annette_Sekreve
+  AddTriple (2313d5e9-b3c4-452c-afc1-20307a41444a)
+ Call ID: 2313d5e9-b3c4-452c-afc1-20307a41444a
+  Args:
+    source: :Prince_Bernhard_van_Vollenhoven
+    target: :Samuel_Bernhard_Louis_van_Vollenhoven
+    relation: :hasChild
+  AddTriple (2ccfb4f5-6f4f-4102-9fab-d1975f5e5aa2)
+ Call ID: 2ccfb4f5-6f4f-4102-9fab-d1975f5e5aa2
+  Args:
+    target: :Samuel_Bernhard_Louis_van_Vollenhoven
+    relation: :hasChild
+    source: :Annette_Sekreve
+  AddTriple (52184bef-aa6b-41fe-b18e-63ddb21b11bc)
+ Call ID: 52184bef-aa6b-41fe-b18e-63ddb21b11bc
+  Args:
+    source: :Prince_Bernhard_van_Vollenhoven
+    target: :Benjamin_Pieter_Floris_van_Vollenhoven
+    relation: :hasChild
+  AddTriple (db00f5b1-f354-4855-a691-8c5ef9c16b5e)
+ Call ID: db00f5b1-f354-4855-a691-8c5ef9c16b5e
+  Args:
+    source: :Annette_Sekreve
+    target: :Benjamin_Pieter_Floris_van_Vollenhoven
+    relation: :hasChild
+  AddLiteral (6ec40c71-5f7c-4afd-994c-11d402eca887)
+ Call ID: 6ec40c71-5f7c-4afd-994c-11d402eca887
+  Args:
     source: :Isabella_Lily_Juliana_van_Vollenhoven
     relation: :hasBirthYear
     literal_value: 2002
-  AddLiteral (750873a4-cfd6-4a9a-92aa-c2d73798a2fd)
- Call ID: 750873a4-cfd6-4a9a-92aa-c2d73798a2fd
-  Args:
-    source: :Samuel_Bernhard_Louis_van_Vollenhoven
     literal_type: xsd:integer
-    relation: :hasBirthYear
+  AddLiteral (8cf4dd6b-004b-4c80-986e-12ca0ed07017)
+ Call ID: 8cf4dd6b-004b-4c80-986e-12ca0ed07017
+  Args:
+    literal_type: xsd:integer
     literal_value: 2004
-  AddLiteral (7dda3f2f-2936-4809-848e-0fd807803f67)
- Call ID: 7dda3f2f-2936-4809-848e-0fd807803f67
-  Args:
     relation: :hasBirthYear
-    literal_value: 2008
-    source: :Benjamin_Pieter_Floris_van_Vollenhoven
-    literal_type: xsd:integer
-  Finish (7d4a850b-7172-45f6-9471-2ed2bb476713)
- Call ID: 7d4a850b-7172-45f6-9471-2ed2bb476713
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+  AddLiteral (a09f4430-242b-4dad-a2d8-a3ea7fe91e66)
+ Call ID: a09f4430-242b-4dad-a2d8-a3ea7fe91e66
   Args:
+    literal_value: 2008
+    literal_type: xsd:integer
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
+    relation: :hasBirthYear
+  ValidateShacl (84866cf5-1fde-4f20-b883-6df5c08df338)
+ Call ID: 84866cf5-1fde-4f20-b883-6df5c08df338
+  Args:
+  Finish (61d07a8d-259e-4a38-a81a-060ebe39f2ed)
+ Call ID: 61d07a8d-259e-4a38-a81a-060ebe39f2ed
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -739,32 +894,23 @@ The final data graph after all the edits:
           data:Isabella_Lily_Juliana_van_Vollenhoven,
           data:Samuel_Bernhard_Louis_van_Vollenhoven .
 
-  data:Bernhard_van_Vollenhoven a :Man,
-          :Person ;
-      :hasBirthYear 1969 ;
-      :hasBrother data:Prince_Floris,
-          data:Prince_Maurits,
-          data:Prince_Pieter-Christiaan ;
-      :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
-          data:Isabella_Lily_Juliana_van_Vollenhoven,
-          data:Samuel_Bernhard_Louis_van_Vollenhoven ;
-      :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMother data:Princess_Margriet .
-
-  data:Pieter_van_Vollenhoven a :Man,
-          :Person .
-
   data:Prince_Floris a :Man,
-          :Person .
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
 
   data:Prince_Maurits a :Man,
-          :Person .
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
 
   data:Prince_Pieter-Christiaan a :Man,
-          :Person .
-
-  data:Princess_Margriet a :Person,
-          :Woman .
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
 
   data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
           :Person ;
@@ -777,6 +923,221 @@ The final data graph after all the edits:
   data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
           :Person ;
       :hasBirthYear 2004 .
+
+  data:Prince_Bernhard_van_Vollenhoven a :Man,
+          :Person ;
+      :hasBirthYear 1969 ;
+      :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+          data:Isabella_Lily_Juliana_van_Vollenhoven,
+          data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet .
+
+  data:Pieter_van_Vollenhoven a :Man,
+          :Person .
+
+  data:Princess_Margriet a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:24
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Pieter_van_Vollenhoven' assigned as the father of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Maurits' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Pieter-Christiaan' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Floris' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margriet' assigned as the mother of 'Prince_Bernhard_van_Vollenhoven' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
 
 
 
@@ -788,82 +1149,984 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (80d4b77d-6e4f-484a-b77d-0685942ae849)
- Call ID: 80d4b77d-6e4f-484a-b77d-0685942ae849
+  AssignClass (40f4525d-5d37-4316-9b33-3c9ee4ac6edc)
+ Call ID: 40f4525d-5d37-4316-9b33-3c9ee4ac6edc
+  Args:
+    type: :Ancestor
+    source: :Pieter_van_Vollenhoven
+  AssignClass (d5af29f0-6590-4e0b-9b1e-df8d6ed4bc02)
+ Call ID: d5af29f0-6590-4e0b-9b1e-df8d6ed4bc02
+  Args:
+    source: :Princess_Margriet
+    type: :Ancestor
+  AssignClass (3080e257-e748-42a6-8a80-c115aba8513a)
+ Call ID: 3080e257-e748-42a6-8a80-c115aba8513a
+  Args:
+    type: :Ancestor
+    source: :Prince_Bernhard_van_Vollenhoven
+  AssignClass (d9644263-a26b-488c-a0ad-c22b3695fe57)
+ Call ID: d9644263-a26b-488c-a0ad-c22b3695fe57
+  Args:
+    source: :Annette_Sekreve
+    type: :Ancestor
+  AddTriple (0809af18-61d6-43d8-9e9a-73a0ad3d8713)
+ Call ID: 0809af18-61d6-43d8-9e9a-73a0ad3d8713
+  Args:
+    target: :Male
+    source: :Prince_Bernhard_van_Vollenhoven
+    relation: :hasSex
+  AddTriple (40e790b6-52d6-42fb-87c0-b3b0680dad90)
+ Call ID: 40e790b6-52d6-42fb-87c0-b3b0680dad90
+  Args:
+    relation: :hasSex
+    source: :Princess_Margriet
+    target: :Female
+  AddTriple (c717cf23-4837-4c6a-af28-41d97f30dd5e)
+ Call ID: c717cf23-4837-4c6a-af28-41d97f30dd5e
+  Args:
+    source: :Pieter_van_Vollenhoven
+    target: :Male
+    relation: :hasSex
+  AddTriple (c4981e41-e87b-4468-945b-ca28c3549637)
+ Call ID: c4981e41-e87b-4468-945b-ca28c3549637
+  Args:
+    relation: :hasSex
+    source: :Prince_Maurits
+    target: :Male
+  AddTriple (844cb9ac-9458-498d-b76c-fc9b30fa63fc)
+ Call ID: 844cb9ac-9458-498d-b76c-fc9b30fa63fc
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Prince_Pieter-Christiaan
+  AddTriple (a73c8c62-49b6-4546-b620-3222b24ed723)
+ Call ID: a73c8c62-49b6-4546-b620-3222b24ed723
+  Args:
+    relation: :hasSex
+    source: :Prince_Floris
+    target: :Male
+  AddTriple (4ba2f5cb-ba2e-4150-835a-c5e28a691e81)
+ Call ID: 4ba2f5cb-ba2e-4150-835a-c5e28a691e81
+  Args:
+    source: :Annette_Sekreve
+    target: :Female
+    relation: :hasSex
+  AddTriple (745f4257-3776-480f-b362-24acaadd3ca0)
+ Call ID: 745f4257-3776-480f-b362-24acaadd3ca0
+  Args:
+    source: :Isabella_Lily_Juliana_van_Vollenhoven
+    target: :Female
+    relation: :hasSex
+  AddTriple (88d79158-9700-427f-8821-89e8f9bbefb7)
+ Call ID: 88d79158-9700-427f-8821-89e8f9bbefb7
+  Args:
+    relation: :hasSex
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+    target: :Male
+  AddTriple (8e5d5de2-d4e3-4ee0-9800-1008e4209c85)
+ Call ID: 8e5d5de2-d4e3-4ee0-9800-1008e4209c85
+  Args:
+    target: :Male
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
+    relation: :hasSex
+  ValidateShacl (2d93aa9d-ca0f-42bf-af0a-7d4ba5e2b864)
+ Call ID: 2d93aa9d-ca0f-42bf-af0a-7d4ba5e2b864
+  Args:
+  Finish (a1370060-735f-417b-87e3-0ef2a588a90c)
+ Call ID: a1370060-735f-417b-87e3-0ef2a588a90c
   Args:
 
 ================================= Tool Message =================================
 
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Annette_Sekreve a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1972 ;
+      :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+          data:Isabella_Lily_Juliana_van_Vollenhoven,
+          data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+      :hasSex data:Female .
+
+  data:Prince_Floris a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Prince_Maurits a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Prince_Pieter-Christiaan a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
+          :Person ;
+      :hasBirthYear 2008 ;
+      :hasSex data:Male .
+
+  data:Isabella_Lily_Juliana_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasBirthYear 2002 ;
+      :hasSex data:Female .
+
+  data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
+          :Person ;
+      :hasBirthYear 2004 ;
+      :hasSex data:Male .
+
+  data:Prince_Bernhard_van_Vollenhoven a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1969 ;
+      :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+          data:Isabella_Lily_Juliana_van_Vollenhoven,
+          data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male .
+
+  data:Pieter_van_Vollenhoven a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Princess_Margriet a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+
+
+================================= Tool Message =================================
+
 VALIDATION RESULTS
-Total violations:6
+Total violations:92
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is assigned as the father of Bernhard_van_Vollenhoven, but it lacks the required class :Ancestor.
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Princess_Margriet is assigned as the mother of Bernhard_van_Vollenhoven, but it lacks the required class :Ancestor.
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is missing the :Ancestor class classification for the :hasFather relation.
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Princess_Margriet is missing the :Ancestor class classification for the :hasMother relation.
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is missing the :Ancestor class classification for the :hasFather relation.
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Princess_Margriet is missing the :Ancestor class classification for the :hasMother relation.
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [45]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [50]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [51]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [52]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [53]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [54]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [55]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [56]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [57]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [58]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [59]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [60]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [61]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [62]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [63]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [64]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [65]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [66]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [67]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [68]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [69]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [70]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [71]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [72]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [73]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [74]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [75]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [76]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [77]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Pieter_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [78]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Maurits' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [79]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Pieter-Christiaan' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [80]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Samuel_Bernhard_Louis_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [81]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [82]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Floris' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [83]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [84]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [85]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Prince_Bernhard_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [86]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Benjamin_Pieter_Floris_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [87]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [88]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [89]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [90]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Princess_Margriet' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [91]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Isabella_Lily_Juliana_van_Vollenhoven' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+
+
+  Violation [92]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'Annette_Sekreve' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
 
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AssignClass (41c4f176-eed1-4824-a718-560e36ff947e)
- Call ID: 41c4f176-eed1-4824-a718-560e36ff947e
+  AssignClass (d6ab2817-d371-4564-a8cf-ac2c78ad58d0)
+ Call ID: d6ab2817-d371-4564-a8cf-ac2c78ad58d0
   Args:
-    source: :Pieter_van_Vollenhoven
-    type: :Ancestor
-  AssignClass (0feb2d7a-9df1-4e89-bf3d-7ae7f00806b9)
- Call ID: 0feb2d7a-9df1-4e89-bf3d-7ae7f00806b9
+    source: :Male
+    type: :Sex
+  AssignClass (9ebe179d-f871-46d1-a01f-e38d23cba6c6)
+ Call ID: 9ebe179d-f871-46d1-a01f-e38d23cba6c6
   Args:
-    type: :Ancestor
-    source: :Princess_Margriet
-  ValidateShacl (a5d8029d-9ac3-46d2-833e-fc6fce3c0474)
- Call ID: a5d8029d-9ac3-46d2-833e-fc6fce3c0474
+    source: :Female
+    type: :Sex
+  ValidateShacl (dac09a15-4659-41e3-8cbd-2d0a57251237)
+ Call ID: dac09a15-4659-41e3-8cbd-2d0a57251237
   Args:
 
 ================================= Tool Message =================================
@@ -877,53 +2140,75 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Annette_Sekreve a :Person,
+  data:Annette_Sekreve a :Ancestor,
+          :Person,
           :Woman ;
       :hasBirthYear 1972 ;
       :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
           data:Isabella_Lily_Juliana_van_Vollenhoven,
-          data:Samuel_Bernhard_Louis_van_Vollenhoven .
+          data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+      :hasSex data:Female .
 
-  data:Bernhard_van_Vollenhoven a :Man,
+  data:Prince_Floris a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Prince_Maurits a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Prince_Pieter-Christiaan a :Man,
+          :Person ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male ;
+      :isBrotherOf data:Prince_Bernhard_van_Vollenhoven .
+
+  data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
+          :Person ;
+      :hasBirthYear 2008 ;
+      :hasSex data:Male .
+
+  data:Isabella_Lily_Juliana_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasBirthYear 2002 ;
+      :hasSex data:Female .
+
+  data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
+          :Person ;
+      :hasBirthYear 2004 ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Prince_Bernhard_van_Vollenhoven a :Ancestor,
+          :Man,
           :Person ;
       :hasBirthYear 1969 ;
-      :hasBrother data:Prince_Floris,
-          data:Prince_Maurits,
-          data:Prince_Pieter-Christiaan ;
       :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
           data:Isabella_Lily_Juliana_van_Vollenhoven,
           data:Samuel_Bernhard_Louis_van_Vollenhoven ;
       :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMother data:Princess_Margriet .
+      :hasMother data:Princess_Margriet ;
+      :hasSex data:Male .
 
   data:Pieter_van_Vollenhoven a :Ancestor,
           :Man,
-          :Person .
-
-  data:Prince_Floris a :Man,
-          :Person .
-
-  data:Prince_Maurits a :Man,
-          :Person .
-
-  data:Prince_Pieter-Christiaan a :Man,
-          :Person .
+          :Person ;
+      :hasSex data:Male .
 
   data:Princess_Margriet a :Ancestor,
           :Person,
-          :Woman .
-
-  data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
-          :Person ;
-      :hasBirthYear 2008 .
-
-  data:Isabella_Lily_Juliana_van_Vollenhoven a :Person,
           :Woman ;
-      :hasBirthYear 2002 .
+      :hasSex data:Female .
 
-  data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
-          :Person ;
-      :hasBirthYear 2004 .
+  data:Male a :Sex .
 
 
 
@@ -935,6 +2220,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c8a35018-2c8a-4dec-ba20-61341edf7f45)
- Call ID: c8a35018-2c8a-4dec-ba20-61341edf7f45
+  Finish (ba6d5dae-6d7c-4ea4-bc7a-49b5cb1901e2)
+ Call ID: ba6d5dae-6d7c-4ea4-bc7a-49b5cb1901e2
   Args:

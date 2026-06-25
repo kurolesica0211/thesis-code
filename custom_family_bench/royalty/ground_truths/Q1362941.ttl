@@ -7,10 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Pedro_Henrique_de_Orléans_e_Bragança a :Person ;
+    rdfs:label "Pedro Henrique de Orléans e Bragança" ;
+    data:wdtLink wdt:Q1362941 ;
+    :hasParent data:Luís_de_Orléans_e_Bragança,
+        data:Princess_Maria_Pia_of_the_Two_Sicilies ;
+    :hasSex data:male .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person ;
     rdfs:label "Princess Maria Elisabeth of Bavaria" ;
     data:posIndicesFull "2080:2115" ;
     data:wdtLink wdt:Q285326 ;
@@ -24,10 +28,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Luís_de_Orléans_e_Bragança a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Luís_de_Orléans_e_Bragança a :Person ;
     rdfs:label "Luís de Orléans e Bragança" ;
     data:posIndicesFull "163:194",
         "170:194",
@@ -38,16 +39,9 @@ data:Luís_de_Orléans_e_Bragança a :Ancestor,
     data:wdtLink wdt:Q2617325 ;
     :alsoKnownAs "Luis of Orleans-Braganza",
         "Prince Luís of Orléans-Braganza" ;
-    :hasChild data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :hasSex data:male ;
-    :hasSon data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :isFatherOf data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :isParentOf data:Pedro_Henrique_de_Orléans_e_Bragança .
+    :hasSex data:male .
 
-data:Prince_Alfonso-_Count_of_Caserta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Alfonso-_Count_of_Caserta a :Person ;
     rdfs:label "Prince Alfonso, Count of Caserta" ;
     data:posIndicesFull "776:808" ;
     data:posIndicesPart "1191:1197",
@@ -58,32 +52,9 @@ data:Prince_Alfonso-_Count_of_Caserta a :Ancestor,
         "995:1000" ;
     data:wdtLink wdt:Q439014 ;
     :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
-    :hasChild data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasDaughter data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :isParentOf data:Princess_Maria_Pia_of_the_Two_Sicilies .
+    :hasSex data:male .
 
-data:Pedro_Henrique_de_Orléans_e_Bragança a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Pedro Henrique de Orléans e Bragança" ;
-    data:wdtLink wdt:Q1362941 ;
-    :hasFather data:Luís_de_Orléans_e_Bragança ;
-    :hasMother data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasParent data:Luís_de_Orléans_e_Bragança,
-        data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :isChildOf data:Luís_de_Orléans_e_Bragança,
-        data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :isSonOf data:Luís_de_Orléans_e_Bragança,
-        data:Princess_Maria_Pia_of_the_Two_Sicilies .
-
-data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_Pia_of_the_Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Pia of the Two Sicilies" ;
     data:posIndicesFull "199:223" ;
     data:posIndicesPart "1090:1098",
@@ -108,13 +79,10 @@ data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
     data:wdtLink wdt:Q2624237 ;
     :alsoKnownAs "Maria Pia di Borbone-Due Sicilie",
         "Princess Maria di Grazia" ;
-    :hasChild data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
     :hasParent data:Prince_Alfonso-_Count_of_Caserta ;
-    :hasSex data:female ;
-    :hasSon data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :isChildOf data:Prince_Alfonso-_Count_of_Caserta ;
-    :isDaughterOf data:Prince_Alfonso-_Count_of_Caserta ;
-    :isMotherOf data:Pedro_Henrique_de_Orléans_e_Bragança ;
-    :isParentOf data:Pedro_Henrique_de_Orléans_e_Bragança .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -2,56 +2,81 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
+data:Ferdinand_dOrleans a :Man,
         :Person ;
-    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasRelation data:Dona_Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Prince_Charles,
+        data:Prince_Jacques,
+        data:Prince_Philippe,
+        data:Princess_Amelie,
+        data:Princess_Helene,
+        data:Princess_Isabelle,
+        data:Princess_Louise .
 
-data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :isBrotherOf data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza .
+data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Man,
+        :Person .
 
-data:Pedro_Luiz_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :hasAncestor data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
-        data:Isabel_of_Brazil,
-        data:Pedro_II_of_Brazil,
-        data:Teresa_Cristina_of_Brazil ;
-    :hasBirthYear 1983 ;
-    :hasDeathYear 2009 ;
-    :hasFather data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Christine_of_Ligne .
-
-data:Alix_of_Luxembourg a :Ancestor,
+data:Dona_Isabel_de_Ibarreta_y_Uhagon a :Person,
         :Woman .
 
-data:Antoine_Prince_of_Ligne a :Ancestor,
-        :Man .
-
-data:Christine_of_Ligne a :Ancestor,
+data:Dona_Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Person,
         :Woman ;
-    :hasFather data:Antoine_Prince_of_Ligne ;
-    :hasMother data:Alix_of_Luxembourg .
+    :hasFather data:Don_Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
+    :hasMother data:Dona_Isabel_de_Ibarreta_y_Uhagon .
 
-data:Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Ancestor,
-        :Man .
-
-data:Isabel_of_Brazil a :Ancestor,
+data:Duchess_Helene_of_Mecklenburg_Schwerin a :Person,
         :Woman .
 
-data:Maria_Elisabeth_of_Bavaria a :Ancestor,
+data:Infanta_Luisa_Fernanda_of_Spain a :Person,
         :Woman .
 
-data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Ancestor,
-        :Man .
+data:Louis_Philippe_I a :Man,
+        :Person .
 
-data:Pedro_II_of_Brazil a :Ancestor,
-        :Man .
+data:Marie_Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
+    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
 
-data:Teresa_Cristina_of_Brazil a :Ancestor,
+data:Philippe_dOrleans_Count_of_Paris a :Man,
+        :Person ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Orleans ;
+    :hasMother data:Duchess_Helene_of_Mecklenburg_Schwerin .
+
+data:Prince_Antoine_Duke_of_Montpensier a :Man,
+        :Person .
+
+data:Prince_Charles a :Man,
+        :Person .
+
+data:Prince_Ferdinand_Duke_of_Orleans a :Man,
+        :Person ;
+    :hasFather data:Louis_Philippe_I ;
+    :hasMother data:Queen_Maria_Amalia_of_the_Two_Sicilies .
+
+data:Prince_Jacques a :Man,
+        :Person .
+
+data:Prince_Philippe a :Man,
+        :Person .
+
+data:Princess_Amelie a :Person,
         :Woman .
 
-data:Ant%C3%B3nio_of_Orl%C3%A9ans-Braganza a :Ancestor,
-        :Man ;
-    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Maria_Elisabeth_of_Bavaria .
+data:Princess_Helene a :Person,
+        :Woman .
+
+data:Princess_Isabelle a :Person,
+        :Woman .
+
+data:Princess_Louise a :Person,
+        :Woman .
+
+data:Queen_Maria_Amalia_of_the_Two_Sicilies a :Person,
+        :Woman .
 

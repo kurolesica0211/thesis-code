@@ -1,0 +1,248 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LouiseMargaretPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PatriciaConnaught ;
+    :hasDaughter data:PatriciaConnaught ;
+    :hasRelation data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:PatriciaConnaught,
+        data:Victoria ;
+    :hasSister data:LouiseMargaretPrussia ;
+    :isAncestorOf data:PatriciaConnaught ;
+    :isAuntOf data:PatriciaConnaught ;
+    :isBloodrelationOf data:LouiseMargaretPrussia ;
+    :isMotherOf data:PatriciaConnaught ;
+    :isParentOf data:PatriciaConnaught ;
+    :isSiblingOf data:LouiseMargaretPrussia ;
+    :isSisterOf data:LouiseMargaretPrussia .
+
+data:AlbertSaxeCoburgGotha a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlbertSaxeCoburgGotha ;
+    :hasChild data:ArthurConnaught ;
+    :hasRelation data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:PatriciaConnaught,
+        data:Victoria ;
+    :hasSon data:ArthurConnaught ;
+    :isAncestorOf data:ArthurConnaught,
+        data:PatriciaConnaught ;
+    :isBloodrelationOf data:AlbertSaxeCoburgGotha ;
+    :isBrotherOf data:AlbertSaxeCoburgGotha ;
+    :isFatherOf data:ArthurConnaught ;
+    :isParentOf data:ArthurConnaught ;
+    :isSiblingOf data:AlbertSaxeCoburgGotha ;
+    :isUncleOf data:ArthurConnaught .
+
+data:Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ArthurConnaught ;
+    :hasRelation data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:PatriciaConnaught,
+        data:Victoria ;
+    :hasSister data:Victoria ;
+    :hasSon data:ArthurConnaught ;
+    :isAncestorOf data:ArthurConnaught,
+        data:PatriciaConnaught ;
+    :isAuntOf data:ArthurConnaught ;
+    :isBloodrelationOf data:Victoria ;
+    :isMotherOf data:ArthurConnaught ;
+    :isParentOf data:ArthurConnaught ;
+    :isSiblingOf data:Victoria ;
+    :isSisterOf data:Victoria .
+
+data:LuisI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LuisI ;
+    :hasChild data:CarlosI ;
+    :hasRelation data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisFilipe,
+        data:LuisI,
+        data:ManuelII ;
+    :hasSon data:CarlosI ;
+    :isAncestorOf data:CarlosI,
+        data:LuisFilipe,
+        data:ManuelII ;
+    :isBloodrelationOf data:LuisI ;
+    :isBrotherOf data:LuisI ;
+    :isFatherOf data:CarlosI ;
+    :isParentOf data:CarlosI ;
+    :isSiblingOf data:LuisI ;
+    :isUncleOf data:CarlosI .
+
+data:AmelieOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:LuisFilipe,
+        data:ManuelII ;
+    :hasRelation data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisFilipe,
+        data:LuisI,
+        data:ManuelII ;
+    :hasSister data:AmelieOrleans ;
+    :hasSon data:LuisFilipe,
+        data:ManuelII ;
+    :isAncestorOf data:LuisFilipe,
+        data:ManuelII ;
+    :isAuntOf data:LuisFilipe,
+        data:ManuelII ;
+    :isBloodrelationOf data:AmelieOrleans ;
+    :isMotherOf data:LuisFilipe,
+        data:ManuelII ;
+    :isParentOf data:LuisFilipe,
+        data:ManuelII ;
+    :isSiblingOf data:AmelieOrleans ;
+    :isSisterOf data:AmelieOrleans .
+
+data:PatriciaConnaught a :Person,
+        :Woman ;
+    :hasAncestor data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:Victoria ;
+    :hasFather data:ArthurConnaught ;
+    :hasMother data:LouiseMargaretPrussia ;
+    :hasParent data:ArthurConnaught,
+        data:LouiseMargaretPrussia ;
+    :hasRelation data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:PatriciaConnaught,
+        data:Victoria ;
+    :hasSister data:PatriciaConnaught ;
+    :isBloodrelationOf data:PatriciaConnaught ;
+    :isChildOf data:ArthurConnaught,
+        data:LouiseMargaretPrussia ;
+    :isDaughterOf data:ArthurConnaught,
+        data:LouiseMargaretPrussia ;
+    :isSiblingOf data:PatriciaConnaught ;
+    :isSisterOf data:PatriciaConnaught .
+
+data:CarlosI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:LuisI ;
+    :hasBrother data:CarlosI ;
+    :hasChild data:LuisFilipe,
+        data:ManuelII ;
+    :hasFather data:LuisI ;
+    :hasParent data:LuisI ;
+    :hasRelation data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisFilipe,
+        data:LuisI,
+        data:ManuelII ;
+    :hasSon data:LuisFilipe,
+        data:ManuelII ;
+    :isAncestorOf data:LuisFilipe,
+        data:ManuelII ;
+    :isBloodrelationOf data:CarlosI ;
+    :isBrotherOf data:CarlosI ;
+    :isChildOf data:LuisI ;
+    :isFatherOf data:LuisFilipe,
+        data:ManuelII ;
+    :isParentOf data:LuisFilipe,
+        data:ManuelII ;
+    :isSiblingOf data:CarlosI ;
+    :isSonOf data:LuisI ;
+    :isUncleOf data:LuisFilipe,
+        data:ManuelII .
+
+data:ArthurConnaught a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlbertSaxeCoburgGotha,
+        data:Victoria ;
+    :hasBrother data:ArthurConnaught ;
+    :hasChild data:PatriciaConnaught ;
+    :hasDaughter data:PatriciaConnaught ;
+    :hasFather data:AlbertSaxeCoburgGotha ;
+    :hasMother data:Victoria ;
+    :hasParent data:AlbertSaxeCoburgGotha,
+        data:Victoria ;
+    :hasRelation data:AlbertSaxeCoburgGotha,
+        data:ArthurConnaught,
+        data:LouiseMargaretPrussia,
+        data:PatriciaConnaught,
+        data:Victoria ;
+    :isAncestorOf data:PatriciaConnaught ;
+    :isBloodrelationOf data:ArthurConnaught ;
+    :isBrotherOf data:ArthurConnaught ;
+    :isChildOf data:AlbertSaxeCoburgGotha,
+        data:Victoria ;
+    :isFatherOf data:PatriciaConnaught ;
+    :isParentOf data:PatriciaConnaught ;
+    :isSiblingOf data:ArthurConnaught ;
+    :isSonOf data:AlbertSaxeCoburgGotha,
+        data:Victoria ;
+    :isUncleOf data:PatriciaConnaught .
+
+data:LuisFilipe a :Man,
+        :Person ;
+    :hasAncestor data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisI ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:LuisFilipe,
+        data:ManuelII ;
+    :hasDeathYear 1908 ;
+    :hasFather data:CarlosI ;
+    :hasMother data:AmelieOrleans ;
+    :hasParent data:AmelieOrleans,
+        data:CarlosI ;
+    :hasRelation data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisFilipe,
+        data:LuisI,
+        data:ManuelII ;
+    :isBloodrelationOf data:LuisFilipe,
+        data:ManuelII ;
+    :isBrotherOf data:LuisFilipe,
+        data:ManuelII ;
+    :isChildOf data:AmelieOrleans,
+        data:CarlosI ;
+    :isSiblingOf data:LuisFilipe,
+        data:ManuelII ;
+    :isSonOf data:AmelieOrleans,
+        data:CarlosI .
+
+data:ManuelII a :Man,
+        :Person ;
+    :hasAncestor data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisI ;
+    :hasBrother data:LuisFilipe,
+        data:ManuelII ;
+    :hasFather data:CarlosI ;
+    :hasMother data:AmelieOrleans ;
+    :hasParent data:AmelieOrleans,
+        data:CarlosI ;
+    :hasRelation data:AmelieOrleans,
+        data:CarlosI,
+        data:LuisFilipe,
+        data:LuisI,
+        data:ManuelII ;
+    :isBloodrelationOf data:LuisFilipe,
+        data:ManuelII ;
+    :isBrotherOf data:LuisFilipe,
+        data:ManuelII ;
+    :isChildOf data:AmelieOrleans,
+        data:CarlosI ;
+    :isSiblingOf data:LuisFilipe,
+        data:ManuelII ;
+    :isSonOf data:AmelieOrleans,
+        data:CarlosI .
+

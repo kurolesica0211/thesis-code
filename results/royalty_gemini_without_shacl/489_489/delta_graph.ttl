@@ -2,30 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_XIII_of_Spain a :Ancestor,
-        :Man,
-        :Person ;
-    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .
-
-data:Victoria_Eugenie_of_Battenberg a :Person,
-        :Woman ;
-    :isAncestorOf data:Gonzalo_de_Borbon_y_Dampierre .
-
-data:Alfonso_brother_of_Gonzalo a :Man,
+data:Wilhelm_II a :Man,
         :Person .
 
-data:Emmanuelle_de_Dampierre a :Person,
+data:Wilhelm_Karl_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasBirthYear 1922 ;
+    :hasDeathYear 2007 ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMarriageYear 1952 ;
+    :hasMother data:Ina_Marie_von_Bassewitz ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim .
+
+data:Armgard_Else_Helene_von_Veltheim a :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Friedrich_von_Veltheim ;
+    :hasMother data:Ottonie_von_Alvensleben .
+
+data:Friedrich_von_Veltheim a :Man,
+        :Person ;
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1955 .
+
+data:Ina_Marie_von_Bassewitz a :Person,
         :Woman .
 
-data:Jaime_Duke_of_Segovia a :Ancestor,
-        :Man,
-        :Person .
+data:Ottonie_von_Alvensleben a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1960 .
 
-data:Gonzalo_de_Borbon_y_Dampierre a :Man,
-        :Person ;
-    :hasBirthYear 1937 ;
-    :hasBrother data:Alfonso_brother_of_Gonzalo ;
-    :hasDeathYear 2000 ;
-    :hasFather data:Jaime_Duke_of_Segovia ;
-    :hasMother data:Emmanuelle_de_Dampierre .
+data:Prince_Oskar_of_Prussia a :Man,
+        :Person .
 

@@ -116,6 +116,8 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +133,9 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +150,23 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,149 +458,143 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4010517a-c740-4551-b0be-d7ce82833ff2)
- Call ID: 4010517a-c740-4551-b0be-d7ce82833ff2
+  AssignClass (aee9d9fe-12d9-4244-9cce-a5a2185e5f83)
+ Call ID: aee9d9fe-12d9-4244-9cce-a5a2185e5f83
   Args:
-    source: Katarina of Yugoslavia
+    source: Princess Katarina of Yugoslavia
     type: :Woman
-  AssignClass (2034ae1b-f298-4f20-be3c-63c89276e2e6)
- Call ID: 2034ae1b-f298-4f20-be3c-63c89276e2e6
+  AssignClass (eab2f406-b266-4cf1-ab5c-257bb92c1c58)
+ Call ID: eab2f406-b266-4cf1-ab5c-257bb92c1c58
   Args:
-    source: Katarina of Yugoslavia
+    source: Princess Katarina of Yugoslavia
     type: :Person
-  AssignClass (b660efba-81b7-4841-a548-06bbe59e7c04)
- Call ID: b660efba-81b7-4841-a548-06bbe59e7c04
+  AddLiteral (dc094ff3-106f-454c-a899-521cb314bad0)
+ Call ID: dc094ff3-106f-454c-a899-521cb314bad0
   Args:
-    type: :Woman
-    source: Margarita of Baden
-  AssignClass (708cfd3b-2bbe-403f-8cfc-994a2bad70a2)
- Call ID: 708cfd3b-2bbe-403f-8cfc-994a2bad70a2
-  Args:
-    source: Margarita of Baden
-    type: :Person
-  AssignClass (b00ab7ce-cf8e-4729-9d9b-63a8b262cdda)
- Call ID: b00ab7ce-cf8e-4729-9d9b-63a8b262cdda
-  Args:
-    type: :Man
-    source: Tomislav of Yugoslavia
-  AssignClass (5fd540fe-a5aa-4ab9-bae0-cc458ae9ab3a)
- Call ID: 5fd540fe-a5aa-4ab9-bae0-cc458ae9ab3a
-  Args:
-    source: Tomislav of Yugoslavia
-    type: :Person
-  AssignClass (8df70532-ba91-49f2-b5d8-85a38dcfe201)
- Call ID: 8df70532-ba91-49f2-b5d8-85a38dcfe201
-  Args:
-    type: :Man
-    source: Nikola of Yugoslavia
-  AssignClass (1f28a581-1ca1-4858-9838-48ad77ca9137)
- Call ID: 1f28a581-1ca1-4858-9838-48ad77ca9137
-  Args:
-    source: Nikola of Yugoslavia
-    type: :Person
-  AssignClass (49dd2401-1b22-4de7-b460-efbefe37389d)
- Call ID: 49dd2401-1b22-4de7-b460-efbefe37389d
-  Args:
-    source: George of Yugoslavia
-    type: :Man
-  AssignClass (b61344d0-09aa-4e5c-8d5c-6f6e5c526e36)
- Call ID: b61344d0-09aa-4e5c-8d5c-6f6e5c526e36
-  Args:
-    type: :Person
-    source: George of Yugoslavia
-  AssignClass (13a29540-c36e-4354-b33e-ed0ffc6f89ec)
- Call ID: 13a29540-c36e-4354-b33e-ed0ffc6f89ec
-  Args:
-    type: :Man
-    source: Michael of Yugoslavia
-  AssignClass (92946282-0ce8-4d9c-a27c-c3c9dee4dc32)
- Call ID: 92946282-0ce8-4d9c-a27c-c3c9dee4dc32
-  Args:
-    source: Michael of Yugoslavia
-    type: :Person
-  AssignClass (51633c81-bd7c-4c38-aaac-40201302cdff)
- Call ID: 51633c81-bd7c-4c38-aaac-40201302cdff
-  Args:
-    type: :Man
-    source: Desmond de Silva
-  AssignClass (ea4fd2d5-0edd-47c3-b0c0-5f787f115dfb)
- Call ID: ea4fd2d5-0edd-47c3-b0c0-5f787f115dfb
-  Args:
-    type: :Person
-    source: Desmond de Silva
-  AssignClass (2b6849fb-1281-438d-af52-ae646789a5ea)
- Call ID: 2b6849fb-1281-438d-af52-ae646789a5ea
+    literal_value: 1959
+    source: Princess Katarina of Yugoslavia
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AssignClass (4561c1c6-8d5d-4e4c-873a-08cb648c51b4)
+ Call ID: 4561c1c6-8d5d-4e4c-873a-08cb648c51b4
   Args:
     type: :Woman
-    source: Victoria Marie Esmé Margarita
-  AssignClass (c4ee4cab-1cf5-4651-871f-0b5dc1b049b4)
- Call ID: c4ee4cab-1cf5-4651-871f-0b5dc1b049b4
+    source: Princess Margarita of Baden
+  AssignClass (74b84e40-3749-490b-ba3c-91f84492be54)
+ Call ID: 74b84e40-3749-490b-ba3c-91f84492be54
   Args:
+    source: Princess Margarita of Baden
     type: :Person
-    source: Victoria Marie Esmé Margarita
-  AddTriple (cd3db3f2-2066-4784-902a-49a7a4f62617)
- Call ID: cd3db3f2-2066-4784-902a-49a7a4f62617
+  AssignClass (5f30fedb-e788-4792-a190-d705790c313d)
+ Call ID: 5f30fedb-e788-4792-a190-d705790c313d
   Args:
-    relation: :hasFather
-    target: Tomislav of Yugoslavia
-    source: Katarina of Yugoslavia
-  AddTriple (e97d4151-031e-4d87-b7a4-e4d431025005)
- Call ID: e97d4151-031e-4d87-b7a4-e4d431025005
+    source: Prince Tomislav of Yugoslavia
+    type: :Man
+  AssignClass (0cbdf027-ac80-4721-9b6c-ad777e5c9e21)
+ Call ID: 0cbdf027-ac80-4721-9b6c-ad777e5c9e21
+  Args:
+    source: Prince Tomislav of Yugoslavia
+    type: :Person
+  AddTriple (1c835f1d-19f9-425e-86dd-756331f3dfa3)
+ Call ID: 1c835f1d-19f9-425e-86dd-756331f3dfa3
   Args:
     relation: :hasMother
-    target: Margarita of Baden
-    source: Katarina of Yugoslavia
-  AddTriple (ee2eebc5-2a4e-4920-bc05-ee6cbf1ee0dd)
- Call ID: ee2eebc5-2a4e-4920-bc05-ee6cbf1ee0dd
+    source: Princess Katarina of Yugoslavia
+    target: Princess Margarita of Baden
+  AddTriple (e0250020-1a7e-4843-8131-ae0419ad19ac)
+ Call ID: e0250020-1a7e-4843-8131-ae0419ad19ac
   Args:
-    relation: :hasBrother
-    target: Nikola of Yugoslavia
-    source: Katarina of Yugoslavia
-  AddTriple (03390e9d-1062-47a9-b2e9-d0ccdba0bba1)
- Call ID: 03390e9d-1062-47a9-b2e9-d0ccdba0bba1
+    target: Prince Tomislav of Yugoslavia
+    source: Princess Katarina of Yugoslavia
+    relation: :hasFather
+  AssignClass (cfc260aa-1fc1-47b8-9048-77ad05df1f3e)
+ Call ID: cfc260aa-1fc1-47b8-9048-77ad05df1f3e
   Args:
-    source: Katarina of Yugoslavia
-    target: George of Yugoslavia
-    relation: :hasBrother
-  AddTriple (1d982f81-c706-4429-9f30-442bd7e140e4)
- Call ID: 1d982f81-c706-4429-9f30-442bd7e140e4
+    source: Prince Nikola of Yugoslavia
+    type: :Man
+  AssignClass (8d99f7df-6936-4b4c-8eb1-a08e72df9092)
+ Call ID: 8d99f7df-6936-4b4c-8eb1-a08e72df9092
   Args:
-    source: Katarina of Yugoslavia
-    target: Michael of Yugoslavia
+    type: :Person
+    source: Prince Nikola of Yugoslavia
+  AddTriple (764164e8-4844-4929-ada5-c4391790774b)
+ Call ID: 764164e8-4844-4929-ada5-c4391790774b
+  Args:
+    target: Prince Nikola of Yugoslavia
+    source: Princess Katarina of Yugoslavia
     relation: :hasBrother
-  AddTriple (43e5b5b5-a708-461d-82c9-3063862ddaf2)
- Call ID: 43e5b5b5-a708-461d-82c9-3063862ddaf2
+  AssignClass (1b729c91-9d12-452c-9eee-8e7bef38eb0f)
+ Call ID: 1b729c91-9d12-452c-9eee-8e7bef38eb0f
+  Args:
+    type: :Man
+    source: Prince George
+  AssignClass (9ce699dd-2f06-42c2-8b00-9c5ae2f7ca17)
+ Call ID: 9ce699dd-2f06-42c2-8b00-9c5ae2f7ca17
+  Args:
+    type: :Person
+    source: Prince George
+  AssignClass (8712c86d-d1cc-4615-ae46-94c1980bbf3f)
+ Call ID: 8712c86d-d1cc-4615-ae46-94c1980bbf3f
+  Args:
+    source: Prince Michael
+    type: :Man
+  AssignClass (bbfa13d8-9f7c-4921-a86e-74202c2f0ecc)
+ Call ID: bbfa13d8-9f7c-4921-a86e-74202c2f0ecc
+  Args:
+    type: :Person
+    source: Prince Michael
+  AddTriple (92e170f4-7b6e-418b-85fe-5b1e479ff6e4)
+ Call ID: 92e170f4-7b6e-418b-85fe-5b1e479ff6e4
+  Args:
+    target: Prince George
+    relation: :hasBrother
+    source: Princess Katarina of Yugoslavia
+  AddTriple (1b679ab5-8af0-4fa3-8202-e526cd6a58b8)
+ Call ID: 1b679ab5-8af0-4fa3-8202-e526cd6a58b8
+  Args:
+    source: Princess Katarina of Yugoslavia
+    relation: :hasBrother
+    target: Prince Michael
+  AssignClass (dafd513d-4080-45ee-ba4f-9ded8b5c4924)
+ Call ID: dafd513d-4080-45ee-ba4f-9ded8b5c4924
+  Args:
+    source: Sir Desmond de Silva
+    type: :Man
+  AssignClass (ae1b7f07-faa7-4e2f-91e0-d1e18b52ef13)
+ Call ID: ae1b7f07-faa7-4e2f-91e0-d1e18b52ef13
+  Args:
+    source: Sir Desmond de Silva
+    type: :Person
+  AddLiteral (0d387608-ea86-4bc3-8d1a-976fd74a1c78)
+ Call ID: 0d387608-ea86-4bc3-8d1a-976fd74a1c78
+  Args:
+    literal_type: xsd:integer
+    source: Princess Katarina of Yugoslavia
+    relation: :hasMarriageYear
+    literal_value: 1987
+  AssignClass (65fe52c7-6c4a-4dc7-9fa4-cf9e33ab03c9)
+ Call ID: 65fe52c7-6c4a-4dc7-9fa4-cf9e33ab03c9
+  Args:
+    source: Victoria Marie Esmé Margarita
+    type: :Woman
+  AssignClass (7439b8e1-bcc7-4240-b518-3317dfc1c1aa)
+ Call ID: 7439b8e1-bcc7-4240-b518-3317dfc1c1aa
+  Args:
+    type: :Person
+    source: Victoria Marie Esmé Margarita
+  AddTriple (2f177e96-f84d-4dbb-af8e-9e6b80e56936)
+ Call ID: 2f177e96-f84d-4dbb-af8e-9e6b80e56936
   Args:
     target: Victoria Marie Esmé Margarita
     relation: :hasDaughter
-    source: Katarina of Yugoslavia
-  AddTriple (1bc9de99-570d-4df8-8691-fb6b5c90dc9a)
- Call ID: 1bc9de99-570d-4df8-8691-fb6b5c90dc9a
+    source: Princess Katarina of Yugoslavia
+  AddLiteral (4168b81a-5b38-4dd0-a0f2-4ad243b634bf)
+ Call ID: 4168b81a-5b38-4dd0-a0f2-4ad243b634bf
   Args:
-    source: Victoria Marie Esmé Margarita
-    target: Desmond de Silva
-    relation: :hasFather
-  AddLiteral (2b04c6f0-5830-47a3-aa27-5468f21189ff)
- Call ID: 2b04c6f0-5830-47a3-aa27-5468f21189ff
-  Args:
-    literal_value: 1959
-    source: Katarina of Yugoslavia
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (52bc35f7-6a84-49bb-944e-dc825756996f)
- Call ID: 52bc35f7-6a84-49bb-944e-dc825756996f
-  Args:
     source: Victoria Marie Esmé Margarita
+    literal_type: xsd:integer
     literal_value: 1991
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (a58013d5-903d-48b5-849f-c289a9017d7e)
- Call ID: a58013d5-903d-48b5-849f-c289a9017d7e
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1987
-    source: Katarina of Yugoslavia
-  Finish (0892c6aa-7633-43a3-b522-ac46eb5580ce)
- Call ID: 0892c6aa-7633-43a3-b522-ac46eb5580ce
+  Finish (642eb203-2c89-4fd4-8fe7-f9159f75dcf7)
+ Call ID: 642eb203-2c89-4fd4-8fe7-f9159f75dcf7
   Args:

@@ -1,0 +1,274 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ErnestAugustusOfBrunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustusOfBrunswick ;
+    :hasChild data:FredericaOfHanover ;
+    :hasDaughter data:FredericaOfHanover ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :isAncestorOf data:ConstantineII,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:ErnestAugustusOfBrunswick ;
+    :isBrotherOf data:ErnestAugustusOfBrunswick ;
+    :isFatherOf data:FredericaOfHanover ;
+    :isParentOf data:FredericaOfHanover ;
+    :isSiblingOf data:ErnestAugustusOfBrunswick ;
+    :isUncleOf data:FredericaOfHanover .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:ViktoriaLuiseOfPrussia ;
+    :hasDaughter data:ViktoriaLuiseOfPrussia ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :isAncestorOf data:ConstantineII,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:ViktoriaLuiseOfPrussia ;
+    :isParentOf data:ViktoriaLuiseOfPrussia ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:ViktoriaLuiseOfPrussia .
+
+data:ViktoriaLuiseOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:WilhelmII ;
+    :hasChild data:FredericaOfHanover ;
+    :hasDaughter data:FredericaOfHanover ;
+    :hasFather data:WilhelmII ;
+    :hasParent data:WilhelmII ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:ViktoriaLuiseOfPrussia ;
+    :isAncestorOf data:ConstantineII,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isAuntOf data:FredericaOfHanover ;
+    :isBloodrelationOf data:ViktoriaLuiseOfPrussia ;
+    :isChildOf data:WilhelmII ;
+    :isDaughterOf data:WilhelmII ;
+    :isMotherOf data:FredericaOfHanover ;
+    :isParentOf data:FredericaOfHanover ;
+    :isSiblingOf data:ViktoriaLuiseOfPrussia ;
+    :isSisterOf data:ViktoriaLuiseOfPrussia .
+
+data:PaulOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PaulOfGreece ;
+    :hasChild data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :hasDaughter data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:PaulOfGreece ;
+    :isBrotherOf data:PaulOfGreece ;
+    :isFatherOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isParentOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isSiblingOf data:PaulOfGreece ;
+    :isUncleOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain .
+
+data:ConstantineII a :Man,
+        :Person ;
+    :hasAncestor data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:PaulOfGreece,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:ConstantineII ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:FredericaOfHanover ;
+    :hasParent data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBrotherOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isChildOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isSiblingOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isSonOf data:FredericaOfHanover,
+        data:PaulOfGreece .
+
+data:IreneOfGreece a :Person,
+        :Woman ;
+    :hasAncestor data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:PaulOfGreece,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:ConstantineII ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:FredericaOfHanover ;
+    :hasParent data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isChildOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isDaughterOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isSiblingOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isSisterOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain .
+
+data:SophiaOfGreeceAndSpain a :Person,
+        :Woman ;
+    :hasAncestor data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:PaulOfGreece,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasBrother data:ConstantineII ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:FredericaOfHanover ;
+    :hasParent data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isChildOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isDaughterOf data:FredericaOfHanover,
+        data:PaulOfGreece ;
+    :isSiblingOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isSisterOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain .
+
+data:FredericaOfHanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:ErnestAugustusOfBrunswick,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasBirthYear 1917 ;
+    :hasChild data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :hasDaughter data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :hasDeathYear 1981 ;
+    :hasFather data:ErnestAugustusOfBrunswick ;
+    :hasMother data:ViktoriaLuiseOfPrussia ;
+    :hasParent data:ErnestAugustusOfBrunswick,
+        data:ViktoriaLuiseOfPrussia ;
+    :hasRelation data:ConstantineII,
+        data:ErnestAugustusOfBrunswick,
+        data:FredericaOfHanover,
+        data:IreneOfGreece,
+        data:PaulOfGreece,
+        data:SophiaOfGreeceAndSpain,
+        data:ViktoriaLuiseOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:FredericaOfHanover ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isAuntOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isBloodrelationOf data:FredericaOfHanover ;
+    :isChildOf data:ErnestAugustusOfBrunswick,
+        data:ViktoriaLuiseOfPrussia ;
+    :isDaughterOf data:ErnestAugustusOfBrunswick,
+        data:ViktoriaLuiseOfPrussia ;
+    :isMotherOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isParentOf data:ConstantineII,
+        data:IreneOfGreece,
+        data:SophiaOfGreeceAndSpain ;
+    :isSiblingOf data:FredericaOfHanover ;
+    :isSisterOf data:FredericaOfHanover .
+

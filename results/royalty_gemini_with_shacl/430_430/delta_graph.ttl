@@ -2,37 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PeterTroughton a :Man,
-        :Person ;
-    :hasBirthYear "1948"^^xsd:int ;
-    :hasFather data:CharlesTroughton .
-
-data:SarahRoseTroughton a :Person,
+data:RoseConstanceLevesonGower a :Person,
         :Woman ;
-    :hasAncestor data:JeremiahColman ;
-    :hasBirthYear "1953"^^xsd:int ;
-    :hasFather data:TimothyColman ;
-    :hasMarriageYear "1977"^^xsd:int ;
-    :hasMother data:MaryCeciliaBowesLyon .
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:14thEarlOfStrathmoreAndKinghorne ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:CeciliaCavendishBentinck ;
+    :hasRelation data:WilliamLevesonGower ;
+    :isAuntOf data:PrincessMargaretRoseOfYork,
+        data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethTheQueenMother .
 
-data:CharlesTroughton a :Ancestor,
+data:14thEarlOfStrathmoreAndKinghorne a :Ancestor,
         :Man,
         :Person .
 
-data:ClaudeBowesLyon a :Ancestor,
-        :Man,
-        :Person .
-
-data:JeremiahColman a :Ancestor,
-        :Man,
-        :Person .
-
-data:MaryCeciliaBowesLyon a :Ancestor,
+data:CeciliaCavendishBentinck a :Ancestor,
         :Person,
-        :Woman ;
-    :hasAncestor data:ClaudeBowesLyon .
+        :Woman .
 
-data:TimothyColman a :Ancestor,
-        :Man,
-        :Person .
+data:PrincessMargaretRoseOfYork a :Person,
+        :Woman .
+
+data:QueenElizabethII a :Person,
+        :Woman .
+
+data:QueenElizabethTheQueenMother a :Person,
+        :Woman .
+
+data:WilliamLevesonGower a :Man,
+        :Person ;
+    :hasDeathYear 1953 .
 

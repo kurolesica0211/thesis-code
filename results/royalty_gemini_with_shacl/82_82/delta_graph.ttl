@@ -2,43 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatrice_Elizabeth_Mapelli_Mozzi a :Ancestor,
-        :Woman ;
-    :isMotherOf data:Athena_Elizabeth_Rose .
+data:Edoardo_Mapelli_Mozzi a :Man ;
+    :hasChild data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasFather data:Alex_Mapelli-Mozzi .
 
-data:Beatrice_Elizabeth_Mary a :Ancestor,
-        :Person,
-        :Woman ;
+data:King_Charles_III a :Man .
+
+data:Princess_Beatrice a :Woman ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
     :hasBirthYear 1988 ;
+    :hasChild data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
-    :hasMarriageYear 2020 ;
+    :hasMarriageYear data:2020 ;
     :hasMother data:Sarah_Ferguson ;
-    :hasRelation data:Edoardo_Mapelli_Mozzi ;
-    :isMotherOf data:Sienna_Elizabeth_Mapelli_Mozzi ;
-    :isSisterOf data:Eugenie .
+    :hasSister data:Princess_Eugenie .
 
-data:Athena_Elizabeth_Rose a :Person,
-        :Woman ;
-    :hasFather data:Edoardo_Mapelli_Mozzi .
+data:2020 a :DomainEntity .
 
-data:Eugenie a :Person,
-        :Woman ;
+data:Alex_Mapelli-Mozzi a :Ancestor,
+        :Man .
+
+data:Prince_Philip a :Ancestor,
+        :Man .
+
+data:Princess_Eugenie a :Woman ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
     :hasMother data:Sarah_Ferguson .
 
-data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
-        :Woman ;
-    :hasFather data:Edoardo_Mapelli_Mozzi .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person .
-
-data:Sarah_Ferguson a :Ancestor,
-        :Person,
+data:Queen_Elizabeth_II a :Ancestor,
         :Woman .
 
-data:Edoardo_Mapelli_Mozzi a :Ancestor,
-        :Man,
-        :Person .
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man .
+
+data:Athena_Elizabeth_Rose a :Woman .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Woman .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Woman .
 

@@ -2,28 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Albrecht_von_Hohenzollern a :Man,
+data:CarlLeiningen a :Man,
+        :Person .
+
+data:EmichKirill a :Man,
         :Person ;
-    :hasBirthYear 1954 ;
-    :isBrotherOf data:Karl_Friedrich_von_Hohenzollern .
+    :hasFather data:KarlLeiningen ;
+    :hasMother data:MariaKirillovna .
 
-data:Alexandra_von_Hohenzollern a :Person,
-        :Woman ;
-    :knownAs "ex-wife"^^xsd:string .
+data:IleanaRomania a :Person,
+        :Woman .
 
-data:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,
+data:MariaAlexandrovna a :Person,
+        :Woman .
+
+data:MarieRomania a :Person,
+        :Woman .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:KirillVladimirovich a :Ancestor,
         :Man,
         :Person .
 
-data:Karl_Friedrich_von_Hohenzollern a :Man,
-        :Person ;
-    :hasBirthYear 1952 ;
-    :hasBrother data:Albrecht_von_Hohenzollern ;
-    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
-    :hasMother data:Margarita_of_Leiningen ;
-    :hasRelation data:Alexandra_von_Hohenzollern .
+data:MariaKirillovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear "1907"^^xsd:string ;
+    :hasDeathYear "1951"^^xsd:string ;
+    :hasFather data:KirillVladimirovich ;
+    :hasMarriageYear "1925"^^xsd:string ;
+    :hasMother data:VictoriaMelita ;
+    :hasRelation data:KarlLeiningen .
 
-data:Margarita_of_Leiningen a :Ancestor,
+data:VictoriaMelita a :Ancestor,
         :Person,
         :Woman .
+
+data:KarlLeiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear "1898"^^xsd:string ;
+    :hasDeathYear "1946"^^xsd:string .
 

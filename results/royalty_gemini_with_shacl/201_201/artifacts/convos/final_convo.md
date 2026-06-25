@@ -85,44 +85,349 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Archduke Gottfried of Austria (German: Gottfried Maria Joseph Peter Ferdinand Hubert Anton Rupert Leopold Heinrich Ignaz Alfons, Erzherzog von Österreich, Prinz von Toskana; 14 March 1902 – 21 January 1984), also styled as Gottfried Erzherzog von Österreich, was an Archduke of Austria and claimant to the defunct throne of the Grand Duchy of Tuscany.
-Biography
+Wilhelm II (Friedrich Wilhelm Viktor Albert; 27 January 1859 – 4 June 1941) was the last German Emperor from 1888 until his abdication in 1918.
+Born during the reign of his granduncle Frederick William IV of Prussia, Wilhelm was the son of Prince Frederick William and Victoria, Princess Royal.
+Through his mother, he was the eldest of the 42 grandchildren of Queen Victoria of the United Kingdom.
+In March 1888, Wilhelm's father, Frederick William, ascended the German and Prussian thrones as Frederick III.
+Frederick died just 99 days later, and his son succeeded him as Kaiser Wilhelm II.
+However, Wilhelm often undermined such progress by making tactless and threatening statements towards other countries without first consulting his ministers.
+Likewise, he and his government did much to alienate the German Empire from most of Europe by initiating a massive naval build-up, contesting French control of Morocco, backing Austria-Hungary's annexation of Bosnia and threatening Britain's access to the Persian Gulf by  building a railway through Baghdad.
+Despite strengthening Germany's position as a great power in the short term by building a powerful navy and promoting scientific innovation within its borders, Wilhelm II's erratic foreign policy greatly antagonized the international community and is considered by many to have led to the fall of the German Empire.
+A lax wartime leader, Wilhelm left virtually all decisions regarding strategy and organisation of the war effort to the German Supreme Army Command.
+Losing the support of his country's military and many of his subjects, Wilhelm was forced to abdicate during the German Revolution of 1918–1919 which converted Germany into an unstable democratic state known as the Weimar Republic.
+Wilhelm subsequently fled to exile in the Netherlands, where he remained during its occupation by Nazi Germany in 1940 before dying there in 1941.
+Early life
 
-On 20 December 1866, Goffredo's grandfather, Ferdinando IV, the last Grand Duke of Tuscany, and his children were readmitted to the imperial family.
-The House of Tuscany ceased to exist as a sovereign branch and merged with the Austrian imperial house.
-Ferdinand was able to maintain his fons honorum vita natural durante, while his children became only imperial princes (archdukes of Austria) and no longer princes/princesses of Tuscany.
-The Grand Magistry of the Order of St Stephen died out with the death of Ferdinand IV.
-In fact, after the death of Grand Duke Ferdinand IV in 1908, Emperor Franz Joseph I forbade the acceptance of the title of Grand Duke or Prince or Princess of Tuscany: none of Ferdinand IV's children born after 1866 accepted the title of Prince or Grand Duke of Tuscany.
-They were also unable to legitimately take possession of the extinct dynastic orders, previously conferred by the Grand Dukes of Tuscany.
-While his grandfather had kept the title of Grand Duke of Tuscany after the abolition of the dukedom in 1860, he had abdicated it in favor of the Austrian Emperor in 1870.
-Peter Ferdinand, Goffredo's father, never  claimed the title of Grand Duke of Tuscany.
-The former Prime Minister of Saxony and later Imperial and Household Minister Beust declared: "The Tuscan Grand Ducal family has lost its sovereign rights as a result of political events.
-The Grand Dukes Leopold and Ferdinand and their more famous brothers are therefore from now on to be considered only as Archdukes of Austria and to be treated in accordance with the Statute of the High Noble Family of 3 February 1839.
+Wilhelm was born in Berlin on 27 January 1859—at the Crown Prince's Palace—to Victoria, Princess Royal ("Vicky") and Prince Frederick William of Prussia ("Fritz", the future Frederick III).
+His mother, Vicky, was the eldest child of Queen Victoria of the United Kingdom.
+At the time of Wilhelm's birth, his granduncle Frederick William IV was king of Prussia.
+Frederick William IV had been left permanently incapacitated by a series of strokes, and his younger brother Wilhelm, the young prince's grandfather, was acting as regent.
+Prince Wilhelm was the oldest of the 42 grandchildren of his maternal grandparents (Queen Victoria and Prince Albert).
+Upon the death of Frederick William IV in January 1861, Wilhelm's namesake grandfather became king, and the two-year-old Wilhelm became second in the line of succession to the Prussian throne.
+After 1871, Wilhelm also became second in the line to the newly created German Empire, which, according to the constitution of the German Empire, was ruled by the Prussian king.
+Traumatic birth
+
+Shortly before midnight on 26 January 1859, Princess Vicky experienced labour pains, followed by her water breaking, after which August Wegner, the family's personal physician, was summoned.
+Modern medical assessments have concluded Wilhelm's hypoxic state at birth, due to the breech delivery and the heavy dosage of chloroform, left him with minimal to mild brain damage, which manifested itself in his subsequent hyperactive and erratic behaviour, limited attention span and impaired social abilities.
+The brachial plexus injury resulted in Erb's palsy, which left Wilhelm with a withered left arm about six inches (15 centimetres) shorter than his right.
+Early years
+
+In 1863, Wilhelm was taken to England to be present at the wedding of his uncle Bertie and Princess Alexandra of Denmark (later King Edward VII and Queen Alexandra).
+Wilhelm attended the ceremony in a Highland costume, complete with a small toy dirk.
+His 18-year-old uncle Prince Alfred, charged with keeping an eye on him, told him to be quiet, but Wilhelm drew his dirk and threatened Alfred.
+When Alfred attempted to subdue him by force, Wilhelm bit him on the leg.
+His grandmother, Queen Victoria, missed seeing the fracas; to her Wilhelm remained "a clever, dear, good little child, the great favourite of my beloved Vicky".
+The thought that Wilhelm, as heir to the throne, should not be able to ride was intolerable to her.
+Riding lessons began when Wilhelm was eight and were a matter of endurance for him.
+Wilhelm, from six years of age, was tutored and heavily influenced by the 39-year-old teacher Georg Ernst Hinzpeter.
 "
 
 
-Family
+As a teenager, Wilhelm was educated at Kassel at the Friedrichsgymnasium.
+In January 1877, Wilhelm finished high school and on his eighteenth birthday received as a present from his grandmother the Order of the Garter.
+Wilhelm possessed a quick intelligence, but this was often overshadowed by a cantankerous temper.
+As a scion of the royal house of Hohenzollern, Wilhelm was exposed from an early age to the military society of the Prussian aristocracy.
+This had a major impact on him, and in maturity Wilhelm was seldom seen out of uniform.
+The hyper-masculine military culture of Prussia in this period did much to frame his political ideals and personal relationships.
+Wilhelm was in awe of his father, whose status as a hero of the wars of unification was largely responsible for the young Wilhelm's attitude, as were the circumstances in which he was raised; close emotional contact between father and son was not encouraged.
+Later, as he came into contact with the Crown Prince's political opponents, Wilhelm came to adopt more ambivalent feelings toward his father, perceiving the influence of Wilhelm's mother over a figure who should have been possessed of masculine independence and strength.
+Wilhelm also idolised his grandfather, Wilhelm I, and he was instrumental in later attempts to foster a cult of the first German Emperor as "Wilhelm the Great".
+Wilhelm resisted attempts by his parents, especially his mother, to educate him in a spirit of British liberalism.
+The German Emperor, Wilhelm I, watched as his grandson, guided principally by the Crown Princess Victoria, grew to manhood.
+When Wilhelm was nearing 21, the Emperor decided it was time his grandson should begin the military phase of his preparation for the throne.
+"In the Guards," Wilhelm said, "I really found my family, my friends, my interests—everything of which I had up to that time had to do without."
+When Wilhelm was in his early twenties, Chancellor Otto von Bismarck tried to separate him from his parents, who opposed Bismarck and his policies, with some success.
+Bismarck planned to use the young prince as a weapon against his parents in order to retain his own political dominance.
+Wilhelm thus developed a dysfunctional relationship with his parents, but especially with his English mother.
+In an outburst in April 1889, Wilhelm angrily implied that "an English doctor killed my father, and an English doctor crippled my arm—which is the fault of my mother", who allowed no German physicians to attend to herself or her immediate family.
+As a young man, Wilhelm fell in love with one of his maternal first cousins, Princess Elisabeth of Hesse-Darmstadt.
+In 1880 Wilhelm became engaged to Princess Augusta Victoria of Schleswig-Holstein, known as "Dona".
+Between 1882 and 1892, Augusta bore Wilhelm seven children, six sons and a daughter.
+Beginning in 1884, Bismarck began advocating that Kaiser Wilhelm send his grandson on diplomatic missions, a privilege denied to the Crown Prince.
+That year, Prince Wilhelm was sent to the court of Tsar Alexander III of Russia in St. Petersburg to attend the coming-of-age ceremony of the 16-year-old Tsarevich Nicholas.
+Wilhelm's behaviour did little to ingratiate himself to the tsar.
+Two years later, Kaiser Wilhelm I took Prince Wilhelm on a trip to meet with Emperor Franz Joseph I of Austria-Hungary.
+In 1886, also, thanks to Herbert von Bismarck, the son of the Chancellor, Prince Wilhelm began to be trained twice a week at the Foreign Ministry.
+Accession
 
-Gottfried was born in Linz, Austria-Hungary, the eldest child and son  of Archduke Peter Ferdinand of Austria and his wife Princess Maria Cristina of Bourbon-Two Sicilies.
-Gottfried was raised with his three siblings in Salzburg and Vienna until the end of World War I in 1918, when his family emigrated to Lucerne, Switzerland.
-Marriage and issue
+Kaiser Wilhelm I died in Berlin on 9 March 1888, and Prince Wilhelm's father ascended the throne as Frederick III.
+On 15 June of that same year, his 29-year-old son succeeded him as German Emperor and King of Prussia.
+Although in his youth he had been a great admirer of Otto von Bismarck, Wilhelm's characteristic impatience soon brought him into conflict with the "Iron Chancellor", the dominant figure in the foundation of his empire.
+While the imperial constitution vested executive power in the monarch, Wilhelm I had been content to leave day-to-day administration to Bismarck.
+Early conflicts between Wilhelm II and his chancellor soon poisoned the relationship between the two men.
+Bismarck had believed that Wilhelm was a lightweight who could be dominated, and he showed escalating disrespect for Wilhelm's favored policy objectives in the late 1880s.
+The final split between monarch and statesman occurred soon after an attempt by Bismarck to implement far-reaching anti-Socialist laws in early 1890.
+They favoured making the anti-Socialist laws permanent, with one exception: giving the German police the power, similarly to the Tsarist Okhrana, to expel alleged Socialist agitators from their homes by decree and into internal exile.
+As the debate continued, Wilhelm became more and more interested in the social problems being exploited in the propaganda of the Socialists, especially the treatment of mine workers who went on strike in 1889.
+Bismarck, in turn, sharply disagreed with Wilhelm's pro-labor union policies and worked to circumvent them.
+The final break between the Iron Chancellor and the Kaiser came when Bismarck initiated discussions with the opposition to form a new parliamentary majority without consulting with Wilhelm first.
+The Kartell, the shifting coalition government that Bismarck had been able to maintain since 1867, had finally lost its majority of seats in the Reichstag due to the Anti-Socialist Laws fiasco.
+In most parliamentary systems, the head of government depends upon the confidence of the parliamentary majority and has the right to form coalitions to maintain a majority of supporters.
+After a heated argument at Bismarck's estate over the latter's alleged disrespect for the Imperial Family, Wilhelm stormed out.
+In later years, Bismarck created the "Bismarck myth"; the view (which some historians have argued was confirmed by subsequent events) that Wilhelm II's successful demand for Bismarck's resignation destroyed any chance Imperial Germany ever had of stable government and international peace.
+According to this view, what Wilhelm termed "The New Course" is characterised as Germany's ship of state going dangerously off course, leading directly to the carnage of the First and Second World Wars.
+In interviews with C.L. Sulzberger for the book The Fall of Eagles, Prince Louis Ferdinand of Prussia, grandson and heir of Kaiser Wilhelm II, further commented, "Bismarck was certainly our greatest statesman, but he had very bad manners and he became increasingly overbearing with age.
+"
 
-Gottfried married Princess Dorothea of Bavaria, fifth child and fourth daughter of Prince Franz of Bavaria and his wife Princess Isabella Antonie of Croÿ, on 2 August 1938 civilly and religiously on 3 August 1938 in Sárvár, Kingdom of Hungary.
-Around 1970, in violation of the decree of Emperor Franz Joseph I of 1866 and ignoring the abdication of his grandfather last Grand Duke of Tuscany Ferdinand IV signed in Lindau on Lake Constance in 1870, he assumed the title of Grand Duke of Tuscany without the permission of the head of the imperial and royal house.
-Gottfried and Dorothea had issue:
+
+Wilhelm in control
+
+The New Course
+
+Bismarck was succeeded as Chancellor of Germany and Minister-President of Prussia by Leo von Caprivi.
+At the opening of the Reichstag on 6 May 1890, the Kaiser stated that the most pressing issue was the further enlargement of the bill concerning the protection of the labourer.
+Following the dismissal of Hohenlohe in 1900, Wilhelm appointed the man whom he regarded as "his own Bismarck", Bernhard von Bülow.
+In appointing Caprivi and then Hohenlohe, Wilhelm was embarking upon what is known to history as "the New Course", in which he hoped to exert decisive influence in the government of the empire.
+There is debate amongst historians as to the precise degree to which Wilhelm succeeded in implementing "personal rule" in this era, but what is clear is the very different dynamic which existed between the Crown and its chief political servant (the Chancellor) in the "Wilhelmine Era".
+Wilhelm wanted to preclude the emergence of another Iron Chancellor, whom he ultimately detested as being "a boorish old killjoy" who had not permitted any minister to see the Emperor except in his presence, keeping a stranglehold on effective political power.
+Upon his enforced retirement and until his dying day, Bismarck became a bitter critic of Wilhelm's policies, but without gaining the support of a majority within the Reichstag there was little chance of Bismarck exerting a decisive influence on policy.
+In the early twentieth century, Wilhelm began to concentrate upon his real agenda: the creation of a German Navy that would rival that of Britain and enable Germany to declare itself a world power.
+Bülow and Bethmann Hollweg, his loyal chancellors, looked after domestic affairs, while Wilhelm obliviously began to spread alarm in the chancelleries of Europe with his increasingly eccentric and ill-advised statements on foreign affairs.
+Promoter of arts and sciences
+
+Wilhelm enthusiastically promoted the arts and sciences, as well as public education and social welfare.
+He sponsored the Kaiser Wilhelm Society for the promotion of scientific research; it was funded by wealthy private donors and by the state and comprised a number of research institutes in both pure and applied sciences.
+Wilhelm supported the modernisers as they tried to reform the Prussian system of secondary education, which was rigidly traditional, elitist, politically authoritarian, and unchanged by the progress in the natural sciences.
+Wilhelm continued as Protector of the Order even after 1918, as the position was in essence attached to the head of the House of Hohenzollern.
+Personality
+
+Historians have frequently stressed the role of Wilhelm's personality in shaping his reign.
+Thus, Thomas Nipperdey concludes he was:
 
 
-Honours
+...gifted, with a quick understanding, sometimes brilliant, with a taste for the modern,—technology, industry, science—but at the same time superficial, hasty, restless, unable to relax, without any deeper level of seriousness, without any desire for hard work or drive to see things through to the end, without any sense of sobriety, for balance and boundaries, or even for reality and real problems, uncontrollable and scarcely capable of learning from experience, desperate for applause and success,—as Bismarck said early on in his life, he wanted every day to be his birthday—romantic, sentimental and theatrical, unsure and arrogant, with an immeasurably exaggerated self-confidence and desire to show off, a juvenile cadet, who never took the tone of the officers' mess out of his voice, and brashly wanted to play the part of the supreme warlord, full of panicky fear of a monotonous life without any diversions, and yet aimless, pathological in his hatred against his English mother.
+Historian David Fromkin states that Wilhelm had a love–hate relationship with Britain.
+Langer et al. (1968) emphasise the negative international consequences of Wilhelm's erratic personality:
+"He believed in force, and the 'survival of the fittest' in domestic as well as foreign politics ...
+Relationships with foreign relatives
 
-Ancestry
+As a grandchild of Queen Victoria, Wilhelm was a first cousin of King George V of the United Kingdom, as well as of queens Marie of Romania, Maud of Norway, Victoria Eugenie of Spain and Empress Alexandra of Russia.
+In 1889, Wilhelm's younger sister Sophia married Constantine, Crown Prince of Greece.
+Wilhelm was infuriated by his sister's conversion from Lutheranism to Greek Orthodoxy; upon her marriage, he attempted to ban her from entering Germany.
+Wilhelm's most contentious relationships were with his British relations.
+He craved the acceptance of his grandmother, Queen Victoria, and of the rest of her family.
+Between 1888 and 1901, Wilhelm resented Bertie, who despite being the heir apparent to the British throne, treated Wilhelm not as a reigning monarch, but merely as another nephew.
+In turn, Wilhelm often snubbed his uncle, whom he referred to as "the old peacock" and lorded his position as emperor over him.
+Beginning in the 1890s, Wilhelm made visits to England for Cowes Week on the Isle of Wight and often competed against his uncle in the yacht races.
+Bertie's wife, Alexandra, also disliked Wilhelm.
+Even though Wilhelm had not been on the throne at the time, Alexandra felt anger over the Prussian seizure of Schleswig-Holstein from her native Denmark in the 1860s, and was also annoyed over Wilhelm's treatment of his mother.
+Despite his poor relations with his English relatives, when he received news that Queen Victoria was dying at Osborne House in January 1901, Wilhelm travelled to England and was at her bedside when she died, and he remained for the funeral.
+In 1913, Wilhelm hosted a lavish wedding in Berlin for his only daughter, Victoria Louise.
+Among the guests at the wedding were his cousins Tsar Nicholas II of Russia and King George V of the United Kingdom, and George's wife, Queen Mary.
 
-References
+
+Foreign affairs
+
+German foreign policy under Wilhelm II was faced with a number of significant problems.
+Perhaps the most apparent was that Wilhelm was an impatient man, subjective in his reactions and affected strongly by sentiment and impulse.
+There were a number of examples, such as the Kruger telegram of 1896 in which Wilhelm congratulated President Paul Kruger for preventing the Transvaal Republic from being annexed by the British Empire during the Jameson Raid.
+During the First World War, he became the central target of British anti-German propaganda and the personification of a hated enemy.
+Wilhelm exploited fears of a yellow peril trying to interest other European rulers in the perils they faced by invading China; few other leaders paid attention.
+Wilhelm also used the Japanese victory in the Russo-Japanese War to try to incite fear in the west of the yellow peril that they faced by a resurgent Imperial Japan, which Wilhelm claimed would ally with China to overrun the conventional European Powers.
+Wilhelm also invested in strengthening the German colonial empire in Africa and the Pacific, but few became profitable and all were lost during the First World War.
+In South West Africa (now Namibia), a native revolt against German rule led to the Herero and Nama genocide, although Wilhelm eventually ordered it to be stopped and recalled its mastermind General Lothar von Trotha.
+One of the few times when Wilhelm succeeded in personal diplomacy was when in 1900, he supported the morganatic marriage of Archduke Franz Ferdinand of Austria to Countess Sophie Chotek, and helped negotiate an end to the opposition to the wedding by Emperor Franz Joseph I of Austria.
+A domestic triumph for Wilhelm was when his daughter Victoria Louise married the Duke of Brunswick in 1913; this helped heal the rift between the House of Hanover and the House of Hohenzollern that had followed Bismarck's invasion and annexation of the Kingdom of Hanover in 1866.
+Political visits to the Ottoman Empire
+
+In his first visit to Constantinople in 1889, Wilhelm secured the sale of German-made rifles to the Ottoman Army.
+Deeply moved by this imposing spectacle, and likewise by the consciousness of standing on the spot where held sway one of the most chivalrous rulers of all times, the great Sultan Saladin, a knight sans peur et sans reproche, who often taught his adversaries the right conception of knighthood, I seize with joy the opportunity to render thanks, above all to the Sultan Abdul Hamid for his hospitality.
+— Kaiser Wilhelm II, 
+
+On 10 November, Wilhelm went to visit Baalbek before heading to Beirut to board his ship back home on 12 November.
+In his second visit, Wilhelm secured a promise for German companies to construct the Berlin–Baghdad railway, and had the German Fountain constructed in Constantinople to commemorate his journey.
+Hun speech of 1900
+
+The Boxer Rebellion, an anti-foreign uprising in China, was put down in 1900 by an international force known as the Eight-Nation Alliance.
+Wilhelm's fiery rhetoric clearly expressed his vision for Germany as one of the great powers.
+The term "Hun" later became the favoured epithet of Allied anti-German war propaganda during the First World War.
+Assassination attempt
+
+On 6 March 1901, during a visit to Bremen, in an apparent assassination attempt Wilhelm was struck in the face by a sharp iron object thrown at him.
+"
+
+
+Eulenberg Scandal
+
+In the years 1906–1909, Socialist journalist Maximilian Harden published accusations of homosexual activity involving ministers, courtiers, army officers, and Wilhelm's closest friend and advisor, Prince Philipp zu Eulenberg.
+Harden, like some in the upper echelons of the military and Foreign Office, resented Eulenberg's approval of the Anglo-French Entente, and also his encouragement of Wilhelm to rule personally.
+The scandal led to Wilhelm experiencing a nervous breakdown, and the removal of Eulenberg and others of his circle from the court.
+The view that Wilhelm was a deeply repressed homosexual is increasingly supported by scholars: certainly, he never came to terms with his feelings for Eulenberg.
+Historians have linked the Eulenberg scandal to a fundamental shift in German policy that heightened its military aggressiveness and ultimately contributed to World War I.
+
+
+Moroccan Crisis
+
+One of Wilhelm's diplomatic blunders sparked the Moroccan Crisis of 1905.
+Wilhelm had viewed the article, which was based on discussions he had had with Colonel Edward Stuart-Wortley in 1907, as an opportunity to promote his views on Anglo-German friendship, but due to the content and emotional tone of many of his statements, he ended up further alienating not only the British but also the French, Russians and Japanese.
+The Daily Telegraph crisis deeply wounded Wilhelm's previously unimpaired self-confidence, and he experienced a severe bout of depression.
+He kept a low profile for many months after the scandal broke, although in July 1909 he took the opportunity to force the resignation of the chancellor, Prince von Bülow, whose defence of him in the Reichstag had been aimed primarily at shifting blame from himself for not stopping the publication of the article.
+As a result of the scandal, Wilhelm had less influence in domestic and foreign policy for the remainder of his reign than he had previously exercised.
+Naval arms race with Britain
+
+Nothing Wilhelm did in the international arena was of more influence than his decision to pursue a policy of massive naval construction.
+A powerful navy was Wilhelm's pet project.
+He had inherited from his mother a love of the British Royal Navy, which was at that time the world's largest.
+He once confided to his uncle, the Prince of Wales, that his dream was to have a "fleet of my own some day".
+Wilhelm's frustration over his fleet's poor showing at the Fleet Review at his grandmother's Diamond Jubilee celebrations, combined with his inability to exert German influence in South Africa following the dispatch of the Kruger telegram, led to Wilhelm taking definitive steps toward the construction of a fleet to rival that of his British cousins.
+Wilhelm called on the services of the dynamic naval officer Alfred von Tirpitz, whom he appointed to the head of the Imperial Naval Office in 1897.
+Tirpitz enjoyed Wilhelm's full support in his advocacy of successive naval bills of 1897 and 1900, by which the German navy was built up to contend with that of the British Empire.
+Naval expansion under the Fleet Acts eventually led to severe financial strains in Germany by 1914, as by 1906 Wilhelm had committed his navy to construction of the much larger, more expensive dreadnought type of battleship.
+The British depended on naval superiority and its response was to make Germany its most feared enemy.
+In 1889 Wilhelm reorganised top-level control of the navy by creating a Naval Cabinet (Marine-Kabinett) equivalent to the German Imperial Military Cabinet which had previously functioned in the same capacity for both the army and navy.
+Each of these three heads of department reported separately to Wilhelm.
+World War I
+
+Historians typically argue that Wilhelm was largely confined to ceremonial duties during the war—there were innumerable parades to review and honours to award.
+"
+
+
+The Sarajevo crisis
+
+Wilhelm was a friend of Franz Ferdinand, and he was deeply shocked by his assassination on 28 June 1914.
+Wilhelm offered to support Austria-Hungary in crushing the Black Hand, the secret organisation that had plotted the killing, and even sanctioned the use of force by Austria against the perceived source of the movement—Serbia (this is often called "the blank cheque").
+Wilhelm made erratic attempts to stay on top of the crisis via telegram, and when the Austro-Hungarian ultimatum was delivered to Serbia, he hurried back to Berlin.
+July 1914
+
+
+On the night of 30 July 1914, when handed a document stating that Russia would not cancel its mobilisation, Wilhelm wrote a lengthy commentary containing these observations:
+More recent British authors state that Wilhelm II really declared, "Ruthlessness and weakness will start the most terrifying war of the world, whose purpose is to destroy Germany.
+When it became clear that Germany would experience a war on two fronts and that Britain would enter the war if Germany attacked France through neutral Belgium, the panic-stricken Wilhelm attempted to redirect the main attack against Russia.
+When Helmuth von Moltke (the younger) (who had chosen the old plan from 1905, made by General von Schlieffen for the possibility of German war on two fronts) told him that this was impossible, Wilhelm said: "Your uncle would have given me a different answer!"
+Wilhelm is also reported to have said, "To think that George and Nicky should have played me false!
+Defeating France had been easy for Prussia in the Franco-Prussian War in 1870.
+However, Wilhelm II stopped any invasion of the Netherlands.
+Early War
+
+On 1 August 1914 (Saturday), Wilhelm II made a war speech in front of a great crowd.
+On 19 August 1914, Wilhelm II predicted that Germany would win the war.
+"
+
+
+Shadow-Kaiser
+
+Wilhelm's role in wartime was one of ever-decreasing power as he increasingly handled awards ceremonies and honorific duties.
+Increasingly cut off from reality and the political decision-making process, Wilhelm vacillated between defeatism and dreams of victory, depending upon the fortunes of his armies.
+Nevertheless, Wilhelm still retained the ultimate authority in matters of political appointment, and it was only after his consent had been gained that major changes to the high command could be brought about.
+Wilhelm was in favour of the dismissal of Colonel General Helmuth von Moltke in September 1914 and his replacement by General Erich von Falkenhayn.
+Upon hearing in July 1917 that his cousin George V had changed the name of the British royal house to Windsor, Wilhelm remarked that he planned to see Shakespeare's play "The Merry Wives of Saxe-Coburg-Gotha".
+That year also saw Wilhelm sickened during the worldwide Spanish flu outbreak, though he survived.
+Abdication and exile
+
+Wilhelm was at the Imperial Army headquarters in Spa, Belgium, when the uprisings in Berlin and other centres took him by surprise in late 1918.
+After the outbreak of the German Revolution, Wilhelm could not make up his mind whether to abdicate.
+Wilhelm thought he ruled as emperor in a personal union with Prussia.
+In truth, the constitution defined the empire as a confederation of states under the permanent presidency of Prussia.
+The imperial crown was thus tied to the Prussian crown, meaning that Wilhelm could not renounce one crown without renouncing the other.
+Wilhelm's hope of retaining at least one of his crowns was revealed as unrealistic when, in the hope of preserving the monarchy in the face of growing revolutionary unrest, Chancellor Prince Max of Baden announced Wilhelm's abdication of both titles on 9 November 1918.
+Prince Max himself was forced to resign later the same day, when it became clear that only Friedrich Ebert, leader of the SPD, could effectively exert control.
+Wilhelm accepted this fait accompli only after Ludendorff's replacement, General Wilhelm Groener, had informed him that the officers and men of the army would march back in good order under Hindenburg's command, but would certainly not fight for Wilhelm's throne.
+On 10 November, Wilhelm crossed the border by train and went into exile in the neutral Netherlands.
+Upon the conclusion of the Treaty of Versailles in early 1919, Article 227 expressly provided for the prosecution of Wilhelm "for a supreme offence against international morality and the sanctity of treaties", but the Dutch government refused to extradite him.
+The request for extradition will not be based on genuine desire on the part of British officials to bring the kaiser to trial, according to authoritative information, but is considered necessary formality to 'save the face' of politicians who promised to see that Wilhelm was punished for his crimes.
+President Woodrow Wilson of the United States opposed extradition, arguing that prosecuting Wilhelm would destabilise international order and lose the peace.
+Wilhelm first settled in Amerongen, where on 28 November he issued a belated statement of abdication from both the Prussian and imperial thrones, thus formally ending the Hohenzollerns' 500-year rule over Prussia and its predecessor state, Brandenburg.
+Finally accepting the reality that he had lost both of his crowns for good, he gave up his rights to "the throne of Prussia and to the German Imperial throne connected therewith".
+He also released his soldiers and officials in both Prussia and the empire from their oath of loyalty to him.
+The Weimar Republic allowed Wilhelm to remove twenty-three railway wagons of furniture, twenty-seven containing packages of all sorts, one bearing a car and another a boat, from the New Palace at Potsdam.
+Life in exile
+
+In 1922, Wilhelm published the first volume of his memoirs—a very slim volume that insisted he was not guilty of initiating the Great War, and defended his conduct throughout his reign, especially in matters of foreign policy.
+Wilhelm had developed a penchant for archaeology while residing at the Corfu Achilleion, excavating at the site of the Temple of Artemis in Corfu, a passion he retained in his exile.
+In exile, one of Wilhelm's greatest passions was hunting, and he killed thousands of animals, both beast and bird.
+Wealth
+
+Wilhelm II was seen as the richest man in Germany before 1914.
+Views on Nazism
+
+In the early 1930s, Wilhelm apparently hoped that the successes of the Nazi Party would stimulate interest in a restoration of the House of Hohenzollern, with his eldest grandson as the new Kaiser.
+Though he played host to Hermann Göring at Doorn on at least one occasion, Wilhelm learned to distrust Hitler.
+Hearing of the murder of the wife of former Chancellor Kurt von Schleicher during the Night of the Long Knives, Wilhelm said, "We have ceased to live under the rule of law and everyone must be prepared for the possibility that the Nazis will push their way in and put them up against the wall!"
+Wilhelm was also appalled at the Kristallnacht of 9–10 November 1938, saying "I have just made my views clear to Auwi  in the presence of his brothers.
+Wilhelm also stated, "For the first time, I am ashamed to be a German":
+
+
+There's a man alone, without family, without children, without God  He builds legions, but he doesn't build a nation.
+And I was gratified to see that there were, associated with it for a time, some of the wisest and most outstanding Germans.
+— Wilhelm on Hitler, December 1938
+
+In the wake of the German victory over Poland in September 1939, Wilhelm's adjutant, Wilhelm von Dommes, wrote on his behalf to Hitler, stating that the House of Hohenzollern "remained loyal" and noted that nine Prussian Princes (one son and eight grandchildren) were stationed at the front, concluding "because of the special circumstances that require residence in a neutral foreign country, His Majesty must personally decline to make the aforementioned comment.
+Wilhelm greatly admired the success which the Wehrmacht was able to achieve in the opening months of the Second World War, and personally sent Hitler a congratulatory telegram when the Netherlands surrendered in May 1940: "My Führer, I congratulate you and hope that under your marvellous leadership the German monarchy will be restored completely."
+Upon the fall of Paris a month later, Wilhelm sent another telegram: "Under the deeply moving impression of France's capitulation I congratulate you and all the German armed forces on the God-given prodigious victory with the words of Kaiser Wilhelm the Great of the year 1870: 'What a turn of events through God's dispensation!'
+In a letter to his daughter Victoria Louise, Duchess of Brunswick, he wrote triumphantly, "Thus is the pernicious Entente Cordiale of Uncle Edward VII brought to nought."
+In a September 1940 letter to an American journalist, Wilhelm praised Germany's rapid early conquests as "a succession of miracles", but remarked also that "the brilliant leading Generals in this war came from My school, they fought under my command in the World War as lieutenants, captains and young majors.
+After the German conquest of the Netherlands in 1940, the aging Wilhelm retired completely from public life.
+In May 1940, Wilhelm declined an offer from Winston Churchill of asylum in Great Britain, preferring to die at Huis Doorn.
+Anti-English, antisemitic, and anti-Freemason views
+
+During his last year at Doorn, Wilhelm believed that Germany was still the land of monarchy and Christianity, while England was the land of classical liberalism and therefore of Satan and the Antichrist.
+Wilhelm asserted that the "British people must be liberated from Antichrist Juda.
+Continental Europe was now, Wilhelm wrote, "consolidating and closing itself off from British influences after the elimination of the British and the Jews!"
+In a 1940 letter to his sister Princess Margaret, Wilhelm wrote: "The hand of God is creating a new world & working  ...
+Despite their very troubled relationship, Wilhelm wrote to a friend, "Today the 100th birthday of my mother!
+"
+
+
+Death
+
+Wilhelm died of a pulmonary embolism in Doorn, Netherlands, on 4 June 1941, at the age of 82, just weeks before the Axis invasion of the Soviet Union.
+However, it was then revealed that Wilhelm's orders were that his body was not to return to Germany unless the monarchy was first restored.
+The mourners included Field Marshal August von Mackensen, fully dressed in his old Imperial Hussars uniform, former World War I Office of Naval Intelligence field agent Admiral Wilhelm Canaris, Colonel General Curt Haase, World War I flying ace turned Wehrmachtbefehlshaber for the Netherlands General Friedrich Christiansen, and Reichskommissar for the Netherlands Arthur Seyss-Inquart, along with a few other military advisers.
+However, Kaiser Wilhelm's insistence that the swastika and Nazi Party regalia not be displayed at his funeral was ignored, as is seen in the photographs of the funeral taken by a Dutch photographer.
+Wilhelm was buried in a mausoleum upon the grounds of Huis Doorn, which has since become a place of pilgrimage for German monarchists, who gather there every year on the anniversary of his death to pay their homage to the last German Emperor.
+Historiography
+
+Three trends have characterised the writing about Wilhelm.
+Second, there came those who judged Wilhelm to be completely unable to handle the great responsibilities of his position, a ruler too reckless to deal with power.
+Third, after 1950, later scholars have sought to transcend the passions of the early 20th century and attempted an objective portrayal of Wilhelm and his rule.
+The accompanying story called him "the greatest factor for peace that our time can show", and credited Wilhelm with frequently rescuing Europe from the brink of war.
+Until the late 1950s, Germany under the last Kaiser was depicted by most historians as an almost absolute monarchy.
+More recently, historian John C. G. Röhl has portrayed Wilhelm as the key figure in understanding the recklessness and downfall of Imperial Germany.
+Marriages and issue
+
+Wilhelm and his first wife, Augusta Victoria of Schleswig-Holstein, were married on 27 February 1881.
+They had seven children:
+
+
+Empress Augusta, known affectionately as "Dona", was a constant companion to Wilhelm, and her death from a heart attack on 11 April 1921 was a devastating blow.
+It also came less than a year after their son Joachim committed suicide.
+Remarriage
+
+The following January, Wilhelm received a birthday greeting from a son of the late Prince Johann George Ludwig Ferdinand August Wilhelm of Schönaich-Carolath.
+The 63-year-old Wilhelm invited the boy and his mother, Princess Hermine Reuss of Greiz, to Doorn.
+Wilhelm found 35-year-old Hermine very attractive, and greatly enjoyed her company.
+The couple were wed in Doorn on 5 November 1922 despite the objections of Wilhelm's monarchist supporters and his children.
+Hermine's daughter, Princess Henriette, married the late Prince Joachim's son, Karl Franz Josef, in 1940, but divorced in 1946.
+Religion
+
+Own views
+
+In accordance with his role as the King of Prussia, Emperor Wilhelm II was a Lutheran member of the Evangelical State Church of Prussia's older Provinces.
+Attitude towards Islam
+
+Wilhelm II was on friendly terms with the Muslim world.
+Following his trip to Constantinople (which he visited three times—an unbeaten record for any European monarch) in 1898, Wilhelm II wrote to Nicholas II that:
+
+
+If I had come there without any religion at all, I certainly would have turned Mohammedan!
+Antisemitism
+
+Wilhelm's biographer Lamar Cecil identified Wilhelm's "curious but well-developed anti-Semitism", noting that in 1888 a friend of Wilhelm "declared that the young Kaiser's dislike of his Hebrew subjects, one rooted in a perception that they possessed an overweening influence in Germany, was so strong that it could not be overcome".
+Cecil concludes:
+
+
+Wilhelm never changed, and throughout his life he believed that Jews were perversely responsible, largely through their prominence in the Berlin press and in leftist political movements, for encouraging opposition to his rule.
+At the height of German military intervention against the Red Army during the Russian Civil War in 1918, Kaiser Wilhelm also suggested a similar campaign against the "Jew-Bolsheviks" who were slaughtering the Baltic German nobility in the Baltic states, citing the example of what Turks had done to the Ottoman Armenians just a few years earlier.
+On 2 December 1919, Wilhelm wrote to Mackensen, denouncing the November Revolution of 1918 and his own forced abdication as the "deepest, most disgusting shame ever perpetrated by a person in history, the Germans have done to themselves ... egged on and misled by the tribe of Judah ...
+Wilhelm advocated a "regular international all-worlds pogrom à la Russe" as "the best cure" and further believed that Jews were a "nuisance that humanity must get rid of some way or other.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +443,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +460,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +494,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +576,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +599,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +619,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +629,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +669,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,204 +768,207 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fba08e88-499b-4bf7-bc25-7b692c09b08a)
- Call ID: fba08e88-499b-4bf7-bc25-7b692c09b08a
+  AssignClass (6be3456d-7193-46f8-8192-42d3c27a7fd7)
+ Call ID: 6be3456d-7193-46f8-8192-42d3c27a7fd7
   Args:
+    source: :Wilhelm_II
     type: :Man
-    source: Gottfried_of_Austria
-  AssignClass (99267aee-cbad-4ee1-b8c8-36c1364b3f17)
- Call ID: 99267aee-cbad-4ee1-b8c8-36c1364b3f17
+  AssignClass (14d30076-b327-4980-a7d4-73060e79e912)
+ Call ID: 14d30076-b327-4980-a7d4-73060e79e912
   Args:
+    source: :Wilhelm_II
     type: :Person
-    source: Gottfried_of_Austria
-  AssignClass (be74fd10-e5eb-464e-af58-dd08a97d7157)
- Call ID: be74fd10-e5eb-464e-af58-dd08a97d7157
+  AddLiteral (075726ac-4928-4ee6-96f6-e51df3c76fd5)
+ Call ID: 075726ac-4928-4ee6-96f6-e51df3c76fd5
   Args:
-    type: :Man
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (3ad5f763-5cff-40b4-9f3d-4d25e633ef62)
- Call ID: 3ad5f763-5cff-40b4-9f3d-4d25e633ef62
-  Args:
-    type: :Person
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (65dd1149-05c7-423c-a039-897b34e6f7d5)
- Call ID: 65dd1149-05c7-423c-a039-897b34e6f7d5
-  Args:
-    type: :Ancestor
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (ddad2337-11e4-4bf0-8d67-ee9b835cfc6f)
- Call ID: ddad2337-11e4-4bf0-8d67-ee9b835cfc6f
-  Args:
-    type: :Woman
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (f27dc00a-31c6-4a87-8418-9bcc9eb4c104)
- Call ID: f27dc00a-31c6-4a87-8418-9bcc9eb4c104
-  Args:
-    type: :Person
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (84d95ab6-2d14-4a69-b420-8e3dbdef8bed)
- Call ID: 84d95ab6-2d14-4a69-b420-8e3dbdef8bed
-  Args:
-    type: :Ancestor
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (d0731d50-2f05-422f-be31-39e8f34679b9)
- Call ID: d0731d50-2f05-422f-be31-39e8f34679b9
-  Args:
-    type: :Man
-    source: Ferdinando_IV_of_Tuscany
-  AssignClass (04e19d0f-2c43-462c-a41b-d7649877f46e)
- Call ID: 04e19d0f-2c43-462c-a41b-d7649877f46e
-  Args:
-    type: :Person
-    source: Ferdinando_IV_of_Tuscany
-  AssignClass (cee8497f-67f1-4fa7-ba3c-c81df258a703)
- Call ID: cee8497f-67f1-4fa7-ba3c-c81df258a703
-  Args:
-    type: :Ancestor
-    source: Ferdinando_IV_of_Tuscany
-  AssignClass (dd4a9115-472f-4d04-b422-f86e6fa8b610)
- Call ID: dd4a9115-472f-4d04-b422-f86e6fa8b610
-  Args:
-    type: :Woman
-    source: Dorothea_of_Bavaria
-  AssignClass (db3883f9-612f-4b23-a430-12808cd3854d)
- Call ID: db3883f9-612f-4b23-a430-12808cd3854d
-  Args:
-    type: :Person
-    source: Dorothea_of_Bavaria
-  AssignClass (a2ab8e6a-27fb-475c-b489-f88719de1f09)
- Call ID: a2ab8e6a-27fb-475c-b489-f88719de1f09
-  Args:
-    type: :Man
-    source: Franz_of_Bavaria
-  AssignClass (0af02cea-9ac3-4373-bc8e-150c2f0db23f)
- Call ID: 0af02cea-9ac3-4373-bc8e-150c2f0db23f
-  Args:
-    type: :Person
-    source: Franz_of_Bavaria
-  AssignClass (7f86bdc0-ec9d-4961-b2c9-d71b3ca17e8f)
- Call ID: 7f86bdc0-ec9d-4961-b2c9-d71b3ca17e8f
-  Args:
-    type: :Ancestor
-    source: Franz_of_Bavaria
-  AssignClass (dab176cf-196d-4446-b3eb-11c94d32d402)
- Call ID: dab176cf-196d-4446-b3eb-11c94d32d402
-  Args:
-    type: :Woman
-    source: Isabella_Antonie_of_Croy
-  AssignClass (e5a92012-8895-4cc2-accb-2cd499b547b8)
- Call ID: e5a92012-8895-4cc2-accb-2cd499b547b8
-  Args:
-    type: :Person
-    source: Isabella_Antonie_of_Croy
-  AssignClass (98283084-7005-47c8-854b-7cd8aadf31e6)
- Call ID: 98283084-7005-47c8-854b-7cd8aadf31e6
-  Args:
-    type: :Ancestor
-    source: Isabella_Antonie_of_Croy
-  AddTriple (e12de445-2683-49ba-97e6-0b48f37a41e4)
- Call ID: e12de445-2683-49ba-97e6-0b48f37a41e4
-  Args:
-    target: Peter_Ferdinand_of_Austria
-    relation: :hasFather
-    source: Gottfried_of_Austria
-  AddTriple (b829482b-2090-4167-9bfa-68c48da21e86)
- Call ID: b829482b-2090-4167-9bfa-68c48da21e86
-  Args:
-    target: Maria_Cristina_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-    source: Gottfried_of_Austria
-  AddTriple (8cb11508-76c5-45ce-bf93-b85afe4ed11b)
- Call ID: 8cb11508-76c5-45ce-bf93-b85afe4ed11b
-  Args:
-    target: Ferdinando_IV_of_Tuscany
-    relation: :hasFather
-    source: Peter_Ferdinand_of_Austria
-  AddTriple (ac99a9f5-9847-403f-98db-0faed102ec43)
- Call ID: ac99a9f5-9847-403f-98db-0faed102ec43
-  Args:
-    source: Dorothea_of_Bavaria
-    relation: :hasFather
-    target: Franz_of_Bavaria
-  AddTriple (048ae921-baf8-42d8-a84a-bfa80c74b3d9)
- Call ID: 048ae921-baf8-42d8-a84a-bfa80c74b3d9
-  Args:
-    source: Dorothea_of_Bavaria
-    relation: :hasMother
-    target: Isabella_Antonie_of_Croy
-  AddLiteral (66426c5d-c3ad-438b-a8d4-8fb3eb43ec4f)
- Call ID: 66426c5d-c3ad-438b-a8d4-8fb3eb43ec4f
-  Args:
-    literal_value: 1902
+    source: :Wilhelm_II
     literal_type: xsd:integer
-    source: Gottfried_of_Austria
+    literal_value: 1859
     relation: :hasBirthYear
-  AddLiteral (d7187636-faff-42ea-a628-9f700a531196)
- Call ID: d7187636-faff-42ea-a628-9f700a531196
+  AddLiteral (274d0dd5-4aba-462e-aee6-e9040b2c6644)
+ Call ID: 274d0dd5-4aba-462e-aee6-e9040b2c6644
   Args:
+    source: :Wilhelm_II
     literal_type: xsd:integer
+    literal_value: 1941
     relation: :hasDeathYear
-    source: Gottfried_of_Austria
-    literal_value: 1984
-  AddLiteral (bea07720-f978-4db6-bdda-bb8eb486f208)
- Call ID: bea07720-f978-4db6-bdda-bb8eb486f208
+  AssignClass (e6ecd649-8446-496b-a6bb-b74504a4d7a9)
+ Call ID: e6ecd649-8446-496b-a6bb-b74504a4d7a9
+  Args:
+    source: :Frederick_III
+    type: :Man
+  AssignClass (6e398925-53fb-4063-82e7-fe23d0fb29d6)
+ Call ID: 6e398925-53fb-4063-82e7-fe23d0fb29d6
+  Args:
+    type: :Person
+    source: :Frederick_III
+  AssignClass (fd18e820-08bb-450e-94e8-61864460280e)
+ Call ID: fd18e820-08bb-450e-94e8-61864460280e
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Woman
+  AssignClass (f40be4f5-606c-4117-9420-0bdad06fbb5c)
+ Call ID: f40be4f5-606c-4117-9420-0bdad06fbb5c
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Person
+  AddTriple (c87a879b-ac12-49d8-9159-775bef02851b)
+ Call ID: c87a879b-ac12-49d8-9159-775bef02851b
+  Args:
+    source: :Wilhelm_II
+    target: :Frederick_III
+    relation: :hasFather
+  AddTriple (ddd68ae1-92a0-497f-ae35-d7329eeaaa72)
+ Call ID: ddd68ae1-92a0-497f-ae35-d7329eeaaa72
+  Args:
+    source: :Wilhelm_II
+    target: :Victoria_Princess_Royal
+    relation: :hasMother
+  AssignClass (f4336dad-c6ab-4c95-a767-c1eabdca023c)
+ Call ID: f4336dad-c6ab-4c95-a767-c1eabdca023c
+  Args:
+    source: :Queen_Victoria
+    type: :Woman
+  AssignClass (6d4666ff-284c-454a-919c-cf80b521acff)
+ Call ID: 6d4666ff-284c-454a-919c-cf80b521acff
+  Args:
+    type: :Person
+    source: :Queen_Victoria
+  AddTriple (07c1cbc9-8baf-4f3b-82e7-6bc8dd129f34)
+ Call ID: 07c1cbc9-8baf-4f3b-82e7-6bc8dd129f34
+  Args:
+    relation: :hasMother
+    target: :Queen_Victoria
+    source: :Victoria_Princess_Royal
+  AssignClass (17f56a25-10e0-45e1-9084-f0a15a00f741)
+ Call ID: 17f56a25-10e0-45e1-9084-f0a15a00f741
+  Args:
+    source: :Prince_Albert
+    type: :Man
+  AssignClass (4299b295-9a7b-4abd-aaf5-0079911df34d)
+ Call ID: 4299b295-9a7b-4abd-aaf5-0079911df34d
+  Args:
+    type: :Person
+    source: :Prince_Albert
+  AddTriple (eb701737-55d5-4ee9-831b-94ce062b3413)
+ Call ID: eb701737-55d5-4ee9-831b-94ce062b3413
+  Args:
+    source: :Victoria_Princess_Royal
+    target: :Prince_Albert
+    relation: :hasFather
+  AssignClass (268164e8-bf3a-4457-848b-dd816f6019b6)
+ Call ID: 268164e8-bf3a-4457-848b-dd816f6019b6
+  Args:
+    source: :Sophia_of_Prussia
+    type: :Woman
+  AssignClass (0bf242d1-23e8-4193-bd0e-fe4432955d71)
+ Call ID: 0bf242d1-23e8-4193-bd0e-fe4432955d71
+  Args:
+    type: :Person
+    source: :Sophia_of_Prussia
+  AddTriple (1a7cdc6c-70d2-4bdd-b856-0a32454e6f01)
+ Call ID: 1a7cdc6c-70d2-4bdd-b856-0a32454e6f01
+  Args:
+    target: :Wilhelm_II
+    source: :Sophia_of_Prussia
+    relation: :isSisterOf
+  AssignClass (3a575efe-df2a-4a2c-92fd-0bfe21e8b1c6)
+ Call ID: 3a575efe-df2a-4a2c-92fd-0bfe21e8b1c6
+  Args:
+    source: :Augusta_Victoria
+    type: :Woman
+  AssignClass (d4373054-df81-486e-a2ac-f1b68fe826de)
+ Call ID: d4373054-df81-486e-a2ac-f1b68fe826de
+  Args:
+    source: :Augusta_Victoria
+    type: :Person
+  AddLiteral (5774b961-4d04-42dd-971f-0a36d633b0d6)
+ Call ID: 5774b961-4d04-42dd-971f-0a36d633b0d6
   Args:
     relation: :hasMarriageYear
-    source: Gottfried_of_Austria
+    literal_value: 1881
     literal_type: xsd:integer
-    literal_value: 1938
-  AddLiteral (13209bcf-ed0c-4872-bd9e-61790dd24184)
- Call ID: 13209bcf-ed0c-4872-bd9e-61790dd24184
+    source: :Wilhelm_II
+  AddTriple (a724191c-0a5e-4937-a187-de67b055e85b)
+ Call ID: a724191c-0a5e-4937-a187-de67b055e85b
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Gottfried_of_Austria
-    relation: :hasSex
-  AddLiteral (88810ed5-7662-44f3-9ecc-d41f3bf73d18)
- Call ID: 88810ed5-7662-44f3-9ecc-d41f3bf73d18
+    relation: :hasRelation
+    target: :Augusta_Victoria
+    source: :Wilhelm_II
+  AssignClass (ea5c8357-87f5-41d2-9996-34e678316a7f)
+ Call ID: ea5c8357-87f5-41d2-9996-34e678316a7f
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Peter_Ferdinand_of_Austria
-    relation: :hasSex
-  AddLiteral (7b8b2c76-a9a6-423d-9b28-03d17f5a5196)
- Call ID: 7b8b2c76-a9a6-423d-9b28-03d17f5a5196
+    source: :Victoria_Louise
+    type: :Woman
+  AssignClass (a9882c6a-6328-4b43-9a9f-166646c13dd8)
+ Call ID: a9882c6a-6328-4b43-9a9f-166646c13dd8
   Args:
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  AddLiteral (c8bf64d4-76d6-43c8-96f9-ce4d20127a6d)
- Call ID: c8bf64d4-76d6-43c8-96f9-ce4d20127a6d
+    source: :Victoria_Louise
+    type: :Person
+  AddTriple (81418bf1-da8a-4063-bd45-379f99c11e28)
+ Call ID: 81418bf1-da8a-4063-bd45-379f99c11e28
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Ferdinando_IV_of_Tuscany
-    relation: :hasSex
-  AddLiteral (dd78dc99-4077-42f0-b530-4063e1bc55f1)
- Call ID: dd78dc99-4077-42f0-b530-4063e1bc55f1
+    relation: :isDaughterOf
+    target: :Wilhelm_II
+    source: :Victoria_Louise
+  AddTriple (c5c5cebd-e52a-4719-b905-65299d8f9703)
+ Call ID: c5c5cebd-e52a-4719-b905-65299d8f9703
   Args:
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Dorothea_of_Bavaria
-  AddLiteral (f80a7474-1c84-4fec-a0a0-efd8fcceda10)
- Call ID: f80a7474-1c84-4fec-a0a0-efd8fcceda10
+    relation: :isDaughterOf
+    target: :Augusta_Victoria
+    source: :Victoria_Louise
+  AssignClass (c9054873-e2b3-4721-807f-704b6ae685d8)
+ Call ID: c9054873-e2b3-4721-807f-704b6ae685d8
   Args:
-    source: Franz_of_Bavaria
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (56df8fd7-b66f-4df0-a0e7-831b8b820d57)
- Call ID: 56df8fd7-b66f-4df0-a0e7-831b8b820d57
+    source: :Joachim_of_Prussia
+    type: :Man
+  AssignClass (9fb4807a-fa1d-4b9e-807e-6c1397909f1c)
+ Call ID: 9fb4807a-fa1d-4b9e-807e-6c1397909f1c
   Args:
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Isabella_Antonie_of_Croy
-  Finish (2d46e0fc-e8d3-4cf9-a107-fd59a23687e8)
- Call ID: 2d46e0fc-e8d3-4cf9-a107-fd59a23687e8
+    type: :Person
+    source: :Joachim_of_Prussia
+  AddTriple (fa58701f-41e0-416e-9670-ec35a49e8ab1)
+ Call ID: fa58701f-41e0-416e-9670-ec35a49e8ab1
   Args:
+    source: :Joachim_of_Prussia
+    target: :Wilhelm_II
+    relation: :isSonOf
+  AddTriple (082b2c5c-e1f0-4010-a786-73fc30c4910f)
+ Call ID: 082b2c5c-e1f0-4010-a786-73fc30c4910f
+  Args:
+    source: :Joachim_of_Prussia
+    target: :Augusta_Victoria
+    relation: :isSonOf
+  AssignClass (32b9251c-ce35-4417-8f68-efbfef912282)
+ Call ID: 32b9251c-ce35-4417-8f68-efbfef912282
+  Args:
+    type: :Woman
+    source: :Hermine_Reuss
+  AssignClass (7e5c2fd9-7b09-4969-8c56-96f270c77458)
+ Call ID: 7e5c2fd9-7b09-4969-8c56-96f270c77458
+  Args:
+    type: :Person
+    source: :Hermine_Reuss
+  AddLiteral (ed46d953-4b26-46e9-8831-4a45412fec81)
+ Call ID: ed46d953-4b26-46e9-8831-4a45412fec81
+  Args:
+    literal_type: xsd:integer
+    source: :Wilhelm_II
+    literal_value: 1922
+    relation: :hasMarriageYear
+  AddTriple (3373cc0a-6070-4428-9ec1-d69b07b754f5)
+ Call ID: 3373cc0a-6070-4428-9ec1-d69b07b754f5
+  Args:
+    source: :Wilhelm_II
+    target: :Hermine_Reuss
+    relation: :hasRelation
+  Finish (a3b920f1-8008-4830-a825-e9e2c9be94ca)
+ Call ID: a3b920f1-8008-4830-a825-e9e2c9be94ca
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -711,46 +1109,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Dorothea_of_Bavaria a :Person,
+  data:Joachim_of_Prussia a :Man,
+          :Person ;
+      :isSonOf data:Augusta_Victoria,
+          data:Wilhelm_II .
+
+  data:Sophia_of_Prussia a :Person,
           :Woman ;
-      :hasFather data:Franz_of_Bavaria ;
-      :hasMother data:Isabella_Antonie_of_Croy ;
-      :hasSex "Female"^^xsd:string .
+      :isSisterOf data:Wilhelm_II .
 
-  data:Gottfried_of_Austria a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1984 ;
-      :hasFather data:Peter_Ferdinand_of_Austria ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Ferdinando_IV_of_Tuscany a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Franz_of_Bavaria a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Isabella_Antonie_of_Croy a :Ancestor,
-          :Person,
+  data:Victoria_Louise a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :isDaughterOf data:Augusta_Victoria,
+          data:Wilhelm_II .
 
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
+  data:Frederick_III a :Man,
+          :Person .
+
+  data:Hermine_Reuss a :Person,
+          :Woman .
+
+  data:Prince_Albert a :Man,
+          :Person .
+
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:Victoria_Princess_Royal a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasFather data:Prince_Albert ;
+      :hasMother data:Queen_Victoria .
 
-  data:Peter_Ferdinand_of_Austria a :Ancestor,
-          :Man,
+  data:Augusta_Victoria a :Person,
+          :Woman .
+
+  data:Wilhelm_II a :Man,
           :Person ;
-      :hasFather data:Ferdinando_IV_of_Tuscany ;
-      :hasSex "Male"^^xsd:string .
+      :hasBirthYear 1859 ;
+      :hasDeathYear 1941 ;
+      :hasFather data:Frederick_III ;
+      :hasMarriageYear 1881,
+          1922 ;
+      :hasMother data:Victoria_Princess_Royal ;
+      :hasRelation data:Augusta_Victoria,
+          data:Hermine_Reuss .
 
 
 
@@ -762,582 +1164,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (79d7bd4c-21cb-483b-a896-cdeac273d025)
- Call ID: 79d7bd4c-21cb-483b-a896-cdeac273d025
+  ValidateShacl (4ba3fb8a-1e8c-4a92-86c6-9947503cd7ba)
+ Call ID: 4ba3fb8a-1e8c-4a92-86c6-9947503cd7ba
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:71
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
+      The node Frederick_III is assigned as the father of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_III', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
+      The node Victoria_Princess_Royal is assigned as the mother of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
+      The node Prince_Albert is assigned as the father of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Albert', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
+      The node Frederick_III is assigned as the father of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_III', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
+      The node Queen_Victoria is assigned as the mother of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
+      The node Victoria_Princess_Royal is assigned as the mother of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Joachim_of_Prussia but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
+      The node Prince_Albert is assigned as the father of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Prince_Albert', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
+      The node Frederick_III is assigned as the father of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_III', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
+      The node Queen_Victoria is assigned as the mother of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
+      The node Victoria_Princess_Royal is assigned as the mother of Wilhelm_II but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
+      The node Prince_Albert is assigned as the father of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Albert', class=':Ancestor')
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
+      The node Queen_Victoria is assigned as the mother of Victoria_Princess_Royal but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Queen_Victoria', class=':Ancestor')
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
+      The node Augusta_Victoria is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Victoria', class=':Ancestor')
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is assigned as an ancestor of Victoria_Louise but lacks the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
 
@@ -1346,796 +1372,39 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c2701c82-3f81-4e79-99b3-866c669807e9)
- Call ID: c2701c82-3f81-4e79-99b3-866c669807e9
+  AssignClass (2644a296-ecaf-4df1-a2a7-9fd13dc18acd)
+ Call ID: 2644a296-ecaf-4df1-a2a7-9fd13dc18acd
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (06ce64b4-b72b-4527-9e98-463eaf80d021)
- Call ID: 06ce64b4-b72b-4527-9e98-463eaf80d021
+    type: :Ancestor
+    source: :Augusta_Victoria
+  AssignClass (dca7494c-7d50-49b8-967e-c55fe6a6685c)
+ Call ID: dca7494c-7d50-49b8-967e-c55fe6a6685c
   Args:
-    type: :Sex
-    source: Female
-  Finish (bb2bcc87-f97f-43f9-86ae-36df9ee1ad52)
- Call ID: bb2bcc87-f97f-43f9-86ae-36df9ee1ad52
+    source: :Wilhelm_II
+    type: :Ancestor
+  AssignClass (049a84f1-cc62-43cc-9540-2e3f57b212ab)
+ Call ID: 049a84f1-cc62-43cc-9540-2e3f57b212ab
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Dorothea_of_Bavaria a :Person,
-          :Woman ;
-      :hasFather data:Franz_of_Bavaria ;
-      :hasMother data:Isabella_Antonie_of_Croy ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Female a :Sex .
-
-  data:Gottfried_of_Austria a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1984 ;
-      :hasFather data:Peter_Ferdinand_of_Austria ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Male a :Sex .
-
-  data:Ferdinando_IV_of_Tuscany a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Franz_of_Bavaria a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Isabella_Antonie_of_Croy a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Peter_Ferdinand_of_Austria a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Ferdinando_IV_of_Tuscany ;
-      :hasSex "Male"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (65e41622-3725-4ace-91c2-f1749af5d4f4)
- Call ID: 65e41622-3725-4ace-91c2-f1749af5d4f4
+    type: :Ancestor
+    source: :Frederick_III
+  AssignClass (d7004e4c-bec3-4065-90b2-89d6189c828f)
+ Call ID: d7004e4c-bec3-4065-90b2-89d6189c828f
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:71
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gottfried_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Peter_Ferdinand_of_Austria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Ferdinando_IV_of_Tuscany' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Franz_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_Cristina_of_Bourbon-Two_Sicilies' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Isabella_Antonie_of_Croy' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Dorothea_of_Bavaria' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (7919c21e-7eaa-45a5-abc4-66e19e0c7999)
- Call ID: 7919c21e-7eaa-45a5-abc4-66e19e0c7999
+    type: :Ancestor
+    source: :Victoria_Princess_Royal
+  AssignClass (8f35c868-dd60-46d9-8689-c3ca0c56895c)
+ Call ID: 8f35c868-dd60-46d9-8689-c3ca0c56895c
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: Gottfried_of_Austria
-    relation: :hasSex
-  RemoveLiteral (6d9e082d-27aa-4a17-a3ce-dd46ca674561)
- Call ID: 6d9e082d-27aa-4a17-a3ce-dd46ca674561
+    source: :Prince_Albert
+    type: :Ancestor
+  AssignClass (579a0a93-ae27-4534-855f-2006428753e3)
+ Call ID: 579a0a93-ae27-4534-855f-2006428753e3
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: Peter_Ferdinand_of_Austria
-    relation: :hasSex
-  RemoveLiteral (eeb7a3f8-2a80-458a-857f-b85aef3d4405)
- Call ID: eeb7a3f8-2a80-458a-857f-b85aef3d4405
+    type: :Ancestor
+    source: :Queen_Victoria
+  ValidateShacl (9b49cbff-f04e-47ae-b234-40d8a34296cb)
+ Call ID: 9b49cbff-f04e-47ae-b234-40d8a34296cb
   Args:
-    source: Ferdinando_IV_of_Tuscany
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (d47bfe43-26bb-4cef-bc84-507e21e0b43e)
- Call ID: d47bfe43-26bb-4cef-bc84-507e21e0b43e
-  Args:
-    source: Franz_of_Bavaria
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (9d2bf741-56d9-454d-b2e4-fed3be40cf6a)
- Call ID: 9d2bf741-56d9-454d-b2e4-fed3be40cf6a
-  Args:
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  RemoveLiteral (32a2bbfb-5854-4bdf-9bc3-0076bde934a9)
- Call ID: 32a2bbfb-5854-4bdf-9bc3-0076bde934a9
-  Args:
-    relation: :hasSex
-    source: Dorothea_of_Bavaria
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (10df48db-1d63-42be-8715-4428af637975)
- Call ID: 10df48db-1d63-42be-8715-4428af637975
-  Args:
-    source: Isabella_Antonie_of_Croy
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  AddTriple (b8d8f1e5-8011-427c-b759-0e9108daa59f)
- Call ID: b8d8f1e5-8011-427c-b759-0e9108daa59f
-  Args:
-    source: Gottfried_of_Austria
-    relation: :hasSex
-    target: Male
-  AddTriple (aba18a93-a2d7-4b6e-84ec-bae9616ff579)
- Call ID: aba18a93-a2d7-4b6e-84ec-bae9616ff579
-  Args:
-    relation: :hasSex
-    source: Peter_Ferdinand_of_Austria
-    target: Male
-  AddTriple (6cd7c2e2-0672-4158-9a9e-774e04566dd7)
- Call ID: 6cd7c2e2-0672-4158-9a9e-774e04566dd7
-  Args:
-    relation: :hasSex
-    source: Ferdinando_IV_of_Tuscany
-    target: Male
-  AddTriple (fe223921-4904-48b5-8390-64781fd31221)
- Call ID: fe223921-4904-48b5-8390-64781fd31221
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Franz_of_Bavaria
-  AddTriple (427b5a19-2c30-4b5f-a693-54cd62b29002)
- Call ID: 427b5a19-2c30-4b5f-a693-54cd62b29002
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddTriple (34f3d9d6-bcfa-4103-bcbe-2bcf324b4f8f)
- Call ID: 34f3d9d6-bcfa-4103-bcbe-2bcf324b4f8f
-  Args:
-    source: Dorothea_of_Bavaria
-    relation: :hasSex
-    target: Female
-  AddTriple (a63747f1-056c-4327-a783-3c228c1bfc46)
- Call ID: a63747f1-056c-4327-a783-3c228c1bfc46
-  Args:
-    relation: :hasSex
-    source: Isabella_Antonie_of_Croy
-    target: Female
-  Finish (358e043b-1c94-4c73-ab19-8800a2b76339)
- Call ID: 358e043b-1c94-4c73-ab19-8800a2b76339
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -2164,64 +1433,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Dorothea_of_Bavaria a :Person,
+  data:Joachim_of_Prussia a :Man,
+          :Person ;
+      :isSonOf data:Augusta_Victoria,
+          data:Wilhelm_II .
+
+  data:Sophia_of_Prussia a :Person,
           :Woman ;
-      :hasFather data:Franz_of_Bavaria ;
-      :hasMother data:Isabella_Antonie_of_Croy ;
-      :hasSex data:Female .
+      :isSisterOf data:Wilhelm_II .
 
-  data:Gottfried_of_Austria a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1984 ;
-      :hasFather data:Peter_Ferdinand_of_Austria ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-      :hasSex data:Male .
+  data:Victoria_Louise a :Person,
+          :Woman ;
+      :isDaughterOf data:Augusta_Victoria,
+          data:Wilhelm_II .
 
-  data:Ferdinando_IV_of_Tuscany a :Ancestor,
+  data:Frederick_III a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Franz_of_Bavaria a :Ancestor,
+  data:Hermine_Reuss a :Person,
+          :Woman .
+
+  data:Prince_Albert a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Isabella_Antonie_of_Croy a :Ancestor,
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Victoria_Princess_Royal a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Prince_Albert ;
+      :hasMother data:Queen_Victoria .
 
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+  data:Augusta_Victoria a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:Peter_Ferdinand_of_Austria a :Ancestor,
+  data:Wilhelm_II a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Ferdinando_IV_of_Tuscany ;
-      :hasSex data:Male .
+      :hasBirthYear 1859 ;
+      :hasDeathYear 1941 ;
+      :hasFather data:Frederick_III ;
+      :hasMarriageYear 1881,
+          1922 ;
+      :hasMother data:Victoria_Princess_Royal ;
+      :hasRelation data:Augusta_Victoria,
+          data:Hermine_Reuss .
 
-  data:Female a :Sex .
 
-  data:Male a :Sex .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (25defb98-0d64-4de7-835c-455397759b42)
- Call ID: 25defb98-0d64-4de7-835c-455397759b42
-  Args:
 
 ================================= Tool Message =================================
 
@@ -2231,6 +1494,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (82849023-3461-4c17-b20b-aa539f6cf535)
- Call ID: 82849023-3461-4c17-b20b-aa539f6cf535
+  Finish (820ccbda-2424-43c6-8d26-15544335640c)
+ Call ID: 820ccbda-2424-43c6-8d26-15544335640c
   Args:

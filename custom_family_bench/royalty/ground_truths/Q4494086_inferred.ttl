@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George Lascelles, 7th Earl of Harewood"^^xsd:string ;
+    data:posIndicesFull "154:170"^^xsd:string,
+        "154:192"^^xsd:string ;
+    data:posIndicesPart "276:282"^^xsd:string,
+        "421:430"^^xsd:string,
+        "607:616"^^xsd:string,
+        "730:739"^^xsd:string ;
+    data:wdtLink wdt:Q336609 ;
+    :alsoKnownAs "George Harewood"^^xsd:string,
+        "George Henry Hubert Lascelles, 7th Earl of Harewood"^^xsd:string,
+        "George Henry Hubert Lascelles, Viscount Lascelles"^^xsd:string,
+        "George Lascelles"^^xsd:string,
+        "George Lascelles, Viscount Lascelles"^^xsd:string,
+        "Hon. George Henry Hubert Lascelles"^^xsd:string,
+        "Hon. George Lascelles"^^xsd:string,
+        "Lascelles, George"^^xsd:string ;
+    :hasBrother data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasChild data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :hasRelation data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :hasSex data:male ;
+    :hasSon data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isAncestorOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isBloodrelationOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isBrotherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isFatherOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isParentOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isSiblingOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isUncleOf data:James_Lascelles,
+        data:Jeremy_Lascelles .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marion Stein"^^xsd:string ;
+    data:posIndicesFull "198:210"^^xsd:string ;
+    data:wdtLink wdt:Q2010206 ;
+    :alsoKnownAs "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Lascelles, Countess of Harewood"^^xsd:string,
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Stein"^^xsd:string,
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Thorpe"^^xsd:string,
+        "Maria Stein"^^xsd:string,
+        "Marion Harewood"^^xsd:string,
+        "Marion Lascelles, Countess of Harewood"^^xsd:string,
+        "Marion Thorpe"^^xsd:string ;
+    :hasChild data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :hasRelation data:James_Lascelles,
+        data:Jeremy_Lascelles,
+        data:Marion_Stein ;
+    :hasSex data:female ;
+    :hasSister data:Marion_Stein ;
+    :hasSon data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isAncestorOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isAuntOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isBloodrelationOf data:Marion_Stein ;
+    :isMotherOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isParentOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isSiblingOf data:Marion_Stein ;
+    :isSisterOf data:Marion_Stein .
+
+data:James_Lascelles a :Man,
+        :Person ;
+    rdfs:label "James Lascelles"^^xsd:string ;
+    data:posIndicesFull "387:402"^^xsd:string ;
+    data:posIndicesPart "421:430"^^xsd:string,
+        "607:616"^^xsd:string,
+        "730:739"^^xsd:string ;
+    data:wdtLink wdt:Q2038298 ;
+    :alsoKnownAs "Hon. James Edward Lascelles"^^xsd:string,
+        "Hon. James Lascelles"^^xsd:string,
+        "James Edward Lascelles"^^xsd:string ;
+    :hasAncestor data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasBrother data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :hasFather data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasRelation data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:Jeremy_Lascelles,
+        data:Marion_Stein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isBrotherOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isChildOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSiblingOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isSonOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein .
+
+data:Jeremy_Lascelles a :Man,
+        :Person ;
+    rdfs:label "Jeremy Lascelles"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string ;
+    data:posIndicesPart "122:131"^^xsd:string,
+        "230:236"^^xsd:string,
+        "421:430"^^xsd:string,
+        "607:616"^^xsd:string,
+        "730:739"^^xsd:string ;
+    data:wdtLink wdt:Q4494086 ;
+    :alsoKnownAs "Hon. Jeremy Lascelles"^^xsd:string,
+        "Hon. Robert Jeremy Hugh Lascelles"^^xsd:string,
+        "Robert Jeremy Hugh Lascelles"^^xsd:string,
+        "The Honourable Robert Jeremy Hugh Lascelles"^^xsd:string ;
+    :hasAncestor data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasBrother data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :hasFather data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasRelation data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:James_Lascelles,
+        data:Jeremy_Lascelles,
+        data:Marion_Stein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isBrotherOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isChildOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSiblingOf data:James_Lascelles,
+        data:Jeremy_Lascelles ;
+    :isSonOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein .
+

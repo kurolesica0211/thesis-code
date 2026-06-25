@@ -1,0 +1,153 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person,
+        :Woman ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone"^^xsd:string ;
+    data:posIndicesFull "0:42"^^xsd:string ;
+    data:posIndicesPart "1226:1237"^^xsd:string,
+        "1307:1311"^^xsd:string,
+        "1312:1323"^^xsd:string,
+        "247:251"^^xsd:string,
+        "252:263"^^xsd:string,
+        "288:292"^^xsd:string,
+        "513:517"^^xsd:string,
+        "518:522"^^xsd:string,
+        "622:633"^^xsd:string,
+        "947:951"^^xsd:string,
+        "952:963"^^xsd:string ;
+    data:wdtLink wdt:Q6779476 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon"^^xsd:string,
+        "Lady Mary Frances Bowes-Lyon"^^xsd:string,
+        "Mary Frances Elphinstone, Lady Elphinstone"^^xsd:string ;
+    :hasRelation data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :hasSex data:female ;
+    :hasSister data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isBloodrelationOf data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isSiblingOf data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isSisterOf data:Mary_Elphinstone-_Lady_Elphinstone .
+
+data:Princess_Anne_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Denmark"^^xsd:string ;
+    data:posIndicesFull "49:63"^^xsd:string ;
+    data:posIndicesPart "1049:1057"^^xsd:string,
+        "1170:1178"^^xsd:string ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson"^^xsd:string,
+        "Anne Anson, Viscountess Anson"^^xsd:string,
+        "Anne Bowes-Lyon"^^xsd:string,
+        "Anne Ferelith Fenella Anson"^^xsd:string,
+        "Anne Ferelith Fenella Anson, Viscountess Anson"^^xsd:string,
+        "Anne Ferelith Fenella Bowes-Lyon"^^xsd:string,
+        "Princess Anne Ferelith Fenella of Denmark"^^xsd:string ;
+    :hasRelation data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Princess_Anne_of_Denmark .
+
+data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Man,
+        :Person ;
+    rdfs:label "Sidney Elphinstone, 16th Lord Elphinstone"^^xsd:string ;
+    data:posIndicesFull "531:572"^^xsd:string ;
+    data:posIndicesPart "1221:1225"^^xsd:string,
+        "1226:1237"^^xsd:string,
+        "1312:1323"^^xsd:string,
+        "617:621"^^xsd:string,
+        "622:633"^^xsd:string,
+        "795:799"^^xsd:string,
+        "856:860"^^xsd:string,
+        "952:963"^^xsd:string ;
+    data:wdtLink wdt:Q3960165 ;
+    :alsoKnownAs "Sidney Herbert Elphinstone, 16th Lord Elphinstone"^^xsd:string ;
+    :hasBrother data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :hasRelation data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :isBrotherOf data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :isSiblingOf data:Sidney_Elphinstone-_16th_Lord_Elphinstone .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "153:168"^^xsd:string,
+        "169:185"^^xsd:string,
+        "215:230"^^xsd:string,
+        "404:424"^^xsd:string,
+        "434:449"^^xsd:string,
+        "479:495"^^xsd:string ;
+    data:posIndicesPart "1058:1067"^^xsd:string,
+        "1093:1098"^^xsd:string,
+        "1179:1188"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "215:233"^^xsd:string,
+        "221:233"^^xsd:string ;
+    data:posIndicesPart "1058:1067"^^xsd:string,
+        "1179:1188"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+

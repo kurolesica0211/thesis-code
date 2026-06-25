@@ -2,40 +2,45 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_Feodorovna a :Woman .
+data:LuisFilipe a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1908 ;
+    :hasFather data:CarlosI ;
+    :hasMother data:AmelieOrleans ;
+    :isBrotherOf data:ManuelII .
 
-data:Paul_Romanovsky-Ilyinsky a :Man ;
-    :hasFather data:Dmitri_Pavlovich ;
-    :hasMother data:Audrey_Emery .
+data:PatriciaConnaught a :Person,
+        :Woman ;
+    :hasFather data:ArthurConnaught ;
+    :hasMother data:LouiseMargaretPrussia .
 
-data:Sergei_Alexandrovich a :Man .
+data:AlbertSaxeCoburgGotha a :Man,
+        :Person .
 
-data:Alexander_II a :Man .
+data:ArthurConnaught a :Man,
+        :Person ;
+    :hasFather data:AlbertSaxeCoburgGotha ;
+    :hasMother data:Victoria .
 
-data:Audrey_Emery a :Woman .
+data:LouiseMargaretPrussia a :Person,
+        :Woman .
 
-data:Dmitri_Pavlovich a :Man ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1942 ;
-    :hasFather data:Paul_Alexandrovich ;
-    :hasMother data:Alexandra_Georgievna ;
-    :hasSister data:Maria_Pavlovna .
+data:LuisI a :Man,
+        :Person .
 
-data:George_I_of_Greece a :Man .
+data:ManuelII a :Man,
+        :Person ;
+    :hasFather data:CarlosI ;
+    :hasMother data:AmelieOrleans .
 
-data:Maria_Alexandrovna a :Woman .
+data:Victoria a :Person,
+        :Woman .
 
-data:Maria_Pavlovna a :Woman ;
-    :hasFather data:Paul_Alexandrovich ;
-    :hasMother data:Alexandra_Georgievna .
+data:AmelieOrleans a :Person,
+        :Woman .
 
-data:Olga_Konstantinovna a :Woman .
-
-data:Alexandra_Georgievna a :Woman ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Konstantinovna .
-
-data:Paul_Alexandrovich a :Man ;
-    :hasFather data:Alexander_II ;
-    :hasMother data:Maria_Alexandrovna .
+data:CarlosI a :Man,
+        :Person ;
+    :hasFather data:LuisI .
 

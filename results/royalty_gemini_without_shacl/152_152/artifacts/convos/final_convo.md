@@ -69,30 +69,136 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess María de las Mercedes of Bourbon-Two Sicilies (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Spanish: ; María de las Mercedes Cristina Genara Isabel Luisa Carolina Victoria y Todos los Santos de Borbón y Orléans; 23 December 1910 – 2 January 2000) was a member of the Spanish royal family and the mother of King Juan Carlos I.
+Mary, Princess Royal (Victoria Alexandra Alice Mary; 25 April 1897 – 28 March 1965), was a member of the British royal family.
+She was the only daughter of King George V and Queen Mary, the sister of kings Edward VIII and George VI, and the aunt of Queen Elizabeth II.
+In 1922, she married Henry Lascelles, Viscount Lascelles (later the 6th Earl of Harewood), and they had two sons, George Lascelles, 7th Earl of Harewood, and Gerald David Lascelles.
+Mary was granted the title Princess Royal in 1932.
+Early life and education
+
+Mary was born at 3:30 pm on 25 April 1897 at York Cottage on the Sandringham Estate in Norfolk, during the reign of her great-grandmother Queen Victoria.
+She was the third child and only daughter of the Duke and Duchess of York, later King George V and Queen Mary.
+Her father was the only surviving son of the Prince and Princess of Wales, later King Edward VII and Queen Alexandra, and her mother was the eldest child and only daughter of the Duke and Duchess of Teck.
+She was named Victoria Alexandra Alice Mary after her paternal great-grandmother Queen Victoria; her paternal grandmother, Alexandra, Princess of Wales; her maternal grandmother, Mary Adelaide, Duchess of Teck; and her great-aunt, Alice, Grand Duchess of Hesse and by Rhine, with whom she shared a birthday.
+She was known by the last of her given names, Mary.
+At the time of her birth she was fifth in the line of succession to the British throne after her grandfather, father, and elder brothers Edward (later Edward VIII) and Albert (later George VI), and moved down the line following the births of her younger brothers Henry, George, and John.
+She was baptised at St Mary Magdalene's Church near Sandringham on 7 June by William Dalrymple Maclagan, Archbishop of York.
+Her godparents were the Queen (her great-grandmother), the King of the Hellenes (her paternal great-uncle), the Dowager Empress of Russia (her paternal great-aunt), the Prince and Princess of Wales (her paternal grandparents), the Duchess of Teck (her maternal grandmother), Princess Victoria of Wales (her paternal aunt), and Prince Francis of Teck (her maternal uncle).
+Her grandfather succeeded to the throne in 1901 when Mary was three years old.
+Mary was educated by governesses, although she shared some lessons with her brothers Edward, Albert, and Henry.
+Charity work
+
+During World War I, Mary visited hospitals and welfare organisations with her mother, assisting with schemes that provided comfort to British servicemen and support to their families.
+One such initiative was Princess Mary's Christmas Gift Fund, through which gifts worth £100,000 were distributed to serving soldiers and sailors for Christmas 1914, the equivalent of £9.55 million in 2023.
+In 1918, she was appointed colonel-in-chief of the Royal Scots, an honour bestowed by her father, the King.
+On 20 November 1918, she became the first member of the royal family to visit France following the Armistice.
+While visiting Ypres she recognised two soldiers from the Royal Scots; the regiment was stationed nearby, and a march‐past of its 17th battalion was arranged.
+Mary's public duties reflected her interest in nursing, the Girl Guide movement, and the Women's Services.
+In the period leading up to her marriage, girls and women across the British Empire named Mary or its variants (including Marie, May, and Miriam) formed "The Marys of the Empire," and contributed to a wedding present fund.
+In July 2013, it was reported that British Pathé had identified newsreel film from 1927 showing the ancestors of Catherine Middleton, as Lord Mayors of Leeds, hosting Mary at the Young Women's Christian Association in Hunslet.
+In 1921, Mary became the first patron of the Not Forgotten Association, a role she held until her death in 1965.
+In the 1920s, Mary was a patron of the Leeds Triennial Musical Festival.
+By the 1940s, she was attending opening nights and many of the festival's performances, as was her son, George, and his wife, the Countess of Harewood, née Marion Stein, a former concert pianist.
+George was a noted music critic whose career included serving as artistic director of the Leeds Triennial Musical Festival.
+In 1931, Mary was appointed patron of the Yorkshire Ladies Council of Education.
+In July 1927, it was reported that, at a garden party at Headingley Cricket Ground, Mary was served tea alongside dignitaries who included members of the Middleton family; Olive Middleton, great-grandmother of Catherine, Princess of Wales, was among them.
+Mary and her son, George, were patrons of the Yorkshire Symphony Orchestra which performed soirées at their home, Harewood House.
+Among those attending was the orchestra's co-founder, Richard Noël Middleton, who was on friendly terms with Mary.
+Middleton's wife, Olive, served on Mary's fundraising committee for the Leeds General Infirmary.
+The committee's vice-presidents included Mary's sister-in-law, the Hon.
+Mrs Edward Lascelles, who served alongside Olive and her relative Jessie Beatrice Kitson.
+In 1936, Mary became patron of the Leeds Infirmary.
+Marriage and family
+
+On 28 February 1922, Mary married Henry, Viscount Lascelles, the elder son of the 5th Earl of Harewood and his wife, Lady Florence Bridgeman, daughter of the 3rd Earl of Bradford of Weston Park.
+Mary was 24 years old, while the groom was 39.
+The ceremony was the first royal wedding to be covered in fashion magazines, including Vogue.
+Mary's gown was designed by Messrs Raville and featured emblems of Britain and India.
+It was also the first royal occasion in which Lady Elizabeth Bowes-Lyon, a friend of Mary, participated as one of the bridesmaids.
+She later married Mary's brother, Albert, and became queen consort of the United Kingdom upon his accession in 1936.
+Mary and Henry had two sons:
 
 
-The daughter of Prince Carlos of Bourbon-Two Sicilies and Princess Louise of Orléans, she married Infante Juan, Count of Barcelona, claimant to the Spanish throne.
-Biography
+Family homes and interests
 
-María was born in Madrid, daughter of Prince Carlos of Bourbon-Two Sicilies, Infante of Spain, a grandson of King Ferdinand II of the Two Sicilies, and his second wife, Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris, a pretender to the French throne.
-She was granted, at birth, the rank and precedence of an infanta of Spain, although not the actual use of the title, her own being Princess of Bourbon-Two Sicilies.
-When the Second Spanish Republic forced them into exile, they lived in Cannes and later in Paris, where she studied art at the Louvre.
-On 14 January 1935, she attended the wedding, in Rome, of Infanta Beatriz of Spain, daughter of King Alfonso XIII, to Alessandro Torlonia, 5th Prince of Civitella-Cesi.
-There she met the brother of the bride, her third cousin and future husband, the Infante Juan, fourth son and designated heir of Alfonso XIII.
-When her husband took up Count of Barcelona as a title of pretence on 8 March 1941, María became the Countess of Barcelona.
-They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with Queen Victoria Eugenie, the mother of Infante Juan.
-In 1953, the Countess represented the Spanish Royal Family at the coronation of Queen Elizabeth II.
-In 1976, one year after the monarchy was restored in Spain in the person of her son, Juan Carlos, they returned to Spain.
-She mediated between her son and her husband, estranged since Juan Carlos had been designated heir by Franco.
-In 1977, Juan renounced his rights in favour of their son, who officially allowed him to retain the title of Count of Barcelona.
-In 1995, her granddaughter Infanta Elena married in Seville in part because the Countess' love for the city.
+Mary and her husband had homes in London (first Chesterfield House in South Audley Street, and later 32 Green Street, Mayfair) and in Yorkshire (first Goldsborough Hall, and later Harewood House).
+London
+
+Prior to their marriage, Henry had purchased a palatial London townhouse, Chesterfield House in South Audley Street, for £140,000.
+In 1931, King George V and Queen Mary purchased 32 Green Street, Mayfair, as a London home for their daughter, rendering Chesterfield House surplus to the couple's needs.
+Mary and Henry vacated Chesterfield House in early 1932.
+Queen Mary reportedly expressed an interest in purchasing 32 Green Street as a London home for her daughter in 1931, and consent was obtained from the property's owner, Hugh Grosvenor, 2nd Duke of Westminster, with the proviso that the Grosvenor Estates could maintain the right to repurchase the house at a future date if its use as a royal residence ceased.
+Following the outbreak World War II, Mary was granted the use of a grace‐and‐favour apartment at St James's Palace, which remained her official London residence for the rest of her life.
+While at Goldsborough Hall, Mary commissioned internal alterations by the architect Sydney Kitson to suit the upbringing of her two children, and she instigated the development of formal beech‐hedge‐lined borders extending from the south terrace for a quarter of a mile down an avenue of lime trees.
+The limes were planted by her relatives as they visited the hall throughout the 1920s, including her father, King George, and her mother, Queen Mary.
+After becoming Countess of Harewood upon the death of her father‐in‐law, Mary moved to Harewood House and took a keen interest in the interior decoration and renovation of the Lascelles family seat.
+In farming pursuits, she became an expert in cattle breeding and served on the board of trustees of the Royal Agricultural Society of England, of which her husband had been president.
+In December 2012, some of Mary's belongings were sold in "Harewood: Collecting in the Royal Tradition", an auction organised by Christie's.
+In the first half of the 20th century, Mary occasionally rode with the Bramham Moor Hunt – Henry was Master of the Hunt – and she entertained many horse-racing enthusiasts at Harewood house parties for the race meetings at Wetherby and York.
+Princess Royal
+
+On 6 October 1929, Henry succeeded his father as 6th Earl of Harewood, having previously been created a Knight of the Garter upon his marriage.
+On 1 January 1932, George V declared that Mary should bear the title Princess Royal, succeeding her aunt Princess Louise, Duchess of Fife, who had died a year earlier.
+Mary was particularly close to her eldest brother, the Prince of Wales, known as David to his family, who became Edward VIII upon the death of their father in 1936.
+After the abdication crisis, Mary and Henry went to stay with the former Edward VIII, by then created Duke of Windsor, at Enzesfeld Castle near Vienna.
+Later, in November 1947, she allegedly declined to attend the wedding of her niece, Princess Elizabeth, to Lieutenant Philip Mountbatten as the Duke of Windsor had not been invited.
+She posed for photographs with them before she and the duke boarded the ship on which they travelled to visit their ailing mother, Queen Mary.
+At the outbreak of World War II, Mary became chief controller and later controller commandant of the Auxiliary Territorial Service, renamed the Women's Royal Army Corps in 1949.
+After the death in 1942 of her younger brother, the Duke of Kent, she became president of Papworth Hospital.
+Mary became air chief commandant of Princess Mary's Royal Air Force Nursing Service in 1950, and received the honorary rank of general in the British Army in 1956.
+Also, in 1949, the 10th Gurkha Rifles were renamed the 10th Princess Mary's Own Gurkha Rifles in her honour.
+After Henry's death in 1947, Mary lived at Harewood House with her elder son and his family.
+She attended the coronation of Queen Elizabeth II in June 1953, and later represented the Queen at the independence celebrations of Trinidad and Tobago in 1962, and Zambia in 1964.
+Mary visited her brother, the Duke of Windsor, at the London Clinic in March 1965, while he recovered from recent eye surgery.
+Death and legacy
+
+Mary suffered a fatal heart attack on 28 March 1965 during a walk with her elder son, George, and his children in the grounds of the Harewood House estate.
+She was buried next to Henry in the Lascelles family vault at All Saints' Church, Harewood, after a private family funeral at York Minster.
+Six British monarchs reigned during Mary's lifetime: Victoria (her great-grandmother), Edward VII (her grandfather), George V (her father), Edward VIII and George VI (her brothers), and Elizabeth II (her niece).
+She is typically remembered as an uncontroversial figure within the royal family.
+Mary was portrayed by Kate Phillips in Downton Abbey (2019).
+During the British Mandate of Palestine, a major street in Jerusalem next to the Old City was called Princess Mary Street.
+Titles, styles, honours and arms
+
+Titles and styles
+
+Mary was known as Princess Mary of York at birth.
+Mary was not styled Her Royal Highness from birth, only gaining that style in 1898 by letters patent granted by her great-grandmother, Queen Victoria.
+After Victoria's death in January 1901, Mary was known as Princess Mary of Cornwall and York, until her father's creation as Prince of Wales in November of that year, when she assumed the title Princess Mary of Wales.
+Upon her father's accession as George V in 1910, Mary assumed the style of "Her Royal Highness The Princess Mary".
+In 1922, Mary married Henry, Viscount Lascelles and began using the title "Her Royal Highness The Princess Mary, Viscountess Lascelles".
+When her husband succeeded as Earl of Harewood in 1929, Mary became known as "Her Royal Highness The Princess Mary, Countess of Harewood".
+In 1932, her father granted her the title Princess Royal, which had previously belonged to her aunt Louise until her death the year before.
+For the rest of her life, Mary was known as "Her Royal Highness The Princess Royal".
+Honours
+
+British, British Empire and Commonwealth
+
+Foreign
+
+Freedom of the City
+
+Academic
+
+Memberships
+
+Honorary military appointments
+
+British
+
+Military ranks
+
+Arms
+
+In 1931, Mary was awarded her own personal arms, being the royal arms, differenced by a label argent of three points, each bearing a cross gules.
+}} Media related to Mary, Princess Royal and Countess of Harewood at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +214,9 @@ In 1995, her granddaughter Infanta Elena married in Seville in part because the 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +231,23 @@ In 1995, her granddaughter Infanta Elena married in Seville in part because the 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +347,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +370,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +390,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +400,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +440,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,206 +539,156 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d66a315e-6cee-461f-9340-935284e445d3)
- Call ID: d66a315e-6cee-461f-9340-935284e445d3
+  AssignClass (36900173-7c7f-48af-8905-a6b09af651c8)
+ Call ID: 36900173-7c7f-48af-8905-a6b09af651c8
   Args:
-    source: :MariaDeLasMercedes
+    source: Mary_Princess_Royal
     type: :Woman
-  AssignClass (f7b224d0-fb28-462e-a878-122ffddafdd7)
- Call ID: f7b224d0-fb28-462e-a878-122ffddafdd7
+  AssignClass (3162595e-7bed-4b03-ab86-a9b0f6cb3dab)
+ Call ID: 3162595e-7bed-4b03-ab86-a9b0f6cb3dab
   Args:
-    source: :MariaDeLasMercedes
+    source: Mary_Princess_Royal
     type: :Person
-  AssignClass (5eeb1cf0-5255-4f1c-b617-ef2156fbeb70)
- Call ID: 5eeb1cf0-5255-4f1c-b617-ef2156fbeb70
+  AddLiteral (e17ba459-7578-49f7-b8bb-2cf3a2401d1f)
+ Call ID: e17ba459-7578-49f7-b8bb-2cf3a2401d1f
   Args:
-    source: :CarlosOfBourbonTwoSicilies
-    type: :Man
-  AssignClass (0ddfd5b9-62c3-4ca7-8fc5-026d7f3dd374)
- Call ID: 0ddfd5b9-62c3-4ca7-8fc5-026d7f3dd374
-  Args:
-    source: :CarlosOfBourbonTwoSicilies
-    type: :Person
-  AssignClass (00c271cd-9374-4946-a0f1-a348cae348d8)
- Call ID: 00c271cd-9374-4946-a0f1-a348cae348d8
-  Args:
-    type: :Woman
-    source: :LouiseOfOrleans
-  AssignClass (5a823010-5868-433c-8f10-b8b648bad066)
- Call ID: 5a823010-5868-433c-8f10-b8b648bad066
-  Args:
-    source: :LouiseOfOrleans
-    type: :Person
-  AssignClass (9182c65a-743f-445e-8b3e-7aa09fa82468)
- Call ID: 9182c65a-743f-445e-8b3e-7aa09fa82468
-  Args:
-    type: :Man
-    source: :JuanCarlosI
-  AssignClass (cf72e35e-29e6-485b-9b44-81c32d395517)
- Call ID: cf72e35e-29e6-485b-9b44-81c32d395517
-  Args:
-    type: :Person
-    source: :JuanCarlosI
-  AssignClass (ede1a313-d568-4153-be30-ffde34a34462)
- Call ID: ede1a313-d568-4153-be30-ffde34a34462
-  Args:
-    source: :JuanCountOfBarcelona
-    type: :Man
-  AssignClass (a7cc3e65-84ad-42ff-9116-1641d1589e88)
- Call ID: a7cc3e65-84ad-42ff-9116-1641d1589e88
-  Args:
-    type: :Person
-    source: :JuanCountOfBarcelona
-  AssignClass (8a4733c3-dd83-453b-a87d-e3a1c5de3a88)
- Call ID: 8a4733c3-dd83-453b-a87d-e3a1c5de3a88
-  Args:
-    source: :FerdinandII
-    type: :Man
-  AssignClass (0798bb89-a516-446b-a47f-4ff4545ff0d2)
- Call ID: 0798bb89-a516-446b-a47f-4ff4545ff0d2
-  Args:
-    source: :FerdinandII
-    type: :Person
-  AssignClass (adf77565-02de-4ff5-b2bf-5a9cdb24a962)
- Call ID: adf77565-02de-4ff5-b2bf-5a9cdb24a962
-  Args:
-    type: :Man
-    source: :PhilippeCountOfParis
-  AssignClass (07bc2e7e-d3cf-4b85-bc6e-cf69c26dacc3)
- Call ID: 07bc2e7e-d3cf-4b85-bc6e-cf69c26dacc3
-  Args:
-    type: :Person
-    source: :PhilippeCountOfParis
-  AssignClass (4b1e4904-fd6b-4cd0-b89c-826a58c7db02)
- Call ID: 4b1e4904-fd6b-4cd0-b89c-826a58c7db02
-  Args:
-    source: :BeatrizOfSpain
-    type: :Woman
-  AssignClass (74b4bc41-8df0-4205-b663-3226d0e1a604)
- Call ID: 74b4bc41-8df0-4205-b663-3226d0e1a604
-  Args:
-    source: :BeatrizOfSpain
-    type: :Person
-  AssignClass (3d7adfad-a092-4ae9-be93-e2c584e8f077)
- Call ID: 3d7adfad-a092-4ae9-be93-e2c584e8f077
-  Args:
-    source: :AlfonsoXIII
-    type: :Man
-  AssignClass (48e09b0d-db98-422e-aac3-155f7539fc86)
- Call ID: 48e09b0d-db98-422e-aac3-155f7539fc86
-  Args:
-    source: :AlfonsoXIII
-    type: :Person
-  AssignClass (5a759308-b052-415f-bc1b-f441c5b071ca)
- Call ID: 5a759308-b052-415f-bc1b-f441c5b071ca
-  Args:
-    type: :Man
-    source: :AlessandroTorlonia
-  AssignClass (0d4bb21d-ebfc-4feb-9618-06e7c19f9f57)
- Call ID: 0d4bb21d-ebfc-4feb-9618-06e7c19f9f57
-  Args:
-    source: :AlessandroTorlonia
-    type: :Person
-  AssignClass (1df7d4d8-486c-4f3b-b1d5-5eddce24d3e2)
- Call ID: 1df7d4d8-486c-4f3b-b1d5-5eddce24d3e2
-  Args:
-    source: :VictoriaEugenie
-    type: :Woman
-  AssignClass (78f56827-1b78-4f3a-9de4-773281d5723d)
- Call ID: 78f56827-1b78-4f3a-9de4-773281d5723d
-  Args:
-    type: :Person
-    source: :VictoriaEugenie
-  AssignClass (7b298998-8738-4dba-afa8-d4391599cd13)
- Call ID: 7b298998-8738-4dba-afa8-d4391599cd13
-  Args:
-    type: :Woman
-    source: :Elena
-  AssignClass (5e596c8c-f5ff-453f-a23a-cb166f988e69)
- Call ID: 5e596c8c-f5ff-453f-a23a-cb166f988e69
-  Args:
-    source: :Elena
-    type: :Person
-  AddLiteral (2b2b138f-e05c-49fb-a52a-d12207cb9ff5)
- Call ID: 2b2b138f-e05c-49fb-a52a-d12207cb9ff5
-  Args:
-    source: :MariaDeLasMercedes
+    source: Mary_Princess_Royal
+    literal_value: 1897
     literal_type: xsd:integer
-    literal_value: 1910
     relation: :hasBirthYear
-  AddLiteral (de7b65b8-b0e9-4a9f-86c3-5edce0e5e0ff)
- Call ID: de7b65b8-b0e9-4a9f-86c3-5edce0e5e0ff
+  AddLiteral (e04de381-c415-4e05-a99d-6730d9278196)
+ Call ID: e04de381-c415-4e05-a99d-6730d9278196
   Args:
-    relation: :hasDeathYear
+    literal_value: 1965
     literal_type: xsd:integer
-    source: :MariaDeLasMercedes
-    literal_value: 2000
-  AddTriple (8259600c-ca59-4529-a13e-cbfa9bc5ba90)
- Call ID: 8259600c-ca59-4529-a13e-cbfa9bc5ba90
+    relation: :hasDeathYear
+    source: Mary_Princess_Royal
+  AddLiteral (ca829376-60d4-465c-866e-15e0d5df6fde)
+ Call ID: ca829376-60d4-465c-866e-15e0d5df6fde
   Args:
-    source: :MariaDeLasMercedes
-    target: :LouiseOfOrleans
-    relation: :hasMother
-  AddTriple (9464e897-cf90-4f98-a952-151f94547249)
- Call ID: 9464e897-cf90-4f98-a952-151f94547249
+    relation: :knownAs
+    literal_type: xsd:string
+    literal_value: Mary
+    source: Mary_Princess_Royal
+  AssignClass (b811f761-1814-4faa-8230-9ec984ec2f35)
+ Call ID: b811f761-1814-4faa-8230-9ec984ec2f35
   Args:
-    source: :MariaDeLasMercedes
-    target: :CarlosOfBourbonTwoSicilies
+    source: King_George_V
+    type: :Man
+  AssignClass (775cdae6-3c2e-4007-98eb-8db91f49e669)
+ Call ID: 775cdae6-3c2e-4007-98eb-8db91f49e669
+  Args:
+    type: :Person
+    source: King_George_V
+  AssignClass (955c9e9d-030c-4e13-8d7e-2c68a37dc64f)
+ Call ID: 955c9e9d-030c-4e13-8d7e-2c68a37dc64f
+  Args:
+    type: :Woman
+    source: Queen_Mary
+  AssignClass (0e403736-c8bc-439a-81c2-81e2f847e352)
+ Call ID: 0e403736-c8bc-439a-81c2-81e2f847e352
+  Args:
+    source: Queen_Mary
+    type: :Person
+  AddTriple (941dd9e1-9366-4864-b518-18f2903af92e)
+ Call ID: 941dd9e1-9366-4864-b518-18f2903af92e
+  Args:
+    source: Mary_Princess_Royal
     relation: :hasFather
-  AddTriple (57d25abd-f5f3-461c-a954-b4d7ec3179c4)
- Call ID: 57d25abd-f5f3-461c-a954-b4d7ec3179c4
+    target: King_George_V
+  AddTriple (f8a420ab-96e1-4da9-8dc1-9d764593d494)
+ Call ID: f8a420ab-96e1-4da9-8dc1-9d764593d494
   Args:
-    relation: :isMotherOf
-    target: :JuanCarlosI
-    source: :MariaDeLasMercedes
-  AddTriple (cbd0ca0f-276f-499d-94f3-678870b74db3)
- Call ID: cbd0ca0f-276f-499d-94f3-678870b74db3
+    source: Mary_Princess_Royal
+    relation: :hasMother
+    target: Queen_Mary
+  AssignClass (b4c2856f-9a5e-4bbb-9950-e32f6e250004)
+ Call ID: b4c2856f-9a5e-4bbb-9950-e32f6e250004
   Args:
-    relation: :isFatherOf
-    target: :JuanCarlosI
-    source: :JuanCountOfBarcelona
-  AddTriple (fb8e5ff5-6e14-47ec-b5f7-5fb399124fa4)
- Call ID: fb8e5ff5-6e14-47ec-b5f7-5fb399124fa4
+    type: :Man
+    source: Edward_VIII
+  AssignClass (2768efe6-57a5-4d25-a12d-451f502fe79c)
+ Call ID: 2768efe6-57a5-4d25-a12d-451f502fe79c
   Args:
-    target: :CarlosOfBourbonTwoSicilies
-    relation: :isFatherOf
-    source: :FerdinandII
-  AddTriple (5c2fcb61-eb8f-467d-9fd2-a1c40b41c486)
- Call ID: 5c2fcb61-eb8f-467d-9fd2-a1c40b41c486
+    type: :Person
+    source: Edward_VIII
+  AssignClass (f1022ed5-0f89-4688-8295-02c71ad2b3eb)
+ Call ID: f1022ed5-0f89-4688-8295-02c71ad2b3eb
   Args:
-    source: :PhilippeCountOfParis
-    target: :LouiseOfOrleans
-    relation: :isFatherOf
-  AddTriple (fae7b906-8c04-439c-9d45-8a949fe347aa)
- Call ID: fae7b906-8c04-439c-9d45-8a949fe347aa
+    source: George_VI
+    type: :Man
+  AssignClass (df2cc52d-0f71-4017-9f73-d4d9e4c375fa)
+ Call ID: df2cc52d-0f71-4017-9f73-d4d9e4c375fa
   Args:
-    relation: :isFatherOf
-    target: :BeatrizOfSpain
-    source: :AlfonsoXIII
-  AddTriple (b4be18f1-fd32-4a98-9d7c-67a7ee49546f)
- Call ID: b4be18f1-fd32-4a98-9d7c-67a7ee49546f
+    type: :Person
+    source: George_VI
+  AddTriple (56fa0088-2ce2-4e30-ac25-3374c634a8ce)
+ Call ID: 56fa0088-2ce2-4e30-ac25-3374c634a8ce
   Args:
-    relation: :isFatherOf
-    target: :JuanCountOfBarcelona
-    source: :AlfonsoXIII
-  AddTriple (0525465d-24b9-4581-a969-7acbac2af115)
- Call ID: 0525465d-24b9-4581-a969-7acbac2af115
+    source: Mary_Princess_Royal
+    target: Edward_VIII
+    relation: :hasBrother
+  AddTriple (514f361a-d9c8-4baf-9557-ee464e8cb5a7)
+ Call ID: 514f361a-d9c8-4baf-9557-ee464e8cb5a7
   Args:
-    source: :VictoriaEugenie
-    target: :JuanCountOfBarcelona
-    relation: :isMotherOf
-  AddTriple (e0d7d194-0957-497a-82c2-5c57428b539c)
- Call ID: e0d7d194-0957-497a-82c2-5c57428b539c
+    source: Mary_Princess_Royal
+    target: George_VI
+    relation: :hasBrother
+  AssignClass (04218fb6-0452-4e83-b240-c36f05454060)
+ Call ID: 04218fb6-0452-4e83-b240-c36f05454060
   Args:
-    relation: :isMotherOf
-    target: :Elena
-    source: :MariaDeLasMercedes
-  AddTriple (859ce146-3d08-4afd-9626-72fc45f5a2df)
- Call ID: 859ce146-3d08-4afd-9626-72fc45f5a2df
+    source: Henry_Lascelles
+    type: :Man
+  AssignClass (7a5c9445-f899-4995-8c5b-2c404c8a7f64)
+ Call ID: 7a5c9445-f899-4995-8c5b-2c404c8a7f64
   Args:
-    source: :BeatrizOfSpain
-    target: :JuanCountOfBarcelona
-    relation: :isSisterOf
-  Finish (fde5bb31-b430-4fd4-8610-3c329f39d570)
- Call ID: fde5bb31-b430-4fd4-8610-3c329f39d570
+    type: :Person
+    source: Henry_Lascelles
+  AddLiteral (262100fd-1f12-4137-a08d-ae446fca505b)
+ Call ID: 262100fd-1f12-4137-a08d-ae446fca505b
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1922
+    relation: :hasMarriageYear
+    source: Mary_Princess_Royal
+  AddTriple (6572c62b-6d87-41d7-9501-2c8290aa3b35)
+ Call ID: 6572c62b-6d87-41d7-9501-2c8290aa3b35
+  Args:
+    source: Mary_Princess_Royal
+    relation: :hasRelation
+    target: Henry_Lascelles
+  AssignClass (17894fac-93af-4f26-9fed-a8a2b65629c9)
+ Call ID: 17894fac-93af-4f26-9fed-a8a2b65629c9
+  Args:
+    source: George_Lascelles
+    type: :Man
+  AssignClass (3e9049c9-4302-4217-9549-14ef8541507e)
+ Call ID: 3e9049c9-4302-4217-9549-14ef8541507e
+  Args:
+    source: George_Lascelles
+    type: :Person
+  AssignClass (fbf346fc-b439-4488-b030-a66c69e9b508)
+ Call ID: fbf346fc-b439-4488-b030-a66c69e9b508
+  Args:
+    type: :Man
+    source: Gerald_David_Lascelles
+  AssignClass (3b5f32b7-177b-4315-a8ad-c37d99a8ace1)
+ Call ID: 3b5f32b7-177b-4315-a8ad-c37d99a8ace1
+  Args:
+    type: :Person
+    source: Gerald_David_Lascelles
+  AddTriple (84b78394-cdb1-464a-81f5-1421a0121c1e)
+ Call ID: 84b78394-cdb1-464a-81f5-1421a0121c1e
+  Args:
+    source: Mary_Princess_Royal
+    relation: :hasSon
+    target: George_Lascelles
+  AddTriple (e420355b-ad08-4c55-b2e0-13fe2c72da5d)
+ Call ID: e420355b-ad08-4c55-b2e0-13fe2c72da5d
+  Args:
+    source: Mary_Princess_Royal
+    target: Gerald_David_Lascelles
+    relation: :hasSon
+  Finish (49dcbc53-93b7-4262-a47b-ecc3a33e2a00)
+ Call ID: 49dcbc53-93b7-4262-a47b-ecc3a33e2a00
   Args:

@@ -85,20 +85,23 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Isabel Alfonsa of Bourbon-Two Sicilies, Infanta of Spain, (Isabel Alfonsa María Teresa Antonia Cristina Mercedes Carolina Adelaida Rafaela de Borbón-Dos Sicilias y Borbón; 16 October 1904 – 18 July 1985) was a member of the House of Bourbon-Two Sicilies and a princess of Bourbon-Two Sicilies by birth.
-Family
+Klaus Felix von Amsberg (German: Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg; 1 September 1890 – 19 December 1953) was a member of the German Niederer Adel (lower nobility) and father of Prince Claus of the Netherlands.
+Early life
 
-Isabel Alfonsa was the third child of Prince Carlos of Bourbon-Two Sicilies and his first wife María de las Mercedes, Princess of Asturias.
-Isabel Alfonsa's maternal grandparents were Alfonso XII of Spain and Maria Christina of Austria.
-Marriage and issue
+He was born at Rehna, Mecklenburg-Schwerin, German Empire (now Mecklenburg-Vorpommern, Germany), the first child of Wilhelm von Amsberg (1856–1929), by his marriage to Elise von Vieregg (1866–1951), member of an old aristocratic family.
+Claus was from 1917 the steward of an estate after a failed venture in Africa as a planter.
+Marriage
 
-Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, seventh child and third son of Count Andrzej Zamoyski and his wife Princess Maria Carolina of Bourbon-Two Sicilies, on 9 March 1929 in Madrid.
+Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussche-Haddenhausen (26 January 1902 –
+13 June 1996), daughter of Baron Georg von dem Bussche-Haddenhausen (1869–1923) and Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +117,9 @@ Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, s
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +134,23 @@ Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, s
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,152 +442,231 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1834ba28-61ce-4a03-9874-0b170df5a872)
- Call ID: 1834ba28-61ce-4a03-9874-0b170df5a872
+  AssignClass (c233a2e2-bf33-40d6-849d-16a1b3362c37)
+ Call ID: c233a2e2-bf33-40d6-849d-16a1b3362c37
   Args:
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (e0dbfd07-54ca-4f46-a440-756acc2271f2)
- Call ID: e0dbfd07-54ca-4f46-a440-756acc2271f2
+    type: :Man
+    source: Klaus_Felix_von_Amsberg
+  AssignClass (c0eed958-5a52-4d6c-b591-53d1f4c6b4fc)
+ Call ID: c0eed958-5a52-4d6c-b591-53d1f4c6b4fc
   Args:
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
+    source: Klaus_Felix_von_Amsberg
     type: :Person
-  AddLiteral (e3860735-b885-439e-87a3-97796ee11a24)
- Call ID: e3860735-b885-439e-87a3-97796ee11a24
+  AddLiteral (b99a6253-96c5-481c-a331-4a294c111ea1)
+ Call ID: b99a6253-96c5-481c-a331-4a294c111ea1
   Args:
-    literal_value: 1904
     literal_type: xsd:integer
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
+    literal_value: 1890
     relation: :hasBirthYear
-  AddLiteral (ab9280bf-7f1a-44d8-9594-edd74ff6aaab)
- Call ID: ab9280bf-7f1a-44d8-9594-edd74ff6aaab
+    source: Klaus_Felix_von_Amsberg
+  AddLiteral (12c7d38f-08b5-4c17-b6ad-e421cd94bcc2)
+ Call ID: 12c7d38f-08b5-4c17-b6ad-e421cd94bcc2
   Args:
-    literal_value: 1985
     relation: :hasDeathYear
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
+    literal_value: 1953
     literal_type: xsd:integer
-  AssignClass (1f211272-00d3-4497-b1af-845f3c1f2981)
- Call ID: 1f211272-00d3-4497-b1af-845f3c1f2981
+    source: Klaus_Felix_von_Amsberg
+  AssignClass (71aaaa90-08cf-440d-ac2b-c2e584e9cc8b)
+ Call ID: 71aaaa90-08cf-440d-ac2b-c2e584e9cc8b
   Args:
-    source: Carlos_of_Bourbon-Two_Sicilies
+    source: Wilhelm_von_Amsberg
     type: :Man
-  AssignClass (15883c33-6896-40e1-b58b-04edd66fa38b)
- Call ID: 15883c33-6896-40e1-b58b-04edd66fa38b
+  AssignClass (837071ed-75ec-47a6-9cce-d1deb78b88ed)
+ Call ID: 837071ed-75ec-47a6-9cce-d1deb78b88ed
   Args:
     type: :Person
-    source: Carlos_of_Bourbon-Two_Sicilies
-  AddTriple (65d13a97-41cf-4f1d-9dc4-b75379257b5a)
- Call ID: 65d13a97-41cf-4f1d-9dc4-b75379257b5a
+    source: Wilhelm_von_Amsberg
+  AddLiteral (f9cf8393-347b-4ec5-ad8d-1c344d2ed840)
+ Call ID: f9cf8393-347b-4ec5-ad8d-1c344d2ed840
   Args:
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-    target: Carlos_of_Bourbon-Two_Sicilies
-  AssignClass (3556b693-f727-4f5f-a489-be78a01eabbb)
- Call ID: 3556b693-f727-4f5f-a489-be78a01eabbb
-  Args:
-    type: :Woman
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AssignClass (0b1333b9-a4e1-47df-acc7-49be68c7aa11)
- Call ID: 0b1333b9-a4e1-47df-acc7-49be68c7aa11
-  Args:
-    type: :Person
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AddTriple (e39e06fe-8205-4ee8-888b-c0e7706f1edb)
- Call ID: e39e06fe-8205-4ee8-888b-c0e7706f1edb
-  Args:
-    target: Maria_de_las_Mercedes_Princess_of_Asturias
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-  AssignClass (f96da7e7-ac8b-47f0-a06b-014af63615f7)
- Call ID: f96da7e7-ac8b-47f0-a06b-014af63615f7
-  Args:
-    type: :Man
-    source: Alfonso_XII_of_Spain
-  AssignClass (6de4cb2f-5528-407c-ad7c-64d242c9e9bc)
- Call ID: 6de4cb2f-5528-407c-ad7c-64d242c9e9bc
-  Args:
-    source: Alfonso_XII_of_Spain
-    type: :Person
-  AssignClass (fc38dad4-626d-446c-843f-74025422bc40)
- Call ID: fc38dad4-626d-446c-843f-74025422bc40
-  Args:
-    type: :Woman
-    source: Maria_Christina_of_Austria
-  AssignClass (9a1e7602-d4eb-4b91-bc66-531ab5955863)
- Call ID: 9a1e7602-d4eb-4b91-bc66-531ab5955863
-  Args:
-    type: :Person
-    source: Maria_Christina_of_Austria
-  AddTriple (6ea8f845-723d-4125-b6c8-c51050e7af31)
- Call ID: 6ea8f845-723d-4125-b6c8-c51050e7af31
-  Args:
-    relation: :hasFather
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-    target: Alfonso_XII_of_Spain
-  AddTriple (5b3b2fa8-72d5-4c69-a085-409aeb6fc072)
- Call ID: 5b3b2fa8-72d5-4c69-a085-409aeb6fc072
-  Args:
-    target: Maria_Christina_of_Austria
-    relation: :hasMother
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AssignClass (31a07107-1a56-4f15-a7dd-632c0dfd62db)
- Call ID: 31a07107-1a56-4f15-a7dd-632c0dfd62db
-  Args:
-    source: Jan_Kanty_Zamoyski
-    type: :Man
-  AssignClass (0b31f223-4c4f-4a04-9bd3-7ec222ac19d6)
- Call ID: 0b31f223-4c4f-4a04-9bd3-7ec222ac19d6
-  Args:
-    source: Jan_Kanty_Zamoyski
-    type: :Person
-  AddTriple (f9455cb0-2189-4a3b-8726-ec985fc88280)
- Call ID: f9455cb0-2189-4a3b-8726-ec985fc88280
-  Args:
-    target: Jan_Kanty_Zamoyski
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-    relation: :hasRelation
-  AddLiteral (d7c5a8a5-15b9-4a69-bbed-6408ff2a1443)
- Call ID: d7c5a8a5-15b9-4a69-bbed-6408ff2a1443
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1856
+    source: Wilhelm_von_Amsberg
+  AddLiteral (656e4b17-847b-4fe3-b5dd-d9b41503fb64)
+ Call ID: 656e4b17-847b-4fe3-b5dd-d9b41503fb64
   Args:
     literal_value: 1929
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Wilhelm_von_Amsberg
+  AssignClass (01dac7d2-2292-4091-a8c4-2697ed330c1a)
+ Call ID: 01dac7d2-2292-4091-a8c4-2697ed330c1a
+  Args:
+    type: :Woman
+    source: Elise_von_Vieregg
+  AssignClass (4d330bb0-9109-42c5-9052-4415e589b83d)
+ Call ID: 4d330bb0-9109-42c5-9052-4415e589b83d
+  Args:
+    source: Elise_von_Vieregg
+    type: :Person
+  AddLiteral (7aea7b68-be51-46db-a6f2-a33848e5a007)
+ Call ID: 7aea7b68-be51-46db-a6f2-a33848e5a007
+  Args:
+    source: Elise_von_Vieregg
+    literal_value: 1866
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (60b583e6-f190-48d6-bfb8-277b6521925e)
+ Call ID: 60b583e6-f190-48d6-bfb8-277b6521925e
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1951
+    literal_type: xsd:integer
+    source: Elise_von_Vieregg
+  AddTriple (76a5e19d-2dbc-44ff-a730-aa79da26ffd2)
+ Call ID: 76a5e19d-2dbc-44ff-a730-aa79da26ffd2
+  Args:
+    relation: :hasFather
+    target: Wilhelm_von_Amsberg
+    source: Klaus_Felix_von_Amsberg
+  AddTriple (4caaa198-23cb-49d9-b0a5-70de5309616e)
+ Call ID: 4caaa198-23cb-49d9-b0a5-70de5309616e
+  Args:
+    target: Elise_von_Vieregg
+    relation: :hasMother
+    source: Klaus_Felix_von_Amsberg
+  AssignClass (fc80fdb6-0164-4c38-87cd-913fb360a568)
+ Call ID: fc80fdb6-0164-4c38-87cd-913fb360a568
+  Args:
+    source: Prince_Claus_of_the_Netherlands
+    type: :Man
+  AssignClass (1699fd90-1d75-4765-8c50-c22cb982eb14)
+ Call ID: 1699fd90-1d75-4765-8c50-c22cb982eb14
+  Args:
+    type: :Person
+    source: Prince_Claus_of_the_Netherlands
+  AddTriple (02987c67-c9d4-4daa-a446-a473066d7912)
+ Call ID: 02987c67-c9d4-4daa-a446-a473066d7912
+  Args:
+    target: Klaus_Felix_von_Amsberg
+    relation: :hasFather
+    source: Prince_Claus_of_the_Netherlands
+  AssignClass (11d7df3b-1468-45a1-8f26-c817858db8c7)
+ Call ID: 11d7df3b-1468-45a1-8f26-c817858db8c7
+  Args:
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    type: :Woman
+  AssignClass (420028bd-0baa-468a-939e-4653644ff59c)
+ Call ID: 420028bd-0baa-468a-939e-4653644ff59c
+  Args:
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    type: :Person
+  AddLiteral (348ebaa5-f3ca-4967-b656-3519889c2172)
+ Call ID: 348ebaa5-f3ca-4967-b656-3519889c2172
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1902
+    relation: :hasBirthYear
+    source: Gosta_von_dem_Bussche-Haddenhausen
+  AddLiteral (07644c4b-0556-41e5-b1bf-249897211993)
+ Call ID: 07644c4b-0556-41e5-b1bf-249897211993
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1996
+    literal_type: xsd:integer
+    source: Gosta_von_dem_Bussche-Haddenhausen
+  AddLiteral (2d6d448a-34a6-405a-911a-17f227bb64fb)
+ Call ID: 2d6d448a-34a6-405a-911a-17f227bb64fb
+  Args:
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-  AssignClass (5bb0143d-6906-4afa-88ca-6a8f98540e1b)
- Call ID: 5bb0143d-6906-4afa-88ca-6a8f98540e1b
+    literal_value: 1924
+    source: Klaus_Felix_von_Amsberg
+  AddTriple (7f55b33c-68da-4cf8-9f8c-aaeeb98a7e69)
+ Call ID: 7f55b33c-68da-4cf8-9f8c-aaeeb98a7e69
+  Args:
+    relation: :hasRelation
+    target: Gosta_von_dem_Bussche-Haddenhausen
+    source: Klaus_Felix_von_Amsberg
+  AssignClass (2e66c52c-3987-4545-96ef-ac78358f41b4)
+ Call ID: 2e66c52c-3987-4545-96ef-ac78358f41b4
   Args:
     type: :Man
-    source: Andrzej_Zamoyski
-  AssignClass (69de436d-dcfd-43c2-8e05-c408e549e7de)
- Call ID: 69de436d-dcfd-43c2-8e05-c408e549e7de
+    source: Georg_von_dem_Bussche-Haddenhausen
+  AssignClass (dac1a312-57d4-4660-97d3-d9baea5de54b)
+ Call ID: dac1a312-57d4-4660-97d3-d9baea5de54b
   Args:
+    source: Georg_von_dem_Bussche-Haddenhausen
     type: :Person
-    source: Andrzej_Zamoyski
-  AssignClass (0a191da1-d144-4671-8f1e-cea08c3fa21b)
- Call ID: 0a191da1-d144-4671-8f1e-cea08c3fa21b
+  AddLiteral (7d7724e4-0d4e-4f22-b490-12b2d32ee3cb)
+ Call ID: 7d7724e4-0d4e-4f22-b490-12b2d32ee3cb
   Args:
-    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+    source: Georg_von_dem_Bussche-Haddenhausen
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1869
+  AddLiteral (f6fc40c0-9947-4370-a38f-edefffdc48bf)
+ Call ID: f6fc40c0-9947-4370-a38f-edefffdc48bf
+  Args:
+    source: Georg_von_dem_Bussche-Haddenhausen
+    relation: :hasDeathYear
+    literal_value: 1923
+    literal_type: xsd:integer
+  AssignClass (60ee0469-507e-4cdd-87e5-42d3b3fb4d25)
+ Call ID: 60ee0469-507e-4cdd-87e5-42d3b3fb4d25
+  Args:
+    source: Gabriele_von_dem_Bussche-Ippenburg
     type: :Woman
-  AssignClass (d20d9a06-eb34-402c-bba6-64069fc0dbf7)
- Call ID: d20d9a06-eb34-402c-bba6-64069fc0dbf7
+  AssignClass (5bdeea26-352e-40a0-8071-1ac36933876d)
+ Call ID: 5bdeea26-352e-40a0-8071-1ac36933876d
   Args:
     type: :Person
-    source: Maria_Carolina_of_Bourbon-Two_Sicilies
-  AddTriple (904f476b-4dec-43bd-b898-556f12616bfb)
- Call ID: 904f476b-4dec-43bd-b898-556f12616bfb
+    source: Gabriele_von_dem_Bussche-Ippenburg
+  AddLiteral (e076a0a6-cd43-4b10-bac8-28f7904e715c)
+ Call ID: e076a0a6-cd43-4b10-bac8-28f7904e715c
   Args:
-    target: Andrzej_Zamoyski
+    literal_value: 1877
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Gabriele_von_dem_Bussche-Ippenburg
+  AddLiteral (10cf845e-164c-4d6f-adaa-1c88993eceea)
+ Call ID: 10cf845e-164c-4d6f-adaa-1c88993eceea
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1973
+    source: Gabriele_von_dem_Bussche-Ippenburg
+  AddTriple (30941c3f-6446-4718-86b5-c813ddd9e250)
+ Call ID: 30941c3f-6446-4718-86b5-c813ddd9e250
+  Args:
+    target: Georg_von_dem_Bussche-Haddenhausen
     relation: :hasFather
-    source: Jan_Kanty_Zamoyski
-  AddTriple (1e6b9674-e773-478c-826f-41324f881b52)
- Call ID: 1e6b9674-e773-478c-826f-41324f881b52
+    source: Gosta_von_dem_Bussche-Haddenhausen
+  AddTriple (13715cd5-1d98-406f-931c-b4a263225d0e)
+ Call ID: 13715cd5-1d98-406f-931c-b4a263225d0e
   Args:
-    target: Maria_Carolina_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    source: Jan_Kanty_Zamoyski
-  Finish (e3676fe4-5704-4a0f-9115-e0414a6144aa)
- Call ID: e3676fe4-5704-4a0f-9115-e0414a6144aa
-  Args:
+    target: Gabriele_von_dem_Bussche-Ippenburg
+    source: Gosta_von_dem_Bussche-Haddenhausen
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -603,41 +775,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1904 ;
-      :hasDeathYear 1985 ;
-      :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear 1929 ;
-      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-      :hasRelation data:Jan_Kanty_Zamoyski .
-
-  data:Alfonso_XII_of_Spain a :Man,
-          :Person .
-
-  data:Andrzej_Zamoyski a :Man,
-          :Person .
-
-  data:Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Jan_Kanty_Zamoyski a :Man,
+  data:Prince_Claus_of_the_Netherlands a :Man,
           :Person ;
-      :hasFather data:Andrzej_Zamoyski ;
-      :hasMother data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+      :hasFather data:Klaus_Felix_von_Amsberg .
 
-  data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
-          :Woman .
-
-  data:Maria_Christina_of_Austria a :Person,
-          :Woman .
-
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+  data:Elise_von_Vieregg a :Person,
           :Woman ;
-      :hasFather data:Alfonso_XII_of_Spain ;
-      :hasMother data:Maria_Christina_of_Austria .
+      :hasBirthYear 1866 ;
+      :hasDeathYear 1951 .
+
+  data:Gabriele_von_dem_Bussche-Ippenburg a :Person,
+          :Woman ;
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1973 .
+
+  data:Georg_von_dem_Bussche-Haddenhausen a :Man,
+          :Person ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1923 .
+
+  data:Gosta_von_dem_Bussche-Haddenhausen a :Person,
+          :Woman ;
+      :hasBirthYear 1902 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+      :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+  data:Klaus_Felix_von_Amsberg a :Man,
+          :Person ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Wilhelm_von_Amsberg ;
+      :hasMarriageYear 1924 ;
+      :hasMother data:Elise_von_Vieregg ;
+      :hasRelation data:Gosta_von_dem_Bussche-Haddenhausen .
+
+  data:Wilhelm_von_Amsberg a :Man,
+          :Person ;
+      :hasBirthYear 1856 ;
+      :hasDeathYear 1929 .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (b90627c5-8348-440f-95b2-9a80844d8033)
+ Call ID: b90627c5-8348-440f-95b2-9a80844d8033
+  Args:
 
 ================================= Tool Message =================================
 
@@ -647,158 +833,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (38c4ae2d-4900-4823-8ad3-36fa86b244ec)
- Call ID: 38c4ae2d-4900-4823-8ad3-36fa86b244ec
+  ValidateShacl (eae2d6b1-f8d0-4c86-9e47-5f79e96ef8ec)
+ Call ID: eae2d6b1-f8d0-4c86-9e47-5f79e96ef8ec
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Carlos_of_Bourbon-Two_Sicilies is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Wilhelm_von_Amsberg is assigned as the father of Klaus_Felix_von_Amsberg but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Carlos_of_Bourbon-Two_Sicilies", class: ":Man")
+      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Alfonso_XII_of_Spain is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Klaus_Felix_von_Amsberg is assigned as the father of Prince_Claus_of_the_Netherlands but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XII_of_Spain", class: ":Man")
+      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Andrzej_Zamoyski is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Elise_von_Vieregg is assigned as the mother of Klaus_Felix_von_Amsberg but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Andrzej_Zamoyski", class: ":Man")
+      AssignClass(Elise_von_Vieregg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_de_las_Mercedes_Princess_of_Asturias is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Georg_von_dem_Bussche-Haddenhausen is assigned as the father of Gosta_von_dem_Bussche-Haddenhausen but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_las_Mercedes_Princess_of_Asturias", class: ":Woman")
+      AssignClass(Georg_von_dem_Bussche-Haddenhausen, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_Christina_of_Austria is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Wilhelm_von_Amsberg is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Christina_of_Austria", class: ":Woman")
+      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_Carolina_of_Bourbon-Two_Sicilies is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Klaus_Felix_von_Amsberg is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Carolina_of_Bourbon-Two_Sicilies", class: ":Woman")
+      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Andrzej_Zamoyski is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Gabriele_von_dem_Bussche-Ippenburg is assigned as the mother of Gosta_von_dem_Bussche-Haddenhausen but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Andrzej_Zamoyski", class: ":Man")
+      AssignClass(Gabriele_von_dem_Bussche-Ippenburg, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Maria_Carolina_of_Bourbon-Two_Sicilies is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Elise_von_Vieregg is missing the required :Ancestor class for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Carolina_of_Bourbon-Two_Sicilies", class: ":Woman")
+      AssignClass(Elise_von_Vieregg, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Carlos_of_Bourbon-Two_Sicilies is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Georg_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Carlos_of_Bourbon-Two_Sicilies", class: ":Man")
+      AssignClass(Georg_von_dem_Bussche-Haddenhausen, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Alfonso_XII_of_Spain is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Wilhelm_von_Amsberg is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XII_of_Spain", class: ":Man")
+      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_de_las_Mercedes_Princess_of_Asturias is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Klaus_Felix_von_Amsberg is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_las_Mercedes_Princess_of_Asturias", class: ":Woman")
+      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Maria_Christina_of_Austria is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Gabriele_von_dem_Bussche-Ippenburg is missing the required :Ancestor class for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Christina_of_Austria", class: ":Woman")
+      AssignClass(Gabriele_von_dem_Bussche-Ippenburg, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Carlos_of_Bourbon-Two_Sicilies is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Elise_von_Vieregg is missing the required :Ancestor class for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Carlos_of_Bourbon-Two_Sicilies", class: ":Man")
+      AssignClass(Elise_von_Vieregg, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Alfonso_XII_of_Spain is listed as a father but lacks the required :Ancestor or :Man classification.
+      The node Georg_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XII_of_Spain", class: ":Man")
+      AssignClass(Georg_von_dem_Bussche-Haddenhausen, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Andrzej_Zamoyski is listed as a father but lacks the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Andrzej_Zamoyski", class: ":Man")
-
-
-  Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Maria_de_las_Mercedes_Princess_of_Asturias is listed as a mother but lacks the required :Ancestor or :Woman classification.
+      The node Gabriele_von_dem_Bussche-Ippenburg is missing the required :Ancestor class for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_las_Mercedes_Princess_of_Asturias", class: ":Woman")
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Maria_Christina_of_Austria is listed as a mother but lacks the required :Ancestor or :Woman classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Christina_of_Austria", class: ":Woman")
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Maria_Carolina_of_Bourbon-Two_Sicilies is listed as a mother but lacks the required :Ancestor or :Woman classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_Carolina_of_Bourbon-Two_Sicilies", class: ":Woman")
+      AssignClass(Gabriele_von_dem_Bussche-Ippenburg, :Ancestor)
 
 
 
@@ -807,61 +969,31 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0d3be23f-15e8-4ccb-925a-c4eae2c8ea15)
- Call ID: 0d3be23f-15e8-4ccb-925a-c4eae2c8ea15
+  AssignClass (ff9abbb6-b4cf-4e49-b0bb-1e20ebe3f3f8)
+ Call ID: ff9abbb6-b4cf-4e49-b0bb-1e20ebe3f3f8
   Args:
-    source: Carlos_of_Bourbon-Two_Sicilies
     type: :Ancestor
-  AssignClass (52ce6a4f-5378-429e-8573-0b464b0f3c8e)
- Call ID: 52ce6a4f-5378-429e-8573-0b464b0f3c8e
+    source: Wilhelm_von_Amsberg
+  AssignClass (7e9184ac-7a7e-4858-9cf4-258622e8001d)
+ Call ID: 7e9184ac-7a7e-4858-9cf4-258622e8001d
   Args:
-    source: Alfonso_XII_of_Spain
+    source: Klaus_Felix_von_Amsberg
     type: :Ancestor
-  AssignClass (1417b859-0ade-46da-956a-4d91d0b5616b)
- Call ID: 1417b859-0ade-46da-956a-4d91d0b5616b
+  AssignClass (e1e95237-8e60-4274-89d4-da26d7570347)
+ Call ID: e1e95237-8e60-4274-89d4-da26d7570347
   Args:
-    source: Andrzej_Zamoyski
     type: :Ancestor
-  AssignClass (3de07bfb-06d2-43f7-89bf-11222b18437e)
- Call ID: 3de07bfb-06d2-43f7-89bf-11222b18437e
+    source: Elise_von_Vieregg
+  AssignClass (54cc4184-fd39-473a-8cdd-ce094d8f1297)
+ Call ID: 54cc4184-fd39-473a-8cdd-ce094d8f1297
   Args:
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
     type: :Ancestor
-  AssignClass (f50cad90-f253-47f5-9590-9da22c6b0897)
- Call ID: f50cad90-f253-47f5-9590-9da22c6b0897
+    source: Georg_von_dem_Bussche-Haddenhausen
+  AssignClass (91c0371a-0571-419d-a8de-ff07d63031a1)
+ Call ID: 91c0371a-0571-419d-a8de-ff07d63031a1
   Args:
-    source: Maria_Christina_of_Austria
     type: :Ancestor
-  AssignClass (e2c7cceb-d011-4412-84af-26fd53ad6ca6)
- Call ID: e2c7cceb-d011-4412-84af-26fd53ad6ca6
-  Args:
-    source: Maria_Carolina_of_Bourbon-Two_Sicilies
-    type: :Ancestor
-  AssignClass (39fe041a-86ae-4cc4-ba7b-35e5c705144b)
- Call ID: 39fe041a-86ae-4cc4-ba7b-35e5c705144b
-  Args:
-    source: Isabel_Alfonsa_of_Bourbon-Two_Sicilies
-    type: :Ancestor
-  AssignClass (1037384a-7b88-40a2-8c9d-35e3ab9637e4)
- Call ID: 1037384a-7b88-40a2-8c9d-35e3ab9637e4
-  Args:
-    source: Jan_Kanty_Zamoyski
-    type: :Ancestor
-  ValidateShacl (8644e84d-53ef-4fee-9052-83429a010205)
- Call ID: 8644e84d-53ef-4fee-9052-83429a010205
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Gabriele_von_dem_Bussche-Ippenburg
 
 ================================= Tool Message =================================
 
@@ -886,49 +1018,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Isabel_Alfonsa_of_Bourbon-Two_Sicilies a :Ancestor,
+  data:Prince_Claus_of_the_Netherlands a :Man,
+          :Person ;
+      :hasFather data:Klaus_Felix_von_Amsberg .
+
+  data:Elise_von_Vieregg a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1904 ;
-      :hasDeathYear 1985 ;
-      :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear 1929 ;
-      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-      :hasRelation data:Jan_Kanty_Zamoyski .
+      :hasBirthYear 1866 ;
+      :hasDeathYear 1951 .
 
-  data:Alfonso_XII_of_Spain a :Ancestor,
-          :Man,
-          :Person .
+  data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1973 .
 
-  data:Andrzej_Zamoyski a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Jan_Kanty_Zamoyski a :Ancestor,
+  data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Andrzej_Zamoyski ;
-      :hasMother data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1923 .
 
-  data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Maria_Christina_of_Austria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
-          :Person,
+  data:Gosta_von_dem_Bussche-Haddenhausen a :Person,
           :Woman ;
-      :hasFather data:Alfonso_XII_of_Spain ;
-      :hasMother data:Maria_Christina_of_Austria .
+      :hasBirthYear 1902 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+      :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+  data:Klaus_Felix_von_Amsberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Wilhelm_von_Amsberg ;
+      :hasMarriageYear 1924 ;
+      :hasMother data:Elise_von_Vieregg ;
+      :hasRelation data:Gosta_von_dem_Bussche-Haddenhausen .
+
+  data:Wilhelm_von_Amsberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1856 ;
+      :hasDeathYear 1929 .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (dda47221-44a3-4aa6-acc3-0c67b617b1fe)
+ Call ID: dda47221-44a3-4aa6-acc3-0c67b617b1fe
+  Args:
 
 ================================= Tool Message =================================
 
@@ -938,6 +1081,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ec7148f0-708b-4039-a320-d9e34c8706d4)
- Call ID: ec7148f0-708b-4039-a320-d9e34c8706d4
+  Finish (fdac6a2e-9371-46ae-b3a2-e5680a0182b3)
+ Call ID: fdac6a2e-9371-46ae-b3a2-e5680a0182b3
   Args:

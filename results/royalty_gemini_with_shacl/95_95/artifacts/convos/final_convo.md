@@ -154,6 +154,8 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -169,39 +171,9 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -216,6 +188,23 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -233,6 +222,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,29 +304,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -331,6 +327,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -343,6 +347,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -351,17 +357,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -389,6 +397,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -404,175 +496,137 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (aafb3ce1-3453-4dbd-9df3-decce1813403)
- Call ID: aafb3ce1-3453-4dbd-9df3-decce1813403
+  AssignClass (4edeca47-39f9-490d-a037-6947495f392f)
+ Call ID: 4edeca47-39f9-490d-a037-6947495f392f
   Args:
-    type: :Man
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AssignClass (b9af4dd1-0800-4548-9c02-e08d5e2d5973)
- Call ID: b9af4dd1-0800-4548-9c02-e08d5e2d5973
+    type: :Man
+  AssignClass (04f8ff81-bd31-4a01-8c05-ddcfde3cc91e)
+ Call ID: 04f8ff81-bd31-4a01-8c05-ddcfde3cc91e
   Args:
-    type: :Woman
     source: Princess_Elena_of_Romania
-  AssignClass (41b21175-b412-4400-a7f9-0d0156951d96)
- Call ID: 41b21175-b412-4400-a7f9-0d0156951d96
+    type: :Woman
+  AssignClass (2cca7c0f-cbe4-4c3a-829f-4d678d7172f9)
+ Call ID: 2cca7c0f-cbe4-4c3a-829f-4d678d7172f9
   Args:
     source: Robin_Medforth-Mills
     type: :Man
-  AssignClass (293e6bab-90e6-4ee6-85cb-525f5033067b)
- Call ID: 293e6bab-90e6-4ee6-85cb-525f5033067b
+  AssignClass (c1357217-8ec5-4d88-a116-fbc8b6de1a8e)
+ Call ID: c1357217-8ec5-4d88-a116-fbc8b6de1a8e
   Args:
     type: :Man
     source: King_Michael_I_of_Romania
-  AssignClass (e8eefe33-f163-48ca-9b7e-c1c80ca844e3)
- Call ID: e8eefe33-f163-48ca-9b7e-c1c80ca844e3
+  AssignClass (910892dd-4967-4bb7-bcf3-816e8a9f4467)
+ Call ID: 910892dd-4967-4bb7-bcf3-816e8a9f4467
   Args:
     type: :Woman
     source: Queen_Anne_of_Romania
-  AssignClass (8eecbb7e-3974-4949-a049-091b337af987)
- Call ID: 8eecbb7e-3974-4949-a049-091b337af987
+  AssignClass (98b958fc-4a07-4df4-b6a5-72781336aff2)
+ Call ID: 98b958fc-4a07-4df4-b6a5-72781336aff2
   Args:
     source: Crown_Princess_Margareta_of_Romania
     type: :Woman
-  AssignClass (e1baf24a-d39a-4a96-ad25-96b447bd27f8)
- Call ID: e1baf24a-d39a-4a96-ad25-96b447bd27f8
+  AssignClass (a7bbb74f-4b86-4c49-9af7-8cab2f34dbf9)
+ Call ID: a7bbb74f-4b86-4c49-9af7-8cab2f34dbf9
   Args:
     type: :Man
     source: Alexander_Nixon
-  AssignClass (9a0b10c8-d1ed-498a-bfb8-03d5c0e37a6a)
- Call ID: 9a0b10c8-d1ed-498a-bfb8-03d5c0e37a6a
+  AssignClass (ce2f80dd-dac6-4688-82d9-18c992e28bcf)
+ Call ID: ce2f80dd-dac6-4688-82d9-18c992e28bcf
   Args:
     source: Nicoleta_Cîrjan
     type: :Woman
-  AssignClass (b2e7e621-23dc-4942-86e1-4ee582592c9f)
- Call ID: b2e7e621-23dc-4942-86e1-4ee582592c9f
+  AssignClass (de4b9a3b-0d7b-4725-bf39-b938f6da488c)
+ Call ID: de4b9a3b-0d7b-4725-bf39-b938f6da488c
   Args:
-    source: Alina-Maria_Binder
     type: :Woman
-  AddLiteral (a1d96cbe-5bcc-466e-b2c3-b1714ec23ac8)
- Call ID: a1d96cbe-5bcc-466e-b2c3-b1714ec23ac8
+    source: Alina-Maria_Binder
+  AddLiteral (40d6e346-aea0-46fa-86f4-1dea517d3d5b)
+ Call ID: 40d6e346-aea0-46fa-86f4-1dea517d3d5b
   Args:
+    literal_value: Nicholas Michael de Roumanie Medforth-Mills
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    relation: :formerlyKnownAs
+    relation: :knownAs
     literal_type: xsd:string
+  AddLiteral (6fd95566-414d-4f3b-98b4-2097dfe0029e)
+ Call ID: 6fd95566-414d-4f3b-98b4-2097dfe0029e
+  Args:
     literal_value: Prince Nicholas of Romania
-  AddLiteral (4f5fbc03-5126-44f8-8801-ca198ce150a9)
- Call ID: 4f5fbc03-5126-44f8-8801-ca198ce150a9
+    relation: :formerlyKnownAs
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    literal_type: xsd:string
+  AddLiteral (53a3161f-b783-49c0-9a87-a78264fc19de)
+ Call ID: 53a3161f-b783-49c0-9a87-a78264fc19de
   Args:
     literal_type: xsd:integer
-    literal_value: 1985
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     relation: :hasBirthYear
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AddTriple (c58fb2a4-e02a-433c-9b7d-4de8df4e9c67)
- Call ID: c58fb2a4-e02a-433c-9b7d-4de8df4e9c67
+    literal_value: 1985
+  AddTriple (feb00088-b007-41fe-9d4f-84a4797a8f88)
+ Call ID: feb00088-b007-41fe-9d4f-84a4797a8f88
   Args:
-    target: Princess_Elena_of_Romania
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     relation: :hasMother
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AddTriple (08bc90e9-d292-4ec3-8c31-ebab61560cb9)
- Call ID: 08bc90e9-d292-4ec3-8c31-ebab61560cb9
+    target: Princess_Elena_of_Romania
+  AddTriple (dccfd20a-7234-458f-8dca-2a7d7cfb70cb)
+ Call ID: dccfd20a-7234-458f-8dca-2a7d7cfb70cb
   Args:
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     target: Robin_Medforth-Mills
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     relation: :hasFather
-  AddTriple (935a15fe-9a7d-4bc6-8313-480ed343c683)
- Call ID: 935a15fe-9a7d-4bc6-8313-480ed343c683
+  AddTriple (ee77e4cb-94fd-4080-b76b-efd5acad968e)
+ Call ID: ee77e4cb-94fd-4080-b76b-efd5acad968e
   Args:
     source: Princess_Elena_of_Romania
-    target: Queen_Anne_of_Romania
-    relation: :hasMother
-  AddTriple (e625b419-5ca7-4283-815b-c788036ab653)
- Call ID: e625b419-5ca7-4283-815b-c788036ab653
-  Args:
     relation: :hasFather
     target: King_Michael_I_of_Romania
-    source: Princess_Elena_of_Romania
-  AddTriple (26aaefb6-a770-454e-9a13-bb40fae1bb54)
- Call ID: 26aaefb6-a770-454e-9a13-bb40fae1bb54
+  AddTriple (afb0d1e9-d44a-44b3-9bef-5c0e09c9664f)
+ Call ID: afb0d1e9-d44a-44b3-9bef-5c0e09c9664f
   Args:
-    source: Queen_Anne_of_Romania
-    target: Crown_Princess_Margareta_of_Romania
-    relation: :isMotherOf
-  AddTriple (a5955ac7-2b40-4356-a673-a5ebf05cef2a)
- Call ID: a5955ac7-2b40-4356-a673-a5ebf05cef2a
-  Args:
-    target: Crown_Princess_Margareta_of_Romania
-    relation: :isFatherOf
-    source: King_Michael_I_of_Romania
-  AddTriple (a1f20e77-1255-410d-9976-514e7784eafd)
- Call ID: a1f20e77-1255-410d-9976-514e7784eafd
-  Args:
-    target: Princess_Elena_of_Romania
     relation: :hasMother
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AddTriple (cab98992-447b-4c2a-a0fa-47d18f740257)
- Call ID: cab98992-447b-4c2a-a0fa-47d18f740257
+    source: Princess_Elena_of_Romania
+    target: Queen_Anne_of_Romania
+  AddTriple (bb6d1317-aee3-4399-8fae-775832f0b042)
+ Call ID: bb6d1317-aee3-4399-8fae-775832f0b042
   Args:
+    target: Queen_Anne_of_Romania
+    relation: :hasMother
+    source: Crown_Princess_Margareta_of_Romania
+  AddTriple (9abfc2b3-669f-4262-8b14-998cc7691355)
+ Call ID: 9abfc2b3-669f-4262-8b14-998cc7691355
+  Args:
+    source: Crown_Princess_Margareta_of_Romania
+    relation: :hasFather
+    target: King_Michael_I_of_Romania
+  AddTriple (7bc8f45a-3b0a-4143-964f-19ccc86dc341)
+ Call ID: 7bc8f45a-3b0a-4143-964f-19ccc86dc341
+  Args:
+    relation: :hasMarriageYear
+    source: Princess_Elena_of_Romania
     target: Alexander_Nixon
-    relation: :hasFather
-    source: Princess_Elena_of_Romania
-  AddTriple (0c5e6899-1b9a-47a6-95e6-23ea75cd82e6)
- Call ID: 0c5e6899-1b9a-47a6-95e6-23ea75cd82e6
+  AddTriple (69d77933-a8d3-4284-9781-37881ef3051c)
+ Call ID: 69d77933-a8d3-4284-9781-37881ef3051c
   Args:
+    target: Alina-Maria_Binder
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    relation: :hasFather
-    target: Robin_Medforth-Mills
-  AddTriple (6d29498d-fb0e-495d-be8b-523ac370f9d0)
- Call ID: 6d29498d-fb0e-495d-be8b-523ac370f9d0
+    relation: :hasMarriageYear
+  AddLiteral (f0122d85-e8fd-4031-bc6f-61c617dad676)
+ Call ID: f0122d85-e8fd-4031-bc6f-61c617dad676
   Args:
-    relation: :hasMother
-    target: Nicoleta_Cîrjan
-    source: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
-  AddTriple (3706a370-b907-4502-a85b-264d461a8ffb)
- Call ID: 3706a370-b907-4502-a85b-264d461a8ffb
-  Args:
-    target: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    relation: :hasFather
-    source: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
-  AssignClass (b3de8236-6d98-4cdf-9683-dc9b6a0ac51f)
- Call ID: b3de8236-6d98-4cdf-9683-dc9b6a0ac51f
-  Args:
-    source: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
-    type: :Woman
-  AddLiteral (12f8011b-d251-4ad2-890b-297a343f5fc2)
- Call ID: 12f8011b-d251-4ad2-890b-297a343f5fc2
-  Args:
-    literal_value: 2017
     literal_type: xsd:integer
     relation: :hasMarriageYear
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AddTriple (7c72f236-f096-4e0b-8608-d6ebd5c5a55d)
- Call ID: 7c72f236-f096-4e0b-8608-d6ebd5c5a55d
+    literal_value: 2017
+  AddLiteral (ec5164c4-4159-4678-965d-573960890880)
+ Call ID: ec5164c4-4159-4678-965d-573960890880
   Args:
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    relation: :hasRelation
-    target: Alina-Maria_Binder
-  AddLiteral (fde09703-85c3-4aa0-8b92-3ab36a9fb546)
- Call ID: fde09703-85c3-4aa0-8b92-3ab36a9fb546
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1988
     source: Alina-Maria_Binder
-  Finish (3240897f-7498-4c1f-88e0-6f79795bef2e)
- Call ID: 3240897f-7498-4c1f-88e0-6f79795bef2e
+    relation: :hasBirthYear
+    literal_value: 1988
+    literal_type: xsd:integer
+  Finish (21d3db46-4110-4ba7-843d-f682baf77555)
+ Call ID: 21d3db46-4110-4ba7-843d-f682baf77555
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -665,39 +719,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Illegitimate_Daughter_of_Nicholas_Medforth-Mills a :Woman ;
-      :hasFather data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
-      :hasMother data:Nicoleta_C%C3%AErjan .
+  data:Crown_Princess_Margareta_of_Romania a :Woman ;
+      :hasFather data:King_Michael_I_of_Romania ;
+      :hasMother data:Queen_Anne_of_Romania .
+
+  data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man ;
+      :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
+      :hasBirthYear 1985 ;
+      :hasFather data:Robin_Medforth-Mills ;
+      :hasMarriageYear data:Alina-Maria_Binder,
+          2017 ;
+      :hasMother data:Princess_Elena_of_Romania ;
+      :knownAs "Nicholas Michael de Roumanie Medforth-Mills"^^xsd:string .
+
+  data:Nicoleta_C%C3%AErjan a :Woman .
 
   data:Alexander_Nixon a :Man .
 
   data:Alina-Maria_Binder a :Woman ;
       :hasBirthYear 1988 .
 
-  data:King_Michael_I_of_Romania a :Man ;
-      :isFatherOf data:Crown_Princess_Margareta_of_Romania .
-
-  data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man ;
-      :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
-      :hasBirthYear 1985 ;
-      :hasFather data:Robin_Medforth-Mills ;
-      :hasMarriageYear 2017 ;
-      :hasMother data:Princess_Elena_of_Romania ;
-      :hasRelation data:Alina-Maria_Binder .
-
-  data:Nicoleta_C%C3%AErjan a :Woman .
-
   data:Princess_Elena_of_Romania a :Woman ;
-      :hasFather data:Alexander_Nixon,
-          data:King_Michael_I_of_Romania ;
+      :hasFather data:King_Michael_I_of_Romania ;
+      :hasMarriageYear data:Alexander_Nixon ;
       :hasMother data:Queen_Anne_of_Romania .
-
-  data:Queen_Anne_of_Romania a :Woman ;
-      :isMotherOf data:Crown_Princess_Margareta_of_Romania .
 
   data:Robin_Medforth-Mills a :Man .
 
-  data:Crown_Princess_Margareta_of_Romania a :Woman .
+  data:King_Michael_I_of_Romania a :Man .
+
+  data:Queen_Anne_of_Romania a :Woman .
 
 
 
@@ -709,222 +760,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (be51f725-15b8-4b5c-a6a3-5ed007ce7159)
- Call ID: be51f725-15b8-4b5c-a6a3-5ed007ce7159
+  ValidateShacl (8f698761-53c3-491d-8524-6ca00992f5a4)
+ Call ID: 8f698761-53c3-491d-8524-6ca00992f5a4
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:26
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Robin_Medforth-Mills lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robin_Medforth-Mills, :Ancestor)
+      AssignClass(node='Robin_Medforth-Mills', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Princess_Elena_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elena_of_Romania, :Ancestor)
+      AssignClass(node='Princess_Elena_of_Romania', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Robin_Medforth-Mills lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robin_Medforth-Mills, :Ancestor)
+      AssignClass(node='Robin_Medforth-Mills', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I_of_Romania, :Ancestor)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Nixon, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Princess_Elena_of_Romania has more than one father defined via the hasFather property.
+      The node Princess_Elena_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)
+      AssignClass(node='Princess_Elena_of_Romania', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elena_of_Romania, :Ancestor)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
+      The node Robin_Medforth-Mills lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne_of_Romania, :Ancestor)
+      AssignClass(node='Robin_Medforth-Mills', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Anne_of_Romania is a subject of isMotherOf but lacks the required class :Ancestor.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne_of_Romania, :Ancestor)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Princess_Elena_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robin_Medforth-Mills, :Ancestor)
+      AssignClass(node='Princess_Elena_of_Romania', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I_of_Romania, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Nixon, :Ancestor)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      Princess_Elena_of_Romania has more than one father defined via the hasFather property.
+      The node King_Michael_I_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)
+      AssignClass(node='King_Michael_I_of_Romania', class=':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.
+      The node Queen_Anne_of_Romania lacks the required class ':Ancestor' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elena_of_Romania, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne_of_Romania, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node King_Michael_I_of_Romania is a subject of isFatherOf but lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I_of_Romania, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Michael_I_of_Romania, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Nixon, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
-    LLM-provided explanation of the violation:
-      Princess_Elena_of_Romania has more than one father defined via the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Anne_of_Romania, :Ancestor)
+      AssignClass(node='Queen_Anne_of_Romania', class=':Ancestor')
 
 
 
@@ -933,66 +920,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (01f2b178-69d8-4eeb-ac70-4d59ff80093b)
- Call ID: 01f2b178-69d8-4eeb-ac70-4d59ff80093b
+  AssignClass (64c5f18a-4c32-4988-b424-9350a5ac48d1)
+ Call ID: 64c5f18a-4c32-4988-b424-9350a5ac48d1
   Args:
-    type: :Ancestor
     source: Robin_Medforth-Mills
-  AssignClass (74208094-85b5-4fb0-a63a-16aa2d86b94a)
- Call ID: 74208094-85b5-4fb0-a63a-16aa2d86b94a
-  Args:
     type: :Ancestor
+  AssignClass (da282d12-2d39-4066-af74-ee94ce80f34a)
+ Call ID: da282d12-2d39-4066-af74-ee94ce80f34a
+  Args:
     source: Princess_Elena_of_Romania
-  AssignClass (720bdf11-27f9-4933-a960-afeba01982b7)
- Call ID: 720bdf11-27f9-4933-a960-afeba01982b7
-  Args:
     type: :Ancestor
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AssignClass (49279ab5-33fb-4fa2-8218-5cc71cc551b0)
- Call ID: 49279ab5-33fb-4fa2-8218-5cc71cc551b0
+  AssignClass (da0f19a3-d555-47e7-9d6c-2ee6ec83a272)
+ Call ID: da0f19a3-d555-47e7-9d6c-2ee6ec83a272
   Args:
-    type: :Ancestor
     source: King_Michael_I_of_Romania
-  AssignClass (373ab715-ea3c-4029-bf13-30b32ae9cc38)
- Call ID: 373ab715-ea3c-4029-bf13-30b32ae9cc38
-  Args:
-    source: Alexander_Nixon
     type: :Ancestor
-  AssignClass (9221ce8a-7894-40fe-81c3-96c8b9fa5e1b)
- Call ID: 9221ce8a-7894-40fe-81c3-96c8b9fa5e1b
-  Args:
-    type: :Ancestor
-    source: Nicoleta_Cîrjan
-  AssignClass (5bcac7dd-daae-4e85-b819-616a577f5300)
- Call ID: 5bcac7dd-daae-4e85-b819-616a577f5300
+  AssignClass (5bedceb5-326e-491f-841f-336ad2b8ba35)
+ Call ID: 5bedceb5-326e-491f-841f-336ad2b8ba35
   Args:
     type: :Ancestor
     source: Queen_Anne_of_Romania
-  RemoveTriple (6103b7bd-21c9-4542-909c-f97696627153)
- Call ID: 6103b7bd-21c9-4542-909c-f97696627153
-  Args:
-    target: Alexander_Nixon
-    relation: :hasFather
-    source: Princess_Elena_of_Romania
-  ValidateShacl (7ad75160-78ae-4d29-9141-81e5918095ab)
- Call ID: 7ad75160-78ae-4d29-9141-81e5918095ab
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1013,47 +960,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Nixon a :Ancestor,
-          :Man .
+  data:Crown_Princess_Margareta_of_Romania a :Woman ;
+      :hasFather data:King_Michael_I_of_Romania ;
+      :hasMother data:Queen_Anne_of_Romania .
 
-  data:Illegitimate_Daughter_of_Nicholas_Medforth-Mills a :Woman ;
-      :hasFather data:Nicholas_Michael_de_Roumanie_Medforth-Mills ;
-      :hasMother data:Nicoleta_C%C3%AErjan .
+  data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man ;
+      :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
+      :hasBirthYear 1985 ;
+      :hasFather data:Robin_Medforth-Mills ;
+      :hasMarriageYear data:Alina-Maria_Binder,
+          2017 ;
+      :hasMother data:Princess_Elena_of_Romania ;
+      :knownAs "Nicholas Michael de Roumanie Medforth-Mills"^^xsd:string .
+
+  data:Nicoleta_C%C3%AErjan a :Woman .
+
+  data:Alexander_Nixon a :Man .
 
   data:Alina-Maria_Binder a :Woman ;
       :hasBirthYear 1988 .
 
-  data:King_Michael_I_of_Romania a :Ancestor,
-          :Man ;
-      :isFatherOf data:Crown_Princess_Margareta_of_Romania .
-
-  data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Ancestor,
-          :Man ;
-      :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
-      :hasBirthYear 1985 ;
-      :hasFather data:Robin_Medforth-Mills ;
-      :hasMarriageYear 2017 ;
-      :hasMother data:Princess_Elena_of_Romania ;
-      :hasRelation data:Alina-Maria_Binder .
-
-  data:Nicoleta_C%C3%AErjan a :Ancestor,
-          :Woman .
-
   data:Princess_Elena_of_Romania a :Ancestor,
           :Woman ;
       :hasFather data:King_Michael_I_of_Romania ;
+      :hasMarriageYear data:Alexander_Nixon ;
       :hasMother data:Queen_Anne_of_Romania .
-
-  data:Queen_Anne_of_Romania a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Crown_Princess_Margareta_of_Romania .
 
   data:Robin_Medforth-Mills a :Ancestor,
           :Man .
 
-  data:Crown_Princess_Margareta_of_Romania a :Woman .
+  data:King_Michael_I_of_Romania a :Ancestor,
+          :Man .
+
+  data:Queen_Anne_of_Romania a :Ancestor,
+          :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (311c3e82-e96a-4b53-8737-65daa28b35a3)
+ Call ID: 311c3e82-e96a-4b53-8737-65daa28b35a3
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1063,6 +1013,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d1a64297-ae3c-407a-99bd-2657301c6813)
- Call ID: d1a64297-ae3c-407a-99bd-2657301c6813
+  Finish (48bd1aed-6d7a-4bcf-873f-c19f8f1d8866)
+ Call ID: 48bd1aed-6d7a-4bcf-873f-c19f8f1d8866
   Args:

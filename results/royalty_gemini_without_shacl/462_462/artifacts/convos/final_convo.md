@@ -69,34 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Nicholas Charles Edward Jonathan Windsor (born 25 July 1970) is a relative of the British royal family, the youngest child of Prince Edward, Duke of Kent.
-Lord Nicholas has voiced strong anti-abortion views.
-Early years
+Lady Rose Victoria Birgitte Louise Gilman (née Windsor; born 1 March 1980) is a British film art assistant and member of the British royal family.
+She is the daughter of Prince Richard, Duke of Gloucester, and his wife Birgitte, Duchess of Gloucester.
+Early life and education
 
-Nicholas Charles Edward Jonathan Windsor was born on 25 July 1970 at King's College Hospital in Denmark Hill, London, to Prince Edward, Duke of Kent and Katharine, Duchess of Kent.
-He has an older brother, Earl of St Andrews, and a sister, Lady Helen Taylor.
-He was baptised later that year at Windsor Castle.
-His godparents included his paternal second cousin Charles, Prince of Wales (later King Charles III), and Donald Coggan, at the time Archbishop of York and later Archbishop of Canterbury.
-Religion
+Rose Victoria Birgitte Louise Windsor was born on 1 March 1980 at St Mary's Hospital, London, the youngest child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
+Her godparents included Prince Edward and Lady Sarah Armstrong-Jones.
+Career
 
-Nicholas's mother, the Duchess of Kent, had been received into the Catholic Church in 1994.
-On 14 July 2011, Nicholas became an Honorary Vice-president of the Friends of the Personal Ordinariate of Our Lady of Walsingham, an Anglican Ordinariate within the Catholic Church.
-Nicholas is also a patron of the Society of King Charles the Martyr and, though it is a largely Anglican society, he identifies it with his Catholic faith.
-In a passage written by Windsor for the Society's website, he extols Charles's virtues: "In the King's personal piety, devotion and support of the Church, his ecumenical understanding (far advanced for his day), his patronage of the Arts in the service of God, his inspiration of the Christian classic, Eikon Basilike and of course his martyrdom, we have much to REMEMBER and be thankful for.
-"
+Rose has worked in the film industry as a film art assistant.
+Her film credits include Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince, Margaret Thatcher: The Long Walk to Finchley, and the television series Little Britain.
+Rose continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Marriage and children
 
-
-Nicholas has voiced strong views on the issue of abortion, which he has stated is, as a societal threat, "worse than al-Qaeda".
-Marriage and family
-
-Nicholas met his future wife, Paola Doimi de Lupis Frankopan Šubić Zrinski, at a party in New York City in 1999 to mark the Millennium.
-By the marriage, the bride became Lady Nicholas Windsor.
+Rose announced her engagement on 16 November 2007 to businessman George Gilman, the son of a former director of Leeds United.
+Rose and her husband have a daughter, Lyla (born 30 May 2010, then 32nd in line of succession to the British throne), and a son, Rufus (born 30 October 2012, then 33rd in line of succession to the British throne).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +107,9 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +124,23 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,103 +432,273 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b410372b-509b-44d8-a9fd-782d774e7a90)
- Call ID: b410372b-509b-44d8-a9fd-782d774e7a90
+  AssignClass (56bb781d-36c5-48ee-9e25-0e1697f3104c)
+ Call ID: 56bb781d-36c5-48ee-9e25-0e1697f3104c
   Args:
-    source: Nicholas_Windsor
-    type: :Man
-  AssignClass (83d32468-9a58-4d9a-acf8-de900caebb04)
- Call ID: 83d32468-9a58-4d9a-acf8-de900caebb04
+    source: :Rose_Gilman
+    type: :Woman
+  AssignClass (8d63ed6a-3b20-400b-9281-42e4681aba1c)
+ Call ID: 8d63ed6a-3b20-400b-9281-42e4681aba1c
   Args:
-    source: Nicholas_Windsor
+    source: :Rose_Gilman
     type: :Person
-  AddLiteral (267409e5-7ec4-4050-a0f0-b7a74c06dfb3)
- Call ID: 267409e5-7ec4-4050-a0f0-b7a74c06dfb3
+  AddLiteral (c150a3dc-009d-4052-9ea8-e82aa1134c1f)
+ Call ID: c150a3dc-009d-4052-9ea8-e82aa1134c1f
   Args:
-    source: Nicholas_Windsor
-    literal_value: 1970
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AssignClass (7f9938c0-5028-4223-81a4-5880a2023937)
- Call ID: 7f9938c0-5028-4223-81a4-5880a2023937
+    literal_value: 1980
+    literal_type: xsd:integer
+    source: :Rose_Gilman
+  AddTriple (ed3e056b-1013-4efa-a72f-50cfe66e7387)
+ Call ID: ed3e056b-1013-4efa-a72f-50cfe66e7387
   Args:
+    source: :Rose_Gilman
+    relation: :alsoKnownAs
+    target: :Rose_Windsor
+  AssignClass (d62e53a1-a996-4c93-929c-8bef3dbdb858)
+ Call ID: d62e53a1-a996-4c93-929c-8bef3dbdb858
+  Args:
+    source: :Prince_Richard
     type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (4b088d1d-ba16-4e9e-b385-8a1fc136abb8)
- Call ID: 4b088d1d-ba16-4e9e-b385-8a1fc136abb8
+  AssignClass (311dfcf6-af74-49da-a5ec-cd8ecccbe0e4)
+ Call ID: 311dfcf6-af74-49da-a5ec-cd8ecccbe0e4
   Args:
+    source: :Prince_Richard
     type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (0c5b0384-5313-4076-80d5-fe416dccf1e3)
- Call ID: 0c5b0384-5313-4076-80d5-fe416dccf1e3
+  AssignClass (f66cc786-e77f-4f76-8d17-ce5f6d7116ba)
+ Call ID: f66cc786-e77f-4f76-8d17-ce5f6d7116ba
   Args:
+    source: :Birgitte_Duchess_of_Gloucester
     type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AssignClass (7930f65a-be4c-4cb2-a030-dd1719557dd1)
- Call ID: 7930f65a-be4c-4cb2-a030-dd1719557dd1
+  AssignClass (82e1c498-9abb-41d4-ab91-fa5d3681803d)
+ Call ID: 82e1c498-9abb-41d4-ab91-fa5d3681803d
   Args:
+    source: :Birgitte_Duchess_of_Gloucester
     type: :Person
-    source: Katharine_Duchess_of_Kent
-  AddTriple (08f2a815-4f12-4de6-8a96-ba065ea79f26)
- Call ID: 08f2a815-4f12-4de6-8a96-ba065ea79f26
+  AddTriple (81331152-383c-45ef-b200-a3466a61f24e)
+ Call ID: 81331152-383c-45ef-b200-a3466a61f24e
   Args:
-    source: Nicholas_Windsor
+    source: :Rose_Gilman
+    target: :Prince_Richard
     relation: :hasFather
-    target: Prince_Edward_Duke_of_Kent
-  AddTriple (c4f4fd7c-1cb2-46a7-a341-2c4c7f755f80)
- Call ID: c4f4fd7c-1cb2-46a7-a341-2c4c7f755f80
+  AddTriple (672910d2-ab52-4780-a6f7-8f12490ae588)
+ Call ID: 672910d2-ab52-4780-a6f7-8f12490ae588
   Args:
-    source: Nicholas_Windsor
+    source: :Rose_Gilman
     relation: :hasMother
-    target: Katharine_Duchess_of_Kent
-  AssignClass (4255330f-e4b9-4a90-959b-9e707c212031)
- Call ID: 4255330f-e4b9-4a90-959b-9e707c212031
+    target: :Birgitte_Duchess_of_Gloucester
+  AssignClass (8dee0d29-595b-4bf3-9966-2d039a7b31fa)
+ Call ID: 8dee0d29-595b-4bf3-9966-2d039a7b31fa
   Args:
+    source: :George_Gilman
     type: :Man
-    source: Earl_of_St_Andrews
-  AssignClass (7ba2663f-caab-42a0-8f16-8f815c077135)
- Call ID: 7ba2663f-caab-42a0-8f16-8f815c077135
+  AssignClass (9982d00a-e599-4cfc-91bf-63e4d64491cc)
+ Call ID: 9982d00a-e599-4cfc-91bf-63e4d64491cc
   Args:
-    source: Earl_of_St_Andrews
+    source: :George_Gilman
     type: :Person
-  AddTriple (86a4368d-2498-4a9d-8a04-ef5d6fb731c6)
- Call ID: 86a4368d-2498-4a9d-8a04-ef5d6fb731c6
+  AddTriple (de99532b-4fb9-45fa-ac97-2db8062a2079)
+ Call ID: de99532b-4fb9-45fa-ac97-2db8062a2079
   Args:
-    target: Earl_of_St_Andrews
-    relation: :hasBrother
-    source: Nicholas_Windsor
-  AssignClass (3463c209-97d0-4f76-9cb4-34f90a3a3b1b)
- Call ID: 3463c209-97d0-4f76-9cb4-34f90a3a3b1b
-  Args:
-    type: :Woman
-    source: Lady_Helen_Taylor
-  AssignClass (64a91a5b-f7d7-476a-b36b-a95c505425e5)
- Call ID: 64a91a5b-f7d7-476a-b36b-a95c505425e5
-  Args:
-    type: :Person
-    source: Lady_Helen_Taylor
-  AddTriple (0da0cc76-f466-42c2-8e50-6ab024686f74)
- Call ID: 0da0cc76-f466-42c2-8e50-6ab024686f74
-  Args:
-    target: Lady_Helen_Taylor
-    relation: :hasSister
-    source: Nicholas_Windsor
-  AssignClass (00128f7d-a85f-4f6a-b7d1-3f96190921e0)
- Call ID: 00128f7d-a85f-4f6a-b7d1-3f96190921e0
-  Args:
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-    type: :Woman
-  AssignClass (08672195-0c2c-4a37-973e-104887e57993)
- Call ID: 08672195-0c2c-4a37-973e-104887e57993
-  Args:
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-    type: :Person
-  AddTriple (55950658-0be9-4e89-bbe5-2acc39df11fd)
- Call ID: 55950658-0be9-4e89-bbe5-2acc39df11fd
-  Args:
-    target: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
+    target: :George_Gilman
     relation: :hasRelation
-    source: Nicholas_Windsor
-  Finish (39255079-9d24-4309-b880-4a3d628fdb9e)
- Call ID: 39255079-9d24-4309-b880-4a3d628fdb9e
+    source: :Rose_Gilman
+  AssignClass (fee762b6-a062-401d-9a72-d8474bb3b2e8)
+ Call ID: fee762b6-a062-401d-9a72-d8474bb3b2e8
+  Args:
+    source: :Lyla_Gilman
+    type: :Woman
+  AssignClass (29620c08-02ee-4d75-86a8-0f803741967d)
+ Call ID: 29620c08-02ee-4d75-86a8-0f803741967d
+  Args:
+    source: :Lyla_Gilman
+    type: :Person
+  AddTriple (7afd35e6-41a7-4c56-982b-f3e629175782)
+ Call ID: 7afd35e6-41a7-4c56-982b-f3e629175782
+  Args:
+    source: :Lyla_Gilman
+    target: :Rose_Gilman
+    relation: :isDaughterOf
+  AddTriple (2c29eaae-8f3d-4d29-adcc-06695cf89540)
+ Call ID: 2c29eaae-8f3d-4d29-adcc-06695cf89540
+  Args:
+    relation: :isDaughterOf
+    target: :George_Gilman
+    source: :Lyla_Gilman
+  AssignClass (59c2d8a2-48b5-4c49-8d2f-ed51197c51ae)
+ Call ID: 59c2d8a2-48b5-4c49-8d2f-ed51197c51ae
+  Args:
+    source: :Rufus_Gilman
+    type: :Man
+  AssignClass (723fcf37-bb05-4cd0-bd05-576a37b7252f)
+ Call ID: 723fcf37-bb05-4cd0-bd05-576a37b7252f
+  Args:
+    source: :Rufus_Gilman
+    type: :Person
+  AddTriple (0dd1860a-6302-46f5-97f2-f31696443a42)
+ Call ID: 0dd1860a-6302-46f5-97f2-f31696443a42
+  Args:
+    source: :Rufus_Gilman
+    relation: :isSonOf
+    target: :Rose_Gilman
+  AddTriple (6b002f47-f187-4440-a467-c723e003328b)
+ Call ID: 6b002f47-f187-4440-a467-c723e003328b
+  Args:
+    target: :George_Gilman
+    relation: :isSonOf
+    source: :Rufus_Gilman
+  Finish (1244348f-ee90-4280-93c6-5100e577bfa6)
+ Call ID: 1244348f-ee90-4280-93c6-5100e577bfa6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Lyla_Gilman a :Person,
+          :Woman ;
+      :isDaughterOf data:George_Gilman,
+          data:Rose_Gilman .
+
+  data:Rufus_Gilman a :Man,
+          :Person ;
+      :isSonOf data:George_Gilman,
+          data:Rose_Gilman .
+
+  data:Birgitte_Duchess_of_Gloucester a :Person,
+          :Woman .
+
+  data:Prince_Richard a :Man,
+          :Person .
+
+  data:Rose_Gilman a :Person,
+          :Woman ;
+      :alsoKnownAs data:Rose_Windsor ;
+      :hasBirthYear 1980 ;
+      :hasFather data:Prince_Richard ;
+      :hasMother data:Birgitte_Duchess_of_Gloucester ;
+      :hasRelation data:George_Gilman .
+
+  data:George_Gilman a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Rose_Windsor']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (8c670db5-ab91-405e-8f9e-a94ad1dfdada)
+ Call ID: 8c670db5-ab91-405e-8f9e-a94ad1dfdada
+  Args:
+    type: :Woman
+    source: :Rose_Windsor
+  AssignClass (378d27fa-7360-4768-b4e2-7c608b4b1d62)
+ Call ID: 378d27fa-7360-4768-b4e2-7c608b4b1d62
+  Args:
+    source: :Rose_Windsor
+    type: :Person
+  Finish (6defe9b3-f889-4412-9f52-1fcc359022a0)
+ Call ID: 6defe9b3-f889-4412-9f52-1fcc359022a0
   Args:

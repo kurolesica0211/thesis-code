@@ -1,181 +1,97 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/488_488",
-  "text_file": "Q930013.txt",
-  "text_key": "Q930013",
-  "article": "https://en.wikipedia.org/wiki/Michael_I_of_Romania",
-  "article_key": "Michael I of Romania",
+  "text_file": "Q898347.txt",
+  "text_key": "Q898347",
+  "article": "https://en.wikipedia.org/wiki/Princess_Nina_Georgievna_of_Russia",
+  "article_key": "Princess Nina Georgievna of Russia",
   "main_entity": {
-    "uri": "http://example.com/data#Michael_I_of_Romania",
-    "qid": "Q930013",
-    "label": "Michael I of Romania"
+    "uri": "http://example.com/data#Nina_Georgievna_of_Russia",
+    "qid": "Q898347",
+    "label": "Nina Georgievna of Russia"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Michael_I_of_Romania",
-      "qid": "Q930013",
-      "label": "Michael I of Romania",
+      "uri": "http://example.com/data#Nina_Georgievna_of_Russia",
+      "qid": "Q898347",
+      "label": "Nina Georgievna of Russia",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Carol_II_of_Romania",
-      "qid": "Q212897",
-      "label": "Carol II of Romania",
+      "uri": "http://example.com/data#David_Chavchavadze",
+      "qid": "Q2621015",
+      "label": "David Chavchavadze",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Helen_of_Greece_and_Denmark",
-      "qid": "Q162177",
-      "label": "Helen of Greece and Denmark",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Margareta_of_Romania",
-      "qid": "Q663875",
-      "label": "Margareta of Romania",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Paul_of_Greece",
-      "qid": "Q155394",
-      "label": "Paul of Greece",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Elena_of_Romania",
-      "qid": "Q2423576",
-      "label": "Princess Elena of Romania",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Irene-_Duchess_of_Aosta",
-      "qid": "Q236770",
-      "label": "Princess Irene, Duchess of Aosta",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Katherine_of_Greece_and_Denmark",
-      "qid": "Q242338",
-      "label": "Princess Katherine of Greece and Denmark",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Constantine_II_of_Greece",
-      "qid": "Q151773",
-      "label": "Constantine II of Greece",
+      "uri": "http://example.com/data#Paul_Chavchavadze",
+      "qid": "Q16028068",
+      "label": "Paul Chavchavadze",
       "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Constantine_I_of_Greece",
-      "qid": "Q152099",
-      "label": "Constantine I of Greece",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Amedeo-_5th_Duke_of_Aosta",
-      "qid": "Q452039",
-      "label": "Prince Amedeo, 5th Duke of Aosta",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Irene_of_Greece_and_Denmark",
-      "qid": "Q242298",
-      "label": "Princess Irene of Greece and Denmark",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Margaret_of_Prussia",
-      "qid": "Q61338",
-      "label": "Princess Margaret of Prussia",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Queen_Anne_of_Romania",
-      "qid": "Q563765",
-      "label": "Queen Anne of Romania",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Queen_Sofía_of_Spain",
-      "qid": "Q156548",
-      "label": "Queen Sofía of Spain",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Carol_II",
-      "extracted_local_name": "Carol_II",
-      "embedding_text": "Carol II",
+      "extracted_uri": "http://example.org/data/Prince_David_Chavchavadze",
+      "extracted_local_name": "Prince_David_Chavchavadze",
+      "embedding_text": "Prince David Chavchavadze",
       "extracted_gender": "male",
       "matched": true,
       "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Carol_II_of_Romania",
-      "ground_truth_qid": "Q212897",
-      "ground_truth_label": "Carol II of Romania",
+      "ground_truth_uri": "http://example.com/data#David_Chavchavadze",
+      "ground_truth_qid": "Q2621015",
+      "ground_truth_label": "David Chavchavadze",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Carol II",
-      "best_candidate_label": "Carol II of Romania",
-      "best_candidate_qid": "Q212897",
-      "best_candidate_gender": "male",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince David Chavchavadze",
+      "best_candidate_label": "David Chavchavadze",
+      "best_candidate_qid": "Q2621015",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Michael_I",
-      "extracted_local_name": "Michael_I",
-      "embedding_text": "Michael I",
+      "extracted_uri": "http://example.org/data/Prince_Paul_Chavchavadze",
+      "extracted_local_name": "Prince_Paul_Chavchavadze",
+      "embedding_text": "Prince Paul Chavchavadze",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Michael_I_of_Romania",
-      "ground_truth_qid": "Q930013",
-      "ground_truth_label": "Michael I of Romania",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Michael I",
-      "best_candidate_label": "Michael I of Romania",
-      "best_candidate_qid": "Q930013",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
+      "score": 0.8292682926829268,
+      "ground_truth_uri": "http://example.com/data#Paul_Chavchavadze",
+      "ground_truth_qid": "Q16028068",
+      "ground_truth_label": "Paul Chavchavadze",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Paul Chavchavadze",
+      "best_candidate_label": "Paul Chavchavadze",
+      "best_candidate_qid": "Q16028068",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8292682926829268
     },
     {
-      "extracted_uri": "http://example.org/data/Elena_of_Romania",
-      "extracted_local_name": "Elena_of_Romania",
-      "embedding_text": "Elena of Romania",
+      "extracted_uri": "http://example.org/data/Grand_Duchess_Maria_Georgievna_of_Russia",
+      "extracted_local_name": "Grand_Duchess_Maria_Georgievna_of_Russia",
+      "embedding_text": "Grand Duchess Maria Georgievna of Russia",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.7878787878787878,
-      "ground_truth_uri": "http://example.com/data#Princess_Elena_of_Romania",
-      "ground_truth_qid": "Q2423576",
-      "ground_truth_label": "Princess Elena of Romania",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Elena de Roumanie",
-      "best_candidate_label": "Princess Elena of Romania",
-      "best_candidate_qid": "Q2423576",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.7878787878787878
+      "score": 0.8111111111111111,
+      "ground_truth_uri": "http://example.com/data#Nina_Georgievna_of_Russia",
+      "ground_truth_qid": "Q898347",
+      "ground_truth_label": "Nina Georgievna of Russia",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Nina Georgievna of Russia",
+      "best_candidate_label": "Nina Georgievna of Russia",
+      "best_candidate_qid": "Q898347",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8111111111111111
     },
     {
-      "extracted_uri": "http://example.org/data/Ferdinand_I",
-      "extracted_local_name": "Ferdinand_I",
-      "embedding_text": "Ferdinand I",
+      "extracted_uri": "http://example.org/data/Grand_Duke_George_Mikhailovich",
+      "extracted_local_name": "Grand_Duke_George_Mikhailovich",
+      "embedding_text": "Grand Duke George Mikhailovich",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -184,16 +100,52 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "King Constantine I",
-      "best_candidate_label": "Constantine I of Greece",
-      "best_candidate_qid": "Q152099",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.41379310344827586
+      "best_candidate_match_text": "Paule Chavchavadze",
+      "best_candidate_label": "Paul Chavchavadze",
+      "best_candidate_qid": "Q16028068",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.375
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Nina_Georgievna_of_Russia",
+      "extracted_local_name": "Princess_Nina_Georgievna_of_Russia",
+      "embedding_text": "Princess Nina Georgievna of Russia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Xenia",
+      "extracted_local_name": "Princess_Xenia",
+      "embedding_text": "Princess Xenia",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     }
   ],
   "summary": {
-    "entities_total": 4,
+    "entities_total": 6,
     "entities_matched": 3,
-    "entities_unmatched": 1
+    "entities_unmatched": 3
   }
 }

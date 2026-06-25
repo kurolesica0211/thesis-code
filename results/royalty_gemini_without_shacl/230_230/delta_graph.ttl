@@ -2,33 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceJohn a :Man ;
-    :alsoKnownAs "John Charles Francis"^^xsd:string ;
-    :hasBirthYear 1905 ;
-    :hasBrother data:PrinceAlbert,
-        data:PrinceEdward,
-        data:PrinceGeorge,
-        data:PrinceHenry ;
-    :hasDeathYear 1919 ;
-    :hasFather data:KingGeorgeV ;
-    :hasMother data:QueenMary ;
-    :hasSister data:PrincessMary ;
-    :knownAs "Johnnie"^^xsd:string .
+data:Autumn_Kelly a :Woman .
 
-data:EdwardVII a :Man .
+data:Peter_Phillips a :Man ;
+    :hasBirthYear 1977 ;
+    :hasDaughter data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasSister data:Zara_Tindall .
 
-data:KingGeorgeV a :Man ;
-    :hasFather data:EdwardVII .
+data:Anne_Princess_Royal a :Woman .
 
-data:PrinceAlbert a :Man .
+data:Isla_Phillips a :Woman .
 
-data:PrinceEdward a :Man .
+data:Mark_Phillips a :Man .
 
-data:PrinceGeorge a :Man .
+data:Savannah_Phillips a :Woman .
 
-data:PrinceHenry a :Man .
-
-data:PrincessMary a :Woman .
-
-data:QueenMary a :Woman .
+data:Zara_Tindall a :Woman .
 

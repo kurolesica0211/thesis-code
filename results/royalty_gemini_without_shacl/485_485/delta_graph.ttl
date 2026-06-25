@@ -2,45 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Otto_d%27Ambrosio a :Man,
-        :Person ;
-    :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
-    :hasMother data:Eleonore_von_Habsburg-Lothringen .
+data:Prince_Bernhard a :Man ;
+    :isFatherOf data:Queen_Beatrix .
 
-data:Charles_I_of_Austria a :Man,
-        :Person .
+data:Prince_Friso a :Man ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Mabel_Wisse_Smit,
+        data:Queen_Beatrix ;
+    :isBrotherOf data:King_Willem-Alexander,
+        data:Prince_Constantijn ;
+    :isFatherOf data:Countess_Emma_Luana_Ninette_Sophie,
+        data:Countess_Joanna_Zaria_Nicoline_Milou .
 
-data:Eleonore_von_Habsburg-Lothringen a :Person,
-        :Woman ;
-    :hasBirthYear 1994 ;
-    :hasBrother data:Ferdinand_Habsburg ;
-    :hasFather data:Karl_von_Habsburg ;
-    :hasMarriageYear 2020 ;
-    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
-    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio .
+data:Queen_Juliana a :Woman ;
+    :isMotherOf data:Queen_Beatrix .
 
-data:Ferdinand_Habsburg a :Man,
-        :Person .
+data:Claus_von_Amsberg a :Man .
 
-data:Francesca_von_Thyssen-Bornemisza a :Person,
-        :Woman .
+data:King_Willem-Alexander a :Man .
 
-data:Karl_von_Habsburg a :Man,
-        :Person ;
-    :hasFather data:Otto_von_Habsburg ;
-    :hasMother data:Regina_von_Saxe-Meiningen .
+data:Mabel_Wisse_Smit a :Woman ;
+    :isMotherOf data:Countess_Emma_Luana_Ninette_Sophie,
+        data:Countess_Joanna_Zaria_Nicoline_Milou .
 
-data:Otto_von_Habsburg a :Man,
-        :Person ;
-    :hasFather data:Charles_I_of_Austria ;
-    :hasMother data:Zita_of_Bourbon-Parma .
+data:Prince_Constantijn a :Man .
 
-data:Regina_von_Saxe-Meiningen a :Person,
-        :Woman .
+data:Countess_Emma_Luana_Ninette_Sophie a :Woman .
 
-data:Zita_of_Bourbon-Parma a :Person,
-        :Woman .
+data:Countess_Joanna_Zaria_Nicoline_Milou a :Woman .
 
-data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,
-        :Person .
+data:Queen_Beatrix a :Woman .
 

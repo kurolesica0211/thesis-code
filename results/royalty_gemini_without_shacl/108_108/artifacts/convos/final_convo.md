@@ -252,6 +252,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -267,39 +269,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -314,6 +286,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -331,6 +320,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -398,29 +402,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -429,6 +425,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -441,6 +445,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -449,17 +455,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -487,6 +495,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -502,171 +594,171 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e6495487-e41b-45b3-913f-64de9c9cb4b5)
- Call ID: e6495487-e41b-45b3-913f-64de9c9cb4b5
+  AssignClass (90e36135-f109-4bfc-98e0-88c8c8f616c8)
+ Call ID: 90e36135-f109-4bfc-98e0-88c8c8f616c8
   Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
+    source: Elizabeth_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (601fad18-c181-4ed3-8a1d-76d0b9e5d613)
- Call ID: 601fad18-c181-4ed3-8a1d-76d0b9e5d613
+  AssignClass (1cc52089-dc1b-488f-8a72-ce9b30a1b96a)
+ Call ID: 1cc52089-dc1b-488f-8a72-ce9b30a1b96a
   Args:
+    source: Elizabeth_of_Greece_and_Denmark
     type: :Person
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AddLiteral (dcd18e9c-e5a2-42db-9a7d-753919c6f134)
- Call ID: dcd18e9c-e5a2-42db-9a7d-753919c6f134
+  AddLiteral (98c2af00-adc8-453a-b62b-ea03ad1592d6)
+ Call ID: 98c2af00-adc8-453a-b62b-ea03ad1592d6
   Args:
     literal_value: 1904
-    source: Princess_Elizabeth_of_Greece_and_Denmark
+    source: Elizabeth_of_Greece_and_Denmark
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (0e43cc5f-e687-4ae9-b206-f398e8c27561)
- Call ID: 0e43cc5f-e687-4ae9-b206-f398e8c27561
+  AddLiteral (e43b2ddb-61d6-404d-bf58-5139c7d9eee3)
+ Call ID: e43b2ddb-61d6-404d-bf58-5139c7d9eee3
   Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    literal_type: xsd:integer
     literal_value: 1955
     relation: :hasDeathYear
-  AssignClass (8bbf8155-8454-4a28-983d-bb39c6c24e75)
- Call ID: 8bbf8155-8454-4a28-983d-bb39c6c24e75
+    literal_type: xsd:integer
+    source: Elizabeth_of_Greece_and_Denmark
+  AssignClass (5db76e3b-9c79-48e7-ba51-069fd4f61ca6)
+ Call ID: 5db76e3b-9c79-48e7-ba51-069fd4f61ca6
   Args:
-    source: Prince_Nicholas_of_Greece_and_Denmark
     type: :Man
-  AssignClass (0c54b392-c398-4daf-a1ec-1ab6ab719d3f)
- Call ID: 0c54b392-c398-4daf-a1ec-1ab6ab719d3f
+    source: Carl_Theodor_of_Torring-Jettenbach
+  AssignClass (072d0d3c-eb79-4084-aadb-97ccc1a1cf8a)
+ Call ID: 072d0d3c-eb79-4084-aadb-97ccc1a1cf8a
   Args:
     type: :Person
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (a1cf3037-4ce6-4c39-9a5a-fbe65e84fc2d)
- Call ID: a1cf3037-4ce6-4c39-9a5a-fbe65e84fc2d
+    source: Carl_Theodor_of_Torring-Jettenbach
+  AddLiteral (ec000abb-57af-43de-b943-eb10ac30bf7e)
+ Call ID: ec000abb-57af-43de-b943-eb10ac30bf7e
   Args:
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    type: :Woman
-  AssignClass (e1825229-a3ea-48e5-8922-c019b11757f3)
- Call ID: e1825229-a3ea-48e5-8922-c019b11757f3
-  Args:
-    type: :Person
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AddTriple (662d9365-5106-4283-a2d4-8e52e046b17a)
- Call ID: 662d9365-5106-4283-a2d4-8e52e046b17a
-  Args:
-    relation: :hasFather
-    target: Prince_Nicholas_of_Greece_and_Denmark
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AddTriple (cf001757-83ad-4571-a3be-0485e20158b9)
- Call ID: cf001757-83ad-4571-a3be-0485e20158b9
-  Args:
-    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    relation: :hasMother
-  AssignClass (1ef5b4eb-ecdb-41be-87bc-ff733bf4fc10)
- Call ID: 1ef5b4eb-ecdb-41be-87bc-ff733bf4fc10
-  Args:
-    source: Carl_Theodor_of_Törring-Jettenbach
-    type: :Man
-  AssignClass (d29cfe6c-ed30-4568-9344-7e38ee3d7b38)
- Call ID: d29cfe6c-ed30-4568-9344-7e38ee3d7b38
-  Args:
-    source: Carl_Theodor_of_Törring-Jettenbach
-    type: :Person
-  AddTriple (84edb2d5-4620-4bca-b95f-cea35380b855)
- Call ID: 84edb2d5-4620-4bca-b95f-cea35380b855
+    literal_value: 1934
+    relation: :hasMarriageYear
+    source: Elizabeth_of_Greece_and_Denmark
+    literal_type: xsd:integer
+  AddTriple (5bc61522-e4a0-4980-843c-d90e27821581)
+ Call ID: 5bc61522-e4a0-4980-843c-d90e27821581
   Args:
     relation: :hasRelation
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    target: Carl_Theodor_of_Törring-Jettenbach
-  AddLiteral (c7f19c9f-54c2-40e4-9283-826e35248dfd)
- Call ID: c7f19c9f-54c2-40e4-9283-826e35248dfd
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1934
-    literal_type: xsd:integer
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (fa0ada91-aebb-4bb0-90ae-0e9be5456320)
- Call ID: fa0ada91-aebb-4bb0-90ae-0e9be5456320
-  Args:
-    source: Princess_Marina
-    type: :Woman
-  AssignClass (d2c2da96-9e51-448e-a5b7-6acd961b2851)
- Call ID: d2c2da96-9e51-448e-a5b7-6acd961b2851
-  Args:
-    type: :Person
-    source: Princess_Marina
-  AddTriple (c67f4c73-971a-4ba9-ab02-8847292fa413)
- Call ID: c67f4c73-971a-4ba9-ab02-8847292fa413
-  Args:
-    relation: :isSisterOf
-    target: Princess_Elizabeth_of_Greece_and_Denmark
-    source: Princess_Marina
-  AssignClass (673275b7-f95b-45ee-9d7d-2a8d0bcbef4f)
- Call ID: 673275b7-f95b-45ee-9d7d-2a8d0bcbef4f
-  Args:
-    source: Princess_Olga
-    type: :Woman
-  AssignClass (1e87b28b-baec-4851-bf89-e0786e517226)
- Call ID: 1e87b28b-baec-4851-bf89-e0786e517226
-  Args:
-    type: :Person
-    source: Princess_Olga
-  AddTriple (78a59d53-6517-4a82-b0b1-ca37ed56d1af)
- Call ID: 78a59d53-6517-4a82-b0b1-ca37ed56d1af
-  Args:
-    source: Princess_Olga
-    target: Princess_Elizabeth_of_Greece_and_Denmark
-    relation: :isSisterOf
-  AssignClass (f72bd5cf-c382-42d5-8eda-e95446b10d42)
- Call ID: f72bd5cf-c382-42d5-8eda-e95446b10d42
-  Args:
-    source: Hans_Veit_of_Törring-Jettenbach
-    type: :Man
-  AssignClass (a757e861-cdbb-43b1-bb40-9e91335086b3)
- Call ID: a757e861-cdbb-43b1-bb40-9e91335086b3
-  Args:
-    type: :Person
-    source: Hans_Veit_of_Törring-Jettenbach
-  AddTriple (2a543cf5-759f-4849-8010-bfdcaea32bbb)
- Call ID: 2a543cf5-759f-4849-8010-bfdcaea32bbb
-  Args:
-    target: Princess_Elizabeth_of_Greece_and_Denmark
-    source: Hans_Veit_of_Törring-Jettenbach
-    relation: :isSonOf
-  AddTriple (d9a45894-4111-4ed8-8849-cba0a84dfad8)
- Call ID: d9a45894-4111-4ed8-8849-cba0a84dfad8
-  Args:
-    target: Carl_Theodor_of_Törring-Jettenbach
-    source: Hans_Veit_of_Törring-Jettenbach
-    relation: :isSonOf
-  AssignClass (82fa31c7-5330-4044-9664-4284d7265761)
- Call ID: 82fa31c7-5330-4044-9664-4284d7265761
+    source: Elizabeth_of_Greece_and_Denmark
+    target: Carl_Theodor_of_Torring-Jettenbach
+  AssignClass (b19b7570-091e-4f0b-bc2b-db10a4716e51)
+ Call ID: b19b7570-091e-4f0b-bc2b-db10a4716e51
   Args:
     type: :Man
-    source: Count_Hans_Veit_zu_Toerring-Jettenbach
-  AssignClass (0e0946de-c9b6-4648-80bb-68fe51505411)
- Call ID: 0e0946de-c9b6-4648-80bb-68fe51505411
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (911ba988-0221-417c-9208-4a1cffa63fd1)
+ Call ID: 911ba988-0221-417c-9208-4a1cffa63fd1
   Args:
-    source: Count_Hans_Veit_zu_Toerring-Jettenbach
     type: :Person
-  AssignClass (04e2f96b-6e59-4c6f-bf1c-cd2a4adc9b64)
- Call ID: 04e2f96b-6e59-4c6f-bf1c-cd2a4adc9b64
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (4505248b-9746-4d84-b09e-6cf69a7548d4)
+ Call ID: 4505248b-9746-4d84-b09e-6cf69a7548d4
   Args:
-    source: Duchess_Sophie_in_Bavaria
     type: :Woman
-  AssignClass (ff1784d5-a628-4e7c-87d2-3e9b75c630e8)
- Call ID: ff1784d5-a628-4e7c-87d2-3e9b75c630e8
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AssignClass (3d60d79d-e784-4d72-85a0-24945515c28a)
+ Call ID: 3d60d79d-e784-4d72-85a0-24945515c28a
   Args:
-    source: Duchess_Sophie_in_Bavaria
     type: :Person
-  AddTriple (e0b6638b-eb63-4f7c-84c1-e7ef5927f81b)
- Call ID: e0b6638b-eb63-4f7c-84c1-e7ef5927f81b
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddTriple (cc1cf2d9-6e1f-4681-b426-30867ec7312d)
+ Call ID: cc1cf2d9-6e1f-4681-b426-30867ec7312d
   Args:
+    target: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasFather
-    target: Count_Hans_Veit_zu_Toerring-Jettenbach
-    source: Carl_Theodor_of_Törring-Jettenbach
-  AddTriple (f94df518-a06b-49a4-9f18-4a7a92662928)
- Call ID: f94df518-a06b-49a4-9f18-4a7a92662928
+    source: Elizabeth_of_Greece_and_Denmark
+  AddTriple (3e6e5e77-54aa-44f8-9345-404405e85b48)
+ Call ID: 3e6e5e77-54aa-44f8-9345-404405e85b48
   Args:
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
     relation: :hasMother
-    source: Carl_Theodor_of_Törring-Jettenbach
-    target: Duchess_Sophie_in_Bavaria
-  Finish (eac612fa-d78f-4794-a277-c5525394a125)
- Call ID: eac612fa-d78f-4794-a277-c5525394a125
+    source: Elizabeth_of_Greece_and_Denmark
+  AssignClass (b9a6b746-3a83-4a7d-9324-b728730f093c)
+ Call ID: b9a6b746-3a83-4a7d-9324-b728730f093c
+  Args:
+    type: :Woman
+    source: Princess_Marina
+  AssignClass (be1682a0-a76a-4524-bbef-94d96b6a2c98)
+ Call ID: be1682a0-a76a-4524-bbef-94d96b6a2c98
+  Args:
+    source: Princess_Marina
+    type: :Person
+  AddTriple (59b6ec0f-d2ad-4a62-8817-496e91b92cd0)
+ Call ID: 59b6ec0f-d2ad-4a62-8817-496e91b92cd0
+  Args:
+    target: Princess_Marina
+    source: Elizabeth_of_Greece_and_Denmark
+    relation: :isSisterOf
+  AssignClass (49e443e4-3aca-4254-ae84-21001948d866)
+ Call ID: 49e443e4-3aca-4254-ae84-21001948d866
+  Args:
+    type: :Woman
+    source: Princess_Olga
+  AssignClass (43d9b4b9-3943-4f31-915f-6c293fefe41b)
+ Call ID: 43d9b4b9-3943-4f31-915f-6c293fefe41b
+  Args:
+    type: :Person
+    source: Princess_Olga
+  AddTriple (e291568d-21a1-443a-b322-e9ba6ca8f9d2)
+ Call ID: e291568d-21a1-443a-b322-e9ba6ca8f9d2
+  Args:
+    target: Princess_Olga
+    source: Elizabeth_of_Greece_and_Denmark
+    relation: :isSisterOf
+  AssignClass (0b2de5ac-6e6e-4987-9f95-e55714609159)
+ Call ID: 0b2de5ac-6e6e-4987-9f95-e55714609159
+  Args:
+    source: Hans_Veit_of_Torring-Jettenbach
+    type: :Man
+  AssignClass (6c7df18a-1778-45ab-aa81-d0e5f7baa769)
+ Call ID: 6c7df18a-1778-45ab-aa81-d0e5f7baa769
+  Args:
+    type: :Person
+    source: Hans_Veit_of_Torring-Jettenbach
+  AddTriple (d2b4e008-5b90-47de-b220-fff5fe276633)
+ Call ID: d2b4e008-5b90-47de-b220-fff5fe276633
+  Args:
+    source: Hans_Veit_of_Torring-Jettenbach
+    relation: :isSonOf
+    target: Elizabeth_of_Greece_and_Denmark
+  AddTriple (427094b2-68c3-497f-88a2-f29391531ebc)
+ Call ID: 427094b2-68c3-497f-88a2-f29391531ebc
+  Args:
+    target: Carl_Theodor_of_Torring-Jettenbach
+    relation: :isSonOf
+    source: Hans_Veit_of_Torring-Jettenbach
+  AssignClass (111bbfa2-2dbb-4d57-835f-3becba6f2bdc)
+ Call ID: 111bbfa2-2dbb-4d57-835f-3becba6f2bdc
+  Args:
+    type: :Man
+    source: Hans_Veit_zu_Torring-Jettenbach_senior
+  AssignClass (458cece5-034d-4bfe-9097-2989793265b0)
+ Call ID: 458cece5-034d-4bfe-9097-2989793265b0
+  Args:
+    type: :Person
+    source: Hans_Veit_zu_Torring-Jettenbach_senior
+  AssignClass (7a0b0da7-446f-428f-a9d0-08557404fade)
+ Call ID: 7a0b0da7-446f-428f-a9d0-08557404fade
+  Args:
+    type: :Woman
+    source: Duchess_Sophie_in_Bavaria
+  AssignClass (f0f87397-e505-4af2-bfcd-c5404c0d8d12)
+ Call ID: f0f87397-e505-4af2-bfcd-c5404c0d8d12
+  Args:
+    source: Duchess_Sophie_in_Bavaria
+    type: :Person
+  AddTriple (3128840b-c647-4f56-b9c7-affab9072cce)
+ Call ID: 3128840b-c647-4f56-b9c7-affab9072cce
+  Args:
+    source: Hans_Veit_zu_Torring-Jettenbach_senior
+    relation: :isFatherOf
+    target: Carl_Theodor_of_Torring-Jettenbach
+  AddTriple (668c13f9-fe57-4ecb-979e-d6b6f42bccec)
+ Call ID: 668c13f9-fe57-4ecb-979e-d6b6f42bccec
+  Args:
+    target: Carl_Theodor_of_Torring-Jettenbach
+    relation: :isMotherOf
+    source: Duchess_Sophie_in_Bavaria
+  Finish (f1e7ef45-51cf-442a-bf42-0335855d6188)
+ Call ID: f1e7ef45-51cf-442a-bf42-0335855d6188
   Args:

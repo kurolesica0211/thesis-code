@@ -1,0 +1,298 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:HenrietteOfSchoenaichCarolath a :Ancestor,
+        :Woman ;
+    :hasChild data:FranzWilhelmOfPrussia ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Female ;
+    :hasSister data:HenrietteOfSchoenaichCarolath ;
+    :hasSon data:FranzWilhelmOfPrussia ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isAuntOf data:FranzWilhelmOfPrussia ;
+    :isBloodrelationOf data:HenrietteOfSchoenaichCarolath ;
+    :isMotherOf data:FranzWilhelmOfPrussia ;
+    :isParentOf data:FranzWilhelmOfPrussia ;
+    :isSiblingOf data:HenrietteOfSchoenaichCarolath ;
+    :isSisterOf data:HenrietteOfSchoenaichCarolath .
+
+data:KarlFranzOfPrussia a :Ancestor,
+        :Man ;
+    :hasBrother data:KarlFranzOfPrussia ;
+    :hasChild data:FranzWilhelmOfPrussia ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Male ;
+    :hasSon data:FranzWilhelmOfPrussia ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:KarlFranzOfPrussia ;
+    :isBrotherOf data:KarlFranzOfPrussia ;
+    :isFatherOf data:FranzWilhelmOfPrussia ;
+    :isParentOf data:FranzWilhelmOfPrussia ;
+    :isSiblingOf data:KarlFranzOfPrussia ;
+    :isUncleOf data:FranzWilhelmOfPrussia .
+
+data:VladimirCyrillovich a :Ancestor,
+        :Man ;
+    :hasBrother data:VladimirCyrillovich ;
+    :hasChild data:MariaVladimirovna ;
+    :hasDaughter data:MariaVladimirovna ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Male ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:GeorgeMikhailovich,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna ;
+    :isBloodrelationOf data:VladimirCyrillovich ;
+    :isBrotherOf data:VladimirCyrillovich ;
+    :isFatherOf data:MariaVladimirovna ;
+    :isParentOf data:MariaVladimirovna ;
+    :isSiblingOf data:VladimirCyrillovich ;
+    :isUncleOf data:MariaVladimirovna .
+
+data:VictoriaRomanovnaBettarini a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1982 ;
+    :hasChild data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :hasDaughter data:KiraLeonidaGeorgievnaRomanova ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Female ;
+    :hasSister data:VictoriaRomanovnaBettarini ;
+    :hasSon data:AlexanderGeorgievichRomanov ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isAuntOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:VictoriaRomanovnaBettarini ;
+    :isMotherOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isParentOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isSiblingOf data:VictoriaRomanovnaBettarini ;
+    :isSisterOf data:VictoriaRomanovnaBettarini .
+
+data:MariaVladimirovna a :Ancestor,
+        :Woman ;
+    :hasAncestor data:VladimirCyrillovich ;
+    :hasChild data:GeorgeMikhailovich ;
+    :hasFather data:VladimirCyrillovich ;
+    :hasParent data:VladimirCyrillovich ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Female ;
+    :hasSister data:MariaVladimirovna ;
+    :hasSon data:GeorgeMikhailovich ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:GeorgeMikhailovich,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isAuntOf data:GeorgeMikhailovich ;
+    :isBloodrelationOf data:MariaVladimirovna ;
+    :isChildOf data:VladimirCyrillovich ;
+    :isDaughterOf data:VladimirCyrillovich ;
+    :isMotherOf data:GeorgeMikhailovich ;
+    :isParentOf data:GeorgeMikhailovich ;
+    :isSiblingOf data:MariaVladimirovna ;
+    :isSisterOf data:MariaVladimirovna .
+
+data:FranzWilhelmOfPrussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia ;
+    :hasBrother data:FranzWilhelmOfPrussia ;
+    :hasChild data:GeorgeMikhailovich ;
+    :hasFather data:KarlFranzOfPrussia ;
+    :hasMother data:HenrietteOfSchoenaichCarolath ;
+    :hasParent data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Male ;
+    :hasSon data:GeorgeMikhailovich ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:GeorgeMikhailovich,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:FranzWilhelmOfPrussia ;
+    :isBrotherOf data:FranzWilhelmOfPrussia ;
+    :isChildOf data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia ;
+    :isFatherOf data:GeorgeMikhailovich ;
+    :isParentOf data:GeorgeMikhailovich ;
+    :isSiblingOf data:FranzWilhelmOfPrussia ;
+    :isSonOf data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia ;
+    :isUncleOf data:GeorgeMikhailovich .
+
+data:AlexanderGeorgievichRomanov a :Man ;
+    :hasAncestor data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasBirthYear 2022 ;
+    :hasBrother data:AlexanderGeorgievichRomanov ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini ;
+    :hasParent data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Male ;
+    :hasSister data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isBrotherOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isChildOf data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini ;
+    :isSiblingOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isSonOf data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini .
+
+data:KiraLeonidaGeorgievnaRomanova a :Woman ;
+    :hasAncestor data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasBirthYear 2025 ;
+    :hasBrother data:AlexanderGeorgievichRomanov ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini ;
+    :hasParent data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Female ;
+    :hasSister data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isChildOf data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini ;
+    :isDaughterOf data:GeorgeMikhailovich,
+        data:VictoriaRomanovnaBettarini ;
+    :isSiblingOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isSisterOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova .
+
+data:GeorgeMikhailovich a :Ancestor,
+        :Man ;
+    :hasAncestor data:FranzWilhelmOfPrussia,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:MariaVladimirovna,
+        data:VladimirCyrillovich ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:GeorgeMikhailovich ;
+    :hasChild data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :hasDaughter data:KiraLeonidaGeorgievnaRomanova ;
+    :hasFather data:FranzWilhelmOfPrussia ;
+    :hasMother data:MariaVladimirovna ;
+    :hasParent data:FranzWilhelmOfPrussia,
+        data:MariaVladimirovna ;
+    :hasRelation data:AlexanderGeorgievichRomanov,
+        data:FranzWilhelmOfPrussia,
+        data:GeorgeMikhailovich,
+        data:HenrietteOfSchoenaichCarolath,
+        data:KarlFranzOfPrussia,
+        data:KiraLeonidaGeorgievnaRomanova,
+        data:MariaVladimirovna,
+        data:VictoriaRomanovnaBettarini,
+        data:VladimirCyrillovich ;
+    :hasSex data:Male ;
+    :hasSon data:AlexanderGeorgievichRomanov ;
+    :isAncestorOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isBloodrelationOf data:GeorgeMikhailovich ;
+    :isBrotherOf data:GeorgeMikhailovich ;
+    :isChildOf data:FranzWilhelmOfPrussia,
+        data:MariaVladimirovna ;
+    :isFatherOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isParentOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova ;
+    :isSiblingOf data:GeorgeMikhailovich ;
+    :isSonOf data:FranzWilhelmOfPrussia,
+        data:MariaVladimirovna ;
+    :isUncleOf data:AlexanderGeorgievichRomanov,
+        data:KiraLeonidaGeorgievnaRomanova .
+

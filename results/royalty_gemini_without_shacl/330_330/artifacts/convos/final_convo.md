@@ -69,35 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Lennart Bernadotte, Count of Wisborg (born Prince Lennart of Sweden, Duke of Småland; 8 May 1909 – 21 December 2004) was a Swedish-German landscaper, filmmaker, photographer and was a grandson of King Gustaf V of Sweden.
-He was born at the Royal Palace in Stockholm, to Prince Wilhelm, Duke of Södermanland, and Grand Duchess Maria Pavlovna of Russia.
-At birth Bernadotte was a Swedish prince and was titled Duke of Småland.
-Thus, he was called Mr. Bernadotte as a result.
-Title
+Fergus Bowes-Lyon (18 April 1889 – 27 September 1915) was a British officer and older brother of Elizabeth Bowes-Lyon, who later became the queen consort of King George VI.
+He was a maternal uncle of Queen Elizabeth II.
+Early life and marriage
 
-Under the Swedish Act of Succession, a prince or princess marrying without the consent of the monarch and government forfeits the right of succession for themselves and their descendants.
-In a new policy adopted in the case of Lennart Bernadotte, they were also forbidden to use their titles and told to use the surname of Bernadotte.
-By his marriage on 11 March 1932 Prince Lennart consequently, as far as Swedish records were concerned, was to be called Mr. Lennart Bernadotte.
-On 2 July 1951, for himself, his wife and his marital descendants, Bernadotte was admitted by Grand Duchess Charlotte (head of state at the time) into the nobility of Luxembourg as Count of Wisborg and in that conferral was also called Gustaf Lennart Nicolas Paul Prince Bernadotte.
-It has been reported (without accuracy) that Lennart and his cousin Sigvard Bernadotte wanted King Carl XVI Gustaf of Sweden to restore their royal titles, which he could have done, but that he chose not to do so; no such request was actually ever made however.
-Career
-
-In 1944 Bernadotte portrayed the young Crown Prince Carl of Sweden and Norway in the historical film Prince Gustaf, Bernadotte's only screen acting role.
-He served as head of the Sveriges Scoutförbund (Scouting Association of Sweden) from 1948 to 1951
+Fergus Bowes-Lyon was born at Forbes House in Ham, Surrey, the son of Claude Bowes-Lyon, 14th
+Bowes-Lyon had his early education at Ludgrove School.
+On 17 September 1914, Bowes-Lyon married Lady Christian Norah Dawson-Damer (7 August 1890 – 29 March 1959), daughter of the 5th Earl of Portarlington.
+Rosemary was only two months old when Fergus died in the line of duty on 27 September 1915, only 10 days after the first anniversary of his wedding.
+His issue:
 
 
-Lennart Bernadotte concentrated his energy on his estate on the island of Mainau in Lake Constance, Germany, where he died, and on his charitable fund, the Lennart Bernadotte Stiftung.
-Family
+World War I
 
-In London on 11 March 1932, Bernadotte married firstly Karin Emma Louise Nissvandt (7 July 1911 – 9 September 1991).
-In Mainau on 29 April 1972, Bernadotte married Sonja Anita Maria Haunz (7 May 1944 – 21 October 2008).
-Bernadotte died on 21 December 2004.
+In the First World War, Bowes-Lyon served with the 8th Battalion, Black Watch: as a lieutenant since 19 August 1914, and as temporary captain since 17 November.
+Bowes-Lyon was killed in action on 27 September 1915, during the Battle of the Hohenzollern Redoubt in the Battle of Loos.
+At the time of Bowes-Lyon's death, his brother John was also serving with the Black Watch.
+His mother, Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne, was severely affected by the loss of her son, and after his death became an invalid, withdrawn from public life until the marriage of her daughter Elizabeth to the future king George VI in 1923.
+Fergus's widow later married Captain William Frederick Martin (d. 6 October 1947).
+In November 2011, Bowes-Lyon's grandson supplied family records to the Commonwealth War Graves Commission detailing his original burial place, and showing that it had remained marked until the end of the war.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +111,9 @@ Bernadotte died on 21 December 2004.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +128,23 @@ Bernadotte died on 21 December 2004.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,138 +436,171 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2f833303-b82c-470b-86b5-e62a10c4f804)
- Call ID: 2f833303-b82c-470b-86b5-e62a10c4f804
-  Args:
-    source: :LennartBernadotte
-    type: :Man
-  AssignClass (a40d383f-3137-43eb-b1b6-4ce46c3b4e9b)
- Call ID: a40d383f-3137-43eb-b1b6-4ce46c3b4e9b
-  Args:
-    source: :LennartBernadotte
-    type: :Person
-  AssignClass (226ca24d-6174-4256-9fa7-4604917940ab)
- Call ID: 226ca24d-6174-4256-9fa7-4604917940ab
+  AssignClass (174486c1-ff50-46ef-a4a7-f95aa76d114c)
+ Call ID: 174486c1-ff50-46ef-a4a7-f95aa76d114c
   Args:
     type: :Man
-    source: :WilhelmDukeOfSödermanland
-  AssignClass (4fb70fbd-d3da-4b42-8a51-506fe4638a9f)
- Call ID: 4fb70fbd-d3da-4b42-8a51-506fe4638a9f
+    source: Fergus Bowes-Lyon
+  AssignClass (8e8b68bb-64b4-4c29-86bd-f37bdd94a0f5)
+ Call ID: 8e8b68bb-64b4-4c29-86bd-f37bdd94a0f5
   Args:
+    source: Fergus Bowes-Lyon
     type: :Person
-    source: :WilhelmDukeOfSödermanland
-  AssignClass (459c3f67-48b6-49e1-b5fc-29874439415a)
- Call ID: 459c3f67-48b6-49e1-b5fc-29874439415a
+  AddLiteral (8ad78414-ee79-43e9-8218-1e5b75901b4a)
+ Call ID: 8ad78414-ee79-43e9-8218-1e5b75901b4a
   Args:
-    type: :Woman
-    source: :MariaPavlovnaOfRussia
-  AssignClass (2f3d1b4b-e46a-4748-9c09-10e5f1d7d243)
- Call ID: 2f3d1b4b-e46a-4748-9c09-10e5f1d7d243
-  Args:
-    source: :MariaPavlovnaOfRussia
-    type: :Person
-  AssignClass (5647f1b6-78d6-41d4-a256-01e59dc1de33)
- Call ID: 5647f1b6-78d6-41d4-a256-01e59dc1de33
-  Args:
-    type: :Woman
-    source: :KarinEmmaLouiseNissvandt
-  AssignClass (6055e7f1-751a-4efb-bcc1-c38201df97a8)
- Call ID: 6055e7f1-751a-4efb-bcc1-c38201df97a8
-  Args:
-    source: :KarinEmmaLouiseNissvandt
-    type: :Person
-  AssignClass (c47d265b-38c3-4829-810f-7131706ff74c)
- Call ID: c47d265b-38c3-4829-810f-7131706ff74c
-  Args:
-    type: :Woman
-    source: :SonjaAnitaMariaHaunz
-  AssignClass (1b6dced9-ff0d-4ae5-905b-f544895724cb)
- Call ID: 1b6dced9-ff0d-4ae5-905b-f544895724cb
-  Args:
-    source: :SonjaAnitaMariaHaunz
-    type: :Person
-  AddLiteral (df92a8fe-3c47-4465-8833-c370ab84a4b6)
- Call ID: df92a8fe-3c47-4465-8833-c370ab84a4b6
-  Args:
-    relation: :hasSex
-    source: :LennartBernadotte
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (54d6d360-728d-413f-9d0b-00c34c527fe8)
- Call ID: 54d6d360-728d-413f-9d0b-00c34c527fe8
-  Args:
-    literal_type: xsd:string
-    literal_value: Female
-    source: :MariaPavlovnaOfRussia
-    relation: :hasSex
-  AddLiteral (771f0570-c705-417c-85b4-1fc8510f53a7)
- Call ID: 771f0570-c705-417c-85b4-1fc8510f53a7
-  Args:
-    literal_value: Female
-    source: :KarinEmmaLouiseNissvandt
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (294fc19b-f2ba-4918-97a6-e2287610e258)
- Call ID: 294fc19b-f2ba-4918-97a6-e2287610e258
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :SonjaAnitaMariaHaunz
-    literal_value: Female
-  AddLiteral (015491ca-740e-4001-8f40-d0c59238f572)
- Call ID: 015491ca-740e-4001-8f40-d0c59238f572
-  Args:
+    literal_value: 1889
     relation: :hasBirthYear
-    source: :LennartBernadotte
-    literal_value: 1909
+    source: Fergus Bowes-Lyon
     literal_type: xsd:integer
-  AddLiteral (eb0ce0e5-3d51-4576-9c07-ca8018042458)
- Call ID: eb0ce0e5-3d51-4576-9c07-ca8018042458
+  AddLiteral (f8a95986-6f21-4d8e-8f66-c4932bbd64a4)
+ Call ID: f8a95986-6f21-4d8e-8f66-c4932bbd64a4
   Args:
+    literal_type: xsd:integer
+    literal_value: 1915
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: :LennartBernadotte
-    literal_value: 2004
-  AddLiteral (d1dab1c6-62f9-489f-a11a-303f21c3ee29)
- Call ID: d1dab1c6-62f9-489f-a11a-303f21c3ee29
+    source: Fergus Bowes-Lyon
+  AssignClass (1a0fcc66-6b30-4165-9e3c-b26362ff5c52)
+ Call ID: 1a0fcc66-6b30-4165-9e3c-b26362ff5c52
   Args:
-    source: :KarinEmmaLouiseNissvandt
-    literal_value: 1991
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (9e7a6d50-2d54-4a72-9b6e-d41e98f4c37a)
- Call ID: 9e7a6d50-2d54-4a72-9b6e-d41e98f4c37a
+    source: Elizabeth Bowes-Lyon
+    type: :Woman
+  AssignClass (1827e3cf-ab14-4994-89ba-652f3de6c17a)
+ Call ID: 1827e3cf-ab14-4994-89ba-652f3de6c17a
   Args:
-    source: :SonjaAnitaMariaHaunz
-    literal_value: 2008
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (37f28f01-4d37-468b-a495-472f0906d408)
- Call ID: 37f28f01-4d37-468b-a495-472f0906d408
+    source: Elizabeth Bowes-Lyon
+    type: :Person
+  AddTriple (0e77367f-29ad-4e66-a439-882310d1fa57)
+ Call ID: 0e77367f-29ad-4e66-a439-882310d1fa57
   Args:
-    source: :LennartBernadotte
-    target: :WilhelmDukeOfSödermanland
+    relation: :isSiblingOf
+    target: Elizabeth Bowes-Lyon
+    source: Fergus Bowes-Lyon
+  AssignClass (671000fe-c0c7-45ff-9370-0e5b9bda7f96)
+ Call ID: 671000fe-c0c7-45ff-9370-0e5b9bda7f96
+  Args:
+    source: Queen Elizabeth II
+    type: :Woman
+  AssignClass (116d2fca-d618-46a3-969d-77b1d61d151a)
+ Call ID: 116d2fca-d618-46a3-969d-77b1d61d151a
+  Args:
+    type: :Person
+    source: Queen Elizabeth II
+  AddTriple (7a6dde1e-a8e2-4619-b2cd-af153006241f)
+ Call ID: 7a6dde1e-a8e2-4619-b2cd-af153006241f
+  Args:
+    source: Fergus Bowes-Lyon
+    relation: :isUncleOf
+    target: Queen Elizabeth II
+  AssignClass (f05bb07e-dcbc-499a-9eea-f5d59b0959b6)
+ Call ID: f05bb07e-dcbc-499a-9eea-f5d59b0959b6
+  Args:
+    type: :Man
+    source: Claude Bowes-Lyon, 14th
+  AssignClass (63828d79-c225-403a-ab44-24997f1d82a2)
+ Call ID: 63828d79-c225-403a-ab44-24997f1d82a2
+  Args:
+    source: Claude Bowes-Lyon, 14th
+    type: :Person
+  AddTriple (ca3b18f2-ace5-4690-a97c-60229dc4ce58)
+ Call ID: ca3b18f2-ace5-4690-a97c-60229dc4ce58
+  Args:
+    source: Fergus Bowes-Lyon
     relation: :hasFather
-  AddTriple (ef6c11c2-566d-4390-a902-89d8eca5a989)
- Call ID: ef6c11c2-566d-4390-a902-89d8eca5a989
+    target: Claude Bowes-Lyon, 14th
+  AssignClass (ce6e580c-179c-4d3f-a608-1ac889c01d89)
+ Call ID: ce6e580c-179c-4d3f-a608-1ac889c01d89
   Args:
+    source: Lady Christian Norah Dawson-Damer
+    type: :Woman
+  AssignClass (158c342e-ebfd-4841-92b5-fb863090447b)
+ Call ID: 158c342e-ebfd-4841-92b5-fb863090447b
+  Args:
+    type: :Person
+    source: Lady Christian Norah Dawson-Damer
+  AddTriple (3d7d15af-aec3-4624-b29c-ce0e2b219b15)
+ Call ID: 3d7d15af-aec3-4624-b29c-ce0e2b219b15
+  Args:
+    relation: :hasRelation
+    target: Lady Christian Norah Dawson-Damer
+    source: Fergus Bowes-Lyon
+  AddLiteral (78bd2927-e54d-4412-bfa7-c50d0e96869a)
+ Call ID: 78bd2927-e54d-4412-bfa7-c50d0e96869a
+  Args:
+    literal_type: xsd:integer
+    source: Fergus Bowes-Lyon
+    literal_value: 1914
+    relation: :hasMarriageYear
+  AssignClass (8cec9b4e-5d0c-44e0-925d-9945c76abb3e)
+ Call ID: 8cec9b4e-5d0c-44e0-925d-9945c76abb3e
+  Args:
+    source: Rosemary
+    type: :Woman
+  AssignClass (6a01bfa3-0d4a-472e-ad38-c31d100e2e49)
+ Call ID: 6a01bfa3-0d4a-472e-ad38-c31d100e2e49
+  Args:
+    type: :Person
+    source: Rosemary
+  AddTriple (3f332227-0306-4ba3-bc24-fd5a8e07ea71)
+ Call ID: 3f332227-0306-4ba3-bc24-fd5a8e07ea71
+  Args:
+    relation: :isDaughterOf
+    target: Fergus Bowes-Lyon
+    source: Rosemary
+  AddTriple (6c7d017c-d9ed-47d6-a761-209fcf8444d1)
+ Call ID: 6c7d017c-d9ed-47d6-a761-209fcf8444d1
+  Args:
+    target: Lady Christian Norah Dawson-Damer
+    relation: :isDaughterOf
+    source: Rosemary
+  AssignClass (688606cc-f0f5-4dd8-b0ee-d70b00a00be7)
+ Call ID: 688606cc-f0f5-4dd8-b0ee-d70b00a00be7
+  Args:
+    type: :Man
+    source: John
+  AssignClass (d6987c3d-3cff-4c50-9c3d-f942546a03ff)
+ Call ID: d6987c3d-3cff-4c50-9c3d-f942546a03ff
+  Args:
+    source: John
+    type: :Person
+  AddTriple (42e0640a-4ca3-4177-9b4d-b9cd3c077a1b)
+ Call ID: 42e0640a-4ca3-4177-9b4d-b9cd3c077a1b
+  Args:
+    relation: :isSiblingOf
+    target: John
+    source: Fergus Bowes-Lyon
+  AssignClass (04c9e544-4b06-41a8-abad-74c7257ab6b8)
+ Call ID: 04c9e544-4b06-41a8-abad-74c7257ab6b8
+  Args:
+    source: Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne
+    type: :Woman
+  AssignClass (d9a1990a-4d94-4c1f-8746-53bd285cc759)
+ Call ID: d9a1990a-4d94-4c1f-8746-53bd285cc759
+  Args:
+    type: :Person
+    source: Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne
+  AddTriple (0c317384-d410-466e-98b4-e98ebd05f55e)
+ Call ID: 0c317384-d410-466e-98b4-e98ebd05f55e
+  Args:
+    source: Fergus Bowes-Lyon
     relation: :hasMother
-    source: :LennartBernadotte
-    target: :MariaPavlovnaOfRussia
-  AddLiteral (75f35642-243c-4be2-b07b-0796156883e5)
- Call ID: 75f35642-243c-4be2-b07b-0796156883e5
+    target: Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne
+  AssignClass (4dad0291-1f3a-418d-a916-60a6ca20eda7)
+ Call ID: 4dad0291-1f3a-418d-a916-60a6ca20eda7
   Args:
-    literal_type: xsd:integer
-    source: :LennartBernadotte
-    literal_value: 1932
-    relation: :hasMarriageYear
-  AddLiteral (4c08e795-bd86-4427-9b4f-56fe3aa2b6aa)
- Call ID: 4c08e795-bd86-4427-9b4f-56fe3aa2b6aa
+    type: :Man
+    source: Captain William Frederick Martin
+  AssignClass (0b9069c3-df73-4dc1-a29b-9de69fd32443)
+ Call ID: 0b9069c3-df73-4dc1-a29b-9de69fd32443
   Args:
-    source: :LennartBernadotte
-    literal_value: 1972
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  Finish (45bee78a-63e0-4484-bd52-2f05cdc4e71c)
- Call ID: 45bee78a-63e0-4484-bd52-2f05cdc4e71c
+    source: Captain William Frederick Martin
+    type: :Person
+  AddTriple (7eb924ee-a739-4331-8323-d25d940e22b7)
+ Call ID: 7eb924ee-a739-4331-8323-d25d940e22b7
+  Args:
+    source: Lady Christian Norah Dawson-Damer
+    relation: :hasRelation
+    target: Captain William Frederick Martin
+  Finish (872aa4c0-d5b6-4e7f-a404-8423fdf45352)
+ Call ID: 872aa4c0-d5b6-4e7f-a404-8423fdf45352
   Args:

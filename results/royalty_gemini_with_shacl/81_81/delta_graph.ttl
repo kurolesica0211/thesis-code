@@ -2,24 +2,19 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Vincent_of_Denmark a :Man,
-        :Person ;
-    :hasBirthYear 2011 ;
-    :hasFather data:King_Frederik_X ;
-    :hasMother data:Queen_Mary ;
-    :hasSex data:Male ;
-    :isBrotherOf data:Prince_Christian,
-        data:Princess_Isabella,
-        data:Princess_Josephine .
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Crown_Prince_Christian a :Man,
+        :Person .
 
 data:King_Frederik_X a :Ancestor,
         :Man,
-        :Person .
-
-data:Male a :Sex .
-
-data:Prince_Christian a :Man,
-        :Person .
+        :Person ;
+    :isFatherOf data:Prince_Vincent .
 
 data:Princess_Isabella a :Person,
         :Woman .
@@ -29,5 +24,15 @@ data:Princess_Josephine a :Person,
 
 data:Queen_Mary a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :isMotherOf data:Prince_Vincent .
+
+data:Prince_Vincent a :Man,
+        :Person ;
+    :hasBirthYear 2011 ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary ;
+    :isSiblingOf data:Crown_Prince_Christian,
+        data:Princess_Isabella,
+        data:Princess_Josephine .
 

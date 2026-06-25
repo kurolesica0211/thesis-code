@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Helene of Waldeck and Pyrmont"^^xsd:string ;
+    data:posIndicesFull "178:216"^^xsd:string,
+        "359:397"^^xsd:string ;
+    data:posIndicesPart "1001:1009"^^xsd:string,
+        "586:593"^^xsd:string,
+        "598:605"^^xsd:string,
+        "610:618"^^xsd:string ;
+    data:wdtLink wdt:Q2280905 ;
+    :alsoKnownAs "Princess Helena of Waldeck and Pyrmont"^^xsd:string ;
+    :hasChild data:Duke_Friedrich_August_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duke_Friedrich_August_of_Oldenburg,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSon data:Duke_Friedrich_August_of_Oldenburg ;
+    :isAncestorOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isAuntOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isBloodrelationOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isMotherOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isParentOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isSiblingOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Princess_Helene_of_Waldeck_and_Pyrmont .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "480:533"^^xsd:string ;
+    data:posIndicesPart "1149:1156"^^xsd:string ;
+    data:wdtLink wdt:Q2525746 ;
+    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duke_Friedrich_August_of_Oldenburg,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAncestorOf data:Duke_Friedrich_August_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAuntOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "429:450"^^xsd:string,
+        "429:475"^^xsd:string ;
+    data:posIndicesPart "1143:1148"^^xsd:string,
+        "684:689"^^xsd:string,
+        "690:694"^^xsd:string,
+        "698:707"^^xsd:string,
+        "823:828"^^xsd:string,
+        "829:833"^^xsd:string,
+        "884:888"^^xsd:string,
+        "892:901"^^xsd:string,
+        "936:945"^^xsd:string ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II"^^xsd:string,
+        "Friedrich August von Oldenburg"^^xsd:string ;
+    :hasBrother data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duke_Friedrich_August_of_Oldenburg,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAncestorOf data:Duke_Friedrich_August_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isFatherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isUncleOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg .
+
+data:Duke_Friedrich_August_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Duke Friedrich August of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string ;
+    data:posIndicesPart "1184:1193"^^xsd:string,
+        "1194:1200"^^xsd:string,
+        "1282:1291"^^xsd:string,
+        "1292:1298"^^xsd:string,
+        "1349:1358"^^xsd:string,
+        "1359:1365"^^xsd:string,
+        "251:257"^^xsd:string,
+        "565:574"^^xsd:string,
+        "690:694"^^xsd:string,
+        "698:707"^^xsd:string,
+        "829:833"^^xsd:string,
+        "848:857"^^xsd:string,
+        "884:888"^^xsd:string,
+        "892:901"^^xsd:string,
+        "936:945"^^xsd:string,
+        "967:976"^^xsd:string,
+        "977:983"^^xsd:string ;
+    data:wdtLink wdt:Q3201780 ;
+    :hasAncestor data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasBrother data:Duke_Friedrich_August_of_Oldenburg ;
+    :hasFather data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasMother data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duke_Friedrich_August_of_Oldenburg,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isBrotherOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isChildOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isSonOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont .
+
+data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Nikolaus, Hereditary Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "129:173"^^xsd:string,
+        "295:339"^^xsd:string ;
+    data:posIndicesPart "1143:1148"^^xsd:string,
+        "684:689"^^xsd:string,
+        "690:694"^^xsd:string,
+        "698:707"^^xsd:string,
+        "755:763"^^xsd:string,
+        "823:828"^^xsd:string,
+        "829:833"^^xsd:string,
+        "884:888"^^xsd:string,
+        "892:901"^^xsd:string,
+        "936:945"^^xsd:string ;
+    data:wdtLink wdt:Q64976 ;
+    :alsoKnownAs "Nicolau d'Oldenburg"^^xsd:string ;
+    :hasAncestor data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasBrother data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasChild data:Duke_Friedrich_August_of_Oldenburg ;
+    :hasFather data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasMother data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duke_Friedrich_August_of_Oldenburg,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Friedrich_August_of_Oldenburg ;
+    :isAncestorOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isBloodrelationOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isChildOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isFatherOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isParentOf data:Duke_Friedrich_August_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSonOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isUncleOf data:Duke_Friedrich_August_of_Oldenburg .
+

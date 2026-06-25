@@ -2,89 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-        :Man,
+data:PrinceAndrewOfGreeceAndDenmark a :Man,
         :Person .
 
-data:Alice_of_Battenberg a :Ancestor,
-        :Person,
+data:PrinceLouisOfBattenberg a :Man,
+        :Person ;
+    :isFatherOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Person,
+        :Woman ;
+    :isMotherOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg .
+
+data:QueenElizabethII a :Person,
+        :Woman ;
+    :isMotherOf data:KingCharlesIII .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:KingCharlesIII a :Man,
+        :Person ;
+    :hasFather data:PrincePhilip .
+
+data:Margarita a :Person,
+        :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:George a :Man,
+        :Person .
+
+data:Louis a :Man,
+        :Person .
+
+data:Louise a :Person,
+        :Woman .
+
+data:PrincePhilip a :Man,
+        :Person .
+
+data:PrincessAliceOfBattenberg a :Person,
         :Woman ;
     :hasBirthYear 1885 ;
-    :hasBrother data:George_of_Battenberg,
-        data:Louis_Mountbatten ;
-    :hasDaughter data:Cecilie_of_Greece_and_Denmark,
-        data:Margarita_of_Greece_and_Denmark,
-        data:Sophie_of_Greece_and_Denmark,
-        data:Theodora_of_Greece_and_Denmark ;
     :hasDeathYear 1969 ;
-    :hasFather data:Louis_of_Battenberg ;
     :hasMarriageYear 1903 ;
-    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex "Female"^^xsd:string ;
-    :hasSister data:Louise_of_Battenberg ;
-    :hasSon data:Philip_Duke_of_Edinburgh .
-
-data:Alice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Andrew_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia .
-
-data:Cecilie_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
-
-data:George_of_Battenberg a :Man,
-        :Person .
-
-data:Julia_Hauke a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
-        :Man,
-        :Person .
-
-data:Louis_Mountbatten a :Man,
-        :Person .
-
-data:Louis_of_Battenberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julia_Hauke .
-
-data:Louise_of_Battenberg a :Person,
-        :Woman .
-
-data:Margarita_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Olga_Constantinovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Philip_Duke_of_Edinburgh a :Man,
-        :Person ;
-    :hasFather data:Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Alice_of_Battenberg .
-
-data:Sophie_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Theodora_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Victoria_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
-    :hasMother data:Alice_of_the_United_Kingdom .
+    :isMotherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
 

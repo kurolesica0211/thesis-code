@@ -7,10 +7,42 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "836:865" ;
+    data:posIndicesPart "1132:1143",
+        "1157:1168" ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Alexandrine, Queen of Denmark",
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Duchess Alexandrine of Mecklenburg-Schwerin",
+        "Queen Alexandrine of Denmark" ;
+    :hasParent data:Frederick_Francis_III ;
+    :hasSex data:female .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "0:41" ;
+    data:posIndicesPart "1132:1143",
+        "1157:1168",
+        "1329:1338",
+        "1418:1427",
+        "1498:1505",
+        "1645:1654",
+        "1661:1668",
+        "2073:2082",
+        "323:332",
+        "445:456",
+        "902:911",
+        "951:958" ;
+    data:wdtLink wdt:Q2525746 ;
+    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin" ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Person ;
     rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
     data:posIndicesFull "223:244" ;
     data:posIndicesPart "1107:1116",
@@ -44,140 +76,7 @@ data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
         "Friedrich August von Oldenburg" ;
     :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Alexandrine_of_Prussia a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandrine of Prussia" ;
-    data:posIndicesFull "1148:1179" ;
-    data:posIndicesPart "1256:1264" ;
-    data:wdtLink wdt:Q75112 ;
-    :alsoKnownAs "Alexandrine Irene of Prussia",
-        "Princess Alexandrine Irene of Prussia" ;
-    :hasSex data:female .
-
-data:Princess_Christina_of_the_Netherlands a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Christina of the Netherlands" ;
-    data:posIndicesFull "162:176",
-        "476:490" ;
-    data:posIndicesPart "1256:1264",
-        "576:587",
-        "892:900" ;
-    data:wdtLink wdt:Q435324 ;
-    :alsoKnownAs "Christina of the Netherlands",
-        "Christina van Lippe-Biesterfeld",
-        "Christina van Oranje",
-        "Maria Christina of the Netherlands",
-        "Maria Christina van Oranje-Nassau",
-        "Princess Maria Christina of the Netherlands",
-        "Princess Marijke" ;
-    :hasMother data:Juliana_of_the_Netherlands ;
-    :hasParent data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Juliana_of_the_Netherlands ;
-    :isDaughterOf data:Juliana_of_the_Netherlands .
-
-data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt" ;
-    data:posIndicesFull "162:202",
-        "476:516" ;
-    data:posIndicesPart "1229:1240",
-        "1241:1251",
-        "1256:1264",
-        "892:900",
-        "938:943" ;
-    data:wdtLink wdt:Q154388 ;
-    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :isMotherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
-
-data:Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelmina of the Netherlands" ;
-    data:posIndicesFull "600:616",
-        "600:635",
-        "606:616",
-        "606:635" ;
-    data:wdtLink wdt:Q150747 ;
-    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
-        "Princess Wilhelmina of the Netherlands",
-        "Queen Wilhelmina",
-        "Queen Wilhelmina of the Netherlands",
-        "Wilhelmina",
-        "Wilhelmina I",
-        "Wilhelmina Koningin der Nederlanden" ;
-    :hasChild data:Juliana_of_the_Netherlands ;
-    :hasDaughter data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Juliana_of_the_Netherlands ;
-    :isParentOf data:Juliana_of_the_Netherlands .
-
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "836:865" ;
-    data:posIndicesPart "1132:1143" ;
-    data:wdtLink wdt:Q57264 ;
-    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Alexandrine, Queen of Denmark",
-        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Duchess Alexandrine of Mecklenburg-Schwerin",
-        "Queen Alexandrine of Denmark" ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasParent data:Frederick_Francis_III ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Alexandrine_of_Prussia ;
-    :isChildOf data:Frederick_Francis_III ;
-    :isDaughterOf data:Frederick_Francis_III .
-
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis II" ;
-    data:posIndicesFull "409:429",
-        "96:116" ;
-    data:posIndicesPart "1107:1116",
-        "1347:1356",
-        "1537:1546",
-        "1717:1726",
-        "2046:2055",
-        "798:807",
-        "808:815" ;
-    data:wdtLink wdt:Q57976 ;
-    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II." ;
-    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_III ;
-    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :hasSon data:Frederick_Francis_III ;
-    :isFatherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_III ;
-    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_III .
-
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Juliana_of_the_Netherlands a :Person ;
     rdfs:label "Juliana of the Netherlands" ;
     data:posIndicesFull "659:672",
         "659:691",
@@ -194,54 +93,15 @@ data:Juliana_of_the_Netherlands a :Ancestor,
         "Queen Juliana",
         "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
         "Queen Juliana of the Netherlands" ;
-    :hasChild data:Princess_Christina_of_the_Netherlands ;
-    :hasDaughter data:Princess_Christina_of_the_Netherlands ;
-    :hasMother data:Wilhelmina_of_the_Netherlands ;
-    :hasParent data:Wilhelmina_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Wilhelmina_of_the_Netherlands ;
-    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
-    :isMotherOf data:Princess_Christina_of_the_Netherlands ;
-    :isParentOf data:Princess_Christina_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "0:41" ;
-    data:posIndicesPart "1132:1143",
-        "1329:1338",
-        "1418:1427",
-        "1498:1505",
-        "1645:1654",
-        "1661:1668",
-        "2073:2082",
-        "323:332",
-        "445:456",
-        "902:911",
-        "951:958" ;
-    data:wdtLink wdt:Q2525746 ;
-    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin" ;
-    :hasBrother data:Frederick_Francis_III ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :hasParent data:Frederick_Francis_II,
-        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :hasSex data:female ;
-    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Juliana_of_the_Netherlands ;
-    :isChildOf data:Frederick_Francis_II,
-        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :isDaughterOf data:Frederick_Francis_II,
-        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :isSiblingOf data:Frederick_Francis_III ;
-    :isSisterOf data:Frederick_Francis_III .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_III a :Person ;
     rdfs:label "Frederick Francis III" ;
     data:posIndicesFull "731:752",
         "731:788" ;
@@ -256,17 +116,40 @@ data:Frederick_Francis_III a :Ancestor,
     :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
         "Friedrich Franz III",
         "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasFather data:Frederick_Francis_II ;
     :hasParent data:Frederick_Francis_II ;
-    :hasSex data:male ;
-    :hasSister data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :isBrotherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :isChildOf data:Frederick_Francis_II ;
-    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isSiblingOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Frederick_Francis_II ;
-    :isUncleOf data:Juliana_of_the_Netherlands .
+    :hasSex data:male .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Person ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt" ;
+    data:posIndicesFull "162:202",
+        "476:516" ;
+    data:posIndicesPart "1148:1156",
+        "1229:1240",
+        "1241:1251",
+        "1256:1264",
+        "892:900",
+        "938:943" ;
+    data:wdtLink wdt:Q154388 ;
+    :hasSex data:female .
+
+data:Frederick_Francis_II a :Person ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "409:429",
+        "96:116" ;
+    data:posIndicesPart "1107:1116",
+        "1347:1356",
+        "1537:1546",
+        "1717:1726",
+        "2046:2055",
+        "798:807",
+        "808:815" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

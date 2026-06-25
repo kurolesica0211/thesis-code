@@ -7,60 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Iñaki_Urdangarin a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Iñaki Urdangarin" ;
-    data:posIndicesFull "10157:10173" ;
-    data:wdtLink wdt:Q356560 ;
-    :alsoKnownAs "Don Iñaki Urdangarin Liebaert" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alfonso-_Prince_of_Asturias a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso, Prince of Asturias" ;
-    data:posIndicesFull "20893:20928",
-        "20901:20928" ;
-    data:posIndicesPart "21252:21259",
-        "23323:23329",
-        "23523:23529",
-        "23872:23878",
-        "24274:24280",
-        "25122:25128",
-        "25132:25140",
-        "26130:26138",
-        "26341:26347",
-        "26351:26359",
-        "27367:27373",
-        "27377:27385",
-        "27502:27508" ;
-    data:wdtLink wdt:Q518846 ;
-    :alsoKnownAs "Alfons de Borbo i de Battenberg",
-        "Alfons de Borbó i de Battenberg",
-        "Alfonso Pius de Borbón y Battenberg, Infante de España",
-        "Alfonso de Borbon y Battenberg",
-        "Alfonso de Borbón y Battenberg",
-        "Alfonso, Count of Covadonga",
-        "Alphonse de Bourbon",
-        "Infante Alfonso, Count of Covadonga" ;
-    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isUncleOf data:Juan_Carlos_I_of_Spain .
-
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
     data:posIndicesFull "4172:4188",
         "4177:4191",
@@ -77,177 +24,10 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasFather data:Paul_of_Greece ;
     :hasParent data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isChildOf data:Paul_of_Greece ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Paul_of_Greece ;
-    :isUncleOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain .
+    :hasSex data:male .
 
-data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Juan, Count of Barcelona" ;
-    data:posIndicesFull "1635:1667",
-        "19667:19699",
-        "20938:20970" ;
-    data:posIndicesPart "11177:11181",
-        "16644:16653",
-        "16850:16859",
-        "16896:16905",
-        "17123:17132",
-        "17256:17265",
-        "17409:17418",
-        "17681:17690",
-        "1868:1873",
-        "1877:1886",
-        "1991:1998",
-        "27237:27241",
-        "3848:3852",
-        "4058:4067",
-        "7633:7637" ;
-    data:wdtLink wdt:Q313857 ;
-    :alsoKnownAs "Infante Juan of Barcelona" ;
-    :hasBrother data:Alfonso-_Prince_of_Asturias ;
-    :hasChild data:Juan_Carlos_I_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Juan_Carlos_I_of_Spain ;
-    :isBrotherOf data:Alfonso-_Prince_of_Asturias ;
-    :isFatherOf data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Juan_Carlos_I_of_Spain ;
-    :isSiblingOf data:Alfonso-_Prince_of_Asturias .
-
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul of Greece" ;
-    data:posIndicesFull "1672:1691",
-        "1677:1691" ;
-    data:posIndicesPart "3550:3556" ;
-    data:wdtLink wdt:Q155394 ;
-    :alsoKnownAs "King Paul I of Greece",
-        "King Paul of Greece",
-        "King Pavlos I of Greece",
-        "Paul I of Greece",
-        "Pavlos I of Greece" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isFatherOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain .
-
-data:Queen_Letizia_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Letizia of Spain" ;
-    data:posIndicesFull "4664:4677",
-        "4664:4688",
-        "909:922",
-        "909:933" ;
-    data:posIndicesPart "10358:10363",
-        "12538:12543",
-        "12790:12795",
-        "1338:1343",
-        "13420:13425",
-        "13871:13876",
-        "14202:14207",
-        "14208:14215",
-        "14451:14456",
-        "14625:14630",
-        "14631:14638",
-        "14776:14781",
-        "15515:15520",
-        "1600:1605",
-        "16108:16113",
-        "16445:16450",
-        "16451:16458",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "1732:1737",
-        "17559:17564",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "1924:1929",
-        "19270:19275",
-        "19873:19878",
-        "20147:20152",
-        "20592:20597",
-        "20760:20767",
-        "21709:21714",
-        "2170:2175",
-        "21852:21857",
-        "22081:22086",
-        "22544:22549",
-        "22593:22598",
-        "22917:22922",
-        "23059:23064",
-        "23068:23073",
-        "23204:23209",
-        "23403:23408",
-        "23500:23505",
-        "23852:23857",
-        "23911:23916",
-        "23920:23925",
-        "24048:24053",
-        "24392:24397",
-        "24444:24451",
-        "24566:24573",
-        "24897:24902",
-        "25395:25400",
-        "26003:26008",
-        "26595:26600",
-        "4361:4366",
-        "4880:4885",
-        "5039:5046",
-        "5173:5178",
-        "5289:5294",
-        "6026:6031",
-        "6143:6148",
-        "6253:6258",
-        "6455:6460",
-        "7587:7592",
-        "7732:7737",
-        "9156:9161",
-        "9303:9310",
-        "9663:9668",
-        "9684:9691",
-        "9970:9975" ;
-    data:wdtLink wdt:Q201589 ;
-    :alsoKnownAs "Letizia Ortiz",
-        "Letizia Ortiz Rocasolano",
-        "Letizia of Spain",
-        "Letizia, Princess of Asturias.",
-        "Letzia, Queen of Spain" ;
-    :hasChild data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasDaughter data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasSex data:female ;
-    :isMotherOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isParentOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias .
-
-data:Infanta_Cristina_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Cristina_of_Spain a :Person ;
     rdfs:label "Infanta Cristina of Spain" ;
     data:posIndicesFull "10022:10038" ;
     data:posIndicesPart "12538:12543",
@@ -260,58 +40,45 @@ data:Infanta_Cristina_of_Spain a :Ancestor,
         "15515:15520",
         "15809:15817",
         "16108:16113",
-        "16398:16405",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "19270:19275",
-        "19873:19878",
-        "20147:20152",
-        "20462:20469",
-        "20592:20597",
-        "20847:20854",
-        "21709:21714",
-        "21852:21857",
-        "22081:22086",
-        "22544:22549",
-        "22593:22598",
-        "22917:22922",
-        "23068:23073",
-        "23204:23209",
-        "23920:23925",
-        "24048:24053",
-        "24897:24902",
-        "25395:25400",
-        "26003:26008",
-        "26595:26600" ;
+        "16512:16519",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "19384:19389",
+        "19987:19992",
+        "20261:20266",
+        "20576:20583",
+        "20706:20711",
+        "20961:20968",
+        "21823:21828",
+        "21966:21971",
+        "22195:22200",
+        "22658:22663",
+        "22707:22712",
+        "23031:23036",
+        "23182:23187",
+        "23318:23323",
+        "24034:24039",
+        "24162:24167",
+        "24939:24944",
+        "25437:25442",
+        "26045:26050",
+        "26637:26642" ;
     data:wdtLink wdt:Q230580 ;
     :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
         "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
         "Infanta Cristina" ;
-    :hasBrother data:Felipe_VI_of_Spain ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :isAuntOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Felipe_VI_of_Spain ;
-    :isSisterOf data:Felipe_VI_of_Spain .
+    :hasSex data:female .
 
-data:Infanta_Sofía_of_Spain a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Sofía_of_Spain a :Person ;
     rdfs:label "Infanta Sofía of Spain" ;
     data:posIndicesFull "1375:1390",
         "628:643" ;
@@ -326,40 +93,39 @@ data:Infanta_Sofía_of_Spain a :Person,
         "15515:15520",
         "1600:1605",
         "16108:16113",
-        "16398:16405",
-        "16406:16411",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "1732:1737",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "19270:19275",
-        "19873:19878",
-        "20147:20152",
-        "20462:20469",
-        "20470:20475",
-        "20592:20597",
-        "20847:20854",
-        "21709:21714",
+        "16512:16519",
+        "16520:16525",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "19384:19389",
+        "19987:19992",
+        "20261:20266",
+        "20576:20583",
+        "20584:20589",
+        "20706:20711",
+        "20961:20968",
         "2170:2175",
-        "21852:21857",
-        "22081:22086",
-        "22544:22549",
-        "22593:22598",
-        "22917:22922",
-        "23068:23073",
-        "23204:23209",
-        "23920:23925",
-        "24048:24053",
-        "24897:24902",
-        "25395:25400",
-        "26003:26008",
-        "26595:26600",
+        "21823:21828",
+        "21966:21971",
+        "22195:22200",
+        "22658:22663",
+        "22707:22712",
+        "23031:23036",
+        "23182:23187",
+        "23318:23323",
+        "24034:24039",
+        "24162:24167",
+        "24939:24944",
+        "25437:25442",
+        "26045:26050",
+        "26637:26642",
         "4361:4366",
         "4880:4885",
         "5123:5130",
@@ -377,35 +143,24 @@ data:Infanta_Sofía_of_Spain a :Person,
     data:wdtLink wdt:Q847010 ;
     :alsoKnownAs "Princess Sofia",
         "Sofía de Borbón y Ortiz, infanta de España" ;
-    :hasFather data:Felipe_VI_of_Spain ;
-    :hasMother data:Queen_Letizia_of_Spain ;
     :hasParent data:Felipe_VI_of_Spain,
         data:Queen_Letizia_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Leonor-_Princess_of_Asturias ;
-    :isChildOf data:Felipe_VI_of_Spain,
-        data:Queen_Letizia_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain,
-        data:Queen_Letizia_of_Spain ;
-    :isSiblingOf data:Leonor-_Princess_of_Asturias ;
-    :isSisterOf data:Leonor-_Princess_of_Asturias .
+    :hasSex data:female .
 
-data:Leonor-_Princess_of_Asturias a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Leonor-_Princess_of_Asturias a :Person ;
     rdfs:label "Leonor, Princess of Asturias" ;
-    data:posIndicesFull "16365:16393",
-        "20375:20403",
+    data:posIndicesFull "16479:16507",
+        "20489:20517",
         "5067:5095" ;
     data:posIndicesPart "15131:15139",
         "15143:15151",
-        "18203:18211",
-        "19109:19117",
-        "25132:25140",
-        "26118:26126",
-        "26130:26138",
-        "26351:26359",
-        "27377:27385",
+        "18317:18325",
+        "19223:19231",
+        "25174:25182",
+        "26160:26168",
+        "26172:26180",
+        "26393:26401",
+        "27419:27427",
         "7069:7077",
         "7180:7188",
         "7192:7200",
@@ -414,212 +169,59 @@ data:Leonor-_Princess_of_Asturias a :Person,
     :alsoKnownAs "Infanta Leonor of Spain",
         "Leonor de Todos los Santos de Borbón y Ortiz",
         "Princess Leonor" ;
-    :hasFather data:Felipe_VI_of_Spain ;
-    :hasMother data:Queen_Letizia_of_Spain ;
     :hasParent data:Felipe_VI_of_Spain,
         data:Queen_Letizia_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Sofía_of_Spain ;
-    :isChildOf data:Felipe_VI_of_Spain,
-        data:Queen_Letizia_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain,
-        data:Queen_Letizia_of_Spain ;
-    :isSiblingOf data:Infanta_Sofía_of_Spain ;
-    :isSisterOf data:Infanta_Sofía_of_Spain .
+    :hasSex data:female .
 
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Juan Carlos I of Spain" ;
-    data:posIndicesFull "11831:11844",
-        "13567:13580",
-        "1356:1369",
-        "5745:5758",
-        "9781:9794" ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "16292:16304",
+        "1716:1728",
+        "1716:1737",
+        "7520:7532" ;
+    data:posIndicesPart "21015:21022",
+        "21366:21373" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:Infante_Juan-_Count_of_Barcelona a :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona" ;
+    data:posIndicesFull "1635:1667",
+        "19781:19813",
+        "21052:21084" ;
     data:posIndicesPart "11177:11181",
-        "11182:11188",
-        "12538:12543",
-        "12790:12795",
-        "13420:13425",
-        "13871:13876",
-        "14451:14456",
-        "14687:14693",
-        "1475:1479",
-        "14776:14781",
-        "15515:15520",
-        "15732:15738",
-        "1600:1605",
-        "16108:16113",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "1732:1737",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "19270:19275",
-        "19873:19878",
-        "20147:20152",
-        "20592:20597",
-        "20988:20992",
-        "20993:20999",
-        "21709:21714",
-        "2170:2175",
-        "21852:21857",
-        "22081:22086",
-        "22544:22549",
-        "22593:22598",
-        "22917:22922",
-        "23068:23073",
-        "23204:23209",
-        "23920:23925",
-        "24048:24053",
-        "24897:24902",
-        "25395:25400",
-        "26003:26008",
-        "26595:26600",
-        "27237:27241",
-        "27242:27248",
+        "16758:16767",
+        "16964:16973",
+        "17010:17019",
+        "17237:17246",
+        "17370:17379",
+        "17523:17532",
+        "17795:17804",
+        "1868:1873",
+        "1877:1886",
+        "1991:1998",
+        "27279:27283",
         "3848:3852",
-        "4361:4366",
-        "4880:4885",
-        "5173:5178",
-        "5289:5294",
-        "6026:6031",
-        "6143:6148",
-        "6253:6258",
-        "6455:6460",
-        "7587:7592",
-        "7633:7637",
-        "7638:7644",
-        "7732:7737",
-        "9970:9975" ;
-    data:wdtLink wdt:Q19943 ;
-    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
-        "Juan Carlos I" ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :hasDaughter data:Infanta_Cristina_of_Spain ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
-    :hasParent data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isFatherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isSonOf data:Infante_Juan-_Count_of_Barcelona .
+        "4058:4067",
+        "7633:7637" ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona" ;
+    :hasParent data:Alfonso_XIII ;
+    :hasSex data:male .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "1375:1412",
-        "1420:1431",
-        "1420:1440",
-        "17:29",
-        "628:665",
-        "9799:9810" ;
-    data:posIndicesPart "10358:10363",
-        "12538:12543",
-        "12790:12795",
-        "13420:13425",
-        "13871:13876",
-        "14202:14207",
-        "14451:14456",
-        "14625:14630",
-        "14776:14781",
-        "15164:15169",
-        "15515:15520",
-        "1600:1605",
-        "16108:16113",
-        "16406:16411",
-        "16445:16450",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "1732:1737",
-        "17559:17564",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "1924:1929",
-        "19270:19275",
-        "19873:19878",
-        "20147:20152",
-        "20470:20475",
-        "20592:20597",
-        "21709:21714",
-        "2170:2175",
-        "21852:21857",
-        "22081:22086",
-        "22544:22549",
-        "22593:22598",
-        "22917:22922",
-        "23059:23064",
-        "23068:23073",
-        "23204:23209",
-        "23403:23408",
-        "23500:23505",
-        "23852:23857",
-        "23911:23916",
-        "23920:23925",
-        "24048:24053",
-        "24392:24397",
-        "24897:24902",
-        "25395:25400",
-        "26003:26008",
-        "26595:26600",
-        "4361:4366",
-        "4880:4885",
-        "5131:5136",
-        "5173:5178",
-        "5289:5294",
-        "6026:6031",
-        "6143:6148",
-        "6253:6258",
-        "6455:6460",
-        "7587:7592",
-        "7732:7737",
-        "9156:9161",
-        "9663:9668",
-        "996:1001",
-        "9970:9975" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :hasDaughter data:Infanta_Cristina_of_Spain ;
-    :hasFather data:Paul_of_Greece ;
-    :hasParent data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isChildOf data:Paul_of_Greece ;
-    :isDaughterOf data:Paul_of_Greece ;
-    :isMotherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
-
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Felipe_VI_of_Spain a :Person ;
     rdfs:label "Felipe VI of Spain" ;
     data:posIndicesFull "10826:10835",
         "11076:11085",
@@ -630,14 +232,14 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "13491:13500",
         "13896:13905",
         "14392:14401",
-        "17357:17366",
-        "17912:17921",
-        "18295:18304",
-        "18820:18829",
-        "19236:19245",
-        "21800:21809",
-        "22214:22223",
-        "27879:27888",
+        "17471:17480",
+        "18026:18035",
+        "18409:18418",
+        "18934:18943",
+        "19350:19359",
+        "21914:21923",
+        "22328:22337",
+        "27921:27930",
         "350:414",
         "8715:8724",
         "8896:8905",
@@ -666,65 +268,64 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "1600:1605",
         "1607:1613",
         "16108:16113",
-        "16666:16671",
-        "17080:17085",
-        "17186:17191",
-        "1732:1737",
-        "17762:17767",
-        "18423:18428",
-        "18444:18449",
-        "18572:18577",
-        "18617:18622",
-        "18760:18765",
-        "18945:18951",
-        "19119:19125",
-        "19337:19343",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "19059:19065",
+        "19233:19239",
+        "19451:19457",
         "1973:1979",
-        "19873:19878",
-        "20147:20152",
-        "20592:20597",
+        "19987:19992",
+        "20261:20266",
         "2063:2069",
-        "20749:20755",
+        "20706:20711",
+        "20863:20869",
         "2101:2107",
-        "21023:21029",
-        "21095:21101",
-        "21307:21313",
-        "21460:21466",
-        "21709:21714",
+        "21137:21143",
+        "21209:21215",
+        "21421:21427",
+        "21574:21580",
         "2170:2175",
+        "21823:21828",
         "2185:2191",
-        "22081:22086",
-        "22342:22348",
-        "22544:22549",
-        "22551:22557",
-        "22593:22598",
-        "22917:22922",
-        "23068:23073",
+        "22195:22200",
+        "22456:22462",
+        "22658:22663",
+        "22665:22671",
+        "22707:22712",
+        "23031:23036",
         "2314:2320",
-        "23204:23209",
-        "23618:23624",
+        "23182:23187",
+        "23318:23323",
+        "23732:23738",
         "2387:2393",
-        "23920:23925",
-        "24048:24053",
-        "24433:24439",
-        "24555:24561",
+        "24034:24039",
+        "24162:24167",
+        "24475:24481",
+        "24597:24603",
         "2479:2485",
-        "24897:24902",
-        "24910:24916",
-        "25395:25400",
-        "25452:25458",
-        "25594:25600",
-        "25790:25796",
-        "26003:26008",
-        "26156:26162",
+        "24939:24944",
+        "24952:24958",
+        "25437:25442",
+        "25494:25500",
+        "25636:25642",
+        "25832:25838",
+        "26045:26050",
+        "26198:26204",
         "2636:2642",
-        "26595:26600",
-        "26785:26791",
-        "27074:27080",
-        "27314:27320",
-        "27458:27464",
-        "27672:27678",
-        "27938:27944",
+        "26637:26642",
+        "26827:26833",
+        "27116:27122",
+        "27356:27362",
+        "27500:27506",
+        "27714:27720",
+        "27980:27986",
         "2895:2901",
         "3006:3012",
         "3095:3101",
@@ -780,24 +381,266 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "Felipe VI",
         "Philip John Paul Alphonse of All Saints of Bourbon",
         "Philip VI of Spain" ;
-    :hasChild data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasDaughter data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Cristina_of_Spain ;
-    :isBrotherOf data:Infanta_Cristina_of_Spain ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isParentOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isSiblingOf data:Infanta_Cristina_of_Spain ;
-    :isSonOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain .
+    :hasSex data:male .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "11831:11844",
+        "13567:13580",
+        "1356:1369",
+        "5745:5758",
+        "9781:9794" ;
+    data:posIndicesPart "11177:11181",
+        "11182:11188",
+        "12538:12543",
+        "12790:12795",
+        "13420:13425",
+        "13871:13876",
+        "14451:14456",
+        "14687:14693",
+        "1475:1479",
+        "14776:14781",
+        "15515:15520",
+        "15732:15738",
+        "1600:1605",
+        "16108:16113",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "19384:19389",
+        "19987:19992",
+        "20261:20266",
+        "20706:20711",
+        "21102:21106",
+        "21107:21113",
+        "2170:2175",
+        "21823:21828",
+        "21966:21971",
+        "22195:22200",
+        "22658:22663",
+        "22707:22712",
+        "23031:23036",
+        "23182:23187",
+        "23318:23323",
+        "24034:24039",
+        "24162:24167",
+        "24939:24944",
+        "25437:25442",
+        "26045:26050",
+        "26637:26642",
+        "27279:27283",
+        "27284:27290",
+        "3848:3852",
+        "4361:4366",
+        "4880:4885",
+        "5173:5178",
+        "5289:5294",
+        "6026:6031",
+        "6143:6148",
+        "6253:6258",
+        "6455:6460",
+        "7587:7592",
+        "7633:7637",
+        "7638:7644",
+        "7732:7737",
+        "9970:9975" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasParent data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male .
+
+data:Paul_of_Greece a :Person ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "1672:1691",
+        "1677:1691" ;
+    data:posIndicesPart "3550:3556" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasSex data:male .
+
+data:Queen_Letizia_of_Spain a :Person ;
+    rdfs:label "Queen Letizia of Spain" ;
+    data:posIndicesFull "4664:4677",
+        "4664:4688",
+        "909:922",
+        "909:933" ;
+    data:posIndicesPart "10358:10363",
+        "12538:12543",
+        "12790:12795",
+        "1338:1343",
+        "13420:13425",
+        "13871:13876",
+        "14202:14207",
+        "14208:14215",
+        "14451:14456",
+        "14625:14630",
+        "14631:14638",
+        "14776:14781",
+        "15515:15520",
+        "1600:1605",
+        "16108:16113",
+        "16559:16564",
+        "16565:16572",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17673:17678",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "1924:1929",
+        "19384:19389",
+        "19987:19992",
+        "20261:20266",
+        "20706:20711",
+        "20874:20881",
+        "2170:2175",
+        "21823:21828",
+        "21966:21971",
+        "22195:22200",
+        "22658:22663",
+        "22707:22712",
+        "23031:23036",
+        "23173:23178",
+        "23182:23187",
+        "23318:23323",
+        "23517:23522",
+        "23614:23619",
+        "23966:23971",
+        "24025:24030",
+        "24034:24039",
+        "24162:24167",
+        "24434:24439",
+        "24486:24493",
+        "24608:24615",
+        "24939:24944",
+        "25437:25442",
+        "26045:26050",
+        "26637:26642",
+        "4361:4366",
+        "4880:4885",
+        "5039:5046",
+        "5173:5178",
+        "5289:5294",
+        "6026:6031",
+        "6143:6148",
+        "6253:6258",
+        "6455:6460",
+        "7587:7592",
+        "7732:7737",
+        "9156:9161",
+        "9303:9310",
+        "9663:9668",
+        "9684:9691",
+        "9970:9975" ;
+    data:wdtLink wdt:Q201589 ;
+    :alsoKnownAs "Letizia Ortiz",
+        "Letizia Ortiz Rocasolano",
+        "Letizia of Spain",
+        "Letizia, Princess of Asturias.",
+        "Letzia, Queen of Spain" ;
+    :hasSex data:female .
+
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1375:1412",
+        "1420:1431",
+        "1420:1440",
+        "17:29",
+        "628:665",
+        "9799:9810" ;
+    data:posIndicesPart "10358:10363",
+        "12538:12543",
+        "12790:12795",
+        "13420:13425",
+        "13871:13876",
+        "14202:14207",
+        "14451:14456",
+        "14625:14630",
+        "14776:14781",
+        "15164:15169",
+        "15515:15520",
+        "1600:1605",
+        "16108:16113",
+        "16520:16525",
+        "16559:16564",
+        "16780:16785",
+        "17194:17199",
+        "17300:17305",
+        "17673:17678",
+        "17876:17881",
+        "18537:18542",
+        "18558:18563",
+        "18686:18691",
+        "18731:18736",
+        "18874:18879",
+        "1924:1929",
+        "19384:19389",
+        "19987:19992",
+        "20261:20266",
+        "20584:20589",
+        "20706:20711",
+        "2170:2175",
+        "21823:21828",
+        "21966:21971",
+        "22195:22200",
+        "22658:22663",
+        "22707:22712",
+        "23031:23036",
+        "23173:23178",
+        "23182:23187",
+        "23318:23323",
+        "23517:23522",
+        "23614:23619",
+        "23966:23971",
+        "24025:24030",
+        "24034:24039",
+        "24162:24167",
+        "24434:24439",
+        "24939:24944",
+        "25437:25442",
+        "26045:26050",
+        "26637:26642",
+        "4361:4366",
+        "4880:4885",
+        "5131:5136",
+        "5173:5178",
+        "5289:5294",
+        "6026:6031",
+        "6143:6148",
+        "6253:6258",
+        "6455:6460",
+        "7587:7592",
+        "7732:7737",
+        "9156:9161",
+        "9663:9668",
+        "996:1001",
+        "9970:9975" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasParent data:Paul_of_Greece ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

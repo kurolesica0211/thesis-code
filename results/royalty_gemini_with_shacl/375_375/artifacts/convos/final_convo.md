@@ -85,24 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-John Alexander Elphinstone, 17th Lord Elphinstone and 3rd Baron Elphinstone (22 March 1914 – 15 November 1975) was a British nobleman and serviceman during World War II.
-He was a first cousin of Queen Elizabeth II.
-He was a son of Sidney Elphinstone, 16th Lord Elphinstone, and Lady Mary Bowes-Lyon.
-Andrew Charles Victor Elphinstone (the aide-de-camp to the Viceroy of India from 1941 to 1943) and the Hon.
-Margaret Elphinstone, wife of writer Denys Rhodes.
-His paternal grandparents were William Elphinstone, 15th Lord Elphinstone (the 1st Baron Elphinstone) and the former Lady Constance Euphemia Woronzow Murray (second daughter of Alexander Murray, 6th Earl of Dunmore).
-He was a nephew of Queen Elizabeth
-The Queen Mother and a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
-Lord Elphinstone served as president of the Scottish Association of Boys' Clubs, chairman of council of the Scottish branch of British Red Cross Society, and president of the Royal Zoological Society of Scotland.
-Personal life
+Prince Wilhelm Eitel Friedrich Christian Karl of Prussia (7 July 1883 – 8 December 1942) was the second son of Emperor Wilhelm II of Germany by his first wife, Princess Augusta Viktoria of Schleswig-Holstein-Sonderburg-Augustenburg.
+Early life
 
-In 1970, during Manitoba's centennial, he was invited by the community of Elphinstone and gave a silver map case, which is today located at the Elphinstone post office, all named in his family's honor.
+Prince Eitel Friedrich was born on 7 July 1883 as the second son of the then Prince Wilhelm of Prussia, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+He was born in the Marmorpalais of Potsdam in the Province of Brandenburg, where his parents resided until his father acceded to the throne as Emperor Wilhelm II in 1888.
+He spent his childhood with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother's ancestral Schleswig-Holstein.
+On 27 February 1906, Prince Eitel married Duchess Sophia Charlotte of Oldenburg (2 February 1879 Oldenburg – 29 March 1964 Westerstede) in Berlin.
+In 1907, it was reported that Member of the Reichstag Otto Arendt had proposed the elevation of Alsace-Lorraine to a grand duchy within the empire, with Eitel Friedrich as monarch; however, while the Kaiser did express interest, ultimately nothing came of the plan.
+World War I
+
+Raised at the cadet corps of Plön Castle, Prince Eitel was in the front line from the beginning of World War I and was wounded at Bapaume, where he commanded the Prussian First Foot Guards.
+The two men were hiding in a nearby tree line from what they thought was the advancing Russian army and who turned out to be the grenadiers, guardsmen, and officers of Prince Eitel.
+Regimental Commissions
+
+Source:
+
+
+Orders and decorations
+
+Two ships were named after Prince Eitel, the passenger ship Prince Eitel Friedrich (1901) and the Reich postal steamer Prince Eitel Friedrich (1904).
+Berlin, Prussia, 1907.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +129,9 @@ In 1970, during Manitoba's centennial, he was invited by the community of Elphin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +146,23 @@ In 1970, during Manitoba's centennial, he was invited by the community of Elphin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,217 +454,88 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d45fadac-b9ba-4c67-9854-bfe35bdb917a)
- Call ID: d45fadac-b9ba-4c67-9854-bfe35bdb917a
+  AssignClass (7cb63d1d-2cbc-4b18-87d4-627d43fb3380)
+ Call ID: 7cb63d1d-2cbc-4b18-87d4-627d43fb3380
   Args:
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
     type: :Man
-    source: :John_Alexander_Elphinstone
-  AssignClass (2522d9b9-b263-493f-90be-4fa9d35bab78)
- Call ID: 2522d9b9-b263-493f-90be-4fa9d35bab78
+  AssignClass (bdef390d-ee79-47e4-b5e4-88b183e2ebb1)
+ Call ID: bdef390d-ee79-47e4-b5e4-88b183e2ebb1
   Args:
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
     type: :Person
-    source: :John_Alexander_Elphinstone
-  AddLiteral (a92bfd5c-a4a0-475c-b748-92351edcb57a)
- Call ID: a92bfd5c-a4a0-475c-b748-92351edcb57a
+  AddLiteral (c9fc2255-4009-432d-a3dd-11ee4c2b4a4c)
+ Call ID: c9fc2255-4009-432d-a3dd-11ee4c2b4a4c
   Args:
-    source: :John_Alexander_Elphinstone
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1914
-  AddLiteral (95bda884-098b-4401-86fa-88373aa9edc7)
- Call ID: 95bda884-098b-4401-86fa-88373aa9edc7
-  Args:
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
     literal_type: xsd:integer
-    source: :John_Alexander_Elphinstone
-    literal_value: 1975
+    literal_value: 1883
+  AddLiteral (885a9ffd-ada4-4f37-892f-a5a27fae8a1e)
+ Call ID: 885a9ffd-ada4-4f37-892f-a5a27fae8a1e
+  Args:
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
     relation: :hasDeathYear
-  AssignClass (12644c79-2342-4f31-a054-9729d9257858)
- Call ID: 12644c79-2342-4f31-a054-9729d9257858
+    literal_type: xsd:integer
+    literal_value: 1942
+  AssignClass (965b8112-b779-4589-b438-e77cc216b04a)
+ Call ID: 965b8112-b779-4589-b438-e77cc216b04a
   Args:
+    source: :Emperor_Wilhelm_II_of_Germany
     type: :Man
-    source: :Sidney_Elphinstone
-  AssignClass (62bc06f4-185a-488e-a40b-294196ef9941)
- Call ID: 62bc06f4-185a-488e-a40b-294196ef9941
+  AssignClass (cbe5346f-6b05-459b-bf3a-1e59bc310ffc)
+ Call ID: cbe5346f-6b05-459b-bf3a-1e59bc310ffc
   Args:
-    type: :Ancestor
-    source: :Sidney_Elphinstone
-  AssignClass (cb57cba8-4c2e-450d-b02d-9591c2d55f11)
- Call ID: cb57cba8-4c2e-450d-b02d-9591c2d55f11
-  Args:
-    type: :Woman
-    source: :Mary_Bowes-Lyon
-  AssignClass (ee8f7f67-3543-49b6-9039-5bba292df032)
- Call ID: ee8f7f67-3543-49b6-9039-5bba292df032
-  Args:
-    type: :Ancestor
-    source: :Mary_Bowes-Lyon
-  AddTriple (317e3578-c2c6-4df5-9d1e-2e0e143d3fc9)
- Call ID: 317e3578-c2c6-4df5-9d1e-2e0e143d3fc9
-  Args:
-    source: :John_Alexander_Elphinstone
-    target: :Sidney_Elphinstone
-    relation: :hasFather
-  AddTriple (142a0f87-c552-4f57-a2c1-e5452898bfc4)
- Call ID: 142a0f87-c552-4f57-a2c1-e5452898bfc4
-  Args:
-    relation: :hasMother
-    source: :John_Alexander_Elphinstone
-    target: :Mary_Bowes-Lyon
-  AssignClass (4d560ab6-2c12-4992-9a64-b7efaa9e4c21)
- Call ID: 4d560ab6-2c12-4992-9a64-b7efaa9e4c21
-  Args:
-    type: :Man
-    source: :William_Elphinstone
-  AssignClass (2e4c9825-0c50-4e0f-91a9-770141324082)
- Call ID: 2e4c9825-0c50-4e0f-91a9-770141324082
-  Args:
-    type: :Ancestor
-    source: :William_Elphinstone
-  AssignClass (9da7053d-d35c-4596-bae6-d6725dec40ad)
- Call ID: 9da7053d-d35c-4596-bae6-d6725dec40ad
-  Args:
-    type: :Woman
-    source: :Constance_Euphemia_Woronzow_Murray
-  AssignClass (5b0712ec-1949-4faf-bfc9-9234bce3282a)
- Call ID: 5b0712ec-1949-4faf-bfc9-9234bce3282a
-  Args:
-    type: :Ancestor
-    source: :Constance_Euphemia_Woronzow_Murray
-  AddTriple (054f5035-eaa6-4919-9ffa-e44abdbe64f9)
- Call ID: 054f5035-eaa6-4919-9ffa-e44abdbe64f9
-  Args:
-    relation: :hasFather
-    source: :Sidney_Elphinstone
-    target: :William_Elphinstone
-  AddTriple (da96f8d1-77e5-43cc-9e8b-f6e443515402)
- Call ID: da96f8d1-77e5-43cc-9e8b-f6e443515402
-  Args:
-    source: :Sidney_Elphinstone
-    target: :Constance_Euphemia_Woronzow_Murray
-    relation: :hasMother
-  AssignClass (7632adf8-ff5d-4d6e-9c7e-02784e9ecf74)
- Call ID: 7632adf8-ff5d-4d6e-9c7e-02784e9ecf74
-  Args:
-    type: :Man
-    source: :Alexander_Murray
-  AssignClass (eb178402-f94a-4569-b9bb-ab0491624b10)
- Call ID: eb178402-f94a-4569-b9bb-ab0491624b10
-  Args:
-    type: :Ancestor
-    source: :Alexander_Murray
-  AddTriple (6d26ab0b-37a9-4ed4-becb-a349d019f720)
- Call ID: 6d26ab0b-37a9-4ed4-becb-a349d019f720
-  Args:
-    relation: :hasFather
-    source: :Constance_Euphemia_Woronzow_Murray
-    target: :Alexander_Murray
-  AssignClass (90408e4f-cd5b-4bc7-bdd1-775c158b5c84)
- Call ID: 90408e4f-cd5b-4bc7-bdd1-775c158b5c84
-  Args:
-    type: :Man
-    source: :Andrew_Charles_Victor_Elphinstone
-  AssignClass (a613f28c-4586-4bfd-b2e2-6bc9889ef22e)
- Call ID: a613f28c-4586-4bfd-b2e2-6bc9889ef22e
-  Args:
+    source: :Emperor_Wilhelm_II_of_Germany
     type: :Person
-    source: :Andrew_Charles_Victor_Elphinstone
-  AddTriple (13116be7-9526-47bf-941f-5335e3150e04)
- Call ID: 13116be7-9526-47bf-941f-5335e3150e04
+  AddTriple (e7988775-24bc-4d85-bbbc-08e01fe6a26f)
+ Call ID: e7988775-24bc-4d85-bbbc-08e01fe6a26f
   Args:
-    relation: :isBrotherOf
-    source: :Andrew_Charles_Victor_Elphinstone
-    target: :John_Alexander_Elphinstone
-  AssignClass (5a18d65a-98e6-42b6-9ceb-d592c401d311)
- Call ID: 5a18d65a-98e6-42b6-9ceb-d592c401d311
+    relation: :isFatherOf
+    source: :Emperor_Wilhelm_II_of_Germany
+    target: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
+  AssignClass (ac1fbfc7-e785-467f-8b34-d723fd79d608)
+ Call ID: ac1fbfc7-e785-467f-8b34-d723fd79d608
   Args:
+    source: :Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg
     type: :Woman
-    source: :Margaret_Elphinstone
-  AssignClass (2640563f-b371-4dbd-9d6b-24780069ba29)
- Call ID: 2640563f-b371-4dbd-9d6b-24780069ba29
+  AssignClass (b3cb0dc8-2c01-456f-bbe9-57c949c30a52)
+ Call ID: b3cb0dc8-2c01-456f-bbe9-57c949c30a52
   Args:
+    source: :Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg
     type: :Person
-    source: :Margaret_Elphinstone
-  AddTriple (45fe976b-d842-4820-ad09-592eb94c1ffa)
- Call ID: 45fe976b-d842-4820-ad09-592eb94c1ffa
+  AddTriple (74e3ee67-50a9-4ed7-be5b-a51135702520)
+ Call ID: 74e3ee67-50a9-4ed7-be5b-a51135702520
   Args:
-    relation: :isSisterOf
-    source: :Margaret_Elphinstone
-    target: :John_Alexander_Elphinstone
-  AssignClass (9190e8f4-360b-4173-956a-40155bff560e)
- Call ID: 9190e8f4-360b-4173-956a-40155bff560e
+    target: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
+    source: :Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg
+    relation: :isMotherOf
+  AssignClass (e8b13e8d-1ba7-4ccf-96f2-8d226c7e5673)
+ Call ID: e8b13e8d-1ba7-4ccf-96f2-8d226c7e5673
   Args:
-    type: :Man
-    source: :Denys_Rhodes
-  AssignClass (50d960ae-fd27-4a51-863c-782b3afc453a)
- Call ID: 50d960ae-fd27-4a51-863c-782b3afc453a
+    source: :Duchess_Sophia_Charlotte_of_Oldenburg
+    type: :Woman
+  AssignClass (0a887842-7cdd-4d7f-8b09-90f577edce5c)
+ Call ID: 0a887842-7cdd-4d7f-8b09-90f577edce5c
   Args:
+    source: :Duchess_Sophia_Charlotte_of_Oldenburg
     type: :Person
-    source: :Denys_Rhodes
-  AddTriple (9ce24ab8-bfd2-4418-9b53-3f33693cffd8)
- Call ID: 9ce24ab8-bfd2-4418-9b53-3f33693cffd8
+  AddLiteral (84aefac6-ede7-4f39-b817-7030d56e17ae)
+ Call ID: 84aefac6-ede7-4f39-b817-7030d56e17ae
   Args:
-    source: :Margaret_Elphinstone
-    target: :Denys_Rhodes
+    literal_value: 1906
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
+  AddTriple (47a077df-2f84-4ee0-8816-68953da8e04a)
+ Call ID: 47a077df-2f84-4ee0-8816-68953da8e04a
+  Args:
+    source: :Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia
     relation: :hasRelation
-  Finish (093fd521-3641-4f0d-8b66-68b00f6cd5c1)
- Call ID: 093fd521-3641-4f0d-8b66-68b00f6cd5c1
+    target: :Duchess_Sophia_Charlotte_of_Oldenburg
+  Finish (4610eed2-ba18-444e-956b-c26297fcda10)
+ Call ID: 4610eed2-ba18-444e-956b-c26297fcda10
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -624,42 +596,23 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_Charles_Victor_Elphinstone a :Man,
+  data:Emperor_Wilhelm_II_of_Germany a :Man,
           :Person ;
-      :isBrotherOf data:John_Alexander_Elphinstone .
+      :isFatherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia .
 
-  data:Margaret_Elphinstone a :Person,
+  data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg a :Person,
           :Woman ;
-      :hasRelation data:Denys_Rhodes ;
-      :isSisterOf data:John_Alexander_Elphinstone .
+      :isMotherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia .
 
-  data:Alexander_Murray a :Ancestor,
-          :Man .
-
-  data:Constance_Euphemia_Woronzow_Murray a :Ancestor,
-          :Woman ;
-      :hasFather data:Alexander_Murray .
-
-  data:Denys_Rhodes a :Man,
-          :Person .
-
-  data:Mary_Bowes-Lyon a :Ancestor,
+  data:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,
           :Woman .
 
-  data:Sidney_Elphinstone a :Ancestor,
-          :Man ;
-      :hasFather data:William_Elphinstone ;
-      :hasMother data:Constance_Euphemia_Woronzow_Murray .
-
-  data:William_Elphinstone a :Ancestor,
-          :Man .
-
-  data:John_Alexander_Elphinstone a :Man,
+  data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,
           :Person ;
-      :hasBirthYear 1914 ;
-      :hasDeathYear 1975 ;
-      :hasFather data:Sidney_Elphinstone ;
-      :hasMother data:Mary_Bowes-Lyon .
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1942 ;
+      :hasMarriageYear 1906 ;
+      :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg .
 
 
 
@@ -671,8 +624,88 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1a8f4dd4-5487-4a7b-bac1-c798babed330)
- Call ID: 1a8f4dd4-5487-4a7b-bac1-c798babed330
+  ValidateShacl (e1504a99-41b5-42dc-8204-274438fb0de9)
+ Call ID: e1504a99-41b5-42dc-8204-274438fb0de9
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:2
+Violations:
+
+  Violation [1]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node Emperor_Wilhelm_II_of_Germany is the subject of the property :isFatherOf, but it is missing the required class :Ancestor. It currently only holds the classes :Man and :Person.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add the class :Ancestor to the node Emperor_Wilhelm_II_of_Germany.
+
+
+  Violation [2]:
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    LLM-provided explanation of the violation:
+      The node Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg is the subject of the property :isMotherOf, but it is missing the required class :Ancestor. It currently only holds the classes :Woman and :Person.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add the class :Ancestor to the node Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (d2392a90-c49d-45e1-bd32-e9b781475df2)
+ Call ID: d2392a90-c49d-45e1-bd32-e9b781475df2
+  Args:
+    type: :Ancestor
+    source: :Emperor_Wilhelm_II_of_Germany
+  AssignClass (d923d6e6-c6d9-4057-9e26-df41b7a7d5ee)
+ Call ID: d923d6e6-c6d9-4057-9e26-df41b7a7d5ee
+  Args:
+    type: :Ancestor
+    source: :Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Emperor_Wilhelm_II_of_Germany a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia .
+
+  data:Princess_Augusta_Viktoria_of_Schleswig_Holstein_Sonderburg_Augustenburg a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia .
+
+  data:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,
+          :Woman .
+
+  data:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1942 ;
+      :hasMarriageYear 1906 ;
+      :hasRelation data:Duchess_Sophia_Charlotte_of_Oldenburg .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (be6de2a9-d1e4-4505-b2b4-af6d492bfe66)
+ Call ID: be6de2a9-d1e4-4505-b2b4-af6d492bfe66
   Args:
 
 ================================= Tool Message =================================
@@ -683,6 +716,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4a163de2-502d-4915-bb7b-fb6164865f19)
- Call ID: 4a163de2-502d-4915-bb7b-fb6164865f19
+  Finish (7935fd13-89bc-4646-9384-f1026aab83f8)
+ Call ID: 7935fd13-89bc-4646-9384-f1026aab83f8
   Args:

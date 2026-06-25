@@ -2,37 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_VI a :Man,
+data:Nicholas_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Earl_of_St_Andrews ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
+    :hasSister data:Lady_Helen_Taylor .
+
+data:Earl_of_St_Andrews a :Man,
         :Person .
 
-data:Sofia a :Person,
-        :Woman ;
-    :isAuntOf data:Alexia .
-
-data:Alexia a :Person,
-        :Woman ;
-    :hasBirthYear 1965 ;
-    :hasBrother data:Pavlos ;
-    :hasFather data:Constantine_II ;
-    :hasMarriageYear 1999 ;
-    :hasMother data:Anne-Marie ;
-    :hasRelation data:Carlos_Javier_Morales_Quintana ;
-    :hasSister data:Theodora .
-
-data:Anne-Marie a :Ancestor,
+data:Katharine_Duchess_of_Kent a :Ancestor,
         :Person,
         :Woman .
 
-data:Carlos_Javier_Morales_Quintana a :Man,
-        :Person .
+data:Lady_Helen_Taylor a :Person,
+        :Woman .
 
-data:Constantine_II a :Ancestor,
+data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
+        :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
         :Man,
         :Person .
-
-data:Pavlos a :Man,
-        :Person .
-
-data:Theodora a :Person,
-        :Woman .
 

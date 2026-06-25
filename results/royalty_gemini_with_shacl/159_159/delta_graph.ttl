@@ -1,54 +1,67 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_of_Hesse a :Man,
-        :Person ;
-    :isSonOf data:Cecilie_of_Greece_and_Denmark,
-        data:Georg_Donatus_of_Hesse .
+data:Auguste_Viktoria a :Woman .
 
-data:Johanna_of_Hesse a :Person,
-        :Woman ;
-    :isDaughterOf data:Cecilie_of_Greece_and_Denmark,
-        data:Georg_Donatus_of_Hesse .
+data:Christian_X_of_Denmark a :Man .
 
-data:Ludwig_of_Hesse a :Man,
-        :Person ;
-    :isSonOf data:Cecilie_of_Greece_and_Denmark,
-        data:Georg_Donatus_of_Hesse .
+data:Dorothea_von_Salviati a :Woman .
 
-data:Margarita_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+data:Hubertus_of_Prussia a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-data:Philip_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasSister data:Cecilie_of_Greece_and_Denmark .
+data:Kira_Kirillovna_of_Russia a :Woman ;
+    :hasFather data:Cyril_Vladimirovich_of_Russia .
 
-data:Sophie_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+data:Louis_Ferdinand_of_Prussia a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-data:Theodora_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+data:Victoria_Marina_of_Prussia a :Woman ;
+    :hasFather data:Frederick_of_Prussia .
 
-data:Alice_of_Battenberg a :Ancestor,
-        :Woman .
+data:Wilhelm_of_Prussia_son_of_Cecilie a :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-data:Andrew_of_Greece_and_Denmark a :Ancestor,
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+data:Cyril_Vladimirovich_of_Russia a :Ancestor,
         :Man .
 
-data:Georg_Donatus_of_Hesse a :Ancestor,
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_of_Prussia a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+data:Michael_Nikolaevich_of_Russia a :Ancestor,
         :Man .
 
-data:Cecilie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man .
+
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
         :Woman ;
-    :hasBirthYear "1911-06-22"^^xsd:date ;
-    :hasDeathYear "1937-11-16"^^xsd:date ;
-    :hasFather data:Andrew_of_Greece_and_Denmark ;
-    :hasMarriageYear "1931-01-01"^^xsd:date ;
-    :hasMother data:Alice_of_Battenberg ;
-    :hasRelation data:Georg_Donatus_of_Hesse .
+    :hasFather data:Michael_Nikolaevich_of_Russia .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man .
+
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Woman ;
+    :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II_German_Emperor .
 

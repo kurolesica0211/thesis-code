@@ -183,6 +183,8 @@ On the accession of his mother on 14 January 1972, he became known as "His Royal
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -198,39 +200,9 @@ On the accession of his mother on 14 January 1972, he became known as "His Royal
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -245,6 +217,23 @@ On the accession of his mother on 14 January 1972, he became known as "His Royal
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -262,6 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -329,29 +333,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -360,6 +356,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -372,6 +376,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -380,17 +386,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -418,6 +426,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -433,70 +525,111 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (850d720c-bc7d-40f2-b88c-e9f501627b73)
- Call ID: 850d720c-bc7d-40f2-b88c-e9f501627b73
+  AssignClass (892ed661-c693-4b0b-a409-8e29d86e8527)
+ Call ID: 892ed661-c693-4b0b-a409-8e29d86e8527
   Args:
     type: :Man
-    source: Frederik_X
-  AssignClass (1e1a7c8f-b6d7-45cb-9376-0cd67486f638)
- Call ID: 1e1a7c8f-b6d7-45cb-9376-0cd67486f638
+    source: :Frederik_X
+  AssignClass (6980c08f-1325-4289-8a21-4009ae8554d4)
+ Call ID: 6980c08f-1325-4289-8a21-4009ae8554d4
   Args:
+    source: :Margrethe_II
     type: :Woman
-    source: Margrethe_II
-  AssignClass (7c7e403a-097f-4402-8088-b8ab42fa3cff)
- Call ID: 7c7e403a-097f-4402-8088-b8ab42fa3cff
+  AssignClass (29c0ae41-6fad-497d-a909-cbd30986006d)
+ Call ID: 29c0ae41-6fad-497d-a909-cbd30986006d
   Args:
     type: :Man
-    source: Henrik
-  AssignClass (9c90a201-53f7-4944-8acb-d3e6235e9a45)
- Call ID: 9c90a201-53f7-4944-8acb-d3e6235e9a45
+    source: :Henrik
+  AssignClass (89b9afc6-6be6-4acb-b04d-d6ebb56bde96)
+ Call ID: 89b9afc6-6be6-4acb-b04d-d6ebb56bde96
   Args:
     type: :Man
-    source: Frederik_IX
-  AssignClass (34df7d2c-caa7-48b8-9731-4c816e4dc698)
- Call ID: 34df7d2c-caa7-48b8-9731-4c816e4dc698
+    source: :Frederik_IX
+  AssignClass (f716edb1-2149-455b-bc6b-860cf615dba1)
+ Call ID: f716edb1-2149-455b-bc6b-860cf615dba1
   Args:
     type: :Man
-    source: Joachim
-  AssignClass (5b00be9b-9e84-4491-a8f4-19c8f636c704)
- Call ID: 5b00be9b-9e84-4491-a8f4-19c8f636c704
+    source: :Joachim
+  AssignClass (17b27f75-b9f8-4e81-a6a6-2142325b27e0)
+ Call ID: 17b27f75-b9f8-4e81-a6a6-2142325b27e0
   Args:
+    source: :Mary_Donaldson
     type: :Woman
-    source: Mary_Donaldson
-  AddTriple (608e91fb-1552-4048-aacb-3c520f2688c6)
- Call ID: 608e91fb-1552-4048-aacb-3c520f2688c6
+  AddLiteral (44643aa6-3dc0-4654-959a-1404c2d2b80c)
+ Call ID: 44643aa6-3dc0-4654-959a-1404c2d2b80c
   Args:
-    target: Henrik
-    relation: :hasFather
-    source: Frederik_X
-  AddTriple (05556721-7712-4900-9b65-6387ee8c12e5)
- Call ID: 05556721-7712-4900-9b65-6387ee8c12e5
-  Args:
-    target: Margrethe_II
-    source: Frederik_X
-    relation: :hasMother
-  AddTriple (01270366-b3bc-45fa-a1cf-6e2793e8c306)
- Call ID: 01270366-b3bc-45fa-a1cf-6e2793e8c306
-  Args:
-    source: Margrethe_II
-    relation: :hasFather
-    target: Frederik_IX
-  AddTriple (91de7022-0706-4926-b216-0140933ba786)
- Call ID: 91de7022-0706-4926-b216-0140933ba786
-  Args:
-    relation: :hasBrother
-    source: Frederik_X
-    target: Joachim
-  AddLiteral (1ac474bc-28f7-4a4c-bb91-d95cb19e789b)
- Call ID: 1ac474bc-28f7-4a4c-bb91-d95cb19e789b
-  Args:
-    relation: :hasBirthYear
+    source: :Frederik_X
     literal_value: 1968
-    source: Frederik_X
     literal_type: xsd:integer
-  Finish (a25b732d-258d-4763-85cd-a2d9b7c5b5ea)
- Call ID: a25b732d-258d-4763-85cd-a2d9b7c5b5ea
+    relation: :hasBirthYear
+  AddTriple (1dc12057-2ced-485d-8f3f-d71238d76511)
+ Call ID: 1dc12057-2ced-485d-8f3f-d71238d76511
   Args:
+    target: :Margrethe_II
+    relation: :hasMother
+    source: :Frederik_X
+  AddTriple (956ef7d2-f4d8-4e21-84d1-808b3f3af9e4)
+ Call ID: 956ef7d2-f4d8-4e21-84d1-808b3f3af9e4
+  Args:
+    source: :Frederik_X
+    relation: :hasFather
+    target: :Henrik
+  AddTriple (2a7df7c0-49f2-44be-8485-d6d544856f56)
+ Call ID: 2a7df7c0-49f2-44be-8485-d6d544856f56
+  Args:
+    target: :Frederik_IX
+    relation: :hasFather
+    source: :Margrethe_II
+  AddTriple (5b196ea9-1a91-4520-91c5-5c3d45cfef1d)
+ Call ID: 5b196ea9-1a91-4520-91c5-5c3d45cfef1d
+  Args:
+    source: :Joachim
+    target: :Frederik_X
+    relation: :isBrotherOf
+  AddTriple (85d00249-5150-491f-9711-03d243bb02f5)
+ Call ID: 85d00249-5150-491f-9711-03d243bb02f5
+  Args:
+    relation: :hasMother
+    target: :Margrethe_II
+    source: :Joachim
+  AddTriple (4ae3ea4a-91f0-404e-9382-25012cd99bb2)
+ Call ID: 4ae3ea4a-91f0-404e-9382-25012cd99bb2
+  Args:
+    target: :Henrik
+    relation: :hasFather
+    source: :Joachim
+  AddLiteral (eeab8266-23cd-408c-b981-f4af7c9df216)
+ Call ID: eeab8266-23cd-408c-b981-f4af7c9df216
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 2003
+    source: :Frederik_X
+  AddTriple (38aadbe1-0f53-4e89-80ae-ab0d50328e45)
+ Call ID: 38aadbe1-0f53-4e89-80ae-ab0d50328e45
+  Args:
+    relation: :hasRelation
+    target: :Mary_Donaldson
+    source: :Frederik_X
+  Finish (5612edb1-b017-4e60-93d0-b6fe914773e3)
+ Call ID: 5612edb1-b017-4e60-93d0-b6fe914773e3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -545,19 +678,23 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_X a :Man ;
-      :hasBirthYear 1968 ;
-      :hasBrother data:Joachim ;
+  data:Joachim a :Man ;
       :hasFather data:Henrik ;
-      :hasMother data:Margrethe_II .
-
-  data:Mary_Donaldson a :Woman .
+      :hasMother data:Margrethe_II ;
+      :isBrotherOf data:Frederik_X .
 
   data:Frederik_IX a :Man .
 
-  data:Henrik a :Man .
+  data:Frederik_X a :Man ;
+      :hasBirthYear 1968 ;
+      :hasFather data:Henrik ;
+      :hasMarriageYear 2003 ;
+      :hasMother data:Margrethe_II ;
+      :hasRelation data:Mary_Donaldson .
 
-  data:Joachim a :Man .
+  data:Mary_Donaldson a :Woman .
+
+  data:Henrik a :Man .
 
   data:Margrethe_II a :Woman ;
       :hasFather data:Frederik_IX .
@@ -572,86 +709,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9ccbd530-411d-47be-9072-4359f07b1fa1)
- Call ID: 9ccbd530-411d-47be-9072-4359f07b1fa1
+  ValidateShacl (00769630-3c16-4cf4-9e09-9db770f1cb18)
+ Call ID: 00769630-3c16-4cf4-9e09-9db770f1cb18
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Henrik' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Frederik_X'.
+      The node 'Henrik' is assigned as the 'hasFather' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henrik, :Ancestor)
+      AssignClass(node: 'Henrik', class: ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Margrethe_II' does not have the required ':Ancestor' class assigned to satisfy the 'hasMother' property constraint for 'Frederik_X'.
+      The node 'Henrik' is assigned as the 'hasFather' of 'Joachim' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margrethe_II, :Ancestor)
+      AssignClass(node: 'Henrik', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Henrik' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Frederik_X'.
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henrik, :Ancestor)
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Frederik_IX' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Margrethe_II'.
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Joachim' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX, :Ancestor)
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Margrethe_II' does not have the required ':Ancestor' class assigned to satisfy the 'hasMother' property constraint for 'Frederik_X'.
+      The node 'Henrik' is assigned as the 'hasFather' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margrethe_II, :Ancestor)
+      AssignClass(node: 'Henrik', class: ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Henrik' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Frederik_X'.
+      The node 'Henrik' is assigned as the 'hasFather' of 'Joachim' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henrik, :Ancestor)
+      AssignClass(node: 'Henrik', class: ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederik_IX' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Margrethe_II'.
+      The node 'Frederik_IX' is assigned as the 'hasFather' of 'Margrethe_II' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX, :Ancestor)
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Margrethe_II' does not have the required ':Ancestor' class assigned to satisfy the 'hasMother' property constraint for 'Frederik_X'.
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margrethe_II, :Ancestor)
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
 
 
   Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Joachim' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
+
+
+  Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederik_IX' does not have the required ':Ancestor' class assigned to satisfy the 'hasFather' property constraint for 'Margrethe_II'.
+      The node 'Henrik' is assigned as the 'hasFather' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_IX, :Ancestor)
+      AssignClass(node: 'Henrik', class: ':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Henrik' is assigned as the 'hasFather' of 'Joachim' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Henrik', class: ':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX' is assigned as the 'hasFather' of 'Margrethe_II' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Frederik_X' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margrethe_II' is assigned as the 'hasMother' of 'Joachim' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margrethe_II', class: ':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX' is assigned as the 'hasFather' of 'Margrethe_II' but does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
 
 
 
@@ -660,23 +845,23 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (70493bf5-73be-49c0-a158-6785426bdd83)
- Call ID: 70493bf5-73be-49c0-a158-6785426bdd83
+  AssignClass (b332cd0a-8237-4193-b1a3-a00fad32b009)
+ Call ID: b332cd0a-8237-4193-b1a3-a00fad32b009
   Args:
-    source: Henrik
+    source: :Henrik
     type: :Ancestor
-  AssignClass (3a9b13ac-5b4b-4f3f-97d0-8d5389ee8713)
- Call ID: 3a9b13ac-5b4b-4f3f-97d0-8d5389ee8713
+  AssignClass (05fc50bb-b232-4b86-9d8c-4b4b6e4e3b08)
+ Call ID: 05fc50bb-b232-4b86-9d8c-4b4b6e4e3b08
   Args:
-    source: Margrethe_II
+    source: :Margrethe_II
     type: :Ancestor
-  AssignClass (027898be-cb8e-4aee-b2cc-18b2fef5b45d)
- Call ID: 027898be-cb8e-4aee-b2cc-18b2fef5b45d
+  AssignClass (42d17bd5-3f9d-4c6f-8e19-9781141d26f3)
+ Call ID: 42d17bd5-3f9d-4c6f-8e19-9781141d26f3
   Args:
-    source: Frederik_IX
     type: :Ancestor
-  ValidateShacl (7ca07cc8-bbdf-40c3-ab07-7e3091394103)
- Call ID: 7ca07cc8-bbdf-40c3-ab07-7e3091394103
+    source: :Frederik_IX
+  ValidateShacl (09eab5a1-db08-403c-bd1c-d17d6888c090)
+ Call ID: 09eab5a1-db08-403c-bd1c-d17d6888c090
   Args:
 
 ================================= Tool Message =================================
@@ -694,21 +879,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_X a :Man ;
-      :hasBirthYear 1968 ;
-      :hasBrother data:Joachim ;
+  data:Joachim a :Man ;
       :hasFather data:Henrik ;
-      :hasMother data:Margrethe_II .
-
-  data:Mary_Donaldson a :Woman .
+      :hasMother data:Margrethe_II ;
+      :isBrotherOf data:Frederik_X .
 
   data:Frederik_IX a :Ancestor,
           :Man .
 
+  data:Frederik_X a :Man ;
+      :hasBirthYear 1968 ;
+      :hasFather data:Henrik ;
+      :hasMarriageYear 2003 ;
+      :hasMother data:Margrethe_II ;
+      :hasRelation data:Mary_Donaldson .
+
+  data:Mary_Donaldson a :Woman .
+
   data:Henrik a :Ancestor,
           :Man .
-
-  data:Joachim a :Man .
 
   data:Margrethe_II a :Ancestor,
           :Woman ;
@@ -724,6 +913,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5f7dc51a-21b1-44bd-b098-6cc9f9b10180)
- Call ID: 5f7dc51a-21b1-44bd-b098-6cc9f9b10180
+  Finish (3e96974b-27f4-46c3-b509-ae69f18b86ff)
+ Call ID: 3e96974b-27f4-46c3-b509-ae69f18b86ff
   Args:

@@ -7,66 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Claire_Booth a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Claire Booth" ;
-    data:posIndicesFull "964:976" ;
-    data:wdtLink wdt:Q45962 ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Birgitte, Duchess of Gloucester" ;
-    data:posIndicesFull "182:213",
-        "559:590" ;
-    data:posIndicesPart "257:267" ;
-    data:wdtLink wdt:Q241584 ;
-    :alsoKnownAs "Birgitte Eva Henriksen",
-        "Birgitte Eva van Deurs Henriksen" ;
-    :hasChild data:Alexander_Windsor-_Earl_of_Ulster ;
-    :hasSex data:female ;
-    :hasSon data:Alexander_Windsor-_Earl_of_Ulster ;
-    :isMotherOf data:Alexander_Windsor-_Earl_of_Ulster ;
-    :isParentOf data:Alexander_Windsor-_Earl_of_Ulster .
-
-data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Richard, Duke of Gloucester" ;
-    data:posIndicesFull "142:176",
-        "26:41",
-        "410:425",
-        "519:553" ;
-    data:posIndicesPart "257:267" ;
-    data:wdtLink wdt:Q170294 ;
-    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
-        "Prince Richard Alexander Walter George, Duke of Gloucester",
-        "Prince Richard of Gloucester",
-        "Richard Alexander Walter George",
-        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
-        "Richard Gloucester",
-        "Richard Windsor" ;
-    :hasChild data:Alexander_Windsor-_Earl_of_Ulster ;
-    :hasSex data:male ;
-    :hasSon data:Alexander_Windsor-_Earl_of_Ulster ;
-    :isFatherOf data:Alexander_Windsor-_Earl_of_Ulster ;
-    :isParentOf data:Alexander_Windsor-_Earl_of_Ulster .
-
-data:Alexander_Windsor-_Earl_of_Ulster a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexander_Windsor-_Earl_of_Ulster a :Person ;
     rdfs:label "Alexander Windsor, Earl of Ulster" ;
     data:posIndicesFull "0:41",
         "0:57",
@@ -83,13 +24,50 @@ data:Alexander_Windsor-_Earl_of_Ulster a :Ancestor,
         "Alexander Patrick Gregers Richard Windsor, Earl of Ulster",
         "Alexander Ulster",
         "Alexander Windsor" ;
-    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
-    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
     :hasParent data:Birgitte-_Duchess_of_Gloucester,
         data:Prince_Richard-_Duke_of_Gloucester ;
-    :hasSex data:male ;
-    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
-        data:Prince_Richard-_Duke_of_Gloucester ;
-    :isSonOf data:Birgitte-_Duchess_of_Gloucester,
-        data:Prince_Richard-_Duke_of_Gloucester .
+    :hasSex data:male .
+
+data:Claire_Booth a :Person ;
+    rdfs:label "Claire Booth" ;
+    data:posIndicesFull "964:976" ;
+    data:wdtLink wdt:Q45962 ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Birgitte-_Duchess_of_Gloucester a :Person ;
+    rdfs:label "Birgitte, Duchess of Gloucester" ;
+    data:posIndicesFull "182:213",
+        "559:590" ;
+    data:posIndicesPart "257:267" ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen",
+        "Birgitte Eva van Deurs Henriksen" ;
+    :hasSex data:female .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Person ;
+    rdfs:label "Prince Richard, Duke of Gloucester" ;
+    data:posIndicesFull "142:176",
+        "26:41",
+        "410:425",
+        "519:553" ;
+    data:posIndicesPart "257:267" ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
+        "Prince Richard Alexander Walter George, Duke of Gloucester",
+        "Prince Richard of Gloucester",
+        "Richard Alexander Walter George",
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
+        "Richard Gloucester",
+        "Richard Windsor" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

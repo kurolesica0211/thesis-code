@@ -69,72 +69,100 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alfonso, Duke of Anjou, Duke of Cádiz, Grandee of Spain (Spanish: Don Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre; French: Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon; 20 April 1936 – 30 January 1989) was a grandson of King Alfonso XIII of Spain, a potential heir to the throne in the event of the restoration of the Spanish monarchy, and the Legitimist claimant to the throne of France.
-Upbringing
+The Duchess of Montpensier
 
-Alfonso was born at Sant'Anna Clinic in Rome, the elder son of Infante Jaime, Duke of Segovia, King Alfonso's second of four sons.
-His mother was Donna Emanuela de Dampierre, daughter of Roger, Duke of San Lorenzo and Donna Vittoria Ruspoli
-The Segovias lived in Rome where Jaime's father had maintained a royal court-in-exile since the royal family fled Spain following the 1931 election of republicans and socialists in Spain's major cities.
-Alfonso was baptised by Eugenio Cardinal Pacelli (later Pope Pius XII) at the Palazzo Ruspoli on the Via del Corso in Rome, home of his maternal grandmother, Donna Vittoria Ruspoli dei principi di Poggio Suasa.
-In 1941, Alfonso and his parents followed his English-born grandmother, Queen Victoria Eugenie to Lausanne in Switzerland.
-They lived first at the Hotel Royal, before Alfonso and his younger brother Gonzalo were sent to the Collège Saint-Jean (later Villa St. Jean International School) in Fribourg.
-On 8 December 1946 Alfonso made his first communion with his brother, Gonzalo; on the same day he was confirmed by Pedro Cardinal Segura y Sáenz, Archbishop of Seville.
-Spanish succession rights
 
-The king's eldest son, Alfonso, Prince of Asturias, had inherited hemophilia from his maternal great-grandmother Queen Victoria, yet had been considered Spain's heir apparent until the republic was established in 1931.
-Next in the line of succession, Infante Don Jaime, deaf and largely mute, was that same day persuaded to renounce his claim (and that of future descendants) alongside his elder brother, thereby assuming the Duke of Segovia title and clearing the way for King Alfonso's third son, Don Juan, Count of Barcelona to take up the monarchist cause on behalf of the banished dynasty.
-There being no need for Segovia to contract a dynastic alliance, Emanuela de Dampierre's noble rather than royal background was looked upon approvingly by the former king and former queen when the couple wed in Rome in 1935, and neither style nor title is attributed to Alfonso de Borbón-Segovia y Dampierre in the 1944 edition of the Almanach de Gotha.
-Following Alfonso XIII's death in Rome in February 1941, Franco wrote Don Juan, acknowledging him as rightful heir to the throne (though without inviting him to occupy it), implicitly confirming that he considered Segovia and his sons excluded from the royal succession.
-The new law allowed Franco or his successor to choose any man "of royal lineage" as king, and Alfonso was mentioned that year as a possible alternative to Don Juan and his son, Juan Carlos, should Franco consider the former too liberal to reign over a Falangist Spain.
-In December 1949, Segovia retracted his renunciation as coerced and claimed that he was the rightful claimant to Spain's crown.
-Relations between Don Juan and Franco continued to deteriorate and in 1952 the latter prevailed upon Segovia to send his elder son to Spain to be educated under his guidance.
-Reluctantly, Alfonso moved from Switzerland to Spain, initially to study law at Deusto University and, in 1955 to attend the elite Centro de Estudios Universitarios (CEU).
-By 1956 Franco was diverting sponsors of some civic events from Juan Carlos, who was also being educated in Spain under the Caudillo's supervision, to Alfonso.
-By 1964, Franco considered Juan Carlos his preferred candidate for the throne over his father, but also considered that if the latter deviated from obedience to Franco or loyalty to his Movimiento Nacional, Alfonso was a suitable alternative.
-Alfonso's strongest supporter in Franco's government was José Solís Ruiz, minister and secretary-general of the Movimiento.
-Anticipating that Franco would soon offer to declare him Spain's next king rather than Don Juan, in June 1969, Juan Carlos warned his father that if he declined Franco's offer, Alfonso would be invited to accept the crown, nevertheless Don Juan refused to consent to being bypassed.
-Asked by Juan Carlos to be chief witness at the ceremony declaring him successor and Prince of Spain, Alfonso immediately agreed to do so and sent some of his supporters to visit his father in Paris to persuade him to express no opposition publicly.
-In return for his full support, Franco later appointed Alfonso Spain's ambassador to Sweden.
-But in June 1972, after he had taken up that post, Alfonso advised Franco's foreign minister Laureano López Rodó that he deemed his support conditional upon his cousin's continued loyalty to Francoist Spain.
-He further hinted that Spain's law of succession should be amended to facilitate Alfonso's replacing or succeeding Juan Carlos as Franco's heir or on the throne, if circumstances called for such a change.
-On 8 March 1972, in the Palace of El Pardo in Madrid, Alfonso married Doña María del Carmen Martínez-Bordiú y Franco, daughter of Don Cristóbal Martínez-Bordiú, 10th Marquis de Villaverde, and of his wife, Doña Carmen Franco y Polo (Franco's only daughter.
-Doña Carmen was granted a title in 1975 becoming the 1st Duchess de Franco after Franco's death).
-The witnesses of the marriage were Franco and Alfonso's mother.
-Alfonso and Carmen separated in 1979, received a civil divorce in 1982 and an ecclesiastical annulment in 1986.
-On 22 November 1972, General Franco awarded Alfonso the Spanish title Duque de Cádiz with the dignity Grandee of Spain, and he received the style of Royal Highness.
-The Cádiz title had been held by Alfonso's great-great-grandfather, the Infante Francisco de Asís.
-French succession rights
+The Count of ÉvreuxThe Countess of Évreux
 
-Since Alfonso's mother was not born a princess of royal descent, his grandfather Alfonso XIII did not consider young Alfonso in line to the Spanish throne in accordance with the Pragmatic Sanction of 1830.
-Alfonso's father Jaime, however, came to assert that his sons were French dynasts entitled to the style of Royal Highness.
-In Spain up until 1972, Alfonso was generally addressed as Don Alfonso de Borbón y Dampierre.
-Elsewhere he was often addressed as a prince.
-On 25 November 1950, Alfonso received the title Duc de Bourbon (Duke of Bourbon) from his father.
-In 1963, Alfonso engaged the French historian and ardent royalist Hervé Pinoteau as his private secretary.
-Pinoteau remained with him until the duke's death.
-On 20 March 1975, Alfonso's father Jaime died.
-On 3 August 1975, he took the courtesy title Duc d'Anjou (Duke of Anjou).
-On 21 January 1985 (the 192nd anniversary of the death of King Louis XVI) Alfonso was present for the requiem mass at the Chapelle expiatoire in Paris.
-Marriage and children
 
-Lawsuit of the Count of Clermont against the Duke of Anjou
+Princess Béatrice
 
-In 1987, his paternal 10th cousin Prince Henri of Orléans, Count of Clermont, eldest son of Henri, Count of Paris, the then Orléanist claimant to the defunct throne of France, initiated a court action against Alfonso for his use of the title Duke of Anjou and the coat-of-arms France Moderne (three fleur-de-lis or); Henri asked the court to fine Alfonso 50,000 French francs for each future violation.
-In 1988, Prince Ferdinand, Duke of Castro and Prince Sixtus Henry of Bourbon-Parma joined Henri's lawsuit in reference to the use of the title Duke of Anjou, but not in respect to the coat-of-arms.
-On 21 December 1988, the Tribunal de grande instance of Paris ruled that the lawsuit was inadmissible because the title's legal existence could not be proven; that neither the plaintiff (Henri) nor the intervenors (Fernando and Sixtus) had established their claims to the title; and that Henri was not injured from the use of the plain arms of France by the Spanish branch of the Bourbon family.
-In 1989, Prince Henri d'Orléans and Prince Sixtus Henry of Bourbon-Parma appealed the judgment in the lawsuit about the use of a title and arms by Alfonso; the original judgment in favour of Alfonso was upheld.
-Career
 
-From 1977 to 1984, Alfonso was President of the Spanish Skiing Federation, and from 1984 to 1987 President of the Spanish Olympic Committee.
-Death
+The Duke of OrléansThe Duchess of Orléans
 
-Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado, on 30 January 1989, from broken neck by a cable which he collided with as it was being raised to support a banner at the finish line of a course at the FIS Alpine World Ski Championships.
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Prince Jean Carl Pierre Marie d'Orléans, Count of Paris (born 19 May 1965) is the current head of the House of Orléans.
+Jean is the senior male descendant by primogeniture in the male-line of Louis Philippe I, King of the French, and thus according to the Orléanists the legitimate claimant to the defunct throne of France as Jean IV.
+Jean is the second son of Henri, Count of Paris (1933–2019) and his former wife Duchess Marie-Thérèse of Württemberg (born 1934).
+Biography
+
+Early life and education
+
+Jean d'Orléans was born on 19 May 1965 in Boulogne-Billancourt, the son of Henri of Orleans and Maria Theresa of Württemberg.
+He received as godfather, his maternal uncle, Carl of Württemberg, and as godmother, his paternal aunt, Princess Chantal of Orleans.
+Jean completed his national service as an officer, first taking four months of classes at the Saumur Cavalry School.
+Jean is multilingual, speaking French, English, and German.
+First engagement
+
+Prince Jean was due to marry Duchess Tatjana of Oldenburg (b. 1974) in 2001.
+However, the wedding was cancelled at the last moment because of a dispute over religious denomination: Jean's father, Henri, feared the Orléans claim to the throne would be compromised if there were to be a Protestant heir.
+Second engagement and marriage
+
+On 29 November 2008, Henri, then Count of Paris, announced the engagement of Jean, the then Duke of Vendôme, to Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart, born in Vienna on 19 June 1977.
+Lawsuit
+
+In 2021, Jean filed a lawsuit against the Saint-Louis foundation, demanding €1 million in damages and the return of five properties, including the Château d'Amboise.
+In 1886, the château was bequeathed to the Institute of France by Jean's ancestor Henri d’Orléans, with the caveat that the property would never be altered by the institute.
+The Saint-Louis foundation was later founded by Jean's grandfather, Henri VI, Count of Paris, in 1974.
+Jean's lawsuit alleges that the Institute violated their contract to never alter the property, after they announced plans to transform the Pavillon d’Enghien into a €760-a-night luxury hotel, containing a spa and gastronomic restaurant.
+Jean had previously lived in the château from 2001 to September 2021 rent-free, but was forcefully evicted by the institute after they began to demand he pay rent, which Jean viewed as a violation of their contract.
+Family
+
+Jean and his wife Philomena have six children: 
+
+
+Politics
+
+Jean believes that the people of France are "monarchist at heart" and argues that they long for a non-partisan figurehead.
+Jean has also expressed his opposition to same-sex marriage, having participated in the La Manif pour tous protests, as well as abortion.
+In May 2019, Jean met with French President Emmanuel Macron, Brigitte Macron, and Italian President Sergio Mattarella in his then-home in the Château d'Amboise.
+
+
+Titles, styles and honours
+
+Titles in pretense
+
+He was created Duke of Vendôme (French: Duc de Vendôme) by his paternal grandfather, on 27 September 1987.
+Following the death of his father, it was initially thought that Prince Jean would not assume the title of Count of Paris for several months after his father's death, and possibly not for as much as one year.
+Honours
+
+National
+
+Dynastic
+
+Ancestry
+
+Jean is a direct male-line descendant of Louis Philippe I, the last French king, who in turn was a descendant of Philippe I, Duke of Orléans, the younger brother of Louis XIV.
+Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of Spain, the Two Sicilies and Parma.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -150,39 +178,9 @@ Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -197,6 +195,23 @@ Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -214,6 +229,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,29 +311,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -312,6 +334,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -324,6 +354,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -332,17 +364,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -370,6 +404,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -385,475 +503,154 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0ecf48bc-7751-49af-a074-0ca304f0b6eb)
- Call ID: 0ecf48bc-7751-49af-a074-0ca304f0b6eb
+  AssignClass (577afd6a-4814-474c-9f98-be9923a4bb5a)
+ Call ID: 577afd6a-4814-474c-9f98-be9923a4bb5a
   Args:
+    source: Jean_d_Orleans
     type: :Man
-    source: Alfonso_Duke_of_Anjou
-  AssignClass (6f11e600-2d9d-46d3-8075-160685625b4c)
- Call ID: 6f11e600-2d9d-46d3-8075-160685625b4c
+  AssignClass (b21876ed-d4c4-4a18-b9f7-59f76119c09c)
+ Call ID: b21876ed-d4c4-4a18-b9f7-59f76119c09c
   Args:
-    type: :Man
-    source: Jaime_Duke_of_Segovia
-  AssignClass (ffaf6def-bfa2-4619-a29a-8130f3037829)
- Call ID: ffaf6def-bfa2-4619-a29a-8130f3037829
+    source: Jean_d_Orleans
+    type: :Person
+  AddLiteral (78eb84f7-cc25-43ef-b0c2-71ccf48f9b06)
+ Call ID: 78eb84f7-cc25-43ef-b0c2-71ccf48f9b06
   Args:
-    type: :Woman
-    source: Emanuela_de_Dampierre
-  AssignClass (096a8d21-d3a7-408c-99d2-5a5b498be650)
- Call ID: 096a8d21-d3a7-408c-99d2-5a5b498be650
-  Args:
-    type: :Man
-    source: Alfonso_XIII_of_Spain
-  AssignClass (336e6f99-0af8-4f12-9300-0ff5e1bf4592)
- Call ID: 336e6f99-0af8-4f12-9300-0ff5e1bf4592
-  Args:
-    source: Roger_Duke_of_San_Lorenzo
-    type: :Man
-  AssignClass (78b59150-1509-4756-ab73-a9498640b9f1)
- Call ID: 78b59150-1509-4756-ab73-a9498640b9f1
-  Args:
-    type: :Woman
-    source: Vittoria_Ruspoli
-  AssignClass (22042361-bc67-45ef-8208-1afd724b6422)
- Call ID: 22042361-bc67-45ef-8208-1afd724b6422
-  Args:
-    source: Gonzalo_de_Borbon
-    type: :Man
-  AssignClass (0bc8baf9-8e43-46e0-a4d0-5b612daa2712)
- Call ID: 0bc8baf9-8e43-46e0-a4d0-5b612daa2712
-  Args:
-    source: Victoria_Eugenie
-    type: :Woman
-  AssignClass (176b3640-3c07-4434-b53b-4b27367f657c)
- Call ID: 176b3640-3c07-4434-b53b-4b27367f657c
-  Args:
-    source: Maria_del_Carmen_Martinez_Bordiu_y_Franco
-    type: :Woman
-  AssignClass (dab6c36d-a705-4c37-8644-f62be9ba8952)
- Call ID: dab6c36d-a705-4c37-8644-f62be9ba8952
-  Args:
-    source: Cristobal_Martinez_Bordiu
-    type: :Man
-  AssignClass (964f8858-b964-4776-942f-591faee099a5)
- Call ID: 964f8858-b964-4776-942f-591faee099a5
-  Args:
-    source: Carmen_Franco_y_Polo
-    type: :Woman
-  AddLiteral (b1b569d0-d7d1-4856-b47f-e39d590addde)
- Call ID: b1b569d0-d7d1-4856-b47f-e39d590addde
-  Args:
-    literal_value: 1936
-    source: Alfonso_Duke_of_Anjou
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (30643753-1829-466f-a939-5af8db46aa4f)
- Call ID: 30643753-1829-466f-a939-5af8db46aa4f
+    literal_value: 1965
+    source: Jean_d_Orleans
+  AssignClass (05c945db-89fa-486a-80d4-afe8f1e7f2cd)
+ Call ID: 05c945db-89fa-486a-80d4-afe8f1e7f2cd
   Args:
-    literal_value: 1989
-    source: Alfonso_Duke_of_Anjou
+    source: Henri_Count_of_Paris
+    type: :Man
+  AssignClass (5e3df416-3c98-412e-a5dc-d575637bdd54)
+ Call ID: 5e3df416-3c98-412e-a5dc-d575637bdd54
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Person
+  AddLiteral (f9c4fb55-ffc9-4fed-a0a0-aaf0f6a10904)
+ Call ID: f9c4fb55-ffc9-4fed-a0a0-aaf0f6a10904
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1933
+    relation: :hasBirthYear
+    source: Henri_Count_of_Paris
+  AddLiteral (a6915ad8-e56e-4e26-9367-918741332de4)
+ Call ID: a6915ad8-e56e-4e26-9367-918741332de4
+  Args:
+    literal_value: 2019
     relation: :hasDeathYear
+    source: Henri_Count_of_Paris
     literal_type: xsd:integer
-  AddTriple (fa612b1a-f1c6-4bbd-a27b-69e5ac72c5c5)
- Call ID: fa612b1a-f1c6-4bbd-a27b-69e5ac72c5c5
+  AssignClass (6f5c891b-b61c-4ef0-8a16-9b75f09e405a)
+ Call ID: 6f5c891b-b61c-4ef0-8a16-9b75f09e405a
   Args:
-    source: Alfonso_Duke_of_Anjou
-    target: Jaime_Duke_of_Segovia
-    relation: :hasFather
-  AddTriple (cefe4a02-4db8-4d28-81a5-e057f9a84991)
- Call ID: cefe4a02-4db8-4d28-81a5-e057f9a84991
+    source: Marie_Therese_of_Wurttemberg
+    type: :Woman
+  AssignClass (e671706f-e00a-44df-89a7-4140eab990fa)
+ Call ID: e671706f-e00a-44df-89a7-4140eab990fa
   Args:
-    target: Emanuela_de_Dampierre
-    relation: :hasMother
-    source: Alfonso_Duke_of_Anjou
-  AddTriple (ac637cc8-942c-4af5-9301-4e1f3f58cdc8)
- Call ID: ac637cc8-942c-4af5-9301-4e1f3f58cdc8
-  Args:
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Jaime_Duke_of_Segovia
-  AddTriple (657be937-ede8-45d2-8901-42ce1c31b0c7)
- Call ID: 657be937-ede8-45d2-8901-42ce1c31b0c7
-  Args:
-    source: Emanuela_de_Dampierre
-    relation: :hasFather
-    target: Roger_Duke_of_San_Lorenzo
-  AddTriple (b18fa5a9-a484-46e6-943d-244c2cac0cec)
- Call ID: b18fa5a9-a484-46e6-943d-244c2cac0cec
-  Args:
-    source: Emanuela_de_Dampierre
-    target: Vittoria_Ruspoli
-    relation: :hasMother
-  AddTriple (9fda4f9d-c26e-44ee-ba26-0d55dba986f0)
- Call ID: 9fda4f9d-c26e-44ee-ba26-0d55dba986f0
-  Args:
-    target: Gonzalo_de_Borbon
-    relation: :hasBrother
-    source: Alfonso_Duke_of_Anjou
-  AddTriple (a1c9adce-7031-4a6d-9492-13d383cc7718)
- Call ID: a1c9adce-7031-4a6d-9492-13d383cc7718
-  Args:
-    target: Emanuela_de_Dampierre
-    relation: :hasMother
-    source: Gonzalo_de_Borbon
-  AddTriple (c908e317-62ce-45f3-b577-f2753ffd0fa7)
- Call ID: c908e317-62ce-45f3-b577-f2753ffd0fa7
-  Args:
-    relation: :hasFather
-    target: Jaime_Duke_of_Segovia
-    source: Gonzalo_de_Borbon
-  AddTriple (3d92e94a-bdb8-4338-b646-d0ed33438c62)
- Call ID: 3d92e94a-bdb8-4338-b646-d0ed33438c62
-  Args:
-    relation: :hasMarriageYear
-    target: 1972
-    source: Alfonso_Duke_of_Anjou
-  AddTriple (3a04ddd5-b554-4746-b22b-4ef5ad66c28a)
- Call ID: 3a04ddd5-b554-4746-b22b-4ef5ad66c28a
-  Args:
-    source: Maria_del_Carmen_Martinez_Bordiu_y_Franco
-    relation: :hasFather
-    target: Cristobal_Martinez_Bordiu
-  AddTriple (16bf0eed-e21d-4655-8aea-f95ed9b1af7a)
- Call ID: 16bf0eed-e21d-4655-8aea-f95ed9b1af7a
-  Args:
-    source: Maria_del_Carmen_Martinez_Bordiu_y_Franco
-    target: Carmen_Franco_y_Polo
-    relation: :hasMother
-  Finish (6e637725-fa4c-4e1a-9de7-5a69c341f49b)
- Call ID: 6e637725-fa4c-4e1a-9de7-5a69c341f49b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alfonso_Duke_of_Anjou a :Man ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972 ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Maria_del_Carmen_Martinez_Bordiu_y_Franco a :Woman ;
-      :hasFather data:Cristobal_Martinez_Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo .
-
-  data:Victoria_Eugenie a :Woman .
-
-  data:Alfonso_XIII_of_Spain a :Man .
-
-  data:Carmen_Franco_y_Polo a :Woman .
-
-  data:Cristobal_Martinez_Bordiu a :Man .
-
-  data:Gonzalo_de_Borbon a :Man ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Roger_Duke_of_San_Lorenzo a :Man .
-
-  data:Vittoria_Ruspoli a :Woman .
-
-  data:Emanuela_de_Dampierre a :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1972']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (42285ef5-2863-4580-8cc1-1e64ca526c87)
- Call ID: 42285ef5-2863-4580-8cc1-1e64ca526c87
-  Args:
-    literal_type: xsd:string
-    source: Alfonso_Duke_of_Anjou
-    literal_value: 1972
-    relation: :hasMarriageYear
-  AddLiteral (0f56e09c-1d84-4f05-86bc-6495d5629cda)
- Call ID: 0f56e09c-1d84-4f05-86bc-6495d5629cda
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1972
-    literal_type: xsd:integer
-    source: Alfonso_Duke_of_Anjou
-  Finish (68fddb9b-8e6c-41cd-ba8d-0478f7e00a72)
- Call ID: 68fddb9b-8e6c-41cd-ba8d-0478f7e00a72
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alfonso_Duke_of_Anjou a :Man ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972,
-          1972 ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Maria_del_Carmen_Martinez_Bordiu_y_Franco a :Woman ;
-      :hasFather data:Cristobal_Martinez_Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo .
-
-  data:Victoria_Eugenie a :Woman .
-
-  data:Alfonso_XIII_of_Spain a :Man .
-
-  data:Carmen_Franco_y_Polo a :Woman .
-
-  data:Cristobal_Martinez_Bordiu a :Man .
-
-  data:Gonzalo_de_Borbon a :Man ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Roger_Duke_of_San_Lorenzo a :Man .
-
-  data:Vittoria_Ruspoli a :Woman .
-
-  data:Emanuela_de_Dampierre a :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1972']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (2fb1ba61-9994-4cd3-a0bf-86ebe1db4ea8)
- Call ID: 2fb1ba61-9994-4cd3-a0bf-86ebe1db4ea8
+    source: Marie_Therese_of_Wurttemberg
+    type: :Person
+  AddLiteral (53316264-3146-4792-94de-434e25bb2248)
+ Call ID: 53316264-3146-4792-94de-434e25bb2248
   Args:
     literal_type: xsd:integer
-    literal_value: 1972
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasMarriageYear
-  Finish (c5596b82-447a-4cad-87af-04be6ecce355)
- Call ID: c5596b82-447a-4cad-87af-04be6ecce355
+    source: Marie_Therese_of_Wurttemberg
+    relation: :hasBirthYear
+    literal_value: 1934
+  AddTriple (fce6247b-86eb-4802-af33-6049c7f08137)
+ Call ID: fce6247b-86eb-4802-af33-6049c7f08137
   Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alfonso_Duke_of_Anjou a :Man ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972 ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Maria_del_Carmen_Martinez_Bordiu_y_Franco a :Woman ;
-      :hasFather data:Cristobal_Martinez_Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo .
-
-  data:Victoria_Eugenie a :Woman .
-
-  data:Alfonso_XIII_of_Spain a :Man .
-
-  data:Carmen_Franco_y_Polo a :Woman .
-
-  data:Cristobal_Martinez_Bordiu a :Man .
-
-  data:Gonzalo_de_Borbon a :Man ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre .
-
-  data:Roger_Duke_of_San_Lorenzo a :Man .
-
-  data:Vittoria_Ruspoli a :Woman .
-
-  data:Emanuela_de_Dampierre a :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1972']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (ea1baea9-d8c1-4b6a-b54c-a1721a5b3123)
- Call ID: ea1baea9-d8c1-4b6a-b54c-a1721a5b3123
+    relation: :hasFather
+    source: Jean_d_Orleans
+    target: Henri_Count_of_Paris
+  AddTriple (a086776b-19ab-4cc5-a9d9-bc71ed63d292)
+ Call ID: a086776b-19ab-4cc5-a9d9-bc71ed63d292
   Args:
+    target: Marie_Therese_of_Wurttemberg
+    source: Jean_d_Orleans
+    relation: :hasMother
+  AssignClass (4dbb9b09-684d-4e9b-b533-eebb8e0f4324)
+ Call ID: 4dbb9b09-684d-4e9b-b533-eebb8e0f4324
+  Args:
+    source: Philomena_de_Tornos_y_Steinhart
+    type: :Woman
+  AssignClass (0518a17b-690c-432f-9f96-ba3d0914c3b9)
+ Call ID: 0518a17b-690c-432f-9f96-ba3d0914c3b9
+  Args:
+    source: Philomena_de_Tornos_y_Steinhart
+    type: :Person
+  AddLiteral (acce0ce6-89c1-485f-b257-8fd81bc5f50d)
+ Call ID: acce0ce6-89c1-485f-b257-8fd81bc5f50d
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1977
+    relation: :hasBirthYear
+    source: Philomena_de_Tornos_y_Steinhart
+  AddTriple (adaaa09f-020d-4fa9-90cc-688c84e3414f)
+ Call ID: adaaa09f-020d-4fa9-90cc-688c84e3414f
+  Args:
+    source: Jean_d_Orleans
+    relation: :hasRelation
+    target: Philomena_de_Tornos_y_Steinhart
+  AddLiteral (7b148023-4131-4d0c-953d-5cff6beb6786)
+ Call ID: 7b148023-4131-4d0c-953d-5cff6beb6786
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2008
     relation: :hasMarriageYear
-    source: Alfonso_Duke_of_Anjou
-    target: 1972
-  Finish (a74bf04d-c62c-4de4-b838-7ad2610ffc1f)
- Call ID: a74bf04d-c62c-4de4-b838-7ad2610ffc1f
+    source: Jean_d_Orleans
+  AssignClass (0e648b78-d495-40fa-a7d9-87ad3bd1d727)
+ Call ID: 0e648b78-d495-40fa-a7d9-87ad3bd1d727
+  Args:
+    source: Carl_of_Wurttemberg
+    type: :Man
+  AssignClass (d0f6b102-625a-4b7b-b9b7-6a3bbea7cc86)
+ Call ID: d0f6b102-625a-4b7b-b9b7-6a3bbea7cc86
+  Args:
+    source: Carl_of_Wurttemberg
+    type: :Person
+  AddTriple (59010a3d-08c2-4b6d-bdaa-2febf41df44c)
+ Call ID: 59010a3d-08c2-4b6d-bdaa-2febf41df44c
+  Args:
+    relation: :isUncleOf
+    source: Carl_of_Wurttemberg
+    target: Jean_d_Orleans
+  AssignClass (a03e7bfa-1fc0-4214-b117-6e9198db9a02)
+ Call ID: a03e7bfa-1fc0-4214-b117-6e9198db9a02
+  Args:
+    source: Princess_Chantal_of_Orleans
+    type: :Woman
+  AssignClass (b9819d93-8392-465c-b0f1-00406b2368db)
+ Call ID: b9819d93-8392-465c-b0f1-00406b2368db
+  Args:
+    source: Princess_Chantal_of_Orleans
+    type: :Person
+  AddTriple (0dda1498-2792-45c7-96dd-0df4eac7940f)
+ Call ID: 0dda1498-2792-45c7-96dd-0df4eac7940f
+  Args:
+    source: Princess_Chantal_of_Orleans
+    relation: :isAuntOf
+    target: Jean_d_Orleans
+  AssignClass (d6133152-0625-46dc-b571-3aecdfd0895c)
+ Call ID: d6133152-0625-46dc-b571-3aecdfd0895c
+  Args:
+    source: Henri_VI_Count_of_Paris
+    type: :Man
+  AssignClass (ce426678-35bc-4ee5-966e-2da7f9bc09ce)
+ Call ID: ce426678-35bc-4ee5-966e-2da7f9bc09ce
+  Args:
+    source: Henri_VI_Count_of_Paris
+    type: :Person
+  AddTriple (55404c5c-ea99-44c8-a22c-696c6e01f54c)
+ Call ID: 55404c5c-ea99-44c8-a22c-696c6e01f54c
+  Args:
+    target: Henri_VI_Count_of_Paris
+    source: Henri_Count_of_Paris
+    relation: :hasFather
+  Finish (dbef0ff3-75dd-467e-b4ad-2ac0fcc42fc2)
+ Call ID: dbef0ff3-75dd-467e-b4ad-2ac0fcc42fc2
   Args:

@@ -69,153 +69,46 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Charlotte of Prussia (German: Victoria Elisabeth Augusta Charlotte, Prinzessin von Preußen; 24 July 1860 – 1 October 1919) was Duchess of Saxe-Meiningen from 1914 to 1918 as the wife of Bernhard III, the duchy's last ruler.
-Born at the Neues Palais in Potsdam, she was the second child and eldest daughter of Prince Frederick of Prussia, a member of the House of Hohenzollern who became Crown Prince of Prussia in 1861 and German Emperor in 1888.
-Through her mother Victoria, Princess Royal, Charlotte was the eldest granddaughter of Queen Victoria of the United Kingdom and Prince Albert of Saxe-Coburg and Gotha.
-Princess Charlotte was a difficult child and indifferent student, with a nervous disposition.
-As she grew older, Charlotte developed a penchant for spreading gossip and causing trouble.
-Eager to escape from parental control, at age seventeen, she married Prince Bernhard of Saxe-Meiningen in 1878.
-Known for spreading gossip and her eccentric personality, Princess Charlotte enjoyed Berlin society while frequently leaving her only child, Princess Feodora, in the care of family members.
-Charlotte and Feodora, in turn, also had a difficult relationship.
-Charlotte's brother succeeded their father as Emperor Wilhelm II in 1888, increasing her social influence.
-She became Duchess of Saxe-Meiningen in 1914, only for her husband to lose his title with the end of World War I in November 1918.
-Charlotte died the following year of a heart attack in Baden-Baden.
-Recent historians have argued that she had porphyria, a genetic disease that afflicted the British royal family.
-Early life
-
-Birth and family
-
-Princess Viktoria Elisabeth Auguste Charlotte was born on 24 July 1860 at the Neues Palais in Potsdam.
-She was the eldest daughter and second child of Prince Frederick William of Prussia and his wife Victoria, Princess Royal, known as Vicky in the family.
-The product of an easy labour, she was a healthy baby who arrived 19 months after the difficult birth of her elder brother, Prince Wilhelm.
-Her grandmother, Queen Victoria, wanted her eldest granddaughter to be named after her.
-However, the Prussians wanted the new princess to be named Charlotte after Empress Alexandra Feodorovna of Russia, who had been born Princess Charlotte of Prussia, her paternal great-aunt.
-As a compromise, her first name was Victoria, but she was always referred to as Charlotte.
-She was also named after her paternal grandmother, Queen Augusta of Prussia.
-Charlotte's paternal family belonged to the House of Hohenzollern, a royal house that had ruled the German state of Prussia since the seventeenth century.
-By the end of her first year, Charlotte's father had become Crown Prince as his father ascended to the Prussian throne as King Wilhelm I. Charlotte's mother, Vicky, was the eldest daughter of the British monarch Queen Victoria and her husband Albert, Prince Consort.
-Charlotte and her brother, Wilhelm, were the only grandchildren born in Albert's lifetime.
-He and Victoria visited their daughter and two grandchildren when Charlotte was two months old; Vicky and Frederick William in turn brought Wilhelm and Charlotte on a visit to England in June 1861, six months before Albert's death.
-In 1863, Vicky and Frederick William purchased a run-down property and refurbished it into a farm, allowing the family to periodically experience a simple country life.
-Frederick William was a loving husband, but as an officer in the Prussian army, his duties increasingly pulled him away from the home.
-Shortly after arriving in her new adopted country, Vicky observed the continuous arguments and intrigues within the Prussian royal family.
-While Vicky was close with her eldest daughter, this changed as the girl grew older; by the time she was two years old, Charlotte had become known as "sweet naughty little Ditta" and would prove to be the most difficult of the family's eight children.
-Queen Victoria wrote to her daughter, "tell Charlotte I was appalled to hear of her biting her things.
-In 1863 the Crown Princess recorded in her diary that Charlotte's "little mind seems almost too active for her body – she is so nervous & sensitive and so quick.
-Charlotte developed violent tantrums; Vicky described them as "such outbreaks of rage & stubbornness that she screams blue murder."
-Charlotte was an indifferent student, to the dismay of her mother, who placed a high value on education.
-Charlotte's governess declared she had never seen "more difficulties" than with the princess, while Vicky once wrote of Charlotte in a letter to her mother that "Stupidity is not a sin, but it renders education a hard and difficult task."
-The Crown Princess rarely withheld her true thoughts of those who displeased her, and bluntly admonished her children to encourage their efforts and help them avoid vanity.
-Queen Victoria urged her daughter to act encouragingly rather than reproachfully towards Charlotte, believing that she could not expect the young princess to share Vicky's tastes.
-The deaths of Charlotte's brothers Sigismund and Waldemar in 1866 and 1879, respectively, devastated the Crown Princess.
-The strict upbringing Vicky gave to the eldest three children—Wilhelm, Charlotte, and Henry—was not replicated in her relationship with her three youngest surviving children, Viktoria, Sophia, and Margaret.
-The historian John Van der Kiste speculates that had Vicky shown the same level of acceptance with Charlotte as with her younger children, "the relationship between them might have been a happier one".
+Princess Nuria
 
 
-Charlotte was a favourite of her paternal grandparents, whom she frequently saw.
-King Wilhelm and Queen Augusta spoiled their granddaughter and encouraged her rebellion against the Crown Prince and Princess, and Charlotte and her brother frequently took their side in disputes with her parents.
-This rebellion was encouraged by the German chancellor Otto von Bismarck, who held political disagreements with the liberal Crown Prince and Princess.
-Charlotte also enjoyed a close relationship with her eldest brother, though they grew apart after his marriage in 1881 to Augusta Victoria of Schleswig-Holstein ("Dona"), a princess described by Charlotte as plain, slow-witted, and shy.
-Charlotte's relationship with Wilhelm would remain troubled as a result.
-Charlotte's cousin, Queen Marie of Romania, wrote in her memoirs: "it was greatly owing to Charly's intrigues that King Carol's animosity against the Emperor Wilhelm was kept alive.
-"
+Princess Françoise
 
 
-Engagement and marriage
-
-By the time she reached fourteen, Charlotte was described by Vicky as appearing much younger than her age; Vicky wrote, "Charlotte is in everything – health, looks and understanding, like a child of ten!"
-The princess had short legs, which, paired with a long waist and arms, made her appear tall when sitting but short when standing.
-As Charlotte grew older, her behaviour came to include flirtation, spreading malicious gossip, and causing trouble, traits her mother had noticed in her daughter's youth and had hoped she would outgrow.
-She believed that Charlotte's "pretty exterior" hid "dangerous character traits," and blamed nature for producing such qualities in her daughter.
-In April 1877, the sixteen-year-old Charlotte became engaged to her second cousin Prince Bernhard of Saxe-Meiningen, heir to the German Duchy of Saxe-Meiningen.
-According to a story related by Vicky's biographer, Hannah Pakula, Charlotte fell in love with the prince while they were driving with her eldest brother; Wilhelm sped up during the drive, alarming Charlotte and causing her to cling to Bernhard's arm.
-Pakula adds that this sudden but temporary passion likely fit Charlotte's "changeable" personality.
-Van der Kiste believes Charlotte's decision to marry Bernhard also stemmed from a desire to become independent of her parents, and especially from her mother's criticism.
-Prince Bernhard, an army officer serving in a Potsdam regiment, was nine years her senior and a veteran of the recent Franco-Prussian War.
-Charlotte did not share these interests, but Vicky hoped that time as well as marriage would guide Charlotte, so that "at least her wicked qualities will not be able to cause any harm".
-They were married in Berlin on 18 February 1878, in a double ceremony that also included Princess Elisabeth Anna of Prussia's marriage to Frederick Augustus of Oldenburg.
-Charlotte's maternal uncles, the Prince of Wales and Duke of Connaught and Strathearn, attended the wedding, as did King Leopold II and Queen Marie Henriette of Belgium.
-The new couple established their household near the Neues Palais, in villa Liegnitz, previously inhabited by Auguste, Princess of Liegnitz, the morganatic wife of Frederick William III of Prussia.
-They also purchased a villa in Cannes, a decision that angered Wilhelm, who viewed France as an enemy country; Charlotte eventually spent most of her winters in the French city, as she hoped that its warm climate would help alleviate her lifetime of ill health.
-Birth of Princess Feodora
-
-A year after their marriage, Charlotte gave birth to a daughter, Princess Feodora, on 12 May 1879.
-The new princess was the first grandchild of the Crown Prince and Princess, as well as the first great-grandchild of Queen Victoria and Emperor Wilhelm.
-Charlotte had hated the limitations placed on her while pregnant, and decided this would be her only child, to the dismay of her mother.
-Following Feodora's birth, Charlotte devoted her time to enjoying society life in Berlin and embarking on long holiday trips.
-During these trips, Charlotte would often leave her daughter to stay with Vicky, whom she viewed as the source of a convenient nursery.
-"
+Princess Mariam
 
 
-Among the era's royal families, it was unusual to be an only child; Feodora likely endured a lonely childhood.
-Feodora also lacked an interest in her studies, a deficit blamed by Vicky on a lack of parental guidance, as Charlotte and Bernhard were frequently away.
-With Charlotte for an example, what else can one expect".
-Adulthood
-
-Wilhelm I granted Charlotte and Bernhard a villa near Tiergarten in Berlin and transferred Bernhard to a regiment in the city.
-Charlotte spent much of her time socialising with other ladies, where it was common to pursue activities such as skating, gossiping, and holding dinner parties.
-Charlotte also smoked and drank, and was liked by many for hosting entertaining parties.
-Charlotte's father ascended the German throne as Emperor Frederick III in March 1888, only to succumb to throat cancer in June of that year.
-Charlotte stayed with her ailing father during this period, alongside most of her siblings.
-With her brother's ascension as Wilhelm II, Charlotte's social influence increased in Berlin, where she surrounded herself with a wild group of nobles, diplomats, and young officials from the court.
-While she had gradually reconciled with her mother during Frederick's illness, Charlotte sided with Wilhelm when he complained that he should have attended Queen Victoria's Golden Jubilee in place of his ailing father.
-Upon Wilhelm's ascension, Charlotte and Bernhard took his side in disputes with Vicky; the Dowager Empress, in turn, was defended by her three youngest daughters.
-In one letter during this period, Vicky characterised her eldest daughter as "most odd" and "hardly com near me, also describing Bernhard as impertinent and rude.
-Letters scandal
-
-In early 1891, Berlin society erupted in scandal after a series of anonymous letters circulated to prominent members of the court, including Wilhelm and his wife Dona.
-Some included pornographic images layered upon royal photographs.
-Wilhelm ordered an investigation, but the writer (or writers) were never identified.
-Some contemporaries speculated that Charlotte, known for her sharp tongue and love of gossip, may have been responsible.
-Historians have since suggested that the writer may have been Dona's brother Duke Ernst Gunther of Schleswig-Holstein in collaboration with his mistress.
-It is clear that the author had an intimate understanding of the many personalities within the royal family, likely making him or her either a family member or courtier.
-During the letters scandal, Charlotte lost her diary which contained both family secrets and critical thoughts on various members of her family; the diary was eventually given to Wilhelm, who never forgave her for its contents.
-Bernhard was transferred to a regiment in Breslau, effectively exiling him and his wife.
-As controller of Charlotte's allowance, Wilhelm also limited their ability to travel outside of the country unless they were willing to go without royal honours.
-In 1896, Dona accused Charlotte of engaging in an affair with Karl-August Freiherr Roeder von Diersburg, a court official.
-Charlotte fiercely denied the allegations.
-Bernhard defended his wife and criticised the Hohenzollerns for attempting to keep every Prussian princess under the control of the family.
-Bernhard considered resigning his army position and leaving with his wife for Meiningen, though the dispute eventually resolved itself when von Diersburg returned to court with his wife.
-The exiled Prince Peter Karađorđević, thirty-six years her senior, unsuccessfully requested her hand in marriage.
-Another potential candidate was her cousin Alfred, Hereditary Prince of Saxe-Coburg and Gotha.
-In late 1897, Feodora became engaged to Prince Henry XXX of Reuss, and they married the following year, on 24 September 1898 in a Lutheran ceremony at Breslau.
-After a visit by the couple in 1899, Charlotte wrote that Feodora was "incomprehensible" and "shrinks away, whenever I try to influence her, concerning her person & health".
-Charlotte also disliked her son-in-law, criticizing his appearance and inability to control his strong-willed wife.
-Unlike her mother, Feodora wanted children; her inability to conceive left Feodora disappointed, though it pleased Charlotte, who had no desire for grandchildren.
-Van der Kiste writes that Charlotte and Feodora had very similar personalities, "both strong-willed creatures who loved gossip and were too ready to believe the worst of each other".
-Eventually, their relationship deteriorated enough for Charlotte to bar Feodora and Henry from her house.
-Charlotte refused to accept Feodora's claim to have malaria, believing instead that her daughter had contracted a venereal disease from Henry; this opinion outraged Feodora.
-Charlotte did not write to Feodora for nearly a decade, finally doing so after Feodora underwent a dangerous operation to help her conceive.
-Charlotte expressed outrage that such an operation had been approved, but eventually visited her in the sanatorium at Feodora's request.
-Duchess of Saxe-Meiningen; death
-
-In June 1911, Charlotte attended the coronation of her cousin King George V in England, but the country's summer heat left her bed-ridden with a swollen face and pain in her limbs.
-On 25 June 1914, her husband inherited his father's duchy and became Bernhard III, Duke of Saxe-Meiningen.
-World War I broke out on 28 July; Bernhard left for the front while Charlotte remained behind to oversee the duchy, serving mainly as a figurehead (German: Landesregentin).
-During the war, Charlotte increasingly experienced various pains including chronic aches, swollen legs, and kidney problems.
-The end of the war in 1918 led to the political demise of the German Empire, as well as all of its many duchies; consequently, Bernhard was forced to abdicate his rule over Saxe-Meiningen.
-The following year, Charlotte travelled to Baden-Baden to seek medical treatment for her heart, ultimately dying there of a heart attack on 1 October 1919 at the age of 59.
-Bernhard died nine years later and was buried with her at Schloss Altenstein in Thuringia.
-Medical analysis
-
-Recent historians have argued that Charlotte and Feodora were afflicted with porphyria, a genetic disease that is believed to have affected some members of the British Royal Family, most notably King George III.
-In their 1998 book Purple Secret: Genes, 'Madness', and the Royal Houses of Europe, the historian John C. G. Röhl and the geneticists Martin Warren and David Hunt identify Charlotte as "occup a crucial position in  search for the porphyria mutation in the descendants of the Hanoverians".
-For evidence, Röhl reviewed letters between Charlotte and her doctor, as well as correspondence with her parents, that had been sent over a 25-year period; he found that even as a little girl, Charlotte had suffered from hyperactivity and indigestion.
-As a young woman, Charlotte became gravely ill with what her mother called "malaria poisoning and anaemia," followed by "neuralgia, fainting and nausea," all described by Röhl as a "textbook list of the symptoms of porphyria, and this several decades before the disorder was clinically identified".
-Röhl also notes further symptoms described in letters between Charlotte and her physician Ernst Schweninger who treated her for over two decades beginning in the early 1890s.
-In them, Charlotte variously complains of "toothache, backache, insomnia, dizzy spells, nausea, constipation, excruciating 'wandering' abdominal pains, skin oedema and itching, partial paralysis of the legs and dark red or orange urine," the last of which Röhl calls the "decisive diagnostic symptom.
-"
+Princess Monique
 
 
-In the 1990s, a team led by Röhl exhumed Charlotte's and Feodora's graves and took samples of each princess for testing.
-While the team noted they could not be completely certain that this mutation was caused by the genetic disease, they believed it beyond dispute, based on the historical and biological evidence, and noted that many of the same symptoms were found in Charlotte's mother, Vicky, as well as other family members including Queen Victoria.
-Röhl, Warren, and Hunt conclude "...for what else could have caused their terrible attacks of lameness and abdominal pain and skin rashes – and in Charlotte's case dark red urine?
+Prince Juan Jorge de Bagration-Mukhrani (born 18 August 1977) is a Spanish-born Georgian prince and member of the House of Mukhrani of the Bagrationi dynasty and a distant relation to the Spanish royal family.
+Early life and family
+
+Prince Juan Jorge de Bagration-Mukhrani was born on 18 August 1977 in Madrid to Prince Bagrat de Bagration y de Baviera and Doña María del Carmen de Ulloa y Suelves.
+His paternal grandfather, Prince Irakli Bagration of Mukhrani, was exiled from Georgia during the invasion of the Red Army, living in Germany, Italy, and finally settling in Spain.
+His paternal grandmother, Infanta María de las Mercedes of Spain was a member of the Spanish royal family and the German House of Wittelsbach; she was the daughter of Prince Ferdinand of Bavaria, granddaughter of Alfonso XII of Spain, and niece of Alfonso XIII of Spain.
+His maternal grandfather was Gonzalo Maria de Ulloa y Ramírez de Haro, Marqués de Castro-Serna, Count de Adanero.
+Prince Juan's parents divorced in 2005 and his father remarried in 2009 to Françoise Cazaudehore.
+Prince Juan is a member of the House of Mukhrani, a branch of the Bagrationi dynasty that ruled Georgia from the Middle Ages until the nineteenth century, when Georgia was annexed into the Russian Empire.
+Prince Juan studied at Collège Alpin International Beau Soleil, a boarding school in Villars-sur-Ollon, Switzerland and was a schoolmate and childhood friend of Cayetano Rivera Ordóñez.
+Personal life
+
+Prince Juan met Kristine Dzidziguri, a Georgian model, in 2014.
+They were married a few months later in a civil ceremony on 10 May 2014 in Ronda, Spain.
+The couple began planning a religious ceremony but were delayed due to social and political conflicts within Georgia and because of Prince Juan's father's declining health.
+On 2 June 2018, Prince Juan and Dzidziguri received a blessing from Ilia II of Georgia, the Catholicos-Patriarch of All Georgia.
+Their wedding reception was held at the Palace of Mukhrani.
+Later during their Indonesian tour, Prince Juan and Princess Kristine attended a gala lunch focused on establishing a cultural relationship between Indonesia and Georgia.
+Prince Juan is the founder of the Georgian Foundation, a non-profit organization that promotes Georgian culture.
+In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -231,39 +124,9 @@ Röhl, Warren, and Hunt conclude "...for what else could have caused their terri
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -278,6 +141,23 @@ Röhl, Warren, and Hunt conclude "...for what else could have caused their terri
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -295,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -362,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -393,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -405,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -413,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -451,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -466,210 +449,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (149abe5b-b6c7-4b80-bcc6-ce90246c652c)
- Call ID: 149abe5b-b6c7-4b80-bcc6-ce90246c652c
+  AssignClass (246e8257-1fb6-40e6-9a9e-401c2c306f43)
+ Call ID: 246e8257-1fb6-40e6-9a9e-401c2c306f43
   Args:
-    source: :Charlotte_of_Prussia
-    type: :Woman
-  AssignClass (846bf452-cfdb-4114-9e5e-df5224320beb)
- Call ID: 846bf452-cfdb-4114-9e5e-df5224320beb
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
+    type: :Man
+  AssignClass (9f2f455e-3a48-4876-9128-0bf05fd5aa5d)
+ Call ID: 9f2f455e-3a48-4876-9128-0bf05fd5aa5d
   Args:
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
     type: :Person
-    source: :Charlotte_of_Prussia
-  AssignClass (127ee352-6a7f-4743-bcd5-c2126778c8c4)
- Call ID: 127ee352-6a7f-4743-bcd5-c2126778c8c4
+  AddLiteral (1a5f9455-03e0-4966-b036-822eb22705a4)
+ Call ID: 1a5f9455-03e0-4966-b036-822eb22705a4
   Args:
-    type: :Ancestor
-    source: :Charlotte_of_Prussia
-  AddLiteral (a4ff484e-61d4-45ca-9bd6-bed01e838739)
- Call ID: a4ff484e-61d4-45ca-9bd6-bed01e838739
-  Args:
-    source: :Charlotte_of_Prussia
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1860
-    literal_type: xsd:integer
-  AddLiteral (49b8f3c4-fa0f-4c47-b17f-0cac28fa7573)
- Call ID: 49b8f3c4-fa0f-4c47-b17f-0cac28fa7573
+    literal_value: 1977
+  AssignClass (0a08a10d-e76f-459c-babe-d6cc2ce318f3)
+ Call ID: 0a08a10d-e76f-459c-babe-d6cc2ce318f3
   Args:
-    literal_value: 1919
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: :Charlotte_of_Prussia
-  AddTriple (5b9e0b73-df5d-4fed-a1f7-c3541104e7f4)
- Call ID: 5b9e0b73-df5d-4fed-a1f7-c3541104e7f4
-  Args:
-    source: :Charlotte_of_Prussia
-    target: :Female
-    relation: :hasSex
-  AssignClass (3d375286-b6a1-4c87-a5f6-3b94a918ee59)
- Call ID: 3d375286-b6a1-4c87-a5f6-3b94a918ee59
-  Args:
-    source: :Bernhard_III_of_Saxe_Meiningen
+    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
     type: :Man
-  AssignClass (d26b55ff-52c8-4217-9c8e-bb586e0ebfa6)
- Call ID: d26b55ff-52c8-4217-9c8e-bb586e0ebfa6
+  AssignClass (149c54fa-4d2a-495f-8fb7-0af3f27462b8)
+ Call ID: 149c54fa-4d2a-495f-8fb7-0af3f27462b8
   Args:
+    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
     type: :Person
-    source: :Bernhard_III_of_Saxe_Meiningen
-  AssignClass (fc2c8e49-678c-4175-85dd-13149ae2f979)
- Call ID: fc2c8e49-678c-4175-85dd-13149ae2f979
+  AddTriple (ed9118ee-c8b7-4ab2-b414-be9ff448e837)
+ Call ID: ed9118ee-c8b7-4ab2-b414-be9ff448e837
   Args:
-    type: :Ancestor
-    source: :Bernhard_III_of_Saxe_Meiningen
-  AddTriple (4b7ec6c8-64cd-4161-937b-520249f8c630)
- Call ID: 4b7ec6c8-64cd-4161-937b-520249f8c630
+    target: :Prince_Bagrat_de_Bagration_y_de_Baviera
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
+    relation: :hasFather
+  AssignClass (7da9e09d-3ac9-4182-91b0-a4c5d85cf56a)
+ Call ID: 7da9e09d-3ac9-4182-91b0-a4c5d85cf56a
   Args:
-    target: :Male
-    relation: :hasSex
-    source: :Bernhard_III_of_Saxe_Meiningen
-  AddLiteral (22647cb2-55ee-4d6e-93ed-47d7a45c6a9f)
- Call ID: 22647cb2-55ee-4d6e-93ed-47d7a45c6a9f
+    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
+    type: :Woman
+  AssignClass (98fec3ea-399a-4b97-b6a9-d5f0860702c6)
+ Call ID: 98fec3ea-399a-4b97-b6a9-d5f0860702c6
   Args:
-    source: :Charlotte_of_Prussia
-    literal_type: xsd:integer
+    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
+    type: :Person
+  AddTriple (681ba042-fbef-4bd2-945b-58c982d68066)
+ Call ID: 681ba042-fbef-4bd2-945b-58c982d68066
+  Args:
+    relation: :hasMother
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
+    target: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
+  AssignClass (bc6acdaf-7392-4019-ae09-4e1134e0448a)
+ Call ID: bc6acdaf-7392-4019-ae09-4e1134e0448a
+  Args:
+    source: :Prince_Irakli_Bagration_of_Mukhrani
+    type: :Man
+  AssignClass (61bcf101-6379-4b53-98fc-76112c98cc15)
+ Call ID: 61bcf101-6379-4b53-98fc-76112c98cc15
+  Args:
+    source: :Prince_Irakli_Bagration_of_Mukhrani
+    type: :Person
+  AddTriple (19afd8f4-4354-448c-ba82-63e463ee7554)
+ Call ID: 19afd8f4-4354-448c-ba82-63e463ee7554
+  Args:
+    relation: :hasFather
+    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
+    target: :Prince_Irakli_Bagration_of_Mukhrani
+  AssignClass (e2e1dbf9-3b87-4723-bbe6-fb996c8ea0f0)
+ Call ID: e2e1dbf9-3b87-4723-bbe6-fb996c8ea0f0
+  Args:
+    source: :Infanta_Maria_de_las_Mercedes_of_Spain
+    type: :Woman
+  AssignClass (771bdd91-e04d-4c27-9c17-b9c8a6a1238d)
+ Call ID: 771bdd91-e04d-4c27-9c17-b9c8a6a1238d
+  Args:
+    source: :Infanta_Maria_de_las_Mercedes_of_Spain
+    type: :Person
+  AddTriple (bb5a62c6-bb85-4126-ae90-f83751c088c5)
+ Call ID: bb5a62c6-bb85-4126-ae90-f83751c088c5
+  Args:
+    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
+    relation: :hasMother
+    target: :Infanta_Maria_de_las_Mercedes_of_Spain
+  AssignClass (4ee9db00-87f9-4193-85ae-f12e0756bb6b)
+ Call ID: 4ee9db00-87f9-4193-85ae-f12e0756bb6b
+  Args:
+    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
+    type: :Man
+  AssignClass (3601f513-ccd7-4932-a823-fa51ab5e2d4f)
+ Call ID: 3601f513-ccd7-4932-a823-fa51ab5e2d4f
+  Args:
+    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
+    type: :Person
+  AddTriple (d35617dd-e5ca-4db7-b2d4-d78b3d78a45f)
+ Call ID: d35617dd-e5ca-4db7-b2d4-d78b3d78a45f
+  Args:
+    target: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
+    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
+    relation: :hasFather
+  AssignClass (d16a5989-74b5-4c12-9753-d5f84fb00184)
+ Call ID: d16a5989-74b5-4c12-9753-d5f84fb00184
+  Args:
+    source: :Prince_Ferdinand_of_Bavaria
+    type: :Man
+  AssignClass (dd928e20-672b-439d-83cf-cb66a0f9278a)
+ Call ID: dd928e20-672b-439d-83cf-cb66a0f9278a
+  Args:
+    source: :Prince_Ferdinand_of_Bavaria
+    type: :Person
+  AddTriple (3b822845-76d9-4f4c-b741-c6a889c53a05)
+ Call ID: 3b822845-76d9-4f4c-b741-c6a889c53a05
+  Args:
+    target: :Prince_Ferdinand_of_Bavaria
+    relation: :hasFather
+    source: :Infanta_Maria_de_las_Mercedes_of_Spain
+  AssignClass (e1202e2b-c6a2-41c2-9c80-d403f1a643be)
+ Call ID: e1202e2b-c6a2-41c2-9c80-d403f1a643be
+  Args:
+    source: :Alfonso_XII_of_Spain
+    type: :Man
+  AssignClass (4a2dad76-6ac7-4e81-aa0e-f142306645b6)
+ Call ID: 4a2dad76-6ac7-4e81-aa0e-f142306645b6
+  Args:
+    source: :Alfonso_XII_of_Spain
+    type: :Person
+  AddTriple (779effa3-a21f-4ddc-9f2b-e4ab396c4a4b)
+ Call ID: 779effa3-a21f-4ddc-9f2b-e4ab396c4a4b
+  Args:
+    target: :Alfonso_XII_of_Spain
+    relation: :hasFather
+    source: :Infanta_Maria_de_las_Mercedes_of_Spain,target:
+  AssignClass (6747b725-1f04-4134-a45a-84f70caabdf7)
+ Call ID: 6747b725-1f04-4134-a45a-84f70caabdf7
+  Args:
+    source: :Francoise_Cazaudehore
+    type: :Woman
+  AssignClass (a30cfbee-8e1e-413b-a0b8-2d7b4aa25d39)
+ Call ID: a30cfbee-8e1e-413b-a0b8-2d7b4aa25d39
+  Args:
+    source: :Francoise_Cazaudehore
+    type: :Person
+  AssignClass (bca52d6f-812d-473f-b9e0-3470cc010490)
+ Call ID: bca52d6f-812d-473f-b9e0-3470cc010490
+  Args:
+    source: :Kristine_Dzidziguri
+    type: :Woman
+  AssignClass (149cc877-b3bf-485d-8c8b-3d8be47e6ef0)
+ Call ID: 149cc877-b3bf-485d-8c8b-3d8be47e6ef0
+  Args:
+    source: :Kristine_Dzidziguri
+    type: :Person
+  AddLiteral (408b1dda-8267-450e-b334-6241f1ef728d)
+ Call ID: 408b1dda-8267-450e-b334-6241f1ef728d
+  Args:
+    literal_value: 2014
     relation: :hasMarriageYear
-    literal_value: 1878
-  AddTriple (e7592e5a-faad-41c6-91d7-d5ba43055c13)
- Call ID: e7592e5a-faad-41c6-91d7-d5ba43055c13
+    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
+    literal_type: xsd:integer
+  Finish (616cbdf5-7320-4f7a-b4a6-6ba770bc2695)
+ Call ID: 616cbdf5-7320-4f7a-b4a6-6ba770bc2695
   Args:
-    target: :Bernhard_III_of_Saxe_Meiningen
-    relation: :hasRelation
-    source: :Charlotte_of_Prussia
-  AssignClass (e940e310-546a-40b1-a60f-93630d3c65bd)
- Call ID: e940e310-546a-40b1-a60f-93630d3c65bd
-  Args:
-    type: :Man
-    source: :Prince_Frederick_of_Prussia
-  AssignClass (06f7319c-775e-4b03-98a2-d61ad7175f0b)
- Call ID: 06f7319c-775e-4b03-98a2-d61ad7175f0b
-  Args:
-    source: :Prince_Frederick_of_Prussia
-    type: :Person
-  AssignClass (bc3426b4-0f70-4d25-bde3-30d4905d6d9a)
- Call ID: bc3426b4-0f70-4d25-bde3-30d4905d6d9a
-  Args:
-    source: :Prince_Frederick_of_Prussia
-    type: :Ancestor
-  AddTriple (e7c8c60c-a0e8-4015-9206-aae7067db06a)
- Call ID: e7c8c60c-a0e8-4015-9206-aae7067db06a
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: :Prince_Frederick_of_Prussia
-  AssignClass (17d7363c-9cc0-4b10-9688-f58c0a747491)
- Call ID: 17d7363c-9cc0-4b10-9688-f58c0a747491
-  Args:
-    source: :Victoria_Princess_Royal
-    type: :Woman
-  AssignClass (41fa5d29-7dd9-435c-a417-3a063d242fa5)
- Call ID: 41fa5d29-7dd9-435c-a417-3a063d242fa5
-  Args:
-    type: :Person
-    source: :Victoria_Princess_Royal
-  AssignClass (cca854bd-33e3-4d32-bcd8-1ec7697a6e6c)
- Call ID: cca854bd-33e3-4d32-bcd8-1ec7697a6e6c
-  Args:
-    type: :Ancestor
-    source: :Victoria_Princess_Royal
-  AddTriple (da875e01-c2c1-4ab6-b5f5-c93e8b842bae)
- Call ID: da875e01-c2c1-4ab6-b5f5-c93e8b842bae
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: :Victoria_Princess_Royal
-  AddTriple (6855f0f3-e40a-45f1-9c8c-d51547a5f940)
- Call ID: 6855f0f3-e40a-45f1-9c8c-d51547a5f940
-  Args:
-    relation: :hasFather
-    target: :Prince_Frederick_of_Prussia
-    source: :Charlotte_of_Prussia
-  AddTriple (0bd65115-c0ce-4fcb-99ec-a9e56ad58e9d)
- Call ID: 0bd65115-c0ce-4fcb-99ec-a9e56ad58e9d
-  Args:
-    relation: :hasMother
-    target: :Victoria_Princess_Royal
-    source: :Charlotte_of_Prussia
-  AssignClass (1338d214-302b-4f31-bbd4-8136ea9c8f1e)
- Call ID: 1338d214-302b-4f31-bbd4-8136ea9c8f1e
-  Args:
-    source: :Feodora_of_Saxe_Meiningen
-    type: :Woman
-  AssignClass (4c88df72-8115-42af-ad8b-46249caab412)
- Call ID: 4c88df72-8115-42af-ad8b-46249caab412
-  Args:
-    source: :Feodora_of_Saxe_Meiningen
-    type: :Person
-  AddTriple (56e26feb-951d-4060-8cb8-0a15bdff4f91)
- Call ID: 56e26feb-951d-4060-8cb8-0a15bdff4f91
-  Args:
-    source: :Feodora_of_Saxe_Meiningen
-    relation: :hasSex
-    target: :Female
-  AddTriple (d086ea8f-4917-4f26-b763-bb3b612c8b00)
- Call ID: d086ea8f-4917-4f26-b763-bb3b612c8b00
-  Args:
-    relation: :hasMother
-    target: :Charlotte_of_Prussia
-    source: :Feodora_of_Saxe_Meiningen
-  AddTriple (7ccdd9f7-83fa-4da3-a178-470b0d341573)
- Call ID: 7ccdd9f7-83fa-4da3-a178-470b0d341573
-  Args:
-    source: :Feodora_of_Saxe_Meiningen
-    target: :Bernhard_III_of_Saxe_Meiningen
-    relation: :hasFather
-  AssignClass (f58a4274-981c-445b-aabc-4e31ff5967ec)
- Call ID: f58a4274-981c-445b-aabc-4e31ff5967ec
-  Args:
-    source: :Wilhelm_II
-    type: :Man
-  AssignClass (d9cc2739-2670-45c2-a422-c15d5bc8e09e)
- Call ID: d9cc2739-2670-45c2-a422-c15d5bc8e09e
-  Args:
-    source: :Wilhelm_II
-    type: :Person
-  AddTriple (1cc5d7c3-64e2-4f43-ba90-5ee5543f54a1)
- Call ID: 1cc5d7c3-64e2-4f43-ba90-5ee5543f54a1
-  Args:
-    source: :Wilhelm_II
-    target: :Male
-    relation: :hasSex
-  AddTriple (5c41eae4-53a0-426b-85b1-ef4edaf5fb67)
- Call ID: 5c41eae4-53a0-426b-85b1-ef4edaf5fb67
-  Args:
-    target: :Prince_Frederick_of_Prussia
-    relation: :hasFather
-    source: :Wilhelm_II
-  AddTriple (b0f221cb-04c3-4bd5-815d-e43b7b841f56)
- Call ID: b0f221cb-04c3-4bd5-815d-e43b7b841f56
-  Args:
-    relation: :hasMother
-    target: :Victoria_Princess_Royal
-    source: :Wilhelm_II
-  AddTriple (f5e52c36-8dc5-45f9-9871-ddb158be8ece)
- Call ID: f5e52c36-8dc5-45f9-9871-ddb158be8ece
-  Args:
-    target: :Wilhelm_II
-    relation: :hasBrother
-    source: :Charlotte_of_Prussia
-  Finish (15996923-eaf5-45ff-bbe9-480001f39a6d)
- Call ID: 15996923-eaf5-45ff-bbe9-480001f39a6d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -790,44 +728,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Feodora_of_Saxe_Meiningen a :Person,
-          :Woman ;
-      :hasFather data:Bernhard_III_of_Saxe_Meiningen ;
-      :hasMother data:Charlotte_of_Prussia ;
-      :hasSex data:Female .
+  data:Francoise_Cazaudehore a :Person,
+          :Woman .
 
-  data:Charlotte_of_Prussia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1860 ;
-      :hasBrother data:Wilhelm_II ;
-      :hasDeathYear 1919 ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMarriageYear 1878 ;
-      :hasMother data:Victoria_Princess_Royal ;
-      :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;
-      :hasSex data:Female .
+  data:Infanta_Maria_de_las_Mercedes_of_Spain%2Ctarget :hasFather data:Alfonso_XII_of_Spain .
 
-  data:Wilhelm_II a :Man,
+  data:Kristine_Dzidziguri a :Person,
+          :Woman .
+
+  data:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man,
           :Person ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMother data:Victoria_Princess_Royal ;
-      :hasSex data:Male .
+      :hasBirthYear 1977 ;
+      :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+      :hasMarriageYear 2014 ;
+      :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves .
 
-  data:Bernhard_III_of_Saxe_Meiningen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Alfonso_XII_of_Spain a :Man,
+          :Person .
 
-  data:Prince_Frederick_of_Prussia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Victoria_Princess_Royal a :Ancestor,
-          :Person,
+  data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+
+  data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Man,
+          :Person .
+
+  data:Infanta_Maria_de_las_Mercedes_of_Spain a :Person,
+          :Woman ;
+      :hasFather data:Prince_Ferdinand_of_Bavaria .
+
+  data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
+          :Person ;
+      :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+      :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+  data:Prince_Ferdinand_of_Bavaria a :Man,
+          :Person .
+
+  data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
+          :Person .
 
 
 
@@ -837,7 +776,7 @@ The final data graph after all the edits:
 Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
 
 **Classless Nodes:**
-['Male', 'Female']
+['Infanta_Maria_de_las_Mercedes_of_Spain%2Ctarget']
 
 ### Required Correction
 According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
@@ -853,16 +792,18 @@ Proceed with the necessary tool calls now.
 
 []
 Tool Calls:
-  AssignClass (0eb8569b-4ea0-41c9-967a-044c46e43ea8)
- Call ID: 0eb8569b-4ea0-41c9-967a-044c46e43ea8
+  RemoveTriple (de3948f7-a0a1-44cc-98c2-ed73b7ac9b05)
+ Call ID: de3948f7-a0a1-44cc-98c2-ed73b7ac9b05
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (36b12813-ead1-4747-be86-37c57b3b0aa5)
- Call ID: 36b12813-ead1-4747-be86-37c57b3b0aa5
+    target: :Alfonso_XII_of_Spain
+    source: Infanta_Maria_de_las_Mercedes_of_Spain%2Ctarget
+    relation: :hasFather
+  AddTriple (a41b4d37-ee50-46b8-b56c-9d9cced560a9)
+ Call ID: a41b4d37-ee50-46b8-b56c-9d9cced560a9
   Args:
-    source: :Female
-    type: :Sex
-  Finish (7889c607-161d-424f-be2f-f0a3ac9c4dba)
- Call ID: 7889c607-161d-424f-be2f-f0a3ac9c4dba
+    source: :Infanta_Maria_de_las_Mercedes_of_Spain
+    relation: :hasFather
+    target: :Alfonso_XII_of_Spain
+  Finish (90825043-a5a2-443a-997d-2da03d389505)
+ Call ID: 90825043-a5a2-443a-997d-2da03d389505
   Args:

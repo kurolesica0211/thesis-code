@@ -69,76 +69,50 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
+Baroness Gösta von dem Bussche-Haddenhausen (German: Freiin Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen; 26 January 1902 – 13 June 1996) was a German noblewoman and the mother of Prince Claus of the Netherlands.
+Life in Germany
 
-
-Princess Joan
-
-
-Descendants of Prince René:
-
-
-Princess Maria Pia
-
-
-Princess Marina
-
-
-Descendants of Prince Louis:
-
-
-Prince RémyPrincess Elisabeth
-
-
-Princess Chantal
-Prince JeanPrincess Virginia
-
-
-Princess Beatrix*
-
-
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Princess Carolina of Bourbon-Parma, Marchioness of Sala (born 23 June 1974), is the fourth and youngest child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
-She is a member of the House of Bourbon-Parma as well an extended member of the Dutch royal family.
-Per a 1996 royal decree issued by Queen Beatrix, she is entitled to the style and title Her Royal Highness Princess Maria Carolina de Bourbon de Parme in The Netherlands as a member of the extended royal family.
-Early life
-
-Princess Carolina was born at 23 June 1974 in Nijmegen.
-She has two older brothers, Prince Carlos, the head of the House of Bourbon-Parma, and Prince Jaime.
-She also has one older sister, Princess Margarita.
-She was baptised at the Castle of Lignières in France with Prince Claus of the Netherlands, Princess Christina of the Netherlands and Princess Marie des Neiges of Bourbon-Parma as her godparents.
-She moved together with her mother and her brothers and sister to Soest, Netherlands, nearby the then residence of her grandparents the former Queen of the Netherlands Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-Education and career
-
-Princess Carolina studied political science at University of Amsterdam and Harvard University, and also has an M.Sc.
+Gösta was born at Döbeln, Kingdom of Saxony, German Empire (now Saxony, Germany), the second child and daughter of Baron George von dem Bussche-Haddenhausen (1869–1923), and his wife, Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
+Her father belonged to the Bussche-Haddenhausen branch of the Bussche family, and her mother belonged to the Bussche-Ippenburg branch.
+Both of Gösta's parents were descended from Clamor von dem Bussche (1532–1573).
+Gösta's mother was the heir of Dötzingen Estate near Hitzacker, which her maternal grandfather had inherited from the Counts von Oeynhausen after 1918.
+Gösta's father was an officer in the Royal Saxon Army.
+Dötzingen Estate later passed on to Gösta's brother Baron Julius von dem Bussche-Haddenhausen (1906–1977).
+After Gösta's return from Africa and her husband's death in 1963, she spent the rest of her life in Dötzingen.
+Gösta died at the age of 94 in Hitzacker, Germany.
 Marriage
 
-On 9 January 2012, it was announced that Princess Carolina would marry Albert Alphons Ludgerus Brenninkmeijer (born 16 May 1974), a member of the wealthy Brenninkmeijer family.
-The princess has been seen regularly at important events of the royal house of the Netherlands.
-In 2001 she was one of the maids of honor at the wedding of Prince Constantijn and Petra Laurentien Brinkhorst; and during the baptism of their daughter, Countess Eloise of Orange-Nassau, she was the godmother of the child.
-She was a witness at the church wedding of her cousin Prince Floris of Orange-Nassau, van Vollenhoven, and in 2010, was named as the godmother of Floris' second child, Eliane.
+Gösta married Claus Felix von Amsberg (1890–1953), son of Wilhelm von Amsberg and Elise von Vieregge, on 4 September 1924 at Hitzacker.
+Together, Gösta and Claus Felix had six daughters and one son:
 
 
-Titles, styles and honours
+Life in Africa
 
-Already a ducal princess from birth, her father bestowed the substantive title Marchesa di Sala (Marchioness of Sala) upon her on 2 September 1996.
-In 1996 she was incorporated into the Dutch nobility by her aunt Queen Beatrix, with the highest title of nobility Prinses de Bourbon de Parme (Princess of Bourbon-Parma) and styled Hare Koninklijke Hoogheid (Her Royal Highness).
-She does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a granddaughter of Queen Juliana and first cousin of the present King Willem-Alexander, she is officially a member of the more extended Dutch royal family.
-Ancestry
+Gösta's husband Claus Felix had returned from the Tanganyika Territory (now Tanzania), a German colony, during World War I to become the manager of Dötzingen Estate in 1917.
+Shortly after, the estate passed on to the Bussche family.
+In 1924, Gösta and Claus Felix married, and in 1926, their son Claus was born at Dötzingen.
+Claus Felix was the manager of a German-British tea and sisal plantation.
+Claus was sent back to a German boarding school in 1933, but he returned to Africa in 1936.
+In 1938, Gösta returned to Germany, and Claus was sent to a boarding school in Misdroy before being drafted by the army.
+Gösta's husband returned to Germany in 1947.
+Family relations
 
-References
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+Gösta was a second cousin of Dorothea von Salviati (wife of Wilhelm, German Crown Prince's eldest son Prince Wilhelm of Prussia), both being great-granddaughters of Heinrich von Salviati and Caroline Rahlenbeck.
+Gösta's younger and only brother Julius (1906–1977) was married to Anna-Elisabeth von Pfuel (1909–2005).
+Gösta's family's home, Dötzingen Castle in Lower Saxony, had passed to her maternal grandfather, Eberhard Friedrich Gustav von dem Bussche-Ippenburg, from the Counts von Oeynhausen.
+At a dinner party hosted by a distant cousin, the Count von Oeynhausen-Sierstorpff in Bad Driburg, on New Year's Eve 1962, Gösta's son Claus met then-Princess Beatrix of the Netherlands for the first time.
+Beatrix, like Gösta and Claus, was a cousin of the Counts von Oeynhausen: Beatrix's paternal grandmother Armgard von Cramm was a daughter of Baron Aschwin of Sierstorpff-Cramm (1846–1909) and his wife, Baroness Hedwig von Sierstorpff-Driburg (1848–1900).
+Armgard had first been married to Count Bodo von Oeynhausen before marrying Prince Bernhard of Lippe-Biesterfeld (1872–1934), Beatrix's paternal grandfather.
+Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874–1907) was the heir to her mother's family's Driburg Estate.
+Hedwig also married a Count von Oeynhausen, Wilhelm Karl Ludwig Kuno Graf von Oeynhausen-Sierstorpff (1860–1922), whose descendants still own the Driburg Estate.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -154,39 +128,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -201,6 +145,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -218,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -316,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -328,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -336,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -374,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -389,107 +453,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (109f96c4-3566-4f9b-a10f-03e8cd8243e5)
- Call ID: 109f96c4-3566-4f9b-a10f-03e8cd8243e5
+  AssignClass (941f437d-8d34-444c-8e6b-46af57277ac2)
+ Call ID: 941f437d-8d34-444c-8e6b-46af57277ac2
   Args:
-    source: Princess_Carolina_of_Bourbon-Parma
+    source: Gösta_von_dem_Bussche-Haddenhausen
     type: :Woman
-  AssignClass (d9e58ef2-8377-41fa-ad9f-1a3095da0565)
- Call ID: d9e58ef2-8377-41fa-ad9f-1a3095da0565
-  Args:
-    source: Princess_Irene_of_the_Netherlands
-    type: :Woman
-  AssignClass (2c361dd4-a6d3-4f64-b33c-7f12c89b043d)
- Call ID: 2c361dd4-a6d3-4f64-b33c-7f12c89b043d
-  Args:
-    source: Carlos_Hugo_Duke_of_Parma
-    type: :Man
-  AddTriple (7299ec6b-a40a-4859-9ea3-b73bc4eee4b0)
- Call ID: 7299ec6b-a40a-4859-9ea3-b73bc4eee4b0
-  Args:
-    source: Princess_Carolina_of_Bourbon-Parma
-    target: Princess_Irene_of_the_Netherlands
-    relation: :hasMother
-  AddTriple (906ca1bc-1120-43ba-904a-7a54ef62acd2)
- Call ID: 906ca1bc-1120-43ba-904a-7a54ef62acd2
-  Args:
-    target: Carlos_Hugo_Duke_of_Parma
-    relation: :hasFather
-    source: Princess_Carolina_of_Bourbon-Parma
-  AddLiteral (28287185-5032-479e-ac56-a380de028173)
- Call ID: 28287185-5032-479e-ac56-a380de028173
-  Args:
-    source: Princess_Carolina_of_Bourbon-Parma
-    literal_value: 1974
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AssignClass (e545db03-4020-43e1-9d61-32b565f47178)
- Call ID: e545db03-4020-43e1-9d61-32b565f47178
+  AssignClass (9c3faf75-ec20-45da-9f7d-77f1eefdd96e)
+ Call ID: 9c3faf75-ec20-45da-9f7d-77f1eefdd96e
   Args:
     type: :Man
-    source: Prince_Carlos
-  AssignClass (e2f455a6-5ad5-4af6-a78e-38adaa251dfb)
- Call ID: e2f455a6-5ad5-4af6-a78e-38adaa251dfb
-  Args:
-    type: :Man
-    source: Prince_Jaime
-  AssignClass (9535a886-8992-4eb2-b4e5-3c2a22fe591d)
- Call ID: 9535a886-8992-4eb2-b4e5-3c2a22fe591d
-  Args:
-    source: Princess_Margarita
-    type: :Woman
-  AddTriple (c13af8a4-50ef-401a-8d43-74319a59352a)
- Call ID: c13af8a4-50ef-401a-8d43-74319a59352a
-  Args:
-    target: Prince_Carlos
-    relation: :hasBrother
-    source: Princess_Carolina_of_Bourbon-Parma
-  AddTriple (f07782e7-aecc-4d39-a871-2168da0a1dee)
- Call ID: f07782e7-aecc-4d39-a871-2168da0a1dee
-  Args:
-    source: Princess_Carolina_of_Bourbon-Parma
-    relation: :hasBrother
-    target: Prince_Jaime
-  AddTriple (f54f563c-8a85-4892-8f72-6d840723f56c)
- Call ID: f54f563c-8a85-4892-8f72-6d840723f56c
-  Args:
-    relation: :hasSister
-    target: Princess_Margarita
-    source: Princess_Carolina_of_Bourbon-Parma
-  AssignClass (676ff85c-d087-4570-9bfc-6cf19c38daaf)
- Call ID: 676ff85c-d087-4570-9bfc-6cf19c38daaf
+    source: George_von_dem_Bussche-Haddenhausen
+  AssignClass (883ed5e1-7b6b-444d-8d3e-25b12a176f56)
+ Call ID: 883ed5e1-7b6b-444d-8d3e-25b12a176f56
   Args:
     type: :Woman
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (f0fca5a2-bd3c-4135-8b33-c01526090e81)
- Call ID: f0fca5a2-bd3c-4135-8b33-c01526090e81
+    source: Gabriele_von_dem_Bussche-Ippenburg
+  AssignClass (50320d2a-0f23-41d8-9dcc-ef0c083141ec)
+ Call ID: 50320d2a-0f23-41d8-9dcc-ef0c083141ec
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
+    source: Clamor_von_dem_Bussche
     type: :Man
-  AddTriple (86dbc62c-dafc-47f7-bfec-26fc820089a0)
- Call ID: 86dbc62c-dafc-47f7-bfec-26fc820089a0
+  AssignClass (b26297e6-ea28-4ba2-b1a7-2725d2e0e2d0)
+ Call ID: b26297e6-ea28-4ba2-b1a7-2725d2e0e2d0
   Args:
-    relation: :hasMother
-    target: Queen_Juliana_of_the_Netherlands
-    source: Princess_Irene_of_the_Netherlands
-  AddTriple (47be666d-293d-4fc1-a05a-82395d431845)
- Call ID: 47be666d-293d-4fc1-a05a-82395d431845
-  Args:
-    source: Princess_Irene_of_the_Netherlands
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :hasFather
-  AssignClass (c8760b46-e2db-485e-b627-92586de53417)
- Call ID: c8760b46-e2db-485e-b627-92586de53417
-  Args:
-    source: Albert_Alphons_Ludgerus_Brenninkmeijer
+    source: Julius_von_dem_Bussche-Haddenhausen
     type: :Man
-  AddLiteral (acb3f7b8-d1b0-46bc-93ec-d54fd4993594)
- Call ID: acb3f7b8-d1b0-46bc-93ec-d54fd4993594
+  AssignClass (ba4d984d-68f8-4d95-be40-f7a85e0474db)
+ Call ID: ba4d984d-68f8-4d95-be40-f7a85e0474db
   Args:
-    literal_value: 1974
-    source: Albert_Alphons_Ludgerus_Brenninkmeijer
+    type: :Man
+    source: Claus_Felix_von_Amsberg
+  AssignClass (cb3f5f3a-e66b-48c0-ac53-cc172dba82bd)
+ Call ID: cb3f5f3a-e66b-48c0-ac53-cc172dba82bd
+  Args:
+    source: Wilhelm_von_Amsberg
+    type: :Man
+  AssignClass (785d9fac-a5c4-4a3f-a9e3-ab3852d96b18)
+ Call ID: 785d9fac-a5c4-4a3f-a9e3-ab3852d96b18
+  Args:
+    type: :Woman
+    source: Elise_von_Vieregge
+  AssignClass (57f58bbf-4ce7-437d-8260-f37455fb2812)
+ Call ID: 57f58bbf-4ce7-437d-8260-f37455fb2812
+  Args:
+    source: Claus_von_Amsberg
+    type: :Man
+  AddLiteral (91c12c7a-d16c-4599-9ad6-c42f13601693)
+ Call ID: 91c12c7a-d16c-4599-9ad6-c42f13601693
+  Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-  Finish (a2fd7d4c-fc82-46b3-a266-c57060805346)
- Call ID: a2fd7d4c-fc82-46b3-a266-c57060805346
+    source: Gösta_von_dem_Bussche-Haddenhausen
+    literal_value: 1902
+  AddLiteral (10a8d080-9add-4819-9d22-2230091c0362)
+ Call ID: 10a8d080-9add-4819-9d22-2230091c0362
+  Args:
+    literal_value: 1996
+    source: Gösta_von_dem_Bussche-Haddenhausen
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (647dcdbc-6c5b-40b5-b053-249ed5e97585)
+ Call ID: 647dcdbc-6c5b-40b5-b053-249ed5e97585
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1869
+    source: George_von_dem_Bussche-Haddenhausen
+  AddLiteral (6fbdc3c2-542a-4f86-9a06-78c0a4c06866)
+ Call ID: 6fbdc3c2-542a-4f86-9a06-78c0a4c06866
+  Args:
+    literal_value: 1923
+    source: George_von_dem_Bussche-Haddenhausen
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (af683df1-36a1-4e5d-8818-f264d086b755)
+ Call ID: af683df1-36a1-4e5d-8818-f264d086b755
+  Args:
+    source: Gabriele_von_dem_Bussche-Ippenburg
+    literal_value: 1877
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (b3c43bbd-f34c-416b-90d0-3a2afce1b13c)
+ Call ID: b3c43bbd-f34c-416b-90d0-3a2afce1b13c
+  Args:
+    source: Gabriele_von_dem_Bussche-Ippenburg
+    literal_value: 1973
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (60c680be-1327-490d-bd4f-6676f2b0aa35)
+ Call ID: 60c680be-1327-490d-bd4f-6676f2b0aa35
+  Args:
+    source: Clamor_von_dem_Bussche
+    literal_value: 1532
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (0d289016-3f86-45fd-b8da-7d61743686eb)
+ Call ID: 0d289016-3f86-45fd-b8da-7d61743686eb
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Clamor_von_dem_Bussche
+    literal_value: 1573
+  AddLiteral (46b27d81-4dd5-4607-81fb-f3c1de99df91)
+ Call ID: 46b27d81-4dd5-4607-81fb-f3c1de99df91
+  Args:
+    literal_value: 1906
+    source: Julius_von_dem_Bussche-Haddenhausen
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (3b809a32-90bb-45a2-ab52-52af627fba8d)
+ Call ID: 3b809a32-90bb-45a2-ab52-52af627fba8d
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1977
+    source: Julius_von_dem_Bussche-Haddenhausen
+  AddLiteral (40856825-a00d-49b1-a237-122625da4d86)
+ Call ID: 40856825-a00d-49b1-a237-122625da4d86
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Claus_Felix_von_Amsberg
+    literal_value: 1890
+  AddLiteral (b9197412-c421-4705-9ce5-ede0234090b0)
+ Call ID: b9197412-c421-4705-9ce5-ede0234090b0
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1953
+    source: Claus_Felix_von_Amsberg
+  AddLiteral (b95befe4-9bda-4726-b49b-946b3a33d5ce)
+ Call ID: b95befe4-9bda-4726-b49b-946b3a33d5ce
+  Args:
+    source: Claus_von_Amsberg
+    literal_value: 1926
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (6b6fab5c-9a6f-43d9-ac86-4903c0bdf2ea)
+ Call ID: 6b6fab5c-9a6f-43d9-ac86-4903c0bdf2ea
+  Args:
+    source: Gösta_von_dem_Bussche-Haddenhausen
+    target: George_von_dem_Bussche-Haddenhausen
+    relation: :hasFather
+  AddTriple (93131ee5-9ae7-4dfd-9150-2c91f73555d4)
+ Call ID: 93131ee5-9ae7-4dfd-9150-2c91f73555d4
+  Args:
+    source: Gösta_von_dem_Bussche-Haddenhausen
+    target: Gabriele_von_dem_Bussche-Ippenburg
+    relation: :hasMother
+  AddTriple (57b93721-0e44-4cca-9f4e-43fbbf6cba2b)
+ Call ID: 57b93721-0e44-4cca-9f4e-43fbbf6cba2b
+  Args:
+    relation: :hasFather
+    target: George_von_dem_Bussche-Haddenhausen
+    source: Julius_von_dem_Bussche-Haddenhausen
+  AddTriple (31540040-bab3-4fad-9a1f-c0185c9f83b3)
+ Call ID: 31540040-bab3-4fad-9a1f-c0185c9f83b3
+  Args:
+    target: Gabriele_von_dem_Bussche-Ippenburg
+    source: Julius_von_dem_Bussche-Haddenhausen
+    relation: :hasMother
+  AddTriple (4e173d31-1cb2-4550-9b4d-edb7769b2339)
+ Call ID: 4e173d31-1cb2-4550-9b4d-edb7769b2339
+  Args:
+    relation: :hasFather
+    target: Claus_Felix_von_Amsberg
+    source: Claus_von_Amsberg
+  AddTriple (77ec257e-5d34-4ea6-a253-2308c1586b84)
+ Call ID: 77ec257e-5d34-4ea6-a253-2308c1586b84
+  Args:
+    relation: :hasMother
+    source: Claus_von_Amsberg
+    target: Gösta_von_dem_Bussche-Haddenhausen
+  AddTriple (b45414c7-2916-419d-ab59-6ef0611b4c2a)
+ Call ID: b45414c7-2916-419d-ab59-6ef0611b4c2a
+  Args:
+    relation: :hasFather
+    source: Claus_Felix_von_Amsberg
+    target: Wilhelm_von_Amsberg
+  AddTriple (18ed55a9-1745-4de4-ac36-c89c0bee1a05)
+ Call ID: 18ed55a9-1745-4de4-ac36-c89c0bee1a05
+  Args:
+    target: Elise_von_Vieregge
+    source: Claus_Felix_von_Amsberg
+    relation: :hasMother
+  AddLiteral (ce793e04-8a6c-492e-ad82-2cf50509fef4)
+ Call ID: ce793e04-8a6c-492e-ad82-2cf50509fef4
+  Args:
+    literal_value: 1924
+    source: Gösta_von_dem_Bussche-Haddenhausen
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  Finish (68d96855-6de4-4704-8307-91e5f93b791a)
+ Call ID: 68d96855-6de4-4704-8307-91e5f93b791a
   Args:

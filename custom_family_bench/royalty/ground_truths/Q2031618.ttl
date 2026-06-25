@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste",
+        "Prince Aimone of Savoy-Aosta",
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta",
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta",
+        "Prince Aimone, Duke of Aosta",
+        "Prince Aimone, The 6th Duke of Aosta",
+        "Prince Aimone, The Duke of Aosta" ;
+    :hasSex data:male .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
+    data:posIndicesFull "1140:1158",
+        "128:146" ;
+    data:posIndicesPart "1009:1015",
+        "1052:1056",
+        "1060:1065",
+        "389:395",
+        "413:417",
+        "421:426",
+        "558:564",
+        "791:795",
+        "860:866",
+        "875:879",
+        "883:888",
+        "947:951",
+        "999:1007" ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto" ;
+    :hasSex data:male .
+
+data:Prince_Jean_dOrléans_1 a :Person ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "714:740" ;
+    data:posIndicesPart "1009:1015",
+        "860:866" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+

@@ -2,40 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor a :Person,
-        :Woman ;
-    :hasBirthYear 1992 ;
-    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
-    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
-    :hasMother data:Sylvana_Tomaselli ;
-    :hasSister data:Lady_Amelia_Windsor .
-
-data:Edward_Windsor_Lord_Downpatrick a :Man,
-        :Person .
-
-data:George_Windsor_Earl_of_St_Andrews a :Ancestor,
+data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Prince_Edward_Duke_of_Kent ;
-    :hasMother data:Katharine_Duchess_of_Kent .
+    :hasSex data:Male ;
+    :isFatherOf data:Julia_Caroline_Rawlinson .
 
-data:Katharine_Duchess_of_Kent a :Ancestor,
-        :Person,
+data:Marina_Ogilvy a :Person,
         :Woman ;
-    :hasFather data:Sir_William_Worsley_4th_Baronet .
+    :hasSex data:Female ;
+    :isSisterOf data:James_Robert_Bruce_Ogilvy .
 
-data:Lady_Amelia_Windsor a :Person,
-        :Woman .
+data:James_Robert_Bruce_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 ;
+    :hasMarriageYear 1988 ;
+    :hasRelation data:Julia_Caroline_Rawlinson ;
+    :hasSex data:Male .
 
-data:Prince_Edward_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person .
+data:Female a :Sex .
 
-data:Sir_William_Worsley_4th_Baronet a :Ancestor,
-        :Man,
-        :Person .
+data:Julia_Caroline_Rawlinson a :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Sylvana_Tomaselli a :Ancestor,
-        :Person,
-        :Woman .
+data:Male a :Sex .
 

@@ -4,20 +4,90 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :hasSex data:Male ;\n    :isFatherOf data:Pim_Lier,\n        data:Princess_Juliana ;\n    :knownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string .\n\ndata:Jan_Derk_Lier a :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Wilhelmina a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Princess_Juliana .\n\ndata:Willemina_Martina_Wenneker a :Woman ;\n    :formerlyKnownAs \"Mien Abbo-Wenneker\"^^xsd:string ;\n    :hasSex data:Female ;\n    :isMotherOf data:Pim_Lier ;\n    :knownAs \"Mien Lier-Wenneker\"^^xsd:string .\n\ndata:Frederick_Francis_II a :Man ;\n    :hasSex data:Male .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Woman ;\n    :hasSex data:Female .\n\ndata:Pim_Lier a :Man ;\n    :hasSex data:Male ;\n    :knownAs \"Albrecht Willem Lier\"^^xsd:string .\n\ndata:Princess_Juliana a :Woman ;\n    :hasSex data:Female .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 2,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :hasSex data:Male ;\n    :isFatherOf data:Pim_Lier,\n        data:Princess_Juliana ;\n    :knownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string .\n\ndata:Jan_Derk_Lier a :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Wilhelmina a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Princess_Juliana .\n\ndata:Willemina_Martina_Wenneker a :Woman ;\n    :formerlyKnownAs \"Mien Abbo-Wenneker\"^^xsd:string ;\n    :hasSex data:Female ;\n    :isMotherOf data:Pim_Lier ;\n    :knownAs \"Mien Lier-Wenneker\"^^xsd:string .\n\ndata:Frederick_Francis_II a :Man ;\n    :hasSex data:Male .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Woman ;\n    :hasSex data:Female .\n\ndata:Pim_Lier a :Man ;\n    :hasSex data:Male ;\n    :knownAs \"Albrecht Willem Lier\"^^xsd:string .\n\ndata:Princess_Juliana a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna ;\n    :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna ;\n    :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;\n    :hasMother data:Mathilde_Kschessinska .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Henry_of_Mecklenburg-Schwerin a :Man ;\n    :hasBirthYear 1876 ;\n    :hasDeathYear 1934 ;\n    :hasFather data:Frederick_Francis_II ;\n    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;\n    :hasSex data:Male ;\n    :isFatherOf data:Pim_Lier,\n        data:Princess_Juliana ;\n    :knownAs \"Heinrich Wladimir Albrecht Ernst\"^^xsd:string,\n        \"Hendrik Vladimir Albrecht Ernst\"^^xsd:string .\n\ndata:Jan_Derk_Lier a :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Wilhelmina a :Woman ;\n    :hasSex data:Female ;\n    :isMotherOf data:Princess_Juliana .\n\ndata:Willemina_Martina_Wenneker a :Woman ;\n    :formerlyKnownAs \"Mien Abbo-Wenneker\"^^xsd:string ;\n    :hasSex data:Female ;\n    :isMotherOf data:Pim_Lier ;\n    :knownAs \"Mien Lier-Wenneker\"^^xsd:string .\n\ndata:Frederick_Francis_II a :Man ;\n    :hasSex data:Male .\n\ndata:Marie_of_Schwarzburg-Rudolstadt a :Woman ;\n    :hasSex data:Female .\n\ndata:Pim_Lier a :Man ;\n    :hasSex data:Male ;\n    :knownAs \"Albrecht Willem Lier\"^^xsd:string .\n\ndata:Princess_Juliana a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;\n    :hasMarriageYear 1921 ;\n    :hasMother data:Grand_Duchess_Maria_Pavlovna ;\n    :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky .\n\ndata:Grand_Duchess_Maria_Pavlovna a :Woman .\n\ndata:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .\n\ndata:Mathilde_Kschessinska a :Woman .\n\ndata:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;\n    :hasMother data:Mathilde_Kschessinska .\n\n"
     }
 ]

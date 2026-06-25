@@ -1,0 +1,312 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_Blahova a :Ancestor,
+        :Woman ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Alexandra_Blahova ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isAuntOf data:Tatiana_von_Preussen ;
+    :isBloodrelationOf data:Alexandra_Blahova ;
+    :isMotherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Alexandra_Blahova ;
+    :isSisterOf data:Alexandra_Blahova .
+
+data:Lady_Brigid_Guinness a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Andreas_of_Prussia ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Lady_Brigid_Guinness ;
+    :hasSon data:Prince_Andreas_of_Prussia ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Prince_Andreas_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isAuntOf data:Prince_Andreas_of_Prussia ;
+    :isBloodrelationOf data:Lady_Brigid_Guinness ;
+    :isMotherOf data:Prince_Andreas_of_Prussia ;
+    :isParentOf data:Prince_Andreas_of_Prussia ;
+    :isSiblingOf data:Lady_Brigid_Guinness ;
+    :isSisterOf data:Lady_Brigid_Guinness .
+
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Frederick_of_Prussia ;
+    :hasChild data:Prince_Andreas_of_Prussia ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSon data:Prince_Andreas_of_Prussia ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Prince_Andreas_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Prince_Frederick_of_Prussia ;
+    :isBrotherOf data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Prince_Andreas_of_Prussia ;
+    :isParentOf data:Prince_Andreas_of_Prussia ;
+    :isSiblingOf data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Prince_Andreas_of_Prussia .
+
+data:Philip_Womack a :Ancestor,
+        :Man ;
+    :hasBrother data:Philip_Womack ;
+    :hasChild data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasDaughter data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSon data:Arthur_Frederick_Richard_Womack_von_Preussen ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Philip_Womack ;
+    :isBrotherOf data:Philip_Womack ;
+    :isFatherOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isParentOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isSiblingOf data:Philip_Womack ;
+    :isUncleOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen .
+
+data:Prince_Andreas_of_Prussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasBrother data:Prince_Andreas_of_Prussia ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasParent data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Prince_Andreas_of_Prussia ;
+    :isBrotherOf data:Prince_Andreas_of_Prussia ;
+    :isChildOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isFatherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Prince_Andreas_of_Prussia ;
+    :isSonOf data:Lady_Brigid_Guinness,
+        data:Prince_Frederick_of_Prussia ;
+    :isUncleOf data:Tatiana_von_Preussen .
+
+data:Amalia_Maria_Brigid_Womack_von_Preussen a :Woman ;
+    :hasAncestor data:Alexandra_Blahova,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasBirthYear 2020 ;
+    :hasBrother data:Arthur_Frederick_Richard_Womack_von_Preussen ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen ;
+    :hasParent data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isChildOf data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :isDaughterOf data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isSisterOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen .
+
+data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man ;
+    :hasAncestor data:Alexandra_Blahova,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasBirthYear 2015 ;
+    :hasBrother data:Arthur_Frederick_Richard_Womack_von_Preussen ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen ;
+    :hasParent data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBrotherOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isChildOf data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isSonOf data:Philip_Womack,
+        data:Tatiana_von_Preussen .
+
+data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Woman ;
+    :hasAncestor data:Alexandra_Blahova,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasBirthYear 2020 ;
+    :hasBrother data:Arthur_Frederick_Richard_Womack_von_Preussen ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen ;
+    :hasParent data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isChildOf data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :isDaughterOf data:Philip_Womack,
+        data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isSisterOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen .
+
+data:Tatiana_von_Preussen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alexandra_Blahova,
+        data:Lady_Brigid_Guinness,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia ;
+    :hasBirthYear 1980 ;
+    :hasChild data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasDaughter data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasFather data:Prince_Andreas_of_Prussia ;
+    :hasMarriageYear 2014 ;
+    :hasMother data:Alexandra_Blahova ;
+    :hasParent data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Lady_Brigid_Guinness,
+        data:Philip_Womack,
+        data:Prince_Andreas_of_Prussia,
+        data:Prince_Frederick_of_Prussia,
+        data:Tatiana_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :hasSister data:Tatiana_von_Preussen ;
+    :hasSon data:Arthur_Frederick_Richard_Womack_von_Preussen ;
+    :isAncestorOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isAuntOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isBloodrelationOf data:Tatiana_von_Preussen ;
+    :isChildOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :isDaughterOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :isMotherOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isParentOf data:Amalia_Maria_Brigid_Womack_von_Preussen,
+        data:Arthur_Frederick_Richard_Womack_von_Preussen,
+        data:Xenia_Alexandra_Selena_Womack_von_Preussen ;
+    :isSiblingOf data:Tatiana_von_Preussen ;
+    :isSisterOf data:Tatiana_von_Preussen .
+

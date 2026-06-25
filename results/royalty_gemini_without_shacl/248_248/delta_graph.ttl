@@ -2,40 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marina_of_Greece_and_Denmark a :Woman .
+data:Carl_Duke_of_Wurttemberg a :Man,
+        :Person ;
+    :hasRelation data:Diane_dOrleans ;
+    :isBrotherOf data:Marie_Therese_of_Wurttemberg .
 
-data:Christian_Alexander_Mowatt a :Man ;
-    :hasBirthYear 1993 ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :isFatherOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont .
 
-data:Zenouska_May_Mowatt a :Woman ;
-    :hasBirthYear 1990 ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont .
 
-data:Alexandra_of_Kent a :Woman ;
-    :isMotherOf data:James_Ogilvy,
-        data:Marina_Ogilvy .
+data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+        :Man ;
+    :isFatherOf data:Marie_Therese_of_Wurttemberg .
 
-data:Angus_Ogilvy a :Man ;
-    :isFatherOf data:James_Ogilvy,
-        data:Marina_Ogilvy .
+data:Rosa_of_Austria a :Ancestor,
+        :Woman ;
+    :isMotherOf data:Marie_Therese_of_Wurttemberg .
 
-data:Paul_Julian_Mowatt a :Man ;
-    :hasBirthYear 1962 .
+data:Diane_dOrleans a :Person,
+        :Woman ;
+    :isSisterOf data:Henri_Count_of_Clermont .
 
-data:James_Ogilvy a :Man ;
-    :hasBirthYear 1964 ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasMother data:Alexandra_of_Kent .
+data:Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasMarriageYear 1957 ;
+    :hasRelation data:Henri_Count_of_Clermont .
 
-data:Marina_Ogilvy a :Woman ;
-    :hasBirthYear 1966 ;
-    :hasBrother data:James_Ogilvy ;
-    :hasChild data:Christian_Alexander_Mowatt,
-        data:Zenouska_May_Mowatt ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasMother data:Alexandra_of_Kent ;
-    :isSisterOf data:James_Ogilvy .
+data:Henri_Count_of_Clermont a :Man,
+        :Person .
 

@@ -2,37 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ashley_Harcourt a :Woman ;
-    :hasFather data:Howard_Oxenberg .
+data:Alessandro_Torlonia a :Man .
 
-data:Christina_Oxenberg a :Woman ;
-    :hasBirthYear 1962 ;
-    :hasFather data:Howard_Oxenberg ;
-    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
-    :hasSister data:Catherine_Oxenberg .
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasDaughter data:Olimpia,
+        data:Sandra ;
+    :hasDeathYear 2002 ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi ;
+    :hasSister data:Maria_Cristina ;
+    :hasSon data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :isAuntOf data:King_Juan_Carlos_I ;
+    :knownAs "Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg"^^xsd:string .
 
-data:Neil_Balfour a :Man ;
-    :hasBirthYear 1970 ;
-    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
+data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi a :Man,
+        :Person .
 
-data:Robert_Oxenberg a :Man ;
-    :hasFather data:Howard_Oxenberg .
+data:Alfonso_Count_of_Covadonga a :Man,
+        :Person .
 
-data:Starr_Oxenberg a :Woman ;
-    :hasFather data:Howard_Oxenberg .
+data:Don_Juan a :Man,
+        :Person .
 
-data:Catherine_Oxenberg a :Woman .
+data:Gonzalo a :Man,
+        :Person .
 
-data:Prince_Paul_of_Yugoslavia a :Man .
+data:King_Alfonso_XIII_of_Spain a :Man,
+        :Person .
 
-data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+data:King_Juan_Carlos_I a :Man,
+        :Person .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
-    :hasBirthYear 1936 ;
-    :hasFather data:Prince_Paul_of_Yugoslavia ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+data:Marco a :Man,
+        :Person .
 
-data:Howard_Oxenberg a :Man ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 2010 .
+data:Maria_Cristina a :Person,
+        :Woman .
+
+data:Marino_son_of_Beatriz a :Man,
+        :Person .
+
+data:Olimpia a :Person,
+        :Woman .
+
+data:Sandra a :Person,
+        :Woman .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
 

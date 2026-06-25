@@ -85,28 +85,33 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexander Patrick Gregers Richard Windsor, Earl of Ulster (born 24 October 1974), is a member of the British royal family and the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-He is the heir apparent to the dukedom of Gloucester and is the second cousin of Charles III.
-He is also sometimes referred to as Alex Ulster.
-Early life and education
+The Dowager Princess Napoléon
 
-Alexander Patrick Gregers Richard Windsor was born prematurely on 24 October 1974 at St Mary's Hospital, London.
-He is the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-Alexander attended Eton College and later graduated with a degree in war studies from King's College London in 1996.
-Military career
 
-Alexander was commissioned in the King's Royal Hussars on 10 April 1998 as a subaltern (second lieutenant) with seniority from 14 April 1995; he was given the service number 548299.
-Marriage and family
+Jean-Christophe, Prince Napoléon, Prince of Montfort (born Jean-Christophe Louis Ferdinand Albéric Napoléon Bonaparte; 11 July 1986), is a French businessman and the disputed head of the Imperial House of France, and as such the heir of Napoleon Bonaparte, the first Emperor of the French.
+Family background
 
-On 22 June 2002, Alexander married Claire Booth, a physician, at the Queen's Chapel, St James's Palace.
-Lady Ulster is a professor of Gene Therapy and Paediatric Immunology at University College London's Great Ormond Street Institute of Child Health.
-Alexander continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Jean-Christophe was born on 11 July 1986 in Saint-Raphaël, Var, France.
+He is the son of Charles, Prince Napoléon and his first wife Princess Béatrice of Bourbon-Two Sicilies, daughter of the late Prince Ferdinand of Bourbon, Duke of Castro, a claimant to headship of the former Royal House of the Two Sicilies.
+His parents divorced on 2 May 1989, two months before his third birthday.
+Jean-Christophe is the great-great-great-grandnephew of Emperor Napoleon I (who has no legitimate direct descendants) through the emperor's youngest brother, Jérôme, King of Westphalia.
+Through his mother, he is a descendant of King Louis XIV of France and through his great-grandmother, Princess Clémentine of Belgium, he descends from Leopold II of Belgium, William IV, Prince of Orange, Charles III of Spain, Frederick William I of Prussia, George II of Great Britain, Victor Emmanuel II, the first King of Italy, and Louis Philippe I, King of the French, who was the last king to rule France, while his great-great-grandfather was Prince Napoléon Bonaparte, the cousin of the Emperor Napoleon III, France's most recent monarch.
+Prince Napoléon
+
+Jean-Christophe's grandfather, Louis, Prince Napoléon, died in 1997 and stipulated in his will that he wished his 11-year-old grandson Jean-Christophe to succeed him as Head of the Imperial House of France rather than the boy's father, Charles, who had embraced republican principles and decided to remarry without his father's consent.
+Despite the dynastic dispute, Jean-Christophe's father has stated that "there will never be conflict" between him and his son over the imperial succession.
+Education and career
+
+Jean-Christophe studied at Lycée Saint-Dominique in Neuilly-sur-Seine from 2001 to 2004, obtaining a baccalauréat with honours in the sciences and mathematics.
+Jean-Christophe and Olympia have one son, Prince Louis Charles Riprand Victor Jérôme Marie Napoléon, born 7 December 2022 in Paris.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +127,9 @@ Alexander continues to make public appearances at state events alongside other m
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +144,23 @@ Alexander continues to make public appearances at state events alongside other m
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,88 +452,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a7d2bd04-2e25-4be7-a125-49368a26ea15)
- Call ID: a7d2bd04-2e25-4be7-a125-49368a26ea15
+  AssignClass (ab2f9c63-e543-4526-af05-a5274c674636)
+ Call ID: ab2f9c63-e543-4526-af05-a5274c674636
   Args:
+    source: Jean-Christophe_Napoléon
     type: :Man
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AssignClass (e9b34de6-a981-4dca-b1c8-2a6407e8422f)
- Call ID: e9b34de6-a981-4dca-b1c8-2a6407e8422f
+  AssignClass (bae66a86-f706-4670-b1c0-ad20caef5c75)
+ Call ID: bae66a86-f706-4670-b1c0-ad20caef5c75
   Args:
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    type: :Person
-  AssignClass (0c163977-f5c9-429d-95a8-340eb7a885d7)
- Call ID: 0c163977-f5c9-429d-95a8-340eb7a885d7
-  Args:
-    source: Prince_Richard_Duke_of_Gloucester
+    source: Charles_Napoléon
     type: :Man
-  AssignClass (a8ea9337-9701-49d5-b300-f3f331148e05)
- Call ID: a8ea9337-9701-49d5-b300-f3f331148e05
+  AssignClass (e559b027-0b12-47e2-98c1-b0d1dcdd8b96)
+ Call ID: e559b027-0b12-47e2-98c1-b0d1dcdd8b96
   Args:
-    type: :Person
-    source: Prince_Richard_Duke_of_Gloucester
-  AssignClass (47438b17-fae8-44a8-9357-b0d1593e16de)
- Call ID: 47438b17-fae8-44a8-9357-b0d1593e16de
-  Args:
+    source: Béatrice_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Birgitte_Duchess_of_Gloucester
-  AssignClass (fe10bcaa-4545-4a70-87be-2438a6055dd7)
- Call ID: fe10bcaa-4545-4a70-87be-2438a6055dd7
+  AssignClass (2e80dae7-422d-4d80-9328-4528e9744fb7)
+ Call ID: 2e80dae7-422d-4d80-9328-4528e9744fb7
   Args:
-    type: :Person
-    source: Birgitte_Duchess_of_Gloucester
-  AssignClass (9e6537ee-f7cf-44fd-9631-2c082e9db64c)
- Call ID: 9e6537ee-f7cf-44fd-9631-2c082e9db64c
+    source: Ferdinand_of_Bourbon
+    type: :Man
+  AssignClass (452b4308-eeae-471c-b4b0-13e9fa42aa18)
+ Call ID: 452b4308-eeae-471c-b4b0-13e9fa42aa18
   Args:
+    source: Louis_Napoléon
+    type: :Man
+  AssignClass (2c10d996-25e0-4569-8d21-111d0a94d6f2)
+ Call ID: 2c10d996-25e0-4569-8d21-111d0a94d6f2
+  Args:
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+    type: :Man
+  AssignClass (36b6b257-9c92-4118-bdbd-9b619e626265)
+ Call ID: 36b6b257-9c92-4118-bdbd-9b619e626265
+  Args:
+    source: Olympia
     type: :Woman
-    source: Claire_Booth
-  AssignClass (a6025ee0-2c89-4e4b-9a54-9104937d0677)
- Call ID: a6025ee0-2c89-4e4b-9a54-9104937d0677
-  Args:
-    type: :Person
-    source: Claire_Booth
-  AddLiteral (a8f56741-12d7-493a-a580-977fbf6fc98f)
- Call ID: a8f56741-12d7-493a-a580-977fbf6fc98f
+  AddLiteral (cbcf75d3-0c68-4484-bb70-f27962c4b7e2)
+ Call ID: cbcf75d3-0c68-4484-bb70-f27962c4b7e2
   Args:
     relation: :hasBirthYear
-    literal_value: 1974
-    source: Alexander_Patrick_Gregers_Richard_Windsor
+    source: Jean-Christophe_Napoléon
     literal_type: xsd:integer
-  AddLiteral (ef500d46-8e51-48e3-8d3e-9966121fc846)
- Call ID: ef500d46-8e51-48e3-8d3e-9966121fc846
+    literal_value: 1986
+  AddTriple (dc8bef4c-96db-47cb-acfb-e4ee50e2b3ff)
+ Call ID: dc8bef4c-96db-47cb-acfb-e4ee50e2b3ff
   Args:
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Alex Ulster
-  AddTriple (ad1c53a8-0fd4-4407-850a-107af05329c6)
- Call ID: ad1c53a8-0fd4-4407-850a-107af05329c6
-  Args:
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    target: Prince_Richard_Duke_of_Gloucester
+    target: Charles_Napoléon
+    source: Jean-Christophe_Napoléon
     relation: :hasFather
-  AddTriple (2cdf38fc-c78e-41bd-b88b-dcc200b123d3)
- Call ID: 2cdf38fc-c78e-41bd-b88b-dcc200b123d3
+  AddTriple (ea481c33-354d-42f9-8c79-490ef7d3123d)
+ Call ID: ea481c33-354d-42f9-8c79-490ef7d3123d
   Args:
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    target: Birgitte_Duchess_of_Gloucester
     relation: :hasMother
-  AddTriple (ed01254b-766e-4f0a-b90d-35a145fb2e74)
- Call ID: ed01254b-766e-4f0a-b90d-35a145fb2e74
+    source: Jean-Christophe_Napoléon
+    target: Béatrice_of_Bourbon-Two_Sicilies
+  AddTriple (c4b98a37-e219-4374-a8f2-bdfa57d76b9c)
+ Call ID: c4b98a37-e219-4374-a8f2-bdfa57d76b9c
   Args:
-    target: Claire_Booth
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    relation: :hasRelation
-  AddLiteral (88ae9749-e087-4c07-91a4-38d4f4a6764f)
- Call ID: 88ae9749-e087-4c07-91a4-38d4f4a6764f
+    relation: :hasFather
+    source: Béatrice_of_Bourbon-Two_Sicilies
+    target: Ferdinand_of_Bourbon
+  AddTriple (eece100e-af68-4240-95e1-493685319b55)
+ Call ID: eece100e-af68-4240-95e1-493685319b55
   Args:
-    relation: :hasMarriageYear
-    literal_value: 2002
-    source: Alexander_Patrick_Gregers_Richard_Windsor
+    target: Louis_Napoléon
+    source: Charles_Napoléon
+    relation: :hasFather
+  AddLiteral (5b3bcfc4-788d-4a01-b7a0-1778514053ec)
+ Call ID: 5b3bcfc4-788d-4a01-b7a0-1778514053ec
+  Args:
     literal_type: xsd:integer
-  Finish (e023e54c-692c-46aa-95ec-09778315c378)
- Call ID: e023e54c-692c-46aa-95ec-09778315c378
+    literal_value: 1997
+    source: Louis_Napoléon
+    relation: :hasDeathYear
+  AddTriple (e8ac0855-0cd4-479b-b3e2-0220ed30408d)
+ Call ID: e8ac0855-0cd4-479b-b3e2-0220ed30408d
   Args:
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+    relation: :hasFather
+    target: Jean-Christophe_Napoléon
+  AddTriple (0712bee7-a219-4ee5-a965-753cc9f8fa2e)
+ Call ID: 0712bee7-a219-4ee5-a965-753cc9f8fa2e
+  Args:
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+    relation: :hasMother
+    target: Olympia
+  AddLiteral (62e4cda3-f314-4c25-9630-2b4c58206172)
+ Call ID: 62e4cda3-f314-4c25-9630-2b4c58206172
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2022
+    relation: :hasBirthYear
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+  Finish (88b7a891-bedf-4259-ab70-62a6d2fae948)
+ Call ID: 88b7a891-bedf-4259-ab70-62a6d2fae948
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -499,23 +615,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
-          :Person ;
-      :alsoKnownAs "Alex Ulster"^^xsd:string ;
-      :hasBirthYear 1974 ;
-      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-      :hasMarriageYear 2002 ;
-      :hasMother data:Birgitte_Duchess_of_Gloucester ;
-      :hasRelation data:Claire_Booth .
+  data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+      :hasBirthYear 2022 ;
+      :hasFather data:Jean-Christophe_Napol%C3%A9on ;
+      :hasMother data:Olympia .
 
-  data:Birgitte_Duchess_of_Gloucester a :Person,
-          :Woman .
+  data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;
+      :hasFather data:Ferdinand_of_Bourbon .
 
-  data:Claire_Booth a :Person,
-          :Woman .
+  data:Charles_Napol%C3%A9on a :Man ;
+      :hasFather data:Louis_Napol%C3%A9on .
 
-  data:Prince_Richard_Duke_of_Gloucester a :Man,
-          :Person .
+  data:Ferdinand_of_Bourbon a :Man .
+
+  data:Jean-Christophe_Napol%C3%A9on a :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Charles_Napol%C3%A9on ;
+      :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+  data:Louis_Napol%C3%A9on a :Man ;
+      :hasDeathYear 1997 .
+
+  data:Olympia a :Woman .
 
 
 
@@ -527,62 +648,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3fb30b0a-95d1-4df9-b127-f2ded1fd3b64)
- Call ID: 3fb30b0a-95d1-4df9-b127-f2ded1fd3b64
+  ValidateShacl (95c1b7e2-c056-447c-87c4-40c92430d912)
+ Call ID: 95c1b7e2-c056-447c-87c4-40c92430d912
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Richard_Duke_of_Gloucester assigned to the hasFather property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person Jean-Christophe_Napol%C3%A9on is listed as the father of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(Jean-Christophe_Napol%C3%A9on, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Birgitte_Duchess_of_Gloucester assigned to the hasMother property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person Charles_Napol%C3%A9on is listed as the father of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(Charles_Napol%C3%A9on, :Man)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Richard_Duke_of_Gloucester assigned to the hasFather property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person Louis_Napol%C3%A9on is listed as the father of Charles_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(Louis_Napol%C3%A9on, :Man)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Birgitte_Duchess_of_Gloucester assigned to the hasMother property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person Olympia is listed as the mother of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(Olympia, :Woman)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Richard_Duke_of_Gloucester assigned to the hasFather property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person B%C3%A9atrice_of_Bourbon-Two_Sicilies is listed as the mother of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(B%C3%A9atrice_of_Bourbon-Two_Sicilies, :Woman)
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Charles_Napol%C3%A9on is listed as the father of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Napol%C3%A9on, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jean-Christophe_Napol%C3%A9on is listed as the father of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jean-Christophe_Napol%C3%A9on, :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Napol%C3%A9on is listed as the father of Charles_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Napol%C3%A9on, :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is listed as the father of B%C3%A9atrice_of_Bourbon-Two_Sicilies, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
+
+
+  Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Birgitte_Duchess_of_Gloucester assigned to the hasMother property of Alexander_Patrick_Gregers_Richard_Windsor is missing the required class :Ancestor.
+      The person B%C3%A9atrice_of_Bourbon-Two_Sicilies is listed as the mother of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(B%C3%A9atrice_of_Bourbon-Two_Sicilies, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Olympia is listed as the mother of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olympia, :Woman)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Charles_Napol%C3%A9on is listed as the father of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Napol%C3%A9on, :Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jean-Christophe_Napol%C3%A9on is listed as the father of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jean-Christophe_Napol%C3%A9on, :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Napol%C3%A9on is listed as the father of Charles_Napol%C3%A9on, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Napol%C3%A9on, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is listed as the father of B%C3%A9atrice_of_Bourbon-Two_Sicilies, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person B%C3%A9atrice_of_Bourbon-Two_Sicilies is listed as the mother of Jean-Christophe_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(B%C3%A9atrice_of_Bourbon-Two_Sicilies, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Olympia is listed as the mother of Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on, but is missing the required :Ancestor or :Woman class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olympia, :Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is listed as the father of B%C3%A9atrice_of_Bourbon-Two_Sicilies, but is missing the required :Ancestor or :Man class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
 
 
 
@@ -591,19 +808,89 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (663d3da0-1390-4058-a66d-6624a7728861)
- Call ID: 663d3da0-1390-4058-a66d-6624a7728861
+  AddTriple (c01c8dd6-8856-47e8-9da5-62c6d61e2e2c)
+ Call ID: c01c8dd6-8856-47e8-9da5-62c6d61e2e2c
   Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    type: :Ancestor
-  AssignClass (dcb08586-bc77-4e08-8b5c-81a47af9b4e1)
- Call ID: dcb08586-bc77-4e08-8b5c-81a47af9b4e1
+    relation: :hasSex
+    target: :Male
+    source: Jean-Christophe_Napoléon
+  AddTriple (d93a0111-44e1-4920-9218-798e14e76251)
+ Call ID: d93a0111-44e1-4920-9218-798e14e76251
   Args:
-    type: :Ancestor
-    source: Birgitte_Duchess_of_Gloucester
-  Finish (d98b4892-5f62-4e60-a1be-ae159eb87711)
- Call ID: d98b4892-5f62-4e60-a1be-ae159eb87711
+    source: Charles_Napoléon
+    target: :Male
+    relation: :hasSex
+  AddTriple (ae3477d6-274d-4cd6-9696-c3c2e689110f)
+ Call ID: ae3477d6-274d-4cd6-9696-c3c2e689110f
   Args:
+    target: :Female
+    relation: :hasSex
+    source: Béatrice_of_Bourbon-Two_Sicilies
+  AddTriple (2cd20690-43ba-4dc7-8e73-7f01abe30039)
+ Call ID: 2cd20690-43ba-4dc7-8e73-7f01abe30039
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Ferdinand_of_Bourbon
+  AddTriple (d8626669-e804-491e-96fc-a3c7ea6cb4e3)
+ Call ID: d8626669-e804-491e-96fc-a3c7ea6cb4e3
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: Louis_Napoléon
+  AddTriple (2faf2c66-e616-44da-948f-d6b359d3cc50)
+ Call ID: 2faf2c66-e616-44da-948f-d6b359d3cc50
+  Args:
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+    target: :Male
+    relation: :hasSex
+  AddTriple (20ffa04f-86e0-4960-b7aa-769aeffabd12)
+ Call ID: 20ffa04f-86e0-4960-b7aa-769aeffabd12
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: Olympia
+  AssignClass (973a81bb-2ddd-41fd-92db-27cf3bcf90bb)
+ Call ID: 973a81bb-2ddd-41fd-92db-27cf3bcf90bb
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (2bd3750b-2ce8-44d7-b0ad-3af3eeb40d53)
+ Call ID: 2bd3750b-2ce8-44d7-b0ad-3af3eeb40d53
+  Args:
+    source: :Female
+    type: :Sex
+  Finish (9eed0e75-e1c3-4b7a-af56-7afa568ce982)
+ Call ID: 9eed0e75-e1c3-4b7a-af56-7afa568ce982
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -616,25 +903,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
-          :Person ;
-      :alsoKnownAs "Alex Ulster"^^xsd:string ;
-      :hasBirthYear 1974 ;
-      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-      :hasMarriageYear 2002 ;
-      :hasMother data:Birgitte_Duchess_of_Gloucester ;
-      :hasRelation data:Claire_Booth .
+  data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+      :hasBirthYear 2022 ;
+      :hasFather data:Jean-Christophe_Napol%C3%A9on ;
+      :hasMother data:Olympia ;
+      :hasSex data:Male .
 
-  data:Birgitte_Duchess_of_Gloucester a :Ancestor,
-          :Person,
-          :Woman .
+  data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;
+      :hasFather data:Ferdinand_of_Bourbon ;
+      :hasSex data:Female .
 
-  data:Claire_Booth a :Person,
-          :Woman .
+  data:Charles_Napol%C3%A9on a :Man ;
+      :hasFather data:Louis_Napol%C3%A9on ;
+      :hasSex data:Male .
 
-  data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
-          :Man,
-          :Person .
+  data:Ferdinand_of_Bourbon a :Man ;
+      :hasSex data:Male .
+
+  data:Jean-Christophe_Napol%C3%A9on a :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Charles_Napol%C3%A9on ;
+      :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+      :hasSex data:Male .
+
+  data:Louis_Napol%C3%A9on a :Man ;
+      :hasDeathYear 1997 ;
+      :hasSex data:Male .
+
+  data:Olympia a :Woman ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
 
 
 
@@ -646,8 +947,553 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (42356265-3f42-443c-8070-268dc371a750)
- Call ID: 42356265-3f42-443c-8070-268dc371a750
+  ValidateShacl (c6f81df7-5ca1-45e6-9c23-6e3d7afbdb13)
+ Call ID: c6f81df7-5ca1-45e6-9c23-6e3d7afbdb13
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:18
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jean-Christophe_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jean-Christophe_Napoléon, :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Charles_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Napoléon, :Man)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Napoléon, :Man)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Olympia is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olympia, :Woman)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Béatrice_of_Bourbon-Two_Sicilies, :Woman)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Charles_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Napoléon, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jean-Christophe_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jean-Christophe_Napoléon, :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Napoléon, :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is not assigned the required class :Man or :Ancestor, which is expected for the father of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Béatrice_of_Bourbon-Two_Sicilies, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Olympia is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olympia, :Woman)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Charles_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Napoléon, :Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jean-Christophe_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jean-Christophe_Napoléon, :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Napoléon is not assigned the required class :Man or :Ancestor, which is expected for the father of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Napoléon, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is not assigned the required class :Man or :Ancestor, which is expected for the father of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Béatrice_of_Bourbon-Two_Sicilies, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Olympia is not assigned the required class :Woman or :Ancestor, which is expected for the mother of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olympia, :Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Ferdinand_of_Bourbon is not assigned the required class :Man or :Ancestor, which is expected for the father of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ferdinand_of_Bourbon, :Man)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (1461fb56-5d1f-490c-bbbf-d1317ef6e696)
+ Call ID: 1461fb56-5d1f-490c-bbbf-d1317ef6e696
+  Args:
+    source: Jean-Christophe_Napoléon
+    type: :Man
+  AssignClass (1c3188ab-cf52-45c5-9a10-0f508f8140d6)
+ Call ID: 1c3188ab-cf52-45c5-9a10-0f508f8140d6
+  Args:
+    source: Charles_Napoléon
+    type: :Man
+  AssignClass (b6affb14-430e-463c-8cf8-a70b842eb52b)
+ Call ID: b6affb14-430e-463c-8cf8-a70b842eb52b
+  Args:
+    source: Béatrice_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (5b03f601-8295-45f4-ac96-d46e98b9ab10)
+ Call ID: 5b03f601-8295-45f4-ac96-d46e98b9ab10
+  Args:
+    source: Ferdinand_of_Bourbon
+    type: :Man
+  AssignClass (7c1adf8f-baad-4252-a478-10925d2fe8dc)
+ Call ID: 7c1adf8f-baad-4252-a478-10925d2fe8dc
+  Args:
+    source: Louis_Napoléon
+    type: :Man
+  AssignClass (90a9298e-db8b-452c-9cee-b1b48c6944c0)
+ Call ID: 90a9298e-db8b-452c-9cee-b1b48c6944c0
+  Args:
+    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
+    type: :Man
+  AssignClass (efbef89e-1b12-48bf-8d8c-812cad9adbc6)
+ Call ID: efbef89e-1b12-48bf-8d8c-812cad9adbc6
+  Args:
+    source: Olympia
+    type: :Woman
+  Finish (ff97978e-e37a-405b-a7ac-2fab7f3d0896)
+ Call ID: ff97978e-e37a-405b-a7ac-2fab7f3d0896
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+      :hasBirthYear 2022 ;
+      :hasFather data:Jean-Christophe_Napol%C3%A9on ;
+      :hasMother data:Olympia ;
+      :hasSex data:Male .
+
+  data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Woman ;
+      :hasFather data:Ferdinand_of_Bourbon ;
+      :hasSex data:Female .
+
+  data:Charles_Napol%C3%A9on a :Man ;
+      :hasFather data:Louis_Napol%C3%A9on ;
+      :hasSex data:Male .
+
+  data:Ferdinand_of_Bourbon a :Man ;
+      :hasSex data:Male .
+
+  data:Jean-Christophe_Napol%C3%A9on a :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Charles_Napol%C3%A9on ;
+      :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+      :hasSex data:Male .
+
+  data:Louis_Napol%C3%A9on a :Man ;
+      :hasDeathYear 1997 ;
+      :hasSex data:Male .
+
+  data:Olympia a :Woman ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (536f7ab0-85e7-4455-8c12-472b0700f77b)
+ Call ID: 536f7ab0-85e7-4455-8c12-472b0700f77b
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:18
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Jean-Christophe_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Jean-Christophe_Napoléon', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Charles_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charles_Napoléon', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Louis_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louis_Napoléon', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olympia is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Olympia', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Béatrice_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Charles_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charles_Napoléon', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Jean-Christophe_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Jean-Christophe_Napoléon', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Louis_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louis_Napoléon', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ferdinand_of_Bourbon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_of_Bourbon', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Béatrice_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olympia is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Olympia', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Charles_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charles_Napoléon', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Jean-Christophe_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Jean-Christophe_Napoléon', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Louis_Napoléon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Charles_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louis_Napoléon', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ferdinand_of_Bourbon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_of_Bourbon', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Béatrice_of_Bourbon-Two_Sicilies is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Jean-Christophe_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Béatrice_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olympia is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Olympia', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ferdinand_of_Bourbon is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Béatrice_of_Bourbon-Two_Sicilies.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_of_Bourbon', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (0589689b-42e6-408b-992e-48d1755ca701)
+ Call ID: 0589689b-42e6-408b-992e-48d1755ca701
+  Args:
+    type: :Ancestor
+    source: Jean-Christophe_Napoléon
+  AssignClass (515d9f8d-a295-473d-9685-c398aefec882)
+ Call ID: 515d9f8d-a295-473d-9685-c398aefec882
+  Args:
+    type: :Ancestor
+    source: Charles_Napoléon
+  AssignClass (1f0bdb06-a64e-49a1-80ea-b744b507ded2)
+ Call ID: 1f0bdb06-a64e-49a1-80ea-b744b507ded2
+  Args:
+    type: :Ancestor
+    source: Louis_Napoléon
+  AssignClass (9700cb02-d543-4cdf-a257-2fbaf2480df9)
+ Call ID: 9700cb02-d543-4cdf-a257-2fbaf2480df9
+  Args:
+    source: Ferdinand_of_Bourbon
+    type: :Ancestor
+  AssignClass (f5d815e5-bf86-4cbc-af97-f915eff28f15)
+ Call ID: f5d815e5-bf86-4cbc-af97-f915eff28f15
+  Args:
+    source: Béatrice_of_Bourbon-Two_Sicilies
+    type: :Ancestor
+  AssignClass (063bb8ab-001d-4b70-b5f2-0a0c715590d4)
+ Call ID: 063bb8ab-001d-4b70-b5f2-0a0c715590d4
+  Args:
+    type: :Ancestor
+    source: Olympia
+  Finish (7cc2336e-4d68-4fa3-a863-f9a789f095f1)
+ Call ID: 7cc2336e-4d68-4fa3-a863-f9a789f095f1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+      :hasBirthYear 2022 ;
+      :hasFather data:Jean-Christophe_Napol%C3%A9on ;
+      :hasMother data:Olympia ;
+      :hasSex data:Male .
+
+  data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Woman ;
+      :hasFather data:Ferdinand_of_Bourbon ;
+      :hasSex data:Female .
+
+  data:Charles_Napol%C3%A9on a :Ancestor,
+          :Man ;
+      :hasFather data:Louis_Napol%C3%A9on ;
+      :hasSex data:Male .
+
+  data:Ferdinand_of_Bourbon a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Jean-Christophe_Napol%C3%A9on a :Ancestor,
+          :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Charles_Napol%C3%A9on ;
+      :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+      :hasSex data:Male .
+
+  data:Louis_Napol%C3%A9on a :Ancestor,
+          :Man ;
+      :hasDeathYear 1997 ;
+      :hasSex data:Male .
+
+  data:Olympia a :Ancestor,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (2c0c2e6a-59c4-4b3b-91ad-b8318cf239e1)
+ Call ID: 2c0c2e6a-59c4-4b3b-91ad-b8318cf239e1
   Args:
 
 ================================= Tool Message =================================
@@ -658,6 +1504,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4819ec27-3b1e-4c6c-aa8b-e3c8b5d41f91)
- Call ID: 4819ec27-3b1e-4c6c-aa8b-e3c8b5d41f91
+  Finish (401bb13b-fb78-4fd1-8a06-41119209fdce)
+ Call ID: 401bb13b-fb78-4fd1-8a06-41119209fdce
   Args:

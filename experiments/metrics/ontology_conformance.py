@@ -1,12 +1,9 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import io
-import json
 import re
 import sys
-from statistics import mean
 from pathlib import Path
 
 import jpype
@@ -78,29 +75,6 @@ def load_rdf(path: Path) -> Graph:
     graph = Graph()
     graph.parse(path)
     return graph
-
-
-def compute_avai(ontology, explanations):
-    axiom_count: dict[str, int] = {}
-    for axiom in ontology.getAxioms():
-        axiom_count[str(axiom.toString())] = 1
-
-    for expl in explanations:
-        for axiom in expl.getAxioms():
-            key = str(axiom.toString())
-            axiom_count[key] = axiom_count.get(key, 0) + 1
-
-    return sum(axiom_count.values()) / (len(axiom_count.keys()) + 1)
-
-
-def compute_metrics(ontology, explanations):
-    smis = explanations.size()
-    avai = compute_avai(ontology, explanations)
-
-    return {
-        "smis": int(smis),
-        "avai": float(avai),
-    }
 
 
 def compute_explanations(
@@ -177,8 +151,8 @@ def compute_run_metrics(
     reasoner_factory,
     entailment_limit: int,
     timeout: int,
-) -> dict[str, float]:
-    ontology, explanations = compute_explanations(
+) -> bool:
+    _, explanations = compute_explanations(
         delta_graph_path,
         tbox_graph,
         reasoner_factory,
@@ -186,59 +160,13 @@ def compute_run_metrics(
         timeout=timeout,
     )
 
-    metrics = compute_metrics(ontology, explanations)
-
-    return metrics
-
-
-def format_justification(explanations) -> str:
-    if explanations.size() == 0:
-        return "No inconsistency detected."
-
-    explanation = explanations.iterator().next()
-    axioms = [str(axiom.toString()) for axiom in explanation.getAxioms()]
-    lines = ["One justification:"]
-    for axiom in axioms:
-        lines.append(f"- {axiom}")
-    return "\n".join(lines)
-
-
-def summarize(values: list[float]) -> dict[str, float]:
-    return {
-        "avg": float(mean(values)),
-        "min": float(min(values)),
-        "max": float(max(values)),
-    }
-
-
-def write_plots(output_dir: Path, per_run_metrics: list[dict[str, object]]) -> list[str]:
-    try:
-        import matplotlib.pyplot as plt
-    except ImportError:
-        return []
-
-    plot_paths: list[str] = []
-    metric_names = ["smis", "avai"]
-    for metric_name in metric_names:
-        values = [float(m[metric_name]) for m in per_run_metrics]
-        fig, ax = plt.subplots(figsize=(8, 5))
-        ax.hist(values, bins=min(20, max(5, int(len(values) ** 0.5))), edgecolor="black")
-        ax.set_title(f"Distribution of {metric_name.upper()}")
-        ax.set_xlabel(metric_name)
-        ax.set_ylabel("Count")
-        fig.tight_layout()
-        plot_file = output_dir / f"{metric_name}_distribution.png"
-        fig.savefig(plot_file, dpi=150)
-        plt.close(fig)
-        plot_paths.append(str(plot_file))
-
-    return plot_paths
+    return explanations.size() > 0
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Compute ontology conformance metrics over run folders with names like i_i. "
+            "List the inconsistent ABoxes in run folders with names like i_i. "
             "Each run must contain delta_graph.ttl."
         )
     )
@@ -254,28 +182,22 @@ def parse_args() -> argparse.Namespace:
         help="Path to TBOX ttl file.",
     )
     parser.add_argument(
-        "--output-dir",
-        type=Path,
-        default=None,
-        help="Directory for output files. Defaults to <results_dir>/ontology_conformance_metrics.",
-    )
-    parser.add_argument(
         "--jar-classpath",
         type=str,
         default=DEFAULT_JAR_CLASSPATH,
         help="Classpath for OWLAPI/Pellet jars (supports wildcard).",
     )
     parser.add_argument(
-        "--explanation-limit",
-        type=int,
-        default=5000,
-        help="Maximum number of explanations per ontology.",
-    )
-    parser.add_argument(
         "--timeout",
         type=int,
         default=1000,
         help="Reasoner timeout parameter for explanation generator factory.",
+    )
+    parser.add_argument(
+        "--explanation-limit",
+        type=int,
+        default=1,
+        help="Maximum number of explanations to request when checking consistency.",
     )
     parser.add_argument("--debug", action="store_true", help="Enable debug timing logs")
     return parser.parse_args()
@@ -295,7 +217,6 @@ def main() -> None:
     ensure_jvm(args.jar_classpath)
     suppress_java_stderr()
     from com.clarkparsia.pellet.owlapiv3 import PelletReasonerFactory
-    from org.semanticweb.owlapi.apibinding import OWLManager
 
     # enable debug globally
     globals()["DEBUG"] = bool(args.debug)
@@ -303,88 +224,35 @@ def main() -> None:
     reasoner_factory = PelletReasonerFactory.getInstance()
     tbox_graph = load_rdf(args.tbox)
 
-    single_task_delta_graph = results_dir / "delta_graph.ttl"
-    if single_task_delta_graph.exists():
-        ontology, explanations = compute_explanations(
-            single_task_delta_graph,
-            tbox_graph,
-            reasoner_factory,
-            explanation_limit=1,
-            timeout=args.timeout,
-        )
-        print(f"Task: {results_dir.name}")
-        print(format_justification(explanations))
-        return
-
-    output_dir = args.output_dir or (results_dir / "ontology_conformance_metrics")
-    output_dir.mkdir(parents=True, exist_ok=True)
-
     run_dirs = discover_run_dirs(results_dir)
 
     if not run_dirs:
         raise ValueError(f"No run folders matching i_i pattern found in {results_dir}")
 
-    per_run_metrics: list[dict[str, object]] = []
-    failed_runs: list[dict[str, str]] = []
+    inconsistent_runs: list[str] = []
 
-    for run_dir in tqdm(run_dirs, desc="Computing ontology metrics", unit="run"):
+    for run_dir in tqdm(run_dirs, desc="Checking ABox consistency", unit="run"):
         delta_graph = run_dir / "delta_graph.ttl"
         if not delta_graph.exists():
-            failed_runs.append({"run": run_dir.name, "error": "missing delta_graph.ttl"})
             continue
 
         try:
-            metrics = compute_run_metrics(
+            is_inconsistent = compute_run_metrics(
                 delta_graph,
                 tbox_graph,
                 reasoner_factory,
                 entailment_limit=args.explanation_limit,
                 timeout=args.timeout,
             )
-            metrics["run"] = run_dir.name
-            per_run_metrics.append(metrics)
+            if is_inconsistent:
+                inconsistent_runs.append(run_dir.name)
         except Exception as exc:
-            failed_runs.append({"run": run_dir.name, "error": str(exc)})
+            print(f"Skipped {run_dir.name}: {exc}", file=sys.stderr)
 
-    if not per_run_metrics:
-        raise RuntimeError("No run metrics could be computed. Check failed_runs in output JSON.")
-
-    smis_values = [m["smis"] for m in per_run_metrics]
-    avai_values = [m["avai"] for m in per_run_metrics]
-    inconsistent_abox_count = sum(1 for m in per_run_metrics if m["smis"] > 0)
-
-    summary = {
-        "num_runs_discovered": len(run_dirs),
-        "num_runs_processed": len(per_run_metrics),
-        "num_runs_failed": len(failed_runs),
-        "num_inconsistent_aboxes": inconsistent_abox_count,
-        "smis": summarize(smis_values),
-        "avai": summarize(avai_values),
-        "failed_runs": failed_runs,
-    }
-
-    csv_path = output_dir / "per_run_metrics.csv"
-    with csv_path.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["run", "smis", "avai"])
-        writer.writeheader()
-        writer.writerows(per_run_metrics)
-
-    summary_path = output_dir / "summary.json"
-    with summary_path.open("w") as f:
-        json.dump(summary, f, indent=2)
-
-    plot_paths = write_plots(output_dir, per_run_metrics)
-
-    print(f"Processed {len(per_run_metrics)} runs (failed: {len(failed_runs)}).")
-    print(f"Inconsistent ABoxes: {inconsistent_abox_count}/{len(per_run_metrics)}")
-    print(f"Per-run metrics: {csv_path}")
-    print(f"Summary: {summary_path}")
-    if plot_paths:
-        print("Plots:")
-        for plot in plot_paths:
-            print(f"- {plot}")
-    else:
-        print("Plots skipped (matplotlib not installed).")
+    print("Inconsistent ABoxes:")
+    for run_name in inconsistent_runs:
+        print(f"- {run_name}")
+    print(f"Count: {len(inconsistent_runs)}")
 
 
 if __name__ == "__main__":

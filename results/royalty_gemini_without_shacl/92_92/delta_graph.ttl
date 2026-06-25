@@ -2,36 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Birgitte_van_Deurs_Henriksen a :Woman .
-
-data:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch a :Man .
-
-data:King_George_V a :Man .
-
-data:Lady_Margaret_Bridgeman a :Woman .
-
-data:Prince_Richard%2C_Duke_of_Gloucester a :Man ;
-    :alsoKnownAs "Richard Alexander Walter George"^^xsd:string ;
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person ;
     :hasBirthYear 1944 ;
-    :hasBrother data:Prince_William_of_Gloucester ;
-    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
     :hasMarriageYear 1972 ;
-    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;
-    :hasRelation data:Birgitte_van_Deurs_Henriksen .
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasRelation data:Birgitte_van_Deurs_Henriksen ;
+    :isBrotherOf data:Prince_William_of_Gloucester .
 
-data:Prince_William_of_Gloucester a :Man ;
+data:Birgitte_van_Deurs_Henriksen a :Person,
+        :Woman .
+
+data:George_V a :Man,
+        :Person .
+
+data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man,
+        :Person .
+
+data:Lady_Margaret_Bridgeman a :Person,
+        :Woman .
+
+data:Prince_William_of_Gloucester a :Man,
+        :Person ;
     :hasDeathYear 1972 ;
-    :hasFather data:Prince_Henry%2C_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice%2C_Duchess_of_Gloucester ;
-    :isBrotherOf data:Prince_Richard%2C_Duke_of_Gloucester .
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester .
 
-data:Queen_Mary a :Woman .
+data:Queen_Mary a :Person,
+        :Woman .
 
-data:Prince_Henry%2C_Duke_of_Gloucester a :Man ;
-    :hasFather data:King_George_V ;
+data:Prince_Henry_Duke_of_Gloucester a :Man,
+        :Person ;
+    :hasFather data:George_V ;
     :hasMother data:Queen_Mary .
 
-data:Princess_Alice%2C_Duchess_of_Gloucester a :Woman ;
-    :hasFather data:John_Montagu_Douglas_Scott%2C_7th_Duke_of_Buccleuch ;
+data:Princess_Alice_Duchess_of_Gloucester a :Person,
+        :Woman ;
+    :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
     :hasMother data:Lady_Margaret_Bridgeman .
 

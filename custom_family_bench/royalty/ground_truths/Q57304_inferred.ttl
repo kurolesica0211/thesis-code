@@ -1,0 +1,785 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Leopold_IV-_Prince_of_Lippe a :Man,
+        :Person ;
+    rdfs:label "Leopold IV, Prince of Lippe"^^xsd:string ;
+    data:posIndicesFull "2612:2639"^^xsd:string ;
+    data:posIndicesPart "10538:10544"^^xsd:string,
+        "10946:10952"^^xsd:string,
+        "10991:10997"^^xsd:string,
+        "11127:11133"^^xsd:string,
+        "11246:11252"^^xsd:string,
+        "11491:11497"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "12058:12064"^^xsd:string,
+        "12135:12141"^^xsd:string,
+        "12569:12575"^^xsd:string,
+        "12906:12912"^^xsd:string,
+        "13058:13064"^^xsd:string,
+        "13257:13263"^^xsd:string,
+        "13432:13438"^^xsd:string,
+        "14079:14085"^^xsd:string,
+        "14718:14724"^^xsd:string,
+        "14885:14891"^^xsd:string,
+        "15000:15006"^^xsd:string,
+        "15230:15236"^^xsd:string,
+        "15462:15468"^^xsd:string,
+        "15986:15992"^^xsd:string,
+        "16142:16148"^^xsd:string,
+        "16463:16469"^^xsd:string,
+        "17443:17449"^^xsd:string,
+        "17898:17904"^^xsd:string,
+        "18021:18027"^^xsd:string,
+        "18278:18284"^^xsd:string,
+        "18351:18357"^^xsd:string,
+        "18595:18601"^^xsd:string,
+        "18759:18765"^^xsd:string,
+        "18874:18880"^^xsd:string,
+        "18961:18967"^^xsd:string,
+        "19059:19065"^^xsd:string,
+        "19312:19318"^^xsd:string,
+        "19394:19400"^^xsd:string,
+        "19849:19855"^^xsd:string,
+        "20083:20089"^^xsd:string,
+        "20200:20206"^^xsd:string,
+        "20259:20265"^^xsd:string,
+        "20583:20589"^^xsd:string,
+        "21252:21258"^^xsd:string,
+        "21547:21553"^^xsd:string,
+        "21972:21978"^^xsd:string,
+        "22142:22148"^^xsd:string,
+        "22382:22388"^^xsd:string,
+        "23369:23375"^^xsd:string,
+        "23422:23428"^^xsd:string,
+        "2726:2731"^^xsd:string,
+        "2948:2955"^^xsd:string,
+        "2971:2977"^^xsd:string,
+        "3019:3025"^^xsd:string,
+        "3042:3047"^^xsd:string,
+        "3213:3218"^^xsd:string,
+        "3714:3720"^^xsd:string,
+        "4513:4519"^^xsd:string,
+        "4863:4869"^^xsd:string,
+        "5359:5365"^^xsd:string,
+        "5870:5875"^^xsd:string,
+        "6068:6074"^^xsd:string,
+        "6369:6375"^^xsd:string,
+        "6775:6781"^^xsd:string,
+        "6886:6892"^^xsd:string,
+        "7448:7454"^^xsd:string,
+        "8681:8687"^^xsd:string,
+        "8928:8934"^^xsd:string,
+        "9187:9193"^^xsd:string,
+        "9455:9461"^^xsd:string,
+        "9768:9774"^^xsd:string ;
+    data:wdtLink wdt:Q61279 ;
+    :hasBrother data:Leopold_IV-_Prince_of_Lippe ;
+    :hasRelation data:Leopold_IV-_Prince_of_Lippe ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isBrotherOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isSiblingOf data:Leopold_IV-_Prince_of_Lippe .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Armgard of Sierstorpff-Cramm"^^xsd:string ;
+    data:posIndicesFull "0:36"^^xsd:string ;
+    data:posIndicesPart "2336:2343"^^xsd:string,
+        "2348:2359"^^xsd:string,
+        "2360:2365"^^xsd:string,
+        "2432:2437"^^xsd:string,
+        "2772:2779"^^xsd:string ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm"^^xsd:string,
+        "Armgard von Cramm"^^xsd:string,
+        "Baroness Armgard of Sierstorpff-Cramm"^^xsd:string,
+        "Baroness Armgard von Cramm"^^xsd:string,
+        "Countess Bodo von Oeynhausen"^^xsd:string,
+        "Princess Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Armgard_of_Sierstorpff-Cramm ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAuntOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isMotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_of_Sierstorpff-Cramm .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe"^^xsd:string ;
+    data:posIndicesFull "0:24"^^xsd:string,
+        "2288:2312"^^xsd:string,
+        "7:36"^^xsd:string ;
+    data:posIndicesPart "10071:10079"^^xsd:string,
+        "10178:10186"^^xsd:string,
+        "10335:10343"^^xsd:string,
+        "10524:10532"^^xsd:string,
+        "10538:10544"^^xsd:string,
+        "1053:1061"^^xsd:string,
+        "10846:10854"^^xsd:string,
+        "10946:10952"^^xsd:string,
+        "10991:10997"^^xsd:string,
+        "11127:11133"^^xsd:string,
+        "11134:11142"^^xsd:string,
+        "11246:11252"^^xsd:string,
+        "11253:11261"^^xsd:string,
+        "11491:11497"^^xsd:string,
+        "11498:11506"^^xsd:string,
+        "11834:11842"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "12058:12064"^^xsd:string,
+        "12135:12141"^^xsd:string,
+        "12142:12150"^^xsd:string,
+        "12569:12575"^^xsd:string,
+        "12906:12912"^^xsd:string,
+        "13040:13048"^^xsd:string,
+        "13058:13064"^^xsd:string,
+        "13171:13179"^^xsd:string,
+        "13257:13263"^^xsd:string,
+        "13264:13272"^^xsd:string,
+        "13432:13438"^^xsd:string,
+        "13625:13633"^^xsd:string,
+        "13766:13774"^^xsd:string,
+        "14079:14085"^^xsd:string,
+        "14086:14094"^^xsd:string,
+        "14718:14724"^^xsd:string,
+        "14725:14733"^^xsd:string,
+        "14885:14891"^^xsd:string,
+        "14892:14900"^^xsd:string,
+        "15000:15006"^^xsd:string,
+        "15007:15015"^^xsd:string,
+        "15230:15236"^^xsd:string,
+        "15237:15245"^^xsd:string,
+        "15462:15468"^^xsd:string,
+        "15469:15477"^^xsd:string,
+        "15639:15647"^^xsd:string,
+        "15986:15992"^^xsd:string,
+        "15993:16001"^^xsd:string,
+        "16142:16148"^^xsd:string,
+        "16149:16157"^^xsd:string,
+        "16463:16469"^^xsd:string,
+        "16470:16478"^^xsd:string,
+        "16807:16815"^^xsd:string,
+        "16950:16958"^^xsd:string,
+        "1695:1703"^^xsd:string,
+        "17057:17065"^^xsd:string,
+        "17179:17187"^^xsd:string,
+        "17443:17449"^^xsd:string,
+        "17450:17458"^^xsd:string,
+        "17898:17904"^^xsd:string,
+        "17905:17913"^^xsd:string,
+        "18021:18027"^^xsd:string,
+        "18028:18036"^^xsd:string,
+        "1806:1814"^^xsd:string,
+        "18110:18118"^^xsd:string,
+        "18278:18284"^^xsd:string,
+        "18285:18293"^^xsd:string,
+        "18351:18357"^^xsd:string,
+        "18585:18593"^^xsd:string,
+        "18595:18601"^^xsd:string,
+        "18602:18610"^^xsd:string,
+        "18759:18765"^^xsd:string,
+        "18874:18880"^^xsd:string,
+        "18881:18889"^^xsd:string,
+        "18961:18967"^^xsd:string,
+        "19059:19065"^^xsd:string,
+        "19066:19074"^^xsd:string,
+        "19312:19318"^^xsd:string,
+        "19394:19400"^^xsd:string,
+        "19401:19409"^^xsd:string,
+        "1959:1965"^^xsd:string,
+        "19618:19626"^^xsd:string,
+        "19849:19855"^^xsd:string,
+        "19856:19864"^^xsd:string,
+        "20083:20089"^^xsd:string,
+        "20090:20098"^^xsd:string,
+        "20200:20206"^^xsd:string,
+        "20259:20265"^^xsd:string,
+        "20266:20274"^^xsd:string,
+        "20583:20589"^^xsd:string,
+        "21033:21041"^^xsd:string,
+        "21252:21258"^^xsd:string,
+        "21547:21553"^^xsd:string,
+        "21609:21617"^^xsd:string,
+        "21774:21782"^^xsd:string,
+        "21811:21819"^^xsd:string,
+        "21925:21933"^^xsd:string,
+        "21972:21978"^^xsd:string,
+        "22011:22019"^^xsd:string,
+        "22142:22148"^^xsd:string,
+        "22382:22388"^^xsd:string,
+        "22696:22704"^^xsd:string,
+        "22843:22851"^^xsd:string,
+        "23007:23015"^^xsd:string,
+        "23369:23375"^^xsd:string,
+        "23422:23428"^^xsd:string,
+        "2477:2482"^^xsd:string,
+        "2534:2539"^^xsd:string,
+        "2726:2731"^^xsd:string,
+        "2859:2867"^^xsd:string,
+        "292:300"^^xsd:string,
+        "2971:2977"^^xsd:string,
+        "3019:3025"^^xsd:string,
+        "3042:3047"^^xsd:string,
+        "3213:3218"^^xsd:string,
+        "3239:3247"^^xsd:string,
+        "3375:3383"^^xsd:string,
+        "342:347"^^xsd:string,
+        "3534:3542"^^xsd:string,
+        "3615:3623"^^xsd:string,
+        "3714:3720"^^xsd:string,
+        "3770:3778"^^xsd:string,
+        "3981:3989"^^xsd:string,
+        "399:405"^^xsd:string,
+        "409:414"^^xsd:string,
+        "4160:4168"^^xsd:string,
+        "4337:4345"^^xsd:string,
+        "4421:4429"^^xsd:string,
+        "4513:4519"^^xsd:string,
+        "4753:4761"^^xsd:string,
+        "4863:4869"^^xsd:string,
+        "5077:5085"^^xsd:string,
+        "5265:5273"^^xsd:string,
+        "5359:5365"^^xsd:string,
+        "5514:5522"^^xsd:string,
+        "5628:5636"^^xsd:string,
+        "5870:5875"^^xsd:string,
+        "5921:5929"^^xsd:string,
+        "6068:6074"^^xsd:string,
+        "6223:6231"^^xsd:string,
+        "6265:6273"^^xsd:string,
+        "6369:6375"^^xsd:string,
+        "6376:6384"^^xsd:string,
+        "652:658"^^xsd:string,
+        "6775:6781"^^xsd:string,
+        "6782:6790"^^xsd:string,
+        "6886:6892"^^xsd:string,
+        "6893:6901"^^xsd:string,
+        "7005:7013"^^xsd:string,
+        "7280:7288"^^xsd:string,
+        "7448:7454"^^xsd:string,
+        "7595:7603"^^xsd:string,
+        "7702:7710"^^xsd:string,
+        "771:777"^^xsd:string,
+        "787:795"^^xsd:string,
+        "7952:7960"^^xsd:string,
+        "8127:8135"^^xsd:string,
+        "8410:8418"^^xsd:string,
+        "8518:8526"^^xsd:string,
+        "8681:8687"^^xsd:string,
+        "8928:8934"^^xsd:string,
+        "9187:9193"^^xsd:string,
+        "9194:9202"^^xsd:string,
+        "9267:9275"^^xsd:string,
+        "9455:9461"^^xsd:string,
+        "9462:9470"^^xsd:string,
+        "9608:9616"^^xsd:string,
+        "9758:9766"^^xsd:string,
+        "9768:9774"^^xsd:string,
+        "9775:9783"^^xsd:string,
+        "9968:9976"^^xsd:string ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe"^^xsd:string,
+        "Prince Bernhard of Lippe (1872–1934)"^^xsd:string,
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)"^^xsd:string ;
+    :hasBrother data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Wilhelmina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "10631:10647"^^xsd:string,
+        "10637:10647"^^xsd:string,
+        "11711:11727"^^xsd:string,
+        "11717:11727"^^xsd:string,
+        "11729:11745"^^xsd:string,
+        "11735:11745"^^xsd:string,
+        "1261:1277"^^xsd:string,
+        "1267:1277"^^xsd:string,
+        "12953:12969"^^xsd:string,
+        "12959:12969"^^xsd:string,
+        "15545:15561"^^xsd:string,
+        "15551:15561"^^xsd:string,
+        "5736:5752"^^xsd:string,
+        "5742:5752"^^xsd:string,
+        "5979:5989"^^xsd:string,
+        "6097:6107"^^xsd:string,
+        "8874:8890"^^xsd:string,
+        "8880:8890"^^xsd:string ;
+    data:posIndicesPart "10552:10563"^^xsd:string,
+        "12223:12234"^^xsd:string,
+        "12504:12515"^^xsd:string,
+        "12809:12820"^^xsd:string,
+        "13347:13358"^^xsd:string,
+        "13895:13906"^^xsd:string,
+        "14361:14372"^^xsd:string,
+        "1487:1498"^^xsd:string,
+        "15964:15975"^^xsd:string,
+        "1646:1657"^^xsd:string,
+        "16736:16747"^^xsd:string,
+        "17727:17738"^^xsd:string,
+        "17828:17839"^^xsd:string,
+        "20831:20842"^^xsd:string,
+        "22490:22501"^^xsd:string,
+        "23211:23222"^^xsd:string,
+        "23383:23394"^^xsd:string,
+        "6516:6527"^^xsd:string,
+        "7832:7843"^^xsd:string,
+        "8047:8058"^^xsd:string,
+        "8106:8117"^^xsd:string,
+        "8664:8675"^^xsd:string,
+        "8817:8828"^^xsd:string ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands"^^xsd:string,
+        "Princess Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Wilhelmina"^^xsd:string,
+        "Queen Wilhelmina of the Netherlands"^^xsd:string,
+        "Wilhelmina"^^xsd:string,
+        "Wilhelmina I"^^xsd:string,
+        "Wilhelmina Koningin der Nederlanden"^^xsd:string ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands ;
+    :isAuntOf data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "10671:10678"^^xsd:string,
+        "12995:13002"^^xsd:string,
+        "13221:13234"^^xsd:string,
+        "13227:13234"^^xsd:string,
+        "16124:16137"^^xsd:string,
+        "16130:16137"^^xsd:string,
+        "16339:16352"^^xsd:string,
+        "16345:16352"^^xsd:string,
+        "16428:16441"^^xsd:string,
+        "16434:16441"^^xsd:string,
+        "16614:16621"^^xsd:string,
+        "16940:16947"^^xsd:string,
+        "18525:18538"^^xsd:string,
+        "18531:18538"^^xsd:string,
+        "19423:19430"^^xsd:string,
+        "199:212"^^xsd:string,
+        "205:212"^^xsd:string,
+        "20963:20976"^^xsd:string,
+        "20969:20976"^^xsd:string,
+        "20985:20992"^^xsd:string,
+        "21192:21199"^^xsd:string,
+        "21743:21750"^^xsd:string,
+        "21989:22002"^^xsd:string,
+        "21995:22002"^^xsd:string,
+        "22159:22172"^^xsd:string,
+        "22165:22172"^^xsd:string,
+        "4142:4149"^^xsd:string,
+        "5655:5662"^^xsd:string,
+        "5718:5725"^^xsd:string,
+        "579:614"^^xsd:string,
+        "5817:5824"^^xsd:string,
+        "588:595"^^xsd:string,
+        "588:614"^^xsd:string,
+        "6426:6439"^^xsd:string,
+        "6432:6439"^^xsd:string,
+        "6554:6561"^^xsd:string,
+        "7372:7407"^^xsd:string,
+        "7381:7388"^^xsd:string,
+        "7381:7407"^^xsd:string,
+        "9078:9085"^^xsd:string ;
+    data:posIndicesPart "1023:1034"^^xsd:string,
+        "10552:10563"^^xsd:string,
+        "12223:12234"^^xsd:string,
+        "12504:12515"^^xsd:string,
+        "12809:12820"^^xsd:string,
+        "13895:13906"^^xsd:string,
+        "14361:14372"^^xsd:string,
+        "1487:1498"^^xsd:string,
+        "15964:15975"^^xsd:string,
+        "1646:1657"^^xsd:string,
+        "16736:16747"^^xsd:string,
+        "17727:17738"^^xsd:string,
+        "17828:17839"^^xsd:string,
+        "20831:20842"^^xsd:string,
+        "22490:22501"^^xsd:string,
+        "23211:23222"^^xsd:string,
+        "23383:23394"^^xsd:string,
+        "6516:6527"^^xsd:string,
+        "7832:7843"^^xsd:string,
+        "8047:8058"^^xsd:string,
+        "8106:8117"^^xsd:string,
+        "8664:8675"^^xsd:string,
+        "8817:8828"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Wilhelmina_of_the_Netherlands ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isChildOf data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "14565:14578"^^xsd:string,
+        "21375:21388"^^xsd:string,
+        "258:271"^^xsd:string,
+        "264:290"^^xsd:string ;
+    data:posIndicesPart "1023:1034"^^xsd:string,
+        "10552:10563"^^xsd:string,
+        "12223:12234"^^xsd:string,
+        "12504:12515"^^xsd:string,
+        "12809:12820"^^xsd:string,
+        "13023:13034"^^xsd:string,
+        "13347:13358"^^xsd:string,
+        "13895:13906"^^xsd:string,
+        "1487:1498"^^xsd:string,
+        "15964:15975"^^xsd:string,
+        "1646:1657"^^xsd:string,
+        "16736:16747"^^xsd:string,
+        "17727:17738"^^xsd:string,
+        "17828:17839"^^xsd:string,
+        "20831:20842"^^xsd:string,
+        "22490:22501"^^xsd:string,
+        "23211:23222"^^xsd:string,
+        "23383:23394"^^xsd:string,
+        "6464:6471"^^xsd:string,
+        "6516:6527"^^xsd:string,
+        "666:677"^^xsd:string,
+        "7832:7843"^^xsd:string,
+        "8047:8058"^^xsd:string,
+        "8106:8117"^^xsd:string,
+        "8664:8675"^^xsd:string,
+        "8817:8828"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "0:36"^^xsd:string,
+        "44:78"^^xsd:string,
+        "7:36"^^xsd:string ;
+    data:posIndicesPart "10071:10079"^^xsd:string,
+        "10178:10186"^^xsd:string,
+        "10335:10343"^^xsd:string,
+        "10524:10532"^^xsd:string,
+        "10538:10544"^^xsd:string,
+        "1053:1061"^^xsd:string,
+        "10846:10854"^^xsd:string,
+        "10946:10952"^^xsd:string,
+        "10991:10997"^^xsd:string,
+        "11127:11133"^^xsd:string,
+        "11134:11142"^^xsd:string,
+        "11246:11252"^^xsd:string,
+        "11253:11261"^^xsd:string,
+        "11491:11497"^^xsd:string,
+        "11498:11506"^^xsd:string,
+        "11834:11842"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "12058:12064"^^xsd:string,
+        "12135:12141"^^xsd:string,
+        "12142:12150"^^xsd:string,
+        "12569:12575"^^xsd:string,
+        "12906:12912"^^xsd:string,
+        "13040:13048"^^xsd:string,
+        "13058:13064"^^xsd:string,
+        "13171:13179"^^xsd:string,
+        "13257:13263"^^xsd:string,
+        "13264:13272"^^xsd:string,
+        "13432:13438"^^xsd:string,
+        "13625:13633"^^xsd:string,
+        "13766:13774"^^xsd:string,
+        "14079:14085"^^xsd:string,
+        "14086:14094"^^xsd:string,
+        "14718:14724"^^xsd:string,
+        "14725:14733"^^xsd:string,
+        "14885:14891"^^xsd:string,
+        "14892:14900"^^xsd:string,
+        "15000:15006"^^xsd:string,
+        "15007:15015"^^xsd:string,
+        "15230:15236"^^xsd:string,
+        "15237:15245"^^xsd:string,
+        "15462:15468"^^xsd:string,
+        "15469:15477"^^xsd:string,
+        "15639:15647"^^xsd:string,
+        "15986:15992"^^xsd:string,
+        "15993:16001"^^xsd:string,
+        "16142:16148"^^xsd:string,
+        "16149:16157"^^xsd:string,
+        "16463:16469"^^xsd:string,
+        "16470:16478"^^xsd:string,
+        "16807:16815"^^xsd:string,
+        "16950:16958"^^xsd:string,
+        "1695:1703"^^xsd:string,
+        "17057:17065"^^xsd:string,
+        "17179:17187"^^xsd:string,
+        "17443:17449"^^xsd:string,
+        "17450:17458"^^xsd:string,
+        "17898:17904"^^xsd:string,
+        "17905:17913"^^xsd:string,
+        "18021:18027"^^xsd:string,
+        "18028:18036"^^xsd:string,
+        "1806:1814"^^xsd:string,
+        "18110:18118"^^xsd:string,
+        "18278:18284"^^xsd:string,
+        "18285:18293"^^xsd:string,
+        "18351:18357"^^xsd:string,
+        "18585:18593"^^xsd:string,
+        "18595:18601"^^xsd:string,
+        "18602:18610"^^xsd:string,
+        "18759:18765"^^xsd:string,
+        "18874:18880"^^xsd:string,
+        "18881:18889"^^xsd:string,
+        "18961:18967"^^xsd:string,
+        "19059:19065"^^xsd:string,
+        "19066:19074"^^xsd:string,
+        "19312:19318"^^xsd:string,
+        "19394:19400"^^xsd:string,
+        "19401:19409"^^xsd:string,
+        "1959:1965"^^xsd:string,
+        "19618:19626"^^xsd:string,
+        "19849:19855"^^xsd:string,
+        "19856:19864"^^xsd:string,
+        "20083:20089"^^xsd:string,
+        "20090:20098"^^xsd:string,
+        "20200:20206"^^xsd:string,
+        "20259:20265"^^xsd:string,
+        "20266:20274"^^xsd:string,
+        "20583:20589"^^xsd:string,
+        "2100:2108"^^xsd:string,
+        "21033:21041"^^xsd:string,
+        "2118:2126"^^xsd:string,
+        "21252:21258"^^xsd:string,
+        "21547:21553"^^xsd:string,
+        "21609:21617"^^xsd:string,
+        "21774:21782"^^xsd:string,
+        "21811:21819"^^xsd:string,
+        "21925:21933"^^xsd:string,
+        "21972:21978"^^xsd:string,
+        "2197:2208"^^xsd:string,
+        "22011:22019"^^xsd:string,
+        "22142:22148"^^xsd:string,
+        "22382:22388"^^xsd:string,
+        "22696:22704"^^xsd:string,
+        "22843:22851"^^xsd:string,
+        "23007:23015"^^xsd:string,
+        "23369:23375"^^xsd:string,
+        "23422:23428"^^xsd:string,
+        "2477:2482"^^xsd:string,
+        "2483:2494"^^xsd:string,
+        "2534:2539"^^xsd:string,
+        "2726:2731"^^xsd:string,
+        "2859:2867"^^xsd:string,
+        "2907:2918"^^xsd:string,
+        "292:300"^^xsd:string,
+        "2971:2977"^^xsd:string,
+        "3019:3025"^^xsd:string,
+        "3042:3047"^^xsd:string,
+        "3048:3059"^^xsd:string,
+        "3143:3154"^^xsd:string,
+        "3213:3218"^^xsd:string,
+        "3239:3247"^^xsd:string,
+        "3375:3383"^^xsd:string,
+        "342:347"^^xsd:string,
+        "348:359"^^xsd:string,
+        "3534:3542"^^xsd:string,
+        "3615:3623"^^xsd:string,
+        "3714:3720"^^xsd:string,
+        "3770:3778"^^xsd:string,
+        "3981:3989"^^xsd:string,
+        "399:405"^^xsd:string,
+        "409:414"^^xsd:string,
+        "4160:4168"^^xsd:string,
+        "4337:4345"^^xsd:string,
+        "4421:4429"^^xsd:string,
+        "4513:4519"^^xsd:string,
+        "466:477"^^xsd:string,
+        "4753:4761"^^xsd:string,
+        "4863:4869"^^xsd:string,
+        "5077:5085"^^xsd:string,
+        "5265:5273"^^xsd:string,
+        "5359:5365"^^xsd:string,
+        "5514:5522"^^xsd:string,
+        "5628:5636"^^xsd:string,
+        "5870:5875"^^xsd:string,
+        "5921:5929"^^xsd:string,
+        "6068:6074"^^xsd:string,
+        "6223:6231"^^xsd:string,
+        "6265:6273"^^xsd:string,
+        "6369:6375"^^xsd:string,
+        "6376:6384"^^xsd:string,
+        "652:658"^^xsd:string,
+        "6775:6781"^^xsd:string,
+        "6782:6790"^^xsd:string,
+        "6886:6892"^^xsd:string,
+        "6893:6901"^^xsd:string,
+        "7005:7013"^^xsd:string,
+        "7280:7288"^^xsd:string,
+        "7448:7454"^^xsd:string,
+        "7595:7603"^^xsd:string,
+        "7702:7710"^^xsd:string,
+        "771:777"^^xsd:string,
+        "787:795"^^xsd:string,
+        "7952:7960"^^xsd:string,
+        "8127:8135"^^xsd:string,
+        "8410:8418"^^xsd:string,
+        "8518:8526"^^xsd:string,
+        "8681:8687"^^xsd:string,
+        "8928:8934"^^xsd:string,
+        "9187:9193"^^xsd:string,
+        "9194:9202"^^xsd:string,
+        "9267:9275"^^xsd:string,
+        "9455:9461"^^xsd:string,
+        "9462:9470"^^xsd:string,
+        "9608:9616"^^xsd:string,
+        "9758:9766"^^xsd:string,
+        "9768:9774"^^xsd:string,
+        "9775:9783"^^xsd:string,
+        "9968:9976"^^xsd:string ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Prince Bernhard of the Netherlands"^^xsd:string,
+        "Prince Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Z.K.H. Prins Bernhard"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Beatrix_of_the_Netherlands .
+

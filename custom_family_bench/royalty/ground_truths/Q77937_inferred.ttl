@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "14:30"^^xsd:string ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria"^^xsd:string,
+        "Augusta Victoria, Empress of Germany"^^xsd:string,
+        "Augusta Viktoria"^^xsd:string,
+        "Augusta Viktoria of Schleswig-Holstein"^^xsd:string,
+        "Auguste Viktoria of Schleswig-Holstein"^^xsd:string ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSex data:female ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "169:208"^^xsd:string ;
+    data:posIndicesPart "219:223"^^xsd:string,
+        "306:310"^^xsd:string,
+        "431:435"^^xsd:string,
+        "483:487"^^xsd:string,
+        "545:549"^^xsd:string ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova"^^xsd:string,
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia"^^xsd:string,
+        "Kira Kirillovna, Princess of Prussia"^^xsd:string,
+        "Princess Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasChild data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:Princess_Kira_of_Prussia ;
+    :isAuntOf data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isMotherOf data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Princess_Kira_of_Prussia ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia"^^xsd:string ;
+    data:posIndicesFull "130:164"^^xsd:string ;
+    data:posIndicesPart "251:258"^^xsd:string ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen"^^xsd:string,
+        "Prince Louis Ferdinand"^^xsd:string,
+        "Prince Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasChild data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isFatherOf data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Princess_Kira_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isUncleOf data:Princess_Kira_of_Prussia .
+
+data:Princess_Kira_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Kira of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:52"^^xsd:string ;
+    data:posIndicesPart "210:218"^^xsd:string,
+        "219:223"^^xsd:string,
+        "251:258"^^xsd:string,
+        "306:310"^^xsd:string,
+        "431:435"^^xsd:string,
+        "474:482"^^xsd:string,
+        "483:487"^^xsd:string,
+        "536:544"^^xsd:string,
+        "545:549"^^xsd:string ;
+    data:wdtLink wdt:Q77937 ;
+    :alsoKnownAs "Kira Auguste Viktoria Friederike Prinzessin von Preußen"^^xsd:string,
+        "Kira Prussia"^^xsd:string,
+        "Kira of Prussia"^^xsd:string,
+        "Princess Kira Auguste Viktoria Friederike of Prussia"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasFather data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Princess_Kira_of_Prussia ;
+    :isChildOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isDaughterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSiblingOf data:Princess_Kira_of_Prussia ;
+    :isSisterOf data:Princess_Kira_of_Prussia .
+

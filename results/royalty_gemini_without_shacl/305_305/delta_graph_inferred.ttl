@@ -1,0 +1,264 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ElizabethII a :Person,
+        :Woman ;
+    :hasRelation data:ElizabethII ;
+    :hasSister data:ElizabethII ;
+    :isBloodrelationOf data:ElizabethII ;
+    :isSiblingOf data:ElizabethII ;
+    :isSisterOf data:ElizabethII .
+
+data:ElizabethQueenMother a :Person,
+        :Woman ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSister data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :isAuntOf data:AndrewElphinstone ;
+    :isBloodrelationOf data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :isSiblingOf data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :isSisterOf data:ElizabethQueenMother,
+        data:MaryBowesLyon .
+
+data:GeorgeChetwode a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeChetwode ;
+    :hasChild data:WillaMaryGabrielleChetwode ;
+    :hasDaughter data:WillaMaryGabrielleChetwode ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone,
+        data:WillaMaryGabrielleChetwode ;
+    :isBloodrelationOf data:GeorgeChetwode ;
+    :isBrotherOf data:GeorgeChetwode ;
+    :isFatherOf data:WillaMaryGabrielleChetwode ;
+    :isParentOf data:WillaMaryGabrielleChetwode ;
+    :isSiblingOf data:GeorgeChetwode ;
+    :isUncleOf data:WillaMaryGabrielleChetwode .
+
+data:VictorElliotMurrayKynynmound a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:VictorElliotMurrayKynynmound ;
+    :hasChild data:WillaElliotMurrayKynynmound ;
+    :hasDaughter data:WillaElliotMurrayKynynmound ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :isBloodrelationOf data:VictorElliotMurrayKynynmound ;
+    :isBrotherOf data:VictorElliotMurrayKynynmound ;
+    :isFatherOf data:WillaElliotMurrayKynynmound ;
+    :isParentOf data:WillaElliotMurrayKynynmound ;
+    :isSiblingOf data:VictorElliotMurrayKynynmound ;
+    :isUncleOf data:WillaElliotMurrayKynynmound .
+
+data:MaryBowesLyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AndrewElphinstone ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSister data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :hasSon data:AndrewElphinstone ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:JamesElphinstone ;
+    :isAuntOf data:AndrewElphinstone ;
+    :isBloodrelationOf data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :isMotherOf data:AndrewElphinstone ;
+    :isParentOf data:AndrewElphinstone ;
+    :isSiblingOf data:ElizabethQueenMother,
+        data:MaryBowesLyon ;
+    :isSisterOf data:ElizabethQueenMother,
+        data:MaryBowesLyon .
+
+data:JamesElphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AndrewElphinstone,
+        data:MaryBowesLyon ;
+    :hasBrother data:JamesElphinstone ;
+    :hasChild data:AlexanderMountstuartElphinstone ;
+    :hasFather data:AndrewElphinstone ;
+    :hasParent data:AndrewElphinstone ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSon data:AlexanderMountstuartElphinstone ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone ;
+    :isBloodrelationOf data:JamesElphinstone ;
+    :isBrotherOf data:JamesElphinstone ;
+    :isChildOf data:AndrewElphinstone ;
+    :isFatherOf data:AlexanderMountstuartElphinstone ;
+    :isParentOf data:AlexanderMountstuartElphinstone ;
+    :isSiblingOf data:JamesElphinstone ;
+    :isSonOf data:AndrewElphinstone ;
+    :isUncleOf data:AlexanderMountstuartElphinstone .
+
+data:WillaElliotMurrayKynynmound a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:VictorElliotMurrayKynynmound ;
+    :hasChild data:WillaMaryGabrielleChetwode ;
+    :hasDaughter data:WillaMaryGabrielleChetwode ;
+    :hasFather data:VictorElliotMurrayKynynmound ;
+    :hasParent data:VictorElliotMurrayKynynmound ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSister data:WillaElliotMurrayKynynmound ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone,
+        data:WillaMaryGabrielleChetwode ;
+    :isAuntOf data:WillaMaryGabrielleChetwode ;
+    :isBloodrelationOf data:WillaElliotMurrayKynynmound ;
+    :isChildOf data:VictorElliotMurrayKynynmound ;
+    :isDaughterOf data:VictorElliotMurrayKynynmound ;
+    :isMotherOf data:WillaMaryGabrielleChetwode ;
+    :isParentOf data:WillaMaryGabrielleChetwode ;
+    :isSiblingOf data:WillaElliotMurrayKynynmound ;
+    :isSisterOf data:WillaElliotMurrayKynynmound .
+
+data:AndrewElphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:MaryBowesLyon ;
+    :hasBrother data:AndrewElphinstone ;
+    :hasChild data:JamesElphinstone ;
+    :hasMother data:MaryBowesLyon ;
+    :hasParent data:MaryBowesLyon ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSon data:JamesElphinstone ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone,
+        data:JamesElphinstone ;
+    :isBloodrelationOf data:AndrewElphinstone ;
+    :isBrotherOf data:AndrewElphinstone ;
+    :isChildOf data:MaryBowesLyon ;
+    :isFatherOf data:JamesElphinstone ;
+    :isParentOf data:JamesElphinstone ;
+    :isSiblingOf data:AndrewElphinstone ;
+    :isSonOf data:MaryBowesLyon ;
+    :isUncleOf data:JamesElphinstone .
+
+data:AlexanderMountstuartElphinstone a :Man,
+        :Person ;
+    :hasAncestor data:AndrewElphinstone,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:AlexanderMountstuartElphinstone ;
+    :hasFather data:JamesElphinstone ;
+    :hasMother data:WillaMaryGabrielleChetwode ;
+    :hasParent data:JamesElphinstone,
+        data:WillaMaryGabrielleChetwode ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :isBloodrelationOf data:AlexanderMountstuartElphinstone ;
+    :isBrotherOf data:AlexanderMountstuartElphinstone ;
+    :isChildOf data:JamesElphinstone,
+        data:WillaMaryGabrielleChetwode ;
+    :isSiblingOf data:AlexanderMountstuartElphinstone ;
+    :isSonOf data:JamesElphinstone,
+        data:WillaMaryGabrielleChetwode .
+
+data:WillaMaryGabrielleChetwode a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeChetwode,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound ;
+    :hasChild data:AlexanderMountstuartElphinstone ;
+    :hasFather data:GeorgeChetwode ;
+    :hasMother data:WillaElliotMurrayKynynmound ;
+    :hasParent data:GeorgeChetwode,
+        data:WillaElliotMurrayKynynmound ;
+    :hasRelation data:AlexanderMountstuartElphinstone,
+        data:AndrewElphinstone,
+        data:ElizabethQueenMother,
+        data:GeorgeChetwode,
+        data:JamesElphinstone,
+        data:MaryBowesLyon,
+        data:VictorElliotMurrayKynynmound,
+        data:WillaElliotMurrayKynynmound,
+        data:WillaMaryGabrielleChetwode ;
+    :hasSister data:WillaMaryGabrielleChetwode ;
+    :hasSon data:AlexanderMountstuartElphinstone ;
+    :isAncestorOf data:AlexanderMountstuartElphinstone ;
+    :isAuntOf data:AlexanderMountstuartElphinstone ;
+    :isBloodrelationOf data:WillaMaryGabrielleChetwode ;
+    :isChildOf data:GeorgeChetwode,
+        data:WillaElliotMurrayKynynmound ;
+    :isDaughterOf data:GeorgeChetwode,
+        data:WillaElliotMurrayKynynmound ;
+    :isMotherOf data:AlexanderMountstuartElphinstone ;
+    :isParentOf data:AlexanderMountstuartElphinstone ;
+    :isSiblingOf data:WillaMaryGabrielleChetwode ;
+    :isSisterOf data:WillaMaryGabrielleChetwode .
+

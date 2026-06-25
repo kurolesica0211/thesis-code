@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Blanche_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Henri_of_Orleans ;\n    :hasMother data:Marie-Therese_of_Wurttemberg ;\n    :isSisterOf data:Francois_of_Orleans .\n\ndata:Francois_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Henri_of_Orleans ;\n    :hasMother data:Marie-Therese_of_Wurttemberg ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Henri_of_Orleans a :Man,\n        :Person .\n\ndata:Marie-Therese_of_Wurttemberg a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasParent data:Sophie,\n        data:WilliamIII ;\n    :isSiblingOf data:Maurice,\n        data:WilliamBrother .\n\ndata:Maurice a :Man,\n        :Person ;\n    :hasBirthYear 1843 ;\n    :hasDeathYear 1850 ;\n    :hasFather data:WilliamIII ;\n    :hasMother data:Sophie ;\n    :isSiblingOf data:WilliamBrother .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:WilliamBrother a :Man,\n        :Person .\n\ndata:WilliamIII a :Man,\n        :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Blanche_of_Orleans a :Person,\n        :Woman ;\n    :hasFather data:Henri_of_Orleans ;\n    :hasMother data:Marie-Therese_of_Wurttemberg ;\n    :isSisterOf data:Francois_of_Orleans .\n\ndata:Francois_of_Orleans a :Man,\n        :Person ;\n    :hasBirthYear 1961 ;\n    :hasDeathYear 2017 ;\n    :hasFather data:Henri_of_Orleans ;\n    :hasMother data:Marie-Therese_of_Wurttemberg ;\n    :hasSex \"Male\"^^xsd:string .\n\ndata:Henri_of_Orleans a :Man,\n        :Person .\n\ndata:Marie-Therese_of_Wurttemberg a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander a :Man,\n        :Person ;\n    :hasParent data:Sophie,\n        data:WilliamIII ;\n    :isSiblingOf data:Maurice,\n        data:WilliamBrother .\n\ndata:Maurice a :Man,\n        :Person ;\n    :hasBirthYear 1843 ;\n    :hasDeathYear 1850 ;\n    :hasFather data:WilliamIII ;\n    :hasMother data:Sophie ;\n    :isSiblingOf data:WilliamBrother .\n\ndata:Sophie a :Person,\n        :Woman .\n\ndata:WilliamBrother a :Man,\n        :Person .\n\ndata:WilliamIII a :Man,\n        :Person .\n\n"
     }
 ]

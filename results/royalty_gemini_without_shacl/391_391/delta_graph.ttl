@@ -2,36 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adolf_II_of_Schaumburg-Lippe a :Man,
+data:Charles_Prince_of_Wales a :Man,
         :Person .
 
-data:Marie_Alix_of_Schaumburg-Lippe a :Person,
-        :Woman ;
-    :alsoKnownAs "Marie Alix zu Schaumburg-Lippe"^^xsd:string ;
-    :hasBirthYear 1923 ;
-    :hasBrother data:Georg_Moritz_of_Schaumburg-Lippe ;
-    :hasDeathYear 2021 ;
-    :hasFather data:Stefan_of_Schaumburg-Lippe ;
-    :hasMarriageYear 1965 ;
-    :hasMother data:Ingeborg_Alix_of_Schaumburg-Lippe .
-
-data:Peter_Duke_of_Schleswig-Holstein a :Man,
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
         :Person ;
-    :hasFather data:Wilhelm_Friedrich_of_Schleswig-Holstein ;
-    :hasMother data:Marie_Melita_of_Hohenlohe-Langenburg .
+    :hasDeathYear 1979 ;
+    :hasMother data:Princess_Alice ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth .
 
-data:Georg_Moritz_of_Schaumburg-Lippe a :Man,
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
         :Person .
 
-data:Ingeborg_Alix_of_Schaumburg-Lippe a :Person,
+data:Queen_Elizabeth_II a :Person,
         :Woman .
 
-data:Marie_Melita_of_Hohenlohe-Langenburg a :Person,
+data:2nd_Countess_Mountbatten_of_Burma a :Person,
         :Woman .
 
-data:Stefan_of_Schaumburg-Lippe a :Man,
+data:7th_Baron_Brabourne a :Man,
         :Person .
 
-data:Wilhelm_Friedrich_of_Schleswig-Holstein a :Man,
+data:Charles_Vincent_Ellingworth a :Man,
         :Person .
+
+data:Lady_Amanda_Patricia_Victoria_Ellingworth a :Person,
+        :Woman ;
+    :hasBirthYear 1957 ;
+    :hasFather data:7th_Baron_Brabourne ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:Charles_Vincent_Ellingworth ;
+    :knownAs data:The_Honourable_Amanda_Knatchbull .
+
+data:Princess_Alice a :Ancestor,
+        :Woman ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman .
+
+data:The_Honourable_Amanda_Knatchbull a :Person,
+        :Woman .
 

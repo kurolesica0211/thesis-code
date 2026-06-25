@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoDeBorbonDosSicilias a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:AlfonsoDeBorbonDosSicilias ;
+    :hasChild data:InesOfBourbonTwoSicilies ;
+    :hasDaughter data:InesOfBourbonTwoSicilies ;
+    :hasDeathYear 1964 ;
+    :hasRelation data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma,
+        data:InesOfBourbonTwoSicilies ;
+    :isAncestorOf data:InesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:AlfonsoDeBorbonDosSicilias ;
+    :isBrotherOf data:AlfonsoDeBorbonDosSicilias ;
+    :isFatherOf data:InesOfBourbonTwoSicilies ;
+    :isParentOf data:InesOfBourbonTwoSicilies ;
+    :isSiblingOf data:AlfonsoDeBorbonDosSicilias ;
+    :isUncleOf data:InesOfBourbonTwoSicilies .
+
+data:AliciaOfBourbonParma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:InesOfBourbonTwoSicilies ;
+    :hasDaughter data:InesOfBourbonTwoSicilies ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma,
+        data:InesOfBourbonTwoSicilies ;
+    :hasSister data:AliciaOfBourbonParma ;
+    :isAncestorOf data:InesOfBourbonTwoSicilies ;
+    :isAuntOf data:InesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:AliciaOfBourbonParma ;
+    :isMotherOf data:InesOfBourbonTwoSicilies ;
+    :isParentOf data:InesOfBourbonTwoSicilies ;
+    :isSiblingOf data:AliciaOfBourbonParma ;
+    :isSisterOf data:AliciaOfBourbonParma .
+
+data:InesOfBourbonTwoSicilies a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma ;
+    :hasBirthYear 1940 ;
+    :hasFather data:AlfonsoDeBorbonDosSicilias ;
+    :hasMother data:AliciaOfBourbonParma ;
+    :hasParent data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma ;
+    :hasRelation data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma,
+        data:InesOfBourbonTwoSicilies ;
+    :hasSister data:InesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:InesOfBourbonTwoSicilies ;
+    :isChildOf data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma ;
+    :isDaughterOf data:AlfonsoDeBorbonDosSicilias,
+        data:AliciaOfBourbonParma ;
+    :isSiblingOf data:InesOfBourbonTwoSicilies ;
+    :isSisterOf data:InesOfBourbonTwoSicilies .
+

@@ -1,0 +1,371 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingFrederikX a :Ancestor,
+        :Man ;
+    :hasBrother data:KingFrederikX ;
+    :hasChild data:PrinceVincentOfDenmark ;
+    :hasRelation data:KingFrederikX,
+        data:PrinceVincentOfDenmark ;
+    :hasSon data:PrinceVincentOfDenmark ;
+    :isAncestorOf data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isFatherOf data:PrinceVincentOfDenmark ;
+    :isParentOf data:PrinceVincentOfDenmark ;
+    :isSiblingOf data:KingFrederikX ;
+    :isUncleOf data:PrinceVincentOfDenmark .
+
+data:PrinceVincentOfDenmark a :Man ;
+    :hasAncestor data:KingFrederikX ;
+    :hasBrother data:PrinceVincentOfDenmark ;
+    :hasFather data:KingFrederikX ;
+    :hasParent data:KingFrederikX ;
+    :hasRelation data:KingFrederikX,
+        data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:PrinceVincentOfDenmark ;
+    :isBrotherOf data:PrinceVincentOfDenmark ;
+    :isChildOf data:KingFrederikX ;
+    :isSiblingOf data:PrinceVincentOfDenmark ;
+    :isSonOf data:KingFrederikX .
+
+data:PrinceRobin a :Man ;
+    :hasBrother data:PrinceRichard,
+        data:PrinceRobin ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isBrotherOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isSiblingOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isUncleOf data:Gustav .
+
+data:PrincessBenedikte a :Ancestor,
+        :Woman ;
+    :hasChild data:Gustav ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessBenedikte ;
+    :hasSon data:Gustav ;
+    :isAncestorOf data:Gustav,
+        data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isAuntOf data:Gustav ;
+    :isBloodrelationOf data:PrincessBenedikte ;
+    :isMotherOf data:Gustav ;
+    :isParentOf data:Gustav ;
+    :isSiblingOf data:PrincessBenedikte ;
+    :isSisterOf data:PrincessBenedikte .
+
+data:CountRichardVonPfeilUndKleinEllguth a :Man ;
+    :hasAncestor data:PrincessAlexandra ;
+    :hasBrother data:CountRichardVonPfeilUndKleinEllguth ;
+    :hasMother data:PrincessAlexandra ;
+    :hasParent data:PrincessAlexandra ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isBrotherOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isChildOf data:PrincessAlexandra ;
+    :isSiblingOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isSonOf data:PrincessAlexandra .
+
+data:KonstantinJohannsmann a :Man ;
+    :hasAncestor data:PrincessNathalie ;
+    :hasBrother data:KonstantinJohannsmann ;
+    :hasMother data:PrincessNathalie ;
+    :hasParent data:PrincessNathalie ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:KonstantinJohannsmann ;
+    :isBrotherOf data:KonstantinJohannsmann ;
+    :isChildOf data:PrincessNathalie ;
+    :isSiblingOf data:KonstantinJohannsmann ;
+    :isSonOf data:PrincessNathalie .
+
+data:CarinaAxelsson a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :hasDaughter data:PrincessMafalda ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:CarinaAxelsson ;
+    :hasSon data:PrinceGustavAlbrecht ;
+    :isAncestorOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isAuntOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBloodrelationOf data:CarinaAxelsson ;
+    :isMotherOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isParentOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isSiblingOf data:CarinaAxelsson ;
+    :isSisterOf data:CarinaAxelsson .
+
+data:PrinceRichard a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceRichard,
+        data:PrinceRobin ;
+    :hasChild data:Gustav ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSon data:Gustav ;
+    :isAncestorOf data:Gustav,
+        data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBloodrelationOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isBrotherOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isFatherOf data:Gustav ;
+    :isParentOf data:Gustav ;
+    :isSiblingOf data:PrinceRichard,
+        data:PrinceRobin ;
+    :isUncleOf data:Gustav .
+
+data:PrincessAlexandra a :Ancestor,
+        :Woman ;
+    :hasBrother data:Gustav ;
+    :hasChild data:CountRichardVonPfeilUndKleinEllguth ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :hasSon data:CountRichardVonPfeilUndKleinEllguth ;
+    :isAncestorOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isAuntOf data:CountRichardVonPfeilUndKleinEllguth,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isMotherOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isParentOf data:CountRichardVonPfeilUndKleinEllguth ;
+    :isSiblingOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isSisterOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie .
+
+data:PrincessNathalie a :Ancestor,
+        :Woman ;
+    :hasBrother data:Gustav ;
+    :hasChild data:KonstantinJohannsmann ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :hasSon data:KonstantinJohannsmann ;
+    :isAncestorOf data:KonstantinJohannsmann ;
+    :isAuntOf data:CountRichardVonPfeilUndKleinEllguth,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isMotherOf data:KonstantinJohannsmann ;
+    :isParentOf data:KonstantinJohannsmann ;
+    :isSiblingOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isSisterOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie .
+
+data:PrinceGustavAlbrecht a :Man ;
+    :hasAncestor data:CarinaAxelsson,
+        data:Gustav,
+        data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasBrother data:PrinceGustavAlbrecht ;
+    :hasFather data:Gustav ;
+    :hasMother data:CarinaAxelsson ;
+    :hasParent data:CarinaAxelsson,
+        data:Gustav ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessMafalda ;
+    :isBloodrelationOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBrotherOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isChildOf data:CarinaAxelsson,
+        data:Gustav ;
+    :isSiblingOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isSonOf data:CarinaAxelsson,
+        data:Gustav .
+
+data:PrincessMafalda a :Woman ;
+    :hasAncestor data:CarinaAxelsson,
+        data:Gustav,
+        data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasBrother data:PrinceGustavAlbrecht ;
+    :hasFather data:Gustav ;
+    :hasMother data:CarinaAxelsson ;
+    :hasParent data:CarinaAxelsson,
+        data:Gustav ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessMafalda ;
+    :isBloodrelationOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isChildOf data:CarinaAxelsson,
+        data:Gustav ;
+    :isDaughterOf data:CarinaAxelsson,
+        data:Gustav ;
+    :isSiblingOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isSisterOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda .
+
+data:Gustav a :Ancestor,
+        :Man ;
+    :hasAncestor data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Gustav ;
+    :hasChild data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :hasDaughter data:PrincessMafalda ;
+    :hasFather data:PrinceRichard ;
+    :hasMother data:PrincessBenedikte ;
+    :hasParent data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasRelation data:CarinaAxelsson,
+        data:CountRichardVonPfeilUndKleinEllguth,
+        data:Gustav,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrinceRichard,
+        data:PrinceRobin,
+        data:PrincessAlexandra,
+        data:PrincessBenedikte,
+        data:PrincessMafalda,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :hasSon data:PrinceGustavAlbrecht ;
+    :isAncestorOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isBloodrelationOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isBrotherOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isChildOf data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :isFatherOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isParentOf data:PrinceGustavAlbrecht,
+        data:PrincessMafalda ;
+    :isSiblingOf data:Gustav,
+        data:PrincessAlexandra,
+        data:PrincessNathalie ;
+    :isSonOf data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :isUncleOf data:CountRichardVonPfeilUndKleinEllguth,
+        data:KonstantinJohannsmann,
+        data:PrinceGustavAlbrecht,
+        data:PrincessMafalda .
+

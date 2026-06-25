@@ -1,0 +1,216 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Leonora_Anson-_Countess_of_Lichfield a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Leonora Anson, Countess of Lichfield"^^xsd:string ;
+    data:posIndicesFull "1640:1662"^^xsd:string,
+        "1645:1662"^^xsd:string,
+        "2142:2169"^^xsd:string,
+        "2147:2169"^^xsd:string ;
+    data:posIndicesPart "1737:1746"^^xsd:string,
+        "1941:1950"^^xsd:string,
+        "1968:1977"^^xsd:string,
+        "1995:2004"^^xsd:string,
+        "2190:2195"^^xsd:string,
+        "2263:2272"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2411:2416"^^xsd:string,
+        "2427:2432"^^xsd:string,
+        "2467:2472"^^xsd:string ;
+    data:wdtLink wdt:Q6526686 ;
+    :alsoKnownAs "Lady Leonora Grosvenor"^^xsd:string,
+        "Lady Leonora Mary Grosvenor"^^xsd:string,
+        "Leonora Grosvenor"^^xsd:string,
+        "Leonora Lichfield"^^xsd:string,
+        "Leonora Mary Anson, Countess of Lichfield"^^xsd:string,
+        "Leonora Mary Grosvenor"^^xsd:string,
+        "Leonora Mary, Countess of Lichfield"^^xsd:string,
+        "Leonora, Countess of Lichfield"^^xsd:string ;
+    :hasChild data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasRelation data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:female ;
+    :hasSister data:Leonora_Anson-_Countess_of_Lichfield ;
+    :hasSon data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAncestorOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAuntOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Leonora_Anson-_Countess_of_Lichfield ;
+    :isMotherOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isParentOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Leonora_Anson-_Countess_of_Lichfield ;
+    :isSisterOf data:Leonora_Anson-_Countess_of_Lichfield .
+
+data:Thomas_Anson-_Viscount_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Thomas Anson, Viscount Anson"^^xsd:string ;
+    data:posIndicesFull "1401:1444"^^xsd:string ;
+    data:posIndicesPart "2181:2189"^^xsd:string,
+        "2190:2195"^^xsd:string,
+        "2285:2293"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2383:2389"^^xsd:string,
+        "2411:2416"^^xsd:string,
+        "2418:2426"^^xsd:string,
+        "2427:2432"^^xsd:string,
+        "2467:2472"^^xsd:string ;
+    data:wdtLink wdt:Q75390868 ;
+    :alsoKnownAs "Thomas William Arnold Anson, Viscount Anson"^^xsd:string ;
+    :hasBrother data:Thomas_Anson-_Viscount_Anson ;
+    :hasChild data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasRelation data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :hasSon data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Thomas_Anson-_Viscount_Anson ;
+    :isBrotherOf data:Thomas_Anson-_Viscount_Anson ;
+    :isFatherOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isParentOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_Anson-_Viscount_Anson ;
+    :isUncleOf data:Patrick_Anson-_5th_Earl_of_Lichfield .
+
+data:Patrick_Anson-_5th_Earl_of_Lichfield a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Patrick Anson, 5th Earl of Lichfield"^^xsd:string ;
+    data:posIndicesFull "1510:1527"^^xsd:string,
+        "205:218"^^xsd:string,
+        "205:241"^^xsd:string ;
+    data:posIndicesPart "1118:1122"^^xsd:string,
+        "1140:1145"^^xsd:string,
+        "1170:1175"^^xsd:string,
+        "1202:1211"^^xsd:string,
+        "1244:1249"^^xsd:string,
+        "1303:1307"^^xsd:string,
+        "1360:1364"^^xsd:string,
+        "1480:1484"^^xsd:string,
+        "1605:1609"^^xsd:string,
+        "1631:1635"^^xsd:string,
+        "1729:1733"^^xsd:string,
+        "1737:1746"^^xsd:string,
+        "1800:1804"^^xsd:string,
+        "1941:1950"^^xsd:string,
+        "1968:1977"^^xsd:string,
+        "1995:2004"^^xsd:string,
+        "2124:2128"^^xsd:string,
+        "2190:2195"^^xsd:string,
+        "2255:2259"^^xsd:string,
+        "2263:2272"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2397:2404"^^xsd:string,
+        "2411:2416"^^xsd:string,
+        "2427:2432"^^xsd:string,
+        "2467:2472"^^xsd:string,
+        "393:398"^^xsd:string,
+        "455:464"^^xsd:string,
+        "635:640"^^xsd:string,
+        "695:700"^^xsd:string,
+        "818:822"^^xsd:string,
+        "872:877"^^xsd:string,
+        "991:996"^^xsd:string ;
+    data:wdtLink wdt:Q246026 ;
+    :alsoKnownAs "Patrick Anson"^^xsd:string,
+        "Patrick Lichfield"^^xsd:string,
+        "Thomas Patrick John Anson"^^xsd:string,
+        "Thomas Patrick John Anson, 5th Earl of Lichfield"^^xsd:string ;
+    :hasAncestor data:Thomas_Anson-_Viscount_Anson ;
+    :hasBrother data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasChild data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasFather data:Thomas_Anson-_Viscount_Anson ;
+    :hasParent data:Thomas_Anson-_Viscount_Anson ;
+    :hasRelation data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :hasSon data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAncestorOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isBrotherOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isChildOf data:Thomas_Anson-_Viscount_Anson ;
+    :isFatherOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isParentOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSonOf data:Thomas_Anson-_Viscount_Anson ;
+    :isUncleOf data:Thomas_Anson-_6th_Earl_of_Lichfield .
+
+data:Thomas_Anson-_6th_Earl_of_Lichfield a :Man,
+        :Person ;
+    rdfs:label "Thomas Anson, 6th Earl of Lichfield"^^xsd:string ;
+    data:posIndicesFull "2026:2058"^^xsd:string,
+        "2026:2081"^^xsd:string,
+        "608:620"^^xsd:string,
+        "845:857"^^xsd:string ;
+    data:posIndicesPart "1118:1122"^^xsd:string,
+        "1140:1145"^^xsd:string,
+        "1170:1175"^^xsd:string,
+        "1202:1211"^^xsd:string,
+        "1244:1249"^^xsd:string,
+        "1303:1307"^^xsd:string,
+        "1360:1364"^^xsd:string,
+        "1480:1484"^^xsd:string,
+        "1605:1609"^^xsd:string,
+        "1631:1635"^^xsd:string,
+        "1729:1733"^^xsd:string,
+        "1737:1746"^^xsd:string,
+        "1800:1804"^^xsd:string,
+        "1941:1950"^^xsd:string,
+        "1968:1977"^^xsd:string,
+        "1995:2004"^^xsd:string,
+        "2190:2195"^^xsd:string,
+        "2255:2259"^^xsd:string,
+        "2263:2272"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2383:2389"^^xsd:string,
+        "2411:2416"^^xsd:string,
+        "2427:2432"^^xsd:string,
+        "2467:2472"^^xsd:string ;
+    data:wdtLink wdt:Q10382174 ;
+    :alsoKnownAs "Thomas Anson"^^xsd:string,
+        "Thomas William Robert Hugh Anson"^^xsd:string,
+        "Thomas William Robert Hugh Anson, 6th Earl of Lichfield"^^xsd:string ;
+    :hasAncestor data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasBrother data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasFather data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasMother data:Leonora_Anson-_Countess_of_Lichfield ;
+    :hasParent data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasRelation data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBrotherOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isChildOf data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isSonOf data:Leonora_Anson-_Countess_of_Lichfield,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield .
+

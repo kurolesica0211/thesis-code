@@ -2,33 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Maurice a :Man,
-        :Person ;
-    :isBrotherOf data:Alexander_Prince_of_Orange .
-
-data:Prince_William a :Man,
-        :Person ;
-    :isBrotherOf data:Alexander_Prince_of_Orange .
-
-data:Sophie_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Alexander_Prince_of_Orange .
-
-data:Wilhelmina_of_the_Netherlands a :Person,
-        :Woman ;
-    :isSisterOf data:Alexander_Prince_of_Orange .
-
-data:William_III_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Alexander_Prince_of_Orange .
-
-data:Male a :Sex .
-
 data:Alexander_Prince_of_Orange a :Man,
         :Person ;
     :hasBirthYear 1851 ;
     :hasDeathYear 1884 ;
-    :hasSex data:Male .
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Maurice,
+        data:Prince_William .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasFather data:William_III_of_the_Netherlands .
+
+data:Prince_Maurice a :Man,
+        :Person .
+
+data:Prince_William a :Man,
+        :Person .
+
+data:Sophie_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person .
 

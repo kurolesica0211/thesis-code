@@ -1,0 +1,262 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Allegra_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Allegra Hicks"^^xsd:string ;
+    data:posIndicesFull "370:408"^^xsd:string ;
+    data:posIndicesPart "1218:1223"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "1495:1500"^^xsd:string,
+        "2004:2009"^^xsd:string,
+        "2117:2122"^^xsd:string,
+        "2189:2194"^^xsd:string,
+        "2247:2252"^^xsd:string,
+        "501:506"^^xsd:string,
+        "726:731"^^xsd:string,
+        "875:880"^^xsd:string ;
+    data:wdtLink wdt:Q75328043 ;
+    :alsoKnownAs "Allegra Marina Tondato"^^xsd:string,
+        "Allegra Mottola di Amato"^^xsd:string,
+        "Allegra Tondato"^^xsd:string,
+        "Marina Allegra Federica Silvia Hicks"^^xsd:string,
+        "Marina Allegra Federica Silvia Mottola di Amato"^^xsd:string,
+        "Marina Allegra Federica Silvia Tondato"^^xsd:string ;
+    :hasChild data:Angelica_Hicks ;
+    :hasDaughter data:Angelica_Hicks ;
+    :hasRelation data:Allegra_Hicks,
+        data:Angelica_Hicks ;
+    :hasSex data:female ;
+    :hasSister data:Allegra_Hicks ;
+    :isAncestorOf data:Angelica_Hicks ;
+    :isAuntOf data:Angelica_Hicks ;
+    :isBloodrelationOf data:Allegra_Hicks ;
+    :isMotherOf data:Angelica_Hicks ;
+    :isParentOf data:Angelica_Hicks ;
+    :isSiblingOf data:Allegra_Hicks ;
+    :isSisterOf data:Allegra_Hicks .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Nightingale Hicks"^^xsd:string ;
+    data:posIndicesFull "448:459"^^xsd:string,
+        "579:602"^^xsd:string ;
+    data:posIndicesPart "1218:1223"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "1495:1500"^^xsd:string,
+        "2004:2009"^^xsd:string,
+        "2117:2122"^^xsd:string,
+        "2189:2194"^^xsd:string,
+        "2247:2252"^^xsd:string,
+        "726:731"^^xsd:string,
+        "875:880"^^xsd:string ;
+    data:wdtLink wdt:Q5238032 ;
+    :alsoKnownAs "David Hicks"^^xsd:string ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:Ashley_Hicks ;
+    :hasRelation data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:David_Nightingale_Hicks ;
+    :hasSex data:male ;
+    :hasSon data:Ashley_Hicks ;
+    :isAncestorOf data:Angelica_Hicks,
+        data:Ashley_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isFatherOf data:Ashley_Hicks ;
+    :isParentOf data:Ashley_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isUncleOf data:Ashley_Hicks .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "1069:1095"^^xsd:string,
+        "147:164"^^xsd:string,
+        "147:195"^^xsd:string,
+        "902:919"^^xsd:string,
+        "902:950"^^xsd:string ;
+    data:posIndicesPart "1736:1741"^^xsd:string,
+        "753:764"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasRelation data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :isAncestorOf data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isBloodrelationOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isBrotherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isUncleOf data:Lady_Pamela_Hicks .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lady Pamela Hicks"^^xsd:string ;
+    data:posIndicesFull "607:630"^^xsd:string,
+        "612:630"^^xsd:string ;
+    data:posIndicesPart "1218:1223"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "1495:1500"^^xsd:string,
+        "2004:2009"^^xsd:string,
+        "2117:2122"^^xsd:string,
+        "2189:2194"^^xsd:string,
+        "2247:2252"^^xsd:string,
+        "726:731"^^xsd:string,
+        "875:880"^^xsd:string ;
+    data:wdtLink wdt:Q3268202 ;
+    :alsoKnownAs "Lady Pamela Carmen Louise Hicks"^^xsd:string,
+        "Lady Pamela Carmen Louise Mountbatten"^^xsd:string,
+        "Lady Pamela Mountbatten"^^xsd:string,
+        "Pamela Carmen Louise Hicks"^^xsd:string,
+        "Pamela Carmen Louise Mountbatten"^^xsd:string,
+        "Pamela Mountbatten"^^xsd:string ;
+    :hasAncestor data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Ashley_Hicks ;
+    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasParent data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Pamela_Hicks ;
+    :hasSon data:Ashley_Hicks ;
+    :isAncestorOf data:Angelica_Hicks,
+        data:Ashley_Hicks ;
+    :isAuntOf data:Ashley_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks ;
+    :isChildOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isDaughterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isMotherOf data:Ashley_Hicks ;
+    :isParentOf data:Ashley_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Hicks ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:Angelica_Hicks a :Person,
+        :Woman ;
+    rdfs:label "Angelica Hicks"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string ;
+    data:posIndicesPart "1218:1223"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "1495:1500"^^xsd:string,
+        "2004:2009"^^xsd:string,
+        "2117:2122"^^xsd:string,
+        "2189:2194"^^xsd:string,
+        "2247:2252"^^xsd:string,
+        "331:336"^^xsd:string,
+        "501:506"^^xsd:string,
+        "726:731"^^xsd:string,
+        "875:880"^^xsd:string ;
+    data:wdtLink wdt:Q75328030 ;
+    :alsoKnownAs "Angelica Margherita Edwina Hicks"^^xsd:string ;
+    :hasAncestor data:Allegra_Hicks,
+        data:Ashley_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Ashley_Hicks ;
+    :hasMother data:Allegra_Hicks ;
+    :hasParent data:Allegra_Hicks,
+        data:Ashley_Hicks ;
+    :hasRelation data:Allegra_Hicks,
+        data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Angelica_Hicks ;
+    :isBloodrelationOf data:Angelica_Hicks ;
+    :isChildOf data:Allegra_Hicks,
+        data:Ashley_Hicks ;
+    :isDaughterOf data:Allegra_Hicks,
+        data:Ashley_Hicks ;
+    :isSiblingOf data:Angelica_Hicks ;
+    :isSisterOf data:Angelica_Hicks .
+
+data:Ashley_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ashley Hicks"^^xsd:string ;
+    data:posIndicesFull "435:459"^^xsd:string ;
+    data:posIndicesPart "1218:1223"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "1495:1500"^^xsd:string,
+        "2004:2009"^^xsd:string,
+        "2117:2122"^^xsd:string,
+        "2189:2194"^^xsd:string,
+        "2247:2252"^^xsd:string,
+        "501:506"^^xsd:string,
+        "726:731"^^xsd:string,
+        "875:880"^^xsd:string,
+        "977:983"^^xsd:string ;
+    data:wdtLink wdt:Q16195113 ;
+    :alsoKnownAs "Ashley Louis David Hicks"^^xsd:string ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasBrother data:Ashley_Hicks ;
+    :hasChild data:Angelica_Hicks ;
+    :hasDaughter data:Angelica_Hicks ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasRelation data:Angelica_Hicks,
+        data:Ashley_Hicks,
+        data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :isAncestorOf data:Angelica_Hicks ;
+    :isBloodrelationOf data:Ashley_Hicks ;
+    :isBrotherOf data:Ashley_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isFatherOf data:Angelica_Hicks ;
+    :isParentOf data:Angelica_Hicks ;
+    :isSiblingOf data:Ashley_Hicks ;
+    :isSonOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isUncleOf data:Angelica_Hicks .
+

@@ -2,44 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cristina_de_Borbon a :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia ;
-    :hasSex data:Female .
+data:Kira_Georgievna a :Woman ;
+    :hasFather data:George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna .
 
-data:Felipe_VI a :Man ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia ;
-    :hasSex data:Male .
+data:George_Mikhailovich_of_Russia a :Man ;
+    :hasFather data:Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Victoria_Romanovna .
 
-data:Felipe_de_Marichalar_y_Borbon a :Man ;
-    :hasBirthYear 1998 ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Elena_de_Borbon ;
-    :hasSex data:Male .
+data:Kira_Kirillovna_of_Russia a :Woman .
 
-data:Victoria_de_Marichalar_y_Borbon a :Woman ;
-    :hasBirthYear 2000 ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Elena_de_Borbon ;
-    :hasSex data:Female .
+data:Kirill_Vladimirovich_of_Russia a :Man .
 
-data:Elena_de_Borbon a :Woman ;
-    :hasBirthYear 1963 ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia ;
-    :hasSex data:Female .
+data:Leonida_Bagration-Mukhrani a :Woman .
 
-data:Jaime_de_Marichalar a :Man ;
-    :hasSex data:Male .
+data:Maria_Vladimirovna_of_Russia a :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Vladimir_Kirillovich_of_Russia ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Leonida_Bagration-Mukhrani ;
+    :hasRelation data:Franz_Wilhelm_of_Prussia .
 
-data:Juan_Carlos_I a :Man ;
-    :hasSex data:Male .
+data:Victoria_Fyodorovna a :Woman .
 
-data:Sofia a :Woman ;
-    :hasSex data:Female .
+data:Vladimir_Kirillovich_of_Russia a :Man ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Fyodorovna ;
+    :hasSister data:Kira_Kirillovna_of_Russia .
 
-data:Female a :Sex .
+data:Franz_Wilhelm_of_Prussia a :Man .
 
-data:Male a :Sex .
+data:Victoria_Romanovna a :Woman .
 

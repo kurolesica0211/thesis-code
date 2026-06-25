@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_V a :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "993:1001"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasRelation data:George_V ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isSiblingOf data:George_V .
+
+data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Birgitte, Duchess of Gloucester"^^xsd:string ;
+    data:posIndicesFull "455:486"^^xsd:string ;
+    data:posIndicesPart "1426:1433"^^xsd:string,
+        "1437:1447"^^xsd:string ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen"^^xsd:string,
+        "Birgitte Eva van Deurs Henriksen"^^xsd:string ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasRelation data:Birgitte-_Duchess_of_Gloucester,
+        data:Lady_Davina_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Birgitte-_Duchess_of_Gloucester ;
+    :isAncestorOf data:Lady_Davina_Windsor ;
+    :isAuntOf data:Lady_Davina_Windsor ;
+    :isBloodrelationOf data:Birgitte-_Duchess_of_Gloucester ;
+    :isMotherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Birgitte-_Duchess_of_Gloucester ;
+    :isSisterOf data:Birgitte-_Duchess_of_Gloucester .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Richard, Duke of Gloucester"^^xsd:string ;
+    data:posIndicesFull "416:450"^^xsd:string ;
+    data:posIndicesPart "1417:1421"^^xsd:string,
+        "1437:1447"^^xsd:string,
+        "2093:2099"^^xsd:string,
+        "534:538"^^xsd:string,
+        "931:937"^^xsd:string ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester"^^xsd:string,
+        "Prince Richard Alexander Walter George, Duke of Gloucester"^^xsd:string,
+        "Prince Richard of Gloucester"^^xsd:string,
+        "Richard Alexander Walter George"^^xsd:string,
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester"^^xsd:string,
+        "Richard Gloucester"^^xsd:string,
+        "Richard Windsor"^^xsd:string ;
+    :hasBrother data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasRelation data:Lady_Davina_Windsor,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :isAncestorOf data:Lady_Davina_Windsor ;
+    :isBloodrelationOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isFatherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isUncleOf data:Lady_Davina_Windsor .
+
+data:Lady_Davina_Windsor a :Person,
+        :Woman ;
+    rdfs:label "Lady Davina Windsor"^^xsd:string ;
+    data:posIndicesFull "0:45"^^xsd:string,
+        "193:210"^^xsd:string,
+        "198:210"^^xsd:string,
+        "295:335"^^xsd:string,
+        "5:45"^^xsd:string ;
+    data:posIndicesPart "1377:1383"^^xsd:string,
+        "1585:1591"^^xsd:string,
+        "1725:1731"^^xsd:string,
+        "1814:1820"^^xsd:string,
+        "1915:1921"^^xsd:string,
+        "564:568"^^xsd:string,
+        "651:655"^^xsd:string,
+        "656:662"^^xsd:string,
+        "733:739"^^xsd:string ;
+    data:wdtLink wdt:Q268139 ;
+    :alsoKnownAs "Davina Elizabeth Alice Benedikte Windsor"^^xsd:string,
+        "Davina Lewis"^^xsd:string,
+        "Davina Windsor"^^xsd:string,
+        "Denny Lewis"^^xsd:string,
+        "Lady Davina Elizabeth Alice Benedikte Lewis"^^xsd:string,
+        "Lady Davina Elizabeth Alice Benedikte Windsor"^^xsd:string,
+        "Lady Davina Lewis"^^xsd:string ;
+    :hasAncestor data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasRelation data:Birgitte-_Duchess_of_Gloucester,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Davina_Windsor ;
+    :isBloodrelationOf data:Lady_Davina_Windsor ;
+    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isDaughterOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isSiblingOf data:Lady_Davina_Windsor ;
+    :isSisterOf data:Lady_Davina_Windsor .
+

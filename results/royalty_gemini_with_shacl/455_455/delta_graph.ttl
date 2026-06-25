@@ -2,29 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
+data:Felipe_VI a :Man,
         :Person ;
-    :hasDeathYear 2010 ;
-    :hasFather data:Mariano_Hugo_of_Windisch-Graetz ;
-    :hasMother data:Sophie_Habsburg .
+    :isBloodrelationOf data:Alexia .
 
-data:Ferdinand_Karl_Max_of_Austria a :Ancestor,
-        :Man,
-        :Person .
+data:Pavlos a :Man,
+        :Person ;
+    :isBrotherOf data:Alexia ;
+    :isParentOf data:Maria-Olympia .
 
-data:Helene_of_Torring-Jettenbach a :Ancestor,
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Alexia .
+
+data:Anne-Marie a :Ancestor,
         :Person,
         :Woman .
 
-data:Mariano_Hugo_of_Windisch-Graetz a :Ancestor,
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person .
+
+data:Constantine_II a :Ancestor,
         :Man,
         :Person .
 
-data:Sophie_Habsburg a :Ancestor,
-        :Person,
+data:Maria-Olympia a :Person,
+        :Woman .
+
+data:Alexia a :Person,
         :Woman ;
-    :hasBirthYear 1959 ;
-    :hasFather data:Ferdinand_Karl_Max_of_Austria ;
-    :hasMother data:Helene_of_Torring-Jettenbach ;
-    :knownAs "Archduchess Sophie of Austria"^^xsd:string .
+    :hasBirthYear 1965 ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana .
 

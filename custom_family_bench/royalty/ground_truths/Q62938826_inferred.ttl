@@ -1,0 +1,306 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Meghan-_Duchess_of_Sussex a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Meghan, Duchess of Sussex"^^xsd:string ;
+    data:posIndicesFull "171:196"^^xsd:string,
+        "494:519"^^xsd:string ;
+    data:posIndicesPart "1282:1288"^^xsd:string,
+        "1505:1512"^^xsd:string,
+        "1917:1923"^^xsd:string,
+        "1939:1946"^^xsd:string,
+        "1950:1956"^^xsd:string ;
+    data:wdtLink wdt:Q3304418 ;
+    :alsoKnownAs "Duchess Meghan"^^xsd:string,
+        "Duchess Rachel"^^xsd:string,
+        "Meghan Markle"^^xsd:string,
+        "Meghan Sussex"^^xsd:string,
+        "Rachel Markle"^^xsd:string,
+        "Rachel Meghan Markle"^^xsd:string,
+        "Rachel Sussex"^^xsd:string ;
+    :hasChild data:Prince_Archie_of_Sussex ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female ;
+    :hasSister data:Meghan-_Duchess_of_Sussex ;
+    :hasSon data:Prince_Archie_of_Sussex ;
+    :isAncestorOf data:Prince_Archie_of_Sussex ;
+    :isAuntOf data:Prince_Archie_of_Sussex ;
+    :isBloodrelationOf data:Meghan-_Duchess_of_Sussex ;
+    :isMotherOf data:Prince_Archie_of_Sussex ;
+    :isParentOf data:Prince_Archie_of_Sussex ;
+    :isSiblingOf data:Meghan-_Duchess_of_Sussex ;
+    :isSisterOf data:Meghan-_Duchess_of_Sussex .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "747:765"^^xsd:string,
+        "753:765"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isAuntOf data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "770:783"^^xsd:string ;
+    data:posIndicesPart "1496:1500"^^xsd:string,
+        "1758:1764"^^xsd:string,
+        "942:946"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Charles_III .
+
+data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex"^^xsd:string ;
+    data:posIndicesFull "137:149"^^xsd:string,
+        "137:165"^^xsd:string,
+        "1385:1397"^^xsd:string,
+        "461:473"^^xsd:string,
+        "461:489"^^xsd:string ;
+    data:posIndicesPart "1496:1500"^^xsd:string,
+        "1758:1764"^^xsd:string,
+        "1928:1933"^^xsd:string,
+        "1950:1956"^^xsd:string,
+        "942:946"^^xsd:string ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales"^^xsd:string,
+        "Harry Sussex"^^xsd:string,
+        "Harry Wales"^^xsd:string,
+        "Harry Windsor"^^xsd:string,
+        "Henry Charles Albert David"^^xsd:string,
+        "Henry Sussex"^^xsd:string,
+        "Henry Wales"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Harry"^^xsd:string,
+        "Prince Harry of Wales"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry Charles Albert"^^xsd:string,
+        "Prince Henry Charles Albert David"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry, Duke of Sussex"^^xsd:string,
+        "Prince Henry, Duke of Sussex, KCVO"^^xsd:string,
+        "The Prince Henry, Duke of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex ;
+    :hasChild data:Prince_Archie_of_Sussex ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Archie_of_Sussex ;
+    :isAncestorOf data:Prince_Archie_of_Sussex ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isChildOf data:Charles_III ;
+    :isFatherOf data:Prince_Archie_of_Sussex ;
+    :isParentOf data:Prince_Archie_of_Sussex ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSonOf data:Charles_III ;
+    :isUncleOf data:Prince_Archie_of_Sussex .
+
+data:Prince_Archie_of_Sussex a :Man,
+        :Person ;
+    rdfs:label "Prince Archie of Sussex"^^xsd:string ;
+    data:posIndicesFull "0:23"^^xsd:string,
+        "1569:1584"^^xsd:string,
+        "1569:1604"^^xsd:string,
+        "2189:2212"^^xsd:string,
+        "2196:2212"^^xsd:string,
+        "25:40"^^xsd:string,
+        "25:60"^^xsd:string,
+        "318:333"^^xsd:string,
+        "318:353"^^xsd:string,
+        "7:23"^^xsd:string ;
+    data:posIndicesPart "1116:1122"^^xsd:string,
+        "1282:1288"^^xsd:string,
+        "1335:1341"^^xsd:string,
+        "1718:1724"^^xsd:string,
+        "1758:1764"^^xsd:string,
+        "1950:1956"^^xsd:string,
+        "521:527"^^xsd:string,
+        "687:693"^^xsd:string,
+        "978:984"^^xsd:string ;
+    data:wdtLink wdt:Q62938826 ;
+    :alsoKnownAs "Archie Harrison"^^xsd:string,
+        "Archie Harrison Mountbatten-Windsor"^^xsd:string,
+        "Archie Harrison of Sussex"^^xsd:string,
+        "Archie Mountbatten-Windsor"^^xsd:string,
+        "Archie Sussex"^^xsd:string,
+        "Archie Windsor"^^xsd:string,
+        "Archie of Sussex"^^xsd:string,
+        "Baby Sussex"^^xsd:string,
+        "Prince Archie Harrison of Sussex"^^xsd:string,
+        "Son of the Duke and Duchess of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Prince_Archie_of_Sussex ;
+    :hasFather data:Prince_Harry-_Duke_of_Sussex ;
+    :hasMother data:Meghan-_Duchess_of_Sussex ;
+    :hasParent data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Archie_of_Sussex ;
+    :isBrotherOf data:Prince_Archie_of_Sussex ;
+    :isChildOf data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isSiblingOf data:Prince_Archie_of_Sussex ;
+    :isSonOf data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "1705:1716"^^xsd:string,
+        "2040:2051"^^xsd:string,
+        "212:224"^^xsd:string,
+        "212:228"^^xsd:string,
+        "217:228"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex ;
+    :isAncestorOf data:Prince_Archie_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex .
+

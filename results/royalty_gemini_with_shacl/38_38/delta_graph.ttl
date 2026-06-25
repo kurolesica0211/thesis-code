@@ -2,23 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:Crown_Prince_Pavlos a :Man .
+
 data:Princess_Alexandra_of_Greece a :Woman ;
-    :hasBirthYear 1968 ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise ;
+    :hasBirthYear "1968-10-15"^^xsd:date ;
     :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasMarriageYear 1998 ;
+    :hasMarriageYear "1998-06-27"^^xsd:date ;
     :hasMother data:Marina_Karella ;
-    :hasRelation data:Nicolas_Mirzayantz ;
-    :isSisterOf data:Princess_Olga ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Nicolas_Mirzayantz ;
+    :hasSister data:Princess_Olga ;
     :knownAs "Alexandra Mirzayantz"^^xsd:string .
+
+data:Queen_Anne-Marie_of_Greece a :Woman .
+
+data:Queen_Sofia_of_Spain a :Woman .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man .
+
+data:Constantine_II_of_Greece a :Man .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man .
 
 data:Marina_Karella a :Ancestor,
         :Woman .
 
 data:Nicolas_Mirzayantz a :Man .
 
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Woman .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man .
+
 data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
-        :Man ;
-    :hasDeathYear 2024 .
+        :Man .
 
 data:Princess_Olga a :Woman .
 

@@ -92,6 +92,8 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +109,9 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +126,23 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,107 +434,105 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (99374e8d-4387-419f-8edb-e1d5b2d3bae6)
- Call ID: 99374e8d-4387-419f-8edb-e1d5b2d3bae6
+  AssignClass (baa55d1c-b497-4e94-bf37-dce434e11cf2)
+ Call ID: baa55d1c-b497-4e94-bf37-dce434e11cf2
+  Args:
+    source: :LilibetDianaMountbattenWindsor
+    type: :Person
+  AssignClass (34b903e6-ba5d-4d28-a82c-2250f132637d)
+ Call ID: 34b903e6-ba5d-4d28-a82c-2250f132637d
+  Args:
+    source: :LilibetDianaMountbattenWindsor
+    type: :Woman
+  AssignClass (e57e6d36-b6ac-4115-95b8-4e11ce4e3178)
+ Call ID: e57e6d36-b6ac-4115-95b8-4e11ce4e3178
+  Args:
+    source: :PrinceHarry
+    type: :Person
+  AssignClass (db42c050-3c8b-420a-b3a4-9896c968f76a)
+ Call ID: db42c050-3c8b-420a-b3a4-9896c968f76a
+  Args:
+    source: :PrinceHarry
+    type: :Man
+  AssignClass (8a4529e6-d6a0-4818-8146-40c67fe7d95e)
+ Call ID: 8a4529e6-d6a0-4818-8146-40c67fe7d95e
   Args:
     type: :Person
-    source: LilibetDianaMountbattenWindsor
-  AssignClass (82da14ac-42c2-4e9b-ad4e-1d1844823003)
- Call ID: 82da14ac-42c2-4e9b-ad4e-1d1844823003
+    source: :MeghanDuchessOfSussex
+  AssignClass (7a769a71-1ebf-43de-b04c-f9705c1a6762)
+ Call ID: 7a769a71-1ebf-43de-b04c-f9705c1a6762
   Args:
+    source: :MeghanDuchessOfSussex
     type: :Woman
-    source: LilibetDianaMountbattenWindsor
-  AddLiteral (b59c8e2b-4b72-4ae0-8ff0-16157243f6a0)
- Call ID: b59c8e2b-4b72-4ae0-8ff0-16157243f6a0
+  AssignClass (abd94347-583e-45fe-8d60-65c7c019fa8d)
+ Call ID: abd94347-583e-45fe-8d60-65c7c019fa8d
   Args:
-    source: LilibetDianaMountbattenWindsor
+    source: :KingCharlesIII
+    type: :Person
+  AssignClass (cf11b8bd-c6d9-42b1-83a1-78e2493e21fd)
+ Call ID: cf11b8bd-c6d9-42b1-83a1-78e2493e21fd
+  Args:
+    source: :KingCharlesIII
+    type: :Man
+  AssignClass (24cced3d-545b-49ef-9bca-ad65dd550633)
+ Call ID: 24cced3d-545b-49ef-9bca-ad65dd550633
+  Args:
+    source: :PrinceArchie
+    type: :Person
+  AssignClass (d9c6d1b1-d5b1-427b-a0df-aceac4b69b29)
+ Call ID: d9c6d1b1-d5b1-427b-a0df-aceac4b69b29
+  Args:
+    type: :Man
+    source: :PrinceArchie
+  AddLiteral (747568fd-3f51-4709-8608-e202bdc2993a)
+ Call ID: 747568fd-3f51-4709-8608-e202bdc2993a
+  Args:
     literal_type: xsd:integer
-    relation: :hasBirthYear
     literal_value: 2021
-  AssignClass (a094c7dc-4f9a-48ee-9ad1-93a1f8d70b30)
- Call ID: a094c7dc-4f9a-48ee-9ad1-93a1f8d70b30
+    relation: :hasBirthYear
+    source: :LilibetDianaMountbattenWindsor
+  AddTriple (112ed2b2-a5b4-4584-87c1-4fbff8c8eacf)
+ Call ID: 112ed2b2-a5b4-4584-87c1-4fbff8c8eacf
   Args:
-    type: :Person
-    source: PrinceHarry
-  AssignClass (8864186d-e7ff-410c-b90c-842581372c80)
- Call ID: 8864186d-e7ff-410c-b90c-842581372c80
+    relation: :isDaughterOf
+    target: :PrinceHarry
+    source: :LilibetDianaMountbattenWindsor
+  AddTriple (9a963ddf-6878-4f36-9d51-2836e5735ba7)
+ Call ID: 9a963ddf-6878-4f36-9d51-2836e5735ba7
   Args:
-    type: :Man
-    source: PrinceHarry
-  AssignClass (58f33cb9-76ce-4983-8fb0-0bfcea710465)
- Call ID: 58f33cb9-76ce-4983-8fb0-0bfcea710465
+    relation: :isDaughterOf
+    target: :MeghanDuchessOfSussex
+    source: :LilibetDianaMountbattenWindsor
+  AddTriple (6200d110-1673-4c50-8a9d-e7a5953f02c4)
+ Call ID: 6200d110-1673-4c50-8a9d-e7a5953f02c4
   Args:
-    type: :Person
-    source: MeghanDuchessOfSussex
-  AssignClass (1ad1d0bb-33b1-4705-99dd-07466a057d50)
- Call ID: 1ad1d0bb-33b1-4705-99dd-07466a057d50
+    source: :PrinceArchie
+    target: :LilibetDianaMountbattenWindsor
+    relation: :isBrotherOf
+  AddTriple (eb65e97b-8bd1-4b27-8965-78edc55b4a6b)
+ Call ID: eb65e97b-8bd1-4b27-8965-78edc55b4a6b
   Args:
-    type: :Woman
-    source: MeghanDuchessOfSussex
-  AddTriple (20ce7df0-f821-41ee-aa04-0d76acb9d848)
- Call ID: 20ce7df0-f821-41ee-aa04-0d76acb9d848
+    relation: :isChildOf
+    target: :PrinceArchie
+    source: :LilibetDianaMountbattenWindsor
+  AddTriple (3ae361e0-35bb-4a0d-98a0-918dd5fc8fa4)
+ Call ID: 3ae361e0-35bb-4a0d-98a0-918dd5fc8fa4
   Args:
-    source: LilibetDianaMountbattenWindsor
-    target: PrinceHarry
-    relation: :hasFather
-  AddTriple (a43af120-f0d8-459a-b066-787c3a4e1379)
- Call ID: a43af120-f0d8-459a-b066-787c3a4e1379
+    source: :PrinceArchie
+    relation: :isChildOf
+    target: :PrinceHarry
+  AddTriple (7a1cc982-4848-4652-9958-76e78ee0e534)
+ Call ID: 7a1cc982-4848-4652-9958-76e78ee0e534
   Args:
-    source: LilibetDianaMountbattenWindsor
-    target: MeghanDuchessOfSussex
-    relation: :hasMother
-  AssignClass (369d862d-2421-4632-8a52-b5865af6991d)
- Call ID: 369d862d-2421-4632-8a52-b5865af6991d
+    source: :PrinceArchie
+    relation: :isChildOf
+    target: :MeghanDuchessOfSussex
+  AddTriple (736160b2-4110-47d2-97a6-e574c9658542)
+ Call ID: 736160b2-4110-47d2-97a6-e574c9658542
   Args:
-    type: :Person
-    source: KingCharlesIII
-  AssignClass (9622c3e3-0826-443b-ae85-1268f9538825)
- Call ID: 9622c3e3-0826-443b-ae85-1268f9538825
-  Args:
-    type: :Man
-    source: KingCharlesIII
-  AddTriple (712be67d-e073-4b2e-953c-e10c60f1d3b5)
- Call ID: 712be67d-e073-4b2e-953c-e10c60f1d3b5
-  Args:
-    target: KingCharlesIII
-    relation: :hasFather
-    source: PrinceHarry
-  AssignClass (91a4be95-520b-4d3a-a397-fd79ad666860)
- Call ID: 91a4be95-520b-4d3a-a397-fd79ad666860
-  Args:
-    type: :Person
-    source: PrinceArchie
-  AssignClass (935b1aee-51e2-4286-a228-98212ab5b057)
- Call ID: 935b1aee-51e2-4286-a228-98212ab5b057
-  Args:
-    type: :Man
-    source: PrinceArchie
-  AddTriple (9802ba1c-e9c9-4d83-a249-70e4303db3c9)
- Call ID: 9802ba1c-e9c9-4d83-a249-70e4303db3c9
-  Args:
-    source: LilibetDianaMountbattenWindsor
-    target: PrinceArchie
-    relation: :hasBrother
-  AssignClass (6b3f3555-f816-400b-9edd-9a95cab5b37d)
- Call ID: 6b3f3555-f816-400b-9edd-9a95cab5b37d
-  Args:
-    type: :Person
-    source: QueenElizabethII
-  AssignClass (ae2344da-50d5-4385-8e23-305f8015eca3)
- Call ID: ae2344da-50d5-4385-8e23-305f8015eca3
-  Args:
-    type: :Woman
-    source: QueenElizabethII
-  AssignClass (672b90bc-1526-4184-9130-2e8b7330d585)
- Call ID: 672b90bc-1526-4184-9130-2e8b7330d585
-  Args:
-    type: :Person
-    source: DianaPrincessOfWales
-  AssignClass (30afe26e-fcf4-4933-ad48-6a85a4bf78f1)
- Call ID: 30afe26e-fcf4-4933-ad48-6a85a4bf78f1
-  Args:
-    type: :Woman
-    source: DianaPrincessOfWales
-  Finish (7090e12a-8755-481c-9a22-bf3031187506)
- Call ID: 7090e12a-8755-481c-9a22-bf3031187506
+    relation: :isChildOf
+    target: :KingCharlesIII
+    source: :PrinceHarry
+  Finish (8827873f-9500-44ed-bf00-852126acf460)
+ Call ID: 8827873f-9500-44ed-bf00-852126acf460
   Args:

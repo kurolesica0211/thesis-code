@@ -85,59 +85,21 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Princess Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies (Full Italian name: Maria Immacolata Speranza Pia Teresa Cristina Filomena Lucia Anna Isabella Cecilia Apollonia Barbara Agnese Zenobia, Principessa di Borbone delle
+Due Sicilie,) (30 October 1874 – 28 November 1947) was the fourth child and eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
+Marriage
 
-
-Princess Tomislav
-
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Peter Karageorgevitch (Serbian Cyrillic: Петар Карађорђевић, romanized: Petar Karađorđević; born 5 February 1980), also known as Prince Peter of Serbia and Yugoslavia, is an American born Spanish-Serbian graphic designer and a member of the House of Karađorđević.
-He is the oldest grandchild and the first grandson of the last Yugoslav king, Peter II.
-Between his birth and his renunciation in 2022, he was known as the Hereditary Prince.
-Early life and education
-
-Peter is the first son and the oldest child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and Princess Maria da Gloria of Orléans-Braganza.
-His godfather was Prince Alexander of Yugoslavia, a son of Prince Paul of Yugoslavia.
-His godmother is Anne, Princess Royal.
-Peter has two younger brothers, twins Philip and Alexander (born 1982).
-Peter's parents divorced in 1985.
-After the divorce, his father married Katherine Clairy Batis later that year, while his mother married Ignacio, Duke of Segorbe later that year also.
-Through his mother, Peter has two younger half-sisters, Sol María de la Blanca Medina y Orléans-Braganza, Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, Countess of Ricla (b. 1988).
-In 1991, Peter with his father and brothers briefly visited Belgrade, Yugoslavia.
-In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Peter eligible for a Yugoslav citizenship.
-In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
-In June 1998, Peter graduated from The King's School, Canterbury, in England, having obtained three A-levels in Art, Spanish, and French, and ten GCSEs.
-Public life
-
-Prince Peter attended the reburial of his grandparents King Peter II and Queen Alexandra, great-grandmother Queen Maria, and great-uncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Peter placing the Karađorđević Crown.
-On 17 July 2015, Prince Peter and his brothers were present at their father's 70th birthday celebration in Belgrade.
-On 27 April 2022, Prince Peter renounced his title of Hereditary Prince – for himself and his descendants – in favor of his younger brother Philip.
-The ceremony took place in Seville at Casa de Pilatos in the presence of his mother Princess Maria da Gloria, his stepfather the 19th Duke of Segorbe, his brother Philip, his sister-in-law Princess Danica, his half sister the 54th Countess of Ampurias, Ljubodrag Grujić, member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević, and Nikola Stanković, Chief of Staff of the Crown Prince.
-His father, Crown Prince Alexander, did not attend the event, and was dissatisfied with Peter's renunciation.
-Personal life
-
-Prince Peter used to work in a field of graphic design and art direction in London and New York City.
-Peter has a daughter named Dolores Luna Noor born in 2017 by Lauren Estelle Jones (b. 1984).
-Honours
-
-Ancestors
-
-Peter is a member of the House of Karađorđević.
-Through his father, Peter descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Peter descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and king Charles III of Spain.
+Maria Immaculata married Prince Johann Georg of Saxony, sixth child and second-eldest son of George of Saxony and his wife Maria Anna of Portugal, on 30 October 1906 in Cannes.
+Her mother-in-law, Maria Anna, was the daughter of Maria II of Portugal and her husband Ferdinand II of Portugal.
+The couple did not have children, but Maria Immaculata cared for the children of her brother-in-law Frederick Augustus III of Saxony.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +115,9 @@ Through his mother, Peter descends from the Emperor Pedro II of Brazil, and king
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +132,23 @@ Through his mother, Peter descends from the Emperor Pedro II of Brazil, and king
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,191 +440,213 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bf2d03b4-cfe0-4ade-8d0a-c07858e22d57)
- Call ID: bf2d03b4-cfe0-4ade-8d0a-c07858e22d57
-  Args:
-    type: :Man
-    source: Peter_Karageorgevitch
-  AssignClass (421cf76e-906c-400c-8e76-a6ff409e2934)
- Call ID: 421cf76e-906c-400c-8e76-a6ff409e2934
-  Args:
-    source: Peter_Karageorgevitch
-    type: :Person
-  AddLiteral (0255818d-2850-4609-813a-177ee7027df6)
- Call ID: 0255818d-2850-4609-813a-177ee7027df6
-  Args:
-    literal_value: Prince Peter of Serbia and Yugoslavia
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Peter_Karageorgevitch
-  AddLiteral (f8ccb3a9-0933-4373-9c0e-bfaa7c66b29d)
- Call ID: f8ccb3a9-0933-4373-9c0e-bfaa7c66b29d
-  Args:
-    literal_type: xsd:integer
-    source: Peter_Karageorgevitch
-    relation: :hasBirthYear
-    literal_value: 1980
-  AddLiteral (a241d34f-bf54-4801-836f-b45af2c5c6f5)
- Call ID: a241d34f-bf54-4801-836f-b45af2c5c6f5
-  Args:
-    literal_value: Male
-    source: Peter_Karageorgevitch
-    relation: :hasSex
-    literal_type: xsd:string
-  AssignClass (d9937d13-86d7-43b7-bc80-359f29df0162)
- Call ID: d9937d13-86d7-43b7-bc80-359f29df0162
-  Args:
-    source: Alexander_Karageorgevitch
-    type: :Man
-  AssignClass (89439c67-eafb-43cb-937d-0e08b83fbcf0)
- Call ID: 89439c67-eafb-43cb-937d-0e08b83fbcf0
-  Args:
-    source: Alexander_Karageorgevitch
-    type: :Person
-  AssignClass (49c1b315-b40f-497b-a0a9-6d374df06435)
- Call ID: 49c1b315-b40f-497b-a0a9-6d374df06435
+  AssignClass (a4c94543-2dae-46e6-a821-91434c6fedd7)
+ Call ID: a4c94543-2dae-46e6-a821-91434c6fedd7
   Args:
     type: :Woman
-    source: Maria_da_Gloria
-  AssignClass (b4651335-8252-44da-a8ae-3480f513659a)
- Call ID: b4651335-8252-44da-a8ae-3480f513659a
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AssignClass (e1d48e7b-aa1c-459b-ba8e-0e0edc341751)
+ Call ID: e1d48e7b-aa1c-459b-ba8e-0e0edc341751
   Args:
-    source: Maria_da_Gloria
     type: :Person
-  AddTriple (55986ffc-2598-4a09-bc4b-b0c923343038)
- Call ID: 55986ffc-2598-4a09-bc4b-b0c923343038
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AddLiteral (44b12dab-71b8-47b6-8d08-e39c3d385d09)
+ Call ID: 44b12dab-71b8-47b6-8d08-e39c3d385d09
   Args:
-    target: Alexander_Karageorgevitch
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
+    literal_value: 1874
+    relation: :hasBirthYear
+  AddLiteral (7264cb3b-b898-499f-8095-ca7e7703a460)
+ Call ID: 7264cb3b-b898-499f-8095-ca7e7703a460
+  Args:
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    relation: :hasDeathYear
+    literal_value: 1947
+    literal_type: xsd:integer
+  AssignClass (d7d55bab-19fd-44ba-85ed-5322bafdc4d4)
+ Call ID: d7d55bab-19fd-44ba-85ed-5322bafdc4d4
+  Args:
+    type: :Man
+    source: Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (ec164880-5408-4a2c-a10a-cd743c65ac6f)
+ Call ID: ec164880-5408-4a2c-a10a-cd743c65ac6f
+  Args:
+    type: :Person
+    source: Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (05c9f757-2c21-48a0-886c-09aaa9f0d28d)
+ Call ID: 05c9f757-2c21-48a0-886c-09aaa9f0d28d
+  Args:
+    type: :Ancestor
+    source: Alfonso_of_Bourbon-Two_Sicilies
+  AddTriple (c506317b-e16e-4cad-8bed-9c3e54f7240e)
+ Call ID: c506317b-e16e-4cad-8bed-9c3e54f7240e
+  Args:
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    source: Peter_Karageorgevitch
-  AddTriple (0f29d8e2-6fe7-48ec-b76d-26d6b509c1bd)
- Call ID: 0f29d8e2-6fe7-48ec-b76d-26d6b509c1bd
+    target: Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (b4c54d26-9f90-4cb9-a824-8c6d86875f89)
+ Call ID: b4c54d26-9f90-4cb9-a824-8c6d86875f89
   Args:
-    source: Peter_Karageorgevitch
-    relation: :hasMother
-    target: Maria_da_Gloria
-  AssignClass (cd3518d7-e3e0-4b1b-8588-d570ce1ac9ff)
- Call ID: cd3518d7-e3e0-4b1b-8588-d570ce1ac9ff
-  Args:
-    type: :Man
-    source: Philip_Karageorgevitch
-  AssignClass (8f9b5a93-c80c-4cec-b261-a06f7335808a)
- Call ID: 8f9b5a93-c80c-4cec-b261-a06f7335808a
-  Args:
-    type: :Person
-    source: Philip_Karageorgevitch
-  AssignClass (a7aeba98-4470-4be2-ab9f-7c141cd40e64)
- Call ID: a7aeba98-4470-4be2-ab9f-7c141cd40e64
-  Args:
-    type: :Man
-    source: Alexander_Jr_Karageorgevitch
-  AssignClass (5768704d-0a77-4c39-9e8c-2abe0788b2ac)
- Call ID: 5768704d-0a77-4c39-9e8c-2abe0788b2ac
-  Args:
-    type: :Person
-    source: Alexander_Jr_Karageorgevitch
-  AddTriple (bb3f5a36-48c3-4675-9f74-54d666067166)
- Call ID: bb3f5a36-48c3-4675-9f74-54d666067166
-  Args:
-    target: Philip_Karageorgevitch
-    relation: :hasBrother
-    source: Peter_Karageorgevitch
-  AddTriple (9fd9885b-d89f-4a86-acb6-6d76d9a09230)
- Call ID: 9fd9885b-d89f-4a86-acb6-6d76d9a09230
-  Args:
-    target: Alexander_Jr_Karageorgevitch
-    source: Peter_Karageorgevitch
-    relation: :hasBrother
-  AssignClass (a3677269-340d-4cb5-9db2-4340dec68c20)
- Call ID: a3677269-340d-4cb5-9db2-4340dec68c20
-  Args:
-    source: Peter_II_Yugoslavia
-    type: :Man
-  AssignClass (2d3b7e1c-0d5e-409a-995f-56a449709a7a)
- Call ID: 2d3b7e1c-0d5e-409a-995f-56a449709a7a
-  Args:
-    type: :Person
-    source: Peter_II_Yugoslavia
-  AddTriple (c4e493fe-462b-48e8-8a52-7a88bf3f26bb)
- Call ID: c4e493fe-462b-48e8-8a52-7a88bf3f26bb
-  Args:
-    target: Peter_II_Yugoslavia
-    relation: :isSonOf
-    source: Alexander_Karageorgevitch
-  AssignClass (458421f9-bb06-4bdf-b19a-3b8bc9bc0589)
- Call ID: 458421f9-bb06-4bdf-b19a-3b8bc9bc0589
-  Args:
-    source: Dolores_Luna_Noor
     type: :Woman
-  AssignClass (2f251ac4-821f-4361-939d-4bdc02465bc7)
- Call ID: 2f251ac4-821f-4361-939d-4bdc02465bc7
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (841c3048-250a-40f3-a3ee-3e7ec6159d6c)
+ Call ID: 841c3048-250a-40f3-a3ee-3e7ec6159d6c
+  Args:
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (314db677-4002-48c8-8eb3-1fd88147d008)
+ Call ID: 314db677-4002-48c8-8eb3-1fd88147d008
+  Args:
+    type: :Ancestor
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AddTriple (f99aef6b-4ae7-4e09-8b4a-30894ea6326d)
+ Call ID: f99aef6b-4ae7-4e09-8b4a-30894ea6326d
+  Args:
+    relation: :hasMother
+    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AssignClass (983eb75e-1480-4e03-9709-52d66444e785)
+ Call ID: 983eb75e-1480-4e03-9709-52d66444e785
+  Args:
+    source: Johann_Georg_of_Saxony
+    type: :Man
+  AssignClass (3f7a1a06-631d-4012-b032-82c3175a6262)
+ Call ID: 3f7a1a06-631d-4012-b032-82c3175a6262
   Args:
     type: :Person
-    source: Dolores_Luna_Noor
-  AddTriple (2dae813d-0cd6-4f34-9b41-fc15ec7fe643)
- Call ID: 2dae813d-0cd6-4f34-9b41-fc15ec7fe643
+    source: Johann_Georg_of_Saxony
+  AddLiteral (d3479c69-1796-43f7-b7d0-80dcadff0735)
+ Call ID: d3479c69-1796-43f7-b7d0-80dcadff0735
   Args:
-    relation: :isDaughterOf
-    source: Dolores_Luna_Noor
-    target: Peter_Karageorgevitch
-  AddLiteral (38cc8333-a7cc-4ba1-8315-e511578ebe23)
- Call ID: 38cc8333-a7cc-4ba1-8315-e511578ebe23
-  Args:
-    literal_value: 2017
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Dolores_Luna_Noor
-  AssignClass (41b8803e-5306-40f8-be54-9d5f9184f1c5)
- Call ID: 41b8803e-5306-40f8-be54-9d5f9184f1c5
+    literal_value: 1906
+    relation: :hasMarriageYear
+  AddTriple (5d09d0fd-af2f-46c5-af21-a53dc10b90a3)
+ Call ID: 5d09d0fd-af2f-46c5-af21-a53dc10b90a3
+  Args:
+    target: Johann_Georg_of_Saxony
+    relation: :hasRelation
+    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+  AssignClass (e0d1df19-3621-4878-adf3-533a3ccc50d9)
+ Call ID: e0d1df19-3621-4878-adf3-533a3ccc50d9
+  Args:
+    type: :Man
+    source: George_of_Saxony
+  AssignClass (28ca5d18-e8d4-40a0-802f-7db997141c61)
+ Call ID: 28ca5d18-e8d4-40a0-802f-7db997141c61
+  Args:
+    source: George_of_Saxony
+    type: :Person
+  AssignClass (9ac075f5-c0de-45bf-b48a-a41c4e369817)
+ Call ID: 9ac075f5-c0de-45bf-b48a-a41c4e369817
+  Args:
+    type: :Ancestor
+    source: George_of_Saxony
+  AddTriple (cedbb9fc-1608-4336-b6e0-e237d97f75ba)
+ Call ID: cedbb9fc-1608-4336-b6e0-e237d97f75ba
+  Args:
+    target: George_of_Saxony
+    relation: :hasFather
+    source: Johann_Georg_of_Saxony
+  AssignClass (60897c03-a47d-47d3-812f-f032a9682cfc)
+ Call ID: 60897c03-a47d-47d3-812f-f032a9682cfc
   Args:
     type: :Woman
-    source: Lauren_Estelle_Jones
-  AssignClass (7bdfdde8-7859-47f0-857d-fadbe1d747f8)
- Call ID: 7bdfdde8-7859-47f0-857d-fadbe1d747f8
+    source: Maria_Anna_of_Portugal
+  AssignClass (fb38561d-bdcf-4da4-81d2-ba3676e048ff)
+ Call ID: fb38561d-bdcf-4da4-81d2-ba3676e048ff
   Args:
+    source: Maria_Anna_of_Portugal
     type: :Person
-    source: Lauren_Estelle_Jones
-  AddTriple (93ae264e-f733-46df-a7d6-6f2743c70e29)
- Call ID: 93ae264e-f733-46df-a7d6-6f2743c70e29
+  AssignClass (351da33d-ce4b-4b1e-9ce3-72a7ceb6cece)
+ Call ID: 351da33d-ce4b-4b1e-9ce3-72a7ceb6cece
   Args:
-    source: Dolores_Luna_Noor
+    type: :Ancestor
+    source: Maria_Anna_of_Portugal
+  AddTriple (bb8f2c29-876f-4ec7-8c39-563e554a5fd9)
+ Call ID: bb8f2c29-876f-4ec7-8c39-563e554a5fd9
+  Args:
+    source: Johann_Georg_of_Saxony
+    target: Maria_Anna_of_Portugal
     relation: :hasMother
-    target: Lauren_Estelle_Jones
-  AssignClass (a5e265fe-a094-4a45-a765-1346ff953267)
- Call ID: a5e265fe-a094-4a45-a765-1346ff953267
+  AddTriple (224e4005-d37e-466a-8dbc-e765091fcf37)
+ Call ID: 224e4005-d37e-466a-8dbc-e765091fcf37
   Args:
-    source: Sol_Maria_Medina
+    source: Johann_Georg_of_Saxony
+    target: Maria_Anna_of_Portugal
+    relation: :hasMother
+  AssignClass (701ae128-cb39-43aa-b4ee-d8d5476200f7)
+ Call ID: 701ae128-cb39-43aa-b4ee-d8d5476200f7
+  Args:
     type: :Woman
-  AssignClass (d82eacbb-5575-4091-8a8b-aa7291147851)
- Call ID: d82eacbb-5575-4091-8a8b-aa7291147851
+    source: Maria_II_of_Portugal
+  AssignClass (10cb6e4b-8811-4424-b3b1-c80620207722)
+ Call ID: 10cb6e4b-8811-4424-b3b1-c80620207722
   Args:
-    source: Sol_Maria_Medina
+    source: Maria_II_of_Portugal
     type: :Person
-  AssignClass (4fdc13b3-ab55-4095-a89c-739718d7e668)
- Call ID: 4fdc13b3-ab55-4095-a89c-739718d7e668
+  AssignClass (1a7503e0-8ac3-4a5d-bd7e-a80708bb67ce)
+ Call ID: 1a7503e0-8ac3-4a5d-bd7e-a80708bb67ce
   Args:
-    source: Ana_Luna_Medina
-    type: :Woman
-  AssignClass (75b31640-2d58-4ec2-9c5d-04a1cf9284f9)
- Call ID: 75b31640-2d58-4ec2-9c5d-04a1cf9284f9
+    type: :Ancestor
+    source: Maria_II_of_Portugal
+  AssignClass (d9ff02fe-fe1b-48a3-a679-6d27a6e4ea64)
+ Call ID: d9ff02fe-fe1b-48a3-a679-6d27a6e4ea64
+  Args:
+    type: :Man
+    source: Ferdinand_II_of_Portugal
+  AssignClass (fe0cee84-9790-42f6-8cd4-2c70a0b32f1e)
+ Call ID: fe0cee84-9790-42f6-8cd4-2c70a0b32f1e
+  Args:
+    source: Ferdinand_II_of_Portugal
+    type: :Person
+  AssignClass (2dc44cb0-7c60-4b7c-a6c7-0bb2a7b5ccd3)
+ Call ID: 2dc44cb0-7c60-4b7c-a6c7-0bb2a7b5ccd3
+  Args:
+    source: Ferdinand_II_of_Portugal
+    type: :Ancestor
+  AddTriple (48c8186f-6340-467a-8a49-91bcafdb4393)
+ Call ID: 48c8186f-6340-467a-8a49-91bcafdb4393
+  Args:
+    source: Maria_Anna_of_Portugal
+    target: Maria_II_of_Portugal
+    relation: :hasMother
+  AddTriple (85b01212-5773-4efc-8a76-4210c7e7ab22)
+ Call ID: 85b01212-5773-4efc-8a76-4210c7e7ab22
+  Args:
+    source: Maria_Anna_of_Portugal
+    target: Ferdinand_II_of_Portugal
+    relation: :hasFather
+  AssignClass (d647fe9d-cc33-49f3-95d1-eed24ee976cf)
+ Call ID: d647fe9d-cc33-49f3-95d1-eed24ee976cf
+  Args:
+    type: :Man
+    source: Frederick_Augustus_III_of_Saxony
+  AssignClass (e186b026-cca9-4eee-838c-34db11390160)
+ Call ID: e186b026-cca9-4eee-838c-34db11390160
   Args:
     type: :Person
-    source: Ana_Luna_Medina
-  AddTriple (6d655f87-b1d2-4fbe-98d5-6cf080338c83)
- Call ID: 6d655f87-b1d2-4fbe-98d5-6cf080338c83
+    source: Frederick_Augustus_III_of_Saxony
+  AddTriple (9f0c2d9b-b5fa-435b-8545-bc3f54b0be85)
+ Call ID: 9f0c2d9b-b5fa-435b-8545-bc3f54b0be85
   Args:
-    source: Sol_Maria_Medina
-    relation: :hasMother
-    target: Maria_da_Gloria
-  AddTriple (2f2d1a05-1444-4ee9-a5e0-5309fd33d3c9)
- Call ID: 2f2d1a05-1444-4ee9-a5e0-5309fd33d3c9
-  Args:
-    source: Ana_Luna_Medina
-    relation: :hasMother
-    target: Maria_da_Gloria
-  Finish (290bbdbe-db66-4597-8d1c-ce34a82fbe47)
- Call ID: 290bbdbe-db66-4597-8d1c-ce34a82fbe47
-  Args:
+    target: Frederick_Augustus_III_of_Saxony
+    relation: :isBrotherOf
+    source: Johann_Georg_of_Saxony
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -709,50 +783,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ana_Luna_Medina a :Person,
+  data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasMother data:Maria_da_Gloria .
+      :hasBirthYear 1874 ;
+      :hasDeathYear 1947 ;
+      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+      :hasMarriageYear 1906 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Johann_Georg_of_Saxony .
 
-  data:Dolores_Luna_Noor a :Person,
-          :Woman ;
-      :hasBirthYear 2017 ;
-      :hasMother data:Lauren_Estelle_Jones ;
-      :isDaughterOf data:Peter_Karageorgevitch .
-
-  data:Sol_Maria_Medina a :Person,
-          :Woman ;
-      :hasMother data:Maria_da_Gloria .
-
-  data:Alexander_Jr_Karageorgevitch a :Man,
+  data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Man,
           :Person .
 
-  data:Alexander_Karageorgevitch a :Man,
-          :Person ;
-      :isSonOf data:Peter_II_Yugoslavia .
+  data:Ferdinand_II_of_Portugal a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Lauren_Estelle_Jones a :Person,
+  data:Frederick_Augustus_III_of_Saxony a :Man,
+          :Person .
+
+  data:George_of_Saxony a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Johann_Georg_of_Saxony a :Man,
+          :Person ;
+      :hasFather data:George_of_Saxony ;
+      :hasMother data:Maria_Anna_of_Portugal ;
+      :isBrotherOf data:Frederick_Augustus_III_of_Saxony .
+
+  data:Maria_Anna_of_Portugal a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Ferdinand_II_of_Portugal ;
+      :hasMother data:Maria_II_of_Portugal .
+
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Peter_II_Yugoslavia a :Man,
-          :Person .
-
-  data:Peter_Karageorgevitch a :Man,
-          :Person ;
-      :alsoKnownAs "Prince Peter of Serbia and Yugoslavia"^^xsd:string ;
-      :hasBirthYear 1980 ;
-      :hasBrother data:Alexander_Jr_Karageorgevitch,
-          data:Philip_Karageorgevitch ;
-      :hasFather data:Alexander_Karageorgevitch ;
-      :hasMother data:Maria_da_Gloria ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Philip_Karageorgevitch a :Man,
-          :Person .
-
-  data:Maria_da_Gloria a :Person,
+  data:Maria_II_of_Portugal a :Ancestor,
+          :Person,
           :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (0980459c-f91e-4bb6-ac2d-ad26498936ff)
+ Call ID: 0980459c-f91e-4bb6-ac2d-ad26498936ff
+  Args:
 
 ================================= Tool Message =================================
 
@@ -762,408 +845,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1e12a319-5298-4235-8e5a-fddfabf9c31d)
- Call ID: 1e12a319-5298-4235-8e5a-fddfabf9c31d
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:29
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_II_Yugoslavia' linked via ':isSonOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_II_Yugoslavia, Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Karageorgevitch' linked via ':hasFather' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karageorgevitch, Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_II_Yugoslavia' linked via ':isSonOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_II_Yugoslavia, Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Karageorgevitch' linked via ':hasFather' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karageorgevitch, Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Lauren_Estelle_Jones' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lauren_Estelle_Jones, Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_Karageorgevitch' linked via ':isDaughterOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Karageorgevitch, Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_II_Yugoslavia' linked via ':isSonOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_II_Yugoslavia, Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Alexander_Karageorgevitch' linked via ':hasFather' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karageorgevitch, Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Lauren_Estelle_Jones' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lauren_Estelle_Jones, Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property ':hasSex' on node 'Peter_Karageorgevitch' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, Sex)
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_Karageorgevitch' linked via ':isDaughterOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Karageorgevitch, Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Lauren_Estelle_Jones' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lauren_Estelle_Jones, Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Maria_da_Gloria' linked via ':hasMother' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Peter_Karageorgevitch' linked via ':isDaughterOf' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Karageorgevitch, Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (b2d0749d-b14c-49d9-9afc-771544457f1c)
- Call ID: b2d0749d-b14c-49d9-9afc-771544457f1c
-  Args:
-    type: :Male
-    source: Male_Sex_Node
-  AssignClass (6bcf73eb-06b8-4598-8f8e-ec7f34309ed0)
- Call ID: 6bcf73eb-06b8-4598-8f8e-ec7f34309ed0
-  Args:
-    source: Male_Sex_Node
-    type: :Sex
-  RemoveLiteral (45e9ab4c-9162-46c9-8ffa-442945cec1c6)
- Call ID: 45e9ab4c-9162-46c9-8ffa-442945cec1c6
-  Args:
-    literal_type: xsd:string
-    source: Peter_Karageorgevitch
-    literal_value: Male
-    relation: :hasSex
-  AddTriple (e27c5468-6099-4a55-9154-6c947d5d324e)
- Call ID: e27c5468-6099-4a55-9154-6c947d5d324e
-  Args:
-    source: Peter_Karageorgevitch
-    target: Male_Sex_Node
-    relation: :hasSex
-  AssignClass (1c0f398b-c591-4b0e-91f7-b0869b96ed43)
- Call ID: 1c0f398b-c591-4b0e-91f7-b0869b96ed43
-  Args:
-    type: :Ancestor
-    source: Peter_II_Yugoslavia
-  AssignClass (8025e731-3d52-4f7d-ba94-5f1f3745db18)
- Call ID: 8025e731-3d52-4f7d-ba94-5f1f3745db18
-  Args:
-    type: :Ancestor
-    source: Alexander_Karageorgevitch
-  AssignClass (3592135c-af3e-4b9c-8385-583a2d71c9f7)
- Call ID: 3592135c-af3e-4b9c-8385-583a2d71c9f7
-  Args:
-    source: Maria_da_Gloria
-    type: :Ancestor
-  AssignClass (712aab41-9291-40c3-af86-d6c7aac7ce5c)
- Call ID: 712aab41-9291-40c3-af86-d6c7aac7ce5c
-  Args:
-    source: Lauren_Estelle_Jones
-    type: :Ancestor
-  AssignClass (a56c5b01-ae50-4e72-9669-5f3b2512e063)
- Call ID: a56c5b01-ae50-4e72-9669-5f3b2512e063
-  Args:
-    type: :Ancestor
-    source: Peter_Karageorgevitch
-  Finish (c78a8b91-8878-4204-9e08-be728a0ff6dd)
- Call ID: c78a8b91-8878-4204-9e08-be728a0ff6dd
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Ana_Luna_Medina a :Person,
-          :Woman ;
-      :hasMother data:Maria_da_Gloria .
-
-  data:Dolores_Luna_Noor a :Person,
-          :Woman ;
-      :hasBirthYear 2017 ;
-      :hasMother data:Lauren_Estelle_Jones ;
-      :isDaughterOf data:Peter_Karageorgevitch .
-
-  data:Sol_Maria_Medina a :Person,
-          :Woman ;
-      :hasMother data:Maria_da_Gloria .
-
-  data:Alexander_Jr_Karageorgevitch a :Man,
-          :Person .
-
-  data:Alexander_Karageorgevitch a :Ancestor,
-          :Man,
-          :Person ;
-      :isSonOf data:Peter_II_Yugoslavia .
-
-  data:Lauren_Estelle_Jones a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Male_Sex_Node a :Male,
-          :Sex .
-
-  data:Peter_II_Yugoslavia a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Peter_Karageorgevitch a :Ancestor,
-          :Man,
-          :Person ;
-      :alsoKnownAs "Prince Peter of Serbia and Yugoslavia"^^xsd:string ;
-      :hasBirthYear 1980 ;
-      :hasBrother data:Alexander_Jr_Karageorgevitch,
-          data:Philip_Karageorgevitch ;
-      :hasFather data:Alexander_Karageorgevitch ;
-      :hasMother data:Maria_da_Gloria ;
-      :hasSex data:Male_Sex_Node .
-
-  data:Philip_Karageorgevitch a :Man,
-          :Person .
-
-  data:Maria_da_Gloria a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (3e016edd-3c45-4efd-8c47-f1b60dd2acfc)
- Call ID: 3e016edd-3c45-4efd-8c47-f1b60dd2acfc
+  ValidateShacl (b179b971-cd69-4d18-8fce-cedb9f2fc9d9)
+ Call ID: b179b971-cd69-4d18-8fce-cedb9f2fc9d9
   Args:
 
 ================================= Tool Message =================================
@@ -1174,6 +857,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (fe35f1db-20ee-4c48-bd9d-1d080b141f45)
- Call ID: fe35f1db-20ee-4c48-bd9d-1d080b141f45
+  Finish (df01f861-08d8-4c72-86f2-b201d5e22428)
+ Call ID: df01f861-08d8-4c72-86f2-b201d5e22428
   Args:

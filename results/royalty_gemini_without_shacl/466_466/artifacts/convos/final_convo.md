@@ -69,18 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg (30 September 1966 – 24 April 2010), better known by his racing alias Leonhard "Leo" Löwenstein, was a German prince and endurance race driver participating in the VLN.
-Personal life
+Prince Luiz of Orléans-Braganza (6 June 1938 – 15 July 2022) was a Brazilian royal claimant who served as head of the Vassouras branch of the Imperial House of Brazil from 1981 until his death.
+He was the eldest son of Prince Pedro Henrique of Orléans-Braganza and Princess Maria Elisabeth of Bavaria, and was regarded by his supporters as pretender to the defunct title of Emperor of Brazil.
+The Vassouras branch asserts its claim to the former Brazilian throne in opposition to the Petrópolis branch, led by Pedro Carlos Orléans-Braganza.
+Both Luiz and Pedro Carlos were great-grandsons of Princess Isabel, daughter and heiress of Emperor Pedro II, but the two lines diverged following a dynastic dispute involving their fathers, who were first cousins.
+Early life
 
-Löwenstein was the eldest son and heir to Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg, who became Hereditary Prince in 1990 upon the death of his grandfather.
-(although as heir to the Roman Catholic branch of the Princely House of Löwenstein he may have been barred by the Act of Settlement from eligibility for succession to the British throne).
-Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria, where they ran a vineyard.
+Luiz Gastão Maria José Pio was born on 6 June 1938 in Mandelieu-la-Napoule, France, as the oldest son of Pedro Henrique of Orléans-Braganza, the Vassouras great-grandson of Emperor Pedro II of Brazil, and his wife, Maria Elisabeth of Bavaria, granddaughter of King Ludwig III of Bavaria.
+Honours
+
+As Head of the House of Orléans-Braganza, Prine Luiz Gastão held the following positions:
+
+
+Prince Luiz has also been decorated with a number of other honours:
+
+
+Ancestry
+
+References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +112,9 @@ Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +129,23 @@ Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,69 +437,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3442b10b-bc1c-4014-848b-c426a59a922b)
- Call ID: 3442b10b-bc1c-4014-848b-c426a59a922b
+  AssignClass (018c6efa-9fde-4daf-9663-91a929e92c34)
+ Call ID: 018c6efa-9fde-4daf-9663-91a929e92c34
   Args:
-    type: :Person
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  AssignClass (1b174aca-b01b-428d-94f4-e0ccfbfc3a8e)
- Call ID: 1b174aca-b01b-428d-94f4-e0ccfbfc3a8e
-  Args:
+    source: Prince_Luiz_of_Orleans-Braganza
     type: :Man
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  AssignClass (3bc65d68-96e2-4c9c-bca2-cb32c82835e5)
- Call ID: 3bc65d68-96e2-4c9c-bca2-cb32c82835e5
+  AssignClass (11489225-e241-4a8e-bf30-951070c658f9)
+ Call ID: 11489225-e241-4a8e-bf30-951070c658f9
   Args:
-    type: :Male
-    source: Male_Sex
-  AddTriple (5273054f-3d90-41b5-9a4f-06929c4a6d45)
- Call ID: 5273054f-3d90-41b5-9a4f-06929c4a6d45
+    source: Prince_Luiz_of_Orleans-Braganza
+    type: :Person
+  AddLiteral (1ea52c7e-fa50-45b0-a8e7-c1bc558c8afb)
+ Call ID: 1ea52c7e-fa50-45b0-a8e7-c1bc558c8afb
   Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-    target: Male_Sex
-    relation: :hasSex
-  AddLiteral (3938cb22-23c9-4622-8196-54e494d83b2b)
- Call ID: 3938cb22-23c9-4622-8196-54e494d83b2b
-  Args:
-    literal_type: xsd:string
-    literal_value: Leonhard "Leo" Löwenstein
-    relation: :knownAs
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  AddLiteral (bdd5abd7-6cb5-4449-bfd4-cba4139816f6)
- Call ID: bdd5abd7-6cb5-4449-bfd4-cba4139816f6
-  Args:
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
     literal_type: xsd:integer
+    literal_value: 1938
     relation: :hasBirthYear
-    literal_value: 1966
-  AddLiteral (66b40f99-50cd-4907-a767-cad947f7977f)
- Call ID: 66b40f99-50cd-4907-a767-cad947f7977f
+    source: Prince_Luiz_of_Orleans-Braganza
+  AddLiteral (f59fc678-c770-4ca3-9c1e-1bf94cb3c73f)
+ Call ID: f59fc678-c770-4ca3-9c1e-1bf94cb3c73f
   Args:
-    literal_type: xsd:integer
-    literal_value: 2010
     relation: :hasDeathYear
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-  AssignClass (c10e9217-f327-4733-8c1d-deab7761ab33)
- Call ID: c10e9217-f327-4733-8c1d-deab7761ab33
+    source: Prince_Luiz_of_Orleans-Braganza
+    literal_type: xsd:integer
+    literal_value: 2022
+  AssignClass (75fa61d2-5896-4a6d-af81-a3374630d338)
+ Call ID: 75fa61d2-5896-4a6d-af81-a3374630d338
   Args:
-    type: :Person
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  AssignClass (ef9c765d-7bd9-4d34-ac4c-38bd41d5dbdb)
- Call ID: ef9c765d-7bd9-4d34-ac4c-38bd41d5dbdb
-  Args:
+    source: Prince_Pedro_Henrique_of_Orleans-Braganza
     type: :Man
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  AssignClass (f0aafc02-20b1-4e62-b251-1c3fb6d27b61)
- Call ID: f0aafc02-20b1-4e62-b251-1c3fb6d27b61
+  AssignClass (8edfffaa-bbf2-4481-a5fc-dae5e8f59075)
+ Call ID: 8edfffaa-bbf2-4481-a5fc-dae5e8f59075
   Args:
-    type: :Ancestor
-    source: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  AddTriple (91b6701f-d822-4760-b2fe-37d56c459530)
- Call ID: 91b6701f-d822-4760-b2fe-37d56c459530
+    source: Prince_Pedro_Henrique_of_Orleans-Braganza
+    type: :Person
+  AssignClass (7cb66993-3a3a-41f8-8d0d-4d5fcaa84534)
+ Call ID: 7cb66993-3a3a-41f8-8d0d-4d5fcaa84534
   Args:
-    relation: :isSonOf
-    source: Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria
-    target: Alois-Konstantin_Prince_of_Löwenstein-Wertheim-Rosenberg
-  Finish (caaf6de7-c9ff-4fa8-aba0-29af140957cc)
- Call ID: caaf6de7-c9ff-4fa8-aba0-29af140957cc
+    source: Princess_Maria_Elisabeth_of_Bavaria
+    type: :Woman
+  AssignClass (3d92f58c-a52b-4900-8279-d21269eadf15)
+ Call ID: 3d92f58c-a52b-4900-8279-d21269eadf15
+  Args:
+    source: Princess_Maria_Elisabeth_of_Bavaria
+    type: :Person
+  AddTriple (a8142fd5-1c3f-4ad4-9b6b-0437feebf7f1)
+ Call ID: a8142fd5-1c3f-4ad4-9b6b-0437feebf7f1
+  Args:
+    source: Prince_Luiz_of_Orleans-Braganza
+    relation: :hasFather
+    target: Prince_Pedro_Henrique_of_Orleans-Braganza
+  AddTriple (7b6f8499-309e-41cd-934d-c589c3f245ab)
+ Call ID: 7b6f8499-309e-41cd-934d-c589c3f245ab
+  Args:
+    relation: :hasMother
+    source: Prince_Luiz_of_Orleans-Braganza
+    target: Princess_Maria_Elisabeth_of_Bavaria
+  AssignClass (a4b242fe-3daa-46f6-95fa-4fadb039fa9d)
+ Call ID: a4b242fe-3daa-46f6-95fa-4fadb039fa9d
+  Args:
+    source: Princess_Isabel
+    type: :Woman
+  AssignClass (9f8bf9fb-bf57-4f26-9126-2c24493f4d7a)
+ Call ID: 9f8bf9fb-bf57-4f26-9126-2c24493f4d7a
+  Args:
+    source: Princess_Isabel
+    type: :Person
+  AssignClass (be24822d-2bc4-4bf0-bd53-f445351c0ead)
+ Call ID: be24822d-2bc4-4bf0-bd53-f445351c0ead
+  Args:
+    source: Emperor_Pedro_II
+    type: :Man
+  AssignClass (ab8b2a57-db2d-436a-9734-80b98ef583d5)
+ Call ID: ab8b2a57-db2d-436a-9734-80b98ef583d5
+  Args:
+    source: Emperor_Pedro_II
+    type: :Person
+  AddTriple (22a698e3-a9b8-4c07-9bad-ab3bfd88800f)
+ Call ID: 22a698e3-a9b8-4c07-9bad-ab3bfd88800f
+  Args:
+    target: Emperor_Pedro_II
+    source: Princess_Isabel
+    relation: :hasFather
+  AssignClass (d6fc6433-6566-49e1-9772-e9b2701dc023)
+ Call ID: d6fc6433-6566-49e1-9772-e9b2701dc023
+  Args:
+    source: Pedro_Carlos_Orleans-Braganza
+    type: :Man
+  AssignClass (2f212af0-bdef-4a99-8dfe-91956eb44ffd)
+ Call ID: 2f212af0-bdef-4a99-8dfe-91956eb44ffd
+  Args:
+    source: Pedro_Carlos_Orleans-Braganza
+    type: :Person
+  AssignClass (b14517d4-3436-4f43-8607-e8a8a5583d88)
+ Call ID: b14517d4-3436-4f43-8607-e8a8a5583d88
+  Args:
+    source: King_Ludwig_III_of_Bavaria
+    type: :Man
+  AssignClass (657d3809-9012-42be-b4e8-246099e2e2ff)
+ Call ID: 657d3809-9012-42be-b4e8-246099e2e2ff
+  Args:
+    source: King_Ludwig_III_of_Bavaria
+    type: :Person
+  AddTriple (adb06f23-4f41-41c9-895d-931a7c91d410)
+ Call ID: adb06f23-4f41-41c9-895d-931a7c91d410
+  Args:
+    relation: :hasAncestor
+    source: Princess_Maria_Elisabeth_of_Bavaria
+    target: King_Ludwig_III_of_Bavaria
+  AddTriple (5880c36d-1886-4226-badd-7862a77e4f6a)
+ Call ID: 5880c36d-1886-4226-badd-7862a77e4f6a
+  Args:
+    target: Princess_Isabel
+    source: Prince_Luiz_of_Orleans-Braganza
+    relation: :hasAncestor
+  AddTriple (a5256714-ce57-4f65-8b8f-7ab2040d349a)
+ Call ID: a5256714-ce57-4f65-8b8f-7ab2040d349a
+  Args:
+    target: Princess_Isabel
+    relation: :hasAncestor
+    source: Pedro_Carlos_Orleans-Braganza
+  Finish (2ea4ce03-f6b7-49a3-afe8-82804c5a1df2)
+ Call ID: 2ea4ce03-f6b7-49a3-afe8-82804c5a1df2
   Args:

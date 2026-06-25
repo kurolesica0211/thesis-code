@@ -7,76 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Sarah_Walker a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sarah Walker" ;
-    data:posIndicesFull "603:624" ;
-    data:posIndicesPart "765:771",
-        "796:802",
-        "878:884" ;
-    data:wdtLink wdt:Q75240463 ;
-    :alsoKnownAs "Sarah Georgina Mountbatten, Marchioness of Milford Haven",
-        "Sarah Georgina Walker",
-        "Sarah Georgina, Marchioness of Milford Haven",
-        "Sarah Mountbatten, Marchioness of Milford Haven",
-        "Sarah, Marchioness of Milford Haven" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
-    data:posIndicesFull "12:29" ;
-    data:posIndicesPart "548:559" ;
-    data:wdtLink wdt:Q157068 ;
-    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
-        "Lord Louis Mountbatten",
-        "Lord Mountbatten",
-        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
-        "Louis Mountbatten",
-        "Prince Louis of Battenberg",
-        "The Earl Mountbatten of Burma" ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten ;
-    :isBrotherOf data:Louise_Mountbatten ;
-    :isSiblingOf data:Louise_Mountbatten .
-
-data:Louise_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Louise Mountbatten" ;
-    data:posIndicesFull "12:29" ;
-    data:posIndicesPart "548:559" ;
-    data:wdtLink wdt:Q115477 ;
-    :alsoKnownAs "Countess of Gripsholm",
-        "Lady Louise Alexandra Marie Irene Mountbatten",
-        "Lady Louise Mountbatten",
-        "Louise Alexandra Marie Irene Mountbatten",
-        "Louise Alexandra Marie Irene of Battenberg",
-        "Louise of Battenberg",
-        "Louise of Sweden",
-        "Mrs Olsson",
-        "Princess Louise Alexandra Marie Irene of Battenberg",
-        "Princess Louise of Battenberg",
-        "Queen Louise of Sweden" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasSex data:female ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma .
-
-data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Person ;
     rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
     data:posIndicesFull "0:60" ;
     data:posIndicesPart "1082:1089",
@@ -103,18 +34,10 @@ data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
     :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
         "George Ivar Louis Mountbatten, Earl of Medina",
         "George Mountbatten, Earl of Medina" ;
-    :hasBrother data:Lord_Ivar_Mountbatten ;
-    :hasMother data:Janet_Bryce ;
     :hasParent data:Janet_Bryce ;
-    :hasSex data:male ;
-    :isBrotherOf data:Lord_Ivar_Mountbatten ;
-    :isChildOf data:Janet_Bryce ;
-    :isSiblingOf data:Lord_Ivar_Mountbatten ;
-    :isSonOf data:Janet_Bryce .
+    :hasSex data:male .
 
-data:Lord_Ivar_Mountbatten a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Lord_Ivar_Mountbatten a :Person ;
     rdfs:label "Lord Ivar Mountbatten" ;
     data:posIndicesFull "322:343",
         "327:343" ;
@@ -129,32 +52,39 @@ data:Lord_Ivar_Mountbatten a :Man,
     :alsoKnownAs "Ivar Alexander Michael Mountbatten",
         "Ivar Mountbatten",
         "Lord Ivar Alexander Michael Mountbatten" ;
-    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :hasMother data:Janet_Bryce ;
     :hasParent data:Janet_Bryce ;
-    :hasSex data:male ;
-    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :isChildOf data:Janet_Bryce ;
-    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :isSonOf data:Janet_Bryce .
+    :hasSex data:male .
 
-data:Janet_Bryce a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Sarah_Walker a :Person ;
+    rdfs:label "Sarah Walker" ;
+    data:posIndicesFull "603:624" ;
+    data:posIndicesPart "765:771",
+        "796:802",
+        "878:884" ;
+    data:wdtLink wdt:Q75240463 ;
+    :alsoKnownAs "Sarah Georgina Mountbatten, Marchioness of Milford Haven",
+        "Sarah Georgina Walker",
+        "Sarah Georgina, Marchioness of Milford Haven",
+        "Sarah Mountbatten, Marchioness of Milford Haven",
+        "Sarah, Marchioness of Milford Haven" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Janet_Bryce a :Person ;
     rdfs:label "Janet Bryce" ;
     data:posIndicesFull "279:299" ;
     data:wdtLink wdt:Q75383906 ;
     :alsoKnownAs "Janet Mercedes Bryce",
         "Janet Mercedes Mountbatten, Marchioness of Milford Haven",
         "Janet Mountbatten, Marchioness of Milford Haven" ;
-    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :hasSex data:female ;
-    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isMotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

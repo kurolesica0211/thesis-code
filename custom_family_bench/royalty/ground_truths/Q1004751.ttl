@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Count_Felix_of_Monpezat a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Count_Felix_of_Monpezat a :Person ;
     rdfs:label "Count Felix of Monpezat" ;
     data:posIndicesFull "1161:1184",
         "1225:1248",
@@ -34,10 +32,7 @@ data:Count_Felix_of_Monpezat a :Man,
         "Prince Felix of Denmark, Count of Monpezat" ;
     :hasSex data:male .
 
-data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Henrik-_Prince_Consort_of_Denmark a :Person ;
     rdfs:label "Henrik, Prince Consort of Denmark" ;
     data:posIndicesFull "183:189",
         "476:482" ;
@@ -59,10 +54,7 @@ data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
         "Prince Henrik of Denmark" ;
     :hasSex data:male .
 
-data:Margrethe_II_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Margrethe_II_of_Denmark a :Person ;
     rdfs:label "Margrethe II of Denmark" ;
     data:posIndicesFull "1312:1324",
         "159:171",
@@ -79,4 +71,8 @@ data:posIndicesFull a owl:AnnotationProperty .
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
 

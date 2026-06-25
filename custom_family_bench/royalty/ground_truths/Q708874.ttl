@@ -7,16 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Amélie_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Amélie_of_Orléans a :Person ;
     rdfs:label "Amélie of Orléans" ;
     data:posIndicesFull "800:817" ;
     data:posIndicesPart "1593:1600",
@@ -30,17 +21,9 @@ data:Amélie_of_Orléans a :Ancestor,
         "Marie Amelie of Orleans",
         "Marie Amélie d'Orléans",
         "Marie Amélie of Orléans" ;
-    :hasBrother data:Prince_Philippe-_Duke_of_Orléans ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Isabelle_dOrléans ;
-    :isSiblingOf data:Prince_Philippe-_Duke_of_Orléans,
-        data:Princess_Isabelle_dOrléans ;
-    :isSisterOf data:Prince_Philippe-_Duke_of_Orléans,
-        data:Princess_Isabelle_dOrléans .
+    :hasSex data:female .
 
-data:Prince_Philippe-_Duke_of_Orléans a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Philippe-_Duke_of_Orléans a :Person ;
     rdfs:label "Prince Philippe, Duke of Orléans" ;
     data:posIndicesFull "0:32" ;
     data:posIndicesPart "1007:1015",
@@ -88,29 +71,24 @@ data:Prince_Philippe-_Duke_of_Orléans a :Man,
         "910:918" ;
     data:wdtLink wdt:Q708874 ;
     :alsoKnownAs "Prince Louis Robert, Duke of Orleans" ;
-    :hasSex data:male ;
-    :hasSister data:Amélie_of_Orléans,
-        data:Princess_Isabelle_dOrléans ;
-    :isBrotherOf data:Amélie_of_Orléans,
-        data:Princess_Isabelle_dOrléans ;
-    :isSiblingOf data:Amélie_of_Orléans,
-        data:Princess_Isabelle_dOrléans .
+    :hasSex data:male .
 
-data:Princess_Isabelle_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Isabelle_dOrléans a :Person ;
     rdfs:label "Princess Isabelle d’Orléans" ;
     data:posIndicesFull "325:353" ;
     data:posIndicesPart "1823:1831",
         "3413:3421" ;
     data:wdtLink wdt:Q261322 ;
     :alsoKnownAs "Princess Isabelle of Orleans" ;
-    :hasBrother data:Prince_Philippe-_Duke_of_Orléans ;
-    :hasSex data:female ;
-    :hasSister data:Amélie_of_Orléans ;
-    :isSiblingOf data:Amélie_of_Orléans,
-        data:Prince_Philippe-_Duke_of_Orléans ;
-    :isSisterOf data:Amélie_of_Orléans,
-        data:Prince_Philippe-_Duke_of_Orléans .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
 

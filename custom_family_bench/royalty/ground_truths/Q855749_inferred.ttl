@@ -1,0 +1,294 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Queen_Máxima_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Máxima of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "627:633"^^xsd:string,
+        "943:949"^^xsd:string ;
+    data:posIndicesPart "1059:1070"^^xsd:string,
+        "1104:1115"^^xsd:string,
+        "1416:1427"^^xsd:string,
+        "2176:2187"^^xsd:string,
+        "4519:4530"^^xsd:string,
+        "4754:4765"^^xsd:string,
+        "5304:5309"^^xsd:string,
+        "5421:5426"^^xsd:string ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands"^^xsd:string,
+        "Maxima Zorreguieta"^^xsd:string,
+        "Máxima"^^xsd:string,
+        "Máxima Zorreguieta"^^xsd:string,
+        "Máxima of the Netherlands"^^xsd:string ;
+    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasRelation data:Catharina-Amalia-_Princess_of_Orange,
+        data:Queen_Máxima_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Máxima_of_the_Netherlands ;
+    :isAncestorOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isAuntOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isBloodrelationOf data:Queen_Máxima_of_the_Netherlands ;
+    :isMotherOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isParentOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isSiblingOf data:Queen_Máxima_of_the_Netherlands ;
+    :isSisterOf data:Queen_Máxima_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "4935:4948"^^xsd:string,
+        "4941:4948"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Catharina-Amalia-_Princess_of_Orange,
+        data:Juliana_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Catharina-Amalia-_Princess_of_Orange,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "2230:2243"^^xsd:string ;
+    data:posIndicesPart "3998:4005"^^xsd:string,
+        "4519:4530"^^xsd:string,
+        "4754:4765"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands ;
+    :hasChild data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Catharina-Amalia-_Princess_of_Orange,
+        data:Juliana_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :hasSon data:William_Alexander_of_the_Netherlands ;
+    :isAncestorOf data:Catharina-Amalia-_Princess_of_Orange,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAuntOf data:William_Alexander_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William Alexander of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "3032:3053"^^xsd:string,
+        "595:616"^^xsd:string,
+        "884:918"^^xsd:string ;
+    data:posIndicesPart "1059:1070"^^xsd:string,
+        "1104:1115"^^xsd:string,
+        "1416:1427"^^xsd:string,
+        "2176:2187"^^xsd:string,
+        "4032:4041"^^xsd:string,
+        "4519:4530"^^xsd:string,
+        "4754:4765"^^xsd:string ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander"^^xsd:string,
+        "King Willem-Alexander of the Netherlands"^^xsd:string,
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince William-Alexander of the Netherlands"^^xsd:string,
+        "W.A. van Buren"^^xsd:string,
+        "Wilem van Amsberg"^^xsd:string,
+        "Willem IV of the Netherlands"^^xsd:string,
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange"^^xsd:string,
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden"^^xsd:string,
+        "Willem-Alexander van Amsberg"^^xsd:string,
+        "Willem-Alexander van Oranje-Nassau"^^xsd:string,
+        "Willem-Alexander, Prince of Orange"^^xsd:string,
+        "ZM Koning Willem-Alexander"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands ;
+    :hasBrother data:William_Alexander_of_the_Netherlands ;
+    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Catharina-Amalia-_Princess_of_Orange,
+        data:Juliana_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isBloodrelationOf data:William_Alexander_of_the_Netherlands ;
+    :isBrotherOf data:William_Alexander_of_the_Netherlands ;
+    :isChildOf data:Beatrix_of_the_Netherlands ;
+    :isFatherOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isParentOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isSiblingOf data:William_Alexander_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands ;
+    :isUncleOf data:Catharina-Amalia-_Princess_of_Orange .
+
+data:Catharina-Amalia-_Princess_of_Orange a :Person,
+        :Woman ;
+    rdfs:label "Catharina-Amalia, Princess of Orange"^^xsd:string ;
+    data:posIndicesFull "1866:1891"^^xsd:string,
+        "323:363"^^xsd:string,
+        "64:100"^^xsd:string,
+        "713:738"^^xsd:string,
+        "722:762"^^xsd:string,
+        "74:100"^^xsd:string ;
+    data:posIndicesPart "1182:1191"^^xsd:string,
+        "1192:1198"^^xsd:string,
+        "1330:1338"^^xsd:string,
+        "1556:1565"^^xsd:string,
+        "1566:1572"^^xsd:string,
+        "2189:2198"^^xsd:string,
+        "2199:2205"^^xsd:string,
+        "2308:2317"^^xsd:string,
+        "2318:2324"^^xsd:string,
+        "2373:2381"^^xsd:string,
+        "2385:2391"^^xsd:string,
+        "2468:2477"^^xsd:string,
+        "2478:2484"^^xsd:string,
+        "2684:2692"^^xsd:string,
+        "2758:2767"^^xsd:string,
+        "2768:2774"^^xsd:string,
+        "2825:2831"^^xsd:string,
+        "2877:2886"^^xsd:string,
+        "2887:2893"^^xsd:string,
+        "3068:3077"^^xsd:string,
+        "3078:3084"^^xsd:string,
+        "3399:3408"^^xsd:string,
+        "3409:3415"^^xsd:string,
+        "3469:3478"^^xsd:string,
+        "3479:3485"^^xsd:string,
+        "3552:3561"^^xsd:string,
+        "3562:3568"^^xsd:string,
+        "3648:3657"^^xsd:string,
+        "3658:3664"^^xsd:string,
+        "3730:3739"^^xsd:string,
+        "3740:3746"^^xsd:string,
+        "3794:3802"^^xsd:string,
+        "3904:3913"^^xsd:string,
+        "3914:3920"^^xsd:string,
+        "3989:3997"^^xsd:string,
+        "4068:4074"^^xsd:string,
+        "4146:4155"^^xsd:string,
+        "4156:4162"^^xsd:string,
+        "4415:4423"^^xsd:string,
+        "4461:4470"^^xsd:string,
+        "4471:4477"^^xsd:string,
+        "4645:4654"^^xsd:string,
+        "4655:4661"^^xsd:string,
+        "4853:4862"^^xsd:string,
+        "4863:4869"^^xsd:string,
+        "4980:4989"^^xsd:string,
+        "4990:4996"^^xsd:string,
+        "5068:5077"^^xsd:string,
+        "5078:5084"^^xsd:string,
+        "5100:5108"^^xsd:string,
+        "5341:5350"^^xsd:string,
+        "5351:5357"^^xsd:string,
+        "5474:5483"^^xsd:string,
+        "5484:5490"^^xsd:string,
+        "555:564"^^xsd:string,
+        "5574:5583"^^xsd:string,
+        "5584:5590"^^xsd:string,
+        "565:571"^^xsd:string,
+        "5856:5864"^^xsd:string,
+        "5934:5943"^^xsd:string,
+        "5944:5950"^^xsd:string,
+        "6078:6087"^^xsd:string,
+        "6088:6094"^^xsd:string,
+        "6209:6218"^^xsd:string,
+        "6219:6225"^^xsd:string,
+        "6533:6541"^^xsd:string,
+        "664:672"^^xsd:string,
+        "684:692"^^xsd:string ;
+    data:wdtLink wdt:Q855749 ;
+    :alsoKnownAs "Amalia van Orange"^^xsd:string,
+        "Amalia, Princess of Orange"^^xsd:string,
+        "Catharina-Amalia Beatrix Carmen Victoria"^^xsd:string,
+        "Catharina-Amalia Beatrix Carmen Victoria Prinses van Oranje"^^xsd:string,
+        "Catharina-Amalia van Orange"^^xsd:string,
+        "Catharina-Amalia, Princess of Orange"^^xsd:string,
+        "Crown Princess Catharina-Amalia"^^xsd:string,
+        "Princess Amalia of Orange-Nassau"^^xsd:string,
+        "Princess Amalia of the Netherlands"^^xsd:string,
+        "Princess Amalia of the Netherlands, Princess of Orange-Nassau"^^xsd:string,
+        "Princess Catharina-Amalia"^^xsd:string,
+        "Princess Catharina-Amalia of Orange-Nassau"^^xsd:string,
+        "Princess Catharina-Amalia of the Netherlands"^^xsd:string,
+        "Princess Catharina-Amalia of the Netherlands, Princess of Orange-Nassau"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasFather data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Queen_Máxima_of_the_Netherlands ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Catharina-Amalia-_Princess_of_Orange,
+        data:Juliana_of_the_Netherlands,
+        data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Catharina-Amalia-_Princess_of_Orange ;
+    :isBloodrelationOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isChildOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Catharina-Amalia-_Princess_of_Orange ;
+    :isSisterOf data:Catharina-Amalia-_Princess_of_Orange .
+

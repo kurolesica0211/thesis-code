@@ -85,17 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Louise Françoise Marie Laure of Orléans (24 February 1882 – 18 April 1958) was a Princess of the Two-Sicilies and paternal great grandmother of King Felipe VI of Spain.
-Her mother was Princess Marie Isabelle d'Orléans, daughter of Antoine, Duke of Montpensier, and Infanta Luisa Fernanda of Spain.
-Marriage and issue
+Don Gonzalo, Duke of Aquitaine (5 June 1937 – 27 May 2000) (Spanish: Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre; French: Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon) was a grandson of Alfonso XIII, King of Spain.
+Life
 
-On 16 November 1907, Louise married in Wood Norton, Worcestershire, UK, Infante Carlos, Prince of Bourbon-Two Sicilies, and widower of María de las Mercedes, Princess of Asturias.
+Gonzalo was born in the Sant'Anna Clinic in Rome on 5 June 1937, the younger son of Infante Jaime, Duke of Segovia and his first wife, Emmanuelle de Dampierre.
+In 1941, after the death of his paternal grandfather Alfonso XIII, Gonzalo moved with his family to Lausanne, Switzerland.
+They lived first at the Hotel Royal before Gonzalo and his older brother Alfonso were sent to the Collège Saint-Jean in Fribourg.
+The following year, General Francisco Franco allowed Gonzalo and Alfonso to continue their education in Spain.
+In September 1955, Gonzalo and Alfonso were both injured in an automobile accident near Lausanne, on a return trip from Windsor during which they had driven all day and night.
+In November 1961, Alfonso and Gonzalo, concerned that their father was wasting away his money, sought an injunction from a French court to compel him to turn over management of his affairs to a court-appointed trustee, being supported in their action by their grandmother, Queen Victoria Eugenie, as well as by other members of the Spanish royal family.
+In January 1962, the court ruled that although there were insufficient grounds to find Jaime completely incompetent, a trustee was installed to restrain undue extravagance on his part.
+On 8 March 1972, Jaime named Gonzalo a knight of the Order of the Holy Spirit and of the Order of Saint Michael; the declarative letters patent were dated 21 September 1972.
+Also on 21 September 1972, Jaime gave Gonzalo the title duc d'Aquitaine (Duke of Aquitaine).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +120,9 @@ On 16 November 1907, Louise married in Wood Norton, Worcestershire, UK, Infante 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +137,23 @@ On 16 November 1907, Louise married in Wood Norton, Worcestershire, UK, Infante 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,136 +445,152 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0d992a0b-c3a1-4e81-9a3f-5922dc785f3e)
- Call ID: 0d992a0b-c3a1-4e81-9a3f-5922dc785f3e
+  AssignClass (0059af7b-044d-437e-aa2f-4ed721d06f59)
+ Call ID: 0059af7b-044d-437e-aa2f-4ed721d06f59
+  Args:
+    type: :Man
+    source: Gonzalo
+  AssignClass (27b293e0-0833-4a98-b172-fa64a98ad68a)
+ Call ID: 27b293e0-0833-4a98-b172-fa64a98ad68a
   Args:
     type: :Person
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-  AssignClass (f59e696d-d206-494a-8da6-ee2e5c3d4a36)
- Call ID: f59e696d-d206-494a-8da6-ee2e5c3d4a36
+    source: Gonzalo
+  AddLiteral (6da3cf08-6388-4b3d-b73c-4e0404a5cd59)
+ Call ID: 6da3cf08-6388-4b3d-b73c-4e0404a5cd59
   Args:
-    type: :Woman
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-  AddLiteral (b97190ae-ece6-4fdf-a295-0e5955ba1bc9)
- Call ID: b97190ae-ece6-4fdf-a295-0e5955ba1bc9
-  Args:
+    literal_value: 1937
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-    literal_value: 1882
-  AddLiteral (18dcf047-cef0-443a-a835-4813802f3a57)
- Call ID: 18dcf047-cef0-443a-a835-4813802f3a57
+    source: Gonzalo
+  AddLiteral (7363b836-ceec-4a3b-b21d-33f7464c5ab0)
+ Call ID: 7363b836-ceec-4a3b-b21d-33f7464c5ab0
   Args:
+    source: Gonzalo
+    literal_value: 2000
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-    literal_value: 1958
-  AssignClass (bb5b33bd-d12f-45bc-beaa-680e92d056d2)
- Call ID: bb5b33bd-d12f-45bc-beaa-680e92d056d2
+  AddLiteral (2f5fc87b-d1e5-4232-b68a-d496e31a4792)
+ Call ID: 2f5fc87b-d1e5-4232-b68a-d496e31a4792
   Args:
-    source: Princess_Marie_Isabelle_dOrleans
-    type: :Person
-  AssignClass (2eb048b7-6bb3-4def-a368-ab0938804cbc)
- Call ID: 2eb048b7-6bb3-4def-a368-ab0938804cbc
+    source: Gonzalo
+    literal_value: Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre
+    literal_type: xsd:string
+    relation: :knownAs
+  AddLiteral (ca37d6ec-4919-4709-a898-57e01d7f37b0)
+ Call ID: ca37d6ec-4919-4709-a898-57e01d7f37b0
   Args:
-    type: :Woman
-    source: Princess_Marie_Isabelle_dOrleans
-  AddTriple (4c93805c-efe8-46f9-8e0d-761649ad92df)
- Call ID: 4c93805c-efe8-46f9-8e0d-761649ad92df
-  Args:
-    target: Princess_Marie_Isabelle_dOrleans
-    relation: :hasMother
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-  AssignClass (c1220806-9960-4060-b968-f820e8336ad8)
- Call ID: c1220806-9960-4060-b968-f820e8336ad8
-  Args:
-    type: :Person
-    source: Antoine_Duke_of_Montpensier
-  AssignClass (9c1dd571-7407-4db2-a1db-3994ad6b9a69)
- Call ID: 9c1dd571-7407-4db2-a1db-3994ad6b9a69
-  Args:
-    source: Antoine_Duke_of_Montpensier
-    type: :Man
-  AddTriple (c4f9f25f-a9be-40f5-bc2c-9bec6c74517b)
- Call ID: c4f9f25f-a9be-40f5-bc2c-9bec6c74517b
-  Args:
-    target: Antoine_Duke_of_Montpensier
-    relation: :hasFather
-    source: Princess_Marie_Isabelle_dOrleans
-  AssignClass (daf06650-aac1-456b-bd8b-78aa57bc7cbd)
- Call ID: daf06650-aac1-456b-bd8b-78aa57bc7cbd
-  Args:
-    type: :Person
-    source: Infanta_Luisa_Fernanda_of_Spain
-  AssignClass (f680ba71-cad7-48ee-9cb7-8764c9b6ae1d)
- Call ID: f680ba71-cad7-48ee-9cb7-8764c9b6ae1d
-  Args:
-    source: Infanta_Luisa_Fernanda_of_Spain
-    type: :Woman
-  AddTriple (b7bd1870-37fe-4df7-a639-66c8b9d8cac9)
- Call ID: b7bd1870-37fe-4df7-a639-66c8b9d8cac9
-  Args:
-    source: Princess_Marie_Isabelle_dOrleans
-    relation: :hasMother
-    target: Infanta_Luisa_Fernanda_of_Spain
-  AssignClass (8a951965-7e8c-429f-b5f1-b514ff0741a0)
- Call ID: 8a951965-7e8c-429f-b5f1-b514ff0741a0
-  Args:
-    source: Infante_Carlos_Prince_of_Bourbon_Two_Sicilies
-    type: :Person
-  AssignClass (5c9cf6db-d0ba-4ad2-97e9-d7da865e4188)
- Call ID: 5c9cf6db-d0ba-4ad2-97e9-d7da865e4188
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon
+    source: Gonzalo
+  AssignClass (306b7521-1ba0-4bb7-8818-ffef10b57b07)
+ Call ID: 306b7521-1ba0-4bb7-8818-ffef10b57b07
   Args:
     type: :Man
-    source: Infante_Carlos_Prince_of_Bourbon_Two_Sicilies
-  AddLiteral (7862eae0-2c69-4b5b-948d-7c8ec261f12e)
- Call ID: 7862eae0-2c69-4b5b-948d-7c8ec261f12e
+    source: AlfonsoXIII
+  AssignClass (f08ea464-8154-494f-9c82-4f5e6a9c309f)
+ Call ID: f08ea464-8154-494f-9c82-4f5e6a9c309f
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1907
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-  AddTriple (15f1602b-6ac9-4f82-8f40-3a77395eb6d6)
- Call ID: 15f1602b-6ac9-4f82-8f40-3a77395eb6d6
+    type: :Ancestor
+    source: AlfonsoXIII
+  AssignClass (76c40cb5-644b-4c90-ac16-8aa18a239838)
+ Call ID: 76c40cb5-644b-4c90-ac16-8aa18a239838
   Args:
-    target: Infante_Carlos_Prince_of_Bourbon_Two_Sicilies
-    relation: :hasRelation
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-  AssignClass (53c340e9-f6a7-40b9-9992-c36c4b110c20)
- Call ID: 53c340e9-f6a7-40b9-9992-c36c4b110c20
-  Args:
+    source: AlfonsoXIII
     type: :Person
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AssignClass (4ae99673-d89b-4b54-b2de-c70adacfc222)
- Call ID: 4ae99673-d89b-4b54-b2de-c70adacfc222
+  AddTriple (a9aedab8-3377-47e4-8172-e34fb5ceeaf3)
+ Call ID: a9aedab8-3377-47e4-8172-e34fb5ceeaf3
   Args:
-    type: :Woman
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AddTriple (4d39d1d3-e3e2-47b8-a398-1ec0e0d40caf)
- Call ID: 4d39d1d3-e3e2-47b8-a398-1ec0e0d40caf
-  Args:
-    target: Maria_de_las_Mercedes_Princess_of_Asturias
-    relation: :hasRelation
-    source: Infante_Carlos_Prince_of_Bourbon_Two_Sicilies
-  AssignClass (3ce13622-334a-4d48-9724-8e9766bad29c)
- Call ID: 3ce13622-334a-4d48-9724-8e9766bad29c
-  Args:
-    type: :Person
-    source: King_Felipe_VI_of_Spain
-  AssignClass (f4059a03-98bc-457a-b69f-4a911a6d24ed)
- Call ID: f4059a03-98bc-457a-b69f-4a911a6d24ed
-  Args:
-    type: :Man
-    source: King_Felipe_VI_of_Spain
-  AddTriple (71785d29-a005-4da6-ba7e-c0bfd3e2f1c7)
- Call ID: 71785d29-a005-4da6-ba7e-c0bfd3e2f1c7
-  Args:
-    target: Princess_Louise_Francoise_Marie_Laure_of_Orleans
+    target: AlfonsoXIII
     relation: :hasAncestor
-    source: King_Felipe_VI_of_Spain
-  Finish (a7b7ce22-cb29-473a-ab7e-a0370978eed9)
- Call ID: a7b7ce22-cb29-473a-ab7e-a0370978eed9
+    source: Gonzalo
+  AssignClass (9c6232d0-301f-4ed1-8d27-98526663bf77)
+ Call ID: 9c6232d0-301f-4ed1-8d27-98526663bf77
   Args:
+    source: Jaime
+    type: :Man
+  AssignClass (add62e85-ffd5-4682-ab0b-050aa45853ee)
+ Call ID: add62e85-ffd5-4682-ab0b-050aa45853ee
+  Args:
+    source: Jaime
+    type: :Ancestor
+  AssignClass (959c518a-440b-472c-ad5a-d2cc2d8e44ee)
+ Call ID: 959c518a-440b-472c-ad5a-d2cc2d8e44ee
+  Args:
+    type: :Person
+    source: Jaime
+  AddTriple (f5a27dd1-c6c7-4fa5-a479-9065103a73d7)
+ Call ID: f5a27dd1-c6c7-4fa5-a479-9065103a73d7
+  Args:
+    relation: :hasFather
+    target: Jaime
+    source: Gonzalo
+  AssignClass (b18dfc49-294e-4311-9137-5b031b297d83)
+ Call ID: b18dfc49-294e-4311-9137-5b031b297d83
+  Args:
+    source: EmmanuelleDeDampierre
+    type: :Woman
+  AssignClass (6f1f24aa-6ef5-4db8-a751-965152aa8f05)
+ Call ID: 6f1f24aa-6ef5-4db8-a751-965152aa8f05
+  Args:
+    type: :Ancestor
+    source: EmmanuelleDeDampierre
+  AssignClass (516abdb7-ed69-44e1-9aba-07872f926d26)
+ Call ID: 516abdb7-ed69-44e1-9aba-07872f926d26
+  Args:
+    type: :Person
+    source: EmmanuelleDeDampierre
+  AddTriple (ef9a1a8f-4d71-46c1-880b-5a222e6db397)
+ Call ID: ef9a1a8f-4d71-46c1-880b-5a222e6db397
+  Args:
+    source: Gonzalo
+    relation: :hasMother
+    target: EmmanuelleDeDampierre
+  AssignClass (0bca61de-7dfa-4890-b5a7-a21c109fc797)
+ Call ID: 0bca61de-7dfa-4890-b5a7-a21c109fc797
+  Args:
+    type: :Man
+    source: AlfonsoBrother
+  AssignClass (0a079aa7-83cc-414e-b90c-42f7b0900d37)
+ Call ID: 0a079aa7-83cc-414e-b90c-42f7b0900d37
+  Args:
+    type: :Person
+    source: AlfonsoBrother
+  AddTriple (4f81c98b-b4ea-4d44-b404-150765cba690)
+ Call ID: 4f81c98b-b4ea-4d44-b404-150765cba690
+  Args:
+    source: Gonzalo
+    target: AlfonsoBrother
+    relation: :isSiblingOf
+  AssignClass (641a62da-c381-441c-827b-bc55b8a0beaf)
+ Call ID: 641a62da-c381-441c-827b-bc55b8a0beaf
+  Args:
+    source: VictoriaEugenie
+    type: :Woman
+  AssignClass (866ea9bf-9623-4fc9-a531-c4cc2d153402)
+ Call ID: 866ea9bf-9623-4fc9-a531-c4cc2d153402
+  Args:
+    source: VictoriaEugenie
+    type: :Ancestor
+  AssignClass (b92755bf-4499-472e-9b22-730ec7b5e369)
+ Call ID: b92755bf-4499-472e-9b22-730ec7b5e369
+  Args:
+    type: :Person
+    source: VictoriaEugenie
+  AddTriple (ca99d15d-4490-44bd-be87-403745022334)
+ Call ID: ca99d15d-4490-44bd-be87-403745022334
+  Args:
+    target: VictoriaEugenie
+    relation: :hasAncestor
+    source: Gonzalo
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -572,37 +687,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:King_Felipe_VI_of_Spain a :Man,
+  data:Gonzalo a :Man,
           :Person ;
-      :hasAncestor data:Princess_Louise_Francoise_Marie_Laure_of_Orleans .
+      :alsoKnownAs "Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon"^^xsd:string ;
+      :hasAncestor data:AlfonsoXIII,
+          data:VictoriaEugenie ;
+      :hasBirthYear 1937 ;
+      :hasDeathYear 2000 ;
+      :hasFather data:Jaime ;
+      :hasMother data:EmmanuelleDeDampierre ;
+      :isSiblingOf data:AlfonsoBrother ;
+      :knownAs "Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre"^^xsd:string .
 
-  data:Antoine_Duke_of_Montpensier a :Man,
+  data:AlfonsoBrother a :Man,
           :Person .
 
-  data:Infanta_Luisa_Fernanda_of_Spain a :Person,
+  data:AlfonsoXIII a :Ancestor,
+          :Man,
+          :Person .
+
+  data:EmmanuelleDeDampierre a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
-          :Person ;
-      :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+  data:Jaime a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+  data:VictoriaEugenie a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Person,
-          :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1958 ;
-      :hasMarriageYear 1907 ;
-      :hasMother data:Princess_Marie_Isabelle_dOrleans ;
-      :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
-
-  data:Princess_Marie_Isabelle_dOrleans a :Person,
-          :Woman ;
-      :hasFather data:Antoine_Duke_of_Montpensier ;
-      :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
 
 
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (2bebbf1e-6558-4801-9dab-7d83dec0a01b)
+ Call ID: 2bebbf1e-6558-4801-9dab-7d83dec0a01b
+  Args:
 
 ================================= Tool Message =================================
 
@@ -612,196 +736,9 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1d0207ca-ead4-4eb1-9051-d566a5b4d3b4)
- Call ID: 1d0207ca-ead4-4eb1-9051-d566a5b4d3b4
+  ValidateShacl (4d571607-289a-4a80-85e5-93ffea174a15)
+ Call ID: 4d571607-289a-4a80-85e5-93ffea174a15
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:12
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Princess_Louise_Francoise_Marie_Laure_of_Orleans is used as an ancestor of King_Felipe_VI_of_Spain, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Louise_Francoise_Marie_Laure_of_Orleans', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Princess_Louise_Francoise_Marie_Laure_of_Orleans is used as an ancestor of King_Felipe_VI_of_Spain, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Louise_Francoise_Marie_Laure_of_Orleans', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Antoine_Duke_of_Montpensier is assigned as the father of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Marie_Isabelle_dOrleans is assigned as the mother of Princess_Louise_Francoise_Marie_Laure_of_Orleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrleans', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Infanta_Luisa_Fernanda_of_Spain is assigned as the mother of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Princess_Louise_Francoise_Marie_Laure_of_Orleans is used as an ancestor of King_Felipe_VI_of_Spain, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Louise_Francoise_Marie_Laure_of_Orleans', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Antoine_Duke_of_Montpensier is assigned as the father of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Marie_Isabelle_dOrleans is assigned as the mother of Princess_Louise_Francoise_Marie_Laure_of_Orleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrleans', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Infanta_Luisa_Fernanda_of_Spain is assigned as the mother of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Antoine_Duke_of_Montpensier is assigned as the father of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Infanta_Luisa_Fernanda_of_Spain is assigned as the mother of Princess_Marie_Isabelle_dOrleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Marie_Isabelle_dOrleans is assigned as the mother of Princess_Louise_Francoise_Marie_Laure_of_Orleans, but it lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrleans', class=':Ancestor')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (29752fc8-3e2c-4ab0-b65e-c3a17328686e)
- Call ID: 29752fc8-3e2c-4ab0-b65e-c3a17328686e
-  Args:
-    source: Princess_Louise_Francoise_Marie_Laure_of_Orleans
-    type: :Ancestor
-  AssignClass (9fe1bb5e-0dcd-44b4-bf66-470c36c09500)
- Call ID: 9fe1bb5e-0dcd-44b4-bf66-470c36c09500
-  Args:
-    source: Antoine_Duke_of_Montpensier
-    type: :Ancestor
-  AssignClass (816bc45b-16dd-470c-b790-5e00507ba406)
- Call ID: 816bc45b-16dd-470c-b790-5e00507ba406
-  Args:
-    source: Princess_Marie_Isabelle_dOrleans
-    type: :Ancestor
-  AssignClass (e7df8563-e326-42b1-af89-3b3a8f9d85e1)
- Call ID: e7df8563-e326-42b1-af89-3b3a8f9d85e1
-  Args:
-    source: Infanta_Luisa_Fernanda_of_Spain
-    type: :Ancestor
-  ValidateShacl (72488b6f-36d0-4a8d-b947-2bfe55a50d51)
- Call ID: 72488b6f-36d0-4a8d-b947-2bfe55a50d51
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:King_Felipe_VI_of_Spain a :Man,
-          :Person ;
-      :hasAncestor data:Princess_Louise_Francoise_Marie_Laure_of_Orleans .
-
-  data:Antoine_Duke_of_Montpensier a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
-          :Person ;
-      :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
-
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
-          :Woman .
-
-  data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1958 ;
-      :hasMarriageYear 1907 ;
-      :hasMother data:Princess_Marie_Isabelle_dOrleans ;
-      :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
-
-  data:Princess_Marie_Isabelle_dOrleans a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Antoine_Duke_of_Montpensier ;
-      :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
-
-
 
 ================================= Tool Message =================================
 
@@ -811,6 +748,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (91231281-3dee-4254-bf6f-7e7facd04273)
- Call ID: 91231281-3dee-4254-bf6f-7e7facd04273
+  Finish (9f2c1dce-c3e8-4091-a20a-4a557e656197)
+ Call ID: 9f2c1dce-c3e8-4091-a20a-4a557e656197
   Args:

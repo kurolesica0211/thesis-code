@@ -1,0 +1,92 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ulrich, 10th Prince Kinsky of Wchinitz and Tettau"^^xsd:string ;
+    data:posIndicesFull "400:449"^^xsd:string,
+        "6:55"^^xsd:string ;
+    data:posIndicesPart "1029:1035"^^xsd:string,
+        "1058:1064"^^xsd:string,
+        "1126:1132"^^xsd:string,
+        "1230:1236"^^xsd:string,
+        "1373:1379"^^xsd:string,
+        "1481:1487"^^xsd:string,
+        "1518:1524"^^xsd:string,
+        "620:626"^^xsd:string,
+        "646:652"^^xsd:string,
+        "735:741"^^xsd:string,
+        "745:753"^^xsd:string,
+        "758:764"^^xsd:string,
+        "857:863"^^xsd:string,
+        "987:993"^^xsd:string ;
+    data:wdtLink wdt:Q7879786 ;
+    :hasBrother data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasChild data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasRelation data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau,
+        data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male ;
+    :hasSon data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isAncestorOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isBloodrelationOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isBrotherOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isFatherOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isParentOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isSiblingOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isUncleOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+
+data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Man,
+        :Person ;
+    rdfs:label "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau"^^xsd:string ;
+    data:posIndicesFull "0:55"^^xsd:string ;
+    data:posIndicesPart "1029:1035"^^xsd:string,
+        "1058:1064"^^xsd:string,
+        "1120:1125"^^xsd:string,
+        "1126:1132"^^xsd:string,
+        "1224:1229"^^xsd:string,
+        "1230:1236"^^xsd:string,
+        "1373:1379"^^xsd:string,
+        "1481:1487"^^xsd:string,
+        "1518:1524"^^xsd:string,
+        "318:323"^^xsd:string,
+        "324:330"^^xsd:string,
+        "614:619"^^xsd:string,
+        "620:626"^^xsd:string,
+        "646:652"^^xsd:string,
+        "735:741"^^xsd:string,
+        "745:753"^^xsd:string,
+        "758:764"^^xsd:string,
+        "857:863"^^xsd:string,
+        "981:986"^^xsd:string,
+        "987:993"^^xsd:string ;
+    data:wdtLink wdt:Q321787 ;
+    :hasAncestor data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasBrother data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasFather data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasParent data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasRelation data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau,
+        data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isBrotherOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isChildOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isSiblingOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
+    :isSonOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+

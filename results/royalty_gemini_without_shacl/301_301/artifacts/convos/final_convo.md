@@ -69,25 +69,20 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Nikola of Yugoslavia (29 June 1928 – 12 April 1954), also known in Britain as Prince Nicholas and in Serbia as Nikola Karađorđević (Serbian Cyrillic: Никола Карађорђевић), was the younger son of Prince Paul of Yugoslavia by his wife Princess Olga of Greece and Denmark.
-Biography
+Tatiana von Preussen (born 16 October 1980) is an architect who worked on the construction of the  High Line, an elevated linear park, greenway and rail trail in New York.
+In 2009 Tatiana von Preussen, Catherine Pease and Jessica Reynolds set up vPPR Architects.
+Personal life
 
-Prince Nikola was born into the House of Karađorđević, the dynasty that ruled Serbia and later the Kingdom of Yugoslavia.
-Known as "Nicky", he was educated in England at Oxford University and was a frequent social escort to Princess Margaret, sister of Queen Elizabeth II.
-Prince Nikola died unmarried in 1954, survived by his parents, Prince Paul and Princess Olga of Yugoslavia; older brother Prince Alexander and younger sister, Princess Elizabeth; also his maternal grandmother, Grand Duchess Elena Vladimirovna of Russia (Princess Nicholas of Greece and Denmark) and his maternal aunts, Princess Elizabeth, Countess of Toerring-Jettenbach, and Princess Marina, Duchess of Kent.
-Death
-
-Nikola died in a road accident at Datchet, now in Berkshire, England, some five miles from the home of his aunt, the Duchess of Kent.
-He was
-driving himself alone towards London, on his way to a meeting with Princess Margaret the same evening, to attend a full-dress rehearsal of a play being performed by a group of young socialites.
-He was a paternal grandson of Arsen Karađorđević, Prince of Serbia and Princess Aurora Pavlovna Demidova di San Donato.
-He was a maternal grandson of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia.
+Tatiana von Preussen is the daughter of Prince Andreas of Prussia and Alexandra Blahova, and granddaughter of Prince Frederick of Prussia and Lady Brigid Guinness; on 28 June 2014 she married writer and journalist Philip Womack, and lives in London.
+They have one son, Arthur Frederick Richard Womack von Preussen (born 21 November 2015) and twin girls, Xenia Alexandra Selena Womack von Preussen and Amalia Maria Brigid Womack von Preussen (born 29 August 2020).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +98,9 @@ He was a maternal grandson of Prince Nicholas of Greece and Denmark and Grand Du
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +115,23 @@ He was a maternal grandson of Prince Nicholas of Greece and Denmark and Grand Du
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +149,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +254,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +274,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +284,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +324,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,199 +423,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (af41e817-40cd-4bfc-83f8-2d77f45fbbb2)
- Call ID: af41e817-40cd-4bfc-83f8-2d77f45fbbb2
+  AssignClass (cd35bbb5-ee44-4ce8-ba26-7abcb2570e7f)
+ Call ID: cd35bbb5-ee44-4ce8-ba26-7abcb2570e7f
   Args:
-    type: :Man
-    source: Prince_Nikola_of_Yugoslavia
-  AssignClass (82aea08b-90e9-418e-9891-b10024a1ece1)
- Call ID: 82aea08b-90e9-418e-9891-b10024a1ece1
+    source: Tatiana von Preussen
+    type: :Woman
+  AssignClass (886e06e5-e6a8-4f83-8294-f7d413ed4366)
+ Call ID: 886e06e5-e6a8-4f83-8294-f7d413ed4366
   Args:
     type: :Person
-    source: Prince_Nikola_of_Yugoslavia
-  AddLiteral (fc2888ba-5c1e-4b77-958c-dc631d1cdb78)
- Call ID: fc2888ba-5c1e-4b77-958c-dc631d1cdb78
+    source: Tatiana von Preussen
+  AddLiteral (4646c827-9565-4cc6-bdce-b89a037c76b1)
+ Call ID: 4646c827-9565-4cc6-bdce-b89a037c76b1
   Args:
+    source: Tatiana von Preussen
     literal_type: xsd:integer
-    literal_value: 1928
-    source: Prince_Nikola_of_Yugoslavia
     relation: :hasBirthYear
-  AddLiteral (f5b918d0-ae2a-4544-8ee6-03a63d294e38)
- Call ID: f5b918d0-ae2a-4544-8ee6-03a63d294e38
+    literal_value: 1980
+  AssignClass (1c85f48a-db5d-4107-87b7-b476d4c2f2c0)
+ Call ID: 1c85f48a-db5d-4107-87b7-b476d4c2f2c0
   Args:
-    source: Prince_Nikola_of_Yugoslavia
-    relation: :hasDeathYear
+    type: :Man
+    source: Prince Andreas of Prussia
+  AssignClass (59423a0c-4b85-4691-8030-0e305a8b625e)
+ Call ID: 59423a0c-4b85-4691-8030-0e305a8b625e
+  Args:
+    type: :Person
+    source: Prince Andreas of Prussia
+  AssignClass (ce987ff4-f953-4271-ae5c-10d84ed09edd)
+ Call ID: ce987ff4-f953-4271-ae5c-10d84ed09edd
+  Args:
+    source: Alexandra Blahova
+    type: :Woman
+  AssignClass (7a50e2ed-ca2d-4eec-a600-b7aa5d7789e2)
+ Call ID: 7a50e2ed-ca2d-4eec-a600-b7aa5d7789e2
+  Args:
+    type: :Person
+    source: Alexandra Blahova
+  AddTriple (72ffa993-6310-4295-95cf-a2fbd234677c)
+ Call ID: 72ffa993-6310-4295-95cf-a2fbd234677c
+  Args:
+    relation: :hasFather
+    target: Prince Andreas of Prussia
+    source: Tatiana von Preussen
+  AddTriple (7d9cc27c-79a9-423d-a71b-e6fd2d875f05)
+ Call ID: 7d9cc27c-79a9-423d-a71b-e6fd2d875f05
+  Args:
+    relation: :hasMother
+    target: Alexandra Blahova
+    source: Tatiana von Preussen
+  AssignClass (291fd521-b152-4593-a22f-b75dac9084a9)
+ Call ID: 291fd521-b152-4593-a22f-b75dac9084a9
+  Args:
+    type: :Man
+    source: Prince Frederick of Prussia
+  AssignClass (83aa153b-b93a-4838-a9b4-44a130bb0330)
+ Call ID: 83aa153b-b93a-4838-a9b4-44a130bb0330
+  Args:
+    type: :Person
+    source: Prince Frederick of Prussia
+  AssignClass (8249ffa9-991d-4c12-8400-f23c4b11c6c7)
+ Call ID: 8249ffa9-991d-4c12-8400-f23c4b11c6c7
+  Args:
+    source: Lady Brigid Guinness
+    type: :Woman
+  AssignClass (ee08644d-d373-4f81-81c7-aa05066cd8ec)
+ Call ID: ee08644d-d373-4f81-81c7-aa05066cd8ec
+  Args:
+    source: Lady Brigid Guinness
+    type: :Person
+  AddTriple (d183d17e-7c78-4a70-a73b-c78ebdb13742)
+ Call ID: d183d17e-7c78-4a70-a73b-c78ebdb13742
+  Args:
+    source: Prince Andreas of Prussia
+    target: Prince Frederick of Prussia
+    relation: :hasFather
+  AddTriple (9c677fa2-2ff3-4164-a4c2-10832acc327b)
+ Call ID: 9c677fa2-2ff3-4164-a4c2-10832acc327b
+  Args:
+    relation: :hasMother
+    target: Lady Brigid Guinness
+    source: Prince Andreas of Prussia
+  AssignClass (3365f014-bc55-4818-bf6e-11acdff4215d)
+ Call ID: 3365f014-bc55-4818-bf6e-11acdff4215d
+  Args:
+    source: Philip Womack
+    type: :Man
+  AssignClass (3c48281c-2f69-4667-a695-a07bbecfe097)
+ Call ID: 3c48281c-2f69-4667-a695-a07bbecfe097
+  Args:
+    type: :Person
+    source: Philip Womack
+  AddLiteral (de1b7127-4c3b-46c7-94b8-b22ff995491e)
+ Call ID: de1b7127-4c3b-46c7-94b8-b22ff995491e
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 2014
     literal_type: xsd:integer
-    literal_value: 1954
-  AddLiteral (1a3c6b08-5fc3-4032-8448-5a87c0bc8a17)
- Call ID: 1a3c6b08-5fc3-4032-8448-5a87c0bc8a17
+    source: Tatiana von Preussen
+  AddTriple (5cd7c7b2-02ac-4a76-bb3b-3fcae6f14d2e)
+ Call ID: 5cd7c7b2-02ac-4a76-bb3b-3fcae6f14d2e
   Args:
-    literal_value: Prince Nicholas
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Prince_Nikola_of_Yugoslavia
-  AddLiteral (1ac02bee-7ea8-4376-bbf7-9692ce0d52b3)
- Call ID: 1ac02bee-7ea8-4376-bbf7-9692ce0d52b3
-  Args:
-    literal_value: Nikola Karađorđević
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Prince_Nikola_of_Yugoslavia
-  AddLiteral (7722098d-e67c-4e78-a177-0486dbd99373)
- Call ID: 7722098d-e67c-4e78-a177-0486dbd99373
-  Args:
-    literal_type: xsd:string
-    literal_value: Nicky
-    source: Prince_Nikola_of_Yugoslavia
-    relation: :knownAs
-  AssignClass (ef21362a-4d46-4134-8ac3-a6da142bf673)
- Call ID: ef21362a-4d46-4134-8ac3-a6da142bf673
+    relation: :hasRelation
+    target: Philip Womack
+    source: Tatiana von Preussen
+  AssignClass (703517b5-3357-4c67-9f50-526558a6f480)
+ Call ID: 703517b5-3357-4c67-9f50-526558a6f480
   Args:
     type: :Man
-    source: Prince_Paul_of_Yugoslavia
-  AssignClass (acdd9a9b-8d6b-40a6-be8a-028eb950f7f8)
- Call ID: acdd9a9b-8d6b-40a6-be8a-028eb950f7f8
+    source: Arthur Frederick Richard Womack von Preussen
+  AssignClass (2f75e021-f10e-4dab-a3c2-9003964c3e9d)
+ Call ID: 2f75e021-f10e-4dab-a3c2-9003964c3e9d
   Args:
+    source: Arthur Frederick Richard Womack von Preussen
     type: :Person
-    source: Prince_Paul_of_Yugoslavia
-  AssignClass (f31f232a-ccc8-442a-ae4f-b29cc2ed24c4)
- Call ID: f31f232a-ccc8-442a-ae4f-b29cc2ed24c4
+  AddLiteral (dda8d18f-7cc2-418c-97b7-e3b8bdd2dd9c)
+ Call ID: dda8d18f-7cc2-418c-97b7-e3b8bdd2dd9c
   Args:
-    type: :Woman
-    source: Princess_Olga_of_Greece_and_Denmark
-  AssignClass (b6cad7dc-49f3-40fa-a600-df6e2d5e28e2)
- Call ID: b6cad7dc-49f3-40fa-a600-df6e2d5e28e2
+    literal_value: 2015
+    relation: :hasBirthYear
+    source: Arthur Frederick Richard Womack von Preussen
+    literal_type: xsd:integer
+  AddTriple (1c48f44e-68de-4e16-bf4a-fea45a07038c)
+ Call ID: 1c48f44e-68de-4e16-bf4a-fea45a07038c
   Args:
-    type: :Person
-    source: Princess_Olga_of_Greece_and_Denmark
-  AddTriple (0f1c0c68-5e83-4d95-8c5b-f18b8ff8581c)
- Call ID: 0f1c0c68-5e83-4d95-8c5b-f18b8ff8581c
-  Args:
-    target: Prince_Paul_of_Yugoslavia
+    target: Philip Womack
+    source: Arthur Frederick Richard Womack von Preussen
     relation: :hasFather
-    source: Prince_Nikola_of_Yugoslavia
-  AddTriple (370e2f46-26fd-421f-be5b-89e1a487311b)
- Call ID: 370e2f46-26fd-421f-be5b-89e1a487311b
+  AddTriple (1678b27c-b652-4b01-bec9-54a3d553e72a)
+ Call ID: 1678b27c-b652-4b01-bec9-54a3d553e72a
   Args:
-    source: Prince_Nikola_of_Yugoslavia
+    source: Arthur Frederick Richard Womack von Preussen
+    target: Tatiana von Preussen
     relation: :hasMother
-    target: Princess_Olga_of_Greece_and_Denmark
-  AssignClass (ed37e762-ae82-40ad-a088-2759178bf112)
- Call ID: ed37e762-ae82-40ad-a088-2759178bf112
-  Args:
-    type: :Man
-    source: Prince_Alexander
-  AssignClass (4dc9c03c-bbb8-4737-b944-fab2db62c007)
- Call ID: 4dc9c03c-bbb8-4737-b944-fab2db62c007
-  Args:
-    type: :Person
-    source: Prince_Alexander
-  AddTriple (35414c7a-6e94-40c7-ab26-726859d71a99)
- Call ID: 35414c7a-6e94-40c7-ab26-726859d71a99
-  Args:
-    source: Prince_Nikola_of_Yugoslavia
-    relation: :hasBrother
-    target: Prince_Alexander
-  AssignClass (b0606bc0-8d43-44fc-a55a-fa3375d306d7)
- Call ID: b0606bc0-8d43-44fc-a55a-fa3375d306d7
+  AssignClass (b4aae046-85c1-4024-9601-e908f7991091)
+ Call ID: b4aae046-85c1-4024-9601-e908f7991091
   Args:
     type: :Woman
-    source: Princess_Elizabeth
-  AssignClass (a4eb38eb-43ac-431a-8c11-c14c662113f3)
- Call ID: a4eb38eb-43ac-431a-8c11-c14c662113f3
+    source: Xenia Alexandra Selena Womack von Preussen
+  AssignClass (cf16eea7-96d6-41ba-b573-8966ec1a30ff)
+ Call ID: cf16eea7-96d6-41ba-b573-8966ec1a30ff
   Args:
+    source: Xenia Alexandra Selena Womack von Preussen
     type: :Person
-    source: Princess_Elizabeth
-  AddTriple (317d2f2c-e969-4e2d-aee0-6b4bbe6df0d5)
- Call ID: 317d2f2c-e969-4e2d-aee0-6b4bbe6df0d5
+  AddLiteral (1a1de904-3358-4d98-bee3-23bc4ebb7f07)
+ Call ID: 1a1de904-3358-4d98-bee3-23bc4ebb7f07
   Args:
-    relation: :hasSister
-    target: Princess_Elizabeth
-    source: Prince_Nikola_of_Yugoslavia
-  AssignClass (a2d42d70-cb30-4c21-a7f2-6f5e2c539e61)
- Call ID: a2d42d70-cb30-4c21-a7f2-6f5e2c539e61
+    relation: :hasBirthYear
+    literal_value: 2020
+    source: Xenia Alexandra Selena Womack von Preussen
+    literal_type: xsd:integer
+  AddTriple (af1ab95b-45ec-4c97-ab61-6db58442d7ed)
+ Call ID: af1ab95b-45ec-4c97-ab61-6db58442d7ed
+  Args:
+    target: Philip Womack
+    source: Xenia Alexandra Selena Womack von Preussen
+    relation: :hasFather
+  AddTriple (1bbfec91-4dfb-41ae-9e23-39f18b066e0d)
+ Call ID: 1bbfec91-4dfb-41ae-9e23-39f18b066e0d
+  Args:
+    relation: :hasMother
+    source: Xenia Alexandra Selena Womack von Preussen
+    target: Tatiana von Preussen
+  AssignClass (4954835d-19d8-459c-b99e-ceb9a33660bd)
+ Call ID: 4954835d-19d8-459c-b99e-ceb9a33660bd
   Args:
     type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (9a756d3c-7b01-4141-82ec-bae5d056e874)
- Call ID: 9a756d3c-7b01-4141-82ec-bae5d056e874
+    source: Amalia Maria Brigid Womack von Preussen
+  AssignClass (f21e1b93-e93b-4d88-8cf7-4f08479353e3)
+ Call ID: f21e1b93-e93b-4d88-8cf7-4f08479353e3
   Args:
     type: :Person
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (76aa49ee-90ce-4640-81ea-353e8d581580)
- Call ID: 76aa49ee-90ce-4640-81ea-353e8d581580
+    source: Amalia Maria Brigid Womack von Preussen
+  AddLiteral (a3f85162-4a76-4abb-9471-e4ebad85759d)
+ Call ID: a3f85162-4a76-4abb-9471-e4ebad85759d
   Args:
-    type: :Woman
-    source: Princess_Elizabeth_Countess_of_Toerring_Jettenbach
-  AssignClass (5f6cb88f-95b4-41ab-bc13-c00f35d85fdb)
- Call ID: 5f6cb88f-95b4-41ab-bc13-c00f35d85fdb
-  Args:
-    type: :Person
-    source: Princess_Elizabeth_Countess_of_Toerring_Jettenbach
-  AssignClass (ed4f6d38-91d4-428a-9994-7fd1c55fd78e)
- Call ID: ed4f6d38-91d4-428a-9994-7fd1c55fd78e
-  Args:
-    type: :Woman
-    source: Princess_Marina_Duchess_of_Kent
-  AssignClass (0e62355a-fb0f-4b40-95dd-a7347c2f4777)
- Call ID: 0e62355a-fb0f-4b40-95dd-a7347c2f4777
-  Args:
-    type: :Person
-    source: Princess_Marina_Duchess_of_Kent
-  AssignClass (8dcf6a3f-b1a0-4d8d-8dc2-408922e65ba2)
- Call ID: 8dcf6a3f-b1a0-4d8d-8dc2-408922e65ba2
-  Args:
-    type: :Man
-    source: Arsen_Karađorđević
-  AssignClass (84324ec6-2e06-4f1d-876e-527a57589c4a)
- Call ID: 84324ec6-2e06-4f1d-876e-527a57589c4a
-  Args:
-    type: :Person
-    source: Arsen_Karađorđević
-  AssignClass (4570dde9-146d-4c6e-8409-911f33b48edc)
- Call ID: 4570dde9-146d-4c6e-8409-911f33b48edc
-  Args:
-    type: :Woman
-    source: Princess_Aurora_Pavlovna_Demidova_di_San_Donato
-  AssignClass (ffe2e8c0-bf33-4094-9525-36c376bc61e2)
- Call ID: ffe2e8c0-bf33-4094-9525-36c376bc61e2
-  Args:
-    type: :Person
-    source: Princess_Aurora_Pavlovna_Demidova_di_San_Donato
-  AssignClass (73cf7420-a4e0-4813-b558-2d705c15aad2)
- Call ID: 73cf7420-a4e0-4813-b558-2d705c15aad2
-  Args:
-    type: :Man
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (acbd129e-28a8-458d-b5d1-f23b857427d8)
- Call ID: acbd129e-28a8-458d-b5d1-f23b857427d8
-  Args:
-    type: :Person
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AddTriple (f488ab95-a550-4329-85b4-c69587c3b356)
- Call ID: f488ab95-a550-4329-85b4-c69587c3b356
+    literal_type: xsd:integer
+    source: Amalia Maria Brigid Womack von Preussen
+    literal_value: 2020
+    relation: :hasBirthYear
+  AddTriple (76755011-1c96-4529-b395-62b710281a90)
+ Call ID: 76755011-1c96-4529-b395-62b710281a90
   Args:
     relation: :hasFather
-    target: Arsen_Karađorđević
-    source: Prince_Paul_of_Yugoslavia
-  AddTriple (d6662bfc-df86-4bd2-9072-18fb45e746a6)
- Call ID: d6662bfc-df86-4bd2-9072-18fb45e746a6
+    source: Amalia Maria Brigid Womack von Preussen
+    target: Philip Womack
+  AddTriple (c173cf9d-9e70-48c0-b272-b775b786ba8a)
+ Call ID: c173cf9d-9e70-48c0-b272-b775b786ba8a
   Args:
-    source: Prince_Paul_of_Yugoslavia
     relation: :hasMother
-    target: Princess_Aurora_Pavlovna_Demidova_di_San_Donato
-  AddTriple (0368c8ea-a1a2-4289-837c-529286645b3b)
- Call ID: 0368c8ea-a1a2-4289-837c-529286645b3b
-  Args:
-    relation: :hasFather
-    target: Prince_Nicholas_of_Greece_and_Denmark
-    source: Princess_Olga_of_Greece_and_Denmark
-  AddTriple (a73511bf-6ce2-45d6-8571-8066124f7870)
- Call ID: a73511bf-6ce2-45d6-8571-8066124f7870
-  Args:
-    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    relation: :hasMother
-    source: Princess_Olga_of_Greece_and_Denmark
-  Finish (b22e0f9b-2bba-45a2-acdc-0b9fe69cd739)
- Call ID: b22e0f9b-2bba-45a2-acdc-0b9fe69cd739
+    target: Tatiana von Preussen
+    source: Amalia Maria Brigid Womack von Preussen
+  Finish (a580e131-4f65-42e5-83ea-35887008b174)
+ Call ID: a580e131-4f65-42e5-83ea-35887008b174
   Args:

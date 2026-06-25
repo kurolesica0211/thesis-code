@@ -85,54 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-India Riven Oxenberg (born June 7, 1991) is an American actress and documentary film producer.
-A granddaughter of Princess Elizabeth of Yugoslavia, she is a relative of the House of Karađorđević, the former royal family of Serbia and, later, Yugoslavia.
-Oxenberg began her career as a child actress, with small roles in film and television projects that her mother, Catherine Oxenberg, and then-stepfather, Casper Van Dien, were involved in.
-As a teenager, she was a cast member of the reality television series I Married a Princess.
-From 2011 to 2018, Oxenberg was involved in NXIVM, an American multi-level marketing company that was later exposed as a cult.
-Early life and education
+Princess Alexandrine Irene of Prussia (7 April 1915 – 2 October 1980) was the elder daughter and fifth child of Wilhelm, German Crown Prince, and Cecilie of Mecklenburg-Schwerin.
+Her grandparents were Wilhelm II, German Emperor and his wife Augusta Victoria of Schleswig-Holstein, and Frederick Francis III of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
+Alexandrine was a member of the House of Hohenzollern.
+She was a great-great-granddaughter of Queen Victoria.
+Life
 
-Oxenberg was born on June 7, 1991, to actress Catherine Oxenberg and William Weitz Shaffer.
-Oxenberg's father was arrested in 1992 for smuggling marijuana from Thailand, reportedly profiting $50 million from drug trading.
-Her maternal grandparents are Princess Elizabeth of Yugoslavia and Howard Oxenberg, a Jewish dress manufacturer.
-As a great-granddaughter of Prince Regent Paul of Yugoslavia (Elizabeth's father), Oxenberg is a descendant of the House of Karađorđević, which ruled Serbia and Yugoslavia.
-Oxenberg is also a relative of the British royal family, the Danish royal family, and the Greek royal family through her great-grandmother, Princess Olga of Greece and Denmark.
-She is a niece of writer and fashion designer Christina Oxenberg.
-In 2008, Oxenberg was presented to society at Le Bal des débutantes at the Hôtel de Crillon in Paris.
-She was one of two descendants of the Karađorđević dynasty to make her debut at Le Bal that year, alongside her cousin Victoria de Silva, the daughter of Princess Katarina and Sir Desmond de Silva.
-Career
-
-Oxenberg's first film was the 2001 television drama The Miracle of the Cards.
-In 2002, Oxenberg played the role of Mattie in the science fiction television film The Vector File.
-Oxenberg was a cast member on the 2005 Lifetime reality television series I Married a Princess, which followed her family while her mother was married to Casper Van Dien.
-In 2009, she had a small role in the Disney film Princess Protection Program.
-Personal life
-
-In 2018, Oxenberg met Patrick D'Ignazio, a chef, while working as a manager for a restaurant in New York City.
-Oxenberg and D’Ignazio had their first child, a girl, in 2024.
-NXIVM
-
-After attending college for one year, Oxenberg, alongside her mother, enrolled in a self-help entrepreneurship course hosted by NXIVM, following a recommendation from a family friend.
-While they initially started the program together, Oxenberg's mother eventually withdrew.
-In January 2015, after five years in NXIVM, Oxenberg was approached by Allison Mack about joining a secret sorority, "DOS".
-In DOS, Mack became a mentor to Oxenberg.
-Oxenberg was instructed to provide personal family secrets and pose for nude photographs for Mack, who also limited the amount of food Oxenberg could eat and required her to cook and clean for her while living with Mack in Albany, New York.
-Throughout this process, Oxenberg was groomed to become a sexual partner for NXIVM's founder and the leader of DOS, Keith Raniere.
-In January 2016, Oxenberg was held down and branded with the initials of Raniere.
-Oxenberg left NXIVM in 2018.
-While Oxenberg was involved in NXIVM, her mother Catherine tried to get her out of the organization and expose the cult through media in 2017.
-In 2018, Catherine wrote the book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult.
-In 2019, Catherine produced the Lifetime television movie Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter.
-Oxenberg officially left NXIVM in the summer of 2018 and moved back to Malibu with her mother.
-Oxenberg's time in the cult was discussed in the HBO 2020 documentary The Vow.
-Oxenberg produced and starred in the 2020 Starz documentary series Seduced: Inside the NXIVM Cult.
-Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscription "ancora imparo" (i'm still learning) by a tattoo artist in New York City's East Village.
+Alexandrine was born at the Kronprinzenpalais in Berlin.
+She followed older brothers Wilhelm, Louis Ferdinand, Hubertus, and Frederick.
+Alexandrine's only sister, Cecilie, was born in 1917.
+It became clear shortly after Alexandrine's birth that she had Down syndrome.
+Unlike other disabled royal children, Alexandrine was not hidden away.
+As a teenager, Alexandrine attended the Trüpersche Sonderschule, a school dedicated to the education of children with special needs.
+Alexandrine celebrated her confirmation along with her sister Cecilie in October 1934.
+Alexandrine lived most of her later life in Bavaria, first in Pöcking and later near Lake Starnberg, where she was visited there regularly by her family, particularly her brother Louis Ferdinand.
+Alexandrine died on 2 October 1980.
+She was buried near her parents and brother Frederick at Hohenzollern Castle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -148,39 +124,9 @@ Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -195,6 +141,23 @@ Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -212,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -310,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -322,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -330,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -368,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -383,244 +449,149 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9890d02d-465c-4d84-b969-d2205920da1b)
- Call ID: 9890d02d-465c-4d84-b969-d2205920da1b
-  Args:
-    type: :Person
-    source: India Riven Oxenberg
-  AssignClass (e5a29c9b-4868-4fa2-b2f3-4099f35e634a)
- Call ID: e5a29c9b-4868-4fa2-b2f3-4099f35e634a
+  AssignClass (efb05e58-5370-4e12-b760-001874d8d767)
+ Call ID: efb05e58-5370-4e12-b760-001874d8d767
   Args:
     type: :Woman
-    source: India Riven Oxenberg
-  AddLiteral (ab7c4ed0-aa70-47de-a623-f65abe38e7ac)
- Call ID: ab7c4ed0-aa70-47de-a623-f65abe38e7ac
+    source: :Alexandrine_of_Prussia
+  AssignClass (3a6b47e5-9dd6-4028-ba06-a3da1a78e135)
+ Call ID: 3a6b47e5-9dd6-4028-ba06-a3da1a78e135
+  Args:
+    source: :Wilhelm_German_Crown_Prince
+    type: :Man
+  AssignClass (fb636bb8-f0c1-4f9c-93bd-4afc7e8fa022)
+ Call ID: fb636bb8-f0c1-4f9c-93bd-4afc7e8fa022
+  Args:
+    source: :Cecilie_of_Mecklenburg-Schwerin
+    type: :Woman
+  AssignClass (accd95c4-7242-4a8d-a94b-f118a1b84505)
+ Call ID: accd95c4-7242-4a8d-a94b-f118a1b84505
+  Args:
+    source: :Wilhelm_II_German_Emperor
+    type: :Man
+  AssignClass (232b0aed-03ff-49c8-a0b5-491aa55d9532)
+ Call ID: 232b0aed-03ff-49c8-a0b5-491aa55d9532
+  Args:
+    type: :Woman
+    source: :Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (5b2bf0ce-3289-421f-8ff4-6872abf890bf)
+ Call ID: 5b2bf0ce-3289-421f-8ff4-6872abf890bf
+  Args:
+    source: :Frederick_Francis_III_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (7155258e-da96-4df7-97f9-8d0eeefc381b)
+ Call ID: 7155258e-da96-4df7-97f9-8d0eeefc381b
+  Args:
+    source: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
+    type: :Woman
+  AssignClass (0dd1dac5-3e46-4534-b8f8-c0cfa9ff94ee)
+ Call ID: 0dd1dac5-3e46-4534-b8f8-c0cfa9ff94ee
+  Args:
+    source: :Wilhelm_brother
+    type: :Man
+  AssignClass (3ca3dfe8-b8b9-439b-a30a-e72aa027ce23)
+ Call ID: 3ca3dfe8-b8b9-439b-a30a-e72aa027ce23
+  Args:
+    type: :Man
+    source: :Louis_Ferdinand_brother
+  AssignClass (596351b5-3887-4246-8625-bbf7242760a9)
+ Call ID: 596351b5-3887-4246-8625-bbf7242760a9
+  Args:
+    source: :Hubertus_brother
+    type: :Man
+  AssignClass (e07ddf33-7fbd-483f-bc42-3a91e1a4de58)
+ Call ID: e07ddf33-7fbd-483f-bc42-3a91e1a4de58
+  Args:
+    type: :Man
+    source: :Frederick_brother
+  AssignClass (c7f24325-f855-4b78-beca-fd7dd5355503)
+ Call ID: c7f24325-f855-4b78-beca-fd7dd5355503
+  Args:
+    source: :Cecilie_sister
+    type: :Woman
+  AddLiteral (494f8076-12dc-4daa-805b-dc4d6e0c8c08)
+ Call ID: 494f8076-12dc-4daa-805b-dc4d6e0c8c08
   Args:
     literal_type: xsd:integer
-    literal_value: 1991
-    source: India Riven Oxenberg
+    source: :Alexandrine_of_Prussia
+    literal_value: 1915
     relation: :hasBirthYear
-  AssignClass (96ff4c0b-aa61-4392-9b63-bb6ea6eee8da)
- Call ID: 96ff4c0b-aa61-4392-9b63-bb6ea6eee8da
+  AddLiteral (e413620f-7755-40ff-a792-14fb8d3deb92)
+ Call ID: e413620f-7755-40ff-a792-14fb8d3deb92
   Args:
-    type: :Person
-    source: Catherine Oxenberg
-  AssignClass (5be2ef05-eed6-49a5-aeb3-2c89484b02fb)
- Call ID: 5be2ef05-eed6-49a5-aeb3-2c89484b02fb
+    literal_value: 1980
+    literal_type: xsd:integer
+    source: :Alexandrine_of_Prussia
+    relation: :hasDeathYear
+  AddTriple (dd493bb4-709a-4c25-ada0-20eec9b97483)
+ Call ID: dd493bb4-709a-4c25-ada0-20eec9b97483
   Args:
-    type: :Woman
-    source: Catherine Oxenberg
-  AssignClass (f1aca3b7-011b-4406-9eee-252c3c1e30e3)
- Call ID: f1aca3b7-011b-4406-9eee-252c3c1e30e3
-  Args:
-    type: :Person
-    source: William Weitz Shaffer
-  AssignClass (cf9a1247-fa97-4d0b-92a0-3a60793f272c)
- Call ID: cf9a1247-fa97-4d0b-92a0-3a60793f272c
-  Args:
-    type: :Man
-    source: William Weitz Shaffer
-  AddTriple (c9b9acf8-fe4a-4e6c-a9ab-51e3c951db14)
- Call ID: c9b9acf8-fe4a-4e6c-a9ab-51e3c951db14
-  Args:
-    source: India Riven Oxenberg
-    relation: :hasMother
-    target: Catherine Oxenberg
-  AddTriple (76488503-7e83-4bb8-b902-c75ec45e0665)
- Call ID: 76488503-7e83-4bb8-b902-c75ec45e0665
-  Args:
-    source: India Riven Oxenberg
+    source: :Alexandrine_of_Prussia
+    target: :Wilhelm_German_Crown_Prince
     relation: :hasFather
-    target: William Weitz Shaffer
-  AssignClass (d7ebd93a-248e-4a97-8f1d-585b3542d9d8)
- Call ID: d7ebd93a-248e-4a97-8f1d-585b3542d9d8
+  AddTriple (4111d555-8cef-48c7-9594-aa1d6de94692)
+ Call ID: 4111d555-8cef-48c7-9594-aa1d6de94692
   Args:
-    type: :Person
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (1eca247e-ef56-44fa-a7b7-5b06ace581f4)
- Call ID: 1eca247e-ef56-44fa-a7b7-5b06ace581f4
-  Args:
-    type: :Woman
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (7aa380b6-1912-4d95-ae14-3d7921cc77d9)
- Call ID: 7aa380b6-1912-4d95-ae14-3d7921cc77d9
-  Args:
-    type: :Person
-    source: Howard Oxenberg
-  AssignClass (11f2a81c-f3f1-4ece-af83-c55fb007c40a)
- Call ID: 11f2a81c-f3f1-4ece-af83-c55fb007c40a
-  Args:
-    type: :Man
-    source: Howard Oxenberg
-  AddTriple (ac1349aa-5c01-4373-b79c-8cbde82d83f3)
- Call ID: ac1349aa-5c01-4373-b79c-8cbde82d83f3
-  Args:
-    target: Princess Elizabeth of Yugoslavia
+    target: :Cecilie_of_Mecklenburg-Schwerin
     relation: :hasMother
-    source: Catherine Oxenberg
-  AddTriple (2c11b822-7db4-4639-a9c3-3067322e02b4)
- Call ID: 2c11b822-7db4-4639-a9c3-3067322e02b4
+    source: :Alexandrine_of_Prussia
+  AddTriple (34e3eb0d-71bc-46df-9cf7-4fe9db9777aa)
+ Call ID: 34e3eb0d-71bc-46df-9cf7-4fe9db9777aa
   Args:
+    source: :Wilhelm_German_Crown_Prince
+    target: :Wilhelm_II_German_Emperor
     relation: :hasFather
-    source: Catherine Oxenberg
-    target: Howard Oxenberg
-  AssignClass (718321d4-a687-44fb-ba45-8e6390170b30)
- Call ID: 718321d4-a687-44fb-ba45-8e6390170b30
+  AddTriple (3493558a-5a64-4adb-9f15-73cdec687e6e)
+ Call ID: 3493558a-5a64-4adb-9f15-73cdec687e6e
   Args:
-    type: :Person
-    source: Prince Regent Paul of Yugoslavia
-  AssignClass (d424a37d-2807-4633-a50a-c2ca415750fd)
- Call ID: d424a37d-2807-4633-a50a-c2ca415750fd
-  Args:
-    type: :Man
-    source: Prince Regent Paul of Yugoslavia
-  AddTriple (b9bdbdd8-6c26-4039-8f56-976499e262d5)
- Call ID: b9bdbdd8-6c26-4039-8f56-976499e262d5
-  Args:
-    relation: :hasFather
-    source: Princess Elizabeth of Yugoslavia
-    target: Prince Regent Paul of Yugoslavia
-  AssignClass (cfe0bab4-6487-407c-8324-7c3786e6be0c)
- Call ID: cfe0bab4-6487-407c-8324-7c3786e6be0c
-  Args:
-    type: :Person
-    source: Princess Olga of Greece and Denmark
-  AssignClass (4ef5c66b-8648-4e87-8d2b-c8a1dff5c720)
- Call ID: 4ef5c66b-8648-4e87-8d2b-c8a1dff5c720
-  Args:
-    type: :Woman
-    source: Princess Olga of Greece and Denmark
-  AddTriple (c90e264d-8ba2-47d8-a050-7c41cdbaeacd)
- Call ID: c90e264d-8ba2-47d8-a050-7c41cdbaeacd
-  Args:
-    source: Princess Elizabeth of Yugoslavia
+    source: :Wilhelm_German_Crown_Prince
     relation: :hasMother
-    target: Princess Olga of Greece and Denmark
-  AssignClass (63e7a49c-9eaf-45ab-aa42-f74eca8f0a73)
- Call ID: 63e7a49c-9eaf-45ab-aa42-f74eca8f0a73
+    target: :Augusta_Victoria_of_Schleswig-Holstein
+  AddTriple (a40f3077-3bac-4ba2-be62-0c572096ca80)
+ Call ID: a40f3077-3bac-4ba2-be62-0c572096ca80
   Args:
-    type: :Person
-    source: Christina Oxenberg
-  AssignClass (849da4e3-51b9-46fe-bd5a-477e053286ba)
- Call ID: 849da4e3-51b9-46fe-bd5a-477e053286ba
-  Args:
-    type: :Woman
-    source: Christina Oxenberg
-  AddTriple (760ea4c6-1d2b-48a5-86f2-9188d16ba14f)
- Call ID: 760ea4c6-1d2b-48a5-86f2-9188d16ba14f
-  Args:
-    source: Catherine Oxenberg
-    relation: :hasSister
-    target: Christina Oxenberg
-  AssignClass (d50606fe-59ed-448c-974b-ca87ed462f67)
- Call ID: d50606fe-59ed-448c-974b-ca87ed462f67
-  Args:
-    type: :Person
-    source: Casper Van Dien
-  AssignClass (8c94b402-20b8-4ede-a133-7f2ead289142)
- Call ID: 8c94b402-20b8-4ede-a133-7f2ead289142
-  Args:
-    type: :Man
-    source: Casper Van Dien
-  AssignClass (f123093d-6cf0-4774-9427-5ece7fa4270b)
- Call ID: f123093d-6cf0-4774-9427-5ece7fa4270b
-  Args:
-    type: :Person
-    source: Patrick D'Ignazio
-  AssignClass (fabf68f2-f00f-4826-8b51-e7dcc099fbdb)
- Call ID: fabf68f2-f00f-4826-8b51-e7dcc099fbdb
-  Args:
-    type: :Man
-    source: Patrick D'Ignazio
-  AssignClass (497f3e3b-543c-49c0-8397-5ee9012fe52f)
- Call ID: 497f3e3b-543c-49c0-8397-5ee9012fe52f
-  Args:
-    type: :Person
-    source: Victoria de Silva
-  AssignClass (d9bd8f01-2efe-46ca-bfcf-8758a8e58965)
- Call ID: d9bd8f01-2efe-46ca-bfcf-8758a8e58965
-  Args:
-    type: :Woman
-    source: Victoria de Silva
-  AssignClass (f4e774c6-0df8-420d-8faa-d17fc0d1be56)
- Call ID: f4e774c6-0df8-420d-8faa-d17fc0d1be56
-  Args:
-    type: :Person
-    source: Princess Katarina
-  AssignClass (f272464b-a7bd-4c9c-b0f0-69d1614525c4)
- Call ID: f272464b-a7bd-4c9c-b0f0-69d1614525c4
-  Args:
-    type: :Woman
-    source: Princess Katarina
-  AssignClass (b86b46ea-9628-4666-8100-077ca30b20f4)
- Call ID: b86b46ea-9628-4666-8100-077ca30b20f4
-  Args:
-    type: :Person
-    source: Sir Desmond de Silva
-  AssignClass (10640ebd-bfd6-460f-beca-32a4a2066b7b)
- Call ID: 10640ebd-bfd6-460f-beca-32a4a2066b7b
-  Args:
-    type: :Man
-    source: Sir Desmond de Silva
-  AddTriple (dd8f167f-506a-43e3-b726-cc0337d188a1)
- Call ID: dd8f167f-506a-43e3-b726-cc0337d188a1
-  Args:
-    source: Victoria de Silva
-    relation: :hasMother
-    target: Princess Katarina
-  AddTriple (e3e1dfed-2be7-4a2c-83c4-c9ee065a7ccd)
- Call ID: e3e1dfed-2be7-4a2c-83c4-c9ee065a7ccd
-  Args:
-    target: Sir Desmond de Silva
-    source: Victoria de Silva
+    source: :Cecilie_of_Mecklenburg-Schwerin
+    target: :Frederick_Francis_III_of_Mecklenburg-Schwerin
     relation: :hasFather
-  Finish (8e0df978-9926-4838-9a32-8d6feceb238d)
- Call ID: 8e0df978-9926-4838-9a32-8d6feceb238d
+  AddTriple (38f3e86e-600b-4386-abb5-705e9a69f6a0)
+ Call ID: 38f3e86e-600b-4386-abb5-705e9a69f6a0
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasMother
+    target: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
+    source: :Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (8375137a-cbac-48ae-9410-bb91aa59eb2a)
+ Call ID: 8375137a-cbac-48ae-9410-bb91aa59eb2a
+  Args:
+    source: :Alexandrine_of_Prussia
+    target: :Wilhelm_brother
+    relation: :isSiblingOf
+  AddTriple (cdecdda4-95e5-4a43-b60c-b546f0a3eee7)
+ Call ID: cdecdda4-95e5-4a43-b60c-b546f0a3eee7
+  Args:
+    source: :Alexandrine_of_Prussia
+    target: :Louis_Ferdinand_brother
+    relation: :isSiblingOf
+  AddTriple (baab10aa-6d9c-4585-b25e-3a0421e9d127)
+ Call ID: baab10aa-6d9c-4585-b25e-3a0421e9d127
+  Args:
+    target: :Hubertus_brother
+    relation: :isSiblingOf
+    source: :Alexandrine_of_Prussia
+  AddTriple (95ab969f-96c0-4f0d-87fb-80a65ccd57ef)
+ Call ID: 95ab969f-96c0-4f0d-87fb-80a65ccd57ef
+  Args:
+    source: :Alexandrine_of_Prussia
+    target: :Frederick_brother
+    relation: :isSiblingOf
+  AddTriple (ff0f3462-83f0-4f4d-8677-2623a2c0a423)
+ Call ID: ff0f3462-83f0-4f4d-8677-2623a2c0a423
+  Args:
+    source: :Alexandrine_of_Prussia
+    target: :Cecilie_sister
+    relation: :isSiblingOf
+  Finish (2c8f9855-5c6d-4ac0-bd1c-2c5e08074563)
+ Call ID: 2c8f9855-5c6d-4ac0-bd1c-2c5e08074563
+  Args:
 
 ================================= Tool Message =================================
 
@@ -725,54 +696,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Casper_Van_Dien a :Man,
-          :Person .
+  data:Alexandrine_of_Prussia a :Woman ;
+      :hasBirthYear 1915 ;
+      :hasDeathYear 1980 ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+      :isSiblingOf data:Cecilie_sister,
+          data:Frederick_brother,
+          data:Hubertus_brother,
+          data:Louis_Ferdinand_brother,
+          data:Wilhelm_brother .
 
-  data:India_Riven_Oxenberg a :Person,
-          :Woman ;
-      :hasBirthYear 1991 ;
-      :hasFather data:William_Weitz_Shaffer ;
-      :hasMother data:Catherine_Oxenberg .
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
 
-  data:Patrick_D%27Ignazio a :Man,
-          :Person .
+  data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+      :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+      :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
 
-  data:Victoria_de_Silva a :Person,
-          :Woman ;
-      :hasFather data:Sir_Desmond_de_Silva ;
-      :hasMother data:Princess_Katarina .
+  data:Cecilie_sister a :Woman .
 
-  data:Catherine_Oxenberg a :Person,
-          :Woman ;
-      :hasFather data:Howard_Oxenberg ;
-      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
-      :hasSister data:Christina_Oxenberg .
+  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man .
 
-  data:Christina_Oxenberg a :Person,
-          :Woman .
+  data:Frederick_brother a :Man .
 
-  data:Howard_Oxenberg a :Man,
-          :Person .
+  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Woman .
 
-  data:Prince_Regent_Paul_of_Yugoslavia a :Man,
-          :Person .
+  data:Hubertus_brother a :Man .
 
-  data:Princess_Elizabeth_of_Yugoslavia a :Person,
-          :Woman ;
-      :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
-      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+  data:Louis_Ferdinand_brother a :Man .
 
-  data:Princess_Katarina a :Person,
-          :Woman .
+  data:Wilhelm_German_Crown_Prince a :Man ;
+      :hasFather data:Wilhelm_II_German_Emperor ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
 
-  data:Princess_Olga_of_Greece_and_Denmark a :Person,
-          :Woman .
+  data:Wilhelm_II_German_Emperor a :Man .
 
-  data:Sir_Desmond_de_Silva a :Man,
-          :Person .
-
-  data:William_Weitz_Shaffer a :Man,
-          :Person .
+  data:Wilhelm_brother a :Man .
 
 
 
@@ -784,206 +743,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7cc648cb-7c08-4b3c-8fc4-9441ad9dbed1)
- Call ID: 7cc648cb-7c08-4b3c-8fc4-9441ad9dbed1
+  ValidateShacl (d2b718cb-31cf-4223-99da-17c787f955c2)
+ Call ID: d2b718cb-31cf-4223-99da-17c787f955c2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value William_Weitz_Shaffer for the property :hasFather of India_Riven_Oxenberg is missing the required class :Man or :Ancestor.
+      The value node Wilhelm_II_German_Emperor for property hasFather of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Weitz_Shaffer, :Man)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Regent_Paul_of_Yugoslavia for the property :hasFather of Princess_Elizabeth_of_Yugoslavia is missing the required class :Man or :Ancestor.
+      The value node Augusta_Victoria_of_Schleswig-Holstein for property hasMother of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Howard_Oxenberg for the property :hasFather of Catherine_Oxenberg is missing the required class :Man or :Ancestor.
+      The value node Wilhelm_II_German_Emperor for property hasFather of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Howard_Oxenberg, :Man)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Sir_Desmond_de_Silva for the property :hasFather of Victoria_de_Silva is missing the required class :Man or :Ancestor.
+      The value node Frederick_Francis_III_of_Mecklenburg-Schwerin for property hasFather of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sir_Desmond_de_Silva, :Man)
+      AssignClass(Frederick_Francis_III_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Catherine_Oxenberg for the property :hasMother of India_Riven_Oxenberg is missing the required class :Woman or :Ancestor.
+      The value node Wilhelm_German_Crown_Prince for property hasFather of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Oxenberg, :Woman)
+      AssignClass(Wilhelm_German_Crown_Prince, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Olga_of_Greece_and_Denmark for the property :hasMother of Princess_Elizabeth_of_Yugoslavia is missing the required class :Woman or :Ancestor.
+      The value node Augusta_Victoria_of_Schleswig-Holstein for property hasMother of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Elizabeth_of_Yugoslavia for the property :hasMother of Catherine_Oxenberg is missing the required class :Woman or :Ancestor.
+      The value node Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property hasMother of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
+      AssignClass(Grand_Duchess_Anastasia_Mikhailovna_of_Russia, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Katarina for the property :hasMother of Victoria_de_Silva is missing the required class :Woman or :Ancestor.
+      The value node Cecilie_of_Mecklenburg-Schwerin for property hasMother of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Katarina, :Woman)
+      AssignClass(Cecilie_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value William_Weitz_Shaffer for the property :hasFather of India_Riven_Oxenberg is missing the required class :Man or :Ancestor.
+      The value node Wilhelm_II_German_Emperor for property hasFather of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Weitz_Shaffer, :Man)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Regent_Paul_of_Yugoslavia for the property :hasFather of Princess_Elizabeth_of_Yugoslavia is missing the required class :Man or :Ancestor.
+      The value node Frederick_Francis_III_of_Mecklenburg-Schwerin for property hasFather of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
+      AssignClass(Frederick_Francis_III_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Howard_Oxenberg for the property :hasFather of Catherine_Oxenberg is missing the required class :Man or :Ancestor.
+      The value node Wilhelm_German_Crown_Prince for property hasFather of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Howard_Oxenberg, :Man)
+      AssignClass(Wilhelm_German_Crown_Prince, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Sir_Desmond_de_Silva for the property :hasFather of Victoria_de_Silva is missing the required class :Man or :Ancestor.
+      The value node Augusta_Victoria_of_Schleswig-Holstein for property hasMother of node Wilhelm_German_Crown_Prince is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sir_Desmond_de_Silva, :Man)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Catherine_Oxenberg for the property :hasMother of India_Riven_Oxenberg is missing the required class :Woman or :Ancestor.
+      The value node Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property hasMother of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Oxenberg, :Woman)
+      AssignClass(Grand_Duchess_Anastasia_Mikhailovna_of_Russia, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Olga_of_Greece_and_Denmark for the property :hasMother of Princess_Elizabeth_of_Yugoslavia is missing the required class :Woman or :Ancestor.
+      The value node Cecilie_of_Mecklenburg-Schwerin for property hasMother of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
+      AssignClass(Cecilie_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Elizabeth_of_Yugoslavia for the property :hasMother of Catherine_Oxenberg is missing the required class :Woman or :Ancestor.
+      The value node Frederick_Francis_III_of_Mecklenburg-Schwerin for property hasFather of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
+      AssignClass(Frederick_Francis_III_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Katarina for the property :hasMother of Victoria_de_Silva is missing the required class :Woman or :Ancestor.
+      The value node Wilhelm_German_Crown_Prince for property hasFather of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Katarina, :Woman)
+      AssignClass(Wilhelm_German_Crown_Prince, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value William_Weitz_Shaffer for the property :hasFather of India_Riven_Oxenberg is missing the required class :Man or :Ancestor.
+      The value node Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property hasMother of node Cecilie_of_Mecklenburg-Schwerin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Weitz_Shaffer, :Man)
+      AssignClass(Grand_Duchess_Anastasia_Mikhailovna_of_Russia, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Regent_Paul_of_Yugoslavia for the property :hasFather of Princess_Elizabeth_of_Yugoslavia is missing the required class :Man or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Howard_Oxenberg for the property :hasFather of Catherine_Oxenberg is missing the required class :Man or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Howard_Oxenberg, :Man)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Sir_Desmond_de_Silva for the property :hasFather of Victoria_de_Silva is missing the required class :Man or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sir_Desmond_de_Silva, :Man)
-
-
-  Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Catherine_Oxenberg for the property :hasMother of India_Riven_Oxenberg is missing the required class :Woman or :Ancestor.
+      The value node Cecilie_of_Mecklenburg-Schwerin for property hasMother of node Alexandrine_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Catherine_Oxenberg, :Woman)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Olga_of_Greece_and_Denmark for the property :hasMother of Princess_Elizabeth_of_Yugoslavia is missing the required class :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Elizabeth_of_Yugoslavia for the property :hasMother of Catherine_Oxenberg is missing the required class :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Katarina for the property :hasMother of Victoria_de_Silva is missing the required class :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Katarina, :Woman)
+      AssignClass(Cecilie_of_Mecklenburg-Schwerin, :Ancestor)
 
 
 
@@ -992,49 +903,169 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (512c9f67-c3ba-481d-8fe6-53874f7f9dfa)
- Call ID: 512c9f67-c3ba-481d-8fe6-53874f7f9dfa
+  AssignClass (72a3c4e2-323d-4b54-888f-a17c958a4573)
+ Call ID: 72a3c4e2-323d-4b54-888f-a17c958a4573
   Args:
+    source: :Wilhelm_II_German_Emperor
     type: :Ancestor
-    source: William Weitz Shaffer
-  AssignClass (f74c8254-b3af-4a60-a46f-9df8f928a484)
- Call ID: f74c8254-b3af-4a60-a46f-9df8f928a484
+  AssignClass (890dcd1c-4577-403c-a3cd-2e56e838eca4)
+ Call ID: 890dcd1c-4577-403c-a3cd-2e56e838eca4
   Args:
+    source: :Augusta_Victoria_of_Schleswig-Holstein
     type: :Ancestor
-    source: Prince Regent Paul of Yugoslavia
-  AssignClass (f5c202f0-72bc-41d4-947d-0727c2f52c18)
- Call ID: f5c202f0-72bc-41d4-947d-0727c2f52c18
+  AssignClass (43db0e80-c9bc-4d69-ba86-83c0dac64238)
+ Call ID: 43db0e80-c9bc-4d69-ba86-83c0dac64238
   Args:
+    source: :Frederick_Francis_III_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Howard Oxenberg
-  AssignClass (404f2683-5eaf-4aeb-89f2-7b61b1ae1a30)
- Call ID: 404f2683-5eaf-4aeb-89f2-7b61b1ae1a30
+  AssignClass (7f72c8b1-f4d4-4320-abf9-e7bbed9ad64c)
+ Call ID: 7f72c8b1-f4d4-4320-abf9-e7bbed9ad64c
   Args:
+    source: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
     type: :Ancestor
-    source: Sir Desmond de Silva
-  AssignClass (4a2b703f-8045-4b63-a7f3-040db65fa0c2)
- Call ID: 4a2b703f-8045-4b63-a7f3-040db65fa0c2
+  AssignClass (00c010fd-72a5-4e1a-8fe7-bb0473a2b666)
+ Call ID: 00c010fd-72a5-4e1a-8fe7-bb0473a2b666
   Args:
+    source: :Wilhelm_German_Crown_Prince
     type: :Ancestor
-    source: Catherine Oxenberg
-  AssignClass (6127e280-0bdf-42a1-85cb-9f130a039938)
- Call ID: 6127e280-0bdf-42a1-85cb-9f130a039938
+  AssignClass (6eeb0149-b887-46ad-a9e4-c6932fda0eb9)
+ Call ID: 6eeb0149-b887-46ad-a9e4-c6932fda0eb9
   Args:
+    source: :Cecilie_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Princess Olga of Greece and Denmark
-  AssignClass (98b3a907-9801-4dc9-a37d-6ed5ed47df05)
- Call ID: 98b3a907-9801-4dc9-a37d-6ed5ed47df05
+  AddTriple (58686b00-e52c-413d-a2e0-5f3b4e0d4d38)
+ Call ID: 58686b00-e52c-413d-a2e0-5f3b4e0d4d38
   Args:
-    type: :Ancestor
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (34ace2b4-d9a5-442a-8881-1f4e1a4b434f)
- Call ID: 34ace2b4-d9a5-442a-8881-1f4e1a4b434f
+    target: :Female
+    source: :Alexandrine_of_Prussia
+    relation: :hasSex
+  AddTriple (565549e3-76c0-47af-befd-115aee204c82)
+ Call ID: 565549e3-76c0-47af-befd-115aee204c82
   Args:
-    type: :Ancestor
-    source: Princess Katarina
-  Finish (083c42c8-2e48-4428-85c2-988de84d0598)
- Call ID: 083c42c8-2e48-4428-85c2-988de84d0598
+    relation: :hasSex
+    source: :Wilhelm_German_Crown_Prince
+    target: :Male
+  AddTriple (9af01306-6b4c-4948-988b-0fdd049954d0)
+ Call ID: 9af01306-6b4c-4948-988b-0fdd049954d0
   Args:
+    source: :Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasSex
+    target: :Female
+  AddTriple (d3cc41dd-be0a-4170-b574-1c23cb90253c)
+ Call ID: d3cc41dd-be0a-4170-b574-1c23cb90253c
+  Args:
+    target: :Male
+    source: :Wilhelm_II_German_Emperor
+    relation: :hasSex
+  AddTriple (343c22e2-b263-4e92-9b02-8646262f8fa8)
+ Call ID: 343c22e2-b263-4e92-9b02-8646262f8fa8
+  Args:
+    target: :Female
+    source: :Augusta_Victoria_of_Schleswig-Holstein
+    relation: :hasSex
+  AddTriple (a3dfbd6a-ebab-444b-b139-558571f8d5eb)
+ Call ID: a3dfbd6a-ebab-444b-b139-558571f8d5eb
+  Args:
+    target: :Male
+    source: :Frederick_Francis_III_of_Mecklenburg-Schwerin
+    relation: :hasSex
+  AddTriple (ae764df3-15fd-4ad8-a02e-33d0ea0582b3)
+ Call ID: ae764df3-15fd-4ad8-a02e-33d0ea0582b3
+  Args:
+    source: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
+    relation: :hasSex
+    target: :Female
+  AddTriple (760e4cb8-a42d-4edf-9d08-3e808f1d70c1)
+ Call ID: 760e4cb8-a42d-4edf-9d08-3e808f1d70c1
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: :Wilhelm_brother
+  AddTriple (da675a9f-ab54-43af-9b5f-ce417e4592a5)
+ Call ID: da675a9f-ab54-43af-9b5f-ce417e4592a5
+  Args:
+    target: :Male
+    source: :Louis_Ferdinand_brother
+    relation: :hasSex
+  AddTriple (0523f76d-1a36-441c-9f6e-c1dd36a1f50d)
+ Call ID: 0523f76d-1a36-441c-9f6e-c1dd36a1f50d
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: :Hubertus_brother
+  AddTriple (ef8f4127-e0fa-406b-9a70-612206098e39)
+ Call ID: ef8f4127-e0fa-406b-9a70-612206098e39
+  Args:
+    source: :Frederick_brother
+    relation: :hasSex
+    target: :Male
+  AddTriple (3f29074b-4bd6-472e-9d25-f689156c8320)
+ Call ID: 3f29074b-4bd6-472e-9d25-f689156c8320
+  Args:
+    source: :Cecilie_sister
+    relation: :hasSex
+    target: :Female
+  AssignClass (0749e959-dba7-4a5c-b750-24cc027b828b)
+ Call ID: 0749e959-dba7-4a5c-b750-24cc027b828b
+  Args:
+    source: :Female
+    type: :Sex
+  AssignClass (9cfd9d68-bff4-40db-8a3c-2757ca0bbf45)
+ Call ID: 9cfd9d68-bff4-40db-8a3c-2757ca0bbf45
+  Args:
+    source: :Male
+    type: :Sex
+  Finish (c2c7c02d-6ae9-4091-806b-07db0ee528db)
+ Call ID: c2c7c02d-6ae9-4091-806b-07db0ee528db
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1071,62 +1102,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Casper_Van_Dien a :Man,
-          :Person .
+  data:Alexandrine_of_Prussia a :Woman ;
+      :hasBirthYear 1915 ;
+      :hasDeathYear 1980 ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+      :hasSex data:Female ;
+      :isSiblingOf data:Cecilie_sister,
+          data:Frederick_brother,
+          data:Hubertus_brother,
+          data:Louis_Ferdinand_brother,
+          data:Wilhelm_brother .
 
-  data:India_Riven_Oxenberg a :Person,
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
           :Woman ;
-      :hasBirthYear 1991 ;
-      :hasFather data:William_Weitz_Shaffer ;
-      :hasMother data:Catherine_Oxenberg .
+      :hasSex data:Female .
 
-  data:Patrick_D%27Ignazio a :Man,
-          :Person .
-
-  data:Victoria_de_Silva a :Person,
+  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
           :Woman ;
-      :hasFather data:Sir_Desmond_de_Silva ;
-      :hasMother data:Princess_Katarina .
+      :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+      :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+      :hasSex data:Female .
 
-  data:Catherine_Oxenberg a :Ancestor,
-          :Person,
+  data:Cecilie_sister a :Woman ;
+      :hasSex data:Female .
+
+  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Frederick_brother a :Man ;
+      :hasSex data:Male .
+
+  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
           :Woman ;
-      :hasFather data:Howard_Oxenberg ;
-      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
-      :hasSister data:Christina_Oxenberg .
+      :hasSex data:Female .
 
-  data:Christina_Oxenberg a :Person,
-          :Woman .
+  data:Hubertus_brother a :Man ;
+      :hasSex data:Male .
 
-  data:Howard_Oxenberg a :Ancestor,
-          :Man,
-          :Person .
+  data:Louis_Ferdinand_brother a :Man ;
+      :hasSex data:Male .
 
-  data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
-          :Man,
-          :Person .
+  data:Wilhelm_German_Crown_Prince a :Ancestor,
+          :Man ;
+      :hasFather data:Wilhelm_II_German_Emperor ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+      :hasSex data:Male .
 
-  data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
-      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+  data:Wilhelm_II_German_Emperor a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
 
-  data:Princess_Katarina a :Ancestor,
-          :Person,
-          :Woman .
+  data:Wilhelm_brother a :Man ;
+      :hasSex data:Male .
 
-  data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman .
+  data:Female a :Sex .
 
-  data:Sir_Desmond_de_Silva a :Ancestor,
-          :Man,
-          :Person .
-
-  data:William_Weitz_Shaffer a :Ancestor,
-          :Man,
-          :Person .
+  data:Male a :Sex .
 
 
 
@@ -1138,8 +1171,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (9860a57f-e07e-43ab-b0c2-566193109ab8)
- Call ID: 9860a57f-e07e-43ab-b0c2-566193109ab8
+  ValidateShacl (bab3e5b6-30ee-4abb-9ad1-7140af55d4b0)
+ Call ID: bab3e5b6-30ee-4abb-9ad1-7140af55d4b0
   Args:
 
 ================================= Tool Message =================================
@@ -1150,6 +1183,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (38d57900-43b9-4906-baf8-f553cef59c43)
- Call ID: 38d57900-43b9-4906-baf8-f553cef59c43
+  Finish (68eae3e8-8e7d-4f95-acf0-34c189f4813f)
+ Call ID: 68eae3e8-8e7d-4f95-acf0-34c189f4813f
   Args:

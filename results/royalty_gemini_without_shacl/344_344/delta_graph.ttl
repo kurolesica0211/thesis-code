@@ -2,31 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anastasia_Mikhailovna_of_Russia a :Woman ;
-    :hasSex data:Female .
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Woman ;
+    :isMotherOf data:PrinceChristopherOfGreeceAndDenmark .
 
-data:Frederick_Francis_III a :Man ;
-    :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
-    :hasBirthYear 1851 ;
-    :hasDeathYear 1897 ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMother data:Augusta_Reuss_of_Kostritz ;
-    :hasSex data:Male ;
-    :isFatherOf data:Frederick_Francis_IV .
+data:IsabelleDOrleans a :Woman ;
+    :isMotherOf data:FrancoiseDOrleans .
 
-data:Paul_I_of_Russia a :Man ;
-    :hasSex data:Male .
+data:JeanDOrleansDucDeGuise a :Man ;
+    :isFatherOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis .
 
-data:Augusta_Reuss_of_Kostritz a :Woman ;
-    :hasSex data:Female .
+data:KingChristianIXOfDenmark a :Man ;
+    :isFatherOf data:KingGeorgeIOfGreece .
 
-data:Frederick_Francis_II a :Man ;
-    :hasSex data:Male .
+data:PrinceMichaelOfGreeceAndDenmark a :Man ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2024 ;
+    :hasRelation data:MarinaKarella ;
+    :isChildOf data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :isMotherOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece .
 
-data:Frederick_Francis_IV a :Man ;
-    :hasSex data:Male .
+data:PrincessIsabella a :Woman ;
+    :hasRelation data:PrincePierreMurat .
 
-data:Female a :Sex .
+data:KingGeorgeIOfGreece a :Man ;
+    :isFatherOf data:PrinceChristopherOfGreeceAndDenmark .
 
-data:Male a :Sex .
+data:MarinaKarella a :Woman .
+
+data:PrinceAimoneOfSavoyAosta a :Man .
+
+data:PrincePierreMurat a :Man .
+
+data:PrincessAlexandraOfGreece a :Woman .
+
+data:PrincessOlgaOfGreece a :Woman ;
+    :hasRelation data:PrinceAimoneOfSavoyAosta .
+
+data:PrinceHenriCountOfParis a :Man .
+
+data:FrancoiseDOrleans a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1953 ;
+    :hasMarriageYear 1929 ;
+    :hasRelation data:PrinceChristopherOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceHenriCountOfParis .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Man ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1940 .
 

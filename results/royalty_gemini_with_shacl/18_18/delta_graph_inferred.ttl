@@ -1,0 +1,245 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Sofia a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Sofia ;
+    :hasSister data:Queen_Sofia ;
+    :isBloodrelationOf data:Queen_Sofia ;
+    :isSiblingOf data:Queen_Sofia ;
+    :isSisterOf data:Queen_Sofia .
+
+data:Infante_Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Infante_Juan_Count_of_Barcelona ;
+    :hasChild data:King_Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSon data:King_Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:King_Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infante_Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Infante_Juan_Count_of_Barcelona ;
+    :isFatherOf data:King_Juan_Carlos_I_of_Spain ;
+    :isParentOf data:King_Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infante_Juan_Count_of_Barcelona ;
+    :isUncleOf data:King_Juan_Carlos_I_of_Spain .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isAncestorOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies .
+
+data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :hasChild data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSon data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :isFatherOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isParentOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isSiblingOf data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :isUncleOf data:Prince_Pedro_Gastao_of_Orleans-Braganza .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Princess_Louise_of_Orleans ;
+    :hasDaughter data:Princess_Louise_of_Orleans ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isAncestorOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Louise_of_Orleans ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Princess_Louise_of_Orleans ;
+    :isParentOf data:Princess_Louise_of_Orleans ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Princess_Louise_of_Orleans .
+
+data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :hasBrother data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :hasFather data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :hasParent data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza ;
+    :isSiblingOf data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
+    :isSonOf data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza .
+
+data:Princess_Maria_de_las_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:King_Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSister data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSon data:King_Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:King_Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:King_Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isMotherOf data:King_Juan_Carlos_I_of_Spain ;
+    :isParentOf data:King_Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isSisterOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes .
+
+data:Princess_Louise_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Philippe_Count_of_Paris ;
+    :hasChild data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasParent data:Philippe_Count_of_Paris ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSister data:Princess_Louise_of_Orleans ;
+    :isAncestorOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Louise_of_Orleans ;
+    :isChildOf data:Philippe_Count_of_Paris ;
+    :isDaughterOf data:Philippe_Count_of_Paris ;
+    :isMotherOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Louise_of_Orleans ;
+    :isSisterOf data:Princess_Louise_of_Orleans .
+
+data:King_Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasBrother data:King_Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_de_las_Mercedes ;
+    :hasParent data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isBloodrelationOf data:King_Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:King_Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isSiblingOf data:King_Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infante_Juan_Count_of_Barcelona,
+        data:Princess_Maria_de_las_Mercedes .
+
+data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Princess_Louise_of_Orleans ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Princess_Louise_of_Orleans ;
+    :hasParent data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Princess_Louise_of_Orleans ;
+    :hasRelation data:Infante_Juan_Count_of_Barcelona,
+        data:King_Juan_Carlos_I_of_Spain,
+        data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Philippe_Count_of_Paris,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Pedro_Gastao_of_Orleans-Braganza,
+        data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza,
+        data:Princess_Louise_of_Orleans,
+        data:Princess_Maria_de_las_Mercedes ;
+    :hasSister data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isAuntOf data:King_Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isChildOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Princess_Louise_of_Orleans ;
+    :isDaughterOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Princess_Louise_of_Orleans ;
+    :isSiblingOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes ;
+    :isSisterOf data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_de_las_Mercedes .
+

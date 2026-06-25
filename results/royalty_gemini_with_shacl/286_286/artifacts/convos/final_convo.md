@@ -85,98 +85,45 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
-
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Prince Jean Carl Pierre Marie d'Orléans, Count of Paris (born 19 May 1965) is the current head of the House of Orléans.
-Jean is the senior male descendant by primogeniture in the male-line of Louis Philippe I, King of the French, and thus according to the Orléanists the legitimate claimant to the defunct throne of France as Jean IV.
-Jean is the second son of Henri, Count of Paris (1933–2019) and his former wife Duchess Marie-Thérèse of Württemberg (born 1934).
-Biography
-
-Early life and education
-
-Jean d'Orléans was born on 19 May 1965 in Boulogne-Billancourt, the son of Henri of Orleans and Maria Theresa of Württemberg.
-He received as godfather, his maternal uncle, Carl of Württemberg, and as godmother, his paternal aunt, Princess Chantal of Orleans.
-Jean completed his national service as an officer, first taking four months of classes at the Saumur Cavalry School.
-Jean is multilingual, speaking French, English, and German.
-First engagement
-
-Prince Jean was due to marry Duchess Tatjana of Oldenburg (b. 1974) in 2001.
-However, the wedding was cancelled at the last moment because of a dispute over religious denomination: Jean's father, Henri, feared the Orléans claim to the throne would be compromised if there were to be a Protestant heir.
-Second engagement and marriage
-
-On 29 November 2008, Henri, then Count of Paris, announced the engagement of Jean, the then Duke of Vendôme, to Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart, born in Vienna on 19 June 1977.
-Lawsuit
-
-In 2021, Jean filed a lawsuit against the Saint-Louis foundation, demanding €1 million in damages and the return of five properties, including the Château d'Amboise.
-In 1886, the château was bequeathed to the Institute of France by Jean's ancestor Henri d’Orléans, with the caveat that the property would never be altered by the institute.
-The Saint-Louis foundation was later founded by Jean's grandfather, Henri VI, Count of Paris, in 1974.
-Jean's lawsuit alleges that the Institute violated their contract to never alter the property, after they announced plans to transform the Pavillon d’Enghien into a €760-a-night luxury hotel, containing a spa and gastronomic restaurant.
-Jean had previously lived in the château from 2001 to September 2021 rent-free, but was forcefully evicted by the institute after they began to demand he pay rent, which Jean viewed as a violation of their contract.
+Rafael of Orléans-Braganza (Portuguese: Rafael de Orléans e Bragança; born 24 April 1986) is a member of the Imperial House of Brazil.
+He is the heir presumptive to his childless uncle, Prince Bertrand, the current head of the Vassouras branch of the House of Orléans-Braganza and one of the claimants to the defunct Brazilian Throne.
+Rafael became heir presumptive following the death of his father, Prince Antônio, in November 2024.
 Family
 
-Jean and his wife Philomena have six children: 
+Born in Petrópolis, Brazil on 26 April 1986, he is the third child and second son of Prince Antônio de Orleans e Bragança and Princess Christine of Ligne.
+He has an older brother and sister, Prince Pedro Luiz and Princess Amélia and a younger sister, Princess Maria Gabriela.
+His name in full is Rafael Antonio Maria José Francisco Miguel Gabriel Gonzaga de Orléans e Bragança e Ligne.
+His paternal grandparents were Prince Pedro Henrique of Orléans-Bragança, one of two claimants to be head of the Brazilian Imperial House, and Princess Maria Elisabeth of Bavaria.
+His maternal grandparents were Antoine, 13th Prince of Ligne, and Princess Alix of Luxembourg.
+His mother's family, the House of Ligne, is one of the oldest and most prominent Wallonian noble families still extant in Belgium.
+Christine is a niece of Grand Duke Jean, who reigned in Luxembourg until his abdication in 2000.
+Personal life
 
+Rafael has a degree in manufacturing engineering from Pontifical Catholic University of Rio de Janeiro, working at the InBev subsidiary in London.
+Rafael also has a partnership and a tourism enterprise with headquarters in New York, Paris and Rio de Janeiro.
+Rafael has expressed in statements his desire to marry a princess who is part of "Catholic royalty or high nobility".
+Appointments
 
-Politics
+In February 2022, after the floods that devastated the city of Petrópolis, Rafael came to the aid of the victims, bringing them essential goods that the imperial house received from monarchist supporters.
+Honors
 
-Jean believes that the people of France are "monarchist at heart" and argues that they long for a non-partisan figurehead.
-Jean has also expressed his opposition to same-sex marriage, having participated in the La Manif pour tous protests, as well as abortion.
-In May 2019, Jean met with French President Emmanuel Macron, Brigitte Macron, and Italian President Sergio Mattarella in his then-home in the Château d'Amboise.
-
-
-Titles, styles and honours
-
-Titles in pretense
-
-He was created Duke of Vendôme (French: Duc de Vendôme) by his paternal grandfather, on 27 September 1987.
-Following the death of his father, it was initially thought that Prince Jean would not assume the title of Count of Paris for several months after his father's death, and possibly not for as much as one year.
-Honours
-
-National
-
-Dynastic
+Genealogy
 
 Ancestry
 
-Jean is a direct male-line descendant of Louis Philippe I, the last French king, who in turn was a descendant of Philippe I, Duke of Orléans, the younger brother of Louis XIV.
-Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of Spain, the Two Sicilies and Parma.
+Patrilineal descent
+
+Rafael is a member of the House of Orléans-Braganza, a sub-branch of the House of Bourbon, itself a branch of the House of Capet and of the Robertians.
+Rafael's patriline is the line from which he is descended father to son.
+It follows the Dukes of Orléans, the Kings of France, the Dukes and Counts of Vendôme, the Counts of La Marche, the first Duke of Bourbon, a Count of Clermont, and before them, again the Kings of France.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -192,39 +139,9 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -239,6 +156,23 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -256,6 +190,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -323,29 +272,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -354,6 +295,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -366,6 +315,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -374,17 +325,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -412,6 +365,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -427,115 +464,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1e291e5a-4810-40cb-950e-b48cc6dedd26)
- Call ID: 1e291e5a-4810-40cb-950e-b48cc6dedd26
+  AssignClass (73673e88-1f74-4849-82ef-8325a9c29efa)
+ Call ID: 73673e88-1f74-4849-82ef-8325a9c29efa
+  Args:
+    source: Rafael_of_Orleans-Braganza
+    type: :Man
+  AssignClass (0434820f-435f-4f8f-a4d0-ac8430fda019)
+ Call ID: 0434820f-435f-4f8f-a4d0-ac8430fda019
   Args:
     type: :Man
-    source: Jean_dOrleans
-  AssignClass (d849db7c-ea1a-408e-a109-cead3804ce0d)
- Call ID: d849db7c-ea1a-408e-a109-cead3804ce0d
+    source: Prince_Bertrand
+  AssignClass (90870686-f77f-416f-afbd-9f17a46467c4)
+ Call ID: 90870686-f77f-416f-afbd-9f17a46467c4
   Args:
     type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (e4368497-449b-4967-b7e0-8ee483d24900)
- Call ID: e4368497-449b-4967-b7e0-8ee483d24900
+    source: Prince_Antonio
+  AssignClass (d68543fe-f4ec-4cab-868a-393061778777)
+ Call ID: d68543fe-f4ec-4cab-868a-393061778777
   Args:
     type: :Woman
-    source: Marie_Therese_of_Wurttemberg
-  AssignClass (a5d8e7f1-0e37-4ddb-8221-1254f04bd874)
- Call ID: a5d8e7f1-0e37-4ddb-8221-1254f04bd874
-  Args:
-    type: :Woman
-    source: Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart
-  AssignClass (90b59f74-76aa-4a28-ab60-2809c7cea078)
- Call ID: 90b59f74-76aa-4a28-ab60-2809c7cea078
+    source: Princess_Christine_of_Ligne
+  AssignClass (cf5ca0f2-cf77-4cbc-aa39-7a85d92aa1d4)
+ Call ID: cf5ca0f2-cf77-4cbc-aa39-7a85d92aa1d4
   Args:
     type: :Man
-    source: Carl_of_Wurttemberg
-  AssignClass (896ca104-6559-4a40-ad61-1c52999aaa95)
- Call ID: 896ca104-6559-4a40-ad61-1c52999aaa95
+    source: Prince_Pedro_Luiz
+  AssignClass (7524c98f-e6cf-4fb5-bc8c-65ac8dc0405f)
+ Call ID: 7524c98f-e6cf-4fb5-bc8c-65ac8dc0405f
   Args:
+    source: Princess_Amelia
     type: :Woman
-    source: Chantal_of_Orleans
-  AssignClass (5d3284bf-093a-433f-9f96-8b3b9b296405)
- Call ID: 5d3284bf-093a-433f-9f96-8b3b9b296405
+  AssignClass (44824101-26c4-4d3b-bd93-80e84bc0a042)
+ Call ID: 44824101-26c4-4d3b-bd93-80e84bc0a042
+  Args:
+    source: Princess_Maria_Gabriela
+    type: :Woman
+  AssignClass (da44857e-4ebf-4e77-acce-d25361c75fa7)
+ Call ID: da44857e-4ebf-4e77-acce-d25361c75fa7
   Args:
     type: :Man
-    source: Henri_VI_Count_of_Paris
-  AddTriple (98f47e3a-c982-43aa-99b7-fd07582a816c)
- Call ID: 98f47e3a-c982-43aa-99b7-fd07582a816c
+    source: Prince_Pedro_Henrique_of_Orleans-Braganza
+  AssignClass (5715c4da-98f4-4a32-96b0-a4aaedab9015)
+ Call ID: 5715c4da-98f4-4a32-96b0-a4aaedab9015
   Args:
-    target: Henri_Count_of_Paris
+    type: :Woman
+    source: Princess_Maria_Elisabeth_of_Bavaria
+  AssignClass (ffe85bee-8822-4f72-be9a-24c58c222b51)
+ Call ID: ffe85bee-8822-4f72-be9a-24c58c222b51
+  Args:
+    source: Antoine_13th_Prince_of_Ligne
+    type: :Man
+  AssignClass (9f54c07f-915c-48a7-b6c8-73e3b836f931)
+ Call ID: 9f54c07f-915c-48a7-b6c8-73e3b836f931
+  Args:
+    source: Princess_Alix_of_Luxembourg
+    type: :Woman
+  AddLiteral (12f0e842-126a-43c5-9867-8c97fe51bbeb)
+ Call ID: 12f0e842-126a-43c5-9867-8c97fe51bbeb
+  Args:
+    literal_value: 1986
+    source: Rafael_of_Orleans-Braganza
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (bcde4dfc-1bf2-4a49-a06a-297128783441)
+ Call ID: bcde4dfc-1bf2-4a49-a06a-297128783441
+  Args:
+    source: Rafael_of_Orleans-Braganza
+    target: Prince_Antonio
     relation: :hasFather
-    source: Jean_dOrleans
-  AddTriple (e6f411ac-ad1c-48d8-8499-31aef1de0b88)
- Call ID: e6f411ac-ad1c-48d8-8499-31aef1de0b88
+  AddTriple (e9f31eca-5143-4968-81b2-fa9b13edb006)
+ Call ID: e9f31eca-5143-4968-81b2-fa9b13edb006
+  Args:
+    source: Rafael_of_Orleans-Braganza
+    target: Princess_Christine_of_Ligne
+    relation: :hasMother
+  AddTriple (3b530714-1f07-47bb-a820-4f785c9c090b)
+ Call ID: 3b530714-1f07-47bb-a820-4f785c9c090b
+  Args:
+    target: Prince_Antonio
+    source: Prince_Pedro_Luiz
+    relation: :hasFather
+  AddTriple (73e440bc-31fa-48b7-ab60-0c5b71a42053)
+ Call ID: 73e440bc-31fa-48b7-ab60-0c5b71a42053
+  Args:
+    source: Prince_Pedro_Luiz
+    target: Princess_Christine_of_Ligne
+    relation: :hasMother
+  AddTriple (7d1fac0b-086a-4736-a8a5-e7a570e3d454)
+ Call ID: 7d1fac0b-086a-4736-a8a5-e7a570e3d454
+  Args:
+    target: Prince_Antonio
+    source: Princess_Amelia
+    relation: :hasFather
+  AddTriple (4ad1b6f1-fabf-4db7-97bb-fbc8bab8276c)
+ Call ID: 4ad1b6f1-fabf-4db7-97bb-fbc8bab8276c
   Args:
     relation: :hasMother
-    target: Marie_Therese_of_Wurttemberg
-    source: Jean_dOrleans
-  AddLiteral (3638f7f6-9052-4fa1-944d-9aee03333353)
- Call ID: 3638f7f6-9052-4fa1-944d-9aee03333353
+    source: Princess_Amelia
+    target: Princess_Christine_of_Ligne
+  AddTriple (d1306190-5703-445e-a35f-371734333d5e)
+ Call ID: d1306190-5703-445e-a35f-371734333d5e
   Args:
-    literal_value: 1965
-    relation: :hasBirthYear
-    source: Jean_dOrleans
-    literal_type: xsd:integer
-  AddLiteral (961fd4aa-74c9-40f9-9605-f65ebbb0e9cc)
- Call ID: 961fd4aa-74c9-40f9-9605-f65ebbb0e9cc
+    target: Prince_Antonio
+    source: Princess_Maria_Gabriela
+    relation: :hasFather
+  AddTriple (e3978794-b8e0-4d3f-888a-799cec105143)
+ Call ID: e3978794-b8e0-4d3f-888a-799cec105143
   Args:
-    literal_value: 1933
-    literal_type: xsd:integer
-    source: Henri_Count_of_Paris
-    relation: :hasBirthYear
-  AddLiteral (5f57c05d-c084-463d-90bc-4709e811eea9)
- Call ID: 5f57c05d-c084-463d-90bc-4709e811eea9
+    relation: :hasMother
+    source: Princess_Maria_Gabriela
+    target: Princess_Christine_of_Ligne
+  AddTriple (e33fa448-d97d-4a70-9a20-020327effb7d)
+ Call ID: e33fa448-d97d-4a70-9a20-020327effb7d
   Args:
+    target: Prince_Pedro_Henrique_of_Orleans-Braganza
+    source: Prince_Antonio
+    relation: :hasFather
+  AddTriple (454b54d5-7418-4e33-8d8f-92e09bfb80b7)
+ Call ID: 454b54d5-7418-4e33-8d8f-92e09bfb80b7
+  Args:
+    relation: :hasMother
+    source: Prince_Antonio
+    target: Princess_Maria_Elisabeth_of_Bavaria
+  AddTriple (1ad78bd9-7914-43ac-a556-0a8e1eab81d8)
+ Call ID: 1ad78bd9-7914-43ac-a556-0a8e1eab81d8
+  Args:
+    source: Princess_Christine_of_Ligne
+    target: Antoine_13th_Prince_of_Ligne
+    relation: :hasFather
+  AddTriple (d26683c3-5784-4bb5-991d-98a9bd2b4cd5)
+ Call ID: d26683c3-5784-4bb5-991d-98a9bd2b4cd5
+  Args:
+    source: Princess_Christine_of_Ligne
+    target: Princess_Alix_of_Luxembourg
+    relation: :hasMother
+  AddLiteral (e88a16fe-684f-4b68-92e1-fb119c36b636)
+ Call ID: e88a16fe-684f-4b68-92e1-fb119c36b636
+  Args:
+    source: Prince_Antonio
+    literal_value: 2024
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Henri_Count_of_Paris
-    literal_value: 2019
-  AddLiteral (a3bfd0ef-5a1c-4635-a120-520612f6c559)
- Call ID: a3bfd0ef-5a1c-4635-a120-520612f6c559
+  ValidateShacl (6a02fbf0-8147-465f-9909-21d38fbe2e07)
+ Call ID: 6a02fbf0-8147-465f-9909-21d38fbe2e07
   Args:
-    literal_value: 1934
-    source: Marie_Therese_of_Wurttemberg
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (5493e247-d3fb-409b-8f0d-3420d9f7b8ea)
- Call ID: 5493e247-d3fb-409b-8f0d-3420d9f7b8ea
+  Finish (5cd2baa7-48e2-44f4-87df-76e93a9786b4)
+ Call ID: 5cd2baa7-48e2-44f4-87df-76e93a9786b4
   Args:
-    literal_type: xsd:integer
-    source: Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart
-    relation: :hasBirthYear
-    literal_value: 1977
-  AddTriple (01501fdf-bc65-4075-a396-3e9fe49f1c00)
- Call ID: 01501fdf-bc65-4075-a396-3e9fe49f1c00
-  Args:
-    source: Jean_dOrleans
-    relation: :hasRelation
-    target: Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart
-  AddTriple (7b3bfd4e-daaa-4e2e-b371-accd0c761e6a)
- Call ID: 7b3bfd4e-daaa-4e2e-b371-accd0c761e6a
-  Args:
-    source: Carl_of_Wurttemberg
-    relation: :isUncleOf
-    target: Jean_dOrleans
-  AddTriple (4fb0cde3-b5c2-46f4-8701-d6ac3a8ea47b)
- Call ID: 4fb0cde3-b5c2-46f4-8701-d6ac3a8ea47b
-  Args:
-    relation: :isSisterOf
-    target: Henri_Count_of_Paris
-    source: Chantal_of_Orleans
-  AddTriple (feb83720-8ff6-4192-b8be-03f65898be0e)
- Call ID: feb83720-8ff6-4192-b8be-03f65898be0e
-  Args:
-    relation: :isFatherOf
-    target: Henri_Count_of_Paris
-    source: Henri_VI_Count_of_Paris
-  Finish (a45ad014-6a5e-4167-9061-82e826988bf5)
- Call ID: a45ad014-6a5e-4167-9061-82e826988bf5
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -612,30 +715,337 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carl_of_Wurttemberg a :Man ;
-      :isUncleOf data:Jean_dOrleans .
+  data:Prince_Bertrand a :Man .
 
-  data:Chantal_of_Orleans a :Woman ;
-      :isSisterOf data:Henri_Count_of_Paris .
+  data:Prince_Pedro_Luiz a :Man ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
 
-  data:Henri_VI_Count_of_Paris a :Man ;
-      :isFatherOf data:Henri_Count_of_Paris .
+  data:Princess_Amelia a :Woman ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
 
-  data:Jean_dOrleans a :Man ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMother data:Marie_Therese_of_Wurttemberg ;
-      :hasRelation data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart .
+  data:Princess_Maria_Gabriela a :Woman ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
 
-  data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart a :Woman ;
-      :hasBirthYear 1977 .
+  data:Rafael_of_Orleans-Braganza a :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
 
-  data:Marie_Therese_of_Wurttemberg a :Woman ;
-      :hasBirthYear 1934 .
+  data:Antoine_13th_Prince_of_Ligne a :Man .
 
-  data:Henri_Count_of_Paris a :Man ;
-      :hasBirthYear 1933 ;
-      :hasDeathYear 2019 .
+  data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Man .
+
+  data:Princess_Alix_of_Luxembourg a :Woman .
+
+  data:Princess_Maria_Elisabeth_of_Bavaria a :Woman .
+
+  data:Prince_Antonio a :Man ;
+      :hasDeathYear 2024 ;
+      :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+      :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+
+  data:Princess_Christine_of_Ligne a :Woman ;
+      :hasFather data:Antoine_13th_Prince_of_Ligne ;
+      :hasMother data:Princess_Alix_of_Luxembourg .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:36
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Pedro_Henrique_of_Orleans-Braganza does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Pedro_Henrique_of_Orleans-Braganza :Ancestor
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Maria_Elisabeth_of_Bavaria does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Maria_Elisabeth_of_Bavaria :Ancestor
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Pedro_Henrique_of_Orleans-Braganza does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Pedro_Henrique_of_Orleans-Braganza :Ancestor
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_13th_Prince_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Antoine_13th_Prince_of_Ligne :Ancestor
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Maria_Elisabeth_of_Bavaria does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Maria_Elisabeth_of_Bavaria :Ancestor
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Alix_of_Luxembourg does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Alix_of_Luxembourg :Ancestor
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Pedro_Henrique_of_Orleans-Braganza does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Pedro_Henrique_of_Orleans-Braganza :Ancestor
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_13th_Prince_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Antoine_13th_Prince_of_Ligne :Ancestor
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Maria_Elisabeth_of_Bavaria does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Maria_Elisabeth_of_Bavaria :Ancestor
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Alix_of_Luxembourg does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Alix_of_Luxembourg :Ancestor
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_13th_Prince_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Antoine_13th_Prince_of_Ligne :Ancestor
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Antonio does not have the required class :Ancestor, which is mandatory for the target of a hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Prince_Antonio :Ancestor
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Alix_of_Luxembourg does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Alix_of_Luxembourg :Ancestor
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Christine_of_Ligne does not have the required class :Ancestor, which is mandatory for the target of a hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass Princess_Christine_of_Ligne :Ancestor
+
 
 
 
@@ -647,96 +1057,54 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (bee9dbfc-be71-483c-b522-b850aba926ab)
- Call ID: bee9dbfc-be71-483c-b522-b850aba926ab
+  AssignClass (840fa60b-d5b2-42d6-be26-59247426e6ec)
+ Call ID: 840fa60b-d5b2-42d6-be26-59247426e6ec
+  Args:
+    source: Prince_Antonio
+    type: :Ancestor
+  AssignClass (2fa9b478-da44-40c8-ab58-e0530509d14e)
+ Call ID: 2fa9b478-da44-40c8-ab58-e0530509d14e
+  Args:
+    type: :Ancestor
+    source: Prince_Pedro_Henrique_of_Orleans-Braganza
+  AssignClass (f365cc39-7ce9-4e4a-89eb-491470744f93)
+ Call ID: f365cc39-7ce9-4e4a-89eb-491470744f93
+  Args:
+    type: :Ancestor
+    source: Princess_Christine_of_Ligne
+  AssignClass (6bdd2d66-9644-446b-9391-6df2d1a1e8d8)
+ Call ID: 6bdd2d66-9644-446b-9391-6df2d1a1e8d8
+  Args:
+    type: :Ancestor
+    source: Princess_Maria_Elisabeth_of_Bavaria
+  AssignClass (02b57414-9cad-4cba-a9a4-19b05512c35f)
+ Call ID: 02b57414-9cad-4cba-a9a4-19b05512c35f
+  Args:
+    type: :Ancestor
+    source: Antoine_13th_Prince_of_Ligne
+  AssignClass (55c35bf2-186c-40c3-86bc-15cf129a211f)
+ Call ID: 55c35bf2-186c-40c3-86bc-15cf129a211f
+  Args:
+    source: Princess_Alix_of_Luxembourg
+    type: :Ancestor
+  ValidateShacl (4715dfaf-0e13-4d5e-bc92-73b6d95a999e)
+ Call ID: 4715dfaf-0e13-4d5e-bc92-73b6d95a999e
+  Args:
+  Finish (e481a6ab-3d95-4619-94a4-102da5595c13)
+ Call ID: e481a6ab-3d95-4619-94a4-102da5595c13
   Args:
 
 ================================= Tool Message =================================
 
-VALIDATION RESULTS
-Total violations:7
-Violations:
+Look at the messages below to see the final data graph after all the edits.
 
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a father 'Henri_Count_of_Paris' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+================================= Tool Message =================================
 
+Look at the messages below to see the final data graph after all the edits.
 
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a mother 'Marie_Therese_of_Wurttemberg' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Therese_of_Wurttemberg', class=':Ancestor')
+================================= Tool Message =================================
 
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a father 'Henri_Count_of_Paris' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a mother 'Marie_Therese_of_Wurttemberg' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Therese_of_Wurttemberg', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a father 'Henri_Count_of_Paris' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Jean_dOrleans' has a mother 'Marie_Therese_of_Wurttemberg' who is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marie_Therese_of_Wurttemberg', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Henri_VI_Count_of_Paris' acts as a father but lacks the ':Ancestor' classification required for the subject of an ':isFatherOf' relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_VI_Count_of_Paris', class=':Ancestor')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (942cff87-afea-4647-af1d-2b78c7dc7d7a)
- Call ID: 942cff87-afea-4647-af1d-2b78c7dc7d7a
-  Args:
-    source: Henri_Count_of_Paris
-    type: :Ancestor
-  AssignClass (a704d8e2-f791-42e7-ab53-057ca2e55261)
- Call ID: a704d8e2-f791-42e7-ab53-057ca2e55261
-  Args:
-    type: :Ancestor
-    source: Marie_Therese_of_Wurttemberg
-  AssignClass (d9ae9541-4b3b-46e6-9428-fbbc8862dc56)
- Call ID: d9ae9541-4b3b-46e6-9428-fbbc8862dc56
-  Args:
-    source: Henri_VI_Count_of_Paris
-    type: :Ancestor
-  ValidateShacl (a8cc2fd0-20fe-47ec-9811-35121449496a)
- Call ID: a8cc2fd0-20fe-47ec-9811-35121449496a
-  Args:
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -753,33 +1121,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carl_of_Wurttemberg a :Man ;
-      :isUncleOf data:Jean_dOrleans .
+  data:Prince_Bertrand a :Man .
 
-  data:Chantal_of_Orleans a :Woman ;
-      :isSisterOf data:Henri_Count_of_Paris .
+  data:Prince_Pedro_Luiz a :Man ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
 
-  data:Henri_VI_Count_of_Paris a :Ancestor,
+  data:Princess_Amelia a :Woman ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
+
+  data:Princess_Maria_Gabriela a :Woman ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
+
+  data:Rafael_of_Orleans-Braganza a :Man ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Prince_Antonio ;
+      :hasMother data:Princess_Christine_of_Ligne .
+
+  data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+          :Man .
+
+  data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+          :Man .
+
+  data:Princess_Alix_of_Luxembourg a :Ancestor,
+          :Woman .
+
+  data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+          :Woman .
+
+  data:Prince_Antonio a :Ancestor,
           :Man ;
-      :isFatherOf data:Henri_Count_of_Paris .
+      :hasDeathYear 2024 ;
+      :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+      :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
 
-  data:Jean_dOrleans a :Man ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMother data:Marie_Therese_of_Wurttemberg ;
-      :hasRelation data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart .
-
-  data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart a :Woman ;
-      :hasBirthYear 1977 .
-
-  data:Marie_Therese_of_Wurttemberg a :Ancestor,
+  data:Princess_Christine_of_Ligne a :Ancestor,
           :Woman ;
-      :hasBirthYear 1934 .
-
-  data:Henri_Count_of_Paris a :Ancestor,
-          :Man ;
-      :hasBirthYear 1933 ;
-      :hasDeathYear 2019 .
+      :hasFather data:Antoine_13th_Prince_of_Ligne ;
+      :hasMother data:Princess_Alix_of_Luxembourg .
 
 
 
@@ -787,10 +1169,17 @@ The final data graph after all the edits:
 
 SHACL validation has not produced any violations.
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (36ce410a-96ea-46fc-a5af-f2b3e89c52be)
- Call ID: 36ce410a-96ea-46fc-a5af-f2b3e89c52be
+  ValidateShacl (b5f88757-6a89-4e3f-ac71-6f6b0f3d83f9)
+ Call ID: b5f88757-6a89-4e3f-ac71-6f6b0f3d83f9
+  Args:
+  Finish (8d426e2f-6517-468c-bc74-dff06997ef27)
+ Call ID: 8d426e2f-6517-468c-bc74-dff06997ef27
   Args:

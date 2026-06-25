@@ -2,32 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Eilika_of_Oldenburg a :Person,
+data:Elizabeth_II a :Person,
         :Woman ;
-    :hasBirthYear 1972 ;
-    :hasFather data:Johann_of_Oldenburg ;
-    :hasMother data:Ilka_of_Ortenburg .
+    :isMotherOf data:Anne_Princess_Royal .
 
-data:Georg_von_Habsburg a :Man,
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Isla_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Prince_Philip a :Man,
         :Person ;
-    :hasBirthYear 1964 ;
-    :hasMarriageYear 1997 .
+    :isFatherOf data:Anne_Princess_Royal .
 
-data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Person,
+data:Savannah_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:Harriet_Sperling a :Person,
         :Woman .
 
-data:Ilka_of_Ortenburg a :Ancestor,
-        :Person,
+data:Lindsay_Wallace a :Person,
         :Woman .
 
-data:Johann_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Nikolaus_of_Oldenburg ;
-    :hasMother data:Helena_of_Waldeck_and_Pyrmont .
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
 
-data:Nikolaus_of_Oldenburg a :Ancestor,
-        :Man,
+data:Peter_Phillips a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:Lindsay_Wallace ;
+    :isSiblingOf data:Zara_Tindall .
+
+data:Autumn_Kelly a :Person,
+        :Woman .
+
+data:Anne_Princess_Royal a :Person,
+        :Woman ;
+    :isSisterOf data:Charles_III .
+
+data:Mark_Phillips a :Man,
         :Person .
 

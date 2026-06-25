@@ -2,45 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Wilhelm_Victor_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Prince_Adalbert_of_Prussia ;
-    :hasMarriageYear 1944 ;
-    :hasMother data:Princess_Adelheid_of_Saxe-Meiningen ;
-    :hasRelation data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein ;
-    :hasSister data:Princess_Viktoria_Marina .
+data:Ernst_of_Lippe a :Man .
 
-data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm a :Person,
-        :Woman ;
-    :hasBirthYear 1895 ;
-    :hasDeathYear 1983 .
+data:Friedrich_Wilhelm_of_Lippe a :Man ;
+    :hasBirthYear 1947 ;
+    :hasFather data:Ernst_August_of_Lippe ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:Christa_von_Arnim ;
+    :hasRelation data:Andrea_Messner .
 
-data:Friedrich_Count_of_Hoyos-Stichsenstein a :Man,
-        :Person ;
-    :hasBirthYear 1876 ;
-    :hasDeathYear 1951 .
+data:Leopold_IV_of_Lippe a :Man .
 
-data:Marie_Antoinette_Countess_of_Hoyos-Stichsenstein a :Person,
-        :Woman ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;
-    :hasMother data:Countess_Wilhelmine_von_Wuthenau-Hohenthurm .
+data:Leopold_of_Lippe a :Man .
 
-data:Prince_Adalbert_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1884 ;
-    :hasDeathYear 1948 .
+data:Simon_Casimir_of_Lippe a :Man ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1980 .
 
-data:Princess_Adelheid_of_Saxe-Meiningen a :Person,
-        :Woman ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1971 .
+data:Stephan_of_Lippe a :Man ;
+    :hasFather data:Armin_of_Lippe .
 
-data:Princess_Viktoria_Marina a :Person,
-        :Woman ;
+data:Andrea_Messner a :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:G%C3%BCnther_Messner ;
+    :hasMother data:Lieselotte_Trzoska .
+
+data:Armin_of_Lippe a :Man ;
+    :hasDeathYear 2015 .
+
+data:Christa_von_Arnim a :Woman ;
+    :hasBirthYear 1923 ;
+    :hasFather data:Curt_David_von_Arnim ;
+    :hasMother data:Stephanie_von_Stechow .
+
+data:Curt_David_von_Arnim a :Man .
+
+data:Ernst_August_of_Lippe a :Man ;
     :hasBirthYear 1917 ;
-    :hasDeathYear 1981 .
+    :hasDeathYear 1990 ;
+    :hasFather data:Julius_Ernst_of_Lippe ;
+    :hasMother data:Marie_of_Mecklenburg_Strelitz .
+
+data:G%C3%BCnther_Messner a :Man .
+
+data:Julius_Ernst_of_Lippe a :Man .
+
+data:Lieselotte_Trzoska a :Woman .
+
+data:Marie_of_Mecklenburg_Strelitz a :Woman .
+
+data:Stephanie_von_Stechow a :Woman .
 

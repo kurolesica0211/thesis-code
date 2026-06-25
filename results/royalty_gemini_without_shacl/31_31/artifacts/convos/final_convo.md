@@ -102,6 +102,8 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +119,9 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +136,23 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,130 +444,300 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ef8d7861-418b-4dc2-9707-dbfd31939681)
- Call ID: ef8d7861-418b-4dc2-9707-dbfd31939681
+  AssignClass (23802c46-27d1-4a38-ac64-aaeae4d7d201)
+ Call ID: 23802c46-27d1-4a38-ac64-aaeae4d7d201
   Args:
-    source: Christoph_of_Schleswig-Holstein
+    source: :Christoph_of_Schleswig-Holstein
     type: :Man
-  AssignClass (3c3f4ec2-d897-4d9e-8921-bc802d34b6fc)
- Call ID: 3c3f4ec2-d897-4d9e-8921-bc802d34b6fc
+  AssignClass (2c1875b9-1640-4551-8002-4b5493888c43)
+ Call ID: 2c1875b9-1640-4551-8002-4b5493888c43
   Args:
-    source: Peter_Duke_of_Schleswig-Holstein
-    type: :Man
-  AssignClass (752f4b6b-bffe-4b01-9ad2-9b59950ea597)
- Call ID: 752f4b6b-bffe-4b01-9ad2-9b59950ea597
-  Args:
-    type: :Woman
-    source: Princess_Marie_Alix_of_Schaumburg-Lippe
-  AssignClass (0b5707c4-e023-425e-bfb9-06aa3e743c53)
- Call ID: 0b5707c4-e023-425e-bfb9-06aa3e743c53
-  Args:
-    source: Princess_Elisabeth_of_Lippe-Weissenfeld
-    type: :Woman
-  AssignClass (ed4c4c75-616a-4de9-a6d9-07763f23adee)
- Call ID: ed4c4c75-616a-4de9-a6d9-07763f23adee
-  Args:
-    source: Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
-    type: :Man
-  AssignClass (9f4dfc4c-eaaf-42bb-8f14-c28b9a8991d0)
- Call ID: 9f4dfc4c-eaaf-42bb-8f14-c28b9a8991d0
-  Args:
-    source: Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
-    type: :Woman
-  AddLiteral (ee0232c0-a748-4b15-be97-0d8d4a67053b)
- Call ID: ee0232c0-a748-4b15-be97-0d8d4a67053b
+    source: :Christoph_of_Schleswig-Holstein
+    type: :Person
+  AddLiteral (9b951c0b-6211-4db0-b51a-c8461d2b7df8)
+ Call ID: 9b951c0b-6211-4db0-b51a-c8461d2b7df8
   Args:
     relation: :hasBirthYear
-    literal_value: 1949
     literal_type: xsd:integer
-    source: Christoph_of_Schleswig-Holstein
-  AddLiteral (3025ec21-ae48-4212-8014-1692a7dfe3dc)
- Call ID: 3025ec21-ae48-4212-8014-1692a7dfe3dc
+    literal_value: 1949
+    source: :Christoph_of_Schleswig-Holstein
+  AddLiteral (3b22a46d-e802-4356-a1d7-d9aac67c6dab)
+ Call ID: 3b22a46d-e802-4356-a1d7-d9aac67c6dab
   Args:
+    source: :Christoph_of_Schleswig-Holstein
     relation: :hasDeathYear
     literal_type: xsd:integer
     literal_value: 2023
-    source: Christoph_of_Schleswig-Holstein
-  AddLiteral (abfb6bff-e2e3-4291-a8ce-82a901d4bbc3)
- Call ID: abfb6bff-e2e3-4291-a8ce-82a901d4bbc3
+  AddTriple (1d0b254f-76f0-4a66-a6a6-88a2114a3901)
+ Call ID: 1d0b254f-76f0-4a66-a6a6-88a2114a3901
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1922
-    source: Peter_Duke_of_Schleswig-Holstein
-  AddLiteral (1da08578-37c5-48c0-8c42-480864fbf9d7)
- Call ID: 1da08578-37c5-48c0-8c42-480864fbf9d7
+    source: :Christoph_of_Schleswig-Holstein
+    target: :Male
+    relation: :hasSex
+  AssignClass (a8a3e136-f068-4e82-b2e7-299fe3758741)
+ Call ID: a8a3e136-f068-4e82-b2e7-299fe3758741
   Args:
-    source: Peter_Duke_of_Schleswig-Holstein
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1980
-  AddLiteral (0d4541ed-16b8-4ff6-9e12-8a8e6434c0a9)
- Call ID: 0d4541ed-16b8-4ff6-9e12-8a8e6434c0a9
+    source: :Peter_Duke_of_Schleswig-Holstein
+    type: :Man
+  AssignClass (90e8107a-ac28-4d44-a645-45c20d75377b)
+ Call ID: 90e8107a-ac28-4d44-a645-45c20d75377b
   Args:
-    source: Princess_Marie_Alix_of_Schaumburg-Lippe
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1923
-  AddLiteral (3bfbbd96-366b-46cd-a842-867586d84b4d)
- Call ID: 3bfbbd96-366b-46cd-a842-867586d84b4d
+    source: :Peter_Duke_of_Schleswig-Holstein
+    type: :Person
+  AddTriple (520350d0-cf0d-44f4-a8ab-226f55b4356e)
+ Call ID: 520350d0-cf0d-44f4-a8ab-226f55b4356e
   Args:
-    relation: :hasDeathYear
-    literal_value: 2021
-    literal_type: xsd:integer
-    source: Princess_Marie_Alix_of_Schaumburg-Lippe
-  AddLiteral (7a2d2593-fb83-489b-ad77-adf5bbc947de)
- Call ID: 7a2d2593-fb83-489b-ad77-adf5bbc947de
-  Args:
-    source: Princess_Elisabeth_of_Lippe-Weissenfeld
-    relation: :hasBirthYear
-    literal_value: 1957
-    literal_type: xsd:integer
-  AddLiteral (2e856db2-52f6-45a4-8612-c0d696df1cbc)
- Call ID: 2e856db2-52f6-45a4-8612-c0d696df1cbc
-  Args:
-    source: Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
-    relation: :hasBirthYear
-    literal_value: 1922
-    literal_type: xsd:integer
-  AddLiteral (4b0229d0-c891-4100-b89c-64463509a8be)
- Call ID: 4b0229d0-c891-4100-b89c-64463509a8be
-  Args:
-    literal_value: 2024
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
-  AddLiteral (81b471ff-bf9a-4074-a3e7-1ef8977fecbe)
- Call ID: 81b471ff-bf9a-4074-a3e7-1ef8977fecbe
-  Args:
-    source: Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
-    literal_value: 1928
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddTriple (1287f4d3-0f87-48e5-8334-e6420e25914c)
- Call ID: 1287f4d3-0f87-48e5-8334-e6420e25914c
-  Args:
+    target: :Peter_Duke_of_Schleswig-Holstein
+    source: :Christoph_of_Schleswig-Holstein
     relation: :hasFather
-    target: Peter_Duke_of_Schleswig-Holstein
-    source: Christoph_of_Schleswig-Holstein
-  AddTriple (4da8c4aa-5312-4ac6-a0ff-d3a108ef864c)
- Call ID: 4da8c4aa-5312-4ac6-a0ff-d3a108ef864c
+  AssignClass (aa6da726-2247-44cb-b7f0-9c675ed0edd8)
+ Call ID: aa6da726-2247-44cb-b7f0-9c675ed0edd8
   Args:
-    source: Christoph_of_Schleswig-Holstein
-    target: Princess_Marie_Alix_of_Schaumburg-Lippe
+    source: :Princess_Marie_Alix_of_Schaumburg-Lippe
+    type: :Woman
+  AssignClass (1b4c5d2e-fc6f-4198-9893-1b2c48e6af59)
+ Call ID: 1b4c5d2e-fc6f-4198-9893-1b2c48e6af59
+  Args:
+    source: :Princess_Marie_Alix_of_Schaumburg-Lippe
+    type: :Person
+  AddTriple (242697ed-3c1f-4fc6-b9dd-a00520f2a269)
+ Call ID: 242697ed-3c1f-4fc6-b9dd-a00520f2a269
+  Args:
     relation: :hasMother
-  AddTriple (07b15a26-0046-46a6-abda-de6effefac0e)
- Call ID: 07b15a26-0046-46a6-abda-de6effefac0e
+    source: :Christoph_of_Schleswig-Holstein
+    target: :Princess_Marie_Alix_of_Schaumburg-Lippe
+  AssignClass (6b53f481-fa5f-472c-b252-ab98902424c2)
+ Call ID: 6b53f481-fa5f-472c-b252-ab98902424c2
   Args:
-    source: Princess_Elisabeth_of_Lippe-Weissenfeld
-    target: Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    source: :Princess_Elisabeth_of_Lippe-Weissenfeld
+    type: :Woman
+  AssignClass (406ef9e8-3972-42af-bd9b-a9e92028134a)
+ Call ID: 406ef9e8-3972-42af-bd9b-a9e92028134a
+  Args:
+    source: :Princess_Elisabeth_of_Lippe-Weissenfeld
+    type: :Person
+  AddTriple (733cb0f1-9a12-4e1d-920d-e47c70392739)
+ Call ID: 733cb0f1-9a12-4e1d-920d-e47c70392739
+  Args:
+    source: :Christoph_of_Schleswig-Holstein
+    target: :Princess_Elisabeth_of_Lippe-Weissenfeld
+    relation: :hasRelation
+  AssignClass (e06e5a92-8f7a-49ba-b9af-4112b2536861)
+ Call ID: e06e5a92-8f7a-49ba-b9af-4112b2536861
+  Args:
+    source: :Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    type: :Man
+  AssignClass (4c0924d8-d4b3-4ec5-bb9e-35fd72ce5d12)
+ Call ID: 4c0924d8-d4b3-4ec5-bb9e-35fd72ce5d12
+  Args:
+    source: :Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    type: :Person
+  AddTriple (d02b8b9f-cee2-496a-b391-4ffdd0162685)
+ Call ID: d02b8b9f-cee2-496a-b391-4ffdd0162685
+  Args:
+    target: :Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    source: :Princess_Elisabeth_of_Lippe-Weissenfeld
     relation: :hasFather
-  AddTriple (a75aab77-4d98-4b7c-9adf-8e7d185940e2)
- Call ID: a75aab77-4d98-4b7c-9adf-8e7d185940e2
+  AssignClass (842653d4-e037-4c7e-ad35-68374ab59a24)
+ Call ID: 842653d4-e037-4c7e-ad35-68374ab59a24
   Args:
-    source: Princess_Elisabeth_of_Lippe-Weissenfeld
+    source: :Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
+    type: :Woman
+  AssignClass (09459087-4fb7-4cee-915d-b5cdd1403c99)
+ Call ID: 09459087-4fb7-4cee-915d-b5cdd1403c99
+  Args:
+    source: :Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
+    type: :Person
+  AddTriple (0e22ce71-3907-4f59-90c6-d29e1c8de3a6)
+ Call ID: 0e22ce71-3907-4f59-90c6-d29e1c8de3a6
+  Args:
     relation: :hasMother
-    target: Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
-  Finish (b76aeca5-866c-49c6-946c-fff3cf129b9c)
- Call ID: b76aeca5-866c-49c6-946c-fff3cf129b9c
+    source: :Princess_Elisabeth_of_Lippe-Weissenfeld
+    target: :Baroness_Irmgard_Julinka_Wagner_von_Wehrborn
+  Finish (fb62224b-5f9e-4219-af83-511e237af970)
+ Call ID: fb62224b-5f9e-4219-af83-511e237af970
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Christoph_of_Schleswig-Holstein a :Man,
+          :Person ;
+      :hasBirthYear 1949 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+      :hasMother data:Princess_Marie_Alix_of_Schaumburg-Lippe ;
+      :hasRelation data:Princess_Elisabeth_of_Lippe-Weissenfeld ;
+      :hasSex data:Male .
+
+  data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn a :Person,
+          :Woman .
+
+  data:Peter_Duke_of_Schleswig-Holstein a :Man,
+          :Person .
+
+  data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Man,
+          :Person .
+
+  data:Princess_Elisabeth_of_Lippe-Weissenfeld a :Person,
+          :Woman ;
+      :hasFather data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+      :hasMother data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn .
+
+  data:Princess_Marie_Alix_of_Schaumburg-Lippe a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (441f3d4c-6efe-4b63-aa2e-0c16dad729a4)
+ Call ID: 441f3d4c-6efe-4b63-aa2e-0c16dad729a4
+  Args:
+    type: :Sex
+    source: :Male
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Christoph_of_Schleswig-Holstein a :Man,
+          :Person ;
+      :hasBirthYear 1949 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+      :hasMother data:Princess_Marie_Alix_of_Schaumburg-Lippe ;
+      :hasRelation data:Princess_Elisabeth_of_Lippe-Weissenfeld ;
+      :hasSex data:Male .
+
+  data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn a :Person,
+          :Woman .
+
+  data:Male a :Sex .
+
+  data:Peter_Duke_of_Schleswig-Holstein a :Man,
+          :Person .
+
+  data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Man,
+          :Person .
+
+  data:Princess_Elisabeth_of_Lippe-Weissenfeld a :Person,
+          :Woman ;
+      :hasFather data:Prince_Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
+      :hasMother data:Baroness_Irmgard_Julinka_Wagner_von_Wehrborn .
+
+  data:Princess_Marie_Alix_of_Schaumburg-Lippe a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (1005b422-a336-4540-ba5d-f556c9adbe7e)
+ Call ID: 1005b422-a336-4540-ba5d-f556c9adbe7e
   Args:

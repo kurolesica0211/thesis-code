@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    data:posIndicesFull "324:371"^^xsd:string ;
+    data:posIndicesPart "1945:1953"^^xsd:string,
+        "2254:2262"^^xsd:string,
+        "2351:2359"^^xsd:string,
+        "2372:2380"^^xsd:string,
+        "2415:2423"^^xsd:string ;
+    data:wdtLink wdt:Q4164797 ;
+    :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasChild data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasRelation data:Prince_Donatus-_Landgrave_of_Hesse,
+        data:Princess_Paulina_of_Hesse_and_by_Rhine,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isAncestorOf data:Prince_Donatus-_Landgrave_of_Hesse,
+        data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isParentOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isSiblingOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Princess_Paulina_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    rdfs:label "Princess Paulina of Hesse and by Rhine"^^xsd:string ;
+    data:wdtLink wdt:Q75976254 ;
+    :alsoKnownAs "Paulina Elisabeth Adelheid Tatiana Suzanne Prinzessin von Hessen-Kassel"^^xsd:string ;
+    :hasAncestor data:Prince_Donatus-_Landgrave_of_Hesse,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasParent data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasRelation data:Prince_Donatus-_Landgrave_of_Hesse,
+        data:Princess_Paulina_of_Hesse_and_by_Rhine,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isDaughterOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isSiblingOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Paulina_of_Hesse_and_by_Rhine .
+
+data:Prince_Donatus-_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Donatus, Landgrave of Hesse"^^xsd:string ;
+    data:posIndicesFull "48:80"^^xsd:string ;
+    data:posIndicesPart "1043:1048"^^xsd:string,
+        "1399:1406"^^xsd:string,
+        "1543:1550"^^xsd:string,
+        "1810:1816"^^xsd:string,
+        "1817:1824"^^xsd:string,
+        "1900:1909"^^xsd:string,
+        "1913:1918"^^xsd:string,
+        "2169:2174"^^xsd:string,
+        "2202:2209"^^xsd:string,
+        "2481:2488"^^xsd:string,
+        "2520:2526"^^xsd:string,
+        "2634:2641"^^xsd:string,
+        "283:292"^^xsd:string,
+        "2911:2916"^^xsd:string,
+        "2933:2939"^^xsd:string,
+        "296:301"^^xsd:string,
+        "3028:3035"^^xsd:string,
+        "3067:3073"^^xsd:string,
+        "3077:3082"^^xsd:string,
+        "3199:3205"^^xsd:string,
+        "3288:3295"^^xsd:string,
+        "3322:3327"^^xsd:string,
+        "3345:3351"^^xsd:string,
+        "3377:3383"^^xsd:string,
+        "3478:3483"^^xsd:string,
+        "3533:3538"^^xsd:string,
+        "3784:3789"^^xsd:string,
+        "3821:3827"^^xsd:string,
+        "383:390"^^xsd:string,
+        "3890:3895"^^xsd:string,
+        "3946:3952"^^xsd:string,
+        "3985:3994"^^xsd:string,
+        "423:428"^^xsd:string,
+        "473:482"^^xsd:string,
+        "572:578"^^xsd:string,
+        "582:587"^^xsd:string,
+        "653:658"^^xsd:string,
+        "716:721"^^xsd:string,
+        "732:739"^^xsd:string,
+        "763:770"^^xsd:string,
+        "834:839"^^xsd:string,
+        "952:957"^^xsd:string,
+        "999:1004"^^xsd:string ;
+    data:wdtLink wdt:Q71778 ;
+    :alsoKnownAs "Donatus, Landgrave of Hesse"^^xsd:string,
+        "Heinrich Donatus Philipp Umberto"^^xsd:string,
+        "Heinrich Donatus Philipp Umberto Prinz von Hessen-Kassel Landgraf von Hessen"^^xsd:string ;
+    :hasAncestor data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBrother data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :hasChild data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Prince_Donatus-_Landgrave_of_Hesse,
+        data:Princess_Paulina_of_Hesse_and_by_Rhine,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isBrotherOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isChildOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Princess_Paulina_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Donatus-_Landgrave_of_Hesse ;
+    :isSonOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Princess_Paulina_of_Hesse_and_by_Rhine .
+

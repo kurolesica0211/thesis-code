@@ -2,26 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Pieter_van_Vollenhoven a :Man,
+data:Ari a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasBirthYear 1992 ;
+    :isSonOf data:Gary_Christie_Lewis .
 
-data:Princess_Margriet_of_the_Netherlands a :Person,
+data:Senna_Kowhai a :Person,
         :Woman ;
-    :hasBirthYear 1943 ;
-    :hasFather data:Prince_Bernhard ;
-    :hasSex data:Female ;
-    :isDaughterOf data:Queen_Juliana .
+    :isDaughterOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor .
 
-data:Prince_Bernhard a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Tane_Mahuta a :Man,
+        :Person ;
+    :isSonOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor .
 
-data:Queen_Juliana a :Ancestor,
+data:Birgitte_Duchess_of_Gloucester a :Person,
+        :Woman .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person .
+
+data:Lady_Davina_Windsor a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :alsoKnownAs "Lady Davina Lewis"^^xsd:string ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasRelation data:Gary_Christie_Lewis .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Gary_Christie_Lewis a :Man,
+        :Person ;
+    :hasBirthYear 1970 .
 

@@ -85,33 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Wilhelm Eitel Friedrich Christian Karl of Prussia (7 July 1883 – 8 December 1942) was the second son of Emperor Wilhelm II of Germany by his first wife, Princess Augusta Viktoria of Schleswig-Holstein-Sonderburg-Augustenburg.
-Early life
+David Henry George Lascelles, 8th Earl of Harewood (born 21 October 1950), styled as Viscount Lascelles until July 2011, is a British hereditary peer and film and television producer.
+Early life and earldom
 
-Prince Eitel Friedrich was born on 7 July 1883 as the second son of the then Prince Wilhelm of Prussia, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
-He was born in the Marmorpalais of Potsdam in the Province of Brandenburg, where his parents resided until his father acceded to the throne as Emperor Wilhelm II in 1888.
-He spent his childhood with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother's ancestral Schleswig-Holstein.
-On 27 February 1906, Prince Eitel married Duchess Sophia Charlotte of Oldenburg (2 February 1879 Oldenburg – 29 March 1964 Westerstede) in Berlin.
-In 1907, it was reported that Member of the Reichstag Otto Arendt had proposed the elevation of Alsace-Lorraine to a grand duchy within the empire, with Eitel Friedrich as monarch; however, while the Kaiser did express interest, ultimately nothing came of the plan.
-World War I
-
-Raised at the cadet corps of Plön Castle, Prince Eitel was in the front line from the beginning of World War I and was wounded at Bapaume, where he commanded the Prussian First Foot Guards.
-The two men were hiding in a nearby tree line from what they thought was the advancing Russian army and who turned out to be the grenadiers, guardsmen, and officers of Prince Eitel.
-Regimental Commissions
-
-Source:
+David Henry George Lascelles was born at his parents' London house, 2 Orme Square, Bayswater, London, on 21 October 1950.
+He is the eldest son of the 7th Earl of Harewood and his first wife, Marion Stein.
+He was baptised at All Saints' Church, Harewood.
+His godparents were The Princess Elizabeth, Duchess of Edinburgh (later Queen Elizabeth II), his great-grandmother Queen Mary, his great-aunt Viscountess Boyne (Margaret Hamilton-Russell), his uncle Gerald Lascelles and Benjamin Britten.
+He is a second cousin of King Charles III and a great-grandson of King George V.
 
 
-Orders and decorations
+He succeeded to the Earldom of Harewood on the death of his father in July 2011.
+Career and other activities
 
-Two ships were named after Prince Eitel, the passenger ship Prince Eitel Friedrich (1901) and the Reich postal steamer Prince Eitel Friedrich (1904).
-Berlin, Prussia, 1907.
+Lascelles is a film and television producer.
+In 2007, as part of the commemoration of the bi-centenary of the Abolition of the Slave Trade Act, Lascelles was executive producer of the theatrical project by Geraldine Connor entitled Carnival Messiah that was staged in the grounds of Harewood House, which was built in the 18th century with funds from slave trading.
+Following Connor's death in 2011, Lascelles organised a concert in her memory at West Yorkshire Playhouse, and he is a founder and patron of the Geraldine Connor Foundation, established in 2012 to continue her work and vision by bringing people together through arts and culture.
+As Earl of Harewood, he continues the tradition begun by his father in 1961 by serving as the honorary lifetime president of Leeds United Football Club.
+It is on display in one of the bookcases at Harewood House.
+Personal life
+
+On 12 February 1979, at St Mary's Church, Paddington, London, Lascelles married Margaret Rosalind Messenger, Viscountess Lascelles, daughter of Edgar Frank Messenger.
+Their children are:
+
+
+In 1990, Lascelles married artist Diane Howse, now the Countess of Harewood.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +133,9 @@ Berlin, Prussia, 1907.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +150,23 @@ Berlin, Prussia, 1907.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,88 +458,144 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ca3d2f86-1dfd-4fa8-b994-c8281401d2ab)
- Call ID: ca3d2f86-1dfd-4fa8-b994-c8281401d2ab
+  AssignClass (d34940a6-717a-4e57-b2f7-a3e3932ae142)
+ Call ID: d34940a6-717a-4e57-b2f7-a3e3932ae142
   Args:
+    source: David_Henry_George_Lascelles
     type: :Man
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-  AssignClass (f30a3a0a-4693-4590-b681-e39b97ece048)
- Call ID: f30a3a0a-4693-4590-b681-e39b97ece048
+  AssignClass (4458e971-e80a-4603-a017-4a4f48ae49c9)
+ Call ID: 4458e971-e80a-4603-a017-4a4f48ae49c9
   Args:
     type: :Person
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-  AddLiteral (58dcd1a6-73c0-400f-ad6e-7f84e9e5530a)
- Call ID: 58dcd1a6-73c0-400f-ad6e-7f84e9e5530a
+    source: David_Henry_George_Lascelles
+  AddLiteral (4ef98fd6-8e18-4270-b53e-b317972a53a9)
+ Call ID: 4ef98fd6-8e18-4270-b53e-b317972a53a9
   Args:
     relation: :hasBirthYear
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-    literal_value: 1883
+    literal_value: 1950
+    source: David_Henry_George_Lascelles
     literal_type: xsd:integer
-  AddLiteral (f3e165ce-3eec-46e0-a658-7855f826e094)
- Call ID: f3e165ce-3eec-46e0-a658-7855f826e094
+  AssignClass (4fd28973-321a-4a00-b8a8-d6cbfc967491)
+ Call ID: 4fd28973-321a-4a00-b8a8-d6cbfc967491
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-    literal_value: 1942
-  AssignClass (4658c869-effb-4383-87da-f4eb2c49b3e9)
- Call ID: 4658c869-effb-4383-87da-f4eb2c49b3e9
+    source: Marion_Stein
+    type: :Woman
+  AssignClass (540efbc2-dc6b-4aaa-a0bd-4c68c7dd4035)
+ Call ID: 540efbc2-dc6b-4aaa-a0bd-4c68c7dd4035
+  Args:
+    source: Marion_Stein
+    type: :Person
+  AddTriple (8758e4f0-b25d-458f-a9ea-f067458359c2)
+ Call ID: 8758e4f0-b25d-458f-a9ea-f067458359c2
+  Args:
+    source: David_Henry_George_Lascelles
+    relation: :hasMother
+    target: Marion_Stein
+  AssignClass (054051f8-a482-49c7-8c5e-daf717a72b0e)
+ Call ID: 054051f8-a482-49c7-8c5e-daf717a72b0e
   Args:
     type: :Man
-    source: :Wilhelm_II_of_Germany
-  AssignClass (de212904-e11e-414d-a81e-d891d0e68c56)
- Call ID: de212904-e11e-414d-a81e-d891d0e68c56
+    source: 7th_Earl_of_Harewood
+  AssignClass (063e879d-2b7b-415b-8d35-c7e1ef62719a)
+ Call ID: 063e879d-2b7b-415b-8d35-c7e1ef62719a
   Args:
     type: :Person
-    source: :Wilhelm_II_of_Germany
-  AssignClass (f194b7b1-c0e9-4b3d-add7-e1c72f52fbe5)
- Call ID: f194b7b1-c0e9-4b3d-add7-e1c72f52fbe5
+    source: 7th_Earl_of_Harewood
+  AddTriple (be18293b-cb78-4c67-8257-0ccc87b8fa50)
+ Call ID: be18293b-cb78-4c67-8257-0ccc87b8fa50
   Args:
-    type: :Woman
-    source: :Augusta_Viktoria_of_Schleswig_Holstein
-  AssignClass (e68f91d9-ca3d-4807-b4d2-bd2637239733)
- Call ID: e68f91d9-ca3d-4807-b4d2-bd2637239733
-  Args:
-    type: :Person
-    source: :Augusta_Viktoria_of_Schleswig_Holstein
-  AddTriple (7dc0d166-e430-4354-a7d9-91571ffadce9)
- Call ID: 7dc0d166-e430-4354-a7d9-91571ffadce9
-  Args:
-    target: :Wilhelm_II_of_Germany
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
     relation: :hasFather
-  AddTriple (97ed142e-98a1-4dff-bc4e-148bf0623969)
- Call ID: 97ed142e-98a1-4dff-bc4e-148bf0623969
+    target: 7th_Earl_of_Harewood
+    source: David_Henry_George_Lascelles
+  AssignClass (c471afbb-2419-4500-bcc3-beef3a17c802)
+ Call ID: c471afbb-2419-4500-bcc3-beef3a17c802
   Args:
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-    relation: :hasMother
-    target: :Augusta_Viktoria_of_Schleswig_Holstein
-  AssignClass (887efa33-2ee1-4f24-9563-fa24e5258054)
- Call ID: 887efa33-2ee1-4f24-9563-fa24e5258054
-  Args:
+    source: Margaret_Rosalind_Messenger
     type: :Woman
-    source: :Sophia_Charlotte_of_Oldenburg
-  AssignClass (257f54f3-7621-4779-b056-7b2fcab7712a)
- Call ID: 257f54f3-7621-4779-b056-7b2fcab7712a
+  AssignClass (02e8ce9c-dce8-4d69-b93b-8d412299dd44)
+ Call ID: 02e8ce9c-dce8-4d69-b93b-8d412299dd44
   Args:
     type: :Person
-    source: :Sophia_Charlotte_of_Oldenburg
-  AddLiteral (9a6ffa08-2b66-499d-aa29-f05623835297)
- Call ID: 9a6ffa08-2b66-499d-aa29-f05623835297
+    source: Margaret_Rosalind_Messenger
+  AddLiteral (ac92905e-c3f6-480f-b2b4-9d21040284ff)
+ Call ID: ac92905e-c3f6-480f-b2b4-9d21040284ff
   Args:
     literal_type: xsd:integer
+    literal_value: 1979
+    source: David_Henry_George_Lascelles
     relation: :hasMarriageYear
-    literal_value: 1906
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
-  AddTriple (f9f8038b-8166-4b0f-839c-ba0282dc7a3e)
- Call ID: f9f8038b-8166-4b0f-839c-ba0282dc7a3e
+  AddTriple (ed833982-13cf-4e69-bb40-dcb2b64d7081)
+ Call ID: ed833982-13cf-4e69-bb40-dcb2b64d7081
   Args:
-    source: :Wilhelm_Eitel_Friedrich_of_Prussia
+    source: David_Henry_George_Lascelles
     relation: :hasRelation
-    target: :Sophia_Charlotte_of_Oldenburg
-  Finish (ab94d76f-0d0e-4bb7-96e3-ac0e5f9ea03d)
- Call ID: ab94d76f-0d0e-4bb7-96e3-ac0e5f9ea03d
+    target: Margaret_Rosalind_Messenger
+  AssignClass (25c9ffc8-43bd-4772-bb5f-907972b71187)
+ Call ID: 25c9ffc8-43bd-4772-bb5f-907972b71187
   Args:
+    type: :Man
+    source: Edgar_Frank_Messenger
+  AssignClass (d6084f7d-997e-43ae-84cc-bf77f774173e)
+ Call ID: d6084f7d-997e-43ae-84cc-bf77f774173e
+  Args:
+    source: Edgar_Frank_Messenger
+    type: :Person
+  AddTriple (0f201035-a1a0-456a-b645-953ed1a303c9)
+ Call ID: 0f201035-a1a0-456a-b645-953ed1a303c9
+  Args:
+    target: Edgar_Frank_Messenger
+    relation: :hasFather
+    source: Margaret_Rosalind_Messenger
+  AssignClass (e6ef15e2-2146-4679-9da1-22d5b91c66eb)
+ Call ID: e6ef15e2-2146-4679-9da1-22d5b91c66eb
+  Args:
+    source: Diane_Howse
+    type: :Woman
+  AssignClass (9690d46f-f6bd-4317-864b-db50575ec635)
+ Call ID: 9690d46f-f6bd-4317-864b-db50575ec635
+  Args:
+    source: Diane_Howse
+    type: :Person
+  AddLiteral (d767f8c2-eba8-455a-895c-ebd3ddd95ab6)
+ Call ID: d767f8c2-eba8-455a-895c-ebd3ddd95ab6
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1990
+    source: David_Henry_George_Lascelles
+    relation: :hasMarriageYear
+  AddTriple (50752194-4c67-4418-8f78-58c3c90acf2f)
+ Call ID: 50752194-4c67-4418-8f78-58c3c90acf2f
+  Args:
+    target: Diane_Howse
+    relation: :hasRelation
+    source: David_Henry_George_Lascelles
+  Finish (c20a96e5-1ce8-4e9c-aea5-8c40c39f0e76)
+ Call ID: c20a96e5-1ce8-4e9c-aea5-8c40c39f0e76
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -504,23 +656,31 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Wilhelm_Eitel_Friedrich_of_Prussia a :Man,
+  data:David_Henry_George_Lascelles a :Man,
           :Person ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Wilhelm_II_of_Germany ;
-      :hasMarriageYear 1906 ;
-      :hasMother data:Augusta_Viktoria_of_Schleswig_Holstein ;
-      :hasRelation data:Sophia_Charlotte_of_Oldenburg .
+      :hasBirthYear 1950 ;
+      :hasFather data:7th_Earl_of_Harewood ;
+      :hasMarriageYear 1979,
+          1990 ;
+      :hasMother data:Marion_Stein ;
+      :hasRelation data:Diane_Howse,
+          data:Margaret_Rosalind_Messenger .
 
-  data:Augusta_Viktoria_of_Schleswig_Holstein a :Person,
-          :Woman .
-
-  data:Sophia_Charlotte_of_Oldenburg a :Person,
-          :Woman .
-
-  data:Wilhelm_II_of_Germany a :Man,
+  data:7th_Earl_of_Harewood a :Man,
           :Person .
+
+  data:Diane_Howse a :Person,
+          :Woman .
+
+  data:Edgar_Frank_Messenger a :Man,
+          :Person .
+
+  data:Margaret_Rosalind_Messenger a :Person,
+          :Woman ;
+      :hasFather data:Edgar_Frank_Messenger .
+
+  data:Marion_Stein a :Person,
+          :Woman .
 
 
 
@@ -532,62 +692,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9fcee937-b40e-45ba-ae58-5d063a73ec4f)
- Call ID: 9fcee937-b40e-45ba-ae58-5d063a73ec4f
+  ValidateShacl (46df79e3-0c2c-4698-92de-229c7d39bb1d)
+ Call ID: 46df79e3-0c2c-4698-92de-229c7d39bb1d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:9
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_II_of_Germany is used as the value for the hasFather property, but it is not assigned the mandatory class :Ancestor required by the shape.
+      The node '7th_Earl_of_Harewood' is referenced as a father but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_of_Germany', class=':Ancestor')
+      AssignClass(7th_Earl_of_Harewood, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Augusta_Viktoria_of_Schleswig_Holstein is used as the value for the hasMother property, but it is not assigned the mandatory class :Ancestor required by the shape.
+      The node 'Marion_Stein' is referenced as a mother but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Viktoria_of_Schleswig_Holstein', class=':Ancestor')
+      AssignClass(Marion_Stein, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_II_of_Germany is missing the required class assignment :Ancestor to satisfy the validation constraint for the hasFather property.
+      The node '7th_Earl_of_Harewood' is referenced as a father but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_of_Germany', class=':Ancestor')
+      AssignClass(7th_Earl_of_Harewood, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augusta_Viktoria_of_Schleswig_Holstein is missing the required class assignment :Ancestor to satisfy the validation constraint for the hasMother property.
+      The node 'Edgar_Frank_Messenger' is referenced as a father but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Viktoria_of_Schleswig_Holstein', class=':Ancestor')
+      AssignClass(Edgar_Frank_Messenger, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Wilhelm_II_of_Germany is missing the required class assignment :Ancestor to satisfy the validation constraint for the hasFather property.
+      The node 'Marion_Stein' is referenced as a mother but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_of_Germany', class=':Ancestor')
+      AssignClass(Marion_Stein, :Ancestor)
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '7th_Earl_of_Harewood' is referenced as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(7th_Earl_of_Harewood, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Edgar_Frank_Messenger' is referenced as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edgar_Frank_Messenger, :Ancestor)
+
+
+  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Augusta_Viktoria_of_Schleswig_Holstein is missing the required class assignment :Ancestor to satisfy the validation constraint for the hasMother property.
+      The node 'Marion_Stein' is referenced as a mother but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Viktoria_of_Schleswig_Holstein', class=':Ancestor')
+      AssignClass(Marion_Stein, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Edgar_Frank_Messenger' is referenced as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edgar_Frank_Messenger, :Ancestor)
 
 
 
@@ -596,19 +780,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e69852ed-cd3e-434d-be84-f37510a20904)
- Call ID: e69852ed-cd3e-434d-be84-f37510a20904
-  Args:
-    source: :Wilhelm_II_of_Germany
-    type: :Ancestor
-  AssignClass (5cc7603e-bcf4-4c97-932f-c126a2f518f6)
- Call ID: 5cc7603e-bcf4-4c97-932f-c126a2f518f6
+  AssignClass (2bd64189-a2d4-4bdd-9155-0ea9618ccc3b)
+ Call ID: 2bd64189-a2d4-4bdd-9155-0ea9618ccc3b
   Args:
     type: :Ancestor
-    source: :Augusta_Viktoria_of_Schleswig_Holstein
-  ValidateShacl (05687e09-3fb0-4f87-b115-137ef741d0cc)
- Call ID: 05687e09-3fb0-4f87-b115-137ef741d0cc
+    source: 7th_Earl_of_Harewood
+  AssignClass (6867c630-c205-4d80-8be6-40aca0d1b7d9)
+ Call ID: 6867c630-c205-4d80-8be6-40aca0d1b7d9
   Args:
+    source: Marion_Stein
+    type: :Ancestor
+  AssignClass (df2a20ee-36b8-4367-a4aa-4dc7c36ebbd9)
+ Call ID: df2a20ee-36b8-4367-a4aa-4dc7c36ebbd9
+  Args:
+    type: :Ancestor
+    source: Edgar_Frank_Messenger
+  Finish (a19cfdf8-e333-4273-bbd9-8ac0f0c4520f)
+ Call ID: a19cfdf8-e333-4273-bbd9-8ac0f0c4520f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -621,27 +814,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Wilhelm_Eitel_Friedrich_of_Prussia a :Man,
+  data:David_Henry_George_Lascelles a :Man,
           :Person ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Wilhelm_II_of_Germany ;
-      :hasMarriageYear 1906 ;
-      :hasMother data:Augusta_Viktoria_of_Schleswig_Holstein ;
-      :hasRelation data:Sophia_Charlotte_of_Oldenburg .
+      :hasBirthYear 1950 ;
+      :hasFather data:7th_Earl_of_Harewood ;
+      :hasMarriageYear 1979,
+          1990 ;
+      :hasMother data:Marion_Stein ;
+      :hasRelation data:Diane_Howse,
+          data:Margaret_Rosalind_Messenger .
 
-  data:Augusta_Viktoria_of_Schleswig_Holstein a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Sophia_Charlotte_of_Oldenburg a :Person,
-          :Woman .
-
-  data:Wilhelm_II_of_Germany a :Ancestor,
+  data:7th_Earl_of_Harewood a :Ancestor,
           :Man,
           :Person .
 
+  data:Diane_Howse a :Person,
+          :Woman .
 
+  data:Edgar_Frank_Messenger a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Margaret_Rosalind_Messenger a :Person,
+          :Woman ;
+      :hasFather data:Edgar_Frank_Messenger .
+
+  data:Marion_Stein a :Ancestor,
+          :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (2e2407ed-cdfb-4a7a-9d3c-9de2d346484a)
+ Call ID: 2e2407ed-cdfb-4a7a-9d3c-9de2d346484a
+  Args:
 
 ================================= Tool Message =================================
 
@@ -651,6 +865,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b148d69e-17fa-4ba7-90e1-ad1171cb883b)
- Call ID: b148d69e-17fa-4ba7-90e1-ad1171cb883b
+  Finish (fa108e02-bdd2-4dc4-868f-5d161898b45f)
+ Call ID: fa108e02-bdd2-4dc4-868f-5d161898b45f
   Args:

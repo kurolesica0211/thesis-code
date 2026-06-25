@@ -2,61 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Louis_dOrleans a :Man ;
-    :hasFather data:Jacques_Duke_of_Orleans .
+data:Christian_IX_of_Denmark a :Man,
+        :Person ;
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-data:Foulques_dOrleans a :Man ;
-    :hasFather data:Jacques_Duke_of_Orleans .
+data:Edwina_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia ;
+    :isSisterOf data:Donata_of_Mecklenburg .
 
-data:Francois_son_of_Henri a :Man ;
-    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person ;
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-data:Gundakar_of_Liechtenstein a :Man .
+data:Ernst_II_of_Saxe-Altenburg a :Man,
+        :Person ;
+    :isFatherOf data:Charlotte_of_Saxe-Altenburg .
 
-data:Jean_Duke_of_Vendome a :Man ;
-    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans .
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :isFatherOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_of_Mecklenburg-Schwerin .
 
-data:Jean_Robert_Boeuf a :Man .
+data:Louis_IV_of_Hesse a :Man,
+        :Person ;
+    :isFatherOf data:Sigismund_of_Prussia_Parent .
 
-data:Louis_Alphonse_Duke_of_Anjou a :Man .
+data:Louise_of_Hesse-Kassel a :Person,
+        :Woman ;
+    :isMotherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Woman ;
-    :hasFather data:Luis_Cousino_y_Sebire ;
-    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+data:Sigismund_of_Prussia a :Man,
+        :Person ;
+    :isFatherOf data:Barbara_of_Prussia .
 
-data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Woman .
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-data:Diane_sister_of_Henri a :Woman .
+data:Victoria_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :isMotherOf data:Alice_of_Hesse_and_by_Rhine .
 
-data:Francois_brother_of_Henri a :Man .
+data:Alice_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    :isMotherOf data:Sigismund_of_Prussia_Parent .
 
-data:Henri_Count_of_Paris a :Man .
+data:Charlotte_of_Saxe-Altenburg a :Person,
+        :Woman ;
+    :isMotherOf data:Barbara_of_Prussia .
 
-data:Isabelle_of_Orleans_Braganza a :Woman .
+data:Donata_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia .
 
-data:Luis_Cousino_y_Sebire a :Man .
+data:Friedrich_Franz_of_Mecklenburg-Schwerin a :Man,
+        :Person .
 
-data:Marie_Therese_of_Wurttemberg a :Woman .
+data:Sigismund_of_Prussia_Parent a :Man,
+        :Person .
 
-data:Marie_daughter_of_Henri a :Woman ;
-    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
-    :hasMother data:Marie_Therese_of_Wurttemberg .
+data:Alexandra_of_Hanover_and_Cumberland a :Person,
+        :Woman ;
+    :isMotherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
 
-data:Michel_Count_of_Evreux a :Man .
+data:Barbara_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 .
 
-data:Thibaut_Count_of_La_Marche a :Man .
-
-data:Henri_Philippe_Pierre_Marie_dOrleans a :Man ;
-    :hasBirthYear 1933 ;
-    :hasBrother data:Francois_brother_of_Henri,
-        data:Jacques_Duke_of_Orleans,
-        data:Michel_Count_of_Evreux,
-        data:Thibaut_Count_of_La_Marche ;
-    :hasDaughter data:Marie_daughter_of_Henri ;
-    :hasDeathYear 2019 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Isabelle_of_Orleans_Braganza ;
-    :hasSister data:Diane_sister_of_Henri .
-
-data:Jacques_Duke_of_Orleans a :Man .
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :isBrotherOf data:Friedrich_Franz_of_Mecklenburg-Schwerin .
 

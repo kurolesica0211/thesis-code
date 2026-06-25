@@ -2,23 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Blanche_of_Orleans a :Person,
-        :Woman ;
-    :hasFather data:Henri_of_Orleans ;
-    :hasMother data:Marie-Therese_of_Wurttemberg ;
-    :isSisterOf data:Francois_of_Orleans .
-
-data:Francois_of_Orleans a :Man,
+data:Alexander a :Man,
         :Person ;
-    :hasBirthYear 1961 ;
-    :hasDeathYear 2017 ;
-    :hasFather data:Henri_of_Orleans ;
-    :hasMother data:Marie-Therese_of_Wurttemberg ;
-    :hasSex "Male"^^xsd:string .
+    :hasParent data:Sophie,
+        data:WilliamIII ;
+    :isSiblingOf data:Maurice,
+        data:WilliamBrother .
 
-data:Henri_of_Orleans a :Man,
+data:Maurice a :Man,
+        :Person ;
+    :hasBirthYear 1843 ;
+    :hasDeathYear 1850 ;
+    :hasFather data:WilliamIII ;
+    :hasMother data:Sophie ;
+    :isSiblingOf data:WilliamBrother .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:WilliamBrother a :Man,
         :Person .
 
-data:Marie-Therese_of_Wurttemberg a :Person,
-        :Woman .
+data:WilliamIII a :Man,
+        :Person .
 

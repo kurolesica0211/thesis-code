@@ -2,38 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elisabeth_of_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1935 ;
-    :hasBrother data:Christian_of_Denmark,
-        data:Ingolf_of_Denmark ;
-    :hasDeathYear 2018 ;
-    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;
-    :hasMother data:Caroline-Mathilde_of_Denmark .
+data:Alexander_Nixon a :Man ;
+    :hasBirthYear 1964 .
 
-data:Frederik_IX a :Man,
-        :Person .
+data:Elisabeta-Karina a :Woman ;
+    :isDaughterOf data:Princess_Elena .
 
-data:Margrethe_II a :Person,
-        :Woman .
+data:Prince_Nicholas a :Man ;
+    :isSonOf data:Princess_Elena,
+        data:Robin_Medforth-Mills .
 
-data:Christian_X a :Man,
-        :Person .
+data:Prince_Radu a :Man .
 
-data:Christian_of_Denmark a :Man,
-        :Person ;
-    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;
-    :hasMother data:Caroline-Mathilde_of_Denmark .
+data:King_Michael_I a :Man .
 
-data:Ingolf_of_Denmark a :Man,
-        :Person ;
-    :hasFather data:Knud_Hereditary_Prince_of_Denmark ;
-    :hasMother data:Caroline-Mathilde_of_Denmark .
+data:Margareta a :Woman .
 
-data:Caroline-Mathilde_of_Denmark a :Person,
-        :Woman .
+data:Princess_Irina a :Woman .
 
-data:Knud_Hereditary_Prince_of_Denmark a :Man,
-        :Person ;
-    :hasFather data:Christian_X .
+data:Princess_Maria a :Woman .
+
+data:Princess_Sophie a :Woman .
+
+data:Queen_Anne a :Woman .
+
+data:Robin_Medforth-Mills a :Man ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 .
+
+data:Princess_Elena a :Woman ;
+    :hasBirthYear 1950 ;
+    :hasFather data:King_Michael_I ;
+    :hasMarriageYear 1983,
+        1998 ;
+    :hasMother data:Queen_Anne ;
+    :isSisterOf data:Margareta,
+        data:Princess_Irina,
+        data:Princess_Maria,
+        data:Princess_Sophie .
 

@@ -1,54 +1,104 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/271_271",
-  "text_file": "Q3741799.txt",
-  "text_key": "Q3741799",
-  "article": "https://en.wikipedia.org/wiki/Flora_Ogilvy",
-  "article_key": "Flora Ogilvy",
+  "text_file": "Q3736843.txt",
+  "text_key": "Q3736843",
+  "article": "https://en.wikipedia.org/wiki/Edward_Windsor,_Lord_Downpatrick",
+  "article_key": "Edward Windsor, Lord Downpatrick",
   "main_entity": {
-    "uri": "http://example.com/data#Flora_Vesterberg",
-    "qid": "Q3741799",
-    "label": "Flora Vesterberg"
+    "uri": "http://example.com/data#Edward_Windsor-_Lord_Downpatrick",
+    "qid": "Q3736843",
+    "label": "Edward Windsor, Lord Downpatrick"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Flora_Vesterberg",
-      "qid": "Q3741799",
-      "label": "Flora Vesterberg",
+      "uri": "http://example.com/data#Edward_Windsor-_Lord_Downpatrick",
+      "qid": "Q3736843",
+      "label": "Edward Windsor, Lord Downpatrick",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Julia_Ogilvy",
-      "qid": "Q15956270",
-      "label": "Julia Ogilvy",
+      "uri": "http://example.com/data#George_Windsor-_Earl_of_St_Andrews",
+      "qid": "Q1009513",
+      "label": "George Windsor, Earl of St Andrews",
       "distance": 1,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Lord_Nicholas_Windsor",
+      "qid": "Q1217757",
+      "label": "Lord Nicholas Windsor",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Julia_Caroline_Rawlinson",
-      "extracted_local_name": "Julia_Caroline_Rawlinson",
-      "embedding_text": "Julia Caroline Rawlinson",
-      "extracted_gender": "female",
+      "extracted_uri": "http://example.org/data/Lord_Nicholas_Windsor",
+      "extracted_local_name": "Lord_Nicholas_Windsor",
+      "embedding_text": "Lord Nicholas Windsor",
+      "extracted_gender": "male",
       "matched": true,
       "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Julia_Ogilvy",
-      "ground_truth_qid": "Q15956270",
-      "ground_truth_label": "Julia Ogilvy",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Julia Caroline Rawlinson",
-      "best_candidate_label": "Julia Ogilvy",
-      "best_candidate_qid": "Q15956270",
-      "best_candidate_gender": "female",
+      "ground_truth_uri": "http://example.com/data#Lord_Nicholas_Windsor",
+      "ground_truth_qid": "Q1217757",
+      "ground_truth_label": "Lord Nicholas Windsor",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lord Nicholas Windsor",
+      "best_candidate_label": "Lord Nicholas Windsor",
+      "best_candidate_qid": "Q1217757",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Charles_Frederick_Melville_Rawlinson",
-      "extracted_local_name": "Charles_Frederick_Melville_Rawlinson",
-      "embedding_text": "Charles Frederick Melville Rawlinson",
+      "extracted_uri": "http://example.org/data/Prince_Edward_Duke_of_Kent",
+      "extracted_local_name": "Prince_Edward_Duke_of_Kent",
+      "embedding_text": "Prince Edward Duke of Kent",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9855072463768115,
+      "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "ground_truth_qid": "Q158258",
+      "ground_truth_label": "Prince Edward, Duke of Kent",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Edward- Duke of Kent",
+      "best_candidate_label": "Prince Edward, Duke of Kent",
+      "best_candidate_qid": "Q158258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9855072463768115
+    },
+    {
+      "extracted_uri": "http://example.org/data/Edward_Edmund_Maximilian_George_Windsor",
+      "extracted_local_name": "Edward_Edmund_Maximilian_George_Windsor",
+      "embedding_text": "Edward Edmund Maximilian George Windsor",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.5283018867924528,
+      "ground_truth_uri": "http://example.com/data#George_Windsor-_Earl_of_St_Andrews",
+      "ground_truth_qid": "Q1009513",
+      "ground_truth_label": "George Windsor, Earl of St Andrews",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George Windsor",
+      "best_candidate_label": "George Windsor, Earl of St Andrews",
+      "best_candidate_qid": "Q1009513",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5283018867924528
+    },
+    {
+      "extracted_uri": "http://example.org/data/George_Windsor_Earl_of_St_Andrews",
+      "extracted_local_name": "George_Windsor_Earl_of_St_Andrews",
+      "embedding_text": "George Windsor Earl of St Andrews",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -57,34 +107,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Edward Edmund Maximilian George Windsor, Baron Downpatrick",
+      "best_candidate_label": "Edward Windsor, Lord Downpatrick",
+      "best_candidate_qid": "Q3736843",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.46153846153846156
     },
     {
-      "extracted_uri": "http://example.org/data/James_Robert_Bruce_Ogilvy",
-      "extracted_local_name": "James_Robert_Bruce_Ogilvy",
-      "embedding_text": "James Robert Bruce Ogilvy",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
-    },
-    {
-      "extracted_uri": "http://example.org/data/Marina_Ogilvy",
-      "extracted_local_name": "Marina_Ogilvy",
-      "embedding_text": "Marina Ogilvy",
+      "extracted_uri": "http://example.org/data/Sylvana_Countess_of_St_Andrews",
+      "extracted_local_name": "Sylvana_Countess_of_St_Andrews",
+      "embedding_text": "Sylvana Countess of St Andrews",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -93,16 +125,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Flora Vesterberg",
-      "best_candidate_label": "Flora Vesterberg",
-      "best_candidate_qid": "Q3741799",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.0
+      "best_candidate_match_text": "Edward Edmund Maximilian George Windsor, Baron Downpatrick",
+      "best_candidate_label": "Edward Windsor, Lord Downpatrick",
+      "best_candidate_qid": "Q3736843",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.25
     }
   ],
   "summary": {
-    "entities_total": 4,
-    "entities_matched": 1,
-    "entities_unmatched": 3
+    "entities_total": 5,
+    "entities_matched": 3,
+    "entities_unmatched": 2
   }
 }

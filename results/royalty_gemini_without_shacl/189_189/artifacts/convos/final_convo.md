@@ -69,26 +69,73 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Granville James Leveson-Gower, 5th Earl Granville MC (6 December 1918 – 31 October 1996) was a British soldier, banker, peer, and landowner, a member of the House of Lords from 1953 until his death.
+The Crown PrinceThe Crown Princess
+
+
+Princess Tomislav
+
+
+Princess Alexander
+
+
+Princess Elizabeth
+
+
+Princess Elizabeth of Yugoslavia (Serbian: Jelisaveta Karađorđević, Јелисавета Карађорђевић; born 7 April 1936) is a member of the royal House of Karađorđević, a human rights activist and a former presidential candidate for Serbia.
 Early life
 
-The son of Vice-Admiral William Leveson-Gower, 4th Earl Granville, and his wife Lady Rose Bowes-Lyon, a daughter of Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne, he was educated at Eton College.
-Known formally as Lord Leveson until 1953, he was commissioned into the Coldstream Guards and saw active service during the Second World War, in which he was twice wounded and mentioned in despatches.
-Later career
+Princess Elizabeth was born in the White Palace, Belgrade as the third child and the only daughter of Prince Paul of Yugoslavia (prince regent of Yugoslavia 1934–1941) and Princess Olga of Greece and Denmark.
+Her older brothers were Prince Nicholas and Prince Alexander of Yugoslavia, who married, firstly, Princess Maria Pia of Savoy and, secondly, Princess Barbara of Liechtenstein.
+She is a paternal second cousin of Queen Sofía of Spain and King Charles III, and a maternal first cousin of Prince Edward, Duke of Kent and his siblings, Prince Michael of Kent and Princess Alexandra, The Honourable Lady Ogilvy.
+She is a maternal third cousin of king Willem-Alexander of the Netherlands.
+Elizabeth is also a great-great-granddaughter of Karađorđe, who started the first Serbian uprising against the Turks in 1804.
+Her godmother and namesake was her maternal aunt, Princess Elizabeth of Greece and Denmark.
+Elizabeth was educated in Kenya, South Africa, United Kingdom, Switzerland, and Paris, where she studied the history of fine art.
+Together with her brother Alexander, she took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+On this trip, Alexander met his first wife, Maria Pia of Savoy, a daughter of Umberto II of Italy and Marie-José of Belgium, while Elizabeth fell in love for the first time with her cousin, Prince Karl of Hesse.
+Later, she developed a passion for a Russian nobleman, Prince Michel Obolensky (1926–1995), youngest brother of a family friend, Princess Irina Obolensky, but she was prevented from pursuing the relationship as her parents had another suitor in mind, Baudouin of Belgium.
+Marriages and children
 
-After the war, Lord Leveson joined Coutts & Co., a private bank.
-On 25 June 1953, he succeeded his father as Earl Granville (created 1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), giving him a seat in the House of Lords.
-In 1958, Granville married Doon Aileen Plunket, daughter of Brindsley Sheridan Bushe Plunket and granddaughter of William Plunket, 5th Baron Plunket.
-Her mother was Aileen Sibell Mary Guinness, a granddaughter of Edward Guinness, 1st Earl of Iveagh.
-In 1960, shortly after the birth of his first child, Granville bought the island of North Uist in the Outer Hebrides from the Duke of Hamilton, becoming its laird.
-In 1974 Granville was appointed as a Deputy Lieutenant of Inverness-shire and was Vice-Lord-Lieutenant of the Western Isles between January 1976 and 1983, then Lord-Lieutenant from 1983 to December 1993, when he was succeeded by Viscount Dunrossil.
+On 21 January 1960, Princess Elizabeth married firstly Howard Oxenberg (1919–2010), an American Jewish dress manufacturer and close friend of the Kennedy family.
+They have two daughters (and three granddaughters):
+
+
+Princess Elizabeth's second marriage was to Neil Balfour of Dawyck (born 1944) on 23 September 1969.
+He was the grandson of Alexander Balfour, founder of the Liverpool shipping company Balfour Williamson.
+In 1974, she was briefly engaged to an actor Richard Burton, after his first divorce from Elizabeth Taylor.
+Princess Elizabeth was married a third time, to former Prime Minister of Peru Manuel Ulloa Elías (1922–1992) on 28 February 1987.
+In 1992 Ulloa Elías died, which made the princess officially a widow.
+Career
+
+A businesswoman and writer, Elizabeth is the author of four storybooks for children and has created two perfumes- "Jelisaveta" and "E".
+Elizabeth recognized early the warning signs of what would eventually be known as Balkanization in Yugoslavia.
+Working behind the scenes through United Nations programs, she also journeyed to the Vatican in 1989 to ask Monsignor Tauran, then Holy See Secretary for Relations with States, to help improve relations between Catholic and Orthodox communities in Yugoslavia.
+In December 1990, she created the Princess Elizabeth Foundation, a non-political, not-for-profit organization after foreseeing the crucial importance of a vehicle to address the tension brewing just below the surface.
+Before the breakup of Yugoslavia began in 1991, she invited the Orthodox Bishop Sava and the Mufti of Belgrade, along with the Yugoslav Minister for Religious Affairs to attend a conference in Moscow that was hosted by Mikhail Gorbachev.
+In 2002, Princess Elizabeth received the first Nuclear Disarmament Forum Award, the Demiurgus Peace International (accompanying president Vladimir Putin, Archbishop Desmond Tutu, Ted Turner and others), for outstanding achievements in the field of strengthening peace among nations in Zug, Switzerland.
+She decided to run for President of Serbia in the 2004 Serbian presidential election, despite her cousin Alexander's having objected that the Royal Family should stay out of politics.
+Royal property
+
+After the death of King Alexander I, and during the Regency administration (of Regent Prince Paul, Radenko Stanković, and Ivo Perović) that followed, the City of Belgrade District Court issued Decree N° 0.428/34 on 27 October 1938.
+The decree, which became official law on 4 March 1939, pronounced King Alexander
+I's underage sons Crown Prince Peter, Prince Tomislav, and Prince Andrew, in equal parts, heirs to his entire estate.
+On 2 August 1947, Edvard Kardelj, then vice-president of the Socialist Federal Republic of Yugoslavia, issued a decree that confiscated all these properties from the Karadjordjević family.
+The decree by the National Assembly of the Presidency of the People's Federal Republic of Yugoslavia was abolished in 2001, after the deposing of Slobodan Milošević.
+The new government of Yugoslavia restored to all members of the royal family both their citizenship and the use of the royal complex in Dedinje.
+In 2013, it was announced that the villa "Crnogorka" (meaning Montenegrin), in Uzička Street, Dedinje, was to be returned to Princess Elizabeth.
+The villa had been bought in 1940 by her mother Princess Olga and taken by the state in 1947.
+Elizabeth settled permanently in Belgrade, living at the Villa "Montenegrina", until she sold it in 2018.
+Arms
+
+Princess Elizabeth was granted heraldic arms on 20 June 2008.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +151,9 @@ In 1974 Granville was appointed as a Deputy Lieutenant of Inverness-shire and wa
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +168,23 @@ In 1974 Granville was appointed as a Deputy Lieutenant of Inverness-shire and wa
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,207 +476,138 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c78ff800-ea18-4b28-ba90-4798c60e5e09)
- Call ID: c78ff800-ea18-4b28-ba90-4798c60e5e09
+  AssignClass (c319d2e8-e013-45f4-b370-80c56b9f3aae)
+ Call ID: c319d2e8-e013-45f4-b370-80c56b9f3aae
   Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Woman
+  AssignClass (7d0121ea-3d06-42c3-9c34-33078d7bcd5f)
+ Call ID: 7d0121ea-3d06-42c3-9c34-33078d7bcd5f
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
     type: :Person
-    source: Granville_James_Leveson-Gower
-  AssignClass (42f778d0-41fb-441c-ac90-c1602e89cc96)
- Call ID: 42f778d0-41fb-441c-ac90-c1602e89cc96
+  AddLiteral (1fc680b6-d5f4-4bbd-a15f-09c14d7da621)
+ Call ID: 1fc680b6-d5f4-4bbd-a15f-09c14d7da621
   Args:
-    type: :Man
-    source: Granville_James_Leveson-Gower
-  AddLiteral (b4de4fbb-d416-40bc-b902-5053be7d070f)
- Call ID: b4de4fbb-d416-40bc-b902-5053be7d070f
-  Args:
-    source: Granville_James_Leveson-Gower
-    literal_type: xsd:integer
-    literal_value: 1918
     relation: :hasBirthYear
-  AddLiteral (bc911552-c067-4aaf-8b69-1fcfc5b38cf3)
- Call ID: bc911552-c067-4aaf-8b69-1fcfc5b38cf3
-  Args:
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 1996
-    source: Granville_James_Leveson-Gower
-  AssignClass (092b45e0-73aa-464b-9a49-766afc4afe7f)
- Call ID: 092b45e0-73aa-464b-9a49-766afc4afe7f
+    source: Princess_Elizabeth_of_Yugoslavia
+    literal_value: 1936
+  AssignClass (b77e47d6-1e86-4d10-8da1-8fce59aa7760)
+ Call ID: b77e47d6-1e86-4d10-8da1-8fce59aa7760
   Args:
-    type: :Person
-    source: William_Leveson-Gower
-  AssignClass (8679cd80-f168-4be5-8b1a-dab7e31db567)
- Call ID: 8679cd80-f168-4be5-8b1a-dab7e31db567
-  Args:
+    source: Prince_Paul_of_Yugoslavia
     type: :Man
-    source: William_Leveson-Gower
-  AssignClass (dde4af75-aaf8-486c-9a90-9908a493ae92)
- Call ID: dde4af75-aaf8-486c-9a90-9908a493ae92
+  AssignClass (efd253ca-610a-4a4d-b87b-659201027239)
+ Call ID: efd253ca-610a-4a4d-b87b-659201027239
   Args:
-    type: :Ancestor
-    source: William_Leveson-Gower
-  AddTriple (2c134f9a-d645-4e05-b378-3882d27dbd0f)
- Call ID: 2c134f9a-d645-4e05-b378-3882d27dbd0f
+    source: Prince_Paul_of_Yugoslavia
+    type: :Person
+  AssignClass (33208e20-d002-427a-b6fe-0ff4517aa3f6)
+ Call ID: 33208e20-d002-427a-b6fe-0ff4517aa3f6
   Args:
-    relation: :hasFather
-    source: Granville_James_Leveson-Gower
-    target: William_Leveson-Gower
-  AssignClass (fb003f89-21be-47b6-bd0f-b72f4076397b)
- Call ID: fb003f89-21be-47b6-bd0f-b72f4076397b
+    source: Princess_Olga_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (c4a56b26-9de1-4616-bb98-d6edcbc7b77d)
+ Call ID: c4a56b26-9de1-4616-bb98-d6edcbc7b77d
   Args:
     type: :Person
-    source: Rose_Bowes-Lyon
-  AssignClass (c08cc60c-20d9-4326-86a6-04a179531ba6)
- Call ID: c08cc60c-20d9-4326-86a6-04a179531ba6
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddTriple (6a45c534-8ee6-44bc-8cec-1e4500baa94f)
+ Call ID: 6a45c534-8ee6-44bc-8cec-1e4500baa94f
   Args:
-    type: :Woman
-    source: Rose_Bowes-Lyon
-  AssignClass (10bf8b59-8709-473a-a139-1d95ac4f24b7)
- Call ID: 10bf8b59-8709-473a-a139-1d95ac4f24b7
+    target: Prince_Paul_of_Yugoslavia
+    source: Princess_Elizabeth_of_Yugoslavia
+    relation: :hasFather
+  AddTriple (e0feebc6-6b42-4f1e-bd4b-75e8e6addec8)
+ Call ID: e0feebc6-6b42-4f1e-bd4b-75e8e6addec8
   Args:
-    type: :Ancestor
-    source: Rose_Bowes-Lyon
-  AddTriple (a9513bd1-d540-4f3f-8610-6406dfc06cb4)
- Call ID: a9513bd1-d540-4f3f-8610-6406dfc06cb4
-  Args:
-    source: Granville_James_Leveson-Gower
     relation: :hasMother
-    target: Rose_Bowes-Lyon
-  AssignClass (46e6ccdb-901c-420f-8097-1995cd70cd8b)
- Call ID: 46e6ccdb-901c-420f-8097-1995cd70cd8b
-  Args:
-    type: :Person
-    source: Claude_Bowes-Lyon
-  AssignClass (105479de-0301-482d-9489-2e4f9283ae7b)
- Call ID: 105479de-0301-482d-9489-2e4f9283ae7b
+    target: Princess_Olga_of_Greece_and_Denmark
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (46f90854-5eca-4709-8201-5ca3b12bc4f6)
+ Call ID: 46f90854-5eca-4709-8201-5ca3b12bc4f6
   Args:
     type: :Man
-    source: Claude_Bowes-Lyon
-  AssignClass (68994629-4531-42e8-962e-c4c90ac70cd5)
- Call ID: 68994629-4531-42e8-962e-c4c90ac70cd5
-  Args:
-    type: :Ancestor
-    source: Claude_Bowes-Lyon
-  AddTriple (184ac11e-65de-4086-a926-162f3400ae8a)
- Call ID: 184ac11e-65de-4086-a926-162f3400ae8a
-  Args:
-    source: Rose_Bowes-Lyon
-    relation: :hasFather
-    target: Claude_Bowes-Lyon
-  AddLiteral (276716e1-23c3-434c-b94d-5f987ae143b1)
- Call ID: 276716e1-23c3-434c-b94d-5f987ae143b1
-  Args:
-    source: Granville_James_Leveson-Gower
-    literal_value: Lord Leveson
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-  AssignClass (d54455d3-4e94-4e6c-a361-b42a25d231ce)
- Call ID: d54455d3-4e94-4e6c-a361-b42a25d231ce
+    source: Prince_Nicholas_of_Yugoslavia
+  AssignClass (34af70eb-d2f5-4c91-92dd-68f4edc547f6)
+ Call ID: 34af70eb-d2f5-4c91-92dd-68f4edc547f6
   Args:
     type: :Person
-    source: Doon_Aileen_Plunket
-  AssignClass (9104a8b3-25de-4588-838a-6ef088ae71bb)
- Call ID: 9104a8b3-25de-4588-838a-6ef088ae71bb
+    source: Prince_Nicholas_of_Yugoslavia
+  AddTriple (2614d24b-e7e9-433b-b49e-905a349afa90)
+ Call ID: 2614d24b-e7e9-433b-b49e-905a349afa90
   Args:
-    type: :Woman
-    source: Doon_Aileen_Plunket
-  AddLiteral (6c3b2648-d878-4d0f-8988-37d7157cd772)
- Call ID: 6c3b2648-d878-4d0f-8988-37d7157cd772
+    relation: :hasBrother
+    target: Prince_Nicholas_of_Yugoslavia
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (5ca63a63-0a2a-45db-9832-1c8d185c7007)
+ Call ID: 5ca63a63-0a2a-45db-9832-1c8d185c7007
   Args:
-    source: Granville_James_Leveson-Gower
-    literal_type: xsd:integer
-    literal_value: 1958
+    type: :Man
+    source: Prince_Alexander_of_Yugoslavia
+  AssignClass (c473c267-fcac-4717-ab32-1858ad5a71a2)
+ Call ID: c473c267-fcac-4717-ab32-1858ad5a71a2
+  Args:
+    type: :Person
+    source: Prince_Alexander_of_Yugoslavia
+  AddTriple (c5b11a60-6e46-4d91-8c6d-92562dced135)
+ Call ID: c5b11a60-6e46-4d91-8c6d-92562dced135
+  Args:
+    relation: :hasBrother
+    target: Prince_Alexander_of_Yugoslavia
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (959b889d-07e8-45c6-9bed-323af81db81a)
+ Call ID: 959b889d-07e8-45c6-9bed-323af81db81a
+  Args:
+    source: Howard_Oxenberg
+    type: :Man
+  AssignClass (35f2bab3-b159-4f5a-82cc-10768201d42c)
+ Call ID: 35f2bab3-b159-4f5a-82cc-10768201d42c
+  Args:
+    type: :Person
+    source: Howard_Oxenberg
+  AddLiteral (35961818-3c3e-4980-9967-9579b7167a0b)
+ Call ID: 35961818-3c3e-4980-9967-9579b7167a0b
+  Args:
+    literal_value: 1960
     relation: :hasMarriageYear
-  AddTriple (59c02f94-2dda-4e94-8fc9-785bdb5fb281)
- Call ID: 59c02f94-2dda-4e94-8fc9-785bdb5fb281
+    literal_type: xsd:integer
+    source: Howard_Oxenberg
+  AssignClass (bf628c4f-65d2-4e69-946f-b37660d2eaec)
+ Call ID: bf628c4f-65d2-4e69-946f-b37660d2eaec
   Args:
-    target: Doon_Aileen_Plunket
-    relation: :hasRelation
-    source: Granville_James_Leveson-Gower
-  AssignClass (85eedecb-7f76-4af6-8165-6f4a2253298a)
- Call ID: 85eedecb-7f76-4af6-8165-6f4a2253298a
+    source: Neil_Balfour_of_Dawyck
+    type: :Man
+  AssignClass (5c9ff5ca-f136-4e12-920b-f69b4ec95558)
+ Call ID: 5c9ff5ca-f136-4e12-920b-f69b4ec95558
   Args:
+    source: Neil_Balfour_of_Dawyck
     type: :Person
-    source: Brindsley_Sheridan_Bushe_Plunket
-  AssignClass (714408ea-d2fa-4847-b815-30342e44a442)
- Call ID: 714408ea-d2fa-4847-b815-30342e44a442
+  AddLiteral (a5ed7c1a-7f54-4940-acbf-7c2379691f52)
+ Call ID: a5ed7c1a-7f54-4940-acbf-7c2379691f52
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Neil_Balfour_of_Dawyck
+    literal_value: 1969
+  AssignClass (340502ab-29be-460d-b24a-b26e4529ec1f)
+ Call ID: 340502ab-29be-460d-b24a-b26e4529ec1f
   Args:
     type: :Man
-    source: Brindsley_Sheridan_Bushe_Plunket
-  AssignClass (2003d8db-d937-4ed9-9d4e-5b1c364d3f9b)
- Call ID: 2003d8db-d937-4ed9-9d4e-5b1c364d3f9b
-  Args:
-    type: :Ancestor
-    source: Brindsley_Sheridan_Bushe_Plunket
-  AddTriple (07571be1-b318-4c7b-82c1-ba447f46a9d9)
- Call ID: 07571be1-b318-4c7b-82c1-ba447f46a9d9
-  Args:
-    target: Brindsley_Sheridan_Bushe_Plunket
-    source: Doon_Aileen_Plunket
-    relation: :hasFather
-  AssignClass (77c060ec-b706-4333-829e-daebe44bd250)
- Call ID: 77c060ec-b706-4333-829e-daebe44bd250
+    source: Manuel_Ulloa_Elias
+  AssignClass (25c1510c-cee5-4e3b-a577-415a5abcf95b)
+ Call ID: 25c1510c-cee5-4e3b-a577-415a5abcf95b
   Args:
     type: :Person
-    source: William_Plunket
-  AssignClass (ddd04494-8747-4318-868d-98c7d23f8c97)
- Call ID: ddd04494-8747-4318-868d-98c7d23f8c97
+    source: Manuel_Ulloa_Elias
+  AddLiteral (8ef9c609-c1d6-4960-a14e-9b161be4c029)
+ Call ID: 8ef9c609-c1d6-4960-a14e-9b161be4c029
   Args:
-    type: :Man
-    source: William_Plunket
-  AssignClass (56ed0fcc-ed1a-485c-80a3-24545d775477)
- Call ID: 56ed0fcc-ed1a-485c-80a3-24545d775477
-  Args:
-    type: :Ancestor
-    source: William_Plunket
-  AddTriple (67732ae0-a4b5-4ece-906c-a426739052ce)
- Call ID: 67732ae0-a4b5-4ece-906c-a426739052ce
-  Args:
-    target: William_Plunket
-    relation: :hasFather
-    source: Brindsley_Sheridan_Bushe_Plunket
-  AssignClass (e623f782-6d04-4196-99db-a002d7b8e325)
- Call ID: e623f782-6d04-4196-99db-a002d7b8e325
-  Args:
-    type: :Person
-    source: Aileen_Sibell_Mary_Guinness
-  AssignClass (b2e6b58e-b399-4d16-b2e4-25b9e459e870)
- Call ID: b2e6b58e-b399-4d16-b2e4-25b9e459e870
-  Args:
-    type: :Woman
-    source: Aileen_Sibell_Mary_Guinness
-  AssignClass (5e51b50d-a83b-412b-8b39-c26f2701766f)
- Call ID: 5e51b50d-a83b-412b-8b39-c26f2701766f
-  Args:
-    type: :Ancestor
-    source: Aileen_Sibell_Mary_Guinness
-  AddTriple (64a414a6-6d4a-45a5-b4b6-f55ce683a8d7)
- Call ID: 64a414a6-6d4a-45a5-b4b6-f55ce683a8d7
-  Args:
-    target: Aileen_Sibell_Mary_Guinness
-    relation: :hasMother
-    source: Doon_Aileen_Plunket
-  AssignClass (0fdd3522-0cfe-4adf-833d-3fbaa61530c1)
- Call ID: 0fdd3522-0cfe-4adf-833d-3fbaa61530c1
-  Args:
-    type: :Person
-    source: Edward_Guinness
-  AssignClass (d8751281-232b-400f-81fc-63bb7b42b0e7)
- Call ID: d8751281-232b-400f-81fc-63bb7b42b0e7
-  Args:
-    type: :Man
-    source: Edward_Guinness
-  AssignClass (49ffe66a-a9d3-42f9-a868-f34f7488f348)
- Call ID: 49ffe66a-a9d3-42f9-a868-f34f7488f348
-  Args:
-    type: :Ancestor
-    source: Edward_Guinness
-  AddTriple (ccc03b11-56f3-433b-b32c-542d1e7c164a)
- Call ID: ccc03b11-56f3-433b-b32c-542d1e7c164a
-  Args:
-    source: Aileen_Sibell_Mary_Guinness
-    relation: :hasFather
-    target: Edward_Guinness
-  Finish (c127273c-31c3-442a-9021-15f66613d23e)
- Call ID: c127273c-31c3-442a-9021-15f66613d23e
+    literal_value: 1987
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Manuel_Ulloa_Elias
+  Finish (35c656ac-2485-4cfd-9e86-5fb718514f75)
+ Call ID: 35c656ac-2485-4cfd-9e86-5fb718514f75
   Args:

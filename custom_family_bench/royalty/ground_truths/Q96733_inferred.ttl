@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Duchess Woizlawa Feodora of Mecklenburg-Schwerin"^^xsd:string ;
+    data:wdtLink wdt:Q96733 ;
+    :alsoKnownAs "Woizlawa-Feodora Herzogin von Mecklenburg-Schwerin"^^xsd:string ;
+    :hasRelation data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Woizlawa_Feodora_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_II a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "220:240"^^xsd:string,
+        "220:276"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasRelation data:Frederick_Francis_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isSiblingOf data:Frederick_Francis_II .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt"^^xsd:string ;
+    data:posIndicesFull "307:347"^^xsd:string ;
+    data:posIndicesPart "1095:1103"^^xsd:string,
+        "1193:1201"^^xsd:string,
+        "1216:1224"^^xsd:string,
+        "1469:1477"^^xsd:string,
+        "529:537"^^xsd:string,
+        "586:594"^^xsd:string,
+        "782:790"^^xsd:string ;
+    data:wdtLink wdt:Q154388 ;
+    :hasRelation data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Princess_Marie_of_Schwarzburg-Rudolstadt .
+

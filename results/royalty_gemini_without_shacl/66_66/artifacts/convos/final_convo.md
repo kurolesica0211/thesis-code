@@ -209,7 +209,6 @@ The Defence Secretary, Denis Healey, interviewed the forty most senior officials
 Mountbatten was appointed Colonel of The Life Guards and Gold Stick in Waiting on 29 January 1965, and Life Colonel Commandant of the Royal Marines later that year.
 Mountbatten was elected a Fellow of the Royal Society and received an honorary doctorate from Heriot-Watt University in 1968.
 The following year, Mountbatten attended an official White House dinner, during which he held a 20-minute conversation with Richard Nixon and Secretary of State William P. Rogers.
-He later wrote, "I was able to talk to the President a bit about both Tino  and Juanito  to try and put over their respective points of view about Greece and Spain, and how I felt the US could help them."
 In January 1971, Nixon hosted Juan Carlos and his wife, Sofia (sister of the exiled King Constantine), during a visit to Washington, and later that year The Washington Post published an article alleging that the Nixon administration was seeking to persuade Franco to retire in favour of the young Bourbon prince.
 From 1967 until 1978, Mountbatten served as president of the United World Colleges Organisation, then represented by a single institution: Atlantic College in South Wales.
 Under his presidency and personal involvement, the United World College of South East Asia was established in Singapore in 1971, followed by the United World College of the Pacific in Victoria, British Columbia, in 1974.
@@ -265,7 +264,6 @@ As Mountbatten had no sons when he was created Viscount Mountbatten of Burma, of
 Leisure interests
 
 Mountbatten was passionate about genealogy, an interest he shared with other European royalty and nobility; according to Ziegler, he spent a great deal of his leisure time studying his links with European royal houses.
-He was equally enthusiastic about orders, decorations, and military ranks and uniforms, though he regarded this interest as a sign of vanity and tried, with limited success, to distance himself from it.
 Throughout his career, Mountbatten consistently sought to secure as many orders and decorations as possible.
 Like many members of the royal family, Mountbatten was an aficionado of polo.
 Mentorship of King Charles III
@@ -276,7 +274,6 @@ From time to time, he strongly upbraided the Prince for showing tendencies towar
 Yet he also encouraged Charles to enjoy the bachelor life while he could, and then to marry a young and inexperienced girl so as to ensure a stable married life.
 His qualification for offering advice to this particular heir to the throne was unique.
 It was Mountbatten who had arranged the visit of King George VI and Queen Elizabeth to Dartmouth Royal Naval College on 22 July 1939, taking care to include the young Princesses Elizabeth and Margaret in the invitation, and assigning his nephew, Cadet Prince Philip of Greece, to keep them amused while their parents toured the facility.
-This was the first recorded meeting of Charles's future parents.
 A few months later, however, his efforts nearly came to naught when he received a letter from his sister Alice in Athens informing him that Philip was visiting her and had agreed to repatriate permanently to Greece.
 Within days, Philip received a command from his cousin and sovereign, King George II of Greece, to resume his naval career in Britain which, though given without explanation, the young prince obeyed.
 In 1974, Mountbatten began corresponding with Charles about a potential marriage to his granddaughter, Amanda Knatchbull, who was also Charles's second cousin.
@@ -340,7 +337,6 @@ Funeral
 On 5 September 1979, Mountbatten received a ceremonial funeral at Westminster Abbey, attended by Queen Elizabeth II, the royal family, and members of the European royal houses.
 Watched by thousands of people, the funeral procession, which began at Wellington Barracks, included representatives of all three British Armed Services and military contingents from Burma, India, the United States (represented by 70 sailors of the US Navy and 50 US Marines), France (represented by the French Navy), and Canada.
 Mountbatten's funeral was the first major royal funeral to be held in the Abbey since the 18th century.
-During the televised service, his great-nephew Charles read the lesson from Psalm 107.
 In his address, the Archbishop of Canterbury, Donald Coggan, highlighted Mountbatten's various achievements and his "lifelong devotion to the Royal Navy".
 On hearing of Mountbatten's death, the then Master of the Queen's Music, Malcolm Williamson, composed the Lament in Memory of Lord Mountbatten of Burma for violin and string orchestra.
 The Mountbatten Brailler was developed after a bequest in his will was left for the creation of a modern, low cost, portable brailler.
@@ -375,6 +371,8 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -390,39 +388,9 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -437,6 +405,23 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -454,6 +439,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -521,29 +521,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -552,6 +544,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -564,6 +564,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -572,17 +574,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -610,6 +614,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -625,243 +713,267 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b3c37a38-cca4-4763-953c-b28ceb3cbceb)
- Call ID: b3c37a38-cca4-4763-953c-b28ceb3cbceb
+  AssignClass (108da75d-f789-4a92-bd81-b1acd7bd326c)
+ Call ID: 108da75d-f789-4a92-bd81-b1acd7bd326c
   Args:
-    source: Louis_Mountbatten
     type: :Man
-  AssignClass (7d4e4767-655a-49af-a7e2-1434edee92f3)
- Call ID: 7d4e4767-655a-49af-a7e2-1434edee92f3
+    source: :LouisMountbatten
+  AssignClass (cd19a318-43bc-41f7-a436-e6b5069df32b)
+ Call ID: cd19a318-43bc-41f7-a436-e6b5069df32b
   Args:
-    source: Louis_Mountbatten
     type: :Person
-  AddLiteral (0a8904b7-14be-4204-b6f0-53c95c560755)
- Call ID: 0a8904b7-14be-4204-b6f0-53c95c560755
+    source: :LouisMountbatten
+  AddLiteral (9f297db0-8710-47de-a771-02425d2afb17)
+ Call ID: 9f297db0-8710-47de-a771-02425d2afb17
   Args:
     literal_type: xsd:integer
-    source: Louis_Mountbatten
-    relation: :hasBirthYear
     literal_value: 1900
-  AddLiteral (7fcff875-27a5-483a-820c-0eb4f0e0549e)
- Call ID: 7fcff875-27a5-483a-820c-0eb4f0e0549e
+    source: :LouisMountbatten
+    relation: :hasBirthYear
+  AddLiteral (330cb751-fc5e-4ca5-bdc3-5efe7b2f4306)
+ Call ID: 330cb751-fc5e-4ca5-bdc3-5efe7b2f4306
   Args:
     relation: :hasDeathYear
+    source: :LouisMountbatten
     literal_value: 1979
     literal_type: xsd:integer
-    source: Louis_Mountbatten
-  AddLiteral (73cec84e-4687-4edc-9d32-c4b803fbce32)
- Call ID: 73cec84e-4687-4edc-9d32-c4b803fbce32
+  AssignClass (388d4de5-7e6b-43e8-90a6-6c1747205de2)
+ Call ID: 388d4de5-7e6b-43e8-90a6-6c1747205de2
   Args:
-    literal_value: Lord Mountbatten
-    relation: :knownAs
-    source: Louis_Mountbatten
-    literal_type: xsd:string
-  AddLiteral (859c29db-ea07-4d7d-a52a-457d9066bef3)
- Call ID: 859c29db-ea07-4d7d-a52a-457d9066bef3
+    source: :PrinceLouisOfBattenberg
+    type: :Man
+  AssignClass (e0c6fe42-ca0a-4253-a4d8-67f472274709)
+ Call ID: e0c6fe42-ca0a-4253-a4d8-67f472274709
   Args:
-    literal_value: Prince Louis of Battenberg
-    relation: :formerlyKnownAs
-    source: Louis_Mountbatten
-    literal_type: xsd:string
-  AssignClass (3599fe2a-2cb6-4674-b017-c4c7b327b57b)
- Call ID: 3599fe2a-2cb6-4674-b017-c4c7b327b57b
+    source: :PrinceLouisOfBattenberg
+    type: :Person
+  AssignClass (facc2974-372d-45ab-a625-6c498171caf8)
+ Call ID: facc2974-372d-45ab-a625-6c498171caf8
+  Args:
+    source: :PrincessVictoriaOfHesse
+    type: :Woman
+  AssignClass (3c281f68-207c-4a1e-9dcc-424ac0399e93)
+ Call ID: 3c281f68-207c-4a1e-9dcc-424ac0399e93
+  Args:
+    source: :PrincessVictoriaOfHesse
+    type: :Person
+  AddTriple (d5130234-18ad-47f3-8b7e-b5e935ccc4aa)
+ Call ID: d5130234-18ad-47f3-8b7e-b5e935ccc4aa
+  Args:
+    source: :LouisMountbatten
+    target: :PrinceLouisOfBattenberg
+    relation: :hasFather
+  AddTriple (1fbbd096-a99b-4f2b-921f-a14ed3bfe5f7)
+ Call ID: 1fbbd096-a99b-4f2b-921f-a14ed3bfe5f7
+  Args:
+    source: :LouisMountbatten
+    target: :PrincessVictoriaOfHesse
+    relation: :hasMother
+  AssignClass (5fee0b5a-878c-4561-8f55-c4818d51bfec)
+ Call ID: 5fee0b5a-878c-4561-8f55-c4818d51bfec
   Args:
     type: :Man
-    source: Prince_Louis_of_Battenberg_Sr
-  AssignClass (12436fb3-c922-425f-ab9c-2cfb42785818)
- Call ID: 12436fb3-c922-425f-ab9c-2cfb42785818
+    source: :LouisIVGrandDukeOfHesse
+  AssignClass (9a8616b5-274a-4c23-8850-7b4b6993be96)
+ Call ID: 9a8616b5-274a-4c23-8850-7b4b6993be96
   Args:
-    source: Prince_Louis_of_Battenberg_Sr
+    source: :LouisIVGrandDukeOfHesse
     type: :Person
-  AddTriple (2eb48145-52a4-4ba0-9bd3-fd11e1ffc99d)
- Call ID: 2eb48145-52a4-4ba0-9bd3-fd11e1ffc99d
+  AssignClass (aa9a9d11-d4eb-41c3-9dce-10c8de4a00e8)
+ Call ID: aa9a9d11-d4eb-41c3-9dce-10c8de4a00e8
+  Args:
+    source: :PrincessAliceOfTheUnitedKingdom
+    type: :Woman
+  AssignClass (15f74b04-d90f-4c48-a9c3-5e5343db159e)
+ Call ID: 15f74b04-d90f-4c48-a9c3-5e5343db159e
+  Args:
+    type: :Person
+    source: :PrincessAliceOfTheUnitedKingdom
+  AddTriple (0bf842d7-d1ef-4d17-9501-1074567f5d7a)
+ Call ID: 0bf842d7-d1ef-4d17-9501-1074567f5d7a
   Args:
     relation: :hasFather
-    source: Louis_Mountbatten
-    target: Prince_Louis_of_Battenberg_Sr
-  AssignClass (e40ea47e-50c2-49c4-b77c-c6e62dce7368)
- Call ID: e40ea47e-50c2-49c4-b77c-c6e62dce7368
+    source: :PrincessVictoriaOfHesse
+    target: :LouisIVGrandDukeOfHesse
+  AddTriple (a9fb98c6-e6a8-4d63-94b1-506fe1368218)
+ Call ID: a9fb98c6-e6a8-4d63-94b1-506fe1368218
+  Args:
+    target: :PrincessAliceOfTheUnitedKingdom
+    source: :PrincessVictoriaOfHesse
+    relation: :hasMother
+  AssignClass (88e8e34a-4cfb-49b6-9599-3ea0eee63d13)
+ Call ID: 88e8e34a-4cfb-49b6-9599-3ea0eee63d13
   Args:
     type: :Woman
-    source: Princess_Victoria_of_Hesse
-  AssignClass (66a3aea3-acf0-4bca-825f-df88782419c7)
- Call ID: 66a3aea3-acf0-4bca-825f-df88782419c7
+    source: :QueenVictoria
+  AssignClass (ae0abb04-7620-437f-9c34-59ca954cc607)
+ Call ID: ae0abb04-7620-437f-9c34-59ca954cc607
   Args:
     type: :Person
-    source: Princess_Victoria_of_Hesse
-  AddTriple (5a88820b-abf1-41b9-964a-9d232f722f50)
- Call ID: 5a88820b-abf1-41b9-964a-9d232f722f50
+    source: :QueenVictoria
+  AssignClass (1ebd3584-83d2-4d46-a422-24a691e90810)
+ Call ID: 1ebd3584-83d2-4d46-a422-24a691e90810
   Args:
-    target: Princess_Victoria_of_Hesse
-    source: Louis_Mountbatten
-    relation: :hasMother
-  AssignClass (77aa29fc-40c2-4149-80fc-cc5bfba63543)
- Call ID: 77aa29fc-40c2-4149-80fc-cc5bfba63543
-  Args:
-    source: Louis_IV_Grand_Duke_of_Hesse
     type: :Man
-  AssignClass (a0d53450-ca31-4b3b-9d0f-b6966c454d7d)
- Call ID: a0d53450-ca31-4b3b-9d0f-b6966c454d7d
+    source: :PrinceAlbertOfSaxeCoburgAndGotha
+  AssignClass (bfc8a759-5353-4300-a1dd-3f7195096439)
+ Call ID: bfc8a759-5353-4300-a1dd-3f7195096439
   Args:
-    source: Louis_IV_Grand_Duke_of_Hesse
     type: :Person
-  AddTriple (e83baf2e-74ae-4c87-a1d0-4e4e369a147a)
- Call ID: e83baf2e-74ae-4c87-a1d0-4e4e369a147a
+    source: :PrinceAlbertOfSaxeCoburgAndGotha
+  AddTriple (16b95d18-4678-4ec3-b55a-b0b75f753bf4)
+ Call ID: 16b95d18-4678-4ec3-b55a-b0b75f753bf4
   Args:
-    source: Princess_Victoria_of_Hesse
+    relation: :hasMother
+    source: :PrincessAliceOfTheUnitedKingdom
+    target: :QueenVictoria
+  AddTriple (ce5769cc-6622-46f1-8e5e-181a8fe62110)
+ Call ID: ce5769cc-6622-46f1-8e5e-181a8fe62110
+  Args:
+    target: :PrinceAlbertOfSaxeCoburgAndGotha
+    source: :PrincessAliceOfTheUnitedKingdom
     relation: :hasFather
-    target: Louis_IV_Grand_Duke_of_Hesse
-  AssignClass (2a0e3fea-e9e3-48f0-910e-584b18c06bdb)
- Call ID: 2a0e3fea-e9e3-48f0-910e-584b18c06bdb
+  AssignClass (c6364a65-7181-4b63-bf78-25d45940b574)
+ Call ID: c6364a65-7181-4b63-bf78-25d45940b574
   Args:
-    type: :Woman
-    source: Princess_Alice_of_the_United_Kingdom
-  AssignClass (9e38776b-dda5-4bbc-a915-fc58f3127ce0)
- Call ID: 9e38776b-dda5-4bbc-a915-fc58f3127ce0
-  Args:
-    source: Princess_Alice_of_the_United_Kingdom
-    type: :Person
-  AddTriple (98bba556-733d-4aaf-8516-bdba21bd2ba0)
- Call ID: 98bba556-733d-4aaf-8516-bdba21bd2ba0
-  Args:
-    source: Princess_Victoria_of_Hesse
-    relation: :hasMother
-    target: Princess_Alice_of_the_United_Kingdom
-  AssignClass (50681867-1184-4760-b320-95fb36e574bd)
- Call ID: 50681867-1184-4760-b320-95fb36e574bd
-  Args:
-    source: Prince_Alexander_of_Hesse
     type: :Man
-  AssignClass (31fefa3c-cf1d-4917-9234-c69e86e688fb)
- Call ID: 31fefa3c-cf1d-4917-9234-c69e86e688fb
+    source: :PrinceAlexanderOfHesseAndByRhine
+  AssignClass (5296b8b7-a7a8-4abd-a07c-6117961acc1a)
+ Call ID: 5296b8b7-a7a8-4abd-a07c-6117961acc1a
+  Args:
+    source: :PrinceAlexanderOfHesseAndByRhine
+    type: :Person
+  AssignClass (c2956ced-6695-45ca-8dde-9fe467ca1e4e)
+ Call ID: c2956ced-6695-45ca-8dde-9fe467ca1e4e
+  Args:
+    source: :JuliaPrincessOfBattenberg
+    type: :Woman
+  AssignClass (5c282ec0-243a-48dc-a118-d2d6bbbf5a79)
+ Call ID: 5c282ec0-243a-48dc-a118-d2d6bbbf5a79
   Args:
     type: :Person
-    source: Prince_Alexander_of_Hesse
-  AddTriple (cd8385b5-956c-4060-b5c8-dabda27645d9)
- Call ID: cd8385b5-956c-4060-b5c8-dabda27645d9
+    source: :JuliaPrincessOfBattenberg
+  AddTriple (86610979-19a2-4645-8311-f98567e7f37a)
+ Call ID: 86610979-19a2-4645-8311-f98567e7f37a
   Args:
-    target: Prince_Alexander_of_Hesse
+    target: :PrinceAlexanderOfHesseAndByRhine
+    source: :PrinceLouisOfBattenberg
     relation: :hasFather
-    source: Prince_Louis_of_Battenberg_Sr
-  AssignClass (17017a5c-fe00-41fe-8781-284689b8089c)
- Call ID: 17017a5c-fe00-41fe-8781-284689b8089c
+  AddTriple (786eb14c-83c6-4bf4-a49e-ef98feb45727)
+ Call ID: 786eb14c-83c6-4bf4-a49e-ef98feb45727
   Args:
-    source: Julia_Princess_of_Battenberg
-    type: :Woman
-  AssignClass (e0b9c7a0-3237-41d3-9817-61793d18fec1)
- Call ID: e0b9c7a0-3237-41d3-9817-61793d18fec1
-  Args:
-    type: :Person
-    source: Julia_Princess_of_Battenberg
-  AddTriple (3879be48-4b6f-473c-90fd-76465ca6f6c4)
- Call ID: 3879be48-4b6f-473c-90fd-76465ca6f6c4
-  Args:
-    target: Julia_Princess_of_Battenberg
     relation: :hasMother
-    source: Prince_Louis_of_Battenberg_Sr
-  AssignClass (37e5d46d-e5c9-493a-ad71-dfd3089936e7)
- Call ID: 37e5d46d-e5c9-493a-ad71-dfd3089936e7
+    target: :JuliaPrincessOfBattenberg
+    source: :PrinceLouisOfBattenberg
+  AssignClass (f96df797-66ca-49dd-b054-97be8687d178)
+ Call ID: f96df797-66ca-49dd-b054-97be8687d178
   Args:
+    source: :PrincessAliceOfBattenberg
     type: :Woman
-    source: Princess_Alice_of_Battenberg
-  AssignClass (97a74963-2c6a-4fd7-8ff7-7844a5185fcb)
- Call ID: 97a74963-2c6a-4fd7-8ff7-7844a5185fcb
+  AssignClass (b6a17283-40f0-45f7-946f-f27b46147cfe)
+ Call ID: b6a17283-40f0-45f7-946f-f27b46147cfe
   Args:
+    source: :PrincessAliceOfBattenberg
     type: :Person
-    source: Princess_Alice_of_Battenberg
-  AddTriple (8d88bfc7-9b3c-45fb-94ef-2827d3e4ca36)
- Call ID: 8d88bfc7-9b3c-45fb-94ef-2827d3e4ca36
+  AssignClass (31afb63d-bdc3-42dd-936c-0ff76e27e746)
+ Call ID: 31afb63d-bdc3-42dd-936c-0ff76e27e746
   Args:
-    target: Princess_Alice_of_Battenberg
-    source: Louis_Mountbatten
-    relation: :hasSister
-  AssignClass (ac949240-1f25-4f89-89a6-f6009300c0a2)
- Call ID: ac949240-1f25-4f89-89a6-f6009300c0a2
-  Args:
-    source: Princess_Louise_of_Battenberg
+    source: :PrincessLouiseOfBattenberg
     type: :Woman
-  AssignClass (714ff640-5be0-4573-b57d-c40c9f16428c)
- Call ID: 714ff640-5be0-4573-b57d-c40c9f16428c
+  AssignClass (4a1db687-6e4f-4b47-963f-d08f487fd500)
+ Call ID: 4a1db687-6e4f-4b47-963f-d08f487fd500
   Args:
+    source: :PrincessLouiseOfBattenberg
     type: :Person
-    source: Princess_Louise_of_Battenberg
-  AddTriple (cb65ebc2-1969-45a2-bfc8-5df36186e0ae)
- Call ID: cb65ebc2-1969-45a2-bfc8-5df36186e0ae
+  AssignClass (2414d762-3f2d-4354-9d5a-2c3bd6074d19)
+ Call ID: 2414d762-3f2d-4354-9d5a-2c3bd6074d19
   Args:
-    relation: :hasSister
-    source: Louis_Mountbatten
-    target: Princess_Louise_of_Battenberg
-  AssignClass (d2384172-6937-4290-ba93-25723fe07096)
- Call ID: d2384172-6937-4290-ba93-25723fe07096
-  Args:
+    source: :PrinceGeorgeOfBattenberg
     type: :Man
-    source: Prince_George_of_Battenberg
-  AssignClass (f54a6a2c-db44-4491-aff9-5fcc2c3baf38)
- Call ID: f54a6a2c-db44-4491-aff9-5fcc2c3baf38
+  AssignClass (906e6b65-7506-4dcf-a130-bf8dd7091d6a)
+ Call ID: 906e6b65-7506-4dcf-a130-bf8dd7091d6a
   Args:
     type: :Person
-    source: Prince_George_of_Battenberg
-  AddTriple (065e70ed-fcf6-467d-a1c3-c809e154ddf1)
- Call ID: 065e70ed-fcf6-467d-a1c3-c809e154ddf1
+    source: :PrinceGeorgeOfBattenberg
+  AddTriple (0c9140cc-357d-4fb4-93fb-74f81ad9d054)
+ Call ID: 0c9140cc-357d-4fb4-93fb-74f81ad9d054
   Args:
-    source: Louis_Mountbatten
-    relation: :hasBrother
-    target: Prince_George_of_Battenberg
-  AssignClass (147071de-1b72-42ae-ac8d-ce75435d359d)
- Call ID: 147071de-1b72-42ae-ac8d-ce75435d359d
+    source: :LouisMountbatten
+    target: :PrincessAliceOfBattenberg
+    relation: :isSiblingOf
+  AddTriple (8132a209-d7e1-41dc-87b6-23dcb4d4537c)
+ Call ID: 8132a209-d7e1-41dc-87b6-23dcb4d4537c
   Args:
-    source: Edwina_Ashley
+    relation: :isSiblingOf
+    source: :LouisMountbatten
+    target: :PrincessLouiseOfBattenberg
+  AddTriple (c3b8b8e2-54ea-45c3-baae-f727b8b1a60f)
+ Call ID: c3b8b8e2-54ea-45c3-baae-f727b8b1a60f
+  Args:
+    relation: :isSiblingOf
+    source: :LouisMountbatten
+    target: :PrinceGeorgeOfBattenberg
+  AssignClass (7ed7a61b-8c75-489a-b3f1-d43f132fe14b)
+ Call ID: 7ed7a61b-8c75-489a-b3f1-d43f132fe14b
+  Args:
+    source: :EdwinaAshley
     type: :Woman
-  AssignClass (067d62a3-0506-4dfa-a3cd-b5dc7bda0166)
- Call ID: 067d62a3-0506-4dfa-a3cd-b5dc7bda0166
+  AssignClass (b7279f1c-5dc1-4bb0-bd8a-0684ae180a0b)
+ Call ID: b7279f1c-5dc1-4bb0-bd8a-0684ae180a0b
   Args:
-    source: Edwina_Ashley
     type: :Person
-  AddTriple (5fbca879-e4be-431f-b12c-4e5d17b3b44d)
- Call ID: 5fbca879-e4be-431f-b12c-4e5d17b3b44d
+    source: :EdwinaAshley
+  AddLiteral (634fbd38-c47b-4ebb-8383-51771c87e79e)
+ Call ID: 634fbd38-c47b-4ebb-8383-51771c87e79e
   Args:
-    target: Edwina_Ashley
-    source: Louis_Mountbatten
-    relation: :hasRelation
-  AddLiteral (e57590cf-77c7-4948-aec6-0c36b73bc6cd)
- Call ID: e57590cf-77c7-4948-aec6-0c36b73bc6cd
-  Args:
-    literal_value: 1922
     relation: :hasMarriageYear
-    source: Louis_Mountbatten
+    source: :LouisMountbatten
     literal_type: xsd:integer
-  AssignClass (1836884d-b267-4778-8925-acc1c082bb9c)
- Call ID: 1836884d-b267-4778-8925-acc1c082bb9c
+    literal_value: 1922
+  AssignClass (7cd4e039-be60-4650-a728-1d39f83add20)
+ Call ID: 7cd4e039-be60-4650-a728-1d39f83add20
   Args:
-    source: Patricia_Knatchbull
+    source: :PatriciaKnatchbull
     type: :Woman
-  AssignClass (fb077538-72ae-4b5f-a95b-93ee86726ad8)
- Call ID: fb077538-72ae-4b5f-a95b-93ee86726ad8
+  AssignClass (0f3a9c95-17b6-4278-acc5-1d64821fe0be)
+ Call ID: 0f3a9c95-17b6-4278-acc5-1d64821fe0be
   Args:
     type: :Person
-    source: Patricia_Knatchbull
-  AddTriple (f46a8208-fb1e-4c7d-9532-36728888c1c5)
- Call ID: f46a8208-fb1e-4c7d-9532-36728888c1c5
+    source: :PatriciaKnatchbull
+  AssignClass (c2b893e7-8855-4135-88d1-b2e9728548a5)
+ Call ID: c2b893e7-8855-4135-88d1-b2e9728548a5
   Args:
-    source: Patricia_Knatchbull
-    relation: :isDaughterOf
-    target: Louis_Mountbatten
-  AssignClass (07b6378e-ccd9-4591-b66c-5c1e55490a09)
- Call ID: 07b6378e-ccd9-4591-b66c-5c1e55490a09
-  Args:
-    source: Lady_Pamela_Hicks
     type: :Woman
-  AssignClass (a46da5f3-ba22-4217-90b9-e49a6826d54d)
- Call ID: a46da5f3-ba22-4217-90b9-e49a6826d54d
+    source: :LadyPamelaHicks
+  AssignClass (635d2ea4-8975-4771-9a69-35c26c479d7a)
+ Call ID: 635d2ea4-8975-4771-9a69-35c26c479d7a
   Args:
-    source: Lady_Pamela_Hicks
     type: :Person
-  AddTriple (a3f5c24f-8d7d-4edc-b2e8-a2873ff43103)
- Call ID: a3f5c24f-8d7d-4edc-b2e8-a2873ff43103
+    source: :LadyPamelaHicks
+  AddTriple (a5813043-b386-4f26-99c1-c24b4a83b94f)
+ Call ID: a5813043-b386-4f26-99c1-c24b4a83b94f
   Args:
-    target: Louis_Mountbatten
-    relation: :isDaughterOf
-    source: Lady_Pamela_Hicks
-  Finish (ff59b0b5-6d0a-4568-9618-4df6e779c0eb)
- Call ID: ff59b0b5-6d0a-4568-9618-4df6e779c0eb
+    relation: :hasDaughter
+    source: :LouisMountbatten
+    target: :PatriciaKnatchbull
+  AddTriple (499a05f8-6183-4448-8087-0c064e62a963)
+ Call ID: 499a05f8-6183-4448-8087-0c064e62a963
+  Args:
+    relation: :hasDaughter
+    target: :LadyPamelaHicks
+    source: :LouisMountbatten
+  AddTriple (514475b3-9672-42f0-b798-5a2865ff8a4f)
+ Call ID: 514475b3-9672-42f0-b798-5a2865ff8a4f
+  Args:
+    target: :EdwinaAshley
+    source: :PatriciaKnatchbull
+    relation: :hasMother
+  AddTriple (129afa8c-3f7e-4604-932a-ab60c4c16551)
+ Call ID: 129afa8c-3f7e-4604-932a-ab60c4c16551
+  Args:
+    relation: :hasMother
+    target: :EdwinaAshley
+    source: :LadyPamelaHicks
+  Finish (dfb280af-a9e1-4f2c-806e-b5dc74f1e63c)
+ Call ID: dfb280af-a9e1-4f2c-806e-b5dc74f1e63c
   Args:

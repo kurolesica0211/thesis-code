@@ -1,0 +1,280 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:MathildeKschessinska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasChild data:VladimirSergeievich ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:AndreiVladimirovich,
+        data:MathildeKschessinska,
+        data:VladimirSergeievich ;
+    :hasSister data:MathildeKschessinska ;
+    :hasSon data:VladimirSergeievich ;
+    :isAncestorOf data:VladimirSergeievich ;
+    :isAuntOf data:VladimirSergeievich ;
+    :isBloodrelationOf data:MathildeKschessinska ;
+    :isMotherOf data:VladimirSergeievich ;
+    :isParentOf data:VladimirSergeievich ;
+    :isSiblingOf data:MathildeKschessinska ;
+    :isSisterOf data:MathildeKschessinska .
+
+data:VladimirSergeievich a :Man,
+        :Person ;
+    :hasAncestor data:AndreiVladimirovich,
+        data:MariaPavlovna,
+        data:MathildeKschessinska,
+        data:VladimirAlexandrovich ;
+    :hasBrother data:VladimirSergeievich ;
+    :hasFather data:AndreiVladimirovich ;
+    :hasMother data:MathildeKschessinska ;
+    :hasParent data:AndreiVladimirovich,
+        data:MathildeKschessinska ;
+    :hasRelation data:AndreiVladimirovich,
+        data:MariaPavlovna,
+        data:MathildeKschessinska,
+        data:VladimirAlexandrovich,
+        data:VladimirSergeievich ;
+    :isBloodrelationOf data:VladimirSergeievich ;
+    :isBrotherOf data:VladimirSergeievich ;
+    :isChildOf data:AndreiVladimirovich,
+        data:MathildeKschessinska ;
+    :isSiblingOf data:VladimirSergeievich ;
+    :isSonOf data:AndreiVladimirovich,
+        data:MathildeKschessinska .
+
+data:MariaPavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :hasDaughter data:ElenaVladimirovna ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirSergeievich ;
+    :hasSister data:MariaPavlovna ;
+    :hasSon data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isAncestorOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:VladimirSergeievich ;
+    :isAuntOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isBloodrelationOf data:MariaPavlovna ;
+    :isMotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isParentOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSiblingOf data:MariaPavlovna ;
+    :isSisterOf data:MariaPavlovna .
+
+data:VladimirAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:VladimirAlexandrovich ;
+    :hasChild data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :hasDaughter data:ElenaVladimirovna ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:VladimirAlexandrovich,
+        data:VladimirSergeievich ;
+    :hasSon data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isAncestorOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:VladimirSergeievich ;
+    :isBloodrelationOf data:VladimirAlexandrovich ;
+    :isBrotherOf data:VladimirAlexandrovich ;
+    :isFatherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isParentOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSiblingOf data:VladimirAlexandrovich ;
+    :isUncleOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich .
+
+data:BorisVladimirovich a :Man,
+        :Person ;
+    :hasAncestor data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isChildOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSonOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isUncleOf data:VladimirSergeievich .
+
+data:ElenaVladimirovna a :Person,
+        :Woman ;
+    :hasAncestor data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isAuntOf data:VladimirSergeievich ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isChildOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isDaughterOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSisterOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich .
+
+data:KirillVladimirovich a :Man,
+        :Person ;
+    :hasAncestor data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasSister data:ElenaVladimirovna ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isChildOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSonOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isUncleOf data:VladimirSergeievich .
+
+data:AndreiVladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasChild data:VladimirSergeievich ;
+    :hasDeathYear 1956 ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:MathildeKschessinska,
+        data:VladimirAlexandrovich,
+        data:VladimirSergeievich ;
+    :hasSister data:ElenaVladimirovna ;
+    :hasSon data:VladimirSergeievich ;
+    :isAncestorOf data:VladimirSergeievich ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isChildOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isFatherOf data:VladimirSergeievich ;
+    :isParentOf data:VladimirSergeievich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:ElenaVladimirovna,
+        data:KirillVladimirovich ;
+    :isSonOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isUncleOf data:VladimirSergeievich .
+

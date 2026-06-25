@@ -90,6 +90,7 @@ She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the 
 At birth she was sixth in the line of succession to the British throne during the reign of her maternal grandmother, Queen Elizabeth II, and as of 2026 is 22nd.
 Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
 She married former rugby union player Mike Tindall in 2011, and the couple have three children.
+The following year she carried the Olympic flame at Cheltenham Racecourse on her horse Toytown, and went on to win a team silver medal in eventing at the 2012 London Summer Olympics, presented to her by her mother.
 Early life and education
 
 Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
@@ -102,6 +103,7 @@ Equestrianism
 After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
 Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
 Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
+Following her success in Germany, she was voted BBC Sports Personality of the Year, an award previously won by her mother in 1971.
 The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
 On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
 In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
@@ -125,9 +127,11 @@ Personal life
 Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
 As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
 A celebration was held on the royal yacht Britannia prior to the wedding.
+A reception followed at the Palace of Holyroodhouse.
 The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
 Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
 A second daughter, Lena Elizabeth, was born on 18 June 2018 at Stroud Maternity Hospital and was 19th, later 24th, in the line of succession.
+Their son, Lucas Philip, was born on 21 March 2021 at the family home on the Gatcombe Park estate and was 22nd, later 25th, in the line of succession.
 Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
 In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
 
@@ -136,6 +140,8 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -151,39 +157,9 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -198,6 +174,23 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -215,6 +208,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,29 +290,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -313,6 +313,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -325,6 +333,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -333,17 +343,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -371,6 +383,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -386,123 +482,269 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (74e4b17b-56a1-49c0-826b-7e0ee2e1eac0)
- Call ID: 74e4b17b-56a1-49c0-826b-7e0ee2e1eac0
+  AssignClass (9d1ce14b-1b89-49ef-9785-4cd5c34b8626)
+ Call ID: 9d1ce14b-1b89-49ef-9785-4cd5c34b8626
   Args:
+    type: :Person
+    source: :ZaraTindall
+  AssignClass (1dcd6275-c5f9-4ff0-9888-582c9ac134aa)
+ Call ID: 1dcd6275-c5f9-4ff0-9888-582c9ac134aa
+  Args:
+    source: :ZaraTindall
     type: :Woman
-    source: Zara_Tindall
-  AssignClass (6c2c18ae-ee23-4e17-acd2-e4b074796162)
- Call ID: 6c2c18ae-ee23-4e17-acd2-e4b074796162
+  AssignClass (6b263e03-ed32-4f01-8566-18261c54cb1f)
+ Call ID: 6b263e03-ed32-4f01-8566-18261c54cb1f
   Args:
-    source: Anne_Princess_Royal
+    source: :AnnePrincessRoyal
+    type: :Person
+  AssignClass (775567b9-ec40-4e2a-90bf-aff9a442654a)
+ Call ID: 775567b9-ec40-4e2a-90bf-aff9a442654a
+  Args:
+    source: :AnnePrincessRoyal
     type: :Woman
-  AssignClass (0b747312-9b40-4462-a79a-d57ddbf7dab7)
- Call ID: 0b747312-9b40-4462-a79a-d57ddbf7dab7
+  AssignClass (ce3ca49b-b875-449a-bdc8-ce30e7b9d962)
+ Call ID: ce3ca49b-b875-449a-bdc8-ce30e7b9d962
   Args:
+    type: :Ancestor
+    source: :AnnePrincessRoyal
+  AssignClass (47c45147-c1d8-4ca4-b3df-f8d5019b059e)
+ Call ID: 47c45147-c1d8-4ca4-b3df-f8d5019b059e
+  Args:
+    source: :MarkPhillips
+    type: :Person
+  AssignClass (1c717faf-5740-479b-9257-07b8873a29db)
+ Call ID: 1c717faf-5740-479b-9257-07b8873a29db
+  Args:
+    source: :MarkPhillips
     type: :Man
-    source: Mark_Phillips
-  AssignClass (1af9c3d2-cc81-48a0-ab9a-791d55db4da4)
- Call ID: 1af9c3d2-cc81-48a0-ab9a-791d55db4da4
+  AssignClass (0ebdc3ee-597d-430c-bbed-a31978937d46)
+ Call ID: 0ebdc3ee-597d-430c-bbed-a31978937d46
   Args:
-    type: :Man
-    source: Mike_Tindall
-  AssignClass (2fc40e6e-d79d-43eb-9a34-d1cd35cfece7)
- Call ID: 2fc40e6e-d79d-43eb-9a34-d1cd35cfece7
+    type: :Ancestor
+    source: :MarkPhillips
+  AddTriple (3ced4253-0b4d-4db9-938f-ed63c22a584e)
+ Call ID: 3ced4253-0b4d-4db9-938f-ed63c22a584e
   Args:
-    type: :Man
-    source: Peter_Phillips
-  AssignClass (0b20b7d6-24a2-4cf3-9d91-bfe098977521)
- Call ID: 0b20b7d6-24a2-4cf3-9d91-bfe098977521
-  Args:
-    source: Mia_Tindall
-    type: :Woman
-  AssignClass (de5f7626-788c-47e8-b07e-e97a1fe267b2)
- Call ID: de5f7626-788c-47e8-b07e-e97a1fe267b2
-  Args:
-    type: :Woman
-    source: Lena_Tindall
-  AddLiteral (782af4b4-56b9-490b-bf3c-b6fba2472de2)
- Call ID: 782af4b4-56b9-490b-bf3c-b6fba2472de2
-  Args:
-    literal_type: xsd:int
-    literal_value: 1981
-    relation: :hasBirthYear
-    source: Zara_Tindall
-  AddTriple (0bb8d270-f82a-4979-9ec4-d5e34f96103a)
- Call ID: 0bb8d270-f82a-4979-9ec4-d5e34f96103a
-  Args:
-    target: Anne_Princess_Royal
     relation: :hasMother
-    source: Zara_Tindall
-  AddTriple (f4dd0450-d32b-4c81-b303-047c96296339)
- Call ID: f4dd0450-d32b-4c81-b303-047c96296339
+    source: :ZaraTindall
+    target: :AnnePrincessRoyal
+  AddTriple (fde54f4f-0aa2-4661-9865-6eec40f3df48)
+ Call ID: fde54f4f-0aa2-4661-9865-6eec40f3df48
   Args:
-    source: Zara_Tindall
-    target: Mark_Phillips
+    target: :MarkPhillips
+    source: :ZaraTindall
     relation: :hasFather
-  AddTriple (1d97f90a-5b2b-4236-9bfc-f201f77af6b7)
- Call ID: 1d97f90a-5b2b-4236-9bfc-f201f77af6b7
+  AddLiteral (88e77eb1-597f-4ba5-b921-ed5107f38743)
+ Call ID: 88e77eb1-597f-4ba5-b921-ed5107f38743
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :ZaraTindall
+    literal_value: 1981
+  AssignClass (20377af4-c898-43f8-b564-70735f894837)
+ Call ID: 20377af4-c898-43f8-b564-70735f894837
+  Args:
+    source: :MikeTindall
+    type: :Person
+  AssignClass (282dc68a-35dd-4bdb-9fc9-87e6771022c5)
+ Call ID: 282dc68a-35dd-4bdb-9fc9-87e6771022c5
+  Args:
+    source: :MikeTindall
+    type: :Man
+  AddTriple (93535cb3-2539-49b7-a8d2-fe93dbf7bc33)
+ Call ID: 93535cb3-2539-49b7-a8d2-fe93dbf7bc33
+  Args:
+    source: :ZaraTindall
+    target: :MikeTindall
+    relation: :hasRelation
+  AddLiteral (82c6acd4-b1bf-4388-ba01-a3c6e460f0bc)
+ Call ID: 82c6acd4-b1bf-4388-ba01-a3c6e460f0bc
+  Args:
+    literal_value: 2011
+    literal_type: xsd:integer
+    source: :ZaraTindall
+    relation: :hasMarriageYear
+  AssignClass (2467aa36-7bbb-43ef-9538-5b19ef1ee383)
+ Call ID: 2467aa36-7bbb-43ef-9538-5b19ef1ee383
+  Args:
+    type: :Person
+    source: :MiaGraceTindall
+  AssignClass (1b8080e8-63d0-48f8-a630-e38f59ef1f11)
+ Call ID: 1b8080e8-63d0-48f8-a630-e38f59ef1f11
+  Args:
+    source: :MiaGraceTindall
+    type: :Woman
+  AssignClass (9e489b49-748a-4de2-a31c-7bb3a434bfab)
+ Call ID: 9e489b49-748a-4de2-a31c-7bb3a434bfab
+  Args:
+    source: :LenaElizabethTindall
+    type: :Person
+  AssignClass (2e051fd7-cbe6-42ea-852d-7724d285a6ce)
+ Call ID: 2e051fd7-cbe6-42ea-852d-7724d285a6ce
+  Args:
+    source: :LenaElizabethTindall
+    type: :Woman
+  AssignClass (6b4ffac7-5d19-4865-b4b4-7ef678a98757)
+ Call ID: 6b4ffac7-5d19-4865-b4b4-7ef678a98757
+  Args:
+    type: :Person
+    source: :LucasPhilipTindall
+  AssignClass (0016f67c-c9d2-4e54-b0ad-86783372ba3a)
+ Call ID: 0016f67c-c9d2-4e54-b0ad-86783372ba3a
+  Args:
+    source: :LucasPhilipTindall
+    type: :Man
+  AddTriple (82e0ca80-5517-4104-a134-f799dbdd967e)
+ Call ID: 82e0ca80-5517-4104-a134-f799dbdd967e
+  Args:
+    relation: :hasChild
+    target: :MiaGraceTindall
+    source: :ZaraTindall
+  AddTriple (38f0634b-f68d-433e-b4dc-d605fdf07d7a)
+ Call ID: 38f0634b-f68d-433e-b4dc-d605fdf07d7a
+  Args:
+    relation: :hasChild
+    target: :LenaElizabethTindall
+    source: :ZaraTindall
+  AddTriple (c54a0cb1-c30d-48e0-93c0-a168a9fd7f6d)
+ Call ID: c54a0cb1-c30d-48e0-93c0-a168a9fd7f6d
+  Args:
+    source: :ZaraTindall
+    target: :LucasPhilipTindall
+    relation: :hasChild
+  AddTriple (9ee5b9f8-5247-4f7e-b095-cbfe59e200da)
+ Call ID: 9ee5b9f8-5247-4f7e-b095-cbfe59e200da
+  Args:
+    relation: :hasChild
+    source: :MikeTindall
+    target: :MiaGraceTindall
+  AddTriple (7b66ec5e-e415-4244-960d-234280752202)
+ Call ID: 7b66ec5e-e415-4244-960d-234280752202
+  Args:
+    relation: :hasChild
+    target: :LenaElizabethTindall
+    source: :MikeTindall
+  AddTriple (b0483d3d-2a98-4f48-a1c9-d9790dfa13ae)
+ Call ID: b0483d3d-2a98-4f48-a1c9-d9790dfa13ae
+  Args:
+    relation: :hasChild
+    target: :LucasPhilipTindall
+    source: :MikeTindall
+  AssignClass (475e9735-45a9-447c-bd56-1fe962331472)
+ Call ID: 475e9735-45a9-447c-bd56-1fe962331472
+  Args:
+    source: :PeterPhillips
+    type: :Person
+  AssignClass (4754682d-28e4-496a-a537-c9896bc7bb79)
+ Call ID: 4754682d-28e4-496a-a537-c9896bc7bb79
+  Args:
+    type: :Man
+    source: :PeterPhillips
+  AddTriple (b6ed6b5a-94f4-4e7b-bd7c-d91c2f5adff8)
+ Call ID: b6ed6b5a-94f4-4e7b-bd7c-d91c2f5adff8
   Args:
     relation: :hasBrother
-    target: Peter_Phillips
-    source: Zara_Tindall
-  AddTriple (6635eb0d-91e9-4d32-9e26-b86b09cc4246)
- Call ID: 6635eb0d-91e9-4d32-9e26-b86b09cc4246
+    source: :ZaraTindall
+    target: :PeterPhillips
+  AssignClass (db382c65-d3aa-4560-bdc6-1162cccd66eb)
+ Call ID: db382c65-d3aa-4560-bdc6-1162cccd66eb
   Args:
-    source: Zara_Tindall
-    relation: :hasMarriageYear
-    target: 2011
-  AddTriple (89e19ee2-eaaa-42af-9d88-05b73dc81d02)
- Call ID: 89e19ee2-eaaa-42af-9d88-05b73dc81d02
+    source: :FelicityWade
+    type: :Person
+  AssignClass (be931529-edae-4290-bcdd-c26f44f2cb34)
+ Call ID: be931529-edae-4290-bcdd-c26f44f2cb34
   Args:
-    source: Zara_Tindall
-    relation: :hasRelation
-    target: Mike_Tindall
-  AddTriple (c294993a-8ff6-4547-88d4-eec48ea8caf5)
- Call ID: c294993a-8ff6-4547-88d4-eec48ea8caf5
+    source: :FelicityWade
+    type: :Woman
+  AssignClass (0d82895d-0730-4cc2-aff9-e6ea8cf220d4)
+ Call ID: 0d82895d-0730-4cc2-aff9-e6ea8cf220d4
   Args:
-    target: Mia_Tindall
-    relation: :hasDaughter
-    source: Zara_Tindall
-  AddTriple (d16d4c13-b877-4283-a3a6-927896a34c2f)
- Call ID: d16d4c13-b877-4283-a3a6-927896a34c2f
+    source: :StephaniePhillips
+    type: :Person
+  AssignClass (6574bb1f-25a1-4904-8760-4de0f2f546d5)
+ Call ID: 6574bb1f-25a1-4904-8760-4de0f2f546d5
   Args:
-    source: Zara_Tindall
-    target: Lena_Tindall
-    relation: :hasDaughter
-  AddTriple (49e77c2a-0df2-4164-86c3-dc3e8ca22b14)
- Call ID: 49e77c2a-0df2-4164-86c3-dc3e8ca22b14
+    source: :StephaniePhillips
+    type: :Woman
+  AddTriple (6ab2d660-e6c4-40b8-b26e-0cfcc4433368)
+ Call ID: 6ab2d660-e6c4-40b8-b26e-0cfcc4433368
   Args:
     relation: :hasFather
-    target: Mike_Tindall
-    source: Mia_Tindall
-  AddTriple (63f9ff6d-fa37-4a01-9fca-2abd21156273)
- Call ID: 63f9ff6d-fa37-4a01-9fca-2abd21156273
+    source: :FelicityWade
+    target: :MarkPhillips
+  AddTriple (bf61c9de-5fd4-40d3-92a8-50b1033a8353)
+ Call ID: bf61c9de-5fd4-40d3-92a8-50b1033a8353
   Args:
-    source: Mia_Tindall
-    target: Zara_Tindall
-    relation: :hasMother
-  AddTriple (a1e3e9f2-0bc3-4429-b8a5-a046b17e8ea7)
- Call ID: a1e3e9f2-0bc3-4429-b8a5-a046b17e8ea7
-  Args:
+    target: :MarkPhillips
+    source: :StephaniePhillips
     relation: :hasFather
-    target: Mike_Tindall
-    source: Lena_Tindall
-  AddTriple (14b775e2-bc65-4f02-9aab-31f9747615ff)
- Call ID: 14b775e2-bc65-4f02-9aab-31f9747615ff
+  Finish (7eea954d-a9fa-42fb-996a-33ffac85f83c)
+ Call ID: 7eea954d-a9fa-42fb-996a-33ffac85f83c
   Args:
-    source: Lena_Tindall
-    relation: :hasMother
-    target: Zara_Tindall
-  AddTriple (48bc9add-494d-414b-9204-959c4638e796)
- Call ID: 48bc9add-494d-414b-9204-959c4638e796
-  Args:
-    source: Zara_Tindall
-    relation: :alsoKnownAs
-    target: Zara_Phillips
-  ValidateShacl (b82c1686-7d54-4718-932e-ce72bad6c190)
- Call ID: b82c1686-7d54-4718-932e-ce72bad6c190
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -587,401 +829,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Anne_Princess_Royal a :Woman .
+  data:FelicityWade a :Person,
+          :Woman ;
+      :hasFather data:MarkPhillips .
 
-  data:Lena_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
+  data:StephaniePhillips a :Person,
+          :Woman ;
+      :hasFather data:MarkPhillips .
 
-  data:Mark_Phillips a :Man .
+  data:ZaraTindall a :Person,
+          :Woman ;
+      :hasBirthYear 1981 ;
+      :hasBrother data:PeterPhillips ;
+      :hasChild data:LenaElizabethTindall,
+          data:LucasPhilipTindall,
+          data:MiaGraceTindall ;
+      :hasFather data:MarkPhillips ;
+      :hasMarriageYear 2011 ;
+      :hasMother data:AnnePrincessRoyal ;
+      :hasRelation data:MikeTindall .
 
-  data:Mia_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
+  data:AnnePrincessRoyal a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Peter_Phillips a :Man .
+  data:MikeTindall a :Man,
+          :Person ;
+      :hasChild data:LenaElizabethTindall,
+          data:LucasPhilipTindall,
+          data:MiaGraceTindall .
 
-  data:Zara_Tindall a :Woman ;
-      :alsoKnownAs data:Zara_Phillips ;
-      :hasBirthYear "1981"^^xsd:int ;
-      :hasBrother data:Peter_Phillips ;
-      :hasDaughter data:Lena_Tindall,
-          data:Mia_Tindall ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear data:2011 ;
-      :hasMother data:Anne_Princess_Royal ;
-      :hasRelation data:Mike_Tindall .
+  data:PeterPhillips a :Man,
+          :Person .
 
-  data:Mike_Tindall a :Man .
+  data:LenaElizabethTindall a :Person,
+          :Woman .
+
+  data:LucasPhilipTindall a :Man,
+          :Person .
+
+  data:MiaGraceTindall a :Person,
+          :Woman .
+
+  data:MarkPhillips a :Ancestor,
+          :Man,
+          :Person .
 
 
 
 ================================= Tool Message =================================
 
-VALIDATION RESULTS
-Total violations:18
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Man)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Woman)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Man)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Woman)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mike_Tindall is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mike_Tindall, :Man)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is not assigned the required class :Ancestor or :Man, which is expected for the hasFather property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Man)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Lena_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Zara_Tindall is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Mia_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Zara_Tindall, :Woman)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is not assigned the required class :Ancestor or :Woman, which is expected for the hasMother property of Zara_Tindall.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Woman)
-
-
-
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AssignClass (681597d7-7a28-412b-ae9b-1552678c4c51)
- Call ID: 681597d7-7a28-412b-ae9b-1552678c4c51
+  ValidateShacl (18089272-162c-4971-854d-cce71f94b88b)
+ Call ID: 18089272-162c-4971-854d-cce71f94b88b
   Args:
-    type: :Ancestor
-    source: Anne_Princess_Royal
-  AssignClass (e7b9b544-8161-4dcb-8526-be6183d885a9)
- Call ID: e7b9b544-8161-4dcb-8526-be6183d885a9
-  Args:
-    type: :Ancestor
-    source: Mark_Phillips
-  AssignClass (d285313b-4c9d-41f1-a2ea-f07a68df659e)
- Call ID: d285313b-4c9d-41f1-a2ea-f07a68df659e
-  Args:
-    type: :Ancestor
-    source: Zara_Tindall
-  AssignClass (24e07c68-643d-4ff6-bc7e-8acbc54247f5)
- Call ID: 24e07c68-643d-4ff6-bc7e-8acbc54247f5
-  Args:
-    type: :Man
-    source: Mike_Tindall
-  AssignClass (0932f180-3824-4a10-b257-a5b97df7e50c)
- Call ID: 0932f180-3824-4a10-b257-a5b97df7e50c
-  Args:
-    type: :Man
-    source: Mark_Phillips
-  AssignClass (55f98cc6-7a31-4529-8794-9037e4ba18d0)
- Call ID: 55f98cc6-7a31-4529-8794-9037e4ba18d0
-  Args:
-    type: :Woman
-    source: Anne_Princess_Royal
-  AssignClass (c18461c0-bb36-4171-a32d-6ec1303a2163)
- Call ID: c18461c0-bb36-4171-a32d-6ec1303a2163
-  Args:
-    type: :Woman
-    source: Zara_Tindall
-  ValidateShacl (43a4d454-4df3-48c5-a643-0e1006751380)
- Call ID: 43a4d454-4df3-48c5-a643-0e1006751380
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Anne_Princess_Royal a :Ancestor,
-          :Woman .
-
-  data:Lena_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
-
-  data:Mark_Phillips a :Ancestor,
-          :Man .
-
-  data:Mia_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
-
-  data:Peter_Phillips a :Man .
-
-  data:Zara_Tindall a :Ancestor,
-          :Woman ;
-      :alsoKnownAs data:Zara_Phillips ;
-      :hasBirthYear "1981"^^xsd:int ;
-      :hasBrother data:Peter_Phillips ;
-      :hasDaughter data:Lena_Tindall,
-          data:Mia_Tindall ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear data:2011 ;
-      :hasMother data:Anne_Princess_Royal ;
-      :hasRelation data:Mike_Tindall .
-
-  data:Mike_Tindall a :Man .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Mia_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Lena_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Mia_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Lena_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Lena_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node :Mike_Tindall is assigned as the :hasFather of :Mia_Tindall, but it lacks the mandatory :Ancestor class required for that relationship.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Mike_Tindall.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (b7e90429-ba66-440f-9da7-00afd8b0b2d5)
- Call ID: b7e90429-ba66-440f-9da7-00afd8b0b2d5
-  Args:
-    type: :Ancestor
-    source: Mike_Tindall
-  ValidateShacl (57f5925e-ec0f-4389-b936-a53b83c976ca)
- Call ID: 57f5925e-ec0f-4389-b936-a53b83c976ca
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Anne_Princess_Royal a :Ancestor,
-          :Woman .
-
-  data:Lena_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
-
-  data:Mark_Phillips a :Ancestor,
-          :Man .
-
-  data:Mia_Tindall a :Woman ;
-      :hasFather data:Mike_Tindall ;
-      :hasMother data:Zara_Tindall .
-
-  data:Peter_Phillips a :Man .
-
-  data:Zara_Tindall a :Ancestor,
-          :Woman ;
-      :alsoKnownAs data:Zara_Phillips ;
-      :hasBirthYear "1981"^^xsd:int ;
-      :hasBrother data:Peter_Phillips ;
-      :hasDaughter data:Lena_Tindall,
-          data:Mia_Tindall ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear data:2011 ;
-      :hasMother data:Anne_Princess_Royal ;
-      :hasRelation data:Mike_Tindall .
-
-  data:Mike_Tindall a :Ancestor,
-          :Man .
-
-
 
 ================================= Tool Message =================================
 
@@ -991,42 +897,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9e36e89e-9b8c-4573-aa61-f07961292a88)
- Call ID: 9e36e89e-9b8c-4573-aa61-f07961292a88
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Zara_Phillips', '2011']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (6e7c3084-0125-4bf1-a47f-40d4c0047d34)
- Call ID: 6e7c3084-0125-4bf1-a47f-40d4c0047d34
-  Args:
-    source: Zara_Phillips
-    type: :Woman
-  AssignClass (10d26e6a-bdf0-4575-b642-0477315b7eea)
- Call ID: 10d26e6a-bdf0-4575-b642-0477315b7eea
-  Args:
-    source: 2011
-    type: :DomainEntity
-  Finish (4d417eea-91da-4dc6-9332-6baa12a4de8c)
- Call ID: 4d417eea-91da-4dc6-9332-6baa12a4de8c
+  Finish (a5ad1542-8257-4de4-a2ca-78dc1d19fe8e)
+ Call ID: a5ad1542-8257-4de4-a2ca-78dc1d19fe8e
   Args:

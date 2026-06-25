@@ -69,26 +69,28 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Isabelle Françoise Hélène Marie d'Orléans (27 November 1900, Le Nouvion-en-Thiérache, France – 12 February 1983, Neuilly-sur-Seine, France) was a member of the House of Orléans and, by marriage, a member of the ducal Harcourt family and of the princely House of Murat.
-She was one of the four children of Prince Jean, Duke of Guise (1874–1940), who would become the Orleanist pretender to the French throne in 1926, and Princess Isabelle of Orléans.
-Marriages
+Princess Marie Louise of Hanover and Cumberland (11 October 1879 – 31 January 1948) was the eldest child of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark, the youngest daughter of Christian IX of Denmark and Louise of Hesse-Kassel.
+Through her father, Marie Louise was a great-great-granddaughter of George III of the United Kingdom and Charlotte of Mecklenburg-Strelitz.
+Marriage and children
 
-In 1923 the tradition of Orléans princesses marrying only other royalty (since the alleged 1681 wedding of La Grande Mademoiselle) was dispensed with, as nearly all of her relatives attended Isabelle's wedding at Amélie of Orléans château in Le Chesnay on 12 September to Count Bruno d'Harcourt (1899–1930), son of Count Eugène d'Harcourt and Armande de Pierre de Bernis.
-An automobile racer, Harcourt was killed during practice for the Moroccan Grand Prix, leaving his wife with four children:
+Marie Louise married Prince Maximilian of Baden (1867–1929), her third cousin twice removed, on 10 July 1900 in Gmunden, Austria-Hungary.
+He was the son of Prince Wilhelm of Baden and Princess Maria Maximilianovna of Leuchtenberg and became a first cousin twice removed of Napoleon III of France.
+Marie Louise and Maximilian had one daughter and one son:
 
 
-As a widow, Isabelle remarried the Bonapartist Prince Pierre Murat (1900–1948) in 1934, at Jouy-en-Josas, "upon renunciation of the rank and prerogatives appertaining to princesses of the House of France".
-Prince Murat was a  great-grandson of Prince Lucien Murat.
-In 1940, as World War II began and when her father died, Isabelle again took refuge at the family estate, Larache, in Morocco, where she shared quarters with her mother, and her elder sister the widowed Princess Françoise of Greece, along with her brother Henri, Count of Paris and the latter's son, Prince Michel d'Orléans.Isabella often visited her parents in Morocco, Belgium and France, especially during World 
-War II.
-In 1953, her younger sister,Princess Françoise, widow of Prince Christopher of Greece, died in her Paris home after a long period of depression.
-Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemetery in Paris.
+Ancestry
+
+References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +106,9 @@ Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemeter
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +123,23 @@ Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemeter
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +157,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +239,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +262,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +282,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +292,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +332,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,196 +431,205 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cdc2ac20-dad6-4913-bb1b-658806fce308)
- Call ID: cdc2ac20-dad6-4913-bb1b-658806fce308
+  AssignClass (5207ed44-374a-4fb7-a92c-f8845bbd38fe)
+ Call ID: 5207ed44-374a-4fb7-a92c-f8845bbd38fe
   Args:
     type: :Woman
-    source: :PrincessIsabelleDOrleans
-  AddLiteral (6b2ab363-2715-4a42-9f90-8abae77af212)
- Call ID: 6b2ab363-2715-4a42-9f90-8abae77af212
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+  AssignClass (60f1482b-9ddb-4043-8090-3551c0093eaf)
+ Call ID: 60f1482b-9ddb-4043-8090-3551c0093eaf
   Args:
-    literal_value: 1900
-    relation: :hasBirthYear
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    type: :Person
+  AddLiteral (ea9a21da-f9d6-46f3-8b5d-eeae42b42c49)
+ Call ID: ea9a21da-f9d6-46f3-8b5d-eeae42b42c49
+  Args:
     literal_type: xsd:integer
-    source: :PrincessIsabelleDOrleans
-  AddLiteral (e29118e5-b49b-40a6-8374-653a2d41be7f)
- Call ID: e29118e5-b49b-40a6-8374-653a2d41be7f
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    literal_value: 1879
+    relation: :hasBirthYear
+  AddLiteral (137258a3-66e4-4266-984f-5d72a670c9bf)
+ Call ID: 137258a3-66e4-4266-984f-5d72a670c9bf
   Args:
     relation: :hasDeathYear
-    literal_value: 1983
-    source: :PrincessIsabelleDOrleans
-    literal_type: xsd:integer
-  AssignClass (a3c0e640-cc47-46d6-be5b-346618725ff2)
- Call ID: a3c0e640-cc47-46d6-be5b-346618725ff2
-  Args:
-    type: :Man
-    source: :PrinceJeanDukeOfGuise
-  AddLiteral (81067556-4282-4557-b329-dad471ed22dc)
- Call ID: 81067556-4282-4557-b329-dad471ed22dc
-  Args:
-    literal_value: 1874
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: :PrinceJeanDukeOfGuise
-  AddLiteral (b1f78df4-b430-4952-8f80-1d6c7460bc38)
- Call ID: b1f78df4-b430-4952-8f80-1d6c7460bc38
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1940
-    source: :PrinceJeanDukeOfGuise
-    literal_type: xsd:integer
-  AssignClass (b481c216-3485-44e3-8f90-5d1653b67aab)
- Call ID: b481c216-3485-44e3-8f90-5d1653b67aab
-  Args:
-    type: :Woman
-    source: :PrincessIsabelleOfOrleans
-  AddTriple (3f92079a-1dcd-4499-84b6-f836c374a48f)
- Call ID: 3f92079a-1dcd-4499-84b6-f836c374a48f
-  Args:
-    target: :PrinceJeanDukeOfGuise
-    relation: :hasFather
-    source: :PrincessIsabelleDOrleans
-  AddTriple (9115b567-5dc3-47f1-b740-5f4c709b56b6)
- Call ID: 9115b567-5dc3-47f1-b740-5f4c709b56b6
-  Args:
-    source: :PrincessIsabelleDOrleans
-    relation: :hasMother
-    target: :PrincessIsabelleOfOrleans
-  AssignClass (2bd999f1-4c2a-4c4a-88de-7ece2925c9a6)
- Call ID: 2bd999f1-4c2a-4c4a-88de-7ece2925c9a6
-  Args:
-    type: :Man
-    source: :CountBrunoDHarcourt
-  AddLiteral (843a6779-6b49-4083-9b36-28ec3bdd8e9a)
- Call ID: 843a6779-6b49-4083-9b36-28ec3bdd8e9a
-  Args:
-    literal_value: 1899
-    relation: :hasBirthYear
-    source: :CountBrunoDHarcourt
-    literal_type: xsd:integer
-  AddLiteral (e9739902-3786-42b0-abbc-99b0a619781b)
- Call ID: e9739902-3786-42b0-abbc-99b0a619781b
-  Args:
-    literal_type: xsd:integer
-    source: :CountBrunoDHarcourt
-    relation: :hasDeathYear
-    literal_value: 1930
-  AddLiteral (2c414be5-b1e0-4a46-a92b-57c747982550)
- Call ID: 2c414be5-b1e0-4a46-a92b-57c747982550
-  Args:
-    literal_value: 1923
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: :PrincessIsabelleDOrleans
-  AddTriple (3dcd2544-6ac6-48ce-b2bf-2d4b2e13d8a6)
- Call ID: 3dcd2544-6ac6-48ce-b2bf-2d4b2e13d8a6
-  Args:
-    relation: :hasRelation
-    target: :CountBrunoDHarcourt
-    source: :PrincessIsabelleDOrleans
-  AssignClass (c4de5003-46eb-4f44-a123-4c3647bcc849)
- Call ID: c4de5003-46eb-4f44-a123-4c3647bcc849
-  Args:
-    type: :Man
-    source: :CountEugeneDHarcourt
-  AssignClass (9acfffaa-3f36-40ab-8273-0b37f1667e28)
- Call ID: 9acfffaa-3f36-40ab-8273-0b37f1667e28
-  Args:
-    type: :Woman
-    source: :ArmandeDePierreDeBernis
-  AddTriple (b10fdd1a-a62d-4adb-891d-efddbd830806)
- Call ID: b10fdd1a-a62d-4adb-891d-efddbd830806
-  Args:
-    source: :CountBrunoDHarcourt
-    target: :CountEugeneDHarcourt
-    relation: :hasFather
-  AddTriple (2c3c79f5-c230-44a5-bd5d-dc6466e24b7c)
- Call ID: 2c3c79f5-c230-44a5-bd5d-dc6466e24b7c
-  Args:
-    relation: :hasMother
-    target: :ArmandeDePierreDeBernis
-    source: :CountBrunoDHarcourt
-  AssignClass (64ce918f-82aa-4cfb-b379-b34b84bcadaf)
- Call ID: 64ce918f-82aa-4cfb-b379-b34b84bcadaf
-  Args:
-    type: :Man
-    source: :PrincePierreMurat
-  AddLiteral (01b9f743-ac9f-4088-9d45-3a5b061e678b)
- Call ID: 01b9f743-ac9f-4088-9d45-3a5b061e678b
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1900
-    literal_type: xsd:integer
-    source: :PrincePierreMurat
-  AddLiteral (d44ea3aa-0b77-484e-b506-84833014c967)
- Call ID: d44ea3aa-0b77-484e-b506-84833014c967
-  Args:
-    literal_type: xsd:integer
-    source: :PrincePierreMurat
-    relation: :hasDeathYear
+    source: :Marie_Louise_of_Hanover_and_Cumberland
     literal_value: 1948
-  AddLiteral (314f352c-1d1d-475a-8b9e-2b372afb5bfc)
- Call ID: 314f352c-1d1d-475a-8b9e-2b372afb5bfc
-  Args:
-    literal_value: 1934
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: :PrincessIsabelleDOrleans
-  AddTriple (cc5c338c-2ab2-4bef-8ead-a34ff8f8d498)
- Call ID: cc5c338c-2ab2-4bef-8ead-a34ff8f8d498
+  AssignClass (167d87ac-7c26-417e-913e-8e3a068bb048)
+ Call ID: 167d87ac-7c26-417e-913e-8e3a068bb048
   Args:
-    target: :PrincePierreMurat
-    relation: :hasRelation
-    source: :PrincessIsabelleDOrleans
-  AssignClass (9eddc7ba-5877-4826-9794-6afa0172e665)
- Call ID: 9eddc7ba-5877-4826-9794-6afa0172e665
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Man
+  AssignClass (887d6ade-385f-4e4e-81bb-40e2567dbe50)
+ Call ID: 887d6ade-385f-4e4e-81bb-40e2567dbe50
+  Args:
+    type: :Person
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (50b6a681-5b23-4e43-b38b-7c92830341db)
+ Call ID: 50b6a681-5b23-4e43-b38b-7c92830341db
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    type: :Woman
+  AssignClass (0c2f018b-6dfd-4bc5-85dc-da1781740468)
+ Call ID: 0c2f018b-6dfd-4bc5-85dc-da1781740468
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    type: :Person
+  AddTriple (6d95acbc-45bd-46fe-a324-3a769ddecb9f)
+ Call ID: 6d95acbc-45bd-46fe-a324-3a769ddecb9f
+  Args:
+    relation: :hasFather
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    target: :Ernest_Augustus_Crown_Prince_of_Hanover
+  AddTriple (2a6a902f-1f81-4827-9e2f-04d047b575b9)
+ Call ID: 2a6a902f-1f81-4827-9e2f-04d047b575b9
+  Args:
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    relation: :hasMother
+    target: :Princess_Thyra_of_Denmark
+  AssignClass (bb7e42ba-3c93-47c1-877c-4ce5943cadf0)
+ Call ID: bb7e42ba-3c93-47c1-877c-4ce5943cadf0
   Args:
     type: :Man
-    source: :PrinceLucienMurat
-  AssignClass (08b87275-fdfa-4d39-bdd4-b3b4fbd006e0)
- Call ID: 08b87275-fdfa-4d39-bdd4-b3b4fbd006e0
+    source: :Christian_IX_of_Denmark
+  AssignClass (6129b567-85be-4e73-9a65-5a5bd4f93468)
+ Call ID: 6129b567-85be-4e73-9a65-5a5bd4f93468
+  Args:
+    source: :Christian_IX_of_Denmark
+    type: :Person
+  AssignClass (7f87df29-2e1a-49ad-a0dd-27a3b67e3aeb)
+ Call ID: 7f87df29-2e1a-49ad-a0dd-27a3b67e3aeb
+  Args:
+    source: :Louise_of_Hesse_Kassel
+    type: :Woman
+  AssignClass (12685c22-be15-44df-8ff6-353b1bdd0c8a)
+ Call ID: 12685c22-be15-44df-8ff6-353b1bdd0c8a
+  Args:
+    source: :Louise_of_Hesse_Kassel
+    type: :Person
+  AddTriple (684afac0-faed-4ec5-a6df-d0cb0243f17d)
+ Call ID: 684afac0-faed-4ec5-a6df-d0cb0243f17d
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    relation: :hasFather
+    target: :Christian_IX_of_Denmark
+  AddTriple (f9216f3f-43cb-450c-b7b3-4168755b627a)
+ Call ID: f9216f3f-43cb-450c-b7b3-4168755b627a
+  Args:
+    target: :Louise_of_Hesse_Kassel
+    relation: :hasMother
+    source: :Princess_Thyra_of_Denmark
+  AssignClass (967a2e71-21e8-4867-b08b-fe6110a70ac0)
+ Call ID: 967a2e71-21e8-4867-b08b-fe6110a70ac0
+  Args:
+    type: :Man
+    source: :George_III_of_the_United_Kingdom
+  AssignClass (64d63926-6760-4ae1-bdb8-dd942602bb4b)
+ Call ID: 64d63926-6760-4ae1-bdb8-dd942602bb4b
+  Args:
+    type: :Person
+    source: :George_III_of_the_United_Kingdom
+  AssignClass (ff8a0753-e48d-413e-8795-7e9b7eabb8d5)
+ Call ID: ff8a0753-e48d-413e-8795-7e9b7eabb8d5
+  Args:
+    source: :Charlotte_of_Mecklenburg_Strelitz
+    type: :Woman
+  AssignClass (fde8730e-7947-43fd-b824-f52052d5c26d)
+ Call ID: fde8730e-7947-43fd-b824-f52052d5c26d
+  Args:
+    source: :Charlotte_of_Mecklenburg_Strelitz
+    type: :Person
+  AddTriple (1485e9ed-2335-4c3d-9821-408d10efc533)
+ Call ID: 1485e9ed-2335-4c3d-9821-408d10efc533
+  Args:
+    relation: :hasAncestor
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    target: :George_III_of_the_United_Kingdom
+  AddTriple (02ab6b35-613f-481f-99f7-977151e4d615)
+ Call ID: 02ab6b35-613f-481f-99f7-977151e4d615
+  Args:
+    target: :Charlotte_of_Mecklenburg_Strelitz
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    relation: :hasAncestor
+  AssignClass (157d1ad5-1f8f-4993-a03c-c32c5c0ab240)
+ Call ID: 157d1ad5-1f8f-4993-a03c-c32c5c0ab240
+  Args:
+    source: :Maximilian_of_Baden
+    type: :Man
+  AssignClass (e30dd2b1-bce9-471d-b6fb-8bbb8deaa252)
+ Call ID: e30dd2b1-bce9-471d-b6fb-8bbb8deaa252
+  Args:
+    type: :Person
+    source: :Maximilian_of_Baden
+  AddLiteral (845b37bb-90b5-4093-85d1-e8c7b4dfa5b1)
+ Call ID: 845b37bb-90b5-4093-85d1-e8c7b4dfa5b1
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1867
+    source: :Maximilian_of_Baden
+  AddLiteral (ca35caaa-6a66-4e14-ae2a-19fc19715cf7)
+ Call ID: ca35caaa-6a66-4e14-ae2a-19fc19715cf7
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1929
+    source: :Maximilian_of_Baden
+  AddLiteral (6a474a17-a7b4-4f23-b0cf-e176a4d12820)
+ Call ID: 6a474a17-a7b4-4f23-b0cf-e176a4d12820
+  Args:
+    literal_type: xsd:integer
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    literal_value: 1900
+    relation: :hasMarriageYear
+  AddTriple (5a638b66-01d1-4b95-bb45-f46ee0e494cc)
+ Call ID: 5a638b66-01d1-4b95-bb45-f46ee0e494cc
+  Args:
+    relation: :hasRelation
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    target: :Maximilian_of_Baden
+  AssignClass (f4273d93-3305-4ade-8332-410cf5413920)
+ Call ID: f4273d93-3305-4ade-8332-410cf5413920
+  Args:
+    source: :Wilhelm_of_Baden
+    type: :Man
+  AssignClass (068d99ee-b934-4cb1-9b3a-8b02ec438089)
+ Call ID: 068d99ee-b934-4cb1-9b3a-8b02ec438089
+  Args:
+    source: :Wilhelm_of_Baden
+    type: :Person
+  AssignClass (d2845884-b503-47b0-884a-7b28b5b76432)
+ Call ID: d2845884-b503-47b0-884a-7b28b5b76432
   Args:
     type: :Woman
-    source: :PrincessFrancoiseOfGreece
-  AddTriple (c82f004f-db78-4247-bc25-1049cea18d8c)
- Call ID: c82f004f-db78-4247-bc25-1049cea18d8c
+    source: :Maria_Maximilianovna_of_Leuchtenberg
+  AssignClass (9b9fd7e4-8794-4f37-8a1f-41af86b6ed09)
+ Call ID: 9b9fd7e4-8794-4f37-8a1f-41af86b6ed09
   Args:
-    relation: :hasSister
-    target: :PrincessFrancoiseOfGreece
-    source: :PrincessIsabelleDOrleans
-  AssignClass (47df5df7-ea7b-478e-83c8-b97d443e0291)
- Call ID: 47df5df7-ea7b-478e-83c8-b97d443e0291
+    source: :Maria_Maximilianovna_of_Leuchtenberg
+    type: :Person
+  AddTriple (1b0290c9-e23c-4857-84d9-5f874810d9fa)
+ Call ID: 1b0290c9-e23c-4857-84d9-5f874810d9fa
   Args:
-    type: :Man
-    source: :PrinceChristopherOfGreece
-  AddTriple (20e4243c-7265-445c-abfd-03ea2c31ad69)
- Call ID: 20e4243c-7265-445c-abfd-03ea2c31ad69
-  Args:
-    relation: :hasRelation
-    target: :PrinceChristopherOfGreece
-    source: :PrincessFrancoiseOfGreece
-  AssignClass (66b0f3d5-b3e5-4121-a254-0c374ad422b5)
- Call ID: 66b0f3d5-b3e5-4121-a254-0c374ad422b5
-  Args:
-    type: :Man
-    source: :HenriCountOfParis
-  AddTriple (4872eeb4-d989-44c3-8504-a4206192e85e)
- Call ID: 4872eeb4-d989-44c3-8504-a4206192e85e
-  Args:
-    relation: :hasBrother
-    target: :HenriCountOfParis
-    source: :PrincessIsabelleDOrleans
-  AssignClass (4ad99c89-8416-43db-a5e5-a78d3d930c40)
- Call ID: 4ad99c89-8416-43db-a5e5-a78d3d930c40
-  Args:
-    type: :Man
-    source: :PrinceMichelDOrleans
-  AddTriple (8260031a-8407-4973-94ba-c8844abc9a56)
- Call ID: 8260031a-8407-4973-94ba-c8844abc9a56
-  Args:
-    source: :PrinceMichelDOrleans
-    target: :HenriCountOfParis
+    source: :Maximilian_of_Baden
     relation: :hasFather
-  Finish (e17e6c15-2962-43c5-959d-4ae7b736296e)
- Call ID: e17e6c15-2962-43c5-959d-4ae7b736296e
+    target: :Wilhelm_of_Baden
+  AddTriple (6911988d-bfdd-4bde-a3e9-fa66138a7758)
+ Call ID: 6911988d-bfdd-4bde-a3e9-fa66138a7758
+  Args:
+    relation: :hasMother
+    source: :Maximilian_of_Baden
+    target: :Maria_Maximilianovna_of_Leuchtenberg
+  AssignClass (ced53c43-43f4-42fc-aefe-ec27073d54f9)
+ Call ID: ced53c43-43f4-42fc-aefe-ec27073d54f9
+  Args:
+    type: :Man
+    source: :Napoleon_III_of_France
+  AssignClass (c80200c5-b893-4a3d-bffa-58ec2db6a3ca)
+ Call ID: c80200c5-b893-4a3d-bffa-58ec2db6a3ca
+  Args:
+    type: :Person
+    source: :Napoleon_III_of_France
+  Finish (a3cde0c2-cf90-4be7-a45a-f26472d5707c)
+ Call ID: a3cde0c2-cf90-4be7-a45a-f26472d5707c
   Args:

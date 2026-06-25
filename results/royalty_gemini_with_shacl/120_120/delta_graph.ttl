@@ -2,48 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Sigismund a :Man,
+data:Archduke_Sigismund a :Man,
         :Person ;
     :hasBirthYear 1966 ;
-    :hasFather data:LeopoldoFranz ;
+    :hasFather data:Archduke_Leopold_Franz ;
     :hasMarriageYear 1999 ;
-    :hasMother data:LaetitiaDArenberg ;
-    :hasRelation data:ElyssaEdmonstone .
+    :hasMother data:Laetitia_d_Arenberg ;
+    :hasRelation data:Elyssa_Edmonstone .
 
-data:ArchibaldBruceEdmonstone a :Ancestor,
+data:Ferdinand_IV a :Man,
+        :Person .
+
+data:Archduke_Gottfried a :Ancestor,
         :Man,
         :Person .
 
-data:ElyssaEdmonstone a :Person,
+data:Archduke_Leopold_Franz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Archduke_Gottfried .
+
+data:Elyssa_Edmonstone a :Person,
         :Woman ;
     :hasBirthYear 1973 ;
-    :hasFather data:ArchibaldBruceEdmonstone ;
-    :hasMother data:JulietaIsabelDeakin .
+    :hasFather data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasMother data:Julieta_Isabel_Deakin .
 
-data:FerdinandIV a :Ancestor,
-        :Man,
-        :Person .
-
-data:GottfriedOfAustria a :Ancestor,
-        :Man,
-        :Person .
-
-data:JulietaIsabelDeakin a :Ancestor,
+data:Julieta_Isabel_Deakin a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:PeterDeakin .
+    :hasFather data:Major_General_Peter_Deakin .
 
-data:LaetitiaDArenberg a :Ancestor,
+data:Laetitia_d_Arenberg a :Ancestor,
         :Person,
         :Woman .
 
-data:LeopoldoFranz a :Ancestor,
+data:Major_General_Peter_Deakin a :Ancestor,
         :Man,
-        :Person ;
-    :hasAncestor data:FerdinandIV ;
-    :hasFather data:GottfriedOfAustria .
+        :Person .
 
-data:PeterDeakin a :Ancestor,
+data:Sir_Archibald_Bruce_Edmonstone a :Ancestor,
         :Man,
         :Person .
 

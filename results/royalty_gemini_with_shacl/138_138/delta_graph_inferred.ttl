@@ -1,0 +1,179 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Michel_of_Bourbon_Parma a :Man ;
+    :hasBrother data:Prince_Michel_of_Bourbon_Parma ;
+    :hasMarriageYear 2003 ;
+    :hasRelation data:Prince_Michel_of_Bourbon_Parma ;
+    :isBloodrelationOf data:Prince_Michel_of_Bourbon_Parma ;
+    :isBrotherOf data:Prince_Michel_of_Bourbon_Parma ;
+    :isSiblingOf data:Prince_Michel_of_Bourbon_Parma .
+
+data:Princess_Yolande_de_Broglie_Revel a :Woman ;
+    :hasRelation data:Princess_Yolande_de_Broglie_Revel ;
+    :hasSister data:Princess_Yolande_de_Broglie_Revel ;
+    :isBloodrelationOf data:Princess_Yolande_de_Broglie_Revel ;
+    :isSiblingOf data:Princess_Yolande_de_Broglie_Revel ;
+    :isSisterOf data:Princess_Yolande_de_Broglie_Revel .
+
+data:Countess_Karoline_of_Ledebur_Wicheln a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasDaughter data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasRelation data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein,
+        data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasSister data:Countess_Karoline_of_Ledebur_Wicheln ;
+    :isAncestorOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isAuntOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Countess_Karoline_of_Ledebur_Wicheln ;
+    :isMotherOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isParentOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isSiblingOf data:Countess_Karoline_of_Ledebur_Wicheln ;
+    :isSisterOf data:Countess_Karoline_of_Ledebur_Wicheln .
+
+data:King_Umberto_II_of_Italy a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Umberto_II_of_Italy ;
+    :hasChild data:Princess_Maria_Pia_of_Savoy ;
+    :hasDaughter data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:King_Umberto_II_of_Italy,
+        data:Princess_Maria_Pia_of_Savoy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :isAncestorOf data:Princess_Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:King_Umberto_II_of_Italy ;
+    :isBrotherOf data:King_Umberto_II_of_Italy ;
+    :isFatherOf data:Princess_Maria_Pia_of_Savoy ;
+    :isParentOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:King_Umberto_II_of_Italy ;
+    :isUncleOf data:Princess_Maria_Pia_of_Savoy .
+
+data:Prince_Johannes_of_Liechtenstein a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Johannes_of_Liechtenstein ;
+    :hasChild data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasDaughter data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasRelation data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein,
+        data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isAncestorOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Johannes_of_Liechtenstein ;
+    :isBrotherOf data:Prince_Johannes_of_Liechtenstein ;
+    :isFatherOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isParentOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Johannes_of_Liechtenstein ;
+    :isUncleOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Prince_Alexander_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Alexander_of_Yugoslavia ;
+    :isParentOf data:Prince_Alexander_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Prince_Alexander_of_Yugoslavia .
+
+data:Princess_Marie_Jose_of_Belgium a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Maria_Pia_of_Savoy ;
+    :hasDaughter data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:King_Umberto_II_of_Italy,
+        data:Princess_Maria_Pia_of_Savoy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :hasSister data:Princess_Marie_Jose_of_Belgium ;
+    :isAncestorOf data:Princess_Maria_Pia_of_Savoy ;
+    :isAuntOf data:Princess_Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:Princess_Marie_Jose_of_Belgium ;
+    :isMotherOf data:Princess_Maria_Pia_of_Savoy ;
+    :isParentOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Princess_Marie_Jose_of_Belgium ;
+    :isSisterOf data:Princess_Marie_Jose_of_Belgium .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Alexander_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Alexander_of_Yugoslavia ;
+    :isAuntOf data:Prince_Alexander_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Yugoslavia ;
+    :isParentOf data:Prince_Alexander_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Yugoslavia a :Man ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMarriageYear 1955,
+        1973 ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Alexander_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Alexander_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Yugoslavia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein a :Woman ;
+    :hasAncestor data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein ;
+    :hasFather data:Prince_Johannes_of_Liechtenstein ;
+    :hasMarriageYear 1973 ;
+    :hasMother data:Countess_Karoline_of_Ledebur_Wicheln ;
+    :hasParent data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein ;
+    :hasRelation data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein,
+        data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :hasSister data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isBloodrelationOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isChildOf data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein ;
+    :isDaughterOf data:Countess_Karoline_of_Ledebur_Wicheln,
+        data:Prince_Johannes_of_Liechtenstein ;
+    :isSiblingOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein ;
+    :isSisterOf data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein .
+
+data:Princess_Maria_Pia_of_Savoy a :Woman ;
+    :hasAncestor data:King_Umberto_II_of_Italy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :hasFather data:King_Umberto_II_of_Italy ;
+    :hasMarriageYear 1955,
+        2003 ;
+    :hasMother data:Princess_Marie_Jose_of_Belgium ;
+    :hasParent data:King_Umberto_II_of_Italy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :hasRelation data:King_Umberto_II_of_Italy,
+        data:Princess_Maria_Pia_of_Savoy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :hasSister data:Princess_Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:Princess_Maria_Pia_of_Savoy ;
+    :isChildOf data:King_Umberto_II_of_Italy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :isDaughterOf data:King_Umberto_II_of_Italy,
+        data:Princess_Marie_Jose_of_Belgium ;
+    :isSiblingOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSisterOf data:Princess_Maria_Pia_of_Savoy .
+

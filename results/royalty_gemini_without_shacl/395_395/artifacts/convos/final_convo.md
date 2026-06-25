@@ -69,30 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Anton-Günther, Duke of Oldenburg (Anton-Günther Friedrich August Wilhelm Josias von Holstein-Gottorp, Erbgroßherzog von Oldenburg, Prinz von Lübeck; 16 January 1923 – 20 September 2014) was the head of the Grand Ducal Family of Oldenburg.
-Life
+Nikolaus, Hereditary Grand Duke of Oldenburg (German: Nikolaus Friedrich Wilhelm von Holstein-Gottorp, Erbgroßherzog von Oldenburg; 10 August 1897 – 3 April 1970) was the eldest son of Frederick Augustus II, Grand Duke of Oldenburg, who was the last ruling Grand Duke of Oldenburg.
+In 1931, Nikolaus succeeded to his father's titles and assumed the role of pretender to the Grand Duchy, until his death in 1970.
+Early life
 
-He was born in Lensahn the son of Hereditary Grand Duke Nikolaus of Oldenburg (1897–1970) and his first wife Princess Helena of Waldeck and Pyrmont (1899–1948).
-Duke Anton-Günther was a grandson of Frederick Augustus II, the last Grand Duke of Oldenburg, and through his mother a grandson of Friedrich, the last Prince of Waldeck and Pyrmont.
-He studied for a Diploma in Forestry and succeeded as head of the Grand Ducal Family of Oldenburg upon the death of his father, the Hereditary Grand Duke, on 3 April 1970.
-The ancestral home of the House of Oldenburg is Oldenburg castle, nowadays a museum owned by the state.
-Private seats of the Duke of Oldenburg are Rastede Palace near Oldenburg and Güldenstein Manor, Harmsdorf, in Schleswig-Holstein.
-Eutin Castle in Schleswig-Holstein is a museum owned by a family foundation set up by Duke Anton-Günther.
-According to his obituary issued by the family his ancestral titles (however not all part of his official German surname) were: HRH The Duke of Oldenburg, Heir in Norway, Duke of Schleswig, Holstein, Stormarn, Dithmarschen and Oldenburg, Prince of Lübeck and Birkenfeld, Lord of Jever and Knyphausen.
-Marriage and children
+Nikolaus was born at Oldenburg, Grand Duchy of Oldenburg, the third child and first son of Frederick Augustus II, Grand Duke of Oldenburg (1852–1931) (son of Peter II, Grand Duke of Oldenburg and Princess Elisabeth of Saxe-Altenburg) and his wife, Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin (1869–1955) (daughter of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and Princess Marie of Schwarzburg-Rudolstadt).
+Marriage and issue
 
-Duke Anton-Günther was married to Princess Ameli of Löwenstein-Wertheim-Freudenberg (1923-2016) at Kreuzwertheim on 7 August 1951.
-They have two children:
+Nikolaus married on 26 October 1921 in Arolsen to Princess Helena of Waldeck and Pyrmont (1899–1948), only daughter of Friedrich, Prince of Waldeck and Pyrmont, and Princess Bathildis of Schaumburg-Lippe.
+They had nine children:
 
 
-The Duke and the Duchess lived at Güldenstein Manor, Harmsdorf, Schleswig Holstein.
-The Duke also owned Eutin Castle and Rastede Castle.
+When his first wife died in 1948, he married secondly on 20 September 1950 in Güldenstein to a fellow noblewoman, Anne-Marie von Schutzbar genannt Milchling (1903–1991), former wife of Count Bechtold von Bernstorff, daughter of Rudolf von Schutzbar gen. Milchling (1853-1935) and Rose Marston (1872-1957).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +104,9 @@ The Duke also owned Eutin Castle and Rastede Castle.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +121,23 @@ The Duke also owned Eutin Castle and Rastede Castle.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,94 +429,248 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4e29ebaa-fa49-4eef-9c7a-7b2e659c9d8d)
- Call ID: 4e29ebaa-fa49-4eef-9c7a-7b2e659c9d8d
+  AssignClass (6c3395e1-7fcf-4459-8584-8cda91aa8080)
+ Call ID: 6c3395e1-7fcf-4459-8584-8cda91aa8080
+  Args:
+    source: Nikolaus_of_Oldenburg
+    type: :Man
+  AssignClass (a31a39f9-8e4a-4523-a0cd-475d7d639ab4)
+ Call ID: a31a39f9-8e4a-4523-a0cd-475d7d639ab4
   Args:
     type: :Man
-    source: :Anton-Günther
-  AssignClass (1626c678-7333-4b69-9123-8e8bb98b5a25)
- Call ID: 1626c678-7333-4b69-9123-8e8bb98b5a25
+    source: Frederick_Augustus_II_of_Oldenburg
+  AssignClass (62a1fc5f-ef97-45cc-8b31-e3929017cb27)
+ Call ID: 62a1fc5f-ef97-45cc-8b31-e3929017cb27
   Args:
     type: :Man
-    source: :Nikolaus_of_Oldenburg
-  AssignClass (74cd7175-3d1b-41ef-a23a-de425f7f85df)
- Call ID: 74cd7175-3d1b-41ef-a23a-de425f7f85df
+    source: Peter_II_of_Oldenburg
+  AssignClass (bfa9b31e-0725-450b-a298-9260bc666c21)
+ Call ID: bfa9b31e-0725-450b-a298-9260bc666c21
+  Args:
+    source: Elisabeth_of_Saxe-Altenburg
+    type: :Woman
+  AssignClass (ac949a48-960d-43a4-a50d-564cd38e1f85)
+ Call ID: ac949a48-960d-43a4-a50d-564cd38e1f85
+  Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+    type: :Woman
+  AssignClass (c1bc32d3-f79b-496d-8f1e-39dd6a001d05)
+ Call ID: c1bc32d3-f79b-496d-8f1e-39dd6a001d05
+  Args:
+    type: :Man
+    source: Frederick_Francis_II_of_Mecklenburg-Schwerin
+  AssignClass (1551532a-181e-42f5-b72e-1c3664649613)
+ Call ID: 1551532a-181e-42f5-b72e-1c3664649613
   Args:
     type: :Woman
-    source: :Helena_of_Waldeck_and_Pyrmont
-  AssignClass (cd2a1efe-51d6-405a-9496-8c7dc30a82d4)
- Call ID: cd2a1efe-51d6-405a-9496-8c7dc30a82d4
-  Args:
-    type: :Man
-    source: :Frederick_Augustus_II_of_Oldenburg
-  AssignClass (c5c68907-63cb-408b-8a18-713966b66775)
- Call ID: c5c68907-63cb-408b-8a18-713966b66775
-  Args:
-    type: :Man
-    source: :Friedrich_of_Waldeck_and_Pyrmont
-  AssignClass (13ef26eb-e71b-427a-a074-d52bb515726e)
- Call ID: 13ef26eb-e71b-427a-a074-d52bb515726e
+    source: Marie_of_Schwarzburg-Rudolstadt
+  AssignClass (0fe17215-9da9-458c-9d22-74bfee074258)
+ Call ID: 0fe17215-9da9-458c-9d22-74bfee074258
   Args:
     type: :Woman
-    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
-  AddLiteral (ef056163-fc7b-436a-8b28-acc15fa9d2a0)
- Call ID: ef056163-fc7b-436a-8b28-acc15fa9d2a0
+    source: Helena_of_Waldeck_and_Pyrmont
+  AssignClass (02428ee3-9b81-4f2e-83ac-22802e57c7aa)
+ Call ID: 02428ee3-9b81-4f2e-83ac-22802e57c7aa
   Args:
-    relation: :knownAs
-    literal_value: Anton-Günther, Duke of Oldenburg
-    literal_type: xsd:string
-    source: :Anton-Günther
-  AddLiteral (137c1b6c-91fd-429e-afc9-a10db70d5c08)
- Call ID: 137c1b6c-91fd-429e-afc9-a10db70d5c08
+    source: Friedrich_of_Waldeck_and_Pyrmont
+    type: :Man
+  AssignClass (bc47f4e6-0355-4f4e-9b42-84f2e857524c)
+ Call ID: bc47f4e6-0355-4f4e-9b42-84f2e857524c
   Args:
-    source: :Anton-Günther
-    literal_type: xsd:integer
-    literal_value: 1923
+    source: Bathildis_of_Schaumburg-Lippe
+    type: :Woman
+  AssignClass (c8cc0ab1-b93d-45e3-8ec8-d6423aa32bf2)
+ Call ID: c8cc0ab1-b93d-45e3-8ec8-d6423aa32bf2
+  Args:
+    type: :Woman
+    source: Anne-Marie_von_Schutzbar_genannt_Milchling
+  AssignClass (b0f3faf2-fcfa-4a5d-816e-8e20a9d76c80)
+ Call ID: b0f3faf2-fcfa-4a5d-816e-8e20a9d76c80
+  Args:
+    source: Bechtold_von_Bernstorff
+    type: :Man
+  AssignClass (434223d5-1473-40d1-b25c-84930150c1e3)
+ Call ID: 434223d5-1473-40d1-b25c-84930150c1e3
+  Args:
+    source: Rudolf_von_Schutzbar_genannt_Milchling
+    type: :Man
+  AssignClass (1c8a48df-cc5b-41f1-8a62-acb3b8987aa5)
+ Call ID: 1c8a48df-cc5b-41f1-8a62-acb3b8987aa5
+  Args:
+    source: Rose_Marston
+    type: :Woman
+  AddLiteral (ff608b15-2b1e-4149-a011-1cec7a0497ca)
+ Call ID: ff608b15-2b1e-4149-a011-1cec7a0497ca
+  Args:
+    source: Nikolaus_of_Oldenburg
     relation: :hasBirthYear
-  AddLiteral (e4486e74-0bbf-4c9b-943d-75787851911a)
- Call ID: e4486e74-0bbf-4c9b-943d-75787851911a
-  Args:
-    source: :Anton-Günther
-    relation: :hasDeathYear
-    literal_value: 2014
+    literal_value: 1897
     literal_type: xsd:integer
-  AddTriple (8d6f8582-4ad4-4c9c-8e29-5cf582224ec4)
- Call ID: 8d6f8582-4ad4-4c9c-8e29-5cf582224ec4
+  AddLiteral (676c115d-4180-474c-abea-c12deb42243b)
+ Call ID: 676c115d-4180-474c-abea-c12deb42243b
+  Args:
+    literal_value: 1970
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Nikolaus_of_Oldenburg
+  AddLiteral (b6bd5af4-5efa-4beb-9021-becd5c77e5d2)
+ Call ID: b6bd5af4-5efa-4beb-9021-becd5c77e5d2
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1852
+    literal_type: xsd:integer
+    source: Frederick_Augustus_II_of_Oldenburg
+  AddLiteral (59118d6c-95a7-4336-a3cb-4c76c9fccf1b)
+ Call ID: 59118d6c-95a7-4336-a3cb-4c76c9fccf1b
+  Args:
+    source: Frederick_Augustus_II_of_Oldenburg
+    literal_value: 1931
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (ae173c11-8f7d-4274-9ac5-2cb711b4383d)
+ Call ID: ae173c11-8f7d-4274-9ac5-2cb711b4383d
+  Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+    literal_value: 1869
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (f3361bad-e76f-4825-b60a-688386e5130e)
+ Call ID: f3361bad-e76f-4825-b60a-688386e5130e
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1955
+    source: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+  AddLiteral (c97ee01f-6bd4-4778-af95-1618187d2384)
+ Call ID: c97ee01f-6bd4-4778-af95-1618187d2384
+  Args:
+    source: Helena_of_Waldeck_and_Pyrmont
+    relation: :hasBirthYear
+    literal_value: 1899
+    literal_type: xsd:integer
+  AddLiteral (37b3c835-f65b-4fc8-95b8-603cf12bae87)
+ Call ID: 37b3c835-f65b-4fc8-95b8-603cf12bae87
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1948
+    literal_type: xsd:integer
+    source: Helena_of_Waldeck_and_Pyrmont
+  AddLiteral (32f153b5-b85f-49f4-87c4-978bca4d1665)
+ Call ID: 32f153b5-b85f-49f4-87c4-978bca4d1665
+  Args:
+    source: Anne-Marie_von_Schutzbar_genannt_Milchling
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1903
+  AddLiteral (1d1c851f-25dc-488f-b9d5-bbc4251c566b)
+ Call ID: 1d1c851f-25dc-488f-b9d5-bbc4251c566b
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1991
+    source: Anne-Marie_von_Schutzbar_genannt_Milchling
+  AddLiteral (bf7ac1cd-c77c-4082-871d-730da4d20cde)
+ Call ID: bf7ac1cd-c77c-4082-871d-730da4d20cde
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1853
+    source: Rudolf_von_Schutzbar_genannt_Milchling
+  AddLiteral (c0ba8c43-8ef0-49b9-81b5-7a70ad88f6b6)
+ Call ID: c0ba8c43-8ef0-49b9-81b5-7a70ad88f6b6
+  Args:
+    source: Rudolf_von_Schutzbar_genannt_Milchling
+    relation: :hasDeathYear
+    literal_value: 1935
+    literal_type: xsd:integer
+  AddLiteral (a1eca480-5158-47d2-823c-71a019d75746)
+ Call ID: a1eca480-5158-47d2-823c-71a019d75746
+  Args:
+    source: Rose_Marston
+    literal_type: xsd:integer
+    literal_value: 1872
+    relation: :hasBirthYear
+  AddLiteral (df448fd3-24e2-42f0-ab52-0efca0386254)
+ Call ID: df448fd3-24e2-42f0-ab52-0efca0386254
+  Args:
+    literal_value: 1957
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Rose_Marston
+  AddTriple (711a7975-f29a-4f6d-ae92-75bae887823a)
+ Call ID: 711a7975-f29a-4f6d-ae92-75bae887823a
+  Args:
+    source: Nikolaus_of_Oldenburg
+    target: Frederick_Augustus_II_of_Oldenburg
+    relation: :hasFather
+  AddTriple (b40c3e49-a616-4299-8435-fc8ed38253e2)
+ Call ID: b40c3e49-a616-4299-8435-fc8ed38253e2
+  Args:
+    relation: :hasMother
+    source: Nikolaus_of_Oldenburg
+    target: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+  AddTriple (a939e9b8-8d2c-4c8e-9f6f-12498fa5a0f3)
+ Call ID: a939e9b8-8d2c-4c8e-9f6f-12498fa5a0f3
+  Args:
+    target: Peter_II_of_Oldenburg
+    source: Frederick_Augustus_II_of_Oldenburg
+    relation: :hasFather
+  AddTriple (9eab9670-1a09-4881-b909-f95f9b8e4ddc)
+ Call ID: 9eab9670-1a09-4881-b909-f95f9b8e4ddc
+  Args:
+    relation: :hasMother
+    target: Elisabeth_of_Saxe-Altenburg
+    source: Frederick_Augustus_II_of_Oldenburg
+  AddTriple (7a6f7bcf-f36f-40d3-974a-82a68d5a2a79)
+ Call ID: 7a6f7bcf-f36f-40d3-974a-82a68d5a2a79
+  Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+    target: Frederick_Francis_II_of_Mecklenburg-Schwerin
+    relation: :hasFather
+  AddTriple (4c51c9e0-c503-465a-bf45-b82cc47b0e20)
+ Call ID: 4c51c9e0-c503-465a-bf45-b82cc47b0e20
+  Args:
+    relation: :hasMother
+    target: Marie_of_Schwarzburg-Rudolstadt
+    source: Elisabeth_Alexandrine_of_Mecklenburg-Schwerin
+  AddTriple (02128938-ad85-4201-9c9a-8dbef874731e)
+ Call ID: 02128938-ad85-4201-9c9a-8dbef874731e
   Args:
     relation: :hasFather
-    source: :Anton-Günther
-    target: :Nikolaus_of_Oldenburg
-  AddTriple (2db6f0cc-68b7-46c2-830d-95773380ed08)
- Call ID: 2db6f0cc-68b7-46c2-830d-95773380ed08
+    source: Helena_of_Waldeck_and_Pyrmont
+    target: Friedrich_of_Waldeck_and_Pyrmont
+  AddTriple (866f1193-322d-4b6d-aa6f-2bad9fd99ec4)
+ Call ID: 866f1193-322d-4b6d-aa6f-2bad9fd99ec4
   Args:
-    target: :Helena_of_Waldeck_and_Pyrmont
-    source: :Anton-Günther
+    target: Bathildis_of_Schaumburg-Lippe
+    source: Helena_of_Waldeck_and_Pyrmont
     relation: :hasMother
-  AddTriple (cc588460-2702-43af-8704-b0b0c4e70f57)
- Call ID: cc588460-2702-43af-8704-b0b0c4e70f57
+  AddTriple (bdf03582-7ec5-45d8-8a6b-38c5e0b59fc2)
+ Call ID: bdf03582-7ec5-45d8-8a6b-38c5e0b59fc2
   Args:
-    source: :Anton-Günther
-    target: :Frederick_Augustus_II_of_Oldenburg
-    relation: :hasAncestor
-  AddTriple (f1b295c3-f045-409a-91d9-272a53eea74b)
- Call ID: f1b295c3-f045-409a-91d9-272a53eea74b
+    target: Rudolf_von_Schutzbar_genannt_Milchling
+    source: Anne-Marie_von_Schutzbar_genannt_Milchling
+    relation: :hasFather
+  AddTriple (4bf1e143-ea23-4400-a65e-d3ea00dd5784)
+ Call ID: 4bf1e143-ea23-4400-a65e-d3ea00dd5784
   Args:
-    relation: :hasAncestor
-    source: :Anton-Günther
-    target: :Friedrich_of_Waldeck_and_Pyrmont
-  AddLiteral (76d7bb64-967c-403d-9802-28d67c05ab33)
- Call ID: 76d7bb64-967c-403d-9802-28d67c05ab33
+    source: Anne-Marie_von_Schutzbar_genannt_Milchling
+    target: Rose_Marston
+    relation: :hasMother
+  AddLiteral (f985213a-9b0e-449c-a343-556b787f113c)
+ Call ID: f985213a-9b0e-449c-a343-556b787f113c
   Args:
-    literal_type: xsd:integer
-    literal_value: 1951
+    source: Nikolaus_of_Oldenburg
+    literal_value: 1921
     relation: :hasMarriageYear
-    source: :Anton-Günther
-  AddTriple (07c76b4f-df65-4958-8c72-116400e518a8)
- Call ID: 07c76b4f-df65-4958-8c72-116400e518a8
+    literal_type: xsd:integer
+  AddLiteral (a8ed2da6-b8b0-48fc-a6c1-2f2d2caed597)
+ Call ID: a8ed2da6-b8b0-48fc-a6c1-2f2d2caed597
   Args:
-    relation: :hasRelation
-    source: :Anton-Günther
-    target: :Ameli_of_Löwenstein-Wertheim-Freudenberg
-  Finish (71678a64-0997-4728-a98c-bd94a69acd48)
- Call ID: 71678a64-0997-4728-a98c-bd94a69acd48
+    source: Nikolaus_of_Oldenburg
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1950
+  Finish (74b02c07-01a6-4d0c-925c-39150b75644c)
+ Call ID: 74b02c07-01a6-4d0c-925c-39150b75644c
   Args:

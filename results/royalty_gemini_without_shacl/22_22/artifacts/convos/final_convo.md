@@ -105,6 +105,8 @@ On 28 September 2024, she served as a bridesmaid at the wedding of her aunt Prin
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +122,9 @@ On 28 September 2024, she served as a bridesmaid at the wedding of her aunt Prin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +139,23 @@ On 28 September 2024, she served as a bridesmaid at the wedding of her aunt Prin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,234 +447,302 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c757d5c5-1a3e-46a4-9989-a22a1b7de8b3)
- Call ID: c757d5c5-1a3e-46a4-9989-a22a1b7de8b3
+  AssignClass (f5e37391-9777-4e57-afba-2f2b5a79b525)
+ Call ID: f5e37391-9777-4e57-afba-2f2b5a79b525
   Args:
     type: :Woman
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AssignClass (44ccfbfd-5364-4ed1-aa33-bb4c86b51446)
- Call ID: 44ccfbfd-5364-4ed1-aa33-bb4c86b51446
+    source: Maria-Olympia
+  AssignClass (bd040abb-4840-4516-82e8-f14398839689)
+ Call ID: bd040abb-4840-4516-82e8-f14398839689
   Args:
     type: :Person
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AddLiteral (c0f9ca16-13c3-4b65-b4fe-026763b55d10)
- Call ID: c0f9ca16-13c3-4b65-b4fe-026763b55d10
+    source: Maria-Olympia
+  AddLiteral (aa3f03f0-3aa8-46a2-ae83-20a54ca944aa)
+ Call ID: aa3f03f0-3aa8-46a2-ae83-20a54ca944aa
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1996
+    source: Maria-Olympia
+    literal_type: xsd:integer
+  AddLiteral (b0992831-fc22-4c79-aeb1-75ab5cc6e041)
+ Call ID: b0992831-fc22-4c79-aeb1-75ab5cc6e041
   Args:
     relation: :knownAs
     literal_value: Olympia
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
     literal_type: xsd:string
-  AddLiteral (6e7c7e95-c731-453f-a1e2-0fe8c6a28235)
- Call ID: 6e7c7e95-c731-453f-a1e2-0fe8c6a28235
+    source: Maria-Olympia
+  AssignClass (3b85e61d-fe35-479e-a64b-b537e79da8dd)
+ Call ID: 3b85e61d-fe35-479e-a64b-b537e79da8dd
   Args:
-    literal_value: 1996
-    relation: :hasBirthYear
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AssignClass (c3a0c9d7-e1ae-4a72-8d09-45e4c37b32a1)
- Call ID: c3a0c9d7-e1ae-4a72-8d09-45e4c37b32a1
-  Args:
+    source: Pavlos
     type: :Man
-    source: Pavlos_Crown_Prince_of_Greece
-  AssignClass (bf1ee954-62ce-4d33-bb74-cb4a0f3644d8)
- Call ID: bf1ee954-62ce-4d33-bb74-cb4a0f3644d8
+  AssignClass (e03ecf6a-be67-4cc6-a3ff-ef1e55412385)
+ Call ID: e03ecf6a-be67-4cc6-a3ff-ef1e55412385
   Args:
     type: :Person
-    source: Pavlos_Crown_Prince_of_Greece
-  AssignClass (649a05c9-e2e3-41b5-80f3-79c1f52e6cae)
- Call ID: 649a05c9-e2e3-41b5-80f3-79c1f52e6cae
+    source: Pavlos
+  AssignClass (ab40fa28-6c08-438f-8cd0-435f3f640ebf)
+ Call ID: ab40fa28-6c08-438f-8cd0-435f3f640ebf
   Args:
     type: :Woman
-    source: Marie-Chantal_Miller
-  AssignClass (1e1b4ec7-4057-47ff-9631-1d31945335ef)
- Call ID: 1e1b4ec7-4057-47ff-9631-1d31945335ef
+    source: Marie-Chantal
+  AssignClass (e5dcae53-aa66-412e-a8f3-270d75ce2be8)
+ Call ID: e5dcae53-aa66-412e-a8f3-270d75ce2be8
   Args:
     type: :Person
-    source: Marie-Chantal_Miller
-  AddTriple (dd33c60e-dc0a-49f2-83f8-b6086c787577)
- Call ID: dd33c60e-dc0a-49f2-83f8-b6086c787577
+    source: Marie-Chantal
+  AddTriple (a05b4f22-83b8-4329-b55a-7db0da6109c6)
+ Call ID: a05b4f22-83b8-4329-b55a-7db0da6109c6
   Args:
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-    relation: :hasFather
-    target: Pavlos_Crown_Prince_of_Greece
-  AddTriple (6b1f8895-4918-4ec2-8b12-3d1d90259468)
- Call ID: 6b1f8895-4918-4ec2-8b12-3d1d90259468
+    source: Maria-Olympia
+    relation: :isChildOf
+    target: Pavlos
+  AddTriple (0bab7b31-db6b-4e75-a89e-5b2dc85de7ce)
+ Call ID: 0bab7b31-db6b-4e75-a89e-5b2dc85de7ce
   Args:
-    relation: :hasMother
-    target: Marie-Chantal_Miller
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AssignClass (77aa11e7-9347-4ff1-ae0a-971a8755adc6)
- Call ID: 77aa11e7-9347-4ff1-ae0a-971a8755adc6
+    source: Maria-Olympia
+    relation: :isChildOf
+    target: Marie-Chantal
+  AssignClass (bedcb6fd-636c-40b1-91c4-a2610e4edef8)
+ Call ID: bedcb6fd-636c-40b1-91c4-a2610e4edef8
   Args:
+    source: Constantine-II
     type: :Man
-    source: Constantine_II_of_Greece
-  AssignClass (456a2ac0-648e-4864-b531-c442f95e821b)
- Call ID: 456a2ac0-648e-4864-b531-c442f95e821b
+  AssignClass (fab1af64-1d8b-4a6f-8c99-e4cb49f813b1)
+ Call ID: fab1af64-1d8b-4a6f-8c99-e4cb49f813b1
   Args:
     type: :Person
-    source: Constantine_II_of_Greece
-  AssignClass (78b4b989-5c42-4b41-9b93-dce51583b830)
- Call ID: 78b4b989-5c42-4b41-9b93-dce51583b830
+    source: Constantine-II
+  AssignClass (073ba235-d050-49dd-945f-e827a86a93f2)
+ Call ID: 073ba235-d050-49dd-945f-e827a86a93f2
   Args:
     type: :Woman
-    source: Anne-Marie_of_Denmark
-  AssignClass (31563aa1-6ed8-4abe-bd38-360b86e1c39f)
- Call ID: 31563aa1-6ed8-4abe-bd38-360b86e1c39f
+    source: Anne-Marie
+  AssignClass (e483c687-6a6a-4bd6-bee8-998044200143)
+ Call ID: e483c687-6a6a-4bd6-bee8-998044200143
   Args:
+    source: Anne-Marie
     type: :Person
-    source: Anne-Marie_of_Denmark
-  AddTriple (57f90914-6b0e-426d-a3b8-b45f93fe66b6)
- Call ID: 57f90914-6b0e-426d-a3b8-b45f93fe66b6
+  AddTriple (9b121a5a-c04e-4a9e-bf7c-229dff6e38b5)
+ Call ID: 9b121a5a-c04e-4a9e-bf7c-229dff6e38b5
   Args:
-    target: Constantine_II_of_Greece
-    relation: :hasFather
-    source: Pavlos_Crown_Prince_of_Greece
-  AddTriple (71008897-42cd-4a3a-815d-9690b3637948)
- Call ID: 71008897-42cd-4a3a-815d-9690b3637948
+    target: Pavlos
+    relation: :isFatherOf
+    source: Constantine-II
+  AddTriple (f2b2f4bf-9046-4111-a78a-0c054da6568f)
+ Call ID: f2b2f4bf-9046-4111-a78a-0c054da6568f
   Args:
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Anne-Marie_of_Denmark
-    relation: :hasMother
-  AssignClass (bb59fbbf-f4bb-41f2-b5de-bb5a0d9f6315)
- Call ID: bb59fbbf-f4bb-41f2-b5de-bb5a0d9f6315
+    relation: :isMotherOf
+    source: Anne-Marie
+    target: Pavlos
+  AssignClass (7d448113-80bd-45fc-a8c3-fb65f25655aa)
+ Call ID: 7d448113-80bd-45fc-a8c3-fb65f25655aa
   Args:
     type: :Man
-    source: Robert_Warren_Miller
-  AssignClass (27d9b1f7-efb8-4fe2-bac2-d46bdfae38ba)
- Call ID: 27d9b1f7-efb8-4fe2-bac2-d46bdfae38ba
+    source: Robert-Warren-Miller
+  AssignClass (2cb181b3-c5db-491c-8af5-a5f934922902)
+ Call ID: 2cb181b3-c5db-491c-8af5-a5f934922902
   Args:
     type: :Person
-    source: Robert_Warren_Miller
-  AddTriple (d1a32f51-04e5-484a-941e-393b8a78439b)
- Call ID: d1a32f51-04e5-484a-941e-393b8a78439b
+    source: Robert-Warren-Miller
+  AddTriple (75229f93-e44a-4a33-8577-6dc881ce5b94)
+ Call ID: 75229f93-e44a-4a33-8577-6dc881ce5b94
   Args:
-    relation: :hasFather
-    target: Robert_Warren_Miller
-    source: Marie-Chantal_Miller
-  AssignClass (caa4a2af-267d-4f4d-a0e8-dcd1588a54d0)
- Call ID: caa4a2af-267d-4f4d-a0e8-dcd1588a54d0
+    target: Marie-Chantal
+    relation: :isFatherOf
+    source: Robert-Warren-Miller
+  AssignClass (7bb98956-4d45-4963-a69d-707e6c1e1653)
+ Call ID: 7bb98956-4d45-4963-a69d-707e6c1e1653
+  Args:
+    source: Constantine-Alexios
+    type: :Man
+  AssignClass (c19acb5f-50e6-458e-9ac7-585a4a7e94f5)
+ Call ID: c19acb5f-50e6-458e-9ac7-585a4a7e94f5
+  Args:
+    source: Constantine-Alexios
+    type: :Person
+  AssignClass (ddbd41a9-30ec-4ecb-b2b3-fab23e6777c7)
+ Call ID: ddbd41a9-30ec-4ecb-b2b3-fab23e6777c7
+  Args:
+    source: Achileas-Andreas
+    type: :Man
+  AssignClass (53ded78c-0beb-4059-a63d-6d556beae254)
+ Call ID: 53ded78c-0beb-4059-a63d-6d556beae254
+  Args:
+    source: Achileas-Andreas
+    type: :Person
+  AssignClass (9d2198c3-50e9-4856-b99c-2ad57fd07080)
+ Call ID: 9d2198c3-50e9-4856-b99c-2ad57fd07080
   Args:
     type: :Man
-    source: Prince_Constantine-Alexios
-  AssignClass (482bd368-ef30-4a68-a5d0-a28a455b1bdd)
- Call ID: 482bd368-ef30-4a68-a5d0-a28a455b1bdd
+    source: Odysseas-Kimon
+  AssignClass (9d18601a-80ed-40ec-b190-dc4240b9a5c8)
+ Call ID: 9d18601a-80ed-40ec-b190-dc4240b9a5c8
   Args:
+    source: Odysseas-Kimon
     type: :Person
-    source: Prince_Constantine-Alexios
-  AssignClass (69e65444-afb4-4742-abc8-c1aa7c45e10c)
- Call ID: 69e65444-afb4-4742-abc8-c1aa7c45e10c
+  AssignClass (7d3d1142-7dfd-4a02-9a71-3166e238b1ac)
+ Call ID: 7d3d1142-7dfd-4a02-9a71-3166e238b1ac
   Args:
     type: :Man
-    source: Prince_Achileas-Andreas
-  AssignClass (c0b86edd-40b6-4131-aa73-b698e8792ff4)
- Call ID: c0b86edd-40b6-4131-aa73-b698e8792ff4
+    source: Aristidis-Stavros
+  AssignClass (d8905a1a-eca2-4126-9f59-7f59e3ed8778)
+ Call ID: d8905a1a-eca2-4126-9f59-7f59e3ed8778
   Args:
     type: :Person
-    source: Prince_Achileas-Andreas
-  AssignClass (a49b4dfd-98fc-48c8-87c7-284402d02a8b)
- Call ID: a49b4dfd-98fc-48c8-87c7-284402d02a8b
+    source: Aristidis-Stavros
+  AddTriple (dbce7b68-ec60-4f7d-b415-a3dc9fdc1d09)
+ Call ID: dbce7b68-ec60-4f7d-b415-a3dc9fdc1d09
+  Args:
+    target: Constantine-Alexios
+    relation: :isSiblingOf
+    source: Maria-Olympia
+  AddTriple (a4fa1fcd-f178-4a5a-908c-6c57cbf7e51a)
+ Call ID: a4fa1fcd-f178-4a5a-908c-6c57cbf7e51a
+  Args:
+    target: Achileas-Andreas
+    source: Maria-Olympia
+    relation: :isSiblingOf
+  AddTriple (7f6281e7-f4b0-4484-9c42-7da226bef427)
+ Call ID: 7f6281e7-f4b0-4484-9c42-7da226bef427
+  Args:
+    relation: :isSiblingOf
+    source: Maria-Olympia
+    target: Odysseas-Kimon
+  AddTriple (ea823aee-74e8-4327-afd9-769a8308468c)
+ Call ID: ea823aee-74e8-4327-afd9-769a8308468c
+  Args:
+    relation: :isSiblingOf
+    source: Maria-Olympia
+    target: Aristidis-Stavros
+  AssignClass (4bbfb51a-f633-4160-b796-f45cc93a4eda)
+ Call ID: 4bbfb51a-f633-4160-b796-f45cc93a4eda
+  Args:
+    source: Alexia
+    type: :Woman
+  AssignClass (a99b0da6-3d0c-4fb5-9699-9872e7fe03ea)
+ Call ID: a99b0da6-3d0c-4fb5-9699-9872e7fe03ea
+  Args:
+    type: :Person
+    source: Alexia
+  AddTriple (add517a1-335e-4c74-9e09-ff26c7029e64)
+ Call ID: add517a1-335e-4c74-9e09-ff26c7029e64
+  Args:
+    target: Pavlos
+    source: Alexia
+    relation: :isSisterOf
+  AssignClass (962db019-033c-42d3-8ae1-ff8d0fe37948)
+ Call ID: 962db019-033c-42d3-8ae1-ff8d0fe37948
+  Args:
+    source: Pia-Getty
+    type: :Woman
+  AssignClass (6b54e7fb-6b88-4f0f-aa31-429fc48243d4)
+ Call ID: 6b54e7fb-6b88-4f0f-aa31-429fc48243d4
+  Args:
+    type: :Person
+    source: Pia-Getty
+  AddTriple (a264458f-c000-4738-80c1-e2ceef927e03)
+ Call ID: a264458f-c000-4738-80c1-e2ceef927e03
+  Args:
+    target: Marie-Chantal
+    relation: :isSisterOf
+    source: Pia-Getty
+  AssignClass (bdb1de99-e5e3-412b-ba38-7bd65d73fd93)
+ Call ID: bdb1de99-e5e3-412b-ba38-7bd65d73fd93
+  Args:
+    source: Charles-III
+    type: :Man
+  AssignClass (3d43443a-1810-4b34-a3db-b56ff8ed65d3)
+ Call ID: 3d43443a-1810-4b34-a3db-b56ff8ed65d3
+  Args:
+    source: Charles-III
+    type: :Person
+  AssignClass (6ada6915-e8c4-4e2d-a623-0dd06aaaead8)
+ Call ID: 6ada6915-e8c4-4e2d-a623-0dd06aaaead8
   Args:
     type: :Man
-    source: Prince_Odysseas_Kimon
-  AssignClass (8afa8470-60b5-4c29-8ca5-e943637306a4)
- Call ID: 8afa8470-60b5-4c29-8ca5-e943637306a4
+    source: Michael
+  AssignClass (e6afd946-462f-4848-82c4-eeb16e6f25c0)
+ Call ID: e6afd946-462f-4848-82c4-eeb16e6f25c0
   Args:
+    source: Michael
     type: :Person
-    source: Prince_Odysseas_Kimon
-  AssignClass (558e6fa3-1bb2-43d3-801c-5d13eb72aa5c)
- Call ID: 558e6fa3-1bb2-43d3-801c-5d13eb72aa5c
-  Args:
-    type: :Man
-    source: Prince_Aristidis-Stavros
-  AssignClass (a8b9a26b-47fc-4b75-a8b0-9709f70fd873)
- Call ID: a8b9a26b-47fc-4b75-a8b0-9709f70fd873
-  Args:
-    type: :Person
-    source: Prince_Aristidis-Stavros
-  AddTriple (0732d295-4cdf-4170-a3ce-e79fe86a455b)
- Call ID: 0732d295-4cdf-4170-a3ce-e79fe86a455b
-  Args:
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-    relation: :hasBrother
-    target: Prince_Constantine-Alexios
-  AddTriple (cffe35ef-28ed-4828-895c-e822a41cfe86)
- Call ID: cffe35ef-28ed-4828-895c-e822a41cfe86
-  Args:
-    relation: :hasBrother
-    target: Prince_Achileas-Andreas
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AddTriple (eaba64c5-5da3-4e47-b4f6-d2ea5588e94f)
- Call ID: eaba64c5-5da3-4e47-b4f6-d2ea5588e94f
-  Args:
-    target: Prince_Odysseas_Kimon
-    relation: :hasBrother
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AddTriple (d53fbfcf-ea4d-4773-a9e4-afba0fef8a25)
- Call ID: d53fbfcf-ea4d-4773-a9e4-afba0fef8a25
-  Args:
-    relation: :hasBrother
-    target: Prince_Aristidis-Stavros
-    source: Princess_Maria-Olympia_of_Greece_and_Denmark
-  AssignClass (7b6f88d0-7368-4466-91a2-4717cde571df)
- Call ID: 7b6f88d0-7368-4466-91a2-4717cde571df
+  AssignClass (76cbec80-403e-424c-b761-108717f76212)
+ Call ID: 76cbec80-403e-424c-b761-108717f76212
   Args:
     type: :Woman
-    source: Princess_Alexia_of_Greece_and_Denmark
-  AssignClass (3e75a202-654b-43a8-a4dc-6172b7afbfd8)
- Call ID: 3e75a202-654b-43a8-a4dc-6172b7afbfd8
+    source: Theodora
+  AssignClass (7674c4d3-6528-4978-bb51-d371672fb9d5)
+ Call ID: 7674c4d3-6528-4978-bb51-d371672fb9d5
+  Args:
+    source: Theodora
+    type: :Person
+  AddTriple (fd5815ae-6460-4275-ad0b-50b3138f6ab7)
+ Call ID: fd5815ae-6460-4275-ad0b-50b3138f6ab7
+  Args:
+    target: Pavlos
+    relation: :isSisterOf
+    source: Theodora
+  AssignClass (21f33ba9-0424-401f-8a7f-bab232eb0648)
+ Call ID: 21f33ba9-0424-401f-8a7f-bab232eb0648
+  Args:
+    type: :Man
+    source: Matthew-Kumar
+  AssignClass (c4edc91d-973e-4aec-a93e-674565e133b7)
+ Call ID: c4edc91d-973e-4aec-a93e-674565e133b7
   Args:
     type: :Person
-    source: Princess_Alexia_of_Greece_and_Denmark
-  AssignClass (767e7d9f-5feb-4e08-925e-363503faeebc)
- Call ID: 767e7d9f-5feb-4e08-925e-363503faeebc
+    source: Matthew-Kumar
+  AssignClass (b689efed-9f7e-4b0a-a59c-e22f697664b8)
+ Call ID: b689efed-9f7e-4b0a-a59c-e22f697664b8
   Args:
     type: :Woman
-    source: Pia_Getty
-  AssignClass (a8989ca0-5ad6-43c8-9f71-011b38b150ed)
- Call ID: a8989ca0-5ad6-43c8-9f71-011b38b150ed
+    source: Isabel-Getty
+  AssignClass (5796d1e1-dc78-4b5f-9c4a-8e78b5779cd6)
+ Call ID: 5796d1e1-dc78-4b5f-9c4a-8e78b5779cd6
   Args:
+    source: Isabel-Getty
     type: :Person
-    source: Pia_Getty
-  AssignClass (09b3a6f1-b412-4388-abc2-b6d310382836)
- Call ID: 09b3a6f1-b412-4388-abc2-b6d310382836
-  Args:
-    type: :Man
-    source: Charles_III
-  AssignClass (829866cd-1d8f-4973-9535-22ebd15dca75)
- Call ID: 829866cd-1d8f-4973-9535-22ebd15dca75
-  Args:
-    type: :Person
-    source: Charles_III
-  AssignClass (677f830a-902f-4ac4-aff8-0b5c2096cffa)
- Call ID: 677f830a-902f-4ac4-aff8-0b5c2096cffa
-  Args:
-    type: :Man
-    source: Prince_Michael_of_Greece_and_Denmark
-  AssignClass (ffdeddb9-e4e4-4489-94c4-c45bb4621aee)
- Call ID: ffdeddb9-e4e4-4489-94c4-c45bb4621aee
-  Args:
-    type: :Person
-    source: Prince_Michael_of_Greece_and_Denmark
-  AssignClass (a5ee21d5-37ba-4257-86a9-d225d900b8df)
- Call ID: a5ee21d5-37ba-4257-86a9-d225d900b8df
+  AssignClass (90049005-ceff-4efa-8222-fe33b2e1b02b)
+ Call ID: 90049005-ceff-4efa-8222-fe33b2e1b02b
   Args:
     type: :Woman
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (099370fd-b648-4df1-a5e4-b58699ab6f73)
- Call ID: 099370fd-b648-4df1-a5e4-b58699ab6f73
+    source: Talita
+  AssignClass (3ed6f79b-e2d4-44ee-aa30-6c8ed3a33d83)
+ Call ID: 3ed6f79b-e2d4-44ee-aa30-6c8ed3a33d83
   Args:
     type: :Person
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (018bbfb5-dce6-4613-96ec-6d0191ad1ca0)
- Call ID: 018bbfb5-dce6-4613-96ec-6d0191ad1ca0
+    source: Talita
+  AssignClass (845c79a7-0816-4655-b57f-8e00e5f891af)
+ Call ID: 845c79a7-0816-4655-b57f-8e00e5f891af
   Args:
+    source: Harry
     type: :Man
-    source: Matthew_Kumar
-  AssignClass (3e77bc20-6728-4646-a7ca-2acd07cdee1f)
- Call ID: 3e77bc20-6728-4646-a7ca-2acd07cdee1f
+  AssignClass (99fa57e2-150c-43c9-a8ec-ebab2ff2e94b)
+ Call ID: 99fa57e2-150c-43c9-a8ec-ebab2ff2e94b
   Args:
     type: :Person
-    source: Matthew_Kumar
-  Finish (6bfc7703-925c-4229-911d-450d3d32f91a)
- Call ID: 6bfc7703-925c-4229-911d-450d3d32f91a
+    source: Harry
+  AssignClass (13505b4f-5b08-4fd9-a234-2d64f17eb4ad)
+ Call ID: 13505b4f-5b08-4fd9-a234-2d64f17eb4ad
+  Args:
+    type: :Woman
+    source: Sofia
+  AssignClass (3def9128-bae1-4a8d-8f31-7d59b328650e)
+ Call ID: 3def9128-bae1-4a8d-8f31-7d59b328650e
+  Args:
+    type: :Person
+    source: Sofia
+  AssignClass (5d1dd9d5-13ab-4e5c-8b25-b37270ef672c)
+ Call ID: 5d1dd9d5-13ab-4e5c-8b25-b37270ef672c
+  Args:
+    source: Marina
+    type: :Woman
+  AssignClass (a6d03bfc-ced3-4850-9858-9eba0e0076e6)
+ Call ID: a6d03bfc-ced3-4850-9858-9eba0e0076e6
+  Args:
+    type: :Person
+    source: Marina
+  Finish (a304c65c-862b-422e-92e1-5ae6b901a427)
+ Call ID: a304c65c-862b-422e-92e1-5ae6b901a427
   Args:

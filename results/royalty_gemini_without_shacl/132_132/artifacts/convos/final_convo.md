@@ -69,25 +69,57 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Granville George Fergus Leveson-Gower, 6th Earl Granville (born 10 September 1959) is a British peer, landowner, and artist.
-He was known as Lord Leveson until 1996 and was a member of the House of Lords from 1996 to 1999.
-Biography
+Prince Richard of Hesse (Richard Wilhelm Leopold; 14
+May 1901 – 11 February 1969) was a German prince and politician.
+Early life
 
-The elder son of Granville Leveson-Gower, 5th Earl Granville, whose mother Rose Leveson-Gower, Countess Granville, was a daughter of the Earl of Strathmore and Kinghorne and a sister of Queen Elizabeth the Queen Mother, he was educated at Eton College and from 1973 to 1976 was Page of Honour to Queen Elizabeth II, who was his godmother.
-On 31 October 1996, he succeeded as Earl Granville (1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), all in the peerage of the United Kingdom, at the time giving him a seat in the House of Lords.
-Granville is the resident laird of North Uist, living on the island at Callernish House, Griminish, near Lochmaddy, a house shaped like a doughnut designed in the 1960s by Sir Martyn Beckett.
-In 1999, a local smokehouse business came up for sale and Granville took it over, aiming to produce high quality smoked salmon and sea trout.
-With a passion for beachcombing, Granville has also become an artist and sculptor, inspired by flotsam and jetsam and has exhibited his work in North Uist and Edinburgh.
-On 23 May 1997, Granville married Anne Topping, a daughter of Bernard Topping, and they had three children:
+Prince Richard and his twin brother Christoph were born on 14 May 1901 in Frankfurt am Main, in Prussian Hesse as the fifth son Prince Frederick Charles of Hesse and his wife Princess Margaret of Prussia.
+His great-grandmother was Queen Victoria, his mother was the youngest sister of Emperor Wilhelm II.
+Richard, affectionately nicknamed "Ri" by his family, grew up in a loving and close-knit family.
+Career and later life
 
+The First World War and the fall of the imperial regime
 
-In 2021, Granville was reported to be living at Callernish with a new wife, Florence Pearson (married in 2016), an artist, their two young sons, a labrador trained to find ambergris, and a parrot.
+Too young to be mobilized when the First World War broke out, Richard and Prince Christoph of Hesse-Kassel spent most of the conflict in Kronberg, where they were educated at the Reform Realgymnasium.
+Unlike his twin brother, who did not take the exam, Richard obtained the abitur in 1920.
+Closely linked to the former Kaiser Wilhelm II, whose sister was Princess Margaret, the Hesse-Kassel were then attacked by the revolutionaries.
+In this unstable context, Richard and Christoph engage as auxiliaries (hilfsdient) to protect the transports passing through Kronberg while awaiting the arrival of the French occupation troops.
+Training and love life
+
+After World War I, Richard studied civil engineering and mechanical engineering at the Darmstadt University of Technology.
+From a sentimental point of view, Richard fell in love with Princess Sophie of Greece and Denmark, met around 1927.
+However, she fell in love with Richard's twin brother Prince Christoph of Hesse-Kassel, and it is the latter that she married, in 1930.
+Adherence to Nazism
+
+Like his three brothers, Richard was enthusiastic about Nazism.
+In 1932, the prince thus joined simultaneously the SA and the NSDAP.
+Subsequently, Richard became a general (Obergruppenführer) in the Nationalsozialistisches Kraftfahrkorps (NSKK), a special unit of the SA corps, and obtained leadership of the Motorgruppe Hessen in 1935.
+From a more political point of view, the prince ran, without success, in the German parliamentary elections of March 1936 and April 1938.
+The Second World War and its consequences
+
+Prince Richard enlisted in the German Army shortly after the outbreak of the Second World War.
+HAS following the strengthening of the "decree of the princes", Richard was however informed of his dismissal from the army by the Reichsleiter Martin Bormann in October 1943.
+At the same time, his older brother Philippe and his sister-in-law Mafalda of Italy were arrested by the Hitler regime while his twin brother, Prince Christoph of Hesse-Kassel, died in a plane crash.
+Post-war and its consequences
+
+The defeat of Germany and its occupation by the Allies brought new difficulties to Richard's life.
+Arrested by the Americans shortly after the capitulation of his country, the prince was interned for sixteen months in the camp of Moosburg, in Bavaria.
+Several months later, the prince underwent a denazification trial.
+Meanwhile, the jewels of the House of Hesse-Kassel were stolen by American officers in 1946 and only 10% of the stolen objects were finally returned to their rightful owners, in 1951.
+Later years
+
+After the Second World War, Richard assisted his brother Prince Wolfgang of Hesse for a while in the management of the Hessische Hausstiftung.
+Subsequently, he was appointed to the traffic surveillance of the state of Hesse.
+In the same years, Richard of Hesse-Kassel joined the spiritual movement of “Moral Rearmament”, founded by the Lutheran pastor Frank Buchman.
+Prince Richard died in 1969.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +135,9 @@ In 2021, Granville was reported to be living at Callernish with a new wife, Flor
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +152,23 @@ In 2021, Granville was reported to be living at Callernish with a new wife, Flor
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,124 +460,205 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (653b9361-3cb1-427a-b449-c5dc5bf50927)
- Call ID: 653b9361-3cb1-427a-b449-c5dc5bf50927
+  AssignClass (032dbacb-2bef-4cd4-8f98-9cb76825acbd)
+ Call ID: 032dbacb-2bef-4cd4-8f98-9cb76825acbd
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
+    source: Prince_Richard_of_Hesse
     type: :Man
-  AssignClass (b1e6fa56-da8c-4002-8976-47d20a5c4275)
- Call ID: b1e6fa56-da8c-4002-8976-47d20a5c4275
+  AssignClass (26248b0a-0720-48fb-a8f2-967826f8da7b)
+ Call ID: 26248b0a-0720-48fb-a8f2-967826f8da7b
   Args:
+    source: Prince_Richard_of_Hesse
     type: :Person
-    source: Granville_George_Fergus_Leveson-Gower
-  AddLiteral (f62436f7-3d25-4738-a9b3-2e8f41ae8014)
- Call ID: f62436f7-3d25-4738-a9b3-2e8f41ae8014
+  AssignClass (bd4a14bb-dcdc-4a8d-a980-38714ddcaf60)
+ Call ID: bd4a14bb-dcdc-4a8d-a980-38714ddcaf60
   Args:
-    literal_type: xsd:integer
-    literal_value: 1959
+    source: Prince_Christoph_of_Hesse-Kassel
+    type: :Man
+  AssignClass (c95e812a-d5e8-44bb-bf08-c0f961115e72)
+ Call ID: c95e812a-d5e8-44bb-bf08-c0f961115e72
+  Args:
+    source: Prince_Christoph_of_Hesse-Kassel
+    type: :Person
+  AssignClass (55b92a90-8470-4695-bb78-ad70e0850c37)
+ Call ID: 55b92a90-8470-4695-bb78-ad70e0850c37
+  Args:
+    source: Prince_Frederick_Charles_of_Hesse
+    type: :Man
+  AssignClass (a72184ca-4a3a-4bbf-a0d9-e92574c43a35)
+ Call ID: a72184ca-4a3a-4bbf-a0d9-e92574c43a35
+  Args:
+    source: Prince_Frederick_Charles_of_Hesse
+    type: :Person
+  AssignClass (124966f3-9356-4a63-b8d2-3a60ddb27821)
+ Call ID: 124966f3-9356-4a63-b8d2-3a60ddb27821
+  Args:
+    source: Princess_Margaret_of_Prussia
+    type: :Woman
+  AssignClass (0b1ce53d-2b63-43a0-b6cb-a3681aa783a4)
+ Call ID: 0b1ce53d-2b63-43a0-b6cb-a3681aa783a4
+  Args:
+    source: Princess_Margaret_of_Prussia
+    type: :Person
+  AssignClass (8475b06b-a4ce-4620-b229-8eaec8ecd880)
+ Call ID: 8475b06b-a4ce-4620-b229-8eaec8ecd880
+  Args:
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (b024b255-def6-4e7a-b766-2ab2d0bcd738)
+ Call ID: b024b255-def6-4e7a-b766-2ab2d0bcd738
+  Args:
+    source: Queen_Victoria
+    type: :Person
+  AssignClass (d1854974-35c7-4c1b-88b5-62aff2d31589)
+ Call ID: d1854974-35c7-4c1b-88b5-62aff2d31589
+  Args:
+    source: Emperor_Wilhelm_II
+    type: :Man
+  AssignClass (dee21186-e96f-4753-a0b2-323911ff46ff)
+ Call ID: dee21186-e96f-4753-a0b2-323911ff46ff
+  Args:
+    source: Emperor_Wilhelm_II
+    type: :Person
+  AssignClass (d92940d6-b382-42db-a9cf-3ec1a8846ead)
+ Call ID: d92940d6-b382-42db-a9cf-3ec1a8846ead
+  Args:
+    source: Princess_Sophie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (89266e14-a0e2-415f-827a-82aace9d5738)
+ Call ID: 89266e14-a0e2-415f-827a-82aace9d5738
+  Args:
+    source: Princess_Sophie_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (4430c368-b022-4b9c-b2ac-2ad692283d04)
+ Call ID: 4430c368-b022-4b9c-b2ac-2ad692283d04
+  Args:
+    source: Prince_Philippe_of_Hesse
+    type: :Man
+  AssignClass (ff72a277-37b9-4433-88f2-bd5d654d9fd3)
+ Call ID: ff72a277-37b9-4433-88f2-bd5d654d9fd3
+  Args:
+    source: Prince_Philippe_of_Hesse
+    type: :Person
+  AssignClass (b038fced-835b-45f9-9026-2f4a132b29f4)
+ Call ID: b038fced-835b-45f9-9026-2f4a132b29f4
+  Args:
+    source: Mafalda_of_Italy
+    type: :Woman
+  AssignClass (6f2116d7-6517-40f5-9788-4fde34f3fffc)
+ Call ID: 6f2116d7-6517-40f5-9788-4fde34f3fffc
+  Args:
+    source: Mafalda_of_Italy
+    type: :Person
+  AssignClass (5df92d86-a385-44b1-8aa7-4f05e529c2b4)
+ Call ID: 5df92d86-a385-44b1-8aa7-4f05e529c2b4
+  Args:
+    source: Prince_Wolfgang_of_Hesse
+    type: :Man
+  AssignClass (cb7d1323-0881-4161-bb4b-fd374f014e86)
+ Call ID: cb7d1323-0881-4161-bb4b-fd374f014e86
+  Args:
+    source: Prince_Wolfgang_of_Hesse
+    type: :Person
+  AddLiteral (1d2c9e3c-72d9-4915-818e-16731f2ca8c0)
+ Call ID: 1d2c9e3c-72d9-4915-818e-16731f2ca8c0
+  Args:
+    source: Prince_Richard_of_Hesse
     relation: :hasBirthYear
-    source: Granville_George_Fergus_Leveson-Gower
-  AddLiteral (d0ee7d8f-137a-4741-af90-d8daea6098cf)
- Call ID: d0ee7d8f-137a-4741-af90-d8daea6098cf
+    literal_type: xsd:integer
+    literal_value: 1901
+  AddLiteral (ca20e29d-141c-4b1b-9351-0c82511e3a17)
+ Call ID: ca20e29d-141c-4b1b-9351-0c82511e3a17
   Args:
-    literal_value: Lord Leveson
-    literal_type: xsd:string
-    source: Granville_George_Fergus_Leveson-Gower
-    relation: :formerlyKnownAs
-  AssignClass (b9d74d7b-6d6d-4e79-addc-e5a5cef5b734)
- Call ID: b9d74d7b-6d6d-4e79-addc-e5a5cef5b734
-  Args:
-    type: :Man
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-  AssignClass (12ac856f-8488-4107-b028-7fc92f56196b)
- Call ID: 12ac856f-8488-4107-b028-7fc92f56196b
-  Args:
-    type: :Person
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-  AddTriple (84993eeb-aa12-472f-87f5-07159182735f)
- Call ID: 84993eeb-aa12-472f-87f5-07159182735f
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Prince_Richard_of_Hesse
+    literal_value: 1969
+  AddTriple (53d20bac-3a10-46ac-9913-15de594395c6)
+ Call ID: 53d20bac-3a10-46ac-9913-15de594395c6
   Args:
     relation: :hasFather
-    target: Granville_Leveson-Gower_5th_Earl_Granville
-    source: Granville_George_Fergus_Leveson-Gower
-  AssignClass (94e71c10-e649-41ce-b82f-c84a70b58cf3)
- Call ID: 94e71c10-e649-41ce-b82f-c84a70b58cf3
+    target: Prince_Frederick_Charles_of_Hesse
+    source: Prince_Richard_of_Hesse
+  AddTriple (9efbbb0f-a463-47f9-a946-b79a9b6ec1b5)
+ Call ID: 9efbbb0f-a463-47f9-a946-b79a9b6ec1b5
   Args:
-    source: Rose_Leveson-Gower_Countess_Granville
-    type: :Woman
-  AssignClass (b64096a2-6b02-4a8b-97b2-e7f62c30aeb6)
- Call ID: b64096a2-6b02-4a8b-97b2-e7f62c30aeb6
-  Args:
-    type: :Person
-    source: Rose_Leveson-Gower_Countess_Granville
-  AddTriple (efcbbe95-d20b-4baa-ad88-62d68e1c4639)
- Call ID: efcbbe95-d20b-4baa-ad88-62d68e1c4639
-  Args:
-    target: Rose_Leveson-Gower_Countess_Granville
+    source: Prince_Richard_of_Hesse
     relation: :hasMother
-    source: Granville_George_Fergus_Leveson-Gower
-  AssignClass (6beeb52a-ffbd-4678-8f8e-681a3d642960)
- Call ID: 6beeb52a-ffbd-4678-8f8e-681a3d642960
+    target: Princess_Margaret_of_Prussia
+  AddTriple (646e395b-3962-44e0-aa6f-91328dcbe164)
+ Call ID: 646e395b-3962-44e0-aa6f-91328dcbe164
   Args:
-    type: :Woman
-    source: Anne_Topping
-  AssignClass (abc39a42-e227-43f5-b0d1-b474f926a8f2)
- Call ID: abc39a42-e227-43f5-b0d1-b474f926a8f2
+    relation: :isBrotherOf
+    target: Prince_Christoph_of_Hesse-Kassel
+    source: Prince_Richard_of_Hesse
+  AddTriple (d162db0f-4b96-4169-b563-59a93c1431b6)
+ Call ID: d162db0f-4b96-4169-b563-59a93c1431b6
   Args:
-    type: :Person
-    source: Anne_Topping
-  AddTriple (81594f15-6b1b-4f0f-b9eb-990e04c3b70c)
- Call ID: 81594f15-6b1b-4f0f-b9eb-990e04c3b70c
+    target: Prince_Richard_of_Hesse
+    relation: :isBrotherOf
+    source: Prince_Christoph_of_Hesse-Kassel
+  AddTriple (ea829a75-2f77-484b-9da3-ae8036a61752)
+ Call ID: ea829a75-2f77-484b-9da3-ae8036a61752
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
-    target: Anne_Topping
-    relation: :hasRelation
-  AddLiteral (9eb847d0-41ab-4264-a0f8-00137400ec21)
- Call ID: 9eb847d0-41ab-4264-a0f8-00137400ec21
+    target: Prince_Philippe_of_Hesse
+    relation: :isBrotherOf
+    source: Prince_Richard_of_Hesse
+  AddTriple (dcd06eb5-bb2b-4432-aa8a-1fbcb9c62049)
+ Call ID: dcd06eb5-bb2b-4432-aa8a-1fbcb9c62049
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
+    source: Prince_Richard_of_Hesse
+    target: Prince_Wolfgang_of_Hesse
+    relation: :isBrotherOf
+  AddTriple (3abaff8f-8e43-4776-8775-8e75c44560b7)
+ Call ID: 3abaff8f-8e43-4776-8775-8e75c44560b7
+  Args:
+    relation: :isSisterOf
+    target: Emperor_Wilhelm_II
+    source: Princess_Margaret_of_Prussia
+  AddTriple (5539ce93-bc79-4892-9bb1-a2437cdb294a)
+ Call ID: 5539ce93-bc79-4892-9bb1-a2437cdb294a
+  Args:
+    relation: :isBrotherOf
+    target: Princess_Margaret_of_Prussia
+    source: Emperor_Wilhelm_II
+  AddTriple (334eae25-1d98-4e83-a340-8e4eade96de7)
+ Call ID: 334eae25-1d98-4e83-a340-8e4eade96de7
+  Args:
+    source: Prince_Frederick_Charles_of_Hesse
+    target: Prince_Richard_of_Hesse
+    relation: :isFatherOf
+  AddTriple (26b8bdff-1413-41b6-87ff-19c3bb245f7b)
+ Call ID: 26b8bdff-1413-41b6-87ff-19c3bb245f7b
+  Args:
+    source: Princess_Margaret_of_Prussia
+    relation: :isMotherOf
+    target: Prince_Richard_of_Hesse
+  AddTriple (ec1abb4f-6df5-4ffb-94bd-803a9c8f401f)
+ Call ID: ec1abb4f-6df5-4ffb-94bd-803a9c8f401f
+  Args:
+    source: Prince_Frederick_Charles_of_Hesse
+    target: Prince_Christoph_of_Hesse-Kassel
+    relation: :isFatherOf
+  AddTriple (efc3c397-8de1-48c4-a473-b839c224b3a9)
+ Call ID: efc3c397-8de1-48c4-a473-b839c224b3a9
+  Args:
+    relation: :isMotherOf
+    target: Prince_Christoph_of_Hesse-Kassel
+    source: Princess_Margaret_of_Prussia
+  AddTriple (ed4972d5-aebc-4881-8779-d90722b9e166)
+ Call ID: ed4972d5-aebc-4881-8779-d90722b9e166
+  Args:
+    source: Prince_Christoph_of_Hesse-Kassel
     relation: :hasMarriageYear
-    literal_value: 1997
-    literal_type: xsd:integer
-  AssignClass (9ccd18f1-6d29-4b23-aa99-fedb49460696)
- Call ID: 9ccd18f1-6d29-4b23-aa99-fedb49460696
+    target: Princess_Sophie_of_Greece_and_Denmark
+  AddLiteral (88771274-460f-4781-8a61-d7ba32aafb3e)
+ Call ID: 88771274-460f-4781-8a61-d7ba32aafb3e
   Args:
-    type: :Man
-    source: Bernard_Topping
-  AssignClass (08afe2de-42d7-4267-8ed2-2e155171b54d)
- Call ID: 08afe2de-42d7-4267-8ed2-2e155171b54d
-  Args:
-    source: Bernard_Topping
-    type: :Person
-  AddTriple (418221dd-d3a0-4b9e-8535-2773ed7acb21)
- Call ID: 418221dd-d3a0-4b9e-8535-2773ed7acb21
-  Args:
-    source: Anne_Topping
-    relation: :hasFather
-    target: Bernard_Topping
-  AssignClass (f34d0a6b-82a8-4df3-960b-27bc38712398)
- Call ID: f34d0a6b-82a8-4df3-960b-27bc38712398
-  Args:
-    type: :Woman
-    source: Florence_Pearson
-  AssignClass (1af9ba37-0109-48f4-921c-3134b70cd3a2)
- Call ID: 1af9ba37-0109-48f4-921c-3134b70cd3a2
-  Args:
-    source: Florence_Pearson
-    type: :Person
-  AddTriple (83905738-d158-4ed7-8f67-328e3a4ceb86)
- Call ID: 83905738-d158-4ed7-8f67-328e3a4ceb86
-  Args:
-    target: Florence_Pearson
-    relation: :hasRelation
-    source: Granville_George_Fergus_Leveson-Gower
-  AddLiteral (f7ff6456-06c3-42f6-8712-359a7a459df7)
- Call ID: f7ff6456-06c3-42f6-8712-359a7a459df7
-  Args:
-    literal_type: xsd:integer
-    literal_value: 2016
     relation: :hasMarriageYear
-    source: Granville_George_Fergus_Leveson-Gower
-  Finish (59a73279-5179-4875-8f50-c7cb873a7eaa)
- Call ID: 59a73279-5179-4875-8f50-c7cb873a7eaa
+    literal_type: xsd:integer
+    source: Prince_Christoph_of_Hesse-Kassel
+    literal_value: 1930
+  Finish (37bab933-1f4a-403d-83ff-749fa4772c89)
+ Call ID: 37bab933-1f4a-403d-83ff-749fa4772c89
   Args:

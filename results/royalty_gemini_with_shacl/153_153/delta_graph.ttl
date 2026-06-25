@@ -2,47 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Maurice_of_Battenberg a :Man ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1914 ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:Male .
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona .
 
-data:Victoria_Eugenie_of_Battenberg a :Woman ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:Female .
-
-data:Albert_Prince_Consort a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Julie_Therese_Countess_of_Hauke a :Ancestor,
+data:Elena a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isChildOf data:Juan_Carlos_I .
 
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person ;
+    :isAncestorOf data:Carlos_of_Bourbon-Two_Sicilies .
 
-data:Queen_Victoria a :Ancestor,
+data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Louise_of_Orleans ;
+    :hasRelation data:Juan_Count_of_Barcelona ;
+    :isMotherOf data:Juan_Carlos_I .
 
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man ;
-    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julie_Therese_Countess_of_Hauke ;
-    :hasSex data:Male .
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Louise_of_Orleans .
 
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Albert_Prince_Consort ;
-    :hasMother data:Queen_Victoria ;
-    :hasSex data:Female .
+    :isMotherOf data:Juan_Count_of_Barcelona .
 
-data:Female a :Sex .
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Juan_Count_of_Barcelona .
 
-data:Male a :Sex .
+data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Louise_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person .
 

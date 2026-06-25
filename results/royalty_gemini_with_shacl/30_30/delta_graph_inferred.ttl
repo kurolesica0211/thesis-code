@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Albert_II_of_Monaco a :Man ;
+    :hasBrother data:Albert_II_of_Monaco ;
+    :hasRelation data:Albert_II_of_Monaco ;
+    :isBloodrelationOf data:Albert_II_of_Monaco ;
+    :isBrotherOf data:Albert_II_of_Monaco ;
+    :isSiblingOf data:Albert_II_of_Monaco ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Alexandra_Princess_of_Leiningen a :Woman ;
+    :hasRelation data:Alexandra_Princess_of_Leiningen ;
+    :hasSister data:Alexandra_Princess_of_Leiningen ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Alexandra_Princess_of_Leiningen ;
+    :isSiblingOf data:Alexandra_Princess_of_Leiningen ;
+    :isSisterOf data:Alexandra_Princess_of_Leiningen .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernst_August_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernst_August_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexandra_of_Hanover ;
+    :hasDaughter data:Alexandra_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isAncestorOf data:Alexandra_of_Hanover ;
+    :isAuntOf data:Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Princess_Caroline_of_Monaco ;
+    :isMotherOf data:Alexandra_of_Hanover ;
+    :isParentOf data:Alexandra_of_Hanover ;
+    :isSiblingOf data:Princess_Caroline_of_Monaco ;
+    :isSisterOf data:Princess_Caroline_of_Monaco .
+
+data:Charlotte_Casiraghi a :Woman ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover .
+
+data:Hereditary_Prince_Ernst_August a :Man ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover .
+
+data:Prince_Christian_of_Hanover a :Man ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isBrotherOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover .
+
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasBirthYear 1999 ;
+    :hasBrother data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Princess_Caroline_of_Monaco ;
+    :hasParent data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasRelation data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Ernst_August_Prince_of_Hanover,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSister data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi ;
+    :isBloodrelationOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isChildOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isDaughterOf data:Ernst_August_Prince_of_Hanover,
+        data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover ;
+    :isSisterOf data:Alexandra_of_Hanover,
+        data:Charlotte_Casiraghi,
+        data:Hereditary_Prince_Ernst_August,
+        data:Prince_Christian_of_Hanover .
+

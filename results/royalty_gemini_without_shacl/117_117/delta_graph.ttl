@@ -2,45 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_VI a :Man,
-        :Person ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Queen_Sofia .
+data:FelipeVI a :Man ;
+    :hasFather data:JuanCarlosI ;
+    :hasMother data:QueenSofia .
 
-data:Alfonso a :Man,
-        :Person .
+data:1962 a :DomainEntity .
 
-data:Alfonso_XIII a :Man,
-        :Person .
+data:Alfonso a :Man .
 
-data:Infanta_Margarita_Duchess_of_Soria a :Person,
-        :Woman .
+data:AlfonsoXIII a :Man .
 
-data:Infanta_Pilar_Duchess_of_Badajoz a :Person,
-        :Woman .
+data:InfantaMargarita a :Woman .
 
-data:Infante_Juan_Count_of_Barcelona a :Man,
-        :Person ;
-    :hasFather data:Alfonso_XIII .
+data:InfantaPilar a :Woman .
 
-data:Juan_Carlos_I a :Man,
-        :Person ;
+data:InfanteJuan a :Man ;
+    :hasFather data:AlfonsoXIII .
+
+data:JuanCarlosI a :Man ;
     :hasBirthYear 1938 ;
     :hasBrother data:Alfonso ;
-    :hasFather data:Infante_Juan_Count_of_Barcelona ;
-    :hasMarriageYear 1962 ;
-    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Queen_Sofia ;
-    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
-        data:Infanta_Pilar_Duchess_of_Badajoz .
+    :hasFather data:InfanteJuan ;
+    :hasMarriageYear data:1962 ;
+    :hasMother data:PrincessMariaDeLasMercedes ;
+    :hasSister data:InfantaMargarita,
+        data:InfantaPilar .
 
-data:King_Paul_of_Greece a :Man,
-        :Person .
+data:KingPaulOfGreece a :Man .
 
-data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
+data:PrincessMariaDeLasMercedes a :Woman .
 
-data:Queen_Sofia a :Person,
-        :Woman ;
-    :hasFather data:King_Paul_of_Greece .
+data:QueenSofia a :Woman ;
+    :hasMother data:KingPaulOfGreece .
 

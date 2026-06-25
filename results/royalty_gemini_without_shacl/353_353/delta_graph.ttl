@@ -2,55 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Edward_VIII a :Man ;
-    :hasBirthYear 1894 ;
-    :hasDeathYear 1972 ;
-    :hasFather data:George_V ;
-    :hasMarriageYear 1937 ;
-    :hasMother data:Queen_Mary ;
-    :hasRelation data:Wallis_Simpson ;
-    :isBrotherOf data:George_VI,
-        data:Prince_George_Duke_of_Kent,
-        data:Prince_Henry_Duke_of_Gloucester,
-        data:Prince_John ;
-    :knownAs "Edward Albert Christian George Andrew Patrick David"^^xsd:string .
+data:Alexander_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    :isSonOf data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg,
+        data:August_Wilhelm_of_Prussia .
 
-data:King_Christian_IX_of_Denmark a :Man .
+data:Margaret_of_Prussia a :Person,
+        :Woman ;
+    :isSisterOf data:Wilhelm_II_of_Germany .
 
-data:Prince_Albert_Prince_Consort a :Man .
+data:August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Wilhelm_II_of_Germany ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :knownAs "Auwi"^^xsd:string .
 
-data:Prince_Albert_Victor_Duke_of_Clarence_and_Avondale a :Man .
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
 
-data:Queen_Victoria a :Woman .
+data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
 
-data:Edward_VII a :Man .
-
-data:Francis_Duke_of_Teck a :Man .
-
-data:George_VI a :Man ;
-    :hasFather data:George_V ;
-    :hasMother data:Queen_Mary ;
-    :isFatherOf data:Princess_Elizabeth_II .
-
-data:Prince_George_Duke_of_Kent a :Man .
-
-data:Prince_Henry_Duke_of_Gloucester a :Man .
-
-data:Prince_John a :Man .
-
-data:Princess_Elizabeth_II a :Woman .
-
-data:Princess_Mary_Adelaide_of_Cambridge a :Woman .
-
-data:Queen_Alexandra a :Woman .
-
-data:Wallis_Simpson a :Woman .
-
-data:George_V a :Man ;
-    :hasFather data:Edward_VII ;
-    :hasMother data:Queen_Alexandra .
-
-data:Queen_Mary a :Woman ;
-    :hasFather data:Francis_Duke_of_Teck ;
-    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .
+data:Wilhelm_II_of_Germany a :Man,
+        :Person .
 

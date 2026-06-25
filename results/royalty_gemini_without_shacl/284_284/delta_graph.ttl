@@ -2,52 +2,20 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Urraca_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 1913 ;
-    :hasDeathYear 1999 ;
-    :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;
-    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
-        data:Lucia_of_Bourbon-Two_Sicilies,
-        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
-        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
-        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies .
+data:Captain_Fergus_Bowes-Lyon a :Man .
 
-data:Alfonso_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
+data:Timothy_Patrick_Bowes-Lyon a :Man ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Patrick_Lord_Glamis ;
+    :hasMother data:Lady_Dorothy_Osborne .
 
-data:Barbara_Maria_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
+data:Lady_Dorothy_Osborne a :Woman ;
+    :hasBirthYear 1888 ;
+    :hasDeathYear 1946 .
 
-data:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Man,
-        :Person ;
-    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 .
+data:Patrick_Lord_Glamis a :Man ;
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother .
 
-data:Lucia_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Ludwig_III_of_Bavaria a :Man,
-        :Person .
-
-data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 a :Person,
-        :Woman .
-
-data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Maria_Ludwiga_Theresia_of_Bavaria a :Person,
-        :Woman ;
-    :hasFather data:Ludwig_III_of_Bavaria ;
-    :hasMother data:Maria_Theresa_of_Austria-Este .
-
-data:Maria_Theresa_of_Austria-Este a :Person,
-        :Woman .
-
-data:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
+data:Queen_Elizabeth_the_Queen_Mother a :Woman .
 

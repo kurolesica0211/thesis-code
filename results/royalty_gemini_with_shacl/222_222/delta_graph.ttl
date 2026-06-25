@@ -2,27 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Luiz_Philippe_of_Orleans-Braganza a :Man,
-        :Person ;
-    :hasAncestor data:Emperor_Pedro_II,
-        data:Pedro_Henrique_of_Orleans-Braganza ;
-    :hasBirthYear 1969 ;
-    :hasFather data:Eudes_of_Orleans-Braganza ;
-    :hasMother data:Ana_Maria_de_Moraes_Barros .
+data:Arrietta_Morales_y_de_Grecia a :Person,
+        :Woman ;
+    :hasMother data:Theodora_of_Greece_and_Denmark .
 
-data:Ana_Maria_de_Moraes_Barros a :Ancestor,
+data:Maria-Olympia_of_Greece a :Person,
+        :Woman ;
+    :hasMother data:Theodora_of_Greece_and_Denmark .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :isAuntOf data:Theodora_of_Greece_and_Denmark .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Frederica_of_Hanover a :Ancestor,
         :Person,
         :Woman .
 
-data:Emperor_Pedro_II a :Ancestor,
+data:Frederik_IX_of_Denmark a :Ancestor,
         :Man,
         :Person .
 
-data:Eudes_of_Orleans-Braganza a :Ancestor,
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Matthew_Jeremiah_Kumar a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
-        :Man,
-        :Person .
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Theodora Greece"^^xsd:string,
+        "Theodora de Grèce"^^xsd:string ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear 2024 ;
+    :hasMother data:Anne-Marie_of_Denmark ;
+    :hasRelation data:Matthew_Jeremiah_Kumar .
 

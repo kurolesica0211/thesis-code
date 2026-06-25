@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Captain_William_Frederick_Martin a :Man,
+        :Person ;
+    :hasBrother data:Captain_William_Frederick_Martin ;
+    :hasRelation data:Captain_William_Frederick_Martin,
+        data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :isBloodrelationOf data:Captain_William_Frederick_Martin ;
+    :isBrotherOf data:Captain_William_Frederick_Martin ;
+    :isSiblingOf data:Captain_William_Frederick_Martin .
+
+data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon,
+        data:Rosemary ;
+    :isAuntOf data:Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne ;
+    :isSisterOf data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne .
+
+data:Claude_Bowes-Lyon%2C_14th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon%2C_14th ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon,
+        data:Rosemary ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon%2C_14th ;
+    :isBrotherOf data:Claude_Bowes-Lyon%2C_14th ;
+    :isFatherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon%2C_14th ;
+    :isUncleOf data:Fergus_Bowes-Lyon .
+
+data:Lady_Christian_Norah_Dawson-Damer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rosemary ;
+    :hasDaughter data:Rosemary ;
+    :hasRelation data:Captain_William_Frederick_Martin,
+        data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Lady_Christian_Norah_Dawson-Damer ;
+    :isAncestorOf data:Rosemary ;
+    :isAuntOf data:Rosemary ;
+    :isBloodrelationOf data:Lady_Christian_Norah_Dawson-Damer ;
+    :isMotherOf data:Rosemary ;
+    :isParentOf data:Rosemary ;
+    :isSiblingOf data:Lady_Christian_Norah_Dawson-Damer ;
+    :isSisterOf data:Lady_Christian_Norah_Dawson-Damer .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John ;
+    :hasRelation data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAuntOf data:Rosemary ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John .
+
+data:John a :Man,
+        :Person ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John ;
+    :hasRelation data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isUncleOf data:Rosemary .
+
+data:Rosemary a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMother data:Lady_Christian_Norah_Dawson-Damer ;
+    :hasParent data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer ;
+    :hasRelation data:Captain_William_Frederick_Martin,
+        data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Rosemary ;
+    :isBloodrelationOf data:Rosemary ;
+    :isChildOf data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer ;
+    :isDaughterOf data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer ;
+    :isSiblingOf data:Rosemary ;
+    :isSisterOf data:Rosemary .
+
+data:Fergus_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John ;
+    :hasChild data:Rosemary ;
+    :hasDaughter data:Rosemary ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon%2C_14th ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th ;
+    :hasRelation data:Captain_William_Frederick_Martin,
+        data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John,
+        data:Lady_Christian_Norah_Dawson-Damer,
+        data:Rosemary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Rosemary ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isChildOf data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th ;
+    :isFatherOf data:Rosemary ;
+    :isParentOf data:Rosemary ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John ;
+    :isSonOf data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon%2C_14th ;
+    :isUncleOf data:Queen_Elizabeth_II,
+        data:Rosemary .
+

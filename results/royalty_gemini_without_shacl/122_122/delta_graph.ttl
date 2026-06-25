@@ -2,21 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:James_Edward_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 1953 ;
-    :hasFather data:7th_Earl_of_Harewood ;
-    :hasMother data:Marion ;
-    :hasSex data:Male ;
-    :isBloodrelationOf data:King_Charles_III .
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :hasBirthYear 2012 ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Princess_Marie_of_Denmark ;
+    :isSiblingOf data:Felix,
+        data:Henrik,
+        data:Nikolai ;
+    :knownAs "Athena Marguerite Françoise Marie"^^xsd:string .
 
-data:7th_Earl_of_Harewood a :Man,
+data:King_Frederik_X a :Man,
         :Person .
 
-data:King_Charles_III a :Person .
+data:Felix a :Man,
+        :Person .
 
-data:Male a :Sex .
+data:Henrik a :Man,
+        :Person .
 
-data:Marion a :Person,
+data:Nikolai a :Man,
+        :Person .
+
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Prince_Joachim a :Man,
+        :Person ;
+    :hasParent data:Prince_Henrik,
+        data:Queen_Margrethe_II .
+
+data:Princess_Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Queen_Margrethe_II a :Person,
         :Woman .
 

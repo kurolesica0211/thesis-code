@@ -2,37 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_William a :Man ;
-    :hasBirthYear 1880 ;
-    :hasDeathYear 1912 ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasMother data:Princess_Thyra_of_Denmark .
+data:Albert_Alphons_Ludgerus_Brenninkmeijer a :Man ;
+    :hasBirthYear "1974-05-16"^^xsd:date .
 
-data:Prince_Ernest_Augustus_the_younger a :Man ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasMarriageYear 1913 ;
-    :hasRelation data:Princess_Victoria_Louise_of_Prussia .
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands .
 
-data:Queen_Victoria a :Woman .
+data:Princess_Carolina_of_Bourbon-Parma a :Woman ;
+    :hasBirthYear "1974-06-23"^^xsd:date ;
+    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Margarita .
 
-data:Christian_IX_of_Denmark a :Man .
+data:Queen_Juliana_of_the_Netherlands a :Woman ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands .
 
-data:George_III_of_the_United_Kingdom a :Man .
+data:Carlos_Hugo_Duke_of_Parma a :Man .
 
-data:George_V_of_Hanover a :Man .
+data:Prince_Carlos a :Man .
 
-data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man ;
-    :hasFather data:George_III_of_the_United_Kingdom .
+data:Prince_Jaime a :Man .
 
-data:Princess_Thyra_of_Denmark a :Woman ;
-    :hasFather data:Christian_IX_of_Denmark .
+data:Princess_Margarita a :Woman .
 
-data:Princess_Victoria_Louise_of_Prussia a :Woman ;
-    :hasMother data:Wilhelm_II_German_Emperor .
-
-data:Wilhelm_II_German_Emperor a :Man .
-
-data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man ;
-    :hasFather data:George_V_of_Hanover,
-        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale .
+data:Princess_Irene_of_the_Netherlands a :Woman .
 

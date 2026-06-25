@@ -69,46 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Margarita Elizabeth Rose Alleyne Armstrong-Jones (born 14 May 2002) is a member of the British royal family.
-She is the granddaughter of Princess Margaret and the grandniece of Queen Elizabeth II.
-Lady Margarita is a jewellery designer and the creator of the bespoke jewellery label Matita.
-Early life and family
+Infanta Maria Cristina of Spain, Countess Marone-Cinzano (María Cristina Teresa Alejandra María de Guadalupe María de la Concepción Ildefonsa Victoria Eugenia de Borbón y Battenberg; 12 December 1911 – 23 December 1996) was the fourth surviving child and youngest daughter of Alfonso XIII of Spain and Victoria Eugenie of Battenberg and paternal aunt of King Juan Carlos I.
 
-Lady Margarita was born The Honourable Margarita Armstrong-Jones on 14 May 2002 at Portland Hospital in London.
-She is the daughter of David Armstrong-Jones, 2nd Earl of Snowdon, who was styled as Viscount Linley at the time of her birth, and The Honourable Serena Stanhope.
-On her father's side, she is the granddaughter of Princess Margaret, Countess of Snowdon and Antony Armstrong-Jones, 1st Earl of Snowdon and a great-granddaughter of King George VI.
-On her mother's side, she is the granddaughter of Charles Stanhope, 12th Earl of Harrington and a descendant of Charles II.
-She was baptised Margarita Elizabeth Rose Alleyne, and was named after her grandmother and great-grandmother, Queen Elizabeth The Queen Mother.
-Her father succeeded his father as the Earl of Snowdon in 2017, which entitled her to use the title Lady.
-Lady Margarita's parents separated in 2020.
-Education
 
-Lady Margarita was first educated at Garden House School, a private school in the Royal Borough of Kensington and Chelsea before attending St Mary's School Ascot, a Catholic all-girls boarding school.
-Lady Margarita took life drawing, pottery, and watercolour painting courses at a small art school in Oxford.
-In September 2022, Lady Margarita enrolled as a student at La Haute École de Joaillerie in Paris to study jewellery design, stonesetting, and wax carving.
-Public role and royal appearances
+Biography
 
-In 2008, she attended the wedding of Peter Phillips, son of the Princess Royal, to Autumn Kelly at St George's Chapel, Windsor and appeared with the royal family for photographs the following day.
-That same year, she accompanied her aunt, Lady Sarah Chatto, to the 60th birthday brunch for Charles, Prince of Wales at the Goring Hotel.
-In 2011, Lady Margarita served as a bridesmaid at the wedding of Prince William and Catherine Middleton alongside Lady Louise Windsor, Eliza Lopes, and Grace van Cutsem.
-Her elder brother, Viscount Linley, served as a page of honour to Elizabeth II.
-On 30 March 2012, she attended a Service of Thanksgiving for the Queen Mother and Princess Margaret at St George's Chapel.
-In 2018, Lady Margarita attended the wedding of Prince Harry and Meghan Markle and the wedding of Princess Eugenie and Jack Brooksbank.
-Along with other members of the extended royal family, she attended the funeral of Prince Philip, Duke of Edinburgh in 2021 and the state funeral of Elizabeth II in 2022.
-Lady Margarita was present at the Coronation of Charles III and Camilla on 6 May 2023.
-Lady Margarita also attends the annual Trooping of the Colour, having accompanied Elizabeth II in the past.
-Career
+Early life
 
-Lady Margarita made her modelling debut in 2011 for Kids Company.
-Personal life
+Infanta Maria Cristina was born at the Palacio Real in Madrid, Spain.
+By 1933 King Alfonso and his daughters, the Infantas Beatriz and Maria Cristina, had moved to Rome.
+Their father warned would-be suitors of the inherent dangers of hemophilia, from which two of the king's sons, Alfonso and Gonzalo, suffered.
+Maria Cristina had one step-son, from Enrico's previous marriage to Noemí Rosa de Alcorta y García-Mansilla (1907-1929):
 
-In September 2022, Lady Margarita moved to Paris, renting a flat near the Bastille where she lives with her two best friends.
+
+The marriage of Maria Cristina and Enrico Eugenio produced four daughters:
+
+
+Death
+
+Infanta Maria Cristina returned to Spain and spent periods of time there, but never lived there permanently.
+A funeral service for the Infanta was held in the chapel of the Royal Palace of Madrid on 24 December and a burial service was held on 26 December in the Marone-Cinzano Pantheon in Turin.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +112,9 @@ In September 2022, Lady Margarita moved to Paris, renting a flat near the Bastil
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +129,23 @@ In September 2022, Lady Margarita moved to Paris, renting a flat near the Bastil
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,283 +437,168 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c22fb9d1-94b5-4a5b-8c21-cb9811234f8e)
- Call ID: c22fb9d1-94b5-4a5b-8c21-cb9811234f8e
+  AssignClass (b21d7501-fc3a-4ee7-ac45-56d2a913a5f8)
+ Call ID: b21d7501-fc3a-4ee7-ac45-56d2a913a5f8
   Args:
-    source: Lady_Margarita_Armstrong-Jones
+    source: Maria_Cristina_of_Spain
     type: :Woman
-  AssignClass (4b5d05ac-45cf-4a43-8081-4e99afd79ebf)
- Call ID: 4b5d05ac-45cf-4a43-8081-4e99afd79ebf
+  AssignClass (944de5ae-a593-4cac-b0d5-4f8ca8f9f8b7)
+ Call ID: 944de5ae-a593-4cac-b0d5-4f8ca8f9f8b7
   Args:
+    source: Maria_Cristina_of_Spain
     type: :Person
-    source: Lady_Margarita_Armstrong-Jones
-  AddLiteral (22e761f4-fe30-4774-98c6-6163cf8a30a9)
- Call ID: 22e761f4-fe30-4774-98c6-6163cf8a30a9
+  AddLiteral (9fb184a1-27dd-48ef-bd20-6fa5d9759bc3)
+ Call ID: 9fb184a1-27dd-48ef-bd20-6fa5d9759bc3
   Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 2002
-    source: Lady_Margarita_Armstrong-Jones
-  AddTriple (ec31ad06-7209-4597-8e4f-fed039a8141b)
- Call ID: ec31ad06-7209-4597-8e4f-fed039a8141b
+    literal_value: 1911
+    source: Maria_Cristina_of_Spain
+  AddLiteral (07fac28a-a5f5-475d-a43f-b75ec2d198b2)
+ Call ID: 07fac28a-a5f5-475d-a43f-b75ec2d198b2
   Args:
-    relation: :knownAs
-    target: Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones
-    source: Lady_Margarita_Armstrong-Jones
-  AssignClass (4cd88ede-21eb-4061-9060-2b9e14335bb7)
- Call ID: 4cd88ede-21eb-4061-9060-2b9e14335bb7
-  Args:
-    source: David_Armstrong-Jones
-    type: :Man
-  AssignClass (e259b789-6f3e-4364-bb66-da75926cff22)
- Call ID: e259b789-6f3e-4364-bb66-da75926cff22
-  Args:
-    source: David_Armstrong-Jones
-    type: :Person
-  AssignClass (b44b98be-a2ea-4f22-8b29-4143b257776e)
- Call ID: b44b98be-a2ea-4f22-8b29-4143b257776e
-  Args:
-    type: :Woman
-    source: Serena_Stanhope
-  AssignClass (94a411ec-b895-4f22-8f57-c4701716262d)
- Call ID: 94a411ec-b895-4f22-8f57-c4701716262d
-  Args:
-    source: Serena_Stanhope
-    type: :Person
-  AddTriple (4cefa923-dec6-45b7-998f-14487ccb0fe7)
- Call ID: 4cefa923-dec6-45b7-998f-14487ccb0fe7
-  Args:
-    target: David_Armstrong-Jones
-    source: Lady_Margarita_Armstrong-Jones
-    relation: :hasFather
-  AddTriple (cf15f120-c5c7-4315-a009-0273308a3bf2)
- Call ID: cf15f120-c5c7-4315-a009-0273308a3bf2
-  Args:
-    target: Serena_Stanhope
-    source: Lady_Margarita_Armstrong-Jones
-    relation: :hasMother
-  AssignClass (8aaa1789-8e58-4c8d-b14b-98504d47c5db)
- Call ID: 8aaa1789-8e58-4c8d-b14b-98504d47c5db
-  Args:
-    source: Princess_Margaret
-    type: :Woman
-  AssignClass (890acd68-b42b-4326-957a-c0077723cb8d)
- Call ID: 890acd68-b42b-4326-957a-c0077723cb8d
-  Args:
-    source: Princess_Margaret
-    type: :Person
-  AssignClass (ff4e3be0-af08-4ad7-ace3-44ab6f0c7247)
- Call ID: ff4e3be0-af08-4ad7-ace3-44ab6f0c7247
-  Args:
-    source: Antony_Armstrong-Jones
-    type: :Man
-  AssignClass (ec6066fd-35a3-49ec-b01f-f8ae8afbbcc9)
- Call ID: ec6066fd-35a3-49ec-b01f-f8ae8afbbcc9
-  Args:
-    type: :Person
-    source: Antony_Armstrong-Jones
-  AddTriple (64886e13-0091-4a21-b811-b1f6ae76130a)
- Call ID: 64886e13-0091-4a21-b811-b1f6ae76130a
-  Args:
-    relation: :hasMother
-    source: David_Armstrong-Jones
-    target: Princess_Margaret
-  AddTriple (cbe8dfe6-7933-4613-8fac-e789e91874e6)
- Call ID: cbe8dfe6-7933-4613-8fac-e789e91874e6
-  Args:
-    relation: :hasFather
-    target: Antony_Armstrong-Jones
-    source: David_Armstrong-Jones
-  AssignClass (7732211b-7b28-413a-ae50-f5a9e1f40444)
- Call ID: 7732211b-7b28-413a-ae50-f5a9e1f40444
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Maria_Cristina_of_Spain
+    literal_value: 1996
+  AssignClass (e4a4b953-e4ea-4244-87ec-8288c56d710c)
+ Call ID: e4a4b953-e4ea-4244-87ec-8288c56d710c
   Args:
     type: :Man
-    source: Charles_Stanhope
-  AssignClass (d55a1e91-cbd9-405c-8ce8-dcbb4716df6f)
- Call ID: d55a1e91-cbd9-405c-8ce8-dcbb4716df6f
+    source: Alfonso_XIII_of_Spain
+  AssignClass (15a52596-c825-4862-8051-c3a7b42cb81e)
+ Call ID: 15a52596-c825-4862-8051-c3a7b42cb81e
   Args:
-    source: Charles_Stanhope
     type: :Person
-  AddTriple (46873861-94f2-468a-b67b-9cf47d47d787)
- Call ID: 46873861-94f2-468a-b67b-9cf47d47d787
+    source: Alfonso_XIII_of_Spain
+  AssignClass (43fa386e-b717-41ea-9f20-0f266217a551)
+ Call ID: 43fa386e-b717-41ea-9f20-0f266217a551
   Args:
-    source: Serena_Stanhope
-    target: Charles_Stanhope
-    relation: :hasFather
-  AssignClass (df464cc0-0a95-4024-b4eb-b9ac80df4e9a)
- Call ID: df464cc0-0a95-4024-b4eb-b9ac80df4e9a
-  Args:
-    source: Lady_Sarah_Chatto
+    source: Victoria_Eugenie_of_Battenberg
     type: :Woman
-  AssignClass (ea984f32-5d25-47b2-8053-8522a3bf86dd)
- Call ID: ea984f32-5d25-47b2-8053-8522a3bf86dd
+  AssignClass (ecdc2e2c-b605-4ba3-9b11-bb71aafd2632)
+ Call ID: ecdc2e2c-b605-4ba3-9b11-bb71aafd2632
   Args:
-    source: Lady_Sarah_Chatto
+    source: Victoria_Eugenie_of_Battenberg
     type: :Person
-  AddTriple (e3fc9ce8-7d0e-4d38-bd8b-1c363a0175bd)
- Call ID: e3fc9ce8-7d0e-4d38-bd8b-1c363a0175bd
+  AddTriple (4613e0d9-d46e-400a-b9a1-abe913f78d03)
+ Call ID: 4613e0d9-d46e-400a-b9a1-abe913f78d03
   Args:
-    source: Lady_Sarah_Chatto
-    target: David_Armstrong-Jones
-    relation: :isSisterOf
-  Finish (0c3a9b11-f210-411c-b239-58f4ef58f0de)
- Call ID: 0c3a9b11-f210-411c-b239-58f4ef58f0de
+    target: Alfonso_XIII_of_Spain
+    relation: :isDaughterOf
+    source: Maria_Cristina_of_Spain
+  AddTriple (f8947444-3859-4ff1-8069-39a072ea0fcf)
+ Call ID: f8947444-3859-4ff1-8069-39a072ea0fcf
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Lady_Margarita_Armstrong-Jones a :Person,
-          :Woman ;
-      :hasBirthYear 2002 ;
-      :hasFather data:David_Armstrong-Jones ;
-      :hasMother data:Serena_Stanhope ;
-      :knownAs data:Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones .
-
-  data:Lady_Sarah_Chatto a :Person,
-          :Woman ;
-      :isSisterOf data:David_Armstrong-Jones .
-
-  data:Antony_Armstrong-Jones a :Man,
-          :Person .
-
-  data:Charles_Stanhope a :Man,
-          :Person .
-
-  data:Princess_Margaret a :Person,
-          :Woman .
-
-  data:Serena_Stanhope a :Person,
-          :Woman ;
-      :hasFather data:Charles_Stanhope .
-
-  data:David_Armstrong-Jones a :Man,
-          :Person ;
-      :hasFather data:Antony_Armstrong-Jones ;
-      :hasMother data:Princess_Margaret .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (e942054e-3192-484e-b284-0861b288fcff)
- Call ID: e942054e-3192-484e-b284-0861b288fcff
+    source: Maria_Cristina_of_Spain
+    relation: :isDaughterOf
+    target: Victoria_Eugenie_of_Battenberg
+  AssignClass (f5f8d86f-7c79-4ec1-8b18-4c5c1516269e)
+ Call ID: f5f8d86f-7c79-4ec1-8b18-4c5c1516269e
+  Args:
+    source: Juan_Carlos_I
+    type: :Man
+  AssignClass (9ef3fb1e-588a-4659-8d52-3e3b203803d4)
+ Call ID: 9ef3fb1e-588a-4659-8d52-3e3b203803d4
   Args:
     type: :Person
-    source: Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones
-  AssignClass (22fffa01-0d5f-4e3e-83f8-5cb5ec402ee5)
- Call ID: 22fffa01-0d5f-4e3e-83f8-5cb5ec402ee5
+    source: Juan_Carlos_I
+  AddTriple (57921e00-4954-408a-b3c8-b808a615c84e)
+ Call ID: 57921e00-4954-408a-b3c8-b808a615c84e
+  Args:
+    source: Maria_Cristina_of_Spain
+    target: Juan_Carlos_I
+    relation: :isAuntOf
+  AssignClass (d8acfa5f-b4d1-4d8d-9c80-a4580bf6af07)
+ Call ID: d8acfa5f-b4d1-4d8d-9c80-a4580bf6af07
   Args:
     type: :Woman
-    source: Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones
-  Finish (217f13a0-288f-42b2-ac8f-4e971febb6f8)
- Call ID: 217f13a0-288f-42b2-ac8f-4e971febb6f8
+    source: Beatriz_of_Spain
+  AssignClass (1ee45ed7-1f50-441d-afc4-b45b60585b32)
+ Call ID: 1ee45ed7-1f50-441d-afc4-b45b60585b32
+  Args:
+    type: :Person
+    source: Beatriz_of_Spain
+  AddTriple (045d7b98-1ea2-4bb5-ac02-6f31d054c5d3)
+ Call ID: 045d7b98-1ea2-4bb5-ac02-6f31d054c5d3
+  Args:
+    relation: :isSiblingOf
+    target: Beatriz_of_Spain
+    source: Maria_Cristina_of_Spain
+  AssignClass (34527b5c-fbdb-44ce-8132-e45c7cef8c4f)
+ Call ID: 34527b5c-fbdb-44ce-8132-e45c7cef8c4f
+  Args:
+    type: :Man
+    source: Alfonso_son_of_Alfonso_XIII
+  AssignClass (ffacb931-0be7-48af-9bcb-4f2813c8277e)
+ Call ID: ffacb931-0be7-48af-9bcb-4f2813c8277e
+  Args:
+    source: Alfonso_son_of_Alfonso_XIII
+    type: :Person
+  AssignClass (dd298e49-d689-4138-a635-44d7cd5ee414)
+ Call ID: dd298e49-d689-4138-a635-44d7cd5ee414
+  Args:
+    source: Gonzalo_son_of_Alfonso_XIII
+    type: :Man
+  AssignClass (4342d344-ce4e-4760-9822-e5589be9383e)
+ Call ID: 4342d344-ce4e-4760-9822-e5589be9383e
+  Args:
+    source: Gonzalo_son_of_Alfonso_XIII
+    type: :Person
+  AddTriple (2b78c7b8-c2a0-4b6d-9bd2-ed94319e8309)
+ Call ID: 2b78c7b8-c2a0-4b6d-9bd2-ed94319e8309
+  Args:
+    source: Maria_Cristina_of_Spain
+    relation: :isSiblingOf
+    target: Alfonso_son_of_Alfonso_XIII
+  AddTriple (edf2d027-c828-4975-be7a-83c209e1b422)
+ Call ID: edf2d027-c828-4975-be7a-83c209e1b422
+  Args:
+    source: Maria_Cristina_of_Spain
+    relation: :isSiblingOf
+    target: Gonzalo_son_of_Alfonso_XIII
+  AssignClass (c541c92d-11e9-4137-bdbb-ac99ac58fc3a)
+ Call ID: c541c92d-11e9-4137-bdbb-ac99ac58fc3a
+  Args:
+    source: Enrico_Eugenio
+    type: :Man
+  AssignClass (9c27627b-adac-4d31-9246-e021437403f8)
+ Call ID: 9c27627b-adac-4d31-9246-e021437403f8
+  Args:
+    type: :Person
+    source: Enrico_Eugenio
+  AssignClass (930dca6e-ef25-4dd1-871f-e4e3f8915e92)
+ Call ID: 930dca6e-ef25-4dd1-871f-e4e3f8915e92
+  Args:
+    source: Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla
+    type: :Woman
+  AssignClass (ad8ee278-0255-48e9-8bca-8d8dfc2e84ca)
+ Call ID: ad8ee278-0255-48e9-8bca-8d8dfc2e84ca
+  Args:
+    type: :Person
+    source: Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla
+  AssignClass (ed11bfa8-83eb-47e6-a8dc-8fbffd7d2606)
+ Call ID: ed11bfa8-83eb-47e6-a8dc-8fbffd7d2606
+  Args:
+    source: Step_son_of_Maria_Cristina
+    type: :Man
+  AssignClass (f7d3f579-54f6-4f3f-ac8b-ee3c582f5c7f)
+ Call ID: f7d3f579-54f6-4f3f-ac8b-ee3c582f5c7f
+  Args:
+    source: Step_son_of_Maria_Cristina
+    type: :Person
+  AddTriple (be1897a7-9f3a-4f88-86cd-62633b00da90)
+ Call ID: be1897a7-9f3a-4f88-86cd-62633b00da90
+  Args:
+    relation: :hasChild
+    target: Step_son_of_Maria_Cristina
+    source: Enrico_Eugenio
+  AddTriple (034a1241-97de-4e05-8407-f0b61cf9686b)
+ Call ID: 034a1241-97de-4e05-8407-f0b61cf9686b
+  Args:
+    source: Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla
+    relation: :hasChild
+    target: Step_son_of_Maria_Cristina
+  Finish (ec406b11-4bcb-4408-b0c6-6f3bbc3aa3c2)
+ Call ID: ec406b11-4bcb-4408-b0c6-6f3bbc3aa3c2
   Args:

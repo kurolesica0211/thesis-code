@@ -1,140 +1,54 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/468_468",
-  "text_file": "Q77556.txt",
-  "text_key": "Q77556",
-  "article": "https://en.wikipedia.org/wiki/Prince_Wilhelm_of_Prussia_(1906%E2%80%931940)",
-  "article_key": "Prince Wilhelm of Prussia",
+  "text_file": "Q7740003.txt",
+  "text_key": "Q7740003",
+  "article": "https://en.wikipedia.org/wiki/Leo_L%C3%B6wenstein",
+  "article_key": "Leo Löwenstein",
   "main_entity": {
-    "uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
-    "qid": "Q77556",
-    "label": "Prince Wilhelm of Prussia"
+    "uri": "http://example.com/data#Leo_Löwenstein",
+    "qid": "Q7740003",
+    "label": "Leo Löwenstein"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
-      "qid": "Q77556",
-      "label": "Prince Wilhelm of Prussia",
+      "uri": "http://example.com/data#Leo_Löwenstein",
+      "qid": "Q7740003",
+      "label": "Leo Löwenstein",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Duchess_Cecilie_of_Mecklenburg-Schwerin",
-      "qid": "Q235812",
-      "label": "Duchess Cecilie of Mecklenburg-Schwerin",
+      "uri": "http://example.com/data#Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg",
+      "qid": "Q104235",
+      "label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
-      "qid": "Q57621",
-      "label": "Wilhelm, German Crown Prince",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Wilhelm_II",
-      "qid": "Q2677",
-      "label": "Wilhelm II",
-      "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Crown_Prince_Wilhelm",
-      "extracted_local_name": "Crown_Prince_Wilhelm",
-      "embedding_text": "Crown Prince Wilhelm",
+      "extracted_uri": "http://example.org/data/Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "extracted_local_name": "Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "embedding_text": "Alois-Konstantin Löwenstein-Wertheim-Rosenberg",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
-      "ground_truth_qid": "Q57621",
-      "ground_truth_label": "Wilhelm, German Crown Prince",
+      "score": 0.8932038834951457,
+      "ground_truth_uri": "http://example.com/data#Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg",
+      "ground_truth_qid": "Q104235",
+      "ground_truth_label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Crown Prince Wilhelm",
-      "best_candidate_label": "Wilhelm, German Crown Prince",
-      "best_candidate_qid": "Q57621",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Wilhelm_II",
-      "extracted_local_name": "Wilhelm_II",
-      "embedding_text": "Wilhelm II",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
-      "ground_truth_qid": "Q2677",
-      "ground_truth_label": "Wilhelm II",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Wilhelm II",
-      "best_candidate_label": "Wilhelm II",
-      "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Wilhelm_of_Prussia",
-      "extracted_local_name": "Wilhelm_of_Prussia",
-      "embedding_text": "Wilhelm of Prussia",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.8333333333333333,
-      "ground_truth_uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
-      "ground_truth_qid": "Q77556",
-      "ground_truth_label": "Prince Wilhelm of Prussia",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Wilhelm of Prussia",
-      "best_candidate_label": "Prince Wilhelm of Prussia",
-      "best_candidate_qid": "Q77556",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.8333333333333333
-    },
-    {
-      "extracted_uri": "http://example.org/data/Cecilie_of_Mecklenburg-Schwerin",
-      "extracted_local_name": "Cecilie_of_Mecklenburg-Schwerin",
-      "embedding_text": "Cecilie of Mecklenburg-Schwerin",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.8181818181818181,
-      "ground_truth_uri": "http://example.com/data#Duchess_Cecilie_of_Mecklenburg-Schwerin",
-      "ground_truth_qid": "Q235812",
-      "ground_truth_label": "Duchess Cecilie of Mecklenburg-Schwerin",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Duchess Cecilie of Mecklenburg-Schwerin",
-      "best_candidate_label": "Duchess Cecilie of Mecklenburg-Schwerin",
-      "best_candidate_qid": "Q235812",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8181818181818181
-    },
-    {
-      "extracted_uri": "http://example.org/data/Dorothea_von_Salviati",
-      "extracted_local_name": "Dorothea_von_Salviati",
-      "embedding_text": "Dorothea von Salviati",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_label": "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg",
+      "best_candidate_qid": "Q104235",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.8932038834951457
     },
     {
-      "extracted_uri": "http://example.org/data/Louis_Ferdinand",
-      "extracted_local_name": "Louis_Ferdinand",
-      "embedding_text": "Louis Ferdinand",
+      "extracted_uri": "http://example.org/data/Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "extracted_local_name": "Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg",
+      "embedding_text": "Carl-Friedrich Löwenstein-Wertheim-Rosenberg",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -143,16 +57,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Wilhelm II of Germany",
-      "best_candidate_label": "Wilhelm II",
-      "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.3888888888888889
+      "best_candidate_match_text": "Leo Löwenstein",
+      "best_candidate_label": "Leo Löwenstein",
+      "best_candidate_qid": "Q7740003",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 4,
-    "entities_unmatched": 2
+    "entities_total": 2,
+    "entities_matched": 1,
+    "entities_unmatched": 1
   }
 }

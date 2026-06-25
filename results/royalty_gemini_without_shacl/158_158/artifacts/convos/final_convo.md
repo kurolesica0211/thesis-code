@@ -69,136 +69,184 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin (20 September 1886 – 6 May 1954) was the last German Crown Princess and Crown Princess of Prussia as the wife of Wilhelm, German Crown Prince, the son of Wilhelm II, German Emperor.
-Cecilie was a daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-She was brought up with simplicity, and her early life was peripatetic, spending summers in Mecklenburg and the rest of the year in Southern France.
-After the death of her father, she traveled every summer between 1898 and 1904 to her mother's native Russia.
-On 6 June 1905, she married German Crown Prince Wilhelm.
-Cecilie, tall and statuesque, became popular in Germany for her sense of style.
-After the fall of the German monarchy, at the end of World War I, Cecilie and her husband lived mostly apart.
-During the Weimar Republic and the Nazi period, Cecilie lived a private life mainly at Cecilienhof Palace in Potsdam.
-Early years
+Grand Duchess Maria Pavlovna of Russia (Russian: Великая Княгиня Мария Павловна; 18 April  1890 – 13 December 1958), known as Maria Pavlovna the Younger, was a granddaughter of Alexander II of Russia.
+She was a paternal first cousin of Nicholas II (Russia's last Tsar) and Marie of Edinburgh (consort of Ferdinand I of Romania) and maternal first cousin of George II, Alexander, and Paul (all kings of Greece), Helen of Greece and Denmark, (second wife of Carol II of Romania), and Prince Philip, Duke of Edinburgh (consort of Elizabeth II).
+She was also both the first grandchild of George I of Greece and the first great-grandchild of his father Christian IX of Denmark.
+Her early life was marked by the death of her mother and her father's banishment from Russia when he remarried a commoner in 1902.
+Grand Duchess Maria and her younger brother Dmitri, to whom she remained very close throughout her life, were raised in Moscow by their paternal uncle Grand Duke Sergei Alexandrovich and his wife Grand Duchess Elizabeth Feodorovna of Russia, a granddaughter of Queen Victoria.
+In 1908, Maria Pavlovna married Prince Wilhelm, Duke of Södermanland.
+The couple had one son, Prince Lennart, Duke of Småland, later Count Bernadotte af Wisborg.
+During World War I, Grand Duchess Maria Pavlovna served as a nurse until the fall of the Russian monarchy in February 1917.
+In September 1917, during the period of the Russian Provisional Government, she married Prince Sergei Putyatin.
+They had a son, Prince Roman Sergeievich Putyatin, who died in infancy.
+The couple escaped revolutionary Russia through Ukraine in July 1918.
+In exile, Grand Duchess Maria Pavlovna lived briefly in Bucharest and London, then she settled in Paris in 1920.
+In 1942, Grand Duchess Maria Pavlovna moved to Argentina where she spent the years of World War II.
+Early life
 
-Born on 20 September 1886 in Schwerin, Cecilie was the youngest daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-She spent most of her childhood in Schwerin, at the royal residences of Ludwigslust Palace and the Gelbensande hunting lodge, only a few kilometres from the Baltic Sea coast.
-Her father suffered badly from asthma and the wet damp cold climate of Mecklenburg was not good for his health.
-As a result, Cecilie spent a large amount of time with her family in Cannes in the south of France, favoured at the time by European royalty, including some whom Cecilie met such as Empress Eugénie and her future husband's great-uncle, Edward VII.
-During the winter visit of 1897, Cecilie's sister, Alexandrine, met her future husband, Crown Prince Christian, later Christian X of Denmark, shortly before the death of their father at the age of 46.
-After returning to Schwerin, Cecilie spent time with her widowed mother in Denmark.
-After the death of her father, she traveled every summer, from 1898 to 1904, visiting her relatives in Russia.
-Cecilie lived there in Mikhailovskoe on Kronstadt Bay, the country home of her maternal grandfather, Grand Duke Michael Nikolaevich of Russia.
-Engagement
+Grand Duchess Maria Pavlovna was born 18 April  1890 in Saint Petersburg.
+She was the first child and only daughter of Grand Duke Paul Alexandrovich of Russia and his first wife, Grand Duchess Alexandra Georgievna of Russia, born Princess Alexandra of Greece and Denmark.
+The baby was named after her late paternal grandmother, the Empress Maria Alexandrovna, and her paternal aunt, maternal grandaunt, and godmother, the Empress Maria Feodorovna, and was known by the nickname "Marisha" Maria was not yet two years old when her mother died from complications after giving birth to Maria's younger brother, Grand Duke Dmitri Pavlovich of Russia in 1891.
+Grand Duke Paul was so distraught by the unexpected death of his young wife that he neglected his two small children, who were left in the care of his elder brother, Grand Duke Sergei Alexandrovich, who had no children of his own.
+Once he recovered emotionally, Grand Duke Paul took the two children away with him.
+A commander of the Imperial horse Guards, Grand Duke Paul loved his children, but as was customary at the time, he refrained from showing them spontaneous affection.
+Maria and her brother were raised by governesses and tutors, but they adored their father who visited them twice a day.
+The children spent Christmases and later some summer holidays with Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna.
+Maria Pavlovna's childhood was spent in splendor.
+Until she was age 6, Maria spoke Russian badly as all of her governesses and the immediate family spoke English.
+Growing up without a mother and with a frequently absent father, Grand Duchess Maria and her brother Dimitri became very close, relying on each other for affection and companionship.
+Education
 
-During the wedding festivities of her brother Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin in Schwerin in June 1904, the 17-year-old Duchess Cecilie got to know her future husband, Wilhelm, German Crown Prince.
-Kaiser Wilhelm II had sent his eldest son to the festivities as his personal representative.
-Taller than most women of her time at 182 centimetres (over 5'11"), Cecilie was as tall as the German Crown Prince.
-Wilhelm was struck by her great beauty, and her dark hair and eyes.
-On 4 September 1904, the young couple celebrated their engagement at the Mecklenburg-Schwerin hunting lodge, Gelbensande.
-Wedding
-
-The wedding of Duchess Cecilie of Mecklenburg-Schwerin and the German Crown Prince Wilhelm took place on 6 June 1905 in Berlin.
-Arriving from Schwerin at Berlin's Lehrter Station, the future Crown Princess was greeted on the platform with a gift of dark red roses.
-She was greeted at Bellevue Palace by the entire German imperial family and later made a joyeuse entrée through the Brandenburg Gate to a gun salute in the Tiergarten.
-Kaiser Wilhelm II greeted her at the palace and conducted her to the Knight's Hall where over fifty guests from different European royal houses awaited the young bride including Grand Duke Michael Alexandrovich of Russia, Archduke Franz Ferdinand, as well as representatives from Denmark, Italy, Belgium, Portugal and the Netherlands.
-On her wedding day, Kaiser Wilhelm II presented his daughter-in-law with the Order of Louise.
-On her wedding day, Duchess Cecilie of Mecklenburg-Schwerin became Her Imperial and Royal Highness The German Crown Princess and Crown Princess of Prussia.
-She was expected to one day become German empress and queen of Prussia.
-German Crown Princess
-
-As German crown princess, Cecilie quickly became one of the most beloved members of the German imperial house.
-It was not long before her fashion style was copied by many women throughout the German Empire.
-After the end of the wedding festivities, the crown princely couple made their summer residence at the Marble Palace in Potsdam.
-Every year at the beginning of the court season in January, the couple would return to the Crown Prince Palace in Berlin on Unter den Linden.
-Cecilie's first child was born on 4 July 1906 and given the traditional Hohenzollern name of Wilhelm.
-At the time, the German monarchy appeared to be very secure.
-Although in public the marriage of the crown prince and princess appeared to be perfect, cracks quickly appeared due to the crown prince's wandering eye and controlling behaviour.
-In spite of her husband's unfaithfulness, however, Cecilie had given birth to six children by 1917.
+In 1895, Grand Duke Paul began an affair with Olga Valerianova von Pistolkors, a married woman.
+As they had married by defying Nicholas II's opposition, the tsar forbade them to return to Russia.
+Left fatherless, 12-year-old Maria and 11-year-old Dmitri moved to Moscow placed under the custody of their uncle Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna, a sister of the Tsarina Alexandra.
+Maria and Dimitri resented their aunt and uncle, blaming them for the forced separation from their real father, who had abandoned them.
+Grand Duke Sergei was strict and demanding, but devoted and affectionate toward the children.
+Maria Pavlovna also commented that she could not entirely disagree with those who thought Grand Duke Sergei heartless, self-centered and cruel.
+Maria had a somewhat strained relationship with her aunt.
+Grand Duchess Elisabeth Feodorovna found it difficult to relate to the children, and she was cold and distant toward them.
+The teenage Maria was described by her maternal aunt Grand Duchess Maria Georgievna of Russia as "full of life and very jolly, but inclined to be self-willed and selfish, and rather difficult to deal with.
 "
 
 
-Impact as German Crown Princess
+Grand Duke Sergei, who served as Governor General of Moscow, was a polarizing figure.
+The bomber had refrained from an earlier attack because he saw that Grand Duchess Elisabeth, 15-year-old Maria, and her younger brother Dmitri were in the carriage, and he did not want to kill women and children.
+After the assassination of their uncle, both children were emotionally distraught, particularly Dmitri.
+Grand Duke Paul claimed the custody of his children, but the tsar made Elisabeth their guardian.
+Grand Duke Paul was allowed to visit them, but not to return to Russia permanently.
+After her husband's assassination, Grand Duchess Elisabeth Feodorovna regretted treating the children poorly, and she became closer to them.
+First marriage
 
-Cecilie made considerable impact in a number of areas including women's education.
-On 6 December 1906, at AG Vulcan Stettin's shipyard, she christened  the Norddeutscher Lloyd steamship SS Kronprinzessin Cecilie.
-For Cecilie, who had a great passion for the sea since childhood, the gesture brought her great joy and honour.
-Cecilie's life in Berlin was a constant round of royal duties: attending military parades, gala state banquets, official ceremonies, and other courtly activities.
-In May 1911, Cecilie and the crown prince visited the Russian imperial court in Saint Petersburg.
-Queen Mary was particularly fond of the imperial couple and maintained contact with Cecilie until her death in 1953.
-The 1911 visit to London was Cecilie's last as representative of the German Empire.
-Revolution and the overthrow of the German monarchy
-
-The political and economic situation in the last year of the war became more and more hopeless.
-On 6 November 1918, the new German imperial Chancellor, Prince Maximilian of Baden, met with Minister Wilhelm Solf to discuss the future of the German Empire.
-They were both of the opinion that the monarchy could only survive with the removal of the kaiser and his son the crown prince and the setting up of a regency under the nominal rule of the young son of Crown Princess Cecilie.
-Both the kaiser and the crown prince crossed the border to seek exile in the neutral Netherlands.
-Cecilie with her young children was living in Potsdam during the revolutionary period.
+During the next two years, Maria's aunt turned toward religion and charity work.
+Planning to retire from court and to form a religious order, Grand Duchess Elisabeth decided to find a husband for her niece, along with the help of her cousin, Crown Princess Margaret of Sweden.
+Shortly after Easter 1907, Prince Wilhelm, Duke of Södermanland, the second son of King Gustav V of Sweden and Victoria of Baden, visited St Petersburg, and he was introduced to the 16-year-old Maria Pavlovna.
+The prince was tall, thin, dark and distinguished looking "with beautiful grey eyes", Maria recalled.
+He stayed for dinner, and the following day, Maria was told that he wished to marry her.
+Pressed by her aunt to give a speedy answer, Maria agreed to the prince's proposal and found herself engaged to a man she had known for only few hours.
+Maria Pavlovna wrote later that she felt her aunt had rushed her into the marriage.
+"Then we will be able to travel together," she wrote to Wilhelm after their engagement.
 "
 
 
-Life under the republic
+The marriage had positive political and diplomatic implications for both Russia and Sweden, and Tsar Nicholas II gave his consent.
+Grand Duke Paul was not consulted.
+Contemporary newspaper reports suggest that Maria Pavlovna brought a large fortune to the marriage; as a Granddaughter of Tsar Alexander II, she was entitled to an annuity of 50,000 roubles prior to reaching the age of majority, and 100,000 roubles (approximately £10,500 in 1908) per year thereafter .
+As a Russian Grand Duchess, she also was reported to have received a dowry of 1,000,000 roubles upon her marriage, as well as a share in the estimated 8,000,000 rouble fortune left by her father upon his death.
+From Peterhof, Maria Pavlovna went to Grand Duchess Elisabeth's rural estate Ilinskoe, near Moscow, where Wilhelm joined them for a month before he left on a cruise to the United States.
+Maria imagined herself in love: "It’s lovely to have somebody, even far away, who love you more than anything and whom you love more than everybody on earth“, she wrote to him.
+In October, Wilhelm returned to Russia joining Grand Duchess Maria and her brother Dimitri who introduced the Swedish prince to their father, Grand Duke Paul, who was permitted to come back to Russia for his daughter's wedding set to take place after she turned age 18 the next April.
+At Wilhelm's departure, Maria wrote to him: " I love you, so much with every day, every hour more and more.
+In her book of memoirs, written more than 20 years later, the grand duchess made different claims: "I was using Wilhelm, in a sense, only to obtain my freedom".
+As the wedding day approached, she began to have doubts and wished to break off the engagement, but Princess Irene of Hesse, who was visiting her sister Grand Duchess Elisabeth Feodorovna, persuaded her otherwise.
+Soon Maria Pavlovna was  again looking forward with enthusiasm to a new life.
+Swedish princess
 
-The former crown princess was nothing but realistic about the new political situation confronting her family and Germany.
-The crown princess was quite prepared to do the same, but wanted to stay in Germany with her children if at all possible.
-As a result of a change of circumstances, Cecilie reduced her household staff by 50%.
-Her children's tutor also left her service and as a result her two eldest sons, Princes Wilhelm and Louis Ferdinand, for the first time attended as day students at a nearby school.
-Cecilie had considerable sympathy for the plight of the German people.
-In reply to an address from the German Women's Union in Berlin, the former crown princess stated, "I need no sympathy.
-I have the beautiful situation that can befall any German woman, the education of my children as good German citizens.
-"
+After a honeymoon in Germany, Italy and France, the newlyweds went to Sweden, where an official ceremonial reception awaited them with the state flags of Russia and Sweden waving in Stockholm.
+The couple set up their home in the Swedish countryside in the province of Södermanland.
+Maria added Swedish to the other five languages she spoke, and she became popular in her new country.
+Maria Pavlovna, known in Sweden as the Duchess of Södermanland, was pregnant by the fall, but she quickly realized that she had little in common with her husband.
+He was Prince Lennart, Duke of Småland, later Count of Wisborg (1909–2004)
+In the autumn of 1910, Maria Pavlovna moved with her husband and their son to Oak Hill, a house she had built for herself outside Stockholm.
+Maria went hunting, attended horse races, practiced winter sports and even played field hockey on her sister-in-law, Crown Princess Margaret's team.
+Maria occasionally played with her son, who remembered sitting on her lap when they slid down a flight of steps on a large silver tray.
+However, life at the Swedish court had as many restrictions on Maria Pavlovna as she had had in Russia.
+Her husband Wilhelm, as a naval officer, had little time to spend with her.
+Maria had an opportunity to meet other men.
+King Vajiravudh and the Duke of Montpensier began to court her, and she enjoyed the flirtation.
+He was devastated by her decision, begging her to give their marriage another chance, "but since he blamed most of our failure on me, we did not make any progress" Maria wrote.
+In 1913, they were reunited when she went to Russia to attend the celebrations for the 300-year anniversary of the Romanov family.
+When she returned to Stockholm, doctors alleged (falsely as it turned out) that Maria Pavlovna had a serious kidney ailment, and she was sent to Capri to recuperate in the winter 1913–1914.
+Decades later, she described the horror she had felt toward the Swedish royal family because of their unlimited support of Munthe as the main reason she fled them and filed for divorce from Prince Wilhelm.
+My God!"
 
+Relatives in both Russia and Sweden viewed a divorce as unavoidable, and on 13 March 1914, her marriage officially was dissolved, an action then confirmed by an edict issued by Nicholas II on 15 July 1914.
+Maria left her son behind in Sweden under his father's custody.
+In Paris, Grand Duchess Maria re-established ties with her father, who had provided her with three half-siblings.
+Maria Pavlovna studied at a painting school, and then traveled to Italy and Greece.
+In the spring 1914, age 24, Maria Pavlovna returned to Russia.
+She lived near her younger brother Dmitri, to whom she was intensely attached.
+Troubled by her strong need for him, Dmitri distanced himself somewhat from his sister, hurting her terribly.
+World War I, revolution and second marriage
 
-Wilhelm was only allowed to return to Germany from his enforced exile in 1923.
-Castle Oels, a castle with 10,000 hectares of workable land in Silesia, now in modern day Poland, provided substantial income for Cecilie's family.
-In the absence of her husband, Cecilie became the leading figure in the once ruling House of Hohenzollern.
-The former crown princess was under no illusions that the empire would be restored, unlike her father-in-law exiled in Doorn in the Netherlands.
-With the election of Gustav Stresemann as chancellor of the Weimar Republic in August 1923, negotiations for the former crown prince commenced.
-On the evening of 13 November 1923, Cecilie met her husband at Castle Oels.
-The years of separation and the behavior of Wilhelm had made the marriage now merely one in name only, but Cecilie was determined to keep things together even at a distance.
-Cecilie remained active within several charity organizations such as the Queen Louise Fund, Chair of the Fatherland's Women Union and the Ladies of the Order of St. John, while keeping clear of any political involvement.
-Under Nazi German rule 1933-1939
+At the outbreak of the war, Grand Duchess Maria Pavlovna trained as a nurse.
+With Princess Helen of Serbia, the grand duchess was sent to the northern front, at Instenburg in East Prussia, under command of General Paul von Rennenkampf.
+For bravery under airplane fire, she was awarded the George Medal.
+Maria Pavlovna was at Pskov when she learned that Dmitri had participated in the murder of Grigori Rasputin on 17 December 1916; she was stunned.
+Maria signed a letter along with other members of the Imperial family, begging Nicholas II to reverse his decision to exile Dmitri to the Persian front.
+Two months later, the February Revolution erupted, and Tsar Nicholas II, Maria's first cousin, abdicated.
+Maria Pavlovna left Pskov for Petrograd joining her father and his family at Tsarkoe Selo.
+Earlier in the war, she had been reacquainted with Prince Sergei Mikhailovich Putyatin (1893–1966), the son of Prince Mikhail Sergeyevich Putyatin (1861–1938), palace commandant at Tsarskoye Selo, the tsar's country residence.
+In the summer, they became engaged, and in love for the first time, Maria Pavlovna married Putyatin in the Pavlovsk Palace on 19 September  1917.
+The couple spent the early months of their married life in Petrograd, living at first in Dmitri's palace.
+The successful Bolshevik coup of November 1917 surprised Maria Pavlovna and her husband in Moscow, where they had traveled to remove some of Maria's jewels from the state bank.
+Later, Serge's parents retrieved Maria's diamonds.
+In the spring 1918, the couple moved to a cottage in Tsarkoe Selo to be closer to Grand Duke Paul, who was under house arrest.
+There, the grand duchess tended a vegetable garden and kept a goat.
+On 8 July 1918, she gave birth to a son, Prince Roman Sergeievich Putyatin (1918–1919).
+The same day of Prince Roman's baptism on 18 July 1918, but they did not know it, Maria's half-brother Prince Vladimir Paley and her aunt Grand Duchess Elizabeth were murdered by the Bolsheviks.
+With the situation quickly deteriorating in Russia for the Romanovs under the Bolshevik regime, Maria Pavlovna decided to leave for exile, leaving her baby under the care of her in-laws.
+With her husband and her brother-in-law Prince Alexander Putyatin (1897–1954), Grand Duchess Maria Pavlovna left Tsarkoie Selo in late July.
+Without traveling documents and fearing to be arrested at any stop, Maria Pavlovna, her husband and brother-in-law made their way by train during two nights and a day.
+She had concealed, inside a bar of soap, a Swedish document identifying her as a former royal princess of that country.
+After reaching Kishinev, Moldavia, they received an invitation from Queen Marie of Romania, Maria's first cousin, who had used Joseph W. Boyle to track them and bring them to safety.
+Ill with influenza, the grand duchess arrived in Romania, beginning her life in exile.
+Exile
 
-During 1933–1945, Cecilie lived a private life at Cecilienhof.
-Her eldest son Wilhelm forfeited his position as possible heir when he married Dorothea von Salviati on 3 June 1933.
-The former crown prince and princess were more understanding of their son than the exiled kaiser.
-Cecilie was not perturbed and made the best of the situation and was delighted when she became a grandmother for the first time on 7 June 1934.
-In 1935, Cecilie's second son worked, after studying economics and working for a time in the United States as a mechanic for Ford Motor Company, then with Lufthansa.
-Her third son, Hubertus, after spending a period of time farming joined the military and then the air force to become a pilot.
-In May 1938, Prince Louis Ferdinand married Grand Duchess Kira Kirillovna of Russia, daughter of the pretender to the Russian throne, Grand Duke Cyril Vladimirovich, at Cecilienhof.
-World War II
+In December 1918, Grand Duchess Maria Pavlovna and her second husband arrived in Bucharest staying at a local hotel.
+In January 1919, they were given private apartments at the Cotroceni Palace as guests of the Romanian Queen Maria.
+Tragic news came from Russia.
+The following month, Maria Pavlovna learned that her father Grand Duke Paul Alexandrovich had been assassinated by the Bolsheviks along with three of his cousins.
+A couple of weeks later, she received the news that her aunt Grand Duchess Elizabeth Feodorovna and half-brother Prince Vladimir Paley had been murdered with several other Romanov relatives in the summer 1918.
+Maria Pavlovna's parents-in-law arrived in Bucharest with her son Roman, but once she obtained a traveling visa, Maria Pavlovna left with Putyatin for Paris, finding a house in Passy.
+For the first time in her life, the 28-year-old grand duchess was forced to face everyday problems.
+Her first years of exile were financed by the sale of the jewels she had had smuggled to Sweden before escaping Russia.
+While in Paris in 1919, the grand duchess received a letter from her husband's parents telling her that one-year-old Roman had died of an intestinal disorder on 29 July.
+Maria Pavlovna was reunited with her brother Dmitri in London.
+She rented a small apartment with her husband to be close to her brother, but relations between Dmitri and Putyatin soon soured.
+In the spring 1920, Maria Pavlovna returned to Paris to meet with her stepmother Princess Olga Paley and Maria's two half-sisters.
+Her brother Dmitri followed her to Paris.
+Missing her son Lennart, who had been left in Sweden, Maria and Dimitri went to meet him in Copenhagen in the early summer of 1921.
+In Paris, Grand Duchess Maria opened a quality embroidering and sewing textile shop named Kitmir.
+Through her brother, Maria Pavlovna met Coco Chanel in the autumn 1921.
+The grand duchess was helped by her mother-in-law Princess Sophia Putyatina (1866–1940), and she employed Russians refugees in order to help them.
+However, Kitmir was plagued by organizational problems, resulting in the dissipation of Maria's money from the sale of her jewels and leaving her heavily in debt.
+After her divorce, Maria Pavlovna continued to work in Paris, but she moved to Boulogne, the south west suburb of Paris, where many Russians had taken residence.
+In 1928, as embroidery began to be out of fashion, Maria Pavlovva sold her workshop to Maison Hurel.
+Having suffered a defeat, but not surrendering, the grand duchess moved to London in the spring 1928 where she started selling Prince Igor, her own perfume, following in the footsteps of Chanel No. 5 and Patou's perfume Joy.
+Failings in advertising and distribution made that Prince Igor was not a success.
+Undeterred, Grand Duchess Maria Pavlovna emigrated to the United States hoping for a new start.
+In the United States
 
-A period of relative calm for Cecilie's family and for Germany came to an end with the outbreak of World War II in September 1939.
-Cecilie's 24-year-old nephew, Prince Oskar, fell as a casualty five days after the start of the invasion of Poland.
-More personal tragedy occurred when Wilhelm was mortally wounded in battle at Valenciennes in France on 23 May 1940.
-The huge turnout in respect for a prince, who had died a hero's death, from the former ruling dynasty, alarmed and infuriated Adolf Hitler.
-As a result, no prince from a former German dynasty was allowed to serve at the front and in 1943 Hitler ordered that they all be discharged from the armed forces.
-In 1941, the former Kaiser Wilhelm II died.
-At the age of 55, Cecilie's husband became Head of the House of Hohenzollern.
-While under the monarchy this would have meant a great change for Cecilie and her husband, the change was potentially dangerous because of the leader of the Nazi German state.
-During this time, Cecilie and her husband increasingly retreated to Castle Oels to live a quiet life, far away from the dangers of Berlin.
-With the war going badly, Cecilie and her family left the advancing danger of the Soviet Army to return to Potsdam where they celebrated Christmas in December 1944.
-In February 1945, Cecilie left Cecilienhof for the last time.
-Final years
+Grand Duchess Maria Pavlovna's arrival in New York City was greeted by the press with great enthusiasm and curiosity.
+In May 1929, Grand Duchess Maria Pavlovna started working for the New York department store Bergdorf Goodman.
+Her book of memoirs was translated from Russian to English and published in two volumes: the first was titled The Education of a Princess, and the second was A Princess in Exile.
+The success of her books improved Maria Pavlovna's finances.
+Grand Duchess Maria Pavlovna always had an interest in photography, and in 1935, she was sent by Hearst to Germany as a photojournalist.
+While living in New York, Maria Pavlovna collected Russian books and surrounded herself with a group of friends that included her half-sister Princess Natalia Paley, the photographer Horst P. Horst, Valentina Sanina, founder of the fashion house Valentina, and Sanina's husband George Schlee.
+In 1937, Maria Pavlovna visited her son Lennart and his family in Mainau.
+They bonded over their shared interest in photography, and she got along with his wife, even though the grand duchess had been disappointed when her son renounced his royal status in order to marry a commoner in 1932.
+Maria Pavlovna, who had little maternal feelings, took no interest in her two grand daughters: Birgitta, then age 4, and Marie Louise, age two.
+Because of Lennart, the King of Sweden, who sympathized with Maria Pavlovna, arranged a Swedish diplomatic passport for her to replace her old Nansen passport.
+Last years
 
-Cecilie fled the Soviet Army in February 1945 to the sanatorium of Dr. Paul Sotier (personal physician of Kaiser Wilhelm II) Fürstenhof in Bad Kissingen in Bavaria.
-Wilhelm had settled into a small house in Hechingen.
-Tragedy struck again when yet another son, Hubertus, died from appendicitis on 8 April 1950.
-In early 1951, the health of the former Crown Prince deteriorated and on 20 July he died.
-On 26 July, his funeral took place at Castle Hohenzollern where he was buried in the ground near an urn containing the ashes of the late Hubertus.
-On the arm of her son, Louis Ferdinand, Cecilie bade a final farewell to her husband.
-In 1952, Cecilie's memoirs, 'Remembrances' were published.
-In an act of healing and friendship, the former Crown Princess Cecilie was received by King George V's widow, Queen Mary, in May 1952 during a visit to England.
-Cecilie visited for the first time to attend the christening of her granddaughter, Princess Victoria Marina of Prussia, the daughter of her son Frederick.
-Tragedy once again struck when Cecilie's sister, the Danish Queen Mother, Queen Alexandrine, died on 28 December of the same year.
-On 3 January 1953, Cecilie attended her funeral at Roskilde Cathedral in Denmark.
-From this time on, the former crown princess never fully recovered.
-On 12 May 1954, her funeral took place and her remains were interred next to Crown Prince Wilhelm in the grounds of Castle Hohenzollern.
-}} Media related to Cecilie of Mecklenburg-Schwerin, German Crown Princess at Wikimedia Commons
+In Argentina, Maria Pavlovna rented a small house with a garden in the Barrio Norte in Buenos Aires and devoted her spare time to painting, even managing to sell several of her works.
+The cosmetic line did not take off, but Grand Duchess Maria Pavlovna remained in South America.
+There was a large Russian émigré community in Buenos Aires, and she became close friends with the family of Prince Meshchersky, Prince Michel Aleksandrovich Gorchakov (1905–1996) and his wife Princess Olga, née Orlova-Davydova (1904–1991).
+During weekends, she went to Los Leones, a huge property owned by Prince Karl von Auersperg (1895–1980) and his wife, Countess Henriette von Meran  (1904–2000), member of a morganatic branch of the House of Habsburg.
+In 1942, she received news of the death of her brother Dmitri in Davos, Switzerland.
+In 1947, Maria Pavlovna's son Lennart came from Germany on a business visit that lasted several months.
+Maria told Lennart that she had felt lonely all of her life due to her rootless childhood.
+Two years later, Maria Pavlovna returned to Europe, where, at the home of her son on the island of Mainau in Germany, she re-encountered her first husband Prince Wilhelm of Sweden for the first time in many years.
+During the 1950s, Grand Duchess Maria Pavlovna stayed with friends or appeared unexpectedly in Mainau in the house of her son Lennart with her camera, easel and paints.
+She is buried in a side altar of the palace church in Mainau, next to her brother Grand Duke Dmitri.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -214,39 +262,9 @@ On 12 May 1954, her funeral took place and her remains were interred next to Cro
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -261,6 +279,23 @@ On 12 May 1954, her funeral took place and her remains were interred next to Cro
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -278,6 +313,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -345,29 +395,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -376,6 +418,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -388,6 +438,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -396,17 +448,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -434,6 +488,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -449,133 +587,213 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (552b7281-f127-4af9-9548-3c793238e17e)
- Call ID: 552b7281-f127-4af9-9548-3c793238e17e
+  AssignClass (f480bfdf-003f-4e9b-8bd7-9be074b8732a)
+ Call ID: f480bfdf-003f-4e9b-8bd7-9be074b8732a
   Args:
     type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (5973ff2f-ede4-444e-8588-70ca7a8efa82)
- Call ID: 5973ff2f-ede4-444e-8588-70ca7a8efa82
+    source: :MariaPavlovna
+  AssignClass (8ab121de-9d5a-4617-8568-b6e4c3502281)
+ Call ID: 8ab121de-9d5a-4617-8568-b6e4c3502281
   Args:
-    type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (221774b1-2421-48a4-8dba-5fc28c3dfed7)
- Call ID: 221774b1-2421-48a4-8dba-5fc28c3dfed7
+    source: :MariaPavlovna
+    type: :Person
+  AddLiteral (eae57429-53c0-403f-9df3-e42ab0b21211)
+ Call ID: eae57429-53c0-403f-9df3-e42ab0b21211
   Args:
-    type: :Man
-    source: Frederick_Francis_III
-  AssignClass (ec2030bc-878d-497e-86e4-c6e7674a9557)
- Call ID: ec2030bc-878d-497e-86e4-c6e7674a9557
-  Args:
-    type: :Woman
-    source: Anastasia_Mikhailovna_of_Russia
-  AssignClass (f0c49545-d65b-41cf-80dc-3ed52a2c3d28)
- Call ID: f0c49545-d65b-41cf-80dc-3ed52a2c3d28
-  Args:
-    type: :Man
-    source: Wilhelm_II_German_Emperor
-  AddLiteral (859b4b5f-bf8b-431c-b616-0ea71f2453d9)
- Call ID: 859b4b5f-bf8b-431c-b616-0ea71f2453d9
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    literal_value: 1886
+    source: :MariaPavlovna
+    literal_value: 1890
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (549926f5-1222-41bf-8d83-8779621bcbf6)
- Call ID: 549926f5-1222-41bf-8d83-8779621bcbf6
+  AddLiteral (c5967c5b-f7cc-487e-a512-ac4ffb1b8544)
+ Call ID: c5967c5b-f7cc-487e-a512-ac4ffb1b8544
   Args:
-    literal_type: xsd:integer
+    literal_value: 1958
+    source: :MariaPavlovna
     relation: :hasDeathYear
-    literal_value: 1954
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (ed395c0c-f033-4549-a54c-4a05141fdab2)
- Call ID: ed395c0c-f033-4549-a54c-4a05141fdab2
-  Args:
-    relation: :hasFather
-    target: Frederick_Francis_III
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (e7263999-0d73-4311-9736-f1c4000cf950)
- Call ID: e7263999-0d73-4311-9736-f1c4000cf950
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasMother
-    target: Anastasia_Mikhailovna_of_Russia
-  AddTriple (bcbac41c-707f-423d-afe6-a5def1c24308)
- Call ID: bcbac41c-707f-423d-afe6-a5def1c24308
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasFather
-    target: Wilhelm_II_German_Emperor
-  AddLiteral (760b7427-34d4-4c09-a4a5-8609f87d3ec3)
- Call ID: 760b7427-34d4-4c09-a4a5-8609f87d3ec3
-  Args:
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1905
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (34efff79-13cd-43d9-bf35-abb2d93dc715)
- Call ID: 34efff79-13cd-43d9-bf35-abb2d93dc715
+  AddLiteral (8481ccfc-472d-467f-86bc-83a11433807a)
+ Call ID: 8481ccfc-472d-467f-86bc-83a11433807a
   Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasRelation
-    target: Wilhelm_German_Crown_Prince
-  AssignClass (f76abf6d-df8a-4d50-8033-13041cacf87b)
- Call ID: f76abf6d-df8a-4d50-8033-13041cacf87b
+    relation: :knownAs
+    literal_type: xsd:string
+    source: :MariaPavlovna
+    literal_value: Maria Pavlovna the Younger
+  AssignClass (8b914869-c761-4049-82a8-bf58bd28d76f)
+ Call ID: 8b914869-c761-4049-82a8-bf58bd28d76f
+  Args:
+    type: :Man
+    source: :PaulAlexandrovich
+  AssignClass (18e0e8e0-c85a-483b-bf49-fffdc72664db)
+ Call ID: 18e0e8e0-c85a-483b-bf49-fffdc72664db
+  Args:
+    type: :Person
+    source: :PaulAlexandrovich
+  AssignClass (1d08041e-1405-4734-853e-f054a86d69e6)
+ Call ID: 1d08041e-1405-4734-853e-f054a86d69e6
   Args:
     type: :Woman
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AddTriple (ee225694-6708-4361-a6c0-500681e6606e)
- Call ID: ee225694-6708-4361-a6c0-500681e6606e
+    source: :AlexandraGeorgievna
+  AssignClass (62b46013-fad8-42af-810f-427b6cff44af)
+ Call ID: 62b46013-fad8-42af-810f-427b6cff44af
   Args:
-    relation: :hasSister
-    target: Alexandrine_of_Mecklenburg-Schwerin
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (44de084c-a67a-4a88-b016-91e27a32be3f)
- Call ID: 44de084c-a67a-4a88-b016-91e27a32be3f
+    source: :AlexandraGeorgievna
+    type: :Person
+  AddTriple (befa5178-f6ca-4e62-a647-829b68d30127)
+ Call ID: befa5178-f6ca-4e62-a647-829b68d30127
   Args:
-    source: Alexandrine_of_Mecklenburg-Schwerin
     relation: :hasFather
-    target: Frederick_Francis_III
-  AddTriple (fb7648b0-6a13-4cf1-841c-c2b025ec80d1)
- Call ID: fb7648b0-6a13-4cf1-841c-c2b025ec80d1
+    target: :PaulAlexandrovich
+    source: :MariaPavlovna
+  AddTriple (12742d26-372f-418b-b7d0-924427e9b619)
+ Call ID: 12742d26-372f-418b-b7d0-924427e9b619
   Args:
-    source: Alexandrine_of_Mecklenburg-Schwerin
-    target: Anastasia_Mikhailovna_of_Russia
+    target: :AlexandraGeorgievna
+    source: :MariaPavlovna
     relation: :hasMother
-  AssignClass (1a6f7297-e1c4-49f3-9e4d-c76e77f769b8)
- Call ID: 1a6f7297-e1c4-49f3-9e4d-c76e77f769b8
+  AssignClass (c5ed5c1e-2cb1-4d3b-af8f-02ca9f2b9197)
+ Call ID: c5ed5c1e-2cb1-4d3b-af8f-02ca9f2b9197
   Args:
     type: :Man
-    source: Frederick_Francis_IV
-  AddTriple (5e80058b-d55e-4c44-8979-6fca09b99fbe)
- Call ID: 5e80058b-d55e-4c44-8979-6fca09b99fbe
+    source: :DmitriPavlovich
+  AssignClass (6eb132b1-bc33-43b3-b78f-7bff28e05b44)
+ Call ID: 6eb132b1-bc33-43b3-b78f-7bff28e05b44
   Args:
-    target: Frederick_Francis_IV
-    relation: :hasBrother
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (6a8914c2-397d-4943-9776-5fda3ba4a44b)
- Call ID: 6a8914c2-397d-4943-9776-5fda3ba4a44b
+    type: :Person
+    source: :DmitriPavlovich
+  AddTriple (65cce640-2f49-4549-972d-0915243b0137)
+ Call ID: 65cce640-2f49-4549-972d-0915243b0137
   Args:
-    source: Frederick_Francis_IV
-    target: Frederick_Francis_III
+    source: :DmitriPavlovich
+    target: :MariaPavlovna
+    relation: :isBrotherOf
+  AddTriple (e6baaebf-7a1a-4dd4-b250-4340950f021f)
+ Call ID: e6baaebf-7a1a-4dd4-b250-4340950f021f
+  Args:
     relation: :hasFather
-  AddTriple (012b43b4-3e4e-478f-91f2-09b4fdf8cf5d)
- Call ID: 012b43b4-3e4e-478f-91f2-09b4fdf8cf5d
+    target: :PaulAlexandrovich
+    source: :DmitriPavlovich
+  AddTriple (a6fc0cce-ddfc-4713-9eb6-f06e924cfcc4)
+ Call ID: a6fc0cce-ddfc-4713-9eb6-f06e924cfcc4
   Args:
     relation: :hasMother
-    target: Anastasia_Mikhailovna_of_Russia
-    source: Frederick_Francis_IV
-  AssignClass (7fc7be97-59d5-4441-9092-05a7449a3a3f)
- Call ID: 7fc7be97-59d5-4441-9092-05a7449a3a3f
+    source: :AlexandraGeorgievna
+    target: :DmitriPavlovich
+  AssignClass (727e3ecc-0905-48ff-a8a6-f4e45b260256)
+ Call ID: 727e3ecc-0905-48ff-a8a6-f4e45b260256
+  Args:
+    source: :SergeiAlexandrovich
+    type: :Man
+  AssignClass (c81d8ca0-fcec-4739-a805-e50dbb74a2ef)
+ Call ID: c81d8ca0-fcec-4739-a805-e50dbb74a2ef
+  Args:
+    type: :Person
+    source: :SergeiAlexandrovich
+  AssignClass (cb5c7c5e-f0f8-4a81-847b-2b782c022feb)
+ Call ID: cb5c7c5e-f0f8-4a81-847b-2b782c022feb
+  Args:
+    type: :Woman
+    source: :ElizabethFeodorovna
+  AssignClass (309b3419-c806-40d9-8069-42765cd10cd4)
+ Call ID: 309b3419-c806-40d9-8069-42765cd10cd4
+  Args:
+    source: :ElizabethFeodorovna
+    type: :Person
+  AddTriple (e2492788-540e-4d8b-b4ea-3c5e65d398c7)
+ Call ID: e2492788-540e-4d8b-b4ea-3c5e65d398c7
+  Args:
+    relation: :isBrotherOf
+    source: :SergeiAlexandrovich
+    target: :PaulAlexandrovich
+  AddTriple (3e9eb319-b775-4e7a-87df-e1f80e5637a8)
+ Call ID: 3e9eb319-b775-4e7a-87df-e1f80e5637a8
+  Args:
+    target: :PaulAlexandrovich
+    source: :SergeiAlexandrovich
+    relation: :hasFather
+  AddTriple (982291de-8b15-4402-9476-6c251d11b0a0)
+ Call ID: 982291de-8b15-4402-9476-6c251d11b0a0
+  Args:
+    target: :SergeiAlexandrovich
+    source: :ElizabethFeodorovna
+    relation: :hasMother
+  AssignClass (503ec9e7-a445-4a4f-a8a7-509456ba61d6)
+ Call ID: 503ec9e7-a445-4a4f-a8a7-509456ba61d6
   Args:
     type: :Man
-    source: Michael_Nikolaevich_of_Russia
-  AddTriple (4c2e8211-83d0-40a9-8b70-bc24b7e0c04c)
- Call ID: 4c2e8211-83d0-40a9-8b70-bc24b7e0c04c
+    source: :WilhelmSweden
+  AssignClass (cea43d79-6fc6-4e38-b266-63da93b7587a)
+ Call ID: cea43d79-6fc6-4e38-b266-63da93b7587a
+  Args:
+    type: :Person
+    source: :WilhelmSweden
+  AddLiteral (669b62db-f83e-4101-8f2c-308f645e9c69)
+ Call ID: 669b62db-f83e-4101-8f2c-308f645e9c69
+  Args:
+    source: :MariaPavlovna
+    literal_value: 1908
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AssignClass (8f0ed5a3-4251-4762-a95f-9999ef6d8d64)
+ Call ID: 8f0ed5a3-4251-4762-a95f-9999ef6d8d64
+  Args:
+    type: :Man
+    source: :LennartBernadotte
+  AssignClass (c8b7ebdb-beb1-407c-ba7e-31a66957097d)
+ Call ID: c8b7ebdb-beb1-407c-ba7e-31a66957097d
+  Args:
+    type: :Person
+    source: :LennartBernadotte
+  AddTriple (68e4ecd4-6746-4b4c-905e-6c9cff7f6610)
+ Call ID: 68e4ecd4-6746-4b4c-905e-6c9cff7f6610
+  Args:
+    target: :WilhelmSweden
+    source: :LennartBernadotte
+    relation: :hasFather
+  AddTriple (9d2e0f47-2ccf-4daa-bde1-c3ad571c43b5)
+ Call ID: 9d2e0f47-2ccf-4daa-bde1-c3ad571c43b5
+  Args:
+    relation: :hasMother
+    source: :LennartBernadotte
+    target: :MariaPavlovna
+  AssignClass (920ae303-a08d-435f-9d0e-ac8f6d803e1a)
+ Call ID: 920ae303-a08d-435f-9d0e-ac8f6d803e1a
+  Args:
+    source: :SergeiPutyatin
+    type: :Man
+  AssignClass (8f81b517-fbdc-4807-b4b1-42589c735673)
+ Call ID: 8f81b517-fbdc-4807-b4b1-42589c735673
+  Args:
+    type: :Person
+    source: :SergeiPutyatin
+  AddLiteral (675088e4-6c40-4346-8c05-b48450877a8a)
+ Call ID: 675088e4-6c40-4346-8c05-b48450877a8a
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: :MariaPavlovna
+    literal_value: 1917
+  AssignClass (0cd6790c-3556-4a99-8a4c-e4101598519a)
+ Call ID: 0cd6790c-3556-4a99-8a4c-e4101598519a
+  Args:
+    source: :RomanSergeievichPutyatin
+    type: :Man
+  AssignClass (d62d89e2-128f-4e71-b834-e7e3e6748991)
+ Call ID: d62d89e2-128f-4e71-b834-e7e3e6748991
+  Args:
+    source: :RomanSergeievichPutyatin
+    type: :Person
+  AddTriple (bb0773c1-7bef-487e-954b-1dbc660b7239)
+ Call ID: bb0773c1-7bef-487e-954b-1dbc660b7239
   Args:
     relation: :hasFather
-    target: Michael_Nikolaevich_of_Russia
-    source: Anastasia_Mikhailovna_of_Russia
-  Finish (a4074523-c22d-4a29-a900-41515ce7b99b)
- Call ID: a4074523-c22d-4a29-a900-41515ce7b99b
+    source: :RomanSergeievichPutyatin
+    target: :SergeiPutyatin
+  AddTriple (e041ba72-f3e7-4ce2-9e32-7ed11b0fd93c)
+ Call ID: e041ba72-f3e7-4ce2-9e32-7ed11b0fd93c
+  Args:
+    target: :MariaPavlovna
+    source: :RomanSergeievichPutyatin
+    relation: :hasMother
+  Finish (38aa2b72-4fe2-492d-9a51-77bf0f329b11)
+ Call ID: 38aa2b72-4fe2-492d-9a51-77bf0f329b11
   Args:

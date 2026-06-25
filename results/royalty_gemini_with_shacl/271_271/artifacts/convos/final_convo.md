@@ -85,18 +85,33 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Robert Bruce Ogilvy (born 29 February 1964) is a British landscape designer, and the founder and editor of the magazine Luxury Briefing.
-Personal life
+Edward Edmund Maximilian George Windsor, Lord Downpatrick (born 2 December 1988), known professionally as Eddy Downpatrick, is a British travel consultant, fashion designer, and former financial analyst.
+As second-in-line to the Dukedom of Kent, he uses one of his grandfather's subsidiary titles, Baron Downpatrick, by courtesy.
+A second cousin once removed of Charles III, Downpatrick is the most senior member of the House of Windsor to be excluded from the line of succession to the British throne owing to his Roman Catholic faith.
+Early life and family
 
-He married Julia Caroline Rawlinson, daughter of Charles Frederick Melville Rawlinson, of Arkesden, Essex, a merchant banker, on 30 July 1988 at St Mary's Church in Saffron Walden, Essex.
-Ogilvy had several leg wounds and required 30 stitches.
-He has a younger sister, Marina Ogilvy.
+Edward Edmund Maximilian George Windsor was born on 2 December 1988 at St Mary's Hospital, London, and grew up in Cambridge.
+He is the eldest child of George Windsor, Earl of St Andrews, son and heir apparent of Prince Edward, Duke of Kent.
+Downpatrick's mother, Sylvana, Countess of St Andrews, a member by birth of the Austrian Tomaselli family, is a Canadian-born historian of Austro-Italian and French extraction.
+Downpatrick was educated at Eton College and matriculated at Keble College, Oxford, where he studied modern languages with a specialisation in French and German.
+Career
+
+Downpatrick first had the idea of launching a fashion brand while hiking in Scotland in 2009, but chose to focus on his studies and his career as a financial analyst at JP Morgan.
+In 2021, Downpatrick founded Aristeia Travel, a company that organises tours and expeditions to destinations across, Europe, Asia, Africa, and Latin America.
+Downpatrick is also a partner at Wheeler-Windsor Expeditions, alongside California native Jack Wheeler, offering curated expeditions to clients.
+Succession rights
+
+In 2003, aged 15, following the example of his grandmother, the Duchess of Kent, and his uncle Lord Nicholas Windsor, Downpatrick – who had been baptised in the Church of England – chose to be confirmed into the Catholic Church.
+As a second cousin once removed of King Charles III, Downpatrick is the most senior person excluded from the line of succession for being a Catholic.
+Downpatrick remains second in the line of succession, after his father, to the Dukedom of Kent.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +127,9 @@ He has a younger sister, Marina Ogilvy.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +144,23 @@ He has a younger sister, Marina Ogilvy.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,125 +452,79 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (46a80267-c7bd-44fa-806a-5baac582e9db)
- Call ID: 46a80267-c7bd-44fa-806a-5baac582e9db
+  AssignClass (707f7b19-d35e-4692-aa2e-c01c1c22a8a8)
+ Call ID: 707f7b19-d35e-4692-aa2e-c01c1c22a8a8
   Args:
-    source: James_Robert_Bruce_Ogilvy
     type: :Man
-  AssignClass (45cdfdc2-d8d2-4ac3-842d-61f3d0366f38)
- Call ID: 45cdfdc2-d8d2-4ac3-842d-61f3d0366f38
+    source: Edward_Edmund_Maximilian_George_Windsor
+  AssignClass (3722af73-b1d3-4ed1-bc81-7185c332d3e9)
+ Call ID: 3722af73-b1d3-4ed1-bc81-7185c332d3e9
   Args:
-    source: James_Robert_Bruce_Ogilvy
-    type: :Person
-  AddLiteral (122da35c-5af7-4512-99bd-251458e07bc8)
- Call ID: 122da35c-5af7-4512-99bd-251458e07bc8
+    source: George_Windsor_Earl_of_St_Andrews
+    type: :Man
+  AssignClass (b127c23e-a526-4e2e-b0cf-e087c1a806b4)
+ Call ID: b127c23e-a526-4e2e-b0cf-e087c1a806b4
+  Args:
+    type: :Man
+    source: Prince_Edward_Duke_of_Kent
+  AssignClass (5873aeb9-0883-4076-8e31-9626bf5cd5d5)
+ Call ID: 5873aeb9-0883-4076-8e31-9626bf5cd5d5
+  Args:
+    type: :Woman
+    source: Sylvana_Countess_of_St_Andrews
+  AddLiteral (b9d28a34-b148-45ea-916d-10ae86290656)
+ Call ID: b9d28a34-b148-45ea-916d-10ae86290656
   Args:
     relation: :hasBirthYear
-    literal_value: 1964
-    source: James_Robert_Bruce_Ogilvy
-    literal_type: xsd:integer
-  AddTriple (0b9223da-27e7-4687-bb2d-857b7c73f55c)
- Call ID: 0b9223da-27e7-4687-bb2d-857b7c73f55c
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: James_Robert_Bruce_Ogilvy
-  AssignClass (d63c95ce-f162-4377-8b94-6333c20ca780)
- Call ID: d63c95ce-f162-4377-8b94-6333c20ca780
-  Args:
-    source: Julia_Caroline_Rawlinson
-    type: :Woman
-  AssignClass (ab12410c-ba86-401c-bbfe-97c1d18a484f)
- Call ID: ab12410c-ba86-401c-bbfe-97c1d18a484f
-  Args:
-    type: :Person
-    source: Julia_Caroline_Rawlinson
-  AddTriple (81d11e68-c868-478a-b9cf-33ca4bfde5b2)
- Call ID: 81d11e68-c868-478a-b9cf-33ca4bfde5b2
-  Args:
-    source: Julia_Caroline_Rawlinson
-    relation: :hasSex
-    target: :Female
-  AddLiteral (0f9b8ac9-3c2c-4d7c-b38d-de6be9fe53ee)
- Call ID: 0f9b8ac9-3c2c-4d7c-b38d-de6be9fe53ee
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: James_Robert_Bruce_Ogilvy
     literal_value: 1988
-  AddTriple (f5456d3c-ccbe-4f37-bef6-cc0519b058c2)
- Call ID: f5456d3c-ccbe-4f37-bef6-cc0519b058c2
-  Args:
-    source: James_Robert_Bruce_Ogilvy
-    relation: :hasRelation
-    target: :Julia_Caroline_Rawlinson
-  AssignClass (f14205f2-74a0-444b-b397-77f4519ba4b0)
- Call ID: f14205f2-74a0-444b-b397-77f4519ba4b0
-  Args:
-    type: :Man
-    source: Charles_Frederick_Melville_Rawlinson
-  AssignClass (986507db-af73-432f-bd69-e6e67e6ee79e)
- Call ID: 986507db-af73-432f-bd69-e6e67e6ee79e
-  Args:
-    source: Charles_Frederick_Melville_Rawlinson
-    type: :Person
-  AddTriple (1f8f69fc-a53a-41c2-8a8b-0e217cd5350a)
- Call ID: 1f8f69fc-a53a-41c2-8a8b-0e217cd5350a
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Charles_Frederick_Melville_Rawlinson
-  AddTriple (293450c2-b254-4290-83c9-33700529aecd)
- Call ID: 293450c2-b254-4290-83c9-33700529aecd
+    source: Edward_Edmund_Maximilian_George_Windsor
+    literal_type: xsd:integer
+  AddTriple (cf32387a-034b-40a7-ad00-cfdc1517f5fe)
+ Call ID: cf32387a-034b-40a7-ad00-cfdc1517f5fe
   Args:
     relation: :hasFather
-    target: :Charles_Frederick_Melville_Rawlinson
-    source: Julia_Caroline_Rawlinson
-  AssignClass (21442d16-8737-4e68-9129-b5b6a2f2a9a2)
- Call ID: 21442d16-8737-4e68-9129-b5b6a2f2a9a2
+    target: George_Windsor_Earl_of_St_Andrews
+    source: Edward_Edmund_Maximilian_George_Windsor
+  AddTriple (58042ed5-0551-4a66-8ff8-4ae1aacbb8d3)
+ Call ID: 58042ed5-0551-4a66-8ff8-4ae1aacbb8d3
   Args:
-    type: :Woman
-    source: Marina_Ogilvy
-  AssignClass (cf2de983-b8c4-476c-81ea-dbe9fe04ff95)
- Call ID: cf2de983-b8c4-476c-81ea-dbe9fe04ff95
+    target: Sylvana_Countess_of_St_Andrews
+    source: Edward_Edmund_Maximilian_George_Windsor
+    relation: :hasMother
+  AddTriple (0ccf99de-8fe6-47c8-8520-bbee9f4707d5)
+ Call ID: 0ccf99de-8fe6-47c8-8520-bbee9f4707d5
   Args:
-    source: Marina_Ogilvy
-    type: :Person
-  AddTriple (f1a23e7e-3757-4e38-94e2-89d4b2a8ae61)
- Call ID: f1a23e7e-3757-4e38-94e2-89d4b2a8ae61
+    relation: :hasFather
+    source: George_Windsor_Earl_of_St_Andrews
+    target: Prince_Edward_Duke_of_Kent
+  AddLiteral (47a6cf2d-7110-4122-ae83-b91076a59469)
+ Call ID: 47a6cf2d-7110-4122-ae83-b91076a59469
   Args:
-    source: Marina_Ogilvy
-    relation: :hasSex
-    target: :Female
-  AddTriple (24f73b51-bd50-4073-a5f2-8f993668c810)
- Call ID: 24f73b51-bd50-4073-a5f2-8f993668c810
+    relation: :knownAs
+    literal_value: Eddy Downpatrick
+    source: Edward_Edmund_Maximilian_George_Windsor
+    literal_type: xsd:string
+  AddLiteral (e0300031-4e1a-42bb-80f8-570000d62485)
+ Call ID: e0300031-4e1a-42bb-80f8-570000d62485
   Args:
-    target: :Marina_Ogilvy
-    relation: :hasSister
-    source: James_Robert_Bruce_Ogilvy
-  Finish (b6323f51-7bd2-4298-875f-8c7807308b15)
- Call ID: b6323f51-7bd2-4298-875f-8c7807308b15
+    relation: :alsoKnownAs
+    literal_value: Baron Downpatrick
+    source: Edward_Edmund_Maximilian_George_Windsor
+    literal_type: xsd:string
+  AssignClass (ffe92aa8-e7ad-443b-bd99-1617798ef6e9)
+ Call ID: ffe92aa8-e7ad-443b-bd99-1617798ef6e9
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Man
+    source: Lord_Nicholas_Windsor
+  AddTriple (06213255-5edc-4cff-9b82-061ecb848988)
+ Call ID: 06213255-5edc-4cff-9b82-061ecb848988
+  Args:
+    target: Prince_Edward_Duke_of_Kent
+    source: Lord_Nicholas_Windsor
+    relation: :hasFather
+  Finish (2de70f1e-aeac-47fd-82ac-cd18856ac56c)
+ Call ID: 2de70f1e-aeac-47fd-82ac-cd18856ac56c
+  Args:
 
 ================================= Tool Message =================================
 
@@ -518,26 +577,22 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:James_Robert_Bruce_Ogilvy a :Man,
-          :Person ;
-      :hasBirthYear 1964 ;
-      :hasMarriageYear 1988 ;
-      :hasRelation data:Julia_Caroline_Rawlinson ;
-      :hasSex data:Male ;
-      :hasSister data:Marina_Ogilvy .
+  data:Edward_Edmund_Maximilian_George_Windsor a :Man ;
+      :alsoKnownAs "Baron Downpatrick"^^xsd:string ;
+      :hasBirthYear 1988 ;
+      :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+      :hasMother data:Sylvana_Countess_of_St_Andrews ;
+      :knownAs "Eddy Downpatrick"^^xsd:string .
 
-  data:Charles_Frederick_Melville_Rawlinson a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Lord_Nicholas_Windsor a :Man ;
+      :hasFather data:Prince_Edward_Duke_of_Kent .
 
-  data:Julia_Caroline_Rawlinson a :Person,
-          :Woman ;
-      :hasFather data:Charles_Frederick_Melville_Rawlinson ;
-      :hasSex data:Female .
+  data:George_Windsor_Earl_of_St_Andrews a :Man ;
+      :hasFather data:Prince_Edward_Duke_of_Kent .
 
-  data:Marina_Ogilvy a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Sylvana_Countess_of_St_Andrews a :Woman .
+
+  data:Prince_Edward_Duke_of_Kent a :Man .
 
 
 
@@ -549,294 +604,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b276f7db-eb4d-463e-b051-e67a304fc2dd)
- Call ID: b276f7db-eb4d-463e-b051-e67a304fc2dd
+  ValidateShacl (1e803a8a-eaba-4e53-8d28-11a68cb78142)
+ Call ID: 1e803a8a-eaba-4e53-8d28-11a68cb78142
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:35
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'Lord_Nicholas_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
+      The node 'George_Windsor_Earl_of_St_Andrews' used as the 'hasFather' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='George_Windsor_Earl_of_St_Andrews', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'George_Windsor_Earl_of_St_Andrews' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
+      The node 'Sylvana_Countess_of_St_Andrews' used as the 'hasMother' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Sylvana_Countess_of_St_Andrews', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
+      The node 'George_Windsor_Earl_of_St_Andrews' used as the 'hasFather' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='George_Windsor_Earl_of_St_Andrews', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'George_Windsor_Earl_of_St_Andrews' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'Lord_Nicholas_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
+      The node 'Sylvana_Countess_of_St_Andrews' used as the 'hasMother' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Sylvana_Countess_of_St_Andrews', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Charles_Frederick_Melville_Rawlinson' acting as a 'hasFather' value for 'Julia_Caroline_Rawlinson' lacks the required ':Ancestor' or ':Man' class.
+      The node 'George_Windsor_Earl_of_St_Andrews' used as the 'hasFather' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Frederick_Melville_Rawlinson', class=':Ancestor')
+      AssignClass(node='George_Windsor_Earl_of_St_Andrews', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'George_Windsor_Earl_of_St_Andrews' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
+      The node 'Prince_Edward_Duke_of_Kent' used as the 'hasFather' for 'Lord_Nicholas_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
+      The node 'Sylvana_Countess_of_St_Andrews' used as the 'hasMother' for 'Edward_Edmund_Maximilian_George_Windsor' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_Frederick_Melville_Rawlinson' acting as a 'hasFather' value for 'Julia_Caroline_Rawlinson' lacks the required ':Ancestor' or ':Man' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Frederick_Melville_Rawlinson', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_Frederick_Melville_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'James_Robert_Bruce_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_Frederick_Melville_Rawlinson' acting as a 'hasFather' value for 'Julia_Caroline_Rawlinson' lacks the required ':Ancestor' or ':Man' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Frederick_Melville_Rawlinson', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Marina_Ogilvy' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Julia_Caroline_Rawlinson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Sylvana_Countess_of_St_Andrews', class=':Ancestor')
 
 
 
@@ -845,23 +716,23 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4dd71296-b792-4826-85d4-a1cd9a1c4a33)
- Call ID: 4dd71296-b792-4826-85d4-a1cd9a1c4a33
+  AssignClass (d9b90b3a-3ff1-479b-9a78-2ed3542e1a30)
+ Call ID: d9b90b3a-3ff1-479b-9a78-2ed3542e1a30
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (0f86aa6d-548e-45c4-904b-68a1179a512b)
- Call ID: 0f86aa6d-548e-45c4-904b-68a1179a512b
-  Args:
-    type: :Sex
-    source: :Female
-  AssignClass (246da18c-50a3-4232-8249-9873e9274a78)
- Call ID: 246da18c-50a3-4232-8249-9873e9274a78
-  Args:
-    source: Charles_Frederick_Melville_Rawlinson
     type: :Ancestor
-  Finish (4b19509f-88cf-41d9-8d70-5c3c092fad2a)
- Call ID: 4b19509f-88cf-41d9-8d70-5c3c092fad2a
+    source: Prince_Edward_Duke_of_Kent
+  AssignClass (f6d9e032-928e-432a-9214-deb6ae2d7c0a)
+ Call ID: f6d9e032-928e-432a-9214-deb6ae2d7c0a
+  Args:
+    source: George_Windsor_Earl_of_St_Andrews
+    type: :Ancestor
+  AssignClass (fed4e2a7-8455-4164-a528-016b8110f1c8)
+ Call ID: fed4e2a7-8455-4164-a528-016b8110f1c8
+  Args:
+    source: Sylvana_Countess_of_St_Andrews
+    type: :Ancestor
+  ValidateShacl (4c163178-6bb3-42a8-9b9e-34aeffdc4718)
+ Call ID: 4c163178-6bb3-42a8-9b9e-34aeffdc4718
   Args:
 
 ================================= Tool Message =================================
@@ -879,45 +750,27 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:James_Robert_Bruce_Ogilvy a :Man,
-          :Person ;
-      :hasBirthYear 1964 ;
-      :hasMarriageYear 1988 ;
-      :hasRelation data:Julia_Caroline_Rawlinson ;
-      :hasSex data:Male ;
-      :hasSister data:Marina_Ogilvy .
+  data:Edward_Edmund_Maximilian_George_Windsor a :Man ;
+      :alsoKnownAs "Baron Downpatrick"^^xsd:string ;
+      :hasBirthYear 1988 ;
+      :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+      :hasMother data:Sylvana_Countess_of_St_Andrews ;
+      :knownAs "Eddy Downpatrick"^^xsd:string .
 
-  data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Lord_Nicholas_Windsor a :Man ;
+      :hasFather data:Prince_Edward_Duke_of_Kent .
 
-  data:Julia_Caroline_Rawlinson a :Person,
-          :Woman ;
-      :hasFather data:Charles_Frederick_Melville_Rawlinson ;
-      :hasSex data:Female .
+  data:George_Windsor_Earl_of_St_Andrews a :Ancestor,
+          :Man ;
+      :hasFather data:Prince_Edward_Duke_of_Kent .
 
-  data:Marina_Ogilvy a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Sylvana_Countess_of_St_Andrews a :Ancestor,
+          :Woman .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Prince_Edward_Duke_of_Kent a :Ancestor,
+          :Man .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (855b2456-d7cc-4f99-b772-7b4a93de7b58)
- Call ID: 855b2456-d7cc-4f99-b772-7b4a93de7b58
-  Args:
 
 ================================= Tool Message =================================
 
@@ -927,6 +780,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5c9f0cd7-8972-41ff-8af1-78631244710c)
- Call ID: 5c9f0cd7-8972-41ff-8af1-78631244710c
+  Finish (8c787b33-2df2-4343-8019-2d9857f216aa)
+ Call ID: 8c787b33-2df2-4343-8019-2d9857f216aa
   Args:

@@ -142,10 +142,6 @@ Since 2023, Edward's children have been styled as the children of a duke rather 
 The family's country residence is Bagshot Park, while their office and official London home is at Buckingham Palace.
 Edward's initial lease of Bagshot Park in 1998 was for 50 years at £5,000 a year, with the Crown Estate as landlord.
 Approximately £3 million was spent on refurbishment, of which Edward paid £1.36 million, after which the rent rose to £90,000 a year.
-Activities
-
-The Earl and Countess of Wessex established their foundation, the Bagshot Park Charity, later renamed the Wessex Youth Trust, in 1999, with a focus on helping, supporting, and advancing registered charities that provide opportunities specifically for children and young people.
-Twenty years after its inception, the Wessex Youth Trust changed its name to the Earl and Countess of Wessex Charitable Trust, managed by the private office of the Earl and Countess of Wessex and Forfar.
 In July 2023, the trust's remaining funds were transferred to the Edinburgh Trust No. 2, which had originally been set up in 1964.
 Edward's patronages include the British Paralympic Association, the International Real Tennis Professionals Association, the Commonwealth Games Federation, BadmintonScotland, the Tennis and Rackets Association, the City of Birmingham Symphony Orchestra and Chorus, the London Mozart Players, Haddo House Choral and Operatic Society, Northern Ballet, the Edinburgh International Festival, the Royal Birmingham Conservatoire, the Production Guild, and National Youth Theatre.
 The Earl of Wessex assumed many duties from his father, Prince Philip, as Philip reduced his commitments before retiring from royal duties.
@@ -157,7 +153,6 @@ Edward later became chair of trustees of the Duke of Edinburgh's International A
 Edward is also a trustee of the International Award Association, which "encompasses the DofE UK and all its other 61 National Award Authorities across the globe".
 In 2018, Edward, as patron of the Tennis and Rackets Association, played on all 50 real tennis courts around the world and raised over £2 million for the Duke of Edinburgh's Award scheme.
 In June 2011, Edward visited Baltimore to meet students and staff of the Living Classrooms Foundation and encourage their participation in the Duke of Edinburgh's Award's programme.
-In December 2011, the Earl and Countess of Wessex visited troops in Afghanistan.
 During the same trip, the couple travelled to Bahrain, where they received two gifts of jewels from the Bahraini royal family and Prime Minister.
 In February and March 2012, the Earl and Countess visited the Caribbean as part of the Queen's Diamond Jubilee.
 The Queen appointed the Earl of Wessex as Lord High Commissioner to the General Assembly of the Church of Scotland for 2014.
@@ -167,11 +162,9 @@ In September 2016, Edward travelled to Chile as part of the Duke of Edinburgh's 
 The Earl and Countess of Wessex represented the Queen at the 50th anniversary celebrations of Sultan Hassanal Bolkiah's accession to the throne of Brunei in October 2017.
 In April 2018, the Earl visited Australia to attend the XXI Commonwealth Games and to support fundraising events for participants in the Duke of Edinburgh Award challenges.
 In July 2019, the Earl and Countess of Wessex visited Forfar on their first official visit to the royal burgh since the Queen granted Edward the additional title Earl of Forfar in March 2019.
-The Earl was presented with 'Earl of Forfar' tartan, designed by Forfar's Strathmore Woollen Company to mark their new titles.
 In February 2022, Edward was appointed president of the Royal Windsor Horse Show, a position previously held by his father Prince Philip.
 The following month, he visited Kenya to oversee the progress of the Duke of Edinburgh's International Award in the country.
 In April 2022, the Earl and Countess of Wessex and Forfar toured Saint Lucia, Saint Vincent and the Grenadines, and Antigua and Barbuda to mark the Queen's Platinum Jubilee.
-In 2022, and in recognition of his role as patron of the Production Guild, the Earl of Wessex Award was created as part of the Guild's inaugural Talent Showcase to recognise UK film and television organisations that had developed "a successful way of inspiring local talent or skills, widening access or being more inclusive.
 "
 
 
@@ -204,6 +197,8 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -219,39 +214,9 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -266,6 +231,23 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -283,6 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -350,29 +347,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -381,6 +370,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -393,6 +390,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -401,17 +400,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -439,6 +440,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -454,135 +539,215 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (05992d94-e486-49cf-adb2-2fc3307d54e0)
- Call ID: 05992d94-e486-49cf-adb2-2fc3307d54e0
+  AssignClass (b1a648a9-3a3f-4041-ac52-6301be40d60f)
+ Call ID: b1a648a9-3a3f-4041-ac52-6301be40d60f
   Args:
-    source: Edward
+    source: :Prince_Edward
     type: :Man
-  AssignClass (13a1e8d4-0db7-49b7-8df5-7c5c4ecbded2)
- Call ID: 13a1e8d4-0db7-49b7-8df5-7c5c4ecbded2
+  AssignClass (6b0afd2e-324b-42e0-bef9-e0b4e12b85d7)
+ Call ID: 6b0afd2e-324b-42e0-bef9-e0b4e12b85d7
   Args:
-    source: Elizabeth_II
+    source: :Prince_Edward
+    type: :Person
+  AssignClass (78fd33bc-887a-42b0-8ce3-d65ec73cb4b9)
+ Call ID: 78fd33bc-887a-42b0-8ce3-d65ec73cb4b9
+  Args:
+    source: :Elizabeth_II
     type: :Woman
-  AssignClass (93d73e7b-e164-4925-9810-5d892295d2b0)
- Call ID: 93d73e7b-e164-4925-9810-5d892295d2b0
+  AssignClass (bd9ced33-bb67-4bec-ba08-5bf956bb0f51)
+ Call ID: bd9ced33-bb67-4bec-ba08-5bf956bb0f51
   Args:
-    source: Philip
+    type: :Person
+    source: :Elizabeth_II
+  AssignClass (07024daf-fb5d-482f-bbef-137501a833eb)
+ Call ID: 07024daf-fb5d-482f-bbef-137501a833eb
+  Args:
+    source: :Prince_Philip
     type: :Man
-  AssignClass (7da83ade-5b91-497b-a915-5d7a277f2dbc)
- Call ID: 7da83ade-5b91-497b-a915-5d7a277f2dbc
+  AssignClass (5d5456c1-620e-438c-81c7-1f6c880b95d9)
+ Call ID: 5d5456c1-620e-438c-81c7-1f6c880b95d9
+  Args:
+    type: :Person
+    source: :Prince_Philip
+  AssignClass (b66b0d2b-066f-41ea-aa51-0c4e75d0d535)
+ Call ID: b66b0d2b-066f-41ea-aa51-0c4e75d0d535
   Args:
     type: :Man
-    source: Charles_III
-  AssignClass (04cad7de-9cba-4dff-a167-ad1d3d2e33fa)
- Call ID: 04cad7de-9cba-4dff-a167-ad1d3d2e33fa
+    source: :Charles_III
+  AssignClass (dd76dfd3-4071-44fd-aa34-9442b07485f2)
+ Call ID: dd76dfd3-4071-44fd-aa34-9442b07485f2
+  Args:
+    type: :Person
+    source: :Charles_III
+  AssignClass (a2fcd738-02ef-4872-aa00-4e17aa13933b)
+ Call ID: a2fcd738-02ef-4872-aa00-4e17aa13933b
   Args:
     type: :Woman
-    source: Sophie_Rhys-Jones
-  AssignClass (fbd2a8be-7f87-4518-82d7-f69fa2821e8c)
- Call ID: fbd2a8be-7f87-4518-82d7-f69fa2821e8c
+    source: :Sophie_Rhys-Jones
+  AssignClass (436ed2e3-dd25-43c9-ba6d-e90ded5f6c62)
+ Call ID: 436ed2e3-dd25-43c9-ba6d-e90ded5f6c62
   Args:
+    source: :Sophie_Rhys-Jones
+    type: :Person
+  AssignClass (cc4ff19c-baf6-46e5-812f-4e64a6f8c2d8)
+ Call ID: cc4ff19c-baf6-46e5-812f-4e64a6f8c2d8
+  Args:
+    source: :Lady_Louise_Mountbatten-Windsor
     type: :Woman
-    source: Louise_Mountbatten-Windsor
-  AssignClass (b161398a-9227-412b-ae54-a490cec725f1)
- Call ID: b161398a-9227-412b-ae54-a490cec725f1
+  AssignClass (65e94618-73de-4134-a292-830c83d4e9a9)
+ Call ID: 65e94618-73de-4134-a292-830c83d4e9a9
   Args:
+    type: :Person
+    source: :Lady_Louise_Mountbatten-Windsor
+  AssignClass (62c540d3-8acf-4ddd-8ca4-5d8ee3a22704)
+ Call ID: 62c540d3-8acf-4ddd-8ca4-5d8ee3a22704
+  Args:
+    source: :James_Mountbatten-Windsor
     type: :Man
-    source: James_Mountbatten-Windsor
-  AssignClass (1744acf3-fc2e-4ebf-ae68-5d889cd601cb)
- Call ID: 1744acf3-fc2e-4ebf-ae68-5d889cd601cb
+  AssignClass (86eb72a9-2c8a-4255-9137-7a5961cdac35)
+ Call ID: 86eb72a9-2c8a-4255-9137-7a5961cdac35
   Args:
-    source: Anne
+    type: :Person
+    source: :James_Mountbatten-Windsor
+  AssignClass (7bee3287-788b-44f2-b341-b681dad93a49)
+ Call ID: 7bee3287-788b-44f2-b341-b681dad93a49
+  Args:
+    source: :Anne
     type: :Woman
-  AssignClass (b3931f44-bf06-4d83-9f07-6a92e0c9d41b)
- Call ID: b3931f44-bf06-4d83-9f07-6a92e0c9d41b
+  AssignClass (0b719373-ce9a-4b81-ab6e-dd977ac09d86)
+ Call ID: 0b719373-ce9a-4b81-ab6e-dd977ac09d86
   Args:
-    source: Andrew
+    type: :Person
+    source: :Anne
+  AssignClass (0c8ccf27-f9f8-478c-a606-b3bfd4abb05a)
+ Call ID: 0c8ccf27-f9f8-478c-a606-b3bfd4abb05a
+  Args:
+    source: :Andrew
     type: :Man
-  AddLiteral (8b9d396e-fa3d-4a87-a86d-c137ccf7ecd6)
- Call ID: 8b9d396e-fa3d-4a87-a86d-c137ccf7ecd6
+  AssignClass (053cbd2d-056a-4971-92ac-75122362fcf3)
+ Call ID: 053cbd2d-056a-4971-92ac-75122362fcf3
   Args:
-    relation: :hasBirthYear
-    source: Edward
+    source: :Andrew
+    type: :Person
+  AddLiteral (29120ded-ee9e-42e2-94ba-43588fb1b32f)
+ Call ID: 29120ded-ee9e-42e2-94ba-43588fb1b32f
+  Args:
     literal_value: 1964
+    relation: :hasBirthYear
     literal_type: xsd:integer
-  AddTriple (371f9a8c-5d34-4308-8c9e-0438550c8125)
- Call ID: 371f9a8c-5d34-4308-8c9e-0438550c8125
+    source: :Prince_Edward
+  AddTriple (9c5fa541-7537-4eff-91ed-8db32de56218)
+ Call ID: 9c5fa541-7537-4eff-91ed-8db32de56218
   Args:
-    source: Edward
     relation: :hasMother
-    target: Elizabeth_II
-  AddTriple (68c88f83-5395-4600-8359-7afbef09a2c3)
- Call ID: 68c88f83-5395-4600-8359-7afbef09a2c3
+    source: :Prince_Edward
+    target: :Elizabeth_II
+  AddTriple (a9d59781-235d-46ad-a82a-55701c46366d)
+ Call ID: a9d59781-235d-46ad-a82a-55701c46366d
   Args:
-    source: Edward
-    target: Philip
     relation: :hasFather
-  AddTriple (6819d990-8013-42c6-ae7a-9eb1511747bd)
- Call ID: 6819d990-8013-42c6-ae7a-9eb1511747bd
+    source: :Prince_Edward
+    target: :Prince_Philip
+  AddTriple (629ac6a4-d47c-4be3-b136-0ca432317cb0)
+ Call ID: 629ac6a4-d47c-4be3-b136-0ca432317cb0
   Args:
-    relation: :isBrotherOf
-    target: Charles_III
-    source: Edward
-  AddTriple (7851b46f-015c-4889-bd9d-c08e06998c43)
- Call ID: 7851b46f-015c-4889-bd9d-c08e06998c43
+    target: :Charles_III
+    source: :Prince_Edward
+    relation: :isSiblingOf
+  AddTriple (1cdc7b59-f4eb-4cd0-94d9-ea437fd9a69c)
+ Call ID: 1cdc7b59-f4eb-4cd0-94d9-ea437fd9a69c
   Args:
-    relation: :isBrotherOf
-    target: Andrew
-    source: Edward
-  AddTriple (02cd21ff-80ff-40f2-9a3f-4c26de9b953d)
- Call ID: 02cd21ff-80ff-40f2-9a3f-4c26de9b953d
+    relation: :isSiblingOf
+    target: :Anne
+    source: :Prince_Edward
+  AddTriple (611eac55-3e3f-49a1-8aa2-d2f3b8368fe2)
+ Call ID: 611eac55-3e3f-49a1-8aa2-d2f3b8368fe2
   Args:
-    source: Edward
-    relation: :isSisterOf
-    target: Anne
-  AddLiteral (93986e20-7fd1-4bee-932c-bbc3004c1de5)
- Call ID: 93986e20-7fd1-4bee-932c-bbc3004c1de5
+    source: :Prince_Edward
+    target: :Andrew
+    relation: :isSiblingOf
+  AddTriple (5bf91a98-66e9-4b1e-a93d-07cd149c2ede)
+ Call ID: 5bf91a98-66e9-4b1e-a93d-07cd149c2ede
   Args:
-    relation: :hasMarriageYear
-    source: Edward
+    relation: :isChildOf
+    target: :Elizabeth_II
+    source: :Prince_Edward
+  AddTriple (daf73e7d-5a41-48d9-bbae-bfd30322c5e5)
+ Call ID: daf73e7d-5a41-48d9-bbae-bfd30322c5e5
+  Args:
+    source: :Prince_Edward
+    target: :Prince_Philip
+    relation: :isChildOf
+  AddTriple (2a81282b-767a-4158-b7c6-b9c7b83325e6)
+ Call ID: 2a81282b-767a-4158-b7c6-b9c7b83325e6
+  Args:
+    relation: :isChildOf
+    source: :Lady_Louise_Mountbatten-Windsor
+    target: :Prince_Edward
+  AddTriple (ed6d6c5f-dbde-48fc-b2d7-c5cf5c63e774)
+ Call ID: ed6d6c5f-dbde-48fc-b2d7-c5cf5c63e774
+  Args:
+    source: :Lady_Louise_Mountbatten-Windsor
+    target: :Sophie_Rhys-Jones
+    relation: :isChildOf
+  AddTriple (d779c478-4db4-4a80-92cc-21da7dcda6ae)
+ Call ID: d779c478-4db4-4a80-92cc-21da7dcda6ae
+  Args:
+    relation: :isChildOf
+    source: :James_Mountbatten-Windsor
+    target: :Prince_Edward
+  AddTriple (20c5ef2c-bc17-43f6-8ee9-4e371e55afe7)
+ Call ID: 20c5ef2c-bc17-43f6-8ee9-4e371e55afe7
+  Args:
+    relation: :isChildOf
+    target: :Sophie_Rhys-Jones
+    source: :James_Mountbatten-Windsor
+  AddLiteral (89ab2013-964f-4c21-98ea-a08d041569d7)
+ Call ID: 89ab2013-964f-4c21-98ea-a08d041569d7
+  Args:
+    source: :Prince_Edward
+    literal_type: xsd:integer
     literal_value: 1999
-    literal_type: xsd:integer
-  AddTriple (f1b7969e-b2d4-4508-91ad-11e07df2c565)
- Call ID: f1b7969e-b2d4-4508-91ad-11e07df2c565
+    relation: :hasMarriageYear
+  Finish (ca300453-e02b-4e8e-b8d3-852212b602fe)
+ Call ID: ca300453-e02b-4e8e-b8d3-852212b602fe
   Args:
-    source: Edward
-    relation: :hasRelation
-    target: Sophie_Rhys-Jones
-  AddTriple (a3c9d23b-fc00-4bc3-986b-b7314f81f456)
- Call ID: a3c9d23b-fc00-4bc3-986b-b7314f81f456
-  Args:
-    target: Edward
-    relation: :hasFather
-    source: Louise_Mountbatten-Windsor
-  AddTriple (d3fd9a19-ee68-4d23-8213-6f8c1452a516)
- Call ID: d3fd9a19-ee68-4d23-8213-6f8c1452a516
-  Args:
-    source: Louise_Mountbatten-Windsor
-    target: Sophie_Rhys-Jones
-    relation: :hasMother
-  AddTriple (4ddd75df-a8fa-4911-b451-f1157e742d48)
- Call ID: 4ddd75df-a8fa-4911-b451-f1157e742d48
-  Args:
-    target: Edward
-    relation: :hasFather
-    source: James_Mountbatten-Windsor
-  AddTriple (93ed01ea-ae6a-4ee6-94da-356447939bf5)
- Call ID: 93ed01ea-ae6a-4ee6-94da-356447939bf5
-  Args:
-    relation: :hasMother
-    target: Sophie_Rhys-Jones
-    source: James_Mountbatten-Windsor
-  AddLiteral (b6c7dcce-faf8-48f1-a0cc-664174d97f7b)
- Call ID: b6c7dcce-faf8-48f1-a0cc-664174d97f7b
-  Args:
-    relation: :hasDeathYear
-    source: Philip
-    literal_value: 2021
-    literal_type: xsd:integer
-  Finish (a89dbd39-c5c6-4998-9b28-93a1eeae80e0)
- Call ID: a89dbd39-c5c6-4998-9b28-93a1eeae80e0
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -675,36 +840,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:James_Mountbatten-Windsor a :Man ;
-      :hasFather data:Edward ;
-      :hasMother data:Sophie_Rhys-Jones .
+  data:James_Mountbatten-Windsor a :Man,
+          :Person ;
+      :isChildOf data:Prince_Edward,
+          data:Sophie_Rhys-Jones .
 
-  data:Louise_Mountbatten-Windsor a :Woman ;
-      :hasFather data:Edward ;
-      :hasMother data:Sophie_Rhys-Jones .
+  data:Lady_Louise_Mountbatten-Windsor a :Person,
+          :Woman ;
+      :isChildOf data:Prince_Edward,
+          data:Sophie_Rhys-Jones .
 
-  data:Andrew a :Man .
+  data:Andrew a :Man,
+          :Person .
 
-  data:Anne a :Woman .
+  data:Anne a :Person,
+          :Woman .
 
-  data:Charles_III a :Man .
+  data:Charles_III a :Man,
+          :Person .
 
-  data:Elizabeth_II a :Woman .
+  data:Elizabeth_II a :Person,
+          :Woman .
 
-  data:Philip a :Man ;
-      :hasDeathYear 2021 .
-
-  data:Edward a :Man ;
+  data:Prince_Edward a :Man,
+          :Person ;
       :hasBirthYear 1964 ;
-      :hasFather data:Philip ;
+      :hasFather data:Prince_Philip ;
       :hasMarriageYear 1999 ;
       :hasMother data:Elizabeth_II ;
-      :hasRelation data:Sophie_Rhys-Jones ;
-      :isBrotherOf data:Andrew,
-          data:Charles_III ;
-      :isSisterOf data:Anne .
+      :isChildOf data:Elizabeth_II,
+          data:Prince_Philip ;
+      :isSiblingOf data:Andrew,
+          data:Anne,
+          data:Charles_III .
 
-  data:Sophie_Rhys-Jones a :Woman .
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Sophie_Rhys-Jones a :Person,
+          :Woman .
 
 
 
@@ -716,166 +890,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8284c438-37bc-4da8-8782-f33167a525a7)
- Call ID: 8284c438-37bc-4da8-8782-f33167a525a7
+  ValidateShacl (95ac4bc2-de64-42d0-a1ad-0addf6544988)
+ Call ID: 95ac4bc2-de64-42d0-a1ad-0addf6544988
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:19
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Node data:Edward is closed. It cannot have value: data:Anne
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Edward is defined as a Man and is part of a closed shape. It contains an invalid property 'isSisterOf' which is not allowed for this entity type.
+      The node Prince_Philip, acting as the father of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Edward, isSisterOf, Anne)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of James_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Elizabeth_II, acting as the mother of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Philip is assigned as the father of Edward, but Philip lacks the required :Ancestor class.
+      The node Elizabeth_II, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of James_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Prince_Philip, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Elizabeth_II is assigned as the mother of Edward, but Elizabeth_II lacks the required :Ancestor class.
+      The node Prince_Edward, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elizabeth_II, Ancestor)
+      AssignClass(Prince_Edward, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of Louise_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Sophie_Rhys-Jones, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of James_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Prince_Philip, acting as the father of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Philip is assigned as the father of Edward, but Philip lacks the required :Ancestor class.
+      The node Elizabeth_II, acting as the mother of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of Louise_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Elizabeth_II, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of James_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Prince_Philip, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Elizabeth_II is assigned as the mother of Edward, but Elizabeth_II lacks the required :Ancestor class.
+      The node Prince_Edward, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elizabeth_II, Ancestor)
+      AssignClass(Prince_Edward, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of Louise_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Sophie_Rhys-Jones, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of James_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Prince_Edward, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Prince_Edward, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Philip is assigned as the father of Edward, but Philip lacks the required :Ancestor class.
+      The node Sophie_Rhys-Jones, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip, Ancestor)
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of Louise_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Prince_Philip, acting as the father of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of James_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Elizabeth_II, acting as the mother of Prince_Edward, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Elizabeth_II is assigned as the mother of Edward, but Elizabeth_II lacks the required :Ancestor class.
+      The node Elizabeth_II, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elizabeth_II, Ancestor)
+      AssignClass(Elizabeth_II, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Edward is assigned as the father of Louise_Mountbatten-Windsor, but Edward lacks the required :Ancestor class.
+      The node Prince_Philip, indicated as a parent of Prince_Edward, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edward, Ancestor)
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Sophie_Rhys-Jones is assigned as the mother of Louise_Mountbatten-Windsor, but Sophie_Rhys-Jones lacks the required :Ancestor class.
+      The node Prince_Edward, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Rhys-Jones, Ancestor)
+      AssignClass(Prince_Edward, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Sophie_Rhys-Jones, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Prince_Edward, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Edward, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Sophie_Rhys-Jones, indicated as a parent of James_Mountbatten-Windsor, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Prince_Edward, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Edward, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Sophie_Rhys-Jones, indicated as a parent of Lady_Louise_Mountbatten-Windsor, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Rhys-Jones, :Ancestor)
 
 
 
@@ -884,39 +1098,29 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (ba9b2cdb-8cc3-4081-a2c0-00d70bfd89c5)
- Call ID: ba9b2cdb-8cc3-4081-a2c0-00d70bfd89c5
-  Args:
-    relation: :isSisterOf
-    target: Anne
-    source: Edward
-  AssignClass (b3536cea-475e-4994-b85e-ddc14a42e2d1)
- Call ID: b3536cea-475e-4994-b85e-ddc14a42e2d1
+  AssignClass (7d00a7b3-2621-4a99-b1a0-cf4e57287769)
+ Call ID: 7d00a7b3-2621-4a99-b1a0-cf4e57287769
   Args:
     type: :Ancestor
-    source: Edward
-  AssignClass (78dffb10-da7b-43c3-b28b-75c3136861af)
- Call ID: 78dffb10-da7b-43c3-b28b-75c3136861af
+    source: :Prince_Philip
+  AssignClass (1e9eb126-9aa4-4e35-a8aa-98e789428336)
+ Call ID: 1e9eb126-9aa4-4e35-a8aa-98e789428336
   Args:
     type: :Ancestor
-    source: Philip
-  AssignClass (ca588f6f-3d28-49e1-8f15-63b7ed2f198b)
- Call ID: ca588f6f-3d28-49e1-8f15-63b7ed2f198b
+    source: :Elizabeth_II
+  AssignClass (d7c9907d-c522-451f-b78b-d2e266bc3b6c)
+ Call ID: d7c9907d-c522-451f-b78b-d2e266bc3b6c
+  Args:
+    source: :Prince_Edward
+    type: :Ancestor
+  AssignClass (dd81bb3f-d909-4df1-8aed-cff18116dab3)
+ Call ID: dd81bb3f-d909-4df1-8aed-cff18116dab3
   Args:
     type: :Ancestor
-    source: Sophie_Rhys-Jones
-  AssignClass (3a0566b4-4abf-46b2-ac94-8faf0dc26dff)
- Call ID: 3a0566b4-4abf-46b2-ac94-8faf0dc26dff
+    source: :Sophie_Rhys-Jones
+  Finish (a6fbe17d-a9fd-4ebe-b744-78ef55232782)
+ Call ID: a6fbe17d-a9fd-4ebe-b744-78ef55232782
   Args:
-    type: :Ancestor
-    source: Elizabeth_II
-  ValidateShacl (6a53082e-0304-45ae-b605-09ebe8a869c2)
- Call ID: 6a53082e-0304-45ae-b605-09ebe8a869c2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -937,41 +1141,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Anne a :Woman .
+  data:James_Mountbatten-Windsor a :Man,
+          :Person ;
+      :isChildOf data:Prince_Edward,
+          data:Sophie_Rhys-Jones .
 
-  data:James_Mountbatten-Windsor a :Man ;
-      :hasFather data:Edward ;
-      :hasMother data:Sophie_Rhys-Jones .
+  data:Lady_Louise_Mountbatten-Windsor a :Person,
+          :Woman ;
+      :isChildOf data:Prince_Edward,
+          data:Sophie_Rhys-Jones .
 
-  data:Louise_Mountbatten-Windsor a :Woman ;
-      :hasFather data:Edward ;
-      :hasMother data:Sophie_Rhys-Jones .
+  data:Andrew a :Man,
+          :Person .
 
-  data:Andrew a :Man .
+  data:Anne a :Person,
+          :Woman .
 
-  data:Charles_III a :Man .
+  data:Charles_III a :Man,
+          :Person .
 
   data:Elizabeth_II a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Philip a :Ancestor,
-          :Man ;
-      :hasDeathYear 2021 .
-
-  data:Edward a :Ancestor,
-          :Man ;
+  data:Prince_Edward a :Ancestor,
+          :Man,
+          :Person ;
       :hasBirthYear 1964 ;
-      :hasFather data:Philip ;
+      :hasFather data:Prince_Philip ;
       :hasMarriageYear 1999 ;
       :hasMother data:Elizabeth_II ;
-      :hasRelation data:Sophie_Rhys-Jones ;
-      :isBrotherOf data:Andrew,
+      :isChildOf data:Elizabeth_II,
+          data:Prince_Philip ;
+      :isSiblingOf data:Andrew,
+          data:Anne,
           data:Charles_III .
 
+  data:Prince_Philip a :Ancestor,
+          :Man,
+          :Person .
+
   data:Sophie_Rhys-Jones a :Ancestor,
+          :Person,
           :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (3c2b7710-6bd8-4de7-996a-c08ca4c81cbe)
+ Call ID: 3c2b7710-6bd8-4de7-996a-c08ca4c81cbe
+  Args:
 
 ================================= Tool Message =================================
 
@@ -981,6 +1207,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (75f1cacc-05af-42a4-87b5-526e3f140d5e)
- Call ID: 75f1cacc-05af-42a4-87b5-526e3f140d5e
+  Finish (667f1741-da05-449f-8c5b-645fb4061852)
+ Call ID: 667f1741-da05-449f-8c5b-645fb4061852
   Args:

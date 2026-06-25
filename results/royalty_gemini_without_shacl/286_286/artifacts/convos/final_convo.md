@@ -69,98 +69,45 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
-
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Prince Jean Carl Pierre Marie d'Orléans, Count of Paris (born 19 May 1965) is the current head of the House of Orléans.
-Jean is the senior male descendant by primogeniture in the male-line of Louis Philippe I, King of the French, and thus according to the Orléanists the legitimate claimant to the defunct throne of France as Jean IV.
-Jean is the second son of Henri, Count of Paris (1933–2019) and his former wife Duchess Marie-Thérèse of Württemberg (born 1934).
-Biography
-
-Early life and education
-
-Jean d'Orléans was born on 19 May 1965 in Boulogne-Billancourt, the son of Henri of Orleans and Maria Theresa of Württemberg.
-He received as godfather, his maternal uncle, Carl of Württemberg, and as godmother, his paternal aunt, Princess Chantal of Orleans.
-Jean completed his national service as an officer, first taking four months of classes at the Saumur Cavalry School.
-Jean is multilingual, speaking French, English, and German.
-First engagement
-
-Prince Jean was due to marry Duchess Tatjana of Oldenburg (b. 1974) in 2001.
-However, the wedding was cancelled at the last moment because of a dispute over religious denomination: Jean's father, Henri, feared the Orléans claim to the throne would be compromised if there were to be a Protestant heir.
-Second engagement and marriage
-
-On 29 November 2008, Henri, then Count of Paris, announced the engagement of Jean, the then Duke of Vendôme, to Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart, born in Vienna on 19 June 1977.
-Lawsuit
-
-In 2021, Jean filed a lawsuit against the Saint-Louis foundation, demanding €1 million in damages and the return of five properties, including the Château d'Amboise.
-In 1886, the château was bequeathed to the Institute of France by Jean's ancestor Henri d’Orléans, with the caveat that the property would never be altered by the institute.
-The Saint-Louis foundation was later founded by Jean's grandfather, Henri VI, Count of Paris, in 1974.
-Jean's lawsuit alleges that the Institute violated their contract to never alter the property, after they announced plans to transform the Pavillon d’Enghien into a €760-a-night luxury hotel, containing a spa and gastronomic restaurant.
-Jean had previously lived in the château from 2001 to September 2021 rent-free, but was forcefully evicted by the institute after they began to demand he pay rent, which Jean viewed as a violation of their contract.
+Rafael of Orléans-Braganza (Portuguese: Rafael de Orléans e Bragança; born 24 April 1986) is a member of the Imperial House of Brazil.
+He is the heir presumptive to his childless uncle, Prince Bertrand, the current head of the Vassouras branch of the House of Orléans-Braganza and one of the claimants to the defunct Brazilian Throne.
+Rafael became heir presumptive following the death of his father, Prince Antônio, in November 2024.
 Family
 
-Jean and his wife Philomena have six children: 
+Born in Petrópolis, Brazil on 26 April 1986, he is the third child and second son of Prince Antônio de Orleans e Bragança and Princess Christine of Ligne.
+He has an older brother and sister, Prince Pedro Luiz and Princess Amélia and a younger sister, Princess Maria Gabriela.
+His name in full is Rafael Antonio Maria José Francisco Miguel Gabriel Gonzaga de Orléans e Bragança e Ligne.
+His paternal grandparents were Prince Pedro Henrique of Orléans-Bragança, one of two claimants to be head of the Brazilian Imperial House, and Princess Maria Elisabeth of Bavaria.
+His maternal grandparents were Antoine, 13th Prince of Ligne, and Princess Alix of Luxembourg.
+His mother's family, the House of Ligne, is one of the oldest and most prominent Wallonian noble families still extant in Belgium.
+Christine is a niece of Grand Duke Jean, who reigned in Luxembourg until his abdication in 2000.
+Personal life
 
+Rafael has a degree in manufacturing engineering from Pontifical Catholic University of Rio de Janeiro, working at the InBev subsidiary in London.
+Rafael also has a partnership and a tourism enterprise with headquarters in New York, Paris and Rio de Janeiro.
+Rafael has expressed in statements his desire to marry a princess who is part of "Catholic royalty or high nobility".
+Appointments
 
-Politics
+In February 2022, after the floods that devastated the city of Petrópolis, Rafael came to the aid of the victims, bringing them essential goods that the imperial house received from monarchist supporters.
+Honors
 
-Jean believes that the people of France are "monarchist at heart" and argues that they long for a non-partisan figurehead.
-Jean has also expressed his opposition to same-sex marriage, having participated in the La Manif pour tous protests, as well as abortion.
-In May 2019, Jean met with French President Emmanuel Macron, Brigitte Macron, and Italian President Sergio Mattarella in his then-home in the Château d'Amboise.
-
-
-Titles, styles and honours
-
-Titles in pretense
-
-He was created Duke of Vendôme (French: Duc de Vendôme) by his paternal grandfather, on 27 September 1987.
-Following the death of his father, it was initially thought that Prince Jean would not assume the title of Count of Paris for several months after his father's death, and possibly not for as much as one year.
-Honours
-
-National
-
-Dynastic
+Genealogy
 
 Ancestry
 
-Jean is a direct male-line descendant of Louis Philippe I, the last French king, who in turn was a descendant of Philippe I, Duke of Orléans, the younger brother of Louis XIV.
-Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of Spain, the Two Sicilies and Parma.
+Patrilineal descent
+
+Rafael is a member of the House of Orléans-Braganza, a sub-branch of the House of Bourbon, itself a branch of the House of Capet and of the Robertians.
+Rafael's patriline is the line from which he is descended father to son.
+It follows the Dukes of Orléans, the Kings of France, the Dukes and Counts of Vendôme, the Counts of La Marche, the first Duke of Bourbon, a Count of Clermont, and before them, again the Kings of France.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -176,39 +123,9 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -223,6 +140,23 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -240,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -338,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -350,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -358,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -396,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -411,386 +448,184 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cf1e351e-e530-481b-a494-4ff6aa96147a)
- Call ID: cf1e351e-e530-481b-a494-4ff6aa96147a
+  AssignClass (da7de4f3-c333-4894-9dac-f7cc9e724702)
+ Call ID: da7de4f3-c333-4894-9dac-f7cc9e724702
   Args:
     type: :Man
-    source: Jean_dOrleans
-  AssignClass (a1bc3d8e-ebd6-4ed6-af54-44a0afd02a6e)
- Call ID: a1bc3d8e-ebd6-4ed6-af54-44a0afd02a6e
+    source: Rafael_of_Orléans-Braganza
+  AssignClass (78fb32d8-fb28-46e2-9b24-928eb2dc531c)
+ Call ID: 78fb32d8-fb28-46e2-9b24-928eb2dc531c
   Args:
-    source: Jean_dOrleans
     type: :Person
-  AddLiteral (1bc11673-fd31-4018-ade5-dcdc2f13537d)
- Call ID: 1bc11673-fd31-4018-ade5-dcdc2f13537d
+    source: Rafael_of_Orléans-Braganza
+  AddLiteral (8873296d-d9b0-4c87-9e49-45c8d64e933b)
+ Call ID: 8873296d-d9b0-4c87-9e49-45c8d64e933b
   Args:
-    literal_type: xsd:integer
-    literal_value: 1965
-    source: Jean_dOrleans
+    source: Rafael_of_Orléans-Braganza
+    literal_value: 1986
     relation: :hasBirthYear
-  AssignClass (15e95f0a-49b1-479d-882b-866141721119)
- Call ID: 15e95f0a-49b1-479d-882b-866141721119
+    literal_type: xsd:integer
+  AssignClass (03c33705-a441-4f55-9c29-bbec16de510d)
+ Call ID: 03c33705-a441-4f55-9c29-bbec16de510d
   Args:
     type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (6e02d2e7-00e7-4e3a-9fd6-0b4da1162acf)
- Call ID: 6e02d2e7-00e7-4e3a-9fd6-0b4da1162acf
+    source: Prince_Bertrand
+  AssignClass (62c739b5-7c22-47c3-918b-4a377fb15752)
+ Call ID: 62c739b5-7c22-47c3-918b-4a377fb15752
   Args:
-    source: Henri_Count_of_Paris
+    source: Prince_Bertrand
     type: :Person
-  AddLiteral (0953a7a2-9aaf-474d-8069-6eaa8bbd9bb2)
- Call ID: 0953a7a2-9aaf-474d-8069-6eaa8bbd9bb2
+  AssignClass (83e4d9b3-c489-4d76-9239-3b685a9353b6)
+ Call ID: 83e4d9b3-c489-4d76-9239-3b685a9353b6
   Args:
-    relation: :hasBirthYear
-    source: Henri_Count_of_Paris
-    literal_value: 1933
-    literal_type: xsd:integer
-  AddLiteral (027f0fe5-3f86-4e2b-94f7-5e527155696b)
- Call ID: 027f0fe5-3f86-4e2b-94f7-5e527155696b
+    type: :Man
+    source: Prince_Antônio
+  AssignClass (f79db54b-ddf4-4b27-bb2c-dfca2318f542)
+ Call ID: f79db54b-ddf4-4b27-bb2c-dfca2318f542
+  Args:
+    source: Prince_Antônio
+    type: :Person
+  AddLiteral (a56e1b20-c913-40bf-9802-43b0f3863cc2)
+ Call ID: a56e1b20-c913-40bf-9802-43b0f3863cc2
   Args:
     literal_type: xsd:integer
-    literal_value: 2019
-    source: Henri_Count_of_Paris
+    literal_value: 2024
     relation: :hasDeathYear
-  AssignClass (684348db-8327-482d-b4c9-01c180eae62e)
- Call ID: 684348db-8327-482d-b4c9-01c180eae62e
+    source: Prince_Antônio
+  AssignClass (b771b978-fb37-4461-ba84-50d12200d7bb)
+ Call ID: b771b978-fb37-4461-ba84-50d12200d7bb
   Args:
-    source: Marie-Therese_of_Wurttemberg
     type: :Woman
-  AssignClass (deb4aeaa-6585-4686-aac6-5d660f09ac88)
- Call ID: deb4aeaa-6585-4686-aac6-5d660f09ac88
+    source: Princess_Christine_of_Ligne
+  AssignClass (66dc8d06-ce16-4716-a363-72b7c204f519)
+ Call ID: 66dc8d06-ce16-4716-a363-72b7c204f519
   Args:
-    source: Marie-Therese_of_Wurttemberg
     type: :Person
-  AddLiteral (54b0dbef-b192-403f-a21c-a50a099484ee)
- Call ID: 54b0dbef-b192-403f-a21c-a50a099484ee
+    source: Princess_Christine_of_Ligne
+  AddTriple (aa9bf5ba-f5f5-4edc-bec9-40bae458f023)
+ Call ID: aa9bf5ba-f5f5-4edc-bec9-40bae458f023
   Args:
-    literal_type: xsd:integer
-    literal_value: 1934
-    source: Marie-Therese_of_Wurttemberg
-    relation: :hasBirthYear
-  AddTriple (ebe745d5-4279-499e-a5ea-cf625edf5512)
- Call ID: ebe745d5-4279-499e-a5ea-cf625edf5512
-  Args:
-    target: Henri_Count_of_Paris
-    source: Jean_dOrleans
+    target: Prince_Antônio
     relation: :hasFather
-  AddTriple (c75824a0-ab20-4e1e-af93-925d2e969fed)
- Call ID: c75824a0-ab20-4e1e-af93-925d2e969fed
+    source: Rafael_of_Orléans-Braganza
+  AddTriple (19e88222-f1af-4cfa-a6a6-7e661d110f55)
+ Call ID: 19e88222-f1af-4cfa-a6a6-7e661d110f55
   Args:
-    source: Jean_dOrleans
+    target: Princess_Christine_of_Ligne
+    source: Rafael_of_Orléans-Braganza
     relation: :hasMother
-    target: Marie-Therese_of_Wurttemberg
-  AssignClass (1edcac75-9184-4d11-a5eb-f23ef4b2ee0b)
- Call ID: 1edcac75-9184-4d11-a5eb-f23ef4b2ee0b
-  Args:
-    type: :Woman
-    source: Philomena_de_Tornos_y_Steinhart
-  AssignClass (fffb13a0-57f3-4d1f-967a-651ac2b57467)
- Call ID: fffb13a0-57f3-4d1f-967a-651ac2b57467
-  Args:
-    type: :Person
-    source: Philomena_de_Tornos_y_Steinhart
-  AddLiteral (97c25108-d12e-4869-8654-2d0877f1827e)
- Call ID: 97c25108-d12e-4869-8654-2d0877f1827e
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Philomena_de_Tornos_y_Steinhart
-    literal_value: 1977
-  AddTriple (fa500037-c099-459d-85ac-0882ef4d2414)
- Call ID: fa500037-c099-459d-85ac-0882ef4d2414
-  Args:
-    target: Philomena_de_Tornos_y_Steinhart
-    source: Jean_dOrleans
-    relation: :hasRelation
-  AssignClass (328365d0-2475-4895-9357-99c550262e58)
- Call ID: 328365d0-2475-4895-9357-99c550262e58
+  AssignClass (9347a080-fcbc-4947-b9e4-aa83d963d6c2)
+ Call ID: 9347a080-fcbc-4947-b9e4-aa83d963d6c2
   Args:
     type: :Man
-    source: Henri_VI_Count_of_Paris
-  AssignClass (5adff4bb-417f-454a-9c77-f1aa939ae45b)
- Call ID: 5adff4bb-417f-454a-9c77-f1aa939ae45b
+    source: Prince_Pedro_Luiz
+  AssignClass (55385006-818c-4867-8c73-0407b9ca00c0)
+ Call ID: 55385006-818c-4867-8c73-0407b9ca00c0
   Args:
     type: :Person
-    source: Henri_VI_Count_of_Paris
-  AddTriple (f89438c5-d418-4f93-bfe6-f028c6af1487)
- Call ID: f89438c5-d418-4f93-bfe6-f028c6af1487
+    source: Prince_Pedro_Luiz
+  AddTriple (646f1be4-e792-464f-8417-49632d7e8f5b)
+ Call ID: 646f1be4-e792-464f-8417-49632d7e8f5b
   Args:
-    source: Henri_Count_of_Paris
+    target: Prince_Pedro_Luiz
+    relation: :hasBrother
+    source: Rafael_of_Orléans-Braganza
+  AssignClass (21a14ef2-4940-4119-a6be-8b18be67d3d5)
+ Call ID: 21a14ef2-4940-4119-a6be-8b18be67d3d5
+  Args:
+    source: Princess_Amélia
+    type: :Woman
+  AssignClass (d8ccc430-09d6-4c68-bf53-f5518fc20812)
+ Call ID: d8ccc430-09d6-4c68-bf53-f5518fc20812
+  Args:
+    source: Princess_Amélia
+    type: :Person
+  AddTriple (4cb9046d-48fe-433f-b4f9-ca581464ee85)
+ Call ID: 4cb9046d-48fe-433f-b4f9-ca581464ee85
+  Args:
+    source: Rafael_of_Orléans-Braganza
+    relation: :hasSister
+    target: Princess_Amélia
+  AssignClass (61afbaf1-9ef1-460d-845a-a0ef74b9864a)
+ Call ID: 61afbaf1-9ef1-460d-845a-a0ef74b9864a
+  Args:
+    type: :Woman
+    source: Princess_Maria_Gabriela
+  AssignClass (65834b3f-ca46-4301-b4d1-3727dac85074)
+ Call ID: 65834b3f-ca46-4301-b4d1-3727dac85074
+  Args:
+    source: Princess_Maria_Gabriela
+    type: :Person
+  AddTriple (bcc4b2eb-14f9-4dd4-ac46-262ae2ca231f)
+ Call ID: bcc4b2eb-14f9-4dd4-ac46-262ae2ca231f
+  Args:
+    relation: :hasSister
+    source: Rafael_of_Orléans-Braganza
+    target: Princess_Maria_Gabriela
+  AssignClass (dbaa1cd3-bd0a-41a4-aa70-560ac4553d48)
+ Call ID: dbaa1cd3-bd0a-41a4-aa70-560ac4553d48
+  Args:
+    type: :Man
+    source: Prince_Pedro_Henrique
+  AssignClass (b46d8d28-2619-4bc2-a376-aff45bc73588)
+ Call ID: b46d8d28-2619-4bc2-a376-aff45bc73588
+  Args:
+    source: Prince_Pedro_Henrique
+    type: :Person
+  AssignClass (fc704d2b-4297-4148-9e9e-463e4f74bda2)
+ Call ID: fc704d2b-4297-4148-9e9e-463e4f74bda2
+  Args:
+    type: :Woman
+    source: Princess_Maria_Elisabeth_of_Bavaria
+  AssignClass (5f377d21-deca-478a-9d45-9be65d364ed3)
+ Call ID: 5f377d21-deca-478a-9d45-9be65d364ed3
+  Args:
+    source: Princess_Maria_Elisabeth_of_Bavaria
+    type: :Person
+  AssignClass (25cefc79-b1dd-4f48-92e5-80484c42537e)
+ Call ID: 25cefc79-b1dd-4f48-92e5-80484c42537e
+  Args:
+    source: Antoine_13th_Prince_of_Ligne
+    type: :Man
+  AssignClass (222dcfd5-8228-4cea-9593-b01f2030f548)
+ Call ID: 222dcfd5-8228-4cea-9593-b01f2030f548
+  Args:
+    source: Antoine_13th_Prince_of_Ligne
+    type: :Person
+  AssignClass (4880d867-8529-4687-9998-b5301cc20fe7)
+ Call ID: 4880d867-8529-4687-9998-b5301cc20fe7
+  Args:
+    type: :Woman
+    source: Princess_Alix_of_Luxembourg
+  AssignClass (15181654-e29c-414c-99e4-a31c67422455)
+ Call ID: 15181654-e29c-414c-99e4-a31c67422455
+  Args:
+    source: Princess_Alix_of_Luxembourg
+    type: :Person
+  AddTriple (dbab2462-6d2d-427a-8998-262c6d8e3235)
+ Call ID: dbab2462-6d2d-427a-8998-262c6d8e3235
+  Args:
+    target: Prince_Pedro_Henrique
     relation: :hasFather
-    target: Henri_VI_Count_of_Paris
-  AssignClass (e35bf228-0bfc-4a91-a866-d99b5e23f032)
- Call ID: e35bf228-0bfc-4a91-a866-d99b5e23f032
+    source: Prince_Antônio
+  AddTriple (893b7b5e-5ea5-4061-a1cb-62bd43dc0268)
+ Call ID: 893b7b5e-5ea5-4061-a1cb-62bd43dc0268
   Args:
-    source: Carl_of_Wurttemberg
-    type: :Man
-  AssignClass (a6a8c7e3-6c22-4806-9ccc-b04030a6aa81)
- Call ID: a6a8c7e3-6c22-4806-9ccc-b04030a6aa81
+    target: Princess_Maria_Elisabeth_of_Bavaria
+    relation: :hasMother
+    source: Prince_Antônio
+  AddTriple (f45c4b71-cb6f-4182-b975-61eadd0afaa3)
+ Call ID: f45c4b71-cb6f-4182-b975-61eadd0afaa3
   Args:
-    type: :Person
-    source: Carl_of_Wurttemberg
-  AssignClass (46639a99-4080-4474-b074-2a5d4c36da85)
- Call ID: 46639a99-4080-4474-b074-2a5d4c36da85
+    target: Antoine_13th_Prince_of_Ligne
+    source: Princess_Christine_of_Ligne
+    relation: :hasFather
+  AddTriple (1cc842e2-c3c0-4460-ac8f-87ea7924e63c)
+ Call ID: 1cc842e2-c3c0-4460-ac8f-87ea7924e63c
   Args:
-    source: Princess_Chantal_of_Orleans
-    type: :Woman
-  AssignClass (544072e5-8eea-411f-b271-0000f7e90d8f)
- Call ID: 544072e5-8eea-411f-b271-0000f7e90d8f
-  Args:
-    source: Princess_Chantal_of_Orleans
-    type: :Person
-  AddTriple (e1d3879a-f024-4181-98aa-9d4474d05b29)
- Call ID: e1d3879a-f024-4181-98aa-9d4474d05b29
-  Args:
-    source: Princess_Chantal_of_Orleans
-    relation: :isSisterOf
-    target: Henri_Count_of_Paris
-  AddTriple (a7b7ef02-51e6-4fda-bf96-e06e98375f9f)
- Call ID: a7b7ef02-51e6-4fda-bf96-e06e98375f9f
-  Args:
-    source: Jean_dOrleans
-    relation: :hasSex
-    target: :Male
-  AddTriple (12076cc7-4c80-49f5-bd3e-39022f83cd8f)
- Call ID: 12076cc7-4c80-49f5-bd3e-39022f83cd8f
-  Args:
-    target: :Male
-    source: Henri_Count_of_Paris
-    relation: :hasSex
-  AddTriple (7c95d9c0-06f2-415b-ba74-f0955372e553)
- Call ID: 7c95d9c0-06f2-415b-ba74-f0955372e553
-  Args:
-    target: :Female
-    source: Marie-Therese_of_Wurttemberg
-    relation: :hasSex
-  AddTriple (1201def5-77c5-457b-83fe-a8538c9bc7e2)
- Call ID: 1201def5-77c5-457b-83fe-a8538c9bc7e2
-  Args:
-    relation: :hasSex
-    source: Philomena_de_Tornos_y_Steinhart
-    target: :Female
-  AddTriple (0ccb20fa-6ee8-471f-bcfb-79178559ef39)
- Call ID: 0ccb20fa-6ee8-471f-bcfb-79178559ef39
-  Args:
-    target: :Male
-    source: Henri_VI_Count_of_Paris
-    relation: :hasSex
-  AddTriple (9c6b3b7f-4832-40ae-a86c-e088b6589b90)
- Call ID: 9c6b3b7f-4832-40ae-a86c-e088b6589b90
-  Args:
-    source: Carl_of_Wurttemberg
-    relation: :hasSex
-    target: :Male
-  AddTriple (1f1df558-fbb0-4da6-b311-7e003ab9ca28)
- Call ID: 1f1df558-fbb0-4da6-b311-7e003ab9ca28
-  Args:
-    target: :Female
-    source: Princess_Chantal_of_Orleans
-    relation: :hasSex
-  Finish (a3f0b422-decc-4068-8f64-30e228bd10e1)
- Call ID: a3f0b422-decc-4068-8f64-30e228bd10e1
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Carl_of_Wurttemberg a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Jean_dOrleans a :Man,
-          :Person ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMother data:Marie-Therese_of_Wurttemberg ;
-      :hasRelation data:Philomena_de_Tornos_y_Steinhart ;
-      :hasSex data:Male .
-
-  data:Princess_Chantal_of_Orleans a :Person,
-          :Woman ;
-      :hasSex data:Female ;
-      :isSisterOf data:Henri_Count_of_Paris .
-
-  data:Henri_VI_Count_of_Paris a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Marie-Therese_of_Wurttemberg a :Person,
-          :Woman ;
-      :hasBirthYear 1934 ;
-      :hasSex data:Female .
-
-  data:Philomena_de_Tornos_y_Steinhart a :Person,
-          :Woman ;
-      :hasBirthYear 1977 ;
-      :hasSex data:Female .
-
-  data:Henri_Count_of_Paris a :Man,
-          :Person ;
-      :hasBirthYear 1933 ;
-      :hasDeathYear 2019 ;
-      :hasFather data:Henri_VI_Count_of_Paris ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (8f30ef57-d740-46b6-8cfe-4ab4218376a4)
- Call ID: 8f30ef57-d740-46b6-8cfe-4ab4218376a4
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (65313c45-6f4c-443f-8f7a-c852a79929d2)
- Call ID: 65313c45-6f4c-443f-8f7a-c852a79929d2
-  Args:
-    type: :Sex
-    source: Female
-  Finish (c2f619d0-b883-4152-ab21-7d01d7fd7f34)
- Call ID: c2f619d0-b883-4152-ab21-7d01d7fd7f34
+    target: Princess_Alix_of_Luxembourg
+    relation: :hasMother
+    source: Princess_Christine_of_Ligne
+  Finish (a43a0ed6-8427-4a60-a5db-79884920054c)
+ Call ID: a43a0ed6-8427-4a60-a5db-79884920054c
   Args:

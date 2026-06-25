@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Otto_von_Habsburg a :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "304:321"^^xsd:string,
+        "647:664"^^xsd:string ;
+    data:posIndicesPart "1043:1047"^^xsd:string,
+        "1257:1261"^^xsd:string,
+        "1404:1412"^^xsd:string,
+        "1675:1679"^^xsd:string,
+        "1982:1986"^^xsd:string,
+        "843:847"^^xsd:string,
+        "883:887"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasRelation data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg .
+
+data:Regina-_Crown_Princess_of_Austria a :Person,
+        :Woman ;
+    rdfs:label "Regina, Crown Princess of Austria"^^xsd:string ;
+    data:posIndicesFull "0:19"^^xsd:string ;
+    data:posIndicesPart "1195:1201"^^xsd:string,
+        "1246:1252"^^xsd:string,
+        "1277:1284"^^xsd:string,
+        "1423:1429"^^xsd:string,
+        "1733:1740"^^xsd:string,
+        "1800:1806"^^xsd:string,
+        "1858:1864"^^xsd:string,
+        "1971:1977"^^xsd:string,
+        "382:388"^^xsd:string,
+        "463:469"^^xsd:string,
+        "524:530"^^xsd:string,
+        "722:727"^^xsd:string,
+        "752:759"^^xsd:string,
+        "832:838"^^xsd:string,
+        "917:924"^^xsd:string,
+        "945:951"^^xsd:string ;
+    data:wdtLink wdt:Q77335 ;
+    :alsoKnownAs "Crown Princess Regina of Austria"^^xsd:string,
+        "Regina von Habsburg"^^xsd:string ;
+    :hasRelation data:Regina-_Crown_Princess_of_Austria ;
+    :hasSex data:female ;
+    :hasSister data:Regina-_Crown_Princess_of_Austria ;
+    :isBloodrelationOf data:Regina-_Crown_Princess_of_Austria ;
+    :isSiblingOf data:Regina-_Crown_Princess_of_Austria ;
+    :isSisterOf data:Regina-_Crown_Princess_of_Austria .
+

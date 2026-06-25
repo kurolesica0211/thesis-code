@@ -2,51 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Caroline-Mathilde a :Woman ;
-    :hasFather data:Harald ;
-    :hasMother data:Helena .
+data:Archduchess_Margaret a :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Lorenz_of_Belgium .
 
-data:Gustav a :Man .
+data:King_Albert_II a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Astrid_of_Belgium .
 
-data:Margrethe_II a :Woman .
+data:Queen_Paola a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Astrid_of_Belgium .
 
-data:Alexandrine a :Woman ;
-    :isMotherOf data:Frederik_IX,
-        data:Knud .
+data:Robert_Archduke_of_Austria_Este a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Lorenz_of_Belgium .
 
-data:Christian_X a :Man ;
-    :hasFather data:Crown_Prince_Frederik,
-        data:Frederik_VIII .
+data:Emperor_Charles_I_of_Austria a :Man,
+        :Person .
 
-data:Christian_son_of_Knud a :Man .
+data:Prince_Lorenz_of_Belgium a :Man,
+        :Person ;
+    :hasAncestor data:Emperor_Charles_I_of_Austria ;
+    :hasBirthYear 1955 ;
+    :hasMarriageYear 1984 ;
+    :hasRelation data:Princess_Astrid_of_Belgium .
 
-data:Crown_Prince_Frederik a :Man ;
-    :hasFather data:Christian_IX .
-
-data:Elisabeth a :Woman .
-
-data:Harald a :Man ;
-    :hasFather data:Frederik_VIII .
-
-data:Helena a :Woman .
-
-data:Ingolf a :Man .
-
-data:Knud a :Man ;
-    :hasBirthYear 1900 ;
-    :hasBrother data:Frederik_IX ;
-    :hasDaughter data:Elisabeth ;
-    :hasDeathYear 1976 ;
-    :hasFather data:Christian_X ;
-    :hasMarriageYear 1933 ;
-    :hasMother data:Alexandrine ;
-    :hasSon data:Christian_son_of_Knud,
-        data:Ingolf .
-
-data:Christian_IX a :Man .
-
-data:Frederik_IX a :Man .
-
-data:Frederik_VIII a :Man ;
-    :hasFather data:Christian_IX .
+data:Princess_Astrid_of_Belgium a :Person,
+        :Woman .
 

@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Irene of Hesse and by Rhine"^^xsd:string ;
+    data:posIndicesFull "194:230"^^xsd:string ;
+    data:posIndicesPart "1207:1215"^^xsd:string,
+        "1387:1395"^^xsd:string,
+        "986:994"^^xsd:string,
+        "995:1000"^^xsd:string ;
+    data:wdtLink wdt:Q233990 ;
+    :alsoKnownAs "Princess Irene Luise Marie Anne of Hesse and by Rhine"^^xsd:string ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isAncestorOf data:Prince_Henry_of_Prussia_1 ;
+    :isAuntOf data:Prince_Henry_of_Prussia_1 ;
+    :isBloodrelationOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 ;
+    :isSiblingOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Irene_of_Hesse_and_by_Rhine .
+
+data:Frederick_III-_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick III, German Emperor"^^xsd:string ;
+    data:posIndicesFull "253:282"^^xsd:string ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany"^^xsd:string,
+        "Friedrich III"^^xsd:string,
+        "Friedrich III of Germany"^^xsd:string,
+        "Friedrich Wilhelm Nikolaus Karl"^^xsd:string,
+        "King Frederick III of Prussia"^^xsd:string,
+        "Kronprinz Friedrich Wilhelm"^^xsd:string ;
+    :hasBrother data:Frederick_III-_German_Emperor ;
+    :hasChild data:Prince_Henry_of_Prussia ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia ;
+    :isAncestorOf data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1 ;
+    :isBloodrelationOf data:Frederick_III-_German_Emperor ;
+    :isBrotherOf data:Frederick_III-_German_Emperor ;
+    :isFatherOf data:Prince_Henry_of_Prussia ;
+    :isParentOf data:Prince_Henry_of_Prussia ;
+    :isSiblingOf data:Frederick_III-_German_Emperor ;
+    :isUncleOf data:Prince_Henry_of_Prussia .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Prussia"^^xsd:string ;
+    data:posIndicesFull "166:189"^^xsd:string ;
+    data:posIndicesPart "1093:1099"^^xsd:string,
+        "1291:1297"^^xsd:string,
+        "1320:1326"^^xsd:string,
+        "1457:1463"^^xsd:string,
+        "1516:1522"^^xsd:string,
+        "349:355"^^xsd:string,
+        "497:503"^^xsd:string,
+        "533:539"^^xsd:string,
+        "571:577"^^xsd:string,
+        "581:588"^^xsd:string,
+        "661:667"^^xsd:string,
+        "707:713"^^xsd:string,
+        "769:775"^^xsd:string,
+        "907:912"^^xsd:string ;
+    data:wdtLink wdt:Q57569 ;
+    :alsoKnownAs "Albert Wilhelm Heinrich"^^xsd:string,
+        "Heinrich Prinz von Preußen"^^xsd:string,
+        "Prince Albert William Henry of Prussia"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor ;
+    :hasBrother data:Prince_Henry_of_Prussia ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasParent data:Frederick_III-_German_Emperor ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isAncestorOf data:Prince_Henry_of_Prussia_1 ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia ;
+    :isBrotherOf data:Prince_Henry_of_Prussia ;
+    :isChildOf data:Frederick_III-_German_Emperor ;
+    :isFatherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 ;
+    :isSiblingOf data:Prince_Henry_of_Prussia ;
+    :isSonOf data:Frederick_III-_German_Emperor ;
+    :isUncleOf data:Prince_Henry_of_Prussia_1 .
+
+data:Prince_Henry_of_Prussia_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:46"^^xsd:string,
+        "166:189"^^xsd:string ;
+    data:posIndicesPart "1093:1099"^^xsd:string,
+        "1291:1297"^^xsd:string,
+        "1320:1326"^^xsd:string,
+        "1457:1463"^^xsd:string,
+        "1516:1522"^^xsd:string,
+        "349:355"^^xsd:string,
+        "497:503"^^xsd:string,
+        "533:539"^^xsd:string,
+        "571:577"^^xsd:string,
+        "581:588"^^xsd:string,
+        "661:667"^^xsd:string,
+        "707:713"^^xsd:string,
+        "769:775"^^xsd:string,
+        "907:912"^^xsd:string ;
+    data:wdtLink wdt:Q7902792 ;
+    :alsoKnownAs "Heinrich Viktor Ludwig Friedrich Prinz von Preußen"^^xsd:string,
+        "Prince Heinrich of Prussia"^^xsd:string,
+        "Prince Henry Victor Louis Frederick of Prussia"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Henry_of_Prussia_1 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia_1 ;
+    :isBrotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Henry_of_Prussia_1 ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+

@@ -118,6 +118,8 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +135,9 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +152,23 @@ Christoph died on 27 September 2023, at the age of 74, after a long-term illness
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,84 +460,225 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b2693262-b388-40a1-ae1c-ec03b6fcb9d6)
- Call ID: b2693262-b388-40a1-ae1c-ec03b6fcb9d6
+  AssignClass (e0d913e2-657b-4dd0-b0e4-d73f46ba649d)
+ Call ID: e0d913e2-657b-4dd0-b0e4-d73f46ba649d
   Args:
+    source: Christoph_of_Schleswig-Holstein
     type: :Man
-    source: :Christoph_of_Schleswig-Holstein
-  AssignClass (17814080-08c5-4973-822f-39698af67fda)
- Call ID: 17814080-08c5-4973-822f-39698af67fda
+  AssignClass (8a20a404-12d2-4050-8042-ec745fda20da)
+ Call ID: 8a20a404-12d2-4050-8042-ec745fda20da
   Args:
-    type: :Man
-    source: :Peter_of_Schleswig-Holstein
-  AssignClass (c35ccc13-ba01-4d4b-854e-78741b002bbe)
- Call ID: c35ccc13-ba01-4d4b-854e-78741b002bbe
+    source: Christoph_of_Schleswig-Holstein
+    type: :Person
+  AddLiteral (7cd7eb01-7b26-47bd-880e-c7ef76237c3e)
+ Call ID: 7cd7eb01-7b26-47bd-880e-c7ef76237c3e
   Args:
-    source: :Marie_Alix_of_Schaumburg-Lippe
-    type: :Woman
-  AssignClass (4bb59a43-9216-4868-bed0-34d6f7fe6f3a)
- Call ID: 4bb59a43-9216-4868-bed0-34d6f7fe6f3a
-  Args:
-    source: :Elisabeth_of_Lippe-Weissenfeld
-    type: :Woman
-  AssignClass (adb45b98-5adf-4b6e-b7e2-9ae5d44273d2)
- Call ID: adb45b98-5adf-4b6e-b7e2-9ae5d44273d2
-  Args:
-    source: :Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
-    type: :Man
-  AssignClass (68acf801-5374-4f25-88b8-ad5688d4e6d7)
- Call ID: 68acf801-5374-4f25-88b8-ad5688d4e6d7
-  Args:
-    source: :Irmgard_Julinka_Wagner_von_Wehrborn
-    type: :Woman
-  AddLiteral (fdca0f03-1d42-4166-b68f-26f33a8228fa)
- Call ID: fdca0f03-1d42-4166-b68f-26f33a8228fa
-  Args:
-    source: :Christoph_of_Schleswig-Holstein
-    literal_type: xsd:integer
-    literal_value: 1949
     relation: :hasBirthYear
-  AddLiteral (de81ea44-a62c-44b2-846a-dea028b6c0a7)
- Call ID: de81ea44-a62c-44b2-846a-dea028b6c0a7
-  Args:
-    source: :Christoph_of_Schleswig-Holstein
-    relation: :hasDeathYear
-    literal_value: 2023
+    literal_value: 1949
+    source: Christoph_of_Schleswig-Holstein
     literal_type: xsd:integer
-  AddTriple (b2afc9dd-144c-43f5-b877-77ef272e0775)
- Call ID: b2afc9dd-144c-43f5-b877-77ef272e0775
+  AddLiteral (239c955b-dbba-4be9-bd49-d190352eb1e9)
+ Call ID: 239c955b-dbba-4be9-bd49-d190352eb1e9
   Args:
-    source: :Christoph_of_Schleswig-Holstein
+    literal_type: xsd:integer
+    source: Christoph_of_Schleswig-Holstein
+    literal_value: 2023
+    relation: :hasDeathYear
+  AssignClass (f3ac9391-9319-4baf-b5a9-680ac9481119)
+ Call ID: f3ac9391-9319-4baf-b5a9-680ac9481119
+  Args:
+    source: Peter_Duke_of_Schleswig-Holstein
+    type: :Man
+  AssignClass (4a320d9e-dead-4d7a-8cd4-a3529b3c4a1f)
+ Call ID: 4a320d9e-dead-4d7a-8cd4-a3529b3c4a1f
+  Args:
+    type: :Person
+    source: Peter_Duke_of_Schleswig-Holstein
+  AddLiteral (da4326ac-8197-4aea-a9ae-a67e3e0c8c10)
+ Call ID: da4326ac-8197-4aea-a9ae-a67e3e0c8c10
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Peter_Duke_of_Schleswig-Holstein
+    literal_value: 1922
+  AddLiteral (65fe9c25-485e-440c-8f3c-479b89858352)
+ Call ID: 65fe9c25-485e-440c-8f3c-479b89858352
+  Args:
+    relation: :hasDeathYear
+    source: Peter_Duke_of_Schleswig-Holstein
+    literal_type: xsd:integer
+    literal_value: 1980
+  AddTriple (34d74a07-f170-4e31-b0d0-e2c4911c1699)
+ Call ID: 34d74a07-f170-4e31-b0d0-e2c4911c1699
+  Args:
+    target: Peter_Duke_of_Schleswig-Holstein
+    source: Christoph_of_Schleswig-Holstein
     relation: :hasFather
-    target: :Peter_of_Schleswig-Holstein
-  AddTriple (efdb7222-cce2-414a-8fe1-a690dbed9671)
- Call ID: efdb7222-cce2-414a-8fe1-a690dbed9671
+  AssignClass (aae1c03c-f8a8-42c9-86a0-77b652e77db3)
+ Call ID: aae1c03c-f8a8-42c9-86a0-77b652e77db3
+  Args:
+    source: Marie_Alix_of_Schaumburg-Lippe
+    type: :Woman
+  AssignClass (9e0b532e-65ca-4f08-b261-acc237d9043f)
+ Call ID: 9e0b532e-65ca-4f08-b261-acc237d9043f
+  Args:
+    type: :Person
+    source: Marie_Alix_of_Schaumburg-Lippe
+  AddLiteral (99182585-7ba6-4e96-bcad-e5de1de8f802)
+ Call ID: 99182585-7ba6-4e96-bcad-e5de1de8f802
+  Args:
+    literal_value: 1923
+    source: Marie_Alix_of_Schaumburg-Lippe
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (b184e82b-0767-4d59-885d-5ab8dc1768aa)
+ Call ID: b184e82b-0767-4d59-885d-5ab8dc1768aa
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2021
+    literal_type: xsd:integer
+    source: Marie_Alix_of_Schaumburg-Lippe
+  AddTriple (f79f7ae7-7708-4ab4-88d6-585e508b587b)
+ Call ID: f79f7ae7-7708-4ab4-88d6-585e508b587b
   Args:
     relation: :hasMother
-    target: :Marie_Alix_of_Schaumburg-Lippe
-    source: :Christoph_of_Schleswig-Holstein
-  AddTriple (64090efa-8c3f-4103-83c5-ff84f771dd2e)
- Call ID: 64090efa-8c3f-4103-83c5-ff84f771dd2e
+    target: Marie_Alix_of_Schaumburg-Lippe
+    source: Christoph_of_Schleswig-Holstein
+  AssignClass (6530abdc-6dbe-461e-bc86-d2ce5d21fc4b)
+ Call ID: 6530abdc-6dbe-461e-bc86-d2ce5d21fc4b
   Args:
-    source: :Elisabeth_of_Lippe-Weissenfeld
-    target: :Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    source: Elisabeth_of_Lippe-Weissenfeld
+    type: :Woman
+  AssignClass (fd3bd60d-b574-4c76-9b0f-04f33d4edd1e)
+ Call ID: fd3bd60d-b574-4c76-9b0f-04f33d4edd1e
+  Args:
+    type: :Person
+    source: Elisabeth_of_Lippe-Weissenfeld
+  AddLiteral (0a685882-e397-4972-9849-eef33d20792a)
+ Call ID: 0a685882-e397-4972-9849-eef33d20792a
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1957
+    source: Elisabeth_of_Lippe-Weissenfeld
+    literal_type: xsd:integer
+  AddTriple (c73a6a7c-5f7e-4082-8315-7381be0761c2)
+ Call ID: c73a6a7c-5f7e-4082-8315-7381be0761c2
+  Args:
+    relation: :hasRelation
+    target: Elisabeth_of_Lippe-Weissenfeld
+    source: Christoph_of_Schleswig-Holstein
+  AssignClass (d6389b1e-fe9a-43e6-a193-9be433645041)
+ Call ID: d6389b1e-fe9a-43e6-a193-9be433645041
+  Args:
+    type: :Man
+    source: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+  AssignClass (fc16b4fd-c55a-4fa4-9e6c-b747b489310d)
+ Call ID: fc16b4fd-c55a-4fa4-9e6c-b747b489310d
+  Args:
+    type: :Person
+    source: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+  AddLiteral (4cac37ea-3841-4913-852e-ac5349d4f80e)
+ Call ID: 4cac37ea-3841-4913-852e-ac5349d4f80e
+  Args:
+    source: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    literal_type: xsd:integer
+    literal_value: 1922
+    relation: :hasBirthYear
+  AddLiteral (e269de4a-dd37-43d0-bb4c-d163e21fa67d)
+ Call ID: e269de4a-dd37-43d0-bb4c-d163e21fa67d
+  Args:
+    literal_value: 2024
+    source: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (930a4fc6-f5e0-4b0b-ad1a-28757b547f3c)
+ Call ID: 930a4fc6-f5e0-4b0b-ad1a-28757b547f3c
+  Args:
     relation: :hasFather
-  AddTriple (b6dafabe-7fac-4f6f-8a38-e813db37d49e)
- Call ID: b6dafabe-7fac-4f6f-8a38-e813db37d49e
+    target: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
+    source: Elisabeth_of_Lippe-Weissenfeld
+  AssignClass (b05bc44f-fb67-4748-aec9-2f91feb10501)
+ Call ID: b05bc44f-fb67-4748-aec9-2f91feb10501
   Args:
-    source: :Elisabeth_of_Lippe-Weissenfeld
+    type: :Woman
+    source: Irmgard_Julinka_Wagner_von_Wehrborn
+  AssignClass (0860e10c-3d99-4950-a466-9dd89d8e8a0b)
+ Call ID: 0860e10c-3d99-4950-a466-9dd89d8e8a0b
+  Args:
+    source: Irmgard_Julinka_Wagner_von_Wehrborn
+    type: :Person
+  AddLiteral (fc7d36a7-a973-4d28-ae75-6078cf370e81)
+ Call ID: fc7d36a7-a973-4d28-ae75-6078cf370e81
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1928
+    literal_type: xsd:integer
+    source: Irmgard_Julinka_Wagner_von_Wehrborn
+  AddTriple (6456e1aa-8b65-4062-9e5b-0ebc7bd7b179)
+ Call ID: 6456e1aa-8b65-4062-9e5b-0ebc7bd7b179
+  Args:
+    target: Irmgard_Julinka_Wagner_von_Wehrborn
+    source: Elisabeth_of_Lippe-Weissenfeld
     relation: :hasMother
-    target: :Irmgard_Julinka_Wagner_von_Wehrborn
-  AddLiteral (6b679641-f05e-4738-a45d-51fba6eced49)
- Call ID: 6b679641-f05e-4738-a45d-51fba6eced49
+  Finish (2b7bc994-1803-4e90-9eab-78dd33eb1f06)
+ Call ID: 2b7bc994-1803-4e90-9eab-78dd33eb1f06
   Args:
-    source: :Christoph_of_Schleswig-Holstein
-    literal_value: Christoph Prinz zu Schleswig-Holstein
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-  Finish (41393786-6eef-4736-aae9-2b3bbcf4b944)
- Call ID: 41393786-6eef-4736-aae9-2b3bbcf4b944
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -502,24 +735,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christoph_of_Schleswig-Holstein a :Man ;
-      :alsoKnownAs "Christoph Prinz zu Schleswig-Holstein"^^xsd:string ;
+  data:Christoph_of_Schleswig-Holstein a :Man,
+          :Person ;
       :hasBirthYear 1949 ;
       :hasDeathYear 2023 ;
-      :hasFather data:Peter_of_Schleswig-Holstein ;
-      :hasMother data:Marie_Alix_of_Schaumburg-Lippe .
+      :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+      :hasMother data:Marie_Alix_of_Schaumburg-Lippe ;
+      :hasRelation data:Elisabeth_of_Lippe-Weissenfeld .
 
-  data:Elisabeth_of_Lippe-Weissenfeld a :Woman ;
+  data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Man,
+          :Person ;
+      :hasBirthYear 1922 ;
+      :hasDeathYear 2024 .
+
+  data:Elisabeth_of_Lippe-Weissenfeld a :Person,
+          :Woman ;
+      :hasBirthYear 1957 ;
       :hasFather data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
       :hasMother data:Irmgard_Julinka_Wagner_von_Wehrborn .
 
-  data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Man .
+  data:Irmgard_Julinka_Wagner_von_Wehrborn a :Person,
+          :Woman ;
+      :hasBirthYear 1928 .
 
-  data:Irmgard_Julinka_Wagner_von_Wehrborn a :Woman .
+  data:Marie_Alix_of_Schaumburg-Lippe a :Person,
+          :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2021 .
 
-  data:Marie_Alix_of_Schaumburg-Lippe a :Woman .
-
-  data:Peter_of_Schleswig-Holstein a :Man .
+  data:Peter_Duke_of_Schleswig-Holstein a :Man,
+          :Person ;
+      :hasBirthYear 1922 ;
+      :hasDeathYear 1980 .
 
 
 
@@ -531,8 +778,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (2ac7d23f-6e67-4ce1-b506-cfed0025db78)
- Call ID: 2ac7d23f-6e67-4ce1-b506-cfed0025db78
+  ValidateShacl (f482ff9f-9671-4a17-8d71-b03eda429a3a)
+ Call ID: f482ff9f-9671-4a17-8d71-b03eda429a3a
   Args:
 
 ================================= Tool Message =================================
@@ -544,97 +791,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_of_Schleswig-Holstein is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Peter_Duke_of_Schleswig-Holstein' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Peter_of_Schleswig-Holstein, class: :Ancestor)
+      AssignClass('Peter_Duke_of_Schleswig-Holstein', ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie_Alix_of_Schaumburg-Lippe is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Marie_Alix_of_Schaumburg-Lippe' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Marie_Alix_of_Schaumburg-Lippe, class: :Ancestor)
+      AssignClass('Marie_Alix_of_Schaumburg-Lippe', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld, class: :Ancestor)
+      AssignClass('Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_of_Schleswig-Holstein is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Peter_Duke_of_Schleswig-Holstein' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Peter_of_Schleswig-Holstein, class: :Ancestor)
+      AssignClass('Peter_Duke_of_Schleswig-Holstein', ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Irmgard_Julinka_Wagner_von_Wehrborn is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Irmgard_Julinka_Wagner_von_Wehrborn' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Irmgard_Julinka_Wagner_von_Wehrborn, class: :Ancestor)
+      AssignClass('Irmgard_Julinka_Wagner_von_Wehrborn', ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie_Alix_of_Schaumburg-Lippe is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Marie_Alix_of_Schaumburg-Lippe' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Marie_Alix_of_Schaumburg-Lippe, class: :Ancestor)
+      AssignClass('Marie_Alix_of_Schaumburg-Lippe', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld, class: :Ancestor)
+      AssignClass('Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_of_Schleswig-Holstein is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Peter_Duke_of_Schleswig-Holstein' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Peter_of_Schleswig-Holstein, class: :Ancestor)
+      AssignClass('Peter_Duke_of_Schleswig-Holstein', ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Irmgard_Julinka_Wagner_von_Wehrborn is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Irmgard_Julinka_Wagner_von_Wehrborn' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Irmgard_Julinka_Wagner_von_Wehrborn, class: :Ancestor)
+      AssignClass('Irmgard_Julinka_Wagner_von_Wehrborn', ':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie_Alix_of_Schaumburg-Lippe is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Marie_Alix_of_Schaumburg-Lippe' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Christoph_of_Schleswig-Holstein'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Marie_Alix_of_Schaumburg-Lippe, class: :Ancestor)
+      AssignClass('Marie_Alix_of_Schaumburg-Lippe', ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld is not assigned the class :Ancestor, which is required for the hasFather relationship.
+      The entity 'Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld' is assigned to the 'Man' class but lacks the required 'Ancestor' class to satisfy the 'hasFather' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld, class: :Ancestor)
+      AssignClass('Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld', ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Irmgard_Julinka_Wagner_von_Wehrborn is not assigned the class :Ancestor, which is required for the hasMother relationship.
+      The entity 'Irmgard_Julinka_Wagner_von_Wehrborn' is assigned to the 'Woman' class but lacks the required 'Ancestor' class to satisfy the 'hasMother' property constraint for 'Elisabeth_of_Lippe-Weissenfeld'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Irmgard_Julinka_Wagner_von_Wehrborn, class: :Ancestor)
+      AssignClass('Irmgard_Julinka_Wagner_von_Wehrborn', ':Ancestor')
 
 
 
@@ -643,29 +890,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (69df0575-6ec5-42bc-b89b-a29bdb4bd969)
- Call ID: 69df0575-6ec5-42bc-b89b-a29bdb4bd969
+  AssignClass (cd7a4586-ef90-4751-9b61-29700c8a1129)
+ Call ID: cd7a4586-ef90-4751-9b61-29700c8a1129
   Args:
     type: :Ancestor
-    source: :Peter_of_Schleswig-Holstein
-  AssignClass (d805ba7b-26cf-41d5-a8e1-b1bac9dc01ff)
- Call ID: d805ba7b-26cf-41d5-a8e1-b1bac9dc01ff
+    source: Peter_Duke_of_Schleswig-Holstein
+  AssignClass (beb5e2ca-acfa-45d8-8f40-a7258dae1c66)
+ Call ID: beb5e2ca-acfa-45d8-8f40-a7258dae1c66
   Args:
+    source: Marie_Alix_of_Schaumburg-Lippe
     type: :Ancestor
-    source: :Marie_Alix_of_Schaumburg-Lippe
-  AssignClass (b6d3a337-ec29-40ac-8aa2-b0c3385928b3)
- Call ID: b6d3a337-ec29-40ac-8aa2-b0c3385928b3
+  AssignClass (7fc0f55f-8375-44dd-b167-a23bb0d0e9d1)
+ Call ID: 7fc0f55f-8375-44dd-b167-a23bb0d0e9d1
   Args:
+    source: Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
     type: :Ancestor
-    source: :Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld
-  AssignClass (67009e71-e9ad-4769-ba73-d5b1d0602ec5)
- Call ID: 67009e71-e9ad-4769-ba73-d5b1d0602ec5
+  AssignClass (90bd8d5d-10fe-4e93-bd21-2dbe4dbab8b2)
+ Call ID: 90bd8d5d-10fe-4e93-bd21-2dbe4dbab8b2
   Args:
+    source: Irmgard_Julinka_Wagner_von_Wehrborn
     type: :Ancestor
-    source: :Irmgard_Julinka_Wagner_von_Wehrborn
-  Finish (8d78475a-08bc-48bb-b0ae-5661da4d65fe)
- Call ID: 8d78475a-08bc-48bb-b0ae-5661da4d65fe
-  Args:
 
 ================================= Tool Message =================================
 
@@ -686,41 +930,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christoph_of_Schleswig-Holstein a :Man ;
-      :alsoKnownAs "Christoph Prinz zu Schleswig-Holstein"^^xsd:string ;
+  data:Christoph_of_Schleswig-Holstein a :Man,
+          :Person ;
       :hasBirthYear 1949 ;
       :hasDeathYear 2023 ;
-      :hasFather data:Peter_of_Schleswig-Holstein ;
-      :hasMother data:Marie_Alix_of_Schaumburg-Lippe .
+      :hasFather data:Peter_Duke_of_Schleswig-Holstein ;
+      :hasMother data:Marie_Alix_of_Schaumburg-Lippe ;
+      :hasRelation data:Elisabeth_of_Lippe-Weissenfeld .
 
-  data:Elisabeth_of_Lippe-Weissenfeld a :Woman ;
+  data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1922 ;
+      :hasDeathYear 2024 .
+
+  data:Elisabeth_of_Lippe-Weissenfeld a :Person,
+          :Woman ;
+      :hasBirthYear 1957 ;
       :hasFather data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld ;
       :hasMother data:Irmgard_Julinka_Wagner_von_Wehrborn .
 
-  data:Alfred_Karl_Friedrich_Georg_Franz_of_Lippe-Weissenfeld a :Ancestor,
-          :Man .
-
   data:Irmgard_Julinka_Wagner_von_Wehrborn a :Ancestor,
-          :Woman .
+          :Person,
+          :Woman ;
+      :hasBirthYear 1928 .
 
   data:Marie_Alix_of_Schaumburg-Lippe a :Ancestor,
-          :Woman .
+          :Person,
+          :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2021 .
 
-  data:Peter_of_Schleswig-Holstein a :Ancestor,
-          :Man .
+  data:Peter_Duke_of_Schleswig-Holstein a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1922 ;
+      :hasDeathYear 1980 .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (a5d3d2cf-1220-4484-af31-68f3776dc07f)
- Call ID: a5d3d2cf-1220-4484-af31-68f3776dc07f
+  ValidateShacl (c034215b-d58e-4b09-8108-3b4f2ffb3a25)
+ Call ID: c034215b-d58e-4b09-8108-3b4f2ffb3a25
   Args:
 
 ================================= Tool Message =================================
@@ -731,6 +985,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c786f301-8d64-429b-9cc1-21ed4d253bed)
- Call ID: c786f301-8d64-429b-9cc1-21ed4d253bed
+  Finish (2e989821-938e-4372-981b-ae1a8c13c135)
+ Call ID: 2e989821-938e-4372-981b-ae1a8c13c135
   Args:

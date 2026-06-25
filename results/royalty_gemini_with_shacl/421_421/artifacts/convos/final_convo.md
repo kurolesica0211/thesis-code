@@ -85,27 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Wilhelm Victor of Prussia (German: Wilhelm Viktor Ernst Freund Friedrich Georg Adalbert; 15 February 1919 – 7 February 1989) was a German royal, soldier and diplomat.
-Life
+Friedrich Wilhelm of Lippe (German: Friedrich Wilhelm Ernst Viktor Alexander Prinz zur Lippe; born 7 September 1947) is a claimant to the headship of the House of Lippe.
+Early life
 
-Prince Wilhelm Victor was a grandson of Emperor Wilhelm II and the youngest child of Prince Adalbert of Prussia (1884–1948) and Princess Adelheid "Adi" of Saxe-Meiningen (1891–1971).
-His father, Prince Adalbert carried also the title "Graf von Lingen".
-His only surviving sister, Princess Viktoria Marina (1917–1981) married Kirby William Patterson (1907–1984).
+Friedrich Wilhelm was born out of wedlock at Neuwied, West Germany, the first child of Prince Ernst August of Lippe (1917–1990; son of Prince Julius Ernst of Lippe and Duchess Marie of Mecklenburg-Strelitz) and his wife, Christa von Arnim (b. 1923; daughter of Curt David von Arnim and his wife, Stephanie von Stechow).
 Marriage
 
-Prince Wilhelm Victor married at Donaueschingen 20 July 1944 Marie Antoinette, Countess of Hoyos-Stichsenstein (Hohenthurm, 27 June 1920 – Marbella 1 March 2004),  daughter of Friedrich, Count of Hoyos-Stichsenstein (1876–1951) and Countess Wilhelmine von Wuthenau-Hohenthurm (1895–1983), niece of Sophie, Duchess of Hohenberg.
-They had the following issue:
+Friedrich Wilhelm married on 18 September 1991 in Munich to Andrea Messner (b. 1966), daughter of Günther Messner, and his wife, Lieselotte Trzoska.
+House of Lippe
 
-
-Death
-
-Prince Wilhelm Viktor died on 7 February 1989 at age 69.
+On 30 December 1949 his father's first cousin Prince Armin succeeded his father, Leopold IV as head of the House of Lippe.
+On 22 March 1953, he renounced his position in favour of his older half-brother, Prince Leopold.
+Prince Leopold later in 1958 renounced the headship in favour of his older brother, Hereditary Prince Ernst.
+Later in that year the Hereditary Prince called a family council where it was agreed by the princes in attendance that the oldest prince living in Germany would be head of the house.
+Therefore, the position went to Prince Simon Casimir (1900–1980).
+His father died in 1990 and Friedrich Wilhelm continued the claim, despite his illegitimate birth.
+Prince Armin, who has said he did not think his decision in 1953 was irrevocable, also claimed to be head of the house until his death in 2015, with his son Stephan, Prince of Lippe continuing his claim.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +124,9 @@ Prince Wilhelm Viktor died on 7 February 1989 at age 69.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +141,23 @@ Prince Wilhelm Viktor died on 7 February 1989 at age 69.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,147 +449,468 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (469c262b-b930-4f8e-98a9-1bcbdc5a5bab)
- Call ID: 469c262b-b930-4f8e-98a9-1bcbdc5a5bab
+  AssignClass (9fcf65ec-fd29-413d-991d-cbfc4b4d4d33)
+ Call ID: 9fcf65ec-fd29-413d-991d-cbfc4b4d4d33
   Args:
+    source: :Friedrich_Wilhelm_of_Lippe
     type: :Man
-    source: :WilhelmVictorOfPrussia
-  AssignClass (f5b1f644-9d18-40be-a7ea-df82d1a8c10b)
- Call ID: f5b1f644-9d18-40be-a7ea-df82d1a8c10b
+  AssignClass (88d14db6-3158-4375-837c-9c25c551afb1)
+ Call ID: 88d14db6-3158-4375-837c-9c25c551afb1
   Args:
-    source: :WilhelmVictorOfPrussia
+    source: :Friedrich_Wilhelm_of_Lippe
     type: :Person
-  AssignClass (afd6292c-2bb0-42c6-b76e-237b51338153)
- Call ID: afd6292c-2bb0-42c6-b76e-237b51338153
+  AddLiteral (46623651-9958-4472-b135-d9d66b9feced)
+ Call ID: 46623651-9958-4472-b135-d9d66b9feced
   Args:
-    source: :Male
-    type: :Male
-  AddLiteral (6396a68e-48df-4737-9cbc-6f28a7e81c77)
- Call ID: 6396a68e-48df-4737-9cbc-6f28a7e81c77
-  Args:
-    source: :WilhelmVictorOfPrussia
     relation: :hasBirthYear
-    literal_value: 1919
-    literal_type: xsd:int
-  AddLiteral (01942660-ea7b-467e-8016-8c478a33033c)
- Call ID: 01942660-ea7b-467e-8016-8c478a33033c
+    literal_type: xsd:integer
+    source: :Friedrich_Wilhelm_of_Lippe
+    literal_value: 1947
+  AssignClass (4f9e10a1-4ea3-434e-b8b7-c488f6625765)
+ Call ID: 4f9e10a1-4ea3-434e-b8b7-c488f6625765
   Args:
-    source: :WilhelmVictorOfPrussia
+    source: :Prince_Ernst_August_of_Lippe
+    type: :Man
+  AssignClass (2e356223-37d5-4a88-b77d-a1ec334c4d13)
+ Call ID: 2e356223-37d5-4a88-b77d-a1ec334c4d13
+  Args:
+    source: :Prince_Ernst_August_of_Lippe
+    type: :Person
+  AssignClass (ccf9283f-8fe3-48e0-ad50-45c9328443e6)
+ Call ID: ccf9283f-8fe3-48e0-ad50-45c9328443e6
+  Args:
+    source: :Prince_Ernst_August_of_Lippe
+    type: :Ancestor
+  AddLiteral (277ca9f6-551d-4ebd-98ad-dc7a22b87e1d)
+ Call ID: 277ca9f6-551d-4ebd-98ad-dc7a22b87e1d
+  Args:
+    source: :Prince_Ernst_August_of_Lippe
+    literal_value: 1917
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (3cad60ed-fdbf-4630-b2d2-5d9341403766)
+ Call ID: 3cad60ed-fdbf-4630-b2d2-5d9341403766
+  Args:
     relation: :hasDeathYear
-    literal_value: 1989
-    literal_type: xsd:int
-  AddTriple (e06531d4-d33f-40ef-80c7-31d4b02b5e29)
- Call ID: e06531d4-d33f-40ef-80c7-31d4b02b5e29
+    literal_type: xsd:integer
+    literal_value: 1990
+    source: :Prince_Ernst_August_of_Lippe
+  AssignClass (0a5ecf93-2927-4553-9840-d34bc22b0a03)
+ Call ID: 0a5ecf93-2927-4553-9840-d34bc22b0a03
   Args:
-    target: :Male
-    relation: :hasSex
-    source: :WilhelmVictorOfPrussia
-  AssignClass (8a5f5f2a-7caf-45ab-9343-5252b431b785)
- Call ID: 8a5f5f2a-7caf-45ab-9343-5252b431b785
+    source: :Christa_von_Arnim
+    type: :Woman
+  AssignClass (f32db108-9743-4f6b-9ab7-add2e33492e0)
+ Call ID: f32db108-9743-4f6b-9ab7-add2e33492e0
   Args:
-    source: :AdalbertOfPrussia
-    type: :Man
-  AssignClass (95bf070a-31af-4211-a6e1-a0f341a187ae)
- Call ID: 95bf070a-31af-4211-a6e1-a0f341a187ae
-  Args:
+    source: :Christa_von_Arnim
     type: :Person
-    source: :AdalbertOfPrussia
-  AddTriple (fdf57fff-f591-44c0-89f4-bf5c4394fd3a)
- Call ID: fdf57fff-f591-44c0-89f4-bf5c4394fd3a
+  AssignClass (6ecbbe9d-b596-4562-8ded-aadb05eb3e7e)
+ Call ID: 6ecbbe9d-b596-4562-8ded-aadb05eb3e7e
   Args:
-    source: :WilhelmVictorOfPrussia
+    source: :Christa_von_Arnim
+    type: :Ancestor
+  AddLiteral (484c7391-0acf-4f59-83d3-788c0a8a9045)
+ Call ID: 484c7391-0acf-4f59-83d3-788c0a8a9045
+  Args:
+    literal_type: xsd:integer
+    source: :Christa_von_Arnim
+    literal_value: 1923
+    relation: :hasBirthYear
+  AddTriple (913a44ff-0575-42ca-acb9-be26b03258e6)
+ Call ID: 913a44ff-0575-42ca-acb9-be26b03258e6
+  Args:
+    source: :Friedrich_Wilhelm_of_Lippe
+    target: :Prince_Ernst_August_of_Lippe
     relation: :hasFather
-    target: :AdalbertOfPrussia
-  AssignClass (516442cd-6536-4679-bff2-8e2511b52665)
- Call ID: 516442cd-6536-4679-bff2-8e2511b52665
+  AddTriple (007f399a-f05f-4108-8623-2e05514f770c)
+ Call ID: 007f399a-f05f-4108-8623-2e05514f770c
   Args:
-    type: :Woman
-    source: :AdelheidOfSaxeMeiningen
-  AssignClass (15fddbb8-c046-4d7c-8bc0-d55fb4da27c8)
- Call ID: 15fddbb8-c046-4d7c-8bc0-d55fb4da27c8
-  Args:
-    source: :AdelheidOfSaxeMeiningen
-    type: :Person
-  AddTriple (28bbf900-96b7-4fff-9f06-f3e4ef3a7e54)
- Call ID: 28bbf900-96b7-4fff-9f06-f3e4ef3a7e54
-  Args:
-    source: :WilhelmVictorOfPrussia
     relation: :hasMother
-    target: :AdelheidOfSaxeMeiningen
-  AssignClass (24be11ec-5bb1-4a73-9bf5-7ff406c01df8)
- Call ID: 24be11ec-5bb1-4a73-9bf5-7ff406c01df8
+    target: :Christa_von_Arnim
+    source: :Friedrich_Wilhelm_of_Lippe
+  AssignClass (24847857-2877-420c-a1b2-0830944a5d59)
+ Call ID: 24847857-2877-420c-a1b2-0830944a5d59
   Args:
-    type: :Woman
-    source: :ViktoriaMarina
-  AssignClass (6d690ffa-d13e-43c5-b38d-eaaeba7aab66)
- Call ID: 6d690ffa-d13e-43c5-b38d-eaaeba7aab66
+    source: :Prince_Julius_Ernst_of_Lippe
+    type: :Man
+  AssignClass (46ac5f9d-5922-465d-8915-9fe6d6ff8916)
+ Call ID: 46ac5f9d-5922-465d-8915-9fe6d6ff8916
   Args:
+    source: :Prince_Julius_Ernst_of_Lippe
     type: :Person
-    source: :ViktoriaMarina
-  AddTriple (6837ac43-d089-4e81-845d-7e4202edb797)
- Call ID: 6837ac43-d089-4e81-845d-7e4202edb797
+  AssignClass (4982073a-8be8-40d3-82a0-05c32fc4acaa)
+ Call ID: 4982073a-8be8-40d3-82a0-05c32fc4acaa
   Args:
-    source: :WilhelmVictorOfPrussia
-    relation: :hasSister
-    target: :ViktoriaMarina
-  AssignClass (6f95115d-8b04-4b40-8088-c3757a6cc3d6)
- Call ID: 6f95115d-8b04-4b40-8088-c3757a6cc3d6
+    source: :Prince_Julius_Ernst_of_Lippe
+    type: :Ancestor
+  AddTriple (f3325dc6-6e78-41cb-9eb8-402b1e00c9e1)
+ Call ID: f3325dc6-6e78-41cb-9eb8-402b1e00c9e1
   Args:
-    source: :MarieAntoinetteOfHoyosStichsenstein
+    relation: :hasFather
+    target: :Prince_Julius_Ernst_of_Lippe
+    source: :Prince_Ernst_August_of_Lippe
+  AssignClass (6c125630-8b9e-4c32-8dac-e07ab680242f)
+ Call ID: 6c125630-8b9e-4c32-8dac-e07ab680242f
+  Args:
+    source: :Duchess_Marie_of_Mecklenburg-Strelitz
     type: :Woman
-  AssignClass (8700440a-0988-49c1-8e21-3db1d77dcb15)
- Call ID: 8700440a-0988-49c1-8e21-3db1d77dcb15
+  AssignClass (c2423575-22b1-410e-a2ec-fe2a8ff8a818)
+ Call ID: c2423575-22b1-410e-a2ec-fe2a8ff8a818
   Args:
-    source: :MarieAntoinetteOfHoyosStichsenstein
+    source: :Duchess_Marie_of_Mecklenburg-Strelitz
     type: :Person
-  AddLiteral (c6b712a0-7470-4d3a-a959-f2cc9ffeb4c8)
- Call ID: c6b712a0-7470-4d3a-a959-f2cc9ffeb4c8
+  AssignClass (3803edfc-cb6b-43c3-a504-ed54a60ce75f)
+ Call ID: 3803edfc-cb6b-43c3-a504-ed54a60ce75f
   Args:
-    source: :WilhelmVictorOfPrussia
-    relation: :hasMarriageYear
-    literal_value: 1944
-    literal_type: xsd:int
-  AddTriple (dbec020d-c040-40f7-b0aa-9f79c03f22ff)
- Call ID: dbec020d-c040-40f7-b0aa-9f79c03f22ff
+    source: :Duchess_Marie_of_Mecklenburg-Strelitz
+    type: :Ancestor
+  AddTriple (4f90212c-6125-4115-9dfa-577a90d84474)
+ Call ID: 4f90212c-6125-4115-9dfa-577a90d84474
   Args:
-    target: :MarieAntoinetteOfHoyosStichsenstein
+    relation: :hasMother
+    target: :Duchess_Marie_of_Mecklenburg-Strelitz
+    source: :Prince_Ernst_August_of_Lippe
+  AssignClass (887417cb-853d-4902-b475-fbe27afd9301)
+ Call ID: 887417cb-853d-4902-b475-fbe27afd9301
+  Args:
+    source: :Curt_David_von_Arnim
+    type: :Man
+  AssignClass (37297328-7e1d-47f0-a5a4-ecc07cf166e5)
+ Call ID: 37297328-7e1d-47f0-a5a4-ecc07cf166e5
+  Args:
+    source: :Curt_David_von_Arnim
+    type: :Person
+  AssignClass (2ad0cc3c-828b-47ce-b960-353d5214880c)
+ Call ID: 2ad0cc3c-828b-47ce-b960-353d5214880c
+  Args:
+    source: :Curt_David_von_Arnim
+    type: :Ancestor
+  AddTriple (80c6c865-21c1-4440-a0dd-c8c7d7461cec)
+ Call ID: 80c6c865-21c1-4440-a0dd-c8c7d7461cec
+  Args:
+    relation: :hasFather
+    target: :Curt_David_von_Arnim
+    source: :Christa_von_Arnim
+  AssignClass (48492457-1171-4505-b23d-6958d6750aaf)
+ Call ID: 48492457-1171-4505-b23d-6958d6750aaf
+  Args:
+    source: :Stephanie_von_Stechow
+    type: :Woman
+  AssignClass (51c7354f-5a3d-4a20-99de-7c7b6b5cac80)
+ Call ID: 51c7354f-5a3d-4a20-99de-7c7b6b5cac80
+  Args:
+    source: :Stephanie_von_Stechow
+    type: :Person
+  AssignClass (2a08ba22-a931-4ecb-b1ef-e2d1b1a5eed7)
+ Call ID: 2a08ba22-a931-4ecb-b1ef-e2d1b1a5eed7
+  Args:
+    source: :Stephanie_von_Stechow
+    type: :Ancestor
+  AddTriple (fa5629b6-9ce5-4c19-8480-9b8f8775c6fe)
+ Call ID: fa5629b6-9ce5-4c19-8480-9b8f8775c6fe
+  Args:
+    target: :Stephanie_von_Stechow
+    relation: :hasMother
+    source: :Christa_von_Arnim
+  AssignClass (3bb9ebf8-7b3a-4c27-80f4-71288431c152)
+ Call ID: 3bb9ebf8-7b3a-4c27-80f4-71288431c152
+  Args:
+    source: :Andrea_Messner
+    type: :Woman
+  AssignClass (66fd7fb7-f0a7-40a4-90cd-5c7d0c11f89f)
+ Call ID: 66fd7fb7-f0a7-40a4-90cd-5c7d0c11f89f
+  Args:
+    source: :Andrea_Messner
+    type: :Person
+  AddLiteral (0a9e921b-c2c4-4839-ae5b-0842ce9b1073)
+ Call ID: 0a9e921b-c2c4-4839-ae5b-0842ce9b1073
+  Args:
+    literal_value: 1966
+    source: :Andrea_Messner
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (cc2b8735-5ea2-41b7-8798-6c4f2c76726c)
+ Call ID: cc2b8735-5ea2-41b7-8798-6c4f2c76726c
+  Args:
     relation: :hasRelation
-    source: :WilhelmVictorOfPrussia
-  AssignClass (cd76848e-7e6c-4aa2-9341-0ae4e40b66b0)
- Call ID: cd76848e-7e6c-4aa2-9341-0ae4e40b66b0
+    target: :Andrea_Messner
+    source: :Friedrich_Wilhelm_of_Lippe
+  AddLiteral (e893f8ff-e9b8-4e88-ab8a-38e7a4c35575)
+ Call ID: e893f8ff-e9b8-4e88-ab8a-38e7a4c35575
   Args:
-    source: :FriedrichCountOfHoyosStichsenstein
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: :Friedrich_Wilhelm_of_Lippe
+    literal_value: 1991
+  AssignClass (66b1d872-25e6-4423-8118-f5df3bdae56c)
+ Call ID: 66b1d872-25e6-4423-8118-f5df3bdae56c
+  Args:
+    source: :Günther_Messner
     type: :Man
-  AssignClass (84dd0329-1ff3-44f8-9201-7cd5feaa9b1a)
- Call ID: 84dd0329-1ff3-44f8-9201-7cd5feaa9b1a
+  AssignClass (5524c29b-732b-4f1e-89d2-fcf9381a4d23)
+ Call ID: 5524c29b-732b-4f1e-89d2-fcf9381a4d23
   Args:
+    source: :Günther_Messner
     type: :Person
-    source: :FriedrichCountOfHoyosStichsenstein
-  AssignClass (25b20d1e-2f6b-4e1b-8a1c-7ecbccf859cb)
- Call ID: 25b20d1e-2f6b-4e1b-8a1c-7ecbccf859cb
+  AssignClass (4fde86cd-40ed-4758-9df4-4d726059d181)
+ Call ID: 4fde86cd-40ed-4758-9df4-4d726059d181
   Args:
-    type: :Woman
-    source: :WilhelmineVonWuthenauHohenthurm
-  AssignClass (8f775351-8af4-499f-802f-224af0d74c82)
- Call ID: 8f775351-8af4-499f-802f-224af0d74c82
+    source: :Günther_Messner
+    type: :Ancestor
+  AddTriple (6b3f3abe-1816-433a-aff2-70457262bddf)
+ Call ID: 6b3f3abe-1816-433a-aff2-70457262bddf
   Args:
-    source: :WilhelmineVonWuthenauHohenthurm
-    type: :Person
-  AddTriple (03f21c09-7ffa-4e1d-bd0b-539ea025eab6)
- Call ID: 03f21c09-7ffa-4e1d-bd0b-539ea025eab6
-  Args:
-    target: :FriedrichCountOfHoyosStichsenstein
+    target: :Günther_Messner
     relation: :hasFather
-    source: :MarieAntoinetteOfHoyosStichsenstein
-  AddTriple (f387a5e4-fc9a-4912-ad6d-47572e3ab39d)
- Call ID: f387a5e4-fc9a-4912-ad6d-47572e3ab39d
+    source: :Andrea_Messner
+  AssignClass (17029b1a-9e72-447b-9deb-46058955b356)
+ Call ID: 17029b1a-9e72-447b-9deb-46058955b356
   Args:
-    target: :WilhelmineVonWuthenauHohenthurm
-    source: :MarieAntoinetteOfHoyosStichsenstein
+    source: :Lieselotte_Trzoska
+    type: :Woman
+  AssignClass (dcc79ecf-1ead-4781-87d4-6258c57e4031)
+ Call ID: dcc79ecf-1ead-4781-87d4-6258c57e4031
+  Args:
+    source: :Lieselotte_Trzoska
+    type: :Person
+  AssignClass (d0748da5-a51c-4ac1-8fd2-37d2954f9e85)
+ Call ID: d0748da5-a51c-4ac1-8fd2-37d2954f9e85
+  Args:
+    source: :Lieselotte_Trzoska
+    type: :Ancestor
+  AddTriple (9dac77e3-bec2-42fe-bab6-77505d38e718)
+ Call ID: 9dac77e3-bec2-42fe-bab6-77505d38e718
+  Args:
     relation: :hasMother
-  Finish (98e5a155-8e7c-4d84-b59f-35292c15b31f)
- Call ID: 98e5a155-8e7c-4d84-b59f-35292c15b31f
+    target: :Lieselotte_Trzoska
+    source: :Andrea_Messner
+  AssignClass (05668e61-eed1-402b-85db-a766cc5c0725)
+ Call ID: 05668e61-eed1-402b-85db-a766cc5c0725
   Args:
+    source: :Prince_Armin
+    type: :Man
+  AssignClass (d8be2749-0337-4e13-a519-0d46bd40dbc6)
+ Call ID: d8be2749-0337-4e13-a519-0d46bd40dbc6
+  Args:
+    source: :Prince_Armin
+    type: :Person
+  AssignClass (2304eb4c-51c1-4d4b-bc71-6a68c8fdcaf5)
+ Call ID: 2304eb4c-51c1-4d4b-bc71-6a68c8fdcaf5
+  Args:
+    source: :Prince_Leopold
+    type: :Man
+  AssignClass (63330183-7df0-4f58-912c-d6b45fed0727)
+ Call ID: 63330183-7df0-4f58-912c-d6b45fed0727
+  Args:
+    source: :Prince_Leopold
+    type: :Person
+  AssignClass (19b19779-34f2-4013-913a-e180cd1fe056)
+ Call ID: 19b19779-34f2-4013-913a-e180cd1fe056
+  Args:
+    source: :Hereditary_Prince_Ernst
+    type: :Man
+  AssignClass (5d767195-6659-4dfa-8df8-0b7087631a24)
+ Call ID: 5d767195-6659-4dfa-8df8-0b7087631a24
+  Args:
+    source: :Hereditary_Prince_Ernst
+    type: :Person
+  AssignClass (dea3593d-b11b-4cfd-81d4-c58ab591048e)
+ Call ID: dea3593d-b11b-4cfd-81d4-c58ab591048e
+  Args:
+    source: :Prince_Simon_Casimir
+    type: :Man
+  AssignClass (48925dd9-12a8-4953-a0b6-f19e19364cb6)
+ Call ID: 48925dd9-12a8-4953-a0b6-f19e19364cb6
+  Args:
+    source: :Prince_Simon_Casimir
+    type: :Person
+  AddLiteral (05357a1e-f9a2-46df-94ba-29cd2774fe24)
+ Call ID: 05357a1e-f9a2-46df-94ba-29cd2774fe24
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1900
+    source: :Prince_Simon_Casimir
+  AddLiteral (1582f268-bdf0-4780-a170-4f5de165f04d)
+ Call ID: 1582f268-bdf0-4780-a170-4f5de165f04d
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1980
+    source: :Prince_Simon_Casimir
+    relation: :hasDeathYear
+  AssignClass (98980711-0a3d-4591-802d-dd4ab70dab19)
+ Call ID: 98980711-0a3d-4591-802d-dd4ab70dab19
+  Args:
+    source: :Leopold_IV
+    type: :Man
+  AssignClass (6e591d09-2700-47f5-90f1-9c1f09ab170e)
+ Call ID: 6e591d09-2700-47f5-90f1-9c1f09ab170e
+  Args:
+    source: :Leopold_IV
+    type: :Person
+  AssignClass (eca21194-9fcc-40c2-8bc5-469954c4ce9c)
+ Call ID: eca21194-9fcc-40c2-8bc5-469954c4ce9c
+  Args:
+    source: :Stephan_Prince_of_Lippe
+    type: :Man
+  AssignClass (8c5ec000-d76a-4a18-b9d7-a50bef38e0c7)
+ Call ID: 8c5ec000-d76a-4a18-b9d7-a50bef38e0c7
+  Args:
+    source: :Stephan_Prince_of_Lippe
+    type: :Person
+  AddTriple (f7a8275f-2a6d-45e5-980d-d19ad30b2d08)
+ Call ID: f7a8275f-2a6d-45e5-980d-d19ad30b2d08
+  Args:
+    source: :Stephan_Prince_of_Lippe
+    relation: :hasFather
+    target: :Prince_Armin
+  AddLiteral (f4ef55e1-e975-44ab-96de-60ab5639ac7e)
+ Call ID: f4ef55e1-e975-44ab-96de-60ab5639ac7e
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2015
+    source: :Prince_Armin
+    relation: :hasDeathYear
+  Finish (28c68dff-db0c-47ec-b655-30fca9fff3d9)
+ Call ID: 28c68dff-db0c-47ec-b655-30fca9fff3d9
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -601,37 +1015,79 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:WilhelmVictorOfPrussia a :Man,
+  data:Friedrich_Wilhelm_of_Lippe a :Man,
           :Person ;
-      :hasBirthYear "1919"^^xsd:int ;
-      :hasDeathYear "1989"^^xsd:int ;
-      :hasFather data:AdalbertOfPrussia ;
-      :hasMarriageYear "1944"^^xsd:int ;
-      :hasMother data:AdelheidOfSaxeMeiningen ;
-      :hasRelation data:MarieAntoinetteOfHoyosStichsenstein ;
-      :hasSex data:Male ;
-      :hasSister data:ViktoriaMarina .
+      :hasBirthYear 1947 ;
+      :hasFather data:Prince_Ernst_August_of_Lippe ;
+      :hasMarriageYear 1991 ;
+      :hasMother data:Christa_von_Arnim ;
+      :hasRelation data:Andrea_Messner .
 
-  data:AdalbertOfPrussia a :Man,
+  data:Hereditary_Prince_Ernst a :Man,
           :Person .
 
-  data:AdelheidOfSaxeMeiningen a :Person,
-          :Woman .
-
-  data:FriedrichCountOfHoyosStichsenstein a :Man,
+  data:Leopold_IV a :Man,
           :Person .
 
-  data:Male a :Male .
+  data:Prince_Leopold a :Man,
+          :Person .
 
-  data:MarieAntoinetteOfHoyosStichsenstein a :Person,
+  data:Prince_Simon_Casimir a :Man,
+          :Person ;
+      :hasBirthYear 1900 ;
+      :hasDeathYear 1980 .
+
+  data:Stephan_Prince_of_Lippe a :Man,
+          :Person ;
+      :hasFather data:Prince_Armin .
+
+  data:Andrea_Messner a :Person,
           :Woman ;
-      :hasFather data:FriedrichCountOfHoyosStichsenstein ;
-      :hasMother data:WilhelmineVonWuthenauHohenthurm .
+      :hasBirthYear 1966 ;
+      :hasFather data:G%C3%BCnther_Messner ;
+      :hasMother data:Lieselotte_Trzoska .
 
-  data:ViktoriaMarina a :Person,
+  data:Christa_von_Arnim a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1923 ;
+      :hasFather data:Curt_David_von_Arnim ;
+      :hasMother data:Stephanie_von_Stechow .
+
+  data:Curt_David_von_Arnim a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
+          :Person,
           :Woman .
 
-  data:WilhelmineVonWuthenauHohenthurm a :Person,
+  data:G%C3%BCnther_Messner a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Lieselotte_Trzoska a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Prince_Armin a :Man,
+          :Person ;
+      :hasDeathYear 2015 .
+
+  data:Prince_Ernst_August_of_Lippe a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:Prince_Julius_Ernst_of_Lippe ;
+      :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+  data:Prince_Julius_Ernst_of_Lippe a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Stephanie_von_Stechow a :Ancestor,
+          :Person,
           :Woman .
 
 
@@ -644,110 +1100,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (873d84cb-6fa4-4d52-ad06-68c6a319a3f9)
- Call ID: 873d84cb-6fa4-4d52-ad06-68c6a319a3f9
+  ValidateShacl (841ba834-775b-45c0-867f-6703e274d9a8)
+ Call ID: 841ba834-775b-45c0-867f-6703e274d9a8
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:3
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node AdalbertOfPrussia is assigned as the father of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
+      The node 'Stephan_Prince_of_Lippe' has a 'hasFather' relationship with 'Prince_Armin', but 'Prince_Armin' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(AdalbertOfPrussia, :Ancestor)
+      AssignClass(Prince_Armin, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node AdelheidOfSaxeMeiningen is assigned as the mother of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
+      The node 'Stephan_Prince_of_Lippe' has a 'hasFather' relationship with 'Prince_Armin', and the value node lacks the ':Ancestor' classification required by the shape.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(AdelheidOfSaxeMeiningen, :Ancestor)
+      AssignClass(Prince_Armin, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node AdalbertOfPrussia is assigned as the father of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
+      The node 'Stephan_Prince_of_Lippe' has a 'hasFather' relationship with 'Prince_Armin', which does not currently satisfy the ':Ancestor' class constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(AdalbertOfPrussia, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node FriedrichCountOfHoyosStichsenstein is assigned as the father of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(FriedrichCountOfHoyosStichsenstein, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node AdelheidOfSaxeMeiningen is assigned as the mother of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AdelheidOfSaxeMeiningen, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node WilhelmineVonWuthenauHohenthurm is assigned as the mother of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmineVonWuthenauHohenthurm, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node AdalbertOfPrussia is assigned as the father of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AdalbertOfPrussia, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node FriedrichCountOfHoyosStichsenstein is assigned as the father of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(FriedrichCountOfHoyosStichsenstein, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node AdelheidOfSaxeMeiningen is assigned as the mother of WilhelmVictorOfPrussia but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AdelheidOfSaxeMeiningen, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node WilhelmineVonWuthenauHohenthurm is assigned as the mother of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmineVonWuthenauHohenthurm, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node FriedrichCountOfHoyosStichsenstein is assigned as the father of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(FriedrichCountOfHoyosStichsenstein, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node WilhelmineVonWuthenauHohenthurm is assigned as the mother of MarieAntoinetteOfHoyosStichsenstein but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmineVonWuthenauHohenthurm, :Ancestor)
+      AssignClass(Prince_Armin, :Ancestor)
 
 
 
@@ -756,41 +1140,11 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3c358347-6529-47c4-aee3-efd6b428f76a)
- Call ID: 3c358347-6529-47c4-aee3-efd6b428f76a
+  AssignClass (0e592382-6431-4e4c-97ee-765b2149ab5d)
+ Call ID: 0e592382-6431-4e4c-97ee-765b2149ab5d
   Args:
     type: :Ancestor
-    source: :AdalbertOfPrussia
-  AssignClass (bef40e76-2053-4f1c-91be-17b2f240e7a2)
- Call ID: bef40e76-2053-4f1c-91be-17b2f240e7a2
-  Args:
-    source: :AdelheidOfSaxeMeiningen
-    type: :Ancestor
-  AssignClass (88807ccc-d920-4f6b-851a-619b36973152)
- Call ID: 88807ccc-d920-4f6b-851a-619b36973152
-  Args:
-    type: :Ancestor
-    source: :FriedrichCountOfHoyosStichsenstein
-  AssignClass (4152bd52-fb8f-448e-b7de-13e9d80d7740)
- Call ID: 4152bd52-fb8f-448e-b7de-13e9d80d7740
-  Args:
-    type: :Ancestor
-    source: :WilhelmineVonWuthenauHohenthurm
-  Finish (cb4aa14a-9fc5-4d6e-ad75-99f41993282e)
- Call ID: cb4aa14a-9fc5-4d6e-ad75-99f41993282e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Prince_Armin
 
 ================================= Tool Message =================================
 
@@ -799,55 +1153,90 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:WilhelmVictorOfPrussia a :Man,
+  data:Friedrich_Wilhelm_of_Lippe a :Man,
           :Person ;
-      :hasBirthYear "1919"^^xsd:int ;
-      :hasDeathYear "1989"^^xsd:int ;
-      :hasFather data:AdalbertOfPrussia ;
-      :hasMarriageYear "1944"^^xsd:int ;
-      :hasMother data:AdelheidOfSaxeMeiningen ;
-      :hasRelation data:MarieAntoinetteOfHoyosStichsenstein ;
-      :hasSex data:Male ;
-      :hasSister data:ViktoriaMarina .
+      :hasBirthYear 1947 ;
+      :hasFather data:Prince_Ernst_August_of_Lippe ;
+      :hasMarriageYear 1991 ;
+      :hasMother data:Christa_von_Arnim ;
+      :hasRelation data:Andrea_Messner .
 
-  data:AdalbertOfPrussia a :Ancestor,
-          :Man,
+  data:Hereditary_Prince_Ernst a :Man,
           :Person .
 
-  data:AdelheidOfSaxeMeiningen a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:FriedrichCountOfHoyosStichsenstein a :Ancestor,
-          :Man,
+  data:Leopold_IV a :Man,
           :Person .
 
-  data:Male a :Male .
+  data:Prince_Leopold a :Man,
+          :Person .
 
-  data:MarieAntoinetteOfHoyosStichsenstein a :Person,
+  data:Prince_Simon_Casimir a :Man,
+          :Person ;
+      :hasBirthYear 1900 ;
+      :hasDeathYear 1980 .
+
+  data:Stephan_Prince_of_Lippe a :Man,
+          :Person ;
+      :hasFather data:Prince_Armin .
+
+  data:Andrea_Messner a :Person,
           :Woman ;
-      :hasFather data:FriedrichCountOfHoyosStichsenstein ;
-      :hasMother data:WilhelmineVonWuthenauHohenthurm .
+      :hasBirthYear 1966 ;
+      :hasFather data:G%C3%BCnther_Messner ;
+      :hasMother data:Lieselotte_Trzoska .
 
-  data:ViktoriaMarina a :Person,
+  data:Christa_von_Arnim a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1923 ;
+      :hasFather data:Curt_David_von_Arnim ;
+      :hasMother data:Stephanie_von_Stechow .
+
+  data:Curt_David_von_Arnim a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
+          :Person,
           :Woman .
 
-  data:WilhelmineVonWuthenauHohenthurm a :Ancestor,
+  data:G%C3%BCnther_Messner a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Lieselotte_Trzoska a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Prince_Armin a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 2015 .
+
+  data:Prince_Ernst_August_of_Lippe a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:Prince_Julius_Ernst_of_Lippe ;
+      :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+  data:Prince_Julius_Ernst_of_Lippe a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Stephanie_von_Stechow a :Ancestor,
           :Person,
           :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (7612bc11-65ab-41cc-9879-cdff91e41434)
- Call ID: 7612bc11-65ab-41cc-9879-cdff91e41434
+  ValidateShacl (89bb75fa-1b3e-4d07-bf6c-a9f3456431c8)
+ Call ID: 89bb75fa-1b3e-4d07-bf6c-a9f3456431c8
   Args:
 
 ================================= Tool Message =================================
@@ -858,6 +1247,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3d6d00e9-9640-4d4d-9ee5-d4b520a84111)
- Call ID: 3d6d00e9-9640-4d4d-9ee5-d4b520a84111
+  Finish (8b2956c9-8879-4ecf-af20-7ba548e1393e)
+ Call ID: 8b2956c9-8879-4ecf-af20-7ba548e1393e
   Args:

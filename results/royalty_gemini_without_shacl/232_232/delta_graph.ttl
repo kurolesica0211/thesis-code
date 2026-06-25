@@ -2,34 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Edward_VIII a :Man ;
-    :isBrotherOf data:Prince_George_Duke_of_Kent .
+data:GeorgFriedrich a :Man,
+        :Person ;
+    :hasFather data:PrinceLouisFerdinandJr .
 
-data:King_George_VI a :Man ;
-    :isBrotherOf data:Prince_George_Duke_of_Kent .
+data:LouisFerdinand a :Man,
+        :Person ;
+    :hasAncestor data:WilhelmII ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:WilhelmOfPrussia ;
+    :hasDeathYear 1994 ;
+    :hasFather data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:KiraKirillovna ;
+    :hasSon data:PrinceLouisFerdinandJr .
 
-data:Prince_Michael_of_Kent a :Man ;
-    :hasBirthYear 1942 ;
-    :hasFather data:Prince_George_Duke_of_Kent ;
-    :hasMarriageYear 1978 ;
-    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasRelation data:Baroness_Marie_Christine_von_Reibnitz .
+data:FerdinandOfHohenzollern a :Man,
+        :Person .
 
-data:Baroness_Marie_Christine_von_Reibnitz a :Woman .
+data:FrederickWilliamI a :Man,
+        :Person .
 
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+data:KiraKirillovna a :Person,
+        :Woman ;
+    :hasFather data:KyrilVladimirovich ;
+    :hasMother data:VictoriaMelita .
 
-data:King_George_V a :Man .
+data:KyrilVladimirovich a :Man,
+        :Person .
 
-data:Prince_Nicholas_of_Greece_and_Denmark a :Man .
+data:VictoriaMelita a :Person,
+        :Woman .
 
-data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+data:WilhelmII a :Man,
+        :Person .
 
-data:Queen_Mary a :Woman .
+data:WilhelmOfPrussia a :Man,
+        :Person .
 
-data:Prince_George_Duke_of_Kent a :Man ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
+data:WilliamCrownPrince a :Man,
+        :Person .
+
+data:PrinceLouisFerdinandJr a :Man,
+        :Person ;
+    :hasDeathYear 1977 .
 

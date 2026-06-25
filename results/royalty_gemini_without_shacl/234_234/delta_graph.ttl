@@ -2,41 +2,53 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
-    :hasFather data:Prince_Floris ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+data:JuanCarlosI a :Man,
+        :Person ;
+    :hasFather data:InfanteJuan ;
+    :hasMother data:MariaDeLasMercedes .
 
-data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
-    :hasFather data:Prince_Floris ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+data:Pilar a :Person,
+        :Woman ;
+    :hasFather data:InfanteJuan ;
+    :hasMother data:MariaDeLasMercedes .
 
-data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
-    :hasFather data:Prince_Floris ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+data:Sofia a :Person,
+        :Woman ;
+    :hasFather data:KingPaul ;
+    :hasMother data:QueenFrederica .
 
-data:Eleonoor_Stammeijer a :Woman .
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person .
 
-data:Hans_S%C3%B6hngen a :Man .
+data:AlfonsoXIII a :Man,
+        :Person .
 
-data:Pieter_van_Vollenhoven a :Man .
+data:InfanteJaime a :Man,
+        :Person .
 
-data:Prince_Bernhard a :Man .
+data:KingPaul a :Man,
+        :Person .
 
-data:Prince_Maurits a :Man .
+data:QueenFrederica a :Person,
+        :Woman .
 
-data:Prince_Pieter-Christiaan a :Man .
+data:VictoriaEugenie a :Person,
+        :Woman .
 
-data:Princess_Margriet a :Woman .
+data:InfanteJuan a :Man,
+        :Person ;
+    :alsoKnownAs "Juan Carlos Teresa Silverio Alfonso de Borbón y Battenberg"^^xsd:string ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1993 ;
+    :hasFather data:AlfonsoXIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:VictoriaEugenie ;
+    :hasRelation data:MariaDeLasMercedes ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfanteJaime .
 
-data:Aim%C3%A9e_S%C3%B6hngen a :Woman ;
-    :hasFather data:Hans_S%C3%B6hngen ;
-    :hasMother data:Eleonoor_Stammeijer .
-
-data:Prince_Floris a :Man ;
-    :hasBirthYear 1975 ;
-    :hasFather data:Pieter_van_Vollenhoven ;
-    :hasMother data:Princess_Margriet ;
-    :isBrotherOf data:Prince_Bernhard,
-        data:Prince_Maurits,
-        data:Prince_Pieter-Christiaan .
+data:MariaDeLasMercedes a :Person,
+        :Woman ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 .
 

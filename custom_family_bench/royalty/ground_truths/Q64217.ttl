@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Person ;
     rdfs:label "Grand Duchess Maria Vladimirovna of Russia" ;
     data:posIndicesFull "899:941" ;
     data:posIndicesPart "1182:1187",
@@ -29,23 +26,13 @@ data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
         "Mariya Vladimirovna Romanov, Grand Duchess of Russia" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Franz_Wilhelm_of_Prussia a :Person ;
     rdfs:label "Prince Franz Wilhelm of Prussia" ;
     data:posIndicesFull "0:38",
         "0:57",
         "1603:1636" ;
     data:posIndicesPart "1287:1292",
         "1293:1300",
-        "263:270",
         "286:291",
         "292:299",
         "300:306",
@@ -54,7 +41,6 @@ data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
         "543:549",
         "550:555",
         "556:563",
-        "636:643",
         "656:661",
         "662:669",
         "846:851",
@@ -62,16 +48,16 @@ data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
     data:wdtLink wdt:Q64217 ;
     :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan",
         "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen" ;
-    :hasFather data:Prince_Karl_Franz_of_Prussia ;
     :hasParent data:Prince_Karl_Franz_of_Prussia ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Karl_Franz_of_Prussia ;
-    :isSonOf data:Prince_Karl_Franz_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_Joachim_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Joachim_of_Prussia a :Person ;
     rdfs:label "Prince Joachim of Prussia" ;
     data:posIndicesFull "581:606",
         "588:595" ;
@@ -79,16 +65,10 @@ data:Prince_Joachim_of_Prussia a :Ancestor,
     :alsoKnownAs "Joachim",
         "Joachim Franz Hubert",
         "Prince Joachim Franz Humbert of Prussia" ;
-    :hasChild data:Prince_Karl_Franz_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Karl_Franz_of_Prussia ;
-    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
-    :isParentOf data:Prince_Karl_Franz_of_Prussia .
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male .
 
-data:Prince_Karl_Franz_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Karl_Franz_of_Prussia a :Person ;
     rdfs:label "Prince Karl Franz of Prussia" ;
     data:posIndicesFull "363:391" ;
     data:posIndicesPart "1287:1292",
@@ -101,13 +81,35 @@ data:Prince_Karl_Franz_of_Prussia a :Ancestor,
     :alsoKnownAs "Karl Franz Joseph",
         "Karl Franz Joseph Prinz von Preußen",
         "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia" ;
-    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
-    :hasFather data:Prince_Joachim_of_Prussia ;
     :hasParent data:Prince_Joachim_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
-    :isChildOf data:Prince_Joachim_of_Prussia ;
-    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
-    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
-    :isSonOf data:Prince_Joachim_of_Prussia .
+    :hasSex data:male .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "248:273",
+        "263:273",
+        "263:274",
+        "636:646",
+        "636:647" ;
+    data:posIndicesPart "1293:1300",
+        "292:299",
+        "662:669",
+        "852:859" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

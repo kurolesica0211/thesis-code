@@ -1,0 +1,55 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Duke_Wilhelm-_Duke_of_Württemberg a :Man,
+        :Person ;
+    rdfs:label "Duke Wilhelm, Duke of Württemberg"^^xsd:string ;
+    data:posIndicesFull "0:30"^^xsd:string ;
+    data:posIndicesPart "1079:1086"^^xsd:string,
+        "1121:1132"^^xsd:string,
+        "1174:1178"^^xsd:string,
+        "1182:1193"^^xsd:string,
+        "1195:1202"^^xsd:string,
+        "1316:1327"^^xsd:string,
+        "1331:1338"^^xsd:string,
+        "1356:1360"^^xsd:string,
+        "1373:1384"^^xsd:string,
+        "219:230"^^xsd:string,
+        "353:364"^^xsd:string,
+        "372:379"^^xsd:string,
+        "425:429"^^xsd:string,
+        "433:444"^^xsd:string,
+        "621:628"^^xsd:string,
+        "672:679"^^xsd:string,
+        "792:799"^^xsd:string,
+        "851:855"^^xsd:string,
+        "859:870"^^xsd:string,
+        "895:906"^^xsd:string,
+        "949:956"^^xsd:string,
+        "989:1000"^^xsd:string ;
+    data:wdtLink wdt:Q17502451 ;
+    :alsoKnownAs "Duke Wilhelm Friedrich, Duke of Württemberg"^^xsd:string,
+        "Wilhelm Herzog von Württemberg"^^xsd:string ;
+    :hasBrother data:Duke_Wilhelm-_Duke_of_Württemberg ;
+    :hasRelation data:Duke_Wilhelm-_Duke_of_Württemberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Duke_Wilhelm-_Duke_of_Württemberg ;
+    :isBrotherOf data:Duke_Wilhelm-_Duke_of_Württemberg ;
+    :isSiblingOf data:Duke_Wilhelm-_Duke_of_Württemberg .
+

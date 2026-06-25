@@ -85,27 +85,25 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Daisy Isadora Louise Knatchbull (born 5 October 1992) is a British fashion designer, businesswoman and founder of Knatchbull (formerly The Deck), the first female-only tailor on Savile Row.
-Early life and family
-
-Knatchbull was born on 5 October 1992 to the Hon.
-Philip Knatchbull (born 1961) and Atalanta Cowan (born 1962).
-She has two younger half-brothers from her father's second marriage to Wendy Leach (born 1966), including Frederick "Freddy" Knatchbull (born 2003), known for his appearance on Made in Chelsea.
-Knatchbull was educated at Benenden School and graduated with a Bachelor of Arts in philosophy from the University of Leeds in 2015.
-In April 2026, Knatchbull and music executive Giovanni Damiani announced their engagement.
+Sophie Franziska Maria Germaine Habsburg also known as Archduchess Sophie of Austria (born 19 January 1959) is a French-born Italian designer, German aristocrat and former model.
 Career
 
-Knatchbull worked as assistant to the fashion director of The Sunday Times Style magazine and as communications director at H. Huntsman & Sons.
-In 2017, Knatchbull gained press attention for wearing a morning suit in the Royal Enclosure at Royal Ascot.
-In 2019, Knatchbull launched Knatchbull, the first female-only tailor to have a shopfront on Savile Row.
-In October 2024, The Deck rebranded as Knatchbull.
-Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess of York, Adjoa Andoh, Elizabeth Hurley, Jodie Whittaker, Melanie C and Olivia Arben.
+Sophie Habsburg was born in Paris on 19 January 1959, the daughter of Archduke Ferdinand Karl Max of Austria and Countess Helene of Törring-Jettenbach.
+She descends from the House of Habsburg-Lorraine, which reigned over Austria-Hungary until its deposition in 1918.
+Ancestry
+
+Through her maternal grandmother, Princess Elizabeth of Greece and Denmark, Sophie is a first cousin once removed of: Prince Edward, Duke of Kent, Princess Alexandra, The Honourable Lady Ogilvy, Prince Michael of Kent and Princess Elizabeth of Yugoslavia.
+Habsburg is a second cousin once removed of Queen Sofía of Spain and King Charles III, making Sophie a third cousin of Felipe VI of Spain and William, Prince of Wales.
+, Sophie Habsburg married Mariano Hugo, Prince of Windisch-Graetz, member of the House of Windisch-Graetz.
+They had three children, one of whom, Alexis Ferdinand, died in a car accident in 2010.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +119,9 @@ Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +136,23 @@ Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,134 +444,149 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5af013d5-b959-401d-bc04-1f6d6b2f5684)
- Call ID: 5af013d5-b959-401d-bc04-1f6d6b2f5684
+  AssignClass (0e7efa3c-5eec-48c0-ab4d-e896ba9ae809)
+ Call ID: 0e7efa3c-5eec-48c0-ab4d-e896ba9ae809
   Args:
     type: :Woman
-    source: Daisy_Isadora_Louise_Knatchbull
-  AssignClass (b0520964-fbeb-49c7-8fc2-d828122a7918)
- Call ID: b0520964-fbeb-49c7-8fc2-d828122a7918
+    source: Sophie_Habsburg
+  AssignClass (70532531-e859-42ae-adc4-7fda317cd378)
+ Call ID: 70532531-e859-42ae-adc4-7fda317cd378
   Args:
-    source: Daisy_Isadora_Louise_Knatchbull
     type: :Person
-  AddLiteral (b9a67346-40c1-4f40-b297-d811bf41d9cf)
- Call ID: b9a67346-40c1-4f40-b297-d811bf41d9cf
+    source: Sophie_Habsburg
+  AddLiteral (aa9310f7-a90a-4cc4-9158-631419192de5)
+ Call ID: aa9310f7-a90a-4cc4-9158-631419192de5
+  Args:
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: Sophie_Habsburg
+    literal_value: Archduchess Sophie of Austria
+  AddLiteral (b92c94d7-7e6e-4de7-a2b5-4cb26a9faa34)
+ Call ID: b92c94d7-7e6e-4de7-a2b5-4cb26a9faa34
   Args:
     relation: :hasBirthYear
-    literal_value: 1992
+    source: Sophie_Habsburg
+    literal_value: 1959
     literal_type: xsd:integer
-    source: Daisy_Isadora_Louise_Knatchbull
-  AssignClass (b9f01931-8a5f-44ed-bbc3-8c50e39d845b)
- Call ID: b9f01931-8a5f-44ed-bbc3-8c50e39d845b
+  AssignClass (f8caa25f-e356-478f-a514-f7aac40e3db9)
+ Call ID: f8caa25f-e356-478f-a514-f7aac40e3db9
   Args:
     type: :Man
-    source: Philip_Knatchbull
-  AssignClass (b6b79c21-c407-4fcc-b520-8d8104f2729b)
- Call ID: b6b79c21-c407-4fcc-b520-8d8104f2729b
+    source: Ferdinand_Karl_Max_of_Austria
+  AssignClass (abe11fd5-5038-48a2-b439-6a0b4e0bdb7d)
+ Call ID: abe11fd5-5038-48a2-b439-6a0b4e0bdb7d
   Args:
     type: :Person
-    source: Philip_Knatchbull
-  AddLiteral (3d976b6c-cc8c-4022-af3e-5cea1a07fd88)
- Call ID: 3d976b6c-cc8c-4022-af3e-5cea1a07fd88
+    source: Ferdinand_Karl_Max_of_Austria
+  AssignClass (2798a499-232a-4806-bed5-62efad27e0ac)
+ Call ID: 2798a499-232a-4806-bed5-62efad27e0ac
   Args:
-    relation: :hasBirthYear
-    literal_value: 1961
-    source: Philip_Knatchbull
-    literal_type: xsd:integer
-  AssignClass (d7c61b5b-f64c-4d93-80fa-7d02edc34f4c)
- Call ID: d7c61b5b-f64c-4d93-80fa-7d02edc34f4c
+    source: Ferdinand_Karl_Max_of_Austria
+    type: :Ancestor
+  AssignClass (fde53c43-50f2-488b-9f1e-8ba98136422a)
+ Call ID: fde53c43-50f2-488b-9f1e-8ba98136422a
   Args:
     type: :Woman
-    source: Atalanta_Cowan
-  AssignClass (83e9ee40-9ad7-42ef-bcff-436392d3b064)
- Call ID: 83e9ee40-9ad7-42ef-bcff-436392d3b064
-  Args:
-    source: Atalanta_Cowan
-    type: :Person
-  AddLiteral (88bc8fb9-3245-4642-a66d-61fa9008d2a2)
- Call ID: 88bc8fb9-3245-4642-a66d-61fa9008d2a2
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1962
-    source: Atalanta_Cowan
-    literal_type: xsd:integer
-  AddTriple (ce42bf45-723e-446a-a595-529b18960ca4)
- Call ID: ce42bf45-723e-446a-a595-529b18960ca4
-  Args:
-    target: Philip_Knatchbull
-    relation: :hasFather
-    source: Daisy_Isadora_Louise_Knatchbull
-  AddTriple (7ad54887-9afc-498a-bf3b-33e36c1e8fe9)
- Call ID: 7ad54887-9afc-498a-bf3b-33e36c1e8fe9
-  Args:
-    source: Daisy_Isadora_Louise_Knatchbull
-    relation: :hasMother
-    target: Atalanta_Cowan
-  AssignClass (c7c4da13-f7fd-4cc8-8731-510798d2265d)
- Call ID: c7c4da13-f7fd-4cc8-8731-510798d2265d
-  Args:
-    source: Wendy_Leach
-    type: :Woman
-  AssignClass (c8f4dc59-2889-433d-b772-820983ce6597)
- Call ID: c8f4dc59-2889-433d-b772-820983ce6597
+    source: Helene_of_Torring-Jettenbach
+  AssignClass (0192ae22-4c26-46b8-a055-6066a1a46142)
+ Call ID: 0192ae22-4c26-46b8-a055-6066a1a46142
   Args:
     type: :Person
-    source: Wendy_Leach
-  AddLiteral (e310aba5-332d-4b89-b40e-c142cc8b58e3)
- Call ID: e310aba5-332d-4b89-b40e-c142cc8b58e3
+    source: Helene_of_Torring-Jettenbach
+  AssignClass (692a6819-63fd-4910-9b91-6257d449acd1)
+ Call ID: 692a6819-63fd-4910-9b91-6257d449acd1
   Args:
-    literal_type: xsd:integer
-    source: Wendy_Leach
-    relation: :hasBirthYear
-    literal_value: 1966
-  AssignClass (930bfff4-b1f9-4451-a6ba-2e7e7e78a628)
- Call ID: 930bfff4-b1f9-4451-a6ba-2e7e7e78a628
-  Args:
-    type: :Man
-    source: Frederick_Freddy_Knatchbull
-  AssignClass (0fc677d0-9a4c-4481-b14e-d78c6c29e7e5)
- Call ID: 0fc677d0-9a4c-4481-b14e-d78c6c29e7e5
-  Args:
-    type: :Person
-    source: Frederick_Freddy_Knatchbull
-  AddLiteral (f47bb751-7d5c-488e-9294-3f02508bb007)
- Call ID: f47bb751-7d5c-488e-9294-3f02508bb007
-  Args:
-    source: Frederick_Freddy_Knatchbull
-    literal_type: xsd:integer
-    literal_value: 2003
-    relation: :hasBirthYear
-  AddTriple (54ee9dee-acb1-4913-b3a2-45db1878da79)
- Call ID: 54ee9dee-acb1-4913-b3a2-45db1878da79
+    type: :Ancestor
+    source: Helene_of_Torring-Jettenbach
+  AddTriple (9e72c6f0-84aa-484c-809e-1a68834bc6ef)
+ Call ID: 9e72c6f0-84aa-484c-809e-1a68834bc6ef
   Args:
     relation: :hasFather
-    target: Philip_Knatchbull
-    source: Frederick_Freddy_Knatchbull
-  AddTriple (e742c1db-15fe-48ec-b8b4-cc6693a8587e)
- Call ID: e742c1db-15fe-48ec-b8b4-cc6693a8587e
+    target: Ferdinand_Karl_Max_of_Austria
+    source: Sophie_Habsburg
+  AddTriple (9ab24c90-bebe-4cae-b878-10f07f8f9d16)
+ Call ID: 9ab24c90-bebe-4cae-b878-10f07f8f9d16
   Args:
-    source: Frederick_Freddy_Knatchbull
+    target: Helene_of_Torring-Jettenbach
+    source: Sophie_Habsburg
     relation: :hasMother
-    target: Wendy_Leach
-  AddTriple (3da774a5-2adc-411c-bdf7-1491bd80e696)
- Call ID: 3da774a5-2adc-411c-bdf7-1491bd80e696
+  AssignClass (5b092812-291f-4084-82c5-5c6b99cd56fd)
+ Call ID: 5b092812-291f-4084-82c5-5c6b99cd56fd
   Args:
-    source: Daisy_Isadora_Louise_Knatchbull
-    relation: :hasBrother
-    target: Frederick_Freddy_Knatchbull
-  AssignClass (c1bab6fb-2159-476d-9ccf-edbe7fae23e7)
- Call ID: c1bab6fb-2159-476d-9ccf-edbe7fae23e7
+    source: Elizabeth_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (8d400523-1eb5-404c-93e7-ad09210385ad)
+ Call ID: 8d400523-1eb5-404c-93e7-ad09210385ad
   Args:
-    type: :Man
-    source: Giovanni_Damiani
-  AssignClass (e8239c70-9244-4dc6-835e-3694327dfc5a)
- Call ID: e8239c70-9244-4dc6-835e-3694327dfc5a
-  Args:
-    source: Giovanni_Damiani
+    source: Elizabeth_of_Greece_and_Denmark
     type: :Person
-  Finish (b00e902b-c40e-448b-8d5d-4e2eaad03148)
- Call ID: b00e902b-c40e-448b-8d5d-4e2eaad03148
+  AssignClass (1270b1a6-74cc-46e2-8f08-576228424f5a)
+ Call ID: 1270b1a6-74cc-46e2-8f08-576228424f5a
   Args:
+    source: Elizabeth_of_Greece_and_Denmark
+    type: :Ancestor
+  AddTriple (9dd9abf9-49da-4cff-85ab-6c187cb87e9a)
+ Call ID: 9dd9abf9-49da-4cff-85ab-6c187cb87e9a
+  Args:
+    source: Helene_of_Torring-Jettenbach
+    target: Elizabeth_of_Greece_and_Denmark
+    relation: :hasMother
+  AssignClass (64b52af5-012d-4f10-9294-40611be86d57)
+ Call ID: 64b52af5-012d-4f10-9294-40611be86d57
+  Args:
+    source: Mariano_Hugo_of_Windisch-Graetz
+    type: :Man
+  AssignClass (006ba65d-c6fc-4b15-9c0a-ee627536ca09)
+ Call ID: 006ba65d-c6fc-4b15-9c0a-ee627536ca09
+  Args:
+    type: :Person
+    source: Mariano_Hugo_of_Windisch-Graetz
+  AddTriple (65035bc8-c4dd-481f-8dc2-5c999120b0e6)
+ Call ID: 65035bc8-c4dd-481f-8dc2-5c999120b0e6
+  Args:
+    target: Mariano_Hugo_of_Windisch-Graetz
+    source: Sophie_Habsburg
+    relation: :hasRelation
+  AssignClass (ddac0a14-a542-4385-9979-e735bd1c04fc)
+ Call ID: ddac0a14-a542-4385-9979-e735bd1c04fc
+  Args:
+    source: Alexis_Ferdinand_of_Windisch-Graetz
+    type: :Man
+  AssignClass (d1ebb465-6b02-40ea-b8e6-cd5126f09604)
+ Call ID: d1ebb465-6b02-40ea-b8e6-cd5126f09604
+  Args:
+    type: :Person
+    source: Alexis_Ferdinand_of_Windisch-Graetz
+  AddTriple (aa016cb6-2ee7-4d45-9272-d160cef844e4)
+ Call ID: aa016cb6-2ee7-4d45-9272-d160cef844e4
+  Args:
+    relation: :hasFather
+    target: Mariano_Hugo_of_Windisch-Graetz
+    source: Alexis_Ferdinand_of_Windisch-Graetz
+  AddTriple (c6672647-e993-4e7e-9c67-cac7e04016a3)
+ Call ID: c6672647-e993-4e7e-9c67-cac7e04016a3
+  Args:
+    relation: :hasMother
+    target: Sophie_Habsburg
+    source: Alexis_Ferdinand_of_Windisch-Graetz
+  AddLiteral (c420539c-e472-42d7-b3dc-2329649c5a4c)
+ Call ID: c420539c-e472-42d7-b3dc-2329649c5a4c
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Alexis_Ferdinand_of_Windisch-Graetz
+    literal_value: 2010
+  Finish (fc88e0c3-578a-482a-941f-48dbbc16903e)
+ Call ID: fc88e0c3-578a-482a-941f-48dbbc16903e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -576,33 +679,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Daisy_Isadora_Louise_Knatchbull a :Person,
-          :Woman ;
-      :hasBirthYear 1992 ;
-      :hasBrother data:Frederick_Freddy_Knatchbull ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Atalanta_Cowan .
+  data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
+          :Person ;
+      :hasDeathYear 2010 ;
+      :hasFather data:Mariano_Hugo_of_Windisch-Graetz ;
+      :hasMother data:Sophie_Habsburg .
 
-  data:Giovanni_Damiani a :Man,
+  data:Elizabeth_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Ferdinand_Karl_Max_of_Austria a :Ancestor,
+          :Man,
           :Person .
 
-  data:Atalanta_Cowan a :Person,
+  data:Helene_of_Torring-Jettenbach a :Ancestor,
+          :Person,
           :Woman ;
-      :hasBirthYear 1962 .
+      :hasMother data:Elizabeth_of_Greece_and_Denmark .
 
-  data:Frederick_Freddy_Knatchbull a :Man,
-          :Person ;
-      :hasBirthYear 2003 ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Wendy_Leach .
-
-  data:Wendy_Leach a :Person,
+  data:Sophie_Habsburg a :Person,
           :Woman ;
-      :hasBirthYear 1966 .
+      :alsoKnownAs "Archduchess Sophie of Austria"^^xsd:string ;
+      :hasBirthYear 1959 ;
+      :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+      :hasMother data:Helene_of_Torring-Jettenbach ;
+      :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .
 
-  data:Philip_Knatchbull a :Man,
-          :Person ;
-      :hasBirthYear 1961 .
+  data:Mariano_Hugo_of_Windisch-Graetz a :Man,
+          :Person .
 
 
 
@@ -614,110 +719,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (436463a6-8325-4021-817d-77e936312942)
- Call ID: 436463a6-8325-4021-817d-77e936312942
+  ValidateShacl (445e7185-b3eb-4a3b-bbb3-d821f571a01f)
+ Call ID: 445e7185-b3eb-4a3b-bbb3-d821f571a01f
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
+      The node 'Mariano_Hugo_of_Windisch-Graetz' is linked as a father to 'Alexis_Ferdinand_of_Windisch-Graetz' but it is missing the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
+      Use AssignClass to add the ':Ancestor' class to the node 'Mariano_Hugo_of_Windisch-Graetz'.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Wendy_Leach is being used as a mother for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
+      The node 'Sophie_Habsburg' is linked as a mother to 'Alexis_Ferdinand_of_Windisch-Graetz' but it is missing the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wendy_Leach, :Ancestor)
+      Use AssignClass to add the ':Ancestor' class to the node 'Sophie_Habsburg'.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
+      The node 'Mariano_Hugo_of_Windisch-Graetz' is redundantly identified as a father, triggering a duplicate constraint violation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
+      Use RemoveTriple to delete the redundant ':hasFather' relationship between 'Alexis_Ferdinand_of_Windisch-Graetz' and 'Mariano_Hugo_of_Windisch-Graetz'.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
+      The node 'Sophie_Habsburg' is redundantly identified as a mother, triggering a duplicate constraint violation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
+      Use RemoveTriple to delete the redundant ':hasMother' relationship between 'Alexis_Ferdinand_of_Windisch-Graetz' and 'Sophie_Habsburg'.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Atalanta_Cowan is being used as a mother for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
+      The node 'Mariano_Hugo_of_Windisch-Graetz' is identified as a father again, triggering a triple violation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Atalanta_Cowan, :Ancestor)
+      Use RemoveTriple to delete the extra ':hasFather' relationship between 'Alexis_Ferdinand_of_Windisch-Graetz' and 'Mariano_Hugo_of_Windisch-Graetz'.
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Wendy_Leach is being used as a mother for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
+      The node 'Sophie_Habsburg' is identified as a mother again, triggering a triple violation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wendy_Leach, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Atalanta_Cowan is being used as a mother for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Atalanta_Cowan, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Wendy_Leach is being used as a mother for Frederick_Freddy_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Wendy_Leach, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philip_Knatchbull is being used as a father for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Knatchbull, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Atalanta_Cowan is being used as a mother for Daisy_Isadora_Louise_Knatchbull, but it is not correctly classified as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Atalanta_Cowan, :Ancestor)
+      Use RemoveTriple to delete the extra ':hasMother' relationship between 'Alexis_Ferdinand_of_Windisch-Graetz' and 'Sophie_Habsburg'.
 
 
 
@@ -726,25 +783,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (68d1b90e-72a3-424c-901a-73b183ff47a0)
- Call ID: 68d1b90e-72a3-424c-901a-73b183ff47a0
+  AssignClass (c30ce16a-af5f-4867-bbc1-396b3510edc5)
+ Call ID: c30ce16a-af5f-4867-bbc1-396b3510edc5
   Args:
     type: :Ancestor
-    source: Philip_Knatchbull
-  AssignClass (035a20cd-74ff-4764-adb0-31fe5d597bf6)
- Call ID: 035a20cd-74ff-4764-adb0-31fe5d597bf6
+    source: Mariano_Hugo_of_Windisch-Graetz
+  AssignClass (9511f583-995b-400b-9b7b-00ba26db3fdc)
+ Call ID: 9511f583-995b-400b-9b7b-00ba26db3fdc
   Args:
+    source: Sophie_Habsburg
     type: :Ancestor
-    source: Atalanta_Cowan
-  AssignClass (dfb7d70e-4804-4dff-8b2e-61c3e66941b4)
- Call ID: dfb7d70e-4804-4dff-8b2e-61c3e66941b4
+  Finish (a8f6673a-f031-4734-bff2-5824a3160990)
+ Call ID: a8f6673a-f031-4734-bff2-5824a3160990
   Args:
-    type: :Ancestor
-    source: Wendy_Leach
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -757,45 +808,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Daisy_Isadora_Louise_Knatchbull a :Person,
-          :Woman ;
-      :hasBirthYear 1992 ;
-      :hasBrother data:Frederick_Freddy_Knatchbull ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Atalanta_Cowan .
+  data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
+          :Person ;
+      :hasDeathYear 2010 ;
+      :hasFather data:Mariano_Hugo_of_Windisch-Graetz ;
+      :hasMother data:Sophie_Habsburg .
 
-  data:Giovanni_Damiani a :Man,
+  data:Elizabeth_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Ferdinand_Karl_Max_of_Austria a :Ancestor,
+          :Man,
           :Person .
 
-  data:Atalanta_Cowan a :Ancestor,
+  data:Helene_of_Torring-Jettenbach a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1962 .
+      :hasMother data:Elizabeth_of_Greece_and_Denmark .
 
-  data:Frederick_Freddy_Knatchbull a :Man,
-          :Person ;
-      :hasBirthYear 2003 ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Wendy_Leach .
-
-  data:Wendy_Leach a :Ancestor,
+  data:Sophie_Habsburg a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1966 .
+      :alsoKnownAs "Archduchess Sophie of Austria"^^xsd:string ;
+      :hasBirthYear 1959 ;
+      :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+      :hasMother data:Helene_of_Torring-Jettenbach ;
+      :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .
 
-  data:Philip_Knatchbull a :Ancestor,
+  data:Mariano_Hugo_of_Windisch-Graetz a :Ancestor,
           :Man,
-          :Person ;
-      :hasBirthYear 1961 .
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (ab9b4827-51e4-45d1-b4fd-cf7a7297c575)
- Call ID: ab9b4827-51e4-45d1-b4fd-cf7a7297c575
+  ValidateShacl (c417fac4-8082-43f3-bdec-9ec61b9f7a4a)
+ Call ID: c417fac4-8082-43f3-bdec-9ec61b9f7a4a
   Args:
 
 ================================= Tool Message =================================
@@ -806,6 +862,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (85eb11c8-cdd0-4b78-9568-a81cf3144a59)
- Call ID: 85eb11c8-cdd0-4b78-9568-a81cf3144a59
+  Finish (38ea7d24-f673-421f-872b-232d7890d7a2)
+ Call ID: 38ea7d24-f673-421f-872b-232d7890d7a2
   Args:

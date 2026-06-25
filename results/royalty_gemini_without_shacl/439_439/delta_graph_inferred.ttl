@@ -1,0 +1,247 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeoffreyColman a :Ancestor,
+        :Man ;
+    :hasBrother data:GeoffreyColman ;
+    :hasChild data:TimothyColman ;
+    :hasRelation data:GeoffreyColman,
+        data:TimothyColman ;
+    :hasSon data:TimothyColman ;
+    :isAncestorOf data:TimothyColman ;
+    :isBloodrelationOf data:GeoffreyColman ;
+    :isBrotherOf data:GeoffreyColman ;
+    :isFatherOf data:TimothyColman ;
+    :isParentOf data:TimothyColman ;
+    :isSiblingOf data:GeoffreyColman ;
+    :isUncleOf data:TimothyColman .
+
+data:TimothyColman a :Man ;
+    :hasAncestor data:GeoffreyColman ;
+    :hasBrother data:TimothyColman ;
+    :hasFather data:GeoffreyColman ;
+    :hasParent data:GeoffreyColman ;
+    :hasRelation data:GeoffreyColman,
+        data:TimothyColman ;
+    :isBloodrelationOf data:TimothyColman ;
+    :isBrotherOf data:TimothyColman ;
+    :isChildOf data:GeoffreyColman ;
+    :isSiblingOf data:TimothyColman ;
+    :isSonOf data:GeoffreyColman .
+
+data:ElizabethMargaretCator a :Ancestor,
+        :Woman ;
+    :hasChild data:LadyMaryCeciliaColman ;
+    :hasDaughter data:LadyMaryCeciliaColman ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:ElizabethMargaretCator ;
+    :isAncestorOf data:LadyMaryCeciliaColman ;
+    :isAuntOf data:LadyMaryCeciliaColman ;
+    :isBloodrelationOf data:ElizabethMargaretCator ;
+    :isMotherOf data:LadyMaryCeciliaColman ;
+    :isParentOf data:LadyMaryCeciliaColman ;
+    :isSiblingOf data:ElizabethMargaretCator ;
+    :isSisterOf data:ElizabethMargaretCator .
+
+data:CeciliaBowes-Lyon a :Ancestor,
+        :Woman ;
+    :hasChild data:MichaelBowes-Lyon ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:CeciliaBowes-Lyon ;
+    :hasSon data:MichaelBowes-Lyon ;
+    :isAncestorOf data:LadyMaryCeciliaColman,
+        data:MichaelBowes-Lyon ;
+    :isAuntOf data:MichaelBowes-Lyon ;
+    :isBloodrelationOf data:CeciliaBowes-Lyon ;
+    :isMotherOf data:MichaelBowes-Lyon ;
+    :isParentOf data:MichaelBowes-Lyon ;
+    :isSiblingOf data:CeciliaBowes-Lyon ;
+    :isSisterOf data:CeciliaBowes-Lyon .
+
+data:ClaudeBowes-Lyon a :Ancestor,
+        :Man ;
+    :hasBrother data:ClaudeBowes-Lyon ;
+    :hasChild data:MichaelBowes-Lyon ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSon data:MichaelBowes-Lyon ;
+    :isAncestorOf data:LadyMaryCeciliaColman,
+        data:MichaelBowes-Lyon ;
+    :isBloodrelationOf data:ClaudeBowes-Lyon ;
+    :isBrotherOf data:ClaudeBowes-Lyon ;
+    :isFatherOf data:MichaelBowes-Lyon ;
+    :isParentOf data:MichaelBowes-Lyon ;
+    :isSiblingOf data:ClaudeBowes-Lyon ;
+    :isUncleOf data:MichaelBowes-Lyon .
+
+data:FergusMichaelClaude a :Man ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:LadyMaryCeciliaColman,
+        data:PatriciaMaud ;
+    :isBloodrelationOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isBrotherOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isSiblingOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud .
+
+data:MichaelAlbemarle a :Man ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:LadyMaryCeciliaColman,
+        data:PatriciaMaud ;
+    :isBloodrelationOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isBrotherOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isSiblingOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud .
+
+data:PatriciaMaud a :Woman ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:LadyMaryCeciliaColman,
+        data:PatriciaMaud ;
+    :isBloodrelationOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isSiblingOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isSisterOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud .
+
+data:MichaelBowes-Lyon a :Ancestor,
+        :Man ;
+    :hasAncestor data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon ;
+    :hasBrother data:MichaelBowes-Lyon ;
+    :hasChild data:LadyMaryCeciliaColman ;
+    :hasDaughter data:LadyMaryCeciliaColman ;
+    :hasFather data:ClaudeBowes-Lyon ;
+    :hasMother data:CeciliaBowes-Lyon ;
+    :hasParent data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :isAncestorOf data:LadyMaryCeciliaColman ;
+    :isBloodrelationOf data:MichaelBowes-Lyon ;
+    :isBrotherOf data:MichaelBowes-Lyon ;
+    :isChildOf data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon ;
+    :isFatherOf data:LadyMaryCeciliaColman ;
+    :isParentOf data:LadyMaryCeciliaColman ;
+    :isSiblingOf data:MichaelBowes-Lyon ;
+    :isSonOf data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon ;
+    :isUncleOf data:LadyMaryCeciliaColman .
+
+data:LadyMaryCeciliaColman a :Woman ;
+    :hasAncestor data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:MichaelBowes-Lyon ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:FergusMichaelClaude,
+        data:MichaelAlbemarle ;
+    :hasDeathYear 2021 ;
+    :hasFather data:MichaelBowes-Lyon ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:ElizabethMargaretCator ;
+    :hasParent data:ElizabethMargaretCator,
+        data:MichaelBowes-Lyon ;
+    :hasRelation data:CeciliaBowes-Lyon,
+        data:ClaudeBowes-Lyon,
+        data:ElizabethMargaretCator,
+        data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:MichaelBowes-Lyon,
+        data:PatriciaMaud ;
+    :hasSister data:LadyMaryCeciliaColman,
+        data:PatriciaMaud ;
+    :isBloodrelationOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isChildOf data:ElizabethMargaretCator,
+        data:MichaelBowes-Lyon ;
+    :isDaughterOf data:ElizabethMargaretCator,
+        data:MichaelBowes-Lyon ;
+    :isSiblingOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud ;
+    :isSisterOf data:FergusMichaelClaude,
+        data:LadyMaryCeciliaColman,
+        data:MichaelAlbemarle,
+        data:PatriciaMaud .
+

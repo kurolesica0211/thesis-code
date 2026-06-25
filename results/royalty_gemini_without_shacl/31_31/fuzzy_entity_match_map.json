@@ -16,21 +16,21 @@
       "qid": "Q1210791",
       "label": "Prince Christoph of Schleswig-Holstein",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Marie_Alix-_Duchess_of_Schleswig-Holstein",
       "qid": "Q6490795",
       "label": "Marie Alix, Duchess of Schleswig-Holstein",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Peter-_Duke_of_Schleswig-Holstein",
       "qid": "Q739253",
       "label": "Peter, Duke of Schleswig-Holstein",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -45,11 +45,11 @@
       "ground_truth_qid": "Q1210791",
       "ground_truth_label": "Prince Christoph of Schleswig-Holstein",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Christoph of Schleswig-Holstein",
       "best_candidate_label": "Prince Christoph of Schleswig-Holstein",
       "best_candidate_qid": "Q1210791",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -63,11 +63,11 @@
       "ground_truth_qid": "Q6490795",
       "ground_truth_label": "Marie Alix, Duchess of Schleswig-Holstein",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Marie Alix of Schaumburg-Lippe",
       "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
       "best_candidate_qid": "Q6490795",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -81,11 +81,11 @@
       "ground_truth_qid": "Q739253",
       "ground_truth_label": "Peter, Duke of Schleswig-Holstein",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Peter- Duke of Schleswig-Holstein",
       "best_candidate_label": "Peter, Duke of Schleswig-Holstein",
       "best_candidate_qid": "Q739253",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9761904761904762
     },
     {
@@ -103,7 +103,7 @@
       "best_candidate_match_text": "Marie-Alix Prinzessin zu Schaumburg-Lippe",
       "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
       "best_candidate_qid": "Q6490795",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.2823529411764706
     },
     {
@@ -118,11 +118,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Marie-Alix Prinzessin zu Schaumburg-Lippe",
+      "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
+      "best_candidate_qid": "Q6490795",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3137254901960784
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Elisabeth_of_Lippe-Weissenfeld",
@@ -139,7 +139,7 @@
       "best_candidate_match_text": "Marie-Alix Prinzessin zu Schaumburg-Lippe",
       "best_candidate_label": "Marie Alix, Duchess of Schleswig-Holstein",
       "best_candidate_qid": "Q6490795",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4
     }
   ],

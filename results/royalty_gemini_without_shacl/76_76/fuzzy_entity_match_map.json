@@ -16,35 +16,17 @@
       "qid": "Q16115785",
       "label": "Mariam de Bagration",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Irakli_Bagration_of_Mukhrani",
       "qid": "Q2576581",
       "label": "Irakli Bagration of Mukhrani",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Princess_Mariam_de_Bagration",
-      "extracted_local_name": "Princess_Mariam_de_Bagration",
-      "embedding_text": "Princess Mariam de Bagration",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Mariam_de_Bagration",
-      "ground_truth_qid": "Q16115785",
-      "ground_truth_label": "Mariam de Bagration",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Mariam de Bagration",
-      "best_candidate_label": "Mariam de Bagration",
-      "best_candidate_qid": "Q16115785",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/Prince_Irakli_Bagration_of_Mukhrani",
       "extracted_local_name": "Prince_Irakli_Bagration_of_Mukhrani",
@@ -56,11 +38,11 @@
       "ground_truth_qid": "Q2576581",
       "ground_truth_label": "Irakli Bagration of Mukhrani",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Irakli Bagration of Mukhrani",
       "best_candidate_label": "Irakli Bagration of Mukhrani",
       "best_candidate_qid": "Q2576581",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9102564102564102
     },
     {
@@ -68,18 +50,18 @@
       "extracted_local_name": "Bagrat_de_Bagration",
       "embedding_text": "Bagrat de Bagration",
       "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Mariam_de_Bagration",
+      "ground_truth_qid": "Q16115785",
+      "ground_truth_label": "Mariam de Bagration",
+      "ground_truth_distance": 0,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Irakli Bagration-Mukhraneli",
-      "best_candidate_label": "Irakli Bagration of Mukhrani",
-      "best_candidate_qid": "Q2576581",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.5217391304347826
+      "best_candidate_match_text": "Mariam de Bagration",
+      "best_candidate_label": "Mariam de Bagration",
+      "best_candidate_qid": "Q16115785",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
     },
     {
       "extracted_uri": "http://example.org/data/Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon",
@@ -93,11 +75,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Mariam de Bagration",
-      "best_candidate_label": "Mariam de Bagration",
-      "best_candidate_qid": "Q16115785",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.0
+      "best_candidate_match_text": "Irakli Bagration-Mukhraneli",
+      "best_candidate_label": "Irakli Bagration of Mukhrani",
+      "best_candidate_qid": "Q2576581",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2631578947368421
     },
     {
       "extracted_uri": "http://example.org/data/Jorge_de_Bagration",
@@ -114,8 +96,26 @@
       "best_candidate_match_text": "Irakli Bagration-Mukhraneli",
       "best_candidate_label": "Irakli Bagration of Mukhrani",
       "best_candidate_qid": "Q2576581",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4888888888888889
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Mariam_de_Bagration",
+      "extracted_local_name": "Princess_Mariam_de_Bagration",
+      "embedding_text": "Princess Mariam de Bagration",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     }
   ],
   "summary": {

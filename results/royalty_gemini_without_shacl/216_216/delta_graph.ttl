@@ -2,69 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_VI a :Ancestor,
+data:Aschwin_son a :Man,
+        :Person ;
+    :isSonOf data:Armgard_von_Cramm .
+
+data:Bodo_von_Oeynhausen a :Man,
+        :Person ;
+    :isSonOf data:Erich_von_Oeynhausen,
+        data:Therese_von_Lenthe .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld_husband a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1895 ;
-    :hasBrother data:Duke_of_Kent,
-        data:Edward_VIII,
-        data:Prince_Henry ;
-    :hasDaughter data:Elizabeth_II,
-        data:Margaret ;
-    :hasDeathYear 1952 ;
-    :hasFather data:George_V ;
-    :hasMarriageYear 1923 ;
-    :hasMother data:Queen_Mary ;
-    :hasRelation data:Elizabeth_Bowes_Lyon ;
-    :knownAs "Bertie"^^xsd:string .
+    :isSonOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben .
 
-data:Duke_of_Kent a :Man,
-        :Person .
+data:Prince_Bernhard_of_Lippe-Biesterfeld_son a :Man,
+        :Person ;
+    :isSonOf data:Armgard_von_Cramm .
 
-data:Edward_VIII a :Man,
-        :Person .
+data:Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm a :DomainEntity .
 
-data:Elizabeth_Bowes_Lyon a :Person,
-        :Woman .
-
-data:Elizabeth_II a :Person,
-        :Woman .
-
-data:Francis_Duke_of_Teck a :Man,
-        :Person .
-
-data:George_V a :Ancestor,
+data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
         :Man,
-        :Person ;
-    :hasFather data:King_Edward_VII ;
-    :hasMother data:Queen_Alexandra .
-
-data:King_Edward_VII a :Man,
-        :Person ;
-    :hasFather data:Prince_Albert_Prince_Consort ;
-    :hasMother data:Queen_Victoria .
-
-data:Margaret a :Person,
-        :Woman .
-
-data:Prince_Albert_Prince_Consort a :Man,
         :Person .
 
-data:Prince_Henry a :Man,
+data:Erich_von_Oeynhausen a :Man,
         :Person .
 
-data:Princess_Mary_Adelaide_Duchess_of_Teck a :Person,
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person .
+
+data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
+        :Person,
         :Woman .
 
-data:Queen_Alexandra a :Person,
+data:Karoline_von_Wartensleben a :Ancestor,
+        :Person,
         :Woman .
 
-data:Queen_Mary a :Ancestor,
+data:Princess_Irene a :Person,
+        :Woman .
+
+data:Therese_von_Lenthe a :Person,
+        :Woman .
+
+data:Armgard_von_Cramm a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Francis_Duke_of_Teck ;
-    :hasMother data:Princess_Mary_Adelaide_Duchess_of_Teck .
-
-data:Queen_Victoria a :Person,
-        :Woman .
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1971 ;
+    :hasMarriageYear 1905,
+        1909 ;
+    :isAncestorOf data:Princess_Irene ;
+    :isDaughterOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :knownAs data:Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm .
 

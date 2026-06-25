@@ -2,47 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Kira_Georgievna a :Woman ;
-    :hasFather data:George_Mikhailovich ;
-    :hasMother data:Victoria_Romanovna ;
-    :hasSex "Female"^^xsd:string .
+data:Emich_Kyrill%2C_Prince_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:Karl%2C_Prince_of_Leiningen ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Duchess_Eilika_of_Oldenburg .
 
-data:George_Mikhailovich a :Man ;
-    :hasFather data:Franz_Wilhelm_of_Prussia ;
-    :hasMother data:Maria_Vladimirovna ;
-    :hasRelation data:Victoria_Romanovna ;
-    :hasSex "Male"^^xsd:string .
-
-data:Kira_Kirillovna a :Woman .
-
-data:Kirill_Vladimirovich a :Man .
-
-data:Leonida_Bagration-Mukhrani a :Ancestor,
+data:Duchess_Eilika_of_Oldenburg a :Person,
         :Woman ;
-    :hasSex "Female"^^xsd:string .
+    :hasBirthYear 1928 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Nikolaus%2C_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasMother data:Princess_Helena_of_Waldeck_and_Pyrmont .
 
-data:Maria_Vladimirovna a :Person,
+data:Emich%2C_5th_Prince_of_Leiningen a :Man,
+        :Person .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person,
         :Woman ;
-    :hasBirthYear 1953 ;
-    :hasFather data:Vladimir_Kirillovich ;
-    :hasMarriageYear 1976 ;
-    :hasMother data:Leonida_Bagration-Mukhrani ;
-    :hasRelation data:Franz_Wilhelm_of_Prussia ;
-    :hasSex "Female"^^xsd:string .
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .
 
-data:Victoria_Fyodorovna a :Woman .
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Man,
+        :Person .
 
-data:Vladimir_Kirillovich a :Ancestor,
-        :Man ;
-    :hasDeathYear 1992 ;
-    :hasFather data:Kirill_Vladimirovich ;
-    :hasMother data:Victoria_Fyodorovna ;
-    :hasSex "Male"^^xsd:string ;
-    :hasSister data:Kira_Kirillovna .
+data:Karl%2C_Prince_of_Leiningen a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 ;
+    :hasFather data:Emich%2C_5th_Prince_of_Leiningen ;
+    :hasMother data:Princess_Feodore_of_Hohenlohe-Langenburg .
 
-data:Franz_Wilhelm_of_Prussia a :Man ;
-    :hasSex "Male"^^xsd:string .
+data:Nikolaus%2C_Hereditary_Grand_Duke_of_Oldenburg a :Man,
+        :Person .
 
-data:Victoria_Romanovna a :Woman ;
-    :hasSex "Female"^^xsd:string .
+data:Princess_Feodore_of_Hohenlohe-Langenburg a :Person,
+        :Woman .
+
+data:Princess_Helena_of_Waldeck_and_Pyrmont a :Person,
+        :Woman .
+
+data:Princess_Victoria_Melita_of_Edinburgh a :Person,
+        :Woman .
 

@@ -2,21 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:James_Edward_Lascelles a :Man,
+data:Felix a :Man,
         :Person ;
-    :hasBirthYear 1953 ;
-    :hasFather data:7th_Earl_of_Harewood ;
-    :hasMother data:Marion ;
-    :hasSex data:Male ;
-    :isBloodrelationOf data:King_Charles_III .
+    :isBrotherOf data:AthenaOfMonpezat .
 
-data:7th_Earl_of_Harewood a :Ancestor,
-        :Man .
+data:Henrik a :Man,
+        :Person ;
+    :isBrotherOf data:AthenaOfMonpezat .
 
-data:King_Charles_III a :Person .
+data:KingFrederikX a :Man,
+        :Person .
 
-data:Male a :Male .
+data:Nikolai a :Man,
+        :Person ;
+    :isBrotherOf data:AthenaOfMonpezat .
 
-data:Marion a :Ancestor,
+data:PrinceHenrik a :Man,
+        :Person ;
+    :hasChild data:PrinceJoachim .
+
+data:QueenMargretheII a :Person,
+        :Woman ;
+    :hasChild data:PrinceJoachim .
+
+data:PrincessMarieOfDenmark a :Ancestor,
+        :Person,
         :Woman .
+
+data:AthenaOfMonpezat a :Person,
+        :Woman ;
+    :alsoKnownAs "Athena Marguerite Françoise Marie"^^xsd:string ;
+    :hasFather data:PrinceJoachim ;
+    :hasMother data:PrincessMarieOfDenmark ;
+    :knownAs "Her Excellency Countess Athena of Monpezat"^^xsd:string .
+
+data:PrinceJoachim a :Ancestor,
+        :Man,
+        :Person .
 

@@ -85,21 +85,31 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Frederick George William Christopher of Prussia (German: Friedrich Georg Wilhelm Christoph Prinz von Preußen; 19 December 1911 – 20 April 1966), also known as Friedrich von Preussen in the United Kingdom, was the fourth son of Crown Prince Wilhelm of Germany and Duchess Cecilie of Mecklenburg-Schwerin.
-Marriage and issue
+Infante Jaime of Spain, Duke of Segovia  (Spanish: Don Jaime Leopoldo Isabelino Enrique Alejandro Alberto Alfonso Víctor Acacio Pedro Pablo María de Borbón y Battenberg; French: Jacques Léopold Isabellin Henri Alexandre Albért Alphonse Victor Acace Pierre Paul Marie de Bourbon; 23 June 1908 – 20 March 1975), was the second son of King Alfonso XIII of Spain and his wife, Princess Victoria Eugenie of Battenberg.
+Early life
 
-Prince Frederick married Lady Brigid Guinness on 30 July 1945 at Little Hadham.
-British naturalisation in 1947
+Infante Jaime was born 23 June 1908 at the Royal Palace of La Granja de San Ildefonso, the second son of King Alfonso XIII and his Hessian wife, Victoria Eugenie of Battenberg, the youngest granddaughter of Queen Victoria.
+He had three brothers, Alfonso, Prince of Asturias (1907–1938), Infante Juan, Count of Barcelona (1913–1993), and  Infante Gonzalo (1914–1934); and two younger sisters, Infanta Beatriz (1909–2002) and Infanta María Cristina (1911–1996).
+His elder brother, the Prince of Asturias, and his youngest brother, Gonzalo, both had the bleeding disorder hemophilia, the genetic condition that plagued many descendants of Queen Victoria.
+Infante Jaime was born with an infection of the inner ear that progressively worsened, causing him to gradually lose his hearing.
+On 11 June 1933, his elder brother and heir to the defunct throne, Alfonso, renounced his title of Prince of Asturias in order to marry a Cuban commoner.
+Infante Jaime then held the title of Prince of Asturias, as successor to the throne of Spain, for only ten days before under pressure from his father, he was forced also to renounce his rights and the rights of his heirs, in favor of his younger, healthier brother Infante Juan.
+He was then granted the title "Duke of Segovia" by King Alfonso XIII.
+Don Jaime and Donna Emanuela had two sons, named after Jaime's brothers, Alfonso and Gonzalo:
 
-He renounced his German citizenship in 1947.
-He was naturalised as a British citizen in October 1947 under the name Friedrich von Preussen (having also been known during residence in the UK as "George Mansfield").
-This naturalisation was controversial, in part because being a descendant of Sophia of Hanover, and having rights under the Act of Settlement 1701, as amended by the Sophia Naturalisation Act 1705, he had a claim to British citizenship from birth.
+
+Don Jaime and Emmanuelle de Dampierre divorced on 6 May 1947 in Bucharest (recognized by the Italian courts on 3 June 1949 in Turin but never recognized in Spain) and, on 3 August 1949 in Innsbruck, Don Jaime remarried civilly to divorced singer Charlotte Luise Auguste Tiedemann (2 January 1919 in Königsberg – 3 July 1979 in Berlin), daughter of Otto Eugen Tiedemann and wife Luise Amalia Klein.
+In the eyes of the Roman Catholic Church and of the French legitimists, Emmanuelle de Dampierre remained always his wife.
+On 3 May 1964, he took the title "Duke of Madrid" as head of a Carlist branch of the Spanish succession (recognized by the legitimist group of Carlists who did not support the Bourbon-Parma claim after Alfonso Carlos, Duke of San Jaime died in 1936).
+On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favour of his nephew, the future King Juan Carlos I, at the request of his elder son, Alfonso de Borbón.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +125,9 @@ This naturalisation was controversial, in part because being a descendant of Sop
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +142,23 @@ This naturalisation was controversial, in part because being a descendant of Sop
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,129 +450,329 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4fb74c5f-d0e3-4697-936a-742c31195ae0)
- Call ID: 4fb74c5f-d0e3-4697-936a-742c31195ae0
-  Args:
-    type: :Man
-    source: Prince_Frederick_of_Prussia
-  AssignClass (0882e288-e50b-488d-a41e-93c997011e18)
- Call ID: 0882e288-e50b-488d-a41e-93c997011e18
+  AssignClass (d446c1ef-6a53-4c9a-b1a8-6d0a72a08621)
+ Call ID: d446c1ef-6a53-4c9a-b1a8-6d0a72a08621
   Args:
     type: :Person
-    source: Prince_Frederick_of_Prussia
-  AssignClass (6cdc73d7-2499-417f-bfad-0dec60297ecb)
- Call ID: 6cdc73d7-2499-417f-bfad-0dec60297ecb
+    source: Infante_Jaime
+  AssignClass (be3e0b05-f44c-4d20-b4c4-9ada0a368e53)
+ Call ID: be3e0b05-f44c-4d20-b4c4-9ada0a368e53
   Args:
-    type: :Male
-    source: Male
-  AssignClass (a83053df-0691-4bbc-9c20-1dc057be2a90)
- Call ID: a83053df-0691-4bbc-9c20-1dc057be2a90
+    source: Infante_Jaime
+    type: :Man
+  AddLiteral (c994ec54-38af-48cc-bb48-bfe208c178c0)
+ Call ID: c994ec54-38af-48cc-bb48-bfe208c178c0
   Args:
-    type: :Sex
-    source: Male
-  AddTriple (90e5c324-fc4d-408f-8815-837a2308bbe5)
- Call ID: 90e5c324-fc4d-408f-8815-837a2308bbe5
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Prince_Frederick_of_Prussia
-  AddLiteral (8506b1d6-e92a-4c15-a43e-116204629ef7)
- Call ID: 8506b1d6-e92a-4c15-a43e-116204629ef7
-  Args:
-    literal_value: 1911
-    source: Prince_Frederick_of_Prussia
+    literal_type: xsd:integer
+    source: Infante_Jaime
+    literal_value: 1908
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (751c2246-5c61-47dc-9605-605e32a7c5aa)
- Call ID: 751c2246-5c61-47dc-9605-605e32a7c5aa
+  AddLiteral (300fbfcb-cd51-4be9-b7f7-82c1968738f8)
+ Call ID: 300fbfcb-cd51-4be9-b7f7-82c1968738f8
   Args:
-    source: Prince_Frederick_of_Prussia
-    literal_value: 1966
-    literal_type: xsd:integer
+    source: Infante_Jaime
+    literal_value: 1975
     relation: :hasDeathYear
-  AddLiteral (efbd6269-d257-4923-9a5f-82ac7aaf80ba)
- Call ID: efbd6269-d257-4923-9a5f-82ac7aaf80ba
+    literal_type: xsd:integer
+  AssignClass (06fd7365-0f9f-413f-a621-e640009eac7c)
+ Call ID: 06fd7365-0f9f-413f-a621-e640009eac7c
   Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Prince_Frederick_of_Prussia
-    literal_value: Friedrich von Preussen
-  AddLiteral (6cfb4f7d-863e-4c6e-9805-add2cc6f891e)
- Call ID: 6cfb4f7d-863e-4c6e-9805-add2cc6f891e
-  Args:
-    literal_value: George Mansfield
-    source: Prince_Frederick_of_Prussia
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-  AssignClass (4ffdf701-24e6-4def-81ea-4a0d6ca029cb)
- Call ID: 4ffdf701-24e6-4def-81ea-4a0d6ca029cb
+    source: Alfonso_XIII
+    type: :Person
+  AssignClass (c06ece73-54f5-4a7f-830e-cbb93bcf9cb1)
+ Call ID: c06ece73-54f5-4a7f-830e-cbb93bcf9cb1
   Args:
     type: :Man
-    source: Crown_Prince_Wilhelm_of_Germany
-  AssignClass (ca202f48-1245-403c-93bd-531f9dd55f26)
- Call ID: ca202f48-1245-403c-93bd-531f9dd55f26
+    source: Alfonso_XIII
+  AssignClass (b796835d-5023-41e8-93d7-abee6a7a3389)
+ Call ID: b796835d-5023-41e8-93d7-abee6a7a3389
+  Args:
+    source: Victoria_Eugenie
+    type: :Person
+  AssignClass (1271990d-461c-4e84-9917-baff88c74444)
+ Call ID: 1271990d-461c-4e84-9917-baff88c74444
+  Args:
+    type: :Woman
+    source: Victoria_Eugenie
+  AddTriple (0f558338-fdaf-4d66-8b9b-d3f3864fc727)
+ Call ID: 0f558338-fdaf-4d66-8b9b-d3f3864fc727
+  Args:
+    source: Infante_Jaime
+    target: Alfonso_XIII
+    relation: :hasFather
+  AddTriple (d800d070-3aa2-477d-8697-46f0d2970f0f)
+ Call ID: d800d070-3aa2-477d-8697-46f0d2970f0f
+  Args:
+    target: Victoria_Eugenie
+    relation: :hasMother
+    source: Infante_Jaime
+  AssignClass (21b36641-5e62-4c91-92a1-93ac529947f3)
+ Call ID: 21b36641-5e62-4c91-92a1-93ac529947f3
+  Args:
+    source: Alfonso_Prince_of_Asturias
+    type: :Person
+  AssignClass (8debbd61-e043-4e4a-a9e5-edf5486b1daa)
+ Call ID: 8debbd61-e043-4e4a-a9e5-edf5486b1daa
+  Args:
+    type: :Man
+    source: Alfonso_Prince_of_Asturias
+  AssignClass (e3a33ee7-ca20-4737-9288-0e56fbf483c9)
+ Call ID: e3a33ee7-ca20-4737-9288-0e56fbf483c9
+  Args:
+    source: Infante_Juan
+    type: :Person
+  AssignClass (7c4ad685-bfa2-4c59-b3c7-d80b6c62ee0b)
+ Call ID: 7c4ad685-bfa2-4c59-b3c7-d80b6c62ee0b
+  Args:
+    source: Infante_Juan
+    type: :Man
+  AssignClass (81e56425-5e91-4eff-be0e-399c1fbbc09a)
+ Call ID: 81e56425-5e91-4eff-be0e-399c1fbbc09a
   Args:
     type: :Person
-    source: Crown_Prince_Wilhelm_of_Germany
-  AddTriple (b907dc8c-76d5-471d-93ba-dde15a54e1cc)
- Call ID: b907dc8c-76d5-471d-93ba-dde15a54e1cc
+    source: Infante_Gonzalo
+  AssignClass (80c03065-498d-4dd6-86b6-951ab057cf9d)
+ Call ID: 80c03065-498d-4dd6-86b6-951ab057cf9d
+  Args:
+    source: Infante_Gonzalo
+    type: :Man
+  AssignClass (4a36e2d1-9ff5-45e1-988f-1d34318106ea)
+ Call ID: 4a36e2d1-9ff5-45e1-988f-1d34318106ea
+  Args:
+    type: :Person
+    source: Infanta_Beatriz
+  AssignClass (76758af5-6006-4976-85f0-dd5c84fa8ad9)
+ Call ID: 76758af5-6006-4976-85f0-dd5c84fa8ad9
+  Args:
+    source: Infanta_Beatriz
+    type: :Woman
+  AssignClass (37afd338-15a9-4d3e-a1c9-f66d184b35f9)
+ Call ID: 37afd338-15a9-4d3e-a1c9-f66d184b35f9
+  Args:
+    source: Infanta_Maria_Cristina
+    type: :Person
+  AssignClass (ae4c9fe2-c16a-4de3-8c1a-6aac269ddf1a)
+ Call ID: ae4c9fe2-c16a-4de3-8c1a-6aac269ddf1a
+  Args:
+    source: Infanta_Maria_Cristina
+    type: :Woman
+  AddTriple (fe7e56b4-5202-41f3-b937-fd614fe22295)
+ Call ID: fe7e56b4-5202-41f3-b937-fd614fe22295
+  Args:
+    target: Alfonso_Prince_of_Asturias
+    relation: :isSiblingOf
+    source: Infante_Jaime
+  AddTriple (0b66c1c0-c0ea-462a-b00d-b930882af106)
+ Call ID: 0b66c1c0-c0ea-462a-b00d-b930882af106
+  Args:
+    source: Infante_Jaime
+    target: Infante_Juan
+    relation: :isSiblingOf
+  AddTriple (f6a84ea3-2b99-4a5f-b2f4-618fa0df1608)
+ Call ID: f6a84ea3-2b99-4a5f-b2f4-618fa0df1608
+  Args:
+    target: Infante_Gonzalo
+    relation: :isSiblingOf
+    source: Infante_Jaime
+  AddTriple (02e42593-d68f-4cf0-a713-67f338c5f0fd)
+ Call ID: 02e42593-d68f-4cf0-a713-67f338c5f0fd
+  Args:
+    source: Infante_Jaime
+    target: Infanta_Beatriz
+    relation: :isSiblingOf
+  AddTriple (a8ea18e1-42e3-4bd3-88fc-29f83d739e43)
+ Call ID: a8ea18e1-42e3-4bd3-88fc-29f83d739e43
+  Args:
+    target: Infanta_Maria_Cristina
+    relation: :isSiblingOf
+    source: Infante_Jaime
+  AssignClass (d5714dc8-30e8-4663-86cc-ea01fc181bee)
+ Call ID: d5714dc8-30e8-4663-86cc-ea01fc181bee
+  Args:
+    source: Alfonso_de_Borbon
+    type: :Person
+  AssignClass (8090d51e-d394-45b6-9be9-0069386cf51f)
+ Call ID: 8090d51e-d394-45b6-9be9-0069386cf51f
+  Args:
+    type: :Man
+    source: Alfonso_de_Borbon
+  AssignClass (dc2f9ee7-49bb-4c17-85ce-4c9fd7d8ba6d)
+ Call ID: dc2f9ee7-49bb-4c17-85ce-4c9fd7d8ba6d
+  Args:
+    source: Gonzalo_de_Borbon
+    type: :Person
+  AssignClass (daba984f-f68a-4eab-8276-c6bcfbadb805)
+ Call ID: daba984f-f68a-4eab-8276-c6bcfbadb805
+  Args:
+    source: Gonzalo_de_Borbon
+    type: :Man
+  AddTriple (88bad3b4-597b-4f0b-a411-e7dbdeb7236a)
+ Call ID: 88bad3b4-597b-4f0b-a411-e7dbdeb7236a
+  Args:
+    target: Infante_Jaime
+    relation: :hasFather
+    source: Alfonso_de_Borbon
+  AddTriple (8bbca6c9-0822-42fc-86b3-9d40dd290aa7)
+ Call ID: 8bbca6c9-0822-42fc-86b3-9d40dd290aa7
   Args:
     relation: :hasFather
-    source: Prince_Frederick_of_Prussia
-    target: Crown_Prince_Wilhelm_of_Germany
-  AssignClass (8bea0d8d-70dd-47d9-9d8d-ad203f1be7de)
- Call ID: 8bea0d8d-70dd-47d9-9d8d-ad203f1be7de
+    target: Infante_Jaime
+    source: Gonzalo_de_Borbon
+  AssignClass (f4e2547e-d0c8-4036-922f-0c53561a19c4)
+ Call ID: f4e2547e-d0c8-4036-922f-0c53561a19c4
   Args:
-    type: :Woman
-    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (e913a949-ad91-4d75-b867-4e890ca7b0b7)
- Call ID: e913a949-ad91-4d75-b867-4e890ca7b0b7
-  Args:
+    source: Emmanuelle_de_Dampierre
     type: :Person
-    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (c985ccf5-244c-4065-8d54-75f6d07047eb)
- Call ID: c985ccf5-244c-4065-8d54-75f6d07047eb
+  AssignClass (afb88e67-1df9-415b-b179-1d4a92c815d4)
+ Call ID: afb88e67-1df9-415b-b179-1d4a92c815d4
+  Args:
+    source: Emmanuelle_de_Dampierre
+    type: :Woman
+  AddTriple (12f2f471-64fe-4a12-8858-2129d612682f)
+ Call ID: 12f2f471-64fe-4a12-8858-2129d612682f
   Args:
     relation: :hasMother
-    source: Prince_Frederick_of_Prussia
-    target: Duchess_Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (ec7b8991-b0e9-4a10-b271-586ae59de27e)
- Call ID: ec7b8991-b0e9-4a10-b271-586ae59de27e
+    target: Emmanuelle_de_Dampierre
+    source: Alfonso_de_Borbon
+  AddTriple (ca9673ed-ecba-4e65-84a3-8741db8250f9)
+ Call ID: ca9673ed-ecba-4e65-84a3-8741db8250f9
+  Args:
+    source: Gonzalo_de_Borbon
+    target: Emmanuelle_de_Dampierre
+    relation: :hasMother
+  AssignClass (60c2b11c-bac6-40ef-87b0-f5a3eed2f142)
+ Call ID: 60c2b11c-bac6-40ef-87b0-f5a3eed2f142
+  Args:
+    source: Charlotte_Luise_Auguste_Tiedemann
+    type: :Person
+  AssignClass (16fc3571-7ea8-4085-ba63-a2f63e5bb76c)
+ Call ID: 16fc3571-7ea8-4085-ba63-a2f63e5bb76c
   Args:
     type: :Woman
-    source: Lady_Brigid_Guinness
-  AssignClass (08e4350a-cc31-4624-8764-67cbdea1b14e)
- Call ID: 08e4350a-cc31-4624-8764-67cbdea1b14e
+    source: Charlotte_Luise_Auguste_Tiedemann
+  AssignClass (c0e01c14-ae51-4b30-ab1b-bff8352b55e5)
+ Call ID: c0e01c14-ae51-4b30-ab1b-bff8352b55e5
   Args:
+    source: Otto_Eugen_Tiedemann
     type: :Person
-    source: Lady_Brigid_Guinness
-  AddLiteral (29ba9e55-49c5-4cb7-a2a9-de2e6eeb6573)
- Call ID: 29ba9e55-49c5-4cb7-a2a9-de2e6eeb6573
+  AssignClass (1b8fbdfc-1410-4ec6-af61-aec48e7098de)
+ Call ID: 1b8fbdfc-1410-4ec6-af61-aec48e7098de
   Args:
-    literal_value: 1945
-    source: Prince_Frederick_of_Prussia
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (845f292b-5d54-49be-b710-0afada8d32bf)
- Call ID: 845f292b-5d54-49be-b710-0afada8d32bf
+    type: :Man
+    source: Otto_Eugen_Tiedemann
+  AssignClass (e639de6c-92b1-47e1-ba62-8a6168d74e20)
+ Call ID: e639de6c-92b1-47e1-ba62-8a6168d74e20
   Args:
-    source: Prince_Frederick_of_Prussia
-    relation: :hasRelation
-    target: Lady_Brigid_Guinness
-  AssignClass (856cd326-4102-40eb-9839-07337c3b9d74)
- Call ID: 856cd326-4102-40eb-9839-07337c3b9d74
-  Args:
+    source: Luise_Amalia_Klein
     type: :Person
-    source: Sophia_of_Hanover
-  AddTriple (d4b77a13-0973-4f22-a427-f7741900cc2f)
- Call ID: d4b77a13-0973-4f22-a427-f7741900cc2f
+  AssignClass (d85d064c-b7da-48e4-a412-1fb474832c53)
+ Call ID: d85d064c-b7da-48e4-a412-1fb474832c53
   Args:
-    target: Sophia_of_Hanover
-    source: Prince_Frederick_of_Prussia
-    relation: :hasAncestor
-  Finish (4c902ea0-5562-4727-aa6e-c49a9234e1d9)
- Call ID: 4c902ea0-5562-4727-aa6e-c49a9234e1d9
+    source: Luise_Amalia_Klein
+    type: :Woman
+  AddTriple (6d6a90cf-2c0c-448b-a3a9-644653f23585)
+ Call ID: 6d6a90cf-2c0c-448b-a3a9-644653f23585
   Args:
+    source: Charlotte_Luise_Auguste_Tiedemann
+    target: Otto_Eugen_Tiedemann
+    relation: :hasFather
+  AddTriple (393ea47b-762c-42c1-aa76-ad995835936f)
+ Call ID: 393ea47b-762c-42c1-aa76-ad995835936f
+  Args:
+    relation: :hasMother
+    target: Luise_Amalia_Klein
+    source: Charlotte_Luise_Auguste_Tiedemann
+  Finish (251d94c9-4d22-47d5-9ce4-e2f05d64424e)
+ Call ID: 251d94c9-4d22-47d5-9ce4-e2f05d64424e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -561,32 +861,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Frederick_of_Prussia a :Man,
+  data:Alfonso_de_Borbon a :Man,
           :Person ;
-      :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
-          "George Mansfield"^^xsd:string ;
-      :hasAncestor data:Sophia_of_Hanover ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1966 ;
-      :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
-      :hasMarriageYear 1945 ;
-      :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Lady_Brigid_Guinness ;
-      :hasSex data:Male .
+      :hasFather data:Infante_Jaime ;
+      :hasMother data:Emmanuelle_de_Dampierre .
 
-  data:Crown_Prince_Wilhelm_of_Germany a :Man,
+  data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+          :Woman ;
+      :hasFather data:Otto_Eugen_Tiedemann ;
+      :hasMother data:Luise_Amalia_Klein .
+
+  data:Gonzalo_de_Borbon a :Man,
+          :Person ;
+      :hasFather data:Infante_Jaime ;
+      :hasMother data:Emmanuelle_de_Dampierre .
+
+  data:Alfonso_Prince_of_Asturias a :Man,
           :Person .
 
-  data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+  data:Alfonso_XIII a :Man,
+          :Person .
+
+  data:Infanta_Beatriz a :Person,
           :Woman .
 
-  data:Lady_Brigid_Guinness a :Person,
+  data:Infanta_Maria_Cristina a :Person,
           :Woman .
 
-  data:Male a :Male,
-          :Sex .
+  data:Infante_Gonzalo a :Man,
+          :Person .
 
-  data:Sophia_of_Hanover a :Person .
+  data:Infante_Juan a :Man,
+          :Person .
+
+  data:Luise_Amalia_Klein a :Person,
+          :Woman .
+
+  data:Otto_Eugen_Tiedemann a :Man,
+          :Person .
+
+  data:Victoria_Eugenie a :Person,
+          :Woman .
+
+  data:Emmanuelle_de_Dampierre a :Person,
+          :Woman .
+
+  data:Infante_Jaime a :Man,
+          :Person ;
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Alfonso_XIII ;
+      :hasMother data:Victoria_Eugenie ;
+      :isSiblingOf data:Alfonso_Prince_of_Asturias,
+          data:Infanta_Beatriz,
+          data:Infanta_Maria_Cristina,
+          data:Infante_Gonzalo,
+          data:Infante_Juan .
 
 
 
@@ -598,86 +928,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f1ed55a7-29ed-4636-9b5c-9921b4d8ac59)
- Call ID: f1ed55a7-29ed-4636-9b5c-9921b4d8ac59
+  ValidateShacl (9c71af9c-bae5-4f2e-9bed-42988ac6072e)
+ Call ID: 9c71af9c-bae5-4f2e-9bed-42988ac6072e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Sophia_of_Hanover' assigned as an ancestor to 'Prince_Frederick_of_Prussia' lacks the mandatory ':Ancestor' class.
+      The value node Alfonso_XIII is missing the mandatory class :Ancestor required for the hasFather property of Infante_Jaime.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Hanover', class=':Ancestor')
+      AssignClass(node='Alfonso_XIII', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Crown_Prince_Wilhelm_of_Germany' assigned as the father of 'Prince_Frederick_of_Prussia' is missing the required ':Ancestor' class.
+      The value node Otto_Eugen_Tiedemann is missing the mandatory class :Ancestor required for the hasFather property of Charlotte_Luise_Auguste_Tiedemann.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
+      AssignClass(node='Otto_Eugen_Tiedemann', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' assigned as the mother of 'Prince_Frederick_of_Prussia' is missing the required ':Ancestor' class.
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Gonzalo_de_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Sophia_of_Hanover' is missing the ':Ancestor' class required for the 'hasAncestor' relationship.
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Alfonso_de_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Hanover', class=':Ancestor')
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Crown_Prince_Wilhelm_of_Germany' is missing the ':Ancestor' class required for the 'hasFather' relationship.
+      The value node Victoria_Eugenie is missing the mandatory class :Ancestor required for the hasMother property of Infante_Jaime.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
+      AssignClass(node='Victoria_Eugenie', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' is missing the ':Ancestor' class required for the 'hasMother' relationship.
+      The value node Luise_Amalia_Klein is missing the mandatory class :Ancestor required for the hasMother property of Charlotte_Luise_Auguste_Tiedemann.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='Luise_Amalia_Klein', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Sophia_of_Hanover' is missing the ':Ancestor' class required for the 'hasAncestor' relationship.
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Gonzalo_de_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Hanover', class=':Ancestor')
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Crown_Prince_Wilhelm_of_Germany' is missing the ':Ancestor' class required for the 'hasFather' relationship.
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Alfonso_de_Borbon.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
 
 
   Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alfonso_XIII is missing the mandatory class :Ancestor required for the hasFather property of Infante_Jaime.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XIII', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Gonzalo_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Alfonso_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
+
+
+  Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' is missing the ':Ancestor' class required for the 'hasMother' relationship.
+      The value node Victoria_Eugenie is missing the mandatory class :Ancestor required for the hasMother property of Infante_Jaime.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='Victoria_Eugenie', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Gonzalo_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Alfonso_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alfonso_XIII is missing the mandatory class :Ancestor required for the hasFather property of Infante_Jaime.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XIII', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Otto_Eugen_Tiedemann is missing the mandatory class :Ancestor required for the hasFather property of Charlotte_Luise_Auguste_Tiedemann.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Otto_Eugen_Tiedemann', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Gonzalo_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Infante_Jaime is missing the mandatory class :Ancestor required for the hasFather property of Alfonso_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Infante_Jaime', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Victoria_Eugenie is missing the mandatory class :Ancestor required for the hasMother property of Infante_Jaime.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Victoria_Eugenie', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Luise_Amalia_Klein is missing the mandatory class :Ancestor required for the hasMother property of Charlotte_Luise_Auguste_Tiedemann.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Luise_Amalia_Klein', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Gonzalo_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Emmanuelle_de_Dampierre is missing the mandatory class :Ancestor required for the hasMother property of Alfonso_de_Borbon.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Emmanuelle_de_Dampierre', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Otto_Eugen_Tiedemann is missing the mandatory class :Ancestor required for the hasFather property of Charlotte_Luise_Auguste_Tiedemann.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Otto_Eugen_Tiedemann', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Luise_Amalia_Klein is missing the mandatory class :Ancestor required for the hasMother property of Charlotte_Luise_Auguste_Tiedemann.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Luise_Amalia_Klein', class=':Ancestor')
 
 
 
@@ -686,24 +1136,51 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (11e083dc-deb7-4b21-8215-f72dccf1cc02)
- Call ID: 11e083dc-deb7-4b21-8215-f72dccf1cc02
+  AssignClass (f606ab52-069f-4744-9149-2c30a31670dd)
+ Call ID: f606ab52-069f-4744-9149-2c30a31670dd
+  Args:
+    source: Alfonso_XIII
+    type: :Ancestor
+  AssignClass (ddf35816-6829-49fd-89de-381384c3e336)
+ Call ID: ddf35816-6829-49fd-89de-381384c3e336
+  Args:
+    source: Otto_Eugen_Tiedemann
+    type: :Ancestor
+  AssignClass (86d41361-1554-4628-be90-9ddd9e49a1a0)
+ Call ID: 86d41361-1554-4628-be90-9ddd9e49a1a0
+  Args:
+    source: Infante_Jaime
+    type: :Ancestor
+  AssignClass (b033849d-0700-4eb5-95b7-527c093299fc)
+ Call ID: b033849d-0700-4eb5-95b7-527c093299fc
+  Args:
+    source: Victoria_Eugenie
+    type: :Ancestor
+  AssignClass (a8ae31a7-4a2f-408a-91f9-12c44ef89fd0)
+ Call ID: a8ae31a7-4a2f-408a-91f9-12c44ef89fd0
+  Args:
+    source: Luise_Amalia_Klein
+    type: :Ancestor
+  AssignClass (473bb331-5bb0-4a00-a294-1babc4a6aeef)
+ Call ID: 473bb331-5bb0-4a00-a294-1babc4a6aeef
   Args:
     type: :Ancestor
-    source: Sophia_of_Hanover
-  AssignClass (614e9775-21b9-459a-b679-ea9b311ecbd0)
- Call ID: 614e9775-21b9-459a-b679-ea9b311ecbd0
+    source: Emmanuelle_de_Dampierre
+  ValidateShacl (a7cd8909-f4bc-4b4b-88d7-90cc73ce8f49)
+ Call ID: a7cd8909-f4bc-4b4b-88d7-90cc73ce8f49
   Args:
-    source: Crown_Prince_Wilhelm_of_Germany
-    type: :Ancestor
-  AssignClass (67d8d874-7b65-4ded-85b9-5650fc050202)
- Call ID: 67d8d874-7b65-4ded-85b9-5650fc050202
-  Args:
-    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
-    type: :Ancestor
-  ValidateShacl (b4581b6f-84de-4d97-bb1d-3f913cbc88da)
- Call ID: b4581b6f-84de-4d97-bb1d-3f913cbc88da
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -720,35 +1197,68 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Frederick_of_Prussia a :Man,
+  data:Alfonso_de_Borbon a :Man,
           :Person ;
-      :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
-          "George Mansfield"^^xsd:string ;
-      :hasAncestor data:Sophia_of_Hanover ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1966 ;
-      :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
-      :hasMarriageYear 1945 ;
-      :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Lady_Brigid_Guinness ;
-      :hasSex data:Male .
+      :hasFather data:Infante_Jaime ;
+      :hasMother data:Emmanuelle_de_Dampierre .
 
-  data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+  data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+          :Woman ;
+      :hasFather data:Otto_Eugen_Tiedemann ;
+      :hasMother data:Luise_Amalia_Klein .
+
+  data:Gonzalo_de_Borbon a :Man,
+          :Person ;
+      :hasFather data:Infante_Jaime ;
+      :hasMother data:Emmanuelle_de_Dampierre .
+
+  data:Alfonso_Prince_of_Asturias a :Man,
+          :Person .
+
+  data:Alfonso_XIII a :Ancestor,
           :Man,
           :Person .
 
-  data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+  data:Infanta_Beatriz a :Person,
+          :Woman .
+
+  data:Infanta_Maria_Cristina a :Person,
+          :Woman .
+
+  data:Infante_Gonzalo a :Man,
+          :Person .
+
+  data:Infante_Juan a :Man,
+          :Person .
+
+  data:Luise_Amalia_Klein a :Ancestor,
           :Person,
           :Woman .
 
-  data:Lady_Brigid_Guinness a :Person,
+  data:Otto_Eugen_Tiedemann a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Victoria_Eugenie a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Male a :Male,
-          :Sex .
+  data:Emmanuelle_de_Dampierre a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Sophia_of_Hanover a :Ancestor,
-          :Person .
+  data:Infante_Jaime a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Alfonso_XIII ;
+      :hasMother data:Victoria_Eugenie ;
+      :isSiblingOf data:Alfonso_Prince_of_Asturias,
+          data:Infanta_Beatriz,
+          data:Infanta_Maria_Cristina,
+          data:Infante_Gonzalo,
+          data:Infante_Juan .
 
 
 
@@ -760,6 +1270,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c11812dc-c932-4008-b942-26f79e4fc5cc)
- Call ID: c11812dc-c932-4008-b942-26f79e4fc5cc
+  Finish (529a89ac-595b-4f12-a002-b2f75bf2bd60)
+ Call ID: 529a89ac-595b-4f12-a002-b2f75bf2bd60
   Args:

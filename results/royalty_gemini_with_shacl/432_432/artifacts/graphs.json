@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man,\n        :Person ;\n    :hasBirthYear \"1961\"^^xsd:string ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;\n    :hasRelation data:D%C3%A9sir%C3%A9e_Nick .\n\ndata:D%C3%A9sir%C3%A9e_Nick a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:Mary_Cecilia_Bowes-Lyon .\n\ndata:Jeremiah_Colman a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1777 ;\n    :hasDeathYear 1851 ;\n    :isAncestorOf data:Sarah_Troughton .\n\ndata:Charles_Troughton a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Peter_Troughton a :Man,\n        :Person ;\n    :hasBirthYear 1948 ;\n    :hasFather data:Charles_Troughton .\n\ndata:Sarah_Troughton a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Timothy_Colman ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Mary_Cecilia_Bowes-Lyon ;\n    :hasRelation data:Peter_Troughton .\n\ndata:Timothy_Colman a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Mary_Cecilia_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman .\n\n"
     },
     {
         "graph_type": "validation_graph",
         "iteration": 2,
         "source": "validate_shacl",
-        "tool_call_id": "3c13c4b1-9a2e-4ec0-af85-c6675032b222",
+        "tool_call_id": "b9f1802b-2ea7-4723-b272-a3f067badf13",
         "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
     },
     {
@@ -18,6 +18,6 @@
         "iteration": 3,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man,\n        :Person ;\n    :hasBirthYear \"1961\"^^xsd:string ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;\n    :hasRelation data:D%C3%A9sir%C3%A9e_Nick .\n\ndata:D%C3%A9sir%C3%A9e_Nick a :Person,\n        :Woman .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man,\n        :Person .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,\n        :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Claude_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :isAncestorOf data:Mary_Cecilia_Bowes-Lyon .\n\ndata:Jeremiah_Colman a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1777 ;\n    :hasDeathYear 1851 ;\n    :isAncestorOf data:Sarah_Troughton .\n\ndata:Charles_Troughton a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Peter_Troughton a :Man,\n        :Person ;\n    :hasBirthYear 1948 ;\n    :hasFather data:Charles_Troughton .\n\ndata:Sarah_Troughton a :Person,\n        :Woman ;\n    :hasBirthYear 1953 ;\n    :hasFather data:Timothy_Colman ;\n    :hasMarriageYear 1977 ;\n    :hasMother data:Mary_Cecilia_Bowes-Lyon ;\n    :hasRelation data:Peter_Troughton .\n\ndata:Timothy_Colman a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Mary_Cecilia_Bowes-Lyon a :Ancestor,\n        :Person,\n        :Woman .\n\n"
     }
 ]

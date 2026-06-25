@@ -1,0 +1,350 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Queen_Sof%C3%ADa_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSister data:Queen_Sof%C3%ADa_of_Spain ;
+    :isAuntOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isSiblingOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Tatiana_Ellinka_Blatnik a :Person,
+        :Woman ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Tatiana_Ellinka_Blatnik ;
+    :isBloodrelationOf data:Tatiana_Ellinka_Blatnik ;
+    :isSiblingOf data:Tatiana_Ellinka_Blatnik ;
+    :isSisterOf data:Tatiana_Ellinka_Blatnik .
+
+data:Agapi_Politi a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :hasDaughter data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Agapi_Politi ;
+    :isAncestorOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isAuntOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isBloodrelationOf data:Agapi_Politi ;
+    :isMotherOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isParentOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isSiblingOf data:Agapi_Politi ;
+    :isSisterOf data:Agapi_Politi .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Nikolaos_of_Greece_and_Denmark ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Anne-Marie_of_Denmark ;
+    :hasSon data:Nikolaos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isAuntOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark ;
+    :isMotherOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark ;
+    :isSisterOf data:Anne-Marie_of_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Nikolaos_of_Greece_and_Denmark ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSon data:Nikolaos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isUncleOf data:Nikolaos_of_Greece_and_Denmark .
+
+data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasChild data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :hasDaughter data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :isAncestorOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isBloodrelationOf data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :isBrotherOf data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :isFatherOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isParentOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isSiblingOf data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :isUncleOf data:Chrys%C3%AD_Vardinogi%C3%A1nni .
+
+data:Chrys%C3%AD_Vardinogi%C3%A1nni a :Person,
+        :Woman ;
+    :hasAncestor data:Agapi_Politi,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasMother data:Agapi_Politi ;
+    :hasParent data:Agapi_Politi,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isBloodrelationOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isChildOf data:Agapi_Politi,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :isDaughterOf data:Agapi_Politi,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :isSiblingOf data:Chrys%C3%AD_Vardinogi%C3%A1nni ;
+    :isSisterOf data:Chrys%C3%AD_Vardinogi%C3%A1nni .
+
+data:Crown_Prince_Pavlos a :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Prince_Philippos a :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSisterOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Princess_Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSisterOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Nikolaos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :hasBirthYear "1969"^^xsd:positiveInteger ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear "2010"^^xsd:positiveInteger ;
+    :hasMother data:Anne-Marie_of_Denmark ;
+    :hasParent data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Agapi_Politi,
+        data:Anne-Marie_of_Denmark,
+        data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Nikolaos_of_Greece_and_Denmark,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSonOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II_of_Greece .
+

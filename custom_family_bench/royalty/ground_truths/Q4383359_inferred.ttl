@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Ernst_August-_Duke_of_Brunswick a :Man,
+        :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick"^^xsd:string ;
+    data:posIndicesFull "178:190"^^xsd:string,
+        "427:439"^^xsd:string ;
+    data:posIndicesPart "334:339"^^xsd:string ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick"^^xsd:string,
+        "Ernest Augustus"^^xsd:string,
+        "Ernst August I of Brunswick"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasRelation data:Ernst_August-_Duke_of_Brunswick ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isBrotherOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick .
+
+data:Princess_Caroline_of_Monaco a :Person,
+        :Woman ;
+    rdfs:label "Princess Caroline of Monaco"^^xsd:string ;
+    data:posIndicesFull "610:637"^^xsd:string ;
+    data:wdtLink wdt:Q233966 ;
+    :alsoKnownAs "Caroline, Princess of Hanover"^^xsd:string,
+        "Princess Caroline Louise Marguerite of Monaco"^^xsd:string,
+        "Princess Caroline Louise Marguerite of Monaco and Hanover"^^xsd:string ;
+    :hasRelation data:Princess_Caroline_of_Monaco ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Caroline_of_Monaco ;
+    :isBloodrelationOf data:Princess_Caroline_of_Monaco ;
+    :isSiblingOf data:Princess_Caroline_of_Monaco ;
+    :isSisterOf data:Princess_Caroline_of_Monaco .
+
+data:Chantal_Hochuli a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Chantal Hochuli"^^xsd:string ;
+    data:posIndicesFull "231:246"^^xsd:string,
+        "457:472"^^xsd:string ;
+    data:wdtLink wdt:Q3336838 ;
+    :hasChild data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Chantal_Hochuli ;
+    :hasSon data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isAncestorOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isAuntOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBloodrelationOf data:Chantal_Hochuli ;
+    :isMotherOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isParentOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isSiblingOf data:Chantal_Hochuli ;
+    :isSisterOf data:Chantal_Hochuli .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "178:209"^^xsd:string,
+        "427:452"^^xsd:string ;
+    data:posIndicesPart "260:267"^^xsd:string,
+        "334:339"^^xsd:string ;
+    data:wdtLink wdt:Q58070 ;
+    :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover"^^xsd:string,
+        "Ernst August Prinz von Hannover"^^xsd:string,
+        "Ernst August of Hanover"^^xsd:string,
+        "Ernst August von Hanover"^^xsd:string,
+        "Prince Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover"^^xsd:string,
+        "Prince Ernst August Sr."^^xsd:string,
+        "Prince Ernst August of Hanover"^^xsd:string,
+        "Prince Ernst August of Hanover (born 1954)"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasChild data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isAncestorOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isBrotherOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isFatherOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isParentOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isUncleOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover .
+
+data:Prince_Christian_of_Hanover a :Man,
+        :Person ;
+    rdfs:label "Prince Christian of Hanover"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string,
+        "7:27"^^xsd:string ;
+    data:posIndicesPart "260:267"^^xsd:string,
+        "277:286"^^xsd:string,
+        "675:684"^^xsd:string ;
+    data:wdtLink wdt:Q4383359 ;
+    :alsoKnownAs "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz Prince of Hanover"^^xsd:string,
+        "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz Prinz von Hannover"^^xsd:string,
+        "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz of Hanover"^^xsd:string,
+        "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz von Hannover"^^xsd:string,
+        "Christian Prince of Hanover"^^xsd:string,
+        "Christian Prinz von Hannover"^^xsd:string,
+        "Christian of Hanover"^^xsd:string,
+        "Christian von Hannover"^^xsd:string,
+        "Cristián de Hannover"^^xsd:string,
+        "Prince Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz of Hanover"^^xsd:string ;
+    :hasAncestor data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasBrother data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBrotherOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isChildOf data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSiblingOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isSonOf data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 .
+
+data:Prince_Ernst_August_of_Hanover a :Man,
+        :Person ;
+    rdfs:label "Prince Ernst August of Hanover"^^xsd:string ;
+    data:posIndicesFull "178:209"^^xsd:string,
+        "427:452"^^xsd:string ;
+    data:posIndicesPart "260:267"^^xsd:string,
+        "334:339"^^xsd:string ;
+    data:wdtLink wdt:Q4383225 ;
+    :alsoKnownAs "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph Prince of Hanover"^^xsd:string,
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover"^^xsd:string,
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph, Hereditary Prince of Hanover"^^xsd:string,
+        "Ernst August Prince of Hanover"^^xsd:string,
+        "Ernst August Prinz von Hannover"^^xsd:string,
+        "Ernst August von Hannover"^^xsd:string,
+        "Ernst August, Hereditary Prince of Hanover"^^xsd:string,
+        "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover"^^xsd:string,
+        "Prince Ernst August Jr."^^xsd:string ;
+    :hasAncestor data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasBrother data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasParent data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBrotherOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isChildOf data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSiblingOf data:Prince_Christian_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isSonOf data:Chantal_Hochuli,
+        data:Ernst_August-_Prince_of_Hanover_1 .
+

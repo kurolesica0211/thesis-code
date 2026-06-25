@@ -132,6 +132,8 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -147,39 +149,9 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -194,6 +166,23 @@ Through her mother, Katarina descends from Leopold, Grand Duke of Baden, kings G
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -211,6 +200,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,29 +282,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -309,6 +305,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -321,6 +325,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -329,17 +335,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -367,6 +375,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -382,152 +474,243 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (240cf171-1d58-4cb9-bfc3-5e816daf8d6a)
- Call ID: 240cf171-1d58-4cb9-bfc3-5e816daf8d6a
+  AssignClass (0459f162-5420-48f1-a7b9-86ab3430a14b)
+ Call ID: 0459f162-5420-48f1-a7b9-86ab3430a14b
   Args:
+    source: :Katarina_of_Yugoslavia
     type: :Woman
-    source: :Katarina
-  AssignClass (a44c5379-7c0e-4904-985d-2cf1bb42eaab)
- Call ID: a44c5379-7c0e-4904-985d-2cf1bb42eaab
+  AssignClass (97e29312-4eac-47ca-9f3d-93da01fbe268)
+ Call ID: 97e29312-4eac-47ca-9f3d-93da01fbe268
   Args:
+    source: :Katarina_of_Yugoslavia
     type: :Person
-    source: :Katarina
-  AddLiteral (46b9e6e7-a0fb-42ff-ab63-c21c0f2751ab)
- Call ID: 46b9e6e7-a0fb-42ff-ab63-c21c0f2751ab
+  AddLiteral (3ea66549-76d6-4231-a252-a80f74babf38)
+ Call ID: 3ea66549-76d6-4231-a252-a80f74babf38
   Args:
-    source: :Katarina
-    literal_type: xsd:integer
     literal_value: 1959
+    source: :Katarina_of_Yugoslavia
     relation: :hasBirthYear
-  AssignClass (22021a3b-bb4e-4848-81fd-d7268cacfa51)
- Call ID: 22021a3b-bb4e-4848-81fd-d7268cacfa51
+    literal_type: xsd:integer
+  AssignClass (d98c5450-870c-4551-9136-3f4f18fd0c6d)
+ Call ID: d98c5450-870c-4551-9136-3f4f18fd0c6d
   Args:
-    source: :MargaritaOfBaden
+    source: :Margarita_of_Baden
     type: :Woman
-  AssignClass (0d04d088-fd81-4854-8036-b6f653159c3c)
- Call ID: 0d04d088-fd81-4854-8036-b6f653159c3c
+  AssignClass (ae43f873-cc7c-4f7c-b0c9-1adf2dc01961)
+ Call ID: ae43f873-cc7c-4f7c-b0c9-1adf2dc01961
   Args:
-    source: :MargaritaOfBaden
+    source: :Margarita_of_Baden
     type: :Person
-  AddTriple (4f64eccc-a796-45a6-bb01-499bbbf2839a)
- Call ID: 4f64eccc-a796-45a6-bb01-499bbbf2839a
+  AssignClass (2a96ae81-e894-45de-b9b9-b21f901e7f15)
+ Call ID: 2a96ae81-e894-45de-b9b9-b21f901e7f15
   Args:
-    source: :Katarina
+    source: :Tomislav_of_Yugoslavia
+    type: :Man
+  AssignClass (bacf5342-4f7b-4daa-a6fa-9d89d955b83f)
+ Call ID: bacf5342-4f7b-4daa-a6fa-9d89d955b83f
+  Args:
+    source: :Tomislav_of_Yugoslavia
+    type: :Person
+  AddTriple (7227429b-6f77-4b77-9bf7-d61c37badbff)
+ Call ID: 7227429b-6f77-4b77-9bf7-d61c37badbff
+  Args:
     relation: :hasMother
-    target: :MargaritaOfBaden
-  AssignClass (929174b5-2219-4eb4-94dd-1e23db4a0027)
- Call ID: 929174b5-2219-4eb4-94dd-1e23db4a0027
+    target: :Margarita_of_Baden
+    source: :Katarina_of_Yugoslavia
+  AddTriple (7f8dc2de-a1ed-4c5d-935a-faf17fafacf7)
+ Call ID: 7f8dc2de-a1ed-4c5d-935a-faf17fafacf7
   Args:
-    source: :TomislavOfYugoslavia
-    type: :Man
-  AssignClass (1db36730-5e98-4e5e-b3a8-72a12ab3853d)
- Call ID: 1db36730-5e98-4e5e-b3a8-72a12ab3853d
-  Args:
-    source: :TomislavOfYugoslavia
-    type: :Person
-  AddTriple (042abbeb-fca9-45f0-8485-5ae90103d834)
- Call ID: 042abbeb-fca9-45f0-8485-5ae90103d834
-  Args:
-    source: :Katarina
+    source: :Katarina_of_Yugoslavia
+    target: :Tomislav_of_Yugoslavia
     relation: :hasFather
-    target: :TomislavOfYugoslavia
-  AssignClass (bf861642-3d27-4a36-adbd-654ba6901ba3)
- Call ID: bf861642-3d27-4a36-adbd-654ba6901ba3
+  AssignClass (4e4b7231-f2e9-4939-820e-8b943ab300c5)
+ Call ID: 4e4b7231-f2e9-4939-820e-8b943ab300c5
   Args:
+    source: :Nikola_of_Yugoslavia
     type: :Man
-    source: :NikolaOfYugoslavia
-  AssignClass (3e10de8a-3749-4e4b-beb5-0eeaaa7c45fe)
- Call ID: 3e10de8a-3749-4e4b-beb5-0eeaaa7c45fe
+  AssignClass (43c7e9b0-6ce3-4404-8923-1b125887edba)
+ Call ID: 43c7e9b0-6ce3-4404-8923-1b125887edba
   Args:
-    source: :NikolaOfYugoslavia
+    source: :Nikola_of_Yugoslavia
     type: :Person
-  AddTriple (361d8859-4d1c-4dc6-9f95-59dd5a688187)
- Call ID: 361d8859-4d1c-4dc6-9f95-59dd5a688187
+  AddTriple (890b70f0-4b6e-4bfa-aa21-02e6d2c36ade)
+ Call ID: 890b70f0-4b6e-4bfa-aa21-02e6d2c36ade
   Args:
     relation: :hasBrother
-    target: :NikolaOfYugoslavia
-    source: :Katarina
-  AssignClass (450be179-0bf7-444b-9d64-4bc06625521c)
- Call ID: 450be179-0bf7-444b-9d64-4bc06625521c
+    target: :Nikola_of_Yugoslavia
+    source: :Katarina_of_Yugoslavia
+  AssignClass (2f44c5fa-a87f-47cd-8968-bece85fdc8d5)
+ Call ID: 2f44c5fa-a87f-47cd-8968-bece85fdc8d5
   Args:
-    source: :George
+    source: :George_of_Yugoslavia
     type: :Man
-  AssignClass (31e44796-a791-4092-9ba6-e67cbd5d0fab)
- Call ID: 31e44796-a791-4092-9ba6-e67cbd5d0fab
+  AssignClass (70b3b1d8-d74e-487c-a9c5-407aa928f5eb)
+ Call ID: 70b3b1d8-d74e-487c-a9c5-407aa928f5eb
   Args:
+    source: :George_of_Yugoslavia
     type: :Person
-    source: :George
-  AddTriple (c3d29617-0c06-43d7-8710-f45ae89b4c5f)
- Call ID: c3d29617-0c06-43d7-8710-f45ae89b4c5f
+  AssignClass (e8385713-85ac-4e52-b54e-986da214a2f8)
+ Call ID: e8385713-85ac-4e52-b54e-986da214a2f8
   Args:
-    target: :George
+    source: :Michael_of_Yugoslavia
+    type: :Man
+  AssignClass (75a5d744-df02-4094-9f00-a7c1e1b28894)
+ Call ID: 75a5d744-df02-4094-9f00-a7c1e1b28894
+  Args:
+    source: :Michael_of_Yugoslavia
+    type: :Person
+  AddTriple (de280e10-6e75-45e5-ac5e-7a0fdd8c6578)
+ Call ID: de280e10-6e75-45e5-ac5e-7a0fdd8c6578
+  Args:
+    target: :George_of_Yugoslavia
     relation: :hasBrother
-    source: :Katarina
-  AssignClass (6c614314-2a01-41e5-95a8-5c74d9240f57)
- Call ID: 6c614314-2a01-41e5-95a8-5c74d9240f57
+    source: :Katarina_of_Yugoslavia
+  AddTriple (168b75a2-58c5-488d-bef3-f12827a2099d)
+ Call ID: 168b75a2-58c5-488d-bef3-f12827a2099d
   Args:
-    source: :Michael
-    type: :Man
-  AssignClass (aebf595b-8a2a-4d21-af72-e93e3a7ece28)
- Call ID: aebf595b-8a2a-4d21-af72-e93e3a7ece28
-  Args:
-    source: :Michael
-    type: :Person
-  AddTriple (e83598e7-49bc-4a72-9661-0945d7b82441)
- Call ID: e83598e7-49bc-4a72-9661-0945d7b82441
-  Args:
-    source: :Katarina
+    source: :Katarina_of_Yugoslavia
     relation: :hasBrother
-    target: :Michael
-  AssignClass (f156ba0d-ae32-497a-9e58-fb3a8e88b750)
- Call ID: f156ba0d-ae32-497a-9e58-fb3a8e88b750
+    target: :Michael_of_Yugoslavia
+  AssignClass (d59b055f-bbea-4db3-9582-df907fb35e2b)
+ Call ID: d59b055f-bbea-4db3-9582-df907fb35e2b
   Args:
+    source: :Alexander_Crown_Prince_of_Yugoslavia
     type: :Man
-    source: :DesmondDeSilva
-  AssignClass (91bb6ce7-fc1b-409e-9780-0f3182213a43)
- Call ID: 91bb6ce7-fc1b-409e-9780-0f3182213a43
+  AssignClass (4bba3e56-797d-4de4-9c0e-96b4415270ca)
+ Call ID: 4bba3e56-797d-4de4-9c0e-96b4415270ca
   Args:
+    source: :Alexander_Crown_Prince_of_Yugoslavia
     type: :Person
-    source: :DesmondDeSilva
-  AddLiteral (909773ce-117c-4717-8e5c-fed3975b96e5)
- Call ID: 909773ce-117c-4717-8e5c-fed3975b96e5
+  AssignClass (602b2d7a-9d7a-4f14-afb5-ca42d82cb84a)
+ Call ID: 602b2d7a-9d7a-4f14-afb5-ca42d82cb84a
   Args:
-    literal_value: 1987
+    source: :Theodora_Margravine_of_Baden
+    type: :Woman
+  AssignClass (65969417-5f14-419c-9673-255fc5b18fab)
+ Call ID: 65969417-5f14-419c-9673-255fc5b18fab
+  Args:
+    source: :Theodora_Margravine_of_Baden
+    type: :Person
+  AddTriple (870da3bd-2099-42aa-a41a-a99442194065)
+ Call ID: 870da3bd-2099-42aa-a41a-a99442194065
+  Args:
+    source: :Margarita_of_Baden
+    relation: :hasMother
+    target: :Theodora_Margravine_of_Baden
+  AssignClass (05cfcdeb-b209-4b6c-9a5e-ed63c1f757c2)
+ Call ID: 05cfcdeb-b209-4b6c-9a5e-ed63c1f757c2
+  Args:
+    source: :Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (78bfed77-1d64-41e2-96ab-7e9db68a8bca)
+ Call ID: 78bfed77-1d64-41e2-96ab-7e9db68a8bca
+  Args:
+    source: :Philip_Duke_of_Edinburgh
+    type: :Person
+  AddTriple (a03fcf3b-62fa-4033-81ea-3af21603c8a2)
+ Call ID: a03fcf3b-62fa-4033-81ea-3af21603c8a2
+  Args:
+    source: :Theodora_Margravine_of_Baden
+    relation: :hasBrother
+    target: :Philip_Duke_of_Edinburgh
+  AssignClass (11e6b623-5d44-4228-af24-c91541325a21)
+ Call ID: 11e6b623-5d44-4228-af24-c91541325a21
+  Args:
+    source: :Elizabeth_II
+    type: :Woman
+  AssignClass (5de27df5-9c4b-49ad-9a90-238e6315e3fb)
+ Call ID: 5de27df5-9c4b-49ad-9a90-238e6315e3fb
+  Args:
+    source: :Elizabeth_II
+    type: :Person
+  AssignClass (fe07cb6f-2b04-4430-96b2-0e3ab44fc91c)
+ Call ID: fe07cb6f-2b04-4430-96b2-0e3ab44fc91c
+  Args:
+    source: :Desmond_de_Silva
+    type: :Man
+  AssignClass (dc44f096-f3da-4605-be4b-76d3e32d0bd3)
+ Call ID: dc44f096-f3da-4605-be4b-76d3e32d0bd3
+  Args:
+    source: :Desmond_de_Silva
+    type: :Person
+  AddTriple (1b811312-04fb-47dd-ab03-9bb2824219ed)
+ Call ID: 1b811312-04fb-47dd-ab03-9bb2824219ed
+  Args:
+    relation: :hasMarriageYear
+    target: :Desmond_de_Silva
+    source: :Katarina_of_Yugoslavia
+  AddLiteral (6a33184f-00c0-44ba-bbc4-d21020747655)
+ Call ID: 6a33184f-00c0-44ba-bbc4-d21020747655
+  Args:
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: :Katarina
-  AssignClass (03f9acc9-7d6e-4c19-a8fe-a84b94d2e1ef)
- Call ID: 03f9acc9-7d6e-4c19-a8fe-a84b94d2e1ef
+    literal_value: 1987
+    source: :Katarina_of_Yugoslavia
+  AssignClass (5835b242-54a9-48ed-9fb2-061c542eb347)
+ Call ID: 5835b242-54a9-48ed-9fb2-061c542eb347
   Args:
-    source: :VictoriaMarieEsmeMargarita
+    source: :Victoria_Marie_Esme_Margarita
     type: :Woman
-  AssignClass (1c983024-f916-452a-8e50-85dcc03c75d1)
- Call ID: 1c983024-f916-452a-8e50-85dcc03c75d1
+  AssignClass (961502f1-dc46-4279-aa40-7230d78f5c7f)
+ Call ID: 961502f1-dc46-4279-aa40-7230d78f5c7f
   Args:
-    source: :VictoriaMarieEsmeMargarita
+    source: :Victoria_Marie_Esme_Margarita
     type: :Person
-  AddTriple (ed1ebd49-875e-4ab1-b7f9-04491a88ed12)
- Call ID: ed1ebd49-875e-4ab1-b7f9-04491a88ed12
+  AddTriple (8e261acb-503a-46c0-85ba-3f18fa4a9d04)
+ Call ID: 8e261acb-503a-46c0-85ba-3f18fa4a9d04
   Args:
-    source: :VictoriaMarieEsmeMargarita
-    relation: :isDaughterOf
-    target: :Katarina
-  AddTriple (8ca02315-1a33-4713-9fd3-2fa53ff90691)
- Call ID: 8ca02315-1a33-4713-9fd3-2fa53ff90691
+    source: :Katarina_of_Yugoslavia
+    relation: :hasDaughter
+    target: :Victoria_Marie_Esme_Margarita
+  AddTriple (21971a77-5f0a-421f-a3f6-2549f4b0cd90)
+ Call ID: 21971a77-5f0a-421f-a3f6-2549f4b0cd90
   Args:
-    target: :DesmondDeSilva
-    relation: :isDaughterOf
-    source: :VictoriaMarieEsmeMargarita
-  AddLiteral (b540206b-28bb-42c7-b185-8be3a0aace2e)
- Call ID: b540206b-28bb-42c7-b185-8be3a0aace2e
+    target: :Desmond_de_Silva
+    relation: :hasFather
+    source: :Victoria_Marie_Esme_Margarita
+  Finish (1b9ce910-ef92-4d90-8f24-06366b8dbc7e)
+ Call ID: 1b9ce910-ef92-4d90-8f24-06366b8dbc7e
   Args:
-    literal_value: 1991
-    relation: :hasBirthYear
-    source: :VictoriaMarieEsmeMargarita
-    literal_type: xsd:integer
-  Finish (17f27822-4989-4fc7-a638-08074299546a)
- Call ID: 17f27822-4989-4fc7-a638-08074299546a
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -636,38 +819,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:VictoriaMarieEsmeMargarita a :Person,
-          :Woman ;
-      :hasBirthYear 1991 ;
-      :isDaughterOf data:DesmondDeSilva,
-          data:Katarina .
-
-  data:DesmondDeSilva a :Man,
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
           :Person .
 
-  data:George a :Man,
-          :Person .
-
-  data:Katarina a :Person,
-          :Woman ;
-      :hasBirthYear 1959 ;
-      :hasBrother data:George,
-          data:Michael,
-          data:NikolaOfYugoslavia ;
-      :hasFather data:TomislavOfYugoslavia ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:MargaritaOfBaden .
-
-  data:MargaritaOfBaden a :Person,
+  data:Elizabeth_II a :Person,
           :Woman .
 
-  data:Michael a :Man,
+  data:Katarina_of_Yugoslavia a :Person,
+          :Woman ;
+      :hasBirthYear 1959 ;
+      :hasBrother data:George_of_Yugoslavia,
+          data:Michael_of_Yugoslavia,
+          data:Nikola_of_Yugoslavia ;
+      :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+      :hasFather data:Tomislav_of_Yugoslavia ;
+      :hasMarriageYear data:Desmond_de_Silva,
+          1987 ;
+      :hasMother data:Margarita_of_Baden .
+
+  data:George_of_Yugoslavia a :Man,
           :Person .
 
-  data:NikolaOfYugoslavia a :Man,
+  data:Margarita_of_Baden a :Person,
+          :Woman ;
+      :hasMother data:Theodora_Margravine_of_Baden .
+
+  data:Michael_of_Yugoslavia a :Man,
           :Person .
 
-  data:TomislavOfYugoslavia a :Man,
+  data:Nikola_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Theodora_Margravine_of_Baden a :Person,
+          :Woman ;
+      :hasBrother data:Philip_Duke_of_Edinburgh .
+
+  data:Tomislav_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Victoria_Marie_Esme_Margarita a :Person,
+          :Woman ;
+      :hasFather data:Desmond_de_Silva .
+
+  data:Desmond_de_Silva a :Man,
           :Person .
 
 
@@ -680,8 +877,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4fae6259-d193-4f02-8695-a0711ba6d552)
- Call ID: 4fae6259-d193-4f02-8695-a0711ba6d552
+  ValidateShacl (c5558289-7d8a-45e4-a6fc-2e446993fa7c)
+ Call ID: c5558289-7d8a-45e4-a6fc-2e446993fa7c
   Args:
 
 ================================= Tool Message =================================
@@ -693,97 +890,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node TomislavOfYugoslavia is assigned as the father of Katarina, but it is missing the required :Ancestor class.
+      The node Desmond_de_Silva is assigned as the father of Victoria_Marie_Esme_Margarita, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(TomislavOfYugoslavia, :Ancestor)
+      AssignClass(node='Desmond_de_Silva', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node MargaritaOfBaden is assigned as the mother of Katarina, but it is missing the required :Ancestor class.
+      The node Tomislav_of_Yugoslavia is assigned as the father of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MargaritaOfBaden, :Ancestor)
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node DesmondDeSilva is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Margarita_of_Baden is assigned as the mother of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DesmondDeSilva, :Ancestor)
+      AssignClass(node='Margarita_of_Baden', class=':Woman')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katarina is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Theodora_Margravine_of_Baden is assigned as the mother of Margarita_of_Baden, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katarina, :Ancestor)
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Woman')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node TomislavOfYugoslavia is assigned as the father of Katarina, but it is missing the required :Ancestor class.
+      The node Desmond_de_Silva is assigned as the father of Victoria_Marie_Esme_Margarita, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(TomislavOfYugoslavia, :Ancestor)
+      AssignClass(node='Desmond_de_Silva', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node MargaritaOfBaden is assigned as the mother of Katarina, but it is missing the required :Ancestor class.
+      The node Tomislav_of_Yugoslavia is assigned as the father of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MargaritaOfBaden, :Ancestor)
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node DesmondDeSilva is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Margarita_of_Baden is assigned as the mother of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DesmondDeSilva, :Ancestor)
+      AssignClass(node='Margarita_of_Baden', class=':Woman')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katarina is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Theodora_Margravine_of_Baden is assigned as the mother of Margarita_of_Baden, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katarina, :Ancestor)
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Woman')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node TomislavOfYugoslavia is assigned as the father of Katarina, but it is missing the required :Ancestor class.
+      The node Desmond_de_Silva is assigned as the father of Victoria_Marie_Esme_Margarita, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(TomislavOfYugoslavia, :Ancestor)
+      AssignClass(node='Desmond_de_Silva', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node MargaritaOfBaden is assigned as the mother of Katarina, but it is missing the required :Ancestor class.
+      The node Tomislav_of_Yugoslavia is assigned as the father of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MargaritaOfBaden, :Ancestor)
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Man')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node DesmondDeSilva is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Margarita_of_Baden is assigned as the mother of Katarina_of_Yugoslavia, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DesmondDeSilva, :Ancestor)
+      AssignClass(node='Margarita_of_Baden', class=':Woman')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katarina is identified as a daughter of VictoriaMarieEsmeMargarita, but it is missing the required :Ancestor class.
+      The node Theodora_Margravine_of_Baden is assigned as the mother of Margarita_of_Baden, but it lacks the required class assignment of :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katarina, :Ancestor)
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Woman')
 
 
 
@@ -792,28 +989,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (adba00ff-ecbb-48a9-96e0-e7f06faf4531)
- Call ID: adba00ff-ecbb-48a9-96e0-e7f06faf4531
+  AssignClass (8d3224ff-77ab-4e24-9584-6e2a6a1b6bff)
+ Call ID: 8d3224ff-77ab-4e24-9584-6e2a6a1b6bff
   Args:
-    source: :TomislavOfYugoslavia
-    type: :Ancestor
-  AssignClass (361f49ae-8f56-449c-ae62-276ca9ff8f21)
- Call ID: 361f49ae-8f56-449c-ae62-276ca9ff8f21
+    source: :Desmond_de_Silva
+    type: :Man
+  AssignClass (f46ec679-f49e-4ef8-86b3-fd87cf22b51a)
+ Call ID: f46ec679-f49e-4ef8-86b3-fd87cf22b51a
   Args:
-    source: :MargaritaOfBaden
-    type: :Ancestor
-  AssignClass (ab6fedcb-be50-4dcc-bd54-655622efd5e2)
- Call ID: ab6fedcb-be50-4dcc-bd54-655622efd5e2
+    type: :Man
+    source: :Tomislav_of_Yugoslavia
+  AssignClass (dc1e7072-da12-4d65-a84b-f1cc8a137897)
+ Call ID: dc1e7072-da12-4d65-a84b-f1cc8a137897
   Args:
-    source: :DesmondDeSilva
-    type: :Ancestor
-  AssignClass (890cc1b5-0e1c-489e-a4a0-434e30a696ab)
- Call ID: 890cc1b5-0e1c-489e-a4a0-434e30a696ab
+    source: :Margarita_of_Baden
+    type: :Woman
+  AssignClass (28972e48-d200-44f3-8ee2-fbcac62aee2b)
+ Call ID: 28972e48-d200-44f3-8ee2-fbcac62aee2b
   Args:
-    type: :Ancestor
-    source: :Katarina
-  ValidateShacl (845caa4b-0408-4238-98e5-14f888500e0d)
- Call ID: 845caa4b-0408-4238-98e5-14f888500e0d
+    type: :Woman
+    source: :Theodora_Margravine_of_Baden
+  Finish (f9fb21d7-385c-4c9e-acd6-fc5e6567525a)
+ Call ID: f9fb21d7-385c-4c9e-acd6-fc5e6567525a
   Args:
 
 ================================= Tool Message =================================
@@ -835,45 +1032,787 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:VictoriaMarieEsmeMargarita a :Person,
-          :Woman ;
-      :hasBirthYear 1991 ;
-      :isDaughterOf data:DesmondDeSilva,
-          data:Katarina .
-
-  data:DesmondDeSilva a :Ancestor,
-          :Man,
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
           :Person .
 
-  data:George a :Man,
-          :Person .
-
-  data:Katarina a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1959 ;
-      :hasBrother data:George,
-          data:Michael,
-          data:NikolaOfYugoslavia ;
-      :hasFather data:TomislavOfYugoslavia ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:MargaritaOfBaden .
-
-  data:MargaritaOfBaden a :Ancestor,
-          :Person,
+  data:Elizabeth_II a :Person,
           :Woman .
 
-  data:Michael a :Man,
+  data:Katarina_of_Yugoslavia a :Person,
+          :Woman ;
+      :hasBirthYear 1959 ;
+      :hasBrother data:George_of_Yugoslavia,
+          data:Michael_of_Yugoslavia,
+          data:Nikola_of_Yugoslavia ;
+      :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+      :hasFather data:Tomislav_of_Yugoslavia ;
+      :hasMarriageYear data:Desmond_de_Silva,
+          1987 ;
+      :hasMother data:Margarita_of_Baden .
+
+  data:George_of_Yugoslavia a :Man,
           :Person .
 
-  data:NikolaOfYugoslavia a :Man,
+  data:Margarita_of_Baden a :Person,
+          :Woman ;
+      :hasMother data:Theodora_Margravine_of_Baden .
+
+  data:Michael_of_Yugoslavia a :Man,
           :Person .
 
-  data:TomislavOfYugoslavia a :Ancestor,
+  data:Nikola_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Theodora_Margravine_of_Baden a :Person,
+          :Woman ;
+      :hasBrother data:Philip_Duke_of_Edinburgh .
+
+  data:Tomislav_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Victoria_Marie_Esme_Margarita a :Person,
+          :Woman ;
+      :hasFather data:Desmond_de_Silva .
+
+  data:Desmond_de_Silva a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b10bbee7-c104-4518-b07b-b878e2e7a08c)
+ Call ID: b10bbee7-c104-4518-b07b-b878e2e7a08c
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:12
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Desmond_de_Silva is set as the father of Victoria_Marie_Esme_Margarita but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Desmond_de_Silva.
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Tomislav_of_Yugoslavia is set as the father of Katarina_of_Yugoslavia but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Tomislav_of_Yugoslavia.
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Margarita_of_Baden is set as the mother of Katarina_of_Yugoslavia but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Margarita_of_Baden.
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Theodora_Margravine_of_Baden is set as the mother of Margarita_of_Baden but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Theodora_Margravine_of_Baden.
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Desmond_de_Silva is set as the father of Victoria_Marie_Esme_Margarita but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Desmond_de_Silva.
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Tomislav_of_Yugoslavia is set as the father of Katarina_of_Yugoslavia but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Tomislav_of_Yugoslavia.
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Margarita_of_Baden is set as the mother of Katarina_of_Yugoslavia but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Margarita_of_Baden.
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Theodora_Margravine_of_Baden is set as the mother of Margarita_of_Baden but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Theodora_Margravine_of_Baden.
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Desmond_de_Silva is set as the father of Victoria_Marie_Esme_Margarita but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Desmond_de_Silva.
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Tomislav_of_Yugoslavia is set as the father of Katarina_of_Yugoslavia but lacks the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Man to the node Tomislav_of_Yugoslavia.
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Margarita_of_Baden is set as the mother of Katarina_of_Yugoslavia but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Margarita_of_Baden.
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Theodora_Margravine_of_Baden is set as the mother of Margarita_of_Baden but lacks the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add :Woman to the node Theodora_Margravine_of_Baden.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (5bbb15ef-d83c-4913-a4c3-05f98c57813c)
+ Call ID: 5bbb15ef-d83c-4913-a4c3-05f98c57813c
+  Args:
+    source: :Desmond_de_Silva
+    target: :Male
+    relation: :hasSex
+  AddTriple (6755ca61-8186-4eb6-8604-2f1b897b6e89)
+ Call ID: 6755ca61-8186-4eb6-8604-2f1b897b6e89
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Tomislav_of_Yugoslavia
+  AddTriple (4736e0b0-c741-4b54-a0b4-d23bc53de4dc)
+ Call ID: 4736e0b0-c741-4b54-a0b4-d23bc53de4dc
+  Args:
+    target: :Female
+    source: :Margarita_of_Baden
+    relation: :hasSex
+  AddTriple (c4a15c81-5054-47cd-b7c8-d3271db2ee3d)
+ Call ID: c4a15c81-5054-47cd-b7c8-d3271db2ee3d
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: :Theodora_Margravine_of_Baden
+  Finish (713a1872-2613-4948-8e78-36ef3b93c0ff)
+ Call ID: 713a1872-2613-4948-8e78-36ef3b93c0ff
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Elizabeth_II a :Person,
+          :Woman .
+
+  data:Katarina_of_Yugoslavia a :Person,
+          :Woman ;
+      :hasBirthYear 1959 ;
+      :hasBrother data:George_of_Yugoslavia,
+          data:Michael_of_Yugoslavia,
+          data:Nikola_of_Yugoslavia ;
+      :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+      :hasFather data:Tomislav_of_Yugoslavia ;
+      :hasMarriageYear data:Desmond_de_Silva,
+          1987 ;
+      :hasMother data:Margarita_of_Baden .
+
+  data:George_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Margarita_of_Baden a :Person,
+          :Woman ;
+      :hasMother data:Theodora_Margravine_of_Baden ;
+      :hasSex data:Female .
+
+  data:Michael_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Nikola_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Theodora_Margravine_of_Baden a :Person,
+          :Woman ;
+      :hasBrother data:Philip_Duke_of_Edinburgh ;
+      :hasSex data:Female .
+
+  data:Tomislav_of_Yugoslavia a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Victoria_Marie_Esme_Margarita a :Person,
+          :Woman ;
+      :hasFather data:Desmond_de_Silva .
+
+  data:Desmond_de_Silva a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (bd967742-f21e-4beb-bbc4-1ba8816b4825)
+ Call ID: bd967742-f21e-4beb-bbc4-1ba8816b4825
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:44
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Desmond_de_Silva' for the property 'hasFather' on node 'Victoria_Marie_Esme_Margarita' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Desmond_de_Silva', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Tomislav_of_Yugoslavia' for the property 'hasFather' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Margarita_of_Baden' for the property 'hasMother' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margarita_of_Baden', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Theodora_Margravine_of_Baden' for the property 'hasMother' on node 'Margarita_of_Baden' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Desmond_de_Silva' for the property 'hasFather' on node 'Victoria_Marie_Esme_Margarita' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Desmond_de_Silva', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Tomislav_of_Yugoslavia' for the property 'hasFather' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Margarita_of_Baden' for the property 'hasMother' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margarita_of_Baden', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Theodora_Margravine_of_Baden' for the property 'hasMother' on node 'Margarita_of_Baden' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Desmond_de_Silva' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Tomislav_of_Yugoslavia' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Desmond_de_Silva' for the property 'hasFather' on node 'Victoria_Marie_Esme_Margarita' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Desmond_de_Silva', class=':Ancestor')
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Tomislav_of_Yugoslavia' for the property 'hasFather' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Tomislav_of_Yugoslavia', class=':Ancestor')
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Margarita_of_Baden' for the property 'hasMother' on node 'Katarina_of_Yugoslavia' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margarita_of_Baden', class=':Ancestor')
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Theodora_Margravine_of_Baden' for the property 'hasMother' on node 'Margarita_of_Baden' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Theodora_Margravine_of_Baden', class=':Ancestor')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Margarita_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Theodora_Margravine_of_Baden' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (ba342ddd-bdbc-4e3d-b438-f7971d5dbe95)
+ Call ID: ba342ddd-bdbc-4e3d-b438-f7971d5dbe95
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (586971d8-362b-4458-931e-636256cd17e5)
+ Call ID: 586971d8-362b-4458-931e-636256cd17e5
+  Args:
+    source: :Female
+    type: :Sex
+  AssignClass (128d3222-2d0b-4282-bc74-dc20da71fe45)
+ Call ID: 128d3222-2d0b-4282-bc74-dc20da71fe45
+  Args:
+    source: :Desmond_de_Silva
+    type: :Ancestor
+  AssignClass (6afb0349-641b-4a64-82e5-3d591c4a9e72)
+ Call ID: 6afb0349-641b-4a64-82e5-3d591c4a9e72
+  Args:
+    type: :Ancestor
+    source: :Tomislav_of_Yugoslavia
+  AssignClass (26cb8623-e293-4a94-b46f-52a9799d927b)
+ Call ID: 26cb8623-e293-4a94-b46f-52a9799d927b
+  Args:
+    type: :Ancestor
+    source: :Margarita_of_Baden
+  AssignClass (50f8ac7d-411f-4bb9-b749-b5fe5b1caad3)
+ Call ID: 50f8ac7d-411f-4bb9-b749-b5fe5b1caad3
+  Args:
+    type: :Ancestor
+    source: :Theodora_Margravine_of_Baden
+  Finish (5acfc362-5b55-491d-9939-482b1388405b)
+ Call ID: 5acfc362-5b55-491d-9939-482b1388405b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Elizabeth_II a :Person,
+          :Woman .
+
+  data:Katarina_of_Yugoslavia a :Person,
+          :Woman ;
+      :hasBirthYear 1959 ;
+      :hasBrother data:George_of_Yugoslavia,
+          data:Michael_of_Yugoslavia,
+          data:Nikola_of_Yugoslavia ;
+      :hasDaughter data:Victoria_Marie_Esme_Margarita ;
+      :hasFather data:Tomislav_of_Yugoslavia ;
+      :hasMarriageYear data:Desmond_de_Silva,
+          1987 ;
+      :hasMother data:Margarita_of_Baden .
+
+  data:George_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Margarita_of_Baden a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Theodora_Margravine_of_Baden ;
+      :hasSex data:Female .
+
+  data:Michael_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Nikola_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Theodora_Margravine_of_Baden a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBrother data:Philip_Duke_of_Edinburgh ;
+      :hasSex data:Female .
+
+  data:Tomislav_of_Yugoslavia a :Ancestor,
           :Man,
-          :Person .
+          :Person ;
+      :hasSex data:Male .
+
+  data:Victoria_Marie_Esme_Margarita a :Person,
+          :Woman ;
+      :hasFather data:Desmond_de_Silva .
+
+  data:Desmond_de_Silva a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (639e0b31-6da5-4fe3-aa1b-04c626979d90)
+ Call ID: 639e0b31-6da5-4fe3-aa1b-04c626979d90
+  Args:
 
 ================================= Tool Message =================================
 
@@ -883,6 +1822,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0691f98b-2c5e-428b-ba34-3e2a032a2624)
- Call ID: 0691f98b-2c5e-428b-ba34-3e2a032a2624
+  Finish (115cf20b-bf5d-4ee5-a0fb-111c84786235)
+ Call ID: 115cf20b-bf5d-4ee5-a0fb-111c84786235
   Args:

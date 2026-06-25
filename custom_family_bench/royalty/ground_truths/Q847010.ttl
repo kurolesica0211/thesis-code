@@ -7,30 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Irene_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Irene of Greece and Denmark" ;
-    data:posIndicesFull "3491:3527" ;
-    data:posIndicesPart "3824:3832" ;
-    data:wdtLink wdt:Q242298 ;
-    :alsoKnownAs "Irene zu Schleswig-Holstein-Sonderburg-Glücksburg, Πριγκίπισσα της Ελλάδος",
-        "Ειρήνη της Ελλάδας και της Δανίας" ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isAuntOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isSisterOf data:Queen_Sofía_of_Spain .
-
-data:Infanta_Sofía_of_Spain a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Sofía_of_Spain a :Person ;
     rdfs:label "Infanta Sofía of Spain" ;
     data:posIndicesFull "130:152" ;
     data:posIndicesPart "1028:1033",
@@ -64,18 +41,10 @@ data:Infanta_Sofía_of_Spain a :Person,
     data:wdtLink wdt:Q847010 ;
     :alsoKnownAs "Princess Sofia",
         "Sofía de Borbón y Ortiz, infanta de España" ;
-    :hasFather data:Felipe_VI_of_Spain ;
     :hasParent data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Leonor-_Princess_of_Asturias ;
-    :isChildOf data:Felipe_VI_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Leonor-_Princess_of_Asturias ;
-    :isSisterOf data:Leonor-_Princess_of_Asturias .
+    :hasSex data:female .
 
-data:Leonor-_Princess_of_Asturias a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Leonor-_Princess_of_Asturias a :Person ;
     rdfs:label "Leonor, Princess of Asturias" ;
     data:posIndicesFull "1688:1703",
         "3073:3101",
@@ -87,6 +56,7 @@ data:Leonor-_Princess_of_Asturias a :Person,
         "2946:2954",
         "3339:3345",
         "3374:3380",
+        "3491:3499",
         "3651:3659",
         "3824:3832",
         "785:793",
@@ -96,19 +66,16 @@ data:Leonor-_Princess_of_Asturias a :Person,
     :alsoKnownAs "Infanta Leonor of Spain",
         "Leonor de Todos los Santos de Borbón y Ortiz",
         "Princess Leonor" ;
-    :hasFather data:Felipe_VI_of_Spain ;
     :hasParent data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Sofía_of_Spain ;
-    :isChildOf data:Felipe_VI_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Infanta_Sofía_of_Spain ;
-    :isSisterOf data:Infanta_Sofía_of_Spain .
+    :hasSex data:female .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Sofía_of_Spain a :Person ;
     rdfs:label "Queen Sofía of Spain" ;
     data:posIndicesFull "17:29",
         "3262:3273",
@@ -139,19 +106,11 @@ data:Queen_Sofía_of_Spain a :Ancestor,
         "Queen Sofia of Spain",
         "Queen Sofía",
         "Queen Sofía, Queen Consort of Spain" ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isMotherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
-    :isSisterOf data:Princess_Irene_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:male a :Male .
+
+data:Felipe_VI_of_Spain a :Person ;
     rdfs:label "Felipe VI of Spain" ;
     data:posIndicesFull "296:305",
         "3232:3241" ;
@@ -167,17 +126,8 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "Felipe VI",
         "Philip John Paul Alphonse of All Saints of Bourbon",
         "Philip VI of Spain" ;
-    :hasChild data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasDaughter data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isParentOf data:Infanta_Sofía_of_Spain,
-        data:Leonor-_Princess_of_Asturias ;
-    :isSonOf data:Queen_Sofía_of_Spain .
+    :hasSex data:male .
+
+data:female a :Female .
 

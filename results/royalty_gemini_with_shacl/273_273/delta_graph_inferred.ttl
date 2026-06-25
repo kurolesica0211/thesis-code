@@ -1,0 +1,235 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAncestorOf data:Marina_Windsor ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Sylvana_Tomaselli a :Ancestor,
+        :Woman ;
+    :hasChild data:Marina_Windsor ;
+    :hasDaughter data:Marina_Windsor ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Sylvana_Tomaselli ;
+    :isAncestorOf data:Marina_Windsor ;
+    :isAuntOf data:Marina_Windsor ;
+    :isBloodrelationOf data:Sylvana_Tomaselli ;
+    :isMotherOf data:Marina_Windsor ;
+    :isParentOf data:Marina_Windsor ;
+    :isSiblingOf data:Sylvana_Tomaselli ;
+    :isSisterOf data:Sylvana_Tomaselli .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:George_Windsor ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSon data:George_Windsor ;
+    :isAncestorOf data:George_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:George_Windsor ;
+    :isParentOf data:George_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:George_Windsor .
+
+data:William_Worsley a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Worsley ;
+    :hasChild data:Katharine_Duchess_of_Kent ;
+    :hasDaughter data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :isAncestorOf data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:William_Worsley ;
+    :isBrotherOf data:William_Worsley ;
+    :isFatherOf data:Katharine_Duchess_of_Kent ;
+    :isParentOf data:Katharine_Duchess_of_Kent ;
+    :isSiblingOf data:William_Worsley ;
+    :isUncleOf data:Katharine_Duchess_of_Kent .
+
+data:Amelia_Windsor a :Woman ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSisterOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isBrotherOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Woman ;
+    :hasAncestor data:William_Worsley ;
+    :hasChild data:George_Windsor ;
+    :hasFather data:William_Worsley ;
+    :hasParent data:William_Worsley ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Katharine_Duchess_of_Kent ;
+    :hasSon data:George_Windsor ;
+    :isAncestorOf data:George_Windsor,
+        data:Marina_Windsor ;
+    :isAuntOf data:George_Windsor ;
+    :isBloodrelationOf data:Katharine_Duchess_of_Kent ;
+    :isChildOf data:William_Worsley ;
+    :isDaughterOf data:William_Worsley ;
+    :isMotherOf data:George_Windsor ;
+    :isParentOf data:George_Windsor ;
+    :isSiblingOf data:Katharine_Duchess_of_Kent ;
+    :isSisterOf data:Katharine_Duchess_of_Kent .
+
+data:George_Windsor a :Ancestor,
+        :Man ;
+    :hasAncestor data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:William_Worsley ;
+    :hasBrother data:George_Windsor ;
+    :hasChild data:Marina_Windsor ;
+    :hasDaughter data:Marina_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasParent data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :isAncestorOf data:Marina_Windsor ;
+    :isBloodrelationOf data:George_Windsor ;
+    :isBrotherOf data:George_Windsor ;
+    :isChildOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Marina_Windsor ;
+    :isParentOf data:Marina_Windsor ;
+    :isSiblingOf data:George_Windsor ;
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Marina_Windsor .
+
+data:Marina_Windsor a :Woman ;
+    :hasAncestor data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasFather data:George_Windsor ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :hasParent data:George_Windsor,
+        data:Sylvana_Tomaselli ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:George_Windsor,
+        data:Katharine_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Tomaselli,
+        data:William_Worsley ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isChildOf data:George_Windsor,
+        data:Sylvana_Tomaselli ;
+    :isDaughterOf data:George_Windsor,
+        data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSisterOf data:Amelia_Windsor,
+        data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor .
+

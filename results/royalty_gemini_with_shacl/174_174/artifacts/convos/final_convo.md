@@ -85,48 +85,55 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
-Biography
+Princess Katherine of Greece and Denmark (Greek: Αικατερίνη; 4 May 1913 – 2 October 2007), styled in the United Kingdom as Lady Katherine Brandram from 1947 until 2007, was the third daughter and youngest child of King Constantine I of Greece and Princess Sophia of Prussia.
+Early life
 
-Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
-She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
-At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
-As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
-The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
-Alexia grew up in exile and was raised in between Rome and London.
-The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
-Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
-Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
-Marriage and children
+Katherine was born on 4 May 1913 in the Royal Palace in Athens, a few weeks after her paternal grandfather, King George I of Greece, was assassinated in Thessaloniki.
+Her godparents were Olga Constantinovna (the Dowager Queen of Greece, her paternal grandmother), Alexandra (the Dowager Queen of the United Kingdom, her paternal grandfather's sister and her maternal grandmother's sister-in-law), George V (the King of the United Kingdom, her mother's maternal cousin and her father's paternal cousin), Wilhelm II, German Emperor (her maternal uncle), The Greek Navy (represented by the Minister of Marine) and The Greek Army (represented by the Minister of War).
+Katherine had five siblings – three brothers (George, Alexander and Paul, each of whom would become King of the Hellenes) and two sisters (Princess Helen, who married Crown Prince Carol of Romania, and Princess Irene who married Prince Aimone of Savoy, Duke of Spoleto).
+They were reinstated following Alexander's death in 1920, but Constantine abdicated again in 1922.
+The family moved to Villa Sparta in Florence, where Katherine took up painting.
+Her second brother George became King George II in 1922, but was deposed in 1924.
+Katherine was educated in England, at a boarding school at Broadstairs and then North Foreland Lodge.
+She and the future Elizabeth II were bridesmaids at the wedding of her first cousin, Princess Marina, to Prince George in 1934.
+Return to Greece and marriage
 
-Queen Anne-Marie
-
-
-Queen Sofía of Spain
-
-
-Marina, consort of Prince Michael
-
-
-On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
-In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
-Alexia and Carlos were the only two people out of the thirteen on board to be injured.
-Alexia suffered a broken collarbone and Carlos a fractured kneecap.
-At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
-Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
-Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
-The couple have four children: 
+Her brother George was reinstated as king in 1935, and Katherine returned to Greece with her sister, Irene.
+In 1941, after Greece had been overrun by Axis forces, she fled to South Africa with her third brother, Paul, in a Sunderland flying boat, where she worked as a nurse at a hospital in Cape Town.
+On 1 April at the Royal Palace, three weeks prior to the wedding, her brother King George had a stroke and died shortly after in Katherine's presence.
+George was succeeded on the Greek throne by Katherine's third brother Paul, who acted as best man at the wedding, which took place according to schedule on 21 April 1947.
+On 25 August 1947, King George VI granted her the rank and title of a duke's daughter and she became known as Lady Katherine Brandram.
+According to her obituary in The Daily Telegraph, "Lady Katherine lived quietly but remained in close touch with her own and the British royal families.
+She attended the Queen's wedding to Prince Philip (her first cousin on her father’s side and second cousin once removed on her mother’s side), and was a guest at the service to mark Prince Philip's 80th birthday at St George's Chapel, Windsor, in 2001.
+"
 
 
-Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
-Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
-The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
+After the death of Infanta Beatriz of Spain in 2002, Katherine was the last surviving great-granddaughter of Queen Victoria, as well the last surviving grandchild of Frederick III, German Emperor and Victoria, Princess Royal.
+Count Carl Johan Bernadotte of Sweden (31 October 1916 – 5 May 2012) as Queen Victoria's last living great-grandchild.
+From the time of the death of her eldest sister Queen Helen, Queen Mother of Romania in 1982, to the time of her own death, she was Queen Victoria's most senior female line descendant.
+Her death marked the end of all female-line direct descendants of Frederick III, German Emperor and Victoria, Princess Royal.
+Issue
+
+Princess Katherine of Greece and Denmark and Major Richard Campbell Andrew Brandram had one child, a son:
+
+
+Bibliography
+
+Ancestry
+
+References
+
+External links
+
+@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Princess Katherine of Greece and Denmark at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -142,39 +149,9 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -189,6 +166,23 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -206,6 +200,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,29 +282,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -304,6 +305,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -316,6 +325,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -324,17 +335,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -362,6 +375,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -377,201 +474,150 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (613c4c11-9405-4d2e-8743-46dc0d861974)
- Call ID: 613c4c11-9405-4d2e-8743-46dc0d861974
+  AssignClass (44302599-591b-49fc-82dc-f70a8c00f9af)
+ Call ID: 44302599-591b-49fc-82dc-f70a8c00f9af
   Args:
     type: :Woman
-    source: Alexia_of_Greece_and_Denmark
-  AssignClass (5196fea1-4644-46d0-a870-0409db1a19d8)
- Call ID: 5196fea1-4644-46d0-a870-0409db1a19d8
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AssignClass (65c4cc19-e81f-492f-8a8e-ec98cf6156e7)
+ Call ID: 65c4cc19-e81f-492f-8a8e-ec98cf6156e7
   Args:
     type: :Person
-    source: Alexia_of_Greece_and_Denmark
-  AssignClass (b3914073-2efc-4eeb-a225-6b74a7e496fb)
- Call ID: b3914073-2efc-4eeb-a225-6b74a7e496fb
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (dfe77c72-303e-42e3-b5bb-e2c73c21fc12)
+ Call ID: dfe77c72-303e-42e3-b5bb-e2c73c21fc12
   Args:
-    type: :Man
-    source: Constantine_II
-  AssignClass (6455c505-096e-4793-b126-b2c016e6eff4)
- Call ID: 6455c505-096e-4793-b126-b2c016e6eff4
-  Args:
-    type: :Person
-    source: Constantine_II
-  AssignClass (cbfd3e16-5f4f-4465-8773-600505322d2e)
- Call ID: cbfd3e16-5f4f-4465-8773-600505322d2e
-  Args:
-    type: :Woman
-    source: Anne-Marie_of_Greece
-  AssignClass (53026736-1f54-48d7-a422-275223777e21)
- Call ID: 53026736-1f54-48d7-a422-275223777e21
-  Args:
-    type: :Person
-    source: Anne-Marie_of_Greece
-  AddLiteral (935fda95-0b81-4b32-950d-ab006ecba29d)
- Call ID: 935fda95-0b81-4b32-950d-ab006ecba29d
-  Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
     relation: :hasBirthYear
-    source: Alexia_of_Greece_and_Denmark
     literal_type: xsd:integer
-    literal_value: 1965
-  AddTriple (db28cfec-ad91-40e3-a3f3-494369495159)
- Call ID: db28cfec-ad91-40e3-a3f3-494369495159
+    literal_value: 1913
+  AddLiteral (094b5549-59d7-4fa0-b365-c20444384bb0)
+ Call ID: 094b5549-59d7-4fa0-b365-c20444384bb0
   Args:
+    literal_value: 2007
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (3ccd4133-5f7b-4e1f-893e-19ad87adec62)
+ Call ID: 3ccd4133-5f7b-4e1f-893e-19ad87adec62
+  Args:
+    relation: :alsoKnownAs
+    literal_value: Lady Katherine Brandram
+    literal_type: xsd:string
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AssignClass (ef1b321d-bf34-41c6-8d96-c7aab73731e4)
+ Call ID: ef1b321d-bf34-41c6-8d96-c7aab73731e4
+  Args:
+    type: :Man
+    source: :King_Constantine_I_of_Greece
+  AssignClass (02a896fd-db18-4e75-9624-78d126cf8511)
+ Call ID: 02a896fd-db18-4e75-9624-78d126cf8511
+  Args:
+    type: :Person
+    source: :King_Constantine_I_of_Greece
+  AssignClass (ceb307d3-6ca8-4de1-8ddf-212db47f7ec3)
+ Call ID: ceb307d3-6ca8-4de1-8ddf-212db47f7ec3
+  Args:
+    source: :Princess_Sophia_of_Prussia
+    type: :Woman
+  AssignClass (11c4c8d1-46f2-41be-936e-86c780eec6d7)
+ Call ID: 11c4c8d1-46f2-41be-936e-86c780eec6d7
+  Args:
+    source: :Princess_Sophia_of_Prussia
+    type: :Person
+  AddTriple (706232a8-2c09-4c0b-bf90-cf4cf5f3eee4)
+ Call ID: 706232a8-2c09-4c0b-bf90-cf4cf5f3eee4
+  Args:
+    target: :King_Constantine_I_of_Greece
     relation: :hasFather
-    target: Constantine_II
-    source: Alexia_of_Greece_and_Denmark
-  AddTriple (a875b958-59ec-4d24-bdf2-0f654b7d1c5f)
- Call ID: a875b958-59ec-4d24-bdf2-0f654b7d1c5f
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddTriple (686ae698-ed41-46ec-83aa-aa3fe9262d2c)
+ Call ID: 686ae698-ed41-46ec-83aa-aa3fe9262d2c
   Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
     relation: :hasMother
-    target: Anne-Marie_of_Greece
-    source: Alexia_of_Greece_and_Denmark
-  AssignClass (c3a7c364-76fd-46c5-9b0d-b1cae9c41d3b)
- Call ID: c3a7c364-76fd-46c5-9b0d-b1cae9c41d3b
+    target: :Princess_Sophia_of_Prussia
+  AssignClass (85676339-4509-4362-a4a9-3689276811c2)
+ Call ID: 85676339-4509-4362-a4a9-3689276811c2
+  Args:
+    source: :George_King_of_the_Hellenes
+    type: :Man
+  AssignClass (5ef5daba-bf93-4733-a366-43b579e0713a)
+ Call ID: 5ef5daba-bf93-4733-a366-43b579e0713a
+  Args:
+    source: :Alexander_King_of_the_Hellenes
+    type: :Man
+  AssignClass (5a652b03-98bf-4e43-b65b-028311628a21)
+ Call ID: 5a652b03-98bf-4e43-b65b-028311628a21
   Args:
     type: :Man
-    source: Pavlos_of_Greece
-  AssignClass (aeab8edb-5862-4466-8041-3117d0272da8)
- Call ID: aeab8edb-5862-4466-8041-3117d0272da8
+    source: :Paul_King_of_the_Hellenes
+  AssignClass (b5fa934b-0e1d-41c0-a08e-8951fe0ec702)
+ Call ID: b5fa934b-0e1d-41c0-a08e-8951fe0ec702
   Args:
-    type: :Person
-    source: Pavlos_of_Greece
-  AddTriple (40d08d93-9c73-426a-9f43-dfaa6a846044)
- Call ID: 40d08d93-9c73-426a-9f43-dfaa6a846044
+    type: :Woman
+    source: :Princess_Helen
+  AssignClass (0dc516b6-6439-4545-a9af-e72e48fdd0dc)
+ Call ID: 0dc516b6-6439-4545-a9af-e72e48fdd0dc
   Args:
-    source: Alexia_of_Greece_and_Denmark
-    target: Pavlos_of_Greece
+    source: :Princess_Irene
+    type: :Woman
+  AddTriple (bcfd22ad-8fb3-4a55-a538-7b3604a7938b)
+ Call ID: bcfd22ad-8fb3-4a55-a538-7b3604a7938b
+  Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    target: :George_King_of_the_Hellenes
     relation: :hasBrother
-  AssignClass (1fe08409-59a3-467c-b029-d8b985f4908c)
- Call ID: 1fe08409-59a3-467c-b029-d8b985f4908c
+  AddTriple (954fad57-3a03-49dc-b995-9733860382d0)
+ Call ID: 954fad57-3a03-49dc-b995-9733860382d0
   Args:
-    type: :Man
-    source: Carlos_Javier_Morales_Quintana
-  AssignClass (df7f12c3-7d15-43e4-9464-ad645c3b8957)
- Call ID: df7f12c3-7d15-43e4-9464-ad645c3b8957
+    relation: :hasBrother
+    target: :Alexander_King_of_the_Hellenes
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddTriple (a91ceb18-2cb5-483d-a835-829407fc32be)
+ Call ID: a91ceb18-2cb5-483d-a835-829407fc32be
   Args:
-    type: :Person
-    source: Carlos_Javier_Morales_Quintana
-  AddLiteral (f6b7b114-59b0-4c83-bcca-1ca1a993898e)
- Call ID: f6b7b114-59b0-4c83-bcca-1ca1a993898e
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasBrother
+    target: :Paul_King_of_the_Hellenes
+  AddTriple (3c316491-9483-429a-bc91-b15c9b1de9da)
+ Call ID: 3c316491-9483-429a-bc91-b15c9b1de9da
   Args:
-    source: Alexia_of_Greece_and_Denmark
-    literal_type: xsd:integer
-    literal_value: 1999
-    relation: :hasMarriageYear
-  AddTriple (efd4271b-6442-4828-8d80-ba835cf7682e)
- Call ID: efd4271b-6442-4828-8d80-ba835cf7682e
-  Args:
-    source: Alexia_of_Greece_and_Denmark
-    relation: :hasRelation
-    target: Carlos_Javier_Morales_Quintana
-  AssignClass (d69aaa0a-f1e7-40e2-93a7-2a89060a841f)
- Call ID: d69aaa0a-f1e7-40e2-93a7-2a89060a841f
-  Args:
-    type: :Woman
-    source: Theodora_of_Greece
-  AssignClass (7b88a96f-bb83-4c44-a4f7-a94577a32d8a)
- Call ID: 7b88a96f-bb83-4c44-a4f7-a94577a32d8a
-  Args:
-    type: :Person
-    source: Theodora_of_Greece
-  AddTriple (7a44bdbe-8ca0-4479-b120-b17e31cf1af7)
- Call ID: 7a44bdbe-8ca0-4479-b120-b17e31cf1af7
-  Args:
-    target: Theodora_of_Greece
     relation: :hasSister
-    source: Alexia_of_Greece_and_Denmark
-  AssignClass (035c6544-2f65-45a8-a758-33e5fae86806)
- Call ID: 035c6544-2f65-45a8-a758-33e5fae86806
+    target: :Princess_Helen
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddTriple (0337ff5e-2cde-4b4b-ab12-6c124e0d30d2)
+ Call ID: 0337ff5e-2cde-4b4b-ab12-6c124e0d30d2
   Args:
-    type: :Woman
-    source: Maria-Olympia
-  AssignClass (f66fde9e-eb4d-49ab-8450-37fe37077402)
- Call ID: f66fde9e-eb4d-49ab-8450-37fe37077402
-  Args:
-    type: :Person
-    source: Maria-Olympia
-  AddTriple (2af65be5-bfff-4e23-98e8-3ff8c8b8de24)
- Call ID: 2af65be5-bfff-4e23-98e8-3ff8c8b8de24
-  Args:
-    source: Alexia_of_Greece_and_Denmark
-    relation: :hasRelation
-    target: Maria-Olympia
-  AssignClass (bbfcfd0b-fff2-4c7e-8360-d094a70dd260)
- Call ID: bbfcfd0b-fff2-4c7e-8360-d094a70dd260
-  Args:
-    type: :Woman
-    source: Sofia_of_Spain
-  AssignClass (578b7f79-ffdc-41d6-8926-07d8e7601208)
- Call ID: 578b7f79-ffdc-41d6-8926-07d8e7601208
-  Args:
-    type: :Person
-    source: Sofia_of_Spain
-  AddTriple (407b7a39-5568-4360-a320-e2939d4da476)
- Call ID: 407b7a39-5568-4360-a320-e2939d4da476
-  Args:
-    relation: :isAuntOf
-    target: Alexia_of_Greece_and_Denmark
-    source: Sofia_of_Spain
-  AssignClass (bf170fbb-135c-49f0-ab1b-1a88113eda97)
- Call ID: bf170fbb-135c-49f0-ab1b-1a88113eda97
+    target: :Princess_Irene
+    relation: :hasSister
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AssignClass (e3251941-e647-4491-84cb-a761bcb22bd4)
+ Call ID: e3251941-e647-4491-84cb-a761bcb22bd4
   Args:
     type: :Man
-    source: Felipe_VI
-  AssignClass (e95f2ca0-8952-44c5-81f8-7812ff9df0a7)
- Call ID: e95f2ca0-8952-44c5-81f8-7812ff9df0a7
+    source: :Major_Richard_Campbell_Andrew_Brandram
+  AssignClass (d3c9776c-58e8-4c43-a0a1-670e83d7d112)
+ Call ID: d3c9776c-58e8-4c43-a0a1-670e83d7d112
   Args:
+    source: :Major_Richard_Campbell_Andrew_Brandram
     type: :Person
-    source: Felipe_VI
-  AddTriple (a55bae18-ff2b-413d-8e90-67be9ba75c0a)
- Call ID: a55bae18-ff2b-413d-8e90-67be9ba75c0a
+  AddTriple (8d153100-ad58-4482-b40c-0d5832044716)
+ Call ID: 8d153100-ad58-4482-b40c-0d5832044716
   Args:
-    source: Alexia_of_Greece_and_Denmark
-    relation: :isBloodrelationOf
-    target: Felipe_VI
-  AssignClass (5c5dc5a4-2483-4af4-9dc7-3075d92d7d28)
- Call ID: 5c5dc5a4-2483-4af4-9dc7-3075d92d7d28
+    relation: :hasMarriageYear
+    target: :1947
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (9baa3a7c-eda9-458f-a4f9-34191fa364ff)
+ Call ID: 9baa3a7c-eda9-458f-a4f9-34191fa364ff
   Args:
-    type: :Woman
-    source: Ingrid_of_Denmark
-  AssignClass (be9d0cb1-8e78-4765-91fc-f4abafc00ccf)
- Call ID: be9d0cb1-8e78-4765-91fc-f4abafc00ccf
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    literal_value: 1947
+    relation: :hasMarriageYear
+  Finish (5d10514f-4f36-4c26-a681-ac8b3bec4c3c)
+ Call ID: 5d10514f-4f36-4c26-a681-ac8b3bec4c3c
   Args:
-    type: :Person
-    source: Ingrid_of_Denmark
-  AddTriple (56cc4ef3-8241-4ef7-9b10-5d4beb98b25f)
- Call ID: 56cc4ef3-8241-4ef7-9b10-5d4beb98b25f
-  Args:
-    source: Anne-Marie_of_Greece
-    relation: :hasMother
-    target: Ingrid_of_Denmark
-  Finish (5f1ea2e0-cae4-42a2-9614-69d581eccce3)
- Call ID: 5f1ea2e0-cae4-42a2-9614-69d581eccce3
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -676,45 +722,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Sofia_of_Spain a :Person,
+  data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+          :Person .
+
+  data:Princess_Katherine_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :isAuntOf data:Alexia_of_Greece_and_Denmark .
+      :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+      :hasBirthYear 1913 ;
+      :hasBrother data:Alexander_King_of_the_Hellenes,
+          data:George_King_of_the_Hellenes,
+          data:Paul_King_of_the_Hellenes ;
+      :hasDeathYear 2007 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear data:1947,
+          1947 ;
+      :hasMother data:Princess_Sophia_of_Prussia ;
+      :hasSister data:Princess_Helen,
+          data:Princess_Irene .
 
-  data:Alexia_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 1965 ;
-      :hasBrother data:Pavlos_of_Greece ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear 1999 ;
-      :hasMother data:Anne-Marie_of_Greece ;
-      :hasRelation data:Carlos_Javier_Morales_Quintana,
-          data:Maria-Olympia ;
-      :hasSister data:Theodora_of_Greece ;
-      :isBloodrelationOf data:Felipe_VI .
+  data:Alexander_King_of_the_Hellenes a :Man .
 
-  data:Anne-Marie_of_Greece a :Person,
-          :Woman ;
-      :hasMother data:Ingrid_of_Denmark .
+  data:George_King_of_the_Hellenes a :Man .
 
-  data:Carlos_Javier_Morales_Quintana a :Man,
+  data:King_Constantine_I_of_Greece a :Man,
           :Person .
 
-  data:Constantine_II a :Man,
-          :Person .
+  data:Paul_King_of_the_Hellenes a :Man .
 
-  data:Felipe_VI a :Man,
-          :Person .
+  data:Princess_Helen a :Woman .
 
-  data:Ingrid_of_Denmark a :Person,
-          :Woman .
+  data:Princess_Irene a :Woman .
 
-  data:Maria-Olympia a :Person,
-          :Woman .
-
-  data:Pavlos_of_Greece a :Man,
-          :Person .
-
-  data:Theodora_of_Greece a :Person,
+  data:Princess_Sophia_of_Prussia a :Person,
           :Woman .
 
 
@@ -727,86 +766,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (cf14484d-1faf-45a6-980d-c292c0bdc890)
- Call ID: cf14484d-1faf-45a6-980d-c292c0bdc890
+  ValidateShacl (9e9d42ba-4eff-4bab-aa25-fc5d94ec6b32)
+ Call ID: 9e9d42ba-4eff-4bab-aa25-fc5d94ec6b32
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II does not belong to the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The node King_Constantine_I_of_Greece is missing the required class :Ancestor, which is necessary for the hasFather property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_II, :Ancestor)
+      AssignClass(King_Constantine_I_of_Greece, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Greece does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The node Princess_Sophia_of_Prussia is missing the required class :Ancestor, which is necessary for the hasMother property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne-Marie_of_Greece, :Ancestor)
+      AssignClass(Princess_Sophia_of_Prussia, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Ingrid_of_Denmark does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The node King_Constantine_I_of_Greece is missing the required class :Ancestor, which is necessary for the hasFather property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Denmark, :Ancestor)
+      AssignClass(King_Constantine_I_of_Greece, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Constantine_II does not belong to the required class :Ancestor, which is mandatory for the hasFather relationship.
+      The node Princess_Sophia_of_Prussia is missing the required class :Ancestor, which is necessary for the hasMother property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_II, :Ancestor)
+      AssignClass(Princess_Sophia_of_Prussia, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Greece does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The node King_Constantine_I_of_Greece is missing the required class :Ancestor, which is necessary for the hasFather property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne-Marie_of_Greece, :Ancestor)
+      AssignClass(King_Constantine_I_of_Greece, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ingrid_of_Denmark does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
+      The node Princess_Sophia_of_Prussia is missing the required class :Ancestor, which is necessary for the hasMother property of Princess_Katherine_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Denmark, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Constantine_II does not belong to the required class :Ancestor, which is mandatory for the hasFather relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_II, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Ingrid_of_Denmark does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Denmark, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Greece does not belong to the required class :Ancestor, which is mandatory for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne-Marie_of_Greece, :Ancestor)
+      AssignClass(Princess_Sophia_of_Prussia, :Ancestor)
 
 
 
@@ -815,25 +830,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0c5ad8df-66b1-49d3-9ca9-893a069405b8)
- Call ID: 0c5ad8df-66b1-49d3-9ca9-893a069405b8
+  AssignClass (20ff6c78-cf1b-4978-ba7c-5d89e97a5b67)
+ Call ID: 20ff6c78-cf1b-4978-ba7c-5d89e97a5b67
   Args:
-    source: Constantine_II
     type: :Ancestor
-  AssignClass (ba2f43a7-5c4d-4a3e-99fc-d0a61e38843e)
- Call ID: ba2f43a7-5c4d-4a3e-99fc-d0a61e38843e
+    source: :King_Constantine_I_of_Greece
+  AssignClass (c7d9044b-188a-43bb-892f-8eb6a40a84b1)
+ Call ID: c7d9044b-188a-43bb-892f-8eb6a40a84b1
   Args:
-    source: Anne-Marie_of_Greece
     type: :Ancestor
-  AssignClass (737d94fa-c49c-4c38-975f-8afa66d2818b)
- Call ID: 737d94fa-c49c-4c38-975f-8afa66d2818b
+    source: :Princess_Sophia_of_Prussia
+  ValidateShacl (22e3636d-2910-40b0-83d5-d02f1a1b553f)
+ Call ID: 22e3636d-2910-40b0-83d5-d02f1a1b553f
   Args:
-    source: Ingrid_of_Denmark
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -846,59 +855,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Sofia_of_Spain a :Person,
-          :Woman ;
-      :isAuntOf data:Alexia_of_Greece_and_Denmark .
-
-  data:Alexia_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 1965 ;
-      :hasBrother data:Pavlos_of_Greece ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear 1999 ;
-      :hasMother data:Anne-Marie_of_Greece ;
-      :hasRelation data:Carlos_Javier_Morales_Quintana,
-          data:Maria-Olympia ;
-      :hasSister data:Theodora_of_Greece ;
-      :isBloodrelationOf data:Felipe_VI .
-
-  data:Anne-Marie_of_Greece a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasMother data:Ingrid_of_Denmark .
-
-  data:Carlos_Javier_Morales_Quintana a :Man,
+  data:Major_Richard_Campbell_Andrew_Brandram a :Man,
           :Person .
 
-  data:Constantine_II a :Ancestor,
+  data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+      :hasBirthYear 1913 ;
+      :hasBrother data:Alexander_King_of_the_Hellenes,
+          data:George_King_of_the_Hellenes,
+          data:Paul_King_of_the_Hellenes ;
+      :hasDeathYear 2007 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear data:1947,
+          1947 ;
+      :hasMother data:Princess_Sophia_of_Prussia ;
+      :hasSister data:Princess_Helen,
+          data:Princess_Irene .
+
+  data:Alexander_King_of_the_Hellenes a :Man .
+
+  data:George_King_of_the_Hellenes a :Man .
+
+  data:King_Constantine_I_of_Greece a :Ancestor,
           :Man,
           :Person .
 
-  data:Felipe_VI a :Man,
-          :Person .
+  data:Paul_King_of_the_Hellenes a :Man .
 
-  data:Ingrid_of_Denmark a :Ancestor,
+  data:Princess_Helen a :Woman .
+
+  data:Princess_Irene a :Woman .
+
+  data:Princess_Sophia_of_Prussia a :Ancestor,
           :Person,
           :Woman .
 
-  data:Maria-Olympia a :Person,
-          :Woman .
 
-  data:Pavlos_of_Greece a :Man,
-          :Person .
-
-  data:Theodora_of_Greece a :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (71c94243-1dbd-425d-b370-848d3af1cbfa)
- Call ID: 71c94243-1dbd-425d-b370-848d3af1cbfa
-  Args:
 
 ================================= Tool Message =================================
 
@@ -908,6 +901,216 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (54cd15c5-f7a0-4eaa-8b23-97a04f17996e)
- Call ID: 54cd15c5-f7a0-4eaa-8b23-97a04f17996e
+  Finish (449324f8-775a-4928-a7fa-3517887b0b23)
+ Call ID: 449324f8-775a-4928-a7fa-3517887b0b23
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1947']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (d3b5eeaf-4e4e-4ee6-8172-2aba74891f57)
+ Call ID: d3b5eeaf-4e4e-4ee6-8172-2aba74891f57
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1947
+    relation: :hasMarriageYear
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (6e02c901-1272-4231-b238-98a7de7d42d8)
+ Call ID: 6e02c901-1272-4231-b238-98a7de7d42d8
+  Args:
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1947
+  Finish (b64644aa-ac26-4e2e-8ffb-cce8b6040df5)
+ Call ID: b64644aa-ac26-4e2e-8ffb-cce8b6040df5
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+          :Person .
+
+  data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+      :hasBirthYear 1913 ;
+      :hasBrother data:Alexander_King_of_the_Hellenes,
+          data:George_King_of_the_Hellenes,
+          data:Paul_King_of_the_Hellenes ;
+      :hasDeathYear 2007 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear data:1947,
+          1947 ;
+      :hasMother data:Princess_Sophia_of_Prussia ;
+      :hasSister data:Princess_Helen,
+          data:Princess_Irene .
+
+  data:Alexander_King_of_the_Hellenes a :Man .
+
+  data:George_King_of_the_Hellenes a :Man .
+
+  data:King_Constantine_I_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Paul_King_of_the_Hellenes a :Man .
+
+  data:Princess_Helen a :Woman .
+
+  data:Princess_Irene a :Woman .
+
+  data:Princess_Sophia_of_Prussia a :Ancestor,
+          :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1947']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (715b0fc5-c303-43b3-aae1-cf30a698399a)
+ Call ID: 715b0fc5-c303-43b3-aae1-cf30a698399a
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1947
+    source: :Princess_Katherine_of_Greece_and_Denmark
+  AddLiteral (1716bdc2-3fd9-40c0-a714-4a58eb349a52)
+ Call ID: 1716bdc2-3fd9-40c0-a714-4a58eb349a52
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1947
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+  Finish (abc304a0-fea9-4a0e-92a0-c0d3d34302c3)
+ Call ID: abc304a0-fea9-4a0e-92a0-c0d3d34302c3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Major_Richard_Campbell_Andrew_Brandram a :Man,
+          :Person .
+
+  data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+      :hasBirthYear 1913 ;
+      :hasBrother data:Alexander_King_of_the_Hellenes,
+          data:George_King_of_the_Hellenes,
+          data:Paul_King_of_the_Hellenes ;
+      :hasDeathYear 2007 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear data:1947,
+          1947 ;
+      :hasMother data:Princess_Sophia_of_Prussia ;
+      :hasSister data:Princess_Helen,
+          data:Princess_Irene .
+
+  data:Alexander_King_of_the_Hellenes a :Man .
+
+  data:George_King_of_the_Hellenes a :Man .
+
+  data:King_Constantine_I_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Paul_King_of_the_Hellenes a :Man .
+
+  data:Princess_Helen a :Woman .
+
+  data:Princess_Irene a :Woman .
+
+  data:Princess_Sophia_of_Prussia a :Ancestor,
+          :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1947']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (82f06aff-ecd5-4317-97a8-95038f9ff24d)
+ Call ID: 82f06aff-ecd5-4317-97a8-95038f9ff24d
+  Args:
+    target: 1947
+    source: :Princess_Katherine_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+  Finish (ce72118a-2c70-45f6-91fb-eef0bf7e85a8)
+ Call ID: ce72118a-2c70-45f6-91fb-eef0bf7e85a8
   Args:

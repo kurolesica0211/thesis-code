@@ -4,25 +4,18 @@
 
 data:Georg_von_Habsburg a :Man,
         :Person ;
-    :alsoKnownAs data:Paul_Georg_Maria_Joseph_Dominikus ;
+    :alsoKnownAs "Georg Habsburg-Lothringen"^^xsd:string,
+        "Habsburg György"^^xsd:string ;
+    :formerlyKnownAs "Paul Georg Maria Joseph Dominikus"^^xsd:string ;
     :hasBirthYear 1964 ;
     :hasBrother data:Karl_von_Habsburg ;
     :hasFather data:Otto_von_Habsburg ;
-    :hasMarriageYear data:1993,
-        1993 ;
+    :hasMarriageYear 1993 ;
     :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen ;
-    :hasRelation data:Eilika ;
-    :knownAs data:Georg_Habsburg-Lothringen,
-        data:Habsburg_Gy%C3%B6rgy .
-
-data:1993 a :DomainEntity .
+    :hasRelation data:Eilika .
 
 data:Eilika a :Person,
         :Woman .
-
-data:Georg_Habsburg-Lothringen a :DomainEntity .
-
-data:Habsburg_Gy%C3%B6rgy a :DomainEntity .
 
 data:Karl_von_Habsburg a :Man,
         :Person .
@@ -30,8 +23,6 @@ data:Karl_von_Habsburg a :Man,
 data:Otto_von_Habsburg a :Ancestor,
         :Man,
         :Person .
-
-data:Paul_Georg_Maria_Joseph_Dominikus a :DomainEntity .
 
 data:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,
         :Person,

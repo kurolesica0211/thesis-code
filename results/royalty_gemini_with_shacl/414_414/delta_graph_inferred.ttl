@@ -1,0 +1,142 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Orleans a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_de_Orleans ;
+    :hasRelation data:Alfonso_de_Orleans ;
+    :isBloodrelationOf data:Alfonso_de_Orleans ;
+    :isBrotherOf data:Alfonso_de_Orleans ;
+    :isSiblingOf data:Alfonso_de_Orleans .
+
+data:Fernando_Cento a :Man,
+        :Person ;
+    :hasBrother data:Fernando_Cento ;
+    :hasRelation data:Fernando_Cento ;
+    :isBloodrelationOf data:Fernando_Cento ;
+    :isBrotherOf data:Fernando_Cento ;
+    :isSiblingOf data:Fernando_Cento .
+
+data:Francisco_Franco a :Man,
+        :Person ;
+    :hasBrother data:Francisco_Franco ;
+    :hasRelation data:Francisco_Franco ;
+    :isBloodrelationOf data:Francisco_Franco ;
+    :isBrotherOf data:Francisco_Franco ;
+    :isSiblingOf data:Francisco_Franco .
+
+data:Maria_Cristina a :Person,
+        :Woman ;
+    :hasRelation data:Maria_Cristina ;
+    :hasSister data:Maria_Cristina ;
+    :isBloodrelationOf data:Maria_Cristina ;
+    :isSiblingOf data:Maria_Cristina ;
+    :isSisterOf data:Maria_Cristina .
+
+data:Pilar a :Person,
+        :Woman ;
+    :hasRelation data:Pilar ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Pilar ;
+    :isSiblingOf data:Pilar ;
+    :isSisterOf data:Pilar .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :isAncestorOf data:Alfonso ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :isBloodrelationOf data:Alfonso,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Alfonso,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Alfonso,
+        data:Juan_Carlos_I .
+
+data:Juan_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_of_Barcelona ;
+    :hasChild data:Alfonso ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :hasSon data:Alfonso ;
+    :isAncestorOf data:Alfonso ;
+    :isBloodrelationOf data:Juan_of_Barcelona ;
+    :isBrotherOf data:Juan_of_Barcelona ;
+    :isFatherOf data:Alfonso ;
+    :isParentOf data:Alfonso ;
+    :isSiblingOf data:Juan_of_Barcelona ;
+    :isUncleOf data:Alfonso .
+
+data:Maria_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :hasSister data:Maria_Mercedes ;
+    :hasSon data:Alfonso ;
+    :isAncestorOf data:Alfonso ;
+    :isAuntOf data:Alfonso ;
+    :isBloodrelationOf data:Maria_Mercedes ;
+    :isMotherOf data:Alfonso ;
+    :isParentOf data:Alfonso ;
+    :isSiblingOf data:Maria_Mercedes ;
+    :isSisterOf data:Maria_Mercedes .
+
+data:Alfonso a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Alfonso,
+        data:Juan_Carlos_I ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_of_Barcelona ;
+    :hasMother data:Maria_Mercedes ;
+    :hasParent data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Juan_Carlos_I,
+        data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :isBloodrelationOf data:Alfonso,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Alfonso,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Juan_of_Barcelona,
+        data:Maria_Mercedes ;
+    :isSiblingOf data:Alfonso,
+        data:Juan_Carlos_I ;
+    :isSonOf data:Juan_of_Barcelona,
+        data:Maria_Mercedes .
+

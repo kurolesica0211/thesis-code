@@ -69,93 +69,65 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince John of the United Kingdom (John Charles Francis; 12 July 1905 – 18 January 1919) was the fifth son and youngest of the six children of King George V and Queen Mary.
-At the time of his birth, his father was heir apparent to John's grandfather Edward VII.
-In 1910, John's father acceded to the throne upon Edward VII's death, and John became fifth in the line of succession to the British throne.
-In 1909, it was discovered that John had epilepsy.
-John's seclusion was subsequently brought forward as evidence of the royal family's inhumanity.
-However, contrary to the belief that he was hidden from an early age, John was a fully-fledged member of the family for most of his life, appearing frequently in public until after his 11th birthday, when his condition became severe.
-Birth
+Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
+He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
+Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
+Phillips attended the University of Exeter and later worked for Jaguar Racing.
+In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
+Early life and education
 
-John was born at 3:05 am on 12 July 1905 at York Cottage on the Sandringham Estate, during the reign of his paternal grandfather, King Edward VII.
-He was the youngest child and fifth son of George, Prince of Wales (later King George V), and Mary, Princess of Wales (later Queen Mary).
-He was named John despite the name's traditionally unlucky associations within the royal family, and was informally known as Johnnie.
-As a grandchild in the male line of the reigning British monarch, and a son of the Prince of Wales, he was formally styled His Royal Highness Prince John of Wales from birth until his father's accession to the throne in 1910.
-John was christened on 3 August in the parish church of St Mary Magdalene at Sandringham, with the Reverend Canon John Neale Dalton officiating.
-His godparents were King Carlos I of Portugal; his uncles Prince Carl of Denmark and Alexander Duff, 1st Duke of Fife; his great-granduncle Prince Johann of Schleswig-Holstein-Sonderburg-Glücksburg; and three of his first cousins once removed, the Duke and Duchess of Sparta, and Princess Alice, Countess of Athlone.
-John's father stood proxy for King Carlos, Prince Carl, Prince Johann, and the Duke of Fife, while his aunt Princess Victoria stood proxy for the Duchess of Sparta and Princess Alice.
-Childhood and illness
+Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
+He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
+Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
+His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
+Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
+Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
+Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
+Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+Career
 
-Much of John's early life was spent at Sandringham with his siblings – ​Prince Edward (known as David, later King Edward VIII), Prince Albert (known as Bertie, later King George VI), Princess Mary, Prince Henry, and Prince George – ​under the care of their nanny Charlotte "Lala" Bill.
-In 1909, John's grandaunt, the Dowager Empress of Russia, wrote to her son Tsar Nicholas II that "George's children are very nice ...
-The little ones, George and Johnny are both charming and very amusing".
-John's aunt Princess Alice, Countess of Athlone described him as "very quaint and one evening when Uncle George returned from stalking he bent over Aunt May and kissed her, and they heard Johnny soliloquize, 'She kissed Papa, ugly old man!'"
-George V once told U.S. President Theodore Roosevelt that "all  children  obedient, except John" – ​apparently because he alone, among the royal children, escaped punishment from their father.
-Though a "large and handsome" baby, John had become "winsome" and "painfully slow" by his fourth birthday.
-When his father became king, John did not attend his parents' coronation on 22 June 1911, as this was considered too risky for his health; cynics suggested that the family feared their reputation might be damaged by any incident involving him.
-Although John was deemed not "presentable to the outside world," the king continued to show interest in him, offering him "kindness and affection".
-During his years at Sandringham, John exhibited repetitive behaviours as well as regular misbehaviour and insubordination; as one account put it, "he simply didn't understand he needed to .
-"
+After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
+He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
+In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
+In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
+In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
+Royal funeral participation
 
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
+On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
+Personal life
 
-In 1912, Prince George, John's closest sibling, began St Peter's Court Preparatory School in Broadstairs.
-The following summer, The Times reported that John would not attend Broadstairs the next term, and that the King and Queen had not yet decided whether to send him to school at all.
-After the outbreak of World War I, John rarely saw his parents, who were often away on official duties, or his siblings, who were either at boarding school or serving in the military.
-Wood Farm
+Relationships
 
-In 1916, as his seizures became more frequent and severe, John was sent to live at Wood Farm, where Bill assumed responsibility for his care.
-At Wood Farm, John became, in the words of one biographer, "a satellite with his own little household on an outlying farm on the Sandringham estate ...
-"
+Elizabeth Iorio and Tara Swain
 
+Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
+Autumn Kelly
 
-After the summer of 1916, John was rarely seen outside the Sandringham estate and passed entirely into Bill's care.
-When Queen Alexandra wrote that John "is very proud of his house but is longing for a companion", Queen Mary departed from usual royal practice by arranging for local children to be brought in as playmates.
-One of these was Winifred Thomas, a young girl from Halifax who had been sent to live with her aunt and uncle, who managed the royal stables at Sandringham, in the hope that her asthma would improve.
-John had known Winifred years earlier, before World War I.
-John also played with his elder siblings during their visits; on one occasion, when his two eldest brothers came to see him, the Prince of Wales "took him for a run in a kind of a push-cart, and they both disappeared from view.
-"
+In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
+If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
+Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
+The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
+Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
+The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
+On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
+On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
+Lindsay Wallace
 
+After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
+Harriet Sperling
 
-Death
-
-John's seizures intensified, and Bill later wrote "we dared not let him be with his brothers and sister, because it upsets them so much, with the attacks getting so bad and coming so often."
-Biographer Denis Judd writes that John's "seclusion and "abnormality" must have been disturbing to his brothers and sister", noting that he had been "a friendly, outgoing little boy, much loved by his brothers and sister, a sort of mascot for the family".
-On 18 January 1919, after a severe seizure, John died in his sleep at Wood Farm at 5:30 pm, aged 13.
-Queen Mary wrote in her diary that the news was:
-
-a great shock, tho' for the poor little boy's restless soul, death came as a great relief.
-broke the news to George and  motored down to Wood Farm.
-Mary later wrote to Emily Alcock, an old friend, that:
-
-for  it is a great relief, as his malady was becoming worse as he grew older, & he has thus been spared much suffering.
-George described his son's death as "the greatest mercy possible".
-On 20 January, the Daily Mirror reported that "when the Prince passed away his face bore an angelic smile"; the article also made the first public mention of John's epilepsy.
-His funeral took place the next day at St Mary Magdalene parish church, with John Neale Dalton officiating.
-Queen Mary wrote:
-
-Canon Dalton & Dr Brownhill  conducted the service which was awfully sad and touching.
-Queen Alexandra wrote to Queen Mary that "now  two darling Johnnies lie side by side".
-Legacy
-
-
-Edward, who was 11 years older than John and had hardly known him, regarded his brother's death as "little more than a regrettable nuisance."
-He wrote an insensitive letter to Queen Mary, now lost, to which she did not reply.
-In her final diary reference to John, Mary wrote simply: "miss the dear child very much indeed."
-She gave Winifred Thomas several of John's books, inscribed "In memory of our dear little Prince."
-Bill kept a portrait of John above her mantelpiece, together with a letter from him that read "nanny, I love you."
-In the 21st century, John's seclusion has been cited as evidence of the Windsors' "heartlessness".
-One author has written that the royal family believed such afflictions might pass through their blood, which was then still regarded as purer than that of a commoner, and therefore wished to conceal as much as possible about John's illness.
-Others have suggested that John was sent to Wood Farm to provide him with the best environment available under the "austere" conditions of World War I.
-Another author has stated that the family were "frightened and ashamed of John's illness", while yet another has noted that John's life is "usually portrayed either as tragedy or conspiracy".
-At the time of Edward VIII's abdication, an attempt was made to discredit Albert, now George VI, by implying that he suffered from falling fits like John.
-In 1998, the discovery of two volumes of family photographs briefly returned John to public attention.
-The Lost Prince, a biographical drama about John's life written and directed by Stephen Poliakoff, was released in 2003.
+By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -171,39 +143,9 @@ The Lost Prince, a biographical drama about John's life written and directed by 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -218,6 +160,23 @@ The Lost Prince, a biographical drama about John's life written and directed by 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -235,6 +194,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,29 +276,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -333,6 +299,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -345,6 +319,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -353,17 +329,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -391,6 +369,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -406,127 +468,442 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5b866898-eff3-40cf-8efd-fe88c956ad5f)
- Call ID: 5b866898-eff3-40cf-8efd-fe88c956ad5f
+  AssignClass (d765ca3f-cda1-407f-a61d-dd8138bb987b)
+ Call ID: d765ca3f-cda1-407f-a61d-dd8138bb987b
   Args:
+    source: Peter_Phillips
     type: :Man
-    source: :PrinceJohn
-  AssignClass (d7789fdb-1718-4140-abf7-d191f48c1233)
- Call ID: d7789fdb-1718-4140-abf7-d191f48c1233
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Peter_Phillips a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (280499ce-e6fa-4112-a7a8-c70e4702be3c)
+ Call ID: 280499ce-e6fa-4112-a7a8-c70e4702be3c
   Args:
-    source: :KingGeorgeV
-    type: :Man
-  AssignClass (ad721875-9807-417c-9783-f107e5d68d6f)
- Call ID: ad721875-9807-417c-9783-f107e5d68d6f
+    literal_value: 1977
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Peter_Phillips
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (75be5606-f645-42fe-921b-03eff41a3268)
+ Call ID: 75be5606-f645-42fe-921b-03eff41a3268
   Args:
+    source: Anne_Princess_Royal
     type: :Woman
-    source: :QueenMary
-  AssignClass (def81799-f66b-4db3-82ca-43fea0e405b4)
- Call ID: def81799-f66b-4db3-82ca-43fea0e405b4
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a503b8ca-3231-411f-b4dd-dd7f594c3a86)
+ Call ID: a503b8ca-3231-411f-b4dd-dd7f594c3a86
   Args:
-    source: :EdwardVII
+    source: Mark_Phillips
     type: :Man
-  AddLiteral (33e9e559-a548-42b0-b45b-bb5949c5483b)
- Call ID: 33e9e559-a548-42b0-b45b-bb5949c5483b
-  Args:
-    source: :PrinceJohn
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: John Charles Francis
-  AddLiteral (67ea5364-2622-49d8-afab-cdf79bbd5b91)
- Call ID: 67ea5364-2622-49d8-afab-cdf79bbd5b91
-  Args:
-    literal_value: Johnnie
-    relation: :knownAs
-    literal_type: xsd:string
-    source: :PrinceJohn
-  AddTriple (f146930a-d446-4029-8508-9acc29679c61)
- Call ID: f146930a-d446-4029-8508-9acc29679c61
-  Args:
-    relation: :hasFather
-    target: :KingGeorgeV
-    source: :PrinceJohn
-  AddTriple (6b55c115-d7f9-4ff7-8b2c-cb2c1c3ca03f)
- Call ID: 6b55c115-d7f9-4ff7-8b2c-cb2c1c3ca03f
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (1ce07042-e515-46e6-8fd6-ea3f9afe6fc6)
+ Call ID: 1ce07042-e515-46e6-8fd6-ea3f9afe6fc6
   Args:
     relation: :hasMother
-    target: :QueenMary
-    source: :PrinceJohn
-  AddTriple (b53581ff-6adb-4943-99b3-e8a1d26b0f95)
- Call ID: b53581ff-6adb-4943-99b3-e8a1d26b0f95
+    source: Peter_Phillips
+    target: Anne_Princess_Royal
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Mark_Phillips a :Man .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Anne_Princess_Royal a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (0b462f94-c6b8-4e35-8723-fef2e3019b68)
+ Call ID: 0b462f94-c6b8-4e35-8723-fef2e3019b68
   Args:
-    target: :EdwardVII
+    target: Mark_Phillips
     relation: :hasFather
-    source: :KingGeorgeV
-  AddLiteral (95149e5a-f622-478d-82d9-260aa191a4b0)
- Call ID: 95149e5a-f622-478d-82d9-260aa191a4b0
+    source: Peter_Phillips
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (1a524bd0-e846-4a5c-953a-63847e24f7d7)
+ Call ID: 1a524bd0-e846-4a5c-953a-63847e24f7d7
   Args:
-    relation: :hasBirthYear
-    literal_value: 1905
-    source: :PrinceJohn
-    literal_type: xsd:integer
-  AddLiteral (d30edaf6-8b16-4864-8ec9-7c3b217ac939)
- Call ID: d30edaf6-8b16-4864-8ec9-7c3b217ac939
-  Args:
-    literal_type: xsd:integer
-    source: :PrinceJohn
-    literal_value: 1919
-    relation: :hasDeathYear
-  AssignClass (81c10d5a-3536-483a-aaee-04b2f7f8a4da)
- Call ID: 81c10d5a-3536-483a-aaee-04b2f7f8a4da
-  Args:
-    type: :Man
-    source: :PrinceEdward
-  AssignClass (dd4f551d-bf66-4385-95af-b4565eda6306)
- Call ID: dd4f551d-bf66-4385-95af-b4565eda6306
-  Args:
-    source: :PrinceAlbert
-    type: :Man
-  AssignClass (188c1364-1f62-4fbf-a455-086942128082)
- Call ID: 188c1364-1f62-4fbf-a455-086942128082
-  Args:
-    source: :PrincessMary
     type: :Woman
-  AssignClass (2dfb6b18-73d3-4abe-8a44-ec55e3c5e4f5)
- Call ID: 2dfb6b18-73d3-4abe-8a44-ec55e3c5e4f5
-  Args:
-    type: :Man
-    source: :PrinceHenry
-  AssignClass (76ae737c-805a-4beb-b4d1-8859bbd7ae30)
- Call ID: 76ae737c-805a-4beb-b4d1-8859bbd7ae30
-  Args:
-    source: :PrinceGeorge
-    type: :Man
-  AddTriple (3e238966-b2f1-4596-bed4-e4c511945093)
- Call ID: 3e238966-b2f1-4596-bed4-e4c511945093
-  Args:
-    source: :PrinceJohn
-    relation: :hasBrother
-    target: :PrinceEdward
-  AddTriple (2da910c3-d500-4b7f-8eac-447cd8e77d79)
- Call ID: 2da910c3-d500-4b7f-8eac-447cd8e77d79
-  Args:
-    target: :PrinceAlbert
-    relation: :hasBrother
-    source: :PrinceJohn
-  AddTriple (20228d6d-6a97-4721-aeec-701637c7c13c)
- Call ID: 20228d6d-6a97-4721-aeec-701637c7c13c
+    source: Zara_Tindall
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Zara_Tindall a :Woman .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (91939891-f38d-4002-a94c-20bc6d32b7e8)
+ Call ID: 91939891-f38d-4002-a94c-20bc6d32b7e8
   Args:
     relation: :hasSister
-    target: :PrincessMary
-    source: :PrinceJohn
-  AddTriple (645ec521-294c-4b8a-9683-95b0a4e4b9a4)
- Call ID: 645ec521-294c-4b8a-9683-95b0a4e4b9a4
+    source: Peter_Phillips
+    target: Zara_Tindall
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5e758309-bdc5-474f-8c1f-3c1034c97dcb)
+ Call ID: 5e758309-bdc5-474f-8c1f-3c1034c97dcb
   Args:
-    target: :PrinceHenry
-    relation: :hasBrother
-    source: :PrinceJohn
-  AddTriple (0e8cbc66-2e8f-43f6-9c36-a5488f19857d)
- Call ID: 0e8cbc66-2e8f-43f6-9c36-a5488f19857d
+    type: :Woman
+    source: Autumn_Kelly
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (c9eab196-b772-4537-b858-0fd90f1533f2)
+ Call ID: c9eab196-b772-4537-b858-0fd90f1533f2
   Args:
-    relation: :hasBrother
-    target: :PrinceGeorge
-    source: :PrinceJohn
-  Finish (1c4722dd-ee9c-40b5-81eb-1774b941ed4d)
- Call ID: 1c4722dd-ee9c-40b5-81eb-1774b941ed4d
+    source: Peter_Phillips
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 2008
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (1e7ab05b-4669-47ab-a907-b61a4b237eed)
+ Call ID: 1e7ab05b-4669-47ab-a907-b61a4b237eed
+  Args:
+    source: Savannah_Phillips
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Savannah_Phillips a :Woman .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (0c94027f-fda7-475d-89df-cc78ec3338b4)
+ Call ID: 0c94027f-fda7-475d-89df-cc78ec3338b4
+  Args:
+    target: Savannah_Phillips
+    relation: :hasDaughter
+    source: Peter_Phillips
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasDaughter data:Savannah_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Savannah_Phillips a :Woman .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (30639a3a-f9e0-4965-b170-237175e18ca1)
+ Call ID: 30639a3a-f9e0-4965-b170-237175e18ca1
+  Args:
+    source: Isla_Phillips
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Isla_Phillips a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasDaughter data:Savannah_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Savannah_Phillips a :Woman .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (28f8dd9f-b3e3-4a83-ab2b-cdd5f1098f7f)
+ Call ID: 28f8dd9f-b3e3-4a83-ab2b-cdd5f1098f7f
+  Args:
+    relation: :hasDaughter
+    target: Isla_Phillips
+    source: Peter_Phillips
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Autumn_Kelly a :Woman .
+
+  data:Peter_Phillips a :Man ;
+      :hasBirthYear 1977 ;
+      :hasDaughter data:Isla_Phillips,
+          data:Savannah_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2008 ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasSister data:Zara_Tindall .
+
+  data:Anne_Princess_Royal a :Woman .
+
+  data:Isla_Phillips a :Woman .
+
+  data:Mark_Phillips a :Man .
+
+  data:Savannah_Phillips a :Woman .
+
+  data:Zara_Tindall a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (f64a7195-842d-4708-b73b-9291c7bec934)
+ Call ID: f64a7195-842d-4708-b73b-9291c7bec934
   Args:

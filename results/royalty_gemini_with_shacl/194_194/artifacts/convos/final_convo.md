@@ -85,31 +85,24 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Alexander Elphinstone, 18th Lord Elphinstone and 4th Baron Elphinstone, AssocRICS (22 April 1953 – 19 December 1994), was a British nobleman, farmer, and financier.
-Early life and family
+David Chavchavadze (May 20, 1924 – October 5, 2014) was a British-born American author and a former Central Intelligence Agency (CIA) officer of Georgian-Russian origin.
+Life and death
 
-Lord Elphinstone was the son of Rev. Hon.
-Andrew Charles Victor Elphinstone and Jean Frances Hambro.
-His paternal grandparents were Sidney Buller-Fullerton-Elphinstone, 16th Lord Elphinstone, and the former Lady Mary Bowes-Lyon, elder sister of Queen Elizabeth The Queen Mother.
-Personal life
-
-On 22 April 1978, Lord Elphinstone married Willa Mary Gabrielle Chetwode, daughter of Major George David Chetwode and Lady Willa Elliot-Murray-Kynynmound (herself the daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto, and his wife, Marion Cook).
-The couple had four children:
-
-
-He was succeeded in his titles by his eldest son, Alexander.
-References
-
-
-
-
-This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
+Chavchavadze was born in London to Prince Paul Chavchavadze (1899–1971) and Princess Nina Georgievna of Russia (Romanov) (1901–1974), a descendant of a prominent Georgian noble family and the Imperial Russian dynasty.
+His father, Prince Paul, was a fiction writer and translator of writings from Georgian into English, and an émigré in the United Kingdom, and then the United States.
+Chavchavadze entered the United States Army in 1943 and served during World War II as liaison for the U.S. Army Air Force Lend-Lease supply operations to the Soviet Union.
+After his retirement, Chavchavadze specialized in tracing the nobility of Imperial Russia and authored The Grand Dukes (1989).
+Via his mother, Chavchavadze is great-great-grandson (through Grand Duke Mikhail Nicholaevich) and simultaneously great-great-great-grandson (through Queen of Greece, Olga Constantinovna) of Nicholas I.
+David Chavchavadze died in his sleep on October 5, 2014, aged 90, after a long illness.
+They have one step-son, Paul George Olkhovsky (August 11, 1960).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +118,9 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +135,23 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,189 +443,90 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (eb1f4f66-51f9-44b9-89db-bdd6ab7b44a0)
- Call ID: eb1f4f66-51f9-44b9-89db-bdd6ab7b44a0
+  AssignClass (4e003d94-5773-449c-a915-593234a24a58)
+ Call ID: 4e003d94-5773-449c-a915-593234a24a58
   Args:
+    source: David_Chavchavadze
     type: :Man
-    source: James_Alexander_Elphinstone
-  AssignClass (1e7d1776-5b4d-4cfd-a019-9e3537cb48c5)
- Call ID: 1e7d1776-5b4d-4cfd-a019-9e3537cb48c5
+  AddLiteral (e6412fba-8b8a-442d-9808-28f654650933)
+ Call ID: e6412fba-8b8a-442d-9808-28f654650933
   Args:
-    source: Andrew_Charles_Victor_Elphinstone
-    type: :Man
-  AssignClass (ad521689-708e-4c7d-8a9c-447c21eb5773)
- Call ID: ad521689-708e-4c7d-8a9c-447c21eb5773
-  Args:
-    source: Jean_Frances_Hambro
-    type: :Woman
-  AssignClass (3b5618fa-8044-411d-9e0c-de4ef19f7707)
- Call ID: 3b5618fa-8044-411d-9e0c-de4ef19f7707
-  Args:
-    type: :Man
-    source: Sidney_Buller-Fullerton-Elphinstone
-  AssignClass (18afb930-f576-4344-872f-c49d37f54ace)
- Call ID: 18afb930-f576-4344-872f-c49d37f54ace
-  Args:
-    type: :Woman
-    source: Mary_Bowes-Lyon
-  AssignClass (402035c7-24ff-4f95-babd-ea36dddc1203)
- Call ID: 402035c7-24ff-4f95-babd-ea36dddc1203
-  Args:
-    type: :Woman
-    source: Willa_Mary_Gabrielle_Chetwode
-  AssignClass (82ca8921-6112-40dc-b248-39aa2586151b)
- Call ID: 82ca8921-6112-40dc-b248-39aa2586151b
-  Args:
-    source: George_David_Chetwode
-    type: :Man
-  AssignClass (cc251ab6-dbe4-4af1-aa03-29f4a2ca957f)
- Call ID: cc251ab6-dbe4-4af1-aa03-29f4a2ca957f
-  Args:
-    type: :Woman
-    source: Willa_Elliot-Murray-Kynynmound
-  AssignClass (2bcc3829-d1b7-449e-92f5-7e73e3313fad)
- Call ID: 2bcc3829-d1b7-449e-92f5-7e73e3313fad
-  Args:
-    source: Victor_Elliot-Murray-Kynynmound
-    type: :Man
-  AssignClass (a8876e01-50c1-4100-beb3-a273aa90cc3a)
- Call ID: a8876e01-50c1-4100-beb3-a273aa90cc3a
-  Args:
-    source: Marion_Cook
-    type: :Woman
-  AssignClass (aca0272d-ab55-4249-9cef-a5beac143b99)
- Call ID: aca0272d-ab55-4249-9cef-a5beac143b99
-  Args:
-    type: :Man
-    source: Alexander_Elphinstone
-  AddTriple (0b1873d4-ea38-4aa4-9bfd-6fa3bc5b4faa)
- Call ID: 0b1873d4-ea38-4aa4-9bfd-6fa3bc5b4faa
-  Args:
-    source: James_Alexander_Elphinstone
-    relation: :hasFather
-    target: Andrew_Charles_Victor_Elphinstone
-  AddTriple (39c721f7-ce32-4df9-8898-a7bee2a997c5)
- Call ID: 39c721f7-ce32-4df9-8898-a7bee2a997c5
-  Args:
-    target: Jean_Frances_Hambro
-    relation: :hasMother
-    source: James_Alexander_Elphinstone
-  AddTriple (20b84e0e-fbdb-49e5-89a4-f5abff77acd3)
- Call ID: 20b84e0e-fbdb-49e5-89a4-f5abff77acd3
-  Args:
-    target: Sidney_Buller-Fullerton-Elphinstone
-    relation: :hasFather
-    source: James_Alexander_Elphinstone
-  AddTriple (6ff1cf66-f294-4430-925e-26e92d20ba2f)
- Call ID: 6ff1cf66-f294-4430-925e-26e92d20ba2f
-  Args:
-    relation: :hasMother
-    source: James_Alexander_Elphinstone
-    target: Mary_Bowes-Lyon
-  AddTriple (c36e2cfc-b453-4fe8-ab62-9d1df775fad8)
- Call ID: c36e2cfc-b453-4fe8-ab62-9d1df775fad8
-  Args:
-    target: George_David_Chetwode
-    relation: :hasFather
-    source: Willa_Mary_Gabrielle_Chetwode
-  AddTriple (a3a7e62d-1ad5-4ae5-ac56-59557229c16b)
- Call ID: a3a7e62d-1ad5-4ae5-ac56-59557229c16b
-  Args:
-    source: Willa_Mary_Gabrielle_Chetwode
-    relation: :hasMother
-    target: Willa_Elliot-Murray-Kynynmound
-  AddTriple (397f918a-d238-48b6-8717-5cf5f3a9744e)
- Call ID: 397f918a-d238-48b6-8717-5cf5f3a9744e
-  Args:
-    relation: :hasFather
-    source: Willa_Elliot-Murray-Kynynmound
-    target: Victor_Elliot-Murray-Kynynmound
-  AddTriple (c5cec013-5463-4c3a-80e4-76fd0103e4ef)
- Call ID: c5cec013-5463-4c3a-80e4-76fd0103e4ef
-  Args:
-    target: Marion_Cook
-    relation: :hasMother
-    source: Willa_Elliot-Murray-Kynynmound
-  AddTriple (be00c976-9ee9-4dd3-8717-93f1e770dfad)
- Call ID: be00c976-9ee9-4dd3-8717-93f1e770dfad
-  Args:
-    source: Alexander_Elphinstone
-    relation: :hasFather
-    target: James_Alexander_Elphinstone
-  AddTriple (679a95b7-4ddc-4aab-901a-82ad863695fe)
- Call ID: 679a95b7-4ddc-4aab-901a-82ad863695fe
-  Args:
-    target: Willa_Mary_Gabrielle_Chetwode
-    source: Alexander_Elphinstone
-    relation: :hasMother
-  AddLiteral (e67c9006-dbbb-4e29-b5c3-96cc0b23e510)
- Call ID: e67c9006-dbbb-4e29-b5c3-96cc0b23e510
-  Args:
-    literal_type: xsd:string
     relation: :hasBirthYear
-    literal_value: 1953-04-22
-    source: James_Alexander_Elphinstone
-  AddLiteral (bafdf556-434e-4da6-be48-b2bc4984432c)
- Call ID: bafdf556-434e-4da6-be48-b2bc4984432c
+    literal_type: xsd:integer
+    source: David_Chavchavadze
+    literal_value: 1924
+  AddLiteral (cdd4b45e-dc77-4684-8a94-77b0627dddfc)
+ Call ID: cdd4b45e-dc77-4684-8a94-77b0627dddfc
   Args:
-    source: James_Alexander_Elphinstone
-    literal_value: 1994-12-19
+    source: David_Chavchavadze
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:string
-  AddLiteral (0cb994e0-1dc8-4e41-85a2-3ad2bbd7c0eb)
- Call ID: 0cb994e0-1dc8-4e41-85a2-3ad2bbd7c0eb
+    literal_value: 2014
+  AssignClass (805d1c8e-8fa6-4d78-a8c8-c1d57aaa2887)
+ Call ID: 805d1c8e-8fa6-4d78-a8c8-c1d57aaa2887
   Args:
-    literal_value: 1978-04-22
-    relation: :hasMarriageYear
-    literal_type: xsd:string
-    source: James_Alexander_Elphinstone
-  Finish (b2e97577-e537-4305-9f4b-babd0cce5f12)
- Call ID: b2e97577-e537-4305-9f4b-babd0cce5f12
+    source: Prince_Paul_Chavchavadze
+    type: :Man
+  AddLiteral (46c92b39-6758-46df-bc1f-786a396b006d)
+ Call ID: 46c92b39-6758-46df-bc1f-786a396b006d
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    literal_value: 1899
+    source: Prince_Paul_Chavchavadze
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (de9071fe-7ac1-4621-9cfa-1b0839865577)
+ Call ID: de9071fe-7ac1-4621-9cfa-1b0839865577
+  Args:
+    literal_value: 1971
+    source: Prince_Paul_Chavchavadze
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (ead4ee4b-14e6-4299-9011-cd0c7b0d9deb)
+ Call ID: ead4ee4b-14e6-4299-9011-cd0c7b0d9deb
+  Args:
+    source: Princess_Nina_Georgievna_of_Russia
+    type: :Woman
+  AddLiteral (d292658f-4ece-4002-8f68-8bc00df2b323)
+ Call ID: d292658f-4ece-4002-8f68-8bc00df2b323
+  Args:
+    source: Princess_Nina_Georgievna_of_Russia
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1901
+  AddLiteral (480c734d-5ae0-40b6-9cb5-b6a51d5ca112)
+ Call ID: 480c734d-5ae0-40b6-9cb5-b6a51d5ca112
+  Args:
+    relation: :hasDeathYear
+    source: Princess_Nina_Georgievna_of_Russia
+    literal_type: xsd:integer
+    literal_value: 1974
+  AddTriple (631618e3-c8b8-4532-b13c-bb474885dafe)
+ Call ID: 631618e3-c8b8-4532-b13c-bb474885dafe
+  Args:
+    source: David_Chavchavadze
+    relation: :hasFather
+    target: Prince_Paul_Chavchavadze
+  AddTriple (2b502b06-0a92-4c2e-ae91-e3bb7f9dbdb7)
+ Call ID: 2b502b06-0a92-4c2e-ae91-e3bb7f9dbdb7
+  Args:
+    target: Princess_Nina_Georgievna_of_Russia
+    source: David_Chavchavadze
+    relation: :hasMother
+  AssignClass (5e964e18-90d6-425f-a357-e2b5365578d2)
+ Call ID: 5e964e18-90d6-425f-a357-e2b5365578d2
+  Args:
+    source: Paul_George_Olkhovsky
+    type: :Man
+  AddLiteral (e99cede1-f675-465f-844a-830ec14fdd82)
+ Call ID: e99cede1-f675-465f-844a-830ec14fdd82
+  Args:
+    source: Paul_George_Olkhovsky
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1960
+  Finish (727744f6-13fa-47fe-baf1-b662002ce9aa)
+ Call ID: 727744f6-13fa-47fe-baf1-b662002ce9aa
+  Args:
 
 ================================= Tool Message =================================
 
@@ -599,40 +583,22 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Elphinstone a :Man ;
-      :hasFather data:James_Alexander_Elphinstone ;
-      :hasMother data:Willa_Mary_Gabrielle_Chetwode .
+  data:David_Chavchavadze a :Man ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Prince_Paul_Chavchavadze ;
+      :hasMother data:Princess_Nina_Georgievna_of_Russia .
 
-  data:Andrew_Charles_Victor_Elphinstone a :Man .
+  data:Paul_George_Olkhovsky a :Man ;
+      :hasBirthYear 1960 .
 
-  data:George_David_Chetwode a :Man .
+  data:Prince_Paul_Chavchavadze a :Man ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1971 .
 
-  data:James_Alexander_Elphinstone a :Man ;
-      :hasBirthYear "1953-04-22"^^xsd:string ;
-      :hasDeathYear "1994-12-19"^^xsd:string ;
-      :hasFather data:Andrew_Charles_Victor_Elphinstone,
-          data:Sidney_Buller-Fullerton-Elphinstone ;
-      :hasMarriageYear "1978-04-22"^^xsd:string ;
-      :hasMother data:Jean_Frances_Hambro,
-          data:Mary_Bowes-Lyon .
-
-  data:Jean_Frances_Hambro a :Woman .
-
-  data:Marion_Cook a :Woman .
-
-  data:Mary_Bowes-Lyon a :Woman .
-
-  data:Sidney_Buller-Fullerton-Elphinstone a :Man .
-
-  data:Victor_Elliot-Murray-Kynynmound a :Man .
-
-  data:Willa_Elliot-Murray-Kynynmound a :Woman ;
-      :hasFather data:Victor_Elliot-Murray-Kynynmound ;
-      :hasMother data:Marion_Cook .
-
-  data:Willa_Mary_Gabrielle_Chetwode a :Woman ;
-      :hasFather data:George_David_Chetwode ;
-      :hasMother data:Willa_Elliot-Murray-Kynynmound .
+  data:Princess_Nina_Georgievna_of_Russia a :Woman ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1974 .
 
 
 
@@ -644,302 +610,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a1a1d86c-7298-467e-a82d-37ea304cf063)
- Call ID: a1a1d86c-7298-467e-a82d-37ea304cf063
+  ValidateShacl (f9925f92-9c55-47cc-a54b-ca0f415c97a5)
+ Call ID: f9925f92-9c55-47cc-a54b-ca0f415c97a5
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:36
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Andrew_Charles_Victor_Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
+      The node Prince_Paul_Chavchavadze is missing the required class :Ancestor to satisfy the :hasFather property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew_Charles_Victor_Elphinstone, :Ancestor)
+      AssignClass(node: "Prince_Paul_Chavchavadze", class: ":Ancestor")
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sidney_Buller-Fullerton-Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
+      The node Princess_Nina_Georgievna_of_Russia is missing the required class :Ancestor to satisfy the :hasMother property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sidney_Buller-Fullerton-Elphinstone, :Ancestor)
+      AssignClass(node: "Princess_Nina_Georgievna_of_Russia", class: ":Ancestor")
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple fathers assigned, which exceeds the limit of 1.
+      The node Prince_Paul_Chavchavadze is missing the required class :Ancestor to satisfy the :hasFather property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasFather, [value_to_remove])
+      AssignClass(node: "Prince_Paul_Chavchavadze", class: ":Ancestor")
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person James_Alexander_Elphinstone is assigned as the father of Alexander_Elphinstone, but it is not marked as an Ancestor.
+      The node Princess_Nina_Georgievna_of_Russia is missing the required class :Ancestor to satisfy the :hasMother property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(James_Alexander_Elphinstone, :Ancestor)
+      AssignClass(node: "Princess_Nina_Georgievna_of_Russia", class: ":Ancestor")
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Jean_Frances_Hambro is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
+      The node Prince_Paul_Chavchavadze is missing the required class :Ancestor to satisfy the :hasFather property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Frances_Hambro, :Ancestor)
+      AssignClass(node: "Prince_Paul_Chavchavadze", class: ":Ancestor")
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Mary_Bowes-Lyon is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
+      The node Princess_Nina_Georgievna_of_Russia is missing the required class :Ancestor to satisfy the :hasMother property constraint for David_Chavchavadze.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Bowes-Lyon, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasMother
-    LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple mothers assigned, which exceeds the limit of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasMother, [value_to_remove])
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Mary_Gabrielle_Chetwode is assigned as the mother of Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Mary_Gabrielle_Chetwode, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Victor_Elliot-Murray-Kynynmound is assigned as the father of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victor_Elliot-Murray-Kynynmound, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person James_Alexander_Elphinstone is assigned as the father of Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(James_Alexander_Elphinstone, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Andrew_Charles_Victor_Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew_Charles_Victor_Elphinstone, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Sidney_Buller-Fullerton-Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sidney_Buller-Fullerton-Elphinstone, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasFather
-    LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple fathers assigned, which exceeds the limit of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasFather, [value_to_remove])
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_David_Chetwode is assigned as the father of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_David_Chetwode, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Marion_Cook is assigned as the mother of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marion_Cook, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Mary_Gabrielle_Chetwode is assigned as the mother of Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Mary_Gabrielle_Chetwode, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Jean_Frances_Hambro is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Frances_Hambro, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Mary_Bowes-Lyon is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Bowes-Lyon, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasMother
-    LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple mothers assigned, which exceeds the limit of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasMother, [value_to_remove])
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Elliot-Murray-Kynynmound is assigned as the mother of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Elliot-Murray-Kynynmound, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Victor_Elliot-Murray-Kynynmound is assigned as the father of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victor_Elliot-Murray-Kynynmound, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person James_Alexander_Elphinstone is assigned as the father of Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(James_Alexander_Elphinstone, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Andrew_Charles_Victor_Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew_Charles_Victor_Elphinstone, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Sidney_Buller-Fullerton-Elphinstone is assigned as the father of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sidney_Buller-Fullerton-Elphinstone, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasFather
-    LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple fathers assigned, which exceeds the limit of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasFather, [value_to_remove])
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_David_Chetwode is assigned as the father of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_David_Chetwode, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Marion_Cook is assigned as the mother of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marion_Cook, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Mary_Gabrielle_Chetwode is assigned as the mother of Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Mary_Gabrielle_Chetwode, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Jean_Frances_Hambro is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Frances_Hambro, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Mary_Bowes-Lyon is assigned as the mother of James_Alexander_Elphinstone, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Bowes-Lyon, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: More than 1 values on data:James_Alexander_Elphinstone->:hasMother
-    LLM-provided explanation of the violation:
-      James_Alexander_Elphinstone has multiple mothers assigned, which exceeds the limit of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(James_Alexander_Elphinstone, :hasMother, [value_to_remove])
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Elliot-Murray-Kynynmound is assigned as the mother of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Elliot-Murray-Kynynmound, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Victor_Elliot-Murray-Kynynmound is assigned as the father of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victor_Elliot-Murray-Kynynmound, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_David_Chetwode is assigned as the father of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_David_Chetwode, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Marion_Cook is assigned as the mother of Willa_Elliot-Murray-Kynynmound, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marion_Cook, :Ancestor)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Willa_Elliot-Murray-Kynynmound is assigned as the mother of Willa_Mary_Gabrielle_Chetwode, but it is not marked as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Willa_Elliot-Murray-Kynynmound, :Ancestor)
+      AssignClass(node: "Princess_Nina_Georgievna_of_Russia", class: ":Ancestor")
 
 
 
@@ -948,93 +674,19 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (95f77f26-18bd-4142-8d6a-35e3cb46d550)
- Call ID: 95f77f26-18bd-4142-8d6a-35e3cb46d550
-  Args:
-    target: Sidney_Buller-Fullerton-Elphinstone
-    source: James_Alexander_Elphinstone
-    relation: :hasFather
-  RemoveTriple (c9e4d822-39d3-4875-bbe3-be01f3acb121)
- Call ID: c9e4d822-39d3-4875-bbe3-be01f3acb121
-  Args:
-    source: James_Alexander_Elphinstone
-    relation: :hasMother
-    target: Mary_Bowes-Lyon
-  AssignClass (60af1b51-1ca2-4719-b71b-4264e7993e9a)
- Call ID: 60af1b51-1ca2-4719-b71b-4264e7993e9a
+  AssignClass (f53eb1e6-e9c7-44a2-8b50-396161932cca)
+ Call ID: f53eb1e6-e9c7-44a2-8b50-396161932cca
   Args:
     type: :Ancestor
-    source: Andrew_Charles_Victor_Elphinstone
-  AssignClass (541e1b77-555c-4f5b-8e7a-7ba8cd8c1b04)
- Call ID: 541e1b77-555c-4f5b-8e7a-7ba8cd8c1b04
+    source: Prince_Paul_Chavchavadze
+  AssignClass (a92a5427-b8f1-4a83-8ecb-4d19e8a31185)
+ Call ID: a92a5427-b8f1-4a83-8ecb-4d19e8a31185
   Args:
     type: :Ancestor
-    source: James_Alexander_Elphinstone
-  AssignClass (ef0ab5ab-994c-4966-8788-6cb3415d484c)
- Call ID: ef0ab5ab-994c-4966-8788-6cb3415d484c
+    source: Princess_Nina_Georgievna_of_Russia
+  Finish (9059d37f-e3e0-4809-8ed1-944773b7a0d5)
+ Call ID: 9059d37f-e3e0-4809-8ed1-944773b7a0d5
   Args:
-    source: Jean_Frances_Hambro
-    type: :Ancestor
-  AssignClass (7f9e18ec-6635-402c-a134-3a9e23d896b4)
- Call ID: 7f9e18ec-6635-402c-a134-3a9e23d896b4
-  Args:
-    source: Willa_Mary_Gabrielle_Chetwode
-    type: :Ancestor
-  AssignClass (1c3606c0-6790-4a28-913f-4f80a6b4b654)
- Call ID: 1c3606c0-6790-4a28-913f-4f80a6b4b654
-  Args:
-    source: Victor_Elliot-Murray-Kynynmound
-    type: :Ancestor
-  AssignClass (92b55f25-7bc2-4bae-b219-577e1e0db20a)
- Call ID: 92b55f25-7bc2-4bae-b219-577e1e0db20a
-  Args:
-    source: George_David_Chetwode
-    type: :Ancestor
-  AssignClass (e29ec72c-c56f-4739-a4b7-68b0858f15a0)
- Call ID: e29ec72c-c56f-4739-a4b7-68b0858f15a0
-  Args:
-    type: :Ancestor
-    source: Marion_Cook
-  AssignClass (1bf1f44c-2b72-432d-8969-f1e0b2912478)
- Call ID: 1bf1f44c-2b72-432d-8969-f1e0b2912478
-  Args:
-    type: :Ancestor
-    source: Willa_Elliot-Murray-Kynynmound
-  Finish (132f5f83-876a-4872-9058-6aebf6c628b6)
- Call ID: 132f5f83-876a-4872-9058-6aebf6c628b6
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1047,46 +699,24 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Elphinstone a :Man ;
-      :hasFather data:James_Alexander_Elphinstone ;
-      :hasMother data:Willa_Mary_Gabrielle_Chetwode .
+  data:David_Chavchavadze a :Man ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Prince_Paul_Chavchavadze ;
+      :hasMother data:Princess_Nina_Georgievna_of_Russia .
 
-  data:Mary_Bowes-Lyon a :Woman .
+  data:Paul_George_Olkhovsky a :Man ;
+      :hasBirthYear 1960 .
 
-  data:Sidney_Buller-Fullerton-Elphinstone a :Man .
-
-  data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
-          :Man .
-
-  data:George_David_Chetwode a :Ancestor,
-          :Man .
-
-  data:James_Alexander_Elphinstone a :Ancestor,
+  data:Prince_Paul_Chavchavadze a :Ancestor,
           :Man ;
-      :hasBirthYear "1953-04-22"^^xsd:string ;
-      :hasDeathYear "1994-12-19"^^xsd:string ;
-      :hasFather data:Andrew_Charles_Victor_Elphinstone ;
-      :hasMarriageYear "1978-04-22"^^xsd:string ;
-      :hasMother data:Jean_Frances_Hambro .
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1971 .
 
-  data:Jean_Frances_Hambro a :Ancestor,
-          :Woman .
-
-  data:Marion_Cook a :Ancestor,
-          :Woman .
-
-  data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
-          :Man .
-
-  data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+  data:Princess_Nina_Georgievna_of_Russia a :Ancestor,
           :Woman ;
-      :hasFather data:Victor_Elliot-Murray-Kynynmound ;
-      :hasMother data:Marion_Cook .
-
-  data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
-          :Woman ;
-      :hasFather data:George_David_Chetwode ;
-      :hasMother data:Willa_Elliot-Murray-Kynynmound .
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1974 .
 
 
 
@@ -1098,8 +728,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (b3e7a27c-e73f-4aa9-9eff-37596aac49b9)
- Call ID: b3e7a27c-e73f-4aa9-9eff-37596aac49b9
+  ValidateShacl (4cf44d33-8fe3-45ea-bb1b-4bc60769da86)
+ Call ID: 4cf44d33-8fe3-45ea-bb1b-4bc60769da86
   Args:
 
 ================================= Tool Message =================================
@@ -1110,6 +740,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (653abad7-7333-4e14-a1ab-bc4a56dd7497)
- Call ID: 653abad7-7333-4e14-a1ab-bc4a56dd7497
+  Finish (71601d0e-e248-4c49-b269-4e9cd196ee9b)
+ Call ID: 71601d0e-e248-4c49-b269-4e9cd196ee9b
   Args:

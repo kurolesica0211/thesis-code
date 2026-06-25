@@ -2,21 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
+data:Elena_Reuss a :Person,
+        :Woman ;
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali .
+
+data:Heinrich_XIV_Fuerst_Reuss a :Man,
+        :Person .
+
+data:Heinrich_XXVIII_Reuss a :Man,
         :Person ;
-    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+    :hasFather data:Heinrich_XIII_Prinz_Reuss ;
+    :hasMother data:Susan_Doukht_Jalali .
 
-data:John_Herbert_Bowes-Lyon a :Man,
+data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
+
+data:Duke_Adolf_Friedrich_of_Mecklenburg a :Man,
+        :Person .
+
+data:Prince_Heinrich_I_Reuss a :Man,
+        :Person .
+
+data:Heinrich_XIII_Prinz_Reuss a :Man,
         :Person ;
-    :hasBirthYear 1886 ;
-    :hasDeathYear 1930 ;
-    :hasMarriageYear 1914 ;
-    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-    :isSiblingOf data:Elizabeth_Bowes-Lyon .
+    :hasBirthYear 1951 ;
+    :hasFather data:Prince_Heinrich_I_Reuss ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
+    :hasRelation data:Susan_Doukht_Jalali .
 
-data:Elizabeth_Bowes-Lyon a :Person,
-        :Woman .
-
-data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+data:Susan_Doukht_Jalali a :Person,
         :Woman .
 

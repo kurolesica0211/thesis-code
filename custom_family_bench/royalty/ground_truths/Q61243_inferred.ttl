@@ -1,0 +1,286 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "1006:1027"^^xsd:string,
+        "1006:1063"^^xsd:string ;
+    data:posIndicesPart "1221:1228"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isUncleOf data:Frederick_Francis_IV .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1077:1122"^^xsd:string,
+        "1091:1122"^^xsd:string ;
+    data:posIndicesPart "1250:1255"^^xsd:string,
+        "1256:1263"^^xsd:string,
+        "1344:1349"^^xsd:string,
+        "1359:1366"^^xsd:string,
+        "1452:1457"^^xsd:string,
+        "1564:1569"^^xsd:string ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia"^^xsd:string,
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string,
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "1006:1015"^^xsd:string,
+        "1211:1220"^^xsd:string,
+        "187:196"^^xsd:string,
+        "929:938"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isChildOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isDaughterOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "366:406"^^xsd:string,
+        "507:547"^^xsd:string ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasChild data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :hasSex data:male ;
+    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
+    :isAncestorOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis IV"^^xsd:string ;
+    data:posIndicesFull "187:207"^^xsd:string,
+        "929:949"^^xsd:string,
+        "929:985"^^xsd:string ;
+    data:posIndicesPart "1221:1228"^^xsd:string ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz IV"^^xsd:string,
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Thyra, Crown Princess of Hanover"^^xsd:string ;
+    data:posIndicesFull "412:437"^^xsd:string,
+        "564:589"^^xsd:string ;
+    data:posIndicesPart "1693:1701"^^xsd:string,
+        "1702:1707"^^xsd:string ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark"^^xsd:string,
+        "Princess Thyra of Denmark"^^xsd:string ;
+    :hasChild data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
+    :isAncestorOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Princess_Alexandra_of_Hanover ;
+    :isAuntOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isMotherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSisterOf data:Thyra-_Crown_Princess_of_Hanover .
+
+data:Princess_Alexandra_of_Hanover a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra of Hanover"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string ;
+    data:posIndicesPart "1144:1153"^^xsd:string,
+        "1197:1206"^^xsd:string,
+        "1673:1682"^^xsd:string,
+        "1693:1701"^^xsd:string,
+        "1746:1755"^^xsd:string,
+        "336:345"^^xsd:string,
+        "447:456"^^xsd:string,
+        "704:713"^^xsd:string,
+        "865:874"^^xsd:string ;
+    data:wdtLink wdt:Q61243 ;
+    :alsoKnownAs "Alexandra of Hanover and Cumberland"^^xsd:string,
+        "Princess Alexandra Louise Marie Olga Elisabeth Therese Vera of Hanover and Cumberland"^^xsd:string,
+        "Princess Alexandra of Hanover and Cumberland"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isAuntOf data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isDaughterOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSisterOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover .
+
+data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick"^^xsd:string ;
+    data:posIndicesFull "366:381"^^xsd:string,
+        "507:522"^^xsd:string ;
+    data:posIndicesPart "1350:1354"^^xsd:string,
+        "1570:1574"^^xsd:string ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick"^^xsd:string,
+        "Ernest Augustus"^^xsd:string,
+        "Ernst August I of Brunswick"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasChild data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isAncestorOf data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isFatherOf data:Frederica_of_Hanover ;
+    :isParentOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Alexandra_of_Hanover ;
+    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isUncleOf data:Frederica_of_Hanover .
+

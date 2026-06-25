@@ -85,44 +85,86 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nuria
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
 
 
-Princess Françoise
+Princess Joan
 
 
-Princess Mariam
+Descendants of Prince René:
 
 
-Princess Monique
+Princess Maria Pia
 
 
-Prince Juan Jorge de Bagration-Mukhrani (born 18 August 1977) is a Spanish-born Georgian prince and member of the House of Mukhrani of the Bagrationi dynasty and a distant relation to the Spanish royal family.
-Early life and family
+Princess Marina
 
-Prince Juan Jorge de Bagration-Mukhrani was born on 18 August 1977 in Madrid to Prince Bagrat de Bagration y de Baviera and Doña María del Carmen de Ulloa y Suelves.
-His paternal grandfather, Prince Irakli Bagration of Mukhrani, was exiled from Georgia during the invasion of the Red Army, living in Germany, Italy, and finally settling in Spain.
-His paternal grandmother, Infanta María de las Mercedes of Spain was a member of the Spanish royal family and the German House of Wittelsbach; she was the daughter of Prince Ferdinand of Bavaria, granddaughter of Alfonso XII of Spain, and niece of Alfonso XIII of Spain.
-His maternal grandfather was Gonzalo Maria de Ulloa y Ramírez de Haro, Marqués de Castro-Serna, Count de Adanero.
-Prince Juan's parents divorced in 2005 and his father remarried in 2009 to Françoise Cazaudehore.
-Prince Juan is a member of the House of Mukhrani, a branch of the Bagrationi dynasty that ruled Georgia from the Middle Ages until the nineteenth century, when Georgia was annexed into the Russian Empire.
-Prince Juan studied at Collège Alpin International Beau Soleil, a boarding school in Villars-sur-Ollon, Switzerland and was a schoolmate and childhood friend of Cayetano Rivera Ordóñez.
-Personal life
 
-Prince Juan met Kristine Dzidziguri, a Georgian model, in 2014.
-They were married a few months later in a civil ceremony on 10 May 2014 in Ronda, Spain.
-The couple began planning a religious ceremony but were delayed due to social and political conflicts within Georgia and because of Prince Juan's father's declining health.
-On 2 June 2018, Prince Juan and Dzidziguri received a blessing from Ilia II of Georgia, the Catholicos-Patriarch of All Georgia.
-Their wedding reception was held at the Palace of Mukhrani.
-Later during their Indonesian tour, Prince Juan and Princess Kristine attended a gala lunch focused on establishing a cultural relationship between Indonesia and Georgia.
-Prince Juan is the founder of the Georgian Foundation, a non-profit organization that promotes Georgian culture.
-In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Prince Jaime Bernardo of Bourbon-Parma, Count of Bardi (born 13 October 1972) is a Dutch diplomat and the second son and third child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
+He is a member of the House of Bourbon-Parma as well a member of the extended Dutch royal family.
+He was the senior advisor on private sector partnerships at the United Nations High Commissioner for Refugees until 2021 and served as the climate envoy of the Netherlands.
+Early life
+
+Jaime was born in Nijmegen, Netherlands.
+He has a twin sister, Princess Margarita, who was born one minute earlier.
+Besides his twin sister, the prince has one elder brother, Carlos, Duke of Parma, and one younger sister, Princess Carolina.
+Prince Jaime was born six weeks prematurely and stayed with his sister in an incubator at the hospital.
+Jaime was baptised by Bernardus Johannes Cardinal Alfrink, with his grandfather Prince Bernhard of Lippe-Biesterfeld and his grandmother Princess Madeleine of Bourbon-Parma as his godparents.
+Together with his mother and his siblings he moved to the Soestdijk Palace (Baarn), then residence of his grandparents, Queen Juliana and Prince Bernhard, where he lived for several years.
+He now works for the Ministry of Foreign Affairs of the Netherlands.
+His first role was as the first secretary of the Netherlands Embassy in Baghdad, before becoming a political advisor to the peace mission in Pol-e Khomri in the Baghlan Province in the northern part of Afghanistan.
+Until the summer of 2007 the prince worked on secondment in the cabinet of the European Commissioner Neelie Kroes.
+On 7 February 2014, the Ministry of Foreign Affairs announced that he would be appointed as ambassador of the Kingdom of the Netherlands to the Holy See.
+Prince Jaime was, on 15 July 2014, sworn in as ambassador by King Willem-Alexander and he served till August 2018.
+In August 2021 he started as the Climate Envoy of the Netherlands and served for over four years.
+The prince performs representative tasks for the Ducal House of Bourbon-Parma.
+On 9 November 2015, it was announced that the couple were expecting a second child; daughter Gloria Irene was born on (2016-05-09)9 May 2016.
+In a 2015 interview, Princess Viktória stated that the gender of her future child did not matter ("fortunately, we can not influence nature in the terms of gender"), after being told that there were no grandsons for the late Duke of Parma (in April 2016, Jaime's elder brother Carlos, Duke of Parma finally had a son, named Carlos Enrique).
+Titles, styles and honours
+
+Titles
+
+Honours
+
+Dynastic honours
+
+Foreign honours
+
+Notes
+
+Already a ducal prince from birth, his father bestowed the substantive title Conte di Bardi ('Count of Bardi') upon him on 2 September 1996.
+In 1996 he was incorporated into the Dutch nobility by Queen Beatrix, with the highest noble title Prins de Bourbon de Parme (Prince of Bourbon-Parma), and styled Zijne Koninklijke Hoogheid ('His Royal Highness').
+He does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a grandson of Queen Juliana and cousin of the present King Willem-Alexander, he is an official member of the more extended Dutch royal family.
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +180,9 @@ In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +197,23 @@ In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +313,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +336,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +356,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +366,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +406,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,177 +505,138 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0a1a0038-9288-467a-9707-50fe44ea74d2)
- Call ID: 0a1a0038-9288-467a-9707-50fe44ea74d2
+  AssignClass (7be32e8d-da3a-4f59-a4a5-71124c32bc92)
+ Call ID: 7be32e8d-da3a-4f59-a4a5-71124c32bc92
   Args:
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
     type: :Man
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-  AssignClass (7295af37-6158-449d-9598-f4280c102efd)
- Call ID: 7295af37-6158-449d-9598-f4280c102efd
+  AssignClass (ed3070de-5f1c-4308-894a-7b038b1ec2d9)
+ Call ID: ed3070de-5f1c-4308-894a-7b038b1ec2d9
   Args:
     type: :Person
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-  AddLiteral (adbff270-fee8-473b-93cc-a0334ed6d831)
- Call ID: adbff270-fee8-473b-93cc-a0334ed6d831
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+  AddLiteral (08472ffc-ac22-4beb-a867-b5a4bf59869b)
+ Call ID: 08472ffc-ac22-4beb-a867-b5a4bf59869b
   Args:
-    literal_value: 1977
     literal_type: xsd:integer
+    literal_value: 1972
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
     relation: :hasBirthYear
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-  AddTriple (61ef5740-8b26-48fe-9ca7-8fedfd0c82ea)
- Call ID: 61ef5740-8b26-48fe-9ca7-8fedfd0c82ea
+  AssignClass (5e1964d5-9039-4923-9284-93c9e244d80c)
+ Call ID: 5e1964d5-9039-4923-9284-93c9e244d80c
   Args:
-    target: :Male
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-    relation: :hasSex
-  AssignClass (9aac26af-bf75-4b7c-8a81-053ac2105a5d)
- Call ID: 9aac26af-bf75-4b7c-8a81-053ac2105a5d
-  Args:
-    type: :Man
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-  AssignClass (146ea0da-52de-4225-a0a4-0944c917ab5c)
- Call ID: 146ea0da-52de-4225-a0a4-0944c917ab5c
-  Args:
-    type: :Person
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-  AddTriple (867d30d1-caad-4db9-a84e-05cb6b53b87c)
- Call ID: 867d30d1-caad-4db9-a84e-05cb6b53b87c
-  Args:
-    target: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-    relation: :hasFather
-  AssignClass (5df0fd40-2420-4b4b-8cfd-0a8294139b94)
- Call ID: 5df0fd40-2420-4b4b-8cfd-0a8294139b94
-  Args:
+    source: :Princess_Irene_of_the_Netherlands
     type: :Woman
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-  AssignClass (01c63ab0-16a0-4b2f-a48c-d5bea91e0415)
- Call ID: 01c63ab0-16a0-4b2f-a48c-d5bea91e0415
+  AssignClass (8985a9e2-a0b9-43f6-a838-5832516715ef)
+ Call ID: 8985a9e2-a0b9-43f6-a838-5832516715ef
   Args:
     type: :Person
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-  AddTriple (0aa6c454-e156-4adf-b5fe-c2771acc2231)
- Call ID: 0aa6c454-e156-4adf-b5fe-c2771acc2231
+    source: :Princess_Irene_of_the_Netherlands
+  AssignClass (fcff3170-4f41-4b14-aa51-ee47ce9cfdf9)
+ Call ID: fcff3170-4f41-4b14-aa51-ee47ce9cfdf9
   Args:
-    target: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Man
+  AssignClass (c4709823-b3ab-407a-82c1-66922f4f01b3)
+ Call ID: c4709823-b3ab-407a-82c1-66922f4f01b3
+  Args:
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Person
+  AddTriple (4de8aea5-e666-48f0-ac38-25de32f86c9a)
+ Call ID: 4de8aea5-e666-48f0-ac38-25de32f86c9a
+  Args:
+    target: :Princess_Irene_of_the_Netherlands
     relation: :hasMother
-  AssignClass (da2a435e-cd58-45af-996a-1ddf4d9abd55)
- Call ID: da2a435e-cd58-45af-996a-1ddf4d9abd55
-  Args:
-    type: :Man
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (d4db7f79-d102-42da-bca3-191ff1aa37e6)
- Call ID: d4db7f79-d102-42da-bca3-191ff1aa37e6
-  Args:
-    type: :Person
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AddTriple (96d7327d-89f1-43eb-9da3-334fc943b780)
- Call ID: 96d7327d-89f1-43eb-9da3-334fc943b780
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+  AddTriple (59eed773-2af4-4261-842b-cfc5fc79fec2)
+ Call ID: 59eed773-2af4-4261-842b-cfc5fc79fec2
   Args:
     relation: :hasFather
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    target: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (d4503919-3d41-4639-aab5-35c90df71432)
- Call ID: d4503919-3d41-4639-aab5-35c90df71432
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+    target: :Carlos_Hugo_Duke_of_Parma
+  AssignClass (a34f98ad-3361-421b-87bd-6bb832a2d473)
+ Call ID: a34f98ad-3361-421b-87bd-6bb832a2d473
   Args:
     type: :Woman
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-  AssignClass (ce072aec-a7c4-43b9-8f59-6fac08641643)
- Call ID: ce072aec-a7c4-43b9-8f59-6fac08641643
+    source: :Princess_Margarita
+  AssignClass (534e697b-a844-4f3c-87aa-3c4004c1180f)
+ Call ID: 534e697b-a844-4f3c-87aa-3c4004c1180f
   Args:
+    source: :Princess_Margarita
     type: :Person
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-  AddTriple (26d858f7-145c-40ee-9ea6-0ade876d0b76)
- Call ID: 26d858f7-145c-40ee-9ea6-0ade876d0b76
+  AddTriple (6ee93626-d37d-4009-afe0-903c9bbd756c)
+ Call ID: 6ee93626-d37d-4009-afe0-903c9bbd756c
   Args:
-    target: :Infanta_Maria_de_las_Mercedes_of_Spain
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasMother
-  AssignClass (1818cab0-e274-4ed8-8731-79de31e194c1)
- Call ID: 1818cab0-e274-4ed8-8731-79de31e194c1
+    target: :Princess_Margarita
+    relation: :isSiblingOf
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+  AssignClass (5692f833-797a-49ed-8fa4-04e2178a9afa)
+ Call ID: 5692f833-797a-49ed-8fa4-04e2178a9afa
   Args:
+    source: :Carlos_Duke_of_Parma
     type: :Man
-    source: :Prince_Ferdinand_of_Bavaria
-  AssignClass (e72a06af-23d7-4da7-a6da-d68b7a49973b)
- Call ID: e72a06af-23d7-4da7-a6da-d68b7a49973b
+  AssignClass (196f9f98-00d2-4707-9b7f-8171b540217d)
+ Call ID: 196f9f98-00d2-4707-9b7f-8171b540217d
   Args:
     type: :Person
-    source: :Prince_Ferdinand_of_Bavaria
-  AddTriple (53ecb942-3ad6-4035-99f3-8f8278b2ca3d)
- Call ID: 53ecb942-3ad6-4035-99f3-8f8278b2ca3d
+    source: :Carlos_Duke_of_Parma
+  AddTriple (2094c9ea-25e2-4d96-b394-6a681e5e93f7)
+ Call ID: 2094c9ea-25e2-4d96-b394-6a681e5e93f7
   Args:
-    relation: :hasFather
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-    target: :Prince_Ferdinand_of_Bavaria
-  AssignClass (ff4a789d-9783-4e2d-8244-cba50e9fa099)
- Call ID: ff4a789d-9783-4e2d-8244-cba50e9fa099
+    target: :Carlos_Duke_of_Parma
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+    relation: :isSiblingOf
+  AssignClass (d916cee6-3514-4c42-8c4d-48381e89b0a1)
+ Call ID: d916cee6-3514-4c42-8c4d-48381e89b0a1
   Args:
+    source: :Princess_Carolina
+    type: :Woman
+  AssignClass (e78a1866-dfdd-4a97-846c-161881897ec0)
+ Call ID: e78a1866-dfdd-4a97-846c-161881897ec0
+  Args:
+    source: :Princess_Carolina
+    type: :Person
+  AddTriple (17d7f444-aca6-4a83-ad23-e6836a4772c5)
+ Call ID: 17d7f444-aca6-4a83-ad23-e6836a4772c5
+  Args:
+    target: :Princess_Carolina
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+    relation: :isSiblingOf
+  AssignClass (71830925-d01a-4d93-a913-e83fb7fe579d)
+ Call ID: 71830925-d01a-4d93-a913-e83fb7fe579d
+  Args:
+    type: :Woman
+    source: :Gloria_Irene
+  AssignClass (0a0d1d7b-3c0b-4ce9-be54-448f14edeabe)
+ Call ID: 0a0d1d7b-3c0b-4ce9-be54-448f14edeabe
+  Args:
+    source: :Gloria_Irene
+    type: :Person
+  AddTriple (17c81c88-aa8d-47a6-97a5-61ae76671f1d)
+ Call ID: 17c81c88-aa8d-47a6-97a5-61ae76671f1d
+  Args:
+    target: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+    source: :Gloria_Irene
+    relation: :isChildOf
+  AssignClass (9d467bdb-d4d8-425e-837f-d8744c7ca877)
+ Call ID: 9d467bdb-d4d8-425e-837f-d8744c7ca877
+  Args:
+    source: :Carlos_Enrique
     type: :Man
-    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-  AssignClass (4d8e3037-b818-4500-86bc-6d56e45e906a)
- Call ID: 4d8e3037-b818-4500-86bc-6d56e45e906a
+  AssignClass (72fb099c-d2f3-4c75-bcc8-579702e90087)
+ Call ID: 72fb099c-d2f3-4c75-bcc8-579702e90087
   Args:
     type: :Person
-    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-  AddTriple (3cdb2b87-910f-4bcd-9948-f21d020da844)
- Call ID: 3cdb2b87-910f-4bcd-9948-f21d020da844
+    source: :Carlos_Enrique
+  AddTriple (8a15dbae-bb68-4086-bc61-a6bb796d2768)
+ Call ID: 8a15dbae-bb68-4086-bc61-a6bb796d2768
   Args:
-    target: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-    relation: :hasFather
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-  AssignClass (1073edec-4e50-4781-915e-1415e27aae63)
- Call ID: 1073edec-4e50-4781-915e-1415e27aae63
+    relation: :isChildOf
+    source: :Carlos_Enrique
+    target: :Carlos_Duke_of_Parma
+  Finish (7918793e-51b7-4789-b7c1-39989bbb7a4b)
+ Call ID: 7918793e-51b7-4789-b7c1-39989bbb7a4b
   Args:
-    type: :Woman
-    source: :Francoise_Cazaudehore
-  AssignClass (7b4a6191-89c4-430b-9eaa-b7d2b7a0461e)
- Call ID: 7b4a6191-89c4-430b-9eaa-b7d2b7a0461e
-  Args:
-    type: :Person
-    source: :Francoise_Cazaudehore
-  AssignClass (4a5d58f3-2614-46cb-976b-4e487d03696d)
- Call ID: 4a5d58f3-2614-46cb-976b-4e487d03696d
-  Args:
-    type: :Woman
-    source: :Kristine_Dzidziguri
-  AssignClass (994c83c3-6438-4f3b-ae21-b5f062505779)
- Call ID: 994c83c3-6438-4f3b-ae21-b5f062505779
-  Args:
-    type: :Person
-    source: :Kristine_Dzidziguri
-  AddTriple (8db6b0c1-1230-410a-9552-224db40923e1)
- Call ID: 8db6b0c1-1230-410a-9552-224db40923e1
-  Args:
-    target: :Kristine_Dzidziguri
-    relation: :hasRelation
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-  AddLiteral (6e46d067-51e7-4b14-a105-d497427552d8)
- Call ID: 6e46d067-51e7-4b14-a105-d497427552d8
-  Args:
-    literal_value: 2014
-    literal_type: xsd:integer
-    source: :Prince_Juan_Jorge_de_Bagration_Mukhrani
-    relation: :hasMarriageYear
-  Finish (d2a4fd27-814e-4ed6-8233-da0ac603c709)
- Call ID: d2a4fd27-814e-4ed6-8233-da0ac603c709
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -644,41 +737,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francoise_Cazaudehore a :Person,
-          :Woman .
-
-  data:Prince_Juan_Jorge_de_Bagration_Mukhrani a :Man,
+  data:Carlos_Enrique a :Man,
           :Person ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
-      :hasMarriageYear 2014 ;
-      :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
-      :hasRelation data:Kristine_Dzidziguri ;
-      :hasSex data:Male .
+      :isChildOf data:Carlos_Duke_of_Parma .
 
-  data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
+  data:Gloria_Irene a :Person,
           :Woman ;
-      :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+      :isChildOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
 
-  data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Man,
+  data:Carlos_Hugo_Duke_of_Parma a :Man,
           :Person .
 
-  data:Infanta_Maria_de_las_Mercedes_of_Spain a :Person,
-          :Woman ;
-      :hasFather data:Prince_Ferdinand_of_Bavaria .
+  data:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Man,
+          :Person ;
+      :hasBirthYear 1972 ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isSiblingOf data:Carlos_Duke_of_Parma,
+          data:Princess_Carolina,
+          data:Princess_Margarita .
 
-  data:Kristine_Dzidziguri a :Person,
+  data:Princess_Carolina a :Person,
           :Woman .
 
-  data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
-          :Person ;
-      :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
-      :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+  data:Princess_Irene_of_the_Netherlands a :Person,
+          :Woman .
 
-  data:Prince_Ferdinand_of_Bavaria a :Man,
-          :Person .
+  data:Princess_Margarita a :Person,
+          :Woman .
 
-  data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
+  data:Carlos_Duke_of_Parma a :Man,
           :Person .
 
 
@@ -691,222 +779,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ad29f7c6-f001-4033-bf38-d7e8e43f46ac)
- Call ID: ad29f7c6-f001-4033-bf38-d7e8e43f46ac
+  ValidateShacl (f51628dd-b9e1-4dd6-be45-98f19892cd6b)
+ Call ID: f51628dd-b9e1-4dd6-be45-98f19892cd6b
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:26
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is not assigned the required class ':Sex'.
+      The node Carlos_Hugo_Duke_of_Parma is assigned as the father of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: "Carlos_Hugo_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Prince_Bagrat_de_Bagration_y_de_Baviera' for the property 'hasFather' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_the_Netherlands is assigned as the mother of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Bagrat_de_Bagration_y_de_Baviera', ':Ancestor')
+      AssignClass(node: "Princess_Irene_of_the_Netherlands", class: ":Ancestor")
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Prince_Irakli_Bagration_of_Mukhrani' for the property 'hasFather' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
+      The node Carlos_Duke_of_Parma is set as a parent to Carlos_Enrique but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Irakli_Bagration_of_Mukhrani', ':Ancestor')
+      AssignClass(node: "Carlos_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' for the property 'hasMother' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
+      The node Carlos_Hugo_Duke_of_Parma is assigned as the father of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Dona_Maria_del_Carmen_de_Ulloa_y_Suelves', ':Ancestor')
+      AssignClass(node: "Carlos_Hugo_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Infanta_Maria_de_las_Mercedes_of_Spain' for the property 'hasMother' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_the_Netherlands is assigned as the mother of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Maria_de_las_Mercedes_of_Spain', ':Ancestor')
+      AssignClass(node: "Princess_Irene_of_the_Netherlands", class: ":Ancestor")
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
+      The node Prince_Jaime_Bernardo_of_Bourbon-Parma is set as a parent to Gloria_Irene but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: "Prince_Jaime_Bernardo_of_Bourbon-Parma", class: ":Ancestor")
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
+      The node Carlos_Duke_of_Parma is set as a parent to Carlos_Enrique but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: "Carlos_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Ferdinand_of_Bavaria' for the property 'hasFather' on node 'Infanta_Maria_de_las_Mercedes_of_Spain' lacks the required class ':Ancestor'.
+      The node Carlos_Hugo_Duke_of_Parma is assigned as the father of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Ferdinand_of_Bavaria', ':Ancestor')
+      AssignClass(node: "Carlos_Hugo_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Prince_Irakli_Bagration_of_Mukhrani' for the property 'hasFather' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
+      The node Princess_Irene_of_the_Netherlands is assigned as the mother of Prince_Jaime_Bernardo_of_Bourbon-Parma but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Irakli_Bagration_of_Mukhrani', ':Ancestor')
+      AssignClass(node: "Princess_Irene_of_the_Netherlands", class: ":Ancestor")
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Prince_Bagrat_de_Bagration_y_de_Baviera' for the property 'hasFather' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
+      The node Prince_Jaime_Bernardo_of_Bourbon-Parma is set as a parent to Gloria_Irene but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Bagrat_de_Bagration_y_de_Baviera', ':Ancestor')
+      AssignClass(node: "Prince_Jaime_Bernardo_of_Bourbon-Parma", class: ":Ancestor")
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro' for the property 'hasFather' on node 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' lacks the required class ':Ancestor'.
+      The node Carlos_Duke_of_Parma is set as a parent to Carlos_Enrique but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro', ':Ancestor')
+      AssignClass(node: "Carlos_Duke_of_Parma", class: ":Ancestor")
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Infanta_Maria_de_las_Mercedes_of_Spain' for the property 'hasMother' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
+      The node Prince_Jaime_Bernardo_of_Bourbon-Parma is set as a parent to Gloria_Irene but is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Maria_de_las_Mercedes_of_Spain', ':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' for the property 'hasMother' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Dona_Maria_del_Carmen_de_Ulloa_y_Suelves', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Ferdinand_of_Bavaria' for the property 'hasFather' on node 'Infanta_Maria_de_las_Mercedes_of_Spain' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Ferdinand_of_Bavaria', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Bagrat_de_Bagration_y_de_Baviera' for the property 'hasFather' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Bagrat_de_Bagration_y_de_Baviera', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro' for the property 'hasFather' on node 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Irakli_Bagration_of_Mukhrani' for the property 'hasFather' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Irakli_Bagration_of_Mukhrani', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' for the property 'hasMother' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Dona_Maria_del_Carmen_de_Ulloa_y_Suelves', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Infanta_Maria_de_las_Mercedes_of_Spain' for the property 'hasMother' on node 'Prince_Bagrat_de_Bagration_y_de_Baviera' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Maria_de_las_Mercedes_of_Spain', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Prince_Juan_Jorge_de_Bagration_Mukhrani' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Ferdinand_of_Bavaria' for the property 'hasFather' on node 'Infanta_Maria_de_las_Mercedes_of_Spain' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Ferdinand_of_Bavaria', ':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro' for the property 'hasFather' on node 'Dona_Maria_del_Carmen_de_Ulloa_y_Suelves' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro', ':Ancestor')
+      AssignClass(node: "Prince_Jaime_Bernardo_of_Bourbon-Parma", class: ":Ancestor")
 
 
 
@@ -915,56 +891,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (cf963618-7d3a-46e3-a37a-6258b599f3cb)
- Call ID: cf963618-7d3a-46e3-a37a-6258b599f3cb
-  Args:
-    type: :Sex
-    source: :Male
-  AssignClass (01e7a49a-e3ab-469c-9f38-7f822970cf53)
- Call ID: 01e7a49a-e3ab-469c-9f38-7f822970cf53
-  Args:
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    type: :Ancestor
-  AssignClass (b68cdf95-2cda-43b1-9b6e-09fd34931e21)
- Call ID: b68cdf95-2cda-43b1-9b6e-09fd34931e21
+  AssignClass (6dc21bbb-220e-43d3-8394-0b287837ac83)
+ Call ID: 6dc21bbb-220e-43d3-8394-0b287837ac83
   Args:
     type: :Ancestor
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (9e2481f3-a48b-4410-8f03-846b9b63a3cc)
- Call ID: 9e2481f3-a48b-4410-8f03-846b9b63a3cc
+    source: :Carlos_Hugo_Duke_of_Parma
+  AssignClass (ba1d7f91-ce03-4504-9365-6da8f4ca1318)
+ Call ID: ba1d7f91-ce03-4504-9365-6da8f4ca1318
   Args:
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
+    source: :Princess_Irene_of_the_Netherlands
     type: :Ancestor
-  AssignClass (ae4d7c2d-81b0-4978-bf4e-c06519567d7d)
- Call ID: ae4d7c2d-81b0-4978-bf4e-c06519567d7d
+  AssignClass (f1ba8803-a7ab-437d-8d1c-e4d71d802829)
+ Call ID: f1ba8803-a7ab-437d-8d1c-e4d71d802829
+  Args:
+    source: :Carlos_Duke_of_Parma
+    type: :Ancestor
+  AssignClass (bde48692-a0d0-4838-bfee-d9ecca4e6f21)
+ Call ID: bde48692-a0d0-4838-bfee-d9ecca4e6f21
   Args:
     type: :Ancestor
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-  AssignClass (113f64d3-56e0-4f61-85c1-cb5c7a5b8084)
- Call ID: 113f64d3-56e0-4f61-85c1-cb5c7a5b8084
+    source: :Prince_Jaime_Bernardo_of_Bourbon-Parma
+  ValidateShacl (143d77c0-5a9e-4726-8d2c-3fa91c3dd5dc)
+ Call ID: 143d77c0-5a9e-4726-8d2c-3fa91c3dd5dc
   Args:
-    source: :Prince_Ferdinand_of_Bavaria
-    type: :Ancestor
-  AssignClass (ff6616c0-f09c-465f-8acc-07a7a9aabaf8)
- Call ID: ff6616c0-f09c-465f-8acc-07a7a9aabaf8
-  Args:
-    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-    type: :Ancestor
-  Finish (db5322a1-e7e8-434e-ad74-29ab2d5349cb)
- Call ID: db5322a1-e7e8-434e-ad74-29ab2d5349cb
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -985,64 +934,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francoise_Cazaudehore a :Person,
-          :Woman .
-
-  data:Prince_Juan_Jorge_de_Bagration_Mukhrani a :Man,
+  data:Carlos_Enrique a :Man,
           :Person ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
-      :hasMarriageYear 2014 ;
-      :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
-      :hasRelation data:Kristine_Dzidziguri ;
-      :hasSex data:Male .
+      :isChildOf data:Carlos_Duke_of_Parma .
 
-  data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
-          :Person,
+  data:Gloria_Irene a :Person,
           :Woman ;
-      :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+      :isChildOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
 
-  data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Ancestor,
+  data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
           :Man,
           :Person .
 
-  data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Ferdinand_of_Bavaria .
-
-  data:Kristine_Dzidziguri a :Person,
-          :Woman .
-
-  data:Male a :Sex .
-
-  data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+  data:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
-      :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+      :hasBirthYear 1972 ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isSiblingOf data:Carlos_Duke_of_Parma,
+          data:Princess_Carolina,
+          data:Princess_Margarita .
 
-  data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+  data:Princess_Carolina a :Person,
+          :Woman .
+
+  data:Princess_Irene_of_the_Netherlands a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Margarita a :Person,
+          :Woman .
+
+  data:Carlos_Duke_of_Parma a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
-          :Man,
-          :Person .
 
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (2751497a-b19d-4c77-8332-23e51ec46a27)
- Call ID: 2751497a-b19d-4c77-8332-23e51ec46a27
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1052,6 +980,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5581dc61-9117-4b39-a1dd-f61fb1d5cc43)
- Call ID: 5581dc61-9117-4b39-a1dd-f61fb1d5cc43
+  Finish (1d4398a8-340d-47f8-8210-c5ddbb2fe556)
+ Call ID: 1d4398a8-340d-47f8-8210-c5ddbb2fe556
   Args:

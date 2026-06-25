@@ -1,0 +1,366 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceRaymundoDellaTorreETasso a :Man ;
+    :hasBrother data:PrinceRaymundoDellaTorreETasso ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :isBloodrelationOf data:PrinceRaymundoDellaTorreETasso ;
+    :isBrotherOf data:PrinceRaymundoDellaTorreETasso ;
+    :isSiblingOf data:PrinceRaymundoDellaTorreETasso .
+
+data:ArchduchessRenataOfAustria a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceDominikRainerRadziwill ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:ArchduchessRenataOfAustria ;
+    :hasSon data:PrinceDominikRainerRadziwill ;
+    :isAncestorOf data:PrinceDominikRainerRadziwill ;
+    :isAuntOf data:PrinceDominikRainerRadziwill ;
+    :isBloodrelationOf data:ArchduchessRenataOfAustria ;
+    :isMotherOf data:PrinceDominikRainerRadziwill ;
+    :isParentOf data:PrinceDominikRainerRadziwill ;
+    :isSiblingOf data:ArchduchessRenataOfAustria ;
+    :isSisterOf data:ArchduchessRenataOfAustria .
+
+data:PrinceHieronimRadziwill a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceHieronimRadziwill ;
+    :hasChild data:PrinceDominikRainerRadziwill ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSon data:PrinceDominikRainerRadziwill ;
+    :isAncestorOf data:PrinceDominikRainerRadziwill ;
+    :isBloodrelationOf data:PrinceHieronimRadziwill ;
+    :isBrotherOf data:PrinceHieronimRadziwill ;
+    :isFatherOf data:PrinceDominikRainerRadziwill ;
+    :isParentOf data:PrinceDominikRainerRadziwill ;
+    :isSiblingOf data:PrinceHieronimRadziwill ;
+    :isUncleOf data:PrinceDominikRainerRadziwill .
+
+data:GeorgeIOfGreece a :Ancestor,
+        :Man ;
+    :hasBrother data:GeorgeIOfGreece ;
+    :hasChild data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSon data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GeorgeIOfGreece ;
+    :isBrotherOf data:GeorgeIOfGreece ;
+    :isFatherOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isParentOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:GeorgeIOfGreece ;
+    :isUncleOf data:PrinceGeorgeOfGreeceAndDenmark .
+
+data:MarieFelixBlanc a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessMarieBonaparte ;
+    :hasDaughter data:PrincessMarieBonaparte ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:MarieFelixBlanc ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :isAuntOf data:PrincessMarieBonaparte ;
+    :isBloodrelationOf data:MarieFelixBlanc ;
+    :isMotherOf data:PrincessMarieBonaparte ;
+    :isParentOf data:PrincessMarieBonaparte ;
+    :isSiblingOf data:MarieFelixBlanc ;
+    :isSisterOf data:MarieFelixBlanc .
+
+data:OlgaConstantinovnaOfRussia a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:OlgaConstantinovnaOfRussia ;
+    :hasSon data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isAuntOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBloodrelationOf data:OlgaConstantinovnaOfRussia ;
+    :isMotherOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isParentOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSiblingOf data:OlgaConstantinovnaOfRussia ;
+    :isSisterOf data:OlgaConstantinovnaOfRussia .
+
+data:PrinceRolandBonaparte a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceRolandBonaparte ;
+    :hasChild data:PrincessMarieBonaparte ;
+    :hasDaughter data:PrincessMarieBonaparte ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :isBloodrelationOf data:PrinceRolandBonaparte ;
+    :isBrotherOf data:PrinceRolandBonaparte ;
+    :isFatherOf data:PrincessMarieBonaparte ;
+    :isParentOf data:PrincessMarieBonaparte ;
+    :isSiblingOf data:PrinceRolandBonaparte ;
+    :isUncleOf data:PrincessMarieBonaparte .
+
+data:PrinceDominikRainerRadziwill a :Man ;
+    :hasAncestor data:ArchduchessRenataOfAustria,
+        data:PrinceHieronimRadziwill ;
+    :hasBrother data:PrinceDominikRainerRadziwill ;
+    :hasFather data:PrinceHieronimRadziwill ;
+    :hasMother data:ArchduchessRenataOfAustria ;
+    :hasParent data:ArchduchessRenataOfAustria,
+        data:PrinceHieronimRadziwill ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :isBloodrelationOf data:PrinceDominikRainerRadziwill ;
+    :isBrotherOf data:PrinceDominikRainerRadziwill ;
+    :isChildOf data:ArchduchessRenataOfAustria,
+        data:PrinceHieronimRadziwill ;
+    :isSiblingOf data:PrinceDominikRainerRadziwill ;
+    :isSonOf data:ArchduchessRenataOfAustria,
+        data:PrinceHieronimRadziwill .
+
+data:EugenieOfGreeceAndDenmark a :Woman ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:PrincePeterOfGreeceAndDenmark ;
+    :hasDeathYear 1989 ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasMarriageYear 1938,
+        1949 ;
+    :hasMother data:PrincessMarieBonaparte ;
+    :hasParent data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:EugenieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isChildOf data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :isDaughterOf data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :isSiblingOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isSisterOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark .
+
+data:PrincePeterOfGreeceAndDenmark a :Man ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasBrother data:PrincePeterOfGreeceAndDenmark ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasMother data:PrincessMarieBonaparte ;
+    :hasParent data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:EugenieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isBrotherOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isChildOf data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte ;
+    :isSiblingOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isSonOf data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrincessMarieBonaparte .
+
+data:PrinceGeorgeOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasBrother data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasChild data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :hasDaughter data:EugenieOfGreeceAndDenmark ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia ;
+    :hasParent data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSon data:PrincePeterOfGreeceAndDenmark ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isChildOf data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isFatherOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isParentOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceGeorgeOfGreeceAndDenmark ;
+    :isSonOf data:GeorgeIOfGreece,
+        data:OlgaConstantinovnaOfRussia ;
+    :isUncleOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark .
+
+data:PrincessMarieBonaparte a :Ancestor,
+        :Woman ;
+    :hasAncestor data:MarieFelixBlanc,
+        data:PrinceRolandBonaparte ;
+    :hasChild data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :hasDaughter data:EugenieOfGreeceAndDenmark ;
+    :hasFather data:PrinceRolandBonaparte ;
+    :hasMother data:MarieFelixBlanc ;
+    :hasParent data:MarieFelixBlanc,
+        data:PrinceRolandBonaparte ;
+    :hasRelation data:ArchduchessRenataOfAustria,
+        data:EugenieOfGreeceAndDenmark,
+        data:GeorgeIOfGreece,
+        data:MarieFelixBlanc,
+        data:OlgaConstantinovnaOfRussia,
+        data:PrinceDominikRainerRadziwill,
+        data:PrinceGeorgeOfGreeceAndDenmark,
+        data:PrinceHieronimRadziwill,
+        data:PrincePeterOfGreeceAndDenmark,
+        data:PrinceRaymundoDellaTorreETasso,
+        data:PrinceRolandBonaparte,
+        data:PrincessMarieBonaparte ;
+    :hasSister data:PrincessMarieBonaparte ;
+    :hasSon data:PrincePeterOfGreeceAndDenmark ;
+    :isAncestorOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isAuntOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrincessMarieBonaparte ;
+    :isChildOf data:MarieFelixBlanc,
+        data:PrinceRolandBonaparte ;
+    :isDaughterOf data:MarieFelixBlanc,
+        data:PrinceRolandBonaparte ;
+    :isMotherOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isParentOf data:EugenieOfGreeceAndDenmark,
+        data:PrincePeterOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincessMarieBonaparte ;
+    :isSisterOf data:PrincessMarieBonaparte .
+

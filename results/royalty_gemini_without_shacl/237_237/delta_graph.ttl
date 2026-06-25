@@ -2,37 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Franz_Ulrich a :Man,
+data:Friedrich_August_of_Oldenburg a :Man,
         :Person ;
     :hasBirthYear 1936 ;
-    :hasDeathYear 2009 ;
-    :hasFather data:Ulrich_10th_Prince_Kinsky ;
-    :hasMarriageYear 1965 ;
-    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
-    :hasRelation data:Helena_Victoria_Hutten-Czapska,
-        data:Roberta_Cavanagh .
+    :hasDeathYear 2017 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Donata_of_Castell_Rudenhausen,
+        data:Marie_Cecile_of_Prussia ;
+    :isUncleOf data:Christian_of_Oldenburg .
 
-data:Anne_Rowell a :Person,
+data:Bathildis_of_Schaumburg_Lippe a :Person,
         :Woman .
 
-data:Helena_Victoria_Hutten-Czapska a :Person,
+data:Christian_of_Oldenburg a :Man,
+        :Person .
+
+data:Donata_of_Castell_Rudenhausen a :Person,
         :Woman .
 
-data:Hilmar_von_dem_Bussche-Haddenhausen a :Man,
+data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Man,
         :Person .
 
-data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Person,
+data:Friedrich_of_Waldeck_and_Pyrmont a :Man,
+        :Person .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Person,
         :Woman ;
-    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen .
+    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg_Lippe .
 
-data:Roberta_Cavanagh a :Person,
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman .
+
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person .
+
+data:Marie_Cecile_of_Prussia a :Person,
         :Woman ;
-    :hasFather data:Roberto_Cavanagh ;
-    :hasMother data:Anne_Rowell .
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia .
 
-data:Roberto_Cavanagh a :Man,
-        :Person .
-
-data:Ulrich_10th_Prince_Kinsky a :Man,
-        :Person .
+data:Nikolaus_of_Oldenburg a :Man,
+        :Person ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
 

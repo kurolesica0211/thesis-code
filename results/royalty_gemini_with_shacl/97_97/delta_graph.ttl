@@ -1,36 +1,48 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceBernhard a :Ancestor,
-        :Man ;
-    :isFatherOf data:PrincessIreneOfTheNetherlands .
+data:Prince_Bernhard a :Man,
+        :Person .
 
-data:PrinceSixtusHenryOfBourbonParma a :Man ;
-    :isUncleOf data:PrincessMargaritaOfBourbonParma .
+data:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man,
+        :Person .
 
-data:QueenBeatrix a :Woman ;
-    :isAuntOf data:PrincessMargaritaOfBourbonParma .
-
-data:QueenJuliana a :Ancestor,
+data:Princess_Margarita_of_Bourbon-Parma a :Person,
         :Woman ;
-    :isMotherOf data:PrincessIreneOfTheNetherlands .
+    :hasBirthYear "1972-10-13"^^xsd:date ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMarriageYear data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn,
+        2001 ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina ;
+    :knownAs "Margarita Maria Beatrix Prinses de Bourbon de Parme"^^xsd:string .
 
-data:CarlosHugoDukeOfParma a :Ancestor,
-        :Man .
+data:Queen_Beatrix_of_the_Netherlands a :Person,
+        :Woman .
 
-data:PrinceCarlos a :Man .
+data:Queen_Juliana a :Person,
+        :Woman .
 
-data:PrinceJaime a :Man .
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person .
 
-data:PrincessCarolina a :Woman .
+data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man,
+        :Person .
 
-data:PrincessMargaritaOfBourbonParma a :Woman ;
-    :hasFather data:CarlosHugoDukeOfParma ;
-    :hasMother data:PrincessIreneOfTheNetherlands ;
-    :isSiblingOf data:PrinceCarlos,
-        data:PrinceJaime,
-        data:PrincessCarolina .
+data:Prince_Carlos a :Man,
+        :Person .
 
-data:PrincessIreneOfTheNetherlands a :Ancestor,
+data:Prince_Jaime a :Man,
+        :Person .
+
+data:Princess_Carolina a :Person,
+        :Woman .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
         :Woman .
 

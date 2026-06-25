@@ -2,41 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Catharina-Amalia a :Person,
+data:JeanneMarieLangtry a :Person,
         :Woman ;
-    :hasBirthYear 2003 ;
-    :hasFather data:Willem-Alexander ;
-    :hasMother data:M%C3%A1xima ;
-    :hasSister data:Alexia,
-        data:Ariane .
+    :hasFather data:LouisOfBattenberg ;
+    :hasMother data:EmilieCharlotteLangtry .
 
-data:Alexia a :Person,
-        :Woman ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Willem-Alexander ;
-    :hasMother data:M%C3%A1xima .
-
-data:Ariane a :Person,
-        :Woman ;
-    :hasBirthYear 2007 ;
-    :hasFather data:Willem-Alexander ;
-    :hasMother data:M%C3%A1xima .
-
-data:Beatrix a :Person,
-        :Woman .
-
-data:Jorge_Zorreguieta a :Man,
+data:EdwardLangtry a :Man,
         :Person .
 
-data:Mar%C3%ADa_del_Carmen_Cerruti a :Person,
+data:EmilieCharlotteLangtry a :Person,
+        :Woman ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:WilliamCorbetLeBreton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:EmilieDavisMartin ;
+    :hasRelation data:EdwardLangtry,
+        data:HugoGeraldDeBathe ;
+    :knownAs "Emilie Charlotte Langtry"^^xsd:string .
+
+data:EmilieDavisMartin a :Person,
         :Woman .
 
-data:M%C3%A1xima a :Person,
-        :Woman ;
-    :hasFather data:Jorge_Zorreguieta ;
-    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti .
+data:HugoGeraldDeBathe a :Man,
+        :Person .
 
-data:Willem-Alexander a :Man,
-        :Person ;
-    :hasMother data:Beatrix .
+data:LouisOfBattenberg a :Man,
+        :Person .
+
+data:WilliamCorbetLeBreton a :Man,
+        :Person .
 

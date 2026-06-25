@@ -1,0 +1,209 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_Prince_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Heinrich_of_Hesse-Kassel .
+
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman ;
+    :hasRelation data:Margaret_Campbell_Geddes ;
+    :hasSister data:Margaret_Campbell_Geddes ;
+    :isAuntOf data:Heinrich_of_Hesse-Kassel ;
+    :isBloodrelationOf data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Margaret_Campbell_Geddes ;
+    :isSisterOf data:Margaret_Campbell_Geddes .
+
+data:Philipp_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp_of_Hesse ;
+    :hasChild data:Heinrich_of_Hesse-Kassel ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSon data:Heinrich_of_Hesse-Kassel ;
+    :isAncestorOf data:Heinrich_of_Hesse-Kassel ;
+    :isBloodrelationOf data:Philipp_of_Hesse ;
+    :isBrotherOf data:Philipp_of_Hesse ;
+    :isFatherOf data:Heinrich_of_Hesse-Kassel ;
+    :isParentOf data:Heinrich_of_Hesse-Kassel ;
+    :isSiblingOf data:Philipp_of_Hesse ;
+    :isUncleOf data:Heinrich_of_Hesse-Kassel .
+
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Mafalda_of_Savoy ;
+    :hasDaughter data:Mafalda_of_Savoy ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :isAncestorOf data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy ;
+    :isBloodrelationOf data:Victor_Emmanuel_III_of_Italy ;
+    :isBrotherOf data:Victor_Emmanuel_III_of_Italy ;
+    :isFatherOf data:Mafalda_of_Savoy ;
+    :isParentOf data:Mafalda_of_Savoy ;
+    :isSiblingOf data:Victor_Emmanuel_III_of_Italy ;
+    :isUncleOf data:Mafalda_of_Savoy .
+
+data:Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Victor_Emmanuel_III_of_Italy ;
+    :hasChild data:Heinrich_of_Hesse-Kassel ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy ;
+    :hasParent data:Victor_Emmanuel_III_of_Italy ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSister data:Mafalda_of_Savoy ;
+    :hasSon data:Heinrich_of_Hesse-Kassel ;
+    :isAncestorOf data:Heinrich_of_Hesse-Kassel ;
+    :isAuntOf data:Heinrich_of_Hesse-Kassel ;
+    :isBloodrelationOf data:Mafalda_of_Savoy ;
+    :isChildOf data:Victor_Emmanuel_III_of_Italy ;
+    :isDaughterOf data:Victor_Emmanuel_III_of_Italy ;
+    :isMotherOf data:Heinrich_of_Hesse-Kassel ;
+    :isParentOf data:Heinrich_of_Hesse-Kassel ;
+    :isSiblingOf data:Mafalda_of_Savoy ;
+    :isSisterOf data:Mafalda_of_Savoy .
+
+data:Elisabeth_of_Hesse a :Person,
+        :Woman ;
+    :hasBrother data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSisterOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Otto_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
+
+data:Heinrich_of_Hesse-Kassel a :Man,
+        :Person ;
+    :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
+    :hasAncestor data:Mafalda_of_Savoy,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasBirthYear 1927 ;
+    :hasBrother data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Philipp_of_Hesse ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :hasParent data:Mafalda_of_Savoy,
+        data:Philipp_of_Hesse ;
+    :hasRelation data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Mafalda_of_Savoy,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Victor_Emmanuel_III_of_Italy ;
+    :hasSister data:Elisabeth_of_Hesse ;
+    :isBloodrelationOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isBrotherOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isChildOf data:Mafalda_of_Savoy,
+        data:Philipp_of_Hesse ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Heinrich_of_Hesse-Kassel,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse ;
+    :isSonOf data:Mafalda_of_Savoy,
+        data:Philipp_of_Hesse .
+

@@ -69,36 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Frederick Francis III (German: Friedrich Franz Paul Nikolaus Ernst Heinrich; 19 March 1851 – 10 April 1897) was the penultimate Grand Duke of Mecklenburg-Schwerin.
-He was born in Schloss Ludwigslust as the son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz.
-From an early age Frederick Francis suffered from asthma and severe breathing difficulties.
-Frederick Francis' death in Cannes on 10 April 1897 is shrouded in mystery, as he was originally reported to have committed suicide by throwing himself off a parapet of a bridge.
-He was succeeded by his son Frederick Francis IV, who would be the last Grand Duke of Mecklenburg-Schwerin.
-Marriage and children
-
-Frederick Francis married Grand Duchess Anastasia Mikhailovna of Russia, his second cousin once removed, he being the great-great-grandson and she great-granddaughter of Paul I of Russia.
-"
-
-Honours
-
-He received the following orders and decorations:
+Princess Françoise d'Orléans (Françoise Isabelle Louise Marie; 25 December 1902 - 25 February 1953) was born an Orléans Princess of France and became a Princess of Greece and Denmark by marriage.
+She was thus a member of the Greek royal family and a descendant of the "Citizen-King" Louis Philippe I.
 
 
-Ancestry
+Life
 
-Literature
-
-References
-
-External links
-
-@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Frederick Francis III, Grand Duke of Mecklenburg-Schwerin at Wikimedia Commons
+Françoise d'Orléans was born in Paris, the second daughter of Jean d'Orléans, duc de Guise (an Orléanist pretender to the throne of France under the name Jean III) and his wife, the French Princess Isabelle of Orléans.
+Françoise's brother, Prince Henri, Count of Paris, succeeded their father as the Orleanist pretender, under the name Henri VI.
+In Palermo on 11 February 1929, she married Prince Christopher of Greece and Denmark (1888–1940).
+This was Christopher's second marriage - he was the youngest son of King George I of Greece (1845–1913) and his wife, Grand Duchess Olga Constantinovna of Russia (1851–1926).
+Through his father, he was thus a grandson of King Christian IX of Denmark (1818–1906), nicknamed "the father-in-law of Europe" due to his six children all marrying into other royal families.
+They had only one child, the writer Prince Michael of Greece and Denmark (1939–2024), whose marriage to the Greek artist Marina Karella (born 1940) did not conform to the laws of the royal house and thus deprived him of all right of succession to the Greek throne.
+She is grandmother of Princess Alexandra of Greece, an artist, art collector, arts patron, and child life specialist.
+Her other grand-daughter is Princess Olga of Greece, who married Prince Aimone of Savoy-Aosta, one of two claimants to be Head of the House of Savoy.
+The civil war in Greece was preventing her from entering, and the British government refused to grant her asylum.
+Françoise and her son Michael went to Paris, where they lived in the home of Princess Isabella and her second husband, Prince Pierre Murat.
+Françoise did not want to see anyone in their residence and rarely left her rooms.
+She is buried alongside her husband in Tatoi Royal Cemetery, Greece.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +110,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +127,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,248 +435,220 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fba5e1af-3fea-456b-a6e9-e42362dc97a7)
- Call ID: fba5e1af-3fea-456b-a6e9-e42362dc97a7
-  Args:
-    type: :Man
-    source: :Frederick_Francis_III
-  AssignClass (ee57bb68-82e6-4c63-b35e-3c6253295bf0)
- Call ID: ee57bb68-82e6-4c63-b35e-3c6253295bf0
-  Args:
-    type: :Man
-    source: :Frederick_Francis_II
-  AssignClass (c6c8c58d-ed8d-49fc-b6d4-1ad879a87920)
- Call ID: c6c8c58d-ed8d-49fc-b6d4-1ad879a87920
-  Args:
-    source: :Augusta_Reuss_of_Kostritz
-    type: :Woman
-  AssignClass (19519be7-11dd-4a86-9e2a-8ae1ca48444a)
- Call ID: 19519be7-11dd-4a86-9e2a-8ae1ca48444a
-  Args:
-    type: :Man
-    source: :Frederick_Francis_IV
-  AssignClass (6187870f-0598-4fcd-9a02-0bf3aab14c09)
- Call ID: 6187870f-0598-4fcd-9a02-0bf3aab14c09
+  AssignClass (7975fb39-1adc-4252-a89e-b90b6c302f46)
+ Call ID: 7975fb39-1adc-4252-a89e-b90b6c302f46
   Args:
     type: :Woman
-    source: :Anastasia_Mikhailovna_of_Russia
-  AssignClass (058f7b34-56d4-4be6-9aff-dfbcfba3c404)
- Call ID: 058f7b34-56d4-4be6-9aff-dfbcfba3c404
+    source: :FrancoiseDOrleans
+  AddLiteral (09d2f776-5401-4ea7-bfa1-2f31baa02283)
+ Call ID: 09d2f776-5401-4ea7-bfa1-2f31baa02283
   Args:
-    source: :Paul_I_of_Russia
-    type: :Man
-  AddLiteral (46a64c63-4e88-45b7-a421-9c8f2dfa7150)
- Call ID: 46a64c63-4e88-45b7-a421-9c8f2dfa7150
-  Args:
-    source: :Frederick_Francis_III
-    literal_value: Friedrich Franz Paul Nikolaus Ernst Heinrich
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-  AddLiteral (29e0d903-f63f-4591-a091-810ac0b01c3b)
- Call ID: 29e0d903-f63f-4591-a091-810ac0b01c3b
-  Args:
-    literal_value: 1851
-    source: :Frederick_Francis_III
-    literal_type: xsd:integer
+    source: :FrancoiseDOrleans
+    literal_value: 1902
     relation: :hasBirthYear
-  AddLiteral (d3a1240f-128f-4ba4-abdb-2f97a1accba4)
- Call ID: d3a1240f-128f-4ba4-abdb-2f97a1accba4
-  Args:
-    relation: :hasDeathYear
-    source: :Frederick_Francis_III
-    literal_value: 1897
     literal_type: xsd:integer
-  AddTriple (977c26f6-e9c4-4cc3-bb1f-d14bdc389f0a)
- Call ID: 977c26f6-e9c4-4cc3-bb1f-d14bdc389f0a
+  AddLiteral (d5066386-b666-4237-82e9-bdfac9467774)
+ Call ID: d5066386-b666-4237-82e9-bdfac9467774
   Args:
-    target: :Frederick_Francis_II
-    source: :Frederick_Francis_III
-    relation: :hasFather
-  AddTriple (3036b9a5-a5e7-45ad-8bfd-ad5dc670feb9)
- Call ID: 3036b9a5-a5e7-45ad-8bfd-ad5dc670feb9
+    literal_value: 1953
+    source: :FrancoiseDOrleans
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (79259602-d6f7-46fe-b373-d65fd3bc620e)
+ Call ID: 79259602-d6f7-46fe-b373-d65fd3bc620e
   Args:
-    relation: :hasMother
-    target: :Augusta_Reuss_of_Kostritz
-    source: :Frederick_Francis_III
-  AddTriple (5ee1432a-9ce5-4eb3-8187-f11ac8c2217c)
- Call ID: 5ee1432a-9ce5-4eb3-8187-f11ac8c2217c
+    source: :JeanDOrleansDucDeGuise
+    type: :Man
+  AssignClass (660378f9-dc01-402b-943d-7c4d34cfd25b)
+ Call ID: 660378f9-dc01-402b-943d-7c4d34cfd25b
+  Args:
+    type: :Woman
+    source: :IsabelleDOrleans
+  AddTriple (01657bfc-766d-4c0d-a2e9-3c0951d5a6ab)
+ Call ID: 01657bfc-766d-4c0d-a2e9-3c0951d5a6ab
+  Args:
+    source: :JeanDOrleansDucDeGuise
+    target: :FrancoiseDOrleans
+    relation: :isFatherOf
+  AddTriple (b0727400-8173-4bcd-a388-7afc7acab7d5)
+ Call ID: b0727400-8173-4bcd-a388-7afc7acab7d5
+  Args:
+    source: :IsabelleDOrleans
+    target: :FrancoiseDOrleans
+    relation: :isMotherOf
+  AssignClass (0dda4788-f144-49e4-952a-ad4e20c8ef59)
+ Call ID: 0dda4788-f144-49e4-952a-ad4e20c8ef59
+  Args:
+    type: :Man
+    source: :PrinceHenriCountOfParis
+  AddTriple (d86f2c46-e7d2-4a7c-8bac-982f13a9be5e)
+ Call ID: d86f2c46-e7d2-4a7c-8bac-982f13a9be5e
+  Args:
+    target: :PrinceHenriCountOfParis
+    source: :FrancoiseDOrleans
+    relation: :isSiblingOf
+  AddTriple (60392ca2-20da-4542-9297-17272d124e73)
+ Call ID: 60392ca2-20da-4542-9297-17272d124e73
   Args:
     relation: :isFatherOf
-    target: :Frederick_Francis_IV
-    source: :Frederick_Francis_III
-  AddTriple (ae4106da-2a84-46e1-a80f-8e54c48ef64e)
- Call ID: ae4106da-2a84-46e1-a80f-8e54c48ef64e
+    target: :PrinceHenriCountOfParis
+    source: :JeanDOrleansDucDeGuise
+  AssignClass (df988802-51e6-4fe0-ab99-6d4b6d0e8953)
+ Call ID: df988802-51e6-4fe0-ab99-6d4b6d0e8953
   Args:
-    relation: :hasSex
-    source: :Frederick_Francis_III
-    target: :Male
-  AddTriple (86793fc0-bed9-472a-ac36-403b654fe098)
- Call ID: 86793fc0-bed9-472a-ac36-403b654fe098
+    type: :Man
+    source: :PrinceChristopherOfGreeceAndDenmark
+  AddLiteral (bffb37fe-f6fc-4e87-9c5b-e73b5d6d2f65)
+ Call ID: bffb37fe-f6fc-4e87-9c5b-e73b5d6d2f65
   Args:
-    target: :Male
-    source: :Frederick_Francis_II
-    relation: :hasSex
-  AddTriple (2e60eb00-160c-480f-84db-5a99783d591e)
- Call ID: 2e60eb00-160c-480f-84db-5a99783d591e
+    source: :PrinceChristopherOfGreeceAndDenmark
+    literal_value: 1888
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (9f3c908f-0545-40fc-9203-1dd7b9f54841)
+ Call ID: 9f3c908f-0545-40fc-9203-1dd7b9f54841
   Args:
-    target: :Female
-    source: :Augusta_Reuss_of_Kostritz
-    relation: :hasSex
-  AddTriple (396b1921-3ddf-4d67-b047-b4bb0e52254b)
- Call ID: 396b1921-3ddf-4d67-b047-b4bb0e52254b
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: :PrinceChristopherOfGreeceAndDenmark
+    literal_value: 1940
+  AddLiteral (6a6ac8ba-1a9a-4413-8c2f-cafb484f9942)
+ Call ID: 6a6ac8ba-1a9a-4413-8c2f-cafb484f9942
   Args:
-    source: :Frederick_Francis_IV
-    target: :Male
-    relation: :hasSex
-  AddTriple (ac455839-c252-4f93-aa23-ee6c2b551cbe)
- Call ID: ac455839-c252-4f93-aa23-ee6c2b551cbe
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: :FrancoiseDOrleans
+    literal_value: 1929
+  AddTriple (bee3a5da-6e0b-4c98-9486-fd2d67b2b8fa)
+ Call ID: bee3a5da-6e0b-4c98-9486-fd2d67b2b8fa
   Args:
-    relation: :hasSex
-    source: :Anastasia_Mikhailovna_of_Russia
-    target: :Female
-  AddTriple (83ddff8e-8782-44dd-bbef-0e1a52d305fa)
- Call ID: 83ddff8e-8782-44dd-bbef-0e1a52d305fa
+    target: :PrinceChristopherOfGreeceAndDenmark
+    source: :FrancoiseDOrleans
+    relation: :hasRelation
+  AssignClass (edfa085a-6812-4b52-b23f-45bf16da796e)
+ Call ID: edfa085a-6812-4b52-b23f-45bf16da796e
   Args:
-    target: :Male
-    source: :Paul_I_of_Russia
-    relation: :hasSex
-  Finish (f7ae8bbb-ce01-4dea-be0d-603f46f92c71)
- Call ID: f7ae8bbb-ce01-4dea-be0d-603f46f92c71
+    source: :KingGeorgeIOfGreece
+    type: :Man
+  AssignClass (26625805-d422-4216-a60e-35b30c60222c)
+ Call ID: 26625805-d422-4216-a60e-35b30c60222c
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Anastasia_Mikhailovna_of_Russia a :Woman ;
-      :hasSex data:Female .
-
-  data:Frederick_Francis_III a :Man ;
-      :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
-      :hasBirthYear 1851 ;
-      :hasDeathYear 1897 ;
-      :hasFather data:Frederick_Francis_II ;
-      :hasMother data:Augusta_Reuss_of_Kostritz ;
-      :hasSex data:Male ;
-      :isFatherOf data:Frederick_Francis_IV .
-
-  data:Paul_I_of_Russia a :Man ;
-      :hasSex data:Male .
-
-  data:Augusta_Reuss_of_Kostritz a :Woman ;
-      :hasSex data:Female .
-
-  data:Frederick_Francis_II a :Man ;
-      :hasSex data:Male .
-
-  data:Frederick_Francis_IV a :Man ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (d21d5f08-a492-4b91-b655-d839bce31c5a)
- Call ID: d21d5f08-a492-4b91-b655-d839bce31c5a
+    source: :GrandDuchessOlgaConstantinovnaOfRussia
+    type: :Woman
+  AddTriple (eafa4654-1e2e-4930-8619-d4d8f9d53b16)
+ Call ID: eafa4654-1e2e-4930-8619-d4d8f9d53b16
   Args:
-    type: :Sex
-    source: :Male
-  AssignClass (22064f8d-33e5-4d9f-b77e-bfd740a7747c)
- Call ID: 22064f8d-33e5-4d9f-b77e-bfd740a7747c
+    target: :PrinceChristopherOfGreeceAndDenmark
+    source: :KingGeorgeIOfGreece
+    relation: :isFatherOf
+  AddTriple (e290f75d-4393-4f11-814c-d9559fe8c981)
+ Call ID: e290f75d-4393-4f11-814c-d9559fe8c981
   Args:
-    type: :Sex
-    source: :Female
-  Finish (cd971313-c727-420e-ac9b-086c9734a465)
- Call ID: cd971313-c727-420e-ac9b-086c9734a465
+    relation: :isMotherOf
+    source: :GrandDuchessOlgaConstantinovnaOfRussia
+    target: :PrinceChristopherOfGreeceAndDenmark
+  AssignClass (1fe964ed-bd4c-4935-94f6-1112ad920414)
+ Call ID: 1fe964ed-bd4c-4935-94f6-1112ad920414
+  Args:
+    type: :Man
+    source: :KingChristianIXOfDenmark
+  AddTriple (4594d119-3de0-438b-ae8f-de1ea6d8b811)
+ Call ID: 4594d119-3de0-438b-ae8f-de1ea6d8b811
+  Args:
+    relation: :isFatherOf
+    source: :KingChristianIXOfDenmark
+    target: :KingGeorgeIOfGreece
+  AssignClass (c4b5fd21-6d63-493c-a1e0-1313f9c350ba)
+ Call ID: c4b5fd21-6d63-493c-a1e0-1313f9c350ba
+  Args:
+    source: :PrinceMichaelOfGreeceAndDenmark
+    type: :Man
+  AddLiteral (9657b78a-acfe-4291-9531-394847084ce6)
+ Call ID: 9657b78a-acfe-4291-9531-394847084ce6
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :PrinceMichaelOfGreeceAndDenmark
+    literal_value: 1939
+  AddLiteral (3f6272f0-17d8-400a-898e-dd7cb1d21539)
+ Call ID: 3f6272f0-17d8-400a-898e-dd7cb1d21539
+  Args:
+    literal_value: 2024
+    source: :PrinceMichaelOfGreeceAndDenmark
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (cb3623c4-dba6-4240-904d-523ca0871453)
+ Call ID: cb3623c4-dba6-4240-904d-523ca0871453
+  Args:
+    target: :FrancoiseDOrleans
+    source: :PrinceMichaelOfGreeceAndDenmark
+    relation: :isChildOf
+  AddTriple (95deb77a-2b2c-40f7-a58e-623711fe9fc1)
+ Call ID: 95deb77a-2b2c-40f7-a58e-623711fe9fc1
+  Args:
+    relation: :isChildOf
+    source: :PrinceMichaelOfGreeceAndDenmark
+    target: :PrinceChristopherOfGreeceAndDenmark
+  AssignClass (e2cdbf3c-5be1-484d-8773-cc633e182336)
+ Call ID: e2cdbf3c-5be1-484d-8773-cc633e182336
+  Args:
+    source: :MarinaKarella
+    type: :Woman
+  AddTriple (aa0876f1-8fad-47a9-beac-2de1d484bb73)
+ Call ID: aa0876f1-8fad-47a9-beac-2de1d484bb73
+  Args:
+    relation: :hasRelation
+    target: :MarinaKarella
+    source: :PrinceMichaelOfGreeceAndDenmark
+  AssignClass (b62f8f91-b718-43ce-839d-6284b2a88167)
+ Call ID: b62f8f91-b718-43ce-839d-6284b2a88167
+  Args:
+    source: :PrincessAlexandraOfGreece
+    type: :Woman
+  AssignClass (9bab29e4-8e90-4e9d-8ee5-3cedec55740f)
+ Call ID: 9bab29e4-8e90-4e9d-8ee5-3cedec55740f
+  Args:
+    source: :PrincessOlgaOfGreece
+    type: :Woman
+  AddTriple (91bd27a2-a8c1-4aea-ae11-1bb05bb8a2b4)
+ Call ID: 91bd27a2-a8c1-4aea-ae11-1bb05bb8a2b4
+  Args:
+    relation: :isMotherOf
+    source: :PrinceMichaelOfGreeceAndDenmark
+    target: :PrincessAlexandraOfGreece
+  AddTriple (e55429b4-3060-408c-b1c8-6fa26b9a7877)
+ Call ID: e55429b4-3060-408c-b1c8-6fa26b9a7877
+  Args:
+    source: :PrinceMichaelOfGreeceAndDenmark
+    target: :PrincessOlgaOfGreece
+    relation: :isMotherOf
+  AssignClass (ea1b592b-6c75-4327-abcc-c19272285002)
+ Call ID: ea1b592b-6c75-4327-abcc-c19272285002
+  Args:
+    type: :Man
+    source: :PrinceAimoneOfSavoyAosta
+  AddTriple (d71c0c85-b622-43a8-930f-26ea1169cb43)
+ Call ID: d71c0c85-b622-43a8-930f-26ea1169cb43
+  Args:
+    relation: :hasRelation
+    source: :PrincessOlgaOfGreece
+    target: :PrinceAimoneOfSavoyAosta
+  AssignClass (4332a53a-c389-45db-82cc-5f8b3a6ad8bb)
+ Call ID: 4332a53a-c389-45db-82cc-5f8b3a6ad8bb
+  Args:
+    source: :PrincessIsabella
+    type: :Woman
+  AssignClass (d97168fe-254a-4149-abd8-e9a15b70dd87)
+ Call ID: d97168fe-254a-4149-abd8-e9a15b70dd87
+  Args:
+    type: :Man
+    source: :PrincePierreMurat
+  AddTriple (f7eb3dea-aef6-442b-ab9e-14711e8aa2f3)
+ Call ID: f7eb3dea-aef6-442b-ab9e-14711e8aa2f3
+  Args:
+    relation: :hasRelation
+    source: :PrincessIsabella
+    target: :PrincePierreMurat
+  Finish (7652dafe-4a89-43ec-9fbf-ea0a28819363)
+ Call ID: 7652dafe-4a89-43ec-9fbf-ea0a28819363
   Args:

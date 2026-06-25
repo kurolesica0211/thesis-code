@@ -2,80 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_VI a :Ancestor,
-        :Man ;
-    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string ;
-    :hasAncestor data:Prince_Albert_Consort,
-        data:Queen_Victoria ;
-    :hasBirthYear 1895 ;
-    :hasBrother data:Duke_of_Kent,
-        data:Edward_VIII,
-        data:Prince_Henry ;
-    :hasDaughter data:Elizabeth_II,
-        data:Margaret ;
-    :hasDeathYear 1952 ;
-    :hasFather data:George_V ;
-    :hasMarriageYear 1923 ;
-    :hasMother data:Queen_Mary ;
-    :hasRelation data:Elizabeth_Bowes-Lyon ;
-    :knownAs "Bertie"^^xsd:string .
+data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Armgard_von_Cramm .
 
-data:Countess_of_Strathmore a :Ancestor,
-        :Woman .
+data:Erich_von_Oeynhausen_Count a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Bodo_von_Oeynhausen_Count .
 
-data:Duke_of_Kent a :Man .
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage .
 
-data:Earl_of_Strathmore a :Ancestor,
-        :Man .
-
-data:Edward_VII a :Ancestor,
-        :Man .
-
-data:Edward_VIII a :Man ;
-    :hasRelation data:Wallis_Simpson .
-
-data:Elizabeth_II a :Ancestor,
+data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
+        :Person,
         :Woman ;
-    :hasMother data:Elizabeth_Bowes-Lyon ;
-    :hasRelation data:Philip_Duke_of_Edinburgh .
+    :isMotherOf data:Armgard_von_Cramm .
 
-data:Francis_Duke_of_Teck a :Ancestor,
-        :Man .
-
-data:George_V a :Ancestor,
-        :Man ;
-    :hasFather data:Edward_VII ;
-    :hasMother data:Queen_Alexandra .
-
-data:Margaret a :Ancestor,
+data:Karoline_von_Wartensleben_Countess a :Ancestor,
+        :Person,
         :Woman ;
-    :hasMother data:Elizabeth_Bowes-Lyon .
+    :isMotherOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage .
 
-data:Philip_Duke_of_Edinburgh a :Man .
-
-data:Prince_Albert_Consort a :Ancestor,
-        :Man .
-
-data:Prince_Henry a :Man .
-
-data:Princess_Mary_Adelaide a :Ancestor,
-        :Woman .
-
-data:Queen_Alexandra a :Ancestor,
-        :Woman .
-
-data:Queen_Mary a :Ancestor,
+data:Therese_von_Lenthe a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Francis_Duke_of_Teck ;
-    :hasMother data:Princess_Mary_Adelaide .
+    :isMotherOf data:Bodo_von_Oeynhausen_Count .
 
-data:Queen_Victoria a :Ancestor,
-        :Woman .
+data:Alexis_Pantchoulidzew a :Man,
+        :Person .
 
-data:Wallis_Simpson a :Woman .
+data:Aschwin_son_of_Armgard a :Man,
+        :Person .
 
-data:Elizabeth_Bowes-Lyon a :Ancestor,
+data:Bernhard_of_Lippe-Biesterfeld_Prince a :Man,
+        :Person .
+
+data:Armgard_von_Cramm a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Earl_of_Strathmore ;
-    :hasMother data:Countess_of_Strathmore .
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1971 ;
+    :hasMarriageYear 1905,
+        1909 ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count ;
+    :isMotherOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :knownAs "Armgard von Cramm"^^xsd:string .
+
+data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage a :Man,
+        :Person .
+
+data:Bodo_von_Oeynhausen_Count a :Man,
+        :Person .
 

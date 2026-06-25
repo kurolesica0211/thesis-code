@@ -1,0 +1,182 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Person,
+        :Woman ;
+    rdfs:label "Princess Helene of Waldeck and Pyrmont"^^xsd:string ;
+    data:posIndicesFull "925:963"^^xsd:string ;
+    data:wdtLink wdt:Q2280905 ;
+    :alsoKnownAs "Princess Helena of Waldeck and Pyrmont"^^xsd:string ;
+    :hasRelation data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Princess_Helene_of_Waldeck_and_Pyrmont .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "185:206"^^xsd:string,
+        "185:231"^^xsd:string,
+        "515:536"^^xsd:string,
+        "515:561"^^xsd:string ;
+    data:posIndicesPart "374:379"^^xsd:string ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II"^^xsd:string,
+        "Friedrich August von Oldenburg"^^xsd:string ;
+    :hasBrother data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male ;
+    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAncestorOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isFatherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isUncleOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "751:771"^^xsd:string,
+        "751:807"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt"^^xsd:string ;
+    data:posIndicesFull "812:852"^^xsd:string ;
+    data:posIndicesPart "1040:1048"^^xsd:string,
+        "1225:1230"^^xsd:string ;
+    data:wdtLink wdt:Q154388 ;
+    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isAncestorOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAuntOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Princess_Marie_of_Schwarzburg-Rudolstadt .
+
+data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Nikolaus, Hereditary Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "0:44"^^xsd:string ;
+    data:posIndicesPart "291:299"^^xsd:string,
+        "374:379"^^xsd:string,
+        "424:432"^^xsd:string,
+        "445:454"^^xsd:string,
+        "456:461"^^xsd:string,
+        "471:480"^^xsd:string,
+        "592:597"^^xsd:string,
+        "598:602"^^xsd:string,
+        "606:615"^^xsd:string,
+        "875:883"^^xsd:string ;
+    data:wdtLink wdt:Q64976 ;
+    :alsoKnownAs "Nicolau d'Oldenburg"^^xsd:string ;
+    :hasAncestor data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBrother data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasFather data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasMother data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Frederick_Francis_II,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isChildOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSonOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "672:725"^^xsd:string ;
+    data:wdtLink wdt:Q2525746 ;
+    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg,
+        data:Frederick_Francis_II,
+        data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAncestorOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isAuntOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isDaughterOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+

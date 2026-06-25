@@ -16,31 +16,49 @@
       "qid": "Q125361",
       "label": "Prince Michael of Prussia",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Grand_Duchess_Kira_Kirillovna_of_Russia",
       "qid": "Q237341",
       "label": "Grand Duchess Kira Kirillovna of Russia",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Louis_Ferdinand-_Prince_of_Prussia",
       "qid": "Q311442",
       "label": "Louis Ferdinand, Prince of Prussia",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Kira_of_Prussia",
       "qid": "Q77937",
       "label": "Princess Kira of Prussia",
-      "distance": 1,
-      "gender": "female"
+      "distance": 2,
+      "gender": null
     }
   ],
   "entities": [
+    {
+      "extracted_uri": "http://example.org/data/Louis_Ferdinand_Prince_of_Prussia",
+      "extracted_local_name": "Louis_Ferdinand_Prince_of_Prussia",
+      "embedding_text": "Louis Ferdinand Prince of Prussia",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9888888888888889,
+      "ground_truth_uri": "http://example.com/data#Louis_Ferdinand-_Prince_of_Prussia",
+      "ground_truth_qid": "Q311442",
+      "ground_truth_label": "Louis Ferdinand, Prince of Prussia",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Louis Ferdinand- Prince of Prussia",
+      "best_candidate_label": "Louis Ferdinand, Prince of Prussia",
+      "best_candidate_qid": "Q311442",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9888888888888889
+    },
     {
       "extracted_uri": "http://example.org/data/Michael_Prinz_von_Preussen",
       "extracted_local_name": "Michael_Prinz_von_Preussen",
@@ -52,48 +70,48 @@
       "ground_truth_qid": "Q125361",
       "ground_truth_label": "Prince Michael of Prussia",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Michael Prinz von Preußen",
       "best_candidate_label": "Prince Michael of Prussia",
       "best_candidate_qid": "Q125361",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9
     },
     {
-      "extracted_uri": "http://example.org/data/Louis_Ferdinand_Prinz_von_Preussen",
-      "extracted_local_name": "Louis_Ferdinand_Prinz_von_Preussen",
-      "embedding_text": "Louis Ferdinand Prinz von Preussen",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.8235294117647058,
-      "ground_truth_uri": "http://example.com/data#Louis_Ferdinand-_Prince_of_Prussia",
-      "ground_truth_qid": "Q311442",
-      "ground_truth_label": "Louis Ferdinand, Prince of Prussia",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Louis Ferdinand- Prince of Prussia",
-      "best_candidate_label": "Louis Ferdinand, Prince of Prussia",
-      "best_candidate_qid": "Q311442",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.8235294117647058
-    },
-    {
-      "extracted_uri": "http://example.org/data/Kira_Kirillovna",
-      "extracted_local_name": "Kira_Kirillovna",
-      "embedding_text": "Kira Kirillovna",
+      "extracted_uri": "http://example.org/data/Kira_Kirillovna_of_Russia",
+      "extracted_local_name": "Kira_Kirillovna_of_Russia",
+      "embedding_text": "Kira Kirillovna of Russia",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.7692307692307693,
+      "score": 0.8409090909090908,
       "ground_truth_uri": "http://example.com/data#Grand_Duchess_Kira_Kirillovna_of_Russia",
       "ground_truth_qid": "Q237341",
       "ground_truth_label": "Grand Duchess Kira Kirillovna of Russia",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Kira Kirillovna Romanova",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Grand Duchess Kira Kirillovna of Russia",
       "best_candidate_label": "Grand Duchess Kira Kirillovna of Russia",
       "best_candidate_qid": "Q237341",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.7692307692307693
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8409090909090908
+    },
+    {
+      "extracted_uri": "http://example.org/data/Georg_Friedrich_Prinz_von_Preussen",
+      "extracted_local_name": "Georg_Friedrich_Prinz_von_Preussen",
+      "embedding_text": "Georg Friedrich Prinz von Preussen",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Kira Auguste Viktoria Friederike Prinzessin von Preußen",
+      "best_candidate_label": "Princess Kira of Prussia",
+      "best_candidate_qid": "Q77937",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.68125
     },
     {
       "extracted_uri": "http://example.org/data/Wilhelm_II",
@@ -107,16 +125,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Kira of Prussia",
+      "best_candidate_label": "Princess Kira of Prussia",
+      "best_candidate_qid": "Q77937",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.29411764705882354
     }
   ],
   "summary": {
-    "entities_total": 4,
+    "entities_total": 5,
     "entities_matched": 3,
-    "entities_unmatched": 1
+    "entities_unmatched": 2
   }
 }

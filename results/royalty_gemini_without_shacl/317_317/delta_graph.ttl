@@ -2,28 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Prince_of_Asturias a :Man,
-        :Person ;
-    :hasBirthYear 1907 ;
-    :hasBrother data:Gonzalo ;
-    :hasDeathYear 1938 ;
-    :hasFather data:Alfonso_XIII_of_Spain ;
-    :hasMarriageYear 1933,
-        1937 ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Prince_Carlos_Enrique a :Man ;
+    :hasFather data:Prince_Carlos .
 
-data:Edelmira_Sampedro_y_Robato a :Person,
-        :Woman .
+data:Princess_Cecilia a :Woman ;
+    :hasFather data:Prince_Carlos .
 
-data:Marta_Esther_Rocafort-Altuzarra a :Person,
-        :Woman .
+data:Princess_Luisa a :Woman ;
+    :hasFather data:Prince_Carlos .
 
-data:Alfonso_XIII_of_Spain a :Man,
-        :Person .
+data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman .
 
-data:Gonzalo a :Man,
-        :Person .
+data:Carlos_Hugo a :Man ;
+    :hasFather data:Prince_Xavier .
 
-data:Victoria_Eugenie_of_Battenberg a :Person,
-        :Woman .
+data:Prince_Jaime a :Man .
+
+data:Prince_Xavier a :Man .
+
+data:Princess_Carolina a :Woman .
+
+data:Princess_Irene a :Woman .
+
+data:Princess_Margarita a :Woman .
+
+data:Prince_Carlos a :Man ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Carlos_Hugo ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Princess_Irene ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
+    :isSiblingOf data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita .
 

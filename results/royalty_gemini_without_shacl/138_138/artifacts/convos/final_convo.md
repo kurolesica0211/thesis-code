@@ -69,17 +69,44 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Anne of Orléans (Anne Hélène Marie; 5 August 1906 – 19 March 1986) was a member of the House of Orléans and the Duchess of Aosta by marriage.
-She was the daughter of Prince Jean, Duke of Guise, and Princess Isabelle of Orléans.
-Marriage and issue
+Prince Alexander of Yugoslavia (Serbian: Александар П. Карађорђевић / Aleksandar P. Karađorđević; 13 August 1924 – 12 May 2016) was the elder son of Prince Paul, who served as Regent of Yugoslavia in the 1930s, and his wife, Princess Olga of Greece and Denmark.
+Birth and education
 
-She married at Naples, Italy, on 5 November 1927, her first cousin Prince Amedeo of Savoy, Duke of Aosta (1898–1942).
+Alexander was born at White Lodge, Richmond Park, United Kingdom.
+As a nephew of Princess Marina, Duchess of Kent (née of Greece and Denmark), he was a first cousin of Prince Edward, Duke of Kent, Prince Michael of Kent, and Princess Alexandra of Kent; he was also a first cousin once removed of Prince Philip, Duke of Edinburgh.
+Marriages and family
+
+He took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+On 12 February 1955, Alexander married Princess Maria Pia of Savoy, daughter of King Umberto II of Italy and of his wife, Princess Marie José of Belgium.
+The couple had met on 22 August 1954 during the royal cruise of the Agamemnon, hosted by King Paul and Queen Frederica of Greece.
+Alexander and Maria Pia have twin sons born in 1958:
+Alexander and Maria Pia divorced in 1967, and in 2003 she married Prince Michel of Bourbon-Parma, himself divorced from Princess Yolande de Broglie-Revel.
+On 2 November 1973, in a civil ceremony in Paris, Alexander married Princess Barbara Eleonore Marie of Liechtenstein(born 9 July 1942), daughter of Prince Johannes of Liechtenstein (first cousin once removed to Prince Hans-Adam II of Liechtenstein) and Countess Karoline of Ledebur-Wicheln (aunt of Hans Adam's late wife Marie, Princess of Liechtenstein).
+On 28 October 1995 Prince Alexander and Princess Barbara were married in the Orthodox faith in
+Oplenac, and had issue:
+
+
+Flying career
+
+The Prince wished to serve in the British Royal Air Force during World War Two, but was initially prevented by his father's political affiliations.
+He was eventually commissioned in the RAF through the intervention of Prince George, Duke of Kent, his uncle.
+Associations
+
+Alexander was one of the four founding members of the Serbian Unity Congress.
+On 17 February 2008, Alexander issued a statement condemning the declaration of independence by Kosovo.
+On the occasion of Prince Alexander's 90th birthday on 13 August 2014, a celebration of his life in words and pictures appeared in that month's UK magazine Majesty.
+Death
+
+Prince Alexander died on 12 May 2016 in Paris, where he and his wife had lived for many years.
+He was buried at Oplenac, Serbia, with his parents and brother, his coffin being carried by Serbian Air Force fighter pilots.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -95,39 +122,9 @@ She married at Naples, Italy, on 5 November 1927, her first cousin Prince Amedeo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -142,6 +139,23 @@ She married at Naples, Italy, on 5 November 1927, her first cousin Prince Amedeo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -159,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -226,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -269,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -277,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -315,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -330,205 +447,227 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ec77f350-3040-4582-8773-d269a103e248)
- Call ID: ec77f350-3040-4582-8773-d269a103e248
+  AssignClass (7b8971b4-70b2-4bd9-9041-2d9059cf26f3)
+ Call ID: 7b8971b4-70b2-4bd9-9041-2d9059cf26f3
   Args:
-    source: Princess_Anne_of_Orleans
-    type: :Person
-  AssignClass (cd211c9e-daba-4867-bc66-04972ff679d5)
- Call ID: cd211c9e-daba-4867-bc66-04972ff679d5
-  Args:
-    source: Princess_Anne_of_Orleans
-    type: :Woman
-  AddLiteral (3788876a-423a-4ee7-b431-670d511490bd)
- Call ID: 3788876a-423a-4ee7-b431-670d511490bd
-  Args:
-    literal_value: Anne Hélène Marie
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: Princess_Anne_of_Orleans
-  AddLiteral (5a816777-10c4-4216-99c6-494a350f69ef)
- Call ID: 5a816777-10c4-4216-99c6-494a350f69ef
-  Args:
-    source: Princess_Anne_of_Orleans
-    literal_value: 1906
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (19da8b12-fb89-4566-8c11-1252a57c288e)
- Call ID: 19da8b12-fb89-4566-8c11-1252a57c288e
-  Args:
-    source: Princess_Anne_of_Orleans
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1986
-  AssignClass (aa3f1494-ee59-448b-b453-b4508a17977f)
- Call ID: aa3f1494-ee59-448b-b453-b4508a17977f
-  Args:
-    source: Prince_Jean_Duke_of_Guise
-    type: :Person
-  AssignClass (73932573-ec61-47d9-a90a-ee0b8a666bd8)
- Call ID: 73932573-ec61-47d9-a90a-ee0b8a666bd8
-  Args:
-    source: Prince_Jean_Duke_of_Guise
     type: :Man
-  AssignClass (187b9f90-3e22-4b13-a4a4-ea827843ff1e)
- Call ID: 187b9f90-3e22-4b13-a4a4-ea827843ff1e
+    source: Prince_Alexander_of_Yugoslavia
+  AssignClass (b4df0497-25d5-408d-ab66-bc6249733917)
+ Call ID: b4df0497-25d5-408d-ab66-bc6249733917
   Args:
     type: :Person
-    source: Princess_Isabelle_of_Orleans
-  AssignClass (742e976e-6eb0-41fe-955f-19d2ba9eca60)
- Call ID: 742e976e-6eb0-41fe-955f-19d2ba9eca60
+    source: Prince_Alexander_of_Yugoslavia
+  AddLiteral (fcce092b-1663-4697-aba9-235ea53349f9)
+ Call ID: fcce092b-1663-4697-aba9-235ea53349f9
+  Args:
+    literal_value: 1924
+    literal_type: xsd:integer
+    source: Prince_Alexander_of_Yugoslavia
+    relation: :hasBirthYear
+  AddLiteral (f93b9578-4551-4a19-915e-ffcc15e67bf1)
+ Call ID: f93b9578-4551-4a19-915e-ffcc15e67bf1
+  Args:
+    source: Prince_Alexander_of_Yugoslavia
+    relation: :hasDeathYear
+    literal_value: 2016
+    literal_type: xsd:integer
+  AssignClass (143a2474-b7eb-40c7-8a26-7521836a5710)
+ Call ID: 143a2474-b7eb-40c7-8a26-7521836a5710
+  Args:
+    type: :Man
+    source: Prince_Paul_of_Yugoslavia
+  AssignClass (a695c99f-746a-4740-9316-ee2423c48ff2)
+ Call ID: a695c99f-746a-4740-9316-ee2423c48ff2
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Person
+  AddTriple (0b2b53e3-bd1d-441d-bbee-18c802e4c04d)
+ Call ID: 0b2b53e3-bd1d-441d-bbee-18c802e4c04d
+  Args:
+    source: Prince_Alexander_of_Yugoslavia
+    relation: :hasFather
+    target: Prince_Paul_of_Yugoslavia
+  AssignClass (10a86c48-e24d-4d1a-9b38-ce62daa50685)
+ Call ID: 10a86c48-e24d-4d1a-9b38-ce62daa50685
   Args:
     type: :Woman
-    source: Princess_Isabelle_of_Orleans
-  AddTriple (17559da9-94cb-4990-9713-a4b5cfd72e99)
- Call ID: 17559da9-94cb-4990-9713-a4b5cfd72e99
+    source: Princess_Olga_of_Greece_and_Denmark
+  AssignClass (48d17428-e661-46e2-84eb-f73ff0a953dc)
+ Call ID: 48d17428-e661-46e2-84eb-f73ff0a953dc
   Args:
-    source: Princess_Anne_of_Orleans
-    target: Prince_Jean_Duke_of_Guise
+    type: :Person
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddTriple (0c313932-e9fc-4432-8c83-ac85082f9844)
+ Call ID: 0c313932-e9fc-4432-8c83-ac85082f9844
+  Args:
+    target: Princess_Olga_of_Greece_and_Denmark
+    source: Prince_Alexander_of_Yugoslavia
+    relation: :hasMother
+  AssignClass (b6a4ba38-fc53-40a9-8099-262fa5919ceb)
+ Call ID: b6a4ba38-fc53-40a9-8099-262fa5919ceb
+  Args:
+    source: Princess_Maria_Pia_of_Savoy
+    type: :Woman
+  AssignClass (534d40c3-fc3d-49c0-9120-89a9e0c801ba)
+ Call ID: 534d40c3-fc3d-49c0-9120-89a9e0c801ba
+  Args:
+    type: :Person
+    source: Princess_Maria_Pia_of_Savoy
+  AddLiteral (d04683fa-c944-48d3-98a7-845d3f520469)
+ Call ID: d04683fa-c944-48d3-98a7-845d3f520469
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1955
+    relation: :hasMarriageYear
+    source: Prince_Alexander_of_Yugoslavia
+  AddTriple (56e79bf5-6513-4085-8f91-4601988c5418)
+ Call ID: 56e79bf5-6513-4085-8f91-4601988c5418
+  Args:
+    target: Princess_Maria_Pia_of_Savoy
+    relation: :hasRelation
+    source: Prince_Alexander_of_Yugoslavia
+  AssignClass (997cfa10-ea6f-461c-9caf-845b85e63fd2)
+ Call ID: 997cfa10-ea6f-461c-9caf-845b85e63fd2
+  Args:
+    source: King_Umberto_II_of_Italy
+    type: :Man
+  AssignClass (4df12139-5f4f-4993-ad7d-278928fed79a)
+ Call ID: 4df12139-5f4f-4993-ad7d-278928fed79a
+  Args:
+    source: King_Umberto_II_of_Italy
+    type: :Person
+  AddTriple (98bb941d-40b1-4f5c-9eeb-6176f4f9eaa6)
+ Call ID: 98bb941d-40b1-4f5c-9eeb-6176f4f9eaa6
+  Args:
     relation: :hasFather
-  AddTriple (1a00f382-bf56-4f99-adb1-7ec83a6c69d2)
- Call ID: 1a00f382-bf56-4f99-adb1-7ec83a6c69d2
+    source: Princess_Maria_Pia_of_Savoy
+    target: King_Umberto_II_of_Italy
+  AssignClass (a7e85f42-41b9-433b-a1a7-5d989590477f)
+ Call ID: a7e85f42-41b9-433b-a1a7-5d989590477f
+  Args:
+    type: :Woman
+    source: Princess_Marie_Jose_of_Belgium
+  AssignClass (f2ea66c7-ae07-4ba6-b2d9-343f3e0e8cc6)
+ Call ID: f2ea66c7-ae07-4ba6-b2d9-343f3e0e8cc6
+  Args:
+    type: :Person
+    source: Princess_Marie_Jose_of_Belgium
+  AddTriple (5856415c-ebe8-4266-b34f-ea7069a93322)
+ Call ID: 5856415c-ebe8-4266-b34f-ea7069a93322
+  Args:
+    target: Princess_Marie_Jose_of_Belgium
+    source: Princess_Maria_Pia_of_Savoy
+    relation: :hasMother
+  AssignClass (0a3a04cd-3eb8-4fdc-a09f-10574feacb44)
+ Call ID: 0a3a04cd-3eb8-4fdc-a09f-10574feacb44
+  Args:
+    source: Prince_Michel_of_Bourbon-Parma
+    type: :Man
+  AssignClass (e73a9276-deed-4f17-b254-7fc6b0dc855c)
+ Call ID: e73a9276-deed-4f17-b254-7fc6b0dc855c
+  Args:
+    type: :Person
+    source: Prince_Michel_of_Bourbon-Parma
+  AddLiteral (6e60dd35-da75-4726-aaac-90a49398e7ac)
+ Call ID: 6e60dd35-da75-4726-aaac-90a49398e7ac
+  Args:
+    literal_value: 2003
+    literal_type: xsd:integer
+    source: Princess_Maria_Pia_of_Savoy
+    relation: :hasMarriageYear
+  AddTriple (9314b901-090b-4263-b151-668c6b1fafe6)
+ Call ID: 9314b901-090b-4263-b151-668c6b1fafe6
+  Args:
+    source: Princess_Maria_Pia_of_Savoy
+    relation: :hasRelation
+    target: Prince_Michel_of_Bourbon-Parma
+  AssignClass (9350891b-9350-4f1f-bfb1-1d43b9aa330f)
+ Call ID: 9350891b-9350-4f1f-bfb1-1d43b9aa330f
+  Args:
+    type: :Woman
+    source: Princess_Yolande_de_Broglie-Revel
+  AssignClass (388df101-4828-429f-8e64-0c5bb93efc40)
+ Call ID: 388df101-4828-429f-8e64-0c5bb93efc40
+  Args:
+    type: :Person
+    source: Princess_Yolande_de_Broglie-Revel
+  AddTriple (a2d72d74-4d08-4e54-8184-9c2cf497f039)
+ Call ID: a2d72d74-4d08-4e54-8184-9c2cf497f039
+  Args:
+    target: Princess_Yolande_de_Broglie-Revel
+    relation: :hasRelation
+    source: Prince_Michel_of_Bourbon-Parma
+  AssignClass (c5e28767-65eb-47c3-8177-ec8923fa7ee1)
+ Call ID: c5e28767-65eb-47c3-8177-ec8923fa7ee1
+  Args:
+    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+    type: :Woman
+  AssignClass (632c0f0a-b7aa-4cfb-8c8a-895fef9bdcab)
+ Call ID: 632c0f0a-b7aa-4cfb-8c8a-895fef9bdcab
+  Args:
+    type: :Person
+    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+  AddLiteral (c12df2b1-b83e-40aa-97f0-e570357b9eb0)
+ Call ID: c12df2b1-b83e-40aa-97f0-e570357b9eb0
+  Args:
+    relation: :hasMarriageYear
+    source: Prince_Alexander_of_Yugoslavia
+    literal_type: xsd:integer
+    literal_value: 1973
+  AddTriple (d31ef9c1-31f9-4aac-adac-7b3c8304b3c9)
+ Call ID: d31ef9c1-31f9-4aac-adac-7b3c8304b3c9
+  Args:
+    relation: :hasRelation
+    source: Prince_Alexander_of_Yugoslavia
+    target: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+  AssignClass (dc067536-94ca-47c2-a447-ba950d9359be)
+ Call ID: dc067536-94ca-47c2-a447-ba950d9359be
+  Args:
+    type: :Man
+    source: Prince_Johannes_of_Liechtenstein
+  AssignClass (6d95f8bb-2a48-4212-81c7-e924b5ec7e1a)
+ Call ID: 6d95f8bb-2a48-4212-81c7-e924b5ec7e1a
+  Args:
+    type: :Person
+    source: Prince_Johannes_of_Liechtenstein
+  AddTriple (b43b1029-94bf-40f8-9408-203f5015f064)
+ Call ID: b43b1029-94bf-40f8-9408-203f5015f064
+  Args:
+    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+    relation: :hasFather
+    target: Prince_Johannes_of_Liechtenstein
+  AssignClass (21e62ae8-3740-4b74-8c7c-78d97e1bae92)
+ Call ID: 21e62ae8-3740-4b74-8c7c-78d97e1bae92
+  Args:
+    source: Countess_Karoline_of_Ledebur-Wicheln
+    type: :Woman
+  AssignClass (dd390b27-b115-409f-a6f2-fc58ff7c6397)
+ Call ID: dd390b27-b115-409f-a6f2-fc58ff7c6397
+  Args:
+    source: Countess_Karoline_of_Ledebur-Wicheln
+    type: :Person
+  AddTriple (f1bc5145-40b6-4169-841f-de29599bc721)
+ Call ID: f1bc5145-40b6-4169-841f-de29599bc721
   Args:
     relation: :hasMother
-    source: Princess_Anne_of_Orleans
-    target: Princess_Isabelle_of_Orleans
-  AssignClass (ef25bd76-9584-4c4b-81c0-9f4a788b7f5a)
- Call ID: ef25bd76-9584-4c4b-81c0-9f4a788b7f5a
+    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+    target: Countess_Karoline_of_Ledebur-Wicheln
+  AssignClass (8e6f0529-0595-46f3-8857-54e7d1208480)
+ Call ID: 8e6f0529-0595-46f3-8857-54e7d1208480
+  Args:
+    source: Prince_George_Duke_of_Kent
+    type: :Man
+  AssignClass (cbfb1c22-603f-4377-b0d6-b09be0214fd9)
+ Call ID: cbfb1c22-603f-4377-b0d6-b09be0214fd9
   Args:
     type: :Person
-    source: Prince_Amedeo_of_Savoy_Duke_of_Aosta
-  AssignClass (23fae116-c888-4270-b378-2166ea882232)
- Call ID: 23fae116-c888-4270-b378-2166ea882232
+    source: Prince_George_Duke_of_Kent
+  AddTriple (1515229d-8161-445f-b427-0678d260790f)
+ Call ID: 1515229d-8161-445f-b427-0678d260790f
   Args:
-    source: Prince_Amedeo_of_Savoy_Duke_of_Aosta
-    type: :Man
-  AddLiteral (3a249d8d-9e6f-4326-9b9b-72fcf93dd6e9)
- Call ID: 3a249d8d-9e6f-4326-9b9b-72fcf93dd6e9
-  Args:
-    literal_value: 1898
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Prince_Amedeo_of_Savoy_Duke_of_Aosta
-  AddLiteral (3789af36-7b8a-49e0-ad67-5771ab04a043)
- Call ID: 3789af36-7b8a-49e0-ad67-5771ab04a043
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1942
-    source: Prince_Amedeo_of_Savoy_Duke_of_Aosta
-  AddLiteral (f03c8f41-b4f5-49ac-9a14-0ecc7e8c65e9)
- Call ID: f03c8f41-b4f5-49ac-9a14-0ecc7e8c65e9
-  Args:
-    source: Princess_Anne_of_Orleans
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1927
-  AddTriple (f9ac234f-0345-47af-8345-1bd42b49db20)
- Call ID: f9ac234f-0345-47af-8345-1bd42b49db20
-  Args:
-    target: Prince_Amedeo_of_Savoy_Duke_of_Aosta
-    source: Princess_Anne_of_Orleans
+    target: Prince_George_Duke_of_Kent
+    source: Prince_Alexander_of_Yugoslavia
     relation: :hasRelation
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Anne_of_Orleans a :Person,
-          :Woman ;
-      :alsoKnownAs "Anne Hélène Marie"^^xsd:string ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMarriageYear 1927 ;
-      :hasMother data:Princess_Isabelle_of_Orleans ;
-      :hasRelation data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .
-
-  data:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man,
-          :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 .
-
-  data:Prince_Jean_Duke_of_Guise a :Man,
-          :Person .
-
-  data:Princess_Isabelle_of_Orleans a :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (aca287f7-f775-4fd3-9f58-bb95ba7e5b00)
- Call ID: aca287f7-f775-4fd3-9f58-bb95ba7e5b00
+  Finish (15c8d578-b9e8-4c0c-b865-defcab6284ab)
+ Call ID: 15c8d578-b9e8-4c0c-b865-defcab6284ab
   Args:

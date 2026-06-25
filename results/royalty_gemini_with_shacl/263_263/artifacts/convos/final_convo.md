@@ -85,32 +85,69 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Prince Friso of Orange-Nassau (Dutch: Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg; 25 September 1968 – 12 August 2013) was the second son of Queen Beatrix of the Netherlands and Claus von Amsberg, and younger brother of King Willem-Alexander.
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, while skiing off piste.
+On 12 August 2013, one and a half years after the accident, Prince Friso died from complications.
+Early life and education
 
+Johan Friso Bernhard Christiaan David was born on 25 September 1968 at the Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht, Netherlands.
+He was the second son of Princess Beatrix and Prince Claus, and grandson of Queen Juliana of the Netherlands and Prince Bernhard.
+He had one older brother, current King Willem-Alexander of the Netherlands (b. 1967), and one younger brother, Prince Constantijn (b. 1969).
+His titles at birth were Prince of the Netherlands, Prince of Orange-Nassau, and Jonkheer van Amsberg.
+Prince Friso was baptized on 28 December 1968 in the Dom Church in Utrecht.
+His godparents were Prince Harald of Norway, Johan Christian Baron von Jenisch, Herman van Roijen, Queen Juliana of the Netherlands and Christina von Amsberg.
+Work
 
-Princess Margriet*Pieter van Vollenhoven*
+Prince Friso worked from 1995 to 1996 at the Amsterdam branch of the international management consultancy McKinsey.
+After completing an MBA-programme at INSEAD, Prince Friso worked from 1998 to 2003 as a vice president at Goldman Sachs International in London.
+From October 2006, Prince Friso was managing director in the London office of a private investment and advisory firm, Wolfensohn & Company.
+Prince Friso was a co-founder of the MRI Centre in Amsterdam and was also a founding shareholder of Wizzair, the largest low-cost airline in Eastern Europe.
+He was honorary chairman of the Prince Claus Fund for Culture and Development (a position he held together with his younger brother, Prince Constantijn).
+Prior to his accident, Prince Friso was working as a chief financial officer for URENCO, a uranium enrichment company.
+Marriage and children
 
+On 30 June 2003, it was announced that Prince Friso was to marry Mabel Wisse Smit.
+The Dutch cabinet, however, did not seek permission from parliament for this marriage, a constitutional requirement if Prince Friso was to remain a member of the Dutch Royal House and in line of succession for the throne; at the time, he was second in line after his older brother, Willem-Alexander.
+The Prime Minister Jan Peter Balkenende explained that this was due to discussions with Mabel Wisse Smit in October 2003, when she had admitted that her previous statements about an alleged relationship with Klaas Bruinsma (1953–1991), a known Dutch drug baron, had not been complete and accurate.
+They nevertheless married at Oude Kerk (Delft) on 24 April 2004, and Mabel Wisse Smit became a member of the Dutch Royal Family but not a member of the Dutch Royal House.
+Considering that his elder brother King Willem-Alexander has three daughters, Prince Friso's exclusion from the succession was unlikely to have an effect on the monarchy in the Netherlands.
+After their marriage, Prince Friso and his wife Princess Mabel set up home in London, in the suburb of Kew.
+The couple's first daughter, Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 26 March 2005 in London.
+Their second daughter, Countess Joanna Zaria Nicoline Milou of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 18 June 2006, also in London.
+Avalanche accident
 
-Prince Constantijn of the Netherlands (Constantijn Christof Frederik Aschwin; born 11 October 1969) is the third and youngest son of the former Dutch queen, Beatrix, and her husband, Claus von Amsberg, and is the younger brother of the reigning Dutch king, Willem-Alexander.
-Life and career
+Accident
 
-Prince Constantijn was born on 11 October 1969 at  Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht following the births of his brothers, Willem-Alexander (b. 1967), and Johan Friso (1968–2013).
-His godparents are former King Constantine II of Greece (1940–2023), Prince Aschwin of Lippe-Biesterfeld, Axel Freiherr von dem Bussche-Streithorst, Max Kohnstamm, and Corinne de Beaufort-Sickinghe.
-Prince Constantijn studied law at Leiden University, becoming a lawyer, and then worked at the Brussels department of the (Dutch) European Union commissioner of foreign relations, Hans van den Broek.
-Furthermore, he has a part-time position at the Netherlands Ministry of Foreign Affairs in The Hague.
-Prince Constantijn rarely attends public events in his capacity as a member of the Dutch royal family.
-Marriage and family
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, and he was taken to a hospital in Innsbruck.
+According to a formal statement of the Netherlands Government Information Service (RVD), a prognosis could be given only after some days.
+The prince's condition was described as "stable, but critical".
+Resulting complications
 
-The engagement of Prince Constantijn and Petra Laurentien Brinkhorst was announced on 16 December 2000.
-Prince Constantijn and Princess Laurentien have three children: Eloise (b. 2002), Claus-Casimir (b. 2004), and Leonore (b. 2006).
-Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although they continue to be members of the royal family and remain in the line of succession.
-Honours and arms
+The Dutch Royal Family issued a statement on 19 February saying "The Royal Family is very grateful and deeply touched by all expressions of support and sympathy after the ski accident of His Royal Highness Prince Friso.
+On 24 February, an Innsbruck medical team announced that the prince had been buried for 25 minutes, followed by a 50-minute CPR to treat his cardiac arrest.
+It remained unclear whether the prince would ever regain full consciousness.
+Koller said that the Prince's family might now look for a rehabilitation institution.
+On the same day the Dutch Royal Family issued a statement requesting that the privacy of the Prince's family be respected to enable them to come to terms with his condition.
+On 1 March 2012, Prince Friso was transferred to the Wellington Hospital, in London where he and his wife had lived for many years.
+On 19 November 2012, it was announced that the prince had started to show some signs of consciousness but it was still not certain whether he would ever wake up, and if he did, in what state.
+On 9 July 2013, Prince Friso was moved back to Huis ten Bosch in the Netherlands.
+Death and funeral
+
+On 12 August 2013, it was announced that Prince Friso had died in Huis ten Bosch of complications from the accident.
+He was buried on 16 August in the Dutch Reformed Cemetery in the hamlet of Lage Vuursche near Drakesteijn Castle, where he had spent his childhood and where Princess Beatrix returned to live in February 2014.
+Titles, styles and honours
+
+Titles and styles
+
+Under the Act on the Membership of the Royal House (2002), Prince Friso lost the title 'Prince of the Netherlands' by entering into a marriage without an Act of Consent.
+By a royal decree of 19 March 2004, Prince Friso was granted the surname 'Van Oranje-Nassau van Amsberg', the hereditary noble predicate 'Jonkheer (Jonkvrouw) van Amsberg and the hereditary title 'Count of Orange-Nassau', to take effect upon his marriage.
+By the same decree, he was allowed to retain his title 'Prince of Orange-Nassau' as a personal and non-hereditary title and the style of 'Royal Highness'.
+According to the notification of this Royal Decree, any children born to the couple were to receive the surname 'van Oranje-Nassau van Amsberg' and become a 'Count (Countess) of Orange-Nassau' and also have the noble predicate 'Jonkheer (Jonkvrouw) van Amsberg'.
+So his children had the same titles and names as those of Prince Constantijn, and showing that they belong to the royal family descending from Queen Beatrix and Prince Claus.
+Referred to from birth as Prince Johan-Friso, in 2004, the royal court announced that he had requested that he would henceforth be called "Prince Friso".
+Honours
 
 National
-
-Foreign
-
-Arms
 
 Ancestry
 
@@ -126,6 +163,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +180,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +197,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +313,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +336,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +356,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +366,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +406,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,245 +505,196 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b9bac365-61aa-4be4-aa13-395235c212a8)
- Call ID: b9bac365-61aa-4be4-aa13-395235c212a8
+  AssignClass (2c951966-4696-4ef8-bf7b-6cc23329eb2b)
+ Call ID: 2c951966-4696-4ef8-bf7b-6cc23329eb2b
   Args:
+    source: Prince_Friso
     type: :Man
-    source: :Constantijn_van_de_Nederlanden
-  AssignClass (b57c3257-4f6b-461b-b723-7379ddce218e)
- Call ID: b57c3257-4f6b-461b-b723-7379ddce218e
+  AssignClass (d60c9c51-1eff-4057-a2d7-99f1d639f162)
+ Call ID: d60c9c51-1eff-4057-a2d7-99f1d639f162
   Args:
     type: :Person
-    source: :Constantijn_van_de_Nederlanden
-  AssignClass (06fd11a8-a62f-4d0e-a73b-036c1beb90f5)
- Call ID: 06fd11a8-a62f-4d0e-a73b-036c1beb90f5
+    source: Prince_Friso
+  AssignClass (3a161623-7696-43a9-adab-ee6d1c14a397)
+ Call ID: 3a161623-7696-43a9-adab-ee6d1c14a397
   Args:
     type: :Woman
-    source: :Beatrix_der_Nederlanden
-  AssignClass (56d2c101-a7de-4ecb-98b1-76d344fdb533)
- Call ID: 56d2c101-a7de-4ecb-98b1-76d344fdb533
+    source: Queen_Beatrix
+  AssignClass (28c1180d-e000-40de-aa9b-8c107905afc1)
+ Call ID: 28c1180d-e000-40de-aa9b-8c107905afc1
   Args:
+    source: Queen_Beatrix
     type: :Person
-    source: :Beatrix_der_Nederlanden
-  AssignClass (28d3c31f-3003-46be-9f2e-4cb9475a20cd)
- Call ID: 28d3c31f-3003-46be-9f2e-4cb9475a20cd
+  AssignClass (734c39f3-06b0-42ec-b155-de066c8fd077)
+ Call ID: 734c39f3-06b0-42ec-b155-de066c8fd077
   Args:
-    source: :Claus_von_Amsberg
+    source: Claus_von_Amsberg
     type: :Man
-  AssignClass (9a64f8a6-0bef-45ab-af00-e6ee3dc29f43)
- Call ID: 9a64f8a6-0bef-45ab-af00-e6ee3dc29f43
+  AssignClass (281f69b4-0596-4ded-b1e2-9c01b5c415c4)
+ Call ID: 281f69b4-0596-4ded-b1e2-9c01b5c415c4
   Args:
     type: :Person
-    source: :Claus_von_Amsberg
-  AssignClass (80237563-a710-4db0-8506-b25460042531)
- Call ID: 80237563-a710-4db0-8506-b25460042531
+    source: Claus_von_Amsberg
+  AssignClass (b66cc4bf-6ce1-433a-bf64-1b71bc2bb2a0)
+ Call ID: b66cc4bf-6ce1-433a-bf64-1b71bc2bb2a0
   Args:
-    source: :Willem-Alexander_der_Nederlanden
     type: :Man
-  AssignClass (b213b032-00c2-477a-b9c1-f9d331c3113c)
- Call ID: b213b032-00c2-477a-b9c1-f9d331c3113c
+    source: King_Willem-Alexander
+  AssignClass (a89feeaa-3e36-47e4-8e82-82e49be25d14)
+ Call ID: a89feeaa-3e36-47e4-8e82-82e49be25d14
   Args:
     type: :Person
-    source: :Willem-Alexander_der_Nederlanden
-  AssignClass (1db056a6-3c83-469d-bcdc-f040240e9efb)
- Call ID: 1db056a6-3c83-469d-bcdc-f040240e9efb
+    source: King_Willem-Alexander
+  AssignClass (f858917c-58a2-401e-8c26-f074808b9aae)
+ Call ID: f858917c-58a2-401e-8c26-f074808b9aae
   Args:
-    source: :Johan_Friso_der_Nederlanden
     type: :Man
-  AssignClass (20ebd549-4f2e-4b9e-8428-b9de6b9e64b4)
- Call ID: 20ebd549-4f2e-4b9e-8428-b9de6b9e64b4
+    source: Prince_Constantijn
+  AssignClass (6b330dc4-be91-49fb-9811-0d493d6228df)
+ Call ID: 6b330dc4-be91-49fb-9811-0d493d6228df
   Args:
-    source: :Johan_Friso_der_Nederlanden
+    source: Prince_Constantijn
     type: :Person
-  AssignClass (66fe0bf9-20a2-422f-abb1-b1dc5e2cfb51)
- Call ID: 66fe0bf9-20a2-422f-abb1-b1dc5e2cfb51
+  AssignClass (dc781638-ed97-4550-b441-4759ef527550)
+ Call ID: dc781638-ed97-4550-b441-4759ef527550
   Args:
     type: :Woman
-    source: :Laurentien_Brinkhorst
-  AssignClass (6b285f61-9b80-4f14-b5a9-9a724a57778e)
- Call ID: 6b285f61-9b80-4f14-b5a9-9a724a57778e
+    source: Queen_Juliana
+  AssignClass (79008ed4-5e03-4534-8cb1-09c8a2ba06f2)
+ Call ID: 79008ed4-5e03-4534-8cb1-09c8a2ba06f2
   Args:
-    source: :Laurentien_Brinkhorst
     type: :Person
-  AssignClass (5bd6eab2-bfcf-4f9a-8b0c-a2e7792af7cb)
- Call ID: 5bd6eab2-bfcf-4f9a-8b0c-a2e7792af7cb
+    source: Queen_Juliana
+  AssignClass (2b1d0cc1-fd8f-4b07-887d-69a8e28d573c)
+ Call ID: 2b1d0cc1-fd8f-4b07-887d-69a8e28d573c
   Args:
-    type: :Woman
-    source: :Eloise_van_Oranje-Nassau
-  AssignClass (9367aee3-226e-47a3-8065-21e7046ae8de)
- Call ID: 9367aee3-226e-47a3-8065-21e7046ae8de
-  Args:
-    source: :Eloise_van_Oranje-Nassau
-    type: :Person
-  AssignClass (52d2b654-ab7d-43d7-96b6-bf814f2308cc)
- Call ID: 52d2b654-ab7d-43d7-96b6-bf814f2308cc
-  Args:
+    source: Prince_Bernhard
     type: :Man
-    source: :Claus-Casimir_van_Oranje-Nassau
-  AssignClass (6e43513c-03d5-4b8c-a5a4-15a08f81adbb)
- Call ID: 6e43513c-03d5-4b8c-a5a4-15a08f81adbb
+  AssignClass (638fdcb1-4497-44f3-8848-9eef2ea6b0f4)
+ Call ID: 638fdcb1-4497-44f3-8848-9eef2ea6b0f4
   Args:
-    source: :Claus-Casimir_van_Oranje-Nassau
     type: :Person
-  AssignClass (b3896d77-3d6c-4b5c-8615-896d2ebf18c4)
- Call ID: b3896d77-3d6c-4b5c-8615-896d2ebf18c4
+    source: Prince_Bernhard
+  AssignClass (161d5886-3a54-40a1-9eb1-487ce37f7653)
+ Call ID: 161d5886-3a54-40a1-9eb1-487ce37f7653
   Args:
-    source: :Leonore_van_Oranje-Nassau
+    source: Mabel_Wisse_Smit
     type: :Woman
-  AssignClass (ee3b109d-a2a5-4053-91f7-5a0277f28ae2)
- Call ID: ee3b109d-a2a5-4053-91f7-5a0277f28ae2
+  AssignClass (3d07d7f7-8d32-4bde-9b27-cc75886034ee)
+ Call ID: 3d07d7f7-8d32-4bde-9b27-cc75886034ee
   Args:
-    source: :Leonore_van_Oranje-Nassau
+    source: Mabel_Wisse_Smit
     type: :Person
-  AddLiteral (51269e12-d5da-411a-b002-b4a3c49311aa)
- Call ID: 51269e12-d5da-411a-b002-b4a3c49311aa
+  AssignClass (34c4fcf3-6d20-4c45-900c-9cd8c2ca5138)
+ Call ID: 34c4fcf3-6d20-4c45-900c-9cd8c2ca5138
   Args:
-    literal_value: 1969
+    type: :Woman
+    source: Countess_Emma_Luana_Ninette_Sophie
+  AssignClass (5f49f159-372f-4ef8-b0a9-4adef789d9c8)
+ Call ID: 5f49f159-372f-4ef8-b0a9-4adef789d9c8
+  Args:
+    source: Countess_Emma_Luana_Ninette_Sophie
+    type: :Person
+  AssignClass (3271623a-7e3d-4876-9b1a-e0d16a2f7704)
+ Call ID: 3271623a-7e3d-4876-9b1a-e0d16a2f7704
+  Args:
+    source: Countess_Joanna_Zaria_Nicoline_Milou
+    type: :Woman
+  AssignClass (bf8636bf-8c34-4d7c-88fa-97d83c787977)
+ Call ID: bf8636bf-8c34-4d7c-88fa-97d83c787977
+  Args:
+    type: :Person
+    source: Countess_Joanna_Zaria_Nicoline_Milou
+  AddLiteral (ed3da982-3215-4af0-8670-c8a702720193)
+ Call ID: ed3da982-3215-4af0-8670-c8a702720193
+  Args:
     relation: :hasBirthYear
-    source: :Constantijn_van_de_Nederlanden
-    literal_type: xsd:int
-  AddTriple (ec8e59fe-f70c-4990-8409-9e4ec98f0126)
- Call ID: ec8e59fe-f70c-4990-8409-9e4ec98f0126
+    source: Prince_Friso
+    literal_type: xsd:integer
+    literal_value: 1968
+  AddLiteral (98197819-ace7-4688-96da-9872bfa81bb4)
+ Call ID: 98197819-ace7-4688-96da-9872bfa81bb4
   Args:
-    relation: :hasFather
-    target: :Claus_von_Amsberg
-    source: :Constantijn_van_de_Nederlanden
-  AddTriple (e9d8ffce-a611-4c45-9ddf-213c7102af44)
- Call ID: e9d8ffce-a611-4c45-9ddf-213c7102af44
+    literal_value: 2013
+    source: Prince_Friso
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (13fb33c1-a7a3-42ff-b371-e94b4b463f39)
+ Call ID: 13fb33c1-a7a3-42ff-b371-e94b4b463f39
   Args:
-    source: :Constantijn_van_de_Nederlanden
+    source: Prince_Friso
     relation: :hasMother
-    target: :Beatrix_der_Nederlanden
-  AddTriple (764a49db-8ddc-42a9-9964-0423a2a3a211)
- Call ID: 764a49db-8ddc-42a9-9964-0423a2a3a211
+    target: Queen_Beatrix
+  AddTriple (2be8efbe-6a1a-406d-aa25-e08db7e25f5a)
+ Call ID: 2be8efbe-6a1a-406d-aa25-e08db7e25f5a
   Args:
-    source: :Constantijn_van_de_Nederlanden
-    target: :Willem-Alexander_der_Nederlanden
-    relation: :hasBrother
-  AddTriple (80eeec81-f9b2-4200-b922-ba099cf49545)
- Call ID: 80eeec81-f9b2-4200-b922-ba099cf49545
+    target: Claus_von_Amsberg
+    source: Prince_Friso
+    relation: :hasFather
+  AddTriple (cc174fbd-d4a4-4d3e-acaa-d5a3ec6775df)
+ Call ID: cc174fbd-d4a4-4d3e-acaa-d5a3ec6775df
   Args:
-    source: :Constantijn_van_de_Nederlanden
-    target: :Johan_Friso_der_Nederlanden
-    relation: :hasBrother
-  AddTriple (5f43af14-c661-4ab3-90f9-64267e404c76)
- Call ID: 5f43af14-c661-4ab3-90f9-64267e404c76
+    target: King_Willem-Alexander
+    relation: :isBrotherOf
+    source: Prince_Friso
+  AddTriple (c965f3b6-8e6b-4e02-910a-1e2d1d365837)
+ Call ID: c965f3b6-8e6b-4e02-910a-1e2d1d365837
   Args:
-    relation: :hasChild
-    target: :Eloise_van_Oranje-Nassau
-    source: :Constantijn_van_de_Nederlanden
-  AddTriple (da421f56-d085-4d26-9cde-ab73d6385301)
- Call ID: da421f56-d085-4d26-9cde-ab73d6385301
+    relation: :isBrotherOf
+    source: Prince_Friso
+    target: Prince_Constantijn
+  AddTriple (03997e70-921e-43d4-b4d0-82dc51909b6b)
+ Call ID: 03997e70-921e-43d4-b4d0-82dc51909b6b
   Args:
-    source: :Constantijn_van_de_Nederlanden
-    target: :Claus-Casimir_van_Oranje-Nassau
-    relation: :hasChild
-  AddTriple (28df417c-0d41-41fd-a048-c345b6492327)
- Call ID: 28df417c-0d41-41fd-a048-c345b6492327
+    relation: :isChildOf
+    source: Queen_Beatrix
+    target: Queen_Juliana
+  AddTriple (ba93e0de-c7fb-4574-85b8-f859735531b6)
+ Call ID: ba93e0de-c7fb-4574-85b8-f859735531b6
   Args:
-    relation: :hasChild
-    target: :Leonore_van_Oranje-Nassau
-    source: :Constantijn_van_de_Nederlanden
-  AddTriple (3d41ae43-dff0-4ee4-96ce-5f98e786dafd)
- Call ID: 3d41ae43-dff0-4ee4-96ce-5f98e786dafd
+    target: Prince_Bernhard
+    source: Queen_Beatrix
+    relation: :isChildOf
+  AddTriple (6e928074-a54c-47b0-95c1-527c2eac09b7)
+ Call ID: 6e928074-a54c-47b0-95c1-527c2eac09b7
   Args:
-    relation: :hasChild
-    target: :Eloise_van_Oranje-Nassau
-    source: :Laurentien_Brinkhorst
-  AddTriple (853547a3-7a9d-4eed-950b-5b10006b6a3c)
- Call ID: 853547a3-7a9d-4eed-950b-5b10006b6a3c
+    target: Mabel_Wisse_Smit
+    relation: :hasMother
+    source: Countess_Emma_Luana_Ninette_Sophie
+  AddTriple (95bfb4ba-5e71-42c7-9cf6-714ba04bac38)
+ Call ID: 95bfb4ba-5e71-42c7-9cf6-714ba04bac38
   Args:
-    relation: :hasChild
-    target: :Claus-Casimir_van_Oranje-Nassau
-    source: :Laurentien_Brinkhorst
-  AddTriple (d7f34df2-0c8d-41e2-a3da-04f6c000092e)
- Call ID: d7f34df2-0c8d-41e2-a3da-04f6c000092e
+    target: Prince_Friso
+    relation: :hasFather
+    source: Countess_Emma_Luana_Ninette_Sophie
+  AddTriple (4c2a00e1-e4fc-4498-8af7-f48d3dcd89d4)
+ Call ID: 4c2a00e1-e4fc-4498-8af7-f48d3dcd89d4
   Args:
-    source: :Laurentien_Brinkhorst
-    relation: :hasChild
-    target: :Leonore_van_Oranje-Nassau
-  AddLiteral (72d829d0-c9ea-40f8-b966-ef908b879014)
- Call ID: 72d829d0-c9ea-40f8-b966-ef908b879014
+    source: Countess_Joanna_Zaria_Nicoline_Milou
+    relation: :hasMother
+    target: Mabel_Wisse_Smit
+  AddTriple (e001c305-62f6-4790-a9a9-ace63f8a6e6b)
+ Call ID: e001c305-62f6-4790-a9a9-ace63f8a6e6b
   Args:
-    source: :Constantijn_van_de_Nederlanden
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  AddLiteral (29d6777f-8a7d-49e9-8ec0-2698e55e5575)
- Call ID: 29d6777f-8a7d-49e9-8ec0-2698e55e5575
+    target: Prince_Friso
+    relation: :hasFather
+    source: Countess_Joanna_Zaria_Nicoline_Milou
+  AddLiteral (5af8997a-6c15-4d18-9beb-47964b87f350)
+ Call ID: 5af8997a-6c15-4d18-9beb-47964b87f350
   Args:
-    source: :Beatrix_der_Nederlanden
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-  AddLiteral (616c8520-a0e7-4c0f-a132-b77986e81386)
- Call ID: 616c8520-a0e7-4c0f-a132-b77986e81386
+    literal_value: 2004
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Prince_Friso
+  AddTriple (5c2beebd-7aa9-4d98-8e36-430a9433e50f)
+ Call ID: 5c2beebd-7aa9-4d98-8e36-430a9433e50f
   Args:
-    relation: :hasSex
-    literal_value: Male
-    source: :Claus_von_Amsberg
-    literal_type: xsd:string
-  AddLiteral (4e01aa53-4841-4450-8641-b49b927d2eba)
- Call ID: 4e01aa53-4841-4450-8641-b49b927d2eba
+    relation: :hasRelation
+    source: Prince_Friso
+    target: Mabel_Wisse_Smit
+  Finish (5bf60b14-72d2-40b3-8aef-900bad2418ab)
+ Call ID: 5bf60b14-72d2-40b3-8aef-900bad2418ab
   Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: :Willem-Alexander_der_Nederlanden
-  AddLiteral (b0aa28bb-3916-4af2-bdff-16102f5560a4)
- Call ID: b0aa28bb-3916-4af2-bdff-16102f5560a4
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    source: :Johan_Friso_der_Nederlanden
-    literal_type: xsd:string
-  AddLiteral (77cf1744-87f8-4660-b5f5-f7cef96a93ce)
- Call ID: 77cf1744-87f8-4660-b5f5-f7cef96a93ce
-  Args:
-    literal_type: xsd:string
-    source: :Laurentien_Brinkhorst
-    relation: :hasSex
-    literal_value: Female
-  AddLiteral (609e8e1d-122d-45c6-8592-322c72bbb8a9)
- Call ID: 609e8e1d-122d-45c6-8592-322c72bbb8a9
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: :Eloise_van_Oranje-Nassau
-  AddLiteral (72cb49ed-a14f-41ab-95f3-636dc77452a6)
- Call ID: 72cb49ed-a14f-41ab-95f3-636dc77452a6
-  Args:
-    literal_type: xsd:string
-    source: :Claus-Casimir_van_Oranje-Nassau
-    relation: :hasSex
-    literal_value: Male
-  AddLiteral (f1657663-8c9d-4fc5-9290-9f741d3a9e7f)
- Call ID: f1657663-8c9d-4fc5-9290-9f741d3a9e7f
-  Args:
-    literal_value: Female
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :Leonore_van_Oranje-Nassau
-  Finish (2300a1ad-f7eb-4cb6-88b6-b1aa4bd625f8)
- Call ID: 2300a1ad-f7eb-4cb6-88b6-b1aa4bd625f8
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -755,52 +835,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Constantijn_van_de_Nederlanden a :Man,
-          :Person ;
-      :hasBirthYear "1969"^^xsd:int ;
-      :hasBrother data:Johan_Friso_der_Nederlanden,
-          data:Willem-Alexander_der_Nederlanden ;
-      :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-          data:Eloise_van_Oranje-Nassau,
-          data:Leonore_van_Oranje-Nassau ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Beatrix_der_Nederlanden ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Laurentien_Brinkhorst a :Person,
+  data:Countess_Emma_Luana_Ninette_Sophie a :Person,
           :Woman ;
-      :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-          data:Eloise_van_Oranje-Nassau,
-          data:Leonore_van_Oranje-Nassau ;
-      :hasSex "Female"^^xsd:string .
+      :hasFather data:Prince_Friso ;
+      :hasMother data:Mabel_Wisse_Smit .
 
-  data:Beatrix_der_Nederlanden a :Person,
+  data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasFather data:Prince_Friso ;
+      :hasMother data:Mabel_Wisse_Smit .
 
   data:Claus_von_Amsberg a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+          :Person .
 
-  data:Johan_Friso_der_Nederlanden a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:King_Willem-Alexander a :Man,
+          :Person .
 
-  data:Willem-Alexander_der_Nederlanden a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:Prince_Bernhard a :Man,
+          :Person .
 
-  data:Claus-Casimir_van_Oranje-Nassau a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:Prince_Constantijn a :Man,
+          :Person .
 
-  data:Eloise_van_Oranje-Nassau a :Person,
+  data:Queen_Beatrix a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :isChildOf data:Prince_Bernhard,
+          data:Queen_Juliana .
 
-  data:Leonore_van_Oranje-Nassau a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Queen_Juliana a :Person,
+          :Woman .
+
+  data:Prince_Friso a :Man,
+          :Person ;
+      :hasBirthYear 1968 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMarriageYear 2004 ;
+      :hasMother data:Queen_Beatrix ;
+      :hasRelation data:Mabel_Wisse_Smit ;
+      :isBrotherOf data:King_Willem-Alexander,
+          data:Prince_Constantijn .
+
+  data:Mabel_Wisse_Smit a :Person,
+          :Woman .
 
 
 
@@ -812,638 +889,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (54daa51c-7788-444c-a5bb-eb2af38a8667)
- Call ID: 54daa51c-7788-444c-a5bb-eb2af38a8667
+  ValidateShacl (f9a54c9e-4dbf-4b84-91c0-be1e604a82f3)
+ Call ID: f9a54c9e-4dbf-4b84-91c0-be1e604a82f3
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:78
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Claus_von_Amsberg, linked as the father of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Claus_von_Amsberg, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Queen_Beatrix, linked as the mother of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Queen_Beatrix, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Claus_von_Amsberg, linked as the father of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Claus_von_Amsberg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Claus_von_Amsberg' for the property 'hasFather' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Man'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Claus_von_Amsberg', 'Man')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Beatrix_der_Nederlanden' for the property 'hasMother' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Woman'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Beatrix_der_Nederlanden', 'Woman')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Queen_Beatrix, linked as the mother of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Queen_Beatrix, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Prince_Bernhard, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
+      The node Queen_Juliana, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Claus_von_Amsberg, linked as the father of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
+      AssignClass(Claus_von_Amsberg, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Queen_Beatrix, linked as the mother of Prince_Friso, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Queen_Beatrix, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
+      The node Prince_Bernhard, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Queen_Juliana, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Prince_Friso, linked as the father of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
+      AssignClass(Prince_Friso, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Emma_Luana_Ninette_Sophie, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Claus_von_Amsberg' for the property 'hasFather' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Man'.
+      The node Mabel_Wisse_Smit, linked as the mother of Countess_Joanna_Zaria_Nicoline_Milou, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Claus_von_Amsberg', 'Man')
+      AssignClass(Mabel_Wisse_Smit, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Beatrix_der_Nederlanden' for the property 'hasMother' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Woman'.
+      The node Prince_Bernhard, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Beatrix_der_Nederlanden', 'Woman')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
+      The node Queen_Juliana, linked as a parent of Queen_Beatrix, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [51]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Claus_von_Amsberg' for the property 'hasFather' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Claus_von_Amsberg', 'Man')
-
-
-  Violation [52]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Beatrix_der_Nederlanden' for the property 'hasMother' on node 'Constantijn_van_de_Nederlanden' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Beatrix_der_Nederlanden', 'Woman')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus_von_Amsberg' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Johan_Friso_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Claus-Casimir_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Constantijn_van_de_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Willem-Alexander_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', 'Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Leonore_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Laurentien_Brinkhorst' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Beatrix_der_Nederlanden' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Eloise_van_Oranje-Nassau' is not an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', 'Sex')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
 
@@ -1452,228 +1097,36 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (34874fac-363e-467a-8d83-5ad511f14363)
- Call ID: 34874fac-363e-467a-8d83-5ad511f14363
+  AssignClass (2cace141-7ee8-444f-ac4b-147ed4e46be4)
+ Call ID: 2cace141-7ee8-444f-ac4b-147ed4e46be4
   Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: :Constantijn_van_de_Nederlanden
-  RemoveLiteral (50d8f980-8164-42bd-9eab-ba931ec09836)
- Call ID: 50d8f980-8164-42bd-9eab-ba931ec09836
-  Args:
-    source: :Beatrix_der_Nederlanden
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (87decd1d-0d79-4218-b451-a3079e49191d)
- Call ID: 87decd1d-0d79-4218-b451-a3079e49191d
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: :Claus_von_Amsberg
-  RemoveLiteral (35ca9cfe-935d-4c11-b579-f9944a9bd37b)
- Call ID: 35ca9cfe-935d-4c11-b579-f9944a9bd37b
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: :Willem-Alexander_der_Nederlanden
-  RemoveLiteral (f5475f4b-3e8e-488b-b8d6-640fb3e10718)
- Call ID: f5475f4b-3e8e-488b-b8d6-640fb3e10718
-  Args:
-    source: :Johan_Friso_der_Nederlanden
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  RemoveLiteral (1512fd76-9c84-455a-88ae-634b2f943632)
- Call ID: 1512fd76-9c84-455a-88ae-634b2f943632
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: :Laurentien_Brinkhorst
-  RemoveLiteral (91c94f35-5360-4cf2-b25f-b95cf7dfd50d)
- Call ID: 91c94f35-5360-4cf2-b25f-b95cf7dfd50d
-  Args:
-    source: :Eloise_van_Oranje-Nassau
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (08389090-5579-453d-8e78-1f55837fc945)
- Call ID: 08389090-5579-453d-8e78-1f55837fc945
-  Args:
-    source: :Claus-Casimir_van_Oranje-Nassau
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  RemoveLiteral (48f508fe-368f-4d6f-a952-fe42e311ba2d)
- Call ID: 48f508fe-368f-4d6f-a952-fe42e311ba2d
-  Args:
-    source: :Leonore_van_Oranje-Nassau
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AssignClass (ab8554e3-4979-4f3a-ab61-4f1af4da8d53)
- Call ID: ab8554e3-4979-4f3a-ab61-4f1af4da8d53
-  Args:
-    type: :Male
-    source: :Male_Sex
-  AssignClass (1a501d87-1416-45cb-a28c-799add7ddd2a)
- Call ID: 1a501d87-1416-45cb-a28c-799add7ddd2a
-  Args:
-    type: :Sex
-    source: :Male_Sex
-  AssignClass (6c62dcfa-7011-464f-adea-5aa1c2fe6890)
- Call ID: 6c62dcfa-7011-464f-adea-5aa1c2fe6890
-  Args:
-    source: :Female_Sex
-    type: :Female
-  AssignClass (06881706-1643-475f-81d1-9bbcb2855d6e)
- Call ID: 06881706-1643-475f-81d1-9bbcb2855d6e
-  Args:
-    source: :Female_Sex
-    type: :Sex
-  AddTriple (854ca494-5567-4bc3-bf31-e77e509df6db)
- Call ID: 854ca494-5567-4bc3-bf31-e77e509df6db
-  Args:
-    target: :Male_Sex
-    relation: :hasSex
-    source: :Constantijn_van_de_Nederlanden
-  AddTriple (fe540b57-2cee-404a-a6b8-b51ebdfecc03)
- Call ID: fe540b57-2cee-404a-a6b8-b51ebdfecc03
-  Args:
-    source: :Beatrix_der_Nederlanden
-    target: :Female_Sex
-    relation: :hasSex
-  AddTriple (7f6b8ed9-0dbc-433a-8656-0bea3bef270e)
- Call ID: 7f6b8ed9-0dbc-433a-8656-0bea3bef270e
-  Args:
-    source: :Claus_von_Amsberg
-    relation: :hasSex
-    target: :Male_Sex
-  AddTriple (1ddab132-a51b-4c3b-8810-3b494f9dc2a2)
- Call ID: 1ddab132-a51b-4c3b-8810-3b494f9dc2a2
-  Args:
-    source: :Willem-Alexander_der_Nederlanden
-    relation: :hasSex
-    target: :Male_Sex
-  AddTriple (1a59ca1c-93b9-4192-bb0c-68b69a63fa70)
- Call ID: 1a59ca1c-93b9-4192-bb0c-68b69a63fa70
-  Args:
-    source: :Johan_Friso_der_Nederlanden
-    target: :Male_Sex
-    relation: :hasSex
-  AddTriple (330d9e75-029d-448b-96be-b4d03e9a8c2a)
- Call ID: 330d9e75-029d-448b-96be-b4d03e9a8c2a
-  Args:
-    source: :Laurentien_Brinkhorst
-    relation: :hasSex
-    target: :Female_Sex
-  AddTriple (6c8329d2-1259-46c7-ba63-366638757fc8)
- Call ID: 6c8329d2-1259-46c7-ba63-366638757fc8
-  Args:
-    source: :Eloise_van_Oranje-Nassau
-    relation: :hasSex
-    target: :Female_Sex
-  AddTriple (624eac97-3274-487c-962d-af15a3c8d111)
- Call ID: 624eac97-3274-487c-962d-af15a3c8d111
-  Args:
-    target: :Male_Sex
-    relation: :hasSex
-    source: :Claus-Casimir_van_Oranje-Nassau
-  AddTriple (dd58ec5d-7433-472f-884e-b2e9f19b3980)
- Call ID: dd58ec5d-7433-472f-884e-b2e9f19b3980
-  Args:
-    target: :Female_Sex
-    relation: :hasSex
-    source: :Leonore_van_Oranje-Nassau
-  AssignClass (34437d5d-6f78-4995-98e4-5df8530a108d)
- Call ID: 34437d5d-6f78-4995-98e4-5df8530a108d
-  Args:
-    source: :Claus_von_Amsberg
     type: :Ancestor
-  AssignClass (fe8a5bc8-6428-428f-89f1-4f2bd521b779)
- Call ID: fe8a5bc8-6428-428f-89f1-4f2bd521b779
+    source: Claus_von_Amsberg
+  AssignClass (0c311885-9bfb-4cee-b972-4e081720dae1)
+ Call ID: 0c311885-9bfb-4cee-b972-4e081720dae1
   Args:
-    source: :Beatrix_der_Nederlanden
+    source: Queen_Beatrix
     type: :Ancestor
-  Finish (72548951-70d2-469a-a18b-99de6c65bdb7)
- Call ID: 72548951-70d2-469a-a18b-99de6c65bdb7
+  AssignClass (0e2c719a-ff8a-41c5-8f02-575b821924c0)
+ Call ID: 0e2c719a-ff8a-41c5-8f02-575b821924c0
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Prince_Friso
+    type: :Ancestor
+  AssignClass (46c5104e-7041-436c-9bc5-d36e2ac37ee7)
+ Call ID: 46c5104e-7041-436c-9bc5-d36e2ac37ee7
+  Args:
+    type: :Ancestor
+    source: Mabel_Wisse_Smit
+  AssignClass (b519fc84-6dd4-4e9c-9171-02f521166738)
+ Call ID: b519fc84-6dd4-4e9c-9171-02f521166738
+  Args:
+    source: Prince_Bernhard
+    type: :Ancestor
+  AssignClass (148b647b-c557-49ad-8ae1-a0323d61f2a8)
+ Call ID: 148b647b-c557-49ad-8ae1-a0323d61f2a8
+  Args:
+    type: :Ancestor
+    source: Queen_Juliana
 
 ================================= Tool Message =================================
 
@@ -1702,73 +1155,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Constantijn_van_de_Nederlanden a :Man,
-          :Person ;
-      :hasBirthYear "1969"^^xsd:int ;
-      :hasBrother data:Johan_Friso_der_Nederlanden,
-          data:Willem-Alexander_der_Nederlanden ;
-      :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-          data:Eloise_van_Oranje-Nassau,
-          data:Leonore_van_Oranje-Nassau ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Beatrix_der_Nederlanden ;
-      :hasSex data:Male_Sex .
-
-  data:Laurentien_Brinkhorst a :Person,
+  data:Countess_Emma_Luana_Ninette_Sophie a :Person,
           :Woman ;
-      :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-          data:Eloise_van_Oranje-Nassau,
-          data:Leonore_van_Oranje-Nassau ;
-      :hasSex data:Female_Sex .
+      :hasFather data:Prince_Friso ;
+      :hasMother data:Mabel_Wisse_Smit .
 
-  data:Beatrix_der_Nederlanden a :Ancestor,
-          :Person,
+  data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :hasFather data:Prince_Friso ;
+      :hasMother data:Mabel_Wisse_Smit .
 
   data:Claus_von_Amsberg a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+          :Person .
 
-  data:Johan_Friso_der_Nederlanden a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:King_Willem-Alexander a :Man,
+          :Person .
 
-  data:Willem-Alexander_der_Nederlanden a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:Prince_Bernhard a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Claus-Casimir_van_Oranje-Nassau a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:Prince_Constantijn a :Man,
+          :Person .
 
-  data:Eloise_van_Oranje-Nassau a :Person,
+  data:Queen_Beatrix a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :isChildOf data:Prince_Bernhard,
+          data:Queen_Juliana .
 
-  data:Leonore_van_Oranje-Nassau a :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:Queen_Juliana a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Female_Sex a :Female,
-          :Sex .
+  data:Prince_Friso a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1968 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus_von_Amsberg ;
+      :hasMarriageYear 2004 ;
+      :hasMother data:Queen_Beatrix ;
+      :hasRelation data:Mabel_Wisse_Smit ;
+      :isBrotherOf data:King_Willem-Alexander,
+          data:Prince_Constantijn .
 
-  data:Male_Sex a :Male,
-          :Sex .
+  data:Mabel_Wisse_Smit a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (b832b082-77ec-4f7e-83d3-9fc7bc415685)
- Call ID: b832b082-77ec-4f7e-83d3-9fc7bc415685
+  ValidateShacl (ffee9e6d-08f7-4af2-890d-eefdd0a80ec8)
+ Call ID: ffee9e6d-08f7-4af2-890d-eefdd0a80ec8
   Args:
 
 ================================= Tool Message =================================
@@ -1779,6 +1223,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9b0ab014-fb02-4314-acd6-c7ef6524a49f)
- Call ID: 9b0ab014-fb02-4314-acd6-c7ef6524a49f
+  Finish (4176b87a-efdc-41f9-8fd3-bf76f37ae52d)
+ Call ID: 4176b87a-efdc-41f9-8fd3-bf76f37ae52d
   Args:

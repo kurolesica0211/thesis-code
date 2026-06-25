@@ -1,49 +1,60 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
-    :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person ;
+    :isBrotherOf data:Juan .
 
-data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
-    :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+data:AlfonsoXIII a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Juan .
 
-data:Magali_S%C3%B6hngen a :Woman ;
-    :isSisterOf data:Aim%C3%A9e_S%C3%B6hngen .
-
-data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
-    :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
-
-data:Eleonoor_Stammeijer a :Ancestor,
-        :Woman .
-
-data:Hans_S%C3%B6hngen a :Ancestor,
-        :Man .
-
-data:Pieter_van_Vollenhoven a :Ancestor,
-        :Man .
-
-data:Prince_Bernhard a :Man .
-
-data:Prince_Maurits a :Man .
-
-data:Prince_Pieter-Christiaan a :Man .
-
-data:Princess_Margriet_of_the_Netherlands a :Ancestor,
-        :Woman .
-
-data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven a :Ancestor,
-        :Man ;
-    :hasFather data:Pieter_van_Vollenhoven ;
-    :hasMother data:Princess_Margriet_of_the_Netherlands ;
-    :isBrotherOf data:Prince_Bernhard,
-        data:Prince_Maurits,
-        data:Prince_Pieter-Christiaan .
-
-data:Aim%C3%A9e_S%C3%B6hngen a :Ancestor,
+data:Frederica a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Hans_S%C3%B6hngen ;
-    :hasMother data:Eleonoor_Stammeijer .
+    :isMotherOf data:Sofia .
+
+data:JaimeDukeOfSegovia a :Man,
+        :Person ;
+    :isBrotherOf data:Juan .
+
+data:PaulOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Sofia .
+
+data:VictoriaEugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Juan .
+
+data:Male a :Sex .
+
+data:MariaDeLasMercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:JuanCarlosI,
+        data:Pilar .
+
+data:JuanCarlosI a :Man,
+        :Person .
+
+data:Pilar a :Person,
+        :Woman .
+
+data:Sofia a :Person,
+        :Woman .
+
+data:Juan a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1993 ;
+    :hasMarriageYear 1935 ;
+    :hasRelation data:MariaDeLasMercedes ;
+    :hasSex data:Male ;
+    :isFatherOf data:JuanCarlosI,
+        data:Pilar .
 

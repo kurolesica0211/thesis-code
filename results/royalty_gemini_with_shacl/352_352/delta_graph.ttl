@@ -2,32 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mathilde_van_Limburg-Stirum a :Woman .
+data:FeodoraOfSaxeMeiningen a :Woman ;
+    :hasFather data:BernhardIII ;
+    :hasMother data:CharlotteOfPrussia ;
+    :hasSex data:Female .
 
-data:Wilhelmina a :Woman ;
-    :hasMother data:Sophie_of_W%C3%BCrttemberg .
+data:WilhelmII a :Man ;
+    :hasFather data:FrederickIIIOfPrussia ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasSex data:Male .
 
-data:William_Prince_of_Orange a :Man ;
-    :hasBirthYear 1840 ;
-    :hasBrother data:Alexander ;
-    :hasDeathYear 1879 ;
-    :hasFather data:William_III_of_the_Netherlands ;
-    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
-    :knownAs "Prince Lemon"^^xsd:string .
+data:CharlotteOfPrussia a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1860 ;
+    :hasDeathYear 1919 ;
+    :hasFather data:FrederickIIIOfPrussia ;
+    :hasMarriageYear 1878 ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasRelation data:BernhardIII ;
+    :hasSex data:Female .
 
-data:Alexander a :Man .
-
-data:William_III_of_the_Netherlands a :Ancestor,
+data:PrinceAlbert a :Ancestor,
         :Man ;
-    :hasFather data:William_II_of_the_Netherlands .
+    :hasSex data:Male .
 
-data:William_II_of_the_Netherlands a :Ancestor,
+data:QueenVictoria a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:BernhardIII a :Ancestor,
         :Man ;
-    :hasFather data:William_I_of_the_Netherlands .
+    :hasSex data:Male .
 
-data:William_I_of_the_Netherlands a :Ancestor,
-        :Man .
+data:FrederickIIIOfPrussia a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
 
-data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
-        :Woman .
+data:VictoriaPrincessRoyal a :Ancestor,
+        :Woman ;
+    :hasFather data:PrinceAlbert ;
+    :hasMother data:QueenVictoria ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

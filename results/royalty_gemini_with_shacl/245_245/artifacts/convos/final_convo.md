@@ -85,28 +85,60 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexander Patrick Gregers Richard Windsor, Earl of Ulster (born 24 October 1974), is a member of the British royal family and the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-He is the heir apparent to the dukedom of Gloucester and is the second cousin of Charles III.
-He is also sometimes referred to as Alex Ulster.
-Early life and education
+Lady Pamela Carmen Louise Hicks (née Mountbatten; born 19 April 1929) is a British aristocrat and relative of the British royal family.
+Earl Mountbatten of Burma (formerly Prince Louis of Battenberg) and of heiress Edwina Ashley.
+Through her father, Lady Pamela is a first cousin of the late Prince Philip, Duke of Edinburgh, and a grandniece of the last Empress of Russia, Alexandra Feodorovna.
+She served as a bridesmaid and later as a lady-in-waiting to Queen Elizabeth II, her third cousin.
+Early life and family
 
-Alexander Patrick Gregers Richard Windsor was born prematurely on 24 October 1974 at St Mary's Hospital, London.
-He is the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-Alexander attended Eton College and later graduated with a degree in war studies from King's College London in 1996.
-Military career
+Lady Pamela was born on 19 April 1929 in Barcelona, Spain, to Edwina Ashley and the then Lord Louis Mountbatten (who later became The 1st Earl Mountbatten of Burma).
+Countess Mountbatten of Burma.
+A member of the Mountbatten family by birth, she descended from the Battenberg family, a morganatic cadet branch of the House of Hesse-Darmstadt.
+At the request of King George V, her grandparents, Prince Louis of Battenberg and Princess Victoria of Hesse and by Rhine, relinquished their German princely titles in 1917 in exchange for titles in the British peerage due to anti-German sentiment in Britain.
+Her father, who was also born a prince of Battenberg, was later created Earl Mountbatten of Burma.
+Through her father, she is a great-great-granddaughter of Queen Victoria and Prince Albert of Saxe-Coburg and Gotha, and as of 2026, their oldest surviving descendant.
+Her mother, Edwina, was the daughter of The 1st Baron Mount Temple.
+Through her mother, Lady Pamela is also a great-granddaughter of Sir Ernest Cassel and a great-great-granddaughter of The 7th Earl of Shaftesbury.
+Through her father, she is a first cousin of Prince Philip, Duke of Edinburgh.
+Her baptism was celebrated on 12 July 1929 in the Chapel Royal, St. James's Palace.
+Her godparents were: King Alfonso XIII and The Duke of Kent; Nadejda Mountbatten and Marjorie, Countess of Brecknock (Lady Louis' first cousin); and the Duchess of Peñaranda (María del Carmen Saavedra y Collado, Marqués de Villaviciosa)..
+She attended Hewitt School in New York City, like her sister Patricia.
+In 1947, Lady Pamela accompanied her parents to British India, remaining with them throughout her father's term as the last Viceroy of India and then as Governor-General of post-Partition India through 1948, living with them in the palatial Viceroy's House in New Delhi and at the summer Viceregal Lodge in Simla.
+Official duties
 
-Alexander was commissioned in the King's Royal Hussars on 10 April 1998 as a subaltern (second lieutenant) with seniority from 14 April 1995; he was given the service number 548299.
-Marriage and family
+In November 1947, Lady Pamela acted as a bridesmaid to then-Princess Elizabeth at her 1947 wedding to Prince Philip, Duke of Edinburgh.
+As lady-in-waiting to Princess Elizabeth she was with her and the Duke of Edinburgh in Kenya when George VI died on 6 February 1952.
+In late 1953 and early 1954, she accompanied the Queen as lady-in-waiting on the royal tour to Jamaica, Panama, Fiji, Tonga, New Zealand, Australia, Ceylon, Aden, Libya, Malta and Gibraltar.
+Lady Pamela was the Corps Commandant of the Girls' Nautical Training Corps from around 1952 to around 1959.
+She attended the wedding of Prince Edward, Duke of Kent and Katharine Worsley in 1961.
+Marriage and children
 
-On 22 June 2002, Alexander married Claire Booth, a physician, at the Queen's Chapel, St James's Palace.
-Lady Ulster is a professor of Gene Therapy and Paediatric Immunology at University College London's Great Ormond Street Institute of Child Health.
-Alexander continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Lady Pamela is the widow of interior decorator and designer David Nightingale Hicks (25 March 1929 – 29 March 1998), son of stockbroker Herbert Hicks and Iris Elsie Platten.
+The bridesmaids were Princess Anne, Princess Clarissa of Hesse (daughter of her cousin Sophie), Victoria Marten (god-daughter of the bride), the Hon.
+Amanda Knatchbull (daughters of the bride's sister Patricia).
+Upon returning from honeymoon in the West Indies and New York, Lady Pamela learnt of the death of her mother in Jesselton in February 1960.
+Together, the couple had three children:
+
+
+David died on 29 March 1998, aged 69, from lung cancer.
+According to their daughter India, two ladies who knew David had been invited to the Grove by him shortly before his death.
+They were told by Lady Pamela that he had died a few hours ago (Hicks was lying ‘in state’ in his garden according to his instructions) but as they had driven from London, she invited them to have ‘a cup of tea’.
+Later life
+
+Lady Pamela has been a Director of H Securities Unlimited, a fund management and brokerage firm, since 1991.
+In 2007, Lady Pamela published her memoirs of her days in New Delhi and Simla, when India was partitioned into India and Pakistan and the Union Jack came down.
+She wrote in India Remembered: A Personal Account of the Mountbattens During the Transfer of Power that, while her mother, Countess Mountbatten of Burma, and Jawaharlal Nehru, the future Prime Minister of India, were deeply in love, "the relationship remained platonic", In 2012, she published the second volume of her memoirs titled Daughter of Empire:
+Life as a Mountbatten, chronicling her childhood, her time in India, and her time as lady-in-waiting to the Queen.
+After the death of her cousin, Prince Philip, Duke of Edinburgh in 2021, she is the last surviving great-grandchild of Princess Alice of the United Kingdom, and following the death of Queen Elizabeth II in September 2022, she became the oldest living descendant of Queen Victoria.
+With her daughter, India Hicks, she attended the Queen's state funeral on 19 September 2022.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +154,9 @@ Alexander continues to make public appearances at state events alongside other m
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +171,23 @@ Alexander continues to make public appearances at state events alongside other m
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +205,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +287,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +310,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +330,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +340,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +380,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,88 +479,320 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (780564b1-8376-44c5-bef6-c43a83805db5)
- Call ID: 780564b1-8376-44c5-bef6-c43a83805db5
-  Args:
-    type: :Man
-    source: Alexander_Windsor
-  AssignClass (4c32ba09-ec08-40db-be3f-61ed65d0b480)
- Call ID: 4c32ba09-ec08-40db-be3f-61ed65d0b480
+  AssignClass (d4d2ae2b-d21b-484b-85d2-487fb68f2501)
+ Call ID: d4d2ae2b-d21b-484b-85d2-487fb68f2501
   Args:
     type: :Person
-    source: Alexander_Windsor
-  AssignClass (fdeb0b15-966d-4e5f-a738-3250adda8221)
- Call ID: fdeb0b15-966d-4e5f-a738-3250adda8221
-  Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    type: :Man
-  AssignClass (f1fd2597-006d-4ec8-a938-9d166c615d5e)
- Call ID: f1fd2597-006d-4ec8-a938-9d166c615d5e
-  Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    type: :Person
-  AssignClass (80544cd5-2e18-426d-8bc5-9b8e2f829058)
- Call ID: 80544cd5-2e18-426d-8bc5-9b8e2f829058
-  Args:
-    source: Birgitte_Duchess_of_Gloucester
-    type: :Woman
-  AssignClass (677d76ce-ced0-43ad-bb26-4ab36048adc3)
- Call ID: 677d76ce-ced0-43ad-bb26-4ab36048adc3
-  Args:
-    source: Birgitte_Duchess_of_Gloucester
-    type: :Person
-  AssignClass (718ae724-ba16-42f1-8f38-f52b988839fb)
- Call ID: 718ae724-ba16-42f1-8f38-f52b988839fb
+    source: :Pamela_Hicks
+  AssignClass (178c84c7-0933-486c-8c3d-225be42986cd)
+ Call ID: 178c84c7-0933-486c-8c3d-225be42986cd
   Args:
     type: :Woman
-    source: Claire_Booth
-  AssignClass (1eb84095-23eb-4d7a-aee4-efb7905cc242)
- Call ID: 1eb84095-23eb-4d7a-aee4-efb7905cc242
+    source: :Pamela_Hicks
+  AddLiteral (5b2e2b90-8dec-43ef-b3ec-fdb734c8d109)
+ Call ID: 5b2e2b90-8dec-43ef-b3ec-fdb734c8d109
   Args:
-    type: :Person
-    source: Claire_Booth
-  AddLiteral (81e405d8-58a3-4d15-a2ed-e4b3aa756adb)
- Call ID: 81e405d8-58a3-4d15-a2ed-e4b3aa756adb
-  Args:
-    literal_value: Alex Ulster
-    literal_type: xsd:string
-    source: Alexander_Windsor
-    relation: :alsoKnownAs
-  AddLiteral (e07de706-adb8-4377-9914-e8ed9cb81227)
- Call ID: e07de706-adb8-4377-9914-e8ed9cb81227
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1974
-    source: Alexander_Windsor
+    source: :Pamela_Hicks
+    literal_value: 1929
     relation: :hasBirthYear
-  AddTriple (659b7b4a-f947-4cba-bf71-11d2af2eabcd)
- Call ID: 659b7b4a-f947-4cba-bf71-11d2af2eabcd
-  Args:
-    target: Prince_Richard_Duke_of_Gloucester
-    source: Alexander_Windsor
-    relation: :hasFather
-  AddTriple (322b580f-3509-47d0-b928-61ea8a9af5b5)
- Call ID: 322b580f-3509-47d0-b928-61ea8a9af5b5
-  Args:
-    source: Alexander_Windsor
-    relation: :hasMother
-    target: Birgitte_Duchess_of_Gloucester
-  AddLiteral (2de66a25-57b6-4c2f-994f-5793c694950b)
- Call ID: 2de66a25-57b6-4c2f-994f-5793c694950b
-  Args:
     literal_type: xsd:integer
-    literal_value: 2002
-    relation: :hasMarriageYear
-    source: Alexander_Windsor
-  AddTriple (05696083-c031-45ea-b986-8f432a761932)
- Call ID: 05696083-c031-45ea-b986-8f432a761932
+  AssignClass (aee0d27a-972e-4ff0-a6ea-6b33f6b38fd0)
+ Call ID: aee0d27a-972e-4ff0-a6ea-6b33f6b38fd0
   Args:
-    target: Claire_Booth
-    source: Alexander_Windsor
-    relation: :hasRelation
-  Finish (27b8fbb2-f211-4ee0-99bb-0817ab599515)
- Call ID: 27b8fbb2-f211-4ee0-99bb-0817ab599515
+    type: :Person
+    source: :Louis_Mountbatten
+  AssignClass (0379711f-af61-4a5d-afc7-eaaa6a799466)
+ Call ID: 0379711f-af61-4a5d-afc7-eaaa6a799466
   Args:
+    source: :Louis_Mountbatten
+    type: :Man
+  AssignClass (b1130502-5cf4-49a2-a5f4-2d8b97f36636)
+ Call ID: b1130502-5cf4-49a2-a5f4-2d8b97f36636
+  Args:
+    type: :Person
+    source: :Edwina_Ashley
+  AssignClass (16279f82-3c82-4b51-9f55-d34f62cb5d45)
+ Call ID: 16279f82-3c82-4b51-9f55-d34f62cb5d45
+  Args:
+    source: :Edwina_Ashley
+    type: :Woman
+  AddTriple (7140c097-b096-4cc6-b3c8-c267e85cb72d)
+ Call ID: 7140c097-b096-4cc6-b3c8-c267e85cb72d
+  Args:
+    relation: :hasFather
+    target: :Louis_Mountbatten
+    source: :Pamela_Hicks
+  AddTriple (9f34650e-60d3-41bb-811a-ab3f88e75d9d)
+ Call ID: 9f34650e-60d3-41bb-811a-ab3f88e75d9d
+  Args:
+    relation: :hasMother
+    source: :Pamela_Hicks
+    target: :Edwina_Ashley
+  AssignClass (8b94192c-567b-4b7f-b6b7-0047f2bb68ee)
+ Call ID: 8b94192c-567b-4b7f-b6b7-0047f2bb68ee
+  Args:
+    type: :Person
+    source: :Patricia_Mountbatten
+  AssignClass (3434bd0b-2eea-4957-b1ab-9441eb827916)
+ Call ID: 3434bd0b-2eea-4957-b1ab-9441eb827916
+  Args:
+    type: :Woman
+    source: :Patricia_Mountbatten
+  AddTriple (95ed22d3-229a-4054-af95-93015e535f23)
+ Call ID: 95ed22d3-229a-4054-af95-93015e535f23
+  Args:
+    source: :Pamela_Hicks
+    target: :Patricia_Mountbatten
+    relation: :isSisterOf
+  AssignClass (d633bd1b-43d4-4406-bf7b-914033b0a65a)
+ Call ID: d633bd1b-43d4-4406-bf7b-914033b0a65a
+  Args:
+    type: :Person
+    source: :David_Nightingale_Hicks
+  AssignClass (6db189a0-dfec-497d-b3de-2bf524c9852b)
+ Call ID: 6db189a0-dfec-497d-b3de-2bf524c9852b
+  Args:
+    source: :David_Nightingale_Hicks
+    type: :Man
+  AddLiteral (439fe6ef-1c0a-4274-b32b-68c1ba1c74f2)
+ Call ID: 439fe6ef-1c0a-4274-b32b-68c1ba1c74f2
+  Args:
+    source: :David_Nightingale_Hicks
+    literal_value: 1929
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (15ee19cf-d884-4b52-be9e-86b2fa020c35)
+ Call ID: 15ee19cf-d884-4b52-be9e-86b2fa020c35
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1998
+    source: :David_Nightingale_Hicks
+  AssignClass (cac9c9cf-62c8-42a9-b264-1e7aa21d8ad9)
+ Call ID: cac9c9cf-62c8-42a9-b264-1e7aa21d8ad9
+  Args:
+    source: :Herbert_Hicks
+    type: :Person
+  AssignClass (a38af49f-651a-4b4f-af68-e5cf9bdb0e02)
+ Call ID: a38af49f-651a-4b4f-af68-e5cf9bdb0e02
+  Args:
+    source: :Herbert_Hicks
+    type: :Man
+  AssignClass (5e0ef3ed-335b-4ba7-bd9e-ccc1d33d4532)
+ Call ID: 5e0ef3ed-335b-4ba7-bd9e-ccc1d33d4532
+  Args:
+    type: :Person
+    source: :Iris_Elsie_Platten
+  AssignClass (200d7fc9-1bf3-44fa-a8c8-f1c0d76b4cf3)
+ Call ID: 200d7fc9-1bf3-44fa-a8c8-f1c0d76b4cf3
+  Args:
+    source: :Iris_Elsie_Platten
+    type: :Woman
+  AddTriple (b96279dc-e6f6-47f8-a404-c7ae615e9ce9)
+ Call ID: b96279dc-e6f6-47f8-a404-c7ae615e9ce9
+  Args:
+    relation: :hasFather
+    target: :Herbert_Hicks
+    source: :David_Nightingale_Hicks
+  AddTriple (914ed007-ae07-44b5-a833-8e22709b589d)
+ Call ID: 914ed007-ae07-44b5-a833-8e22709b589d
+  Args:
+    relation: :hasMother
+    source: :David_Nightingale_Hicks
+    target: :Iris_Elsie_Platten
+  AssignClass (f456bd8d-616f-4213-af0d-9cd36a25c968)
+ Call ID: f456bd8d-616f-4213-af0d-9cd36a25c968
+  Args:
+    type: :Person
+    source: :India_Hicks
+  AssignClass (9ca6121b-5104-46f5-a2d7-6e2c41d359ae)
+ Call ID: 9ca6121b-5104-46f5-a2d7-6e2c41d359ae
+  Args:
+    type: :Woman
+    source: :India_Hicks
+  AddTriple (5d3729df-d679-47a3-8d20-b164141c34c8)
+ Call ID: 5d3729df-d679-47a3-8d20-b164141c34c8
+  Args:
+    relation: :isChildOf
+    target: :Pamela_Hicks
+    source: :India_Hicks
+  AddTriple (1fb97198-b0b0-414f-8246-8125f369379e)
+ Call ID: 1fb97198-b0b0-414f-8246-8125f369379e
+  Args:
+    target: :David_Nightingale_Hicks
+    source: :India_Hicks
+    relation: :isChildOf
+  AssignClass (aae14c03-cc4f-4c5f-af2e-4c6d6e5e527b)
+ Call ID: aae14c03-cc4f-4c5f-af2e-4c6d6e5e527b
+  Args:
+    type: :Person
+    source: :Prince_Philip
+  AssignClass (b6bdcba5-eba7-4198-a612-d5621e94d2f2)
+ Call ID: b6bdcba5-eba7-4198-a612-d5621e94d2f2
+  Args:
+    source: :Prince_Philip
+    type: :Man
+  AssignClass (74999f15-2543-421f-a9f2-1a4379419573)
+ Call ID: 74999f15-2543-421f-a9f2-1a4379419573
+  Args:
+    source: :Queen_Elizabeth_II
+    type: :Person
+  AssignClass (399221c0-4cbd-466b-b0cc-6f70a0b13161)
+ Call ID: 399221c0-4cbd-466b-b0cc-6f70a0b13161
+  Args:
+    source: :Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (1034ed2f-f854-46e6-8d80-6e555c0d959c)
+ Call ID: 1034ed2f-f854-46e6-8d80-6e555c0d959c
+  Args:
+    type: :Person
+    source: :Prince_Louis_of_Battenberg
+  AssignClass (3299974c-357d-42a3-9554-e06078503f63)
+ Call ID: 3299974c-357d-42a3-9554-e06078503f63
+  Args:
+    type: :Man
+    source: :Prince_Louis_of_Battenberg
+  AssignClass (60ed2d05-a60a-4a40-b710-7d4799872d8d)
+ Call ID: 60ed2d05-a60a-4a40-b710-7d4799872d8d
+  Args:
+    source: :Princess_Victoria_of_Hesse
+    type: :Person
+  AssignClass (c99ddc4a-701a-4e35-bc96-043c21220a24)
+ Call ID: c99ddc4a-701a-4e35-bc96-043c21220a24
+  Args:
+    type: :Woman
+    source: :Princess_Victoria_of_Hesse
+  AddTriple (5a07b008-cc42-47ad-ae67-702a567f0d21)
+ Call ID: 5a07b008-cc42-47ad-ae67-702a567f0d21
+  Args:
+    relation: :hasFather
+    target: :Prince_Louis_of_Battenberg
+    source: :Louis_Mountbatten
+  AddTriple (d1b0a8bf-04d9-4335-9745-bb5b448b15f1)
+ Call ID: d1b0a8bf-04d9-4335-9745-bb5b448b15f1
+  Args:
+    relation: :hasMother
+    target: :Princess_Victoria_of_Hesse
+    source: :Louis_Mountbatten
+  AssignClass (162bf767-0fb9-4847-b93f-70be20e6e5e2)
+ Call ID: 162bf767-0fb9-4847-b93f-70be20e6e5e2
+  Args:
+    source: :Baron_Mount_Temple
+    type: :Person
+  AssignClass (9b466bb9-8cf3-4ce0-ba8f-c1f1371a314e)
+ Call ID: 9b466bb9-8cf3-4ce0-ba8f-c1f1371a314e
+  Args:
+    type: :Man
+    source: :Baron_Mount_Temple
+  AddTriple (d3b446c1-0106-4b4b-bb82-f964360563d6)
+ Call ID: d3b446c1-0106-4b4b-bb82-f964360563d6
+  Args:
+    source: :Edwina_Ashley
+    target: :Baron_Mount_Temple
+    relation: :hasFather
+  ValidateShacl (6b45211b-ace1-4324-9e73-af5b65a3ae5d)
+ Call ID: 6b45211b-ace1-4324-9e73-af5b65a3ae5d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -499,90 +853,280 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Windsor a :Man,
-          :Person ;
-      :alsoKnownAs "Alex Ulster"^^xsd:string ;
-      :hasBirthYear 1974 ;
-      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-      :hasMarriageYear 2002 ;
-      :hasMother data:Birgitte_Duchess_of_Gloucester ;
-      :hasRelation data:Claire_Booth .
+  data:India_Hicks a :Person,
+          :Woman ;
+      :isChildOf data:David_Nightingale_Hicks,
+          data:Pamela_Hicks .
 
-  data:Birgitte_Duchess_of_Gloucester a :Person,
-          :Woman .
-
-  data:Claire_Booth a :Person,
-          :Woman .
-
-  data:Prince_Richard_Duke_of_Gloucester a :Man,
+  data:Prince_Philip a :Man,
           :Person .
 
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Baron_Mount_Temple a :Man,
+          :Person .
+
+  data:David_Nightingale_Hicks a :Man,
+          :Person ;
+      :hasBirthYear 1929 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Herbert_Hicks ;
+      :hasMother data:Iris_Elsie_Platten .
+
+  data:Edwina_Ashley a :Person,
+          :Woman ;
+      :hasFather data:Baron_Mount_Temple .
+
+  data:Herbert_Hicks a :Man,
+          :Person .
+
+  data:Iris_Elsie_Platten a :Person,
+          :Woman .
+
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :hasFather data:Prince_Louis_of_Battenberg ;
+      :hasMother data:Princess_Victoria_of_Hesse .
+
+  data:Pamela_Hicks a :Person,
+          :Woman ;
+      :hasBirthYear 1929 ;
+      :hasFather data:Louis_Mountbatten ;
+      :hasMother data:Edwina_Ashley ;
+      :isSisterOf data:Patricia_Mountbatten .
+
+  data:Patricia_Mountbatten a :Person,
+          :Woman .
+
+  data:Prince_Louis_of_Battenberg a :Man,
+          :Person .
+
+  data:Princess_Victoria_of_Hesse a :Person,
+          :Woman .
 
 
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (8f3a5b3e-319d-492e-b13b-48ec3ff11539)
- Call ID: 8f3a5b3e-319d-492e-b13b-48ec3ff11539
-  Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:27
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Richard_Duke_of_Gloucester, acting as the father of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Herbert_Hicks is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(Herbert_Hicks, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Birgitte_Duchess_of_Gloucester, acting as the mother of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Prince_Louis_of_Battenberg is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Richard_Duke_of_Gloucester, acting as the father of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Iris_Elsie_Platten is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(Iris_Elsie_Platten, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Birgitte_Duchess_of_Gloucester, acting as the mother of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Princess_Victoria_of_Hesse is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(Princess_Victoria_of_Hesse, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Richard_Duke_of_Gloucester, acting as the father of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Baron_Mount_Temple is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_Duke_of_Gloucester, :Ancestor)
+      AssignClass(Baron_Mount_Temple, :Ancestor)
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Louis_Mountbatten is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Herbert_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Herbert_Hicks, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Louis_of_Battenberg is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor)
+
+
+  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Birgitte_Duchess_of_Gloucester, acting as the mother of Alexander_Windsor, lacks the required class :Ancestor.
+      The value node Edwina_Ashley is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Birgitte_Duchess_of_Gloucester, :Ancestor)
+      AssignClass(Edwina_Ashley, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Iris_Elsie_Platten is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Iris_Elsie_Platten, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Victoria_of_Hesse is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Victoria_of_Hesse, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node David_Nightingale_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Nightingale_Hicks, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node Pamela_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pamela_Hicks, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Baron_Mount_Temple is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Baron_Mount_Temple, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Louis_Mountbatten is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Herbert_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Herbert_Hicks, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Louis_of_Battenberg is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Edwina_Ashley is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edwina_Ashley, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Iris_Elsie_Platten is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Iris_Elsie_Platten, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Victoria_of_Hesse is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Victoria_of_Hesse, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node David_Nightingale_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Nightingale_Hicks, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node Pamela_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pamela_Hicks, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Baron_Mount_Temple is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Baron_Mount_Temple, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Louis_Mountbatten is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Edwina_Ashley is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Edwina_Ashley, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node David_Nightingale_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Nightingale_Hicks, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value node Pamela_Hicks is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pamela_Hicks, :Ancestor)
 
 
 
@@ -591,19 +1135,82 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (146e9e12-0413-47a6-88ae-edce723f6db5)
- Call ID: 146e9e12-0413-47a6-88ae-edce723f6db5
+  AssignClass (0d0f53d5-84e0-413d-a967-52c5f758ecbc)
+ Call ID: 0d0f53d5-84e0-413d-a967-52c5f758ecbc
   Args:
-    source: Prince_Richard_Duke_of_Gloucester
+    source: :Herbert_Hicks
     type: :Ancestor
-  AssignClass (7e8fecd9-e65a-438a-8cb2-67ddfd735df7)
- Call ID: 7e8fecd9-e65a-438a-8cb2-67ddfd735df7
+  AssignClass (f84396c1-d937-401d-ac67-f6b39cbae7f4)
+ Call ID: f84396c1-d937-401d-ac67-f6b39cbae7f4
   Args:
-    source: Birgitte_Duchess_of_Gloucester
+    source: :Prince_Louis_of_Battenberg
     type: :Ancestor
-  Finish (4b1adeaa-21d9-450a-8c5b-90138069d665)
- Call ID: 4b1adeaa-21d9-450a-8c5b-90138069d665
+  AssignClass (15eaf4c4-48e9-46ed-a6ee-e3995beebe47)
+ Call ID: 15eaf4c4-48e9-46ed-a6ee-e3995beebe47
   Args:
+    type: :Ancestor
+    source: :Iris_Elsie_Platten
+  AssignClass (ecb70c3d-c2d8-4e45-9b14-a3790e8d2c04)
+ Call ID: ecb70c3d-c2d8-4e45-9b14-a3790e8d2c04
+  Args:
+    type: :Ancestor
+    source: :Princess_Victoria_of_Hesse
+  AssignClass (35b8e59b-d0e7-4d28-b9e9-ecbea355a29f)
+ Call ID: 35b8e59b-d0e7-4d28-b9e9-ecbea355a29f
+  Args:
+    type: :Ancestor
+    source: :Baron_Mount_Temple
+  AssignClass (ecca8ff9-676d-4e96-b7aa-fd33e1060975)
+ Call ID: ecca8ff9-676d-4e96-b7aa-fd33e1060975
+  Args:
+    type: :Ancestor
+    source: :Louis_Mountbatten
+  AssignClass (e989d36f-b733-4441-9724-eaa59c7e2580)
+ Call ID: e989d36f-b733-4441-9724-eaa59c7e2580
+  Args:
+    source: :Edwina_Ashley
+    type: :Ancestor
+  AssignClass (9f7f3415-1b7e-42f7-8250-2603b2fa1852)
+ Call ID: 9f7f3415-1b7e-42f7-8250-2603b2fa1852
+  Args:
+    source: :David_Nightingale_Hicks
+    type: :Ancestor
+  AssignClass (a1b941f7-482e-4c1e-941b-965ff9f2f7d2)
+ Call ID: a1b941f7-482e-4c1e-941b-965ff9f2f7d2
+  Args:
+    type: :Ancestor
+    source: :Pamela_Hicks
+  Finish (3be52db6-6ad4-4581-aa31-ba9c23499b57)
+ Call ID: 3be52db6-6ad4-4581-aa31-ba9c23499b57
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -616,25 +1223,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_Windsor a :Man,
-          :Person ;
-      :alsoKnownAs "Alex Ulster"^^xsd:string ;
-      :hasBirthYear 1974 ;
-      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-      :hasMarriageYear 2002 ;
-      :hasMother data:Birgitte_Duchess_of_Gloucester ;
-      :hasRelation data:Claire_Booth .
+  data:India_Hicks a :Person,
+          :Woman ;
+      :isChildOf data:David_Nightingale_Hicks,
+          data:Pamela_Hicks .
 
-  data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Baron_Mount_Temple a :Ancestor,
+          :Man,
+          :Person .
+
+  data:David_Nightingale_Hicks a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1929 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Herbert_Hicks ;
+      :hasMother data:Iris_Elsie_Platten .
+
+  data:Edwina_Ashley a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Baron_Mount_Temple .
+
+  data:Herbert_Hicks a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Iris_Elsie_Platten a :Ancestor,
           :Person,
           :Woman .
 
-  data:Claire_Booth a :Person,
+  data:Louis_Mountbatten a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Louis_of_Battenberg ;
+      :hasMother data:Princess_Victoria_of_Hesse .
+
+  data:Pamela_Hicks a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1929 ;
+      :hasFather data:Louis_Mountbatten ;
+      :hasMother data:Edwina_Ashley ;
+      :isSisterOf data:Patricia_Mountbatten .
+
+  data:Patricia_Mountbatten a :Person,
           :Woman .
 
-  data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+  data:Prince_Louis_of_Battenberg a :Ancestor,
           :Man,
           :Person .
+
+  data:Princess_Victoria_of_Hesse a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -646,8 +1294,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (aa3bae64-24a1-4f37-8cee-9bc1533b64a4)
- Call ID: aa3bae64-24a1-4f37-8cee-9bc1533b64a4
+  ValidateShacl (453ea966-9cfb-4cd0-afbe-0ef68efe71c4)
+ Call ID: 453ea966-9cfb-4cd0-afbe-0ef68efe71c4
   Args:
 
 ================================= Tool Message =================================
@@ -658,6 +1306,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ab4d4b94-b051-496f-a635-966057ac6da8)
- Call ID: ab4d4b94-b051-496f-a635-966057ac6da8
+  Finish (6b5fc8ad-d8ea-4539-9b16-45d0c5ab8090)
+ Call ID: 6b5fc8ad-d8ea-4539-9b16-45d0c5ab8090
   Args:

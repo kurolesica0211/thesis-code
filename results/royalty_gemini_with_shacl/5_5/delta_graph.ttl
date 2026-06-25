@@ -2,9 +2,6 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Hamilton_Joseph_Keyes_OMalley a :Man,
-        :Person .
-
 data:Robin_Alexander_Bryan a :Man,
         :Person ;
     :hasMother data:Iris_Mountbatten .
@@ -12,6 +9,7 @@ data:Robin_Alexander_Bryan a :Man,
 data:William_Alexander_Kemp a :Man,
         :Person ;
     :hasFather data:Clarence_Arthur_Kemp ;
+    :hasMarriageYear 1965 ;
     :hasMother data:Helen_Janet_Ballantyne .
 
 data:Zinnia_Rosemary_Denison a :Person,
@@ -20,13 +18,13 @@ data:Zinnia_Rosemary_Denison a :Person,
 
 data:Alexander_Mountbatten a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice .
 
 data:Clarence_Arthur_Kemp a :Ancestor,
         :Man,
         :Person .
-
-data:Female a :Sex .
 
 data:Francis_William_Henry_Fane a :Ancestor,
         :Man,
@@ -44,7 +42,7 @@ data:Helen_Janet_Ballantyne a :Ancestor,
 data:Hugo_William_Cecil_Denison a :Ancestor,
         :Man,
         :Person ;
-    :isBrotherOf data:Irene_Denison .
+    :isBrotherOf data:Irene_Frances_Adza_Denison .
 
 data:Iris_Mountbatten a :Ancestor,
         :Person,
@@ -52,16 +50,21 @@ data:Iris_Mountbatten a :Ancestor,
     :hasBirthYear 1920 ;
     :hasDeathYear 1982 ;
     :hasFather data:Alexander_Mountbatten ;
-    :hasMarriageYear 1941,
-        1965 ;
-    :hasMother data:Irene_Denison ;
-    :hasSex data:Female .
+    :hasMother data:Irene_Frances_Adza_Denison .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Beatrice a :Ancestor,
+        :Person,
+        :Woman .
 
 data:William_Francis_Henry_Denison a :Ancestor,
         :Man,
         :Person .
 
-data:Irene_Denison a :Ancestor,
+data:Irene_Frances_Adza_Denison a :Ancestor,
         :Person,
         :Woman ;
     :hasFather data:William_Francis_Henry_Denison ;

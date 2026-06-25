@@ -69,30 +69,89 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Countess Adelaide of Lippe-Biesterfeld (22 June 1870 – 3 September 1948) was the eldest child of Ernest II, Count of Lippe-Biesterfeld and Countess Karoline von Wartensleben.
-Family and early life
+King Juan Carlos IQueen Sofía
 
-Adelaide was born on 22 June 1870 to Ernest II, Count of Lippe-Biesterfeld and his wife, Countess Karoline von Wartensleben.
-After the death of Woldemar, Prince of Lippe in 1895, her parents were involved in a regency and succession dispute to the principality of Lippe.
-Consequently, two branches of the House of Lippe argued over rights to a regency.
-Prince Adolf of Schaumburg-Lippe, a brother-in-law of Wilhelm II, German Emperor was chosen, but a court-settlement allowed Ernest to become the regent of Lippe-Detmold on 17 July 1897.
+
+The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+
+
+The Dowager Duchess of Calabria
+
+
+The Duchess of Montpensier
+
+
+The Count of ÉvreuxThe Countess of Évreux
+
+
+Princess Béatrice
+
+
+The Duke of OrléansThe Duchess of Orléans
+
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+The Duke of CalabriaThe Duchess of Calabria
+
+
+Princess Anne of Bourbon-Two Sicilies, Dowager Duchess of Calabria (Anne Marguerite Brigitte Marie; born 4 December 1938), born Princess Anne  of Orléans, is the widow of Infante Carlos, Duke of Calabria.
+She is the third daughter and fifth child of Henri, Count of Paris, Orléanist claimant to the defunct French throne, and his wife Princess Isabelle of Orléans-Braganza.
+Biography
+
+Princess Anne of Orléans was born on 4 December 1938 at Woluwe-Saint-Pierre, Belgium, to Henri, Count of Paris, claimant to the French throne, and Princess Isabelle of Orléans-Braganza.
+At the time, the family was residing at Manoir d'Anjou, a 15-hectare estate in the Belgian town.
+Since her marriage, Princess Anne has accompanied her husband, and now son, on official engagements on behalf of the Sacred Military Constantinian Order of Saint George.
+Due to the close friendship and familial relationship between her husband and King Juan Carlos, Princess Anne and her husband were viewed as extended members of the Spanish royal family.
+The Duchess of Calabria occasionally undertakes official engagements on behalf of the Spanish monarchy.
 Marriage and issue
 
-At Neudorf, Adelaide married Prince Friedrich Johann of Saxe-Meiningen, son of Georg II, Duke of Saxe-Meiningen, on 24 April 1889.
-They had six children together:
+Princess Anne became romantically involved with Prince Carlos, Duke of Noto, son and heir of Infante Alfonso, Duke of Calabria, whom she had known since childhood, at the wedding of the future King Juan Carlos I of Spain and Princess Sophia of Greece and Denmark in Athens in 1962.
+The Count of Paris initially withheld his consent to the match as he supported the claim of Prince Ranieri, Duke of Castro to the defunct throne of the Kingdom of the Two Sicilies.
+Eventually, after years of waiting and the death of Prince Carlos's father, the Count of Paris relented and the engagement was announced.
+The 250 guests received one of two different invitations from either the bride's parents or the groom's; the former referred to the bride's marriage to "HRH Prince Carlos of Bourbon," while the latter announced the wedding of "Princess Anne of France" to the "Duke of Calabria.
+The following day, on 12 May, the religious marriage was held at the Chapelle royale de Dreux, the traditional marriage and burial place of the House of Orléans.
+The Duke and Duchess of Calabria made their home in Spain.
+They remained married for 50 years until the Duke's death on 5 October 2015.
+Anne was titled HRH
+The Dowager Duchess of Calabria only after the death of her mother-in-law, Infanta Alicia, Duchess of Calabria, in 2017; from 2015 to 2017 she was officially addressed as HRH Infanta Anne, Duchess of Calabria.
+The Duke and Duchess of Calabria had five children:
 
 
-Role in Lippe succession dispute
+Honours
 
-Two branches of the House of Lippe debated over rights to the principality of Lippe-Detmold.
-As Adelaide's great-grandmother was a member of the lower nobility (Modeste Christiane von Unruh) and has one quarter commoner ancestry, her family's claim to full royalty was challenged.
-This claim threatened the succession to Saxe-Meiningen, as Adelaide was married to the Duke of Saxe-Meiningen's heir apparent; were her father deemed a lesser royal status, it might be thought that her own claim was not equal enough for her husband's family.
+Arms
+
+Ancestors
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +167,9 @@ This claim threatened the succession to Saxe-Meiningen, as Adelaide was married 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +184,23 @@ This claim threatened the succession to Saxe-Meiningen, as Adelaide was married 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +218,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +300,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +323,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +343,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +353,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +393,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,76 +492,111 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9bfeb25c-1a42-4726-85c2-2ff5af751b80)
- Call ID: 9bfeb25c-1a42-4726-85c2-2ff5af751b80
+  AssignClass (bac1b340-613b-40c4-9378-c8fabe961763)
+ Call ID: bac1b340-613b-40c4-9378-c8fabe961763
   Args:
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Adelaide_of_Lippe-Biesterfeld
-  AssignClass (53e4d584-0673-4c7a-8e16-991372321ba2)
- Call ID: 53e4d584-0673-4c7a-8e16-991372321ba2
+  AssignClass (3e741360-5cee-43b1-a9d8-74dd0dddbe19)
+ Call ID: 3e741360-5cee-43b1-a9d8-74dd0dddbe19
   Args:
-    type: :Man
-    source: Ernest_II_of_Lippe-Biesterfeld
-  AssignClass (c54da208-eed2-4bfd-8130-3b2c2ad16cc2)
- Call ID: c54da208-eed2-4bfd-8130-3b2c2ad16cc2
-  Args:
-    type: :Woman
-    source: Karoline_von_Wartensleben
-  AssignClass (4107aa61-dddb-419f-accc-a20569c045db)
- Call ID: 4107aa61-dddb-419f-accc-a20569c045db
-  Args:
-    type: :Man
-    source: Friedrich_Johann_of_Saxe-Meiningen
-  AssignClass (c78d4490-1f5b-4992-9117-2892d9d0f333)
- Call ID: c78d4490-1f5b-4992-9117-2892d9d0f333
-  Args:
-    type: :Man
-    source: Georg_II_of_Saxe-Meiningen
-  AddLiteral (16108a45-883f-4adb-a910-3a24526f69a7)
- Call ID: 16108a45-883f-4adb-a910-3a24526f69a7
+    type: :Person
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
+  AddLiteral (671ee3b2-ed90-40ba-bbae-222f4092b2a5)
+ Call ID: 671ee3b2-ed90-40ba-bbae-222f4092b2a5
   Args:
     relation: :hasBirthYear
-    literal_value: 1870
     literal_type: xsd:integer
-    source: Adelaide_of_Lippe-Biesterfeld
-  AddLiteral (45ffabbf-d158-48d7-ba08-d122e3fbdfee)
- Call ID: 45ffabbf-d158-48d7-ba08-d122e3fbdfee
+    literal_value: 1938
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
+  AssignClass (bfeaf024-576c-4b7a-a667-e38569331549)
+ Call ID: bfeaf024-576c-4b7a-a667-e38569331549
   Args:
-    source: Adelaide_of_Lippe-Biesterfeld
-    literal_type: xsd:integer
-    literal_value: 1948
-    relation: :hasDeathYear
-  AddTriple (12813288-46d1-435d-80b9-b4cd80aed511)
- Call ID: 12813288-46d1-435d-80b9-b4cd80aed511
+    type: :Man
+    source: Henri_Count_of_Paris
+  AssignClass (f93d189c-cd93-4d84-9e19-e7f4ebf7be97)
+ Call ID: f93d189c-cd93-4d84-9e19-e7f4ebf7be97
   Args:
-    target: Ernest_II_of_Lippe-Biesterfeld
+    source: Henri_Count_of_Paris
+    type: :Person
+  AssignClass (905e18e4-c4b1-455e-bf6d-d8e6cbedb4f1)
+ Call ID: 905e18e4-c4b1-455e-bf6d-d8e6cbedb4f1
+  Args:
+    type: :Woman
+    source: Princess_Isabelle_of_Orléans-Braganza
+  AssignClass (465f0ebf-5755-44bb-9a7f-66479407b704)
+ Call ID: 465f0ebf-5755-44bb-9a7f-66479407b704
+  Args:
+    type: :Person
+    source: Princess_Isabelle_of_Orléans-Braganza
+  AddTriple (c94ef1ff-a1c1-4571-8777-a54f99299b73)
+ Call ID: c94ef1ff-a1c1-4571-8777-a54f99299b73
+  Args:
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    source: Adelaide_of_Lippe-Biesterfeld
-  AddTriple (1edd72c0-4e45-4bd8-b220-84a2054efbcd)
- Call ID: 1edd72c0-4e45-4bd8-b220-84a2054efbcd
+    target: Henri_Count_of_Paris
+  AddTriple (791702a2-1b20-4df4-b679-a6da19b0f19e)
+ Call ID: 791702a2-1b20-4df4-b679-a6da19b0f19e
   Args:
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
+    target: Princess_Isabelle_of_Orléans-Braganza
     relation: :hasMother
-    source: Adelaide_of_Lippe-Biesterfeld
-    target: Karoline_von_Wartensleben
-  AddTriple (570c89d7-fa48-43b3-8e9a-e283325838e3)
- Call ID: 570c89d7-fa48-43b3-8e9a-e283325838e3
+  AssignClass (cca0c23b-8fda-4003-b256-6dc00ebdd122)
+ Call ID: cca0c23b-8fda-4003-b256-6dc00ebdd122
   Args:
-    target: Georg_II_of_Saxe-Meiningen
-    source: Friedrich_Johann_of_Saxe-Meiningen
-    relation: :hasFather
-  AddLiteral (8709bc4b-73db-4930-a020-cc2d8112a14f)
- Call ID: 8709bc4b-73db-4930-a020-cc2d8112a14f
+    source: Infante_Carlos_Duke_of_Calabria
+    type: :Man
+  AssignClass (8e943e1f-a377-4ec3-abf6-ac9a1e17db9a)
+ Call ID: 8e943e1f-a377-4ec3-abf6-ac9a1e17db9a
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1889
-    literal_type: xsd:integer
-    source: Adelaide_of_Lippe-Biesterfeld
-  AddTriple (52a61587-b236-4fea-82f0-9fdbe8572a81)
- Call ID: 52a61587-b236-4fea-82f0-9fdbe8572a81
+    source: Infante_Carlos_Duke_of_Calabria
+    type: :Person
+  AddTriple (962ff37d-2e1d-4915-94e4-9fd880be1d21)
+ Call ID: 962ff37d-2e1d-4915-94e4-9fd880be1d21
   Args:
-    source: Adelaide_of_Lippe-Biesterfeld
+    target: Infante_Carlos_Duke_of_Calabria
     relation: :hasRelation
-    target: Friedrich_Johann_of_Saxe-Meiningen
-  Finish (f8cba407-3303-41b8-8dec-b6b8ea9f8299)
- Call ID: f8cba407-3303-41b8-8dec-b6b8ea9f8299
+    source: Princess_Anne_of_Bourbon-Two_Sicilies
+  AddLiteral (76b0aa9c-7a58-4c42-b556-dbb90b96fdeb)
+ Call ID: 76b0aa9c-7a58-4c42-b556-dbb90b96fdeb
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2015
+    literal_type: xsd:integer
+    source: Infante_Carlos_Duke_of_Calabria
+  AssignClass (2c221293-dab8-4583-959e-c02385bf1607)
+ Call ID: 2c221293-dab8-4583-959e-c02385bf1607
+  Args:
+    type: :Man
+    source: Infante_Alfonso_Duke_of_Calabria
+  AssignClass (9b3fe0dd-e3b5-457b-af76-fe35b9d73305)
+ Call ID: 9b3fe0dd-e3b5-457b-af76-fe35b9d73305
+  Args:
+    type: :Person
+    source: Infante_Alfonso_Duke_of_Calabria
+  AddTriple (74f97e5c-330f-4236-9dfd-30d6afeeacdd)
+ Call ID: 74f97e5c-330f-4236-9dfd-30d6afeeacdd
+  Args:
+    relation: :hasFather
+    target: Infante_Alfonso_Duke_of_Calabria
+    source: Infante_Carlos_Duke_of_Calabria
+  AssignClass (25d1d2d9-4fdf-4982-99c3-2899a24d2b2f)
+ Call ID: 25d1d2d9-4fdf-4982-99c3-2899a24d2b2f
+  Args:
+    source: Infanta_Alicia_Duchess_of_Calabria
+    type: :Woman
+  AssignClass (0ad6b9b1-93bd-4aed-9fd6-dedbd88afd4c)
+ Call ID: 0ad6b9b1-93bd-4aed-9fd6-dedbd88afd4c
+  Args:
+    type: :Person
+    source: Infanta_Alicia_Duchess_of_Calabria
+  AddLiteral (aaee15ce-607c-4e3e-bcd5-002dd32439ba)
+ Call ID: aaee15ce-607c-4e3e-bcd5-002dd32439ba
+  Args:
+    source: Infanta_Alicia_Duchess_of_Calabria
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2017
+  Finish (c8e89820-d992-4085-ba8b-f6c73aec14f5)
+ Call ID: c8e89820-d992-4085-ba8b-f6c73aec14f5
   Args:

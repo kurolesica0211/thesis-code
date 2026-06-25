@@ -69,27 +69,25 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Daisy Isadora Louise Knatchbull (born 5 October 1992) is a British fashion designer, businesswoman and founder of Knatchbull (formerly The Deck), the first female-only tailor on Savile Row.
-Early life and family
-
-Knatchbull was born on 5 October 1992 to the Hon.
-Philip Knatchbull (born 1961) and Atalanta Cowan (born 1962).
-She has two younger half-brothers from her father's second marriage to Wendy Leach (born 1966), including Frederick "Freddy" Knatchbull (born 2003), known for his appearance on Made in Chelsea.
-Knatchbull was educated at Benenden School and graduated with a Bachelor of Arts in philosophy from the University of Leeds in 2015.
-In April 2026, Knatchbull and music executive Giovanni Damiani announced their engagement.
+Sophie Franziska Maria Germaine Habsburg also known as Archduchess Sophie of Austria (born 19 January 1959) is a French-born Italian designer, German aristocrat and former model.
 Career
 
-Knatchbull worked as assistant to the fashion director of The Sunday Times Style magazine and as communications director at H. Huntsman & Sons.
-In 2017, Knatchbull gained press attention for wearing a morning suit in the Royal Enclosure at Royal Ascot.
-In 2019, Knatchbull launched Knatchbull, the first female-only tailor to have a shopfront on Savile Row.
-In October 2024, The Deck rebranded as Knatchbull.
-Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess of York, Adjoa Andoh, Elizabeth Hurley, Jodie Whittaker, Melanie C and Olivia Arben.
+Sophie Habsburg was born in Paris on 19 January 1959, the daughter of Archduke Ferdinand Karl Max of Austria and Countess Helene of Törring-Jettenbach.
+She descends from the House of Habsburg-Lorraine, which reigned over Austria-Hungary until its deposition in 1918.
+Ancestry
+
+Through her maternal grandmother, Princess Elizabeth of Greece and Denmark, Sophie is a first cousin once removed of: Prince Edward, Duke of Kent, Princess Alexandra, The Honourable Lady Ogilvy, Prince Michael of Kent and Princess Elizabeth of Yugoslavia.
+Habsburg is a second cousin once removed of Queen Sofía of Spain and King Charles III, making Sophie a third cousin of Felipe VI of Spain and William, Prince of Wales.
+, Sophie Habsburg married Mariano Hugo, Prince of Windisch-Graetz, member of the House of Windisch-Graetz.
+They had three children, one of whom, Alexis Ferdinand, died in a car accident in 2010.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +103,9 @@ Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +120,23 @@ Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +154,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +236,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +259,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +279,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +289,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +329,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,178 +428,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (412169a9-d579-4658-a3a7-e91e7f5ddbbf)
- Call ID: 412169a9-d579-4658-a3a7-e91e7f5ddbbf
+  AssignClass (aa3a1478-7f74-406b-93af-a9300e6f6b4c)
+ Call ID: aa3a1478-7f74-406b-93af-a9300e6f6b4c
   Args:
+    source: Sophie_Habsburg
     type: :Woman
-    source: Daisy_Isadora_Louise_Knatchbull
-  AssignClass (0b3ff40c-414d-433d-a498-fe228a9152ef)
- Call ID: 0b3ff40c-414d-433d-a498-fe228a9152ef
+  AssignClass (07f61e86-a4c8-42de-9a8d-d3c8c3ddc838)
+ Call ID: 07f61e86-a4c8-42de-9a8d-d3c8c3ddc838
   Args:
     type: :Person
-    source: Daisy_Isadora_Louise_Knatchbull
-  AddLiteral (5d375c15-e279-4a49-aa4a-29acdc68ac89)
- Call ID: 5d375c15-e279-4a49-aa4a-29acdc68ac89
+    source: Sophie_Habsburg
+  AddLiteral (60fb3f99-5441-4dde-abdb-1f9255c11486)
+ Call ID: 60fb3f99-5441-4dde-abdb-1f9255c11486
   Args:
-    literal_value: 1992
-    literal_type: xsd:integer
-    source: Daisy_Isadora_Louise_Knatchbull
+    literal_value: 1959
     relation: :hasBirthYear
-  AssignClass (994d5b43-02e1-4611-b18e-e7ea275c3575)
- Call ID: 994d5b43-02e1-4611-b18e-e7ea275c3575
+    literal_type: xsd:integer
+    source: Sophie_Habsburg
+  AddTriple (e720c5bb-53cf-494f-93d5-f0bf8cc2b90c)
+ Call ID: e720c5bb-53cf-494f-93d5-f0bf8cc2b90c
   Args:
-    source: Philip_Knatchbull
+    target: Archduchess_Sophie_of_Austria
+    relation: :alsoKnownAs
+    source: Sophie_Habsburg
+  AssignClass (8c44059c-020b-4a2b-969c-c808270ec40a)
+ Call ID: 8c44059c-020b-4a2b-969c-c808270ec40a
+  Args:
+    source: Ferdinand_Karl_Max_of_Austria
     type: :Man
-  AssignClass (78865ed2-d18d-44af-b34b-0703e2182981)
- Call ID: 78865ed2-d18d-44af-b34b-0703e2182981
+  AssignClass (5105f660-d120-4d90-a9c0-ac6d94c650f9)
+ Call ID: 5105f660-d120-4d90-a9c0-ac6d94c650f9
   Args:
-    source: Philip_Knatchbull
+    source: Ferdinand_Karl_Max_of_Austria
     type: :Person
-  AssignClass (87c1e6db-1e49-4611-9dd8-cada4eafdbcf)
- Call ID: 87c1e6db-1e49-4611-9dd8-cada4eafdbcf
+  AssignClass (080f9804-a66f-46d6-b108-2bf422859d3c)
+ Call ID: 080f9804-a66f-46d6-b108-2bf422859d3c
   Args:
-    type: :Ancestor
-    source: Philip_Knatchbull
-  AddLiteral (8d222cd9-adce-4d4a-825d-a6e50552aa6e)
- Call ID: 8d222cd9-adce-4d4a-825d-a6e50552aa6e
-  Args:
-    relation: :hasBirthYear
-    source: Philip_Knatchbull
-    literal_value: 1961
-    literal_type: xsd:integer
-  AssignClass (041c330d-a680-4702-9608-67b73d8a1d58)
- Call ID: 041c330d-a680-4702-9608-67b73d8a1d58
-  Args:
+    source: Helene_of_Törring-Jettenbach
     type: :Woman
-    source: Atalanta_Cowan
-  AssignClass (7dbb4d9a-0531-4c24-b441-319a4dc2df65)
- Call ID: 7dbb4d9a-0531-4c24-b441-319a4dc2df65
+  AssignClass (a24d8933-2ae1-44f9-8299-361a617e5509)
+ Call ID: a24d8933-2ae1-44f9-8299-361a617e5509
   Args:
-    source: Atalanta_Cowan
+    source: Helene_of_Törring-Jettenbach
     type: :Person
-  AssignClass (853d26de-d3b2-4908-a02a-45475aaf2587)
- Call ID: 853d26de-d3b2-4908-a02a-45475aaf2587
+  AddTriple (2b49f244-8ff3-41fa-ac07-756e936b228b)
+ Call ID: 2b49f244-8ff3-41fa-ac07-756e936b228b
   Args:
-    type: :Ancestor
-    source: Atalanta_Cowan
-  AddLiteral (6f9d936b-f247-434b-919f-98ff2d8abea6)
- Call ID: 6f9d936b-f247-434b-919f-98ff2d8abea6
-  Args:
-    relation: :hasBirthYear
-    source: Atalanta_Cowan
-    literal_type: xsd:integer
-    literal_value: 1962
-  AddTriple (3cf02d83-976b-4daa-baaa-249c8919c0cd)
- Call ID: 3cf02d83-976b-4daa-baaa-249c8919c0cd
-  Args:
+    target: Ferdinand_Karl_Max_of_Austria
     relation: :hasFather
-    target: Philip_Knatchbull
-    source: Daisy_Isadora_Louise_Knatchbull
-  AddTriple (70134d20-7fe4-40cb-a22b-c741ae6c5bdb)
- Call ID: 70134d20-7fe4-40cb-a22b-c741ae6c5bdb
-  Args:
-    source: Daisy_Isadora_Louise_Knatchbull
-    relation: :hasMother
-    target: Atalanta_Cowan
-  AssignClass (0248c696-edc6-4893-a48a-2f151ae18954)
- Call ID: 0248c696-edc6-4893-a48a-2f151ae18954
-  Args:
-    source: Wendy_Leach
-    type: :Woman
-  AssignClass (90da09e4-eccf-4e88-97f6-e98fa317665a)
- Call ID: 90da09e4-eccf-4e88-97f6-e98fa317665a
-  Args:
-    source: Wendy_Leach
-    type: :Person
-  AddLiteral (1ce1355f-95a4-4935-b74d-633e94412a1d)
- Call ID: 1ce1355f-95a4-4935-b74d-633e94412a1d
-  Args:
-    relation: :hasBirthYear
-    source: Wendy_Leach
-    literal_value: 1966
-    literal_type: xsd:integer
-  AssignClass (f25690f4-ee57-4b64-8660-c3c81d50b699)
- Call ID: f25690f4-ee57-4b64-8660-c3c81d50b699
-  Args:
-    type: :Man
-    source: Frederick_Freddy_Knatchbull
-  AssignClass (e5e35617-6e08-4826-91d9-115475719da5)
- Call ID: e5e35617-6e08-4826-91d9-115475719da5
-  Args:
-    type: :Person
-    source: Frederick_Freddy_Knatchbull
-  AddLiteral (4dccdd5f-0d62-4a61-b2a2-b27ef839cc56)
- Call ID: 4dccdd5f-0d62-4a61-b2a2-b27ef839cc56
-  Args:
-    source: Frederick_Freddy_Knatchbull
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 2003
-  AddTriple (aec88b97-7b35-4f73-8b48-c374254ddaf1)
- Call ID: aec88b97-7b35-4f73-8b48-c374254ddaf1
-  Args:
-    target: Freddy
-    relation: :knownAs
-    source: Frederick_Freddy_Knatchbull
-  AddTriple (d4645d4b-5a75-4ec8-961c-3f8c49be1c11)
- Call ID: d4645d4b-5a75-4ec8-961c-3f8c49be1c11
-  Args:
-    target: Philip_Knatchbull
-    relation: :hasFather
-    source: Frederick_Freddy_Knatchbull
-  AddTriple (776a5089-4eba-4980-91f4-49fbd308e336)
- Call ID: 776a5089-4eba-4980-91f4-49fbd308e336
+    source: Sophie_Habsburg
+  AddTriple (50a43a0b-b987-487b-b667-30427d33ef79)
+ Call ID: 50a43a0b-b987-487b-b667-30427d33ef79
   Args:
     relation: :hasMother
-    target: Wendy_Leach
-    source: Frederick_Freddy_Knatchbull
-  AddTriple (952c8a73-b3d5-4f1e-9ddd-c2f5f66cfd8d)
- Call ID: 952c8a73-b3d5-4f1e-9ddd-c2f5f66cfd8d
+    target: Helene_of_Törring-Jettenbach
+    source: Sophie_Habsburg
+  AssignClass (13b09fd3-4ceb-4934-adf2-da65b1b4c5f1)
+ Call ID: 13b09fd3-4ceb-4934-adf2-da65b1b4c5f1
   Args:
-    source: Daisy_Isadora_Louise_Knatchbull
-    target: Frederick_Freddy_Knatchbull
-    relation: :hasBrother
-  AssignClass (87575c51-c561-448c-81af-42cca3efe09e)
- Call ID: 87575c51-c561-448c-81af-42cca3efe09e
-  Args:
-    source: Giovanni_Damiani
     type: :Man
-  AssignClass (97a6f94a-e266-4ad0-a449-45631d21a473)
- Call ID: 97a6f94a-e266-4ad0-a449-45631d21a473
+    source: Mariano_Hugo_of_Windisch-Graetz
+  AssignClass (92398187-a916-4b14-82c4-ef13508e2176)
+ Call ID: 92398187-a916-4b14-82c4-ef13508e2176
   Args:
     type: :Person
-    source: Giovanni_Damiani
-  Finish (ec4e7aaa-0fff-480a-8d27-ce561cf44836)
- Call ID: ec4e7aaa-0fff-480a-8d27-ce561cf44836
+    source: Mariano_Hugo_of_Windisch-Graetz
+  AddTriple (0818e355-b6c9-4043-9e11-99093edf6eb7)
+ Call ID: 0818e355-b6c9-4043-9e11-99093edf6eb7
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: Mariano_Hugo_of_Windisch-Graetz
+    relation: :hasRelation
+    source: Sophie_Habsburg
+  AssignClass (94393617-b5a5-4ecc-88cc-a318399a05f6)
+ Call ID: 94393617-b5a5-4ecc-88cc-a318399a05f6
+  Args:
+    type: :Man
+    source: Alexis_Ferdinand
+  AssignClass (b294bcb0-b024-43fe-83ea-984bb5ecfae1)
+ Call ID: b294bcb0-b024-43fe-83ea-984bb5ecfae1
+  Args:
+    source: Alexis_Ferdinand
+    type: :Person
+  AddTriple (1cc5047e-97f1-4803-9f37-787619d331fa)
+ Call ID: 1cc5047e-97f1-4803-9f37-787619d331fa
+  Args:
+    source: Alexis_Ferdinand
+    target: Sophie_Habsburg
+    relation: :isChildOf
+  AddTriple (57b8525d-d4b5-4047-80f5-3dcb73d0cda4)
+ Call ID: 57b8525d-d4b5-4047-80f5-3dcb73d0cda4
+  Args:
+    relation: :isChildOf
+    target: Mariano_Hugo_of_Windisch-Graetz
+    source: Alexis_Ferdinand
+  AddLiteral (c08653e7-e3aa-4341-ba1b-99a7c2608594)
+ Call ID: c08653e7-e3aa-4341-ba1b-99a7c2608594
+  Args:
+    source: Alexis_Ferdinand
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2010
+  Finish (2008468c-9565-4dd0-bd5d-5741753332b6)
+ Call ID: 2008468c-9565-4dd0-bd5d-5741753332b6
+  Args:
 
 ================================= Tool Message =================================
 
@@ -588,36 +607,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Daisy_Isadora_Louise_Knatchbull a :Person,
-          :Woman ;
-      :hasBirthYear 1992 ;
-      :hasBrother data:Frederick_Freddy_Knatchbull ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Atalanta_Cowan .
+  data:Alexis_Ferdinand a :Man,
+          :Person ;
+      :hasDeathYear 2010 ;
+      :isChildOf data:Mariano_Hugo_of_Windisch-Graetz,
+          data:Sophie_Habsburg .
 
-  data:Giovanni_Damiani a :Man,
+  data:Ferdinand_Karl_Max_of_Austria a :Man,
           :Person .
 
-  data:Atalanta_Cowan a :Ancestor,
-          :Person,
+  data:Helene_of_T%C3%B6rring-Jettenbach a :Person,
+          :Woman .
+
+  data:Sophie_Habsburg a :Person,
           :Woman ;
-      :hasBirthYear 1962 .
+      :alsoKnownAs data:Archduchess_Sophie_of_Austria ;
+      :hasBirthYear 1959 ;
+      :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+      :hasMother data:Helene_of_T%C3%B6rring-Jettenbach ;
+      :hasRelation data:Mariano_Hugo_of_Windisch-Graetz .
 
-  data:Frederick_Freddy_Knatchbull a :Man,
-          :Person ;
-      :hasBirthYear 2003 ;
-      :hasFather data:Philip_Knatchbull ;
-      :hasMother data:Wendy_Leach ;
-      :knownAs data:Freddy .
-
-  data:Wendy_Leach a :Person,
-          :Woman ;
-      :hasBirthYear 1966 .
-
-  data:Philip_Knatchbull a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1961 .
+  data:Mariano_Hugo_of_Windisch-Graetz a :Man,
+          :Person .
 
 
 
@@ -627,7 +638,7 @@ The final data graph after all the edits:
 Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
 
 **Classless Nodes:**
-['Freddy']
+['Archduchess_Sophie_of_Austria']
 
 ### Required Correction
 According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
@@ -643,11 +654,11 @@ Proceed with the necessary tool calls now.
 
 []
 Tool Calls:
-  AssignClass (21f3a74c-da0e-4092-8525-2be059d04f1e)
- Call ID: 21f3a74c-da0e-4092-8525-2be059d04f1e
+  AssignClass (16b17d96-f19d-4622-a57e-182125f82f95)
+ Call ID: 16b17d96-f19d-4622-a57e-182125f82f95
   Args:
-    source: Freddy
+    source: Archduchess_Sophie_of_Austria
     type: :Person
-  Finish (56ac1d38-fadf-4553-b0ff-3ceb6d2f4196)
- Call ID: 56ac1d38-fadf-4553-b0ff-3ceb6d2f4196
+  Finish (0f5c4418-3b27-45dc-ac99-7bfc14351f6e)
+ Call ID: 0f5c4418-3b27-45dc-ac99-7bfc14351f6e
   Args:

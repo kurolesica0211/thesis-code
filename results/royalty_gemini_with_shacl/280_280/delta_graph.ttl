@@ -2,43 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_de_las_Mercedes_of_Bavaria a :Person,
+data:Beatrice_of_Orleans_Borbon a :Person,
         :Woman ;
-    :hasBirthYear 1911 ;
-    :hasBrother data:Jose_Eugenio,
-        data:Luis_Alfonso ;
-    :hasDeathYear 1953 ;
-    :hasFather data:Ferdinand_of_Bavaria ;
-    :hasMarriageYear 1946 ;
-    :hasMother data:Maria_Teresa_of_Spain ;
-    :hasRelation data:Irakli_Bagration_of_Mukhrani ;
-    :hasSister data:Maria_del_Pilar .
+    :isAuntOf data:Vladimir_Kirillovich_of_Russia .
 
-data:Ferdinand_of_Bavaria a :Ancestor,
+data:Maria_Kirillovna a :Person,
+        :Woman ;
+    :hasFather data:Cyril_Vladimirovich ;
+    :hasMother data:Viktoria_Feodorovna .
+
+data:Maria_Vladimirovna a :Person,
+        :Woman ;
+    :hasFather data:Vladimir_Kirillovich_of_Russia ;
+    :hasMother data:Leonida_Georgievna_Bagration_Moukhransky .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Ancestor,
         :Man,
-        :Person .
-
-data:Irakli_Bagration_of_Mukhrani a :Man,
         :Person ;
-    :hasSister data:Leonida .
+    :hasMother data:Queen_Victoria .
 
-data:Jose_Eugenio a :Man,
-        :Person .
-
-data:Leonida a :Person,
-        :Woman ;
-    :hasRelation data:Vladimir_Kirillovich .
-
-data:Luis_Alfonso a :Man,
-        :Person .
-
-data:Maria_Teresa_of_Spain a :Ancestor,
+data:Leonida_Georgievna_Bagration_Moukhransky a :Ancestor,
         :Person,
         :Woman .
 
-data:Maria_del_Pilar a :Person,
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
         :Woman .
 
-data:Vladimir_Kirillovich a :Man,
+data:Marie_Alexandrovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man,
         :Person .
+
+data:Cyril_Vladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna .
+
+data:Viktoria_Feodorovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Marie_Alexandrovna_of_Russia .
+
+data:Vladimir_Kirillovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1992 ;
+    :hasFather data:Cyril_Vladimirovich ;
+    :hasMarriageYear "1948"^^xsd:string ;
+    :hasMother data:Viktoria_Feodorovna .
 

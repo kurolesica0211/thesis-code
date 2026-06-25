@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FerdinandII ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :isAncestorOf data:FerdinandPius ;
+    :isBloodrelationOf data:FerdinandII ;
+    :isBrotherOf data:FerdinandII ;
+    :isSiblingOf data:FerdinandII .
+
+data:AlfonsoCountOfCaserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoCountOfCaserta ;
+    :hasChild data:FerdinandPius ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :hasSon data:FerdinandPius ;
+    :isAncestorOf data:FerdinandPius ;
+    :isBloodrelationOf data:AlfonsoCountOfCaserta ;
+    :isBrotherOf data:AlfonsoCountOfCaserta ;
+    :isFatherOf data:FerdinandPius ;
+    :isParentOf data:FerdinandPius ;
+    :isSiblingOf data:AlfonsoCountOfCaserta ;
+    :isUncleOf data:FerdinandPius .
+
+data:LudwigIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LudwigIII ;
+    :hasChild data:MariaLudwigaTheresia ;
+    :hasDaughter data:MariaLudwigaTheresia ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :isAncestorOf data:MariaLudwigaTheresia ;
+    :isBloodrelationOf data:LudwigIII ;
+    :isBrotherOf data:LudwigIII ;
+    :isFatherOf data:MariaLudwigaTheresia ;
+    :isParentOf data:MariaLudwigaTheresia ;
+    :isSiblingOf data:LudwigIII ;
+    :isUncleOf data:MariaLudwigaTheresia .
+
+data:MariaAntonietta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FerdinandPius ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :hasSister data:MariaAntonietta ;
+    :hasSon data:FerdinandPius ;
+    :isAncestorOf data:FerdinandPius ;
+    :isAuntOf data:FerdinandPius ;
+    :isBloodrelationOf data:MariaAntonietta ;
+    :isMotherOf data:FerdinandPius ;
+    :isParentOf data:FerdinandPius ;
+    :isSiblingOf data:MariaAntonietta ;
+    :isSisterOf data:MariaAntonietta .
+
+data:MariaLudwigaTheresia a :Person,
+        :Woman ;
+    :hasAncestor data:LudwigIII ;
+    :hasFather data:LudwigIII ;
+    :hasParent data:LudwigIII ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :hasSister data:MariaLudwigaTheresia ;
+    :isBloodrelationOf data:MariaLudwigaTheresia ;
+    :isChildOf data:LudwigIII ;
+    :isDaughterOf data:LudwigIII ;
+    :isSiblingOf data:MariaLudwigaTheresia ;
+    :isSisterOf data:MariaLudwigaTheresia .
+
+data:FerdinandPius a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:MariaAntonietta ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:FerdinandPius ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasParent data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:LudwigIII,
+        data:MariaAntonietta,
+        data:MariaLudwigaTheresia ;
+    :isBloodrelationOf data:FerdinandPius ;
+    :isBrotherOf data:FerdinandPius ;
+    :isChildOf data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta ;
+    :isSiblingOf data:FerdinandPius ;
+    :isSonOf data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta .
+

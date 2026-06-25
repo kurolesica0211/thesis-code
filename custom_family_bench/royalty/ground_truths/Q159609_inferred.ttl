@@ -1,0 +1,251 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "2186:2199"^^xsd:string,
+        "2192:2199"^^xsd:string,
+        "4110:4123"^^xsd:string,
+        "4116:4123"^^xsd:string ;
+    data:posIndicesPart "2564:2575"^^xsd:string,
+        "4032:4043"^^xsd:string,
+        "4249:4260"^^xsd:string,
+        "4933:4944"^^xsd:string,
+        "5647:5658"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen"^^xsd:string ;
+    data:posIndicesFull "812:855"^^xsd:string,
+        "821:855"^^xsd:string ;
+    data:posIndicesPart "1107:1110"^^xsd:string,
+        "1111:1118"^^xsd:string,
+        "1956:1959"^^xsd:string,
+        "1960:1967"^^xsd:string ;
+    data:wdtLink wdt:Q2099997 ;
+    :alsoKnownAs "Gösta Julie Adelheid Marion Marie von Amsberg"^^xsd:string,
+        "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen"^^xsd:string,
+        "Gösta von Amsberg"^^xsd:string,
+        "Gösta von dem Bussche-Haddenhausen"^^xsd:string ;
+    :hasChild data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isAuntOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isBloodrelationOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSiblingOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "250:263"^^xsd:string ;
+    data:posIndicesPart "1677:1684"^^xsd:string,
+        "1856:1863"^^xsd:string,
+        "2104:2111"^^xsd:string,
+        "2350:2357"^^xsd:string,
+        "2523:2530"^^xsd:string,
+        "2564:2575"^^xsd:string,
+        "377:384"^^xsd:string,
+        "4032:4043"^^xsd:string,
+        "4157:4164"^^xsd:string,
+        "4190:4201"^^xsd:string,
+        "4249:4260"^^xsd:string,
+        "4933:4944"^^xsd:string,
+        "517:528"^^xsd:string,
+        "5647:5658"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Claus Felix von Amsberg"^^xsd:string ;
+    data:posIndicesFull "774:797"^^xsd:string ;
+    data:posIndicesPart "1191:1196"^^xsd:string,
+        "1417:1422"^^xsd:string,
+        "1522:1527"^^xsd:string,
+        "1658:1663"^^xsd:string,
+        "1846:1851"^^xsd:string,
+        "2458:2463"^^xsd:string,
+        "2474:2479"^^xsd:string,
+        "2597:2602"^^xsd:string,
+        "2810:2815"^^xsd:string,
+        "3065:3070"^^xsd:string,
+        "3267:3272"^^xsd:string,
+        "3424:3429"^^xsd:string,
+        "3473:3478"^^xsd:string,
+        "3711:3716"^^xsd:string,
+        "3851:3856"^^xsd:string,
+        "4088:4093"^^xsd:string,
+        "4309:4314"^^xsd:string,
+        "4459:4464"^^xsd:string,
+        "4711:4716"^^xsd:string,
+        "4949:4954"^^xsd:string,
+        "4988:4993"^^xsd:string,
+        "5114:5119"^^xsd:string,
+        "5206:5211"^^xsd:string,
+        "5370:5375"^^xsd:string,
+        "5482:5487"^^xsd:string,
+        "899:906"^^xsd:string ;
+    data:wdtLink wdt:Q2439092 ;
+    :alsoKnownAs "Klaus Felix von Amsberg"^^xsd:string ;
+    :hasBrother data:Claus_Felix_von_Amsberg ;
+    :hasChild data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isAncestorOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isBloodrelationOf data:Claus_Felix_von_Amsberg ;
+    :isBrotherOf data:Claus_Felix_von_Amsberg ;
+    :isFatherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isParentOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSiblingOf data:Claus_Felix_von_Amsberg ;
+    :isUncleOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Man,
+        :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "0:53"^^xsd:string,
+        "580:631"^^xsd:string,
+        "60:111"^^xsd:string ;
+    data:posIndicesPart "1191:1196"^^xsd:string,
+        "1417:1422"^^xsd:string,
+        "1522:1527"^^xsd:string,
+        "1658:1663"^^xsd:string,
+        "1846:1851"^^xsd:string,
+        "2458:2463"^^xsd:string,
+        "2474:2479"^^xsd:string,
+        "2564:2575"^^xsd:string,
+        "2597:2602"^^xsd:string,
+        "2810:2815"^^xsd:string,
+        "3065:3070"^^xsd:string,
+        "3267:3272"^^xsd:string,
+        "3417:3423"^^xsd:string,
+        "3424:3429"^^xsd:string,
+        "3473:3478"^^xsd:string,
+        "367:372"^^xsd:string,
+        "3711:3716"^^xsd:string,
+        "3851:3856"^^xsd:string,
+        "4032:4043"^^xsd:string,
+        "4088:4093"^^xsd:string,
+        "4190:4201"^^xsd:string,
+        "4249:4260"^^xsd:string,
+        "4286:4292"^^xsd:string,
+        "4293:4300"^^xsd:string,
+        "4302:4308"^^xsd:string,
+        "4309:4314"^^xsd:string,
+        "4459:4464"^^xsd:string,
+        "4711:4716"^^xsd:string,
+        "479:484"^^xsd:string,
+        "4933:4944"^^xsd:string,
+        "4949:4954"^^xsd:string,
+        "4981:4987"^^xsd:string,
+        "4988:4993"^^xsd:string,
+        "503:509"^^xsd:string,
+        "5114:5119"^^xsd:string,
+        "517:528"^^xsd:string,
+        "5206:5211"^^xsd:string,
+        "5363:5369"^^xsd:string,
+        "5370:5375"^^xsd:string,
+        "5475:5481"^^xsd:string,
+        "5482:5487"^^xsd:string,
+        "5633:5639"^^xsd:string,
+        "5647:5658"^^xsd:string,
+        "5686:5692"^^xsd:string ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg"^^xsd:string,
+        "Claus von Amsberg"^^xsd:string,
+        "Claus, Prince Consort of the Netherlands"^^xsd:string,
+        "Klaus von Amsberg"^^xsd:string,
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg"^^xsd:string,
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg"^^xsd:string ;
+    :hasAncestor data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasBrother data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isChildOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSonOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg .
+

@@ -1,0 +1,454 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincePierreMurat a :Man ;
+    :hasBrother data:PrincePierreMurat ;
+    :hasRelation data:PrincePierreMurat,
+        data:PrincessIsabella ;
+    :isBloodrelationOf data:PrincePierreMurat ;
+    :isBrotherOf data:PrincePierreMurat ;
+    :isSiblingOf data:PrincePierreMurat .
+
+data:PrincessIsabella a :Woman ;
+    :hasRelation data:PrincePierreMurat,
+        data:PrincessIsabella ;
+    :hasSister data:PrincessIsabella ;
+    :isBloodrelationOf data:PrincessIsabella ;
+    :isSiblingOf data:PrincessIsabella ;
+    :isSisterOf data:PrincessIsabella .
+
+data:MarinaKarella a :Woman ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:MarinaKarella ;
+    :isBloodrelationOf data:MarinaKarella ;
+    :isSiblingOf data:MarinaKarella ;
+    :isSisterOf data:MarinaKarella .
+
+data:PrinceAimoneOfSavoyAosta a :Man ;
+    :hasBrother data:PrinceAimoneOfSavoyAosta ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:PrinceAimoneOfSavoyAosta ;
+    :isBrotherOf data:PrinceAimoneOfSavoyAosta ;
+    :isSiblingOf data:PrinceAimoneOfSavoyAosta .
+
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :hasSon data:PrinceChristopherOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isAuntOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :isMotherOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isParentOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isSiblingOf data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :isSisterOf data:GrandDuchessOlgaConstantinovnaOfRussia .
+
+data:IsabelleDOrleans a :Ancestor,
+        :Woman ;
+    :hasChild data:FrancoiseDOrleans ;
+    :hasDaughter data:FrancoiseDOrleans ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:IsabelleDOrleans ;
+    :isAncestorOf data:FrancoiseDOrleans,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isAuntOf data:FrancoiseDOrleans ;
+    :isBloodrelationOf data:IsabelleDOrleans ;
+    :isMotherOf data:FrancoiseDOrleans ;
+    :isParentOf data:FrancoiseDOrleans ;
+    :isSiblingOf data:IsabelleDOrleans ;
+    :isSisterOf data:IsabelleDOrleans .
+
+data:KingChristianIXOfDenmark a :Ancestor,
+        :Man ;
+    :hasBrother data:KingChristianIXOfDenmark ;
+    :hasChild data:KingGeorgeIOfGreece ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSon data:KingGeorgeIOfGreece ;
+    :isAncestorOf data:KingGeorgeIOfGreece,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:KingChristianIXOfDenmark ;
+    :isBrotherOf data:KingChristianIXOfDenmark ;
+    :isFatherOf data:KingGeorgeIOfGreece ;
+    :isParentOf data:KingGeorgeIOfGreece ;
+    :isSiblingOf data:KingChristianIXOfDenmark ;
+    :isUncleOf data:KingGeorgeIOfGreece .
+
+data:PrinceHenriCountOfParis a :Man ;
+    :hasAncestor data:JeanDOrleansDucDeGuise ;
+    :hasBrother data:PrinceHenriCountOfParis ;
+    :hasFather data:JeanDOrleansDucDeGuise ;
+    :hasParent data:JeanDOrleansDucDeGuise ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:FrancoiseDOrleans ;
+    :isBloodrelationOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isBrotherOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isChildOf data:JeanDOrleansDucDeGuise ;
+    :isSiblingOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isSonOf data:JeanDOrleansDucDeGuise ;
+    :isUncleOf data:PrinceMichaelOfGreeceAndDenmark .
+
+data:JeanDOrleansDucDeGuise a :Ancestor,
+        :Man ;
+    :hasBrother data:JeanDOrleansDucDeGuise ;
+    :hasChild data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :hasDaughter data:FrancoiseDOrleans ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSon data:PrinceHenriCountOfParis ;
+    :isAncestorOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:JeanDOrleansDucDeGuise ;
+    :isBrotherOf data:JeanDOrleansDucDeGuise ;
+    :isFatherOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isParentOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isSiblingOf data:JeanDOrleansDucDeGuise ;
+    :isUncleOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man ;
+    :hasAncestor data:KingChristianIXOfDenmark ;
+    :hasBrother data:KingGeorgeIOfGreece ;
+    :hasChild data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasFather data:KingChristianIXOfDenmark ;
+    :hasParent data:KingChristianIXOfDenmark ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSon data:PrinceChristopherOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:KingGeorgeIOfGreece ;
+    :isBrotherOf data:KingGeorgeIOfGreece ;
+    :isChildOf data:KingChristianIXOfDenmark ;
+    :isFatherOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isParentOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isSiblingOf data:KingGeorgeIOfGreece ;
+    :isSonOf data:KingChristianIXOfDenmark ;
+    :isUncleOf data:PrinceChristopherOfGreeceAndDenmark .
+
+data:PrincessAlexandraOfGreece a :Woman ;
+    :hasAncestor data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasMother data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasParent data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isChildOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isDaughterOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isSisterOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece .
+
+data:PrincessOlgaOfGreece a :Woman ;
+    :hasAncestor data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasMother data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasParent data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isChildOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isDaughterOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isSisterOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece .
+
+data:PrinceChristopherOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :hasAncestor data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece ;
+    :hasBirthYear 1888 ;
+    :hasBrother data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasChild data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasDaughter data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasDeathYear 1940 ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMother data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :hasParent data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSon data:PrinceMichaelOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isChildOf data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :isFatherOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isParentOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceChristopherOfGreeceAndDenmark ;
+    :isSonOf data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :isUncleOf data:PrinceMichaelOfGreeceAndDenmark .
+
+data:FrancoiseDOrleans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:PrinceHenriCountOfParis ;
+    :hasChild data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasDaughter data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasDeathYear 1953 ;
+    :hasFather data:JeanDOrleansDucDeGuise ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:IsabelleDOrleans ;
+    :hasParent data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:FrancoiseDOrleans ;
+    :hasSon data:PrinceMichaelOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isAuntOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isBloodrelationOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isChildOf data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise ;
+    :isDaughterOf data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise ;
+    :isMotherOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isParentOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSiblingOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis ;
+    :isSisterOf data:FrancoiseDOrleans,
+        data:PrinceHenriCountOfParis .
+
+data:PrinceMichaelOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Woman ;
+    :hasAncestor data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:PrinceMichaelOfGreeceAndDenmark ;
+    :hasChild data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasDaughter data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasDeathYear 2024 ;
+    :hasFather data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasMother data:FrancoiseDOrleans ;
+    :hasParent data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :hasRelation data:FrancoiseDOrleans,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:IsabelleDOrleans,
+        data:JeanDOrleansDucDeGuise,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:MarinaKarella,
+        data:PrinceAimoneOfSavoyAosta,
+        data:PrinceChristopherOfGreeceAndDenmark,
+        data:PrinceHenriCountOfParis,
+        data:PrinceMichaelOfGreeceAndDenmark,
+        data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :hasSister data:PrinceMichaelOfGreeceAndDenmark ;
+    :isAncestorOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isAuntOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isBloodrelationOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isChildOf data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :isDaughterOf data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark ;
+    :isMotherOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isParentOf data:PrincessAlexandraOfGreece,
+        data:PrincessOlgaOfGreece ;
+    :isSiblingOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSisterOf data:PrinceMichaelOfGreeceAndDenmark ;
+    :isSonOf data:FrancoiseDOrleans,
+        data:PrinceChristopherOfGreeceAndDenmark .
+

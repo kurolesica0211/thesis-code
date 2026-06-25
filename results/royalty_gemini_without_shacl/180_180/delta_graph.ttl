@@ -2,32 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Philip_Duke_of_Edinburgh a :Man,
-        :Person ;
-    :isBrotherOf data:Sophie_of_Greece_and_Denmark .
+data:Anne_Bowes-Lyon a :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1980 ;
+    :isMotherOf data:Thomas_Patrick_John_Anson .
 
-data:Wolfgang_of_Hesse a :Man,
-        :Person ;
-    :isUncleOf data:Karl_Adolf_Andreas_of_Hesse .
+data:Elizabeth_Georgiana_Anson a :Woman ;
+    :hasBirthYear 1941 ;
+    :hasDeathYear 2020 ;
+    :isSisterOf data:Thomas_Patrick_John_Anson .
 
-data:Charles_III_of_the_United_Kingdom a :Man,
-        :Person .
+data:Julian_Asquith a :Man ;
+    :isFatherOf data:Annunziata_Asquith .
 
-data:Christoph_of_Hesse a :Man,
-        :Person .
+data:Robert_Grosvenor a :Man ;
+    :isFatherOf data:Leonora_Grosvenor .
 
-data:George_William_of_Hanover a :Man,
-        :Person .
+data:Thomas_Edward_Anson a :Man ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1960 ;
+    :isFatherOf data:Thomas_William_Arnold_Anson .
 
-data:Karl_Adolf_Andreas_of_Hesse a :Man,
-        :Person ;
-    :hasBirthYear 1937 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Christoph_of_Hesse ;
-    :hasMother data:Sophie_of_Greece_and_Denmark ;
-    :isBloodrelationOf data:Charles_III_of_the_United_Kingdom .
+data:Thomas_William_Arnold_Anson a :Man ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958 ;
+    :isFatherOf data:Thomas_Patrick_John_Anson .
 
-data:Sophie_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasRelation data:George_William_of_Hanover .
+data:Annunziata_Asquith a :Woman .
+
+data:Leonora_Grosvenor a :Woman .
+
+data:Thomas_Patrick_John_Anson a :Man ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2005 ;
+    :hasMarriageYear 1975 ;
+    :hasRelation data:Annunziata_Asquith,
+        data:Leonora_Grosvenor ;
+    :knownAs "Patrick Lichfield"^^xsd:string .
 

@@ -2,43 +2,72 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Georg_von_Habsburg a :Man,
-        :Person ;
-    :hasBirthYear "1964"^^xsd:positiveInteger ;
-    :hasMarriageYear data:Eilika_of_Oldenburg,
-        "1997"^^xsd:positiveInteger ;
-    :hasSex data:Male .
-
-data:Eilika_of_Oldenburg a :Person,
-        :Woman ;
-    :hasBirthYear "1972"^^xsd:positiveInteger ;
-    :hasSex data:Female ;
-    :isDaughterOf data:Ilka_of_Ortenburg,
-        data:Johann_of_Oldenburg .
-
-data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+data:Heather_Tonkin a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isMotherOf data:Felicity_Wade .
 
-data:Ilka_of_Ortenburg a :Ancestor,
+data:Isla_Elizabeth_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :isBrotherOf data:Anne_Princess_Royal .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Anne_Princess_Royal .
+
+data:Queen_Elizabeth_II a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isMotherOf data:Anne_Princess_Royal .
 
-data:Johann_of_Oldenburg a :Ancestor,
+data:Sandy_Pflueger a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Stephanie_Phillips .
+
+data:Savannah_Anne_Kathleen_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal ;
+    :isSisterOf data:Peter_Phillips .
+
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Autumn_Kelly a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Peter_Phillips a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
-        data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg .
+    :hasBirthYear "1977"^^xsd:positiveInteger ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear "2008"^^xsd:positiveInteger ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly .
 
-data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
+data:Mark_Phillips a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Anne_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman .
 

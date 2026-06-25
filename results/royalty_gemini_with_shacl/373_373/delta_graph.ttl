@@ -2,23 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wilhelm_Eitel_Friedrich_of_Prussia a :Man,
+data:David_Henry_George_Lascelles a :Man,
         :Person ;
-    :hasBirthYear 1883 ;
-    :hasDeathYear 1942 ;
-    :hasFather data:Wilhelm_II_of_Germany ;
-    :hasMarriageYear 1906 ;
-    :hasMother data:Augusta_Viktoria_of_Schleswig_Holstein ;
-    :hasRelation data:Sophia_Charlotte_of_Oldenburg .
+    :hasBirthYear 1950 ;
+    :hasFather data:7th_Earl_of_Harewood ;
+    :hasMarriageYear 1979,
+        1990 ;
+    :hasMother data:Marion_Stein ;
+    :hasRelation data:Diane_Howse,
+        data:Margaret_Rosalind_Messenger .
 
-data:Augusta_Viktoria_of_Schleswig_Holstein a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Sophia_Charlotte_of_Oldenburg a :Person,
-        :Woman .
-
-data:Wilhelm_II_of_Germany a :Ancestor,
+data:7th_Earl_of_Harewood a :Ancestor,
         :Man,
         :Person .
+
+data:Diane_Howse a :Person,
+        :Woman .
+
+data:Edgar_Frank_Messenger a :Ancestor,
+        :Man,
+        :Person .
+
+data:Margaret_Rosalind_Messenger a :Person,
+        :Woman ;
+    :hasFather data:Edgar_Frank_Messenger .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman .
 

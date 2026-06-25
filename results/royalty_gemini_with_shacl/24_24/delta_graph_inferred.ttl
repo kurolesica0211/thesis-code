@@ -1,0 +1,114 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:Heinrich_Borwin_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1942 ;
+    :hasRelation data:Heinrich_Borwin_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Heinrich_Borwin_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Heinrich_Borwin_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Heinrich_Borwin_of_Mecklenburg-Schwerin .
+
+data:Joseph_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Joseph_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1889 ;
+    :hasRelation data:Joseph_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Joseph_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Joseph_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Joseph_of_Mecklenburg-Schwerin .
+
+data:Maria_Luise_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1883 ;
+    :hasRelation data:Maria_Luise_of_Mecklenburg-Schwerin ;
+    :hasSister data:Maria_Luise_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Maria_Luise_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Maria_Luise_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Maria_Luise_of_Mecklenburg-Schwerin .
+
+data:Paul_Friedrich_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Paul_Friedrich_of_Mecklenburg ;
+    :hasRelation data:Paul_Friedrich_of_Mecklenburg ;
+    :isBloodrelationOf data:Paul_Friedrich_of_Mecklenburg ;
+    :isBrotherOf data:Paul_Friedrich_of_Mecklenburg ;
+    :isSiblingOf data:Paul_Friedrich_of_Mecklenburg .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
+
+data:Marie_of_Windisch-Graetz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasSister data:Marie_of_Windisch-Graetz ;
+    :isAncestorOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_of_Windisch-Graetz ;
+    :isMotherOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_of_Windisch-Graetz ;
+    :isSisterOf data:Marie_of_Windisch-Graetz .
+
+data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Paul_Frederick_of_Mecklenburg ;
+    :hasChild data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isAncestorOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Paul_Frederick_of_Mecklenburg ;
+    :isFatherOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+
+data:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :alsoKnownAs "Manette"^^xsd:string ;
+    :hasAncestor data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Paul_Frederick_of_Mecklenburg ;
+    :hasMother data:Marie_of_Windisch-Graetz ;
+    :hasParent data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin,
+        data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasSister data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isDaughterOf data:Marie_of_Windisch-Graetz,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Marie_Antoinette_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Marie_Antoinette_of_Mecklenburg-Schwerin .
+

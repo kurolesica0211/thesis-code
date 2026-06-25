@@ -69,16 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Irene de Todos los Santos Urdangarin y de Borbón (born 5 June 2005) is a member of the Spanish royal family.
-Irene is the fourth child and only daughter of Infanta Cristina, and her former husband Iñaki Urdangarin.
-As a granddaughter of King Juan Carlos I, she is tenth in the line of succession to the Spanish throne.
-She is in a relationship with Juan Urquijo, a grandson of Princess Teresa, Duchess of Salerno .
+Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau (German: Franz Ulrich Johannes Clemens Christophorus Antonius Bonaventura Maria Fürst Kinsky von Wchinitz und Tettau; 7 October 1936 – 2 April 2009) was the titular Prince Kinsky of Wchinitz and Tettau as well the head of an ancient House of Kinsky.
+Early life
+
+Franz Ulrich was born at Vienna, Federal State of Austria, as the youngest son of Ulrich, 10th Prince Kinsky of Wchinitz and Tettau by his second marriage to Baroness Marie Julia Mathilde von dem Bussche-Haddenhausen (1900–1974), the eldest daughter of Baron Hilmar von dem Bussche-Haddenhausen.
+Franz Ulrich became the titular Prince upon the death of his father in 1938.
+He was first cousin of Countess Marie Aglaë Kinsky of Wchinitz and Tettau who later became Princess consort of Liechtenstein, and second cousin of Claus von Amsberg, Prince consort of Queen Beatrix of the Netherlands, both descendants of Baron Julius von dem Bussche-Haddenhausen.
+In 1942, Franz Ulrich inherited several estates from the Kinsky family, including the Kinsky Palace in Old Town Square in Prague.
+Starting in 2003, Franz Ulrich complained against various Czech courts for the return of the assets.
+Marriage and family
+
+Franz Ulrich married on 14 April 1965 in Buenos Aires to Roberta Cavanagh (1942–2002), daughter of Roberto Cavanagh and his wife, Anne Rowell.
+After Kinsky's death, his son and his widow, Countess Helena Victoria Hutten-Czapska entered a legal dispute over Kinsky's properties.
+Later life
+
+The Prince died on 2 April 2009, aged 72.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -94,39 +107,9 @@ She is in a relationship with Juan Urquijo, a grandson of Princess Teresa, Duche
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -141,6 +124,23 @@ She is in a relationship with Juan Urquijo, a grandson of Princess Teresa, Duche
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -158,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -225,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -268,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -276,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -314,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -329,103 +432,143 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (861d4025-8188-42d5-b5c1-7c43eea7a2a9)
- Call ID: 861d4025-8188-42d5-b5c1-7c43eea7a2a9
+  AssignClass (bbd2759a-c9a8-4db3-98f2-6bacaac77f85)
+ Call ID: bbd2759a-c9a8-4db3-98f2-6bacaac77f85
   Args:
-    type: :Person
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-  AssignClass (35eadae4-9dc9-4876-ac8d-6e032d8961ae)
- Call ID: 35eadae4-9dc9-4876-ac8d-6e032d8961ae
-  Args:
-    type: :Woman
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-  AssignClass (984dbce4-ca16-4624-8aef-15f2e250abd1)
- Call ID: 984dbce4-ca16-4624-8aef-15f2e250abd1
-  Args:
-    source: :Infanta_Cristina
-    type: :Person
-  AssignClass (ceca4e17-03a1-4195-b371-3c0e2a858e1d)
- Call ID: ceca4e17-03a1-4195-b371-3c0e2a858e1d
-  Args:
-    source: :Infanta_Cristina
-    type: :Woman
-  AssignClass (2bc3b28a-1e5d-4263-940c-d29e7d1c6259)
- Call ID: 2bc3b28a-1e5d-4263-940c-d29e7d1c6259
-  Args:
-    type: :Person
-    source: :Inaki_Urdangarin
-  AssignClass (40985287-e07e-4bdb-a5de-1a1c26ce7788)
- Call ID: 40985287-e07e-4bdb-a5de-1a1c26ce7788
-  Args:
-    source: :Inaki_Urdangarin
+    source: Franz_Ulrich_Kinsky
     type: :Man
-  AssignClass (908aee48-d15d-4733-a4e7-b5cc7b3277ef)
- Call ID: 908aee48-d15d-4733-a4e7-b5cc7b3277ef
+  AssignClass (7fec0be4-456a-407a-8d01-11f58d808e08)
+ Call ID: 7fec0be4-456a-407a-8d01-11f58d808e08
   Args:
     type: :Person
-    source: :King_Juan_Carlos_I
-  AssignClass (8f03878b-ba59-40d2-bab7-5dffa3f275ec)
- Call ID: 8f03878b-ba59-40d2-bab7-5dffa3f275ec
+    source: Franz_Ulrich_Kinsky
+  AddLiteral (914e9b33-d14e-4deb-95db-55fe68fcfeed)
+ Call ID: 914e9b33-d14e-4deb-95db-55fe68fcfeed
   Args:
-    type: :Man
-    source: :King_Juan_Carlos_I
-  AssignClass (209a264f-6ece-48ff-b678-8e1b4c87e305)
- Call ID: 209a264f-6ece-48ff-b678-8e1b4c87e305
-  Args:
-    type: :Person
-    source: :Juan_Urquijo
-  AssignClass (c91228a4-c5a5-4b5d-9097-7e6a09be2648)
- Call ID: c91228a4-c5a5-4b5d-9097-7e6a09be2648
-  Args:
-    source: :Juan_Urquijo
-    type: :Man
-  AssignClass (3a0e956b-6f05-48c5-92b8-a11aee369a3f)
- Call ID: 3a0e956b-6f05-48c5-92b8-a11aee369a3f
-  Args:
-    type: :Person
-    source: :Princess_Teresa_Duchess_of_Salerno
-  AssignClass (25152d18-da7a-4c22-adc2-fa9ccc29ffac)
- Call ID: 25152d18-da7a-4c22-adc2-fa9ccc29ffac
-  Args:
-    source: :Princess_Teresa_Duchess_of_Salerno
-    type: :Woman
-  AddLiteral (589bca99-6d47-4a2c-b8ef-b09eb11aa94c)
- Call ID: 589bca99-6d47-4a2c-b8ef-b09eb11aa94c
-  Args:
-    literal_value: 2005
-    literal_type: xsd:integer
+    source: Franz_Ulrich_Kinsky
     relation: :hasBirthYear
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-  AddTriple (8ef21a4a-9f9b-43ee-8d8a-54271aafdf77)
- Call ID: 8ef21a4a-9f9b-43ee-8d8a-54271aafdf77
+    literal_value: 1936
+    literal_type: xsd:integer
+  AddLiteral (ffa86cdc-153c-4e61-a693-0165d2f2273e)
+ Call ID: ffa86cdc-153c-4e61-a693-0165d2f2273e
   Args:
-    target: :Infanta_Cristina
-    relation: :hasMother
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-  AddTriple (7cab43b0-4233-4d6e-87ae-eeb0b1f01058)
- Call ID: 7cab43b0-4233-4d6e-87ae-eeb0b1f01058
+    relation: :hasDeathYear
+    source: Franz_Ulrich_Kinsky
+    literal_value: 2009
+    literal_type: xsd:integer
+  AssignClass (0cc41d10-07e5-442d-a063-03d33c2bc17f)
+ Call ID: 0cc41d10-07e5-442d-a063-03d33c2bc17f
   Args:
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-    target: :Inaki_Urdangarin
+    type: :Man
+    source: Ulrich_Kinsky
+  AssignClass (b729d30f-ca80-4974-af71-4d79c45cfce6)
+ Call ID: b729d30f-ca80-4974-af71-4d79c45cfce6
+  Args:
+    type: :Person
+    source: Ulrich_Kinsky
+  AssignClass (0d344ad2-6086-42da-b753-28564bc244ac)
+ Call ID: 0d344ad2-6086-42da-b753-28564bc244ac
+  Args:
+    type: :Woman
+    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
+  AssignClass (025ee4c7-af35-47c0-a8b1-4b55c55c70cd)
+ Call ID: 025ee4c7-af35-47c0-a8b1-4b55c55c70cd
+  Args:
+    type: :Person
+    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
+  AddTriple (1aff3083-893c-407d-9d2a-6e523f0569bc)
+ Call ID: 1aff3083-893c-407d-9d2a-6e523f0569bc
+  Args:
     relation: :hasFather
-  AddTriple (444a48b4-51b6-4df9-8fc0-72807c4bf1a7)
- Call ID: 444a48b4-51b6-4df9-8fc0-72807c4bf1a7
+    source: Franz_Ulrich_Kinsky
+    target: Ulrich_Kinsky
+  AddTriple (e9ac6067-eb36-474f-b088-26e623df95d0)
+ Call ID: e9ac6067-eb36-474f-b088-26e623df95d0
   Args:
-    target: :King_Juan_Carlos_I
-    relation: :hasAncestor
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-  AddTriple (4fbea794-b8b2-40b5-979a-89254847f840)
- Call ID: 4fbea794-b8b2-40b5-979a-89254847f840
+    target: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
+    relation: :hasMother
+    source: Franz_Ulrich_Kinsky
+  AssignClass (0a0cab73-35b7-4559-9f7e-4d29ff0e4803)
+ Call ID: 0a0cab73-35b7-4559-9f7e-4d29ff0e4803
   Args:
-    source: :Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon
-    target: :Juan_Urquijo
+    type: :Man
+    source: Hilmar_von_dem_Bussche-Haddenhausen
+  AssignClass (e0fe947f-034f-41ca-87b6-499049e701c3)
+ Call ID: e0fe947f-034f-41ca-87b6-499049e701c3
+  Args:
+    source: Hilmar_von_dem_Bussche-Haddenhausen
+    type: :Person
+  AddTriple (f248f378-89b2-48f3-bef8-53c9f58937fa)
+ Call ID: f248f378-89b2-48f3-bef8-53c9f58937fa
+  Args:
+    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
+    relation: :hasFather
+    target: Hilmar_von_dem_Bussche-Haddenhausen
+  AssignClass (46d81dba-801c-4dc6-8491-8ff390bd9414)
+ Call ID: 46d81dba-801c-4dc6-8491-8ff390bd9414
+  Args:
+    type: :Woman
+    source: Roberta_Cavanagh
+  AssignClass (f3bddda1-222e-49db-a097-caf94d2ada62)
+ Call ID: f3bddda1-222e-49db-a097-caf94d2ada62
+  Args:
+    source: Roberta_Cavanagh
+    type: :Person
+  AddLiteral (e1bbdf92-f686-4bb1-990b-0af6100515ac)
+ Call ID: e1bbdf92-f686-4bb1-990b-0af6100515ac
+  Args:
+    source: Franz_Ulrich_Kinsky
+    relation: :hasMarriageYear
+    literal_value: 1965
+    literal_type: xsd:integer
+  AddTriple (2ff7c941-85bb-4727-baee-bcca2535d9ca)
+ Call ID: 2ff7c941-85bb-4727-baee-bcca2535d9ca
+  Args:
     relation: :hasRelation
-  AddTriple (53e82d5d-998e-4726-97a9-4e79f576ab5b)
- Call ID: 53e82d5d-998e-4726-97a9-4e79f576ab5b
+    source: Franz_Ulrich_Kinsky
+    target: Roberta_Cavanagh
+  AssignClass (0ae40294-fb03-42d0-b6c0-ff2a8aa251e6)
+ Call ID: 0ae40294-fb03-42d0-b6c0-ff2a8aa251e6
   Args:
-    target: :Princess_Teresa_Duchess_of_Salerno
-    relation: :hasAncestor
-    source: :Juan_Urquijo
-  Finish (95036617-d9f5-4068-8473-a4fd58802a3a)
- Call ID: 95036617-d9f5-4068-8473-a4fd58802a3a
+    type: :Man
+    source: Roberto_Cavanagh
+  AssignClass (549da279-476b-44f4-9064-0a7c23210472)
+ Call ID: 549da279-476b-44f4-9064-0a7c23210472
+  Args:
+    source: Roberto_Cavanagh
+    type: :Person
+  AssignClass (40b2d43f-2add-4a8f-ac03-32631c37652d)
+ Call ID: 40b2d43f-2add-4a8f-ac03-32631c37652d
+  Args:
+    type: :Woman
+    source: Anne_Rowell
+  AssignClass (d799c45d-297d-4987-a61a-5c0cd3ec9a1a)
+ Call ID: d799c45d-297d-4987-a61a-5c0cd3ec9a1a
+  Args:
+    type: :Person
+    source: Anne_Rowell
+  AddTriple (997aeb70-142a-4b9d-a9c3-16519a00fb0b)
+ Call ID: 997aeb70-142a-4b9d-a9c3-16519a00fb0b
+  Args:
+    target: Roberto_Cavanagh
+    relation: :hasFather
+    source: Roberta_Cavanagh
+  AddTriple (ec3b05e9-88de-4518-a744-7d6bc659f471)
+ Call ID: ec3b05e9-88de-4518-a744-7d6bc659f471
+  Args:
+    relation: :hasMother
+    source: Roberta_Cavanagh
+    target: Anne_Rowell
+  AssignClass (f5e88d2b-c8b2-4883-8f6c-71b80c13ed8e)
+ Call ID: f5e88d2b-c8b2-4883-8f6c-71b80c13ed8e
+  Args:
+    source: Helena_Victoria_Hutten-Czapska
+    type: :Woman
+  AssignClass (bc0c6729-01fc-4f8e-8d12-9ac9afad2a0d)
+ Call ID: bc0c6729-01fc-4f8e-8d12-9ac9afad2a0d
+  Args:
+    type: :Person
+    source: Helena_Victoria_Hutten-Czapska
+  Finish (5b01974c-0dd3-417a-b892-861fb6cfe3c4)
+ Call ID: 5b01974c-0dd3-417a-b892-861fb6cfe3c4
   Args:

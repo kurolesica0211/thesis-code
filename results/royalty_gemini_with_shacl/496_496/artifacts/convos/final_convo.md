@@ -85,24 +85,322 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Roger de Vilmorin (Roger Marie Vincent Philippe Lévêque de Vilmorin; 12 September 1905 – 20 July 1980) was a French botanist and geneticist, as well as an illegitimate son of Alfonso XIII of Spain.
-Biography
+Elizabeth II (Elizabeth Alexandra Mary; 21 April 1926 – 8 September 2022) was Queen of the United Kingdom and other Commonwealth realms from 6 February 1952 until her death in 2022.
+Elizabeth was born in Mayfair, London, during the reign of her paternal grandfather, King George V.
+She was the first child of the Duke and Duchess of York (later King George VI and Queen Elizabeth the Queen Mother).
+Her father acceded to the throne in 1936 upon the abdication of his brother Edward VIII, making the ten-year-old Princess Elizabeth the heir presumptive.
+In November 1947, she married Philip Mountbatten, a former prince of Greece and Denmark.
+They had four children: Charles, Anne, Andrew, and Edward.
+When her father died in February 1952, Elizabeth, then 25 years old, became queen of seven independent Commonwealth countries: the United Kingdom, Canada, Australia, New Zealand, South Africa, Pakistan, and Ceylon, as well as head of the Commonwealth.
+Elizabeth reigned as a constitutional monarch through times of significant political change such as the Troubles in Northern Ireland, devolution in the United Kingdom, the decolonisation of Africa, and the United Kingdom's accession to the European Communities as well as its subsequent withdrawal.
+As queen, Elizabeth was advised by more than 170 prime ministers across her realms.
+Although there were occasional republican sentiment and media criticism of her family—particularly after the breakdowns of her children's marriages, her annus horribilis in 1992, and the death of her former daughter-in-law Diana in 1997—support for the monarchy and her popularity in the United Kingdom remained consistently high.
+Elizabeth died aged 96 at Balmoral Castle in Scotland, and was succeeded by her eldest son as Charles III.
+Early life
 
-Roger was born on 12 September 1905 in Paris, the natural son of Mélanie de Gaufridy de Dortan (1876–1937) and the King of Spain Alfonso XIII.
-However, he was recognized by his mother's legitimate husband, Philippe de Vilmorin, a well-known botanist and horticulturist.
-Roger followed in his legal father's footsteps, becoming a botanist and geneticist himself.
-Between 1926 and 1964 he directed the scientific services of Vilmorin & Cie, the family seed manufacturing company.
-Honours
+Elizabeth was born at 2:40 am on 21 April 1926 by Caesarean section at her maternal grandfather's London home, 17 Bruton Street in Mayfair, the first child of Prince Albert, Duke of York (later King George VI), and his wife, Elizabeth, Duchess of York (later Queen Elizabeth the Queen Mother).
+Her father was the second son of King George V and Queen Mary, and her mother was the youngest daughter of Scottish aristocrat Claude Bowes-Lyon, 14th
+She was baptised by the Archbishop of York, Cosmo Gordon Lang in the private chapel at Buckingham Palace on 29 May, and she was named Elizabeth after her mother; Alexandra after her paternal great-grandmother, who had died five months earlier; and Mary after her paternal grandmother.
+She was cherished by her grandfather George V, whom she affectionately called "Grandpa England", and her regular visits during his serious illness in 1929 were credited in the popular press and by later biographers with raising his spirits and aiding his recovery.
+Elizabeth's sole sibling, Princess Margaret, was born in 1930.
+The two princesses were cared for by their nanny, Clara Knight, and educated at home under the supervision of their mother and their governess, Marion Crawford.
+Crawford published a biography of Elizabeth and Margaret's childhood years titled The Little Princesses in 1950, much to the dismay of the royal family.
+The book describes Elizabeth's love of horses and dogs, her orderliness, and her attitude of responsibility.
+Others echoed such observations: Winston Churchill described Elizabeth when she was two as "a character.
+Elizabeth's early life was spent primarily at the Yorks' residences at 145 Piccadilly (their town house in London) and Royal Lodge in Windsor.
+Heir presumptive
 
-In 1990, Roger and his half-brother Olivier were included among the Righteous Among the Nations by the National Holocaust Remembrance Institute in Jerusalem because during the Second World War they saved some Jews from deportation to Auschwitz.
-Roger de Vilmorin was an officer of the Order of Academic Palms and of the National Order of the Legion of Honour, Commander of the Order of Agricultural Merit and Knight of the National Order of Merit.
-The Arboretum Vilmorin is dedicated to him and Philippe de Vilmorin.
+During her grandfather's reign, Elizabeth was third in the line of succession to the British throne, behind her uncle Edward, Prince of Wales, and her father.
+Although her birth generated public interest, she was not expected to become queen, as Edward was still young and expected to marry and have children of his own, who would precede Elizabeth in the line of succession.
+When her grandfather died in 1936 and her uncle succeeded as Edward VIII, she became second in line to the throne, after her father.
+Later that year, Edward abdicated, after his proposed marriage to divorced American socialite Wallis Simpson provoked a constitutional crisis.
+Consequently, Elizabeth's father became king, taking the regnal name George VI.
+Since Elizabeth had no brothers, she became heir presumptive.
+If her parents had subsequently had a son, he would have been heir apparent and before her in the line of succession, which was determined by the male-preference primogeniture in effect at the time.
+Elizabeth received private tuition in constitutional history from Henry Marten, Vice-Provost of Eton College, and learned French from a succession of native-speaking governesses.
+A Girl Guides company, the 1st Buckingham Palace Company, was formed specifically so she could socialise with girls her age.
+In 1939, Elizabeth's parents toured Canada and the United States.
+As in 1927, when they had toured Australia and New Zealand, Elizabeth remained in Britain since her father thought she was too young to undertake public tours.
+Lord Hailsham suggested that Princesses Elizabeth and Margaret should be evacuated to Canada to avoid the frequent aerial bombings of London by the Luftwaffe.
+This was rejected by their mother, who declared, "The children won't go without me.
+At Windsor, the princesses staged pantomimes at Christmas in aid of the Queen's Wool Fund, which bought yarn to knit into military garments.
+In 1940, the 14-year-old Elizabeth made her first radio broadcast during the BBC's Children's Hour, addressing other children who had been evacuated from the cities.
+"
+
+
+In 1943, Elizabeth undertook her first solo public appearance on a visit to the Grenadier Guards, of which she had been appointed colonel the previous year.
+At the end of the war in Europe, on Victory in Europe Day, Elizabeth and Margaret mingled incognito with the celebrating crowds in the streets of London.
+In 1985, Elizabeth recalled in a rare interview, "... we asked my parents if we could go out and see for ourselves.
+"
+
+
+During the war, plans were drawn to quell Welsh nationalism by affiliating Elizabeth more closely with Wales.
+Proposals, such as appointing her Constable of Caernarfon Castle or a patron of Urdd Gobaith Cymru (the Welsh League of Youth), were abandoned for several reasons, including fear of associating Elizabeth with conscientious objectors in the Urdd at a time when Britain was at war.
+Welsh politicians suggested she be made Princess of Wales on her 18th birthday.
+Home Secretary Herbert Morrison supported the idea, but the King rejected it because he felt such a title belonged solely to the wife of a prince of Wales and the prince of Wales had always been the heir apparent.
+In 1946, she was inducted into the Gorsedd of Bards at the National Eisteddfod of Wales.
+Elizabeth went on her first overseas tour in 1947, accompanying her parents through southern Africa.
+I declare before you all that my whole life, whether it be long or short, shall be devoted to your service and the service of our great imperial family to which we all belong.
+But I shall not have strength to carry out this resolution alone unless you join in it with me, as I now invite you to do: I know that your support will be unfailingly given.
+Marriage
+
+Elizabeth met her future husband, Prince Philip of Greece and Denmark, in 1934 and again in 1937.
+They were second cousins once removed through King Christian IX of Denmark and third cousins through Queen Victoria.
+After meeting for the third time at the Royal Naval College in Dartmouth in July 1939, Elizabeth—though only 13 years old—said she fell in love with Philip, who was 18, and they began to exchange letters.
+Philip had no financial standing, was foreign-born (though a British subject who had served in the Royal Navy throughout the Second World War), and his sisters had married German noblemen with Nazi links.
+He was a prince without a home or kingdom.
+Some of the papers played long and loud tunes on the string of Philip's foreign origin."
+Later biographies reported that Elizabeth's mother had reservations about the union initially and teased Philip as "the Hun".
+In later life, however, she told the biographer Tim Heald that Philip was "an English gentleman".
+Before the marriage, Philip renounced his Greek and Danish titles, officially converted from Greek Orthodoxy to Anglicanism, and adopted the style Lieutenant Philip Mountbatten, taking the surname of his mother's British family.
+Shortly before the wedding, he was created Duke of Edinburgh and granted the style His Royal Highness.
+Elizabeth and Philip were married on 20 November 1947 at Westminster Abbey.
+Elizabeth required ration coupons to buy the material for her gown (which was designed by Norman Hartnell) because Britain had not yet completely recovered from the devastation of the war.
+In post-war Britain, it was not acceptable for Philip's German relations, including his three surviving sisters, to be invited to the wedding.
+Neither was an invitation extended to the Duke of Windsor, formerly King Edward VIII.
+Elizabeth gave birth to her first child, Prince Charles, in November 1948.
+One month earlier, the King had issued letters patent allowing her children to use the style and title of a royal prince or princess, to which they otherwise would not have been entitled, as their father was no longer a royal prince.
+A second child, Princess Anne, was born in August 1950.
+At various times between 1949 and 1951, Philip was stationed in the British Crown Colony of Malta as a serving Royal Navy officer.
+He and Elizabeth lived intermittently in Malta for several months at a time in the hamlet of Gwardamanġa, at Villa Guardamangia, the rented home of Philip's uncle Lord Mountbatten.
+Reign
+
+Accession and coronation
+
+As George VI's health declined during 1951, Elizabeth frequently stood in for him at public events.
+When she visited Canada and Harry S. Truman in Washington, DC, in October 1951, her private secretary Martin Charteris carried a draft accession declaration in case the King died while she was on tour.
+In early 1952, Elizabeth and Philip set out for a tour of Australia and New Zealand by way of the British colony of Kenya.
+On 6 February, they had just returned to their Kenyan home, Sagana Lodge, after a night spent at Treetops Hotel, when word arrived of the death of Elizabeth's father.
+Philip broke the news to the new queen.
+She chose to retain Elizabeth as her regnal name, and was therefore called Elizabeth II.
+The numeral offended some Scots, as she was the first Elizabeth to rule in Scotland.
+She was proclaimed queen throughout her realms, and the royal party hastily returned to the United Kingdom.
+Elizabeth and Philip moved into Buckingham Palace.
+With Elizabeth's accession, it seemed possible that the royal house would take her husband's name, in line with the custom for married women of the time.
+Lord Mountbatten advocated for House of Mountbatten, and Philip suggested House of Edinburgh, after his ducal title.
+The British prime minister, Winston Churchill, and Elizabeth's grandmother Queen Mary favoured the retention of the House of Windsor.
+Elizabeth issued a declaration on 9 April 1952 that the royal house would continue to be Windsor.
+Philip complained, "I am the only man in the country not allowed to give his name to his own children."
+In 1960, the surname Mountbatten-Windsor was adopted for Philip and Elizabeth's male-line descendants who do not carry royal titles.
+Amid preparations for the coronation, Princess Margaret told her sister she wished to marry Peter Townsend, a divorcé 16 years Margaret's senior with two sons from his previous marriage.
+Elizabeth asked them to wait for a year; in the words of her private secretary, "the Queen was naturally sympathetic towards the Princess, but I think she thought—she hoped—given time, the affair would peter out."
+In 1960, she married Antony Armstrong-Jones, who was created Earl of Snowdon the following year.
+Despite Queen Mary's death on 24 March 1953, the coronation went as planned on 2 June, as Mary had requested.
+On Elizabeth's instruction, her coronation gown was embroidered with the floral emblems of Commonwealth countries.
+Early reign
+
+From Elizabeth's birth onwards, the British Empire continued its transformation into the Commonwealth of Nations.
+In 1953, Elizabeth and Philip embarked on a seven-month round-the-world tour, visiting 13 countries and covering more than 40,000 miles (64,000 km) by land, sea and air.
+Lord Mountbatten said that Elizabeth was opposed to the invasion, though Eden denied it.
+The governing Conservative Party had no formal mechanism for choosing a leader, meaning that it fell to Elizabeth to decide whom to commission to form a government following Eden's resignation.
+Lord Salisbury and Lord Kilmuir, the lord chancellor, consulted the British Cabinet, Churchill, and the chairman of the backbench 1922 Committee, resulting in Elizabeth appointing their recommended candidate: Harold Macmillan.
+The Suez crisis and the choice of Eden's successor led, in 1957, to the first major personal criticism of Elizabeth.
+Six years later, in 1963, Macmillan resigned and advised Elizabeth to appoint Alec Douglas-Home as the prime minister, advice she followed.
+Elizabeth again came under criticism for appointing the prime minister on the advice of a small number of ministers or a single minister.
+In 1965, the Conservatives adopted a formal mechanism for electing a leader, thus relieving the Queen of her involvement.
+In 1957, Elizabeth made a state visit to the United States, where she addressed the United Nations General Assembly on behalf of the Commonwealth.
+Two years later, solely in her capacity as Queen of Canada, she revisited the United States and toured Canada.
+On a visit to Ghana the same year, she dismissed fears for her safety, even though her host, President Kwame Nkrumah, who had replaced her as head of state, was a target for assassins.
+Harold Macmillan wrote, "The Queen has been absolutely determined all through ...
+She loves her duty and means to be a Queen."
+Before her tour through parts of Quebec in 1964, the press reported that extremists within the Quebec separatist movement were plotting Elizabeth's assassination.
+Elizabeth gave birth to her third child, Andrew, in February 1960; this was the first birth to a reigning British monarch since 1857.
+Her fourth child, Prince Edward, was born in March 1964.
+According to biographer Gyles Brandreth, Elizabeth suffered a miscarriage at some point during her reign.
+In 1965, however, the Rhodesian prime minister, Ian Smith, in opposition to moves towards majority rule, unilaterally declared independence with Elizabeth as "Queen of Rhodesia".
+Although Elizabeth formally dismissed him, and the international community applied sanctions against Rhodesia, his regime survived for over a decade.
+In 1966, the Queen was criticised for waiting eight days before visiting the village of Aberfan, where a mining disaster killed 116 children and 28 adults.
+Martin Charteris said that the delay, made on his advice, was a mistake that she later regretted.
+Elizabeth toured Yugoslavia in October 1972, becoming the first British monarch to visit a communist country.
+In February 1974, British prime minister Edward Heath advised Elizabeth to call a general election in the middle of her tour of the Austronesian Pacific Rim, requiring her to fly back to Britain.
+When discussions on forming a coalition foundered, Heath resigned, and Elizabeth asked the Leader of the Opposition, Labour's Harold Wilson, to form a government.
+As Whitlam had a majority in the House of Representatives, Speaker Gordon Scholes appealed to Elizabeth to reverse Kerr's decision.
+In 1977, Elizabeth marked the Silver Jubilee of her accession.
+Parties and events took place throughout the Commonwealth, many coinciding with her associated national and Commonwealth tours.
+The celebrations re-affirmed Elizabeth's popularity, despite virtually coincident negative press coverage of Princess Margaret's separation from her husband, Lord Snowdon.
+In 1978, Elizabeth endured a state visit to the United Kingdom by Romania's communist leader, Nicolae Ceaușescu, and his wife, Elena, though privately she thought they had "blood on their hands".
+The following year brought two blows: the unmasking of Anthony Blunt, former Surveyor of the Queen's Pictures, as a communist spy and the assassination of Lord Mountbatten by the Provisional Irish Republican Army.
+According to Paul Martin Sr., by the end of the 1970s, Elizabeth was worried the Crown "had little meaning for" Pierre Trudeau, the Canadian prime minister.
+Tony Benn said Elizabeth found Trudeau "rather disappointing".
+Trudeau's supposed republicanism seemed to be confirmed by his antics, such as sliding down banisters at Buckingham Palace and pirouetting behind Elizabeth's back in 1977, and the removal of various Canadian royal symbols during his term of office.
+In 1980, Canadian politicians sent to London to discuss the patriation of the Canadian constitution found Elizabeth "better informed ... than any of the British politicians or bureaucrats".
+Perils and dissent
+
+During the 1981 Trooping the Colour ceremony, six weeks before the wedding of Prince Charles and Lady Diana Spencer, six shots were fired at Elizabeth from close range as she rode down The Mall, London, on her horse, Burmese.
+Police later discovered the shots were blanks.
+Elizabeth's composure and skill in controlling her mount were widely praised.
+That October, Elizabeth was the subject of another attack while on a visit to Dunedin, New Zealand.
+Lewis was arrested, but instead of being charged with attempted murder or treason was sentenced to three years in jail for unlawful possession and discharge of a firearm.
+Two years into his sentence, he attempted to escape a psychiatric hospital with the intention of assassinating Charles, who was visiting the country with Diana and their son Prince William.
+From April to September 1982, Elizabeth's son Andrew served with British forces in the Falklands War, for which she reportedly felt anxiety and pride.
+On 9 July, she awoke in her bedroom at Buckingham Palace to find an intruder, Michael Fagan, in the room with her.
+In a serious lapse of security, assistance only arrived after two calls to the Palace police switchboard.
+After hosting US president Ronald Reagan at Windsor Castle in 1982 and visiting his California ranch in 1983, Elizabeth was angered when his administration ordered the invasion of Grenada, one of her Caribbean realms, without informing her.
+Intense media interest in the opinions and private lives of the royal family during the 1980s led to a series of sensational stories in the press, pioneered by The Sun tabloid.
+Newspaper editor Donald Trelford wrote in The Observer of 21 September 1986: "The royal soap opera has now reached such a pitch of public interest that the boundary between fact and fiction has been lost sight of ... it is not just that some papers don't check their facts or accept denials: they don't care if the stories are true or not."
+It was reported, most notably in The Sunday Times of 20 July 1986, that Elizabeth was worried that Margaret Thatcher's economic policies fostered social divisions and was alarmed by high unemployment, a series of riots, the violence of a miners' strike, and Thatcher's refusal to apply sanctions against the apartheid regime in South Africa.
+The sources of the rumours included royal aide Michael Shea and Commonwealth secretary-general Shridath Ramphal, but Shea claimed his remarks were taken out of context and embellished by speculation.
+Thatcher reputedly said Elizabeth would vote for the Social Democratic Party—Thatcher's political opponents.
+Reports of acrimony between them were exaggerated, and Elizabeth gave two honours in her personal gift—membership in the Order of Merit and the Order of the Garter—to Thatcher after her replacement as prime minister by John Major.
+Brian Mulroney, Canadian prime minister between 1984 and 1993, said Elizabeth was a "behind the scenes force" in ending apartheid.
+In 1986, Elizabeth paid a six-day state visit to the People's Republic of China, becoming the first British monarch to visit the country.
+At a state banquet, Elizabeth joked about the first British emissary to China being lost at sea with Queen Elizabeth
+Elizabeth's visit also signified the acceptance of both countries that sovereignty over Hong Kong would be transferred from the United Kingdom to China in 1997.
+By the end of the 1980s, Elizabeth had become the target of satire.
+The involvement of younger members of the royal family in the charity game show It's a Royal Knockout in 1987 was ridiculed.
+In Canada, Elizabeth publicly supported politically divisive constitutional amendments, prompting criticism from opponents of the proposed changes, including Pierre Trudeau.
+As monarch of Fiji, Elizabeth supported the attempts of Governor-General Ratu Sir Penaia Ganilau to assert executive power and negotiate a settlement.
+Turbulent years
+
+In the wake of coalition victory in the Gulf War, Elizabeth became the first British monarch to address a joint meeting of the United States Congress in May 1991.
+In November 1992, in a speech to mark the Ruby Jubilee of her accession, Elizabeth called 1992 her annus horribilis (a Latin phrase, meaning 'horrible year').
+Republican feeling in Britain had risen because of press estimates of Elizabeth's private wealth—contradicted by the Palace—and reports of affairs and strained marriages among her extended family.
+In March, her second son, Andrew, separated from his wife, Sarah; her daughter, Princess Anne, divorced Captain Mark Phillips in April; angry demonstrators in Dresden threw eggs at Elizabeth during a state visit to Germany in October; and a large fire broke out at Windsor Castle, one of her official residences, in November.
+In an unusually personal speech, Elizabeth said that any institution must expect criticism, but suggested it might be done with "a touch of humour, gentleness and understanding".
+Two days later, John Major announced plans to reform the royal finances, drawn up the previous year, including Elizabeth paying income tax from 1993 onwards, and a reduction in the civil list.
+In December, Prince Charles and his wife, Diana, formally separated.
+At the end of the year, Elizabeth sued The Sun newspaper for breach of copyright when it published the text of her annual Christmas message two days before it was broadcast.
+Elizabeth's solicitors had taken successful action against The Sun five years earlier for breach of copyright after it published a photograph of her daughter-in-law the Duchess of York and her granddaughter Princess Beatrice.
+In January 1994, Elizabeth broke her left wrist when a horse she was riding at Sandringham tripped and fell.
+Elizabeth, who believed that she was speaking to Chrétien, said she supported Canadian unity and would try to influence Quebec's referendum on proposals to break away from Canada.
+In the year that followed, public revelations on the state of Charles and Diana's marriage continued.
+In consultation with her husband and John Major, as well as the Archbishop of Canterbury (George Carey) and her private secretary (Robert Fellowes), Elizabeth wrote to Charles and Diana at the end of December 1995, suggesting that a divorce would be advisable.
+In August 1997, a year after the divorce, Diana was killed in a car crash in Paris.
+Elizabeth was on holiday with her extended family at Balmoral.
+Diana's two sons, Princes William and Harry, wanted to attend church, so Elizabeth and Philip took them that morning.
+Afterwards, for five days, the royal couple shielded their grandsons from the intense press interest by keeping them at Balmoral where they could grieve in private, but the royal family's silence and seclusion, and the failure to fly a flag at half-mast over Buckingham Palace, caused public dismay.
+Pressured by the hostile reaction, Elizabeth agreed to return to London and address the nation in a live television broadcast on 5 September, the day before Diana's funeral.
+In the broadcast, she expressed admiration for Diana and her feelings "as a grandmother" for the two princes.
+In October 1997, Elizabeth and Philip made a state visit to India, which included a controversial visit to the site of the Jallianwala Bagh massacre to pay her respects.
+Protesters chanted "Killer Queen, go back", and there were demands for her to apologise for the action of British troops 78 years earlier.
+At the memorial in the park, she and Philip laid a wreath and stood for a 30‐second moment of silence.
+That November, the royal couple held a reception at Banqueting House to mark their golden wedding anniversary.
+Elizabeth made a speech and praised Philip for his role as consort, referring to him as "my strength and stay".
+In 1999, as part of the process of devolution in the United Kingdom, Elizabeth formally opened newly established legislatures for Wales and Scotland: the National Assembly for Wales at Cardiff in May, and the Scottish Parliament at Edinburgh in July.
+Dawn of the new millennium
+
+On the eve of the new millennium, Elizabeth and Philip boarded a vessel from Southwark, bound for the Millennium Dome.
+During the singing of Auld Lang Syne, Elizabeth held hands with Philip and British prime minister Tony Blair.
+Following the 9/11 attacks in the United States, Elizabeth, breaking with tradition, ordered the American national anthem to be played during the changing of the guard at Buckingham Palace to express her solidarity with the country.
+In 2002, Elizabeth marked her Golden Jubilee, the 50th anniversary of her accession.
+Her sister died in February and her mother in March, and the media speculated on whether the Jubilee would be a success or a failure.
+Princess Margaret's death shook Elizabeth; her funeral was one of the rare occasions where Elizabeth openly cried.
+Elizabeth again undertook an extensive tour of her realms, beginning in Jamaica in February, where she called the farewell banquet "memorable" after a power cut plunged King's House, the official residence of the governor-general, into darkness.
+One million people attended each day of the three-day main Jubilee celebration in London, and the enthusiasm shown for Elizabeth by the public was greater than many journalists had anticipated.
+In 2003, Elizabeth sued the Daily Mirror for breach of confidence and obtained an injunction which prevented the outlet from publishing information gathered by a reporter who posed as a footman at Buckingham Palace.
+Though generally healthy throughout her life, in 2003 she had keyhole surgery on both knees.
+In May 2007, citing unnamed sources, The Daily Telegraph reported that Elizabeth was "exasperated and frustrated" by the policies of Tony Blair, that she was concerned the British Armed Forces were overstretched in Iraq and Afghanistan, and that she had raised concerns over rural and countryside issues with Blair.
+On 20 March 2008, at the Church of Ireland St Patrick's Cathedral, Armagh, Elizabeth attended the first Maundy service held outside England and Wales.
+Elizabeth addressed the UN General Assembly for a second time in 2010, again in her capacity as Queen of all Commonwealth realms and Head of the Commonwealth.
+During her visit to New York, which followed a tour of Canada, she officially opened a memorial garden for British victims of the 9/11 attacks.
+Elizabeth's 11-day visit to Australia in October 2011 was her 16th visit to the country since 1954.
+Diamond Jubilee and milestones
+
+The 2012 Diamond Jubilee marked 60 years since Elizabeth's accession, and celebrations were held throughout her realms, the wider Commonwealth, and beyond.
+She and Philip undertook an extensive tour of the United Kingdom, while their children and grandchildren embarked on royal tours of other Commonwealth states on her behalf.
+On 18 December, the Queen became the first British sovereign to attend a peacetime Cabinet meeting since George III in 1781.
+Elizabeth, who opened the Montreal Summer Olympics in 1976, also opened the 2012 Summer Olympics and Paralympics in London, making her the first head of state to open two Olympic Games in two countries.
+For the London Olympics, she portrayed herself in a short film as part of the opening ceremony, alongside Daniel Craig as James Bond.
+On 4 April 2013, she received an honorary BAFTA award for her patronage of the film industry and was called "the most memorable Bond girl yet" at a special presentation at Windsor Castle.
+In March 2013, the Queen stayed overnight at King Edward VII's Hospital as a precaution after developing symptoms of gastroenteritis.
+She was represented at the summit in Sri Lanka by Prince Charles.
+On 20 April 2018, the Commonwealth heads of government announced that Charles would succeed her as Head of the Commonwealth, which the Queen stated as her "sincere wish".
+On 21 December 2007, Elizabeth surpassed her great-great-grandmother, Queen Victoria, to become the longest-lived British monarch, and she became the longest-reigning British monarch and longest-reigning queen regnant and female head of state in the world on 9 September 2015.
+Philip had retired from his official duties as the Queen's consort in August 2017.
+Pandemic and widowhood
+
+On 19 March 2020, as the COVID-19 pandemic hit the United Kingdom, Elizabeth moved to Windsor Castle and sequestered there as a precaution.
+Public engagements were cancelled and Windsor Castle followed a strict sanitary protocol nicknamed "HMS Bubble".
+On 5 April, in a televised broadcast watched by an estimated 24 million viewers in the United Kingdom, Elizabeth asked people to "take comfort that while we may have more still to endure, better days will return: we will be with our friends again; we will be with our families again; we will meet again."
+Prince Philip died on 9 April 2021, after 73 years of marriage, making Elizabeth the first British monarch to reign as a widow or widower since Queen Victoria.
+Due to the COVID-19 restrictions in place in England at the time, Elizabeth sat alone at Philip's funeral service, which evoked sympathy from people around the world.
+It was later reported in the press that Elizabeth had rejected a government offer to relax the rules.
+In her Christmas broadcast that year, which was ultimately her last, she paid a personal tribute to her "beloved Philip", saying, "That mischievous, inquiring twinkle was as bright at the end as when I first set eyes on him.
+"
+
+
+Despite the pandemic, Elizabeth attended the 2021 State Opening of Parliament in May, the 47th G7 summit in June, and hosted US president Joe Biden at Windsor Castle.
+Biden was the 14th US president that the Queen had met.
+In October 2021, Elizabeth cancelled a planned trip to Northern Ireland and stayed overnight at King Edward VII's Hospital for "preliminary investigations".
+On Christmas Day 2021, while she was staying at Windsor Castle, 19-year-old Jaswant Singh Chail broke into the gardens using a rope ladder and carrying a crossbow with the aim of assassinating Elizabeth in revenge for the Amritsar massacre.
+Platinum Jubilee and beyond
+
+Elizabeth's Platinum Jubilee celebrations began on 6 February 2022, marking 70 years since her accession.
+Later that month, Elizabeth fell ill with COVID-19 along with several family members, but she only exhibited "mild cold-like symptoms" and recovered by the end of the month.
+She was present at the service of thanksgiving for her husband at Westminster Abbey on 29 March, but was unable to attend both the annual Commonwealth Day service that month and the Royal Maundy service in April, because of "episodic mobility problems".
+(She did not attend the state openings in 1959 and 1963 as she was pregnant with Andrew and Edward, respectively.)
+Later that month she made a surprise visit to Paddington Station and officially opened the Elizabeth line, named in her honour.
+The Queen was largely confined to balcony appearances during the public jubilee celebrations, and she missed the National Service of Thanksgiving on 3 June.
+This was the only occasion on which Elizabeth received a new prime minister at a location other than Buckingham Palace.
+The Queen's last public message was issued on 7 September, in which she expressed her sympathy for those affected by the Saskatchewan stabbings.
+Elizabeth did not plan to abdicate, though she took on fewer public engagements in her later years and Prince Charles performed more of her duties.
+In June 2022, Elizabeth met the Archbishop of Canterbury, Justin Welby, who "came away thinking there is someone who has no fear of death, has hope in the future, knows the rock on which she stands and that gives her strength."
+, Buckingham Palace stated, "Following further evaluation this morning, the Queen's doctors are concerned for Her Majesty's health and have recommended she remain under medical supervision.
+The Queen remains comfortable and at Balmoral."
+Elizabeth was the first monarch to die in Scotland since James V in 1542.
+On 12 September, Elizabeth's coffin was carried up the Royal Mile in a procession to St Giles' Cathedral, where the Crown of Scotland was placed on it.
+Her coffin lay at rest at the cathedral for 24 hours, guarded by the Royal Company of Archers, during which around 33,000 people filed past it.
+On 13 September, the coffin was flown to RAF Northolt in west London, before continuing its journey by road to Buckingham Palace.
+On 14 September, her coffin was taken in a military procession to Westminster Hall, where Elizabeth's body lay in state for four days.
+On 16 September, Elizabeth's children held a vigil around her coffin, and the next day her eight grandchildren did the same.
+Elizabeth's state funeral was held at Westminster Abbey on 19 September, marking the first time a monarch's funeral service had been held there since George II in 1760.
+In Windsor, a final procession involving 1,000 military personnel took place and was witnessed by 97,000 people.
+Elizabeth's fell pony and two royal corgis stood at the side of the procession.
+After a committal service at St George's Chapel, Windsor Castle, Elizabeth's body was interred with her husband Philip's in the King George VI Memorial Chapel later the same day, in a private ceremony attended by her closest family members.
+Public image
+
+Beliefs, activities, and interests
+
+Elizabeth rarely gave interviews, and little was known of her political opinions, which she did not express explicitly in public.
+When Times journalist Paul Routledge asked her about the miners' strike of 1984–85 during a royal tour of the newspaper's offices, she replied that it was "all about one man" (a reference to Arthur Scargill), with which Routledge disagreed.
+After the 2014 Scottish independence referendum, Prime Minister David Cameron was overheard saying that Elizabeth was pleased with the outcome.
+Elizabeth had a deep sense of religious and civic duty, and took her Coronation Oath seriously.
+Aside from her official religious role as supreme governor of the established Church of England, she worshipped with that church and with the national Church of Scotland.
+For me the teachings of Christ and my own personal accountability before God provide a framework in which I try to lead my life.
+I, like so many of you, have drawn great comfort in difficult times from Christ's words and example.
+Elizabeth was patron of more than 600 organisations and charities.
+The Charities Aid Foundation estimated that Elizabeth helped raise over £1.4 billion for her patronages during her reign.
+Her lifelong love of corgis began in 1933 with Dookie, the first of many royal corgis.
+Scenes of a relaxed, informal home life were occasionally witnessed; she and her family, from time to time, prepared a meal together and washed the dishes afterwards.
+Media depiction and public opinion
+
+In the 1950s, as a young woman at the start of her reign, Elizabeth was depicted as a glamorous "fairytale Queen".
+Lord Altrincham's accusation in 1957 that her speeches sounded like those of a "priggish schoolgirl" was an extremely rare criticism.
+In the late 1960s, attempts to portray a more modern image of the monarchy were made in the television documentary Royal Family and by televising Prince Charles's investiture as Prince of Wales.
+Elizabeth also instituted other new practices; her first royal walkabout, meeting ordinary members of the public, took place during a tour of Australia and New Zealand in 1970.
+By the end of her reign, nearly one third of Britons had seen or met Elizabeth in person.
+At Elizabeth's Silver Jubilee in 1977, the crowds and celebrations were genuinely enthusiastic; but, in the 1980s, public criticism of the royal family increased, as the personal and working lives of Elizabeth's children came under media scrutiny.
+Under pressure from public opinion, she began to pay income tax for the first time, and Buckingham Palace was opened to the public.
+Although support for republicanism in Britain seemed higher than at any time in living memory, republican ideology was still a minority viewpoint, and Elizabeth herself had high approval ratings.
+Criticism was focused on the institution of the monarchy itself, and the conduct of Elizabeth's wider family, rather than her own behaviour and actions.
+Discontent with the monarchy reached its peak on the death of Diana, Princess of Wales, although Elizabeth's personal popularity—as well as general support for the monarchy—rebounded after her live television broadcast to the world five days after Diana's death.
+Many republicans credited Elizabeth's personal popularity with the survival of the monarchy in Australia.
+In 2010, Prime Minister Julia Gillard noted that there was a "deep affection" for Elizabeth in Australia and that another referendum on the monarchy should wait until after her reign.
+Polls in Britain in 2006 and 2007 revealed strong support for the monarchy, and in 2012, Elizabeth's Diamond Jubilee year, her approval ratings hit 90 per cent.
+Her family came under scrutiny again in the last few years of her life due to her son Andrew's association with convicted sex offenders Jeffrey Epstein and Ghislaine Maxwell, his lawsuit with Virginia Giuffre amidst accusations of sexual impropriety, and her grandson Harry and his wife Meghan's exit from the working royal family and subsequent move to the United States.
+Polling in Great Britain during the Platinum Jubilee, however, showed support for maintaining the monarchy and Elizabeth's personal popularity remained strong.
+Elizabeth was portrayed in a variety of media by many notable artists, including painters Pietro Annigoni, Peter Blake, Chinwe Chukwuogo-Roy, Terence Cuneo, Lucian Freud, Rolf Harris, Damien Hirst, Juliet Pannett and Tai-Shan Schierenberg.
+Notable photographers of Elizabeth included Cecil Beaton, Yousuf Karsh, Anwar Hussein, Annie Leibovitz, Lord Lichfield, Terry O'Neill, John Swannell and Dorothy Wilding.
+The first official portrait photograph of Elizabeth was taken by Marcus Adams in 1926.
+Titles, styles, honours, and arms
+
+Titles and styles
+
+Elizabeth held many titles and honorary military positions throughout the Commonwealth, was sovereign of many orders in her own countries and received honours and awards from around the world.
+In each of her realms, she had a distinct title that follows a similar formula: Queen of Saint Lucia and of Her other Realms and Territories in Saint Lucia, Queen of Australia and Her other Realms and Territories in Australia, etc.
+Arms
+
+From 21 April 1944 until her accession, Elizabeth's arms consisted of a lozenge bearing the royal coat of arms of the United Kingdom differenced with a label of three points argent, the centre point bearing a Tudor rose and the first and third a cross of Saint George.
+Elizabeth also possessed royal standards and personal flags for use in the United Kingdom, Canada, Australia, New Zealand, Jamaica, and elsewhere.
+Elizabeth approved her modified British arms on 26 May 1954.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +416,9 @@ The Arboretum Vilmorin is dedicated to him and Philippe de Vilmorin.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +433,23 @@ The Arboretum Vilmorin is dedicated to him and Philippe de Vilmorin.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +467,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +549,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +572,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +592,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +602,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +642,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,111 +741,324 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (298553e5-9c33-4190-9237-7ff3366f5702)
- Call ID: 298553e5-9c33-4190-9237-7ff3366f5702
+  AssignClass (e2c23f88-3de9-437b-b023-65387419c3ef)
+ Call ID: e2c23f88-3de9-437b-b023-65387419c3ef
   Args:
-    type: :Man
-    source: Roger_de_Vilmorin
-  AssignClass (400f38f4-722e-47cd-a290-da5a22422677)
- Call ID: 400f38f4-722e-47cd-a290-da5a22422677
-  Args:
-    type: :Person
-    source: Roger_de_Vilmorin
-  AssignClass (41184c51-6eee-45e6-93e2-c23940329c79)
- Call ID: 41184c51-6eee-45e6-93e2-c23940329c79
-  Args:
-    source: Mélanie_de_Gaufridy_de_Dortan
     type: :Woman
-  AssignClass (81ef5fd5-7f63-442a-b80d-4a688d2a35cf)
- Call ID: 81ef5fd5-7f63-442a-b80d-4a688d2a35cf
+    source: :Elizabeth_II
+  AssignClass (20d8ed8d-5984-48c5-a056-7db023a1aedd)
+ Call ID: 20d8ed8d-5984-48c5-a056-7db023a1aedd
   Args:
+    source: :Elizabeth_II
     type: :Person
-    source: Mélanie_de_Gaufridy_de_Dortan
-  AssignClass (3bd11207-da97-45fa-9b80-2e89963a16b9)
- Call ID: 3bd11207-da97-45fa-9b80-2e89963a16b9
+  AddLiteral (dc198345-da33-4ed0-a042-b6e57f4e57a3)
+ Call ID: dc198345-da33-4ed0-a042-b6e57f4e57a3
   Args:
-    type: :Man
-    source: Alfonso_XIII_of_Spain
-  AssignClass (fe509bc5-e665-42fb-bb70-43943bf9e4ab)
- Call ID: fe509bc5-e665-42fb-bb70-43943bf9e4ab
-  Args:
-    source: Alfonso_XIII_of_Spain
-    type: :Person
-  AssignClass (2d940519-a16a-4e30-aeb7-a6d0f0d4d5a3)
- Call ID: 2d940519-a16a-4e30-aeb7-a6d0f0d4d5a3
-  Args:
-    type: :Man
-    source: Philippe_de_Vilmorin
-  AssignClass (a12cece3-d630-4aa4-8cb1-8bff34fbd8d0)
- Call ID: a12cece3-d630-4aa4-8cb1-8bff34fbd8d0
-  Args:
-    type: :Person
-    source: Philippe_de_Vilmorin
-  AssignClass (83f0726d-9908-4a16-bcd2-ee73ff0b1cd7)
- Call ID: 83f0726d-9908-4a16-bcd2-ee73ff0b1cd7
-  Args:
-    source: Olivier
-    type: :Man
-  AssignClass (129b23d0-a644-440d-b26e-bdf0b909af99)
- Call ID: 129b23d0-a644-440d-b26e-bdf0b909af99
-  Args:
-    type: :Person
-    source: Olivier
-  AddLiteral (87c4be12-e3cb-4703-850f-96dfa40c3ef7)
- Call ID: 87c4be12-e3cb-4703-850f-96dfa40c3ef7
-  Args:
-    literal_value: 1905
-    literal_type: xsd:integer
+    source: :Elizabeth_II
     relation: :hasBirthYear
-    source: Roger_de_Vilmorin
-  AddLiteral (23cc8d15-a676-4082-87ea-75df415f1106)
- Call ID: 23cc8d15-a676-4082-87ea-75df415f1106
+    literal_value: 1926
+    literal_type: xsd:integer
+  AddLiteral (63071f96-961e-447c-b960-b38b3d01f1f5)
+ Call ID: 63071f96-961e-447c-b960-b38b3d01f1f5
   Args:
-    source: Roger_de_Vilmorin
+    literal_type: xsd:integer
+    literal_value: 2022
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1980
-  AddLiteral (2ad29745-856e-40ac-9f7b-e36da0af7732)
- Call ID: 2ad29745-856e-40ac-9f7b-e36da0af7732
+    source: :Elizabeth_II
+  AssignClass (9d4d1136-7cf3-482b-bf7b-705508220c7b)
+ Call ID: 9d4d1136-7cf3-482b-bf7b-705508220c7b
   Args:
-    relation: :hasBirthYear
-    source: Mélanie_de_Gaufridy_de_Dortan
-    literal_value: 1876
-    literal_type: xsd:integer
-  AddLiteral (3bc5cec5-bea8-4d5f-a858-c7607cc2f675)
- Call ID: 3bc5cec5-bea8-4d5f-a858-c7607cc2f675
+    type: :Man
+    source: :George_VI
+  AssignClass (33e0a2de-264a-4904-b484-9b9890964919)
+ Call ID: 33e0a2de-264a-4904-b484-9b9890964919
   Args:
-    relation: :hasDeathYear
-    source: Mélanie_de_Gaufridy_de_Dortan
-    literal_value: 1937
-    literal_type: xsd:integer
-  AddTriple (c2998a5b-0baf-4652-9ec5-c67132f48f8a)
- Call ID: c2998a5b-0baf-4652-9ec5-c67132f48f8a
+    type: :Person
+    source: :George_VI
+  AssignClass (be4768b4-9a94-4195-8fa5-7beb9d19a2b3)
+ Call ID: be4768b4-9a94-4195-8fa5-7beb9d19a2b3
   Args:
-    source: Roger_de_Vilmorin
+    source: :Elizabeth_the_Queen_Mother
+    type: :Woman
+  AssignClass (1fe1c577-4009-4627-89da-6e78cc262c02)
+ Call ID: 1fe1c577-4009-4627-89da-6e78cc262c02
+  Args:
+    source: :Elizabeth_the_Queen_Mother
+    type: :Person
+  AddTriple (ca8a9d30-159b-4b18-9eba-39297e2ef7f4)
+ Call ID: ca8a9d30-159b-4b18-9eba-39297e2ef7f4
+  Args:
+    target: :George_VI
+    source: :Elizabeth_II
     relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-  AddTriple (5fc4376c-1812-4625-a7f2-34d711c669a5)
- Call ID: 5fc4376c-1812-4625-a7f2-34d711c669a5
+  AddTriple (e1b029a8-8244-492e-b7ec-736b7ef199ce)
+ Call ID: e1b029a8-8244-492e-b7ec-736b7ef199ce
   Args:
-    source: Roger_de_Vilmorin
+    target: :Elizabeth_the_Queen_Mother
     relation: :hasMother
-    target: Mélanie_de_Gaufridy_de_Dortan
-  AddTriple (d659bd77-412a-47d2-9598-14dc521fb02a)
- Call ID: d659bd77-412a-47d2-9598-14dc521fb02a
+    source: :Elizabeth_II
+  AssignClass (1ed53079-43fb-4f9e-bfe6-e5f23c318b15)
+ Call ID: 1ed53079-43fb-4f9e-bfe6-e5f23c318b15
   Args:
+    type: :Man
+    source: :Philip_Mountbatten
+  AssignClass (9f8c2955-8ebd-4e58-b61f-2f097a222020)
+ Call ID: 9f8c2955-8ebd-4e58-b61f-2f097a222020
+  Args:
+    type: :Person
+    source: :Philip_Mountbatten
+  AddTriple (bc2bae4e-5b50-459d-9a2d-02b3c460053c)
+ Call ID: bc2bae4e-5b50-459d-9a2d-02b3c460053c
+  Args:
+    target: :Philip_Mountbatten
+    source: :Elizabeth_II
+    relation: :hasRelation
+  AddLiteral (11662907-ef28-4145-a016-b137e4b2491b)
+ Call ID: 11662907-ef28-4145-a016-b137e4b2491b
+  Args:
+    source: :Elizabeth_II
+    relation: :hasMarriageYear
+    literal_value: 1947
+    literal_type: xsd:integer
+  AssignClass (37d9ba35-4262-4c6f-939c-df7156af90a6)
+ Call ID: 37d9ba35-4262-4c6f-939c-df7156af90a6
+  Args:
+    source: :Charles
+    type: :Man
+  AssignClass (7a6d7587-e8b5-4b42-9bcf-44fef8c9dd1b)
+ Call ID: 7a6d7587-e8b5-4b42-9bcf-44fef8c9dd1b
+  Args:
+    type: :Person
+    source: :Charles
+  AssignClass (54a2cdde-5b5d-45ed-9a14-b23161eaf8b5)
+ Call ID: 54a2cdde-5b5d-45ed-9a14-b23161eaf8b5
+  Args:
+    type: :Woman
+    source: :Anne
+  AssignClass (94f88f72-8e13-4127-b78b-ad949acf00cb)
+ Call ID: 94f88f72-8e13-4127-b78b-ad949acf00cb
+  Args:
+    source: :Anne
+    type: :Person
+  AssignClass (bb0a06ca-ee50-435a-a2f3-b845d5a49e64)
+ Call ID: bb0a06ca-ee50-435a-a2f3-b845d5a49e64
+  Args:
+    type: :Man
+    source: :Andrew
+  AssignClass (fbf82c5f-bc31-48e5-94e0-faa32a6891bc)
+ Call ID: fbf82c5f-bc31-48e5-94e0-faa32a6891bc
+  Args:
+    source: :Andrew
+    type: :Person
+  AssignClass (c96bb80b-c4a4-4ddf-a0ba-833fd91610ff)
+ Call ID: c96bb80b-c4a4-4ddf-a0ba-833fd91610ff
+  Args:
+    source: :Edward
+    type: :Man
+  AssignClass (66df2b3e-afc1-4fcd-9a78-d200083e5e94)
+ Call ID: 66df2b3e-afc1-4fcd-9a78-d200083e5e94
+  Args:
+    type: :Person
+    source: :Edward
+  AddTriple (5a1faff6-d8a9-4301-ab34-38565076e3c3)
+ Call ID: 5a1faff6-d8a9-4301-ab34-38565076e3c3
+  Args:
+    relation: :hasChild
+    source: :Elizabeth_II
+    target: :Charles
+  AddTriple (e9c1a1ea-8dab-4565-b173-c044c9cebe33)
+ Call ID: e9c1a1ea-8dab-4565-b173-c044c9cebe33
+  Args:
+    target: :Anne
+    source: :Elizabeth_II
+    relation: :hasChild
+  AddTriple (763fd78e-dd2b-411a-bd2a-273dbd7a589e)
+ Call ID: 763fd78e-dd2b-411a-bd2a-273dbd7a589e
+  Args:
+    target: :Andrew
+    relation: :hasChild
+    source: :Elizabeth_II
+  AddTriple (0ff78c5a-4b57-4232-8e8f-88a755a78d1b)
+ Call ID: 0ff78c5a-4b57-4232-8e8f-88a755a78d1b
+  Args:
+    source: :Elizabeth_II
+    relation: :hasChild
+    target: :Edward
+  AssignClass (b1ecde06-e7df-4993-8bba-99296e287cf0)
+ Call ID: b1ecde06-e7df-4993-8bba-99296e287cf0
+  Args:
+    source: :Margaret
+    type: :Woman
+  AssignClass (aefedfb9-8d08-444a-afcb-295e97ed816a)
+ Call ID: aefedfb9-8d08-444a-afcb-295e97ed816a
+  Args:
+    source: :Margaret
+    type: :Person
+  AddTriple (05d04af7-dfc9-4e97-ad0b-4b261bd143d3)
+ Call ID: 05d04af7-dfc9-4e97-ad0b-4b261bd143d3
+  Args:
+    relation: :isSiblingOf
+    source: :Elizabeth_II
+    target: :Margaret
+  AssignClass (0cc9677d-f079-4df2-a57f-a2b04e6ee25b)
+ Call ID: 0cc9677d-f079-4df2-a57f-a2b04e6ee25b
+  Args:
+    source: :George_V
+    type: :Man
+  AssignClass (12480d1b-e4f5-4943-9b02-05572f374aa6)
+ Call ID: 12480d1b-e4f5-4943-9b02-05572f374aa6
+  Args:
+    type: :Person
+    source: :George_V
+  AssignClass (8bb2edf0-6d17-453e-a9fe-a55d03b343f6)
+ Call ID: 8bb2edf0-6d17-453e-a9fe-a55d03b343f6
+  Args:
+    source: :Queen_Mary
+    type: :Woman
+  AssignClass (bdcccce4-8646-41ce-a284-8b8e536e63c4)
+ Call ID: bdcccce4-8646-41ce-a284-8b8e536e63c4
+  Args:
+    type: :Person
+    source: :Queen_Mary
+  AddTriple (82d8114a-e4b0-4edb-8798-ae0c60964bcc)
+ Call ID: 82d8114a-e4b0-4edb-8798-ae0c60964bcc
+  Args:
+    target: :George_V
+    source: :George_VI
     relation: :hasFather
-    target: Philippe_de_Vilmorin
-    source: Roger_de_Vilmorin
-  AddTriple (5bc246d9-2a69-4dab-8925-c6448c83c528)
- Call ID: 5bc246d9-2a69-4dab-8925-c6448c83c528
+  AddTriple (f56136da-5f6a-4ee8-a22e-67b3bc9caf4f)
+ Call ID: f56136da-5f6a-4ee8-a22e-67b3bc9caf4f
   Args:
-    source: Roger_de_Vilmorin
-    relation: :hasBrother
-    target: Olivier
-  Finish (599c8305-2bff-47a1-96b6-3840e3ed4538)
- Call ID: 599c8305-2bff-47a1-96b6-3840e3ed4538
+    target: :Queen_Mary
+    relation: :hasMother
+    source: :George_VI
+  AssignClass (f3c67a68-ecda-42e3-b943-55639396955d)
+ Call ID: f3c67a68-ecda-42e3-b943-55639396955d
   Args:
+    type: :Man
+    source: :Edward_VIII
+  AssignClass (dba52f60-5c04-408d-a9de-a936eeea1cd6)
+ Call ID: dba52f60-5c04-408d-a9de-a936eeea1cd6
+  Args:
+    source: :Edward_VIII
+    type: :Person
+  AddTriple (6a00f996-30f5-4802-b2d5-e1599ea7e1ed)
+ Call ID: 6a00f996-30f5-4802-b2d5-e1599ea7e1ed
+  Args:
+    relation: :isBrotherOf
+    source: :Edward_VIII
+    target: :George_VI
+  AssignClass (87c6a8ce-e9e3-408b-a38f-5231c5372034)
+ Call ID: 87c6a8ce-e9e3-408b-a38f-5231c5372034
+  Args:
+    type: :Man
+    source: :Claude_Bowes-Lyon
+  AssignClass (2ec691ab-0ac6-4c95-80fb-d922ce89a58d)
+ Call ID: 2ec691ab-0ac6-4c95-80fb-d922ce89a58d
+  Args:
+    source: :Claude_Bowes-Lyon
+    type: :Person
+  AddTriple (4be03ebe-86f8-41de-8436-759c553c197f)
+ Call ID: 4be03ebe-86f8-41de-8436-759c553c197f
+  Args:
+    target: :Claude_Bowes-Lyon
+    source: :Elizabeth_the_Queen_Mother
+    relation: :hasFather
+  Finish (d26f062c-56ca-49a2-b827-12df48969d52)
+ Call ID: d26f062c-56ca-49a2-b827-12df48969d52
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -534,28 +1135,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Roger_de_Vilmorin a :Man,
+  data:Edward_VIII a :Man,
           :Person ;
-      :hasBirthYear 1905 ;
-      :hasBrother data:Olivier ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Alfonso_XIII_of_Spain,
-          data:Philippe_de_Vilmorin ;
-      :hasMother data:M%C3%A9lanie_de_Gaufridy_de_Dortan .
+      :isBrotherOf data:George_VI .
 
-  data:Alfonso_XIII_of_Spain a :Man,
-          :Person .
-
-  data:M%C3%A9lanie_de_Gaufridy_de_Dortan a :Person,
+  data:Elizabeth_II a :Person,
           :Woman ;
-      :hasBirthYear 1876 ;
-      :hasDeathYear 1937 .
+      :hasBirthYear 1926 ;
+      :hasChild data:Andrew,
+          data:Anne,
+          data:Charles,
+          data:Edward ;
+      :hasDeathYear 2022 ;
+      :hasFather data:George_VI ;
+      :hasMarriageYear 1947 ;
+      :hasMother data:Elizabeth_the_Queen_Mother ;
+      :hasRelation data:Philip_Mountbatten ;
+      :isSiblingOf data:Margaret .
 
-  data:Olivier a :Man,
+  data:Andrew a :Man,
           :Person .
 
-  data:Philippe_de_Vilmorin a :Man,
+  data:Anne a :Person,
+          :Woman .
+
+  data:Charles a :Man,
           :Person .
+
+  data:Claude_Bowes-Lyon a :Man,
+          :Person .
+
+  data:Edward a :Man,
+          :Person .
+
+  data:Elizabeth_the_Queen_Mother a :Person,
+          :Woman ;
+      :hasFather data:Claude_Bowes-Lyon .
+
+  data:George_V a :Man,
+          :Person .
+
+  data:Margaret a :Person,
+          :Woman .
+
+  data:Philip_Mountbatten a :Man,
+          :Person .
+
+  data:Queen_Mary a :Person,
+          :Woman .
+
+  data:George_VI a :Man,
+          :Person ;
+      :hasFather data:George_V ;
+      :hasMother data:Queen_Mary .
 
 
 
@@ -567,110 +1199,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (26f9a430-cbd4-4707-bb6e-74f601de9087)
- Call ID: 26f9a430-cbd4-4707-bb6e-74f601de9087
+  ValidateShacl (141ef06c-9556-4445-af44-ba935ed0d05c)
+ Call ID: 141ef06c-9556-4445-af44-ba935ed0d05c
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Philippe_de_Vilmorin' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node George_V for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philippe_de_Vilmorin', class=':Man')
+      AssignClass(node='George_V', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_XIII_of_Spain' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node Queen_Mary for property :hasMother does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_XIII_of_Spain', class=':Man')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:Roger_de_Vilmorin->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The property 'hasFather' allows only one value, but multiple fathers are assigned for 'Roger_de_Vilmorin'.
+      The value node George_V for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Roger_de_Vilmorin', predicate=':hasFather', object='Alfonso_XIII_of_Spain')
+      AssignClass(node='George_V', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Mélanie_de_Gaufridy_de_Dortan' linked via 'hasMother' is not classified as an 'Ancestor' or 'Woman'.
+      The value node George_VI for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mélanie_de_Gaufridy_de_Dortan', class=':Woman')
+      AssignClass(node='George_VI', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Philippe_de_Vilmorin' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node Claude_Bowes-Lyon for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philippe_de_Vilmorin', class=':Man')
+      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_XIII_of_Spain' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node Queen_Mary for property :hasMother does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_XIII_of_Spain', class=':Man')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: More than 1 values on data:Roger_de_Vilmorin->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The property 'hasFather' allows only one value, but multiple fathers are assigned for 'Roger_de_Vilmorin'.
+      The value node Elizabeth_the_Queen_Mother for property :hasMother does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Roger_de_Vilmorin', predicate=':hasFather', object='Alfonso_XIII_of_Spain')
+      AssignClass(node='Elizabeth_the_Queen_Mother', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Mélanie_de_Gaufridy_de_Dortan' linked via 'hasMother' is not classified as an 'Ancestor' or 'Woman'.
+      The value node George_V for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mélanie_de_Gaufridy_de_Dortan', class=':Woman')
+      AssignClass(node='George_V', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Philippe_de_Vilmorin' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node George_VI for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philippe_de_Vilmorin', class=':Man')
+      AssignClass(node='George_VI', class=':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_XIII_of_Spain' linked via 'hasFather' is not classified as an 'Ancestor' or 'Man'.
+      The value node Claude_Bowes-Lyon for property :hasFather does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_XIII_of_Spain', class=':Man')
+      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: More than 1 values on data:Roger_de_Vilmorin->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The property 'hasFather' allows only one value, but multiple fathers are assigned for 'Roger_de_Vilmorin'.
+      The value node Queen_Mary for property :hasMother does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Roger_de_Vilmorin', predicate=':hasFather', object='Alfonso_XIII_of_Spain')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Mélanie_de_Gaufridy_de_Dortan' linked via 'hasMother' is not classified as an 'Ancestor' or 'Woman'.
+      The value node Elizabeth_the_Queen_Mother for property :hasMother does not have the required class :Ancestor assigned.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mélanie_de_Gaufridy_de_Dortan', class=':Woman')
+      AssignClass(node='Elizabeth_the_Queen_Mother', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_VI for property :hasFather does not have the required class :Ancestor assigned.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_VI', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Claude_Bowes-Lyon for property :hasFather does not have the required class :Ancestor assigned.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Elizabeth_the_Queen_Mother for property :hasMother does not have the required class :Ancestor assigned.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Elizabeth_the_Queen_Mother', class=':Ancestor')
 
 
 
@@ -679,35 +1335,33 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (c4654763-1865-4a68-904e-d2944f6bbddc)
- Call ID: c4654763-1865-4a68-904e-d2944f6bbddc
+  AssignClass (ed25a16e-63f5-47f4-9e8b-6289f96814f0)
+ Call ID: ed25a16e-63f5-47f4-9e8b-6289f96814f0
   Args:
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Roger_de_Vilmorin
-  AssignClass (ea9fdfbd-b065-4966-902c-3feac7ba4626)
- Call ID: ea9fdfbd-b065-4966-902c-3feac7ba4626
+    source: :George_V
+    type: :Ancestor
+  AssignClass (7425afae-587f-4c50-b6a7-7acc89bcfeb0)
+ Call ID: 7425afae-587f-4c50-b6a7-7acc89bcfeb0
   Args:
     type: :Ancestor
-    source: Philippe_de_Vilmorin
-  AssignClass (0befbc8e-28f0-4516-a015-638a7b031422)
- Call ID: 0befbc8e-28f0-4516-a015-638a7b031422
+    source: :Queen_Mary
+  AssignClass (ef060968-54e8-4ab3-aa53-b135d497376b)
+ Call ID: ef060968-54e8-4ab3-aa53-b135d497376b
   Args:
-    source: Alfonso_XIII_of_Spain
+    source: :George_VI
     type: :Ancestor
-  AssignClass (bc88e96e-725d-4a9d-b12c-7c3d72968e9e)
- Call ID: bc88e96e-725d-4a9d-b12c-7c3d72968e9e
+  AssignClass (3e4393f9-c007-45e4-9644-87a2eba6a2e6)
+ Call ID: 3e4393f9-c007-45e4-9644-87a2eba6a2e6
   Args:
     type: :Ancestor
-    source: Mélanie_de_Gaufridy_de_Dortan
-  AddTriple (b930a8a6-b821-452d-a382-ca44ac58187c)
- Call ID: b930a8a6-b821-452d-a382-ca44ac58187c
+    source: :Claude_Bowes-Lyon
+  AssignClass (5792bf51-3dbc-4dff-abe1-bfb3e9190263)
+ Call ID: 5792bf51-3dbc-4dff-abe1-bfb3e9190263
   Args:
-    source: Roger_de_Vilmorin
-    target: Alfonso_XIII_of_Spain
-    relation: :hasAncestor
-  Finish (e96a51a8-6366-426a-97f9-e5adbf87b1b9)
- Call ID: e96a51a8-6366-426a-97f9-e5adbf87b1b9
+    type: :Ancestor
+    source: :Elizabeth_the_Queen_Mother
+  ValidateShacl (62bcd49d-6912-4b9d-99ec-87417e11fd9b)
+ Call ID: 62bcd49d-6912-4b9d-99ec-87417e11fd9b
   Args:
 
 ================================= Tool Message =================================
@@ -733,45 +1387,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Roger_de_Vilmorin a :Man,
+  data:Edward_VIII a :Man,
           :Person ;
-      :hasAncestor data:Alfonso_XIII_of_Spain ;
-      :hasBirthYear 1905 ;
-      :hasBrother data:Olivier ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Philippe_de_Vilmorin ;
-      :hasMother data:M%C3%A9lanie_de_Gaufridy_de_Dortan .
+      :isBrotherOf data:George_VI .
 
-  data:Alfonso_XIII_of_Spain a :Ancestor,
+  data:Elizabeth_II a :Person,
+          :Woman ;
+      :hasBirthYear 1926 ;
+      :hasChild data:Andrew,
+          data:Anne,
+          data:Charles,
+          data:Edward ;
+      :hasDeathYear 2022 ;
+      :hasFather data:George_VI ;
+      :hasMarriageYear 1947 ;
+      :hasMother data:Elizabeth_the_Queen_Mother ;
+      :hasRelation data:Philip_Mountbatten ;
+      :isSiblingOf data:Margaret .
+
+  data:Andrew a :Man,
+          :Person .
+
+  data:Anne a :Person,
+          :Woman .
+
+  data:Charles a :Man,
+          :Person .
+
+  data:Claude_Bowes-Lyon a :Ancestor,
           :Man,
           :Person .
 
-  data:M%C3%A9lanie_de_Gaufridy_de_Dortan a :Ancestor,
+  data:Edward a :Man,
+          :Person .
+
+  data:Elizabeth_the_Queen_Mother a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1876 ;
-      :hasDeathYear 1937 .
+      :hasFather data:Claude_Bowes-Lyon .
 
-  data:Olivier a :Man,
-          :Person .
-
-  data:Philippe_de_Vilmorin a :Ancestor,
+  data:George_V a :Ancestor,
           :Man,
           :Person .
 
+  data:Margaret a :Person,
+          :Woman .
+
+  data:Philip_Mountbatten a :Man,
+          :Person .
+
+  data:Queen_Mary a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:George_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:George_V ;
+      :hasMother data:Queen_Mary .
 
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (dfcff420-6074-42e3-a022-c657eaf9cc66)
- Call ID: dfcff420-6074-42e3-a022-c657eaf9cc66
-  Args:
 
 ================================= Tool Message =================================
 
@@ -781,6 +1456,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f7c9331a-8efa-42ba-864e-9618bf22ed98)
- Call ID: f7c9331a-8efa-42ba-864e-9618bf22ed98
+  Finish (1f2af641-f292-456a-8b8c-6addf3167ac2)
+ Call ID: 1f2af641-f292-456a-8b8c-6addf3167ac2
   Args:

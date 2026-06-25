@@ -1,0 +1,292 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:George_VI .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Elizabeth_II,
+        data:George_VI,
+        data:Margaret ;
+    :isAuntOf data:George_VI ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Elizabeth_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Margaret ;
+    :isAuntOf data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon ;
+    :isMotherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon .
+
+data:Duke_of_Kent a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Prince_Henry a :Man,
+        :Person ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :hasSister data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSisterOf data:Elizabeth_II,
+        data:Margaret .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :hasChild data:Elizabeth_II,
+        data:Margaret ;
+    :hasDaughter data:Elizabeth_II,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Margaret,
+        data:Prince_Henry,
+        data:Queen_Mary ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Margaret ;
+    :isBloodrelationOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isBrotherOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Elizabeth_II,
+        data:Margaret ;
+    :isParentOf data:Elizabeth_II,
+        data:Margaret ;
+    :isSiblingOf data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Henry ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Elizabeth_II,
+        data:Margaret ;
+    :knownAs "Bertie"^^xsd:string .
+

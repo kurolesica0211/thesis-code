@@ -7,16 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Pia_Maria_of_Orléans-Braganza a :Person ;
+    rdfs:label "Pia Maria of Orléans-Braganza" ;
+    data:wdtLink wdt:Q3382159 ;
+    :alsoKnownAs "Pia Maria Raniera de Orléans e Bragança",
+        "Pia Maria de Orléans-Bragança e Borbon" ;
+    :hasParent data:Luís_de_Orléans_e_Bragança ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Luís_de_Orléans_e_Bragança a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Luís_de_Orléans_e_Bragança a :Person ;
     rdfs:label "Luís de Orléans e Bragança" ;
     data:posIndicesFull "0:31",
         "5898:5924",
@@ -62,22 +67,9 @@ data:Luís_de_Orléans_e_Bragança a :Ancestor,
     data:wdtLink wdt:Q2617325 ;
     :alsoKnownAs "Luis of Orleans-Braganza",
         "Prince Luís of Orléans-Braganza" ;
-    :hasChild data:Pia_Maria_of_Orléans-Braganza ;
-    :hasDaughter data:Pia_Maria_of_Orléans-Braganza ;
-    :hasSex data:male ;
-    :isFatherOf data:Pia_Maria_of_Orléans-Braganza ;
-    :isParentOf data:Pia_Maria_of_Orléans-Braganza .
+    :hasSex data:male .
 
-data:Pia_Maria_of_Orléans-Braganza a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Pia Maria of Orléans-Braganza" ;
-    data:wdtLink wdt:Q3382159 ;
-    :alsoKnownAs "Pia Maria Raniera de Orléans e Bragança",
-        "Pia Maria de Orléans-Bragança e Borbon" ;
-    :hasFather data:Luís_de_Orléans_e_Bragança ;
-    :hasParent data:Luís_de_Orléans_e_Bragança ;
-    :hasSex data:female ;
-    :isChildOf data:Luís_de_Orléans_e_Bragança ;
-    :isDaughterOf data:Luís_de_Orléans_e_Bragança .
+data:female a :Female .
+
+data:male a :Male .
 

@@ -2,50 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:AriprandVonThurnUndValsassinaComoVercelli a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
-
-data:ErnstAugustElderBrother a :Man,
-        :Person ;
-    :isBrotherOf data:LudwigRudolfOfHanover .
-
-data:ErnstAugustPrinceOfHanover a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:LudwigRudolfOfHanover .
-
-data:MariaPerpetuaEuphemiaVonAuersperg a :Ancestor,
-        :Person,
+data:Marina_Victoria_Alexandra_Ogilvy a :Ancestor,
         :Woman ;
-    :isMotherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+    :hasBirthYear 1966 ;
+    :hasBrother data:James_Ogilvy ;
+    :hasChild data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMarriageYear 1990 ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
+    :hasRelation data:Paul_Julian_Mowatt .
 
-data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:LudwigRudolfOfHanover .
+data:James_Ogilvy a :Man ;
+    :hasBirthYear 1964 .
 
-data:OttoHeinrich a :Man,
-        :Person ;
-    :isSonOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli,
-        data:LudwigRudolfOfHanover .
+data:Paul_Julian_Mowatt a :Ancestor,
+        :Man ;
+    :hasBirthYear 1962 ;
+    :hasChild data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
 
-data:Female a :Sex .
+data:Princess_Alexandra_of_Kent a :Ancestor,
+        :Woman .
 
-data:Male a :Male .
+data:Sir_Angus_Ogilvy a :Ancestor,
+        :Man .
 
-data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Christian_Alexander_Mowatt a :Man ;
+    :hasBirthYear 1993 .
 
-data:LudwigRudolfOfHanover a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1955 ;
-    :hasDeathYear 1988 ;
-    :hasMarriageYear 1987 ;
-    :hasRelation data:IsabellaMariaVonThurnUndValsassinaComoVercelli ;
-    :hasSex data:Male .
+data:Zenouska_May_Mowatt a :Woman ;
+    :hasBirthYear 1990 .
 

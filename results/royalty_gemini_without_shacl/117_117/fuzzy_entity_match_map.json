@@ -16,83 +16,90 @@
       "qid": "Q19943",
       "label": "Juan Carlos I of Spain",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Felipe_VI_of_Spain",
       "qid": "Q191045",
       "label": "Felipe VI of Spain",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Infanta_Cristina_of_Spain",
       "qid": "Q230580",
       "label": "Infanta Cristina of Spain",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
-      "qid": "Q237165",
-      "label": "Infanta Margarita, Duchess of Soria",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
       "qid": "Q235128",
       "label": "Infanta María de las Mercedes, Countess of Barcelona",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infanta_Pilar-_Duchess_of_Badajoz",
-      "qid": "Q240580",
-      "label": "Infanta Pilar, Duchess of Badajoz",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
       "qid": "Q313857",
       "label": "Infante Juan, Count of Barcelona",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Alfonso_XIII",
       "qid": "Q18363",
       "label": "Alfonso XIII",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Fernand_Sanz",
-      "qid": "Q26455",
-      "label": "Fernand Sanz",
+      "uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
+      "qid": "Q237165",
+      "label": "Infanta Margarita, Duchess of Soria",
       "distance": 2,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Infanta_Pilar-_Duchess_of_Badajoz",
+      "qid": "Q240580",
+      "label": "Infanta Pilar, Duchess of Badajoz",
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Infanta_Sofía_of_Spain",
       "qid": "Q847010",
       "label": "Infanta Sofía of Spain",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Queen_Sofía_of_Spain",
       "qid": "Q156548",
       "label": "Queen Sofía of Spain",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Frederica_of_Hanover",
+      "qid": "Q61351",
+      "label": "Frederica of Hanover",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Paul_of_Greece",
+      "qid": "Q155394",
+      "label": "Paul of Greece",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Alfonso_XIII",
-      "extracted_local_name": "Alfonso_XIII",
+      "extracted_uri": "http://example.org/data/AlfonsoXIII",
+      "extracted_local_name": "AlfonsoXIII",
       "embedding_text": "Alfonso XIII",
       "extracted_gender": "male",
       "matched": true,
@@ -101,16 +108,16 @@
       "ground_truth_qid": "Q18363",
       "ground_truth_label": "Alfonso XIII",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Alfonso XIII",
       "best_candidate_label": "Alfonso XIII",
       "best_candidate_qid": "Q18363",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Felipe_VI",
-      "extracted_local_name": "Felipe_VI",
+      "extracted_uri": "http://example.org/data/FelipeVI",
+      "extracted_local_name": "FelipeVI",
       "embedding_text": "Felipe VI",
       "extracted_gender": "male",
       "matched": true,
@@ -119,16 +126,16 @@
       "ground_truth_qid": "Q191045",
       "ground_truth_label": "Felipe VI of Spain",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Felipe VI",
       "best_candidate_label": "Felipe VI of Spain",
       "best_candidate_qid": "Q191045",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Juan_Carlos_I",
-      "extracted_local_name": "Juan_Carlos_I",
+      "extracted_uri": "http://example.org/data/JuanCarlosI",
+      "extracted_local_name": "JuanCarlosI",
       "embedding_text": "Juan Carlos I",
       "extracted_gender": "male",
       "matched": true,
@@ -137,88 +144,34 @@
       "ground_truth_qid": "Q19943",
       "ground_truth_label": "Juan Carlos I of Spain",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Juan Carlos I",
       "best_candidate_label": "Juan Carlos I of Spain",
       "best_candidate_qid": "Q19943",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies",
-      "extracted_local_name": "Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies",
-      "embedding_text": "Princess Maria de las Mercedes of Bourbon-Two Sicilies",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
-      "ground_truth_qid": "Q235128",
-      "ground_truth_label": "Infanta María de las Mercedes, Countess of Barcelona",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Maria de las Mercedes of Bourbon-Two Sicilies",
-      "best_candidate_label": "Infanta María de las Mercedes, Countess of Barcelona",
-      "best_candidate_qid": "Q235128",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infanta_Margarita_Duchess_of_Soria",
-      "extracted_local_name": "Infanta_Margarita_Duchess_of_Soria",
-      "embedding_text": "Infanta Margarita Duchess of Soria",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.9904761904761905,
-      "ground_truth_uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
-      "ground_truth_qid": "Q237165",
-      "ground_truth_label": "Infanta Margarita, Duchess of Soria",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Infanta Margarita- Duchess of Soria",
-      "best_candidate_label": "Infanta Margarita, Duchess of Soria",
-      "best_candidate_qid": "Q237165",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.9904761904761905
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infanta_Pilar_Duchess_of_Badajoz",
-      "extracted_local_name": "Infanta_Pilar_Duchess_of_Badajoz",
-      "embedding_text": "Infanta Pilar Duchess of Badajoz",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.9876543209876543,
-      "ground_truth_uri": "http://example.com/data#Infanta_Pilar-_Duchess_of_Badajoz",
-      "ground_truth_qid": "Q240580",
-      "ground_truth_label": "Infanta Pilar, Duchess of Badajoz",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Infanta Pilar- Duchess of Badajoz",
-      "best_candidate_label": "Infanta Pilar, Duchess of Badajoz",
-      "best_candidate_qid": "Q240580",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.9876543209876543
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infante_Juan_Count_of_Barcelona",
-      "extracted_local_name": "Infante_Juan_Count_of_Barcelona",
-      "embedding_text": "Infante Juan Count of Barcelona",
+      "extracted_uri": "http://example.org/data/KingPaulOfGreece",
+      "extracted_local_name": "KingPaulOfGreece",
+      "embedding_text": "King Paul Of Greece",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.9841269841269842,
-      "ground_truth_uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
-      "ground_truth_qid": "Q313857",
-      "ground_truth_label": "Infante Juan, Count of Barcelona",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Infante Juan- Count of Barcelona",
-      "best_candidate_label": "Infante Juan, Count of Barcelona",
-      "best_candidate_qid": "Q313857",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9841269841269842
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Paul_of_Greece",
+      "ground_truth_qid": "Q155394",
+      "ground_truth_label": "Paul of Greece",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King Paul of Greece",
+      "best_candidate_label": "Paul of Greece",
+      "best_candidate_qid": "Q155394",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Queen_Sofia",
-      "extracted_local_name": "Queen_Sofia",
+      "extracted_uri": "http://example.org/data/QueenSofia",
+      "extracted_local_name": "QueenSofia",
       "embedding_text": "Queen Sofia",
       "extracted_gender": "female",
       "matched": true,
@@ -227,12 +180,48 @@
       "ground_truth_qid": "Q156548",
       "ground_truth_label": "Queen Sofía of Spain",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Queen Sofía",
       "best_candidate_label": "Queen Sofía of Spain",
       "best_candidate_qid": "Q156548",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessMariaDeLasMercedes",
+      "extracted_local_name": "PrincessMariaDeLasMercedes",
+      "embedding_text": "Princess Maria De Las Mercedes",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8333333333333334,
+      "ground_truth_uri": "http://example.com/data#Infanta_María_de_las_Mercedes-_Countess_of_Barcelona",
+      "ground_truth_qid": "Q235128",
+      "ground_truth_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Maria de las Mercedes of Bourbon-Two Sicilies",
+      "best_candidate_label": "Infanta María de las Mercedes, Countess of Barcelona",
+      "best_candidate_qid": "Q235128",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8333333333333334
+    },
+    {
+      "extracted_uri": "http://example.org/data/InfantaMargarita",
+      "extracted_local_name": "InfantaMargarita",
+      "embedding_text": "Infanta Margarita",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Infanta_Margarita-_Duchess_of_Soria",
+      "ground_truth_qid": "Q237165",
+      "ground_truth_label": "Infanta Margarita, Duchess of Soria",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infanta Margarita- Duchess of Soria",
+      "best_candidate_label": "Infanta Margarita, Duchess of Soria",
+      "best_candidate_qid": "Q237165",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
     },
     {
       "extracted_uri": "http://example.org/data/Alfonso",
@@ -249,13 +238,31 @@
       "best_candidate_match_text": "Alfonso XIII",
       "best_candidate_label": "Alfonso XIII",
       "best_candidate_qid": "Q18363",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7368421052631579
     },
     {
-      "extracted_uri": "http://example.org/data/King_Paul_of_Greece",
-      "extracted_local_name": "King_Paul_of_Greece",
-      "embedding_text": "King Paul of Greece",
+      "extracted_uri": "http://example.org/data/InfantaPilar",
+      "extracted_local_name": "InfantaPilar",
+      "embedding_text": "Infanta Pilar",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Juan Carlos I",
+      "best_candidate_label": "Juan Carlos I of Spain",
+      "best_candidate_qid": "Q19943",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.38461538461538464
+    },
+    {
+      "extracted_uri": "http://example.org/data/InfanteJuan",
+      "extracted_local_name": "InfanteJuan",
+      "embedding_text": "Infante Juan",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -264,16 +271,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Fernand Sanz",
-      "best_candidate_label": "Fernand Sanz",
-      "best_candidate_qid": "Q26455",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.1935483870967742
+      "best_candidate_match_text": "Sofía de Borbón y Ortiz, infanta de España",
+      "best_candidate_label": "Infanta Sofía of Spain",
+      "best_candidate_qid": "Q847010",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3333333333333333
     }
   ],
   "summary": {
     "entities_total": 10,
-    "entities_matched": 8,
-    "entities_unmatched": 2
+    "entities_matched": 7,
+    "entities_unmatched": 3
   }
 }

@@ -4,45 +4,82 @@
 
 data:Louis_Mountbatten a :Man,
         :Person ;
+    :alsoKnownAs "Dickie"^^xsd:string ;
     :hasBirthYear 1900 ;
-    :hasDaughter data:Lady_Pamela_Hicks,
+    :hasBrother data:George_Mountbatten ;
+    :hasDaughter data:Pamela_Hicks,
         data:Patricia_Knatchbull ;
     :hasDeathYear 1979 ;
     :hasFather data:Prince_Louis_of_Battenberg ;
     :hasMarriageYear 1922 ;
     :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
     :hasRelation data:Edwina_Ashley ;
-    :isSiblingOf data:George_Mountbatten,
-        data:Princess_Alice_of_Battenberg,
-        data:Princess_Louise_of_Battenberg ;
+    :hasSister data:Alice_of_Battenberg,
+        data:Louise_of_Battenberg ;
     :knownAs "Lord Mountbatten"^^xsd:string .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Edwina_Ashley a :Person,
+        :Woman ;
+    :hasFather data:Wilfred_William_Ashley .
 
 data:George_Mountbatten a :Man,
         :Person .
 
-data:Lady_Pamela_Hicks a :Person,
-        :Woman ;
-    :hasMother data:Edwina_Ashley .
+data:Julia_Princess_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Patricia_Knatchbull a :Person,
-        :Woman ;
-    :hasMother data:Edwina_Ashley .
-
-data:Prince_Louis_of_Battenberg a :Ancestor,
+data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
         :Man,
         :Person .
 
-data:Princess_Alice_of_Battenberg a :Person,
+data:Louise_of_Battenberg a :Person,
         :Woman .
 
-data:Princess_Louise_of_Battenberg a :Person,
+data:Pamela_Hicks a :Person,
         :Woman .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg .
+
+data:Princess_Alice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasMother data:Queen_Victoria .
 
 data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Alice_of_the_United_Kingdom .
 
-data:Edwina_Ashley a :Ancestor,
+data:Queen_Victoria a :Ancestor,
         :Person,
         :Woman .
+
+data:Wilfred_William_Ashley a :Ancestor,
+        :Man,
+        :Person .
 

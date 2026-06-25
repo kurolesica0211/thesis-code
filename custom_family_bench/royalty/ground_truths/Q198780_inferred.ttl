@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Luís_de_Orléans_e_Bragança a :Man,
+        :Person ;
+    rdfs:label "Luís de Orléans e Bragança"^^xsd:string ;
+    data:posIndicesFull "1609:1633"^^xsd:string,
+        "284:308"^^xsd:string ;
+    data:posIndicesPart "1232:1239"^^xsd:string,
+        "395:402"^^xsd:string,
+        "669:676"^^xsd:string ;
+    data:wdtLink wdt:Q2617325 ;
+    :alsoKnownAs "Luis of Orleans-Braganza"^^xsd:string,
+        "Prince Luís of Orléans-Braganza"^^xsd:string ;
+    :hasBrother data:Luís_de_Orléans_e_Bragança ;
+    :hasRelation data:Luís_de_Orléans_e_Bragança ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Luís_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Luís_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Luís_de_Orléans_e_Bragança .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Elisabeth of Bavaria"^^xsd:string ;
+    data:posIndicesFull "1538:1573"^^xsd:string,
+        "691:726"^^xsd:string ;
+    data:posIndicesPart "1399:1407"^^xsd:string,
+        "1450:1457"^^xsd:string ;
+    data:wdtLink wdt:Q285326 ;
+    :alsoKnownAs "Maria Elisabeth Franziska Josepha Therese von Bayern"^^xsd:string,
+        "Maria Isabel da Baviera"^^xsd:string ;
+    :hasChild data:Bertrand_de_Orléans_e_Bragança ;
+    :hasRelation data:Bertrand_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Bertrand_de_Orléans_e_Bragança ;
+    :isAncestorOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isAuntOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isBloodrelationOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isParentOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Bertrand_de_Orléans_e_Bragança a :Man,
+        :Person ;
+    rdfs:label "Bertrand de Orléans e Bragança"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string ;
+    data:posIndicesPart "1162:1170"^^xsd:string,
+        "1232:1239"^^xsd:string,
+        "1517:1524"^^xsd:string,
+        "1714:1721"^^xsd:string,
+        "1852:1860"^^xsd:string,
+        "2073:2081"^^xsd:string,
+        "2103:2111"^^xsd:string,
+        "2361:2369"^^xsd:string,
+        "2427:2435"^^xsd:string,
+        "2741:2749"^^xsd:string,
+        "2933:2941"^^xsd:string,
+        "3111:3119"^^xsd:string,
+        "3352:3360"^^xsd:string,
+        "3395:3403"^^xsd:string,
+        "395:402"^^xsd:string,
+        "443:451"^^xsd:string,
+        "669:676"^^xsd:string,
+        "735:743"^^xsd:string,
+        "872:880"^^xsd:string ;
+    data:wdtLink wdt:Q198780 ;
+    :alsoKnownAs "Bertrand of Orleans-Braganza"^^xsd:string,
+        "Dom Beltrão de Orléans-Bragança e Wittelsbach"^^xsd:string ;
+    :hasAncestor data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Bertrand_de_Orléans_e_Bragança ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasRelation data:Bertrand_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isChildOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSiblingOf data:Bertrand_de_Orléans_e_Bragança ;
+    :isSonOf data:Princess_Maria_Elisabeth_of_Bavaria .
+

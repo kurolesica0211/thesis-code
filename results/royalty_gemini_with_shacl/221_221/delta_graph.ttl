@@ -2,54 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Crown_Prince_Pavlos a :Man,
-        :Person ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-data:Prince_Philippos a :Man,
-        :Person ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark .
-
-data:Queen_Sofia_of_Spain a :Person,
+data:Anne_Bowes-Lyon a :Person,
         :Woman ;
-    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .
+    :hasBirthYear 1917 ;
+    :hasChild data:Elizabeth_Shakerley,
+        data:Patrick_Anson ;
+    :hasDeathYear 1980 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMarriageYear 1938,
+        1950 ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
 
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Thomas_Anson a :Man,
+        :Person ;
+    :hasChild data:Elizabeth_Shakerley,
+        data:Patrick_Anson .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Man,
+        :Person .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Diana_Cinderella_Somervell a :Person,
         :Woman .
 
-data:Frederik_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person .
-
-data:Ingrid_of_Sweden a :Ancestor,
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
 
-data:King_Constantine_II_of_Greece a :Ancestor,
+data:John_Herbert_Bowes-Lyon a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:King_Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover .
+    :hasFather data:Claude_Bowes-Lyon .
 
-data:King_Paul_of_Greece a :Ancestor,
-        :Man,
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Nerissa_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Patricia_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Elizabeth_Shakerley a :Person,
+        :Woman .
+
+data:Patrick_Anson a :Man,
         :Person .
-
-data:Matthew_Jeremiah_Kumar a :Man,
-        :Person .
-
-data:Queen_Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden .
-
-data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :alsoKnownAs "Theodora Greece"^^xsd:string ;
-    :hasFather data:King_Constantine_II_of_Greece ;
-    :hasMarriageYear "2024"^^xsd:positiveInteger ;
-    :hasMother data:Queen_Anne-Marie_of_Greece ;
-    :hasRelation data:Matthew_Jeremiah_Kumar .
 

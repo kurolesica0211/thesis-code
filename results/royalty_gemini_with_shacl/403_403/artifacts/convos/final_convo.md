@@ -85,21 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Wolfgang of Hesse (Wolfgang Moritz Prinz von Hessen; 6 November 1896 – 12 July 1989) was the district administrator of Obertaunuskreis from 1933 to 1945.
-Wolfgang was born at Castle Rumpenheim, Offenbach am Main, the fourth son of Prince Frederick Charles of Hesse (1868–1940) and Princess Margaret of Prussia (1872–1954).
-His maternal uncle was the German Emperor Willhelm II.
-In World War I, Wolfgang served as an officer in the command of Field Marshal August von Mackensen.
-Towards the end of the war, Wolfgang's father Frederick Charles of Hesse was selected by the Central Powers as a prospective King of Finland on 9 October 1918, to replace his first cousin once removed, the deposed Russian emperor, Nicholas II, who was titled Grand Duke of Finland.
-Wolfgang was designated heir, in preference to his elder twin brother Philipp to ensure the separation of the thrones of Hesse and Finland.
-However, Frederick Charles renounced his candidature on 14 December 1918, and the title was never actually held by the family.
-Wolfgang married on 17 September 1924 Princess Marie Alexandra of Baden (1902–1944), daughter of Prince Maximilian of Baden and Princess Marie Louise of Hanover; they had no children.
-He joined the NSDAP and the SA in December 1933, and was appointed Landrat (district administrator) of Obertaunuskreis, a landkreis in the state of Hesse, serving in that capacity until the end of  World War II.
+Princess Feodora of Saxe-Meiningen (Feodora Karola Charlotte Marie Adelheid Auguste Mathilde; 29 May 1890 – 12 March 1972) was the eldest child of Prince Friedrich Johann of Saxe-Meiningen, a younger son of Georg II, Duke of Saxe-Meiningen, and Countess Adelaide of Lippe-Biesterfeld, a daughter of Ernst, Count of Lippe-Biesterfeld.
+By marriage, she was known as Grand Duchess of Saxe-Weimar-Eisenach.
+Biography
+
+Marriage
+
+During a summer visit to the palace Wilhelmshöhe, Feodora was urged by her kinsman Emperor Wilhelm II to make a match with the widowed Wilhelm Ernst, Grand Duke of Saxe-Weimar-Eisenach.
+This was seen by many to be due to mutual ill will between Wilhelm and Feodora's grandfather Georg II, Duke of Saxe-Meiningen, whose morganatic wedding to Ellen Franz had displeased many royal personages like Wilhelm.
+Wilhelm's disapproval was even more surprising in that he had recently allowed the marriage between a Hohenzollern dynast (Prince Frederick William of Prussia) with a much lower-ranked member of the nobility (Princess Agatha of Hohenlohe-Schillingsfürst); it was considered odd that he refused to recognize one equal marriage yet acknowledged another lesser match, especially when the latter was within his own family and subject to the rigid Hohenzollern house laws.
+The Emperor's boycott of the wedding was so strongly resented in Saxe-Meiningen that, when newspapers announced that Wilhelm would not be attending the wedding, the official communication from the royal palace declared that he had never been invited.
+On 14 January 1910 in Meiningen, Feodora was married to Wilhelm Ernst.
+She was his second wife (his first wife Princess Caroline Reuss, Elder Line had died childless after eighteen months of marriage in 1905).
+Court life
+
+
+Feodora's marriage was unhappy; the Weimar court was generally considered to be one of the most stifling and etiquette-driven in Germany.
+Feodora was unhappy in such an environment; at the age of 23, reports leaked out that she was staying at a sanatorium for her health.
+Feodora was very popular among the middle and lower classes of Weimar; this was largely attributed to her charm and kindness to the poor and suffering.
+Feodora died on 12 March 1972 in Freiburg
+Issue
+
+Feodora and her husband had four children:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +135,9 @@ He joined the NSDAP and the SA in December 1933, and was appointed Landrat (dist
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +152,23 @@ He joined the NSDAP and the SA in December 1933, and was appointed Landrat (dist
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,182 +460,166 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6e630cc7-3f0d-46f0-8de8-080781a43e89)
- Call ID: 6e630cc7-3f0d-46f0-8de8-080781a43e89
-  Args:
-    type: :Man
-    source: Wolfgang_of_Hesse
-  AssignClass (9f3c95b8-fc52-43a6-accb-aae3021d7ef8)
- Call ID: 9f3c95b8-fc52-43a6-accb-aae3021d7ef8
-  Args:
-    type: :Person
-    source: Wolfgang_of_Hesse
-  AddLiteral (1d60152d-10a9-45b4-82f2-40cab78fc536)
- Call ID: 1d60152d-10a9-45b4-82f2-40cab78fc536
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1896
-    source: Wolfgang_of_Hesse
-    literal_type: xsd:integer
-  AddLiteral (31b9df15-3d6a-4a31-9c16-33e5c4c2e7bb)
- Call ID: 31b9df15-3d6a-4a31-9c16-33e5c4c2e7bb
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1989
-    relation: :hasDeathYear
-    source: Wolfgang_of_Hesse
-  AssignClass (5d8e7921-3d25-4467-bcf5-a18dada9a40b)
- Call ID: 5d8e7921-3d25-4467-bcf5-a18dada9a40b
-  Args:
-    type: :Man
-    source: Frederick_Charles_of_Hesse
-  AssignClass (d65dcab5-f403-4f4d-8810-5d6ee3c245a7)
- Call ID: d65dcab5-f403-4f4d-8810-5d6ee3c245a7
-  Args:
-    type: :Person
-    source: Frederick_Charles_of_Hesse
-  AddLiteral (8e2e001e-931a-48ec-982a-54458cee356d)
- Call ID: 8e2e001e-931a-48ec-982a-54458cee356d
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1868
-    source: Frederick_Charles_of_Hesse
-  AddLiteral (193655e4-0d05-4369-9dd8-2ddb699cc3f8)
- Call ID: 193655e4-0d05-4369-9dd8-2ddb699cc3f8
-  Args:
-    literal_type: xsd:integer
-    source: Frederick_Charles_of_Hesse
-    relation: :hasDeathYear
-    literal_value: 1940
-  AssignClass (2cc774c8-5df9-48dc-9150-3b238e71d220)
- Call ID: 2cc774c8-5df9-48dc-9150-3b238e71d220
+  AssignClass (b66a634e-eda0-4f73-b21a-d188e670304a)
+ Call ID: b66a634e-eda0-4f73-b21a-d188e670304a
   Args:
     type: :Woman
-    source: Margaret_of_Prussia
-  AssignClass (9adf88aa-23ea-4fbb-b450-190a906ca282)
- Call ID: 9adf88aa-23ea-4fbb-b450-190a906ca282
+    source: :Feodora_of_Saxe-Meiningen
+  AssignClass (5c4a1bfe-2e17-407b-b189-0b419d2aac51)
+ Call ID: 5c4a1bfe-2e17-407b-b189-0b419d2aac51
   Args:
     type: :Person
-    source: Margaret_of_Prussia
-  AddLiteral (61aca299-dd29-4738-9abf-ed886c237443)
- Call ID: 61aca299-dd29-4738-9abf-ed886c237443
+    source: :Feodora_of_Saxe-Meiningen
+  AddLiteral (8ff74fc7-2a5c-4af8-95ca-f408b9a28ef6)
+ Call ID: 8ff74fc7-2a5c-4af8-95ca-f408b9a28ef6
   Args:
+    source: :Feodora_of_Saxe-Meiningen
+    literal_value: 1890
     literal_type: xsd:integer
-    source: Margaret_of_Prussia
     relation: :hasBirthYear
-    literal_value: 1872
-  AddLiteral (25cc8082-827a-4bb7-b95c-d638a33b3fb4)
- Call ID: 25cc8082-827a-4bb7-b95c-d638a33b3fb4
+  AddLiteral (3183ebc2-6e45-44ef-a3fe-55d638ce177e)
+ Call ID: 3183ebc2-6e45-44ef-a3fe-55d638ce177e
   Args:
+    source: :Feodora_of_Saxe-Meiningen
+    literal_value: 1972
     literal_type: xsd:integer
-    literal_value: 1954
     relation: :hasDeathYear
-    source: Margaret_of_Prussia
-  AddTriple (0f0bb13c-9309-49fd-9ec3-a9f2f48710a0)
- Call ID: 0f0bb13c-9309-49fd-9ec3-a9f2f48710a0
+  AddLiteral (842c7db1-5575-42e4-81e4-bafd3d8e7dc1)
+ Call ID: 842c7db1-5575-42e4-81e4-bafd3d8e7dc1
+  Args:
+    literal_value: Grand Duchess of Saxe-Weimar-Eisenach
+    literal_type: xsd:string
+    source: :Feodora_of_Saxe-Meiningen
+    relation: :alsoKnownAs
+  AssignClass (b1362fd3-ee81-4bac-9c32-7a9fcbd61209)
+ Call ID: b1362fd3-ee81-4bac-9c32-7a9fcbd61209
+  Args:
+    type: :Man
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+  AssignClass (1198bba8-7ca3-490b-a3b0-60ad9cae5a3e)
+ Call ID: 1198bba8-7ca3-490b-a3b0-60ad9cae5a3e
+  Args:
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (66cfbb73-1d66-40aa-9a96-5a1e86f16eaa)
+ Call ID: 66cfbb73-1d66-40aa-9a96-5a1e86f16eaa
   Args:
     relation: :hasFather
-    source: Wolfgang_of_Hesse
-    target: Frederick_Charles_of_Hesse
-  AddTriple (2a8a2d7b-3e90-4281-a44c-78d02479c9a4)
- Call ID: 2a8a2d7b-3e90-4281-a44c-78d02479c9a4
+    source: :Feodora_of_Saxe-Meiningen
+    target: :Friedrich_Johann_of_Saxe-Meiningen
+  AssignClass (42e42388-1ed7-420b-bde9-9a388153885c)
+ Call ID: 42e42388-1ed7-420b-bde9-9a388153885c
   Args:
-    target: Margaret_of_Prussia
-    source: Wolfgang_of_Hesse
+    source: :Adelaide_of_Lippe-Biesterfeld
+    type: :Woman
+  AssignClass (a290cd93-44bf-4fda-b0a3-1e0b3436c43d)
+ Call ID: a290cd93-44bf-4fda-b0a3-1e0b3436c43d
+  Args:
+    type: :Person
+    source: :Adelaide_of_Lippe-Biesterfeld
+  AddTriple (513f608d-7a5c-4b20-be44-c0e297c3934e)
+ Call ID: 513f608d-7a5c-4b20-be44-c0e297c3934e
+  Args:
     relation: :hasMother
-  AssignClass (5d4fdb00-7f17-4c73-a616-322c3bdf717a)
- Call ID: 5d4fdb00-7f17-4c73-a616-322c3bdf717a
+    source: :Feodora_of_Saxe-Meiningen
+    target: :Adelaide_of_Lippe-Biesterfeld
+  AssignClass (b945b97f-1ada-4ddb-8db5-ac991b4b4f56)
+ Call ID: b945b97f-1ada-4ddb-8db5-ac991b4b4f56
   Args:
     type: :Man
-    source: Philipp_of_Hesse
-  AssignClass (efd00687-6021-4849-b5fa-3a1b17fb3eea)
- Call ID: efd00687-6021-4849-b5fa-3a1b17fb3eea
+    source: :Georg_II_Duke_of_Saxe-Meiningen
+  AssignClass (d9263680-dfad-4fff-8fda-13403de7b69e)
+ Call ID: d9263680-dfad-4fff-8fda-13403de7b69e
   Args:
+    source: :Georg_II_Duke_of_Saxe-Meiningen
     type: :Person
-    source: Philipp_of_Hesse
-  AddTriple (0947e574-4daa-4f76-830d-cf8125885136)
- Call ID: 0947e574-4daa-4f76-830d-cf8125885136
+  AddTriple (60d57bb4-d210-45f0-aee3-d092282a8f2e)
+ Call ID: 60d57bb4-d210-45f0-aee3-d092282a8f2e
   Args:
-    relation: :hasBrother
-    target: Philipp_of_Hesse
-    source: Wolfgang_of_Hesse
-  AssignClass (c072a0c1-7dcc-4ec6-b5c7-0aacf1914f4d)
- Call ID: c072a0c1-7dcc-4ec6-b5c7-0aacf1914f4d
+    relation: :hasFather
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+    target: :Georg_II_Duke_of_Saxe-Meiningen
+  AssignClass (89f2c999-a032-47df-b195-00b25fdd15b8)
+ Call ID: 89f2c999-a032-47df-b195-00b25fdd15b8
   Args:
-    type: :Woman
-    source: Marie_Alexandra_of_Baden
-  AssignClass (91ece6c9-d643-4fa0-a6f0-82eb1f01f08b)
- Call ID: 91ece6c9-d643-4fa0-a6f0-82eb1f01f08b
+    source: :Ernst_Count_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (c266c789-98c2-4b7a-b2f2-756e735d7d00)
+ Call ID: c266c789-98c2-4b7a-b2f2-756e735d7d00
   Args:
+    source: :Ernst_Count_of_Lippe-Biesterfeld
     type: :Person
-    source: Marie_Alexandra_of_Baden
-  AddLiteral (7521c7b7-c6ac-41f6-a867-bec6263ac724)
- Call ID: 7521c7b7-c6ac-41f6-a867-bec6263ac724
+  AddTriple (97e2499f-89ae-4ffc-b816-23a5e12c218d)
+ Call ID: 97e2499f-89ae-4ffc-b816-23a5e12c218d
   Args:
-    source: Marie_Alexandra_of_Baden
-    literal_value: 1902
-    relation: :hasBirthYear
+    relation: :hasFather
+    source: :Adelaide_of_Lippe-Biesterfeld
+    target: :Ernst_Count_of_Lippe-Biesterfeld
+  AssignClass (bf53730a-d4c9-4cc8-8228-6bd29b1aa156)
+ Call ID: bf53730a-d4c9-4cc8-8228-6bd29b1aa156
+  Args:
+    type: :Man
+    source: :Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
+  AssignClass (29f4a605-a79e-49dd-8558-45666c9068b6)
+ Call ID: 29f4a605-a79e-49dd-8558-45666c9068b6
+  Args:
+    source: :Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
+    type: :Person
+  AddLiteral (74a4fbf1-f7b7-476b-ab6b-cd14e390afd0)
+ Call ID: 74a4fbf1-f7b7-476b-ab6b-cd14e390afd0
+  Args:
+    source: :Feodora_of_Saxe-Meiningen
+    literal_value: 1910
     literal_type: xsd:integer
-  AddLiteral (8c405eef-6bdf-4aa1-910a-d3f612b38473)
- Call ID: 8c405eef-6bdf-4aa1-910a-d3f612b38473
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1944
-    source: Marie_Alexandra_of_Baden
-  AddLiteral (1dc72ebb-cbba-48e2-837d-a92823391da3)
- Call ID: 1dc72ebb-cbba-48e2-837d-a92823391da3
-  Args:
-    source: Wolfgang_of_Hesse
     relation: :hasMarriageYear
-    literal_value: 1924
-    literal_type: xsd:integer
-  AddTriple (1fa2a6b8-4079-4cef-a21f-3bf111a73f7b)
- Call ID: 1fa2a6b8-4079-4cef-a21f-3bf111a73f7b
+  AddTriple (323bbcfe-d251-4e53-803e-8e473f8dadd0)
+ Call ID: 323bbcfe-d251-4e53-803e-8e473f8dadd0
   Args:
     relation: :hasRelation
-    target: Marie_Alexandra_of_Baden
-    source: Wolfgang_of_Hesse
-  AssignClass (479a8e0c-d285-4e14-8e51-f141a81b3832)
- Call ID: 479a8e0c-d285-4e14-8e51-f141a81b3832
-  Args:
-    type: :Man
-    source: Maximilian_of_Baden
-  AssignClass (ab6bb66c-44bd-4000-b39d-2bbe8f341d98)
- Call ID: ab6bb66c-44bd-4000-b39d-2bbe8f341d98
-  Args:
-    type: :Person
-    source: Maximilian_of_Baden
-  AssignClass (857d15be-4acb-4c30-87fc-4649d3376721)
- Call ID: 857d15be-4acb-4c30-87fc-4649d3376721
+    target: :Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
+    source: :Feodora_of_Saxe-Meiningen
+  AssignClass (1e67983f-9a5d-418f-ac3e-fa7a80b2851a)
+ Call ID: 1e67983f-9a5d-418f-ac3e-fa7a80b2851a
   Args:
     type: :Woman
-    source: Marie_Louise_of_Hanover
-  AssignClass (df712193-5cfb-46f3-b409-d8ecf50ed980)
- Call ID: df712193-5cfb-46f3-b409-d8ecf50ed980
+    source: :Caroline_Reuss_Elder_Line
+  AssignClass (1de84859-d6b5-4a85-bb49-cb786f8c9d6e)
+ Call ID: 1de84859-d6b5-4a85-bb49-cb786f8c9d6e
   Args:
     type: :Person
-    source: Marie_Louise_of_Hanover
-  AddTriple (97f98944-4816-44cb-a461-84c9d18466a0)
- Call ID: 97f98944-4816-44cb-a461-84c9d18466a0
+    source: :Caroline_Reuss_Elder_Line
+  AddTriple (b9a81e17-b2b5-4597-8305-3d73f813e1bd)
+ Call ID: b9a81e17-b2b5-4597-8305-3d73f813e1bd
   Args:
-    relation: :hasFather
-    source: Marie_Alexandra_of_Baden
-    target: Maximilian_of_Baden
-  AddTriple (90760f16-dce9-4062-8f16-4903438f849d)
- Call ID: 90760f16-dce9-4062-8f16-4903438f849d
+    source: :Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach
+    target: :Caroline_Reuss_Elder_Line
+    relation: :hasRelation
+  AddLiteral (24c56730-70aa-4c53-ac2f-a51721b2eee6)
+ Call ID: 24c56730-70aa-4c53-ac2f-a51721b2eee6
   Args:
-    target: Marie_Louise_of_Hanover
-    source: Marie_Alexandra_of_Baden
-    relation: :hasMother
-  Finish (568f07b4-c697-4aad-a850-f914774f3332)
- Call ID: 568f07b4-c697-4aad-a850-f914774f3332
+    source: :Caroline_Reuss_Elder_Line
+    literal_type: xsd:integer
+    literal_value: 1905
+    relation: :hasDeathYear
+  AssignClass (1dd54417-6813-4ce2-b8db-dcb301edf200)
+ Call ID: 1dd54417-6813-4ce2-b8db-dcb301edf200
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Ellen_Franz
+    type: :Woman
+  AssignClass (d4348769-91b9-4eed-9400-1ba6e0011bfa)
+ Call ID: d4348769-91b9-4eed-9400-1ba6e0011bfa
+  Args:
+    type: :Person
+    source: :Ellen_Franz
+  AddTriple (0f81f542-d7ba-439c-9347-a996c02f84b3)
+ Call ID: 0f81f542-d7ba-439c-9347-a996c02f84b3
+  Args:
+    source: :Georg_II_Duke_of_Saxe-Meiningen
+    target: :Ellen_Franz
+    relation: :hasRelation
+  Finish (a6082b19-369a-46b3-85cf-0fe1908f47a4)
+ Call ID: a6082b19-369a-46b3-85cf-0fe1908f47a4
+  Args:
 
 ================================= Tool Message =================================
 
@@ -642,41 +736,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasBrother data:Philipp_of_Hesse ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Margaret_of_Prussia ;
-      :hasRelation data:Marie_Alexandra_of_Baden .
-
-  data:Frederick_Charles_of_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1868 ;
-      :hasDeathYear 1940 .
-
-  data:Margaret_of_Prussia a :Person,
+  data:Feodora_of_Saxe-Meiningen a :Person,
           :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1954 .
+      :alsoKnownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+      :hasMarriageYear 1910 ;
+      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+      :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach .
 
-  data:Marie_Alexandra_of_Baden a :Person,
+  data:Adelaide_of_Lippe-Biesterfeld a :Person,
           :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1944 ;
-      :hasFather data:Maximilian_of_Baden ;
-      :hasMother data:Marie_Louise_of_Hanover .
+      :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
 
-  data:Marie_Louise_of_Hanover a :Person,
+  data:Caroline_Reuss_Elder_Line a :Person,
+          :Woman ;
+      :hasDeathYear 1905 .
+
+  data:Ellen_Franz a :Person,
           :Woman .
 
-  data:Maximilian_of_Baden a :Man,
+  data:Ernst_Count_of_Lippe-Biesterfeld a :Man,
           :Person .
 
-  data:Philipp_of_Hesse a :Man,
-          :Person .
+  data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+          :Person ;
+      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+  data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
+          :Person ;
+      :hasRelation data:Ellen_Franz .
+
+  data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+          :Person ;
+      :hasRelation data:Caroline_Reuss_Elder_Line .
 
 
 
@@ -688,8 +782,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (932b1a73-9e10-4eba-9961-24008a355325)
- Call ID: 932b1a73-9e10-4eba-9961-24008a355325
+  ValidateShacl (ed566c89-c91c-4551-b663-1c976eddae5d)
+ Call ID: ed566c89-c91c-4551-b663-1c976eddae5d
   Args:
 
 ================================= Tool Message =================================
@@ -701,97 +795,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Charles_of_Hesse is assigned as the father of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Georg_II_Duke_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Charles_of_Hesse, :Ancestor)
+      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Margaret_of_Prussia is assigned as the mother of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Friedrich_Johann_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margaret_of_Prussia, :Ancestor)
+      AssignClass(Friedrich_Johann_of_Saxe-Meiningen, :Man)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Charles_of_Hesse is assigned as the father of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Georg_II_Duke_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Charles_of_Hesse, :Ancestor)
+      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Man)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is assigned as the father of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Ernst_Count_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_of_Baden, :Ancestor)
+      AssignClass(Ernst_Count_of_Lippe-Biesterfeld, :Man)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Margaret_of_Prussia is assigned as the mother of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Adelaide_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margaret_of_Prussia, :Ancestor)
+      AssignClass(Adelaide_of_Lippe-Biesterfeld, :Woman)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover is assigned as the mother of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Friedrich_Johann_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marie_Louise_of_Hanover, :Ancestor)
+      AssignClass(Friedrich_Johann_of_Saxe-Meiningen, :Man)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Charles_of_Hesse is assigned as the father of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Georg_II_Duke_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Charles_of_Hesse, :Ancestor)
+      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Man)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is assigned as the father of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Ernst_Count_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_of_Baden, :Ancestor)
+      AssignClass(Ernst_Count_of_Lippe-Biesterfeld, :Man)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Margaret_of_Prussia is assigned as the mother of Wolfgang_of_Hesse, but it lacks the required class :Ancestor.
+      The value node Adelaide_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margaret_of_Prussia, :Ancestor)
+      AssignClass(Adelaide_of_Lippe-Biesterfeld, :Woman)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover is assigned as the mother of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Friedrich_Johann_of_Saxe-Meiningen lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marie_Louise_of_Hanover, :Ancestor)
+      AssignClass(Friedrich_Johann_of_Saxe-Meiningen, :Man)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maximilian_of_Baden is assigned as the father of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Ernst_Count_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_of_Baden, :Ancestor)
+      AssignClass(Ernst_Count_of_Lippe-Biesterfeld, :Man)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie_Louise_of_Hanover is assigned as the mother of Marie_Alexandra_of_Baden, but it lacks the required class :Ancestor.
+      The value node Adelaide_of_Lippe-Biesterfeld lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marie_Louise_of_Hanover, :Ancestor)
+      AssignClass(Adelaide_of_Lippe-Biesterfeld, :Woman)
 
 
 
@@ -800,26 +894,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e4975296-1a66-42c2-9aff-27e8531856ea)
- Call ID: e4975296-1a66-42c2-9aff-27e8531856ea
+  AssignClass (f8d843a1-270b-45d0-8d1d-87caaee2eee0)
+ Call ID: f8d843a1-270b-45d0-8d1d-87caaee2eee0
+  Args:
+    source: :Georg_II_Duke_of_Saxe-Meiningen
+    type: :Ancestor
+  AssignClass (e6f35ceb-5548-419c-b5b5-8e1236e58c36)
+ Call ID: e6f35ceb-5548-419c-b5b5-8e1236e58c36
   Args:
     type: :Ancestor
-    source: Frederick_Charles_of_Hesse
-  AssignClass (8c5eb50a-4c6e-4c94-b2d5-b4dd95a4dc8b)
- Call ID: 8c5eb50a-4c6e-4c94-b2d5-b4dd95a4dc8b
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+  AssignClass (6035525b-2b90-43b2-a906-4cac1a59196e)
+ Call ID: 6035525b-2b90-43b2-a906-4cac1a59196e
+  Args:
+    source: :Ernst_Count_of_Lippe-Biesterfeld
+    type: :Ancestor
+  AssignClass (26cd37b3-eee1-4718-8889-50ce1e091267)
+ Call ID: 26cd37b3-eee1-4718-8889-50ce1e091267
   Args:
     type: :Ancestor
-    source: Margaret_of_Prussia
-  AssignClass (8d61561f-ca18-4169-87f9-b4ebcbbd1c8c)
- Call ID: 8d61561f-ca18-4169-87f9-b4ebcbbd1c8c
+    source: :Adelaide_of_Lippe-Biesterfeld
+  ValidateShacl (ca65277f-6b4a-4c93-a85c-f03f930a44ee)
+ Call ID: ca65277f-6b4a-4c93-a85c-f03f930a44ee
   Args:
-    type: :Ancestor
-    source: Maximilian_of_Baden
-  AssignClass (08bc1f50-2646-4d4c-ae7f-7ea5e341b1cf)
- Call ID: 08bc1f50-2646-4d4c-ae7f-7ea5e341b1cf
-  Args:
-    source: Marie_Louise_of_Hanover
-    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -840,55 +937,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasBrother data:Philipp_of_Hesse ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Margaret_of_Prussia ;
-      :hasRelation data:Marie_Alexandra_of_Baden .
+  data:Feodora_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :alsoKnownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+      :hasMarriageYear 1910 ;
+      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+      :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach .
 
-  data:Frederick_Charles_of_Hesse a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1868 ;
-      :hasDeathYear 1940 .
-
-  data:Margaret_of_Prussia a :Ancestor,
+  data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1954 .
+      :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
 
-  data:Marie_Alexandra_of_Baden a :Person,
+  data:Caroline_Reuss_Elder_Line a :Person,
           :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1944 ;
-      :hasFather data:Maximilian_of_Baden ;
-      :hasMother data:Marie_Louise_of_Hanover .
+      :hasDeathYear 1905 .
 
-  data:Marie_Louise_of_Hanover a :Ancestor,
-          :Person,
+  data:Ellen_Franz a :Person,
           :Woman .
 
-  data:Maximilian_of_Baden a :Ancestor,
+  data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
           :Man,
           :Person .
 
-  data:Philipp_of_Hesse a :Man,
-          :Person .
+  data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+  data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+          :Man,
+          :Person ;
+      :hasRelation data:Ellen_Franz .
+
+  data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+          :Person ;
+      :hasRelation data:Caroline_Reuss_Elder_Line .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (1d8644c5-f56e-457e-b1c6-95b35f123436)
- Call ID: 1d8644c5-f56e-457e-b1c6-95b35f123436
-  Args:
 
 ================================= Tool Message =================================
 
@@ -898,6 +987,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (7ce6813e-a10d-4cdf-b43d-3a4f92b9ac6c)
- Call ID: 7ce6813e-a10d-4cdf-b43d-3a4f92b9ac6c
+  Finish (7ceddf41-b7f2-4feb-ae26-aae974e8c5f1)
+ Call ID: 7ceddf41-b7f2-4feb-ae26-aae974e8c5f1
   Args:

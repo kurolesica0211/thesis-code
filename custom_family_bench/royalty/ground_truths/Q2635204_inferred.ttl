@@ -1,0 +1,299 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "615:652"^^xsd:string,
+        "622:652"^^xsd:string,
+        "888:925"^^xsd:string,
+        "895:925"^^xsd:string,
+        "92:129"^^xsd:string,
+        "99:129"^^xsd:string ;
+    data:posIndicesPart "2149:2153"^^xsd:string,
+        "3668:3674"^^xsd:string,
+        "3779:3785"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Augustyn_Józef_Czartoryski a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Augustyn Józef Czartoryski"^^xsd:string ;
+    data:posIndicesFull "2096:2122"^^xsd:string,
+        "334:360"^^xsd:string ;
+    data:posIndicesPart "2440:2448"^^xsd:string,
+        "2979:2990"^^xsd:string,
+        "3110:3121"^^xsd:string,
+        "3262:3270"^^xsd:string ;
+    data:wdtLink wdt:Q2083425 ;
+    :alsoKnownAs "Augustyn Jozef Czartoryski"^^xsd:string,
+        "Prince Joseph August Czartoryski"^^xsd:string ;
+    :hasBrother data:Augustyn_Józef_Czartoryski ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski ;
+    :isBloodrelationOf data:Augustyn_Józef_Czartoryski ;
+    :isBrotherOf data:Augustyn_Józef_Czartoryski ;
+    :isFatherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Augustyn_Józef_Czartoryski ;
+    :isUncleOf data:Adam_Karol_Czartoryski .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "386:399"^^xsd:string,
+        "386:408"^^xsd:string ;
+    data:posIndicesPart "1114:1119"^^xsd:string,
+        "2530:2535"^^xsd:string,
+        "2613:2618"^^xsd:string,
+        "3608:3613"^^xsd:string,
+        "3668:3674"^^xsd:string,
+        "3779:3785"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasAncestor data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_Louise_of_Orléans ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona .
+
+data:Princess_Louise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Louise of Orléans"^^xsd:string ;
+    data:posIndicesFull "1139:1165"^^xsd:string,
+        "143:169"^^xsd:string,
+        "673:699"^^xsd:string ;
+    data:posIndicesPart "1050:1058"^^xsd:string,
+        "1630:1638"^^xsd:string,
+        "171:179"^^xsd:string,
+        "1877:1885"^^xsd:string,
+        "2040:2048"^^xsd:string,
+        "2453:2461"^^xsd:string,
+        "2559:2567"^^xsd:string,
+        "2650:2658"^^xsd:string,
+        "2835:2843"^^xsd:string,
+        "3504:3512"^^xsd:string,
+        "3562:3570"^^xsd:string,
+        "3924:3932"^^xsd:string,
+        "4028:4036"^^xsd:string,
+        "773:781"^^xsd:string ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans"^^xsd:string ;
+    :hasChild data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Louise_of_Orléans ;
+    :isAncestorOf data:Adam_Karol_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Louise_of_Orléans ;
+    :isMotherOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Louise_of_Orléans ;
+    :isSisterOf data:Princess_Louise_of_Orléans .
+
+data:Adam_Karol_Czartoryski a :Man,
+        :Person ;
+    rdfs:label "Adam Karol Czartoryski"^^xsd:string ;
+    data:posIndicesFull "2695:2717"^^xsd:string ;
+    data:posIndicesPart "2979:2990"^^xsd:string,
+        "3110:3121"^^xsd:string,
+        "3773:3777"^^xsd:string ;
+    data:wdtLink wdt:Q2823967 ;
+    :alsoKnownAs "Prince Adam Czartoryski"^^xsd:string ;
+    :hasAncestor data:Augustyn_Józef_Czartoryski,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Adam_Karol_Czartoryski ;
+    :hasFather data:Augustyn_Józef_Czartoryski ;
+    :hasMother data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Adam_Karol_Czartoryski ;
+    :isBrotherOf data:Adam_Karol_Czartoryski ;
+    :isChildOf data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Adam_Karol_Czartoryski ;
+    :isSonOf data:Augustyn_Józef_Czartoryski,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona"^^xsd:string ;
+    data:posIndicesFull "428:482"^^xsd:string ;
+    data:posIndicesPart "1040:1048"^^xsd:string,
+        "1611:1619"^^xsd:string,
+        "1672:1680"^^xsd:string,
+        "2226:2234"^^xsd:string,
+        "3697:3706"^^xsd:string,
+        "763:771"^^xsd:string ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Princess_Louise_of_Orléans ;
+    :hasChild data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Princess_Louise_of_Orléans ;
+    :hasParent data:Princess_Louise_of_Orléans ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:Adam_Karol_Czartoryski,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Princess_Louise_of_Orléans ;
+    :isDaughterOf data:Princess_Louise_of_Orléans ;
+    :isMotherOf data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies .
+
+data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María de los Dolores of Bourbon-Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "550:590"^^xsd:string ;
+    data:posIndicesPart "1050:1058"^^xsd:string,
+        "1121:1128"^^xsd:string,
+        "1232:1239"^^xsd:string,
+        "1407:1414"^^xsd:string,
+        "1630:1638"^^xsd:string,
+        "1639:1646"^^xsd:string,
+        "171:179"^^xsd:string,
+        "1733:1740"^^xsd:string,
+        "180:187"^^xsd:string,
+        "1877:1885"^^xsd:string,
+        "2040:2048"^^xsd:string,
+        "2049:2056"^^xsd:string,
+        "215:222"^^xsd:string,
+        "223:226"^^xsd:string,
+        "227:235"^^xsd:string,
+        "2303:2310"^^xsd:string,
+        "2453:2461"^^xsd:string,
+        "2462:2469"^^xsd:string,
+        "2559:2567"^^xsd:string,
+        "2568:2575"^^xsd:string,
+        "2650:2658"^^xsd:string,
+        "2659:2666"^^xsd:string,
+        "2835:2843"^^xsd:string,
+        "3459:3462"^^xsd:string,
+        "3504:3512"^^xsd:string,
+        "3562:3570"^^xsd:string,
+        "3571:3578"^^xsd:string,
+        "3924:3932"^^xsd:string,
+        "3933:3940"^^xsd:string,
+        "4028:4036"^^xsd:string,
+        "729:732"^^xsd:string,
+        "733:740"^^xsd:string,
+        "773:781"^^xsd:string,
+        "782:789"^^xsd:string,
+        "968:971"^^xsd:string,
+        "972:980"^^xsd:string ;
+    data:wdtLink wdt:Q2635204 ;
+    :alsoKnownAs "Princess Dolores of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Princess_Louise_of_Orléans ;
+    :hasChild data:Adam_Karol_Czartoryski ;
+    :hasMother data:Princess_Louise_of_Orléans ;
+    :hasParent data:Princess_Louise_of_Orléans ;
+    :hasRelation data:Adam_Karol_Czartoryski,
+        data:Augustyn_Józef_Czartoryski,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Princess_Louise_of_Orléans,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Adam_Karol_Czartoryski ;
+    :isAncestorOf data:Adam_Karol_Czartoryski ;
+    :isAuntOf data:Adam_Karol_Czartoryski,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Princess_Louise_of_Orléans ;
+    :isDaughterOf data:Princess_Louise_of_Orléans ;
+    :isMotherOf data:Adam_Karol_Czartoryski ;
+    :isParentOf data:Adam_Karol_Czartoryski ;
+    :isSiblingOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_María_de_los_Dolores_of_Bourbon-Two_Sicilies .
+

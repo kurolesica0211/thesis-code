@@ -7,140 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "14479:14494",
-        "14924:14939",
-        "14940:14956",
-        "15108:15123",
-        "4301:4326",
-        "4306:4326",
-        "514:539",
-        "519:539" ;
-    data:posIndicesPart "10047:10052",
-        "1034:1039",
-        "10905:10910",
-        "11277:11282",
-        "11476:11481",
-        "12018:12027",
-        "13648:13657",
-        "13762:13771",
-        "13849:13854",
-        "14135:14144",
-        "14365:14374",
-        "1532:1537",
-        "1711:1716",
-        "1733:1739",
-        "1768:1773",
-        "2049:2054",
-        "2154:2159",
-        "2198:2203",
-        "2835:2840",
-        "4390:4399",
-        "4587:4596",
-        "4629:4638",
-        "5236:5245",
-        "6752:6758",
-        "6760:6765",
-        "8291:8296",
-        "8488:8493",
-        "9025:9030",
-        "9729:9734",
-        "9926:9935" ;
-    data:wdtLink wdt:Q10633 ;
-    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
-        "Elizabeth Angela Marguerite, Duchess of York",
-        "Elizabeth Bowes-Lyon",
-        "Elizabeth, Duchess of York",
-        "Elizabeth, Queen Consort of the British Empire",
-        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
-        "Hon. Elizabeth Bowes-Lyon",
-        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
-        "Lady Elizabeth Bowes-Lyon",
-        "Queen Elizabeth",
-        "Queen Elizabeth Angela Marguerite",
-        "Queen-Empress Elizabeth",
-        "The Queen Mother",
-        "The Queen Mum" ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Kent" ;
-    data:posIndicesFull "1076:1092",
-        "1080:1092",
-        "11665:11681",
-        "11669:11681",
-        "3354:3367",
-        "5727:5740",
-        "6154:6166",
-        "7142:7154",
-        "7603:7616" ;
-    data:posIndicesPart "13797:13801",
-        "15144:15150",
-        "15387:15393",
-        "1563:1569",
-        "1578:1582",
-        "15897:15901",
-        "16116:16120",
-        "16220:16226",
-        "1832:1836",
-        "1988:1994",
-        "2025:2031",
-        "2103:2109",
-        "2132:2136",
-        "2827:2833",
-        "2883:2889",
-        "2933:2939",
-        "3777:3783",
-        "3920:3924",
-        "4236:4242",
-        "4940:4946",
-        "5007:5011",
-        "5105:5109",
-        "5201:5205",
-        "5972:5978",
-        "6285:6291",
-        "6419:6425",
-        "6536:6542",
-        "6790:6796",
-        "7210:7216",
-        "7862:7868",
-        "8065:8071",
-        "8440:8446" ;
-    data:wdtLink wdt:Q158258 ;
-    :alsoKnownAs "Duke of Kent",
-        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
-        "Edward Kent",
-        "His Royal Highness The Duke of Kent",
-        "Prince Edward",
-        "Prince Edward of Kent",
-        "The Duke of Kent" ;
-    :hasFather data:Prince_George-_Duke_of_Kent ;
-    :hasParent data:Prince_George-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_George-_Duke_of_Kent ;
-    :isSonOf data:Prince_George-_Duke_of_Kent .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Andrew_Mountbatten-Windsor a :Person ;
     rdfs:label "Andrew Mountbatten-Windsor" ;
     data:posIndicesFull "13288:13298",
         "16169:16195",
@@ -158,25 +25,11 @@ data:Andrew_Mountbatten-Windsor a :Ancestor,
         "Prince Andrew of the United Kingdom",
         "Prince Andrew, Duke of York",
         "Randy Andy" ;
-    :hasBrother data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Anne-_Princess_Royal,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isChildOf data:Elizabeth_II ;
-    :isSiblingOf data:Anne-_Princess_Royal,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isSonOf data:Elizabeth_II .
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
 
-data:Anne-_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Anne-_Princess_Royal a :Person ;
     rdfs:label "Anne, Princess Royal" ;
     data:posIndicesFull "1651:1665",
         "1655:1665" ;
@@ -225,131 +78,11 @@ data:Anne-_Princess_Royal a :Ancestor,
         "The Princess Anne",
         "The Princess Anne Elizabeth Alice Louise, Princess Royal",
         "The Princess Anne, Princess Royal" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isChildOf data:Elizabeth_II ;
-    :isDaughterOf data:Elizabeth_II ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isSisterOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh .
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles III" ;
-    data:posIndicesFull "3481:3490" ;
-    data:wdtLink wdt:Q43274 ;
-    :alsoKnownAs "C III",
-        "Charles III of England",
-        "Charles III of the United Kingdom",
-        "Charles Mountbatten-Windsor",
-        "Charles Philip Arthur George",
-        "Charles Philip Arthur George Mountbatten-Windsor",
-        "Charles Philip Arthur George Windsor",
-        "Charles Philip Arthur George, Prince of Wales",
-        "Charles Wales",
-        "Charles Windsor",
-        "Charles the Third",
-        "HM King Charles III",
-        "His Majesty",
-        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
-        "His Majesty The King",
-        "His Royal Highness Charles III of Great Britain",
-        "King Charles",
-        "King Charles III",
-        "King of England",
-        "Prince Charles",
-        "Prince Charles Philip Arthur George of Edinburgh",
-        "Prince Charles Philip Arthur George, Prince of Wales",
-        "Prince Charles of Edinburgh",
-        "Prince Charles, Duke of Rothesay",
-        "Prince Charles, Prince of Wales",
-        "The Prince Charles Philip Arthur George, Prince of Wales",
-        "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isChildOf data:Elizabeth_II ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isSonOf data:Elizabeth_II .
-
-data:Prince_Edward-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Edinburgh" ;
-    data:posIndicesFull "3354:3367",
-        "5727:5740",
-        "7603:7616" ;
-    data:posIndicesPart "13797:13801",
-        "13805:13814",
-        "15144:15150",
-        "15387:15393",
-        "15897:15901",
-        "16116:16120",
-        "16220:16226",
-        "3777:3783",
-        "3920:3924",
-        "4236:4242",
-        "4940:4946",
-        "5007:5011",
-        "5105:5109",
-        "5201:5205",
-        "5972:5978",
-        "6049:6055",
-        "6285:6291",
-        "6419:6425",
-        "6536:6542",
-        "6790:6796",
-        "7210:7216",
-        "7862:7868",
-        "8065:8071",
-        "8440:8446" ;
-    data:wdtLink wdt:Q154920 ;
-    :alsoKnownAs "Edward Antony Richard Louis",
-        "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex",
-        "Edward Mountbatten-Windsor",
-        "Prince Edward",
-        "Prince Edward Antony Richard Louis of the United Kingdom",
-        "Prince Edward of the United Kingdom",
-        "The Prince Edward Antony Richard Louis of the United Kingdom",
-        "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar",
-        "The Prince Edward of the United Kingdom",
-        "The Prince Edward, Earl of Wessex and Forfar" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isChildOf data:Elizabeth_II ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isSonOf data:Elizabeth_II .
-
-data:Edward_VIII a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Edward_VIII a :Person ;
     rdfs:label "Edward VIII" ;
     data:posIndicesFull "1691:1706",
         "1696:1706",
@@ -388,30 +121,10 @@ data:Edward_VIII a :Man,
         "King Edward VIII",
         "Prince Edward",
         "Prince Edward, Duke of Windsor" ;
-    :hasBrother data:George_VI,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isSiblingOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent .
+    :hasSex data:male .
 
-data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Person ;
     rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
     data:posIndicesFull "1850:1863" ;
     data:posIndicesPart "10437:10442",
@@ -467,36 +180,155 @@ data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
         "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
         "Victoria Alexandra Alice Mary Windsor",
         "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:female ;
-    :isAuntOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent ;
-    :isChildOf data:George_V ;
-    :isDaughterOf data:George_V ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSisterOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester .
+    :hasSex data:female .
 
-data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Edward-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Edward, Duke of Edinburgh" ;
+    data:posIndicesFull "3354:3367",
+        "5727:5740",
+        "7603:7616" ;
+    data:posIndicesPart "13797:13801",
+        "13805:13814",
+        "15387:15393",
+        "15897:15901",
+        "16116:16120",
+        "16220:16226",
+        "3777:3783",
+        "3920:3924",
+        "4236:4242",
+        "4940:4946",
+        "5007:5011",
+        "5105:5109",
+        "5201:5205",
+        "5972:5978",
+        "6049:6055",
+        "6285:6291",
+        "6419:6425",
+        "6536:6542",
+        "6790:6796",
+        "7210:7216",
+        "7862:7868",
+        "8065:8071",
+        "8440:8446" ;
+    data:wdtLink wdt:Q154920 ;
+    :alsoKnownAs "Edward Antony Richard Louis",
+        "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex",
+        "Edward Mountbatten-Windsor",
+        "Prince Edward",
+        "Prince Edward Antony Richard Louis of the United Kingdom",
+        "Prince Edward of the United Kingdom",
+        "The Prince Edward Antony Richard Louis of the United Kingdom",
+        "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar",
+        "The Prince Edward of the United Kingdom",
+        "The Prince Edward, Earl of Wessex and Forfar" ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Prince_Edward-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "1076:1092",
+        "1080:1092",
+        "11665:11681",
+        "11669:11681",
+        "3354:3367",
+        "5727:5740",
+        "6154:6166",
+        "7142:7154",
+        "7603:7616" ;
+    data:posIndicesPart "13797:13801",
+        "15387:15393",
+        "1563:1569",
+        "1578:1582",
+        "15897:15901",
+        "16116:16120",
+        "16220:16226",
+        "1832:1836",
+        "1988:1994",
+        "2025:2031",
+        "2103:2109",
+        "2132:2136",
+        "2827:2833",
+        "2883:2889",
+        "2933:2939",
+        "3777:3783",
+        "3920:3924",
+        "4236:4242",
+        "4940:4946",
+        "5007:5011",
+        "5105:5109",
+        "5201:5205",
+        "5972:5978",
+        "6285:6291",
+        "6419:6425",
+        "6536:6542",
+        "6790:6796",
+        "7210:7216",
+        "7862:7868",
+        "8065:8071",
+        "8440:8446" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasParent data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male .
+
+data:Prince_Harry-_Duke_of_Sussex a :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex" ;
+    data:posIndicesFull "1850:1863",
+        "6101:6113",
+        "6448:6460",
+        "7078:7090" ;
+    data:posIndicesPart "13797:13801",
+        "15897:15901",
+        "16116:16120",
+        "16220:16226",
+        "1988:1994",
+        "2025:2031",
+        "2103:2109",
+        "2132:2136",
+        "2883:2889",
+        "2933:2939",
+        "3375:3381",
+        "3777:3783",
+        "3920:3924",
+        "5007:5011",
+        "5105:5109",
+        "5201:5205",
+        "7210:7216" ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales",
+        "Harry Sussex",
+        "Harry Wales",
+        "Harry Windsor",
+        "Henry Charles Albert David",
+        "Henry Sussex",
+        "Henry Wales",
+        "Henry Windsor",
+        "Prince Harry",
+        "Prince Harry of Wales",
+        "Prince Henry",
+        "Prince Henry Charles Albert",
+        "Prince Henry Charles Albert David",
+        "Prince Henry of Wales",
+        "Prince Henry, Duke of Sussex",
+        "Prince Henry, Duke of Sussex, KCVO",
+        "The Prince Henry, Duke of Sussex" ;
+    :hasParent data:Charles_III ;
+    :hasSex data:male .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Person ;
     rdfs:label "Prince Henry, Duke of Gloucester" ;
     data:posIndicesFull "6101:6113",
         "6101:6133",
         "7078:7090" ;
     data:posIndicesPart "13797:13801",
-        "15144:15150",
         "15897:15901",
         "16116:16120",
         "16220:16226",
@@ -511,108 +343,51 @@ data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
         "Prince Henry of Wales",
         "Prince Henry of York",
         "The Prince Henry" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent ;
-    :isChildOf data:George_V ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent .
+    :hasSex data:male .
 
-data:George_V a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George V" ;
-    data:posIndicesFull "1598:1611",
-        "1603:1611",
-        "16094:16102",
-        "485:493",
-        "5561:5574",
-        "5566:5574",
-        "5683:5696",
-        "5688:5696",
-        "5954:5962" ;
-    data:posIndicesPart "10147:10153",
-        "10309:10315",
-        "10668:10674",
-        "10971:10977",
-        "1123:1129",
-        "11806:11812",
-        "11859:11865",
-        "1196:1202",
-        "12007:12013",
-        "12145:12151",
-        "12339:12345",
-        "12574:12580",
-        "12860:12866",
-        "13110:13116",
-        "13155:13161",
-        "13201:13207",
-        "13438:13444",
-        "13856:13862",
-        "14243:14249",
-        "14323:14329",
-        "14516:14522",
-        "14670:14676",
-        "14833:14839",
-        "15250:15256",
-        "15521:15527",
-        "15542:15548",
-        "15688:15694",
-        "3344:3350",
-        "7217:7223",
-        "7816:7822",
-        "9537:9543",
-        "9852:9858",
-        "9915:9921" ;
-    data:wdtLink wdt:Q269412 ;
-    :alsoKnownAs "George Frederick Ernest Albert",
-        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
-        "George Frederick Ernest Albert Windsor",
-        "George Saxe-Coburg-Gotha",
-        "George V (King of Great Britain)",
-        "George V of the United Kingdom",
-        "George Windsor",
-        "King George V" ;
-    :hasChild data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSex data:male ;
-    :hasSon data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isFatherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isParentOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Charles_III a :Person ;
+    rdfs:label "Charles III" ;
+    data:posIndicesFull "3481:3490" ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III",
+        "Charles III of England",
+        "Charles III of the United Kingdom",
+        "Charles Mountbatten-Windsor",
+        "Charles Philip Arthur George",
+        "Charles Philip Arthur George Mountbatten-Windsor",
+        "Charles Philip Arthur George Windsor",
+        "Charles Philip Arthur George, Prince of Wales",
+        "Charles Wales",
+        "Charles Windsor",
+        "Charles the Third",
+        "HM King Charles III",
+        "His Majesty",
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+        "His Majesty The King",
+        "His Royal Highness Charles III of Great Britain",
+        "King Charles",
+        "King Charles III",
+        "King of England",
+        "Prince Charles",
+        "Prince Charles Philip Arthur George of Edinburgh",
+        "Prince Charles Philip Arthur George, Prince of Wales",
+        "Prince Charles of Edinburgh",
+        "Prince Charles, Duke of Rothesay",
+        "Prince Charles, Prince of Wales",
+        "The Prince Charles Philip Arthur George, Prince of Wales",
+        "The Prince Charles, Prince of Wales" ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:George_VI a :Person ;
     rdfs:label "George VI" ;
     data:posIndicesFull "0:9",
         "11:41",
@@ -691,33 +466,10 @@ data:George_VI a :Ancestor,
         "The Prince Albert Frederick Arthur George, Duke of York",
         "The Prince Albert of the United Kingdom",
         "The Prince Albert, Duke of York" ;
-    :hasBrother data:Edward_VIII,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_George-_Duke_of_Kent,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+    :hasSex data:male .
 
-data:Prince_George-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_George-_Duke_of_Kent a :Person ;
     rdfs:label "Prince George, Duke of Kent" ;
     data:posIndicesFull "6139:6166",
         "6146:6166",
@@ -745,7 +497,6 @@ data:Prince_George-_Duke_of_Kent a :Ancestor,
         "14516:14522",
         "14670:14676",
         "14833:14839",
-        "15144:15150",
         "15250:15256",
         "15521:15527",
         "15542:15548",
@@ -772,33 +523,67 @@ data:Prince_George-_Duke_of_Kent a :Ancestor,
         "The Prince George Edward Alexander Edmund, Duke of Kent",
         "The Prince George of the United Kingdom",
         "The Prince George, Duke of Kent" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasChild data:Prince_Edward-_Duke_of_Kent ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSon data:Prince_Edward-_Duke_of_Kent ;
-    :isBrotherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II .
+    :hasSex data:male .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "14479:14494",
+        "14924:14939",
+        "14940:14956",
+        "15108:15123",
+        "4301:4326",
+        "4306:4326",
+        "514:539",
+        "519:539" ;
+    data:posIndicesPart "10047:10052",
+        "1034:1039",
+        "10905:10910",
+        "11277:11282",
+        "11476:11481",
+        "12018:12027",
+        "13648:13657",
+        "13762:13771",
+        "13849:13854",
+        "14135:14144",
+        "14365:14374",
+        "1532:1537",
+        "1711:1716",
+        "1733:1739",
+        "1768:1773",
+        "2049:2054",
+        "2154:2159",
+        "2198:2203",
+        "2835:2840",
+        "4390:4399",
+        "4587:4596",
+        "4629:4638",
+        "5236:5245",
+        "6752:6758",
+        "6760:6765",
+        "8291:8296",
+        "8488:8493",
+        "9025:9030",
+        "9729:9734",
+        "9926:9935" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasSex data:female .
+
+data:Elizabeth_II a :Person ;
     rdfs:label "Elizabeth II" ;
     data:posIndicesFull "1362:1374",
         "14479:14497",
@@ -819,29 +604,85 @@ data:Elizabeth_II a :Ancestor,
     :alsoKnownAs "Elizabeth Alexandra Mary",
         "Elizabeth Alexandra Mary Windsor",
         "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasDaughter data:Anne-_Princess_Royal ;
-    :hasFather data:George_VI ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
     :hasParent data:George_VI,
         data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isChildOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh .
+    :hasSex data:female .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "15144:15157" ;
+    data:posIndicesPart "15897:15901",
+        "16116:16120",
+        "16220:16226" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "1598:1611",
+        "1603:1611",
+        "16094:16102",
+        "485:493",
+        "5561:5574",
+        "5566:5574",
+        "5683:5696",
+        "5688:5696",
+        "5954:5962" ;
+    data:posIndicesPart "10147:10153",
+        "10309:10315",
+        "10668:10674",
+        "10971:10977",
+        "1123:1129",
+        "11806:11812",
+        "11859:11865",
+        "1196:1202",
+        "12007:12013",
+        "12145:12151",
+        "12339:12345",
+        "12574:12580",
+        "12860:12866",
+        "13110:13116",
+        "13155:13161",
+        "13201:13207",
+        "13438:13444",
+        "13856:13862",
+        "14243:14249",
+        "14323:14329",
+        "14516:14522",
+        "14670:14676",
+        "14833:14839",
+        "15250:15256",
+        "15521:15527",
+        "15542:15548",
+        "15688:15694",
+        "3344:3350",
+        "7217:7223",
+        "7816:7822",
+        "9537:9543",
+        "9852:9858",
+        "9915:9921" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

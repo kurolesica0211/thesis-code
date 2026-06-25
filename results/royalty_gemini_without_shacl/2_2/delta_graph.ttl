@@ -2,32 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Countess_Alexandra a :Person,
-        :Woman ;
-    :isMotherOf data:Count_Felix_of_Monpezat .
-
 data:King_Frederik_X a :Man,
-        :Person .
-
-data:Prince_Henrik a :Man,
         :Person ;
-    :isAncestorOf data:Count_Felix_of_Monpezat .
-
-data:Prince_Joachim a :Man,
-        :Person ;
-    :isFatherOf data:Count_Felix_of_Monpezat .
-
-data:Queen_Margrethe_II a :Person,
-        :Woman ;
-    :isAncestorOf data:Count_Felix_of_Monpezat .
+    :isSiblingOf data:Prince_Joachim .
 
 data:Prince_Nikolai a :Man,
         :Person ;
-    :hasBrother data:Count_Felix_of_Monpezat .
+    :isBrotherOf data:Count_Felix_of_Monpezat .
 
 data:Count_Felix_of_Monpezat a :Man,
         :Person ;
     :hasBirthYear 2002 ;
-    :hasBrother data:Prince_Nikolai ;
-    :hasSex "Male"^^xsd:string .
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Countess_Alexandra ;
+    :isChildOf data:Prince_Henrik,
+        data:Queen_Margrethe_II .
+
+data:Countess_Alexandra a :Person,
+        :Woman .
+
+data:Prince_Henrik a :Man,
+        :Person .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Prince_Joachim a :Man,
+        :Person .
 

@@ -7,56 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "175:187",
-        "175:196",
-        "338:350" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasChild data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :hasSex data:male ;
-    :hasSon data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :isFatherOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :isParentOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin .
-
-data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Joseph-Marie-Philippe Lévêque de Vilmorin" ;
-    data:posIndicesFull "1191:1211",
-        "415:435" ;
-    data:posIndicesPart "632:640",
-        "950:958" ;
-    data:wdtLink wdt:Q3381015 ;
-    :alsoKnownAs "Joseph-Marie-Philippe Leveque de Vilmorin",
-        "P. de Vilmorin",
-        "P.Vilm.",
-        "Philippe de Vilmorin" ;
-    :hasChild data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :hasSex data:male ;
-    :hasSon data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :isFatherOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
-    :isParentOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin .
-
-data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin a :Person ;
     rdfs:label "Roger Marie Vincent Philippe Lévêque de Vilmorin" ;
     data:posIndicesFull "19:67" ;
     data:posIndicesPart "1158:1166",
@@ -70,13 +21,44 @@ data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin a :Man,
     :alsoKnownAs "Р.Вильм.",
         "Роже Мари Венсан Филипп Левек де Вильморен",
         "Роже де Вильморен" ;
-    :hasFather data:Alfonso_XIII,
-        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
     :hasParent data:Alfonso_XIII,
         data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
-    :hasSex data:male ;
-    :isChildOf data:Alfonso_XIII,
-        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
-    :isSonOf data:Alfonso_XIII,
-        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "175:187",
+        "175:196",
+        "338:350" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin a :Person ;
+    rdfs:label "Joseph-Marie-Philippe Lévêque de Vilmorin" ;
+    data:posIndicesFull "1191:1211",
+        "415:435" ;
+    data:posIndicesPart "632:640",
+        "950:958" ;
+    data:wdtLink wdt:Q3381015 ;
+    :alsoKnownAs "Joseph-Marie-Philippe Leveque de Vilmorin",
+        "P. de Vilmorin",
+        "P.Vilm.",
+        "Philippe de Vilmorin" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

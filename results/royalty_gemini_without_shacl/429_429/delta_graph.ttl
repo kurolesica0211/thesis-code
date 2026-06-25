@@ -2,43 +2,20 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Jock_Stancer a :Man,
-        :Person ;
-    :hasFather data:William_Wordie_Stancer ;
-    :hasMother data:Rosie_Stancer .
+data:Kraft a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Margarita ;
+    :hasRelation data:Charlotte ;
+    :hasSister data:Beatrix .
 
-data:James_Wordie a :Ancestor,
-        :Man .
+data:Beatrix a :Woman .
 
-data:Lady_Mary_Cecilia_Leveson-Gower a :Ancestor,
-        :Woman ;
-    :hasFather data:William_Leveson-Gower%2C_4th_Earl_Granville ;
-    :hasMother data:Rose_Leveson-Gower%2C_Countess_Granville .
+data:Charlotte a :Woman .
 
-data:Rose_Leveson-Gower%2C_Countess_Granville a :Ancestor,
-        :Woman .
+data:Gottfried a :Man .
 
-data:Rosie_Stancer a :Person,
-        :Woman ;
-    :alsoKnownAs "Rosie Stancer"^^xsd:string ;
-    :hasBirthYear 1960 ;
-    :hasFather data:Sir_Samuel_Clayton ;
-    :hasMarriageYear 1993 ;
-    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
-    :hasRelation data:William_Wordie_Stancer ;
-    :knownAs "Rose Cecilia Stancer"^^xsd:string .
-
-data:Sir_Gilbert_Falkingham_Clayton a :Ancestor,
-        :Man .
-
-data:Sir_Samuel_Clayton a :Ancestor,
-        :Man ;
-    :hasFather data:Sir_Gilbert_Falkingham_Clayton .
-
-data:William_Leveson-Gower%2C_4th_Earl_Granville a :Ancestor,
-        :Man .
-
-data:William_Wordie_Stancer a :Man,
-        :Person ;
-    :hasFather data:James_Wordie .
+data:Margarita a :Woman .
 

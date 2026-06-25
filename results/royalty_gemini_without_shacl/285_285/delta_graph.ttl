@@ -2,53 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+data:Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies .
+
+data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Barbara_Maria_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Princess_Christine_of_Ligne .
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 .
 
-data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+data:Lucia_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Ludwig_III_of_Bavaria a :Ancestor,
         :Man,
-        :Person ;
-    :isFatherOf data:Prince_Antonio .
+        :Person .
 
-data:Princess_Alix_of_Luxembourg a :Ancestor,
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898 a :Person,
+        :Woman .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
+
+data:Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
         :Person,
         :Woman ;
-    :isMotherOf data:Princess_Christine_of_Ligne .
+    :hasFather data:Ludwig_III_of_Bavaria ;
+    :hasMother data:Maria_Theresa_of_Austria-Este .
 
-data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Prince_Antonio .
-
-data:Rafael_of_Orleans-Braganza a :Man,
-        :Person ;
-    :hasBirthYear 1986 ;
-    :hasBrother data:Prince_Pedro_Luiz ;
-    :hasFather data:Prince_Antonio ;
-    :hasMother data:Princess_Christine_of_Ligne ;
-    :hasRelation data:Prince_Bertrand ;
-    :hasSister data:Princess_Amelia,
-        data:Princess_Maria_Gabriela .
-
-data:Prince_Bertrand a :Man,
-        :Person .
-
-data:Prince_Pedro_Luiz a :Man,
-        :Person .
-
-data:Princess_Amelia a :Person,
-        :Woman .
-
-data:Princess_Maria_Gabriela a :Person,
-        :Woman .
-
-data:Prince_Antonio a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Christine_of_Ligne a :Ancestor,
+data:Maria_Theresa_of_Austria-Este a :Ancestor,
         :Person,
         :Woman .
+
+data:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
 

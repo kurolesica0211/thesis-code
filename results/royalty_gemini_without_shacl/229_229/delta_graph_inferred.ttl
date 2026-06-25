@@ -1,0 +1,837 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JeanRobertBoeuf a :Man,
+        :Person ;
+    :hasBrother data:JeanRobertBoeuf ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :isBloodrelationOf data:JeanRobertBoeuf ;
+    :isBrotherOf data:JeanRobertBoeuf ;
+    :isSiblingOf data:JeanRobertBoeuf .
+
+data:PrinceGundakarOfLiechtenstein a :Man,
+        :Person ;
+    :hasBrother data:PrinceGundakarOfLiechtenstein ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :isBloodrelationOf data:PrinceGundakarOfLiechtenstein ;
+    :isBrotherOf data:PrinceGundakarOfLiechtenstein ;
+    :isSiblingOf data:PrinceGundakarOfLiechtenstein .
+
+data:AntoniaMariaQuinonesDeLeonYBanuelos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :hasDaughter data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:AntoniaMariaQuinonesDeLeonYBanuelos ;
+    :isAncestorOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isAuntOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isBloodrelationOf data:AntoniaMariaQuinonesDeLeonYBanuelos ;
+    :isMotherOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isParentOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isSiblingOf data:AntoniaMariaQuinonesDeLeonYBanuelos ;
+    :isSisterOf data:AntoniaMariaQuinonesDeLeonYBanuelos .
+
+data:LuisCousinoYSebire a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LuisCousinoYSebire ;
+    :hasChild data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :hasDaughter data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :isAncestorOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isBloodrelationOf data:LuisCousinoYSebire ;
+    :isBrotherOf data:LuisCousinoYSebire ;
+    :isFatherOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isParentOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isSiblingOf data:LuisCousinoYSebire ;
+    :isUncleOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon .
+
+data:HenriCountOfParis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:HenriCountOfParis ;
+    :hasChild data:HenriPhilippePierreMariedOrleans ;
+    :hasDeathYear 1999 ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSon data:HenriPhilippePierreMariedOrleans ;
+    :isAncestorOf data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isBloodrelationOf data:HenriCountOfParis ;
+    :isBrotherOf data:HenriCountOfParis ;
+    :isFatherOf data:HenriPhilippePierreMariedOrleans ;
+    :isParentOf data:HenriPhilippePierreMariedOrleans ;
+    :isSiblingOf data:HenriCountOfParis ;
+    :isUncleOf data:HenriPhilippePierreMariedOrleans .
+
+data:PrincessIsabelleOfOrleansBraganza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:HenriPhilippePierreMariedOrleans ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:PrincessIsabelleOfOrleansBraganza ;
+    :hasSon data:HenriPhilippePierreMariedOrleans ;
+    :isAncestorOf data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isAuntOf data:HenriPhilippePierreMariedOrleans ;
+    :isBloodrelationOf data:PrincessIsabelleOfOrleansBraganza ;
+    :isMotherOf data:HenriPhilippePierreMariedOrleans ;
+    :isParentOf data:HenriPhilippePierreMariedOrleans ;
+    :isSiblingOf data:PrincessIsabelleOfOrleansBraganza ;
+    :isSisterOf data:PrincessIsabelleOfOrleansBraganza .
+
+data:MicaelaAnnaMariaCousinoYQuinonesDeLeon a :Person,
+        :Woman ;
+    :hasAncestor data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:LuisCousinoYSebire ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:LuisCousinoYSebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:AntoniaMariaQuinonesDeLeonYBanuelos ;
+    :hasParent data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:LuisCousinoYSebire ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isBloodrelationOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isChildOf data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:LuisCousinoYSebire ;
+    :isDaughterOf data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:LuisCousinoYSebire ;
+    :isSiblingOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isSisterOf data:MicaelaAnnaMariaCousinoYQuinonesDeLeon .
+
+data:MarieThereseOfWurttemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1934 ;
+    :hasChild data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :hasDaughter data:MarieDaughterOfHenri ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:MarieThereseOfWurttemberg ;
+    :hasSon data:FrancoisCountOfClermontSonOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isAncestorOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isAuntOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isBloodrelationOf data:MarieThereseOfWurttemberg ;
+    :isMotherOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isParentOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isSiblingOf data:MarieThereseOfWurttemberg ;
+    :isSisterOf data:MarieThereseOfWurttemberg .
+
+data:PrinceCharlesLouisDOrleans a :Man,
+        :Person ;
+    :hasAncestor data:PrinceJacquesDukeOfOrleans ;
+    :hasBirthYear 1972 ;
+    :hasBrother data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :hasFather data:PrinceJacquesDukeOfOrleans ;
+    :hasParent data:PrinceJacquesDukeOfOrleans ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :isBloodrelationOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isBrotherOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isChildOf data:PrinceJacquesDukeOfOrleans ;
+    :isSiblingOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isSonOf data:PrinceJacquesDukeOfOrleans .
+
+data:PrinceFoulquesDOrleans a :Man,
+        :Person ;
+    :hasAncestor data:PrinceJacquesDukeOfOrleans ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :hasFather data:PrinceJacquesDukeOfOrleans ;
+    :hasParent data:PrinceJacquesDukeOfOrleans ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :isBloodrelationOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isBrotherOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isChildOf data:PrinceJacquesDukeOfOrleans ;
+    :isSiblingOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isSonOf data:PrinceJacquesDukeOfOrleans .
+
+data:DianeSisterOfHenri a :Person,
+        :Woman ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :isAuntOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSisterOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche .
+
+data:FrancoisBrotherOfHenri a :Man,
+        :Person ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isBrotherOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isUncleOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome .
+
+data:MichelCountOfEvreux a :Man,
+        :Person ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isBrotherOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isUncleOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome .
+
+data:ThibautCountOfLaMarche a :Man,
+        :Person ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isBrotherOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isUncleOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome .
+
+data:FrancoisCountOfClermontSonOfHenri a :Man,
+        :Person ;
+    :hasAncestor data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :hasBrother data:FrancoisCountOfClermontSonOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg ;
+    :hasParent data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:MarieDaughterOfHenri ;
+    :isBloodrelationOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isBrotherOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isChildOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :isSiblingOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isSonOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg .
+
+data:MarieDaughterOfHenri a :Person,
+        :Woman ;
+    :hasAncestor data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :hasBrother data:FrancoisCountOfClermontSonOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg ;
+    :hasParent data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:MarieDaughterOfHenri ;
+    :isBloodrelationOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isChildOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :isDaughterOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :isSiblingOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isSisterOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome .
+
+data:PrinceJeanDukeOfVendome a :Man,
+        :Person ;
+    :hasAncestor data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :hasBrother data:FrancoisCountOfClermontSonOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg ;
+    :hasParent data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:MarieDaughterOfHenri ;
+    :isBloodrelationOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isBrotherOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isChildOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg ;
+    :isSiblingOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isSonOf data:HenriPhilippePierreMariedOrleans,
+        data:MarieThereseOfWurttemberg .
+
+data:PrinceJacquesDukeOfOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasChild data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :hasSon data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isAncestorOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isBrotherOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isFatherOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isParentOf data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isUncleOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome .
+
+data:HenriPhilippePierreMariedOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:HenriCountOfParis,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :hasChild data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :hasDaughter data:MarieDaughterOfHenri ;
+    :hasDeathYear 2019 ;
+    :hasFather data:HenriCountOfParis ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:PrincessIsabelleOfOrleansBraganza ;
+    :hasParent data:HenriCountOfParis,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :hasRelation data:AntoniaMariaQuinonesDeLeonYBanuelos,
+        data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:FrancoisCountOfClermontSonOfHenri,
+        data:HenriCountOfParis,
+        data:HenriPhilippePierreMariedOrleans,
+        data:JeanRobertBoeuf,
+        data:LuisCousinoYSebire,
+        data:MarieDaughterOfHenri,
+        data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon,
+        data:MichelCountOfEvreux,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceGundakarOfLiechtenstein,
+        data:PrinceJacquesDukeOfOrleans,
+        data:PrinceJeanDukeOfVendome,
+        data:PrincessIsabelleOfOrleansBraganza,
+        data:ThibautCountOfLaMarche ;
+    :hasSister data:DianeSisterOfHenri ;
+    :hasSon data:FrancoisCountOfClermontSonOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isAncestorOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isBloodrelationOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isBrotherOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isChildOf data:HenriCountOfParis,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :isFatherOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isParentOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceJeanDukeOfVendome ;
+    :isSiblingOf data:DianeSisterOfHenri,
+        data:FrancoisBrotherOfHenri,
+        data:HenriPhilippePierreMariedOrleans,
+        data:MichelCountOfEvreux,
+        data:PrinceJacquesDukeOfOrleans,
+        data:ThibautCountOfLaMarche ;
+    :isSonOf data:HenriCountOfParis,
+        data:PrincessIsabelleOfOrleansBraganza ;
+    :isUncleOf data:FrancoisCountOfClermontSonOfHenri,
+        data:MarieDaughterOfHenri,
+        data:PrinceCharlesLouisDOrleans,
+        data:PrinceFoulquesDOrleans,
+        data:PrinceJeanDukeOfVendome .
+

@@ -2,44 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_IX_of_Denmark a :Man,
-        :Person .
+data:Princess_Carolina a :Woman ;
+    :hasBirthYear 1974 ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasSister data:Princess_Margarita ;
+    :isChildOf data:Carlos_Hugo,
+        data:Princess_Irene .
 
-data:George_III_of_the_United_Kingdom a :Ancestor,
-        :Man,
-        :Person .
+data:Carlos_Hugo a :Ancestor,
+        :Man .
 
-data:George_V_of_Hanover a :Ancestor,
-        :Man,
-        :Person .
+data:Prince_Bernhard a :Ancestor,
+        :Man .
 
-data:George_William a :Man,
-        :Person ;
-    :hasBirthYear 1880 ;
-    :hasDeathYear 1912 ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasMother data:Princess_Thyra_of_Denmark .
+data:Prince_Carlos a :Man .
 
-data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man,
-        :Person .
+data:Prince_Jaime a :Man .
 
-data:Prince_Ernest_Augustus_II a :Man,
-        :Person ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasMarriageYear data:1913 ;
-    :hasRelation data:Princess_Victoria_Louise_of_Prussia .
-
-data:Princess_Thyra_of_Denmark a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Victoria_Louise_of_Prussia a :Person,
+data:Princess_Irene a :Ancestor,
         :Woman ;
-    :hasMarriageYear data:1913 .
+    :isChildOf data:Prince_Bernhard,
+        data:Queen_Juliana .
 
-data:1913 a :DomainEntity .
+data:Princess_Margarita a :Woman .
 
-data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person .
+data:Queen_Juliana a :Ancestor,
+        :Woman .
 

@@ -2,38 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 1950 ;
-    :hasBrother data:Prince_Carlo_Duke_of_Castro ;
-    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-    :hasMarriageYear 1978 ;
-    :hasMother data:Chantal_de_Chevron-Villette ;
-    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .
+data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Ancestor,
+        :Man ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Dmitri_Pavlovich_of_Russia ;
+    :hasMarriageYear 1948,
+        1953 ;
+    :hasMother data:Audrey_Emery ;
+    :hasRelation data:Angelica_Philippa_Kauffmann,
+        data:Mary_Evelyn_Prince .
 
-data:Alix_de_Foresta a :Ancestor,
-        :Person,
+data:Angelica_Philippa_Kauffmann a :Woman .
+
+data:Audrey_Emery a :Ancestor,
         :Woman .
 
-data:Charles_Napol%C3%A9on_Bonaparte a :Man,
-        :Person ;
-    :hasFather data:Louis_Prince_Napol%C3%A9on ;
-    :hasMother data:Alix_de_Foresta .
+data:Dmitri_Pavlovich_of_Russia a :Ancestor,
+        :Man .
 
-data:Louis_Prince_Napol%C3%A9on a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Carlo_Duke_of_Castro a :Man,
-        :Person ;
-    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-    :hasMother data:Chantal_de_Chevron-Villette .
-
-data:Chantal_de_Chevron-Villette a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person .
+data:Mary_Evelyn_Prince a :Woman .
 

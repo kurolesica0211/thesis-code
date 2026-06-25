@@ -2,61 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wilhelm_Crown_Prince a :Man,
-        :Person ;
-    :hasBirthYear 1882 ;
-    :hasBrother data:Adalbert,
-        data:August_Wilhelm,
-        data:Eitel_Friedrich,
-        data:Joachim,
-        data:Oskar ;
-    :hasDeathYear 1951 ;
+data:Felipe_VI_of_Spain a :Man ;
+    :hasAncestor data:Frederica_Princess_of_Hanover .
+
+data:Victoria_Louise_of_Prussia a :Woman ;
+    :hasAncestor data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria ;
+    :hasBirthYear 1892 ;
+    :hasChild data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasDeathYear 1980 ;
     :hasFather data:Wilhelm_II ;
-    :hasMarriageYear 1905 ;
-    :hasMother data:Augusta_Victoria ;
-    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasSister data:Viktoria_Luise ;
-    :hasSon data:Prince_Wilhelm_of_Prussia .
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Ernest_Augustus_of_Hanover ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim .
 
-data:Adalbert a :Man,
-        :Person .
-
-data:Anastasia_Mikhailovna a :Ancestor,
-        :Person,
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
         :Woman .
 
-data:August_Wilhelm a :Man,
-        :Person .
+data:Christian_Oscar_Prince_of_Hanover a :Man .
 
-data:Augusta_Victoria a :Ancestor,
-        :Person,
+data:Crown_Prince_Wilhelm a :Man .
+
+data:Ernest_Augustus_Prince_of_Hanover a :Man .
+
+data:Ernest_Augustus_of_Hanover a :Man .
+
+data:George_William_Prince_of_Hanover a :Man .
+
+data:King_Paul_of_Greece a :Man .
+
+data:Louise_of_Mecklenburg-Strelitz a :Ancestor,
         :Woman .
 
-data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Anastasia_Mikhailovna .
+data:Prince_August_Wilhelm a :Man .
 
-data:Eitel_Friedrich a :Man,
-        :Person .
+data:Prince_Eitel_Friedrich a :Man .
 
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
-        :Person .
+data:Prince_Joachim a :Man .
 
-data:Joachim a :Man,
-        :Person .
-
-data:Oskar a :Man,
-        :Person .
-
-data:Prince_Wilhelm_of_Prussia a :Man,
-        :Person .
-
-data:Viktoria_Luise a :Person,
+data:Queen_Victoria a :Ancestor,
         :Woman .
+
+data:Welf_Henry_Prince_of_Hanover a :Man .
 
 data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
+        :Man .
+
+data:Frederica_Princess_of_Hanover a :Ancestor,
+        :Woman ;
+    :hasRelation data:King_Paul_of_Greece .
 

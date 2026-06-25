@@ -7,34 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
-    data:posIndicesFull "3664:3679",
-        "4186:4201",
-        "4232:4247" ;
-    data:posIndicesPart "3916:3924",
-        "3925:3930",
-        "4020:4025",
-        "4572:4580",
-        "6288:6296" ;
-    data:wdtLink wdt:Q2312463 ;
-    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
-        "Maria da Gloria" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alexander-_Crown_Prince_of_Serbia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexander-_Crown_Prince_of_Serbia a :Person ;
     rdfs:label "Alexander, Crown Prince of Serbia" ;
     data:posIndicesFull "214:237" ;
     data:posIndicesPart "1057:1063",
@@ -107,16 +80,31 @@ data:Alexander-_Crown_Prince_of_Serbia a :Ancestor,
         "Alexander Karageorgievich, Crown Prince of Yugoslavia",
         "Crown Prince Alexander Karađorđević",
         "Crown Prince Alexander of Yugoslavia" ;
-    :hasMother data:Alexandra_of_Yugoslavia ;
     :hasParent data:Alexandra_of_Yugoslavia ;
-    :hasSex data:male ;
-    :isChildOf data:Alexandra_of_Yugoslavia ;
-    :isSonOf data:Alexandra_of_Yugoslavia .
+    :hasSex data:male .
 
-data:Alexander_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
+    data:posIndicesFull "3664:3679",
+        "4186:4201",
+        "4232:4247" ;
+    data:posIndicesPart "3916:3924",
+        "3925:3930",
+        "4020:4025",
+        "4572:4580",
+        "6288:6296" ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
+        "Maria da Gloria" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_of_Greece a :Person ;
     rdfs:label "Alexander of Greece" ;
     data:posIndicesFull "493:512" ;
     data:posIndicesPart "1133:1142",
@@ -146,31 +134,9 @@ data:Alexander_of_Greece a :Ancestor,
     :alsoKnownAs "Alexander I of Greece",
         "King Alexander I of Greece",
         "King Alexander of Greece" ;
-    :hasChild data:Alexandra_of_Yugoslavia ;
-    :hasDaughter data:Alexandra_of_Yugoslavia ;
-    :hasSex data:male ;
-    :isFatherOf data:Alexandra_of_Yugoslavia ;
-    :isParentOf data:Alexandra_of_Yugoslavia .
+    :hasSex data:male .
 
-data:Aspasia_Manos a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Aspasia Manos" ;
-    data:posIndicesFull "3262:3300" ;
-    data:wdtLink wdt:Q240442 ;
-    :alsoKnownAs "Aspasia Manou",
-        "Princess Aspasia of Greece and Denmark" ;
-    :hasChild data:Alexandra_of_Yugoslavia ;
-    :hasDaughter data:Alexandra_of_Yugoslavia ;
-    :hasSex data:female ;
-    :isMotherOf data:Alexandra_of_Yugoslavia ;
-    :isParentOf data:Alexandra_of_Yugoslavia .
-
-data:Alexandra_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Alexandra_of_Yugoslavia a :Person ;
     rdfs:label "Alexandra of Yugoslavia" ;
     data:posIndicesFull "3077:3100",
         "493:512" ;
@@ -190,17 +156,19 @@ data:Alexandra_of_Yugoslavia a :Ancestor,
     :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
         "Alexandra of Greece",
         "Alexandra of Greece, Queen of Yugoslavia" ;
-    :hasChild data:Alexander-_Crown_Prince_of_Serbia ;
-    :hasFather data:Alexander_of_Greece ;
-    :hasMother data:Aspasia_Manos ;
     :hasParent data:Alexander_of_Greece,
         data:Aspasia_Manos ;
-    :hasSex data:female ;
-    :hasSon data:Alexander-_Crown_Prince_of_Serbia ;
-    :isChildOf data:Alexander_of_Greece,
-        data:Aspasia_Manos ;
-    :isDaughterOf data:Alexander_of_Greece,
-        data:Aspasia_Manos ;
-    :isMotherOf data:Alexander-_Crown_Prince_of_Serbia ;
-    :isParentOf data:Alexander-_Crown_Prince_of_Serbia .
+    :hasSex data:female .
+
+data:Aspasia_Manos a :Person ;
+    rdfs:label "Aspasia Manos" ;
+    data:posIndicesFull "3262:3300" ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou",
+        "Princess Aspasia of Greece and Denmark" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

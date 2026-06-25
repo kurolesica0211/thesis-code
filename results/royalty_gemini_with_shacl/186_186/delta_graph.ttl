@@ -2,72 +2,88 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Theodora_of_Greece_and_Denmark a :Person,
+data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
         :Woman ;
-    :hasBirthYear 1906 ;
-    :hasBrother data:Philip_of_Greece_and_Denmark ;
-    :hasDaughter data:Margarita_Baden ;
-    :hasDeathYear 1969 ;
-    :hasFather data:Andrew_of_Greece_and_Denmark ;
-    :hasMarriageYear 1931 ;
-    :hasMother data:Alice_of_Battenberg ;
-    :hasRelation data:Berthold_Margrave_of_Baden ;
-    :hasSex data:Female ;
-    :hasSister data:Cecilie_Greece,
-        data:Margarita_Greece,
-        data:Sophie_Greece ;
-    :hasSon data:Ludwig_Baden,
-        data:Maximilian_Baden .
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Augustus_II_of_Oldenburg ;
+    :isAuntOf data:Alexandrine_Queen_of_Denmark,
+        data:Cecilie_German_Crown_Princess,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Hendrik_Prince_Consort_of_the_Netherlands,
+        data:Marie_Grand_Duchess_of_Russia .
 
-data:Alice_of_Battenberg a :Ancestor,
+data:Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :isDaughterOf data:Elisabeth_Anna_of_Oldenburg,
+        data:Frederick_Augustus_II_of_Oldenburg .
+
+data:Adolph_Prince_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alexandrine_Queen_of_Denmark a :Person,
+        :Woman .
+
+data:Alexandrine_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Cecilie_German_Crown_Princess a :Person,
+        :Woman .
+
+data:Cyril_Vladimirovich_Grand_Duke_of_Russia a :Man,
+        :Person .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Paul_Frederick_Grand_Duke_of_Mecklenburg ;
+    :hasMother data:Alexandrine_of_Prussia .
+
+data:Hendrik_Prince_Consort_of_the_Netherlands a :Man,
+        :Person ;
+    :hasRelation data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Marie_Grand_Duchess_of_Russia a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isMotherOf data:Cyril_Vladimirovich_Grand_Duke_of_Russia .
 
-data:Andrew_of_Greece_and_Denmark a :Ancestor,
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Adolph_Prince_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Mathilde_of_Schonburg-Waldenburg .
+
+data:Mathilde_of_Schonburg-Waldenburg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Paul_Frederick_Grand_Duke_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Elisabeth_Anna_of_Oldenburg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
-
-data:Berthold_Margrave_of_Baden a :Man,
-        :Person ;
-    :hasFather data:Maximilian_of_Baden ;
-    :hasSex data:Male .
-
-data:Cecilie_Greece a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Ludwig_Baden a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Margarita_Baden a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Margarita_Greece a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Maximilian_Baden a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Maximilian_of_Baden a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Philip_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Sophie_Greece a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasDeathYear 1931 ;
+    :hasRelation data:Elisabeth_Anna_of_Oldenburg .
 

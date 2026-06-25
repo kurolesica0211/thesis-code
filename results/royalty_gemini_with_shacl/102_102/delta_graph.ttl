@@ -2,37 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceGustav a :Man,
-        :Person ;
-    :hasFather data:PrinceRichard ;
-    :hasMother data:PrincessBenedikte .
+data:Count_Michael_Preben a :Man .
 
-data:PrincessAlexandra a :Person,
-        :Woman ;
+data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille a :Woman ;
+    :hasRelation data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard .
+
+data:King_Frederik_IX a :Man .
+
+data:King_Frederik_X_of_Denmark a :Man .
+
+data:Leopold_III_Duke_of_Anhalt-Dessau a :Man .
+
+data:Anne-Marie_of_Greece a :Woman .
+
+data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man .
+
+data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man .
+
+data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard a :Man ;
+    :hasFather data:Prince_Erik_of_Denmark .
+
+data:Margrethe_II a :Woman .
+
+data:Prince_Erik_of_Denmark a :Ancestor,
+        :Man .
+
+data:Prince_Gustav a :Man .
+
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
     :hasBirthYear 1970 ;
-    :hasFather data:PrinceRichard ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
     :hasMarriageYear 1998,
         2019 ;
-    :hasMother data:PrincessBenedikte ;
-    :hasRelation data:CountJefferson,
-        data:CountMichael .
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+    :isSisterOf data:Anne-Marie_of_Greece,
+        data:Margrethe_II .
 
-data:PrincessNathalie a :Person,
+data:Princess_Benedikte_of_Denmark a :Ancestor,
         :Woman ;
-    :hasFather data:PrinceRichard ;
-    :hasMother data:PrincessBenedikte .
+    :hasChild data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie .
 
-data:CountJefferson a :Man,
-        :Person .
-
-data:CountMichael a :Man,
-        :Person .
-
-data:PrinceRichard a :Ancestor,
-        :Man,
-        :Person .
-
-data:PrincessBenedikte a :Ancestor,
-        :Person,
-        :Woman .
+data:Princess_Nathalie a :Woman .
 

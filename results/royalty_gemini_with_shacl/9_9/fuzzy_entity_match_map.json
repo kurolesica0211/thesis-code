@@ -16,49 +16,56 @@
       "qid": "Q105597990",
       "label": "August Brooksbank",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Ernest_Brooksbank",
-      "qid": "Q119133052",
-      "label": "Ernest Brooksbank",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Jack_Brooksbank",
       "qid": "Q57401350",
       "label": "Jack Brooksbank",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Eugenie_of_York",
       "qid": "Q165709",
       "label": "Princess Eugenie of York",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
       "qid": "Q153330",
       "label": "Andrew Mountbatten-Windsor",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Charles_III",
-      "qid": "Q43274",
-      "label": "Charles III",
+      "uri": "http://example.com/data#Ernest_Brooksbank",
+      "qid": "Q119133052",
+      "label": "Ernest Brooksbank",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Sarah_Ferguson",
       "qid": "Q55720",
       "label": "Sarah Ferguson",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -73,11 +80,11 @@
       "ground_truth_qid": "Q153330",
       "ground_truth_label": "Andrew Mountbatten-Windsor",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Andrew Mountbatten-Windsor",
       "best_candidate_label": "Andrew Mountbatten-Windsor",
       "best_candidate_qid": "Q153330",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -91,11 +98,11 @@
       "ground_truth_qid": "Q105597990",
       "ground_truth_label": "August Brooksbank",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "August Brooksbank",
       "best_candidate_label": "August Brooksbank",
       "best_candidate_qid": "Q105597990",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -108,12 +115,12 @@
       "ground_truth_uri": "http://example.com/data#Ernest_Brooksbank",
       "ground_truth_qid": "Q119133052",
       "ground_truth_label": "Ernest Brooksbank",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Ernest Brooksbank",
       "best_candidate_label": "Ernest Brooksbank",
       "best_candidate_qid": "Q119133052",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -127,11 +134,11 @@
       "ground_truth_qid": "Q57401350",
       "ground_truth_label": "Jack Brooksbank",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Jack Brooksbank",
       "best_candidate_label": "Jack Brooksbank",
       "best_candidate_qid": "Q57401350",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -145,11 +152,11 @@
       "ground_truth_qid": "Q165709",
       "ground_truth_label": "Princess Eugenie of York",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Eugenie",
       "best_candidate_label": "Princess Eugenie of York",
       "best_candidate_qid": "Q165709",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -163,11 +170,11 @@
       "ground_truth_qid": "Q55720",
       "ground_truth_label": "Sarah Ferguson",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Sarah Ferguson",
       "best_candidate_label": "Sarah Ferguson",
       "best_candidate_qid": "Q55720",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -185,13 +192,31 @@
       "best_candidate_match_text": "Fergie",
       "best_candidate_label": "Sarah Ferguson",
       "best_candidate_qid": "Q55720",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.5714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Charles_III",
+      "extracted_local_name": "King_Charles_III",
+      "embedding_text": "King Charles III",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35714285714285715
     }
   ],
   "summary": {
-    "entities_total": 7,
+    "entities_total": 8,
     "entities_matched": 6,
-    "entities_unmatched": 1
+    "entities_unmatched": 2
   }
 }

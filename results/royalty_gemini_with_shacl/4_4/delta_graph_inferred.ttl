@@ -1,0 +1,376 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_X a :Ancestor,
+        :Man ;
+    :hasBrother data:Christian_X ;
+    :hasRelation data:Christian_X ;
+    :isBloodrelationOf data:Christian_X ;
+    :isBrotherOf data:Christian_X ;
+    :isSiblingOf data:Christian_X .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederik_IX ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederik_IX ;
+    :isAncestorOf data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isAuntOf data:Frederik_IX ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Frederik_IX ;
+    :isParentOf data:Frederik_IX ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Gustaf_VI_Adolf a :Ancestor,
+        :Man ;
+    :hasBrother data:Gustaf_VI_Adolf ;
+    :hasChild data:Ingrid_of_Sweden ;
+    :hasDaughter data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isAncestorOf data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_X,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Gustaf_VI_Adolf ;
+    :isBrotherOf data:Gustaf_VI_Adolf ;
+    :isFatherOf data:Ingrid_of_Sweden ;
+    :isParentOf data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Gustaf_VI_Adolf ;
+    :isUncleOf data:Ingrid_of_Sweden .
+
+data:Henrik_of_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Henrik_of_Denmark ;
+    :hasChild data:Frederik_X,
+        data:Joachim ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSon data:Frederik_X,
+        data:Joachim ;
+    :isAncestorOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Henrik_of_Denmark ;
+    :isBrotherOf data:Henrik_of_Denmark ;
+    :isFatherOf data:Frederik_X,
+        data:Joachim ;
+    :isParentOf data:Frederik_X,
+        data:Joachim ;
+    :isSiblingOf data:Henrik_of_Denmark ;
+    :isUncleOf data:Frederik_X,
+        data:Joachim .
+
+data:Anne-Marie a :Woman ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isAuntOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isChildOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II .
+
+data:Benedikte a :Woman ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isAuntOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isChildOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II .
+
+data:Frederik_X a :Man ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II ;
+    :hasBrother data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Henrik_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim ;
+    :isChildOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim ;
+    :isSonOf data:Henrik_of_Denmark,
+        data:Margrethe_II .
+
+data:Joachim a :Man ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II ;
+    :hasBrother data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Henrik_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim ;
+    :isChildOf data:Henrik_of_Denmark,
+        data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim ;
+    :isSonOf data:Henrik_of_Denmark,
+        data:Margrethe_II .
+
+data:Frederik_IX a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasBrother data:Frederik_IX ;
+    :hasChild data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :hasDaughter data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isAncestorOf data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_X,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_IX ;
+    :isBrotherOf data:Frederik_IX ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isParentOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isSiblingOf data:Frederik_IX ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Gustaf_VI_Adolf ;
+    :hasChild data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :hasDaughter data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasParent data:Gustaf_VI_Adolf ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_X,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isAuntOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isChildOf data:Gustaf_VI_Adolf ;
+    :isDaughterOf data:Gustaf_VI_Adolf ;
+    :isMotherOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isParentOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX,
+        data:Gustaf_VI_Adolf,
+        data:Ingrid_of_Sweden ;
+    :hasBirthYear 1940 ;
+    :hasChild data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Frederik_IX ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Anne-Marie,
+        data:Benedikte,
+        data:Frederik_IX,
+        data:Frederik_X,
+        data:Gustaf_VI_Adolf,
+        data:Henrik_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Joachim,
+        data:Margrethe_II ;
+    :hasSister data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :hasSon data:Frederik_X,
+        data:Joachim ;
+    :isAncestorOf data:Frederik_X,
+        data:Joachim ;
+    :isAuntOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isChildOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Frederik_X,
+        data:Joachim ;
+    :isParentOf data:Frederik_X,
+        data:Joachim ;
+    :isSiblingOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Benedikte,
+        data:Margrethe_II ;
+    :knownAs "Margrethe Alexandrine Þórhildur Ingrid"^^xsd:string .
+

@@ -1,0 +1,282 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_Kaul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_Kaul ;
+    :hasChild data:Stephanie_Anne_Kaul ;
+    :hasDaughter data:Stephanie_Anne_Kaul ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isAncestorOf data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Christian_Kaul ;
+    :isBrotherOf data:Christian_Kaul ;
+    :isFatherOf data:Stephanie_Anne_Kaul ;
+    :isParentOf data:Stephanie_Anne_Kaul ;
+    :isSiblingOf data:Christian_Kaul ;
+    :isUncleOf data:Stephanie_Anne_Kaul .
+
+data:Hannelore_Scheel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Stephanie_Anne_Kaul ;
+    :hasDaughter data:Stephanie_Anne_Kaul ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Hannelore_Scheel ;
+    :isAncestorOf data:Stephanie_Anne_Kaul ;
+    :isAuntOf data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Hannelore_Scheel ;
+    :isMotherOf data:Stephanie_Anne_Kaul ;
+    :isParentOf data:Stephanie_Anne_Kaul ;
+    :isSiblingOf data:Hannelore_Scheel ;
+    :isSisterOf data:Hannelore_Scheel .
+
+data:Berthold a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold ;
+    :hasChild data:Maximilian ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSon data:Maximilian ;
+    :isAncestorOf data:Bernhard,
+        data:Maximilian ;
+    :isBloodrelationOf data:Berthold ;
+    :isBrotherOf data:Berthold ;
+    :isFatherOf data:Maximilian ;
+    :isParentOf data:Maximilian ;
+    :isSiblingOf data:Berthold ;
+    :isUncleOf data:Maximilian .
+
+data:Hubert_Salvator_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hubert_Salvator_of_Austria ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isAncestorOf data:Bernhard,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Hubert_Salvator_of_Austria ;
+    :isBrotherOf data:Hubert_Salvator_of_Austria ;
+    :isFatherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Hubert_Salvator_of_Austria ;
+    :isUncleOf data:Valerie_of_Austria .
+
+data:Rosemary_of_Salm-Salm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Rosemary_of_Salm-Salm ;
+    :isAncestorOf data:Bernhard,
+        data:Valerie_of_Austria ;
+    :isAuntOf data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Rosemary_of_Salm-Salm ;
+    :isSisterOf data:Rosemary_of_Salm-Salm .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maximilian ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Maximilian ;
+    :isAncestorOf data:Bernhard,
+        data:Maximilian ;
+    :isAuntOf data:Maximilian ;
+    :isBloodrelationOf data:Theodora_of_Greece_and_Denmark ;
+    :isMotherOf data:Maximilian ;
+    :isParentOf data:Maximilian ;
+    :isSiblingOf data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Theodora_of_Greece_and_Denmark .
+
+data:Stephanie_Anne_Kaul a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel ;
+    :hasParent data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Stephanie_Anne_Kaul ;
+    :isBloodrelationOf data:Stephanie_Anne_Kaul ;
+    :isChildOf data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :isDaughterOf data:Christian_Kaul,
+        data:Hannelore_Scheel ;
+    :isSiblingOf data:Stephanie_Anne_Kaul ;
+    :isSisterOf data:Stephanie_Anne_Kaul .
+
+data:Bernhard a :Man,
+        :Person ;
+    :hasAncestor data:Berthold,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Bernhard ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasParent data:Maximilian,
+        data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Bernhard ;
+    :isBrotherOf data:Bernhard ;
+    :isChildOf data:Maximilian,
+        data:Valerie_of_Austria ;
+    :isSiblingOf data:Bernhard ;
+    :isSonOf data:Maximilian,
+        data:Valerie_of_Austria .
+
+data:Maximilian a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Berthold,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Maximilian ;
+    :hasChild data:Bernhard ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSon data:Bernhard ;
+    :isAncestorOf data:Bernhard ;
+    :isBloodrelationOf data:Maximilian ;
+    :isBrotherOf data:Maximilian ;
+    :isChildOf data:Berthold,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isFatherOf data:Bernhard ;
+    :isParentOf data:Bernhard ;
+    :isSiblingOf data:Maximilian ;
+    :isSonOf data:Berthold,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Bernhard .
+
+data:Valerie_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasBirthYear 1941 ;
+    :hasChild data:Bernhard ;
+    :hasFather data:Hubert_Salvator_of_Austria ;
+    :hasMother data:Rosemary_of_Salm-Salm ;
+    :hasParent data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasRelation data:Bernhard,
+        data:Berthold,
+        data:Christian_Kaul,
+        data:Hannelore_Scheel,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian,
+        data:Rosemary_of_Salm-Salm,
+        data:Stephanie_Anne_Kaul,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Valerie_of_Austria ;
+    :hasSon data:Bernhard ;
+    :isAncestorOf data:Bernhard ;
+    :isAuntOf data:Bernhard ;
+    :isBloodrelationOf data:Valerie_of_Austria ;
+    :isChildOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isDaughterOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Bernhard ;
+    :isParentOf data:Bernhard ;
+    :isSiblingOf data:Valerie_of_Austria ;
+    :isSisterOf data:Valerie_of_Austria .
+

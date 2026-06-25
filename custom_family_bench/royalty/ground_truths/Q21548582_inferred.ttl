@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Rose_Leveson-Gower-_Countess_Granville a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Rose Leveson-Gower, Countess Granville"^^xsd:string ;
+    data:posIndicesFull "309:347"^^xsd:string ;
+    data:posIndicesPart "1039:1048"^^xsd:string,
+        "1156:1165"^^xsd:string,
+        "1309:1318"^^xsd:string,
+        "1412:1421"^^xsd:string,
+        "614:623"^^xsd:string,
+        "641:650"^^xsd:string,
+        "669:676"^^xsd:string,
+        "789:798"^^xsd:string ;
+    data:wdtLink wdt:Q7367831 ;
+    :alsoKnownAs "Lady Rose Constance Bowes-Lyon"^^xsd:string ;
+    :hasChild data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasRelation data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:Granville_Leveson-Gower-_6th_Earl_Granville,
+        data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasSex data:female ;
+    :hasSister data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasSon data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isAncestorOf data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isAuntOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isBloodrelationOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isMotherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isParentOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isSiblingOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isSisterOf data:Rose_Leveson-Gower-_Countess_Granville .
+
+data:Granville_Leveson-Gower-_6th_Earl_Granville a :Man,
+        :Person ;
+    rdfs:label "Granville Leveson-Gower, 6th Earl Granville"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string,
+        "0:57"^^xsd:string,
+        "17:37"^^xsd:string,
+        "17:57"^^xsd:string,
+        "251:274"^^xsd:string ;
+    data:posIndicesPart "1039:1048"^^xsd:string,
+        "1156:1165"^^xsd:string,
+        "1309:1318"^^xsd:string,
+        "1412:1421"^^xsd:string,
+        "146:153"^^xsd:string,
+        "609:613"^^xsd:string,
+        "614:623"^^xsd:string,
+        "641:650"^^xsd:string,
+        "669:676"^^xsd:string,
+        "789:798"^^xsd:string ;
+    data:wdtLink wdt:Q21548582 ;
+    :alsoKnownAs "Fergus Leveson-Gower"^^xsd:string,
+        "Fergus Leveson-Gower, 6th Earl Granville"^^xsd:string,
+        "Granville George Fergus Leveson-Gower"^^xsd:string,
+        "Granville George Fergus Leveson-Gower, 6th Earl Granville"^^xsd:string,
+        "Granville Leveson-Gower"^^xsd:string ;
+    :hasAncestor data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasBrother data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :hasFather data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasParent data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasRelation data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:Granville_Leveson-Gower-_6th_Earl_Granville,
+        data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isBrotherOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isChildOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isSiblingOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isSonOf data:Granville_Leveson-Gower-_5th_Earl_Granville .
+
+data:Granville_Leveson-Gower-_5th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Granville Leveson-Gower, 5th Earl Granville"^^xsd:string ;
+    data:posIndicesFull "251:294"^^xsd:string ;
+    data:posIndicesPart "1039:1048"^^xsd:string,
+        "1156:1165"^^xsd:string,
+        "1309:1318"^^xsd:string,
+        "1412:1421"^^xsd:string,
+        "609:613"^^xsd:string,
+        "614:623"^^xsd:string,
+        "641:650"^^xsd:string,
+        "669:676"^^xsd:string,
+        "789:798"^^xsd:string ;
+    data:wdtLink wdt:Q25998958 ;
+    :alsoKnownAs "Granville James Leveson-Gower"^^xsd:string ;
+    :hasAncestor data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasBrother data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasChild data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasParent data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasRelation data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:Granville_Leveson-Gower-_6th_Earl_Granville,
+        data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasSex data:male ;
+    :hasSon data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isAncestorOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isBloodrelationOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isBrotherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isChildOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isFatherOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isParentOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
+    :isSiblingOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isSonOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isUncleOf data:Granville_Leveson-Gower-_6th_Earl_Granville .
+

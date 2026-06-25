@@ -2,60 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FranzUlrichKinsky a :Man,
+data:Friedrich_August_of_Oldenburg a :Man,
         :Person ;
-    :hasBirthYear "1936"^^xsd:int ;
-    :hasDeathYear "2009"^^xsd:int ;
-    :hasFather data:UlrichKinsky ;
-    :hasMarriageYear data:1965 ;
-    :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
-    :hasRelation data:HelenaVictoriaHuttenCzapska,
-        data:RobertaCavanagh ;
-    :hasSex data:Male .
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Donata_of_Castell_Rudenhausen,
+        data:Marie_Cecile_of_Prussia ;
+    :isUncleOf data:Christian_of_Oldenburg .
 
-data:1965 a :DomainEntity .
+data:Bathildis_of_Schaumburg_Lippe a :Ancestor,
+        :Person,
+        :Woman .
 
-data:AnneRowell a :Ancestor,
+data:Christian_of_Oldenburg a :Man,
+        :Person .
+
+data:Donata_of_Castell_Rudenhausen a :Person,
+        :Woman .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg_Lippe .
 
-data:HelenaVictoriaHuttenCzapska a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:HilmarVonDemBusscheHaddenhausen a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Ancestor,
+data:Kira_Kirillovna_of_Russia a :Ancestor,
         :Person,
-        :Woman ;
-    :hasBirthYear "1900"^^xsd:int ;
-    :hasDeathYear "1974"^^xsd:int ;
-    :hasFather data:HilmarVonDemBusscheHaddenhausen ;
-    :hasSex data:Female .
+        :Woman .
 
-data:RobertaCavanagh a :Person,
-        :Woman ;
-    :hasBirthYear "1942"^^xsd:int ;
-    :hasDeathYear "2002"^^xsd:int ;
-    :hasFather data:RobertoCavanagh ;
-    :hasMother data:AnneRowell ;
-    :hasSex data:Female .
+data:Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
 
-data:RobertoCavanagh a :Ancestor,
+data:Marie_Cecile_of_Prussia a :Person,
+        :Woman ;
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
-
-data:UlrichKinsky a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
 

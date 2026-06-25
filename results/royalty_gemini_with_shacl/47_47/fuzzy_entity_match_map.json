@@ -16,7 +16,7 @@
       "qid": "Q14924803",
       "label": "Beatrix von Storch",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -31,11 +31,11 @@
       "ground_truth_qid": "Q14924803",
       "ground_truth_label": "Beatrix von Storch",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Beatrix von Storch",
       "best_candidate_label": "Beatrix von Storch",
       "best_candidate_qid": "Q14924803",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -53,7 +53,7 @@
       "best_candidate_match_text": "Beatrice Amelie Ehrengard Eilika von Holstein-Gottorp, Herzogin von Oldenburg",
       "best_candidate_label": "Beatrix von Storch",
       "best_candidate_qid": "Q14924803",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.2549019607843137
     },
     {

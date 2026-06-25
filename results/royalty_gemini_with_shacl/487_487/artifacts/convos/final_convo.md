@@ -85,21 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Wilhelm Karl Adalbert Erich Detloff Prinz von Preussen (30 January 1922 in Potsdam – 9 April 2007 in Holzminden) was the third son of Prince Oskar of Prussia, and the last surviving grandson of Wilhelm II, the last German Emperor.
-Biography
+Eleonore von Habsburg-Lothringen (Eleonore Maria del Pilar Iona Christina Jelena; born 28 February 1994) is an Austrian jewellery designer, gemologist, and model.
+She is the daughter of Karl von Habsburg, the head of the House of Habsburg-Lorraine.
+Early life and background
 
-Wilhelm-Karl was the youngest of Prince Oskar of Prussia and Countess Ina Marie von Bassewitz's four children.
-Wilhelm-Karl worked tirelessly to keep the Order intact during the Cold War and helped to reunite its membership after the fall of East Germany.
-Amongst other orders and awards, Wilhelm-Karl received the Grand Merit Cross (with star) of the Order of Merit of the Federal Republic of Germany and the Grand Cross of the Order pro merito Melitensi of the Sovereign Military Order of Malta.
-Marriage and issue
+Eleonore Habsburg-Lorraine was born in 1994 in Salzburg to Karl von Habsburg, a politician and head of the House of Habsburg-Lorraine, and Francesca von Thyssen-Bornemisza de Kászon et Impérfalva, an art collector and by birth member of the Thyssen-Bornemisza family.
+Her paternal grandparents were Otto, Crown Prince of Austria and Princess Regina of Saxe-Meiningen.
+Her paternal great-grandparents Charles I of Austria and Zita of Bourbon-Parma were the last Emperor and Empress of Austria.
+Her brother is racing car driver Ferdinand Habsburg.
+Education and career
 
-In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926 - 1 November 2019), daughter of Friedrich von Veltheim (1881–1955) and his wife, Ottonie von Alvensleben (1883–1960).
+Habsburg-Lorraine attended boarding school in Gstaad before studying law at the European Business School London.
+Habsburg has also worked as a fashion model, being featured in advertisement campaigns and walking the runway for Dolce & Gabbana.
+Personal life
+
+On 20 July 2020, Eleonore von Habsburg-Lorraine married Belgian race car driver Jérôme d'Ambrosio in a small civil ceremony at the Civil Registry of Monaco, conducted by the Mayor of Monaco Georges Marsan.
+On 20 October 2021 she gave birth to a son, Otto d'Ambrosio, named after her grandfather Otto von Habsburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +124,9 @@ In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +141,23 @@ In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,140 +449,232 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d1eb4e77-2395-4614-98bb-0d9b646f6b86)
- Call ID: d1eb4e77-2395-4614-98bb-0d9b646f6b86
+  AssignClass (24a1a56f-994b-41d7-840e-f034931cd9f9)
+ Call ID: 24a1a56f-994b-41d7-840e-f034931cd9f9
   Args:
-    source: Wilhelm_Karl_Prinz_von_Preussen
+    type: :Woman
+    source: Eleonore_von_Habsburg-Lothringen
+  AssignClass (325b3f74-33ab-4ce3-83d5-4bdc39dcd311)
+ Call ID: 325b3f74-33ab-4ce3-83d5-4bdc39dcd311
+  Args:
     type: :Person
-  AssignClass (0ef7836f-8ea5-46ac-a051-32d9e74baa94)
- Call ID: 0ef7836f-8ea5-46ac-a051-32d9e74baa94
-  Args:
-    source: Wilhelm_Karl_Prinz_von_Preussen
-    type: :Man
-  AddLiteral (7c1f8246-1502-4ed1-96b5-65c186933ec5)
- Call ID: 7c1f8246-1502-4ed1-96b5-65c186933ec5
+    source: Eleonore_von_Habsburg-Lothringen
+  AddLiteral (6e353c1c-3646-4e45-973e-92111b2bfcbd)
+ Call ID: 6e353c1c-3646-4e45-973e-92111b2bfcbd
   Args:
     relation: :hasBirthYear
-    literal_value: 1922
     literal_type: xsd:integer
-    source: Wilhelm_Karl_Prinz_von_Preussen
-  AddLiteral (66f0896c-f411-4907-95a8-8c002af06474)
- Call ID: 66f0896c-f411-4907-95a8-8c002af06474
-  Args:
-    relation: :hasDeathYear
-    source: Wilhelm_Karl_Prinz_von_Preussen
-    literal_value: 2007
-    literal_type: xsd:integer
-  AssignClass (b0054a46-ba23-4749-8e06-a3ab106dcd97)
- Call ID: b0054a46-ba23-4749-8e06-a3ab106dcd97
-  Args:
-    source: Prince_Oskar_of_Prussia
-    type: :Person
-  AssignClass (67b2b424-5960-4ec1-bc47-7f89b3efb271)
- Call ID: 67b2b424-5960-4ec1-bc47-7f89b3efb271
+    literal_value: 1994
+    source: Eleonore_von_Habsburg-Lothringen
+  AssignClass (f01d445a-8981-4da6-8c91-518b58b01791)
+ Call ID: f01d445a-8981-4da6-8c91-518b58b01791
   Args:
     type: :Man
-    source: Prince_Oskar_of_Prussia
-  AssignClass (c811f398-5037-4691-90d0-67a508364a7e)
- Call ID: c811f398-5037-4691-90d0-67a508364a7e
+    source: Karl_von_Habsburg
+  AssignClass (d43e4eb3-ae78-4fc6-9bcf-983eddf08a28)
+ Call ID: d43e4eb3-ae78-4fc6-9bcf-983eddf08a28
   Args:
-    type: :Ancestor
-    source: Prince_Oskar_of_Prussia
-  AddTriple (b42f6796-6f77-4cac-9d1f-1f1ea6eb7ea6)
- Call ID: b42f6796-6f77-4cac-9d1f-1f1ea6eb7ea6
+    source: Karl_von_Habsburg
+    type: :Person
+  AddTriple (4ad510e7-9476-47c3-8632-b5f6cd22e41c)
+ Call ID: 4ad510e7-9476-47c3-8632-b5f6cd22e41c
   Args:
     relation: :hasFather
-    source: Wilhelm_Karl_Prinz_von_Preussen
-    target: Prince_Oskar_of_Prussia
-  AssignClass (e98bb5b5-204f-4ec4-9097-02773a1a31a1)
- Call ID: e98bb5b5-204f-4ec4-9097-02773a1a31a1
-  Args:
-    source: Ina_Marie_von_Bassewitz
-    type: :Person
-  AssignClass (ca2c23fc-4c49-4fc9-8aa6-678653860385)
- Call ID: ca2c23fc-4c49-4fc9-8aa6-678653860385
+    source: Eleonore_von_Habsburg-Lothringen
+    target: Karl_von_Habsburg
+  AssignClass (aad4d2d9-9c0d-4979-ad8e-7feba3b3cfe4)
+ Call ID: aad4d2d9-9c0d-4979-ad8e-7feba3b3cfe4
   Args:
     type: :Woman
-    source: Ina_Marie_von_Bassewitz
-  AssignClass (eb7f915f-91e8-465d-b27e-4c62e1687d0a)
- Call ID: eb7f915f-91e8-465d-b27e-4c62e1687d0a
+    source: Francesca_von_Thyssen-Bornemisza
+  AssignClass (513a722a-30b6-4e8b-b6f7-b72b52a241c9)
+ Call ID: 513a722a-30b6-4e8b-b6f7-b72b52a241c9
   Args:
-    type: :Ancestor
-    source: Ina_Marie_von_Bassewitz
-  AddTriple (bfa2c030-db73-4394-bd51-059a80de828d)
- Call ID: bfa2c030-db73-4394-bd51-059a80de828d
+    source: Francesca_von_Thyssen-Bornemisza
+    type: :Person
+  AddTriple (488b0646-e5b6-440d-af2d-2d33cb5ea94b)
+ Call ID: 488b0646-e5b6-440d-af2d-2d33cb5ea94b
   Args:
-    source: Wilhelm_Karl_Prinz_von_Preussen
+    source: Eleonore_von_Habsburg-Lothringen
+    target: Francesca_von_Thyssen-Bornemisza
     relation: :hasMother
-    target: Ina_Marie_von_Bassewitz
-  AssignClass (798dea14-138b-4acd-9237-3941c34854e0)
- Call ID: 798dea14-138b-4acd-9237-3941c34854e0
+  AssignClass (2b4bc09f-f689-40c3-bf1d-3f40aeba34ae)
+ Call ID: 2b4bc09f-f689-40c3-bf1d-3f40aeba34ae
   Args:
-    source: Armgard_Else_Helene_von_Veltheim
+    type: :Man
+    source: Otto_von_Habsburg
+  AssignClass (382060c5-975e-49f4-bbe5-b658efe4ff56)
+ Call ID: 382060c5-975e-49f4-bbe5-b658efe4ff56
+  Args:
+    source: Otto_von_Habsburg
     type: :Person
-  AssignClass (94391dc6-87f4-405b-aea7-1764f7088fcd)
- Call ID: 94391dc6-87f4-405b-aea7-1764f7088fcd
+  AssignClass (e790fefe-a55c-45d7-afdf-8b88965d3595)
+ Call ID: e790fefe-a55c-45d7-afdf-8b88965d3595
   Args:
     type: :Woman
-    source: Armgard_Else_Helene_von_Veltheim
-  AddLiteral (da0e69ca-d897-4909-b234-1c40d090c188)
- Call ID: da0e69ca-d897-4909-b234-1c40d090c188
+    source: Regina_von_Saxe-Meiningen
+  AssignClass (6fde00ba-8751-47dd-a321-5b4ee9c23c82)
+ Call ID: 6fde00ba-8751-47dd-a321-5b4ee9c23c82
+  Args:
+    source: Regina_von_Saxe-Meiningen
+    type: :Person
+  AddTriple (b277f526-b25e-427b-a43a-986e0b61d5f2)
+ Call ID: b277f526-b25e-427b-a43a-986e0b61d5f2
+  Args:
+    source: Karl_von_Habsburg
+    target: Otto_von_Habsburg
+    relation: :hasFather
+  AddTriple (ba3377e7-4020-422b-8dc8-8d389d58ecbb)
+ Call ID: ba3377e7-4020-422b-8dc8-8d389d58ecbb
+  Args:
+    relation: :hasMother
+    source: Karl_von_Habsburg
+    target: Regina_von_Saxe-Meiningen
+  AssignClass (a788d0d6-78bd-47d6-9296-6729a0cf581a)
+ Call ID: a788d0d6-78bd-47d6-9296-6729a0cf581a
+  Args:
+    type: :Man
+    source: Charles_I_of_Austria
+  AssignClass (345fb2a4-9a6b-4247-be4a-6629d383e895)
+ Call ID: 345fb2a4-9a6b-4247-be4a-6629d383e895
+  Args:
+    source: Charles_I_of_Austria
+    type: :Person
+  AssignClass (010512bb-4a9d-4f3a-8b04-e88bbaa12a7d)
+ Call ID: 010512bb-4a9d-4f3a-8b04-e88bbaa12a7d
+  Args:
+    type: :Woman
+    source: Zita_of_Bourbon-Parma
+  AssignClass (1c7700a2-ab32-4297-b11e-62a8c8fec50a)
+ Call ID: 1c7700a2-ab32-4297-b11e-62a8c8fec50a
+  Args:
+    source: Zita_of_Bourbon-Parma
+    type: :Person
+  AddTriple (e047d233-b3fd-4f57-ab39-7684572bafc1)
+ Call ID: e047d233-b3fd-4f57-ab39-7684572bafc1
+  Args:
+    relation: :hasFather
+    source: Otto_von_Habsburg
+    target: Charles_I_of_Austria
+  AddTriple (10348313-3ea4-4d10-aa01-8b319abcec6d)
+ Call ID: 10348313-3ea4-4d10-aa01-8b319abcec6d
+  Args:
+    source: Otto_von_Habsburg
+    target: Zita_of_Bourbon-Parma
+    relation: :hasMother
+  AssignClass (4cf283b7-5228-4ff9-84d7-401dc6611a78)
+ Call ID: 4cf283b7-5228-4ff9-84d7-401dc6611a78
+  Args:
+    source: Ferdinand_Habsburg
+    type: :Man
+  AssignClass (25d8c071-d89b-4324-9164-d505ea4f67fe)
+ Call ID: 25d8c071-d89b-4324-9164-d505ea4f67fe
+  Args:
+    type: :Person
+    source: Ferdinand_Habsburg
+  AddTriple (58741163-0577-44f4-8645-399dea15d06a)
+ Call ID: 58741163-0577-44f4-8645-399dea15d06a
+  Args:
+    source: Eleonore_von_Habsburg-Lothringen
+    target: Ferdinand_Habsburg
+    relation: :isSiblingOf
+  AddTriple (987c8e6f-17d7-4ae5-a1b7-bad733a582b7)
+ Call ID: 987c8e6f-17d7-4ae5-a1b7-bad733a582b7
+  Args:
+    source: Ferdinand_Habsburg
+    target: Karl_von_Habsburg
+    relation: :hasFather
+  AddTriple (8e3e08c3-2136-481d-b3ff-bc0e918d5025)
+ Call ID: 8e3e08c3-2136-481d-b3ff-bc0e918d5025
+  Args:
+    source: Ferdinand_Habsburg
+    target: Francesca_von_Thyssen-Bornemisza
+    relation: :hasMother
+  AssignClass (fbe67264-221b-4e38-9e03-86f530687ac6)
+ Call ID: fbe67264-221b-4e38-9e03-86f530687ac6
+  Args:
+    source: Jérôme_d'Ambrosio
+    type: :Man
+  AssignClass (752bfbe7-9f5b-4704-88bb-55c3b9bd1bfb)
+ Call ID: 752bfbe7-9f5b-4704-88bb-55c3b9bd1bfb
+  Args:
+    type: :Person
+    source: Jérôme_d'Ambrosio
+  AddLiteral (c07261fd-4ebb-43f6-b8d5-06051de8f7f2)
+ Call ID: c07261fd-4ebb-43f6-b8d5-06051de8f7f2
   Args:
     relation: :hasMarriageYear
-    literal_value: 1952
     literal_type: xsd:integer
-    source: Wilhelm_Karl_Prinz_von_Preussen
-  AddTriple (0c29cf9d-e5f1-47a4-8907-f1cfc8637fd3)
- Call ID: 0c29cf9d-e5f1-47a4-8907-f1cfc8637fd3
+    source: Eleonore_von_Habsburg-Lothringen
+    literal_value: 2020
+  AddTriple (54546388-b4bc-4970-b208-dfa700b1b40b)
+ Call ID: 54546388-b4bc-4970-b208-dfa700b1b40b
   Args:
-    target: Armgard_Else_Helene_von_Veltheim
     relation: :hasRelation
-    source: Wilhelm_Karl_Prinz_von_Preussen
-  AssignClass (11833b60-eb20-4aaa-b769-f571d5bb6f36)
- Call ID: 11833b60-eb20-4aaa-b769-f571d5bb6f36
+    source: Eleonore_von_Habsburg-Lothringen
+    target: Jérôme_d'Ambrosio
+  AssignClass (a861b9c5-a2da-41f5-9ff1-505aa87c7b9f)
+ Call ID: a861b9c5-a2da-41f5-9ff1-505aa87c7b9f
   Args:
-    source: Friedrich_von_Veltheim
-    type: :Person
-  AssignClass (b52dcda4-2928-42e0-9c8c-088a5ca8bdbe)
- Call ID: b52dcda4-2928-42e0-9c8c-088a5ca8bdbe
-  Args:
+    source: Otto_d'Ambrosio
     type: :Man
-    source: Friedrich_von_Veltheim
-  AssignClass (c2b79bba-d2f3-4bf3-a063-7875a297f8f5)
- Call ID: c2b79bba-d2f3-4bf3-a063-7875a297f8f5
-  Args:
-    source: Friedrich_von_Veltheim
-    type: :Ancestor
-  AddTriple (6ec52842-f476-4114-b9ad-457519e24125)
- Call ID: 6ec52842-f476-4114-b9ad-457519e24125
-  Args:
-    target: Friedrich_von_Veltheim
-    source: Armgard_Else_Helene_von_Veltheim
-    relation: :hasFather
-  AssignClass (b6933679-c600-4b12-8b0f-1c6a62f9be83)
- Call ID: b6933679-c600-4b12-8b0f-1c6a62f9be83
+  AssignClass (68d47283-25a1-4750-a28c-7f4e0aa1c52f)
+ Call ID: 68d47283-25a1-4750-a28c-7f4e0aa1c52f
   Args:
     type: :Person
-    source: Ottonie_von_Alvensleben
-  AssignClass (a63cf9b0-44d1-475a-86bb-3cc931d39134)
- Call ID: a63cf9b0-44d1-475a-86bb-3cc931d39134
+    source: Otto_d'Ambrosio
+  AddTriple (b4c4c14c-0ea7-4334-9e5e-fd4b52137745)
+ Call ID: b4c4c14c-0ea7-4334-9e5e-fd4b52137745
   Args:
-    source: Ottonie_von_Alvensleben
-    type: :Woman
-  AssignClass (5f483fba-7cce-4d44-aa5e-048d0134f647)
- Call ID: 5f483fba-7cce-4d44-aa5e-048d0134f647
-  Args:
-    type: :Ancestor
-    source: Ottonie_von_Alvensleben
-  AddTriple (07b9cd3a-1f0e-4c25-b412-c79b45600f9b)
- Call ID: 07b9cd3a-1f0e-4c25-b412-c79b45600f9b
-  Args:
-    target: Ottonie_von_Alvensleben
     relation: :hasMother
-    source: Armgard_Else_Helene_von_Veltheim
-  Finish (30b3232a-7dac-4bc5-ad6c-4badda58d374)
- Call ID: 30b3232a-7dac-4bc5-ad6c-4badda58d374
+    source: Otto_d'Ambrosio
+    target: Eleonore_von_Habsburg-Lothringen
+  AddTriple (e775af9e-95c5-446c-8ac2-395d85643233)
+ Call ID: e775af9e-95c5-446c-8ac2-395d85643233
   Args:
+    relation: :hasFather
+    source: Otto_d'Ambrosio
+    target: Jérôme_d'Ambrosio
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -584,37 +775,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Wilhelm_Karl_Prinz_von_Preussen a :Man,
+  data:Otto_d%27Ambrosio a :Man,
           :Person ;
-      :hasBirthYear 1922 ;
-      :hasDeathYear 2007 ;
-      :hasFather data:Prince_Oskar_of_Prussia ;
-      :hasMarriageYear 1952 ;
-      :hasMother data:Ina_Marie_von_Bassewitz ;
-      :hasRelation data:Armgard_Else_Helene_von_Veltheim .
+      :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+      :hasMother data:Eleonore_von_Habsburg-Lothringen .
 
-  data:Armgard_Else_Helene_von_Veltheim a :Person,
+  data:Charles_I_of_Austria a :Man,
+          :Person .
+
+  data:Eleonore_von_Habsburg-Lothringen a :Person,
           :Woman ;
-      :hasFather data:Friedrich_von_Veltheim ;
-      :hasMother data:Ottonie_von_Alvensleben .
+      :hasBirthYear 1994 ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMarriageYear 2020 ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+      :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+      :isSiblingOf data:Ferdinand_Habsburg .
 
-  data:Friedrich_von_Veltheim a :Ancestor,
-          :Man,
-          :Person .
+  data:Ferdinand_Habsburg a :Man,
+          :Person ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza .
 
-  data:Ina_Marie_von_Bassewitz a :Ancestor,
-          :Person,
+  data:Otto_von_Habsburg a :Man,
+          :Person ;
+      :hasFather data:Charles_I_of_Austria ;
+      :hasMother data:Zita_of_Bourbon-Parma .
+
+  data:Regina_von_Saxe-Meiningen a :Person,
           :Woman .
 
-  data:Ottonie_von_Alvensleben a :Ancestor,
-          :Person,
+  data:Zita_of_Bourbon-Parma a :Person,
           :Woman .
 
-  data:Prince_Oskar_of_Prussia a :Ancestor,
-          :Man,
+  data:Francesca_von_Thyssen-Bornemisza a :Person,
+          :Woman .
+
+  data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Man,
           :Person .
 
+  data:Karl_von_Habsburg a :Man,
+          :Person ;
+      :hasFather data:Otto_von_Habsburg ;
+      :hasMother data:Regina_von_Saxe-Meiningen .
 
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (783b3ab7-1208-4e62-ad40-c867097c1764)
+ Call ID: 783b3ab7-1208-4e62-ad40-c867097c1764
+  Args:
 
 ================================= Tool Message =================================
 
@@ -624,9 +837,394 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8912495e-12bc-4366-95ff-12afa1a54e80)
- Call ID: 8912495e-12bc-4366-95ff-12afa1a54e80
+  ValidateShacl (07520f81-53c0-4037-9ad3-b8fc415643e0)
+ Call ID: 07520f81-53c0-4037-9ad3-b8fc415643e0
   Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:30
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Jérôme_d'Ambrosio for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "J%C3%A9r%C3%B4me_d%27Ambrosio", class: ":Ancestor")
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Otto_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Otto_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Charles_I_of_Austria for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Charles_I_of_Austria", class: ":Ancestor")
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Eleonore_von_Habsburg-Lothringen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Eleonore_von_Habsburg-Lothringen", class: ":Ancestor")
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Regina_von_Saxe-Meiningen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Regina_von_Saxe-Meiningen", class: ":Ancestor")
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zita_of_Bourbon-Parma for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Zita_of_Bourbon-Parma", class: ":Ancestor")
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Jérôme_d'Ambrosio for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "J%C3%A9r%C3%B4me_d%27Ambrosio", class: ":Ancestor")
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Otto_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Otto_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Charles_I_of_Austria for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Charles_I_of_Austria", class: ":Ancestor")
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Eleonore_von_Habsburg-Lothringen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Eleonore_von_Habsburg-Lothringen", class: ":Ancestor")
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Regina_von_Saxe-Meiningen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Regina_von_Saxe-Meiningen", class: ":Ancestor")
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zita_of_Bourbon-Parma for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Zita_of_Bourbon-Parma", class: ":Ancestor")
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Jérôme_d'Ambrosio for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "J%C3%A9r%C3%B4me_d%27Ambrosio", class: ":Ancestor")
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Otto_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Otto_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Charles_I_of_Austria for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Charles_I_of_Austria", class: ":Ancestor")
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Eleonore_von_Habsburg-Lothringen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Eleonore_von_Habsburg-Lothringen", class: ":Ancestor")
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Regina_von_Saxe-Meiningen for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Regina_von_Saxe-Meiningen", class: ":Ancestor")
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zita_of_Bourbon-Parma for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Zita_of_Bourbon-Parma", class: ":Ancestor")
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Karl_von_Habsburg for property :hasFather is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Karl_von_Habsburg", class: ":Ancestor")
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Francesca_von_Thyssen-Bornemisza for property :hasMother is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Francesca_von_Thyssen-Bornemisza", class: ":Ancestor")
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (4b21e947-5051-4350-b635-57ba9011ae58)
+ Call ID: 4b21e947-5051-4350-b635-57ba9011ae58
+  Args:
+    source: Karl_von_Habsburg
+    type: :Ancestor
+  AssignClass (8748be9f-46f7-415a-8b83-66acfea72eb4)
+ Call ID: 8748be9f-46f7-415a-8b83-66acfea72eb4
+  Args:
+    source: Francesca_von_Thyssen-Bornemisza
+    type: :Ancestor
+  AssignClass (49d0048b-f106-4f29-94cd-dab59b1a989f)
+ Call ID: 49d0048b-f106-4f29-94cd-dab59b1a989f
+  Args:
+    source: Otto_von_Habsburg
+    type: :Ancestor
+  AssignClass (88a57688-5628-4a99-9dc3-b1f401ee9d43)
+ Call ID: 88a57688-5628-4a99-9dc3-b1f401ee9d43
+  Args:
+    source: Regina_von_Saxe-Meiningen
+    type: :Ancestor
+  AssignClass (d66f7356-07fa-4430-a44c-37843579a58b)
+ Call ID: d66f7356-07fa-4430-a44c-37843579a58b
+  Args:
+    source: Charles_I_of_Austria
+    type: :Ancestor
+  AssignClass (0a15b671-258b-4be4-adcb-141d49dc2e17)
+ Call ID: 0a15b671-258b-4be4-adcb-141d49dc2e17
+  Args:
+    source: Zita_of_Bourbon-Parma
+    type: :Ancestor
+  AssignClass (318b20e2-4f05-4f6a-81f0-24e931b9c886)
+ Call ID: 318b20e2-4f05-4f6a-81f0-24e931b9c886
+  Args:
+    source: Eleonore_von_Habsburg-Lothringen
+    type: :Ancestor
+  AssignClass (5e1835b3-3edf-4b45-9950-e4b6b2fa836d)
+ Call ID: 5e1835b3-3edf-4b45-9950-e4b6b2fa836d
+  Args:
+    source: Jérôme_d'Ambrosio
+    type: :Ancestor
+  ValidateShacl (ff938616-c0f5-483f-94bd-e8c1ad1bcaf0)
+ Call ID: ff938616-c0f5-483f-94bd-e8c1ad1bcaf0
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Otto_d%27Ambrosio a :Man,
+          :Person ;
+      :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+      :hasMother data:Eleonore_von_Habsburg-Lothringen .
+
+  data:Charles_I_of_Austria a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Eleonore_von_Habsburg-Lothringen a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1994 ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMarriageYear 2020 ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+      :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+      :isSiblingOf data:Ferdinand_Habsburg .
+
+  data:Ferdinand_Habsburg a :Man,
+          :Person ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza .
+
+  data:Otto_von_Habsburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Charles_I_of_Austria ;
+      :hasMother data:Zita_of_Bourbon-Parma .
+
+  data:Regina_von_Saxe-Meiningen a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Zita_of_Bourbon-Parma a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Karl_von_Habsburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Otto_von_Habsburg ;
+      :hasMother data:Regina_von_Saxe-Meiningen .
+
+
 
 ================================= Tool Message =================================
 
@@ -636,6 +1234,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (6accd065-1186-49ad-ac2d-463daa4f449c)
- Call ID: 6accd065-1186-49ad-ac2d-463daa4f449c
+  Finish (029098ca-aa3d-48c5-9cbd-67ed6eeebf5c)
+ Call ID: 029098ca-aa3d-48c5-9cbd-67ed6eeebf5c
   Args:

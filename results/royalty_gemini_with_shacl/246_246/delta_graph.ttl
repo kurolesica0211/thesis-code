@@ -9,11 +9,21 @@ data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
     :hasFather data:Prince_Richard_Duke_of_Gloucester ;
     :hasMarriageYear 2002 ;
     :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:Claire_Booth .
+    :hasRelation data:Claire_Booth ;
+    :isBloodrelationOf data:Charles_III .
+
+data:Queen_Camilla a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
 data:Birgitte_Duchess_of_Gloucester a :Ancestor,
         :Person,
         :Woman .
+
+data:Charles_III a :Man,
+        :Person .
 
 data:Claire_Booth a :Person,
         :Woman .

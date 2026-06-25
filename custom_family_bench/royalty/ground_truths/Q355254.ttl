@@ -7,28 +7,38 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Aschwin of Lippe-Biesterfeld" ;
-    data:posIndicesFull "652:687" ;
-    data:posIndicesPart "1084:1090",
+data:Prince_Constantijn_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Constantijn of the Netherlands" ;
+    data:posIndicesFull "64:101",
+        "71:101" ;
+    data:posIndicesPart "1030:1041",
+        "1084:1090",
+        "1091:1102",
         "1226:1232",
+        "1233:1244",
         "1312:1318",
+        "1319:1330",
         "1513:1519",
+        "1520:1531",
         "1794:1800",
+        "1808:1819",
         "1847:1853",
-        "782:788" ;
-    data:wdtLink wdt:Q2336212 ;
-    :alsoKnownAs "Aschwin Prinz zur Lippe-Biesterfeld",
-        "Ernst Aschwin Zur Lippe-Biesterfeld" ;
-    :hasSex data:male ;
-    :isUncleOf data:Beatrix_of_the_Netherlands .
+        "356:362",
+        "363:374",
+        "652:658",
+        "782:788",
+        "789:800" ;
+    data:wdtLink wdt:Q355254 ;
+    :alsoKnownAs "Constantijn Christof Frederik Aschwin of the Netherlands",
+        "Constantijn of the Netherlands",
+        "Constantijn van Oranje-Nassau",
+        "Prince Constantijn Christof Frederik Aschwin of the Netherlands",
+        "Prince Constantijn Christof Frederik Aschwin of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg" ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male .
 
-data:Princess_Laurentien_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Laurentien_of_the_Netherlands a :Person ;
     rdfs:label "Princess Laurentien of the Netherlands" ;
     data:posIndicesFull "1249:1276",
         "1255:1276" ;
@@ -50,40 +60,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
-    data:posIndicesFull "247:264" ;
-    data:posIndicesPart "1030:1041",
-        "1084:1090",
-        "1226:1232",
-        "1312:1318",
-        "1394:1399",
-        "1513:1519",
-        "1794:1800",
-        "1808:1819",
-        "1847:1853",
-        "356:362",
-        "782:788" ;
-    data:wdtLink wdt:Q159609 ;
-    :alsoKnownAs "Claus van Amsberg",
-        "Claus von Amsberg",
-        "Claus, Prince Consort of the Netherlands",
-        "Klaus von Amsberg",
-        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
-        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
-    :hasChild data:Prince_Constantijn_of_the_Netherlands ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Constantijn_of_the_Netherlands ;
-    :isFatherOf data:Prince_Constantijn_of_the_Netherlands ;
-    :isParentOf data:Prince_Constantijn_of_the_Netherlands .
-
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Beatrix_of_the_Netherlands a :Person ;
     rdfs:label "Beatrix of the Netherlands" ;
     data:posIndicesFull "1465:1478" ;
     data:posIndicesPart "1808:1819" ;
@@ -96,48 +73,33 @@ data:Beatrix_of_the_Netherlands a :Ancestor,
         "Princess Beatrix of Orange-Nassau",
         "Princess Beatrix of the Netherlands",
         "Queen Beatrix" ;
-    :hasChild data:Prince_Constantijn_of_the_Netherlands ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Constantijn_of_the_Netherlands ;
-    :isMotherOf data:Prince_Constantijn_of_the_Netherlands ;
-    :isParentOf data:Prince_Constantijn_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Prince_Constantijn_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Constantijn of the Netherlands" ;
-    data:posIndicesFull "64:101",
-        "71:101" ;
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
+    data:posIndicesFull "247:264" ;
     data:posIndicesPart "1030:1041",
         "1084:1090",
-        "1091:1102",
         "1226:1232",
-        "1233:1244",
         "1312:1318",
-        "1319:1330",
+        "1394:1399",
         "1513:1519",
-        "1520:1531",
         "1794:1800",
         "1808:1819",
         "1847:1853",
         "356:362",
-        "363:374",
-        "782:788",
-        "789:800" ;
-    data:wdtLink wdt:Q355254 ;
-    :alsoKnownAs "Constantijn Christof Frederik Aschwin of the Netherlands",
-        "Constantijn of the Netherlands",
-        "Constantijn van Oranje-Nassau",
-        "Prince Constantijn Christof Frederik Aschwin of the Netherlands",
-        "Prince Constantijn Christof Frederik Aschwin of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg" ;
-    :hasFather data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :hasMother data:Beatrix_of_the_Netherlands ;
-    :hasParent data:Beatrix_of_the_Netherlands,
-        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isChildOf data:Beatrix_of_the_Netherlands,
-        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :isSonOf data:Beatrix_of_the_Netherlands,
-        data:Prince_Claus-_Prince_Consort_of_the_Netherlands .
+        "652:658",
+        "782:788" ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg",
+        "Claus von Amsberg",
+        "Claus, Prince Consort of the Netherlands",
+        "Klaus von Amsberg",
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

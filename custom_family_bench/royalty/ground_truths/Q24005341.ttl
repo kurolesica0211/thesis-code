@@ -7,36 +7,28 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Princess_Mafalda_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Mafalda of Hesse and by Rhine" ;
+    data:wdtLink wdt:Q24005341 ;
+    :alsoKnownAs "Princess Mafalda Margarethe of Hesse and by Rhine",
+        "Princess Mafalda Margarethe of Hesse and by Rhine, Princess of Hesse-Kassel" ;
+    :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female .
+
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Mafalda_of_Hesse_and_by_Rhine a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Mafalda of Hesse and by Rhine" ;
-    data:wdtLink wdt:Q24005341 ;
-    :alsoKnownAs "Princess Mafalda Margarethe of Hesse and by Rhine",
-        "Princess Mafalda Margarethe of Hesse and by Rhine, Princess of Hesse-Kassel" ;
-    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
-    :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
-    :isDaughterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
-
-data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person ;
     rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg" ;
     data:posIndicesFull "220:267" ;
     data:wdtLink wdt:Q4164797 ;
     :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg" ;
-    :hasChild data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
-    :hasDaughter data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
-    :isParentOf data:Princess_Mafalda_of_Hesse_and_by_Rhine .
+    :hasSex data:female .
+
+data:female a :Female .
 

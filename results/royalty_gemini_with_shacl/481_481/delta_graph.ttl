@@ -2,34 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Hermann_Friedrich_Fernando_Roland_of_Leiningen a :Man,
-        :Person ;
-    :hasBirthYear 1963 ;
-    :hasFather data:Prince_Karl_of_Leiningen ;
-    :hasMarriageYear 1987 ;
-    :hasMother data:Princess_Marie_Louise_of_Bulgaria ;
-    :hasRelation data:Deborah_Cully ;
-    :knownAs "Hermann Leiningen"^^xsd:string .
+data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Peter_Ferdinand_of_Tuscany ;
+    :hasMarriageYear 1928 ;
+    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .
 
-data:King_Nicholas_of_Montenegro a :Man,
+data:Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
         :Person .
 
-data:King_Victor_Emmanuel_III_of_Italy a :Man,
-        :Person .
-
-data:Deborah_Cully a :Person,
+data:Margarete_Sophie_of_Austria a :Ancestor,
+        :Person,
         :Woman .
 
-data:King_Boris_III_of_Bulgaria a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Karl_of_Leiningen a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Marie_Louise_of_Bulgaria a :Ancestor,
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
         :Person,
-        :Woman ;
-    :hasFather data:King_Boris_III_of_Bulgaria .
+        :Woman .
+
+data:Peter_Ferdinand_of_Tuscany a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria .
 

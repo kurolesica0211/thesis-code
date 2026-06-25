@@ -69,29 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infante Jaime of Spain, Duke of Segovia  (Spanish: Don Jaime Leopoldo Isabelino Enrique Alejandro Alberto Alfonso Víctor Acacio Pedro Pablo María de Borbón y Battenberg; French: Jacques Léopold Isabellin Henri Alexandre Albért Alphonse Victor Acace Pierre Paul Marie de Bourbon; 23 June 1908 – 20 March 1975), was the second son of King Alfonso XIII of Spain and his wife, Princess Victoria Eugenie of Battenberg.
+Duke Christian Louis of Mecklenburg (German: Christian-Ludwig Herzog zu Mecklenburg; 29 September 1912 – 18 July 1996) was the second son of the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
 Early life
 
-Infante Jaime was born 23 June 1908 at the Royal Palace of La Granja de San Ildefonso, the second son of King Alfonso XIII and his Hessian wife, Victoria Eugenie of Battenberg, the youngest granddaughter of Queen Victoria.
-He had three brothers, Alfonso, Prince of Asturias (1907–1938), Infante Juan, Count of Barcelona (1913–1993), and  Infante Gonzalo (1914–1934); and two younger sisters, Infanta Beatriz (1909–2002) and Infanta María Cristina (1911–1996).
-His elder brother, the Prince of Asturias, and his youngest brother, Gonzalo, both had the bleeding disorder hemophilia, the genetic condition that plagued many descendants of Queen Victoria.
-Infante Jaime was born with an infection of the inner ear that progressively worsened, causing him to gradually lose his hearing.
-On 11 June 1933, his elder brother and heir to the defunct throne, Alfonso, renounced his title of Prince of Asturias in order to marry a Cuban commoner.
-Infante Jaime then held the title of Prince of Asturias, as successor to the throne of Spain, for only ten days before under pressure from his father, he was forced also to renounce his rights and the rights of his heirs, in favor of his younger, healthier brother Infante Juan.
-He was then granted the title "Duke of Segovia" by King Alfonso XIII.
-Don Jaime and Donna Emanuela had two sons, named after Jaime's brothers, Alfonso and Gonzalo:
+Born in Schloss Ludwigslust, as a member of an elder, Mecklenburg-Schwerin line of an ancient House of Mecklenburg, he was the second child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife, Princess Alexandra of Hanover, third child and second daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark.
+After the abolition of the monarchy, in 1919 the family went at the invitation of Queen Alexandrine, consort of Christian X of Denmark and sister of the Grand Duke, into exile in Denmark, where they lived for a year in Sorgenfri Palace.
+Later, the family returned to Mecklenburg and lived in Gelbensande, and from 1921 the family settled at Ludwigslust Castle.
+After the war
 
+When the war ended, Ludwigslust was first occupied by the British, but soon was transferred to the Soviet occupation, so that Christian Louis initially went with his family to Glücksburg Castle in Schleswig-Holstein.
+Together with his sister Thyra, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+Marriage and family
 
-Don Jaime and Emmanuelle de Dampierre divorced on 6 May 1947 in Bucharest (recognized by the Italian courts on 3 June 1949 in Turin but never recognized in Spain) and, on 3 August 1949 in Innsbruck, Don Jaime remarried civilly to divorced singer Charlotte Luise Auguste Tiedemann (2 January 1919 in Königsberg – 3 July 1979 in Berlin), daughter of Otto Eugen Tiedemann and wife Luise Amalia Klein.
-In the eyes of the Roman Catholic Church and of the French legitimists, Emmanuelle de Dampierre remained always his wife.
-On 3 May 1964, he took the title "Duke of Madrid" as head of a Carlist branch of the Spanish succession (recognized by the legitimist group of Carlists who did not support the Bourbon-Parma claim after Alfonso Carlos, Duke of San Jaime died in 1936).
-On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favour of his nephew, the future King Juan Carlos I, at the request of his elder son, Alfonso de Borbón.
+On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Princess Barbara of Prussia (1920–1994), the daughter of Prince Sigismund of Prussia and his wife, Princess Charlotte of Saxe-Altenburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +105,9 @@ On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +122,23 @@ On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,170 +430,179 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (669dd883-d49a-431c-abfd-cd2a9e768da6)
- Call ID: 669dd883-d49a-431c-abfd-cd2a9e768da6
+  AssignClass (2d9333af-638c-4f34-b0a6-6300a627f3b1)
+ Call ID: 2d9333af-638c-4f34-b0a6-6300a627f3b1
   Args:
     type: :Man
-    source: Infante_Jaime_of_Spain
-  AssignClass (2cf5efe9-f751-4659-8465-f969ca7cc8a3)
- Call ID: 2cf5efe9-f751-4659-8465-f969ca7cc8a3
+    source: :ChristianLouisOfMecklenburg
+  AssignClass (6a8a05cc-ca91-4848-902f-69ce3f464a08)
+ Call ID: 6a8a05cc-ca91-4848-902f-69ce3f464a08
   Args:
-    type: :Man
-    source: King_Alfonso_XIII_of_Spain
-  AssignClass (a7cbb6c8-e933-4c6d-ac86-779308730d87)
- Call ID: a7cbb6c8-e933-4c6d-ac86-779308730d87
+    source: :ChristianLouisOfMecklenburg
+    type: :Person
+  AddLiteral (202de757-90d4-4a4b-85d3-807a279b8240)
+ Call ID: 202de757-90d4-4a4b-85d3-807a279b8240
   Args:
-    type: :Woman
-    source: Princess_Victoria_Eugenie_of_Battenberg
-  AssignClass (9a8b4e9d-d3f2-442b-99c5-e999753a28f5)
- Call ID: 9a8b4e9d-d3f2-442b-99c5-e999753a28f5
-  Args:
-    source: Alfonso_Prince_of_Asturias
-    type: :Man
-  AssignClass (02edee0f-f289-4a4b-a6b4-cc0acb6551ee)
- Call ID: 02edee0f-f289-4a4b-a6b4-cc0acb6551ee
-  Args:
-    source: Infante_Juan_Count_of_Barcelona
-    type: :Man
-  AssignClass (50d848cb-51a4-44e2-b82a-cb72699e86c5)
- Call ID: 50d848cb-51a4-44e2-b82a-cb72699e86c5
-  Args:
-    type: :Man
-    source: Infante_Gonzalo
-  AssignClass (d5a432f3-c42b-49b4-834c-1651ae9bfba6)
- Call ID: d5a432f3-c42b-49b4-834c-1651ae9bfba6
-  Args:
-    type: :Woman
-    source: Infanta_Beatriz
-  AssignClass (6f35b372-7d07-4265-95d3-788ea45696ae)
- Call ID: 6f35b372-7d07-4265-95d3-788ea45696ae
-  Args:
-    type: :Woman
-    source: Infanta_Maria_Cristina
-  AssignClass (a0687c91-c5be-496b-b88b-0403cc01b9aa)
- Call ID: a0687c91-c5be-496b-b88b-0403cc01b9aa
-  Args:
-    type: :Woman
-    source: Donna_Emanuela_de_Dampierre
-  AssignClass (7c421249-2b04-4168-9685-d153331b4abd)
- Call ID: 7c421249-2b04-4168-9685-d153331b4abd
-  Args:
-    type: :Man
-    source: Alfonso_de_Borbon_son_of_Jaime
-  AssignClass (d1ef5611-db4e-4a7c-a74c-0b67f5b51355)
- Call ID: d1ef5611-db4e-4a7c-a74c-0b67f5b51355
-  Args:
-    type: :Man
-    source: Gonzalo_son_of_Jaime
-  AssignClass (415a0969-3187-4b9d-85da-a5a18724f1ef)
- Call ID: 415a0969-3187-4b9d-85da-a5a18724f1ef
-  Args:
-    source: Charlotte_Luise_Auguste_Tiedemann
-    type: :Woman
-  AssignClass (34324f75-73ba-4245-9b62-63a1a6095a42)
- Call ID: 34324f75-73ba-4245-9b62-63a1a6095a42
-  Args:
-    type: :Man
-    source: Otto_Eugen_Tiedemann
-  AssignClass (753b5436-cb2e-42bb-aca4-9f11cb3d2c49)
- Call ID: 753b5436-cb2e-42bb-aca4-9f11cb3d2c49
-  Args:
-    type: :Woman
-    source: Luise_Amalia_Klein
-  AddTriple (1a3af346-0181-4155-937e-6e8d9afbbc31)
- Call ID: 1a3af346-0181-4155-937e-6e8d9afbbc31
-  Args:
-    source: Infante_Jaime_of_Spain
-    target: King_Alfonso_XIII_of_Spain
-    relation: :hasFather
-  AddTriple (ff812691-f52a-406c-9669-2b1c71e639c4)
- Call ID: ff812691-f52a-406c-9669-2b1c71e639c4
-  Args:
-    relation: :hasMother
-    target: Princess_Victoria_Eugenie_of_Battenberg
-    source: Infante_Jaime_of_Spain
-  AddTriple (e28ad8f7-611e-463b-b3b7-fe0469b6c738)
- Call ID: e28ad8f7-611e-463b-b3b7-fe0469b6c738
-  Args:
-    source: Infante_Jaime_of_Spain
-    target: Alfonso_Prince_of_Asturias
-    relation: :hasBrother
-  AddTriple (cb49c0ab-c307-44ed-a1e9-05cc6175a5e6)
- Call ID: cb49c0ab-c307-44ed-a1e9-05cc6175a5e6
-  Args:
-    relation: :hasBrother
-    source: Infante_Jaime_of_Spain
-    target: Infante_Juan_Count_of_Barcelona
-  AddTriple (c9dee716-76b6-43f1-875e-05b1ad8decce)
- Call ID: c9dee716-76b6-43f1-875e-05b1ad8decce
-  Args:
-    target: Infante_Gonzalo
-    source: Infante_Jaime_of_Spain
-    relation: :hasBrother
-  AddTriple (245ec4f7-0d22-4bed-b294-c696c9efa44b)
- Call ID: 245ec4f7-0d22-4bed-b294-c696c9efa44b
-  Args:
-    source: Infante_Jaime_of_Spain
-    target: Infanta_Beatriz
-    relation: :hasSister
-  AddTriple (8db482b7-1f2e-4e73-a96c-5f3f30bc3be3)
- Call ID: 8db482b7-1f2e-4e73-a96c-5f3f30bc3be3
-  Args:
-    source: Infante_Jaime_of_Spain
-    target: Infanta_Maria_Cristina
-    relation: :hasSister
-  AddTriple (266ef726-e85b-4c72-b0d8-37427592bfc6)
- Call ID: 266ef726-e85b-4c72-b0d8-37427592bfc6
-  Args:
-    target: Alfonso_de_Borbon_son_of_Jaime
-    source: Infante_Jaime_of_Spain
-    relation: :hasSon
-  AddTriple (31f64c6d-7713-4b6c-9bd2-a3cc529fc81c)
- Call ID: 31f64c6d-7713-4b6c-9bd2-a3cc529fc81c
-  Args:
-    relation: :hasSon
-    source: Infante_Jaime_of_Spain
-    target: Gonzalo_son_of_Jaime
-  AddTriple (3ac06931-6944-4ca5-8458-d0c4596b8e06)
- Call ID: 3ac06931-6944-4ca5-8458-d0c4596b8e06
-  Args:
-    relation: :hasFather
-    source: Charlotte_Luise_Auguste_Tiedemann
-    target: Otto_Eugen_Tiedemann
-  AddTriple (bb0de3a8-0ccd-41a4-a239-28999df603fe)
- Call ID: bb0de3a8-0ccd-41a4-a239-28999df603fe
-  Args:
-    relation: :hasMother
-    source: Charlotte_Luise_Auguste_Tiedemann
-    target: Luise_Amalia_Klein
-  AddLiteral (33ed98d9-3a01-4c25-8c7f-a30dcf0fe7a7)
- Call ID: 33ed98d9-3a01-4c25-8c7f-a30dcf0fe7a7
-  Args:
-    literal_type: xsd:integer
-    source: Infante_Jaime_of_Spain
+    source: :ChristianLouisOfMecklenburg
     relation: :hasBirthYear
-    literal_value: 1908
-  AddLiteral (ae4466ba-93c1-4b4d-9e64-304c6d4a3fd4)
- Call ID: ae4466ba-93c1-4b4d-9e64-304c6d4a3fd4
-  Args:
     literal_type: xsd:integer
-    source: Infante_Jaime_of_Spain
-    relation: :hasDeathYear
-    literal_value: 1975
-  AddLiteral (e18e4392-ae0d-462a-847e-f7d6c153c665)
- Call ID: e18e4392-ae0d-462a-847e-f7d6c153c665
+    literal_value: 1912
+  AddLiteral (2ede4db2-bc9f-4791-a8ec-1ee357b2e60e)
+ Call ID: 2ede4db2-bc9f-4791-a8ec-1ee357b2e60e
   Args:
-    source: Charlotte_Luise_Auguste_Tiedemann
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1919
-  AddLiteral (ec28f393-ad29-4fff-89af-179feb5d5748)
- Call ID: ec28f393-ad29-4fff-89af-179feb5d5748
-  Args:
-    source: Charlotte_Luise_Auguste_Tiedemann
+    literal_value: 1996
     literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1979
-  Finish (46e54798-34a0-47d9-806d-824aa3bb5d21)
- Call ID: 46e54798-34a0-47d9-806d-824aa3bb5d21
+    source: :ChristianLouisOfMecklenburg
+  AssignClass (76bf225f-91d1-49fa-8165-442f917edccd)
+ Call ID: 76bf225f-91d1-49fa-8165-442f917edccd
+  Args:
+    type: :Man
+    source: :FrederickFrancisIV
+  AssignClass (95a8e2ba-428c-471b-8592-3aa20e0d1b44)
+ Call ID: 95a8e2ba-428c-471b-8592-3aa20e0d1b44
+  Args:
+    source: :FrederickFrancisIV
+    type: :Person
+  AddTriple (35a6fa76-8c32-4b52-9377-a9657d72af73)
+ Call ID: 35a6fa76-8c32-4b52-9377-a9657d72af73
+  Args:
+    source: :ChristianLouisOfMecklenburg
+    relation: :hasFather
+    target: :FrederickFrancisIV
+  AssignClass (0c892c19-8276-49e8-8a86-91fce7de91ad)
+ Call ID: 0c892c19-8276-49e8-8a86-91fce7de91ad
+  Args:
+    source: :PrincessAlexandraOfHanover
+    type: :Woman
+  AssignClass (4d71ad6f-3091-42b0-a95e-2bf2d10e738a)
+ Call ID: 4d71ad6f-3091-42b0-a95e-2bf2d10e738a
+  Args:
+    source: :PrincessAlexandraOfHanover
+    type: :Person
+  AddTriple (3208fdc5-ea37-4778-affe-07c5f0c1f096)
+ Call ID: 3208fdc5-ea37-4778-affe-07c5f0c1f096
+  Args:
+    target: :PrincessAlexandraOfHanover
+    relation: :hasMother
+    source: :ChristianLouisOfMecklenburg
+  AssignClass (47993a38-652d-4310-8ac2-b5949cc7b131)
+ Call ID: 47993a38-652d-4310-8ac2-b5949cc7b131
+  Args:
+    type: :Man
+    source: :ErnestAugustusCrownPrinceOfHanover
+  AssignClass (95574a29-261e-4813-ae97-14b3e8974781)
+ Call ID: 95574a29-261e-4813-ae97-14b3e8974781
+  Args:
+    source: :ErnestAugustusCrownPrinceOfHanover
+    type: :Person
+  AddTriple (048a4ce1-4508-4b49-8b67-a0061cb26347)
+ Call ID: 048a4ce1-4508-4b49-8b67-a0061cb26347
+  Args:
+    target: :ErnestAugustusCrownPrinceOfHanover
+    relation: :hasFather
+    source: :PrincessAlexandraOfHanover
+  AssignClass (04c81bfb-b47d-4577-90f4-cfd659734427)
+ Call ID: 04c81bfb-b47d-4577-90f4-cfd659734427
+  Args:
+    source: :PrincessThyraOfDenmark
+    type: :Woman
+  AssignClass (7514dd67-ca4d-4040-ab73-c12d2975dd2c)
+ Call ID: 7514dd67-ca4d-4040-ab73-c12d2975dd2c
+  Args:
+    type: :Person
+    source: :PrincessThyraOfDenmark
+  AddTriple (02275f78-0f15-473a-a7d5-5a8ad5772b3a)
+ Call ID: 02275f78-0f15-473a-a7d5-5a8ad5772b3a
+  Args:
+    relation: :hasMother
+    target: :PrincessThyraOfDenmark
+    source: :PrincessAlexandraOfHanover
+  AssignClass (eccef649-d0d9-434e-94b1-1c342f8e4836)
+ Call ID: eccef649-d0d9-434e-94b1-1c342f8e4836
+  Args:
+    type: :Woman
+    source: :ThyraMecklenburg
+  AssignClass (6a24c6ce-918e-47b2-8e81-9d7fcd6c06f2)
+ Call ID: 6a24c6ce-918e-47b2-8e81-9d7fcd6c06f2
+  Args:
+    source: :ThyraMecklenburg
+    type: :Person
+  AddTriple (b2c4a172-16c7-4803-ad74-fb9be9404a73)
+ Call ID: b2c4a172-16c7-4803-ad74-fb9be9404a73
+  Args:
+    source: :ChristianLouisOfMecklenburg
+    relation: :isSiblingOf
+    target: :ThyraMecklenburg
+  AssignClass (bb0b8b56-afec-4263-a1ae-ad2c8ae7834d)
+ Call ID: bb0b8b56-afec-4263-a1ae-ad2c8ae7834d
+  Args:
+    source: :PrincessBarbaraOfPrussia
+    type: :Woman
+  AssignClass (ca666414-d321-4ee8-814e-ff424e105e3d)
+ Call ID: ca666414-d321-4ee8-814e-ff424e105e3d
+  Args:
+    source: :PrincessBarbaraOfPrussia
+    type: :Person
+  AddLiteral (21efa8a7-aef4-4388-bd1a-b7a159507524)
+ Call ID: 21efa8a7-aef4-4388-bd1a-b7a159507524
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1920
+    source: :PrincessBarbaraOfPrussia
+  AddLiteral (e93f97ef-75ab-40a0-8de4-c98cc0216fa1)
+ Call ID: e93f97ef-75ab-40a0-8de4-c98cc0216fa1
+  Args:
+    literal_value: 1994
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :PrincessBarbaraOfPrussia
+  AddLiteral (0e30837e-cc93-4713-b86b-2102f12341fa)
+ Call ID: 0e30837e-cc93-4713-b86b-2102f12341fa
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1954
+    literal_type: xsd:integer
+    source: :ChristianLouisOfMecklenburg
+  AddTriple (7239a6b6-9316-4244-bef5-7020a5eb8222)
+ Call ID: 7239a6b6-9316-4244-bef5-7020a5eb8222
+  Args:
+    relation: :hasRelation
+    target: :PrincessBarbaraOfPrussia
+    source: :ChristianLouisOfMecklenburg
+  AssignClass (351d023a-9bb8-4278-a1fe-a6b8ce3ced60)
+ Call ID: 351d023a-9bb8-4278-a1fe-a6b8ce3ced60
+  Args:
+    source: :PrinceSigismundOfPrussia
+    type: :Man
+  AssignClass (a8d3a6e4-4473-46be-9fe6-b64d95a180b9)
+ Call ID: a8d3a6e4-4473-46be-9fe6-b64d95a180b9
+  Args:
+    type: :Person
+    source: :PrinceSigismundOfPrussia
+  AddTriple (c2be74c8-41c2-44ab-8ffb-bd83182da404)
+ Call ID: c2be74c8-41c2-44ab-8ffb-bd83182da404
+  Args:
+    target: :PrinceSigismundOfPrussia
+    relation: :hasFather
+    source: :PrincessBarbaraOfPrussia
+  AssignClass (ab18a687-daa8-4f26-bebc-09d9da1d0735)
+ Call ID: ab18a687-daa8-4f26-bebc-09d9da1d0735
+  Args:
+    source: :PrincessCharlotteOfSaxeAltenburg
+    type: :Woman
+  AssignClass (78405999-9e2d-4b57-b36d-42bc282a5baf)
+ Call ID: 78405999-9e2d-4b57-b36d-42bc282a5baf
+  Args:
+    type: :Person
+    source: :PrincessCharlotteOfSaxeAltenburg
+  AddTriple (e73bded3-c0e9-459d-803a-2e766ffd790a)
+ Call ID: e73bded3-c0e9-459d-803a-2e766ffd790a
+  Args:
+    source: :PrincessBarbaraOfPrussia
+    target: :PrincessCharlotteOfSaxeAltenburg
+    relation: :hasMother
+  Finish (a7a2986d-0616-412c-9e38-fc5b8749fa0a)
+ Call ID: a7a2986d-0616-412c-9e38-fc5b8749fa0a
   Args:

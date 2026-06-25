@@ -85,32 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Margrethe II
+The Duke of AostaThe Duchess of Aosta
 
 
-Countess Athena of Monpezat (born Athena Marguerite Françoise Marie; 24 January 2012) is a member of the Danish royal family.
-She is the younger child and only daughter of Prince Joachim and Princess Marie of Denmark.
-She is the youngest grandchild of Queen Margrethe II and Prince Henrik, and the niece of King Frederik X. Athena is currently ninth in the line of succession to the Danish throne.
-Biography
+The Dowager Duchess of Aosta
 
-Athena was born a princess of Denmark on 24 January 2012 at Rigshospitalet, the Copenhagen University Hospital.
-She has two older half-brothers from her father's first marriage, Nikolai and Felix, and an older brother, Henrik.
-In accordance with Danish royal traditions, her names were not revealed until her christening, which took place on 20 May 2012 at the Møgeltønder Church, where her older brothers Felix and Henrik were also christened.
-She was named Athena Marguerite Françoise Marie for both of her grandmothers as well as for her mother.
-Her godparents are her maternal uncles, Gregory Grandet and Edouard Cavallier; Carina Axelsson, the long-term girlfriend of her father's cousin Gustav, Hereditary Prince of Sayn-Wittgenstein-Berleburg; and friends of her parents, Julie Mirabaud, Diego de Lavandeyra and Henriette Steenstrup.
-Joseph Søstrenes Skole – the same Catholic private school in Ordrup as her brother Henrik.
-In 2019, when Athena and her family moved to France, she was enrolled at the private school EIB Monceau in the 8th arrondissement of Paris alongside her brother.
-Titles and styles
 
-Athena was styled as "Her Highness Princess Athena of Denmark, Countess of Monpezat" from birth until 1 January 2023.
-In September 2022, Queen Margrethe II decided to restrict the titles Prince and Princess to the direct line of succession to the throne.
-Since 1 January 2023, she has been known as "Her Excellency Countess Athena of Monpezat".
+Aimone of Savoy-Aosta, 6th Duke of Aosta (Aimone Umberto Emanuele Filiberto Luigi Amedeo Elena Maria Fiorenzo di Savoia-Aosta; born 13 October 1967) is an Italian businessman and one of two claimants to be head of the House of Savoy.
+Education and career
+
+Aimone was born in Florence, the second child and only son of Prince Amedeo of Savoy, Duke of Aosta and his first wife, Princess Claude of Orléans.
+Marriage and children
+
+Aimone's engagement to Princess Olga of Greece, daughter of Prince Michael of Greece and Denmark, was announced in May 2005.
+Olga and Aimone are second cousins; both being great-grandchildren of the French pretender Prince Jean, Duke of Guise.
+Dynastic issues
+
+From birth, Aimone was known as Duke of Apulia (duca delle Puglie).
+On 7 July 2006, Aimone's father, Prince Amedeo, Duke of Aosta, claimed the headship of the House of Savoy and the title Duke of Savoy, in opposition to his cousin Vittorio Emanuele, Prince of Naples.
+Amedeo defined Aimone as Duke of Aosta "in pectore".
+On 3 February 2024, Vittorio Emanuele died, leaving his son Emanuele Filiberto of Savoy with the claim to the headship in opposition to Aimone.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +128,9 @@ Since 1 January 2023, she has been known as "Her Excellency Countess Athena of M
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +145,23 @@ Since 1 January 2023, she has been known as "Her Excellency Countess Athena of M
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,197 +453,134 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (40eb568e-bfc8-4545-a862-4dfc2f6dfc6b)
- Call ID: 40eb568e-bfc8-4545-a862-4dfc2f6dfc6b
+  AssignClass (b8bc1c13-ddf6-4ae2-920c-a39012e8a760)
+ Call ID: b8bc1c13-ddf6-4ae2-920c-a39012e8a760
   Args:
-    source: Athena_of_Monpezat
-    type: :Person
-  AssignClass (60c98828-9d61-48f4-a930-50025b7e6145)
- Call ID: 60c98828-9d61-48f4-a930-50025b7e6145
-  Args:
-    type: :Woman
-    source: Athena_of_Monpezat
-  AssignClass (02bb9a21-c866-43c9-9b9e-777b53960d0c)
- Call ID: 02bb9a21-c866-43c9-9b9e-777b53960d0c
-  Args:
-    type: :Person
-    source: Joachim_of_Denmark
-  AssignClass (37d2b924-74d6-43ad-8161-56d3fdd6bd7d)
- Call ID: 37d2b924-74d6-43ad-8161-56d3fdd6bd7d
-  Args:
+    source: :Aimone_of_Savoy-Aosta
     type: :Man
-    source: Joachim_of_Denmark
-  AssignClass (9d093b32-90a6-42a5-8f82-c582af5f0d20)
- Call ID: 9d093b32-90a6-42a5-8f82-c582af5f0d20
+  AssignClass (8e4a11fb-9c84-4e7c-a76a-8dd0309a2db2)
+ Call ID: 8e4a11fb-9c84-4e7c-a76a-8dd0309a2db2
   Args:
+    source: :Aimone_of_Savoy-Aosta
     type: :Person
-    source: Marie_of_Denmark
-  AssignClass (96bda624-b95c-4983-b3a6-ae3561c58442)
- Call ID: 96bda624-b95c-4983-b3a6-ae3561c58442
+  AddLiteral (27b16141-3511-4fec-82a7-d030ae068ff8)
+ Call ID: 27b16141-3511-4fec-82a7-d030ae068ff8
   Args:
-    type: :Woman
-    source: Marie_of_Denmark
-  AssignClass (dffd5046-9a74-4d28-8a93-fa87f3ecabdb)
- Call ID: dffd5046-9a74-4d28-8a93-fa87f3ecabdb
-  Args:
-    type: :Person
-    source: Margrethe_II
-  AssignClass (49912893-3f4b-466f-aa1c-419bd99fd8ab)
- Call ID: 49912893-3f4b-466f-aa1c-419bd99fd8ab
-  Args:
-    type: :Woman
-    source: Margrethe_II
-  AssignClass (f2a63535-2710-4698-aef3-79159f2df3e8)
- Call ID: f2a63535-2710-4698-aef3-79159f2df3e8
-  Args:
-    type: :Person
-    source: Henrik_Prince_Consort
-  AssignClass (ee4cff39-69a3-4f67-926a-a5f20df947d8)
- Call ID: ee4cff39-69a3-4f67-926a-a5f20df947d8
-  Args:
-    type: :Man
-    source: Henrik_Prince_Consort
-  AssignClass (bd7764f8-1b8c-4a3f-8249-ff5b4415f0a9)
- Call ID: bd7764f8-1b8c-4a3f-8249-ff5b4415f0a9
-  Args:
-    type: :Person
-    source: Frederik_X
-  AssignClass (6f7148a3-7eb6-45c6-ba07-f9fd8dad4c22)
- Call ID: 6f7148a3-7eb6-45c6-ba07-f9fd8dad4c22
-  Args:
-    type: :Man
-    source: Frederik_X
-  AssignClass (767d1587-b630-470c-a294-9a0518216c7c)
- Call ID: 767d1587-b630-470c-a294-9a0518216c7c
-  Args:
-    source: Nikolai
-    type: :Person
-  AssignClass (91eec7fc-10ab-492c-8d28-89d2f77fd863)
- Call ID: 91eec7fc-10ab-492c-8d28-89d2f77fd863
-  Args:
-    source: Nikolai
-    type: :Man
-  AssignClass (8969b988-2126-4495-8304-b601de75d70d)
- Call ID: 8969b988-2126-4495-8304-b601de75d70d
-  Args:
-    source: Felix
-    type: :Person
-  AssignClass (6499852a-79bc-4b57-be1a-e4e34b561044)
- Call ID: 6499852a-79bc-4b57-be1a-e4e34b561044
-  Args:
-    source: Felix
-    type: :Man
-  AssignClass (cad9ea15-e744-47d8-b023-16cce8e5287e)
- Call ID: cad9ea15-e744-47d8-b023-16cce8e5287e
-  Args:
-    source: Henrik_Denmark
-    type: :Person
-  AssignClass (1793a5c5-1884-4674-a44a-66a5bfe021fa)
- Call ID: 1793a5c5-1884-4674-a44a-66a5bfe021fa
-  Args:
-    type: :Man
-    source: Henrik_Denmark
-  AddTriple (c87c6d6e-8cde-4503-ae9b-a9d9c67ed04f)
- Call ID: c87c6d6e-8cde-4503-ae9b-a9d9c67ed04f
-  Args:
-    relation: :hasFather
-    source: Athena_of_Monpezat
-    target: Joachim_of_Denmark
-  AddTriple (3d8f1fbb-d5cf-4f17-9175-87da9b677875)
- Call ID: 3d8f1fbb-d5cf-4f17-9175-87da9b677875
-  Args:
-    relation: :hasMother
-    source: Athena_of_Monpezat
-    target: Marie_of_Denmark
-  AddTriple (cb2e16bd-b338-4f4f-af69-861d992ff957)
- Call ID: cb2e16bd-b338-4f4f-af69-861d992ff957
-  Args:
-    relation: :hasFather
-    target: Joachim_of_Denmark
-    source: Henrik_Denmark
-  AddTriple (1139b2ae-89b7-4cac-b4cb-8e8eb7707445)
- Call ID: 1139b2ae-89b7-4cac-b4cb-8e8eb7707445
-  Args:
-    target: Marie_of_Denmark
-    source: Henrik_Denmark
-    relation: :hasMother
-  AddTriple (97f4b786-518c-4444-91e6-39db5d45df79)
- Call ID: 97f4b786-518c-4444-91e6-39db5d45df79
-  Args:
-    relation: :hasFather
-    source: Nikolai
-    target: Joachim_of_Denmark
-  AddTriple (5bd3b9d0-dcf9-4983-a482-efc489489248)
- Call ID: 5bd3b9d0-dcf9-4983-a482-efc489489248
-  Args:
-    relation: :hasFather
-    target: Joachim_of_Denmark
-    source: Felix
-  AddLiteral (0edb8004-ca01-4e61-8817-7a32a2952005)
- Call ID: 0edb8004-ca01-4e61-8817-7a32a2952005
-  Args:
-    literal_type: xsd:string
-    literal_value: Athena Marguerite Françoise Marie
-    source: Athena_of_Monpezat
-    relation: :knownAs
-  AddLiteral (f479e333-3a9c-48a9-b6ef-2128f9c6d441)
- Call ID: f479e333-3a9c-48a9-b6ef-2128f9c6d441
-  Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Athena_of_Monpezat
-    literal_value: Countess Athena of Monpezat
-  AddLiteral (6b73cd39-84d7-4675-90e6-0e7e872f8caa)
- Call ID: 6b73cd39-84d7-4675-90e6-0e7e872f8caa
-  Args:
-    literal_type: xsd:string
-    literal_value: Her Highness Princess Athena of Denmark, Countess of Monpezat
-    source: Athena_of_Monpezat
-    relation: :formerlyKnownAs
-  AddLiteral (8948c1f1-cd91-4627-982c-96515e14235f)
- Call ID: 8948c1f1-cd91-4627-982c-96515e14235f
-  Args:
-    source: Athena_of_Monpezat
-    literal_value: Her Excellency Countess Athena of Monpezat
-    relation: :knownAs
-    literal_type: xsd:string
-  AddLiteral (53174998-f1da-41ed-af90-b46889cc9484)
- Call ID: 53174998-f1da-41ed-af90-b46889cc9484
-  Args:
-    literal_type: xsd:integer
+    literal_value: 1967
+    source: :Aimone_of_Savoy-Aosta
     relation: :hasBirthYear
-    source: Athena_of_Monpezat
-    literal_value: 2012
-  ValidateShacl (e7e309e6-3f72-4015-864a-ba3313cae15f)
- Call ID: e7e309e6-3f72-4015-864a-ba3313cae15f
+    literal_type: xsd:integer
+  AddLiteral (2c1226af-3b55-4201-ad05-8921512164ec)
+ Call ID: 2c1226af-3b55-4201-ad05-8921512164ec
   Args:
-  Finish (59f6e749-ec32-4c0a-8ce7-fc205e620db1)
- Call ID: 59f6e749-ec32-4c0a-8ce7-fc205e620db1
+    literal_type: xsd:string
+    relation: :formerlyKnownAs
+    source: :Aimone_of_Savoy-Aosta
+    literal_value: Duke of Apulia
+  AssignClass (882a7360-d468-4691-b798-e0b02cbc7adb)
+ Call ID: 882a7360-d468-4691-b798-e0b02cbc7adb
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Man
+    source: :Amedeo_of_Savoy
+  AssignClass (0fa1f05d-4da7-414f-b62d-52acc1a6051d)
+ Call ID: 0fa1f05d-4da7-414f-b62d-52acc1a6051d
+  Args:
+    type: :Person
+    source: :Amedeo_of_Savoy
+  AssignClass (9047b669-87b7-422c-bba3-ea6d37e27af6)
+ Call ID: 9047b669-87b7-422c-bba3-ea6d37e27af6
+  Args:
+    source: :Claude_of_Orleans
+    type: :Woman
+  AssignClass (1ffe2f5e-52fe-4ca8-b0e8-4b599b7044c6)
+ Call ID: 1ffe2f5e-52fe-4ca8-b0e8-4b599b7044c6
+  Args:
+    type: :Person
+    source: :Claude_of_Orleans
+  AddTriple (3aa5fedd-42b0-42b8-8a6f-e29260d5cda9)
+ Call ID: 3aa5fedd-42b0-42b8-8a6f-e29260d5cda9
+  Args:
+    target: :Amedeo_of_Savoy
+    source: :Aimone_of_Savoy-Aosta
+    relation: :hasFather
+  AddTriple (404683e9-0d61-4e18-9b9b-8127ea2fa704)
+ Call ID: 404683e9-0d61-4e18-9b9b-8127ea2fa704
+  Args:
+    target: :Claude_of_Orleans
+    source: :Aimone_of_Savoy-Aosta
+    relation: :hasMother
+  AssignClass (22599e36-41ac-4ded-b74a-8415c348fa5e)
+ Call ID: 22599e36-41ac-4ded-b74a-8415c348fa5e
+  Args:
+    source: :Olga_of_Greece
+    type: :Woman
+  AssignClass (6468cc64-9887-41a1-a5a9-578dbc6e5472)
+ Call ID: 6468cc64-9887-41a1-a5a9-578dbc6e5472
+  Args:
+    source: :Olga_of_Greece
+    type: :Person
+  AssignClass (45d3784e-2522-4dfd-bb8c-4c413af9b351)
+ Call ID: 45d3784e-2522-4dfd-bb8c-4c413af9b351
+  Args:
+    type: :Man
+    source: :Michael_of_Greece_and_Denmark
+  AssignClass (0cc43ff5-7cff-40a0-b08d-b37d807d7bf6)
+ Call ID: 0cc43ff5-7cff-40a0-b08d-b37d807d7bf6
+  Args:
+    type: :Person
+    source: :Michael_of_Greece_and_Denmark
+  AddTriple (7139ee0d-97f5-4504-a44f-8d9b7dde2198)
+ Call ID: 7139ee0d-97f5-4504-a44f-8d9b7dde2198
+  Args:
+    target: :Michael_of_Greece_and_Denmark
+    source: :Olga_of_Greece
+    relation: :hasFather
+  AssignClass (375c26db-1dc9-4837-978d-f1adf3b6e2b3)
+ Call ID: 375c26db-1dc9-4837-978d-f1adf3b6e2b3
+  Args:
+    type: :Man
+    source: :Vittorio_Emanuele
+  AssignClass (a449af15-7f3c-4a5e-98c7-ecb4d9d22876)
+ Call ID: a449af15-7f3c-4a5e-98c7-ecb4d9d22876
+  Args:
+    type: :Person
+    source: :Vittorio_Emanuele
+  AddLiteral (0cbb8b61-b98f-419c-848b-9362ffcc6912)
+ Call ID: 0cbb8b61-b98f-419c-848b-9362ffcc6912
+  Args:
+    literal_value: 2024
+    source: :Vittorio_Emanuele
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (668677fc-9b7a-47b9-971b-9c4917e2cdb6)
+ Call ID: 668677fc-9b7a-47b9-971b-9c4917e2cdb6
+  Args:
+    type: :Man
+    source: :Emanuele_Filiberto_of_Savoy
+  AssignClass (b89feb21-a7a4-4747-bf1a-485b39243210)
+ Call ID: b89feb21-a7a4-4747-bf1a-485b39243210
+  Args:
+    type: :Person
+    source: :Emanuele_Filiberto_of_Savoy
+  AddTriple (f541b1e6-29c5-498d-b6a7-3ec0cc45fe9f)
+ Call ID: f541b1e6-29c5-498d-b6a7-3ec0cc45fe9f
+  Args:
+    source: :Emanuele_Filiberto_of_Savoy
+    target: :Vittorio_Emanuele
+    relation: :hasFather
+  AssignClass (1efacaa2-9383-4af0-8a16-f0ae34e7be43)
+ Call ID: 1efacaa2-9383-4af0-8a16-f0ae34e7be43
+  Args:
+    type: :Man
+    source: :Prince_Jean_Duke_of_Guise
+  AssignClass (d5450432-b157-4811-9f25-eb8a5ab6fd35)
+ Call ID: d5450432-b157-4811-9f25-eb8a5ab6fd35
+  Args:
+    type: :Person
+    source: :Prince_Jean_Duke_of_Guise
+  Finish (c8ffd5dc-efa7-41a0-814b-e9774504afb1)
+ Call ID: c8ffd5dc-efa7-41a0-814b-e9774504afb1
+  Args:
 
 ================================= Tool Message =================================
 
@@ -648,195 +677,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Athena_of_Monpezat a :Person,
+  data:Aimone_of_Savoy-Aosta a :Man,
+          :Person ;
+      :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+      :hasBirthYear 1967 ;
+      :hasFather data:Amedeo_of_Savoy ;
+      :hasMother data:Claude_of_Orleans .
+
+  data:Emanuele_Filiberto_of_Savoy a :Man,
+          :Person ;
+      :hasFather data:Vittorio_Emanuele .
+
+  data:Olga_of_Greece a :Person,
           :Woman ;
-      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
-      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
-      :hasBirthYear 2012 ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark ;
-      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
-          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
+      :hasFather data:Michael_of_Greece_and_Denmark .
 
-  data:Felix a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark .
-
-  data:Frederik_X a :Man,
+  data:Prince_Jean_Duke_of_Guise a :Man,
           :Person .
 
-  data:Henrik_Denmark a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark .
-
-  data:Henrik_Prince_Consort a :Man,
+  data:Amedeo_of_Savoy a :Man,
           :Person .
 
-  data:Margrethe_II a :Person,
+  data:Claude_of_Orleans a :Person,
           :Woman .
 
-  data:Nikolai a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark .
-
-  data:Marie_of_Denmark a :Person,
-          :Woman .
-
-  data:Joachim_of_Denmark a :Man,
+  data:Michael_of_Greece_and_Denmark a :Man,
           :Person .
 
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:18
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Felix, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Henrik_Denmark, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Nikolai, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Joachim_of_Denmark is assigned as the father of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Joachim_of_Denmark', class: ':Man')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Henrik_Denmark, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marie_of_Denmark is assigned as the mother of Athena_of_Monpezat, but it lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie_of_Denmark', class: ':Woman')
-
+  data:Vittorio_Emanuele a :Man,
+          :Person ;
+      :hasDeathYear 2024 .
 
 
 
@@ -848,606 +718,149 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (338e428b-e263-44c0-b86e-b96b1d5c4f0c)
- Call ID: 338e428b-e263-44c0-b86e-b96b1d5c4f0c
+  ValidateShacl (42f56ffe-139e-415c-b2e7-8eac506dfa41)
+ Call ID: 42f56ffe-139e-415c-b2e7-8eac506dfa41
   Args:
-    type: :Ancestor
-    source: Joachim_of_Denmark
-  AssignClass (a15f9fd3-c13a-42e4-b9db-8da9da4d7704)
- Call ID: a15f9fd3-c13a-42e4-b9db-8da9da4d7704
-  Args:
-    type: :Ancestor
-    source: Marie_of_Denmark
-  AddTriple (6cafb082-2894-41d1-9296-2c733a6c84d6)
- Call ID: 6cafb082-2894-41d1-9296-2c733a6c84d6
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Joachim_of_Denmark
-  AddTriple (4aae013c-e4ef-4f0e-bf0d-61373911894c)
- Call ID: 4aae013c-e4ef-4f0e-bf0d-61373911894c
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Marie_of_Denmark
-  AddTriple (33469d59-deb7-4188-bddf-a63070b3eca6)
- Call ID: 33469d59-deb7-4188-bddf-a63070b3eca6
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: Athena_of_Monpezat
-  AddTriple (cb8b95b6-c2c7-4697-9300-8530205adb54)
- Call ID: cb8b95b6-c2c7-4697-9300-8530205adb54
-  Args:
-    source: Nikolai
-    relation: :hasSex
-    target: :Male
-  AddTriple (4cde0363-1f82-4d8b-96ce-e440f7276451)
- Call ID: 4cde0363-1f82-4d8b-96ce-e440f7276451
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Felix
-  AddTriple (a5cc42ac-5c59-406d-a1d1-971a3bb86f7e)
- Call ID: a5cc42ac-5c59-406d-a1d1-971a3bb86f7e
-  Args:
-    source: Henrik_Denmark
-    relation: :hasSex
-    target: :Male
-  ValidateShacl (221f49c3-5fd0-4ad0-8930-0edd7686ba0c)
- Call ID: 221f49c3-5fd0-4ad0-8930-0edd7686ba0c
-  Args:
-  Finish (b1471b4b-86c7-4f42-b971-58ed919c5407)
- Call ID: b1471b4b-86c7-4f42-b971-58ed919c5407
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Athena_of_Monpezat a :Person,
-          :Woman ;
-      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
-      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
-      :hasBirthYear 2012 ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark ;
-      :hasSex data:Female ;
-      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
-          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
-
-  data:Felix a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasSex data:Male .
-
-  data:Frederik_X a :Man,
-          :Person .
-
-  data:Henrik_Denmark a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark ;
-      :hasSex data:Male .
-
-  data:Henrik_Prince_Consort a :Man,
-          :Person .
-
-  data:Margrethe_II a :Person,
-          :Woman .
-
-  data:Nikolai a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasSex data:Male .
-
-  data:Marie_of_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Joachim_of_Denmark a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:54
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
+      The node Amedeo_of_Savoy, which is the value of the property :hasFather for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Amedeo_of_Savoy', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Vittorio_Emanuele, which is the value of the property :hasFather for Emanuele_Filiberto_of_Savoy, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Vittorio_Emanuele', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
+      The node Claude_of_Orleans, which is the value of the property :hasMother for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Claude_of_Orleans', class=':Woman')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Michael_of_Greece_and_Denmark, which is the value of the property :hasFather for Olga_of_Greece, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Amedeo_of_Savoy, which is the value of the property :hasFather for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Amedeo_of_Savoy', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
+      The node Vittorio_Emanuele, which is the value of the property :hasFather for Emanuele_Filiberto_of_Savoy, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Vittorio_Emanuele', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
+      The node Claude_of_Orleans, which is the value of the property :hasMother for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Claude_of_Orleans', class=':Woman')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Amedeo_of_Savoy, which is the value of the property :hasFather for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Amedeo_of_Savoy', class=':Man')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
+      The node Michael_of_Greece_and_Denmark, which is the value of the property :hasFather for Olga_of_Greece, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Vittorio_Emanuele, which is the value of the property :hasFather for Emanuele_Filiberto_of_Savoy, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Vittorio_Emanuele', class=':Man')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
+      The node Claude_of_Orleans, which is the value of the property :hasMother for Aimone_of_Savoy-Aosta, is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Claude_of_Orleans', class=':Woman')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
+      The node Michael_of_Greece_and_Denmark, which is the value of the property :hasFather for Olga_of_Greece, is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Man')
 
 
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
 
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felix' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Henrik_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolai' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Joachim_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Marie_of_Denmark' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Athena_of_Monpezat' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AssignClass (c5206c8e-b055-4ce6-bb1d-5785b296c510)
- Call ID: c5206c8e-b055-4ce6-bb1d-5785b296c510
+  AssignClass (ffe1e19b-64f8-45d3-8f46-8bea6c4dfa4c)
+ Call ID: ffe1e19b-64f8-45d3-8f46-8bea6c4dfa4c
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (0610c1fb-7fa0-459f-af49-439afe9f0311)
- Call ID: 0610c1fb-7fa0-459f-af49-439afe9f0311
+    source: :Amedeo_of_Savoy
+    type: :Ancestor
+  AssignClass (3c84231d-d0ce-4dc1-845b-262ac1312cd8)
+ Call ID: 3c84231d-d0ce-4dc1-845b-262ac1312cd8
   Args:
-    source: Female
-    type: :Sex
-  ValidateShacl (5430f2b3-fba4-4bdf-a147-8c012ade01cf)
- Call ID: 5430f2b3-fba4-4bdf-a147-8c012ade01cf
+    source: :Vittorio_Emanuele
+    type: :Ancestor
+  AssignClass (7803d775-1a59-4a50-aa8d-ef020dda6b5c)
+ Call ID: 7803d775-1a59-4a50-aa8d-ef020dda6b5c
   Args:
-  Finish (ac5b87bc-7b7e-41f7-adc3-bc3f2b5e34dd)
- Call ID: ac5b87bc-7b7e-41f7-adc3-bc3f2b5e34dd
+    type: :Ancestor
+    source: :Claude_of_Orleans
+  AssignClass (95a885a4-d87b-4f86-bdd8-39e6297e49be)
+ Call ID: 95a885a4-d87b-4f86-bdd8-39e6297e49be
   Args:
+    source: :Michael_of_Greece_and_Denmark
+    type: :Ancestor
+  ValidateShacl (a99ec4dc-4c12-4606-9ac9-a0c3599cb9a7)
+ Call ID: a99ec4dc-4c12-4606-9ac9-a0c3599cb9a7
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1460,55 +873,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Athena_of_Monpezat a :Person,
+  data:Aimone_of_Savoy-Aosta a :Man,
+          :Person ;
+      :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+      :hasBirthYear 1967 ;
+      :hasFather data:Amedeo_of_Savoy ;
+      :hasMother data:Claude_of_Orleans .
+
+  data:Emanuele_Filiberto_of_Savoy a :Man,
+          :Person ;
+      :hasFather data:Vittorio_Emanuele .
+
+  data:Olga_of_Greece a :Person,
           :Woman ;
-      :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
-      :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
-      :hasBirthYear 2012 ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark ;
-      :hasSex data:Female ;
-      :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
-          "Her Excellency Countess Athena of Monpezat"^^xsd:string .
+      :hasFather data:Michael_of_Greece_and_Denmark .
 
-  data:Felix a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasSex data:Male .
-
-  data:Frederik_X a :Man,
+  data:Prince_Jean_Duke_of_Guise a :Man,
           :Person .
 
-  data:Henrik_Denmark a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasMother data:Marie_of_Denmark ;
-      :hasSex data:Male .
-
-  data:Henrik_Prince_Consort a :Man,
+  data:Amedeo_of_Savoy a :Ancestor,
+          :Man,
           :Person .
 
-  data:Margrethe_II a :Person,
+  data:Claude_of_Orleans a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Nikolai a :Man,
-          :Person ;
-      :hasFather data:Joachim_of_Denmark ;
-      :hasSex data:Male .
+  data:Michael_of_Greece_and_Denmark a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Female a :Sex .
-
-  data:Marie_of_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Joachim_of_Denmark a :Ancestor,
+  data:Vittorio_Emanuele a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
-
-  data:Male a :Sex .
+      :hasDeathYear 2024 .
 
 
 
@@ -1516,14 +914,10 @@ The final data graph after all the edits:
 
 SHACL validation has not produced any violations.
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (59771cea-baed-45cb-9904-ae67f60ca5be)
- Call ID: 59771cea-baed-45cb-9904-ae67f60ca5be
+  Finish (22bca5ed-fa53-4ddf-ab7a-a9a4dd737a46)
+ Call ID: 22bca5ed-fa53-4ddf-ab7a-a9a4dd737a46
   Args:

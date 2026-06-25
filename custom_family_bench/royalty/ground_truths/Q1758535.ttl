@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Dorothy_Osborne a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Dorothy_Osborne a :Person ;
     rdfs:label "Dorothy Osborne" ;
     data:posIndicesFull "1058:1096" ;
     data:wdtLink wdt:Q75240055 ;
@@ -19,29 +16,21 @@ data:Dorothy_Osborne a :Ancestor,
         "Lady Dorothy Beatrix Godolphin Osborne" ;
     :hasSex data:female .
 
-data:Elizabeth_Cator a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth Cator" ;
-    data:posIndicesFull "778:798" ;
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "311:329",
+        "317:329",
+        "862:880",
+        "868:880" ;
     data:posIndicesPart "993:1002" ;
-    data:wdtLink wdt:Q75240065 ;
-    :alsoKnownAs "Elizabeth Bowes-Lyon",
-        "Elizabeth Margaret Bowes-Lyon",
-        "Elizabeth Margaret Cator" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne a :Person ;
     rdfs:label "Patrick Bowes-Lyon, 15th Earl of Strathmore and Kinghorne" ;
     data:posIndicesFull "0:65" ;
     data:posIndicesPart "1235:1245",
@@ -57,40 +46,15 @@ data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
         "930:940" ;
     data:wdtLink wdt:Q1758535 ;
     :alsoKnownAs "Patrick Bowes-Lyon, 15th and 2nd Earl of Strathmore and Kinghorne" ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II .
+    :hasSex data:male .
 
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "25:32",
-        "594:601",
-        "673:680" ;
-    data:posIndicesPart "1014:1025" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :isChildOf data:Elizabeth_II ;
-    :isSonOf data:Elizabeth_II .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "252:267",
         "268:284",
@@ -116,36 +80,9 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
-    :isSisterOf data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne .
+    :hasSex data:female .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "311:329",
-        "317:329",
-        "862:880",
-        "868:880" ;
-    data:posIndicesPart "993:1002" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSon data:Andrew_Mountbatten-Windsor ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor ;
-    :isParentOf data:Andrew_Mountbatten-Windsor .
+data:male a :Male .
+
+data:female a :Female .
 

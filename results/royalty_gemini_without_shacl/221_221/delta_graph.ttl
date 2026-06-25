@@ -2,49 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Queen_Sofia_of_Spain a :Person,
+data:Elizabeth_Shakerley a :Person,
         :Woman ;
-    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark .
+    :isChildOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson .
 
-data:Anne-Marie_of_Denmark a :Person,
-        :Woman ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden .
-
-data:Constantine_II_of_Greece a :Man,
+data:Patrick_Anson a :Man,
         :Person ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover .
+    :isChildOf data:Anne_Bowes-Lyon,
+        data:Thomas_Anson .
 
-data:Crown_Prince_Pavlos a :Man,
+data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
         :Person .
 
-data:Frederica_of_Hanover a :Person,
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Diana_Cinderella_Somervell a :Person,
         :Woman .
 
-data:Frederik_IX_of_Denmark a :Man,
-        :Person .
-
-data:Ingrid_of_Sweden a :Person,
-        :Woman .
-
-data:Matthew_Jeremiah_Kumar a :Man,
-        :Person .
-
-data:Paul_of_Greece a :Man,
-        :Person .
-
-data:Prince_Philippos a :Man,
-        :Person .
-
-data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
         :Woman ;
-    :alsoKnownAs "Theodora de Grèce"^^xsd:string ;
-    :hasBrother data:Crown_Prince_Pavlos,
-        data:Prince_Philippos ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMarriageYear 2024 ;
-    :hasMother data:Anne-Marie_of_Denmark ;
-    :hasRelation data:Matthew_Jeremiah_Kumar ;
-    :knownAs "Theodora Greece"^^xsd:string .
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Herbert_Bowes-Lyon a :Man,
+        :Person ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Nerissa_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Patricia_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Prince_Georg_of_Denmark a :Man,
+        :Person .
+
+data:Anne_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMarriageYear 1938,
+        1950 ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:Prince_Georg_of_Denmark,
+        data:Thomas_Anson ;
+    :isSiblingOf data:Diana_Cinderella_Somervell,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Patricia_Bowes-Lyon .
+
+data:Thomas_Anson a :Man,
+        :Person .
 

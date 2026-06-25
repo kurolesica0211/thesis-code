@@ -2,20 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Friedrich_Wilhelm a :Man ;
-    :isSonOf data:Prince_Ernst_August_of_Lippe .
+data:AlfonsoDukeOfCalabria a :Man,
+        :Person ;
+    :hasFather data:CarlosOfBourbonTwoSicilies .
 
-data:Christa_von_Arnim a :Woman .
+data:GabrielOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:FerdinandPius .
 
-data:Duchess_Marie_of_Mecklenburg_Strelitz a :Woman .
+data:MariaCristina a :Person,
+        :Woman ;
+    :isSisterOf data:FerdinandPius .
 
-data:Prince_Ernst_August_of_Lippe a :Man ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1990 ;
-    :hasFather data:Prince_Julius_Ernst_of_Lippe ;
-    :hasMarriageYear 1948 ;
-    :hasMother data:Duchess_Marie_of_Mecklenburg_Strelitz ;
-    :hasRelation data:Christa_von_Arnim .
+data:MariaDiGrazia a :Person,
+        :Woman ;
+    :isSisterOf data:FerdinandPius .
 
-data:Prince_Julius_Ernst_of_Lippe a :Man .
+data:MariaImmaculata a :Person,
+        :Woman ;
+    :isSisterOf data:FerdinandPius .
+
+data:PhilipOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:FerdinandPius .
+
+data:RanieriDukeOfCastro a :Man,
+        :Person ;
+    :isBrotherOf data:FerdinandPius .
+
+data:AlfonsoCountOfCaserta a :Man,
+        :Person ;
+    :hasFather data:FerdinandII .
+
+data:CarlosOfBourbonTwoSicilies a :Man,
+        :Person ;
+    :isBrotherOf data:FerdinandPius .
+
+data:FerdinandII a :Man,
+        :Person .
+
+data:LudwigIII a :Man,
+        :Person .
+
+data:MariaAntonietta a :Person,
+        :Woman .
+
+data:MariaLudwigaTheresia a :Person,
+        :Woman ;
+    :hasFather data:LudwigIII .
+
+data:FerdinandPius a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasRelation data:MariaLudwigaTheresia .
 

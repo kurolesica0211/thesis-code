@@ -2,47 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Eudes_of_Orleans-Braganza a :Man,
+data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
         :Person ;
-    :isBrotherOf data:Bertrand_of_Orleans-Braganza .
+    :hasBirthYear 1941 ;
+    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isBrotherOf data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza .
 
-data:Luiz_of_Orleans-Braganza a :Man,
-        :Person ;
-    :isBrotherOf data:Bertrand_of_Orleans-Braganza .
+data:Isabel_Princess_Imperial_of_Brazil a :Person,
+        :Woman ;
+    :isDaughterOf data:Emperor_Pedro_II .
+
+data:King_Ludwig_III_of_Bavaria a :Man,
+        :Person .
 
 data:Pedro_Carlos a :Man,
-        :Person ;
-    :hasAncestor data:Isabel_Princess_Imperial_of_Brazil .
-
-data:Pedro_II_of_Brazil a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Isabel_Princess_Imperial_of_Brazil .
-
-data:King_Ludwig_III_of_Bavaria a :Ancestor,
-        :Man,
         :Person .
 
-data:Male a :Sex .
-
-data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
-        :Man,
+data:Emperor_Pedro_II a :Man,
         :Person .
 
-data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
-        :Person,
-        :Woman .
+data:Eudes_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
 
-data:Bertrand_of_Orleans-Braganza a :Man,
-        :Person ;
-    :hasAncestor data:Isabel_Princess_Imperial_of_Brazil,
-        data:King_Ludwig_III_of_Bavaria ;
-    :hasBirthYear 1941 ;
-    :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;
-    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
-    :hasSex data:Male .
+data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
 
-data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
-        :Person,
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person,
         :Woman .
 

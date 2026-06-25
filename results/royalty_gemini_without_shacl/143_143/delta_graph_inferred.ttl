@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin,
+        data:Maria_Pavlovna_of_Russia,
+        data:Vladimir_Alexandrovich_of_Russia ;
+    :isBloodrelationOf data:Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Vladimir_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Vladimir_Alexandrovich_of_Russia .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin,
+        data:Maria_Pavlovna_of_Russia,
+        data:Vladimir_Alexandrovich_of_Russia ;
+    :hasSister data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isAncestorOf data:Maria_Pavlovna_of_Russia ;
+    :isAuntOf data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Friedrich_Franz_II_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :hasChild data:Maria_Pavlovna_of_Russia ;
+    :hasDaughter data:Maria_Pavlovna_of_Russia ;
+    :hasRelation data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin,
+        data:Maria_Pavlovna_of_Russia,
+        data:Vladimir_Alexandrovich_of_Russia ;
+    :isAncestorOf data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Maria_Pavlovna_of_Russia ;
+    :isParentOf data:Maria_Pavlovna_of_Russia ;
+    :isSiblingOf data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Maria_Pavlovna_of_Russia .
+
+data:Maria_Pavlovna_of_Russia a :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :hasBirthYear 1854 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1874 ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin,
+        data:Maria_Pavlovna_of_Russia,
+        data:Vladimir_Alexandrovich_of_Russia ;
+    :hasSister data:Maria_Pavlovna_of_Russia ;
+    :isBloodrelationOf data:Maria_Pavlovna_of_Russia ;
+    :isChildOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Friedrich_Franz_II_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Maria_Pavlovna_of_Russia ;
+    :isSisterOf data:Maria_Pavlovna_of_Russia .
+

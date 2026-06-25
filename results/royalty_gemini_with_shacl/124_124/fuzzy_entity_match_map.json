@@ -1,54 +1,54 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/124_124",
-  "text_file": "Q2071496.txt",
-  "text_key": "Q2071496",
-  "article": "https://en.wikipedia.org/wiki/Prince_Amedeo_of_Belgium",
-  "article_key": "Prince Amedeo of Belgium",
+  "text_file": "Q2057996.txt",
+  "text_key": "Q2057996",
+  "article": "https://en.wikipedia.org/wiki/Princess_Luisa_Maria_of_Belgium",
+  "article_key": "Princess Luisa Maria of Belgium",
   "main_entity": {
-    "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
-    "qid": "Q2071496",
-    "label": "Prince Amedeo, Hereditary Archduke of Austria-Este"
+    "uri": "http://example.com/data#Princess_Luisa_Maria_of_Belgium",
+    "qid": "Q2057996",
+    "label": "Princess Luisa Maria of Belgium"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
-      "qid": "Q2071496",
-      "label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "uri": "http://example.com/data#Princess_Luisa_Maria_of_Belgium",
+      "qid": "Q2057996",
+      "label": "Princess Luisa Maria of Belgium",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
       "qid": "Q170194",
       "label": "Princess Astrid, Archduchess of Austria-Este",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Princess_Astrid_of_Belgium",
-      "extracted_local_name": "Princess_Astrid_of_Belgium",
-      "embedding_text": "Princess Astrid of Belgium",
+      "extracted_uri": "http://example.org/data/Astrid_of_Belgium",
+      "extracted_local_name": "Astrid_of_Belgium",
+      "embedding_text": "Astrid of Belgium",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.7857142857142857,
+      "score": 1.0,
       "ground_truth_uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
       "ground_truth_qid": "Q170194",
       "ground_truth_label": "Princess Astrid, Archduchess of Austria-Este",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Astrid of Belgium",
       "best_candidate_label": "Princess Astrid, Archduchess of Austria-Este",
       "best_candidate_qid": "Q170194",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.7857142857142857
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Amedeo_of_Austria-Este",
-      "extracted_local_name": "Amedeo_of_Austria-Este",
-      "embedding_text": "Amedeo of Austria-Este",
+      "extracted_uri": "http://example.org/data/Albert_II",
+      "extracted_local_name": "Albert_II",
+      "embedding_text": "Albert II",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -57,16 +57,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
-      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
-      "best_candidate_qid": "Q2071496",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.36363636363636365
+      "best_candidate_match_text": "Astrid of Belgium",
+      "best_candidate_label": "Princess Astrid, Archduchess of Austria-Este",
+      "best_candidate_qid": "Q170194",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3076923076923077
     },
     {
-      "extracted_uri": "http://example.org/data/Lorenz_Archduke_of_Austria-Este",
-      "extracted_local_name": "Lorenz_Archduke_of_Austria-Este",
-      "embedding_text": "Lorenz Archduke of Austria-Este",
+      "extracted_uri": "http://example.org/data/Lorenz_of_Belgium",
+      "extracted_local_name": "Lorenz_of_Belgium",
+      "embedding_text": "Lorenz of Belgium",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -75,16 +75,88 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
-      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
-      "best_candidate_qid": "Q2071496",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.32
+      "best_candidate_match_text": "Luisa Maria van België",
+      "best_candidate_label": "Princess Luisa Maria of Belgium",
+      "best_candidate_qid": "Q2057996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.46153846153846156
+    },
+    {
+      "extracted_uri": "http://example.org/data/Margherita_of_Savoy-Aosta",
+      "extracted_local_name": "Margherita_of_Savoy-Aosta",
+      "embedding_text": "Margherita of Savoy-Aosta",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Luisa Maria Anna Martine Pilar",
+      "best_candidate_label": "Princess Luisa Maria of Belgium",
+      "best_candidate_qid": "Q2057996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32727272727272727
+    },
+    {
+      "extracted_uri": "http://example.org/data/Paola",
+      "extracted_local_name": "Paola",
+      "embedding_text": "Paola",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Luisa Maria of Belgium",
+      "best_candidate_label": "Princess Luisa Maria of Belgium",
+      "best_candidate_qid": "Q2057996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2222222222222222
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philippe_of_Belgium",
+      "extracted_local_name": "Philippe_of_Belgium",
+      "embedding_text": "Philippe of Belgium",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Luisa Maria van België",
+      "best_candidate_label": "Princess Luisa Maria of Belgium",
+      "best_candidate_qid": "Q2057996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43902439024390244
+    },
+    {
+      "extracted_uri": "http://example.org/data/Robert_of_Austria-Este",
+      "extracted_local_name": "Robert_of_Austria-Este",
+      "embedding_text": "Robert of Austria-Este",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Luisa Maria van België",
+      "best_candidate_label": "Princess Luisa Maria of Belgium",
+      "best_candidate_qid": "Q2057996",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2727272727272727
     }
   ],
   "summary": {
-    "entities_total": 3,
+    "entities_total": 7,
     "entities_matched": 1,
-    "entities_unmatched": 2
+    "entities_unmatched": 6
   }
 }

@@ -85,176 +85,47 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Grand Duke Dmitri Pavlovich of Russia (Russian: Великий Князь Дмитрий Павлович; 18 September 1891 – 5 March 1942) was a son of Grand Duke Paul Alexandrovich of Russia, a grandson of Tsar Alexander II of Russia and a first cousin of Tsar Nicholas II, Marie of Edinburgh (consort of Ferdinand I of Romania), King George II of Greece, King Alexander of Greece, Helen of Greece and Denmark, (second wife of Carol II of Romania), King Paul of Greece, and Prince Philip, Duke of Edinburgh (consort of Queen Elizabeth II).
-His early life was marked by the death of his mother and his father's banishment from Russia after marrying a commoner in 1902.
-Grand Duke Dmitri and his elder sister Grand Duchess Maria Pavlovna, to whom he remained very close throughout his life, were raised in Moscow by their paternal uncle Grand Duke Sergei Alexandrovich and his wife Grand Duchess Elizabeth Feodorovna of Russia, an older sister of Empress Alexandra Feodorovna.
-His uncle was killed in 1905 and as his aunt entered religious life, Dmitri spent a great deal of his youth in the company of Tsar Nicholas II and his immediate family at the Alexander Palace as they viewed him almost like a foster son.
-Grand Duke Dmitri followed a military career, graduating from the Nicholas Cavalry College .
-As a grandson of Tsar Alexander II in the male line, he occupied a prominent position as the Russian imperial court, but he had little interest in his military career, leading instead a fast life.
-In 1926, he married Audrey Emery, an American heiress.
-As the youngest Grand Duke to have survived the Russian Revolution, he was a prominent figure in the Russian community in exile, but he was not interested in politics, supporting instead the claim of his first cousin, Grand Duke Kirill Vladimirovich of Russia.
+Dom Luís Filipe, Prince Royal of Portugal, Duke of Braganza (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Portuguese pronunciation: ; 21 March 1887 – 1 February 1908) was the eldest son and heir apparent of King Carlos I of Portugal until his assassination.
+Born in 1887, when his father was still Prince Royal, he was styled Prince of Beira at birth.
+After his paternal grandfather King Luís I of Portugal died, he became Prince Royal of Portugal and Duke of Braganza as heir apparent to the throne.
+Following the Lisbon Regicide that saw him and his father killed, his younger brother Manuel II became King of Portugal.
 Early life
 
-Grand Duke Dmitri was born on 18 September  1891 as the second child and only son of Grand Duke Paul Alexandrovich and his first wife, Grand Duchess Alexandra Georgievna of Russia, born Princess Alexandra of Greece and Denmark.
-Dmitri's father, Grand Duke Paul Alexandrovich, was the youngest child of Tsar Alexander II of Russia and his first wife, Empress Maria Alexandrovna.
-Dmitri's mother, Alexandra, was a daughter of George I of Greece and Olga Konstantinovna of Russia, and a sister of King Constantine I, and Andrew who was the father of Prince Philip, Duke of Edinburgh, making them first cousins.
-He was also first cousins to Marie, Queen of Romania and Grand Duchess Victoria Feodorovna of Russia, who were the daughters of his paternal aunt Grand Duchess Maria Alexandrovna of Russia who married Alfred, Duke of Saxe-Coburg and Gotha, the second son of Queen Victoria and Prince Albert of Saxe-Coburg and Gotha.
-During the summer of 1891, Grand Duchess Alexandra and Grand Duke Paul visited Paul's brother Grand Duke Serge Alexandrovich at his country estate Ilyinskoye  near Moscow.
-Alexandra was seven months pregnant with Dmitri when, while taking a stroll with some friends by the Moskva River, she jumped into a boat, falling as she got in.
-The next day, she collapsed in the middle of a ball from violent labor pains brought on by the previous day's activities; Dmitri was born in the hours following the accident.
-Alexandra slipped into a coma from which she never emerged.
-She died of eclampsia six days after Dmitri's birth.
-Although doctors had no hope for Dmitri's survival, he still lived, with the help of his uncle Grand Duke Sergei Alexandrovich of Russia, who gave the premature Dmitri the baths that were prescribed by the doctors, wrapped him in cotton wool and kept him in a cradle filled with hot water bottles to keep his temperature regulated, the treatment of the time to keep premature babies alive.
-At birth, Dmitri had an older sister, Grand Duchess Maria Pavlovna, with whom he had a close relationship throughout his life.
-Grand Duke Paul was so distraught by the unexpected death of his young wife that he initially neglected his two small children: Dmitri and his older sister Grand Duchess Maria Pavlovna.
-The children were therefore largely cared for by Paul's elder brother, Grand Duke Sergei Alexandrovich, and his wife Grand Duchess Elizabeth Feodorovna, who had no children of their own.
-They spent Christmases and later some summer holidays with Grand Duke Sergei and Grand Duchess Elisabeth who set aside a playroom and bedrooms for the youngsters at their country home, Ilinskoe.
-In his widowhood, Grand Duke Paul settled with his children in his palace in St Petersburg.
-A commander of the imperial Horse Guards, Grand Duke Paul loved his children, but as was customary at the time, he refrained from showing them spontaneous affection.
-Dmitri and his sister were initially educated at home by governesses and private tutors, while they adored their father who visited them twice daily.
-Like all male members of the Romanov family, Grand Duke Dmitri was destined to follow a military career which traditionally began for a Grand Duke at the age of seven.
-This was delayed, in Dmitri's case, until he was nine years old.
-In the spring of 1901, his education was entrusted to General George Mikhailovich Laiming.
-In their apartments, Dmitri and his sister enjoyed a warm family environment.
-Youth and education
+Luís Filipe Maria Carlos Amélio Fernando Víctor Manuel António Lourenço Miguel Rafael Gabriel Gonzaga Xavier Francisco de Assis Bento was born in Lisbon, the elder son of Carlos, Prince Royal of Portugal (later King Carlos I of Portugal), and Princess Amélie d'Orléans, a member of the House of Braganza.
+Two years after his birth, Dom Luís Filipe inherited all his father's royal princely titles when his father became king.
+He was himself re-styled Prince Royal, and at the same time inherited the Dukedom of Braganza (as 21st Duke), which brought with it the largest private fortune in Portugal at that time, completely at the disposal of the heir to the Portuguese crown.
+In 1907, the Prince Royal acted as regent of the kingdom while his father was outside the country.
+The same year he made a very successful official visit to the Portuguese colonies in Africa, the first member of the royal family ever to visit them.
+Dom Luís Filipe was the pupil of the African war hero Mouzinho de Albuquerque, and like all the Braganzas, showed many aptitudes in the arts, besides his pursuing a military education.
+Around the time of Dom Luís Filipe's assassination, negotiations for marriage to his cousin Princess Patricia of Connaught were underway.
+Princess Patricia was the granddaughter of Queen Victoria of the United Kingdom and Prince Albert of Saxe-Coburg and Gotha, the daughter of British Prince Arthur, Duke of Connaught and Strathearn, and Princess Louise Margaret of Prussia.
+Lisbon Regicide
 
-In 1895, Grand Duke Paul began an affair with a married woman, Olga Valerianova Pistolkors.
-He was able to obtain a divorce for her and he eventually married Olga in 1902, while the couple was staying abroad.
-The marriage was a violation of the house law of the Romanovs, and as they had married defying Nicholas II's opposition, the Tsar forbade them to return to Russia and Grand Duke Paul was not allowed to take the children with him into exile.
-Left fatherless, eleven-year-old Dmitri and his twelve-year-old sister were sent to live with their uncle, Grand Duke Sergei, and his wife Grand Duchess Elizabeth Feodorovna (the Empress's sister), in Moscow.
-In her memoirs, Grand Duchess Maria Pavlovna (the Younger) describes Grand Duke Sergei as a stern disciplinarian, and his wife, Grand Duchess Elizabeth as a cold and unwelcoming presence.
-In 1903, at the age of twelve, Dmitri was enrolled in the Chevalier Guard regiment following studies at the Calvary Academy.
-On 4 February 1905, Grand Duke Sergei, who had recently resigned from the post of Governor-General of Moscow, was assassinated by Ivan Kalyaev, a member of the Socialist-Revolutionary Party.
-Kalyaev, armed with a homemade bomb, had aborted his first attempt to kill the Grand Duke when he spotted Dmitri and Marie with their uncle in his carriage.
-The assassination of Grand Duke Sergei is the subject matter of the  French writer and philosopher Albert Camus' 1949 play The Just Assassins.
-His uncle's death was only one of several assassinations that robbed Dmitri of close family members.
-After Sergei's death, Dmitri's father, Grand Duke Paul was allowed to return to Russia to attend the funeral.
-He asked Nicholas II to restore the custody of his children but instead, Nicholas named Sergei's widow Grand Duchess Elizabeth Feodorovna as the children's guardian.
-Maria Pavlovna continued to have some feelings of anger toward her aunt, whom she would blame for her overly hasty and unsuccessful marriage to Prince Wilhelm of Sweden in 1908, but Dmitri formed a very strong bond with Elizabeth and came to admire her personal fortitude.
-Formative years
+On 1 February 1908, Luís Filipe and his family were returning to Lisbon from Vila Viçosa Palace.
+Alfredo Luís da Costa and Manuel Buiça, two members of a revolutionary society called the Carbonária, shot at all the royal family, hitting his father King Carlos, Luís Filipe, and his younger brother Infante Manuel, Duke of Beja.
+Carlos I died immediately, while Luís Filipe lived for another twenty minutes.
+Manuel survived the attack, having only been shot in the arm, while the queen was unharmed.
+Manuel succeeded to the throne as Manuel II.
+Luís Filipe is buried next to his father and forefathers in the Royal Pantheon of the House of Braganza in Lisbon.
+His younger brother, King Manuel II of Portugal, and his mother, Queen Maria Amélia, are buried opposite.
+On 5 October 1910, the monarchy under the reign of his surviving younger brother, Manuel II, was overthrown in a military coup and the First Portuguese Republic was established.
+Honours
 
-Maria Pavlovna's wedding to Prince William took place at Tsarskoe Selo in 1908, and she departed for Sweden with her husband.
-Elizabeth Feodorovna stayed on for a time at Alexander Palace in Tsarskoe Selo as guests of the Emperor and the Empress.
-It was during this period that Dmitri began to form a close bond with Nicholas II, looking upon him as a surrogate father.
-Nicholas, in turn, treated Dmitri very kindly.
-In 1909, Dmitri left his aunt's care to move to St Petersburg with his head tutor and companion, General Laiming.
-He lived at his father's vacant palace and then at the Beloselsky-Belozersky Palace, which he had inherited from his uncle Grand Duke Sergei, and would become his principal residence until he left Russia.
-He placed ninth in the individual jumping event whereas Russia placed fifth in the team jumping event.
-Disappointed in the performance of the Russian team, Dmitri started the idea of a national Russian sports competition, the very beginning of what under Soviet rule became the Spartakiad.
-In Spring 1914, Dmitri's father returned to live in Russia, settling with his second wife and new family at Tsarskoye Selo.
-Around the same time, Dmitri's sister, Grand Duchess Maria Pavlovna, who had divorced her husband, also returned to Russia moving with Dmitri.
-However, troubled by her strong need for him, Dmitri distanced himself somewhat from his sister, hurting her terribly.
-Dmitri served with the Life Guard Horse Regiment, participating in the campaign in East Prussia.
-During the first weeks of the war he was awarded the Order of St. George after he rescued a wounded corporal under heavy gunfire.
-In 1914, his friend Felix Yusupov married the Tsar's only niece, Princess Irina.
-Historian Greg King claimed that Dmitri "harboured an intensely romantic devotion" to the openly bisexual Felix.
-Killing of Rasputin
+Domestic
 
-In August 1915 when Nicholas II left St. Petersburg to take full command of the Russian armies fighting World War I, his wife Empress Alexandra Feodorovna took on the daily administrative affairs of the government from the capital.
-Alexandra relied on Grigori Rasputin, a peasant healer who appeared to have brought her hemophiliac son Alexei, the Tsarevich, back from the brink of death.
-As Russian defeats mounted during the war, both Rasputin and Alexandra became increasingly unpopular.
-Eventually, Grand Duke Dmitri Pavlovich joined Felix Yusupov, Vladimir Purishkevich (the leader of the monarchists in the Duma) Dr. Stanislaus de Lazovert and Lieutenant Sergei Mikhailovich Sukhotin, an officer in the Preobrazhensky Regiment, in a conspiracy to kill Grigory Rasputin hoping that ending his influence over the imperial family this would have a beneficial effect on the Tsar's policies.
-Then, while both were sitting, Yusupov shot Rasputin at close range using Dmitri's Browning pistol.
-He joined his fellow conspirators: Grand Duke Dmitri, politician Vladimir Purishkevich, and army officer Sergei Mikhailovich Sukhotin who were waiting in a ground floor study/drawing-room.
-Dmitri drove the men and Rasputin's body, wrapped in a broadcloth, to Petrovskii Bridge, which crossed to Krestovsky Island.
-All along, Grand Duke Dmitri, who was driving the car, never saw Rasputin.
-By Sunday, Dmitri was placed under house arrest.
-He was then living at his mother-in-law's palace, but on the advice of his uncle by marriage Grand Duke Nicholas Michailovich, he moved to Dmitri's palace for protection as it was the prerogative of the Tsar alone to prosecute members of the Imperial family.
-He did interview Grand Duke Dmitri, Felix Yusupov, and Vladimir Purishkevich, but he decided not to charge them with murder.
-Exile
+Foreign
 
-Banishment to Persia
+Arms
 
-As a result of his participation in Rasputin's assassination, Grand Duke Dmitri Pavlovich was banished from the Russian court and was sent to exile to the Persian war front.
-In the early hours of 6 January   1917, Grand Duke Dmitri left Saint Petersburg never to return.
-General Baratov asked Dmitri to leave since there were rumblings from the lower ranks, and his safety could not be guaranteed.
-Ronald Wingate entertained Pavlovich when he passed through Najaf.
-The Provisional Government invited him to return to Russia, but he declined.
-In the summer of 1917, Dmitri left the Russian occupation zone moving to Tehran.
-Dmitri stayed briefly with General Meidel (ru), then the head of the Persian Cossack Division, before being taken in by the British Minister to Tehran, Sir Charles Murray Marling, and his wife, Lucia.
-Through 1917 and most of 1918 Grand Duke Dmitri lived with the Marlings.
-Marling obtained an honorary commission for Pavlovich as a liaison officer with the British Mission and eventually persuaded the British Foreign Office in 1918 that he would become the next Emperor of Russia, gaining his admission to England.
-Marling became an important father figure to Pavlovich, and the relationship there established between them would prove to be close and enduring.
-Interlude in England
-
-Marling and his family took Dmitri with them when they left Tehran for England at the end of 1918.
-During the long journey to England in a slow steamer, Pavlovich fell ill with typhoid fever in Bombay and nearly died.
-The Marlings took him to London where he was reunited with his maternal aunt Grand Duchess Maria Georgievna.
-Pavlovich took a room at the Ritz and spent most of his time with his aunt.
-Lady Marling went to see the King's assistant private secretary Lord Cromer to inform him of the grand duke's arrival.
-King George V was horrified; his presence was an inconvenience to the British government that did not want to upset the new Bolshevik regime.
-In London, Dmitri was finally reunited with his sister Grand Duchess Maria Pavlovna who had escaped Revolutionary Russia though Ukraine with her second husband, Prince Sergei Mikhailovich Putiatin.
-Dmitri moved with his sister and brother-in-law taking a house together in South Kensington.
-The Yusupovs had escaped Russia with the Dowager Empress, Maria Feodorovna, and they too settled in London.
-Pavlovich avoided Yusupov, resenting his breaking the silence regarding the details of Rasputin's assassination.
-Relations between Dmitri and Putiatin also soon soured.
-In spring 1920, Maria Pavlovna returned to Paris to meet with their stepmother, Princess Olga Paley, and their two half-sisters.
-Unhappy in England, Dmitri followed his sister to Paris in the summer of 1920.
-Exile in Paris
-
-In Paris, Dmitri took rooms at a hotel until he found a modest two-room apartment.
-In the summer of 1921, Dmitri accompanied his sister to Denmark to a reunion with her son Prince Lennart.
-While in Denmark, Dmitri saw the Marling family again and with his sister visited Maria Feodorovna, who had retired to her villa Hvidore.
-With his economic resources depleting, Grand Duke Dmitri found employment serving on the board of a Champagne firm.
-An American journalist described him around this time as attractive: "He is, in his slender well-groomed person, all that a grand duke should be – especially if you like your grand duke young, clean-shaven, and concave at the waistline.
-Well known in the Paris scene of the 1920s, Dmitri was then having an affair with opera singer Marthe Davelli.
-It was through her that Dmitri became close to Gabrielle "Coco" Chanel.
-Chanel and Dmitri, who had actually met before in pre-World War I Paris, became lovers.
-Dmitri's sister, Maria Pavlovna, found a niche for herself in the rising Paris fashion industry by founding a business called "Kitmir" that specialized in bead and sequin embroidery and did much work for Chanel.
-It was Dmitri who introduced Chanel to Ernest Beaux, the perfumer who created Chanel No. 5, her most enduring product.
-Coco and Dmitri spent a happy summer at a villa near Arcachon.
-Chanel would later comment: "These grand dukes, they are all the same, an admirable face behind which there is nothing, green eyes, broad shoulders, fine hands... the most peaceful people, shyness itself.
-"
-
-
-As the youngest Grand Duke to have survived the Russian Revolution, Pavlovich was a prominent figure of the Russian community in exile.
-During the early 1920s, there was a bitter rivalry between the camps of the supporters of Grand Duke Kirill Vladimirovich and those of Grand Duke Nicholas Nikolaevich.
-While those who supported neither Nicholas nor Kirill advocated for Dmitri's candidacy for the Russian throne.
-On 8 August 1922, a makeshift Zemsky Sobor was convened at Priamurye, and Grand Duke Nicholas Nikolaevich was "elected" Emperor.
-The Grand Duke neither accepted nor refused this empty gesture.
-Having waited for confirmation of the death of Tsar Nicholas II, his son, and his brother, in 1924 Grand Duke Kirill Vladimirovich announced (also on 8 August) that he would assume "guardianship" of the throne of Russia.
-On 25 September 1924, Grand Duke Alexander Michailovich issued an appeal to Russians to stand with Grand Duke Kirill Vladimirovich.
-It was at this time that Grand Duke Dmitri Pavlovich, who had no political ambitions for himself, supported instead the claim of his first cousin, Grand Duke Kirill Vladimirovich.
-Grand Duke Dmitri was also active politically.
-Together with his cousin, Prince Dmitri Alexandrovich, he was very involved in the monarchist youth organizations which sprang up in the years between the wars.
-By 1923, the largest of these was the "Union of Young Russia" which preached orthodoxy, nationalism, monarchism and peasant collectivism.
-Marriage
-
-In 1923 Grand Duchess Maria Pavlovna divorced her second husband and bought a small house at Boulogne-sur-Seine and Dmitri moved with her to the top floor.
-Invited to a tea party at Versailles with his sister, he met Audrey Emery, a sophisticated and attractive American heiress.
-Grand Duke Dmitri had no fortune to offer, but they fell in love and they were married in the Orthodox Church at Biarritz on 21 November 1926.
-It was a morganatic marriage, and Audrey, who converted to Russian Orthodoxy and took the name Anna Ioannovna in baptism, was granted the title Her Serene Highness, Princess Romanovskaya-Ilyinskaya by his cousin, Grand Duke Kyril.
-The couple's only child, Paul Romanovsky-Ilyinsky, was born in London in 1928.
-Paul grew up in France, Britain, and the United States; he served as a US Marine in the Korean War.
-Following the fall of communist Russia in 1991, a delegation of Russian royalists approached him and asked him to assume the title of Tsar, which he declined.
-In 1928, the Dowager Empress died, and Grand Duke Kirill was received at the funeral as head of the House of Romanoff by the royal family of Denmark – it was the last time that the entire dynasty appeared as a single undivided family and Grand Duke Dmitri was a prominent figure in the proceedings.
-The youngest of the Grand Dukes, Dmitri Pavlovich frequently represented Grand Duke Kirill at events public, private, and political.
-He was prominent at the funerals of King Constantine I of Greece (1923), Queen Astrid of the Belgians (1935), at the wedding of Grand Duke Kirill's daughter, Grand Duchess Kira to Prince Louis Ferdinand of Prussia (1938), and also at the ceremonies surrounding the accession of Grand Duke Vladimir Kirillovich of Russia to the rights of the headship of the imperial house on the death of his father in 1938.
-Grand Duke Dmitri was a noted collector of model trains and was at one point considered to have had one of the largest collections in Europe.
-During the Nazi annexation of Paris, Dmitri's collection vanished, and it has since been theorized that they were seized by Hermann Göring, a model train collector himself.
-In the late 1920s, Grand Duke Dmitri became involved with his cousin, Prince Dmitri Alexandrovich Romanoff in the monarchist youth organizations which sprang up in the years between the wars.
-It was a Russian nationalist group influenced by Italian Fascism, formed with the express purpose of establishing a "Soviet monarchy" in Russia.
-He joined this group as a stand-in for Grand Duke Kirill Vladimirovich, who, as pretender to the throne, could not affiliate himself directly with any political organization or party.
-In 1935, Grand Duke Dmitri gave a series of speeches to Young Russia chapters throughout France.
-Grand Duke Dmitri reputedly rebuked later advances from Hitler to lead exiled Russian nobles within the German army against the Bolsheviks with the firm statement that nothing would induce him to fight against fellow Russians.
-Last years
-
-Grand Duke Dmitri Pavlovich and his wife could afford a very opulent lifestyle with homes in London, Biarritz, Neuilly-sur-Seine, and Château de Beaumesnil near Caen, and visits to America.
-Dmitri then lived at the Château de Beaumesnil in Beaumesnil, Eure, France, which he had bought in 1927.
-Over the years, Dmitri became disappointed with the prospects for the restoration of the monarchy in Russia and withdrew from public life.
-His son was at school in England, but Dmitri could spend the school holidays with him until 1939, when it was decided to send Paul to America for safety.
-They saw each other for the last time in Genoa spending three days before Paul embarked to America.
-Despite not having strong health, Grand Duke Dmitri was, for most of his life, a very active sportsman, excelling at polo, horse riding, tennis, and bobsledding.
-From the safety of the sanatorium in Davos, Dmitri followed with great interest the events of World War II; he wrote to a friend on 10 April 1940, on the eve of the collapse of France, "everything starts looking petty in comparison with world events".
-On 4 March 1942, Grand Duke Dmitri organized a Russian festival to entertain himself with his friend and the staff.
-The following morning Dmitri suffered a sudden attack of uremia and died at the age of fifty.
-After the death of Dmitri's sister Maria Pavlovna in December 1958, his nephew, Prince Lennart Bernadotte, had him buried alongside his sister, in the chapel of his castle on the island of Mainau in Lake Constance, where they now lie beside his sister in the Bernadotte family crypt.
+Luis Filipe bore as heir to the throne the arms of his father; differenced by a Label of three points Or.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -270,39 +141,9 @@ After the death of Dmitri's sister Maria Pavlovna in December 1958, his nephew, 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -317,6 +158,23 @@ After the death of Dmitri's sister Maria Pavlovna in December 1958, his nephew, 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -334,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -401,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -432,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -444,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -452,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -490,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -505,233 +466,171 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1d3b7c0d-6e70-4aee-8b95-5580fc8db176)
- Call ID: 1d3b7c0d-6e70-4aee-8b95-5580fc8db176
+  AssignClass (79e954ad-fec5-4710-bf3f-d03830eb2ea5)
+ Call ID: 79e954ad-fec5-4710-bf3f-d03830eb2ea5
   Args:
-    source: Dmitri_Pavlovich
+    source: Luis_Filipe
     type: :Man
-  AssignClass (40f03b3c-3e16-4046-a7b3-385f3f1842ed)
- Call ID: 40f03b3c-3e16-4046-a7b3-385f3f1842ed
+  AssignClass (923bab62-803e-4ac3-9fc3-8f579b35eac8)
+ Call ID: 923bab62-803e-4ac3-9fc3-8f579b35eac8
   Args:
+    source: Luis_Filipe
     type: :Person
-    source: Dmitri_Pavlovich
-  AddLiteral (7fdeb21c-8f87-435c-ad13-7cf08e7c5384)
- Call ID: 7fdeb21c-8f87-435c-ad13-7cf08e7c5384
+  AddLiteral (7821b1a4-268e-4dc0-abd2-a41b8f66f3c1)
+ Call ID: 7821b1a4-268e-4dc0-abd2-a41b8f66f3c1
   Args:
-    literal_value: Male
-    source: Dmitri_Pavlovich
-    relation: :hasSex
-    literal_type: xsd:string
-  AddLiteral (14470689-1d73-4ef6-8388-3b9fc915c0d1)
- Call ID: 14470689-1d73-4ef6-8388-3b9fc915c0d1
-  Args:
-    source: Dmitri_Pavlovich
-    relation: :hasBirthYear
+    literal_value: 1887
     literal_type: xsd:integer
-    literal_value: 1891
-  AddLiteral (0f241d4e-c115-483e-b56f-2bc7c6ac3da7)
- Call ID: 0f241d4e-c115-483e-b56f-2bc7c6ac3da7
+    source: Luis_Filipe
+    relation: :hasBirthYear
+  AddLiteral (62effd09-4abc-4151-8867-7d567ce62111)
+ Call ID: 62effd09-4abc-4151-8867-7d567ce62111
   Args:
-    source: Dmitri_Pavlovich
+    source: Luis_Filipe
     relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 1942
-  AssignClass (f53f079e-4531-4ad7-a34b-cac8f7894659)
- Call ID: f53f079e-4531-4ad7-a34b-cac8f7894659
+    literal_value: 1908
+  AssignClass (1031e3ee-cc99-47db-9639-95c453910953)
+ Call ID: 1031e3ee-cc99-47db-9639-95c453910953
   Args:
-    source: Paul_Alexandrovich
+    source: Carlos_I
     type: :Man
-  AssignClass (791ae11b-52cb-4768-80d2-48d9971ab1b6)
- Call ID: 791ae11b-52cb-4768-80d2-48d9971ab1b6
+  AssignClass (b5130b6b-9333-4360-915f-524f3aa164dc)
+ Call ID: b5130b6b-9333-4360-915f-524f3aa164dc
   Args:
-    source: Paul_Alexandrovich
+    source: Carlos_I
     type: :Person
-  AssignClass (a7913114-42ad-492a-b1de-ee790535890e)
- Call ID: a7913114-42ad-492a-b1de-ee790535890e
+  AssignClass (dd0a8c3c-4f0b-4c57-b420-61c3bec740ff)
+ Call ID: dd0a8c3c-4f0b-4c57-b420-61c3bec740ff
   Args:
+    source: Amelie_dOrleans
     type: :Woman
-    source: Alexandra_Georgievna
-  AssignClass (864fd9c8-c202-4aa1-aa2b-96da1f3fbfbf)
- Call ID: 864fd9c8-c202-4aa1-aa2b-96da1f3fbfbf
+  AssignClass (c3c77d15-5eae-491f-94e0-6c7a27027046)
+ Call ID: c3c77d15-5eae-491f-94e0-6c7a27027046
   Args:
-    source: Alexandra_Georgievna
+    source: Amelie_dOrleans
     type: :Person
-  AddTriple (f47254ba-2c61-4ac4-ade4-00f87cfc1400)
- Call ID: f47254ba-2c61-4ac4-ade4-00f87cfc1400
+  AddTriple (34fc632a-b336-4170-b73e-cceff95da7c9)
+ Call ID: 34fc632a-b336-4170-b73e-cceff95da7c9
   Args:
-    target: Paul_Alexandrovich
+    target: Carlos_I
+    source: Luis_Filipe
     relation: :hasFather
-    source: Dmitri_Pavlovich
-  AddTriple (2c8a7a6c-ad39-4ebc-9b93-7a151757c7cf)
- Call ID: 2c8a7a6c-ad39-4ebc-9b93-7a151757c7cf
+  AddTriple (caeedecd-b17d-479b-85b2-9c4385dfea6f)
+ Call ID: caeedecd-b17d-479b-85b2-9c4385dfea6f
   Args:
-    target: Alexandra_Georgievna
+    target: Amelie_dOrleans
+    source: Luis_Filipe
     relation: :hasMother
-    source: Dmitri_Pavlovich
-  AssignClass (093a1915-5b62-4862-8ca7-7d3a6bc84c73)
- Call ID: 093a1915-5b62-4862-8ca7-7d3a6bc84c73
+  AssignClass (e376220c-0c0b-42ef-a0d9-bb613812b492)
+ Call ID: e376220c-0c0b-42ef-a0d9-bb613812b492
   Args:
-    type: :Woman
-    source: Maria_Pavlovna
-  AssignClass (06fdfba2-b57a-44c2-becc-5978ef348fee)
- Call ID: 06fdfba2-b57a-44c2-becc-5978ef348fee
+    source: Manuel_II
+    type: :Man
+  AssignClass (28699af1-4518-4cf7-b353-896733706f05)
+ Call ID: 28699af1-4518-4cf7-b353-896733706f05
   Args:
-    source: Maria_Pavlovna
+    source: Manuel_II
     type: :Person
-  AddTriple (d48b0bec-69f7-43bd-8bf1-454740c16fca)
- Call ID: d48b0bec-69f7-43bd-8bf1-454740c16fca
+  AddTriple (2004461b-5c8f-44f1-93ea-58e087e583e7)
+ Call ID: 2004461b-5c8f-44f1-93ea-58e087e583e7
   Args:
-    target: Maria_Pavlovna
-    source: Dmitri_Pavlovich
-    relation: :hasSister
-  AddTriple (2accb540-4594-481c-98dc-84c6550af624)
- Call ID: 2accb540-4594-481c-98dc-84c6550af624
+    relation: :isSiblingOf
+    source: Luis_Filipe
+    target: Manuel_II
+  AddTriple (bcabf8a8-6b47-436d-a91f-0f1f2f8b82b3)
+ Call ID: bcabf8a8-6b47-436d-a91f-0f1f2f8b82b3
   Args:
-    source: Maria_Pavlovna
+    target: Carlos_I
     relation: :hasFather
-    target: Paul_Alexandrovich
-  AddTriple (04be38ba-0f51-40af-8a11-d58348fb2caa)
- Call ID: 04be38ba-0f51-40af-8a11-d58348fb2caa
+    source: Manuel_II
+  AddTriple (e547e2c7-81b2-482e-a6f4-afee5beae05e)
+ Call ID: e547e2c7-81b2-482e-a6f4-afee5beae05e
   Args:
-    target: Alexandra_Georgievna
+    target: Amelie_dOrleans
+    source: Manuel_II
     relation: :hasMother
-    source: Maria_Pavlovna
-  AssignClass (1c7e3961-1e05-4d41-adeb-471e6e1d78d8)
- Call ID: 1c7e3961-1e05-4d41-adeb-471e6e1d78d8
+  AssignClass (a5df4f50-8618-4117-a72e-e7082adc360a)
+ Call ID: a5df4f50-8618-4117-a72e-e7082adc360a
   Args:
+    source: Luis_I
     type: :Man
-    source: Alexander_II
-  AssignClass (efd1c067-a624-44fa-8bfd-412b7e3d4abf)
- Call ID: efd1c067-a624-44fa-8bfd-412b7e3d4abf
+  AssignClass (18265d3f-f135-49dc-9336-403b549fa8b4)
+ Call ID: 18265d3f-f135-49dc-9336-403b549fa8b4
   Args:
-    source: Alexander_II
+    source: Luis_I
     type: :Person
-  AddTriple (805521bd-fd44-43ec-b403-0f6154b716cf)
- Call ID: 805521bd-fd44-43ec-b403-0f6154b716cf
+  AddTriple (2488cbe2-1276-40a4-b82c-7df36d55730b)
+ Call ID: 2488cbe2-1276-40a4-b82c-7df36d55730b
   Args:
-    source: Paul_Alexandrovich
+    target: Luis_I
+    source: Carlos_I
     relation: :hasFather
-    target: Alexander_II
-  AssignClass (ad01a34c-a301-4f79-b71c-076d7c564e79)
- Call ID: ad01a34c-a301-4f79-b71c-076d7c564e79
+  AssignClass (51861b2a-486f-4049-9191-db9e1152d6b0)
+ Call ID: 51861b2a-486f-4049-9191-db9e1152d6b0
   Args:
+    source: Patricia_of_Connaught
     type: :Woman
-    source: Maria_Alexandrovna
-  AssignClass (c233b9ba-4b66-4910-8c91-bfe98be2a2d8)
- Call ID: c233b9ba-4b66-4910-8c91-bfe98be2a2d8
+  AssignClass (8404e795-b155-48c4-a7e0-e87d6602c587)
+ Call ID: 8404e795-b155-48c4-a7e0-e87d6602c587
   Args:
-    source: Maria_Alexandrovna
+    source: Patricia_of_Connaught
     type: :Person
-  AddTriple (a4d96b17-3535-4ce0-bcbd-b84c8a3182fa)
- Call ID: a4d96b17-3535-4ce0-bcbd-b84c8a3182fa
+  AssignClass (6bd6fb3b-4f71-4488-8f74-67cfa81f4bae)
+ Call ID: 6bd6fb3b-4f71-4488-8f74-67cfa81f4bae
   Args:
-    source: Paul_Alexandrovich
-    relation: :hasMother
-    target: Maria_Alexandrovna
-  AssignClass (0792d7e6-f82f-4f95-960d-022065fbb95a)
- Call ID: 0792d7e6-f82f-4f95-960d-022065fbb95a
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (aa5c2ee5-fcbd-4312-89e8-fc9b2e87cb0a)
+ Call ID: aa5c2ee5-fcbd-4312-89e8-fc9b2e87cb0a
   Args:
+    source: Queen_Victoria
+    type: :Person
+  AssignClass (8a4eb659-f9cd-481a-8904-ce544898e1ac)
+ Call ID: 8a4eb659-f9cd-481a-8904-ce544898e1ac
+  Args:
+    source: Prince_Albert
     type: :Man
-    source: Sergei_Alexandrovich
-  AssignClass (9b33d6c4-e9c6-4f41-83ff-8219f2c06a5e)
- Call ID: 9b33d6c4-e9c6-4f41-83ff-8219f2c06a5e
+  AssignClass (0af7ae70-5861-4856-a5fa-4c5c54e1e2e0)
+ Call ID: 0af7ae70-5861-4856-a5fa-4c5c54e1e2e0
   Args:
+    source: Prince_Albert
     type: :Person
-    source: Sergei_Alexandrovich
-  AssignClass (41c56a48-c358-4940-9a4f-5675793968de)
- Call ID: 41c56a48-c358-4940-9a4f-5675793968de
+  AssignClass (1bd10d92-9d10-489b-ba9e-f364193eae6b)
+ Call ID: 1bd10d92-9d10-489b-ba9e-f364193eae6b
   Args:
-    source: Elizabeth_Feodorovna
-    type: :Woman
-  AssignClass (fa4ec931-4d0b-4adb-9118-ed74c71c7f50)
- Call ID: fa4ec931-4d0b-4adb-9118-ed74c71c7f50
-  Args:
-    type: :Person
-    source: Elizabeth_Feodorovna
-  AddTriple (cd829222-c199-42c4-ad53-f3835575b0dc)
- Call ID: cd829222-c199-42c4-ad53-f3835575b0dc
-  Args:
-    target: Paul_Alexandrovich
-    relation: :hasBrother
-    source: Sergei_Alexandrovich
-  AddTriple (5302738c-b3fd-471d-952c-08542cfda2d1)
- Call ID: 5302738c-b3fd-471d-952c-08542cfda2d1
-  Args:
-    target: 1926
-    relation: :hasMarriageYear
-    source: Elizabeth_Feodorovna
-  AddLiteral (106a0726-3d37-4e5d-a057-648717a97215)
- Call ID: 106a0726-3d37-4e5d-a057-648717a97215
-  Args:
-    literal_value: 1926
-    source: Dmitri_Pavlovich
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AssignClass (a1978459-737e-4270-b9fb-4a9f6ea5ff6c)
- Call ID: a1978459-737e-4270-b9fb-4a9f6ea5ff6c
-  Args:
-    type: :Woman
-    source: Audrey_Emery
-  AssignClass (778d82b8-b7d2-4930-80ee-3115bb4ae7a7)
- Call ID: 778d82b8-b7d2-4930-80ee-3115bb4ae7a7
-  Args:
-    source: Audrey_Emery
-    type: :Person
-  AddTriple (c38fbf06-581e-45ec-a0c7-bdf0baed3b19)
- Call ID: c38fbf06-581e-45ec-a0c7-bdf0baed3b19
-  Args:
-    source: Dmitri_Pavlovich
-    relation: :hasRelation
-    target: Audrey_Emery
-  AssignClass (d9aeace6-5de7-452b-95d3-9b55c3999c79)
- Call ID: d9aeace6-5de7-452b-95d3-9b55c3999c79
-  Args:
-    source: Paul_Romanovsky_Ilyinsky
+    source: Arthur_Duke_of_Connaught
     type: :Man
-  AssignClass (31070683-8c3b-40d4-bc5c-7fc8cead2275)
- Call ID: 31070683-8c3b-40d4-bc5c-7fc8cead2275
+  AssignClass (780e590b-7933-4e1f-8524-2d245c72945c)
+ Call ID: 780e590b-7933-4e1f-8524-2d245c72945c
   Args:
-    source: Paul_Romanovsky_Ilyinsky
+    source: Arthur_Duke_of_Connaught
     type: :Person
-  AddTriple (9a876006-5c8d-4440-b4ef-d3f03758ea03)
- Call ID: 9a876006-5c8d-4440-b4ef-d3f03758ea03
+  AssignClass (9f28dc97-0229-4a04-b940-95c1356d1528)
+ Call ID: 9f28dc97-0229-4a04-b940-95c1356d1528
+  Args:
+    source: Louise_Margaret_of_Prussia
+    type: :Woman
+  AssignClass (4da1f9e1-ded2-4529-86c7-28d7250db08a)
+ Call ID: 4da1f9e1-ded2-4529-86c7-28d7250db08a
+  Args:
+    source: Louise_Margaret_of_Prussia
+    type: :Person
+  AddTriple (6a40e54b-e454-430f-affe-a94548de35af)
+ Call ID: 6a40e54b-e454-430f-affe-a94548de35af
   Args:
     relation: :hasFather
-    source: Paul_Romanovsky_Ilyinsky
-    target: Dmitri_Pavlovich
-  AddTriple (50289f70-ff35-4199-a667-a97a93b1832f)
- Call ID: 50289f70-ff35-4199-a667-a97a93b1832f
+    source: Patricia_of_Connaught
+    target: Arthur_Duke_of_Connaught
+  AddTriple (08c57c79-4e00-4340-9a3a-ed942927a7de)
+ Call ID: 08c57c79-4e00-4340-9a3a-ed942927a7de
   Args:
-    source: Paul_Romanovsky_Ilyinsky
     relation: :hasMother
-    target: Audrey_Emery
-  Finish (9b5351e8-346e-41d7-acf0-1709d2724455)
- Call ID: 9b5351e8-346e-41d7-acf0-1709d2724455
+    source: Patricia_of_Connaught
+    target: Louise_Margaret_of_Prussia
+  Finish (9a945770-82fa-4cef-9af2-372efe87e81e)
+ Call ID: 9a945770-82fa-4cef-9af2-372efe87e81e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -856,51 +755,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_Feodorovna a :Person,
+  data:Luis_Filipe a :Man,
+          :Person ;
+      :hasBirthYear 1887 ;
+      :hasDeathYear 1908 ;
+      :hasFather data:Carlos_I ;
+      :hasMother data:Amelie_dOrleans ;
+      :isSiblingOf data:Manuel_II .
+
+  data:Patricia_of_Connaught a :Person,
           :Woman ;
-      :hasMarriageYear data:1926 .
+      :hasFather data:Arthur_Duke_of_Connaught ;
+      :hasMother data:Louise_Margaret_of_Prussia .
 
-  data:Paul_Romanovsky_Ilyinsky a :Man,
-          :Person ;
-      :hasFather data:Dmitri_Pavlovich ;
-      :hasMother data:Audrey_Emery .
-
-  data:Sergei_Alexandrovich a :Man,
-          :Person ;
-      :hasBrother data:Paul_Alexandrovich .
-
-  data:Alexander_II a :Man,
+  data:Prince_Albert a :Man,
           :Person .
 
-  data:Dmitri_Pavlovich a :Man,
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:Arthur_Duke_of_Connaught a :Man,
+          :Person .
+
+  data:Louise_Margaret_of_Prussia a :Person,
+          :Woman .
+
+  data:Luis_I a :Man,
+          :Person .
+
+  data:Manuel_II a :Man,
           :Person ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Paul_Alexandrovich ;
-      :hasMarriageYear 1926 ;
-      :hasMother data:Alexandra_Georgievna ;
-      :hasRelation data:Audrey_Emery ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Maria_Pavlovna .
+      :hasFather data:Carlos_I ;
+      :hasMother data:Amelie_dOrleans .
 
-  data:Maria_Alexandrovna a :Person,
+  data:Amelie_dOrleans a :Person,
           :Woman .
 
-  data:Maria_Pavlovna a :Person,
-          :Woman ;
-      :hasFather data:Paul_Alexandrovich ;
-      :hasMother data:Alexandra_Georgievna .
-
-  data:Alexandra_Georgievna a :Person,
-          :Woman .
-
-  data:Audrey_Emery a :Person,
-          :Woman .
-
-  data:Paul_Alexandrovich a :Man,
+  data:Carlos_I a :Man,
           :Person ;
-      :hasFather data:Alexander_II ;
-      :hasMother data:Maria_Alexandrovna .
+      :hasFather data:Luis_I .
 
 
 
@@ -912,270 +805,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3abebaf3-a33c-4f18-a5af-193e859e5112)
- Call ID: 3abebaf3-a33c-4f18-a5af-193e859e5112
+  ValidateShacl (191f5060-db9f-4296-82a6-0b2750d5938d)
+ Call ID: 191f5060-db9f-4296-82a6-0b2750d5938d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:32
+Total violations:21
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Luis_I for the property hasFather of Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Luis_I, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich, which is the father of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
+      The value node Carlos_I for the property hasFather of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Dmitri_Pavlovich, :Ancestor)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Dmitri_Pavlovich, is not classified as an :Ancestor.
+      The value node Carlos_I for the property hasFather of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alexander_II, which is the father of Paul_Alexandrovich, is not classified as an :Ancestor.
+      The value node Amelie_dOrleans for the property hasMother of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II, :Ancestor)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Audrey_Emery, which is the mother of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
+      The value node Amelie_dOrleans for the property hasMother of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Audrey_Emery, :Ancestor)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Dmitri_Pavlovich, is not classified as an :Ancestor.
+      The value node Arthur_Duke_of_Connaught for the property hasFather of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
+      AssignClass(Arthur_Duke_of_Connaught, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Alexandrovna, which is the mother of Paul_Alexandrovich, is not classified as an :Ancestor.
+      The value node Carlos_I for the property hasFather of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Alexandrovna, :Ancestor)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Luis_I for the property hasFather of Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Luis_I, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Carlos_I for the property hasFather of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich, which is the father of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
+      The value node Louise_Margaret_of_Prussia for the property hasMother of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Dmitri_Pavlovich, :Ancestor)
+      AssignClass(Louise_Margaret_of_Prussia, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Dmitri_Pavlovich, is not classified as an :Ancestor.
+      The value node Amelie_dOrleans for the property hasMother of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alexander_II, which is the father of Paul_Alexandrovich, is not classified as an :Ancestor.
+      The value node Amelie_dOrleans for the property hasMother of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II, :Ancestor)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Maria_Pavlovna, is not classified as an :Ancestor.
+      The value node Arthur_Duke_of_Connaught for the property hasFather of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
+      AssignClass(Arthur_Duke_of_Connaught, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Audrey_Emery, which is the mother of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
+      The value node Carlos_I for the property hasFather of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Audrey_Emery, :Ancestor)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Dmitri_Pavlovich, is not classified as an :Ancestor.
+      The value node Luis_I for the property hasFather of Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
+      AssignClass(Luis_I, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_Alexandrovna, which is the mother of Paul_Alexandrovich, is not classified as an :Ancestor.
+      The value node Carlos_I for the property hasFather of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Alexandrovna, :Ancestor)
+      AssignClass(Carlos_I, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Maria_Pavlovna, is not classified as an :Ancestor.
+      The value node Louise_Margaret_of_Prussia for the property hasMother of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
+      AssignClass(Louise_Margaret_of_Prussia, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Amelie_dOrleans for the property hasMother of Manuel_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Amelie_dOrleans for the property hasMother of Luis_Filipe is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Amelie_dOrleans, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
+      The value node Arthur_Duke_of_Connaught for the property hasFather of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Arthur_Duke_of_Connaught, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich, which is the father of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Dmitri_Pavlovich, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Dmitri_Pavlovich, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Alexander_II, which is the father of Paul_Alexandrovich, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Maria_Pavlovna, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
-
-
-  Violation [25]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Audrey_Emery, which is the mother of Paul_Romanovsky_Ilyinsky, is not classified as an :Ancestor.
+      The value node Louise_Margaret_of_Prussia for the property hasMother of Patricia_of_Connaught is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Audrey_Emery, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Dmitri_Pavlovich, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Alexandrovna, which is the mother of Paul_Alexandrovich, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Alexandrovna, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Maria_Pavlovna, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node Dmitri_Pavlovich has a :hasSex relationship to a value that is not an instance of the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Alexandrovich, which is the father of Maria_Pavlovna, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Alexandrovich, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandra_Georgievna, which is the mother of Maria_Pavlovna, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Georgievna, :Ancestor)
+      AssignClass(Louise_Margaret_of_Prussia, :Ancestor)
 
 
 
@@ -1184,82 +989,34 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (31414ce5-fe8b-4099-867d-d63d26f7af14)
- Call ID: 31414ce5-fe8b-4099-867d-d63d26f7af14
+  AssignClass (ce211c22-0077-4307-ba3b-44f15743cf32)
+ Call ID: ce211c22-0077-4307-ba3b-44f15743cf32
   Args:
+    source: Luis_I
     type: :Ancestor
-    source: Dmitri_Pavlovich
-  AssignClass (63a3da7c-ef3e-46e3-a97d-090388d5d8e3)
- Call ID: 63a3da7c-ef3e-46e3-a97d-090388d5d8e3
+  AssignClass (bdbdd2b7-2603-4e3c-8208-9c67869ba784)
+ Call ID: bdbdd2b7-2603-4e3c-8208-9c67869ba784
   Args:
+    source: Carlos_I
     type: :Ancestor
-    source: Paul_Alexandrovich
-  AssignClass (861a2dc4-698a-4c1a-9d66-f70281789a75)
- Call ID: 861a2dc4-698a-4c1a-9d66-f70281789a75
+  AssignClass (325dfd6e-49a0-4d39-aac0-c2088cc1fbc8)
+ Call ID: 325dfd6e-49a0-4d39-aac0-c2088cc1fbc8
   Args:
+    source: Amelie_dOrleans
     type: :Ancestor
-    source: Alexander_II
-  AssignClass (89fdb089-bd76-49d6-934a-aed97e5c7175)
- Call ID: 89fdb089-bd76-49d6-934a-aed97e5c7175
+  AssignClass (f184f23f-ad51-4895-99f8-0a9a1cb98918)
+ Call ID: f184f23f-ad51-4895-99f8-0a9a1cb98918
   Args:
+    source: Arthur_Duke_of_Connaught
     type: :Ancestor
-    source: Audrey_Emery
-  AssignClass (93792647-771f-44b6-b8e3-21b6a878bf4b)
- Call ID: 93792647-771f-44b6-b8e3-21b6a878bf4b
+  AssignClass (8e947bfb-1c10-4f91-91a4-cbbbfc8afa5e)
+ Call ID: 8e947bfb-1c10-4f91-91a4-cbbbfc8afa5e
   Args:
+    source: Louise_Margaret_of_Prussia
     type: :Ancestor
-    source: Alexandra_Georgievna
-  AssignClass (1b757138-01c9-4a05-86a3-65a5baf371d2)
- Call ID: 1b757138-01c9-4a05-86a3-65a5baf371d2
+  ValidateShacl (a1491522-cb3b-497f-ba15-c9b821298dfa)
+ Call ID: a1491522-cb3b-497f-ba15-c9b821298dfa
   Args:
-    type: :Ancestor
-    source: Maria_Alexandrovna
-  RemoveLiteral (dd806687-da37-4c3e-a5af-732207c2ad88)
- Call ID: dd806687-da37-4c3e-a5af-732207c2ad88
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Dmitri_Pavlovich
-  AssignClass (b9b06690-5374-40e8-94aa-027f40f3bd0b)
- Call ID: b9b06690-5374-40e8-94aa-027f40f3bd0b
-  Args:
-    type: :Male
-    source: Male_Node
-  AssignClass (5d03cfe5-63eb-4dfc-9806-f66a6969d8b8)
- Call ID: 5d03cfe5-63eb-4dfc-9806-f66a6969d8b8
-  Args:
-    type: :Sex
-    source: Male_Node
-  AddTriple (cfbd7e45-4797-4026-ae18-b7e2474011cc)
- Call ID: cfbd7e45-4797-4026-ae18-b7e2474011cc
-  Args:
-    relation: :hasSex
-    source: Dmitri_Pavlovich
-    target: Male_Node
-  Finish (ef4b5f53-b8b2-4b82-bab5-58679bbc2096)
- Call ID: ef4b5f53-b8b2-4b82-bab5-58679bbc2096
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1284,74 +1041,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_Feodorovna a :Person,
+  data:Luis_Filipe a :Man,
+          :Person ;
+      :hasBirthYear 1887 ;
+      :hasDeathYear 1908 ;
+      :hasFather data:Carlos_I ;
+      :hasMother data:Amelie_dOrleans ;
+      :isSiblingOf data:Manuel_II .
+
+  data:Patricia_of_Connaught a :Person,
           :Woman ;
-      :hasMarriageYear data:1926 .
+      :hasFather data:Arthur_Duke_of_Connaught ;
+      :hasMother data:Louise_Margaret_of_Prussia .
 
-  data:Paul_Romanovsky_Ilyinsky a :Man,
-          :Person ;
-      :hasFather data:Dmitri_Pavlovich ;
-      :hasMother data:Audrey_Emery .
+  data:Prince_Albert a :Man,
+          :Person .
 
-  data:Sergei_Alexandrovich a :Man,
-          :Person ;
-      :hasBrother data:Paul_Alexandrovich .
+  data:Queen_Victoria a :Person,
+          :Woman .
 
-  data:Alexander_II a :Ancestor,
+  data:Arthur_Duke_of_Connaught a :Ancestor,
           :Man,
           :Person .
 
-  data:Dmitri_Pavlovich a :Ancestor,
+  data:Louise_Margaret_of_Prussia a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Luis_I a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Manuel_II a :Man,
+          :Person ;
+      :hasFather data:Carlos_I ;
+      :hasMother data:Amelie_dOrleans .
+
+  data:Amelie_dOrleans a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Carlos_I a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Paul_Alexandrovich ;
-      :hasMarriageYear 1926 ;
-      :hasMother data:Alexandra_Georgievna ;
-      :hasRelation data:Audrey_Emery ;
-      :hasSex data:Male_Node ;
-      :hasSister data:Maria_Pavlovna .
-
-  data:Male_Node a :Male,
-          :Sex .
-
-  data:Maria_Alexandrovna a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Maria_Pavlovna a :Person,
-          :Woman ;
-      :hasFather data:Paul_Alexandrovich ;
-      :hasMother data:Alexandra_Georgievna .
-
-  data:Alexandra_Georgievna a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Audrey_Emery a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Paul_Alexandrovich a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Alexander_II ;
-      :hasMother data:Maria_Alexandrovna .
+      :hasFather data:Luis_I .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (c3bb504c-b636-4450-982f-cd7823ed7093)
- Call ID: c3bb504c-b636-4450-982f-cd7823ed7093
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1361,37 +1096,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (36bde7d1-ae29-4b0d-aef9-056bb50da805)
- Call ID: 36bde7d1-ae29-4b0d-aef9-056bb50da805
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1926']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (705ab84f-dd6a-4b00-86df-2af0de10b0bb)
- Call ID: 705ab84f-dd6a-4b00-86df-2af0de10b0bb
-  Args:
-    type: :DomainEntity
-    source: 1926
-  Finish (367c289e-3878-4da7-a53c-aa28e6f0c82b)
- Call ID: 367c289e-3878-4da7-a53c-aa28e6f0c82b
+  Finish (b4007c55-5c55-4fbd-b95b-aa52bcfa5bd0)
+ Call ID: b4007c55-5c55-4fbd-b95b-aa52bcfa5bd0
   Args:

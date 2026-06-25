@@ -1,0 +1,527 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:King_George_V,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isFatherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:King_George_V ;
+    :isUncleOf data:Prince_George_Duke_of_Kent .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_George_Duke_of_Kent ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Prince_George_Duke_of_Kent ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent ;
+    :isAuntOf data:Prince_George_Duke_of_Kent ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Prince_George_Duke_of_Kent ;
+    :isParentOf data:Prince_George_Duke_of_Kent ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :hasSister data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :isMotherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Pavlovna_of_Russia .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasChild data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:King_George_I_of_Greece,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :hasSon data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isFatherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_George_I_of_Greece ;
+    :isUncleOf data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Queen_Olga_of_Greece ;
+    :hasSon data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Olga_of_Greece ;
+    :isMotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Olga_of_Greece ;
+    :isSisterOf data:Queen_Olga_of_Greece .
+
+data:Princess_Elizabeth a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isAuntOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga .
+
+data:Princess_Olga a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isAuntOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasParent data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:King_George_I_of_Greece,
+        data:Michael_Prince_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Olga_of_Greece ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:King_George_I_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_V,
+        data:Queen_Mary ;
+    :hasBrother data:Prince_George_Duke_of_Kent ;
+    :hasChild data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasDaughter data:Alexandra_Princess_of_Kent ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:King_George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:King_George_V,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary ;
+    :hasSon data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBloodrelationOf data:Prince_George_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George_Duke_of_Kent ;
+    :isChildOf data:King_George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isParentOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isSiblingOf data:Prince_George_Duke_of_Kent ;
+    :isSonOf data:King_George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent .
+
+data:Alexandra_Princess_of_Kent a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Alexandra_Princess_of_Kent ;
+    :isBloodrelationOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isSisterOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent .
+
+data:Edward_Duke_of_Kent a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Alexandra_Princess_of_Kent ;
+    :isBloodrelationOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBrotherOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isSonOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Michael_Prince_of_Kent a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:King_George_V,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Mary,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Alexandra_Princess_of_Kent ;
+    :isBloodrelationOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBrotherOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isChildOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isSonOf data:Prince_George_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Queen_Olga_of_Greece ;
+    :hasBirthYear 1906 ;
+    :hasChild data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasDaughter data:Alexandra_Princess_of_Kent ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:King_George_I_of_Greece,
+        data:Michael_Prince_of_Kent,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga,
+        data:Queen_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :hasSon data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isAncestorOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isAuntOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isParentOf data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga .
+

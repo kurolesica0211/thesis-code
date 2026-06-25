@@ -16,41 +16,41 @@
       "qid": "Q1626864",
       "label": "Princess Claude d’Orléans",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Isabelle_of_Orléans-Braganza",
       "qid": "Q261284",
       "label": "Isabelle of Orléans-Braganza",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Aimone-_6th_Duke_of_Aosta",
       "qid": "Q2031618",
       "label": "Prince Aimone, 6th Duke of Aosta",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Isabelle_of_Orl%C3%A9ans-Braganza",
-      "extracted_local_name": "Isabelle_of_Orl%C3%A9ans-Braganza",
-      "embedding_text": "Isabelle of Orléans-Braganza",
+      "extracted_uri": "http://example.org/data/Isabelle_of_Orleans_Braganza",
+      "extracted_local_name": "Isabelle_of_Orleans_Braganza",
+      "embedding_text": "Isabelle of Orleans Braganza",
       "extracted_gender": "female",
       "matched": true,
-      "score": 1.0,
+      "score": 0.96875,
       "ground_truth_uri": "http://example.com/data#Isabelle_of_Orléans-Braganza",
       "ground_truth_qid": "Q261284",
       "ground_truth_label": "Isabelle of Orléans-Braganza",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Isabelle of Orléans-Braganza",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Isabelle of Orleans-Braganza",
       "best_candidate_label": "Isabelle of Orléans-Braganza",
       "best_candidate_qid": "Q261284",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.96875
     },
     {
       "extracted_uri": "http://example.org/data/Aimone_Duke_of_Aosta",
@@ -63,11 +63,11 @@
       "ground_truth_qid": "Q2031618",
       "ground_truth_label": "Prince Aimone, 6th Duke of Aosta",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Aimone, Duke of Aosta",
       "best_candidate_label": "Prince Aimone, 6th Duke of Aosta",
       "best_candidate_qid": "Q2031618",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8666666666666667
     },
     {
@@ -82,11 +82,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Claude d Orléans",
+      "best_candidate_label": "Princess Claude d’Orléans",
+      "best_candidate_qid": "Q1626864",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.4
     },
     {
       "extracted_uri": "http://example.org/data/Anne_Duchess_of_Calabria",
@@ -103,13 +103,13 @@
       "best_candidate_match_text": "Princess Claude d Orléans",
       "best_candidate_label": "Princess Claude d’Orléans",
       "best_candidate_qid": "Q1626864",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4489795918367347
     },
     {
-      "extracted_uri": "http://example.org/data/Claude_of_Orl%C3%A9ans",
-      "extracted_local_name": "Claude_of_Orl%C3%A9ans",
-      "embedding_text": "Claude of Orléans",
+      "extracted_uri": "http://example.org/data/Claude_of_Orleans",
+      "extracted_local_name": "Claude_of_Orleans",
+      "embedding_text": "Claude of Orleans",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -121,13 +121,13 @@
       "best_candidate_match_text": "Princess Claude d Orléans",
       "best_candidate_label": "Princess Claude d’Orléans",
       "best_candidate_qid": "Q1626864",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.7142857142857143
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6666666666666666
     },
     {
-      "extracted_uri": "http://example.org/data/Diane_Duchess_of_W%C3%BCrttemberg",
-      "extracted_local_name": "Diane_Duchess_of_W%C3%BCrttemberg",
-      "embedding_text": "Diane Duchess of Württemberg",
+      "extracted_uri": "http://example.org/data/Diane_Duchess_of_Wurttemberg",
+      "extracted_local_name": "Diane_Duchess_of_Wurttemberg",
+      "embedding_text": "Diane Duchess of Wurttemberg",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -139,7 +139,7 @@
       "best_candidate_match_text": "Princess Claude d Orléans",
       "best_candidate_label": "Princess Claude d’Orléans",
       "best_candidate_qid": "Q1626864",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.33962264150943394
     },
     {
@@ -154,11 +154,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Claude d Orléans",
+      "best_candidate_label": "Princess Claude d’Orléans",
+      "best_candidate_qid": "Q1626864",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3
     },
     {
       "extracted_uri": "http://example.org/data/Henri_Count_of_Paris",
@@ -172,16 +172,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Claude d Orléans",
+      "best_candidate_label": "Princess Claude d’Orléans",
+      "best_candidate_qid": "Q1626864",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.4
     },
     {
-      "extracted_uri": "http://example.org/data/Henri_Count_of_Paris_II",
-      "extracted_local_name": "Henri_Count_of_Paris_II",
-      "embedding_text": "Henri Count of Paris II",
+      "extracted_uri": "http://example.org/data/Henri_Count_of_Paris_Jr",
+      "extracted_local_name": "Henri_Count_of_Paris_Jr",
+      "embedding_text": "Henri Count of Paris Jr",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -190,11 +190,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Claude d Orléans",
+      "best_candidate_label": "Princess Claude d’Orléans",
+      "best_candidate_qid": "Q1626864",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.375
     },
     {
       "extracted_uri": "http://example.org/data/Luigi_Arnaldo_La_Cagnina",
@@ -208,11 +208,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Claude Marie Agnès Catherine d'Orléans",
+      "best_candidate_label": "Princess Claude d’Orléans",
+      "best_candidate_qid": "Q1626864",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3380281690140845
     }
   ],
   "summary": {

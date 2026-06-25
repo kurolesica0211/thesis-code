@@ -2,65 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carlos a :Man,
+data:Claude_Bowes-Lyon_13th a :Ancestor,
+        :Man,
         :Person ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 2015 ;
-    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
-    :hasMother data:Alicia_of_Bourbon-Parma ;
-    :hasRelation data:Anne_of_Orleans ;
-    :hasSex data:Male ;
-    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias .
+    :isFatherOf data:Claude_Bowes-Lyon_14th .
 
-data:Teresa a :Woman .
+data:Prince_Charles a :Man,
+        :Person .
 
-data:Anne_of_Orleans a :Person,
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
         :Woman ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasSex data:Female .
+    :isSisterOf data:David_Bowes-Lyon .
 
-data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
+data:David_Bowes-Lyon a :Man,
         :Person ;
-    :hasBirthYear 1870 ;
-    :hasDeathYear 1949 ;
-    :hasSex data:Male .
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1961 ;
+    :hasMarriageYear 1929 ;
+    :hasRelation data:Rachel_Pauline_Spender-Clay ;
+    :isSonOf data:Claude_Bowes-Lyon_14th ;
+    :isUncleOf data:Queen_Elizabeth_II .
 
-data:Henri_Count_of_Paris a :Ancestor,
+data:Herbert_Henry_Spender-Clay a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Mercedes_Princess_of_Asturias a :Ancestor,
+data:Pauline_Spender-Clay a :Ancestor,
         :Person,
-        :Woman ;
-    :hasBirthYear 1880 ;
-    :hasDeathYear 1904 ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
-        :Woman ;
-    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
-    :hasMother data:Alicia_of_Bourbon-Parma ;
-    :hasSex data:Female .
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
-data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Ancestor,
+data:Rachel_Pauline_Spender-Clay a :Person,
+        :Woman ;
+    :isDaughterOf data:Herbert_Henry_Spender-Clay,
+        data:Pauline_Spender-Clay .
+
+data:Claude_Bowes-Lyon_14th a :Ancestor,
         :Man,
-        :Person ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1964 ;
-    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Mercedes_Princess_of_Asturias ;
-    :hasSex data:Male .
-
-data:Alicia_of_Bourbon-Parma a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 2017 ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+        :Person .
 

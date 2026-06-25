@@ -1,0 +1,287 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Meghan-_Duchess_of_Sussex a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Meghan, Duchess of Sussex"^^xsd:string ;
+    data:posIndicesFull "195:220"^^xsd:string ;
+    data:posIndicesPart "534:541"^^xsd:string,
+        "545:551"^^xsd:string ;
+    data:wdtLink wdt:Q3304418 ;
+    :alsoKnownAs "Duchess Meghan"^^xsd:string,
+        "Duchess Rachel"^^xsd:string,
+        "Meghan Markle"^^xsd:string,
+        "Meghan Sussex"^^xsd:string,
+        "Rachel Markle"^^xsd:string,
+        "Rachel Meghan Markle"^^xsd:string,
+        "Rachel Sussex"^^xsd:string ;
+    :hasChild data:Princess_Lilibet_of_Sussex ;
+    :hasDaughter data:Princess_Lilibet_of_Sussex ;
+    :hasRelation data:Meghan-_Duchess_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:female ;
+    :hasSister data:Meghan-_Duchess_of_Sussex ;
+    :isAncestorOf data:Princess_Lilibet_of_Sussex ;
+    :isAuntOf data:Princess_Lilibet_of_Sussex ;
+    :isBloodrelationOf data:Meghan-_Duchess_of_Sussex ;
+    :isMotherOf data:Princess_Lilibet_of_Sussex ;
+    :isParentOf data:Princess_Lilibet_of_Sussex ;
+    :isSiblingOf data:Meghan-_Duchess_of_Sussex ;
+    :isSisterOf data:Meghan-_Duchess_of_Sussex .
+
+data:Diana-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Diana, Princess of Wales"^^xsd:string ;
+    data:posIndicesFull "1654:1659"^^xsd:string,
+        "355:360"^^xsd:string,
+        "36:41"^^xsd:string,
+        "736:741"^^xsd:string,
+        "736:760"^^xsd:string ;
+    data:posIndicesPart "1275:1283"^^xsd:string ;
+    data:wdtLink wdt:Q9685 ;
+    :alsoKnownAs "Diana"^^xsd:string,
+        "Diana Frances Spencer"^^xsd:string,
+        "Diana Princess of Wales"^^xsd:string,
+        "Diana Spencer"^^xsd:string,
+        "Lady Di"^^xsd:string,
+        "Lady Diana Frances Spencer"^^xsd:string,
+        "Lady Diana Spencer"^^xsd:string,
+        "Princess Di"^^xsd:string,
+        "Princess Diana"^^xsd:string,
+        "The People's Princess"^^xsd:string,
+        "The Princess of Wales"^^xsd:string ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex ;
+    :hasRelation data:Diana-_Princess_of_Wales,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:female ;
+    :hasSister data:Diana-_Princess_of_Wales ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex ;
+    :isAncestorOf data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :isAuntOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isBloodrelationOf data:Diana-_Princess_of_Wales ;
+    :isMotherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSiblingOf data:Diana-_Princess_of_Wales ;
+    :isSisterOf data:Diana-_Princess_of_Wales .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "1017:1029"^^xsd:string,
+        "1170:1182"^^xsd:string,
+        "646:664"^^xsd:string,
+        "652:664"^^xsd:string,
+        "911:923"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :isAuntOf data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "1200:1211"^^xsd:string,
+        "248:260"^^xsd:string,
+        "248:264"^^xsd:string,
+        "253:264"^^xsd:string ;
+    data:posIndicesPart "940:947"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex ;
+    :isAncestorOf data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex .
+
+data:Princess_Lilibet_of_Sussex a :Person,
+        :Woman ;
+    rdfs:label "Princess Lilibet of Sussex"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string,
+        "1735:1761"^^xsd:string,
+        "1744:1761"^^xsd:string,
+        "28:61"^^xsd:string,
+        "347:380"^^xsd:string,
+        "9:26"^^xsd:string ;
+    data:posIndicesPart "1063:1070"^^xsd:string,
+        "1233:1240"^^xsd:string,
+        "1275:1283"^^xsd:string,
+        "1458:1465"^^xsd:string,
+        "1583:1591"^^xsd:string,
+        "1637:1645"^^xsd:string,
+        "1646:1653"^^xsd:string,
+        "1775:1782"^^xsd:string,
+        "545:551"^^xsd:string,
+        "682:689"^^xsd:string,
+        "804:811"^^xsd:string,
+        "877:884"^^xsd:string ;
+    data:wdtLink wdt:Q107125551 ;
+    :alsoKnownAs "Lili Mountbatten-Windsor"^^xsd:string,
+        "Lili Sussex"^^xsd:string,
+        "Lili Windsor"^^xsd:string,
+        "Lilibet Diana Mountbatten-Windsor"^^xsd:string,
+        "Lilibet Diana of Sussex"^^xsd:string,
+        "Lilibet Sussex"^^xsd:string,
+        "Lilibet Windsor"^^xsd:string,
+        "Lilibet of Sussex"^^xsd:string,
+        "Princess Lilibet Diana of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasFather data:Prince_Harry-_Duke_of_Sussex ;
+    :hasMother data:Meghan-_Duchess_of_Sussex ;
+    :hasParent data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasRelation data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Lilibet_of_Sussex ;
+    :isBloodrelationOf data:Princess_Lilibet_of_Sussex ;
+    :isChildOf data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isDaughterOf data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :isSiblingOf data:Princess_Lilibet_of_Sussex ;
+    :isSisterOf data:Princess_Lilibet_of_Sussex .
+
+data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex"^^xsd:string ;
+    data:posIndicesFull "161:173"^^xsd:string,
+        "161:189"^^xsd:string ;
+    data:posIndicesPart "525:529"^^xsd:string,
+        "545:551"^^xsd:string,
+        "579:585"^^xsd:string ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales"^^xsd:string,
+        "Harry Sussex"^^xsd:string,
+        "Harry Wales"^^xsd:string,
+        "Harry Windsor"^^xsd:string,
+        "Henry Charles Albert David"^^xsd:string,
+        "Henry Sussex"^^xsd:string,
+        "Henry Wales"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Harry"^^xsd:string,
+        "Prince Harry of Wales"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry Charles Albert"^^xsd:string,
+        "Prince Henry Charles Albert David"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry, Duke of Sussex"^^xsd:string,
+        "Prince Henry, Duke of Sussex, KCVO"^^xsd:string,
+        "The Prince Henry, Duke of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex ;
+    :hasChild data:Princess_Lilibet_of_Sussex ;
+    :hasDaughter data:Princess_Lilibet_of_Sussex ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana-_Princess_of_Wales ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasRelation data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Princess_Lilibet_of_Sussex ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Lilibet_of_Sussex ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isChildOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isFatherOf data:Princess_Lilibet_of_Sussex ;
+    :isParentOf data:Princess_Lilibet_of_Sussex ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex ;
+    :isSonOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isUncleOf data:Princess_Lilibet_of_Sussex .
+

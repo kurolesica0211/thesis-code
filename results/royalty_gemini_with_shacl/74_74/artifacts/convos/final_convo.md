@@ -96,7 +96,6 @@ George was born at 7:35 pm on 20 December 1902 at York Cottage on the Sandringha
 His father was the Prince of Wales (later King George V), the only surviving son of King Edward VII and Queen Alexandra.
 His mother was the Princess of Wales, later Queen Mary, the eldest child and only daughter of the Duke and Duchess of Teck.
 Edward, Albert, and Henry.
-He was baptised in the Private Chapel at Windsor Castle on 26 January 1903 by Francis Paget, the  Bishop of Oxford.
 His godparents were King Edward VII (his paternal grandfather); Prince Valdemar of Denmark (his paternal granduncle, represented by Prince Carl of Denmark, his paternal uncle and first cousin once removed); Prince Louis of Battenberg (husband of his father's cousin); Queen Alexandra (his paternal grandmother); Empress Dowager Maria Feodorovna (his paternal grandaunt, represented by Princess Victoria of the United Kingdom, his paternal aunt); and Princess Christian of Schleswig-Holstein (his paternal grandaunt).
 Education and career
 
@@ -106,7 +105,6 @@ He remained on active service in the Royal Navy until March 1929, serving on HMS
 He served on the latter as a lieutenant on the admiral's staff before transferring in 1928 to HMS Durban on the America and West Indies Station, based at the Royal Naval Dockyard in Bermuda.
 After leaving the navy, he briefly held posts at the Foreign Office and later the Home Office, becoming the first member of the royal family to work as a civil servant.
 From January to April 1931, George and his elder brother, the Prince of Wales, undertook an 18,000‐mile tour of South America.
-The princes travelled back via Paris and an Imperial Airways flight from Paris–Le Bourget Airport that landed specially in Windsor Great Park.
 On 23 June 1936, George was appointed a personal aide-de-camp to his eldest brother, the new king, Edward VIII.
 Following Edward's abdication, he was appointed a personal naval aide-de-camp to his elder brother, now George VI.
 On 12 March 1937, he was commissioned as a colonel in the British Army and as a group captain in the Royal Air Force (RAF).
@@ -153,7 +151,6 @@ His death in RAF service marked the first time in more than 450 years that a mem
 George's body was interred initially in the Royal Vault of St George's Chapel, Windsor; in 1968 he was reburied in the Royal Burial Ground, Frogmore, directly behind Queen Victoria's mausoleum.
 His elder son, six-year-old Edward, succeeded him as Duke of Kent.
 Marina, his wife, had given birth to their third child, Michael, only seven weeks before George's death.
-One RAF crew member survived the crash: Flight Sergeant Andrew Jack, the Sunderland's rear gunner.
 Jack's niece has claimed that he told his brother that George had been at the controls of the aircraft, that Jack had dragged him from the pilot's seat after the crash, and that there was an additional person on board whose identity has never been revealed.
 In popular culture
 
@@ -187,6 +184,8 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -202,39 +201,9 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -249,6 +218,23 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -266,6 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -333,29 +334,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -364,6 +357,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -376,6 +377,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -384,17 +387,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -422,6 +427,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -437,145 +526,135 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e696d0cf-d4e5-4dd1-867a-043e20338baf)
- Call ID: e696d0cf-d4e5-4dd1-867a-043e20338baf
+  AssignClass (e5fc278e-15df-4eb6-b48f-d372be692eea)
+ Call ID: e5fc278e-15df-4eb6-b48f-d372be692eea
   Args:
     type: :Man
-    source: PrinceGeorge
-  AssignClass (226882a3-fddb-41b3-b7fd-8f28c21e4c9e)
- Call ID: 226882a3-fddb-41b3-b7fd-8f28c21e4c9e
+    source: Prince_George_Duke_of_Kent
+  AssignClass (613a9c8e-a82a-4c2f-87e9-6cb0826e7f05)
+ Call ID: 613a9c8e-a82a-4c2f-87e9-6cb0826e7f05
   Args:
+    source: George_V
     type: :Man
-    source: GeorgeV
-  AssignClass (cdfb4bb6-1de2-47c2-841f-6ee92002b5bb)
- Call ID: cdfb4bb6-1de2-47c2-841f-6ee92002b5bb
+  AssignClass (af4ab205-ecdb-49df-b27f-9a7bcdeb8b00)
+ Call ID: af4ab205-ecdb-49df-b27f-9a7bcdeb8b00
   Args:
     type: :Woman
-    source: QueenMary
-  AssignClass (5a4421dc-4d22-4eca-a19b-76291de9c232)
- Call ID: 5a4421dc-4d22-4eca-a19b-76291de9c232
+    source: Queen_Mary
+  AssignClass (b46597dd-ff97-4625-a034-f8f997cf9b36)
+ Call ID: b46597dd-ff97-4625-a034-f8f997cf9b36
+  Args:
+    source: Edward_VIII
+    type: :Man
+  AssignClass (fab375d8-abb6-4f61-9aef-54cd344bdf67)
+ Call ID: fab375d8-abb6-4f61-9aef-54cd344bdf67
   Args:
     type: :Man
-    source: EdwardVIII
-  AssignClass (69849ee1-6a34-4335-8c58-ed117919942b)
- Call ID: 69849ee1-6a34-4335-8c58-ed117919942b
+    source: George_VI
+  AssignClass (a170ad6a-cbc1-4ef1-9897-da7dd7162056)
+ Call ID: a170ad6a-cbc1-4ef1-9897-da7dd7162056
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (71a61ec4-76b2-468c-9b21-d3fccb6ebea3)
+ Call ID: 71a61ec4-76b2-468c-9b21-d3fccb6ebea3
   Args:
     type: :Man
-    source: GeorgeVI
-  AssignClass (630f3705-3a80-4bfa-9f4b-9103fb871a17)
- Call ID: 630f3705-3a80-4bfa-9f4b-9103fb871a17
+    source: Edward_Duke_of_Kent
+  AssignClass (dca0d431-e8e3-4914-98c2-498f446b4a6f)
+ Call ID: dca0d431-e8e3-4914-98c2-498f446b4a6f
   Args:
     type: :Woman
-    source: PrincessMarina
-  AssignClass (2bf5a2fa-af45-4f70-8a98-b9c064a23525)
- Call ID: 2bf5a2fa-af45-4f70-8a98-b9c064a23525
+    source: Alexandra
+  AssignClass (47c02d20-3b3b-4d35-8b76-52451e61feeb)
+ Call ID: 47c02d20-3b3b-4d35-8b76-52451e61feeb
   Args:
     type: :Man
-    source: EdwardKent
-  AssignClass (2ca6b788-42bd-4653-935e-3ee890d4c7b5)
- Call ID: 2ca6b788-42bd-4653-935e-3ee890d4c7b5
+    source: Michael
+  AddLiteral (498da734-05ec-4456-aa93-20337817176c)
+ Call ID: 498da734-05ec-4456-aa93-20337817176c
   Args:
-    type: :Woman
-    source: AlexandraKent
-  AssignClass (5f3bf501-6240-42c8-b9bc-05b14c8e44a6)
- Call ID: 5f3bf501-6240-42c8-b9bc-05b14c8e44a6
-  Args:
-    type: :Man
-    source: MichaelKent
-  AddLiteral (f5f6e6dc-5990-4b44-a6af-9b2e225776f8)
- Call ID: f5f6e6dc-5990-4b44-a6af-9b2e225776f8
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1902
     relation: :hasBirthYear
-    source: PrinceGeorge
-  AddLiteral (3e865381-df1c-40a8-b26f-7c89aaa4ddc2)
- Call ID: 3e865381-df1c-40a8-b26f-7c89aaa4ddc2
+    literal_type: xsd:positiveInteger
+    source: Prince_George_Duke_of_Kent
+    literal_value: 1902
+  AddLiteral (15e07831-8ce0-4f06-b311-343225d5f79d)
+ Call ID: 15e07831-8ce0-4f06-b311-343225d5f79d
   Args:
-    relation: :hasDeathYear
     literal_value: 1942
-    literal_type: xsd:integer
-    source: PrinceGeorge
-  AddTriple (1e159bc4-4d08-4de2-983b-37ce69a2cbdf)
- Call ID: 1e159bc4-4d08-4de2-983b-37ce69a2cbdf
+    source: Prince_George_Duke_of_Kent
+    literal_type: xsd:positiveInteger
+    relation: :hasDeathYear
+  AddTriple (a0b75fac-24fc-43a3-bfc3-5c8d7240084c)
+ Call ID: a0b75fac-24fc-43a3-bfc3-5c8d7240084c
   Args:
+    source: Prince_George_Duke_of_Kent
     relation: :hasFather
-    source: PrinceGeorge
-    target: GeorgeV
-  AddTriple (890dd485-e6ce-4c20-ac06-fa6d9323c750)
- Call ID: 890dd485-e6ce-4c20-ac06-fa6d9323c750
+    target: George_V
+  AddTriple (430650c3-07e9-4946-8d1a-234544330b1a)
+ Call ID: 430650c3-07e9-4946-8d1a-234544330b1a
   Args:
-    source: PrinceGeorge
-    target: QueenMary
     relation: :hasMother
-  AddTriple (144df6c7-48c3-4d85-a06d-e2a1875dbf4f)
- Call ID: 144df6c7-48c3-4d85-a06d-e2a1875dbf4f
+    target: Queen_Mary
+    source: Prince_George_Duke_of_Kent
+  AddTriple (8717c285-7b1c-4425-9b6e-d1f78b0a2464)
+ Call ID: 8717c285-7b1c-4425-9b6e-d1f78b0a2464
   Args:
-    source: PrinceGeorge
-    target: EdwardVIII
+    source: Prince_George_Duke_of_Kent
     relation: :isBrotherOf
-  AddTriple (2cf1c540-ad30-4b07-8d1e-1b2eae75cd85)
- Call ID: 2cf1c540-ad30-4b07-8d1e-1b2eae75cd85
+    target: Edward_VIII
+  AddTriple (a9ba4ff2-55ef-4df9-980e-38292fa9f74a)
+ Call ID: a9ba4ff2-55ef-4df9-980e-38292fa9f74a
   Args:
+    target: George_VI
     relation: :isBrotherOf
-    source: PrinceGeorge
-    target: GeorgeVI
-  AddTriple (916dc8b7-45dc-4915-af79-181764d0a448)
- Call ID: 916dc8b7-45dc-4915-af79-181764d0a448
+    source: Prince_George_Duke_of_Kent
+  AddTriple (73cfc1f2-374c-4ecc-ba19-23d8dd2e0e34)
+ Call ID: 73cfc1f2-374c-4ecc-ba19-23d8dd2e0e34
   Args:
-    relation: :isFatherOf
-    source: PrinceGeorge
-    target: EdwardKent
-  AddTriple (f7b00624-4e5c-4b77-8f55-799d8da5e2a3)
- Call ID: f7b00624-4e5c-4b77-8f55-799d8da5e2a3
+    target: Edward_Duke_of_Kent
+    relation: :hasChild
+    source: Prince_George_Duke_of_Kent
+  AddTriple (60571160-00ae-4d1f-8891-a0f6edfc5084)
+ Call ID: 60571160-00ae-4d1f-8891-a0f6edfc5084
   Args:
-    relation: :isFatherOf
-    source: PrinceGeorge
-    target: AlexandraKent
-  AddTriple (0a625874-764e-4383-b3c6-c1b343a23e04)
- Call ID: 0a625874-764e-4383-b3c6-c1b343a23e04
+    source: Prince_George_Duke_of_Kent
+    target: Alexandra
+    relation: :hasChild
+  AddTriple (b9cb531f-37fa-4b81-aa07-5079a8e074ce)
+ Call ID: b9cb531f-37fa-4b81-aa07-5079a8e074ce
   Args:
-    relation: :isFatherOf
-    source: PrinceGeorge
-    target: MichaelKent
-  AddTriple (73a4be78-f0d3-4c17-aa2a-1f9044949f1e)
- Call ID: 73a4be78-f0d3-4c17-aa2a-1f9044949f1e
+    relation: :hasChild
+    target: Michael
+    source: Prince_George_Duke_of_Kent
+  AddTriple (50eb1b36-bdf3-456b-8632-61506505f814)
+ Call ID: 50eb1b36-bdf3-456b-8632-61506505f814
   Args:
-    source: PrincessMarina
-    target: EdwardKent
-    relation: :isMotherOf
-  AddTriple (31c53ebf-fef0-4c92-9853-d445f07ecbaf)
- Call ID: 31c53ebf-fef0-4c92-9853-d445f07ecbaf
+    target: Edward_Duke_of_Kent
+    relation: :hasChild
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (3d211f7a-8828-41ad-ae31-4641b04fc001)
+ Call ID: 3d211f7a-8828-41ad-ae31-4641b04fc001
   Args:
-    source: PrincessMarina
-    target: AlexandraKent
-    relation: :isMotherOf
-  AddTriple (6bf9e1c2-084f-423f-8c12-34a0d0b99772)
- Call ID: 6bf9e1c2-084f-423f-8c12-34a0d0b99772
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Alexandra
+    relation: :hasChild
+  AddTriple (87e1e520-d084-47d4-842b-13e0f71c3c6a)
+ Call ID: 87e1e520-d084-47d4-842b-13e0f71c3c6a
   Args:
-    source: PrincessMarina
-    target: MichaelKent
-    relation: :isMotherOf
-  AddLiteral (8e309ca2-9dd0-42c3-8933-b91792bd361b)
- Call ID: 8e309ca2-9dd0-42c3-8933-b91792bd361b
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Michael
+    relation: :hasChild
+  AddLiteral (a47e8e43-693f-4c2e-885f-5da954dc9c07)
+ Call ID: a47e8e43-693f-4c2e-885f-5da954dc9c07
   Args:
-    literal_type: xsd:integer
     literal_value: 1934
+    source: Prince_George_Duke_of_Kent
+    literal_type: xsd:positiveInteger
     relation: :hasMarriageYear
-    source: PrinceGeorge
-  AddTriple (80c82be3-38c3-4efd-9c8d-91bdbc573f7c)
- Call ID: 80c82be3-38c3-4efd-9c8d-91bdbc573f7c
+  Finish (1c18c189-9124-4080-894d-164a24c5122d)
+ Call ID: 1c18c189-9124-4080-894d-164a24c5122d
   Args:
-    relation: :hasRelation
-    source: PrinceGeorge
-    target: PrincessMarina
-  Finish (2a9cba0e-c758-479d-ab8d-a428ba5ab06d)
- Call ID: 2a9cba0e-c758-479d-ab8d-a428ba5ab06d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -668,37 +747,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceGeorge a :Man ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:GeorgeV ;
-      :hasMarriageYear 1934 ;
-      :hasMother data:QueenMary ;
-      :hasRelation data:PrincessMarina ;
-      :isBrotherOf data:EdwardVIII,
-          data:GeorgeVI ;
-      :isFatherOf data:AlexandraKent,
-          data:EdwardKent,
-          data:MichaelKent .
+  data:Prince_George_Duke_of_Kent a :Man ;
+      :hasBirthYear "1902"^^xsd:positiveInteger ;
+      :hasChild data:Alexandra,
+          data:Edward_Duke_of_Kent,
+          data:Michael ;
+      :hasDeathYear "1942"^^xsd:positiveInteger ;
+      :hasFather data:George_V ;
+      :hasMarriageYear "1934"^^xsd:positiveInteger ;
+      :hasMother data:Queen_Mary ;
+      :isBrotherOf data:Edward_VIII,
+          data:George_VI .
 
-  data:EdwardVIII a :Man .
+  data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+      :hasChild data:Alexandra,
+          data:Edward_Duke_of_Kent,
+          data:Michael .
 
-  data:GeorgeV a :Man .
+  data:Edward_VIII a :Man .
 
-  data:GeorgeVI a :Man .
+  data:George_V a :Man .
 
-  data:PrincessMarina a :Woman ;
-      :isMotherOf data:AlexandraKent,
-          data:EdwardKent,
-          data:MichaelKent .
+  data:George_VI a :Man .
 
-  data:QueenMary a :Woman .
+  data:Queen_Mary a :Woman .
 
-  data:AlexandraKent a :Woman .
+  data:Alexandra a :Woman .
 
-  data:EdwardKent a :Man .
+  data:Edward_Duke_of_Kent a :Man .
 
-  data:MichaelKent a :Man .
+  data:Michael a :Man .
 
 
 
@@ -710,78 +788,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (069632e7-c72b-48a5-868d-83f7c8727fed)
- Call ID: 069632e7-c72b-48a5-868d-83f7c8727fed
+  ValidateShacl (b806ff64-f6e5-4a4f-b5af-cffa28f8257e)
+ Call ID: b806ff64-f6e5-4a4f-b5af-cffa28f8257e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.
+      The node George_V is assigned as the father of Prince_George_Duke_of_Kent, but it is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GeorgeV', class=':Ancestor')
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.
+      The node Queen_Mary is assigned as the mother of Prince_George_Duke_of_Kent, but it is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='QueenMary', class=':Ancestor')
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.
+      The node George_V is missing the required class :Ancestor, which is necessary for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GeorgeV', class=':Ancestor')
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.
+      The node Queen_Mary is missing the required class :Ancestor, which is necessary for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='QueenMary', class=':Ancestor')
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node PrincessMarina is assigned the class :Woman but lacks the required :Ancestor class.
+      The node George_V does not satisfy the class requirement for the hasFather property because it lacks the :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessMarina', class=':Ancestor')
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GeorgeV', class=':Ancestor')
-
-
-  Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.
+      The node Queen_Mary does not satisfy the class requirement for the hasMother property because it lacks the :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='QueenMary', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node PrinceGeorge is assigned the class :Man but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrinceGeorge', class=':Ancestor')
+      AssignClass(Queen_Mary, :Ancestor)
 
 
 
@@ -790,37 +852,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (85d6a365-bea6-4cd8-9bb9-78c12eec431f)
- Call ID: 85d6a365-bea6-4cd8-9bb9-78c12eec431f
+  AssignClass (896447ec-9d39-4eee-8a45-5521f8763080)
+ Call ID: 896447ec-9d39-4eee-8a45-5521f8763080
   Args:
+    source: George_V
     type: :Ancestor
-    source: GeorgeV
-  AssignClass (4d681a8f-a0ed-431b-82e6-a37d12d8f792)
- Call ID: 4d681a8f-a0ed-431b-82e6-a37d12d8f792
+  AssignClass (0d7fd410-7bd5-4c9d-85b3-480136e0ea99)
+ Call ID: 0d7fd410-7bd5-4c9d-85b3-480136e0ea99
   Args:
+    source: Queen_Mary
     type: :Ancestor
-    source: QueenMary
-  AssignClass (795dd177-b85f-4099-8e52-7e131ffd4f27)
- Call ID: 795dd177-b85f-4099-8e52-7e131ffd4f27
-  Args:
-    type: :Ancestor
-    source: PrincessMarina
-  AssignClass (9f2570e1-1ded-4408-91d0-325ee52799e9)
- Call ID: 9f2570e1-1ded-4408-91d0-325ee52799e9
-  Args:
-    type: :Ancestor
-    source: PrinceGeorge
-  ValidateShacl (2b084f5b-2cbb-4034-9d7d-ebc68dd0b39e)
- Call ID: 2b084f5b-2cbb-4034-9d7d-ebc68dd0b39e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -833,43 +874,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceGeorge a :Ancestor,
-          :Man ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:GeorgeV ;
-      :hasMarriageYear 1934 ;
-      :hasMother data:QueenMary ;
-      :hasRelation data:PrincessMarina ;
-      :isBrotherOf data:EdwardVIII,
-          data:GeorgeVI ;
-      :isFatherOf data:AlexandraKent,
-          data:EdwardKent,
-          data:MichaelKent .
+  data:Prince_George_Duke_of_Kent a :Man ;
+      :hasBirthYear "1902"^^xsd:positiveInteger ;
+      :hasChild data:Alexandra,
+          data:Edward_Duke_of_Kent,
+          data:Michael ;
+      :hasDeathYear "1942"^^xsd:positiveInteger ;
+      :hasFather data:George_V ;
+      :hasMarriageYear "1934"^^xsd:positiveInteger ;
+      :hasMother data:Queen_Mary ;
+      :isBrotherOf data:Edward_VIII,
+          data:George_VI .
 
-  data:EdwardVIII a :Man .
+  data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+      :hasChild data:Alexandra,
+          data:Edward_Duke_of_Kent,
+          data:Michael .
 
-  data:GeorgeV a :Ancestor,
+  data:Edward_VIII a :Man .
+
+  data:George_V a :Ancestor,
           :Man .
 
-  data:GeorgeVI a :Man .
+  data:George_VI a :Man .
 
-  data:PrincessMarina a :Ancestor,
-          :Woman ;
-      :isMotherOf data:AlexandraKent,
-          data:EdwardKent,
-          data:MichaelKent .
-
-  data:QueenMary a :Ancestor,
+  data:Queen_Mary a :Ancestor,
           :Woman .
 
-  data:AlexandraKent a :Woman .
+  data:Alexandra a :Woman .
 
-  data:EdwardKent a :Man .
+  data:Edward_Duke_of_Kent a :Man .
 
-  data:MichaelKent a :Man .
+  data:Michael a :Man .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (454baa5a-bac3-4d0a-a483-b701ded97583)
+ Call ID: 454baa5a-bac3-4d0a-a483-b701ded97583
+  Args:
 
 ================================= Tool Message =================================
 
@@ -879,6 +925,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (cd265b76-e9c7-4e8c-be88-2632bf7010fb)
- Call ID: cd265b76-e9c7-4e8c-be88-2632bf7010fb
+  Finish (cd708b64-8a09-476b-ae13-c0b19d8ee018)
+ Call ID: cd708b64-8a09-476b-ae13-c0b19d8ee018
   Args:

@@ -69,39 +69,37 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Regina von Habsburg (née Princess Regina Helene Elisabeth Margarete of Saxe-Meiningen; 6 January 1925 – 3 February 2010), also known by the traditional royal title of Archduchess Regina of Austria, was a German-born Austrian social worker.
-She was a member of the House of Wettin by birth and married to Otto von Habsburg, the last heir of the Austro-Hungarian Empire.
-Early years
+Lord Frederick Michael George David Louis Windsor (born 6 April 1979) is a member of the British royal family.
+He is the only son of Prince and Princess Michael of Kent, and is 54th in the line of succession to the British throne.
+He is married to British actress Sophie Winkleman and is a financial analyst by profession.
+Early life and education
 
-Regina was born in Würzburg.
-Although the Saxe-Meiningen dynasty was Protestant, Regina was raised in the Roman Catholic faith of her mother.
-Regina studied social work at Bamberg and then worked in Munich at a Caritas home for Hungarian refugees.
-In 1949, she met Otto von Habsburg, the heir of the House of Habsburg-Lorraine and the last crown prince of the dissolved Austria-Hungary, when he came to visit his former subjects in the Caritas home.
-Regina and Otto were engaged in 1950.
-Marriage
+Frederick Michael George David Louis Windsor was born on 6 April 1979 at St Mary's Hospital, London, and was christened on 11 July at the Chapel Royal, St James's Palace, Westminster.
+A first cousin once removed of Queen Elizabeth II and a first cousin twice removed of Prince Philip, Duke of Edinburgh, he is therefore both a second cousin and a second cousin once removed of King Charles III and his siblings.
+Frederick and his sister, Lady Gabriella, were brought up in the Church of England.
+Career
 
-As Otto was prohibited from entering Austria until 1966, his and Regina's wedding had to be celebrated elsewhere.
-Unusually among the heirs to deposed monarchies, Otto did not use royal titles or pursue his claim.
-Instead, he had a political career in the European Parliament, the success of which he attributed to Regina's support.
-From 10 May 1954 until her death Regina and Otto lived at Villa Austria, also called the Kaiservilla, in Pöcking near Lake Starnberg.
-In her dynastic role as wife of the head of the House of Habsburg-Lorraine, Regina acted as protectress of the all-female Roman Catholic Order of the Starry Cross, grand mistress of the similar Order of Saint Elizabeth, and an honorary lady grand cross of the Sovereign Order of Malta.
-In April 1985 she represented her husband Otto at the reburial of the remains of Albert II, Duke of Austria in the Gaming Charterhouse.
-Later life
+After graduating, Frederick worked as a fashion model, appearing in a campaign for Burberry and for the designer Tomasz Starzewski, and also as a music journalist, notably for Tatler magazine.
+Personal life
 
-On 2 December 2005 Regina had a stroke and was taken to a hospital in Nancy.
-Regina died in Pöcking on 3 February 2010, aged 85, and was entombed at Veste Heldburg on 10 February.
-Children
+On St Valentine's Day, 14 February 2009, Frederick became engaged to the actress Sophie Winkleman.
+She was baptised at St James's Palace in December 2013 and has Princess Eugenie among her godparents.
+Maud served as a bridesmaid at the wedding of Princess Eugenie and Jack Brooksbank in 2018.
+On 20 January 2016, it was announced Frederick and Sophie had become parents to a second daughter, Isabella Alexandra May, who was born on 16 January 2016 at Chelsea and Westminster Hospital in London.
+From September 2016 until its closure in 2023, Frederick was president of the charity Soldier On!, which supported vulnerable, disadvantaged, or socially isolated people through archaeology and heritage projects as well as personal development workshops.
+On 21 February 2017, Frederick was inducted into the Grand Order of Water Rats charitable fraternity.
+Titles and styles
 
-Regina and Otto had two sons and five daughters: 
-
-
-References
+Under letters patent issued in 1917 and still in force today, Frederick's father is entitled to the dignity of prince and the style His Royal Highness as the son of a son of George V. Although these letters do not bestow these royal dignities beyond grandchildren of monarchs (except in the case of the children of the Prince of Wales, as modified by Elizabeth II), they allow the children of sons of sons of a British monarch to be styled as the children of a duke, with the honorific courtesy style of Lord or Lady before their given names.
+Since Lord Frederick is not a peer in his own right, his style is not hereditary and his children are not entitled to any distinctions, including the prefix The Honourable.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +115,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +132,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,53 +440,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (56063d10-1d13-4818-b787-cc1394d3dabc)
- Call ID: 56063d10-1d13-4818-b787-cc1394d3dabc
+  AssignClass (5b0a8230-78dc-4424-a843-b9e83ab33ccb)
+ Call ID: 5b0a8230-78dc-4424-a843-b9e83ab33ccb
   Args:
-    source: Regina_von_Habsburg
-    type: :Woman
-  AssignClass (995c2952-c11e-43d3-863f-760535ded30a)
- Call ID: 995c2952-c11e-43d3-863f-760535ded30a
-  Args:
-    type: :Person
-    source: Regina_von_Habsburg
-  AddLiteral (e91fae30-9d92-49fb-9ba4-f8991f35d675)
- Call ID: e91fae30-9d92-49fb-9ba4-f8991f35d675
-  Args:
-    source: Regina_von_Habsburg
-    literal_type: xsd:integer
-    literal_value: 1925
-    relation: :hasBirthYear
-  AddLiteral (cb2172ad-c961-4b3c-94aa-835d06c3bf0a)
- Call ID: cb2172ad-c961-4b3c-94aa-835d06c3bf0a
-  Args:
-    relation: :hasDeathYear
-    literal_value: 2010
-    source: Regina_von_Habsburg
-    literal_type: xsd:integer
-  AddLiteral (24e6c43c-6068-4339-8fc3-4a8f2b4ed668)
- Call ID: 24e6c43c-6068-4339-8fc3-4a8f2b4ed668
-  Args:
-    literal_type: xsd:string
-    source: Regina_von_Habsburg
-    literal_value: Archduchess Regina of Austria
-    relation: :alsoKnownAs
-  AssignClass (3f147d8e-c423-44bc-b3aa-a0f02efb72b4)
- Call ID: 3f147d8e-c423-44bc-b3aa-a0f02efb72b4
-  Args:
-    source: Otto_von_Habsburg
+    source: :FrederickWindsor
     type: :Man
-  AssignClass (ce680e47-7bc5-412c-9ee1-5e312c1297de)
- Call ID: ce680e47-7bc5-412c-9ee1-5e312c1297de
+  AssignClass (8ff2b35a-4324-481d-a632-8bcb4ec5f671)
+ Call ID: 8ff2b35a-4324-481d-a632-8bcb4ec5f671
   Args:
-    source: Otto_von_Habsburg
+    source: :FrederickWindsor
     type: :Person
-  AddTriple (dbce22aa-f5a9-420e-85df-0da53581dbb4)
- Call ID: dbce22aa-f5a9-420e-85df-0da53581dbb4
+  AddLiteral (a88c9a37-493e-4856-8ddf-905983ded583)
+ Call ID: a88c9a37-493e-4856-8ddf-905983ded583
   Args:
+    literal_value: 1979
+    source: :FrederickWindsor
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AssignClass (8d57a752-8aec-420d-9638-783c210a49e4)
+ Call ID: 8d57a752-8aec-420d-9638-783c210a49e4
+  Args:
+    source: :PrinceMichaelOfKent
+    type: :Man
+  AssignClass (088207de-502e-4202-9761-16cec4ec17e4)
+ Call ID: 088207de-502e-4202-9761-16cec4ec17e4
+  Args:
+    source: :PrinceMichaelOfKent
+    type: :Person
+  AssignClass (1d944600-9835-4aac-8bd8-6ece23ce9da8)
+ Call ID: 1d944600-9835-4aac-8bd8-6ece23ce9da8
+  Args:
+    source: :PrincessMichaelOfKent
+    type: :Woman
+  AssignClass (d2a4fc93-a431-4157-961c-7bd940912972)
+ Call ID: d2a4fc93-a431-4157-961c-7bd940912972
+  Args:
+    source: :PrincessMichaelOfKent
+    type: :Person
+  AddTriple (e39d6faf-f963-461c-aadb-977abafad34e)
+ Call ID: e39d6faf-f963-461c-aadb-977abafad34e
+  Args:
+    source: :FrederickWindsor
+    relation: :hasFather
+    target: :PrinceMichaelOfKent
+  AddTriple (3d7d72f2-7240-400d-8cae-7eaafd8f0b00)
+ Call ID: 3d7d72f2-7240-400d-8cae-7eaafd8f0b00
+  Args:
+    target: :PrincessMichaelOfKent
+    source: :FrederickWindsor
+    relation: :hasMother
+  AssignClass (ace27e58-3ecd-4498-90b6-7fdd52e5839e)
+ Call ID: ace27e58-3ecd-4498-90b6-7fdd52e5839e
+  Args:
+    source: :SophieWinkleman
+    type: :Woman
+  AssignClass (3106eaa4-a5cb-4715-909b-bc8ed4055977)
+ Call ID: 3106eaa4-a5cb-4715-909b-bc8ed4055977
+  Args:
+    source: :SophieWinkleman
+    type: :Person
+  AddTriple (273e69bd-0157-41b6-9a40-5750c75a5061)
+ Call ID: 273e69bd-0157-41b6-9a40-5750c75a5061
+  Args:
+    source: :FrederickWindsor
     relation: :hasRelation
-    target: Otto_von_Habsburg
-    source: Regina_von_Habsburg
-  Finish (9a8a5035-e08a-44e8-bd21-504441c2f8a1)
- Call ID: 9a8a5035-e08a-44e8-bd21-504441c2f8a1
+    target: :SophieWinkleman
+  AssignClass (e9ad5923-3da0-4a6c-b15f-90a93909c029)
+ Call ID: e9ad5923-3da0-4a6c-b15f-90a93909c029
+  Args:
+    source: :LadyGabriella
+    type: :Woman
+  AssignClass (94b9bb0f-0648-4c0a-aa8a-e4807f599fcf)
+ Call ID: 94b9bb0f-0648-4c0a-aa8a-e4807f599fcf
+  Args:
+    source: :LadyGabriella
+    type: :Person
+  AddTriple (9cbb297a-e315-4467-bcd2-831eaf64c98d)
+ Call ID: 9cbb297a-e315-4467-bcd2-831eaf64c98d
+  Args:
+    target: :LadyGabriella
+    relation: :isSiblingOf
+    source: :FrederickWindsor
+  AssignClass (06c7c73a-3542-46ae-a7ed-9c65cee31879)
+ Call ID: 06c7c73a-3542-46ae-a7ed-9c65cee31879
+  Args:
+    source: :IsabellaAlexandraMay
+    type: :Woman
+  AssignClass (28c5db0b-cdc7-4298-b1fd-fe324c51089e)
+ Call ID: 28c5db0b-cdc7-4298-b1fd-fe324c51089e
+  Args:
+    source: :IsabellaAlexandraMay
+    type: :Person
+  AddTriple (409de141-804f-47d0-8327-d007d6657d01)
+ Call ID: 409de141-804f-47d0-8327-d007d6657d01
+  Args:
+    source: :IsabellaAlexandraMay
+    relation: :isChildOf
+    target: :FrederickWindsor
+  AddTriple (af2a750f-1dd4-4412-9307-1d2c6157c580)
+ Call ID: af2a750f-1dd4-4412-9307-1d2c6157c580
+  Args:
+    source: :IsabellaAlexandraMay
+    relation: :isChildOf
+    target: :SophieWinkleman
+  Finish (77dc6cf6-e53b-449f-a859-b73edc1c097a)
+ Call ID: 77dc6cf6-e53b-449f-a859-b73edc1c097a
   Args:

@@ -1,0 +1,793 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia_1 a :Man,
+        :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    data:posIndicesFull "4902:4942"^^xsd:string,
+        "5322:5362"^^xsd:string,
+        "582:622"^^xsd:string ;
+    data:posIndicesPart "10068:10073"^^xsd:string,
+        "10087:10093"^^xsd:string,
+        "1027:1033"^^xsd:string,
+        "10324:10329"^^xsd:string,
+        "10330:10334"^^xsd:string,
+        "10448:10453"^^xsd:string,
+        "10454:10458"^^xsd:string,
+        "10459:10465"^^xsd:string,
+        "10466:10478"^^xsd:string,
+        "10521:10526"^^xsd:string,
+        "10527:10531"^^xsd:string,
+        "10532:10538"^^xsd:string,
+        "10635:10640"^^xsd:string,
+        "10691:10697"^^xsd:string,
+        "10786:10791"^^xsd:string,
+        "10965:10971"^^xsd:string,
+        "11054:11059"^^xsd:string,
+        "11327:11332"^^xsd:string,
+        "1144:1150"^^xsd:string,
+        "11478:11484"^^xsd:string,
+        "11558:11563"^^xsd:string,
+        "11699:11704"^^xsd:string,
+        "1179:1185"^^xsd:string,
+        "11905:11910"^^xsd:string,
+        "12059:12064"^^xsd:string,
+        "12178:12183"^^xsd:string,
+        "12360:12365"^^xsd:string,
+        "12425:12430"^^xsd:string,
+        "12431:12435"^^xsd:string,
+        "12436:12442"^^xsd:string,
+        "12443:12455"^^xsd:string,
+        "12715:12720"^^xsd:string,
+        "12721:12725"^^xsd:string,
+        "12866:12871"^^xsd:string,
+        "12872:12876"^^xsd:string,
+        "12886:12898"^^xsd:string,
+        "12926:12931"^^xsd:string,
+        "12932:12936"^^xsd:string,
+        "12988:12993"^^xsd:string,
+        "12994:12998"^^xsd:string,
+        "14603:14609"^^xsd:string,
+        "14834:14839"^^xsd:string,
+        "14840:14844"^^xsd:string,
+        "14845:14851"^^xsd:string,
+        "14852:14864"^^xsd:string,
+        "16994:16999"^^xsd:string,
+        "17351:17356"^^xsd:string,
+        "17389:17395"^^xsd:string,
+        "17525:17530"^^xsd:string,
+        "17592:17597"^^xsd:string,
+        "17626:17632"^^xsd:string,
+        "1990:1995"^^xsd:string,
+        "2207:2213"^^xsd:string,
+        "2355:2361"^^xsd:string,
+        "2436:2442"^^xsd:string,
+        "2545:2551"^^xsd:string,
+        "3223:3229"^^xsd:string,
+        "3535:3540"^^xsd:string,
+        "3558:3564"^^xsd:string,
+        "3801:3807"^^xsd:string,
+        "3829:3835"^^xsd:string,
+        "4522:4528"^^xsd:string,
+        "4690:4695"^^xsd:string,
+        "5004:5010"^^xsd:string,
+        "5209:5214"^^xsd:string,
+        "5215:5219"^^xsd:string,
+        "5220:5226"^^xsd:string,
+        "5227:5239"^^xsd:string,
+        "5512:5517"^^xsd:string,
+        "5518:5522"^^xsd:string,
+        "5566:5572"^^xsd:string,
+        "5573:5585"^^xsd:string,
+        "5899:5904"^^xsd:string,
+        "5916:5922"^^xsd:string,
+        "6046:6052"^^xsd:string,
+        "6110:6116"^^xsd:string,
+        "6120:6125"^^xsd:string,
+        "6154:6160"^^xsd:string,
+        "6261:6266"^^xsd:string,
+        "6325:6331"^^xsd:string,
+        "6354:6360"^^xsd:string,
+        "6499:6504"^^xsd:string,
+        "6671:6676"^^xsd:string,
+        "6677:6681"^^xsd:string,
+        "6743:6748"^^xsd:string,
+        "6749:6753"^^xsd:string,
+        "6799:6804"^^xsd:string,
+        "6805:6809"^^xsd:string,
+        "6819:6831"^^xsd:string,
+        "6837:6842"^^xsd:string,
+        "6843:6847"^^xsd:string,
+        "687:692"^^xsd:string,
+        "6920:6925"^^xsd:string,
+        "6926:6930"^^xsd:string,
+        "6931:6937"^^xsd:string,
+        "6938:6950"^^xsd:string,
+        "693:697"^^xsd:string,
+        "698:704"^^xsd:string,
+        "705:717"^^xsd:string,
+        "7243:7248"^^xsd:string,
+        "7279:7284"^^xsd:string,
+        "7543:7548"^^xsd:string,
+        "7692:7698"^^xsd:string,
+        "7712:7717"^^xsd:string,
+        "7948:7953"^^xsd:string,
+        "7954:7958"^^xsd:string,
+        "7959:7965"^^xsd:string,
+        "8234:8239"^^xsd:string,
+        "8240:8244"^^xsd:string,
+        "8388:8393"^^xsd:string,
+        "8661:8666"^^xsd:string,
+        "868:873"^^xsd:string,
+        "8741:8746"^^xsd:string,
+        "8747:8751"^^xsd:string,
+        "8752:8758"^^xsd:string,
+        "8935:8940"^^xsd:string,
+        "902:908"^^xsd:string,
+        "9056:9061"^^xsd:string,
+        "9062:9066"^^xsd:string,
+        "9228:9233"^^xsd:string,
+        "9483:9488"^^xsd:string,
+        "9790:9795"^^xsd:string,
+        "9838:9843"^^xsd:string,
+        "9844:9848"^^xsd:string,
+        "9849:9855"^^xsd:string,
+        "9898:9903"^^xsd:string,
+        "9957:9963"^^xsd:string ;
+    data:wdtLink wdt:Q524451 ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:36"^^xsd:string,
+        "1820:1856"^^xsd:string ;
+    data:posIndicesPart "10413:10421"^^xsd:string,
+        "11229:11237"^^xsd:string,
+        "11241:11247"^^xsd:string,
+        "11754:11762"^^xsd:string,
+        "13060:13068"^^xsd:string,
+        "13078:13084"^^xsd:string,
+        "13201:13207"^^xsd:string,
+        "13355:13361"^^xsd:string,
+        "1345:1353"^^xsd:string,
+        "13560:13566"^^xsd:string,
+        "13754:13760"^^xsd:string,
+        "13762:13770"^^xsd:string,
+        "13853:13861"^^xsd:string,
+        "14090:14098"^^xsd:string,
+        "1422:1428"^^xsd:string,
+        "14284:14292"^^xsd:string,
+        "14421:14429"^^xsd:string,
+        "14474:14480"^^xsd:string,
+        "14611:14619"^^xsd:string,
+        "1461:1469"^^xsd:string,
+        "14724:14732"^^xsd:string,
+        "15034:15042"^^xsd:string,
+        "15104:15112"^^xsd:string,
+        "15311:15317"^^xsd:string,
+        "15359:15367"^^xsd:string,
+        "15509:15517"^^xsd:string,
+        "15662:15670"^^xsd:string,
+        "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string,
+        "15864:15872"^^xsd:string,
+        "15944:15952"^^xsd:string,
+        "16197:16205"^^xsd:string,
+        "16337:16345"^^xsd:string,
+        "16564:16572"^^xsd:string,
+        "16622:16630"^^xsd:string,
+        "16760:16768"^^xsd:string,
+        "1701:1707"^^xsd:string,
+        "2076:2084"^^xsd:string,
+        "3267:3275"^^xsd:string,
+        "3300:3307"^^xsd:string,
+        "3569:3577"^^xsd:string,
+        "3612:3620"^^xsd:string,
+        "3624:3630"^^xsd:string,
+        "3690:3696"^^xsd:string,
+        "3769:3775"^^xsd:string,
+        "383:391"^^xsd:string,
+        "3937:3945"^^xsd:string,
+        "395:401"^^xsd:string,
+        "4018:4026"^^xsd:string,
+        "406:413"^^xsd:string,
+        "4224:4232"^^xsd:string,
+        "4274:4280"^^xsd:string,
+        "4401:4409"^^xsd:string,
+        "4485:4493"^^xsd:string,
+        "4503:4509"^^xsd:string,
+        "4651:4659"^^xsd:string,
+        "4846:4854"^^xsd:string,
+        "506:512"^^xsd:string,
+        "5420:5428"^^xsd:string,
+        "5597:5603"^^xsd:string,
+        "5673:5681"^^xsd:string,
+        "5823:5829"^^xsd:string,
+        "6075:6083"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6364:6370"^^xsd:string,
+        "7341:7349"^^xsd:string,
+        "7487:7495"^^xsd:string,
+        "7776:7783"^^xsd:string,
+        "7834:7840"^^xsd:string,
+        "825:833"^^xsd:string,
+        "9316:9324"^^xsd:string,
+        "9621:9627"^^xsd:string,
+        "990:996"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:male a :Male .
+
+data:Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul Chavchavadze"^^xsd:string ;
+    data:posIndicesFull "15168:15185"^^xsd:string ;
+    data:wdtLink wdt:Q16028068 ;
+    :alsoKnownAs "Paule Chavchavadze"^^xsd:string,
+        "Pavel Aleksandrovich Tchavchavadze, Prince Tchavchavadze"^^xsd:string ;
+    :hasBrother data:Paul_Chavchavadze ;
+    :hasChild data:David_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Paul_Chavchavadze ;
+    :isBrotherOf data:Paul_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Paul_Chavchavadze ;
+    :isUncleOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Man,
+        :Person ;
+    rdfs:label "David Chavchavadze"^^xsd:string ;
+    data:posIndicesFull "16310:16335"^^xsd:string,
+        "16317:16335"^^xsd:string ;
+    data:wdtLink wdt:Q2621015 ;
+    :alsoKnownAs "David Tchavchavadze, Prince Tchavchavadze"^^xsd:string,
+        "Prince David Chavchavadze"^^xsd:string ;
+    :hasAncestor data:Paul_Chavchavadze ;
+    :hasBrother data:David_Chavchavadze ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasParent data:Paul_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:David_Chavchavadze ;
+    :isBrotherOf data:David_Chavchavadze ;
+    :isChildOf data:Paul_Chavchavadze ;
+    :isSiblingOf data:David_Chavchavadze ;
+    :isSonOf data:Paul_Chavchavadze .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "150:173"^^xsd:string,
+        "155:163"^^xsd:string,
+        "155:173"^^xsd:string,
+        "1962:1985"^^xsd:string,
+        "1967:1975"^^xsd:string,
+        "1967:1985"^^xsd:string,
+        "3637:3645"^^xsd:string,
+        "9566:9574"^^xsd:string ;
+    data:posIndicesPart "10459:10465"^^xsd:string,
+        "10532:10538"^^xsd:string,
+        "11241:11247"^^xsd:string,
+        "11478:11484"^^xsd:string,
+        "12436:12442"^^xsd:string,
+        "13078:13084"^^xsd:string,
+        "13201:13207"^^xsd:string,
+        "13355:13361"^^xsd:string,
+        "13560:13566"^^xsd:string,
+        "13754:13760"^^xsd:string,
+        "1422:1428"^^xsd:string,
+        "14474:14480"^^xsd:string,
+        "14603:14609"^^xsd:string,
+        "14845:14851"^^xsd:string,
+        "15311:15317"^^xsd:string,
+        "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string,
+        "1701:1707"^^xsd:string,
+        "2355:2361"^^xsd:string,
+        "2436:2442"^^xsd:string,
+        "2545:2551"^^xsd:string,
+        "341:347"^^xsd:string,
+        "3769:3775"^^xsd:string,
+        "3801:3807"^^xsd:string,
+        "3829:3835"^^xsd:string,
+        "395:401"^^xsd:string,
+        "4274:4280"^^xsd:string,
+        "4503:4509"^^xsd:string,
+        "506:512"^^xsd:string,
+        "5220:5226"^^xsd:string,
+        "5566:5572"^^xsd:string,
+        "5597:5603"^^xsd:string,
+        "5823:5829"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6354:6360"^^xsd:string,
+        "6364:6370"^^xsd:string,
+        "6931:6937"^^xsd:string,
+        "698:704"^^xsd:string,
+        "7834:7840"^^xsd:string,
+        "7959:7965"^^xsd:string,
+        "8752:8758"^^xsd:string,
+        "9849:9855"^^xsd:string,
+        "990:996"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "2004:2033"^^xsd:string,
+        "203:232"^^xsd:string,
+        "6224:6244"^^xsd:string,
+        "6230:6244"^^xsd:string ;
+    data:posIndicesPart "10087:10093"^^xsd:string,
+        "1027:1033"^^xsd:string,
+        "10691:10697"^^xsd:string,
+        "10965:10971"^^xsd:string,
+        "1144:1150"^^xsd:string,
+        "1179:1185"^^xsd:string,
+        "17389:17395"^^xsd:string,
+        "17626:17632"^^xsd:string,
+        "2207:2213"^^xsd:string,
+        "2287:2291"^^xsd:string,
+        "2453:2457"^^xsd:string,
+        "3223:3229"^^xsd:string,
+        "325:331"^^xsd:string,
+        "3558:3564"^^xsd:string,
+        "3898:3902"^^xsd:string,
+        "4170:4174"^^xsd:string,
+        "4522:4528"^^xsd:string,
+        "4734:4740"^^xsd:string,
+        "5004:5010"^^xsd:string,
+        "5130:5134"^^xsd:string,
+        "5770:5774"^^xsd:string,
+        "5916:5922"^^xsd:string,
+        "6046:6052"^^xsd:string,
+        "6110:6116"^^xsd:string,
+        "6154:6160"^^xsd:string,
+        "7692:7698"^^xsd:string,
+        "902:908"^^xsd:string,
+        "9957:9963"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George II of Greece"^^xsd:string ;
+    data:posIndicesFull "15407:15431"^^xsd:string,
+        "15412:15431"^^xsd:string ;
+    data:posIndicesPart "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Paul of Greece"^^xsd:string ;
+    data:posIndicesFull "1764:1783"^^xsd:string,
+        "1769:1783"^^xsd:string ;
+    data:posIndicesPart "11241:11247"^^xsd:string,
+        "12779:12783"^^xsd:string,
+        "12937:12941"^^xsd:string,
+        "13078:13084"^^xsd:string,
+        "13201:13207"^^xsd:string,
+        "13355:13361"^^xsd:string,
+        "13560:13566"^^xsd:string,
+        "13754:13760"^^xsd:string,
+        "14474:14480"^^xsd:string,
+        "15311:15317"^^xsd:string,
+        "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string,
+        "3624:3630"^^xsd:string,
+        "3690:3696"^^xsd:string,
+        "3769:3775"^^xsd:string,
+        "4274:4280"^^xsd:string,
+        "4503:4509"^^xsd:string,
+        "5597:5603"^^xsd:string,
+        "5823:5829"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6364:6370"^^xsd:string,
+        "7834:7840"^^xsd:string,
+        "9621:9627"^^xsd:string ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece"^^xsd:string,
+        "King Paul of Greece"^^xsd:string,
+        "King Pavlos I of Greece"^^xsd:string,
+        "Paul I of Greece"^^xsd:string,
+        "Pavlos I of Greece"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:36"^^xsd:string,
+        "1820:1856"^^xsd:string ;
+    data:posIndicesPart "10413:10421"^^xsd:string,
+        "10649:10654"^^xsd:string,
+        "10724:10729"^^xsd:string,
+        "11068:11073"^^xsd:string,
+        "11229:11237"^^xsd:string,
+        "11241:11247"^^xsd:string,
+        "11572:11577"^^xsd:string,
+        "11713:11718"^^xsd:string,
+        "11754:11762"^^xsd:string,
+        "11919:11924"^^xsd:string,
+        "12192:12197"^^xsd:string,
+        "12562:12567"^^xsd:string,
+        "12836:12841"^^xsd:string,
+        "13060:13068"^^xsd:string,
+        "13069:13074"^^xsd:string,
+        "13078:13084"^^xsd:string,
+        "13201:13207"^^xsd:string,
+        "13355:13361"^^xsd:string,
+        "1345:1353"^^xsd:string,
+        "1354:1359"^^xsd:string,
+        "13560:13566"^^xsd:string,
+        "13754:13760"^^xsd:string,
+        "13762:13770"^^xsd:string,
+        "13771:13776"^^xsd:string,
+        "13853:13861"^^xsd:string,
+        "13862:13867"^^xsd:string,
+        "14090:14098"^^xsd:string,
+        "14099:14104"^^xsd:string,
+        "1422:1428"^^xsd:string,
+        "14284:14292"^^xsd:string,
+        "14293:14298"^^xsd:string,
+        "14421:14429"^^xsd:string,
+        "14474:14480"^^xsd:string,
+        "14482:14487"^^xsd:string,
+        "14611:14619"^^xsd:string,
+        "1461:1469"^^xsd:string,
+        "14724:14732"^^xsd:string,
+        "14733:14738"^^xsd:string,
+        "15034:15042"^^xsd:string,
+        "15104:15112"^^xsd:string,
+        "15240:15245"^^xsd:string,
+        "15311:15317"^^xsd:string,
+        "15359:15367"^^xsd:string,
+        "15368:15373"^^xsd:string,
+        "15509:15517"^^xsd:string,
+        "15518:15523"^^xsd:string,
+        "15662:15670"^^xsd:string,
+        "15671:15676"^^xsd:string,
+        "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string,
+        "15864:15872"^^xsd:string,
+        "15944:15952"^^xsd:string,
+        "16197:16205"^^xsd:string,
+        "16206:16211"^^xsd:string,
+        "16337:16345"^^xsd:string,
+        "16346:16351"^^xsd:string,
+        "16564:16572"^^xsd:string,
+        "16573:16578"^^xsd:string,
+        "16622:16630"^^xsd:string,
+        "16760:16768"^^xsd:string,
+        "16769:16774"^^xsd:string,
+        "16886:16891"^^xsd:string,
+        "17008:17013"^^xsd:string,
+        "1701:1707"^^xsd:string,
+        "17279:17284"^^xsd:string,
+        "17539:17544"^^xsd:string,
+        "17606:17611"^^xsd:string,
+        "2035:2040"^^xsd:string,
+        "2076:2084"^^xsd:string,
+        "2085:2090"^^xsd:string,
+        "2187:2192"^^xsd:string,
+        "2681:2686"^^xsd:string,
+        "2857:2862"^^xsd:string,
+        "2959:2964"^^xsd:string,
+        "3033:3038"^^xsd:string,
+        "3267:3275"^^xsd:string,
+        "3276:3281"^^xsd:string,
+        "3300:3307"^^xsd:string,
+        "3393:3398"^^xsd:string,
+        "3569:3577"^^xsd:string,
+        "3612:3620"^^xsd:string,
+        "3624:3630"^^xsd:string,
+        "3690:3696"^^xsd:string,
+        "3769:3775"^^xsd:string,
+        "383:391"^^xsd:string,
+        "3937:3945"^^xsd:string,
+        "3946:3951"^^xsd:string,
+        "395:401"^^xsd:string,
+        "4018:4026"^^xsd:string,
+        "4027:4032"^^xsd:string,
+        "406:413"^^xsd:string,
+        "4224:4232"^^xsd:string,
+        "4233:4238"^^xsd:string,
+        "4274:4280"^^xsd:string,
+        "4401:4409"^^xsd:string,
+        "4410:4415"^^xsd:string,
+        "4485:4493"^^xsd:string,
+        "4494:4499"^^xsd:string,
+        "4503:4509"^^xsd:string,
+        "4651:4659"^^xsd:string,
+        "4660:4665"^^xsd:string,
+        "4846:4854"^^xsd:string,
+        "4855:4860"^^xsd:string,
+        "506:512"^^xsd:string,
+        "5108:5113"^^xsd:string,
+        "5420:5428"^^xsd:string,
+        "5429:5434"^^xsd:string,
+        "5597:5603"^^xsd:string,
+        "5673:5681"^^xsd:string,
+        "5823:5829"^^xsd:string,
+        "6075:6083"^^xsd:string,
+        "6084:6089"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6134:6139"^^xsd:string,
+        "6333:6338"^^xsd:string,
+        "6364:6370"^^xsd:string,
+        "6384:6389"^^xsd:string,
+        "6421:6426"^^xsd:string,
+        "6513:6518"^^xsd:string,
+        "6876:6881"^^xsd:string,
+        "7293:7298"^^xsd:string,
+        "7341:7349"^^xsd:string,
+        "7487:7495"^^xsd:string,
+        "7557:7562"^^xsd:string,
+        "7726:7731"^^xsd:string,
+        "7776:7783"^^xsd:string,
+        "7834:7840"^^xsd:string,
+        "7865:7870"^^xsd:string,
+        "825:833"^^xsd:string,
+        "834:839"^^xsd:string,
+        "8402:8407"^^xsd:string,
+        "8675:8680"^^xsd:string,
+        "882:887"^^xsd:string,
+        "9242:9247"^^xsd:string,
+        "9316:9324"^^xsd:string,
+        "9497:9502"^^xsd:string,
+        "9621:9627"^^xsd:string,
+        "9675:9680"^^xsd:string,
+        "990:996"^^xsd:string ;
+    data:wdtLink wdt:Q232732 ;
+    :alsoKnownAs "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia"^^xsd:string,
+        "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia, Princess of Greece and Denmark"^^xsd:string,
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia"^^xsd:string,
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark"^^xsd:string,
+        "Laci Marie"^^xsd:string,
+        "The Princess Maria of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :isAuntOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSisterOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "13246:13264"^^xsd:string,
+        "13251:13264"^^xsd:string,
+        "14056:14074"^^xsd:string,
+        "14061:14074"^^xsd:string,
+        "254:272"^^xsd:string,
+        "254:282"^^xsd:string,
+        "259:272"^^xsd:string,
+        "259:282"^^xsd:string ;
+    data:posIndicesPart "11241:11247"^^xsd:string,
+        "13078:13084"^^xsd:string,
+        "13355:13361"^^xsd:string,
+        "13535:13546"^^xsd:string,
+        "13560:13566"^^xsd:string,
+        "13754:13760"^^xsd:string,
+        "14144:14155"^^xsd:string,
+        "1422:1428"^^xsd:string,
+        "14474:14480"^^xsd:string,
+        "15277:15288"^^xsd:string,
+        "15311:15317"^^xsd:string,
+        "15680:15686"^^xsd:string,
+        "15740:15746"^^xsd:string,
+        "1701:1707"^^xsd:string,
+        "2342:2353"^^xsd:string,
+        "3624:3630"^^xsd:string,
+        "3690:3696"^^xsd:string,
+        "3769:3775"^^xsd:string,
+        "395:401"^^xsd:string,
+        "4274:4280"^^xsd:string,
+        "4503:4509"^^xsd:string,
+        "506:512"^^xsd:string,
+        "5597:5603"^^xsd:string,
+        "5823:5829"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6364:6370"^^xsd:string,
+        "7834:7840"^^xsd:string,
+        "9621:9627"^^xsd:string,
+        "990:996"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSon data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isAncestorOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isParentOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:George_II_of_Greece,
+        data:Paul_of_Greece .
+

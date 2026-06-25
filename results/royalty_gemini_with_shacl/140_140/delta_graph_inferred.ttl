@@ -1,0 +1,910 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LudwigIIIBavaria a :Ancestor,
+        :Man ;
+    :hasBrother data:LudwigIIIBavaria ;
+    :hasChild data:MariaLudwigaTheresiaOfBavaria ;
+    :hasDaughter data:MariaLudwigaTheresiaOfBavaria ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isAncestorOf data:MariaLudwigaTheresiaOfBavaria ;
+    :isBloodrelationOf data:LudwigIIIBavaria ;
+    :isBrotherOf data:LudwigIIIBavaria ;
+    :isFatherOf data:MariaLudwigaTheresiaOfBavaria ;
+    :isParentOf data:MariaLudwigaTheresiaOfBavaria ;
+    :isSiblingOf data:LudwigIIIBavaria ;
+    :isUncleOf data:MariaLudwigaTheresiaOfBavaria .
+
+data:MariaAntonietta a :Ancestor,
+        :Woman ;
+    :hasChild data:FerdinandPius ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:MariaAntonietta ;
+    :hasSon data:FerdinandPius ;
+    :isAncestorOf data:FerdinandPius ;
+    :isAuntOf data:FerdinandPius ;
+    :isBloodrelationOf data:MariaAntonietta ;
+    :isMotherOf data:FerdinandPius ;
+    :isParentOf data:FerdinandPius ;
+    :isSiblingOf data:MariaAntonietta ;
+    :isSisterOf data:MariaAntonietta .
+
+data:FerdinandII a :Ancestor,
+        :Man ;
+    :hasBrother data:FerdinandII ;
+    :hasChild data:AlfonsoCountOfCaserta ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSon data:AlfonsoCountOfCaserta ;
+    :isAncestorOf data:AlfonsoCountOfCaserta,
+        data:FerdinandPius ;
+    :isBloodrelationOf data:FerdinandII ;
+    :isBrotherOf data:FerdinandII ;
+    :isFatherOf data:AlfonsoCountOfCaserta ;
+    :isParentOf data:AlfonsoCountOfCaserta ;
+    :isSiblingOf data:FerdinandII ;
+    :isUncleOf data:AlfonsoCountOfCaserta .
+
+data:MariaLudwigaTheresiaOfBavaria a :Woman ;
+    :hasAncestor data:LudwigIIIBavaria ;
+    :hasFather data:LudwigIIIBavaria ;
+    :hasParent data:LudwigIIIBavaria ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:MariaLudwigaTheresiaOfBavaria ;
+    :isBloodrelationOf data:MariaLudwigaTheresiaOfBavaria ;
+    :isChildOf data:LudwigIIIBavaria ;
+    :isDaughterOf data:LudwigIIIBavaria ;
+    :isSiblingOf data:MariaLudwigaTheresiaOfBavaria ;
+    :isSisterOf data:MariaLudwigaTheresiaOfBavaria .
+
+data:AlfonsoCountOfCaserta a :Ancestor,
+        :Man ;
+    :hasAncestor data:FerdinandII ;
+    :hasBrother data:AlfonsoCountOfCaserta ;
+    :hasChild data:FerdinandPius ;
+    :hasFather data:FerdinandII ;
+    :hasParent data:FerdinandII ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSon data:FerdinandPius ;
+    :isAncestorOf data:FerdinandPius ;
+    :isBloodrelationOf data:AlfonsoCountOfCaserta ;
+    :isBrotherOf data:AlfonsoCountOfCaserta ;
+    :isChildOf data:FerdinandII ;
+    :isFatherOf data:FerdinandPius ;
+    :isParentOf data:FerdinandPius ;
+    :isSiblingOf data:AlfonsoCountOfCaserta ;
+    :isSonOf data:FerdinandII ;
+    :isUncleOf data:FerdinandPius .
+
+data:AlfonsoDukeOfCalabria a :Man ;
+    :hasAncestor data:CarlosBourbonTwoSicilies ;
+    :hasBrother data:AlfonsoDukeOfCalabria ;
+    :hasFather data:CarlosBourbonTwoSicilies ;
+    :hasParent data:CarlosBourbonTwoSicilies ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBloodrelationOf data:AlfonsoDukeOfCalabria ;
+    :isBrotherOf data:AlfonsoDukeOfCalabria ;
+    :isChildOf data:CarlosBourbonTwoSicilies ;
+    :isSiblingOf data:AlfonsoDukeOfCalabria ;
+    :isSonOf data:CarlosBourbonTwoSicilies .
+
+data:ArchduchessPeterFerdinandOfAustria a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:GabrielBourbonTwoSicilies a :Man ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBrotherOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isUncleOf data:AlfonsoDukeOfCalabria .
+
+data:MariaCristina a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:MariaDiGrazia a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:MariaImmaculata a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:PhilipBourbonTwoSicilies a :Man ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBrotherOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isUncleOf data:AlfonsoDukeOfCalabria .
+
+data:PrincessImperialOfBrazil a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:PrincessJohannGeorgOfSaxony a :Woman ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isAuntOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSisterOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro .
+
+data:RanieriDukeOfCastro a :Man ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBrotherOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isUncleOf data:AlfonsoDukeOfCalabria .
+
+data:CarlosBourbonTwoSicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasChild data:AlfonsoDukeOfCalabria ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :hasSon data:AlfonsoDukeOfCalabria ;
+    :isAncestorOf data:AlfonsoDukeOfCalabria ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBrotherOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isFatherOf data:AlfonsoDukeOfCalabria ;
+    :isParentOf data:AlfonsoDukeOfCalabria ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isUncleOf data:AlfonsoDukeOfCalabria .
+
+data:FerdinandPius a :Man ;
+    :hasAncestor data:AlfonsoCountOfCaserta,
+        data:FerdinandII,
+        data:MariaAntonietta ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:PhilipBourbonTwoSicilies,
+        data:RanieriDukeOfCastro ;
+    :hasDeathYear 1960 ;
+    :hasFather data:AlfonsoCountOfCaserta ;
+    :hasMarriageYear 1897 ;
+    :hasMother data:MariaAntonietta ;
+    :hasParent data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta ;
+    :hasRelation data:AlfonsoCountOfCaserta,
+        data:AlfonsoDukeOfCalabria,
+        data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandII,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:LudwigIIIBavaria,
+        data:MariaAntonietta,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:MariaLudwigaTheresiaOfBavaria,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :hasSister data:ArchduchessPeterFerdinandOfAustria,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony ;
+    :isBloodrelationOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isBrotherOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isChildOf data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta ;
+    :isSiblingOf data:ArchduchessPeterFerdinandOfAustria,
+        data:CarlosBourbonTwoSicilies,
+        data:FerdinandPius,
+        data:GabrielBourbonTwoSicilies,
+        data:MariaCristina,
+        data:MariaDiGrazia,
+        data:MariaImmaculata,
+        data:PhilipBourbonTwoSicilies,
+        data:PrincessImperialOfBrazil,
+        data:PrincessJohannGeorgOfSaxony,
+        data:RanieriDukeOfCastro ;
+    :isSonOf data:AlfonsoCountOfCaserta,
+        data:MariaAntonietta ;
+    :isUncleOf data:AlfonsoDukeOfCalabria .
+

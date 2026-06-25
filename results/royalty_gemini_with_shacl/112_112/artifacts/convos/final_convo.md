@@ -114,6 +114,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +131,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +148,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,118 +456,118 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d54e8253-61db-4895-839a-70b8e8cef7ea)
- Call ID: d54e8253-61db-4895-839a-70b8e8cef7ea
+  AssignClass (84489e26-8abf-47c0-8ed9-fbd1f777e514)
+ Call ID: 84489e26-8abf-47c0-8ed9-fbd1f777e514
   Args:
+    source: Alexander_Prince_of_Orange
     type: :Man
-    source: Alexander_Prince_of_Orange
-  AssignClass (52cb326b-909e-4396-b47b-1692c1619083)
- Call ID: 52cb326b-909e-4396-b47b-1692c1619083
+  AssignClass (8ef4d33c-a72e-44d1-a7dc-e17be06fd905)
+ Call ID: 8ef4d33c-a72e-44d1-a7dc-e17be06fd905
   Args:
-    source: Alexander_Prince_of_Orange
     type: :Person
-  AddLiteral (39ef287c-95c1-4f6d-a21b-4c3c0efec322)
- Call ID: 39ef287c-95c1-4f6d-a21b-4c3c0efec322
+    source: Alexander_Prince_of_Orange
+  AddLiteral (d83090fc-ea10-4443-abda-0fb7cb78abc8)
+ Call ID: d83090fc-ea10-4443-abda-0fb7cb78abc8
   Args:
-    literal_type: xsd:integer
     literal_value: 1851
     source: Alexander_Prince_of_Orange
     relation: :hasBirthYear
-  AddLiteral (58f7ab48-aa60-4e2f-ad20-3b83026d555d)
- Call ID: 58f7ab48-aa60-4e2f-ad20-3b83026d555d
+    literal_type: xsd:integer
+  AddLiteral (0c743282-46ea-4078-9f42-dde00f7a7434)
+ Call ID: 0c743282-46ea-4078-9f42-dde00f7a7434
   Args:
+    literal_type: xsd:integer
     relation: :hasDeathYear
     source: Alexander_Prince_of_Orange
-    literal_type: xsd:integer
     literal_value: 1884
-  AddTriple (347efe82-fd34-4b52-9f0d-4edac4765825)
- Call ID: 347efe82-fd34-4b52-9f0d-4edac4765825
+  AssignClass (7d7d5809-908f-480a-8e55-41c88ccddb6f)
+ Call ID: 7d7d5809-908f-480a-8e55-41c88ccddb6f
   Args:
-    relation: :hasSex
-    target: :Male
+    source: William_III_of_the_Netherlands
+    type: :Man
+  AssignClass (34251888-27fe-4a3b-a6d3-b5b4314ef894)
+ Call ID: 34251888-27fe-4a3b-a6d3-b5b4314ef894
+  Args:
+    source: William_III_of_the_Netherlands
+    type: :Person
+  AssignClass (20a6419e-0f17-497e-bdf5-f6b0b98dfd48)
+ Call ID: 20a6419e-0f17-497e-bdf5-f6b0b98dfd48
+  Args:
+    type: :Woman
+    source: Sophie_of_the_Netherlands
+  AssignClass (6effbdc6-b8d5-4a1e-8b8c-e017d35e7c64)
+ Call ID: 6effbdc6-b8d5-4a1e-8b8c-e017d35e7c64
+  Args:
+    source: Sophie_of_the_Netherlands
+    type: :Person
+  AddTriple (c4c5a6e7-a3cf-45a9-bf21-483f7dfed961)
+ Call ID: c4c5a6e7-a3cf-45a9-bf21-483f7dfed961
+  Args:
     source: Alexander_Prince_of_Orange
-  AssignClass (4e899144-6782-400c-ad35-4ef846071fd8)
- Call ID: 4e899144-6782-400c-ad35-4ef846071fd8
+    relation: :hasFather
+    target: William_III_of_the_Netherlands
+  AddTriple (cd15a08e-848b-4f25-857e-37d2eb1243e4)
+ Call ID: cd15a08e-848b-4f25-857e-37d2eb1243e4
   Args:
-    type: :Man
-    source: William_III_of_the_Netherlands
-  AssignClass (1dc5dafc-e060-4ad7-a760-79a2fcb83d24)
- Call ID: 1dc5dafc-e060-4ad7-a760-79a2fcb83d24
-  Args:
-    type: :Person
-    source: William_III_of_the_Netherlands
-  AddTriple (2e54d4ad-c7af-4af4-bd48-61d96e82d7e5)
- Call ID: 2e54d4ad-c7af-4af4-bd48-61d96e82d7e5
-  Args:
-    target: :Alexander_Prince_of_Orange
-    source: William_III_of_the_Netherlands
-    relation: :isFatherOf
-  AssignClass (e00330e9-a1df-4ad8-99bf-3e7c3c0c93cb)
- Call ID: e00330e9-a1df-4ad8-99bf-3e7c3c0c93cb
-  Args:
-    type: :Woman
-    source: Sophie_of_the_Netherlands
-  AssignClass (a413ab79-5af0-4ac3-8889-b371d66a5812)
- Call ID: a413ab79-5af0-4ac3-8889-b371d66a5812
-  Args:
-    type: :Person
-    source: Sophie_of_the_Netherlands
-  AddTriple (5dcc1013-158e-467a-9d18-8881f9b179b8)
- Call ID: 5dcc1013-158e-467a-9d18-8881f9b179b8
-  Args:
-    relation: :isMotherOf
-    target: :Alexander_Prince_of_Orange
-    source: Sophie_of_the_Netherlands
-  AssignClass (d7f4ecfe-5675-4760-9d45-8ad47e3b3028)
- Call ID: d7f4ecfe-5675-4760-9d45-8ad47e3b3028
+    target: Sophie_of_the_Netherlands
+    source: Alexander_Prince_of_Orange
+    relation: :hasMother
+  AssignClass (a5361e27-c866-4f4b-9edc-71f8474b3286)
+ Call ID: a5361e27-c866-4f4b-9edc-71f8474b3286
   Args:
     source: Prince_Maurice
     type: :Man
-  AssignClass (0d34ef02-f90a-4bd2-9cb0-82bb3113e253)
- Call ID: 0d34ef02-f90a-4bd2-9cb0-82bb3113e253
+  AssignClass (aeac60e5-d546-4e01-9914-6b6578e9d0c2)
+ Call ID: aeac60e5-d546-4e01-9914-6b6578e9d0c2
   Args:
-    type: :Person
     source: Prince_Maurice
-  AddTriple (3677111d-85dc-477f-b1fe-d39f2ca4afdd)
- Call ID: 3677111d-85dc-477f-b1fe-d39f2ca4afdd
+    type: :Person
+  AddTriple (fbd0f4d1-2de5-4ad3-bb0a-fc22d31fe41e)
+ Call ID: fbd0f4d1-2de5-4ad3-bb0a-fc22d31fe41e
   Args:
+    source: Alexander_Prince_of_Orange
     relation: :isBrotherOf
-    target: :Alexander_Prince_of_Orange
-    source: Prince_Maurice
-  AssignClass (d47b7f2b-ae7b-41fe-b695-1ec6a640df07)
- Call ID: d47b7f2b-ae7b-41fe-b695-1ec6a640df07
+    target: Prince_Maurice
+  AssignClass (6ffdd1df-9f3c-4422-9cdd-0ea7ab1434e6)
+ Call ID: 6ffdd1df-9f3c-4422-9cdd-0ea7ab1434e6
   Args:
+    source: Prince_William
     type: :Man
-    source: Prince_William
-  AssignClass (c684d6bc-755f-4d97-b555-9e6d7275cf76)
- Call ID: c684d6bc-755f-4d97-b555-9e6d7275cf76
+  AssignClass (d3ac79ef-a4ab-4b8d-bbfa-8e7fa17539a1)
+ Call ID: d3ac79ef-a4ab-4b8d-bbfa-8e7fa17539a1
   Args:
-    source: Prince_William
     type: :Person
-  AddTriple (9ecd7150-329c-48e3-93cf-9f62f9247f30)
- Call ID: 9ecd7150-329c-48e3-93cf-9f62f9247f30
-  Args:
-    target: :Alexander_Prince_of_Orange
     source: Prince_William
+  AddTriple (cf8d04b4-9118-4652-89f3-f2551b03b1cc)
+ Call ID: cf8d04b4-9118-4652-89f3-f2551b03b1cc
+  Args:
+    target: Prince_William
+    source: Alexander_Prince_of_Orange
     relation: :isBrotherOf
-  AssignClass (96934081-c057-4d35-bf4c-7efcf13786e2)
- Call ID: 96934081-c057-4d35-bf4c-7efcf13786e2
+  AssignClass (081511a7-79f2-4403-97c6-6e330933fac4)
+ Call ID: 081511a7-79f2-4403-97c6-6e330933fac4
   Args:
     type: :Woman
     source: Wilhelmina_of_the_Netherlands
-  AssignClass (7d0cb715-3f73-4aaf-828e-b89dfb1643c0)
- Call ID: 7d0cb715-3f73-4aaf-828e-b89dfb1643c0
+  AssignClass (8a1b9879-0ef2-4ac4-8413-6d7623df513f)
+ Call ID: 8a1b9879-0ef2-4ac4-8413-6d7623df513f
   Args:
-    source: Wilhelmina_of_the_Netherlands
     type: :Person
-  AddTriple (5ec587be-370f-4320-a69a-4f4c254436ea)
- Call ID: 5ec587be-370f-4320-a69a-4f4c254436ea
-  Args:
-    target: :Alexander_Prince_of_Orange
     source: Wilhelmina_of_the_Netherlands
+  AddTriple (71bcf587-c98c-464a-b86e-e776702ea527)
+ Call ID: 71bcf587-c98c-464a-b86e-e776702ea527
+  Args:
+    target: Wilhelmina_of_the_Netherlands
+    source: Alexander_Prince_of_Orange
     relation: :isSisterOf
-  Finish (9b216232-861c-49f5-b215-80923f742b7a)
- Call ID: 9b216232-861c-49f5-b215-80923f742b7a
+  AddTriple (e399872a-a9c7-4dc7-951c-684d7779da87)
+ Call ID: e399872a-a9c7-4dc7-951c-684d7779da87
+  Args:
+    target: William_III_of_the_Netherlands
+    relation: :hasFather
+    source: Wilhelmina_of_the_Netherlands
+  Finish (2d80570c-a6f0-4fc1-9ada-939c0da54a6a)
+ Call ID: 2d80570c-a6f0-4fc1-9ada-939c0da54a6a
   Args:
 
 ================================= Tool Message =================================
@@ -561,31 +653,31 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Maurice a :Man,
-          :Person ;
-      :isBrotherOf data:Alexander_Prince_of_Orange .
-
-  data:Prince_William a :Man,
-          :Person ;
-      :isBrotherOf data:Alexander_Prince_of_Orange .
-
-  data:Sophie_of_the_Netherlands a :Person,
-          :Woman ;
-      :isMotherOf data:Alexander_Prince_of_Orange .
-
-  data:Wilhelmina_of_the_Netherlands a :Person,
-          :Woman ;
-      :isSisterOf data:Alexander_Prince_of_Orange .
-
-  data:William_III_of_the_Netherlands a :Man,
-          :Person ;
-      :isFatherOf data:Alexander_Prince_of_Orange .
-
   data:Alexander_Prince_of_Orange a :Man,
           :Person ;
       :hasBirthYear 1851 ;
       :hasDeathYear 1884 ;
-      :hasSex data:Male .
+      :hasFather data:William_III_of_the_Netherlands ;
+      :hasMother data:Sophie_of_the_Netherlands ;
+      :isBrotherOf data:Prince_Maurice,
+          data:Prince_William ;
+      :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+  data:Prince_Maurice a :Man,
+          :Person .
+
+  data:Prince_William a :Man,
+          :Person .
+
+  data:Sophie_of_the_Netherlands a :Person,
+          :Woman .
+
+  data:Wilhelmina_of_the_Netherlands a :Person,
+          :Woman ;
+      :hasFather data:William_III_of_the_Netherlands .
+
+  data:William_III_of_the_Netherlands a :Man,
+          :Person .
 
 
 
@@ -597,8 +689,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (393cac88-5f54-498f-86c4-047977fc2d59)
- Call ID: 393cac88-5f54-498f-86c4-047977fc2d59
+  ValidateShacl (f525da43-b176-4221-8fd0-c55ee75b57a5)
+ Call ID: f525da43-b176-4221-8fd0-c55ee75b57a5
   Args:
 
 ================================= Tool Message =================================
@@ -608,83 +700,83 @@ Total violations:10
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Node data:Alexander_Prince_of_Orange is closed. It cannot have value: data:Wilhelmina_of_the_Netherlands
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The node Alexander_Prince_of_Orange is defined as a closed shape, and the property isSisterOf is not allowed within this shape.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      RemoveTriple(Alexander_Prince_of_Orange, :isSisterOf, Wilhelmina_of_the_Netherlands)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value Sophie_of_the_Netherlands assigned to the hasMother property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Sophie_of_the_Netherlands, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Wilhelmina_of_the_Netherlands is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Sophie_of_the_Netherlands' is missing the required class ':Ancestor' to participate in the 'isMotherOf' relationship.
+      The value Sophie_of_the_Netherlands assigned to the hasMother property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophie_of_the_Netherlands', class=':Ancestor')
+      AssignClass(Sophie_of_the_Netherlands, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Wilhelmina_of_the_Netherlands is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for property 'hasSex' on node 'Alexander_Prince_of_Orange' is not correctly typed as an instance of the class ':Sex'.
+      The value Sophie_of_the_Netherlands assigned to the hasMother property for Alexander_Prince_of_Orange is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Sophie_of_the_Netherlands, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'William_III_of_the_Netherlands' is missing the required class ':Ancestor' to participate in the 'isFatherOf' relationship.
+      The value William_III_of_the_Netherlands assigned to the hasFather property for Wilhelmina_of_the_Netherlands is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='William_III_of_the_Netherlands', class=':Ancestor')
+      AssignClass(William_III_of_the_Netherlands, :Ancestor)
 
 
 
@@ -693,24 +785,35 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6a68fd15-5d67-42f7-8e35-bc6f553308bc)
- Call ID: 6a68fd15-5d67-42f7-8e35-bc6f553308bc
+  RemoveTriple (d3e8cba1-3b7d-4e90-88b5-fa5ad7eadd95)
+ Call ID: d3e8cba1-3b7d-4e90-88b5-fa5ad7eadd95
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (ac23ca48-10a9-4957-b55c-96ad0d0c6729)
- Call ID: ac23ca48-10a9-4957-b55c-96ad0d0c6729
+    target: Wilhelmina_of_the_Netherlands
+    relation: :isSisterOf
+    source: Alexander_Prince_of_Orange
+  AssignClass (2c119323-223d-4537-854d-e4095c10b216)
+ Call ID: 2c119323-223d-4537-854d-e4095c10b216
+  Args:
+    source: William_III_of_the_Netherlands
+    type: :Ancestor
+  AssignClass (c09e5194-2ce6-411e-b25b-452f2d27b59e)
+ Call ID: c09e5194-2ce6-411e-b25b-452f2d27b59e
   Args:
     type: :Ancestor
     source: Sophie_of_the_Netherlands
-  AssignClass (4bf0937d-6b79-42a4-a926-ba44f9bd3edb)
- Call ID: 4bf0937d-6b79-42a4-a926-ba44f9bd3edb
+  AddTriple (ab0f5054-d4bb-4eda-bce4-d639a1dd05ae)
+ Call ID: ab0f5054-d4bb-4eda-bce4-d639a1dd05ae
   Args:
-    type: :Ancestor
-    source: William_III_of_the_Netherlands
-  ValidateShacl (5deece06-93f7-4126-8b57-90c59e94f8e2)
- Call ID: 5deece06-93f7-4126-8b57-90c59e94f8e2
+    source: Wilhelmina_of_the_Netherlands
+    relation: :hasSister
+    target: Alexander_Prince_of_Orange
+  Finish (da0f335e-9359-4f8f-ac9d-f8494fc30246)
+ Call ID: da0f335e-9359-4f8f-ac9d-f8494fc30246
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -727,37 +830,141 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Maurice a :Man,
-          :Person ;
-      :isBrotherOf data:Alexander_Prince_of_Orange .
-
-  data:Prince_William a :Man,
-          :Person ;
-      :isBrotherOf data:Alexander_Prince_of_Orange .
-
-  data:Sophie_of_the_Netherlands a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:Alexander_Prince_of_Orange .
-
   data:Wilhelmina_of_the_Netherlands a :Person,
           :Woman ;
-      :isSisterOf data:Alexander_Prince_of_Orange .
-
-  data:William_III_of_the_Netherlands a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Alexander_Prince_of_Orange .
-
-  data:Male a :Sex .
+      :hasFather data:William_III_of_the_Netherlands ;
+      :hasSister data:Alexander_Prince_of_Orange .
 
   data:Alexander_Prince_of_Orange a :Man,
           :Person ;
       :hasBirthYear 1851 ;
       :hasDeathYear 1884 ;
-      :hasSex data:Male .
+      :hasFather data:William_III_of_the_Netherlands ;
+      :hasMother data:Sophie_of_the_Netherlands ;
+      :isBrotherOf data:Prince_Maurice,
+          data:Prince_William .
+
+  data:Prince_Maurice a :Man,
+          :Person .
+
+  data:Prince_William a :Man,
+          :Person .
+
+  data:Sophie_of_the_Netherlands a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:William_III_of_the_Netherlands a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (18a1b8c2-a46f-44a6-8154-37dbc9361b95)
+ Call ID: 18a1b8c2-a46f-44a6-8154-37dbc9361b95
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:3
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Woman
+    LLM-provided explanation of the violation:
+      The node 'Wilhelmina_of_the_Netherlands' has a 'hasSister' relationship pointing to 'Alexander_Prince_of_Orange'. However, the 'hasSister' property requires the target node to be an instance of the class ':Woman', but 'Alexander_Prince_of_Orange' is currently classified as a ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship ':hasSister' between 'Wilhelmina_of_the_Netherlands' and 'Alexander_Prince_of_Orange'.
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Woman
+    LLM-provided explanation of the violation:
+      The node 'Wilhelmina_of_the_Netherlands' has an incorrect 'hasSister' relationship to 'Alexander_Prince_of_Orange'. A sister must be a woman, but the target is a man.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship ':hasSister' between 'Wilhelmina_of_the_Netherlands' and 'Alexander_Prince_of_Orange'.
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Woman
+    LLM-provided explanation of the violation:
+      The node 'Wilhelmina_of_the_Netherlands' is incorrectly linked via 'hasSister' to 'Alexander_Prince_of_Orange', violating the class constraint that the target must be of type ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship ':hasSister' between 'Wilhelmina_of_the_Netherlands' and 'Alexander_Prince_of_Orange'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (70b5b02d-3455-48af-95eb-366e8fa3f31d)
+ Call ID: 70b5b02d-3455-48af-95eb-366e8fa3f31d
+  Args:
+    source: Wilhelmina_of_the_Netherlands
+    target: Alexander_Prince_of_Orange
+    relation: :hasSister
+  Finish (a411728f-d71c-4ed3-a737-d1d6c7dd15d8)
+ Call ID: a411728f-d71c-4ed3-a737-d1d6c7dd15d8
+  Args:
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alexander_Prince_of_Orange a :Man,
+          :Person ;
+      :hasBirthYear 1851 ;
+      :hasDeathYear 1884 ;
+      :hasFather data:William_III_of_the_Netherlands ;
+      :hasMother data:Sophie_of_the_Netherlands ;
+      :isBrotherOf data:Prince_Maurice,
+          data:Prince_William .
+
+  data:Wilhelmina_of_the_Netherlands a :Person,
+          :Woman ;
+      :hasFather data:William_III_of_the_Netherlands .
+
+  data:Prince_Maurice a :Man,
+          :Person .
+
+  data:Prince_William a :Man,
+          :Person .
+
+  data:Sophie_of_the_Netherlands a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:William_III_of_the_Netherlands a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (ae6dc9fa-a07b-4048-b5e4-041f91aa41d3)
+ Call ID: ae6dc9fa-a07b-4048-b5e4-041f91aa41d3
+  Args:
 
 ================================= Tool Message =================================
 
@@ -767,6 +974,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (fb566693-67bf-4331-b912-cf3e58ab20d0)
- Call ID: fb566693-67bf-4331-b912-cf3e58ab20d0
+  Finish (e2aae714-3a14-486d-9f25-9229bc264fe8)
+ Call ID: e2aae714-3a14-486d-9f25-9229bc264fe8
   Args:

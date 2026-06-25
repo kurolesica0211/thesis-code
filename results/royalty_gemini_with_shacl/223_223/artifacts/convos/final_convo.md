@@ -85,143 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Luiz Philippe of Orléans-Braganza (Portuguese: Luiz Philippe de Orléans e Bragança; born 3 April 1969) is a Brazilian politician, activist, businessman, and member of the former ruling House of Orléans-Braganza.
+A great-great-grandson of Emperor Pedro II, Luiz Philippe is a member of the Brazilian imperial family’s Vassouras branch.
+Biography
 
+Luiz Philippe was born in Rio de Janeiro in 1969, the son of Eudes of Orléans-Braganza and Ana Maria de Moraes Barros.
+Luiz Philippe is the grandson of Pedro Henrique of Orléans-Braganza.
+Luiz Philippe studied business at Fundação Armando Álvares Penteado (FAAP) and in 1993 received a master's degree in political science from Stanford University.
+Professional life
 
-Princess Margriet*Pieter van Vollenhoven*
+The professional trajectory of Luiz Philippe began in the United States, where he worked in companies of the financial market.
+Luiz Philippe was part of the financial planning of Saint-Gobain, a French multinational, between 1993 and 1996.
+In 2012 Luiz Philippe founded ZAP Tech, an incubator of means of payment for mobile platforms.
+Political activism
 
-
-Beatrix (Beatrix Wilhelmina Armgard, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Dutch pronunciation:  i; born 31 January 1938) is a member of the Dutch royal house who reigned as Queen of the Netherlands from 30 April 1980 until her abdication in 2013.
-Beatrix was born during the reign of her maternal grandmother, Queen Wilhelmina, and became heiress presumptive upon the accession of her mother, Queen Juliana, in 1948.
-Beatrix attended a public primary school in Canada during World War II, and then finished her primary and secondary education in the Netherlands in the post-war period.
-In 1966, Beatrix married Claus von Amsberg, a German diplomat, with whom she had three children.
-When her mother abdicated on 30 April 1980, Beatrix succeeded her as queen.
-Beatrix's reign saw the country's Caribbean territories reshaped with Aruba's secession and becoming its own constituent country within the kingdom in 1986.
-This was followed by the dissolution of the Netherlands Antilles in 2010, which created the new special municipalities of Bonaire, Sint Eustatius, and Saba, and the two new constituent countries of Curaçao and Sint Maarten.
-On Koninginnedag (Queensday), 30 April 2013, Beatrix abdicated in favour of her eldest son, Willem-Alexander.
-At the time of her abdication at age 75, Beatrix was the oldest reigning monarch in the country's history.
-Early life
-
-Princess Beatrix Wilhelmina Armgard was born on 31 January 1938 at Soestdijk Palace in Baarn, Netherlands, as the first child of Princess Juliana of the Netherlands and her husband, Prince Bernhard of Lippe-Biesterfeld.
-Beatrix was baptised on 12 May 1938 in the Great Church in The Hague.
-Her five godparents were King Leopold III of Belgium; Princess Alice, Countess of Athlone; Beatrix's maternal great-great-aunt Elisabeth, Princess of Erbach-Schönberg; her paternal great-uncle Duke Adolf Friedrich of Mecklenburg; and Countess Allene de Kotzebue.
-Beatrix's middle names are the first names of her grandmothers, Queen Wilhelmina of the Netherlands and Armgard, Princess of Lippe-Biesterfeld.
-When Beatrix was one year old, in 1939, her younger sister Princess Irene was born.
-World War II broke out in the Netherlands on 10 May 1940 (Westfeldzug).
-One month later, Beatrix went to Ottawa, Ontario, Canada, with her mother Juliana and her sister Irene, while her father Bernhard and maternal grandmother Queen Wilhelmina remained in London.
-While on Bigwin Island, the constitution of the Netherlands was stored in the safe of Bigwin Inn's rotunda building.
-Princess Juliana and her family were remembered for their "down to earth" friendliness, general gratefulness and great reverence for their homeland and people, to whom they paid homage by refraining from all luxuries offered to guests at the resort that was once billed as the largest and most luxurious summer resort in Canada.
-In the years following the shuttering and neglect of the island resort, the "Juliana" cottages were well maintained and preserved in an informal tribute to Princess Juliana and her family.
-In appreciation for the protection of her and her daughters, Princess Juliana established the custom of delivery to the Canadian government every spring of tulips, which is the centrepiece of the Canadian Tulip Festival.
-The second sister of Beatrix, Princess Margriet, was born in Ottawa in 1943.
-During their exile in Canada, Beatrix attended nursery and Rockcliffe Park Public School, a primary school where she was known as "Trixie Orange".
-On 5 May 1945, the German troops in the Netherlands surrendered.
-The family returned to the Netherlands on 2 August 1945.
-Beatrix went to the progressive primary school De Werkplaats in Bilthoven run by pacifist social reformers Kees Boeke and Beatrice Boeke-Cadbury.
-On 6 September 1948, her mother succeeded her grandmother Wilhelmina as Queen of the Netherlands.
-Since she had no brothers, Beatrix became the heiress presumptive to the Dutch throne at the age of ten.
-Education
-
-In April 1950, Princess Beatrix entered the Incrementum, a part of Baarnsch Lyceum, where, in 1956, she passed her school graduation examinations in the subjects of arts and classics.
-In 1954, Beatrix served as a bridesmaid at the wedding of Baroness van Randwijck and Mr. T Boey.
-On 31 January 1956, Beatrix celebrated her 18th birthday.
-From that date, under the Constitution of the Netherlands, she was entitled to assume the Royal Prerogative.
-In the course of her studies she also attended lectures on the cultures of Suriname and the Netherlands Antilles, the Charter for the Kingdom of the Netherlands, international affairs, international law, history and European law.
-Political involvement
-
-In 1965, Beatrix became engaged to the German aristocrat Claus von Amsberg, a diplomat working for the German Foreign Office.
-Prince Claus had served in the Hitler Youth and the Wehrmacht and therefore was easily associated with German Nazism.
-Protests included slogans like "Claus 'raus!"
-(Claus out!) and "Mijn fiets terug" ("Return my bicycle" – a reference to German soldiers confiscating Dutch bicycles during WWII).
-As time went on, Prince Claus became one of the most popular members of the Dutch monarchy.
-On 25 November 1975, Beatrix and Prince Claus attended the independence ceremony of Suriname, held in the new nation's capital, Paramaribo, representing her mother the Queen.
-As a monarch, Beatrix had weekly meetings with the prime minister.
-Beatrix is a member of the Bilderberg Group.
-Marriage and children
-
-Engagement to Claus
-
-On 28 June 1965, the engagement of Princess Beatrix to the German diplomat Claus von Amsberg was announced.
-Claus and Beatrix had met at the wedding-eve party of Princess Tatjana of Sayn-Wittgenstein-Berleburg and Moritz, Landgrave of Hesse, in summer 1964.
-After Parliament consented to the marriage, Claus von Amsberg became a Dutch citizen, and upon his marriage became Prince Claus of the Netherlands, Jonkheer van Amsberg.
-Wedding, 1966
-
-Beatrix married Claus von Amsberg on 10 March 1966 in civil and religious ceremonies.
-The senior bridesmaids were the bride's youngest sister, Princess Christina of the Netherlands; Princess Christina of Sweden; Lady Elizabeth Anson; Joanna Roëll; Eugénie Loudon; and the bridegroom's sister, Christina von Amsberg.
-The junior bridesmaids were Daphne Stewart-Clark and Carolijn Alting von Geusau, with page boys Joachim Jencquel and Markus von Oeynhausen-Sierstorpff.
-They lived at Drakensteyn Castle in Lage Vuursche with their children until Beatrix ascended the throne.
-Accession and inauguration
-
-From the 1970s, Beatrix began to prepare more intensively for her future position as head of state.
-She made many trips abroad with Prince Claus, including a controversial one to the Soviet Union.
-After the Lockheed affair, Beatrix and Claus began to delve into the royal household and made plans to adapt it.
-In addition, they asked advisers to prepare for Beatrix's reign.
-On 31 January 1980, the birthday of her eldest daughter and heiress presumptive, Queen Juliana announced during a live television speech that she wished to abdicate on 30 April in favor of her daughter Beatrix.
-That Beatrix would succeed her mother as queen was not a matter of course when she was born.
-It was only after it was clear that Juliana was biologically unable to have any more children, let alone a son, that Beatrix was certain that she was the intended successor.
-On 30 April 1980, Juliana abdicated, and Beatrix became the 13th member of the House of Orange to reign over the Netherlands.
-Reign
-
-Beatrix's constitutional duties included those typically accorded to a head of state; this includes having to sign every piece of legislation before it becomes law, formally appointing various officials, receiving and accrediting ambassadors, and awarding honours and medals, among others.
-Beatrix was rarely quoted directly in the press during her reign, for the government information service (Rijksvoorlichtingsdienst) made it a condition of interviews that she should not be quoted.
-It did not apply to her son Prince Willem-Alexander.
-Throughout much of her reign, Beatrix had a considerable role in the cabinet formation process; notably she appointed the informateur and formateur, the person who leads the negotiations that ultimately lead to the formation of a government.
-Beatrix was included in Andy Warhol's portrait series in 1985 as one of four Reigning Queens, alongside Elizabeth II, Margrethe II of Denmark and Ntfombi of Eswatini.
-On 1 January 1986, Aruba seceded from the Netherlands Antilles and became a separate constituent country within the Dutch Kingdom.
-Kissed by a bystander
-
-During 1988 Queen's Day, Queen Beatrix was kissed by a bystander, later identified as Maarten Rijkers, when she walked through the crowd of people at a flea market in the Jordaan.
-When Beatrix walked alongside Rijkers he said "Give me a kiss, girl", after which he gave her a hug and two kisses.
-Later years
-
-On 6 October 2002, the Queen's husband, Prince Claus, died after a long illness.
-On 8 February 2005, Beatrix received a rare honorary doctorate from Leiden University, an honour the Queen does not usually accept.
-Beatrix was to tie the prestigious medal to the standard of the incumbents of the 1st Independent Polish Parachute Brigade.
-On 30 April 2009, Beatrix and other members of the royal family were targeted in a car attack by a man named Karst Tates.
-Within hours, Beatrix made a rare televised address to express her shock and condolences.
-Abdication
-
-In a broadcast on national media on 28 January 2013, Beatrix announced her intention to abdicate on 30 April (Koninginnedag), when she would have been on the throne for exactly 33 years.
-Beatrix stated that it was time to "place the responsibility for the country in the hands of a new generation."
-Her heir apparent was her eldest son, Prince Willem-Alexander.
-The broadcast was followed by a statement from Prime Minister Mark Rutte who paid tribute to Beatrix, saying "Since her investiture in 1980, she has applied herself heart and soul to Dutch society."
-Post-abdication
-
-Beatrix continues to undertake some royal duties and is a patron of many organisations.
-Honorific eponyms
-
-Beatrix has given her name to a number of facilities in the Netherlands and beyond.
-These include:
-
-
-A few parks in the country also bear her name:
-
-
-It has been speculated that Beatrix is De Onbekende Beeldhouwer (Unknown Sculptor), whose work has been appearing in Amsterdam since 1983.
-Titles, styles, honours and arms
-
-Princess Beatrix has held titles throughout her life, as a granddaughter or daughter of a monarch, and eventually as the Sovereign.
-Beatrix's official title was Her Majesty the Queen of the Netherlands, Princess of Orange-Nassau, etc., etc., etc.
-She signed official documents with only "Beatrix".
-Beatrix has received honours and awards from countries around the world, both during her life as a princess and as a monarch.
-From birth till her inauguration as queen, she had the following name and titles, to which she reverted after her abdication: Her Royal Highness Princess Beatrix of the Netherlands, Princess of Orange-Nassau, Princess of Lippe-Biesterfeld.
-Prime Ministers during her reign
-
-Notes
-
-References
-
-Books
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+Luiz Philippe founded the liberal movement "Acorda Brasil" (Wake up Brazil) in 2014.
+Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real program, and travels Brazil with the lecture Redefinindo o Brasil.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -237,39 +124,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -284,6 +141,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -301,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -368,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -399,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -411,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -419,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -457,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -472,206 +449,74 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d527ceb4-b7a5-443a-805c-d0196ce95ce1)
- Call ID: d527ceb4-b7a5-443a-805c-d0196ce95ce1
+  AssignClass (ba7ac327-87b5-47cd-aa75-fe9a8cf5dbe4)
+ Call ID: ba7ac327-87b5-47cd-aa75-fe9a8cf5dbe4
   Args:
-    type: :Woman
-    source: Beatrix
-  AssignClass (5805d08d-050b-4551-bc91-1b0e41613b64)
- Call ID: 5805d08d-050b-4551-bc91-1b0e41613b64
-  Args:
-    type: :Woman
-    source: Juliana
-  AssignClass (f8b05726-3c29-43b1-8ce1-57af686f2f37)
- Call ID: f8b05726-3c29-43b1-8ce1-57af686f2f37
-  Args:
+    source: Luiz_Philippe_of_Orleans-Braganza
     type: :Man
-    source: Bernhard
-  AssignClass (b35323aa-b922-423b-a3c5-3e3fe594f2af)
- Call ID: b35323aa-b922-423b-a3c5-3e3fe594f2af
+  AssignClass (f51ce87b-296d-4189-af9e-0351f33e7be7)
+ Call ID: f51ce87b-296d-4189-af9e-0351f33e7be7
   Args:
-    type: :Woman
-    source: Irene
-  AssignClass (68a6f1f6-aa72-4b63-b93b-f6de0c5fff90)
- Call ID: 68a6f1f6-aa72-4b63-b93b-f6de0c5fff90
+    type: :Person
+    source: Luiz_Philippe_of_Orleans-Braganza
+  AddLiteral (e74bd180-4120-453b-8e66-a5e9e4acddb9)
+ Call ID: e74bd180-4120-453b-8e66-a5e9e4acddb9
   Args:
-    type: :Woman
-    source: Margriet
-  AssignClass (9a267a5f-92f0-4b67-aafc-ca77c5c99b60)
- Call ID: 9a267a5f-92f0-4b67-aafc-ca77c5c99b60
-  Args:
-    type: :Man
-    source: Claus_von_Amsberg
-  AssignClass (21602a9a-7bf3-4367-b0d5-028f86a95d79)
- Call ID: 21602a9a-7bf3-4367-b0d5-028f86a95d79
-  Args:
-    type: :Man
-    source: Willem-Alexander
-  AssignClass (fb7aa7c3-6b09-4218-945d-eeff74dcb0cc)
- Call ID: fb7aa7c3-6b09-4218-945d-eeff74dcb0cc
-  Args:
-    type: :Woman
-    source: Wilhelmina
-  AddLiteral (46ee47e3-d4e8-4d20-a5fd-03420c60c21b)
- Call ID: 46ee47e3-d4e8-4d20-a5fd-03420c60c21b
-  Args:
+    literal_value: 1969
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1938
-    source: Beatrix
-    literal_type: xsd:positiveInteger
-  AddTriple (b47b0bfd-089c-4bd5-ac9d-03978eb9ea57)
- Call ID: b47b0bfd-089c-4bd5-ac9d-03978eb9ea57
+    source: Luiz_Philippe_of_Orleans-Braganza
+  AddTriple (a4a61e27-0bef-4f33-a8af-abbc6fee4506)
+ Call ID: a4a61e27-0bef-4f33-a8af-abbc6fee4506
   Args:
-    source: Beatrix
-    relation: :hasMother
-    target: Juliana
-  AddTriple (73ecfc94-b8d7-49e2-bc96-6e4fbcdd1fd3)
- Call ID: 73ecfc94-b8d7-49e2-bc96-6e4fbcdd1fd3
-  Args:
-    target: Bernhard
+    source: Luiz_Philippe_of_Orleans-Braganza
+    target: Eudes_of_Orleans-Braganza
     relation: :hasFather
-    source: Beatrix
-  AddTriple (33704e14-a5ca-4fbc-a335-ffafd25d514f)
- Call ID: 33704e14-a5ca-4fbc-a335-ffafd25d514f
+  AddTriple (22895d7c-4891-4677-baf3-d265171fe240)
+ Call ID: 22895d7c-4891-4677-baf3-d265171fe240
   Args:
-    target: Irene
-    relation: :isSisterOf
-    source: Beatrix
-  AddTriple (4c30d122-3ff2-44d5-9df1-3cc4e823d761)
- Call ID: 4c30d122-3ff2-44d5-9df1-3cc4e823d761
-  Args:
-    relation: :isSisterOf
-    source: Beatrix
-    target: Margriet
-  AddTriple (2938543f-e3c8-4552-9316-98cfca0ee411)
- Call ID: 2938543f-e3c8-4552-9316-98cfca0ee411
-  Args:
-    source: Irene
+    source: Luiz_Philippe_of_Orleans-Braganza
+    target: Ana_Maria_de_Moraes_Barros
     relation: :hasMother
-    target: Juliana
-  AddTriple (0ba03a3d-5fcd-4405-9661-41a849ac894d)
- Call ID: 0ba03a3d-5fcd-4405-9661-41a849ac894d
+  AssignClass (a4e55d4f-3978-46dd-b669-707f8109feb4)
+ Call ID: a4e55d4f-3978-46dd-b669-707f8109feb4
   Args:
-    target: Juliana
-    relation: :hasMother
-    source: Margriet
-  AddTriple (6e302998-a52c-419e-8fa4-0e26b6d4bb28)
- Call ID: 6e302998-a52c-419e-8fa4-0e26b6d4bb28
+    type: :Man
+    source: Eudes_of_Orleans-Braganza
+  AssignClass (fc37d938-09d7-4ffc-a198-f5045290b25c)
+ Call ID: fc37d938-09d7-4ffc-a198-f5045290b25c
   Args:
-    target: Wilhelmina
-    source: Beatrix
-    relation: :hasMother
-  AddTriple (caa9506d-5561-456f-b6e8-e4d3a35e72ef)
- Call ID: caa9506d-5561-456f-b6e8-e4d3a35e72ef
+    source: Eudes_of_Orleans-Braganza
+    type: :Person
+  AssignClass (cd55b3ab-d2c6-431e-971c-8b64040bdf41)
+ Call ID: cd55b3ab-d2c6-431e-971c-8b64040bdf41
   Args:
-    target: Wilhelmina
-    source: Juliana
-    relation: :hasMother
-  AddTriple (461d0e8f-d6c0-4614-8db6-7259e25efdab)
- Call ID: 461d0e8f-d6c0-4614-8db6-7259e25efdab
+    type: :Woman
+    source: Ana_Maria_de_Moraes_Barros
+  AssignClass (7cc82413-d39a-49d7-b7a5-6731b04986d1)
+ Call ID: 7cc82413-d39a-49d7-b7a5-6731b04986d1
   Args:
-    target: Juliana
-    relation: :hasMother
-    source: Beatrix
-  AddTriple (1bb031db-ebe4-45a0-b86b-e3452c2da81a)
- Call ID: 1bb031db-ebe4-45a0-b86b-e3452c2da81a
-  Args:
-    source: Beatrix
-    relation: :hasFather
-    target: Bernhard
-  AddTriple (f30665e0-d29d-41af-9894-3b9a60b96644)
- Call ID: f30665e0-d29d-41af-9894-3b9a60b96644
-  Args:
-    relation: :hasSon
-    source: Beatrix
-    target: Willem-Alexander
-  AddTriple (e2f7c383-7310-4a1d-9e93-03f52010240f)
- Call ID: e2f7c383-7310-4a1d-9e93-03f52010240f
-  Args:
-    source: Willem-Alexander
-    relation: :hasMother
-    target: Beatrix
-  AddTriple (ca1b9059-6211-4621-81a0-104dc08e6616)
- Call ID: ca1b9059-6211-4621-81a0-104dc08e6616
+    type: :Person
+    source: Ana_Maria_de_Moraes_Barros
+  AddTriple (7b0363bc-f543-445a-ae98-ea07c4517dcd)
+ Call ID: 7b0363bc-f543-445a-ae98-ea07c4517dcd
   Args:
     relation: :hasFather
-    source: Willem-Alexander
-    target: Claus_von_Amsberg
-  AddLiteral (c8349df2-7c60-4a39-afe0-65b922a62214)
- Call ID: c8349df2-7c60-4a39-afe0-65b922a62214
+    source: Luiz_Philippe_of_Orleans-Braganza
+    target: Pedro_Henrique_of_Orleans-Braganza
+  AssignClass (cd005d10-b238-4e01-8271-032c6068dc51)
+ Call ID: cd005d10-b238-4e01-8271-032c6068dc51
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:positiveInteger
-    source: Beatrix
-    literal_value: 1966
-  AddTriple (9e2d3dfb-4369-43be-8c79-ab8351b92f60)
- Call ID: 9e2d3dfb-4369-43be-8c79-ab8351b92f60
+    type: :Man
+    source: Pedro_Henrique_of_Orleans-Braganza
+  AssignClass (6dbe44be-91f7-4a5d-a75a-e9a7eddf7b13)
+ Call ID: 6dbe44be-91f7-4a5d-a75a-e9a7eddf7b13
   Args:
-    relation: :hasRelation
-    source: Beatrix
-    target: Claus_von_Amsberg
-  AddLiteral (9ec2a56a-0dab-4d24-94f3-0b28a4a8b491)
- Call ID: 9ec2a56a-0dab-4d24-94f3-0b28a4a8b491
+    type: :Person
+    source: Pedro_Henrique_of_Orleans-Braganza
+  Finish (48acfe62-3440-4d01-b6ab-2173d4d4a6f2)
+ Call ID: 48acfe62-3440-4d01-b6ab-2173d4d4a6f2
   Args:
-    source: Claus_von_Amsberg
-    literal_type: xsd:positiveInteger
-    literal_value: 2002
-    relation: :hasDeathYear
-  Finish (a9088435-97b4-4573-a04a-9d329bff313e)
- Call ID: a9088435-97b4-4573-a04a-9d329bff313e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -724,36 +569,21 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Beatrix a :Woman ;
-      :hasBirthYear "1938"^^xsd:positiveInteger ;
-      :hasFather data:Bernhard ;
-      :hasMarriageYear "1966"^^xsd:positiveInteger ;
-      :hasMother data:Juliana,
-          data:Wilhelmina ;
-      :hasRelation data:Claus_von_Amsberg ;
-      :hasSon data:Willem-Alexander ;
-      :isSisterOf data:Irene,
-          data:Margriet .
+  data:Luiz_Philippe_of_Orleans-Braganza a :Man,
+          :Person ;
+      :hasBirthYear 1969 ;
+      :hasFather data:Eudes_of_Orleans-Braganza,
+          data:Pedro_Henrique_of_Orleans-Braganza ;
+      :hasMother data:Ana_Maria_de_Moraes_Barros .
 
-  data:Bernhard a :Man .
+  data:Ana_Maria_de_Moraes_Barros a :Person,
+          :Woman .
 
-  data:Irene a :Woman ;
-      :hasMother data:Juliana .
+  data:Eudes_of_Orleans-Braganza a :Man,
+          :Person .
 
-  data:Margriet a :Woman ;
-      :hasMother data:Juliana .
-
-  data:Willem-Alexander a :Man ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Beatrix .
-
-  data:Claus_von_Amsberg a :Man ;
-      :hasDeathYear "2002"^^xsd:positiveInteger .
-
-  data:Wilhelmina a :Woman .
-
-  data:Juliana a :Woman ;
-      :hasMother data:Wilhelmina .
+  data:Pedro_Henrique_of_Orleans-Braganza a :Man,
+          :Person .
 
 
 
@@ -765,230 +595,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e17712a0-7868-4a97-a95b-adc732e2f41c)
- Call ID: e17712a0-7868-4a97-a95b-adc732e2f41c
+  ValidateShacl (f6bcc829-9f26-49e5-8a0f-dfdc4e9e271e)
+ Call ID: f6bcc829-9f26-49e5-8a0f-dfdc4e9e271e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:27
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Claus_von_Amsberg' is assigned as the father of 'Willem-Alexander' but lacks the required :Ancestor class.
+      The node 'Pedro_Henrique_of_Orleans-Braganza' is assigned to 'Luiz_Philippe_of_Orleans-Braganza' as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
+      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required :Ancestor class.
+      The node 'Eudes_of_Orleans-Braganza' is assigned to 'Luiz_Philippe_of_Orleans-Braganza' as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
+      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: More than 1 values on data:Luiz_Philippe_of_Orleans-Braganza->:hasFather
     LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required :Ancestor class.
+      The node 'Luiz_Philippe_of_Orleans-Braganza' has more than one father, violating the functional property constraint of having only one 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
+      RemoveTriple(subject='Luiz_Philippe_of_Orleans-Braganza', predicate=':hasFather', object='Eudes_of_Orleans-Braganza')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Claus_von_Amsberg' is assigned as the father of 'Willem-Alexander' but lacks the required :Ancestor class.
+      The node 'Ana_Maria_de_Moraes_Barros' is assigned as a mother, but it lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
+      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Woman')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana' but lacks the required :Ancestor class.
+      The node 'Pedro_Henrique_of_Orleans-Braganza' is assigned as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
+      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Margriet' but lacks the required :Ancestor class.
+      The node 'Eudes_of_Orleans-Braganza' is assigned as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Luiz_Philippe_of_Orleans-Braganza->:hasFather
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
+      The node 'Luiz_Philippe_of_Orleans-Braganza' has more than one father, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
+      RemoveTriple(subject='Luiz_Philippe_of_Orleans-Braganza', predicate=':hasFather', object='Eudes_of_Orleans-Braganza')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
+      The node 'Ana_Maria_de_Moraes_Barros' is assigned as a mother, but it lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Woman')
 
 
   Violation [9]:
-    SHACL message: More than 1 values on data:Beatrix->:hasMother
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' has multiple mothers assigned, which violates the functional property constraint.
+      The node 'Pedro_Henrique_of_Orleans-Braganza' is assigned as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Beatrix', predicate=':hasMother', object='Wilhelmina')
+      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required :Ancestor class.
+      The node 'Eudes_of_Orleans-Braganza' is assigned as a father, but it lacks the required class ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
+      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Man')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Luiz_Philippe_of_Orleans-Braganza->:hasFather
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Irene' but lacks the required :Ancestor class.
+      The node 'Luiz_Philippe_of_Orleans-Braganza' has more than one father, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      RemoveTriple(subject='Luiz_Philippe_of_Orleans-Braganza', predicate=':hasFather', object='Eudes_of_Orleans-Braganza')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Claus_von_Amsberg' is assigned as the father of 'Willem-Alexander' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_von_Amsberg', class=':Ancestor')
-
-
-  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana' but lacks the required :Ancestor class.
+      The node 'Ana_Maria_de_Moraes_Barros' is assigned as a mother, but it lacks the required class ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Margriet' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: More than 1 values on data:Beatrix->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Beatrix' has multiple mothers assigned, which violates the functional property constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Beatrix', predicate=':hasMother', object='Juliana')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Irene' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Margriet' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: More than 1 values on data:Beatrix->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Beatrix' has multiple mothers assigned, which violates the functional property constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Beatrix', predicate=':hasMother', object='Wilhelmina')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Irene' but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Woman')
 
 
 
@@ -997,41 +707,36 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0f3263cd-0dda-47da-91a2-e69e94a4619e)
- Call ID: 0f3263cd-0dda-47da-91a2-e69e94a4619e
+  RemoveTriple (b32c049b-6491-4657-826a-544678292562)
+ Call ID: b32c049b-6491-4657-826a-544678292562
   Args:
-    source: Claus_von_Amsberg
+    target: Pedro_Henrique_of_Orleans-Braganza
+    source: Luiz_Philippe_of_Orleans-Braganza
+    relation: :hasFather
+  AssignClass (0b70b1dc-5f3b-4c89-a01a-91fa3b065eeb)
+ Call ID: 0b70b1dc-5f3b-4c89-a01a-91fa3b065eeb
+  Args:
+    source: Eudes_of_Orleans-Braganza
     type: :Ancestor
-  AssignClass (ce99d9da-ccfe-4eab-845a-59c6cb11c083)
- Call ID: ce99d9da-ccfe-4eab-845a-59c6cb11c083
+  AssignClass (194ad5a7-b073-4930-b287-c13f208445aa)
+ Call ID: 194ad5a7-b073-4930-b287-c13f208445aa
   Args:
-    source: Beatrix
+    source: Ana_Maria_de_Moraes_Barros
     type: :Ancestor
-  AssignClass (f61fc0c2-c324-4990-93ec-e8e5894b5e17)
- Call ID: f61fc0c2-c324-4990-93ec-e8e5894b5e17
+  AssignClass (8c5a171e-5647-44f7-8885-fc368618d33a)
+ Call ID: 8c5a171e-5647-44f7-8885-fc368618d33a
   Args:
-    source: Bernhard
+    source: Pedro_Henrique_of_Orleans-Braganza
     type: :Ancestor
-  AssignClass (f1034eea-aa6a-46bc-9752-cbd2a07e9886)
- Call ID: f1034eea-aa6a-46bc-9752-cbd2a07e9886
+  AddTriple (d6577c91-3d90-4209-abc2-d68729ee104c)
+ Call ID: d6577c91-3d90-4209-abc2-d68729ee104c
   Args:
-    type: :Ancestor
-    source: Wilhelmina
-  AssignClass (857608ef-9253-488e-aa2c-e5820d7b349a)
- Call ID: 857608ef-9253-488e-aa2c-e5820d7b349a
+    source: Eudes_of_Orleans-Braganza
+    relation: :hasFather
+    target: Pedro_Henrique_of_Orleans-Braganza
+  Finish (cb777bfb-84f6-4f03-a3d2-6dc0231dd9ee)
+ Call ID: cb777bfb-84f6-4f03-a3d2-6dc0231dd9ee
   Args:
-    type: :Ancestor
-    source: Juliana
-  RemoveTriple (daba9333-1740-4bec-babd-7255bdf5fa43)
- Call ID: daba9333-1740-4bec-babd-7255bdf5fa43
-  Args:
-    relation: :hasMother
-    target: Wilhelmina
-    source: Beatrix
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1056,49 +761,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Beatrix a :Ancestor,
-          :Woman ;
-      :hasBirthYear "1938"^^xsd:positiveInteger ;
-      :hasFather data:Bernhard ;
-      :hasMarriageYear "1966"^^xsd:positiveInteger ;
-      :hasMother data:Juliana ;
-      :hasRelation data:Claus_von_Amsberg ;
-      :hasSon data:Willem-Alexander ;
-      :isSisterOf data:Irene,
-          data:Margriet .
+  data:Luiz_Philippe_of_Orleans-Braganza a :Man,
+          :Person ;
+      :hasBirthYear 1969 ;
+      :hasFather data:Eudes_of_Orleans-Braganza ;
+      :hasMother data:Ana_Maria_de_Moraes_Barros .
 
-  data:Bernhard a :Ancestor,
-          :Man .
-
-  data:Irene a :Woman ;
-      :hasMother data:Juliana .
-
-  data:Margriet a :Woman ;
-      :hasMother data:Juliana .
-
-  data:Wilhelmina a :Ancestor,
+  data:Ana_Maria_de_Moraes_Barros a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Willem-Alexander a :Man ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Beatrix .
+  data:Eudes_of_Orleans-Braganza a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Pedro_Henrique_of_Orleans-Braganza .
 
-  data:Claus_von_Amsberg a :Ancestor,
-          :Man ;
-      :hasDeathYear "2002"^^xsd:positiveInteger .
-
-  data:Juliana a :Ancestor,
-          :Woman ;
-      :hasMother data:Wilhelmina .
+  data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (72c9489a-609f-4520-9d77-8e19bc506bd4)
- Call ID: 72c9489a-609f-4520-9d77-8e19bc506bd4
+  ValidateShacl (f49e1ed8-3261-42db-a0b4-94039b8b71d7)
+ Call ID: f49e1ed8-3261-42db-a0b4-94039b8b71d7
   Args:
 
 ================================= Tool Message =================================
@@ -1109,6 +802,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (41ae18c6-9901-4692-9edf-1198c69772c7)
- Call ID: 41ae18c6-9901-4692-9edf-1198c69772c7
+  Finish (22ae9a78-fbf9-4aa0-bca1-bca70dc9eb5a)
+ Call ID: 22ae9a78-fbf9-4aa0-bca1-bca70dc9eb5a
   Args:

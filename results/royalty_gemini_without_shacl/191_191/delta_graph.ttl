@@ -2,34 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabelle_of_Orleans a :Person,
+data:EmanueleFilibertoDukeOfAosta a :Man,
+        :Person .
+
+data:HeleneOfOrleans a :Person,
         :Woman ;
-    :hasBirthYear 1878 ;
-    :hasBrother data:Philippe_of_Orleans_Duke_of_Orleans ;
-    :hasDeathYear 1962 ;
-    :hasFather data:Philippe_Count_of_Paris ;
-    :hasMarriageYear 1899 ;
-    :hasMother data:Maria_Isabel_of_Spain ;
-    :hasRelation data:Prince_Jean_Duke_of_Guise ;
-    :knownAs "Isabelle Marie Laure Mercédès Ferdinande"^^xsd:string .
+    :hasBirthYear 1871 ;
+    :hasBrother data:PhilippeDukeOfOrleans ;
+    :hasDeathYear 1951 ;
+    :hasFather data:PhilippeCountOfParis ;
+    :hasMarriageYear 1895,
+        1936 ;
+    :hasMother data:MariaIsabelOfSpain ;
+    :hasSister data:AmelieOfOrleans,
+        data:IsabelleDuchessOfGuise .
 
-data:Francoise_dOrleans a :Person,
-        :Woman .
-
-data:Maria_Isabel_of_Spain a :Person,
-        :Woman .
-
-data:Philippe_Count_of_Paris a :Man,
+data:OttoCampini a :Man,
         :Person .
 
-data:Philippe_of_Orleans_Duke_of_Orleans a :Man,
+data:AmelieOfOrleans a :Person,
+        :Woman .
+
+data:IsabelleDuchessOfGuise a :Person,
+        :Woman .
+
+data:MariaIsabelOfSpain a :Person,
+        :Woman .
+
+data:PhilippeCountOfParis a :Man,
         :Person .
 
-data:Prince_Jean_Duke_of_Guise a :Man,
-        :Person ;
-    :hasFather data:Robert_Duke_of_Chartres ;
-    :hasMother data:Francoise_dOrleans .
-
-data:Robert_Duke_of_Chartres a :Man,
+data:PhilippeDukeOfOrleans a :Man,
         :Person .
 

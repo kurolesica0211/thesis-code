@@ -1,0 +1,426 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Bechtold_von_Bernstorff a :Man ;
+    :hasBrother data:Bechtold_von_Bernstorff ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isBloodrelationOf data:Bechtold_von_Bernstorff ;
+    :isBrotherOf data:Bechtold_von_Bernstorff ;
+    :isSiblingOf data:Bechtold_von_Bernstorff .
+
+data:Bathildis_of_Schaumburg-Lippe a :Ancestor,
+        :Woman ;
+    :hasChild data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasDaughter data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Bathildis_of_Schaumburg-Lippe ;
+    :isAncestorOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isAuntOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Bathildis_of_Schaumburg-Lippe ;
+    :isMotherOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Bathildis_of_Schaumburg-Lippe ;
+    :isSisterOf data:Bathildis_of_Schaumburg-Lippe .
+
+data:Elisabeth_of_Saxe-Altenburg a :Ancestor,
+        :Woman ;
+    :hasChild data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Elisabeth_of_Saxe-Altenburg ;
+    :hasSon data:Frederick_Augustus_II_of_Oldenburg ;
+    :isAncestorOf data:Frederick_Augustus_II_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isAuntOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isBloodrelationOf data:Elisabeth_of_Saxe-Altenburg ;
+    :isMotherOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isParentOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isSiblingOf data:Elisabeth_of_Saxe-Altenburg ;
+    :isSisterOf data:Elisabeth_of_Saxe-Altenburg .
+
+data:Friedrich_Prince_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :hasChild data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasDaughter data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isAncestorOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :isBrotherOf data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :isFatherOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :isUncleOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Peter_II_of_Oldenburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Peter_II_of_Oldenburg ;
+    :hasChild data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSon data:Frederick_Augustus_II_of_Oldenburg ;
+    :isAncestorOf data:Frederick_Augustus_II_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Peter_II_of_Oldenburg ;
+    :isBrotherOf data:Peter_II_of_Oldenburg ;
+    :isFatherOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isParentOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isSiblingOf data:Peter_II_of_Oldenburg ;
+    :isUncleOf data:Frederick_Augustus_II_of_Oldenburg .
+
+data:Rose_Marston a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasChild data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :hasDaughter data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :hasDeathYear 1957 ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Rose_Marston ;
+    :isAncestorOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isAuntOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isBloodrelationOf data:Rose_Marston ;
+    :isMotherOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isParentOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isSiblingOf data:Rose_Marston ;
+    :isSisterOf data:Rose_Marston .
+
+data:Rudolf_von_Schutzbar_gen_Milchling a :Ancestor,
+        :Man ;
+    :hasBirthYear 1853 ;
+    :hasBrother data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasChild data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :hasDaughter data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :hasDeathYear 1935 ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isAncestorOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isBloodrelationOf data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isBrotherOf data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isFatherOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isParentOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isSiblingOf data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isUncleOf data:Anne-Marie_von_Schutzbar_genannt_Milchling .
+
+data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasChild data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isAncestorOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasChild data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isAncestorOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Nikolaus_of_Oldenburg ;
+    :isAuntOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Anne-Marie_von_Schutzbar_genannt_Milchling a :Woman ;
+    :hasAncestor data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasMother data:Rose_Marston ;
+    :hasParent data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isBloodrelationOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isChildOf data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isDaughterOf data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isSiblingOf data:Anne-Marie_von_Schutzbar_genannt_Milchling ;
+    :isSisterOf data:Anne-Marie_von_Schutzbar_genannt_Milchling .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+    :hasAncestor data:Bathildis_of_Schaumburg-Lippe,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg-Lippe ;
+    :hasParent data:Bathildis_of_Schaumburg-Lippe,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Helena_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isChildOf data:Bathildis_of_Schaumburg-Lippe,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :isDaughterOf data:Bathildis_of_Schaumburg-Lippe,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Nikolaus_of_Oldenburg a :Man ;
+    :hasAncestor data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Peter_II_of_Oldenburg ;
+    :hasBirthYear 1897 ;
+    :hasBrother data:Nikolaus_of_Oldenburg ;
+    :hasDeathYear 1970 ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMarriageYear 1921,
+        1950 ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :isBloodrelationOf data:Nikolaus_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus_of_Oldenburg ;
+    :isChildOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus_of_Oldenburg ;
+    :isSonOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBirthYear 1869 ;
+    :hasChild data:Nikolaus_of_Oldenburg ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSister data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Nikolaus_of_Oldenburg ;
+    :isAuntOf data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isDaughterOf data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Nikolaus_of_Oldenburg ;
+    :isParentOf data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Elisabeth_of_Saxe-Altenburg,
+        data:Peter_II_of_Oldenburg ;
+    :hasBirthYear 1852 ;
+    :hasBrother data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasChild data:Nikolaus_of_Oldenburg ;
+    :hasDeathYear 1931 ;
+    :hasFather data:Peter_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_of_Saxe-Altenburg ;
+    :hasParent data:Elisabeth_of_Saxe-Altenburg,
+        data:Peter_II_of_Oldenburg ;
+    :hasRelation data:Anne-Marie_von_Schutzbar_genannt_Milchling,
+        data:Bathildis_of_Schaumburg-Lippe,
+        data:Bechtold_von_Bernstorff,
+        data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Elisabeth_of_Saxe-Altenburg,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Frederick_Francis_II_of_Mecklenburg-Schwerin,
+        data:Friedrich_Prince_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Marie_of_Schwarzburg-Rudolstadt,
+        data:Nikolaus_of_Oldenburg,
+        data:Peter_II_of_Oldenburg,
+        data:Rose_Marston,
+        data:Rudolf_von_Schutzbar_gen_Milchling ;
+    :hasSon data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isChildOf data:Elisabeth_of_Saxe-Altenburg,
+        data:Peter_II_of_Oldenburg ;
+    :isFatherOf data:Nikolaus_of_Oldenburg ;
+    :isParentOf data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isSonOf data:Elisabeth_of_Saxe-Altenburg,
+        data:Peter_II_of_Oldenburg ;
+    :isUncleOf data:Nikolaus_of_Oldenburg .
+

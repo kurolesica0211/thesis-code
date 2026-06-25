@@ -1,136 +1,72 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/315_315",
-  "text_file": "Q50998.txt",
-  "text_key": "Q50998",
-  "article": "https://en.wikipedia.org/wiki/Prince_Adalbert_of_Prussia_(1884%E2%80%931948)",
-  "article_key": "Prince Adalbert of Prussia",
+  "text_file": "Q5041442.txt",
+  "text_key": "Q5041442",
+  "article": "https://en.wikipedia.org/wiki/Carlo_Alessandro,_3rd_Duke_of_Castel_Duino",
+  "article_key": "Carlo Alessandro, 3rd Duke of Castel Duino",
   "main_entity": {
-    "uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
-    "qid": "Q50998",
-    "label": "Prince Adalbert of Prussia"
+    "uri": "http://example.com/data#Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino",
+    "qid": "Q5041442",
+    "label": "Prince Carlo Alessandro, 3rd Duke of Castel Duino"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
-      "qid": "Q50998",
-      "label": "Prince Adalbert of Prussia",
+      "uri": "http://example.com/data#Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino",
+      "qid": "Q5041442",
+      "label": "Prince Carlo Alessandro, 3rd Duke of Castel Duino",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
-      "qid": "Q161247",
-      "label": "Augusta Victoria of Schleswig-Holstein",
+      "uri": "http://example.com/data#Princess_Eugénie_of_Greece_and_Denmark",
+      "qid": "Q2379307",
+      "label": "Princess Eugénie of Greece and Denmark",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Frederica_of_Hanover",
-      "qid": "Q61351",
-      "label": "Frederica of Hanover",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Prince_August_Wilhelm_of_Prussia",
-      "qid": "Q58777",
-      "label": "Prince August Wilhelm of Prussia",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Wilhelm_of_Prussia",
-      "qid": "Q77556",
-      "label": "Prince Wilhelm of Prussia",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Wilhelm_II",
-      "qid": "Q2677",
-      "label": "Wilhelm II",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Prince_Adalbert_of_Prussia",
-      "extracted_local_name": "Prince_Adalbert_of_Prussia",
-      "embedding_text": "Prince Adalbert of Prussia",
+      "extracted_uri": "http://example.org/data/Eugenie_of_Greece_and_Denmark",
+      "extracted_local_name": "Eugenie_of_Greece_and_Denmark",
+      "embedding_text": "Eugenie of Greece and Denmark",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9285714285714286,
+      "ground_truth_uri": "http://example.com/data#Princess_Eugénie_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q2379307",
+      "ground_truth_label": "Princess Eugénie of Greece and Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Eugénie of Greece and Denmark",
+      "best_candidate_label": "Princess Eugénie of Greece and Denmark",
+      "best_candidate_qid": "Q2379307",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9285714285714286
+    },
+    {
+      "extracted_uri": "http://example.org/data/Carlo_Alessandro_della_Torre_e_Tasso",
+      "extracted_local_name": "Carlo_Alessandro_della_Torre_e_Tasso",
+      "embedding_text": "Carlo Alessandro della Torre e Tasso",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Prince_Adalbert_of_Prussia",
-      "ground_truth_qid": "Q50998",
-      "ground_truth_label": "Prince Adalbert of Prussia",
+      "score": 0.7659574468085106,
+      "ground_truth_uri": "http://example.com/data#Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino",
+      "ground_truth_qid": "Q5041442",
+      "ground_truth_label": "Prince Carlo Alessandro, 3rd Duke of Castel Duino",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Adalbert of Prussia",
-      "best_candidate_label": "Prince Adalbert of Prussia",
-      "best_candidate_qid": "Q50998",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Augusta_Victoria_of_Schleswig_Holstein",
-      "extracted_local_name": "Augusta_Victoria_of_Schleswig_Holstein",
-      "embedding_text": "Augusta Victoria of Schleswig Holstein",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.5925925925925926,
-      "ground_truth_uri": "http://example.com/data#Augusta_Victoria_of_Schleswig-Holstein",
-      "ground_truth_qid": "Q161247",
-      "ground_truth_label": "Augusta Victoria of Schleswig-Holstein",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Augusta Victoria",
-      "best_candidate_label": "Augusta Victoria of Schleswig-Holstein",
-      "best_candidate_qid": "Q161247",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.5925925925925926
-    },
-    {
-      "extracted_uri": "http://example.org/data/Wilhelm_II_German_Emperor",
-      "extracted_local_name": "Wilhelm_II_German_Emperor",
-      "embedding_text": "Wilhelm II German Emperor",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.5714285714285714,
-      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
-      "ground_truth_qid": "Q2677",
-      "ground_truth_label": "Wilhelm II",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Wilhelm II",
-      "best_candidate_label": "Wilhelm II",
-      "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.5714285714285714
-    },
-    {
-      "extracted_uri": "http://example.org/data/Countess_Adelaide_of_Lippe_Biesterfeld",
-      "extracted_local_name": "Countess_Adelaide_of_Lippe_Biesterfeld",
-      "embedding_text": "Countess Adelaide of Lippe Biesterfeld",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Friederike Luise von Griechenland",
-      "best_candidate_label": "Frederica of Hanover",
-      "best_candidate_qid": "Q61351",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.16901408450704225
+      "best_candidate_match_text": "Carlo Alessandro della Torre e Tasso, Duke di Castel Duino",
+      "best_candidate_label": "Prince Carlo Alessandro, 3rd Duke of Castel Duino",
+      "best_candidate_qid": "Q5041442",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7659574468085106
     },
     {
-      "extracted_uri": "http://example.org/data/Prince_Frederick_of_Saxe_Meiningen",
-      "extracted_local_name": "Prince_Frederick_of_Saxe_Meiningen",
-      "embedding_text": "Prince Frederick of Saxe Meiningen",
+      "extracted_uri": "http://example.org/data/Raimundo",
+      "extracted_local_name": "Raimundo",
+      "embedding_text": "Raimundo",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -139,34 +75,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Friedrich Wilhelm Emperor William II",
-      "best_candidate_label": "Wilhelm II",
-      "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4
-    },
-    {
-      "extracted_uri": "http://example.org/data/Princess_Adelheid_of_Saxe_Meiningen",
-      "extracted_local_name": "Princess_Adelheid_of_Saxe_Meiningen",
-      "embedding_text": "Princess Adelheid of Saxe Meiningen",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Friederike Luise von Griechenland",
-      "best_candidate_label": "Frederica of Hanover",
-      "best_candidate_qid": "Q61351",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2647058823529412
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 3,
-    "entities_unmatched": 3
+    "entities_total": 3,
+    "entities_matched": 2,
+    "entities_unmatched": 1
   }
 }

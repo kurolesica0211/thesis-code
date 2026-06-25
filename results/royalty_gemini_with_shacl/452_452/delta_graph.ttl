@@ -2,23 +2,21 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Gabriella_Kingston a :Person,
+data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
         :Woman ;
-    :hasBirthYear 1981 ;
-    :hasFather data:Prince_Michael_of_Kent ;
-    :hasMarriageYear 2019 ;
-    :hasMother data:Princess_Michael_of_Kent ;
-    :hasRelation data:Thomas_Henry_Robin_Kingston .
+    :hasBirthYear 1940 ;
+    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :hasMother data:Alicia_of_Bourbon-Parma .
 
-data:Prince_Michael_of_Kent a :Ancestor,
+data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,
         :Man,
-        :Person .
-
-data:Princess_Michael_of_Kent a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Thomas_Henry_Robin_Kingston a :Man,
         :Person ;
-    :hasDeathYear 2024 .
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 .
+
+data:Alicia_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2017 .
 

@@ -7,24 +7,55 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Elizabeth_Cator a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth Cator" ;
-    data:posIndicesFull "404:424" ;
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "215:233",
+        "221:233" ;
     data:posIndicesPart "1058:1067",
         "1179:1188" ;
-    data:wdtLink wdt:Q75240065 ;
-    :alsoKnownAs "Elizabeth Bowes-Lyon",
-        "Elizabeth Margaret Bowes-Lyon",
-        "Elizabeth Margaret Cator" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
     :hasSex data:female .
 
-data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
+    data:posIndicesFull "0:42" ;
+    data:posIndicesPart "1226:1237",
+        "1307:1311",
+        "1312:1323",
+        "247:251",
+        "252:263",
+        "288:292",
+        "513:517",
+        "518:522",
+        "622:633",
+        "947:951",
+        "952:963" ;
+    data:wdtLink wdt:Q6779476 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon",
+        "Lady Mary Frances Bowes-Lyon",
+        "Mary Frances Elphinstone, Lady Elphinstone" ;
+    :hasSex data:female .
+
+data:Princess_Anne_of_Denmark a :Person ;
+    rdfs:label "Princess Anne of Denmark" ;
+    data:posIndicesFull "49:63" ;
+    data:posIndicesPart "1049:1057",
+        "1170:1178" ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson",
+        "Anne Anson, Viscountess Anson",
+        "Anne Bowes-Lyon",
+        "Anne Ferelith Fenella Anson",
+        "Anne Ferelith Fenella Anson, Viscountess Anson",
+        "Anne Ferelith Fenella Bowes-Lyon",
+        "Princess Anne Ferelith Fenella of Denmark" ;
+    :hasSex data:female .
+
+data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Person ;
     rdfs:label "Sidney Elphinstone, 16th Lord Elphinstone" ;
     data:posIndicesFull "531:572" ;
     data:posIndicesPart "1221:1225",
@@ -45,78 +76,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Anne_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Anne of Denmark" ;
-    data:posIndicesFull "49:63" ;
-    data:posIndicesPart "1049:1057",
-        "1170:1178" ;
-    data:wdtLink wdt:Q2871729 ;
-    :alsoKnownAs "Anne Anson",
-        "Anne Anson, Viscountess Anson",
-        "Anne Bowes-Lyon",
-        "Anne Ferelith Fenella Anson",
-        "Anne Ferelith Fenella Anson, Viscountess Anson",
-        "Anne Ferelith Fenella Bowes-Lyon",
-        "Princess Anne Ferelith Fenella of Denmark" ;
-    :hasSex data:female .
-
-data:Mary_Elphinstone-_Lady_Elphinstone a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
-    data:posIndicesFull "0:42" ;
-    data:posIndicesPart "1226:1237",
-        "1307:1311",
-        "1312:1323",
-        "247:251",
-        "252:263",
-        "288:292",
-        "513:517",
-        "518:522",
-        "622:633",
-        "947:951",
-        "952:963" ;
-    data:wdtLink wdt:Q6779476 ;
-    :alsoKnownAs "Lady Mary Bowes-Lyon",
-        "Lady Mary Frances Bowes-Lyon",
-        "Mary Frances Elphinstone, Lady Elphinstone" ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isAuntOf data:Elizabeth_II,
-        data:Princess_Anne_of_Denmark ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "186:192" ;
-    data:posIndicesPart "1200:1211" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :isChildOf data:Elizabeth_II ;
-    :isSonOf data:Elizabeth_II .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "153:168",
         "169:185",
@@ -142,36 +102,9 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :hasSister data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isAuntOf data:Princess_Anne_of_Denmark ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isSisterOf data:Mary_Elphinstone-_Lady_Elphinstone .
+    :hasSex data:female .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "215:233",
-        "221:233" ;
-    data:posIndicesPart "1058:1067",
-        "1179:1188" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSon data:Andrew_Mountbatten-Windsor ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor ;
-    :isParentOf data:Andrew_Mountbatten-Windsor .
+data:male a :Male .
+
+data:female a :Female .
 

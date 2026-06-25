@@ -85,72 +85,59 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Luís of Orléans-Braganza (26 January 1878 – 26 March 1920), nicknamed "the Perfect Prince", was the second son of Isabel, Princess Imperial of Brazil and Prince Gaston, Count of Eu, and patriarch of the Vassouras branch of the House of Orléans-Braganza.
-In 1908, the year he married, his older brother Pedro renounced his claim to succeed his mother in her claim to the imperial throne, leaving Dom Luís as her heir.
-Childhood
+Alexander Albert Mountbatten, 1st Marquess of Carisbrooke (born Prince Alexander Albert of Battenberg; 23 November 1886 – 23 February 1960) was a British Royal Navy officer, a member of the Hessian princely Battenberg family and the last surviving grandson of Queen Victoria.
+Early life
 
-Luís was born at Petrópolis on 26 January 1878, to Prince Gaston d'Orléans, Count of Eu, and Isabel, Princess Imperial of Brazil.
-His name in full was Luís Maria Filipe Pedro de Alcântara Gastão Miguel Rafael Gonzaga.
-While on a trip to Europe with his family, an earthquake occurred on 23 February 1887, and while his older brother Pedro appeared very nervous and cried, Luís simply stood calm and showed no emotions.
-Although Pedro was gentle and likeable, he did not like to study and was often clumsy, while Luís had a strong will, was active and apparently intelligent.
-Gaston affirmed in another letter, written in March 1890, that "Baby Pedro  always notable for laziness and ineptness," while "Luís does the identical course work all by himself with admirable distinction and capacity."
-Luís was always impelled to action thanks to his restless spirit that would take him in his childhood to sports and as an adult to politics.
-When the coup that replaced the monarchy with the republic occurred on 15 November 1889, Isabel preferred to send her children to Petrópolis, where later Luís would remember that "locked up in the palace, they had left us during two long days in the most complete ignorance of what was happening out there" until they were sent back to their parents and then left for forced exile.
-In 1890, fifteen-year-old Pedro, thirteen-year-old Luís, and their younger brother Antônio (nicknamed "Totó"), moved along with their parents to the outskirts of Versailles.
-Luís's older brother, Pedro, reached the age of majority in 1893, but he had no capacity or desire to assume the monarchist cause.
-Luís and his brother Antônio followed their older brother at the same military school.
-Meanwhile, Luís was ambitious and active, eager to make his mark on the world.
-Luís was seen by his parents as the only member of the Imperial family capable of helping the monarchist movement in Brazil.
-However, Luís was prevented from disembarking and was not allowed to set foot on his native land by the republican government.
-Luís became engaged to his cousin Maria Pia of Bourbon-Two Sicilies, a granddaughter of a brother of Luís's maternal grandmother, Teresa Cristina.
-I Prince Pedro de Alcântara Luís Filipe Maria Gastão Miguel Gabriel Rafael Gonzaga of Orléans and Braganza, having maturely reflected, have resolved to renounce the right that, by the Constitution of the Empire of Brazil, promulgated on March 25, 1824, accords to me the Crown of that nation.
-Cannes October 30, 1908 signed: Pedro de Alcântara of Orléans-Braganza
+Alexander, known as Drino, was born in 1886 at Windsor Castle in Berkshire and was educated at Wellington College and at the Britannia Royal Naval College.
+His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julie née Countess of Hauke.
+His mother was Princess Beatrice of the United Kingdom, the fifth daughter and the youngest child of Queen Victoria and Prince Albert.
+Prince Henry of Battenberg was the product of a morganatic marriage and took his style of Prince of Battenberg from his mother, Julia von Hauke, who was created Princess of Battenberg in her own right.
+At his birth, Alexander was styled His Serene Highness Prince Alexander of Battenberg because the child of a morganatic marriage is ineligible for "Grand-Ducal Highness" status.
+His godparents were Queen Victoria of the United Kingdom (his maternal grandmother), Prince Alexander of Hesse and by Rhine (his paternal grandfather), the Prince of Wales (his maternal uncle), Prince Alexander of Battenberg (his paternal uncle), and Princess Irene of Hesse and by Rhine (his maternal first cousin and paternal second cousin).
+Alexander was the brother-in-law to Alfonso XIII of Spain, who married Alexander's sister, Princess Victoria Eugenia, in 1906.
+Military service and honours
 
+Alexander passed a qualifying examination to become service cadet in the Royal Navy in March 1902, and subsequently joined the cadet training ship HMS Britannia at Dartmouth on 8 May 1902.
+Several of his Mountbatten cousins were also subsequently members, including his first cousins once removed the Marquess of Milford Haven and Duke of Edinburgh.
+He held several other foreign orders and decorations: Grand Cross and Collar of Order of Charles III (Spain), Order of Leopold, with swords (Belgium), Order of Saint Alexander Nevsky (Russia), Order of Naval Merit, fourth class (Spain), Order of the Nile (Egypt), Order of the Crown (Romania), and Croix de Guerre, with palms (France).
+During World War II, despite being in his mid-fifties, the Marquess joined the Royal Air Force and was commissioned an acting pilot officer on 6 June 1941.
+Marquess of Carisbrooke
 
-This renunciation was followed by a letter from Isabel to royalists in Brazil:
+Anti-German feeling during World War I led George V to change the name of the Royal House in July 1917 from the House of Saxe-Coburg-Gotha to the House of Windsor.
+The Battenberg family relinquished their titles of Prince and Princess of Battenberg and the styles of Highness and Serene Highness.
+Under royal warrant, they instead took the surname Mountbatten, an Anglicised form of Battenberg.
+As such, Prince Alexander became Sir Alexander Mountbatten.
+On 7 November 1917, he was created Marquess of Carisbrooke, Earl of Berkhamsted and Viscount Launceston.
+In the 1930s, author E. F. Benson dedicated two of his famous novels, Mapp and Lucia and Lucia's Progress, to the Marquess of Carisbrooke.
+Marriage
 
-November 9, 1908,  Eu
-
-Most Excellent Gentlemen Members of the Monarchist Directory,
-
-With all my heart I thank you for the congratulations upon the marriages of my dear children Pedro and Luís.
-Luís' took place in Cannes on day 4 with the brilliance that is desired for so solemn an act in the life of my successor to the Throne of Brazil.
-Before the marriage of Luís he signed his resignation to the crown of Brazil, and here I send it to you, while keeping here an identical copy.
-Luís will engage actively in everything with respect to the monarchy and any good for our land.
-I give you all my friendship and confidence,
-
-The marriage of Luís and Maria Pia was celebrated on 4 November at Cannes, and that of Pedro and Elizabeth ten days later at Versailles.
-From the union of Luís and Maria Pia three children were born: Pedro Henrique, who became the direct successor to Princess Isabel and Head of the Imperial House of Brazil after her death in 1921; Luís Gastão, and Pia Maria.
-Isabel did not take long to reveal her opinion about her grandchildren and wrote in a letter in 1914: "I am sending enclosed a photograph of myself with my grandchildren by Luís.
-"
+On 19 July 1917, he married Lady Irene Denison (4 July 1890 – 16 July 1956), the only daughter of the 2nd Earl of Londesborough and his wife, Lady Grace Adelaide Fane, at the Chapel Royal of St James's Palace.
+Lord and Lady Carisbrooke had one child, a daughter:
+Carisbrooke was likely homosexual or bisexual; according to the published diaries of Cecil Beaton, in his later years, Lord Carisbrooke had a longtime male lover, Simon Fleet.
+More is written about Lord Carisbrooke and his wife in the published diaries of James Lees-Milne and Henry "Chips" Channon.
 
 
-Political activity
+Residences
 
-With the renunciation of the throne by his brother, Luís could finally collaborate effectively with the Brazilian monarchic movement, assuming clearly his position as heir to the throne (after his mother) and trying to assume the leadership of the restoration campaign.
-Luís defended ideas that were well ahead of his time and the necessity to guarantee worthy conditions of subsistence for the Brazilian workers would only be observed thirty years later during the dictatorship of Getúlio Vargas.
-The progressive vision of Luís made him a target for accusations of being a "socialist" and a "radical" when, in reality, his intent was to hinder the work force from adhering to socialism, communism, or even anarchism.
-The start of World War I in August 1914 and the invasion of France by Germany made it possible for Luís to once more prove his idealism and activism as, in his own words, he was a "soldier heart and soul".
-Luís joined the army while Antônio served as an air force pilot.
-While fighting in the trenches of Flanders in 1915 Luís contracted an aggressive type of bone rheumatism that left him very weak and incapable of walking.
-As a consequence of his actions in the conflict and for his bravery, Luís received several decorations: Military medal of the Yser, from King Albert I of Belgium; Legion of Honour, in the degree of knight, and the Cross of War from the French government; the British War Medal, the Victory Medal and Star from the Great Britain.
-As his mother lived until 1921, her successor in pretense to the throne of Brazil was her grandson, Pedro Henrique, Luís's son.
-"He died, unexpectedly, in Cannes, D. Luiz de Orléans e Bragança, died in exile where he was purging the crime of being Pedro II grandson.
-Their presence would shame our phrygian cap..."
+By 1926 Lord and Lady Carisbrooke had established a London residence at No. 4 Belgrave Place, Belgravia, which continued to be their London home until early 1931.
+By 1938 Lord and Lady Carisbrooke lived at Kensington Palace.
+Following the death of Lady Carisbrooke in 1956, Lord Carisbrooke was granted the use of a grace-and-favour residence, Apartment 10, Kensington Palace, which remained as his home until his death in 1960.
+Later career
 
-— Revista do Brasil
+Lord Carisbrooke, who received no state allowance, became the first member of the British royal family to work in the commercial sector.
+Death
 
-Legacy
-
-Prince Luís is largely unknown to Brazilians today.
-The authors dedicated the work to His Imperial Highness the Sire Dom Luiz de Orléans-Braganza.
-The Municipality of Pimenta Bueno, in the State of Rondônia (Brazil), honored Dom Luís and the entire Brazilian imperial family in 2010 by renaming one of its streets "Príncipe Dom Luiz de Órleans e Bragança".
+Lord Carisbrooke died on 23 February 1960, aged 73, at Kensington Palace.
+His ashes were interred within the Battenberg Chapel at St. Mildred's Church, Whippingham, on the Isle of Wight.
+As he had no sons, the title Marquess of Carisbrooke became extinct upon his death.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +153,9 @@ The Municipality of Pimenta Bueno, in the State of Rondônia (Brazil), honored D
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +170,23 @@ The Municipality of Pimenta Bueno, in the State of Rondônia (Brazil), honored D
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +204,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +286,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +309,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +329,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +339,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +379,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,199 +478,226 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7796b3df-0cbe-43f3-92c0-937d94f5ac93)
- Call ID: 7796b3df-0cbe-43f3-92c0-937d94f5ac93
+  AssignClass (3767e2d4-f1eb-4672-a9fa-b59646e5dd6f)
+ Call ID: 3767e2d4-f1eb-4672-a9fa-b59646e5dd6f
   Args:
-    source: Luís_of_Orléans-Braganza
+    source: Alexander_Albert_Mountbatten
     type: :Man
-  AssignClass (b1b1550b-cb1a-4dce-b753-8aac0cfbbfb2)
- Call ID: b1b1550b-cb1a-4dce-b753-8aac0cfbbfb2
+  AssignClass (5f047610-e4ba-4344-9105-c4b2c2989821)
+ Call ID: 5f047610-e4ba-4344-9105-c4b2c2989821
   Args:
+    source: Alexander_Albert_Mountbatten
     type: :Person
-    source: Luís_of_Orléans-Braganza
-  AssignClass (a7efa383-b694-4f77-ba5a-3ace48ba0e33)
- Call ID: a7efa383-b694-4f77-ba5a-3ace48ba0e33
+  AddLiteral (f0292b71-4a7b-4677-a557-e613df61f3b8)
+ Call ID: f0292b71-4a7b-4677-a557-e613df61f3b8
   Args:
-    source: Isabel_Princess_Imperial_of_Brazil
-    type: :Woman
-  AssignClass (bac839a5-f0fb-44c8-a45c-00e8582929bc)
- Call ID: bac839a5-f0fb-44c8-a45c-00e8582929bc
-  Args:
-    type: :Person
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (422d3a3f-aecc-416a-8c82-e15d0c9015be)
- Call ID: 422d3a3f-aecc-416a-8c82-e15d0c9015be
-  Args:
-    source: Gaston_Count_of_Eu
-    type: :Man
-  AssignClass (c6d041cc-5c14-4f7d-8f89-7084c42185b1)
- Call ID: c6d041cc-5c14-4f7d-8f89-7084c42185b1
-  Args:
-    type: :Person
-    source: Gaston_Count_of_Eu
-  AssignClass (08c1e385-31ff-4de4-be6e-fdee9128e8f7)
- Call ID: 08c1e385-31ff-4de4-be6e-fdee9128e8f7
-  Args:
-    type: :Man
-    source: Pedro_of_Orléans-Braganza
-  AssignClass (1d05d50a-cdb8-4e1e-9c38-9cc516cf293f)
- Call ID: 1d05d50a-cdb8-4e1e-9c38-9cc516cf293f
-  Args:
-    source: Pedro_of_Orléans-Braganza
-    type: :Person
-  AssignClass (bdf4dbe5-03df-461d-bd43-0af941e49555)
- Call ID: bdf4dbe5-03df-461d-bd43-0af941e49555
-  Args:
-    type: :Man
-    source: Antônio_of_Orléans-Braganza
-  AssignClass (a9aaa3f9-872b-4bb1-9a3d-f270bca24087)
- Call ID: a9aaa3f9-872b-4bb1-9a3d-f270bca24087
-  Args:
-    source: Antônio_of_Orléans-Braganza
-    type: :Person
-  AssignClass (dfa6dbb2-3358-4349-9188-7fb392b51c87)
- Call ID: dfa6dbb2-3358-4349-9188-7fb392b51c87
-  Args:
-    type: :Woman
-    source: Maria_Pia_of_Bourbon-Two_Sicilies
-  AssignClass (77292282-5ec8-4477-b75a-0d8990a35987)
- Call ID: 77292282-5ec8-4477-b75a-0d8990a35987
-  Args:
-    source: Maria_Pia_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (f0507c0e-1a7e-43c4-a935-52a57ef51728)
- Call ID: f0507c0e-1a7e-43c4-a935-52a57ef51728
-  Args:
-    source: Pedro_Henrique_of_Orléans-Braganza
-    type: :Man
-  AssignClass (a3cc11dd-1073-4aca-835b-cc53f1c17424)
- Call ID: a3cc11dd-1073-4aca-835b-cc53f1c17424
-  Args:
-    type: :Person
-    source: Pedro_Henrique_of_Orléans-Braganza
-  AssignClass (97aca5cd-0c7f-4b6d-ba7f-08d665afe922)
- Call ID: 97aca5cd-0c7f-4b6d-ba7f-08d665afe922
-  Args:
-    source: Luís_Gastão_of_Orléans-Braganza
-    type: :Man
-  AssignClass (5ab15fd3-fe75-427e-a9fd-2adfcf76a1f4)
- Call ID: 5ab15fd3-fe75-427e-a9fd-2adfcf76a1f4
-  Args:
-    type: :Person
-    source: Luís_Gastão_of_Orléans-Braganza
-  AssignClass (1ca0a00f-8420-4eef-a90a-bae75212024d)
- Call ID: 1ca0a00f-8420-4eef-a90a-bae75212024d
-  Args:
-    type: :Woman
-    source: Pia_Maria_of_Orléans-Braganza
-  AssignClass (d1391ba1-3e25-47d3-9d3f-6f92623543cb)
- Call ID: d1391ba1-3e25-47d3-9d3f-6f92623543cb
-  Args:
-    source: Pia_Maria_of_Orléans-Braganza
-    type: :Person
-  AddTriple (b32146e1-ee34-49ff-9d8e-a9cd40d1ef46)
- Call ID: b32146e1-ee34-49ff-9d8e-a9cd40d1ef46
-  Args:
-    target: Gaston_Count_of_Eu
-    source: Luís_of_Orléans-Braganza
-    relation: :hasFather
-  AddTriple (7a6bd464-ffd9-4b4e-a547-e7e2a8c3e178)
- Call ID: 7a6bd464-ffd9-4b4e-a547-e7e2a8c3e178
-  Args:
-    target: Isabel_Princess_Imperial_of_Brazil
-    source: Luís_of_Orléans-Braganza
-    relation: :hasMother
-  AddTriple (b151e4cb-8a95-49b1-bacb-3f8933f67ec3)
- Call ID: b151e4cb-8a95-49b1-bacb-3f8933f67ec3
-  Args:
-    target: Gaston_Count_of_Eu
-    relation: :hasFather
-    source: Pedro_of_Orléans-Braganza
-  AddTriple (f61a49a6-0d84-4300-a1f3-ee59d4c18672)
- Call ID: f61a49a6-0d84-4300-a1f3-ee59d4c18672
-  Args:
-    target: Isabel_Princess_Imperial_of_Brazil
-    source: Pedro_of_Orléans-Braganza
-    relation: :hasMother
-  AddTriple (2b0206e5-78b1-4eda-a459-281ba47141d6)
- Call ID: 2b0206e5-78b1-4eda-a459-281ba47141d6
-  Args:
-    relation: :hasFather
-    source: Antônio_of_Orléans-Braganza
-    target: Gaston_Count_of_Eu
-  AddTriple (6550298c-4c26-431a-bbc8-8211a52b6e57)
- Call ID: 6550298c-4c26-431a-bbc8-8211a52b6e57
-  Args:
-    relation: :hasMother
-    source: Antônio_of_Orléans-Braganza
-    target: Isabel_Princess_Imperial_of_Brazil
-  AddTriple (4e500799-9529-4ab2-9700-5a58c3c6c753)
- Call ID: 4e500799-9529-4ab2-9700-5a58c3c6c753
-  Args:
-    target: Luís_of_Orléans-Braganza
-    source: Pedro_Henrique_of_Orléans-Braganza
-    relation: :hasFather
-  AddTriple (b7486932-bbb3-4a20-b2e0-294159c61a13)
- Call ID: b7486932-bbb3-4a20-b2e0-294159c61a13
-  Args:
-    target: Maria_Pia_of_Bourbon-Two_Sicilies
-    source: Pedro_Henrique_of_Orléans-Braganza
-    relation: :hasMother
-  AddTriple (d8430481-41fd-42ac-8ea9-aad81d53a5f7)
- Call ID: d8430481-41fd-42ac-8ea9-aad81d53a5f7
-  Args:
-    target: Luís_of_Orléans-Braganza
-    source: Luís_Gastão_of_Orléans-Braganza
-    relation: :hasFather
-  AddTriple (288d6164-345b-4e8a-80a7-460fc2bd6614)
- Call ID: 288d6164-345b-4e8a-80a7-460fc2bd6614
-  Args:
-    target: Maria_Pia_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-    source: Luís_Gastão_of_Orléans-Braganza
-  AddTriple (67e23276-4ea1-498b-b333-cd6aea103fd6)
- Call ID: 67e23276-4ea1-498b-b333-cd6aea103fd6
-  Args:
-    source: Pia_Maria_of_Orléans-Braganza
-    relation: :hasFather
-    target: Luís_of_Orléans-Braganza
-  AddTriple (fbc83fb7-5765-42ae-ad47-57407f3bf4d2)
- Call ID: fbc83fb7-5765-42ae-ad47-57407f3bf4d2
-  Args:
-    source: Pia_Maria_of_Orléans-Braganza
-    relation: :hasMother
-    target: Maria_Pia_of_Bourbon-Two_Sicilies
-  AddLiteral (fe3b45a8-18d1-4cee-bc66-9217dc795857)
- Call ID: fe3b45a8-18d1-4cee-bc66-9217dc795857
-  Args:
-    relation: :knownAs
-    source: Luís_of_Orléans-Braganza
-    literal_value: the Perfect Prince
-    literal_type: xsd:string
-  AddLiteral (6db5cc32-9132-46d4-873b-0c9db0f7d19e)
- Call ID: 6db5cc32-9132-46d4-873b-0c9db0f7d19e
-  Args:
-    source: Luís_of_Orléans-Braganza
+    literal_type: xsd:integer
+    source: Alexander_Albert_Mountbatten
+    literal_value: 1886
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1878
-  AddLiteral (db4f48b9-6004-4364-b44f-828c4b25aa0e)
- Call ID: db4f48b9-6004-4364-b44f-828c4b25aa0e
+  AddLiteral (c6246f41-cab4-4332-8a98-5d6558a28173)
+ Call ID: c6246f41-cab4-4332-8a98-5d6558a28173
   Args:
+    literal_value: 1960
+    source: Alexander_Albert_Mountbatten
     relation: :hasDeathYear
-    source: Luís_of_Orléans-Braganza
     literal_type: xsd:integer
-    literal_value: 1920
-  AddLiteral (8f1328a5-5fe4-4d89-873c-007048aad0c3)
- Call ID: 8f1328a5-5fe4-4d89-873c-007048aad0c3
+  AddLiteral (1cd2b26d-930b-47a7-a5ca-decf4f66f649)
+ Call ID: 1cd2b26d-930b-47a7-a5ca-decf4f66f649
   Args:
-    literal_value: 1908
+    source: Alexander_Albert_Mountbatten
+    literal_value: Drino
+    relation: :knownAs
+    literal_type: xsd:string
+  AddLiteral (26ab9c00-8745-4a01-84ff-41fee781a7ca)
+ Call ID: 26ab9c00-8745-4a01-84ff-41fee781a7ca
+  Args:
+    literal_type: xsd:string
+    source: Alexander_Albert_Mountbatten
+    literal_value: 1st Marquess of Carisbrooke
+    relation: :knownAs
+  AssignClass (b5c4e8c6-fda0-4854-b0c6-f074862d3e0a)
+ Call ID: b5c4e8c6-fda0-4854-b0c6-f074862d3e0a
+  Args:
+    source: Prince_Henry_of_Battenberg
+    type: :Man
+  AssignClass (d93abde1-2b36-4b51-ae50-381da3a70fa0)
+ Call ID: d93abde1-2b36-4b51-ae50-381da3a70fa0
+  Args:
+    type: :Person
+    source: Prince_Henry_of_Battenberg
+  AddTriple (ef2f0d5b-6178-4ead-842c-f979967a4d51)
+ Call ID: ef2f0d5b-6178-4ead-842c-f979967a4d51
+  Args:
+    target: Prince_Henry_of_Battenberg
+    relation: :hasFather
+    source: Alexander_Albert_Mountbatten
+  AssignClass (aae3d790-9d4e-4105-bbb9-2e6e7431c834)
+ Call ID: aae3d790-9d4e-4105-bbb9-2e6e7431c834
+  Args:
+    source: Princess_Beatrice_of_the_United_Kingdom
+    type: :Woman
+  AssignClass (b31a3941-8706-41b3-b50d-9d39ca66a519)
+ Call ID: b31a3941-8706-41b3-b50d-9d39ca66a519
+  Args:
+    source: Princess_Beatrice_of_the_United_Kingdom
+    type: :Person
+  AddTriple (d7f2fd9a-e6f0-4d02-a443-53508163afee)
+ Call ID: d7f2fd9a-e6f0-4d02-a443-53508163afee
+  Args:
+    target: Princess_Beatrice_of_the_United_Kingdom
+    relation: :hasMother
+    source: Alexander_Albert_Mountbatten
+  AssignClass (1b98fb76-7323-4c07-bae3-66c548769fa5)
+ Call ID: 1b98fb76-7323-4c07-bae3-66c548769fa5
+  Args:
+    source: Prince_Alexander_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (7c176097-9b68-40ac-8cd1-c676e02d0c2f)
+ Call ID: 7c176097-9b68-40ac-8cd1-c676e02d0c2f
+  Args:
+    type: :Person
+    source: Prince_Alexander_of_Hesse_and_by_Rhine
+  AddTriple (f3275724-bd74-403b-ae4b-a5a977cfe9fd)
+ Call ID: f3275724-bd74-403b-ae4b-a5a977cfe9fd
+  Args:
+    target: Prince_Alexander_of_Hesse_and_by_Rhine
+    relation: :hasFather
+    source: Prince_Henry_of_Battenberg
+  AssignClass (76e11de2-8190-4db6-9fb6-ffaef89493b2)
+ Call ID: 76e11de2-8190-4db6-9fb6-ffaef89493b2
+  Args:
+    type: :Woman
+    source: Julie_Countess_of_Hauke
+  AssignClass (debd3dbe-17d4-4e39-9417-e1faa07bb6af)
+ Call ID: debd3dbe-17d4-4e39-9417-e1faa07bb6af
+  Args:
+    type: :Person
+    source: Julie_Countess_of_Hauke
+  AddTriple (b0ab112e-9947-46a6-aa2a-3d3b1fddff31)
+ Call ID: b0ab112e-9947-46a6-aa2a-3d3b1fddff31
+  Args:
+    target: Julie_Countess_of_Hauke
+    relation: :hasMother
+    source: Prince_Henry_of_Battenberg
+  AssignClass (f0e5e081-3a66-40f6-985e-66b292c2a785)
+ Call ID: f0e5e081-3a66-40f6-985e-66b292c2a785
+  Args:
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (d49774c4-353c-4df4-8422-77f4dc67f6ba)
+ Call ID: d49774c4-353c-4df4-8422-77f4dc67f6ba
+  Args:
+    source: Queen_Victoria
+    type: :Person
+  AssignClass (84f08dbb-5ca1-438d-9e24-64d8ccd14709)
+ Call ID: 84f08dbb-5ca1-438d-9e24-64d8ccd14709
+  Args:
+    type: :Man
+    source: Prince_Albert
+  AssignClass (f0de77e4-ce02-4961-af2e-484068d4b030)
+ Call ID: f0de77e4-ce02-4961-af2e-484068d4b030
+  Args:
+    source: Prince_Albert
+    type: :Person
+  AddTriple (2b3932e7-9ff5-4c64-b52b-ced856b91c33)
+ Call ID: 2b3932e7-9ff5-4c64-b52b-ced856b91c33
+  Args:
+    source: Princess_Beatrice_of_the_United_Kingdom
+    target: Queen_Victoria
+    relation: :hasMother
+  AddTriple (dc353ffc-177b-4733-8fe3-c916db640ea3)
+ Call ID: dc353ffc-177b-4733-8fe3-c916db640ea3
+  Args:
+    source: Princess_Beatrice_of_the_United_Kingdom
+    target: Prince_Albert
+    relation: :hasFather
+  AssignClass (fbb02f46-f6b9-449e-97bb-a87e076d354e)
+ Call ID: fbb02f46-f6b9-449e-97bb-a87e076d354e
+  Args:
+    source: Princess_Victoria_Eugenia
+    type: :Woman
+  AssignClass (48d798f6-4c50-4622-8561-43fcc86b1cea)
+ Call ID: 48d798f6-4c50-4622-8561-43fcc86b1cea
+  Args:
+    source: Princess_Victoria_Eugenia
+    type: :Person
+  AddTriple (2b53d0a1-f0a3-442f-915c-6f6be394170d)
+ Call ID: 2b53d0a1-f0a3-442f-915c-6f6be394170d
+  Args:
+    source: Alexander_Albert_Mountbatten
+    relation: :hasSister
+    target: Princess_Victoria_Eugenia
+  AssignClass (361a470b-4021-47d2-948c-b1f6f00dd510)
+ Call ID: 361a470b-4021-47d2-948c-b1f6f00dd510
+  Args:
+    type: :Woman
+    source: Lady_Irene_Denison
+  AssignClass (ff19e525-f03c-4a56-89cb-de6cf4ff894a)
+ Call ID: ff19e525-f03c-4a56-89cb-de6cf4ff894a
+  Args:
+    type: :Person
+    source: Lady_Irene_Denison
+  AddLiteral (7c93d371-9a46-4061-a069-bd4807bb4d0c)
+ Call ID: 7c93d371-9a46-4061-a069-bd4807bb4d0c
+  Args:
     literal_type: xsd:integer
+    source: Alexander_Albert_Mountbatten
+    literal_value: 1917
     relation: :hasMarriageYear
-    source: Luís_of_Orléans-Braganza
-  Finish (b533e772-67fa-4f5d-8a82-180dd69748e6)
- Call ID: b533e772-67fa-4f5d-8a82-180dd69748e6
+  AddTriple (e464d54e-b370-4007-9e06-fbab9ae9edcc)
+ Call ID: e464d54e-b370-4007-9e06-fbab9ae9edcc
   Args:
+    relation: :hasRelation
+    target: Lady_Irene_Denison
+    source: Alexander_Albert_Mountbatten
+  AssignClass (3b77b912-cfa1-4441-ab42-08c8fe40c7d1)
+ Call ID: 3b77b912-cfa1-4441-ab42-08c8fe40c7d1
+  Args:
+    type: :Man
+    source: Earl_of_Londesborough_2nd
+  AssignClass (df10f581-97ba-4e1a-bbb9-9357ee7ffff1)
+ Call ID: df10f581-97ba-4e1a-bbb9-9357ee7ffff1
+  Args:
+    type: :Person
+    source: Earl_of_Londesborough_2nd
+  AssignClass (579717f2-b861-4e27-8fb6-5582cc9fff9b)
+ Call ID: 579717f2-b861-4e27-8fb6-5582cc9fff9b
+  Args:
+    type: :Woman
+    source: Lady_Grace_Adelaide_Fane
+  AssignClass (216940ed-7955-41d0-940b-d7c991706eee)
+ Call ID: 216940ed-7955-41d0-940b-d7c991706eee
+  Args:
+    type: :Person
+    source: Lady_Grace_Adelaide_Fane
+  AddTriple (3ffcd148-b167-4e53-8768-ce5ae9e57b6d)
+ Call ID: 3ffcd148-b167-4e53-8768-ce5ae9e57b6d
+  Args:
+    relation: :hasFather
+    target: Earl_of_Londesborough_2nd
+    source: Lady_Irene_Denison
+  AddTriple (f6f3b0c1-be0d-4eea-9203-565b97c5ec20)
+ Call ID: f6f3b0c1-be0d-4eea-9203-565b97c5ec20
+  Args:
+    relation: :hasMother
+    target: Lady_Grace_Adelaide_Fane
+    source: Lady_Irene_Denison
+  Finish (812effa9-1b82-431e-abe7-bb3781774d29)
+ Call ID: 812effa9-1b82-431e-abe7-bb3781774d29
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -734,47 +838,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+  data:Alexander_Albert_Mountbatten a :Man,
           :Person ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+      :hasBirthYear 1886 ;
+      :hasDeathYear 1960 ;
+      :hasFather data:Prince_Henry_of_Battenberg ;
+      :hasMarriageYear 1917 ;
+      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+      :hasRelation data:Lady_Irene_Denison ;
+      :hasSister data:Princess_Victoria_Eugenia ;
+      :knownAs "1st Marquess of Carisbrooke"^^xsd:string,
+          "Drino"^^xsd:string .
 
-  data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil .
-
-  data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
-          :Woman ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Gaston_Count_of_Eu a :Man,
+  data:Earl_of_Londesborough_2nd a :Man,
           :Person .
 
-  data:Isabel_Princess_Imperial_of_Brazil a :Person,
+  data:Julie_Countess_of_Hauke a :Person,
           :Woman .
 
-  data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasBirthYear 1878 ;
-      :hasDeathYear 1920 ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMarriageYear 1908 ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-      :knownAs "the Perfect Prince"^^xsd:string .
+  data:Lady_Grace_Adelaide_Fane a :Person,
+          :Woman .
 
-  data:Maria_Pia_of_Bourbon-Two_Sicilies a :Person,
+  data:Lady_Irene_Denison a :Person,
+          :Woman ;
+      :hasFather data:Earl_of_Londesborough_2nd ;
+      :hasMother data:Lady_Grace_Adelaide_Fane .
+
+  data:Prince_Albert a :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+          :Person .
+
+  data:Prince_Henry_of_Battenberg a :Man,
+          :Person ;
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julie_Countess_of_Hauke .
+
+  data:Princess_Beatrice_of_the_United_Kingdom a :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert ;
+      :hasMother data:Queen_Victoria .
+
+  data:Princess_Victoria_Eugenia a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Person,
           :Woman .
 
 
@@ -787,302 +896,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (db4c1523-9609-4ad3-8992-d9f2b323e5bf)
- Call ID: db4c1523-9609-4ad3-8992-d9f2b323e5bf
+  ValidateShacl (01d70965-e0d4-49b1-9b62-7f6f1b84ea78)
+ Call ID: 01d70965-e0d4-49b1-9b62-7f6f1b84ea78
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:36
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Henry_of_Battenberg for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Prince_Henry_of_Battenberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Princess_Beatrice_of_the_United_Kingdom for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Princess_Beatrice_of_the_United_Kingdom, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Julie_Countess_of_Hauke for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Julie_Countess_of_Hauke, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Albert for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Prince_Albert, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Earl_of_Londesborough_2nd for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Earl_of_Londesborough_2nd, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Henry_of_Battenberg for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Prince_Henry_of_Battenberg, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Queen_Victoria for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Queen_Victoria, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Lady_Grace_Adelaide_Fane for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Lady_Grace_Adelaide_Fane, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Princess_Beatrice_of_the_United_Kingdom for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Princess_Beatrice_of_the_United_Kingdom, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Julie_Countess_of_Hauke for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Julie_Countess_of_Hauke, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Albert for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Prince_Albert, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Earl_of_Londesborough_2nd for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Earl_of_Londesborough_2nd, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Henry_of_Battenberg for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+      AssignClass(Prince_Henry_of_Battenberg, :Ancestor)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Queen_Victoria for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Queen_Victoria, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Lady_Grace_Adelaide_Fane for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Lady_Grace_Adelaide_Fane, :Ancestor)
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Princess_Beatrice_of_the_United_Kingdom for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Princess_Beatrice_of_the_United_Kingdom, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Julie_Countess_of_Hauke for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Julie_Countess_of_Hauke, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Earl_of_Londesborough_2nd for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+      AssignClass(Earl_of_Londesborough_2nd, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Prince_Albert for the property :hasFather does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Prince_Albert, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Lady_Grace_Adelaide_Fane for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+      AssignClass(Lady_Grace_Adelaide_Fane, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Gaston_Count_of_Eu' assigned to the 'hasFather' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
-
-
-  Violation [29]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
+      The value node Queen_Victoria for the property :hasMother does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Isabel_Princess_Imperial_of_Brazil' assigned to the 'hasMother' property of 'Pedro_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' assigned to the 'hasFather' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Pia_of_Bourbon-Two_Sicilies' assigned to the 'hasMother' property of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Queen_Victoria, :Ancestor)
 
 
 
@@ -1091,29 +1104,65 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (86a22070-5612-4716-bb18-e864ec1629c8)
- Call ID: 86a22070-5612-4716-bb18-e864ec1629c8
+  AssignClass (254f04bc-bc41-4615-839a-3801968abca0)
+ Call ID: 254f04bc-bc41-4615-839a-3801968abca0
   Args:
-    source: Gaston_Count_of_Eu
+    source: Prince_Henry_of_Battenberg
     type: :Ancestor
-  AssignClass (9c5d4b49-94f8-4a9b-99b7-238368a8fb07)
- Call ID: 9c5d4b49-94f8-4a9b-99b7-238368a8fb07
+  AssignClass (482847d5-0ff5-4985-8ed0-9c462c333888)
+ Call ID: 482847d5-0ff5-4985-8ed0-9c462c333888
   Args:
     type: :Ancestor
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (4ecbb8c7-06b7-426f-82d4-51a2b235c720)
- Call ID: 4ecbb8c7-06b7-426f-82d4-51a2b235c720
+    source: Prince_Alexander_of_Hesse_and_by_Rhine
+  AssignClass (5ab77680-a7b4-4c7f-82e5-5dfc7d6646de)
+ Call ID: 5ab77680-a7b4-4c7f-82e5-5dfc7d6646de
   Args:
-    source: Luís_of_Orléans-Braganza
     type: :Ancestor
-  AssignClass (70fea484-6eaf-43d8-9023-ba0caabe1f96)
- Call ID: 70fea484-6eaf-43d8-9023-ba0caabe1f96
+    source: Princess_Beatrice_of_the_United_Kingdom
+  AssignClass (e4e1fb3e-dc44-420c-bc6a-a5af7e713e63)
+ Call ID: e4e1fb3e-dc44-420c-bc6a-a5af7e713e63
   Args:
-    source: Maria_Pia_of_Bourbon-Two_Sicilies
+    source: Julie_Countess_of_Hauke
     type: :Ancestor
-  Finish (86281cd5-9675-4c09-adbb-4a7d5e826f4f)
- Call ID: 86281cd5-9675-4c09-adbb-4a7d5e826f4f
+  AssignClass (b4e9c3c6-f416-45bf-ac70-3ae9233b5547)
+ Call ID: b4e9c3c6-f416-45bf-ac70-3ae9233b5547
   Args:
+    source: Prince_Albert
+    type: :Ancestor
+  AssignClass (aa84e40c-6e7b-4db2-8488-dd8cce58d1c3)
+ Call ID: aa84e40c-6e7b-4db2-8488-dd8cce58d1c3
+  Args:
+    source: Earl_of_Londesborough_2nd
+    type: :Ancestor
+  AssignClass (5e177e78-0b47-449f-852c-4896a4b538db)
+ Call ID: 5e177e78-0b47-449f-852c-4896a4b538db
+  Args:
+    source: Queen_Victoria
+    type: :Ancestor
+  AssignClass (b1990853-af30-4f2b-b0db-7f144f262a45)
+ Call ID: b1990853-af30-4f2b-b0db-7f144f262a45
+  Args:
+    source: Lady_Grace_Adelaide_Fane
+    type: :Ancestor
+  Finish (3b2e0334-2f98-4d2a-af1b-45ff61fdb393)
+ Call ID: 3b2e0334-2f98-4d2a-af1b-45ff61fdb393
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1134,50 +1183,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+  data:Alexander_Albert_Mountbatten a :Man,
           :Person ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+      :hasBirthYear 1886 ;
+      :hasDeathYear 1960 ;
+      :hasFather data:Prince_Henry_of_Battenberg ;
+      :hasMarriageYear 1917 ;
+      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+      :hasRelation data:Lady_Irene_Denison ;
+      :hasSister data:Princess_Victoria_Eugenia ;
+      :knownAs "1st Marquess of Carisbrooke"^^xsd:string,
+          "Drino"^^xsd:string .
 
-  data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil .
-
-  data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
-          :Woman ;
-      :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-  data:Gaston_Count_of_Eu a :Ancestor,
+  data:Earl_of_Londesborough_2nd a :Ancestor,
           :Man,
           :Person .
 
-  data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+  data:Julie_Countess_of_Hauke a :Ancestor,
           :Person,
           :Woman .
 
-  data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Ancestor,
+  data:Lady_Grace_Adelaide_Fane a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Lady_Irene_Denison a :Person,
+          :Woman ;
+      :hasFather data:Earl_of_Londesborough_2nd ;
+      :hasMother data:Lady_Grace_Adelaide_Fane .
+
+  data:Prince_Albert a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Henry_of_Battenberg a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1878 ;
-      :hasDeathYear 1920 ;
-      :hasFather data:Gaston_Count_of_Eu ;
-      :hasMarriageYear 1908 ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-      :knownAs "the Perfect Prince"^^xsd:string .
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julie_Countess_of_Hauke .
 
-  data:Maria_Pia_of_Bourbon-Two_Sicilies a :Ancestor,
+  data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert ;
+      :hasMother data:Queen_Victoria .
+
+  data:Princess_Victoria_Eugenia a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Ancestor,
           :Person,
           :Woman .
 
@@ -1191,8 +1249,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (19d7c31a-8be3-4e0c-a5c1-8482040de36f)
- Call ID: 19d7c31a-8be3-4e0c-a5c1-8482040de36f
+  ValidateShacl (8f58d7c4-50de-4c15-82a3-9de1c76cb733)
+ Call ID: 8f58d7c4-50de-4c15-82a3-9de1c76cb733
   Args:
 
 ================================= Tool Message =================================
@@ -1203,6 +1261,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b0ce69af-70ac-4ea4-8370-50f1d07eb3aa)
- Call ID: b0ce69af-70ac-4ea4-8370-50f1d07eb3aa
+  Finish (4b33c42e-d8b6-4d06-9539-6005745d2183)
+ Call ID: 4b33c42e-d8b6-4d06-9539-6005745d2183
   Args:

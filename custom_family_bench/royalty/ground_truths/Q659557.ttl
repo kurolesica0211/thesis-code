@@ -7,32 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
-    data:posIndicesFull "239:277" ;
-    data:posIndicesPart "1230:1238",
-        "392:397",
-        "398:409" ;
-    data:wdtLink wdt:Q2085981 ;
-    :hasChild data:Georg-_Prince_of_Saxe-Meiningen ;
-    :hasSex data:female ;
-    :hasSon data:Georg-_Prince_of_Saxe-Meiningen ;
-    :isMotherOf data:Georg-_Prince_of_Saxe-Meiningen ;
-    :isParentOf data:Georg-_Prince_of_Saxe-Meiningen .
-
-data:Georg-_Prince_of_Saxe-Meiningen a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Georg-_Prince_of_Saxe-Meiningen a :Person ;
     rdfs:label "Georg, Prince of Saxe-Meiningen" ;
     data:posIndicesFull "0:31" ;
     data:posIndicesPart "1026:1032",
@@ -53,9 +28,25 @@ data:Georg-_Prince_of_Saxe-Meiningen a :Ancestor,
         "760:765",
         "829:834" ;
     data:wdtLink wdt:Q659557 ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
     :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasSex data:male ;
-    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :isSonOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
+    data:posIndicesFull "239:277" ;
+    data:posIndicesPart "1230:1238",
+        "392:397",
+        "398:409" ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

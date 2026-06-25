@@ -2,31 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alphonse a :Man ;
-    :hasFather data:LouisAlphonseDeBourbon ;
-    :hasMother data:MariaMargaritaVargasSantaella .
+data:Alphonse_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-data:Eugenie a :Woman ;
-    :hasFather data:LouisAlphonseDeBourbon ;
-    :hasMother data:MariaMargaritaVargasSantaella .
+data:Eugenie_de_Borbon_y_Vargas a :Woman ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-data:Louis a :Man ;
-    :hasFather data:LouisAlphonseDeBourbon ;
-    :hasMother data:MariaMargaritaVargasSantaella .
+data:Henri_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-data:Francisco a :Man ;
-    :hasFather data:AlfonsoDeBorbon ;
-    :hasMother data:MariaDelCarmenMartinezBordiuYFranco .
+data:Louis_de_Borbon_y_Vargas a :Man ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-data:AlfonsoDeBorbon a :Man .
+data:Carmen_Franco_1st_Duchess_of_Franco a :Woman ;
+    :hasFather data:Francisco_Franco .
 
-data:MariaDelCarmenMartinezBordiuYFranco a :Woman .
+data:Emmanuelle_de_Dampierre a :Woman .
 
-data:LouisAlphonseDeBourbon a :Man ;
+data:Francisco_Franco a :Man .
+
+data:Francisco_de_Borbon a :Man ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Infante_Jaime_Duke_of_Segovia a :Man .
+
+data:Victor_Vargas a :Man .
+
+data:Alfonso_de_Borbon a :Man ;
+    :hasFather data:Infante_Jaime_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman ;
+    :hasMother data:Carmen_Franco_1st_Duchess_of_Franco .
+
+data:Louis_Alphonse_de_Bourbon a :Man ;
     :hasBirthYear 1974 ;
-    :hasFather data:AlfonsoDeBorbon ;
-    :hasMother data:MariaDelCarmenMartinezBordiuYFranco ;
-    :isBrotherOf data:Francisco .
+    :hasBrother data:Francisco_de_Borbon ;
+    :hasFather data:Alfonso_de_Borbon ;
+    :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
-data:MariaMargaritaVargasSantaella a :Woman .
+data:Maria_Margarita_Vargas_Santaella a :Woman ;
+    :hasFather data:Victor_Vargas .
 

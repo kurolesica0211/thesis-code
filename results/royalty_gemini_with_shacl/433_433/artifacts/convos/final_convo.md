@@ -85,28 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexandrine Irene of Prussia (7 April 1915 – 2 October 1980) was the elder daughter and fifth child of Wilhelm, German Crown Prince, and Cecilie of Mecklenburg-Schwerin.
-Her grandparents were Wilhelm II, German Emperor and his wife Augusta Victoria of Schleswig-Holstein, and Frederick Francis III of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-Alexandrine was a member of the House of Hohenzollern.
-She was a great-great-granddaughter of Queen Victoria.
-Life
+Bernhard, Prince of Saxe-Meiningen (German: Bernhard, Prinz von Sachsen-Meiningen; 30 June 1901 – 4 October 1984) was the head of the House of Saxe-Meiningen from 1946 until his death.
+Prince of Saxe-Meiningen
 
-Alexandrine was born at the Kronprinzenpalais in Berlin.
-She followed older brothers Wilhelm, Louis Ferdinand, Hubertus, and Frederick.
-Alexandrine's only sister, Cecilie, was born in 1917.
-It became clear shortly after Alexandrine's birth that she had Down syndrome.
-Unlike other disabled royal children, Alexandrine was not hidden away.
-As a teenager, Alexandrine attended the Trüpersche Sonderschule, a school dedicated to the education of children with special needs.
-Alexandrine celebrated her confirmation along with her sister Cecilie in October 1934.
-Alexandrine lived most of her later life in Bavaria, first in Pöcking and later near Lake Starnberg, where she was visited there regularly by her family, particularly her brother Louis Ferdinand.
-Alexandrine died on 2 October 1980.
-She was buried near her parents and brother Frederick at Hohenzollern Castle.
+Bernhard was born in Köln the third son of Prince Frederick Johann of Saxe-Meiningen and Countess Adelaide of Lippe-Biesterfeld.
+His father was the second son of Georg II, Duke of Saxe-Meiningen and his mother a daughter of Count Ernst of Lippe-Biesterfeld.
+After the death of his older brother Prince Georg in 1946 his nephew Prince Frederick Alfred renounced his succession rights and so Bernhard succeeded to the headship of the house of Saxe-Meiningen and the nominal title of Duke of Saxe-Meiningen (as Bernhard IV).
+As his first marriage was morganatic his second son Prince Frederick Konrad succeeded him as head of the ducal house following his death in Bad Krozingen.
+Bernhard and his first wife were declared guilty of a Nazi conspiracy against Austria in 1933; he was sentenced to six weeks in prison, while she was placed under house arrest.
+Family
+
+Bernhard was married morganatically to Margot Grössler (1911–1998), from Wrocław, daughter of Friedrich Grössler, a merchant, and Erika Wägner, in Eichenhof
+They had two children, both of whom had no succession rights:
+
+
+Bernhard married secondly in Ziegenberg über Bad Nauheim on 11 August 1948 to Baroness Vera Schäffer von Bernstein (1914–1994), daughter of Baron Friedrich "Fritz" Schäffer von Bernstein (1868–1958) and Emma Carola, née Passavant (1884–1971).
+They had three children, including a son, Konrad, with full rights to the succession to the house of Saxe-Meiningen:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +129,9 @@ She was buried near her parents and brother Frederick at Hohenzollern Castle.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +146,23 @@ She was buried near her parents and brother Frederick at Hohenzollern Castle.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,222 +454,262 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c6b80ba1-0bbd-4e3a-9f20-aa2a3f923633)
- Call ID: c6b80ba1-0bbd-4e3a-9f20-aa2a3f923633
+  AssignClass (180f16ba-c31d-4b4d-bba9-6f6b1e454072)
+ Call ID: 180f16ba-c31d-4b4d-bba9-6f6b1e454072
   Args:
-    type: :Person
-    source: Alexandrine_Irene_of_Prussia
-  AssignClass (1494f9c1-6e9c-4a14-be02-617d3722e4a7)
- Call ID: 1494f9c1-6e9c-4a14-be02-617d3722e4a7
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    type: :Man
+  AddLiteral (6b9bdd6b-3ed8-4715-9161-34c0c1047bb3)
+ Call ID: 6b9bdd6b-3ed8-4715-9161-34c0c1047bb3
   Args:
-    type: :Woman
-    source: Alexandrine_Irene_of_Prussia
-  AddLiteral (59647e00-4e65-407e-94b1-75eca2491606)
- Call ID: 59647e00-4e65-407e-94b1-75eca2491606
-  Args:
-    literal_value: 1915
+    source: Bernhard_Prince_of_Saxe-Meiningen
     literal_type: xsd:integer
-    source: Alexandrine_Irene_of_Prussia
+    literal_value: 1901
     relation: :hasBirthYear
-  AddLiteral (f8590aae-06cf-4e3b-9729-32d26fd22289)
- Call ID: f8590aae-06cf-4e3b-9729-32d26fd22289
+  AddLiteral (9ff0ab13-5335-4177-868c-b65f0df974f8)
+ Call ID: 9ff0ab13-5335-4177-868c-b65f0df974f8
   Args:
-    literal_value: 1980
-    literal_type: xsd:integer
-    source: Alexandrine_Irene_of_Prussia
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    literal_value: 1984
     relation: :hasDeathYear
-  AssignClass (69eb5429-4be4-4604-bdf2-affff59be22d)
- Call ID: 69eb5429-4be4-4604-bdf2-affff59be22d
-  Args:
-    type: :Person
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (24b9a64a-61b9-41a7-a1a9-28ae64f7e377)
- Call ID: 24b9a64a-61b9-41a7-a1a9-28ae64f7e377
+    literal_type: xsd:integer
+  AssignClass (59f15abe-9c9f-423e-a240-5c1b9cc37f9f)
+ Call ID: 59f15abe-9c9f-423e-a240-5c1b9cc37f9f
   Args:
     type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (81dd5de0-87f0-4de4-baa9-b046909999ee)
- Call ID: 81dd5de0-87f0-4de4-baa9-b046909999ee
-  Args:
-    type: :Person
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (4b5964f4-0ae9-4130-b09c-eec1802e48cb)
- Call ID: 4b5964f4-0ae9-4130-b09c-eec1802e48cb
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AssignClass (99712d7c-ed48-4a0b-aaca-afa38aca5e3a)
+ Call ID: 99712d7c-ed48-4a0b-aaca-afa38aca5e3a
   Args:
     type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (005e47fe-4b88-4cee-a97c-1f5b77b776ca)
- Call ID: 005e47fe-4b88-4cee-a97c-1f5b77b776ca
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AddTriple (121d05f0-f6fd-45da-8887-7677b6444b40)
+ Call ID: 121d05f0-f6fd-45da-8887-7677b6444b40
   Args:
-    target: Wilhelm_German_Crown_Prince
+    source: Bernhard_Prince_of_Saxe-Meiningen
     relation: :hasFather
-    source: Alexandrine_Irene_of_Prussia
-  AddTriple (f220d6c5-ab73-46dd-9202-b0e516ea40f2)
- Call ID: f220d6c5-ab73-46dd-9202-b0e516ea40f2
+    target: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AddTriple (d1394f7c-4ab4-441a-b537-ee9db105bc00)
+ Call ID: d1394f7c-4ab4-441a-b537-ee9db105bc00
   Args:
-    target: Cecilie_of_Mecklenburg-Schwerin
+    source: Bernhard_Prince_of_Saxe-Meiningen
     relation: :hasMother
-    source: Alexandrine_Irene_of_Prussia
-  AssignClass (7cfe8709-02b3-4620-801b-d492346f80f2)
- Call ID: 7cfe8709-02b3-4620-801b-d492346f80f2
-  Args:
-    type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (ff062639-d293-4571-860c-b3a8c98d7758)
- Call ID: ff062639-d293-4571-860c-b3a8c98d7758
+    target: Countess_Adelaide_of_Lippe-Biesterfeld
+  AssignClass (2002414d-706a-43ad-8635-fc07f0076a10)
+ Call ID: 2002414d-706a-43ad-8635-fc07f0076a10
   Args:
     type: :Man
-    source: Wilhelm_II_German_Emperor
-  AssignClass (0e000bda-1ac9-43b5-8b5d-6e8e7710ea57)
- Call ID: 0e000bda-1ac9-43b5-8b5d-6e8e7710ea57
+    source: Georg_II_Duke_of_Saxe-Meiningen
+  AddTriple (0cacdde8-fd27-4b8f-9d23-a7edf13d1117)
+ Call ID: 0cacdde8-fd27-4b8f-9d23-a7edf13d1117
   Args:
-    type: :Person
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (ae559c25-338a-4365-a91a-2df20134037b)
- Call ID: ae559c25-338a-4365-a91a-2df20134037b
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    relation: :hasFather
+    target: Georg_II_Duke_of_Saxe-Meiningen
+  AssignClass (6de3f1c0-b58f-47c8-ae2b-d6ff283eb7a6)
+ Call ID: 6de3f1c0-b58f-47c8-ae2b-d6ff283eb7a6
+  Args:
+    type: :Man
+    source: Count_Ernst_of_Lippe-Biesterfeld
+  AddTriple (3267f898-90a6-4098-89d2-890768d227a9)
+ Call ID: 3267f898-90a6-4098-89d2-890768d227a9
+  Args:
+    relation: :hasFather
+    target: Count_Ernst_of_Lippe-Biesterfeld
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AssignClass (59fa9860-2546-467a-b3a2-790fea1536d6)
+ Call ID: 59fa9860-2546-467a-b3a2-790fea1536d6
+  Args:
+    type: :Man
+    source: Prince_Georg
+  AddTriple (ebd1029f-6cc3-4bd4-92c2-d0b599cce08f)
+ Call ID: ebd1029f-6cc3-4bd4-92c2-d0b599cce08f
+  Args:
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    relation: :hasBrother
+    target: Prince_Georg
+  AssignClass (145509f2-9e49-4173-8126-4eda75565dfb)
+ Call ID: 145509f2-9e49-4173-8126-4eda75565dfb
+  Args:
+    source: Prince_Frederick_Alfred
+    type: :Man
+  AddTriple (537b5e4a-6458-4fce-9976-967e06abf7cc)
+ Call ID: 537b5e4a-6458-4fce-9976-967e06abf7cc
+  Args:
+    relation: :hasFather
+    target: Prince_Georg
+    source: Prince_Frederick_Alfred
+  AssignClass (dffc2e74-109a-4c2c-9689-3271cb2c9879)
+ Call ID: dffc2e74-109a-4c2c-9689-3271cb2c9879
   Args:
     type: :Woman
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (f6012c80-26fd-459a-b54b-67f32a6ebe9c)
- Call ID: f6012c80-26fd-459a-b54b-67f32a6ebe9c
+    source: Margot_Grössler
+  AddLiteral (6648ee45-c095-4bc5-8999-613def49d3a6)
+ Call ID: 6648ee45-c095-4bc5-8999-613def49d3a6
   Args:
-    type: :Person
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (797fa67b-5d27-4515-81d3-4863473d7241)
- Call ID: 797fa67b-5d27-4515-81d3-4863473d7241
+    source: Margot_Grössler
+    literal_value: 1911
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (81a1390b-5f44-45fc-8c7c-a29620f101b4)
+ Call ID: 81a1390b-5f44-45fc-8c7c-a29620f101b4
   Args:
+    source: Margot_Grössler
+    literal_value: 1998
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (30c15181-114c-4a87-86b8-348f61cd4056)
+ Call ID: 30c15181-114c-4a87-86b8-348f61cd4056
+  Args:
+    target: Margot_Grössler
+    relation: :hasRelation
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AssignClass (869e27da-7615-4bf6-8ee9-aebdddd9e7eb)
+ Call ID: 869e27da-7615-4bf6-8ee9-aebdddd9e7eb
+  Args:
+    source: Friedrich_Grössler
     type: :Man
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (5e8c8cde-c951-4919-a725-fefbcd337465)
- Call ID: 5e8c8cde-c951-4919-a725-fefbcd337465
+  AssignClass (a0a6d67d-1d7b-4e6a-bbc9-2cea6bbc8938)
+ Call ID: a0a6d67d-1d7b-4e6a-bbc9-2cea6bbc8938
   Args:
-    type: :Person
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  AssignClass (24ab5e5a-dd01-4735-a5f0-725bfc7cdb28)
- Call ID: 24ab5e5a-dd01-4735-a5f0-725bfc7cdb28
-  Args:
+    source: Erika_Wägner
     type: :Woman
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  AddTriple (2dac548d-79d6-4e09-9e52-10fe19c74781)
- Call ID: 2dac548d-79d6-4e09-9e52-10fe19c74781
+  AddTriple (82518056-4a45-42d0-ba87-b7b9124895e6)
+ Call ID: 82518056-4a45-42d0-ba87-b7b9124895e6
   Args:
-    relation: :hasParent
-    source: Wilhelm_German_Crown_Prince
-    target: Wilhelm_II_German_Emperor
-  AddTriple (e25e1081-ba62-4357-bd32-3d685d3b712e)
- Call ID: e25e1081-ba62-4357-bd32-3d685d3b712e
+    source: Margot_Grössler
+    target: Friedrich_Grössler
+    relation: :hasFather
+  AddTriple (59ae7691-b80f-42ea-8e5a-ddebf4bfa0a5)
+ Call ID: 59ae7691-b80f-42ea-8e5a-ddebf4bfa0a5
   Args:
-    target: Augusta_Victoria_of_Schleswig-Holstein
-    relation: :hasParent
-    source: Wilhelm_German_Crown_Prince
-  AddTriple (53178bed-3100-4cc9-ba9c-bf72b86bc59b)
- Call ID: 53178bed-3100-4cc9-ba9c-bf72b86bc59b
-  Args:
-    target: Frederick_Francis_III_of_Mecklenburg-Schwerin
-    relation: :hasParent
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (32bef7ae-a13e-4a42-a2cd-76d1904d1c4f)
- Call ID: 32bef7ae-a13e-4a42-a2cd-76d1904d1c4f
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasParent
-    target: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  AssignClass (8ffd44c4-ff13-4613-b567-9c8cc4f655d8)
- Call ID: 8ffd44c4-ff13-4613-b567-9c8cc4f655d8
-  Args:
-    type: :Person
-    source: Wilhelm_brother
-  AssignClass (c6f5a07e-85ce-46a4-b7a7-49144cb7d39e)
- Call ID: c6f5a07e-85ce-46a4-b7a7-49144cb7d39e
+    target: Erika_Wägner
+    relation: :hasMother
+    source: Margot_Grössler
+  AssignClass (4114e95c-ebf9-41ba-9939-60c6ba33cfd8)
+ Call ID: 4114e95c-ebf9-41ba-9939-60c6ba33cfd8
   Args:
     type: :Man
-    source: Wilhelm_brother
-  AssignClass (b026b8b9-dc97-4e86-a802-9c1e9486518d)
- Call ID: b026b8b9-dc97-4e86-a802-9c1e9486518d
+    source: Prince_Frederick_Konrad
+  AddTriple (787142ce-5c1b-44b1-a083-1a6d8f9862e7)
+ Call ID: 787142ce-5c1b-44b1-a083-1a6d8f9862e7
   Args:
-    type: :Person
-    source: Louis_Ferdinand_brother
-  AssignClass (b7b7ddef-3243-4e70-97fd-88fbe6c839a1)
- Call ID: b7b7ddef-3243-4e70-97fd-88fbe6c839a1
+    relation: :hasFather
+    target: Bernhard_Prince_of_Saxe-Meiningen
+    source: Prince_Frederick_Konrad
+  AddTriple (00957e53-c069-4f76-bb3b-d5125b2040e2)
+ Call ID: 00957e53-c069-4f76-bb3b-d5125b2040e2
   Args:
-    type: :Man
-    source: Louis_Ferdinand_brother
-  AssignClass (eae13855-bfaa-4da5-ac0d-9c687e248ebb)
- Call ID: eae13855-bfaa-4da5-ac0d-9c687e248ebb
+    source: Prince_Frederick_Konrad
+    relation: :hasMother
+    target: Margot_Grössler
+  AssignClass (8f5192a3-cc92-4f1f-9c7f-171e50c50aae)
+ Call ID: 8f5192a3-cc92-4f1f-9c7f-171e50c50aae
   Args:
-    type: :Person
-    source: Hubertus_brother
-  AssignClass (6ca6b0bc-e87e-449e-ac88-68fe0236e187)
- Call ID: 6ca6b0bc-e87e-449e-ac88-68fe0236e187
-  Args:
-    type: :Man
-    source: Hubertus_brother
-  AssignClass (32bd1b90-ca13-4b94-8a5d-6d410f1a974f)
- Call ID: 32bd1b90-ca13-4b94-8a5d-6d410f1a974f
-  Args:
-    type: :Person
-    source: Frederick_brother
-  AssignClass (ea5ea991-ca0f-4821-8c5a-0fafcffda24b)
- Call ID: ea5ea991-ca0f-4821-8c5a-0fafcffda24b
-  Args:
-    type: :Man
-    source: Frederick_brother
-  AssignClass (24cb8fad-3f13-400e-8be3-9800f9de17fc)
- Call ID: 24cb8fad-3f13-400e-8be3-9800f9de17fc
-  Args:
-    type: :Person
-    source: Cecilie_sister
-  AssignClass (4157bb35-db00-4698-b94c-783c439e26f8)
- Call ID: 4157bb35-db00-4698-b94c-783c439e26f8
-  Args:
+    source: Baroness_Vera_Schäffer_von_Bernstein
     type: :Woman
-    source: Cecilie_sister
-  AddTriple (0f17feac-1ee5-4430-b12d-24c499fb97b4)
- Call ID: 0f17feac-1ee5-4430-b12d-24c499fb97b4
+  AddLiteral (0d82950e-4f3a-4ee7-9b94-2f6d67f29f60)
+ Call ID: 0d82950e-4f3a-4ee7-9b94-2f6d67f29f60
   Args:
-    target: Wilhelm_brother
-    source: Alexandrine_Irene_of_Prussia
-    relation: :hasBrother
-  AddTriple (66cd5918-a99b-4199-a134-d87171ce09ea)
- Call ID: 66cd5918-a99b-4199-a134-d87171ce09ea
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1914
+    source: Baroness_Vera_Schäffer_von_Bernstein
+  AddLiteral (b0e314ea-8f97-4664-9873-007ec751bec2)
+ Call ID: b0e314ea-8f97-4664-9873-007ec751bec2
   Args:
-    source: Alexandrine_Irene_of_Prussia
-    relation: :hasBrother
-    target: Louis_Ferdinand_brother
-  AddTriple (6089a7d8-d359-409b-865f-5a204c81c13c)
- Call ID: 6089a7d8-d359-409b-865f-5a204c81c13c
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    literal_value: 1994
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (e2b6073e-7886-4586-a096-896df1250cc7)
+ Call ID: e2b6073e-7886-4586-a096-896df1250cc7
   Args:
-    target: Hubertus_brother
-    source: Alexandrine_Irene_of_Prussia
-    relation: :hasBrother
-  AddTriple (f9620d1b-0125-4ecc-b82e-4cbfa98179f8)
- Call ID: f9620d1b-0125-4ecc-b82e-4cbfa98179f8
+    target: Baroness_Vera_Schäffer_von_Bernstein
+    relation: :hasRelation
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AddLiteral (50f8958a-ab9b-4a2b-91f7-94a9f2ef0ead)
+ Call ID: 50f8958a-ab9b-4a2b-91f7-94a9f2ef0ead
   Args:
-    relation: :hasBrother
-    source: Alexandrine_Irene_of_Prussia
-    target: Frederick_brother
-  AddTriple (b2b03b40-1d24-49ce-a7d5-55db3ce60721)
- Call ID: b2b03b40-1d24-49ce-a7d5-55db3ce60721
+    literal_type: xsd:integer
+    literal_value: 1948
+    relation: :hasMarriageYear
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AssignClass (2ad48d1e-26b3-462f-b50e-576ed3dee1a2)
+ Call ID: 2ad48d1e-26b3-462f-b50e-576ed3dee1a2
   Args:
-    target: Cecilie_sister
-    relation: :hasSister
-    source: Alexandrine_Irene_of_Prussia
-  AssignClass (e03fbc6b-adc6-45d2-83a9-2531e559f4dc)
- Call ID: e03fbc6b-adc6-45d2-83a9-2531e559f4dc
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    type: :Man
+  AddLiteral (e4fdb408-16ec-4417-a8db-27fafd9e8af1)
+ Call ID: e4fdb408-16ec-4417-a8db-27fafd9e8af1
   Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (5a29a538-2aa1-4f03-b8d1-23f4ef8c2b1a)
- Call ID: 5a29a538-2aa1-4f03-b8d1-23f4ef8c2b1a
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1868
+  AddLiteral (536a2a64-0c56-4718-b686-333e9bbc7a0c)
+ Call ID: 536a2a64-0c56-4718-b686-333e9bbc7a0c
   Args:
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    literal_type: xsd:integer
+    literal_value: 1958
+    relation: :hasDeathYear
+  AssignClass (f1045ca6-36fd-4684-bb9d-ca8f28152a6f)
+ Call ID: f1045ca6-36fd-4684-bb9d-ca8f28152a6f
+  Args:
+    source: Emma_Carola_Passavant
     type: :Woman
-    source: Queen_Victoria
-  AddTriple (3410d414-bb2d-498f-8b7a-33ef3e069735)
- Call ID: 3410d414-bb2d-498f-8b7a-33ef3e069735
+  AddLiteral (13afa156-a3c7-4005-a714-042287f8b7c5)
+ Call ID: 13afa156-a3c7-4005-a714-042287f8b7c5
   Args:
-    target: Queen_Victoria
-    source: Alexandrine_Irene_of_Prussia
-    relation: :hasAncestor
+    literal_type: xsd:integer
+    literal_value: 1884
+    relation: :hasBirthYear
+    source: Emma_Carola_Passavant
+  AddLiteral (078fc30d-8330-48e8-bff2-fadc33d3affb)
+ Call ID: 078fc30d-8330-48e8-bff2-fadc33d3affb
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1971
+    literal_type: xsd:integer
+    source: Emma_Carola_Passavant
+  AddTriple (4743fc9f-68a1-42b1-be18-7513a8d24ff2)
+ Call ID: 4743fc9f-68a1-42b1-be18-7513a8d24ff2
+  Args:
+    target: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    relation: :hasFather
+    source: Baroness_Vera_Schäffer_von_Bernstein
+  AddTriple (5a65fa44-fcbb-45f9-b901-c6f5ecca9ba9)
+ Call ID: 5a65fa44-fcbb-45f9-b901-c6f5ecca9ba9
+  Args:
+    relation: :hasMother
+    target: Emma_Carola_Passavant
+    source: Baroness_Vera_Schäffer_von_Bernstein
+  AssignClass (c45095f4-771d-4e25-bf99-7106913e88ec)
+ Call ID: c45095f4-771d-4e25-bf99-7106913e88ec
+  Args:
+    type: :Man
+    source: Konrad
+  AddTriple (8e9a64ba-504b-45af-811b-33b456694075)
+ Call ID: 8e9a64ba-504b-45af-811b-33b456694075
+  Args:
+    target: Bernhard_Prince_of_Saxe-Meiningen
+    relation: :hasFather
+    source: Konrad
+  AddTriple (b41f6eca-57f0-418f-8662-1c267a8e7193)
+ Call ID: b41f6eca-57f0-418f-8662-1c267a8e7193
+  Args:
+    source: Konrad
+    target: Baroness_Vera_Schäffer_von_Bernstein
+    relation: :hasMother
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -737,58 +874,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandrine_Irene_of_Prussia a :Person,
-          :Woman ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1915 ;
-      :hasBrother data:Frederick_brother,
-          data:Hubertus_brother,
-          data:Louis_Ferdinand_brother,
-          data:Wilhelm_brother ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasSister data:Cecilie_sister .
+  data:Konrad a :Man ;
+      :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+      :hasMother data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein .
 
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-          :Woman .
+  data:Prince_Frederick_Alfred a :Man ;
+      :hasFather data:Prince_Georg .
 
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-          data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+  data:Prince_Frederick_Konrad a :Man ;
+      :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+      :hasMother data:Margot_Gr%C3%B6ssler .
 
-  data:Cecilie_sister a :Person,
-          :Woman .
+  data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Man ;
+      :hasBirthYear 1868 ;
+      :hasDeathYear 1958 .
 
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-          :Person .
+  data:Count_Ernst_of_Lippe-Biesterfeld a :Man .
 
-  data:Frederick_brother a :Man,
-          :Person .
+  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;
+      :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
 
-  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
-          :Woman .
+  data:Emma_Carola_Passavant a :Woman ;
+      :hasBirthYear 1884 ;
+      :hasDeathYear 1971 .
 
-  data:Hubertus_brother a :Man,
-          :Person .
+  data:Erika_W%C3%A4gner a :Woman .
 
-  data:Louis_Ferdinand_brother a :Man,
-          :Person .
+  data:Friedrich_Gr%C3%B6ssler a :Man .
 
-  data:Queen_Victoria a :Person,
-          :Woman .
+  data:Georg_II_Duke_of_Saxe-Meiningen a :Man .
 
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-          data:Wilhelm_II_German_Emperor .
+  data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man ;
+      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
 
-  data:Wilhelm_II_German_Emperor a :Man,
-          :Person .
+  data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein a :Woman ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
+      :hasMother data:Emma_Carola_Passavant .
 
-  data:Wilhelm_brother a :Man,
-          :Person .
+  data:Bernhard_Prince_of_Saxe-Meiningen a :Man ;
+      :hasBirthYear 1901 ;
+      :hasBrother data:Prince_Georg ;
+      :hasDeathYear 1984 ;
+      :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+      :hasRelation data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein,
+          data:Margot_Gr%C3%B6ssler .
+
+  data:Margot_Gr%C3%B6ssler a :Woman ;
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Friedrich_Gr%C3%B6ssler ;
+      :hasMother data:Erika_W%C3%A4gner .
+
+  data:Prince_Georg a :Man .
 
 
 
@@ -796,709 +937,338 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (6389c875-e91e-4b22-af4b-14f3eaf9fa36)
- Call ID: 6389c875-e91e-4b22-af4b-14f3eaf9fa36
+  Finish (d6e8cf90-4575-4185-81e0-e1f734599cd8)
+ Call ID: d6e8cf90-4575-4185-81e0-e1f734599cd8
+  Args:
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (50869dbb-adca-4f43-9021-51ffcf2ec996)
+ Call ID: 50869dbb-adca-4f43-9021-51ffcf2ec996
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:39
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Prince_Frederick_Johann_of_Saxe-Meiningen for the hasFather property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
+      AssignClass(node: "Prince_Frederick_Johann_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Prince_Georg for the hasFather property of Prince_Frederick_Alfred is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
+      AssignClass(node: "Prince_Georg", class: ":Ancestor")
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Queen_Victoria for property :hasAncestor of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for property :hasFather of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Man.
+      The value node Georg_II_Duke_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Johann_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
+      AssignClass(node: "Georg_II_Duke_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for property :hasMother of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Woman.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Countess_Adelaide_of_Lippe-Biesterfeld for the hasMother property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
+      AssignClass(node: "Countess_Adelaide_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Baroness_Vera_Schäffer_von_Bernstein for the hasMother property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
+      AssignClass(node: "Baroness_Vera_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
+      The value node Margot_Grössler for the hasMother property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
+      AssignClass(node: "Margot_Grössler", class: ":Ancestor")
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
+      The value node Prince_Frederick_Johann_of_Saxe-Meiningen for the hasFather property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
+      AssignClass(node: "Prince_Frederick_Johann_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Queen_Victoria for property :hasAncestor of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor.
+      The value node Prince_Georg for the hasFather property of Prince_Frederick_Alfred is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(node: "Prince_Georg", class: ":Ancestor")
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for property :hasFather of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Man.
+      The value node Count_Ernst_of_Lippe-Biesterfeld for the hasFather property of Countess_Adelaide_of_Lippe-Biesterfeld is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
+      AssignClass(node: "Count_Ernst_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for property :hasMother of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Woman.
+      The value node Friedrich_Grössler for the hasFather property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
+      AssignClass(node: "Friedrich_Grössler", class: ":Ancestor")
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for property :hasParent of node :Wilhelm_German_Crown_Prince does not have the required class :Ancestor or :Person.
+      The value node Georg_II_Duke_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Johann_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
+      AssignClass(node: "Georg_II_Duke_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
+      The value node Baron_Friedrich_Fritz_Schäffer_von_Bernstein for the hasFather property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
+      AssignClass(node: "Baron_Friedrich_Fritz_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Queen_Victoria for property :hasAncestor of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor.
+      The value node Countess_Adelaide_of_Lippe-Biesterfeld for the hasMother property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(node: "Countess_Adelaide_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for property :hasFather of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Man.
+      The value node Erika_Wägner for the hasMother property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
+      AssignClass(node: "Erika_Wägner", class: ":Ancestor")
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for property :hasMother of node :Alexandrine_Irene_of_Prussia does not have the required class :Ancestor or :Woman.
+      The value node Baroness_Vera_Schäffer_von_Bernstein for the hasMother property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
+      AssignClass(node: "Baroness_Vera_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for property :hasParent of node :Cecilie_of_Mecklenburg-Schwerin does not have the required class :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (6ee2c540-1d4b-4c99-9c6f-705cd3afaa05)
- Call ID: 6ee2c540-1d4b-4c99-9c6f-705cd3afaa05
-  Args:
-    source: Augusta_Victoria_of_Schleswig-Holstein
-    type: :Person
-  AssignClass (6365f4f3-8c82-4235-8421-d80df863751d)
- Call ID: 6365f4f3-8c82-4235-8421-d80df863751d
-  Args:
-    type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (e1c60fec-7cc6-4a71-91da-2c722d12c183)
- Call ID: e1c60fec-7cc6-4a71-91da-2c722d12c183
-  Args:
-    type: :Ancestor
-    source: Queen_Victoria
-  AssignClass (02588105-71e5-48cb-a18d-49c15dbaca1f)
- Call ID: 02588105-71e5-48cb-a18d-49c15dbaca1f
-  Args:
-    type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (4cb684f3-3079-48ce-adab-3f490a18701b)
- Call ID: 4cb684f3-3079-48ce-adab-3f490a18701b
-  Args:
-    type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (3a8b93f6-2dcf-4e3f-b766-c5bc1e7d9dde)
- Call ID: 3a8b93f6-2dcf-4e3f-b766-c5bc1e7d9dde
-  Args:
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-    type: :Person
-  AssignClass (ecfa00e7-c880-4dbd-95a5-c24fc6f9e450)
- Call ID: ecfa00e7-c880-4dbd-95a5-c24fc6f9e450
-  Args:
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-    type: :Person
-  AddLiteral (4615cecf-f0d6-4f84-b22f-c4dc402d16bf)
- Call ID: 4615cecf-f0d6-4f84-b22f-c4dc402d16bf
-  Args:
-    literal_type: xsd:string
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasSex
-    literal_value: Male
-  AddLiteral (7638f3e0-21c0-4247-a7b1-83dde9b59d6f)
- Call ID: 7638f3e0-21c0-4247-a7b1-83dde9b59d6f
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-  AddLiteral (48664a53-8ffe-4011-9d22-9f74f73b7f98)
- Call ID: 48664a53-8ffe-4011-9d22-9f74f73b7f98
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Alexandrine_Irene_of_Prussia
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexandrine_Irene_of_Prussia a :Person,
-          :Woman ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1915 ;
-      :hasBrother data:Frederick_brother,
-          data:Hubertus_brother,
-          data:Louis_Ferdinand_brother,
-          data:Wilhelm_brother ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasSex "Female"^^xsd:string ;
-      :hasSister data:Cecilie_sister .
-
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-          :Woman .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-          data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Cecilie_sister a :Person,
-          :Woman .
-
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-          :Person .
-
-  data:Frederick_brother a :Man,
-          :Person .
-
-  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
-          :Woman .
-
-  data:Hubertus_brother a :Man,
-          :Person .
-
-  data:Louis_Ferdinand_brother a :Man,
-          :Person .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-          data:Wilhelm_II_German_Emperor ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Wilhelm_II_German_Emperor a :Man,
-          :Person .
-
-  data:Wilhelm_brother a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (81189aee-f302-4ce1-91c1-7a1048a8f6bb)
- Call ID: 81189aee-f302-4ce1-91c1-7a1048a8f6bb
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (c1355e05-0e94-4f3c-8a2d-a9861822c755)
- Call ID: c1355e05-0e94-4f3c-8a2d-a9861822c755
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:42
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Augusta_Victoria_of_Schleswig-Holstein' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Wilhelm_II_German_Emperor' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Man' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
-
-
-  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Woman' or ':Ancestor'.
+      The value node Margot_Grössler for the hasMother property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Augusta_Victoria_of_Schleswig-Holstein' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Wilhelm_II_German_Emperor' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Frederick_Francis_III_of_Mecklenburg-Schwerin' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node: "Margot_Grössler", class: ":Ancestor")
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
+      The value node Emma_Carola_Passavant for the hasMother property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Emma_Carola_Passavant", class: ":Ancestor")
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+      The value node Prince_Frederick_Johann_of_Saxe-Meiningen for the hasFather property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Prince_Frederick_Johann_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Man' or ':Ancestor'.
+      The value node Prince_Georg for the hasFather property of Prince_Frederick_Alfred is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
+      AssignClass(node: "Prince_Georg", class: ":Ancestor")
 
 
   Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Woman' or ':Ancestor'.
+      The value node Count_Ernst_of_Lippe-Biesterfeld for the hasFather property of Countess_Adelaide_of_Lippe-Biesterfeld is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
+      AssignClass(node: "Count_Ernst_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Augusta_Victoria_of_Schleswig-Holstein' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
+      The value node Friedrich_Grössler for the hasFather property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Victoria_of_Schleswig-Holstein', class=':Person')
+      AssignClass(node: "Friedrich_Grössler", class: ":Ancestor")
 
 
   Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Wilhelm_II_German_Emperor' for 'Wilhelm_German_Crown_Prince' is missing the required class ':Person' or ':Ancestor'.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II_German_Emperor', class=':Person')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Frederick_Francis_III_of_Mecklenburg-Schwerin' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
+      The value node Georg_II_Duke_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Johann_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
+      AssignClass(node: "Georg_II_Duke_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
+      The value node Bernhard_Prince_of_Saxe-Meiningen for the hasFather property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
+      AssignClass(node: "Bernhard_Prince_of_Saxe-Meiningen", class: ":Ancestor")
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+      The value node Baron_Friedrich_Fritz_Schäffer_von_Bernstein for the hasFather property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node: "Bar_Friedrich_Fritz_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
+      The value node Countess_Adelaide_of_Lippe-Biesterfeld for the hasMother property of Bernhard_Prince_of_Saxe-Meiningen is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Countess_Adelaide_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [31]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+      The value node Erika_Wägner for the hasMother property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Erika_Wägner", class: ":Ancestor")
 
 
   Violation [32]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+      The value node Baroness_Vera_Schäffer_von_Bernstein for the hasMother property of Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node: "Baroness_Vera_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [33]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
+      The value node Margot_Grössler for the hasMother property of Prince_Frederick_Konrad is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Margot_Grössler", class: ":Ancestor")
 
 
   Violation [34]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+      The value node Emma_Carola_Passavant for the hasMother property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Emma_Carola_Passavant", class: ":Ancestor")
 
 
   Violation [35]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Man' or ':Ancestor'.
+      The value node Baron_Friedrich_Fritz_Schäffer_von_Bernstein for the hasFather property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Man')
+      AssignClass(node: "Baron_Friedrich_Fritz_Schäffer_von_Bernstein", class: ":Ancestor")
 
 
   Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' for 'Alexandrine_Irene_of_Prussia' is missing the required class ':Woman' or ':Ancestor'.
+      The value node Count_Ernst_of_Lippe-Biesterfeld for the hasFather property of Countess_Adelaide_of_Lippe-Biesterfeld is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Woman')
+      AssignClass(node: "Count_Ernst_of_Lippe-Biesterfeld", class: ":Ancestor")
 
 
   Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Frederick_Francis_III_of_Mecklenburg-Schwerin' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
+      The value node Friedrich_Grössler for the hasFather property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III_of_Mecklenburg-Schwerin', class=':Person')
+      AssignClass(node: "Friedrich_Grössler", class: ":Ancestor")
 
 
   Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The parent 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' for 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Person' or ':Ancestor'.
+      The value node Emma_Carola_Passavant for the hasMother property of Baroness_Vera_Schäffer_von_Bernstein is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Grand_Duchess_Anastasia_Mikhailovna_of_Russia', class=':Person')
+      AssignClass(node: "Emma_Carola_Passavant", class: ":Ancestor")
 
 
   Violation [39]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+      The value node Erika_Wägner for the hasMother property of Margot_Grössler is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandrine_Irene_of_Prussia' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node: "Erika_Wägner", class: ":Ancestor")
 
 
 
@@ -1507,18 +1277,68 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e87734e5-372c-4352-9064-add1a6722fea)
- Call ID: e87734e5-372c-4352-9064-add1a6722fea
+  AssignClass (d3ec0792-76c7-48e2-804d-13bee80f447b)
+ Call ID: d3ec0792-76c7-48e2-804d-13bee80f447b
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (273374d1-d033-44cc-8ba5-b81fb8e2161f)
- Call ID: 273374d1-d033-44cc-8ba5-b81fb8e2161f
+    type: :Ancestor
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AssignClass (067979a3-8f58-47c6-a7a4-7c50c37fbb98)
+ Call ID: 067979a3-8f58-47c6-a7a4-7c50c37fbb98
   Args:
-    type: :Sex
-    source: Female
-  Finish (eef04a50-1b4f-4cc7-a32f-a2f9ef7dcae1)
- Call ID: eef04a50-1b4f-4cc7-a32f-a2f9ef7dcae1
+    type: :Ancestor
+    source: Prince_Georg
+  AssignClass (0ebcf551-409a-452f-973f-77d0687d557d)
+ Call ID: 0ebcf551-409a-452f-973f-77d0687d557d
+  Args:
+    type: :Ancestor
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AssignClass (6f1c3911-f75f-4275-b756-57d7a56c4037)
+ Call ID: 6f1c3911-f75f-4275-b756-57d7a56c4037
+  Args:
+    source: Georg_II_Duke_of_Saxe-Meiningen
+    type: :Ancestor
+  AssignClass (49f2ada6-f450-42ab-8cc4-b63ee3c82bb2)
+ Call ID: 49f2ada6-f450-42ab-8cc4-b63ee3c82bb2
+  Args:
+    type: :Ancestor
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AssignClass (861f4674-57f2-484d-8521-6243fc0efbd9)
+ Call ID: 861f4674-57f2-484d-8521-6243fc0efbd9
+  Args:
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    type: :Ancestor
+  AssignClass (242fc836-621b-4b34-9ba0-9784b21a4aaa)
+ Call ID: 242fc836-621b-4b34-9ba0-9784b21a4aaa
+  Args:
+    type: :Ancestor
+    source: Margot_Grössler
+  AssignClass (a3ed8fac-c384-4565-b46e-68c72a632753)
+ Call ID: a3ed8fac-c384-4565-b46e-68c72a632753
+  Args:
+    type: :Ancestor
+    source: Count_Ernst_of_Lippe-Biesterfeld
+  AssignClass (2be24fef-0231-4712-9ed1-d2ec9bae2084)
+ Call ID: 2be24fef-0231-4712-9ed1-d2ec9bae2084
+  Args:
+    type: :Ancestor
+    source: Friedrich_Grössler
+  AssignClass (fc622f2a-026b-4cb2-a5a2-783eae597fa2)
+ Call ID: fc622f2a-026b-4cb2-a5a2-783eae597fa2
+  Args:
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    type: :Ancestor
+  AssignClass (37619077-b9cf-46f4-99bf-dc6f093c9540)
+ Call ID: 37619077-b9cf-46f4-99bf-dc6f093c9540
+  Args:
+    type: :Ancestor
+    source: Erika_Wägner
+  AssignClass (9ecf3548-d284-4b8d-939f-b2bdaf43912c)
+ Call ID: 9ecf3548-d284-4b8d-939f-b2bdaf43912c
+  Args:
+    source: Emma_Carola_Passavant
+    type: :Ancestor
+  ValidateShacl (f5b59798-2e76-4e25-92a8-e9549815881a)
+ Call ID: f5b59798-2e76-4e25-92a8-e9549815881a
   Args:
 
 ================================= Tool Message =================================
@@ -1527,476 +1347,23 @@ Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexandrine_Irene_of_Prussia a :Person,
-          :Woman ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1915 ;
-      :hasBrother data:Frederick_brother,
-          data:Hubertus_brother,
-          data:Louis_Ferdinand_brother,
-          data:Wilhelm_brother ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasSex "Female"^^xsd:string ;
-      :hasSister data:Cecilie_sister .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-          :Woman .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-          data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Cecilie_sister a :Person,
-          :Woman .
-
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-          :Person .
-
-  data:Frederick_brother a :Man,
-          :Person .
-
-  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
-          :Woman .
-
-  data:Hubertus_brother a :Man,
-          :Person .
-
-  data:Louis_Ferdinand_brother a :Man,
-          :Person .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-          data:Wilhelm_II_German_Emperor ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Wilhelm_II_German_Emperor a :Man,
-          :Person .
-
-  data:Wilhelm_brother a :Man,
-          :Person .
-
-
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (7dd43701-d013-4a92-a83d-a977d7317e19)
- Call ID: 7dd43701-d013-4a92-a83d-a977d7317e19
-  Args:
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
-VALIDATION RESULTS
-Total violations:42
-Violations:
+Look at the messages below to see the final data graph after all the edits.
 
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+================================= Tool Message =================================
 
+Look at the messages below to see the final data graph after all the edits.
 
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Augusta_Victoria_of_Schleswig-Holstein' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Augusta_Victoria_of_Schleswig-Holstein', ':Person')
+================================= Tool Message =================================
 
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Wilhelm_II_German_Emperor' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_II_German_Emperor', ':Person')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Wilhelm_German_Crown_Prince' is not correctly assigned as an ':Ancestor' or ':Man' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_German_Crown_Prince', ':Man')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Woman' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Cecilie_of_Mecklenburg-Schwerin', ':Woman')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Augusta_Victoria_of_Schleswig-Holstein' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Augusta_Victoria_of_Schleswig-Holstein', ':Person')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Wilhelm_II_German_Emperor' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_II_German_Emperor', ':Person')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Frederick_Francis_III_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Frederick_Francis_III_of_Mecklenburg-Schwerin', ':Person')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Anastasia_Mikhailovna_of_Russia', ':Person')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Wilhelm_German_Crown_Prince' is not correctly assigned as an ':Ancestor' or ':Man' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_German_Crown_Prince', ':Man')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Woman' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Cecilie_of_Mecklenburg-Schwerin', ':Woman')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Augusta_Victoria_of_Schleswig-Holstein' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Augusta_Victoria_of_Schleswig-Holstein', ':Person')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Wilhelm_II_German_Emperor' is not correctly assigned as an ':Ancestor' or ':Person' for 'Wilhelm_German_Crown_Prince'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_II_German_Emperor', ':Person')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Frederick_Francis_III_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Frederick_Francis_III_of_Mecklenburg-Schwerin', ':Person')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Anastasia_Mikhailovna_of_Russia', ':Person')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Wilhelm_German_Crown_Prince' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Wilhelm_German_Crown_Prince' is not correctly assigned as an ':Ancestor' or ':Man' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Wilhelm_German_Crown_Prince', ':Man')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Woman' for 'Alexandrine_Irene_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Cecilie_of_Mecklenburg-Schwerin', ':Woman')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Frederick_Francis_III_of_Mecklenburg-Schwerin' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Frederick_Francis_III_of_Mecklenburg-Schwerin', ':Person')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The parent node 'Grand_Duchess_Anastasia_Mikhailovna_of_Russia' is not correctly assigned as an ':Ancestor' or ':Person' for 'Cecilie_of_Mecklenburg-Schwerin'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Anastasia_Mikhailovna_of_Russia', ':Person')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Cecilie_of_Mecklenburg-Schwerin' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'Alexandrine_Irene_of_Prussia' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (acd48dde-99ef-46d5-b118-80bca36339ef)
- Call ID: acd48dde-99ef-46d5-b118-80bca36339ef
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  RemoveLiteral (76c33c91-ec79-496f-811e-c0c21074640c)
- Call ID: 76c33c91-ec79-496f-811e-c0c21074640c
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Cecilie_of_Mecklenburg-Schwerin
-    literal_value: Female
-  RemoveLiteral (831bc36f-53a8-415d-9e6f-0bcb4b985a6d)
- Call ID: 831bc36f-53a8-415d-9e6f-0bcb4b985a6d
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Alexandrine_Irene_of_Prussia
-    literal_value: Female
-  AddTriple (58bbce36-b002-49d2-b7cc-6993db2fb105)
- Call ID: 58bbce36-b002-49d2-b7cc-6993db2fb105
-  Args:
-    target: Male
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasSex
-  AddTriple (a1fd5de9-e6e3-4e3e-bb9d-80608b03b342)
- Call ID: a1fd5de9-e6e3-4e3e-bb9d-80608b03b342
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (7b2a4d77-d104-460f-b89d-864a140df78b)
- Call ID: 7b2a4d77-d104-460f-b89d-864a140df78b
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Alexandrine_Irene_of_Prussia
-  Finish (745f0a58-31d6-40a1-a9d7-86e9fdd277ae)
- Call ID: 745f0a58-31d6-40a1-a9d7-86e9fdd277ae
-  Args:
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -2025,378 +1392,76 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandrine_Irene_of_Prussia a :Person,
+  data:Konrad a :Man ;
+      :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+      :hasMother data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein .
+
+  data:Prince_Frederick_Alfred a :Man ;
+      :hasFather data:Prince_Georg .
+
+  data:Prince_Frederick_Konrad a :Man ;
+      :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+      :hasMother data:Margot_Gr%C3%B6ssler .
+
+  data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Ancestor,
+          :Man ;
+      :hasBirthYear 1868 ;
+      :hasDeathYear 1958 .
+
+  data:Count_Ernst_of_Lippe-Biesterfeld a :Ancestor,
+          :Man .
+
+  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
           :Woman ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1915 ;
-      :hasBrother data:Frederick_brother,
-          data:Hubertus_brother,
-          data:Louis_Ferdinand_brother,
-          data:Wilhelm_brother ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasSex data:Female ;
-      :hasSister data:Cecilie_sister .
+      :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
 
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-          :Woman .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+  data:Emma_Carola_Passavant a :Ancestor,
           :Woman ;
-      :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-          data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-      :hasSex data:Female .
+      :hasBirthYear 1884 ;
+      :hasDeathYear 1971 .
 
-  data:Cecilie_sister a :Person,
+  data:Erika_W%C3%A4gner a :Ancestor,
           :Woman .
 
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-          :Person .
+  data:Friedrich_Gr%C3%B6ssler a :Ancestor,
+          :Man .
 
-  data:Frederick_brother a :Man,
-          :Person .
+  data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+          :Man .
 
-  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
-          :Woman .
+  data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Ancestor,
+          :Man ;
+      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
 
-  data:Hubertus_brother a :Man,
-          :Person .
-
-  data:Louis_Ferdinand_brother a :Man,
-          :Person .
-
-  data:Male a :Sex .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-          data:Wilhelm_II_German_Emperor ;
-      :hasSex data:Male .
-
-  data:Wilhelm_II_German_Emperor a :Man,
-          :Person .
-
-  data:Wilhelm_brother a :Man,
-          :Person .
-
-  data:Female a :Sex .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e7d06da6-871d-4f49-b5ff-58a5b073b166)
- Call ID: e7d06da6-871d-4f49-b5ff-58a5b073b166
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:18
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Augusta_Victoria_of_Schleswig-Holstein.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_II_German_Emperor.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for the property hasFather of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_German_Crown_Prince.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for the property hasMother of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Cecilie_of_Mecklenburg-Schwerin.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Augusta_Victoria_of_Schleswig-Holstein.
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_II_German_Emperor.
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Frederick_Francis_III_of_Mecklenburg-Schwerin.
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Grand_Duchess_Anastasia_Mikhailovna_of_Russia.
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for the property hasFather of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_German_Crown_Prince.
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for the property hasMother of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Cecilie_of_Mecklenburg-Schwerin.
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig-Holstein for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Augusta_Victoria_of_Schleswig-Holstein.
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the property hasParent of node Wilhelm_German_Crown_Prince does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_II_German_Emperor.
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Frederick_Francis_III_of_Mecklenburg-Schwerin.
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Grand_Duchess_Anastasia_Mikhailovna_of_Russia.
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Wilhelm_German_Crown_Prince for the property hasFather of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Wilhelm_German_Crown_Prince.
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Cecilie_of_Mecklenburg-Schwerin for the property hasMother of node Alexandrine_Irene_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Cecilie_of_Mecklenburg-Schwerin.
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_III_of_Mecklenburg-Schwerin for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Frederick_Francis_III_of_Mecklenburg-Schwerin.
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value Grand_Duchess_Anastasia_Mikhailovna_of_Russia for the property hasParent of node Cecilie_of_Mecklenburg-Schwerin does not belong to the required classes :Ancestor or :Person.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Grand_Duchess_Anastasia_Mikhailovna_of_Russia.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (bb303276-312b-4dcd-bcc5-f863daf030d4)
- Call ID: bb303276-312b-4dcd-bcc5-f863daf030d4
-  Args:
-    source: Augusta_Victoria_of_Schleswig-Holstein
-    type: :Ancestor
-  AssignClass (371bdc5f-0138-46cd-97b6-d548c2606445)
- Call ID: 371bdc5f-0138-46cd-97b6-d548c2606445
-  Args:
-    source: Wilhelm_II_German_Emperor
-    type: :Ancestor
-  AssignClass (980c3d28-429c-47f2-813d-eefa4347f13a)
- Call ID: 980c3d28-429c-47f2-813d-eefa4347f13a
-  Args:
-    type: :Ancestor
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (0d303a4c-8ed7-4528-a24d-240770a44489)
- Call ID: 0d303a4c-8ed7-4528-a24d-240770a44489
-  Args:
-    type: :Ancestor
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (346906cf-3f17-42e0-9444-e4c6fa16b817)
- Call ID: 346906cf-3f17-42e0-9444-e4c6fa16b817
-  Args:
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-    type: :Ancestor
-  AssignClass (47d0bdb3-5ff0-4188-80aa-53e93a924b3c)
- Call ID: 47d0bdb3-5ff0-4188-80aa-53e93a924b3c
-  Args:
-    type: :Ancestor
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  Finish (4383aede-afd5-4d7d-a733-1579392c5cb2)
- Call ID: 4383aede-afd5-4d7d-a733-1579392c5cb2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexandrine_Irene_of_Prussia a :Person,
+  data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein a :Ancestor,
           :Woman ;
-      :hasAncestor data:Queen_Victoria ;
-      :hasBirthYear 1915 ;
-      :hasBrother data:Frederick_brother,
-          data:Hubertus_brother,
-          data:Louis_Ferdinand_brother,
-          data:Wilhelm_brother ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasSex data:Female ;
-      :hasSister data:Cecilie_sister .
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
+      :hasMother data:Emma_Carola_Passavant .
 
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
-          :Person,
-          :Woman .
+  data:Bernhard_Prince_of_Saxe-Meiningen a :Ancestor,
+          :Man ;
+      :hasBirthYear 1901 ;
+      :hasBrother data:Prince_Georg ;
+      :hasDeathYear 1984 ;
+      :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+      :hasRelation data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein,
+          data:Margot_Gr%C3%B6ssler .
 
-  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
+  data:Margot_Gr%C3%B6ssler a :Ancestor,
           :Woman ;
-      :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-          data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-      :hasSex data:Female .
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Friedrich_Gr%C3%B6ssler ;
+      :hasMother data:Erika_W%C3%A4gner .
 
-  data:Cecilie_sister a :Person,
-          :Woman .
-
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Frederick_brother a :Man,
-          :Person .
-
-  data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Hubertus_brother a :Man,
-          :Person .
-
-  data:Louis_Ferdinand_brother a :Man,
-          :Person .
-
-  data:Male a :Sex .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Wilhelm_German_Crown_Prince a :Ancestor,
-          :Man,
-          :Person ;
-      :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-          data:Wilhelm_II_German_Emperor ;
-      :hasSex data:Male .
-
-  data:Wilhelm_II_German_Emperor a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Wilhelm_brother a :Man,
-          :Person .
-
-  data:Female a :Sex .
+  data:Prince_Georg a :Ancestor,
+          :Man .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (774f3374-c981-49c5-b57b-71c470a560b9)
- Call ID: 774f3374-c981-49c5-b57b-71c470a560b9
-  Args:
 
 ================================= Tool Message =================================
 
@@ -2406,6 +1471,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ab3e25eb-101d-4b98-8045-09f69c8c19cc)
- Call ID: ab3e25eb-101d-4b98-8045-09f69c8c19cc
+  Finish (472900c5-22a7-4223-a413-e57e978a5905)
+ Call ID: 472900c5-22a7-4223-a413-e57e978a5905
   Args:

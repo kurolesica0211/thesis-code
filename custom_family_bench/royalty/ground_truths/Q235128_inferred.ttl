@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Infanta_Elena-_Duchess_of_Lugo a :Person,
+        :Woman ;
+    rdfs:label "Infanta Elena, Duchess of Lugo"^^xsd:string ;
+    data:posIndicesFull "2324:2337"^^xsd:string ;
+    data:wdtLink wdt:Q54386 ;
+    :alsoKnownAs "Elena Maria Isabela Dominica de Silas de Borbón y Grecia, Infanta de España"^^xsd:string,
+        "Elena de Borbón"^^xsd:string,
+        "Infanta Elena"^^xsd:string,
+        "Infanta Elena of Spain"^^xsd:string ;
+    :hasRelation data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSiblingOf data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSisterOf data:Infanta_Elena-_Duchess_of_Lugo .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "506:543"^^xsd:string,
+        "513:543"^^xsd:string,
+        "703:740"^^xsd:string,
+        "710:740"^^xsd:string ;
+    data:posIndicesPart "1491:1498"^^xsd:string,
+        "1822:1829"^^xsd:string,
+        "2026:2032"^^xsd:string,
+        "2125:2131"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "1342:1354"^^xsd:string,
+        "1539:1551"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isAncestorOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infante_Juan-_Count_of_Barcelona a :Man,
+        :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona"^^xsd:string ;
+    data:posIndicesFull "588:620"^^xsd:string ;
+    data:posIndicesPart "1491:1498"^^xsd:string,
+        "1499:1503"^^xsd:string,
+        "1578:1583"^^xsd:string,
+        "1587:1596"^^xsd:string,
+        "1666:1675"^^xsd:string,
+        "1822:1829"^^xsd:string,
+        "1830:1834"^^xsd:string,
+        "2021:2025"^^xsd:string,
+        "2120:2124"^^xsd:string,
+        "2177:2181"^^xsd:string,
+        "2277:2282"^^xsd:string,
+        "2286:2295"^^xsd:string,
+        "742:749"^^xsd:string ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philippe, Count of Paris"^^xsd:string ;
+    data:posIndicesFull "874:905"^^xsd:string ;
+    data:posIndicesPart "1197:1202"^^xsd:string,
+        "1384:1390"^^xsd:string,
+        "1578:1583"^^xsd:string,
+        "2277:2282"^^xsd:string ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans"^^xsd:string,
+        "Louis-Philippe-Albert d' Orléans"^^xsd:string ;
+    :hasBrother data:Prince_Philippe-_Count_of_Paris ;
+    :hasChild data:Princess_Louise_of_Orléans ;
+    :hasDaughter data:Princess_Louise_of_Orléans ;
+    :hasRelation data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Princess_Louise_of_Orléans ;
+    :isBloodrelationOf data:Prince_Philippe-_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe-_Count_of_Paris ;
+    :isFatherOf data:Princess_Louise_of_Orléans ;
+    :isParentOf data:Princess_Louise_of_Orléans ;
+    :isSiblingOf data:Prince_Philippe-_Count_of_Paris ;
+    :isUncleOf data:Princess_Louise_of_Orléans .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Person,
+        :Woman ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona"^^xsd:string ;
+    data:posIndicesFull "0:54"^^xsd:string ;
+    data:posIndicesPart "1299:1306"^^xsd:string,
+        "1587:1596"^^xsd:string,
+        "1637:1642"^^xsd:string,
+        "1654:1662"^^xsd:string,
+        "1666:1675"^^xsd:string,
+        "1849:1857"^^xsd:string,
+        "2286:2295"^^xsd:string,
+        "2377:2385"^^xsd:string,
+        "665:670"^^xsd:string,
+        "998:1005"^^xsd:string ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Louise_of_Orléans ;
+    :hasMother data:Princess_Louise_of_Orléans ;
+    :hasParent data:Princess_Louise_of_Orléans ;
+    :hasRelation data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isBloodrelationOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isChildOf data:Princess_Louise_of_Orléans ;
+    :isDaughterOf data:Princess_Louise_of_Orléans ;
+    :isSiblingOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isSisterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona .
+
+data:Princess_Louise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Louise of Orléans"^^xsd:string ;
+    data:posIndicesFull "548:574"^^xsd:string,
+        "834:860"^^xsd:string ;
+    data:posIndicesPart "1072:1080"^^xsd:string ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans"^^xsd:string ;
+    :hasAncestor data:Prince_Philippe-_Count_of_Paris ;
+    :hasChild data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasDaughter data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris ;
+    :hasRelation data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Louise_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Louise_of_Orléans ;
+    :isAncestorOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isAuntOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isBloodrelationOf data:Princess_Louise_of_Orléans ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris ;
+    :isMotherOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isParentOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isSiblingOf data:Princess_Louise_of_Orléans ;
+    :isSisterOf data:Princess_Louise_of_Orléans .
+

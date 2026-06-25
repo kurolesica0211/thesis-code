@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Baroness_Francesca_Thyssen-Bornemisza a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Baroness_Francesca_Thyssen-Bornemisza a :Person ;
     rdfs:label "Baroness Francesca Thyssen-Bornemisza" ;
     data:posIndicesFull "4184:4221",
         "4193:4221" ;
@@ -23,16 +20,7 @@ data:Baroness_Francesca_Thyssen-Bornemisza a :Ancestor,
         "Franziska Baronin von Thyssen-Bornemisza" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Karl_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Karl_von_Habsburg a :Person ;
     rdfs:label "Karl von Habsburg" ;
     data:posIndicesFull "0:17",
         "4993:5010",
@@ -87,16 +75,16 @@ data:Karl_von_Habsburg a :Ancestor,
         "987:991" ;
     data:wdtLink wdt:Q78515 ;
     :alsoKnownAs "Karl Thomas Erzherzog von Österreich" ;
-    :hasFather data:Otto_von_Habsburg ;
     :hasParent data:Otto_von_Habsburg ;
-    :hasSex data:male ;
-    :isChildOf data:Otto_von_Habsburg ;
-    :isSonOf data:Otto_von_Habsburg .
+    :hasSex data:male .
 
-data:Otto_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Otto_von_Habsburg a :Person ;
     rdfs:label "Otto von Habsburg" ;
     data:posIndicesFull "1002:1019",
         "345:362" ;
@@ -127,9 +115,9 @@ data:Otto_von_Habsburg a :Ancestor,
     data:wdtLink wdt:Q76343 ;
     :alsoKnownAs "Crown Prince Otto of Austria",
         "Otto, Crown Prince of Austria" ;
-    :hasChild data:Karl_von_Habsburg ;
-    :hasSex data:male ;
-    :hasSon data:Karl_von_Habsburg ;
-    :isFatherOf data:Karl_von_Habsburg ;
-    :isParentOf data:Karl_von_Habsburg .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

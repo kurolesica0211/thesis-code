@@ -7,27 +7,15 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Juan Carlos I of Spain" ;
-    data:posIndicesFull "229:242",
-        "229:251" ;
-    data:wdtLink wdt:Q19943 ;
-    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
-        "Juan Carlos I" ;
+data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi a :Person ;
+    rdfs:label "Marco Torlonia, 6th Prince of Civitella-Cesi" ;
+    data:wdtLink wdt:Q6757730 ;
+    :alsoKnownAs "Marco Alfonso Torlonia, 6th Principe di Civitella-Cessi" ;
+    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
     :hasSex data:male .
 
-data:Princess_Sibilla_of_Luxembourg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Sibilla_of_Luxembourg a :Person ;
     rdfs:label "Princess Sibilla of Luxembourg" ;
     data:posIndicesFull "277:307",
         "286:293" ;
@@ -36,24 +24,20 @@ data:Princess_Sibilla_of_Luxembourg a :Person,
         "Sibilla Sandra Weiller" ;
     :hasSex data:female .
 
-data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Person ;
     rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi" ;
     data:posIndicesFull "104:153" ;
     data:wdtLink wdt:Q4716439 ;
     :alsoKnownAs "Alessandro Torlonia, 5th Principe di Civitella-Cessi" ;
-    :hasChild data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :hasSex data:male ;
-    :hasSon data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :isFatherOf data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :isParentOf data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi .
+    :hasSex data:male .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XIII a :Person ;
     rdfs:label "Alfonso XIII" ;
     data:posIndicesFull "201:213",
         "201:222" ;
@@ -64,46 +48,19 @@ data:Alfonso_XIII a :Ancestor,
         "Don Alfonso de Borbon y Habsburgo",
         "Don Alfonso de Borbón y Habsburgo",
         "The African" ;
-    :hasChild data:Infanta_Beatriz_of_Spain ;
-    :hasDaughter data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:male ;
-    :isFatherOf data:Infanta_Beatriz_of_Spain ;
-    :isParentOf data:Infanta_Beatriz_of_Spain .
+    :hasSex data:male .
 
-data:Infanta_Beatriz_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Beatriz_of_Spain a :Person ;
     rdfs:label "Infanta Beatriz of Spain" ;
     data:posIndicesFull "158:182" ;
+    data:posIndicesPart "246:251" ;
     data:wdtLink wdt:Q269493 ;
     :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi",
         "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain" ;
-    :hasChild data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :hasFather data:Alfonso_XIII ;
     :hasParent data:Alfonso_XIII ;
-    :hasSex data:female ;
-    :hasSon data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :isAuntOf data:Juan_Carlos_I_of_Spain ;
-    :isChildOf data:Alfonso_XIII ;
-    :isDaughterOf data:Alfonso_XIII ;
-    :isMotherOf data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi ;
-    :isParentOf data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi .
+    :hasSex data:female .
 
-data:Marco_Torlonia-_6th_Prince_of_Civitella-Cesi a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Marco Torlonia, 6th Prince of Civitella-Cesi" ;
-    data:wdtLink wdt:Q6757730 ;
-    :alsoKnownAs "Marco Alfonso Torlonia, 6th Principe di Civitella-Cessi" ;
-    :hasFather data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
-    :hasMother data:Infanta_Beatriz_of_Spain ;
-    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :isSonOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+data:female a :Female .
+
+data:male a :Male .
 

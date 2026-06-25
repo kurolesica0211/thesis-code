@@ -1,0 +1,1011 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBrother data:Aimone_Duke_of_Aosta ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Aimone_Duke_of_Aosta ;
+    :isBrotherOf data:Aimone_Duke_of_Aosta ;
+    :isSiblingOf data:Aimone_Duke_of_Aosta .
+
+data:Perikles_Ioannidis a :Man,
+        :Person ;
+    :hasBrother data:Perikles_Ioannidis ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Perikles_Ioannidis ;
+    :isBrotherOf data:Perikles_Ioannidis ;
+    :isSiblingOf data:Perikles_Ioannidis .
+
+data:Carol_of_Romania a :Man,
+        :Person ;
+    :hasBrother data:Carol_of_Romania ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Elisabeth_of_Romania ;
+    :isBloodrelationOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania ;
+    :isBrotherOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania ;
+    :isSiblingOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania .
+
+data:Ferdinand_I_of_Romania a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_I_of_Romania ;
+    :hasChild data:Elisabeth_of_Romania ;
+    :hasDaughter data:Elisabeth_of_Romania ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Elisabeth_of_Romania ;
+    :isBloodrelationOf data:Ferdinand_I_of_Romania ;
+    :isBrotherOf data:Ferdinand_I_of_Romania ;
+    :isFatherOf data:Elisabeth_of_Romania ;
+    :isParentOf data:Elisabeth_of_Romania ;
+    :isSiblingOf data:Ferdinand_I_of_Romania ;
+    :isUncleOf data:Elisabeth_of_Romania .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elisabeth_of_Romania ;
+    :hasDaughter data:Elisabeth_of_Romania ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Marie_of_Romania ;
+    :isAncestorOf data:Elisabeth_of_Romania ;
+    :isAuntOf data:Elisabeth_of_Romania ;
+    :isBloodrelationOf data:Marie_of_Romania ;
+    :isMotherOf data:Elisabeth_of_Romania ;
+    :isParentOf data:Elisabeth_of_Romania ;
+    :isSiblingOf data:Marie_of_Romania ;
+    :isSisterOf data:Marie_of_Romania .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_II_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Sophia_of_Prussia ;
+    :hasSon data:George_II_of_Greece ;
+    :isAncestorOf data:George_II_of_Greece ;
+    :isAuntOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isMotherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasChild data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isBrotherOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isFatherOf data:Frederica_of_Hanover ;
+    :isParentOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isUncleOf data:Frederica_of_Hanover .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:George_II_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Olga_Constantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Olga_Constantinovna ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:George_II_of_Greece ;
+    :isAuntOf data:Constantine_I_of_Greece ;
+    :isBloodrelationOf data:Olga_Constantinovna ;
+    :isMotherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:Olga_Constantinovna ;
+    :isSisterOf data:Olga_Constantinovna .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :isAuntOf data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Frederica_of_Hanover ;
+    :isParentOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Victoria_Louise_of_Prussia .
+
+data:Alexandra_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Alexandra_of_Greece,
+        data:Maria_of_Greece ;
+    :isAuntOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSisterOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece .
+
+data:Christopher_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Alexandra_of_Greece,
+        data:Maria_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isUncleOf data:George_II_of_Greece .
+
+data:Maria_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Alexandra_of_Greece,
+        data:Maria_of_Greece ;
+    :isAuntOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSisterOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasAncestor data:Ferdinand_I_of_Romania,
+        data:Marie_of_Romania ;
+    :hasBrother data:Carol_of_Romania ;
+    :hasFather data:Ferdinand_I_of_Romania ;
+    :hasMother data:Marie_of_Romania ;
+    :hasParent data:Ferdinand_I_of_Romania,
+        data:Marie_of_Romania ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Elisabeth_of_Romania ;
+    :isBloodrelationOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania ;
+    :isChildOf data:Ferdinand_I_of_Romania,
+        data:Marie_of_Romania ;
+    :isDaughterOf data:Ferdinand_I_of_Romania,
+        data:Marie_of_Romania ;
+    :isSiblingOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania ;
+    :isSisterOf data:Carol_of_Romania,
+        data:Elisabeth_of_Romania .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isChildOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isFatherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna ;
+    :hasBrother data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece ;
+    :hasChild data:George_II_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Alexandra_of_Greece,
+        data:Maria_of_Greece ;
+    :hasSon data:George_II_of_Greece ;
+    :isAncestorOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna ;
+    :isFatherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Maria_of_Greece ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna ;
+    :isUncleOf data:George_II_of_Greece .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna,
+        data:Sophia_of_Prussia ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Aimone_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Greece,
+        data:Carol_of_Romania,
+        data:Christopher_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Elisabeth_of_Romania,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ferdinand_I_of_Romania,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Maria_of_Greece,
+        data:Marie_of_Romania,
+        data:Olga_Constantinovna,
+        data:Paul_of_Greece,
+        data:Perikles_Ioannidis,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Katherine_of_Greece,
+        data:Paul_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isUncleOf data:Constantine_II_of_Greece .
+

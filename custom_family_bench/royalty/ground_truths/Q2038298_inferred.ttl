@@ -1,0 +1,41 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:James_Lascelles a :Man,
+        :Person ;
+    rdfs:label "James Lascelles"^^xsd:string ;
+    data:posIndicesFull "0:22"^^xsd:string ;
+    data:posIndicesPart "143:152"^^xsd:string,
+        "212:221"^^xsd:string,
+        "389:398"^^xsd:string,
+        "524:533"^^xsd:string,
+        "717:726"^^xsd:string,
+        "911:920"^^xsd:string,
+        "981:990"^^xsd:string ;
+    data:wdtLink wdt:Q2038298 ;
+    :alsoKnownAs "Hon. James Edward Lascelles"^^xsd:string,
+        "Hon. James Lascelles"^^xsd:string,
+        "James Edward Lascelles"^^xsd:string ;
+    :hasBrother data:James_Lascelles ;
+    :hasRelation data:James_Lascelles ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:James_Lascelles ;
+    :isBrotherOf data:James_Lascelles ;
+    :isSiblingOf data:James_Lascelles .
+

@@ -2,31 +2,45 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_of_Wurttemberg a :Man ;
-    :isUncleOf data:Jean_dOrleans .
+data:Prince_Bertrand a :Man .
 
-data:Chantal_of_Orleans a :Woman ;
-    :isSisterOf data:Henri_Count_of_Paris .
+data:Prince_Pedro_Luiz a :Man ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne .
 
-data:Henri_VI_Count_of_Paris a :Ancestor,
+data:Princess_Amelia a :Woman ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne .
+
+data:Princess_Maria_Gabriela a :Woman ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne .
+
+data:Rafael_of_Orleans-Braganza a :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne .
+
+data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+        :Man .
+
+data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man .
+
+data:Princess_Alix_of_Luxembourg a :Ancestor,
+        :Woman .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Woman .
+
+data:Prince_Antonio a :Ancestor,
         :Man ;
-    :isFatherOf data:Henri_Count_of_Paris .
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
 
-data:Jean_dOrleans a :Man ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Marie_Therese_of_Wurttemberg ;
-    :hasRelation data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart .
-
-data:Maria_Magdalena_Philomena_Juliana_Johanna_de_Tornos_y_Steinhart a :Woman ;
-    :hasBirthYear 1977 .
-
-data:Marie_Therese_of_Wurttemberg a :Ancestor,
+data:Princess_Christine_of_Ligne a :Ancestor,
         :Woman ;
-    :hasBirthYear 1934 .
-
-data:Henri_Count_of_Paris a :Ancestor,
-        :Man ;
-    :hasBirthYear 1933 ;
-    :hasDeathYear 2019 .
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Princess_Alix_of_Luxembourg .
 

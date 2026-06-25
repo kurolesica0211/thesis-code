@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Eitel_Friedrich_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear data:Duchess_Sophia_Charlotte_of_Oldenburg,\n        1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;\n    :hasSex data:Male .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1964 ;\n    :hasSex data:Female .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman ;\n    :hasSex data:Female .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Henry_George_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1950 ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMarriageYear 1979,\n        1990 ;\n    :hasMother data:Marion_Stein ;\n    :hasRelation data:Diane_Howse,\n        data:Margaret_Rosalind_Messenger .\n\ndata:7th_Earl_of_Harewood a :Man,\n        :Person .\n\ndata:Diane_Howse a :Person,\n        :Woman .\n\ndata:Edgar_Frank_Messenger a :Man,\n        :Person .\n\ndata:Margaret_Rosalind_Messenger a :Person,\n        :Woman ;\n    :hasFather data:Edgar_Frank_Messenger .\n\ndata:Marion_Stein a :Person,\n        :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Eitel_Friedrich_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear data:Duchess_Sophia_Charlotte_of_Oldenburg,\n        1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;\n    :hasSex data:Male .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1964 ;\n    :hasSex data:Female .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Female .\n\ndata:Male a :Male .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Eitel_Friedrich_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear data:Duchess_Sophia_Charlotte_of_Oldenburg,\n        1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg ;\n    :hasSex data:Male .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman ;\n    :hasBirthYear 1879 ;\n    :hasDeathYear 1964 ;\n    :hasSex data:Female .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Female .\n\ndata:Male a :Male .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:David_Henry_George_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1950 ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMarriageYear 1979,\n        1990 ;\n    :hasMother data:Marion_Stein ;\n    :hasRelation data:Diane_Howse,\n        data:Margaret_Rosalind_Messenger .\n\ndata:7th_Earl_of_Harewood a :Man,\n        :Person .\n\ndata:Diane_Howse a :Person,\n        :Woman .\n\ndata:Edgar_Frank_Messenger a :Man,\n        :Person .\n\ndata:Margaret_Rosalind_Messenger a :Person,\n        :Woman ;\n    :hasFather data:Edgar_Frank_Messenger .\n\ndata:Marion_Stein a :Person,\n        :Woman .\n\n"
     }
 ]

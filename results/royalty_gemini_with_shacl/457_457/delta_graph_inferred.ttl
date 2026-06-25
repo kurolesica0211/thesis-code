@@ -1,0 +1,153 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mariano_Hugo_of_Windisch-Graetz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Mariano_Hugo_of_Windisch-Graetz ;
+    :hasChild data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasSon data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isAncestorOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Mariano_Hugo_of_Windisch-Graetz ;
+    :isBrotherOf data:Mariano_Hugo_of_Windisch-Graetz ;
+    :isFatherOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isParentOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isSiblingOf data:Mariano_Hugo_of_Windisch-Graetz ;
+    :isUncleOf data:Alexis_Ferdinand_of_Windisch-Graetz .
+
+data:Ferdinand_Karl_Max_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_Karl_Max_of_Austria ;
+    :hasChild data:Sophie_Habsburg ;
+    :hasDaughter data:Sophie_Habsburg ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :isAncestorOf data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :isBloodrelationOf data:Ferdinand_Karl_Max_of_Austria ;
+    :isBrotherOf data:Ferdinand_Karl_Max_of_Austria ;
+    :isFatherOf data:Sophie_Habsburg ;
+    :isParentOf data:Sophie_Habsburg ;
+    :isSiblingOf data:Ferdinand_Karl_Max_of_Austria ;
+    :isUncleOf data:Sophie_Habsburg .
+
+data:Elizabeth_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Helene_of_Torring-Jettenbach ;
+    :hasDaughter data:Helene_of_Torring-Jettenbach ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasSister data:Elizabeth_of_Greece_and_Denmark ;
+    :isAncestorOf data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Helene_of_Torring-Jettenbach,
+        data:Sophie_Habsburg ;
+    :isAuntOf data:Helene_of_Torring-Jettenbach ;
+    :isBloodrelationOf data:Elizabeth_of_Greece_and_Denmark ;
+    :isMotherOf data:Helene_of_Torring-Jettenbach ;
+    :isParentOf data:Helene_of_Torring-Jettenbach ;
+    :isSiblingOf data:Elizabeth_of_Greece_and_Denmark ;
+    :isSisterOf data:Elizabeth_of_Greece_and_Denmark .
+
+data:Helene_of_Torring-Jettenbach a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Elizabeth_of_Greece_and_Denmark ;
+    :hasChild data:Sophie_Habsburg ;
+    :hasDaughter data:Sophie_Habsburg ;
+    :hasMother data:Elizabeth_of_Greece_and_Denmark ;
+    :hasParent data:Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasSister data:Helene_of_Torring-Jettenbach ;
+    :isAncestorOf data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :isAuntOf data:Sophie_Habsburg ;
+    :isBloodrelationOf data:Helene_of_Torring-Jettenbach ;
+    :isChildOf data:Elizabeth_of_Greece_and_Denmark ;
+    :isDaughterOf data:Elizabeth_of_Greece_and_Denmark ;
+    :isMotherOf data:Sophie_Habsburg ;
+    :isParentOf data:Sophie_Habsburg ;
+    :isSiblingOf data:Helene_of_Torring-Jettenbach ;
+    :isSisterOf data:Helene_of_Torring-Jettenbach .
+
+data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasBrother data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Mariano_Hugo_of_Windisch-Graetz ;
+    :hasMother data:Sophie_Habsburg ;
+    :hasParent data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :isBloodrelationOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isBrotherOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isChildOf data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :isSiblingOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isSonOf data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg .
+
+data:Sophie_Habsburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Archduchess Sophie of Austria"^^xsd:string ;
+    :hasAncestor data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach ;
+    :hasBirthYear 1959 ;
+    :hasChild data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :hasFather data:Ferdinand_Karl_Max_of_Austria ;
+    :hasMother data:Helene_of_Torring-Jettenbach ;
+    :hasParent data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach ;
+    :hasRelation data:Alexis_Ferdinand_of_Windisch-Graetz,
+        data:Elizabeth_of_Greece_and_Denmark,
+        data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach,
+        data:Mariano_Hugo_of_Windisch-Graetz,
+        data:Sophie_Habsburg ;
+    :hasSister data:Sophie_Habsburg ;
+    :hasSon data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isAncestorOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isAuntOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isBloodrelationOf data:Sophie_Habsburg ;
+    :isChildOf data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach ;
+    :isDaughterOf data:Ferdinand_Karl_Max_of_Austria,
+        data:Helene_of_Torring-Jettenbach ;
+    :isMotherOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isParentOf data:Alexis_Ferdinand_of_Windisch-Graetz ;
+    :isSiblingOf data:Sophie_Habsburg ;
+    :isSisterOf data:Sophie_Habsburg .
+

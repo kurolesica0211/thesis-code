@@ -7,57 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg" ;
-    data:posIndicesFull "181:252",
-        "383:454" ;
-    data:posIndicesPart "753:761" ;
-    data:wdtLink wdt:Q2419996 ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isMotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "1583:1593",
-        "492:509",
-        "499:509",
-        "499:510" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia .
-
-data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Alexander_Ferdinand_of_Prussia a :Person ;
     rdfs:label "Prince Alexander Ferdinand of Prussia" ;
     data:posIndicesFull "0:89",
         "2395:2432" ;
@@ -83,20 +33,17 @@ data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
         "706:712" ;
     data:wdtLink wdt:Q2189056 ;
     :alsoKnownAs "Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia" ;
-    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
-    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
     :hasParent data:Prince_August_Wilhelm_of_Prussia,
         data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
-    :isSonOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg .
+    :hasSex data:male .
 
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
     rdfs:label "Prince August Wilhelm of Prussia" ;
     data:posIndicesFull "144:176",
         "337:369" ;
@@ -111,13 +58,38 @@ data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
         "706:712" ;
     data:wdtLink wdt:Q58777 ;
     :alsoKnownAs "Auwi" ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
     :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isFatherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isSonOf data:Wilhelm_II .
+    :hasSex data:male .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Person ;
+    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    data:posIndicesFull "181:252",
+        "383:454" ;
+    data:posIndicesPart "753:761" ;
+    data:wdtLink wdt:Q2419996 ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "1583:1593",
+        "492:509",
+        "499:509",
+        "499:510" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

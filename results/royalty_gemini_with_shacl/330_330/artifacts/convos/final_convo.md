@@ -85,35 +85,33 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Lennart Bernadotte, Count of Wisborg (born Prince Lennart of Sweden, Duke of Småland; 8 May 1909 – 21 December 2004) was a Swedish-German landscaper, filmmaker, photographer and was a grandson of King Gustaf V of Sweden.
-He was born at the Royal Palace in Stockholm, to Prince Wilhelm, Duke of Södermanland, and Grand Duchess Maria Pavlovna of Russia.
-At birth Bernadotte was a Swedish prince and was titled Duke of Småland.
-Thus, he was called Mr. Bernadotte as a result.
-Title
+Fergus Bowes-Lyon (18 April 1889 – 27 September 1915) was a British officer and older brother of Elizabeth Bowes-Lyon, who later became the queen consort of King George VI.
+He was a maternal uncle of Queen Elizabeth II.
+Early life and marriage
 
-Under the Swedish Act of Succession, a prince or princess marrying without the consent of the monarch and government forfeits the right of succession for themselves and their descendants.
-In a new policy adopted in the case of Lennart Bernadotte, they were also forbidden to use their titles and told to use the surname of Bernadotte.
-By his marriage on 11 March 1932 Prince Lennart consequently, as far as Swedish records were concerned, was to be called Mr. Lennart Bernadotte.
-On 2 July 1951, for himself, his wife and his marital descendants, Bernadotte was admitted by Grand Duchess Charlotte (head of state at the time) into the nobility of Luxembourg as Count of Wisborg and in that conferral was also called Gustaf Lennart Nicolas Paul Prince Bernadotte.
-It has been reported (without accuracy) that Lennart and his cousin Sigvard Bernadotte wanted King Carl XVI Gustaf of Sweden to restore their royal titles, which he could have done, but that he chose not to do so; no such request was actually ever made however.
-Career
-
-In 1944 Bernadotte portrayed the young Crown Prince Carl of Sweden and Norway in the historical film Prince Gustaf, Bernadotte's only screen acting role.
-He served as head of the Sveriges Scoutförbund (Scouting Association of Sweden) from 1948 to 1951
+Fergus Bowes-Lyon was born at Forbes House in Ham, Surrey, the son of Claude Bowes-Lyon, 14th
+Bowes-Lyon had his early education at Ludgrove School.
+On 17 September 1914, Bowes-Lyon married Lady Christian Norah Dawson-Damer (7 August 1890 – 29 March 1959), daughter of the 5th Earl of Portarlington.
+Rosemary was only two months old when Fergus died in the line of duty on 27 September 1915, only 10 days after the first anniversary of his wedding.
+His issue:
 
 
-Lennart Bernadotte concentrated his energy on his estate on the island of Mainau in Lake Constance, Germany, where he died, and on his charitable fund, the Lennart Bernadotte Stiftung.
-Family
+World War I
 
-In London on 11 March 1932, Bernadotte married firstly Karin Emma Louise Nissvandt (7 July 1911 – 9 September 1991).
-In Mainau on 29 April 1972, Bernadotte married Sonja Anita Maria Haunz (7 May 1944 – 21 October 2008).
-Bernadotte died on 21 December 2004.
+In the First World War, Bowes-Lyon served with the 8th Battalion, Black Watch: as a lieutenant since 19 August 1914, and as temporary captain since 17 November.
+Bowes-Lyon was killed in action on 27 September 1915, during the Battle of the Hohenzollern Redoubt in the Battle of Loos.
+At the time of Bowes-Lyon's death, his brother John was also serving with the Black Watch.
+His mother, Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne, was severely affected by the loss of her son, and after his death became an invalid, withdrawn from public life until the marriage of her daughter Elizabeth to the future king George VI in 1923.
+Fergus's widow later married Captain William Frederick Martin (d. 6 October 1947).
+In November 2011, Bowes-Lyon's grandson supplied family records to the Commonwealth War Graves Commission detailing his original burial place, and showing that it had remained marked until the end of the war.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +127,9 @@ Bernadotte died on 21 December 2004.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +144,23 @@ Bernadotte died on 21 December 2004.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,121 +452,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (df57d6cc-d46a-4498-a048-d6274c51e3e0)
- Call ID: df57d6cc-d46a-4498-a048-d6274c51e3e0
+  AssignClass (57996216-f14b-44cd-8e35-cf513534a982)
+ Call ID: 57996216-f14b-44cd-8e35-cf513534a982
   Args:
     type: :Man
-    source: Lennart_Bernadotte
-  AssignClass (8a0815bd-6195-4e7b-af9e-4882ac818466)
- Call ID: 8a0815bd-6195-4e7b-af9e-4882ac818466
+    source: Fergus_Bowes-Lyon
+  AssignClass (0f581918-7f37-4fa3-a4fa-5326849e4633)
+ Call ID: 0f581918-7f37-4fa3-a4fa-5326849e4633
   Args:
-    source: Wilhelm_Duke_of_Södermanland
-    type: :Man
-  AssignClass (887c65cf-7b1d-4036-bbee-3460550d4bc5)
- Call ID: 887c65cf-7b1d-4036-bbee-3460550d4bc5
+    type: :Person
+    source: Fergus_Bowes-Lyon
+  AddLiteral (6e5f21ec-0d09-43e9-a07a-6346768f518a)
+ Call ID: 6e5f21ec-0d09-43e9-a07a-6346768f518a
   Args:
-    type: :Woman
-    source: Maria_Pavlovna_of_Russia
-  AssignClass (21ae9d7d-9e72-4df3-98ed-b61ce6e508d9)
- Call ID: 21ae9d7d-9e72-4df3-98ed-b61ce6e508d9
-  Args:
-    type: :Woman
-    source: Karin_Emma_Louise_Nissvandt
-  AssignClass (c2bc0266-cc8c-4e53-a205-cadfd7e0eb26)
- Call ID: c2bc0266-cc8c-4e53-a205-cadfd7e0eb26
-  Args:
-    type: :Woman
-    source: Sonja_Anita_Maria_Haunz
-  AddLiteral (478e9b27-7258-4ebb-a6a5-10959818d105)
- Call ID: 478e9b27-7258-4ebb-a6a5-10959818d105
-  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1909
-    literal_type: xsd:integer
-    source: Lennart_Bernadotte
-  AddLiteral (e5376c90-0cb4-4c36-ac83-4b81f186a3e2)
- Call ID: e5376c90-0cb4-4c36-ac83-4b81f186a3e2
+    source: Fergus_Bowes-Lyon
+    literal_value: 1889
+  AddLiteral (14a64c5b-6604-4bd4-af50-c0a32eff6399)
+ Call ID: 14a64c5b-6604-4bd4-af50-c0a32eff6399
   Args:
+    literal_value: 1915
     relation: :hasDeathYear
+    source: Fergus_Bowes-Lyon
     literal_type: xsd:integer
-    literal_value: 2004
-    source: Lennart_Bernadotte
-  AddTriple (c5b81701-327d-48ea-aa6d-54dae0db4153)
- Call ID: c5b81701-327d-48ea-aa6d-54dae0db4153
+  AssignClass (9c2e4d38-bf09-4566-b347-2b1ef4a2b2f6)
+ Call ID: 9c2e4d38-bf09-4566-b347-2b1ef4a2b2f6
   Args:
-    source: Lennart_Bernadotte
-    target: Wilhelm_Duke_of_Södermanland
-    relation: :hasFather
-  AddTriple (6f64bf3c-3a43-4615-89b8-5f9037d4d827)
- Call ID: 6f64bf3c-3a43-4615-89b8-5f9037d4d827
+    type: :Woman
+    source: Elizabeth_Bowes-Lyon
+  AssignClass (26848698-dc54-4711-b289-95c182bab5aa)
+ Call ID: 26848698-dc54-4711-b289-95c182bab5aa
   Args:
-    relation: :hasMother
-    source: Lennart_Bernadotte
-    target: Maria_Pavlovna_of_Russia
-  AddLiteral (87a98a2b-a02b-4998-8a99-5cc64de5c4a4)
- Call ID: 87a98a2b-a02b-4998-8a99-5cc64de5c4a4
+    type: :Person
+    source: Elizabeth_Bowes-Lyon
+  AddTriple (4ace2d07-c08a-448d-ade1-df9b1c949d40)
+ Call ID: 4ace2d07-c08a-448d-ade1-df9b1c949d40
   Args:
-    source: Lennart_Bernadotte
-    literal_type: xsd:integer
-    literal_value: 1932
+    target: Fergus_Bowes-Lyon
+    source: Elizabeth_Bowes-Lyon
+    relation: :isSisterOf
+  AssignClass (464e639b-7466-4fd3-a7aa-57c5e2d9f457)
+ Call ID: 464e639b-7466-4fd3-a7aa-57c5e2d9f457
+  Args:
+    type: :Man
+    source: Claude_Bowes-Lyon
+  AssignClass (451b9a17-a20e-4d7d-8d95-b9e013bd698f)
+ Call ID: 451b9a17-a20e-4d7d-8d95-b9e013bd698f
+  Args:
+    source: Claude_Bowes-Lyon
+    type: :Person
+  AddTriple (c2844f63-060d-4cb9-bd78-91e88a812347)
+ Call ID: c2844f63-060d-4cb9-bd78-91e88a812347
+  Args:
+    target: Fergus_Bowes-Lyon
+    source: Claude_Bowes-Lyon
+    relation: :isFatherOf
+  AssignClass (2bc69cde-b3f2-4910-bb5c-b2f3b8e27464)
+ Call ID: 2bc69cde-b3f2-4910-bb5c-b2f3b8e27464
+  Args:
+    type: :Woman
+    source: Christian_Norah_Dawson-Damer
+  AssignClass (7814d426-85b9-4a05-ad89-8dbf0c5cfb7a)
+ Call ID: 7814d426-85b9-4a05-ad89-8dbf0c5cfb7a
+  Args:
+    source: Christian_Norah_Dawson-Damer
+    type: :Person
+  AddTriple (a9e14e19-e308-4eca-a553-a02aa117d656)
+ Call ID: a9e14e19-e308-4eca-a553-a02aa117d656
+  Args:
+    target: Christian_Norah_Dawson-Damer
+    relation: :hasRelation
+    source: Fergus_Bowes-Lyon
+  AddLiteral (c1f34bd9-5ba6-49be-adef-587250418c45)
+ Call ID: c1f34bd9-5ba6-49be-adef-587250418c45
+  Args:
+    literal_value: 1914
     relation: :hasMarriageYear
-  AddTriple (4fe1a939-dc7b-4a65-8675-806587b020b8)
- Call ID: 4fe1a939-dc7b-4a65-8675-806587b020b8
+    source: Fergus_Bowes-Lyon
+    literal_type: xsd:integer
+  AssignClass (91e7f9e4-dd75-4f27-a228-3ae24c918922)
+ Call ID: 91e7f9e4-dd75-4f27-a228-3ae24c918922
+  Args:
+    source: Rosemary
+    type: :Woman
+  AssignClass (465fc98f-ed56-49e2-b4fe-aa569203cd6c)
+ Call ID: 465fc98f-ed56-49e2-b4fe-aa569203cd6c
+  Args:
+    type: :Person
+    source: Rosemary
+  AddTriple (8a97664e-6bb4-4ea4-a5b9-b68d00a10e5c)
+ Call ID: 8a97664e-6bb4-4ea4-a5b9-b68d00a10e5c
+  Args:
+    relation: :isDaughterOf
+    source: Rosemary
+    target: Fergus_Bowes-Lyon
+  AddTriple (839e66c8-a8d3-49ab-bb64-dd28ecb52f79)
+ Call ID: 839e66c8-a8d3-49ab-bb64-dd28ecb52f79
+  Args:
+    target: Christian_Norah_Dawson-Damer
+    relation: :isDaughterOf
+    source: Rosemary
+  AssignClass (00f8751f-df73-4a48-a540-520cec53c78b)
+ Call ID: 00f8751f-df73-4a48-a540-520cec53c78b
+  Args:
+    type: :Man
+    source: John_Bowes-Lyon
+  AssignClass (4ab5f161-e383-446b-8eb5-6f47f58082cf)
+ Call ID: 4ab5f161-e383-446b-8eb5-6f47f58082cf
+  Args:
+    source: John_Bowes-Lyon
+    type: :Person
+  AddTriple (1b0f0e98-5a1c-4240-be9c-bf341e38d434)
+ Call ID: 1b0f0e98-5a1c-4240-be9c-bf341e38d434
+  Args:
+    relation: :isBrotherOf
+    source: John_Bowes-Lyon
+    target: Fergus_Bowes-Lyon
+  AssignClass (5b2d3abc-d00d-475a-8dda-9fe8db8a205e)
+ Call ID: 5b2d3abc-d00d-475a-8dda-9fe8db8a205e
+  Args:
+    source: Cecilia_Bowes-Lyon
+    type: :Woman
+  AssignClass (6ef54281-4cb9-4571-900f-41307dc15c43)
+ Call ID: 6ef54281-4cb9-4571-900f-41307dc15c43
+  Args:
+    type: :Person
+    source: Cecilia_Bowes-Lyon
+  AddTriple (343e521d-ae47-4d07-8c15-9d0336a01188)
+ Call ID: 343e521d-ae47-4d07-8c15-9d0336a01188
+  Args:
+    source: Cecilia_Bowes-Lyon
+    relation: :isMotherOf
+    target: Fergus_Bowes-Lyon
+  AssignClass (a6ce5eae-10e9-47c4-9eb1-4bb4aaf88799)
+ Call ID: a6ce5eae-10e9-47c4-9eb1-4bb4aaf88799
+  Args:
+    source: William_Frederick_Martin
+    type: :Man
+  AssignClass (94304812-5520-48a4-bba9-f01d5ffd3918)
+ Call ID: 94304812-5520-48a4-bba9-f01d5ffd3918
+  Args:
+    source: William_Frederick_Martin
+    type: :Person
+  AddTriple (1b5f4910-aa2e-414d-8080-e99a8839674a)
+ Call ID: 1b5f4910-aa2e-414d-8080-e99a8839674a
   Args:
     relation: :hasRelation
-    target: Karin_Emma_Louise_Nissvandt
-    source: Lennart_Bernadotte
-  AddLiteral (064b793b-54b6-4f47-9992-1946a246074e)
- Call ID: 064b793b-54b6-4f47-9992-1946a246074e
+    source: Christian_Norah_Dawson-Damer
+    target: William_Frederick_Martin
+  Finish (63f0926a-223e-4d23-9a7f-3de5837ca689)
+ Call ID: 63f0926a-223e-4d23-9a7f-3de5837ca689
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1972
-    source: Lennart_Bernadotte
-  AddTriple (5d0fec24-bd58-4c4c-9c39-b58d18bbe47b)
- Call ID: 5d0fec24-bd58-4c4c-9c39-b58d18bbe47b
-  Args:
-    relation: :hasRelation
-    source: Lennart_Bernadotte
-    target: Sonja_Anita_Maria_Haunz
-  AddLiteral (54ce3cca-f3e7-4ce3-b215-3c72a05ccf90)
- Call ID: 54ce3cca-f3e7-4ce3-b215-3c72a05ccf90
-  Args:
-    relation: :hasSex
-    literal_value: male
-    literal_type: xsd:string
-    source: Lennart_Bernadotte
-  AddLiteral (6f09d61f-8e33-4d4e-ad77-257fa1175036)
- Call ID: 6f09d61f-8e33-4d4e-ad77-257fa1175036
-  Args:
-    source: Wilhelm_Duke_of_Södermanland
-    literal_value: male
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (2b07bc97-fcb9-4795-af14-d63ca4ba18f1)
- Call ID: 2b07bc97-fcb9-4795-af14-d63ca4ba18f1
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: female
-    source: Maria_Pavlovna_of_Russia
-  AddLiteral (10ebfbdf-e0e4-4704-9886-15403f3afaa6)
- Call ID: 10ebfbdf-e0e4-4704-9886-15403f3afaa6
-  Args:
-    literal_value: female
-    literal_type: xsd:string
-    relation: :hasSex
-    source: Karin_Emma_Louise_Nissvandt
-  AddLiteral (90fc4190-7b60-4a15-8384-d98a2a340aba)
- Call ID: 90fc4190-7b60-4a15-8384-d98a2a340aba
-  Args:
-    source: Sonja_Anita_Maria_Haunz
-    literal_value: female
-    literal_type: xsd:string
-    relation: :hasSex
-  Finish (ff3575a8-c67a-4666-aeaf-df8bd1ba1a6d)
- Call ID: ff3575a8-c67a-4666-aeaf-df8bd1ba1a6d
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -555,28 +716,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lennart_Bernadotte a :Man ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
-      :hasMarriageYear 1932,
-          1972 ;
-      :hasMother data:Maria_Pavlovna_of_Russia ;
-      :hasRelation data:Karin_Emma_Louise_Nissvandt,
-          data:Sonja_Anita_Maria_Haunz ;
-      :hasSex "male"^^xsd:string .
+  data:Cecilia_Bowes-Lyon a :Person,
+          :Woman ;
+      :isMotherOf data:Fergus_Bowes-Lyon .
 
-  data:Karin_Emma_Louise_Nissvandt a :Woman ;
-      :hasSex "female"^^xsd:string .
+  data:Claude_Bowes-Lyon a :Man,
+          :Person ;
+      :isFatherOf data:Fergus_Bowes-Lyon .
 
-  data:Maria_Pavlovna_of_Russia a :Woman ;
-      :hasSex "female"^^xsd:string .
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman ;
+      :isSisterOf data:Fergus_Bowes-Lyon .
 
-  data:Sonja_Anita_Maria_Haunz a :Woman ;
-      :hasSex "female"^^xsd:string .
+  data:John_Bowes-Lyon a :Man,
+          :Person ;
+      :isBrotherOf data:Fergus_Bowes-Lyon .
 
-  data:Wilhelm_Duke_of_S%C3%B6dermanland a :Man ;
-      :hasSex "male"^^xsd:string .
+  data:Rosemary a :Person,
+          :Woman ;
+      :isDaughterOf data:Christian_Norah_Dawson-Damer,
+          data:Fergus_Bowes-Lyon .
+
+  data:William_Frederick_Martin a :Man,
+          :Person .
+
+  data:Christian_Norah_Dawson-Damer a :Person,
+          :Woman ;
+      :hasRelation data:William_Frederick_Martin .
+
+  data:Fergus_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1915 ;
+      :hasMarriageYear 1914 ;
+      :hasRelation data:Christian_Norah_Dawson-Damer .
 
 
 
@@ -588,382 +761,78 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7375f367-ec0c-4494-9fc0-8934be42402c)
- Call ID: 7375f367-ec0c-4494-9fc0-8934be42402c
+  ValidateShacl (267c910f-dbf2-44eb-87e3-4643922e9b0d)
+ Call ID: 267c910f-dbf2-44eb-87e3-4643922e9b0d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:46
+Total violations:8
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Rosemary' has a relationship 'isDaughterOf' pointing to 'Fergus_Bowes-Lyon', but 'Fergus_Bowes-Lyon' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
+      AssignClass(node='Fergus_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Rosemary' has a relationship 'isDaughterOf' pointing to 'Christian_Norah_Dawson-Damer', but 'Christian_Norah_Dawson-Damer' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
+      AssignClass(node='Christian_Norah_Dawson-Damer', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father of Lennart_Bernadotte, Wilhelm_Duke_of_Södermanland, is assigned the class :Man, but the :hasFather property requires the object to be an instance of :Ancestor or :Man. Actually, it is a :Man, so ensure it is explicitly typed.
+      The node 'Rosemary' has a duplicate 'isDaughterOf' relationship pointing to 'Fergus_Bowes-Lyon', which is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_Duke_of_Södermanland', class: ':Ancestor')
+      AssignClass(node='Fergus_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The mother of Lennart_Bernadotte, Maria_Pavlovna_of_Russia, is assigned the class :Woman, but the :hasMother property requires the object to be an instance of :Ancestor or :Woman. Ensure she is also typed as :Ancestor.
+      The node 'Rosemary' has a duplicate 'isDaughterOf' relationship pointing to 'Christian_Norah_Dawson-Damer', which is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Maria_Pavlovna_of_Russia', class: ':Ancestor')
+      AssignClass(node='Christian_Norah_Dawson-Damer', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Rosemary' has a triplicate 'isDaughterOf' relationship pointing to 'Fergus_Bowes-Lyon', which is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
+      AssignClass(node='Fergus_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Rosemary' has a triplicate 'isDaughterOf' relationship pointing to 'Christian_Norah_Dawson-Damer', which is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
+      AssignClass(node='Christian_Norah_Dawson-Damer', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Claude_Bowes-Lyon' is used as a subject of the 'isFatherOf' relationship, but it is missing the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
+      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
+      The node 'Cecilia_Bowes-Lyon' is used as a subject of the 'isMotherOf' relationship, but it is missing the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father of Lennart_Bernadotte, Wilhelm_Duke_of_Södermanland, needs to be explicitly typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_Duke_of_Södermanland', class: ':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother of Lennart_Bernadotte, Maria_Pavlovna_of_Russia, needs to be explicitly typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Maria_Pavlovna_of_Russia', class: ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father of Lennart_Bernadotte, Wilhelm_Duke_of_Södermanland, needs to be explicitly typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_Duke_of_Södermanland', class: ':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother of Lennart_Bernadotte, Maria_Pavlovna_of_Russia, needs to be explicitly typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Maria_Pavlovna_of_Russia', class: ':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Wilhelm_Duke_of_Södermanland is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'male' for Lennart_Bernadotte is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'male', class: ':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Sonja_Anita_Maria_Haunz is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Karin_Emma_Louise_Nissvandt is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'female' for Maria_Pavlovna_of_Russia is a literal string, but the property :hasSex requires a resource that is an instance of the :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'female', class: ':Sex')
+      AssignClass(node='Cecilia_Bowes-Lyon', class=':Ancestor')
 
 
 
@@ -972,134 +841,26 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (d2767245-3c75-4a73-a72d-c3a0afb7b612)
- Call ID: d2767245-3c75-4a73-a72d-c3a0afb7b612
+  AssignClass (748e0ac3-3292-4a5d-88c7-69ee756b2fc7)
+ Call ID: 748e0ac3-3292-4a5d-88c7-69ee756b2fc7
   Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: male
-    source: Lennart_Bernadotte
-  RemoveLiteral (fa82e318-472c-4f56-b039-990325d85e0c)
- Call ID: fa82e318-472c-4f56-b039-990325d85e0c
+    source: Fergus_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (2f9c32c0-0cab-4828-b8ae-001a5bd0ca75)
+ Call ID: 2f9c32c0-0cab-4828-b8ae-001a5bd0ca75
   Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: male
-    source: Wilhelm_Duke_of_Södermanland
-  RemoveLiteral (9a3dafca-92f0-4487-8885-4c9175b3b248)
- Call ID: 9a3dafca-92f0-4487-8885-4c9175b3b248
-  Args:
-    source: Maria_Pavlovna_of_Russia
-    literal_value: female
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (d07ffd83-9409-4535-a34a-def8ac0486c5)
- Call ID: d07ffd83-9409-4535-a34a-def8ac0486c5
-  Args:
-    source: Karin_Emma_Louise_Nissvandt
-    literal_value: female
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (fe271d84-92ac-4343-a6c2-260ec7fc642f)
- Call ID: fe271d84-92ac-4343-a6c2-260ec7fc642f
-  Args:
-    source: Sonja_Anita_Maria_Haunz
-    literal_value: female
-    literal_type: xsd:string
-    relation: :hasSex
-  AssignClass (bc54a725-3053-4aa5-bbc9-3afce7087f09)
- Call ID: bc54a725-3053-4aa5-bbc9-3afce7087f09
-  Args:
-    type: :Male
-    source: Male_Sex_Resource
-  AssignClass (8aa72bd8-2ae2-4c43-a8d4-109c2fe222b3)
- Call ID: 8aa72bd8-2ae2-4c43-a8d4-109c2fe222b3
-  Args:
-    type: :Female
-    source: Female_Sex_Resource
-  AddTriple (a6bdb6c6-29d2-4485-b6d3-e55cf9bf58f3)
- Call ID: a6bdb6c6-29d2-4485-b6d3-e55cf9bf58f3
-  Args:
-    target: Male_Sex_Resource
-    relation: :hasSex
-    source: Lennart_Bernadotte
-  AddTriple (9d6c9286-ca84-4c23-92af-e3dcd94d775f)
- Call ID: 9d6c9286-ca84-4c23-92af-e3dcd94d775f
-  Args:
-    source: Wilhelm_Duke_of_Södermanland
-    relation: :hasSex
-    target: Male_Sex_Resource
-  AddTriple (d692ffea-4db2-4d81-86b2-546fcadb2a9e)
- Call ID: d692ffea-4db2-4d81-86b2-546fcadb2a9e
-  Args:
-    relation: :hasSex
-    target: Female_Sex_Resource
-    source: Maria_Pavlovna_of_Russia
-  AddTriple (6b7c68d2-d2c2-450e-9c9a-dcc7ace5e7ac)
- Call ID: 6b7c68d2-d2c2-450e-9c9a-dcc7ace5e7ac
-  Args:
-    source: Karin_Emma_Louise_Nissvandt
-    relation: :hasSex
-    target: Female_Sex_Resource
-  AddTriple (776050d8-823c-468b-adb0-5affbed5a0f7)
- Call ID: 776050d8-823c-468b-adb0-5affbed5a0f7
-  Args:
-    target: Female_Sex_Resource
-    relation: :hasSex
-    source: Sonja_Anita_Maria_Haunz
-  AssignClass (3667dd3a-27a9-4532-b46d-a5a0610729c7)
- Call ID: 3667dd3a-27a9-4532-b46d-a5a0610729c7
+    source: Christian_Norah_Dawson-Damer
+    type: :Ancestor
+  AssignClass (35db6019-8acf-4c87-96f1-8ac27e088a70)
+ Call ID: 35db6019-8acf-4c87-96f1-8ac27e088a70
   Args:
     type: :Ancestor
-    source: Wilhelm_Duke_of_Södermanland
-  AssignClass (835447ce-bb8a-43ff-835a-82f40e754576)
- Call ID: 835447ce-bb8a-43ff-835a-82f40e754576
+    source: Claude_Bowes-Lyon
+  AssignClass (341d6690-a675-4ae3-a159-51770a9cb23f)
+ Call ID: 341d6690-a675-4ae3-a159-51770a9cb23f
   Args:
+    source: Cecilia_Bowes-Lyon
     type: :Ancestor
-    source: Maria_Pavlovna_of_Russia
-  Finish (6a8518bf-1524-4f34-9dcc-46730ac78a44)
- Call ID: 6a8518bf-1524-4f34-9dcc-46730ac78a44
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1120,47 +881,53 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lennart_Bernadotte a :Man ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
-      :hasMarriageYear 1932,
-          1972 ;
-      :hasMother data:Maria_Pavlovna_of_Russia ;
-      :hasRelation data:Karin_Emma_Louise_Nissvandt,
-          data:Sonja_Anita_Maria_Haunz ;
-      :hasSex data:Male_Sex_Resource .
-
-  data:Karin_Emma_Louise_Nissvandt a :Woman ;
-      :hasSex data:Female_Sex_Resource .
-
-  data:Maria_Pavlovna_of_Russia a :Ancestor,
+  data:Cecilia_Bowes-Lyon a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female_Sex_Resource .
+      :isMotherOf data:Fergus_Bowes-Lyon .
 
-  data:Sonja_Anita_Maria_Haunz a :Woman ;
-      :hasSex data:Female_Sex_Resource .
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Fergus_Bowes-Lyon .
 
-  data:Wilhelm_Duke_of_S%C3%B6dermanland a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex_Resource .
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman ;
+      :isSisterOf data:Fergus_Bowes-Lyon .
 
-  data:Male_Sex_Resource a :Male .
+  data:John_Bowes-Lyon a :Man,
+          :Person ;
+      :isBrotherOf data:Fergus_Bowes-Lyon .
 
-  data:Female_Sex_Resource a :Female .
+  data:Rosemary a :Person,
+          :Woman ;
+      :isDaughterOf data:Christian_Norah_Dawson-Damer,
+          data:Fergus_Bowes-Lyon .
+
+  data:William_Frederick_Martin a :Man,
+          :Person .
+
+  data:Christian_Norah_Dawson-Damer a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasRelation data:William_Frederick_Martin .
+
+  data:Fergus_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1915 ;
+      :hasMarriageYear 1914 ;
+      :hasRelation data:Christian_Norah_Dawson-Damer .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (2bcaed6a-5be2-44ab-9cf2-0d093921ab92)
- Call ID: 2bcaed6a-5be2-44ab-9cf2-0d093921ab92
+  ValidateShacl (ceb5fc77-2163-407e-ab63-e646b9d2c0fd)
+ Call ID: ceb5fc77-2163-407e-ab63-e646b9d2c0fd
   Args:
 
 ================================= Tool Message =================================
@@ -1171,6 +938,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9df4aaf4-38a6-4a7c-8741-ecbbd6288e06)
- Call ID: 9df4aaf4-38a6-4a7c-8741-ecbbd6288e06
+  Finish (1e981b76-dd55-46e5-ab2d-1535229e89db)
+ Call ID: 1e981b76-dd55-46e5-ab2d-1535229e89db
   Args:

@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Christian_Duke__of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Christian Duke  of Oldenburg"^^xsd:string ;
+    data:wdtLink wdt:Q5312748 ;
+    :alsoKnownAs "Christian Nicholas Udo Peter von Holstein-Gottorp, Herzog von Oldenburg"^^xsd:string,
+        "Christian Nikolaus Udo Peter"^^xsd:string,
+        "Christian von Oldenburg"^^xsd:string ;
+    :hasBrother data:Christian_Duke__of_Oldenburg ;
+    :hasRelation data:Christian_Duke__of_Oldenburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Christian_Duke__of_Oldenburg ;
+    :isBrotherOf data:Christian_Duke__of_Oldenburg ;
+    :isSiblingOf data:Christian_Duke__of_Oldenburg .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "133:154"^^xsd:string ;
+    data:posIndicesPart "397:402"^^xsd:string,
+        "464:469"^^xsd:string,
+        "470:474"^^xsd:string,
+        "634:638"^^xsd:string,
+        "642:651"^^xsd:string,
+        "669:673"^^xsd:string,
+        "725:734"^^xsd:string,
+        "834:843"^^xsd:string,
+        "847:856"^^xsd:string,
+        "924:928"^^xsd:string,
+        "932:941"^^xsd:string,
+        "966:975"^^xsd:string ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II"^^xsd:string,
+        "Friedrich August von Oldenburg"^^xsd:string ;
+    :hasBrother data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg .
+

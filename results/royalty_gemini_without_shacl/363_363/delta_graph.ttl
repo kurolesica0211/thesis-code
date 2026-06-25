@@ -2,39 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_Ernst_August_Hubertus_von_Humboldt-Dachroeden a :Man ;
-    :hasFather data:Ernst_August_of_Hanover ;
-    :hasMother data:Maria_Anna_von_Humboldt-Dachroeden .
+data:Adolf_Friedrich a :Man,
+        :Person ;
+    :hasBirthYear 1873 ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1917,
+        1924 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isBrotherOf data:John_Albert .
 
-data:Ernest_Augustus_Duke_of_Brunswick a :Man .
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
 
-data:Ernst_August_of_Hanover a :Man ;
-    :hasBirthYear 1914 ;
-    :hasBrother data:George_William_of_Hanover ;
-    :hasDeathYear 1987 ;
-    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
-    :hasMarriageYear 1951,
-        1981 ;
-    :hasMother data:Viktoria_Luise_of_Prussia ;
-    :hasRelation data:Monika_zu_Solms-Laubach,
-        data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
-    :hasSister data:Frederica_of_Hanover .
+data:Heinrich_XXVII a :Man .
 
-data:Frederica_of_Hanover a :Woman .
+data:Viktoria_Feodora_of_Reuss-Schleiz a :Person,
+        :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasMother data:Elise_of_Hohenlohe-Langenburg .
 
-data:Georg_9th_Count_of_Solms-Laubach a :Man .
+data:Elise_of_Hohenlohe-Langenburg a :Person,
+        :Woman .
 
-data:George_William_of_Hanover a :Man .
+data:Frederick_Francis_II a :Man,
+        :Person ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 .
 
-data:Johanna_of_Solms-Hohensolms-Lich a :Woman .
+data:Heinrich_XXVII_Prince_Reuss_Younger_Line a :Person .
 
-data:Maria_Anna_von_Humboldt-Dachroeden a :Woman .
+data:John_Albert a :Man,
+        :Person .
 
-data:Monika_zu_Solms-Laubach a :Woman ;
-    :hasFather data:Georg_9th_Count_of_Solms-Laubach ;
-    :hasMother data:Johanna_of_Solms-Hohensolms-Lich .
-
-data:Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .
-
-data:Viktoria_Luise_of_Prussia a :Woman .
+data:Marie_of_Schwarzburg-Rudolstadt a :Person,
+        :Woman .
 

@@ -181,6 +181,8 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -196,39 +198,9 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -243,6 +215,23 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -260,6 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -327,29 +331,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -358,6 +354,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -370,6 +374,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -378,17 +384,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -416,6 +424,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -431,141 +523,150 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3a13d05d-a838-4c9e-b026-8117b5466704)
- Call ID: 3a13d05d-a838-4c9e-b026-8117b5466704
+  AssignClass (cc72c897-9026-4695-a344-76a5e1776501)
+ Call ID: cc72c897-9026-4695-a344-76a5e1776501
   Args:
     type: :Man
-    source: Manuel_II
-  AssignClass (654b193a-253c-4421-abf5-ded1ec4b3ad8)
- Call ID: 654b193a-253c-4421-abf5-ded1ec4b3ad8
+    source: :Manuel_II
+  AssignClass (c256a23e-5c74-46f4-83f7-5eca06fa33e9)
+ Call ID: c256a23e-5c74-46f4-83f7-5eca06fa33e9
   Args:
+    source: :Manuel_II
     type: :Person
-    source: Manuel_II
-  AssignClass (87f7bebe-2908-491e-bf24-62c1f2b3a716)
- Call ID: 87f7bebe-2908-491e-bf24-62c1f2b3a716
+  AddLiteral (852b6170-5020-4e1c-a56c-0ec41c1307d4)
+ Call ID: 852b6170-5020-4e1c-a56c-0ec41c1307d4
   Args:
-    type: :Man
-    source: Carlos_I
-  AssignClass (a13a8566-1b9b-4747-9d98-c191d3ba1755)
- Call ID: a13a8566-1b9b-4747-9d98-c191d3ba1755
-  Args:
-    type: :Person
-    source: Carlos_I
-  AssignClass (3b9eaf8e-0f20-48fa-8324-b703d28c9381)
- Call ID: 3b9eaf8e-0f20-48fa-8324-b703d28c9381
-  Args:
-    type: :Woman
-    source: Amelie_of_Orleans
-  AssignClass (e8be7929-1aad-4713-ba8d-4b1ea56ebf3e)
- Call ID: e8be7929-1aad-4713-ba8d-4b1ea56ebf3e
-  Args:
-    type: :Person
-    source: Amelie_of_Orleans
-  AssignClass (8cf8de94-2d87-4342-b77f-be1234e05012)
- Call ID: 8cf8de94-2d87-4342-b77f-be1234e05012
-  Args:
-    type: :Man
-    source: Luis_Filipe
-  AssignClass (ba03a865-51ce-4aa8-9098-75c68f020874)
- Call ID: ba03a865-51ce-4aa8-9098-75c68f020874
-  Args:
-    type: :Person
-    source: Luis_Filipe
-  AssignClass (a645b665-5724-44a2-a1e7-3083081f7b9f)
- Call ID: a645b665-5724-44a2-a1e7-3083081f7b9f
-  Args:
-    type: :Woman
-    source: Augusta_Victoria
-  AssignClass (b824b256-2d1b-49da-9551-f27f38a6813d)
- Call ID: b824b256-2d1b-49da-9551-f27f38a6813d
-  Args:
-    type: :Person
-    source: Augusta_Victoria
-  AssignClass (a5c5da6c-7675-473c-ad02-fd8e7ab11991)
- Call ID: a5c5da6c-7675-473c-ad02-fd8e7ab11991
-  Args:
-    type: :Man
-    source: William_Prince_of_Hohenzollern
-  AssignClass (d04b72fd-cb60-49f5-99fd-22dd110edca0)
- Call ID: d04b72fd-cb60-49f5-99fd-22dd110edca0
-  Args:
-    type: :Person
-    source: William_Prince_of_Hohenzollern
-  AddLiteral (18d663b7-e660-414c-80bd-1c785bec65a9)
- Call ID: 18d663b7-e660-414c-80bd-1c785bec65a9
-  Args:
-    source: Manuel_II
     literal_type: xsd:integer
+    source: :Manuel_II
     literal_value: 1889
     relation: :hasBirthYear
-  AddLiteral (7fb707f0-348a-4306-ae74-4e5962a09d7d)
- Call ID: 7fb707f0-348a-4306-ae74-4e5962a09d7d
+  AddLiteral (eaf2c96c-ba4d-48a0-903b-5cebcc17f997)
+ Call ID: eaf2c96c-ba4d-48a0-903b-5cebcc17f997
   Args:
-    relation: :hasDeathYear
-    literal_value: 1932
     literal_type: xsd:integer
-    source: Manuel_II
-  AddLiteral (001fe2ea-99b3-4c6a-af99-11ab34710939)
- Call ID: 001fe2ea-99b3-4c6a-af99-11ab34710939
-  Args:
-    relation: :alsoKnownAs
-    literal_value: Unfortunate
-    source: Manuel_II
-    literal_type: xsd:string
-  AddLiteral (232f3603-b72d-48ce-9b9c-9c9102e5d389)
- Call ID: 232f3603-b72d-48ce-9b9c-9c9102e5d389
+    source: :Manuel_II
+    literal_value: 1932
+    relation: :hasDeathYear
+  AddLiteral (13c099e6-043d-4802-9b69-6642effef252)
+ Call ID: 13c099e6-043d-4802-9b69-6642effef252
   Args:
     literal_type: xsd:string
-    source: Manuel_II
-    literal_value: o Desaventurado
     relation: :alsoKnownAs
-  AddLiteral (f5b12e16-fb7c-44e2-ac5a-9f3ea258b919)
- Call ID: f5b12e16-fb7c-44e2-ac5a-9f3ea258b919
+    literal_value: The Unfortunate
+    source: :Manuel_II
+  AddLiteral (01d5fd95-6a6e-45f2-bbf8-dfea64dd5dc5)
+ Call ID: 01d5fd95-6a6e-45f2-bbf8-dfea64dd5dc5
   Args:
-    source: Manuel_II
-    literal_type: xsd:string
-    literal_value: Patriot
-    relation: :alsoKnownAs
-  AddLiteral (b31920e7-9d36-45e2-93db-c3ae2157bfa1)
- Call ID: b31920e7-9d36-45e2-93db-c3ae2157bfa1
-  Args:
-    literal_value: o Patriota
+    source: :Manuel_II
+    literal_value: The Patriot
     relation: :alsoKnownAs
     literal_type: xsd:string
-    source: Manuel_II
-  AddTriple (6c17da3f-1995-4c89-a4af-addd0f850409)
- Call ID: 6c17da3f-1995-4c89-a4af-addd0f850409
+  AssignClass (71c51386-f121-4279-abde-285981efd556)
+ Call ID: 71c51386-f121-4279-abde-285981efd556
   Args:
-    source: Manuel_II
-    target: Carlos_I
+    source: :Carlos_I
+    type: :Man
+  AssignClass (d115e2ae-32d8-4191-bb4b-95e68a0524f3)
+ Call ID: d115e2ae-32d8-4191-bb4b-95e68a0524f3
+  Args:
+    source: :Carlos_I
+    type: :Person
+  AddTriple (b19a4f2e-2b18-4224-896e-f18d9bef1571)
+ Call ID: b19a4f2e-2b18-4224-896e-f18d9bef1571
+  Args:
     relation: :hasFather
-  AddTriple (844c4ec0-400b-49b0-95ef-293ac8e1456d)
- Call ID: 844c4ec0-400b-49b0-95ef-293ac8e1456d
+    source: :Manuel_II
+    target: :Carlos_I
+  AssignClass (9c9cfc7c-ac8f-476f-833d-f7af4f677f7f)
+ Call ID: 9c9cfc7c-ac8f-476f-833d-f7af4f677f7f
   Args:
-    source: Manuel_II
+    type: :Woman
+    source: :Amélie_of_Orléans
+  AssignClass (0176e782-616f-486b-933a-3096c3cee090)
+ Call ID: 0176e782-616f-486b-933a-3096c3cee090
+  Args:
+    source: :Amélie_of_Orléans
+    type: :Person
+  AddTriple (10c2ac02-b950-41e3-bb10-4adb5c2edc6a)
+ Call ID: 10c2ac02-b950-41e3-bb10-4adb5c2edc6a
+  Args:
+    source: :Manuel_II
+    target: :Amélie_of_Orléans
     relation: :hasMother
-    target: Amelie_of_Orleans
-  AddTriple (e102cd0c-d99e-43ff-90a4-68509a0640c2)
- Call ID: e102cd0c-d99e-43ff-90a4-68509a0640c2
+  AssignClass (ab54c375-ccf5-4417-accb-ec7e31aef151)
+ Call ID: ab54c375-ccf5-4417-accb-ec7e31aef151
   Args:
-    source: Manuel_II
-    target: Luis_Filipe
-    relation: :isBrotherOf
-  AddTriple (65d43f22-129a-4452-9ee6-82fa8403277b)
- Call ID: 65d43f22-129a-4452-9ee6-82fa8403277b
+    source: :Luís_Filipe
+    type: :Man
+  AssignClass (401b32ac-715c-44ee-9aa3-11d8e29b35d2)
+ Call ID: 401b32ac-715c-44ee-9aa3-11d8e29b35d2
   Args:
-    source: Manuel_II
+    type: :Person
+    source: :Luís_Filipe
+  AddTriple (6712495f-4299-4622-ba21-577adbe5339e)
+ Call ID: 6712495f-4299-4622-ba21-577adbe5339e
+  Args:
+    source: :Manuel_II
+    target: :Luís_Filipe
+    relation: :hasBrother
+  AddTriple (735d19a1-3f1d-41df-8dc6-040209a3589f)
+ Call ID: 735d19a1-3f1d-41df-8dc6-040209a3589f
+  Args:
+    source: :Luís_Filipe
+    target: :Carlos_I
+    relation: :isSonOf
+  AddTriple (c9ec9326-6fa3-4577-97aa-98cd191d1fac)
+ Call ID: c9ec9326-6fa3-4577-97aa-98cd191d1fac
+  Args:
+    relation: :isSonOf
+    source: :Luís_Filipe
+    target: :Amélie_of_Orléans
+  AssignClass (9ac94e40-0f20-4652-94e7-400e05312f9c)
+ Call ID: 9ac94e40-0f20-4652-94e7-400e05312f9c
+  Args:
+    type: :Woman
+    source: :Augusta_Victoria
+  AssignClass (6987a408-e269-4099-847f-a4fe1febc4f6)
+ Call ID: 6987a408-e269-4099-847f-a4fe1febc4f6
+  Args:
+    source: :Augusta_Victoria
+    type: :Person
+  AddLiteral (0a1e135b-ae87-470e-9122-751abd14065d)
+ Call ID: 0a1e135b-ae87-470e-9122-751abd14065d
+  Args:
+    source: :Manuel_II
+    literal_value: 1913
     relation: :hasMarriageYear
-    target: 1913
-  AddTriple (3e8b6124-7e8f-4152-a952-765d4ef7de69)
- Call ID: 3e8b6124-7e8f-4152-a952-765d4ef7de69
+    literal_type: xsd:integer
+  AddTriple (560aaa5a-a243-42b7-8d72-b3c5c43e5575)
+ Call ID: 560aaa5a-a243-42b7-8d72-b3c5c43e5575
   Args:
-    relation: :hasFather
-    target: William_Prince_of_Hohenzollern
-    source: Augusta_Victoria
-  Finish (ae6841e6-17e6-4c48-9f3c-4f7a54e9be03)
- Call ID: ae6841e6-17e6-4c48-9f3c-4f7a54e9be03
+    relation: :hasRelation
+    source: :Manuel_II
+    target: :Augusta_Victoria
+  AssignClass (13e1eb1d-7cc9-4618-8b53-6a5e3a69fd63)
+ Call ID: 13e1eb1d-7cc9-4618-8b53-6a5e3a69fd63
   Args:
+    type: :Woman
+    source: :Maria_Pia_of_Savoy
+  AssignClass (444fe135-8e49-4f9a-8a57-9d0e30b68f4a)
+ Call ID: 444fe135-8e49-4f9a-8a57-9d0e30b68f4a
+  Args:
+    source: :Maria_Pia_of_Savoy
+    type: :Person
+  AddTriple (89db08e3-ba1e-430d-b7ab-34758214d198)
+ Call ID: 89db08e3-ba1e-430d-b7ab-34758214d198
+  Args:
+    source: :Maria_Pia_of_Savoy
+    target: :Carlos_I
+    relation: :isMotherOf
+  Finish (2c6c498f-806b-4489-9ef1-14a0da0d633b)
+ Call ID: 2c6c498f-806b-4489-9ef1-14a0da0d633b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -662,33 +763,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Augusta_Victoria a :Person,
-          :Woman ;
-      :hasFather data:William_Prince_of_Hohenzollern .
-
   data:Manuel_II a :Man,
           :Person ;
-      :alsoKnownAs "Patriot"^^xsd:string,
-          "Unfortunate"^^xsd:string,
-          "o Desaventurado"^^xsd:string,
-          "o Patriota"^^xsd:string ;
+      :alsoKnownAs "The Patriot"^^xsd:string,
+          "The Unfortunate"^^xsd:string ;
       :hasBirthYear 1889 ;
+      :hasBrother data:Lu%C3%ADs_Filipe ;
       :hasDeathYear 1932 ;
       :hasFather data:Carlos_I ;
-      :hasMarriageYear data:1913 ;
-      :hasMother data:Amelie_of_Orleans ;
-      :isBrotherOf data:Luis_Filipe .
+      :hasMarriageYear 1913 ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+      :hasRelation data:Augusta_Victoria .
 
-  data:Amelie_of_Orleans a :Person,
+  data:Maria_Pia_of_Savoy a :Person,
+          :Woman ;
+      :isMotherOf data:Carlos_I .
+
+  data:Augusta_Victoria a :Person,
+          :Woman .
+
+  data:Lu%C3%ADs_Filipe a :Man,
+          :Person ;
+      :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+          data:Carlos_I .
+
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
           :Woman .
 
   data:Carlos_I a :Man,
-          :Person .
-
-  data:Luis_Filipe a :Man,
-          :Person .
-
-  data:William_Prince_of_Hohenzollern a :Man,
           :Person .
 
 
@@ -701,86 +803,118 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d86d5b95-cb9c-48c0-b6a4-901857e9ef22)
- Call ID: d86d5b95-cb9c-48c0-b6a4-901857e9ef22
+  ValidateShacl (9fac2efd-205a-4717-bb62-af9a8e966b84)
+ Call ID: 9fac2efd-205a-4717-bb62-af9a8e966b84
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:13
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Carlos_I, linked as the father of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Carlos_I is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_I, :Ancestor)
+      AssignClass('Carlos_I', ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Amelie_of_Orleans, linked as the mother of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasMother property.
+      The node Amélie_of_Orléans is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amelie_of_Orleans, :Ancestor)
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William_Prince_of_Hohenzollern, linked as the father of Augusta_Victoria, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Carlos_I is the value for hasFather, but it is missing the mandatory :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Prince_of_Hohenzollern, :Ancestor)
+      AssignClass('Carlos_I', ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Carlos_I, linked as the father of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Amélie_of_Orléans is the value for hasMother, but it is missing the mandatory :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_I, :Ancestor)
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Amelie_of_Orleans, linked as the mother of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasMother property.
+      The node Carlos_I is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amelie_of_Orleans, :Ancestor)
+      AssignClass('Carlos_I', ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Carlos_I, linked as the father of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Amélie_of_Orléans is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_I, :Ancestor)
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William_Prince_of_Hohenzollern, linked as the father of Augusta_Victoria, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Carlos_I is the value for hasFather, but it is missing the mandatory :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Prince_of_Hohenzollern, :Ancestor)
+      AssignClass('Carlos_I', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Amelie_of_Orleans, linked as the mother of Manuel_II, lacks the mandatory :Ancestor class assignment required for the hasMother property.
+      The node Amélie_of_Orléans is the value for hasMother, but it is missing the mandatory :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amelie_of_Orleans, :Ancestor)
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
 
 
   Violation [9]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Carlos_I is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Carlos_I', ':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Amélie_of_Orléans is assigned as the object of the property isSonOf, but it is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
+
+
+  Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William_Prince_of_Hohenzollern, linked as the father of Augusta_Victoria, lacks the mandatory :Ancestor class assignment required for the hasFather property.
+      The node Carlos_I is the value for hasFather, but it is missing the mandatory :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_Prince_of_Hohenzollern, :Ancestor)
+      AssignClass('Carlos_I', ':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Amélie_of_Orléans is the value for hasMother, but it is missing the mandatory :Ancestor classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Amélie_of_Orléans', ':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    LLM-provided explanation of the violation:
+      The node Maria_Pia_of_Savoy is a subject of the property isMotherOf, but it is missing the mandatory :Ancestor classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Maria_Pia_of_Savoy', ':Ancestor')
 
 
 
@@ -789,102 +923,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c987c27b-b39e-404d-a8d5-ab1223b5ba9e)
- Call ID: c987c27b-b39e-404d-a8d5-ab1223b5ba9e
+  AssignClass (4c64703d-8fd0-4f00-9ba9-0b3db7c7ec7c)
+ Call ID: 4c64703d-8fd0-4f00-9ba9-0b3db7c7ec7c
+  Args:
+    source: :Carlos_I
+    type: :Ancestor
+  AssignClass (d121c99b-9f59-49fb-93e9-9c5a9b715b97)
+ Call ID: d121c99b-9f59-49fb-93e9-9c5a9b715b97
   Args:
     type: :Ancestor
-    source: Carlos_I
-  AssignClass (de090714-2204-402e-af3f-a284dfe3285c)
- Call ID: de090714-2204-402e-af3f-a284dfe3285c
+    source: :Amélie_of_Orléans
+  AssignClass (f4aa4827-d305-4378-ae82-836d63c148de)
+ Call ID: f4aa4827-d305-4378-ae82-836d63c148de
   Args:
     type: :Ancestor
-    source: Amelie_of_Orleans
-  AssignClass (d78097cc-bf51-467d-8481-b00cb6a24d97)
- Call ID: d78097cc-bf51-467d-8481-b00cb6a24d97
-  Args:
-    type: :Ancestor
-    source: William_Prince_of_Hohenzollern
-  AddTriple (bb86c1b1-ff78-46fd-8f99-e236b23e15c4)
- Call ID: bb86c1b1-ff78-46fd-8f99-e236b23e15c4
-  Args:
-    relation: :hasSex
-    target: Male_Sex_Node
-    source: Manuel_II
-  AssignClass (c9795098-639e-476b-a1ac-41478f5ffde7)
- Call ID: c9795098-639e-476b-a1ac-41478f5ffde7
-  Args:
-    type: :Male
-    source: Male_Sex_Node
-  AddTriple (82580f8e-3a95-40ea-8f02-74a18b37a166)
- Call ID: 82580f8e-3a95-40ea-8f02-74a18b37a166
-  Args:
-    target: Male_Sex_Node
-    relation: :hasSex
-    source: Carlos_I
-  AddTriple (602eef79-a934-491f-9e80-61505e8f84e9)
- Call ID: 602eef79-a934-491f-9e80-61505e8f84e9
-  Args:
-    source: Luis_Filipe
-    relation: :hasSex
-    target: Male_Sex_Node
-  AddTriple (e5197da9-853e-471a-ac21-53238dae2b86)
- Call ID: e5197da9-853e-471a-ac21-53238dae2b86
-  Args:
-    target: Male_Sex_Node
-    relation: :hasSex
-    source: William_Prince_of_Hohenzollern
-  AddTriple (60ed3a6c-3fbc-4499-b460-bc3913dd7af5)
- Call ID: 60ed3a6c-3fbc-4499-b460-bc3913dd7af5
-  Args:
-    source: Amelie_of_Orleans
-    relation: :hasSex
-    target: Female_Sex_Node
-  AssignClass (f47e7715-a93c-4c4b-96a3-f7eb8968a032)
- Call ID: f47e7715-a93c-4c4b-96a3-f7eb8968a032
-  Args:
-    type: :Female
-    source: Female_Sex_Node
-  AddTriple (0a96ec6c-0258-4e3f-9192-466664f790d9)
- Call ID: 0a96ec6c-0258-4e3f-9192-466664f790d9
-  Args:
-    target: Female_Sex_Node
-    relation: :hasSex
-    source: Augusta_Victoria
-  ValidateShacl (a8fca458-fc8f-4c60-8154-04d8a8253195)
- Call ID: a8fca458-fc8f-4c60-8154-04d8a8253195
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Maria_Pia_of_Savoy
 
 ================================= Tool Message =================================
 
@@ -901,49 +954,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Augusta_Victoria a :Person,
-          :Woman ;
-      :hasFather data:William_Prince_of_Hohenzollern ;
-      :hasSex data:Female_Sex_Node .
-
   data:Manuel_II a :Man,
           :Person ;
-      :alsoKnownAs "Patriot"^^xsd:string,
-          "Unfortunate"^^xsd:string,
-          "o Desaventurado"^^xsd:string,
-          "o Patriota"^^xsd:string ;
+      :alsoKnownAs "The Patriot"^^xsd:string,
+          "The Unfortunate"^^xsd:string ;
       :hasBirthYear 1889 ;
+      :hasBrother data:Lu%C3%ADs_Filipe ;
       :hasDeathYear 1932 ;
       :hasFather data:Carlos_I ;
-      :hasMarriageYear data:1913 ;
-      :hasMother data:Amelie_of_Orleans ;
-      :hasSex data:Male_Sex_Node ;
-      :isBrotherOf data:Luis_Filipe .
+      :hasMarriageYear 1913 ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+      :hasRelation data:Augusta_Victoria .
 
-  data:Amelie_of_Orleans a :Ancestor,
+  data:Maria_Pia_of_Savoy a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female_Sex_Node .
+      :isMotherOf data:Carlos_I .
+
+  data:Augusta_Victoria a :Person,
+          :Woman .
+
+  data:Lu%C3%ADs_Filipe a :Man,
+          :Person ;
+      :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+          data:Carlos_I .
+
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
+          :Person,
+          :Woman .
 
   data:Carlos_I a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male_Sex_Node .
-
-  data:Luis_Filipe a :Man,
-          :Person ;
-      :hasSex data:Male_Sex_Node .
-
-  data:William_Prince_of_Hohenzollern a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male_Sex_Node .
-
-  data:Female_Sex_Node a :Female .
-
-  data:Male_Sex_Node a :Male .
+          :Person .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (40a6c35a-5562-4504-99cd-0cd9ed4d2134)
+ Call ID: 40a6c35a-5562-4504-99cd-0cd9ed4d2134
+  Args:
 
 ================================= Tool Message =================================
 
@@ -953,37 +1005,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0eae0fc4-028e-4eee-92c8-3d61cccd77fa)
- Call ID: 0eae0fc4-028e-4eee-92c8-3d61cccd77fa
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1913']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (3f13be4a-e768-4ab0-b56f-787c74f01f37)
- Call ID: 3f13be4a-e768-4ab0-b56f-787c74f01f37
-  Args:
-    source: 1913
-    type: :DomainEntity
-  Finish (0f87ac5d-82d3-4780-aaf3-af391795bb89)
- Call ID: 0f87ac5d-82d3-4780-aaf3-af391795bb89
+  Finish (2526e148-7023-4bec-b724-53cea6b7ea97)
+ Call ID: 2526e148-7023-4bec-b724-53cea6b7ea97
   Args:

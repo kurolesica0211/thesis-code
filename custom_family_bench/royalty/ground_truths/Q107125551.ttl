@@ -7,16 +7,47 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Princess_Lilibet_of_Sussex a :Person ;
+    rdfs:label "Princess Lilibet of Sussex" ;
+    data:posIndicesFull "0:26",
+        "1735:1761",
+        "1744:1761",
+        "28:61",
+        "347:380",
+        "9:26" ;
+    data:posIndicesPart "1063:1070",
+        "1233:1240",
+        "1275:1283",
+        "1458:1465",
+        "1583:1591",
+        "1637:1645",
+        "1646:1653",
+        "1775:1782",
+        "545:551",
+        "682:689",
+        "804:811",
+        "877:884" ;
+    data:wdtLink wdt:Q107125551 ;
+    :alsoKnownAs "Lili Mountbatten-Windsor",
+        "Lili Sussex",
+        "Lili Windsor",
+        "Lilibet Diana Mountbatten-Windsor",
+        "Lilibet Diana of Sussex",
+        "Lilibet Sussex",
+        "Lilibet Windsor",
+        "Lilibet of Sussex",
+        "Princess Lilibet Diana of Sussex" ;
+    :hasParent data:Meghan-_Duchess_of_Sussex,
+        data:Prince_Harry-_Duke_of_Sussex ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Charles_III a :Person ;
     rdfs:label "Charles III" ;
     data:posIndicesFull "1200:1211",
         "248:260",
@@ -51,16 +82,10 @@ data:Charles_III a :Ancestor,
         "Prince Charles, Prince of Wales",
         "The Prince Charles Philip Arthur George, Prince of Wales",
         "The Prince Charles, Prince of Wales" ;
-    :hasChild data:Prince_Harry-_Duke_of_Sussex ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Harry-_Duke_of_Sussex ;
-    :isFatherOf data:Prince_Harry-_Duke_of_Sussex ;
-    :isParentOf data:Prince_Harry-_Duke_of_Sussex .
+    :hasParent data:Elizabeth_II ;
+    :hasSex data:male .
 
-data:Diana-_Princess_of_Wales a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Diana-_Princess_of_Wales a :Person ;
     rdfs:label "Diana, Princess of Wales" ;
     data:posIndicesFull "1654:1659",
         "355:360",
@@ -80,16 +105,22 @@ data:Diana-_Princess_of_Wales a :Ancestor,
         "Princess Diana",
         "The People's Princess",
         "The Princess of Wales" ;
-    :hasChild data:Prince_Harry-_Duke_of_Sussex ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Harry-_Duke_of_Sussex ;
-    :isMotherOf data:Prince_Harry-_Duke_of_Sussex ;
-    :isParentOf data:Prince_Harry-_Duke_of_Sussex .
+    :hasSex data:female .
 
-data:Meghan-_Duchess_of_Sussex a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "1017:1029",
+        "1170:1182",
+        "646:664",
+        "652:664",
+        "911:923" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasSex data:female .
+
+data:Meghan-_Duchess_of_Sussex a :Person ;
     rdfs:label "Meghan, Duchess of Sussex" ;
     data:posIndicesFull "195:220" ;
     data:posIndicesPart "534:541",
@@ -102,58 +133,9 @@ data:Meghan-_Duchess_of_Sussex a :Ancestor,
         "Rachel Markle",
         "Rachel Meghan Markle",
         "Rachel Sussex" ;
-    :hasChild data:Princess_Lilibet_of_Sussex ;
-    :hasDaughter data:Princess_Lilibet_of_Sussex ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Lilibet_of_Sussex ;
-    :isParentOf data:Princess_Lilibet_of_Sussex .
+    :hasSex data:female .
 
-data:Princess_Lilibet_of_Sussex a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Lilibet of Sussex" ;
-    data:posIndicesFull "0:26",
-        "1735:1761",
-        "1744:1761",
-        "28:61",
-        "347:380",
-        "9:26" ;
-    data:posIndicesPart "1063:1070",
-        "1233:1240",
-        "1275:1283",
-        "1458:1465",
-        "1583:1591",
-        "1637:1645",
-        "1646:1653",
-        "1775:1782",
-        "545:551",
-        "682:689",
-        "804:811",
-        "877:884" ;
-    data:wdtLink wdt:Q107125551 ;
-    :alsoKnownAs "Lili Mountbatten-Windsor",
-        "Lili Sussex",
-        "Lili Windsor",
-        "Lilibet Diana Mountbatten-Windsor",
-        "Lilibet Diana of Sussex",
-        "Lilibet Sussex",
-        "Lilibet Windsor",
-        "Lilibet of Sussex",
-        "Princess Lilibet Diana of Sussex" ;
-    :hasFather data:Prince_Harry-_Duke_of_Sussex ;
-    :hasMother data:Meghan-_Duchess_of_Sussex ;
-    :hasParent data:Meghan-_Duchess_of_Sussex,
-        data:Prince_Harry-_Duke_of_Sussex ;
-    :hasSex data:female ;
-    :isChildOf data:Meghan-_Duchess_of_Sussex,
-        data:Prince_Harry-_Duke_of_Sussex ;
-    :isDaughterOf data:Meghan-_Duchess_of_Sussex,
-        data:Prince_Harry-_Duke_of_Sussex .
-
-data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Harry-_Duke_of_Sussex a :Person ;
     rdfs:label "Prince Harry, Duke of Sussex" ;
     data:posIndicesFull "161:173",
         "161:189" ;
@@ -178,17 +160,11 @@ data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
         "Prince Henry, Duke of Sussex",
         "Prince Henry, Duke of Sussex, KCVO",
         "The Prince Henry, Duke of Sussex" ;
-    :hasChild data:Princess_Lilibet_of_Sussex ;
-    :hasDaughter data:Princess_Lilibet_of_Sussex ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana-_Princess_of_Wales ;
     :hasParent data:Charles_III,
         data:Diana-_Princess_of_Wales ;
-    :hasSex data:male ;
-    :isChildOf data:Charles_III,
-        data:Diana-_Princess_of_Wales ;
-    :isFatherOf data:Princess_Lilibet_of_Sussex ;
-    :isParentOf data:Princess_Lilibet_of_Sussex ;
-    :isSonOf data:Charles_III,
-        data:Diana-_Princess_of_Wales .
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -2,31 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carlos_Duke_of_Parma a :Ancestor,
-        :Man ;
-    :isBrotherOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma ;
-    :isFatherOf data:Carlos_Enrique .
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:Male .
 
-data:Princess_Carolina a :Woman ;
-    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
+data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Princess_Margarita a :Woman ;
-    :isSisterOf data:Prince_Jaime_Bernardo_of_Bourbon-Parma .
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Carlos_Enrique a :Man .
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1897 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:Male .
 
-data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
-        :Man .
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Gloria_Irene a :Woman .
+data:Female a :Sex .
 
-data:Princess_Irene_of_the_Netherlands a :Ancestor,
-        :Woman .
-
-data:Prince_Jaime_Bernardo_of_Bourbon-Parma a :Ancestor,
-        :Man ;
-    :hasBirthYear 1972 ;
-    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
-    :hasMother data:Princess_Irene_of_the_Netherlands ;
-    :isFatherOf data:Gloria_Irene .
+data:Male a :Sex .
 

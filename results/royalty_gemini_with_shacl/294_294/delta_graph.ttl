@@ -2,23 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Christian_of_Hanover a :Man ;
-    :hasBirthYear 1985 ;
-    :hasFather data:Ernst_August_Prinz_von_Hannover ;
+data:Alexandra_of_Hanover a :Woman ;
+    :hasFather data:Ernst_August_Prince_of_Hanover .
+
+data:Caroline_Princess_of_Hanover a :Woman .
+
+data:Christian_of_Hanover a :Man ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
+    :hasMother data:Chantal_Hochuli .
+
+data:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;
+    :hasBirthYear 1983 ;
+    :hasFather data:Ernst_August_Prince_of_Hanover ;
     :hasMarriageYear 2017 ;
     :hasMother data:Chantal_Hochuli ;
-    :hasRelation data:Alessandra_de_Osma .
+    :hasRelation data:Ekaterina_Igorievna_Malysheva .
 
-data:Alessandra_de_Osma a :Woman .
+data:Ekaterina_Igorievna_Malysheva a :Woman ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Igor_Malyshev ;
+    :hasMother data:Svetlana_Malysheva .
+
+data:Igor_Malyshev a :Ancestor,
+        :Man .
+
+data:Svetlana_Malysheva a :Ancestor,
+        :Woman .
 
 data:Chantal_Hochuli a :Ancestor,
         :Woman .
 
-data:Ernst_August_Prinz_von_Hannover a :Ancestor,
-        :Man ;
-    :hasMarriageYear 1997,
-        1999 ;
-    :hasRelation data:Princess_Caroline_of_Monaco .
-
-data:Princess_Caroline_of_Monaco a :Woman .
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man .
 

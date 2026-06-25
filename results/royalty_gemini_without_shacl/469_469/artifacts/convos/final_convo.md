@@ -69,42 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria Kirillovna of Russia (2 February 1907 – 25 October 1951) was the eldest daughter of Grand Duke Kirill Vladimirovich of Russia and Princess Victoria Melita of Edinburgh.
-She was born in Coburg when her parents were in exile because their marriage had not been approved by Tsar Nicholas II.
-The family returned to Russia prior to World War I, but was forced to flee following the Russian Revolution of 1917.
-Biography
-
+Countess Walburga Douglas (née von Habsburg-Lothringen; born 5 October 1958) is a German-born Swedish lawyer and politician, who served as a member of the Riksdag of Sweden for the Moderate Party from 2006 to 2014.
 Early life
 
-Maria was raised in Coburg and in Saint-Briac, France.
-She was born Princess Maria Kirillovna of Russia, but her father granted her the title Grand Duchess of Russia with the style Imperial Highness when he declared himself Guardian of the Throne in 1921.
-As a child, the dark-haired, dark-eyed Maria took after her maternal grandmother, Grand Duchess Maria Alexandrovna of Russia, in appearance, with a wide, round face and a tendency to be overweight and to look older than her actual age when she was still a teenager.
-In 1922, when she was fifteen, the "flighty" Maria visited her aunt, Queen Marie of Romania, and carried on a flirtation with the son-in-law of a lady-in-waiting at the Romanian court.
-Her thirteen-year-old cousin, Princess Ileana of Romania, spread rumors about the flirtation when Maria returned home, resulting in strained relations between Marie of Romania and Maria's mother, Victoria.
-Marriage and issue
+Born in 1958 in Berg am Starnberger See, West Germany, she is the fifth daughter of Otto von Habsburg, the last crown prince of Austria-Hungary, and his wife Princess Regina of Saxe-Meiningen.
+Walburga was banished from the Republic of Austria from birth and well into adult life, along with her siblings, by the Habsburg Law that had been in effect since 1938, having been (re)imposed by the Nazis.
+She is a granddaughter of the last Austrian emperor, Charles I, and a member of the House of Habsburg-Lorraine.
+Her ancestral titles (abolished in Austria since 1919) are Archduchess Walburga of Austria, Archduchess of Austria, Princess of Hungary and Bohemia, with the style of Her Imperial and Royal Highness (HI&RH).
+She does not currently use her ancestral titles actively in her daily life; however, by law she holds the title of Countess Douglas in the Kingdom of Sweden, her current country of residence and citizenship.
+On 17 September 2023, Douglas visited Armenia to dedicate the opening of the PanEuropa Armenia branch in Yerevan.
+Personal life
 
-On 24 February 1925, Maria was engaged to Karl, 6th Prince of Leiningen (13 February 1898 – 2 August 1946), and they were married on 25 November.
-They were third cousins, as Karl's great-grandfather Carl, was the half-brother of Maria's great-grandmother, Queen Victoria.
-Victoria was at her daughter's bedside when she gave birth to her first child, Emich Kirill, in 1926.
-She also attended the subsequent births of Maria's children.
-Maria had seven children in all, one of whom died in infancy during World War II.
-Maria, left with little money, struggled to support her surviving six children.
-Karl and Maria had seven children:
-
-
-Ancestry
-
-Notes
-
-References
-
-External links
+On 5 December 1992 in Budapest, Hungary, Walburga married a Swedish nobleman, Count Carl Axel Archibald Douglas (born 27 November 1949 in Stockholm), son of Count Archibald Douglas and Baroness Margareta Lagerfelt.
+Her husband's family is a  noble family in Sweden, descended from the Scot Robert Douglas, Count of Skenninge, member of the Scottish Clan Douglas and founder of its Swedish branch.
+Her husband is a first cousin of Count Gustaf Douglas and his sisters Rosita Spencer-Churchill, Duchess of Marlborough, and Princess Elisabeth, Duchess in Bavaria, the wife of Prince Max, Duke in Bavaria.
+They have a son, Count Mauritz Otto Wenzel Douglas (born 30 March 1994 in Stockholm).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +107,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +124,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,349 +432,187 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0d066a44-98ec-433f-baa8-8db46f0412cb)
- Call ID: 0d066a44-98ec-433f-baa8-8db46f0412cb
+  AssignClass (ba1df846-473f-4cfc-9b8d-f0f32d74b7ec)
+ Call ID: ba1df846-473f-4cfc-9b8d-f0f32d74b7ec
   Args:
-    type: :Person
-    source: Maria_Kirillovna_of_Russia
-  AssignClass (a2bb9c39-96e2-4bb0-92a4-647b48c53809)
- Call ID: a2bb9c39-96e2-4bb0-92a4-647b48c53809
-  Args:
+    source: Walburga_Douglas
     type: :Woman
-    source: Maria_Kirillovna_of_Russia
-  AssignClass (c20a2640-60c2-47c2-b400-19593bdfefb6)
- Call ID: c20a2640-60c2-47c2-b400-19593bdfefb6
+  AssignClass (bef40d9f-642b-44f6-ba89-cca4db4ce85d)
+ Call ID: bef40d9f-642b-44f6-ba89-cca4db4ce85d
   Args:
-    source: Kirill_Vladimirovich_of_Russia
+    source: Walburga_Douglas
     type: :Person
-  AssignClass (50dce1a9-be86-45f4-8974-34a69648c711)
- Call ID: 50dce1a9-be86-45f4-8974-34a69648c711
+  AddLiteral (a7d0825a-33d9-4b12-bc67-2f1f480f91a0)
+ Call ID: a7d0825a-33d9-4b12-bc67-2f1f480f91a0
   Args:
-    source: Kirill_Vladimirovich_of_Russia
-    type: :Man
-  AssignClass (975cf5df-aa39-41c1-bbdb-5cc2072f0d4a)
- Call ID: 975cf5df-aa39-41c1-bbdb-5cc2072f0d4a
-  Args:
-    type: :Person
-    source: Victoria_Melita_of_Edinburgh
-  AssignClass (7472a65b-0875-48d9-8834-d0ad94e98ea7)
- Call ID: 7472a65b-0875-48d9-8834-d0ad94e98ea7
-  Args:
-    type: :Woman
-    source: Victoria_Melita_of_Edinburgh
-  AssignClass (ccf26a04-0216-4e9c-a6e6-4ef489c04719)
- Call ID: ccf26a04-0216-4e9c-a6e6-4ef489c04719
-  Args:
-    type: :Person
-    source: Maria_Alexandrovna_of_Russia
-  AssignClass (520fcc04-2465-4c44-a731-676c0c457281)
- Call ID: 520fcc04-2465-4c44-a731-676c0c457281
-  Args:
-    source: Maria_Alexandrovna_of_Russia
-    type: :Woman
-  AssignClass (cb1ebdb0-07a9-459a-8bd1-1c1e6690c6d8)
- Call ID: cb1ebdb0-07a9-459a-8bd1-1c1e6690c6d8
-  Args:
-    source: Marie_of_Romania
-    type: :Person
-  AssignClass (61e31096-e554-4e7c-8d61-98441ef899bd)
- Call ID: 61e31096-e554-4e7c-8d61-98441ef899bd
-  Args:
-    source: Marie_of_Romania
-    type: :Woman
-  AssignClass (266542a7-e5bf-4bcb-955c-2d4adba7f543)
- Call ID: 266542a7-e5bf-4bcb-955c-2d4adba7f543
-  Args:
-    type: :Person
-    source: Ileana_of_Romania
-  AssignClass (ab51a1ae-e867-490b-9a64-8b9597fcaa26)
- Call ID: ab51a1ae-e867-490b-9a64-8b9597fcaa26
-  Args:
-    type: :Woman
-    source: Ileana_of_Romania
-  AssignClass (b242305c-450d-4f86-80bf-51a677fcc71a)
- Call ID: b242305c-450d-4f86-80bf-51a677fcc71a
-  Args:
-    source: Karl_6th_Prince_of_Leiningen
-    type: :Person
-  AssignClass (f7f4c457-5383-462d-84b4-499858ae4cc8)
- Call ID: f7f4c457-5383-462d-84b4-499858ae4cc8
-  Args:
-    source: Karl_6th_Prince_of_Leiningen
-    type: :Man
-  AssignClass (dddd41a2-8b05-46f8-b669-11bf163880da)
- Call ID: dddd41a2-8b05-46f8-b669-11bf163880da
-  Args:
-    type: :Person
-    source: Emich_Kirill
-  AssignClass (f54e8c9b-c4f9-428b-b71e-65ac3aeb0552)
- Call ID: f54e8c9b-c4f9-428b-b71e-65ac3aeb0552
-  Args:
-    type: :Man
-    source: Emich_Kirill
-  AddLiteral (67e3f285-782f-48fc-a390-536d8fa77b97)
- Call ID: 67e3f285-782f-48fc-a390-536d8fa77b97
-  Args:
-    literal_type: xsd:integer
-    source: Maria_Kirillovna_of_Russia
-    literal_value: 1907
     relation: :hasBirthYear
-  AddLiteral (032ffbf7-45a9-4109-85ba-da87dcaba326)
- Call ID: 032ffbf7-45a9-4109-85ba-da87dcaba326
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1951
-    source: Maria_Kirillovna_of_Russia
+    literal_value: 1958
+    source: Walburga_Douglas
     literal_type: xsd:integer
-  AddTriple (573284bb-ec53-4750-9793-83def2449428)
- Call ID: 573284bb-ec53-4750-9793-83def2449428
+  AssignClass (1921fba4-34ad-409a-9be8-a4f6d7f2ff42)
+ Call ID: 1921fba4-34ad-409a-9be8-a4f6d7f2ff42
   Args:
-    target: Kirill_Vladimirovich_of_Russia
-    relation: :hasFather
-    source: Maria_Kirillovna_of_Russia
-  AddTriple (060d3915-44c3-47cd-8561-2418a74497b5)
- Call ID: 060d3915-44c3-47cd-8561-2418a74497b5
-  Args:
-    source: Maria_Kirillovna_of_Russia
-    target: Victoria_Melita_of_Edinburgh
-    relation: :hasMother
-  AddTriple (c56653ab-8c4f-41ef-a008-4840a12952db)
- Call ID: c56653ab-8c4f-41ef-a008-4840a12952db
-  Args:
-    source: Victoria_Melita_of_Edinburgh
-    target: Maria_Alexandrovna_of_Russia
-    relation: :hasMother
-  AddTriple (8be109d3-2bfe-4518-b74a-210328c3d310)
- Call ID: 8be109d3-2bfe-4518-b74a-210328c3d310
-  Args:
-    source: Marie_of_Romania
-    target: Maria_Kirillovna_of_Russia
-    relation: :isAuntOf
-  AddTriple (bf4db34a-57db-4b64-88fe-b148b4c538df)
- Call ID: bf4db34a-57db-4b64-88fe-b148b4c538df
-  Args:
-    source: Ileana_of_Romania
-    target: Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin
-    relation: :isSisterOf
-  AddTriple (dce357a4-a19d-4ec8-9d3d-ea17cd024353)
- Call ID: dce357a4-a19d-4ec8-9d3d-ea17cd024353
-  Args:
-    source: Karl_6th_Prince_of_Leiningen
-    target: Carl_of_Leiningen
-    relation: :hasFather
-  AddTriple (75aa27e3-cf2c-4b6d-967a-f20995a2e31c)
- Call ID: 75aa27e3-cf2c-4b6d-967a-f20995a2e31c
-  Args:
-    target: Maria_Kirillovna_of_Russia
-    relation: :hasMother
-    source: Emich_Kirill
-  AddTriple (bd19dfd3-0130-4578-927f-b99db0f2e305)
- Call ID: bd19dfd3-0130-4578-927f-b99db0f2e305
-  Args:
-    target: Karl_6th_Prince_of_Leiningen
-    relation: :hasFather
-    source: Emich_Kirill
-  AddLiteral (c14a0396-a8ba-4836-9be2-fe9066ae0a90)
- Call ID: c14a0396-a8ba-4836-9be2-fe9066ae0a90
-  Args:
-    literal_value: 1925
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Maria_Kirillovna_of_Russia
-  Finish (65e6ca1d-8b57-404f-884a-737fd522286b)
- Call ID: 65e6ca1d-8b57-404f-884a-737fd522286b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Emich_Kirill a :Man,
-          :Person ;
-      :hasFather data:Karl_6th_Prince_of_Leiningen ;
-      :hasMother data:Maria_Kirillovna_of_Russia .
-
-  data:Ileana_of_Romania a :Person,
-          :Woman ;
-      :isSisterOf data:Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin .
-
-  data:Marie_of_Romania a :Person,
-          :Woman ;
-      :isAuntOf data:Maria_Kirillovna_of_Russia .
-
-  data:Karl_6th_Prince_of_Leiningen a :Man,
-          :Person ;
-      :hasFather data:Carl_of_Leiningen .
-
-  data:Kirill_Vladimirovich_of_Russia a :Man,
-          :Person .
-
-  data:Maria_Alexandrovna_of_Russia a :Person,
-          :Woman .
-
-  data:Victoria_Melita_of_Edinburgh a :Person,
-          :Woman ;
-      :hasMother data:Maria_Alexandrovna_of_Russia .
-
-  data:Maria_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasBirthYear 1907 ;
-      :hasDeathYear 1951 ;
-      :hasFather data:Kirill_Vladimirovich_of_Russia ;
-      :hasMarriageYear 1925 ;
-      :hasMother data:Victoria_Melita_of_Edinburgh .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin', 'Carl_of_Leiningen']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (5165f14e-c71a-4411-bb6c-be8537e640d4)
- Call ID: 5165f14e-c71a-4411-bb6c-be8537e640d4
-  Args:
-    source: Carl_of_Leiningen
-    type: :Person
-  AssignClass (3fb41a87-bb83-4dcc-9924-7aec3a205ba0)
- Call ID: 3fb41a87-bb83-4dcc-9924-7aec3a205ba0
-  Args:
-    source: Carl_of_Leiningen
+    source: Otto_von_Habsburg
     type: :Man
-  AssignClass (8689edce-619b-407b-a69f-86b187be1fa9)
- Call ID: 8689edce-619b-407b-a69f-86b187be1fa9
+  AssignClass (e2622685-1576-4b48-94fd-953357282e7b)
+ Call ID: e2622685-1576-4b48-94fd-953357282e7b
   Args:
-    source: Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin
+    source: Otto_von_Habsburg
     type: :Person
-  AssignClass (4be14e2d-d311-436a-aeaa-abe5c078dfd4)
- Call ID: 4be14e2d-d311-436a-aeaa-abe5c078dfd4
+  AssignClass (fdfb2ae3-40cb-4a93-90fb-31b2af8c3013)
+ Call ID: fdfb2ae3-40cb-4a93-90fb-31b2af8c3013
   Args:
-    source: Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin
+    source: Otto_von_Habsburg
+    type: :Ancestor
+  AssignClass (ac6f853b-8310-4649-afa1-ee66320c5533)
+ Call ID: ac6f853b-8310-4649-afa1-ee66320c5533
+  Args:
+    source: Regina_of_Saxe-Meiningen
     type: :Woman
-  Finish (be4c2dc8-e344-4347-b49f-acc94e7459ff)
- Call ID: be4c2dc8-e344-4347-b49f-acc94e7459ff
+  AssignClass (7a3e7894-32cd-4bb0-8127-f4448edc636d)
+ Call ID: 7a3e7894-32cd-4bb0-8127-f4448edc636d
+  Args:
+    source: Regina_of_Saxe-Meiningen
+    type: :Person
+  AssignClass (bcf78fb2-45fd-4ff4-ade5-21c1f3e1ad28)
+ Call ID: bcf78fb2-45fd-4ff4-ade5-21c1f3e1ad28
+  Args:
+    source: Regina_of_Saxe-Meiningen
+    type: :Ancestor
+  AddTriple (e706d162-e413-4beb-8db6-1768cb3bf124)
+ Call ID: e706d162-e413-4beb-8db6-1768cb3bf124
+  Args:
+    target: Otto_von_Habsburg
+    relation: :hasFather
+    source: Walburga_Douglas
+  AddTriple (53200be6-c7d3-472d-9b9f-72ada454a33e)
+ Call ID: 53200be6-c7d3-472d-9b9f-72ada454a33e
+  Args:
+    target: Regina_of_Saxe-Meiningen
+    relation: :hasMother
+    source: Walburga_Douglas
+  AssignClass (1e14740e-b060-4f03-b1d4-5c7a9ae92b20)
+ Call ID: 1e14740e-b060-4f03-b1d4-5c7a9ae92b20
+  Args:
+    source: Charles_I
+    type: :Man
+  AssignClass (1ba99900-5d9c-4c5e-8b7a-d2565bbed2f9)
+ Call ID: 1ba99900-5d9c-4c5e-8b7a-d2565bbed2f9
+  Args:
+    source: Charles_I
+    type: :Person
+  AssignClass (63beb2e0-286b-43bb-893b-f32a2ba4a4a3)
+ Call ID: 63beb2e0-286b-43bb-893b-f32a2ba4a4a3
+  Args:
+    source: Charles_I
+    type: :Ancestor
+  AddTriple (00e8c22e-1bf1-44a3-9dc2-f47980eb24a4)
+ Call ID: 00e8c22e-1bf1-44a3-9dc2-f47980eb24a4
+  Args:
+    target: Charles_I
+    source: Walburga_Douglas
+    relation: :hasAncestor
+  AssignClass (1a8024ee-e839-4e90-b466-2bd5455cf463)
+ Call ID: 1a8024ee-e839-4e90-b466-2bd5455cf463
+  Args:
+    source: Carl_Axel_Archibald_Douglas
+    type: :Man
+  AssignClass (014dc9de-05d5-4049-b23f-1044228cf4e1)
+ Call ID: 014dc9de-05d5-4049-b23f-1044228cf4e1
+  Args:
+    source: Carl_Axel_Archibald_Douglas
+    type: :Person
+  AddLiteral (f06068a7-e843-40bc-bb12-f2588ab7dc60)
+ Call ID: f06068a7-e843-40bc-bb12-f2588ab7dc60
+  Args:
+    source: Carl_Axel_Archibald_Douglas
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1949
+  AddLiteral (36e6db92-2cdf-45ef-8c67-f741a00d3829)
+ Call ID: 36e6db92-2cdf-45ef-8c67-f741a00d3829
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1992
+    source: Walburga_Douglas
+    literal_type: xsd:integer
+  AddTriple (0fb2e3ff-18ea-4e8c-a7f7-e9b05f466cb6)
+ Call ID: 0fb2e3ff-18ea-4e8c-a7f7-e9b05f466cb6
+  Args:
+    target: Carl_Axel_Archibald_Douglas
+    source: Walburga_Douglas
+    relation: :hasRelation
+  AssignClass (988b08f3-8163-4747-9591-4de2f3ab7ed3)
+ Call ID: 988b08f3-8163-4747-9591-4de2f3ab7ed3
+  Args:
+    source: Archibald_Douglas
+    type: :Man
+  AssignClass (3aa727e4-7e32-4e51-9fe2-9f5d842cf85c)
+ Call ID: 3aa727e4-7e32-4e51-9fe2-9f5d842cf85c
+  Args:
+    source: Archibald_Douglas
+    type: :Person
+  AssignClass (9d6f47ba-caea-49b0-9d73-ce3e1a69227b)
+ Call ID: 9d6f47ba-caea-49b0-9d73-ce3e1a69227b
+  Args:
+    source: Archibald_Douglas
+    type: :Ancestor
+  AssignClass (3bcb2bf9-4be8-4b94-b0c7-95b6ab505056)
+ Call ID: 3bcb2bf9-4be8-4b94-b0c7-95b6ab505056
+  Args:
+    source: Margareta_Lagerfelt
+    type: :Woman
+  AssignClass (c71e494a-3676-410e-a8f9-d52d1b0f12d8)
+ Call ID: c71e494a-3676-410e-a8f9-d52d1b0f12d8
+  Args:
+    source: Margareta_Lagerfelt
+    type: :Person
+  AssignClass (4b96ca91-f041-44d9-9421-951f13f7355e)
+ Call ID: 4b96ca91-f041-44d9-9421-951f13f7355e
+  Args:
+    source: Margareta_Lagerfelt
+    type: :Ancestor
+  AddTriple (e209df9f-d680-49ee-b65c-994e0c36e40b)
+ Call ID: e209df9f-d680-49ee-b65c-994e0c36e40b
+  Args:
+    relation: :hasFather
+    source: Carl_Axel_Archibald_Douglas
+    target: Archibald_Douglas
+  AddTriple (27f25ad1-7d55-45a2-b63b-1845a13ecb0b)
+ Call ID: 27f25ad1-7d55-45a2-b63b-1845a13ecb0b
+  Args:
+    source: Carl_Axel_Archibald_Douglas
+    relation: :hasMother
+    target: Margareta_Lagerfelt
+  AssignClass (9a472d4a-9bbf-4939-accd-2dca9069a8c4)
+ Call ID: 9a472d4a-9bbf-4939-accd-2dca9069a8c4
+  Args:
+    source: Mauritz_Otto_Wenzel_Douglas
+    type: :Man
+  AssignClass (1e24831f-6b29-45c9-a8d9-5101fff05d65)
+ Call ID: 1e24831f-6b29-45c9-a8d9-5101fff05d65
+  Args:
+    source: Mauritz_Otto_Wenzel_Douglas
+    type: :Person
+  AddLiteral (ce1ac4b5-ac2e-484b-bf6b-3678664ef94b)
+ Call ID: ce1ac4b5-ac2e-484b-bf6b-3678664ef94b
+  Args:
+    source: Mauritz_Otto_Wenzel_Douglas
+    literal_type: xsd:integer
+    literal_value: 1994
+    relation: :hasBirthYear
+  AddTriple (331087bd-91fe-488d-b98f-0943e7950cf9)
+ Call ID: 331087bd-91fe-488d-b98f-0943e7950cf9
+  Args:
+    target: Carl_Axel_Archibald_Douglas
+    source: Mauritz_Otto_Wenzel_Douglas
+    relation: :hasFather
+  AddTriple (7acecff1-d7ca-421d-ac50-fae8ecf7fdf1)
+ Call ID: 7acecff1-d7ca-421d-ac50-fae8ecf7fdf1
+  Args:
+    target: Walburga_Douglas
+    relation: :hasMother
+    source: Mauritz_Otto_Wenzel_Douglas
+  Finish (49b9f8e3-3877-4e1b-88aa-180fe7e88afd)
+ Call ID: 49b9f8e3-3877-4e1b-88aa-180fe7e88afd
   Args:

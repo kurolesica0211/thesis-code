@@ -69,31 +69,52 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George Ivar Louis Mountbatten, 4th Marquess of Milford Haven (born 6 June 1961), styled Earl of Medina before 1970, is a British hereditary peer and businessman.
-Biography
+Patricia Edwina Victoria Knatchbull, 2nd
+Countess Mountbatten of Burma, Baroness Brabourne, CBE, MSC, CD (née Mountbatten; 14 February 1924 – 13 June 2017), was a British peeress and third cousin of Queen Elizabeth II.
+Earl Mountbatten of Burma (formerly Prince Louis of Battenberg) and of heiress Edwina Ashley.
+She was the elder sister of Lady Pamela Hicks, the first cousin of Prince Philip, Duke of Edinburgh, and the last surviving baptismal sponsor to her first cousin once removed King Charles III.
+Lady Mountbatten succeeded her father as Countess Mountbatten of Burma when he was assassinated in 1979, as his peerages had been created with special remainder to his daughters and their heirs male.
+Early life
 
-Family
-
-Born on 6 June 1961, Lord Milford Haven is the elder son of the 3rd Marquess of Milford Haven and Janet Mercedes Bryce, the older brother of Lord Ivar Mountbatten, and a descendant of Queen Victoria, Catherine the Great, Alexander Pushkin, and Abram Gannibal.
-Upon the death of his father on 14 April 1970, he became the 4th Marquess of Milford Haven and head of the Mountbatten family.
-Lord Milford Haven married, first, Sarah Georgina Walker (born London, Middlesex, 17 November 1961/2), in London on 8 March 1989.
-She is the daughter of Jean Maureen (née Hatton) and George Alfred Walker.
-Lord Milford Haven and Walker had two children:
+Patricia Mountbatten was born in the St George Hanover Square parish of London in 1924, exactly two years after her father proposed to her mother in India.
+Her middle names were Edwina, after her mother, and Victoria, after her grandmother the eldest daughter of princess alice of United Kingdom
 
 
-The couple divorced on 27 February 1996.
-In June 2016, Walker married Michael Spencer, Lord Spencer of Alresford.
-Lord Milford Haven subsequently married Clare Husted Steel at Coatue Point in Nantucket, Massachusetts, on 20 August 1997.
-Career
+Marriage and children
 
-In 2000, Lord Milford Haven founded uSwitch, a website to help consumers compare and change suppliers of various services.
-Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reached the final in 2006.
+On 26 October 1946, she married John Knatchbull, 7th Baron Brabourne (9 November 1924 – 23 September 2005), at the time an aide to her father in the Far East.
+They had met after Patricia, having served in the Women's Royal Naval Service, was commissioned in 1945 as a third officer and was serving in the Supreme Allied Headquarters, South East Asia.
+The wedding took place at Romsey Abbey in the presence of members of the royal family.
+Her bridesmaids were Princess Elizabeth, Princess Margaret, Lady Pamela Mountbatten (the bride's younger sister), and Princess Alexandra, daughter of the Duke and Duchess of Kent.
+As Lady Brabourne during her father's lifetime, her immediate family became closely involved in the consideration of a future consort for her first cousin once removed, Charles, Prince of Wales.
+In early 1974, Lord Mountbatten began corresponding with the eldest son of Queen Elizabeth II and Prince Philip about a potential marriage to Lady Brabourne's daughter, Amanda.
+Charles wrote to Lady Brabourne (who was also his godmother), about his interest in her daughter, to which she replied approvingly, though suggesting that a courtship was premature.
+Amanda Knatchbull declined the marriage proposal of Charles in 1980, following the assassination of her maternal grandfather.
+Activities
+
+Patricia was educated in Malta, England, and at the Hewitt School in New York City.
+In 1973 she was appointed Deputy Lieutenant for the County of Kent; she was also a serving magistrate and was involved with numerous service organisations including SOS Children's Villages UK, of which she was a Patron; the Order of St John, of which she was a Dame; and the Countess Mountbatten's Own Legion of Frontiersmen of the Commonwealth, of which she was a Patron.
+On 15 June 1974, she succeeded her distant cousin (first cousin twice removed)
+Lady Patricia Ramsay, formerly HRH Princess Patricia of Connaught, as Colonel-in-Chief of Princess Patricia's Canadian Light Infantry, for whom the regiment was named when Princess Patricia's father, the Duke of Connaught, was Governor General of Canada during the First World War.
+Despite her succeeding to an earldom in her own right as Countess Mountbatten of Burma on the death of her father in 1979, she preferred that the officers and men of her regiment address her as Lady Patricia.
+On 28 August 2007, the Governor General of Canada presented her with the Canadian Meritorious Service Cross for her services as Colonel-in-Chief of Princess Patricia's Light Infantry.
+Patricia was in the boat which was blown up by the IRA off the shores of Mullaghmore, County Sligo, in August 1979, killing her 14-year-old son Nicholas; her father; her mother-in-law, the Dowager Baroness Brabourne; and 15-year-old Paul Maxwell, a boat-boy from County Fermanagh.
+Following the incident the Countess became Patron and, later, President of The Compassionate Friends, a self-help charitable organisation of bereaved parents in the UK.
+In June 2012, at the time of Queen Elizabeth II's first visit to the Republic of Ireland, Countess Mountbatten said the Queen had her full support for meeting Martin McGuinness, who had been a high-ranking member of the IRA.
+Death and funeral
+
+Countess Mountbatten died at her home in Mersham, Kent, on 13 June 2017, aged 93.
+Her funeral service took place on 27 June at St Paul's Church, Knightsbridge, and was attended by the Queen Elizabeth II, Prince Philip, Duke of Edinburgh, and other senior members of the royal family.
+Her casket was borne by a party of pall bearers from Princess Patricia's Canadian Light Infantry, who were in London on public duties.
+She was buried in the Knatchbull family plot in Mersham churchyard.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +130,9 @@ Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reac
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +147,23 @@ Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reac
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,147 +455,159 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (478277c0-08ba-45bb-9120-c220b5f458b2)
- Call ID: 478277c0-08ba-45bb-9120-c220b5f458b2
+  AssignClass (13796fb3-99ff-44d9-948a-6e5b9f43bb3f)
+ Call ID: 13796fb3-99ff-44d9-948a-6e5b9f43bb3f
   Args:
-    source: George_Ivar_Louis_Mountbatten
-    type: :Man
-  AssignClass (a8a5f718-bd58-421b-875e-1926a3b067c4)
- Call ID: a8a5f718-bd58-421b-875e-1926a3b067c4
+    type: :Woman
+    source: Patricia_Mountbatten
+  AssignClass (3e72dbb7-78eb-4025-9f8a-98713d67a58f)
+ Call ID: 3e72dbb7-78eb-4025-9f8a-98713d67a58f
   Args:
+    source: Patricia_Mountbatten
     type: :Person
-    source: George_Ivar_Louis_Mountbatten
-  AddLiteral (bae8feb8-a9ae-4a6f-acc5-269aa588e761)
- Call ID: bae8feb8-a9ae-4a6f-acc5-269aa588e761
+  AddLiteral (6f1eaa84-d1ef-4139-a08e-7373248e271c)
+ Call ID: 6f1eaa84-d1ef-4139-a08e-7373248e271c
   Args:
-    source: George_Ivar_Louis_Mountbatten
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1961
-  AssignClass (cecd2923-2b23-4cdf-956c-e515170d1c63)
- Call ID: cecd2923-2b23-4cdf-956c-e515170d1c63
-  Args:
-    type: :Woman
-    source: Janet_Mercedes_Bryce
-  AssignClass (e92e9cdc-0032-4712-a9a6-d08fcf827963)
- Call ID: e92e9cdc-0032-4712-a9a6-d08fcf827963
-  Args:
-    type: :Person
-    source: Janet_Mercedes_Bryce
-  AddTriple (48b85d73-08c1-432b-b88b-4ede362ed666)
- Call ID: 48b85d73-08c1-432b-b88b-4ede362ed666
-  Args:
-    source: George_Ivar_Louis_Mountbatten
-    target: Janet_Mercedes_Bryce
-    relation: :hasMother
-  AssignClass (131d8f92-24d4-4fb4-ade5-91761446631a)
- Call ID: 131d8f92-24d4-4fb4-ade5-91761446631a
-  Args:
-    type: :Man
-    source: 3rd_Marquess_of_Milford_Haven
-  AssignClass (5a85262f-3174-459a-b942-411330287ab8)
- Call ID: 5a85262f-3174-459a-b942-411330287ab8
-  Args:
-    type: :Person
-    source: 3rd_Marquess_of_Milford_Haven
-  AddTriple (5ec5791b-af93-48ba-9166-fa0aaa2b0d5a)
- Call ID: 5ec5791b-af93-48ba-9166-fa0aaa2b0d5a
-  Args:
-    relation: :hasFather
-    target: 3rd_Marquess_of_Milford_Haven
-    source: George_Ivar_Louis_Mountbatten
-  AssignClass (7c86f012-d7d8-41b9-831f-e0419f7879e9)
- Call ID: 7c86f012-d7d8-41b9-831f-e0419f7879e9
-  Args:
-    source: Lord_Ivar_Mountbatten
-    type: :Man
-  AssignClass (e62dba33-4fed-4d6d-a657-3d2dc9685314)
- Call ID: e62dba33-4fed-4d6d-a657-3d2dc9685314
-  Args:
-    source: Lord_Ivar_Mountbatten
-    type: :Person
-  AddTriple (28168182-b764-4ae3-8d4c-2e4c3fc5fed3)
- Call ID: 28168182-b764-4ae3-8d4c-2e4c3fc5fed3
-  Args:
-    source: George_Ivar_Louis_Mountbatten
-    relation: :hasBrother
-    target: Lord_Ivar_Mountbatten
-  AssignClass (fef17cca-2e14-495d-9e56-c910369d9987)
- Call ID: fef17cca-2e14-495d-9e56-c910369d9987
-  Args:
-    source: Sarah_Georgina_Walker
-    type: :Woman
-  AssignClass (d893145c-fd59-400e-876c-46543e64fa64)
- Call ID: d893145c-fd59-400e-876c-46543e64fa64
-  Args:
-    type: :Person
-    source: Sarah_Georgina_Walker
-  AddLiteral (7a238953-139e-41db-aa17-27434c1aab07)
- Call ID: 7a238953-139e-41db-aa17-27434c1aab07
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1989
-    source: George_Ivar_Louis_Mountbatten
     literal_type: xsd:integer
-  AssignClass (075bbac9-7001-4fb9-9629-876e4d7026a6)
- Call ID: 075bbac9-7001-4fb9-9629-876e4d7026a6
+    literal_value: 1924
+    source: Patricia_Mountbatten
+  AddLiteral (f714d55e-829b-4a75-9589-9c83185ec285)
+ Call ID: f714d55e-829b-4a75-9589-9c83185ec285
   Args:
-    type: :Woman
-    source: Jean_Maureen_Hatton
-  AssignClass (0fa28232-209f-46f0-b02c-7e60029fe3d7)
- Call ID: 0fa28232-209f-46f0-b02c-7e60029fe3d7
-  Args:
-    source: Jean_Maureen_Hatton
-    type: :Person
-  AssignClass (b6ca56ff-0ab5-44c6-a812-867afa52c7a9)
- Call ID: b6ca56ff-0ab5-44c6-a812-867afa52c7a9
+    literal_type: xsd:integer
+    literal_value: 2017
+    source: Patricia_Mountbatten
+    relation: :hasDeathYear
+  AssignClass (70d2f5f4-fac9-42f7-bc4e-c062eeec4f85)
+ Call ID: 70d2f5f4-fac9-42f7-bc4e-c062eeec4f85
   Args:
     type: :Man
-    source: George_Alfred_Walker
-  AssignClass (eacfc41c-a028-4bcf-9ae1-cec7bfd89670)
- Call ID: eacfc41c-a028-4bcf-9ae1-cec7bfd89670
+    source: John_Knatchbull
+  AssignClass (d81b0d40-f5c4-46fc-b30b-539ed0c33e8f)
+ Call ID: d81b0d40-f5c4-46fc-b30b-539ed0c33e8f
   Args:
-    source: George_Alfred_Walker
+    source: John_Knatchbull
     type: :Person
-  AddTriple (3cd9c486-8bac-4627-91bf-c4beda2ebaf5)
- Call ID: 3cd9c486-8bac-4627-91bf-c4beda2ebaf5
+  AddLiteral (613fc9ab-a0d1-49b7-a55c-af985b597ceb)
+ Call ID: 613fc9ab-a0d1-49b7-a55c-af985b597ceb
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1924
+    source: John_Knatchbull
+    relation: :hasBirthYear
+  AddLiteral (54aa3fb8-832d-4cca-a440-075401b3f617)
+ Call ID: 54aa3fb8-832d-4cca-a440-075401b3f617
+  Args:
+    literal_type: xsd:integer
+    source: John_Knatchbull
+    literal_value: 2005
+    relation: :hasDeathYear
+  AddLiteral (08e32f07-5d13-4948-89c4-051f53a3a603)
+ Call ID: 08e32f07-5d13-4948-89c4-051f53a3a603
+  Args:
+    literal_type: xsd:integer
+    source: Patricia_Mountbatten
+    literal_value: 1946
+    relation: :hasMarriageYear
+  AddTriple (7257efed-0a05-4fd5-91ce-78e930bcc261)
+ Call ID: 7257efed-0a05-4fd5-91ce-78e930bcc261
+  Args:
+    target: John_Knatchbull
+    source: Patricia_Mountbatten
+    relation: :hasRelation
+  AssignClass (f98a5b38-a206-446f-85a4-9549a3c323d9)
+ Call ID: f98a5b38-a206-446f-85a4-9549a3c323d9
+  Args:
+    source: Earl_Mountbatten_of_Burma
+    type: :Man
+  AssignClass (488f7643-f34e-4674-9a02-fdfb741dd33f)
+ Call ID: 488f7643-f34e-4674-9a02-fdfb741dd33f
+  Args:
+    type: :Person
+    source: Earl_Mountbatten_of_Burma
+  AssignClass (0c7fb9a3-dbff-4ed0-a178-b22a5ad5b7a1)
+ Call ID: 0c7fb9a3-dbff-4ed0-a178-b22a5ad5b7a1
+  Args:
+    source: Edwina_Ashley
+    type: :Woman
+  AssignClass (bccbb03a-c534-42de-889e-6faf47b6272a)
+ Call ID: bccbb03a-c534-42de-889e-6faf47b6272a
+  Args:
+    type: :Person
+    source: Edwina_Ashley
+  AddTriple (68b655cf-f744-43b0-bdb3-8c8d4ebe499b)
+ Call ID: 68b655cf-f744-43b0-bdb3-8c8d4ebe499b
+  Args:
+    target: Earl_Mountbatten_of_Burma
+    source: Patricia_Mountbatten
+    relation: :hasFather
+  AddTriple (37bdff94-6e7a-4af2-bbae-b5d7cf2808cc)
+ Call ID: 37bdff94-6e7a-4af2-bbae-b5d7cf2808cc
   Args:
     relation: :hasMother
-    target: Jean_Maureen_Hatton
-    source: Sarah_Georgina_Walker
-  AddTriple (c79fbf83-ccca-47d5-a37d-ec92b832b5ea)
- Call ID: c79fbf83-ccca-47d5-a37d-ec92b832b5ea
+    target: Edwina_Ashley
+    source: Patricia_Mountbatten
+  AssignClass (9bb353b9-415b-4655-937d-d974ef25469e)
+ Call ID: 9bb353b9-415b-4655-937d-d974ef25469e
   Args:
-    target: George_Alfred_Walker
-    relation: :hasFather
-    source: Sarah_Georgina_Walker
-  AssignClass (b9a86bb1-a1c5-455a-bee7-b6011c110db7)
- Call ID: b9a86bb1-a1c5-455a-bee7-b6011c110db7
-  Args:
-    source: Clare_Husted_Steel
+    source: Lady_Pamela_Hicks
     type: :Woman
-  AssignClass (414f5f76-4a29-4bba-b04c-7656caff4675)
- Call ID: 414f5f76-4a29-4bba-b04c-7656caff4675
+  AssignClass (c300fb6b-0e71-49dd-af14-1e4976d3f43b)
+ Call ID: c300fb6b-0e71-49dd-af14-1e4976d3f43b
   Args:
-    source: Clare_Husted_Steel
+    source: Lady_Pamela_Hicks
     type: :Person
-  AddLiteral (f1ebf434-6e01-474d-81a2-218adc09eea9)
- Call ID: f1ebf434-6e01-474d-81a2-218adc09eea9
+  AddTriple (89b8ef8f-6277-4f3a-bc88-af7a596ee4c8)
+ Call ID: 89b8ef8f-6277-4f3a-bc88-af7a596ee4c8
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1997
-    source: George_Ivar_Louis_Mountbatten
-    literal_type: xsd:integer
-  AssignClass (fff8a72c-569a-4101-82f4-4594bb49593f)
- Call ID: fff8a72c-569a-4101-82f4-4594bb49593f
+    target: Lady_Pamela_Hicks
+    source: Patricia_Mountbatten
+    relation: :isSisterOf
+  AssignClass (1cd26ecd-ea18-41f7-b9d8-dcaa617639dd)
+ Call ID: 1cd26ecd-ea18-41f7-b9d8-dcaa617639dd
+  Args:
+    type: :Woman
+    source: Amanda_Knatchbull
+  AssignClass (5d164622-f1f5-459b-90cd-ecdda654900b)
+ Call ID: 5d164622-f1f5-459b-90cd-ecdda654900b
+  Args:
+    source: Amanda_Knatchbull
+    type: :Person
+  AddTriple (1df3fa4a-e1a5-4c36-b281-5f4918467b00)
+ Call ID: 1df3fa4a-e1a5-4c36-b281-5f4918467b00
+  Args:
+    relation: :isDaughterOf
+    target: Patricia_Mountbatten
+    source: Amanda_Knatchbull
+  AddTriple (6cbf2178-1cd1-4a83-a636-d0f900f7d124)
+ Call ID: 6cbf2178-1cd1-4a83-a636-d0f900f7d124
+  Args:
+    target: John_Knatchbull
+    source: Amanda_Knatchbull
+    relation: :isDaughterOf
+  AssignClass (19558ed4-c1be-4dd5-ae7a-74c75872670e)
+ Call ID: 19558ed4-c1be-4dd5-ae7a-74c75872670e
   Args:
     type: :Man
-    source: Michael_Spencer
-  AssignClass (8d3d7f98-cd87-4008-ac31-3e81ea6f17fe)
- Call ID: 8d3d7f98-cd87-4008-ac31-3e81ea6f17fe
+    source: Nicholas_Knatchbull
+  AssignClass (368f3bcb-5c51-4f98-bcbf-4138e35d3d04)
+ Call ID: 368f3bcb-5c51-4f98-bcbf-4138e35d3d04
   Args:
-    source: Michael_Spencer
+    source: Nicholas_Knatchbull
     type: :Person
-  Finish (b9d06af8-f158-446a-b41c-eae9a3dc6ba7)
- Call ID: b9d06af8-f158-446a-b41c-eae9a3dc6ba7
+  AddTriple (de6248d3-75f2-4cfc-b969-d09ed2bd5e2d)
+ Call ID: de6248d3-75f2-4cfc-b969-d09ed2bd5e2d
+  Args:
+    relation: :isSonOf
+    target: Patricia_Mountbatten
+    source: Nicholas_Knatchbull
+  AddTriple (05f27823-fb5f-4c13-bc2c-40dde33e1a12)
+ Call ID: 05f27823-fb5f-4c13-bc2c-40dde33e1a12
+  Args:
+    target: John_Knatchbull
+    source: Nicholas_Knatchbull
+    relation: :isSonOf
+  Finish (88983b89-445b-41dc-a98f-665327fd5403)
+ Call ID: 88983b89-445b-41dc-a98f-665327fd5403
   Args:

@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Amanda_Ellingworth a :Person,
+        :Woman ;
+    rdfs:label "Amanda Ellingworth"^^xsd:string ;
+    data:posIndicesFull "0:41"^^xsd:string,
+        "101:118"^^xsd:string,
+        "436:471"^^xsd:string,
+        "5:41"^^xsd:string ;
+    data:posIndicesPart "1101:1107"^^xsd:string,
+        "1167:1178"^^xsd:string,
+        "1234:1245"^^xsd:string,
+        "1543:1549"^^xsd:string,
+        "1632:1638"^^xsd:string,
+        "1845:1851"^^xsd:string,
+        "743:754"^^xsd:string,
+        "940:951"^^xsd:string ;
+    data:wdtLink wdt:Q6469925 ;
+    :alsoKnownAs "Amanda Knatchbull"^^xsd:string,
+        "Amanda Knatchbull Ellingworth"^^xsd:string,
+        "Amanda Patricia Victoria Ellingworth"^^xsd:string,
+        "Amanda Patricia Victoria Knatchbull"^^xsd:string,
+        "Lady Amanda Knatchbull"^^xsd:string,
+        "Lady Amanda Patricia Victoria Ellingworth"^^xsd:string,
+        "Lady Amanda Patricia Victoria Knatchbull"^^xsd:string ;
+    :hasRelation data:Amanda_Ellingworth ;
+    :hasSex data:female ;
+    :hasSister data:Amanda_Ellingworth ;
+    :isBloodrelationOf data:Amanda_Ellingworth ;
+    :isSiblingOf data:Amanda_Ellingworth ;
+    :isSisterOf data:Amanda_Ellingworth .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Person,
+        :Woman ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "576:596"^^xsd:string ;
+    data:posIndicesPart "1453:1464"^^xsd:string,
+        "1590:1601"^^xsd:string,
+        "1739:1750"^^xsd:string,
+        "612:623"^^xsd:string,
+        "627:632"^^xsd:string ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten"^^xsd:string,
+        "Dame Edwina Cynthia Annette Mountbatten"^^xsd:string,
+        "Edwina Cynthia Annette Ashley"^^xsd:string,
+        "Edwina Cynthia Annette Mountbatten"^^xsd:string,
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma"^^xsd:string,
+        "Lady Mountbatten of Burma"^^xsd:string ;
+    :hasRelation data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isBloodrelationOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isSisterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "1260:1276"^^xsd:string,
+        "225:242"^^xsd:string,
+        "225:273"^^xsd:string ;
+    data:posIndicesPart "1453:1464"^^xsd:string,
+        "1590:1601"^^xsd:string,
+        "1739:1750"^^xsd:string,
+        "600:605"^^xsd:string,
+        "607:611"^^xsd:string,
+        "612:623"^^xsd:string,
+        "627:632"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasRelation data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isBrotherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma .
+

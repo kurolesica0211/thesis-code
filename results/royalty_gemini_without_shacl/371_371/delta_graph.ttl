@@ -2,23 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Henry_George_Lascelles a :Man ;
-    :hasBirthYear 1950 ;
-    :hasFather data:7th_Earl_of_Harewood ;
-    :hasMarriageYear 1979,
-        1990 ;
-    :hasMother data:Marion_Stein ;
-    :hasRelation data:Diane_Howse,
-        data:Margaret_Rosalind_Messenger .
+data:Adolf_Friedrich a :Man,
+        :Person .
 
-data:Edgar_Frank_Messenger a :Man ;
-    :isFatherOf data:Margaret_Rosalind_Messenger .
+data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman .
 
-data:7th_Earl_of_Harewood a :Man .
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman .
 
-data:Diane_Howse a :Woman .
+data:John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1857 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isBrotherOf data:Frederick_Francis_III,
+        data:Paul_Frederick .
 
-data:Marion_Stein a :Woman .
+data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman .
 
-data:Margaret_Rosalind_Messenger a :Woman .
+data:Frederick_Francis_II a :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Man,
+        :Person .
+
+data:Paul_Frederick a :Man,
+        :Person .
 

@@ -85,63 +85,74 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duke of CalabriaThe Duchess of Calabria
+Prince Luís of Orléans-Braganza (26 January 1878 – 26 March 1920), nicknamed "the Perfect Prince", was the second son of Isabel, Princess Imperial of Brazil and Prince Gaston, Count of Eu, and patriarch of the Vassouras branch of the House of Orléans-Braganza.
+In 1908, the year he married, his older brother Pedro renounced his claim to succeed his mother in her claim to the imperial throne, leaving Dom Luís as her heir.
+Childhood
+
+Luís was born at Petrópolis on 26 January 1878, to Prince Gaston d'Orléans, Count of Eu, and Isabel, Princess Imperial of Brazil.
+His name in full was Luís Maria Filipe Pedro de Alcântara Gastão Miguel Rafael Gonzaga.
+While on a trip to Europe with his family, an earthquake occurred on 23 February 1887, and while his older brother Pedro appeared very nervous and cried, Luís simply stood calm and showed no emotions.
+Although Pedro was gentle and likeable, he did not like to study and was often clumsy, while Luís had a strong will, was active and apparently intelligent.
+Gaston affirmed in another letter, written in March 1890, that "Baby Pedro  always notable for laziness and ineptness," while "Luís does the identical course work all by himself with admirable distinction and capacity."
+Luís was always impelled to action thanks to his restless spirit that would take him in his childhood to sports and as an adult to politics.
+When the coup that replaced the monarchy with the republic occurred on 15 November 1889, Isabel preferred to send her children to Petrópolis, where later Luís would remember that "locked up in the palace, they had left us during two long days in the most complete ignorance of what was happening out there" until they were sent back to their parents and then left for forced exile.
+In 1890, fifteen-year-old Pedro, thirteen-year-old Luís, and their younger brother Antônio (nicknamed "Totó"), moved along with their parents to the outskirts of Versailles.
+Luís's older brother, Pedro, reached the age of majority in 1893, but he had no capacity or desire to assume the monarchist cause.
+Luís and his brother Antônio followed their older brother at the same military school.
+Meanwhile, Luís was ambitious and active, eager to make his mark on the world.
+Luís was seen by his parents as the only member of the Imperial family capable of helping the monarchist movement in Brazil.
+However, Luís was prevented from disembarking and was not allowed to set foot on his native land by the republican government.
+Luís became engaged to his cousin Maria Pia of Bourbon-Two Sicilies, a granddaughter of a brother of Luís's maternal grandmother, Teresa Cristina.
+I Prince Pedro de Alcântara Luís Filipe Maria Gastão Miguel Gabriel Rafael Gonzaga of Orléans and Braganza, having maturely reflected, have resolved to renounce the right that, by the Constitution of the Empire of Brazil, promulgated on March 25, 1824, accords to me the Crown of that nation.
+Cannes October 30, 1908 signed: Pedro de Alcântara of Orléans-Braganza
 
 
-Prince Pedro of Bourbon-Two Sicilies, Duke of Calabria, Grandee of Spain (Spanish: Pedro Juan María Alejo Saturnino de Todos los Santos; born 16 October 1968), is the only son of Infante Carlos, Duke of Calabria, and Princess Anne of Orléans.
-Claim
+This renunciation was followed by a letter from Isabel to royalists in Brazil:
 
-He is the only son of Infante Carlos, Duke of Calabria (1938–2015), and his wife, Princess Anne of Orléans.
-The other claimant is Prince Carlo, Duke of Castro.
-He is also a grandee of Spain, as the son of an infante of Spain.
-On 14 December 1900, Prince Carlos, next oldest brother to the childless Prince Ferdinand, head of the House of Bourbon-Two Sicilies and immediate heir of their father, claimant to the former throne of the Two Sicilies, signed a private agreement purporting to renounce the "future succession" to the former crown before his marriage to María de las Mercedes, Princess of Asturias, heiress presumptive to the throne of Spain.
-This document, known as the Act of Cannes, was signed in purported obedience to the 1759 Pragmatic Sanction signed by Charles III of Spain where it was established that the thrones of Spain and Naples should never be united in the person of the same monarch, separating them forever to preserve the European balance of power.
-The Act of Cannes states:
+November 9, 1908,  Eu
 
+Most Excellent Gentlemen Members of the Monarchist Directory,
 
-Before Us, Don Alfonso de Borbón, Count of Caserta... Head of the Royal House and Dynasty of the Two Sicilies...
-His Royal Highness Prince Don Carlos, our beloved Son, appears and declares that, preparing to marry HRH Infanta María de las Mercedes, Princess of Asturias, and assuming by such marriage the nationality and quality of Spanish Prince, undertakes to renounce by this Act and solemnly renounces, for himself and for his heirs and successors, all the right and reason to the eventual succession to the Crown of the Two Sicilies and to all the assets of the Royal House that are in Italy and elsewhere, and this according to our Laws, constitutions and Family customs, in execution of the Pragmatic Sanction of King Charles III, our Augustus ancestor, of October 6, 1759, the prescriptions of which he freely and spontaneously declares to subscribe and obey.
-He also declares, in particular, to renounce for himself, his heirs and successors to the assets and values existing in Italy, Vienna and Munich and destined by His Majesty King Francis II (may God have welcomed his soul), to the foundation of a majorat for the Head of the Dynasty and of the Family of the Two Sicilies and for the constitution of an endowment fund in favor of the Royal Princesses and granddaughters of our August Father King Ferdinand (may God have welcomed his soul), of marriageable age; but preserving his rights to the part of the assets that were bequeathed to him by his late uncle King Francis II, in the event that the Italian Government, which improperly retains them, makes the due restitution and the same everything that may arrive to him by other testamentary legacies.
-— Cannes, 14 December 1900
+With all my heart I thank you for the congratulations upon the marriages of my dear children Pedro and Luís.
+Luís' took place in Cannes on day 4 with the brilliance that is desired for so solemn an act in the life of my successor to the Throne of Brazil.
+Before the marriage of Luís he signed his resignation to the crown of Brazil, and here I send it to you, while keeping here an identical copy.
+Luís will engage actively in everything with respect to the monarchy and any good for our land.
+I give you all my friendship and confidence,
 
-Supporters of the other claimant to the headship of the House of Bourbon-Two Sicilies, sometimes referred to as the Castrist faction, argue that because Prince Carlos signed this agreement, he relinquished all of his rights and those of his descendants to both the headship of the family and the Sacred Military Constantinian Order of Saint George, and so the rights currently fall on Prince Carlo, Duke of Castro.
-However, supporters of Pedro, also known as the legitimists, argue that the Act of Cannes was subject to a condition that never arose and its terms would have only applied if the wife of Prince Carlos had inherited the throne of Spain, and he had become king of the Two Sicilies, which never happened and was furthermore highly unlikely at the time the document was created.
-In due course, Prince Carlos inherited his share of properties of the royal family in Italy, despite the purported renunciation, with no objection by his brothers and sisters.
-Marriage and issue
-
-Pedro married Sofía Landaluce y Melgarejo (born 23
-November 1973 in Madrid), daughter of José Manuel Landaluce y Domínguez and his wife María de las Nieves Blanca Melgarejo y González (granddaughter of the Dukes of San Fernando de Quiroga), on 30 March 2001 at Real Club de la Puerta de Hierro in Madrid.
-Pedro and Sofía have seven children:
+The marriage of Luís and Maria Pia was celebrated on 4 November at Cannes, and that of Pedro and Elizabeth ten days later at Versailles.
+From the union of Luís and Maria Pia three children were born: Pedro Henrique, who became the direct successor to Princess Isabel and Head of the Imperial House of Brazil after her death in 1921; Luís Gastão, and Pia Maria.
+Isabel did not take long to reveal her opinion about her grandchildren and wrote in a letter in 1914: "I am sending enclosed a photograph of myself with my grandchildren by Luís.
+"
 
 
-Honours
+Political activity
 
-Dynastic
+With the renunciation of the throne by his brother, Luís could finally collaborate effectively with the Brazilian monarchic movement, assuming clearly his position as heir to the throne (after his mother) and trying to assume the leadership of the restoration campaign.
+Luís defended ideas that were well ahead of his time and the necessity to guarantee worthy conditions of subsistence for the Brazilian workers would only be observed thirty years later during the dictatorship of Getúlio Vargas.
+The progressive vision of Luís made him a target for accusations of being a "socialist" and a "radical" when, in reality, his intent was to hinder the work force from adhering to socialism, communism, or even anarchism.
+The start of World War I in August 1914 and the invasion of France by Germany made it possible for Luís to once more prove his idealism and activism as, in his own words, he was a "soldier heart and soul".
+Luís joined the army while Antônio served as an air force pilot.
+While fighting in the trenches of Flanders in 1915 Luís contracted an aggressive type of bone rheumatism that left him very weak and incapable of walking.
+As a consequence of his actions in the conflict and for his bravery, Luís received several decorations: Military medal of the Yser, from King Albert I of Belgium; Legion of Honour, in the degree of knight, and the Cross of War from the French government; the British War Medal, the Victory Medal and Star from the Great Britain.
+As his mother lived until 1921, her successor in pretense to the throne of Brazil was her grandson, Pedro Henrique, Luís's son.
+"He died, unexpectedly, in Cannes, D. Luiz de Orléans e Bragança, died in exile where he was purging the crime of being Pedro II grandson.
+Their presence would shame our phrygian cap..."
 
+— Revista do Brasil
 
+Legacy
 
-
-National
-
-Other activities
-
-Arms
-
-Ancestors
-
-Notes
-
-References
-
-Bibliography
-
-External links
+Prince Luís is largely unknown to Brazilians today.
+The authors dedicated the work to His Imperial Highness the Sire Dom Luiz de Orléans-Braganza.
+The Municipality of Pimenta Bueno, in the State of Rondônia (Brazil), honored Dom Luís and the entire Brazilian imperial family in 2010 by renaming one of its streets "Príncipe Dom Luiz de Órleans e Bragança".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -157,39 +168,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -204,6 +185,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -221,6 +219,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,29 +301,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -319,6 +324,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -331,6 +344,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -339,17 +354,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -377,6 +394,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -392,134 +493,254 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e88d5387-a8e8-4ed6-ab33-4eadfbfa2248)
- Call ID: e88d5387-a8e8-4ed6-ab33-4eadfbfa2248
+  AssignClass (6b13ed9d-6672-4078-b891-68222fc6d033)
+ Call ID: 6b13ed9d-6672-4078-b891-68222fc6d033
   Args:
     type: :Man
-    source: Pedro_of_Bourbon-Two_Sicilies
-  AssignClass (99ede237-5108-4beb-b900-e38fa1639d86)
- Call ID: 99ede237-5108-4beb-b900-e38fa1639d86
+    source: Luís_of_Orléans-Braganza
+  AssignClass (4aaf7c1a-b74f-4635-b353-5190475f3657)
+ Call ID: 4aaf7c1a-b74f-4635-b353-5190475f3657
   Args:
-    source: Pedro_of_Bourbon-Two_Sicilies
+    source: Luís_of_Orléans-Braganza
     type: :Person
-  AddLiteral (0b165f0d-d4b6-4ed9-adc2-5e0f26d0b16f)
- Call ID: 0b165f0d-d4b6-4ed9-adc2-5e0f26d0b16f
+  AddLiteral (fd424103-43cb-4d32-9ed7-bfcf7b7e1f16)
+ Call ID: fd424103-43cb-4d32-9ed7-bfcf7b7e1f16
   Args:
-    literal_value: 1968
+    literal_type: xsd:integer
+    literal_value: 1878
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Pedro_of_Bourbon-Two_Sicilies
-  AssignClass (6afcae07-1db1-4723-8312-e95c0aafdcca)
- Call ID: 6afcae07-1db1-4723-8312-e95c0aafdcca
+    source: Luís_of_Orléans-Braganza
+  AddLiteral (aff1212a-f655-4abc-b590-2cade0b60ca6)
+ Call ID: aff1212a-f655-4abc-b590-2cade0b60ca6
   Args:
-    type: :Man
-    source: Carlos_Duke_of_Calabria
-  AssignClass (dcb8f2fc-04f4-4ee2-9c58-d255259ee51c)
- Call ID: dcb8f2fc-04f4-4ee2-9c58-d255259ee51c
-  Args:
-    source: Carlos_Duke_of_Calabria
-    type: :Person
-  AddLiteral (12e55cae-5579-4294-9793-f08e0ed0f2a7)
- Call ID: 12e55cae-5579-4294-9793-f08e0ed0f2a7
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Carlos_Duke_of_Calabria
-    literal_value: 1938
-  AddLiteral (c9b0a82d-a112-4734-9a88-5ea2362d3989)
- Call ID: c9b0a82d-a112-4734-9a88-5ea2362d3989
-  Args:
-    literal_type: xsd:integer
-    source: Carlos_Duke_of_Calabria
+    source: Luís_of_Orléans-Braganza
+    literal_value: 1920
     relation: :hasDeathYear
-    literal_value: 2015
-  AssignClass (dec2c89c-1189-41be-b057-a51a878cc950)
- Call ID: dec2c89c-1189-41be-b057-a51a878cc950
-  Args:
-    source: Anne_of_Orléans
-    type: :Woman
-  AssignClass (84e43bf3-bfb9-4680-b282-2a8059aee06b)
- Call ID: 84e43bf3-bfb9-4680-b282-2a8059aee06b
-  Args:
-    type: :Person
-    source: Anne_of_Orléans
-  AddTriple (f9f76178-38d7-4780-b7d7-ab859d0ea379)
- Call ID: f9f76178-38d7-4780-b7d7-ab859d0ea379
-  Args:
-    target: Carlos_Duke_of_Calabria
-    relation: :hasFather
-    source: Pedro_of_Bourbon-Two_Sicilies
-  AddTriple (2bd7285a-2173-47b9-b85a-08ac6eb400e9)
- Call ID: 2bd7285a-2173-47b9-b85a-08ac6eb400e9
-  Args:
-    target: Anne_of_Orléans
-    source: Pedro_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-  AssignClass (a0c3124b-aa10-40c9-9960-9dcde9050339)
- Call ID: a0c3124b-aa10-40c9-9960-9dcde9050339
-  Args:
-    source: Sofia_Landaluce_y_Melgarejo
-    type: :Woman
-  AssignClass (5c40b01d-6aa9-490c-8b33-c641bb225b09)
- Call ID: 5c40b01d-6aa9-490c-8b33-c641bb225b09
-  Args:
-    source: Sofia_Landaluce_y_Melgarejo
-    type: :Person
-  AddLiteral (6f4ad134-24ab-40fa-9a45-3cbdd712b7c5)
- Call ID: 6f4ad134-24ab-40fa-9a45-3cbdd712b7c5
-  Args:
-    literal_value: 1973
-    source: Sofia_Landaluce_y_Melgarejo
     literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (458e3288-4751-4e79-8566-59ad12537a9c)
- Call ID: 458e3288-4751-4e79-8566-59ad12537a9c
+  AssignClass (813959f2-7f14-433c-97c4-62d7b52fe5ee)
+ Call ID: 813959f2-7f14-433c-97c4-62d7b52fe5ee
   Args:
-    literal_value: 2001
-    relation: :hasMarriageYear
-    source: Pedro_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
-  AddTriple (8530c555-1a09-41b0-8171-510861a360e9)
- Call ID: 8530c555-1a09-41b0-8171-510861a360e9
+    source: Isabel_Princess_Imperial_of_Brazil
+    type: :Woman
+  AssignClass (7e402c16-c1b2-4989-a047-15898d52e0ee)
+ Call ID: 7e402c16-c1b2-4989-a047-15898d52e0ee
   Args:
-    target: Sofia_Landaluce_y_Melgarejo
-    source: Pedro_of_Bourbon-Two_Sicilies
-    relation: :hasRelation
-  AssignClass (d45528b5-a523-45c9-9941-54ae7851a23e)
- Call ID: d45528b5-a523-45c9-9941-54ae7851a23e
+    source: Isabel_Princess_Imperial_of_Brazil
+    type: :Person
+  AssignClass (96c2cc3f-f281-409a-8f35-379e977080f2)
+ Call ID: 96c2cc3f-f281-409a-8f35-379e977080f2
   Args:
     type: :Man
-    source: Jose_Manuel_Landaluce_y_Dominguez
-  AssignClass (cb6fe6f2-a574-4bff-a124-6956127df0a8)
- Call ID: cb6fe6f2-a574-4bff-a124-6956127df0a8
+    source: Gaston_Count_of_Eu
+  AssignClass (8a9cccd4-32f3-43b5-9ebf-9a2a0c15ffef)
+ Call ID: 8a9cccd4-32f3-43b5-9ebf-9a2a0c15ffef
   Args:
+    source: Gaston_Count_of_Eu
     type: :Person
-    source: Jose_Manuel_Landaluce_y_Dominguez
-  AssignClass (1054eac9-5181-4428-a078-3bc46e7b882d)
- Call ID: 1054eac9-5181-4428-a078-3bc46e7b882d
+  AddTriple (b9997925-0496-4b8f-8a50-1f12d7b7ff9d)
+ Call ID: b9997925-0496-4b8f-8a50-1f12d7b7ff9d
   Args:
-    source: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-    type: :Woman
-  AssignClass (80a596ea-fdcd-4c68-8e7c-2deb77e91511)
- Call ID: 80a596ea-fdcd-4c68-8e7c-2deb77e91511
-  Args:
-    type: :Person
-    source: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-  AddTriple (1c8ce227-b7a6-4bed-b04b-b8dfa9b1894b)
- Call ID: 1c8ce227-b7a6-4bed-b04b-b8dfa9b1894b
-  Args:
-    target: Jose_Manuel_Landaluce_y_Dominguez
-    source: Sofia_Landaluce_y_Melgarejo
+    source: Luís_of_Orléans-Braganza
+    target: Gaston_Count_of_Eu
     relation: :hasFather
-  AddTriple (93c45f58-0479-43d2-8dd0-a83cc1935f90)
- Call ID: 93c45f58-0479-43d2-8dd0-a83cc1935f90
+  AddTriple (b428f419-a2c8-49dd-b936-b7a265d58f78)
+ Call ID: b428f419-a2c8-49dd-b936-b7a265d58f78
+  Args:
+    target: Isabel_Princess_Imperial_of_Brazil
+    source: Luís_of_Orléans-Braganza
+    relation: :hasMother
+  AssignClass (452dc956-10ba-4b25-bb09-6826fedae752)
+ Call ID: 452dc956-10ba-4b25-bb09-6826fedae752
+  Args:
+    source: Pedro_of_Orléans-Braganza
+    type: :Man
+  AssignClass (2a3adb3b-6fc8-4c6f-adbe-5bd600cf9fd7)
+ Call ID: 2a3adb3b-6fc8-4c6f-adbe-5bd600cf9fd7
+  Args:
+    type: :Person
+    source: Pedro_of_Orléans-Braganza
+  AddTriple (b4078062-938e-447b-939a-8288e15a65bf)
+ Call ID: b4078062-938e-447b-939a-8288e15a65bf
+  Args:
+    source: Luís_of_Orléans-Braganza
+    target: Pedro_of_Orléans-Braganza
+    relation: :isSiblingOf
+  AssignClass (1a64e464-66f5-4d60-bd99-b096e97f959a)
+ Call ID: 1a64e464-66f5-4d60-bd99-b096e97f959a
+  Args:
+    type: :Man
+    source: Antônio_of_Orléans-Braganza
+  AssignClass (20f6576c-b5f7-4c91-b70e-e21ecf3baa09)
+ Call ID: 20f6576c-b5f7-4c91-b70e-e21ecf3baa09
+  Args:
+    type: :Person
+    source: Antônio_of_Orléans-Braganza
+  AddTriple (7c1ba7ec-b540-479c-ab03-e16ada2b9f81)
+ Call ID: 7c1ba7ec-b540-479c-ab03-e16ada2b9f81
+  Args:
+    source: Luís_of_Orléans-Braganza
+    target: Antônio_of_Orléans-Braganza
+    relation: :isSiblingOf
+  AssignClass (6f0c978c-c7f7-4e2a-a8ad-6c6d2c373b8a)
+ Call ID: 6f0c978c-c7f7-4e2a-a8ad-6c6d2c373b8a
+  Args:
+    source: Maria_Pia_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (046521a7-81ae-4cdd-8e0b-44aec18ee3ec)
+ Call ID: 046521a7-81ae-4cdd-8e0b-44aec18ee3ec
+  Args:
+    type: :Person
+    source: Maria_Pia_of_Bourbon-Two_Sicilies
+  AddLiteral (05b855d9-b111-455d-be85-7e8b375b7634)
+ Call ID: 05b855d9-b111-455d-be85-7e8b375b7634
+  Args:
+    source: Luís_of_Orléans-Braganza
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1908
+  AddTriple (f840f000-abbd-4c8d-8ee1-2386d35a8d71)
+ Call ID: f840f000-abbd-4c8d-8ee1-2386d35a8d71
+  Args:
+    target: Maria_Pia_of_Bourbon-Two_Sicilies
+    source: Luís_of_Orléans-Braganza
+    relation: :hasRelation
+  AssignClass (372d730b-1bbe-4b5b-9a6c-3495f0469950)
+ Call ID: 372d730b-1bbe-4b5b-9a6c-3495f0469950
+  Args:
+    type: :Man
+    source: Pedro_Henrique_of_Orléans-Braganza
+  AssignClass (9a5c1e31-f77d-475c-92fb-67ff143c7c14)
+ Call ID: 9a5c1e31-f77d-475c-92fb-67ff143c7c14
+  Args:
+    source: Pedro_Henrique_of_Orléans-Braganza
+    type: :Person
+  AddTriple (ca1f050b-6f41-4e11-8d2b-cc9030be0532)
+ Call ID: ca1f050b-6f41-4e11-8d2b-cc9030be0532
+  Args:
+    target: Luís_of_Orléans-Braganza
+    source: Pedro_Henrique_of_Orléans-Braganza
+    relation: :isSonOf
+  AddTriple (e2b48643-ea31-4434-8706-0b1a9df1572e)
+ Call ID: e2b48643-ea31-4434-8706-0b1a9df1572e
+  Args:
+    relation: :isSonOf
+    source: Pedro_Henrique_of_Orléans-Braganza
+    target: Maria_Pia_of_Bourbon-Two_Sicilies
+  AssignClass (c396c82c-d4df-4ccf-85a8-0216687f5986)
+ Call ID: c396c82c-d4df-4ccf-85a8-0216687f5986
+  Args:
+    source: Luís_Gastão_of_Orléans-Braganza
+    type: :Man
+  AssignClass (7e03d187-d4de-41bf-8e64-e801254fdfe6)
+ Call ID: 7e03d187-d4de-41bf-8e64-e801254fdfe6
+  Args:
+    type: :Person
+    source: Luís_Gastão_of_Orléans-Braganza
+  AddTriple (9dbdf605-1ff6-48b8-86e1-e67df03892e7)
+ Call ID: 9dbdf605-1ff6-48b8-86e1-e67df03892e7
+  Args:
+    source: Luís_Gastão_of_Orléans-Braganza
+    target: Luís_of_Orléans-Braganza
+    relation: :isSonOf
+  AddTriple (602e1b2a-eba3-4bde-8f34-51ed857d803f)
+ Call ID: 602e1b2a-eba3-4bde-8f34-51ed857d803f
+  Args:
+    relation: :isSonOf
+    source: Luís_Gastão_of_Orléans-Braganza
+    target: Maria_Pia_of_Bourbon-Two_Sicilies
+  AssignClass (e29cf636-5188-4ee3-9f91-a757b1b0bd58)
+ Call ID: e29cf636-5188-4ee3-9f91-a757b1b0bd58
+  Args:
+    type: :Woman
+    source: Pia_Maria_of_Orléans-Braganza
+  AssignClass (4e4ef4bc-5f7c-4e8c-88db-3e12a2af3702)
+ Call ID: 4e4ef4bc-5f7c-4e8c-88db-3e12a2af3702
+  Args:
+    type: :Person
+    source: Pia_Maria_of_Orléans-Braganza
+  AddTriple (a3131c28-6278-4cad-ad41-c2c18a73f529)
+ Call ID: a3131c28-6278-4cad-ad41-c2c18a73f529
+  Args:
+    target: Luís_of_Orléans-Braganza
+    source: Pia_Maria_of_Orléans-Braganza
+    relation: :isDaughterOf
+  AddTriple (f62b60e4-46df-4723-ae18-06ae8b10d4f5)
+ Call ID: f62b60e4-46df-4723-ae18-06ae8b10d4f5
+  Args:
+    relation: :isDaughterOf
+    target: Maria_Pia_of_Bourbon-Two_Sicilies
+    source: Pia_Maria_of_Orléans-Braganza
+  AssignClass (7640fdbd-78e2-4f63-b422-0b196c5e5465)
+ Call ID: 7640fdbd-78e2-4f63-b422-0b196c5e5465
+  Args:
+    type: :Woman
+    source: Teresa_Cristina_of_the_Two_Sicilies
+  AssignClass (b2f799c1-038b-44f2-ad87-1cbc9e5aba04)
+ Call ID: b2f799c1-038b-44f2-ad87-1cbc9e5aba04
+  Args:
+    type: :Person
+    source: Teresa_Cristina_of_the_Two_Sicilies
+  AddTriple (fd0bfd41-6322-4a3e-b3f5-381ba5bfff5d)
+ Call ID: fd0bfd41-6322-4a3e-b3f5-381ba5bfff5d
   Args:
     relation: :hasMother
-    source: Sofia_Landaluce_y_Melgarejo
-    target: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-  Finish (108ac1ee-b4db-44b9-ae55-e2a11ffa8179)
- Call ID: 108ac1ee-b4db-44b9-ae55-e2a11ffa8179
+    target: Teresa_Cristina_of_the_Two_Sicilies
+    source: Isabel_Princess_Imperial_of_Brazil
+  Finish (d4f4ebc3-25f3-4915-b2a9-d90ed4d94e77)
+ Call ID: d4f4ebc3-25f3-4915-b2a9-d90ed4d94e77
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -612,33 +833,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Pedro_of_Bourbon-Two_Sicilies a :Man,
+  data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
-      :hasBirthYear 1968 ;
-      :hasFather data:Carlos_Duke_of_Calabria ;
-      :hasMarriageYear 2001 ;
-      :hasMother data:Anne_of_Orl%C3%A9ans ;
-      :hasRelation data:Sofia_Landaluce_y_Melgarejo .
+      :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
 
-  data:Anne_of_Orl%C3%A9ans a :Person,
-          :Woman .
-
-  data:Carlos_Duke_of_Calabria a :Man,
+  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
-      :hasBirthYear 1938 ;
-      :hasDeathYear 2015 .
+      :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
 
-  data:Jose_Manuel_Landaluce_y_Dominguez a :Man,
+  data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
+          :Woman ;
+      :isDaughterOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+  data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
           :Person .
 
-  data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Person,
+  data:Gaston_Count_of_Eu a :Man,
+          :Person .
+
+  data:Isabel_Princess_Imperial_of_Brazil a :Person,
+          :Woman ;
+      :hasMother data:Teresa_Cristina_of_the_Two_Sicilies .
+
+  data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Teresa_Cristina_of_the_Two_Sicilies a :Person,
           :Woman .
 
-  data:Sofia_Landaluce_y_Melgarejo a :Person,
-          :Woman ;
-      :hasBirthYear 1973 ;
-      :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;
-      :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .
+  data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person ;
+      :hasBirthYear 1878 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Gaston_Count_of_Eu ;
+      :hasMarriageYear 1908 ;
+      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+      :hasRelation data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+      :isSiblingOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+          data:Pedro_of_Orl%C3%A9ans-Braganza .
+
+  data:Maria_Pia_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
 
 
 
@@ -650,110 +888,230 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (856f1c50-6b8d-4988-bf8d-47c081f2e2b3)
- Call ID: 856f1c50-6b8d-4988-bf8d-47c081f2e2b3
+  ValidateShacl (5232adfc-7894-4066-8d7a-241b2986dfc4)
+ Call ID: 5232adfc-7894-4066-8d7a-241b2986dfc4
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:27
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Carlos_Duke_of_Calabria is assigned as the father of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Duke_of_Calabria, :Ancestor)
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Anne_of_Orleans is assigned as the mother of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_of_Orleans, :Ancestor)
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Jose_Manuel_Landaluce_y_Dominguez is assigned as the father of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jose_Manuel_Landaluce_y_Dominguez, :Ancestor)
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Carlos_Duke_of_Calabria is assigned as the father of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Duke_of_Calabria, :Ancestor)
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez is assigned as the mother of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Gaston_Count_of_Eu' is assigned as the father of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez, :Ancestor)
+      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_of_Orleans is assigned as the mother of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Isabel_Princess_Imperial_of_Brazil' is assigned as the mother of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_of_Orleans, :Ancestor)
+      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Jose_Manuel_Landaluce_y_Dominguez is assigned as the father of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jose_Manuel_Landaluce_y_Dominguez, :Ancestor)
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Carlos_Duke_of_Calabria is assigned as the father of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Duke_of_Calabria, :Ancestor)
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez is assigned as the mother of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez, :Ancestor)
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Anne_of_Orleans is assigned as the mother of Pedro_of_Bourbon-Two_Sicilies but lacks the required :Ancestor class.
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_of_Orleans, :Ancestor)
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Jose_Manuel_Landaluce_y_Dominguez is assigned as the father of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Gaston_Count_of_Eu' is assigned as the father of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jose_Manuel_Landaluce_y_Dominguez, :Ancestor)
+      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez is assigned as the mother of Sofia_Landaluce_y_Melgarejo but lacks the required :Ancestor class.
+      The node 'Isabel_Princess_Imperial_of_Brazil' is assigned as the mother of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez, :Ancestor)
+      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Teresa_Cristina_of_the_Two_Sicilies' is assigned as the mother of 'Isabel_Princess_Imperial_of_Brazil', but it is missing the ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Teresa_Cristina_of_the_Two_Sicilies', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pedro_Henrique_of_Orl%C3%A9ans-Braganza' via 'isSonOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Gaston_Count_of_Eu' is assigned as the father of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Gaston_Count_of_Eu', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Isabel_Princess_Imperial_of_Brazil' is assigned as the mother of 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', but it is missing the ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Isabel_Princess_Imperial_of_Brazil', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Teresa_Cristina_of_the_Two_Sicilies' is assigned as the mother of 'Isabel_Princess_Imperial_of_Brazil', but it is missing the ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Teresa_Cristina_of_the_Two_Sicilies', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Teresa_Cristina_of_the_Two_Sicilies' is assigned as the mother of 'Isabel_Princess_Imperial_of_Brazil', but it is missing the ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Teresa_Cristina_of_the_Two_Sicilies', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Pia_of_Bourbon-Two_Sicilies' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Pia_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Lu%C3%ADs_of_Orl%C3%A9ans-Braganza' is listed as an ancestor of 'Pia_Maria_of_Orl%C3%A9ans-Braganza' via 'isDaughterOf', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Lu%C3%ADs_of_Orl%C3%A9ans-Braganza', class=':Ancestor')
 
 
 
@@ -762,26 +1120,35 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a35b1fbf-53b1-4fb9-ad85-4cdf6a324ed1)
- Call ID: a35b1fbf-53b1-4fb9-ad85-4cdf6a324ed1
+  AssignClass (e151c378-327f-4e68-9154-904a4d7e8914)
+ Call ID: e151c378-327f-4e68-9154-904a4d7e8914
   Args:
-    source: Carlos_Duke_of_Calabria
+    source: Maria_Pia_of_Bourbon-Two_Sicilies
     type: :Ancestor
-  AssignClass (546bddff-6b01-4b2b-975e-d166592b68f9)
- Call ID: 546bddff-6b01-4b2b-975e-d166592b68f9
+  AssignClass (a01bc511-2e31-4fdd-b518-713732e24b0e)
+ Call ID: a01bc511-2e31-4fdd-b518-713732e24b0e
   Args:
+    source: Luís_of_Orléans-Braganza
     type: :Ancestor
-    source: Anne_of_Orléans
-  AssignClass (1c99b199-030c-4079-a61a-dfe22e4ccb82)
- Call ID: 1c99b199-030c-4079-a61a-dfe22e4ccb82
+  AssignClass (85e09491-450b-4734-9f90-adb18d5e795b)
+ Call ID: 85e09491-450b-4734-9f90-adb18d5e795b
   Args:
+    source: Gaston_Count_of_Eu
     type: :Ancestor
-    source: Jose_Manuel_Landaluce_y_Dominguez
-  AssignClass (6acd281a-7788-4d39-b2a9-bf690ed0c4fd)
- Call ID: 6acd281a-7788-4d39-b2a9-bf690ed0c4fd
+  AssignClass (53502a7b-f9d1-4228-85c8-e9f279223bd1)
+ Call ID: 53502a7b-f9d1-4228-85c8-e9f279223bd1
   Args:
+    source: Isabel_Princess_Imperial_of_Brazil
     type: :Ancestor
-    source: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
+  AssignClass (1e68ff44-a24b-4a41-8e42-c612847a9315)
+ Call ID: 1e68ff44-a24b-4a41-8e42-c612847a9315
+  Args:
+    source: Teresa_Cristina_of_the_Two_Sicilies
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -802,37 +1169,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Pedro_of_Bourbon-Two_Sicilies a :Man,
+  data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
-      :hasBirthYear 1968 ;
-      :hasFather data:Carlos_Duke_of_Calabria ;
-      :hasMarriageYear 2001 ;
-      :hasMother data:Anne_of_Orl%C3%A9ans ;
-      :hasRelation data:Sofia_Landaluce_y_Melgarejo .
+      :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
 
-  data:Anne_of_Orl%C3%A9ans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Carlos_Duke_of_Calabria a :Ancestor,
-          :Man,
+  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
-      :hasBirthYear 1938 ;
-      :hasDeathYear 2015 .
+      :isSonOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
 
-  data:Jose_Manuel_Landaluce_y_Dominguez a :Ancestor,
+  data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
+          :Woman ;
+      :isDaughterOf data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza,
+          data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+  data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Gaston_Count_of_Eu a :Ancestor,
           :Man,
           :Person .
 
-  data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Ancestor,
+  data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Teresa_Cristina_of_the_Two_Sicilies .
+
+  data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Teresa_Cristina_of_the_Two_Sicilies a :Ancestor,
           :Person,
           :Woman .
 
-  data:Sofia_Landaluce_y_Melgarejo a :Person,
-          :Woman ;
-      :hasBirthYear 1973 ;
-      :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;
-      :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .
+  data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1878 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Gaston_Count_of_Eu ;
+      :hasMarriageYear 1908 ;
+      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+      :hasRelation data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+      :isSiblingOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
+          data:Pedro_of_Orl%C3%A9ans-Braganza .
+
+  data:Maria_Pia_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -840,8 +1225,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (9cba3cdc-7cce-48aa-93ba-09b8d2b50b03)
- Call ID: 9cba3cdc-7cce-48aa-93ba-09b8d2b50b03
+  ValidateShacl (d77dfb37-9e70-46a7-8045-d4d7db7a9d0e)
+ Call ID: d77dfb37-9e70-46a7-8045-d4d7db7a9d0e
   Args:
 
 ================================= Tool Message =================================
@@ -852,6 +1237,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (16df6e96-6f03-442d-9680-2534a4e5369f)
- Call ID: 16df6e96-6f03-442d-9680-2534a4e5369f
+  Finish (0f4c9097-9031-45e0-a9b9-a66d626ac1bc)
+ Call ID: 0f4c9097-9031-45e0-a9b9-a66d626ac1bc
   Args:

@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Juan_Carlos_I_of_Spain a :Man ;
+    :hasBrother data:King_Juan_Carlos_I_of_Spain ;
+    :hasRelation data:King_Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:King_Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:King_Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:King_Juan_Carlos_I_of_Spain .
+
+data:Alessandro_Torlonia a :Ancestor,
+        :Man ;
+    :hasBrother data:Alessandro_Torlonia ;
+    :hasChild data:Don_Marco_Alfonso_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSon data:Don_Marco_Alfonso_Torlonia ;
+    :isAncestorOf data:Don_Marco_Alfonso_Torlonia ;
+    :isBloodrelationOf data:Alessandro_Torlonia ;
+    :isBrotherOf data:Alessandro_Torlonia ;
+    :isFatherOf data:Don_Marco_Alfonso_Torlonia ;
+    :isParentOf data:Don_Marco_Alfonso_Torlonia ;
+    :isSiblingOf data:Alessandro_Torlonia ;
+    :isUncleOf data:Don_Marco_Alfonso_Torlonia .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :isAncestorOf data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:King_Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Princess_Sibilla_of_Luxembourg a :Woman ;
+    :hasAncestor data:Olimpia ;
+    :hasMother data:Olimpia ;
+    :hasParent data:Olimpia ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSister data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Princess_Sibilla_of_Luxembourg ;
+    :isChildOf data:Olimpia ;
+    :isDaughterOf data:Olimpia ;
+    :isSiblingOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSisterOf data:Princess_Sibilla_of_Luxembourg .
+
+data:Olimpia a :Ancestor,
+        :Woman ;
+    :hasBrother data:Don_Marco_Alfonso_Torlonia ;
+    :hasChild data:Princess_Sibilla_of_Luxembourg ;
+    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSister data:Olimpia ;
+    :isAncestorOf data:Princess_Sibilla_of_Luxembourg ;
+    :isAuntOf data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia ;
+    :isMotherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isParentOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSiblingOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia ;
+    :isSisterOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor,
+        :Woman ;
+    :hasAncestor data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Don_Marco_Alfonso_Torlonia ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasParent data:King_Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :hasSon data:Don_Marco_Alfonso_Torlonia ;
+    :isAncestorOf data:Don_Marco_Alfonso_Torlonia ;
+    :isAuntOf data:Don_Marco_Alfonso_Torlonia ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isChildOf data:King_Alfonso_XIII_of_Spain ;
+    :isDaughterOf data:King_Alfonso_XIII_of_Spain ;
+    :isMotherOf data:Don_Marco_Alfonso_Torlonia ;
+    :isParentOf data:Don_Marco_Alfonso_Torlonia ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+
+data:Don_Marco_Alfonso_Torlonia a :Man ;
+    :hasAncestor data:Alessandro_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Don_Marco_Alfonso_Torlonia ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Alessandro_Torlonia ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Alessandro_Torlonia,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia,
+        data:Don_Marco_Alfonso_Torlonia,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Olimpia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSister data:Olimpia ;
+    :isBloodrelationOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia ;
+    :isBrotherOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia ;
+    :isChildOf data:Alessandro_Torlonia,
+        data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Don_Marco_Alfonso_Torlonia,
+        data:Olimpia ;
+    :isSonOf data:Alessandro_Torlonia,
+        data:Infanta_Beatriz_of_Spain ;
+    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+

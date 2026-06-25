@@ -2,57 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Norton_Louis_Philip_Knatchbull a :Man ;
-    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-        "Lord Romsey"^^xsd:string ;
-    :hasBirthYear 1947 ;
-    :hasBrother data:Nicholas_Knatchbull ;
-    :hasFather data:John_Knatchbull ;
-    :hasMarriageYear 1979 ;
-    :hasMother data:Patricia_Knatchbull ;
-    :hasSex data:Male .
+data:Alexander_Edgar_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1980 ;
+    :hasDaughter data:Ivy_Lascelles ;
+    :hasFather data:David_Lascelles ;
+    :hasMother data:Margaret_Lascelles ;
+    :hasSex data:Male ;
+    :hasSon data:Kit_Lascelles,
+        data:Leo_Lascelles .
 
-data:Penelope_Meredith_Eastwood a :Woman ;
-    :hasBirthYear 1953 ;
-    :hasFather data:Reginald_Wray_Frank_Eastwood ;
-    :hasMother data:Marian_Elizabeth ;
-    :hasSex data:Female .
+data:David_Lascelles a :Ancestor,
+        :Man,
+        :Person .
 
-data:Doreen_Knatchbull a :Ancestor,
+data:Ivy_Lascelles a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 2018 ;
+    :hasMother data:Annika_Reed .
 
-data:John_Knatchbull a :Ancestor,
-        :Man ;
-    :hasMother data:Doreen_Knatchbull ;
-    :hasSex data:Male .
+data:Kit_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 2023 ;
+    :hasMother data:Annika_Reed .
 
-data:Louis_Mountbatten a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Laleh_Yeganegy a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Marian_Elizabeth a :Ancestor,
-        :Woman ;
-    :hasBirthYear 1926 ;
-    :hasDeathYear 2020 ;
-    :hasSex data:Female .
-
-data:Nicholas_Knatchbull a :Man ;
-    :hasSex data:Male .
-
-data:Patricia_Knatchbull a :Ancestor,
-        :Woman ;
-    :hasDeathYear 2017 ;
-    :hasFather data:Louis_Mountbatten ;
-    :hasSex data:Female .
-
-data:Reginald_Wray_Frank_Eastwood a :Ancestor,
-        :Man ;
-    :hasBirthYear 1912 ;
-    :hasDeathYear 1980 ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
+data:Leo_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 2008 ;
+    :hasMother data:Laleh_Yeganegy .
 
 data:Male a :Sex .
+
+data:Margaret_Lascelles a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Annika_Reed a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMarriageYear 2017 .
 

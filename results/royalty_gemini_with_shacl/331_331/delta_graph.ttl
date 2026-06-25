@@ -2,68 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexia a :Person,
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Louise a :Person,
         :Woman ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
+    :hasParent data:Prince_Edward_Duke_of_Edinburgh,
+        data:Sophie_Duchess_of_Edinburgh ;
+    :isSisterOf data:James_Alexander_Philip_Theo_Mountbatten-Windsor .
 
-data:Nikolaos a :Man,
+data:James_Alexander_Philip_Theo_Mountbatten-Windsor a :Man,
         :Person ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
+    :hasBirthYear 2007 ;
+    :hasFather data:Prince_Edward_Duke_of_Edinburgh ;
+    :hasMother data:Sophie_Duchess_of_Edinburgh .
 
-data:Pavlos a :Man,
-        :Person ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
-
-data:Philippos a :Man,
-        :Person ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
-
-data:Theodora a :Person,
-        :Woman ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
-
-data:Benedikte a :Person,
-        :Woman .
-
-data:Frederica a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Frederik_IX_of_Denmark a :Ancestor,
+data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
         :Man,
         :Person .
 
-data:Ingrid_of_Sweden a :Ancestor,
+data:Queen_Elizabeth_II a :Ancestor,
         :Person,
         :Woman .
 
-data:Margrethe_II_of_Denmark a :Person,
-        :Woman .
-
-data:Paul a :Ancestor,
-        :Man,
-        :Person .
-
-data:Anne-Marie a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1946 ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMarriageYear 1964 ;
-    :hasMother data:Ingrid_of_Sweden ;
-    :hasRelation data:Constantine_II ;
-    :hasSister data:Benedikte,
-        data:Margrethe_II_of_Denmark .
-
-data:Constantine_II a :Ancestor,
+data:Prince_Edward_Duke_of_Edinburgh a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 2023 ;
-    :hasFather data:Paul ;
-    :hasMother data:Frederica .
+    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMother data:Queen_Elizabeth_II .
+
+data:Sophie_Duchess_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman .
 

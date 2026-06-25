@@ -2,23 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
-        :Person ;
-    :alsoKnownAs "Alex Ulster"^^xsd:string ;
-    :hasBirthYear 1974 ;
-    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-    :hasMarriageYear 2002 ;
-    :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:Claire_Booth .
+data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Jean-Christophe_Napol%C3%A9on ;
+    :hasMother data:Olympia ;
+    :hasSex data:Male .
 
-data:Birgitte_Duchess_of_Gloucester a :Ancestor,
-        :Person,
-        :Woman .
+data:B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Woman ;
+    :hasFather data:Ferdinand_of_Bourbon ;
+    :hasSex data:Female .
 
-data:Claire_Booth a :Person,
-        :Woman .
+data:Charles_Napol%C3%A9on a :Ancestor,
+        :Man ;
+    :hasFather data:Louis_Napol%C3%A9on ;
+    :hasSex data:Male .
 
-data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person .
+data:Ferdinand_of_Bourbon a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Jean-Christophe_Napol%C3%A9on a :Ancestor,
+        :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Napol%C3%A9on ;
+    :hasMother data:B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSex data:Male .
+
+data:Louis_Napol%C3%A9on a :Ancestor,
+        :Man ;
+    :hasDeathYear 1997 ;
+    :hasSex data:Male .
+
+data:Olympia a :Ancestor,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

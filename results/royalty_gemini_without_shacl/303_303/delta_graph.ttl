@@ -2,45 +2,26 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:EmmaLuanaNinetteSophie a :Person,
-        :Woman ;
-    :isDaughterOf data:MabelWisseSmit,
-        data:PrinceFriso .
+data:Tomislav_of_Yugoslavia a :Man ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:Peter_II_of_Yugoslavia ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Alexander_I_of_Yugoslavia ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Margarita_of_Baden,
+        data:Maria_of_Yugoslavia .
 
-data:JoannaZariaNicolineMilou a :Person,
-        :Woman ;
-    :isDaughterOf data:MabelWisseSmit,
-        data:PrinceFriso .
+data:Alexander_I_of_Yugoslavia a :Man .
 
-data:PrinceBernhard a :Man,
-        :Person .
+data:Ferdinand_of_Romania a :Man .
 
-data:QueenJuliana a :Person,
-        :Woman .
+data:Margarita_of_Baden a :Woman .
 
-data:ClausVonAmsberg a :Man,
-        :Person .
+data:Maria_of_Yugoslavia a :Woman ;
+    :hasFather data:Ferdinand_of_Romania ;
+    :hasMother data:Marie_of_Romania .
 
-data:KingWillemAlexander a :Man,
-        :Person .
+data:Marie_of_Romania a :Woman .
 
-data:PrinceConstantijn a :Man,
-        :Person .
-
-data:QueenBeatrix a :Person,
-        :Woman .
-
-data:MabelWisseSmit a :Person,
-        :Woman .
-
-data:PrinceFriso a :Man,
-        :Person ;
-    :hasBirthYear 1968 ;
-    :hasBrother data:KingWillemAlexander,
-        data:PrinceConstantijn ;
-    :hasDeathYear 2013 ;
-    :hasFather data:ClausVonAmsberg ;
-    :hasMarriageYear 2004 ;
-    :hasMother data:QueenBeatrix ;
-    :knownAs "Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg"^^xsd:string .
+data:Peter_II_of_Yugoslavia a :Man .
 

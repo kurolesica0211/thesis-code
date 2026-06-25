@@ -2,23 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Gerald_David_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 1998 ;
-    :hasFather data:Henry_Lascelles_6th_Earl_of_Harewood ;
-    :hasMarriageYear 1978 ;
-    :hasMother data:Mary_Princess_Royal ;
-    :hasRelation data:Elizabeth_Colvin .
+data:Princess_Elisabeth_Victoire_Jeanne_Marie_dOrleans a :Person,
+        :Woman ;
+    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasMother data:Naomi_Valeska ;
+    :hasSex data:Female .
 
-data:Elizabeth_Colvin a :Person,
-        :Woman .
+data:Princess_Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasFather data:Charles_Philippe_Marie_Louis_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu ;
+    :hasSex data:Female .
 
-data:Henry_Lascelles_6th_Earl_of_Harewood a :Ancestor,
-        :Man,
-        :Person .
-
-data:Mary_Princess_Royal a :Ancestor,
+data:Naomi_Valeska a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
+
+data:Prince_Henri_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Prince_Michel_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Henri_dOrleans ;
+    :hasSex data:Male .
+
+data:Beatrice_Pasquier_de_Franclieu a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Charles_Philippe_Marie_Louis_dOrleans a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear "1973"^^xsd:positiveInteger ;
+    :hasFather data:Prince_Michel_dOrleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu ;
+    :hasSex data:Male .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
 

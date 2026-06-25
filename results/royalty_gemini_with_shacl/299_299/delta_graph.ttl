@@ -2,40 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aimone_son_of_Amedeo a :Man,
-        :Person ;
-    :hasFather data:Amedeo_of_Savoy-Aosta .
+data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,
+        :Woman ;
+    :alsoKnownAs data:Princess_Diane_of_Orl%C3%A9ans ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSex data:Female ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
 
-data:Aimone_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person .
+data:Male a :Sex .
 
-data:Amedeo_of_Savoy-Aosta a :Ancestor,
+data:Princess_Diane_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:Female a :Sex .
+
+data:Henri_Count_of_Paris a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 2021 ;
-    :hasFather data:Aimone_Duke_of_Aosta ;
-    :hasMarriageYear 1964 ;
-    :hasMother data:Irene_of_Greece_and_Denmark ;
-    :hasRelation data:Claude_of_Orleans ;
     :hasSex data:Male .
 
-data:Claude_of_Orleans a :Person,
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Henri_comte_de_Paris ;
-    :hasMother data:Isabelle_of_Orleans-Braganza .
-
-data:Henri_comte_de_Paris a :Ancestor,
-        :Man,
-        :Person .
-
-data:Irene_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Isabelle_of_Orleans-Braganza a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Male a :Male .
+    :hasSex data:Female .
 

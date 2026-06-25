@@ -2,30 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Pedro a :Man,
+data:Antonio_of_Orleans-Braganza a :Man,
         :Person ;
-    :hasBirthYear 1968 ;
-    :hasFather data:Infante_Carlos ;
-    :hasMarriageYear 2001 ;
-    :hasMother data:Princess_Anne_of_Orleans .
+    :isBrotherOf data:Luis_de_Orleans-Braganza .
 
-data:Sofia_Landaluce_y_Melgarejo a :Person,
+data:Luis_Gastao_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Luis_de_Orleans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Luis_de_Orleans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+
+data:Pedro_of_Orleans-Braganza a :Man,
+        :Person ;
+    :isBrotherOf data:Luis_de_Orleans-Braganza .
+
+data:Pia_Maria_of_Orleans-Braganza a :Person,
         :Woman ;
-    :hasBirthYear 1973 ;
-    :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;
-    :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .
+    :hasFather data:Luis_de_Orleans-Braganza ;
+    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
 
-data:Infante_Carlos a :Man,
-        :Person ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 2015 .
-
-data:Jose_Manuel_Landaluce_y_Dominguez a :Man,
+data:Gaston_Count_of_Eu a :Man,
         :Person .
 
-data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Person,
+data:Isabel_Princess_Imperial_of_Brazil a :Person,
+        :Woman ;
+    :hasMother data:Teresa_Cristina_of_the_Two_Sicilies .
+
+data:Teresa_Cristina_of_the_Two_Sicilies a :Person,
         :Woman .
 
-data:Princess_Anne_of_Orleans a :Person,
+data:Maria_Pia_of_Bourbon-Two_Sicilies a :Person,
         :Woman .
+
+data:Luis_de_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Gaston_Count_of_Eu ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasRelation data:Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :knownAs "the Perfect Prince"^^xsd:string .
 

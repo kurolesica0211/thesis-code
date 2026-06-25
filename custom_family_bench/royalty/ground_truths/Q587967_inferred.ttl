@@ -1,0 +1,195 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sophie_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophie of Württemberg"^^xsd:string ;
+    data:posIndicesFull "328:358"^^xsd:string,
+        "337:358"^^xsd:string ;
+    data:posIndicesPart "468:474"^^xsd:string ;
+    data:wdtLink wdt:Q168674 ;
+    :alsoKnownAs "Princess Sophie of Württemberg"^^xsd:string,
+        "Queen Sophie of the Netherlands"^^xsd:string,
+        "Queen Sophie, Queen Consort of the Netherlands"^^xsd:string,
+        "Sofia Federica di Württemberg"^^xsd:string,
+        "Sophie, Queen Consort of the Netherlands"^^xsd:string ;
+    :hasChild data:William-_Prince_of_Orange ;
+    :hasRelation data:Sophie_of_Württemberg,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Sophie_of_Württemberg ;
+    :hasSon data:William-_Prince_of_Orange ;
+    :isAncestorOf data:William-_Prince_of_Orange ;
+    :isAuntOf data:William-_Prince_of_Orange ;
+    :isBloodrelationOf data:Sophie_of_Württemberg ;
+    :isMotherOf data:William-_Prince_of_Orange ;
+    :isParentOf data:William-_Prince_of_Orange ;
+    :isSiblingOf data:Sophie_of_Württemberg ;
+    :isSisterOf data:Sophie_of_Württemberg .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Wilhelmina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "2649:2665"^^xsd:string,
+        "2655:2665"^^xsd:string ;
+    data:posIndicesPart "2765:2776"^^xsd:string ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands"^^xsd:string,
+        "Princess Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Wilhelmina"^^xsd:string,
+        "Queen Wilhelmina of the Netherlands"^^xsd:string,
+        "Wilhelmina"^^xsd:string,
+        "Wilhelmina I"^^xsd:string,
+        "Wilhelmina Koningin der Nederlanden"^^xsd:string ;
+    :hasAncestor data:William_III_of_the_Netherlands ;
+    :hasBrother data:William-_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasParent data:William_III_of_the_Netherlands ;
+    :hasRelation data:Sophie_of_Württemberg,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isChildOf data:William_III_of_the_Netherlands ;
+    :isDaughterOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William III of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1614:1625"^^xsd:string,
+        "175:186"^^xsd:string,
+        "272:307"^^xsd:string,
+        "277:288"^^xsd:string,
+        "277:307"^^xsd:string ;
+    data:posIndicesPart "1114:1121"^^xsd:string,
+        "1482:1489"^^xsd:string,
+        "1708:1715"^^xsd:string,
+        "1995:2006"^^xsd:string,
+        "2015:2022"^^xsd:string,
+        "2384:2391"^^xsd:string,
+        "2765:2776"^^xsd:string,
+        "620:627"^^xsd:string,
+        "637:648"^^xsd:string,
+        "823:834"^^xsd:string,
+        "981:988"^^xsd:string,
+        "999:1010"^^xsd:string ;
+    data:wdtLink wdt:Q125649 ;
+    :alsoKnownAs "King William III of the Netherlands"^^xsd:string,
+        "Prince William of Orange"^^xsd:string,
+        "Willem III"^^xsd:string,
+        "Willem III der Nederlanden"^^xsd:string,
+        "Willem III of the Netherlands"^^xsd:string,
+        "William III"^^xsd:string,
+        "Z.M. den Koning"^^xsd:string ;
+    :hasBrother data:William_III_of_the_Netherlands ;
+    :hasChild data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :hasDaughter data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Sophie_of_Württemberg,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:William-_Prince_of_Orange ;
+    :isAncestorOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isBloodrelationOf data:William_III_of_the_Netherlands ;
+    :isBrotherOf data:William_III_of_the_Netherlands ;
+    :isFatherOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isParentOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isSiblingOf data:William_III_of_the_Netherlands ;
+    :isUncleOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange .
+
+data:William-_Prince_of_Orange a :Man,
+        :Person ;
+    rdfs:label "William, Prince of Orange"^^xsd:string ;
+    data:posIndicesFull "0:25"^^xsd:string ;
+    data:posIndicesPart "1022:1028"^^xsd:string,
+        "1032:1038"^^xsd:string,
+        "1107:1113"^^xsd:string,
+        "1114:1121"^^xsd:string,
+        "1263:1269"^^xsd:string,
+        "1379:1385"^^xsd:string,
+        "1482:1489"^^xsd:string,
+        "1633:1640"^^xsd:string,
+        "1708:1715"^^xsd:string,
+        "1883:1889"^^xsd:string,
+        "2008:2014"^^xsd:string,
+        "2015:2022"^^xsd:string,
+        "2201:2207"^^xsd:string,
+        "235:241"^^xsd:string,
+        "2377:2383"^^xsd:string,
+        "2384:2391"^^xsd:string,
+        "242:249"^^xsd:string,
+        "2603:2609"^^xsd:string,
+        "2613:2619"^^xsd:string,
+        "2751:2757"^^xsd:string,
+        "2804:2810"^^xsd:string,
+        "2814:2820"^^xsd:string,
+        "620:627"^^xsd:string,
+        "981:988"^^xsd:string ;
+    data:wdtLink wdt:Q587967 ;
+    :alsoKnownAs "Prince Willem of the Netherlands"^^xsd:string,
+        "Prince Willem of the Netherlands, The Prince of Orange"^^xsd:string,
+        "Prince Willem, Prince of Orange"^^xsd:string,
+        "Prince Willem, The Prince of Orange"^^xsd:string,
+        "Prince William of the Netherlands"^^xsd:string,
+        "Prince William of the Netherlands, The Prince of Orange"^^xsd:string,
+        "Prince William, The Prince of Orange"^^xsd:string,
+        "Willem Nicolaas Alexander Frederik Karel Hendrik of Orange-Nassau"^^xsd:string,
+        "Willem Nicolaas Alexander Frederik Karel Hendrik van Orange-Nassau"^^xsd:string,
+        "Willem, Prince of Orange"^^xsd:string ;
+    :hasAncestor data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasBrother data:William-_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_Württemberg ;
+    :hasParent data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :hasRelation data:Sophie_of_Württemberg,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isBrotherOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isChildOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands,
+        data:William-_Prince_of_Orange ;
+    :isSonOf data:Sophie_of_Württemberg,
+        data:William_III_of_the_Netherlands .
+

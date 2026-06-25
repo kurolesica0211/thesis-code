@@ -1,0 +1,262 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Crown_Prince_Pavlos a :Man ;
+    :hasBrother data:Crown_Prince_Pavlos ;
+    :hasRelation data:Crown_Prince_Pavlos ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos ;
+    :isBrotherOf data:Crown_Prince_Pavlos ;
+    :isSiblingOf data:Crown_Prince_Pavlos .
+
+data:Queen_Anne-Marie_of_Greece a :Woman ;
+    :hasRelation data:Queen_Anne-Marie_of_Greece ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :isBloodrelationOf data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Queen_Sofia_of_Spain a :Woman ;
+    :hasRelation data:Queen_Sofia_of_Spain ;
+    :hasSister data:Queen_Sofia_of_Spain ;
+    :isBloodrelationOf data:Queen_Sofia_of_Spain ;
+    :isSiblingOf data:Queen_Sofia_of_Spain ;
+    :isSisterOf data:Queen_Sofia_of_Spain .
+
+data:Constantine_II_of_Greece a :Man ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece .
+
+data:Nicolas_Mirzayantz a :Man ;
+    :hasBrother data:Nicolas_Mirzayantz ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isBloodrelationOf data:Nicolas_Mirzayantz ;
+    :isBrotherOf data:Nicolas_Mirzayantz ;
+    :isSiblingOf data:Nicolas_Mirzayantz .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Jean_Duke_of_Guise ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Prince_Jean_Duke_of_Guise ;
+    :isBrotherOf data:Prince_Jean_Duke_of_Guise ;
+    :isSiblingOf data:Prince_Jean_Duke_of_Guise .
+
+data:Princess_Olga a :Woman ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :hasSister data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isSiblingOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga .
+
+data:Marina_Karella a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Alexandra_of_Greece ;
+    :hasDaughter data:Princess_Alexandra_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :hasSister data:Marina_Karella ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isAuntOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Marina_Karella ;
+    :isMotherOf data:Princess_Alexandra_of_Greece ;
+    :isParentOf data:Princess_Alexandra_of_Greece ;
+    :isSiblingOf data:Marina_Karella ;
+    :isSisterOf data:Marina_Karella .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Alexandra_of_Greece ;
+    :hasDaughter data:Princess_Alexandra_of_Greece ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Alexandra_of_Greece ;
+    :isParentOf data:Princess_Alexandra_of_Greece ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Alexandra_of_Greece .
+
+data:Princess_Alexandra_of_Greece a :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasBirthYear "1968-10-15"^^xsd:date ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMarriageYear "1998-06-27"^^xsd:date ;
+    :hasMother data:Marina_Karella ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Marina_Karella,
+        data:Nicolas_Mirzayantz,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_Duke_of_Guise,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :hasSister data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isChildOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Alexandra_of_Greece,
+        data:Princess_Olga ;
+    :knownAs "Alexandra Mirzayantz"^^xsd:string .
+

@@ -2,49 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Elphinstone a :Man,
+data:David_Chavchavadze a :Man,
         :Person ;
-    :hasFather data:James_Alexander_Elphinstone .
+    :hasBirthYear 1924 ;
+    :hasChild data:Paul_George_Olkhovsky ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Prince_Paul_Chavchavadze ;
+    :hasMother data:Princess_Nina_Georgievna_of_Russia .
 
-data:Andrew_Charles_Victor_Elphinstone a :Man,
-        :Person ;
-    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
-    :hasMother data:Mary_Bowes-Lyon .
-
-data:George_David_Chetwode a :Man,
+data:Paul_George_Olkhovsky a :Man,
         :Person .
 
-data:James_Alexander_Elphinstone a :Man,
+data:Prince_Paul_Chavchavadze a :Man,
         :Person ;
-    :hasBirthYear 1953 ;
-    :hasDeathYear 1994 ;
-    :hasFather data:Andrew_Charles_Victor_Elphinstone ;
-    :hasMarriageYear 1978 ;
-    :hasMother data:Jean_Frances_Hambro ;
-    :hasRelation data:Willa_Mary_Gabrielle_Chetwode .
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1971 .
 
-data:Jean_Frances_Hambro a :Person,
-        :Woman .
-
-data:Marion_Cook a :Person,
-        :Woman .
-
-data:Mary_Bowes-Lyon a :Person,
-        :Woman .
-
-data:Sidney_Buller-Fullerton-Elphinstone a :Man,
-        :Person .
-
-data:Victor_Elliot-Murray-Kynynmound a :Man,
-        :Person .
-
-data:Willa_Elliot-Murray-Kynynmound a :Person,
+data:Princess_Nina_Georgievna_of_Russia a :Person,
         :Woman ;
-    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
-    :hasMother data:Marion_Cook .
-
-data:Willa_Mary_Gabrielle_Chetwode a :Person,
-        :Woman ;
-    :hasFather data:George_David_Chetwode ;
-    :hasMother data:Willa_Elliot-Murray-Kynynmound .
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1974 .
 

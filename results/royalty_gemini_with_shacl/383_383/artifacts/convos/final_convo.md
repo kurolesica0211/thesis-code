@@ -85,40 +85,57 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Sophie Louise of Saxe-Weimar-Eisenach (20 March 1911 – 21 November 1988) was a princess of the House of Saxe-Weimar-Eisenach.
-She was born in Weimar, the eldest child and only daughter of William Ernest, Grand Duke of Saxe-Weimar-Eisenach, by his second wife, Princess Feodora of Saxe-Meiningen.
-As a relative of Wilhelmina of the Netherlands, Sophie was invited to the 1937 wedding of her daughter, Princess Juliana, as a bridesmaid.
-She became entangled in a diplomatic scandal however after the passports of Sophie and two other German princesses were withheld by the Nazi government.
-Though they were later released, Sophie opted out of attending at the last moment.
-In 1938 Sophie married Friedrich Günther, Prince of Schwarzburg, but the couple were divorced by the end of the year.
-Juliana's wedding
+Princess Tatiana Maria Renata Eugenia Elisabeth Margarete Radziwiłł (28 August 1939 – 19 December 2025) was a French-Polish aristocrat, bacteriologist and nurse.
+The eldest daughter of Prince Dominik Rainer Radziwiłł and Princess Eugénie of Greece and Denmark, she was a member of the House of Radziwiłł and a close relative to the Greek, Romanian, Spanish,  Danish, British, and Serbian royal families and the former imperial families of Austria, France, and Russia.
+Radziwiłł served as a bridesmaid at the Wedding of Prince Juan Carlos of Spain and Princess Sophia of Greece and Denmark in 1962 and at the wedding of Constantine II of Greece and Princess Anne-Marie of Denmark in 1964.
+Early life and family
 
-Invitation
+Radziwiłł was born in Rouen, Normandy on 28 August 1939 to Prince Dominik Rainer Radziwiłł, an officer in the Polish Army, and Princess Eugénie of Greece and Denmark, a member of the Greek royal family.
+By birth, she was a member of the House of Radziwill, one of the wealthiest and most important Polish-Lithuanian magnate families, and was the granddaughter of Prince Hieronim Mikołaj Radziwiłł and Archduchess Renata of Austria.
+Her maternal grandparents were Prince George of Greece and Denmark, second son of George I of Greece and Olga Constantinovna of Russia, and Princess Marie Bonaparte, daughter of Roland Napoléon Bonaparte, 6th Prince of Canino and Musignano and Marie-Félix Blanc.
+Radziwiłł's parents divorced in 1946.
+Her father remarried in 1947 to Lida Lacey Bloodgood, daughter of Lida Fleitmann Bloodgood, and her mother remarried in 1949 to Prince Raimondo della Torre e Tasso, Duke of Castel Duino.
+Radziwiłł and her parents fled their home in 1940 after the Fall of France, taking refuge in Saint-Tropez before going in to exile in South Africa, then part of the British Empire.
+They were later joined by her grandparents, Prince George of Greece and Denmark and Princess Marie Bonaparte, as well as other members of the Greek royal family, including Crown Princess Frederika and her children.
+Throughout her childhood, Radziwiłł became close friend with her second cousin, Princess Sophia of Greece and Denmark (the future Queen of Spain).
+She also spent a lot of her childhood with her maternal grandmother, Princess Marie, who was a psychoanalyst and authored Le Livre de Tatiana shortly after Tatiana's birth.
+Radziwiłł returned to France in 1945 following the end of the war, just three years after the birth of her brother, Prince George.
+She was educated in schools in France and in Greece, studying music and languages.
+She took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+Public life and royal duties
 
-Preparations for the wedding of Queen Wilhelmina of the Netherlands's only child Crown Princess Juliana to the German Prince Bernhard of Lippe-Biesterfeld were under way in 1937 when a small diplomatic scandal occurred.
-These included Sophie herself (her and Bernhard's second cousin), Duchess Thyra of Mecklenburg-Schwerin (her second cousin), Grand Duchess Kira Kirillovna of Russia (her first cousin once removed), Duchess Woizlawa of Mecklenburg (her cousin), and two of Bernhard's first cousins, Princess Sieglinde of Lippe and Princess Elisabeth of Lippe.
-Diplomatic scandal
+As a relative of many reigning royal families in Europe, Radziwiłł attended various events across the continent including the Coronation of Elizabeth II in 1953 and the Royal Cruise Agamemnon in 1954.
+As a young woman, Radziwiłł was considered as a potential wife for the future Harald V of Norway.
+In 1956, she was part of the official entourage at a reception for King Paul of Greece in Bois de Boulogne and at the Hôtel de Ville, Paris.
+She remained close to the Greek royal family, serving as a bridesmaid for her cousin, Princess Sophia, when she married the future King of Spain in 1962.
+Radziwiłł  served alongside Princess Irene of Greece and Denmark, Princess Irene of the Netherlands, Princess Alexandra of Kent, Princess Anne d'Orléans, Infanta Pilar of Spain, Princess Anne-Marie of Denmark, and Princess Benedikte of Denmark.
+In March 1963, Tatiana Radziwiłł attended the festivities celebrating the 100th Anniversary of the Greek Monarchy.
+She was present at the doxology service, a parade, and a gala performance at the National Theatre of Greece.
+In August 1963, she accompanied the Crown Prince of Greece while he hosted the 11th World Scout Jamboree.
+In 1964, she served as a bridesmaid in the wedding of her cousins, Constantine II of Greece and Princess Anne-Marie of Denmark.
+In 2021, she attended the wedding of Prince Philippos of Greece and Denmark and Nina Flohr.
+In 2024, she attended the wedding of Princess Theodora of Greece and Denmark and Matthew Kumar.
+Personal life and death
 
-Sophie became entangled in the small diplomatic scandal as preparations for the Dutch wedding commenced.
-The German Nazi government, apparently outraged that their flag was not used in festivities related to the wedding, refused to release the passports of Sophie, along with those of Bernard's cousins Princesses Sieglinde and Elizabeth zur Lippe.
-The German government stated that they were also protesting supposed anti-Nazi incidents in the Netherlands, and was angry that Juliana's German fiancé Prince Bernhard had not publicly defended the Nazi regime there.
-Wilhelmina and the Dutch government responded that because they believed the wedding to be a private, family affair, the use of the German flag would be inappropriate; they instead opted to fly the Dutch national flag alongside the flag of Bernhard's family.
-German displeasure also applied to their national anthem; Wilhelmina and the Dutch government saw no need in playing it at the wedding, as Bernhard was now a Dutch citizen, and thus no longer held German citizenship.
-The passports were not released until Prince Bernhard sent a personal letter to German Chancellor Adolf Hitler.
-Though the passports were released, Sophie for unknown reasons revoked her acceptance and stated she could no longer attend the wedding at the last moment.
-Princess Sophie was replaced as bridesmaid by Baroness von Heeckeren van Kell, one of Juliana's ladies-in-waiting.
-Marriage
+While studying nursing and bacteriology at the University of Paris, Radziwiłł met a French cardiologist, Dr. Jean Henri Fruchard, the son of Colonel Dr. Henri Fruchard and his second wife, Eunice McCooey.
+Their wedding was attended by members of the Greek and Danish royal families, including King Constantine II of Greece, Queen Anne-Marie of Greece, Dowager Queen Frederica of Greece, Queen Ingrid of Denmark, Princess Alice of Greece, Princess Irene of Greece, and Princess Sophia of Greece.
+Radziwiłł and Fruchaud had two children, Fabiola (born 1967) and Alexis (born 1969).
+A close friend and second cousin of Queen Sofía of Spain, Radziwiłł accompanied the Queen on international trips and attended events at Zarzuela Palace and Marivent Palace.
+Radziwiłł died on 19 December 2025 in Paris, at the age of 86.
+Her funeral took place on 10 January 2026 at Saint-Thomas-d'Aquin, Paris and was attended by members of the Spanish and Greek royal families and their relatives, including King Felipe VI and Queen Sofia of Spain as well as Queen Anne-Marie and Crown Prince Pavlos of Greece.
+Popular culture
 
-On 7 March 1938 at Heinrichau, Schlesien, Sophie married Friedrich Günther, Prince of Schwarzburg.
-He had held that title since the death of his father Sizzo, Prince of Schwarzburg on 24 March 1926.
-Consequently, his sister Marie Antoinette controversially succeeded him as Princess of Schwarzburg.
-Sophie died on 21 November 1988 in Hamburg.
+Radziwiłł is portrayed by Paloma Bloyd in Antonio Hernández's 2011 Spanish television film directed Sofía.
+She was also portrayed in Benoît Jacquot's 2004 television film Princesse Marie.
+In his 2013 book, La récréation, Frédéric Mitterrand writes about attending an exhibition on Princess Marie Bonaparte with Radziwiłł.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +151,9 @@ Sophie died on 21 November 1988 in Hamburg.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +168,23 @@ Sophie died on 21 November 1988 in Hamburg.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,142 +476,279 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e0e35508-a84a-4db8-bc33-b1894d05edec)
- Call ID: e0e35508-a84a-4db8-bc33-b1894d05edec
+  AssignClass (fd01cbc5-f6aa-464a-9411-8c717aded3ad)
+ Call ID: fd01cbc5-f6aa-464a-9411-8c717aded3ad
   Args:
+    source: :TatianaRadziwill
+    type: :Person
+  AssignClass (dbf5410d-c0bf-4706-ae23-8f9ee27f4979)
+ Call ID: dbf5410d-c0bf-4706-ae23-8f9ee27f4979
+  Args:
+    source: :TatianaRadziwill
     type: :Woman
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
-  AssignClass (5837386a-3107-44c8-bcaf-7a3f7da81261)
- Call ID: 5837386a-3107-44c8-bcaf-7a3f7da81261
+  AssignClass (b1ec7d7b-8984-4043-bb07-233f2db3af38)
+ Call ID: b1ec7d7b-8984-4043-bb07-233f2db3af38
   Args:
-    type: :Person
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
-  AssignClass (748efc6d-fc3b-447c-9427-e771e8532077)
- Call ID: 748efc6d-fc3b-447c-9427-e771e8532077
+    source: :TatianaRadziwill
+    type: :Female
+  AddLiteral (7e608c84-42d0-4a3d-96f7-dd19e1ba4025)
+ Call ID: 7e608c84-42d0-4a3d-96f7-dd19e1ba4025
   Args:
-    type: :Man
-    source: William_Ernest_of_Saxe-Weimar-Eisenach
-  AssignClass (9453055a-705e-40bb-a3f5-a73dffe58f6c)
- Call ID: 9453055a-705e-40bb-a3f5-a73dffe58f6c
-  Args:
-    source: William_Ernest_of_Saxe-Weimar-Eisenach
-    type: :Person
-  AssignClass (c9ff2fd4-59c9-4af4-8704-a1041a2c199d)
- Call ID: c9ff2fd4-59c9-4af4-8704-a1041a2c199d
-  Args:
-    type: :Ancestor
-    source: William_Ernest_of_Saxe-Weimar-Eisenach
-  AssignClass (d5987c5b-6b8b-4c8d-89b6-296ba7d006ea)
- Call ID: d5987c5b-6b8b-4c8d-89b6-296ba7d006ea
-  Args:
-    type: :Woman
-    source: Feodora_of_Saxe-Meiningen
-  AssignClass (f65704f9-c7da-48de-ba5f-eb453141b188)
- Call ID: f65704f9-c7da-48de-ba5f-eb453141b188
-  Args:
-    type: :Person
-    source: Feodora_of_Saxe-Meiningen
-  AssignClass (70deee9f-fd23-4e04-8474-06c69a4a8b36)
- Call ID: 70deee9f-fd23-4e04-8474-06c69a4a8b36
-  Args:
-    type: :Ancestor
-    source: Feodora_of_Saxe-Meiningen
-  AssignClass (a79277da-adad-4942-8552-37b37ead7563)
- Call ID: a79277da-adad-4942-8552-37b37ead7563
-  Args:
-    type: :Man
-    source: Friedrich_Gunther_of_Schwarzburg
-  AssignClass (2611cd37-5596-4670-80e6-23d95345578b)
- Call ID: 2611cd37-5596-4670-80e6-23d95345578b
-  Args:
-    source: Friedrich_Gunther_of_Schwarzburg
-    type: :Person
-  AssignClass (3509e374-03f4-4885-9e6a-1e2410a54d59)
- Call ID: 3509e374-03f4-4885-9e6a-1e2410a54d59
-  Args:
-    type: :Man
-    source: Sizzo_of_Schwarzburg
-  AssignClass (b5a86793-d911-41a7-bdf7-d9c665962900)
- Call ID: b5a86793-d911-41a7-bdf7-d9c665962900
-  Args:
-    type: :Person
-    source: Sizzo_of_Schwarzburg
-  AssignClass (b6228144-f810-45d1-bf34-67091f5707a6)
- Call ID: b6228144-f810-45d1-bf34-67091f5707a6
-  Args:
-    type: :Ancestor
-    source: Sizzo_of_Schwarzburg
-  AssignClass (8951c018-c27e-44ca-b641-acc95d636aa5)
- Call ID: 8951c018-c27e-44ca-b641-acc95d636aa5
-  Args:
-    source: Marie_Antoinette_of_Schwarzburg
-    type: :Woman
-  AssignClass (1735b7b2-1198-474f-8a44-311796253505)
- Call ID: 1735b7b2-1198-474f-8a44-311796253505
-  Args:
-    source: Marie_Antoinette_of_Schwarzburg
-    type: :Person
-  AddLiteral (74933447-b576-480f-9bdc-077f1bfc2116)
- Call ID: 74933447-b576-480f-9bdc-077f1bfc2116
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1911
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
     relation: :hasBirthYear
-  AddLiteral (eefeeee7-0c41-4927-b074-5239de8de947)
- Call ID: eefeeee7-0c41-4927-b074-5239de8de947
+    literal_type: xsd:integer
+    literal_value: 1939
+    source: :TatianaRadziwill
+  AddLiteral (79edbfb7-5109-46c1-a029-c93126236a8a)
+ Call ID: 79edbfb7-5109-46c1-a029-c93126236a8a
   Args:
-    literal_value: 1988
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (035c7e9e-6dba-41b5-b789-d4785daf6da7)
- Call ID: 035c7e9e-6dba-41b5-b789-d4785daf6da7
+    literal_value: 2025
+    source: :TatianaRadziwill
+  AssignClass (c7a98179-4612-4ca2-bf00-d5396321e681)
+ Call ID: c7a98179-4612-4ca2-bf00-d5396321e681
   Args:
-    target: William_Ernest_of_Saxe-Weimar-Eisenach
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
+    type: :Person
+    source: :DominikRainerRadziwill
+  AssignClass (67dd2baf-b028-496b-a9b4-78dc6965e6ae)
+ Call ID: 67dd2baf-b028-496b-a9b4-78dc6965e6ae
+  Args:
+    source: :DominikRainerRadziwill
+    type: :Man
+  AssignClass (8d6bb9d2-3a10-45a3-a2ce-2d935f9063df)
+ Call ID: 8d6bb9d2-3a10-45a3-a2ce-2d935f9063df
+  Args:
+    type: :Male
+    source: :DominikRainerRadziwill
+  AssignClass (15c3ceed-e5fa-4565-99db-ede7d1272808)
+ Call ID: 15c3ceed-e5fa-4565-99db-ede7d1272808
+  Args:
+    source: :EugenieOfGreeceAndDenmark
+    type: :Person
+  AssignClass (8b31695d-61e9-485c-a5ff-4cfd0e55919c)
+ Call ID: 8b31695d-61e9-485c-a5ff-4cfd0e55919c
+  Args:
+    source: :EugenieOfGreeceAndDenmark
+    type: :Woman
+  AssignClass (eea0fce2-999a-4aa5-a448-9f738dc084d3)
+ Call ID: eea0fce2-999a-4aa5-a448-9f738dc084d3
+  Args:
+    source: :EugenieOfGreeceAndDenmark
+    type: :Female
+  AddTriple (a37c431f-3658-4bfa-b745-d72ed7b8cfac)
+ Call ID: a37c431f-3658-4bfa-b745-d72ed7b8cfac
+  Args:
+    source: :TatianaRadziwill
+    target: :DominikRainerRadziwill
     relation: :hasFather
-  AddTriple (f10518a1-3cfe-4004-a0ad-50069d855903)
- Call ID: f10518a1-3cfe-4004-a0ad-50069d855903
+  AddTriple (a6e6618a-a1a8-46d1-b84d-a07e0c9b1692)
+ Call ID: a6e6618a-a1a8-46d1-b84d-a07e0c9b1692
   Args:
-    target: Feodora_of_Saxe-Meiningen
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
     relation: :hasMother
-  AddLiteral (4cdbbaf0-100a-4470-8a6f-53f3d75599a9)
- Call ID: 4cdbbaf0-100a-4470-8a6f-53f3d75599a9
+    target: :EugenieOfGreeceAndDenmark
+    source: :TatianaRadziwill
+  AssignClass (c8222590-d866-4d46-a926-bbd878344368)
+ Call ID: c8222590-d866-4d46-a926-bbd878344368
   Args:
-    literal_type: xsd:integer
-    literal_value: 1938
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
-    relation: :hasMarriageYear
-  AddTriple (fbd8a6ba-15eb-441c-ba3b-c272b272aa56)
- Call ID: fbd8a6ba-15eb-441c-ba3b-c272b272aa56
+    source: :GeorgeRadziwill
+    type: :Person
+  AssignClass (f254eab7-ee3d-46cf-bdba-2a91cd2b5cca)
+ Call ID: f254eab7-ee3d-46cf-bdba-2a91cd2b5cca
   Args:
-    target: Friedrich_Gunther_of_Schwarzburg
-    relation: :hasRelation
-    source: Sophie_Louise_of_Saxe-Weimar-Eisenach
-  AddTriple (4d8bff2a-a4b2-4eb5-ad82-b4e31d5f9329)
- Call ID: 4d8bff2a-a4b2-4eb5-ad82-b4e31d5f9329
+    source: :GeorgeRadziwill
+    type: :Man
+  AssignClass (849ef4a3-6bac-4e30-ba87-e4df5b52a402)
+ Call ID: 849ef4a3-6bac-4e30-ba87-e4df5b52a402
+  Args:
+    type: :Male
+    source: :GeorgeRadziwill
+  AddTriple (c9b3bdf3-1f52-419f-b2ff-87fdf58cd3a8)
+ Call ID: c9b3bdf3-1f52-419f-b2ff-87fdf58cd3a8
+  Args:
+    relation: :hasBrother
+    target: :GeorgeRadziwill
+    source: :TatianaRadziwill
+  AssignClass (b9c12bbd-a46d-429c-8200-420374a31be9)
+ Call ID: b9c12bbd-a46d-429c-8200-420374a31be9
+  Args:
+    source: :HieronimMikolajRadziwill
+    type: :Person
+  AssignClass (67cf6f50-2805-444a-be2f-c6d7613dd8eb)
+ Call ID: 67cf6f50-2805-444a-be2f-c6d7613dd8eb
+  Args:
+    source: :HieronimMikolajRadziwill
+    type: :Man
+  AssignClass (7ab828d6-6a9e-493e-bdc0-7b911ce42825)
+ Call ID: 7ab828d6-6a9e-493e-bdc0-7b911ce42825
+  Args:
+    source: :RenataOfAustria
+    type: :Person
+  AssignClass (ba7db57e-2e0f-497d-ae07-c3809ebef20d)
+ Call ID: ba7db57e-2e0f-497d-ae07-c3809ebef20d
+  Args:
+    source: :RenataOfAustria
+    type: :Woman
+  AddTriple (e60da232-61a6-42d8-8de8-69f619e3109b)
+ Call ID: e60da232-61a6-42d8-8de8-69f619e3109b
+  Args:
+    target: :HieronimMikolajRadziwill
+    source: :DominikRainerRadziwill
+    relation: :hasFather
+  AddTriple (c2d061d5-9753-43eb-81a0-be2b9098d676)
+ Call ID: c2d061d5-9753-43eb-81a0-be2b9098d676
+  Args:
+    target: :RenataOfAustria
+    source: :DominikRainerRadziwill
+    relation: :hasMother
+  AssignClass (8fffb225-d769-4a35-8034-52e2548efeb3)
+ Call ID: 8fffb225-d769-4a35-8034-52e2548efeb3
+  Args:
+    source: :GeorgeOfGreeceAndDenmark
+    type: :Person
+  AssignClass (b10bb8b1-c773-4d99-95aa-5f22d0858069)
+ Call ID: b10bb8b1-c773-4d99-95aa-5f22d0858069
+  Args:
+    type: :Man
+    source: :GeorgeOfGreeceAndDenmark
+  AssignClass (63fa9851-de9d-4c4c-9053-40b9fe9d7a05)
+ Call ID: 63fa9851-de9d-4c4c-9053-40b9fe9d7a05
+  Args:
+    source: :MarieBonaparte
+    type: :Person
+  AssignClass (42dd1918-eca8-41b4-9522-7a2ebca92f75)
+ Call ID: 42dd1918-eca8-41b4-9522-7a2ebca92f75
+  Args:
+    type: :Woman
+    source: :MarieBonaparte
+  AddTriple (feb5830a-18c9-4fcf-9351-af33ba5939cd)
+ Call ID: feb5830a-18c9-4fcf-9351-af33ba5939cd
   Args:
     relation: :hasFather
-    source: Friedrich_Gunther_of_Schwarzburg
-    target: Sizzo_of_Schwarzburg
-  AddTriple (e45f93e1-bc56-400d-b53f-a6e2a70e71c8)
- Call ID: e45f93e1-bc56-400d-b53f-a6e2a70e71c8
+    target: :GeorgeOfGreeceAndDenmark
+    source: :EugenieOfGreeceAndDenmark
+  AddTriple (0c9cc651-1e8d-43d7-bd40-81bbffa3e568)
+ Call ID: 0c9cc651-1e8d-43d7-bd40-81bbffa3e568
   Args:
-    target: Marie_Antoinette_of_Schwarzburg
-    relation: :hasSister
-    source: Friedrich_Gunther_of_Schwarzburg
-  AddLiteral (1f93bd17-d030-49f6-920d-5df8cf3006f9)
- Call ID: 1f93bd17-d030-49f6-920d-5df8cf3006f9
+    relation: :hasMother
+    target: :MarieBonaparte
+    source: :EugenieOfGreeceAndDenmark
+  AssignClass (39928469-a21b-4b57-9295-07a492c28bf8)
+ Call ID: 39928469-a21b-4b57-9295-07a492c28bf8
   Args:
-    literal_value: 1926
-    source: Sizzo_of_Schwarzburg
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  Finish (e8c373b0-573e-42f5-9fc0-0df7b989d0d7)
- Call ID: e8c373b0-573e-42f5-9fc0-0df7b989d0d7
+    source: :JeanHenriFruchard
+    type: :Person
+  AssignClass (7f41719a-5573-4cf3-ab80-6820e26e37bf)
+ Call ID: 7f41719a-5573-4cf3-ab80-6820e26e37bf
   Args:
+    type: :Man
+    source: :JeanHenriFruchard
+  AssignClass (3d38711c-ee96-41e3-a22e-487e15f99cbd)
+ Call ID: 3d38711c-ee96-41e3-a22e-487e15f99cbd
+  Args:
+    source: :FabiolaFruchaud
+    type: :Person
+  AssignClass (e86390af-a027-4986-a4ea-55030ae3ae9e)
+ Call ID: e86390af-a027-4986-a4ea-55030ae3ae9e
+  Args:
+    source: :FabiolaFruchaud
+    type: :Woman
+  AssignClass (a3441a6b-20af-45d0-8233-21dbb4028c79)
+ Call ID: a3441a6b-20af-45d0-8233-21dbb4028c79
+  Args:
+    type: :Person
+    source: :AlexisFruchaud
+  AssignClass (0fec99ea-be4f-4cda-aadc-08c3291e7f20)
+ Call ID: 0fec99ea-be4f-4cda-aadc-08c3291e7f20
+  Args:
+    source: :AlexisFruchaud
+    type: :Man
+  AddTriple (eaeeb86a-7f40-48be-b5c9-a9e84a855851)
+ Call ID: eaeeb86a-7f40-48be-b5c9-a9e84a855851
+  Args:
+    target: :FabiolaFruchaud
+    source: :TatianaRadziwill
+    relation: :hasChild
+  AddTriple (3f5650b3-c31c-4bb8-8db9-42fac087b416)
+ Call ID: 3f5650b3-c31c-4bb8-8db9-42fac087b416
+  Args:
+    relation: :hasChild
+    target: :AlexisFruchaud
+    source: :TatianaRadziwill
+  AddTriple (fe4ed0f9-b9f4-4b86-8478-ca1fd2cde544)
+ Call ID: fe4ed0f9-b9f4-4b86-8478-ca1fd2cde544
+  Args:
+    relation: :hasChild
+    source: :JeanHenriFruchard
+    target: :FabiolaFruchaud
+  AddTriple (7a31934d-1075-4a41-8534-ee5d6a3c5cd1)
+ Call ID: 7a31934d-1075-4a41-8534-ee5d6a3c5cd1
+  Args:
+    relation: :hasChild
+    target: :AlexisFruchaud
+    source: :JeanHenriFruchard
+  Finish (5dad4bca-7460-4930-93bf-f9437cf9b23f)
+ Call ID: 5dad4bca-7460-4930-93bf-f9437cf9b23f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -605,35 +849,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
-          :Woman ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1988 ;
-      :hasFather data:William_Ernest_of_Saxe-Weimar-Eisenach ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Feodora_of_Saxe-Meiningen ;
-      :hasRelation data:Friedrich_Gunther_of_Schwarzburg .
-
-  data:Feodora_of_Saxe-Meiningen a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Friedrich_Gunther_of_Schwarzburg a :Man,
+  data:JeanHenriFruchard a :Man,
           :Person ;
-      :hasFather data:Sizzo_of_Schwarzburg ;
-      :hasSister data:Marie_Antoinette_of_Schwarzburg .
+      :hasChild data:AlexisFruchaud,
+          data:FabiolaFruchaud .
 
-  data:Marie_Antoinette_of_Schwarzburg a :Person,
-          :Woman .
+  data:TatianaRadziwill a :Female,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1939 ;
+      :hasBrother data:GeorgeRadziwill ;
+      :hasChild data:AlexisFruchaud,
+          data:FabiolaFruchaud ;
+      :hasDeathYear 2025 ;
+      :hasFather data:DominikRainerRadziwill ;
+      :hasMother data:EugenieOfGreeceAndDenmark .
 
-  data:Sizzo_of_Schwarzburg a :Ancestor,
+  data:DominikRainerRadziwill a :Male,
           :Man,
           :Person ;
-      :hasDeathYear 1926 .
+      :hasFather data:HieronimMikolajRadziwill ;
+      :hasMother data:RenataOfAustria .
 
-  data:William_Ernest_of_Saxe-Weimar-Eisenach a :Ancestor,
+  data:EugenieOfGreeceAndDenmark a :Female,
+          :Person,
+          :Woman ;
+      :hasFather data:GeorgeOfGreeceAndDenmark ;
+      :hasMother data:MarieBonaparte .
+
+  data:GeorgeOfGreeceAndDenmark a :Man,
+          :Person .
+
+  data:GeorgeRadziwill a :Male,
           :Man,
           :Person .
+
+  data:HieronimMikolajRadziwill a :Man,
+          :Person .
+
+  data:MarieBonaparte a :Person,
+          :Woman .
+
+  data:RenataOfAustria a :Person,
+          :Woman .
+
+  data:AlexisFruchaud a :Man,
+          :Person .
+
+  data:FabiolaFruchaud a :Person,
+          :Woman .
 
 
 
@@ -645,8 +909,599 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (6b0eb49d-d386-41bb-8b61-b8ad7acee8aa)
- Call ID: 6b0eb49d-d386-41bb-8b61-b8ad7acee8aa
+  ValidateShacl (b298cd3c-83c5-4f9e-ae25-81d88ef5c738)
+ Call ID: b298cd3c-83c5-4f9e-ae25-81d88ef5c738
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:52
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a father 'DominikRainerRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :DominikRainerRadziwill.
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a father 'GeorgeOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :GeorgeOfGreeceAndDenmark.
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a mother 'EugenieOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :EugenieOfGreeceAndDenmark.
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a mother 'MarieBonaparte' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :MarieBonaparte.
+
+
+  Violation [5]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :TatianaRadziwill.
+
+
+  Violation [6]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :EugenieOfGreeceAndDenmark.
+
+
+  Violation [7]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:DominikRainerRadziwill
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :TatianaRadziwill to :DominikRainerRadziwill.
+
+
+  Violation [8]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:FabiolaFruchaud
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasChild.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasChild relationship using RemoveTriple for :TatianaRadziwill to :FabiolaFruchaud.
+
+
+  Violation [9]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:AlexisFruchaud
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasChild.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasChild relationship using RemoveTriple for :TatianaRadziwill to :AlexisFruchaud.
+
+
+  Violation [10]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:EugenieOfGreeceAndDenmark
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :TatianaRadziwill to :EugenieOfGreeceAndDenmark.
+
+
+  Violation [11]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:GeorgeRadziwill
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasBrother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasBrother relationship using RemoveTriple for :TatianaRadziwill to :GeorgeRadziwill.
+
+
+  Violation [12]:
+    SHACL message: Node data:EugenieOfGreeceAndDenmark is closed. It cannot have value: data:GeorgeOfGreeceAndDenmark
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :EugenieOfGreeceAndDenmark to :GeorgeOfGreeceAndDenmark.
+
+
+  Violation [13]:
+    SHACL message: Node data:EugenieOfGreeceAndDenmark is closed. It cannot have value: data:MarieBonaparte
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :EugenieOfGreeceAndDenmark to :MarieBonaparte.
+
+
+  Violation [14]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :TatianaRadziwill.
+
+
+  Violation [15]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :EugenieOfGreeceAndDenmark.
+
+
+  Violation [16]:
+    SHACL message: Node data:DominikRainerRadziwill is closed. It cannot have value: data:HieronimMikolajRadziwill
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :DominikRainerRadziwill to :HieronimMikolajRadziwill.
+
+
+  Violation [17]:
+    SHACL message: Node data:DominikRainerRadziwill is closed. It cannot have value: data:RenataOfAustria
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :DominikRainerRadziwill to :RenataOfAustria.
+
+
+  Violation [18]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'GeorgeRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :GeorgeRadziwill.
+
+
+  Violation [19]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :DominikRainerRadziwill.
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a father 'HieronimMikolajRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :HieronimMikolajRadziwill.
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a mother 'RenataOfAustria' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :RenataOfAustria.
+
+
+  Violation [22]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :DominikRainerRadziwill.
+
+
+  Violation [23]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'GeorgeRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :GeorgeRadziwill.
+
+
+  Violation [24]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:DominikRainerRadziwill
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :TatianaRadziwill to :DominikRainerRadziwill.
+
+
+  Violation [25]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:FabiolaFruchaud
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasChild.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasChild relationship using RemoveTriple for :TatianaRadziwill to :FabiolaFruchaud.
+
+
+  Violation [26]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:AlexisFruchaud
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasChild.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasChild relationship using RemoveTriple for :TatianaRadziwill to :AlexisFruchaud.
+
+
+  Violation [27]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:EugenieOfGreeceAndDenmark
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :TatianaRadziwill to :EugenieOfGreeceAndDenmark.
+
+
+  Violation [28]:
+    SHACL message: Node data:TatianaRadziwill is closed. It cannot have value: data:GeorgeRadziwill
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' is closed and cannot hold the property :hasBrother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasBrother relationship using RemoveTriple for :TatianaRadziwill to :GeorgeRadziwill.
+
+
+  Violation [29]:
+    SHACL message: Node data:EugenieOfGreeceAndDenmark is closed. It cannot have value: data:GeorgeOfGreeceAndDenmark
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :EugenieOfGreeceAndDenmark to :GeorgeOfGreeceAndDenmark.
+
+
+  Violation [30]:
+    SHACL message: Node data:EugenieOfGreeceAndDenmark is closed. It cannot have value: data:MarieBonaparte
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :EugenieOfGreeceAndDenmark to :MarieBonaparte.
+
+
+  Violation [31]:
+    SHACL message: Node data:DominikRainerRadziwill is closed. It cannot have value: data:HieronimMikolajRadziwill
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' is closed and cannot hold the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasFather relationship using RemoveTriple for :DominikRainerRadziwill to :HieronimMikolajRadziwill.
+
+
+  Violation [32]:
+    SHACL message: Node data:DominikRainerRadziwill is closed. It cannot have value: data:RenataOfAustria
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' is closed and cannot hold the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      Remove the :hasMother relationship using RemoveTriple for :DominikRainerRadziwill to :RenataOfAustria.
+
+
+  Violation [33]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :TatianaRadziwill.
+
+
+  Violation [34]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'GeorgeRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :GeorgeRadziwill.
+
+
+  Violation [35]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :EugenieOfGreeceAndDenmark.
+
+
+  Violation [36]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :DominikRainerRadziwill.
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a father 'DominikRainerRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :DominikRainerRadziwill.
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a father 'GeorgeOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :GeorgeOfGreeceAndDenmark.
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a father 'HieronimMikolajRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :HieronimMikolajRadziwill.
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a mother 'EugenieOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :EugenieOfGreeceAndDenmark.
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a mother 'MarieBonaparte' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :MarieBonaparte.
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a mother 'RenataOfAustria' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :RenataOfAustria.
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a father 'DominikRainerRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :DominikRainerRadziwill.
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a father 'GeorgeOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :GeorgeOfGreeceAndDenmark.
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a father 'HieronimMikolajRadziwill' who is not correctly classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Man to :HieronimMikolajRadziwill.
+
+
+  Violation [46]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'TatianaRadziwill' has a mother 'EugenieOfGreeceAndDenmark' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :EugenieOfGreeceAndDenmark.
+
+
+  Violation [47]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'EugenieOfGreeceAndDenmark' has a mother 'MarieBonaparte' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :MarieBonaparte.
+
+
+  Violation [48]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'DominikRainerRadziwill' has a mother 'RenataOfAustria' who is not correctly classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to assign :Woman to :RenataOfAustria.
+
+
+  Violation [49]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'TatianaRadziwill' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :TatianaRadziwill.
+
+
+  Violation [50]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'EugenieOfGreeceAndDenmark' has conflicting class assignments (disjointness violation between :Woman and :Female).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Female from :EugenieOfGreeceAndDenmark.
+
+
+  Violation [51]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'GeorgeRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :GeorgeRadziwill.
+
+
+  Violation [52]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'DominikRainerRadziwill' has conflicting class assignments (disjointness violation between :Man and :Male).
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove :Male from :DominikRainerRadziwill.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  UnassignClass (2e432c7f-b095-444e-9e33-562c05a69872)
+ Call ID: 2e432c7f-b095-444e-9e33-562c05a69872
+  Args:
+    type: :Female
+    source: :TatianaRadziwill
+  UnassignClass (e150f984-4ca2-4621-a118-6f49405cbe75)
+ Call ID: e150f984-4ca2-4621-a118-6f49405cbe75
+  Args:
+    type: :Female
+    source: :EugenieOfGreeceAndDenmark
+  UnassignClass (ff4ccb99-2507-4bee-b09c-f7c8eaabeea1)
+ Call ID: ff4ccb99-2507-4bee-b09c-f7c8eaabeea1
+  Args:
+    type: :Male
+    source: :GeorgeRadziwill
+  UnassignClass (5fa55bee-8feb-40ee-8061-daafdb20fbc1)
+ Call ID: 5fa55bee-8feb-40ee-8061-daafdb20fbc1
+  Args:
+    source: :DominikRainerRadziwill
+    type: :Male
+  AssignClass (6aac9796-2f99-4932-9b05-01896535ba24)
+ Call ID: 6aac9796-2f99-4932-9b05-01896535ba24
+  Args:
+    type: :Ancestor
+    source: :DominikRainerRadziwill
+  AssignClass (f331aad7-85c3-41bb-86dc-84a3bac92820)
+ Call ID: f331aad7-85c3-41bb-86dc-84a3bac92820
+  Args:
+    type: :Ancestor
+    source: :GeorgeOfGreeceAndDenmark
+  AssignClass (20dfaa7e-8b60-47d4-b325-dcb310d2d279)
+ Call ID: 20dfaa7e-8b60-47d4-b325-dcb310d2d279
+  Args:
+    source: :HieronimMikolajRadziwill
+    type: :Ancestor
+  AssignClass (cb0ced23-4475-4135-9e44-fed54e2967e3)
+ Call ID: cb0ced23-4475-4135-9e44-fed54e2967e3
+  Args:
+    source: :EugenieOfGreeceAndDenmark
+    type: :Ancestor
+  AssignClass (27ab3806-cae8-4e4f-bb5e-ffa924f6b34e)
+ Call ID: 27ab3806-cae8-4e4f-bb5e-ffa924f6b34e
+  Args:
+    type: :Ancestor
+    source: :MarieBonaparte
+  AssignClass (90be7c45-a5d2-434c-a62c-bee3bfdc4c28)
+ Call ID: 90be7c45-a5d2-434c-a62c-bee3bfdc4c28
+  Args:
+    source: :RenataOfAustria
+    type: :Ancestor
+  Finish (af608f15-b402-4357-a3ea-b678399215c6)
+ Call ID: af608f15-b402-4357-a3ea-b678399215c6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:JeanHenriFruchard a :Man,
+          :Person ;
+      :hasChild data:AlexisFruchaud,
+          data:FabiolaFruchaud .
+
+  data:TatianaRadziwill a :Person,
+          :Woman ;
+      :hasBirthYear 1939 ;
+      :hasBrother data:GeorgeRadziwill ;
+      :hasChild data:AlexisFruchaud,
+          data:FabiolaFruchaud ;
+      :hasDeathYear 2025 ;
+      :hasFather data:DominikRainerRadziwill ;
+      :hasMother data:EugenieOfGreeceAndDenmark .
+
+  data:DominikRainerRadziwill a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:HieronimMikolajRadziwill ;
+      :hasMother data:RenataOfAustria .
+
+  data:EugenieOfGreeceAndDenmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:GeorgeOfGreeceAndDenmark ;
+      :hasMother data:MarieBonaparte .
+
+  data:GeorgeOfGreeceAndDenmark a :Ancestor,
+          :Man,
+          :Person .
+
+  data:GeorgeRadziwill a :Man,
+          :Person .
+
+  data:HieronimMikolajRadziwill a :Ancestor,
+          :Man,
+          :Person .
+
+  data:MarieBonaparte a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:RenataOfAustria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:AlexisFruchaud a :Man,
+          :Person .
+
+  data:FabiolaFruchaud a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a42fd716-d2b3-451e-8556-db0fc86ec41c)
+ Call ID: a42fd716-d2b3-451e-8556-db0fc86ec41c
   Args:
 
 ================================= Tool Message =================================
@@ -657,6 +1512,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (08b98295-28ba-488b-8836-838b3e5cd0f8)
- Call ID: 08b98295-28ba-488b-8836-838b3e5cd0f8
+  Finish (f4b9c304-9ef7-497d-ae7a-d4dbfe18b172)
+ Call ID: f4b9c304-9ef7-497d-ae7a-d4dbfe18b172
   Args:

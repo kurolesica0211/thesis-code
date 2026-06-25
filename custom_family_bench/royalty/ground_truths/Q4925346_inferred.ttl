@@ -1,0 +1,164 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Charles_Bonaparte a :Man,
+        :Person ;
+    rdfs:label "Prince Charles Bonaparte"^^xsd:string ;
+    data:posIndicesFull "524:540"^^xsd:string ;
+    data:posIndicesPart "658:665"^^xsd:string,
+        "777:784"^^xsd:string ;
+    data:wdtLink wdt:Q704776 ;
+    :alsoKnownAs "Charles Marie Jérôme Victor Bonaparte"^^xsd:string,
+        "Charles Marie Jérôme Victor Napoléon"^^xsd:string,
+        "Charles Napoleon"^^xsd:string,
+        "Charles Napoléon"^^xsd:string,
+        "Napoléon VII"^^xsd:string ;
+    :hasBrother data:Prince_Charles_Bonaparte ;
+    :hasRelation data:Prince_Charles_Bonaparte ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Charles_Bonaparte ;
+    :isBrotherOf data:Prince_Charles_Bonaparte ;
+    :isSiblingOf data:Prince_Charles_Bonaparte .
+
+data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "194:226"^^xsd:string ;
+    data:posIndicesPart "412:418"^^xsd:string,
+        "573:579"^^xsd:string ;
+    data:wdtLink wdt:Q2324276 ;
+    :alsoKnownAs "Ferdinando Maria"^^xsd:string,
+        "Ferdinando Maria Andrea Alfonso Marcus"^^xsd:string ;
+    :hasBrother data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasChild data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isFatherOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isParentOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isUncleOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies .
+
+data:Princess_Chantal-_Duchess_of_Castro a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Chantal, Duchess of Castro"^^xsd:string ;
+    data:posIndicesFull "317:344"^^xsd:string ;
+    data:posIndicesPart "412:418"^^xsd:string ;
+    data:wdtLink wdt:Q3666240 ;
+    :alsoKnownAs "Chantal Françoise Marie Camille de Chevron-Villette"^^xsd:string,
+        "Chantal de Chevron-Villette"^^xsd:string ;
+    :hasChild data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isAuntOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Chantal-_Duchess_of_Castro ;
+    :isMotherOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isParentOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSiblingOf data:Princess_Chantal-_Duchess_of_Castro ;
+    :isSisterOf data:Princess_Chantal-_Duchess_of_Castro .
+
+data:Prince_Carlo-_Duke_of_Castro a :Man,
+        :Person ;
+    rdfs:label "Prince Carlo, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "367:395"^^xsd:string ;
+    data:posIndicesPart "573:579"^^xsd:string ;
+    data:wdtLink wdt:Q1850305 ;
+    :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies"^^xsd:string,
+        "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro"^^xsd:string ;
+    :hasAncestor data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasBrother data:Prince_Carlo-_Duke_of_Castro ;
+    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasMother data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :isSiblingOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSonOf data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro .
+
+data:Princess_Béatrice_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    rdfs:label "Princess Béatrice of the Two Sicilies"^^xsd:string ;
+    data:wdtLink wdt:Q4925346 ;
+    :alsoKnownAs "Béatrice Marie Caroline Louise Françoise de Bourbon"^^xsd:string,
+        "Princess Beatrice of Bourbon-Two Sicilies"^^xsd:string,
+        "Princess Beatrice of the Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasBrother data:Prince_Carlo-_Duke_of_Castro ;
+    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasMother data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :isDaughterOf data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :isSiblingOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSisterOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies .
+

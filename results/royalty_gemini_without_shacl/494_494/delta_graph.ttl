@@ -2,49 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_II a :Woman ;
-    :hasBirthYear 1926 ;
-    :hasDaughter data:Anne ;
-    :hasDeathYear 2022 ;
-    :hasFather data:George_VI ;
-    :hasMarriageYear 1947 ;
-    :hasMother data:Elizabeth_the_Queen_Mother ;
-    :hasSister data:Margaret ;
-    :hasSon data:Andrew,
-        data:Charles_III,
-        data:Edward .
+data:Bernhard a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Maximilian ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasRelation data:Stephanie_Anne_Kaul .
 
-data:Andrew a :Man ;
-    :hasFather data:Philip_Mountbatten .
+data:Berthold a :Man,
+        :Person .
 
-data:Anne a :Woman ;
-    :hasFather data:Philip_Mountbatten .
+data:Christian_Kaul a :Man,
+        :Person .
 
-data:Charles_III a :Man ;
-    :hasFather data:Philip_Mountbatten .
+data:Hannelore_Scheel a :Person,
+        :Woman .
 
-data:Claude_Bowes-Lyon a :Man .
+data:Hubert_Salvator_of_Austria a :Man,
+        :Person .
 
-data:Edward a :Man ;
-    :hasFather data:Philip_Mountbatten .
+data:Maximilian a :Man,
+        :Person ;
+    :hasFather data:Berthold ;
+    :hasMother data:Theodora_of_Greece_and_Denmark .
 
-data:Edward_VIII a :Man .
+data:Rosemary_of_Salm-Salm a :Person,
+        :Woman .
 
-data:George_V a :Man .
+data:Stephanie_Anne_Kaul a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel .
 
-data:Margaret a :Woman ;
-    :hasFather data:George_VI ;
-    :hasMother data:Elizabeth_the_Queen_Mother .
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Mary a :Woman .
-
-data:Elizabeth_the_Queen_Mother a :Woman ;
-    :hasMother data:Claude_Bowes-Lyon .
-
-data:George_VI a :Man ;
-    :hasBrother data:Edward_VIII ;
-    :hasFather data:George_V ;
-    :hasMother data:Mary .
-
-data:Philip_Mountbatten a :Man .
+data:Valerie_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Hubert_Salvator_of_Austria ;
+    :hasMother data:Rosemary_of_Salm-Salm .
 

@@ -85,34 +85,78 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George William, Hereditary Prince of Hanover, Duke of Brunswick-Lüneburg (German: Georg Wilhelm Christian Albert Edward Alexander Friedrich Ernst Waldemar Adolf; 28 October 1880 – 20 May 1912) was a German prince from the House of Hanover.
-He was the second child and eldest son of Ernest Augustus, Crown Prince of Hanover and Duke of Cumberland, and Princess Thyra of Denmark.
-His father was the only son of George V of Hanover and his mother was the youngest daughter of Christian IX of Denmark.
-His great-grandfather, Prince Ernest Augustus, Duke of Cumberland and Teviotdale, the fifth son of George III of the United Kingdom, became king of Hanover in 1837 because Salic Law barred Queen Victoria from inheriting the Hanoverian throne.
-His godparents included his maternal grandfather Christian IX of Denmark, his uncle George I of Greece, his uncle Frederick, Crown Prince of Denmark, his uncle Alexander Alexandrovich, Tsarevich of Russia, his uncle Albert Edward, Prince of Wales, his uncle Prince Valdemar of Denmark, Prince George, Duke of Cambridge, and William, Duke of Brunswick.
-The family had lived in exile in Austria since the Kingdom of Hanover was annexed by Prussia in the aftermath of the 1866 Austro-Prussian War.
-His father succeeded as pretender to the Hanoverian throne and as Duke of Cumberland and Teviotdale in the peerage of Great Britain in 1878.
-He represented his father at the funeral of Edward VII and the coronation of George V.
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
 
 
-When his kinsman William, Duke of Brunswick, died unmarried in 1884, George William was his heir after his father.
-Otto von Bismarck blocked Crown Ernest Augustus's claim because he had never relinquished his claim to Hanover and instead appointed Prince Albert of Prussia regent.
-Prince Albert died in 1906 and Crown Ernest Augustus offered that he and George William would renounce their claims to Brunswick to allow his second son Prince Ernest Augustus to succeed.
-The Bundesrat rejected this and appointed Duke John Albert of Mecklenburg as regent.
-The younger Ernest Augustus finally succeeded in 1913 after he married the German Emperor's daughter after George William's death.
-Death
+Princess Joan
 
-On 20 May 1912, George William was killed, aged 31, in a car crash near Nackel, Brandenburg, while driving from Prague to Copenhagen to attend the funeral of his uncle, Frederick VIII of Denmark.
-In response to George William's death, Wilhelm II, German Emperor, sent his sons Prince Eitel Friedrich and Prince August Wilhelm of Prussia to Nackel and sent a message of condolence to the Duke of Cumberland.
-In response to this friendly gesture, the Duke sent his only surviving son, Ernest Augustus, to Berlin to thank the Emperor.
-In Berlin, Ernest Augustus met and fell in love with the emperor's only daughter, Princess Victoria Louise of Prussia.
-They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, and the Emperor approved Ernest Augustus's succession to the duchy of Brunswick shortly after.
+
+Descendants of Prince René:
+
+
+Princess Maria Pia
+
+
+Princess Marina
+
+
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Princess Carolina of Bourbon-Parma, Marchioness of Sala (born 23 June 1974), is the fourth and youngest child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
+She is a member of the House of Bourbon-Parma as well an extended member of the Dutch royal family.
+Per a 1996 royal decree issued by Queen Beatrix, she is entitled to the style and title Her Royal Highness Princess Maria Carolina de Bourbon de Parme in The Netherlands as a member of the extended royal family.
+Early life
+
+Princess Carolina was born at 23 June 1974 in Nijmegen.
+She has two older brothers, Prince Carlos, the head of the House of Bourbon-Parma, and Prince Jaime.
+She also has one older sister, Princess Margarita.
+She was baptised at the Castle of Lignières in France with Prince Claus of the Netherlands, Princess Christina of the Netherlands and Princess Marie des Neiges of Bourbon-Parma as her godparents.
+She moved together with her mother and her brothers and sister to Soest, Netherlands, nearby the then residence of her grandparents the former Queen of the Netherlands Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
+Education and career
+
+Princess Carolina studied political science at University of Amsterdam and Harvard University, and also has an M.Sc.
+Marriage
+
+On 9 January 2012, it was announced that Princess Carolina would marry Albert Alphons Ludgerus Brenninkmeijer (born 16 May 1974), a member of the wealthy Brenninkmeijer family.
+The princess has been seen regularly at important events of the royal house of the Netherlands.
+In 2001 she was one of the maids of honor at the wedding of Prince Constantijn and Petra Laurentien Brinkhorst; and during the baptism of their daughter, Countess Eloise of Orange-Nassau, she was the godmother of the child.
+She was a witness at the church wedding of her cousin Prince Floris of Orange-Nassau, van Vollenhoven, and in 2010, was named as the godmother of Floris' second child, Eliane.
+
+
+Titles, styles and honours
+
+Already a ducal princess from birth, her father bestowed the substantive title Marchesa di Sala (Marchioness of Sala) upon her on 2 September 1996.
+In 1996 she was incorporated into the Dutch nobility by her aunt Queen Beatrix, with the highest title of nobility Prinses de Bourbon de Parme (Princess of Bourbon-Parma) and styled Hare Koninklijke Hoogheid (Her Royal Highness).
+She does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a granddaughter of Queen Juliana and first cousin of the present King Willem-Alexander, she is officially a member of the more extended Dutch royal family.
+Ancestry
+
+References
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -128,39 +172,9 @@ They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, a
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -175,6 +189,23 @@ They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, a
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -192,6 +223,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,29 +305,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -290,6 +328,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -302,6 +348,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -310,17 +358,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -348,6 +398,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -363,148 +497,98 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ccc91a53-1a16-4207-8136-1b6d33ff5a56)
- Call ID: ccc91a53-1a16-4207-8136-1b6d33ff5a56
+  AssignClass (5649c4e3-4c32-4b63-91f0-5a0528926f5c)
+ Call ID: 5649c4e3-4c32-4b63-91f0-5a0528926f5c
   Args:
-    type: :Man
-    source: George_William
-  AssignClass (4a9bd7fe-0758-4269-bcb3-f5d85423533f)
- Call ID: 4a9bd7fe-0758-4269-bcb3-f5d85423533f
-  Args:
-    type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (44811f5a-b23a-456a-826e-bbc48a45f1c1)
- Call ID: 44811f5a-b23a-456a-826e-bbc48a45f1c1
+    source: :Princess_Carolina
+    type: :Woman
+  AssignClass (66fd914a-7c42-4ad8-8943-13413aa6f7f3)
+ Call ID: 66fd914a-7c42-4ad8-8943-13413aa6f7f3
   Args:
     type: :Woman
-    source: Princess_Thyra_of_Denmark
-  AssignClass (a225447d-3dd7-413c-96bb-cab240e65194)
- Call ID: a225447d-3dd7-413c-96bb-cab240e65194
+    source: :Princess_Irene
+  AssignClass (e6e11973-67aa-4d2f-a317-22d1f80d76b2)
+ Call ID: e6e11973-67aa-4d2f-a317-22d1f80d76b2
   Args:
     type: :Man
-    source: George_V_of_Hanover
-  AssignClass (2f3d4a42-a136-42af-9744-5ed67131efcd)
- Call ID: 2f3d4a42-a136-42af-9744-5ed67131efcd
+    source: :Carlos_Hugo
+  AssignClass (aa5b4bed-362b-4332-8857-21062ae4cbd2)
+ Call ID: aa5b4bed-362b-4332-8857-21062ae4cbd2
+  Args:
+    source: :Prince_Carlos
+    type: :Man
+  AssignClass (c7e6c432-2ec3-47de-94f5-d1bce05919b5)
+ Call ID: c7e6c432-2ec3-47de-94f5-d1bce05919b5
   Args:
     type: :Man
-    source: Christian_IX_of_Denmark
-  AssignClass (06e5385f-ae69-4dd3-88cd-405eeaf96485)
- Call ID: 06e5385f-ae69-4dd3-88cd-405eeaf96485
+    source: :Prince_Jaime
+  AssignClass (2e402bcf-a2dd-4e23-a37b-1b482154b809)
+ Call ID: 2e402bcf-a2dd-4e23-a37b-1b482154b809
   Args:
-    type: :Man
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  AssignClass (380c5240-b920-4e53-9e58-8e675d733270)
- Call ID: 380c5240-b920-4e53-9e58-8e675d733270
-  Args:
-    type: :Man
-    source: George_III_of_the_United_Kingdom
-  AssignClass (8a635819-bfe1-4c6c-b1a2-ff46856bc1cc)
- Call ID: 8a635819-bfe1-4c6c-b1a2-ff46856bc1cc
-  Args:
-    type: :Man
-    source: Prince_Ernest_Augustus_II
-  AssignClass (496595b3-2423-48ee-8b68-93877536ba65)
- Call ID: 496595b3-2423-48ee-8b68-93877536ba65
-  Args:
+    source: :Princess_Margarita
     type: :Woman
-    source: Princess_Victoria_Louise_of_Prussia
-  AddLiteral (8a03f2e5-1af6-4ccf-a0c3-544554719a63)
- Call ID: 8a03f2e5-1af6-4ccf-a0c3-544554719a63
+  AssignClass (49574a2b-cfa6-49b9-937c-a64fcb4d0b96)
+ Call ID: 49574a2b-cfa6-49b9-937c-a64fcb4d0b96
   Args:
+    source: :Queen_Juliana
+    type: :Woman
+  AssignClass (19dd68fb-99c8-401b-b9cf-2f4fa732a502)
+ Call ID: 19dd68fb-99c8-401b-b9cf-2f4fa732a502
+  Args:
+    type: :Man
+    source: :Prince_Bernhard
+  AddTriple (902ec84c-11a7-4745-aaa2-cc10b3e11d7e)
+ Call ID: 902ec84c-11a7-4745-aaa2-cc10b3e11d7e
+  Args:
+    target: :Princess_Irene
+    source: :Princess_Carolina
+    relation: :isChildOf
+  AddTriple (ca4a1d06-6387-44bb-a754-482b721dd6bb)
+ Call ID: ca4a1d06-6387-44bb-a754-482b721dd6bb
+  Args:
+    relation: :isChildOf
+    source: :Princess_Carolina
+    target: :Carlos_Hugo
+  AddTriple (c3c70b97-4b84-416c-992a-fc6022b344f3)
+ Call ID: c3c70b97-4b84-416c-992a-fc6022b344f3
+  Args:
+    source: :Princess_Carolina
+    target: :Prince_Carlos
+    relation: :hasBrother
+  AddTriple (a95b2080-e58e-463a-b07c-4d67e2f05b60)
+ Call ID: a95b2080-e58e-463a-b07c-4d67e2f05b60
+  Args:
+    relation: :hasBrother
+    target: :Prince_Jaime
+    source: :Princess_Carolina
+  AddTriple (9a71bd97-30cb-40d3-afc6-556b333447be)
+ Call ID: 9a71bd97-30cb-40d3-afc6-556b333447be
+  Args:
+    source: :Princess_Carolina
+    target: :Princess_Margarita
+    relation: :hasSister
+  AddLiteral (3b17d971-0514-4786-bf72-9770dce0f3b3)
+ Call ID: 3b17d971-0514-4786-bf72-9770dce0f3b3
+  Args:
+    source: :Princess_Carolina
+    literal_value: 1974
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1880
-    literal_type: xsd:integer
-    source: George_William
-  AddLiteral (b61b174b-f6ca-4cd9-b9ee-ccbcddc9cfa0)
- Call ID: b61b174b-f6ca-4cd9-b9ee-ccbcddc9cfa0
+  AddTriple (07dec1bc-ffb4-4c44-8086-07a5b3da3aab)
+ Call ID: 07dec1bc-ffb4-4c44-8086-07a5b3da3aab
   Args:
-    literal_value: 1912
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: George_William
-  AddTriple (b59f636b-cbbf-4085-a0e3-e4f064ffaa16)
- Call ID: b59f636b-cbbf-4085-a0e3-e4f064ffaa16
+    relation: :isChildOf
+    source: :Princess_Irene
+    target: :Queen_Juliana
+  AddTriple (bf40db20-4081-4622-993d-000594f29077)
+ Call ID: bf40db20-4081-4622-993d-000594f29077
   Args:
-    source: George_William
-    relation: :hasFather
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (cbbb0d80-b07e-442a-b352-26c58345f98b)
- Call ID: cbbb0d80-b07e-442a-b352-26c58345f98b
+    target: :Prince_Bernhard
+    source: :Princess_Irene
+    relation: :isChildOf
+  Finish (262cc654-a640-47bd-b8b4-9ad305d4de37)
+ Call ID: 262cc654-a640-47bd-b8b4-9ad305d4de37
   Args:
-    target: Princess_Thyra_of_Denmark
-    relation: :hasMother
-    source: George_William
-  AddTriple (d5fffd61-cd39-4806-a64b-bc26a6d62995)
- Call ID: d5fffd61-cd39-4806-a64b-bc26a6d62995
-  Args:
-    target: George_V_of_Hanover
-    relation: :hasFather
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (2cd89dd9-81dd-4839-b88f-eb949262be54)
- Call ID: 2cd89dd9-81dd-4839-b88f-eb949262be54
-  Args:
-    source: Prince_Ernest_Augustus_II
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasFather
-  AddTriple (b70b9a36-318a-429c-820d-d9fcc1e9dafb)
- Call ID: b70b9a36-318a-429c-820d-d9fcc1e9dafb
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasFather
-    target: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  AddTriple (7764ce9a-caca-49c6-8682-7334c78272dd)
- Call ID: 7764ce9a-caca-49c6-8682-7334c78272dd
-  Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    relation: :hasFather
-    target: George_III_of_the_United_Kingdom
-  AddTriple (48d4ceee-55ba-4328-b9e1-fb335ab55709)
- Call ID: 48d4ceee-55ba-4328-b9e1-fb335ab55709
-  Args:
-    relation: :hasMother
-    target: Christian_IX_of_Denmark
-    source: Princess_Thyra_of_Denmark
-  AddTriple (538dad27-01ef-4411-848b-b20c8beb9031)
- Call ID: 538dad27-01ef-4411-848b-b20c8beb9031
-  Args:
-    source: Prince_Ernest_Augustus_II
-    relation: :hasMarriageYear
-    target: 1913
-  AddTriple (2bfb2679-8445-4ae4-b7e6-2f7a6aa24fbf)
- Call ID: 2bfb2679-8445-4ae4-b7e6-2f7a6aa24fbf
-  Args:
-    relation: :hasMarriageYear
-    target: 1913
-    source: Princess_Victoria_Louise_of_Prussia
-  AddTriple (3a7c491f-2a90-4e69-9870-8e0ed8370c14)
- Call ID: 3a7c491f-2a90-4e69-9870-8e0ed8370c14
-  Args:
-    source: Prince_Ernest_Augustus_II
-    relation: :hasRelation
-    target: Princess_Victoria_Louise_of_Prussia
-  Finish (09022736-6fd9-433a-88d3-d625a239763c)
- Call ID: 09022736-6fd9-433a-88d3-d625a239763c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -573,35 +657,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_William a :Man ;
-      :hasBirthYear 1880 ;
-      :hasDeathYear 1912 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Princess_Thyra_of_Denmark .
+  data:Princess_Carolina a :Woman ;
+      :hasBirthYear 1974 ;
+      :hasBrother data:Prince_Carlos,
+          data:Prince_Jaime ;
+      :hasSister data:Princess_Margarita ;
+      :isChildOf data:Carlos_Hugo,
+          data:Princess_Irene .
 
-  data:Prince_Ernest_Augustus_II a :Man ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMarriageYear data:1913 ;
-      :hasRelation data:Princess_Victoria_Louise_of_Prussia .
+  data:Carlos_Hugo a :Man .
 
-  data:Christian_IX_of_Denmark a :Man .
+  data:Prince_Bernhard a :Man .
 
-  data:George_III_of_the_United_Kingdom a :Man .
+  data:Prince_Carlos a :Man .
 
-  data:George_V_of_Hanover a :Man .
+  data:Prince_Jaime a :Man .
 
-  data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man ;
-      :hasFather data:George_III_of_the_United_Kingdom .
+  data:Princess_Irene a :Woman ;
+      :isChildOf data:Prince_Bernhard,
+          data:Queen_Juliana .
 
-  data:Princess_Thyra_of_Denmark a :Woman ;
-      :hasMother data:Christian_IX_of_Denmark .
+  data:Princess_Margarita a :Woman .
 
-  data:Princess_Victoria_Louise_of_Prussia a :Woman ;
-      :hasMarriageYear data:1913 .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man ;
-      :hasFather data:George_V_of_Hanover,
-          data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale .
+  data:Queen_Juliana a :Woman .
 
 
 
@@ -613,230 +691,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (864ae212-b9e7-46bb-98c3-2a914fa636ee)
- Call ID: 864ae212-b9e7-46bb-98c3-2a914fa636ee
+  ValidateShacl (fac8845b-c516-4394-abc3-c960a615302c)
+ Call ID: fac8845b-c516-4394-abc3-c960a615302c
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:27
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person George_III_of_the_United_Kingdom, who is the father of Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, lacks the required :Ancestor class.
+      The node Prince_Bernhard, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
+      AssignClass(node='Prince_Bernhard', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of Prince_Ernest_Augustus_II, lacks the required :Ancestor class.
+      The node Queen_Juliana, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(node='Queen_Juliana', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of George_William, lacks the required :Ancestor class.
+      The node Carlos_Hugo, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(node='Carlos_Hugo', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person George_V_of_Hanover, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
+      The node Princess_Irene, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_V_of_Hanover, :Ancestor)
+      AssignClass(node='Princess_Irene', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
+      The node Prince_Bernhard, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, :Ancestor)
+      AssignClass(node='Prince_Bernhard', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: More than 1 values on data:Ernest_Augustus_Crown_Prince_of_Hanover->:hasFather
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover has multiple fathers assigned, violating the functional property constraint.
+      The node Queen_Juliana, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Ernest_Augustus_Crown_Prince_of_Hanover, :hasFather, [incorrect_father_node])
+      AssignClass(node='Queen_Juliana', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Princess_Thyra_of_Denmark, who is the mother of George_William, lacks the required :Ancestor class.
+      The node Carlos_Hugo, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
+      AssignClass(node='Carlos_Hugo', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of Prince_Ernest_Augustus_II, lacks the required :Ancestor class.
+      The node Princess_Irene, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(node='Princess_Irene', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of George_William, lacks the required :Ancestor class.
+      The node Prince_Bernhard, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(node='Prince_Bernhard', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person George_V_of_Hanover, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
+      The node Queen_Juliana, identified as a parent of Princess_Irene via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_V_of_Hanover, :Ancestor)
+      AssignClass(node='Queen_Juliana', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
+      The node Carlos_Hugo, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, :Ancestor)
+      AssignClass(node='Carlos_Hugo', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: More than 1 values on data:Ernest_Augustus_Crown_Prince_of_Hanover->:hasFather
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover has multiple fathers assigned, violating the functional property constraint.
+      The node Princess_Irene, identified as a parent of Princess_Carolina via the isChildOf property, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Ernest_Augustus_Crown_Prince_of_Hanover, :hasFather, [incorrect_father_node])
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_III_of_the_United_Kingdom, who is the father of Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Princess_Thyra_of_Denmark, who is the mother of George_William, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of Prince_Ernest_Augustus_II, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Ernest_Augustus_Crown_Prince_of_Hanover, who is the father of George_William, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_V_of_Hanover, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_V_of_Hanover, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, who is the father of Ernest_Augustus_Crown_Prince_of_Hanover, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: More than 1 values on data:Ernest_Augustus_Crown_Prince_of_Hanover->:hasFather
-    LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover has multiple fathers assigned, violating the functional property constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Ernest_Augustus_Crown_Prince_of_Hanover, :hasFather, [incorrect_father_node])
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person George_III_of_the_United_Kingdom, who is the father of Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Princess_Thyra_of_Denmark, who is the mother of George_William, lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Christian_IX_of_Denmark is assigned as the mother of Princess_Thyra_of_Denmark, but lacks the :Woman or :Ancestor class requirement.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+      AssignClass(node='Princess_Irene', class=':Ancestor')
 
 
 
@@ -845,228 +803,29 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (16a97217-cc96-45ab-bfba-de6c69893400)
- Call ID: 16a97217-cc96-45ab-bfba-de6c69893400
-  Args:
-    target: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    relation: :hasFather
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (3f887a60-6105-4237-90bb-5f25ff82ef00)
- Call ID: 3f887a60-6105-4237-90bb-5f25ff82ef00
+  AssignClass (2ebd2a97-66cd-4bf5-92ae-224f7f920df2)
+ Call ID: 2ebd2a97-66cd-4bf5-92ae-224f7f920df2
   Args:
     type: :Ancestor
-    source: George_III_of_the_United_Kingdom
-  AssignClass (37e4f2d3-13fe-4d66-84af-500f593c76d8)
- Call ID: 37e4f2d3-13fe-4d66-84af-500f593c76d8
+    source: :Prince_Bernhard
+  AssignClass (260761ab-4802-4a0a-9392-ed41e1af671d)
+ Call ID: 260761ab-4802-4a0a-9392-ed41e1af671d
   Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    source: :Queen_Juliana
     type: :Ancestor
-  AssignClass (4ef2f73d-8f14-4c74-b85d-dffb098daf85)
- Call ID: 4ef2f73d-8f14-4c74-b85d-dffb098daf85
-  Args:
-    source: George_V_of_Hanover
-    type: :Ancestor
-  AssignClass (ce917541-f9f5-491f-a9ac-4477072e6e38)
- Call ID: ce917541-f9f5-491f-a9ac-4477072e6e38
-  Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    type: :Ancestor
-  AssignClass (6eca7b7a-3b87-4b2b-a18c-2c8c432680df)
- Call ID: 6eca7b7a-3b87-4b2b-a18c-2c8c432680df
-  Args:
-    source: Princess_Thyra_of_Denmark
-    type: :Ancestor
-  AssignClass (68bf52bc-e7e5-465a-8cf3-9945d4c11c90)
- Call ID: 68bf52bc-e7e5-465a-8cf3-9945d4c11c90
+  AssignClass (7234124c-7af2-4539-813a-ab4d0072f11a)
+ Call ID: 7234124c-7af2-4539-813a-ab4d0072f11a
   Args:
     type: :Ancestor
-    source: Christian_IX_of_Denmark
-  AssignClass (b4a5370e-e389-4c78-b2bf-474c98f4a163)
- Call ID: b4a5370e-e389-4c78-b2bf-474c98f4a163
-  Args:
-    type: :Male
-    source: Christian_IX_of_Denmark
-  AssignClass (4264f033-f962-4dbe-b5ac-726b5ef818eb)
- Call ID: 4264f033-f962-4dbe-b5ac-726b5ef818eb
-  Args:
-    source: George_III_of_the_United_Kingdom
-    type: :Male
-  AssignClass (b71d4720-2f9a-48df-be29-ee36a532224a)
- Call ID: b71d4720-2f9a-48df-be29-ee36a532224a
-  Args:
-    type: :Male
-    source: George_V_of_Hanover
-  AssignClass (42a244a7-6798-4766-a352-fef091f87d06)
- Call ID: 42a244a7-6798-4766-a352-fef091f87d06
-  Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    type: :Male
-  AssignClass (1351c61a-f0e1-4c00-af70-dbe452229934)
- Call ID: 1351c61a-f0e1-4c00-af70-dbe452229934
-  Args:
-    type: :Male
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (b61c5ecd-9793-4bd9-a5f0-c58d0c7a5202)
- Call ID: b61c5ecd-9793-4bd9-a5f0-c58d0c7a5202
-  Args:
-    type: :Female
-    source: Princess_Thyra_of_Denmark
-  AssignClass (cec69f94-5064-42b0-bed2-ed3e12b486a6)
- Call ID: cec69f94-5064-42b0-bed2-ed3e12b486a6
-  Args:
-    type: :Female
-    source: Princess_Victoria_Louise_of_Prussia
-  AssignClass (9baed892-c4cc-44c9-987c-47a3ee7d8f61)
- Call ID: 9baed892-c4cc-44c9-987c-47a3ee7d8f61
-  Args:
-    source: George_William
-    type: :Male
-  AssignClass (91de5c21-4d64-4b74-a5a7-dfb6a0854926)
- Call ID: 91de5c21-4d64-4b74-a5a7-dfb6a0854926
-  Args:
-    source: Prince_Ernest_Augustus_II
-    type: :Male
-  AssignClass (e2d13b3a-ce24-47c6-b5a5-ef4529ed7cff)
- Call ID: e2d13b3a-ce24-47c6-b5a5-ef4529ed7cff
+    source: :Carlos_Hugo
+  AssignClass (c68d8f41-c8e6-467f-82b8-f212e35c6079)
+ Call ID: c68d8f41-c8e6-467f-82b8-f212e35c6079
   Args:
     type: :Ancestor
-    source: Princess_Victoria_Louise_of_Prussia
-  AssignClass (748b79b6-6cbf-4fe1-b3cf-e03302af94dc)
- Call ID: 748b79b6-6cbf-4fe1-b3cf-e03302af94dc
+    source: :Princess_Irene
+  Finish (4f91ec19-f56f-442f-8cad-f1a4bc361f04)
+ Call ID: 4f91ec19-f56f-442f-8cad-f1a4bc361f04
   Args:
-    type: :Person
-    source: George_William
-  AssignClass (f15d0e5a-1620-4a90-9633-223f757589b7)
- Call ID: f15d0e5a-1620-4a90-9633-223f757589b7
-  Args:
-    type: :Person
-    source: Prince_Ernest_Augustus_II
-  AssignClass (3f4c0e8f-cc99-4713-8050-bd4acf010f04)
- Call ID: 3f4c0e8f-cc99-4713-8050-bd4acf010f04
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    type: :Person
-  AssignClass (dd3467bf-59f3-4391-9864-440e111b0e70)
- Call ID: dd3467bf-59f3-4391-9864-440e111b0e70
-  Args:
-    source: Princess_Thyra_of_Denmark
-    type: :Person
-  AssignClass (64939349-f6d7-4a75-90ff-4866b02edfd0)
- Call ID: 64939349-f6d7-4a75-90ff-4866b02edfd0
-  Args:
-    source: George_V_of_Hanover
-    type: :Person
-  AssignClass (acdac2be-e5a0-4c8e-a67f-f68e6ca1a534)
- Call ID: acdac2be-e5a0-4c8e-a67f-f68e6ca1a534
-  Args:
-    source: Christian_IX_of_Denmark
-    type: :Person
-  AssignClass (8228a536-b0f1-43f1-bb1c-b4cbaeb3a15e)
- Call ID: 8228a536-b0f1-43f1-bb1c-b4cbaeb3a15e
-  Args:
-    type: :Person
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  AssignClass (3eace861-0a3e-4b20-ad03-f795d5578050)
- Call ID: 3eace861-0a3e-4b20-ad03-f795d5578050
-  Args:
-    source: George_III_of_the_United_Kingdom
-    type: :Person
-  AssignClass (9b32dc8c-35e3-4781-a506-3e60838a4d86)
- Call ID: 9b32dc8c-35e3-4781-a506-3e60838a4d86
-  Args:
-    source: Princess_Victoria_Louise_of_Prussia
-    type: :Person
-  Finish (3d2f34cb-bc1e-4c4f-995f-62bea64ff5ad)
- Call ID: 3d2f34cb-bc1e-4c4f-995f-62bea64ff5ad
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1087,716 +846,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_William a :Male,
-          :Man,
-          :Person ;
-      :hasBirthYear 1880 ;
-      :hasDeathYear 1912 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Princess_Thyra_of_Denmark .
+  data:Princess_Carolina a :Woman ;
+      :hasBirthYear 1974 ;
+      :hasBrother data:Prince_Carlos,
+          data:Prince_Jaime ;
+      :hasSister data:Princess_Margarita ;
+      :isChildOf data:Carlos_Hugo,
+          data:Princess_Irene .
 
-  data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Ancestor,
-          :Male,
-          :Man,
-          :Person ;
-      :hasFather data:George_III_of_the_United_Kingdom .
+  data:Carlos_Hugo a :Ancestor,
+          :Man .
 
-  data:Prince_Ernest_Augustus_II a :Male,
-          :Man,
-          :Person ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMarriageYear data:1913 ;
-      :hasRelation data:Princess_Victoria_Louise_of_Prussia .
+  data:Prince_Bernhard a :Ancestor,
+          :Man .
 
-  data:Christian_IX_of_Denmark a :Ancestor,
-          :Male,
-          :Man,
-          :Person .
+  data:Prince_Carlos a :Man .
 
-  data:George_III_of_the_United_Kingdom a :Ancestor,
-          :Male,
-          :Man,
-          :Person .
+  data:Prince_Jaime a :Man .
 
-  data:George_V_of_Hanover a :Ancestor,
-          :Male,
-          :Man,
-          :Person .
-
-  data:Princess_Thyra_of_Denmark a :Ancestor,
-          :Female,
-          :Person,
+  data:Princess_Irene a :Ancestor,
           :Woman ;
-      :hasMother data:Christian_IX_of_Denmark .
+      :isChildOf data:Prince_Bernhard,
+          data:Queen_Juliana .
 
-  data:Princess_Victoria_Louise_of_Prussia a :Ancestor,
-          :Female,
-          :Person,
-          :Woman ;
-      :hasMarriageYear data:1913 .
+  data:Princess_Margarita a :Woman .
 
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-          :Male,
-          :Man,
-          :Person ;
-      :hasFather data:George_V_of_Hanover .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (57c1eb1b-1b41-4044-97f8-ca995389783e)
- Call ID: 57c1eb1b-1b41-4044-97f8-ca995389783e
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:61
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has 'Christian_IX_of_Denmark' as a mother, which is invalid because the value must be an instance of :Ancestor or :Woman, but 'Christian_IX_of_Denmark' is a man.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the relationship 'hasMother' between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [2]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Christian_IX_of_Denmark' is incorrectly assigned multiple disjoint classes (:Man, :Ancestor, :Male, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Christian_IX_of_Denmark'.
-
-
-  Violation [3]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_V_of_Hanover' is incorrectly assigned multiple disjoint classes (:Man, :Ancestor, :Male, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_V_of_Hanover'.
-
-
-  Violation [4]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is incorrectly assigned multiple disjoint classes (:Man, :Ancestor, :Male, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale'.
-
-
-  Violation [5]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Victoria_Louise_of_Prussia' is incorrectly assigned multiple disjoint classes (:Woman, :Female, :Ancestor, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [6]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' is incorrectly assigned multiple disjoint classes (:Woman, :Ancestor, :Female, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [7]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_III_of_the_United_Kingdom' is incorrectly assigned multiple disjoint classes (:Man, :Ancestor, :Male, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [8]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is incorrectly assigned multiple disjoint classes (:Man, :Ancestor, :Male, :Person).
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [9]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Christian_IX_of_Denmark' is assigned the disjoint class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Christian_IX_of_Denmark'.
-
-
-  Violation [10]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_V_of_Hanover' is assigned the disjoint class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_V_of_Hanover'.
-
-
-  Violation [11]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is assigned the disjoint class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale'.
-
-
-  Violation [12]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' has invalid class assignments due to disjointness constraints.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'Prince_Ernest_Augustus_II'.
-
-
-  Violation [13]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_William' has invalid class assignments due to disjointness constraints.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'George_William'.
-
-
-  Violation [14]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_III_of_the_United_Kingdom' is assigned the disjoint class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [15]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is assigned the disjoint class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [16]:
-    SHACL message: Node data:Princess_Thyra_of_Denmark is closed. It cannot have value: data:Christian_IX_of_Denmark
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' is closed and cannot have the property 'hasMother' pointing to 'Christian_IX_of_Denmark'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [17]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [18]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Victoria_Louise_of_Prussia' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [19]:
-    SHACL message: Node data:Prince_Ernest_Augustus_II is closed. It cannot have value: data:Princess_Victoria_Louise_of_Prussia
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is closed and cannot have the property 'hasRelation' pointing to 'Princess_Victoria_Louise_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasRelation' relationship between 'Prince_Ernest_Augustus_II' and 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [20]:
-    SHACL message: Node data:Prince_Ernest_Augustus_II is closed. It cannot have value: data:Ernest_Augustus_Crown_Prince_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is closed and cannot have the property 'hasFather' pointing to 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Prince_Ernest_Augustus_II' and 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [21]:
-    SHACL message: Node data:Princess_Thyra_of_Denmark is closed. It cannot have value: data:Christian_IX_of_Denmark
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' is closed and cannot have the property 'hasMother' pointing to 'Christian_IX_of_Denmark'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [22]:
-    SHACL message: Node data:George_William is closed. It cannot have value: data:Ernest_Augustus_Crown_Prince_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'George_William' is closed and cannot have the property 'hasFather' pointing to 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'George_William' and 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [23]:
-    SHACL message: Node data:George_William is closed. It cannot have value: data:Princess_Thyra_of_Denmark
-    LLM-provided explanation of the violation:
-      The node 'George_William' is closed and cannot have the property 'hasMother' pointing to 'Princess_Thyra_of_Denmark'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'George_William' and 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [24]:
-    SHACL message: Node data:Ernest_Augustus_Crown_Prince_of_Hanover is closed. It cannot have value: data:George_V_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is closed and cannot have the property 'hasFather' pointing to 'George_V_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Ernest_Augustus_Crown_Prince_of_Hanover' and 'George_V_of_Hanover'.
-
-
-  Violation [25]:
-    SHACL message: Node data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is closed. It cannot have value: data:George_III_of_the_United_Kingdom
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is closed and cannot have the property 'hasFather' pointing to 'George_III_of_the_United_Kingdom'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' and 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [26]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Christian_IX_of_Denmark' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Christian_IX_of_Denmark'.
-
-
-  Violation [27]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_V_of_Hanover' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_V_of_Hanover'.
-
-
-  Violation [28]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'Prince_Ernest_Augustus_II'.
-
-
-  Violation [29]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [30]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_William' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'George_William'.
-
-
-  Violation [31]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_III_of_the_United_Kingdom' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [32]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [33]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale'.
-
-
-  Violation [34]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Victoria_Louise_of_Prussia' has conflicting class assignments violating disjointness.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has an invalid mother assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has an invalid mother assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [37]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Christian_IX_of_Denmark' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Christian_IX_of_Denmark'.
-
-
-  Violation [38]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_V_of_Hanover' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_V_of_Hanover'.
-
-
-  Violation [39]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is incorrectly assigned the class ':Male'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'Prince_Ernest_Augustus_II'.
-
-
-  Violation [40]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [41]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_William' is incorrectly assigned the class ':Male'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'George_William'.
-
-
-  Violation [42]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_III_of_the_United_Kingdom' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [43]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [44]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale'.
-
-
-  Violation [45]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Victoria_Louise_of_Prussia' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [46]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has an invalid mother assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'Princess_Thyra_of_Denmark' and 'Christian_IX_of_Denmark'.
-
-
-  Violation [47]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Thyra_of_Denmark' has conflicting class assignments.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [48]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Princess_Victoria_Louise_of_Prussia' has conflicting class assignments.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [49]:
-    SHACL message: Node data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is closed. It cannot have value: data:George_III_of_the_United_Kingdom
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is closed and cannot have the property 'hasFather' pointing to 'George_III_of_the_United_Kingdom'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' and 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [50]:
-    SHACL message: Node data:Prince_Ernest_Augustus_II is closed. It cannot have value: data:Princess_Victoria_Louise_of_Prussia
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is closed and cannot have the property 'hasRelation' pointing to 'Princess_Victoria_Louise_of_Prussia'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasRelation' relationship between 'Prince_Ernest_Augustus_II' and 'Princess_Victoria_Louise_of_Prussia'.
-
-
-  Violation [51]:
-    SHACL message: Node data:Prince_Ernest_Augustus_II is closed. It cannot have value: data:Ernest_Augustus_Crown_Prince_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is closed and cannot have the property 'hasFather' pointing to 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Prince_Ernest_Augustus_II' and 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [52]:
-    SHACL message: Node data:George_William is closed. It cannot have value: data:Ernest_Augustus_Crown_Prince_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'George_William' is closed and cannot have the property 'hasFather' pointing to 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'George_William' and 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-  Violation [53]:
-    SHACL message: Node data:George_William is closed. It cannot have value: data:Princess_Thyra_of_Denmark
-    LLM-provided explanation of the violation:
-      The node 'George_William' is closed and cannot have the property 'hasMother' pointing to 'Princess_Thyra_of_Denmark'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasMother' relationship between 'George_William' and 'Princess_Thyra_of_Denmark'.
-
-
-  Violation [54]:
-    SHACL message: Node data:Ernest_Augustus_Crown_Prince_of_Hanover is closed. It cannot have value: data:George_V_of_Hanover
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is closed and cannot have the property 'hasFather' pointing to 'George_V_of_Hanover'.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the 'hasFather' relationship between 'Ernest_Augustus_Crown_Prince_of_Hanover' and 'George_V_of_Hanover'.
-
-
-  Violation [55]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Christian_IX_of_Denmark' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Christian_IX_of_Denmark'.
-
-
-  Violation [56]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_V_of_Hanover' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_V_of_Hanover'.
-
-
-  Violation [57]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale'.
-
-
-  Violation [58]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Prince_Ernest_Augustus_II' is incorrectly assigned the class ':Male'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'Prince_Ernest_Augustus_II'.
-
-
-  Violation [59]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_William' is incorrectly assigned the class ':Male'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Male' from 'George_William'.
-
-
-  Violation [60]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'George_III_of_the_United_Kingdom' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'George_III_of_the_United_Kingdom'.
-
-
-  Violation [61]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Ernest_Augustus_Crown_Prince_of_Hanover' is incorrectly assigned the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the class ':Ancestor' from 'Ernest_Augustus_Crown_Prince_of_Hanover'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (9807afa6-9cfb-4099-a641-ebed380af5f1)
- Call ID: 9807afa6-9cfb-4099-a641-ebed380af5f1
-  Args:
-    relation: :hasMother
-    target: Christian_IX_of_Denmark
-    source: Princess_Thyra_of_Denmark
-  UnassignClass (16c44341-6dee-4dcd-b0f0-b6fb624e2e0e)
- Call ID: 16c44341-6dee-4dcd-b0f0-b6fb624e2e0e
-  Args:
-    type: :Ancestor
-    source: Christian_IX_of_Denmark
-  UnassignClass (efccc3f5-0959-44db-9c2a-66737d95e8d8)
- Call ID: efccc3f5-0959-44db-9c2a-66737d95e8d8
-  Args:
-    type: :Ancestor
-    source: George_V_of_Hanover
-  UnassignClass (804de6dd-3337-4da5-9125-0a6863cbac01)
- Call ID: 804de6dd-3337-4da5-9125-0a6863cbac01
-  Args:
-    type: :Ancestor
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  UnassignClass (66fb0f9d-b9a3-4726-873e-28574b8e1e8d)
- Call ID: 66fb0f9d-b9a3-4726-873e-28574b8e1e8d
-  Args:
-    type: :Ancestor
-    source: Princess_Victoria_Louise_of_Prussia
-  UnassignClass (a7fab00c-c635-46f0-b3c3-d9a0f368cc92)
- Call ID: a7fab00c-c635-46f0-b3c3-d9a0f368cc92
-  Args:
-    type: :Ancestor
-    source: Princess_Thyra_of_Denmark
-  UnassignClass (d2957225-f822-493e-b08d-f8e74ff413fa)
- Call ID: d2957225-f822-493e-b08d-f8e74ff413fa
-  Args:
-    type: :Ancestor
-    source: George_III_of_the_United_Kingdom
-  UnassignClass (156048d8-6e12-4620-b575-ebc6f8b858ee)
- Call ID: 156048d8-6e12-4620-b575-ebc6f8b858ee
-  Args:
-    type: :Ancestor
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  UnassignClass (cb019ae2-da33-4077-93ee-382dd2df323a)
- Call ID: cb019ae2-da33-4077-93ee-382dd2df323a
-  Args:
-    type: :Male
-    source: Prince_Ernest_Augustus_II
-  UnassignClass (834281e2-a8d1-424e-9d9e-51156c989b7c)
- Call ID: 834281e2-a8d1-424e-9d9e-51156c989b7c
-  Args:
-    type: :Male
-    source: George_William
-  Finish (2b91787f-80d3-4593-a9ac-30cfebc32ef3)
- Call ID: 2b91787f-80d3-4593-a9ac-30cfebc32ef3
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Christian_IX_of_Denmark a :Male,
-          :Man,
-          :Person .
-
-  data:George_William a :Man,
-          :Person ;
-      :hasBirthYear 1880 ;
-      :hasDeathYear 1912 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Princess_Thyra_of_Denmark .
-
-  data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Male,
-          :Man,
-          :Person ;
-      :hasFather data:George_III_of_the_United_Kingdom .
-
-  data:Prince_Ernest_Augustus_II a :Man,
-          :Person ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMarriageYear data:1913 ;
-      :hasRelation data:Princess_Victoria_Louise_of_Prussia .
-
-  data:George_III_of_the_United_Kingdom a :Male,
-          :Man,
-          :Person .
-
-  data:George_V_of_Hanover a :Male,
-          :Man,
-          :Person .
-
-  data:Princess_Thyra_of_Denmark a :Female,
-          :Person,
+  data:Queen_Juliana a :Ancestor,
           :Woman .
 
-  data:Princess_Victoria_Louise_of_Prussia a :Female,
-          :Person,
-          :Woman ;
-      :hasMarriageYear data:1913 .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Male,
-          :Man,
-          :Person ;
-      :hasFather data:George_V_of_Hanover .
-
 
 
 ================================= Tool Message =================================
@@ -1807,575 +884,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (c5705e43-fd88-4f30-b59d-4dcd307e32df)
- Call ID: c5705e43-fd88-4f30-b59d-4dcd307e32df
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:47
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale has a 'hasFather' relationship with George_III_of_the_United_Kingdom, but George_III_of_the_United_Kingdom is not classified as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_III_of_the_United_Kingdom.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_II has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover has a 'hasFather' relationship with George_V_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_V_of_Hanover.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasMother' relationship with Princess_Thyra_of_Denmark, but the value node is missing the required :Ancestor or :Woman classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Princess_Thyra_of_Denmark.
-
-
-  Violation [6]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Christian_IX_of_Denmark is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Christian_IX_of_Denmark.
-
-
-  Violation [7]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_V_of_Hanover is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_V_of_Hanover.
-
-
-  Violation [8]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale.
-
-
-  Violation [9]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_III_of_the_United_Kingdom is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_III_of_the_United_Kingdom.
-
-
-  Violation [10]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [11]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Thyra_of_Denmark is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Thyra_of_Denmark.
-
-
-  Violation [12]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Victoria_Louise_of_Prussia is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Victoria_Louise_of_Prussia.
-
-
-  Violation [13]:
-    SHACL message: Node data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is closed. It cannot have value: data:George_III_of_the_United_Kingdom
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is defined as a closed shape, meaning it cannot contain property values like 'hasFather' that are not explicitly allowed for its type.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the relationship :hasFather between Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale and George_III_of_the_United_Kingdom.
-
-
-  Violation [14]:
-    SHACL message: Node data:Ernest_Augustus_Crown_Prince_of_Hanover is closed. It cannot have value: data:George_V_of_Hanover
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover is defined as a closed shape, meaning it cannot contain property values like 'hasFather' that are not explicitly allowed for its type.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the relationship :hasFather between Ernest_Augustus_Crown_Prince_of_Hanover and George_V_of_Hanover.
-
-
-  Violation [15]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Christian_IX_of_Denmark is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Christian_IX_of_Denmark.
-
-
-  Violation [16]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_V_of_Hanover is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_V_of_Hanover.
-
-
-  Violation [17]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale.
-
-
-  Violation [18]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Victoria_Louise_of_Prussia is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Victoria_Louise_of_Prussia.
-
-
-  Violation [19]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Thyra_of_Denmark is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Thyra_of_Denmark.
-
-
-  Violation [20]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_III_of_the_United_Kingdom is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_III_of_the_United_Kingdom.
-
-
-  Violation [21]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover is assigned to the :Sex shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_II has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover has a 'hasFather' relationship with George_V_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_V_of_Hanover.
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale has a 'hasFather' relationship with George_III_of_the_United_Kingdom, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_III_of_the_United_Kingdom.
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasMother' relationship with Princess_Thyra_of_Denmark, but the value node is missing the required :Ancestor or :Woman classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Princess_Thyra_of_Denmark.
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_II has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasFather' relationship with Ernest_Augustus_Crown_Prince_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover has a 'hasFather' relationship with George_V_of_Hanover, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_V_of_Hanover.
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale has a 'hasFather' relationship with George_III_of_the_United_Kingdom, but the value node is missing the required :Ancestor or :Man classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to George_III_of_the_United_Kingdom.
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node George_William has a 'hasMother' relationship with Princess_Thyra_of_Denmark, but the value node is missing the required :Ancestor or :Woman classification.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign :Ancestor to Princess_Thyra_of_Denmark.
-
-
-  Violation [32]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Christian_IX_of_Denmark is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Christian_IX_of_Denmark.
-
-
-  Violation [33]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_V_of_Hanover is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_V_of_Hanover.
-
-
-  Violation [34]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Thyra_of_Denmark is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Thyra_of_Denmark.
-
-
-  Violation [35]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_III_of_the_United_Kingdom is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_III_of_the_United_Kingdom.
-
-
-  Violation [36]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-  Violation [37]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is assigned multiple disjoint classes (:Man, :Male, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale.
-
-
-  Violation [38]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Victoria_Louise_of_Prussia is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Victoria_Louise_of_Prussia.
-
-
-  Violation [39]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Thyra_of_Denmark is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Thyra_of_Denmark.
-
-
-  Violation [40]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Princess_Victoria_Louise_of_Prussia is assigned multiple disjoint classes (:Woman, :Female, :Person), violating the disjointness constraint.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Female class from Princess_Victoria_Louise_of_Prussia.
-
-
-  Violation [41]:
-    SHACL message: Node data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is closed. It cannot have value: data:George_III_of_the_United_Kingdom
-    LLM-provided explanation of the violation:
-      The node Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is defined as a closed shape, meaning it cannot contain property values like 'hasFather' that are not explicitly allowed for its type.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the relationship :hasFather between Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale and George_III_of_the_United_Kingdom.
-
-
-  Violation [42]:
-    SHACL message: Node data:Ernest_Augustus_Crown_Prince_of_Hanover is closed. It cannot have value: data:George_V_of_Hanover
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Crown_Prince_of_Hanover is defined as a closed shape, meaning it cannot contain property values like 'hasFather' that are not explicitly allowed for its type.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to remove the relationship :hasFather between Ernest_Augustus_Crown_Prince_of_Hanover and George_V_of_Hanover.
-
-
-  Violation [43]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Christian_IX_of_Denmark is assigned to the :Male shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Christian_IX_of_Denmark.
-
-
-  Violation [44]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_V_of_Hanover is assigned to the :Male shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_V_of_Hanover.
-
-
-  Violation [45]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale is assigned to the :Male shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale.
-
-
-  Violation [46]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      George_III_of_the_United_Kingdom is assigned to the :Male shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from George_III_of_the_United_Kingdom.
-
-
-  Violation [47]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      Ernest_Augustus_Crown_Prince_of_Hanover is assigned to the :Male shape, which is disjoint from :Person and other classes, creating a conflict.
-    LLM-provided instruction on how to handle the violation:
-      Use UnassignClass to remove the :Male class from Ernest_Augustus_Crown_Prince_of_Hanover.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (4d01b0cb-3628-4309-8c6e-e025fc11f93f)
- Call ID: 4d01b0cb-3628-4309-8c6e-e025fc11f93f
-  Args:
-    type: :Ancestor
-    source: George_III_of_the_United_Kingdom
-  AssignClass (41285336-4e88-44cc-bb52-62f4e0f6e07a)
- Call ID: 41285336-4e88-44cc-bb52-62f4e0f6e07a
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    type: :Ancestor
-  AssignClass (a64ef05d-e66d-4e28-b34f-5df3df8b8c1f)
- Call ID: a64ef05d-e66d-4e28-b34f-5df3df8b8c1f
-  Args:
-    source: George_V_of_Hanover
-    type: :Ancestor
-  AssignClass (089f15ab-f788-4835-9f24-55c9e742c8d1)
- Call ID: 089f15ab-f788-4835-9f24-55c9e742c8d1
-  Args:
-    source: Princess_Thyra_of_Denmark
-    type: :Ancestor
-  UnassignClass (32650074-c7db-4b8b-a4e8-d9057578cf70)
- Call ID: 32650074-c7db-4b8b-a4e8-d9057578cf70
-  Args:
-    type: :Male
-    source: Christian_IX_of_Denmark
-  UnassignClass (aefa5185-a3be-4460-bcc0-cd6c3aa9ec00)
- Call ID: aefa5185-a3be-4460-bcc0-cd6c3aa9ec00
-  Args:
-    type: :Male
-    source: George_V_of_Hanover
-  UnassignClass (1db82bd4-d884-4ec2-bb42-e758003daf20)
- Call ID: 1db82bd4-d884-4ec2-bb42-e758003daf20
-  Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    type: :Male
-  UnassignClass (22526518-cbb3-45ca-8b1b-e5e7d1349d7c)
- Call ID: 22526518-cbb3-45ca-8b1b-e5e7d1349d7c
-  Args:
-    type: :Male
-    source: George_III_of_the_United_Kingdom
-  UnassignClass (641673a1-9e51-4eca-b617-8b9d58d9cb37)
- Call ID: 641673a1-9e51-4eca-b617-8b9d58d9cb37
-  Args:
-    type: :Male
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  UnassignClass (35c38540-dd17-46a8-8305-a2291031a14a)
- Call ID: 35c38540-dd17-46a8-8305-a2291031a14a
-  Args:
-    type: :Female
-    source: Princess_Thyra_of_Denmark
-  UnassignClass (8bd8a0cb-b061-4c11-bc3a-437d0c447fba)
- Call ID: 8bd8a0cb-b061-4c11-bc3a-437d0c447fba
-  Args:
-    source: Princess_Victoria_Louise_of_Prussia
-    type: :Female
-  RemoveTriple (9134cc90-5809-4382-837d-f0b721262538)
- Call ID: 9134cc90-5809-4382-837d-f0b721262538
-  Args:
-    target: George_III_of_the_United_Kingdom
-    relation: :hasFather
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  RemoveTriple (c0cbd9a8-d1d3-47d5-b443-9269af60e077)
- Call ID: c0cbd9a8-d1d3-47d5-b443-9269af60e077
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasFather
-    target: George_V_of_Hanover
-  Finish (6747a45d-e8ad-4816-a38f-eb108530dd00)
- Call ID: 6747a45d-e8ad-4816-a38f-eb108530dd00
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Christian_IX_of_Denmark a :Man,
-          :Person .
-
-  data:George_III_of_the_United_Kingdom a :Ancestor,
-          :Man,
-          :Person .
-
-  data:George_V_of_Hanover a :Ancestor,
-          :Man,
-          :Person .
-
-  data:George_William a :Man,
-          :Person ;
-      :hasBirthYear 1880 ;
-      :hasDeathYear 1912 ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Princess_Thyra_of_Denmark .
-
-  data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man,
-          :Person .
-
-  data:Prince_Ernest_Augustus_II a :Man,
-          :Person ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMarriageYear data:1913 ;
-      :hasRelation data:Princess_Victoria_Louise_of_Prussia .
-
-  data:Princess_Thyra_of_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Victoria_Louise_of_Prussia a :Person,
-          :Woman ;
-      :hasMarriageYear data:1913 .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-          :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (5590d084-153c-483b-8968-05acf35ef359)
- Call ID: 5590d084-153c-483b-8968-05acf35ef359
+  ValidateShacl (a7ecc4e9-4214-452e-bdbb-ef883a2250ae)
+ Call ID: a7ecc4e9-4214-452e-bdbb-ef883a2250ae
   Args:
 
 ================================= Tool Message =================================
@@ -2386,37 +896,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8857bdf1-70de-4407-b10d-fce7b668bc7a)
- Call ID: 8857bdf1-70de-4407-b10d-fce7b668bc7a
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1913']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (9785084c-1853-4701-baa3-290f2b85c704)
- Call ID: 9785084c-1853-4701-baa3-290f2b85c704
-  Args:
-    type: :DomainEntity
-    source: 1913
-  Finish (de7c4aba-8608-4b27-b343-5d410af62370)
- Call ID: de7c4aba-8608-4b27-b343-5d410af62370
+  Finish (a6fc7e4f-7a16-4815-aeab-e15d2e4bc065)
+ Call ID: a6fc7e4f-7a16-4815-aeab-e15d2e4bc065
   Args:

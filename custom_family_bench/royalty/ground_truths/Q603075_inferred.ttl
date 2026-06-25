@@ -1,0 +1,287 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Carmen_Martínez-Bordiú_y_Franco a :Person,
+        :Woman ;
+    rdfs:label "Carmen Martínez-Bordiú y Franco"^^xsd:string ;
+    data:posIndicesFull "5189:5235"^^xsd:string,
+        "5204:5235"^^xsd:string ;
+    data:posIndicesPart "5381:5387"^^xsd:string,
+        "5444:5450"^^xsd:string,
+        "5457:5463"^^xsd:string,
+        "5509:5515"^^xsd:string,
+        "5550:5556"^^xsd:string,
+        "5679:5685"^^xsd:string ;
+    data:wdtLink wdt:Q2939617 ;
+    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco"^^xsd:string,
+        "Dona Maria del Carmen Martinez-Bordiu y Franco"^^xsd:string ;
+    :hasRelation data:Carmen_Martínez-Bordiú_y_Franco ;
+    :hasSex data:female ;
+    :hasSister data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isBloodrelationOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isSiblingOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isSisterOf data:Carmen_Martínez-Bordiú_y_Franco .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Emmanuelle de Dampierre"^^xsd:string ;
+    data:posIndicesFull "2249:2270"^^xsd:string,
+        "590:611"^^xsd:string ;
+    data:posIndicesPart "6352:6361"^^xsd:string ;
+    data:wdtLink wdt:Q3052995 ;
+    :alsoKnownAs "Emanuela de Dampierre"^^xsd:string,
+        "Emmanuela de Dampierre"^^xsd:string,
+        "Manuela Dampierre"^^xsd:string ;
+    :hasChild data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasRelation data:Emmanuelle_de_Dampierre,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasSex data:female ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :hasSon data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isAncestorOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isAuntOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isMotherOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isParentOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Alfonso-_Prince_of_Asturias a :Man,
+        :Person ;
+    rdfs:label "Alfonso, Prince of Asturias"^^xsd:string ;
+    data:posIndicesFull "1612:1639"^^xsd:string ;
+    data:posIndicesPart "2067:2074"^^xsd:string,
+        "2454:2461"^^xsd:string,
+        "2903:2910"^^xsd:string,
+        "3394:3401"^^xsd:string,
+        "3704:3711"^^xsd:string,
+        "3920:3927"^^xsd:string,
+        "3956:3963"^^xsd:string,
+        "4257:4264"^^xsd:string,
+        "4448:4454"^^xsd:string,
+        "4465:4472"^^xsd:string,
+        "4668:4675"^^xsd:string,
+        "4757:4764"^^xsd:string,
+        "4995:5002"^^xsd:string,
+        "5173:5180"^^xsd:string,
+        "5520:5527"^^xsd:string,
+        "5538:5545"^^xsd:string,
+        "5694:5701"^^xsd:string,
+        "5848:5855"^^xsd:string,
+        "5946:5953"^^xsd:string,
+        "6057:6064"^^xsd:string,
+        "6146:6153"^^xsd:string,
+        "6293:6300"^^xsd:string,
+        "6332:6339"^^xsd:string,
+        "6401:6407"^^xsd:string,
+        "6430:6437"^^xsd:string,
+        "6516:6523"^^xsd:string,
+        "6683:6690"^^xsd:string,
+        "6860:6867"^^xsd:string,
+        "7055:7061"^^xsd:string,
+        "7230:7237"^^xsd:string,
+        "7368:7375"^^xsd:string,
+        "7433:7439"^^xsd:string,
+        "7470:7476"^^xsd:string,
+        "7631:7637"^^xsd:string,
+        "7658:7664"^^xsd:string,
+        "7769:7776"^^xsd:string,
+        "7813:7820"^^xsd:string,
+        "7860:7867"^^xsd:string,
+        "7989:7996"^^xsd:string ;
+    data:wdtLink wdt:Q518846 ;
+    :alsoKnownAs "Alfons de Borbo i de Battenberg"^^xsd:string,
+        "Alfons de Borbó i de Battenberg"^^xsd:string,
+        "Alfonso Pius de Borbón y Battenberg, Infante de España"^^xsd:string,
+        "Alfonso de Borbon y Battenberg"^^xsd:string,
+        "Alfonso de Borbón y Battenberg"^^xsd:string,
+        "Alfonso, Count of Covadonga"^^xsd:string,
+        "Alphonse de Bourbon"^^xsd:string,
+        "Infante Alfonso, Count of Covadonga"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isBrotherOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isChildOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "2548:2560"^^xsd:string,
+        "262:274"^^xsd:string,
+        "262:283"^^xsd:string,
+        "6021:6033"^^xsd:string ;
+    data:posIndicesPart "1102:1109"^^xsd:string,
+        "1260:1267"^^xsd:string,
+        "1412:1419"^^xsd:string,
+        "2067:2074"^^xsd:string,
+        "2454:2461"^^xsd:string,
+        "2903:2910"^^xsd:string,
+        "3394:3401"^^xsd:string,
+        "3704:3711"^^xsd:string,
+        "3920:3927"^^xsd:string,
+        "3956:3963"^^xsd:string,
+        "4257:4264"^^xsd:string,
+        "438:445"^^xsd:string,
+        "4465:4472"^^xsd:string,
+        "4668:4675"^^xsd:string,
+        "4757:4764"^^xsd:string,
+        "4995:5002"^^xsd:string,
+        "5173:5180"^^xsd:string,
+        "538:545"^^xsd:string,
+        "5520:5527"^^xsd:string,
+        "5538:5545"^^xsd:string,
+        "5694:5701"^^xsd:string,
+        "5848:5855"^^xsd:string,
+        "6146:6153"^^xsd:string,
+        "6293:6300"^^xsd:string,
+        "6332:6339"^^xsd:string,
+        "6430:6437"^^xsd:string,
+        "6516:6523"^^xsd:string,
+        "6683:6690"^^xsd:string,
+        "6860:6867"^^xsd:string,
+        "7230:7237"^^xsd:string,
+        "7368:7375"^^xsd:string,
+        "7769:7776"^^xsd:string,
+        "7813:7820"^^xsd:string,
+        "7860:7867"^^xsd:string,
+        "7989:7996"^^xsd:string,
+        "882:889"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia .
+
+data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz a :Man,
+        :Person ;
+    rdfs:label "Prince Alfonso de Bourbon, Duke of Cádiz"^^xsd:string ;
+    data:wdtLink wdt:Q603075 ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasBrother data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasFather data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isBrotherOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSiblingOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia .
+
+data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia"^^xsd:string ;
+    data:posIndicesFull "501:531"^^xsd:string ;
+    data:posIndicesPart "1840:1847"^^xsd:string,
+        "1852:1857"^^xsd:string,
+        "2015:2019"^^xsd:string,
+        "2023:2030"^^xsd:string,
+        "2208:2215"^^xsd:string,
+        "2472:2479"^^xsd:string,
+        "2752:2759"^^xsd:string,
+        "3096:3103"^^xsd:string,
+        "3307:3314"^^xsd:string,
+        "5887:5894"^^xsd:string,
+        "6163:6168"^^xsd:string,
+        "632:636"^^xsd:string,
+        "6473:6477"^^xsd:string,
+        "6651:6655"^^xsd:string,
+        "6700:6705"^^xsd:string,
+        "6770:6774"^^xsd:string,
+        "7006:7010"^^xsd:string,
+        "712:717"^^xsd:string,
+        "7263:7267"^^xsd:string,
+        "7451:7455"^^xsd:string,
+        "7567:7571"^^xsd:string ;
+    data:wdtLink wdt:Q703780 ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasChild data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isAncestorOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isBloodrelationOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isBrotherOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isParentOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz ;
+    :isSiblingOf data:Alfonso-_Prince_of_Asturias,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Prince_Alfonso_de_Bourbon-_Duke_of_Cádiz .
+

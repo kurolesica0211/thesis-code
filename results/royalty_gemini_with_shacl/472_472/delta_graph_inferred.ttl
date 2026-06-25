@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andreas_Felix_Paul_von_Bismarck a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1979 ;
+    :hasBrother data:Andreas_Felix_Paul_von_Bismarck ;
+    :hasChild data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasDaughter data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasDeathYear 2019 ;
+    :hasRelation data:Andreas_Felix_Paul_von_Bismarck,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isAncestorOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isBloodrelationOf data:Andreas_Felix_Paul_von_Bismarck ;
+    :isBrotherOf data:Andreas_Felix_Paul_von_Bismarck ;
+    :isFatherOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isParentOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isSiblingOf data:Andreas_Felix_Paul_von_Bismarck ;
+    :isUncleOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Princess_Kira_of_Prussia ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Princess_Kira_of_Prussia ;
+    :isAuntOf data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isMotherOf data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Princess_Kira_of_Prussia ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasChild data:Princess_Kira_of_Prussia ;
+    :hasDaughter data:Princess_Kira_of_Prussia ;
+    :hasRelation data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :isAncestorOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isFatherOf data:Princess_Kira_of_Prussia ;
+    :isParentOf data:Princess_Kira_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isUncleOf data:Princess_Kira_of_Prussia .
+
+data:Kira-Marina_Liepsner a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasBirthYear 1977 ;
+    :hasChild data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasDaughter data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasMother data:Princess_Kira_of_Prussia ;
+    :hasParent data:Princess_Kira_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSister data:Kira-Marina_Liepsner ;
+    :isAncestorOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isAuntOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isBloodrelationOf data:Kira-Marina_Liepsner ;
+    :isChildOf data:Princess_Kira_of_Prussia ;
+    :isDaughterOf data:Princess_Kira_of_Prussia ;
+    :isMotherOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isParentOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isSiblingOf data:Kira-Marina_Liepsner ;
+    :isSisterOf data:Kira-Marina_Liepsner .
+
+data:Princess_Kira_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasBirthYear 1943 ;
+    :hasChild data:Kira-Marina_Liepsner ;
+    :hasDaughter data:Kira-Marina_Liepsner ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSister data:Princess_Kira_of_Prussia ;
+    :isAncestorOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner ;
+    :isAuntOf data:Kira-Marina_Liepsner ;
+    :isBloodrelationOf data:Princess_Kira_of_Prussia ;
+    :isChildOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isDaughterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isMotherOf data:Kira-Marina_Liepsner ;
+    :isParentOf data:Kira-Marina_Liepsner ;
+    :isSiblingOf data:Princess_Kira_of_Prussia ;
+    :isSisterOf data:Princess_Kira_of_Prussia .
+
+data:Granddaughter_1_of_Kira a :Person,
+        :Woman ;
+    :hasAncestor data:Andreas_Felix_Paul_von_Bismarck,
+        data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;
+    :hasMother data:Kira-Marina_Liepsner ;
+    :hasParent data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :hasRelation data:Andreas_Felix_Paul_von_Bismarck,
+        data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSister data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isBloodrelationOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isChildOf data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :isDaughterOf data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :isSiblingOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isSisterOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira .
+
+data:Granddaughter_2_of_Kira a :Person,
+        :Woman ;
+    :hasAncestor data:Andreas_Felix_Paul_von_Bismarck,
+        data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasFather data:Andreas_Felix_Paul_von_Bismarck ;
+    :hasMother data:Kira-Marina_Liepsner ;
+    :hasParent data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :hasRelation data:Andreas_Felix_Paul_von_Bismarck,
+        data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira,
+        data:Kira-Marina_Liepsner,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Princess_Kira_of_Prussia ;
+    :hasSister data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isBloodrelationOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isChildOf data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :isDaughterOf data:Andreas_Felix_Paul_von_Bismarck,
+        data:Kira-Marina_Liepsner ;
+    :isSiblingOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :isSisterOf data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira .
+

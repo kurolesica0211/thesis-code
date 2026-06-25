@@ -2,41 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_Alexander_Mowatt a :Man,
-        :Person ;
-    :hasBirthYear 1993 ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
-
-data:James_Ogilvy a :Man,
-        :Person ;
-    :hasBirthYear 1964 ;
-    :hasFather data:Sir_Angus_Ogilvy ;
-    :hasMother data:Princess_Alexandra_of_Kent .
-
-data:Zenouska_May_Mowatt a :Person,
-        :Woman ;
-    :hasBirthYear 1990 ;
-    :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
-
-data:Marina_Victoria_Alexandra_Ogilvy a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1966 ;
-    :hasFather data:Sir_Angus_Ogilvy ;
-    :hasMother data:Princess_Alexandra_of_Kent .
-
 data:Paul_Julian_Mowatt a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1962 .
+    :hasBirthYear 1962 ;
+    :isFatherOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
 
 data:Princess_Alexandra_of_Kent a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :isMotherOf data:James_Ogilvy,
+        data:Marina_Ogilvy .
 
 data:Sir_Angus_Ogilvy a :Ancestor,
         :Man,
+        :Person ;
+    :isFatherOf data:James_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Christian_Alexander_Mowatt a :Man,
         :Person .
+
+data:James_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 .
+
+data:Marina_Ogilvy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasMarriageYear 1990 ;
+    :isMotherOf data:Christian_Alexander_Mowatt,
+        data:Zenouska_May_Mowatt .
+
+data:Zenouska_May_Mowatt a :Person,
+        :Woman .
 

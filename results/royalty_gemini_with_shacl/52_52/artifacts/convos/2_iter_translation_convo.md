@@ -30,7 +30,7 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:8
+Total violations:9
 Violations:
 
   Violation [1]:
@@ -369,77 +369,6 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: Victoria_Louise_of_Prussia
-    Path: None
-    Value: Victoria_Louise_of_Prussia
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Woman ;
-          sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
-          sh:targetSubjectsOf :isMotherOf .
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    Classes assigned to the focus node: [':Woman', ':Person']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-    Classes assigned to the value node: [':Woman', ':Person']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-
-
-  Violation [6]:
-    Severity: Violation
     Focus node: Constantine_II
     Path: hasFather
     Value: Paul_of_Greece
@@ -521,7 +450,7 @@ Violations:
 
 
 
-  Violation [7]:
+  Violation [6]:
     Severity: Violation
     Focus node: Constantine_II
     Path: hasMother
@@ -605,7 +534,7 @@ Violations:
 
 
 
-  Violation [8]:
+  Violation [7]:
     Severity: Violation
     Focus node: Ernest_Augustus_Duke_of_Brunswick
     Path: None
@@ -680,6 +609,152 @@ Violations:
 
 
 
+  Violation [8]:
+    Severity: Violation
+    Focus node: Frederik_IX_of_Denmark
+    Path: None
+    Value: Frederik_IX_of_Denmark
+    Constraint: ClassConstraintComponent
+    Source shape:
+      esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
+          sh:targetSubjectsOf :isFatherOf .
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    Classes assigned to the focus node: [':Man', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Male ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Classes assigned to the value node: [':Man', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Male ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
+  Violation [9]:
+    Severity: Violation
+    Focus node: Victoria_Louise_of_Prussia
+    Path: None
+    Value: Victoria_Louise_of_Prussia
+    Constraint: ClassConstraintComponent
+    Source shape:
+      esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
+          sh:targetSubjectsOf :isMotherOf .
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Classes assigned to the value node: [':Woman', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
 
 ---
 
@@ -687,4 +762,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Paul_of_Greece, assigned as the father of Constantine_II, lacks the required :Ancestor class.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Paul_of_Greece."\n    },\n    {\n      "explanation": "The node Frederica_of_Greece, assigned as the mother of Constantine_II, lacks the required :Ancestor class.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Frederica_of_Greece."\n    },\n    {\n      "explanation": "Duplicate violation: The node Paul_of_Greece is missing the :Ancestor class requirement for the :hasFather relationship.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Paul_of_Greece."\n    },\n    {\n      "explanation": "Duplicate violation: The node Frederica_of_Greece is missing the :Ancestor class requirement for the :hasMother relationship.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Frederica_of_Greece."\n    },\n    {\n      "explanation": "The node Victoria_Louise_of_Prussia is the subject of an :isMotherOf relation but lacks the mandatory :Ancestor class.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Victoria_Louise_of_Prussia."\n    },\n    {\n      "explanation": "Duplicate violation: The node Paul_of_Greece is missing the :Ancestor class requirement for the :hasFather relationship.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Paul_of_Greece."\n    },\n    {\n      "explanation": "Duplicate violation: The node Frederica_of_Greece is missing the :Ancestor class requirement for the :hasMother relationship.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Frederica_of_Greece."\n    },\n    {\n      "explanation": "The node Ernest_Augustus_Duke_of_Brunswick is the subject of an :isFatherOf relation but lacks the mandatory :Ancestor class.",\n      "instruction": "Use AssignClass to add the :Ancestor class to the node :Ernest_Augustus_Duke_of_Brunswick."\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHo39Zqqxhu5oQ+JtdTaJBXjAPoLdGf73zkVjhubvzFTpq0p4d/06woVLoO2kt'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The value node \'Paul_of_Greece\' assigned as the father of \'Constantine_II\' is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(Paul_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The value node \'Frederica_of_Greece\' assigned as the mother of \'Constantine_II\' is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(Frederica_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The value node \'Paul_of_Greece\' is still missing the required \':Ancestor\' class assignment.",\n      "instruction": "AssignClass(Paul_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The value node \'Frederica_of_Greece\' is still missing the required \':Ancestor\' class assignment.",\n      "instruction": "AssignClass(Frederica_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The value node \'Paul_of_Greece\' continues to lack the \':Ancestor\' class, which is necessary for the \'hasFather\' relationship.",\n      "instruction": "AssignClass(Paul_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The value node \'Frederica_of_Greece\' continues to lack the \':Ancestor\' class, which is necessary for the \'hasMother\' relationship.",\n      "instruction": "AssignClass(Frederica_of_Greece, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'Ernest_Augustus_Duke_of_Brunswick\' acts as a subject for \'isFatherOf\' but is missing the required \':Ancestor\' class.",\n      "instruction": "AssignClass(Ernest_Augustus_Duke_of_Brunswick, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'Frederik_IX_of_Denmark\' acts as a subject for \'isFatherOf\' but is missing the required \':Ancestor\' class.",\n      "instruction": "AssignClass(Frederik_IX_of_Denmark, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'Victoria_Louise_of_Prussia\' acts as a subject for \'isMotherOf\' but is missing the required \':Ancestor\' class.",\n      "instruction": "AssignClass(Victoria_Louise_of_Prussia, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHDl1p6xlzVsGiZizfI0nZubokG5x+TB+LMnIw1fPwrdMyIiUSjXbq7IV6Hw2S'}}]

@@ -1,0 +1,376 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantijn a :Man,
+        :Person ;
+    :hasAncestor data:Beatrix ;
+    :hasBrother data:Constantijn,
+        data:Willem-Alexander ;
+    :hasMother data:Beatrix ;
+    :hasParent data:Beatrix ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isChildOf data:Beatrix ;
+    :isSiblingOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isSonOf data:Beatrix ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Beatrix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantijn,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix ;
+    :hasSon data:Constantijn,
+        data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Willem-Alexander ;
+    :isAuntOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix ;
+    :isMotherOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isParentOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:Jorge_Zorreguieta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jorge_Zorreguieta ;
+    :hasChild data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :hasDaughter data:M%C3%A1xima ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSon data:Mart%C3%ADn_Zorreguieta ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia,
+        data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isBloodrelationOf data:Jorge_Zorreguieta ;
+    :isBrotherOf data:Jorge_Zorreguieta ;
+    :isFatherOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isParentOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isSiblingOf data:Jorge_Zorreguieta ;
+    :isUncleOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta .
+
+data:Mar%C3%ADa_del_Carmen_Cerruti a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :hasDaughter data:M%C3%A1xima ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasSon data:Mart%C3%ADn_Zorreguieta ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia,
+        data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isAuntOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isBloodrelationOf data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isMotherOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isParentOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isSiblingOf data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isSisterOf data:Mar%C3%ADa_del_Carmen_Cerruti .
+
+data:Mart%C3%ADn_Zorreguieta a :Man,
+        :Person ;
+    :hasAncestor data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasBrother data:Mart%C3%ADn_Zorreguieta ;
+    :hasFather data:Jorge_Zorreguieta ;
+    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasParent data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:M%C3%A1xima ;
+    :isBloodrelationOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isBrotherOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isChildOf data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isSiblingOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isSonOf data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Willem-Alexander ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :hasParent data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Ariane a :Person,
+        :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Willem-Alexander ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :hasParent data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Catharina-Amalia a :Person,
+        :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Willem-Alexander ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima ;
+    :hasParent data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Willem-Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Beatrix ;
+    :hasBrother data:Constantijn,
+        data:Willem-Alexander ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasDaughter data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasMother data:Beatrix ;
+    :hasParent data:Beatrix ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isChildOf data:Beatrix ;
+    :isFatherOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isParentOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSiblingOf data:Constantijn,
+        data:Willem-Alexander ;
+    :isSonOf data:Beatrix ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:M%C3%A1xima a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasBrother data:Mart%C3%ADn_Zorreguieta ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasDaughter data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasFather data:Jorge_Zorreguieta ;
+    :hasMother data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasParent data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Constantijn,
+        data:Jorge_Zorreguieta,
+        data:M%C3%A1xima,
+        data:Mar%C3%ADa_del_Carmen_Cerruti,
+        data:Mart%C3%ADn_Zorreguieta,
+        data:Willem-Alexander ;
+    :hasSister data:M%C3%A1xima ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isAuntOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isChildOf data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isDaughterOf data:Jorge_Zorreguieta,
+        data:Mar%C3%ADa_del_Carmen_Cerruti ;
+    :isMotherOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isParentOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSiblingOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta ;
+    :isSisterOf data:M%C3%A1xima,
+        data:Mart%C3%ADn_Zorreguieta .
+

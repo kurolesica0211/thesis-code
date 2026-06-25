@@ -2,54 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Son_of_Carlos a :Man ;
-    :hasFather data:Don_Carlos .
+data:Prince_Maurits a :Man ;
+    :hasBirthYear "1968"^^xsd:positiveInteger ;
+    :hasBrother data:Bernhard_van_Vollenhoven,
+        data:Floris_van_Vollenhoven,
+        data:Pieter-Christiaan_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMarriageYear "1989"^^xsd:positiveInteger ;
+    :hasMother data:Princess_Margriet ;
+    :hasRelation data:Marilene_van_den_Broek .
 
-data:Alfonso_XIII a :Man ;
-    :hasFather data:Alfonso_XII ;
-    :hasMother data:Maria_Christina_Austria .
+data:Princess_Beatrix a :Woman .
 
-data:Ferdinand_Two_Sicilies a :Man ;
-    :hasFather data:Alfonso_Two_Sicilies .
+data:Bernhard_van_Vollenhoven a :Man .
 
-data:Francis_II a :Man .
+data:Floris_van_Vollenhoven a :Man .
 
-data:Louise_Orleans a :Woman ;
-    :hasFather data:Philippe_Paris .
-
-data:Mercedes_Asturias a :Woman ;
-    :hasFather data:Alfonso_XII ;
-    :hasMother data:Maria_Christina_Austria .
-
-data:Ranieri_Two_Sicilies a :Man ;
-    :hasFather data:Alfonso_Two_Sicilies .
-
-data:Marriage_1901 a :DomainEntity .
-
-data:Philippe_Paris a :Ancestor,
+data:Hans_van_den_Broek a :Ancestor,
         :Man .
 
-data:Alfonso_XII a :Ancestor,
-        :Man .
-
-data:Maria_Antonietta a :Ancestor,
-        :Woman ;
-    :isMotherOf data:Don_Carlos .
-
-data:Maria_Christina_Austria a :Ancestor,
+data:Josee_van_Schendel a :Ancestor,
         :Woman .
 
-data:Don_Carlos a :Ancestor,
-        :Man ;
-    :hasBirthYear 1870 ;
-    :hasDeathYear 1949 ;
-    :hasFather data:Alfonso_Two_Sicilies ;
-    :hasMarriageYear data:Marriage_1901 ;
-    :hasMother data:Maria_Antonietta ;
-    :isSonOf data:Alfonso_Two_Sicilies,
-        data:Maria_Antonietta .
+data:Marilene_van_den_Broek a :Woman ;
+    :hasBirthYear "1970"^^xsd:positiveInteger ;
+    :hasFather data:Hans_van_den_Broek ;
+    :hasMother data:Josee_van_Schendel .
 
-data:Alfonso_Two_Sicilies a :Ancestor,
-        :Man ;
-    :isFatherOf data:Don_Carlos .
+data:Pieter-Christiaan_van_Vollenhoven a :Man .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man .
+
+data:Prince_Bernhard a :Ancestor,
+        :Man .
+
+data:Princess_Margriet a :Ancestor,
+        :Woman ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana .
+
+data:Queen_Juliana a :Ancestor,
+        :Woman .
 

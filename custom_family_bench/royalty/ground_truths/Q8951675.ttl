@@ -7,33 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Otto_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Otto von Habsburg" ;
-    data:posIndicesFull "1398:1415",
-        "575:604" ;
-    data:posIndicesPart "844:852",
-        "957:965" ;
-    data:wdtLink wdt:Q76343 ;
-    :alsoKnownAs "Crown Prince Otto of Austria",
-        "Otto, Crown Prince of Austria" ;
-    :hasChild data:Karl_von_Habsburg ;
-    :hasSex data:male ;
-    :hasSon data:Karl_von_Habsburg ;
-    :isFatherOf data:Karl_von_Habsburg ;
-    :isParentOf data:Karl_von_Habsburg .
-
-data:Archduchess_Eleonore_of_Austria a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Archduchess_Eleonore_of_Austria a :Person ;
     rdfs:label "Archduchess Eleonore of Austria" ;
     data:posIndicesFull "0:21",
         "0:32",
@@ -45,37 +19,39 @@ data:Archduchess_Eleonore_of_Austria a :Person,
     :alsoKnownAs "Eleonore Jelena Maria del Pilar Iona Erzherzogin von Österreich",
         "Eleonore von Habsburg",
         "Eleonore von Habsburg-Lothringen" ;
-    :hasBrother data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :hasFather data:Karl_von_Habsburg ;
     :hasParent data:Karl_von_Habsburg ;
-    :hasSex data:female ;
-    :isChildOf data:Karl_von_Habsburg ;
-    :isDaughterOf data:Karl_von_Habsburg ;
-    :isSiblingOf data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :isSisterOf data:Archduke_Ferdinand_Zvonimir_of_Austria .
+    :hasSex data:female .
 
-data:Archduke_Ferdinand_Zvonimir_of_Austria a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Archduke_Ferdinand_Zvonimir_of_Austria a :Person ;
     rdfs:label "Archduke Ferdinand Zvonimir of Austria" ;
     data:posIndicesFull "802:820" ;
     data:wdtLink wdt:Q1032270 ;
     :alsoKnownAs "Ferdinand Erzherzog von Österreich",
         "Ferdinand Habsburg",
         "Ferdinand Zvonimir Maria Balthus Keith Michael Otto Antal Bahnam Leonhard von Habsburg-Lothringen" ;
-    :hasFather data:Karl_von_Habsburg ;
     :hasParent data:Karl_von_Habsburg ;
-    :hasSex data:male ;
-    :hasSister data:Archduchess_Eleonore_of_Austria ;
-    :isBrotherOf data:Archduchess_Eleonore_of_Austria ;
-    :isChildOf data:Karl_von_Habsburg ;
-    :isSiblingOf data:Archduchess_Eleonore_of_Austria ;
-    :isSonOf data:Karl_von_Habsburg .
+    :hasSex data:male .
 
-data:Karl_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Otto_von_Habsburg a :Person ;
+    rdfs:label "Otto von Habsburg" ;
+    data:posIndicesFull "1398:1415",
+        "575:604" ;
+    data:posIndicesPart "844:852",
+        "957:965" ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria",
+        "Otto, Crown Prince of Austria" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:Karl_von_Habsburg a :Person ;
     rdfs:label "Karl von Habsburg" ;
     data:posIndicesFull "186:203",
         "335:352" ;
@@ -83,17 +59,8 @@ data:Karl_von_Habsburg a :Ancestor,
         "957:965" ;
     data:wdtLink wdt:Q78515 ;
     :alsoKnownAs "Karl Thomas Erzherzog von Österreich" ;
-    :hasChild data:Archduchess_Eleonore_of_Austria,
-        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :hasDaughter data:Archduchess_Eleonore_of_Austria ;
-    :hasFather data:Otto_von_Habsburg ;
     :hasParent data:Otto_von_Habsburg ;
-    :hasSex data:male ;
-    :hasSon data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :isChildOf data:Otto_von_Habsburg ;
-    :isFatherOf data:Archduchess_Eleonore_of_Austria,
-        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :isParentOf data:Archduchess_Eleonore_of_Austria,
-        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
-    :isSonOf data:Otto_von_Habsburg .
+    :hasSex data:male .
+
+data:male a :Male .
 

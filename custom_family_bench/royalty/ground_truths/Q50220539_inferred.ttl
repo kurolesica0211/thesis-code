@@ -1,0 +1,278 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Alexandra_of_Yugoslavia a :Person,
+        :Woman ;
+    rdfs:label "Alexandra of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "8906:8925"^^xsd:string ;
+    data:wdtLink wdt:Q167423 ;
+    :alsoKnownAs "Alexandra Oldenburg Karadjordjevic"^^xsd:string,
+        "Alexandra of Greece"^^xsd:string,
+        "Alexandra of Greece, Queen of Yugoslavia"^^xsd:string ;
+    :hasRelation data:Alexandra_of_Yugoslavia ;
+    :hasSex data:female ;
+    :hasSister data:Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexandra_of_Yugoslavia ;
+    :isSiblingOf data:Alexandra_of_Yugoslavia ;
+    :isSisterOf data:Alexandra_of_Yugoslavia .
+
+data:Danica-_Hereditary_Princess_of_Serbia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Danica, Hereditary Princess of Serbia"^^xsd:string ;
+    data:posIndicesFull "3173:3190"^^xsd:string,
+        "3207:3224"^^xsd:string ;
+    data:posIndicesPart "3360:3368"^^xsd:string,
+        "3447:3455"^^xsd:string,
+        "3539:3545"^^xsd:string,
+        "3615:3623"^^xsd:string,
+        "3769:3777"^^xsd:string,
+        "3920:3926"^^xsd:string,
+        "3955:3963"^^xsd:string,
+        "3964:3970"^^xsd:string,
+        "4256:4262"^^xsd:string,
+        "4319:4327"^^xsd:string,
+        "4835:4841"^^xsd:string,
+        "4987:4993"^^xsd:string,
+        "5018:5024"^^xsd:string,
+        "5230:5238"^^xsd:string,
+        "5239:5245"^^xsd:string,
+        "5726:5734"^^xsd:string,
+        "5735:5741"^^xsd:string,
+        "6083:6089"^^xsd:string,
+        "6604:6610"^^xsd:string,
+        "6612:6622"^^xsd:string,
+        "6720:6730"^^xsd:string,
+        "6791:6801"^^xsd:string,
+        "6812:6818"^^xsd:string,
+        "6968:6976"^^xsd:string,
+        "7032:7040"^^xsd:string,
+        "7041:7047"^^xsd:string,
+        "7745:7753"^^xsd:string,
+        "7825:7831"^^xsd:string,
+        "8581:8587"^^xsd:string ;
+    data:wdtLink wdt:Q61855462 ;
+    :alsoKnownAs "Danica Karađorđević"^^xsd:string,
+        "Danica Marinković"^^xsd:string ;
+    :hasChild data:Prince_Stefan_of_Serbia ;
+    :hasRelation data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Prince_Stefan_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:female ;
+    :hasSister data:Danica-_Hereditary_Princess_of_Serbia ;
+    :hasSon data:Prince_Stefan_of_Serbia ;
+    :isAncestorOf data:Prince_Stefan_of_Serbia ;
+    :isAuntOf data:Prince_Stefan_of_Serbia ;
+    :isBloodrelationOf data:Danica-_Hereditary_Princess_of_Serbia ;
+    :isMotherOf data:Prince_Stefan_of_Serbia ;
+    :isParentOf data:Prince_Stefan_of_Serbia ;
+    :isSiblingOf data:Danica-_Hereditary_Princess_of_Serbia ;
+    :isSisterOf data:Danica-_Hereditary_Princess_of_Serbia .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe"^^xsd:string ;
+    data:posIndicesFull "1013:1028"^^xsd:string,
+        "6977:6992"^^xsd:string ;
+    data:posIndicesPart "1439:1447"^^xsd:string,
+        "1454:1461"^^xsd:string,
+        "1700:1707"^^xsd:string,
+        "3360:3368"^^xsd:string,
+        "3447:3455"^^xsd:string,
+        "3462:3469"^^xsd:string,
+        "3615:3623"^^xsd:string,
+        "3624:3629"^^xsd:string,
+        "3769:3777"^^xsd:string,
+        "3955:3963"^^xsd:string,
+        "4319:4327"^^xsd:string,
+        "4465:4470"^^xsd:string,
+        "5230:5238"^^xsd:string,
+        "5726:5734"^^xsd:string,
+        "7745:7753"^^xsd:string,
+        "9294:9299"^^xsd:string ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon"^^xsd:string,
+        "Maria da Gloria"^^xsd:string ;
+    :hasChild data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasRelation data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Prince_Stefan_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSon data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isAncestorOf data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Prince_Stefan_of_Serbia ;
+    :isAuntOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isBloodrelationOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isMotherOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isParentOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isSiblingOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isSisterOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+
+data:Philip-_Hereditary_Prince_of_Serbia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Philip, Hereditary Prince of Serbia"^^xsd:string ;
+    data:posIndicesFull "270:305"^^xsd:string,
+        "99:117"^^xsd:string ;
+    data:posIndicesPart "1271:1277"^^xsd:string,
+        "1504:1510"^^xsd:string,
+        "1541:1547"^^xsd:string,
+        "1761:1767"^^xsd:string,
+        "2009:2015"^^xsd:string,
+        "2069:2075"^^xsd:string,
+        "2180:2186"^^xsd:string,
+        "2394:2400"^^xsd:string,
+        "2496:2502"^^xsd:string,
+        "2573:2579"^^xsd:string,
+        "2597:2603"^^xsd:string,
+        "2628:2634"^^xsd:string,
+        "2681:2687"^^xsd:string,
+        "2769:2775"^^xsd:string,
+        "2841:2847"^^xsd:string,
+        "2908:2914"^^xsd:string,
+        "2987:2993"^^xsd:string,
+        "3192:3198"^^xsd:string,
+        "3311:3317"^^xsd:string,
+        "3539:3545"^^xsd:string,
+        "3701:3707"^^xsd:string,
+        "3747:3753"^^xsd:string,
+        "3920:3926"^^xsd:string,
+        "3996:4002"^^xsd:string,
+        "4176:4182"^^xsd:string,
+        "4245:4251"^^xsd:string,
+        "4349:4355"^^xsd:string,
+        "4356:4362"^^xsd:string,
+        "4487:4493"^^xsd:string,
+        "4629:4635"^^xsd:string,
+        "4715:4721"^^xsd:string,
+        "4722:4728"^^xsd:string,
+        "4825:4831"^^xsd:string,
+        "4835:4841"^^xsd:string,
+        "4854:4860"^^xsd:string,
+        "4987:4993"^^xsd:string,
+        "5018:5024"^^xsd:string,
+        "5026:5032"^^xsd:string,
+        "5118:5124"^^xsd:string,
+        "5125:5131"^^xsd:string,
+        "5209:5215"^^xsd:string,
+        "5380:5386"^^xsd:string,
+        "5387:5393"^^xsd:string,
+        "5621:5627"^^xsd:string,
+        "5705:5711"^^xsd:string,
+        "586:592"^^xsd:string,
+        "6027:6033"^^xsd:string,
+        "6083:6089"^^xsd:string,
+        "6109:6115"^^xsd:string,
+        "6249:6255"^^xsd:string,
+        "6256:6262"^^xsd:string,
+        "6377:6383"^^xsd:string,
+        "6384:6390"^^xsd:string,
+        "6505:6511"^^xsd:string,
+        "6604:6610"^^xsd:string,
+        "6612:6622"^^xsd:string,
+        "661:667"^^xsd:string,
+        "6623:6629"^^xsd:string,
+        "6682:6688"^^xsd:string,
+        "6720:6730"^^xsd:string,
+        "6731:6737"^^xsd:string,
+        "6773:6779"^^xsd:string,
+        "6791:6801"^^xsd:string,
+        "6802:6808"^^xsd:string,
+        "6812:6818"^^xsd:string,
+        "7247:7253"^^xsd:string,
+        "724:734"^^xsd:string,
+        "7273:7279"^^xsd:string,
+        "7327:7333"^^xsd:string,
+        "735:741"^^xsd:string,
+        "7424:7430"^^xsd:string,
+        "7474:7480"^^xsd:string,
+        "7688:7694"^^xsd:string,
+        "7825:7831"^^xsd:string,
+        "8018:8024"^^xsd:string,
+        "813:819"^^xsd:string,
+        "820:826"^^xsd:string,
+        "8252:8258"^^xsd:string,
+        "8259:8265"^^xsd:string,
+        "8281:8287"^^xsd:string,
+        "8380:8386"^^xsd:string,
+        "8548:8554"^^xsd:string,
+        "8581:8587"^^xsd:string,
+        "8731:8737"^^xsd:string,
+        "8800:8806"^^xsd:string,
+        "9102:9108"^^xsd:string,
+        "929:935"^^xsd:string ;
+    data:wdtLink wdt:Q3268142 ;
+    :alsoKnownAs "Filip Karađorđević"^^xsd:string,
+        "Philip Karageorgievich, Prince of Yugoslavia"^^xsd:string,
+        "Philip Karađorđević"^^xsd:string,
+        "Prince Philip, Hereditary Prince of Serbia"^^xsd:string ;
+    :hasAncestor data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasBrother data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasChild data:Prince_Stefan_of_Serbia ;
+    :hasMother data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasParent data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasRelation data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Prince_Stefan_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Stefan_of_Serbia ;
+    :isAncestorOf data:Prince_Stefan_of_Serbia ;
+    :isBloodrelationOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isBrotherOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isChildOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isFatherOf data:Prince_Stefan_of_Serbia ;
+    :isParentOf data:Prince_Stefan_of_Serbia ;
+    :isSiblingOf data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isSonOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isUncleOf data:Prince_Stefan_of_Serbia .
+
+data:Prince_Stefan_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Prince Stefan of Serbia"^^xsd:string ;
+    data:wdtLink wdt:Q50220539 ;
+    :alsoKnownAs "Esteban Karađorđević"^^xsd:string,
+        "Prince Stefan Karageorgievich"^^xsd:string,
+        "Prince Stefan Karađorđević"^^xsd:string,
+        "Stefan Karađorđević of Serbia"^^xsd:string ;
+    :hasAncestor data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasBrother data:Prince_Stefan_of_Serbia ;
+    :hasFather data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasMother data:Danica-_Hereditary_Princess_of_Serbia ;
+    :hasParent data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia ;
+    :hasRelation data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia,
+        data:Prince_Stefan_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Stefan_of_Serbia ;
+    :isBrotherOf data:Prince_Stefan_of_Serbia ;
+    :isChildOf data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia ;
+    :isSiblingOf data:Prince_Stefan_of_Serbia ;
+    :isSonOf data:Danica-_Hereditary_Princess_of_Serbia,
+        data:Philip-_Hereditary_Prince_of_Serbia .
+

@@ -7,16 +7,22 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Prince_Gonzalo_de_Bourbon a :Person ;
+    rdfs:label "Prince Gonzalo de Bourbon" ;
+    data:wdtLink wdt:Q946985 ;
+    :alsoKnownAs "Gonzalo de Borbón y de Dampierre",
+        "Prince Gonzalo, Duke of Aquitaine" ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XIII a :Person ;
     rdfs:label "Alfonso XIII" ;
     data:posIndicesFull "266:278",
         "514:526" ;
@@ -31,32 +37,18 @@ data:Alfonso_XIII a :Ancestor,
         "Don Alfonso de Borbon y Habsburgo",
         "Don Alfonso de Borbón y Habsburgo",
         "The African" ;
-    :hasChild data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasSex data:male ;
-    :hasSon data:Infante_Jaime-_Duke_of_Segovia ;
-    :isFatherOf data:Infante_Jaime-_Duke_of_Segovia ;
-    :isParentOf data:Infante_Jaime-_Duke_of_Segovia .
+    :hasSex data:male .
 
-data:Emmanuelle_de_Dampierre a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Emmanuelle_de_Dampierre a :Person ;
     rdfs:label "Emmanuelle de Dampierre" ;
     data:posIndicesFull "436:459" ;
     data:wdtLink wdt:Q3052995 ;
     :alsoKnownAs "Emanuela de Dampierre",
         "Emmanuela de Dampierre",
         "Manuela Dampierre" ;
-    :hasChild data:Prince_Gonzalo_de_Bourbon ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Gonzalo_de_Bourbon ;
-    :isMotherOf data:Prince_Gonzalo_de_Bourbon ;
-    :isParentOf data:Prince_Gonzalo_de_Bourbon .
+    :hasSex data:female .
 
-data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Jaime-_Duke_of_Segovia a :Person ;
     rdfs:label "Infante Jaime, Duke of Segovia" ;
     data:posIndicesFull "385:415" ;
     data:posIndicesPart "1442:1447",
@@ -64,30 +56,10 @@ data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
         "1741:1746",
         "1787:1791" ;
     data:wdtLink wdt:Q703780 ;
-    :hasChild data:Prince_Gonzalo_de_Bourbon ;
-    :hasFather data:Alfonso_XIII ;
     :hasParent data:Alfonso_XIII ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Gonzalo_de_Bourbon ;
-    :isChildOf data:Alfonso_XIII ;
-    :isFatherOf data:Prince_Gonzalo_de_Bourbon ;
-    :isParentOf data:Prince_Gonzalo_de_Bourbon ;
-    :isSonOf data:Alfonso_XIII .
+    :hasSex data:male .
 
-data:Prince_Gonzalo_de_Bourbon a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Gonzalo de Bourbon" ;
-    data:wdtLink wdt:Q946985 ;
-    :alsoKnownAs "Gonzalo de Borbón y de Dampierre",
-        "Prince Gonzalo, Duke of Aquitaine" ;
-    :hasFather data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasMother data:Emmanuelle_de_Dampierre ;
-    :hasParent data:Emmanuelle_de_Dampierre,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasSex data:male ;
-    :isChildOf data:Emmanuelle_de_Dampierre,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSonOf data:Emmanuelle_de_Dampierre,
-        data:Infante_Jaime-_Duke_of_Segovia .
+data:female a :Female .
+
+data:male a :Male .
 

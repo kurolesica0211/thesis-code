@@ -2,29 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:William_Prince_of_Orange a :Man,
+data:King_Wilhelm_I a :Man,
         :Person ;
-    :hasBirthYear 1840 ;
-    :hasBrother data:Alexander ;
-    :hasDeathYear 1879 ;
-    :hasFather data:King_William_III ;
-    :hasMother data:Princess_Sophie_of_Wurttemberg ;
-    :hasSex data:Male_Sex ;
-    :hasSister data:Wilhelmina ;
-    :knownAs "Prince Lemon"^^xsd:string .
+    :isFatherOf data:Prince_Frederick_of_Prussia .
 
-data:Alexander a :Man,
+data:Prince_Albert a :Man,
+        :Person ;
+    :isFatherOf data:Victoria_Princess_Royal .
+
+data:Princess_Feodora a :Person,
+        :Woman ;
+    :hasMarriageYear 1898 ;
+    :hasRelation data:Prince_Henry_XXX_of_Reuss ;
+    :isChildOf data:Bernhard_III_of_Saxe-Meiningen,
+        data:Princess_Charlotte_of_Prussia .
+
+data:Queen_Augusta a :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Frederick_of_Prussia .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :isMotherOf data:Victoria_Princess_Royal .
+
+data:Prince_Henry_XXX_of_Reuss a :Man,
         :Person .
 
-data:King_William_III a :Man,
+data:Princess_Charlotte_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1860 ;
+    :hasDeathYear 1919 ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1878 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Bernhard_III_of_Saxe-Meiningen ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
         :Person .
 
-data:Male_Sex a :Male,
-        :Sex .
+data:Bernhard_III_of_Saxe-Meiningen a :Man,
+        :Person .
 
-data:Princess_Sophie_of_Wurttemberg a :Person,
-        :Woman .
+data:Prince_Frederick_of_Prussia a :Man,
+        :Person .
 
-data:Wilhelmina a :Person,
+data:Victoria_Princess_Royal a :Person,
         :Woman .
 

@@ -1,0 +1,214 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DanicaMarinkovi%C4%87 a :Ancestor,
+        :Woman ;
+    :hasChild data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasDaughter data:MarijaKara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:DanicaMarinkovi%C4%87 ;
+    :hasSon data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isAuntOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:DanicaMarinkovi%C4%87 ;
+    :isMotherOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:DanicaMarinkovi%C4%87 ;
+    :isSisterOf data:DanicaMarinkovi%C4%87 .
+
+data:AlexanderKara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man ;
+    :hasBrother data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :hasChild data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSon data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :isFatherOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :isUncleOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 .
+
+data:MariaDaGloria a :Ancestor,
+        :Woman ;
+    :hasChild data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:MariaDaGloria ;
+    :hasSon data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isAuntOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:MariaDaGloria ;
+    :isMotherOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:MariaDaGloria ;
+    :isSisterOf data:MariaDaGloria .
+
+data:PeterKara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasAncestor data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :hasBrother data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :isSiblingOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :isUncleOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 .
+
+data:MarijaKara%C4%91or%C4%91evi%C4%87 a :Woman ;
+    :hasAncestor data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasBrother data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:DanicaMarinkovi%C4%87 ;
+    :hasParent data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:MarijaKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isDaughterOf data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isSisterOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 .
+
+data:StefanKara%C4%91or%C4%91evi%C4%87 a :Man ;
+    :hasAncestor data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasBrother data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:DanicaMarinkovi%C4%87 ;
+    :hasParent data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSister data:MarijaKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:DanicaMarinkovi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 .
+
+data:PhilipKara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man ;
+    :hasAncestor data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :hasChild data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasDaughter data:MarijaKara%C4%91or%C4%91evi%C4%87 ;
+    :hasFather data:AlexanderKara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :hasRelation data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:DanicaMarinkovi%C4%87,
+        data:MariaDaGloria,
+        data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :hasSon data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isAncestorOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isBloodrelationOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isBrotherOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isChildOf data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :isFatherOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isParentOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 ;
+    :isSiblingOf data:PeterKara%C4%91or%C4%91evi%C4%87,
+        data:PhilipKara%C4%91or%C4%91evi%C4%87 ;
+    :isSonOf data:AlexanderKara%C4%91or%C4%91evi%C4%87,
+        data:MariaDaGloria ;
+    :isUncleOf data:MarijaKara%C4%91or%C4%91evi%C4%87,
+        data:StefanKara%C4%91or%C4%91evi%C4%87 .
+

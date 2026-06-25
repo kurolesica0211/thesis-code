@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "3598:3638"^^xsd:string ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo"^^xsd:string,
+        "Prince Christophoros of Greece and Denmark"^^xsd:string ;
+    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    data:posIndicesFull "101:140"^^xsd:string ;
+    data:posIndicesPart "1262:1267"^^xsd:string,
+        "2110:2115"^^xsd:string,
+        "2381:2386"^^xsd:string,
+        "240:245"^^xsd:string,
+        "3035:3040"^^xsd:string,
+        "3181:3187"^^xsd:string,
+        "352:358"^^xsd:string,
+        "453:458"^^xsd:string,
+        "459:463"^^xsd:string,
+        "473:485"^^xsd:string,
+        "505:510"^^xsd:string,
+        "511:515"^^xsd:string,
+        "539:544"^^xsd:string,
+        "545:549"^^xsd:string ;
+    data:wdtLink wdt:Q524451 ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasChild data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasDaughter data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia_1,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isFatherOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isParentOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isUncleOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Princess Xenia Georgievna of Russia"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string ;
+    data:posIndicesPart "1161:1166"^^xsd:string,
+        "1404:1409"^^xsd:string,
+        "1516:1521"^^xsd:string,
+        "1638:1643"^^xsd:string,
+        "1819:1824"^^xsd:string,
+        "1882:1887"^^xsd:string,
+        "2012:2017"^^xsd:string,
+        "2072:2077"^^xsd:string,
+        "2324:2329"^^xsd:string,
+        "2395:2400"^^xsd:string,
+        "2598:2606"^^xsd:string,
+        "2607:2612"^^xsd:string,
+        "2650:2655"^^xsd:string,
+        "2685:2690"^^xsd:string,
+        "272:277"^^xsd:string,
+        "2982:2987"^^xsd:string,
+        "299:307"^^xsd:string,
+        "3049:3054"^^xsd:string,
+        "3073:3081"^^xsd:string,
+        "3082:3087"^^xsd:string,
+        "3102:3107"^^xsd:string,
+        "313:323"^^xsd:string,
+        "3181:3187"^^xsd:string,
+        "3254:3259"^^xsd:string,
+        "3381:3386"^^xsd:string,
+        "352:358"^^xsd:string,
+        "3575:3580"^^xsd:string,
+        "3714:3719"^^xsd:string,
+        "3793:3798"^^xsd:string,
+        "3835:3840"^^xsd:string,
+        "3959:3967"^^xsd:string,
+        "3968:3973"^^xsd:string,
+        "3974:3984"^^xsd:string,
+        "685:690"^^xsd:string,
+        "999:1004"^^xsd:string ;
+    data:wdtLink wdt:Q433753 ;
+    :alsoKnownAs "Xenia Georgievna Holstein-Gottorp-Romanova"^^xsd:string,
+        "Xenia Georgievna Romanova"^^xsd:string,
+        "Xenia Georgievna of Holstein-Gottorp"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia_1,
+        data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isChildOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isDaughterOf data:Grand_Duke_George_Mikhailovich_of_Russia_1 ;
+    :isSiblingOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .
+

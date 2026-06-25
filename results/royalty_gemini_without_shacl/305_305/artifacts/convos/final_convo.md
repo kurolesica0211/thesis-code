@@ -69,19 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexander Edgar Lascelles, Viscount Lascelles (born 13 May 1980) is an English chef, and the third child and second son of David Lascelles, 8th Earl of Harewood, and his first wife Margaret, Viscountess Lascelles.
-He is heir apparent to the earldom of Harewood, due to his elder brother having been born before their parents' marriage.
-A chef, Lascelles has also taught about food at the John of Gaunt School, Trowbridge.
-Personal life
+Alexander Mountstuart Elphinstone, 19th Lord Elphinstone, 5th Baron Elphinstone (born 15 April 1980), is a Scottish peer in both the Peerage of Scotland and the Peerage of the United Kingdom.
+Early life and family
 
-Lascelles has a son, Leo (b. 2008), with his former girlfriend, Laleh Yeganegy.
-Lascelles has a daughter, Ivy, and a son, Kit, with his wife Annika Reed (m. 2017), born in 2018 and 2023, respectively.
+Lord Elphinstone is the son of James Elphinstone, 18th Lord Elphinstone, and Willa Mary Gabrielle Chetwode.
+His mother is the daughter of Major George Chetwode and Lady Willa Elliot-Murray-Kynynmound, daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto.
+Lord Elphinstone's paternal grandfather, Rev. Hon.
+Andrew Elphinstone, was a first cousin of Elizabeth II through his mother, the former Lady Mary Bowes-Lyon, who was an elder sister of Queen Elizabeth The Queen Mother.
+Notes
+
+References
+
+
+
+
+This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -97,39 +107,9 @@ Lascelles has a daughter, Ivy, and a son, Kit, with his wife Annika Reed (m. 201
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -144,6 +124,23 @@ Lascelles has a daughter, Ivy, and a son, Kit, with his wife Annika Reed (m. 201
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -161,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -228,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -271,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -279,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -317,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -332,169 +432,161 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e11b690a-526c-4858-9dfe-2537cae458fa)
- Call ID: e11b690a-526c-4858-9dfe-2537cae458fa
+  AssignClass (a9138e10-db2f-40f7-a64c-3ef23b40de16)
+ Call ID: a9138e10-db2f-40f7-a64c-3ef23b40de16
   Args:
     type: :Man
-    source: Alexander_Edgar_Lascelles
-  AssignClass (3ac96db1-155a-4e68-b294-0e914be2f125)
- Call ID: 3ac96db1-155a-4e68-b294-0e914be2f125
+    source: AlexanderMountstuartElphinstone
+  AssignClass (3a302386-4086-469c-93a7-2e9c0ce37fa3)
+ Call ID: 3a302386-4086-469c-93a7-2e9c0ce37fa3
   Args:
     type: :Person
-    source: Alexander_Edgar_Lascelles
-  AssignClass (e270a4d0-c1f2-4f29-8d6b-b284ac3fb2cd)
- Call ID: e270a4d0-c1f2-4f29-8d6b-b284ac3fb2cd
+    source: AlexanderMountstuartElphinstone
+  AddLiteral (295973de-c8d5-432a-85be-2f7e2ead4d5a)
+ Call ID: 295973de-c8d5-432a-85be-2f7e2ead4d5a
   Args:
-    type: :Man
-    source: David_Lascelles
-  AssignClass (c0e044b6-08bc-4dc0-bb9d-de5dd2a9dca4)
- Call ID: c0e044b6-08bc-4dc0-bb9d-de5dd2a9dca4
-  Args:
-    type: :Person
-    source: David_Lascelles
-  AssignClass (d42d8ee0-9368-4b64-a5ee-eaac950af07b)
- Call ID: d42d8ee0-9368-4b64-a5ee-eaac950af07b
-  Args:
-    type: :Woman
-    source: Margaret_Lascelles
-  AssignClass (79f4b3fd-c0da-4fa3-b40c-348b6a24fb7c)
- Call ID: 79f4b3fd-c0da-4fa3-b40c-348b6a24fb7c
-  Args:
-    type: :Person
-    source: Margaret_Lascelles
-  AssignClass (dd933e93-c0dd-40da-a156-8d672a21a1e9)
- Call ID: dd933e93-c0dd-40da-a156-8d672a21a1e9
-  Args:
-    type: :Man
-    source: Leo_Lascelles
-  AssignClass (5cd67e64-39fa-4b66-b5b0-20a7f0221e4d)
- Call ID: 5cd67e64-39fa-4b66-b5b0-20a7f0221e4d
-  Args:
-    type: :Person
-    source: Leo_Lascelles
-  AssignClass (943f9127-6b2d-4c46-b98d-646d74f99a80)
- Call ID: 943f9127-6b2d-4c46-b98d-646d74f99a80
-  Args:
-    type: :Woman
-    source: Laleh_Yeganegy
-  AssignClass (4c1978d8-80a8-4b48-b5fb-fdbfd6d031d4)
- Call ID: 4c1978d8-80a8-4b48-b5fb-fdbfd6d031d4
-  Args:
-    type: :Person
-    source: Laleh_Yeganegy
-  AssignClass (48b64a53-5d6b-48aa-9a58-8b5cfb78fc89)
- Call ID: 48b64a53-5d6b-48aa-9a58-8b5cfb78fc89
-  Args:
-    type: :Woman
-    source: Ivy_Lascelles
-  AssignClass (6734635e-3be8-4482-aac4-9651d4f93556)
- Call ID: 6734635e-3be8-4482-aac4-9651d4f93556
-  Args:
-    type: :Person
-    source: Ivy_Lascelles
-  AssignClass (4792cb58-e505-467e-bc63-0f03b1837846)
- Call ID: 4792cb58-e505-467e-bc63-0f03b1837846
-  Args:
-    type: :Man
-    source: Kit_Lascelles
-  AssignClass (3a5abd5c-e63f-455f-87e8-a6e21cb20978)
- Call ID: 3a5abd5c-e63f-455f-87e8-a6e21cb20978
-  Args:
-    type: :Person
-    source: Kit_Lascelles
-  AssignClass (ffa6893e-2e3d-47ef-b9db-0adc602cd7e7)
- Call ID: ffa6893e-2e3d-47ef-b9db-0adc602cd7e7
-  Args:
-    type: :Woman
-    source: Annika_Reed
-  AssignClass (e2e754c0-800c-4e2a-9f2f-f0c6a6a9be62)
- Call ID: e2e754c0-800c-4e2a-9f2f-f0c6a6a9be62
-  Args:
-    type: :Person
-    source: Annika_Reed
-  AddLiteral (5bce8292-4ba9-44db-a310-4b1123238110)
- Call ID: 5bce8292-4ba9-44db-a310-4b1123238110
-  Args:
-    relation: :hasBirthYear
     literal_value: 1980
-    source: Alexander_Edgar_Lascelles
     literal_type: xsd:integer
-  AddTriple (a023c8a7-e7cd-4127-9c30-4b26c8e49786)
- Call ID: a023c8a7-e7cd-4127-9c30-4b26c8e49786
+    source: AlexanderMountstuartElphinstone
+    relation: :hasBirthYear
+  AssignClass (2642afc5-2fba-49a5-897a-1a09e78a2cba)
+ Call ID: 2642afc5-2fba-49a5-897a-1a09e78a2cba
   Args:
-    target: David_Lascelles
-    source: Alexander_Edgar_Lascelles
+    type: :Man
+    source: JamesElphinstone
+  AssignClass (61415ca5-ed7b-472a-a97f-fbde6023b04d)
+ Call ID: 61415ca5-ed7b-472a-a97f-fbde6023b04d
+  Args:
+    type: :Person
+    source: JamesElphinstone
+  AddTriple (d40c27b0-29fb-41f0-95f6-abba8fe55ff6)
+ Call ID: d40c27b0-29fb-41f0-95f6-abba8fe55ff6
+  Args:
+    target: JamesElphinstone
+    source: AlexanderMountstuartElphinstone
     relation: :hasFather
-  AddTriple (871e0beb-d80c-4a50-b9e1-5a202760d6a6)
- Call ID: 871e0beb-d80c-4a50-b9e1-5a202760d6a6
+  AssignClass (214008af-8753-484a-ad2e-77ed67823086)
+ Call ID: 214008af-8753-484a-ad2e-77ed67823086
   Args:
+    type: :Woman
+    source: WillaMaryGabrielleChetwode
+  AssignClass (42f4fe42-c33d-4a0a-b431-074b36d4c5fd)
+ Call ID: 42f4fe42-c33d-4a0a-b431-074b36d4c5fd
+  Args:
+    source: WillaMaryGabrielleChetwode
+    type: :Person
+  AddTriple (a612efa7-dba5-4177-9a40-e3b48e78eea7)
+ Call ID: a612efa7-dba5-4177-9a40-e3b48e78eea7
+  Args:
+    source: AlexanderMountstuartElphinstone
+    target: WillaMaryGabrielleChetwode
     relation: :hasMother
-    target: Margaret_Lascelles
-    source: Alexander_Edgar_Lascelles
-  AddTriple (35d6bc7d-df62-48c6-a034-baa7fcba4e9e)
- Call ID: 35d6bc7d-df62-48c6-a034-baa7fcba4e9e
+  AssignClass (10bb8c95-f4c1-4b32-9965-c7c6eaa7e975)
+ Call ID: 10bb8c95-f4c1-4b32-9965-c7c6eaa7e975
   Args:
-    target: Leo_Lascelles
-    source: Alexander_Edgar_Lascelles
-    relation: :hasSon
-  AddTriple (20afd486-382c-4fff-9bf8-2d040e33fb85)
- Call ID: 20afd486-382c-4fff-9bf8-2d040e33fb85
+    type: :Man
+    source: GeorgeChetwode
+  AssignClass (05a436fe-383d-46e7-9724-a8995bc38f2f)
+ Call ID: 05a436fe-383d-46e7-9724-a8995bc38f2f
   Args:
-    source: Leo_Lascelles
-    target: Laleh_Yeganegy
-    relation: :hasMother
-  AddLiteral (0a9af1fd-bfd1-48e4-ab9b-ebfcb7360a3d)
- Call ID: 0a9af1fd-bfd1-48e4-ab9b-ebfcb7360a3d
+    type: :Person
+    source: GeorgeChetwode
+  AddTriple (d39040d3-943f-4061-bae9-d383442de30f)
+ Call ID: d39040d3-943f-4061-bae9-d383442de30f
   Args:
-    literal_value: 2008
-    relation: :hasBirthYear
-    source: Leo_Lascelles
-    literal_type: xsd:integer
-  AddTriple (bdc8a419-bfac-474f-b8b0-3d27ea276970)
- Call ID: bdc8a419-bfac-474f-b8b0-3d27ea276970
+    target: WillaMaryGabrielleChetwode
+    source: GeorgeChetwode
+    relation: :isFatherOf
+  AssignClass (2eb5e6ac-f303-45a6-9ee2-123faf267b51)
+ Call ID: 2eb5e6ac-f303-45a6-9ee2-123faf267b51
   Args:
-    source: Alexander_Edgar_Lascelles
-    target: Ivy_Lascelles
-    relation: :hasDaughter
-  AddTriple (c39ff9dd-9ab1-4aed-b831-bbbb9e0d4ba8)
- Call ID: c39ff9dd-9ab1-4aed-b831-bbbb9e0d4ba8
+    source: WillaElliotMurrayKynynmound
+    type: :Woman
+  AssignClass (48c84e08-a3a0-4340-a96e-c174f2a69d2e)
+ Call ID: 48c84e08-a3a0-4340-a96e-c174f2a69d2e
   Args:
-    relation: :hasSon
-    source: Alexander_Edgar_Lascelles
-    target: Kit_Lascelles
-  AddTriple (b80fb0ac-8373-4ae9-ac94-b47db6549604)
- Call ID: b80fb0ac-8373-4ae9-ac94-b47db6549604
+    type: :Person
+    source: WillaElliotMurrayKynynmound
+  AddTriple (592fbc2f-340c-4ac3-92bc-83a0cb0e4785)
+ Call ID: 592fbc2f-340c-4ac3-92bc-83a0cb0e4785
   Args:
-    source: Ivy_Lascelles
-    target: Annika_Reed
-    relation: :hasMother
-  AddTriple (de062d1b-ebc8-4332-ab18-c2a31fa76c70)
- Call ID: de062d1b-ebc8-4332-ab18-c2a31fa76c70
+    relation: :isMotherOf
+    source: WillaElliotMurrayKynynmound
+    target: WillaMaryGabrielleChetwode
+  AssignClass (3c89aeb8-810e-455f-a4ec-a9e632907e7d)
+ Call ID: 3c89aeb8-810e-455f-a4ec-a9e632907e7d
   Args:
-    source: Kit_Lascelles
-    target: Annika_Reed
-    relation: :hasMother
-  AddLiteral (0bff4bae-215f-4c34-9687-2448f26cc05a)
- Call ID: 0bff4bae-215f-4c34-9687-2448f26cc05a
+    source: VictorElliotMurrayKynynmound
+    type: :Man
+  AssignClass (808e9158-512e-42e0-ab7a-01f3f261fa6a)
+ Call ID: 808e9158-512e-42e0-ab7a-01f3f261fa6a
   Args:
-    source: Alexander_Edgar_Lascelles
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 2017
-  AddLiteral (dca01439-0fc3-4abb-8a60-63612e172381)
- Call ID: dca01439-0fc3-4abb-8a60-63612e172381
+    type: :Person
+    source: VictorElliotMurrayKynynmound
+  AddTriple (48ef1ebc-6b4e-4407-adf8-081bda2bf38c)
+ Call ID: 48ef1ebc-6b4e-4407-adf8-081bda2bf38c
   Args:
-    literal_value: 2018
-    relation: :hasBirthYear
-    source: Ivy_Lascelles
-    literal_type: xsd:integer
-  AddLiteral (ed54c30c-ac41-4f5d-8b67-35099475ba84)
- Call ID: ed54c30c-ac41-4f5d-8b67-35099475ba84
+    source: VictorElliotMurrayKynynmound
+    target: WillaElliotMurrayKynynmound
+    relation: :isFatherOf
+  AssignClass (85ee29c1-9b14-4bd2-b4f6-c64312e04d17)
+ Call ID: 85ee29c1-9b14-4bd2-b4f6-c64312e04d17
   Args:
-    literal_value: 2023
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Kit_Lascelles
-  Finish (068f8ff6-0826-43c0-9bbc-b9e6c32e1d66)
- Call ID: 068f8ff6-0826-43c0-9bbc-b9e6c32e1d66
+    type: :Man
+    source: AndrewElphinstone
+  AssignClass (2c1e0740-10e8-471d-9d4c-90674e0a7ca8)
+ Call ID: 2c1e0740-10e8-471d-9d4c-90674e0a7ca8
+  Args:
+    type: :Person
+    source: AndrewElphinstone
+  AddTriple (1b1f6687-25ab-42e4-b98d-fb7b5c6ae202)
+ Call ID: 1b1f6687-25ab-42e4-b98d-fb7b5c6ae202
+  Args:
+    relation: :hasFather
+    target: AndrewElphinstone
+    source: JamesElphinstone
+  AssignClass (1008e698-d231-4a0b-84d2-ea52f025b3c1)
+ Call ID: 1008e698-d231-4a0b-84d2-ea52f025b3c1
+  Args:
+    source: MaryBowesLyon
+    type: :Woman
+  AssignClass (74032018-49ac-4193-8afd-3918fa221d2c)
+ Call ID: 74032018-49ac-4193-8afd-3918fa221d2c
+  Args:
+    source: MaryBowesLyon
+    type: :Person
+  AddTriple (c74507b0-4c17-4797-9d26-782ada0bb191)
+ Call ID: c74507b0-4c17-4797-9d26-782ada0bb191
+  Args:
+    relation: :isMotherOf
+    target: AndrewElphinstone
+    source: MaryBowesLyon
+  AssignClass (63396f93-4306-424c-b733-d3fc116d03d4)
+ Call ID: 63396f93-4306-424c-b733-d3fc116d03d4
+  Args:
+    type: :Woman
+    source: ElizabethQueenMother
+  AssignClass (5f5ac2c1-1ca5-4033-ad4d-9656c804a5c4)
+ Call ID: 5f5ac2c1-1ca5-4033-ad4d-9656c804a5c4
+  Args:
+    type: :Person
+    source: ElizabethQueenMother
+  AddTriple (326ef3b6-fb7e-477d-8599-bf235c18ecb0)
+ Call ID: 326ef3b6-fb7e-477d-8599-bf235c18ecb0
+  Args:
+    relation: :isSisterOf
+    source: MaryBowesLyon
+    target: ElizabethQueenMother
+  AssignClass (8b16c8cd-057a-42f4-83d5-7e789133e88f)
+ Call ID: 8b16c8cd-057a-42f4-83d5-7e789133e88f
+  Args:
+    type: :Woman
+    source: ElizabethII
+  AssignClass (8b73c916-b627-4f5f-af45-49a472cc3f56)
+ Call ID: 8b73c916-b627-4f5f-af45-49a472cc3f56
+  Args:
+    source: ElizabethII
+    type: :Person
+  Finish (05077e79-21bc-4f0c-ae56-7c5a7bb4cde4)
+ Call ID: 05077e79-21bc-4f0c-ae56-7c5a7bb4cde4
   Args:

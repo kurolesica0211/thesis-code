@@ -1,0 +1,231 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:August_Brooksbank,
+        data:Beatrice,
+        data:King_Charles_III,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Jack_Brooksbank a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jack_Brooksbank ;
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasRelation data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:Princess_Eugenie ;
+    :hasSon data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBloodrelationOf data:Jack_Brooksbank ;
+    :isBrotherOf data:Jack_Brooksbank ;
+    :isFatherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isParentOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSiblingOf data:Jack_Brooksbank ;
+    :isUncleOf data:August_Brooksbank,
+        data:Ernest_Brooksbank .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:Beatrice,
+        data:Princess_Eugenie ;
+    :hasDaughter data:Beatrice,
+        data:Princess_Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isFatherOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isParentOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isUncleOf data:Beatrice,
+        data:Princess_Eugenie .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatrice,
+        data:Princess_Eugenie ;
+    :hasDaughter data:Beatrice,
+        data:Princess_Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:King_Charles_III,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Sarah_Ferguson ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie ;
+    :isAuntOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isMotherOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isParentOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Beatrice a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Beatrice,
+        data:King_Charles_III,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Beatrice,
+        data:Princess_Eugenie ;
+    :isAuntOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBloodrelationOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isSiblingOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isSisterOf data:Beatrice,
+        data:Princess_Eugenie .
+
+data:Ernest_Brooksbank a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Jack_Brooksbank,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Princess_Eugenie ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBrotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isChildOf data:Jack_Brooksbank,
+        data:Princess_Eugenie ;
+    :isSiblingOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSonOf data:Jack_Brooksbank,
+        data:Princess_Eugenie .
+
+data:August_Brooksbank a :Man,
+        :Person ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Jack_Brooksbank,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Princess_Eugenie ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:King_Charles_III,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :isBloodrelationOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBrotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isChildOf data:Jack_Brooksbank,
+        data:Princess_Eugenie ;
+    :isSiblingOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSonOf data:Jack_Brooksbank,
+        data:Princess_Eugenie .
+
+data:Princess_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasBirthYear 1990 ;
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMarriageYear 2018 ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Beatrice,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:King_Charles_III,
+        data:Princess_Eugenie,
+        data:Sarah_Ferguson ;
+    :hasSister data:Beatrice,
+        data:Princess_Eugenie ;
+    :hasSon data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAuntOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBloodrelationOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isParentOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSiblingOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :isSisterOf data:Beatrice,
+        data:Princess_Eugenie ;
+    :knownAs "Eugenie Victoria Helena"^^xsd:string .
+

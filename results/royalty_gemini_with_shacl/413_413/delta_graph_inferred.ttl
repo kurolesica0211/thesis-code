@@ -1,0 +1,474 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Luise_Amalia_Klein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasDaughter data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasSister data:Luise_Amalia_Klein ;
+    :isAncestorOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isAuntOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Luise_Amalia_Klein ;
+    :isMotherOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isParentOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSiblingOf data:Luise_Amalia_Klein ;
+    :isSisterOf data:Luise_Amalia_Klein .
+
+data:Otto_Eugen_Tiedemann a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_Eugen_Tiedemann ;
+    :hasChild data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasDaughter data:Charlotte_Luise_Auguste_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isAncestorOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Otto_Eugen_Tiedemann ;
+    :isBrotherOf data:Otto_Eugen_Tiedemann ;
+    :isFatherOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isParentOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSiblingOf data:Otto_Eugen_Tiedemann ;
+    :isUncleOf data:Charlotte_Luise_Auguste_Tiedemann .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+        :Woman ;
+    :hasAncestor data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein ;
+    :hasParent data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasRelation data:Charlotte_Luise_Auguste_Tiedemann,
+        data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :hasSister data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isBloodrelationOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isChildOf data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isDaughterOf data:Luise_Amalia_Klein,
+        data:Otto_Eugen_Tiedemann ;
+    :isSiblingOf data:Charlotte_Luise_Auguste_Tiedemann ;
+    :isSisterOf data:Charlotte_Luise_Auguste_Tiedemann .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Jaime ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSon data:Infante_Jaime ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon,
+        data:Infante_Jaime ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Jaime ;
+    :isParentOf data:Infante_Jaime ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Jaime .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infante_Jaime ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Victoria_Eugenie ;
+    :hasSon data:Infante_Jaime ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon,
+        data:Infante_Jaime ;
+    :isAuntOf data:Infante_Jaime ;
+    :isBloodrelationOf data:Victoria_Eugenie ;
+    :isMotherOf data:Infante_Jaime ;
+    :isParentOf data:Infante_Jaime ;
+    :isSiblingOf data:Victoria_Eugenie ;
+    :isSisterOf data:Victoria_Eugenie .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :hasSon data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isAuntOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isMotherOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isParentOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isUncleOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon .
+
+data:Infanta_Beatriz a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :isAuntOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSisterOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan .
+
+data:Infanta_Maria_Cristina a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :isAuntOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSisterOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan .
+
+data:Infante_Gonzalo a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isUncleOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon .
+
+data:Infante_Juan a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isUncleOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon .
+
+data:Alfonso_de_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime,
+        data:Victoria_Eugenie ;
+    :hasBrother data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :isBloodrelationOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBrotherOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime ;
+    :isSiblingOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime .
+
+data:Gonzalo_de_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime,
+        data:Victoria_Eugenie ;
+    :hasBrother data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :isBloodrelationOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBrotherOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime ;
+    :isSiblingOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime .
+
+data:Infante_Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasBirthYear 1908 ;
+    :hasBrother data:Alfonso_Prince_of_Asturias,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :hasChild data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :hasRelation data:Alfonso_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_de_Borbon,
+        data:Emmanuelle_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan,
+        data:Victoria_Eugenie ;
+    :hasSister data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina ;
+    :hasSon data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isAncestorOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isBrotherOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :isFatherOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isParentOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Jaime,
+        data:Infante_Juan ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie ;
+    :isUncleOf data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon .
+

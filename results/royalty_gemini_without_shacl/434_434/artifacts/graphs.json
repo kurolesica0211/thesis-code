@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Man ;\n    :hasSex data:Male .\n\ndata:Isobel_Weatherall a :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall ;\n    :hasSex data:Female .\n\ndata:Michael_Bowes-Lyon a :Man ;\n    :hasSex data:Male .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Man .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Man ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Isobel_Weatherall a :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall ;\n    :hasSex data:Female .\n\ndata:Michael_Bowes-Lyon a :Man ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall ;\n    :hasSex data:Male .\n\ndata:Anthony_Edward_Weatherall a :Man ;\n    :hasSex data:Male .\n\ndata:Female a :Sex .\n\ndata:Isobel_Weatherall a :Woman ;\n    :hasFather data:Anthony_Edward_Weatherall ;\n    :hasSex data:Female .\n\ndata:Michael_Bowes-Lyon a :Man ;\n    :hasSex data:Male .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Heinrich_Prinz_von_Hannover a :Man ;\n    :hasBirthYear 1961 ;\n    :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;\n    :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;\n    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .\n\ndata:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Man .\n\ndata:Prince_Ernest_Augustus_of_Hanover a :Man .\n\ndata:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .\n\n"
     }
 ]

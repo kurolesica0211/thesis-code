@@ -2,33 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Frederick_of_Prussia a :Man,
+data:Alfonso_de_Borbon a :Man,
         :Person ;
-    :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
-        "George Mansfield"^^xsd:string ;
-    :hasAncestor data:Sophia_of_Hanover ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 1966 ;
-    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
-    :hasMarriageYear 1945 ;
-    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Lady_Brigid_Guinness ;
-    :hasSex data:Male .
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre .
 
-data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+        :Woman ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein .
+
+data:Gonzalo_de_Borbon a :Man,
+        :Person ;
+    :hasFather data:Infante_Jaime ;
+    :hasMother data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Ancestor,
         :Man,
         :Person .
 
-data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+data:Infanta_Beatriz a :Person,
+        :Woman .
+
+data:Infanta_Maria_Cristina a :Person,
+        :Woman .
+
+data:Infante_Gonzalo a :Man,
+        :Person .
+
+data:Infante_Juan a :Man,
+        :Person .
+
+data:Luise_Amalia_Klein a :Ancestor,
         :Person,
         :Woman .
 
-data:Lady_Brigid_Guinness a :Person,
+data:Otto_Eugen_Tiedemann a :Ancestor,
+        :Man,
+        :Person .
+
+data:Victoria_Eugenie a :Ancestor,
+        :Person,
         :Woman .
 
-data:Male a :Male,
-        :Sex .
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Sophia_of_Hanover a :Ancestor,
-        :Person .
+data:Infante_Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie ;
+    :isSiblingOf data:Alfonso_Prince_of_Asturias,
+        data:Infanta_Beatriz,
+        data:Infanta_Maria_Cristina,
+        data:Infante_Gonzalo,
+        data:Infante_Juan .
 

@@ -1,0 +1,146 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "210:248"^^xsd:string ;
+    data:posIndicesPart "1374:1382"^^xsd:string,
+        "1675:1683"^^xsd:string,
+        "258:266"^^xsd:string,
+        "536:544"^^xsd:string,
+        "566:574"^^xsd:string,
+        "616:621"^^xsd:string,
+        "622:633"^^xsd:string,
+        "677:682"^^xsd:string,
+        "773:781"^^xsd:string,
+        "918:926"^^xsd:string ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isAuntOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "1222:1232"^^xsd:string,
+        "895:905"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Adalbert_of_Prussia ;
+    :hasRelation data:Prince_Adalbert_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Adalbert_of_Prussia ;
+    :isAncestorOf data:Prince_Adalbert_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Adalbert_of_Prussia ;
+    :isParentOf data:Prince_Adalbert_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Adalbert_of_Prussia .
+
+data:Prince_Adalbert_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Adalbert of Prussia"^^xsd:string ;
+    data:posIndicesFull "116:144"^^xsd:string,
+        "790:816"^^xsd:string ;
+    data:posIndicesPart "1021:1027"^^xsd:string,
+        "1028:1036"^^xsd:string,
+        "1132:1138"^^xsd:string,
+        "1166:1172"^^xsd:string,
+        "1173:1181"^^xsd:string,
+        "1278:1284"^^xsd:string,
+        "1285:1293"^^xsd:string,
+        "1545:1551"^^xsd:string,
+        "1629:1635"^^xsd:string,
+        "1636:1644"^^xsd:string,
+        "304:310"^^xsd:string,
+        "455:461"^^xsd:string,
+        "520:526"^^xsd:string ;
+    data:wdtLink wdt:Q50998 ;
+    :alsoKnownAs "Prince Adalbert Ferdinand Berengar Viktor of Prussia"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Adalbert_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Prince_Adalbert_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Adalbert_of_Prussia ;
+    :isBrotherOf data:Prince_Adalbert_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Adalbert_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    rdfs:label "Princess Adelaide of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string,
+        "116:144"^^xsd:string,
+        "790:816"^^xsd:string ;
+    data:posIndicesPart "1365:1373"^^xsd:string,
+        "1374:1382"^^xsd:string,
+        "1666:1674"^^xsd:string,
+        "1675:1683"^^xsd:string,
+        "258:266"^^xsd:string,
+        "355:359"^^xsd:string,
+        "360:369"^^xsd:string,
+        "536:544"^^xsd:string,
+        "566:574"^^xsd:string,
+        "918:926"^^xsd:string ;
+    data:wdtLink wdt:Q261826 ;
+    :alsoKnownAs "Princess Adalbert of Prussia"^^xsd:string,
+        "Princess Adelheid, Princess Adalbert of Prussia"^^xsd:string ;
+    :hasAncestor data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Princess_Adelaide_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Adelaide_of_Saxe-Meiningen .
+

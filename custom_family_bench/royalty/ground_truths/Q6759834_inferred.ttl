@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Margaret_Rhodes a :Person,
+        :Woman ;
+    rdfs:label "Margaret Rhodes"^^xsd:string ;
+    data:posIndicesFull "0:15"^^xsd:string,
+        "263:283"^^xsd:string ;
+    data:posIndicesPart "1019:1025"^^xsd:string,
+        "1170:1176"^^xsd:string,
+        "1204:1212"^^xsd:string,
+        "655:661"^^xsd:string,
+        "781:787"^^xsd:string,
+        "883:889"^^xsd:string ;
+    data:wdtLink wdt:Q6759834 ;
+    :alsoKnownAs "Hon Margaret Elphinstone"^^xsd:string,
+        "Hon Margaret Rhodes"^^xsd:string,
+        "Hon. Margaret Elphinstone"^^xsd:string,
+        "Hon. Margaret Rhodes"^^xsd:string,
+        "Margaret Elphinstone"^^xsd:string ;
+    :hasRelation data:Margaret_Rhodes ;
+    :hasSex data:female ;
+    :hasSister data:Margaret_Rhodes ;
+    :isBloodrelationOf data:Margaret_Rhodes ;
+    :isSiblingOf data:Margaret_Rhodes ;
+    :isSisterOf data:Margaret_Rhodes .
+
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person,
+        :Woman ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone"^^xsd:string ;
+    data:posIndicesFull "384:404"^^xsd:string ;
+    data:posIndicesPart "1087:1091"^^xsd:string,
+        "504:508"^^xsd:string ;
+    data:wdtLink wdt:Q6779476 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon"^^xsd:string,
+        "Lady Mary Frances Bowes-Lyon"^^xsd:string,
+        "Mary Frances Elphinstone, Lady Elphinstone"^^xsd:string ;
+    :hasRelation data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :hasSex data:female ;
+    :hasSister data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isBloodrelationOf data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isSiblingOf data:Mary_Elphinstone-_Lady_Elphinstone ;
+    :isSisterOf data:Mary_Elphinstone-_Lady_Elphinstone .
+

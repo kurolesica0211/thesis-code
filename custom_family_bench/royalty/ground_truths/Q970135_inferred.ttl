@@ -1,0 +1,118 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "175:187"^^xsd:string,
+        "175:196"^^xsd:string,
+        "338:350"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :hasChild data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin,
+        data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasSex data:male ;
+    :hasSon data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isAncestorOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isFatherOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isParentOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isUncleOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin .
+
+data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Joseph-Marie-Philippe Lévêque de Vilmorin"^^xsd:string ;
+    data:posIndicesFull "1191:1211"^^xsd:string,
+        "415:435"^^xsd:string ;
+    data:posIndicesPart "632:640"^^xsd:string,
+        "950:958"^^xsd:string ;
+    data:wdtLink wdt:Q3381015 ;
+    :alsoKnownAs "Joseph-Marie-Philippe Leveque de Vilmorin"^^xsd:string,
+        "P. de Vilmorin"^^xsd:string,
+        "P.Vilm."^^xsd:string,
+        "Philippe de Vilmorin"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :hasChild data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin,
+        data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasSex data:male ;
+    :hasSon data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isAncestorOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isFatherOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isParentOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isUncleOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin .
+
+data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin a :Man,
+        :Person ;
+    rdfs:label "Roger Marie Vincent Philippe Lévêque de Vilmorin"^^xsd:string ;
+    data:posIndicesFull "19:67"^^xsd:string ;
+    data:posIndicesPart "1158:1166"^^xsd:string,
+        "209:214"^^xsd:string,
+        "479:484"^^xsd:string,
+        "632:640"^^xsd:string,
+        "705:710"^^xsd:string,
+        "941:946"^^xsd:string,
+        "950:958"^^xsd:string ;
+    data:wdtLink wdt:Q970135 ;
+    :alsoKnownAs "Р.Вильм."^^xsd:string,
+        "Роже Мари Венсан Филипп Левек де Вильморен"^^xsd:string,
+        "Роже де Вильморен"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :hasBrother data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasFather data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :hasParent data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin,
+        data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isBrotherOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isChildOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin ;
+    :isSiblingOf data:Roger_Marie_Vincent_Philippe_Lévêque_de_Vilmorin ;
+    :isSonOf data:Alfonso_XIII,
+        data:Joseph-Marie-Philippe_Lévêque_de_Vilmorin .
+

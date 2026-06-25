@@ -2,52 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adam_Jerzy_Czartoryski a :Ancestor,
-        :Man,
+data:GeorgeVI a :Man,
         :Person ;
-    :isSonOf data:Izabela_Czartoryska .
+    :hasAncestor data:PrinceAlbertPrinceConsort,
+        data:QueenVictoria ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:DukeOfKent,
+        data:EdwardVIII,
+        data:PrinceHenry ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasDeathYear 1952 ;
+    :hasFather data:GeorgeV ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:QueenMary ;
+    :hasRelation data:ElizabethBowesLyon ;
+    :knownAs "Bertie"^^xsd:string .
 
-data:August_Aleksander_Czartoryski a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1697 ;
-    :hasDeathYear 1782 ;
-    :hasRelation data:Zofia_von_D%C3%B6nhoff .
+data:DukeOfKent a :Man,
+        :Person .
 
-data:Tamara_Czartoryska a :Person,
-        :Woman ;
-    :isDaughterOf data:Adam_Karol_Czartoryski .
+data:EdwardVIII a :Man,
+        :Person .
 
-data:Izabela_Czartoryska a :Ancestor,
-        :Person,
-        :Woman ;
-    :isAncestorOf data:Adam_Karol_Czartoryski .
-
-data:Ludwik_Piotr_Czartoryski a :Man,
-        :Person ;
-    :hasBirthYear 1945 ;
-    :hasDeathYear 1946 ;
-    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
-    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .
-
-data:Zofia_von_D%C3%B6nhoff a :Person,
+data:ElizabethBowesLyon a :Person,
         :Woman .
 
-data:Adam_Karol_Czartoryski a :Man,
-        :Person ;
-    :hasBirthYear 1940 ;
-    :hasBrother data:Ludwik_Piotr_Czartoryski ;
-    :hasFather data:Augustyn_J%C3%B3zef_Czartoryski ;
-    :hasMother data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies .
+data:ElizabethII a :Person,
+        :Woman .
 
-data:Augustyn_J%C3%B3zef_Czartoryski a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1907 ;
-    :hasDeathYear 1946 .
+data:GeorgeV a :Man,
+        :Person .
 
-data:Mar%C3%ADa_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasDeathYear 1996 .
+data:Margaret a :Person,
+        :Woman .
+
+data:PrinceAlbertPrinceConsort a :Man,
+        :Person .
+
+data:PrinceHenry a :Man,
+        :Person .
+
+data:QueenMary a :Person,
+        :Woman .
+
+data:QueenVictoria a :Person,
+        :Woman .
 

@@ -1,0 +1,90 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexandra_of_Hohenzollern a :Person,
+        :Woman ;
+    :hasRelation data:Alexandra_of_Hohenzollern ;
+    :hasSister data:Alexandra_of_Hohenzollern ;
+    :isBloodrelationOf data:Alexandra_of_Hohenzollern ;
+    :isSiblingOf data:Alexandra_of_Hohenzollern ;
+    :isSisterOf data:Alexandra_of_Hohenzollern .
+
+data:Albrecht_von_Hohenzollern a :Man,
+        :Person ;
+    :hasBirthYear 1954 ;
+    :hasBrother data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :hasRelation data:Albrecht_von_Hohenzollern,
+        data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :isBloodrelationOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :isBrotherOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :isSiblingOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern .
+
+data:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :hasChild data:Karl_Friedrich_von_Hohenzollern ;
+    :hasRelation data:Albrecht_von_Hohenzollern,
+        data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :hasSon data:Karl_Friedrich_von_Hohenzollern ;
+    :isAncestorOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :isBrotherOf data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :isFatherOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isParentOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isSiblingOf data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :isUncleOf data:Karl_Friedrich_von_Hohenzollern .
+
+data:Margarita_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Karl_Friedrich_von_Hohenzollern ;
+    :hasRelation data:Albrecht_von_Hohenzollern,
+        data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :hasSister data:Margarita_of_Leiningen ;
+    :hasSon data:Karl_Friedrich_von_Hohenzollern ;
+    :isAncestorOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isAuntOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isBloodrelationOf data:Margarita_of_Leiningen ;
+    :isMotherOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isParentOf data:Karl_Friedrich_von_Hohenzollern ;
+    :isSiblingOf data:Margarita_of_Leiningen ;
+    :isSisterOf data:Margarita_of_Leiningen .
+
+data:Karl_Friedrich_von_Hohenzollern a :Man,
+        :Person ;
+    :hasAncestor data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :hasBirthYear 1952 ;
+    :hasBrother data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :hasMother data:Margarita_of_Leiningen ;
+    :hasParent data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :hasRelation data:Albrecht_von_Hohenzollern,
+        data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :isBloodrelationOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :isBrotherOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :isChildOf data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Margarita_of_Leiningen ;
+    :isSiblingOf data:Albrecht_von_Hohenzollern,
+        data:Karl_Friedrich_von_Hohenzollern ;
+    :isSonOf data:Friedrich_Wilhelm_von_Hohenzollern,
+        data:Margarita_of_Leiningen .
+

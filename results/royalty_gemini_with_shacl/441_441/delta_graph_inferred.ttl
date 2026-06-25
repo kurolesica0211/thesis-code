@@ -1,0 +1,405 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henry_Nevile_Fane a :Ancestor,
+        :Man ;
+    :hasBrother data:Henry_Nevile_Fane ;
+    :hasRelation data:Henry_Nevile_Fane ;
+    :isBloodrelationOf data:Henry_Nevile_Fane ;
+    :isBrotherOf data:Henry_Nevile_Fane ;
+    :isSiblingOf data:Henry_Nevile_Fane .
+
+data:Jane_McDonnell a :Ancestor,
+        :Woman ;
+    :hasRelation data:Jane_McDonnell ;
+    :hasSister data:Jane_McDonnell ;
+    :isBloodrelationOf data:Jane_McDonnell ;
+    :isSiblingOf data:Jane_McDonnell ;
+    :isSisterOf data:Jane_McDonnell .
+
+data:Elizabeth_Bowes-Lyon a :Woman ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon .
+
+data:Cecilia_Bowes-Lyon a :Ancestor,
+        :Woman ;
+    :hasChild data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Cecilia_Bowes-Lyon ;
+    :hasSon data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isAuntOf data:John_Herbert_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon ;
+    :isMotherOf data:John_Herbert_Bowes-Lyon ;
+    :isParentOf data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon ;
+    :isSisterOf data:Cecilia_Bowes-Lyon .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSon data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:John_Herbert_Bowes-Lyon ;
+    :isParentOf data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:John_Herbert_Bowes-Lyon .
+
+data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
+        :Woman ;
+    :hasChild data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasSon data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isAncestorOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isAuntOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isBloodrelationOf data:Harriet_Williamina_Hepburn-Forbes ;
+    :isMotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isParentOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isSiblingOf data:Harriet_Williamina_Hepburn-Forbes ;
+    :isSisterOf data:Harriet_Williamina_Hepburn-Forbes .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th a :Ancestor,
+        :Man ;
+    :hasAncestor data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasBrother data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasChild data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasMother data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasParent data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSon data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isAncestorOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isBrotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isChildOf data:Harriet_Williamina_Hepburn-Forbes ;
+    :isFatherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isParentOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isSiblingOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isSonOf data:Harriet_Williamina_Hepburn-Forbes ;
+    :isUncleOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isMotherOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Katherine_Bowes-Lyon a :Woman ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon .
+
+data:Nerissa_Bowes-Lyon a :Woman ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:John_Herbert_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon .
+
+data:John_Herbert_Bowes-Lyon a :Ancestor,
+        :Man ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :hasParent data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isChildOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSonOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st a :Ancestor,
+        :Man ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasBrother data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :hasChild data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th ;
+    :hasMother data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Williamina_Hepburn-Forbes,
+        data:John_Herbert_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isAncestorOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis,
+        data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon ;
+    :isBloodrelationOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isBrotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isParentOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st ;
+    :isSonOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th,
+        data:Harriet_Williamina_Hepburn-Forbes ;
+    :isUncleOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+

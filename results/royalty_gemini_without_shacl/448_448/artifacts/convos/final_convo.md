@@ -69,28 +69,46 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix of Hohenlohe-Langenburg (German: Beatrix Alice Marie Melita Margarete Prinzessin zu Hohenlohe-Langenburg; 10 July 1936 – 15 November 1997) was a German princess from the House of Hohenlohe-Langenburg.
-She was a niece of Prince Philip, Duke of Edinburgh, and thus a first cousin of King Charles III.
+John Ulick Knatchbull, 7th Baron Brabourne, CBE (9 November 1924 – 23 September 2005), professionally known as John Brabourne, was a British peer, television producer and Oscar-nominated film producer.
+Married to the elder daughter of 1st Earl Mountbatten, Brabourne was a survivor of the bombing which killed his father-in-law, mother and son.
 Biography
 
-Beatrix was born on 10 July 1936 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
-The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to her parents' membership in the Nazi Party.
-Six years later, however, Beatrix and her family were seated in the royal box at  her aunt's coronation in Westminster Abbey.
-In January 1956, Beatrix and her cousin, Princess Christina of Hesse, moved to London into a flat arranged by their uncle, Prince Philip, in Dolphin Square.
-Beatrix took dressmaking classes at the Royal College of Art.
-While Princess Christina eventually settled in the United Kingdom, marrying Prince Andrew of Yugoslavia whom the princesses were close friends with during their stay, Beatrix returned to Germany that same year.
-In 1961, Beatrix became engaged to her first cousin, Maximilian, Hereditary Prince of Baden.
-Maximilian later married Archduchess Valerie of Austria (b. 1941) in 1966 and Beatrix never married.
-In her later years, she served as secretary to Margaret, Princess of Hesse and by Rhine, the sister-in-law of her aunt, Princess Cecilie.
-She lived in Langenburg, Germany, for most of her life.
-She continued to attend family events in Britain, such as the weddings of her cousins Prince Charles (later King Charles III) and Prince Andrew in 1981 and 1986, respectively.
-Beatrix died on 15 November 1997, aged 61, in the town where she was born.
+Brabourne was born in 1924, the second son of Michael Knatchbull, 5th Baron Brabourne, and his wife, Lady Doreen Browne.
+Marriage
+
+At the end of the war, Brabourne returned to England and settled in the family seat, Mersham in Kent.
+On 26 October 1946, at Romsey Abbey in Hampshire, at the age of 21, he married Patricia Mountbatten, elder daughter of Louis Mountbatten, 1st Viscount Mountbatten, later 1st
+Earl Mountbatten of Burma.
+Brabourne's best man at the wedding was Squadron Leader Charles Harris-St. John.
+Lady Brabourne was to inherit her father's peerages in due course.
+This would make Lord and Lady Brabourne among the few married couples to each hold peerages in their own right.
+Also, Lady Brabourne was related to the British royal family, and her aunt Louise Mountbatten was at that time the Crown Princess (later Queen) of Sweden.
+In February 1947, only months after the wedding, Brabourne's father-in-law was appointed Viceroy of India.
+In November the same year, Lady Brabourne's first cousin Philip, Duke of Edinburgh, wed Princess Elizabeth, future queen of the United Kingdom.
+Lord and Lady Brabourne had eight children, including Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), Lady Amanda Patricia Victoria Knatchbull (born 26 June 1957), and Nicholas Timothy Charles Knatchbull.
+Career and service
+
+In the late 1940s, shortly after leaving the army, Brabourne began working as an assistant production manager for certain television productions, mostly based on war-related themes.
+John Brabourne received two Academy Award nominations for Best Picture, as producer of Romeo and Juliet (1968) and A Passage to India (1984).
+In 1985, Brabourne was invested as a Fellow of the British Film Institute, an organisation he also served as a Governor.
+Brabourne served as a governor of various schools, including Norton Knatchbull School (founded by an ancestor c. 1630 AD) from 1947 to 2000; Wye College in Kent from 1955 to 2000, and Gordonstoun School from 1964 to 1994.
+IRA bombing
+
+On 27 August 1979, while the family was on holiday in Mullaghmore, County Sligo, Lord Brabourne's father-in-law, Earl Mountbatten of Burma, took a number of family members out lobstering on his motorboat, Shadow V, in Donegal Bay.
+Having planned to murder Mountbatten, the Irish Republican Army (IRA) placed a bomb inside the boat on the night of the 26th.
+Mountbatten and several members of the party were killed the next morning when the bomb was triggered by an IRA observer onshore who was armed with a radio detonator.
+The dead included Brabourne's 83-year-old mother, the Dowager Baroness Brabourne; one of his twin 14-year-old sons, Nicholas Knatchbull; and 15-year-old Paul Maxwell from County Fermanagh who had been hired for the summer as Mountbatten's boat boy.
+Brabourne, his wife Patricia, and their other twin son Timothy were severely injured, but survived the attack.
+Lord Brabourne died on 23 September 2005 at his home in Kent, aged 80.
+His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +124,9 @@ Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +141,23 @@ Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,138 +449,228 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (70007f76-9f84-4ab5-9640-09b913a3857b)
- Call ID: 70007f76-9f84-4ab5-9640-09b913a3857b
+  AssignClass (ca651b69-2206-4119-bee5-9de85756e352)
+ Call ID: ca651b69-2206-4119-bee5-9de85756e352
   Args:
-    source: :Beatrix_of_Hohenlohe-Langenburg
+    source: John_Ulick_Knatchbull
+    type: :Man
+  AssignClass (bf473ddc-0430-446d-ac82-91c1be0970f2)
+ Call ID: bf473ddc-0430-446d-ac82-91c1be0970f2
+  Args:
     type: :Person
-  AssignClass (575d38a3-fe22-4f53-9619-0283c8b43dec)
- Call ID: 575d38a3-fe22-4f53-9619-0283c8b43dec
+    source: John_Ulick_Knatchbull
+  AddLiteral (d835e36d-95b9-43f4-a7a0-a4ee918eee9d)
+ Call ID: d835e36d-95b9-43f4-a7a0-a4ee918eee9d
   Args:
-    source: :Beatrix_of_Hohenlohe-Langenburg
-    type: :Woman
-  AddLiteral (7d1ded2c-2464-4263-b612-d5e78245fcb5)
- Call ID: 7d1ded2c-2464-4263-b612-d5e78245fcb5
-  Args:
-    relation: :hasBirthYear
+    literal_value: 1924
+    source: John_Ulick_Knatchbull
     literal_type: xsd:integer
-    source: :Beatrix_of_Hohenlohe-Langenburg
-    literal_value: 1936
-  AddLiteral (e10ac8c9-92af-438e-80d5-49db0bed3a65)
- Call ID: e10ac8c9-92af-438e-80d5-49db0bed3a65
+    relation: :hasBirthYear
+  AddLiteral (3b83b7a4-7ac8-41af-8a8d-845990a6746b)
+ Call ID: 3b83b7a4-7ac8-41af-8a8d-845990a6746b
   Args:
-    literal_value: 1997
-    source: :Beatrix_of_Hohenlohe-Langenburg
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (ba4c5e54-6b74-458a-99e3-6f5405272f61)
- Call ID: ba4c5e54-6b74-458a-99e3-6f5405272f61
+    literal_value: 2005
+    source: John_Ulick_Knatchbull
+  AddLiteral (63b3ad50-63d6-4feb-8b6c-12b391e281ee)
+ Call ID: 63b3ad50-63d6-4feb-8b6c-12b391e281ee
   Args:
-    source: :Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
-    type: :Person
-  AssignClass (62815547-cb68-45ef-85dc-510a2527428d)
- Call ID: 62815547-cb68-45ef-85dc-510a2527428d
+    literal_type: xsd:string
+    relation: :knownAs
+    literal_value: John Brabourne
+    source: John_Ulick_Knatchbull
+  AssignClass (82487fdb-a30b-4b01-a98b-d97850bcd6db)
+ Call ID: 82487fdb-a30b-4b01-a98b-d97850bcd6db
   Args:
-    source: :Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
+    source: Michael_Knatchbull
     type: :Man
-  AddTriple (973ca0bd-8b19-4334-91b2-1cb860f4c19b)
- Call ID: 973ca0bd-8b19-4334-91b2-1cb860f4c19b
+  AssignClass (6dc7ae81-63b3-4aa8-b471-e8c6049cf5b6)
+ Call ID: 6dc7ae81-63b3-4aa8-b471-e8c6049cf5b6
   Args:
-    target: :Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
-    source: :Beatrix_of_Hohenlohe-Langenburg
+    source: Michael_Knatchbull
+    type: :Person
+  AssignClass (d5f80779-9e49-4188-ba46-c34623529816)
+ Call ID: d5f80779-9e49-4188-ba46-c34623529816
+  Args:
+    type: :Woman
+    source: Lady_Doreen_Browne
+  AssignClass (ebce2ff9-5349-471b-b276-fb48803fded3)
+ Call ID: ebce2ff9-5349-471b-b276-fb48803fded3
+  Args:
+    source: Lady_Doreen_Browne
+    type: :Person
+  AddTriple (d86ae000-698e-45e0-85c8-e63087cb88fd)
+ Call ID: d86ae000-698e-45e0-85c8-e63087cb88fd
+  Args:
+    source: John_Ulick_Knatchbull
     relation: :hasFather
-  AssignClass (391ded45-b0de-4103-89c6-50c64566dc74)
- Call ID: 391ded45-b0de-4103-89c6-50c64566dc74
+    target: Michael_Knatchbull
+  AddTriple (f88fc6a0-6036-40ed-a89e-16c21f7d3029)
+ Call ID: f88fc6a0-6036-40ed-a89e-16c21f7d3029
   Args:
-    source: :Margarita_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (af05908b-8d3d-4b3d-b83d-8da56f2e5c10)
- Call ID: af05908b-8d3d-4b3d-b83d-8da56f2e5c10
-  Args:
-    source: :Margarita_of_Greece_and_Denmark
-    type: :Woman
-  AddTriple (6ab88ae2-c8a6-4e6f-99d5-d095b9e5661c)
- Call ID: 6ab88ae2-c8a6-4e6f-99d5-d095b9e5661c
-  Args:
-    target: :Margarita_of_Greece_and_Denmark
+    target: Lady_Doreen_Browne
     relation: :hasMother
-    source: :Beatrix_of_Hohenlohe-Langenburg
-  AssignClass (cf40af76-6d0d-473d-b8d2-9fe26835bb7d)
- Call ID: cf40af76-6d0d-473d-b8d2-9fe26835bb7d
+    source: John_Ulick_Knatchbull
+  AssignClass (87d19628-d9ba-4b48-8cb3-9ca429fe5d82)
+ Call ID: 87d19628-d9ba-4b48-8cb3-9ca429fe5d82
+  Args:
+    type: :Woman
+    source: Patricia_Mountbatten
+  AssignClass (20bbf180-ef8d-4054-9331-3800a551dcd1)
+ Call ID: 20bbf180-ef8d-4054-9331-3800a551dcd1
   Args:
     type: :Person
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AssignClass (c93ab401-9202-452d-b894-d3d557080e70)
- Call ID: c93ab401-9202-452d-b894-d3d557080e70
+    source: Patricia_Mountbatten
+  AddTriple (68cdabeb-49c5-47c9-8334-9bb83e51edbe)
+ Call ID: 68cdabeb-49c5-47c9-8334-9bb83e51edbe
+  Args:
+    source: John_Ulick_Knatchbull
+    relation: :hasRelation
+    target: Patricia_Mountbatten
+  AddLiteral (4ce94f9e-862a-4121-96f1-29ea2bf90c82)
+ Call ID: 4ce94f9e-862a-4121-96f1-29ea2bf90c82
+  Args:
+    source: John_Ulick_Knatchbull
+    literal_value: 1946
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (9ec1ddfe-c65f-455f-8974-284efac28f47)
+ Call ID: 9ec1ddfe-c65f-455f-8974-284efac28f47
   Args:
     type: :Man
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AddTriple (7a66e5cd-6b50-45aa-b60d-fa139674d687)
- Call ID: 7a66e5cd-6b50-45aa-b60d-fa139674d687
+    source: Louis_Mountbatten
+  AssignClass (502a6235-18de-4442-baf4-1f8c74e8f5bf)
+ Call ID: 502a6235-18de-4442-baf4-1f8c74e8f5bf
   Args:
-    relation: :isSisterOf
-    source: :Margarita_of_Greece_and_Denmark
-    target: :Prince_Philip_Duke_of_Edinburgh
-  AssignClass (0a2ceec0-2533-47c5-81a3-4c27d7784d4e)
- Call ID: 0a2ceec0-2533-47c5-81a3-4c27d7784d4e
-  Args:
+    source: Louis_Mountbatten
     type: :Person
-    source: :King_Charles_III
-  AssignClass (b498e8db-3f71-4806-94bd-02bb88d8d65d)
- Call ID: b498e8db-3f71-4806-94bd-02bb88d8d65d
+  AddTriple (4b458711-a242-42a9-b5c0-dd1e578dfb32)
+ Call ID: 4b458711-a242-42a9-b5c0-dd1e578dfb32
   Args:
-    source: :King_Charles_III
+    source: Patricia_Mountbatten
+    target: Louis_Mountbatten
+    relation: :hasFather
+  AssignClass (cf6eb4b7-0aec-41a3-9603-a452883c7e1c)
+ Call ID: cf6eb4b7-0aec-41a3-9603-a452883c7e1c
+  Args:
     type: :Man
-  AssignClass (744ee7e6-19f0-48c2-bc11-71dbc09bef74)
- Call ID: 744ee7e6-19f0-48c2-bc11-71dbc09bef74
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (82ac6c23-4fd0-425b-bb5e-b61a88dd8af5)
+ Call ID: 82ac6c23-4fd0-425b-bb5e-b61a88dd8af5
   Args:
-    source: :Princess_Christina_of_Hesse
     type: :Person
-  AssignClass (9a9648d1-0787-4448-87b0-e08b711cf936)
- Call ID: 9a9648d1-0787-4448-87b0-e08b711cf936
+    source: Norton_Louis_Philip_Knatchbull
+  AddTriple (625c40fa-25fd-4b52-a16e-9384e6efbee6)
+ Call ID: 625c40fa-25fd-4b52-a16e-9384e6efbee6
   Args:
+    target: John_Ulick_Knatchbull
+    relation: :hasFather
+    source: Norton_Louis_Philip_Knatchbull
+  AddTriple (6cde36c1-a65a-4d3a-9eb1-c4f041d81e45)
+ Call ID: 6cde36c1-a65a-4d3a-9eb1-c4f041d81e45
+  Args:
+    target: Patricia_Mountbatten
+    relation: :hasMother
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (ab42788e-df97-4370-acf9-514dd68e019d)
+ Call ID: ab42788e-df97-4370-acf9-514dd68e019d
+  Args:
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
     type: :Woman
-    source: :Princess_Christina_of_Hesse
-  AssignClass (123f6ccf-8ee1-421b-bd9b-17a550b21b12)
- Call ID: 123f6ccf-8ee1-421b-bd9b-17a550b21b12
+  AssignClass (4a0dc404-b44f-4331-bf4c-daf4dc9e3216)
+ Call ID: 4a0dc404-b44f-4331-bf4c-daf4dc9e3216
   Args:
-    source: :Maximilian_Hereditary_Prince_of_Baden
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
     type: :Person
-  AssignClass (8191e193-796d-42b4-aa64-8ca4ff750ed5)
- Call ID: 8191e193-796d-42b4-aa64-8ca4ff750ed5
+  AddTriple (d4f6d72a-c033-4cf6-ba91-d721037d8400)
+ Call ID: d4f6d72a-c033-4cf6-ba91-d721037d8400
   Args:
-    source: :Maximilian_Hereditary_Prince_of_Baden
+    target: John_Ulick_Knatchbull
+    relation: :hasFather
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+  AddTriple (4b2e81b7-9035-4064-87cd-ebe7553d1def)
+ Call ID: 4b2e81b7-9035-4064-87cd-ebe7553d1def
+  Args:
+    target: Patricia_Mountbatten
+    relation: :hasMother
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+  AssignClass (46951a54-b177-44a1-b61c-3b808f82a97e)
+ Call ID: 46951a54-b177-44a1-b61c-3b808f82a97e
+  Args:
     type: :Man
-  AssignClass (7d0883a3-6e63-44d7-b068-26dfb2cdf757)
- Call ID: 7d0883a3-6e63-44d7-b068-26dfb2cdf757
+    source: Nicholas_Timothy_Charles_Knatchbull
+  AssignClass (1fee4bd8-972a-4550-9872-30c1c65a0b82)
+ Call ID: 1fee4bd8-972a-4550-9872-30c1c65a0b82
   Args:
-    source: :Archduchess_Valerie_of_Austria
+    source: Nicholas_Timothy_Charles_Knatchbull
     type: :Person
-  AssignClass (bff57cb0-d777-4394-a5ed-12663855185d)
- Call ID: bff57cb0-d777-4394-a5ed-12663855185d
+  AddTriple (26970305-5617-4b2f-bf81-114e4fa91052)
+ Call ID: 26970305-5617-4b2f-bf81-114e4fa91052
   Args:
-    source: :Archduchess_Valerie_of_Austria
-    type: :Woman
-  AssignClass (3a5cd1f0-883a-4493-b6cd-044282e74e00)
- Call ID: 3a5cd1f0-883a-4493-b6cd-044282e74e00
+    source: Nicholas_Timothy_Charles_Knatchbull
+    relation: :hasFather
+    target: John_Ulick_Knatchbull
+  AddTriple (46468e0f-3d76-4c3f-aa0c-5feed44a0f1a)
+ Call ID: 46468e0f-3d76-4c3f-aa0c-5feed44a0f1a
   Args:
-    source: :Margaret_Princess_of_Hesse_and_by_Rhine
+    relation: :hasMother
+    target: Patricia_Mountbatten
+    source: Nicholas_Timothy_Charles_Knatchbull
+  AssignClass (45681c3f-f711-4c33-96f6-6ac69d1fb846)
+ Call ID: 45681c3f-f711-4c33-96f6-6ac69d1fb846
+  Args:
+    type: :Man
+    source: Timothy_Knatchbull
+  AssignClass (1dac27d1-3d75-4bbb-b48c-cec2dd2dcd1c)
+ Call ID: 1dac27d1-3d75-4bbb-b48c-cec2dd2dcd1c
+  Args:
     type: :Person
-  AssignClass (4be4b051-89f7-49eb-bd86-4b8864a660bd)
- Call ID: 4be4b051-89f7-49eb-bd86-4b8864a660bd
+    source: Timothy_Knatchbull
+  AddTriple (c8d62caa-9cd7-465f-a75e-edd1e5cb191a)
+ Call ID: c8d62caa-9cd7-465f-a75e-edd1e5cb191a
   Args:
-    source: :Margaret_Princess_of_Hesse_and_by_Rhine
+    source: Timothy_Knatchbull
+    target: John_Ulick_Knatchbull
+    relation: :hasFather
+  AddTriple (c36d105c-86fd-477f-ab7e-9e198a660766)
+ Call ID: c36d105c-86fd-477f-ab7e-9e198a660766
+  Args:
+    source: Timothy_Knatchbull
+    target: Patricia_Mountbatten
+    relation: :hasMother
+  AssignClass (36c77d05-77a3-4524-b149-72968bbe9ca7)
+ Call ID: 36c77d05-77a3-4524-b149-72968bbe9ca7
+  Args:
     type: :Woman
-  AssignClass (1c8a141e-48b7-4b30-801d-b2e20e6f4752)
- Call ID: 1c8a141e-48b7-4b30-801d-b2e20e6f4752
+    source: Louise_Mountbatten
+  AssignClass (9a9ab11b-a15d-470e-b4b0-57d4830a6ee4)
+ Call ID: 9a9ab11b-a15d-470e-b4b0-57d4830a6ee4
+  Args:
+    source: Louise_Mountbatten
+    type: :Person
+  AddTriple (4e667158-87b9-452a-8f80-29dcb42ec4c4)
+ Call ID: 4e667158-87b9-452a-8f80-29dcb42ec4c4
+  Args:
+    source: Louise_Mountbatten
+    target: Patricia_Mountbatten
+    relation: :isAuntOf
+  AssignClass (d3c1331f-4765-4da3-9ed7-867b67e101f0)
+ Call ID: d3c1331f-4765-4da3-9ed7-867b67e101f0
+  Args:
+    source: Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (8b07579e-70cf-4137-a910-ff02c39cde72)
+ Call ID: 8b07579e-70cf-4137-a910-ff02c39cde72
   Args:
     type: :Person
-    source: :Princess_Cecilie
-  AssignClass (4ad363b2-f876-494c-a8ee-56850bd87b92)
- Call ID: 4ad363b2-f876-494c-a8ee-56850bd87b92
+    source: Philip_Duke_of_Edinburgh
+  AddTriple (148ec56b-96fd-4759-928a-d0e5e6838f3c)
+ Call ID: 148ec56b-96fd-4759-928a-d0e5e6838f3c
   Args:
-    source: :Princess_Cecilie
-    type: :Woman
-  Finish (bac2bfcb-1a13-488c-8a9b-6d81a267453c)
- Call ID: bac2bfcb-1a13-488c-8a9b-6d81a267453c
+    target: Patricia_Mountbatten
+    relation: :isBloodrelationOf
+    source: Philip_Duke_of_Edinburgh
+  Finish (c5b25944-0d5e-492f-af66-704652dd6af6)
+ Call ID: c5b25944-0d5e-492f-af66-704652dd6af6
   Args:

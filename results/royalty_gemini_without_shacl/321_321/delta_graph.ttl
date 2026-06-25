@@ -2,76 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:ChristianIXOfDenmark a :Man,
+data:Carlos_de_Borb%C3%B3n-Dos_Sicilias a :Man,
         :Person ;
-    :isFatherOf data:ThyraOfDenmark .
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :hasRelation data:Anne_of_Orl%C3%A9ans ;
+    :hasSister data:Teresa_of_Bourbon-Dos_Sicilias .
 
-data:EdwinaOfMecklenburg a :Person,
-        :Woman ;
-    :hasBirthYear 1960 ;
-    :hasFather data:ChristianLouisOfMecklenburgSchwerin ;
-    :hasMother data:BarbaraOfPrussia ;
-    :isSisterOf data:DonataOfMecklenburg .
-
-data:ErnestAugustusCrownPrinceOfHanover a :Man,
+data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_Borb%C3%B3n a :Man,
         :Person ;
-    :isFatherOf data:AlexandraOfHanoverAndCumberland .
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Mercedes_Princess_of_Asturias .
 
-data:ErnstIIOfSaxeAltenburg a :Man,
+data:Alicia_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2017 .
+
+data:Anne_of_Orl%C3%A9ans a :Person,
+        :Woman .
+
+data:Carlo_of_Bourbon-Two_Sicilies a :Man,
         :Person ;
-    :isFatherOf data:CharlotteOfSaxeAltenburg .
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 .
 
-data:FrederickFrancisIVOfMecklenburgSchwerin a :Man,
-        :Person ;
-    :isFatherOf data:ChristianLouisOfMecklenburgSchwerin .
-
-data:LouisIVOfHesse a :Man,
-        :Person ;
-    :isFatherOf data:SigismundOfPrussia .
-
-data:LouiseOfHesseKassel a :Person,
+data:Mercedes_Princess_of_Asturias a :Person,
         :Woman ;
-    :isMotherOf data:ThyraOfDenmark .
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1904 .
 
-data:QueenVictoria a :Person,
-        :Woman ;
-    :isFatherOf data:AliceOfHesseAndByRhine .
-
-data:AliceOfHesseAndByRhine a :Person,
-        :Woman ;
-    :isMotherOf data:SigismundOfPrussia .
-
-data:CharlotteOfSaxeAltenburg a :Person,
-        :Woman ;
-    :isMotherOf data:BarbaraOfPrussia .
-
-data:DonataOfMecklenburg a :Person,
-        :Woman ;
-    :hasBirthYear 1956 ;
-    :hasFather data:ChristianLouisOfMecklenburgSchwerin ;
-    :hasMother data:BarbaraOfPrussia .
-
-data:FriedrichFranzOfMecklenburgSchwerin a :Man,
-        :Person .
-
-data:AlexandraOfHanoverAndCumberland a :Person,
-        :Woman ;
-    :isMotherOf data:ChristianLouisOfMecklenburgSchwerin .
-
-data:SigismundOfPrussia a :Man,
-        :Person ;
-    :isFatherOf data:BarbaraOfPrussia .
-
-data:ThyraOfDenmark a :Person,
-        :Woman ;
-    :isMotherOf data:AlexandraOfHanoverAndCumberland .
-
-data:BarbaraOfPrussia a :Person,
-        :Woman ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 1994 .
-
-data:ChristianLouisOfMecklenburgSchwerin a :Man,
-        :Person ;
-    :isBrotherOf data:FriedrichFranzOfMecklenburgSchwerin .
+data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
+        :Woman .
 

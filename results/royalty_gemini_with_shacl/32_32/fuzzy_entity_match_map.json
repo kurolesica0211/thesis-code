@@ -16,21 +16,21 @@
       "qid": "Q1212263",
       "label": "Princess Maria of Romania",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Michael_I_of_Romania",
       "qid": "Q930013",
       "label": "Michael I of Romania",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Queen_Anne_of_Romania",
       "qid": "Q563765",
       "label": "Queen Anne of Romania",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -45,11 +45,11 @@
       "ground_truth_qid": "Q930013",
       "ground_truth_label": "Michael I of Romania",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "King Michael I",
       "best_candidate_label": "Michael I of Romania",
       "best_candidate_qid": "Q930013",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -63,11 +63,11 @@
       "ground_truth_qid": "Q563765",
       "ground_truth_label": "Queen Anne of Romania",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Queen Anne of Romania",
       "best_candidate_label": "Queen Anne of Romania",
       "best_candidate_qid": "Q563765",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -81,17 +81,17 @@
       "ground_truth_qid": "Q1212263",
       "ground_truth_label": "Princess Maria of Romania",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "The Princess Maria",
       "best_candidate_label": "Princess Maria of Romania",
       "best_candidate_qid": "Q1212263",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.75
     },
     {
-      "extracted_uri": "http://example.org/data/Kazimierz_Wies%C5%82aw_Mystkowski",
-      "extracted_local_name": "Kazimierz_Wies%C5%82aw_Mystkowski",
-      "embedding_text": "Kazimierz Wiesław Mystkowski",
+      "extracted_uri": "http://example.org/data/Kazimierz_Wieslaw_Mystkowski",
+      "extracted_local_name": "Kazimierz_Wieslaw_Mystkowski",
+      "embedding_text": "Kazimierz Wieslaw Mystkowski",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -103,7 +103,7 @@
       "best_candidate_match_text": "King Michael I",
       "best_candidate_label": "Michael I of Romania",
       "best_candidate_qid": "Q930013",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3333333333333333
     },
     {
@@ -121,7 +121,7 @@
       "best_candidate_match_text": "The Princess Maria",
       "best_candidate_label": "Princess Maria of Romania",
       "best_candidate_qid": "Q1212263",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.625
     },
     {
@@ -139,7 +139,7 @@
       "best_candidate_match_text": "Queen Anne of Romania",
       "best_candidate_label": "Queen Anne of Romania",
       "best_candidate_qid": "Q563765",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.0
     },
     {
@@ -157,7 +157,7 @@
       "best_candidate_match_text": "Queen Anne of Romania",
       "best_candidate_label": "Queen Anne of Romania",
       "best_candidate_qid": "Q563765",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.0
     },
     {
@@ -175,7 +175,7 @@
       "best_candidate_match_text": "Queen Anne of Romania",
       "best_candidate_label": "Queen Anne of Romania",
       "best_candidate_qid": "Q563765",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.0
     }
   ],

@@ -85,51 +85,150 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Adam Karol Czartoryski (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Polish: ; Spanish: Adán Carlos, IPA:  born 2 January 1940) is a Polish and Spanish aristocrat who is head of the Polish-Lithuanian House of Czartoryski.
-In 2016, he sold the family art collection held in the Czartoryski Museum to the Polish state for approximately €100 million.
-Origins
+George VI (Albert Frederick Arthur George; 14 December 1895 – 6 February 1952) was King of the United Kingdom and the Dominions of the British Commonwealth from 11 December 1936 until his death in 1952.
+The future George VI was born during the reign of his great-grandmother Queen Victoria; he was named Albert at birth after his late great-grandfather Prince Albert of Saxe-Coburg and Gotha and was known as "Bertie" to his family and close friends.
+His father ascended the throne as George V in 1910.
+He married Lady Elizabeth Bowes-Lyon in 1923, and they had two daughters, Elizabeth and Margaret.
+His elder brother ascended the throne as Edward VIII after their father died in 1936, but Edward abdicated later that year to marry the twice-divorced American socialite Wallis Simpson.
+As heir presumptive to Edward VIII, Albert became king, taking the regnal name George VI.
+George VI was seen as sharing the hardships of the common people and his popularity soared.
+Buckingham Palace was bombed during the Blitz while the King and Queen were there, and his younger brother the Duke of Kent was killed on active service.
+George became known as a symbol of British determination to win the war.
+George relinquished the title of Emperor of India in June 1948 and instead adopted the new title of Head of the Commonwealth.
+He was succeeded by his elder daughter, Elizabeth II.
+Early life
 
-Adam Karol Czartoryski is the son of Prince Augustyn Józef Czartoryski (1907–1946) and his wife, Princess María de los Dolores of Bourbon-Two Sicilies.
-Through his mother, he is the first cousin of King Juan Carlos I of Spain.
-He is the head of the Polish House of Czartoryski, descendants of Gediminas (died 1341), ruler of the Grand Duchy of Lithuania.
-The Czartoryski rose to power under August Aleksander Czartoryski (1697–1782) of the Klewa line, who married Countess Zofia von Dönhoff, the only heir to the Sieniawski family.
-The Czartoryski and the Potocki were the two most influential aristocratic families of the last decades of the Polish–Lithuanian Commonwealth (1569–1795).
-The Gestapo arrested Prince Augustyn and Princess Dolores, who was pregnant with Prince Adam Karol.
-Through their connections to Italian and Spanish royalty they arranged to be deported to Spain.
-Adam Karol Czartoryski was born on 2 January 1940 in Seville, Spain.
-Adam Karol's brother Ludwik Piotr was born in 1945.
-Prince Augustyn and Ludwik Piotr both died in 1946 and were buried in the crypt of the Silesian Church in Seville.
-Adam Karol Czartoryski was educated in Spain and then in England.
-Returning to his native Spain at the end of the sixties, Czartoryski continued his Karate training  under the guidance of Japanese Sensei Yasunari Ishimi.
-Czartoryski was director of several international karate organizations.
-In 1976 the Chinese government gave sports medals to Adam Czartoryski Bourbon and Fernando Compte, president of the Spanish Wrestling Association.
-In 1982 Czartoryski was elected vice-president of the World Karate Federation and the European Karate Federation.
-In 1974 Czartoryski became head trustee of the Polish Dzialynska Trust, set up by his family in Norwich, England in 1899 to support Polish students in the United Kingdom and in Poland.
-In 1989, after the fall of the Polish People's Republic, Czartoryski was able to visit Poland for the first time.
-That year the Polish government restored ownership of the family art collection and library to Czartoryski.
-In 1992 Czartoryski represented Poland at  the opening of "Circa 1492:
-In 1997 Czartoryski noticed the sale at Sotheby's of a painting by the Dutch artist Jan Mostaert named Portrait of a Lady, Presumably Anne of Bretagne, which he claimed to have come from his family's looted art collection.
-Czartoryski's mother, Princess María de los Dolores, died in Madrid in 1996.
-In December 2016 he sold the Czartoryski collection to the Polish state at an extremely low price in a transaction that drew some criticism and resulted in legal battles.
-Czartoryski collection sale
+Albert was born at 3:05 am on 14 December 1895 at York Cottage, on the Sandringham Estate in Norfolk, during the reign of his great-grandmother Queen Victoria.
+His father was Prince George, Duke of York (later King George V), the second and only surviving son of the Prince and Princess of Wales (later King Edward VII and Queen Alexandra).
+His mother, the Duchess of York (later Queen Mary), was the eldest child and only daughter of Francis, Duke of Teck, and Princess Mary Adelaide, Duchess of Teck.
+His birth date coincided with the 34th anniversary of the death of his great-grandfather Albert, Prince Consort.
+Uncertain of how the Prince Consort's widow, Queen Victoria, would take the news of the birth, the Prince of Wales wrote to the Duke of York that the Queen had been "rather distressed".
+"
 
-The Czartoryski collection was started in 1796 by Adam Karol Czartoryski's ancestor, Princess Izabela Czartoryska, a liberal progressive who corresponded with Voltaire, Jean-Jacques Rousseau and Benjamin Franklin.
-In 1798 Prince Adam Jerzy Czartoryski, Izabela's son, visited Italy where he bought Leonardo da Vinci's Lady with an Ermine and Raphael's Portrait of a young man.
-When the Germans invaded Poland that year, Augustyn Józef Czartoryski had the most valuable items hidden beneath the baroque Sieniawski family castle, while others were stored in the cellar of the museum.
-After the war the Polish representative at the Allies Commission for the Retrieval of Works of Art found many of the stolen paintings and claimed them for the Czartoryski Museum.
-In London in the late 1960s Adam Karol Czartoryski met Professor Marek Rostworowski , who had been appointed in 1965 as director of the Czartoryski Collection in Poland.
-That year the High Court restored the Czartoryski Museum and Library and their contents to Czartoryski, who set up the Princes Czartoryski Foundation to manage the collection.
-The Princes Czartoryski Museum in Kraków was closed for extensive renovations in 2010, including adding a glass and steel roof to a courtyard that was not being used.
-Czartoryski decided to entrust his collection to the Polish Nation, including the Lady With An Ermine, Landscape with the Good Samaritan and works by Pierre-Auguste Renoir.
-By law, the Czartoryski Collection could anyway not leave the country without authorization by the government.
-The management board of the Czartoryski Foundation complained that they had not been consulted over the sale, and resigned.
-The endowment was challenged by Czartoryski's daughter, Tamara, and in 2018 resulted in a lawsuit between Adam Karol and his daughter.
+
+The Queen was mollified by the proposal to name the new baby Albert, and wrote to the Duchess of York: "I am all impatience to see the new one, born on such a sad day but rather more dear to me, especially as he will be called by that dear name which is a byword for all that is great and good."
+Consequently, he was baptised "Albert Frederick Arthur George" at St Mary Magdalene Church, Sandringham on 17 February 1896.
+Formally he was His Highness Prince Albert of York; within the royal family he was known informally as "Bertie".
+Albert was fourth in line to the throne at birth, after his grandfather, father and elder brother, Edward.
+Queen Victoria died on 22 January 1901, and the Prince of Wales succeeded her as King Edward VII.
+Prince Albert moved up to third in line to the throne, after his father and elder brother.
+Military career and education
+
+Beginning in 1909, Albert attended the Royal Naval College, Osborne, as a naval cadet.
+In 1911, he came bottom of the class in the final examination, but despite this he progressed to the Royal Naval College, Dartmouth.
+When his grandfather Edward VII died in 1910, his father became King George V. Prince Edward became Prince of Wales, with Albert second in line to the throne.
+In February 1918, Albert was appointed Officer in Charge of Boys at the Royal Naval Air Service's training establishment at Cranwell.
+With the establishment of the Royal Air Force Albert transferred from the Royal Navy to the Royal Air Force.
+He was the first member of the British royal family to be certified as a fully qualified pilot.
+The prince qualified as an RAF pilot on 31 July 1919 and was promoted to squadron leader the following day.
+On 4 June 1920, his father created him Duke of York, Earl of Inverness and Baron Killarney.
+He began to take on more royal duties.
+Through such visits he acquired the nickname of the "Industrial Prince".
+His stutter, and his embarrassment over it, together with a tendency to shyness, caused him to appear less confident in public than his older brother, Edward.
+That year, Albert met for the first time since childhood Lady Elizabeth Bowes-Lyon, the youngest daughter of the Earl and Countess of Strathmore.
+Elizabeth rejected his proposal twice, in 1921 and 1922, reportedly because she was reluctant to make the sacrifices necessary to become a member of the royal family.
+After a protracted courtship, Elizabeth agreed to marry him.
+Albert and Elizabeth were married on 26 April 1923 at Westminster Abbey.
+Albert's marriage to someone not of royal birth was considered a modernising gesture.
+The newly formed British Broadcasting Company wished to record and broadcast the event on radio, but the Abbey Chapter vetoed the idea (although the Dean, Herbert Edward Ryle, was in favour).
+From December 1924 to April 1925, the Duke and Duchess toured Kenya, Uganda, and the Sudan, travelling via the Suez Canal and Aden.
+The Duke and Logue practised breathing exercises, and the Duchess rehearsed with him patiently.
+The Duke and Duchess had two children, Elizabeth (called "Lilibet" by the family, later Elizabeth II) in 1926 and Margaret in 1930.
+The family lived at White Lodge, Richmond Park, and then at 145 Piccadilly, rather than one of the royal palaces.
+In 1931, the Canadian prime minister, R. B. Bennett, considered Albert for Governor General of Canada—a proposal that King George V rejected on the advice of the Secretary of State for Dominion Affairs, J. H. Thomas.
+Reign
+
+Reluctant king
+
+King George V had severe reservations about Prince Edward, saying "After I am dead, the boy will ruin himself in twelve months" and "I pray God that my eldest son will never marry and that nothing will come between Bertie and Lilibet and the throne."
+On 20 January 1936, George V died and Edward ascended the throne as King Edward VIII.
+In the Vigil of the Princes, Prince Albert and his three brothers (the new king; Prince Henry, Duke of Gloucester; and Prince George, Duke of Kent) took a shift standing guard over their father's body as it lay in state, in a closed casket, in Westminster Hall.
+As Edward was unmarried and had no children, Albert was the heir presumptive to the throne.
+Less than a year later, on 11 December 1936, Edward abdicated in order to marry Wallis Simpson, who was divorced from her first husband and divorcing her second.
+Edward had been advised by British prime minister Stanley Baldwin that he could not remain king and marry a divorced woman with two living ex-husbands.
+The day before the abdication, Albert went to London to see his mother, Queen Mary.
+"
+
+
+On the day of Edward's abdication, the Oireachtas, the parliament of the Irish Free State, removed all direct mention of the monarch from the Irish constitution.
+No evidence has been found to support the contemporaneous rumour that the government considered bypassing him, his children and his brother Prince Henry, in favour of their younger brother Prince George, Duke of Kent.
+This seems to have been suggested on the grounds that Prince George was at that time the only brother with a son.
+Early reign
+
+Albert assumed the regnal name "George VI" to emphasise continuity with his father and restore confidence in the monarchy.
+The beginning of George VI's reign was taken up by questions surrounding his predecessor and brother, whose titles, style and position were uncertain.
+He had been introduced as "His Royal Highness Prince Edward" for the abdication broadcast, but George VI felt that by abdicating and renouncing the succession, Edward had lost the right to bear royal titles, including "Royal Highness".
+In settling the issue, George's first act as king was to confer upon Edward the title "Duke of Windsor" with the style "Royal Highness", but the letters patent creating the dukedom prevented any wife or children from bearing royal styles.
+George VI was forced to buy from Edward the royal residences of Balmoral Castle and Sandringham House, as these were private properties and did not pass to him automatically.
+Three days after his accession, on his 41st birthday, he invested his wife, the new queen consort, with the Order of the Garter.
+George VI's coronation at Westminster Abbey took place on 12 May 1937, the date previously intended for Edward's coronation.
+In a break with tradition, Queen Mary attended the ceremony in a show of support for her son.
+There was no Durbar held in Delhi for George VI, as had occurred for his father, as the cost would have been a burden to the Government of India.
+Rising Indian nationalism made the welcome that the royal party would have received likely to be muted at best, and a prolonged absence from Britain would have been undesirable in the tense period before the Second World War.
+The growing likelihood of war in Europe dominated the early reign of George VI.
+When the King and Queen greeted Chamberlain on his return from negotiating the Munich Agreement in 1938, they invited him to appear on the balcony of Buckingham Palace with them.
+This public association of the monarchy with a politician was exceptional, as balcony appearances were traditionally restricted to the royal family.
+While broadly popular among the general public, Chamberlain's policy towards Hitler was the subject of some opposition in the House of Commons, which led historian and politician John Grigg to describe George's behaviour in associating himself so prominently with a politician as "the most unconstitutional act by a British sovereign in the present century".
+In May and June 1939, the King and Queen toured Canada and the United States; it was the first visit of a reigning British monarch to North America, although George had been to Canada prior to his accession.
+From Ottawa, George and Elizabeth were accompanied by Canadian prime minister Mackenzie King, to present themselves in North America as King and Queen of Canada.
+Both Mackenzie King and the Canadian governor general, Lord Tweedsmuir, hoped that George's presence in Canada would demonstrate the principles of the Statute of Westminster 1931, which gave full sovereignty to the British Dominions.
+On 19 May, George personally accepted and approved the letter of credence of the new U.S. ambassador to Canada, Daniel Calhoun Roper; gave royal assent to nine parliamentary bills; and ratified two   international treaties with the Great Seal of Canada.
+The official royal tour historian, Gustave Lanctot, wrote "the Statute of Westminster had assumed full reality" and George gave a speech emphasising "the free and equal association of the nations of the Commonwealth".
+Although the aim of the tour was mainly political, to shore up Atlantic support for the United Kingdom in any future war, the King and Queen were enthusiastically received by the public.
+The fear that George would be compared unfavourably to his predecessor was dispelled.
+A strong bond of friendship was forged between Roosevelt and the royal couple during the tour, which had major significance in the relations between the United States and the United Kingdom through the ensuing war years.
+The King and Queen resolved to stay in London, despite German bombing raids.
+They officially stayed in Buckingham Palace throughout the war, although they usually spent nights at Windsor Castle.
+In defiance, the Queen declared: "I am glad we have been bombed.
+The royal family were portrayed as sharing the same dangers and deprivations as the rest of the country.
+In August 1942, the King's brother, the Duke of Kent, was killed on active service.
+In 1940, Winston Churchill replaced Neville Chamberlain as prime minister, though personally George would have preferred to appoint Lord Halifax.
+George related much of what the two discussed in his diary, which is the only extant first-hand account of these conversations.
+Throughout the war, George and Elizabeth provided morale-boosting visits throughout the United Kingdom, visiting bomb sites, munitions factories, and troops.
+George visited military forces abroad in France in December 1939, North Africa and Malta in June 1943, Normandy in June 1944, southern Italy in July 1944, and the Low Countries in October 1944.
+George replied: "You should worry, when I meet him, I always think he's after mine!"
+In an echo of Chamberlain's appearance, the King invited Churchill to appear with the royal family on the balcony to public acclaim.
+In January 1946, George addressed the United Nations at its first assembly, which was held in London, and reaffirmed "our faith in the equal rights of men and women and of nations great and small".
+Empire to Commonwealth
+
+George VI's reign saw the acceleration of the dissolution of the British Empire.
+George relinquished the title of Emperor of India, and became King of India and King of Pakistan instead.
+In late April 1949, the Commonwealth leaders issued the London Declaration, which laid the foundation of the modern Commonwealth and recognised George as Head of the Commonwealth.
+In 1947, George and his family toured southern Africa.
+George was appalled, however, when instructed by the South African government to shake hands only with whites, and referred to his South African bodyguards as "the Gestapo".
+Illness and death
+
+The stress of the war had taken its toll on George's health, made worse by his heavy smoking, and subsequent development of lung cancer, as well as other ailments including arteriosclerosis and Buerger's disease.
+His elder daughter and heir presumptive, Elizabeth, took on more royal duties as his health deteriorated.
+The delayed tour was re-organised, with Princess Elizabeth and her husband, Philip, Duke of Edinburgh, taking the place of the King and Queen.
+George was well enough to open the Festival of Britain in May 1951, but on 4 June it was announced that he would need immediate and complete rest for the next four weeks, despite the arrival of Haakon VII of Norway the following afternoon for an official visit.
+In October 1951, Elizabeth and Philip undertook a month-long tour of Canada; the trip had been delayed for a week because of George's illness.
+On 31 January 1952, against the advice of those close to him, George travelled to London Airport to see Elizabeth and Philip depart for their tour of Australia via Kenya.
+His daughter returned to Britain from Kenya as Queen Elizabeth II.
+From 9 February, George's coffin rested in St Mary Magdalene Church, Sandringham, before lying in state at Westminster Hall from 11 February.
+His funeral took place at St George's Chapel, Windsor Castle, on 15 February.
+He was interred initially in the Royal Vault, and was transferred to the King George VI Memorial Chapel inside St George's on 26 March 1969.
+In 2002, fifty years after his death, the remains of his widow, Queen Elizabeth the Queen Mother, and the ashes of his younger daughter, Princess Margaret, who both died that year, were interred in the chapel alongside him.
+In 2022, the remains of Queen Elizabeth II and her husband, Prince Philip, were also interred in the chapel.
+Legacy
+
+In the words of Labour Member of Parliament (MP) George Hardie, the abdication crisis of 1936 did "more for republicanism than fifty years of propaganda".
+George VI wrote to his brother Edward that in the aftermath of the abdication he had reluctantly assumed "a rocking throne" and tried "to make it steady again".
+The George Cross and the George Medal were founded at the King's suggestion during the Second World War to recognise acts of exceptional civilian bravery.
+He bestowed the George Cross on the entire "island fortress of Malta" in 1943.
+Colin Firth won an Academy Award for Best Actor for his performance as George VI in the 2010 film The King's Speech.
+Titles, honours and arms
+
+As Duke of York, Albert bore the royal arms of the United Kingdom differenced with a label of three points argent, the centre point bearing an anchor azure—a difference earlier awarded to his father, George V, when he was Duke of York, and then later awarded to his grandson Andrew Mountbatten-Windsor, when he bore the title Prince.
+As king he bore the royal arms undifferenced.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -145,39 +244,9 @@ The endowment was challenged by Czartoryski's daughter, Tamara, and in 2018 resu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -192,6 +261,23 @@ The endowment was challenged by Czartoryski's daughter, Tamara, and in 2018 resu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -209,6 +295,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,29 +377,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,6 +400,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -319,6 +420,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -327,17 +430,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -365,6 +470,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -380,164 +569,207 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3618bdc4-af7a-4aae-add4-244bff316859)
- Call ID: 3618bdc4-af7a-4aae-add4-244bff316859
+  AssignClass (019d6e2c-2c0b-47b4-b449-46d1010dd0ab)
+ Call ID: 019d6e2c-2c0b-47b4-b449-46d1010dd0ab
   Args:
+    source: George_VI
     type: :Man
-    source: Adam_Karol_Czartoryski
-  AssignClass (3ed55b37-1888-47af-b2de-99f8a347c690)
- Call ID: 3ed55b37-1888-47af-b2de-99f8a347c690
+  AssignClass (3ef90984-5235-47c3-926f-f0351490fe96)
+ Call ID: 3ef90984-5235-47c3-926f-f0351490fe96
   Args:
-    source: Adam_Karol_Czartoryski
+    source: George_VI
     type: :Person
-  AssignClass (8574eb8b-c598-4190-a770-2a2688d4267c)
- Call ID: 8574eb8b-c598-4190-a770-2a2688d4267c
+  AddLiteral (7063f9da-7dd4-40b1-82e1-478cdd332006)
+ Call ID: 7063f9da-7dd4-40b1-82e1-478cdd332006
   Args:
+    literal_type: xsd:integer
+    literal_value: 1895
+    relation: :hasBirthYear
+    source: George_VI
+  AddLiteral (4962deaf-5561-4192-af1c-fb135f720f87)
+ Call ID: 4962deaf-5561-4192-af1c-fb135f720f87
+  Args:
+    source: George_VI
+    literal_value: 1952
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (5634c7f6-81ec-402b-b159-1deef586ee0e)
+ Call ID: 5634c7f6-81ec-402b-b159-1deef586ee0e
+  Args:
+    relation: :knownAs
+    literal_value: Bertie
+    literal_type: xsd:string
+    source: George_VI
+  AssignClass (f3ab4099-fa91-40d4-a8da-109c27a0377e)
+ Call ID: f3ab4099-fa91-40d4-a8da-109c27a0377e
+  Args:
+    source: George_V
     type: :Man
-    source: Augustyn_Jozef_Czartoryski
-  AssignClass (3c1f0130-37ab-45e5-b9ec-00e2b7f14706)
- Call ID: 3c1f0130-37ab-45e5-b9ec-00e2b7f14706
+  AssignClass (97c9ec5a-23a5-4b85-b7e2-11ca46abf386)
+ Call ID: 97c9ec5a-23a5-4b85-b7e2-11ca46abf386
   Args:
+    source: George_V
     type: :Person
-    source: Augustyn_Jozef_Czartoryski
-  AssignClass (8c67e897-94b4-4337-a9f5-c84340b3f93d)
- Call ID: 8c67e897-94b4-4337-a9f5-c84340b3f93d
+  AddTriple (904a21cb-e637-4ed4-9eb7-9d3e5d20dac9)
+ Call ID: 904a21cb-e637-4ed4-9eb7-9d3e5d20dac9
   Args:
-    source: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (06f7d35e-32a0-4904-b0d6-951ad584e16c)
- Call ID: 06f7d35e-32a0-4904-b0d6-951ad584e16c
-  Args:
-    source: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (87b8798d-8b7d-4d3d-abcd-ea2de59d3580)
- Call ID: 87b8798d-8b7d-4d3d-abcd-ea2de59d3580
-  Args:
-    source: Ludwik_Piotr_Czartoryski
-    type: :Man
-  AssignClass (082c8a5d-d8f8-4149-9624-80b1bc418fa7)
- Call ID: 082c8a5d-d8f8-4149-9624-80b1bc418fa7
-  Args:
-    type: :Person
-    source: Ludwik_Piotr_Czartoryski
-  AssignClass (2ba3690e-2ae2-465a-a17d-21a014edb68d)
- Call ID: 2ba3690e-2ae2-465a-a17d-21a014edb68d
-  Args:
-    type: :Woman
-    source: Tamara_Czartoryski
-  AssignClass (69444a7c-0ca1-490f-ba53-9c446c7aba61)
- Call ID: 69444a7c-0ca1-490f-ba53-9c446c7aba61
-  Args:
-    source: Tamara_Czartoryski
-    type: :Person
-  AssignClass (1bc53444-13c4-4f93-99db-f5f430bab3e8)
- Call ID: 1bc53444-13c4-4f93-99db-f5f430bab3e8
-  Args:
-    source: Male
-    type: :Male
-  AssignClass (c191951d-4f85-453c-9a48-67212dc26004)
- Call ID: c191951d-4f85-453c-9a48-67212dc26004
-  Args:
-    source: Female
-    type: :Female
-  AddTriple (cb20cb19-e29a-4570-8243-c917aecc8947)
- Call ID: cb20cb19-e29a-4570-8243-c917aecc8947
-  Args:
-    source: Adam_Karol_Czartoryski
-    target: Male
-    relation: :hasSex
-  AddTriple (0db4a5ed-cd28-4fe4-9381-b920b26719e7)
- Call ID: 0db4a5ed-cd28-4fe4-9381-b920b26719e7
-  Args:
-    source: Augustyn_Jozef_Czartoryski
-    target: Male
-    relation: :hasSex
-  AddTriple (c050205c-0870-4192-ac34-be8a1d663f6f)
- Call ID: c050205c-0870-4192-ac34-be8a1d663f6f
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
-  AddTriple (627bf6f5-bb5f-4ddb-adce-767fe5206a95)
- Call ID: 627bf6f5-bb5f-4ddb-adce-767fe5206a95
-  Args:
-    relation: :hasSex
-    source: Ludwik_Piotr_Czartoryski
-    target: Male
-  AddTriple (a6ef3bf9-084f-432a-8757-26b54d792e03)
- Call ID: a6ef3bf9-084f-432a-8757-26b54d792e03
-  Args:
-    relation: :hasSex
-    source: Tamara_Czartoryski
-    target: Female
-  AddTriple (db0dbb18-93c2-4a6f-8ea5-a8770b568587)
- Call ID: db0dbb18-93c2-4a6f-8ea5-a8770b568587
-  Args:
-    source: Adam_Karol_Czartoryski
-    target: Augustyn_Jozef_Czartoryski
+    source: George_VI
+    target: George_V
     relation: :hasFather
-  AddTriple (32bb5b5c-4596-4e34-9da3-a9ee1ffa27a2)
- Call ID: 32bb5b5c-4596-4e34-9da3-a9ee1ffa27a2
+  AssignClass (2e827e89-4e52-455f-9996-a3fa8c71c3ae)
+ Call ID: 2e827e89-4e52-455f-9996-a3fa8c71c3ae
   Args:
-    source: Adam_Karol_Czartoryski
-    target: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (b036765c-1ef2-4da5-a377-6145b28eede1)
+ Call ID: b036765c-1ef2-4da5-a377-6145b28eede1
+  Args:
+    source: Queen_Mary
+    type: :Person
+  AddTriple (e52be49a-e18d-430f-a17e-f75579f44d61)
+ Call ID: e52be49a-e18d-430f-a17e-f75579f44d61
+  Args:
+    target: Queen_Mary
+    source: George_VI
     relation: :hasMother
-  AddTriple (f543888b-e245-4b62-97dd-fc6850cc9e0d)
- Call ID: f543888b-e245-4b62-97dd-fc6850cc9e0d
+  AssignClass (261c9e50-b2a8-437e-9945-dfe663922353)
+ Call ID: 261c9e50-b2a8-437e-9945-dfe663922353
   Args:
-    source: Ludwik_Piotr_Czartoryski
-    target: Augustyn_Jozef_Czartoryski
+    source: Elizabeth_Bowes-Lyon
+    type: :Woman
+  AssignClass (17f1ee5b-a11d-48dd-a7e8-722dd528ba86)
+ Call ID: 17f1ee5b-a11d-48dd-a7e8-722dd528ba86
+  Args:
+    source: Elizabeth_Bowes-Lyon
+    type: :Person
+  AddTriple (50ca76cc-42c1-4953-a389-f9ee87a91d19)
+ Call ID: 50ca76cc-42c1-4953-a389-f9ee87a91d19
+  Args:
+    relation: :hasRelation
+    source: George_VI
+    target: Elizabeth_Bowes-Lyon
+  AddLiteral (d3436a4e-9aad-4393-95b9-5268134f80e9)
+ Call ID: d3436a4e-9aad-4393-95b9-5268134f80e9
+  Args:
+    source: George_VI
+    literal_type: xsd:integer
+    literal_value: 1923
+    relation: :hasMarriageYear
+  AssignClass (8f79a541-4a98-4caf-b8eb-826931b35451)
+ Call ID: 8f79a541-4a98-4caf-b8eb-826931b35451
+  Args:
+    source: Elizabeth_II
+    type: :Woman
+  AssignClass (ec2bef24-65fd-41fa-987b-577b74f1b838)
+ Call ID: ec2bef24-65fd-41fa-987b-577b74f1b838
+  Args:
+    source: Elizabeth_II
+    type: :Person
+  AddTriple (69f772a0-e249-4ff5-beca-72dc5aa12949)
+ Call ID: 69f772a0-e249-4ff5-beca-72dc5aa12949
+  Args:
+    source: Elizabeth_II
+    target: George_VI
     relation: :hasFather
-  AddTriple (d593ac14-b1f4-4a03-b7ce-f0e518e7493c)
- Call ID: d593ac14-b1f4-4a03-b7ce-f0e518e7493c
+  AddTriple (9304942d-d953-4177-986d-3fe61eb0f436)
+ Call ID: 9304942d-d953-4177-986d-3fe61eb0f436
   Args:
     relation: :hasMother
-    target: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
-    source: Ludwik_Piotr_Czartoryski
-  AddTriple (ba887934-9999-4ca0-93da-49bb37cefb64)
- Call ID: ba887934-9999-4ca0-93da-49bb37cefb64
+    target: Elizabeth_Bowes-Lyon
+    source: Elizabeth_II
+  AssignClass (a42bccd8-6c79-4fb4-9efb-9b527bb52a76)
+ Call ID: a42bccd8-6c79-4fb4-9efb-9b527bb52a76
   Args:
-    source: Tamara_Czartoryski
-    target: Adam_Karol_Czartoryski
+    source: Margaret
+    type: :Woman
+  AssignClass (1d5678d8-0573-4552-bde3-1cd8008f65c8)
+ Call ID: 1d5678d8-0573-4552-bde3-1cd8008f65c8
+  Args:
+    source: Margaret
+    type: :Person
+  AddTriple (75b1b847-2384-4b24-ae72-ee37dc55a30d)
+ Call ID: 75b1b847-2384-4b24-ae72-ee37dc55a30d
+  Args:
+    source: Margaret
+    target: George_VI
     relation: :hasFather
-  AddLiteral (0844af5a-5f2c-4ab2-98bd-220aecc4fc81)
- Call ID: 0844af5a-5f2c-4ab2-98bd-220aecc4fc81
+  AddTriple (29ad73e9-1b77-481f-8d38-c47d0e6c17bd)
+ Call ID: 29ad73e9-1b77-481f-8d38-c47d0e6c17bd
   Args:
-    literal_value: 1940
-    source: Adam_Karol_Czartoryski
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (5b412a37-e7c0-4b69-b28b-89742d106c11)
- Call ID: 5b412a37-e7c0-4b69-b28b-89742d106c11
+    target: Elizabeth_Bowes-Lyon
+    source: Margaret
+    relation: :hasMother
+  AssignClass (690ab97d-2bca-4b9c-aa8a-2affa1206879)
+ Call ID: 690ab97d-2bca-4b9c-aa8a-2affa1206879
   Args:
-    relation: :hasBirthYear
-    literal_value: 1907
-    source: Augustyn_Jozef_Czartoryski
-    literal_type: xsd:integer
-  AddLiteral (fde91d1f-3a7d-49d7-8453-6b39d49f6a7d)
- Call ID: fde91d1f-3a7d-49d7-8453-6b39d49f6a7d
+    source: Edward_VIII
+    type: :Man
+  AssignClass (a7459c43-a0f7-41fa-95ab-b7a602ae5258)
+ Call ID: a7459c43-a0f7-41fa-95ab-b7a602ae5258
   Args:
-    literal_value: 1946
-    source: Augustyn_Jozef_Czartoryski
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (d91c2fa0-0626-4130-bf2b-79ee9d75c0a6)
- Call ID: d91c2fa0-0626-4130-bf2b-79ee9d75c0a6
+    source: Edward_VIII
+    type: :Person
+  AddTriple (5e5a4f87-76a0-410c-bc0f-ac58bf538ade)
+ Call ID: 5e5a4f87-76a0-410c-bc0f-ac58bf538ade
   Args:
-    literal_value: 1946
-    source: Ludwik_Piotr_Czartoryski
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (3fb4cc50-ede0-4c33-91c2-696ed6e0d572)
- Call ID: 3fb4cc50-ede0-4c33-91c2-696ed6e0d572
+    relation: :hasBrother
+    source: George_VI
+    target: Edward_VIII
+  AssignClass (e34d4337-c4ad-4ae6-9bbd-b10d7718385d)
+ Call ID: e34d4337-c4ad-4ae6-9bbd-b10d7718385d
   Args:
-    source: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
-    literal_value: 1996
-    relation: :hasDeathYear
-  Finish (2e5061b9-4d29-40c6-83eb-ed5732df7d42)
- Call ID: 2e5061b9-4d29-40c6-83eb-ed5732df7d42
+    source: Duke_of_Kent
+    type: :Man
+  AssignClass (99286112-753d-4f32-bd30-a6f1542f30dc)
+ Call ID: 99286112-753d-4f32-bd30-a6f1542f30dc
   Args:
+    source: Duke_of_Kent
+    type: :Person
+  AddTriple (d181ffe7-5a5f-48d0-9d81-dc8e38971237)
+ Call ID: d181ffe7-5a5f-48d0-9d81-dc8e38971237
+  Args:
+    target: Duke_of_Kent
+    source: George_VI
+    relation: :hasBrother
+  AssignClass (3c67091d-2427-4561-be3d-4cdc82315339)
+ Call ID: 3c67091d-2427-4561-be3d-4cdc82315339
+  Args:
+    source: Prince_Henry
+    type: :Man
+  AssignClass (7ec04991-b870-45d1-918a-fe252a3be377)
+ Call ID: 7ec04991-b870-45d1-918a-fe252a3be377
+  Args:
+    source: Prince_Henry
+    type: :Person
+  AddTriple (7c500db1-8b75-4294-adc2-42c9e360c17b)
+ Call ID: 7c500db1-8b75-4294-adc2-42c9e360c17b
+  Args:
+    target: Prince_Henry
+    source: George_VI
+    relation: :hasBrother
+  Finish (5b534446-ac36-40ef-a55b-d4adfc537503)
+ Call ID: 5b534446-ac36-40ef-a55b-d4adfc537503
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -650,39 +882,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ludwik_Piotr_Czartoryski a :Man,
-          :Person ;
-      :hasDeathYear 1946 ;
-      :hasFather data:Augustyn_Jozef_Czartoryski ;
-      :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-      :hasSex data:Male .
-
-  data:Tamara_Czartoryski a :Person,
+  data:Elizabeth_II a :Person,
           :Woman ;
-      :hasFather data:Adam_Karol_Czartoryski ;
-      :hasSex data:Female .
+      :hasFather data:George_VI ;
+      :hasMother data:Elizabeth_Bowes-Lyon .
 
-  data:Adam_Karol_Czartoryski a :Man,
-          :Person ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Augustyn_Jozef_Czartoryski ;
-      :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-      :hasSex data:Male .
-
-  data:Augustyn_Jozef_Czartoryski a :Man,
-          :Person ;
-      :hasBirthYear 1907 ;
-      :hasDeathYear 1946 ;
-      :hasSex data:Male .
-
-  data:Female a :Female .
-
-  data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies a :Person,
+  data:Margaret a :Person,
           :Woman ;
-      :hasDeathYear 1996 ;
-      :hasSex data:Female .
+      :hasFather data:George_VI ;
+      :hasMother data:Elizabeth_Bowes-Lyon .
 
-  data:Male a :Male .
+  data:Duke_of_Kent a :Man,
+          :Person .
+
+  data:Edward_VIII a :Man,
+          :Person .
+
+  data:George_V a :Man,
+          :Person .
+
+  data:Prince_Henry a :Man,
+          :Person .
+
+  data:Queen_Mary a :Person,
+          :Woman .
+
+  data:George_VI a :Man,
+          :Person ;
+      :hasBirthYear 1895 ;
+      :hasBrother data:Duke_of_Kent,
+          data:Edward_VIII,
+          data:Prince_Henry ;
+      :hasDeathYear 1952 ;
+      :hasFather data:George_V ;
+      :hasMarriageYear 1923 ;
+      :hasMother data:Queen_Mary ;
+      :hasRelation data:Elizabeth_Bowes-Lyon ;
+      :knownAs "Bertie"^^xsd:string .
+
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman .
 
 
 
@@ -694,134 +933,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b6b34dd1-55c6-4292-a2a1-86536a2f16c4)
- Call ID: b6b34dd1-55c6-4292-a2a1-86536a2f16c4
+  ValidateShacl (11a9f7c4-3560-4d49-8b04-7efcd1a5f7c6)
+ Call ID: 11a9f7c4-3560-4d49-8b04-7efcd1a5f7c6
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person George_V, identified as the father of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person Queen_Mary, identified as the mother of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person George_V, identified as the father of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person George_VI, identified as the father of Elizabeth_II, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(George_VI, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person George_VI, identified as the father of Margaret, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(George_VI, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person Queen_Mary, identified as the mother of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Adam_Karol_Czartoryski, assigned as the father of Tamara_Czartoryski, lacks the required class :Ancestor.
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Elizabeth_II, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Adam_Karol_Czartoryski", class: ":Ancestor")
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Margaret, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person George_V, identified as the father of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(George_V, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person George_VI, identified as the father of Elizabeth_II, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(George_VI, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augustyn_Jozef_Czartoryski, assigned as the father of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person George_VI, identified as the father of Margaret, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Augustyn_Jozef_Czartoryski", class: ":Ancestor")
+      AssignClass(George_VI, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Adam_Karol_Czartoryski, assigned as the father of Tamara_Czartoryski, lacks the required class :Ancestor.
+      The person Queen_Mary, identified as the mother of George_VI, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Adam_Karol_Czartoryski", class: ":Ancestor")
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Adam_Karol_Czartoryski, lacks the required class :Ancestor.
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Elizabeth_II, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Maria_de_los_Dolores_of_Bourbon-Two_Sicilies, assigned as the mother of Ludwik_Piotr_Czartoryski, lacks the required class :Ancestor.
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Margaret, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Maria_de_los_Dolores_of_Bourbon-Two_Sicilies", class: ":Ancestor")
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Adam_Karol_Czartoryski, assigned as the father of Tamara_Czartoryski, lacks the required class :Ancestor.
+      The person George_VI, identified as the father of Elizabeth_II, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Adam_Karol_Czartoryski", class: ":Ancestor")
+      AssignClass(George_VI, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person George_VI, identified as the father of Margaret, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_VI, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Elizabeth_II, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Elizabeth_Bowes-Lyon, identified as the mother of Margaret, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Elizabeth_Bowes-Lyon, :Ancestor)
 
 
 
@@ -830,24 +1093,33 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e2646367-1025-4717-860c-e3953e699c13)
- Call ID: e2646367-1025-4717-860c-e3953e699c13
+  AssignClass (63836316-766d-44c0-be67-56650b04627b)
+ Call ID: 63836316-766d-44c0-be67-56650b04627b
   Args:
+    source: George_V
     type: :Ancestor
-    source: Augustyn_Jozef_Czartoryski
-  AssignClass (02cde90a-3450-411a-a114-aa9988f54d78)
- Call ID: 02cde90a-3450-411a-a114-aa9988f54d78
+  AssignClass (86ab8617-d36b-44ee-8798-09809587e450)
+ Call ID: 86ab8617-d36b-44ee-8798-09809587e450
   Args:
-    source: Maria_de_los_Dolores_of_Bourbon-Two_Sicilies
+    source: Queen_Mary
     type: :Ancestor
-  AssignClass (1b3390a1-64e3-42b6-a35d-94935f3f0bea)
- Call ID: 1b3390a1-64e3-42b6-a35d-94935f3f0bea
+  AssignClass (09859c43-e8c4-45bc-8313-8848c574d9c9)
+ Call ID: 09859c43-e8c4-45bc-8313-8848c574d9c9
   Args:
-    source: Adam_Karol_Czartoryski
+    source: George_VI
     type: :Ancestor
-  ValidateShacl (0e6c10ba-1e75-47b6-91a4-4041e8490181)
- Call ID: 0e6c10ba-1e75-47b6-91a4-4041e8490181
+  AssignClass (45f82f1f-58c2-4e86-bde6-d283908834e5)
+ Call ID: 45f82f1f-58c2-4e86-bde6-d283908834e5
   Args:
+    source: Elizabeth_Bowes-Lyon
+    type: :Ancestor
+  ValidateShacl (00cef65d-6b94-4a6d-80aa-84476153c729)
+ Call ID: 00cef65d-6b94-4a6d-80aa-84476153c729
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -864,42 +1136,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ludwik_Piotr_Czartoryski a :Man,
-          :Person ;
-      :hasDeathYear 1946 ;
-      :hasFather data:Augustyn_Jozef_Czartoryski ;
-      :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-      :hasSex data:Male .
-
-  data:Tamara_Czartoryski a :Person,
+  data:Elizabeth_II a :Person,
           :Woman ;
-      :hasFather data:Adam_Karol_Czartoryski ;
-      :hasSex data:Female .
+      :hasFather data:George_VI ;
+      :hasMother data:Elizabeth_Bowes-Lyon .
 
-  data:Adam_Karol_Czartoryski a :Ancestor,
+  data:Margaret a :Person,
+          :Woman ;
+      :hasFather data:George_VI ;
+      :hasMother data:Elizabeth_Bowes-Lyon .
+
+  data:Duke_of_Kent a :Man,
+          :Person .
+
+  data:Edward_VIII a :Man,
+          :Person .
+
+  data:George_V a :Ancestor,
           :Man,
-          :Person ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Augustyn_Jozef_Czartoryski ;
-      :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Augustyn_Jozef_Czartoryski a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1907 ;
-      :hasDeathYear 1946 ;
-      :hasSex data:Male .
+  data:Prince_Henry a :Man,
+          :Person .
 
-  data:Female a :Female .
-
-  data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+  data:Queen_Mary a :Ancestor,
           :Person,
-          :Woman ;
-      :hasDeathYear 1996 ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:Male a :Male .
+  data:George_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1895 ;
+      :hasBrother data:Duke_of_Kent,
+          data:Edward_VIII,
+          data:Prince_Henry ;
+      :hasDeathYear 1952 ;
+      :hasFather data:George_V ;
+      :hasMarriageYear 1923 ;
+      :hasMother data:Queen_Mary ;
+      :hasRelation data:Elizabeth_Bowes-Lyon ;
+      :knownAs "Bertie"^^xsd:string .
+
+  data:Elizabeth_Bowes-Lyon a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -911,6 +1191,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ca7b5379-9472-49f0-8e6c-81ae170fe757)
- Call ID: ca7b5379-9472-49f0-8e6c-81ae170fe757
+  Finish (7357a387-51dd-420e-b451-fcb8e1f7bc16)
+ Call ID: 7357a387-51dd-420e-b451-fcb8e1f7bc16
   Args:

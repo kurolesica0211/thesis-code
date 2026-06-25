@@ -85,32 +85,55 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Antonia of Prussia, Duchess of Wellington (Antonia Elizabeth Brigid Louise Mansfeld; born 28 April 1955) is a British aristocrat and philanthropist.
-Through her marriage, she is also the Princess of Waterloo, Duchess of Victoria, and Duchess of Ciudad Rodrigo.
-Early life and education
-
-Princess Antonia Elizabeth Brigid Louise Mansfeld of Prussia was born in London on 28 April 1955, the daughter of Prince Frederick of Prussia and his wife, Lady Brigid Guinness.
-On her father's side, she is a great-granddaughter of the German Emperor Wilhelm II, and granddaughter of Rupert Guinness, 2nd Earl of Iveagh on her mother's side.
-Career
-
-In 2007, she was appointed as the President of The Guinness Partnership, an affordable housing charitable society in the United Kingdom, and was appointed an Officer of the Order of the British Empire in the 2008 Birthday Honours for services to social housing.
-In 2008 Antonia was appointed as a fellow of Eton College, serving as a member of the college's governing body.
-Personal life
-
-On 3 February 1977, she married Charles Wellesley, Marquess of Douro at St Paul's Church, Knightsbridge in London.
-Notable guests at the wedding included Queen Elizabeth The Queen Mother, the Prince of Wales, Princess Margaret, and the Duke and Duchess of Kent.
-She is godmother to Lady Gabriella Kingston, daughter of Prince & Princess Michael of Kent.
-When her husband succeeded his father as the 9th Duke of Wellington, she became the Princess of Waterloo in Belgium and the Netherlands, the Duchess of Victoria in Portugal, the Duchess of Wellington in the United Kingdom, and the Duchess of Ciudad Rodrigo in Spain.
-They have five children, including Lady Mary Wellesley and Lady Charlotte Wellesley.
+Prince Nikolai Kirillovich Romanov   Princess Yekaterina Fyodorovna
 
 
-References
+Prince Karl Emich of Leiningen (German: Karl Emich Nikolaus Friedrich Hermann Prinz zu Leiningen; Russian: Карл Эмих Николаус Фридрих Герман цу Лейнинген; born 12 June 1952), also known by his Orthodox Russian name Nikolai Kirillovich Romanov (Николай Кириллович Романов), and recognized with the regnal name Emperor Nicholas III by Monarchist Party supporters of the Imperial Throne, is the eldest son of Emich, 7th Prince of Leiningen, and Duchess Eilika of the Grand Duchy of Oldenburg, and is an elder brother of Andreas, 8th Prince of Leiningen.
+He is a claimant to the defunct throne of the Russian Empire, held until 1917 by the Imperial House of Romanov, as a grandson of Grand Duchess Maria Kirillovna (1907–1951), eldest child of Grand Duke Kirill Vladimirovich, who claimed the Russian crown from exile in 1924.
+He is a great-great-great-grandson of Emperor Alexander II of Russia and grandnephew of Grand Duke Vladimir Kirillovich of Russia.
+In 2013, the Monarchist Party of Russia declared him the primary heir to the Russian throne upon his conversion from Lutheranism to Eastern Orthodox Christianity, and in 2014 announced the formation of the Imperial Throne, wherein Karl Emich had agreed to assume imperial dignity as Emperor Nicholas III.
+As such, however, he came into competition with the widely recognized pretender to the throne, Grand Duchess Maria Vladimirovna of Russia, who is recognized by the Patriarch of Moscow.
+He also claimed the headship of the House of Leiningen in the past.
+Marriages and children
+
+He married Princess Margarita of Hohenlohe-Öhringen on 8 June 1984.
+He had one daughter by this marriage, Princess Cécilia Marie Stephanie Margarita of Leiningen (born 10 June 1988).
+Princess Margarita died in 1989 in a car accident.
+On 24 May 1991, Prince Karl Emich married morganatically Gabriele Renate Thyssen.
+After an inheritance dispute, he desisted claim to the family's legacy in favour of his younger brother Andreas, 8th Prince of Leiningen.
+The couple had one daughter, Princess Theresa Anna Elisabeth of Leiningen (born 16 April 1992)
+In 1998, Karl Emich and Gabriele were divorced and she became the second wife of the Aga Khan IV.
+On 12 April 2010, they had a son, Prince Emich Albrecht Karl of Leiningen.
+Because his marriage to Countess Isabelle would not have been deemed equal according to the Pauline Laws, their son, Prince Emich, though considered a dynast of the House of Leiningen, cannot inherit his claim to the headship of the House of Romanov, which shall pass to his brother, Prince Andreas (b. 1955 ), and the latter's descendants born of equal marriages upon the death of Karl Emich, and on the condition that they should convert to Orthodoxy.
+Lawsuit
+
+
+In 2000, Karl Emich began the final round of a lawsuit to inherit £100 million worth of castles, property, and a Mediterranean island that had been denied him by his family because he chose to marry Gabriele Renate Thyssen.
+Karl Emich was disinherited shortly after his 1991 wedding, as his mother, father, and brother Andreas withheld approval, contending that the bride did not meet the mediatized family's traditional standard for aristocratic lineage.
+The marriage was therefore deemed to constitute a violation of an 1897 Leiningen family edict requiring that dynastically valid marriages be authorised by the head of the Leiningen family (or by successful appeal to a panel of mediatized nobles), such permission historically being granted for brides descended from royalty or the titled nobility.
+Karl remarked about the whole affair, 
+
+"From the very beginning of our marriage I was turned into an enemy.
+Karl Emich maintained that the stress this feud put upon his marriage is the reason why Thyssen left him, converted to Islam, and eloped with Aga Khan IV.
+Claim to the Russian throne
+
+Karl Emich and his supporters argue that the marriage of Maria Vladimirovna's parents was in contravention of the Pauline Laws.
+They maintain that the House of Bagration-Mukhrani did not possess sovereign status and was not recognized as equal by Nicholas II for the purpose of dynastic marriages at the time of the union of Princess Tatiana Constantinovna of Russia and Prince Constantine Bagration-Mukhransky in 1911, thirty seven years prior to that of Princess Leonida and Grand Duke Vladimir Kirillovich.
+Therefore, as the next of kin to Vladimir (in the exclusion of his daughter), the Russian Monarchist Party recognises Karl Emich as the heir to the Russian throne, since he and his wife converted on 1 June 2013, from Lutheranism to Eastern Orthodox Christianity, enabling his accession.
+He outlined that Karl Emich, upon adhering to the Orthodox denomination, obtained a right to take this see according to pre-Revolution Fundamental Laws of the Russian Empire.
+Bakov proposed that the Prince accept the throne, thereby forming a new independent state and incorporate it into Bakov's promotional projects such as the Monarchist Party's Imperial Throne micronation and several others.
+In April 2014 Bakov and Karl Emich appeared in a newspaper textual and photo report declaring that the Prince accepted the proposals as well as the title of "Emperor Nicholas III" (as successor to Nicholas II).
+In the report Bakov emphasized that Karl Emich has long been an entrepreneur but henceforth he would refrain from all non-royalist related public activities.
+He also announced that Russian President Vladimir Putin declined to grant such a plot in Yekaterinburg (Bakov's residence and site of the 1918 Romanov assassination) in response to Karl Emich's request, transmitted to Putin by Bakov, a former MP.
+In June 2021 Karl Emich, or Nikolai Kirillovich (Nicholas III) gave his first-ever interview in Russian language where he clarified his civil and political attitude and told some details about history of his family.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +149,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +166,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +200,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +282,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +305,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +325,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +335,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +375,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,157 +474,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (31127e71-4002-45d1-97e5-596756ed4ebe)
- Call ID: 31127e71-4002-45d1-97e5-596756ed4ebe
+  AssignClass (54c20218-9f30-475e-ae36-7498f92defe9)
+ Call ID: 54c20218-9f30-475e-ae36-7498f92defe9
   Args:
-    source: Antonia_of_Prussia
-    type: :Woman
-  AssignClass (57eb7640-b1b6-43e1-a0bf-b6256fc98c14)
- Call ID: 57eb7640-b1b6-43e1-a0bf-b6256fc98c14
-  Args:
-    type: :Person
-    source: Antonia_of_Prussia
-  AddLiteral (55f4e83f-583c-49f6-9052-7dc8adcf83e1)
- Call ID: 55f4e83f-583c-49f6-9052-7dc8adcf83e1
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Antonia_of_Prussia
-    literal_value: 1955
-  AssignClass (84d9237c-c700-4c58-8db3-7b9470e442d2)
- Call ID: 84d9237c-c700-4c58-8db3-7b9470e442d2
-  Args:
-    source: Frederick_of_Prussia
+    source: Karl_Emich_of_Leiningen
     type: :Man
-  AssignClass (b4d92b75-db7e-4fd8-903b-d96169096b36)
- Call ID: b4d92b75-db7e-4fd8-903b-d96169096b36
+  AssignClass (18ae3261-92a3-421a-af54-23d944deedf4)
+ Call ID: 18ae3261-92a3-421a-af54-23d944deedf4
   Args:
-    source: Frederick_of_Prussia
     type: :Person
-  AssignClass (cb554153-bd15-4ad5-b60b-4197384fed95)
- Call ID: cb554153-bd15-4ad5-b60b-4197384fed95
+    source: Karl_Emich_of_Leiningen
+  AddLiteral (6cad0c10-cba0-4d9f-9b9a-591897f692ab)
+ Call ID: 6cad0c10-cba0-4d9f-9b9a-591897f692ab
+  Args:
+    relation: :alsoKnownAs
+    literal_value: Nikolai Kirillovich Romanov
+    source: Karl_Emich_of_Leiningen
+    literal_type: xsd:string
+  AssignClass (f24eff38-9f74-4fe3-b648-7fade17b397d)
+ Call ID: f24eff38-9f74-4fe3-b648-7fade17b397d
+  Args:
+    type: :Man
+    source: Emich_7th_Prince_of_Leiningen
+  AssignClass (db4edf1b-a255-412a-9274-ac224c6ff25c)
+ Call ID: db4edf1b-a255-412a-9274-ac224c6ff25c
+  Args:
+    type: :Person
+    source: Emich_7th_Prince_of_Leiningen
+  AssignClass (7ddb7840-3868-4bef-8544-8f0cc8183df7)
+ Call ID: 7ddb7840-3868-4bef-8544-8f0cc8183df7
   Args:
     type: :Woman
-    source: Brigid_Guinness
-  AssignClass (c07a8cb7-64d5-4dfa-ac32-c1fedeeac2bf)
- Call ID: c07a8cb7-64d5-4dfa-ac32-c1fedeeac2bf
+    source: Duchess_Eilika_of_Oldenburg
+  AssignClass (0c5e8afe-6f81-468c-8099-1ea24fe0cc3d)
+ Call ID: 0c5e8afe-6f81-468c-8099-1ea24fe0cc3d
   Args:
-    source: Brigid_Guinness
     type: :Person
-  AddTriple (cc90abcf-c555-4b64-aacc-82ade2c0746e)
- Call ID: cc90abcf-c555-4b64-aacc-82ade2c0746e
+    source: Duchess_Eilika_of_Oldenburg
+  AddTriple (7938cce2-d79c-4fe1-bcec-3a6dd91b4fd7)
+ Call ID: 7938cce2-d79c-4fe1-bcec-3a6dd91b4fd7
   Args:
-    target: Frederick_of_Prussia
-    source: Antonia_of_Prussia
     relation: :hasFather
-  AddTriple (91c8d672-0f85-4ce7-a982-6e4bd3795a97)
- Call ID: 91c8d672-0f85-4ce7-a982-6e4bd3795a97
+    source: Karl_Emich_of_Leiningen
+    target: Emich_7th_Prince_of_Leiningen
+  AddTriple (740cf63b-7f78-4203-a9e4-dde62d250306)
+ Call ID: 740cf63b-7f78-4203-a9e4-dde62d250306
   Args:
-    target: Brigid_Guinness
-    source: Antonia_of_Prussia
     relation: :hasMother
-  AssignClass (0b98d906-c097-4d1c-9816-1a6d0321b3f8)
- Call ID: 0b98d906-c097-4d1c-9816-1a6d0321b3f8
+    source: Karl_Emich_of_Leiningen
+    target: Duchess_Eilika_of_Oldenburg
+  AssignClass (d2e3f2ad-055a-48f5-9601-ab073e634e11)
+ Call ID: d2e3f2ad-055a-48f5-9601-ab073e634e11
   Args:
     type: :Man
-    source: Charles_Wellesley
-  AssignClass (6c390ce9-3726-4464-ac6f-19301f49646e)
- Call ID: 6c390ce9-3726-4464-ac6f-19301f49646e
+    source: Andreas_8th_Prince_of_Leiningen
+  AssignClass (5fdb5b80-1c29-48ca-8ee6-0915ce86b7db)
+ Call ID: 5fdb5b80-1c29-48ca-8ee6-0915ce86b7db
   Args:
     type: :Person
-    source: Charles_Wellesley
-  AddLiteral (c05fad8e-4165-4842-8ba3-b85246ef3790)
- Call ID: c05fad8e-4165-4842-8ba3-b85246ef3790
+    source: Andreas_8th_Prince_of_Leiningen
+  AddTriple (4e1cb4cb-c44e-4985-a1b7-8bbb869684d9)
+ Call ID: 4e1cb4cb-c44e-4985-a1b7-8bbb869684d9
   Args:
-    literal_value: 1977
-    source: Antonia_of_Prussia
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (bb1cc81c-1e3d-4d65-b27c-b9b8a6e71253)
- Call ID: bb1cc81c-1e3d-4d65-b27c-b9b8a6e71253
+    relation: :isBrotherOf
+    source: Andreas_8th_Prince_of_Leiningen
+    target: Karl_Emich_of_Leiningen
+  AssignClass (9f64941c-85f1-49bb-96a8-f1c95d2fa6a0)
+ Call ID: 9f64941c-85f1-49bb-96a8-f1c95d2fa6a0
   Args:
-    target: Charles_Wellesley
-    source: Antonia_of_Prussia
+    type: :Woman
+    source: Grand_Duchess_Maria_Kirillovna
+  AssignClass (9ebef2ed-06a1-4081-986b-5822a860e4bb)
+ Call ID: 9ebef2ed-06a1-4081-986b-5822a860e4bb
+  Args:
+    type: :Person
+    source: Grand_Duchess_Maria_Kirillovna
+  AddTriple (7b8c0087-e266-4d54-a275-0625bd809ea7)
+ Call ID: 7b8c0087-e266-4d54-a275-0625bd809ea7
+  Args:
+    relation: :hasAncestor
+    target: Grand_Duchess_Maria_Kirillovna
+    source: Karl_Emich_of_Leiningen
+  AssignClass (540e63f4-394f-411c-8d90-53cf5526e7d1)
+ Call ID: 540e63f4-394f-411c-8d90-53cf5526e7d1
+  Args:
+    source: Princess_Margarita_of_Hohenlohe-Oehringen
+    type: :Woman
+  AssignClass (b6d3ef8c-fb06-48a3-a95d-31d079000433)
+ Call ID: b6d3ef8c-fb06-48a3-a95d-31d079000433
+  Args:
+    source: Princess_Margarita_of_Hohenlohe-Oehringen
+    type: :Person
+  AddTriple (e935202f-9507-44a6-bc25-408f53a552f9)
+ Call ID: e935202f-9507-44a6-bc25-408f53a552f9
+  Args:
     relation: :hasRelation
-  AssignClass (82096ca7-1425-4662-a52f-44c9b50e789e)
- Call ID: 82096ca7-1425-4662-a52f-44c9b50e789e
+    source: Karl_Emich_of_Leiningen
+    target: Princess_Margarita_of_Hohenlohe-Oehringen
+  AssignClass (54d6ef96-fb80-4d2f-bdd5-0934974af4ca)
+ Call ID: 54d6ef96-fb80-4d2f-bdd5-0934974af4ca
   Args:
-    source: Mary_Wellesley
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
     type: :Woman
-  AssignClass (18843c65-a1a5-429a-85d4-58084262f0f7)
- Call ID: 18843c65-a1a5-429a-85d4-58084262f0f7
+  AssignClass (fbe90665-3661-4e7a-98f5-b0d97cc8415b)
+ Call ID: fbe90665-3661-4e7a-98f5-b0d97cc8415b
   Args:
     type: :Person
-    source: Mary_Wellesley
-  AddTriple (1714e9db-957e-4953-b3dc-237f61c2fe02)
- Call ID: 1714e9db-957e-4953-b3dc-237f61c2fe02
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+  AddTriple (611fc0d0-291f-4847-a710-4ea3fc0062cd)
+ Call ID: 611fc0d0-291f-4847-a710-4ea3fc0062cd
   Args:
-    target: Antonia_of_Prussia
-    source: Mary_Wellesley
     relation: :isDaughterOf
-  AddTriple (edf635b7-b8bd-40f3-bc0b-c18a47c75313)
- Call ID: edf635b7-b8bd-40f3-bc0b-c18a47c75313
+    target: Karl_Emich_of_Leiningen
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+  AddTriple (1141ee98-bfca-4762-a157-18adf5feb876)
+ Call ID: 1141ee98-bfca-4762-a157-18adf5feb876
   Args:
-    target: Charles_Wellesley
-    source: Mary_Wellesley
     relation: :isDaughterOf
-  AssignClass (55441134-6d32-4bbc-8ab7-a469f1e93080)
- Call ID: 55441134-6d32-4bbc-8ab7-a469f1e93080
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+    target: Princess_Margarita_of_Hohenlohe-Oehringen
+  AssignClass (c9b1a525-facd-486b-a814-4a64b2845f5b)
+ Call ID: c9b1a525-facd-486b-a814-4a64b2845f5b
   Args:
+    source: Gabriele_Renate_Thyssen
     type: :Woman
-    source: Charlotte_Wellesley
-  AssignClass (cc6507c6-ffd1-43be-a3b1-7502ea3072de)
- Call ID: cc6507c6-ffd1-43be-a3b1-7502ea3072de
+  AssignClass (bb82ab73-8a95-4fca-a0a4-a35401ba1ceb)
+ Call ID: bb82ab73-8a95-4fca-a0a4-a35401ba1ceb
   Args:
-    source: Charlotte_Wellesley
+    source: Gabriele_Renate_Thyssen
     type: :Person
-  AddTriple (0961e69d-4f9f-439c-bab9-9d5c5026588d)
- Call ID: 0961e69d-4f9f-439c-bab9-9d5c5026588d
+  AddTriple (ae61dc12-aa71-414b-ae02-72268d219d93)
+ Call ID: ae61dc12-aa71-414b-ae02-72268d219d93
   Args:
-    target: Antonia_of_Prussia
-    source: Charlotte_Wellesley
+    source: Karl_Emich_of_Leiningen
+    target: Gabriele_Renate_Thyssen
+    relation: :hasRelation
+  AssignClass (99bd9b05-37c0-4dbc-b8ca-1c25cde3a43b)
+ Call ID: 99bd9b05-37c0-4dbc-b8ca-1c25cde3a43b
+  Args:
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    type: :Woman
+  AssignClass (3af0b764-2ec3-4aa8-a222-b28568fb864f)
+ Call ID: 3af0b764-2ec3-4aa8-a222-b28568fb864f
+  Args:
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    type: :Person
+  AddTriple (9d734a6b-2f8f-4ad7-a4a5-005c0b679da4)
+ Call ID: 9d734a6b-2f8f-4ad7-a4a5-005c0b679da4
+  Args:
     relation: :isDaughterOf
-  AddTriple (a632a4eb-9c7d-4461-aa53-e27925cbb1ce)
- Call ID: a632a4eb-9c7d-4461-aa53-e27925cbb1ce
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    target: Karl_Emich_of_Leiningen
+  AddTriple (a9b9b978-8ff2-48f8-a7c2-b3016b362db0)
+ Call ID: a9b9b978-8ff2-48f8-a7c2-b3016b362db0
   Args:
-    source: Charlotte_Wellesley
-    target: Charles_Wellesley
     relation: :isDaughterOf
-  AssignClass (837b304e-bbc4-4766-83c6-70564c0a6c6a)
- Call ID: 837b304e-bbc4-4766-83c6-70564c0a6c6a
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    target: Gabriele_Renate_Thyssen
+  AssignClass (56ed3312-b85c-404b-8680-ce7ccb7a7009)
+ Call ID: 56ed3312-b85c-404b-8680-ce7ccb7a7009
   Args:
-    source: Wilhelm_II
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
     type: :Man
-  AssignClass (38f06919-f792-475e-a16b-5d2daed053b4)
- Call ID: 38f06919-f792-475e-a16b-5d2daed053b4
+  AssignClass (5fe0929d-b0ba-41a3-a8c5-88899ac274ff)
+ Call ID: 5fe0929d-b0ba-41a3-a8c5-88899ac274ff
   Args:
-    source: Wilhelm_II
     type: :Person
-  AddTriple (55bc8f98-85df-4457-ba1e-8b4f6e018063)
- Call ID: 55bc8f98-85df-4457-ba1e-8b4f6e018063
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
+  AddTriple (16617747-a8a7-4d0b-9d51-71d2af4182f6)
+ Call ID: 16617747-a8a7-4d0b-9d51-71d2af4182f6
   Args:
-    relation: :hasAncestor
-    target: Wilhelm_II
-    source: Antonia_of_Prussia
-  AssignClass (b34326a9-7598-4310-a9ca-bd6934d244c0)
- Call ID: b34326a9-7598-4310-a9ca-bd6934d244c0
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
+    target: Karl_Emich_of_Leiningen
+    relation: :isSonOf
+  AddTriple (b75fa85b-5d42-488c-ac08-dc6ed3294795)
+ Call ID: b75fa85b-5d42-488c-ac08-dc6ed3294795
   Args:
-    type: :Man
-    source: Rupert_Guinness
-  AssignClass (cb1acb58-2062-45fb-baa2-c2810ee9cdd8)
- Call ID: cb1acb58-2062-45fb-baa2-c2810ee9cdd8
+    relation: :isSonOf
+    target: Gabriele_Renate_Thyssen
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
+  Finish (06844c4d-5e05-465b-92d2-55ee44cf4dc8)
+ Call ID: 06844c4d-5e05-465b-92d2-55ee44cf4dc8
   Args:
-    source: Rupert_Guinness
-    type: :Person
-  AddTriple (e2ac87a8-93ac-42d7-91e7-5fb9c3387fef)
- Call ID: e2ac87a8-93ac-42d7-91e7-5fb9c3387fef
-  Args:
-    target: Rupert_Guinness
-    source: Antonia_of_Prussia
-    relation: :hasAncestor
-  Finish (f2b8a5b7-d4d2-429d-9667-3879ed119041)
- Call ID: f2b8a5b7-d4d2-429d-9667-3879ed119041
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -624,40 +792,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charlotte_Wellesley a :Person,
-          :Woman ;
-      :isDaughterOf data:Antonia_of_Prussia,
-          data:Charles_Wellesley .
+  data:Andreas_8th_Prince_of_Leiningen a :Man,
+          :Person ;
+      :isBrotherOf data:Karl_Emich_of_Leiningen .
 
-  data:Mary_Wellesley a :Person,
-          :Woman ;
-      :isDaughterOf data:Antonia_of_Prussia,
-          data:Charles_Wellesley .
+  data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man,
+          :Person ;
+      :isSonOf data:Gabriele_Renate_Thyssen,
+          data:Karl_Emich_of_Leiningen .
 
-  data:Brigid_Guinness a :Person,
+  data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Person,
+          :Woman ;
+      :isDaughterOf data:Karl_Emich_of_Leiningen,
+          data:Princess_Margarita_of_Hohenlohe-Oehringen .
+
+  data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Person,
+          :Woman ;
+      :isDaughterOf data:Gabriele_Renate_Thyssen,
+          data:Karl_Emich_of_Leiningen .
+
+  data:Duchess_Eilika_of_Oldenburg a :Person,
           :Woman .
 
-  data:Frederick_of_Prussia a :Man,
+  data:Emich_7th_Prince_of_Leiningen a :Man,
           :Person .
 
-  data:Rupert_Guinness a :Man,
-          :Person .
+  data:Grand_Duchess_Maria_Kirillovna a :Person,
+          :Woman .
 
-  data:Wilhelm_II a :Man,
-          :Person .
+  data:Princess_Margarita_of_Hohenlohe-Oehringen a :Person,
+          :Woman .
 
-  data:Antonia_of_Prussia a :Person,
-          :Woman ;
-      :hasAncestor data:Rupert_Guinness,
-          data:Wilhelm_II ;
-      :hasBirthYear 1955 ;
-      :hasFather data:Frederick_of_Prussia ;
-      :hasMarriageYear 1977 ;
-      :hasMother data:Brigid_Guinness ;
-      :hasRelation data:Charles_Wellesley .
+  data:Gabriele_Renate_Thyssen a :Person,
+          :Woman .
 
-  data:Charles_Wellesley a :Man,
-          :Person .
+  data:Karl_Emich_of_Leiningen a :Man,
+          :Person ;
+      :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+      :hasAncestor data:Grand_Duchess_Maria_Kirillovna ;
+      :hasFather data:Emich_7th_Prince_of_Leiningen ;
+      :hasMother data:Duchess_Eilika_of_Oldenburg ;
+      :hasRelation data:Gabriele_Renate_Thyssen,
+          data:Princess_Margarita_of_Hohenlohe-Oehringen .
 
 
 
@@ -669,206 +845,230 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (238772c2-2273-451f-a46e-5234c91ecdb1)
- Call ID: 238772c2-2273-451f-a46e-5234c91ecdb1
+  ValidateShacl (536240d1-e2bf-4597-9e4c-018b8bf80379)
+ Call ID: 536240d1-e2bf-4597-9e4c-018b8bf80379
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:27
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Wilhelm_II is an ancestor of Antonia_of_Prussia but is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Rupert_Guinness is an ancestor of Antonia_of_Prussia but is missing the mandatory class :Ancestor.
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Rupert_Guinness, :Ancestor)
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Frederick_of_Prussia is set as the father of Antonia_of_Prussia but is missing the required class :Ancestor.
+      The node 'Grand_Duchess_Maria_Kirillovna' assigned to 'hasAncestor' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_of_Prussia, :Ancestor)
+      AssignClass(node='Grand_Duchess_Maria_Kirillovna', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Brigid_Guinness is set as the mother of Antonia_of_Prussia but is missing the required class :Ancestor.
+      The node 'Emich_7th_Prince_of_Leiningen' assigned to 'hasFather' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigid_Guinness, :Ancestor)
+      AssignClass(node='Emich_7th_Prince_of_Leiningen', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is set as an ancestor of Mary_Wellesley but is missing the required class :Ancestor.
+      The node 'Duchess_Eilika_of_Oldenburg' assigned to 'hasMother' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Duchess_Eilika_of_Oldenburg', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is set as an ancestor of Mary_Wellesley but is missing the required class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is set as an ancestor of Charlotte_Wellesley but is missing the required class :Ancestor.
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is set as an ancestor of Charlotte_Wellesley but is missing the required class :Ancestor.
+      The node 'Grand_Duchess_Maria_Kirillovna' assigned to 'hasAncestor' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Grand_Duchess_Maria_Kirillovna', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_II is missing the mandatory class :Ancestor.
+      The node 'Emich_7th_Prince_of_Leiningen' assigned to 'hasFather' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
+      AssignClass(node='Emich_7th_Prince_of_Leiningen', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Rupert_Guinness is missing the mandatory class :Ancestor.
+      The node 'Duchess_Eilika_of_Oldenburg' assigned to 'hasMother' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Rupert_Guinness, :Ancestor)
+      AssignClass(node='Duchess_Eilika_of_Oldenburg', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Frederick_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_of_Prussia, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Brigid_Guinness is missing the mandatory class :Ancestor.
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigid_Guinness, :Ancestor)
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Princess_Margarita_of_Hohenlohe-Oehringen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Princess_Margarita_of_Hohenlohe-Oehringen', class=':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isSonOf' for 'Prince_Emich_Albrecht_Karl_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Wilhelm_II is missing the mandatory class :Ancestor.
+      The node 'Grand_Duchess_Maria_Kirillovna' assigned to 'hasAncestor' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
+      AssignClass(node='Grand_Duchess_Maria_Kirillovna', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Rupert_Guinness is missing the mandatory class :Ancestor.
+      The node 'Emich_7th_Prince_of_Leiningen' assigned to 'hasFather' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Rupert_Guinness, :Ancestor)
+      AssignClass(node='Emich_7th_Prince_of_Leiningen', class=':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederick_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Duchess_Eilika_of_Oldenburg' assigned to 'hasMother' for 'Karl_Emich_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_of_Prussia, :Ancestor)
+      AssignClass(node='Duchess_Eilika_of_Oldenburg', class=':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Brigid_Guinness is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigid_Guinness, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [21]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is missing the mandatory class :Ancestor.
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
 
 
   Violation [22]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
 
 
   Violation [23]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Charles_Wellesley is missing the mandatory class :Ancestor.
+      The node 'Princess_Margarita_of_Hohenlohe-Oehringen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Wellesley, :Ancestor)
+      AssignClass(node='Princess_Margarita_of_Hohenlohe-Oehringen', class=':Ancestor')
 
 
   Violation [24]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Antonia_of_Prussia is missing the mandatory class :Ancestor.
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonia_of_Prussia, :Ancestor)
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Gabriele_Renate_Thyssen' assigned to 'isDaughterOf' for 'Princess_Theresa_Anna_Elisabeth_of_Leiningen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Gabriele_Renate_Thyssen', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Karl_Emich_of_Leiningen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Karl_Emich_of_Leiningen', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Princess_Margarita_of_Hohenlohe-Oehringen' assigned to 'isDaughterOf' for 'Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Margarita_of_Hohenlohe-Oehringen', class=':Ancestor')
 
 
 
@@ -877,38 +1077,38 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e2e5a297-6724-451c-922b-f4d1487481fe)
- Call ID: e2e5a297-6724-451c-922b-f4d1487481fe
+  AssignClass (fc44a5f0-fc32-4e8c-81fc-0ac43347619f)
+ Call ID: fc44a5f0-fc32-4e8c-81fc-0ac43347619f
   Args:
+    source: Karl_Emich_of_Leiningen
     type: :Ancestor
-    source: Wilhelm_II
-  AssignClass (fc986bf1-2253-4486-af7d-cd25dc463a85)
- Call ID: fc986bf1-2253-4486-af7d-cd25dc463a85
+  AssignClass (4c04efa7-180e-43e1-bee8-d161597a9dde)
+ Call ID: 4c04efa7-180e-43e1-bee8-d161597a9dde
   Args:
+    source: Gabriele_Renate_Thyssen
     type: :Ancestor
-    source: Rupert_Guinness
-  AssignClass (b01c7b42-f189-484e-b6e8-0be55b6a5023)
- Call ID: b01c7b42-f189-484e-b6e8-0be55b6a5023
+  AssignClass (b4b135e0-d336-4c6f-8593-f11bc30ccaa3)
+ Call ID: b4b135e0-d336-4c6f-8593-f11bc30ccaa3
   Args:
+    source: Grand_Duchess_Maria_Kirillovna
     type: :Ancestor
-    source: Frederick_of_Prussia
-  AssignClass (7228424e-0694-4992-9c70-e13b2dab6477)
- Call ID: 7228424e-0694-4992-9c70-e13b2dab6477
+  AssignClass (ddafa8a1-94d8-40b4-b7ba-bee6bd33c411)
+ Call ID: ddafa8a1-94d8-40b4-b7ba-bee6bd33c411
   Args:
+    source: Emich_7th_Prince_of_Leiningen
     type: :Ancestor
-    source: Brigid_Guinness
-  AssignClass (e191d1f4-0b3b-48ef-9dbd-3d238b3aa108)
- Call ID: e191d1f4-0b3b-48ef-9dbd-3d238b3aa108
+  AssignClass (2a06d522-73e2-409f-a05c-4999aa80187d)
+ Call ID: 2a06d522-73e2-409f-a05c-4999aa80187d
   Args:
+    source: Duchess_Eilika_of_Oldenburg
     type: :Ancestor
-    source: Charles_Wellesley
-  AssignClass (0964bc2b-7a3b-4d86-9adc-cd5e4e6e85ce)
- Call ID: 0964bc2b-7a3b-4d86-9adc-cd5e4e6e85ce
+  AssignClass (122f5f52-fc4d-4a3f-985e-92f035651a33)
+ Call ID: 122f5f52-fc4d-4a3f-985e-92f035651a33
   Args:
+    source: Princess_Margarita_of_Hohenlohe-Oehringen
     type: :Ancestor
-    source: Antonia_of_Prussia
-  Finish (2f6ebcb1-f61b-4f62-99d3-7ad826ea0440)
- Call ID: 2f6ebcb1-f61b-4f62-99d3-7ad826ea0440
+  ValidateShacl (bdcf92b3-d342-47f6-a571-ea84962dd440)
+ Call ID: bdcf92b3-d342-47f6-a571-ea84962dd440
   Args:
 
 ================================= Tool Message =================================
@@ -938,60 +1138,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charlotte_Wellesley a :Person,
-          :Woman ;
-      :isDaughterOf data:Antonia_of_Prussia,
-          data:Charles_Wellesley .
+  data:Andreas_8th_Prince_of_Leiningen a :Man,
+          :Person ;
+      :isBrotherOf data:Karl_Emich_of_Leiningen .
 
-  data:Mary_Wellesley a :Person,
-          :Woman ;
-      :isDaughterOf data:Antonia_of_Prussia,
-          data:Charles_Wellesley .
+  data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man,
+          :Person ;
+      :isSonOf data:Gabriele_Renate_Thyssen,
+          data:Karl_Emich_of_Leiningen .
 
-  data:Brigid_Guinness a :Ancestor,
+  data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Person,
+          :Woman ;
+      :isDaughterOf data:Karl_Emich_of_Leiningen,
+          data:Princess_Margarita_of_Hohenlohe-Oehringen .
+
+  data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Person,
+          :Woman ;
+      :isDaughterOf data:Gabriele_Renate_Thyssen,
+          data:Karl_Emich_of_Leiningen .
+
+  data:Duchess_Eilika_of_Oldenburg a :Ancestor,
           :Person,
           :Woman .
 
-  data:Frederick_of_Prussia a :Ancestor,
+  data:Emich_7th_Prince_of_Leiningen a :Ancestor,
           :Man,
           :Person .
 
-  data:Rupert_Guinness a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Antonia_of_Prussia a :Ancestor,
+  data:Grand_Duchess_Maria_Kirillovna a :Ancestor,
           :Person,
-          :Woman ;
-      :hasAncestor data:Rupert_Guinness,
-          data:Wilhelm_II ;
-      :hasBirthYear 1955 ;
-      :hasFather data:Frederick_of_Prussia ;
-      :hasMarriageYear 1977 ;
-      :hasMother data:Brigid_Guinness ;
-      :hasRelation data:Charles_Wellesley .
+          :Woman .
 
-  data:Charles_Wellesley a :Ancestor,
+  data:Princess_Margarita_of_Hohenlohe-Oehringen a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Gabriele_Renate_Thyssen a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Karl_Emich_of_Leiningen a :Ancestor,
           :Man,
-          :Person .
+          :Person ;
+      :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+      :hasAncestor data:Grand_Duchess_Maria_Kirillovna ;
+      :hasFather data:Emich_7th_Prince_of_Leiningen ;
+      :hasMother data:Duchess_Eilika_of_Oldenburg ;
+      :hasRelation data:Gabriele_Renate_Thyssen,
+          data:Princess_Margarita_of_Hohenlohe-Oehringen .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e1a93399-9519-4af9-a2ae-95c7cf00fc00)
- Call ID: e1a93399-9519-4af9-a2ae-95c7cf00fc00
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1001,6 +1197,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (57c11cd7-6e27-4f54-a476-1ec56528e55e)
- Call ID: 57c11cd7-6e27-4f54-a476-1ec56528e55e
+  Finish (2825ef88-59d0-4c64-a038-33fda30971e7)
+ Call ID: 2825ef88-59d0-4c64-a038-33fda30971e7
   Args:

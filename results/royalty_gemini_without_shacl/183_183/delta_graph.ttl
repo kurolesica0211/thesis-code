@@ -2,34 +2,45 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:GeorgeMikhailovich a :Man ;
-    :hasBirthYear 1981 ;
-    :hasChild data:AlexanderGeorgievichRomanov,
-        data:KiraLeonidaGeorgievnaRomanova ;
-    :hasFather data:FranzWilhelm ;
-    :hasMother data:MariaVladimirovna .
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
 
-data:Leonida a :Woman .
+data:Peter_II_of_Yugoslavia a :Man,
+        :Person ;
+    :isAncestorOf data:Peter_Karageorgevitch .
 
-data:VictoriaRomanovnaBettarini a :Woman ;
-    :hasBirthYear 1982 ;
-    :hasChild data:AlexanderGeorgievichRomanov,
-        data:KiraLeonidaGeorgievnaRomanova .
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Maria_da_Gloria .
 
-data:FranzWilhelm a :Man ;
-    :hasFather data:KarlFranz ;
-    :hasMother data:HenrietteSchonaichCarolath .
+data:Alexander_Karageorgevitch_Jr a :Man,
+        :Person .
 
-data:HenrietteSchonaichCarolath a :Woman .
+data:Alexander_of_Yugoslavia a :Man,
+        :Person .
 
-data:KarlFranz a :Man .
+data:Dolores_Luna_Noor a :Person,
+        :Woman ;
+    :hasBirthYear 2017 ;
+    :hasMother data:Lauren_Estelle_Jones .
 
-data:MariaVladimirovna a :Woman ;
-    :hasFather data:VladimirCyrillovich .
+data:Lauren_Estelle_Jones a :Person,
+        :Woman .
 
-data:VladimirCyrillovich a :Man .
+data:Peter_Karageorgevitch a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Peter of Serbia and Yugoslavia"^^xsd:string ;
+    :hasBirthYear 1980 ;
+    :hasBrother data:Alexander_Karageorgevitch_Jr,
+        data:Philip_Karageorgevitch ;
+    :hasDaughter data:Dolores_Luna_Noor ;
+    :hasFather data:Alexander_of_Yugoslavia ;
+    :hasMother data:Maria_da_Gloria .
 
-data:AlexanderGeorgievichRomanov a :Man .
+data:Philip_Karageorgevitch a :Man,
+        :Person .
 
-data:KiraLeonidaGeorgievnaRomanova a :Woman .
+data:Maria_da_Gloria a :Person,
+        :Woman .
 

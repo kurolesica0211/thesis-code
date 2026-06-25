@@ -85,32 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Helen Marina Lucy Taylor (née Windsor; born 28 April 1964) is a relative of the British royal family.
-She is the daughter of Prince Edward, Duke of Kent, and Katharine, Duchess of Kent, and a great-granddaughter of King George V.
+Lord Ivar Alexander Michael Mountbatten, DL (born 9 March 1963) is a British aristocrat, farmer, geologist, businessman, and reality television personality.
+Early life and family
 
+Ivar
+Alexander Michael Mountbatten was born in London, to David Mountbatten, 3rd Marquess of Milford Haven, and the former Janet Mercedes Bryce.
+His elder brother is George Mountbatten, 4th Marquess of Milford Haven.
+His paternal grandfather was Prince George of Battenberg, through whom he is a morganatic descendant of the House of Hesse-Darmstadt.
+Mountbatten grew up at Moyns Park in Essex.
+In a June 2022 interview with Tatler Mountbatten commented on the 1930s Gloria Vanderbilt child custody trial, where a maid made an allegation of a lesbian affair between the child's mother Gloria Morgan Vanderbilt and the Marchioness of Milford Haven, Mountbatten's grandmother.
+Mountbatten was educated at Gordonstoun School, the same school attended by Prince Philip and Charles III, and he graduated from Middlebury College in Vermont with a BA degree.
+Career
 
-Early life and youth
+Mountbatten began his career as a geologist and spent significant time working in South America during his early career.
+Starting in 1995, Mountbatten began his involvement in business pursuits, including being the director of the UK subsidiary of DMX Music and being involved with Coldharbour Mill Working Wool Museum.
+Mountbatten was later involved with SCL Group, the parent company of the now-defunct data analytics firm Cambridge Analytica.
+Mountbatten also serves as a Deputy Lieutenant of Devon.
+In 2019, Mountbatten began a career in reality television by starring in the sixth series of Treasure Island with Bear Grylls.
+In October 2024, Mountbatten was announced to be part of the third season of the American reality competition series The Traitors, which premiered on 9 January 2025.
+Personal life
 
-Lady Helen Marina Lucy Windsor was born on 28 April 1964 at Coppins, a country house in Iver, Buckinghamshire, the only daughter of the Duke and Duchess of Kent.
-According to Lol Tolhurst of The Cure, Helen was a "mad Cure fan" who visited the band backstage at a gig in Bath in 1983.
-Helen worked with the art dealer Karsten Schubert between 1987 and 1991, behind the front desk, and was later credited with discovering Rachel Whiteread and Gary Hume, but confessed in a television interview that she had turned down representing artist Damien Hirst.
-For 17 years, Helen was a fashion ambassador and muse to Giorgio Armani.
-Marriage and children
-
-At some point Helen reportedly dated David Flint Wood, who would later marry her cousin India Hicks.
-At 19, Helen met Timothy Verner Taylor (born 8 August 1963), an art dealer.
-Helen and her husband have four children, who immediately follow her in the Line of succession to the British throne:
-
-
-Charity work
-
-She is a patron of the CLIC Sargent children's cancer charity.
+Mountbatten married Penelope Anne Vere Thompson (born Salisbury, Wiltshire, 17 March 1966), only daughter of Colin Graham Thompson of Old Manor House, Sutton Veny, Wiltshire, and Rosemary Vere Edwardes.
+In September 2016, Mountbatten revealed that he was in a relationship with James Coyle, an airline cabin services director whom he met while at a ski resort in Verbier.
+Mountbatten's former wife walked him down the aisle and 'gave him away' at the suggestion of their daughters.
+Mountbatten is a godparent of Lady Louise Windsor (born 2003), the daughter of Prince Edward and Sophie.
+Mountbatten inherited Moyns Park in 1992 along with his brother, George Mountbatten, 4th Marquess of Milford Haven, but in 1997 moved to Bridwell Park in Uffculme, Devon.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +133,9 @@ She is a patron of the CLIC Sargent children's cancer charity.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +150,23 @@ She is a patron of the CLIC Sargent children's cancer charity.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,97 +458,274 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e50db2aa-10f8-4352-98b8-21f25dfe2eaf)
- Call ID: e50db2aa-10f8-4352-98b8-21f25dfe2eaf
-  Args:
-    type: :Woman
-    source: Lady_Helen_Marina_Lucy_Taylor
-  AssignClass (3a3a56f1-e9d2-4a99-a6da-02ff16e69bfa)
- Call ID: 3a3a56f1-e9d2-4a99-a6da-02ff16e69bfa
-  Args:
-    type: :Person
-    source: Lady_Helen_Marina_Lucy_Taylor
-  AddLiteral (4113ce17-2601-4dea-bd1b-c3f40467f796)
- Call ID: 4113ce17-2601-4dea-bd1b-c3f40467f796
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:date
-    literal_value: 1964-04-28
-    source: Lady_Helen_Marina_Lucy_Taylor
-  AssignClass (0d64e1a9-c22c-42dc-9530-663a6edb77e0)
- Call ID: 0d64e1a9-c22c-42dc-9530-663a6edb77e0
+  AssignClass (5000a934-32c9-4261-862a-591e8bbd705b)
+ Call ID: 5000a934-32c9-4261-862a-591e8bbd705b
   Args:
     type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (c66f4208-4c50-4d99-9eb1-d4071fc0804e)
- Call ID: c66f4208-4c50-4d99-9eb1-d4071fc0804e
+    source: Ivar_Mountbatten
+  AssignClass (d7185be5-b559-4656-b822-e3a91110332a)
+ Call ID: d7185be5-b559-4656-b822-e3a91110332a
   Args:
     type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (57b1807e-ac8d-4b25-9159-438b63b18b19)
- Call ID: 57b1807e-ac8d-4b25-9159-438b63b18b19
+    source: Ivar_Mountbatten
+  AddLiteral (dc3aa069-6515-4777-a284-2601a09fb2d5)
+ Call ID: dc3aa069-6515-4777-a284-2601a09fb2d5
   Args:
-    type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AssignClass (e3969e6a-2128-4504-8e34-baa5d72b8fc2)
- Call ID: e3969e6a-2128-4504-8e34-baa5d72b8fc2
+    source: Ivar_Mountbatten
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1963
+  AssignClass (b246a6bb-cc6f-4f98-8443-8e8abfaa5ceb)
+ Call ID: b246a6bb-cc6f-4f98-8443-8e8abfaa5ceb
   Args:
+    type: :Man
+    source: David_Mountbatten
+  AssignClass (5f561c10-f64f-4206-9da2-9cd24457e7f0)
+ Call ID: 5f561c10-f64f-4206-9da2-9cd24457e7f0
+  Args:
+    source: David_Mountbatten
     type: :Person
-    source: Katharine_Duchess_of_Kent
-  AddTriple (4c114e94-3a03-4525-acff-02c6fcfe79c6)
- Call ID: 4c114e94-3a03-4525-acff-02c6fcfe79c6
+  AddTriple (71665513-56c5-4ea4-8442-2919ca237338)
+ Call ID: 71665513-56c5-4ea4-8442-2919ca237338
   Args:
-    source: Lady_Helen_Marina_Lucy_Taylor
+    target: David_Mountbatten
+    source: Ivar_Mountbatten
     relation: :hasFather
-    target: Prince_Edward_Duke_of_Kent
-  AddTriple (008474b8-2341-41a7-ab80-76d32edc3086)
- Call ID: 008474b8-2341-41a7-ab80-76d32edc3086
+  AssignClass (517928fe-a64f-45db-a623-220d90ffe0d8)
+ Call ID: 517928fe-a64f-45db-a623-220d90ffe0d8
+  Args:
+    source: Janet_Mercedes_Bryce
+    type: :Woman
+  AssignClass (68d8954a-b032-4d69-b3fb-655938db26cd)
+ Call ID: 68d8954a-b032-4d69-b3fb-655938db26cd
+  Args:
+    source: Janet_Mercedes_Bryce
+    type: :Person
+  AddTriple (676df66a-5dd5-477b-983f-e2c0f5a226e8)
+ Call ID: 676df66a-5dd5-477b-983f-e2c0f5a226e8
   Args:
     relation: :hasMother
-    target: Katharine_Duchess_of_Kent
-    source: Lady_Helen_Marina_Lucy_Taylor
-  AssignClass (35b81e8b-3142-4452-8a3a-b5b45e2c19a3)
- Call ID: 35b81e8b-3142-4452-8a3a-b5b45e2c19a3
+    source: Ivar_Mountbatten
+    target: Janet_Mercedes_Bryce
+  AssignClass (76ef75ab-ce62-4d8f-9197-1ae0a7137daa)
+ Call ID: 76ef75ab-ce62-4d8f-9197-1ae0a7137daa
   Args:
     type: :Man
-    source: King_George_V
-  AssignClass (10201e83-5630-4693-bc54-aacc6fec8112)
- Call ID: 10201e83-5630-4693-bc54-aacc6fec8112
+    source: George_Mountbatten
+  AssignClass (4b22fd21-3db5-47b3-8429-ddb9551b549a)
+ Call ID: 4b22fd21-3db5-47b3-8429-ddb9551b549a
   Args:
     type: :Person
-    source: King_George_V
-  AddTriple (1a847c3d-e513-4b52-a686-68ad2e1e7f35)
- Call ID: 1a847c3d-e513-4b52-a686-68ad2e1e7f35
+    source: George_Mountbatten
+  AddTriple (a6248a85-7399-4788-9ff4-96184a0a52fc)
+ Call ID: a6248a85-7399-4788-9ff4-96184a0a52fc
   Args:
-    relation: :hasAncestor
-    target: King_George_V
-    source: Lady_Helen_Marina_Lucy_Taylor
-  AssignClass (2cff7f99-cb00-4b33-8192-c13979ed9651)
- Call ID: 2cff7f99-cb00-4b33-8192-c13979ed9651
+    source: Ivar_Mountbatten
+    target: George_Mountbatten
+    relation: :hasBrother
+  AssignClass (5f3ae5d6-afd7-445b-bc20-e3284720ba1f)
+ Call ID: 5f3ae5d6-afd7-445b-bc20-e3284720ba1f
   Args:
     type: :Man
-    source: Timothy_Verner_Taylor
-  AssignClass (ee50d413-642d-4252-b218-ea5008c93f5c)
- Call ID: ee50d413-642d-4252-b218-ea5008c93f5c
+    source: Prince_George_of_Battenberg
+  AssignClass (c94d7d6b-cb0d-4c05-bd01-ed5e2e7b7288)
+ Call ID: c94d7d6b-cb0d-4c05-bd01-ed5e2e7b7288
+  Args:
+    source: Prince_George_of_Battenberg
+    type: :Person
+  AddTriple (61e40c48-d906-4c7e-bcb7-295a7e813f2a)
+ Call ID: 61e40c48-d906-4c7e-bcb7-295a7e813f2a
+  Args:
+    relation: :hasFather
+    source: David_Mountbatten
+    target: Prince_George_of_Battenberg
+  AssignClass (d33bb781-ae99-4bd2-a323-6b259e334e58)
+ Call ID: d33bb781-ae99-4bd2-a323-6b259e334e58
+  Args:
+    source: Penelope_Anne_Vere_Thompson
+    type: :Woman
+  AssignClass (19c828f2-42e5-4cbd-bd5a-1f7ab40350aa)
+ Call ID: 19c828f2-42e5-4cbd-bd5a-1f7ab40350aa
   Args:
     type: :Person
-    source: Timothy_Verner_Taylor
-  AddLiteral (2fec5ffd-aa58-432c-b238-9ba6568ab665)
- Call ID: 2fec5ffd-aa58-432c-b238-9ba6568ab665
+    source: Penelope_Anne_Vere_Thompson
+  AddLiteral (b2bfae79-012b-4eec-ba2a-d5ab298b4f26)
+ Call ID: b2bfae79-012b-4eec-ba2a-d5ab298b4f26
   Args:
-    source: Timothy_Verner_Taylor
-    literal_type: xsd:date
-    literal_value: 1963-08-08
+    source: Penelope_Anne_Vere_Thompson
+    literal_type: xsd:integer
+    literal_value: 1966
     relation: :hasBirthYear
-  AddTriple (a3d15c27-d4b0-4f78-9b80-1457f2572016)
- Call ID: a3d15c27-d4b0-4f78-9b80-1457f2572016
+  AssignClass (910a9def-2009-41c0-8c31-6bab9de34949)
+ Call ID: 910a9def-2009-41c0-8c31-6bab9de34949
   Args:
-    relation: :hasRelation
-    target: Timothy_Verner_Taylor
-    source: Lady_Helen_Marina_Lucy_Taylor
-  Finish (a0cf609b-ee28-4f35-9866-557d5827426f)
- Call ID: a0cf609b-ee28-4f35-9866-557d5827426f
+    source: Colin_Graham_Thompson
+    type: :Man
+  AssignClass (7aa43cf6-c996-40f1-9538-5bc37f13cc41)
+ Call ID: 7aa43cf6-c996-40f1-9538-5bc37f13cc41
   Args:
+    source: Colin_Graham_Thompson
+    type: :Person
+  AddTriple (65f0117a-ce60-4f59-9e4f-a7ebe3a9f043)
+ Call ID: 65f0117a-ce60-4f59-9e4f-a7ebe3a9f043
+  Args:
+    relation: :hasFather
+    source: Penelope_Anne_Vere_Thompson
+    target: Colin_Graham_Thompson
+  AssignClass (71b92188-0ee1-4bdb-b777-fd3eac0e73f4)
+ Call ID: 71b92188-0ee1-4bdb-b777-fd3eac0e73f4
+  Args:
+    type: :Woman
+    source: Rosemary_Vere_Edwardes
+  AssignClass (f9036cdb-0c83-45e6-a9fb-2c7400c22b6e)
+ Call ID: f9036cdb-0c83-45e6-a9fb-2c7400c22b6e
+  Args:
+    type: :Person
+    source: Rosemary_Vere_Edwardes
+  AddTriple (ac76899f-62e1-4ab8-b946-ced6858fa99e)
+ Call ID: ac76899f-62e1-4ab8-b946-ced6858fa99e
+  Args:
+    target: Rosemary_Vere_Edwardes
+    source: Penelope_Anne_Vere_Thompson
+    relation: :hasMother
+  AssignClass (3c1fc25b-4996-48a3-94b8-8d844d4a5cb4)
+ Call ID: 3c1fc25b-4996-48a3-94b8-8d844d4a5cb4
+  Args:
+    type: :Man
+    source: James_Coyle
+  AssignClass (7c811a92-7ff4-4dbf-aea2-f9809dfe4122)
+ Call ID: 7c811a92-7ff4-4dbf-aea2-f9809dfe4122
+  Args:
+    type: :Person
+    source: James_Coyle
+  AssignClass (69340649-e232-4f3e-9b69-cac01fa80931)
+ Call ID: 69340649-e232-4f3e-9b69-cac01fa80931
+  Args:
+    type: :Woman
+    source: Lady_Louise_Windsor
+  AssignClass (e80a036c-407a-4af5-a7d5-67db5934a93e)
+ Call ID: e80a036c-407a-4af5-a7d5-67db5934a93e
+  Args:
+    source: Lady_Louise_Windsor
+    type: :Person
+  AddLiteral (c412cb16-8897-4bb1-b0fd-de674dd8e81e)
+ Call ID: c412cb16-8897-4bb1-b0fd-de674dd8e81e
+  Args:
+    literal_value: 2003
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Lady_Louise_Windsor
+  AssignClass (5b414194-2fda-4903-9b32-6df9f7885e06)
+ Call ID: 5b414194-2fda-4903-9b32-6df9f7885e06
+  Args:
+    source: Prince_Edward
+    type: :Man
+  AssignClass (da6d8f5f-f14c-4135-a3a9-d7afff5e7a64)
+ Call ID: da6d8f5f-f14c-4135-a3a9-d7afff5e7a64
+  Args:
+    type: :Person
+    source: Prince_Edward
+  AssignClass (175ba062-bc5c-49b7-a2e0-86347c2182fa)
+ Call ID: 175ba062-bc5c-49b7-a2e0-86347c2182fa
+  Args:
+    source: Sophie
+    type: :Woman
+  AssignClass (19eb3d8b-5d3e-4451-86de-2bf0d3c20a50)
+ Call ID: 19eb3d8b-5d3e-4451-86de-2bf0d3c20a50
+  Args:
+    source: Sophie
+    type: :Person
+  AddTriple (3ae3a319-d3f2-4016-ab29-d01f07424961)
+ Call ID: 3ae3a319-d3f2-4016-ab29-d01f07424961
+  Args:
+    target: Prince_Edward
+    source: Lady_Louise_Windsor
+    relation: :hasFather
+  AddTriple (6411190e-0b43-4616-8c2a-c12769a29061)
+ Call ID: 6411190e-0b43-4616-8c2a-c12769a29061
+  Args:
+    relation: :hasMother
+    target: Sophie
+    source: Lady_Louise_Windsor
+  Finish (d4c242c0-96f8-4b27-be3c-6a1d638d1cc4)
+ Call ID: d4c242c0-96f8-4b27-be3c-6a1d638d1cc4
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -520,26 +794,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lady_Helen_Marina_Lucy_Taylor a :Person,
-          :Woman ;
-      :hasAncestor data:King_George_V ;
-      :hasBirthYear "1964-04-28"^^xsd:date ;
-      :hasFather data:Prince_Edward_Duke_of_Kent ;
-      :hasMother data:Katharine_Duchess_of_Kent ;
-      :hasRelation data:Timothy_Verner_Taylor .
+  data:Ivar_Mountbatten a :Man,
+          :Person ;
+      :hasBirthYear 1963 ;
+      :hasBrother data:George_Mountbatten ;
+      :hasFather data:David_Mountbatten ;
+      :hasMother data:Janet_Mercedes_Bryce .
 
-  data:Katharine_Duchess_of_Kent a :Person,
+  data:James_Coyle a :Man,
+          :Person .
+
+  data:Lady_Louise_Windsor a :Person,
+          :Woman ;
+      :hasBirthYear 2003 ;
+      :hasFather data:Prince_Edward ;
+      :hasMother data:Sophie .
+
+  data:Penelope_Anne_Vere_Thompson a :Person,
+          :Woman ;
+      :hasBirthYear 1966 ;
+      :hasFather data:Colin_Graham_Thompson ;
+      :hasMother data:Rosemary_Vere_Edwardes .
+
+  data:Colin_Graham_Thompson a :Man,
+          :Person .
+
+  data:David_Mountbatten a :Man,
+          :Person ;
+      :hasFather data:Prince_George_of_Battenberg .
+
+  data:George_Mountbatten a :Man,
+          :Person .
+
+  data:Janet_Mercedes_Bryce a :Person,
           :Woman .
 
-  data:King_George_V a :Man,
+  data:Prince_Edward a :Man,
           :Person .
 
-  data:Prince_Edward_Duke_of_Kent a :Man,
+  data:Prince_George_of_Battenberg a :Man,
           :Person .
 
-  data:Timothy_Verner_Taylor a :Man,
-          :Person ;
-      :hasBirthYear "1963-08-08"^^xsd:date .
+  data:Rosemary_Vere_Edwardes a :Person,
+          :Woman .
+
+  data:Sophie a :Person,
+          :Woman .
 
 
 
@@ -551,86 +851,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (0ffcec08-ae8d-4eae-b6a1-38439904af6d)
- Call ID: 0ffcec08-ae8d-4eae-b6a1-38439904af6d
+  ValidateShacl (3454471b-9e30-4d9a-b336-7ac6f5e855cd)
+ Call ID: 3454471b-9e30-4d9a-b336-7ac6f5e855cd
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:21
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_George_V is assigned as an ancestor to Lady_Helen_Marina_Lucy_Taylor, but it lacks the required class :Ancestor.
+      The node Prince_George_of_Battenberg, linked via :hasFather to David_Mountbatten, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
+      AssignClass(Prince_George_of_Battenberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent is assigned as the father of Lady_Helen_Marina_Lucy_Taylor, but it lacks the required class :Ancestor.
+      The node David_Mountbatten, linked via :hasFather to Ivar_Mountbatten, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(David_Mountbatten, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent is assigned as the mother of Lady_Helen_Marina_Lucy_Taylor, but it lacks the required class :Ancestor.
+      The node Janet_Mercedes_Bryce, linked via :hasMother to Ivar_Mountbatten, is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(Janet_Mercedes_Bryce, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_George_V is again flagged as missing the :Ancestor class in the context of the hasAncestor relationship.
+      The node David_Mountbatten, linked via :hasFather to Ivar_Mountbatten, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
+      AssignClass(David_Mountbatten, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent is again flagged as missing the :Ancestor class in the context of the hasFather relationship.
+      The node Prince_George_of_Battenberg, linked via :hasFather to David_Mountbatten, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(Prince_George_of_Battenberg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent is again flagged as missing the :Ancestor class in the context of the hasMother relationship.
+      The node Prince_Edward, linked via :hasFather to Lady_Louise_Windsor, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(Prince_Edward, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_George_V is redundantly flagged as missing the :Ancestor class.
+      The node Colin_Graham_Thompson, linked via :hasFather to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
+      AssignClass(Colin_Graham_Thompson, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent is redundantly flagged as missing the :Ancestor class.
+      The node Janet_Mercedes_Bryce, linked via :hasMother to Ivar_Mountbatten, is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(Janet_Mercedes_Bryce, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent is redundantly flagged as missing the :Ancestor class.
+      The node Sophie, linked via :hasMother to Lady_Louise_Windsor, is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(Sophie, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosemary_Vere_Edwardes, linked via :hasMother to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosemary_Vere_Edwardes, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node David_Mountbatten, linked via :hasFather to Ivar_Mountbatten, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Mountbatten, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_George_of_Battenberg, linked via :hasFather to David_Mountbatten, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_George_of_Battenberg, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Colin_Graham_Thompson, linked via :hasFather to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Colin_Graham_Thompson, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Edward, linked via :hasFather to Lady_Louise_Windsor, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Edward, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Janet_Mercedes_Bryce, linked via :hasMother to Ivar_Mountbatten, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Janet_Mercedes_Bryce, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosemary_Vere_Edwardes, linked via :hasMother to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosemary_Vere_Edwardes, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Sophie, linked via :hasMother to Lady_Louise_Windsor, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Colin_Graham_Thompson, linked via :hasFather to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Colin_Graham_Thompson, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Edward, linked via :hasFather to Lady_Louise_Windsor, is missing the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Edward, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosemary_Vere_Edwardes, linked via :hasMother to Penelope_Anne_Vere_Thompson, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosemary_Vere_Edwardes, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Sophie, linked via :hasMother to Lady_Louise_Windsor, is missing the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie, :Ancestor)
 
 
 
@@ -639,21 +1035,60 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7c5b0a75-2e32-435d-bdb6-89b66746a7b5)
- Call ID: 7c5b0a75-2e32-435d-bdb6-89b66746a7b5
+  AssignClass (c62b2b41-6396-476b-8bb9-c5e2e59d667a)
+ Call ID: c62b2b41-6396-476b-8bb9-c5e2e59d667a
   Args:
     type: :Ancestor
-    source: King_George_V
-  AssignClass (c7c80ab5-c33c-41c3-8f08-a55f8cc6c78b)
- Call ID: c7c80ab5-c33c-41c3-8f08-a55f8cc6c78b
+    source: Prince_George_of_Battenberg
+  AssignClass (17d40af7-0aef-4f4b-a6dc-eedb81f2e513)
+ Call ID: 17d40af7-0aef-4f4b-a6dc-eedb81f2e513
   Args:
-    source: Prince_Edward_Duke_of_Kent
     type: :Ancestor
-  AssignClass (7fc41062-b606-4e8c-a4e4-9bed1250eb25)
- Call ID: 7fc41062-b606-4e8c-a4e4-9bed1250eb25
+    source: David_Mountbatten
+  AssignClass (93cfc3c2-5c8d-439e-9e20-fa20abb056e3)
+ Call ID: 93cfc3c2-5c8d-439e-9e20-fa20abb056e3
   Args:
-    source: Katharine_Duchess_of_Kent
+    source: Janet_Mercedes_Bryce
     type: :Ancestor
+  AssignClass (16dd5cc6-05aa-45a1-95be-879f77f34ce9)
+ Call ID: 16dd5cc6-05aa-45a1-95be-879f77f34ce9
+  Args:
+    type: :Ancestor
+    source: Prince_Edward
+  AssignClass (3d6184da-f593-4d2b-a880-d97f07a7223f)
+ Call ID: 3d6184da-f593-4d2b-a880-d97f07a7223f
+  Args:
+    type: :Ancestor
+    source: Colin_Graham_Thompson
+  AssignClass (05aed145-1051-42e2-83a3-9f99c87b2e4b)
+ Call ID: 05aed145-1051-42e2-83a3-9f99c87b2e4b
+  Args:
+    type: :Ancestor
+    source: Sophie
+  AssignClass (0226332d-4073-49d2-bd51-931c47aecbd9)
+ Call ID: 0226332d-4073-49d2-bd51-931c47aecbd9
+  Args:
+    source: Rosemary_Vere_Edwardes
+    type: :Ancestor
+  Finish (8564aab0-39d1-4fb8-b2b4-e9eb719a02bc)
+ Call ID: 8564aab0-39d1-4fb8-b2b4-e9eb719a02bc
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -670,38 +1105,72 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lady_Helen_Marina_Lucy_Taylor a :Person,
-          :Woman ;
-      :hasAncestor data:King_George_V ;
-      :hasBirthYear "1964-04-28"^^xsd:date ;
-      :hasFather data:Prince_Edward_Duke_of_Kent ;
-      :hasMother data:Katharine_Duchess_of_Kent ;
-      :hasRelation data:Timothy_Verner_Taylor .
+  data:Ivar_Mountbatten a :Man,
+          :Person ;
+      :hasBirthYear 1963 ;
+      :hasBrother data:George_Mountbatten ;
+      :hasFather data:David_Mountbatten ;
+      :hasMother data:Janet_Mercedes_Bryce .
 
-  data:Katharine_Duchess_of_Kent a :Ancestor,
+  data:James_Coyle a :Man,
+          :Person .
+
+  data:Lady_Louise_Windsor a :Person,
+          :Woman ;
+      :hasBirthYear 2003 ;
+      :hasFather data:Prince_Edward ;
+      :hasMother data:Sophie .
+
+  data:Penelope_Anne_Vere_Thompson a :Person,
+          :Woman ;
+      :hasBirthYear 1966 ;
+      :hasFather data:Colin_Graham_Thompson ;
+      :hasMother data:Rosemary_Vere_Edwardes .
+
+  data:Colin_Graham_Thompson a :Ancestor,
+          :Man,
+          :Person .
+
+  data:David_Mountbatten a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_George_of_Battenberg .
+
+  data:George_Mountbatten a :Man,
+          :Person .
+
+  data:Janet_Mercedes_Bryce a :Ancestor,
           :Person,
           :Woman .
 
-  data:King_George_V a :Ancestor,
+  data:Prince_Edward a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Edward_Duke_of_Kent a :Ancestor,
+  data:Prince_George_of_Battenberg a :Ancestor,
           :Man,
           :Person .
 
-  data:Timothy_Verner_Taylor a :Man,
-          :Person ;
-      :hasBirthYear "1963-08-08"^^xsd:date .
+  data:Rosemary_Vere_Edwardes a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Sophie a :Ancestor,
+          :Person,
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (6acfaf47-2952-4ee9-91c8-30422735b45d)
- Call ID: 6acfaf47-2952-4ee9-91c8-30422735b45d
+  ValidateShacl (18392eed-5af4-4133-bd20-edeb3a5502de)
+ Call ID: 18392eed-5af4-4133-bd20-edeb3a5502de
   Args:
 
 ================================= Tool Message =================================
@@ -712,6 +1181,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9e493e4a-142f-4ee1-abd1-0f4e96c4fcee)
- Call ID: 9e493e4a-142f-4ee1-abd1-0f4e96c4fcee
+  Finish (bd13bd82-8e90-4ee8-a98f-088a26fb647e)
+ Call ID: bd13bd82-8e90-4ee8-a98f-088a26fb647e
   Args:

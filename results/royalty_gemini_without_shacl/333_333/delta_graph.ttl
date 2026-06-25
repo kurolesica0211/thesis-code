@@ -2,56 +2,65 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_X_of_Denmark a :Ancestor,
-        :Man ;
-    :isFatherOf data:Knud_of_Denmark .
-
-data:Frederick_Walter_Pedersen a :Ancestor,
-        :Man ;
-    :isFatherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
-
-data:Georg_Terney a :Ancestor,
-        :Man ;
-    :isFatherOf data:Inge_Terney .
-
-data:Ingolf_of_Rosenborg a :Man,
-        :Person ;
-    :hasBirthYear 1940 ;
-    :hasBrother data:Christian_of_Rosenborg ;
-    :hasFather data:Knud_of_Denmark ;
-    :hasMarriageYear 1968 ;
-    :hasSex data:Male ;
-    :hasSister data:Elisabeth_of_Denmark .
-
-data:Jenny_Kamilla_Hansen a :Ancestor,
+data:Anne-Marie a :Person,
         :Woman ;
-    :isMotherOf data:Inge_Terney .
+    :hasBirthYear 1946 ;
+    :hasChild data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasRelation data:Constantine_II_of_Greece ;
+    :isSisterOf data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
 
-data:Leopold_Rosanes_af_Rosenborg a :Man,
+data:Crown_Prince_Pavlos a :Man,
         :Person ;
-    :isSonOf data:Christian_of_Rosenborg .
+    :hasFather data:Constantine_II_of_Greece .
 
-data:Ruth_Hjorh%C3%B8y a :Ancestor,
-        :Woman ;
-    :isMotherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
-
-data:Elisabeth_of_Denmark a :Person,
-        :Woman .
-
-data:Male a :Sex .
-
-data:Christian_of_Rosenborg a :Man,
+data:Frederik_IX_of_Denmark a :Man,
         :Person .
 
-data:Inge_Terney a :Person,
-        :Woman ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 1996 .
+data:Ingrid_of_Sweden a :Person,
+        :Woman .
 
-data:Knud_of_Denmark a :Ancestor,
-        :Man .
+data:King_Paul_of_Greece a :Man,
+        :Person .
 
-data:Sussie_Hjorh%C3%B8y-Pedersen a :Person,
+data:Prince_Nikolaos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece .
+
+data:Prince_Philippos a :Man,
+        :Person ;
+    :hasFather data:Constantine_II_of_Greece .
+
+data:Princess_Alexia a :Person,
         :Woman ;
-    :hasBirthYear 1950 .
+    :hasFather data:Constantine_II_of_Greece .
+
+data:Princess_Benedikte a :Person,
+        :Woman .
+
+data:Princess_Theodora a :Person,
+        :Woman ;
+    :hasFather data:Constantine_II_of_Greece .
+
+data:Queen_Frederica_of_Greece a :Person,
+        :Woman .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman .
+
+data:Queen_Sofia_of_Spain a :Person,
+        :Woman .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasMother data:Queen_Frederica_of_Greece ;
+    :isSisterOf data:Queen_Sofia_of_Spain .
 

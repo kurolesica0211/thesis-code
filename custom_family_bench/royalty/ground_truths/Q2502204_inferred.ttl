@@ -1,0 +1,162 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1460:1468"^^xsd:string,
+        "1460:1478"^^xsd:string ;
+    data:posIndicesPart "1685:1691"^^xsd:string,
+        "1766:1772"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "219:233"^^xsd:string ;
+    data:posIndicesPart "1188:1192"^^xsd:string,
+        "1305:1309"^^xsd:string,
+        "1519:1523"^^xsd:string,
+        "1545:1549"^^xsd:string,
+        "1983:1987"^^xsd:string,
+        "2065:2069"^^xsd:string,
+        "2140:2144"^^xsd:string,
+        "460:464"^^xsd:string,
+        "548:552"^^xsd:string,
+        "760:764"^^xsd:string,
+        "873:877"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasRelation data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Prince_Jean_dOrléans_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Jean d’Orléans"^^xsd:string ;
+    data:posIndicesFull "1385:1399"^^xsd:string ;
+    data:posIndicesPart "1710:1716"^^xsd:string,
+        "1749:1755"^^xsd:string,
+        "1942:1948"^^xsd:string ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Jean d’Orléans"^^xsd:string,
+        "Prince Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Prince Jean, Duke of Guise"^^xsd:string ;
+    :hasBrother data:Prince_Jean_dOrléans_1 ;
+    :hasRelation data:Prince_Jean_dOrléans_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Jean_dOrléans_1 ;
+    :isBrotherOf data:Prince_Jean_dOrléans_1 ;
+    :isSiblingOf data:Prince_Jean_dOrléans_1 .
+
+data:Marina_Karella a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marina Karella"^^xsd:string ;
+    data:posIndicesFull "371:385"^^xsd:string ;
+    data:posIndicesPart "2190:2196"^^xsd:string ;
+    data:wdtLink wdt:Q2623984 ;
+    :hasChild data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasRelation data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasSex data:female ;
+    :hasSister data:Marina_Karella ;
+    :isAncestorOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isAuntOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Marina_Karella ;
+    :isMotherOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isSiblingOf data:Marina_Karella ;
+    :isSisterOf data:Marina_Karella .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1560:1596"^^xsd:string,
+        "330:366"^^xsd:string ;
+    data:posIndicesPart "1209:1215"^^xsd:string,
+        "1942:1948"^^xsd:string,
+        "497:503"^^xsd:string,
+        "593:599"^^xsd:string,
+        "743:749"^^xsd:string ;
+    data:wdtLink wdt:Q724825 ;
+    :alsoKnownAs "Michel de Grece"^^xsd:string ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasRelation data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Olga-_Duchess_of_Aosta .
+
+data:Princess_Olga-_Duchess_of_Aosta a :Person,
+        :Woman ;
+    rdfs:label "Princess Olga, Duchess of Aosta"^^xsd:string ;
+    data:wdtLink wdt:Q2502204 ;
+    :alsoKnownAs "Olga da Grécia, Duquesa de Apulia"^^xsd:string,
+        "Princess Olga Isabelle of Greece"^^xsd:string,
+        "Princess Olga of Greece, The Duchess of Aosta"^^xsd:string,
+        "Princess Olga of Savoy-Aosta"^^xsd:string ;
+    :hasAncestor data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga-_Duchess_of_Aosta ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isChildOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Olga-_Duchess_of_Aosta ;
+    :isSisterOf data:Princess_Olga-_Duchess_of_Aosta .
+

@@ -7,74 +7,13 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Fergus_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Fergus_Bowes-Lyon a :Person ;
     rdfs:label "Fergus Bowes-Lyon" ;
     data:posIndicesFull "589:606" ;
     data:wdtLink wdt:Q5444165 ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II,
-        data:Timothy_Bowes-Lyon .
+    :hasSex data:male .
 
-data:Dorothy_Osborne a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Dorothy Osborne" ;
-    data:posIndicesFull "420:435" ;
-    data:wdtLink wdt:Q75240055 ;
-    :alsoKnownAs "Dorothy Beatrix Godolphin Bowes-Lyon, Countess of Strathearn and Kinghorne",
-        "Dorothy Bowes-Lyon, Countess of Strathearn and Kinghorne",
-        "Lady Dorothy Beatrix Godolphin Osborne" ;
-    :hasChild data:Timothy_Bowes-Lyon ;
-    :hasSex data:female ;
-    :hasSon data:Timothy_Bowes-Lyon ;
-    :isMotherOf data:Timothy_Bowes-Lyon ;
-    :isParentOf data:Timothy_Bowes-Lyon .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "245:263",
-        "251:263" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:Timothy_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Timothy Bowes-Lyon" ;
-    data:wdtLink wdt:Q3991503 ;
-    :alsoKnownAs "Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne" ;
-    :hasMother data:Dorothy_Osborne ;
-    :hasParent data:Dorothy_Osborne ;
-    :hasSex data:male ;
-    :isChildOf data:Dorothy_Osborne ;
-    :isSonOf data:Dorothy_Osborne .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "164:179",
         "180:196",
@@ -96,13 +35,31 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:Fergus_Bowes-Lyon ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Timothy_Bowes-Lyon ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Fergus_Bowes-Lyon ;
-    :isSisterOf data:Fergus_Bowes-Lyon .
+    :hasSex data:female .
+
+data:Timothy_Bowes-Lyon a :Person ;
+    rdfs:label "Timothy Bowes-Lyon" ;
+    data:wdtLink wdt:Q3991503 ;
+    :alsoKnownAs "Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne" ;
+    :hasParent data:Dorothy_Osborne ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Dorothy_Osborne a :Person ;
+    rdfs:label "Dorothy Osborne" ;
+    data:posIndicesFull "420:435" ;
+    data:wdtLink wdt:Q75240055 ;
+    :alsoKnownAs "Dorothy Beatrix Godolphin Bowes-Lyon, Countess of Strathearn and Kinghorne",
+        "Dorothy Bowes-Lyon, Countess of Strathearn and Kinghorne",
+        "Lady Dorothy Beatrix Godolphin Osborne" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

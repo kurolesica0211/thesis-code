@@ -69,37 +69,70 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke John Albert of Mecklenburg (German: Herzog Johann Albrecht zu Mecklenburg; given names John Albert Ernest Constantine Frederick Henry; 8 December 1857 – 16 February 1920) was a member of the House of Mecklenburg-Schwerin who served as the regent of two states of the German Empire.
-He was first regent of the Grand Duchy of Mecklenburg-Schwerin from 1897 to 1901 for his nephew Frederick Francis IV, Grand Duke of Mecklenburg, and thereafter regent of the Duchy of Brunswick from 1907 to 1913.
-Birth and interests
+Margaret of Prussia (German: Margarethe Beatrice Feodora; 22 April 1872 – 22 January 1954) was the youngest child of Frederick III, German Emperor, and Victoria, Princess Royal.
+She was also the younger sister of Emperor Wilhelm II and the granddaughter of Queen Victoria.
+She married Prince Frederick Charles of Hesse, the elected King of Finland, making her the would-be Queen of Finland had he not decided to renounce the throne on 14 December 1918.
+In 1926, they assumed the titles of Landgrave and Landgravine of Hesse.
+Early life
 
-Duke John Albert of Mecklenburg was born in Schwerin the fifth child of Frederick Francis II, Grand Duke of Mecklenburg and his first wife Princess Augusta Reuss of Köstritz (1822–1862).
-Duke John Albert was educated in Dresden, pursued a career in the Prussian Army and was well known for his love of sports.
-Regencies
+Princess Margaret of Prussia was the youngest of eight children born to Frederick III, then Crown Prince of the German Empire, and Victoria, Princess Royal, Britain's Queen Victoria's eldest daughter.
+Born on 22 April 1872 in the Hohenzollerns' New Palace in Potsdam, by the time the infant was christened, her head was covered with short hair like moss, from which she acquired her nickname "Mossy".
+Crown Princess Margherita of Italy was her godmother and Emperor Pedro II of Brazil was her godfather.
+Princess Margaret grew up amid great privilege and formality.
+Together with her sisters, Princess Viktoria and Princess Sophie, Margaret was deeply attached to her parents, forming an antagonist group to that of her eldest siblings, William II, Princess Charlotte and Prince Henry.
+Margaret was widely regarded as the most popular of Kaiser Wilhelm II's sisters, and she maintained good relations with a wide array of family members.
+She was the first cousin of both King George V of the United Kingdom and Empress Alexandra of Russia, all three being grandchildren of Victoria.
+As an adult, she was said to resemble her aunt, Princess Alice.
+Marriage
 
-Following the death of his brother Frederick Francis III, Grand Duke of Mecklenburg on 10 April 1897, Duke John Albert was appointed regent for his young nephew the new Grand Duke, Frederick Francis IV after his older brother Duke Paul Frederick had renounced his claim to the regency.
-On 28 May 1907, Duke John Albert was elected regent of the Duchy of Brunswick following the death of Prince Albert of Prussia by the state's diet, accepting the offer he arrived in Brunswick on 5 June 1907.
-The reason for the regency in Brunswick was that in 1884 when William, Duke of Brunswick died his distant cousin and heir Ernest Augustus, Crown Prince of Hanover was prevented from taking over the duchy because he refused to renounce his claim to the throne of the Kingdom of Hanover which had been annexed by Prussia in 1866.
-Shortly after assuming the regency, Duke John Albert would walk Brunswick in civilian clothes visiting museums, libraries and other institutions in the duchy, asking questions of people to discover their living conditions.
-Duke John Albert also cut down on the expenses of the royal household by cutting the number of servants and retainers to the minimum needed to run the household.
-The regency came to an end on 1 November 1913 when Ernest Augustus, Crown Prince of Hanover's son Ernest Augustus was permitted to ascend to Duchy following his marriage to Princess Victoria Louise of Prussia, the only daughter of the German Emperor, William II, which helped heal the rift between the houses of Hanover and Hohenzollern.
-War years
+Princess Margaret was first attracted to Prince Maximilian of Baden.
+When he did not reciprocate her affection, she moved on to her second choice, Max's close friend, Prince Frederick Charles of Hesse, future head of the Hesse-Kassel dynasty and future elected King of Finland.
+At the time of the wedding, Prince Frederick Charles was not the Head of the House of Hesse-Kassel.
+Prince Frederick Charles, as was his title when he married, was addressed as His Highness, while Princess Margaret warranted Royal Highness.
+This disparity came to an end in 1925 when Frederick Charles became Landgrave of Hesse and Head of the house of Hesse-Kassel.
+They were second cousins, both great-grandchildren of King Friedrich Wilhelm III of Prussia, he through his mother Anna, she through her father Friedrich.
+Initially, her brother Wilhelm opposed the match as he felt that Frederick Charles's position was too "minor" for the Kaiser's sister.
+Later, however, he gave his blessing, since Margaret herself "was so unimportant".
+Princess Margaret had a strong personality; she always seemed more secure and grounded than her husband.
+Margaret's husband was her mother's favorite son-in-law.
+In 1901, Princess Margaret inherited Schloss Friedrichshof at the death of her mother.
+However, Margaret was committed to maintain the house of her mother which entailed a great expense and the family moved to Friedrichshof.
+In 1918, Margaret's husband accepted the offer of the throne of newly independent Finland, but due to German misfortunes in World War I, soon renounced it.
+Family tragedies
 
-During the First World War, Duke John Albert was active with the German Colonial Society in defending Germany's colonial possessions from suggestions that they should be abandoned.
-Duke John Albert died in 1920 in Wiligrad castle near Lübstorf aged 62.
-Marriages
+Margaret's elder sons, Friedrich Wilhelm and Maximilian, were killed in action during World War I. Prince Maximilian, Princess Margaret's second and favorite son, was serving near Aisne when he was seriously wounded by machine gun fire in October 1914.
+Princess Margaret's oldest son, Friedrich Wilhelm, died on 12 September 1916 at Kara Orman in Romania.
+Her two other sons, Philipp and Christoph, embraced Nazism, and Margaret, who was the sister of the last Kaiser Wilhelm II, invited Adolf Hitler to tea and flew the swastika from her home at Schloss Kronberg.
+Philipp married Princess Mafalda, daughter of King Victor Emmanuel III of Italy.
+Margaret's fifth son, Christoph, was a staunch supporter of the German war effort, but after the Battle of Stalingrad, he became frustrated by the limitations placed on his own role in the conflict, and increasingly critical of the German leadership.
+He was married to Princess Sophie of Greece, sister of Philip, Prince of Greece and Denmark who, in 1947, married the heir to the throne of the United Kingdom and, in 1952, became Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II.
+Margaret also lost another one of her daughters-in-law during the war.
+Wolfgang's wife, Princess Marie Alexandra, when she and seven other women war aid workers, were killed in a bomb attack on Frankfurt on 29–30 January 1944.
+Margaret, very much the matriarch, was at the centre of her large and dynamic family.
+Last years
 
-John Albert was married twice: firstly in Weimar on 6 November 1886 to Princess Elisabeth Sybille of Saxe-Weimar-Eisenach (28 February 1854–10 July 1908)
-the daughter of Charles Alexander, Grand Duke of Saxe-Weimar-Eisenach; secondly in Brunswick on 15 December 1909 to Princess Elisabeth of Stolberg-Rossla (1885–1969), who following his death was to marry his half brother Duke Adolf Friedrich in 1924.
-Ojimukoka
+Landgravine Margaret had difficult years after 1945; they were compounded by the theft from Schloss Friedrichshof in November 1945 of the family jewellery, valued at over £2,000,000.
+Princess Margaret's son Wolfgang, fearing for the jewels, had buried them in a sub-cellar of the castle.
+In early 1946, Princess Margaret discovered the theft when the family wanted to use the jewels for the wedding of Princess Sophia who was preparing to remarry.
+Princess Sophia and Landgravine Margaret reported it to the Frankfurt authorities, and the culprits were imprisoned in August 1951.
+The Hesse family received what had been recovered: only 10 percent of what had been stolen.
+Landgravine Margaret, the last surviving child of Emperor Frederick III and last grandchild of emperor Emperor Wilhelm I, died in Kronberg on 22 January 1954, 14 years after her husband and exactly 53 years to the day after her British grandmother Queen Victoria.
+Children
 
-Ojimukoka, a small settlement, postoffice and railway station in Namibia, was renamed Johann - Albrechtshöhe, and then simply Albrechts in his honour.
+Landgravine Margaret and her husband Frederick Charles of Hesse had six sons, including two sets of twins:
+
+
+Archives
+
+Margaret's personal papers (including family correspondence) are preserved in the Archive of the House of Hesse, which is kept in Fasanerie Palace in Eichenzell, Germany.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +148,9 @@ Ojimukoka, a small settlement, postoffice and railway station in Namibia, was re
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +165,23 @@ Ojimukoka, a small settlement, postoffice and railway station in Namibia, was re
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +199,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +304,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +324,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +334,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +374,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,188 +473,622 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8d998c2f-06df-4b75-a998-48ab87ad7456)
- Call ID: 8d998c2f-06df-4b75-a998-48ab87ad7456
+  AssignClass (14b27ff2-838e-4afc-832e-82b6183fee97)
+ Call ID: 14b27ff2-838e-4afc-832e-82b6183fee97
   Args:
-    source: John_Albert_of_Mecklenburg
-    type: :Man
-  AssignClass (60a851ff-c6df-46c0-af3c-78d50e00d467)
- Call ID: 60a851ff-c6df-46c0-af3c-78d50e00d467
+    type: :Woman
+    source: :MargaretOfPrussia
+  AssignClass (7dfe3821-3a77-4522-86e1-25eb748d3a19)
+ Call ID: 7dfe3821-3a77-4522-86e1-25eb748d3a19
   Args:
-    source: John_Albert_of_Mecklenburg
     type: :Person
-  AddLiteral (373f49a5-4bc4-4b5e-8b41-cf7a840b47d2)
- Call ID: 373f49a5-4bc4-4b5e-8b41-cf7a840b47d2
+    source: :MargaretOfPrussia
+  AddLiteral (74b20d47-9846-4655-a126-9d88cfec1d35)
+ Call ID: 74b20d47-9846-4655-a126-9d88cfec1d35
   Args:
-    literal_type: xsd:integer
-    literal_value: 1857
+    literal_type: xsd:string
+    source: :MargaretOfPrussia
+    relation: :alsoKnownAs
+    literal_value: Margarethe Beatrice Feodora
+  AddLiteral (5af7f234-45b6-4223-b033-6afcebd943a3)
+ Call ID: 5af7f234-45b6-4223-b033-6afcebd943a3
+  Args:
+    literal_value: Mossy
+    source: :MargaretOfPrussia
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+  AddLiteral (860351f7-6207-4281-8e61-566bf36021f9)
+ Call ID: 860351f7-6207-4281-8e61-566bf36021f9
+  Args:
+    literal_value: 1872
+    source: :MargaretOfPrussia
     relation: :hasBirthYear
-    source: John_Albert_of_Mecklenburg
-  AddLiteral (0fec13ab-5811-42b5-89ee-ac5e0ceeec4b)
- Call ID: 0fec13ab-5811-42b5-89ee-ac5e0ceeec4b
+    literal_type: xsd:integer
+  AddLiteral (a4c86d51-5df4-4757-b484-dc4139bf8b29)
+ Call ID: a4c86d51-5df4-4757-b484-dc4139bf8b29
   Args:
     literal_type: xsd:integer
-    literal_value: 1920
+    source: :MargaretOfPrussia
     relation: :hasDeathYear
-    source: John_Albert_of_Mecklenburg
-  AssignClass (5e7403b3-56be-47a6-b5cd-6536abc22445)
- Call ID: 5e7403b3-56be-47a6-b5cd-6536abc22445
+    literal_value: 1954
+  AssignClass (d513a2e4-66c3-4251-af0a-018e1d26a1e2)
+ Call ID: d513a2e4-66c3-4251-af0a-018e1d26a1e2
   Args:
-    source: Frederick_Francis_II_of_Mecklenburg
     type: :Man
-  AssignClass (5e541e39-09e7-4c02-916e-84726060b896)
- Call ID: 5e541e39-09e7-4c02-916e-84726060b896
+    source: :FrederickIII
+  AssignClass (8b0fb9f1-8bc3-4afb-a61c-24559e2e694c)
+ Call ID: 8b0fb9f1-8bc3-4afb-a61c-24559e2e694c
   Args:
     type: :Person
-    source: Frederick_Francis_II_of_Mecklenburg
-  AssignClass (8714e2c9-c72c-4e63-a01c-469b7aa81c99)
- Call ID: 8714e2c9-c72c-4e63-a01c-469b7aa81c99
+    source: :FrederickIII
+  AssignClass (0c767cf7-6494-4f9d-a98a-d10935f84d93)
+ Call ID: 0c767cf7-6494-4f9d-a98a-d10935f84d93
   Args:
     type: :Woman
-    source: Augusta_Reuss_of_Köstritz
-  AssignClass (a6440a72-7d3e-4edc-92e5-7fa5be8a2d09)
- Call ID: a6440a72-7d3e-4edc-92e5-7fa5be8a2d09
+    source: :VictoriaPrincessRoyal
+  AssignClass (c66c404f-703d-4ef7-ad94-56ec8c6a8ebb)
+ Call ID: c66c404f-703d-4ef7-ad94-56ec8c6a8ebb
   Args:
-    source: Augusta_Reuss_of_Köstritz
     type: :Person
-  AddTriple (fb5f4acf-2e4e-4344-8c49-9aab361ca0fe)
- Call ID: fb5f4acf-2e4e-4344-8c49-9aab361ca0fe
+    source: :VictoriaPrincessRoyal
+  AddTriple (4cfb1d83-8297-4f6e-8e39-1ab12ecee40f)
+ Call ID: 4cfb1d83-8297-4f6e-8e39-1ab12ecee40f
   Args:
-    target: Frederick_Francis_II_of_Mecklenburg
-    source: John_Albert_of_Mecklenburg
+    source: :MargaretOfPrussia
     relation: :hasFather
-  AddTriple (fb869baa-406e-4ea1-9ffa-eb3ecb7934fe)
- Call ID: fb869baa-406e-4ea1-9ffa-eb3ecb7934fe
+    target: :FrederickIII
+  AddTriple (9e9a4a7f-acaa-4e51-b5dc-0cf79e09e301)
+ Call ID: 9e9a4a7f-acaa-4e51-b5dc-0cf79e09e301
   Args:
-    target: Augusta_Reuss_of_Köstritz
+    source: :MargaretOfPrussia
     relation: :hasMother
-    source: John_Albert_of_Mecklenburg
-  AssignClass (949220f6-9199-47be-954b-589cebf90782)
- Call ID: 949220f6-9199-47be-954b-589cebf90782
+    target: :VictoriaPrincessRoyal
+  AssignClass (f13597ff-27f0-42d1-8478-0ed1263c5d8c)
+ Call ID: f13597ff-27f0-42d1-8478-0ed1263c5d8c
   Args:
-    source: Frederick_Francis_III_of_Mecklenburg
+    source: :WilhelmII
     type: :Man
-  AssignClass (7dad7fd1-4be1-4d32-a208-7387bc65d912)
- Call ID: 7dad7fd1-4be1-4d32-a208-7387bc65d912
+  AssignClass (8f999ad8-7238-461e-84f9-30c3a0be5363)
+ Call ID: 8f999ad8-7238-461e-84f9-30c3a0be5363
   Args:
-    source: Frederick_Francis_III_of_Mecklenburg
     type: :Person
-  AddTriple (2f6259b0-2dfe-49cc-bd7e-adf78a7d00dc)
- Call ID: 2f6259b0-2dfe-49cc-bd7e-adf78a7d00dc
+    source: :WilhelmII
+  AddTriple (f4b5859a-2881-49bb-a5e5-557ee6c0bede)
+ Call ID: f4b5859a-2881-49bb-a5e5-557ee6c0bede
   Args:
-    target: Frederick_Francis_III_of_Mecklenburg
-    source: John_Albert_of_Mecklenburg
-    relation: :hasBrother
-  AssignClass (ae551b3e-72e9-404f-a843-276e390812cd)
- Call ID: ae551b3e-72e9-404f-a843-276e390812cd
+    target: :WilhelmII
+    source: :MargaretOfPrussia
+    relation: :isSisterOf
+  AssignClass (075bb6a2-d8e9-44ab-979d-b36cd7a9d80a)
+ Call ID: 075bb6a2-d8e9-44ab-979d-b36cd7a9d80a
   Args:
-    type: :Man
-    source: Frederick_Francis_IV_of_Mecklenburg
-  AssignClass (0349b4ae-d190-45c6-a3b2-86e89dcec3fa)
- Call ID: 0349b4ae-d190-45c6-a3b2-86e89dcec3fa
-  Args:
-    source: Frederick_Francis_IV_of_Mecklenburg
-    type: :Person
-  AddTriple (681a31e9-ba05-4f5a-bd1e-2693e59a257c)
- Call ID: 681a31e9-ba05-4f5a-bd1e-2693e59a257c
-  Args:
-    relation: :isFatherOf
-    source: Frederick_Francis_III_of_Mecklenburg
-    target: Frederick_Francis_IV_of_Mecklenburg
-  AssignClass (b65493bd-cf98-4172-9d0f-7104f089511b)
- Call ID: b65493bd-cf98-4172-9d0f-7104f089511b
-  Args:
-    source: Paul_Frederick_of_Mecklenburg
-    type: :Man
-  AssignClass (7018cfb0-c232-4e8a-b16f-72f768729396)
- Call ID: 7018cfb0-c232-4e8a-b16f-72f768729396
-  Args:
-    source: Paul_Frederick_of_Mecklenburg
-    type: :Person
-  AddTriple (0ad8c664-3bcc-4396-8c4c-af4d822d3114)
- Call ID: 0ad8c664-3bcc-4396-8c4c-af4d822d3114
-  Args:
-    target: Paul_Frederick_of_Mecklenburg
-    source: John_Albert_of_Mecklenburg
-    relation: :hasBrother
-  AssignClass (e8de861f-c1d7-47c9-aad2-61d15fea4f9d)
- Call ID: e8de861f-c1d7-47c9-aad2-61d15fea4f9d
-  Args:
-    source: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
+    source: :QueenVictoria
     type: :Woman
-  AssignClass (3665cd03-97b6-4b5c-bd79-6d13648a52aa)
- Call ID: 3665cd03-97b6-4b5c-bd79-6d13648a52aa
+  AssignClass (1214d610-d94e-47d1-be07-2297180d3250)
+ Call ID: 1214d610-d94e-47d1-be07-2297180d3250
   Args:
-    source: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
     type: :Person
-  AddTriple (74169bee-f66f-4a89-b6db-0400d306a966)
- Call ID: 74169bee-f66f-4a89-b6db-0400d306a966
+    source: :QueenVictoria
+  AddTriple (a585e120-3e10-4eee-b663-98aaa399e96e)
+ Call ID: a585e120-3e10-4eee-b663-98aaa399e96e
+  Args:
+    target: :QueenVictoria
+    relation: :hasAncestor
+    source: :MargaretOfPrussia
+  AssignClass (c6499c2f-3608-4555-8ff5-12182ba1a694)
+ Call ID: c6499c2f-3608-4555-8ff5-12182ba1a694
+  Args:
+    type: :Man
+    source: :FrederickCharlesOfHesse
+  AssignClass (6c4bd3c1-25b3-4814-8d47-f10e64e02e4b)
+ Call ID: 6c4bd3c1-25b3-4814-8d47-f10e64e02e4b
+  Args:
+    source: :FrederickCharlesOfHesse
+    type: :Person
+  AddTriple (8c9a481e-4a88-463e-9272-aa55affd6155)
+ Call ID: 8c9a481e-4a88-463e-9272-aa55affd6155
   Args:
     relation: :hasRelation
-    source: John_Albert_of_Mecklenburg
-    target: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
-  AddLiteral (a57aa23f-e831-47d3-8835-a79d33c96c1d)
- Call ID: a57aa23f-e831-47d3-8835-a79d33c96c1d
+    source: :MargaretOfPrussia
+    target: :FrederickCharlesOfHesse
+  AssignClass (94d97043-f777-4545-9a3b-0cb6df188ec8)
+ Call ID: 94d97043-f777-4545-9a3b-0cb6df188ec8
   Args:
-    relation: :hasMarriageYear
-    source: John_Albert_of_Mecklenburg
-    literal_value: 1886
-    literal_type: xsd:integer
-  AssignClass (b390fc65-4f6d-4629-a21f-e52876f11f34)
- Call ID: b390fc65-4f6d-4629-a21f-e52876f11f34
-  Args:
-    source: Charles_Alexander_of_Saxe-Weimar-Eisenach
+    source: :FriedrichWilhelm
     type: :Man
-  AssignClass (02cd2acb-f51a-49a8-bb0b-d36aab37279c)
- Call ID: 02cd2acb-f51a-49a8-bb0b-d36aab37279c
+  AssignClass (ab328356-1103-4317-a6f2-6fd24690841a)
+ Call ID: ab328356-1103-4317-a6f2-6fd24690841a
   Args:
     type: :Person
-    source: Charles_Alexander_of_Saxe-Weimar-Eisenach
-  AddTriple (a21b7215-491e-4e5b-8c0f-a10d110237e7)
- Call ID: a21b7215-491e-4e5b-8c0f-a10d110237e7
+    source: :FriedrichWilhelm
+  AddTriple (5ffb2648-5811-464c-b348-3e7de603117d)
+ Call ID: 5ffb2648-5811-464c-b348-3e7de603117d
   Args:
-    target: Charles_Alexander_of_Saxe-Weimar-Eisenach
-    source: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
-    relation: :hasFather
-  AssignClass (f13e5c9a-057f-475f-9611-1dde58438254)
- Call ID: f13e5c9a-057f-475f-9611-1dde58438254
+    target: :MargaretOfPrussia
+    source: :FriedrichWilhelm
+    relation: :isSonOf
+  AddTriple (f185c6a4-e83b-4414-9575-d1233f1b961d)
+ Call ID: f185c6a4-e83b-4414-9575-d1233f1b961d
   Args:
-    source: Elisabeth_of_Stolberg-Rossla
+    target: :FrederickCharlesOfHesse
+    source: :FriedrichWilhelm
+    relation: :isSonOf
+  AssignClass (1bf88a55-8729-4c1e-9ee0-ec20dc54c823)
+ Call ID: 1bf88a55-8729-4c1e-9ee0-ec20dc54c823
+  Args:
+    source: :Maximilian
+    type: :Man
+  AssignClass (f2d95eb9-1d38-434d-a30a-a54cff897ca7)
+ Call ID: f2d95eb9-1d38-434d-a30a-a54cff897ca7
+  Args:
+    type: :Person
+    source: :Maximilian
+  AddTriple (063c3fb9-c465-4ac5-8e63-044bf8c587c7)
+ Call ID: 063c3fb9-c465-4ac5-8e63-044bf8c587c7
+  Args:
+    target: :MargaretOfPrussia
+    source: :Maximilian
+    relation: :isSonOf
+  AddTriple (d4c424bf-1485-4b7f-8704-564310efd457)
+ Call ID: d4c424bf-1485-4b7f-8704-564310efd457
+  Args:
+    relation: :isSonOf
+    source: :Maximilian,target:
+    target: :FrederickCharlesOfHesse
+  AssignClass (e7eb85bc-2213-4c56-8f74-1d39c570c94b)
+ Call ID: e7eb85bc-2213-4c56-8f74-1d39c570c94b
+  Args:
+    type: :Man
+    source: :Philipp
+  AssignClass (a441d29f-1718-444b-a45f-d76851826482)
+ Call ID: a441d29f-1718-444b-a45f-d76851826482
+  Args:
+    source: :Philipp
+    type: :Person
+  AddTriple (5aa5671c-7f04-45ed-bcf8-02d69cdd307a)
+ Call ID: 5aa5671c-7f04-45ed-bcf8-02d69cdd307a
+  Args:
+    source: :Philipp
+    relation: :isSonOf
+    target: :MargaretOfPrussia
+  AddTriple (6acf9546-c2f1-4346-8fc5-f5edb0ac4e49)
+ Call ID: 6acf9546-c2f1-4346-8fc5-f5edb0ac4e49
+  Args:
+    source: :Philipp
+    relation: :isSonOf
+    target: :FrederickCharlesOfHesse
+  AssignClass (0a942c90-9827-439c-9bd2-9ae3240d19b1)
+ Call ID: 0a942c90-9827-439c-9bd2-9ae3240d19b1
+  Args:
+    type: :Man
+    source: :Christoph
+  AssignClass (7b6872c8-0939-4522-8433-8279a55e7d48)
+ Call ID: 7b6872c8-0939-4522-8433-8279a55e7d48
+  Args:
+    source: :Christoph
+    type: :Person
+  AddTriple (1ab29600-0a5e-4f7a-8893-74ed130b1108)
+ Call ID: 1ab29600-0a5e-4f7a-8893-74ed130b1108
+  Args:
+    source: :Christoph
+    relation: :isSonOf
+    target: :MargaretOfPrussia
+  AddTriple (edf42991-e60e-49f4-892e-7a5f893fa64f)
+ Call ID: edf42991-e60e-49f4-892e-7a5f893fa64f
+  Args:
+    relation: :isSonOf
+    source: :Christoph
+    target: :FrederickCharlesOfHesse
+  AssignClass (93cfcb50-54b4-45af-bb57-2ad55cd9b000)
+ Call ID: 93cfcb50-54b4-45af-bb57-2ad55cd9b000
+  Args:
+    source: :Wolfgang
+    type: :Man
+  AssignClass (6ad166c5-e373-4ad9-ba88-538752a0525b)
+ Call ID: 6ad166c5-e373-4ad9-ba88-538752a0525b
+  Args:
+    type: :Person
+    source: :Wolfgang
+  AddTriple (1754fc36-58ad-46ea-a6dc-240a2914d91c)
+ Call ID: 1754fc36-58ad-46ea-a6dc-240a2914d91c
+  Args:
+    source: :Wolfgang
+    relation: :isSonOf
+    target: :MargaretOfPrussia
+  AddTriple (1b49cd86-dadd-4646-b8e7-e59d8c7ecf2b)
+ Call ID: 1b49cd86-dadd-4646-b8e7-e59d8c7ecf2b
+  Args:
+    target: :FrederickCharlesOfHesse
+    source: :Wolfgang
+    relation: :isSonOf
+  AssignClass (3e5c6f02-7be5-4f9a-98e3-8bc4a0a95721)
+ Call ID: 3e5c6f02-7be5-4f9a-98e3-8bc4a0a95721
+  Args:
     type: :Woman
-  AssignClass (f9742731-3413-451c-8f57-68e868cd6e68)
- Call ID: f9742731-3413-451c-8f57-68e868cd6e68
+    source: :PrincessViktoria
+  AssignClass (b98a16ca-37af-4acd-aaa6-136f168ad879)
+ Call ID: b98a16ca-37af-4acd-aaa6-136f168ad879
+  Args:
+    source: :PrincessViktoria
+    type: :Person
+  AddTriple (1414882d-9df6-4e53-a3d6-1c6fe460d8b8)
+ Call ID: 1414882d-9df6-4e53-a3d6-1c6fe460d8b8
+  Args:
+    target: :PrincessViktoria
+    source: :MargaretOfPrussia
+    relation: :isSisterOf
+  AssignClass (16e0eaa7-49db-4725-ba55-77a045b95f8c)
+ Call ID: 16e0eaa7-49db-4725-ba55-77a045b95f8c
+  Args:
+    source: :PrincessSophie
+    type: :Woman
+  AssignClass (745ce453-1760-48d5-ac42-f361995e7213)
+ Call ID: 745ce453-1760-48d5-ac42-f361995e7213
   Args:
     type: :Person
-    source: Elisabeth_of_Stolberg-Rossla
-  AddTriple (a6df57b8-3216-4bcc-86ca-447c2bfa5788)
- Call ID: a6df57b8-3216-4bcc-86ca-447c2bfa5788
+    source: :PrincessSophie
+  AddTriple (d6686419-51ba-47e9-bee1-ab8c29326c1e)
+ Call ID: d6686419-51ba-47e9-bee1-ab8c29326c1e
   Args:
-    source: John_Albert_of_Mecklenburg
-    relation: :hasRelation
-    target: Elisabeth_of_Stolberg-Rossla
-  AddLiteral (0dc2fdb4-3924-423c-8548-8725b3470a79)
- Call ID: 0dc2fdb4-3924-423c-8548-8725b3470a79
+    target: :PrincessSophie
+    source: :MargaretOfPrussia
+    relation: :isSisterOf
+  AssignClass (50ed4ba2-7b3b-47bc-b627-dac01c4a9de2)
+ Call ID: 50ed4ba2-7b3b-47bc-b627-dac01c4a9de2
   Args:
-    literal_value: 1909
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: John_Albert_of_Mecklenburg
-  AssignClass (776031fe-22ef-48c6-8141-ada4a95abca6)
- Call ID: 776031fe-22ef-48c6-8141-ada4a95abca6
+    source: :PrincessCharlotte
+    type: :Woman
+  AssignClass (c36036a0-b869-4bc0-878a-3be05a20c29b)
+ Call ID: c36036a0-b869-4bc0-878a-3be05a20c29b
+  Args:
+    source: :PrincessCharlotte
+    type: :Person
+  AddTriple (4034a8ca-89b2-4ead-9e75-11cbcafd7e68)
+ Call ID: 4034a8ca-89b2-4ead-9e75-11cbcafd7e68
+  Args:
+    relation: :isSisterOf
+    source: :PrincessCharlotte
+    target: :MargaretOfPrussia
+  AssignClass (a3b12364-87d4-44a1-bdb8-cdb0cb419e41)
+ Call ID: a3b12364-87d4-44a1-bdb8-cdb0cb419e41
   Args:
     type: :Man
-    source: Adolf_Friedrich_of_Mecklenburg
-  AssignClass (2f2d4e0e-c550-4c4b-8bce-797b4dab0071)
- Call ID: 2f2d4e0e-c550-4c4b-8bce-797b4dab0071
+    source: :PrinceHenry
+  AssignClass (f6119cdd-0269-4e42-b575-14ba95b6d228)
+ Call ID: f6119cdd-0269-4e42-b575-14ba95b6d228
   Args:
-    source: Adolf_Friedrich_of_Mecklenburg
+    source: :PrinceHenry
     type: :Person
-  AddTriple (b05919ad-a154-4563-a31d-193192e58f0a)
- Call ID: b05919ad-a154-4563-a31d-193192e58f0a
+  AddTriple (e38896c1-1688-4561-98a7-af2af7dc78d4)
+ Call ID: e38896c1-1688-4561-98a7-af2af7dc78d4
   Args:
-    relation: :hasBrother
-    source: John_Albert_of_Mecklenburg
-    target: Adolf_Friedrich_of_Mecklenburg
-  Finish (b60580d7-f78d-4373-aa7a-478f75a59f9a)
- Call ID: b60580d7-f78d-4373-aa7a-478f75a59f9a
+    target: :MargaretOfPrussia
+    relation: :isBrotherOf
+    source: :PrinceHenry
+  Finish (dfcc4002-3224-45f2-9a8e-5b9d2c6bcdc8)
+ Call ID: dfcc4002-3224-45f2-9a8e-5b9d2c6bcdc8
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Christoph a :Man,
+          :Person ;
+      :isSonOf data:FrederickCharlesOfHesse,
+          data:MargaretOfPrussia .
+
+  data:FriedrichWilhelm a :Man,
+          :Person ;
+      :isSonOf data:FrederickCharlesOfHesse,
+          data:MargaretOfPrussia .
+
+  data:Maximilian a :Man,
+          :Person ;
+      :isSonOf data:MargaretOfPrussia .
+
+  data:Maximilian%2Ctarget :isSonOf data:FrederickCharlesOfHesse .
+
+  data:Philipp a :Man,
+          :Person ;
+      :isSonOf data:FrederickCharlesOfHesse,
+          data:MargaretOfPrussia .
+
+  data:PrinceHenry a :Man,
+          :Person ;
+      :isBrotherOf data:MargaretOfPrussia .
+
+  data:PrincessCharlotte a :Person,
+          :Woman ;
+      :isSisterOf data:MargaretOfPrussia .
+
+  data:Wolfgang a :Man,
+          :Person ;
+      :isSonOf data:FrederickCharlesOfHesse,
+          data:MargaretOfPrussia .
+
+  data:FrederickIII a :Man,
+          :Person .
+
+  data:PrincessSophie a :Person,
+          :Woman .
+
+  data:PrincessViktoria a :Person,
+          :Woman .
+
+  data:QueenVictoria a :Person,
+          :Woman .
+
+  data:VictoriaPrincessRoyal a :Person,
+          :Woman .
+
+  data:WilhelmII a :Man,
+          :Person .
+
+  data:FrederickCharlesOfHesse a :Man,
+          :Person .
+
+  data:MargaretOfPrussia a :Person,
+          :Woman ;
+      :alsoKnownAs "Margarethe Beatrice Feodora"^^xsd:string,
+          "Mossy"^^xsd:string ;
+      :hasAncestor data:QueenVictoria ;
+      :hasBirthYear 1872 ;
+      :hasDeathYear 1954 ;
+      :hasFather data:FrederickIII ;
+      :hasMother data:VictoriaPrincessRoyal ;
+      :hasRelation data:FrederickCharlesOfHesse ;
+      :isSisterOf data:PrincessSophie,
+          data:PrincessViktoria,
+          data:WilhelmII .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Maximilian%2Ctarget']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (fec4e652-02e8-4f3e-a763-2526914bccb5)
+ Call ID: fec4e652-02e8-4f3e-a763-2526914bccb5
+  Args:
+    relation: :isSonOf
+    target: :FrederickCharlesOfHesse
+    source: Maximilian,target:
+  AddTriple (dd49a2ea-d995-4c94-8667-9a70de9df833)
+ Call ID: dd49a2ea-d995-4c94-8667-9a70de9df833
+  Args:
+    relation: :isSonOf
+    target: :FrederickCharlesOfHesse
+    source: :Maximilian
+  Finish (7422a3db-9834-4783-b1e2-4428eef70aed)
+ Call ID: 7422a3db-9834-4783-b1e2-4428eef70aed
   Args:

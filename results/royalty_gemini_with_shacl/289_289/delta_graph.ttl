@@ -2,52 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Camilla_Parker_Bowles a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Elizabeth_II a :Ancestor,
-        :Woman ;
-    :hasFather data:George_VI ;
-    :hasSex data:Female .
-
-data:George_VI a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Harry_Duke_of_Sussex a :Man,
+data:Aimone_4th_Duke_of_Aosta a :Man,
         :Person ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana_Spencer ;
-    :hasSex data:Male .
+    :isBrotherOf data:Prince_Amedeo_3rd_Duke_of_Aosta .
 
-data:Philip_Duke_of_Edinburgh a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Amadeo_I_of_Spain a :Ancestor,
+        :Man,
+        :Person .
 
-data:William_Prince_of_Wales a :Man,
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
         :Person ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana_Spencer ;
-    :hasSex data:Male .
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:Princess_Helene ;
+    :hasRelation data:Princess_Anne_of_Orleans .
 
-data:Charles_III a :Ancestor,
+data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1948 ;
-    :hasFather data:Philip_Duke_of_Edinburgh ;
-    :hasMarriageYear 1981,
-        2005 ;
-    :hasMother data:Elizabeth_II ;
-    :hasSex data:Male ;
-    :hasSon data:Harry_Duke_of_Sussex,
-        data:William_Prince_of_Wales .
+    :hasFather data:Amadeo_I_of_Spain ;
+    :hasMother data:Princess_Maria_Vittoria .
 
-data:Diana_Spencer a :Ancestor,
+data:Prince_Jean_Duke_of_Guise a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Philippe_of_Orleans a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Anne_of_Orleans a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Prince_Jean_Duke_of_Guise ;
+    :hasMother data:Princess_Isabelle_of_Orleans .
 
-data:Female a :Sex .
+data:Princess_Helene a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Philippe_of_Orleans ;
+    :hasMother data:Princess_Marie_Isabelle_of_Orleans .
 
-data:Male a :Sex .
+data:Princess_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Maria_Vittoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman .
 

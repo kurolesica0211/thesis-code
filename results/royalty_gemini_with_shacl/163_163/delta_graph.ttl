@@ -2,36 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Kira_Kirillovna_of_Russia a :Ancestor,
-        :Person,
+data:Infanta_Margarita a :Person,
         :Woman ;
-    :hasBirthYear "1909"^^xsd:int ;
-    :hasBrother data:Vladimir_of_Russia ;
-    :hasDeathYear "1967"^^xsd:int ;
-    :hasFather data:Kirill_Vladimirovich_of_Russia ;
-    :hasMarriageYear "1938"^^xsd:int ;
-    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :hasRelation data:Louis_Ferdinand_of_Prussia ;
-    :hasSister data:Maria_of_Russia ;
-    :hasSon data:Friedrich_Wilhelm_of_Prussia .
+    :hasBirthYear 1939 ;
+    :hasFather data:Infante_Juan ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Princess_Mercedes ;
+    :hasRelation data:Carlos_Zurita_y_Delgado ;
+    :isAuntOf data:Felipe_VI ;
+    :isSisterOf data:Juan_Carlos_I ;
+    :knownAs "Margarita María de la Victoria Esperanza Jacoba Felicidad Perpetua de Todos los Santos de Borbón y Borbón"^^xsd:string .
 
-data:Friedrich_Wilhelm_of_Prussia a :Man,
+data:Manfredo_de_Borbon a :Man,
         :Person .
 
-data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Infante_Juan a :Ancestor,
         :Man,
         :Person .
 
-data:Louis_Ferdinand_of_Prussia a :Man,
+data:Juan_Carlos_I a :Man,
         :Person .
 
-data:Maria_of_Russia a :Person,
-        :Woman .
-
-data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+data:Princess_Mercedes a :Ancestor,
         :Person,
         :Woman .
-
-data:Vladimir_of_Russia a :Man,
-        :Person .
 

@@ -69,110 +69,47 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Irene of the Netherlands (Irene Emma Elisabeth; born 5 August 1939) is the second child of Queen Juliana of the Netherlands and Prince Bernhard.
-In 1964, she converted to Catholicism and married the then-Prince Carlos Hugo of Bourbon-Parma in a Catholic ceremony in Rome, thus forfeiting her place in the royal succession.
-Childhood and family
+Princess Dolores of Bourbon-Two Sicilies (15 November 1909 – 11 May 1996) was a daughter of Prince Carlos of Bourbon-Two Sicilies and his wife Princess Louise of Orléans.
+Princess Dolores was born into the House of Bourbon-Two Sicilies and was a member of the Polish-Lithuanian noble Czartoryski family through her marriage to Prince Augustyn Józef Czartoryski.
+She was also an aunt of Juan Carlos I of Spain, son of her sister Princess María de las Mercedes of Bourbon-Two Sicilies.
+Early life
 
-The princess was born on 5 August 1939 at Soestdijk Palace.
-She has three sisters, the eldest of whom is the former queen of the Netherlands, Princess Beatrix of the Netherlands; the two younger ones are Princess Margriet and the late Princess Christina.
-Because of the invasion of the Netherlands by Nazi Germany during World War II the Dutch royal family first fled to the United Kingdom.
-Irene was not yet a year old when the family was forced to leave the Netherlands; she was christened in the Chapel-Royal of Buckingham Palace in London, with the wife of King George VI, Queen Elizabeth, being one of her godparents.
-When the family was leaving the Netherlands, the port where they boarded the British warship was attacked by a German air raid; one of the German bombs exploded within 200 yards of the family.
-Irene was placed in a gasproof carrier to protect her from chemical warfare.
-Princess Juliana and her daughters again took flight when the London Blitz began, this time to exile in Ottawa, Canada, where her younger sister, Margriet, was born and where Irene attended Rockcliffe Park Public School.
-As a teenager, she was dubbed by the Dutch press "the glamorous Princess of the Netherlands."
-During the war, the Royal Dutch Brigade (the formation of Free Dutch soldiers that fought alongside the Allies) was named for Princess Irene.
-This was continued after the war as the Regiment Prinses Irene.
-Always an independent person, Irene was thrilled to receive a sports car from her father, one of the gifts he had been presented with.
-Irene's happiness was short-lived; when she opened the hood of the automobile, she noticed that the vehicle only looked like a sports car but had an ordinary car's engine.
-She asked her father for permission to turn the vehicle into a true racing-type auto, which Prince Bernhard refused to allow.
-She was a bridesmaid at the 1962 wedding of Prince Juan Carlos of Spain and Princess Sophia of Greece and Denmark.
-Princess Irene studied at the University of Utrecht, then went to Madrid to learn the Spanish language and became proficient enough to become an official interpreter.
-Marriage controversy
+Born on 15 November 1909 at the Palace of Villamejor, Princess Dolores of Bourbon-Two Sicilies was the second child of Prince Carlos of Bourbon-Two Sicilies and his second wife Princess Louise of Orléans.
+She was christened Maria de los Dolores Victoria Felipa Luisa Mercedes.
+Princess Dolores, nicknamed Dola among his relatives, was closely related to the Spanish royal family.
+Her father, Prince Carlos of Bourbon-Two Sicilies, had renounced his right to the throne of Two Sicilies becoming a Spanish citizen when he married his first wife, Mercedes, Princess of Asturias, the eldest sister of King Alfonso XIII of Spain.
+Dolores’s mother, Princess Louise of Orléans was a first cousin once removed of the Spanish King.
+As a result, Dolores and her sibling grew up in close proximity to the Spanish royal family.
+Her cousins, the children of King Alfonso XIII and Queen Victoria Eugenie were the same age as Dolores and her younger siblings.
+The family lived at the Palace of Villamejor in Madrid, vacations were spent near Seville in the Palace of Villamanrique, property of her maternal grandmother, Isabelle, Countess of Paris.
+Princess Dolores studied with her sisters Mercedes  and Esperanza in a school of Irish nuns in Madrid.
+Dolores was twelve years old when she moved with her family to Seville when her father was appointed Military Captain General of Andalusia.
+The Princess and her sisters continued their studies as boarders at  the school of Irish nuns in Castilleja de la Cueva in Seville.
+Marriage and later life
 
-Conversion to Catholicism
-
-While studying Spanish in Madrid, Irene met then Prince Carlos Hugo of Bourbon-Parma, the eldest son of Carlist claimant to the Spanish throne, Xavier, Duke of Parma and Head of the House of Bourbon-Parma.
-In the summer of 1963, Princess Irene secretly converted from Protestantism to Roman Catholicism.
-The first time the public or the royal family knew about the conversion was when a photograph appeared on the front page of an Amsterdam newspaper showing the Princess kneeling to receive communion at a Mass in the Roman Catholic Church of the Hieronymites (Los Jerónimos) in Madrid.
-Irene's conversion took place a year before her engagement announcement, but the royal family did not officially announce the news until January 1964.
-When news leaked out that she was engaged to Prince Carlos Hugo (born 1930), it provoked a Protestant outcry and a constitutional crisis.
-Although Dutch law did not forbid a Catholic to reign over the Netherlands, Protestant succession was traditional, born out of the 16th-century Eighty Years' War with Spain and the assassination of William of Orange by a supporter of Philip II of Spain who believed William had betrayed both the Spanish monarch and the Catholic Church.
-For the second in line to the throne to not only convert to Roman Catholicism, but to marry the heir to the Carlist claim, caused shock and consternation in the Netherlands.
-When Princess Irene left the Netherlands to join Prince Carlos in Paris after the announcement of their engagement, a threat was telephoned to KLM Royal Dutch Airlines by an anonymous caller saying, "you should investigate the plane".
-Queen Juliana attempted to stop the marriage, first by sending a member of her staff to Madrid to persuade the Princess not to go ahead with a marriage that would be a political disaster for the monarchy in the Netherlands.
-It seemed to work and the Queen went on Dutch radio to tell the citizens that Princess Irene had agreed to cancel her engagement and was returning to the Netherlands.
-When the airplane arrived at Schiphol Airport, the Princess was not on it, and Queen Juliana and her husband, Prince Bernhard were supplied with a Dutch military plane to go to Spain to retrieve their daughter.
-It was suggested that Princess Irene was a pawn of General Francisco Franco who tried to maximize the event to his benefit.
-Prince Bernhard then traveled to Madrid to meet with his daughter and her fiancé, who both accompanied him back to the Netherlands, where an immediate meeting took place with the couple, the Queen, Prime Minister Marijnen, himself a Roman Catholic, and three top cabinet ministers.
-When the meeting ended in the early hours of the morning on Sunday, 9 February 1964, Dutch radio broke its traditional Sabbath day silence to announce that Princess Irene would give up any rights of succession to the throne so she could marry Carlos Hugo.
-The princess further stated that she did not want the government to create a bill which would grant official consent to her marriage.
-In an attempt to gain public favour for her proposed marriage, Princess Irene publicly stated that her marriage was intended to help end religious intolerance.
-Because the constitution prohibits members of the royal family from any involvement in foreign politics, Irene alienated herself from almost every Dutch citizen when a photo appeared in a Dutch paper showing her at a Carlist rally in Spain and she declared that she supported her fiancé's political goals.
-The Dutch government officially announced that it had no responsibility for either the words or actions of Princess Irene in the future on 10 April 1964.
-It was done in response to Irene's declaration of joining Carlos Hugo's political campaign to regain the throne of Spain on 8 April 1964.
-Marriage
-
-Princess Beatrix*
-
-
-Princess Margriet*Pieter van Vollenhoven*
-
-
-No one from the Dutch royal family or any Dutch diplomatic representative attended the marriage of Princess Irene and Prince Carlos Hugo in the Borghese Chapel at the Basilica di Santa Maria Maggiore in Rome, Italy, on 29 April 1964.
-Dutch television provided coverage of the marriage and Irene's family was among those who watched the ceremonies, although fate conspired in the form of a power failure which made them unable to see the last part of the rite.
-The Dutch royal family gathered at the home of Prince Bernhard's mother, Armgard of Sierstorpff-Cramm, for the television coverage.
-Princess Armgard had also converted to Roman Catholicism like her granddaughter, but decided against attending the wedding.
-Irene and her mother spoke on the telephone before she left for the Basilica.
-The Dutch government had also vetoed the possibility of the wedding being held in the Netherlands.
-Because she had failed to obtain the approval of the States-General to marry, Irene lost her right of succession to the Dutch throne.
-She agreed that she would live outside of the Netherlands.
-In 1968, Princess Irene was libeled by the West German "rainbow press".
-One of the publications printed a story that Irene had undergone an abortion with parental consent before she was married.
-Irene's father, Prince Bernhard, took the paper to court to clear his daughter's name.
-After the wedding, Irene was very active in her husband's right-wing political cause, but over time they drifted away from right-wing extremism to left-wing sympathies and became a part of the international jet-set crowd.
-On 9 May 1977 Irene was expelled from Spain on the day after the death in Switzerland of her father-in-law, the Carlist claimant Xavier, Duke of Parma.
-Her husband Carlos Hugo, now the new Duke of Parma, Head of the House and Carlist claimant to the throne and an opponent of King Juan Carlos I, was also barred from the country for the same reason.
-Prince Carlos Hugo was allowed to return in late 1977, but Princess Irene was not permitted back in the country until April 1978.
-The prince, head of the Royal House of Bourbon-Parma, became a naturalized Spanish citizen in 1979.
-Her youngest sister, Princess Christina, later waived her rights to the throne when she married Jorge Guillermo, a United States citizen born in Cuba and a Roman Catholic.
-Since divorce
-
-In 1980, Irene and her children returned to live in the Netherlands, initially moving back into Soestdijk Palace.
-By 1981, she and her children had moved to their own home across the street from the palace, where Irene did traditional household chores like grocery shopping.
-In 1999 Princess Irene purchased a farm near Nieu-Bethesda in South Africa, turning it into a sanctuary.
-In 2001, she helped establish the NatuurCollege in the Netherlands.
-She is also the founder of NatureWise, an organization that brings elementary school children in the Netherlands directly in touch with nature.
-The Princess is an honorary member of the Club of Budapest.
-Children
-
-Carlos Hugo and Princess Irene had four children:
-
-
-Titles, styles, and honours
-
-Titles
-
-Her official style is Her Royal Highness Princess Irene of the Netherlands, Princess of Orange-Nassau, Princess of Lippe-Biesterfeld.
-The Princess has used the following names since her divorce:
-
-
-Ancestry
-
-References
-
-External links
-
-@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Princess Irene of the Netherlands at Wikimedia Commons
-
-
-2 also Princess of Lippe-Biesterfeld
+In Paris, Princess Dolores met a wealthy Polish aristocrat Prince Augustyn Józef Czartoryski, 13th Prince Czartoryski, Duke of Klewan and Zuków, son of Prince Adam Ludwik Czartoryski and his wife Countess Maria Ludwika Krasińska.
+The couple settled in Kraków, Poland where Dolores’s husband took over the running of the Family Museum.
+In September 1939 with the Invasion of Poland bombs fell on Kraków, Prince Augustyn and Princess Dolores, who was pregnant, decided to leave the country and move to Spain.
+After reaching Paris, Princess Dolores and her husband moved permanently to Spain.
+They settled in Seville where Princess Dolores gave birth to a son: Prince Adam Karol Czartoryski (born 2 January 1940).
+In 1943 the couple bought a rural property in Dos Hermanas which they called it Garden of the Princess, the farm was self-sufficient for the subsistence of the family.
+The couple had a second son also born in Seville, Prince Ludwik Piotr Czartoryski (13 March 1945 - 3 May 1946), but the child died at only fourteen months.
+At the end of the war, the properties of the Czartoryski family were nationalized by the Polish government and the family decided not to return to Kraków, for fear of the Soviet occupation.
+Prince Augustyn was in poor health, the troubles and tribulation of the war took a toll on his life and he died on 1 July 1946, aged thirty nine.
+The deaths of  both her youngest son and her husband only two months apart in 1946 deeply affected the Princess, who was left a widow with a six-year-old child.
+Princess Dolores continued living in Seville, Spain.
+Four years into her widowhood, she fell in love with Carlos Chías Osorio (born at Barcelona 26 Feb 1925), an ex seminarist, teacher  and preceptor of her son Adam.
+Carlos Chias Osorio quickly became well liked in Dos Hermanas and in spite of the age disparity the marriage was a happy one.
+After the death of Princess Dolores's mother in April that year, the couple moved to Madrid.
+In the following decades, the princess and her husband lived simply in Madrid.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -188,39 +125,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -235,6 +142,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -252,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -319,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -350,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -362,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -370,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -408,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -423,126 +450,175 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4f5bb150-eb28-4c9f-83bc-27b2df00b1ac)
- Call ID: 4f5bb150-eb28-4c9f-83bc-27b2df00b1ac
-  Args:
-    type: :Person
-    source: :Irene_of_the_Netherlands
-  AssignClass (57d61090-787e-469a-a0f6-638bc6ff0294)
- Call ID: 57d61090-787e-469a-a0f6-638bc6ff0294
+  AssignClass (62fe7a45-3a81-4509-95ba-9ed2b63bdf71)
+ Call ID: 62fe7a45-3a81-4509-95ba-9ed2b63bdf71
   Args:
     type: :Woman
-    source: :Irene_of_the_Netherlands
-  AssignClass (58362718-46a4-43d8-a7c9-b7ed3d0d2b42)
- Call ID: 58362718-46a4-43d8-a7c9-b7ed3d0d2b42
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AddLiteral (805abfed-ceeb-4325-94ba-328b87fdbb7e)
+ Call ID: 805abfed-ceeb-4325-94ba-328b87fdbb7e
   Args:
-    type: :Person
-    source: :Queen_Juliana_of_the_Netherlands
-  AssignClass (30130994-57cd-45aa-a018-603f6d33b34d)
- Call ID: 30130994-57cd-45aa-a018-603f6d33b34d
-  Args:
-    type: :Woman
-    source: :Queen_Juliana_of_the_Netherlands
-  AssignClass (70d101de-bf95-4b9d-9e94-41d7229a0cee)
- Call ID: 70d101de-bf95-4b9d-9e94-41d7229a0cee
-  Args:
-    type: :Person
-    source: :Prince_Bernhard
-  AssignClass (6ba82a66-b047-4457-8e2c-4e402584f3a1)
- Call ID: 6ba82a66-b047-4457-8e2c-4e402584f3a1
-  Args:
-    type: :Man
-    source: :Prince_Bernhard
-  AssignClass (96bcd0c3-32a4-497e-ae7e-8dedc5e15e90)
- Call ID: 96bcd0c3-32a4-497e-ae7e-8dedc5e15e90
-  Args:
-    type: :Person
-    source: :Princess_Beatrix_of_the_Netherlands
-  AssignClass (9d844c85-01f2-4006-8189-457a44abf78c)
- Call ID: 9d844c85-01f2-4006-8189-457a44abf78c
-  Args:
-    type: :Woman
-    source: :Princess_Beatrix_of_the_Netherlands
-  AssignClass (3bb31707-233c-41e6-b94a-07fed96a810c)
- Call ID: 3bb31707-233c-41e6-b94a-07fed96a810c
-  Args:
-    type: :Person
-    source: :Princess_Margriet
-  AssignClass (cfbdebe3-7a34-4adb-9799-78340117f31e)
- Call ID: cfbdebe3-7a34-4adb-9799-78340117f31e
-  Args:
-    type: :Woman
-    source: :Princess_Margriet_of_the_Netherlands
-  AssignClass (754fcdf3-062f-49ff-8d83-c47c79b656ab)
- Call ID: 754fcdf3-062f-49ff-8d83-c47c79b656ab
-  Args:
-    type: :Person
-    source: :Princess_Christina
-  AssignClass (90aa8604-e24f-4287-ae90-04462b87554f)
- Call ID: 90aa8604-e24f-4287-ae90-04462b87554f
-  Args:
-    type: :Woman
-    source: :Princess_Christina
-  AssignClass (a22749b2-0030-4d07-a983-f4dc68359a02)
- Call ID: a22749b2-0030-4d07-a983-f4dc68359a02
-  Args:
-    type: :Person
-    source: :Carlos_Hugo_of_Bourbon-Parma
-  AssignClass (0291a1a1-8857-4301-9387-f37c5a83bacf)
- Call ID: 0291a1a1-8857-4301-9387-f37c5a83bacf
-  Args:
-    type: :Man
-    source: :Carlos_Hugo_of_Bourbon-Parma
-  AddLiteral (20d8b3d5-407c-4b26-8d95-563e87cc12db)
- Call ID: 20d8b3d5-407c-4b26-8d95-563e87cc12db
-  Args:
+    literal_value: 1909
+    source: :PrincessDoloresOfBourbonTwoSicilies
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: :Irene_of_the_Netherlands
-    literal_value: 1939
-  AddTriple (fb6eac3a-af3d-4e53-be07-6d0fee5d5da5)
- Call ID: fb6eac3a-af3d-4e53-be07-6d0fee5d5da5
+  AddLiteral (e5a2f00c-88f7-4681-a722-712bd71f6300)
+ Call ID: e5a2f00c-88f7-4681-a722-712bd71f6300
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1996
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AssignClass (24f77a87-6cf3-400b-8247-6028390834b1)
+ Call ID: 24f77a87-6cf3-400b-8247-6028390834b1
+  Args:
+    type: :Man
+    source: :PrinceCarlosOfBourbonTwoSicilies
+  AssignClass (4076a55e-7ccb-4c9c-a1a3-824ee8c7268e)
+ Call ID: 4076a55e-7ccb-4c9c-a1a3-824ee8c7268e
+  Args:
+    source: :PrincessLouiseOfOrléans
+    type: :Woman
+  AddTriple (54bbcf58-a33b-48ce-ae28-a2f882e14442)
+ Call ID: 54bbcf58-a33b-48ce-ae28-a2f882e14442
+  Args:
+    source: :PrincessDoloresOfBourbonTwoSicilies
+    target: :PrinceCarlosOfBourbonTwoSicilies
+    relation: :hasFather
+  AddTriple (188e28c8-47c6-4f2a-b1fb-d14a9bbf4e99)
+ Call ID: 188e28c8-47c6-4f2a-b1fb-d14a9bbf4e99
   Args:
     relation: :hasMother
-    source: :Irene_of_the_Netherlands
-    target: :Queen_Juliana_of_the_Netherlands
-  AddTriple (b11e5719-5082-497a-9d90-e727a490123a)
- Call ID: b11e5719-5082-497a-9d90-e727a490123a
+    target: :PrincessLouiseOfOrléans
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AssignClass (d8b8950d-bb22-4f15-8de5-067ec79a2ba7)
+ Call ID: d8b8950d-bb22-4f15-8de5-067ec79a2ba7
   Args:
-    relation: :hasFather
-    target: :Prince_Bernhard
-    source: :Irene_of_the_Netherlands
-  AddTriple (f9dbaab5-d129-4db8-9ea5-f3a8b8498bb3)
- Call ID: f9dbaab5-d129-4db8-9ea5-f3a8b8498bb3
-  Args:
-    relation: :hasSister
-    source: :Irene_of_the_Netherlands
-    target: :Princess_Beatrix_of_the_Netherlands
-  AddTriple (225a7c02-f814-4f78-95bf-6b2158f9605f)
- Call ID: 225a7c02-f814-4f78-95bf-6b2158f9605f
-  Args:
-    relation: :hasSister
-    source: :Irene_of_the_Netherlands
-    target: :Princess_Margriet_of_the_Netherlands
-  AddTriple (48fc2e76-c6a0-4cc2-9299-30b82e2af506)
- Call ID: 48fc2e76-c6a0-4cc2-9299-30b82e2af506
-  Args:
-    relation: :hasSister
-    source: :Irene_of_the_Netherlands
-    target: :Princess_Christina
-  AddLiteral (ffabc0c8-1456-45ce-ba6c-3ed35f824f0e)
- Call ID: ffabc0c8-1456-45ce-ba6c-3ed35f824f0e
-  Args:
-    source: :Irene_of_the_Netherlands
-    literal_type: xsd:integer
-    literal_value: 1964
-    relation: :hasMarriageYear
-  AddTriple (e6c13bca-ceb4-4772-ab04-ab5f50f296e0)
- Call ID: e6c13bca-ceb4-4772-ab04-ab5f50f296e0
+    source: :PrinceAugustynJózefCzartoryski
+    type: :Man
+  AddTriple (e21135d8-6dac-48a4-95d0-71889912c558)
+ Call ID: e21135d8-6dac-48a4-95d0-71889912c558
   Args:
     relation: :hasRelation
-    source: :Irene_of_the_Netherlands
-    target: :Carlos_Hugo_of_Bourbon-Parma
-  Finish (c93ca9fa-f717-4aeb-8006-28795d520795)
- Call ID: c93ca9fa-f717-4aeb-8006-28795d520795
+    target: :PrinceAugustynJózefCzartoryski
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AssignClass (74f2b6b1-16f1-4aa0-866f-c48c3c168f19)
+ Call ID: 74f2b6b1-16f1-4aa0-866f-c48c3c168f19
+  Args:
+    type: :Man
+    source: :PrinceAdamLudwikCzartoryski
+  AssignClass (241dacc6-c0b1-4755-ad72-36d409602c70)
+ Call ID: 241dacc6-c0b1-4755-ad72-36d409602c70
+  Args:
+    source: :CountessMariaLudwikaKrasińska
+    type: :Woman
+  AddTriple (cf7438cb-207f-4a5c-8eb0-c9d260f0b34f)
+ Call ID: cf7438cb-207f-4a5c-8eb0-c9d260f0b34f
+  Args:
+    source: :PrinceAugustynJózefCzartoryski
+    relation: :hasFather
+    target: :PrinceAdamLudwikCzartoryski
+  AddTriple (cd7d8b53-fec0-4af1-9715-65f993b778e0)
+ Call ID: cd7d8b53-fec0-4af1-9715-65f993b778e0
+  Args:
+    target: :CountessMariaLudwikaKrasińska
+    relation: :hasMother
+    source: :PrinceAugustynJózefCzartoryski
+  AssignClass (a888934a-dbbb-4a53-9671-3b50c85537cf)
+ Call ID: a888934a-dbbb-4a53-9671-3b50c85537cf
+  Args:
+    type: :Man
+    source: :JuanCarlosIOfSpain
+  AssignClass (3721d487-7405-433f-9afa-987238d95c4b)
+ Call ID: 3721d487-7405-433f-9afa-987238d95c4b
+  Args:
+    type: :Woman
+    source: :PrincessMaríaDeLasMercedesOfBourbonTwoSicilies
+  AddTriple (89aa2c66-e2d4-4e29-91bd-e21dd890fb82)
+ Call ID: 89aa2c66-e2d4-4e29-91bd-e21dd890fb82
+  Args:
+    source: :PrincessDoloresOfBourbonTwoSicilies
+    target: :JuanCarlosIOfSpain
+    relation: :isAuntOf
+  AddTriple (58409167-07c6-4f1d-8ae4-0a2e632ba5f8)
+ Call ID: 58409167-07c6-4f1d-8ae4-0a2e632ba5f8
+  Args:
+    target: :PrincessDoloresOfBourbonTwoSicilies
+    relation: :isSisterOf
+    source: :PrincessMaríaDeLasMercedesOfBourbonTwoSicilies
+  AddTriple (03b55a86-3bd5-44c5-bdc9-b23163575f97)
+ Call ID: 03b55a86-3bd5-44c5-bdc9-b23163575f97
+  Args:
+    target: :PrincessMaríaDeLasMercedesOfBourbonTwoSicilies
+    relation: :hasMother
+    source: :JuanCarlosIOfSpain
+  AssignClass (cc623770-d1fd-47e6-9eb5-45f490997fb9)
+ Call ID: cc623770-d1fd-47e6-9eb5-45f490997fb9
+  Args:
+    type: :Man
+    source: :PrinceAdamKarolCzartoryski
+  AddTriple (519cfc34-bc68-474b-8795-3bbfd5cc6260)
+ Call ID: 519cfc34-bc68-474b-8795-3bbfd5cc6260
+  Args:
+    relation: :hasSon
+    target: :PrinceAdamKarolCzartoryski
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AddTriple (06405c8d-6e0c-4b70-9a57-63e6f1c31714)
+ Call ID: 06405c8d-6e0c-4b70-9a57-63e6f1c31714
+  Args:
+    target: :PrinceAugustynJózefCzartoryski
+    relation: :hasFather
+    source: :PrinceAdamKarolCzartoryski
+  AssignClass (b04a1e40-633b-4dc5-ac27-881c52eb1e21)
+ Call ID: b04a1e40-633b-4dc5-ac27-881c52eb1e21
+  Args:
+    type: :Man
+    source: :PrinceLudwikPiotrCzartoryski
+  AddTriple (a1c11df6-8d8c-47f2-b229-4312e3d76a0a)
+ Call ID: a1c11df6-8d8c-47f2-b229-4312e3d76a0a
+  Args:
+    target: :PrinceLudwikPiotrCzartoryski
+    relation: :hasSon
+    source: :PrincessDoloresOfBourbonTwoSicilies
+  AddTriple (2709be61-9dc3-4d21-9b49-0d8a4064fedc)
+ Call ID: 2709be61-9dc3-4d21-9b49-0d8a4064fedc
+  Args:
+    source: :PrinceLudwikPiotrCzartoryski
+    relation: :hasFather
+    target: :PrinceAugustynJózefCzartoryski
+  AssignClass (792930aa-64e9-48ad-bfea-5ab515c6a024)
+ Call ID: 792930aa-64e9-48ad-bfea-5ab515c6a024
+  Args:
+    type: :Woman
+    source: :PrincessEsperanzaOfBourbonTwoSicilies
+  AddTriple (6fb62957-e383-4c94-901c-bdf41e82e2d5)
+ Call ID: 6fb62957-e383-4c94-901c-bdf41e82e2d5
+  Args:
+    relation: :isSisterOf
+    target: :PrincessDoloresOfBourbonTwoSicilies
+    source: :PrincessEsperanzaOfBourbonTwoSicilies
+  AssignClass (71e77497-8588-4838-ba6c-c6f74f7f8a78)
+ Call ID: 71e77497-8588-4838-ba6c-c6f74f7f8a78
+  Args:
+    source: :CarlosChíasOsorio
+    type: :Man
+  AddTriple (4a979c34-6640-44ea-a407-17bd521bc506)
+ Call ID: 4a979c34-6640-44ea-a407-17bd521bc506
+  Args:
+    source: :PrincessDoloresOfBourbonTwoSicilies
+    target: :CarlosChíasOsorio
+    relation: :hasRelation
+  AssignClass (32af833e-e356-41c8-8c15-02f70b73c1a3)
+ Call ID: 32af833e-e356-41c8-8c15-02f70b73c1a3
+  Args:
+    type: :Woman
+    source: :IsabelleCountessOfParis
+  AddTriple (eef55ccb-2656-448f-a94d-cad6123936ed)
+ Call ID: eef55ccb-2656-448f-a94d-cad6123936ed
+  Args:
+    relation: :hasMother
+    target: :IsabelleCountessOfParis
+    source: :PrincessLouiseOfOrléans
+  Finish (c0d1b23d-ac5a-4ecf-9302-03c7725b003e)
+ Call ID: c0d1b23d-ac5a-4ecf-9302-03c7725b003e
   Args:

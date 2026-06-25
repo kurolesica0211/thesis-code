@@ -1,0 +1,287 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aimone_4th_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Aimone_4th_Duke_of_Aosta ;
+    :hasChild data:Amedeo_5th_Duke_of_Aosta ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSon data:Amedeo_5th_Duke_of_Aosta ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Aimone_4th_Duke_of_Aosta ;
+    :isBrotherOf data:Aimone_4th_Duke_of_Aosta ;
+    :isFatherOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isParentOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isSiblingOf data:Aimone_4th_Duke_of_Aosta ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isFatherOf data:Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isUncleOf data:Irene_of_Greece_and_Denmark .
+
+data:Sophie_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Sophie_of_Prussia ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Sophie_of_Prussia ;
+    :isMotherOf data:Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Sophie_of_Prussia ;
+    :isSisterOf data:Sophie_of_Prussia .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:George_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Amedeo_5th_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasAncestor data:Aimone_4th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Sophie_of_Prussia ;
+    :hasBrother data:Amedeo_5th_Duke_of_Aosta ;
+    :hasFather data:Aimone_4th_Duke_of_Aosta ;
+    :hasMother data:Irene_of_Greece_and_Denmark ;
+    :hasParent data:Aimone_4th_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :isBloodrelationOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBrotherOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isChildOf data:Aimone_4th_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isSonOf data:Aimone_4th_Duke_of_Aosta,
+        data:Irene_of_Greece_and_Denmark .
+
+data:Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasBirthYear 1904 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Amedeo_5th_Duke_of_Aosta ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Sophie_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta,
+        data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Constantine_I_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece,
+        data:Sophie_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark ;
+    :hasSon data:Amedeo_5th_Duke_of_Aosta ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isAuntOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophie_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophie_of_Prussia ;
+    :isMotherOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isParentOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Paul_of_Greece .
+

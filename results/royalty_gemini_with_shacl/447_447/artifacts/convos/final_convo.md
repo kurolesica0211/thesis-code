@@ -85,46 +85,29 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-John Ulick Knatchbull, 7th Baron Brabourne, CBE (9 November 1924 – 23 September 2005), professionally known as John Brabourne, was a British peer, television producer and Oscar-nominated film producer.
-Married to the elder daughter of 1st Earl Mountbatten, Brabourne was a survivor of the bombing which killed his father-in-law, mother and son.
-Biography
+Lady Charlotte Anne Santo Domingo (née Wellesley; 8 October 1990) is an English aristocrat and socialite and photography producer.
+Early life and family
 
-Brabourne was born in 1924, the second son of Michael Knatchbull, 5th Baron Brabourne, and his wife, Lady Doreen Browne.
-Marriage
+Lady Charlotte Wellesley was born at St Mary's Hospital, London on 8 October 1990 to Princess Antonia of Prussia and Charles Wellesley, Marquess of Douro.
+After the death of her paternal grandfather, Valerian Wellesley, 8th Duke of Wellington, in 2014, her father succeeded him as the 9th Duke of Wellington, the 9th Prince of Waterloo, the 9th Duke of Victoria, and the 10th Duke of Ciudad Rodrigo.
+Her mother, Princess Antonia, is the youngest child of Prince Frederick of Prussia and Lady Brigid Guinness.
+Through her mother, Lady Charlotte is a great-great-granddaughter of Wilhelm II, German Emperor and a great-great-great-great-granddaughter of Queen Victoria.
+Lady Charlotte grew up at Stratfield Saye House, her family's estate in Hampshire.
+She is the younger sister of Arthur Wellesley, Earl of Mornington and Lady Mary Wellesley.
+Education and career
 
-At the end of the war, Brabourne returned to England and settled in the family seat, Mersham in Kent.
-On 26 October 1946, at Romsey Abbey in Hampshire, at the age of 21, he married Patricia Mountbatten, elder daughter of Louis Mountbatten, 1st Viscount Mountbatten, later 1st
-Earl Mountbatten of Burma.
-Brabourne's best man at the wedding was Squadron Leader Charles Harris-St. John.
-Lady Brabourne was to inherit her father's peerages in due course.
-This would make Lord and Lady Brabourne among the few married couples to each hold peerages in their own right.
-Also, Lady Brabourne was related to the British royal family, and her aunt Louise Mountbatten was at that time the Crown Princess (later Queen) of Sweden.
-In February 1947, only months after the wedding, Brabourne's father-in-law was appointed Viceroy of India.
-The newly-wed couple spent several months in India, residing with her parents in the viceregal palace.
-In November the same year, Lady Brabourne's first cousin Philip, Duke of Edinburgh, wed Princess Elizabeth, future queen of the United Kingdom.
-Lord and Lady Brabourne had eight children, including Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), Lady Amanda Patricia Victoria Knatchbull (born 26 June 1957), and Nicholas Timothy Charles Knatchbull.
-Career and service
+Lady Charlotte attended Wycombe Abbey, an all-girls boarding school in Buckinghamshire.
+Personal life
 
-In the late 1940s, shortly after leaving the army, Brabourne began working as an assistant production manager for certain television productions, mostly based on war-related themes.
-John Brabourne received two Academy Award nominations for Best Picture, as producer of Romeo and Juliet (1968) and A Passage to India (1984).
-In 1985, Brabourne was invested as a Fellow of the British Film Institute, an organisation he also served as a Governor.
-He was the subject of This Is Your Life in 1990 when he was surprised by Michael Aspel at the Old Brewery venue in London.
-Brabourne served as a governor of various schools, including Norton Knatchbull School (founded by an ancestor c. 1630 AD) from 1947 to 2000; Wye College in Kent from 1955 to 2000, and Gordonstoun School from 1964 to 1994.
-IRA bombing
-
-On 27 August 1979, while the family was on holiday in Mullaghmore, County Sligo, Lord Brabourne's father-in-law, Earl Mountbatten of Burma, took a number of family members out lobstering on his motorboat, Shadow V, in Donegal Bay.
-Having planned to murder Mountbatten, the Irish Republican Army (IRA) placed a bomb inside the boat on the night of the 26th.
-Mountbatten and several members of the party were killed the next morning when the bomb was triggered by an IRA observer onshore who was armed with a radio detonator.
-The dead included Brabourne's 83-year-old mother, the Dowager Baroness Brabourne; one of his twin 14-year-old sons, Nicholas Knatchbull; and 15-year-old Paul Maxwell from County Fermanagh who had been hired for the summer as Mountbatten's boat boy.
-Brabourne, his wife Patricia, and their other twin son Timothy were severely injured, but survived the attack.
-Lord Brabourne died on 23 September 2005 at his home in Kent, aged 80.
-His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
+Lady Charlotte married Colombian-American financier Alejandro Santo Domingo in Íllora, Spain, on 28 May 2016.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +123,9 @@ His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +140,23 @@ His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,295 +448,168 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1487989d-163e-4b68-ac67-331ec74d8e9a)
- Call ID: 1487989d-163e-4b68-ac67-331ec74d8e9a
+  AssignClass (fab80053-5610-49bd-9b4e-d5dc57672e5e)
+ Call ID: fab80053-5610-49bd-9b4e-d5dc57672e5e
   Args:
-    type: :Man
-    source: :JohnUlickKnatchbull
-  AssignClass (70e21022-c449-4309-9d3e-8b72100715cc)
- Call ID: 70e21022-c449-4309-9d3e-8b72100715cc
+    source: Charlotte_Wellesley
+    type: :Woman
+  AssignClass (f3d14b79-19b7-461c-901c-22d97985843a)
+ Call ID: f3d14b79-19b7-461c-901c-22d97985843a
   Args:
+    source: Charlotte_Wellesley
     type: :Person
-    source: :JohnUlickKnatchbull
-  AssignClass (98ee5381-40df-4ddc-9ac6-2108fa5b9d09)
- Call ID: 98ee5381-40df-4ddc-9ac6-2108fa5b9d09
+  AddLiteral (7429e2b8-735e-4a48-91ee-eb6d4e8f82e3)
+ Call ID: 7429e2b8-735e-4a48-91ee-eb6d4e8f82e3
   Args:
-    source: :Male
-    type: :Sex
-  AddLiteral (2fb1d3ce-c51c-4e8c-aaf0-db865747a696)
- Call ID: 2fb1d3ce-c51c-4e8c-aaf0-db865747a696
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :JohnUlickKnatchbull
-  AddLiteral (b7aa351e-e3a8-4425-80d9-acfdbbf3505a)
- Call ID: b7aa351e-e3a8-4425-80d9-acfdbbf3505a
-  Args:
-    literal_value: 1924
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :JohnUlickKnatchbull
-  AddLiteral (3eb19bf9-13ff-4f1a-ac3e-8e50481c2017)
- Call ID: 3eb19bf9-13ff-4f1a-ac3e-8e50481c2017
-  Args:
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2005
-    source: :JohnUlickKnatchbull
-  AddLiteral (77261359-01f1-4ded-ab5c-4e860aec060f)
- Call ID: 77261359-01f1-4ded-ab5c-4e860aec060f
+    source: Charlotte_Wellesley
+    literal_value: 1990
+  AssignClass (c2daacb0-cc74-4ca2-969c-63a20f2c23fd)
+ Call ID: c2daacb0-cc74-4ca2-969c-63a20f2c23fd
   Args:
-    source: :JohnUlickKnatchbull
-    relation: :knownAs
-    literal_type: xsd:string
-    literal_value: John Brabourne
-  AssignClass (75ed4fc3-0388-4901-a995-6007b069726d)
- Call ID: 75ed4fc3-0388-4901-a995-6007b069726d
-  Args:
-    type: :Man
-    source: :MichaelKnatchbull
-  AssignClass (17a719f2-75fe-450b-bac8-7fa971a71695)
- Call ID: 17a719f2-75fe-450b-bac8-7fa971a71695
-  Args:
-    type: :Person
-    source: :MichaelKnatchbull
-  AddTriple (7fc70a84-ac23-414d-9c11-0ff9392e5f9b)
- Call ID: 7fc70a84-ac23-414d-9c11-0ff9392e5f9b
-  Args:
-    target: :MichaelKnatchbull
-    source: :JohnUlickKnatchbull
-    relation: :hasFather
-  AssignClass (68a04722-b57c-46c1-afd3-314cf74792f4)
- Call ID: 68a04722-b57c-46c1-afd3-314cf74792f4
-  Args:
+    source: Antonia_of_Prussia
     type: :Woman
-    source: :LadyDoreenBrowne
-  AssignClass (a9d6051d-5b84-4c23-895a-4bcf5f7ec4d0)
- Call ID: a9d6051d-5b84-4c23-895a-4bcf5f7ec4d0
+  AssignClass (3d51603b-c666-4a8b-88f7-96ccc2863620)
+ Call ID: 3d51603b-c666-4a8b-88f7-96ccc2863620
   Args:
-    source: :LadyDoreenBrowne
+    source: Antonia_of_Prussia
     type: :Person
-  AddTriple (e2ed6719-e9c1-400b-a028-4e1206ea0b17)
- Call ID: e2ed6719-e9c1-400b-a028-4e1206ea0b17
+  AddTriple (4511804a-299d-4da1-846a-5805ed84f5f9)
+ Call ID: 4511804a-299d-4da1-846a-5805ed84f5f9
   Args:
-    target: :LadyDoreenBrowne
-    source: :JohnUlickKnatchbull
+    source: Charlotte_Wellesley
+    target: Antonia_of_Prussia
     relation: :hasMother
-  AssignClass (3b79529d-7d8c-47ef-8c7e-0adb9b490f6f)
- Call ID: 3b79529d-7d8c-47ef-8c7e-0adb9b490f6f
+  AssignClass (280929c6-5a8e-499d-9059-3741018f9f48)
+ Call ID: 280929c6-5a8e-499d-9059-3741018f9f48
   Args:
-    source: :PatriciaMountbatten
-    type: :Woman
-  AssignClass (eb1fac12-4be0-45cd-ae23-90d16b68f45e)
- Call ID: eb1fac12-4be0-45cd-ae23-90d16b68f45e
-  Args:
-    type: :Person
-    source: :PatriciaMountbatten
-  AddTriple (ff25c3ba-9c8c-467f-a142-866736fa919d)
- Call ID: ff25c3ba-9c8c-467f-a142-866736fa919d
-  Args:
-    target: :PatriciaMountbatten
-    source: :JohnUlickKnatchbull
-    relation: :hasRelation
-  AddLiteral (b6d3ce73-ce5f-4409-abe2-859e871907bb)
- Call ID: b6d3ce73-ce5f-4409-abe2-859e871907bb
-  Args:
-    literal_value: 1946
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: :JohnUlickKnatchbull
-  AssignClass (488dde07-a4fb-4d2f-9166-7e823fc34c10)
- Call ID: 488dde07-a4fb-4d2f-9166-7e823fc34c10
-  Args:
-    source: :LouisMountbatten
+    source: Charles_Wellesley
     type: :Man
-  AssignClass (4e49bd6c-89ba-47d7-a80b-42324b272873)
- Call ID: 4e49bd6c-89ba-47d7-a80b-42324b272873
+  AssignClass (de04e9e7-0149-4947-beba-51ccdcfdf09a)
+ Call ID: de04e9e7-0149-4947-beba-51ccdcfdf09a
   Args:
+    source: Charles_Wellesley
     type: :Person
-    source: :LouisMountbatten
-  AddTriple (0215bd55-3ff2-4694-b00b-a50aa812c3d4)
- Call ID: 0215bd55-3ff2-4694-b00b-a50aa812c3d4
+  AddTriple (ddaee45d-67e9-460e-bf78-c12d96bb517b)
+ Call ID: ddaee45d-67e9-460e-bf78-c12d96bb517b
   Args:
-    source: :PatriciaMountbatten
-    target: :LouisMountbatten
     relation: :hasFather
-  AssignClass (ddeb7d0e-13b3-4741-a9b8-190d6b74a8c2)
- Call ID: ddeb7d0e-13b3-4741-a9b8-190d6b74a8c2
+    target: Charles_Wellesley
+    source: Charlotte_Wellesley
+  AssignClass (23b8a9f0-ee48-455d-a37b-067074dfa031)
+ Call ID: 23b8a9f0-ee48-455d-a37b-067074dfa031
   Args:
+    source: Valerian_Wellesley
     type: :Man
-    source: :NortonLouisPhilipKnatchbull
-  AssignClass (51df5cec-cf06-4741-826d-c5e5ced55071)
- Call ID: 51df5cec-cf06-4741-826d-c5e5ced55071
+  AssignClass (baa70d52-0a3d-416d-9650-fd9b9e44b5b4)
+ Call ID: baa70d52-0a3d-416d-9650-fd9b9e44b5b4
   Args:
-    source: :NortonLouisPhilipKnatchbull
+    source: Valerian_Wellesley
     type: :Person
-  AddTriple (aadd92aa-8aef-483d-9b83-2000a510f2e8)
- Call ID: aadd92aa-8aef-483d-9b83-2000a510f2e8
+  AddTriple (a59f224c-038c-41d7-ba77-f7ada0281ad2)
+ Call ID: a59f224c-038c-41d7-ba77-f7ada0281ad2
   Args:
-    target: :NortonLouisPhilipKnatchbull
-    source: :JohnUlickKnatchbull
-    relation: :hasSon
-  AddTriple (132ed9df-6a5c-410f-8e1c-3b5f7806697e)
- Call ID: 132ed9df-6a5c-410f-8e1c-3b5f7806697e
+    source: Charles_Wellesley
+    target: Valerian_Wellesley
+    relation: :hasFather
+  AddLiteral (cd92a879-717c-4583-bd2d-21fc277902ce)
+ Call ID: cd92a879-717c-4583-bd2d-21fc277902ce
   Args:
-    target: :NortonLouisPhilipKnatchbull
-    source: :PatriciaMountbatten
-    relation: :hasSon
-  AssignClass (6582d152-9a22-461f-a89d-317d24ef82da)
- Call ID: 6582d152-9a22-461f-a89d-317d24ef82da
+    literal_value: 2014
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Valerian_Wellesley
+  AssignClass (c605aa3e-d78c-4ce3-aa20-668d63b8a37e)
+ Call ID: c605aa3e-d78c-4ce3-aa20-668d63b8a37e
   Args:
-    source: :LadyAmandaPatriciaVictoriaKnatchbull
+    source: Frederick_of_Prussia
+    type: :Man
+  AssignClass (a0bf7abe-89d8-4a12-a58d-35612332304a)
+ Call ID: a0bf7abe-89d8-4a12-a58d-35612332304a
+  Args:
+    source: Frederick_of_Prussia
+    type: :Person
+  AssignClass (d1c1d1ed-90cc-4b69-8ea9-8ff164633c14)
+ Call ID: d1c1d1ed-90cc-4b69-8ea9-8ff164633c14
+  Args:
+    source: Brigid_Guinness
     type: :Woman
-  AssignClass (bee86a9e-a70d-4b71-ac2c-2bba03792b95)
- Call ID: bee86a9e-a70d-4b71-ac2c-2bba03792b95
+  AssignClass (538cae6b-24b2-4843-a662-3b6c7e4c1855)
+ Call ID: 538cae6b-24b2-4843-a662-3b6c7e4c1855
   Args:
-    source: :LadyAmandaPatriciaVictoriaKnatchbull
+    source: Brigid_Guinness
     type: :Person
-  AddTriple (574b8dcf-1591-4123-8d3f-3f48f5913b9a)
- Call ID: 574b8dcf-1591-4123-8d3f-3f48f5913b9a
+  AddTriple (a776d054-02b2-43af-be64-377719b10b53)
+ Call ID: a776d054-02b2-43af-be64-377719b10b53
   Args:
-    source: :JohnUlickKnatchbull
-    target: :LadyAmandaPatriciaVictoriaKnatchbull
-    relation: :hasDaughter
-  AddTriple (60ec7461-982f-4474-9f8d-41a3f2167885)
- Call ID: 60ec7461-982f-4474-9f8d-41a3f2167885
+    target: Frederick_of_Prussia
+    relation: :hasFather
+    source: Antonia_of_Prussia
+  AddTriple (2f846144-d385-4c33-a04d-a2b322c7cb82)
+ Call ID: 2f846144-d385-4c33-a04d-a2b322c7cb82
   Args:
-    relation: :hasDaughter
-    source: :PatriciaMountbatten
-    target: :LadyAmandaPatriciaVictoriaKnatchbull
-  AssignClass (2f0c711b-2380-4879-9a34-64bc56fa769f)
- Call ID: 2f0c711b-2380-4879-9a34-64bc56fa769f
+    source: Antonia_of_Prussia
+    relation: :hasMother
+    target: Brigid_Guinness
+  AssignClass (c7578f62-1abd-4e08-a5f1-04d44496cea1)
+ Call ID: c7578f62-1abd-4e08-a5f1-04d44496cea1
   Args:
-    source: :NicholasTimothyCharlesKnatchbull
+    source: Arthur_Wellesley
     type: :Man
-  AssignClass (bd89f2eb-d63c-49c4-b415-8c48ce483a2a)
- Call ID: bd89f2eb-d63c-49c4-b415-8c48ce483a2a
+  AssignClass (b9d9fe64-c88c-49cf-b5c2-633f8cd8c9d2)
+ Call ID: b9d9fe64-c88c-49cf-b5c2-633f8cd8c9d2
   Args:
-    source: :NicholasTimothyCharlesKnatchbull
+    source: Arthur_Wellesley
     type: :Person
-  AddTriple (67626ee8-6b57-4a1f-b9eb-858b536e5dda)
- Call ID: 67626ee8-6b57-4a1f-b9eb-858b536e5dda
+  AddTriple (7f633e33-307c-42e8-9b3a-3590b09628e3)
+ Call ID: 7f633e33-307c-42e8-9b3a-3590b09628e3
   Args:
-    relation: :hasSon
-    target: :NicholasTimothyCharlesKnatchbull
-    source: :JohnUlickKnatchbull
-  AddTriple (ac82eca9-222d-4de7-acad-e2426e8e29f2)
- Call ID: ac82eca9-222d-4de7-acad-e2426e8e29f2
+    source: Charlotte_Wellesley
+    relation: :hasBrother
+    target: Arthur_Wellesley
+  AssignClass (e7b419d4-25e0-49b7-8a90-f83721f93476)
+ Call ID: e7b419d4-25e0-49b7-8a90-f83721f93476
   Args:
-    relation: :hasSon
-    source: :PatriciaMountbatten
-    target: :NicholasTimothyCharlesKnatchbull
-  AssignClass (9fc29615-8973-420a-aa93-12edf13999e4)
- Call ID: 9fc29615-8973-420a-aa93-12edf13999e4
-  Args:
-    source: :TimothyKnatchbull
-    type: :Man
-  AssignClass (c3acfded-d435-49fc-9569-7b7d542c3063)
- Call ID: c3acfded-d435-49fc-9569-7b7d542c3063
-  Args:
-    source: :TimothyKnatchbull
-    type: :Person
-  AddTriple (890b08f1-47cb-4545-85c2-0fb93e2bbf82)
- Call ID: 890b08f1-47cb-4545-85c2-0fb93e2bbf82
-  Args:
-    source: :JohnUlickKnatchbull
-    target: :TimothyKnatchbull
-    relation: :hasSon
-  AddTriple (cb9ab88a-40d4-40d5-82af-30560ae9e73a)
- Call ID: cb9ab88a-40d4-40d5-82af-30560ae9e73a
-  Args:
-    target: :TimothyKnatchbull
-    source: :PatriciaMountbatten
-    relation: :hasSon
-  AssignClass (5e301bb5-3d43-48d1-9f06-b3b4901c307a)
- Call ID: 5e301bb5-3d43-48d1-9f06-b3b4901c307a
-  Args:
+    source: Mary_Wellesley
     type: :Woman
-    source: :LouiseMountbatten
-  AssignClass (6a058ad2-8756-47b8-b5e2-8791efcf7b77)
- Call ID: 6a058ad2-8756-47b8-b5e2-8791efcf7b77
+  AssignClass (6f094556-594b-49db-8df5-a7fe23568209)
+ Call ID: 6f094556-594b-49db-8df5-a7fe23568209
   Args:
-    source: :LouiseMountbatten
+    source: Mary_Wellesley
     type: :Person
-  AddTriple (8babee82-381a-4f07-9618-0d938ed9ab03)
- Call ID: 8babee82-381a-4f07-9618-0d938ed9ab03
+  AddTriple (b1553561-dd26-41bf-833d-7bb3f1c503db)
+ Call ID: b1553561-dd26-41bf-833d-7bb3f1c503db
   Args:
-    target: :PatriciaMountbatten
-    source: :LouiseMountbatten
-    relation: :isAuntOf
-  AssignClass (af6feb94-887b-4074-9bfa-8bdc89860463)
- Call ID: af6feb94-887b-4074-9bfa-8bdc89860463
+    target: Mary_Wellesley
+    relation: :hasSister
+    source: Charlotte_Wellesley
+  AssignClass (5bc65f48-4646-4a33-bbc0-9dc11940c9a0)
+ Call ID: 5bc65f48-4646-4a33-bbc0-9dc11940c9a0
   Args:
+    source: Alejandro_Santo_Domingo
     type: :Man
-    source: :PhilipDukeOfEdinburgh
-  AssignClass (b714801f-42c3-4a5c-b814-75513b80f6cf)
- Call ID: b714801f-42c3-4a5c-b814-75513b80f6cf
+  AssignClass (4a28a48c-344a-4dd7-b7bc-0bd562857fe3)
+ Call ID: 4a28a48c-344a-4dd7-b7bc-0bd562857fe3
   Args:
-    source: :PhilipDukeOfEdinburgh
+    source: Alejandro_Santo_Domingo
     type: :Person
-  AddTriple (ef39aa44-5cbd-4c76-99af-1b7f9c0422fb)
- Call ID: ef39aa44-5cbd-4c76-99af-1b7f9c0422fb
+  AddLiteral (4a05c94c-78c3-4909-881e-729765448d66)
+ Call ID: 4a05c94c-78c3-4909-881e-729765448d66
   Args:
-    target: :PatriciaMountbatten
-    source: :PhilipDukeOfEdinburgh
-    relation: :isBloodrelationOf
-  Finish (7ff42b9e-7a22-4652-a424-3f199e39e230)
- Call ID: 7ff42b9e-7a22-4652-a424-3f199e39e230
+    source: Charlotte_Wellesley
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 2016
+  AddTriple (1fdd2f76-aa07-4069-9975-beffa3587452)
+ Call ID: 1fdd2f76-aa07-4069-9975-beffa3587452
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Charlotte_Wellesley
+    target: Alejandro_Santo_Domingo
+    relation: :hasRelation
+  Finish (e020bf99-9998-4a72-a798-db03438ba200)
+ Call ID: e020bf99-9998-4a72-a798-db03438ba200
+  Args:
 
 ================================= Tool Message =================================
 
@@ -784,59 +730,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:JohnUlickKnatchbull a :Man,
-          :Person ;
-      :hasBirthYear 1924 ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasDeathYear 2005 ;
-      :hasFather data:MichaelKnatchbull ;
-      :hasMarriageYear 1946 ;
-      :hasMother data:LadyDoreenBrowne ;
-      :hasRelation data:PatriciaMountbatten ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull ;
-      :knownAs "John Brabourne"^^xsd:string .
-
-  data:LouiseMountbatten a :Person,
+  data:Charlotte_Wellesley a :Person,
           :Woman ;
-      :isAuntOf data:PatriciaMountbatten .
+      :hasBirthYear 1990 ;
+      :hasBrother data:Arthur_Wellesley ;
+      :hasFather data:Charles_Wellesley ;
+      :hasMarriageYear 2016 ;
+      :hasMother data:Antonia_of_Prussia ;
+      :hasRelation data:Alejandro_Santo_Domingo ;
+      :hasSister data:Mary_Wellesley .
 
-  data:Male a :Sex .
+  data:Alejandro_Santo_Domingo a :Man,
+          :Person .
 
-  data:PhilipDukeOfEdinburgh a :Man,
-          :Person ;
-      :isBloodrelationOf data:PatriciaMountbatten .
+  data:Antonia_of_Prussia a :Person,
+          :Woman ;
+      :hasFather data:Frederick_of_Prussia ;
+      :hasMother data:Brigid_Guinness .
 
-  data:LadyDoreenBrowne a :Person,
+  data:Arthur_Wellesley a :Man,
+          :Person .
+
+  data:Brigid_Guinness a :Person,
           :Woman .
 
-  data:LouisMountbatten a :Man,
+  data:Charles_Wellesley a :Man,
+          :Person ;
+      :hasFather data:Valerian_Wellesley .
+
+  data:Frederick_of_Prussia a :Man,
           :Person .
 
-  data:MichaelKnatchbull a :Man,
-          :Person .
-
-  data:LadyAmandaPatriciaVictoriaKnatchbull a :Person,
+  data:Mary_Wellesley a :Person,
           :Woman .
 
-  data:NicholasTimothyCharlesKnatchbull a :Man,
-          :Person .
-
-  data:NortonLouisPhilipKnatchbull a :Man,
-          :Person .
-
-  data:TimothyKnatchbull a :Man,
-          :Person .
-
-  data:PatriciaMountbatten a :Person,
-          :Woman ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasFather data:LouisMountbatten ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull .
+  data:Valerian_Wellesley a :Man,
+          :Person ;
+      :hasDeathYear 2014 .
 
 
 
@@ -848,150 +778,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (fa87efb5-fc1b-4f60-9cf5-f2d91309dfab)
- Call ID: fa87efb5-fc1b-4f60-9cf5-f2d91309dfab
+  ValidateShacl (68d083b6-3463-4bc3-9524-7bf57ac048e7)
+ Call ID: 68d083b6-3463-4bc3-9524-7bf57ac048e7
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:17
+Total violations:15
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Valerian_Wellesley (the value of :hasFather for Charles_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Valerian_Wellesley', class=':Man')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'MichaelKnatchbull' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
+      The node Frederick_of_Prussia (the value of :hasFather for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MichaelKnatchbull', class=':Ancestor')
+      AssignClass(node='Frederick_of_Prussia', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LadyDoreenBrowne' is missing the required class ':Ancestor' to be a valid 'hasMother' value.
+      The node Valerian_Wellesley (the value of :hasFather for Charles_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LadyDoreenBrowne', class=':Ancestor')
+      AssignClass(node='Valerian_Wellesley', class=':Man')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Charles_Wellesley (the value of :hasFather for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Charles_Wellesley', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Brigid_Guinness (the value of :hasMother for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Brigid_Guinness', class=':Woman')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'LouisMountbatten' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
+      The node Antonia_of_Prussia (the value of :hasMother for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouisMountbatten', class=':Ancestor')
+      AssignClass(node='Antonia_of_Prussia', class=':Woman')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'MichaelKnatchbull' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
+      The node Frederick_of_Prussia (the value of :hasFather for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MichaelKnatchbull', class=':Ancestor')
+      AssignClass(node='Frederick_of_Prussia', class=':Man')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LadyDoreenBrowne' is missing the required class ':Ancestor' to be a valid 'hasMother' value.
+      The node Charles_Wellesley (the value of :hasFather for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LadyDoreenBrowne', class=':Ancestor')
+      AssignClass(node='Charles_Wellesley', class=':Man')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Valerian_Wellesley (the value of :hasFather for Charles_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Valerian_Wellesley', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Brigid_Guinness (the value of :hasMother for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Brigid_Guinness', class=':Woman')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Antonia_of_Prussia (the value of :hasMother for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Antonia_of_Prussia', class=':Woman')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LouisMountbatten' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
+      The node Frederick_of_Prussia (the value of :hasFather for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouisMountbatten', class=':Ancestor')
+      AssignClass(node='Frederick_of_Prussia', class=':Man')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'MichaelKnatchbull' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
+      The node Charles_Wellesley (the value of :hasFather for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MichaelKnatchbull', class=':Ancestor')
+      AssignClass(node='Charles_Wellesley', class=':Man')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'LadyDoreenBrowne' is missing the required class ':Ancestor' to be a valid 'hasMother' value.
+      The node Brigid_Guinness (the value of :hasMother for Antonia_of_Prussia) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LadyDoreenBrowne', class=':Ancestor')
+      AssignClass(node='Brigid_Guinness', class=':Woman')
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
+      The node Antonia_of_Prussia (the value of :hasMother for Charlotte_Wellesley) does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'JohnUlickKnatchbull' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'LouisMountbatten' is missing the required class ':Ancestor' to be a valid 'hasFather' value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouisMountbatten', class=':Ancestor')
+      AssignClass(node='Antonia_of_Prussia', class=':Woman')
 
 
 
@@ -1000,29 +914,38 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0921dd0b-0028-4031-8192-1e9ce24cf3b0)
- Call ID: 0921dd0b-0028-4031-8192-1e9ce24cf3b0
+  AssignClass (3c08c502-ec46-46d7-b27c-55b27a75a215)
+ Call ID: 3c08c502-ec46-46d7-b27c-55b27a75a215
   Args:
-    type: :Sex
-    source: :Male
-  AssignClass (ecff01dc-a574-4ef1-b571-9b889e716419)
- Call ID: ecff01dc-a574-4ef1-b571-9b889e716419
+    source: Valerian_Wellesley
+    type: :Ancestor
+  AssignClass (c2233820-a00f-44c5-8ccc-ef7e7468696d)
+ Call ID: c2233820-a00f-44c5-8ccc-ef7e7468696d
+  Args:
+    source: Frederick_of_Prussia
+    type: :Ancestor
+  AssignClass (961fca6d-14bc-45b4-8e61-0a5e8ee35166)
+ Call ID: 961fca6d-14bc-45b4-8e61-0a5e8ee35166
   Args:
     type: :Ancestor
-    source: :MichaelKnatchbull
-  AssignClass (af964bc8-aef0-4598-9b91-10d6e886540f)
- Call ID: af964bc8-aef0-4598-9b91-10d6e886540f
+    source: Charles_Wellesley
+  AssignClass (df5cb5c9-dec8-4fab-8660-6770ad86cf32)
+ Call ID: df5cb5c9-dec8-4fab-8660-6770ad86cf32
   Args:
-    source: :LadyDoreenBrowne
+    source: Antonia_of_Prussia
     type: :Ancestor
-  AssignClass (4cb87112-6668-4b8d-a96f-d3b10c66d7e2)
- Call ID: 4cb87112-6668-4b8d-a96f-d3b10c66d7e2
+  AssignClass (3af1b7a0-44ef-4335-bf02-38b2b01c6c19)
+ Call ID: 3af1b7a0-44ef-4335-bf02-38b2b01c6c19
   Args:
-    source: :LouisMountbatten
     type: :Ancestor
-  ValidateShacl (539743ec-fe17-4a31-b226-12a7dfb402f5)
- Call ID: 539743ec-fe17-4a31-b226-12a7dfb402f5
+    source: Brigid_Guinness
+  ValidateShacl (2efe1ab3-3222-4c40-ab47-56b2031da3dd)
+ Call ID: 2efe1ab3-3222-4c40-ab47-56b2031da3dd
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1043,409 +966,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:JohnUlickKnatchbull a :Man,
-          :Person ;
-      :hasBirthYear 1924 ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasDeathYear 2005 ;
-      :hasFather data:MichaelKnatchbull ;
-      :hasMarriageYear 1946 ;
-      :hasMother data:LadyDoreenBrowne ;
-      :hasRelation data:PatriciaMountbatten ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull ;
-      :knownAs "John Brabourne"^^xsd:string .
-
-  data:LouiseMountbatten a :Person,
+  data:Charlotte_Wellesley a :Person,
           :Woman ;
-      :isAuntOf data:PatriciaMountbatten .
+      :hasBirthYear 1990 ;
+      :hasBrother data:Arthur_Wellesley ;
+      :hasFather data:Charles_Wellesley ;
+      :hasMarriageYear 2016 ;
+      :hasMother data:Antonia_of_Prussia ;
+      :hasRelation data:Alejandro_Santo_Domingo ;
+      :hasSister data:Mary_Wellesley .
 
-  data:Male a :Sex .
+  data:Alejandro_Santo_Domingo a :Man,
+          :Person .
 
-  data:PhilipDukeOfEdinburgh a :Man,
-          :Person ;
-      :isBloodrelationOf data:PatriciaMountbatten .
+  data:Antonia_of_Prussia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Frederick_of_Prussia ;
+      :hasMother data:Brigid_Guinness .
 
-  data:LadyDoreenBrowne a :Ancestor,
+  data:Arthur_Wellesley a :Man,
+          :Person .
+
+  data:Brigid_Guinness a :Ancestor,
           :Person,
           :Woman .
 
-  data:LouisMountbatten a :Ancestor,
+  data:Charles_Wellesley a :Ancestor,
           :Man,
-          :Person .
-
-  data:MichaelKnatchbull a :Ancestor,
-          :Man,
-          :Person .
-
-  data:LadyAmandaPatriciaVictoriaKnatchbull a :Person,
-          :Woman .
-
-  data:NicholasTimothyCharlesKnatchbull a :Man,
-          :Person .
-
-  data:NortonLouisPhilipKnatchbull a :Man,
-          :Person .
-
-  data:TimothyKnatchbull a :Man,
-          :Person .
-
-  data:PatriciaMountbatten a :Person,
-          :Woman ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasFather data:LouisMountbatten ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'JohnUlickKnatchbull' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (ef51abf5-81d3-403e-8680-1afab52d9dd3)
- Call ID: ef51abf5-81d3-403e-8680-1afab52d9dd3
-  Args:
-    type: :Sex
-    source: :Male
-  Finish (5d7f757b-1c44-42d8-be3b-a372daa54539)
- Call ID: 5d7f757b-1c44-42d8-be3b-a372daa54539
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:JohnUlickKnatchbull a :Man,
           :Person ;
-      :hasBirthYear 1924 ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasDeathYear 2005 ;
-      :hasFather data:MichaelKnatchbull ;
-      :hasMarriageYear 1946 ;
-      :hasMother data:LadyDoreenBrowne ;
-      :hasRelation data:PatriciaMountbatten ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull ;
-      :knownAs "John Brabourne"^^xsd:string .
+      :hasFather data:Valerian_Wellesley .
 
-  data:LouiseMountbatten a :Person,
-          :Woman ;
-      :isAuntOf data:PatriciaMountbatten .
+  data:Frederick_of_Prussia a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Male a :Sex .
+  data:Mary_Wellesley a :Person,
+          :Woman .
 
-  data:PhilipDukeOfEdinburgh a :Man,
+  data:Valerian_Wellesley a :Ancestor,
+          :Man,
           :Person ;
-      :isBloodrelationOf data:PatriciaMountbatten .
-
-  data:LadyDoreenBrowne a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:LouisMountbatten a :Ancestor,
-          :Man,
-          :Person .
-
-  data:MichaelKnatchbull a :Ancestor,
-          :Man,
-          :Person .
-
-  data:LadyAmandaPatriciaVictoriaKnatchbull a :Person,
-          :Woman .
-
-  data:NicholasTimothyCharlesKnatchbull a :Man,
-          :Person .
-
-  data:NortonLouisPhilipKnatchbull a :Man,
-          :Person .
-
-  data:TimothyKnatchbull a :Man,
-          :Person .
-
-  data:PatriciaMountbatten a :Person,
-          :Woman ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasFather data:LouisMountbatten ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (6b7468c4-873c-42c1-b27b-77c017d71195)
- Call ID: 6b7468c4-873c-42c1-b27b-77c017d71195
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'JohnUlickKnatchbull' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (76367607-4492-4331-9b50-398371175f70)
- Call ID: 76367607-4492-4331-9b50-398371175f70
-  Args:
-    relation: :hasSex
-    source: :JohnUlickKnatchbull
-    literal_type: xsd:string
-    literal_value: Male
-  AssignClass (774871f3-ee61-4a42-a3a9-a5ba74e4534c)
- Call ID: 774871f3-ee61-4a42-a3a9-a5ba74e4534c
-  Args:
-    type: :Male
-    source: :MaleNode
-  AssignClass (698712a0-beef-4095-8aa9-3985a5ffe2ea)
- Call ID: 698712a0-beef-4095-8aa9-3985a5ffe2ea
-  Args:
-    type: :Sex
-    source: :MaleNode
-  AddTriple (e8b98919-16af-4bf9-bf51-a54a5d8febba)
- Call ID: e8b98919-16af-4bf9-bf51-a54a5d8febba
-  Args:
-    target: :MaleNode
-    relation: :hasSex
-    source: :JohnUlickKnatchbull
-  ValidateShacl (bfb7b255-9fa7-44a8-81a3-32e3f3541405)
- Call ID: bfb7b255-9fa7-44a8-81a3-32e3f3541405
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:JohnUlickKnatchbull a :Man,
-          :Person ;
-      :hasBirthYear 1924 ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasDeathYear 2005 ;
-      :hasFather data:MichaelKnatchbull ;
-      :hasMarriageYear 1946 ;
-      :hasMother data:LadyDoreenBrowne ;
-      :hasRelation data:PatriciaMountbatten ;
-      :hasSex data:MaleNode ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull ;
-      :knownAs "John Brabourne"^^xsd:string .
-
-  data:LouiseMountbatten a :Person,
-          :Woman ;
-      :isAuntOf data:PatriciaMountbatten .
-
-  data:Male a :Sex .
-
-  data:PhilipDukeOfEdinburgh a :Man,
-          :Person ;
-      :isBloodrelationOf data:PatriciaMountbatten .
-
-  data:LadyDoreenBrowne a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:LouisMountbatten a :Ancestor,
-          :Man,
-          :Person .
-
-  data:MaleNode a :Male,
-          :Sex .
-
-  data:MichaelKnatchbull a :Ancestor,
-          :Man,
-          :Person .
-
-  data:LadyAmandaPatriciaVictoriaKnatchbull a :Person,
-          :Woman .
-
-  data:NicholasTimothyCharlesKnatchbull a :Man,
-          :Person .
-
-  data:NortonLouisPhilipKnatchbull a :Man,
-          :Person .
-
-  data:TimothyKnatchbull a :Man,
-          :Person .
-
-  data:PatriciaMountbatten a :Person,
-          :Woman ;
-      :hasDaughter data:LadyAmandaPatriciaVictoriaKnatchbull ;
-      :hasFather data:LouisMountbatten ;
-      :hasSon data:NicholasTimothyCharlesKnatchbull,
-          data:NortonLouisPhilipKnatchbull,
-          data:TimothyKnatchbull .
+      :hasDeathYear 2014 .
 
 
 
@@ -1457,6 +1019,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e3a48de6-db62-4277-b186-c1630701284e)
- Call ID: e3a48de6-db62-4277-b186-c1630701284e
+  Finish (3492efe5-9509-4873-a35e-90ac1c08adba)
+ Call ID: 3492efe5-9509-4873-a35e-90ac1c08adba
   Args:

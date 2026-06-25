@@ -1,0 +1,73 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:David_Flint_Wood a :Man,
+        :Person ;
+    :hasBrother data:David_Flint_Wood ;
+    :hasRelation data:David_Flint_Wood,
+        data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :isBloodrelationOf data:David_Flint_Wood ;
+    :isBrotherOf data:David_Flint_Wood ;
+    :isSiblingOf data:David_Flint_Wood .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasRelation data:David_Flint_Wood,
+        data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :isAncestorOf data:India_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isUncleOf data:India_Hicks .
+
+data:Lady_Pamela_Mountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasRelation data:David_Flint_Wood,
+        data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :hasSister data:Lady_Pamela_Mountbatten ;
+    :isAncestorOf data:India_Hicks ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Mountbatten ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Mountbatten ;
+    :isSisterOf data:Lady_Pamela_Mountbatten .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :hasBirthYear 1967 ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Mountbatten ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :hasRelation data:David_Flint_Wood,
+        data:David_Nightingale_Hicks,
+        data:India_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :hasSister data:India_Hicks ;
+    :isBloodrelationOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Mountbatten ;
+    :isSiblingOf data:India_Hicks ;
+    :isSisterOf data:India_Hicks .
+

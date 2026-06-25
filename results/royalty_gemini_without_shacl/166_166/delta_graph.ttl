@@ -2,16 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mafalda_Margarethe_Prinzessin_und_Landgr%C3%A4fin_von_Hessen a :Person,
-        :Woman ;
-    :alsoKnownAs "Princess Mafalda of Hesse"^^xsd:string ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Moritz_Landgrave_of_Hesse ;
-    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+data:EugenieOfGreeceAndDenmark a :Woman ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:PrincePeterOfGreeceAndDenmark ;
+    :hasDeathYear 1989 ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasMarriageYear 1938,
+        1949 ;
+    :hasMother data:PrincessMarieBonaparte ;
+    :hasRelation data:PrinceDominikRainerRadziwill,
+        data:PrinceRaymundoDellaTorreETasso .
 
-data:Moritz_Landgrave_of_Hesse a :Man,
-        :Person .
+data:ArchduchessRenataOfAustria a :Woman .
 
-data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman .
+data:GeorgeIOfGreece a :Man .
+
+data:MarieFelixBlanc a :Woman .
+
+data:OlgaConstantinovnaOfRussia a :Woman .
+
+data:PrinceDominikRainerRadziwill a :Man ;
+    :hasFather data:PrinceHieronimRadziwill ;
+    :hasMother data:ArchduchessRenataOfAustria .
+
+data:PrinceHieronimRadziwill a :Man .
+
+data:PrincePeterOfGreeceAndDenmark a :Man ;
+    :hasFather data:PrinceGeorgeOfGreeceAndDenmark ;
+    :hasMother data:PrincessMarieBonaparte .
+
+data:PrinceRaymundoDellaTorreETasso a :Man .
+
+data:PrinceRolandBonaparte a :Man .
+
+data:PrinceGeorgeOfGreeceAndDenmark a :Man ;
+    :hasFather data:GeorgeIOfGreece ;
+    :hasMother data:OlgaConstantinovnaOfRussia .
+
+data:PrincessMarieBonaparte a :Woman ;
+    :hasFather data:PrinceRolandBonaparte ;
+    :hasMother data:MarieFelixBlanc .
 

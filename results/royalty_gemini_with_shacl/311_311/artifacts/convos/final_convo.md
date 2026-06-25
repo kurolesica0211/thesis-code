@@ -85,99 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Don Carlos, Prince of Bourbon-Two Sicilies, Infante of Spain (Full Italian name: Carlo Maria Francesco d'Assisi Pasquale Ferdinando Antonio di Padova Francesco de Paola Alfonso Andrea Avelino Tancredi, Principe di Borbone delle Due Sicilie, Infante di Spagna; 10 November 1870 – 11 November 1949) was the son of Prince Alfonso of the Two Sicilies, Count of Caserta and Princess Maria Antonietta of Bourbon-Two Sicilies, and nephew of the last King of the Two Sicilies, Francis II.
 
 
-Princess Tomislav
+Marriages and children
+
+On 14 February 1901 in Madrid, Carlos married Mercedes, Princess of Asturias, elder daughter of the late King Alfonso XII of Spain and of his wife Archduchess Maria Christina of Austria.
+Mercedes was the elder sister and heir presumptive to King Alfonso XIII of Spain, an unmarried teenager.
+A week before the wedding, on 7 February, Carlos was given the title of Infante of Spain.
+In 1907, Carlos married secondly to Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris.
+The couple had four children:
 
 
-Princess Alexander
+Prince Carlos's descendants include King Felipe VI of Spain, Prince Pedro, Duke of Calabria, Prince Pedro Carlos of Orléans-Braganza, and Philip, Hereditary Prince of Yugoslavia, among others.
+Military service
 
+Carlos served in the Spanish Army in the Spanish–American War and received the Military Order of Maria Cristina.
+Two Sicilies succession
 
-Princess Elizabeth
-
-
-Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
-In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
-In 2022, he became the hereditary prince, following his elder brother's renunciation.
-Early life and education
-
-Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
-Philip is the fraternal twin of Alexander.
-His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
-Philip lived in Virginia until 1984.
-Philip's parents divorced in 1985.
-After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
-Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
-Together with his twin brother, Philip was educated in London and Canterbury.
-In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
-In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
-In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
-In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
-After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
-Personal life
-
-After completing his studies, Philip started to work for financial institutions in the City of London.
-Most recently, Philip has been working with a renowned global asset manager in London.
-Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
-Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
-Marriage and children
-
-On 24 July 2017, his parents announced his engagement to Danica Marinković.
-Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
-Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
-His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
-It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
-Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
-Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
-Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
-On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
-They named her Princess Marija.
-Public life
-
-Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
-On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
-Prince in Serbia (2020–2022)
-Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
-With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
-In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
-On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
-Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
-In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
-On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
-In December 2021, Philip voiced support for the environmental protests in Serbia.
-In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
-Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
-Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
-On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
-Hereditary Prince (2022–present)
-
-On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
-Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
-The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
-His father, Crown Prince Alexander, did not attend the event.
-The Crown Prince was dissatisfied with Peter's renunciation.
-A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
-On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
-Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
-In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
-Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
-On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
-In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
-Arms
-
-Ancestry
-
-Philip is a member of the House of Karađorđević.
-Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
+In 1894, Carlos's father Alfonso became the head of the House of Bourbon-Two Sicilies.
+On marrying his first wife, Carlos renounced on 14 December 1900 his future rights of succession to the non-existent Crown of Two Sicilies in an official document, known as the Act of Cannes, subject to a requirement in the Treaty of Naples of 1759 and the Pragmatic Decree of 6 October 1759 that the Crown of Spain should not be combined with the "Italian Sovereignty".
+In 1960, Carlos' elder brother Ferdinand died without male issue, and a dispute arose between Carlos' son Alfonso and Carlos' younger brother Ranieri on the headship of the house, this with competing claims: by the law of primogeniture, Carlos' son Alfonso was considered the heir, but Ranieri claimed that Carlos had renounced his rights and those of his descendants according to the Act of Cannes.
+Alfonso refuted that claim by stating that it was only a promise from his father to relinquish this right if the crown of the Kingdom of the Two Sicilies were to be united with the Spanish Crown.
+Since this did not happen, the act had no effect and Carlos' son Alfonso reclaimed his rights.
+Alfonso's claim was recognised by the heads of the different lines of the House of Bourbon, although not by the head of the Orleans family, and in 1983 the Spanish Council of State, following an investigation by the Ministries of Justice and Foreign Affairs, the Royal Academy of Jurisprudence and Legislation and the Institute Salazar y Castro concluded unanimously in favour of Infante Don Alfonso's only son, Prince and Infante Don Carlos, a position shared by the Spanish Royal House.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -193,39 +132,9 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -240,6 +149,23 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -257,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -324,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -355,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -367,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -375,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -413,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -428,153 +457,303 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (12b79382-09ed-4e41-8e79-c45deedfbddf)
- Call ID: 12b79382-09ed-4e41-8e79-c45deedfbddf
+  AssignClass (f3fa737b-8199-4cc0-a98e-d03b5d19463f)
+ Call ID: f3fa737b-8199-4cc0-a98e-d03b5d19463f
   Args:
+    source: Don_Carlos
     type: :Man
-    source: Philip_Karadjordjevic
-  AssignClass (884aa7e0-46da-460c-b5e8-269f45d3ea71)
- Call ID: 884aa7e0-46da-460c-b5e8-269f45d3ea71
+  AssignClass (c1e8e8ad-2d9b-4ce5-b224-95985ffa0d00)
+ Call ID: c1e8e8ad-2d9b-4ce5-b224-95985ffa0d00
   Args:
     type: :Person
-    source: Philip_Karadjordjevic
-  AddLiteral (f3406b72-5c85-45c9-8d27-703ed1b4d5fa)
- Call ID: f3406b72-5c85-45c9-8d27-703ed1b4d5fa
+    source: Don_Carlos
+  AddLiteral (2df9bd38-3e8b-4740-ac3e-f2510f4491a6)
+ Call ID: 2df9bd38-3e8b-4740-ac3e-f2510f4491a6
   Args:
-    literal_value: 1982
     relation: :hasBirthYear
-    source: Philip_Karadjordjevic
+    source: Don_Carlos
+    literal_value: 1870
     literal_type: xsd:integer
-  AssignClass (cd585250-ca34-418f-8f5a-37809ac96ef8)
- Call ID: cd585250-ca34-418f-8f5a-37809ac96ef8
+  AddLiteral (f44c9bc6-6181-46b8-ac65-41e7e5404303)
+ Call ID: f44c9bc6-6181-46b8-ac65-41e7e5404303
   Args:
-    type: :Man
-    source: Alexander_Karađorđević
-  AssignClass (b0964f29-bad3-435d-831e-6e64688e1515)
- Call ID: b0964f29-bad3-435d-831e-6e64688e1515
-  Args:
-    source: Alexander_Karađorđević
-    type: :Person
-  AssignClass (69ffb36b-b4e4-4b4f-982f-300e6312511b)
- Call ID: 69ffb36b-b4e4-4b4f-982f-300e6312511b
-  Args:
-    type: :Woman
-    source: Maria_da_Gloria
-  AssignClass (51d3e480-3aac-43b9-8a09-8bb30bf4ac9b)
- Call ID: 51d3e480-3aac-43b9-8a09-8bb30bf4ac9b
-  Args:
-    source: Maria_da_Gloria
-    type: :Person
-  AddTriple (e7687cb6-0b76-435a-8c62-d6310bd66a93)
- Call ID: e7687cb6-0b76-435a-8c62-d6310bd66a93
-  Args:
-    target: Alexander_Karađorđević
-    source: Philip_Karadjordjevic
-    relation: :hasFather
-  AddTriple (74bc5f34-d991-4682-82cc-6a36f7b2ef0a)
- Call ID: 74bc5f34-d991-4682-82cc-6a36f7b2ef0a
-  Args:
-    target: Maria_da_Gloria
-    source: Philip_Karadjordjevic
-    relation: :hasMother
-  AssignClass (58788c0e-d67a-41fb-a8c4-d8656daf5f19)
- Call ID: 58788c0e-d67a-41fb-a8c4-d8656daf5f19
-  Args:
-    source: Danica_Marinkovic
-    type: :Woman
-  AssignClass (7661964d-7bde-4e41-a3af-dd3c48cb9b95)
- Call ID: 7661964d-7bde-4e41-a3af-dd3c48cb9b95
-  Args:
-    type: :Person
-    source: Danica_Marinkovic
-  AddTriple (f0a857f1-1983-4e83-b75d-83471aa50452)
- Call ID: f0a857f1-1983-4e83-b75d-83471aa50452
-  Args:
-    target: Danica_Marinkovic
-    relation: :hasMarriageYear
-    source: Philip_Karadjordjevic
-  AddLiteral (87f30fad-20b9-45f3-a96b-2fe52b83e745)
- Call ID: 87f30fad-20b9-45f3-a96b-2fe52b83e745
-  Args:
-    literal_value: 2017
-    relation: :hasMarriageYear
-    source: Philip_Karadjordjevic
     literal_type: xsd:integer
-  AssignClass (1374c3f8-fa1e-49f2-8d31-2e3a9fa57287)
- Call ID: 1374c3f8-fa1e-49f2-8d31-2e3a9fa57287
+    relation: :hasDeathYear
+    source: Don_Carlos
+    literal_value: 1949
+  AssignClass (0a906f87-871e-48de-8439-f46d37650a7c)
+ Call ID: 0a906f87-871e-48de-8439-f46d37650a7c
   Args:
+    source: Alfonso_of_the_Two_Sicilies
     type: :Man
-    source: Stefan_Karadjordjevic
-  AssignClass (c7bfaa56-f92a-4d7e-9f8b-8a092d774f8c)
- Call ID: c7bfaa56-f92a-4d7e-9f8b-8a092d774f8c
+  AssignClass (97ca709a-8925-4acf-a1dc-cd8f2c7fafea)
+ Call ID: 97ca709a-8925-4acf-a1dc-cd8f2c7fafea
   Args:
+    source: Alfonso_of_the_Two_Sicilies
     type: :Person
-    source: Stefan_Karadjordjevic
-  AddTriple (383db1b0-9795-4e03-9e5e-25f73ed3f6cf)
- Call ID: 383db1b0-9795-4e03-9e5e-25f73ed3f6cf
-  Args:
-    relation: :hasFather
-    source: Stefan_Karadjordjevic
-    target: Philip_Karadjordjevic
-  AddTriple (0bb25170-38d1-4c03-9f07-7179dd3c6fe0)
- Call ID: 0bb25170-38d1-4c03-9f07-7179dd3c6fe0
-  Args:
-    target: Danica_Marinkovic
-    relation: :hasMother
-    source: Stefan_Karadjordjevic
-  AssignClass (61651b6e-8a48-4aa5-91df-205eef76f279)
- Call ID: 61651b6e-8a48-4aa5-91df-205eef76f279
+  AssignClass (046ca152-bc52-4f99-a74b-679f0d867dd5)
+ Call ID: 046ca152-bc52-4f99-a74b-679f0d867dd5
   Args:
     type: :Woman
-    source: Marija_Karadjordjevic
-  AssignClass (802771a0-dff0-4cba-946d-b721a48542c6)
- Call ID: 802771a0-dff0-4cba-946d-b721a48542c6
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (49660dd0-9e78-43c6-acef-58c7107dbac6)
+ Call ID: 49660dd0-9e78-43c6-acef-58c7107dbac6
+  Args:
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (cea07d16-1b7b-4da6-b433-0b3333c883be)
+ Call ID: cea07d16-1b7b-4da6-b433-0b3333c883be
+  Args:
+    target: Alfonso_of_the_Two_Sicilies
+    source: Don_Carlos
+    relation: :hasFather
+  AddTriple (1986877c-52cb-44d9-830d-40136f4431f0)
+ Call ID: 1986877c-52cb-44d9-830d-40136f4431f0
+  Args:
+    relation: :hasMother
+    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    source: Don_Carlos
+  AssignClass (77da87d8-6059-4fce-94c3-8d7dd5e28c33)
+ Call ID: 77da87d8-6059-4fce-94c3-8d7dd5e28c33
+  Args:
+    type: :Man
+    source: Francis_II
+  AssignClass (a4d35b1b-0b2f-42be-bdda-4095b0485d7b)
+ Call ID: a4d35b1b-0b2f-42be-bdda-4095b0485d7b
   Args:
     type: :Person
-    source: Marija_Karadjordjevic
-  AddTriple (c06f1fd2-2afe-4b72-a7a1-45555232d7e1)
- Call ID: c06f1fd2-2afe-4b72-a7a1-45555232d7e1
+    source: Francis_II
+  AddTriple (e1f5f4d5-f729-4792-a303-7eabb3cef689)
+ Call ID: e1f5f4d5-f729-4792-a303-7eabb3cef689
+  Args:
+    target: Francis_II
+    source: Don_Carlos
+    relation: :isBloodrelationOf
+  AssignClass (d56838b4-928f-4a62-91c2-8f054204a863)
+ Call ID: d56838b4-928f-4a62-91c2-8f054204a863
+  Args:
+    type: :Woman
+    source: Mercedes_Princess_of_Asturias
+  AssignClass (580b44cc-f049-4a8e-a867-7e923d78c34d)
+ Call ID: 580b44cc-f049-4a8e-a867-7e923d78c34d
+  Args:
+    type: :Person
+    source: Mercedes_Princess_of_Asturias
+  AddTriple (471201a7-2bca-4268-8c48-440b1be403de)
+ Call ID: 471201a7-2bca-4268-8c48-440b1be403de
+  Args:
+    source: Don_Carlos
+    target: Mercedes_Princess_of_Asturias
+    relation: :hasRelation
+  AddLiteral (8d4db8f2-14a4-4e50-b496-aa8a544dd1a5)
+ Call ID: 8d4db8f2-14a4-4e50-b496-aa8a544dd1a5
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1901
+    source: Don_Carlos
+    relation: :hasMarriageYear
+  AssignClass (da23f024-3130-4d00-b8ea-7428a47afa66)
+ Call ID: da23f024-3130-4d00-b8ea-7428a47afa66
+  Args:
+    type: :Man
+    source: Alfonso_XII_of_Spain
+  AssignClass (ed3a0d02-02e7-46cf-8c54-c8eed97994a7)
+ Call ID: ed3a0d02-02e7-46cf-8c54-c8eed97994a7
+  Args:
+    type: :Person
+    source: Alfonso_XII_of_Spain
+  AssignClass (d282d937-a44f-4115-ba86-31fdd6f9e243)
+ Call ID: d282d937-a44f-4115-ba86-31fdd6f9e243
+  Args:
+    type: :Woman
+    source: Maria_Christina_of_Austria
+  AssignClass (762f0eb1-b519-49d0-9329-4163dbf752a9)
+ Call ID: 762f0eb1-b519-49d0-9329-4163dbf752a9
+  Args:
+    type: :Person
+    source: Maria_Christina_of_Austria
+  AddTriple (4830c908-1849-461a-89da-f331a979fbbd)
+ Call ID: 4830c908-1849-461a-89da-f331a979fbbd
   Args:
     relation: :hasFather
-    source: Marija_Karadjordjevic
-    target: Philip_Karadjordjevic
-  AddTriple (6f24b90a-feed-4337-b1c6-3b995b13887d)
- Call ID: 6f24b90a-feed-4337-b1c6-3b995b13887d
+    source: Mercedes_Princess_of_Asturias
+    target: Alfonso_XII_of_Spain
+  AddTriple (6f65b038-290a-4c57-942b-dcefa6ff1cec)
+ Call ID: 6f65b038-290a-4c57-942b-dcefa6ff1cec
   Args:
-    target: Danica_Marinkovic
-    source: Marija_Karadjordjevic
     relation: :hasMother
-  AssignClass (190d88ff-07f7-4d7b-b9d0-c7313962997f)
- Call ID: 190d88ff-07f7-4d7b-b9d0-c7313962997f
+    source: Mercedes_Princess_of_Asturias
+    target: Maria_Christina_of_Austria
+  AssignClass (3889272f-0acd-4287-90cb-a8c820569a36)
+ Call ID: 3889272f-0acd-4287-90cb-a8c820569a36
   Args:
-    source: Peter_Karadjordjevic
     type: :Man
-  AssignClass (13a2d0fe-3e1b-4193-bcbb-cf6622bc1373)
- Call ID: 13a2d0fe-3e1b-4193-bcbb-cf6622bc1373
+    source: Alfonso_XIII_of_Spain
+  AssignClass (d9d719e0-a136-47c1-a908-784029573ca5)
+ Call ID: d9d719e0-a136-47c1-a908-784029573ca5
   Args:
     type: :Person
-    source: Peter_Karadjordjevic
-  AddTriple (ce23c5dd-2ee5-453c-992c-e40e0cb67503)
- Call ID: ce23c5dd-2ee5-453c-992c-e40e0cb67503
+    source: Alfonso_XIII_of_Spain
+  AddTriple (1e67f0d4-d14a-48c2-9f98-ac309f09970b)
+ Call ID: 1e67f0d4-d14a-48c2-9f98-ac309f09970b
   Args:
-    source: Peter_Karadjordjevic
+    relation: :isSisterOf
+    target: Alfonso_XIII_of_Spain
+    source: Mercedes_Princess_of_Asturias
+  AssignClass (d3250145-6997-41ce-9b42-a9da07d2b99e)
+ Call ID: d3250145-6997-41ce-9b42-a9da07d2b99e
+  Args:
+    source: Louise_of_Orléans
+    type: :Woman
+  AssignClass (af741a9e-1060-4457-9886-10d379ebbbf9)
+ Call ID: af741a9e-1060-4457-9886-10d379ebbbf9
+  Args:
+    type: :Person
+    source: Louise_of_Orléans
+  AddTriple (88b35962-be3c-4302-ae1c-bef5777c9d0b)
+ Call ID: 88b35962-be3c-4302-ae1c-bef5777c9d0b
+  Args:
+    target: Louise_of_Orléans
+    source: Don_Carlos
+    relation: :hasRelation
+  AddLiteral (662d24fb-d385-4519-b8d4-cf83b5c30374)
+ Call ID: 662d24fb-d385-4519-b8d4-cf83b5c30374
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Don_Carlos
+    literal_value: 1907
+  AssignClass (2a7074cb-76f3-427e-97a1-71a180f2c8bf)
+ Call ID: 2a7074cb-76f3-427e-97a1-71a180f2c8bf
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Man
+  AssignClass (6a9b4448-c5b6-4fdb-a74a-efbf80963064)
+ Call ID: 6a9b4448-c5b6-4fdb-a74a-efbf80963064
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Person
+  AddTriple (c2f61871-6dc8-442e-b661-3f89dffdabf0)
+ Call ID: c2f61871-6dc8-442e-b661-3f89dffdabf0
+  Args:
+    relation: :hasFather
+    target: Philippe_Count_of_Paris
+    source: Louise_of_Orléans
+  AssignClass (32949962-5da0-46dc-a78f-ad8158fec53d)
+ Call ID: 32949962-5da0-46dc-a78f-ad8158fec53d
+  Args:
+    type: :Man
+    source: Ferdinand
+  AssignClass (5110c990-c4cf-4d38-ac74-1077b7fb1dbf)
+ Call ID: 5110c990-c4cf-4d38-ac74-1077b7fb1dbf
+  Args:
+    source: Ferdinand
+    type: :Person
+  AddTriple (eb0c90f3-293f-4d61-b99d-8e17acaf4470)
+ Call ID: eb0c90f3-293f-4d61-b99d-8e17acaf4470
+  Args:
+    target: Ferdinand
+    source: Don_Carlos
     relation: :isBrotherOf
-    target: Philip_Karadjordjevic
-  AddTriple (8073c3d0-31dd-4afd-bf5a-02d75a793aa8)
- Call ID: 8073c3d0-31dd-4afd-bf5a-02d75a793aa8
+  AssignClass (11574802-9daa-4ab9-9666-5fcb328d735e)
+ Call ID: 11574802-9daa-4ab9-9666-5fcb328d735e
   Args:
-    source: Peter_Karadjordjevic
-    relation: :hasFather
-    target: Alexander_Karađorđević
-  AddTriple (8ac9e290-df09-4812-a8c6-ea9e3c6eedbc)
- Call ID: 8ac9e290-df09-4812-a8c6-ea9e3c6eedbc
+    source: Alfonso_son_of_Carlos
+    type: :Man
+  AssignClass (a341d7ec-9248-4654-934d-ab8bbfadc966)
+ Call ID: a341d7ec-9248-4654-934d-ab8bbfadc966
   Args:
-    relation: :hasMother
-    source: Peter_Karadjordjevic
-    target: Maria_da_Gloria
-  Finish (68739035-878a-4cf9-8723-cddbd399c125)
- Call ID: 68739035-878a-4cf9-8723-cddbd399c125
+    type: :Person
+    source: Alfonso_son_of_Carlos
+  AddTriple (795d7d16-3d2d-47e1-b4a0-2f10ecaba1cc)
+ Call ID: 795d7d16-3d2d-47e1-b4a0-2f10ecaba1cc
   Args:
+    source: Alfonso_son_of_Carlos
+    target: Don_Carlos
+    relation: :isSonOf
+  AssignClass (1aa0d71b-5a81-405e-ab3c-b6f84dd32c76)
+ Call ID: 1aa0d71b-5a81-405e-ab3c-b6f84dd32c76
+  Args:
+    source: Ranieri
+    type: :Man
+  AssignClass (107088e9-97e8-43b7-87a4-6519d3dabe63)
+ Call ID: 107088e9-97e8-43b7-87a4-6519d3dabe63
+  Args:
+    type: :Person
+    source: Ranieri
+  AddTriple (c5509200-ffbb-49d6-9d49-680e27edf457)
+ Call ID: c5509200-ffbb-49d6-9d49-680e27edf457
+  Args:
+    target: Ranieri
+    source: Don_Carlos
+    relation: :isBrotherOf
+  Finish (e24dca40-9f02-412d-aeaa-1f82d96bae5b)
+ Call ID: e24dca40-9f02-412d-aeaa-1f82d96bae5b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -683,38 +862,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marija_Karadjordjevic a :Person,
-          :Woman ;
-      :hasFather data:Philip_Karadjordjevic ;
-      :hasMother data:Danica_Marinkovic .
-
-  data:Peter_Karadjordjevic a :Man,
+  data:Alfonso_son_of_Carlos a :Man,
           :Person ;
-      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Maria_da_Gloria ;
-      :isBrotherOf data:Philip_Karadjordjevic .
+      :isSonOf data:Don_Carlos .
 
-  data:Stefan_Karadjordjevic a :Man,
-          :Person ;
-      :hasFather data:Philip_Karadjordjevic ;
-      :hasMother data:Danica_Marinkovic .
-
-  data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+  data:Alfonso_XIII_of_Spain a :Man,
           :Person .
 
-  data:Maria_da_Gloria a :Person,
-          :Woman .
+  data:Alfonso_XII_of_Spain a :Man,
+          :Person .
 
-  data:Danica_Marinkovic a :Person,
-          :Woman .
+  data:Alfonso_of_the_Two_Sicilies a :Man,
+          :Person .
 
-  data:Philip_Karadjordjevic a :Man,
+  data:Don_Carlos a :Man,
           :Person ;
-      :hasBirthYear 1982 ;
-      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMarriageYear data:Danica_Marinkovic,
-          2017 ;
-      :hasMother data:Maria_da_Gloria .
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 ;
+      :hasFather data:Alfonso_of_the_Two_Sicilies ;
+      :hasMarriageYear 1901,
+          1907 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Louise_of_Orl%C3%A9ans,
+          data:Mercedes_Princess_of_Asturias ;
+      :isBloodrelationOf data:Francis_II ;
+      :isBrotherOf data:Ferdinand,
+          data:Ranieri .
+
+  data:Ferdinand a :Man,
+          :Person .
+
+  data:Francis_II a :Man,
+          :Person .
+
+  data:Louise_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :hasFather data:Philippe_Count_of_Paris .
+
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+  data:Maria_Christina_of_Austria a :Person,
+          :Woman .
+
+  data:Mercedes_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Maria_Christina_of_Austria ;
+      :isSisterOf data:Alfonso_XIII_of_Spain .
+
+  data:Philippe_Count_of_Paris a :Man,
+          :Person .
+
+  data:Ranieri a :Man,
+          :Person .
 
 
 
@@ -726,206 +927,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (665b4f37-22dd-4f13-858f-207e7a6268e0)
- Call ID: 665b4f37-22dd-4f13-858f-207e7a6268e0
+  ValidateShacl (35a3cfff-e030-46b2-80c4-f16f4aba0824)
+ Call ID: 35a3cfff-e030-46b2-80c4-f16f4aba0824
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Don_Carlos' is used as the value for the 'isSonOf' property of 'Alfonso_son_of_Carlos', but it is missing the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
+      AssignClass(node='Don_Carlos', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Alfonso_of_the_Two_Sicilies' is used as the 'hasFather' of 'Don_Carlos', but it is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Alfonso_of_the_Two_Sicilies', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is used as the 'hasMother' of 'Don_Carlos', but it is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Don_Carlos' is missing the required ':Ancestor' class to satisfy the 'isSonOf' constraint for 'Alfonso_son_of_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
+      AssignClass(node='Don_Carlos', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Alfonso_of_the_Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Don_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(node='Alfonso_of_the_Two_Sicilies', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Alfonso_XII_of_Spain' is used as the 'hasFather' of 'Mercedes_Princess_of_Asturias', but it is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(node='Alfonso_XII_of_Spain', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Philippe_Count_of_Paris' is used as the 'hasFather' of 'Louise_of_Orléans', but it is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasMother' constraint for 'Don_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Maria_Christina_of_Austria' is used as the 'hasMother' of 'Mercedes_Princess_of_Asturias', but it is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Don_Carlos' is missing the required ':Ancestor' class to satisfy the 'isSonOf' constraint for 'Alfonso_son_of_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
+      AssignClass(node='Don_Carlos', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Alfonso_of_the_Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Don_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
+      AssignClass(node='Alfonso_of_the_Two_Sicilies', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Alfonso_XII_of_Spain' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Mercedes_Princess_of_Asturias'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(node='Alfonso_XII_of_Spain', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Philippe_Count_of_Paris' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Louise_of_Orléans'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasMother' constraint for 'Don_Carlos'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Maria_Christina_of_Austria' is missing the required ':Ancestor' class to satisfy the 'hasMother' constraint for 'Mercedes_Princess_of_Asturias'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Alfonso_XII_of_Spain' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Mercedes_Princess_of_Asturias'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Alfonso_XII_of_Spain', class=':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alexander_Karađorđević for property :hasFather on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Man.
+      The node 'Philippe_Count_of_Paris' is missing the required ':Ancestor' class to satisfy the 'hasFather' constraint for 'Louise_of_Orléans'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Karađorđević, :Ancestor)
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
-
-
-  Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Woman.
+      The node 'Maria_Christina_of_Austria' is missing the required ':Ancestor' class to satisfy the 'hasMother' constraint for 'Mercedes_Princess_of_Asturias'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Philip_Karadjordjevic lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria for property :hasMother on focus node Peter_Karadjordjevic lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Stefan_Karadjordjevic lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Karadjordjevic for property :hasFather on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Karadjordjevic, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Danica_Marinkovic for property :hasMother on focus node Marija_Karadjordjevic lacks the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinkovic, :Ancestor)
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
 
 
 
@@ -934,29 +1087,47 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (981185f1-2abc-47fa-b8f9-7a4b637ea0cc)
- Call ID: 981185f1-2abc-47fa-b8f9-7a4b637ea0cc
+  AssignClass (0a0efe2d-5557-41d5-8160-191b734e5a5f)
+ Call ID: 0a0efe2d-5557-41d5-8160-191b734e5a5f
   Args:
+    source: Don_Carlos
     type: :Ancestor
-    source: Philip_Karadjordjevic
-  AssignClass (7cfe09e0-4910-4dca-9bc0-f6043dc6064e)
- Call ID: 7cfe09e0-4910-4dca-9bc0-f6043dc6064e
+  AssignClass (7720e3e4-81c2-4a4d-9151-6ff1ac60e11b)
+ Call ID: 7720e3e4-81c2-4a4d-9151-6ff1ac60e11b
   Args:
-    source: Alexander_Karađorđević
+    source: Alfonso_of_the_Two_Sicilies
     type: :Ancestor
-  AssignClass (d34dc078-5904-4d95-bcbc-4de0a8e82afe)
- Call ID: d34dc078-5904-4d95-bcbc-4de0a8e82afe
+  AssignClass (fd81f92a-830d-4913-902f-1cfaa29c405f)
+ Call ID: fd81f92a-830d-4913-902f-1cfaa29c405f
   Args:
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Ancestor
-    source: Danica_Marinkovic
-  AssignClass (2136608f-3d04-4a6e-945f-490ca72013d8)
- Call ID: 2136608f-3d04-4a6e-945f-490ca72013d8
+  AssignClass (ba95c0bb-c1a3-498c-ba3f-8ad8461d1f2e)
+ Call ID: ba95c0bb-c1a3-498c-ba3f-8ad8461d1f2e
   Args:
-    source: Maria_da_Gloria
+    source: Alfonso_XII_of_Spain
     type: :Ancestor
-  Finish (c7123203-3d03-49d8-9335-ce8016992f1f)
- Call ID: c7123203-3d03-49d8-9335-ce8016992f1f
+  AssignClass (7aee1a95-b7af-47ec-be78-b867bd5fea6f)
+ Call ID: 7aee1a95-b7af-47ec-be78-b867bd5fea6f
   Args:
+    source: Philippe_Count_of_Paris
+    type: :Ancestor
+  AssignClass (ffed78c9-e74a-4dab-af10-6e299b34c447)
+ Call ID: ffed78c9-e74a-4dab-af10-6e299b34c447
+  Args:
+    source: Maria_Christina_of_Austria
+    type: :Ancestor
+  ValidateShacl (ddbb5d5e-a096-415f-86dd-c7f0e6133814)
+ Call ID: ddbb5d5e-a096-415f-86dd-c7f0e6133814
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -977,56 +1148,68 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marija_Karadjordjevic a :Person,
-          :Woman ;
-      :hasFather data:Philip_Karadjordjevic ;
-      :hasMother data:Danica_Marinkovic .
-
-  data:Peter_Karadjordjevic a :Man,
+  data:Alfonso_son_of_Carlos a :Man,
           :Person ;
-      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Maria_da_Gloria ;
-      :isBrotherOf data:Philip_Karadjordjevic .
+      :isSonOf data:Don_Carlos .
 
-  data:Stefan_Karadjordjevic a :Man,
-          :Person ;
-      :hasFather data:Philip_Karadjordjevic ;
-      :hasMother data:Danica_Marinkovic .
+  data:Alfonso_XIII_of_Spain a :Man,
+          :Person .
 
-  data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+  data:Alfonso_XII_of_Spain a :Ancestor,
           :Man,
           :Person .
 
-  data:Maria_da_Gloria a :Ancestor,
-          :Person,
-          :Woman .
+  data:Alfonso_of_the_Two_Sicilies a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Danica_Marinkovic a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Philip_Karadjordjevic a :Ancestor,
+  data:Don_Carlos a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1982 ;
-      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMarriageYear data:Danica_Marinkovic,
-          2017 ;
-      :hasMother data:Maria_da_Gloria .
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 ;
+      :hasFather data:Alfonso_of_the_Two_Sicilies ;
+      :hasMarriageYear 1901,
+          1907 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Louise_of_Orl%C3%A9ans,
+          data:Mercedes_Princess_of_Asturias ;
+      :isBloodrelationOf data:Francis_II ;
+      :isBrotherOf data:Ferdinand,
+          data:Ranieri .
+
+  data:Ferdinand a :Man,
+          :Person .
+
+  data:Francis_II a :Man,
+          :Person .
+
+  data:Louise_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :hasFather data:Philippe_Count_of_Paris .
+
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Maria_Christina_of_Austria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Mercedes_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Maria_Christina_of_Austria ;
+      :isSisterOf data:Alfonso_XIII_of_Spain .
+
+  data:Philippe_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Ranieri a :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (d9104436-d669-4e50-b2c6-e63ed13bb315)
- Call ID: d9104436-d669-4e50-b2c6-e63ed13bb315
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1036,6 +1219,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f11588f0-5d7a-49fa-89ef-740457ec8e42)
- Call ID: f11588f0-5d7a-49fa-89ef-740457ec8e42
+  Finish (fab9b097-6454-48b7-8614-22f23b9cfc44)
+ Call ID: fab9b097-6454-48b7-8614-22f23b9cfc44
   Args:

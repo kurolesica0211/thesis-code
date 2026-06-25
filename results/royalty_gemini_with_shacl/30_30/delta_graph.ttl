@@ -2,29 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Alexandra_of_Hanover a :Person,
+data:Albert_II_of_Monaco a :Man ;
+    :isUncleOf data:Alexandra_of_Hanover .
+
+data:Alexandra_Princess_of_Leiningen a :Woman ;
+    :isAuntOf data:Alexandra_of_Hanover .
+
+data:Charlotte_Casiraghi a :Woman .
+
+data:Ernst_August_Prince_of_Hanover a :Ancestor,
+        :Man .
+
+data:Hereditary_Prince_Ernst_August a :Man .
+
+data:Prince_Christian_of_Hanover a :Man .
+
+data:Princess_Caroline_of_Monaco a :Ancestor,
+        :Woman .
+
+data:Alexandra_of_Hanover a :Person,
         :Woman ;
     :hasBirthYear 1999 ;
     :hasBrother data:Hereditary_Prince_Ernst_August,
         data:Prince_Christian_of_Hanover ;
     :hasFather data:Ernst_August_Prince_of_Hanover ;
     :hasMother data:Princess_Caroline_of_Monaco ;
-    :hasRelation data:Albert_II_of_Monaco .
-
-data:Albert_II_of_Monaco a :Man,
-        :Person .
-
-data:Ernst_August_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person .
-
-data:Hereditary_Prince_Ernst_August a :Man,
-        :Person .
-
-data:Prince_Christian_of_Hanover a :Man,
-        :Person .
-
-data:Princess_Caroline_of_Monaco a :Ancestor,
-        :Person,
-        :Woman .
+    :hasSister data:Charlotte_Casiraghi .
 

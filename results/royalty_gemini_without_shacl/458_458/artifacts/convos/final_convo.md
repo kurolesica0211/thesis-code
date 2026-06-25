@@ -69,39 +69,50 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Donatus, Prince and Landgrave of Hesse (legally Heinrich Donatus Philipp Umberto Prinz und Landgraf von Hessen; born 17 October 1966) is a German businessman and the head of the House of Brabant and the House of Hesse.
-He is the eldest son and successor of German aristocrat Moritz, Landgrave of Hesse, and his former wife, Princess Tatiana of Sayn-Wittgenstein-Berleburg (b. 1940).
-Donatus's father became the head of the Hesse-Cassel line on the death of his own father, Landgrave Philipp in 1980.
-Having also been the adopted son and heir of his distant cousin, Louis, Prince of Hesse and by Rhine, the latter's death in 1968 as the last male of the Hesse-Darmstadt branch left Moritz head of the entire House of Hesse, to which Donatus succeeded.
-Profession
+Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
+Biography
 
-Donatus directs the Hessische Hausstiftung (Foundation of the House of Hesse), a foundation (see below) established to curate and showcase the cultural heritage and history of the House of Hesse, a dynasty which ruled the Electorate of Hesse-Cassel until 1866, the Grand Duchy of Hesse and by Rhine until 1918, and whose male-line antecedents and co-lateral ties include the Protestant leader Philip the Magnanimous, the Swedish king Frederick I, Russia's last tsarina Alexandra Feodorovna, the exiled Spanish queen Victoria Eugenie of Battenberg, and Britain's last viceroy of India, the assassinated Louis, Earl Mountbatten of Burma.
-Donatus also manages Prinz von Hessen, a winery specializing in production of varietal vintages on his 45 hectare vineyard.
-Marriage and issue
+Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
+She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
+At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
+As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
+The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
+Alexia grew up in exile and was raised in between Rome and London.
+The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
+Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
+Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
+Marriage and children
 
-Donatus married the daughter of German industrial heir and Chinese honorary citizen Count Hubertus von Faber-Castell, Countess Floria Franziska Marie-Luisa Erika von Faber-Castell (born 14 October 1974, Düsseldorf), in a civil ceremony in Wiesbaden on 25 April 2003.
-Prince Donatus and Floria Franziska are 6th cousins, as both descended from Frederick II, Landgrave of Hesse-Kassel and his first wife Princess Mary of Great Britain.
-Held at the Johanneskirche and followed by a grand ball in the Green Salon, state room of the former Friedrichshof palace in Kronberg (now a luxury hotel and golf course owned by the House of Hesse's family foundation) where Donatus's ancestress, the German Empress Frederick, Princess Royal, lived in widowhood, more than 300 guests were present.
-Among them were Caroline, Princess of Hanover, Princess Benedikte of Denmark, and Gloria, Princess of Thurn and Taxis.
-Representative appearances
+Queen Anne-Marie
 
-In 2021, Donatus was one of only 30 mourners at Prince Philip, the Duke of Edinburgh's, funeral at St George's Chapel, Windsor Castle.
-King Charles III appointed Donatus his personal representative to the funeral of his first cousin Maximilian, Margrave of Baden, on 13 January 2023.
-Although, as a descendant of Queen Victoria, he is only a distant relative of today's British royals who are more closely related to some other princes of Hesse, descendants of Prince Philip's sister Sophie, there is a close connection to the British royal family through Donatus' adoptive grandparents, Louis, Prince of Hesse and by Rhine, and his wife Margaret Campbell Geddes, who were relatives and close friends of Queen Elizabeth II and Prince Philip, as Philip's sister Cecilie had been married to Louis' elder brother Georg Donatus, Hereditary Grand Duke of Hesse.
-The late Queen, Prince Philip and Charles (then Prince of Wales) have visited Wolfsgarten on several occasions.
-Ancestry
 
-Foundation of the House of Hesse
+Queen Sofía of Spain
 
-Founded in 1928, the Foundation of the House of Hesse is the successor institution of a family trust that had been established in 1830, confiscated by the Kingdom of Prussia in 1866, and re-established after partial restitution in 1878.
-The latter is mainly shown at Fasanerie Palace in Eichenzell, Hesse, a former summer palace of the Prince Abbots of Fulda that had been taken over by the Landgraves of Hesse after the secularization and mediatisation of the Prince-bishopric of Fulda in 1803.
-The Landgrave and his family live in Wolfsgarten and Panker.
+
+Marina, consort of Prince Michael
+
+
+On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
+In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
+Alexia and Carlos were the only two people out of the thirteen on board to be injured.
+Alexia suffered a broken collarbone and Carlos a fractured kneecap.
+At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
+Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
+Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
+The couple have four children: 
+
+
+Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
+Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
+The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +128,9 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +145,23 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,84 +453,163 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (41114d51-0f41-4bb9-80e5-b0d84deda394)
- Call ID: 41114d51-0f41-4bb9-80e5-b0d84deda394
+  AssignClass (04eedf0d-37ea-4ef6-9bd4-64ee603fd6c5)
+ Call ID: 04eedf0d-37ea-4ef6-9bd4-64ee603fd6c5
   Args:
-    type: :Man
-    source: Donatus_Prince_of_Hesse
-  AssignClass (b1892c80-c275-44ec-84f1-583b4ca31682)
- Call ID: b1892c80-c275-44ec-84f1-583b4ca31682
-  Args:
-    type: :Man
-    source: Moritz_Landgrave_of_Hesse
-  AssignClass (b71fae4b-7ed2-4366-bc52-bb8949538cf9)
- Call ID: b71fae4b-7ed2-4366-bc52-bb8949538cf9
-  Args:
-    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
+    source: Alexia
     type: :Woman
-  AssignClass (94299f4f-c5f6-46f9-86ba-44c7bec34e7f)
- Call ID: 94299f4f-c5f6-46f9-86ba-44c7bec34e7f
+  AssignClass (4b027646-7a49-4c41-aa31-780625b0e441)
+ Call ID: 4b027646-7a49-4c41-aa31-780625b0e441
   Args:
+    source: Constantine_II
+    type: :Man
+  AssignClass (d6e2f124-4c22-4848-9598-77d17273aa87)
+ Call ID: d6e2f124-4c22-4848-9598-77d17273aa87
+  Args:
+    source: Anne-Marie
     type: :Woman
-    source: Floria_Franziska_von_Faber-Castell
-  AddLiteral (fc6e2d13-9967-432c-9bfb-347426aa6858)
- Call ID: fc6e2d13-9967-432c-9bfb-347426aa6858
+  AddLiteral (a0472c5e-030e-492c-8d8d-b54b4fa74b27)
+ Call ID: a0472c5e-030e-492c-8d8d-b54b4fa74b27
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Donatus_Prince_of_Hesse
-    literal_value: 1966
-  AddLiteral (edcfa969-e7c5-4512-ae07-f916610529f6)
- Call ID: edcfa969-e7c5-4512-ae07-f916610529f6
-  Args:
-    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1940
-  AddLiteral (f310d37c-7993-41f5-9480-66d0fb7e63e7)
- Call ID: f310d37c-7993-41f5-9480-66d0fb7e63e7
+    literal_value: 1965
+    source: Alexia
+  AddTriple (0b6493b5-3126-4210-bd46-1edf6fdcb956)
+ Call ID: 0b6493b5-3126-4210-bd46-1edf6fdcb956
   Args:
-    relation: :hasBirthYear
-    source: Floria_Franziska_von_Faber-Castell
-    literal_type: xsd:integer
-    literal_value: 1974
-  AddTriple (29b17ecd-064c-4818-8105-342f1ee78023)
- Call ID: 29b17ecd-064c-4818-8105-342f1ee78023
-  Args:
-    source: Donatus_Prince_of_Hesse
+    target: Constantine_II
     relation: :hasFather
-    target: Moritz_Landgrave_of_Hesse
-  AddTriple (0c2531ad-d845-4470-87c2-708ab1a5a1d0)
- Call ID: 0c2531ad-d845-4470-87c2-708ab1a5a1d0
+    source: Alexia
+  AddTriple (3cb9e22d-06ce-4bb7-8312-c564de61041b)
+ Call ID: 3cb9e22d-06ce-4bb7-8312-c564de61041b
   Args:
-    target: Tatiana_of_Sayn-Wittgenstein-Berleburg
+    source: Alexia
+    target: Anne-Marie
     relation: :hasMother
-    source: Donatus_Prince_of_Hesse
-  AddTriple (661c091e-8e9b-42ae-9a97-0b4efa5b1d5b)
- Call ID: 661c091e-8e9b-42ae-9a97-0b4efa5b1d5b
+  AssignClass (2a09ddf0-94bc-4e1b-9f85-b7a6547e875b)
+ Call ID: 2a09ddf0-94bc-4e1b-9f85-b7a6547e875b
   Args:
-    target: Floria_Franziska_von_Faber-Castell
-    relation: :hasMarriageYear
-    source: Donatus_Prince_of_Hesse
-  AddLiteral (5e4ef65b-5b6d-4496-8f16-69795fec8b7a)
- Call ID: 5e4ef65b-5b6d-4496-8f16-69795fec8b7a
+    type: :Man
+    source: Pavlos
+  AddTriple (3950e3dc-03a9-49fe-84cd-07fb0cbed20e)
+ Call ID: 3950e3dc-03a9-49fe-84cd-07fb0cbed20e
   Args:
-    literal_value: 2003
+    source: Alexia
+    relation: :hasBrother
+    target: Pavlos
+  AddTriple (c6f2158a-1495-4fba-b45c-1d6cad884db1)
+ Call ID: c6f2158a-1495-4fba-b45c-1d6cad884db1
+  Args:
+    target: Constantine_II
+    relation: :hasParent
+    source: Pavlos
+  AddTriple (30fd4e0e-6200-41ef-b7ec-34a252b37dac)
+ Call ID: 30fd4e0e-6200-41ef-b7ec-34a252b37dac
+  Args:
+    source: Pavlos
+    relation: :hasParent
+    target: Anne-Marie
+  AssignClass (4cb6145a-44d4-484b-ad87-b680af63739f)
+ Call ID: 4cb6145a-44d4-484b-ad87-b680af63739f
+  Args:
+    type: :Man
+    source: Carlos_Javier_Morales_Quintana
+  AddTriple (b3b67943-3002-48a6-ba5b-090223882bc6)
+ Call ID: b3b67943-3002-48a6-ba5b-090223882bc6
+  Args:
+    source: Alexia
+    relation: :hasRelation
+    target: Carlos_Javier_Morales_Quintana
+  AddLiteral (d095047e-5b9a-49e0-960d-8a862ae4dd0f)
+ Call ID: d095047e-5b9a-49e0-960d-8a862ae4dd0f
+  Args:
+    source: Alexia
+    literal_value: 1999
     relation: :hasMarriageYear
-    source: Donatus_Prince_of_Hesse
     literal_type: xsd:integer
-  AddTriple (430cdc42-a09d-44bb-90e8-f09fe0d0d21c)
- Call ID: 430cdc42-a09d-44bb-90e8-f09fe0d0d21c
+  AssignClass (25b030da-f47d-4f54-83d8-ea2a4b72c187)
+ Call ID: 25b030da-f47d-4f54-83d8-ea2a4b72c187
   Args:
-    target: Donatus_Prince_of_Hesse
-    source: Moritz_Landgrave_of_Hesse
-    relation: :isFatherOf
-  AddTriple (ce44ba31-49fa-4eea-8684-70005b09483b)
- Call ID: ce44ba31-49fa-4eea-8684-70005b09483b
+    source: Theodora
+    type: :Woman
+  AddTriple (a8688982-3031-4732-a8ee-4cf18d608df6)
+ Call ID: a8688982-3031-4732-a8ee-4cf18d608df6
   Args:
-    relation: :isMotherOf
-    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
-    target: Donatus_Prince_of_Hesse
-  Finish (dea28d34-96a0-495e-8fc3-533b77ac25a1)
- Call ID: dea28d34-96a0-495e-8fc3-533b77ac25a1
+    relation: :hasSister
+    target: Theodora
+    source: Alexia
+  AssignClass (84a5ef6a-5c2d-43ad-8dac-0c3cba7a1ef4)
+ Call ID: 84a5ef6a-5c2d-43ad-8dac-0c3cba7a1ef4
+  Args:
+    source: Maria-Olympia
+    type: :Woman
+  AddTriple (dcfee9d9-e0c3-41bb-ba13-d8067a24c63d)
+ Call ID: dcfee9d9-e0c3-41bb-ba13-d8067a24c63d
+  Args:
+    source: Alexia
+    relation: :hasRelation
+    target: Maria-Olympia
+  AssignClass (58228cb9-0fd5-4e38-910e-1af34a8da115)
+ Call ID: 58228cb9-0fd5-4e38-910e-1af34a8da115
+  Args:
+    type: :Woman
+    source: Mafalda
+  AssignClass (cf38cffc-83b9-405b-9638-98bd64ca5925)
+ Call ID: cf38cffc-83b9-405b-9638-98bd64ca5925
+  Args:
+    type: :Man
+    source: Kyril
+  AddTriple (96c46d86-8ca9-4a9e-8098-d23b574ebe75)
+ Call ID: 96c46d86-8ca9-4a9e-8098-d23b574ebe75
+  Args:
+    source: Mafalda
+    relation: :hasFather
+    target: Kyril
+  AssignClass (f3475a97-fc96-470b-8dcf-f179061cf99e)
+ Call ID: f3475a97-fc96-470b-8dcf-f179061cf99e
+  Args:
+    source: Simeon_of_Bulgaria
+    type: :Man
+  AddTriple (b9c415ce-bf5b-412f-9d71-4d4eef3cf694)
+ Call ID: b9c415ce-bf5b-412f-9d71-4d4eef3cf694
+  Args:
+    source: Kyril
+    target: Simeon_of_Bulgaria
+    relation: :hasFather
+  AssignClass (54cf4c50-0753-47c4-8379-94bc10a178f6)
+ Call ID: 54cf4c50-0753-47c4-8379-94bc10a178f6
+  Args:
+    type: :Woman
+    source: Sofia
+  AddTriple (cdc8f62f-9fea-4c4a-8b16-d9fc961ac519)
+ Call ID: cdc8f62f-9fea-4c4a-8b16-d9fc961ac519
+  Args:
+    relation: :isAuntOf
+    target: Alexia
+    source: Sofia
+  AssignClass (89d977ee-f648-4677-a2eb-60c42efebdc1)
+ Call ID: 89d977ee-f648-4677-a2eb-60c42efebdc1
+  Args:
+    type: :Man
+    source: Felipe_VI
+  AddTriple (cd5c8b3e-097d-4bee-a841-87dce56e3edd)
+ Call ID: cd5c8b3e-097d-4bee-a841-87dce56e3edd
+  Args:
+    source: Alexia
+    target: Felipe_VI
+    relation: :isBloodrelationOf
+  AssignClass (95fab785-41aa-4398-92b0-18884f605999)
+ Call ID: 95fab785-41aa-4398-92b0-18884f605999
+  Args:
+    source: Ingrid
+    type: :Woman
+  AddTriple (3026c8ca-7b59-4161-83d1-83f487d47674)
+ Call ID: 3026c8ca-7b59-4161-83d1-83f487d47674
+  Args:
+    relation: :hasMother
+    target: Ingrid
+    source: Anne-Marie
+  Finish (86c027db-a1b9-4b9e-9353-badf898bfe64)
+ Call ID: 86c027db-a1b9-4b9e-9353-badf898bfe64
   Args:

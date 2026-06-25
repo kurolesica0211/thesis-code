@@ -69,30 +69,17 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Mary Frances Elphinstone, Lady Elphinstone GCVO (née Bowes-Lyon; 30 August 1883 – 8 February 1961), was a British aristocrat.
-She was an elder sister of Queen Elizabeth the Queen Mother and an aunt and godmother of Queen Elizabeth II.
-Early life
-
-Lady Elphinstone was born The Honourable Mary Frances Bowes-Lyon on 30 August 1883 in Angus, Scotland, to Claude Bowes-Lyon, 14th
-She was an elder sister of Elizabeth Bowes-Lyon known as Queen Elizabeth of the United Kingdom (later the Queen Mother).
-Personal life
-
-Lady Mary married Sidney Elphinstone, 16th Lord Elphinstone (1869–1955) on 24 July 1910 in Westminster.
-Lord Elphinstone inherited extensive estates, some of which had been in the family since the reign of King David II of Scotland.
-He served as a governor of the Bank of Scotland, Lord Clerk Register of Scotland and Keeper of the Signet and Lord High Commissioner of the Church of Scotland.
-The couple had five children:
-
-
-In 1937, Lady Elphinstone attended her sister and brother-in-law's coronation whereby she sat behind her niece Princess Elizabeth, who would be the future queen, in the royal box.
-She was one of the leading guests in the wedding of Princess Elizabeth and Philip Mountbatten in 1947.
-Lord Elphinstone died at their home Carberry Tower, Musselburgh, on 28 November 1955.
-Lady Elphinstone, who served as president of the Midlothian branch of the British Red Cross, died on 8 February 1961, aged 77, also at Carberry Tower in Inveresk, Scotland.
+Don Marco Alfonso Torlonia, 6th Prince of Civitella-Cesi (2 July 1937 – 5 December 2014) was the son of Alessandro Torlonia, 5th Prince of Civitella-Cesi and Infanta Beatriz of Spain, daughter of King Alfonso XIII of Spain.
+King Juan Carlos I of Spain.
+He was also an uncle to Princess Sibilla of Luxembourg, daughter of his younger sister, Olimpia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +95,9 @@ Lady Elphinstone, who served as president of the Midlothian branch of the Britis
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +112,23 @@ Lady Elphinstone, who served as president of the Midlothian branch of the Britis
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +146,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +228,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +251,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +271,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +281,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +321,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,262 +420,85 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8e564749-5778-49a6-aafe-833594e66766)
- Call ID: 8e564749-5778-49a6-aafe-833594e66766
+  AssignClass (178543f6-9eda-407c-91b0-a5fc5618dcdf)
+ Call ID: 178543f6-9eda-407c-91b0-a5fc5618dcdf
+  Args:
+    type: :Man
+    source: Marco_Alfonso_Torlonia
+  AssignClass (f29e6d2f-f19d-487d-b73c-f114abee99fb)
+ Call ID: f29e6d2f-f19d-487d-b73c-f114abee99fb
+  Args:
+    source: Alessandro_Torlonia
+    type: :Man
+  AssignClass (491ffb8d-5ff1-49df-b6a7-d2551b9b4aee)
+ Call ID: 491ffb8d-5ff1-49df-b6a7-d2551b9b4aee
+  Args:
+    source: Beatriz_of_Spain
+    type: :Woman
+  AssignClass (0b67cf8d-e9ff-4236-8839-802ccb9f0215)
+ Call ID: 0b67cf8d-e9ff-4236-8839-802ccb9f0215
+  Args:
+    type: :Man
+    source: Alfonso_XIII_of_Spain
+  AssignClass (8509fa7d-8b27-4a33-8823-ef0e9931a9df)
+ Call ID: 8509fa7d-8b27-4a33-8823-ef0e9931a9df
+  Args:
+    source: Juan_Carlos_I_of_Spain
+    type: :Man
+  AssignClass (b2aa50e4-b0cc-449d-a60c-a75d3f866eca)
+ Call ID: b2aa50e4-b0cc-449d-a60c-a75d3f866eca
   Args:
     type: :Woman
-    source: :Mary_Frances_Elphinstone
-  AssignClass (beaa0218-ffc9-43fb-b4c6-5e9e9c44d6b0)
- Call ID: beaa0218-ffc9-43fb-b4c6-5e9e9c44d6b0
+    source: Sibilla_of_Luxembourg
+  AssignClass (f1710472-af21-431f-a619-d713c54d3037)
+ Call ID: f1710472-af21-431f-a619-d713c54d3037
   Args:
-    type: :Person
-    source: :Mary_Frances_Elphinstone
-  AddLiteral (2b51fa18-84b1-4e23-adfa-68ecdd226912)
- Call ID: 2b51fa18-84b1-4e23-adfa-68ecdd226912
+    source: Olimpia
+    type: :Woman
+  AddLiteral (b145786f-e5f3-423d-a132-aacfd902b57f)
+ Call ID: b145786f-e5f3-423d-a132-aacfd902b57f
   Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :Mary_Frances_Elphinstone
-    literal_value: 1883
-  AddLiteral (2dd9ba08-edd2-4e3c-b94f-307720c48e01)
- Call ID: 2dd9ba08-edd2-4e3c-b94f-307720c48e01
+    literal_value: 1937
+    source: Marco_Alfonso_Torlonia
+  AddLiteral (d105fb30-af3d-4206-91c4-327ff5c15e1e)
+ Call ID: d105fb30-af3d-4206-91c4-327ff5c15e1e
   Args:
-    source: :Mary_Frances_Elphinstone
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 1961
-  AddTriple (f909e2d1-d7cb-4765-87d0-7688700640f1)
- Call ID: f909e2d1-d7cb-4765-87d0-7688700640f1
+    relation: :hasDeathYear
+    literal_value: 2014
+    source: Marco_Alfonso_Torlonia
+  AddTriple (d23d54cc-62d3-4c42-9f7a-b1b080fb6aff)
+ Call ID: d23d54cc-62d3-4c42-9f7a-b1b080fb6aff
   Args:
-    target: :Lady_Elphinstone
-    source: :Mary_Frances_Elphinstone
-    relation: :knownAs
-  AssignClass (68f1717e-c5e2-464e-8895-ad6f6e76fc78)
- Call ID: 68f1717e-c5e2-464e-8895-ad6f6e76fc78
-  Args:
-    type: :Woman
-    source: :Queen_Elizabeth_the_Queen_Mother
-  AssignClass (28e626d1-274b-47c4-897e-bf27ff8ebf48)
- Call ID: 28e626d1-274b-47c4-897e-bf27ff8ebf48
-  Args:
-    type: :Person
-    source: :Queen_Elizabeth_the_Queen_Mother
-  AddTriple (ef8e7597-ba1f-42e1-8e4b-18f0af91dfaf)
- Call ID: ef8e7597-ba1f-42e1-8e4b-18f0af91dfaf
-  Args:
-    target: :Queen_Elizabeth_the_Queen_Mother
-    source: :Mary_Frances_Elphinstone
-    relation: :isSisterOf
-  AssignClass (59c7c05f-5fe3-436a-a4e6-8539865a27a2)
- Call ID: 59c7c05f-5fe3-436a-a4e6-8539865a27a2
-  Args:
-    type: :Woman
-    source: :Queen_Elizabeth_II
-  AssignClass (38518e04-ddc6-4c87-bd49-100f430bd366)
- Call ID: 38518e04-ddc6-4c87-bd49-100f430bd366
-  Args:
-    type: :Person
-    source: :Queen_Elizabeth_II
-  AddTriple (e91dfdb3-6625-4b26-b082-b4af25c4bd85)
- Call ID: e91dfdb3-6625-4b26-b082-b4af25c4bd85
-  Args:
-    target: :Queen_Elizabeth_II
-    relation: :isAuntOf
-    source: :Mary_Frances_Elphinstone
-  AssignClass (ccc2a8ab-bc74-4740-a157-b20a726ed9df)
- Call ID: ccc2a8ab-bc74-4740-a157-b20a726ed9df
-  Args:
-    type: :Man
-    source: :Claude_Bowes-Lyon
-  AssignClass (ceed8771-b803-4943-82ea-203fdb6d4d82)
- Call ID: ceed8771-b803-4943-82ea-203fdb6d4d82
-  Args:
-    type: :Person
-    source: :Claude_Bowes-Lyon
-  AddTriple (238698c8-7bfd-4c78-b9aa-eb3f91b1746a)
- Call ID: 238698c8-7bfd-4c78-b9aa-eb3f91b1746a
-  Args:
-    target: :Claude_Bowes-Lyon
-    source: :Mary_Frances_Elphinstone
+    target: Alessandro_Torlonia
+    source: Marco_Alfonso_Torlonia
     relation: :hasFather
-  AssignClass (e5dd6fd2-a085-460d-a693-bf1f7b2c2867)
- Call ID: e5dd6fd2-a085-460d-a693-bf1f7b2c2867
+  AddTriple (786de2a9-ccb9-4e84-aa01-0e2538a11eca)
+ Call ID: 786de2a9-ccb9-4e84-aa01-0e2538a11eca
   Args:
-    type: :Man
-    source: :Sidney_Elphinstone
-  AssignClass (c04b0297-16cf-4ef7-819c-a52fea324c7d)
- Call ID: c04b0297-16cf-4ef7-819c-a52fea324c7d
+    target: Beatriz_of_Spain
+    relation: :hasMother
+    source: Marco_Alfonso_Torlonia
+  AddTriple (07684dd8-a114-444b-8d1f-cc8483a0fea3)
+ Call ID: 07684dd8-a114-444b-8d1f-cc8483a0fea3
   Args:
-    type: :Person
-    source: :Sidney_Elphinstone
-  AddLiteral (127dccf5-abcf-4cb1-bdf2-ad086df8f9d9)
- Call ID: 127dccf5-abcf-4cb1-bdf2-ad086df8f9d9
+    target: Alfonso_XIII_of_Spain
+    relation: :hasFather
+    source: Beatriz_of_Spain
+  AddTriple (62ce0230-229c-4d6b-81fe-da67e4970621)
+ Call ID: 62ce0230-229c-4d6b-81fe-da67e4970621
   Args:
-    literal_value: 1910
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: :Mary_Frances_Elphinstone
-  AddTriple (4aca77ae-6261-4bb7-bc1b-f57e8281bb99)
- Call ID: 4aca77ae-6261-4bb7-bc1b-f57e8281bb99
+    target: Sibilla_of_Luxembourg
+    relation: :hasChild
+    source: Olimpia
+  AddTriple (9975aaf7-673a-48b7-90a7-e900898780b1)
+ Call ID: 9975aaf7-673a-48b7-90a7-e900898780b1
   Args:
-    relation: :hasRelation
-    source: :Mary_Frances_Elphinstone
-    target: :Sidney_Elphinstone
-  AddLiteral (dd3f545a-245d-4821-b52e-2888e1cf8ae5)
- Call ID: dd3f545a-245d-4821-b52e-2888e1cf8ae5
-  Args:
-    literal_value: 1869
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: :Sidney_Elphinstone
-  AddLiteral (8cbbb502-62a5-4773-a4ba-e6f8c3b2c88d)
- Call ID: 8cbbb502-62a5-4773-a4ba-e6f8c3b2c88d
-  Args:
-    literal_value: 1955
-    source: :Sidney_Elphinstone
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  Finish (08dcf708-555a-4e14-a6b3-9c42c7ccaa79)
- Call ID: 08dcf708-555a-4e14-a6b3-9c42c7ccaa79
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Mary_Frances_Elphinstone a :Person,
-          :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1961 ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMarriageYear 1910 ;
-      :hasRelation data:Sidney_Elphinstone ;
-      :isAuntOf data:Queen_Elizabeth_II ;
-      :isSisterOf data:Queen_Elizabeth_the_Queen_Mother ;
-      :knownAs data:Lady_Elphinstone .
-
-  data:Claude_Bowes-Lyon a :Man,
-          :Person .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_the_Queen_Mother a :Person,
-          :Woman .
-
-  data:Sidney_Elphinstone a :Man,
-          :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1955 .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Lady_Elphinstone']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (e9b0b901-a02a-4c61-91d2-166861a5ecae)
- Call ID: e9b0b901-a02a-4c61-91d2-166861a5ecae
-  Args:
-    type: :Person
-    source: :Lady_Elphinstone
-  Finish (fa78835c-e79a-4af4-a983-678798e65b03)
- Call ID: fa78835c-e79a-4af4-a983-678798e65b03
+    relation: :hasSister
+    source: Marco_Alfonso_Torlonia
+    target: Olimpia
+  Finish (aa6bd95d-3a84-4d4a-9de3-3c3ca0da8b05)
+ Call ID: aa6bd95d-3a84-4d4a-9de3-3c3ca0da8b05
   Args:

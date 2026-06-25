@@ -85,44 +85,147 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infante Juan, Count of Barcelona (Juan Carlos Teresa Silverio Alfonso de Borbón y Battenberg; 20 June 1913 – 1 April 1993), was a claimant to the Spanish throne as Juan III.
-He was the third son and designated heir of King Alfonso XIII and Victoria Eugenie of Battenberg.
-Juan's son Juan Carlos I became King of Spain when Spain's constitutional monarchy was restored in 1975.
+Prince Michael of Kent (Michael George Charles Franklin; born 4 July 1942) is a member of the British royal family who is 53rd in line to the British throne as of 2026.
+The younger son of Prince George, Duke of Kent, and Princess Marina of Greece and Denmark, he is a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Queen Elizabeth II.
+Michael's mother was also a first cousin of Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II, making him both a second cousin and first cousin once removed to Charles III.
+Michael occasionally represented Elizabeth II at some functions in Commonwealth realms outside the United Kingdom during her reign.
 Early life
 
-Infante Juan was born at the Palace of San Ildefonso.
-Owing to the renunciations in 1933 of his brothers Alfonso, Prince of Asturias, and Infante Jaime, Duke of Segovia, Infante Juan became first in line to the defunct Spanish throne.
-He thus received the title Prince of Asturias while serving with the Royal Navy in Bombay.
-He married Princess María de las Mercedes of Bourbon-Two Sicilies (1910–2000), known in Spain as Doña María de las Mercedes de Borbón-Dos Sicilias y Orleans, in Rome on 12 October 1935.
-Children
+Michael was born at 7:35 pm on 4 July 1942 at Coppins, Iver, Buckinghamshire.
+He was the third child of Prince George, Duke of Kent, who was the fourth son of King George V and Queen Mary and a younger brother of kings Edward VIII and George VI.
+At birth, Michael was seventh in line to the British throne.
+His mother was Princess Marina, a daughter of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia.
+At Michael's baptism on 4 August in the Private Chapel of Windsor Castle, his godparents were his paternal uncle the King; Queen Wilhelmina of the Netherlands (for whom her son-in-law Prince Bernhard stood proxy); King Haakon VII of Norway (his great-uncle); US President Franklin D. Roosevelt (for whom the Duke of Kent stood proxy); Frederica of Hanover, Hereditary Princess of Greece (his first cousin once removed, who was absent); Prince Henry, Duke of Gloucester (his paternal uncle, who was absent); the Dowager Marchioness of Milford Haven (his paternal first cousin twice removed); and Lady Patricia Ramsay (his paternal first cousin twice removed).
+Seven weeks after Michael's birth, his father was killed in a plane crash near Dunbeath, Caithness, Scotland, on 25 August 1942.
+At the age of five, Michael was a page boy at the wedding of his cousins Princess Elizabeth and Lieutenant Philip Mountbatten.
+Education and military service
 
-They had four children:
+Michael was educated at Sunningdale School and Eton College and is fluent in French as well as  having a "working knowledge" of German and Italian.
+Michael was commissioned into the 11th Hussars (Prince Albert's Own) in 1963.
+He later served in The Royal Hussars (Prince of Wales's Own) after the amalgamation between the 11th Hussars and the 10th Royal Hussars (Prince of Wales's Own) in 1969.
+In 1994, Michael was made Honorary Commodore (later Honorary Rear Admiral and then Vice Admiral) of the Royal Naval Reserve, and in 2002, he was made Honorary Air Commodore of RAF Benson (promoted to Honorary Air Marshal in 2012).
+He is also Colonel-in-Chief of the Essex and Kent Scottish Regiment in Canada.
+Activities and patronages
+
+As the third child of George V's fourth son, it was not expected that Michael, as the only second son in the extended royal family, would undertake many engagements on behalf of the royal family.
+He has, however, never received a parliamentary annuity or an allowance from the British Privy Purse, unlike both his elder brother, Prince Edward, Duke of Kent, and his sister, Princess Alexandra, who both carry out official royal duties.
+Michael represented the Queen at state funerals in India, Cyprus and Swaziland and, with his wife, Princess Michael of Kent, represented the Queen at the independence celebrations in Belize, and at the coronation of King Mswati III of Swaziland.
+Michael supports a large number of charities and organisations.
+The Prince Michael Road Safety Award was created in 1987 to give public recognition to those improving road safety throughout Great Britain and later the world in general.
+Michael also set up the Prince Michael of Kent Foundation in 2004 to support projects in Russia, including heritage and cultural restoration.
+Marriage and personal life
+
+On 30 June 1978, Michael married Baroness Marie-Christine von Reibnitz in a civil ceremony at the City Hall (Wiener Rathaus) in Vienna, Austria.
+As a Roman Catholic divorcée, previously married to banker Thomas Troubridge, with a Church annulment granted in May 1978, Marie-Christine required papal dispensation for a Catholic ceremony.
+Marie-Christine has named Lord Mountbatten as their matchmaker.
+Under the terms of the Act of Settlement 1701, Michael forfeited his place in the line of succession to the throne through his marriage to a Catholic.
+Michael and Marie-Christine have two children, both brought up as members of the Church of England and therefore in the line of succession to the throne since birth:
+In 2014, Michael was successfully treated for prostate cancer.
+Personal interests
+
+Commercial
+
+Michael manages his own consultancy business, and undertakes business throughout the world.
+Masonic
+
+Michael is an active Freemason.
+He is the Grand Master of the Grand Lodge of Mark Master Masons, and Provincial Grand Master of the Provincial Grand Lodge of Middlesex.
+Russia
+
+Michael speaks fluent Russian and has a strong interest in Russia, where he is a well-known figure (he is a former recipient of the Order of Friendship).
+Tsar Nicholas II was a first cousin of three of his grandparents: George V, Prince Nicholas of Greece and Denmark, and Grand Duchess Elena Vladimirovna of Russia.
+When the bodies of the Tsar and some of his family were recovered in 1991, the remains were later identified by DNA using, among others, a sample from Michael for recognition.
+He is also the second cousin of Maria Vladimirovna, Grand Duchess of Russia, who is a claimant to the headship of the Imperial Family of Russia.
+They share the same great-grandfather, Grand Duke Vladimir Alexandrovich.
+Michael is the patron of organisations which have close ties with Russia, including the Russo-British Chamber of Commerce and the St Gregory's Foundation.
+In his capacity as patron of Children's Fire and Burns Trust, Michael has led fundraising rallies in 1999 and 2003 in Russia to raise money for the charity.
+He also led another rally in 2005 and raised money for the Royal Marsden Hospital and Britain's Charities Aid Foundation Russia.
+Michael served as the Patron of the Russo-British Chamber of Commerce (RBCC).
+On 4 March 2022, Michael returned the Order of Friendship due to the Russian invasion of Ukraine.
+Finland
+
+Michael of Kent made a visit to Finland in 2017, during which he visited Helsinki, Espoo, Porvoo, Pori, and Tampere.
+Sport
+
+Michael was a part of the Royal Military Academy Sandhurst rowing crew that won the Maiden Fours at Bedford in 1961.
+Media scrutiny
+
+In 2002, both Michael and his wife were the subject of criticism over the rent paid on their accommodation at Kensington Palace following scrutiny by the House of Commons Public Accounts committee on the cost of royal palaces and whether they were value for money.
+When it was claimed that the couple paid a rent of only £69 per week for the use of their apartments at Kensington Palace, Buckingham Palace announced that "The Queen is paying the rent for Prince and Princess Michael of Kent's apartment at a commercial rate of £120,000 annually, from her own private funds.
+This rent payment by The Queen is in recognition of the Royal engagements and work for various charities which Prince and Princess Michael of Kent have undertaken at their own expense, and without any public funding.
+"
 
 
-They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with his mother, Victoria Eugenie.
-Together with their children Pilar and Juan Carlos, they took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-On this trip, Juan Carlos met the hosts' 15-year-old daughter, Sofia, his future wife, for the first time.
-Claim to the Spanish throne
+In 2003, Michael's judgment was questioned as he developed a close working relationship with businessman Michael Wynne-Parker, who had a history of financial misconduct, bans from serving as a director, and had been described by a judge as having "the modus operandi of a crook".
+Wynne-Parker had organised and accompanied the prince on official trips to Estonia, helping arrange meetings with politicians and business figures, which raised concerns about credibility and vetting.
+Prince Michael denied receiving "any fees or expenses or been paid in any way" by Wynne-Parker and added that he was not aware of his reputation.
+Michael has been scrutinized for financial assistance given to him by exiled Russian oligarch Boris Berezovsky through offshore companies, with a reported total of £320,000 in payments over the period 2002–2008.
+In an interview with The Sunday Times, Berezovsky stated, "There is nothing underhand or improper about the financial assistance I have given Prince Michael.
+"
 
-In 1931, Juan was subject to dynastic negotiations between the Alfonsists and the Carlists, concluded in the so-called Pact of Territet, which was never implemented.
-Juan became heir apparent to the defunct Spanish throne after the renunciations of his two older brothers, Alfonso and Jaime, in 1933.
-To assert his claim to the throne, following his father's death (in 1941) he used the title of Count of Barcelona, a sovereign title associated with the Spanish crown.
-Spain runs the risk of being dragged into a new fratricidal conflict and of finding itself totally isolated from the world.
-When General Franco declared Spain a monarchy in 1947, he characterized it as a "restoration".
-However, Franco was afraid that Juan would roll back the Spanish State because he favoured constitutional monarchy, which would restore parliamentary democracy.
-As a result, in 1969, Franco passed over Juan in favour of Juan's son, Juan Carlos, who Franco believed would be more likely to continue the dictatorship after his death.
-Juan Carlos later surprised many by his support of democratising Spain.
-Franco and Juan did not have a good relationship, with the latter constantly pressing Franco to restore the monarchy.
-Relations soured further when Juan called Franco an "illegitimate usurper".
-Juan formally renounced his rights to the Spanish throne eight years after being displaced as recognised heir to the throne by Franco, and two years after his son, Juan Carlos, had become king.
-In return, his son officially granted him the title of Count of Barcelona, which he had claimed for so long.
-After his death in 1993, he was buried with honours due a king, under the name Juan III (his title if he had become king) in the Royal Crypt of the monastery of San Lorenzo de El Escorial, near Madrid.
+
+In May 2021, reports were published stating that Michael was "selling access" to Vladimir Putin's political representatives.
+Footage from a Zoom call was released of Michael, alongside Simon Isaacs, 4th Marquess of Reading, interacting with undercover reporters posing as business executives seeking to make contacts with the Kremlin.
+Michael was being offered £143,000 for a proposal and £36,000 a month by the faux businessmen, which he expressed satisfaction with.
+The Marquess claimed that Michael was the Queen's "unofficial ambassador to Russia" and had direct access to Putin.
+He later stated that he had "overpromised", while Michael said that he had not had contact with Putin since 2003.
+In a 2019 interview, Michael stated that he visited Russia twice a year as part of his work for the Russo-British Chamber of Commerce.
+Marina Litvinenko denounced Michael's actions, saying that it demonstrated that he did not "care about human rights, democracy, about the people who are dying in Russia or what he did to your own citizens on UK soil".
+I'd love to know what Prince Michael thinks he is doing by making the UK's values and standards look optional.
+"
+
+
+Titles, styles, honours and arms
+
+Titles
+
+Official
+
+As a child of a younger son of a British sovereign, he is styled as a British prince with the prefix His Royal Highness and a territorial designation deriving from his father's dukedom: "His Royal Highness Prince Michael of Kent".
+Other titles
+
+Honours
+
+Foreign
+
+Wear of orders, decorations, and medals
+
+The ribbons worn regularly by Michael in undress uniform are as follows:
+
+
+Honorary military appointments
+
+Fellowships
+
+Memberships
+
+Honorary academic degrees and awards
+
+Degrees and appointments
+
+Awards
+
+Arms
+
+Issue
+
+Ancestry
+
+See also
+
+Notes
+
+References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +241,9 @@ After his death in 1993, he was buried with honours due a king, under the name J
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +258,23 @@ After his death in 1993, he was buried with honours due a king, under the name J
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +292,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +374,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +397,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +417,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +427,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +467,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,235 +566,177 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ab735dc9-43e3-4e8f-9d65-fab93cb2af98)
- Call ID: ab735dc9-43e3-4e8f-9d65-fab93cb2af98
+  AssignClass (8a7d4124-59b0-4271-9d82-dccffdc9659a)
+ Call ID: 8a7d4124-59b0-4271-9d82-dccffdc9659a
   Args:
-    source: Infante_Juan
     type: :Man
-  AssignClass (b3baba6f-bd45-4852-b47b-f26dd77f1504)
- Call ID: b3baba6f-bd45-4852-b47b-f26dd77f1504
+    source: Prince_Michael_of_Kent
+  AssignClass (97908c26-6884-4e16-922f-9dcacfb1d810)
+ Call ID: 97908c26-6884-4e16-922f-9dcacfb1d810
   Args:
-    source: Infante_Juan
     type: :Person
-  AssignClass (659bd7de-01a4-4514-8cbc-82ace981877c)
- Call ID: 659bd7de-01a4-4514-8cbc-82ace981877c
+    source: Prince_Michael_of_Kent
+  AddLiteral (84036cc4-e77f-43a5-86d8-9f52d0d9052f)
+ Call ID: 84036cc4-e77f-43a5-86d8-9f52d0d9052f
   Args:
-    type: :Male
-    source: Male_Sex
-  AddTriple (f4a53639-2cb1-40c3-8e02-029bec02966b)
- Call ID: f4a53639-2cb1-40c3-8e02-029bec02966b
-  Args:
-    relation: :hasSex
-    target: Male_Sex
-    source: Infante_Juan
-  AddLiteral (1b29d05e-23dc-4519-9e97-30fa83dde85d)
- Call ID: 1b29d05e-23dc-4519-9e97-30fa83dde85d
-  Args:
-    literal_type: xsd:integer
+    source: Prince_Michael_of_Kent
     relation: :hasBirthYear
-    source: Infante_Juan
-    literal_value: 1913
-  AddLiteral (38d1ffa9-4ac6-4921-b709-d2abd1c8379c)
- Call ID: 38d1ffa9-4ac6-4921-b709-d2abd1c8379c
-  Args:
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Infante_Juan
-    literal_value: 1993
-  AssignClass (a30d3533-124e-4c46-b213-0885c6e2186d)
- Call ID: a30d3533-124e-4c46-b213-0885c6e2186d
+    literal_value: 1942
+  AssignClass (3006e2d1-ffc9-4a37-a928-b6e29864031f)
+ Call ID: 3006e2d1-ffc9-4a37-a928-b6e29864031f
   Args:
-    source: Alfonso_XIII
     type: :Man
-  AssignClass (27f06a97-d838-4b1d-8e54-471dade5ebef)
- Call ID: 27f06a97-d838-4b1d-8e54-471dade5ebef
+    source: Prince_George_Duke_of_Kent
+  AssignClass (fba65c5b-fcdd-476f-ad05-387e65e4498c)
+ Call ID: fba65c5b-fcdd-476f-ad05-387e65e4498c
   Args:
     type: :Person
-    source: Alfonso_XIII
-  AssignClass (3998db71-229c-44a8-ac08-151b28cc2baf)
- Call ID: 3998db71-229c-44a8-ac08-151b28cc2baf
+    source: Prince_George_Duke_of_Kent
+  AssignClass (eeaeab32-f6fd-4a77-8f44-553236e534d5)
+ Call ID: eeaeab32-f6fd-4a77-8f44-553236e534d5
   Args:
-    source: Victoria_Eugenie
+    source: Princess_Marina_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (0377bba7-77ee-41e6-aede-8b6cb523de97)
- Call ID: 0377bba7-77ee-41e6-aede-8b6cb523de97
+  AssignClass (0c392afc-9d08-48de-a555-2b45931f101b)
+ Call ID: 0c392afc-9d08-48de-a555-2b45931f101b
   Args:
+    source: Princess_Marina_of_Greece_and_Denmark
     type: :Person
-    source: Victoria_Eugenie
-  AddTriple (4f5bd437-3a5c-4d4b-92cf-fd23f669e281)
- Call ID: 4f5bd437-3a5c-4d4b-92cf-fd23f669e281
+  AddTriple (8e7a9530-c55b-448d-b347-ce5ed9d8dac7)
+ Call ID: 8e7a9530-c55b-448d-b347-ce5ed9d8dac7
   Args:
-    source: Infante_Juan
     relation: :hasFather
-    target: Alfonso_XIII
-  AddTriple (c8349948-aefa-42d8-bddb-fd4fd254f7a0)
- Call ID: c8349948-aefa-42d8-bddb-fd4fd254f7a0
+    target: Prince_George_Duke_of_Kent
+    source: Prince_Michael_of_Kent
+  AddTriple (85647d62-c50f-490a-99bb-b9c89974d51c)
+ Call ID: 85647d62-c50f-490a-99bb-b9c89974d51c
   Args:
-    source: Infante_Juan
-    target: Victoria_Eugenie
+    source: Prince_Michael_of_Kent
     relation: :hasMother
-  AssignClass (133c70f4-567e-40e7-bd46-582be6ae3f08)
- Call ID: 133c70f4-567e-40e7-bd46-582be6ae3f08
+    target: Princess_Marina_of_Greece_and_Denmark
+  AssignClass (8709ac3d-0b19-41df-9378-d30c0100f947)
+ Call ID: 8709ac3d-0b19-41df-9378-d30c0100f947
   Args:
+    source: King_George_V
     type: :Man
-    source: Juan_Carlos_I
-  AssignClass (c4a106de-28bf-4053-8345-ec5d783cebf8)
- Call ID: c4a106de-28bf-4053-8345-ec5d783cebf8
+  AssignClass (5d00a766-aec8-4a56-9960-adb563dd755c)
+ Call ID: 5d00a766-aec8-4a56-9960-adb563dd755c
   Args:
     type: :Person
-    source: Juan_Carlos_I
-  AddTriple (f301b7a1-f57d-454c-b88c-62d9717c4f43)
- Call ID: f301b7a1-f57d-454c-b88c-62d9717c4f43
+    source: King_George_V
+  AssignClass (7f89cfce-e91a-4142-94b6-81c4ccf2de4c)
+ Call ID: 7f89cfce-e91a-4142-94b6-81c4ccf2de4c
   Args:
-    source: Juan_Carlos_I
-    target: Infante_Juan
-    relation: :isSonOf
-  AssignClass (448491ef-51ef-4299-bf34-3f1b9f00ef90)
- Call ID: 448491ef-51ef-4299-bf34-3f1b9f00ef90
-  Args:
-    source: Alfonso_Prince_of_Asturias
-    type: :Man
-  AssignClass (c59a27bd-f086-4206-8db0-03623d3b7060)
- Call ID: c59a27bd-f086-4206-8db0-03623d3b7060
-  Args:
-    type: :Person
-    source: Alfonso_Prince_of_Asturias
-  AssignClass (094c8aa1-5c98-4b35-bca7-5f56e0e62c3d)
- Call ID: 094c8aa1-5c98-4b35-bca7-5f56e0e62c3d
-  Args:
-    source: Infante_Jaime
-    type: :Man
-  AssignClass (714f933f-19c8-4140-bbea-4ad73ddb5301)
- Call ID: 714f933f-19c8-4140-bbea-4ad73ddb5301
-  Args:
-    type: :Person
-    source: Infante_Jaime
-  AddTriple (5d36880d-6627-4792-a56f-7f9941b81304)
- Call ID: 5d36880d-6627-4792-a56f-7f9941b81304
-  Args:
-    source: Alfonso_Prince_of_Asturias
-    relation: :isBrotherOf
-    target: Infante_Juan
-  AddTriple (59dbb6a5-a7bf-49b3-9d80-0ea87647fd6e)
- Call ID: 59dbb6a5-a7bf-49b3-9d80-0ea87647fd6e
-  Args:
-    source: Infante_Jaime
-    target: Infante_Juan
-    relation: :isBrotherOf
-  AssignClass (1a5fafc2-ea88-4026-ba70-033543f418fa)
- Call ID: 1a5fafc2-ea88-4026-ba70-033543f418fa
-  Args:
-    source: Maria_de_las_Mercedes
     type: :Woman
-  AssignClass (59093697-53be-4a58-adda-62041e9cba57)
- Call ID: 59093697-53be-4a58-adda-62041e9cba57
+    source: Queen_Mary
+  AssignClass (da5de96e-7252-442b-bce6-781484ed5db8)
+ Call ID: da5de96e-7252-442b-bce6-781484ed5db8
   Args:
     type: :Person
-    source: Maria_de_las_Mercedes
-  AddLiteral (c44cb6f3-758f-47be-9ec7-2de278c283ab)
- Call ID: c44cb6f3-758f-47be-9ec7-2de278c283ab
+    source: Queen_Mary
+  AddTriple (d5223633-eb76-4ea9-9871-3c392b49a852)
+ Call ID: d5223633-eb76-4ea9-9871-3c392b49a852
   Args:
-    literal_type: xsd:integer
+    source: Prince_George_Duke_of_Kent
+    relation: :hasFather
+    target: King_George_V
+  AddTriple (50304754-20ee-415a-9f54-cf7b5fbf03d6)
+ Call ID: 50304754-20ee-415a-9f54-cf7b5fbf03d6
+  Args:
+    source: Prince_George_Duke_of_Kent
+    relation: :hasMother
+    target: Queen_Mary
+  AssignClass (a70aa85c-19b7-420e-b149-74994a06da65)
+ Call ID: a70aa85c-19b7-420e-b149-74994a06da65
+  Args:
+    type: :Man
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (38956c01-8d30-4a0b-a797-2cdb8fb33f6a)
+ Call ID: 38956c01-8d30-4a0b-a797-2cdb8fb33f6a
+  Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (f55ab876-9724-41a2-b6cf-cad6148b65f8)
+ Call ID: f55ab876-9724-41a2-b6cf-cad6148b65f8
+  Args:
+    type: :Woman
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AssignClass (47475c32-5890-49bf-92e6-80ecf72b3505)
+ Call ID: 47475c32-5890-49bf-92e6-80ecf72b3505
+  Args:
+    type: :Person
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddTriple (ccc00f22-09a3-4ac7-a7c9-dbb00fb59cd2)
+ Call ID: ccc00f22-09a3-4ac7-a7c9-dbb00fb59cd2
+  Args:
+    relation: :hasFather
+    target: Prince_Nicholas_of_Greece_and_Denmark
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (c5193f0d-f4e2-44cd-a259-8200696645d5)
+ Call ID: c5193f0d-f4e2-44cd-a259-8200696645d5
+  Args:
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    relation: :hasMother
+    source: Princess_Marina_of_Greece_and_Denmark
+  AssignClass (003ccb60-d1ef-4a77-9882-93debce2f514)
+ Call ID: 003ccb60-d1ef-4a77-9882-93debce2f514
+  Args:
+    source: Prince_Edward_Duke_of_Kent
+    type: :Man
+  AssignClass (b3a0b851-fdbc-4147-9489-a904fefa4dc5)
+ Call ID: b3a0b851-fdbc-4147-9489-a904fefa4dc5
+  Args:
+    source: Prince_Edward_Duke_of_Kent
+    type: :Person
+  AssignClass (6e0151e4-4cf6-4b05-a08a-3c79c52e08e1)
+ Call ID: 6e0151e4-4cf6-4b05-a08a-3c79c52e08e1
+  Args:
+    source: Princess_Alexandra
+    type: :Woman
+  AssignClass (8688b3d9-1dae-4771-872c-7146e7b2696c)
+ Call ID: 8688b3d9-1dae-4771-872c-7146e7b2696c
+  Args:
+    source: Princess_Alexandra
+    type: :Person
+  AddTriple (26097e90-6154-4557-9492-2c17568ffe27)
+ Call ID: 26097e90-6154-4557-9492-2c17568ffe27
+  Args:
+    target: Prince_Michael_of_Kent
+    relation: :isBrotherOf
+    source: Prince_Edward_Duke_of_Kent
+  AddTriple (60d49636-8eb9-4a3a-8852-d55649b3c86d)
+ Call ID: 60d49636-8eb9-4a3a-8852-d55649b3c86d
+  Args:
+    source: Princess_Alexandra
+    relation: :isSisterOf
+    target: Prince_Michael_of_Kent
+  AssignClass (0ad69fd0-b3a8-4542-95c7-e370aa165cd7)
+ Call ID: 0ad69fd0-b3a8-4542-95c7-e370aa165cd7
+  Args:
+    type: :Woman
+    source: Princess_Michael_of_Kent
+  AssignClass (f86abd05-a020-436b-9e79-8af415226a56)
+ Call ID: f86abd05-a020-436b-9e79-8af415226a56
+  Args:
+    type: :Person
+    source: Princess_Michael_of_Kent
+  AddLiteral (5eb0c450-a755-4509-bf4f-884563ff60c8)
+ Call ID: 5eb0c450-a755-4509-bf4f-884563ff60c8
+  Args:
     relation: :hasMarriageYear
-    literal_value: 1935
-    source: Infante_Juan
-  AddTriple (52c7fdb3-4433-4d6e-a926-77d9f31d5a71)
- Call ID: 52c7fdb3-4433-4d6e-a926-77d9f31d5a71
+    literal_type: xsd:integer
+    literal_value: 1978
+    source: Prince_Michael_of_Kent
+  AddTriple (e554b1c9-bdb0-4fa6-a4f9-a8bfeaa79ff2)
+ Call ID: e554b1c9-bdb0-4fa6-a4f9-a8bfeaa79ff2
   Args:
-    source: Infante_Juan
+    source: Prince_Michael_of_Kent
     relation: :hasRelation
-    target: Maria_de_las_Mercedes
-  AssignClass (907ee313-f265-417f-ac7e-30395abb7fc1)
- Call ID: 907ee313-f265-417f-ac7e-30395abb7fc1
+    target: Princess_Michael_of_Kent
+  Finish (ad041813-2c40-4c02-973e-ae6d6cd3640e)
+ Call ID: ad041813-2c40-4c02-973e-ae6d6cd3640e
   Args:
-    source: Pilar
-    type: :Woman
-  AssignClass (fee9b3bd-dc35-4f7b-af08-49a676e1cb69)
- Call ID: fee9b3bd-dc35-4f7b-af08-49a676e1cb69
-  Args:
-    type: :Person
-    source: Pilar
-  AddTriple (bdec9d61-8d26-4d84-a16d-44f70b4e9d29)
- Call ID: bdec9d61-8d26-4d84-a16d-44f70b4e9d29
-  Args:
-    target: Infante_Juan
-    relation: :isChildOf
-    source: Pilar
-  AddTriple (feae85ab-8b15-4b30-956c-23016d3c1997)
- Call ID: feae85ab-8b15-4b30-956c-23016d3c1997
-  Args:
-    source: Juan_Carlos_I
-    target: Infante_Juan
-    relation: :isChildOf
-  AssignClass (21e36e67-39d4-40f5-afe5-40ee834a4fb2)
- Call ID: 21e36e67-39d4-40f5-afe5-40ee834a4fb2
-  Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (9309adbd-5588-421d-a9c2-a326f5456a3d)
- Call ID: 9309adbd-5588-421d-a9c2-a326f5456a3d
-  Args:
-    source: Sofia
-    type: :Person
-  AssignClass (c744f80a-f5aa-46d6-adfc-3a3502dfb221)
- Call ID: c744f80a-f5aa-46d6-adfc-3a3502dfb221
-  Args:
-    source: Queen_Frederica
-    type: :Woman
-  AssignClass (6e9fdfbf-b363-4a18-b1d4-b241941442ec)
- Call ID: 6e9fdfbf-b363-4a18-b1d4-b241941442ec
-  Args:
-    type: :Person
-    source: Queen_Frederica
-  AssignClass (76aea6ef-21e8-4997-85c3-a6bd025ad035)
- Call ID: 76aea6ef-21e8-4997-85c3-a6bd025ad035
-  Args:
-    type: :Man
-    source: King_Paul
-  AssignClass (3dc2c8c4-3b61-4e7c-8408-33ece8c04442)
- Call ID: 3dc2c8c4-3b61-4e7c-8408-33ece8c04442
-  Args:
-    source: King_Paul
-    type: :Person
-  AddTriple (c51926c7-8363-4842-8265-9f82391a314f)
- Call ID: c51926c7-8363-4842-8265-9f82391a314f
-  Args:
-    target: Queen_Frederica
-    relation: :hasMother
-    source: Sofia
-  AddTriple (c20a7f7a-acf5-45c2-b628-1f262b666d6f)
- Call ID: c20a7f7a-acf5-45c2-b628-1f262b666d6f
-  Args:
-    relation: :hasFather
-    target: King_Paul
-    source: Sofia
-  Finish (0c5b7117-2ec4-438b-b123-069f2c37a49e)
- Call ID: 0c5b7117-2ec4-438b-b123-069f2c37a49e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -730,54 +865,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man,
+  data:Prince_Edward_Duke_of_Kent a :Man,
           :Person ;
-      :isBrotherOf data:Infante_Juan .
+      :isBrotherOf data:Prince_Michael_of_Kent .
 
-  data:Infante_Jaime a :Man,
-          :Person ;
-      :isBrotherOf data:Infante_Juan .
-
-  data:Juan_Carlos_I a :Man,
-          :Person ;
-      :isChildOf data:Infante_Juan ;
-      :isSonOf data:Infante_Juan .
-
-  data:Pilar a :Person,
+  data:Princess_Alexandra a :Person,
           :Woman ;
-      :isChildOf data:Infante_Juan .
+      :isSisterOf data:Prince_Michael_of_Kent .
 
-  data:Sofia a :Person,
-          :Woman ;
-      :hasFather data:King_Paul ;
-      :hasMother data:Queen_Frederica .
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+          :Woman .
 
-  data:Alfonso_XIII a :Man,
+  data:King_George_V a :Man,
           :Person .
 
-  data:King_Paul a :Man,
+  data:Prince_George_Duke_of_Kent a :Man,
+          :Person ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
           :Person .
 
-  data:Male_Sex a :Male .
+  data:Princess_Marina_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
 
-  data:Maria_de_las_Mercedes a :Person,
+  data:Princess_Michael_of_Kent a :Person,
           :Woman .
 
-  data:Queen_Frederica a :Person,
+  data:Queen_Mary a :Person,
           :Woman .
 
-  data:Victoria_Eugenie a :Person,
-          :Woman .
-
-  data:Infante_Juan a :Man,
+  data:Prince_Michael_of_Kent a :Man,
           :Person ;
-      :hasBirthYear 1913 ;
-      :hasDeathYear 1993 ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Victoria_Eugenie ;
-      :hasRelation data:Maria_de_las_Mercedes ;
-      :hasSex data:Male_Sex .
+      :hasBirthYear 1942 ;
+      :hasFather data:Prince_George_Duke_of_Kent ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+      :hasRelation data:Princess_Michael_of_Kent .
 
 
 
@@ -789,182 +916,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (918ea2fa-7a44-409a-aaf6-1ac508e6f499)
- Call ID: 918ea2fa-7a44-409a-aaf6-1ac508e6f499
+  ValidateShacl (e5013c26-43a6-4d91-983e-271892364986)
+ Call ID: e5013c26-43a6-4d91-983e-271892364986
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isSonOf, is not classified as an :Ancestor.
+      The node King_George_V assigned as the father of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('King_George_V', ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII, acting as the value for :hasFather, is not classified as an :Ancestor.
+      The node Prince_George_Duke_of_Kent assigned as the father of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XIII", class: ":Ancestor")
+      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Queen_Mary assigned as the mother of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victoria_Eugenie", class: ":Ancestor")
+      AssignClass('Queen_Mary', ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
+      The node Princess_Marina_of_Greece_and_Denmark assigned as the mother of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isSonOf, is not classified as an :Ancestor.
+      The node Prince_Nicholas_of_Greece_and_Denmark assigned as the father of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII, acting as the value for :hasFather, is not classified as an :Ancestor.
+      The node Prince_George_Duke_of_Kent assigned as the father of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XIII", class: ":Ancestor")
+      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Paul, acting as the value for :hasFather, is not classified as an :Ancestor.
+      The node King_George_V assigned as the father of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "King_Paul", class: ":Ancestor")
+      AssignClass('King_George_V', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia assigned as the mother of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victoria_Eugenie", class: ":Ancestor")
+      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Frederica, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Princess_Marina_of_Greece_and_Denmark assigned as the mother of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Frederica", class: ":Ancestor")
+      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
+      The node Queen_Mary assigned as the mother of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Queen_Mary', ':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
+      The node Prince_Nicholas_of_Greece_and_Denmark assigned as the father of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isSonOf, is not classified as an :Ancestor.
+      The node Prince_George_Duke_of_Kent assigned as the father of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII, acting as the value for :hasFather, is not classified as an :Ancestor.
+      The node King_George_V assigned as the father of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Alfonso_XIII", class: ":Ancestor")
+      AssignClass('King_George_V', ':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Paul, acting as the value for :hasFather, is not classified as an :Ancestor.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia assigned as the mother of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "King_Paul", class: ":Ancestor")
+      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Princess_Marina_of_Greece_and_Denmark assigned as the mother of Prince_Michael_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victoria_Eugenie", class: ":Ancestor")
+      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Frederica, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Queen_Mary assigned as the mother of Prince_George_Duke_of_Kent is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Frederica", class: ":Ancestor")
+      AssignClass('Queen_Mary', ':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
+      The node Prince_Nicholas_of_Greece_and_Denmark assigned as the father of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node King_Paul, acting as the value for :hasFather, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "King_Paul", class: ":Ancestor")
-
-
-  Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Frederica, acting as the value for :hasMother, is not classified as an :Ancestor.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia assigned as the mother of Princess_Marina_of_Greece_and_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Frederica", class: ":Ancestor")
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Infante_Juan, acting as the value for :isChildOf, is not classified as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Infante_Juan", class: ":Ancestor")
+      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
 
 
 
@@ -973,34 +1076,43 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ee05bcde-9642-4fe5-9b04-148ec1a812d3)
- Call ID: ee05bcde-9642-4fe5-9b04-148ec1a812d3
-  Args:
-    source: Infante_Juan
-    type: :Ancestor
-  AssignClass (444df15b-bd20-448c-8546-8db0378ddfd1)
- Call ID: 444df15b-bd20-448c-8546-8db0378ddfd1
-  Args:
-    source: Alfonso_XIII
-    type: :Ancestor
-  AssignClass (583a7698-0a55-495b-8cf9-229c7109c475)
- Call ID: 583a7698-0a55-495b-8cf9-229c7109c475
-  Args:
-    source: Victoria_Eugenie
-    type: :Ancestor
-  AssignClass (ae08272e-dbdd-4799-9cc1-192fbfe2baca)
- Call ID: ae08272e-dbdd-4799-9cc1-192fbfe2baca
+  AssignClass (6a46b288-64f7-45a0-a31b-ccc0b95190f7)
+ Call ID: 6a46b288-64f7-45a0-a31b-ccc0b95190f7
   Args:
     type: :Ancestor
-    source: King_Paul
-  AssignClass (96e38b48-ea65-4cfd-82d2-c89be7a91589)
- Call ID: 96e38b48-ea65-4cfd-82d2-c89be7a91589
+    source: King_George_V
+  AssignClass (6be76d4d-dd4d-47f8-b0ee-7ee7e11277f5)
+ Call ID: 6be76d4d-dd4d-47f8-b0ee-7ee7e11277f5
   Args:
-    source: Queen_Frederica
     type: :Ancestor
-  Finish (86f829f3-a49e-4001-9ddc-22aa96b94a25)
- Call ID: 86f829f3-a49e-4001-9ddc-22aa96b94a25
+    source: Prince_George_Duke_of_Kent
+  AssignClass (9b7c8521-475c-4e3a-962d-dabfb3d55f14)
+ Call ID: 9b7c8521-475c-4e3a-962d-dabfb3d55f14
   Args:
+    source: Queen_Mary
+    type: :Ancestor
+  AssignClass (3b50138c-41fe-4339-aca3-112a415ba568)
+ Call ID: 3b50138c-41fe-4339-aca3-112a415ba568
+  Args:
+    type: :Ancestor
+    source: Princess_Marina_of_Greece_and_Denmark
+  AssignClass (925b11e3-0bf7-4a46-b9f3-525525c66f26)
+ Call ID: 925b11e3-0bf7-4a46-b9f3-525525c66f26
+  Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    type: :Ancestor
+  AssignClass (ea9e1971-2472-46cb-9126-927d115a18cd)
+ Call ID: ea9e1971-2472-46cb-9126-927d115a18cd
+  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Ancestor
+  Finish (491b7604-f30d-4652-a883-fd66f4954978)
+ Call ID: 491b7604-f30d-4652-a883-fd66f4954978
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1025,59 +1137,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man,
+  data:Prince_Edward_Duke_of_Kent a :Man,
           :Person ;
-      :isBrotherOf data:Infante_Juan .
+      :isBrotherOf data:Prince_Michael_of_Kent .
 
-  data:Infante_Jaime a :Man,
-          :Person ;
-      :isBrotherOf data:Infante_Juan .
-
-  data:Juan_Carlos_I a :Man,
-          :Person ;
-      :isChildOf data:Infante_Juan ;
-      :isSonOf data:Infante_Juan .
-
-  data:Pilar a :Person,
+  data:Princess_Alexandra a :Person,
           :Woman ;
-      :isChildOf data:Infante_Juan .
+      :isSisterOf data:Prince_Michael_of_Kent .
 
-  data:Sofia a :Person,
-          :Woman ;
-      :hasFather data:King_Paul ;
-      :hasMother data:Queen_Frederica .
-
-  data:Alfonso_XIII a :Ancestor,
-          :Man,
-          :Person .
-
-  data:King_Paul a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Male_Sex a :Male .
-
-  data:Maria_de_las_Mercedes a :Person,
-          :Woman .
-
-  data:Queen_Frederica a :Ancestor,
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
           :Person,
           :Woman .
 
-  data:Victoria_Eugenie a :Ancestor,
+  data:King_George_V a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_George_Duke_of_Kent a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+  data:Princess_Michael_of_Kent a :Person,
+          :Woman .
+
+  data:Queen_Mary a :Ancestor,
           :Person,
           :Woman .
 
-  data:Infante_Juan a :Ancestor,
-          :Man,
+  data:Prince_Michael_of_Kent a :Man,
           :Person ;
-      :hasBirthYear 1913 ;
-      :hasDeathYear 1993 ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Victoria_Eugenie ;
-      :hasRelation data:Maria_de_las_Mercedes ;
-      :hasSex data:Male_Sex .
+      :hasBirthYear 1942 ;
+      :hasFather data:Prince_George_Duke_of_Kent ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+      :hasRelation data:Princess_Michael_of_Kent .
 
 
 
@@ -1089,8 +1194,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (097f358a-f322-4821-9ed6-b0d720dfc541)
- Call ID: 097f358a-f322-4821-9ed6-b0d720dfc541
+  ValidateShacl (987a4257-7d5a-4df8-b97c-3061f069ef08)
+ Call ID: 987a4257-7d5a-4df8-b97c-3061f069ef08
   Args:
 
 ================================= Tool Message =================================
@@ -1101,6 +1206,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (bbba5590-beda-4260-b4ff-b5177546d3ce)
- Call ID: bbba5590-beda-4260-b4ff-b5177546d3ce
+  Finish (e5184f5d-4e50-49da-b6df-2b8cf7b328aa)
+ Call ID: e5184f5d-4e50-49da-b6df-2b8cf7b328aa
   Args:

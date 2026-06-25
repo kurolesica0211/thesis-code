@@ -2,57 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Prince_of_Asturias a :Man,
+data:Prince_Edward_Duke_of_Kent a :Man,
         :Person ;
-    :isBrotherOf data:Infante_Juan .
+    :isBrotherOf data:Prince_Michael_of_Kent .
 
-data:Infante_Jaime a :Man,
-        :Person ;
-    :isBrotherOf data:Infante_Juan .
-
-data:Juan_Carlos_I a :Man,
-        :Person ;
-    :isChildOf data:Infante_Juan ;
-    :isSonOf data:Infante_Juan .
-
-data:Pilar a :Person,
+data:Princess_Alexandra a :Person,
         :Woman ;
-    :isChildOf data:Infante_Juan .
+    :isSisterOf data:Prince_Michael_of_Kent .
 
-data:Sofia a :Person,
-        :Woman ;
-    :hasFather data:King_Paul ;
-    :hasMother data:Queen_Frederica .
-
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person .
-
-data:King_Paul a :Ancestor,
-        :Man,
-        :Person .
-
-data:Male_Sex a :Male .
-
-data:Maria_de_las_Mercedes a :Person,
-        :Woman .
-
-data:Queen_Frederica a :Ancestor,
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:Victoria_Eugenie a :Ancestor,
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Princess_Michael_of_Kent a :Person,
+        :Woman .
+
+data:Queen_Mary a :Ancestor,
         :Person,
         :Woman .
 
-data:Infante_Juan a :Ancestor,
-        :Man,
+data:Prince_Michael_of_Kent a :Man,
         :Person ;
-    :hasBirthYear 1913 ;
-    :hasDeathYear 1993 ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMarriageYear 1935 ;
-    :hasMother data:Victoria_Eugenie ;
-    :hasRelation data:Maria_de_las_Mercedes ;
-    :hasSex data:Male_Sex .
+    :hasBirthYear 1942 ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Princess_Michael_of_Kent .
 

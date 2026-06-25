@@ -1,107 +1,86 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/259_259",
-  "text_file": "Q3424937.txt",
-  "text_key": "Q3424937",
-  "article": "https://en.wikipedia.org/wiki/Princess_Margarita_of_Baden",
-  "article_key": "Princess Margarita of Baden",
+  "text_file": "Q3387469.txt",
+  "text_key": "Q3387469",
+  "article": "https://en.wikipedia.org/wiki/Prince_Pedro,_Duke_of_Calabria",
+  "article_key": "Prince Pedro, Duke of Calabria",
   "main_entity": {
-    "uri": "http://example.com/data#Princess_Margarita_of_Baden",
-    "qid": "Q3424937",
-    "label": "Princess Margarita of Baden"
+    "uri": "http://example.com/data#Prince_Pedro-_Duke_of_Calabria",
+    "qid": "Q3387469",
+    "label": "Prince Pedro, Duke of Calabria"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Princess_Margarita_of_Baden",
-      "qid": "Q3424937",
-      "label": "Princess Margarita of Baden",
+      "uri": "http://example.com/data#Prince_Pedro-_Duke_of_Calabria",
+      "qid": "Q3387469",
+      "label": "Prince Pedro, Duke of Calabria",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
-      "qid": "Q80976",
-      "label": "Prince Philip, Duke of Edinburgh",
+      "uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "qid": "Q526743",
+      "label": "Infante Carlos, Duke of Calabria",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Princess_Theodora_of_Greece_and_Denmark_1",
-      "qid": "Q255382",
-      "label": "Princess Theodora of Greece and Denmark",
+      "uri": "http://example.com/data#Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo",
+      "qid": "Q75317760",
+      "label": "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
-      "qid": "Q153330",
-      "label": "Andrew Mountbatten-Windsor",
+      "uri": "http://example.com/data#Sofía_Landaluce_y_Melgarejo",
+      "qid": "Q65031050",
+      "label": "Sofía Landaluce y Melgarejo",
       "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Charles_III",
-      "qid": "Q43274",
-      "label": "Charles III",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
-      "qid": "Q116062",
-      "label": "Princess Alice of Battenberg",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Beatrix_of_Hohenlohe-Langenburg",
-      "qid": "Q75384169",
-      "label": "Princess Beatrix of Hohenlohe-Langenburg",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/MargaritaOfBaden",
-      "extracted_local_name": "MargaritaOfBaden",
-      "embedding_text": "Margarita Of Baden",
-      "extracted_gender": "female",
+      "extracted_uri": "http://example.org/data/Infante_Carlos_Duke_of_Calabria",
+      "extracted_local_name": "Infante_Carlos_Duke_of_Calabria",
+      "embedding_text": "Infante Carlos Duke of Calabria",
+      "extracted_gender": "male",
       "matched": true,
-      "score": 0.918918918918919,
-      "ground_truth_uri": "http://example.com/data#Princess_Margarita_of_Baden",
-      "ground_truth_qid": "Q3424937",
-      "ground_truth_label": "Princess Margarita of Baden",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Margarita von Baden",
-      "best_candidate_label": "Princess Margarita of Baden",
-      "best_candidate_qid": "Q3424937",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.918918918918919
-    },
-    {
-      "extracted_uri": "http://example.org/data/TheodoraOfGreeceAndDenmark",
-      "extracted_local_name": "TheodoraOfGreeceAndDenmark",
-      "embedding_text": "Theodora Of Greece And Denmark",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.8200000000000001,
-      "ground_truth_uri": "http://example.com/data#Princess_Theodora_of_Greece_and_Denmark_1",
-      "ground_truth_qid": "Q255382",
-      "ground_truth_label": "Princess Theodora of Greece and Denmark",
+      "score": 0.9855072463768115,
+      "ground_truth_uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
+      "ground_truth_qid": "Q526743",
+      "ground_truth_label": "Infante Carlos, Duke of Calabria",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Theodora of Greece and Denmark",
-      "best_candidate_label": "Princess Theodora of Greece and Denmark",
-      "best_candidate_qid": "Q255382",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8200000000000001
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Infante Carlos- Duke of Calabria",
+      "best_candidate_label": "Infante Carlos, Duke of Calabria",
+      "best_candidate_qid": "Q526743",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9855072463768115
     },
     {
-      "extracted_uri": "http://example.org/data/BertholdMargraveOfBaden",
-      "extracted_local_name": "BertholdMargraveOfBaden",
-      "embedding_text": "Berthold Margrave Of Baden",
+      "extracted_uri": "http://example.org/data/Sofia_Landaluce_y_Melgarejo",
+      "extracted_local_name": "Sofia_Landaluce_y_Melgarejo",
+      "embedding_text": "Sofia Landaluce y Melgarejo",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.9629629629629629,
+      "ground_truth_uri": "http://example.com/data#Sofía_Landaluce_y_Melgarejo",
+      "ground_truth_qid": "Q65031050",
+      "ground_truth_label": "Sofía Landaluce y Melgarejo",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofía Landaluce y Melgarejo",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9629629629629629
+    },
+    {
+      "extracted_uri": "http://example.org/data/Jose_Manuel_Landaluce_y_Dominguez",
+      "extracted_local_name": "Jose_Manuel_Landaluce_y_Dominguez",
+      "embedding_text": "Jose Manuel Landaluce y Dominguez",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -110,16 +89,34 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Philip Mountbatten",
-      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
-      "best_candidate_qid": "Q80976",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4090909090909091
+      "best_candidate_match_text": "Sofia Landaluce y Melgareja",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.6
     },
     {
-      "extracted_uri": "http://example.org/data/PrinceMaximilianOfBaden",
-      "extracted_local_name": "PrinceMaximilianOfBaden",
-      "embedding_text": "Prince Maximilian Of Baden",
+      "extracted_uri": "http://example.org/data/Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez",
+      "extracted_local_name": "Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez",
+      "embedding_text": "Maria de las Nieves Blanca Melgarejo y Gonzalez",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Sofia Landaluce y Melgareja",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4594594594594595
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Pedro_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Prince_Pedro_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Prince Pedro of Bourbon-Two Sicilies",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -128,17 +125,17 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "H.R.H. Prince Philip",
-      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
-      "best_candidate_qid": "Q80976",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.43478260869565216
+      "best_candidate_match_text": "Jaime di Borbone-Due Sicilie",
+      "best_candidate_label": "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo",
+      "best_candidate_qid": "Q75317760",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.625
     },
     {
-      "extracted_uri": "http://example.org/data/PrinceTomislavOfYugoslavia",
-      "extracted_local_name": "PrinceTomislavOfYugoslavia",
-      "embedding_text": "Prince Tomislav Of Yugoslavia",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/Princess_Anne_of_Orleans",
+      "extracted_local_name": "Princess_Anne_of_Orleans",
+      "embedding_text": "Princess Anne of Orleans",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -146,16 +143,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "H.R.H. Prince Philip",
-      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
-      "best_candidate_qid": "Q80976",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.40816326530612246
+      "best_candidate_match_text": "Sofia Landaluce y Melgareja",
+      "best_candidate_label": "Sofía Landaluce y Melgarejo",
+      "best_candidate_qid": "Q65031050",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3137254901960784
     }
   ],
   "summary": {
-    "entities_total": 5,
+    "entities_total": 6,
     "entities_matched": 2,
-    "entities_unmatched": 3
+    "entities_unmatched": 4
   }
 }

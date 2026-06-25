@@ -1,0 +1,591 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "24:53"^^xsd:string ;
+    data:posIndicesPart "1037:1045"^^xsd:string,
+        "1228:1236"^^xsd:string,
+        "12718:12729"^^xsd:string,
+        "12730:12738"^^xsd:string,
+        "1439:1450"^^xsd:string,
+        "1948:1956"^^xsd:string,
+        "2385:2393"^^xsd:string,
+        "2424:2431"^^xsd:string,
+        "2852:2863"^^xsd:string,
+        "2864:2872"^^xsd:string,
+        "3052:3060"^^xsd:string,
+        "463:474"^^xsd:string ;
+    data:wdtLink wdt:Q231463 ;
+    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna the Elder"^^xsd:string,
+        "Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "9611:9650"^^xsd:string ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova"^^xsd:string,
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia"^^xsd:string,
+        "Kira Kirillovna, Princess of Prussia"^^xsd:string,
+        "Princess Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "10261:10277"^^xsd:string,
+        "6792:6808"^^xsd:string ;
+    data:posIndicesPart "12206:12214"^^xsd:string ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria"^^xsd:string,
+        "Augusta Victoria, Empress of Germany"^^xsd:string,
+        "Augusta Viktoria"^^xsd:string,
+        "Augusta Viktoria of Schleswig-Holstein"^^xsd:string,
+        "Auguste Viktoria of Schleswig-Holstein"^^xsd:string ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAuntOf data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "10603:10620"^^xsd:string,
+        "10610:10620"^^xsd:string,
+        "11366:11383"^^xsd:string,
+        "11373:11383"^^xsd:string,
+        "208:218"^^xsd:string,
+        "208:234"^^xsd:string,
+        "2502:2519"^^xsd:string,
+        "2509:2519"^^xsd:string,
+        "3343:3360"^^xsd:string,
+        "3350:3360"^^xsd:string,
+        "3698:3715"^^xsd:string,
+        "3705:3715"^^xsd:string,
+        "5163:5173"^^xsd:string ;
+    data:posIndicesPart "10046:10053"^^xsd:string,
+        "11425:11432"^^xsd:string,
+        "2711:2718"^^xsd:string,
+        "4594:4601"^^xsd:string,
+        "6295:6302"^^xsd:string,
+        "7318:7325"^^xsd:string,
+        "7724:7731"^^xsd:string,
+        "8467:8474"^^xsd:string,
+        "8930:8937"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Wilhelm-_German_Crown_Prince .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "1084:1105"^^xsd:string,
+        "1084:1141"^^xsd:string,
+        "262:283"^^xsd:string,
+        "262:319"^^xsd:string ;
+    data:posIndicesPart "12258:12267"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :hasDaughter data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isFatherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isParentOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isUncleOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1146:1191"^^xsd:string,
+        "1160:1191"^^xsd:string,
+        "324:369"^^xsd:string,
+        "338:369"^^xsd:string ;
+    data:posIndicesPart "2116:2122"^^xsd:string,
+        "2225:2230"^^xsd:string,
+        "2259:2265"^^xsd:string,
+        "2424:2431"^^xsd:string,
+        "3521:3526"^^xsd:string,
+        "3557:3563"^^xsd:string,
+        "622:628"^^xsd:string,
+        "9701:9706"^^xsd:string ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia"^^xsd:string,
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string,
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :hasDaughter data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isAuntOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isParentOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis IV"^^xsd:string ;
+    data:posIndicesFull "2325:2345"^^xsd:string,
+        "2325:2381"^^xsd:string ;
+    data:posIndicesPart "12258:12267"^^xsd:string ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz IV"^^xsd:string,
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isBrotherOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isUncleOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm, German Crown Prince"^^xsd:string ;
+    data:posIndicesFull "12627:12647"^^xsd:string,
+        "167:195"^^xsd:string,
+        "2472:2500"^^xsd:string,
+        "2980:3000"^^xsd:string,
+        "665:685"^^xsd:string ;
+    data:posIndicesPart "10046:10053"^^xsd:string,
+        "10313:10319"^^xsd:string,
+        "10435:10441"^^xsd:string,
+        "10456:10462"^^xsd:string,
+        "10867:10873"^^xsd:string,
+        "11425:11432"^^xsd:string,
+        "11611:11616"^^xsd:string,
+        "11617:11623"^^xsd:string,
+        "12001:12006"^^xsd:string,
+        "12512:12517"^^xsd:string,
+        "12740:12746"^^xsd:string,
+        "12747:12752"^^xsd:string,
+        "1816:1821"^^xsd:string,
+        "1822:1828"^^xsd:string,
+        "2690:2696"^^xsd:string,
+        "2697:2702"^^xsd:string,
+        "2703:2709"^^xsd:string,
+        "2711:2718"^^xsd:string,
+        "3101:3106"^^xsd:string,
+        "3224:3230"^^xsd:string,
+        "3875:3881"^^xsd:string,
+        "3882:3887"^^xsd:string,
+        "3901:3906"^^xsd:string,
+        "3963:3969"^^xsd:string,
+        "4000:4006"^^xsd:string,
+        "4007:4012"^^xsd:string,
+        "4026:4032"^^xsd:string,
+        "4033:4038"^^xsd:string,
+        "4111:4117"^^xsd:string,
+        "4215:4221"^^xsd:string,
+        "4276:4281"^^xsd:string,
+        "4450:4455"^^xsd:string,
+        "4456:4462"^^xsd:string,
+        "4594:4601"^^xsd:string,
+        "4620:4626"^^xsd:string,
+        "4703:4708"^^xsd:string,
+        "4709:4715"^^xsd:string,
+        "4788:4793"^^xsd:string,
+        "4794:4800"^^xsd:string,
+        "5234:5240"^^xsd:string,
+        "5241:5246"^^xsd:string,
+        "5774:5779"^^xsd:string,
+        "5780:5786"^^xsd:string,
+        "6029:6035"^^xsd:string,
+        "6080:6086"^^xsd:string,
+        "6221:6227"^^xsd:string,
+        "6249:6255"^^xsd:string,
+        "6295:6302"^^xsd:string,
+        "6337:6343"^^xsd:string,
+        "6466:6471"^^xsd:string,
+        "6472:6478"^^xsd:string,
+        "6554:6559"^^xsd:string,
+        "6602:6607"^^xsd:string,
+        "6608:6614"^^xsd:string,
+        "6911:6916"^^xsd:string,
+        "7026:7031"^^xsd:string,
+        "7318:7325"^^xsd:string,
+        "7467:7473"^^xsd:string,
+        "7514:7520"^^xsd:string,
+        "7557:7562"^^xsd:string,
+        "7652:7658"^^xsd:string,
+        "7703:7709"^^xsd:string,
+        "7724:7731"^^xsd:string,
+        "789:795"^^xsd:string,
+        "8069:8074"^^xsd:string,
+        "8323:8328"^^xsd:string,
+        "8329:8335"^^xsd:string,
+        "8467:8474"^^xsd:string,
+        "8829:8835"^^xsd:string,
+        "8930:8937"^^xsd:string,
+        "9043:9048"^^xsd:string,
+        "9049:9055"^^xsd:string,
+        "9924:9930"^^xsd:string ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm"^^xsd:string,
+        "Friedrich Wilhelm Victor August Ernst"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isAncestorOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isFatherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia"^^xsd:string ;
+    data:posIndicesFull "9580:9602"^^xsd:string ;
+    data:posIndicesPart "10313:10319"^^xsd:string,
+        "10435:10441"^^xsd:string,
+        "11617:11623"^^xsd:string,
+        "11831:11836"^^xsd:string,
+        "11837:11846"^^xsd:string,
+        "12225:12232"^^xsd:string,
+        "9924:9930"^^xsd:string ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen"^^xsd:string,
+        "Prince Louis Ferdinand"^^xsd:string,
+        "Prince Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Hubertus of Prussia"^^xsd:string ;
+    data:posIndicesFull "11521:11529"^^xsd:string,
+        "11798:11806"^^xsd:string,
+        "9455:9463"^^xsd:string ;
+    data:posIndicesPart "10313:10319"^^xsd:string,
+        "10435:10441"^^xsd:string,
+        "11617:11623"^^xsd:string,
+        "12225:12232"^^xsd:string,
+        "9924:9930"^^xsd:string ;
+    data:wdtLink wdt:Q70760 ;
+    :alsoKnownAs "Hubertus"^^xsd:string,
+        "Prince Hubertus Karl Wilhelm of Prussia"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "0:53"^^xsd:string,
+        "2925:2964"^^xsd:string,
+        "3792:3831"^^xsd:string ;
+    data:posIndicesPart "1037:1045"^^xsd:string,
+        "1047:1054"^^xsd:string,
+        "10645:10652"^^xsd:string,
+        "10771:10778"^^xsd:string,
+        "10899:10906"^^xsd:string,
+        "11046:11053"^^xsd:string,
+        "11203:11210"^^xsd:string,
+        "11260:11267"^^xsd:string,
+        "11848:11855"^^xsd:string,
+        "11903:11910"^^xsd:string,
+        "12016:12023"^^xsd:string,
+        "12114:12121"^^xsd:string,
+        "1228:1236"^^xsd:string,
+        "12300:12307"^^xsd:string,
+        "12419:12426"^^xsd:string,
+        "12707:12714"^^xsd:string,
+        "12718:12729"^^xsd:string,
+        "12730:12738"^^xsd:string,
+        "1439:1450"^^xsd:string,
+        "1493:1500"^^xsd:string,
+        "1642:1649"^^xsd:string,
+        "1761:1768"^^xsd:string,
+        "1948:1956"^^xsd:string,
+        "1958:1965"^^xsd:string,
+        "2124:2131"^^xsd:string,
+        "236:243"^^xsd:string,
+        "2385:2393"^^xsd:string,
+        "2424:2431"^^xsd:string,
+        "2432:2439"^^xsd:string,
+        "2663:2670"^^xsd:string,
+        "2852:2863"^^xsd:string,
+        "2864:2872"^^xsd:string,
+        "3052:3060"^^xsd:string,
+        "4049:4056"^^xsd:string,
+        "4501:4508"^^xsd:string,
+        "463:474"^^xsd:string,
+        "4895:4902"^^xsd:string,
+        "5257:5264"^^xsd:string,
+        "5461:5468"^^xsd:string,
+        "5474:5481"^^xsd:string,
+        "5582:5589"^^xsd:string,
+        "5758:5765"^^xsd:string,
+        "5927:5934"^^xsd:string,
+        "5989:5996"^^xsd:string,
+        "6569:6576"^^xsd:string,
+        "6676:6683"^^xsd:string,
+        "687:694"^^xsd:string,
+        "7186:7193"^^xsd:string,
+        "7411:7418"^^xsd:string,
+        "7933:7940"^^xsd:string,
+        "7982:7989"^^xsd:string,
+        "833:840"^^xsd:string,
+        "8383:8390"^^xsd:string,
+        "8530:8537"^^xsd:string,
+        "8597:8604"^^xsd:string,
+        "8870:8877"^^xsd:string,
+        "9130:9137"^^xsd:string,
+        "925:932"^^xsd:string,
+        "9283:9290"^^xsd:string,
+        "9793:9800"^^xsd:string,
+        "9894:9901"^^xsd:string ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany"^^xsd:string,
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasChild data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isAncestorOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isAuntOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isDaughterOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand-_Prince_of_Prussia,
+        data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_IV .
+

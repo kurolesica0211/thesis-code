@@ -85,59 +85,29 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Amedeo, 3rd Duke of Aosta (Amedeo Umberto Isabella Luigi Filippo Maria Giuseppe Giovanni di Savoia-Aosta; 21 October 1898 – 3 March 1942) was the third Duke of Aosta and a first cousin once removed of the King of Italy, Victor Emmanuel III.
-Biography
+Lady Rose Victoria Birgitte Louise Gilman (née Windsor; born 1 March 1980) is a British film art assistant and member of the British royal family.
+She is the daughter of Prince Richard, Duke of Gloucester, and his wife Birgitte, Duchess of Gloucester.
+Early life and education
 
-Amedeo was born in Turin, Piedmont, to Prince Emanuele Filiberto, 2nd Duke of Aosta (son of Amadeo I of Spain and Princess Maria Vittoria), and Princess Hélène (daughter of Prince Philippe of Orléans and Princess Marie Isabelle of Orléans).
-As his patrilinal great-grandfather was King Victor Emmanuel II of Italy, he was a member of the House of Savoy.
-He was known from birth by the courtesy title of Duke of Apulia.
-Amedeo was a very tall man (in stark contrast to the King, who was known to be quite short).
-According to Amedeo Guillet, he was once referred to by a journalist as "Your Highness" (which in Italian could also be interpreted to mean "your height").
-The Duke replied in jest: "198 centimetres ".
-Education and early military career
+Rose Victoria Birgitte Louise Windsor was born on 1 March 1980 at St Mary's Hospital, London, the youngest child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
+Her godparents included Prince Edward and Lady Sarah Armstrong-Jones.
+Career
 
-Amedeo was educated at St David's College, Reigate, Surrey, in England.
-Amedeo entered the Nunziatella, the military academy in Naples, joined the Italian Royal Army (Regio Esercito) and fought with distinction in the artillery during World War I.
-Amedeo subsequently rejoined the Italian armed forces and became a pilot.
-Amedeo served under Marshal Rodolfo Graziani and Libyan Governor Pietro Badoglio during the later stages of the so-called "pacification of Libya" (1911 to 1932).
-Amedeo and his fellow airmen harried the Senussi forces of Omar Mukhtar from the sky.
-When hostilities in Libya came to an end in early 1932, much was made of the participation of the "Duke of Apulia" as the commander of the airmen who forced the Senussi to flee Libya and seek relief in Egypt.
-Amedeo, portrayed by the tall actor Sky du Mont, appears in several non-flying scenes with Graziani in the movie The Lion of the Desert, about the Italian conquest of Libya.
-On 4 July 1931, upon the death of his father, Amedeo became the Duke of Aosta.
-Viceroy and governor-general
+Rose has worked in the film industry as a film art assistant.
+Her film credits include Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince, Margaret Thatcher: The Long Walk to Finchley, and the television series Little Britain.
+Rose continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Marriage and children
 
-In 1937, after the Italian conquest of Ethiopia during the Second Italo-Abyssinian War, the Duke of Aosta replaced Marshal Graziani as Viceroy and as Governor-General of Italian East Africa.
-Amedeo was succeeded by his brother, Aimone, 4th Duke of Aosta.
-Aftermath
-
-Amedeo was well known and highly regarded for being a gentleman.
-Count Galeazzo Ciano, Italian Foreign Minister under his father-in-law, Italian dictator Benito Mussolini, paid Amedeo a high compliment in his famous diaries.
-Upon being given the news of the Duke's death, Ciano wrote, "So dies the image of a Prince and an Italian.
-"
-
-
-Emperor Haile Selassie of Ethiopia was also impressed by the respect and care that the Duke of Aosta showed to the exiled Emperor's personal property left behind in Addis Ababa.
-In a gesture of thanks, the Emperor during his state visit to Italy in 1953 invited the widowed Duchess of Aosta to tea during his stay in Milan, but was then informed by the Italian government that receiving the Duchess would cause offence to the Italian Republic, and so the Emperor cancelled the visit.
-Instead he invited the 5th Duke of Aosta to Ethiopia in the mid-1960s, and accorded him all the protocol due to visiting royalty.
-Family
-
-Amedeo was married on 5 November 1927, in Naples, to his first cousin Princess Anne of Orléans (1906–1986), daughter of Prince Jean, Duke of Guise, and Princess Isabelle of Orléans.
-They had two daughters:
-
-
-Cultural depictions
-
-Prince Amedeo's time in Italian Cyrenaica was depicted in the 1981 film Lion of the Desert; Amedeo was played by Sky du Mont.
-
-
-Amedeo was also briefly mentioned in A Farewell to Arms by Ernest Hemingway.
-In the popular mod for the grand strategy game Hearts of Iron IV, Kaiserreich, Amedeo is depicted as King Amadeo I di Savoia-Aosta of Sardinia, an exiled monarchist government of Italy seeking to reclaim the land from the northern Socialist Republic of Italy and southern Kingdom of the Two Sicilies.
+Rose announced her engagement on 16 November 2007 to businessman George Gilman, the son of a former director of Leeds United.
+Rose and her husband have a daughter, Lyla (born 30 May 2010, then 32nd in line of succession to the British throne), and a son, Rufus (born 30 October 2012, then 33rd in line of succession to the British throne).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +123,9 @@ In the popular mod for the grand strategy game Hearts of Iron IV, Kaiserreich, A
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +140,23 @@ In the popular mod for the grand strategy game Hearts of Iron IV, Kaiserreich, A
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,274 +448,128 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ce62dee5-38fc-4faa-99d8-74a17d60e506)
- Call ID: ce62dee5-38fc-4faa-99d8-74a17d60e506
+  AssignClass (520a3323-d3c8-4064-8ec5-4ab323baf1b1)
+ Call ID: 520a3323-d3c8-4064-8ec5-4ab323baf1b1
   Args:
-    type: :Man
-    source: Amedeo_3rd_Duke_of_Aosta
-  AssignClass (18f25e22-58a8-4e47-a704-ccdcff219a1e)
- Call ID: 18f25e22-58a8-4e47-a704-ccdcff219a1e
+    type: :Woman
+    source: Rose_Gilman
+  AssignClass (b242426b-cd43-4c25-ba23-9cc6fbeeda89)
+ Call ID: b242426b-cd43-4c25-ba23-9cc6fbeeda89
   Args:
+    source: Rose_Gilman
     type: :Person
-    source: Amedeo_3rd_Duke_of_Aosta
-  AddLiteral (370a87e7-6bc0-408a-9c7b-cb556fea7f5e)
- Call ID: 370a87e7-6bc0-408a-9c7b-cb556fea7f5e
+  AddLiteral (e1eeb513-8d35-4eef-abb6-fc6d92c86e56)
+ Call ID: e1eeb513-8d35-4eef-abb6-fc6d92c86e56
   Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Amedeo_3rd_Duke_of_Aosta
-    literal_value: Male
-  AddLiteral (1fa07cb7-ca51-4928-b493-9af0c3e63df5)
- Call ID: 1fa07cb7-ca51-4928-b493-9af0c3e63df5
-  Args:
-    literal_value: 1898
     literal_type: xsd:integer
-    source: Amedeo_3rd_Duke_of_Aosta
     relation: :hasBirthYear
-  AddLiteral (ea174c5b-2cca-439d-9c6d-5d66df350578)
- Call ID: ea174c5b-2cca-439d-9c6d-5d66df350578
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1942
-    source: Amedeo_3rd_Duke_of_Aosta
-    literal_type: xsd:integer
-  AddLiteral (a8595f52-7951-4a71-9ba7-cd3e3ae6e1d5)
- Call ID: a8595f52-7951-4a71-9ba7-cd3e3ae6e1d5
-  Args:
-    literal_type: xsd:string
-    source: Amedeo_3rd_Duke_of_Aosta
-    literal_value: Duke of Apulia
-    relation: :knownAs
-  AssignClass (697f8484-8780-4df8-99fa-3ea98a8a0eae)
- Call ID: 697f8484-8780-4df8-99fa-3ea98a8a0eae
-  Args:
-    source: Emanuele_Filiberto_2nd_Duke_of_Aosta
-    type: :Man
-  AssignClass (aa4ba8c9-8d4a-417c-a66d-72567d8e0694)
- Call ID: aa4ba8c9-8d4a-417c-a66d-72567d8e0694
-  Args:
-    source: Emanuele_Filiberto_2nd_Duke_of_Aosta
-    type: :Person
-  AddTriple (ce284cc3-b8aa-4cab-96de-8a49ebcf091b)
- Call ID: ce284cc3-b8aa-4cab-96de-8a49ebcf091b
-  Args:
-    source: Amedeo_3rd_Duke_of_Aosta
-    target: Emanuele_Filiberto_2nd_Duke_of_Aosta
-    relation: :hasFather
-  AssignClass (32e7dc4a-bb9f-4f9b-8ed1-4c7817be6ab5)
- Call ID: 32e7dc4a-bb9f-4f9b-8ed1-4c7817be6ab5
-  Args:
-    type: :Woman
-    source: Princess_Helene
-  AssignClass (f040fc72-63c1-4a92-ae9c-a2d1c30a271a)
- Call ID: f040fc72-63c1-4a92-ae9c-a2d1c30a271a
-  Args:
-    source: Princess_Helene
-    type: :Person
-  AddTriple (1a720992-a055-46b3-a376-1c5cfd7b45a1)
- Call ID: 1a720992-a055-46b3-a376-1c5cfd7b45a1
-  Args:
-    relation: :hasMother
-    target: Princess_Helene
-    source: Amedeo_3rd_Duke_of_Aosta
-  AssignClass (9d989ed6-9073-4a47-8cdc-4c31567d6b75)
- Call ID: 9d989ed6-9073-4a47-8cdc-4c31567d6b75
+    literal_value: 1980
+    source: Rose_Gilman
+  AssignClass (cc69b5d3-b6f7-4f1e-801a-ed77efd24883)
+ Call ID: cc69b5d3-b6f7-4f1e-801a-ed77efd24883
   Args:
     type: :Man
-    source: Amadeo_I_of_Spain
-  AssignClass (10dfcb3b-8a18-4b1c-be19-0dc9257ebef2)
- Call ID: 10dfcb3b-8a18-4b1c-be19-0dc9257ebef2
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (d0e2590f-188d-4cca-99c0-178343a21334)
+ Call ID: d0e2590f-188d-4cca-99c0-178343a21334
   Args:
-    source: Amadeo_I_of_Spain
     type: :Person
-  AddTriple (2d01b101-dc72-427e-99d4-3c0dba4df1c5)
- Call ID: 2d01b101-dc72-427e-99d4-3c0dba4df1c5
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (b8ad821c-53d6-46c3-965c-a8ab652f4f1b)
+ Call ID: b8ad821c-53d6-46c3-965c-a8ab652f4f1b
   Args:
-    relation: :hasFather
-    target: Amadeo_I_of_Spain
-    source: Emanuele_Filiberto_2nd_Duke_of_Aosta
-  AssignClass (6fc834ba-43cc-4dca-a819-be6e5e4ef462)
- Call ID: 6fc834ba-43cc-4dca-a819-be6e5e4ef462
+    source: Prince_Richard_Duke_of_Gloucester
+    type: :Ancestor
+  AssignClass (2d975327-3b9f-4b93-a779-6900f5e862ef)
+ Call ID: 2d975327-3b9f-4b93-a779-6900f5e862ef
   Args:
-    source: Princess_Maria_Vittoria
     type: :Woman
-  AssignClass (e58a4218-31fe-43e9-91ee-7fb41148c7ba)
- Call ID: e58a4218-31fe-43e9-91ee-7fb41148c7ba
+    source: Birgitte_Duchess_of_Gloucester
+  AssignClass (09c3371b-e05d-4579-9e9f-d458c662a064)
+ Call ID: 09c3371b-e05d-4579-9e9f-d458c662a064
   Args:
-    source: Princess_Maria_Vittoria
     type: :Person
-  AddTriple (aa0c5561-6bbb-4db2-9536-2db40f598974)
- Call ID: aa0c5561-6bbb-4db2-9536-2db40f598974
+    source: Birgitte_Duchess_of_Gloucester
+  AssignClass (39b502c2-8843-46f0-a95e-a391929b630d)
+ Call ID: 39b502c2-8843-46f0-a95e-a391929b630d
   Args:
-    target: Princess_Maria_Vittoria
-    relation: :hasMother
-    source: Emanuele_Filiberto_2nd_Duke_of_Aosta
-  AssignClass (f80209ac-46d3-4cec-bb7f-e4aa3c342b00)
- Call ID: f80209ac-46d3-4cec-bb7f-e4aa3c342b00
+    source: Birgitte_Duchess_of_Gloucester
+    type: :Ancestor
+  AddTriple (5aefc03e-0f4e-4047-8485-c16f115523fd)
+ Call ID: 5aefc03e-0f4e-4047-8485-c16f115523fd
+  Args:
+    target: Prince_Richard_Duke_of_Gloucester
+    relation: :isChildOf
+    source: Rose_Gilman
+  AddTriple (cac4560b-96e9-491c-9fa8-e39d1d87621a)
+ Call ID: cac4560b-96e9-491c-9fa8-e39d1d87621a
+  Args:
+    source: Rose_Gilman
+    relation: :isChildOf
+    target: Birgitte_Duchess_of_Gloucester
+  AssignClass (ecc2dd12-8476-48ef-9034-5a802636e51a)
+ Call ID: ecc2dd12-8476-48ef-9034-5a802636e51a
+  Args:
+    source: George_Gilman
+    type: :Man
+  AssignClass (8fb0daaa-e3db-47d5-bdca-f4a177f3e528)
+ Call ID: 8fb0daaa-e3db-47d5-bdca-f4a177f3e528
+  Args:
+    source: George_Gilman
+    type: :Person
+  AddTriple (43ae4827-338d-43de-b416-560a91c88bd0)
+ Call ID: 43ae4827-338d-43de-b416-560a91c88bd0
+  Args:
+    target: George_Gilman
+    relation: :hasRelation
+    source: Rose_Gilman
+  AssignClass (7087c5bc-2f00-48f8-bafd-7ca30a9b064f)
+ Call ID: 7087c5bc-2f00-48f8-bafd-7ca30a9b064f
+  Args:
+    type: :Woman
+    source: Lyla_Gilman
+  AssignClass (0f13352c-ebce-4f75-9cdf-4d588d2d7f20)
+ Call ID: 0f13352c-ebce-4f75-9cdf-4d588d2d7f20
+  Args:
+    source: Lyla_Gilman
+    type: :Person
+  AddTriple (fa3ddb2d-6eb7-4830-ad66-daef3bf322f0)
+ Call ID: fa3ddb2d-6eb7-4830-ad66-daef3bf322f0
+  Args:
+    source: Lyla_Gilman
+    relation: :isChildOf
+    target: Rose_Gilman
+  AddTriple (2bbeab62-97e7-4707-afdf-9c40b29e17a0)
+ Call ID: 2bbeab62-97e7-4707-afdf-9c40b29e17a0
+  Args:
+    target: George_Gilman
+    relation: :isChildOf
+    source: Lyla_Gilman
+  AssignClass (2e173cae-ec93-4f6c-8efd-f5185606adc8)
+ Call ID: 2e173cae-ec93-4f6c-8efd-f5185606adc8
   Args:
     type: :Man
-    source: Prince_Philippe_of_Orleans
-  AssignClass (393f37d3-0a10-4144-b5f1-aa8826372ee5)
- Call ID: 393f37d3-0a10-4144-b5f1-aa8826372ee5
+    source: Rufus_Gilman
+  AssignClass (eff7bc53-f16e-440a-bd33-498f465f4094)
+ Call ID: eff7bc53-f16e-440a-bd33-498f465f4094
   Args:
+    source: Rufus_Gilman
     type: :Person
-    source: Prince_Philippe_of_Orleans
-  AddTriple (eece249d-ef08-43e7-801a-36ed8c57d6dd)
- Call ID: eece249d-ef08-43e7-801a-36ed8c57d6dd
+  AddTriple (32ae454f-72d0-4d40-a3fb-376330a913c1)
+ Call ID: 32ae454f-72d0-4d40-a3fb-376330a913c1
   Args:
-    source: Princess_Helene
-    target: Prince_Philippe_of_Orleans
-    relation: :hasFather
-  AssignClass (afdd2ad6-c9fb-4cd0-8493-521d77f5f8d7)
- Call ID: afdd2ad6-c9fb-4cd0-8493-521d77f5f8d7
+    source: Rufus_Gilman
+    relation: :isChildOf
+    target: Rose_Gilman
+  AddTriple (4d145f1a-7d72-45bd-9e8a-dd72f0e8498b)
+ Call ID: 4d145f1a-7d72-45bd-9e8a-dd72f0e8498b
   Args:
-    source: Princess_Marie_Isabelle_of_Orleans
-    type: :Woman
-  AssignClass (19c66dbe-71e3-4fe5-936f-3d9071389507)
- Call ID: 19c66dbe-71e3-4fe5-936f-3d9071389507
+    target: George_Gilman
+    source: Rufus_Gilman
+    relation: :isChildOf
+  Finish (3e014155-9a35-4315-8c87-665cbf2baea4)
+ Call ID: 3e014155-9a35-4315-8c87-665cbf2baea4
   Args:
-    type: :Person
-    source: Princess_Marie_Isabelle_of_Orleans
-  AddTriple (61f1190c-a159-4eda-8aae-17823d4322ce)
- Call ID: 61f1190c-a159-4eda-8aae-17823d4322ce
-  Args:
-    target: Princess_Marie_Isabelle_of_Orleans
-    relation: :hasMother
-    source: Princess_Helene
-  AssignClass (b87d68dd-4789-4e92-bdff-23d71273ddd8)
- Call ID: b87d68dd-4789-4e92-bdff-23d71273ddd8
-  Args:
-    type: :Man
-    source: Aimone_4th_Duke_of_Aosta
-  AssignClass (764e7426-5623-462e-a518-39aa2f32a0ce)
- Call ID: 764e7426-5623-462e-a518-39aa2f32a0ce
-  Args:
-    type: :Person
-    source: Aimone_4th_Duke_of_Aosta
-  AddTriple (ad2b66d0-616c-47e7-b7a0-35c02b9d791b)
- Call ID: ad2b66d0-616c-47e7-b7a0-35c02b9d791b
-  Args:
-    source: Aimone_4th_Duke_of_Aosta
-    relation: :isBrotherOf
-    target: Amedeo_3rd_Duke_of_Aosta
-  AssignClass (b91a4796-4977-47e2-bb3b-a6c2c82f4712)
- Call ID: b91a4796-4977-47e2-bb3b-a6c2c82f4712
-  Args:
-    source: Princess_Anne_of_Orleans
-    type: :Woman
-  AssignClass (4bf730f6-2f6c-43fa-82cc-56915eff68c8)
- Call ID: 4bf730f6-2f6c-43fa-82cc-56915eff68c8
-  Args:
-    type: :Person
-    source: Princess_Anne_of_Orleans
-  AddTriple (f8b3b70a-73f3-4c39-bbd4-4dc32ba992af)
- Call ID: f8b3b70a-73f3-4c39-bbd4-4dc32ba992af
-  Args:
-    source: Amedeo_3rd_Duke_of_Aosta
-    target: 1927
-    relation: :hasMarriageYear
-  AddLiteral (617eeed6-fcbf-49f0-bc04-52249032257c)
- Call ID: 617eeed6-fcbf-49f0-bc04-52249032257c
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1927
-    literal_type: xsd:integer
-    source: Amedeo_3rd_Duke_of_Aosta
-  AssignClass (f2314c7e-3ebc-4efe-a13b-891b6866e81c)
- Call ID: f2314c7e-3ebc-4efe-a13b-891b6866e81c
-  Args:
-    source: Prince_Jean_Duke_of_Guise
-    type: :Man
-  AssignClass (c831705c-1b5c-40ae-962b-c4c3564d6540)
- Call ID: c831705c-1b5c-40ae-962b-c4c3564d6540
-  Args:
-    source: Prince_Jean_Duke_of_Guise
-    type: :Person
-  AddTriple (2bb93104-75c3-4175-bb0e-edd275d5fa3d)
- Call ID: 2bb93104-75c3-4175-bb0e-edd275d5fa3d
-  Args:
-    target: Prince_Jean_Duke_of_Guise
-    relation: :hasFather
-    source: Princess_Anne_of_Orleans
-  AssignClass (b94b2db7-2e4d-4dad-b4d2-b9aef7a9a148)
- Call ID: b94b2db7-2e4d-4dad-b4d2-b9aef7a9a148
-  Args:
-    type: :Woman
-    source: Princess_Isabelle_of_Orleans
-  AssignClass (f9101fa5-a21a-4809-bd91-752c2da4fe3a)
- Call ID: f9101fa5-a21a-4809-bd91-752c2da4fe3a
-  Args:
-    source: Princess_Isabelle_of_Orleans
-    type: :Person
-  AddTriple (95494687-5043-44cf-90aa-9a01c7443bf8)
- Call ID: 95494687-5043-44cf-90aa-9a01c7443bf8
-  Args:
-    relation: :hasMother
-    target: Princess_Isabelle_of_Orleans
-    source: Princess_Anne_of_Orleans
-  Finish (0f7cc300-c3fe-4daa-b272-36360db48aff)
- Call ID: 0f7cc300-c3fe-4daa-b272-36360db48aff
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -748,53 +662,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aimone_4th_Duke_of_Aosta a :Man,
-          :Person ;
-      :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
-
-  data:Princess_Anne_of_Orleans a :Person,
+  data:Lyla_Gilman a :Person,
           :Woman ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMother data:Princess_Isabelle_of_Orleans .
+      :isChildOf data:George_Gilman,
+          data:Rose_Gilman .
 
-  data:Amadeo_I_of_Spain a :Man,
-          :Person .
-
-  data:Amedeo_3rd_Duke_of_Aosta a :Man,
+  data:Rufus_Gilman a :Man,
           :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-      :hasMarriageYear data:1927,
-          1927 ;
-      :hasMother data:Princess_Helene ;
-      :hasSex "Male"^^xsd:string ;
-      :knownAs "Duke of Apulia"^^xsd:string .
+      :isChildOf data:George_Gilman,
+          data:Rose_Gilman .
 
-  data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Man,
-          :Person ;
-      :hasFather data:Amadeo_I_of_Spain ;
-      :hasMother data:Princess_Maria_Vittoria .
+  data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Prince_Jean_Duke_of_Guise a :Man,
+  data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+          :Man,
           :Person .
 
-  data:Prince_Philippe_of_Orleans a :Man,
-          :Person .
-
-  data:Princess_Helene a :Person,
+  data:Rose_Gilman a :Person,
           :Woman ;
-      :hasFather data:Prince_Philippe_of_Orleans ;
-      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
+      :hasBirthYear 1980 ;
+      :hasRelation data:George_Gilman ;
+      :isChildOf data:Birgitte_Duchess_of_Gloucester,
+          data:Prince_Richard_Duke_of_Gloucester .
 
-  data:Princess_Isabelle_of_Orleans a :Person,
-          :Woman .
-
-  data:Princess_Maria_Vittoria a :Person,
-          :Woman .
-
-  data:Princess_Marie_Isabelle_of_Orleans a :Person,
-          :Woman .
+  data:George_Gilman a :Man,
+          :Person .
 
 
 
@@ -806,270 +700,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c39820cb-1169-4681-82aa-f54065bfa388)
- Call ID: c39820cb-1169-4681-82aa-f54065bfa388
+  ValidateShacl (7f0179bc-5d8c-4422-9df4-ffcf2103b787)
+ Call ID: 7f0179bc-5d8c-4422-9df4-ffcf2103b787
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:32
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not belong to the class :Sex.
+      The person George_Gilman is used as an ancestor for Rufus_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Amadeo_I_of_Spain' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person Rose_Gilman is used as an ancestor for Rufus_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Amadeo_I_of_Spain
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Emanuele_Filiberto_2nd_Duke_of_Aosta' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person George_Gilman is used as an ancestor for Lyla_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Emanuele_Filiberto_2nd_Duke_of_Aosta
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The mother 'Princess_Maria_Vittoria' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person Rose_Gilman is used as an ancestor for Lyla_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Maria_Vittoria
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The mother 'Princess_Helene' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person George_Gilman is used as an ancestor for Rufus_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Helene
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
+      The person Rose_Gilman is used as an ancestor for Rufus_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
+      The person George_Gilman is used as an ancestor for Lyla_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Amadeo_I_of_Spain' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person Rose_Gilman is used as an ancestor for Lyla_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Amadeo_I_of_Spain
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Prince_Jean_Duke_of_Guise' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
+      The person George_Gilman is used as an ancestor for Rufus_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Jean_Duke_of_Guise
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Emanuele_Filiberto_2nd_Duke_of_Aosta' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person Rose_Gilman is used as an ancestor for Rufus_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Emanuele_Filiberto_2nd_Duke_of_Aosta
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Prince_Philippe_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
+      The person George_Gilman is used as an ancestor for Lyla_Gilman, but George_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Philippe_of_Orleans
+      AssignClass(George_Gilman, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The mother 'Princess_Maria_Vittoria' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
+      The person Rose_Gilman is used as an ancestor for Lyla_Gilman, but Rose_Gilman is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Maria_Vittoria
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Isabelle_of_Orleans' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Isabelle_of_Orleans
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Helene' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Helene
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Marie_Isabelle_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Marie_Isabelle_of_Orleans
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Amadeo_I_of_Spain' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Amadeo_I_of_Spain
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Jean_Duke_of_Guise' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Jean_Duke_of_Guise
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Emanuele_Filiberto_2nd_Duke_of_Aosta' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Emanuele_Filiberto_2nd_Duke_of_Aosta
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Philippe_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Philippe_of_Orleans
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Maria_Vittoria' of 'Emanuele_Filiberto_2nd_Duke_of_Aosta' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Maria_Vittoria
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Isabelle_of_Orleans' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Isabelle_of_Orleans
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Helene' of 'Amedeo_3rd_Duke_of_Aosta' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Helene
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Marie_Isabelle_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Marie_Isabelle_of_Orleans
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Amedeo_3rd_Duke_of_Aosta does not have the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Sex Male
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Philippe_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Philippe_of_Orleans
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Jean_Duke_of_Guise' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Prince_Jean_Duke_of_Guise
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Marie_Isabelle_of_Orleans' of 'Princess_Helene' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Marie_Isabelle_of_Orleans
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Isabelle_of_Orleans' of 'Princess_Anne_of_Orleans' is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Ancestor Princess_Isabelle_of_Orleans
+      AssignClass(Rose_Gilman, :Ancestor)
 
 
 
@@ -1078,410 +812,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (16554746-1a5d-4286-ae6d-aa18709f481c)
- Call ID: 16554746-1a5d-4286-ae6d-aa18709f481c
+  AssignClass (96401c53-8908-48d1-8c59-a703039ea124)
+ Call ID: 96401c53-8908-48d1-8c59-a703039ea124
   Args:
+    source: George_Gilman
     type: :Ancestor
-    source: Amadeo_I_of_Spain
-  AssignClass (d1af15d1-0a5b-4631-ac36-dbd4af355dbb)
- Call ID: d1af15d1-0a5b-4631-ac36-dbd4af355dbb
+  AssignClass (c1bc1e5e-9480-41ae-bfcd-72e8457be680)
+ Call ID: c1bc1e5e-9480-41ae-bfcd-72e8457be680
   Args:
+    source: Rose_Gilman
     type: :Ancestor
-    source: Emanuele_Filiberto_2nd_Duke_of_Aosta
-  AssignClass (f097a533-db4b-403c-94e6-38412e6db9ed)
- Call ID: f097a533-db4b-403c-94e6-38412e6db9ed
-  Args:
-    type: :Ancestor
-    source: Princess_Maria_Vittoria
-  AssignClass (742c3428-ea62-45d1-9dd0-3cf019a55c23)
- Call ID: 742c3428-ea62-45d1-9dd0-3cf019a55c23
-  Args:
-    type: :Ancestor
-    source: Princess_Helene
-  AssignClass (9e58d623-50ac-4405-837e-fae87486fc06)
- Call ID: 9e58d623-50ac-4405-837e-fae87486fc06
-  Args:
-    type: :Ancestor
-    source: Prince_Jean_Duke_of_Guise
-  AssignClass (e9b43c38-5dd1-4bcb-8b3b-60ef4fbd243d)
- Call ID: e9b43c38-5dd1-4bcb-8b3b-60ef4fbd243d
-  Args:
-    type: :Ancestor
-    source: Prince_Philippe_of_Orleans
-  AssignClass (17ae28cc-564c-4b9a-9434-ffc698a33d72)
- Call ID: 17ae28cc-564c-4b9a-9434-ffc698a33d72
-  Args:
-    type: :Ancestor
-    source: Princess_Isabelle_of_Orleans
-  AssignClass (a068c204-b65a-46cf-a7f4-dfe2f761729e)
- Call ID: a068c204-b65a-46cf-a7f4-dfe2f761729e
-  Args:
-    type: :Ancestor
-    source: Princess_Marie_Isabelle_of_Orleans
-  Finish (96928645-8c4b-427c-8977-d99773fcc7bd)
- Call ID: 96928645-8c4b-427c-8977-d99773fcc7bd
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Aimone_4th_Duke_of_Aosta a :Man,
-          :Person ;
-      :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
-
-  data:Princess_Anne_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMother data:Princess_Isabelle_of_Orleans .
-
-  data:Amadeo_I_of_Spain a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Amedeo_3rd_Duke_of_Aosta a :Man,
-          :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-      :hasMarriageYear data:1927,
-          1927 ;
-      :hasMother data:Princess_Helene ;
-      :hasSex "Male"^^xsd:string ;
-      :knownAs "Duke of Apulia"^^xsd:string .
-
-  data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Amadeo_I_of_Spain ;
-      :hasMother data:Princess_Maria_Vittoria .
-
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Philippe_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Helene a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Philippe_of_Orleans ;
-      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
-
-  data:Princess_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Vittoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (53acb03f-ff9e-4502-9955-c6824806a4d5)
- Call ID: 53acb03f-ff9e-4502-9955-c6824806a4d5
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass with node 'Male' and class ':Sex'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (20e20da6-55fd-4853-b20d-0dd4584657da)
- Call ID: 20e20da6-55fd-4853-b20d-0dd4584657da
-  Args:
-    source: Male
-    type: :Sex
-  Finish (924e52da-7a93-4b78-aab1-e4e1580edd18)
- Call ID: 924e52da-7a93-4b78-aab1-e4e1580edd18
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Aimone_4th_Duke_of_Aosta a :Man,
-          :Person ;
-      :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
-
-  data:Male a :Sex .
-
-  data:Princess_Anne_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMother data:Princess_Isabelle_of_Orleans .
-
-  data:Amadeo_I_of_Spain a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Amedeo_3rd_Duke_of_Aosta a :Man,
-          :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-      :hasMarriageYear data:1927,
-          1927 ;
-      :hasMother data:Princess_Helene ;
-      :hasSex "Male"^^xsd:string ;
-      :knownAs "Duke of Apulia"^^xsd:string .
-
-  data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Amadeo_I_of_Spain ;
-      :hasMother data:Princess_Maria_Vittoria .
-
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Philippe_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Helene a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Philippe_of_Orleans ;
-      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
-
-  data:Princess_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Vittoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (0dd7c6df-00c5-4616-9115-cd134edfae8e)
- Call ID: 0dd7c6df-00c5-4616-9115-cd134edfae8e
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Amedeo_3rd_Duke_of_Aosta' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (f463d155-656f-4915-a3d3-8cef8de8568e)
- Call ID: f463d155-656f-4915-a3d3-8cef8de8568e
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Amedeo_3rd_Duke_of_Aosta
-    relation: :hasSex
-  AddTriple (124f0994-a501-40c0-93ff-594d30b8167d)
- Call ID: 124f0994-a501-40c0-93ff-594d30b8167d
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Amedeo_3rd_Duke_of_Aosta
-  Finish (40fa819f-0896-44d3-a63e-9efae25ea517)
- Call ID: 40fa819f-0896-44d3-a63e-9efae25ea517
+  ValidateShacl (a133a522-a493-4bd4-b8b1-2212f6747ef6)
+ Call ID: a133a522-a493-4bd4-b8b1-2212f6747ef6
   Args:
 
 ================================= Tool Message =================================
@@ -1495,77 +837,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aimone_4th_Duke_of_Aosta a :Man,
-          :Person ;
-      :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
-
-  data:Princess_Anne_of_Orleans a :Person,
+  data:Lyla_Gilman a :Person,
           :Woman ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMother data:Princess_Isabelle_of_Orleans .
+      :isChildOf data:George_Gilman,
+          data:Rose_Gilman .
 
-  data:Amadeo_I_of_Spain a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Amedeo_3rd_Duke_of_Aosta a :Man,
+  data:Rufus_Gilman a :Man,
           :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-      :hasMarriageYear data:1927,
-          1927 ;
-      :hasMother data:Princess_Helene ;
-      :hasSex data:Male ;
-      :knownAs "Duke of Apulia"^^xsd:string .
+      :isChildOf data:George_Gilman,
+          data:Rose_Gilman .
 
-  data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Amadeo_I_of_Spain ;
-      :hasMother data:Princess_Maria_Vittoria .
+  data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Male a :Sex .
-
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
+  data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Philippe_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Helene a :Ancestor,
+  data:Rose_Gilman a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Prince_Philippe_of_Orleans ;
-      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
+      :hasBirthYear 1980 ;
+      :hasRelation data:George_Gilman ;
+      :isChildOf data:Birgitte_Duchess_of_Gloucester,
+          data:Prince_Richard_Duke_of_Gloucester .
 
-  data:Princess_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Vittoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
+  data:George_Gilman a :Ancestor,
+          :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (81efc308-8c6a-4cfb-a963-6490911f5e56)
- Call ID: 81efc308-8c6a-4cfb-a963-6490911f5e56
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1575,156 +877,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f9111510-0b08-41d5-bf56-07ca53819c4e)
- Call ID: f9111510-0b08-41d5-bf56-07ca53819c4e
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1927']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (ac1cb7d1-9784-4e0f-a523-72cb56afda95)
- Call ID: ac1cb7d1-9784-4e0f-a523-72cb56afda95
-  Args:
-    relation: :hasMarriageYear
-    source: Amedeo_3rd_Duke_of_Aosta
-    literal_value: 1927
-    literal_type: xsd:integer
-  AddLiteral (aeaad42a-894a-4adf-9b32-56445f989e3a)
- Call ID: aeaad42a-894a-4adf-9b32-56445f989e3a
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1927
-    source: Amedeo_3rd_Duke_of_Aosta
-    relation: :hasMarriageYear
-  Finish (5420fce9-e614-4d30-a2b3-3abb503ee82c)
- Call ID: 5420fce9-e614-4d30-a2b3-3abb503ee82c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Aimone_4th_Duke_of_Aosta a :Man,
-          :Person ;
-      :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
-
-  data:Princess_Anne_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMother data:Princess_Isabelle_of_Orleans .
-
-  data:Amadeo_I_of_Spain a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Amedeo_3rd_Duke_of_Aosta a :Man,
-          :Person ;
-      :hasBirthYear 1898 ;
-      :hasDeathYear 1942 ;
-      :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-      :hasMarriageYear data:1927,
-          1927 ;
-      :hasMother data:Princess_Helene ;
-      :hasSex data:Male ;
-      :knownAs "Duke of Apulia"^^xsd:string .
-
-  data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Amadeo_I_of_Spain ;
-      :hasMother data:Princess_Maria_Vittoria .
-
-  data:Male a :Sex .
-
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Philippe_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Helene a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Philippe_of_Orleans ;
-      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
-
-  data:Princess_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Vittoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1927']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (fc74c5fc-748d-458b-b4c7-934019677d1f)
- Call ID: fc74c5fc-748d-458b-b4c7-934019677d1f
-  Args:
-    source: Amedeo_3rd_Duke_of_Aosta
-    target: 1927
-    relation: :hasMarriageYear
-  AddLiteral (c2834bc8-4b06-4ae7-af83-716e70a784e9)
- Call ID: c2834bc8-4b06-4ae7-af83-716e70a784e9
-  Args:
-    literal_value: 1927
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Amedeo_3rd_Duke_of_Aosta
-  Finish (3a936ea3-10f7-41ac-a23f-c5100448872e)
- Call ID: 3a936ea3-10f7-41ac-a23f-c5100448872e
+  Finish (7cb85aa7-2ca0-4de5-8ce0-b878ab8e2f85)
+ Call ID: 7cb85aa7-2ca0-4de5-8ce0-b878ab8e2f85
   Args:

@@ -2,29 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 1877 ;
-    :hasDeathYear 1947 ;
-    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear 1900 ;
-    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Peter_Ferdinand_of_Austria .
-
-data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man .
-
-data:Alice_of_Bourbon-Parma a :Ancestor,
-        :Woman .
-
-data:Ferdinand_IV_of_Tuscany a :Ancestor,
-        :Man .
-
-data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Woman .
-
-data:Peter_Ferdinand_of_Austria a :Man,
+data:James_Lascelles a :Man,
         :Person ;
-    :hasFather data:Ferdinand_IV_of_Tuscany ;
-    :hasMother data:Alice_of_Bourbon-Parma .
+    :isBrotherOf data:Robert_Jeremy_Hugh_Lascelles .
+
+data:Jeremy_Thorpe a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:George_Lascelles_7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Robert_Jeremy_Hugh_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein .
 

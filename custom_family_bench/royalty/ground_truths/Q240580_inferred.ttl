@@ -1,0 +1,245 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "4259:4275"^^xsd:string ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom"^^xsd:string,
+        "Princess Beatrice of Battenberg"^^xsd:string,
+        "Princess Henry of Battenberg"^^xsd:string,
+        "The Princess Beatrice"^^xsd:string ;
+    :hasRelation data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Princess_Louise_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Louise of Orléans"^^xsd:string ;
+    data:posIndicesFull "851:877"^^xsd:string ;
+    data:posIndicesPart "1687:1695"^^xsd:string,
+        "2241:2249"^^xsd:string ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans"^^xsd:string ;
+    :hasRelation data:Princess_Louise_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Louise_of_Orléans ;
+    :isBloodrelationOf data:Princess_Louise_of_Orléans ;
+    :isSiblingOf data:Princess_Louise_of_Orléans ;
+    :isSisterOf data:Princess_Louise_of_Orléans .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "1159:1171"^^xsd:string,
+        "805:817"^^xsd:string,
+        "888:900"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan-_Count_of_Barcelona .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "3829:3838"^^xsd:string,
+        "4215:4224"^^xsd:string ;
+    data:posIndicesPart "4708:4713"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isChildOf data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain ;
+    :isSonOf data:Juan_Carlos_I_of_Spain .
+
+data:Infanta_Pilar-_Duchess_of_Badajoz a :Person,
+        :Woman ;
+    rdfs:label "Infanta Pilar, Duchess of Badajoz"^^xsd:string ;
+    data:posIndicesFull "0:33"^^xsd:string ;
+    data:posIndicesPart "1074:1081"^^xsd:string,
+        "1777:1782"^^xsd:string,
+        "2038:2045"^^xsd:string,
+        "2049:2056"^^xsd:string,
+        "2076:2081"^^xsd:string,
+        "215:220"^^xsd:string,
+        "2497:2502"^^xsd:string,
+        "2773:2778"^^xsd:string,
+        "3237:3242"^^xsd:string,
+        "3519:3524"^^xsd:string,
+        "3675:3680"^^xsd:string,
+        "3840:3845"^^xsd:string,
+        "394:401"^^xsd:string,
+        "3959:3964"^^xsd:string,
+        "402:407"^^xsd:string,
+        "4682:4687"^^xsd:string,
+        "4697:4704"^^xsd:string,
+        "4791:4798"^^xsd:string,
+        "4802:4809"^^xsd:string,
+        "734:739"^^xsd:string ;
+    data:wdtLink wdt:Q240580 ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasParent data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isDaughterOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "1659:1672"^^xsd:string,
+        "1659:1681"^^xsd:string,
+        "4289:4302"^^xsd:string ;
+    data:posIndicesPart "2350:2355"^^xsd:string,
+        "2747:2752"^^xsd:string,
+        "3106:3110"^^xsd:string,
+        "3111:3117"^^xsd:string,
+        "3121:3126"^^xsd:string,
+        "4708:4713"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasChild data:Felipe_VI_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasParent data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isFatherOf data:Felipe_VI_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isUncleOf data:Felipe_VI_of_Spain .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona"^^xsd:string ;
+    data:posIndicesFull "1992:2024"^^xsd:string,
+        "258:290"^^xsd:string ;
+    data:posIndicesPart "1298:1302"^^xsd:string,
+        "1536:1540"^^xsd:string,
+        "3106:3110"^^xsd:string ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
+    :hasChild data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDaughter data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+

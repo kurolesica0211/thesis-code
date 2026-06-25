@@ -2,44 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
-        :Person ;
-    :isUncleOf data:Prince_Heinrich_of_Hesse-Kassel .
-
-data:Margaret_Campbell_Geddes a :Person,
+data:Maria_Christina_of_W%C3%BCrttemberg a :Person,
         :Woman ;
-    :isAuntOf data:Prince_Heinrich_of_Hesse-Kassel .
+    :hasFather data:Philipp_Albrecht ;
+    :hasMother data:Helena_of_Austria .
 
-data:Elisabeth_of_Hesse a :Person,
+data:Rosa_of_Austria a :Person,
+        :Woman ;
+    :hasMarriageYear 1928 ;
+    :hasRelation data:Philipp_Albrecht ;
+    :isSisterOf data:Helena_of_Austria .
+
+data:Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Margarete_Sophie_of_Austria a :Ancestor,
+        :Person,
         :Woman .
 
-data:King_Victor_Emmanuel_III_of_Italy a :Ancestor,
+data:Maria_Cristina_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Peter_Ferdinand a :Ancestor,
         :Man,
         :Person .
 
-data:Moritz_of_Hesse a :Man,
-        :Person .
-
-data:Otto_of_Hesse a :Man,
-        :Person .
-
-data:Prince_Philipp_of_Hesse a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Mafalda_of_Savoy a :Ancestor,
+data:Helena_of_Austria a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:King_Victor_Emmanuel_III_of_Italy .
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Peter_Ferdinand ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Maria_Cristina_of_Bourbon_Two_Sicilies ;
+    :hasRelation data:Philipp_Albrecht .
 
-data:Prince_Heinrich_of_Hesse-Kassel a :Man,
+data:Philipp_Albrecht a :Ancestor,
+        :Man,
         :Person ;
-    :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
-    :hasBirthYear 1927 ;
-    :hasDeathYear 1999 ;
-    :hasFather data:Prince_Philipp_of_Hesse ;
-    :hasMother data:Princess_Mafalda_of_Savoy ;
-    :isSiblingOf data:Elisabeth_of_Hesse,
-        data:Moritz_of_Hesse,
-        data:Otto_of_Hesse .
+    :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+    :hasMother data:Margarete_Sophie_of_Austria .
 

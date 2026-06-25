@@ -1,0 +1,251 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe"^^xsd:string ;
+    data:posIndicesFull "3664:3679"^^xsd:string,
+        "4186:4201"^^xsd:string,
+        "4232:4247"^^xsd:string ;
+    data:posIndicesPart "3916:3924"^^xsd:string,
+        "3925:3930"^^xsd:string,
+        "4020:4025"^^xsd:string,
+        "4572:4580"^^xsd:string,
+        "6288:6296"^^xsd:string ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon"^^xsd:string,
+        "Maria da Gloria"^^xsd:string ;
+    :hasRelation data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isBloodrelationOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isSiblingOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :isSisterOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+
+data:Alexander_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alexander of Greece"^^xsd:string ;
+    data:posIndicesFull "493:512"^^xsd:string ;
+    data:posIndicesPart "1133:1142"^^xsd:string,
+        "1363:1372"^^xsd:string,
+        "1651:1660"^^xsd:string,
+        "1881:1890"^^xsd:string,
+        "2363:2372"^^xsd:string,
+        "2458:2467"^^xsd:string,
+        "3010:3019"^^xsd:string,
+        "3212:3221"^^xsd:string,
+        "3320:3329"^^xsd:string,
+        "3557:3566"^^xsd:string,
+        "4133:4142"^^xsd:string,
+        "4172:4181"^^xsd:string,
+        "4321:4330"^^xsd:string,
+        "4648:4657"^^xsd:string,
+        "4876:4885"^^xsd:string,
+        "5040:5049"^^xsd:string,
+        "5164:5173"^^xsd:string,
+        "5695:5704"^^xsd:string,
+        "6236:6245"^^xsd:string,
+        "7887:7896"^^xsd:string,
+        "824:833"^^xsd:string,
+        "8339:8348"^^xsd:string,
+        "969:978"^^xsd:string ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece"^^xsd:string,
+        "King Alexander I of Greece"^^xsd:string,
+        "King Alexander of Greece"^^xsd:string ;
+    :hasBrother data:Alexander_of_Greece ;
+    :hasChild data:Alexandra_of_Yugoslavia ;
+    :hasDaughter data:Alexandra_of_Yugoslavia ;
+    :hasRelation data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Yugoslavia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexander_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece ;
+    :isFatherOf data:Alexandra_of_Yugoslavia ;
+    :isParentOf data:Alexandra_of_Yugoslavia ;
+    :isSiblingOf data:Alexander_of_Greece ;
+    :isUncleOf data:Alexandra_of_Yugoslavia .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Aspasia Manos"^^xsd:string ;
+    data:posIndicesFull "3262:3300"^^xsd:string ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou"^^xsd:string,
+        "Princess Aspasia of Greece and Denmark"^^xsd:string ;
+    :hasChild data:Alexandra_of_Yugoslavia ;
+    :hasDaughter data:Alexandra_of_Yugoslavia ;
+    :hasRelation data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexandra_of_Yugoslavia,
+        data:Aspasia_Manos ;
+    :hasSex data:female ;
+    :hasSister data:Aspasia_Manos ;
+    :isAncestorOf data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexandra_of_Yugoslavia ;
+    :isAuntOf data:Alexandra_of_Yugoslavia ;
+    :isBloodrelationOf data:Aspasia_Manos ;
+    :isMotherOf data:Alexandra_of_Yugoslavia ;
+    :isParentOf data:Alexandra_of_Yugoslavia ;
+    :isSiblingOf data:Aspasia_Manos ;
+    :isSisterOf data:Aspasia_Manos .
+
+data:Alexander-_Crown_Prince_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Alexander, Crown Prince of Serbia"^^xsd:string ;
+    data:posIndicesFull "214:237"^^xsd:string ;
+    data:posIndicesPart "1057:1063"^^xsd:string,
+        "1133:1142"^^xsd:string,
+        "1350:1355"^^xsd:string,
+        "1356:1362"^^xsd:string,
+        "1363:1372"^^xsd:string,
+        "1651:1660"^^xsd:string,
+        "1881:1890"^^xsd:string,
+        "1926:1932"^^xsd:string,
+        "2350:2355"^^xsd:string,
+        "2356:2362"^^xsd:string,
+        "2363:2372"^^xsd:string,
+        "2458:2467"^^xsd:string,
+        "2699:2704"^^xsd:string,
+        "2705:2711"^^xsd:string,
+        "2933:2939"^^xsd:string,
+        "3010:3019"^^xsd:string,
+        "3212:3221"^^xsd:string,
+        "3320:3329"^^xsd:string,
+        "3557:3566"^^xsd:string,
+        "3858:3864"^^xsd:string,
+        "4133:4142"^^xsd:string,
+        "4172:4181"^^xsd:string,
+        "4308:4313"^^xsd:string,
+        "4314:4320"^^xsd:string,
+        "4321:4330"^^xsd:string,
+        "435:444"^^xsd:string,
+        "4566:4571"^^xsd:string,
+        "4648:4657"^^xsd:string,
+        "4863:4868"^^xsd:string,
+        "4869:4875"^^xsd:string,
+        "4876:4885"^^xsd:string,
+        "5040:5049"^^xsd:string,
+        "5164:5173"^^xsd:string,
+        "550:555"^^xsd:string,
+        "556:562"^^xsd:string,
+        "5695:5704"^^xsd:string,
+        "5764:5770"^^xsd:string,
+        "5847:5853"^^xsd:string,
+        "5988:5994"^^xsd:string,
+        "6093:6099"^^xsd:string,
+        "6223:6228"^^xsd:string,
+        "6229:6235"^^xsd:string,
+        "6236:6245"^^xsd:string,
+        "6366:6371"^^xsd:string,
+        "6372:6378"^^xsd:string,
+        "6464:6470"^^xsd:string,
+        "6633:6639"^^xsd:string,
+        "6723:6729"^^xsd:string,
+        "6857:6863"^^xsd:string,
+        "7138:7144"^^xsd:string,
+        "7180:7185"^^xsd:string,
+        "7186:7192"^^xsd:string,
+        "7337:7343"^^xsd:string,
+        "7382:7388"^^xsd:string,
+        "7521:7527"^^xsd:string,
+        "7571:7577"^^xsd:string,
+        "7667:7673"^^xsd:string,
+        "7792:7798"^^xsd:string,
+        "7800:7806"^^xsd:string,
+        "7887:7896"^^xsd:string,
+        "8049:8055"^^xsd:string,
+        "8221:8227"^^xsd:string,
+        "824:833"^^xsd:string,
+        "8339:8348"^^xsd:string,
+        "969:978"^^xsd:string ;
+    data:wdtLink wdt:Q815126 ;
+    :alsoKnownAs "Aleksandar Karađorđević"^^xsd:string,
+        "Alexander Karageorgievich, Crown Prince of Yugoslavia"^^xsd:string,
+        "Crown Prince Alexander Karađorđević"^^xsd:string,
+        "Crown Prince Alexander of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Alexander_of_Greece,
+        data:Alexandra_of_Yugoslavia,
+        data:Aspasia_Manos ;
+    :hasBrother data:Alexander-_Crown_Prince_of_Serbia ;
+    :hasMother data:Alexandra_of_Yugoslavia ;
+    :hasParent data:Alexandra_of_Yugoslavia ;
+    :hasRelation data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Yugoslavia,
+        data:Aspasia_Manos ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isBrotherOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isChildOf data:Alexandra_of_Yugoslavia ;
+    :isSiblingOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isSonOf data:Alexandra_of_Yugoslavia .
+
+data:Alexandra_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Alexandra of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "3077:3100"^^xsd:string,
+        "493:512"^^xsd:string ;
+    data:posIndicesPart "1232:1242"^^xsd:string,
+        "1513:1523"^^xsd:string,
+        "1713:1723"^^xsd:string,
+        "1845:1855"^^xsd:string,
+        "2676:2686"^^xsd:string,
+        "5152:5162"^^xsd:string,
+        "5188:5198"^^xsd:string,
+        "5282:5292"^^xsd:string,
+        "5398:5408"^^xsd:string,
+        "5633:5643"^^xsd:string,
+        "589:599"^^xsd:string,
+        "708:718"^^xsd:string ;
+    data:wdtLink wdt:Q167423 ;
+    :alsoKnownAs "Alexandra Oldenburg Karadjordjevic"^^xsd:string,
+        "Alexandra of Greece"^^xsd:string,
+        "Alexandra of Greece, Queen of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasChild data:Alexander-_Crown_Prince_of_Serbia ;
+    :hasFather data:Alexander_of_Greece ;
+    :hasMother data:Aspasia_Manos ;
+    :hasParent data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasRelation data:Alexander-_Crown_Prince_of_Serbia,
+        data:Alexander_of_Greece,
+        data:Alexandra_of_Yugoslavia,
+        data:Aspasia_Manos ;
+    :hasSex data:female ;
+    :hasSister data:Alexandra_of_Yugoslavia ;
+    :hasSon data:Alexander-_Crown_Prince_of_Serbia ;
+    :isAncestorOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isAuntOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isBloodrelationOf data:Alexandra_of_Yugoslavia ;
+    :isChildOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isDaughterOf data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :isMotherOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isParentOf data:Alexander-_Crown_Prince_of_Serbia ;
+    :isSiblingOf data:Alexandra_of_Yugoslavia ;
+    :isSisterOf data:Alexandra_of_Yugoslavia .
+

@@ -1,0 +1,190 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Charlotte_of_Croÿ a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Charlotte of Croÿ"^^xsd:string ;
+    data:posIndicesFull "351:377"^^xsd:string,
+        "360:377"^^xsd:string ;
+    data:posIndicesPart "551:559"^^xsd:string ;
+    data:wdtLink wdt:Q75383564 ;
+    :alsoKnownAs "Charlotte Alexandra Marie Clotilde Prinzessin von Croÿ"^^xsd:string,
+        "Charlotte Alexandra Marie Clotilde of Croÿ"^^xsd:string,
+        "Charlotte Prinzessin von Croÿ"^^xsd:string,
+        "Charlotte of Croÿ"^^xsd:string,
+        "Princess Charlotte Alexandra Marie Clotilde of Croÿ"^^xsd:string ;
+    :hasChild data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Charlotte_of_Croÿ ;
+    :hasSon data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Croÿ ;
+    :isMotherOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Princess_Charlotte_of_Croÿ ;
+    :isSisterOf data:Princess_Charlotte_of_Croÿ .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "188:192"^^xsd:string,
+        "886:890"^^xsd:string ;
+    data:posIndicesPart "551:559"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Kraft-_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Kraft, Prince of Hohenlohe-Langenburg"^^xsd:string ;
+    data:posIndicesFull "281:318"^^xsd:string ;
+    data:posIndicesPart "1057:1067"^^xsd:string,
+        "1160:1170"^^xsd:string,
+        "1455:1465"^^xsd:string,
+        "484:490"^^xsd:string,
+        "626:632"^^xsd:string,
+        "823:829"^^xsd:string,
+        "993:1003"^^xsd:string ;
+    data:wdtLink wdt:Q72937 ;
+    :hasAncestor data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasBrother data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :hasChild data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isFatherOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isUncleOf data:Philipp-_Prince_of_Hohenlohe-Langenburg .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "421:461"^^xsd:string,
+        "430:461"^^xsd:string ;
+    data:posIndicesPart "551:559"^^xsd:string ;
+    data:wdtLink wdt:Q240317 ;
+    :alsoKnownAs "Margarita of Greece and Denmark"^^xsd:string,
+        "Margarita of Hohenlohe-Langenburg"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasChild data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSon data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Margarita_of_Greece_and_Denmark .
+
+data:Philipp-_Prince_of_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    rdfs:label "Philipp, Prince of Hohenlohe-Langenburg"^^xsd:string ;
+    data:posIndicesFull "0:39"^^xsd:string ;
+    data:posIndicesPart "1057:1067"^^xsd:string,
+        "1160:1170"^^xsd:string,
+        "1455:1465"^^xsd:string,
+        "484:490"^^xsd:string,
+        "626:632"^^xsd:string,
+        "823:829"^^xsd:string,
+        "993:1003"^^xsd:string ;
+    data:wdtLink wdt:Q95828 ;
+    :alsoKnownAs "Philipp Gottfried Alexander Erbprinz zu Hohenlohe-Langenburg"^^xsd:string ;
+    :hasAncestor data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasBrother data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :hasFather data:Kraft-_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Charlotte_of_Croÿ ;
+    :hasParent data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ ;
+    :hasRelation data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Philipp-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Charlotte_of_Croÿ,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isBrotherOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ ;
+    :isSiblingOf data:Philipp-_Prince_of_Hohenlohe-Langenburg ;
+    :isSonOf data:Kraft-_Prince_of_Hohenlohe-Langenburg,
+        data:Princess_Charlotte_of_Croÿ .
+

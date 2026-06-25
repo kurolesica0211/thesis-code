@@ -106,6 +106,8 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +123,9 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +140,23 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,175 +448,190 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a993e945-8c43-46ff-a6ff-ff5a4194408b)
- Call ID: a993e945-8c43-46ff-a6ff-ff5a4194408b
+  AssignClass (c232f229-9ca6-4ada-8b6f-abfb99ebcc87)
+ Call ID: c232f229-9ca6-4ada-8b6f-abfb99ebcc87
   Args:
     source: John_David_James_Dalrymple
     type: :Man
-  AssignClass (4c0982e9-5657-4ed6-9e04-692768125755)
- Call ID: 4c0982e9-5657-4ed6-9e04-692768125755
+  AssignClass (b0e41ce8-36af-4442-9327-96371d55bec0)
+ Call ID: b0e41ce8-36af-4442-9327-96371d55bec0
   Args:
-    type: :Person
     source: John_David_James_Dalrymple
-  AddLiteral (81c5aeb7-500c-401a-93f1-b7c42475bb80)
- Call ID: 81c5aeb7-500c-401a-93f1-b7c42475bb80
+    type: :Person
+  AddLiteral (b9b7e518-8a3e-4120-aceb-e6bbe7f94f99)
+ Call ID: b9b7e518-8a3e-4120-aceb-e6bbe7f94f99
   Args:
     literal_value: 1961
-    relation: :hasBirthYear
-    source: John_David_James_Dalrymple
     literal_type: xsd:integer
-  AssignClass (c62c6208-f044-4028-aed0-e01b2b31a07f)
- Call ID: c62c6208-f044-4028-aed0-e01b2b31a07f
+    source: John_David_James_Dalrymple
+    relation: :hasBirthYear
+  AssignClass (e147cbf2-d8b2-42c1-986c-8be60fc73bc6)
+ Call ID: e147cbf2-d8b2-42c1-986c-8be60fc73bc6
   Args:
-    source: John_Dalrymple_13th_Earl_of_Stair
     type: :Man
-  AssignClass (a20245ac-56c7-4dcf-9cb9-b461c8e42277)
- Call ID: a20245ac-56c7-4dcf-9cb9-b461c8e42277
-  Args:
-    type: :Person
     source: John_Dalrymple_13th_Earl_of_Stair
-  AssignClass (83425cc3-5277-45bd-b41f-5a001fdd8dcd)
- Call ID: 83425cc3-5277-45bd-b41f-5a001fdd8dcd
+  AssignClass (223ffb1d-c50b-44b2-92de-1cd88b867b74)
+ Call ID: 223ffb1d-c50b-44b2-92de-1cd88b867b74
+  Args:
+    source: John_Dalrymple_13th_Earl_of_Stair
+    type: :Person
+  AssignClass (e4ec4320-cd8d-457b-87bd-387751d50824)
+ Call ID: e4ec4320-cd8d-457b-87bd-387751d50824
   Args:
     source: Davina_Katherine_Bowes-Lyon
     type: :Woman
-  AssignClass (a8129f14-475d-470d-a925-da233804db53)
- Call ID: a8129f14-475d-470d-a925-da233804db53
+  AssignClass (7ce64469-00e5-4a07-b014-5c51fb46b479)
+ Call ID: 7ce64469-00e5-4a07-b014-5c51fb46b479
   Args:
     source: Davina_Katherine_Bowes-Lyon
     type: :Person
-  AddLiteral (026f3d04-222f-49da-aca6-82478f9635bf)
- Call ID: 026f3d04-222f-49da-aca6-82478f9635bf
+  AddLiteral (f95b8639-fec8-407e-b6df-36c53498a9a3)
+ Call ID: f95b8639-fec8-407e-b6df-36c53498a9a3
   Args:
+    literal_type: xsd:integer
     source: Davina_Katherine_Bowes-Lyon
-    relation: :hasBirthYear
     literal_value: 1930
-    literal_type: xsd:integer
-  AddLiteral (d0a50368-3f2c-4f82-add0-fff991846044)
- Call ID: d0a50368-3f2c-4f82-add0-fff991846044
+    relation: :hasBirthYear
+  AddLiteral (ef6d2d66-1c0a-477c-a5d1-46d9c0f70933)
+ Call ID: ef6d2d66-1c0a-477c-a5d1-46d9c0f70933
   Args:
-    source: Davina_Katherine_Bowes-Lyon
-    relation: :hasDeathYear
     literal_value: 2017
+    source: Davina_Katherine_Bowes-Lyon
     literal_type: xsd:integer
-  AddTriple (1998ee1c-2542-4bbd-868b-8248eb4e6032)
- Call ID: 1998ee1c-2542-4bbd-868b-8248eb4e6032
+    relation: :hasDeathYear
+  AddTriple (fa32388d-76ba-46e6-8588-df7768c8f7e2)
+ Call ID: fa32388d-76ba-46e6-8588-df7768c8f7e2
   Args:
     source: John_David_James_Dalrymple
     relation: :hasFather
     target: John_Dalrymple_13th_Earl_of_Stair
-  AddTriple (b87e43fa-754d-4ab7-880c-6646b38163fa)
- Call ID: b87e43fa-754d-4ab7-880c-6646b38163fa
+  AddTriple (45e41907-ba06-49aa-86e8-a115ba925377)
+ Call ID: 45e41907-ba06-49aa-86e8-a115ba925377
   Args:
-    target: Davina_Katherine_Bowes-Lyon
-    source: John_David_James_Dalrymple
     relation: :hasMother
-  AssignClass (fcdd9a15-66cc-4c26-b3bb-bc4943ff87b9)
- Call ID: fcdd9a15-66cc-4c26-b3bb-bc4943ff87b9
-  Args:
-    type: :Man
-    source: David_Bowes-Lyon
-  AssignClass (46743577-db0c-49c9-8ef4-b80092ac1053)
- Call ID: 46743577-db0c-49c9-8ef4-b80092ac1053
-  Args:
-    source: David_Bowes-Lyon
-    type: :Person
-  AddTriple (964ad432-4edb-420b-9aec-3baa867f9ba7)
- Call ID: 964ad432-4edb-420b-9aec-3baa867f9ba7
-  Args:
-    source: David_Bowes-Lyon
-    relation: :isFatherOf
+    source: John_David_James_Dalrymple
     target: Davina_Katherine_Bowes-Lyon
-  AssignClass (8d68af0e-31eb-4b3e-b3e4-8c38b807ce70)
- Call ID: 8d68af0e-31eb-4b3e-b3e4-8c38b807ce70
+  AssignClass (60090bc2-600f-41cc-a936-d47ca3cb3437)
+ Call ID: 60090bc2-600f-41cc-a936-d47ca3cb3437
   Args:
-    type: :Woman
-    source: Emily_Mary_Julia_Stonor
-  AssignClass (cb1a7e52-4f94-4692-b257-6504b5d780c7)
- Call ID: cb1a7e52-4f94-4692-b257-6504b5d780c7
-  Args:
-    source: Emily_Mary_Julia_Stonor
-    type: :Person
-  AddLiteral (4a938b2a-3f59-4f32-8741-027ff6d41c33)
- Call ID: 4a938b2a-3f59-4f32-8741-027ff6d41c33
-  Args:
-    source: John_David_James_Dalrymple
-    relation: :hasMarriageYear
-    literal_value: 2006
-    literal_type: xsd:integer
-  AddTriple (8e96dcbd-525c-43d6-9c27-da34905f50f5)
- Call ID: 8e96dcbd-525c-43d6-9c27-da34905f50f5
-  Args:
-    target: Emily_Mary_Julia_Stonor
-    source: John_David_James_Dalrymple
-    relation: :hasRelation
-  AssignClass (89b340bb-f382-4f70-8b06-091e02a87eab)
- Call ID: 89b340bb-f382-4f70-8b06-091e02a87eab
-  Args:
-    source: Ralph_Stonor_7th_Baron_Camoys
+    source: David_Bowes-Lyon
     type: :Man
-  AssignClass (51bccb0c-9978-4dcc-b60b-7bd9f319a6d7)
- Call ID: 51bccb0c-9978-4dcc-b60b-7bd9f319a6d7
+  AssignClass (84eb3ef4-b8be-4679-a1df-d1556f6ff065)
+ Call ID: 84eb3ef4-b8be-4679-a1df-d1556f6ff065
   Args:
     type: :Person
-    source: Ralph_Stonor_7th_Baron_Camoys
-  AssignClass (eded5e79-e9c7-4bf0-8bb4-61c3e48faf0f)
- Call ID: eded5e79-e9c7-4bf0-8bb4-61c3e48faf0f
+    source: David_Bowes-Lyon
+  AddTriple (ff2cd982-b8d2-4f9f-8a26-b0e58428228a)
+ Call ID: ff2cd982-b8d2-4f9f-8a26-b0e58428228a
   Args:
-    source: Elizabeth_Mary_Hyde_Parker
-    type: :Woman
-  AssignClass (f4e283b6-b998-47a8-be35-47ef065d8454)
- Call ID: f4e283b6-b998-47a8-be35-47ef065d8454
-  Args:
-    type: :Person
-    source: Elizabeth_Mary_Hyde_Parker
-  AddTriple (f444af60-801a-416f-80c6-fd92444b818e)
- Call ID: f444af60-801a-416f-80c6-fd92444b818e
-  Args:
-    target: Emily_Mary_Julia_Stonor
-    source: Ralph_Stonor_7th_Baron_Camoys
-    relation: :isFatherOf
-  AddTriple (2d82a8bc-4201-4247-95f9-0a1bb17598dc)
- Call ID: 2d82a8bc-4201-4247-95f9-0a1bb17598dc
-  Args:
-    target: Emily_Mary_Julia_Stonor
-    source: Elizabeth_Mary_Hyde_Parker
-    relation: :isMotherOf
-  AssignClass (636af7fc-bd79-4c83-b6ce-c5a07dc8bd5a)
- Call ID: 636af7fc-bd79-4c83-b6ce-c5a07dc8bd5a
+    relation: :hasFather
+    source: Davina_Katherine_Bowes-Lyon
+    target: David_Bowes-Lyon
+  AssignClass (92737702-b656-4e03-baa1-550a31c5d0ae)
+ Call ID: 92737702-b656-4e03-baa1-550a31c5d0ae
   Args:
     type: :Woman
+    source: Queen_Elizabeth
+  AssignClass (2a49a7ee-4efa-42c7-b86d-64d12c3d7ee6)
+ Call ID: 2a49a7ee-4efa-42c7-b86d-64d12c3d7ee6
+  Args:
+    source: Queen_Elizabeth
+    type: :Person
+  AddTriple (42573ef7-c39e-41ea-9e20-b7d90add5789)
+ Call ID: 42573ef7-c39e-41ea-9e20-b7d90add5789
+  Args:
+    source: David_Bowes-Lyon
+    relation: :isSisterOf
+    target: Queen_Elizabeth
+  AssignClass (33258176-de7c-46ef-889e-ef6a8889a493)
+ Call ID: 33258176-de7c-46ef-889e-ef6a8889a493
+  Args:
     source: Violet_Evelyn_Dalrymple
-  AssignClass (e4555f96-11bc-427e-a65d-e3024f038607)
- Call ID: e4555f96-11bc-427e-a65d-e3024f038607
+    type: :Woman
+  AssignClass (96fb9f17-2268-4151-bd63-bb9ca19d028a)
+ Call ID: 96fb9f17-2268-4151-bd63-bb9ca19d028a
   Args:
     type: :Person
     source: Violet_Evelyn_Dalrymple
-  AddTriple (cc8bbd7b-e556-46e4-b9c9-67b270dd60d6)
- Call ID: cc8bbd7b-e556-46e4-b9c9-67b270dd60d6
+  AddTriple (e1eb8387-c6ef-4d08-ab9a-10d6df076019)
+ Call ID: e1eb8387-c6ef-4d08-ab9a-10d6df076019
   Args:
     target: Violet_Evelyn_Dalrymple
     source: John_Dalrymple_13th_Earl_of_Stair
     relation: :hasMother
-  AssignClass (49a887fc-6ed6-40bf-9e24-c815a7b16865)
- Call ID: 49a887fc-6ed6-40bf-9e24-c815a7b16865
+  AssignClass (9b04e8e1-b1e1-4cf2-a9a3-994db399050e)
+ Call ID: 9b04e8e1-b1e1-4cf2-a9a3-994db399050e
   Args:
     type: :Man
     source: Frederick_Calvert_6th_Baron_Baltimore
-  AssignClass (3ee61a6a-5163-40c6-bd26-87c8cf79e251)
- Call ID: 3ee61a6a-5163-40c6-bd26-87c8cf79e251
+  AssignClass (e3f266e6-0342-4096-bb40-cb7229e3e158)
+ Call ID: e3f266e6-0342-4096-bb40-cb7229e3e158
+  Args:
+    source: Frederick_Calvert_6th_Baron_Baltimore
+    type: :Person
+  AssignClass (9600131c-4b2c-4ac9-99d8-eda8b00842fc)
+ Call ID: 9600131c-4b2c-4ac9-99d8-eda8b00842fc
+  Args:
+    type: :Woman
+    source: Emily_Mary_Julia_Stonor
+  AssignClass (d2962705-f379-4049-81fe-8528d0b819f7)
+ Call ID: d2962705-f379-4049-81fe-8528d0b819f7
+  Args:
+    source: Emily_Mary_Julia_Stonor
+    type: :Person
+  AddTriple (b095fd2f-4369-46b0-8108-e6b653ec04f7)
+ Call ID: b095fd2f-4369-46b0-8108-e6b653ec04f7
+  Args:
+    relation: :hasRelation
+    source: John_David_James_Dalrymple
+    target: Emily_Mary_Julia_Stonor
+  AddLiteral (a4b4b3d4-7162-4d84-8782-9f4778fd867d)
+ Call ID: a4b4b3d4-7162-4d84-8782-9f4778fd867d
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: John_David_James_Dalrymple
+    literal_value: 2006
+  AssignClass (10434715-460f-4a08-8951-48149c040648)
+ Call ID: 10434715-460f-4a08-8951-48149c040648
+  Args:
+    type: :Man
+    source: Ralph_Stonor_7th_Baron_Camoys
+  AssignClass (9f50d9fb-1fb3-476b-8aab-732fefd78eda)
+ Call ID: 9f50d9fb-1fb3-476b-8aab-732fefd78eda
   Args:
     type: :Person
-    source: Frederick_Calvert_6th_Baron_Baltimore
-  AddTriple (cd3937a1-a80d-44f6-8180-fbc5719a4a1f)
- Call ID: cd3937a1-a80d-44f6-8180-fbc5719a4a1f
+    source: Ralph_Stonor_7th_Baron_Camoys
+  AssignClass (bd053167-3d0a-4394-a692-450e4986afe8)
+ Call ID: bd053167-3d0a-4394-a692-450e4986afe8
   Args:
-    target: Frederick_Calvert_6th_Baron_Baltimore
-    source: John_David_James_Dalrymple
-    relation: :hasAncestor
-  Finish (d49779f1-293e-45b0-99b3-71bba4729b1c)
- Call ID: d49779f1-293e-45b0-99b3-71bba4729b1c
+    type: :Woman
+    source: Elizabeth_Mary_Hyde_Parker
+  AssignClass (d9b5bb7d-68b5-41aa-a689-9827c790bf6b)
+ Call ID: d9b5bb7d-68b5-41aa-a689-9827c790bf6b
   Args:
+    type: :Person
+    source: Elizabeth_Mary_Hyde_Parker
+  AddTriple (bcd1e389-d708-407a-9e4d-eba68c4240a4)
+ Call ID: bcd1e389-d708-407a-9e4d-eba68c4240a4
+  Args:
+    relation: :hasFather
+    source: Emily_Mary_Julia_Stonor
+    target: Ralph_Stonor_7th_Baron_Camoys
+  AddTriple (82ce0274-4910-4676-9e65-55e99328b361)
+ Call ID: 82ce0274-4910-4676-9e65-55e99328b361
+  Args:
+    target: Elizabeth_Mary_Hyde_Parker
+    source: Emily_Mary_Julia_Stonor
+    relation: :hasMother
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -649,46 +756,57 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Bowes-Lyon a :Man,
-          :Person ;
-      :isFatherOf data:Davina_Katherine_Bowes-Lyon .
-
-  data:Elizabeth_Mary_Hyde_Parker a :Person,
-          :Woman ;
-      :isMotherOf data:Emily_Mary_Julia_Stonor .
+  data:Frederick_Calvert_6th_Baron_Baltimore a :Man,
+          :Person .
 
   data:John_David_James_Dalrymple a :Man,
           :Person ;
-      :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore ;
       :hasBirthYear 1961 ;
       :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;
       :hasMarriageYear 2006 ;
       :hasMother data:Davina_Katherine_Bowes-Lyon ;
       :hasRelation data:Emily_Mary_Julia_Stonor .
 
-  data:Ralph_Stonor_7th_Baron_Camoys a :Man,
+  data:David_Bowes-Lyon a :Man,
           :Person ;
-      :isFatherOf data:Emily_Mary_Julia_Stonor .
+      :isSisterOf data:Queen_Elizabeth .
 
-  data:Frederick_Calvert_6th_Baron_Baltimore a :Man,
-          :Person .
+  data:Davina_Katherine_Bowes-Lyon a :Person,
+          :Woman ;
+      :hasBirthYear 1930 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:David_Bowes-Lyon .
+
+  data:Elizabeth_Mary_Hyde_Parker a :Person,
+          :Woman .
+
+  data:Emily_Mary_Julia_Stonor a :Person,
+          :Woman ;
+      :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;
+      :hasMother data:Elizabeth_Mary_Hyde_Parker .
 
   data:John_Dalrymple_13th_Earl_of_Stair a :Man,
           :Person ;
       :hasMother data:Violet_Evelyn_Dalrymple .
 
+  data:Queen_Elizabeth a :Person,
+          :Woman .
+
+  data:Ralph_Stonor_7th_Baron_Camoys a :Man,
+          :Person .
+
   data:Violet_Evelyn_Dalrymple a :Person,
           :Woman .
 
-  data:Davina_Katherine_Bowes-Lyon a :Person,
-          :Woman ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2017 .
-
-  data:Emily_Mary_Julia_Stonor a :Person,
-          :Woman .
 
 
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (b38feea3-cbc7-48d7-9f14-06e112f868e6)
+ Call ID: b38feea3-cbc7-48d7-9f14-06e112f868e6
+  Args:
 
 ================================= Tool Message =================================
 
@@ -698,134 +816,166 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (68a2b0ba-79f0-4e73-b74c-12db23e23286)
- Call ID: 68a2b0ba-79f0-4e73-b74c-12db23e23286
+  ValidateShacl (157cb770-b867-4c3c-a986-efdd8351e517)
+ Call ID: 157cb770-b867-4c3c-a986-efdd8351e517
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:19
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Node data:David_Bowes-Lyon is closed. It cannot have value: data:Queen_Elizabeth
     LLM-provided explanation of the violation:
-      The node 'Frederick_Calvert_6th_Baron_Baltimore' used in the 'hasAncestor' relationship for 'John_David_James_Dalrymple' is missing the required ':Ancestor' class.
+      The node David_Bowes-Lyon is defined as a closed shape, meaning it cannot have the relationship isSisterOf with Queen_Elizabeth.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Calvert_6th_Baron_Baltimore', class=':Ancestor')
+      RemoveTriple(David_Bowes-Lyon, isSisterOf, Queen_Elizabeth)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Dalrymple_13th_Earl_of_Stair' used in the 'hasFather' relationship for 'John_David_James_Dalrymple' is missing the required ':Ancestor' class.
+      The node John_Dalrymple_13th_Earl_of_Stair, assigned as the father of John_David_James_Dalrymple, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Dalrymple_13th_Earl_of_Stair', class=':Ancestor')
+      AssignClass(John_Dalrymple_13th_Earl_of_Stair, :Man)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Davina_Katherine_Bowes-Lyon' used in the 'hasMother' relationship for 'John_David_James_Dalrymple' is missing the required ':Ancestor' class.
+      The node Davina_Katherine_Bowes-Lyon, assigned as the mother of John_David_James_Dalrymple, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Davina_Katherine_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Davina_Katherine_Bowes-Lyon, :Woman)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Violet_Evelyn_Dalrymple' used in the 'hasMother' relationship for 'John_Dalrymple_13th_Earl_of_Stair' is missing the required ':Ancestor' class.
+      The node Violet_Evelyn_Dalrymple, assigned as the mother of John_Dalrymple_13th_Earl_of_Stair, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Violet_Evelyn_Dalrymple', class=':Ancestor')
+      AssignClass(Violet_Evelyn_Dalrymple, :Woman)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederick_Calvert_6th_Baron_Baltimore' is missing the required ':Ancestor' class for the 'hasAncestor' property constraint.
+      The node David_Bowes-Lyon, assigned as the father of Davina_Katherine_Bowes-Lyon, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Calvert_6th_Baron_Baltimore', class=':Ancestor')
+      AssignClass(David_Bowes-Lyon, :Man)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Dalrymple_13th_Earl_of_Stair' is missing the required ':Ancestor' class for the 'hasFather' property constraint.
+      The node John_Dalrymple_13th_Earl_of_Stair, assigned as the father of John_David_James_Dalrymple, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Dalrymple_13th_Earl_of_Stair', class=':Ancestor')
+      AssignClass(John_Dalrymple_13th_Earl_of_Stair, :Man)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Violet_Evelyn_Dalrymple' is missing the required ':Ancestor' class for the 'hasMother' property constraint.
+      The node Ralph_Stonor_7th_Baron_Camoys, assigned as the father of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Violet_Evelyn_Dalrymple', class=':Ancestor')
+      AssignClass(Ralph_Stonor_7th_Baron_Camoys, :Man)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Davina_Katherine_Bowes-Lyon' is missing the required ':Ancestor' class for the 'hasMother' property constraint.
+      The node Davina_Katherine_Bowes-Lyon, assigned as the mother of John_David_James_Dalrymple, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Davina_Katherine_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Davina_Katherine_Bowes-Lyon, :Woman)
 
 
   Violation [9]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Elizabeth_Mary_Hyde_Parker' is acting as a subject of 'isMotherOf' but is missing the mandatory ':Ancestor' class.
+      The node Violet_Evelyn_Dalrymple, assigned as the mother of John_Dalrymple_13th_Earl_of_Stair, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Mary_Hyde_Parker', class=':Ancestor')
+      AssignClass(Violet_Evelyn_Dalrymple, :Woman)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Frederick_Calvert_6th_Baron_Baltimore' is missing the required ':Ancestor' class.
+      The node Elizabeth_Mary_Hyde_Parker, assigned as the mother of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Calvert_6th_Baron_Baltimore', class=':Ancestor')
+      AssignClass(Elizabeth_Mary_Hyde_Parker, :Woman)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Dalrymple_13th_Earl_of_Stair' is missing the required ':Ancestor' class.
+      The node David_Bowes-Lyon, assigned as the father of Davina_Katherine_Bowes-Lyon, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Dalrymple_13th_Earl_of_Stair', class=':Ancestor')
+      AssignClass(David_Bowes-Lyon, :Man)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Violet_Evelyn_Dalrymple' is missing the required ':Ancestor' class.
+      The node John_Dalrymple_13th_Earl_of_Stair, assigned as the father of John_David_James_Dalrymple, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Violet_Evelyn_Dalrymple', class=':Ancestor')
+      AssignClass(John_Dalrymple_13th_Earl_of_Stair, :Man)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Davina_Katherine_Bowes-Lyon' is missing the required ':Ancestor' class.
+      The node Ralph_Stonor_7th_Baron_Camoys, assigned as the father of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Davina_Katherine_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Ralph_Stonor_7th_Baron_Camoys, :Man)
 
 
   Violation [14]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Ralph_Stonor_7th_Baron_Camoys' is acting as a subject of 'isFatherOf' but is missing the mandatory ':Ancestor' class.
+      The node Davina_Katherine_Bowes-Lyon, assigned as the mother of John_David_James_Dalrymple, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ralph_Stonor_7th_Baron_Camoys', class=':Ancestor')
+      AssignClass(Davina_Katherine_Bowes-Lyon, :Woman)
 
 
   Violation [15]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'David_Bowes-Lyon' is acting as a subject of 'isFatherOf' but is missing the mandatory ':Ancestor' class.
+      The node Violet_Evelyn_Dalrymple, assigned as the mother of John_Dalrymple_13th_Earl_of_Stair, does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='David_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Violet_Evelyn_Dalrymple, :Woman)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Elizabeth_Mary_Hyde_Parker, assigned as the mother of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Elizabeth_Mary_Hyde_Parker, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ralph_Stonor_7th_Baron_Camoys, assigned as the father of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ralph_Stonor_7th_Baron_Camoys, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node David_Bowes-Lyon, assigned as the father of Davina_Katherine_Bowes-Lyon, does not have the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Bowes-Lyon, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Elizabeth_Mary_Hyde_Parker, assigned as the mother of Emily_Mary_Julia_Stonor, does not have the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Elizabeth_Mary_Hyde_Parker, :Woman)
 
 
 
@@ -834,41 +984,42 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ddfb84ac-15e8-4baf-99a9-1bd1ec464d1e)
- Call ID: ddfb84ac-15e8-4baf-99a9-1bd1ec464d1e
+  AssignClass (705595a8-d608-48b3-8cca-eaa8d8d75ad0)
+ Call ID: 705595a8-d608-48b3-8cca-eaa8d8d75ad0
   Args:
-    source: Frederick_Calvert_6th_Baron_Baltimore
-    type: :Ancestor
-  AssignClass (8602008b-15f0-4c5f-89ae-a65dd3995a2e)
- Call ID: 8602008b-15f0-4c5f-89ae-a65dd3995a2e
-  Args:
-    type: :Ancestor
     source: John_Dalrymple_13th_Earl_of_Stair
-  AssignClass (1c8d2524-f5bb-4159-8bd4-36bdaf22b791)
- Call ID: 1c8d2524-f5bb-4159-8bd4-36bdaf22b791
-  Args:
-    source: Davina_Katherine_Bowes-Lyon
     type: :Ancestor
-  AssignClass (a2ee1df3-8c2f-44f4-be17-a3376324137e)
- Call ID: a2ee1df3-8c2f-44f4-be17-a3376324137e
+  AssignClass (7e4c4da5-038f-49c2-a4c1-1516c87042b6)
+ Call ID: 7e4c4da5-038f-49c2-a4c1-1516c87042b6
+  Args:
+    type: :Ancestor
+    source: Davina_Katherine_Bowes-Lyon
+  AssignClass (2c31a797-a0e6-4fa2-9cdd-ffb97926e05a)
+ Call ID: 2c31a797-a0e6-4fa2-9cdd-ffb97926e05a
   Args:
     source: Violet_Evelyn_Dalrymple
     type: :Ancestor
-  AssignClass (69c36184-e609-4e44-8beb-12d9aa3ac85b)
- Call ID: 69c36184-e609-4e44-8beb-12d9aa3ac85b
+  AssignClass (551a85aa-8656-4069-9a2a-be4e38760991)
+ Call ID: 551a85aa-8656-4069-9a2a-be4e38760991
+  Args:
+    source: David_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (96571a45-5abd-4bc5-8a50-506b2c0e4e74)
+ Call ID: 96571a45-5abd-4bc5-8a50-506b2c0e4e74
+  Args:
+    type: :Ancestor
+    source: Ralph_Stonor_7th_Baron_Camoys
+  AssignClass (96cbef54-4918-423a-81af-cb262ea83ed4)
+ Call ID: 96cbef54-4918-423a-81af-cb262ea83ed4
   Args:
     type: :Ancestor
     source: Elizabeth_Mary_Hyde_Parker
-  AssignClass (98f87cd6-56f6-4f8d-b8f2-dd6eb3006d0d)
- Call ID: 98f87cd6-56f6-4f8d-b8f2-dd6eb3006d0d
+  RemoveTriple (4b336a28-8fb0-426a-a425-7437e1c4fd48)
+ Call ID: 4b336a28-8fb0-426a-a425-7437e1c4fd48
   Args:
-    source: Ralph_Stonor_7th_Baron_Camoys
-    type: :Ancestor
-  AssignClass (96877a6e-c0ff-4872-9dfd-c31a20331750)
- Call ID: 96877a6e-c0ff-4872-9dfd-c31a20331750
-  Args:
-    type: :Ancestor
     source: David_Bowes-Lyon
+    relation: :isSisterOf
+    target: Queen_Elizabeth
 
 ================================= Tool Message =================================
 
@@ -901,50 +1052,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Davina_Katherine_Bowes-Lyon .
-
-  data:Elizabeth_Mary_Hyde_Parker a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:Emily_Mary_Julia_Stonor .
+  data:Frederick_Calvert_6th_Baron_Baltimore a :Man,
+          :Person .
 
   data:John_David_James_Dalrymple a :Man,
           :Person ;
-      :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore ;
       :hasBirthYear 1961 ;
       :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;
       :hasMarriageYear 2006 ;
       :hasMother data:Davina_Katherine_Bowes-Lyon ;
       :hasRelation data:Emily_Mary_Julia_Stonor .
 
-  data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Emily_Mary_Julia_Stonor .
+  data:Queen_Elizabeth a :Person,
+          :Woman .
 
-  data:Frederick_Calvert_6th_Baron_Baltimore a :Ancestor,
+  data:David_Bowes-Lyon a :Ancestor,
           :Man,
           :Person .
+
+  data:Davina_Katherine_Bowes-Lyon a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1930 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:David_Bowes-Lyon .
+
+  data:Elizabeth_Mary_Hyde_Parker a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Emily_Mary_Julia_Stonor a :Person,
+          :Woman ;
+      :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;
+      :hasMother data:Elizabeth_Mary_Hyde_Parker .
 
   data:John_Dalrymple_13th_Earl_of_Stair a :Ancestor,
           :Man,
           :Person ;
       :hasMother data:Violet_Evelyn_Dalrymple .
 
+  data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor,
+          :Man,
+          :Person .
+
   data:Violet_Evelyn_Dalrymple a :Ancestor,
           :Person,
-          :Woman .
-
-  data:Davina_Katherine_Bowes-Lyon a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2017 .
-
-  data:Emily_Mary_Julia_Stonor a :Person,
           :Woman .
 
 
@@ -953,8 +1105,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (92e03538-18c2-43e5-999e-300b36011794)
- Call ID: 92e03538-18c2-43e5-999e-300b36011794
+  ValidateShacl (496094b6-2730-495f-a1c2-46d133304018)
+ Call ID: 496094b6-2730-495f-a1c2-46d133304018
   Args:
 
 ================================= Tool Message =================================
@@ -965,6 +1117,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (19fc51b8-8af2-4938-9597-fe0e9becbef6)
- Call ID: 19fc51b8-8af2-4938-9597-fe0e9becbef6
+  Finish (01313cf0-f2de-4981-994e-7210d0f1945f)
+ Call ID: 01313cf0-f2de-4981-994e-7210d0f1945f
   Args:

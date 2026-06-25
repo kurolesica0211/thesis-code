@@ -2,41 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasBirthYear 1879 ;
-    :hasBrother data:Duke_Frederick_Francis ;
-    :hasDeathYear 1952 ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMarriageYear 1898 ;
-    :hasMother data:Anastasia_Mikhailovna ;
-    :hasRelation data:Christian_X ;
-    :hasSex data:Female ;
-    :hasSister data:Duchess_Cecilie .
+data:AlbrechtWillemLier a :Man,
+        :Person ;
+    :alsoKnownAs "Pim"^^xsd:string ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2015 ;
+    :hasFather data:PrinceHenry ;
+    :hasMother data:WilleminaMartinaWenneker ;
+    :isBrotherOf data:QueenJuliana ;
+    :isUncleOf data:QueenBeatrix .
 
-data:Anastasia_Mikhailovna a :Ancestor,
+data:QueenWilhelmina a :Person,
+        :Woman .
+
+data:PrinceHenry a :Ancestor,
+        :Man,
+        :Person .
+
+data:QueenBeatrix a :Person,
+        :Woman .
+
+data:QueenJuliana a :Person,
+        :Woman .
+
+data:WilleminaMartinaWenneker a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
-
-data:Christian_X a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Duchess_Cecilie a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Duke_Frederick_Francis a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1973 .
 

@@ -1,0 +1,94 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charlotte a :Woman ;
+    :hasRelation data:Beatrix,
+        data:Charlotte,
+        data:Gottfried,
+        data:Kraft,
+        data:Margarita ;
+    :hasSister data:Charlotte ;
+    :isBloodrelationOf data:Charlotte ;
+    :isSiblingOf data:Charlotte ;
+    :isSisterOf data:Charlotte .
+
+data:Beatrix a :Woman ;
+    :hasBrother data:Kraft ;
+    :hasRelation data:Beatrix,
+        data:Charlotte,
+        data:Gottfried,
+        data:Kraft,
+        data:Margarita ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix,
+        data:Kraft ;
+    :isSiblingOf data:Beatrix,
+        data:Kraft ;
+    :isSisterOf data:Beatrix,
+        data:Kraft .
+
+data:Gottfried a :Ancestor,
+        :Man ;
+    :hasBrother data:Gottfried ;
+    :hasChild data:Kraft ;
+    :hasRelation data:Beatrix,
+        data:Charlotte,
+        data:Gottfried,
+        data:Kraft,
+        data:Margarita ;
+    :hasSon data:Kraft ;
+    :isAncestorOf data:Kraft ;
+    :isBloodrelationOf data:Gottfried ;
+    :isBrotherOf data:Gottfried ;
+    :isFatherOf data:Kraft ;
+    :isParentOf data:Kraft ;
+    :isSiblingOf data:Gottfried ;
+    :isUncleOf data:Kraft .
+
+data:Margarita a :Ancestor,
+        :Woman ;
+    :hasChild data:Kraft ;
+    :hasRelation data:Beatrix,
+        data:Charlotte,
+        data:Gottfried,
+        data:Kraft,
+        data:Margarita ;
+    :hasSister data:Margarita ;
+    :hasSon data:Kraft ;
+    :isAncestorOf data:Kraft ;
+    :isAuntOf data:Kraft ;
+    :isBloodrelationOf data:Margarita ;
+    :isMotherOf data:Kraft ;
+    :isParentOf data:Kraft ;
+    :isSiblingOf data:Margarita ;
+    :isSisterOf data:Margarita .
+
+data:Kraft a :Man ;
+    :hasAncestor data:Gottfried,
+        data:Margarita ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:Kraft ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Margarita ;
+    :hasParent data:Gottfried,
+        data:Margarita ;
+    :hasRelation data:Beatrix,
+        data:Charlotte,
+        data:Gottfried,
+        data:Kraft,
+        data:Margarita ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix,
+        data:Kraft ;
+    :isBrotherOf data:Beatrix,
+        data:Kraft ;
+    :isChildOf data:Gottfried,
+        data:Margarita ;
+    :isSiblingOf data:Beatrix,
+        data:Kraft ;
+    :isSonOf data:Gottfried,
+        data:Margarita .
+

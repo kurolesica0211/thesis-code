@@ -178,6 +178,8 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -193,39 +195,9 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -240,6 +212,23 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -257,6 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -324,29 +328,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -355,6 +351,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -367,6 +371,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -375,17 +381,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -413,6 +421,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -428,213 +520,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2f866f19-bc0e-4910-a9c5-29b11e750ddb)
- Call ID: 2f866f19-bc0e-4910-a9c5-29b11e750ddb
+  AssignClass (2a1e7814-06cc-4e48-b066-88c5005fb302)
+ Call ID: 2a1e7814-06cc-4e48-b066-88c5005fb302
   Args:
     type: :Man
-    source: Kirill_Vladimirovich_Romanov
-  AssignClass (d243d782-56da-4718-850b-6ebc26ddbfcb)
- Call ID: d243d782-56da-4718-850b-6ebc26ddbfcb
+    source: :Kirill_Vladimirovich_Romanov
+  AssignClass (6ebfcaf0-bd26-4638-a844-aa22e27df86e)
+ Call ID: 6ebfcaf0-bd26-4638-a844-aa22e27df86e
   Args:
     type: :Person
-    source: Kirill_Vladimirovich_Romanov
-  AddLiteral (b7cd2e1b-6ed3-44ae-a4e1-83bb2697aab2)
- Call ID: b7cd2e1b-6ed3-44ae-a4e1-83bb2697aab2
+    source: :Kirill_Vladimirovich_Romanov
+  AddLiteral (9a8beeb2-3691-4787-9a27-c26b33d8c884)
+ Call ID: 9a8beeb2-3691-4787-9a27-c26b33d8c884
   Args:
-    literal_type: xsd:string
     literal_value: Kirill Vladimirovich Romanov
+    literal_type: xsd:string
+    source: :Kirill_Vladimirovich_Romanov
     relation: :knownAs
-    source: Kirill_Vladimirovich_Romanov
-  AddLiteral (fea7e1c6-8791-4805-a878-7efe2e477408)
- Call ID: fea7e1c6-8791-4805-a878-7efe2e477408
+  AddLiteral (b1e392dd-1a29-42b7-8be0-0272bd9378fb)
+ Call ID: b1e392dd-1a29-42b7-8be0-0272bd9378fb
   Args:
-    source: Kirill_Vladimirovich_Romanov
-    relation: :hasBirthYear
-    literal_type: xsd:integer
     literal_value: 1876
-  AddLiteral (b3a708f5-e349-4877-997c-087a55ffbf24)
- Call ID: b3a708f5-e349-4877-997c-087a55ffbf24
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Kirill_Vladimirovich_Romanov
+  AddLiteral (44e82d48-b3e6-442c-af63-a7a3dce7d18e)
+ Call ID: 44e82d48-b3e6-442c-af63-a7a3dce7d18e
   Args:
     literal_type: xsd:integer
-    literal_value: 1938
+    source: :Kirill_Vladimirovich_Romanov
     relation: :hasDeathYear
-    source: Kirill_Vladimirovich_Romanov
-  AssignClass (cec3baf7-1c9c-47a9-adeb-31d4372d8c80)
- Call ID: cec3baf7-1c9c-47a9-adeb-31d4372d8c80
+    literal_value: 1938
+  AssignClass (df32b479-1976-4545-a2e8-e8c111ff44ae)
+ Call ID: df32b479-1976-4545-a2e8-e8c111ff44ae
   Args:
-    source: Vladimir_Alexandrovich_of_Russia
     type: :Man
-  AssignClass (c61209d4-91b4-4a79-96ff-2492748f2da5)
- Call ID: c61209d4-91b4-4a79-96ff-2492748f2da5
+    source: :Vladimir_Alexandrovich
+  AssignClass (baa82b6b-c8c1-45f2-a764-15ccada753e6)
+ Call ID: baa82b6b-c8c1-45f2-a764-15ccada753e6
   Args:
     type: :Person
-    source: Vladimir_Alexandrovich_of_Russia
-  AssignClass (cae5ead9-dd29-4585-8066-693da95a6e2e)
- Call ID: cae5ead9-dd29-4585-8066-693da95a6e2e
+    source: :Vladimir_Alexandrovich
+  AddTriple (731882fe-df48-443c-8456-7f0132471a5a)
+ Call ID: 731882fe-df48-443c-8456-7f0132471a5a
   Args:
-    source: Vladimir_Alexandrovich_of_Russia
-    type: :Ancestor
-  AddTriple (456605bf-0574-42f2-80b1-c03368d0e70b)
- Call ID: 456605bf-0574-42f2-80b1-c03368d0e70b
-  Args:
-    source: Kirill_Vladimirovich_Romanov
+    target: :Vladimir_Alexandrovich
+    source: :Kirill_Vladimirovich_Romanov
     relation: :hasFather
-    target: Vladimir_Alexandrovich_of_Russia
-  AssignClass (953899f3-b0d1-4e0e-a077-7fdad2241021)
- Call ID: 953899f3-b0d1-4e0e-a077-7fdad2241021
+  AssignClass (a67acb0f-6872-45a5-bf63-3ed5f362597e)
+ Call ID: a67acb0f-6872-45a5-bf63-3ed5f362597e
   Args:
-    type: :Woman
-    source: Maria_Pavlovna
-  AssignClass (8e639e66-85a6-4841-8e24-2a9fa2c3b421)
- Call ID: 8e639e66-85a6-4841-8e24-2a9fa2c3b421
+    type: :Man
+    source: :Alexander_II_of_Russia
+  AssignClass (e4262644-2459-4441-96a1-7f79ca405640)
+ Call ID: e4262644-2459-4441-96a1-7f79ca405640
   Args:
-    source: Maria_Pavlovna
     type: :Person
-  AssignClass (92c2d04e-e5b7-4cce-a611-b1b72b1a6dfa)
- Call ID: 92c2d04e-e5b7-4cce-a611-b1b72b1a6dfa
+    source: :Alexander_II_of_Russia
+  AddTriple (ded56207-6087-47a3-ba9a-67383490521d)
+ Call ID: ded56207-6087-47a3-ba9a-67383490521d
   Args:
-    type: :Ancestor
-    source: Maria_Pavlovna
-  AddTriple (221977b0-d879-4b0a-a543-83bb37434645)
- Call ID: 221977b0-d879-4b0a-a543-83bb37434645
+    relation: :hasFather
+    source: :Vladimir_Alexandrovich
+    target: :Alexander_II_of_Russia
+  AssignClass (3cefaa26-8c4e-4d2c-a21c-7786639be83e)
+ Call ID: 3cefaa26-8c4e-4d2c-a21c-7786639be83e
   Args:
-    target: Maria_Pavlovna
+    source: :Maria_Pavlovna
+    type: :Woman
+  AssignClass (275923b9-2111-4417-8436-cf31774328d8)
+ Call ID: 275923b9-2111-4417-8436-cf31774328d8
+  Args:
+    source: :Maria_Pavlovna
+    type: :Person
+  AddTriple (481f87cb-c8a6-4bec-b0dd-501a93c970d8)
+ Call ID: 481f87cb-c8a6-4bec-b0dd-501a93c970d8
+  Args:
+    source: :Kirill_Vladimirovich_Romanov
     relation: :hasMother
-    source: Kirill_Vladimirovich_Romanov
-  AssignClass (7d8ade66-d746-43d2-a67a-a11f9aaa20ab)
- Call ID: 7d8ade66-d746-43d2-a67a-a11f9aaa20ab
-  Args:
-    source: Alexander_II_of_Russia
-    type: :Man
-  AssignClass (8a0737d3-987f-4fee-8ea8-bf18fccedb17)
- Call ID: 8a0737d3-987f-4fee-8ea8-bf18fccedb17
-  Args:
-    type: :Person
-    source: Alexander_II_of_Russia
-  AssignClass (917c75ca-b258-4ed3-99c7-c09b2d2b9793)
- Call ID: 917c75ca-b258-4ed3-99c7-c09b2d2b9793
-  Args:
-    source: Alexander_II_of_Russia
-    type: :Ancestor
-  AddTriple (dca9b3cd-1a0d-4843-8445-f060f4b4a357)
- Call ID: dca9b3cd-1a0d-4843-8445-f060f4b4a357
-  Args:
-    target: Alexander_II_of_Russia
-    relation: :hasFather
-    source: Vladimir_Alexandrovich_of_Russia
-  AssignClass (d87501b5-6756-422c-80d3-452a827685bc)
- Call ID: d87501b5-6756-422c-80d3-452a827685bc
+    target: :Maria_Pavlovna
+  AssignClass (9a2a522a-1d84-48f5-8921-f13f50f33fde)
+ Call ID: 9a2a522a-1d84-48f5-8921-f13f50f33fde
   Args:
     type: :Woman
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AssignClass (27ae85fa-eeae-4c22-8bdb-85061ea90fb7)
- Call ID: 27ae85fa-eeae-4c22-8bdb-85061ea90fb7
+    source: :Victoria_Melita_of_Saxe-Coburg_and_Gotha
+  AssignClass (fef879f8-e784-4fea-a28c-68ce4ea1b444)
+ Call ID: fef879f8-e784-4fea-a28c-68ce4ea1b444
   Args:
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    source: :Victoria_Melita_of_Saxe-Coburg_and_Gotha
     type: :Person
-  AssignClass (d67cf732-9c60-4bc2-9895-a70fd5f9134d)
- Call ID: d67cf732-9c60-4bc2-9895-a70fd5f9134d
+  AddTriple (5b2ee8af-c92a-4bd8-baef-93f7190db005)
+ Call ID: 5b2ee8af-c92a-4bd8-baef-93f7190db005
   Args:
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    type: :Ancestor
-  AddTriple (77c73e39-5953-47a4-99fa-e0e4ed9da392)
- Call ID: 77c73e39-5953-47a4-99fa-e0e4ed9da392
-  Args:
+    source: :Kirill_Vladimirovich_Romanov
     relation: :hasRelation
-    source: Kirill_Vladimirovich_Romanov
-    target: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AddLiteral (13c3d1a4-7db2-4025-b3c7-b9cac10c679f)
- Call ID: 13c3d1a4-7db2-4025-b3c7-b9cac10c679f
+    target: :Victoria_Melita_of_Saxe-Coburg_and_Gotha
+  AddLiteral (f7121b68-8b9e-4a5a-9d17-845447e7877a)
+ Call ID: f7121b68-8b9e-4a5a-9d17-845447e7877a
   Args:
-    source: Kirill_Vladimirovich_Romanov
+    source: :Kirill_Vladimirovich_Romanov
     relation: :hasMarriageYear
-    literal_value: 1905
     literal_type: xsd:integer
-  AssignClass (cd9bf08d-61ca-445d-a94a-0700559e9395)
- Call ID: cd9bf08d-61ca-445d-a94a-0700559e9395
+    literal_value: 1905
+  AssignClass (8a9e650a-5090-4ca3-8e37-7b590abf4780)
+ Call ID: 8a9e650a-5090-4ca3-8e37-7b590abf4780
   Args:
-    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    source: :Alexander_brother_of_Kirill
     type: :Man
-  AssignClass (274c281f-65a1-4be8-a941-759a4d6a4599)
- Call ID: 274c281f-65a1-4be8-a941-759a4d6a4599
+  AssignClass (13f2ef39-f043-4f5a-aaf1-10390aaaa4f7)
+ Call ID: 13f2ef39-f043-4f5a-aaf1-10390aaaa4f7
   Args:
-    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
     type: :Person
-  AssignClass (82ccdbe9-66bf-481b-a41c-1ac922d93920)
- Call ID: 82ccdbe9-66bf-481b-a41c-1ac922d93920
+    source: :Alexander_brother_of_Kirill
+  AddTriple (47d4cf01-0ad0-4ed6-aeb8-85b0a3f752ab)
+ Call ID: 47d4cf01-0ad0-4ed6-aeb8-85b0a3f752ab
   Args:
-    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
-    type: :Ancestor
-  AddTriple (ad05df0e-e72e-489c-9318-f3cf937e0de3)
- Call ID: ad05df0e-e72e-489c-9318-f3cf937e0de3
+    target: :Alexander_brother_of_Kirill
+    relation: :hasBrother
+    source: :Kirill_Vladimirovich_Romanov
+  AssignClass (099dd58b-608e-414a-a374-e5f593114705)
+ Call ID: 099dd58b-608e-414a-a374-e5f593114705
   Args:
+    type: :Man
+    source: :Vladimir_Kirillovich
+  AssignClass (27005273-567a-4f60-b089-dbf9543a02bf)
+ Call ID: 27005273-567a-4f60-b089-dbf9543a02bf
+  Args:
+    type: :Person
+    source: :Vladimir_Kirillovich
+  AddTriple (a3e315e9-b956-4fbe-9f6b-ac23ac5ee790)
+ Call ID: a3e315e9-b956-4fbe-9f6b-ac23ac5ee790
+  Args:
+    target: :Kirill_Vladimirovich_Romanov
+    relation: :isSonOf
+    source: :Vladimir_Kirillovich
+  AssignClass (3da121c7-b851-4acd-81c9-e9f5f7c0291c)
+ Call ID: 3da121c7-b851-4acd-81c9-e9f5f7c0291c
+  Args:
+    source: :Maria_Vladimirovna
+    type: :Woman
+  AssignClass (ca9346c7-daf5-4726-a21b-a72177f828c7)
+ Call ID: ca9346c7-daf5-4726-a21b-a72177f828c7
+  Args:
+    source: :Maria_Vladimirovna
+    type: :Person
+  AddTriple (44c7b6bb-79ec-4ee0-bfe0-4bd1f9968669)
+ Call ID: 44c7b6bb-79ec-4ee0-bfe0-4bd1f9968669
+  Args:
+    target: :Maria_Vladimirovna
+    source: :Vladimir_Kirillovich
+    relation: :hasChild
+  AssignClass (d39a1f3c-5865-41c3-b57e-29806710d96f)
+ Call ID: d39a1f3c-5865-41c3-b57e-29806710d96f
+  Args:
+    source: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    type: :Man
+  AssignClass (b9b9e8b3-eaeb-499a-8cbc-7404aa7bf3d5)
+ Call ID: b9b9e8b3-eaeb-499a-8cbc-7404aa7bf3d5
+  Args:
+    type: :Person
+    source: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+  AddTriple (9ecd8b2b-c762-48ee-8bb4-82729f78fc3a)
+ Call ID: 9ecd8b2b-c762-48ee-8bb4-82729f78fc3a
+  Args:
+    source: :Victoria_Melita_of_Saxe-Coburg_and_Gotha
     relation: :hasFather
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    target: Alfred_Duke_of_Saxe-Coburg_and_Gotha
-  AssignClass (82e6b4af-fe6a-4073-a7d2-a4640edf6e57)
- Call ID: 82e6b4af-fe6a-4073-a7d2-a4640edf6e57
+    target: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+  AssignClass (8f3d36ea-6eeb-4fb0-b73b-a750e47cfe3a)
+ Call ID: 8f3d36ea-6eeb-4fb0-b73b-a750e47cfe3a
   Args:
     type: :Woman
-    source: Maria_Alexandrovna_of_Russia
-  AssignClass (29f0991f-dd3c-43f5-bbd8-84f7be046727)
- Call ID: 29f0991f-dd3c-43f5-bbd8-84f7be046727
+    source: :Maria_Alexandrovna_of_Russia
+  AssignClass (de01bffe-c23b-4c4e-90d1-e92036f55ae5)
+ Call ID: de01bffe-c23b-4c4e-90d1-e92036f55ae5
   Args:
-    source: Maria_Alexandrovna_of_Russia
+    source: :Maria_Alexandrovna_of_Russia
     type: :Person
-  AssignClass (abc15799-caaf-4fd7-944e-0f7aab94ba08)
- Call ID: abc15799-caaf-4fd7-944e-0f7aab94ba08
+  AddTriple (032a7154-67b8-4f98-aebd-41842ddbfa45)
+ Call ID: 032a7154-67b8-4f98-aebd-41842ddbfa45
   Args:
-    source: Maria_Alexandrovna_of_Russia
-    type: :Ancestor
-  AddTriple (b707d6b6-2053-42d2-b622-41d30ebb5793)
- Call ID: b707d6b6-2053-42d2-b622-41d30ebb5793
-  Args:
-    target: Maria_Alexandrovna_of_Russia
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    source: :Victoria_Melita_of_Saxe-Coburg_and_Gotha
     relation: :hasMother
-  AssignClass (7e551475-996a-4df2-85a0-52194af4961f)
- Call ID: 7e551475-996a-4df2-85a0-52194af4961f
+    target: :Maria_Alexandrovna_of_Russia
+  AddTriple (c38fa71d-7f22-4f1d-a9d3-ee469e074f6e)
+ Call ID: c38fa71d-7f22-4f1d-a9d3-ee469e074f6e
   Args:
-    source: Vladimir_Kirillovich
-    type: :Man
-  AssignClass (e008aa53-2173-4396-a11e-78fc050a3e15)
- Call ID: e008aa53-2173-4396-a11e-78fc050a3e15
+    source: :Maria_Alexandrovna_of_Russia
+    relation: :hasFather
+    target: :Alexander_II_of_Russia
+  Finish (25d0aa29-22dc-46e5-8584-d9b249c8b19e)
+ Call ID: 25d0aa29-22dc-46e5-8584-d9b249c8b19e
   Args:
-    source: Vladimir_Kirillovich
-    type: :Person
-  AddTriple (53a7bc18-bbc3-4ba4-8010-1711f5b27f52)
- Call ID: 53a7bc18-bbc3-4ba4-8010-1711f5b27f52
-  Args:
-    source: Vladimir_Kirillovich
-    relation: :isSonOf
-    target: Kirill_Vladimirovich_Romanov
-  AssignClass (baa54ae5-b695-4a36-84b1-b83b2b509e10)
- Call ID: baa54ae5-b695-4a36-84b1-b83b2b509e10
-  Args:
-    source: Alexander_brother_of_Kirill
-    type: :Man
-  AssignClass (4523ccea-a243-46b5-a339-476bcac30385)
- Call ID: 4523ccea-a243-46b5-a339-476bcac30385
-  Args:
-    type: :Person
-    source: Alexander_brother_of_Kirill
-  AddTriple (4f738879-64df-4247-be7a-a307422c2e92)
- Call ID: 4f738879-64df-4247-be7a-a307422c2e92
-  Args:
-    target: Alexander_brother_of_Kirill
-    relation: :hasBrother
-    source: Kirill_Vladimirovich_Romanov
-  Finish (f67b366d-6e1e-4416-997d-982a92889edf)
- Call ID: f67b366d-6e1e-4416-997d-982a92889edf
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -777,17 +853,13 @@ The final data graph after all the edits:
 
   data:Vladimir_Kirillovich a :Man,
           :Person ;
+      :hasChild data:Maria_Vladimirovna ;
       :isSonOf data:Kirill_Vladimirovich_Romanov .
-
-  data:Alexander_II_of_Russia a :Ancestor,
-          :Man,
-          :Person .
 
   data:Alexander_brother_of_Kirill a :Man,
           :Person .
 
-  data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Ancestor,
-          :Man,
+  data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Man,
           :Person .
 
   data:Kirill_Vladimirovich_Romanov a :Man,
@@ -795,30 +867,33 @@ The final data graph after all the edits:
       :hasBirthYear 1876 ;
       :hasBrother data:Alexander_brother_of_Kirill ;
       :hasDeathYear 1938 ;
-      :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+      :hasFather data:Vladimir_Alexandrovich ;
       :hasMarriageYear 1905 ;
       :hasMother data:Maria_Pavlovna ;
       :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
       :knownAs "Kirill Vladimirovich Romanov"^^xsd:string .
 
-  data:Maria_Alexandrovna_of_Russia a :Ancestor,
-          :Person,
+  data:Maria_Alexandrovna_of_Russia a :Person,
+          :Woman ;
+      :hasFather data:Alexander_II_of_Russia .
+
+  data:Maria_Pavlovna a :Person,
           :Woman .
 
-  data:Maria_Pavlovna a :Ancestor,
-          :Person,
+  data:Maria_Vladimirovna a :Person,
           :Woman .
 
-  data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-          :Person,
+  data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
           :Woman ;
       :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
       :hasMother data:Maria_Alexandrovna_of_Russia .
 
-  data:Vladimir_Alexandrovich_of_Russia a :Ancestor,
-          :Man,
+  data:Vladimir_Alexandrovich a :Man,
           :Person ;
       :hasFather data:Alexander_II_of_Russia .
+
+  data:Alexander_II_of_Russia a :Man,
+          :Person .
 
 
 
@@ -830,38 +905,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e8274475-5038-410c-9eb8-bd8056358a89)
- Call ID: e8274475-5038-410c-9eb8-bd8056358a89
+  ValidateShacl (986ce87f-17e0-4eeb-bdea-3c9fab091fb9)
+ Call ID: 986ce87f-17e0-4eeb-bdea-3c9fab091fb9
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:3
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Kirill_Vladimirovich_Romanov is used as the target of an isSonOf relationship from Vladimir_Kirillovich, but it lacks the required class :Ancestor.
+      The node Kirill_Vladimirovich_Romanov linked via isSonOf to Vladimir_Kirillovich is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(:Kirill_Vladimirovich_Romanov, :Ancestor)
+      AssignClass(node: Kirill_Vladimirovich_Romanov, class: :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Kirill_Vladimirovich_Romanov is missing the :Ancestor class, which is mandatory for any individual identified as a parent or ancestor in an isSonOf relationship.
+      The node Vladimir_Alexandrovich linked via hasFather to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(:Kirill_Vladimirovich_Romanov, :Ancestor)
+      AssignClass(node: Vladimir_Alexandrovich, class: :Ancestor)
 
 
   Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Vladimir_Alexandrovich is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Pavlovna linked via hasMother to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Pavlovna, class: :Ancestor)
+
+
+  Violation [5]:
     SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Kirill_Vladimirovich_Romanov is currently not classified as an :Ancestor, violating the schema constraints for the isSonOf property path.
+      The node Kirill_Vladimirovich_Romanov linked via isSonOf to Vladimir_Kirillovich is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(:Kirill_Vladimirovich_Romanov, :Ancestor)
+      AssignClass(node: Kirill_Vladimirovich_Romanov, class: :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Maria_Alexandrovna_of_Russia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alfred_Duke_of_Saxe-Coburg_and_Gotha linked via hasFather to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alfred_Duke_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Vladimir_Alexandrovich linked via hasFather to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Vladimir_Alexandrovich, class: :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Vladimir_Alexandrovich is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Alexandrovna_of_Russia linked via hasMother to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Alexandrovna_of_Russia, class: :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Pavlovna linked via hasMother to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Pavlovna, class: :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Kirill_Vladimirovich_Romanov linked via isSonOf to Vladimir_Kirillovich is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Kirill_Vladimirovich_Romanov, class: :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Maria_Alexandrovna_of_Russia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alfred_Duke_of_Saxe-Coburg_and_Gotha linked via hasFather to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alfred_Duke_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Vladimir_Alexandrovich is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Vladimir_Alexandrovich linked via hasFather to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Vladimir_Alexandrovich, class: :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Alexandrovna_of_Russia linked via hasMother to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Alexandrovna_of_Russia, class: :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Pavlovna linked via hasMother to Kirill_Vladimirovich_Romanov is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Pavlovna, class: :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alfred_Duke_of_Saxe-Coburg_and_Gotha linked via hasFather to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alfred_Duke_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_II_of_Russia linked via hasFather to Maria_Alexandrovna_of_Russia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_II_of_Russia, class: :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Alexandrovna_of_Russia linked via hasMother to Victoria_Melita_of_Saxe-Coburg_and_Gotha is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Alexandrovna_of_Russia, class: :Ancestor)
 
 
 
@@ -870,11 +1089,191 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c034db87-3bc8-42ab-8cd3-aa64ad782070)
- Call ID: c034db87-3bc8-42ab-8cd3-aa64ad782070
+  AssignClass (c944ba7d-f9eb-49c6-92f1-d63505f549c1)
+ Call ID: c944ba7d-f9eb-49c6-92f1-d63505f549c1
   Args:
+    source: :Kirill_Vladimirovich_Romanov
     type: :Ancestor
-    source: Kirill_Vladimirovich_Romanov
+  AssignClass (b4214f50-6094-41d7-a609-33b9177d0aa3)
+ Call ID: b4214f50-6094-41d7-a609-33b9177d0aa3
+  Args:
+    source: :Vladimir_Alexandrovich
+    type: :Ancestor
+  AssignClass (f46bcd68-f421-4109-871a-1102a5ca5a4a)
+ Call ID: f46bcd68-f421-4109-871a-1102a5ca5a4a
+  Args:
+    source: :Alexander_II_of_Russia
+    type: :Ancestor
+  AssignClass (a3fde4d0-b2e9-44bc-8284-37c1d401ce5a)
+ Call ID: a3fde4d0-b2e9-44bc-8284-37c1d401ce5a
+  Args:
+    source: :Maria_Pavlovna
+    type: :Ancestor
+  AssignClass (bcbf5163-2900-4b2c-ba95-657e80c91430)
+ Call ID: bcbf5163-2900-4b2c-ba95-657e80c91430
+  Args:
+    source: :Maria_Alexandrovna_of_Russia
+    type: :Ancestor
+  AssignClass (31a84141-f348-4bca-82c4-efb6975e19e3)
+ Call ID: 31a84141-f348-4bca-82c4-efb6975e19e3
+  Args:
+    source: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    type: :Ancestor
+  AssignClass (9d48f6c4-8726-466f-b7d7-0b5947e84d0d)
+ Call ID: 9d48f6c4-8726-466f-b7d7-0b5947e84d0d
+  Args:
+    source: :Kirill_Vladimirovich_Romanov
+    type: :Person
+  AssignClass (c1cd408e-4253-44e8-8a51-ee404306af76)
+ Call ID: c1cd408e-4253-44e8-8a51-ee404306af76
+  Args:
+    source: :Vladimir_Alexandrovich
+    type: :Person
+  AssignClass (4493e203-de46-483c-902f-1cc67e9edc95)
+ Call ID: 4493e203-de46-483c-902f-1cc67e9edc95
+  Args:
+    source: :Alexander_II_of_Russia
+    type: :Person
+  AssignClass (5b1fcd6e-95e7-47ac-b379-272287449e01)
+ Call ID: 5b1fcd6e-95e7-47ac-b379-272287449e01
+  Args:
+    source: :Maria_Pavlovna
+    type: :Person
+  AssignClass (541562e3-d4e7-4bf5-bdb7-a594faf8dd6d)
+ Call ID: 541562e3-d4e7-4bf5-bdb7-a594faf8dd6d
+  Args:
+    source: :Maria_Alexandrovna_of_Russia
+    type: :Person
+  AssignClass (d99ec6a0-647c-4755-a8fe-44e6f92fb1bd)
+ Call ID: d99ec6a0-647c-4755-a8fe-44e6f92fb1bd
+  Args:
+    source: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    type: :Person
+  AddTriple (f1c92ea1-9759-4f18-b4d8-f489742c7c40)
+ Call ID: f1c92ea1-9759-4f18-b4d8-f489742c7c40
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Kirill_Vladimirovich_Romanov
+  AddTriple (285bf5ae-dca6-4533-a93c-dc52cc04150b)
+ Call ID: 285bf5ae-dca6-4533-a93c-dc52cc04150b
+  Args:
+    source: :Vladimir_Alexandrovich
+    target: :Male
+    relation: :hasSex
+  AddTriple (10715a8a-aec5-47b2-b569-575ede6c376f)
+ Call ID: 10715a8a-aec5-47b2-b569-575ede6c376f
+  Args:
+    target: :Male
+    source: :Alexander_II_of_Russia
+    relation: :hasSex
+  AddTriple (f3d166f1-c4dc-4982-ab70-44e430961cf9)
+ Call ID: f3d166f1-c4dc-4982-ab70-44e430961cf9
+  Args:
+    target: :Female
+    source: :Maria_Pavlovna
+    relation: :hasSex
+  AddTriple (e03b9eda-e0c6-4d00-b368-1ea22d854b20)
+ Call ID: e03b9eda-e0c6-4d00-b368-1ea22d854b20
+  Args:
+    relation: :hasSex
+    source: :Maria_Alexandrovna_of_Russia
+    target: :Female
+  AddTriple (13573f6e-136d-49a8-aeb4-9ed36331a6de)
+ Call ID: 13573f6e-136d-49a8-aeb4-9ed36331a6de
+  Args:
+    target: :Male
+    source: :Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    relation: :hasSex
+  AssignClass (5a63e4fa-9cc5-45e2-9a0c-d0220b53f580)
+ Call ID: 5a63e4fa-9cc5-45e2-9a0c-d0220b53f580
+  Args:
+    source: :Male
+    type: :Sex
+  AssignClass (0c60dcde-1cc2-49e4-9dd0-a168ce326f5c)
+ Call ID: 0c60dcde-1cc2-49e4-9dd0-a168ce326f5c
+  Args:
+    source: :Female
+    type: :Sex
+  Finish (243c2078-beb5-4743-ba9d-8875b6c6aaa3)
+ Call ID: 243c2078-beb5-4743-ba9d-8875b6c6aaa3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -885,18 +1284,16 @@ The final data graph after all the edits:
 
   data:Vladimir_Kirillovich a :Man,
           :Person ;
+      :hasChild data:Maria_Vladimirovna ;
       :isSonOf data:Kirill_Vladimirovich_Romanov .
-
-  data:Alexander_II_of_Russia a :Ancestor,
-          :Man,
-          :Person .
 
   data:Alexander_brother_of_Kirill a :Man,
           :Person .
 
   data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Ancestor,
           :Man,
-          :Person .
+          :Person ;
+      :hasSex data:Male .
 
   data:Kirill_Vladimirovich_Romanov a :Ancestor,
           :Man,
@@ -904,39 +1301,59 @@ The final data graph after all the edits:
       :hasBirthYear 1876 ;
       :hasBrother data:Alexander_brother_of_Kirill ;
       :hasDeathYear 1938 ;
-      :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+      :hasFather data:Vladimir_Alexandrovich ;
       :hasMarriageYear 1905 ;
       :hasMother data:Maria_Pavlovna ;
       :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+      :hasSex data:Male ;
       :knownAs "Kirill Vladimirovich Romanov"^^xsd:string .
 
   data:Maria_Alexandrovna_of_Russia a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasFather data:Alexander_II_of_Russia ;
+      :hasSex data:Female .
 
   data:Maria_Pavlovna a :Ancestor,
           :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Maria_Vladimirovna a :Person,
           :Woman .
 
-  data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-          :Person,
+  data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
           :Woman ;
       :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
       :hasMother data:Maria_Alexandrovna_of_Russia .
 
-  data:Vladimir_Alexandrovich_of_Russia a :Ancestor,
+  data:Vladimir_Alexandrovich a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Alexander_II_of_Russia .
+      :hasFather data:Alexander_II_of_Russia ;
+      :hasSex data:Male .
+
+  data:Alexander_II_of_Russia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (534cd524-a3cc-423c-ad40-d38309301603)
- Call ID: 534cd524-a3cc-423c-ad40-d38309301603
+  ValidateShacl (058177f5-2365-4cdc-8692-0f4744c35458)
+ Call ID: 058177f5-2365-4cdc-8692-0f4744c35458
   Args:
 
 ================================= Tool Message =================================
@@ -947,6 +1364,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c8a32f98-142e-4817-b25a-089122bf825d)
- Call ID: c8a32f98-142e-4817-b25a-089122bf825d
+  Finish (cb0638e0-f2b5-42ea-ada5-64d71dd1b8d3)
+ Call ID: cb0638e0-f2b5-42ea-ada5-64d71dd1b8d3
   Args:

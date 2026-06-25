@@ -2,21 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederik_X a :Man ;
-    :hasBirthYear 1968 ;
-    :hasBrother data:Joachim ;
+data:Joachim a :Man ;
     :hasFather data:Henrik ;
-    :hasMother data:Margrethe_II .
-
-data:Mary_Donaldson a :Woman .
+    :hasMother data:Margrethe_II ;
+    :isBrotherOf data:Frederik_X .
 
 data:Frederik_IX a :Ancestor,
         :Man .
 
+data:Frederik_X a :Man ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Henrik ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Margrethe_II ;
+    :hasRelation data:Mary_Donaldson .
+
+data:Mary_Donaldson a :Woman .
+
 data:Henrik a :Ancestor,
         :Man .
-
-data:Joachim a :Man .
 
 data:Margrethe_II a :Ancestor,
         :Woman ;

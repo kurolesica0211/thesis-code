@@ -69,104 +69,41 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Prince
+The Duke of Castro  The Duchess of Castro
 
 
-Princess Marie Christine
+Princess Maria Carolina of Bourbon-Two Sicilies, Duchess of Calabria and Palermo (Italian: Maria Carolina di Borbone delle Due Sicilie; born 23 June 2003) is an Italian socialite, model, and social media influencer.
+She is the eldest daughter and heiress of Prince Carlo, Duke of Castro, the disputed head of the House of Bourbon-Two Sicilies.
+Early life and education
 
+Maria Carolina was born in Rome on 23 June 2003 to Camilla Crociani, an Italian socialite and heiress, and Prince Carlo of Bourbon-Two Sicilies, Duke of Castro, the disputed head of the House of Bourbon-Two Sicilies.
+Her paternal grandfather was Prince Ferdinand, Duke of Castro.
+She is the older sister of Princess Maria Chiara.
+Her paternal aunt is Princess Béatrice of Bourbon-Two Sicilies.
+She is a first cousin of Jean-Christophe, Prince Napoléon.
+Maria Carolina was baptized in the Palatine Chapel of the Royal Palace of Caserta.
+Her godfather is Prince Laurent of Belgium, younger brother of King Philippe of Belgium.
+Maria Carolina grew up between Paris, Monte Carlo, and Rome.
+Career, public life, and charitable work
 
+Maria Carolina is an ambassador for the Passion Sea Project, a nonprofit organization that focuses on ocean conservation.
+Maria Carolina is a patroness of Rokethon, a Monaco-based charity for abandoned dogs.
+In 2016, following her father's abolishment of Salic law, she became the heiress apparent to the headship of the House of Bourbon-Two Sicilies.
+She was dressed by Ralph & Russo for the event, and escorted by Prince Léopold of Nassau, son of Prince Guillaume of Luxembourg.
+Maria Carolina is a social media influencer, with large followings on Instagram, YouTube, and TikTok.
+Personal life
 
-
-
-Princess Josephine
-
-
-The Duchess of Montpensier
-
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Princess Marie of Liechtenstein (née Princess Marie Isabelle Marguerite Anne Geneviève of Orléans; born Boulogne-Billancourt, France on 3 January 1959) is the eldest daughter of Prince Henri, Count of Paris, Duke of France and his former wife Duchess Marie Thérèse of Württemberg.
-She is the wife of Prince Gundakar of Liechtenstein, a great-grandson of Prince Alfred of Liechtenstein.
-Youth
-
-Her paternal grandfather, the Comte de Paris, head of the Orléanist House of France, received a letter of congratulations upon the princess's birth from General Charles de Gaulle.
-Baptised 17 days after her birth by Maurice, Cardinal Feltin, the Archbishop of Paris, in the chapel of the Archdiocese, her god-parents were two of her grandparents; Philipp Albrecht, Duke of Wurttemberg and Isabelle d'Orléans, Duchess of Guise.
-
-
-Princess Marie's early childhood was spent in Paris where, from October 1959 to April 1962, her father worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
-For some months in that year Marie attended a private, parochial day school in Paris, before being sent to boarding school at Cours Dupanloup in Boulogne-sur-Seine in 1968 and Sacré-Coeur de Saint-Maur.
-Upon receiving her bac, Marie enrolled at the Institut Catholique de Paris where she obtained a language interpretation degree in German and English after completing the Institut Supérieur d'Interprétariat et de Traduction curriculum.
-Career
-
-As the eldest of five children, two of whom are intellectually disabled, much of Princess Marie's professional and volunteer work has been in behalf of children with special needs.
-In 1984 Marie moved back to Geneva to organise the Enfants et Jeunes de la rue ("Street Kids") programme as part of the BICE, conducting outreach in various countries, including Colombia and Brazil.
-Transferred by BICE back to Paris, the princess became head of the Commission on Special Medical-Pedagogical Services, which sponsors humanitarian conferences in Europe and the developing world.
-Marriage
-
-While on work assignment in Rio de Janeiro in September 1988, Marie attended a dinner hosted by Princess Isabel of Brazil (born 1944), where she met their mutual cousin Prince Gundakar of Liechtenstein (grandson of Prince Alfred Roman of Liechtenstein).
-Marie and Gundakar encountered each other again in November 1988 at the wedding of two more mutual cousins, Duchess Mathilde of Wurttemberg and the Hereditary Count Erich von Waldburg-Zeil.
-On 11 February 1989 the couple were received by Marie's paternal grandfather, Monseigneur the Count of Paris, at his Chantilly estate, after which the couple's betrothal was announced to the media (the fiancée's father had been informed of the engagement earlier that day by a hand-delivered letter written by Marie's mother, Marie Thérèse of Württemberg, Duchess of Montpensier.
-Although the Count of Clermont stated in a 12 May 1989 Point de Vue interview that it had been three years since he had seen Marie, he and his second wife, Michaela Cousino, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Clermont further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
-However, it was on this occasion that Clermont learned that he would not be escorting Marie to her bridesgroom during the wedding.
-Meanwhile, the Duchess of Montpensier had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of the Count of Paris, the head of the dynasty who, until then, had largely sided with the Duchess de Montpensier in opposition to the dissolution of his son's first marriage.
-Moreover, the duchess had also rebuffed Monseigneur's offers to host the wedding at the Chapelle royale de Dreux or to commission the wedding gown from a major French haute couturier.
-Her grandfather reportedly called the decision "treason", as tradition dictated that a French princess of the Blood Royal weds in France unless the groom is the ruler or heir apparent of a foreign realm.
-Princess Marie spent much time there in her youth during visits to her maternal grandparents.
-However, because her mother's brother Carl, Duke of Wurttemberg, now lived there with his wife Diane d'Orléans, sister of the Count of Clermont and daughter of the Count of Paris, relatives and members of foreign royal dynasties found themselves being urged by two sets of siblings, long married to each other, to take opposite sides in the families' quarrel.
-Marie declared, "It's in that castle that I've been happiest.
-Marie wed her prince civilly at Dreux's city hall on 22 July 1989, and religiously in the castle church of Friedrichshafen, on 29 July 1989.
-Only eight persons, including bride and groom, attended the civil wedding in France (including the Duchess of Montpensier, her son Prince Jean, Duke of Vendôme, and a brother of the groom).
-Although 250 guests attended the ceremony in Germany, absent were the Count of Clermont, the Count of Paris and all but two of Clermont's eight siblings; the hostess Diane, Duchess of Wurttemberg, was present, as was her brother Prince Jacques, Duke of Orléans, and their mother, Madame the Countess of Paris.
-This was the first marriage of a member of the House of Orléans into a reigning dynasty since the 1929 wedding of Princess Françoise of Orléans to Prince Christopher of Greece.
-Gundakar is a third cousin of his sovereign, Hans Adam II of Liechtenstein, and is in the line of succession to that principality's throne.
-Gundakar Albert Alfred Petrus of Liechtenstein is the eldest son of Prince Johann of Liechtenstein and Princess Clothilde of Thurn und Taxis.
-He has a twin sister, Princess Diemut, and five younger siblings.
-Children
-
-The couple have five children together:
-
-
-Princess Marie Isabelle is the godmother of Infanta Maria Francisca of Portugal and Princess Thérèse d'Orléans.
-
-
-Honours
-
-Titles:
+Maria Carolina is fluent in six languages: Italian, French, Spanish, Portuguese, English, and Russian.
+In May 2025, Princess Maria Carolina was involved in a near-fatal motorcycle crashing in Monaco.
+She was saved by the helmet she was wearing and was later treated at Princess Grace Hospital Centre.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -182,39 +119,9 @@ Titles:
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -229,6 +136,23 @@ Titles:
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -246,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -313,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -344,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -356,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -364,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -402,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -417,106 +444,103 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (605cb0fb-a51c-4c15-9169-0f7d5cd80f9b)
- Call ID: 605cb0fb-a51c-4c15-9169-0f7d5cd80f9b
+  AssignClass (fa6dd30e-bde8-4e05-a10f-32539a7defd6)
+ Call ID: fa6dd30e-bde8-4e05-a10f-32539a7defd6
+  Args:
+    type: :Person
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+  AssignClass (94de3441-3061-4888-a061-a99c1e570670)
+ Call ID: 94de3441-3061-4888-a061-a99c1e570670
   Args:
     type: :Woman
-    source: Princess Marie of Liechtenstein
-  AssignClass (eeab456f-edca-4b9c-b4c0-7d16725b2098)
- Call ID: eeab456f-edca-4b9c-b4c0-7d16725b2098
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+  AssignClass (d9be4cfe-e30d-4c67-ad03-cc4a10ac5d10)
+ Call ID: d9be4cfe-e30d-4c67-ad03-cc4a10ac5d10
   Args:
-    source: Prince Henri, Count of Paris
+    type: :Person
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (61dce846-6448-4149-be14-381c695bf7d7)
+ Call ID: 61dce846-6448-4149-be14-381c695bf7d7
+  Args:
     type: :Man
-  AssignClass (fcf93b92-486c-4337-bc4a-f764cdb43db8)
- Call ID: fcf93b92-486c-4337-bc4a-f764cdb43db8
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (7c4e62d2-bcb5-4461-ae76-f55762d28330)
+ Call ID: 7c4e62d2-bcb5-4461-ae76-f55762d28330
+  Args:
+    source: Camilla_Crociani
+    type: :Person
+  AssignClass (60cf41b2-002e-415e-9cae-8575f0170506)
+ Call ID: 60cf41b2-002e-415e-9cae-8575f0170506
   Args:
     type: :Woman
-    source: Duchess Marie Thérèse of Württemberg
-  AddTriple (d73134ca-7ed0-4670-adee-7a5239a6f4cf)
- Call ID: d73134ca-7ed0-4670-adee-7a5239a6f4cf
+    source: Camilla_Crociani
+  AssignClass (c5d8e478-20a7-4ad9-aa57-4506b13bc7b5)
+ Call ID: c5d8e478-20a7-4ad9-aa57-4506b13bc7b5
   Args:
-    target: Prince Henri, Count of Paris
-    source: Princess Marie of Liechtenstein
+    source: Ferdinand_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (f2179dcb-1613-458d-a658-7069697eeaf5)
+ Call ID: f2179dcb-1613-458d-a658-7069697eeaf5
+  Args:
+    type: :Man
+    source: Ferdinand_of_Bourbon-Two_Sicilies
+  AssignClass (c3d7bd20-d906-4c70-9b56-0e88eac8e26f)
+ Call ID: c3d7bd20-d906-4c70-9b56-0e88eac8e26f
+  Args:
+    source: Maria_Chiara_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (91d47bbf-0280-4ab2-a039-8bf7952eca6f)
+ Call ID: 91d47bbf-0280-4ab2-a039-8bf7952eca6f
+  Args:
+    type: :Woman
+    source: Maria_Chiara_of_Bourbon-Two_Sicilies
+  AssignClass (cf86e59c-7529-4332-90bf-e1af246f378e)
+ Call ID: cf86e59c-7529-4332-90bf-e1af246f378e
+  Args:
+    type: :Person
+    source: Béatrice_of_Bourbon-Two_Sicilies
+  AssignClass (f2c5e427-ef57-488d-b7bb-d48f48f67e37)
+ Call ID: f2c5e427-ef57-488d-b7bb-d48f48f67e37
+  Args:
+    source: Béatrice_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AddTriple (c430394e-b263-4a7a-9f72-fa7fa79bb278)
+ Call ID: c430394e-b263-4a7a-9f72-fa7fa79bb278
+  Args:
+    target: Carlo_of_Bourbon-Two_Sicilies
     relation: :hasFather
-  AddTriple (a2a5b87c-7ecd-48a1-bb2c-5cf57f9c7abd)
- Call ID: a2a5b87c-7ecd-48a1-bb2c-5cf57f9c7abd
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+  AddTriple (37393d96-c584-405b-bb10-8e7bd29b2f96)
+ Call ID: 37393d96-c584-405b-bb10-8e7bd29b2f96
   Args:
-    target: Duchess Marie Thérèse of Württemberg
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    source: Princess Marie of Liechtenstein
-  AssignClass (fcfb077e-9475-425a-aa8a-8f6642a1bdd6)
- Call ID: fcfb077e-9475-425a-aa8a-8f6642a1bdd6
+    target: Camilla_Crociani
+  AddTriple (7a3d0de3-592e-4a54-8599-11ff66ffebc7)
+ Call ID: 7a3d0de3-592e-4a54-8599-11ff66ffebc7
   Args:
-    type: :Man
-    source: Prince Gundakar of Liechtenstein
-  AddTriple (5c975998-5784-413e-a1bd-f55758895c54)
- Call ID: 5c975998-5784-413e-a1bd-f55758895c54
-  Args:
-    source: Princess Marie of Liechtenstein
-    relation: :hasRelation
-    target: Prince Gundakar of Liechtenstein
-  AddLiteral (112a7268-26ab-42c6-935d-bd12958155b2)
- Call ID: 112a7268-26ab-42c6-935d-bd12958155b2
-  Args:
-    literal_value: 1989
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Princess Marie of Liechtenstein
-  AssignClass (72011e8b-4e85-49a9-bb36-9dccbcf64171)
- Call ID: 72011e8b-4e85-49a9-bb36-9dccbcf64171
-  Args:
-    source: Prince Johann of Liechtenstein
-    type: :Man
-  AssignClass (fb64abac-2dbf-41b2-b385-54df7249ee39)
- Call ID: fb64abac-2dbf-41b2-b385-54df7249ee39
-  Args:
-    type: :Woman
-    source: Princess Clothilde of Thurn und Taxis
-  AddTriple (4376c5c1-d02a-446d-bc63-d9df6bbc545d)
- Call ID: 4376c5c1-d02a-446d-bc63-d9df6bbc545d
-  Args:
-    source: Prince Gundakar of Liechtenstein
     relation: :hasFather
-    target: Prince Johann of Liechtenstein
-  AddTriple (b2eb3157-0e7f-4be9-a8d5-bdae449d1a10)
- Call ID: b2eb3157-0e7f-4be9-a8d5-bdae449d1a10
+    target: Ferdinand_of_Bourbon-Two_Sicilies
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AddTriple (593e3067-a157-4b6c-a187-4d3f47f14c20)
+ Call ID: 593e3067-a157-4b6c-a187-4d3f47f14c20
   Args:
-    target: Princess Clothilde of Thurn und Taxis
-    source: Prince Gundakar of Liechtenstein
-    relation: :hasMother
-  AssignClass (3d050bf3-334d-4d87-8b06-ef9045767f3d)
- Call ID: 3d050bf3-334d-4d87-8b06-ef9045767f3d
+    target: Maria_Chiara_of_Bourbon-Two_Sicilies
+    relation: :hasSister
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+  AddTriple (7b130fde-8006-4e8a-8992-a97be6610ad2)
+ Call ID: 7b130fde-8006-4e8a-8992-a97be6610ad2
   Args:
-    source: Princess Diemut
-    type: :Woman
-  AddTriple (ea6dbd1f-7ad4-4804-b2ef-425feace7876)
- Call ID: ea6dbd1f-7ad4-4804-b2ef-425feace7876
-  Args:
-    target: Prince Gundakar of Liechtenstein
+    source: Béatrice_of_Bourbon-Two_Sicilies
     relation: :isSisterOf
-    source: Princess Diemut
-  AddTriple (1ab3de89-b9e9-43d1-afec-4cd7a0367d6e)
- Call ID: 1ab3de89-b9e9-43d1-afec-4cd7a0367d6e
+    target: Carlo_of_Bourbon-Two_Sicilies
+  AddLiteral (26e1d416-da55-45df-9f95-e67dbb42dd7b)
+ Call ID: 26e1d416-da55-45df-9f95-e67dbb42dd7b
   Args:
-    relation: :hasFather
-    source: Princess Diemut
-    target: Prince Johann of Liechtenstein
-  AddTriple (710f0382-bf28-4f32-a8d1-cf4c587c46c2)
- Call ID: 710f0382-bf28-4f32-a8d1-cf4c587c46c2
-  Args:
-    relation: :hasMother
-    source: Princess Diemut
-    target: Princess Clothilde of Thurn und Taxis
-  AssignClass (bca353fd-0028-457c-92cd-5f70b1bad685)
- Call ID: bca353fd-0028-457c-92cd-5f70b1bad685
-  Args:
-    source: Philipp Albrecht, Duke of Wurttemberg
-    type: :Man
-  AssignClass (a8deb0da-1d91-4dd6-a3f9-364971c14c21)
- Call ID: a8deb0da-1d91-4dd6-a3f9-364971c14c21
-  Args:
-    source: Isabelle d'Orléans, Duchess of Guise
-    type: :Woman
-  Finish (585fe214-3e83-452a-adf2-af12a3eb7f3b)
- Call ID: 585fe214-3e83-452a-adf2-af12a3eb7f3b
+    literal_type: xsd:date
+    literal_value: 2003-06-23
+    relation: :hasBirthYear
+    source: Maria_Carolina_of_Bourbon-Two_Sicilies
+  Finish (7a61ed3a-e5e8-47cd-bda6-478dbe4f8583)
+ Call ID: 7a61ed3a-e5e8-47cd-bda6-478dbe4f8583
   Args:

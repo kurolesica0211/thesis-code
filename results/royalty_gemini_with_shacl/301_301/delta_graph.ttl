@@ -2,40 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Nikola_of_Yugoslavia a :Man ;
-    :alsoKnownAs "Nikola Karađorđević"^^xsd:string,
-        "Prince Nicholas"^^xsd:string ;
-    :hasBirthYear 1928 ;
-    :hasBrother data:Prince_Alexander_of_Yugoslavia ;
-    :hasDeathYear 1954 ;
-    :hasFather data:Prince_Paul_of_Yugoslavia ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
-    :knownAs "Nicky"^^xsd:string .
+data:Amalia_Maria_Brigid_Womack_von_Preussen a :Woman ;
+    :hasBirthYear 2020 ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
 
-data:Arsen_Karadjordjevic a :Ancestor,
-        :Man .
+data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man ;
+    :hasBirthYear 2015 ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
 
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Woman ;
+    :hasBirthYear 2020 ;
+    :hasFather data:Philip_Womack ;
+    :hasMother data:Tatiana_von_Preussen .
+
+data:Alexandra_Blahova a :Ancestor,
         :Woman .
 
-data:Prince_Alexander_of_Yugoslavia a :Man .
+data:Lady_Brigid_Guinness a :Ancestor,
+        :Woman .
 
-data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man .
-
-data:Prince_Paul_of_Yugoslavia a :Ancestor,
+data:Prince_Andreas_of_Prussia a :Ancestor,
         :Man ;
-    :hasFather data:Arsen_Karadjordjevic ;
-    :hasMother data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato .
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMother data:Lady_Brigid_Guinness .
 
-data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato a :Ancestor,
-        :Woman .
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Woman .
-
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+data:Tatiana_von_Preussen a :Ancestor,
         :Woman ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+    :hasBirthYear 1980 ;
+    :hasFather data:Prince_Andreas_of_Prussia ;
+    :hasMarriageYear 2014 ;
+    :hasMother data:Alexandra_Blahova ;
+    :hasRelation data:Philip_Womack .
+
+data:Philip_Womack a :Ancestor,
+        :Man .
 

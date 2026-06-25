@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Duke_Wilhelm-_Duke_of_Württemberg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Duke_Wilhelm-_Duke_of_Württemberg a :Person ;
     rdfs:label "Duke Wilhelm, Duke of Württemberg" ;
     data:posIndicesFull "0:30" ;
     data:posIndicesPart "1079:1086",
@@ -39,9 +37,13 @@ data:Duke_Wilhelm-_Duke_of_Württemberg a :Man,
         "Wilhelm Herzog von Württemberg" ;
     :hasSex data:male .
 
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
 

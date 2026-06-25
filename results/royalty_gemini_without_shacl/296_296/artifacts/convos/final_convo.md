@@ -69,21 +69,54 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Robert Jeremy Hugh Lascelles (born 14 February 1955) is a British music industry executive and occasional musician.
-Life
+Prince Christopher of Greece and Denmark (Greek: Χριστόφορος, romanized: Christóphoros; 10 August 1888 – 21 January 1940) was the fifth and youngest son and youngest child of King George I of Greece, belonging to a dynasty which mounted and lost the throne of Greece several times during his lifetime.
+Family background
 
-Lascelles is the third child of George Lascelles, 7th Earl of Harewood, and Marion Stein, who later married Jeremy Thorpe.
-He is a great-grandson of King George V.
-This included playing percussion for the Global Village Trucking Company, for whom his older brother James Lascelles played keyboards.
-Lascelles stood down as CEO of Chrysalis Music in March 2012 and was subsequently named as a visiting professor at Leeds College of Music (LCoM), a role which commenced in October 2012.
-Lascelles was elected to the council of the BPI in 2003 and from 2004-2007 he served on the board of AIM as Vice-Chairman.
-Lascelles thinks himself very fortunate to have worked for 50 odd years at what he considers his hobby.
+Christopher was born at Pavlovsk, Imperial Russia, son of King George I of Greece and Queen Olga, a Russian grand duchess by birth.
+He was called "Christo" in the family.
+His older brothers were future King Constantine I, George, Nicholas and Andrew.
+Christopher, like his siblings, was a polyglot, speaking Greek, English, Danish, Russian, French, and Italian.
+The Hellenic royal line was a cadet branch of the Schleswig-Holstein-Sonderburg-Glücksburg dynasty which had mounted the throne of Greece in 1863.
+Early adulthood
+
+When Christopher came of age he joined the Hellenic Navy, although apparently he would rather have studied the piano.
+He was briefly engaged to Princess Alexandra, 2nd Duchess of Fife in about 1910 (Alexandra's mother, Princess Louise, Duchess of Fife, was a daughter of King Edward VII and Queen Alexandra of the United Kingdom, herself an older sister of George I of Greece, Christopher's father).
+First marriage
+
+On 1 January 1920, Christopher married a very wealthy American widow, Nonnie May "Nancy" Stewart Worthington Leeds, at Vevey, Switzerland.
+His bride, a once-divorced and once-widowed commoner at least a decade older than the prince, was nonetheless recognised as Christopher's dynastic wife by his family (at the time of the engagement and wedding, the Greek royal family lived frugally in exile, and as Christopher was last in the dynasty's order of succession, any children he fathered would not impact the succession rights of other Greek dynasts).
+Shortly after their marriage, Princess Anastasia developed cancer, and died in London on 29 August 1923, leaving no children from this marriage.
+Prince Christopher did, however, have a stepson, William Bateman Leeds Jr (1902–1971), who had, in 1921, married Princess Xenia Georgievna of Russia.
+She was Christopher's niece through his elder sister, Marie of Greece, Grand Duchess George of Russia.
+Second marriage and family
+
+Prince Christopher later remarried; his second wife was Princess Françoise of Orléans (25 December 1902 – 25 February 1953).
+Françoise was a daughter of Jean d'Orléans, Duc de Guise, Orléanist pretender to the throne of France, by his wife/first cousin, Isabelle d'Orléans.
+Isabelle was, in turn, a daughter of Philippe, Comte de Paris by his wife and first cousin, Infanta Isabel de Orléans y Borbon.
+They were childless for a decade, then one child was born to Françoise: Prince Michael of Greece and Denmark was born in Rome in 1939, shortly before Prince Christopher's death.
+Opinion on Anna Anderson
+
+In 1927, Prince Christopher paid a visit to the Long Island home of William and Xenia Leeds, respectively his stepson and niece.
+Xenia had taken an interest in the strange case of a woman, Anna Anderson, who claimed to be Grand Duchess Anastasia Nikolaevna of Russia, the youngest daughter of the last Tsar of Russia, Nicholas II.
+As Prince Christopher explained, "That was her story, and, fantastic as it was, there were many who believed then − and still believe − in her, among them one or two members of the Imperial Family."
+Prince Christopher described her: "In the first place she was unable to speak Russian, which the Grand Duchess Anastasia, like all the Czar's children, had talked fluently − and would only converse in German.
+Opinion on monarchy
+
+Prince Christopher recorded his thoughts on monarchy and those aspiring to it: "Nothing under the sun would induce me to accept a Kingdom.
+"
+
+
+Death
+
+Prince Christopher of Greece died in Athens on 21 January 1940, aged 51.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +132,9 @@ Lascelles thinks himself very fortunate to have worked for 50 odd years at what 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +149,23 @@ Lascelles thinks himself very fortunate to have worked for 50 odd years at what 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,87 +457,193 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b66f91be-89c2-4a1d-9cff-c10b097208a3)
- Call ID: b66f91be-89c2-4a1d-9cff-c10b097208a3
+  AssignClass (3aeb654d-bde6-4708-a71d-c2753f793a5f)
+ Call ID: 3aeb654d-bde6-4708-a71d-c2753f793a5f
   Args:
     type: :Man
-    source: Robert_Jeremy_Hugh_Lascelles
-  AssignClass (2c7fe5a5-aa9b-423b-98a7-e5b92ba83414)
- Call ID: 2c7fe5a5-aa9b-423b-98a7-e5b92ba83414
+    source: :PrinceChristopherOfGreeceAndDenmark
+  AssignClass (b1af4255-029f-44fb-95d5-0fe22e594f1f)
+ Call ID: b1af4255-029f-44fb-95d5-0fe22e594f1f
   Args:
-    type: :Person
-    source: Robert_Jeremy_Hugh_Lascelles
-  AddLiteral (cc8fc395-0ac4-48ba-8ce4-ce7fb82590b5)
- Call ID: cc8fc395-0ac4-48ba-8ce4-ce7fb82590b5
+    source: :KingGeorgeIOfGreece
+    type: :Man
+  AssignClass (e992de91-de41-4e42-b878-f078565c9780)
+ Call ID: e992de91-de41-4e42-b878-f078565c9780
+  Args:
+    source: :QueenOlga
+    type: :Woman
+  AddLiteral (d9ec2c29-9fa9-4f40-870a-4429e110792a)
+ Call ID: d9ec2c29-9fa9-4f40-870a-4429e110792a
   Args:
     literal_type: xsd:integer
-    literal_value: 1955
+    source: :PrinceChristopherOfGreeceAndDenmark
+    literal_value: 1888
     relation: :hasBirthYear
-    source: Robert_Jeremy_Hugh_Lascelles
-  AssignClass (9894f79f-924c-436c-bd49-952861b5b91f)
- Call ID: 9894f79f-924c-436c-bd49-952861b5b91f
+  AddLiteral (934c0224-da2a-4276-8d7a-7c444a0ccf47)
+ Call ID: 934c0224-da2a-4276-8d7a-7c444a0ccf47
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1940
+    source: :PrinceChristopherOfGreeceAndDenmark
+    literal_type: xsd:integer
+  AddTriple (07ea8ab6-be34-43c7-bd19-74ece3379896)
+ Call ID: 07ea8ab6-be34-43c7-bd19-74ece3379896
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    relation: :hasFather
+    target: :KingGeorgeIOfGreece
+  AddTriple (45ea46ad-6fc6-44b8-8eac-0c465a4f4da5)
+ Call ID: 45ea46ad-6fc6-44b8-8eac-0c465a4f4da5
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    relation: :hasMother
+    target: :QueenOlga
+  AddLiteral (92d3f9e4-6928-4f88-b4fc-5cf9c6e6a9a5)
+ Call ID: 92d3f9e4-6928-4f88-b4fc-5cf9c6e6a9a5
+  Args:
+    literal_type: xsd:string
+    source: :PrinceChristopherOfGreeceAndDenmark
+    relation: :knownAs
+    literal_value: Christo
+  AddTriple (f6f5aca5-6a61-46b8-be79-4a5bd8aec744)
+ Call ID: f6f5aca5-6a61-46b8-be79-4a5bd8aec744
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    target: :KingConstantineI
+    relation: :hasBrother
+  AddTriple (fa26f7e8-417d-4081-aff7-f5d9952a03e1)
+ Call ID: fa26f7e8-417d-4081-aff7-f5d9952a03e1
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    target: :PrinceGeorge
+    relation: :hasBrother
+  AddTriple (8a5f0874-c0c2-425c-b040-147eb5696fcb)
+ Call ID: 8a5f0874-c0c2-425c-b040-147eb5696fcb
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    target: :PrinceNicholas
+    relation: :hasBrother
+  AddTriple (bb84e303-0a45-4a16-8883-2b7eea73e315)
+ Call ID: bb84e303-0a45-4a16-8883-2b7eea73e315
+  Args:
+    source: :PrinceChristopherOfGreeceAndDenmark
+    target: :PrinceAndrew
+    relation: :hasBrother
+  AssignClass (2f039612-2b82-4e4d-a7f7-a960ea604068)
+ Call ID: 2f039612-2b82-4e4d-a7f7-a960ea604068
+  Args:
+    source: :KingConstantineI
+    type: :Man
+  AssignClass (245bc564-faa8-4fe6-bcb3-fdfa7dd2ce90)
+ Call ID: 245bc564-faa8-4fe6-bcb3-fdfa7dd2ce90
   Args:
     type: :Man
-    source: George_Lascelles_7th_Earl_of_Harewood
-  AssignClass (c20035ad-8e3c-4d19-a6d9-cb1fb411ee94)
- Call ID: c20035ad-8e3c-4d19-a6d9-cb1fb411ee94
+    source: :PrinceGeorge
+  AssignClass (71a37375-ea46-4238-b6b8-7858a1edadc8)
+ Call ID: 71a37375-ea46-4238-b6b8-7858a1edadc8
   Args:
-    source: George_Lascelles_7th_Earl_of_Harewood
-    type: :Ancestor
-  AssignClass (36c4fb3a-a4ab-4306-81f4-6de662a332a5)
- Call ID: 36c4fb3a-a4ab-4306-81f4-6de662a332a5
+    source: :PrinceNicholas
+    type: :Man
+  AssignClass (ec6aff57-eadd-4428-a403-31b99b605bd4)
+ Call ID: ec6aff57-eadd-4428-a403-31b99b605bd4
+  Args:
+    type: :Man
+    source: :PrinceAndrew
+  AddTriple (047475ec-56d1-426a-91ff-2a20fb61fc4e)
+ Call ID: 047475ec-56d1-426a-91ff-2a20fb61fc4e
+  Args:
+    relation: :hasMother
+    target: :PrincessFrancoiseOfOrleans
+    source: :PrinceMichaelOfGreeceAndDenmark
+  AddTriple (1d08324d-80f6-4ab8-ab56-89645ecf47cc)
+ Call ID: 1d08324d-80f6-4ab8-ab56-89645ecf47cc
+  Args:
+    relation: :hasFather
+    target: :PrinceChristopherOfGreeceAndDenmark
+    source: :PrinceMichaelOfGreeceAndDenmark
+  AssignClass (92fe458e-58a6-4432-a97d-26559a63937d)
+ Call ID: 92fe458e-58a6-4432-a97d-26559a63937d
+  Args:
+    source: :PrinceMichaelOfGreeceAndDenmark
+    type: :Man
+  AssignClass (3bb1f8d8-8e4d-490c-b7fe-313cba8ea6ab)
+ Call ID: 3bb1f8d8-8e4d-490c-b7fe-313cba8ea6ab
+  Args:
+    source: :PrincessFrancoiseOfOrleans
+    type: :Woman
+  AddLiteral (56731135-e67e-4314-8474-238364561bcf)
+ Call ID: 56731135-e67e-4314-8474-238364561bcf
+  Args:
+    literal_type: xsd:integer
+    source: :PrinceMichaelOfGreeceAndDenmark
+    literal_value: 1939
+    relation: :hasBirthYear
+  AddTriple (4df31238-cd3c-4d6c-b5a2-bfce27a18771)
+ Call ID: 4df31238-cd3c-4d6c-b5a2-bfce27a18771
+  Args:
+    target: :JeanDOrleans
+    relation: :hasFather
+    source: :PrincessFrancoiseOfOrleans
+  AddTriple (ff763c16-2285-4131-b92e-35434bcc38f7)
+ Call ID: ff763c16-2285-4131-b92e-35434bcc38f7
+  Args:
+    source: :PrincessFrancoiseOfOrleans
+    relation: :hasMother
+    target: :IsabelleDOrleans
+  AssignClass (a3931f4d-943a-4ddb-9f9a-127e2f575fc0)
+ Call ID: a3931f4d-943a-4ddb-9f9a-127e2f575fc0
+  Args:
+    source: :JeanDOrleans
+    type: :Man
+  AssignClass (a349fe7f-6ca1-4093-8348-3644f0cccec2)
+ Call ID: a349fe7f-6ca1-4093-8348-3644f0cccec2
   Args:
     type: :Woman
-    source: Marion_Stein
-  AssignClass (adb33704-f67e-4cf0-8e51-8f5280e083e6)
- Call ID: adb33704-f67e-4cf0-8e51-8f5280e083e6
+    source: :IsabelleDOrleans
+  AddTriple (d5a96dd4-ee21-4690-b6ca-7d5bed37e807)
+ Call ID: d5a96dd4-ee21-4690-b6ca-7d5bed37e807
   Args:
-    type: :Ancestor
-    source: Marion_Stein
-  AddTriple (01c8ba87-38da-44e3-b5ba-a68ee83f80a4)
- Call ID: 01c8ba87-38da-44e3-b5ba-a68ee83f80a4
-  Args:
-    target: George_Lascelles_7th_Earl_of_Harewood
+    source: :IsabelleDOrleans
     relation: :hasFather
-    source: Robert_Jeremy_Hugh_Lascelles
-  AddTriple (455b6295-06a9-4c53-8b60-f3cc66a4cc46)
- Call ID: 455b6295-06a9-4c53-8b60-f3cc66a4cc46
+    target: :PhilippeComteDeParis
+  AddTriple (3af7ab97-3cb4-4249-8cc8-bdf46ae4d98a)
+ Call ID: 3af7ab97-3cb4-4249-8cc8-bdf46ae4d98a
   Args:
-    source: Robert_Jeremy_Hugh_Lascelles
+    source: :IsabelleDOrleans
+    target: :InfantaIsabelDeOrleansYBorbon
     relation: :hasMother
-    target: Marion_Stein
-  AssignClass (6335852b-9907-4b07-944e-65797a0a4f32)
- Call ID: 6335852b-9907-4b07-944e-65797a0a4f32
+  AssignClass (292a24bc-c0f0-4192-9cd6-b2c56894cc30)
+ Call ID: 292a24bc-c0f0-4192-9cd6-b2c56894cc30
   Args:
+    source: :PhilippeComteDeParis
     type: :Man
-    source: King_George_V
-  AssignClass (efba4f91-1141-43bc-aa02-5b9c342b4e2f)
- Call ID: efba4f91-1141-43bc-aa02-5b9c342b4e2f
+  AssignClass (b9aa8cb0-9e16-4304-8506-9bcfd375eff9)
+ Call ID: b9aa8cb0-9e16-4304-8506-9bcfd375eff9
   Args:
-    source: King_George_V
-    type: :Ancestor
-  AddTriple (727e34b8-5d80-4a04-bc73-fc54895bc749)
- Call ID: 727e34b8-5d80-4a04-bc73-fc54895bc749
+    source: :InfantaIsabelDeOrleansYBorbon
+    type: :Woman
+  AddTriple (5090dfd9-bfdc-40f4-b0c2-797eee77ddfc)
+ Call ID: 5090dfd9-bfdc-40f4-b0c2-797eee77ddfc
   Args:
-    source: Robert_Jeremy_Hugh_Lascelles
-    relation: :hasAncestor
-    target: King_George_V
-  AssignClass (703252bf-dd64-4349-a0d8-f6d10fcda3cf)
- Call ID: 703252bf-dd64-4349-a0d8-f6d10fcda3cf
+    relation: :hasMother
+    target: :MarieOfGreece
+    source: :PrincessXeniaGeorgievnaOfRussia
+  AssignClass (2bdf2075-0657-4dac-8a96-1a3c91df2c8d)
+ Call ID: 2bdf2075-0657-4dac-8a96-1a3c91df2c8d
   Args:
-    source: James_Lascelles
-    type: :Man
-  AssignClass (0e99ae3b-24d8-4609-9d25-4b37aa82013b)
- Call ID: 0e99ae3b-24d8-4609-9d25-4b37aa82013b
+    source: :PrincessXeniaGeorgievnaOfRussia
+    type: :Woman
+  AssignClass (7d998648-a226-41d1-90fa-909da2772728)
+ Call ID: 7d998648-a226-41d1-90fa-909da2772728
   Args:
-    type: :Person
-    source: James_Lascelles
-  AddTriple (4442c5af-6675-4b49-a0e4-0714df17e6e7)
- Call ID: 4442c5af-6675-4b49-a0e4-0714df17e6e7
+    type: :Woman
+    source: :MarieOfGreece
+  AddTriple (b4e6be9a-2275-48d1-8ef4-d089d9ebaf7a)
+ Call ID: b4e6be9a-2275-48d1-8ef4-d089d9ebaf7a
   Args:
-    source: Robert_Jeremy_Hugh_Lascelles
-    relation: :hasBrother
-    target: James_Lascelles
-  Finish (75a5bae8-0701-4cd7-9ab5-4941ab4180f0)
- Call ID: 75a5bae8-0701-4cd7-9ab5-4941ab4180f0
+    target: :MarieOfGreece
+    relation: :hasSister
+    source: :PrinceChristopherOfGreeceAndDenmark
+  Finish (7e985eed-3d0b-484a-b5f0-c0d626744ac7)
+ Call ID: 7e985eed-3d0b-484a-b5f0-c0d626744ac7
   Args:

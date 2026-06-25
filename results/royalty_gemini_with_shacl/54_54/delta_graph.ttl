@@ -2,55 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Archie_Mountbatten-Windsor a :Man,
-        :Person ;
-    :hasFather data:Prince_Harry ;
-    :hasMother data:Meghan_Markle .
-
-data:Charles_Spencer a :Ancestor,
-        :Man,
+data:Charles_Spencer_9th_Earl_Spencer a :Man,
         :Person .
 
-data:Male_Sex_Node a :Sex .
-
-data:Meghan_Markle a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Prince_Philip a :Ancestor,
-        :Man,
-        :Person .
-
-data:Diana_Princess_of_Wales a :Ancestor,
-        :Person,
+data:Meghan_Markle a :Person,
         :Woman ;
-    :hasChild data:Prince_Harry,
-        data:Prince_William ;
-    :hasParent data:Charles_Spencer .
+    :hasChild data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor .
 
-data:King_Charles_III a :Ancestor,
+data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
         :Man,
-        :Person ;
-    :hasChild data:Prince_Harry,
-        data:Prince_William ;
-    :hasParent data:Prince_Philip,
-        data:Queen_Elizabeth_II .
+        :Person .
 
 data:Queen_Elizabeth_II a :Ancestor,
         :Person,
         :Woman .
 
-data:Prince_Harry a :Ancestor,
+data:Archie_Mountbatten-Windsor a :Man,
+        :Person .
+
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+
+data:King_Charles_III a :Ancestor,
         :Man,
         :Person ;
+    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :isFatherOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+
+data:Lilibet_Mountbatten-Windsor a :Person,
+        :Woman .
+
+data:Prince_Harry a :Man,
+        :Person ;
     :hasBirthYear 1984 ;
-    :hasBrother data:Prince_William ;
+    :hasChild data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
     :hasFather data:King_Charles_III ;
     :hasMother data:Diana_Princess_of_Wales ;
-    :hasParent data:Queen_Elizabeth_II ;
-    :hasSex data:Male_Sex_Node .
+    :isBrotherOf data:William_Prince_of_Wales .
 
-data:Prince_William a :Man,
+data:William_Prince_of_Wales a :Man,
         :Person ;
     :hasFather data:King_Charles_III ;
     :hasMother data:Diana_Princess_of_Wales .

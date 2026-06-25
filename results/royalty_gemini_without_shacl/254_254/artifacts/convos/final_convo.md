@@ -69,50 +69,74 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Patricia Edwina Victoria Knatchbull, 2nd
-Countess Mountbatten of Burma, Baroness Brabourne, CBE, MSC, CD (née Mountbatten; 14 February 1924 – 13 June 2017), was a British peeress and third cousin of Queen Elizabeth II.
-Earl Mountbatten of Burma (formerly Prince Louis of Battenberg) and of heiress Edwina Ashley.
-She was the elder sister of Lady Pamela Hicks, the first cousin of Prince Philip, Duke of Edinburgh, and the last surviving baptismal sponsor to her first cousin once removed King Charles III.
-Lady Mountbatten succeeded her father as Countess Mountbatten of Burma when he was assassinated in 1979, as his peerages had been created with special remainder to his daughters and their heirs male.
+George Henry Hubert Lascelles, 7th Earl of Harewood (7 February 1923 – 11 July 2011), styled The Honourable George Lascelles before 1929 and Viscount Lascelles between 1929 and 1947, was a British classical music administrator and author, and a member of the extended British royal family, as a maternal grandson of King George V and Queen Mary, and thus a first cousin of Queen Elizabeth II.
+Harewood was the elder son of the 6th Earl of Harewood and Princess Mary, Princess Royal, the only daughter of King George V and Queen Mary.
+Lord Harewood was the eldest grandchild of King George V and Queen Mary, nephew of both King Edward VIII and King George VI and first cousin of Queen Elizabeth II.
+He was the first member of the Royal Family to obtain a divorce (as opposed to an annulment).
+he was the director of the Edinburgh Festival from 1961-1965
+
+
 Early life
 
-Patricia Mountbatten was born in the St George Hanover Square parish of London in 1924, exactly two years after her father proposed to her mother in India.
-Her middle names were Edwina, after her mother, and Victoria, after her grandmother the eldest daughter of princess alice of United Kingdom
+George Henry Hubert Lascelles was born at his parents' London home of Chesterfield House on 7 February 1923, the first child of Henry, Viscount Lascelles, and Princess Mary, Viscountess Lascelles, and first grandchild of King George V and Queen Mary, who stood as sponsors at his christening.
+The christening took place on 25 March 1923 at St Mary's Church in the village of Goldsborough, near Knaresborough adjoining the family home Goldsborough Hall.
+After his paternal grandfather's death in 1929, he was styled as Viscount Lascelles as his father succeeded to the earldom.
+He served as a Page of Honour at the coronation of his uncle King George VI in May 1937.
+He was raised at Harewood House in Yorkshire.
+Military service
+
+Lascelles joined the British Army where he was commissioned as a second lieutenant into the Grenadier Guards (his father's regiment) in 1942, attaining the rank of captain.
+As the nephew of King George VI, Lascelles was one of the Prominente at Colditz, considered a potential bargaining chip by the Nazis.
+— Lord Harewood, Desert Island Discs, 1982
+In March 1945, Adolf Hitler signed his death warrant; the SS general in command of prisoner-of-war camps, Gottlob Berger, realizing the war was lost, refused to carry out the sentence and released Lascelles to the Swiss.
+Lord Harewood served as a Counsellor of State in 1947, 1953–54, and 1956.
+House of Lords
+
+Lascelles succeeded his father in 1947.
+Career
+
+Opera
+
+A music enthusiast, Lord Harewood devoted most of his career to opera with his Yorkshire heritage fostering his interest; in March 1949, as a young single man, he had been among the audience at the Leeds Town Hall for a  performance of operatic works by the Yorkshire Symphony Orchestra.
+He was director of the Royal Opera House, Covent Garden from 1951 to 1953 and again from 1969 to 1972.
+Lord Harewood served as a governor of the BBC from 1985 to 1987 and as the president of the British Board of Film Classification from 1985 to 1996.
+Public life
+
+Lascelles was the only person to serve as Counsellor of State without being a Prince of the United Kingdom, serving from 1945 to 1951, then from 1952 to 1956.
+The estate and house, Harewood House, are held by a charity with £9 million of assets, and were not counted as part of his wealth.
+In 1959, Harewood received the Grand Decoration in Silver with Sash for Services to the Republic of Austria.
+Personal life
+
+Marriages and children
+
+On 29 September 1949 at St. Mark's Church, London, Lord Harewood married Marion Stein, a concert pianist and the daughter of the Viennese music publisher Erwin Stein.
+Because of Harewood's position in the line of succession, the marriage was subject to approval from the sovereign, under the Royal Marriages Act 1772.
+Queen Mary, mother of George VI, objected to the marriage but permission was eventually granted.
+Benjamin Britten, a friend of the Stein family, composed an anthem, "Amo Ergo Sum", for the wedding ceremony.
+Lord and Lady Harewood had three sons:
 
 
-Marriage and children
+The earl's marriage to Marion Stein ended in divorce in 1967, after the earl's mistress, Patricia "Bambi" Tuckwell – an Australian violinist and sister of the musician Barry Tuckwell – gave birth to his son.
+Stein went on to marry politician Jeremy Thorpe.
+Lord Harewood married Tuckwell (24 November 1926 – 4 May 2018) on 31 July 1967.
+They were obliged to be married abroad as, in England, registry office marriages were barred at the time for persons covered by the Royal Marriages Act, and divorcees could not marry in the Church of England.
+They had one son: Mark Lascelles.
+Death
 
-On 26 October 1946, she married John Knatchbull, 7th Baron Brabourne (9 November 1924 – 23 September 2005), at the time an aide to her father in the Far East.
-They had met after Patricia, having served in the Women's Royal Naval Service, was commissioned in 1945 as a third officer and was serving in the Supreme Allied Headquarters, South East Asia.
-The wedding took place at Romsey Abbey in the presence of members of the royal family.
-Her bridesmaids were Princess Elizabeth, Princess Margaret, Lady Pamela Mountbatten (the bride's younger sister), and Princess Alexandra, daughter of the Duke and Duchess of Kent.
-As Lady Brabourne during her father's lifetime, her immediate family became closely involved in the consideration of a future consort for her first cousin once removed, Charles, Prince of Wales.
-In early 1974, Lord Mountbatten began corresponding with the eldest son of Queen Elizabeth II and Prince Philip about a potential marriage to Lady Brabourne's daughter, Amanda.
-Charles wrote to Lady Brabourne (who was also his godmother), about his interest in her daughter, to which she replied approvingly, though suggesting that a courtship was premature.
-Amanda Knatchbull declined the marriage proposal of Charles in 1980, following the assassination of her maternal grandfather.
-Activities
+Lord Harewood died peacefully at home, on 11 July 2011, aged 88 years.
+Arms
 
-Patricia was educated in Malta, England, and at the Hewitt School in New York City.
-In 1973 she was appointed Deputy Lieutenant for the County of Kent; she was also a serving magistrate and was involved with numerous service organisations including SOS Children's Villages UK, of which she was a Patron; the Order of St John, of which she was a Dame; and the Countess Mountbatten's Own Legion of Frontiersmen of the Commonwealth, of which she was a Patron.
-On 15 June 1974, she succeeded her distant cousin (first cousin twice removed)
-Lady Patricia Ramsay, formerly HRH Princess Patricia of Connaught, as Colonel-in-Chief of Princess Patricia's Canadian Light Infantry, for whom the regiment was named when Princess Patricia's father, the Duke of Connaught, was Governor General of Canada during the First World War.
-Despite her succeeding to an earldom in her own right as Countess Mountbatten of Burma on the death of her father in 1979, she preferred that the officers and men of her regiment address her as Lady Patricia.
-On 28 August 2007, the Governor General of Canada presented her with the Canadian Meritorious Service Cross for her services as Colonel-in-Chief of Princess Patricia's Light Infantry.
-Patricia was in the boat which was blown up by the IRA off the shores of Mullaghmore, County Sligo, in August 1979, killing her 14-year-old son Nicholas; her father; her mother-in-law, the Dowager Baroness Brabourne; and 15-year-old Paul Maxwell, a boat-boy from County Fermanagh.
-Following the incident the Countess became Patron and, later, President of The Compassionate Friends, a self-help charitable organisation of bereaved parents in the UK.
-In June 2012, at the time of Queen Elizabeth II's first visit to the Republic of Ireland, Countess Mountbatten said the Queen had her full support for meeting Martin McGuinness, who had been a high-ranking member of the IRA.
-Death and funeral
+Books
 
-Countess Mountbatten died at her home in Mersham, Kent, on 13 June 2017, aged 93.
-Her funeral service took place on 27 June at St Paul's Church, Knightsbridge, and was attended by the Queen Elizabeth II, Prince Philip, Duke of Edinburgh, and other senior members of the royal family.
-Her casket was borne by a party of pall bearers from Princess Patricia's Canadian Light Infantry, who were in London on public duties.
-She was buried in the Knatchbull family plot in Mersham churchyard.
+The Tongs and the Bones: The Memoirs of Lord Harewood, published by George Weidenfeld & Nicolson (1981), .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}ISBN 0-297-77960-5 is George Lascelles's autobiography.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -128,39 +152,9 @@ She was buried in the Knatchbull family plot in Mersham churchyard.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -175,6 +169,23 @@ She was buried in the Knatchbull family plot in Mersham churchyard.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -192,6 +203,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,29 +285,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -290,6 +308,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -302,6 +328,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -310,17 +338,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -348,6 +378,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -363,155 +477,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0d9d72cb-0520-4ee6-8e72-cf228ac3e0fe)
- Call ID: 0d9d72cb-0520-4ee6-8e72-cf228ac3e0fe
+  AssignClass (a95293ec-787a-4753-9832-3e310a090b7e)
+ Call ID: a95293ec-787a-4753-9832-3e310a090b7e
   Args:
-    type: :Woman
-    source: Patricia_Mountbatten
-  AssignClass (69fe1e20-cb72-4457-8313-51b2fc5f5903)
- Call ID: 69fe1e20-cb72-4457-8313-51b2fc5f5903
+    source: George_Henry_Hubert_Lascelles
+    type: :Man
+  AssignClass (cbb43494-16e7-4515-b799-361bc4d111c1)
+ Call ID: cbb43494-16e7-4515-b799-361bc4d111c1
   Args:
+    source: George_Henry_Hubert_Lascelles
     type: :Person
-    source: Patricia_Mountbatten
-  AddLiteral (5a6635c1-7219-40c4-92c8-15bf8a51da53)
- Call ID: 5a6635c1-7219-40c4-92c8-15bf8a51da53
+  AddLiteral (4edb6164-1226-44b9-872d-1666d14d4634)
+ Call ID: 4edb6164-1226-44b9-872d-1666d14d4634
   Args:
-    source: Patricia_Mountbatten
+    literal_value: 1923
+    source: George_Henry_Hubert_Lascelles
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1924
-  AddLiteral (735efb89-7da8-4e08-9961-7f8da1966d76)
- Call ID: 735efb89-7da8-4e08-9961-7f8da1966d76
+  AddLiteral (bb695729-3f37-4cc2-8d8d-362a867c4b9a)
+ Call ID: bb695729-3f37-4cc2-8d8d-362a867c4b9a
   Args:
-    literal_value: 2017
     relation: :hasDeathYear
+    literal_value: 2011
+    source: George_Henry_Hubert_Lascelles
     literal_type: xsd:integer
-    source: Patricia_Mountbatten
-  AssignClass (3634f800-b74e-4a19-b899-f43cf4d8c081)
- Call ID: 3634f800-b74e-4a19-b899-f43cf4d8c081
+  AssignClass (7722eff6-a6bd-4c8d-aa70-c4210c80a013)
+ Call ID: 7722eff6-a6bd-4c8d-aa70-c4210c80a013
   Args:
     type: :Man
-    source: Earl_Mountbatten_of_Burma
-  AssignClass (7df76164-3179-47d4-8e1d-3bf668fe92e5)
- Call ID: 7df76164-3179-47d4-8e1d-3bf668fe92e5
+    source: Henry_Viscount_Lascelles
+  AssignClass (7e8a2d27-6c2e-4deb-9cd6-814a8d33381c)
+ Call ID: 7e8a2d27-6c2e-4deb-9cd6-814a8d33381c
   Args:
     type: :Person
-    source: Earl_Mountbatten_of_Burma
-  AssignClass (15bdbcfa-15e8-492d-8182-c8a77cd9c6ba)
- Call ID: 15bdbcfa-15e8-492d-8182-c8a77cd9c6ba
+    source: Henry_Viscount_Lascelles
+  AssignClass (1b333edf-f457-4e70-97ca-f02134186e40)
+ Call ID: 1b333edf-f457-4e70-97ca-f02134186e40
   Args:
-    type: :Ancestor
-    source: Earl_Mountbatten_of_Burma
-  AddTriple (7f5e2124-1688-4ddf-84dc-35734d7fbc33)
- Call ID: 7f5e2124-1688-4ddf-84dc-35734d7fbc33
-  Args:
-    relation: :isFatherOf
-    source: Earl_Mountbatten_of_Burma
-    target: Patricia_Mountbatten
-  AssignClass (953d2a1f-9843-42b5-af12-07e9303c7df6)
- Call ID: 953d2a1f-9843-42b5-af12-07e9303c7df6
-  Args:
+    source: Princess_Mary
     type: :Woman
-    source: Edwina_Ashley
-  AssignClass (b69b631a-7de8-4540-bdcb-62031f2c1769)
- Call ID: b69b631a-7de8-4540-bdcb-62031f2c1769
+  AssignClass (d559bf7c-391d-4f9b-bfca-8bfbb17e9331)
+ Call ID: d559bf7c-391d-4f9b-bfca-8bfbb17e9331
   Args:
     type: :Person
-    source: Edwina_Ashley
-  AssignClass (2018c0b2-ede8-463b-b157-ea9504acedcc)
- Call ID: 2018c0b2-ede8-463b-b157-ea9504acedcc
+    source: Princess_Mary
+  AddTriple (dc78767c-9fa2-4a9e-837e-90d327ad535b)
+ Call ID: dc78767c-9fa2-4a9e-837e-90d327ad535b
   Args:
-    type: :Ancestor
-    source: Edwina_Ashley
-  AddTriple (6f148a21-253e-42f1-8775-c1aa45d1a3c6)
- Call ID: 6f148a21-253e-42f1-8775-c1aa45d1a3c6
+    source: George_Henry_Hubert_Lascelles
+    target: Henry_Viscount_Lascelles
+    relation: :hasFather
+  AddTriple (04cf6d45-a7aa-4342-8ab9-cb5a4fd4a23d)
+ Call ID: 04cf6d45-a7aa-4342-8ab9-cb5a4fd4a23d
   Args:
-    relation: :isMotherOf
-    source: Edwina_Ashley
-    target: Patricia_Mountbatten
-  AssignClass (7c84e026-9878-4bc5-a1f5-2822bca5ef1b)
- Call ID: 7c84e026-9878-4bc5-a1f5-2822bca5ef1b
+    source: George_Henry_Hubert_Lascelles
+    target: Princess_Mary
+    relation: :hasMother
+  AssignClass (87188e2b-f3f3-4cd5-a405-fa77c9437520)
+ Call ID: 87188e2b-f3f3-4cd5-a405-fa77c9437520
   Args:
-    type: :Woman
-    source: Lady_Pamela_Hicks
-  AssignClass (abbbd545-801b-4edd-ad0e-4ebb66d5d5b6)
- Call ID: abbbd545-801b-4edd-ad0e-4ebb66d5d5b6
-  Args:
-    type: :Person
-    source: Lady_Pamela_Hicks
-  AddTriple (47eb41ba-5cab-466a-97c9-7cd6588e9f46)
- Call ID: 47eb41ba-5cab-466a-97c9-7cd6588e9f46
-  Args:
-    relation: :isSisterOf
-    target: Patricia_Mountbatten
-    source: Lady_Pamela_Hicks
-  AssignClass (3e78677f-672e-41c9-a31e-7b913259d272)
- Call ID: 3e78677f-672e-41c9-a31e-7b913259d272
-  Args:
+    source: King_George_V
     type: :Man
-    source: John_Knatchbull
-  AssignClass (b365d2cc-be2d-43ce-a72f-3d428b4541ee)
- Call ID: b365d2cc-be2d-43ce-a72f-3d428b4541ee
+  AssignClass (fd73e751-2f06-4c76-b561-f2f2dba29c7d)
+ Call ID: fd73e751-2f06-4c76-b561-f2f2dba29c7d
+  Args:
+    source: King_George_V
+    type: :Person
+  AssignClass (5fb830f4-7c25-448f-990f-0591bc254186)
+ Call ID: 5fb830f4-7c25-448f-990f-0591bc254186
+  Args:
+    type: :Woman
+    source: Queen_Mary
+  AssignClass (49ac85c0-0804-4380-90b6-45c7860f95b5)
+ Call ID: 49ac85c0-0804-4380-90b6-45c7860f95b5
   Args:
     type: :Person
-    source: John_Knatchbull
-  AddLiteral (9b4ba693-604e-45c3-b489-03b87b70efb5)
- Call ID: 9b4ba693-604e-45c3-b489-03b87b70efb5
+    source: Queen_Mary
+  AddTriple (7f0d4c81-51f2-4eeb-85b0-24da742dcfe8)
+ Call ID: 7f0d4c81-51f2-4eeb-85b0-24da742dcfe8
   Args:
-    literal_value: 1946
+    source: Princess_Mary
+    target: King_George_V
+    relation: :hasFather
+  AddTriple (6035c658-7c38-4bde-97d5-18b4c280be6b)
+ Call ID: 6035c658-7c38-4bde-97d5-18b4c280be6b
+  Args:
+    relation: :hasMother
+    source: Princess_Mary
+    target: Queen_Mary
+  AssignClass (2cd4d2d7-8da4-4df7-b6bb-f608e51742aa)
+ Call ID: 2cd4d2d7-8da4-4df7-b6bb-f608e51742aa
+  Args:
+    type: :Woman
+    source: Marion_Stein
+  AssignClass (cf18a729-537b-4a4b-bd57-c508bd16eecd)
+ Call ID: cf18a729-537b-4a4b-bd57-c508bd16eecd
+  Args:
+    type: :Person
+    source: Marion_Stein
+  AssignClass (b5345da1-ffb9-4dbd-9bc4-524e49cfffd1)
+ Call ID: b5345da1-ffb9-4dbd-9bc4-524e49cfffd1
+  Args:
+    source: Patricia_Bambi_Tuckwell
+    type: :Woman
+  AssignClass (88c2d714-b8e7-480a-a424-fac21c153467)
+ Call ID: 88c2d714-b8e7-480a-a424-fac21c153467
+  Args:
+    type: :Person
+    source: Patricia_Bambi_Tuckwell
+  AddTriple (be5dda80-6334-4083-9eed-0b6639c89001)
+ Call ID: be5dda80-6334-4083-9eed-0b6639c89001
+  Args:
+    source: George_Henry_Hubert_Lascelles
+    target: Marion_Stein
+    relation: :hasRelation
+  AddLiteral (e85bcff5-9c88-42d7-8b8c-7c1c6f8f139f)
+ Call ID: e85bcff5-9c88-42d7-8b8c-7c1c6f8f139f
+  Args:
+    literal_value: 1949
+    source: George_Henry_Hubert_Lascelles
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: Patricia_Mountbatten
-  AddTriple (b580669e-0d25-46dc-97e0-c34cdd4e364a)
- Call ID: b580669e-0d25-46dc-97e0-c34cdd4e364a
+  AddTriple (94d02ab5-6bda-4754-9fa4-34cc56feb0cf)
+ Call ID: 94d02ab5-6bda-4754-9fa4-34cc56feb0cf
   Args:
-    target: John_Knatchbull
-    source: Patricia_Mountbatten
+    target: Patricia_Bambi_Tuckwell
+    source: George_Henry_Hubert_Lascelles
     relation: :hasRelation
-  AssignClass (82ce4bc3-ab26-4bdf-8a78-74a620ee2e18)
- Call ID: 82ce4bc3-ab26-4bdf-8a78-74a620ee2e18
+  AddLiteral (6a33ef58-7753-420b-9581-018e2e09e5be)
+ Call ID: 6a33ef58-7753-420b-9581-018e2e09e5be
+  Args:
+    literal_value: 1967
+    source: George_Henry_Hubert_Lascelles
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (65826390-6698-4768-b34d-02bb129d2b63)
+ Call ID: 65826390-6698-4768-b34d-02bb129d2b63
   Args:
     type: :Man
-    source: Nicholas_Knatchbull
-  AssignClass (805230f1-6fbc-48ce-81c1-c0c7767998c5)
- Call ID: 805230f1-6fbc-48ce-81c1-c0c7767998c5
+    source: Mark_Lascelles
+  AssignClass (c97fa960-3b41-4fdd-8025-ccf78e99436c)
+ Call ID: c97fa960-3b41-4fdd-8025-ccf78e99436c
   Args:
+    source: Mark_Lascelles
     type: :Person
-    source: Nicholas_Knatchbull
-  AddTriple (ffc4f2a3-1be8-4205-939c-07b1214a9349)
- Call ID: ffc4f2a3-1be8-4205-939c-07b1214a9349
+  AddTriple (99eb8808-f05a-4872-b818-bbeef87c1fdf)
+ Call ID: 99eb8808-f05a-4872-b818-bbeef87c1fdf
   Args:
-    relation: :isSonOf
-    target: Patricia_Mountbatten
-    source: Nicholas_Knatchbull
-  AddTriple (1d8ee394-f115-4636-a93e-05aa1745e152)
- Call ID: 1d8ee394-f115-4636-a93e-05aa1745e152
+    relation: :hasFather
+    target: George_Henry_Hubert_Lascelles
+    source: Mark_Lascelles
+  AddTriple (246b0b79-270d-42c6-ae4c-c79104eb15ac)
+ Call ID: 246b0b79-270d-42c6-ae4c-c79104eb15ac
   Args:
-    source: Nicholas_Knatchbull
-    target: John_Knatchbull
-    relation: :isSonOf
-  AssignClass (a8690a7d-7909-4f2c-bf2d-18ddbe896254)
- Call ID: a8690a7d-7909-4f2c-bf2d-18ddbe896254
+    target: Patricia_Bambi_Tuckwell
+    source: Mark_Lascelles
+    relation: :hasMother
+  AssignClass (caed2d13-f300-4ba5-a868-afaf7249290b)
+ Call ID: caed2d13-f300-4ba5-a868-afaf7249290b
   Args:
-    type: :Woman
-    source: Amanda_Knatchbull
-  AssignClass (a320111b-4e37-4ff7-8c0e-9d1d37dae06b)
- Call ID: a320111b-4e37-4ff7-8c0e-9d1d37dae06b
+    source: Erwin_Stein
+    type: :Man
+  AssignClass (415914d3-902f-4f60-9593-dab81462cdfa)
+ Call ID: 415914d3-902f-4f60-9593-dab81462cdfa
   Args:
+    source: Erwin_Stein
     type: :Person
-    source: Amanda_Knatchbull
-  AddTriple (be9b5158-a97c-4a54-8c98-5f01badbcc0d)
- Call ID: be9b5158-a97c-4a54-8c98-5f01badbcc0d
+  AddTriple (5e36570e-3723-4f17-8fb5-73995549cba7)
+ Call ID: 5e36570e-3723-4f17-8fb5-73995549cba7
   Args:
-    source: Amanda_Knatchbull
-    target: Patricia_Mountbatten
-    relation: :isDaughterOf
-  AddTriple (1d3b8c8a-6e6a-47b9-8827-a8935535ea00)
- Call ID: 1d3b8c8a-6e6a-47b9-8827-a8935535ea00
+    source: Marion_Stein
+    target: Erwin_Stein
+    relation: :hasFather
+  AssignClass (b67e04a5-4a58-42be-be6f-18caf27255b5)
+ Call ID: b67e04a5-4a58-42be-be6f-18caf27255b5
   Args:
-    relation: :isDaughterOf
-    source: Amanda_Knatchbull
-    target: John_Knatchbull
-  Finish (1bbe99ce-5c3e-4cdb-870c-94136ba1b4b6)
- Call ID: 1bbe99ce-5c3e-4cdb-870c-94136ba1b4b6
+    source: Barry_Tuckwell
+    type: :Man
+  AssignClass (aae7e04a-cc89-4e18-9482-9d0f2c38ee73)
+ Call ID: aae7e04a-cc89-4e18-9482-9d0f2c38ee73
+  Args:
+    source: Barry_Tuckwell
+    type: :Person
+  AddTriple (268f1eca-7153-41ce-8e3b-7c3d98e3c31e)
+ Call ID: 268f1eca-7153-41ce-8e3b-7c3d98e3c31e
+  Args:
+    source: Patricia_Bambi_Tuckwell
+    target: Barry_Tuckwell
+    relation: :isSiblingOf
+  Finish (e6417322-1d99-4c09-90bd-94906cb86427)
+ Call ID: e6417322-1d99-4c09-90bd-94906cb86427
   Args:

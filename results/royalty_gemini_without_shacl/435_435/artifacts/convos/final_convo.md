@@ -69,54 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-India Riven Oxenberg (born June 7, 1991) is an American actress and documentary film producer.
-A granddaughter of Princess Elizabeth of Yugoslavia, she is a relative of the House of Karađorđević, the former royal family of Serbia and, later, Yugoslavia.
-Oxenberg began her career as a child actress, with small roles in film and television projects that her mother, Catherine Oxenberg, and then-stepfather, Casper Van Dien, were involved in.
-As a teenager, she was a cast member of the reality television series I Married a Princess.
-From 2011 to 2018, Oxenberg was involved in NXIVM, an American multi-level marketing company that was later exposed as a cult.
-Early life and education
+Princess Alexandrine Irene of Prussia (7 April 1915 – 2 October 1980) was the elder daughter and fifth child of Wilhelm, German Crown Prince, and Cecilie of Mecklenburg-Schwerin.
+Her grandparents were Wilhelm II, German Emperor and his wife Augusta Victoria of Schleswig-Holstein, and Frederick Francis III of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
+Alexandrine was a member of the House of Hohenzollern.
+She was a great-great-granddaughter of Queen Victoria.
+Life
 
-Oxenberg was born on June 7, 1991, to actress Catherine Oxenberg and William Weitz Shaffer.
-Oxenberg's father was arrested in 1992 for smuggling marijuana from Thailand, reportedly profiting $50 million from drug trading.
-Her maternal grandparents are Princess Elizabeth of Yugoslavia and Howard Oxenberg, a Jewish dress manufacturer.
-As a great-granddaughter of Prince Regent Paul of Yugoslavia (Elizabeth's father), Oxenberg is a descendant of the House of Karađorđević, which ruled Serbia and Yugoslavia.
-Oxenberg is also a relative of the British royal family, the Danish royal family, and the Greek royal family through her great-grandmother, Princess Olga of Greece and Denmark.
-She is a niece of writer and fashion designer Christina Oxenberg.
-In 2008, Oxenberg was presented to society at Le Bal des débutantes at the Hôtel de Crillon in Paris.
-She was one of two descendants of the Karađorđević dynasty to make her debut at Le Bal that year, alongside her cousin Victoria de Silva, the daughter of Princess Katarina and Sir Desmond de Silva.
-Career
-
-Oxenberg's first film was the 2001 television drama The Miracle of the Cards.
-In 2002, Oxenberg played the role of Mattie in the science fiction television film The Vector File.
-Oxenberg was a cast member on the 2005 Lifetime reality television series I Married a Princess, which followed her family while her mother was married to Casper Van Dien.
-In 2009, she had a small role in the Disney film Princess Protection Program.
-Personal life
-
-In 2018, Oxenberg met Patrick D'Ignazio, a chef, while working as a manager for a restaurant in New York City.
-Oxenberg and D’Ignazio had their first child, a girl, in 2024.
-NXIVM
-
-After attending college for one year, Oxenberg, alongside her mother, enrolled in a self-help entrepreneurship course hosted by NXIVM, following a recommendation from a family friend.
-While they initially started the program together, Oxenberg's mother eventually withdrew.
-In January 2015, after five years in NXIVM, Oxenberg was approached by Allison Mack about joining a secret sorority, "DOS".
-In DOS, Mack became a mentor to Oxenberg.
-Oxenberg was instructed to provide personal family secrets and pose for nude photographs for Mack, who also limited the amount of food Oxenberg could eat and required her to cook and clean for her while living with Mack in Albany, New York.
-Throughout this process, Oxenberg was groomed to become a sexual partner for NXIVM's founder and the leader of DOS, Keith Raniere.
-In January 2016, Oxenberg was held down and branded with the initials of Raniere.
-Oxenberg left NXIVM in 2018.
-While Oxenberg was involved in NXIVM, her mother Catherine tried to get her out of the organization and expose the cult through media in 2017.
-In 2018, Catherine wrote the book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult.
-In 2019, Catherine produced the Lifetime television movie Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter.
-Oxenberg officially left NXIVM in the summer of 2018 and moved back to Malibu with her mother.
-Oxenberg's time in the cult was discussed in the HBO 2020 documentary The Vow.
-Oxenberg produced and starred in the 2020 Starz documentary series Seduced: Inside the NXIVM Cult.
-Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscription "ancora imparo" (i'm still learning) by a tattoo artist in New York City's East Village.
+Alexandrine was born at the Kronprinzenpalais in Berlin.
+She followed older brothers Wilhelm, Louis Ferdinand, Hubertus, and Frederick.
+Alexandrine's only sister, Cecilie, was born in 1917.
+It became clear shortly after Alexandrine's birth that she had Down syndrome.
+Unlike other disabled royal children, Alexandrine was not hidden away.
+As a teenager, Alexandrine attended the Trüpersche Sonderschule, a school dedicated to the education of children with special needs.
+Alexandrine celebrated her confirmation along with her sister Cecilie in October 1934.
+Alexandrine lived most of her later life in Bavaria, first in Pöcking and later near Lake Starnberg, where she was visited there regularly by her family, particularly her brother Louis Ferdinand.
+Alexandrine died on 2 October 1980.
+She was buried near her parents and brother Frederick at Hohenzollern Castle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +108,9 @@ Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +125,23 @@ Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,259 +433,206 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bc57be10-0389-43f2-88ec-f67b6d4907b4)
- Call ID: bc57be10-0389-43f2-88ec-f67b6d4907b4
+  AssignClass (4f9bcd25-87b6-4985-9ef7-06d360bbbcf9)
+ Call ID: 4f9bcd25-87b6-4985-9ef7-06d360bbbcf9
   Args:
-    type: :Person
-    source: India Riven Oxenberg
-  AssignClass (7ac093a4-d384-41b7-bfbf-5a711e0d8245)
- Call ID: 7ac093a4-d384-41b7-bfbf-5a711e0d8245
-  Args:
+    source: :Alexandrine_Irene_of_Prussia
     type: :Woman
-    source: India Riven Oxenberg
-  AddLiteral (7f8ecd08-6b47-4f79-9c0e-e2fb3d825af5)
- Call ID: 7f8ecd08-6b47-4f79-9c0e-e2fb3d825af5
+  AssignClass (c7027d2f-1a41-4d6d-bee1-5ea4390a3805)
+ Call ID: c7027d2f-1a41-4d6d-bee1-5ea4390a3805
   Args:
-    relation: :hasBirthYear
-    literal_value: 1991
+    source: :Alexandrine_Irene_of_Prussia
+    type: :Person
+  AddLiteral (b528e2b9-813f-4a31-b1a9-8c8ae9045a9c)
+ Call ID: b528e2b9-813f-4a31-b1a9-8c8ae9045a9c
+  Args:
     literal_type: xsd:integer
-    source: India Riven Oxenberg
-  AssignClass (f6b3f301-23dc-450d-8052-a136620c8453)
- Call ID: f6b3f301-23dc-450d-8052-a136620c8453
+    source: :Alexandrine_Irene_of_Prussia
+    relation: :hasBirthYear
+    literal_value: 1915
+  AddLiteral (2db54567-4ec7-45ea-bf48-99c3299fe142)
+ Call ID: 2db54567-4ec7-45ea-bf48-99c3299fe142
   Args:
-    type: :Person
-    source: Catherine Oxenberg
-  AssignClass (72841aae-10c9-4fd1-bfe4-5e52bdc051f9)
- Call ID: 72841aae-10c9-4fd1-bfe4-5e52bdc051f9
+    literal_type: xsd:integer
+    source: :Alexandrine_Irene_of_Prussia
+    literal_value: 1980
+    relation: :hasDeathYear
+  AssignClass (78cde456-dd12-4a20-91af-860511aea37c)
+ Call ID: 78cde456-dd12-4a20-91af-860511aea37c
   Args:
-    source: Catherine Oxenberg
+    source: :Wilhelm_German_Crown_Prince
+    type: :Man
+  AssignClass (af688a81-5243-4dd8-b874-0bfa434779ff)
+ Call ID: af688a81-5243-4dd8-b874-0bfa434779ff
+  Args:
+    source: :Wilhelm_German_Crown_Prince
+    type: :Ancestor
+  AssignClass (85cce661-fdcb-47a5-bb55-d40fc1e433f5)
+ Call ID: 85cce661-fdcb-47a5-bb55-d40fc1e433f5
+  Args:
+    source: :Cecilie_of_Mecklenburg-Schwerin
     type: :Woman
-  AssignClass (4aca9bc4-a1bb-41e7-879d-dbc9abfaccc2)
- Call ID: 4aca9bc4-a1bb-41e7-879d-dbc9abfaccc2
+  AssignClass (570dfb69-aaf7-4ed8-8049-3ee0f7648695)
+ Call ID: 570dfb69-aaf7-4ed8-8049-3ee0f7648695
   Args:
+    source: :Cecilie_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Catherine Oxenberg
-  AddTriple (d7697864-b79c-4e6b-a47b-57317a99b649)
- Call ID: d7697864-b79c-4e6b-a47b-57317a99b649
+  AddTriple (7715d273-6b48-4b72-83dd-a9c8fb14b35a)
+ Call ID: 7715d273-6b48-4b72-83dd-a9c8fb14b35a
   Args:
-    relation: :hasMother
-    target: Catherine Oxenberg
-    source: India Riven Oxenberg
-  AssignClass (6b535779-db1f-497d-a402-60c7dfa87a21)
- Call ID: 6b535779-db1f-497d-a402-60c7dfa87a21
-  Args:
-    type: :Person
-    source: William Weitz Shaffer
-  AssignClass (1973b401-b69b-4a9c-b081-ea65ace2e9ec)
- Call ID: 1973b401-b69b-4a9c-b081-ea65ace2e9ec
-  Args:
-    source: William Weitz Shaffer
-    type: :Man
-  AssignClass (de768465-109d-4f2c-9f6e-a9ab1c19d029)
- Call ID: de768465-109d-4f2c-9f6e-a9ab1c19d029
-  Args:
-    type: :Ancestor
-    source: William Weitz Shaffer
-  AddTriple (b836a938-970d-4713-942a-3e63f88b8c09)
- Call ID: b836a938-970d-4713-942a-3e63f88b8c09
-  Args:
-    target: William Weitz Shaffer
+    target: :Wilhelm_German_Crown_Prince
+    source: :Alexandrine_Irene_of_Prussia
     relation: :hasFather
-    source: India Riven Oxenberg
-  AssignClass (448f31c7-a3a8-4ae8-b4d1-6b7dcb4c2cc5)
- Call ID: 448f31c7-a3a8-4ae8-b4d1-6b7dcb4c2cc5
+  AddTriple (948b86f0-cbea-4b3e-ada1-430e2a9ca9e2)
+ Call ID: 948b86f0-cbea-4b3e-ada1-430e2a9ca9e2
   Args:
-    type: :Person
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (38050c0d-117a-491a-815b-ea374d98afec)
- Call ID: 38050c0d-117a-491a-815b-ea374d98afec
+    target: :Cecilie_of_Mecklenburg-Schwerin
+    source: :Alexandrine_Irene_of_Prussia
+    relation: :hasMother
+  AssignClass (e7bdd764-363f-421a-80e1-b5f8161203c6)
+ Call ID: e7bdd764-363f-421a-80e1-b5f8161203c6
   Args:
+    source: :Wilhelm_II_German_Emperor
+    type: :Man
+  AssignClass (d4c2a299-d6c8-4dd9-8139-d5367c85b3d2)
+ Call ID: d4c2a299-d6c8-4dd9-8139-d5367c85b3d2
+  Args:
+    source: :Wilhelm_II_German_Emperor
+    type: :Ancestor
+  AssignClass (aa54a5f4-3751-4d91-8e9d-b54990f0ec37)
+ Call ID: aa54a5f4-3751-4d91-8e9d-b54990f0ec37
+  Args:
+    source: :Augusta_Victoria_of_Schleswig-Holstein
     type: :Woman
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (62b1ceda-cb12-4d4d-86bb-e2616fdab554)
- Call ID: 62b1ceda-cb12-4d4d-86bb-e2616fdab554
+  AssignClass (fec1041c-0519-41b2-a935-44689046de00)
+ Call ID: fec1041c-0519-41b2-a935-44689046de00
   Args:
-    source: Princess Elizabeth of Yugoslavia
+    source: :Augusta_Victoria_of_Schleswig-Holstein
     type: :Ancestor
-  AssignClass (052b437f-5be6-4445-a205-2e67690e2e9c)
- Call ID: 052b437f-5be6-4445-a205-2e67690e2e9c
+  AssignClass (971a5374-3a5a-4e2b-ae3f-8c0e16ee6331)
+ Call ID: 971a5374-3a5a-4e2b-ae3f-8c0e16ee6331
   Args:
-    source: Howard Oxenberg
-    type: :Person
-  AssignClass (265985ab-12e6-4baa-9368-ad7afd80431f)
- Call ID: 265985ab-12e6-4baa-9368-ad7afd80431f
-  Args:
+    source: :Frederick_Francis_III_of_Mecklenburg-Schwerin
     type: :Man
-    source: Howard Oxenberg
-  AssignClass (3d8e129a-46a6-4a2a-80d5-3c2efdcf7ec8)
- Call ID: 3d8e129a-46a6-4a2a-80d5-3c2efdcf7ec8
+  AssignClass (cd4f6905-4447-460d-b0ca-781ca44a135c)
+ Call ID: cd4f6905-4447-460d-b0ca-781ca44a135c
   Args:
-    source: Howard Oxenberg
+    source: :Frederick_Francis_III_of_Mecklenburg-Schwerin
     type: :Ancestor
-  AddTriple (dcf0e3f5-5b84-4b44-9ed6-35606a460a89)
- Call ID: dcf0e3f5-5b84-4b44-9ed6-35606a460a89
+  AssignClass (39ba5e4e-daf4-4261-b7e8-d54d7b75e1c2)
+ Call ID: 39ba5e4e-daf4-4261-b7e8-d54d7b75e1c2
   Args:
-    relation: :hasMother
-    target: Princess Elizabeth of Yugoslavia
-    source: Catherine Oxenberg
-  AddTriple (b08b598f-673f-47ff-811f-96c6ce10807f)
- Call ID: b08b598f-673f-47ff-811f-96c6ce10807f
+    source: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
+    type: :Woman
+  AssignClass (83cfc9d8-c89d-4293-90e9-9da8345fae13)
+ Call ID: 83cfc9d8-c89d-4293-90e9-9da8345fae13
   Args:
-    source: Catherine Oxenberg
-    target: Howard Oxenberg
-    relation: :hasFather
-  AssignClass (f1e3550a-f2af-47e9-a9af-3448d1c03bea)
- Call ID: f1e3550a-f2af-47e9-a9af-3448d1c03bea
-  Args:
-    source: Prince Regent Paul of Yugoslavia
-    type: :Person
-  AssignClass (1c86a326-6dd9-4348-9a4e-b69cd1902795)
- Call ID: 1c86a326-6dd9-4348-9a4e-b69cd1902795
-  Args:
-    type: :Man
-    source: Prince Regent Paul of Yugoslavia
-  AssignClass (783c29f3-8bcc-4d4c-8759-141e666ea805)
- Call ID: 783c29f3-8bcc-4d4c-8759-141e666ea805
-  Args:
-    source: Prince Regent Paul of Yugoslavia
+    source: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
     type: :Ancestor
-  AddTriple (836d2134-82a5-41fa-8e86-e77a918d2acc)
- Call ID: 836d2134-82a5-41fa-8e86-e77a918d2acc
+  AddTriple (7ef36956-7f13-4f6e-b138-5c949589055f)
+ Call ID: 7ef36956-7f13-4f6e-b138-5c949589055f
   Args:
     relation: :hasFather
-    target: Prince Regent Paul of Yugoslavia
-    source: Princess Elizabeth of Yugoslavia
-  AssignClass (1afbcca8-94d2-44a2-85f4-26ee0321f4f2)
- Call ID: 1afbcca8-94d2-44a2-85f4-26ee0321f4f2
+    source: :Wilhelm_German_Crown_Prince
+    target: :Wilhelm_II_German_Emperor
+  AddTriple (73558eb5-5b90-4504-bf04-cfe1be57383e)
+ Call ID: 73558eb5-5b90-4504-bf04-cfe1be57383e
   Args:
-    source: Princess Olga of Greece and Denmark
-    type: :Person
-  AssignClass (18c55adb-8314-468e-b636-371f645c3f58)
- Call ID: 18c55adb-8314-468e-b636-371f645c3f58
-  Args:
-    source: Princess Olga of Greece and Denmark
-    type: :Woman
-  AssignClass (866b6c0d-0a33-41c5-9f67-c3d6a467d8a7)
- Call ID: 866b6c0d-0a33-41c5-9f67-c3d6a467d8a7
-  Args:
-    type: :Ancestor
-    source: Princess Olga of Greece and Denmark
-  AddTriple (169eebe2-99fe-478a-b972-46799ed9a02e)
- Call ID: 169eebe2-99fe-478a-b972-46799ed9a02e
-  Args:
-    source: Princess Elizabeth of Yugoslavia
-    target: Princess Olga of Greece and Denmark
     relation: :hasMother
-  AssignClass (87e1b5be-c251-4d29-8c45-b92140de28cf)
- Call ID: 87e1b5be-c251-4d29-8c45-b92140de28cf
+    source: :Wilhelm_German_Crown_Prince
+    target: :Augusta_Victoria_of_Schleswig-Holstein
+  AddTriple (4335c654-0a60-432f-9fda-66a81038c157)
+ Call ID: 4335c654-0a60-432f-9fda-66a81038c157
   Args:
-    type: :Person
-    source: Christina Oxenberg
-  AssignClass (d050cc43-bc22-4be5-963d-1a5ebc8c6fcf)
- Call ID: d050cc43-bc22-4be5-963d-1a5ebc8c6fcf
-  Args:
-    type: :Woman
-    source: Christina Oxenberg
-  AddTriple (21e552d1-0174-4b64-8000-2dea632f8482)
- Call ID: 21e552d1-0174-4b64-8000-2dea632f8482
-  Args:
-    source: Christina Oxenberg
-    target: Catherine Oxenberg
-    relation: :isSisterOf
-  AssignClass (cfd17143-a18b-494a-822c-44b457b2c601)
- Call ID: cfd17143-a18b-494a-822c-44b457b2c601
-  Args:
-    type: :Person
-    source: Casper Van Dien
-  AssignClass (64f926e9-bc19-4a7f-9d92-17028f72df8c)
- Call ID: 64f926e9-bc19-4a7f-9d92-17028f72df8c
-  Args:
-    source: Casper Van Dien
-    type: :Man
-  AssignClass (1abf15dd-4614-4f0e-9ba1-80b9a15651ee)
- Call ID: 1abf15dd-4614-4f0e-9ba1-80b9a15651ee
-  Args:
-    source: Victoria de Silva
-    type: :Person
-  AssignClass (9bb50d32-6492-450d-a430-11e8775f9a5b)
- Call ID: 9bb50d32-6492-450d-a430-11e8775f9a5b
-  Args:
-    source: Victoria de Silva
-    type: :Woman
-  AssignClass (00daa5c0-802e-4c43-a657-348ab6207803)
- Call ID: 00daa5c0-802e-4c43-a657-348ab6207803
-  Args:
-    type: :Person
-    source: Princess Katarina
-  AssignClass (e5feb102-9c50-4946-8004-e06bf62ae5f2)
- Call ID: e5feb102-9c50-4946-8004-e06bf62ae5f2
-  Args:
-    type: :Woman
-    source: Princess Katarina
-  AssignClass (ab391209-5206-4d77-b48e-a1dca7bc0e84)
- Call ID: ab391209-5206-4d77-b48e-a1dca7bc0e84
-  Args:
-    type: :Ancestor
-    source: Princess Katarina
-  AssignClass (b14aff24-780f-493e-a784-3d58802ef65f)
- Call ID: b14aff24-780f-493e-a784-3d58802ef65f
-  Args:
-    type: :Person
-    source: Sir Desmond de Silva
-  AssignClass (f4a38b21-cbf5-498e-8d97-4af8879954d9)
- Call ID: f4a38b21-cbf5-498e-8d97-4af8879954d9
-  Args:
-    source: Sir Desmond de Silva
-    type: :Man
-  AssignClass (b31d28f6-4082-4117-968c-d69e2e782ab2)
- Call ID: b31d28f6-4082-4117-968c-d69e2e782ab2
-  Args:
-    type: :Ancestor
-    source: Sir Desmond de Silva
-  AddTriple (acd1819a-b426-40fd-bc2f-e0cd8842668e)
- Call ID: acd1819a-b426-40fd-bc2f-e0cd8842668e
-  Args:
-    source: Victoria de Silva
-    relation: :hasMother
-    target: Princess Katarina
-  AddTriple (7387dc24-c5eb-4c8e-b3af-2a3c044653a5)
- Call ID: 7387dc24-c5eb-4c8e-b3af-2a3c044653a5
-  Args:
-    source: Victoria de Silva
-    target: Sir Desmond de Silva
+    source: :Cecilie_of_Mecklenburg-Schwerin
     relation: :hasFather
-  AssignClass (9d06b12d-3d20-4723-a98f-ebed51a59cb4)
- Call ID: 9d06b12d-3d20-4723-a98f-ebed51a59cb4
+    target: :Frederick_Francis_III_of_Mecklenburg-Schwerin
+  AddTriple (5d97d357-c996-44a0-a3d4-90261263b701)
+ Call ID: 5d97d357-c996-44a0-a3d4-90261263b701
   Args:
-    source: Patrick D'Ignazio
-    type: :Person
-  AssignClass (0ae6ab2c-6273-48e2-bed8-6146422a8de0)
- Call ID: 0ae6ab2c-6273-48e2-bed8-6146422a8de0
-  Args:
-    type: :Man
-    source: Patrick D'Ignazio
-  AssignClass (b5749baf-dfa1-483d-98f9-8cab49a0eb3b)
- Call ID: b5749baf-dfa1-483d-98f9-8cab49a0eb3b
-  Args:
-    type: :Person
-    source: India Riven Oxenberg's daughter
-  AssignClass (5bff8e22-e8fd-4bcb-b97b-e583fc0c902f)
- Call ID: 5bff8e22-e8fd-4bcb-b97b-e583fc0c902f
-  Args:
-    source: India Riven Oxenberg's daughter
-    type: :Woman
-  AddTriple (a4182e97-28b7-49e6-a803-e141fb54e19f)
- Call ID: a4182e97-28b7-49e6-a803-e141fb54e19f
-  Args:
-    source: India Riven Oxenberg's daughter
     relation: :hasMother
-    target: India Riven Oxenberg
-  AddTriple (b4debf93-baec-4ac9-ac03-476e7e706e5a)
- Call ID: b4debf93-baec-4ac9-ac03-476e7e706e5a
+    source: :Cecilie_of_Mecklenburg-Schwerin
+    target: :Grand_Duchess_Anastasia_Mikhailovna_of_Russia
+  AssignClass (d9e05895-9021-489a-b3d6-d8b2d5de35fd)
+ Call ID: d9e05895-9021-489a-b3d6-d8b2d5de35fd
   Args:
-    relation: :hasFather
-    target: Patrick D'Ignazio
-    source: India Riven Oxenberg's daughter
-  Finish (0d3e8a8d-ac8a-4627-9097-17c01049fdb4)
- Call ID: 0d3e8a8d-ac8a-4627-9097-17c01049fdb4
+    source: :Wilhelm_brother
+    type: :Man
+  AssignClass (6ea215b7-df3e-405b-9c31-db2f9fe394cf)
+ Call ID: 6ea215b7-df3e-405b-9c31-db2f9fe394cf
+  Args:
+    source: :Wilhelm_brother
+    type: :Person
+  AssignClass (9fc786c3-6306-45dd-9512-a2ebfdd3b12a)
+ Call ID: 9fc786c3-6306-45dd-9512-a2ebfdd3b12a
+  Args:
+    source: :Louis_Ferdinand
+    type: :Man
+  AssignClass (47a7f1bd-2425-427c-a538-76cf5c7832cd)
+ Call ID: 47a7f1bd-2425-427c-a538-76cf5c7832cd
+  Args:
+    source: :Louis_Ferdinand
+    type: :Person
+  AssignClass (c3a3fc21-103e-4955-9a47-75045fbaec74)
+ Call ID: c3a3fc21-103e-4955-9a47-75045fbaec74
+  Args:
+    source: :Hubertus
+    type: :Man
+  AssignClass (e926ab37-35b8-421d-badf-e6ef2530eb1a)
+ Call ID: e926ab37-35b8-421d-badf-e6ef2530eb1a
+  Args:
+    source: :Hubertus
+    type: :Person
+  AssignClass (1a63bd56-f8c9-4e67-bbab-1f7bd2d9426e)
+ Call ID: 1a63bd56-f8c9-4e67-bbab-1f7bd2d9426e
+  Args:
+    source: :Frederick_brother
+    type: :Man
+  AssignClass (8670bf46-6141-4faa-825a-37be9eaea94d)
+ Call ID: 8670bf46-6141-4faa-825a-37be9eaea94d
+  Args:
+    source: :Frederick_brother
+    type: :Person
+  AssignClass (548a5f4c-7d72-4e8a-b33b-6af4fc8da820)
+ Call ID: 548a5f4c-7d72-4e8a-b33b-6af4fc8da820
+  Args:
+    source: :Cecilie_sister
+    type: :Woman
+  AssignClass (ece3b719-6955-49a5-9c02-11e638639f36)
+ Call ID: ece3b719-6955-49a5-9c02-11e638639f36
+  Args:
+    source: :Cecilie_sister
+    type: :Person
+  AddTriple (ce445554-3231-4715-96b6-0729543680bc)
+ Call ID: ce445554-3231-4715-96b6-0729543680bc
+  Args:
+    target: :Wilhelm_brother
+    source: :Alexandrine_Irene_of_Prussia
+    relation: :isSiblingOf
+  AddTriple (3b1cd9d5-96e1-48fc-b12d-d6ea55dc1f89)
+ Call ID: 3b1cd9d5-96e1-48fc-b12d-d6ea55dc1f89
+  Args:
+    relation: :isSiblingOf
+    source: :Alexandrine_Irene_of_Prussia
+    target: :Louis_Ferdinand
+  AddTriple (22d035d7-9fe6-4c72-bbc5-c23f6ce2cd90)
+ Call ID: 22d035d7-9fe6-4c72-bbc5-c23f6ce2cd90
+  Args:
+    relation: :isSiblingOf
+    source: :Alexandrine_Irene_of_Prussia
+    target: :Hubertus
+  AddTriple (73b768f3-94a5-42bd-a504-98e57f0c41b0)
+ Call ID: 73b768f3-94a5-42bd-a504-98e57f0c41b0
+  Args:
+    target: :Frederick_brother
+    relation: :isSiblingOf
+    source: :Alexandrine_Irene_of_Prussia
+  AddTriple (47a1e3b9-21e4-475e-9e54-3f29a0a1b69d)
+ Call ID: 47a1e3b9-21e4-475e-9e54-3f29a0a1b69d
+  Args:
+    source: :Alexandrine_Irene_of_Prussia
+    relation: :isSiblingOf
+    target: :Cecilie_sister
+  Finish (64232360-716d-4d4b-8416-37782e299c78)
+ Call ID: 64232360-716d-4d4b-8416-37782e299c78
   Args:

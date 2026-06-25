@@ -7,104 +7,88 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Q131934987 a :Person ;
+    rdfs:label "Q131934987" ;
+    data:wdtLink wdt:Q131934987 ;
+    :hasParent data:Edoardo_Mapelli_Mozzi ;
+    :hasSex data:female .
+
+data:Sienna_Mapelli_Mozzi a :Person ;
+    rdfs:label "Sienna Mapelli Mozzi" ;
+    data:posIndicesFull "4822:4852" ;
+    data:posIndicesPart "4936:4942" ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Eugenie_of_York a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Eugenie of York" ;
-    data:posIndicesFull "648:664" ;
-    data:posIndicesPart "1900:1904",
-        "1995:1999",
-        "2672:2676",
-        "6207:6211",
-        "6270:6277",
-        "6715:6719",
-        "6975:6979",
-        "7220:7224",
-        "7687:7691",
-        "907:914" ;
-    data:wdtLink wdt:Q165709 ;
-    :alsoKnownAs "Eugenie Victoria Helena",
-        "Eugenie Victoria Helena Mountbatten-Windsor",
-        "Her Royal Highness Princess Eugenie of York",
-        "Princess Eugenie",
-        "Princess Eugenie Victoria Helena of York",
-        "Princess Eugenie, Mrs Brooksbank",
-        "Princess Eugenie, Mrs Jack Brooksbank" ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Beatrice_of_York ;
-    :isAuntOf data:Sienna_Mapelli_Mozzi ;
-    :isSiblingOf data:Princess_Beatrice_of_York ;
-    :isSisterOf data:Princess_Beatrice_of_York .
-
-data:Princess_Beatrice_of_York a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Beatrice_of_York a :Person ;
     rdfs:label "Princess Beatrice of York" ;
     data:posIndicesFull "0:17",
         "0:44",
-        "2025:2038",
-        "2977:2994",
-        "4632:4645",
-        "6542:6555",
-        "7582:7599",
-        "7582:7607",
-        "7778:7795",
-        "7778:7822" ;
-    data:posIndicesPart "1011:1019",
-        "1104:1112",
-        "1226:1234",
-        "1334:1342",
+        "1910:1923",
+        "2862:2879",
+        "4517:4530",
+        "6260:6273",
+        "7300:7317",
+        "7300:7325",
+        "7496:7513",
+        "7496:7540" ;
+    data:posIndicesPart "1111:1119",
+        "1219:1227",
         "133:141",
-        "1522:1530",
-        "1592:1600",
-        "1864:1872",
-        "1900:1904",
-        "1995:1999",
-        "2166:2174",
-        "2345:2353",
-        "2535:2543",
-        "2672:2676",
-        "2685:2693",
-        "2832:2840",
+        "1407:1415",
+        "1477:1485",
+        "1749:1757",
+        "1785:1789",
+        "1880:1884",
+        "2051:2059",
+        "2230:2238",
+        "2420:2428",
+        "2557:2561",
+        "2570:2578",
+        "2717:2725",
         "292:300",
-        "3109:3117",
-        "3329:3337",
-        "3422:3430",
-        "3599:3607",
-        "4190:4198",
-        "4229:4237",
+        "2994:3002",
+        "3214:3222",
+        "3307:3315",
+        "3484:3492",
+        "4075:4083",
+        "4114:4122",
+        "4260:4268",
         "429:437",
-        "4375:4383",
-        "4524:4532",
-        "4781:4789",
-        "5182:5190",
-        "5342:5350",
+        "4409:4417",
+        "4666:4674",
+        "5067:5075",
+        "5227:5235",
+        "5416:5424",
         "543:547",
         "549:557",
-        "5531:5539",
-        "5627:5635",
-        "5852:5860",
-        "6049:6057",
-        "6175:6183",
-        "6207:6211",
-        "6506:6514",
-        "6715:6719",
-        "6758:6766",
+        "5512:5520",
+        "5737:5745",
+        "5934:5942",
+        "6060:6068",
+        "6092:6096",
+        "6224:6232",
+        "6433:6437",
+        "6476:6484",
+        "648:656",
+        "6693:6697",
+        "6719:6727",
         "684:692",
-        "6975:6979",
-        "7001:7009",
-        "7220:7224",
-        "7297:7305",
-        "7373:7381",
-        "916:924" ;
+        "6938:6942",
+        "7015:7023",
+        "7091:7099",
+        "801:809",
+        "896:904",
+        "989:997" ;
     data:wdtLink wdt:Q165657 ;
     :alsoKnownAs "Bea York",
         "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York",
@@ -118,81 +102,32 @@ data:Princess_Beatrice_of_York a :Ancestor,
         "Princess Beatrice, Mrs Mapelli Mozzi",
         "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi",
         "Princess Beatrice, Mrs. Mapelli Mozzi" ;
-    :hasChild data:Sienna_Mapelli_Mozzi ;
-    :hasDaughter data:Sienna_Mapelli_Mozzi ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Eugenie_of_York ;
-    :isMotherOf data:Sienna_Mapelli_Mozzi ;
-    :isParentOf data:Sienna_Mapelli_Mozzi ;
-    :isSiblingOf data:Princess_Eugenie_of_York ;
-    :isSisterOf data:Princess_Eugenie_of_York .
+    :hasSex data:female .
 
-data:Q131934987 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Q131934987" ;
-    data:wdtLink wdt:Q131934987 ;
-    :hasFather data:Edoardo_Mapelli_Mozzi ;
-    :hasParent data:Edoardo_Mapelli_Mozzi ;
-    :hasSex data:female ;
-    :hasSister data:Sienna_Mapelli_Mozzi ;
-    :isChildOf data:Edoardo_Mapelli_Mozzi ;
-    :isDaughterOf data:Edoardo_Mapelli_Mozzi ;
-    :isSiblingOf data:Sienna_Mapelli_Mozzi ;
-    :isSisterOf data:Sienna_Mapelli_Mozzi .
+data:male a :Male .
 
-data:Edoardo_Mapelli_Mozzi a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Edoardo_Mapelli_Mozzi a :Person ;
     rdfs:label "Edoardo Mapelli Mozzi" ;
     data:posIndicesFull "23:44",
         "309:330",
-        "3732:3753",
-        "7801:7822" ;
-    data:posIndicesPart "3776:3783",
-        "3784:3789",
-        "3896:3903",
-        "3904:3909",
-        "4067:4074",
-        "4101:4108",
-        "4109:4114",
-        "4242:4249",
-        "4250:4255",
-        "4392:4399",
-        "4400:4405" ;
+        "3617:3638",
+        "7519:7540" ;
+    data:posIndicesPart "3661:3668",
+        "3669:3674",
+        "3781:3788",
+        "3789:3794",
+        "3952:3959",
+        "3986:3993",
+        "3994:3999",
+        "4127:4134",
+        "4135:4140",
+        "4277:4284",
+        "4285:4290" ;
     data:wdtLink wdt:Q68688016 ;
     :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi",
         "Count Edoardo Mapelli Mozzi",
         "Edoardo Alessandro Mapelli Mozzi" ;
-    :hasChild data:Q131934987,
-        data:Sienna_Mapelli_Mozzi ;
-    :hasDaughter data:Q131934987,
-        data:Sienna_Mapelli_Mozzi ;
-    :hasSex data:male ;
-    :isFatherOf data:Q131934987,
-        data:Sienna_Mapelli_Mozzi ;
-    :isParentOf data:Q131934987,
-        data:Sienna_Mapelli_Mozzi .
+    :hasSex data:male .
 
-data:Sienna_Mapelli_Mozzi a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sienna Mapelli Mozzi" ;
-    data:posIndicesFull "4937:4967" ;
-    data:posIndicesPart "5051:5057" ;
-    data:wdtLink wdt:Q108703114 ;
-    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
-    :hasFather data:Edoardo_Mapelli_Mozzi ;
-    :hasMother data:Princess_Beatrice_of_York ;
-    :hasParent data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York ;
-    :hasSex data:female ;
-    :hasSister data:Q131934987 ;
-    :isChildOf data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York ;
-    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York ;
-    :isSiblingOf data:Q131934987 ;
-    :isSisterOf data:Q131934987 .
+data:female a :Female .
 

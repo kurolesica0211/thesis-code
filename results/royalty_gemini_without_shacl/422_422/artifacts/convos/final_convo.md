@@ -69,32 +69,55 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Antonia of Prussia, Duchess of Wellington (Antonia Elizabeth Brigid Louise Mansfeld; born 28 April 1955) is a British aristocrat and philanthropist.
-Through her marriage, she is also the Princess of Waterloo, Duchess of Victoria, and Duchess of Ciudad Rodrigo.
-Early life and education
-
-Princess Antonia Elizabeth Brigid Louise Mansfeld of Prussia was born in London on 28 April 1955, the daughter of Prince Frederick of Prussia and his wife, Lady Brigid Guinness.
-On her father's side, she is a great-granddaughter of the German Emperor Wilhelm II, and granddaughter of Rupert Guinness, 2nd Earl of Iveagh on her mother's side.
-Career
-
-In 2007, she was appointed as the President of The Guinness Partnership, an affordable housing charitable society in the United Kingdom, and was appointed an Officer of the Order of the British Empire in the 2008 Birthday Honours for services to social housing.
-In 2008 Antonia was appointed as a fellow of Eton College, serving as a member of the college's governing body.
-Personal life
-
-On 3 February 1977, she married Charles Wellesley, Marquess of Douro at St Paul's Church, Knightsbridge in London.
-Notable guests at the wedding included Queen Elizabeth The Queen Mother, the Prince of Wales, Princess Margaret, and the Duke and Duchess of Kent.
-She is godmother to Lady Gabriella Kingston, daughter of Prince & Princess Michael of Kent.
-When her husband succeeded his father as the 9th Duke of Wellington, she became the Princess of Waterloo in Belgium and the Netherlands, the Duchess of Victoria in Portugal, the Duchess of Wellington in the United Kingdom, and the Duchess of Ciudad Rodrigo in Spain.
-They have five children, including Lady Mary Wellesley and Lady Charlotte Wellesley.
+Prince Nikolai Kirillovich Romanov   Princess Yekaterina Fyodorovna
 
 
-References
+Prince Karl Emich of Leiningen (German: Karl Emich Nikolaus Friedrich Hermann Prinz zu Leiningen; Russian: Карл Эмих Николаус Фридрих Герман цу Лейнинген; born 12 June 1952), also known by his Orthodox Russian name Nikolai Kirillovich Romanov (Николай Кириллович Романов), and recognized with the regnal name Emperor Nicholas III by Monarchist Party supporters of the Imperial Throne, is the eldest son of Emich, 7th Prince of Leiningen, and Duchess Eilika of the Grand Duchy of Oldenburg, and is an elder brother of Andreas, 8th Prince of Leiningen.
+He is a claimant to the defunct throne of the Russian Empire, held until 1917 by the Imperial House of Romanov, as a grandson of Grand Duchess Maria Kirillovna (1907–1951), eldest child of Grand Duke Kirill Vladimirovich, who claimed the Russian crown from exile in 1924.
+He is a great-great-great-grandson of Emperor Alexander II of Russia and grandnephew of Grand Duke Vladimir Kirillovich of Russia.
+In 2013, the Monarchist Party of Russia declared him the primary heir to the Russian throne upon his conversion from Lutheranism to Eastern Orthodox Christianity, and in 2014 announced the formation of the Imperial Throne, wherein Karl Emich had agreed to assume imperial dignity as Emperor Nicholas III.
+As such, however, he came into competition with the widely recognized pretender to the throne, Grand Duchess Maria Vladimirovna of Russia, who is recognized by the Patriarch of Moscow.
+He also claimed the headship of the House of Leiningen in the past.
+Marriages and children
+
+He married Princess Margarita of Hohenlohe-Öhringen on 8 June 1984.
+He had one daughter by this marriage, Princess Cécilia Marie Stephanie Margarita of Leiningen (born 10 June 1988).
+Princess Margarita died in 1989 in a car accident.
+On 24 May 1991, Prince Karl Emich married morganatically Gabriele Renate Thyssen.
+After an inheritance dispute, he desisted claim to the family's legacy in favour of his younger brother Andreas, 8th Prince of Leiningen.
+The couple had one daughter, Princess Theresa Anna Elisabeth of Leiningen (born 16 April 1992)
+In 1998, Karl Emich and Gabriele were divorced and she became the second wife of the Aga Khan IV.
+On 12 April 2010, they had a son, Prince Emich Albrecht Karl of Leiningen.
+Because his marriage to Countess Isabelle would not have been deemed equal according to the Pauline Laws, their son, Prince Emich, though considered a dynast of the House of Leiningen, cannot inherit his claim to the headship of the House of Romanov, which shall pass to his brother, Prince Andreas (b. 1955 ), and the latter's descendants born of equal marriages upon the death of Karl Emich, and on the condition that they should convert to Orthodoxy.
+Lawsuit
+
+
+In 2000, Karl Emich began the final round of a lawsuit to inherit £100 million worth of castles, property, and a Mediterranean island that had been denied him by his family because he chose to marry Gabriele Renate Thyssen.
+Karl Emich was disinherited shortly after his 1991 wedding, as his mother, father, and brother Andreas withheld approval, contending that the bride did not meet the mediatized family's traditional standard for aristocratic lineage.
+The marriage was therefore deemed to constitute a violation of an 1897 Leiningen family edict requiring that dynastically valid marriages be authorised by the head of the Leiningen family (or by successful appeal to a panel of mediatized nobles), such permission historically being granted for brides descended from royalty or the titled nobility.
+Karl remarked about the whole affair, 
+
+"From the very beginning of our marriage I was turned into an enemy.
+Karl Emich maintained that the stress this feud put upon his marriage is the reason why Thyssen left him, converted to Islam, and eloped with Aga Khan IV.
+Claim to the Russian throne
+
+Karl Emich and his supporters argue that the marriage of Maria Vladimirovna's parents was in contravention of the Pauline Laws.
+They maintain that the House of Bagration-Mukhrani did not possess sovereign status and was not recognized as equal by Nicholas II for the purpose of dynastic marriages at the time of the union of Princess Tatiana Constantinovna of Russia and Prince Constantine Bagration-Mukhransky in 1911, thirty seven years prior to that of Princess Leonida and Grand Duke Vladimir Kirillovich.
+Therefore, as the next of kin to Vladimir (in the exclusion of his daughter), the Russian Monarchist Party recognises Karl Emich as the heir to the Russian throne, since he and his wife converted on 1 June 2013, from Lutheranism to Eastern Orthodox Christianity, enabling his accession.
+He outlined that Karl Emich, upon adhering to the Orthodox denomination, obtained a right to take this see according to pre-Revolution Fundamental Laws of the Russian Empire.
+Bakov proposed that the Prince accept the throne, thereby forming a new independent state and incorporate it into Bakov's promotional projects such as the Monarchist Party's Imperial Throne micronation and several others.
+In April 2014 Bakov and Karl Emich appeared in a newspaper textual and photo report declaring that the Prince accepted the proposals as well as the title of "Emperor Nicholas III" (as successor to Nicholas II).
+In the report Bakov emphasized that Karl Emich has long been an entrepreneur but henceforth he would refrain from all non-royalist related public activities.
+He also announced that Russian President Vladimir Putin declined to grant such a plot in Yekaterinburg (Bakov's residence and site of the 1918 Romanov assassination) in response to Karl Emich's request, transmitted to Putin by Bakov, a former MP.
+In June 2021 Karl Emich, or Nikolai Kirillovich (Nicholas III) gave his first-ever interview in Russian language where he clarified his civil and political attitude and told some details about history of his family.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +133,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +150,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,122 +458,122 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (93b10916-3470-4a57-bb83-02cf6b8abf6a)
- Call ID: 93b10916-3470-4a57-bb83-02cf6b8abf6a
-  Args:
-    type: :Person
-    source: Antonia_of_Prussia
-  AssignClass (4de13324-3e87-4cad-bcf3-d6d5bf5e6d70)
- Call ID: 4de13324-3e87-4cad-bcf3-d6d5bf5e6d70
-  Args:
-    type: :Woman
-    source: Antonia_of_Prussia
-  AddLiteral (bde87143-373c-4114-b995-e05eafc752e5)
- Call ID: bde87143-373c-4114-b995-e05eafc752e5
-  Args:
-    literal_value: 1955
-    relation: :hasBirthYear
-    source: Antonia_of_Prussia
-    literal_type: xsd:integer
-  AssignClass (ce433ccd-4f6b-4f67-9734-55d326457c35)
- Call ID: ce433ccd-4f6b-4f67-9734-55d326457c35
-  Args:
-    type: :Person
-    source: Prince_Frederick_of_Prussia
-  AssignClass (d45b4b69-fd73-4b1e-9c1b-4285779cf661)
- Call ID: d45b4b69-fd73-4b1e-9c1b-4285779cf661
+  AssignClass (e423f51a-4277-4a5b-9538-10bcc897ed4c)
+ Call ID: e423f51a-4277-4a5b-9538-10bcc897ed4c
   Args:
     type: :Man
-    source: Prince_Frederick_of_Prussia
-  AssignClass (01eeda49-7d6d-4c08-9a6d-654a58320d46)
- Call ID: 01eeda49-7d6d-4c08-9a6d-654a58320d46
+    source: Karl_Emich_of_Leiningen
+  AssignClass (3fbaa7ce-9888-49aa-bd52-6707f8b818bc)
+ Call ID: 3fbaa7ce-9888-49aa-bd52-6707f8b818bc
   Args:
-    type: :Person
-    source: Lady_Brigid_Guinness
-  AssignClass (6b1f3536-1825-4a77-98f3-d9277a9b0b12)
- Call ID: 6b1f3536-1825-4a77-98f3-d9277a9b0b12
+    source: Emich_7th_Prince_of_Leiningen
+    type: :Man
+  AssignClass (567554e9-ffd7-47c0-8b19-821b9bf71c18)
+ Call ID: 567554e9-ffd7-47c0-8b19-821b9bf71c18
   Args:
     type: :Woman
-    source: Lady_Brigid_Guinness
-  AddTriple (509b9b16-2ec2-4f9b-a73e-0667f1b96ab3)
- Call ID: 509b9b16-2ec2-4f9b-a73e-0667f1b96ab3
+    source: Duchess_Eilika_of_Oldenburg
+  AssignClass (12394644-18b3-48f3-88c3-74cbeb8b75d9)
+ Call ID: 12394644-18b3-48f3-88c3-74cbeb8b75d9
   Args:
-    target: Prince_Frederick_of_Prussia
-    source: Antonia_of_Prussia
+    type: :Man
+    source: Andreas_8th_Prince_of_Leiningen
+  AssignClass (0ef1ecc1-f02c-408d-bd37-9065605fcd92)
+ Call ID: 0ef1ecc1-f02c-408d-bd37-9065605fcd92
+  Args:
+    source: Princess_Margarita_of_Hohenlohe-Oehringen
+    type: :Woman
+  AssignClass (89006928-3609-4ab8-a0b1-2d884d4c67e4)
+ Call ID: 89006928-3609-4ab8-a0b1-2d884d4c67e4
+  Args:
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+    type: :Woman
+  AssignClass (498b44c8-85b1-4775-9841-e7b534e77182)
+ Call ID: 498b44c8-85b1-4775-9841-e7b534e77182
+  Args:
+    source: Gabriele_Renate_Thyssen
+    type: :Woman
+  AssignClass (8fc1ff6b-f9f1-488e-b474-5aac1a69689e)
+ Call ID: 8fc1ff6b-f9f1-488e-b474-5aac1a69689e
+  Args:
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    type: :Woman
+  AssignClass (b0cf2262-02aa-429b-a8f8-e667622bd2ef)
+ Call ID: b0cf2262-02aa-429b-a8f8-e667622bd2ef
+  Args:
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
+    type: :Man
+  AddTriple (17f4668e-52fa-4d05-a05c-d5313b28af22)
+ Call ID: 17f4668e-52fa-4d05-a05c-d5313b28af22
+  Args:
     relation: :hasFather
-  AddTriple (08805453-503d-4152-b622-418b10f33cec)
- Call ID: 08805453-503d-4152-b622-418b10f33cec
+    source: Karl_Emich_of_Leiningen
+    target: Emich_7th_Prince_of_Leiningen
+  AddTriple (ee7e5172-add0-4e13-b38d-b873dac87ba9)
+ Call ID: ee7e5172-add0-4e13-b38d-b873dac87ba9
   Args:
-    target: Lady_Brigid_Guinness
+    target: Duchess_Eilika_of_Oldenburg
     relation: :hasMother
-    source: Antonia_of_Prussia
-  AssignClass (fdc41112-970c-4815-be09-c253e37345ca)
- Call ID: fdc41112-970c-4815-be09-c253e37345ca
+    source: Karl_Emich_of_Leiningen
+  AddTriple (8c11d0d7-7d38-48ec-86cf-9131174403a4)
+ Call ID: 8c11d0d7-7d38-48ec-86cf-9131174403a4
   Args:
-    type: :Person
-    source: Charles_Wellesley
-  AssignClass (f106822c-772d-4293-906e-f5dda39554b9)
- Call ID: f106822c-772d-4293-906e-f5dda39554b9
+    source: Karl_Emich_of_Leiningen
+    relation: :isBrotherOf
+    target: Andreas_8th_Prince_of_Leiningen
+  AddLiteral (54a8915b-79f7-4d9b-9926-ff917fcfd748)
+ Call ID: 54a8915b-79f7-4d9b-9926-ff917fcfd748
   Args:
-    type: :Man
-    source: Charles_Wellesley
-  AddLiteral (cdd1af43-9310-4464-acb2-c1a38dc6577f)
- Call ID: cdd1af43-9310-4464-acb2-c1a38dc6577f
-  Args:
-    relation: :hasMarriageYear
-    source: Antonia_of_Prussia
+    relation: :hasBirthYear
+    literal_value: 1952
     literal_type: xsd:integer
-    literal_value: 1977
-  AddTriple (ec0a9c32-f8d0-472c-bc17-eadccfc27ef5)
- Call ID: ec0a9c32-f8d0-472c-bc17-eadccfc27ef5
+    source: Karl_Emich_of_Leiningen
+  AddLiteral (9274b0e3-a800-4e79-aa3b-541b003d39ed)
+ Call ID: 9274b0e3-a800-4e79-aa3b-541b003d39ed
   Args:
-    target: Charles_Wellesley
-    relation: :hasRelation
-    source: Antonia_of_Prussia
-  AssignClass (98292817-02ef-4c8e-a586-cbd75c8880e1)
- Call ID: 98292817-02ef-4c8e-a586-cbd75c8880e1
+    literal_value: Nikolai Kirillovich Romanov
+    literal_type: xsd:string
+    source: Karl_Emich_of_Leiningen
+    relation: :alsoKnownAs
+  AddTriple (b48bbd4a-4b1f-497c-9988-be9f9b412a34)
+ Call ID: b48bbd4a-4b1f-497c-9988-be9f9b412a34
   Args:
-    type: :Person
-    source: Lady_Mary_Wellesley
-  AssignClass (6ea417a3-ffc5-4dad-9b4b-d5e6373a0e61)
- Call ID: 6ea417a3-ffc5-4dad-9b4b-d5e6373a0e61
-  Args:
-    type: :Woman
-    source: Lady_Mary_Wellesley
-  AssignClass (b8dc0536-9faa-4d2a-8b72-467720c00391)
- Call ID: b8dc0536-9faa-4d2a-8b72-467720c00391
-  Args:
-    type: :Person
-    source: Lady_Charlotte_Wellesley
-  AssignClass (95fcd611-49ea-428d-b502-4fd01a65b614)
- Call ID: 95fcd611-49ea-428d-b502-4fd01a65b614
-  Args:
-    type: :Woman
-    source: Lady_Charlotte_Wellesley
-  AddTriple (48b4d138-0a00-4c08-bac6-2ba527ab76a7)
- Call ID: 48b4d138-0a00-4c08-bac6-2ba527ab76a7
-  Args:
-    target: Lady_Mary_Wellesley
-    source: Antonia_of_Prussia
+    source: Karl_Emich_of_Leiningen
     relation: :hasChild
-  AddTriple (ab172dda-d1ff-4deb-8f98-8a5ec8fe6d89)
- Call ID: ab172dda-d1ff-4deb-8f98-8a5ec8fe6d89
+    target: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+  AddTriple (397700a2-dcb3-4b72-87bd-7fb94aad4c92)
+ Call ID: 397700a2-dcb3-4b72-87bd-7fb94aad4c92
   Args:
-    target: Lady_Charlotte_Wellesley
-    source: Antonia_of_Prussia
+    source: Karl_Emich_of_Leiningen
     relation: :hasChild
-  AddTriple (e8390c78-99c1-4666-91b8-7574fe0f1577)
- Call ID: e8390c78-99c1-4666-91b8-7574fe0f1577
+    target: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+  AddTriple (c20feb85-0d10-4ff7-89ee-9689144f5c7d)
+ Call ID: c20feb85-0d10-4ff7-89ee-9689144f5c7d
   Args:
-    target: Lady_Mary_Wellesley
+    source: Karl_Emich_of_Leiningen
     relation: :hasChild
-    source: Charles_Wellesley
-  AddTriple (478f94e6-faf5-4a8c-8cb3-47afbfacf439)
- Call ID: 478f94e6-faf5-4a8c-8cb3-47afbfacf439
+    target: Prince_Emich_Albrecht_Karl_of_Leiningen
+  AddLiteral (dd35e2db-8faa-4375-920e-4df3e7c6b0bf)
+ Call ID: dd35e2db-8faa-4375-920e-4df3e7c6b0bf
   Args:
-    source: Charles_Wellesley
-    relation: :hasChild
-    target: Lady_Charlotte_Wellesley
-  Finish (cbc8aefc-d1ac-4f5d-83ed-ca6bf5c3f07c)
- Call ID: cbc8aefc-d1ac-4f5d-83ed-ca6bf5c3f07c
+    relation: :hasBirthYear
+    literal_value: 1988
+    literal_type: xsd:integer
+    source: Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen
+  AddLiteral (b528e7f9-5baf-48e6-8396-64bd380582e8)
+ Call ID: b528e7f9-5baf-48e6-8396-64bd380582e8
+  Args:
+    relation: :hasBirthYear
+    source: Princess_Theresa_Anna_Elisabeth_of_Leiningen
+    literal_type: xsd:integer
+    literal_value: 1992
+  AddLiteral (da1feb99-061a-4bdd-8117-5b38b7ae1449)
+ Call ID: da1feb99-061a-4bdd-8117-5b38b7ae1449
+  Args:
+    relation: :hasBirthYear
+    source: Prince_Emich_Albrecht_Karl_of_Leiningen
+    literal_type: xsd:integer
+    literal_value: 2010
+  Finish (52664bd5-ea89-4490-ad20-f58bd9b7b0e4)
+ Call ID: 52664bd5-ea89-4490-ad20-f58bd9b7b0e4
   Args:

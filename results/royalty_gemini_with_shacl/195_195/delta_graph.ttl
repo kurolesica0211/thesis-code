@@ -2,47 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_di_Grazia a :Woman ;
-    :hasBirthYear 1878 ;
-    :hasDeathYear 1973 ;
-    :hasFather data:Alfonso_Count_of_Caserta ;
-    :hasMarriageYear 1908 ;
-    :hasMother data:Antonietta_of_Bourbon_Two_Sicilies ;
-    :hasRelation data:Luiz_of_Orleans_Braganza ;
-    :hasSex data:Female ;
-    :knownAs "Maria Pia"^^xsd:string .
+data:Alexander_Elphinstone a :Man,
+        :Person ;
+    :hasFather data:James_Alexander_Elphinstone ;
+    :hasMother data:Willa_Mary_Gabrielle_Chetwode .
 
-data:Alfonso_Count_of_Caserta a :Ancestor,
-        :Man ;
-    :hasBrother data:Francis_II_of_the_Two_Sicilies ;
-    :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
-    :hasSex data:Male .
+data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
+    :hasMother data:Mary_Bowes-Lyon .
 
-data:Antonietta_of_Bourbon_Two_Sicilies a :Ancestor,
+data:Elizabeth_The_Queen_Mother a :Person,
+        :Woman .
+
+data:George_David_Chetwode a :Ancestor,
+        :Man,
+        :Person .
+
+data:James_Alexander_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1953 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Jean_Frances_Hambro ;
+    :hasRelation data:Willa_Mary_Gabrielle_Chetwode .
+
+data:Jean_Frances_Hambro a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marion_Cook a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Mary_Bowes-Lyon a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isSisterOf data:Elizabeth_The_Queen_Mother .
 
-data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Sidney_Buller-Fullerton-Elphinstone a :Ancestor,
+        :Man,
+        :Person .
 
-data:Francis_II_of_the_Two_Sicilies a :Man ;
-    :hasSex data:Male .
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man,
+        :Person .
 
-data:Gaston_of_Orleans_Count_of_Eu a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+    :hasMother data:Marion_Cook .
 
-data:Luiz_of_Orleans_Braganza a :Man ;
-    :hasFather data:Gaston_of_Orleans_Count_of_Eu ;
-    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:George_David_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound .
 

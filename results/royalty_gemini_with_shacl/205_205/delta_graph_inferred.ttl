@@ -1,0 +1,95 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:JuanCarlosI a :Man,
+        :Person ;
+    :hasBrother data:JuanCarlosI ;
+    :hasRelation data:JuanCarlosI ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isSiblingOf data:JuanCarlosI .
+
+data:AlessandroTorlonia a :Man,
+        :Person ;
+    :hasBrother data:AlessandroTorlonia ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:VictoriaEugenie ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:AlessandroTorlonia ;
+    :isBrotherOf data:AlessandroTorlonia ;
+    :isSiblingOf data:AlessandroTorlonia .
+
+data:AlfonsoXIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasChild data:InfantaBeatriz ;
+    :hasDaughter data:InfantaBeatriz ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:VictoriaEugenie ;
+    :hasSex data:Male ;
+    :isAncestorOf data:InfantaBeatriz ;
+    :isBloodrelationOf data:AlfonsoXIII ;
+    :isBrotherOf data:AlfonsoXIII ;
+    :isFatherOf data:InfantaBeatriz ;
+    :isParentOf data:InfantaBeatriz ;
+    :isSiblingOf data:AlfonsoXIII ;
+    :isUncleOf data:InfantaBeatriz .
+
+data:VictoriaEugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:InfantaBeatriz ;
+    :hasDaughter data:InfantaBeatriz ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:VictoriaEugenie ;
+    :hasSex data:Female ;
+    :hasSister data:VictoriaEugenie ;
+    :isAncestorOf data:InfantaBeatriz ;
+    :isAuntOf data:InfantaBeatriz ;
+    :isBloodrelationOf data:VictoriaEugenie ;
+    :isMotherOf data:InfantaBeatriz ;
+    :isParentOf data:InfantaBeatriz ;
+    :isSiblingOf data:VictoriaEugenie ;
+    :isSisterOf data:VictoriaEugenie .
+
+data:InfantaBeatriz a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:AlfonsoXIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:VictoriaEugenie ;
+    :hasParent data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :hasRelation data:AlessandroTorlonia,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:VictoriaEugenie ;
+    :hasSex data:Female ;
+    :hasSister data:InfantaBeatriz ;
+    :isAuntOf data:JuanCarlosI ;
+    :isBloodrelationOf data:InfantaBeatriz ;
+    :isChildOf data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :isDaughterOf data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :isSiblingOf data:InfantaBeatriz ;
+    :isSisterOf data:InfantaBeatriz .
+

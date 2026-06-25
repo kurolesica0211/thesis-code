@@ -1,0 +1,450 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person,
+        :Woman ;
+    rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "122:149"^^xsd:string,
+        "1860:1887"^^xsd:string,
+        "1919:1956"^^xsd:string ;
+    data:posIndicesPart "1298:1309"^^xsd:string,
+        "1352:1359"^^xsd:string,
+        "1360:1365"^^xsd:string,
+        "1509:1516"^^xsd:string,
+        "1517:1522"^^xsd:string,
+        "2230:2237"^^xsd:string,
+        "2238:2243"^^xsd:string,
+        "2449:2456"^^xsd:string,
+        "2457:2462"^^xsd:string,
+        "790:801"^^xsd:string ;
+    data:wdtLink wdt:Q259488 ;
+    :alsoKnownAs "Countess Nada de Torby"^^xsd:string,
+        "Countess Nadejda Mikhailovna de Torby"^^xsd:string,
+        "Countess Nadejda de Torby"^^xsd:string,
+        "Nada Mountbatten"^^xsd:string,
+        "Nada de Torby"^^xsd:string,
+        "Nadejda Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Nadejda Milford Haven"^^xsd:string,
+        "Nadejda Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda de Torby"^^xsd:string,
+        "Princess George of Battenberg"^^xsd:string ;
+    :hasRelation data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:female ;
+    :hasSister data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isBloodrelationOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isSiblingOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isSisterOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "651:664"^^xsd:string,
+        "651:683"^^xsd:string ;
+    data:posIndicesPart "1212:1218"^^xsd:string,
+        "1984:1988"^^xsd:string,
+        "836:842"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSonOf data:Princess_Alice_of_Battenberg .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Louis of Battenberg"^^xsd:string ;
+    data:posIndicesFull "242:290"^^xsd:string,
+        "292:318"^^xsd:string,
+        "299:318"^^xsd:string ;
+    data:posIndicesPart "1212:1218"^^xsd:string,
+        "491:496"^^xsd:string,
+        "540:546"^^xsd:string ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg"^^xsd:string,
+        "Count Louis of Battenberg"^^xsd:string,
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis Alexander of Battenberg"^^xsd:string,
+        "Louis Milford Haven"^^xsd:string,
+        "Louis Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis of Battenberg"^^xsd:string,
+        "Prince Louis Alexander of Battenberg"^^xsd:string,
+        "Sir Louis Alexander Mountbatten"^^xsd:string,
+        "Sir Louis Mountbatten"^^xsd:string ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria of Hesse and by Rhine"^^xsd:string ;
+    data:posIndicesFull "325:364"^^xsd:string,
+        "334:364"^^xsd:string ;
+    data:posIndicesPart "444:449"^^xsd:string,
+        "512:517"^^xsd:string,
+        "625:633"^^xsd:string ;
+    data:wdtLink wdt:Q57658 ;
+    :alsoKnownAs "Princess Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine"^^xsd:string,
+        "Princess Victoria, Marchioness of Milford Have"^^xsd:string,
+        "Victoria Alberta Elizabeth Mathilde Marie Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine"^^xsd:string,
+        "Victoria Milford Haven"^^xsd:string,
+        "Victoria of Hesse and by Rhine"^^xsd:string,
+        "Victoria, Marchioness of Milford Haven"^^xsd:string ;
+    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "122:149"^^xsd:string,
+        "1860:1887"^^xsd:string,
+        "34:82"^^xsd:string,
+        "8:82"^^xsd:string ;
+    data:posIndicesPart "1189:1195"^^xsd:string,
+        "1219:1225"^^xsd:string,
+        "1298:1309"^^xsd:string,
+        "1340:1348"^^xsd:string,
+        "1352:1359"^^xsd:string,
+        "1360:1365"^^xsd:string,
+        "1380:1386"^^xsd:string,
+        "1509:1516"^^xsd:string,
+        "1517:1522"^^xsd:string,
+        "1527:1533"^^xsd:string,
+        "1724:1732"^^xsd:string,
+        "2230:2237"^^xsd:string,
+        "2238:2243"^^xsd:string,
+        "2449:2456"^^xsd:string,
+        "2457:2462"^^xsd:string,
+        "377:383"^^xsd:string,
+        "790:801"^^xsd:string,
+        "858:864"^^xsd:string,
+        "875:881"^^xsd:string ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string,
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina"^^xsd:string,
+        "George Medina"^^xsd:string,
+        "George Milford Haven"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string,
+        "Prince George Louis Victor Henry Serge of Battenberg"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "242:259"^^xsd:string,
+        "292:318"^^xsd:string,
+        "762:779"^^xsd:string ;
+    data:posIndicesPart "1298:1309"^^xsd:string,
+        "1418:1422"^^xsd:string,
+        "491:496"^^xsd:string,
+        "785:789"^^xsd:string,
+        "790:801"^^xsd:string,
+        "805:810"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Louise Mountbatten"^^xsd:string ;
+    data:posIndicesFull "242:259"^^xsd:string,
+        "292:318"^^xsd:string,
+        "299:318"^^xsd:string,
+        "735:757"^^xsd:string,
+        "741:757"^^xsd:string,
+        "762:779"^^xsd:string ;
+    data:posIndicesPart "1298:1309"^^xsd:string,
+        "790:801"^^xsd:string ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm"^^xsd:string,
+        "Lady Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Lady Louise Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Louise of Battenberg"^^xsd:string,
+        "Louise of Sweden"^^xsd:string,
+        "Mrs Olsson"^^xsd:string,
+        "Princess Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Princess Louise of Battenberg"^^xsd:string,
+        "Queen Louise of Sweden"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "2324:2329"^^xsd:string,
+        "634:639"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+

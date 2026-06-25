@@ -2,31 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfred_of_Prussia a :Man,
+data:Franz_Wilhelm_Prince_of_Prussia a :Man,
         :Person ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2013 ;
-    :isSonOf data:Sigismund_of_Prussia .
+    :hasAncestor data:Joachim_of_Prussia ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Friedrich_Christian_of_Prussia ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMarriageYear 1976,
+        2019 ;
+    :hasMother data:Henriette_von_Sch%C3%B6naich-Carolath ;
+    :hasRelation data:Maria_Vladimirovna_of_Russia,
+        data:Nadia_Nour_El_Etreby .
 
-data:Charlotte_of_Saxe-Altenburg a :Person,
-        :Woman ;
-    :hasFather data:Ernst_II_of_Saxe-Altenburg .
-
-data:Ernst_II_of_Saxe-Altenburg a :Man,
+data:Vladimir_of_Russia a :Man,
         :Person .
 
-data:Henry_of_Prussia a :Man,
+data:Friedrich_Christian_of_Prussia a :Man,
         :Person .
 
-data:Irene_of_Hesse a :Person,
+data:Henriette_von_Sch%C3%B6naich-Carolath a :Person,
         :Woman .
 
-data:Sigismund_of_Prussia a :Man,
+data:Joachim_of_Prussia a :Man,
         :Person ;
-    :hasBirthYear 1896 ;
-    :hasDeathYear 1978 ;
-    :hasFather data:Henry_of_Prussia ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Irene_of_Hesse ;
-    :hasRelation data:Charlotte_of_Saxe-Altenburg .
+    :hasFather data:Wilhelm_II_German_Emperor .
+
+data:Karl_Franz_of_Prussia a :Man,
+        :Person .
+
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman .
+
+data:Nadia_Nour_El_Etreby a :Person,
+        :Woman ;
+    :hasBirthYear 1949 .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
 

@@ -85,36 +85,15 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nathalie of Sayn-Wittgenstein-Berleburg (Nathalie Xenia Margrethe Benedikte; born 2 May 1975) is a Danish equestrian, an Olympian, and the daughter of Princess Benedikte of Denmark and Prince Richard of Sayn-Wittgenstein-Berleburg.
-She is the niece of Queen Margrethe II of Denmark and King Constantine II of Greece.
-Her first cousin is King Frederik X of Denmark.
-Early life
-
-Princess Nathalie was born on 2 May 1975 in Copenhagen, Denmark, the youngest of three children of Princess Benedikte of Denmark and Prince Richard of Sayn-Wittgenstein-Berleburg.
-She grew up at Schloss Berleburg in Bad Berleburg, Germany.
-Nathalie and her sister Alexandra became Danish citizens on 19 May 1998.
-Neither she nor her siblings are in line of succession to the Danish throne, as that would have required taking up permanent residence in Denmark when reaching the age of mandatory education.
-Equestrian career
-
-In 1994, Princess Nathalie began training at the Swedish stud Flyinge with Kyra Kyrklund, a former world champion in dressage.
-Nathalie was selected as a reserve rider for the 2000 Olympic team.
-She finished 12th in the individual event and helped Denmark to a 4th-place team finish.
-In January 2017, Nathalie was named head coach of the Danish national dressage team.
-In autumn 2005, she opened her own stud farm, which is based in Bad Berleburg.
-Marriage and children
-
-On 4 January 2010, Princess Nathalie's engagement to German horse breeder Alexander Johannsmann (born 6 December 1977), son of showjumper Heinrich-Wilhelm Johannsmann, was announced.
-The couple married civilly 27 May 2010 and religiously the following year, on 18 June 2011 at the Protestant Stadtkirche in Berleburg, Germany.
-Princess Nathalie gave birth to a son, Konstantin Gustav Heinrich Richard, on 24 July 2010.
-Konstantin's godparents were Crown Princess Mary of Denmark, his aunt Ann-Kathrin Johannsmann, and his uncle Prince Gustav.
-On 28 January 2015, she gave birth to her second child, a daughter named Louisa Margareta Benedikte Hanna, in Bad Berleburg, Germany.
-On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had divorced.
+Fernando "Fernand" Sanz y Martínez de Arizala (28 February 1881 – 8 January 1925) was a Spanish-born naturalized French racing cyclist, younger of two illegitimate sons of King Alfonso XII of Spain and his mistress, Elena Sanz.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +109,9 @@ On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +126,23 @@ On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,213 +434,56 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a27598a6-f750-4fa7-a2f0-ce6cc867f246)
- Call ID: a27598a6-f750-4fa7-a2f0-ce6cc867f246
+  AssignClass (1f8b70ce-ac5f-4709-a502-dcc974de93e8)
+ Call ID: 1f8b70ce-ac5f-4709-a502-dcc974de93e8
+  Args:
+    source: Fernando_Sanz_y_Martinez_de_Arizala
+    type: :Man
+  AssignClass (8dc95aed-d341-412b-a933-cbdcedc82552)
+ Call ID: 8dc95aed-d341-412b-a933-cbdcedc82552
+  Args:
+    source: Alfonso_XII_of_Spain
+    type: :Man
+  AssignClass (4e7eaece-fa0f-4fd3-a374-c1a3029ec321)
+ Call ID: 4e7eaece-fa0f-4fd3-a374-c1a3029ec321
   Args:
     type: :Woman
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (733a93e0-eef8-4b01-8478-ad9ab170051b)
- Call ID: 733a93e0-eef8-4b01-8478-ad9ab170051b
+    source: Elena_Sanz
+  AddLiteral (0909f545-524d-43b4-a8a9-bc31aaf1496a)
+ Call ID: 0909f545-524d-43b4-a8a9-bc31aaf1496a
   Args:
-    type: :Woman
-    source: Princess_Benedikte_of_Denmark
-  AssignClass (04005243-c9e7-4e80-af32-6ff70c68a7eb)
- Call ID: 04005243-c9e7-4e80-af32-6ff70c68a7eb
-  Args:
-    type: :Man
-    source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (11465567-3df4-4d1a-93c3-b44935f0d747)
- Call ID: 11465567-3df4-4d1a-93c3-b44935f0d747
-  Args:
-    type: :Man
-    source: Alexander_Johannsmann
-  AssignClass (4f6ed6a4-0e41-414d-bd4d-78aa7b6d56c2)
- Call ID: 4f6ed6a4-0e41-414d-bd4d-78aa7b6d56c2
-  Args:
-    type: :Man
-    source: Heinrich-Wilhelm_Johannsmann
-  AssignClass (30f53a29-be43-4bda-80e8-19c2f7554843)
- Call ID: 30f53a29-be43-4bda-80e8-19c2f7554843
-  Args:
-    type: :Man
-    source: Konstantin_Gustav_Heinrich_Richard
-  AssignClass (a7230ead-f4d9-4db1-88a6-45d81de6a706)
- Call ID: a7230ead-f4d9-4db1-88a6-45d81de6a706
-  Args:
-    type: :Woman
-    source: Louisa_Margareta_Benedikte_Hanna
-  AddTriple (b68bf864-a4c3-4ca3-80c6-135495870bc4)
- Call ID: b68bf864-a4c3-4ca3-80c6-135495870bc4
-  Args:
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-    relation: :hasFather
-    target: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (27e7be07-6031-4a7a-b610-bd11ec7eceed)
- Call ID: 27e7be07-6031-4a7a-b610-bd11ec7eceed
-  Args:
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-    target: Princess_Benedikte_of_Denmark
-    relation: :hasMother
-  AddTriple (12116c8a-95b3-466e-b3e5-a7228f57b20f)
- Call ID: 12116c8a-95b3-466e-b3e5-a7228f57b20f
-  Args:
-    relation: :hasFather
-    target: Heinrich-Wilhelm_Johannsmann
-    source: Alexander_Johannsmann
-  AddTriple (0e26231a-083e-44a7-a69e-878b60906c68)
- Call ID: 0e26231a-083e-44a7-a69e-878b60906c68
-  Args:
-    relation: :hasMother
-    target: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-    source: Konstantin_Gustav_Heinrich_Richard
-  AddTriple (b9ee60fd-6ce7-4b0a-9e98-3219231e4022)
- Call ID: b9ee60fd-6ce7-4b0a-9e98-3219231e4022
-  Args:
-    target: Alexander_Johannsmann
-    relation: :hasFather
-    source: Konstantin_Gustav_Heinrich_Richard
-  AddTriple (46d8e772-9f4f-4439-b476-1be1766f18d4)
- Call ID: 46d8e772-9f4f-4439-b476-1be1766f18d4
-  Args:
-    source: Louisa_Margareta_Benedikte_Hanna
-    relation: :hasMother
-    target: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (63af392d-49c2-4fb1-b127-4d7145379606)
- Call ID: 63af392d-49c2-4fb1-b127-4d7145379606
-  Args:
-    source: Louisa_Margareta_Benedikte_Hanna
-    target: Alexander_Johannsmann
-    relation: :hasFather
-  AddLiteral (052177cd-b0c3-47fa-a947-8cbf5b54ffa9)
- Call ID: 052177cd-b0c3-47fa-a947-8cbf5b54ffa9
-  Args:
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-    literal_value: 1975
+    source: Fernando_Sanz_y_Martinez_de_Arizala
     literal_type: xsd:integer
+    literal_value: 1881
     relation: :hasBirthYear
-  AddLiteral (ccee766a-29da-457e-9ecb-622917d6b242)
- Call ID: ccee766a-29da-457e-9ecb-622917d6b242
+  AddLiteral (79f2e095-eaa1-4870-a28c-f55c57605f19)
+ Call ID: 79f2e095-eaa1-4870-a28c-f55c57605f19
   Args:
-    literal_value: 1977
+    literal_value: 1925
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Alexander_Johannsmann
-  AddLiteral (02d0294e-b2cf-49d3-b177-7f1238ae4bcb)
- Call ID: 02d0294e-b2cf-49d3-b177-7f1238ae4bcb
+    source: Fernando_Sanz_y_Martinez_de_Arizala
+  AddTriple (7813039b-afb0-4150-8160-090ff1122b1b)
+ Call ID: 7813039b-afb0-4150-8160-090ff1122b1b
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 2010
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (cf08f846-6305-4447-9c3d-af817f319c74)
- Call ID: cf08f846-6305-4447-9c3d-af817f319c74
+    target: Fernand
+    relation: :knownAs
+    source: Fernando_Sanz_y_Martinez_de_Arizala
+  AddTriple (b237b8f9-aa6c-4f58-965c-5c23a25ed0f6)
+ Call ID: b237b8f9-aa6c-4f58-965c-5c23a25ed0f6
   Args:
-    target: :Female
-    relation: :hasSex
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (803e6cef-f869-44db-b810-1ceb586fb29e)
- Call ID: 803e6cef-f869-44db-b810-1ceb586fb29e
+    source: Fernando_Sanz_y_Martinez_de_Arizala
+    target: Alfonso_XII_of_Spain
+    relation: :hasFather
+  AddTriple (30376835-556a-47be-bd22-bdfb3bd951a7)
+ Call ID: 30376835-556a-47be-bd22-bdfb3bd951a7
   Args:
-    source: Princess_Benedikte_of_Denmark
-    target: :Female
-    relation: :hasSex
-  AddTriple (7cf4af7c-72ff-4458-b0de-c39beea78cce)
- Call ID: 7cf4af7c-72ff-4458-b0de-c39beea78cce
+    source: Fernando_Sanz_y_Martinez_de_Arizala
+    relation: :hasMother
+    target: Elena_Sanz
+  Finish (17906e12-ceb7-490e-b047-2dc62a1110fa)
+ Call ID: 17906e12-ceb7-490e-b047-2dc62a1110fa
   Args:
-    target: :Male
-    relation: :hasSex
-    source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (3ca27133-5d4c-4514-abe9-8707ed8c9377)
- Call ID: 3ca27133-5d4c-4514-abe9-8707ed8c9377
-  Args:
-    source: Alexander_Johannsmann
-    target: :Male
-    relation: :hasSex
-  AddTriple (285e0818-2452-4c39-89eb-e83a68c2f0bb)
- Call ID: 285e0818-2452-4c39-89eb-e83a68c2f0bb
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Heinrich-Wilhelm_Johannsmann
-  AddTriple (a8587d36-f683-4815-ad49-d4139fc742a1)
- Call ID: a8587d36-f683-4815-ad49-d4139fc742a1
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Konstantin_Gustav_Heinrich_Richard
-  AddTriple (bd625f09-39ee-4c38-a6f7-adf5722e5a5c)
- Call ID: bd625f09-39ee-4c38-a6f7-adf5722e5a5c
-  Args:
-    source: Louisa_Margareta_Benedikte_Hanna
-    relation: :hasSex
-    target: :Female
-  Finish (4d261e03-0db5-4bc6-a404-d060a1c98f15)
- Call ID: 4d261e03-0db5-4bc6-a404-d060a1c98f15
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -608,36 +520,16 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Konstantin_Gustav_Heinrich_Richard a :Man ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Male .
+  data:Fernando_Sanz_y_Martinez_de_Arizala a :Man ;
+      :hasBirthYear 1881 ;
+      :hasDeathYear 1925 ;
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Elena_Sanz ;
+      :knownAs data:Fernand .
 
-  data:Louisa_Margareta_Benedikte_Hanna a :Woman ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Female .
+  data:Alfonso_XII_of_Spain a :Man .
 
-  data:Heinrich-Wilhelm_Johannsmann a :Man ;
-      :hasSex data:Male .
-
-  data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man ;
-      :hasSex data:Male .
-
-  data:Princess_Benedikte_of_Denmark a :Woman ;
-      :hasSex data:Female .
-
-  data:Alexander_Johannsmann a :Man ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Heinrich-Wilhelm_Johannsmann ;
-      :hasSex data:Male .
-
-  data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman ;
-      :hasBirthYear 1975 ;
-      :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
-      :hasMarriageYear 2010 ;
-      :hasMother data:Princess_Benedikte_of_Denmark ;
-      :hasSex data:Female .
+  data:Elena_Sanz a :Woman .
 
 
 
@@ -649,630 +541,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ce520f5c-ce8c-49cf-8b81-c11ef17f0848)
- Call ID: ce520f5c-ce8c-49cf-8b81-c11ef17f0848
+  ValidateShacl (2938c067-7902-477e-a3d7-4d54d096fdd5)
+ Call ID: 2938c067-7902-477e-a3d7-4d54d096fdd5
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:77
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
+      The node Alfonso_XII_of_Spain is linked as the father of Fernando_Sanz_y_Martinez_de_Arizala, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node: 'Alfonso_XII_of_Spain', class: ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
+      The node Elena_Sanz is linked as the mother of Fernando_Sanz_y_Martinez_de_Arizala, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node: 'Elena_Sanz', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
+      The node Alfonso_XII_of_Spain is missing the mandatory class ':Ancestor' to satisfy the schema for the 'hasFather' property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node: 'Alfonso_XII_of_Spain', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
+      The node Elena_Sanz is missing the mandatory class ':Ancestor' to satisfy the schema for the 'hasMother' property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node: 'Elena_Sanz', class: ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Heinrich-Wilhelm_Johannsmann' for property 'hasFather' of node 'Alexander_Johannsmann' lacks the required class ':Ancestor'.
+      The node Alfonso_XII_of_Spain is missing the mandatory class ':Ancestor' to satisfy the schema for the 'hasFather' property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Heinrich-Wilhelm_Johannsmann, :Ancestor)
+      AssignClass(node: 'Alfonso_XII_of_Spain', class: ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
+      The node Elena_Sanz is missing the mandatory class ':Ancestor' to satisfy the schema for the 'hasMother' property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' for property 'hasFather' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Heinrich-Wilhelm_Johannsmann' for property 'hasFather' of node 'Alexander_Johannsmann' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Heinrich-Wilhelm_Johannsmann, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Benedikte_of_Denmark' for property 'hasMother' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [47]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' for property 'hasFather' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [48]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Heinrich-Wilhelm_Johannsmann' for property 'hasFather' of node 'Alexander_Johannsmann' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Heinrich-Wilhelm_Johannsmann, :Ancestor)
-
-
-  Violation [49]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [50]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [51]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Benedikte_of_Denmark' for property 'hasMother' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
-
-
-  Violation [52]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [53]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Konstantin_Gustav_Heinrich_Richard' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [68]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander_Johannsmann' for property 'hasFather' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_Johannsmann, :Ancestor)
-
-
-  Violation [69]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' for property 'hasFather' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [70]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' for property 'hasMother' of node 'Louisa_Margareta_Benedikte_Hanna' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
-
-
-  Violation [71]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Benedikte_of_Denmark' for property 'hasMother' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
+      AssignClass(node: 'Elena_Sanz', class: ':Ancestor')
 
 
 
@@ -1281,700 +605,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (fc137e9e-5221-4f44-8a2e-e1cc7e9725eb)
- Call ID: fc137e9e-5221-4f44-8a2e-e1cc7e9725eb
+  AssignClass (d5a32b66-f56b-4c81-985b-6d5674e53502)
+ Call ID: d5a32b66-f56b-4c81-985b-6d5674e53502
   Args:
+    source: Alfonso_XII_of_Spain
     type: :Ancestor
-    source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (7646d4ab-cb80-4c05-9665-59837507c763)
- Call ID: 7646d4ab-cb80-4c05-9665-59837507c763
+  AssignClass (77e8025f-a0c8-444c-adab-be91e4b90a6e)
+ Call ID: 77e8025f-a0c8-444c-adab-be91e4b90a6e
   Args:
+    source: Elena_Sanz
     type: :Ancestor
-    source: Princess_Benedikte_of_Denmark
-  AssignClass (1616deee-cec3-4c96-bd3e-377cd0063d1a)
- Call ID: 1616deee-cec3-4c96-bd3e-377cd0063d1a
-  Args:
-    type: :Ancestor
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (b30c9143-f0c5-41d4-aa48-9043655f1848)
- Call ID: b30c9143-f0c5-41d4-aa48-9043655f1848
-  Args:
-    type: :Ancestor
-    source: Alexander_Johannsmann
-  AssignClass (ec8b8ebd-1788-43f2-9006-1fecf0842f22)
- Call ID: ec8b8ebd-1788-43f2-9006-1fecf0842f22
-  Args:
-    type: :Ancestor
-    source: Heinrich-Wilhelm_Johannsmann
-  Finish (3665f041-4580-44e2-ba19-a1c73ab7ad9a)
- Call ID: 3665f041-4580-44e2-ba19-a1c73ab7ad9a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Konstantin_Gustav_Heinrich_Richard a :Man ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Male .
-
-  data:Louisa_Margareta_Benedikte_Hanna a :Woman ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Female .
-
-  data:Heinrich-Wilhelm_Johannsmann a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Princess_Benedikte_of_Denmark a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Alexander_Johannsmann a :Ancestor,
-          :Man ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Heinrich-Wilhelm_Johannsmann ;
-      :hasSex data:Male .
-
-  data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1975 ;
-      :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
-      :hasMarriageYear 2010 ;
-      :hasMother data:Princess_Benedikte_of_Denmark ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (a04d79b1-9c6c-41f2-a71e-c7fa8b08ea99)
- Call ID: a04d79b1-9c6c-41f2-a71e-c7fa8b08ea99
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:71
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Richard_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Heinrich-Wilhelm_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alexander_Johannsmann' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Konstantin_Gustav_Heinrich_Richard' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Benedikte_of_Denmark' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Louisa_Margareta_Benedikte_Hanna' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (2aa922ab-a2d4-4b7a-8031-03aa35c3fefc)
- Call ID: 2aa922ab-a2d4-4b7a-8031-03aa35c3fefc
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (c12c2e01-e053-40d8-b092-ec2512f4e590)
- Call ID: c12c2e01-e053-40d8-b092-ec2512f4e590
-  Args:
-    type: :Sex
-    source: Female
-  Finish (00bb4df3-0ee2-4701-8c97-d814e6bf8237)
- Call ID: 00bb4df3-0ee2-4701-8c97-d814e6bf8237
+  Finish (256868b1-90d5-41d3-92ed-75132b4f5600)
+ Call ID: 256868b1-90d5-41d3-92ed-75132b4f5600
   Args:
 
 ================================= Tool Message =================================
@@ -1988,45 +630,18 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Konstantin_Gustav_Heinrich_Richard a :Man ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Male .
+  data:Fernando_Sanz_y_Martinez_de_Arizala a :Man ;
+      :hasBirthYear 1881 ;
+      :hasDeathYear 1925 ;
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Elena_Sanz ;
+      :knownAs data:Fernand .
 
-  data:Louisa_Margareta_Benedikte_Hanna a :Woman ;
-      :hasFather data:Alexander_Johannsmann ;
-      :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSex data:Female .
+  data:Alfonso_XII_of_Spain a :Ancestor,
+          :Man .
 
-  data:Heinrich-Wilhelm_Johannsmann a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Princess_Benedikte_of_Denmark a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Alexander_Johannsmann a :Ancestor,
-          :Man ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Heinrich-Wilhelm_Johannsmann ;
-      :hasSex data:Male .
-
-  data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1975 ;
-      :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
-      :hasMarriageYear 2010 ;
-      :hasMother data:Princess_Benedikte_of_Denmark ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Elena_Sanz a :Ancestor,
+          :Woman .
 
 
 
@@ -2038,8 +653,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (61c43ec1-d70c-4e6b-9774-e8bd0ee8db4b)
- Call ID: 61c43ec1-d70c-4e6b-9774-e8bd0ee8db4b
+  ValidateShacl (ac5b6f2d-8b0d-43e7-a41f-dbfd631dd873)
+ Call ID: ac5b6f2d-8b0d-43e7-a41f-dbfd631dd873
   Args:
 
 ================================= Tool Message =================================
@@ -2050,6 +665,37 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9ce03590-613e-48c8-8569-20c92c3e244c)
- Call ID: 9ce03590-613e-48c8-8569-20c92c3e244c
+  Finish (31d6c617-68ce-4536-b836-0a5e1ebc59dd)
+ Call ID: 31d6c617-68ce-4536-b836-0a5e1ebc59dd
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Fernand']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (9313a41c-8b96-4955-b767-6b44f5a44247)
+ Call ID: 9313a41c-8b96-4955-b767-6b44f5a44247
+  Args:
+    source: Fernand
+    type: :Person
+  Finish (ca8374b7-fe72-4d03-8849-050b8fabb897)
+ Call ID: ca8374b7-fe72-4d03-8849-050b8fabb897
   Args:

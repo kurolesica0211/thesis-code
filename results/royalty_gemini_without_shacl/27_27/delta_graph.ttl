@@ -2,34 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceHenry a :Man ;
+data:ElizabethII a :Person,
+        :Woman ;
+    :isSiblingOf data:Margaret .
+
+data:Henry a :Man,
+        :Person ;
     :hasBirthYear 1900 ;
     :hasDeathYear 1974 ;
-    :hasFather data:KingGeorgeV ;
+    :hasFather data:GeorgeV ;
     :hasMarriageYear 1935 ;
     :hasMother data:QueenMary ;
-    :hasRelation data:LadyAliceMontaguDouglasScott ;
-    :hasSon data:PrinceRichard,
-        data:PrinceWilliam ;
+    :hasRelation data:AliceMontaguDouglasScott ;
+    :hasSon data:Richard,
+        data:William ;
     :isBrotherOf data:DukeOfKent,
         data:EdwardVIII,
         data:GeorgeVI .
 
-data:DukeOfKent a :Man .
+data:DukeOfKent a :Man,
+        :Person .
 
-data:EdwardVIII a :Man .
+data:EdwardVIII a :Man,
+        :Person .
 
-data:GeorgeVI a :Man .
+data:GeorgeV a :Man,
+        :Person .
 
-data:KingGeorgeV a :Man .
+data:GeorgeVI a :Man,
+        :Person .
 
-data:LadyAliceMontaguDouglasScott a :Woman ;
-    :hasSon data:PrinceRichard,
-        data:PrinceWilliam .
+data:Margaret a :Person,
+        :Woman .
 
-data:QueenMary a :Woman .
+data:QueenMary a :Person,
+        :Woman .
 
-data:PrinceRichard a :Man .
+data:Richard a :Man,
+        :Person ;
+    :hasMother data:AliceMontaguDouglasScott .
 
-data:PrinceWilliam a :Man .
+data:William a :Man,
+        :Person ;
+    :hasMother data:AliceMontaguDouglasScott .
+
+data:AliceMontaguDouglasScott a :Person,
+        :Woman .
 

@@ -69,48 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
-Biography
+John Herbert Bowes-Lyon (1 April 1886 – 7 February 1930) was the second son of the 14th
+Earl of Strathmore and Kinghorne and the Countess of Strathmore and Kinghorne, and the brother of Elizabeth Bowes-Lyon, the future Queen Elizabeth the Queen Mother.
+He was the uncle of Queen Elizabeth II, although he died when she was a small child and before her sister Princess Margaret was born.
+Early life
 
-Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
-She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
-At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
-As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
-The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
-Alexia grew up in exile and was raised in between Rome and London.
-The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
-Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
-Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
+John Bowes-Lyon was educated at Eton and New College, Oxford, where he played first-class cricket for the university side in three matches in 1906 and 1907, playing as a fast-medium bowler.
 Marriage and children
 
-Queen Anne-Marie
+On 29 September 1914, Bowes-Lyon married Fenella Hepburn-Stuart-Forbes-Trefusis (19 August 1889 – 19 July 1966), the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+They had five daughters:
 
 
-Queen Sofía of Spain
+World War I
 
+Before the outbreak of World War I, Bowes-Lyon worked as a stockbroker in the City of London for the firm Rowe and Pitman.
+While receiving treatment in the UK, he admitted having experienced a nervous breakdown in 1912 and also suffered from neurasthenia.
+Death
 
-Marina, consort of Prince Michael
-
-
-On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
-In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
-Alexia and Carlos were the only two people out of the thirteen on board to be injured.
-Alexia suffered a broken collarbone and Carlos a fractured kneecap.
-At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
-Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
-Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
-The couple have four children: 
-
-
-Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
-Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
-The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
+Bowes-Lyon died at the family home of Glamis Castle just after midnight on the morning of 7 February 1930 of pneumonia, aged 43, leaving his widow to care for their four young children.
+Bowes-Lyon's widow, Fenella Trefusis, was a leading guest at the 1947 wedding of Princess Elizabeth and Philip Mountbatten.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +112,9 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +129,23 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,199 +437,112 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e3ea46ba-4412-4bd5-bd59-5ba0f0295444)
- Call ID: e3ea46ba-4412-4bd5-bd59-5ba0f0295444
+  AssignClass (c362ab3b-3622-4cac-bbaa-10b2e0fb3d74)
+ Call ID: c362ab3b-3622-4cac-bbaa-10b2e0fb3d74
   Args:
-    type: :Woman
-    source: Alexia
-  AssignClass (b7cb80b5-41ab-438a-a808-c697dad2d61f)
- Call ID: b7cb80b5-41ab-438a-a808-c697dad2d61f
-  Args:
+    source: John_Herbert_Bowes-Lyon
     type: :Man
-    source: Constantine_II
-  AssignClass (4b184d73-798f-4866-a079-ef03434fd439)
- Call ID: 4b184d73-798f-4866-a079-ef03434fd439
-  Args:
-    type: :Woman
-    source: Anne-Marie
-  AssignClass (431aa07c-a031-4c0d-8d06-f1a654435edb)
- Call ID: 431aa07c-a031-4c0d-8d06-f1a654435edb
-  Args:
-    type: :Man
-    source: Pavlos
-  AssignClass (e7362db1-853f-4022-9a43-2b25839bb5b9)
- Call ID: e7362db1-853f-4022-9a43-2b25839bb5b9
-  Args:
-    type: :Man
-    source: Carlos_Javier_Morales_Quintana
-  AssignClass (6495092f-fcd8-4dcd-ae27-c86a2956384d)
- Call ID: 6495092f-fcd8-4dcd-ae27-c86a2956384d
-  Args:
-    source: Theodora
-    type: :Woman
-  AssignClass (a6ee04e2-e962-4457-8f9b-eb9791629ae8)
- Call ID: a6ee04e2-e962-4457-8f9b-eb9791629ae8
-  Args:
-    type: :Woman
-    source: Maria-Olympia
-  AssignClass (761ea37d-2ebf-4a5f-a8d1-2c13b77538c3)
- Call ID: 761ea37d-2ebf-4a5f-a8d1-2c13b77538c3
-  Args:
-    type: :Woman
-    source: Mafalda
-  AssignClass (e1972327-1794-4719-84aa-b83bca9f7a69)
- Call ID: e1972327-1794-4719-84aa-b83bca9f7a69
-  Args:
-    type: :Man
-    source: Kyril
-  AssignClass (d3df0e55-ed1a-45a5-988f-09ff6db1c1ed)
- Call ID: d3df0e55-ed1a-45a5-988f-09ff6db1c1ed
-  Args:
-    source: Simeon
-    type: :Man
-  AssignClass (b3b1e532-93dc-4494-9cee-b0b9439456f8)
- Call ID: b3b1e532-93dc-4494-9cee-b0b9439456f8
-  Args:
-    source: Ingrid
-    type: :Woman
-  AssignClass (8b667c13-dab3-4bb0-8c67-200af9040afe)
- Call ID: 8b667c13-dab3-4bb0-8c67-200af9040afe
-  Args:
-    source: Sofia
-    type: :Woman
-  AssignClass (b69f9f69-7462-423d-a536-b63232438910)
- Call ID: b69f9f69-7462-423d-a536-b63232438910
-  Args:
-    type: :Man
-    source: Felipe_VI
-  AddLiteral (2dcc12d6-b1ec-4010-abe9-79e3ac60a518)
- Call ID: 2dcc12d6-b1ec-4010-abe9-79e3ac60a518
+  AddLiteral (d1e29c2f-3575-414a-af59-c2412e9d86fb)
+ Call ID: d1e29c2f-3575-414a-af59-c2412e9d86fb
   Args:
     relation: :hasBirthYear
-    literal_value: 1965
-    source: Alexia
     literal_type: xsd:integer
-  AddTriple (2e4fefee-86a1-43af-8a60-40612c82162e)
- Call ID: 2e4fefee-86a1-43af-8a60-40612c82162e
+    literal_value: 1886
+    source: John_Herbert_Bowes-Lyon
+  AddLiteral (df9637fe-fc07-4fa9-a50d-7ac0cc1f2709)
+ Call ID: df9637fe-fc07-4fa9-a50d-7ac0cc1f2709
   Args:
-    source: Alexia
-    target: Constantine_II
-    relation: :hasFather
-  AddTriple (549cc245-bd9c-42b9-94fe-f787ac614df0)
- Call ID: 549cc245-bd9c-42b9-94fe-f787ac614df0
+    source: John_Herbert_Bowes-Lyon
+    literal_value: 1930
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (a14f38ca-9063-4d18-a443-446e5659510d)
+ Call ID: a14f38ca-9063-4d18-a443-446e5659510d
   Args:
-    target: Anne-Marie
-    source: Alexia
-    relation: :hasMother
-  AddTriple (605dd4e7-0a02-4250-8071-19044f1fa27c)
- Call ID: 605dd4e7-0a02-4250-8071-19044f1fa27c
+    source: 14th_Earl_of_Strathmore_and_Kinghorne
+    type: :Man
+  AssignClass (71e90300-2a6b-4893-ba87-8e2587fdf60b)
+ Call ID: 71e90300-2a6b-4893-ba87-8e2587fdf60b
   Args:
-    target: Alexia
-    source: Pavlos
-    relation: :isBrotherOf
-  AddTriple (3b2e79ba-a0f3-4726-8779-68cf54a0d624)
- Call ID: 3b2e79ba-a0f3-4726-8779-68cf54a0d624
+    source: Countess_of_Strathmore_and_Kinghorne
+    type: :Woman
+  AddTriple (f51bd863-0173-4a96-9c7d-d37566fa8c56)
+ Call ID: f51bd863-0173-4a96-9c7d-d37566fa8c56
   Args:
-    target: Constantine_II
-    source: Pavlos
-    relation: :hasFather
-  AddTriple (35cb746e-4d8a-43ea-b0a6-60510825d3e6)
- Call ID: 35cb746e-4d8a-43ea-b0a6-60510825d3e6
+    source: John_Herbert_Bowes-Lyon
+    target: 14th_Earl_of_Strathmore_and_Kinghorne
+    relation: :isSonOf
+  AddTriple (797df77e-58b0-45af-9e54-c29d48c88f6d)
+ Call ID: 797df77e-58b0-45af-9e54-c29d48c88f6d
   Args:
-    relation: :hasMother
-    source: Pavlos
-    target: Anne-Marie
-  AddLiteral (8bfd1cf5-a636-462b-ac5b-c5ca74c16d1c)
- Call ID: 8bfd1cf5-a636-462b-ac5b-c5ca74c16d1c
+    source: John_Herbert_Bowes-Lyon
+    target: Countess_of_Strathmore_and_Kinghorne
+    relation: :isSonOf
+  AssignClass (0558be3d-80cd-4329-83da-887ee5f9ba79)
+ Call ID: 0558be3d-80cd-4329-83da-887ee5f9ba79
   Args:
-    source: Alexia
+    source: Elizabeth_Bowes-Lyon
+    type: :Woman
+  AddTriple (a27c05d2-e6c6-4b94-b7d7-114aa4fe7807)
+ Call ID: a27c05d2-e6c6-4b94-b7d7-114aa4fe7807
+  Args:
+    relation: :isSiblingOf
+    target: Elizabeth_Bowes-Lyon
+    source: John_Herbert_Bowes-Lyon
+  AssignClass (d9b91bbd-5ef5-4014-a133-92ee2149a758)
+ Call ID: d9b91bbd-5ef5-4014-a133-92ee2149a758
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AddTriple (f592bc21-be79-4145-b618-e6d3a82c1975)
+ Call ID: f592bc21-be79-4145-b618-e6d3a82c1975
+  Args:
+    relation: :isUncleOf
+    source: John_Herbert_Bowes-Lyon
+    target: Queen_Elizabeth_II
+  AssignClass (583bba53-6880-4835-a3ca-30327dfaea47)
+ Call ID: 583bba53-6880-4835-a3ca-30327dfaea47
+  Args:
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Woman
+  AddLiteral (f6835478-bfb9-4036-ae60-6c0d4298341c)
+ Call ID: f6835478-bfb9-4036-ae60-6c0d4298341c
+  Args:
+    literal_value: 1914
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1999
-  AddTriple (769d977c-e62f-4cb4-9a0e-0bc25a8dfe68)
- Call ID: 769d977c-e62f-4cb4-9a0e-0bc25a8dfe68
+    source: John_Herbert_Bowes-Lyon
+  AddTriple (b19cb647-a86d-4b5c-aefd-4eab70da3a4f)
+ Call ID: b19cb647-a86d-4b5c-aefd-4eab70da3a4f
   Args:
+    source: John_Herbert_Bowes-Lyon
+    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
     relation: :hasRelation
-    target: Carlos_Javier_Morales_Quintana
-    source: Alexia
-  AddTriple (317852ec-58b5-4ea7-8547-9a56e304ada4)
- Call ID: 317852ec-58b5-4ea7-8547-9a56e304ada4
+  AddLiteral (14017e01-50f9-4938-a4d8-96138777ce05)
+ Call ID: 14017e01-50f9-4938-a4d8-96138777ce05
   Args:
-    relation: :isSisterOf
-    source: Theodora
-    target: Alexia
-  AddTriple (0c6dafc4-cc3c-4ba5-9b17-155f5d487826)
- Call ID: 0c6dafc4-cc3c-4ba5-9b17-155f5d487826
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasBirthYear
+    literal_value: 1889
+    literal_type: xsd:integer
+  AddLiteral (fcdfc7f7-126f-4366-89c6-07c34bd8dc8c)
+ Call ID: fcdfc7f7-126f-4366-89c6-07c34bd8dc8c
   Args:
-    target: Constantine_II
-    source: Theodora
-    relation: :hasFather
-  AddTriple (90b00ba9-b700-4409-9818-3cebc56d4a2a)
- Call ID: 90b00ba9-b700-4409-9818-3cebc56d4a2a
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1966
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AssignClass (cc076cc1-df24-4e8b-9c7f-8a32e54f5692)
+ Call ID: cc076cc1-df24-4e8b-9c7f-8a32e54f5692
   Args:
-    target: Anne-Marie
-    source: Theodora
-    relation: :hasMother
-  AddTriple (b5a0bc04-5554-4773-85d0-e11da8503c70)
- Call ID: b5a0bc04-5554-4773-85d0-e11da8503c70
-  Args:
-    relation: :isMotherOf
-    target: Alexia
-    source: Anne-Marie
-  AddTriple (00d2b2b0-8f90-41ff-b1b5-f2dae1463cd3)
- Call ID: 00d2b2b0-8f90-41ff-b1b5-f2dae1463cd3
-  Args:
-    relation: :isMotherOf
-    target: Pavlos
-    source: Anne-Marie
-  AddTriple (658c72b6-06b7-4dd0-8e02-4afc2b5295aa)
- Call ID: 658c72b6-06b7-4dd0-8e02-4afc2b5295aa
-  Args:
-    target: Theodora
-    source: Anne-Marie
-    relation: :isMotherOf
-  AddTriple (26718652-6d7c-4465-8cff-c54a887912da)
- Call ID: 26718652-6d7c-4465-8cff-c54a887912da
-  Args:
-    target: Alexia
-    source: Constantine_II
-    relation: :isFatherOf
-  AddTriple (5d428a69-fa9f-454b-a43b-1f17c4d77cfd)
- Call ID: 5d428a69-fa9f-454b-a43b-1f17c4d77cfd
-  Args:
-    target: Pavlos
-    source: Constantine_II
-    relation: :isFatherOf
-  AddTriple (fb3d0c49-5c51-4861-b49e-8abbd0612a60)
- Call ID: fb3d0c49-5c51-4861-b49e-8abbd0612a60
-  Args:
-    target: Theodora
-    source: Constantine_II
-    relation: :isFatherOf
-  AddTriple (081b327b-8073-4d77-afa6-b15d65ba564a)
- Call ID: 081b327b-8073-4d77-afa6-b15d65ba564a
-  Args:
-    relation: :isMotherOf
-    target: Anne-Marie
-    source: Ingrid
-  AddTriple (44e46088-482c-471f-8eb2-c476684858ce)
- Call ID: 44e46088-482c-471f-8eb2-c476684858ce
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    type: :Man
+  AddTriple (83ba9ddf-dc94-402d-81fc-7eaf34cdb052)
+ Call ID: 83ba9ddf-dc94-402d-81fc-7eaf34cdb052
   Args:
     relation: :isDaughterOf
-    source: Mafalda
-    target: Kyril
-  AddTriple (91e52ce5-7280-402f-94dc-8b4c9adf5cba)
- Call ID: 91e52ce5-7280-402f-94dc-8b4c9adf5cba
-  Args:
-    source: Kyril
-    target: Simeon
-    relation: :isSonOf
-  AddTriple (c715a379-f83b-4a59-859f-6c9f08c7e0dd)
- Call ID: c715a379-f83b-4a59-859f-6c9f08c7e0dd
-  Args:
-    source: Sofia
-    target: Alexia
-    relation: :isAuntOf
-  Finish (e3b9496a-0c24-4683-87cd-29e1b01b643e)
- Call ID: e3b9496a-0c24-4683-87cd-29e1b01b643e
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+  Finish (87a03a80-3411-4f68-8351-a7f4842d93b4)
+ Call ID: 87a03a80-3411-4f68-8351-a7f4842d93b4
   Args:

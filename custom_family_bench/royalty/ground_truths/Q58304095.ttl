@@ -7,48 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Maria de las Mercedes of Spain" ;
-    data:posIndicesFull "681:719" ;
-    data:posIndicesPart "1690:1695",
-        "963:968" ;
-    data:wdtLink wdt:Q3847609 ;
-    :alsoKnownAs "Dona Maria de las Mercedes de Baviera y de Borbon, Infanta d'España" ;
-    :hasChild data:Bagrat_de_Bagration_y_de_Baviera ;
-    :hasSex data:female ;
-    :hasSon data:Bagrat_de_Bagration_y_de_Baviera ;
-    :isMotherOf data:Bagrat_de_Bagration_y_de_Baviera ;
-    :isParentOf data:Bagrat_de_Bagration_y_de_Baviera .
-
-data:Irakli_Bagration_of_Mukhrani a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Irakli Bagration of Mukhrani" ;
-    data:posIndicesFull "507:535" ;
-    data:posIndicesPart "1178:1186",
-        "2049:2057" ;
-    data:wdtLink wdt:Q2576581 ;
-    :alsoKnownAs "Irakli Bagration-Mukhraneli",
-        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
-    :hasChild data:Bagrat_de_Bagration_y_de_Baviera ;
-    :hasSex data:male ;
-    :hasSon data:Bagrat_de_Bagration_y_de_Baviera ;
-    :isFatherOf data:Bagrat_de_Bagration_y_de_Baviera ;
-    :isParentOf data:Bagrat_de_Bagration_y_de_Baviera .
-
-data:Prince_Juan_de_Bagration-Mukhrani a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Juan_de_Bagration-Mukhrani a :Person ;
     rdfs:label "Prince Juan de Bagration-Mukhrani" ;
     data:posIndicesFull "308:347",
         "75:114" ;
@@ -71,37 +30,71 @@ data:Prince_Juan_de_Bagration-Mukhrani a :Man,
         "2230:2236",
         "2237:2241",
         "2391:2397",
-        "500:506",
-        "822:828" ;
+        "500:506" ;
     data:wdtLink wdt:Q58304095 ;
     :alsoKnownAs "His Royal Highness Prince Juan Jorge de Bagration-Mukhrani",
         "Juan Bagration-Moukhransky, Prince Bagration-Moukhransky",
         "Prince Juan Jorge de Bagration-Mukhrani" ;
-    :hasFather data:Bagrat_de_Bagration_y_de_Baviera ;
     :hasParent data:Bagrat_de_Bagration_y_de_Baviera ;
-    :hasSex data:male ;
-    :isChildOf data:Bagrat_de_Bagration_y_de_Baviera ;
-    :isSonOf data:Bagrat_de_Bagration_y_de_Baviera .
+    :hasSex data:male .
 
-data:Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Bagrat_de_Bagration_y_de_Baviera a :Person ;
     rdfs:label "Bagrat de Bagration y de Baviera" ;
     data:posIndicesFull "395:427" ;
     data:wdtLink wdt:Q5408136 ;
     :alsoKnownAs "Principe Bagrat de Bagration y de Baviera y Borbon" ;
-    :hasChild data:Prince_Juan_de_Bagration-Mukhrani ;
-    :hasFather data:Irakli_Bagration_of_Mukhrani ;
-    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain ;
     :hasParent data:Infanta_Maria_de_las_Mercedes_of_Spain,
         data:Irakli_Bagration_of_Mukhrani ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Juan_de_Bagration-Mukhrani ;
-    :isChildOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
-        data:Irakli_Bagration_of_Mukhrani ;
-    :isFatherOf data:Prince_Juan_de_Bagration-Mukhrani ;
-    :isParentOf data:Prince_Juan_de_Bagration-Mukhrani ;
-    :isSonOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
-        data:Irakli_Bagration_of_Mukhrani .
+    :hasSex data:male .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Person ;
+    rdfs:label "Infanta Maria de las Mercedes of Spain" ;
+    data:posIndicesFull "681:719" ;
+    data:posIndicesPart "1690:1695",
+        "963:968" ;
+    data:wdtLink wdt:Q3847609 ;
+    :alsoKnownAs "Dona Maria de las Mercedes de Baviera y de Borbon, Infanta d'España" ;
+    :hasParent data:Prince_Ferdinand_of_Bavaria ;
+    :hasSex data:female .
+
+data:Irakli_Bagration_of_Mukhrani a :Person ;
+    rdfs:label "Irakli Bagration of Mukhrani" ;
+    data:posIndicesFull "507:535" ;
+    data:posIndicesPart "1178:1186",
+        "2049:2057" ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli",
+        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
+    :hasSex data:male .
+
+data:Prince_Ferdinand_of_Bavaria a :Person ;
+    rdfs:label "Prince Ferdinand of Bavaria" ;
+    data:posIndicesFull "822:849" ;
+    data:posIndicesPart "1040:1046",
+        "1138:1144",
+        "1343:1349",
+        "1544:1550",
+        "1829:1835",
+        "1886:1892",
+        "2095:2101",
+        "2230:2236",
+        "2391:2397" ;
+    data:wdtLink wdt:Q2537215 ;
+    :alsoKnownAs "Ferdinand Maria Ludwig Franz von Assisi Isabellus Adalbert Ildefons Martin Bonifaz Joseph Isidro",
+        "Ferdinand von Bayern",
+        "Ferran Maria de Baviera",
+        "Infante Ferdinand of Bavaria and Bourbon, Prince of Bavaria",
+        "Infante don Fernando María de Baviera y de Borbón",
+        "Prince Ferdinand Maria of Bavaria" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

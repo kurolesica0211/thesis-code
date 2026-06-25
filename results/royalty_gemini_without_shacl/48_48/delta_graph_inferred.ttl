@@ -1,0 +1,290 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederick a :Man,
+        :Person ;
+    :hasBrother data:Frederick ;
+    :hasRelation data:Frederick ;
+    :isBloodrelationOf data:Frederick ;
+    :isBrotherOf data:Frederick ;
+    :isSiblingOf data:Frederick .
+
+data:Sophie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Sophie ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander ;
+    :isAuntOf data:Alexander ;
+    :isBloodrelationOf data:Sophie ;
+    :isMotherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:Sophie ;
+    :isSisterOf data:Sophie .
+
+data:Henry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henry ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet ;
+    :isBloodrelationOf data:Henry ;
+    :isBrotherOf data:Henry ;
+    :isFatherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Henry ;
+    :isUncleOf data:Juliana .
+
+data:Emma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Emma ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isAuntOf data:Wilhelmina ;
+    :isBloodrelationOf data:Emma ;
+    :isMotherOf data:Wilhelmina ;
+    :isParentOf data:Wilhelmina ;
+    :isSiblingOf data:Emma ;
+    :isSisterOf data:Emma .
+
+data:WilliamIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilliamIII ;
+    :hasChild data:Alexander,
+        data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Beatrix,
+        data:Juliana,
+        data:Margriet,
+        data:Wilhelmina ;
+    :isBloodrelationOf data:WilliamIII ;
+    :isBrotherOf data:WilliamIII ;
+    :isFatherOf data:Alexander,
+        data:Wilhelmina ;
+    :isParentOf data:Alexander,
+        data:Wilhelmina ;
+    :isSiblingOf data:WilliamIII ;
+    :isUncleOf data:Alexander,
+        data:Wilhelmina .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasMother data:Juliana ;
+    :hasParent data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Margriet ;
+    :isChildOf data:Juliana ;
+    :isDaughterOf data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Margriet .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasMother data:Juliana ;
+    :hasParent data:Juliana ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Beatrix,
+        data:Margriet ;
+    :isChildOf data:Juliana ;
+    :isDaughterOf data:Juliana ;
+    :isSiblingOf data:Beatrix,
+        data:Margriet ;
+    :isSisterOf data:Beatrix,
+        data:Margriet .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Sophie,
+        data:WilliamIII ;
+    :hasBrother data:Alexander ;
+    :hasFather data:WilliamIII ;
+    :hasMother data:Sophie ;
+    :hasParent data:Sophie,
+        data:WilliamIII ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Wilhelmina ;
+    :isBrotherOf data:Alexander,
+        data:Wilhelmina ;
+    :isChildOf data:Sophie,
+        data:WilliamIII ;
+    :isSiblingOf data:Alexander,
+        data:Wilhelmina ;
+    :isSonOf data:Sophie,
+        data:WilliamIII ;
+    :isUncleOf data:Juliana .
+
+data:Wilhelmina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:WilliamIII ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:Alexander ;
+    :hasChild data:Juliana ;
+    :hasDaughter data:Juliana ;
+    :hasDeathYear 1962 ;
+    :hasFather data:WilliamIII ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Emma ;
+    :hasParent data:Emma,
+        data:WilliamIII ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Wilhelmina ;
+    :isAncestorOf data:Beatrix,
+        data:Juliana,
+        data:Margriet ;
+    :isAuntOf data:Juliana ;
+    :isBloodrelationOf data:Alexander,
+        data:Wilhelmina ;
+    :isChildOf data:Emma,
+        data:WilliamIII ;
+    :isDaughterOf data:Emma,
+        data:WilliamIII ;
+    :isMotherOf data:Juliana ;
+    :isParentOf data:Juliana ;
+    :isSiblingOf data:Alexander,
+        data:Wilhelmina ;
+    :isSisterOf data:Alexander,
+        data:Wilhelmina .
+
+data:Juliana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Emma,
+        data:Henry,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasChild data:Beatrix,
+        data:Margriet ;
+    :hasDaughter data:Beatrix,
+        data:Margriet ;
+    :hasFather data:Henry ;
+    :hasMother data:Wilhelmina ;
+    :hasParent data:Henry,
+        data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Beatrix,
+        data:Emma,
+        data:Henry,
+        data:Juliana,
+        data:Margriet,
+        data:Sophie,
+        data:Wilhelmina,
+        data:WilliamIII ;
+    :hasSister data:Juliana ;
+    :isAncestorOf data:Beatrix,
+        data:Margriet ;
+    :isAuntOf data:Beatrix,
+        data:Margriet ;
+    :isBloodrelationOf data:Juliana ;
+    :isChildOf data:Henry,
+        data:Wilhelmina ;
+    :isDaughterOf data:Henry,
+        data:Wilhelmina ;
+    :isMotherOf data:Beatrix,
+        data:Margriet ;
+    :isParentOf data:Beatrix,
+        data:Margriet ;
+    :isSiblingOf data:Juliana ;
+    :isSisterOf data:Juliana .
+

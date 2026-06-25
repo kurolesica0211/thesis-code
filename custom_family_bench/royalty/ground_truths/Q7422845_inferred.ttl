@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Timothy_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Timothy Colman"^^xsd:string ;
+    data:posIndicesFull "146:160"^^xsd:string ;
+    data:posIndicesPart "296:302"^^xsd:string,
+        "335:341"^^xsd:string,
+        "401:407"^^xsd:string ;
+    data:wdtLink wdt:Q7807119 ;
+    :alsoKnownAs "Sir Timothy James Alan Colman"^^xsd:string,
+        "Σερ Τιμόθι Κόλμαν"^^xsd:string,
+        "Τιμόθι Τζέιμς Άλαν Κόλμαν"^^xsd:string ;
+    :hasBrother data:Timothy_Colman ;
+    :hasChild data:Sarah_Troughton ;
+    :hasDaughter data:Sarah_Troughton ;
+    :hasRelation data:Sarah_Troughton,
+        data:Timothy_Colman ;
+    :hasSex data:male ;
+    :isAncestorOf data:Sarah_Troughton ;
+    :isBloodrelationOf data:Timothy_Colman ;
+    :isBrotherOf data:Timothy_Colman ;
+    :isFatherOf data:Sarah_Troughton ;
+    :isParentOf data:Sarah_Troughton ;
+    :isSiblingOf data:Timothy_Colman ;
+    :isUncleOf data:Sarah_Troughton .
+
+data:Sarah_Troughton a :Person,
+        :Woman ;
+    rdfs:label "Sarah Troughton"^^xsd:string ;
+    data:posIndicesFull "5:25"^^xsd:string ;
+    data:posIndicesPart "1042:1051"^^xsd:string,
+        "1197:1206"^^xsd:string,
+        "1258:1267"^^xsd:string,
+        "1399:1408"^^xsd:string,
+        "1491:1500"^^xsd:string,
+        "488:497"^^xsd:string,
+        "562:571"^^xsd:string,
+        "58:67"^^xsd:string ;
+    data:wdtLink wdt:Q7422845 ;
+    :alsoKnownAs "Sarah Colman"^^xsd:string,
+        "Sarah Rose Colman"^^xsd:string,
+        "Sarah Rose Troughton"^^xsd:string ;
+    :hasAncestor data:Timothy_Colman ;
+    :hasFather data:Timothy_Colman ;
+    :hasParent data:Timothy_Colman ;
+    :hasRelation data:Sarah_Troughton,
+        data:Timothy_Colman ;
+    :hasSex data:female ;
+    :hasSister data:Sarah_Troughton ;
+    :isBloodrelationOf data:Sarah_Troughton ;
+    :isChildOf data:Timothy_Colman ;
+    :isDaughterOf data:Timothy_Colman ;
+    :isSiblingOf data:Sarah_Troughton ;
+    :isSisterOf data:Sarah_Troughton .
+

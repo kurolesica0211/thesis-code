@@ -1,0 +1,215 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille a :Person,
+        :Woman ;
+    :hasRelation data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille,
+        data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard ;
+    :hasSister data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille ;
+    :isBloodrelationOf data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille ;
+    :isSiblingOf data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille ;
+    :isSisterOf data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille .
+
+data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard a :Man,
+        :Person ;
+    :hasBrother data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard ;
+    :hasRelation data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille,
+        data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard ;
+    :isBloodrelationOf data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard ;
+    :isBrotherOf data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard ;
+    :isSiblingOf data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard .
+
+data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man,
+        :Person ;
+    :hasBrother data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth ;
+    :isBrotherOf data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth ;
+    :isSiblingOf data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth .
+
+data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man,
+        :Person ;
+    :hasBrother data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+    :isBrotherOf data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+    :isSiblingOf data:Count_Michael_of_Ahlefeldt-Laurvig-Bille .
+
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :hasSon data:Prince_Gustav ;
+    :isAncestorOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isParentOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isSiblingOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :hasSister data:Princess_Benedikte_of_Denmark ;
+    :hasSon data:Prince_Gustav ;
+    :isAncestorOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isAuntOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Princess_Benedikte_of_Denmark ;
+    :isMotherOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isParentOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Princess_Benedikte_of_Denmark .
+
+data:Prince_Gustav a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasBrother data:Prince_Gustav ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBrotherOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isChildOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isSonOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Prince_Gustav ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMarriageYear 1998,
+        2019 ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isChildOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isDaughterOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isSisterOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie .
+
+data:Princess_Nathalie a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasBrother data:Prince_Gustav ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille,
+        data:Prince_Gustav,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isBloodrelationOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isChildOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isDaughterOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie ;
+    :isSisterOf data:Prince_Gustav,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Nathalie .
+

@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:William_Frederick_Martin a :Man,
+        :Person ;
+    :hasBrother data:William_Frederick_Martin ;
+    :hasRelation data:Christian_Norah_Dawson-Damer,
+        data:Rosemary,
+        data:William_Frederick_Martin ;
+    :isBloodrelationOf data:William_Frederick_Martin ;
+    :isBrotherOf data:William_Frederick_Martin ;
+    :isSiblingOf data:William_Frederick_Martin .
+
+data:Christian_Norah_Dawson-Damer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rosemary ;
+    :hasDaughter data:Rosemary ;
+    :hasRelation data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon,
+        data:Rosemary,
+        data:William_Frederick_Martin ;
+    :hasSister data:Christian_Norah_Dawson-Damer ;
+    :isAncestorOf data:Rosemary ;
+    :isAuntOf data:Rosemary ;
+    :isBloodrelationOf data:Christian_Norah_Dawson-Damer ;
+    :isMotherOf data:Rosemary ;
+    :isParentOf data:Rosemary ;
+    :isSiblingOf data:Christian_Norah_Dawson-Damer ;
+    :isSisterOf data:Christian_Norah_Dawson-Damer .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Rosemary ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon,
+        data:Rosemary ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Fergus_Bowes-Lyon .
+
+data:Cecilia_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Rosemary ;
+    :hasSister data:Cecilia_Bowes-Lyon ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Fergus_Bowes-Lyon,
+        data:Rosemary ;
+    :isAuntOf data:Fergus_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon ;
+    :isMotherOf data:Fergus_Bowes-Lyon ;
+    :isParentOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon ;
+    :isSisterOf data:Cecilia_Bowes-Lyon .
+
+data:John_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isUncleOf data:Rosemary .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Rosemary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAuntOf data:Rosemary ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon .
+
+data:Rosemary a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Christian_Norah_Dawson-Damer,
+        data:Claude_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMother data:Christian_Norah_Dawson-Damer ;
+    :hasParent data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Christian_Norah_Dawson-Damer,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Rosemary,
+        data:William_Frederick_Martin ;
+    :hasSister data:Rosemary ;
+    :isBloodrelationOf data:Rosemary ;
+    :isChildOf data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon ;
+    :isDaughterOf data:Christian_Norah_Dawson-Damer,
+        data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Rosemary ;
+    :isSisterOf data:Rosemary .
+
+data:Fergus_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :hasChild data:Rosemary ;
+    :hasDaughter data:Rosemary ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon ;
+    :hasParent data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon,
+        data:Christian_Norah_Dawson-Damer,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon,
+        data:Rosemary ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Rosemary ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isChildOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Rosemary ;
+    :isParentOf data:Rosemary ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:John_Bowes-Lyon ;
+    :isSonOf data:Cecilia_Bowes-Lyon,
+        data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Rosemary .
+

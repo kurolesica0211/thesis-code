@@ -2,31 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Margaret_Rhodes a :Person,
+data:Helen_Taylor a :Person,
         :Woman ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 2016 ;
-    :hasFather data:Lord_Elphinstone_16th ;
-    :hasMarriageYear 1950 ;
-    :hasMother data:Lady_Mary_Bowes-Lyon ;
-    :hasRelation data:Denys_Gravenor_Rhodes .
+    :alsoKnownAs data:Helen_Windsor ;
+    :hasAncestor data:King_George_V ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Timothy_Verner_Taylor .
 
-data:Princess_Margaret a :Person,
+data:Helen_Windsor a :Woman .
+
+data:Katharine_Duchess_of_Kent a :Person,
         :Woman .
 
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:Denys_Gravenor_Rhodes a :Man,
+data:King_George_V a :Man,
         :Person .
 
-data:Lady_Mary_Bowes-Lyon a :Person,
-        :Woman ;
-    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
-
-data:Lord_Elphinstone_16th a :Man,
+data:Prince_Edward_Duke_of_Kent a :Man,
         :Person .
 
-data:Queen_Elizabeth_The_Queen_Mother a :Person,
-        :Woman .
+data:Timothy_Verner_Taylor a :Man,
+        :Person ;
+    :hasBirthYear 1963 .
 

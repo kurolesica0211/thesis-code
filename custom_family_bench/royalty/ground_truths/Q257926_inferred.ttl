@@ -1,0 +1,295 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Howard_Oxenberg a :Man,
+        :Person ;
+    rdfs:label "Howard Oxenberg"^^xsd:string ;
+    data:posIndicesFull "2193:2208"^^xsd:string ;
+    data:wdtLink wdt:Q75393300 ;
+    :hasBrother data:Howard_Oxenberg ;
+    :hasRelation data:Howard_Oxenberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Howard_Oxenberg ;
+    :isBrotherOf data:Howard_Oxenberg ;
+    :isSiblingOf data:Howard_Oxenberg .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "524:538"^^xsd:string ;
+    data:posIndicesPart "5474:5478"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasRelation data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Elizabeth of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1210:1250"^^xsd:string,
+        "1219:1250"^^xsd:string ;
+    data:posIndicesPart "1252:1261"^^xsd:string,
+        "1508:1514"^^xsd:string,
+        "1761:1770"^^xsd:string,
+        "1971:1979"^^xsd:string,
+        "2158:2166"^^xsd:string,
+        "2167:2176"^^xsd:string,
+        "2354:2362"^^xsd:string,
+        "2363:2372"^^xsd:string,
+        "2649:2658"^^xsd:string,
+        "2667:2675"^^xsd:string,
+        "2676:2685"^^xsd:string,
+        "2838:2846"^^xsd:string,
+        "2903:2912"^^xsd:string,
+        "3011:3020"^^xsd:string,
+        "3416:3424"^^xsd:string,
+        "3425:3434"^^xsd:string,
+        "3847:3855"^^xsd:string,
+        "3856:3865"^^xsd:string,
+        "5397:5405"^^xsd:string,
+        "5406:5415"^^xsd:string,
+        "5465:5473"^^xsd:string,
+        "5511:5520"^^xsd:string,
+        "5623:5631"^^xsd:string,
+        "5632:5641"^^xsd:string ;
+    data:wdtLink wdt:Q19006 ;
+    :alsoKnownAs "Elizabeth Oldenburg"^^xsd:string,
+        "Elizabeth of Greece and Denmark"^^xsd:string,
+        "Princess Elizabeth, Countess of Toerring-Jettenbach"^^xsd:string ;
+    :hasRelation data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Paul of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "445:470"^^xsd:string,
+        "452:470"^^xsd:string ;
+    data:posIndicesPart "1500:1504"^^xsd:string,
+        "1820:1826"^^xsd:string,
+        "1897:1903"^^xsd:string,
+        "3110:3120"^^xsd:string,
+        "3370:3380"^^xsd:string,
+        "3622:3632"^^xsd:string,
+        "4427:4433"^^xsd:string,
+        "4434:4438"^^xsd:string,
+        "4678:4684"^^xsd:string,
+        "4692:4698"^^xsd:string,
+        "4713:4719"^^xsd:string,
+        "4863:4873"^^xsd:string,
+        "5051:5061"^^xsd:string,
+        "5149:5159"^^xsd:string,
+        "576:582"^^xsd:string,
+        "837:843"^^xsd:string,
+        "883:889"^^xsd:string ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich"^^xsd:string,
+        "Paul Karageorgevich"^^xsd:string,
+        "Paul of Yugoslavia"^^xsd:string,
+        "Pavle Karađorđević"^^xsd:string,
+        "Prince of Yugoslavia Paul"^^xsd:string,
+        "Prince of Yugoslavia Pavle"^^xsd:string,
+        "Prince of Yugoslavia Pavle Karađorđević"^^xsd:string ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "445:470"^^xsd:string,
+        "515:550"^^xsd:string,
+        "524:550"^^xsd:string ;
+    data:posIndicesPart "1508:1514"^^xsd:string,
+        "1971:1979"^^xsd:string,
+        "2158:2166"^^xsd:string,
+        "2354:2362"^^xsd:string,
+        "2667:2675"^^xsd:string,
+        "2838:2846"^^xsd:string,
+        "3416:3424"^^xsd:string,
+        "3847:3855"^^xsd:string,
+        "5397:5405"^^xsd:string,
+        "5465:5473"^^xsd:string,
+        "5474:5478"^^xsd:string,
+        "5623:5631"^^xsd:string,
+        "650:658"^^xsd:string,
+        "693:701"^^xsd:string,
+        "910:918"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasChild data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :hasDaughter data:Princess_Elizabeth_of_Serbia ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isAuntOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Prince Alexander of Serbia"^^xsd:string ;
+    data:posIndicesFull "596:626"^^xsd:string ;
+    data:posIndicesPart "1004:1013"^^xsd:string,
+        "1408:1417"^^xsd:string,
+        "1644:1653"^^xsd:string,
+        "1820:1826"^^xsd:string,
+        "1897:1903"^^xsd:string,
+        "2478:2487"^^xsd:string,
+        "4177:4183"^^xsd:string,
+        "4246:4255"^^xsd:string,
+        "4365:4374"^^xsd:string,
+        "4427:4433"^^xsd:string,
+        "4644:4653"^^xsd:string,
+        "4678:4684"^^xsd:string,
+        "4692:4698"^^xsd:string,
+        "4713:4719"^^xsd:string,
+        "837:843"^^xsd:string,
+        "883:889"^^xsd:string ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isBrotherOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Serbia a :Person,
+        :Woman ;
+    rdfs:label "Princess Elizabeth of Serbia"^^xsd:string ;
+    data:posIndicesFull "142:165"^^xsd:string,
+        "99:131"^^xsd:string ;
+    data:posIndicesPart "1034:1043"^^xsd:string,
+        "1252:1261"^^xsd:string,
+        "1761:1770"^^xsd:string,
+        "1971:1979"^^xsd:string,
+        "2158:2166"^^xsd:string,
+        "2167:2176"^^xsd:string,
+        "2354:2362"^^xsd:string,
+        "2363:2372"^^xsd:string,
+        "2649:2658"^^xsd:string,
+        "2667:2675"^^xsd:string,
+        "2676:2685"^^xsd:string,
+        "2838:2846"^^xsd:string,
+        "2903:2912"^^xsd:string,
+        "3011:3020"^^xsd:string,
+        "3416:3424"^^xsd:string,
+        "3425:3434"^^xsd:string,
+        "343:351"^^xsd:string,
+        "352:361"^^xsd:string,
+        "3847:3855"^^xsd:string,
+        "3856:3865"^^xsd:string,
+        "4177:4183"^^xsd:string,
+        "5397:5405"^^xsd:string,
+        "5406:5415"^^xsd:string,
+        "5465:5473"^^xsd:string,
+        "5511:5520"^^xsd:string,
+        "5623:5631"^^xsd:string,
+        "5632:5641"^^xsd:string,
+        "650:658"^^xsd:string,
+        "693:701"^^xsd:string,
+        "910:918"^^xsd:string ;
+    data:wdtLink wdt:Q257926 ;
+    :alsoKnownAs "Elizabeth Karageorgievich, Princess of Yugoslavia"^^xsd:string,
+        "Jelisaveta Karađorđević"^^xsd:string,
+        "Princess Elizabeth of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Serbia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia ;
+    :isSisterOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Elizabeth_of_Serbia .
+

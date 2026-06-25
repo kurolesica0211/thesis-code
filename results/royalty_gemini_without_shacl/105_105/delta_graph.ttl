@@ -2,22 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man ;
+data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
     :hasBirthYear 1963 ;
     :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
     :hasMarriageYear 1998 ;
     :hasMother data:Chantal_de_Chevron-Villette ;
     :hasRelation data:Camilla_Crociani .
 
-data:Camilla_Crociani a :Woman ;
+data:Camilla_Crociani a :Person,
+        :Woman ;
     :hasFather data:Camillo_Crociani ;
     :hasMother data:Edy_Vessel .
 
-data:Camillo_Crociani a :Man .
+data:Camillo_Crociani a :Man,
+        :Person .
 
-data:Chantal_de_Chevron-Villette a :Woman .
+data:Chantal_de_Chevron-Villette a :Person,
+        :Woman .
 
-data:Edy_Vessel a :Woman .
+data:Edy_Vessel a :Person,
+        :Woman .
 
-data:Prince_Ferdinand_Duke_of_Castro a :Man .
+data:Prince_Ferdinand_Duke_of_Castro a :Man,
+        :Person .
 

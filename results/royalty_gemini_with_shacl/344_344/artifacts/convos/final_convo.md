@@ -85,36 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Frederick Francis III (German: Friedrich Franz Paul Nikolaus Ernst Heinrich; 19 March 1851 – 10 April 1897) was the penultimate Grand Duke of Mecklenburg-Schwerin.
-He was born in Schloss Ludwigslust as the son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz.
-From an early age Frederick Francis suffered from asthma and severe breathing difficulties.
-Frederick Francis' death in Cannes on 10 April 1897 is shrouded in mystery, as he was originally reported to have committed suicide by throwing himself off a parapet of a bridge.
-He was succeeded by his son Frederick Francis IV, who would be the last Grand Duke of Mecklenburg-Schwerin.
-Marriage and children
-
-Frederick Francis married Grand Duchess Anastasia Mikhailovna of Russia, his second cousin once removed, he being the great-great-grandson and she great-granddaughter of Paul I of Russia.
-"
-
-Honours
-
-He received the following orders and decorations:
+Princess Françoise d'Orléans (Françoise Isabelle Louise Marie; 25 December 1902 - 25 February 1953) was born an Orléans Princess of France and became a Princess of Greece and Denmark by marriage.
+She was thus a member of the Greek royal family and a descendant of the "Citizen-King" Louis Philippe I.
 
 
-Ancestry
+Life
 
-Literature
-
-References
-
-External links
-
-@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Frederick Francis III, Grand Duke of Mecklenburg-Schwerin at Wikimedia Commons
+Françoise d'Orléans was born in Paris, the second daughter of Jean d'Orléans, duc de Guise (an Orléanist pretender to the throne of France under the name Jean III) and his wife, the French Princess Isabelle of Orléans.
+Françoise's brother, Prince Henri, Count of Paris, succeeded their father as the Orleanist pretender, under the name Henri VI.
+In Palermo on 11 February 1929, she married Prince Christopher of Greece and Denmark (1888–1940).
+This was Christopher's second marriage - he was the youngest son of King George I of Greece (1845–1913) and his wife, Grand Duchess Olga Constantinovna of Russia (1851–1926).
+Through his father, he was thus a grandson of King Christian IX of Denmark (1818–1906), nicknamed "the father-in-law of Europe" due to his six children all marrying into other royal families.
+They had only one child, the writer Prince Michael of Greece and Denmark (1939–2024), whose marriage to the Greek artist Marina Karella (born 1940) did not conform to the laws of the royal house and thus deprived him of all right of succession to the Greek throne.
+She is grandmother of Princess Alexandra of Greece, an artist, art collector, arts patron, and child life specialist.
+Her other grand-daughter is Princess Olga of Greece, who married Prince Aimone of Savoy-Aosta, one of two claimants to be Head of the House of Savoy.
+The civil war in Greece was preventing her from entering, and the British government refused to grant her asylum.
+Françoise and her son Michael went to Paris, where they lived in the home of Princess Isabella and her second husband, Prince Pierre Murat.
+Françoise did not want to see anyone in their residence and rarely left her rooms.
+She is buried alongside her husband in Tatoi Royal Cemetery, Greece.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +126,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +143,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,134 +451,336 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6a005239-9294-4694-a91d-1abe99bc41a6)
- Call ID: 6a005239-9294-4694-a91d-1abe99bc41a6
+  AssignClass (3f7c1f48-613e-454a-8ea9-4c7dfb1e56ba)
+ Call ID: 3f7c1f48-613e-454a-8ea9-4c7dfb1e56ba
   Args:
-    source: Frederick_Francis_III
-    type: :Man
-  AssignClass (5ed13ceb-7b25-47ec-b263-57f0a54bb746)
- Call ID: 5ed13ceb-7b25-47ec-b263-57f0a54bb746
-  Args:
-    source: Frederick_Francis_III
-    type: :Person
-  AssignClass (f4dcb7bd-f6e7-4590-9f29-4afbebf496cd)
- Call ID: f4dcb7bd-f6e7-4590-9f29-4afbebf496cd
-  Args:
-    source: Frederick_Francis_II
-    type: :Man
-  AssignClass (2098e04e-e140-4d4b-bc6a-13afed6db930)
- Call ID: 2098e04e-e140-4d4b-bc6a-13afed6db930
-  Args:
-    source: Frederick_Francis_II
-    type: :Person
-  AssignClass (c52bb957-cdda-45c1-b83b-69ee0893c548)
- Call ID: c52bb957-cdda-45c1-b83b-69ee0893c548
-  Args:
+    source: Françoise_dOrléans
     type: :Woman
-    source: Augusta_Reuss_of_Köstritz
-  AssignClass (a279e747-3eb6-4a9f-a596-0f861a641260)
- Call ID: a279e747-3eb6-4a9f-a596-0f861a641260
+  AssignClass (bcf103f4-2f1e-483e-9739-d7bd244856b5)
+ Call ID: bcf103f4-2f1e-483e-9739-d7bd244856b5
   Args:
     type: :Person
-    source: Augusta_Reuss_of_Köstritz
-  AssignClass (1dc9750e-8568-4b4a-8f58-a6b673584aa6)
- Call ID: 1dc9750e-8568-4b4a-8f58-a6b673584aa6
+    source: Françoise_dOrléans
+  AddLiteral (66042e3f-d655-48a5-90fd-7b6ef22bd99a)
+ Call ID: 66042e3f-d655-48a5-90fd-7b6ef22bd99a
   Args:
-    type: :Man
-    source: Frederick_Francis_IV
-  AssignClass (d836f79b-6f1d-4c47-bfd8-be4fec609e8a)
- Call ID: d836f79b-6f1d-4c47-bfd8-be4fec609e8a
-  Args:
-    type: :Person
-    source: Frederick_Francis_IV
-  AssignClass (f8a85b75-55d9-433c-9c1f-d40af95e690f)
- Call ID: f8a85b75-55d9-433c-9c1f-d40af95e690f
-  Args:
-    source: Anastasia_Mikhailovna_of_Russia
-    type: :Woman
-  AssignClass (4132b0bc-1f08-4598-abf0-6a7d4f8e366d)
- Call ID: 4132b0bc-1f08-4598-abf0-6a7d4f8e366d
-  Args:
-    source: Anastasia_Mikhailovna_of_Russia
-    type: :Person
-  AddLiteral (44513e36-612b-4b87-8623-6270164af8e7)
- Call ID: 44513e36-612b-4b87-8623-6270164af8e7
-  Args:
-    literal_value: Friedrich Franz Paul Nikolaus Ernst Heinrich
-    relation: :alsoKnownAs
-    source: Frederick_Francis_III
-    literal_type: xsd:string
-  AddLiteral (101e4910-d9c5-4c2a-8abc-59015c6bca67)
- Call ID: 101e4910-d9c5-4c2a-8abc-59015c6bca67
-  Args:
-    source: Frederick_Francis_III
     literal_type: xsd:integer
-    literal_value: 1851
+    source: Françoise_dOrléans
     relation: :hasBirthYear
-  AddLiteral (d566c6d5-a9a5-451f-aadb-83aa3573f831)
- Call ID: d566c6d5-a9a5-451f-aadb-83aa3573f831
+    literal_value: 1902
+  AddLiteral (814120fa-9b31-47a5-aae1-4f81180f104e)
+ Call ID: 814120fa-9b31-47a5-aae1-4f81180f104e
   Args:
-    source: Frederick_Francis_III
-    literal_type: xsd:integer
-    literal_value: 1897
+    source: Françoise_dOrléans
     relation: :hasDeathYear
-  AddTriple (c2a5c3c0-8a66-4aa1-9bd1-a192fec1d0b0)
- Call ID: c2a5c3c0-8a66-4aa1-9bd1-a192fec1d0b0
+    literal_type: xsd:integer
+    literal_value: 1953
+  AssignClass (97bffe33-7025-490d-9e9c-9fd5da24a816)
+ Call ID: 97bffe33-7025-490d-9e9c-9fd5da24a816
   Args:
-    source: Frederick_Francis_III
+    source: Jean_dOrléans
+    type: :Man
+  AssignClass (45e47849-9f9a-4a55-8e61-fc2ae90d94f2)
+ Call ID: 45e47849-9f9a-4a55-8e61-fc2ae90d94f2
+  Args:
+    type: :Person
+    source: Jean_dOrléans
+  AssignClass (2d975659-f924-4221-b0ea-59841b17f9fb)
+ Call ID: 2d975659-f924-4221-b0ea-59841b17f9fb
+  Args:
+    type: :Woman
+    source: Isabelle_ofOrléans
+  AssignClass (4fee08cc-6525-4f92-b7ae-0d99e1eb1fec)
+ Call ID: 4fee08cc-6525-4f92-b7ae-0d99e1eb1fec
+  Args:
+    type: :Person
+    source: Isabelle_ofOrléans
+  AddTriple (9a344f5f-a3a4-47a9-bc21-b54c0242ff65)
+ Call ID: 9a344f5f-a3a4-47a9-bc21-b54c0242ff65
+  Args:
+    source: Françoise_dOrléans
     relation: :hasFather
-    target: Frederick_Francis_II
-  AddTriple (cc36862a-3be3-4db7-850b-a80c64262d39)
- Call ID: cc36862a-3be3-4db7-850b-a80c64262d39
+    target: Jean_dOrléans
+  AddTriple (f6390986-0630-40c6-913d-4608e55bd5ac)
+ Call ID: f6390986-0630-40c6-913d-4608e55bd5ac
   Args:
+    target: Isabelle_ofOrléans
+    source: Françoise_dOrléans
     relation: :hasMother
-    target: Augusta_Reuss_of_Köstritz
-    source: Frederick_Francis_III
-  AddTriple (171b6ae9-3ce0-4968-b6d8-230a2544aa6d)
- Call ID: 171b6ae9-3ce0-4968-b6d8-230a2544aa6d
+  AssignClass (80213c46-2c13-4e1d-a8da-17037f2c4432)
+ Call ID: 80213c46-2c13-4e1d-a8da-17037f2c4432
   Args:
-    target: Frederick_Francis_III
-    relation: :isSonOf
-    source: Frederick_Francis_IV
-  AddTriple (bf7a106b-aad8-40c8-9fda-268e740abe3f)
- Call ID: bf7a106b-aad8-40c8-9fda-268e740abe3f
+    type: :Man
+    source: Henri_Count_of_Paris
+  AssignClass (102a3ab8-566e-412d-82fb-e33060d00916)
+ Call ID: 102a3ab8-566e-412d-82fb-e33060d00916
   Args:
-    source: Frederick_Francis_III
-    target: Anastasia_Mikhailovna_of_Russia
+    type: :Person
+    source: Henri_Count_of_Paris
+  AddTriple (d0ec4181-6085-4461-b9ec-6fe590845a5b)
+ Call ID: d0ec4181-6085-4461-b9ec-6fe590845a5b
+  Args:
+    source: Françoise_dOrléans
+    relation: :hasBrother
+    target: Henri_Count_of_Paris
+  AssignClass (ea1ba7b3-4491-4c0a-873f-9f5444d4d00a)
+ Call ID: ea1ba7b3-4491-4c0a-873f-9f5444d4d00a
+  Args:
+    type: :Man
+    source: Christopher_of_Greece_and_Denmark
+  AssignClass (d67b8885-0488-41e2-b9be-c2997913fa52)
+ Call ID: d67b8885-0488-41e2-b9be-c2997913fa52
+  Args:
+    type: :Person
+    source: Christopher_of_Greece_and_Denmark
+  AddLiteral (64301828-60eb-4c33-a4da-c45b56904b9c)
+ Call ID: 64301828-60eb-4c33-a4da-c45b56904b9c
+  Args:
+    literal_value: 1929
+    source: Françoise_dOrléans
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (f701c9fa-c7e4-48ae-a5c4-87b489a8d313)
+ Call ID: f701c9fa-c7e4-48ae-a5c4-87b489a8d313
+  Args:
+    source: Françoise_dOrléans
     relation: :hasRelation
-  AddTriple (53f45b0d-3e2a-4d64-b693-36773712b738)
- Call ID: 53f45b0d-3e2a-4d64-b693-36773712b738
+    target: Christopher_of_Greece_and_Denmark
+  AssignClass (ffd18909-b261-420d-bab6-e220e857d0f7)
+ Call ID: ffd18909-b261-420d-bab6-e220e857d0f7
   Args:
-    relation: :hasSex
-    target: :Male
-    source: Frederick_Francis_III
-  AddTriple (c1358b12-4f9e-4195-9b1e-d759ba48afe9)
- Call ID: c1358b12-4f9e-4195-9b1e-d759ba48afe9
+    type: :Man
+    source: George_I_of_Greece
+  AssignClass (6add95ef-a5e4-4cfb-a392-c5a17ec2bf56)
+ Call ID: 6add95ef-a5e4-4cfb-a392-c5a17ec2bf56
   Args:
-    target: :Male
-    relation: :hasSex
-    source: Frederick_Francis_II
-  AddTriple (105b3dd8-08cf-455c-afad-05b4f182e3f3)
- Call ID: 105b3dd8-08cf-455c-afad-05b4f182e3f3
+    source: George_I_of_Greece
+    type: :Person
+  AssignClass (8a093de1-a030-4582-bb72-992d8304edf2)
+ Call ID: 8a093de1-a030-4582-bb72-992d8304edf2
   Args:
-    relation: :hasSex
-    target: :Female
-    source: Augusta_Reuss_of_Köstritz
-  AddTriple (5483e072-ad8b-4d57-8aa9-ece6cf557d49)
- Call ID: 5483e072-ad8b-4d57-8aa9-ece6cf557d49
+    type: :Woman
+    source: Olga_Constantinovna_of_Russia
+  AssignClass (114a43a0-8ac6-4ccc-9cd6-b8ad5eb9a121)
+ Call ID: 114a43a0-8ac6-4ccc-9cd6-b8ad5eb9a121
   Args:
-    target: :Male
-    relation: :hasSex
-    source: Frederick_Francis_IV
-  AddTriple (9fa7f135-5200-48fe-ba57-142d2114414f)
- Call ID: 9fa7f135-5200-48fe-ba57-142d2114414f
+    type: :Person
+    source: Olga_Constantinovna_of_Russia
+  AddTriple (1d9cbb7b-e2d9-477f-8628-c6fc14a61c18)
+ Call ID: 1d9cbb7b-e2d9-477f-8628-c6fc14a61c18
   Args:
-    target: :Female
-    relation: :hasSex
-    source: Anastasia_Mikhailovna_of_Russia
-  Finish (114fc92c-b9a3-4127-b1d1-92547e98b44b)
- Call ID: 114fc92c-b9a3-4127-b1d1-92547e98b44b
+    target: George_I_of_Greece
+    source: Christopher_of_Greece_and_Denmark
+    relation: :hasFather
+  AddTriple (31aa5102-964d-4e6d-bb05-40771ca4dab0)
+ Call ID: 31aa5102-964d-4e6d-bb05-40771ca4dab0
   Args:
+    source: Christopher_of_Greece_and_Denmark
+    relation: :hasMother
+    target: Olga_Constantinovna_of_Russia
+  AssignClass (656a2b89-6bae-4e46-91b2-c2c8c273b9ad)
+ Call ID: 656a2b89-6bae-4e46-91b2-c2c8c273b9ad
+  Args:
+    source: Michael_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (9d34b5ac-7c91-46cd-91bc-139378a0750f)
+ Call ID: 9d34b5ac-7c91-46cd-91bc-139378a0750f
+  Args:
+    type: :Person
+    source: Michael_of_Greece_and_Denmark
+  AddTriple (ed220e7d-1e11-4e18-a140-4a4b1797e16a)
+ Call ID: ed220e7d-1e11-4e18-a140-4a4b1797e16a
+  Args:
+    relation: :hasFather
+    source: Michael_of_Greece_and_Denmark
+    target: Christopher_of_Greece_and_Denmark
+  AddTriple (107604d0-2e68-4744-96ce-5dbb7e3a2ff3)
+ Call ID: 107604d0-2e68-4744-96ce-5dbb7e3a2ff3
+  Args:
+    target: Françoise_dOrléans
+    relation: :hasMother
+    source: Michael_of_Greece_and_Denmark
+  AssignClass (8701d986-0ca2-4b5b-a202-31efa7b348fa)
+ Call ID: 8701d986-0ca2-4b5b-a202-31efa7b348fa
+  Args:
+    type: :Woman
+    source: Marina_Karella
+  AssignClass (991215b7-caec-4b38-add4-23f9e264ed6b)
+ Call ID: 991215b7-caec-4b38-add4-23f9e264ed6b
+  Args:
+    source: Marina_Karella
+    type: :Person
+  AddTriple (3896744a-01bb-4a2c-bcf7-fd52e039eefa)
+ Call ID: 3896744a-01bb-4a2c-bcf7-fd52e039eefa
+  Args:
+    source: Michael_of_Greece_and_Denmark
+    relation: :hasRelation
+    target: Marina_Karella
+  AssignClass (f56462b5-8727-4142-84d4-9d477b99a7bb)
+ Call ID: f56462b5-8727-4142-84d4-9d477b99a7bb
+  Args:
+    type: :Woman
+    source: Alexandra_of_Greece
+  AssignClass (f871d2bf-bb33-4099-96ce-6963c78fb772)
+ Call ID: f871d2bf-bb33-4099-96ce-6963c78fb772
+  Args:
+    type: :Person
+    source: Alexandra_of_Greece
+  AssignClass (a50d7a46-20ae-45be-bec2-3eda3b5bbf5e)
+ Call ID: a50d7a46-20ae-45be-bec2-3eda3b5bbf5e
+  Args:
+    source: Olga_of_Greece
+    type: :Woman
+  AssignClass (e29fe3a8-3c28-4be8-9f92-49da806f2112)
+ Call ID: e29fe3a8-3c28-4be8-9f92-49da806f2112
+  Args:
+    type: :Person
+    source: Olga_of_Greece
+  AddTriple (abd74f6d-5dd5-4d42-b6b0-2fb2211f0f75)
+ Call ID: abd74f6d-5dd5-4d42-b6b0-2fb2211f0f75
+  Args:
+    relation: :hasParent
+    source: Alexandra_of_Greece
+    target: Michael_of_Greece_and_Denmark
+  AddTriple (fa089179-60f1-4239-b478-fa4be1d5915e)
+ Call ID: fa089179-60f1-4239-b478-fa4be1d5915e
+  Args:
+    target: Michael_of_Greece_and_Denmark
+    source: Olga_of_Greece
+    relation: :hasParent
+  AssignClass (34f210e7-aab7-4f25-98b6-a169e8acef55)
+ Call ID: 34f210e7-aab7-4f25-98b6-a169e8acef55
+  Args:
+    type: :Man
+    source: Aimone_of_Savoy-Aosta
+  AssignClass (cc95de5b-6392-41bf-bb1e-8d210fab38f6)
+ Call ID: cc95de5b-6392-41bf-bb1e-8d210fab38f6
+  Args:
+    source: Aimone_of_Savoy-Aosta
+    type: :Person
+  AddTriple (c5a943a6-e7df-4530-a0d4-3c50bc696709)
+ Call ID: c5a943a6-e7df-4530-a0d4-3c50bc696709
+  Args:
+    source: Olga_of_Greece
+    relation: :hasRelation
+    target: Aimone_of_Savoy-Aosta
+  AssignClass (06b91103-f5bf-4fee-9930-e8df9ef766df)
+ Call ID: 06b91103-f5bf-4fee-9930-e8df9ef766df
+  Args:
+    type: :Woman
+    source: Isabella_Murat
+  AssignClass (9e115b41-6a3b-434e-9ee4-e26cbcb5b81a)
+ Call ID: 9e115b41-6a3b-434e-9ee4-e26cbcb5b81a
+  Args:
+    source: Isabella_Murat
+    type: :Person
+  AssignClass (7d962a05-32c4-47da-b4e5-6e7ce7ea14a3)
+ Call ID: 7d962a05-32c4-47da-b4e5-6e7ce7ea14a3
+  Args:
+    source: Pierre_Murat
+    type: :Man
+  AssignClass (f2fcd755-4e5e-4a5d-995d-e0cc98fc004a)
+ Call ID: f2fcd755-4e5e-4a5d-995d-e0cc98fc004a
+  Args:
+    type: :Person
+    source: Pierre_Murat
+  AddTriple (06687e65-ccd7-4223-b979-5b1fa4904427)
+ Call ID: 06687e65-ccd7-4223-b979-5b1fa4904427
+  Args:
+    target: Pierre_Murat
+    relation: :hasRelation
+    source: Isabella_Murat
+  Finish (32b8ac39-cd47-4283-8707-73b195d62273)
+ Call ID: 32b8ac39-cd47-4283-8707-73b195d62273
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -585,32 +873,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_Francis_IV a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:Frederick_Francis_III .
-
-  data:Anastasia_Mikhailovna_of_Russia a :Person,
+  data:Alexandra_of_Greece a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasParent data:Michael_of_Greece_and_Denmark .
 
-  data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+  data:Isabella_Murat a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasRelation data:Pierre_Murat .
 
-  data:Frederick_Francis_II a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Olga_of_Greece a :Person,
+          :Woman ;
+      :hasParent data:Michael_of_Greece_and_Denmark ;
+      :hasRelation data:Aimone_of_Savoy-Aosta .
 
-  data:Frederick_Francis_III a :Man,
+  data:Aimone_of_Savoy-Aosta a :Man,
+          :Person .
+
+  data:Fran%C3%A7oise_dOrl%C3%A9ans a :Person,
+          :Woman ;
+      :hasBirthYear 1902 ;
+      :hasBrother data:Henri_Count_of_Paris ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Jean_dOrl%C3%A9ans ;
+      :hasMarriageYear 1929 ;
+      :hasMother data:Isabelle_ofOrl%C3%A9ans ;
+      :hasRelation data:Christopher_of_Greece_and_Denmark .
+
+  data:George_I_of_Greece a :Man,
+          :Person .
+
+  data:Henri_Count_of_Paris a :Man,
+          :Person .
+
+  data:Isabelle_ofOrl%C3%A9ans a :Person,
+          :Woman .
+
+  data:Jean_dOrl%C3%A9ans a :Man,
+          :Person .
+
+  data:Marina_Karella a :Person,
+          :Woman .
+
+  data:Olga_Constantinovna_of_Russia a :Person,
+          :Woman .
+
+  data:Pierre_Murat a :Man,
+          :Person .
+
+  data:Christopher_of_Greece_and_Denmark a :Man,
           :Person ;
-      :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
-      :hasBirthYear 1851 ;
-      :hasDeathYear 1897 ;
-      :hasFather data:Frederick_Francis_II ;
-      :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
-      :hasRelation data:Anastasia_Mikhailovna_of_Russia ;
-      :hasSex data:Male .
+      :hasFather data:George_I_of_Greece ;
+      :hasMother data:Olga_Constantinovna_of_Russia .
+
+  data:Michael_of_Greece_and_Denmark a :Man,
+          :Person ;
+      :hasFather data:Christopher_of_Greece_and_Denmark ;
+      :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+      :hasRelation data:Marina_Karella .
 
 
 
@@ -622,406 +941,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4bc442a6-ec2c-431d-bd4e-ec5bab22c4a0)
- Call ID: 4bc442a6-ec2c-431d-bd4e-ec5bab22c4a0
+  ValidateShacl (c60778c4-0d97-48d0-b3f3-fb1b5d10b4e0)
+ Call ID: c60778c4-0d97-48d0-b3f3-fb1b5d10b4e0
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:49
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
+      The node George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='George_I_of_Greece', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
+      The node Christopher_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Christopher_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
+      The node Olga_Constantinovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Olga_Constantinovna_of_Russia', class=':Woman')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederick_Francis_III is assigned as a son of Frederick_Francis_IV, but it is missing the mandatory :Ancestor class.
+      The node Fran%C3%A7oise_dOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
+      AssignClass(node='Fran%C3%A7oise_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Francis_II is assigned as a father of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
+      The node George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_II', class=':Ancestor')
+      AssignClass(node='George_I_of_Greece', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Augusta_Reuss_of_K%C3%B6stritz is assigned as a mother of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
+      The node Christopher_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
+      AssignClass(node='Christopher_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
+      The node Jean_dOrl%C3%A9ans is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Jean_dOrl%C3%A9ans', class=':Man')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
+      The node Olga_Constantinovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Olga_Constantinovna_of_Russia', class=':Woman')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
+      The node Fran%C3%A7oise_dOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Fran%C3%A7oise_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
+      The node Isabelle_ofOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Isabelle_ofOrl%C3%A9ans', class=':Woman')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
+      The node George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='George_I_of_Greece', class=':Man')
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
+      The node Christopher_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Christopher_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Francis_III is assigned as a son of Frederick_Francis_IV, but it is missing the mandatory :Ancestor class.
+      The node Jean_dOrl%C3%A9ans is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
+      AssignClass(node='Jean_dOrl%C3%A9ans', class=':Man')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederick_Francis_II is assigned as a father of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
+      The node Olga_Constantinovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_II', class=':Ancestor')
+      AssignClass(node='Olga_Constantinovna_of_Russia', class=':Woman')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Augusta_Reuss_of_K%C3%B6stritz is assigned as a mother of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
+      The node Fran%C3%A7oise_dOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
+      AssignClass(node='Fran%C3%A7oise_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
+      The node Isabelle_ofOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Isabelle_ofOrl%C3%A9ans', class=':Woman')
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
+      The node Jean_dOrl%C3%A9ans is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Jean_dOrl%C3%A9ans', class=':Man')
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
+      The node Isabelle_ofOrl%C3%A9ans is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Isabelle_ofOrl%C3%A9ans', class=':Woman')
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
+      The node Michael_of_Greece_and_Denmark is missing the required class :Ancestor or :Person.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_III is assigned as a son of Frederick_Francis_IV, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_II is assigned as a father of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_Francis_II', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Augusta_Reuss_of_K%C3%B6stritz is assigned as a mother of Frederick_Francis_III, but it is missing the mandatory :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_IV lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_III lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Male' for Frederick_Francis_II lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Anastasia_Mikhailovna_of_Russia lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Augusta_Reuss_of_K%C3%B6stritz lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Michael_of_Greece_and_Denmark', class=':Person')
 
 
 
@@ -1030,34 +1149,52 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (469a262b-6507-4e88-b98b-219aade02906)
- Call ID: 469a262b-6507-4e88-b98b-219aade02906
+  AssignClass (1b63d414-6f40-4479-ae34-1608731deed8)
+ Call ID: 1b63d414-6f40-4479-ae34-1608731deed8
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (a715838b-b301-4b7f-b24a-07dfdf0408ab)
- Call ID: a715838b-b301-4b7f-b24a-07dfdf0408ab
+    source: George_I_of_Greece
+    type: :Ancestor
+  AssignClass (a7fb2598-a4fb-42c9-aeb6-979148437360)
+ Call ID: a7fb2598-a4fb-42c9-aeb6-979148437360
   Args:
-    type: :Sex
-    source: Female
-  AssignClass (874d7dfe-f980-4c31-a450-5ab44813fb95)
- Call ID: 874d7dfe-f980-4c31-a450-5ab44813fb95
+    source: Christopher_of_Greece_and_Denmark
+    type: :Ancestor
+  AssignClass (a45f9167-c27f-4e2f-b170-66a9812b21fe)
+ Call ID: a45f9167-c27f-4e2f-b170-66a9812b21fe
+  Args:
+    source: Olga_Constantinovna_of_Russia
+    type: :Ancestor
+  AssignClass (59917a38-ce62-4178-b278-5408cc92ccf5)
+ Call ID: 59917a38-ce62-4178-b278-5408cc92ccf5
   Args:
     type: :Ancestor
-    source: Frederick_Francis_III
-  AssignClass (7b517b25-0a62-4a95-8cf1-043c863dad5a)
- Call ID: 7b517b25-0a62-4a95-8cf1-043c863dad5a
+    source: Françoise_dOrléans
+  AssignClass (cf881cda-ef62-4ee4-b20e-d1e0e3026569)
+ Call ID: cf881cda-ef62-4ee4-b20e-d1e0e3026569
   Args:
     type: :Ancestor
-    source: Frederick_Francis_II
-  AssignClass (84433047-5bd9-4fab-8e14-0e093acb7d20)
- Call ID: 84433047-5bd9-4fab-8e14-0e093acb7d20
+    source: Jean_dOrléans
+  AssignClass (a659b91d-c6ca-43da-acf7-ca49fc8fc6fb)
+ Call ID: a659b91d-c6ca-43da-acf7-ca49fc8fc6fb
   Args:
     type: :Ancestor
-    source: Augusta_Reuss_of_Köstritz
-  Finish (a753f4ac-c3a9-47c1-a69e-563482b41686)
- Call ID: a753f4ac-c3a9-47c1-a69e-563482b41686
+    source: Isabelle_ofOrléans
+  AssignClass (2a0fd022-ac01-451c-8fad-cafcbcad5334)
+ Call ID: 2a0fd022-ac01-451c-8fad-cafcbcad5334
   Args:
+    type: :Ancestor
+    source: Michael_of_Greece_and_Denmark
+  Finish (9369e483-23ea-44f0-8290-9572c9448345)
+ Call ID: 9369e483-23ea-44f0-8290-9572c9448345
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1082,39 +1219,70 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_Francis_IV a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:Frederick_Francis_III .
-
-  data:Anastasia_Mikhailovna_of_Russia a :Person,
+  data:Alexandra_of_Greece a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasParent data:Michael_of_Greece_and_Denmark .
 
-  data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+  data:Isabella_Murat a :Person,
+          :Woman ;
+      :hasRelation data:Pierre_Murat .
+
+  data:Olga_of_Greece a :Person,
+          :Woman ;
+      :hasParent data:Michael_of_Greece_and_Denmark ;
+      :hasRelation data:Aimone_of_Savoy-Aosta .
+
+  data:Aimone_of_Savoy-Aosta a :Man,
+          :Person .
+
+  data:Fran%C3%A7oise_dOrl%C3%A9ans a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasBirthYear 1902 ;
+      :hasBrother data:Henri_Count_of_Paris ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Jean_dOrl%C3%A9ans ;
+      :hasMarriageYear 1929 ;
+      :hasMother data:Isabelle_ofOrl%C3%A9ans ;
+      :hasRelation data:Christopher_of_Greece_and_Denmark .
 
-  data:Frederick_Francis_II a :Ancestor,
+  data:George_I_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Henri_Count_of_Paris a :Man,
+          :Person .
+
+  data:Isabelle_ofOrl%C3%A9ans a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Jean_dOrl%C3%A9ans a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Marina_Karella a :Person,
+          :Woman .
+
+  data:Olga_Constantinovna_of_Russia a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Pierre_Murat a :Man,
+          :Person .
+
+  data:Christopher_of_Greece_and_Denmark a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:George_I_of_Greece ;
+      :hasMother data:Olga_Constantinovna_of_Russia .
 
-  data:Frederick_Francis_III a :Ancestor,
+  data:Michael_of_Greece_and_Denmark a :Ancestor,
           :Man,
           :Person ;
-      :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
-      :hasBirthYear 1851 ;
-      :hasDeathYear 1897 ;
-      :hasFather data:Frederick_Francis_II ;
-      :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
-      :hasRelation data:Anastasia_Mikhailovna_of_Russia ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+      :hasFather data:Christopher_of_Greece_and_Denmark ;
+      :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+      :hasRelation data:Marina_Karella .
 
 
 
@@ -1126,8 +1294,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (f6c95ebf-8a91-4bd4-a660-113e5b46dd7c)
- Call ID: f6c95ebf-8a91-4bd4-a660-113e5b46dd7c
+  ValidateShacl (5c41e93e-7d38-4c1d-9997-cda8237d2ab6)
+ Call ID: 5c41e93e-7d38-4c1d-9997-cda8237d2ab6
   Args:
 
 ================================= Tool Message =================================
@@ -1138,6 +1306,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5acf28fc-b926-47c1-858f-78c4cfee9a73)
- Call ID: 5acf28fc-b926-47c1-858f-78c4cfee9a73
+  Finish (59f168f0-c454-4efc-9238-a2cdd7b2d66c)
+ Call ID: 59f168f0-c454-4efc-9238-a2cdd7b2d66c
   Args:

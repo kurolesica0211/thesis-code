@@ -2,36 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Victoria_Louise_of_Prussia a :Woman ;
-    :hasBirthYear 1892 ;
-    :hasBrother data:Prince_Joachim ;
-    :hasDaughter data:Princess_Frederica ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Wilhelm_II ;
-    :hasMarriageYear 1913 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasRelation data:Ernest_Augustus_of_Hanover ;
-    :hasSon data:Prince_Christian_Oscar,
-        data:Prince_Ernest_Augustus_1914,
-        data:Prince_George_William_1915,
-        data:Prince_Welf_Henry ;
-    :knownAs "Sissy"^^xsd:string .
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Hereditary_Prince_Knud ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:Princess_Caroline-Mathilde ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg ;
+    :isBrotherOf data:Prince_Ingolf .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+data:Frederik_IX a :Man,
+        :Person ;
+    :isBrotherOf data:Hereditary_Prince_Knud .
 
-data:Ernest_Augustus_of_Hanover a :Man .
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 .
 
-data:Prince_Christian_Oscar a :Man .
+data:Prince_Ingolf a :Man,
+        :Person .
 
-data:Prince_Ernest_Augustus_1914 a :Man .
+data:Princess_Caroline-Mathilde a :Person,
+        :Woman .
 
-data:Prince_George_William_1915 a :Man .
-
-data:Prince_Joachim a :Man .
-
-data:Prince_Welf_Henry a :Man .
-
-data:Princess_Frederica a :Woman .
-
-data:Wilhelm_II a :Man .
+data:Hereditary_Prince_Knud a :Man,
+        :Person .
 

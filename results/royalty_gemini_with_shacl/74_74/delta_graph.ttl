@@ -2,39 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceGeorge a :Ancestor,
-        :Man ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1942 ;
-    :hasFather data:GeorgeV ;
-    :hasMarriageYear 1934 ;
-    :hasMother data:QueenMary ;
-    :hasRelation data:PrincessMarina ;
-    :isBrotherOf data:EdwardVIII,
-        data:GeorgeVI ;
-    :isFatherOf data:AlexandraKent,
-        data:EdwardKent,
-        data:MichaelKent .
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasBirthYear "1902"^^xsd:positiveInteger ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael ;
+    :hasDeathYear "1942"^^xsd:positiveInteger ;
+    :hasFather data:George_V ;
+    :hasMarriageYear "1934"^^xsd:positiveInteger ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI .
 
-data:EdwardVIII a :Man .
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasChild data:Alexandra,
+        data:Edward_Duke_of_Kent,
+        data:Michael .
 
-data:GeorgeV a :Ancestor,
+data:Edward_VIII a :Man .
+
+data:George_V a :Ancestor,
         :Man .
 
-data:GeorgeVI a :Man .
+data:George_VI a :Man .
 
-data:PrincessMarina a :Ancestor,
-        :Woman ;
-    :isMotherOf data:AlexandraKent,
-        data:EdwardKent,
-        data:MichaelKent .
-
-data:QueenMary a :Ancestor,
+data:Queen_Mary a :Ancestor,
         :Woman .
 
-data:AlexandraKent a :Woman .
+data:Alexandra a :Woman .
 
-data:EdwardKent a :Man .
+data:Edward_Duke_of_Kent a :Man .
 
-data:MichaelKent a :Man .
+data:Michael a :Man .
 

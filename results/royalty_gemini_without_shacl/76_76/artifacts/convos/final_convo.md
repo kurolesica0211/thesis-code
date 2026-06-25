@@ -96,6 +96,8 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +113,9 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +130,23 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,104 +438,94 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6fc24acb-3153-43bf-8348-42242ffc839d)
- Call ID: 6fc24acb-3153-43bf-8348-42242ffc839d
+  AssignClass (6a9cc136-5c65-4948-8bc0-a3569bded27e)
+ Call ID: 6a9cc136-5c65-4948-8bc0-a3569bded27e
   Args:
-    source: Princess_Mariam_de_Bagration
-    type: :Person
-  AssignClass (64e27aca-00b9-4f3e-879a-c6bd46c22fc1)
- Call ID: 64e27aca-00b9-4f3e-879a-c6bd46c22fc1
-  Args:
+    source: :Princess_Nuria
     type: :Woman
-    source: Princess_Mariam_de_Bagration
-  AssignClass (5d01e7dc-a06e-42e8-a577-2e8130897047)
- Call ID: 5d01e7dc-a06e-42e8-a577-2e8130897047
+  AssignClass (4777e65b-a6f6-48a2-81c0-49a7c45b47ee)
+ Call ID: 4777e65b-a6f6-48a2-81c0-49a7c45b47ee
   Args:
-    type: :Person
-    source: Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (3e01affc-db9b-436d-91f8-6b77a336c7fe)
- Call ID: 3e01affc-db9b-436d-91f8-6b77a336c7fe
-  Args:
-    source: Prince_Irakli_Bagration_of_Mukhrani
-    type: :Man
-  AssignClass (150ccf6c-fddb-4239-9648-218dc922be8f)
- Call ID: 150ccf6c-fddb-4239-9648-218dc922be8f
-  Args:
-    type: :Person
-    source: Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
-  AssignClass (764ca2a3-397e-4fc0-9f7a-1055c33cad81)
- Call ID: 764ca2a3-397e-4fc0-9f7a-1055c33cad81
-  Args:
-    source: Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    source: :Princess_Francoise
     type: :Woman
-  AssignClass (ed9811c9-d32d-4cf4-8d8c-cc692857cad6)
- Call ID: ed9811c9-d32d-4cf4-8d8c-cc692857cad6
+  AssignClass (7fca978f-984b-4847-9da2-ed28f10b0286)
+ Call ID: 7fca978f-984b-4847-9da2-ed28f10b0286
   Args:
-    type: :Person
-    source: Dr_Tomas_Ortiz_y_Valero
-  AssignClass (dff96e24-b021-4cd8-8d2b-30e4502b8ebf)
- Call ID: dff96e24-b021-4cd8-8d2b-30e4502b8ebf
+    source: :Princess_Mariam
+    type: :Woman
+  AssignClass (b9bcf001-e4e8-4c42-971d-85a4b50e76b8)
+ Call ID: b9bcf001-e4e8-4c42-971d-85a4b50e76b8
   Args:
-    type: :Man
-    source: Dr_Tomas_Ortiz_y_Valero
-  AssignClass (977feab6-4486-4001-a21d-08408d86db1a)
- Call ID: 977feab6-4486-4001-a21d-08408d86db1a
+    source: :Princess_Monique
+    type: :Woman
+  AssignClass (f490637c-6d71-48f9-8edd-d357bf05f13a)
+ Call ID: f490637c-6d71-48f9-8edd-d357bf05f13a
   Args:
-    type: :Person
-    source: Bagrat_de_Bagration
-  AssignClass (00bc599d-5231-4c2a-b99c-fc00bf76e6e3)
- Call ID: 00bc599d-5231-4c2a-b99c-fc00bf76e6e3
+    source: :Princess_Mariam_de_Bagration
+    type: :Woman
+  AddLiteral (564f33c2-2b47-4306-8dac-d20a2c8c3627)
+ Call ID: 564f33c2-2b47-4306-8dac-d20a2c8c3627
   Args:
-    source: Bagrat_de_Bagration
-    type: :Man
-  AssignClass (f6fad213-ee81-42ea-af4d-f43e185f0ef5)
- Call ID: f6fad213-ee81-42ea-af4d-f43e185f0ef5
-  Args:
-    source: Jorge_de_Bagration
-    type: :Person
-  AssignClass (ef703c6d-33ec-4483-bf24-5609b9da2bed)
- Call ID: ef703c6d-33ec-4483-bf24-5609b9da2bed
-  Args:
-    source: Jorge_de_Bagration
-    type: :Man
-  AddTriple (11c96db1-6346-402f-8b76-d8bf280777b1)
- Call ID: 11c96db1-6346-402f-8b76-d8bf280777b1
-  Args:
-    target: Prince_Irakli_Bagration_of_Mukhrani
-    relation: :hasFather
-    source: Princess_Mariam_de_Bagration
-  AddTriple (41bfd376-abc9-4fe8-97dd-c77142941f21)
- Call ID: 41bfd376-abc9-4fe8-97dd-c77142941f21
-  Args:
-    relation: :hasMother
-    source: Princess_Mariam_de_Bagration
-    target: Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
-  AddLiteral (9fa66a19-9f06-4722-911f-d8d7f0f3d0ad)
- Call ID: 9fa66a19-9f06-4722-911f-d8d7f0f3d0ad
-  Args:
-    literal_value: 1947
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Princess_Mariam_de_Bagration
-  AddLiteral (c37b9e75-86fd-4d29-b7a7-056e258c9539)
- Call ID: c37b9e75-86fd-4d29-b7a7-056e258c9539
+    source: :Princess_Mariam_de_Bagration
+    literal_value: 1947
+  AssignClass (68cfecee-c2ea-45dc-8c9b-74a3a2727957)
+ Call ID: 68cfecee-c2ea-45dc-8c9b-74a3a2727957
   Args:
-    literal_type: xsd:integer
-    source: Princess_Mariam_de_Bagration
-    relation: :hasMarriageYear
+    source: :Prince_Irakli_Bagration_of_Mukhrani
+    type: :Man
+  AssignClass (279f8e1d-33f3-4b1e-83f1-da0bebca5e2a)
+ Call ID: 279f8e1d-33f3-4b1e-83f1-da0bebca5e2a
+  Args:
+    source: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    type: :Woman
+  AddTriple (2e3410df-ad5c-48ea-af93-376c83842bcc)
+ Call ID: 2e3410df-ad5c-48ea-af93-376c83842bcc
+  Args:
+    source: :Princess_Mariam_de_Bagration
+    target: :Prince_Irakli_Bagration_of_Mukhrani
+    relation: :hasFather
+  AddTriple (7976fd98-da9e-46e8-9882-fe61620f817f)
+ Call ID: 7976fd98-da9e-46e8-9882-fe61620f817f
+  Args:
+    source: :Princess_Mariam_de_Bagration
+    relation: :hasMother
+    target: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
+  AssignClass (c62c9af6-8f2a-4cac-8324-22639d3ac20b)
+ Call ID: c62c9af6-8f2a-4cac-8324-22639d3ac20b
+  Args:
+    source: :Dr_Tomas_Ortiz_y_Valero
+    type: :Man
+  AddLiteral (d28ddd63-2aed-4e1e-ac88-6320ca99c75d)
+ Call ID: d28ddd63-2aed-4e1e-ac88-6320ca99c75d
+  Args:
+    source: :Princess_Mariam_de_Bagration
     literal_value: 1982
-  AddTriple (a55afa64-52bb-48a8-bef8-9fda06646432)
- Call ID: a55afa64-52bb-48a8-bef8-9fda06646432
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (9d8ce726-0eea-49f8-8c96-88f3a5f14873)
+ Call ID: 9d8ce726-0eea-49f8-8c96-88f3a5f14873
   Args:
-    relation: :hasSister
-    source: Bagrat_de_Bagration
-    target: Princess_Mariam_de_Bagration
-  AddTriple (e238014f-fadd-4a19-b639-95e60364c96e)
- Call ID: e238014f-fadd-4a19-b639-95e60364c96e
+    source: :Bagrat_de_Bagration
+    type: :Man
+  AssignClass (3d6a3e4b-713b-43ee-8a5e-47184336a000)
+ Call ID: 3d6a3e4b-713b-43ee-8a5e-47184336a000
   Args:
-    target: Princess_Mariam_de_Bagration
-    relation: :hasSister
-    source: Jorge_de_Bagration
-  Finish (69614f85-fb02-474f-b2e0-869580d69ba8)
- Call ID: 69614f85-fb02-474f-b2e0-869580d69ba8
+    source: :Jorge_de_Bagration
+    type: :Man
+  AddTriple (a4e9c78c-a11d-49d1-ad8e-826c8c7474ff)
+ Call ID: a4e9c78c-a11d-49d1-ad8e-826c8c7474ff
+  Args:
+    source: :Princess_Mariam_de_Bagration
+    target: :Bagrat_de_Bagration
+    relation: :isSiblingOf
+  AddTriple (d9d134e5-7cc9-47e9-a952-dfc8d4652fd7)
+ Call ID: d9d134e5-7cc9-47e9-a952-dfc8d4652fd7
+  Args:
+    relation: :isSiblingOf
+    target: :Jorge_de_Bagration
+    source: :Princess_Mariam_de_Bagration
+  Finish (80e0e600-e6dd-4130-87c7-6065507d375c)
+ Call ID: 80e0e600-e6dd-4130-87c7-6065507d375c
   Args:

@@ -1,0 +1,212 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Camilla-_Duchess_of_Castro a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Camilla, Duchess of Castro"^^xsd:string ;
+    data:posIndicesFull "465:481"^^xsd:string ;
+    data:posIndicesPart "1856:1864"^^xsd:string,
+        "2009:2017"^^xsd:string,
+        "721:729"^^xsd:string ;
+    data:wdtLink wdt:Q4994262 ;
+    :alsoKnownAs "Camilla Crociani"^^xsd:string,
+        "Camilla de Bourbon des Deux-Siciles"^^xsd:string,
+        "Camilla di Borbone delle Due Sicilie"^^xsd:string,
+        "Princess Camilla, The Duchess of Castro"^^xsd:string,
+        "Queen Camilla of the Two Sicilies"^^xsd:string,
+        "Queen Camilla, Queen Consort of the Two Sicilies"^^xsd:string,
+        "Queen Camilla, The Queen Consort of the Two Sicilies"^^xsd:string ;
+    :hasChild data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasDaughter data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro,
+        data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Camilla-_Duchess_of_Castro ;
+    :isAncestorOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isAuntOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Princess_Camilla-_Duchess_of_Castro ;
+    :isMotherOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isParentOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isSiblingOf data:Princess_Camilla-_Duchess_of_Castro ;
+    :isSisterOf data:Princess_Camilla-_Duchess_of_Castro .
+
+data:Princess_Béatrice_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    rdfs:label "Princess Béatrice of the Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "765:806"^^xsd:string ;
+    data:posIndicesPart "1480:1483"^^xsd:string,
+        "1484:1492"^^xsd:string,
+        "1856:1864"^^xsd:string,
+        "2009:2017"^^xsd:string ;
+    data:wdtLink wdt:Q4925346 ;
+    :alsoKnownAs "Béatrice Marie Caroline Louise Françoise de Bourbon"^^xsd:string,
+        "Princess Beatrice of Bourbon-Two Sicilies"^^xsd:string,
+        "Princess Beatrice of the Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasBrother data:Prince_Carlo-_Duke_of_Castro ;
+    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isAuntOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isDaughterOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSisterOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies .
+
+data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "660:692"^^xsd:string ;
+    data:posIndicesPart "1558:1564"^^xsd:string,
+        "1591:1597"^^xsd:string,
+        "850:856"^^xsd:string,
+        "967:973"^^xsd:string ;
+    data:wdtLink wdt:Q2324276 ;
+    :alsoKnownAs "Ferdinando Maria"^^xsd:string,
+        "Ferdinando Maria Andrea Alfonso Marcus"^^xsd:string ;
+    :hasBrother data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasChild data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isFatherOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isParentOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isUncleOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies .
+
+data:Princess_Maria_Carolina-_Duchess_of_Calabria a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Carolina, Duchess of Calabria"^^xsd:string ;
+    data:posIndicesFull "135:160"^^xsd:string ;
+    data:posIndicesPart "1039:1044"^^xsd:string,
+        "1045:1053"^^xsd:string,
+        "1142:1147"^^xsd:string,
+        "1148:1156"^^xsd:string,
+        "1264:1269"^^xsd:string,
+        "1270:1278"^^xsd:string,
+        "1623:1628"^^xsd:string,
+        "1629:1637"^^xsd:string,
+        "1740:1745"^^xsd:string,
+        "1746:1754"^^xsd:string,
+        "1856:1864"^^xsd:string,
+        "1865:1870"^^xsd:string,
+        "1871:1879"^^xsd:string,
+        "2009:2017"^^xsd:string,
+        "414:419"^^xsd:string,
+        "420:428"^^xsd:string,
+        "721:729"^^xsd:string,
+        "730:735"^^xsd:string,
+        "867:872"^^xsd:string,
+        "873:881"^^xsd:string ;
+    data:wdtLink wdt:Q7244714 ;
+    :alsoKnownAs "HRH Princess Maria Carolina de Bourbon des Deux Siciles"^^xsd:string,
+        "Maria Carolina di Borbone"^^xsd:string,
+        "Princess Maria Carolina Chantal Edoarda Beatrice Gennara of Bourbon Two Sicilies"^^xsd:string,
+        "Princess Maria Carolina of Bourbon Two Sicilies"^^xsd:string,
+        "Princess Maria Carolina of Bourbon Two Sicilies, The Duchess of Calabria"^^xsd:string,
+        "Princess Maria Carolina of Bourbon Two Sicilies, The Duchess of Calabria, The Duchess of Palermo"^^xsd:string,
+        "Princess Maria Carolina, Duchess of Calabria, Duchess of Palermo"^^xsd:string ;
+    :hasAncestor data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasFather data:Prince_Carlo-_Duke_of_Castro ;
+    :hasMother data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasParent data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro,
+        data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isChildOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :isDaughterOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Camilla-_Duchess_of_Castro ;
+    :isSiblingOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isSisterOf data:Princess_Maria_Carolina-_Duchess_of_Calabria .
+
+data:Prince_Carlo-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Carlo, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "302:330"^^xsd:string ;
+    data:posIndicesPart "1083:1088"^^xsd:string,
+        "1558:1564"^^xsd:string,
+        "1591:1597"^^xsd:string,
+        "521:527"^^xsd:string,
+        "528:533"^^xsd:string,
+        "559:563"^^xsd:string,
+        "567:573"^^xsd:string,
+        "850:856"^^xsd:string,
+        "967:973"^^xsd:string ;
+    data:wdtLink wdt:Q1850305 ;
+    :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies"^^xsd:string,
+        "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro"^^xsd:string ;
+    :hasAncestor data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasBrother data:Prince_Carlo-_Duke_of_Castro ;
+    :hasChild data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasDaughter data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasRelation data:Prince_Carlo-_Duke_of_Castro,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies,
+        data:Princess_Camilla-_Duchess_of_Castro,
+        data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isAncestorOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isBloodrelationOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isFatherOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isParentOf data:Princess_Maria_Carolina-_Duchess_of_Calabria ;
+    :isSiblingOf data:Prince_Carlo-_Duke_of_Castro,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSonOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isUncleOf data:Princess_Maria_Carolina-_Duchess_of_Calabria .
+

@@ -7,43 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Archduke_Leopold_Franz_of_Austria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Archduke Leopold Franz of Austria" ;
-    data:posIndicesFull "646:679" ;
-    data:wdtLink wdt:Q3198365 ;
-    :alsoKnownAs "Leopold Franz Erzherzog von Österreich" ;
-    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :hasSex data:male ;
-    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isFatherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany .
-
-data:Laetitia_dArenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Laetitia d'Arenberg" ;
-    data:posIndicesFull "516:535" ;
-    data:wdtLink wdt:Q6408488 ;
-    :alsoKnownAs "Laetitia Marie Madelaine Susanne Valentine de Belzunce-d'Arenberg" ;
-    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :hasSex data:female ;
-    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isMotherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany .
-
-data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Person ;
     rdfs:label "Archduke Sigismund, Hereditary Grand Duke of Tuscany" ;
     data:posIndicesFull "0:41" ;
     data:posIndicesPart "1060:1069",
@@ -65,13 +29,31 @@ data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Man,
         "Sigismund Otto Erzherzog von Österreich",
         "Sigismund Otto of Austria",
         "Sigismund of Austria" ;
-    :hasFather data:Archduke_Leopold_Franz_of_Austria ;
-    :hasMother data:Laetitia_dArenberg ;
     :hasParent data:Archduke_Leopold_Franz_of_Austria,
         data:Laetitia_dArenberg ;
-    :hasSex data:male ;
-    :isChildOf data:Archduke_Leopold_Franz_of_Austria,
-        data:Laetitia_dArenberg ;
-    :isSonOf data:Archduke_Leopold_Franz_of_Austria,
-        data:Laetitia_dArenberg .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduke_Leopold_Franz_of_Austria a :Person ;
+    rdfs:label "Archduke Leopold Franz of Austria" ;
+    data:posIndicesFull "646:679" ;
+    data:wdtLink wdt:Q3198365 ;
+    :alsoKnownAs "Leopold Franz Erzherzog von Österreich" ;
+    :hasSex data:male .
+
+data:Laetitia_dArenberg a :Person ;
+    rdfs:label "Laetitia d'Arenberg" ;
+    data:posIndicesFull "516:535" ;
+    data:wdtLink wdt:Q6408488 ;
+    :alsoKnownAs "Laetitia Marie Madelaine Susanne Valentine de Belzunce-d'Arenberg" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

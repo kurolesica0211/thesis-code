@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:William_Leveson-Gower-_4th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William Leveson-Gower, 4th Earl Granville"^^xsd:string ;
+    data:posIndicesFull "235:256"^^xsd:string,
+        "235:276"^^xsd:string ;
+    data:posIndicesPart "1110:1114"^^xsd:string,
+        "1179:1188"^^xsd:string,
+        "1298:1307"^^xsd:string,
+        "351:355"^^xsd:string,
+        "441:448"^^xsd:string,
+        "653:660"^^xsd:string,
+        "742:746"^^xsd:string,
+        "747:756"^^xsd:string,
+        "782:791"^^xsd:string,
+        "810:817"^^xsd:string,
+        "885:894"^^xsd:string,
+        "990:997"^^xsd:string ;
+    data:wdtLink wdt:Q1149075 ;
+    :alsoKnownAs "Hon. William Leveson-Gower"^^xsd:string,
+        "Hon. William Spencer Leveson-Gower"^^xsd:string,
+        "Vice-Adm. William Spencer Leveson-Gower"^^xsd:string,
+        "William Leveson-Gower"^^xsd:string,
+        "William Spencer Leveson-Gower"^^xsd:string ;
+    :hasBrother data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasChild data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasRelation data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasSex data:male ;
+    :hasSon data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isAncestorOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isBloodrelationOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isBrotherOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isFatherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isParentOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isSiblingOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isUncleOf data:Granville_Leveson-Gower-_5th_Earl_Granville .
+
+data:Granville_Leveson-Gower-_5th_Earl_Granville a :Man,
+        :Person ;
+    rdfs:label "Granville Leveson-Gower, 5th Earl Granville"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string ;
+    data:posIndicesPart "1110:1114"^^xsd:string,
+        "1179:1188"^^xsd:string,
+        "1298:1307"^^xsd:string,
+        "351:355"^^xsd:string,
+        "441:448"^^xsd:string,
+        "653:660"^^xsd:string,
+        "742:746"^^xsd:string,
+        "747:756"^^xsd:string,
+        "782:791"^^xsd:string,
+        "810:817"^^xsd:string,
+        "885:894"^^xsd:string ;
+    data:wdtLink wdt:Q25998958 ;
+    :alsoKnownAs "Granville James Leveson-Gower"^^xsd:string ;
+    :hasAncestor data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasBrother data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :hasFather data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasParent data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasRelation data:Granville_Leveson-Gower-_5th_Earl_Granville,
+        data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isBrotherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isChildOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isSiblingOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
+    :isSonOf data:William_Leveson-Gower-_4th_Earl_Granville .
+

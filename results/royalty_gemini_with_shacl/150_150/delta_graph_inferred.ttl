@@ -1,0 +1,201 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_Mikhailovich_of_Russia a :Man,
+        :Person ;
+    :hasBrother data:George_Mikhailovich_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:George_Mikhailovich_of_Russia ;
+    :isBrotherOf data:George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:George_Mikhailovich_of_Russia .
+
+data:Pericles_Ioannides a :Man,
+        :Person ;
+    :hasBrother data:Pericles_Ioannides ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:Pericles_Ioannides ;
+    :isBrotherOf data:Pericles_Ioannides ;
+    :isSiblingOf data:Pericles_Ioannides .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :hasSister data:Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark ;
+    :isUncleOf data:Nina_Georgievna,
+        data:Xenia_Georgievna .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :isAncestorOf data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Maria_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isAuntOf data:Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Nina_Georgievna a :Person,
+        :Woman ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasMother data:Maria_of_Greece_and_Denmark ;
+    :hasParent data:Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :hasSister data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isChildOf data:Maria_of_Greece_and_Denmark ;
+    :isDaughterOf data:Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isSisterOf data:Nina_Georgievna,
+        data:Xenia_Georgievna .
+
+data:Xenia_Georgievna a :Person,
+        :Woman ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasMother data:Maria_of_Greece_and_Denmark ;
+    :hasParent data:Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :hasSister data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isChildOf data:Maria_of_Greece_and_Denmark ;
+    :isDaughterOf data:Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isSisterOf data:Nina_Georgievna,
+        data:Xenia_Georgievna .
+
+data:Maria_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :hasDaughter data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:George_Mikhailovich_of_Russia,
+        data:Maria_of_Greece_and_Denmark,
+        data:Nina_Georgievna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Pericles_Ioannides,
+        data:Xenia_Georgievna ;
+    :hasSister data:Maria_of_Greece_and_Denmark ;
+    :isAncestorOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isAuntOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isParentOf data:Nina_Georgievna,
+        data:Xenia_Georgievna ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark ;
+    :isSisterOf data:Constantine_I_of_Greece,
+        data:Maria_of_Greece_and_Denmark .
+

@@ -7,70 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Queen_Máxima_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Máxima of the Netherlands" ;
-    data:posIndicesFull "1097:1103",
-        "145:151",
-        "1561:1567",
-        "2137:2143",
-        "459:465",
-        "758:789",
-        "764:770",
-        "764:789" ;
-    data:wdtLink wdt:Q460960 ;
-    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
-        "Maxima Zorreguieta",
-        "Máxima",
-        "Máxima Zorreguieta",
-        "Máxima of the Netherlands" ;
-    :hasChild data:Princess_Ariane_of_the_Netherlands ;
-    :hasDaughter data:Princess_Ariane_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Ariane_of_the_Netherlands ;
-    :isParentOf data:Princess_Ariane_of_the_Netherlands .
-
-data:William_Alexander_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "William Alexander of the Netherlands" ;
-    data:posIndicesFull "427:448",
-        "732:753" ;
-    data:posIndicesPart "1538:1547" ;
-    data:wdtLink wdt:Q154952 ;
-    :alsoKnownAs "King Willem-Alexander",
-        "King Willem-Alexander of the Netherlands",
-        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince Willem-Alexander of Amsberg",
-        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince William-Alexander of the Netherlands",
-        "W.A. van Buren",
-        "Wilem van Amsberg",
-        "Willem IV of the Netherlands",
-        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
-        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
-        "Willem-Alexander van Amsberg",
-        "Willem-Alexander van Oranje-Nassau",
-        "Willem-Alexander, Prince of Orange",
-        "ZM Koning Willem-Alexander" ;
-    :hasChild data:Princess_Ariane_of_the_Netherlands ;
-    :hasDaughter data:Princess_Ariane_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Ariane_of_the_Netherlands ;
-    :isParentOf data:Princess_Ariane_of_the_Netherlands .
-
-data:Princess_Ariane_of_the_Netherlands a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Ariane_of_the_Netherlands a :Person ;
     rdfs:label "Princess Ariane of the Netherlands" ;
     data:posIndicesFull "2022:2056",
         "2022:2083",
@@ -108,13 +45,58 @@ data:Princess_Ariane_of_the_Netherlands a :Person,
         "Princess Ariane Wilhelmina Máxima Ines of the Netherlands",
         "Princess Ariane Wilhelmina Máxima Ines of the Netherlands, Princess of Orange-Nassau",
         "Princess Ariane of the Netherlands, Princess of Orange-Nassau" ;
-    :hasFather data:William_Alexander_of_the_Netherlands ;
-    :hasMother data:Queen_Máxima_of_the_Netherlands ;
     :hasParent data:Queen_Máxima_of_the_Netherlands,
         data:William_Alexander_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Máxima_of_the_Netherlands,
-        data:William_Alexander_of_the_Netherlands ;
-    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
-        data:William_Alexander_of_the_Netherlands .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Queen_Máxima_of_the_Netherlands a :Person ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:posIndicesFull "1097:1103",
+        "145:151",
+        "1561:1567",
+        "2137:2143",
+        "459:465",
+        "758:789",
+        "764:770",
+        "764:789" ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
+        "Maxima Zorreguieta",
+        "Máxima",
+        "Máxima Zorreguieta",
+        "Máxima of the Netherlands" ;
+    :hasSex data:female .
+
+data:William_Alexander_of_the_Netherlands a :Person ;
+    rdfs:label "William Alexander of the Netherlands" ;
+    data:posIndicesFull "427:448",
+        "732:753" ;
+    data:posIndicesPart "1538:1547" ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander",
+        "King Willem-Alexander of the Netherlands",
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince Willem-Alexander of Amsberg",
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
+        "Prince William-Alexander of the Netherlands",
+        "W.A. van Buren",
+        "Wilem van Amsberg",
+        "Willem IV of the Netherlands",
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
+        "Willem-Alexander van Amsberg",
+        "Willem-Alexander van Oranje-Nassau",
+        "Willem-Alexander, Prince of Orange",
+        "ZM Koning Willem-Alexander" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

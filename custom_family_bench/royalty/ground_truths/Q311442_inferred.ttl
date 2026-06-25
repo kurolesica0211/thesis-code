@@ -1,0 +1,239 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string,
+        "1410:1432"^^xsd:string,
+        "1552:1574"^^xsd:string,
+        "44:117"^^xsd:string ;
+    data:posIndicesPart "1012:1017"^^xsd:string,
+        "1018:1027"^^xsd:string,
+        "1662:1667"^^xsd:string,
+        "1668:1677"^^xsd:string,
+        "1796:1802"^^xsd:string,
+        "2007:2012"^^xsd:string,
+        "2013:2022"^^xsd:string,
+        "2193:2198"^^xsd:string,
+        "2199:2208"^^xsd:string,
+        "2251:2257"^^xsd:string,
+        "2545:2552"^^xsd:string,
+        "2630:2636"^^xsd:string,
+        "2679:2685"^^xsd:string,
+        "2894:2899"^^xsd:string,
+        "2900:2909"^^xsd:string,
+        "3169:3174"^^xsd:string,
+        "3175:3184"^^xsd:string,
+        "3353:3359"^^xsd:string,
+        "3360:3369"^^xsd:string,
+        "342:347"^^xsd:string,
+        "348:357"^^xsd:string,
+        "472:478"^^xsd:string,
+        "537:542"^^xsd:string,
+        "543:552"^^xsd:string,
+        "569:575"^^xsd:string,
+        "758:763"^^xsd:string,
+        "764:773"^^xsd:string,
+        "889:895"^^xsd:string,
+        "897:902"^^xsd:string,
+        "903:912"^^xsd:string ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen"^^xsd:string,
+        "Prince Louis Ferdinand"^^xsd:string,
+        "Prince Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasRelation data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Hubertus of Prussia"^^xsd:string ;
+    data:posIndicesFull "91:99"^^xsd:string ;
+    data:posIndicesPart "1526:1532"^^xsd:string,
+        "1536:1543"^^xsd:string,
+        "1796:1802"^^xsd:string,
+        "2251:2257"^^xsd:string,
+        "2545:2552"^^xsd:string,
+        "2630:2636"^^xsd:string,
+        "2679:2685"^^xsd:string,
+        "3353:3359"^^xsd:string,
+        "472:478"^^xsd:string,
+        "569:575"^^xsd:string,
+        "889:895"^^xsd:string ;
+    data:wdtLink wdt:Q70760 ;
+    :alsoKnownAs "Hubertus"^^xsd:string,
+        "Prince Hubertus Karl Wilhelm of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Hubertus_of_Prussia ;
+    :hasRelation data:Prince_Hubertus_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Hubertus_of_Prussia ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "505:530"^^xsd:string ;
+    data:posIndicesPart "1526:1532"^^xsd:string,
+        "1536:1543"^^xsd:string,
+        "1796:1802"^^xsd:string,
+        "2251:2257"^^xsd:string,
+        "2545:2552"^^xsd:string,
+        "2630:2636"^^xsd:string,
+        "2679:2685"^^xsd:string,
+        "3353:3359"^^xsd:string,
+        "569:575"^^xsd:string,
+        "576:583"^^xsd:string,
+        "889:895"^^xsd:string ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasRelation data:Prince_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Wilhelm_of_Prussia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "1297:1301"^^xsd:string,
+        "1326:1375"^^xsd:string,
+        "1335:1350"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "1326:1343"^^xsd:string ;
+    data:posIndicesPart "3065:3070"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Wilhelm_II ;
+    :hasRelation data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Wilhelm_II ;
+    :isAuntOf data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Wilhelm_II ;
+    :isParentOf data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1105:1144"^^xsd:string ;
+    data:posIndicesPart "1259:1263"^^xsd:string,
+        "1291:1296"^^xsd:string ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova"^^xsd:string,
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia"^^xsd:string,
+        "Kira Kirillovna, Princess of Prussia"^^xsd:string,
+        "Princess Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasAncestor data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isChildOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "175:192"^^xsd:string,
+        "182:192"^^xsd:string ;
+    data:posIndicesPart "576:583"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal .
+

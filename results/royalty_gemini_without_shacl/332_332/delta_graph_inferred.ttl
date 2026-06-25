@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Karin_Emma_Louise_Nissvandt a :Person,
+        :Woman ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :hasSister data:Karin_Emma_Louise_Nissvandt ;
+    :isBloodrelationOf data:Karin_Emma_Louise_Nissvandt ;
+    :isSiblingOf data:Karin_Emma_Louise_Nissvandt ;
+    :isSisterOf data:Karin_Emma_Louise_Nissvandt .
+
+data:Sonja_Anita_Maria_Haunz a :Person,
+        :Woman ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :hasSister data:Sonja_Anita_Maria_Haunz ;
+    :isBloodrelationOf data:Sonja_Anita_Maria_Haunz ;
+    :isSiblingOf data:Sonja_Anita_Maria_Haunz ;
+    :isSisterOf data:Sonja_Anita_Maria_Haunz .
+
+data:George_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:George_I ;
+    :isBrotherOf data:George_I ;
+    :isSiblingOf data:George_I .
+
+data:Gustaf_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gustaf_V ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Gustaf_V ;
+    :isBrotherOf data:Gustaf_V ;
+    :isSiblingOf data:Gustaf_V .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isAuntOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Prince_Wilhelm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Wilhelm ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Prince_Wilhelm ;
+    :isBrotherOf data:Prince_Wilhelm ;
+    :isFatherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Prince_Wilhelm ;
+    :isUncleOf data:Lennart_Bernadotte .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    :hasAncestor data:George_I,
+        data:Gustaf_V,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Lennart_Bernadotte ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Prince_Wilhelm ;
+    :hasMarriageYear 1932,
+        1972 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Prince_Wilhelm ;
+    :hasRelation data:George_I,
+        data:Gustaf_V,
+        data:Karin_Emma_Louise_Nissvandt,
+        data:Lennart_Bernadotte,
+        data:Maria_Pavlovna,
+        data:Prince_Wilhelm,
+        data:Sonja_Anita_Maria_Haunz ;
+    :isBloodrelationOf data:Lennart_Bernadotte ;
+    :isBrotherOf data:Lennart_Bernadotte ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Prince_Wilhelm ;
+    :isSiblingOf data:Lennart_Bernadotte ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Prince_Wilhelm .
+

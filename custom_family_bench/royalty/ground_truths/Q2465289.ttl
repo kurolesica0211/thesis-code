@@ -7,16 +7,23 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Princess_Maria_Immacolata_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Princess Maria Immacolata of the Two Sicilies" ;
+    data:wdtLink wdt:Q2465289 ;
+    :alsoKnownAs "Maria Immacolata di Borbone-Due Sicilie",
+        "Maria Immaculee di Borbone, Principessa di Borbone delle Due Sicilie" ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female .
+
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
     data:posIndicesFull "404:453" ;
     data:posIndicesPart "465:470",
@@ -25,22 +32,7 @@ data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
         "693:698",
         "794:799" ;
     data:wdtLink wdt:Q255400 ;
-    :hasChild data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
-    :hasDaughter data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
-    :isParentOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies .
+    :hasSex data:female .
 
-data:Princess_Maria_Immacolata_of_the_Two_Sicilies a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria Immacolata of the Two Sicilies" ;
-    data:wdtLink wdt:Q2465289 ;
-    :alsoKnownAs "Maria Immacolata di Borbone-Due Sicilie",
-        "Maria Immaculee di Borbone, Principessa di Borbone delle Due Sicilie" ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :isDaughterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+data:female a :Female .
 

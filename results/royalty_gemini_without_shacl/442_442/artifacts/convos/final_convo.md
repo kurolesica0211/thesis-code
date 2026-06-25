@@ -69,31 +69,56 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Angelica Margherita Edwina Hicks (born 16 September 1992) is a British fashion illustrator and internet personality.
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Prince Hugo de Bourbon de Parme (Carlos Hugo Roderik Sybren; born 20 January 1997), formerly Hugo Klynstra, is a member of the extended Dutch royal family as the son of Prince Carlos, Hereditary Duke of Parma.
+He was the first great-grandchild of Queen Juliana of the Netherlands.
+Born out of wedlock, he was denied titles and family rights by his father until the Dutch Council of State ruled in his favor in 2018, granting him the style and title of His Royal Highness Prince Carlos Hugo
+Roderik Sybren de Bourbon de Parme.
+Despite the ruling, he is neither a member of the Dutch royal house (although considered a member of the extended Dutch royal family) nor a member of the House of Bourbon-Parma and is not in the line of succession to the defunct Parmese throne.
 Early life and family
 
-Hicks was born on 16 September 1992 to Marina Allegra Federica Silvia Tondato, an Italian designer, and Ashley Louis David Hicks, a British artist and interior designer.
-Hicks' paternal grandparents were the English interior decorator and designer David Nightingale Hicks and Lady Pamela Mountbatten, who served as a bridesmaid and as a lady-in-waiting to Elizabeth II.
-Through her grandmother, Hicks is a relative of the Mountbatten family, itself a branch of the German princely Battenberg family, and a relative of the British royal family.
-Hicks' great-grandparents, Louis Mountbatten, 1st Earl Mountbatten of Burma and The Honourable Edwina Ashley, served as the Viceroy and Vicereine of India.
-Hicks grew up in Chelsea, London and was educated at a boarding school.
-Career
+Carlos Hugo Roderik Sybren Klynstra was born in Nijmegen on 20 January 1997 to Prince Carlos de Bourbon de Parme, Prince of Piacenza and his friend Brigitte Klynstra.
+Due to being an illegitimate son, he was not born a prince.
+His father told Dutch media that Hugo's birth was "his mother's wish" and an "independent decision", denying his son any family rights.
+His maternal grandmother, Ingrid Pieksma-Klynstra, was the wife of Adolph Roderik Ernst Leopold, Count of Rechteren-Limpurg.
+Through his father, he is a grandson of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands.
+He is the first great-grandchild of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
+He is also a great-grandson of Prince Xavier of Bourbon-Parma and Madeleine de Bourbon-Busset.
+Upon the death of his grandfather, Carlos Hugo, in 2010, his father became the titular Duke of Parma and Piacenza, Carlist claimant to the Spanish throne, and the Head of the House of Bourbon-Parma.
+According to a royal decree of Queen Beatrix in 1996, his father is also a Dutch prince.
+He is the half-brother of Princess Luisa of Parma, Marchioness of Castell'Arquato, Princess Cecilia of Parma, Countess of Berceto and Prince Carlos of Parma, The Prince of Piacenza.
+Legal dispute over title
 
-Hicks works as a visual artist and fashion illustrator.
-Hicks also made commissioned pieces for the American fashion designer Tory Burch and illustrated for the magazines Elle and Porter.
-In 2021, Hicks launched a TikTok channel where she parodies haute couture outfits from red carpet events and fashion shows, recreating them out of duct tape, trash bags, metallic wrappers, foil, candy, and other materials.
-By July 2022, Hicks amassed over 48,000 followers and her videos collectively received over 4 million likes.
-Her videos led to Hicks collaborating with Valentino and Vogue Italia.
-By September 2022, Hicks had over 86,000 followers on TikTok.
-Personal life
+Upon turning eighteen in 2015, Hugo went to court to have his surname changed from Klynstra to his father's surname, 'de Bourbon de Parme', and claimed the dutch noble title of prince.
+The Hereditary Duke of Parma insisted that he had a formal agreement with Hugo's mother that their relationship was "no-strings-attached" and that there would be "no family entanglement" following Hugo's conception.
+In 2016 the Ministry of Justice and Security ruled in favor of Hugo's claim and granted him the use of his father's surname.
+On 28 February 2018, the Dutch Council of State ruled in Hugo's favor, stating that Dutch law on nobility was clear and that the circumstances of Hugo's birth are irrelevant, granting Hugo the right to claim both his father's surname and (dutch) noble title and address.
+As such, he became His Royal Highness Prince Carlos Hugo Roderik Sybren de Bourbon de Parme.
+The title of 'Prince(ss) de Bourbon de Parme' is a Dutch title, bestowed by Queen Beatrix in 1996, and does not mean that Hugo automatically became a member of the House of Bourbon-Parma.
+The court ruling stated that membership to the House of Bourbon-Parma is "a private matter for the royal house itself".
+As such, he is not in the line of succession to the defunct Parma throne.
+Titles and styles
 
-Hicks resides in Carroll Gardens in Brooklyn, New York.
+References
+
+
+
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +134,9 @@ Hicks resides in Carroll Gardens in Brooklyn, New York.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +151,23 @@ Hicks resides in Carroll Gardens in Brooklyn, New York.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,119 +459,339 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (59607a7b-e1fe-43ce-94b3-f8ebe340caaf)
- Call ID: 59607a7b-e1fe-43ce-94b3-f8ebe340caaf
+  AssignClass (a5985576-8c6e-4bf8-a065-4df6d3b1e2f6)
+ Call ID: a5985576-8c6e-4bf8-a065-4df6d3b1e2f6
   Args:
-    type: :Person
-    source: Angelica Margherita Edwina Hicks
-  AssignClass (7784cfec-ca13-42e6-b133-8c372383eb36)
- Call ID: 7784cfec-ca13-42e6-b133-8c372383eb36
+    source: :Beatrix
+    type: :Woman
+  AssignClass (be1457b5-2d19-4c47-824b-194b1588988a)
+ Call ID: be1457b5-2d19-4c47-824b-194b1588988a
   Args:
     type: :Woman
-    source: Angelica Margherita Edwina Hicks
-  AddLiteral (daa4a34d-c4eb-42d0-85da-6548a8921394)
- Call ID: daa4a34d-c4eb-42d0-85da-6548a8921394
+    source: :Margriet
+  AssignClass (04e7e4c7-1d81-474b-bab2-322901ecc921)
+ Call ID: 04e7e4c7-1d81-474b-bab2-322901ecc921
   Args:
-    source: Angelica Margherita Edwina Hicks
+    source: :Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (43b0d256-f06a-430c-abbf-c94b9ff9a398)
+ Call ID: 43b0d256-f06a-430c-abbf-c94b9ff9a398
+  Args:
+    type: :Man
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+  AddLiteral (cd9c7610-1a14-49ee-af2b-a0608fe04a62)
+ Call ID: cd9c7610-1a14-49ee-af2b-a0608fe04a62
+  Args:
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
     relation: :hasBirthYear
-    literal_value: 1992
     literal_type: xsd:integer
-  AssignClass (1217dc48-381c-4a91-89db-fb5c71979eb0)
- Call ID: 1217dc48-381c-4a91-89db-fb5c71979eb0
+    literal_value: 1997
+  AddTriple (94459531-5f89-4d86-9549-ac54154864b9)
+ Call ID: 94459531-5f89-4d86-9549-ac54154864b9
   Args:
-    type: :Person
-    source: Marina Allegra Federica Silvia Tondato
-  AssignClass (574eea29-5873-4d65-a4f2-6a27d52bc493)
- Call ID: 574eea29-5873-4d65-a4f2-6a27d52bc493
-  Args:
-    type: :Woman
-    source: Marina Allegra Federica Silvia Tondato
-  AssignClass (bcb26a61-0573-4246-9dff-ee4024d905a1)
- Call ID: bcb26a61-0573-4246-9dff-ee4024d905a1
-  Args:
-    type: :Person
-    source: Ashley Louis David Hicks
-  AssignClass (fe5a342e-ec2b-4f8c-9c65-98f7d91c7feb)
- Call ID: fe5a342e-ec2b-4f8c-9c65-98f7d91c7feb
+    target: :Hugo_Klynstra
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    relation: :alsoKnownAs
+  AssignClass (61f1897a-4cbf-4b68-a661-a4cf987326f0)
+ Call ID: 61f1897a-4cbf-4b68-a661-a4cf987326f0
   Args:
     type: :Man
-    source: Ashley Louis David Hicks
-  AddTriple (027a6ebe-dea4-498f-a90b-e8d478261d6b)
- Call ID: 027a6ebe-dea4-498f-a90b-e8d478261d6b
+    source: :Carlos_de_Bourbon_de_Parme
+  AssignClass (cc878340-78d6-479c-88cb-e2d1f8f71b0c)
+ Call ID: cc878340-78d6-479c-88cb-e2d1f8f71b0c
+  Args:
+    source: :Brigitte_Klynstra
+    type: :Woman
+  AddTriple (8edd1606-289b-46fb-8458-67213284fe66)
+ Call ID: 8edd1606-289b-46fb-8458-67213284fe66
+  Args:
+    target: :Carlos_de_Bourbon_de_Parme
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    relation: :hasFather
+  AddTriple (6302f43b-8058-4fb6-88da-64df7e6b7c22)
+ Call ID: 6302f43b-8058-4fb6-88da-64df7e6b7c22
   Args:
     relation: :hasMother
-    target: Marina Allegra Federica Silvia Tondato
-    source: Angelica Margherita Edwina Hicks
-  AddTriple (36d2fc7a-45ce-4ff6-af2b-346e1bac7c90)
- Call ID: 36d2fc7a-45ce-4ff6-af2b-346e1bac7c90
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    target: :Brigitte_Klynstra
+  AssignClass (387ad2c7-cc26-4e61-b4e6-e746283ccd10)
+ Call ID: 387ad2c7-cc26-4e61-b4e6-e746283ccd10
   Args:
-    target: Ashley Louis David Hicks
-    relation: :hasFather
-    source: Angelica Margherita Edwina Hicks
-  AssignClass (00cd0206-ddbc-40d6-9900-352b42803b88)
- Call ID: 00cd0206-ddbc-40d6-9900-352b42803b88
-  Args:
-    type: :Person
-    source: David Nightingale Hicks
-  AssignClass (79d6513c-f601-48fb-a969-49450a201aef)
- Call ID: 79d6513c-f601-48fb-a969-49450a201aef
-  Args:
-    type: :Man
-    source: David Nightingale Hicks
-  AssignClass (ad1ec912-1cf0-4c92-a2a6-5957e4ad3838)
- Call ID: ad1ec912-1cf0-4c92-a2a6-5957e4ad3838
-  Args:
-    type: :Person
-    source: Lady Pamela Mountbatten
-  AssignClass (f5a7f107-f189-42e6-9177-828e77c6ee82)
- Call ID: f5a7f107-f189-42e6-9177-828e77c6ee82
+    source: :Juliana_of_the_Netherlands
+    type: :Woman
+  AssignClass (bdb4c827-42f3-4a71-a8ef-aa7280104158)
+ Call ID: bdb4c827-42f3-4a71-a8ef-aa7280104158
   Args:
     type: :Woman
-    source: Lady Pamela Mountbatten
-  AddTriple (1e4ffd12-66ba-40b0-b5ca-998ae58468c6)
- Call ID: 1e4ffd12-66ba-40b0-b5ca-998ae58468c6
+    source: :Ingrid_Pieksma-Klynstra
+  AssignClass (bfbf9b52-50b2-4bce-b103-c1097d35c5e8)
+ Call ID: bfbf9b52-50b2-4bce-b103-c1097d35c5e8
   Args:
-    target: David Nightingale Hicks
-    relation: :hasFather
-    source: Ashley Louis David Hicks
-  AddTriple (b6dead31-4fa0-487f-963a-7a1c5593fa92)
- Call ID: b6dead31-4fa0-487f-963a-7a1c5593fa92
-  Args:
-    source: Ashley Louis David Hicks
-    target: Lady Pamela Mountbatten
-    relation: :hasMother
-  AssignClass (2d567ae3-8209-4023-9212-7a8f6529078d)
- Call ID: 2d567ae3-8209-4023-9212-7a8f6529078d
-  Args:
-    type: :Person
-    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
-  AssignClass (b65f3f8c-98ac-4a25-8323-503c8d3a3147)
- Call ID: b65f3f8c-98ac-4a25-8323-503c8d3a3147
-  Args:
+    source: :Adolph_Roderik_Ernst_Leopold
     type: :Man
-    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
-  AssignClass (4eada27e-5814-4380-bc6b-b25861bad640)
- Call ID: 4eada27e-5814-4380-bc6b-b25861bad640
+  AssignClass (c493d1c9-9dc2-4dfb-8f3d-cef22d98b469)
+ Call ID: c493d1c9-9dc2-4dfb-8f3d-cef22d98b469
   Args:
-    type: :Person
-    source: The Honourable Edwina Ashley
-  AssignClass (fde79202-204e-443e-bbaf-18e78853ed9c)
- Call ID: fde79202-204e-443e-bbaf-18e78853ed9c
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Man
+  AssignClass (08945256-930f-4d9d-98c5-5be60ac13a38)
+ Call ID: 08945256-930f-4d9d-98c5-5be60ac13a38
+  Args:
+    source: :Irene_of_the_Netherlands
+    type: :Woman
+  AssignClass (f79f4d8c-05ab-4594-b479-ac4017d2ba7b)
+ Call ID: f79f4d8c-05ab-4594-b479-ac4017d2ba7b
+  Args:
+    source: :Bernhard_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (0f72f7e9-cbcc-4b2e-a1fa-a002bcdb8cae)
+ Call ID: 0f72f7e9-cbcc-4b2e-a1fa-a002bcdb8cae
+  Args:
+    source: :Xavier_of_Bourbon-Parma
+    type: :Man
+  AssignClass (acf439be-2826-42bb-a1f0-5bd24646b4f9)
+ Call ID: acf439be-2826-42bb-a1f0-5bd24646b4f9
+  Args:
+    source: :Madeleine_de_Bourbon-Busset
+    type: :Woman
+  AssignClass (45f80a1a-b65e-44f5-9b80-a51085d5e421)
+ Call ID: 45f80a1a-b65e-44f5-9b80-a51085d5e421
   Args:
     type: :Woman
-    source: The Honourable Edwina Ashley
-  AddTriple (462dc71b-e46c-41f3-b452-163f67d8865e)
- Call ID: 462dc71b-e46c-41f3-b452-163f67d8865e
+    source: :Luisa_of_Parma
+  AssignClass (181911a3-d07e-4f96-8402-1e7ba996df42)
+ Call ID: 181911a3-d07e-4f96-8402-1e7ba996df42
   Args:
-    target: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    source: :Cecilia_of_Parma
+    type: :Woman
+  AssignClass (7ca18520-3c1d-4813-8a7f-f4d3113ec2c2)
+ Call ID: 7ca18520-3c1d-4813-8a7f-f4d3113ec2c2
+  Args:
+    type: :Man
+    source: :Carlos_of_Parma
+  AddTriple (4ec548dc-4154-490f-8e1b-520e6d27f0bd)
+ Call ID: 4ec548dc-4154-490f-8e1b-520e6d27f0bd
+  Args:
+    source: :Carlos_de_Bourbon_de_Parme
     relation: :hasFather
-    source: Lady Pamela Mountbatten
-  AddTriple (8b6056b1-46d3-400f-b805-3ac01fd71e20)
- Call ID: 8b6056b1-46d3-400f-b805-3ac01fd71e20
+    target: :Carlos_Hugo_Duke_of_Parma
+  AddTriple (94bf68b5-3225-4f42-b1db-ff9ba65a6a16)
+ Call ID: 94bf68b5-3225-4f42-b1db-ff9ba65a6a16
   Args:
-    target: The Honourable Edwina Ashley
+    target: :Irene_of_the_Netherlands
     relation: :hasMother
-    source: Lady Pamela Mountbatten
-  Finish (e11a6e56-316f-4c0c-9a33-4e1c62b5800f)
- Call ID: e11a6e56-316f-4c0c-9a33-4e1c62b5800f
+    source: :Carlos_de_Bourbon_de_Parme
+  AddTriple (ed14fb73-862f-4bc2-b953-79b26c47583d)
+ Call ID: ed14fb73-862f-4bc2-b953-79b26c47583d
+  Args:
+    target: :Brigitte_Klynstra
+    relation: :hasMother
+    source: :Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+  AddTriple (659ba29b-0f8f-4bcb-9129-d348cc4bedc8)
+ Call ID: 659ba29b-0f8f-4bcb-9129-d348cc4bedc8
+  Args:
+    target: :Carlos_de_Bourbon_de_Parme
+    source: :Luisa_of_Parma
+    relation: :hasParent
+  AddTriple (31ddf797-6dcd-4831-8cfc-6453828db575)
+ Call ID: 31ddf797-6dcd-4831-8cfc-6453828db575
+  Args:
+    target: :Carlos_de_Bourbon_de_Parme
+    relation: :hasParent
+    source: :Cecilia_of_Parma
+  AddTriple (12e81cfb-76f2-4951-b7a4-e6e70edc4452)
+ Call ID: 12e81cfb-76f2-4951-b7a4-e6e70edc4452
+  Args:
+    target: :Carlos_de_Bourbon_de_Parme
+    relation: :hasParent
+    source: :Carlos_of_Parma
+  Finish (ac46b3e5-62de-4be1-8f1c-d13d3bdf997c)
+ Call ID: ac46b3e5-62de-4be1-8f1c-d13d3bdf997c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Adolph_Roderik_Ernst_Leopold a :Man .
+
+  data:Beatrix a :Woman .
+
+  data:Bernhard_of_Lippe-Biesterfeld a :Man .
+
+  data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;
+      :alsoKnownAs data:Hugo_Klynstra ;
+      :hasBirthYear 1997 ;
+      :hasFather data:Carlos_de_Bourbon_de_Parme ;
+      :hasMother data:Brigitte_Klynstra .
+
+  data:Carlos_of_Parma a :Man ;
+      :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+  data:Cecilia_of_Parma a :Woman ;
+      :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+  data:Ingrid_Pieksma-Klynstra a :Woman .
+
+  data:Juliana_of_the_Netherlands a :Woman .
+
+  data:Luisa_of_Parma a :Woman ;
+      :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+  data:Madeleine_de_Bourbon-Busset a :Woman .
+
+  data:Margriet a :Woman .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Xavier_of_Bourbon-Parma a :Man .
+
+  data:Brigitte_Klynstra a :Woman .
+
+  data:Carlos_Hugo_Duke_of_Parma a :Man .
+
+  data:Irene_of_the_Netherlands a :Woman .
+
+  data:Carlos_de_Bourbon_de_Parme a :Man ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMother data:Irene_of_the_Netherlands .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Hugo_Klynstra']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (4456733b-a7c9-4b54-acb1-f013db57b178)
+ Call ID: 4456733b-a7c9-4b54-acb1-f013db57b178
+  Args:
+    source: :Hugo_Klynstra
+    type: :Person
+  Finish (011f4774-a592-4f46-8544-929062e02d2f)
+ Call ID: 011f4774-a592-4f46-8544-929062e02d2f
   Args:

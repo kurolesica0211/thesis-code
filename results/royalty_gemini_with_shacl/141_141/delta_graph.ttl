@@ -2,24 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elena a :Woman ;
-    :isSisterOf data:Cristina .
+data:FriedrichWilhelmOfLippe a :Man,
+        :Person ;
+    :isSonOf data:ErnstAugustOfLippe .
 
-data:Felipe_VI a :Man ;
-    :isBrotherOf data:Cristina .
+data:StephanOfLippe a :Man,
+        :Person ;
+    :isSonOf data:ArminOfLippe .
 
-data:Inaki_Urdangarin a :Man .
-
-data:Juan_Carlos_I a :Ancestor,
+data:AdolphusFrederickV a :Ancestor,
         :Man .
 
-data:Sofia a :Ancestor,
+data:CarolineVonWartensleben a :Ancestor,
         :Woman .
 
-data:Cristina a :Woman ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMarriageYear 1997 ;
-    :hasMother data:Sofia ;
-    :hasRelation data:Inaki_Urdangarin .
+data:ChristaVonArnim a :Person,
+        :Woman ;
+    :hasFather data:CurtDavidVonArnim ;
+    :hasMother data:StephanieVonStechow .
+
+data:CurtDavidVonArnim a :Ancestor,
+        :Man .
+
+data:ElisabethOfAnhalt a :Ancestor,
+        :Woman .
+
+data:ErnstAugustOfLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:JuliusErnstOfLippe ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:MarieOfMecklenburgStrelitz ;
+    :hasRelation data:ChristaVonArnim ;
+    :isSiblingOf data:ArminOfLippe,
+        data:LeopoldOfLippe .
+
+data:ErnstCountOfLippeBiesterfeld a :Ancestor,
+        :Man .
+
+data:JuliusErnstOfLippe a :Ancestor,
+        :Man ;
+    :hasFather data:ErnstCountOfLippeBiesterfeld ;
+    :hasMother data:CarolineVonWartensleben .
+
+data:LeopoldIV a :Ancestor,
+        :Man .
+
+data:LeopoldOfLippe a :Man,
+        :Person .
+
+data:MarieOfMecklenburgStrelitz a :Ancestor,
+        :Woman ;
+    :hasFather data:AdolphusFrederickV ;
+    :hasMother data:ElisabethOfAnhalt .
+
+data:StephanieVonStechow a :Ancestor,
+        :Woman .
+
+data:ArminOfLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:LeopoldIV .
 

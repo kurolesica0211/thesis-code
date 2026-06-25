@@ -7,65 +7,24 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Pieter_van_Vollenhoven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Pieter van Vollenhoven" ;
-    data:posIndicesFull "2002:2024",
-        "256:278" ;
-    data:posIndicesPart "1449:1460",
-        "1783:1794",
-        "1839:1850",
-        "501:512",
-        "543:549",
-        "583:594",
-        "889:900" ;
-    data:wdtLink wdt:Q301365 ;
-    :hasChild data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isFatherOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isParentOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven .
-
-data:William_Alexander_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "William Alexander of the Netherlands" ;
-    data:posIndicesFull "1090:1111" ;
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "1892:1905" ;
     data:posIndicesPart "2287:2298" ;
-    data:wdtLink wdt:Q154952 ;
-    :alsoKnownAs "King Willem-Alexander",
-        "King Willem-Alexander of the Netherlands",
-        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince Willem-Alexander of Amsberg",
-        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince William-Alexander of the Netherlands",
-        "W.A. van Buren",
-        "Wilem van Amsberg",
-        "Willem IV of the Netherlands",
-        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
-        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
-        "Willem-Alexander van Amsberg",
-        "Willem-Alexander van Oranje-Nassau",
-        "Willem-Alexander, Prince of Orange",
-        "ZM Koning Willem-Alexander" ;
-    :hasMother data:Beatrix_of_the_Netherlands ;
-    :hasParent data:Beatrix_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isChildOf data:Beatrix_of_the_Netherlands ;
-    :isSonOf data:Beatrix_of_the_Netherlands .
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
 
-data:Prince_Maurits_of_Orange-Nassau-Vollenhoven a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Maurits_of_Orange-Nassau-Vollenhoven a :Person ;
     rdfs:label "Prince Maurits of Orange-Nassau-Vollenhoven" ;
     data:posIndicesFull "64:134",
         "71:134" ;
@@ -89,84 +48,11 @@ data:Prince_Maurits_of_Orange-Nassau-Vollenhoven a :Man,
     :alsoKnownAs "Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven",
         "Maurits of Orange-Nassau, van Vollenhoven",
         "Prince Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven" ;
-    :hasFather data:Pieter_van_Vollenhoven ;
-    :hasMother data:Princess_Margriet_of_the_Netherlands ;
     :hasParent data:Pieter_van_Vollenhoven,
         data:Princess_Margriet_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isChildOf data:Pieter_van_Vollenhoven,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isSonOf data:Pieter_van_Vollenhoven,
-        data:Princess_Margriet_of_the_Netherlands .
+    :hasSex data:male .
 
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Juliana of the Netherlands" ;
-    data:posIndicesFull "1622:1635",
-        "1628:1635" ;
-    data:posIndicesPart "2287:2298" ;
-    data:wdtLink wdt:Q154946 ;
-    :alsoKnownAs "Juliana I of the Netherlands",
-        "Juliana Louise Emma Marie Wilhelmina",
-        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Juliana der Nederlanden",
-        "Julijana",
-        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Princess Juliana of the Netherlands",
-        "Queen Juliana",
-        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Queen Juliana of the Netherlands" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands .
-
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
-    data:posIndicesFull "1640:1674" ;
-    data:posIndicesPart "1817:1822",
-        "1823:1834",
-        "2273:2279",
-        "2326:2332" ;
-    data:wdtLink wdt:Q57304 ;
-    :alsoKnownAs "B. van Lippe Biesterfeld",
-        "Bernhard of Lippe-Biesterfeld",
-        "Bernhard zur Lippe-Biesterfeld",
-        "Bernhard, Prince Consort of the Netherlands",
-        "Prince Bernhard of the Netherlands",
-        "Prince Bernhard, Prince Consort of the Netherlands",
-        "Z.K.H. Prins Bernhard" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isFatherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands .
-
-data:Princess_Christina_of_the_Netherlands a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Christina_of_the_Netherlands a :Person ;
     rdfs:label "Princess Christina of the Netherlands" ;
     data:posIndicesFull "351:388",
         "360:388" ;
@@ -184,65 +70,31 @@ data:Princess_Christina_of_the_Netherlands a :Person,
         "Maria Christina van Oranje-Nassau",
         "Princess Maria Christina of the Netherlands",
         "Princess Marijke" ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands,
         data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Beatrix_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isAuntOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
-        data:William_Alexander_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isSiblingOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isSisterOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Beatrix of the Netherlands" ;
-    data:posIndicesFull "1892:1905" ;
-    data:posIndicesPart "2287:2298" ;
-    data:wdtLink wdt:Q29574 ;
-    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
-        "Beatrix Wilhelmina Armgard",
-        "Beatrix der Nederlanden",
-        "Beatrix of Orange",
-        "Beatrix van Oranje",
-        "Princess Beatrix of Orange-Nassau",
-        "Princess Beatrix of the Netherlands",
-        "Queen Beatrix" ;
-    :hasChild data:William_Alexander_of_the_Netherlands ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
-    :hasParent data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :hasSon data:William_Alexander_of_the_Netherlands ;
-    :isAuntOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:William_Alexander_of_the_Netherlands ;
-    :isParentOf data:William_Alexander_of_the_Netherlands ;
-    :isSiblingOf data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands ;
-    :isSisterOf data:Princess_Christina_of_the_Netherlands,
-        data:Princess_Margriet_of_the_Netherlands .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Princess_Margriet_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Pieter_van_Vollenhoven a :Person ;
+    rdfs:label "Pieter van Vollenhoven" ;
+    data:posIndicesFull "2002:2024",
+        "256:278" ;
+    data:posIndicesPart "1449:1460",
+        "1783:1794",
+        "1839:1850",
+        "501:512",
+        "543:549",
+        "583:594",
+        "889:900" ;
+    data:wdtLink wdt:Q301365 ;
+    :hasSex data:male .
+
+data:Princess_Margriet_of_the_Netherlands a :Person ;
     rdfs:label "Princess Margriet of the Netherlands" ;
     data:posIndicesFull "215:251",
         "224:251" ;
@@ -259,24 +111,46 @@ data:Princess_Margriet_of_the_Netherlands a :Ancestor,
         "Margriet of the Netherlands",
         "Margriet van Oranje",
         "Princess Margriet Francisca of the Netherlands" ;
-    :hasChild data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands,
         data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :hasSon data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isAuntOf data:William_Alexander_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isParentOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
-    :isSiblingOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :isSisterOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands .
+    :hasSex data:female .
+
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "1622:1635",
+        "1628:1635" ;
+    data:posIndicesPart "2287:2298" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasSex data:female .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:posIndicesFull "1640:1674" ;
+    data:posIndicesPart "1817:1822",
+        "1823:1834",
+        "2273:2279",
+        "2326:2332" ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe-Biesterfeld",
+        "Bernhard, Prince Consort of the Netherlands",
+        "Prince Bernhard of the Netherlands",
+        "Prince Bernhard, Prince Consort of the Netherlands",
+        "Z.K.H. Prins Bernhard" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessSibilla a :Person,
+        :Woman ;
+    :hasBirthYear 1968 ;
+    :hasRelation data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaume,
+        data:PrincessSibilla ;
+    :hasSister data:PrincessSibilla ;
+    :isBloodrelationOf data:PrincessSibilla ;
+    :isSiblingOf data:PrincessSibilla ;
+    :isSisterOf data:PrincessSibilla .
+
+data:GrandDuchessJosephine-Charlotte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceGuillaume ;
+    :hasRelation data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaume,
+        data:PrincessSibilla ;
+    :hasSister data:GrandDuchessJosephine-Charlotte ;
+    :hasSon data:PrinceGuillaume ;
+    :isAncestorOf data:PrinceGuillaume ;
+    :isAuntOf data:PrinceGuillaume ;
+    :isBloodrelationOf data:GrandDuchessJosephine-Charlotte ;
+    :isMotherOf data:PrinceGuillaume ;
+    :isParentOf data:PrinceGuillaume ;
+    :isSiblingOf data:GrandDuchessJosephine-Charlotte ;
+    :isSisterOf data:GrandDuchessJosephine-Charlotte .
+
+data:GrandDukeJean a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GrandDukeJean ;
+    :hasChild data:PrinceGuillaume ;
+    :hasRelation data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaume,
+        data:PrincessSibilla ;
+    :hasSon data:PrinceGuillaume ;
+    :isAncestorOf data:PrinceGuillaume ;
+    :isBloodrelationOf data:GrandDukeJean ;
+    :isBrotherOf data:GrandDukeJean ;
+    :isFatherOf data:PrinceGuillaume ;
+    :isParentOf data:PrinceGuillaume ;
+    :isSiblingOf data:GrandDukeJean ;
+    :isUncleOf data:PrinceGuillaume .
+
+data:PrinceGuillaume a :Man,
+        :Person ;
+    :hasAncestor data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:PrinceGuillaume ;
+    :hasFather data:GrandDukeJean ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephine-Charlotte ;
+    :hasParent data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean ;
+    :hasRelation data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean,
+        data:PrinceGuillaume,
+        data:PrincessSibilla ;
+    :isBloodrelationOf data:PrinceGuillaume ;
+    :isBrotherOf data:PrinceGuillaume ;
+    :isChildOf data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean ;
+    :isSiblingOf data:PrinceGuillaume ;
+    :isSonOf data:GrandDuchessJosephine-Charlotte,
+        data:GrandDukeJean .
+

@@ -2,48 +2,111 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_II_of_Greece a :Man,
-        :Person ;
-    :hasBirthYear 1890 ;
-    :hasBrother data:Alexander_of_Greece,
-        data:Paul_of_Greece ;
-    :hasDeathYear 1947 ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMarriageYear 1921 ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasRelation data:Elisabeth_of_Romania ;
-    :hasSister data:Helen_of_Greece,
-        data:Irene_of_Greece,
-        data:Katherine_of_Greece .
-
 data:Alexander_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:George_II_of_Greece .
+
+data:Alexandra_of_Greece a :Person,
+        :Woman ;
+    :isSisterOf data:Constantine_I_of_Greece .
+
+data:Christopher_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:Constantine_I_of_Greece .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasMarriageYear 1921 ;
+    :hasRelation data:Carol_of_Romania ;
+    :isSisterOf data:George_II_of_Greece .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Aimone_Duke_of_Aosta ;
+    :isSisterOf data:George_II_of_Greece .
+
+data:Katherine_of_Greece a :Person,
+        :Woman ;
+    :isSisterOf data:George_II_of_Greece .
+
+data:Perikles_Ioannidis a :Man,
+        :Person ;
+    :hasRelation data:Maria_of_Greece .
+
+data:Aimone_Duke_of_Aosta a :Man,
         :Person .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
+data:Carol_of_Romania a :Man,
         :Person ;
-    :hasFather data:George_I_of_Greece .
+    :isBrotherOf data:Elisabeth_of_Romania .
 
-data:Elisabeth_of_Romania a :Person,
-        :Woman .
+data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ferdinand_I_of_Romania a :Ancestor,
+        :Man,
+        :Person .
 
 data:George_I_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:Helen_of_Greece a :Person,
+data:Maria_of_Greece a :Person,
+        :Woman ;
+    :isSisterOf data:Constantine_I_of_Greece .
+
+data:Marie_of_Romania a :Ancestor,
+        :Person,
         :Woman .
 
-data:Irene_of_Greece a :Person,
+data:Olga_Constantinovna a :Ancestor,
+        :Person,
         :Woman .
 
-data:Katherine_of_Greece a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Frederica_of_Hanover ;
+    :isBrotherOf data:George_II_of_Greece .
 
 data:Sophia_of_Prussia a :Ancestor,
         :Person,
         :Woman .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Elisabeth_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Ferdinand_I_of_Romania ;
+    :hasMother data:Marie_of_Romania .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasRelation data:Elisabeth_of_Romania .
 

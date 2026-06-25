@@ -2,44 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Kara%C4%91or%C4%91evi%C4%87_Jr a :Man ;
-    :hasBirthYear 1982 ;
-    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Sigismund,
+        data:Prince_Waldemar .
 
-data:Ignacio_de_Medina a :Man ;
-    :hasBirthYear 1947 .
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
 
-data:Katherine_Clairy_Batis a :Woman ;
-    :hasFather data:Robert_Batis ;
-    :hasMother data:Anna_Dosti .
+data:Prince_Henry_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Frederick_III_German_Emperor .
 
-data:Peter_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasBirthYear 1980 ;
-    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+data:Prince_Waldemar a :Man,
+        :Person ;
+    :isSiblingOf data:Prince_Sigismund .
 
-data:Philip_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasBirthYear 1982 ;
-    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+        :Woman .
 
-data:Alexandra_of_Greece_and_Denmark a :Woman ;
-    :hasMother data:Aspasia_of_Greece_and_Denmark .
+data:Queen_Victoria a :Person,
+        :Woman .
 
-data:Anna_Dosti a :Woman .
-
-data:Aspasia_of_Greece_and_Denmark a :Woman .
-
-data:Peter_II a :Man .
-
-data:Robert_Batis a :Man .
-
-data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
-    :hasBirthYear 1945 ;
-    :hasFather data:Peter_II ;
-    :hasMother data:Alexandra_of_Greece_and_Denmark .
-
-data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Woman ;
-    :hasBirthYear 1946 .
+data:Prince_Sigismund a :Man,
+        :Person .
 

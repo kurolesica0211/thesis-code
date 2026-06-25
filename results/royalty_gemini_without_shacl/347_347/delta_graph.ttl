@@ -2,19 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Tatiana_Mountbatten a :Person,
-        :Woman ;
-    :hasBirthYear 1990 ;
-    :hasBrother data:Henry_Mountbatten ;
-    :hasFather data:George_Mountbatten ;
-    :hasMother data:Sarah_Georgina_Walker .
+data:Ernst_August_von_Hannover a :Man,
+        :Person ;
+    :hasBirthYear 1954 ;
+    :hasDaughter data:Princess_Alexandra ;
+    :hasFather data:Prince_Ernest_Augustus_of_Hannover ;
+    :hasMarriageYear 1981,
+        1999 ;
+    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Chantal_Hochuli,
+        data:Princess_Caroline_of_Monaco ;
+    :hasSon data:Prince_Christian,
+        data:Prince_Ernst_August_Jr ;
+    :isBrotherOf data:Prince_Ludwig_Rudolph_of_Hannover .
 
-data:George_Mountbatten a :Man,
-        :Person .
+data:Otto_Heinrich a :Man,
+        :Person ;
+    :hasFather data:Prince_Ludwig_Rudolph_of_Hannover .
 
-data:Henry_Mountbatten a :Man,
-        :Person .
-
-data:Sarah_Georgina_Walker a :Person,
+data:Chantal_Hochuli a :Person,
         :Woman .
+
+data:Prince_Christian a :Man,
+        :Person .
+
+data:Prince_Ernest_Augustus_of_Hannover a :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1987 .
+
+data:Prince_Ernst_August_Jr a :Man,
+        :Person .
+
+data:Prince_Rainier_III a :Man,
+        :Person .
+
+data:Princess_Alexandra a :Person,
+        :Woman ;
+    :hasMother data:Princess_Caroline_of_Monaco .
+
+data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 1980 .
+
+data:Prince_Ludwig_Rudolph_of_Hannover a :Man,
+        :Person .
+
+data:Princess_Caroline_of_Monaco a :Person,
+        :Woman ;
+    :hasFather data:Prince_Rainier_III .
 

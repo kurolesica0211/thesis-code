@@ -1,0 +1,174 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Orleans_y_Borbon a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_de_Orleans_y_Borbon ;
+    :hasRelation data:Alfonso_de_Orleans_y_Borbon ;
+    :isBloodrelationOf data:Alfonso_de_Orleans_y_Borbon ;
+    :isBrotherOf data:Alfonso_de_Orleans_y_Borbon ;
+    :isSiblingOf data:Alfonso_de_Orleans_y_Borbon .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Maria_Cristina_of_Spain ;
+    :hasSister data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Maria_Cristina_of_Spain ;
+    :isSisterOf data:Maria_Cristina_of_Spain .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :isAncestorOf data:Alfonso_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII .
+
+data:Pilar a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSisterOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasChild data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :hasSon data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isAncestorOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Juan_Count_of_Barcelona ;
+    :isFatherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isParentOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I .
+
+data:Maria_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :hasSister data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isAncestorOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isAuntOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isParentOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isBrotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSonOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Alfonso_of_Spain a :Man,
+        :Person ;
+    :alsoKnownAs "Alfonsito"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Alfonso_of_Spain,
+        data:Juan_Carlos_I ;
+    :hasDeathYear 1956 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies,
+        data:Pilar ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isBrotherOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Spain,
+        data:Juan_Carlos_I,
+        data:Pilar ;
+    :isSonOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_Bourbon-Two_Sicilies .
+

@@ -1,0 +1,186 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HowardOxenberg a :Man,
+        :Person ;
+    :hasBrother data:HowardOxenberg ;
+    :hasRelation data:HowardOxenberg ;
+    :isBloodrelationOf data:HowardOxenberg ;
+    :isBrotherOf data:HowardOxenberg ;
+    :isSiblingOf data:HowardOxenberg .
+
+data:ManuelUlloaElias a :Man,
+        :Person ;
+    :hasBrother data:ManuelUlloaElias ;
+    :hasDeathYear 1992 ;
+    :hasRelation data:ManuelUlloaElias ;
+    :isBloodrelationOf data:ManuelUlloaElias ;
+    :isBrotherOf data:ManuelUlloaElias ;
+    :isSiblingOf data:ManuelUlloaElias .
+
+data:NeilBalfourOfDawyck a :Man,
+        :Person ;
+    :hasBrother data:NeilBalfourOfDawyck ;
+    :hasRelation data:NeilBalfourOfDawyck ;
+    :isBloodrelationOf data:NeilBalfourOfDawyck ;
+    :isBrotherOf data:NeilBalfourOfDawyck ;
+    :isSiblingOf data:NeilBalfourOfDawyck .
+
+data:PrincePaulOfYugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrincePaulOfYugoslavia ;
+    :hasChild data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :hasDaughter data:PrincessElizabethOfYugoslavia ;
+    :hasRelation data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSon data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :isAncestorOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isBloodrelationOf data:PrincePaulOfYugoslavia ;
+    :isBrotherOf data:PrincePaulOfYugoslavia ;
+    :isFatherOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isParentOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isSiblingOf data:PrincePaulOfYugoslavia ;
+    :isUncleOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :hasDaughter data:PrincessElizabethOfYugoslavia ;
+    :hasRelation data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSon data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :isAncestorOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isAuntOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isBloodrelationOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isMotherOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isParentOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isSiblingOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSisterOf data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasBrother data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasParent data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabethOfYugoslavia ;
+    :isBloodrelationOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isBrotherOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isChildOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isSonOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrinceNicholasOfYugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasBrother data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasParent data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabethOfYugoslavia ;
+    :isBloodrelationOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isBrotherOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isChildOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isSonOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrincessElizabethOfYugoslavia a :Person,
+        :Woman ;
+    :alsoKnownAs "Jelisaveta Karađorđević"^^xsd:string ;
+    :hasAncestor data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMarriageYear 1960,
+        1969,
+        1987 ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasParent data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabethOfYugoslavia ;
+    :isBloodrelationOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isChildOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isDaughterOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia ;
+    :isSisterOf data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia,
+        data:PrincessElizabethOfYugoslavia .
+

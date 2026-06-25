@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Amanda_Ellingworth a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Amanda_Ellingworth a :Person ;
     rdfs:label "Amanda Ellingworth" ;
     data:posIndicesFull "0:41",
         "101:118",
@@ -20,7 +18,7 @@ data:Amanda_Ellingworth a :Person,
         "1234:1245",
         "1543:1549",
         "1632:1638",
-        "1909:1915",
+        "1845:1851",
         "743:754",
         "940:951" ;
     data:wdtLink wdt:Q6469925 ;
@@ -33,15 +31,12 @@ data:Amanda_Ellingworth a :Person,
         "Lady Amanda Patricia Victoria Knatchbull" ;
     :hasSex data:female .
 
-data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Person ;
     rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
     data:posIndicesFull "576:596" ;
     data:posIndicesPart "1453:1464",
         "1590:1601",
-        "1803:1814",
+        "1739:1750",
         "612:623",
         "627:632" ;
     data:wdtLink wdt:Q271995 ;
@@ -53,23 +48,14 @@ data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
         "Lady Mountbatten of Burma" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Person ;
     rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
     data:posIndicesFull "1260:1276",
         "225:242",
         "225:273" ;
     data:posIndicesPart "1453:1464",
         "1590:1601",
-        "1803:1814",
+        "1739:1750",
         "600:605",
         "607:611",
         "612:623",
@@ -82,67 +68,15 @@ data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
         "Louis Mountbatten",
         "Prince Louis of Battenberg",
         "The Earl Mountbatten of Burma" ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isBrotherOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isSiblingOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg .
+    :hasSex data:male .
 
-data:Louise_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Louise Mountbatten" ;
-    data:posIndicesFull "225:242" ;
-    data:posIndicesPart "1453:1464",
-        "1590:1601",
-        "1803:1814",
-        "612:623" ;
-    data:wdtLink wdt:Q115477 ;
-    :alsoKnownAs "Countess of Gripsholm",
-        "Lady Louise Alexandra Marie Irene Mountbatten",
-        "Lady Louise Mountbatten",
-        "Louise Alexandra Marie Irene Mountbatten",
-        "Louise Alexandra Marie Irene of Battenberg",
-        "Louise of Battenberg",
-        "Louise of Sweden",
-        "Mrs Olsson",
-        "Princess Louise Alexandra Marie Irene of Battenberg",
-        "Princess Louise of Battenberg",
-        "Queen Louise of Sweden" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alice_of_Battenberg ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "1069:1073",
-        "1759:1764",
-        "343:348",
-        "393:397" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasSex data:female ;
-    :hasSister data:Louise_Mountbatten ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten .
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
 

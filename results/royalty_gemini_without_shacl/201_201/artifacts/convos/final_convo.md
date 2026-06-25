@@ -69,44 +69,349 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Archduke Gottfried of Austria (German: Gottfried Maria Joseph Peter Ferdinand Hubert Anton Rupert Leopold Heinrich Ignaz Alfons, Erzherzog von Österreich, Prinz von Toskana; 14 March 1902 – 21 January 1984), also styled as Gottfried Erzherzog von Österreich, was an Archduke of Austria and claimant to the defunct throne of the Grand Duchy of Tuscany.
-Biography
+Wilhelm II (Friedrich Wilhelm Viktor Albert; 27 January 1859 – 4 June 1941) was the last German Emperor from 1888 until his abdication in 1918.
+Born during the reign of his granduncle Frederick William IV of Prussia, Wilhelm was the son of Prince Frederick William and Victoria, Princess Royal.
+Through his mother, he was the eldest of the 42 grandchildren of Queen Victoria of the United Kingdom.
+In March 1888, Wilhelm's father, Frederick William, ascended the German and Prussian thrones as Frederick III.
+Frederick died just 99 days later, and his son succeeded him as Kaiser Wilhelm II.
+However, Wilhelm often undermined such progress by making tactless and threatening statements towards other countries without first consulting his ministers.
+Likewise, he and his government did much to alienate the German Empire from most of Europe by initiating a massive naval build-up, contesting French control of Morocco, backing Austria-Hungary's annexation of Bosnia and threatening Britain's access to the Persian Gulf by  building a railway through Baghdad.
+Despite strengthening Germany's position as a great power in the short term by building a powerful navy and promoting scientific innovation within its borders, Wilhelm II's erratic foreign policy greatly antagonized the international community and is considered by many to have led to the fall of the German Empire.
+A lax wartime leader, Wilhelm left virtually all decisions regarding strategy and organisation of the war effort to the German Supreme Army Command.
+Losing the support of his country's military and many of his subjects, Wilhelm was forced to abdicate during the German Revolution of 1918–1919 which converted Germany into an unstable democratic state known as the Weimar Republic.
+Wilhelm subsequently fled to exile in the Netherlands, where he remained during its occupation by Nazi Germany in 1940 before dying there in 1941.
+Early life
 
-On 20 December 1866, Goffredo's grandfather, Ferdinando IV, the last Grand Duke of Tuscany, and his children were readmitted to the imperial family.
-The House of Tuscany ceased to exist as a sovereign branch and merged with the Austrian imperial house.
-Ferdinand was able to maintain his fons honorum vita natural durante, while his children became only imperial princes (archdukes of Austria) and no longer princes/princesses of Tuscany.
-The Grand Magistry of the Order of St Stephen died out with the death of Ferdinand IV.
-In fact, after the death of Grand Duke Ferdinand IV in 1908, Emperor Franz Joseph I forbade the acceptance of the title of Grand Duke or Prince or Princess of Tuscany: none of Ferdinand IV's children born after 1866 accepted the title of Prince or Grand Duke of Tuscany.
-They were also unable to legitimately take possession of the extinct dynastic orders, previously conferred by the Grand Dukes of Tuscany.
-While his grandfather had kept the title of Grand Duke of Tuscany after the abolition of the dukedom in 1860, he had abdicated it in favor of the Austrian Emperor in 1870.
-Peter Ferdinand, Goffredo's father, never  claimed the title of Grand Duke of Tuscany.
-The former Prime Minister of Saxony and later Imperial and Household Minister Beust declared: "The Tuscan Grand Ducal family has lost its sovereign rights as a result of political events.
-The Grand Dukes Leopold and Ferdinand and their more famous brothers are therefore from now on to be considered only as Archdukes of Austria and to be treated in accordance with the Statute of the High Noble Family of 3 February 1839.
+Wilhelm was born in Berlin on 27 January 1859—at the Crown Prince's Palace—to Victoria, Princess Royal ("Vicky") and Prince Frederick William of Prussia ("Fritz", the future Frederick III).
+His mother, Vicky, was the eldest child of Queen Victoria of the United Kingdom.
+At the time of Wilhelm's birth, his granduncle Frederick William IV was king of Prussia.
+Frederick William IV had been left permanently incapacitated by a series of strokes, and his younger brother Wilhelm, the young prince's grandfather, was acting as regent.
+Prince Wilhelm was the oldest of the 42 grandchildren of his maternal grandparents (Queen Victoria and Prince Albert).
+Upon the death of Frederick William IV in January 1861, Wilhelm's namesake grandfather became king, and the two-year-old Wilhelm became second in the line of succession to the Prussian throne.
+After 1871, Wilhelm also became second in the line to the newly created German Empire, which, according to the constitution of the German Empire, was ruled by the Prussian king.
+Traumatic birth
+
+Shortly before midnight on 26 January 1859, Princess Vicky experienced labour pains, followed by her water breaking, after which August Wegner, the family's personal physician, was summoned.
+Modern medical assessments have concluded Wilhelm's hypoxic state at birth, due to the breech delivery and the heavy dosage of chloroform, left him with minimal to mild brain damage, which manifested itself in his subsequent hyperactive and erratic behaviour, limited attention span and impaired social abilities.
+The brachial plexus injury resulted in Erb's palsy, which left Wilhelm with a withered left arm about six inches (15 centimetres) shorter than his right.
+Early years
+
+In 1863, Wilhelm was taken to England to be present at the wedding of his uncle Bertie and Princess Alexandra of Denmark (later King Edward VII and Queen Alexandra).
+Wilhelm attended the ceremony in a Highland costume, complete with a small toy dirk.
+His 18-year-old uncle Prince Alfred, charged with keeping an eye on him, told him to be quiet, but Wilhelm drew his dirk and threatened Alfred.
+When Alfred attempted to subdue him by force, Wilhelm bit him on the leg.
+His grandmother, Queen Victoria, missed seeing the fracas; to her Wilhelm remained "a clever, dear, good little child, the great favourite of my beloved Vicky".
+The thought that Wilhelm, as heir to the throne, should not be able to ride was intolerable to her.
+Riding lessons began when Wilhelm was eight and were a matter of endurance for him.
+Wilhelm, from six years of age, was tutored and heavily influenced by the 39-year-old teacher Georg Ernst Hinzpeter.
 "
 
 
-Family
+As a teenager, Wilhelm was educated at Kassel at the Friedrichsgymnasium.
+In January 1877, Wilhelm finished high school and on his eighteenth birthday received as a present from his grandmother the Order of the Garter.
+Wilhelm possessed a quick intelligence, but this was often overshadowed by a cantankerous temper.
+As a scion of the royal house of Hohenzollern, Wilhelm was exposed from an early age to the military society of the Prussian aristocracy.
+This had a major impact on him, and in maturity Wilhelm was seldom seen out of uniform.
+The hyper-masculine military culture of Prussia in this period did much to frame his political ideals and personal relationships.
+Wilhelm was in awe of his father, whose status as a hero of the wars of unification was largely responsible for the young Wilhelm's attitude, as were the circumstances in which he was raised; close emotional contact between father and son was not encouraged.
+Later, as he came into contact with the Crown Prince's political opponents, Wilhelm came to adopt more ambivalent feelings toward his father, perceiving the influence of Wilhelm's mother over a figure who should have been possessed of masculine independence and strength.
+Wilhelm also idolised his grandfather, Wilhelm I, and he was instrumental in later attempts to foster a cult of the first German Emperor as "Wilhelm the Great".
+Wilhelm resisted attempts by his parents, especially his mother, to educate him in a spirit of British liberalism.
+The German Emperor, Wilhelm I, watched as his grandson, guided principally by the Crown Princess Victoria, grew to manhood.
+When Wilhelm was nearing 21, the Emperor decided it was time his grandson should begin the military phase of his preparation for the throne.
+"In the Guards," Wilhelm said, "I really found my family, my friends, my interests—everything of which I had up to that time had to do without."
+When Wilhelm was in his early twenties, Chancellor Otto von Bismarck tried to separate him from his parents, who opposed Bismarck and his policies, with some success.
+Bismarck planned to use the young prince as a weapon against his parents in order to retain his own political dominance.
+Wilhelm thus developed a dysfunctional relationship with his parents, but especially with his English mother.
+In an outburst in April 1889, Wilhelm angrily implied that "an English doctor killed my father, and an English doctor crippled my arm—which is the fault of my mother", who allowed no German physicians to attend to herself or her immediate family.
+As a young man, Wilhelm fell in love with one of his maternal first cousins, Princess Elisabeth of Hesse-Darmstadt.
+In 1880 Wilhelm became engaged to Princess Augusta Victoria of Schleswig-Holstein, known as "Dona".
+Between 1882 and 1892, Augusta bore Wilhelm seven children, six sons and a daughter.
+Beginning in 1884, Bismarck began advocating that Kaiser Wilhelm send his grandson on diplomatic missions, a privilege denied to the Crown Prince.
+That year, Prince Wilhelm was sent to the court of Tsar Alexander III of Russia in St. Petersburg to attend the coming-of-age ceremony of the 16-year-old Tsarevich Nicholas.
+Wilhelm's behaviour did little to ingratiate himself to the tsar.
+Two years later, Kaiser Wilhelm I took Prince Wilhelm on a trip to meet with Emperor Franz Joseph I of Austria-Hungary.
+In 1886, also, thanks to Herbert von Bismarck, the son of the Chancellor, Prince Wilhelm began to be trained twice a week at the Foreign Ministry.
+Accession
 
-Gottfried was born in Linz, Austria-Hungary, the eldest child and son  of Archduke Peter Ferdinand of Austria and his wife Princess Maria Cristina of Bourbon-Two Sicilies.
-Gottfried was raised with his three siblings in Salzburg and Vienna until the end of World War I in 1918, when his family emigrated to Lucerne, Switzerland.
-Marriage and issue
+Kaiser Wilhelm I died in Berlin on 9 March 1888, and Prince Wilhelm's father ascended the throne as Frederick III.
+On 15 June of that same year, his 29-year-old son succeeded him as German Emperor and King of Prussia.
+Although in his youth he had been a great admirer of Otto von Bismarck, Wilhelm's characteristic impatience soon brought him into conflict with the "Iron Chancellor", the dominant figure in the foundation of his empire.
+While the imperial constitution vested executive power in the monarch, Wilhelm I had been content to leave day-to-day administration to Bismarck.
+Early conflicts between Wilhelm II and his chancellor soon poisoned the relationship between the two men.
+Bismarck had believed that Wilhelm was a lightweight who could be dominated, and he showed escalating disrespect for Wilhelm's favored policy objectives in the late 1880s.
+The final split between monarch and statesman occurred soon after an attempt by Bismarck to implement far-reaching anti-Socialist laws in early 1890.
+They favoured making the anti-Socialist laws permanent, with one exception: giving the German police the power, similarly to the Tsarist Okhrana, to expel alleged Socialist agitators from their homes by decree and into internal exile.
+As the debate continued, Wilhelm became more and more interested in the social problems being exploited in the propaganda of the Socialists, especially the treatment of mine workers who went on strike in 1889.
+Bismarck, in turn, sharply disagreed with Wilhelm's pro-labor union policies and worked to circumvent them.
+The final break between the Iron Chancellor and the Kaiser came when Bismarck initiated discussions with the opposition to form a new parliamentary majority without consulting with Wilhelm first.
+The Kartell, the shifting coalition government that Bismarck had been able to maintain since 1867, had finally lost its majority of seats in the Reichstag due to the Anti-Socialist Laws fiasco.
+In most parliamentary systems, the head of government depends upon the confidence of the parliamentary majority and has the right to form coalitions to maintain a majority of supporters.
+After a heated argument at Bismarck's estate over the latter's alleged disrespect for the Imperial Family, Wilhelm stormed out.
+In later years, Bismarck created the "Bismarck myth"; the view (which some historians have argued was confirmed by subsequent events) that Wilhelm II's successful demand for Bismarck's resignation destroyed any chance Imperial Germany ever had of stable government and international peace.
+According to this view, what Wilhelm termed "The New Course" is characterised as Germany's ship of state going dangerously off course, leading directly to the carnage of the First and Second World Wars.
+In interviews with C.L. Sulzberger for the book The Fall of Eagles, Prince Louis Ferdinand of Prussia, grandson and heir of Kaiser Wilhelm II, further commented, "Bismarck was certainly our greatest statesman, but he had very bad manners and he became increasingly overbearing with age.
+"
 
-Gottfried married Princess Dorothea of Bavaria, fifth child and fourth daughter of Prince Franz of Bavaria and his wife Princess Isabella Antonie of Croÿ, on 2 August 1938 civilly and religiously on 3 August 1938 in Sárvár, Kingdom of Hungary.
-Around 1970, in violation of the decree of Emperor Franz Joseph I of 1866 and ignoring the abdication of his grandfather last Grand Duke of Tuscany Ferdinand IV signed in Lindau on Lake Constance in 1870, he assumed the title of Grand Duke of Tuscany without the permission of the head of the imperial and royal house.
-Gottfried and Dorothea had issue:
+
+Wilhelm in control
+
+The New Course
+
+Bismarck was succeeded as Chancellor of Germany and Minister-President of Prussia by Leo von Caprivi.
+At the opening of the Reichstag on 6 May 1890, the Kaiser stated that the most pressing issue was the further enlargement of the bill concerning the protection of the labourer.
+Following the dismissal of Hohenlohe in 1900, Wilhelm appointed the man whom he regarded as "his own Bismarck", Bernhard von Bülow.
+In appointing Caprivi and then Hohenlohe, Wilhelm was embarking upon what is known to history as "the New Course", in which he hoped to exert decisive influence in the government of the empire.
+There is debate amongst historians as to the precise degree to which Wilhelm succeeded in implementing "personal rule" in this era, but what is clear is the very different dynamic which existed between the Crown and its chief political servant (the Chancellor) in the "Wilhelmine Era".
+Wilhelm wanted to preclude the emergence of another Iron Chancellor, whom he ultimately detested as being "a boorish old killjoy" who had not permitted any minister to see the Emperor except in his presence, keeping a stranglehold on effective political power.
+Upon his enforced retirement and until his dying day, Bismarck became a bitter critic of Wilhelm's policies, but without gaining the support of a majority within the Reichstag there was little chance of Bismarck exerting a decisive influence on policy.
+In the early twentieth century, Wilhelm began to concentrate upon his real agenda: the creation of a German Navy that would rival that of Britain and enable Germany to declare itself a world power.
+Bülow and Bethmann Hollweg, his loyal chancellors, looked after domestic affairs, while Wilhelm obliviously began to spread alarm in the chancelleries of Europe with his increasingly eccentric and ill-advised statements on foreign affairs.
+Promoter of arts and sciences
+
+Wilhelm enthusiastically promoted the arts and sciences, as well as public education and social welfare.
+He sponsored the Kaiser Wilhelm Society for the promotion of scientific research; it was funded by wealthy private donors and by the state and comprised a number of research institutes in both pure and applied sciences.
+Wilhelm supported the modernisers as they tried to reform the Prussian system of secondary education, which was rigidly traditional, elitist, politically authoritarian, and unchanged by the progress in the natural sciences.
+Wilhelm continued as Protector of the Order even after 1918, as the position was in essence attached to the head of the House of Hohenzollern.
+Personality
+
+Historians have frequently stressed the role of Wilhelm's personality in shaping his reign.
+Thus, Thomas Nipperdey concludes he was:
 
 
-Honours
+...gifted, with a quick understanding, sometimes brilliant, with a taste for the modern,—technology, industry, science—but at the same time superficial, hasty, restless, unable to relax, without any deeper level of seriousness, without any desire for hard work or drive to see things through to the end, without any sense of sobriety, for balance and boundaries, or even for reality and real problems, uncontrollable and scarcely capable of learning from experience, desperate for applause and success,—as Bismarck said early on in his life, he wanted every day to be his birthday—romantic, sentimental and theatrical, unsure and arrogant, with an immeasurably exaggerated self-confidence and desire to show off, a juvenile cadet, who never took the tone of the officers' mess out of his voice, and brashly wanted to play the part of the supreme warlord, full of panicky fear of a monotonous life without any diversions, and yet aimless, pathological in his hatred against his English mother.
+Historian David Fromkin states that Wilhelm had a love–hate relationship with Britain.
+Langer et al. (1968) emphasise the negative international consequences of Wilhelm's erratic personality:
+"He believed in force, and the 'survival of the fittest' in domestic as well as foreign politics ...
+Relationships with foreign relatives
 
-Ancestry
+As a grandchild of Queen Victoria, Wilhelm was a first cousin of King George V of the United Kingdom, as well as of queens Marie of Romania, Maud of Norway, Victoria Eugenie of Spain and Empress Alexandra of Russia.
+In 1889, Wilhelm's younger sister Sophia married Constantine, Crown Prince of Greece.
+Wilhelm was infuriated by his sister's conversion from Lutheranism to Greek Orthodoxy; upon her marriage, he attempted to ban her from entering Germany.
+Wilhelm's most contentious relationships were with his British relations.
+He craved the acceptance of his grandmother, Queen Victoria, and of the rest of her family.
+Between 1888 and 1901, Wilhelm resented Bertie, who despite being the heir apparent to the British throne, treated Wilhelm not as a reigning monarch, but merely as another nephew.
+In turn, Wilhelm often snubbed his uncle, whom he referred to as "the old peacock" and lorded his position as emperor over him.
+Beginning in the 1890s, Wilhelm made visits to England for Cowes Week on the Isle of Wight and often competed against his uncle in the yacht races.
+Bertie's wife, Alexandra, also disliked Wilhelm.
+Even though Wilhelm had not been on the throne at the time, Alexandra felt anger over the Prussian seizure of Schleswig-Holstein from her native Denmark in the 1860s, and was also annoyed over Wilhelm's treatment of his mother.
+Despite his poor relations with his English relatives, when he received news that Queen Victoria was dying at Osborne House in January 1901, Wilhelm travelled to England and was at her bedside when she died, and he remained for the funeral.
+In 1913, Wilhelm hosted a lavish wedding in Berlin for his only daughter, Victoria Louise.
+Among the guests at the wedding were his cousins Tsar Nicholas II of Russia and King George V of the United Kingdom, and George's wife, Queen Mary.
 
-References
+
+Foreign affairs
+
+German foreign policy under Wilhelm II was faced with a number of significant problems.
+Perhaps the most apparent was that Wilhelm was an impatient man, subjective in his reactions and affected strongly by sentiment and impulse.
+There were a number of examples, such as the Kruger telegram of 1896 in which Wilhelm congratulated President Paul Kruger for preventing the Transvaal Republic from being annexed by the British Empire during the Jameson Raid.
+During the First World War, he became the central target of British anti-German propaganda and the personification of a hated enemy.
+Wilhelm exploited fears of a yellow peril trying to interest other European rulers in the perils they faced by invading China; few other leaders paid attention.
+Wilhelm also used the Japanese victory in the Russo-Japanese War to try to incite fear in the west of the yellow peril that they faced by a resurgent Imperial Japan, which Wilhelm claimed would ally with China to overrun the conventional European Powers.
+Wilhelm also invested in strengthening the German colonial empire in Africa and the Pacific, but few became profitable and all were lost during the First World War.
+In South West Africa (now Namibia), a native revolt against German rule led to the Herero and Nama genocide, although Wilhelm eventually ordered it to be stopped and recalled its mastermind General Lothar von Trotha.
+One of the few times when Wilhelm succeeded in personal diplomacy was when in 1900, he supported the morganatic marriage of Archduke Franz Ferdinand of Austria to Countess Sophie Chotek, and helped negotiate an end to the opposition to the wedding by Emperor Franz Joseph I of Austria.
+A domestic triumph for Wilhelm was when his daughter Victoria Louise married the Duke of Brunswick in 1913; this helped heal the rift between the House of Hanover and the House of Hohenzollern that had followed Bismarck's invasion and annexation of the Kingdom of Hanover in 1866.
+Political visits to the Ottoman Empire
+
+In his first visit to Constantinople in 1889, Wilhelm secured the sale of German-made rifles to the Ottoman Army.
+Deeply moved by this imposing spectacle, and likewise by the consciousness of standing on the spot where held sway one of the most chivalrous rulers of all times, the great Sultan Saladin, a knight sans peur et sans reproche, who often taught his adversaries the right conception of knighthood, I seize with joy the opportunity to render thanks, above all to the Sultan Abdul Hamid for his hospitality.
+— Kaiser Wilhelm II, 
+
+On 10 November, Wilhelm went to visit Baalbek before heading to Beirut to board his ship back home on 12 November.
+In his second visit, Wilhelm secured a promise for German companies to construct the Berlin–Baghdad railway, and had the German Fountain constructed in Constantinople to commemorate his journey.
+Hun speech of 1900
+
+The Boxer Rebellion, an anti-foreign uprising in China, was put down in 1900 by an international force known as the Eight-Nation Alliance.
+Wilhelm's fiery rhetoric clearly expressed his vision for Germany as one of the great powers.
+The term "Hun" later became the favoured epithet of Allied anti-German war propaganda during the First World War.
+Assassination attempt
+
+On 6 March 1901, during a visit to Bremen, in an apparent assassination attempt Wilhelm was struck in the face by a sharp iron object thrown at him.
+"
+
+
+Eulenberg Scandal
+
+In the years 1906–1909, Socialist journalist Maximilian Harden published accusations of homosexual activity involving ministers, courtiers, army officers, and Wilhelm's closest friend and advisor, Prince Philipp zu Eulenberg.
+Harden, like some in the upper echelons of the military and Foreign Office, resented Eulenberg's approval of the Anglo-French Entente, and also his encouragement of Wilhelm to rule personally.
+The scandal led to Wilhelm experiencing a nervous breakdown, and the removal of Eulenberg and others of his circle from the court.
+The view that Wilhelm was a deeply repressed homosexual is increasingly supported by scholars: certainly, he never came to terms with his feelings for Eulenberg.
+Historians have linked the Eulenberg scandal to a fundamental shift in German policy that heightened its military aggressiveness and ultimately contributed to World War I.
+
+
+Moroccan Crisis
+
+One of Wilhelm's diplomatic blunders sparked the Moroccan Crisis of 1905.
+Wilhelm had viewed the article, which was based on discussions he had had with Colonel Edward Stuart-Wortley in 1907, as an opportunity to promote his views on Anglo-German friendship, but due to the content and emotional tone of many of his statements, he ended up further alienating not only the British but also the French, Russians and Japanese.
+The Daily Telegraph crisis deeply wounded Wilhelm's previously unimpaired self-confidence, and he experienced a severe bout of depression.
+He kept a low profile for many months after the scandal broke, although in July 1909 he took the opportunity to force the resignation of the chancellor, Prince von Bülow, whose defence of him in the Reichstag had been aimed primarily at shifting blame from himself for not stopping the publication of the article.
+As a result of the scandal, Wilhelm had less influence in domestic and foreign policy for the remainder of his reign than he had previously exercised.
+Naval arms race with Britain
+
+Nothing Wilhelm did in the international arena was of more influence than his decision to pursue a policy of massive naval construction.
+A powerful navy was Wilhelm's pet project.
+He had inherited from his mother a love of the British Royal Navy, which was at that time the world's largest.
+He once confided to his uncle, the Prince of Wales, that his dream was to have a "fleet of my own some day".
+Wilhelm's frustration over his fleet's poor showing at the Fleet Review at his grandmother's Diamond Jubilee celebrations, combined with his inability to exert German influence in South Africa following the dispatch of the Kruger telegram, led to Wilhelm taking definitive steps toward the construction of a fleet to rival that of his British cousins.
+Wilhelm called on the services of the dynamic naval officer Alfred von Tirpitz, whom he appointed to the head of the Imperial Naval Office in 1897.
+Tirpitz enjoyed Wilhelm's full support in his advocacy of successive naval bills of 1897 and 1900, by which the German navy was built up to contend with that of the British Empire.
+Naval expansion under the Fleet Acts eventually led to severe financial strains in Germany by 1914, as by 1906 Wilhelm had committed his navy to construction of the much larger, more expensive dreadnought type of battleship.
+The British depended on naval superiority and its response was to make Germany its most feared enemy.
+In 1889 Wilhelm reorganised top-level control of the navy by creating a Naval Cabinet (Marine-Kabinett) equivalent to the German Imperial Military Cabinet which had previously functioned in the same capacity for both the army and navy.
+Each of these three heads of department reported separately to Wilhelm.
+World War I
+
+Historians typically argue that Wilhelm was largely confined to ceremonial duties during the war—there were innumerable parades to review and honours to award.
+"
+
+
+The Sarajevo crisis
+
+Wilhelm was a friend of Franz Ferdinand, and he was deeply shocked by his assassination on 28 June 1914.
+Wilhelm offered to support Austria-Hungary in crushing the Black Hand, the secret organisation that had plotted the killing, and even sanctioned the use of force by Austria against the perceived source of the movement—Serbia (this is often called "the blank cheque").
+Wilhelm made erratic attempts to stay on top of the crisis via telegram, and when the Austro-Hungarian ultimatum was delivered to Serbia, he hurried back to Berlin.
+July 1914
+
+
+On the night of 30 July 1914, when handed a document stating that Russia would not cancel its mobilisation, Wilhelm wrote a lengthy commentary containing these observations:
+More recent British authors state that Wilhelm II really declared, "Ruthlessness and weakness will start the most terrifying war of the world, whose purpose is to destroy Germany.
+When it became clear that Germany would experience a war on two fronts and that Britain would enter the war if Germany attacked France through neutral Belgium, the panic-stricken Wilhelm attempted to redirect the main attack against Russia.
+When Helmuth von Moltke (the younger) (who had chosen the old plan from 1905, made by General von Schlieffen for the possibility of German war on two fronts) told him that this was impossible, Wilhelm said: "Your uncle would have given me a different answer!"
+Wilhelm is also reported to have said, "To think that George and Nicky should have played me false!
+Defeating France had been easy for Prussia in the Franco-Prussian War in 1870.
+However, Wilhelm II stopped any invasion of the Netherlands.
+Early War
+
+On 1 August 1914 (Saturday), Wilhelm II made a war speech in front of a great crowd.
+On 19 August 1914, Wilhelm II predicted that Germany would win the war.
+"
+
+
+Shadow-Kaiser
+
+Wilhelm's role in wartime was one of ever-decreasing power as he increasingly handled awards ceremonies and honorific duties.
+Increasingly cut off from reality and the political decision-making process, Wilhelm vacillated between defeatism and dreams of victory, depending upon the fortunes of his armies.
+Nevertheless, Wilhelm still retained the ultimate authority in matters of political appointment, and it was only after his consent had been gained that major changes to the high command could be brought about.
+Wilhelm was in favour of the dismissal of Colonel General Helmuth von Moltke in September 1914 and his replacement by General Erich von Falkenhayn.
+Upon hearing in July 1917 that his cousin George V had changed the name of the British royal house to Windsor, Wilhelm remarked that he planned to see Shakespeare's play "The Merry Wives of Saxe-Coburg-Gotha".
+That year also saw Wilhelm sickened during the worldwide Spanish flu outbreak, though he survived.
+Abdication and exile
+
+Wilhelm was at the Imperial Army headquarters in Spa, Belgium, when the uprisings in Berlin and other centres took him by surprise in late 1918.
+After the outbreak of the German Revolution, Wilhelm could not make up his mind whether to abdicate.
+Wilhelm thought he ruled as emperor in a personal union with Prussia.
+In truth, the constitution defined the empire as a confederation of states under the permanent presidency of Prussia.
+The imperial crown was thus tied to the Prussian crown, meaning that Wilhelm could not renounce one crown without renouncing the other.
+Wilhelm's hope of retaining at least one of his crowns was revealed as unrealistic when, in the hope of preserving the monarchy in the face of growing revolutionary unrest, Chancellor Prince Max of Baden announced Wilhelm's abdication of both titles on 9 November 1918.
+Prince Max himself was forced to resign later the same day, when it became clear that only Friedrich Ebert, leader of the SPD, could effectively exert control.
+Wilhelm accepted this fait accompli only after Ludendorff's replacement, General Wilhelm Groener, had informed him that the officers and men of the army would march back in good order under Hindenburg's command, but would certainly not fight for Wilhelm's throne.
+On 10 November, Wilhelm crossed the border by train and went into exile in the neutral Netherlands.
+Upon the conclusion of the Treaty of Versailles in early 1919, Article 227 expressly provided for the prosecution of Wilhelm "for a supreme offence against international morality and the sanctity of treaties", but the Dutch government refused to extradite him.
+The request for extradition will not be based on genuine desire on the part of British officials to bring the kaiser to trial, according to authoritative information, but is considered necessary formality to 'save the face' of politicians who promised to see that Wilhelm was punished for his crimes.
+President Woodrow Wilson of the United States opposed extradition, arguing that prosecuting Wilhelm would destabilise international order and lose the peace.
+Wilhelm first settled in Amerongen, where on 28 November he issued a belated statement of abdication from both the Prussian and imperial thrones, thus formally ending the Hohenzollerns' 500-year rule over Prussia and its predecessor state, Brandenburg.
+Finally accepting the reality that he had lost both of his crowns for good, he gave up his rights to "the throne of Prussia and to the German Imperial throne connected therewith".
+He also released his soldiers and officials in both Prussia and the empire from their oath of loyalty to him.
+The Weimar Republic allowed Wilhelm to remove twenty-three railway wagons of furniture, twenty-seven containing packages of all sorts, one bearing a car and another a boat, from the New Palace at Potsdam.
+Life in exile
+
+In 1922, Wilhelm published the first volume of his memoirs—a very slim volume that insisted he was not guilty of initiating the Great War, and defended his conduct throughout his reign, especially in matters of foreign policy.
+Wilhelm had developed a penchant for archaeology while residing at the Corfu Achilleion, excavating at the site of the Temple of Artemis in Corfu, a passion he retained in his exile.
+In exile, one of Wilhelm's greatest passions was hunting, and he killed thousands of animals, both beast and bird.
+Wealth
+
+Wilhelm II was seen as the richest man in Germany before 1914.
+Views on Nazism
+
+In the early 1930s, Wilhelm apparently hoped that the successes of the Nazi Party would stimulate interest in a restoration of the House of Hohenzollern, with his eldest grandson as the new Kaiser.
+Though he played host to Hermann Göring at Doorn on at least one occasion, Wilhelm learned to distrust Hitler.
+Hearing of the murder of the wife of former Chancellor Kurt von Schleicher during the Night of the Long Knives, Wilhelm said, "We have ceased to live under the rule of law and everyone must be prepared for the possibility that the Nazis will push their way in and put them up against the wall!"
+Wilhelm was also appalled at the Kristallnacht of 9–10 November 1938, saying "I have just made my views clear to Auwi  in the presence of his brothers.
+Wilhelm also stated, "For the first time, I am ashamed to be a German":
+
+
+There's a man alone, without family, without children, without God  He builds legions, but he doesn't build a nation.
+And I was gratified to see that there were, associated with it for a time, some of the wisest and most outstanding Germans.
+— Wilhelm on Hitler, December 1938
+
+In the wake of the German victory over Poland in September 1939, Wilhelm's adjutant, Wilhelm von Dommes, wrote on his behalf to Hitler, stating that the House of Hohenzollern "remained loyal" and noted that nine Prussian Princes (one son and eight grandchildren) were stationed at the front, concluding "because of the special circumstances that require residence in a neutral foreign country, His Majesty must personally decline to make the aforementioned comment.
+Wilhelm greatly admired the success which the Wehrmacht was able to achieve in the opening months of the Second World War, and personally sent Hitler a congratulatory telegram when the Netherlands surrendered in May 1940: "My Führer, I congratulate you and hope that under your marvellous leadership the German monarchy will be restored completely."
+Upon the fall of Paris a month later, Wilhelm sent another telegram: "Under the deeply moving impression of France's capitulation I congratulate you and all the German armed forces on the God-given prodigious victory with the words of Kaiser Wilhelm the Great of the year 1870: 'What a turn of events through God's dispensation!'
+In a letter to his daughter Victoria Louise, Duchess of Brunswick, he wrote triumphantly, "Thus is the pernicious Entente Cordiale of Uncle Edward VII brought to nought."
+In a September 1940 letter to an American journalist, Wilhelm praised Germany's rapid early conquests as "a succession of miracles", but remarked also that "the brilliant leading Generals in this war came from My school, they fought under my command in the World War as lieutenants, captains and young majors.
+After the German conquest of the Netherlands in 1940, the aging Wilhelm retired completely from public life.
+In May 1940, Wilhelm declined an offer from Winston Churchill of asylum in Great Britain, preferring to die at Huis Doorn.
+Anti-English, antisemitic, and anti-Freemason views
+
+During his last year at Doorn, Wilhelm believed that Germany was still the land of monarchy and Christianity, while England was the land of classical liberalism and therefore of Satan and the Antichrist.
+Wilhelm asserted that the "British people must be liberated from Antichrist Juda.
+Continental Europe was now, Wilhelm wrote, "consolidating and closing itself off from British influences after the elimination of the British and the Jews!"
+In a 1940 letter to his sister Princess Margaret, Wilhelm wrote: "The hand of God is creating a new world & working  ...
+Despite their very troubled relationship, Wilhelm wrote to a friend, "Today the 100th birthday of my mother!
+"
+
+
+Death
+
+Wilhelm died of a pulmonary embolism in Doorn, Netherlands, on 4 June 1941, at the age of 82, just weeks before the Axis invasion of the Soviet Union.
+However, it was then revealed that Wilhelm's orders were that his body was not to return to Germany unless the monarchy was first restored.
+The mourners included Field Marshal August von Mackensen, fully dressed in his old Imperial Hussars uniform, former World War I Office of Naval Intelligence field agent Admiral Wilhelm Canaris, Colonel General Curt Haase, World War I flying ace turned Wehrmachtbefehlshaber for the Netherlands General Friedrich Christiansen, and Reichskommissar for the Netherlands Arthur Seyss-Inquart, along with a few other military advisers.
+However, Kaiser Wilhelm's insistence that the swastika and Nazi Party regalia not be displayed at his funeral was ignored, as is seen in the photographs of the funeral taken by a Dutch photographer.
+Wilhelm was buried in a mausoleum upon the grounds of Huis Doorn, which has since become a place of pilgrimage for German monarchists, who gather there every year on the anniversary of his death to pay their homage to the last German Emperor.
+Historiography
+
+Three trends have characterised the writing about Wilhelm.
+Second, there came those who judged Wilhelm to be completely unable to handle the great responsibilities of his position, a ruler too reckless to deal with power.
+Third, after 1950, later scholars have sought to transcend the passions of the early 20th century and attempted an objective portrayal of Wilhelm and his rule.
+The accompanying story called him "the greatest factor for peace that our time can show", and credited Wilhelm with frequently rescuing Europe from the brink of war.
+Until the late 1950s, Germany under the last Kaiser was depicted by most historians as an almost absolute monarchy.
+More recently, historian John C. G. Röhl has portrayed Wilhelm as the key figure in understanding the recklessness and downfall of Imperial Germany.
+Marriages and issue
+
+Wilhelm and his first wife, Augusta Victoria of Schleswig-Holstein, were married on 27 February 1881.
+They had seven children:
+
+
+Empress Augusta, known affectionately as "Dona", was a constant companion to Wilhelm, and her death from a heart attack on 11 April 1921 was a devastating blow.
+It also came less than a year after their son Joachim committed suicide.
+Remarriage
+
+The following January, Wilhelm received a birthday greeting from a son of the late Prince Johann George Ludwig Ferdinand August Wilhelm of Schönaich-Carolath.
+The 63-year-old Wilhelm invited the boy and his mother, Princess Hermine Reuss of Greiz, to Doorn.
+Wilhelm found 35-year-old Hermine very attractive, and greatly enjoyed her company.
+The couple were wed in Doorn on 5 November 1922 despite the objections of Wilhelm's monarchist supporters and his children.
+Hermine's daughter, Princess Henriette, married the late Prince Joachim's son, Karl Franz Josef, in 1940, but divorced in 1946.
+Religion
+
+Own views
+
+In accordance with his role as the King of Prussia, Emperor Wilhelm II was a Lutheran member of the Evangelical State Church of Prussia's older Provinces.
+Attitude towards Islam
+
+Wilhelm II was on friendly terms with the Muslim world.
+Following his trip to Constantinople (which he visited three times—an unbeaten record for any European monarch) in 1898, Wilhelm II wrote to Nicholas II that:
+
+
+If I had come there without any religion at all, I certainly would have turned Mohammedan!
+Antisemitism
+
+Wilhelm's biographer Lamar Cecil identified Wilhelm's "curious but well-developed anti-Semitism", noting that in 1888 a friend of Wilhelm "declared that the young Kaiser's dislike of his Hebrew subjects, one rooted in a perception that they possessed an overweening influence in Germany, was so strong that it could not be overcome".
+Cecil concludes:
+
+
+Wilhelm never changed, and throughout his life he believed that Jews were perversely responsible, largely through their prominence in the Berlin press and in leftist political movements, for encouraging opposition to his rule.
+At the height of German military intervention against the Red Army during the Russian Civil War in 1918, Kaiser Wilhelm also suggested a similar campaign against the "Jew-Bolsheviks" who were slaughtering the Baltic German nobility in the Baltic states, citing the example of what Turks had done to the Ottoman Armenians just a few years earlier.
+On 2 December 1919, Wilhelm wrote to Mackensen, denouncing the November Revolution of 1918 and his own forced abdication as the "deepest, most disgusting shame ever perpetrated by a person in history, the Germans have done to themselves ... egged on and misled by the tribe of Judah ...
+Wilhelm advocated a "regular international all-worlds pogrom à la Russe" as "the best cure" and further believed that Jews were a "nuisance that humanity must get rid of some way or other.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +427,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +444,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +478,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +560,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +583,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +603,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +613,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +653,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,178 +752,198 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8fecf4c8-b96e-4561-8be0-32e395a666f7)
- Call ID: 8fecf4c8-b96e-4561-8be0-32e395a666f7
+  AssignClass (9f1a269d-ab0e-4632-9aea-d1717ce0b28d)
+ Call ID: 9f1a269d-ab0e-4632-9aea-d1717ce0b28d
   Args:
+    source: Wilhelm_II
     type: :Man
-    source: Gottfried_of_Austria
-  AssignClass (2a14498c-d149-41fb-88a6-752755711aac)
- Call ID: 2a14498c-d149-41fb-88a6-752755711aac
+  AddLiteral (dad028e8-855d-4c6c-ad98-99bcb274f497)
+ Call ID: dad028e8-855d-4c6c-ad98-99bcb274f497
   Args:
-    type: :Person
-    source: Gottfried_of_Austria
-  AddLiteral (9fda3afc-e31a-494b-8180-244f860f588a)
- Call ID: 9fda3afc-e31a-494b-8180-244f860f588a
-  Args:
-    literal_value: 1902
-    literal_type: xsd:integer
-    source: Gottfried_of_Austria
     relation: :hasBirthYear
-  AddLiteral (be6edefe-2842-4695-9976-58396e697e52)
- Call ID: be6edefe-2842-4695-9976-58396e697e52
-  Args:
+    source: Wilhelm_II
     literal_type: xsd:integer
-    source: Gottfried_of_Austria
+    literal_value: 1859
+  AddLiteral (b5ec4558-d7bf-4082-b848-1a05c5da8ad6)
+ Call ID: b5ec4558-d7bf-4082-b848-1a05c5da8ad6
+  Args:
+    source: Wilhelm_II
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1984
-  AddTriple (9a557659-c81d-494b-93a0-f913709df4d0)
- Call ID: 9a557659-c81d-494b-93a0-f913709df4d0
+    literal_value: 1941
+  AssignClass (e7f9334e-c99e-4c6b-b345-53858f003737)
+ Call ID: e7f9334e-c99e-4c6b-b345-53858f003737
   Args:
-    relation: :hasSex
-    source: Gottfried_of_Austria
-    target: :Male
-  AssignClass (0f6ca878-f8b3-4a12-af1f-1d322fe522c5)
- Call ID: 0f6ca878-f8b3-4a12-af1f-1d322fe522c5
-  Args:
+    source: Frederick_III
     type: :Man
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (de6d4462-98a7-4d9a-8b4f-4b70c3217cc3)
- Call ID: de6d4462-98a7-4d9a-8b4f-4b70c3217cc3
-  Args:
-    type: :Person
-    source: Peter_Ferdinand_of_Austria
-  AddTriple (19e2e264-ca58-490d-8ebf-45e28c1a0e1c)
- Call ID: 19e2e264-ca58-490d-8ebf-45e28c1a0e1c
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (6ab540c6-688d-45d4-9329-55a293998104)
- Call ID: 6ab540c6-688d-45d4-9329-55a293998104
+  AssignClass (c7d5644d-abef-4e19-8fc7-2b2357c1bde9)
+ Call ID: c7d5644d-abef-4e19-8fc7-2b2357c1bde9
   Args:
     type: :Woman
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (ada11b63-5810-450c-9bf2-4c5c3a55610d)
- Call ID: ada11b63-5810-450c-9bf2-4c5c3a55610d
+    source: Victoria_Princess_Royal
+  AddTriple (bfef2e1d-1227-4d31-96af-af7de63f378d)
+ Call ID: bfef2e1d-1227-4d31-96af-af7de63f378d
   Args:
-    type: :Person
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddTriple (3bd308ce-9be2-45c4-ab99-c8f873f5d14b)
- Call ID: 3bd308ce-9be2-45c4-ab99-c8f873f5d14b
+    source: Wilhelm_II
+    target: Frederick_III
+    relation: :hasFather
+  AddTriple (82d3f6ac-9670-44ba-a757-3ecd8426e45f)
+ Call ID: 82d3f6ac-9670-44ba-a757-3ecd8426e45f
   Args:
-    target: :Female
-    relation: :hasSex
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddTriple (652da9f6-3a79-4838-b0a8-20dcd853512b)
- Call ID: 652da9f6-3a79-4838-b0a8-20dcd853512b
+    relation: :hasMother
+    target: Victoria_Princess_Royal
+    source: Wilhelm_II
+  AssignClass (6ac61e56-8e8e-4564-9f07-00321137aff7)
+ Call ID: 6ac61e56-8e8e-4564-9f07-00321137aff7
+  Args:
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (e9f7538f-a2a8-4da8-9c2c-a3a585d3d8bc)
+ Call ID: e9f7538f-a2a8-4da8-9c2c-a3a585d3d8bc
+  Args:
+    source: Prince_Albert
+    type: :Man
+  AddTriple (f8489332-be31-4fab-b13e-41a91e40dc88)
+ Call ID: f8489332-be31-4fab-b13e-41a91e40dc88
+  Args:
+    source: Victoria_Princess_Royal
+    relation: :hasMother
+    target: Queen_Victoria
+  AddTriple (7ebea238-f389-4afe-8b29-1878617708fe)
+ Call ID: 7ebea238-f389-4afe-8b29-1878617708fe
+  Args:
+    source: Victoria_Princess_Royal
+    relation: :hasFather
+    target: Prince_Albert
+  AssignClass (29a5dd82-ea4d-4970-b465-ace320536084)
+ Call ID: 29a5dd82-ea4d-4970-b465-ace320536084
+  Args:
+    source: Frederick_William_IV
+    type: :Man
+  AssignClass (d7bb50b8-2b6d-413f-af29-1b192793d492)
+ Call ID: d7bb50b8-2b6d-413f-af29-1b192793d492
+  Args:
+    source: Wilhelm_I
+    type: :Man
+  AddTriple (d08cda33-95f3-4cf1-b8c7-cfd228edb245)
+ Call ID: d08cda33-95f3-4cf1-b8c7-cfd228edb245
+  Args:
+    source: Frederick_William_IV
+    relation: :hasBrother
+    target: Wilhelm_I
+  AddTriple (2142aac6-2b50-4042-a87d-9b0aa61cbae1)
+ Call ID: 2142aac6-2b50-4042-a87d-9b0aa61cbae1
   Args:
     relation: :hasFather
-    source: Gottfried_of_Austria
-    target: :Peter_Ferdinand_of_Austria
-  AddTriple (5cc6baa9-2a6c-4021-9050-f5c459d2af4f)
- Call ID: 5cc6baa9-2a6c-4021-9050-f5c459d2af4f
-  Args:
-    target: :Maria_Cristina_of_Bourbon-Two_Sicilies
-    source: Gottfried_of_Austria
-    relation: :hasMother
-  AssignClass (e7804418-e80e-41b5-82f3-4dfcfbb794d0)
- Call ID: e7804418-e80e-41b5-82f3-4dfcfbb794d0
-  Args:
-    type: :Man
-    source: Ferdinando_IV_of_Tuscany
-  AssignClass (6326b0e2-3cff-4806-a2be-53bfe5e7a232)
- Call ID: 6326b0e2-3cff-4806-a2be-53bfe5e7a232
-  Args:
-    type: :Person
-    source: Ferdinando_IV_of_Tuscany
-  AddTriple (2f1af19c-7416-4099-8ce0-470888c952e2)
- Call ID: 2f1af19c-7416-4099-8ce0-470888c952e2
-  Args:
-    relation: :hasSex
-    source: Ferdinando_IV_of_Tuscany
-    target: :Male
-  AddTriple (1bdc0894-2245-46cf-bb10-6a07ea6c22d4)
- Call ID: 1bdc0894-2245-46cf-bb10-6a07ea6c22d4
-  Args:
-    target: :Peter_Ferdinand_of_Austria
-    relation: :isFatherOf
-    source: Ferdinando_IV_of_Tuscany
-  AssignClass (ca4764e8-f7ea-4e41-882b-82d58772783e)
- Call ID: ca4764e8-f7ea-4e41-882b-82d58772783e
+    target: Wilhelm_I
+    source: Frederick_III
+  AssignClass (e43e8ff1-6016-4c6f-a452-acefede4c083)
+ Call ID: e43e8ff1-6016-4c6f-a452-acefede4c083
   Args:
     type: :Woman
-    source: Dorothea_of_Bavaria
-  AssignClass (cad43185-642a-46e9-94d0-abadb35b021e)
- Call ID: cad43185-642a-46e9-94d0-abadb35b021e
+    source: Sophia
+  AddTriple (adcd4271-c347-41e7-8a2a-c50d180b124a)
+ Call ID: adcd4271-c347-41e7-8a2a-c50d180b124a
   Args:
-    type: :Person
-    source: Dorothea_of_Bavaria
-  AddTriple (36146d57-c5be-483b-ad74-0bfa98b7dfa0)
- Call ID: 36146d57-c5be-483b-ad74-0bfa98b7dfa0
+    target: Sophia
+    relation: :hasSister
+    source: Wilhelm_II
+  AssignClass (b6598c6a-8d82-47ab-9709-a1f9d6f27ee5)
+ Call ID: b6598c6a-8d82-47ab-9709-a1f9d6f27ee5
   Args:
-    source: Dorothea_of_Bavaria
-    relation: :hasSex
-    target: :Female
-  AddLiteral (070421bd-4184-4d8a-b9ea-815f09886aca)
- Call ID: 070421bd-4184-4d8a-b9ea-815f09886aca
+    source: Constantine
+    type: :Man
+  AddTriple (d4148d59-e631-48d5-9d3f-ceec2e773ffd)
+ Call ID: d4148d59-e631-48d5-9d3f-ceec2e773ffd
   Args:
-    literal_value: 1938
     relation: :hasMarriageYear
-    source: Gottfried_of_Austria
-    literal_type: xsd:integer
-  AddTriple (5244bb24-b46a-4d30-a505-d8d8927581c8)
- Call ID: 5244bb24-b46a-4d30-a505-d8d8927581c8
+    target: 1889
+    source: Sophia
+  AddTriple (fd1c84d9-baa7-4dbb-950f-a0ffd09d148f)
+ Call ID: fd1c84d9-baa7-4dbb-950f-a0ffd09d148f
   Args:
-    source: Gottfried_of_Austria
+    target: Constantine
     relation: :hasRelation
-    target: :Dorothea_of_Bavaria
-  AssignClass (5af9b7ab-c16e-47fe-81cc-640e937d28b6)
- Call ID: 5af9b7ab-c16e-47fe-81cc-640e937d28b6
+    source: Sophia
+  AssignClass (58c78ed4-9e74-4b36-827b-f2b111f4f137)
+ Call ID: 58c78ed4-9e74-4b36-827b-f2b111f4f137
   Args:
+    source: Augusta_Victoria
+    type: :Woman
+  AddTriple (31b8f88f-c5f8-4360-9586-490cb901fa1e)
+ Call ID: 31b8f88f-c5f8-4360-9586-490cb901fa1e
+  Args:
+    source: Wilhelm_II
+    target: 1881
+    relation: :hasMarriageYear
+  AddTriple (c5b95f66-09c7-464d-b0f5-d2d03ced58fd)
+ Call ID: c5b95f66-09c7-464d-b0f5-d2d03ced58fd
+  Args:
+    relation: :hasRelation
+    target: Augusta_Victoria
+    source: Wilhelm_II
+  AssignClass (10d214ec-ac48-48ef-a2c5-64e3f31d7bf8)
+ Call ID: 10d214ec-ac48-48ef-a2c5-64e3f31d7bf8
+  Args:
+    source: Victoria_Louise
+    type: :Woman
+  AddTriple (c49db6d6-adfc-4abf-92fa-5c3d1cb4bd9e)
+ Call ID: c49db6d6-adfc-4abf-92fa-5c3d1cb4bd9e
+  Args:
+    relation: :hasMother
+    target: Augusta_Victoria
+    source: Victoria_Louise
+  AddTriple (86922556-884e-4663-9e0b-47155d9beba3)
+ Call ID: 86922556-884e-4663-9e0b-47155d9beba3
+  Args:
+    target: Wilhelm_II
+    relation: :hasFather
+    source: Victoria_Louise
+  AssignClass (d5e7ed0e-a386-4f96-b00e-960307b48d85)
+ Call ID: d5e7ed0e-a386-4f96-b00e-960307b48d85
+  Args:
+    source: Joachim
     type: :Man
-    source: Franz_of_Bavaria
-  AssignClass (454e56b1-b99e-419b-b9ff-15122a9fd8d1)
- Call ID: 454e56b1-b99e-419b-b9ff-15122a9fd8d1
+  AddTriple (e7be5253-3e38-44ea-98f8-997041060d20)
+ Call ID: e7be5253-3e38-44ea-98f8-997041060d20
   Args:
-    type: :Person
-    source: Franz_of_Bavaria
-  AddTriple (126d75d0-971c-4d94-9769-c0758f968775)
- Call ID: 126d75d0-971c-4d94-9769-c0758f968775
+    relation: :hasMother
+    target: Augusta_Victoria
+    source: Joachim
+  AddTriple (16be19d5-f371-4ed9-91c8-3bfa4214bbc3)
+ Call ID: 16be19d5-f371-4ed9-91c8-3bfa4214bbc3
   Args:
-    source: Franz_of_Bavaria
-    relation: :hasSex
-    target: :Male
-  AssignClass (96d9a0b8-d103-4faa-accf-0731d9aba41e)
- Call ID: 96d9a0b8-d103-4faa-accf-0731d9aba41e
+    target: Wilhelm_II
+    relation: :hasFather
+    source: Joachim
+  AssignClass (800f18d5-5635-40bf-87a1-67339d9ac530)
+ Call ID: 800f18d5-5635-40bf-87a1-67339d9ac530
   Args:
     type: :Woman
-    source: Isabella_Antonie_of_Croy
-  AssignClass (d20971ec-967d-4969-8860-54f9c3e2796b)
- Call ID: d20971ec-967d-4969-8860-54f9c3e2796b
+    source: Hermine_Reuss_of_Greiz
+  AddTriple (26ea0624-ade6-4268-8436-b3b2c4cfd87c)
+ Call ID: 26ea0624-ade6-4268-8436-b3b2c4cfd87c
   Args:
-    type: :Person
-    source: Isabella_Antonie_of_Croy
-  AddTriple (8f1e4d28-f4e2-4045-89a2-6648e5f62a38)
- Call ID: 8f1e4d28-f4e2-4045-89a2-6648e5f62a38
+    relation: :hasMarriageYear
+    target: 1922
+    source: Wilhelm_II
+  AddTriple (30262c12-6b45-48d6-a929-b84ed8eacc40)
+ Call ID: 30262c12-6b45-48d6-a929-b84ed8eacc40
   Args:
-    target: :Female
-    source: Isabella_Antonie_of_Croy
-    relation: :hasSex
-  AddTriple (fc49dc79-d0d8-4d17-9630-c03ecfc010f1)
- Call ID: fc49dc79-d0d8-4d17-9630-c03ecfc010f1
+    relation: :hasRelation
+    target: Hermine_Reuss_of_Greiz
+    source: Wilhelm_II
+  Finish (653bc164-6920-4535-95d6-0756fa24fa1b)
+ Call ID: 653bc164-6920-4535-95d6-0756fa24fa1b
   Args:
-    target: :Franz_of_Bavaria
-    relation: :hasFather
-    source: Dorothea_of_Bavaria
-  AddTriple (c26a2317-9cc8-4adb-a824-087748db27c2)
- Call ID: c26a2317-9cc8-4adb-a824-087748db27c2
-  Args:
-    source: Dorothea_of_Bavaria
-    relation: :hasMother
-    target: :Isabella_Antonie_of_Croy
-  Finish (bf5b4b9c-f860-482b-a07e-cd57ae24beb9)
- Call ID: bf5b4b9c-f860-482b-a07e-cd57ae24beb9
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -653,42 +1068,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ferdinando_IV_of_Tuscany a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isFatherOf data:Peter_Ferdinand_of_Austria .
+  data:Frederick_William_IV a :Man ;
+      :hasBrother data:Wilhelm_I .
 
-  data:Gottfried_of_Austria a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1984 ;
-      :hasFather data:Peter_Ferdinand_of_Austria ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Dorothea_of_Bavaria ;
-      :hasSex data:Male .
+  data:Joachim a :Man ;
+      :hasFather data:Wilhelm_II ;
+      :hasMother data:Augusta_Victoria .
 
-  data:Dorothea_of_Bavaria a :Person,
-          :Woman ;
-      :hasFather data:Franz_of_Bavaria ;
-      :hasMother data:Isabella_Antonie_of_Croy ;
-      :hasSex data:Female .
+  data:Victoria_Louise a :Woman ;
+      :hasFather data:Wilhelm_II ;
+      :hasMother data:Augusta_Victoria .
 
-  data:Franz_of_Bavaria a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Constantine a :Man .
 
-  data:Isabella_Antonie_of_Croy a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Frederick_III a :Man ;
+      :hasFather data:Wilhelm_I .
 
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Hermine_Reuss_of_Greiz a :Woman .
 
-  data:Peter_Ferdinand_of_Austria a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Prince_Albert a :Man .
+
+  data:Queen_Victoria a :Woman .
+
+  data:Sophia a :Woman ;
+      :hasMarriageYear data:1889 ;
+      :hasRelation data:Constantine .
+
+  data:Victoria_Princess_Royal a :Woman ;
+      :hasFather data:Prince_Albert ;
+      :hasMother data:Queen_Victoria .
+
+  data:Wilhelm_I a :Man .
+
+  data:Wilhelm_II a :Man ;
+      :hasBirthYear 1859 ;
+      :hasDeathYear 1941 ;
+      :hasFather data:Frederick_III ;
+      :hasMarriageYear data:1881,
+          data:1922 ;
+      :hasMother data:Victoria_Princess_Royal ;
+      :hasRelation data:Augusta_Victoria,
+          data:Hermine_Reuss_of_Greiz ;
+      :hasSister data:Sophia .
+
+  data:Augusta_Victoria a :Woman .
 
 
 
@@ -698,7 +1121,7 @@ The final data graph after all the edits:
 Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
 
 **Classless Nodes:**
-['Male', 'Female']
+['1922', '1889', '1881']
 
 ### Required Correction
 According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
@@ -714,16 +1137,21 @@ Proceed with the necessary tool calls now.
 
 []
 Tool Calls:
-  AssignClass (0c22ff81-c3c6-447a-8f4e-c2535987b88b)
- Call ID: 0c22ff81-c3c6-447a-8f4e-c2535987b88b
+  AssignClass (93dd2c50-c876-49e9-b4be-68606c2de591)
+ Call ID: 93dd2c50-c876-49e9-b4be-68606c2de591
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (785f8a3f-85f7-411b-ae5f-4adb2cd1668b)
- Call ID: 785f8a3f-85f7-411b-ae5f-4adb2cd1668b
+    source: 1922
+    type: :DomainEntity
+  AssignClass (25270bdc-c480-4d05-853c-4c411e9205e2)
+ Call ID: 25270bdc-c480-4d05-853c-4c411e9205e2
   Args:
-    type: :Sex
-    source: Female
-  Finish (135706ec-49c0-4a59-8d14-ff9af7771d8f)
- Call ID: 135706ec-49c0-4a59-8d14-ff9af7771d8f
+    type: :DomainEntity
+    source: 1889
+  AssignClass (ee37fd1a-2c85-418f-acc6-f43111b05edd)
+ Call ID: ee37fd1a-2c85-418f-acc6-f43111b05edd
+  Args:
+    source: 1881
+    type: :DomainEntity
+  Finish (30f34ea8-e42a-451f-ab16-e7a3717cedfb)
+ Call ID: 30f34ea8-e42a-451f-ab16-e7a3717cedfb
   Args:

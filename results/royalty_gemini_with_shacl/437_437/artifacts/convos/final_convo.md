@@ -85,32 +85,56 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Mary Cecilia Colman (née Bowes-Lyon; 30 January 1932 – 2 January 2021) was an English socialite, philanthropist, and extra lady-in-waiting to Princess Alexandra, The Honourable Lady Ogilvy.
-The daughter of Michael Bowes-Lyon and Elizabeth Margaret Cator, her paternal aunt was Queen Elizabeth
-The Queen Mother, and she was thus a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
-Early life
+India Riven Oxenberg (born June 7, 1991) is an American actress and documentary film producer.
+A granddaughter of Princess Elizabeth of Yugoslavia, she is a relative of the House of Karađorđević, the former royal family of Serbia and, later, Yugoslavia.
+Oxenberg began her career as a child actress, with small roles in film and television projects that her mother, Catherine Oxenberg, and then-stepfather, Casper Van Dien, were involved in.
+As a teenager, she was a cast member of the reality television series I Married a Princess.
+From 2011 to 2018, Oxenberg was involved in NXIVM, an American multi-level marketing company that was later exposed as a cult.
+Early life and education
 
-Mary Cecilia Bowes-Lyon was born on 30 January 1932 at Gastlings, the Bowes-Lyon family home in Biggleswade, Bedfordshire.
-Her father, Michael Bowes-Lyon (1893–1953), was the fifth son of Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne (née Cavendish-Bentinck).
-Her mother, Elizabeth Margaret Cator (1899–1959), was a great-granddaughter of Charles Yorke, 4th Earl of Hardwicke.
-She had a twin sister, Patricia Maud, later Lady Patricia Tetley, an older brother, Fergus Michael Claude, later Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne, and a younger brother, Michael Albemarle.
-Lady Mary was also a godmother to Diana, Princess of Wales.
-In 1949, a coming-out ball was held for her and her twin sister Patricia at Londonderry House, which was attended by their aunt, the Queen, and their cousins, The Princess Elizabeth and The Princess Margaret.
-Marriage and children
+Oxenberg was born on June 7, 1991, to actress Catherine Oxenberg and William Weitz Shaffer.
+Oxenberg's father was arrested in 1992 for smuggling marijuana from Thailand, reportedly profiting $50 million from drug trading.
+Her maternal grandparents are Princess Elizabeth of Yugoslavia and Howard Oxenberg, a Jewish dress manufacturer.
+As a great-granddaughter of Prince Regent Paul of Yugoslavia (Elizabeth's father), Oxenberg is a descendant of the House of Karađorđević, which ruled Serbia and Yugoslavia.
+Oxenberg is also a relative of the British royal family, the Danish royal family, and the Greek royal family through her great-grandmother, Princess Olga of Greece and Denmark.
+She is a niece of writer and fashion designer Christina Oxenberg.
+In 2008, Oxenberg was presented to society at Le Bal des débutantes at the Hôtel de Crillon in Paris.
+She was one of two descendants of the Karađorđević dynasty to make her debut at Le Bal that year, alongside her cousin Victoria de Silva, the daughter of Princess Katarina and Sir Desmond de Silva.
+Career
 
-On 10 November 1951 at St Bartholomew-the-Great in London, Mary married the then-Lieutenant Timothy Colman, son of the cricketer Geoffrey Colman.
-Work and later life
+Oxenberg's first film was the 2001 television drama The Miracle of the Cards.
+In 2002, Oxenberg played the role of Mattie in the science fiction television film The Vector File.
+Oxenberg was a cast member on the 2005 Lifetime reality television series I Married a Princess, which followed her family while her mother was married to Casper Van Dien.
+In 2009, she had a small role in the Disney film Princess Protection Program.
+Personal life
 
-In 1970, Mary was appointed an Extra Lady-in-waiting to another of the Queen's first cousins, Princess Alexandra, The Hon.
-After her elder brother succeeded their cousin as 17th Earl of Strathmore and Kinghorne, she received the title and precedence of a daughter of an earl by royal warrant of precedence in 1974.
-Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 88.
+In 2018, Oxenberg met Patrick D'Ignazio, a chef, while working as a manager for a restaurant in New York City.
+Oxenberg and D’Ignazio had their first child, a girl, in 2024.
+NXIVM
+
+After attending college for one year, Oxenberg, alongside her mother, enrolled in a self-help entrepreneurship course hosted by NXIVM, following a recommendation from a family friend.
+While they initially started the program together, Oxenberg's mother eventually withdrew.
+In January 2015, after five years in NXIVM, Oxenberg was approached by Allison Mack about joining a secret sorority, "DOS".
+In DOS, Mack became a mentor to Oxenberg.
+Oxenberg was instructed to provide personal family secrets and pose for nude photographs for Mack, who also limited the amount of food Oxenberg could eat and required her to cook and clean for her while living with Mack in Albany, New York.
+Throughout this process, Oxenberg was groomed to become a sexual partner for NXIVM's founder and the leader of DOS, Keith Raniere.
+In January 2016, Oxenberg was held down and branded with the initials of Raniere.
+Oxenberg left NXIVM in 2018.
+While Oxenberg was involved in NXIVM, her mother Catherine tried to get her out of the organization and expose the cult through media in 2017.
+In 2018, Catherine wrote the book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult.
+In 2019, Catherine produced the Lifetime television movie Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter.
+Oxenberg officially left NXIVM in the summer of 2018 and moved back to Malibu with her mother.
+Oxenberg's time in the cult was discussed in the HBO 2020 documentary The Vow.
+Oxenberg produced and starred in the 2020 Starz documentary series Seduced: Inside the NXIVM Cult.
+Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscription "ancora imparo" (i'm still learning) by a tattoo artist in New York City's East Village.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +150,9 @@ Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 8
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +167,23 @@ Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 8
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,209 +475,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c07efbc3-f7a4-4837-9a39-110a51880207)
- Call ID: c07efbc3-f7a4-4837-9a39-110a51880207
+  AssignClass (414f089d-99ab-4a8d-b4fc-a7d3d994d133)
+ Call ID: 414f089d-99ab-4a8d-b4fc-a7d3d994d133
+  Args:
+    source: India_Riven_Oxenberg
+    type: :Woman
+  AssignClass (f31df2e2-0b45-4c3d-a511-839b2c407f57)
+ Call ID: f31df2e2-0b45-4c3d-a511-839b2c407f57
   Args:
     type: :Woman
-    source: Mary_Cecilia_Colman
-  AssignClass (c2b2c7d0-0d2c-4df1-a901-1b89b2e4c530)
- Call ID: c2b2c7d0-0d2c-4df1-a901-1b89b2e4c530
+    source: Catherine_Oxenberg
+  AssignClass (486709f8-753c-4b7f-86d2-f90b910ad0f9)
+ Call ID: 486709f8-753c-4b7f-86d2-f90b910ad0f9
   Args:
-    source: Mary_Cecilia_Colman
-    type: :Person
-  AddLiteral (b7165a6a-be90-4c91-93d4-26b958315bae)
- Call ID: b7165a6a-be90-4c91-93d4-26b958315bae
+    source: William_Weitz_Shaffer
+    type: :Man
+  AssignClass (fcb61235-0352-417d-bd88-fb4337a2a8e6)
+ Call ID: fcb61235-0352-417d-bd88-fb4337a2a8e6
   Args:
-    literal_type: xsd:integer
-    literal_value: 1932
-    source: Mary_Cecilia_Colman
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Woman
+  AssignClass (8cd67af7-0989-4f31-a67c-794e46937859)
+ Call ID: 8cd67af7-0989-4f31-a67c-794e46937859
+  Args:
+    source: Howard_Oxenberg
+    type: :Man
+  AssignClass (e576a557-4190-455f-b4f0-9fcb373e3980)
+ Call ID: e576a557-4190-455f-b4f0-9fcb373e3980
+  Args:
+    type: :Man
+    source: Prince_Regent_Paul_of_Yugoslavia
+  AssignClass (adc1c74a-149b-4013-ae7d-7c03ff29e1d1)
+ Call ID: adc1c74a-149b-4013-ae7d-7c03ff29e1d1
+  Args:
+    type: :Woman
+    source: Princess_Olga_of_Greece_and_Denmark
+  AssignClass (39af7f8a-f8eb-414f-a891-17592f20fd78)
+ Call ID: 39af7f8a-f8eb-414f-a891-17592f20fd78
+  Args:
+    type: :Woman
+    source: Christina_Oxenberg
+  AssignClass (1e279f45-1e4e-463f-8aae-3f12b51d41bd)
+ Call ID: 1e279f45-1e4e-463f-8aae-3f12b51d41bd
+  Args:
+    type: :Man
+    source: Casper_Van_Dien
+  AssignClass (54ebec33-c0ac-4189-a449-3de290c14c26)
+ Call ID: 54ebec33-c0ac-4189-a449-3de290c14c26
+  Args:
+    type: :Man
+    source: Patrick_DIgnazio
+  AssignClass (a069bd0c-9e02-479a-912b-0112389b5136)
+ Call ID: a069bd0c-9e02-479a-912b-0112389b5136
+  Args:
+    source: Victoria_de_Silva
+    type: :Woman
+  AssignClass (7c959147-4ccd-4195-930f-0df3f7c7480e)
+ Call ID: 7c959147-4ccd-4195-930f-0df3f7c7480e
+  Args:
+    type: :Woman
+    source: Princess_Katarina
+  AssignClass (4537ef5e-594d-4a66-8b80-308c13ccd7cb)
+ Call ID: 4537ef5e-594d-4a66-8b80-308c13ccd7cb
+  Args:
+    source: Sir_Desmond_de_Silva
+    type: :Man
+  AssignClass (3a2e75c1-6717-439a-9216-7c29fd347d44)
+ Call ID: 3a2e75c1-6717-439a-9216-7c29fd347d44
+  Args:
+    type: :Woman
+    source: Allison_Mack
+  AssignClass (7bb7a630-490b-4f31-9a91-cf18642390cf)
+ Call ID: 7bb7a630-490b-4f31-9a91-cf18642390cf
+  Args:
+    source: Keith_Raniere
+    type: :Man
+  AddLiteral (858a27fa-b74a-4e57-8cf2-5ba0b7e2e475)
+ Call ID: 858a27fa-b74a-4e57-8cf2-5ba0b7e2e475
+  Args:
     relation: :hasBirthYear
-  AddLiteral (1c2a0ac2-557c-48e8-b001-9af275a6ed07)
- Call ID: 1c2a0ac2-557c-48e8-b001-9af275a6ed07
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasDeathYear
-    literal_value: 2021
     literal_type: xsd:integer
-  AssignClass (c0f61dac-5791-4f24-821e-9cc35a84a841)
- Call ID: c0f61dac-5791-4f24-821e-9cc35a84a841
+    literal_value: 1991
+    source: India_Riven_Oxenberg
+  AddTriple (6e477d12-820a-4e9c-bf0b-6923e994c931)
+ Call ID: 6e477d12-820a-4e9c-bf0b-6923e994c931
   Args:
-    type: :Man
-    source: Michael_Bowes-Lyon
-  AssignClass (75d0a7db-4b57-4487-878c-89be24672c63)
- Call ID: 75d0a7db-4b57-4487-878c-89be24672c63
-  Args:
-    type: :Person
-    source: Michael_Bowes-Lyon
-  AssignClass (af74bf11-e13a-49bf-9cec-d8e1373f8979)
- Call ID: af74bf11-e13a-49bf-9cec-d8e1373f8979
-  Args:
-    type: :Woman
-    source: Elizabeth_Margaret_Cator
-  AssignClass (579997e5-bef2-4327-9d6d-ac437aaa057a)
- Call ID: 579997e5-bef2-4327-9d6d-ac437aaa057a
-  Args:
-    type: :Person
-    source: Elizabeth_Margaret_Cator
-  AddTriple (328a5f69-22d9-48b2-9278-a024b89fb133)
- Call ID: 328a5f69-22d9-48b2-9278-a024b89fb133
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasFather
-    target: Michael_Bowes-Lyon
-  AddTriple (3db4a5ae-78ad-4101-bcfe-5dff40498584)
- Call ID: 3db4a5ae-78ad-4101-bcfe-5dff40498584
-  Args:
-    source: Mary_Cecilia_Colman
     relation: :hasMother
-    target: Elizabeth_Margaret_Cator
-  AssignClass (4bd42b1b-0bf9-4b56-9021-a5850b3b7244)
- Call ID: 4bd42b1b-0bf9-4b56-9021-a5850b3b7244
+    target: Catherine_Oxenberg
+    source: India_Riven_Oxenberg
+  AddTriple (a92554a0-a84a-4954-a409-7341642d2414)
+ Call ID: a92554a0-a84a-4954-a409-7341642d2414
   Args:
-    source: Patricia_Maud_Tetley
-    type: :Woman
-  AssignClass (9421d4ea-c0e9-43c9-886f-30fade98a11d)
- Call ID: 9421d4ea-c0e9-43c9-886f-30fade98a11d
-  Args:
-    source: Patricia_Maud_Tetley
-    type: :Person
-  AddTriple (e1461e86-82db-43de-93d4-fa852ce59a92)
- Call ID: e1461e86-82db-43de-93d4-fa852ce59a92
-  Args:
-    target: Patricia_Maud_Tetley
-    source: Mary_Cecilia_Colman
-    relation: :hasSister
-  AssignClass (d1a31d0d-2452-4ae6-9209-5102fa50cac3)
- Call ID: d1a31d0d-2452-4ae6-9209-5102fa50cac3
-  Args:
-    type: :Man
-    source: Fergus_Bowes-Lyon
-  AssignClass (cf1d8086-a010-4297-9893-fb584f557b33)
- Call ID: cf1d8086-a010-4297-9893-fb584f557b33
-  Args:
-    source: Fergus_Bowes-Lyon
-    type: :Person
-  AddTriple (2cf3f012-add2-4e1d-b1b9-681cbc583459)
- Call ID: 2cf3f012-add2-4e1d-b1b9-681cbc583459
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasBrother
-    target: Fergus_Bowes-Lyon
-  AssignClass (bc688d01-3823-49e2-8758-0951ea721b07)
- Call ID: bc688d01-3823-49e2-8758-0951ea721b07
-  Args:
-    source: Michael_Albemarle
-    type: :Man
-  AssignClass (483cf8b5-b992-4bd7-967b-1c65a801a4a9)
- Call ID: 483cf8b5-b992-4bd7-967b-1c65a801a4a9
-  Args:
-    type: :Person
-    source: Michael_Albemarle
-  AddTriple (781f2496-0502-49ec-9909-5acd7d7c4fe8)
- Call ID: 781f2496-0502-49ec-9909-5acd7d7c4fe8
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasBrother
-    target: Michael_Albemarle
-  AssignClass (31564eb3-f839-4cd7-8784-1b6b63a0eb30)
- Call ID: 31564eb3-f839-4cd7-8784-1b6b63a0eb30
-  Args:
-    type: :Man
-    source: Timothy_Colman
-  AssignClass (56be9059-6d5d-48d6-8971-7bdced421358)
- Call ID: 56be9059-6d5d-48d6-8971-7bdced421358
-  Args:
-    type: :Person
-    source: Timothy_Colman
-  AddLiteral (28ce6dc8-aa95-4b16-87ce-f6508b7e8596)
- Call ID: 28ce6dc8-aa95-4b16-87ce-f6508b7e8596
-  Args:
-    relation: :hasMarriageYear
-    source: Mary_Cecilia_Colman
-    literal_value: 1951
-    literal_type: xsd:integer
-  AddTriple (d91fe5f0-d6cd-4cf6-a71c-a4c4ff395f77)
- Call ID: d91fe5f0-d6cd-4cf6-a71c-a4c4ff395f77
-  Args:
-    target: Timothy_Colman
-    source: Mary_Cecilia_Colman
-    relation: :hasRelation
-  AssignClass (be2daff3-0f94-4289-9aca-d8e5e3496c9d)
- Call ID: be2daff3-0f94-4289-9aca-d8e5e3496c9d
-  Args:
-    source: Geoffrey_Colman
-    type: :Man
-  AssignClass (989153d4-9f80-4110-bb3e-3cb1a67649c5)
- Call ID: 989153d4-9f80-4110-bb3e-3cb1a67649c5
-  Args:
-    type: :Person
-    source: Geoffrey_Colman
-  AddTriple (be511596-a066-4e8c-9383-f51a1a03775c)
- Call ID: be511596-a066-4e8c-9383-f51a1a03775c
-  Args:
-    source: Timothy_Colman
+    source: India_Riven_Oxenberg
+    target: William_Weitz_Shaffer
     relation: :hasFather
-    target: Geoffrey_Colman
-  AssignClass (13083ac3-ca7d-4d34-b02e-d69f9458d242)
- Call ID: 13083ac3-ca7d-4d34-b02e-d69f9458d242
+  AddTriple (232ebf57-6c72-4955-85b8-c3b92b71d1d0)
+ Call ID: 232ebf57-6c72-4955-85b8-c3b92b71d1d0
   Args:
-    type: :Man
-    source: Claude_Bowes-Lyon
-  AssignClass (7c1373ba-f103-4861-8ec3-24008874da21)
- Call ID: 7c1373ba-f103-4861-8ec3-24008874da21
-  Args:
-    source: Claude_Bowes-Lyon
-    type: :Person
-  AssignClass (de2b61c1-a32d-4411-8fb0-b4a3edfcc415)
- Call ID: de2b61c1-a32d-4411-8fb0-b4a3edfcc415
-  Args:
-    type: :Woman
-    source: Cecilia_Bowes-Lyon
-  AssignClass (045766a3-6fe7-4ef0-9733-a87807cd244b)
- Call ID: 045766a3-6fe7-4ef0-9733-a87807cd244b
-  Args:
-    source: Cecilia_Bowes-Lyon
-    type: :Person
-  AddTriple (5f70d152-14c7-40cb-9b47-2f5cc87738ee)
- Call ID: 5f70d152-14c7-40cb-9b47-2f5cc87738ee
-  Args:
-    source: Michael_Bowes-Lyon
-    relation: :hasFather
-    target: Claude_Bowes-Lyon
-  AddTriple (4a0cc6f4-dcb3-41ab-8f71-de29cbf872d8)
- Call ID: 4a0cc6f4-dcb3-41ab-8f71-de29cbf872d8
-  Args:
-    target: Cecilia_Bowes-Lyon
-    source: Michael_Bowes-Lyon
     relation: :hasMother
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Catherine_Oxenberg
+    target: Princess_Elizabeth_of_Yugoslavia
+  AddTriple (03e88ed1-a387-460b-8acd-05b98899cc68)
+ Call ID: 03e88ed1-a387-460b-8acd-05b98899cc68
+  Args:
+    relation: :hasFather
+    source: Catherine_Oxenberg
+    target: Howard_Oxenberg
+  AddTriple (d57b04ca-866c-4649-802f-a57a6b5e8c5a)
+ Call ID: d57b04ca-866c-4649-802f-a57a6b5e8c5a
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    target: Prince_Regent_Paul_of_Yugoslavia
+    relation: :hasFather
+  AddTriple (f9374ea2-3a39-4b31-82d9-0791085e46fa)
+ Call ID: f9374ea2-3a39-4b31-82d9-0791085e46fa
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    target: Princess_Olga_of_Greece_and_Denmark
+    relation: :hasMother
+  AddTriple (ff182238-4735-4c9c-afee-857e31f2149c)
+ Call ID: ff182238-4735-4c9c-afee-857e31f2149c
+  Args:
+    target: Christina_Oxenberg
+    source: Catherine_Oxenberg
+    relation: :isSisterOf
+  AddTriple (db46faa3-0ff3-4442-aaf2-033fd5671103)
+ Call ID: db46faa3-0ff3-4442-aaf2-033fd5671103
+  Args:
+    relation: :hasDaughter
+    source: Princess_Katarina
+    target: Victoria_de_Silva
+  AddTriple (997a7d37-dab0-4e99-afe4-819de90c18f2)
+ Call ID: 997a7d37-dab0-4e99-afe4-819de90c18f2
+  Args:
+    relation: :hasFather
+    source: Victoria_de_Silva
+    target: Sir_Desmond_de_Silva
+  Finish (ca23c2c0-0d36-48f6-baf5-6f0259463c5e)
+ Call ID: ca23c2c0-0d36-48f6-baf5-6f0259463c5e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -668,182 +718,232 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Mary_Cecilia_Colman a :Person,
-          :Woman ;
-      :hasBirthYear 1932 ;
-      :hasBrother data:Fergus_Bowes-Lyon,
-          data:Michael_Albemarle ;
-      :hasDeathYear 2021 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMarriageYear 1951 ;
-      :hasMother data:Elizabeth_Margaret_Cator ;
-      :hasRelation data:Timothy_Colman ;
-      :hasSister data:Patricia_Maud_Tetley .
+  data:Allison_Mack a :Woman .
 
-  data:Cecilia_Bowes-Lyon a :Person,
-          :Woman .
+  data:Casper_Van_Dien a :Man .
 
-  data:Claude_Bowes-Lyon a :Man,
-          :Person .
+  data:India_Riven_Oxenberg a :Woman ;
+      :hasBirthYear 1991 ;
+      :hasFather data:William_Weitz_Shaffer ;
+      :hasMother data:Catherine_Oxenberg .
 
-  data:Elizabeth_Margaret_Cator a :Person,
-          :Woman .
+  data:Keith_Raniere a :Man .
 
-  data:Fergus_Bowes-Lyon a :Man,
-          :Person .
+  data:Patrick_DIgnazio a :Man .
 
-  data:Geoffrey_Colman a :Man,
-          :Person .
+  data:Princess_Katarina a :Woman ;
+      :hasDaughter data:Victoria_de_Silva .
 
-  data:Michael_Albemarle a :Man,
-          :Person .
+  data:Catherine_Oxenberg a :Woman ;
+      :hasFather data:Howard_Oxenberg ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :isSisterOf data:Christina_Oxenberg .
 
-  data:Michael_Bowes-Lyon a :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Bowes-Lyon .
+  data:Christina_Oxenberg a :Woman .
 
-  data:Patricia_Maud_Tetley a :Person,
-          :Woman .
+  data:Howard_Oxenberg a :Man .
 
-  data:Timothy_Colman a :Man,
-          :Person ;
-      :hasFather data:Geoffrey_Colman .
+  data:Prince_Regent_Paul_of_Yugoslavia a :Man .
+
+  data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+      :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+  data:Princess_Olga_of_Greece_and_Denmark a :Woman .
+
+  data:Sir_Desmond_de_Silva a :Man .
+
+  data:Victoria_de_Silva a :Woman ;
+      :hasFather data:Sir_Desmond_de_Silva .
+
+  data:William_Weitz_Shaffer a :Man .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (c8cc9d1f-7443-4f88-afee-93bb41d3aaa6)
- Call ID: c8cc9d1f-7443-4f88-afee-93bb41d3aaa6
+  ValidateShacl (60e417de-725f-499e-9f0b-464404b7297d)
+ Call ID: 60e417de-725f-499e-9f0b-464404b7297d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Geoffrey_Colman is assigned as the father of Timothy_Colman but lacks the required :Ancestor class.
+      The value node Prince_Regent_Paul_of_Yugoslavia does not have the required class :Ancestor or :Man to be assigned as the hasFather of Princess_Elizabeth_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Geoffrey_Colman.
+      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Claude_Bowes-Lyon is assigned as the father of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node William_Weitz_Shaffer does not have the required class :Ancestor or :Man to be assigned as the hasFather of India_Riven_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Claude_Bowes-Lyon.
+      AssignClass(William_Weitz_Shaffer, :Man)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Cecilia_Bowes-Lyon is assigned as the mother of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node Howard_Oxenberg does not have the required class :Ancestor or :Man to be assigned as the hasFather of Catherine_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Cecilia_Bowes-Lyon.
+      AssignClass(Howard_Oxenberg, :Man)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Claude_Bowes-Lyon is assigned as the father of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node Sir_Desmond_de_Silva does not have the required class :Ancestor or :Man to be assigned as the hasFather of Victoria_de_Silva.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Claude_Bowes-Lyon.
+      AssignClass(Sir_Desmond_de_Silva, :Man)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Michael_Bowes-Lyon is assigned as the father of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Princess_Olga_of_Greece_and_Denmark does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Princess_Elizabeth_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Michael_Bowes-Lyon.
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Geoffrey_Colman is assigned as the father of Timothy_Colman but lacks the required :Ancestor class.
+      The value node Catherine_Oxenberg does not have the required class :Ancestor or :Woman to be assigned as the hasMother of India_Riven_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Geoffrey_Colman.
+      AssignClass(Catherine_Oxenberg, :Woman)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Cecilia_Bowes-Lyon is assigned as the mother of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node Princess_Elizabeth_of_Yugoslavia does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Catherine_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Cecilia_Bowes-Lyon.
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Elizabeth_Margaret_Cator is assigned as the mother of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Prince_Regent_Paul_of_Yugoslavia does not have the required class :Ancestor or :Man to be assigned as the hasFather of Princess_Elizabeth_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Elizabeth_Margaret_Cator.
+      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Claude_Bowes-Lyon is assigned as the father of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node William_Weitz_Shaffer does not have the required class :Ancestor or :Man to be assigned as the hasFather of India_Riven_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Claude_Bowes-Lyon.
+      AssignClass(William_Weitz_Shaffer, :Man)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Michael_Bowes-Lyon is assigned as the father of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Howard_Oxenberg does not have the required class :Ancestor or :Man to be assigned as the hasFather of Catherine_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Michael_Bowes-Lyon.
+      AssignClass(Howard_Oxenberg, :Man)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Geoffrey_Colman is assigned as the father of Timothy_Colman but lacks the required :Ancestor class.
+      The value node Sir_Desmond_de_Silva does not have the required class :Ancestor or :Man to be assigned as the hasFather of Victoria_de_Silva.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Geoffrey_Colman.
+      AssignClass(Sir_Desmond_de_Silva, :Man)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Cecilia_Bowes-Lyon is assigned as the mother of Michael_Bowes-Lyon but lacks the required :Ancestor class.
+      The value node Princess_Olga_of_Greece_and_Denmark does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Princess_Elizabeth_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Cecilia_Bowes-Lyon.
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Elizabeth_Margaret_Cator is assigned as the mother of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Catherine_Oxenberg does not have the required class :Ancestor or :Woman to be assigned as the hasMother of India_Riven_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Elizabeth_Margaret_Cator.
+      AssignClass(Catherine_Oxenberg, :Woman)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Michael_Bowes-Lyon is assigned as the father of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Princess_Elizabeth_of_Yugoslavia does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Catherine_Oxenberg.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Michael_Bowes-Lyon.
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
 
 
   Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Regent_Paul_of_Yugoslavia does not have the required class :Ancestor or :Man to be assigned as the hasFather of Princess_Elizabeth_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Regent_Paul_of_Yugoslavia, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node William_Weitz_Shaffer does not have the required class :Ancestor or :Man to be assigned as the hasFather of India_Riven_Oxenberg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Weitz_Shaffer, :Man)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Howard_Oxenberg does not have the required class :Ancestor or :Man to be assigned as the hasFather of Catherine_Oxenberg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Howard_Oxenberg, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Sir_Desmond_de_Silva does not have the required class :Ancestor or :Man to be assigned as the hasFather of Victoria_de_Silva.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sir_Desmond_de_Silva, :Man)
+
+
+  Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Elizabeth_Margaret_Cator is assigned as the mother of Mary_Cecilia_Colman but lacks the required :Ancestor class.
+      The value node Princess_Olga_of_Greece_and_Denmark does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Princess_Elizabeth_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Elizabeth_Margaret_Cator.
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Woman)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Catherine_Oxenberg does not have the required class :Ancestor or :Woman to be assigned as the hasMother of India_Riven_Oxenberg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Catherine_Oxenberg, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Elizabeth_of_Yugoslavia does not have the required class :Ancestor or :Woman to be assigned as the hasMother of Catherine_Oxenberg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Woman)
 
 
 
@@ -852,31 +952,52 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7aa3cc4a-36c5-48e1-9193-4d9daf94fb7b)
- Call ID: 7aa3cc4a-36c5-48e1-9193-4d9daf94fb7b
+  AssignClass (ed466bf9-caf4-49e0-b391-b93f908194d7)
+ Call ID: ed466bf9-caf4-49e0-b391-b93f908194d7
+  Args:
+    source: Prince_Regent_Paul_of_Yugoslavia
+    type: :Ancestor
+  AssignClass (d15cde23-d65f-4dad-9307-834e1fe3455e)
+ Call ID: d15cde23-d65f-4dad-9307-834e1fe3455e
   Args:
     type: :Ancestor
-    source: Geoffrey_Colman
-  AssignClass (a17e7a16-b248-42e8-9ce6-ee1ba5502f91)
- Call ID: a17e7a16-b248-42e8-9ce6-ee1ba5502f91
+    source: William_Weitz_Shaffer
+  AssignClass (e902c967-1af2-4151-8501-f75ca1110075)
+ Call ID: e902c967-1af2-4151-8501-f75ca1110075
+  Args:
+    source: Howard_Oxenberg
+    type: :Ancestor
+  AssignClass (2084cac4-f855-4fef-b9d8-5815085b50fd)
+ Call ID: 2084cac4-f855-4fef-b9d8-5815085b50fd
   Args:
     type: :Ancestor
-    source: Claude_Bowes-Lyon
-  AssignClass (e0dc3b05-2e41-485b-b56f-beec06a7d3ac)
- Call ID: e0dc3b05-2e41-485b-b56f-beec06a7d3ac
+    source: Sir_Desmond_de_Silva
+  AssignClass (11333d5b-6f2a-4087-b112-051dc5fb421f)
+ Call ID: 11333d5b-6f2a-4087-b112-051dc5fb421f
   Args:
-    source: Cecilia_Bowes-Lyon
+    source: Princess_Olga_of_Greece_and_Denmark
     type: :Ancestor
-  AssignClass (3c591ef2-8e4f-40cf-89de-546ccfae9ecd)
- Call ID: 3c591ef2-8e4f-40cf-89de-546ccfae9ecd
+  AssignClass (518faf88-9afb-4f58-bd7f-3094e789200c)
+ Call ID: 518faf88-9afb-4f58-bd7f-3094e789200c
   Args:
-    source: Michael_Bowes-Lyon
     type: :Ancestor
-  AssignClass (3824f6fe-583b-4611-a6f2-03e9594fd83e)
- Call ID: 3824f6fe-583b-4611-a6f2-03e9594fd83e
+    source: Catherine_Oxenberg
+  AssignClass (90cdf6ab-8a0e-4575-b7ef-8409f0ec4cf8)
+ Call ID: 90cdf6ab-8a0e-4575-b7ef-8409f0ec4cf8
   Args:
-    source: Elizabeth_Margaret_Cator
+    source: Princess_Elizabeth_of_Yugoslavia
     type: :Ancestor
+  Finish (dd72a0ed-893d-407f-92f8-fae7b5e0daa0)
+ Call ID: dd72a0ed-893d-407f-92f8-fae7b5e0daa0
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -901,61 +1022,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Mary_Cecilia_Colman a :Person,
+  data:Allison_Mack a :Woman .
+
+  data:Casper_Van_Dien a :Man .
+
+  data:India_Riven_Oxenberg a :Woman ;
+      :hasBirthYear 1991 ;
+      :hasFather data:William_Weitz_Shaffer ;
+      :hasMother data:Catherine_Oxenberg .
+
+  data:Keith_Raniere a :Man .
+
+  data:Patrick_DIgnazio a :Man .
+
+  data:Princess_Katarina a :Woman ;
+      :hasDaughter data:Victoria_de_Silva .
+
+  data:Catherine_Oxenberg a :Ancestor,
           :Woman ;
-      :hasBirthYear 1932 ;
-      :hasBrother data:Fergus_Bowes-Lyon,
-          data:Michael_Albemarle ;
-      :hasDeathYear 2021 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMarriageYear 1951 ;
-      :hasMother data:Elizabeth_Margaret_Cator ;
-      :hasRelation data:Timothy_Colman ;
-      :hasSister data:Patricia_Maud_Tetley .
+      :hasFather data:Howard_Oxenberg ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :isSisterOf data:Christina_Oxenberg .
 
-  data:Cecilia_Bowes-Lyon a :Ancestor,
-          :Person,
+  data:Christina_Oxenberg a :Woman .
+
+  data:Howard_Oxenberg a :Ancestor,
+          :Man .
+
+  data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
+          :Man .
+
+  data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+          :Woman ;
+      :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+  data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
           :Woman .
 
-  data:Claude_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person .
+  data:Sir_Desmond_de_Silva a :Ancestor,
+          :Man .
 
-  data:Elizabeth_Margaret_Cator a :Ancestor,
-          :Person,
-          :Woman .
+  data:Victoria_de_Silva a :Woman ;
+      :hasFather data:Sir_Desmond_de_Silva .
 
-  data:Fergus_Bowes-Lyon a :Man,
-          :Person .
-
-  data:Geoffrey_Colman a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Michael_Albemarle a :Man,
-          :Person .
-
-  data:Michael_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Bowes-Lyon .
-
-  data:Patricia_Maud_Tetley a :Person,
-          :Woman .
-
-  data:Timothy_Colman a :Man,
-          :Person ;
-      :hasFather data:Geoffrey_Colman .
+  data:William_Weitz_Shaffer a :Ancestor,
+          :Man .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (7a416323-7987-4a9d-ab3e-9606afc1df18)
- Call ID: 7a416323-7987-4a9d-ab3e-9606afc1df18
+  ValidateShacl (05eaa379-e1e6-4754-8b00-85429d8a9159)
+ Call ID: 05eaa379-e1e6-4754-8b00-85429d8a9159
   Args:
 
 ================================= Tool Message =================================
@@ -966,6 +1091,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (709d7a78-b482-4c96-ad63-98bca4bfb76e)
- Call ID: 709d7a78-b482-4c96-ad63-98bca4bfb76e
+  Finish (cd871f84-3a25-4d16-bc62-9d8524beb896)
+ Call ID: cd871f84-3a25-4d16-bc62-9d8524beb896
   Args:

@@ -69,24 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin (German: Friedrich Franz Erbgroßherzog von Mecklenburg-Schwerin; 22 April 1910 – 31 July 2001) was the heir apparent to the throne of Mecklenburg-Schwerin and a member of the Waffen-SS.
-Early life
+Granville George Fergus Leveson-Gower, 6th Earl Granville (born 10 September 1959) is a British peer, landowner, and artist.
+He was known as Lord Leveson until 1996 and was a member of the House of Lords from 1996 to 1999.
+Biography
 
-He was born in Schwerin, the eldest child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife Princess Alexandra of Hanover, a daughter of Crown Prince Ernest Augustus of Hanover (a first-cousin once removed of Queen Victoria) and Princess Thyra of Denmark, the youngest daughter of King Christian IX of Denmark.
-He did not succeed to the throne, as the Grand Duchy was replaced with the Free State of Mecklenburg-Schwerin.
-Upon the promulgation of the Weimar Constitution on 11 August 1919, titles of sovereigns such as emperor/empress, king/queen, grand duke/grand duchess, etc. were abolished.
-He therefore became known as Friedrich Franz Herzog von Mecklenburg-Schwerin (or Friedrich Franz, Duke of Mecklenburg-Schwerin) de facto since the establishment of the Free State of Mecklenburg-Schwerin.
-Post monarchy
+The elder son of Granville Leveson-Gower, 5th Earl Granville, whose mother Rose Leveson-Gower, Countess Granville, was a daughter of the Earl of Strathmore and Kinghorne and a sister of Queen Elizabeth the Queen Mother, he was educated at Eton College and from 1973 to 1976 was Page of Honour to Queen Elizabeth II, who was his godmother.
+On 31 October 1996, he succeeded as Earl Granville (1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), all in the peerage of the United Kingdom, at the time giving him a seat in the House of Lords.
+Granville is the resident laird of North Uist, living on the island at Callernish House, Griminish, near Lochmaddy, a house shaped like a doughnut designed in the 1960s by Sir Martyn Beckett.
+In 1999, a local smokehouse business came up for sale and Granville took it over, aiming to produce high quality smoked salmon and sea trout.
+With a passion for beachcombing, Granville has also become an artist and sculptor, inspired by flotsam and jetsam and has exhibited his work in North Uist and Edinburgh.
+On 23 May 1997, Granville married Anne Topping, a daughter of Bernard Topping, and they had three children:
 
-In May 1931 against the will of his father, Friedrich Franz joined the SS and by 1936 he had been promoted to the rank of Hauptsturmführer (Captain).
-In May 1943, a family council was called by the Grand Ducal family and Friedrich Franz was passed over as heir (of the family estates) in favour of his younger brother Duke Christian Louis, who would instead inherit the family property.
-Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter of Walter von Schaper and his wife Baroness Louise von Münchhausen, on 11 June 1941 at Schloß Wiligrad, near the Lake Schwerin.
+
+In 2021, Granville was reported to be living at Callernish with a new wife, Florence Pearson (married in 2016), an artist, their two young sons, a labrador trained to find ambergris, and a parrot.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +105,9 @@ Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +122,23 @@ Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,157 +430,130 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (86ccae97-0fa3-4a26-a03b-1845aada8050)
- Call ID: 86ccae97-0fa3-4a26-a03b-1845aada8050
+  AssignClass (b5b575e9-704f-40fc-917e-6d3f6824bf68)
+ Call ID: b5b575e9-704f-40fc-917e-6d3f6824bf68
   Args:
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
+    source: Granville_George_Fergus_Leveson-Gower
     type: :Man
-  AssignClass (82c6961d-1b8d-4e10-946c-1f0ba69ef282)
- Call ID: 82c6961d-1b8d-4e10-946c-1f0ba69ef282
+  AssignClass (4cfd75e5-a68e-4bb2-8c61-7cff73d44234)
+ Call ID: 4cfd75e5-a68e-4bb2-8c61-7cff73d44234
   Args:
-    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-    type: :Man
-  AssignClass (fd81e1a8-a47b-4b0a-a834-a4f4eff6daca)
- Call ID: fd81e1a8-a47b-4b0a-a834-a4f4eff6daca
+    source: Granville_George_Fergus_Leveson-Gower
+    type: :Person
+  AddLiteral (d13eafb3-82da-4557-8ddb-47a205e1712a)
+ Call ID: d13eafb3-82da-4557-8ddb-47a205e1712a
   Args:
-    source: Princess_Alexandra_of_Hanover
-    type: :Woman
-  AssignClass (f1568e9a-55f7-412e-8efb-31dc7aff0911)
- Call ID: f1568e9a-55f7-412e-8efb-31dc7aff0911
-  Args:
-    source: Crown_Prince_Ernest_Augustus_of_Hanover
-    type: :Man
-  AssignClass (025f8f33-4196-469c-b3c1-65f75cf01a6d)
- Call ID: 025f8f33-4196-469c-b3c1-65f75cf01a6d
-  Args:
-    type: :Woman
-    source: Princess_Thyra_of_Denmark
-  AssignClass (e8fe9417-85bc-46cb-b246-f9dabc83cc0f)
- Call ID: e8fe9417-85bc-46cb-b246-f9dabc83cc0f
-  Args:
-    source: King_Christian_IX_of_Denmark
-    type: :Man
-  AssignClass (178bb946-d325-4e3f-9c88-5d811b980d4d)
- Call ID: 178bb946-d325-4e3f-9c88-5d811b980d4d
-  Args:
-    type: :Man
-    source: Duke_Christian_Louis
-  AssignClass (a94de0f3-cc4b-4780-b11f-78344352a938)
- Call ID: a94de0f3-cc4b-4780-b11f-78344352a938
-  Args:
-    type: :Woman
-    source: Karin_Elisabeth_von_Schaper
-  AssignClass (10298f1a-0293-466c-873a-bd5d72f755e4)
- Call ID: 10298f1a-0293-466c-873a-bd5d72f755e4
-  Args:
-    source: Walter_von_Schaper
-    type: :Man
-  AssignClass (a60a12da-cc06-496f-9e31-ebab822841b8)
- Call ID: a60a12da-cc06-496f-9e31-ebab822841b8
-  Args:
-    source: Baroness_Louise_von_Münchhausen
-    type: :Woman
-  AddLiteral (a643eb97-1d87-4843-845e-ef7008842712)
- Call ID: a643eb97-1d87-4843-845e-ef7008842712
-  Args:
-    literal_value: 1910
-    literal_type: xsd:integer
+    source: Granville_George_Fergus_Leveson-Gower
     relation: :hasBirthYear
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-  AddLiteral (414e1f27-b7ad-4e26-a548-1de02974c503)
- Call ID: 414e1f27-b7ad-4e26-a548-1de02974c503
-  Args:
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-    relation: :hasDeathYear
+    literal_value: 1959
     literal_type: xsd:integer
-    literal_value: 2001
-  AddTriple (94958ae2-31e0-4362-92ad-fc752d996c1d)
- Call ID: 94958ae2-31e0-4362-92ad-fc752d996c1d
+  AddLiteral (f2c21947-77e8-4186-b61d-59d817f0071a)
+ Call ID: f2c21947-77e8-4186-b61d-59d817f0071a
   Args:
-    target: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-    relation: :hasFather
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-  AddTriple (184b7213-6ddf-461c-90ca-76722b52c534)
- Call ID: 184b7213-6ddf-461c-90ca-76722b52c534
+    literal_type: xsd:string
+    literal_value: Lord Leveson
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :formerlyKnownAs
+  AssignClass (47297105-6f18-424b-b63d-a47db7ef4615)
+ Call ID: 47297105-6f18-424b-b63d-a47db7ef4615
   Args:
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-    relation: :hasMother
-    target: Princess_Alexandra_of_Hanover
-  AddTriple (ad430701-59f3-4c82-8683-312ce60bc721)
- Call ID: ad430701-59f3-4c82-8683-312ce60bc721
+    type: :Man
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+  AssignClass (18aa4ab0-ce10-48f1-821d-77c5ca38b393)
+ Call ID: 18aa4ab0-ce10-48f1-821d-77c5ca38b393
   Args:
-    target: Crown_Prince_Ernest_Augustus_of_Hanover
-    relation: :hasFather
-    source: Princess_Alexandra_of_Hanover
-  AddTriple (52978f9e-9957-415b-9f2e-2cd6c49d1cd4)
- Call ID: 52978f9e-9957-415b-9f2e-2cd6c49d1cd4
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+    type: :Person
+  AddTriple (28aa4804-fa71-4c3d-a439-e20c74f3bbd0)
+ Call ID: 28aa4804-fa71-4c3d-a439-e20c74f3bbd0
   Args:
-    target: Princess_Thyra_of_Denmark
-    relation: :hasMother
-    source: Princess_Alexandra_of_Hanover
-  AddTriple (dd4cf835-ae0d-4647-ac3d-16df2185acba)
- Call ID: dd4cf835-ae0d-4647-ac3d-16df2185acba
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+    relation: :isFatherOf
+    target: Granville_George_Fergus_Leveson-Gower
+  AssignClass (da80565d-0abc-45f2-92c2-9c41b8d45c7f)
+ Call ID: da80565d-0abc-45f2-92c2-9c41b8d45c7f
   Args:
-    relation: :hasFather
-    source: Princess_Thyra_of_Denmark
-    target: King_Christian_IX_of_Denmark
-  AddTriple (c009b1ea-03e3-4f53-bad9-7c116267e927)
- Call ID: c009b1ea-03e3-4f53-bad9-7c116267e927
+    type: :Woman
+    source: Rose_Leveson-Gower_Countess_Granville
+  AssignClass (7cb45ce4-292d-4405-bc9a-74f7bb82a338)
+ Call ID: 7cb45ce4-292d-4405-bc9a-74f7bb82a338
   Args:
-    target: Duke_Christian_Louis
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-    relation: :hasBrother
-  AddTriple (203c7bc6-2d50-4cd5-afd9-7720b305a2a3)
- Call ID: 203c7bc6-2d50-4cd5-afd9-7720b305a2a3
+    type: :Person
+    source: Rose_Leveson-Gower_Countess_Granville
+  AddTriple (e9a6365e-cc16-4f30-ade7-a7fe814405bf)
+ Call ID: e9a6365e-cc16-4f30-ade7-a7fe814405bf
   Args:
-    relation: :hasFather
-    source: Duke_Christian_Louis
-    target: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-  AddTriple (02028c94-c8a9-491c-9e66-de5a02a129bc)
- Call ID: 02028c94-c8a9-491c-9e66-de5a02a129bc
+    relation: :isMotherOf
+    target: Granville_George_Fergus_Leveson-Gower
+    source: Rose_Leveson-Gower_Countess_Granville
+  AddTriple (609339b5-7b28-4264-ba14-92240cad1ffd)
+ Call ID: 609339b5-7b28-4264-ba14-92240cad1ffd
   Args:
-    target: Princess_Alexandra_of_Hanover
-    source: Duke_Christian_Louis
-    relation: :hasMother
-  AddLiteral (bd1767bf-a252-40ec-be00-13178a41be3f)
- Call ID: bd1767bf-a252-40ec-be00-13178a41be3f
+    target: Granville_Leveson-Gower_5th_Earl_Granville
+    relation: :isMotherOf
+    source: Rose_Leveson-Gower_Countess_Granville
+  AssignClass (6c47f01c-26b9-4081-a0f2-4d7b7f0edbca)
+ Call ID: 6c47f01c-26b9-4081-a0f2-4d7b7f0edbca
   Args:
-    literal_type: xsd:integer
+    type: :Woman
+    source: Anne_Topping
+  AssignClass (818e9762-4bb8-47f4-82be-6e7ad8b18346)
+ Call ID: 818e9762-4bb8-47f4-82be-6e7ad8b18346
+  Args:
+    type: :Person
+    source: Anne_Topping
+  AddLiteral (8d9e080c-66bb-4a03-b3f9-c598767ce3fb)
+ Call ID: 8d9e080c-66bb-4a03-b3f9-c598767ce3fb
+  Args:
+    source: Granville_George_Fergus_Leveson-Gower
     relation: :hasMarriageYear
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-    literal_value: 1941
-  AddTriple (ff7cc04b-be63-4278-a9e9-237a53286112)
- Call ID: ff7cc04b-be63-4278-a9e9-237a53286112
+    literal_value: 1997
+    literal_type: xsd:integer
+  AddTriple (056e816e-6e9d-48e7-b1c4-b6768b5190fc)
+ Call ID: 056e816e-6e9d-48e7-b1c4-b6768b5190fc
   Args:
-    target: Karin_Elisabeth_von_Schaper
+    target: Anne_Topping
     relation: :hasRelation
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg_Schwerin
-  AddLiteral (c7017a3f-3898-4a1d-bcc5-acc14e95709b)
- Call ID: c7017a3f-3898-4a1d-bcc5-acc14e95709b
+    source: Granville_George_Fergus_Leveson-Gower
+  AssignClass (71637711-83cf-4930-9ed1-bc15931d6f86)
+ Call ID: 71637711-83cf-4930-9ed1-bc15931d6f86
   Args:
-    literal_value: 1920
+    type: :Man
+    source: Bernard_Topping
+  AssignClass (59472bf1-2312-452b-a021-787ad82b41b3)
+ Call ID: 59472bf1-2312-452b-a021-787ad82b41b3
+  Args:
+    source: Bernard_Topping
+    type: :Person
+  AddTriple (9195f11c-b3e1-40fa-adce-63e052572eb8)
+ Call ID: 9195f11c-b3e1-40fa-adce-63e052572eb8
+  Args:
+    target: Anne_Topping
+    relation: :isFatherOf
+    source: Bernard_Topping
+  AssignClass (fe123e4a-9960-4149-96c3-6315824f0755)
+ Call ID: fe123e4a-9960-4149-96c3-6315824f0755
+  Args:
+    type: :Woman
+    source: Florence_Pearson
+  AssignClass (ecbf4aa0-d9a4-4885-b1cf-5847ad80e122)
+ Call ID: ecbf4aa0-d9a4-4885-b1cf-5847ad80e122
+  Args:
+    type: :Person
+    source: Florence_Pearson
+  AddLiteral (e623dc75-157b-4261-9d94-10b776e17ea5)
+ Call ID: e623dc75-157b-4261-9d94-10b776e17ea5
+  Args:
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :hasMarriageYear
+    literal_value: 2016
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Karin_Elisabeth_von_Schaper
-  AddLiteral (f8746a3c-5a59-48b9-bfdb-eb04ae9d38e5)
- Call ID: f8746a3c-5a59-48b9-bfdb-eb04ae9d38e5
+  AddTriple (2594f7ed-b6f4-48ff-83a3-e47813467a40)
+ Call ID: 2594f7ed-b6f4-48ff-83a3-e47813467a40
   Args:
-    literal_type: xsd:integer
-    source: Karin_Elisabeth_von_Schaper
-    relation: :hasDeathYear
-    literal_value: 2012
-  AddTriple (6f6b4346-b90c-4a4a-8a16-9227da6ab174)
- Call ID: 6f6b4346-b90c-4a4a-8a16-9227da6ab174
-  Args:
-    target: Walter_von_Schaper
-    relation: :hasFather
-    source: Karin_Elisabeth_von_Schaper
-  AddTriple (760693c9-7a59-4d40-8457-3f98d0be31a9)
- Call ID: 760693c9-7a59-4d40-8457-3f98d0be31a9
-  Args:
-    target: Baroness_Louise_von_Münchhausen
-    source: Karin_Elisabeth_von_Schaper
-    relation: :hasMother
-  Finish (ed5f2f97-cd34-41d3-a6ac-0d51ec57637e)
- Call ID: ed5f2f97-cd34-41d3-a6ac-0d51ec57637e
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :hasRelation
+    target: Florence_Pearson
+  Finish (bae81a59-af71-43fc-9e40-9986f7b3e334)
+ Call ID: bae81a59-af71-43fc-9e40-9986f7b3e334
   Args:

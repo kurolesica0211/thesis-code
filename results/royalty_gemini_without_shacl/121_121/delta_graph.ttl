@@ -2,49 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felix a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:AthenaOfMonpezat .
+data:Aimone_of_Savoy-Aosta a :Man ;
+    :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Amedeo_of_Savoy ;
+    :hasMother data:Claude_of_Orl%C3%A9ans ;
+    :knownAs "Aimone of Savoy-Aosta, 6th Duke of Aosta"^^xsd:string .
 
-data:FrederikX a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string .
+data:Emanuele_Filiberto_of_Savoy a :Man ;
+    :hasFather data:Vittorio_Emanuele_of_Savoy .
 
-data:HenrikJr a :Man,
-        :Person ;
-    :hasFather data:JoachimOfDenmark ;
-    :hasMother data:MarieOfDenmark ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:AthenaOfMonpezat .
+data:Olga_of_Greece a :Woman ;
+    :hasFather data:Michael_of_Greece_and_Denmark .
 
-data:Nikolai a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string ;
-    :isBrotherOf data:AthenaOfMonpezat .
+data:Amedeo_of_Savoy a :Man .
 
-data:HenrikOfDenmark a :Man,
-        :Person ;
-    :hasSex "Male"^^xsd:string .
+data:Claude_of_Orl%C3%A9ans a :Woman .
 
-data:MargretheII a :Person,
-        :Woman ;
-    :hasSex "Female"^^xsd:string .
+data:Michael_of_Greece_and_Denmark a :Man .
 
-data:JoachimOfDenmark a :Man,
-        :Person ;
-    :hasFather data:HenrikOfDenmark ;
-    :hasMother data:MargretheII ;
-    :hasSex "Male"^^xsd:string .
-
-data:MarieOfDenmark a :Person,
-        :Woman ;
-    :hasSex "Female"^^xsd:string .
-
-data:AthenaOfMonpezat a :Person,
-        :Woman ;
-    :hasBirthYear 2012 ;
-    :hasFather data:JoachimOfDenmark ;
-    :hasMother data:MarieOfDenmark ;
-    :hasSex "Female"^^xsd:string .
+data:Vittorio_Emanuele_of_Savoy a :Man ;
+    :hasDeathYear 2024 .
 

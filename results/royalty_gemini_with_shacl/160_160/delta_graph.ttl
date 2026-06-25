@@ -2,82 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aimone_4th_Duke_of_Aosta a :Ancestor,
-        :Man,
+data:Alexander_of_Hesse a :Man,
         :Person ;
-    :hasBirthYear "1900"^^xsd:int ;
-    :hasDeathYear "1948"^^xsd:int ;
-    :hasFather data:Amedeo_3rd_Duke_of_Aosta .
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
 
-data:Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Man,
-        :Person .
+data:Johanna_of_Hesse a :Person,
+        :Woman ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
 
-data:Alexander_of_Greece a :Man,
-        :Person .
-
-data:Amedeo_3rd_Duke_of_Aosta a :Ancestor,
-        :Man .
-
-data:Amedeo_5th_Duke_of_Aosta a :Man,
+data:Louis_of_Hesse a :Man,
         :Person ;
-    :hasFather data:Aimone_4th_Duke_of_Aosta ;
-    :hasMother data:Irene_of_Greece_and_Denmark .
+    :hasRelation data:Margaret_Campbell_Geddes .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
+data:Ludwig_of_Hesse a :Man,
         :Person ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Konstantinovna_of_Russia .
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
 
-data:Frederick_III_of_Germany a :Ancestor,
-        :Man,
-        :Person .
+data:Margarita a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
 
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
 
-data:George_of_Greece a :Man,
-        :Person .
+data:Sophie a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
 
-data:Helen_of_Greece a :Person,
+data:Theodora a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
+
+data:Margaret_Campbell_Geddes a :Person,
         :Woman .
 
-data:Irene_of_Greece_and_Denmark a :Ancestor,
+data:Cecilie_of_Greece_and_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear "1904"^^xsd:int ;
-    :hasBrother data:Alexander_of_Greece,
-        data:George_of_Greece,
-        data:Paul_of_Greece ;
-    :hasDeathYear "1974"^^xsd:int ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMarriageYear "1939"^^xsd:int ;
-    :hasMother data:Sophie_of_Prussia ;
-    :hasSister data:Helen_of_Greece ;
-    :hasSon data:Amedeo_5th_Duke_of_Aosta .
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Georg_Donatus .
 
-data:Olga_Konstantinovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
+data:Georg_Donatus a :Ancestor,
+        :Man,
         :Person .
 
-data:Sophie_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Frederick_III_of_Germany ;
-    :hasMother data:Victoria_Empress_Consort .
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
 
-data:Victoria_Empress_Consort a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Albert_of_Saxe-Coburg_and_Gotha ;
-    :hasMother data:Victoria_Queen_of_the_United_Kingdom .
-
-data:Victoria_Queen_of_the_United_Kingdom a :Ancestor,
+data:Princess_Alice_of_Battenberg a :Ancestor,
         :Person,
         :Woman .
 

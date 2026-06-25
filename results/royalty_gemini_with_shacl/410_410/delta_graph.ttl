@@ -2,14 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
-        :Person ;
-    :hasBirthYear 1966 ;
-    :hasDeathYear 2010 ;
-    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
-    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
+data:Lady_Louise_Mountbatten-Windsor a :Woman ;
+    :hasBirthYear 2003 ;
+    :hasBrother data:James ;
+    :isDaughterOf data:Prince_Edward,
+        data:Sophie .
 
-data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,
-        :Man,
-        :Person .
+data:James a :Man ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie .
+
+data:King_Charles_III a :Man .
+
+data:Prince_Philip a :Ancestor,
+        :Man .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Woman .
+
+data:Prince_Edward a :Ancestor,
+        :Man ;
+    :isBrotherOf data:King_Charles_III ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II .
+
+data:Sophie a :Ancestor,
+        :Woman .
 

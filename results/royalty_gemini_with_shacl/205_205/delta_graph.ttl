@@ -2,64 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christina_Oxenberg a :Person,
+data:InfantaBeatriz a :Person,
         :Woman ;
-    :hasBirthYear 1962 ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:AlfonsoXIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:VictoriaEugenie ;
+    :hasRelation data:AlessandroTorlonia ;
     :hasSex data:Female ;
-    :isChildOf data:Howard_Oxenberg,
-        data:Princess_Elizabeth_of_Yugoslavia ;
-    :isSiblingOf data:Ashley_Harcourt,
-        data:Catherine_Oxenberg,
-        data:Neil_Balfour,
-        data:Robert_Oxenberg,
-        data:Starr_Oxenberg .
+    :isAuntOf data:JuanCarlosI .
 
-data:Ashley_Harcourt a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Catherine_Oxenberg a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Howard_Oxenberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 2010 ;
-    :hasSex data:Male .
-
-data:Neil_Balfour a :Man,
+data:AlessandroTorlonia a :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Prince_Paul_of_Yugoslavia a :Ancestor,
+data:AlfonsoXIII a :Ancestor,
         :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1936 ;
-    :hasSex data:Female ;
-    :isChildOf data:Prince_Paul_of_Yugoslavia,
-        data:Princess_Olga_of_Greece_and_Denmark .
-
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Robert_Oxenberg a :Man,
+data:JuanCarlosI a :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Starr_Oxenberg a :Person,
+data:VictoriaEugenie a :Ancestor,
+        :Person,
         :Woman ;
     :hasSex data:Female .
-
-data:Male a :Sex .
 
 data:Female a :Sex .
+
+data:Male a :Sex .
 

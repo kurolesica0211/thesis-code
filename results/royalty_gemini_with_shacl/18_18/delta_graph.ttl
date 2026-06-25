@@ -2,30 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
         :Woman ;
     :hasBirthYear 1914 ;
     :hasDeathYear 2005 ;
     :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1944 ;
     :hasMother data:Princess_Louise_of_Orleans ;
     :hasRelation data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
-    :hasSister data:Princess_Maria_de_las_Mercedes ;
-    :isAuntOf data:King_Juan_Carlos_I_of_Spain .
+    :isAuntOf data:King_Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Princess_Maria_de_las_Mercedes .
+
+data:Queen_Sofia a :Person,
+        :Woman .
 
 data:Infante_Juan_Count_of_Barcelona a :Ancestor,
         :Man,
         :Person .
 
-data:King_Juan_Carlos_I_of_Spain a :Man,
-        :Person ;
-    :hasFather data:Infante_Juan_Count_of_Barcelona ;
-    :hasMother data:Princess_Maria_de_las_Mercedes .
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
 
 data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Man,
+data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Ancestor,
+        :Man,
         :Person ;
     :hasFather data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza .
 
@@ -35,9 +40,16 @@ data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza a :Ancestor,
 
 data:Princess_Louise_of_Orleans a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Philippe_Count_of_Paris .
 
 data:Princess_Maria_de_las_Mercedes a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :isMotherOf data:King_Juan_Carlos_I_of_Spain .
+
+data:King_Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona .
 

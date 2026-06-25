@@ -2,61 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Andrew a :Ancestor,
-        :Man ;
-    :hasFather data:Philip_Mountbatten ;
-    :hasMother data:Elizabeth_II .
+data:Berthold_von_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Maximilian_von_Baden .
 
-data:Anne a :Ancestor,
+data:Christian_Kaul a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Stephanie_Anne_Kaul .
+
+data:Hannelore_Scheel a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Philip_Mountbatten ;
-    :hasMother data:Elizabeth_II .
+    :isMotherOf data:Stephanie_Anne_Kaul .
 
-data:Charles a :Ancestor,
-        :Man ;
-    :hasFather data:Philip_Mountbatten ;
-    :hasMother data:Elizabeth_II .
+data:Hubert_Salvator_von_Oesterreich a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Valerie_von_Oesterreich .
 
-data:Edward a :Ancestor,
-        :Man ;
-    :hasFather data:Philip_Mountbatten ;
-    :hasMother data:Elizabeth_II .
+data:Male a :Sex .
 
-data:Claude_Bowes-Lyon a :Ancestor,
-        :Man .
-
-data:Edward_VIII a :Man .
-
-data:George_V a :Ancestor,
-        :Man .
-
-data:Margaret a :Woman ;
-    :hasParent data:Elizabeth_the_Queen_Mother,
-        data:George_VI .
-
-data:Queen_Mary a :Ancestor,
-        :Woman .
-
-data:Elizabeth_the_Queen_Mother a :Ancestor,
+data:Rosemary_von_Salm-Salm a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Claude_Bowes-Lyon .
+    :isMotherOf data:Valerie_von_Oesterreich .
 
-data:George_VI a :Ancestor,
-        :Man ;
-    :hasFather data:George_V ;
-    :hasMother data:Queen_Mary ;
-    :isBrotherOf data:Edward_VIII .
-
-data:Elizabeth_II a :Ancestor,
+data:Theodora_von_Griechenland a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear "1926"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "2022"^^xsd:nonNegativeInteger ;
-    :hasFather data:George_VI ;
-    :hasMarriageYear "1947"^^xsd:nonNegativeInteger ;
-    :hasMother data:Elizabeth_the_Queen_Mother ;
-    :hasRelation data:Philip_Mountbatten ;
-    :isSiblingOf data:Margaret .
+    :isMotherOf data:Maximilian_von_Baden .
 
-data:Philip_Mountbatten a :Ancestor,
-        :Man .
+data:Bernhard_Prinz_von_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Maximilian_von_Baden ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Valerie_von_Oesterreich ;
+    :hasRelation data:Stephanie_Anne_Kaul ;
+    :hasSex data:Male .
+
+data:Maximilian_von_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_von_Baden ;
+    :hasMother data:Theodora_von_Griechenland ;
+    :isFatherOf data:Bernhard_Prinz_von_Baden .
+
+data:Stephanie_Anne_Kaul a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Christian_Kaul ;
+    :hasMother data:Hannelore_Scheel .
+
+data:Valerie_von_Oesterreich a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Hubert_Salvator_von_Oesterreich ;
+    :hasMother data:Rosemary_von_Salm-Salm ;
+    :isMotherOf data:Bernhard_Prinz_von_Baden .
 

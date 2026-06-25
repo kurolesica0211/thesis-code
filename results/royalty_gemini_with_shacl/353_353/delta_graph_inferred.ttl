@@ -1,0 +1,137 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlexanderFerdinandOfPrussia ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia ;
+    :hasSister data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg ;
+    :hasSon data:AlexanderFerdinandOfPrussia ;
+    :isAncestorOf data:AlexanderFerdinandOfPrussia ;
+    :isAuntOf data:AlexanderFerdinandOfPrussia ;
+    :isBloodrelationOf data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg ;
+    :isMotherOf data:AlexanderFerdinandOfPrussia ;
+    :isParentOf data:AlexanderFerdinandOfPrussia ;
+    :isSiblingOf data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg ;
+    :isSisterOf data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg .
+
+data:MargaretOfPrussia a :Person,
+        :Woman ;
+    :hasBrother data:WilhelmII ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AugustWilhelmOfPrussia,
+        data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:MargaretOfPrussia ;
+    :isAuntOf data:AugustWilhelmOfPrussia ;
+    :isBloodrelationOf data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isSiblingOf data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isSisterOf data:MargaretOfPrussia,
+        data:WilhelmII .
+
+data:AugustaVictoriaOfSchleswigHolstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AugustWilhelmOfPrussia ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AugustWilhelmOfPrussia,
+        data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasSister data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasSon data:AugustWilhelmOfPrussia ;
+    :isAncestorOf data:AlexanderFerdinandOfPrussia,
+        data:AugustWilhelmOfPrussia ;
+    :isAuntOf data:AugustWilhelmOfPrussia ;
+    :isBloodrelationOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isMotherOf data:AugustWilhelmOfPrussia ;
+    :isParentOf data:AugustWilhelmOfPrussia ;
+    :isSiblingOf data:AugustaVictoriaOfSchleswigHolstein ;
+    :isSisterOf data:AugustaVictoriaOfSchleswigHolstein .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:AugustWilhelmOfPrussia ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AugustWilhelmOfPrussia,
+        data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :hasSister data:MargaretOfPrussia ;
+    :hasSon data:AugustWilhelmOfPrussia ;
+    :isAncestorOf data:AlexanderFerdinandOfPrussia,
+        data:AugustWilhelmOfPrussia ;
+    :isBloodrelationOf data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isBrotherOf data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isFatherOf data:AugustWilhelmOfPrussia ;
+    :isParentOf data:AugustWilhelmOfPrussia ;
+    :isSiblingOf data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isUncleOf data:AugustWilhelmOfPrussia .
+
+data:AlexanderFerdinandOfPrussia a :Man,
+        :Person ;
+    :hasAncestor data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasBrother data:AlexanderFerdinandOfPrussia ;
+    :hasFather data:AugustWilhelmOfPrussia ;
+    :hasMother data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg ;
+    :hasParent data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :isBloodrelationOf data:AlexanderFerdinandOfPrussia ;
+    :isBrotherOf data:AlexanderFerdinandOfPrussia ;
+    :isChildOf data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia ;
+    :isSiblingOf data:AlexanderFerdinandOfPrussia ;
+    :isSonOf data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia .
+
+data:AugustWilhelmOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:AugustWilhelmOfPrussia ;
+    :hasChild data:AlexanderFerdinandOfPrussia ;
+    :hasDeathYear 1949 ;
+    :hasFather data:WilhelmII ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:AugustaVictoriaOfSchleswigHolstein ;
+    :hasParent data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :hasRelation data:AlexanderFerdinandOfPrussia,
+        data:AlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg,
+        data:AugustWilhelmOfPrussia,
+        data:AugustaVictoriaOfSchleswigHolstein,
+        data:MargaretOfPrussia,
+        data:WilhelmII ;
+    :hasSon data:AlexanderFerdinandOfPrussia ;
+    :isAncestorOf data:AlexanderFerdinandOfPrussia ;
+    :isBloodrelationOf data:AugustWilhelmOfPrussia ;
+    :isBrotherOf data:AugustWilhelmOfPrussia ;
+    :isChildOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isFatherOf data:AlexanderFerdinandOfPrussia ;
+    :isParentOf data:AlexanderFerdinandOfPrussia ;
+    :isSiblingOf data:AugustWilhelmOfPrussia ;
+    :isSonOf data:AugustaVictoriaOfSchleswigHolstein,
+        data:WilhelmII ;
+    :isUncleOf data:AlexanderFerdinandOfPrussia ;
+    :knownAs "Auwi"^^xsd:string .
+

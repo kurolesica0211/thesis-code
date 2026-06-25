@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceAmedeoOfSavoyDukeOfAosta a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasBrother data:PrinceAmedeoOfSavoyDukeOfAosta ;
+    :hasDeathYear 1942 ;
+    :hasRelation data:PrinceAmedeoOfSavoyDukeOfAosta,
+        data:PrinceJeanDukeOfGuise,
+        data:PrincessAnneOfOrleans,
+        data:PrincessIsabelleOfOrleans ;
+    :isBloodrelationOf data:PrinceAmedeoOfSavoyDukeOfAosta ;
+    :isBrotherOf data:PrinceAmedeoOfSavoyDukeOfAosta ;
+    :isSiblingOf data:PrinceAmedeoOfSavoyDukeOfAosta .
+
+data:PrinceJeanDukeOfGuise a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceJeanDukeOfGuise ;
+    :hasChild data:PrincessAnneOfOrleans ;
+    :hasDaughter data:PrincessAnneOfOrleans ;
+    :hasRelation data:PrinceAmedeoOfSavoyDukeOfAosta,
+        data:PrinceJeanDukeOfGuise,
+        data:PrincessAnneOfOrleans,
+        data:PrincessIsabelleOfOrleans ;
+    :isAncestorOf data:PrincessAnneOfOrleans ;
+    :isBloodrelationOf data:PrinceJeanDukeOfGuise ;
+    :isBrotherOf data:PrinceJeanDukeOfGuise ;
+    :isFatherOf data:PrincessAnneOfOrleans ;
+    :isParentOf data:PrincessAnneOfOrleans ;
+    :isSiblingOf data:PrinceJeanDukeOfGuise ;
+    :isUncleOf data:PrincessAnneOfOrleans .
+
+data:PrincessIsabelleOfOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessAnneOfOrleans ;
+    :hasDaughter data:PrincessAnneOfOrleans ;
+    :hasRelation data:PrinceAmedeoOfSavoyDukeOfAosta,
+        data:PrinceJeanDukeOfGuise,
+        data:PrincessAnneOfOrleans,
+        data:PrincessIsabelleOfOrleans ;
+    :hasSister data:PrincessIsabelleOfOrleans ;
+    :isAncestorOf data:PrincessAnneOfOrleans ;
+    :isAuntOf data:PrincessAnneOfOrleans ;
+    :isBloodrelationOf data:PrincessIsabelleOfOrleans ;
+    :isMotherOf data:PrincessAnneOfOrleans ;
+    :isParentOf data:PrincessAnneOfOrleans ;
+    :isSiblingOf data:PrincessIsabelleOfOrleans ;
+    :isSisterOf data:PrincessIsabelleOfOrleans .
+
+data:PrincessAnneOfOrleans a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceJeanDukeOfGuise,
+        data:PrincessIsabelleOfOrleans ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:PrinceJeanDukeOfGuise ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:PrincessIsabelleOfOrleans ;
+    :hasParent data:PrinceJeanDukeOfGuise,
+        data:PrincessIsabelleOfOrleans ;
+    :hasRelation data:PrinceAmedeoOfSavoyDukeOfAosta,
+        data:PrinceJeanDukeOfGuise,
+        data:PrincessAnneOfOrleans,
+        data:PrincessIsabelleOfOrleans ;
+    :hasSister data:PrincessAnneOfOrleans ;
+    :isBloodrelationOf data:PrincessAnneOfOrleans ;
+    :isChildOf data:PrinceJeanDukeOfGuise,
+        data:PrincessIsabelleOfOrleans ;
+    :isDaughterOf data:PrinceJeanDukeOfGuise,
+        data:PrincessIsabelleOfOrleans ;
+    :isSiblingOf data:PrincessAnneOfOrleans ;
+    :isSisterOf data:PrincessAnneOfOrleans .
+

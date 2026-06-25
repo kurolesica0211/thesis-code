@@ -1,0 +1,134 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man ;
+    :hasBrother data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg ;
+    :hasRelation data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg ;
+    :isBloodrelationOf data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg ;
+    :isBrotherOf data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg ;
+    :isSiblingOf data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg .
+
+data:Gaby_Maier a :Woman ;
+    :hasMarriageYear data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        2023 ;
+    :hasRelation data:Gaby_Maier ;
+    :hasSister data:Gaby_Maier ;
+    :isBloodrelationOf data:Gaby_Maier ;
+    :isSiblingOf data:Gaby_Maier ;
+    :isSisterOf data:Gaby_Maier .
+
+data:Prince_Wilhelm_of_Wied a :Man ;
+    :hasBrother data:Prince_Wilhelm_of_Wied ;
+    :hasRelation data:Prince_Wilhelm_of_Wied ;
+    :isBloodrelationOf data:Prince_Wilhelm_of_Wied ;
+    :isBrotherOf data:Prince_Wilhelm_of_Wied ;
+    :isSiblingOf data:Prince_Wilhelm_of_Wied .
+
+data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man ;
+    :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg .
+
+data:Princess_Marie_Wilhelmine_of_Wied a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1973 ;
+    :hasChild data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasSister data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasSon data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAuntOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isMotherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isSisterOf data:Princess_Marie_Wilhelmine_of_Wied .
+
+data:Carl_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasChild data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasDeathYear 2022 ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasSon data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isAncestorOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isParentOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
+
+data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man ;
+    :hasAncestor data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasBirthYear 1994 ;
+    :hasBrother data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasParent data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBrotherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isChildOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied ;
+    :isSiblingOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSonOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied .
+
+data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasChild data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasDeathYear 2018 ;
+    :hasFather data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasParent data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :hasRelation data:Carl_Duke_of_W%C3%BCrttemberg,
+        data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg,
+        data:Princess_Marie_Wilhelmine_of_Wied,
+        data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :hasSon data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isAncestorOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isBrotherOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isChildOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isFatherOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isParentOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg ;
+    :isSiblingOf data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :isSonOf data:Carl_Duke_of_W%C3%BCrttemberg ;
+    :isUncleOf data:Wilhelm_Herzog_von_W%C3%BCrttemberg .
+

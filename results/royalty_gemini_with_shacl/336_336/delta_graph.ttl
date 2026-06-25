@@ -2,29 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:ChristianOfRosenborg a :Man,
-        :Person ;
-    :hasBirthYear 1942 ;
-    :hasBrother data:IngolfDanish ;
-    :hasDeathYear 2013 ;
-    :hasFather data:KnudDanish ;
-    :hasMarriageYear 1971 ;
-    :hasMother data:CarolineMathildeDanish ;
-    :hasRelation data:AnneDorteRosenborg .
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Frederick_Francis_Mecklenburg ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Christian_X ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .
 
-data:AnneDorteRosenborg a :Person,
-        :Woman ;
-    :hasBirthYear 1947 ;
-    :hasDeathYear 2014 .
+data:Ingrid_of_Sweden a :Woman .
 
-data:CarolineMathildeDanish a :Ancestor,
-        :Person,
+data:Anastasia_Mikhailovna a :Ancestor,
         :Woman .
 
-data:IngolfDanish a :Man,
-        :Person .
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman .
 
-data:KnudDanish a :Ancestor,
-        :Man,
-        :Person .
+data:Christian_X a :Man ;
+    :hasFather data:Frederik_VIII ;
+    :hasMother data:Louise_of_Denmark .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man .
+
+data:Frederick_Francis_Mecklenburg a :Man .
+
+data:Frederik_VIII a :Ancestor,
+        :Man .
+
+data:Louise_of_Denmark a :Ancestor,
+        :Woman .
 

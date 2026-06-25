@@ -1,0 +1,249 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean_Duke_of_Guise a :Man ;
+    :hasBrother data:Jean_Duke_of_Guise ;
+    :hasRelation data:Jean_Duke_of_Guise ;
+    :isBloodrelationOf data:Jean_Duke_of_Guise ;
+    :isBrotherOf data:Jean_Duke_of_Guise ;
+    :isSiblingOf data:Jean_Duke_of_Guise .
+
+data:Louis_Philippe_I a :Man ;
+    :hasBrother data:Louis_Philippe_I ;
+    :hasRelation data:Louis_Philippe_I ;
+    :isBloodrelationOf data:Louis_Philippe_I ;
+    :isBrotherOf data:Louis_Philippe_I ;
+    :isSiblingOf data:Louis_Philippe_I .
+
+data:Princess_Marguerite_of_Orl%C3%A9ans a :Woman ;
+    :hasRelation data:Princess_Marguerite_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Marguerite_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Princess_Marguerite_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Princess_Marguerite_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Marguerite_of_Orl%C3%A9ans .
+
+data:Archduke_Joseph_Karl_of_Austria a :Ancestor,
+        :Man ;
+    :hasBrother data:Archduke_Joseph_Karl_of_Austria ;
+    :hasChild data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasDaughter data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasRelation data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isBrotherOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isFatherOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isParentOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isSiblingOf data:Archduke_Joseph_Karl_of_Austria ;
+    :isUncleOf data:Archduchess_Maria_Dorothea_of_Austria .
+
+data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasDaughter data:Archduchess_Maria_Dorothea_of_Austria ;
+    :hasRelation data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isAncestorOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isAuntOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isMotherOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isParentOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isSiblingOf data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans .
+
+data:Nina a :Ancestor,
+        :Woman ;
+    :hasChild data:Philippe_Debien ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Nina ;
+    :hasSon data:Philippe_Debien ;
+    :isAncestorOf data:Philippe_Debien ;
+    :isAuntOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Nina ;
+    :isMotherOf data:Philippe_Debien ;
+    :isParentOf data:Philippe_Debien ;
+    :isSiblingOf data:Nina ;
+    :isSisterOf data:Nina .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Philippe ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSon data:Philippe ;
+    :isAncestorOf data:Philippe,
+        data:Philippe_Debien ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Philippe ;
+    :isParentOf data:Philippe ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Philippe .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Philippe ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSon data:Philippe ;
+    :isAncestorOf data:Philippe,
+        data:Philippe_Debien ;
+    :isAuntOf data:Philippe ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isMotherOf data:Philippe ;
+    :isParentOf data:Philippe ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman ;
+    :hasBrother data:Philippe ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta ;
+    :isAuntOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe .
+
+data:Archduchess_Maria_Dorothea_of_Austria a :Woman ;
+    :hasAncestor data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :hasFather data:Archduke_Joseph_Karl_of_Austria ;
+    :hasMother data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :hasParent data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :hasRelation data:Archduchess_Maria_Dorothea_of_Austria,
+        data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :hasSister data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isChildOf data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isDaughterOf data:Archduke_Joseph_Karl_of_Austria,
+        data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Archduchess_Maria_Dorothea_of_Austria ;
+    :isSisterOf data:Archduchess_Maria_Dorothea_of_Austria .
+
+data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta a :Woman ;
+    :hasBrother data:Philippe ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta ;
+    :isAuntOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe .
+
+data:Philippe_Debien a :Man ;
+    :hasAncestor data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasBrother data:Philippe_Debien ;
+    :hasFather data:Philippe ;
+    :hasMother data:Nina ;
+    :hasParent data:Nina,
+        data:Philippe ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Philippe_Debien ;
+    :isBrotherOf data:Philippe_Debien ;
+    :isChildOf data:Nina,
+        data:Philippe ;
+    :isSiblingOf data:Philippe_Debien ;
+    :isSonOf data:Nina,
+        data:Philippe .
+
+data:Philippe a :Ancestor,
+        :Man ;
+    :hasAncestor data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:Philippe ;
+    :hasChild data:Philippe_Debien ;
+    :hasDeathYear 1926 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1896,
+        "1896"^^xsd:string ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasParent data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Nina,
+        data:Philippe,
+        data:Philippe_Count_of_Paris,
+        data:Philippe_Debien,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta ;
+    :hasSon data:Philippe_Debien ;
+    :isAncestorOf data:Philippe_Debien ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isBrotherOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isChildOf data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isFatherOf data:Philippe_Debien ;
+    :isParentOf data:Philippe_Debien ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta,
+        data:Philippe ;
+    :isSonOf data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :isUncleOf data:Philippe_Debien .
+

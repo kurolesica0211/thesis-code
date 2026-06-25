@@ -7,27 +7,30 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Duchess_Diane-_Duchess_of_Württemberg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Diane, Duchess of Württemberg" ;
-    data:posIndicesFull "977:1001",
-        "986:1001" ;
-    data:posIndicesPart "1026:1033" ;
-    data:wdtLink wdt:Q451724 ;
-    :alsoKnownAs "Crown Princess Diane of Württemberg",
-        "Diane Françoise Marie d'Orléans",
-        "Diane Françoise Marie d'Orléans von Württemberg",
-        "Diane Françoise Marie von Württemberg",
-        "Diane d'Orléans",
-        "Diane d'Orléans von Württemberg",
-        "Diane von Württemberg",
-        "Diane, Crown Princess of Württemberg",
-        "Duchess Diane, Dowager Duchess of Württemberg",
-        "Duchess Diane, The Dowager Duchess of Württemberg",
-        "Duchess Diane, The Duchess of Württemberg",
-        "Princess Diane Françoise Marie d'Orléans",
-        "Princess Diane d'Orléans" ;
+data:Duchess_Marie_Thérèse_of_Württemberg a :Person ;
+    rdfs:label "Duchess Marie Thérèse of Württemberg" ;
+    data:wdtLink wdt:Q3292297 ;
+    :alsoKnownAs "Maria Theresa Herzogin von Württemberg",
+        "Princess Maria Theresa of Wurttemberg" ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:female .
+
+data:Duke_Carl-_Duke_of_Württemberg a :Person ;
+    rdfs:label "Duke Carl, Duke of Württemberg" ;
+    data:posIndicesFull "1102:1127" ;
+    data:wdtLink wdt:Q62385 ;
+    :alsoKnownAs "Carl, Duke of Württemberg",
+        "Karl Maria Herzog von Württemberg" ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male .
+
+data:Isabelle_of_Orléans-Braganza a :Person ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:posIndicesFull "1000:1028" ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
     :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
@@ -36,88 +39,28 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Duchess_Rosa-_Duchess_of_Württemberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Person ;
     rdfs:label "Duchess Rosa, Duchess of Württemberg" ;
     data:posIndicesFull "762:789",
         "762:810" ;
-    data:posIndicesPart "1026:1033",
+    data:posIndicesPart "1214:1221",
         "853:864" ;
     data:wdtLink wdt:Q84971 ;
     :alsoKnownAs "Archduchess Rosa of Austria",
         "Archduchess Rosa of Austria, Princess of Tuscany",
         "Duchess Rosa, The Duchess of Württemberg" ;
-    :hasChild data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg ;
-    :hasDaughter data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :hasSex data:female ;
-    :hasSon data:Duke_Carl-_Duke_of_Württemberg ;
-    :isMotherOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg ;
-    :isParentOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg .
+    :hasSex data:female .
 
-data:Philipp_Albrecht-_Duke_of_Württemberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Person ;
     rdfs:label "Philipp Albrecht, Duke of Württemberg" ;
     data:posIndicesFull "702:739" ;
     data:posIndicesPart "853:864" ;
     data:wdtLink wdt:Q62965 ;
     :alsoKnownAs "Duke Philipp Albrecht of Württemberg, Duke of Württemberg",
         "Duke Philipp Albrecht, The Duke of Württemberg" ;
-    :hasChild data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg ;
-    :hasDaughter data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :hasSex data:male ;
-    :hasSon data:Duke_Carl-_Duke_of_Württemberg ;
-    :isFatherOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg ;
-    :isParentOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Duke_Carl-_Duke_of_Württemberg .
+    :hasSex data:male .
 
-data:Duchess_Marie_Thérèse_of_Württemberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Marie Thérèse of Württemberg" ;
-    data:wdtLink wdt:Q3292297 ;
-    :alsoKnownAs "Maria Theresa Herzogin von Württemberg",
-        "Princess Maria Theresa of Wurttemberg" ;
-    :hasBrother data:Duke_Carl-_Duke_of_Württemberg ;
-    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :hasMother data:Duchess_Rosa-_Duchess_of_Württemberg ;
-    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :hasSex data:female ;
-    :isChildOf data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :isDaughterOf data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :isSiblingOf data:Duke_Carl-_Duke_of_Württemberg ;
-    :isSisterOf data:Duke_Carl-_Duke_of_Württemberg .
+data:male a :Male .
 
-data:Duke_Carl-_Duke_of_Württemberg a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Duke Carl, Duke of Württemberg" ;
-    data:posIndicesFull "914:939" ;
-    data:wdtLink wdt:Q62385 ;
-    :alsoKnownAs "Carl, Duke of Württemberg",
-        "Karl Maria Herzog von Württemberg" ;
-    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :hasMother data:Duchess_Rosa-_Duchess_of_Württemberg ;
-    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :hasSex data:male ;
-    :hasSister data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :isBrotherOf data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :isChildOf data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg ;
-    :isSiblingOf data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :isSonOf data:Duchess_Rosa-_Duchess_of_Württemberg,
-        data:Philipp_Albrecht-_Duke_of_Württemberg .
+data:female a :Female .
 

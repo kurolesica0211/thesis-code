@@ -7,71 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Duke of Brunswick" ;
-    data:posIndicesFull "1446:1461" ;
-    data:posIndicesPart "1693:1697" ;
-    data:wdtLink wdt:Q57672 ;
-    :alsoKnownAs "Ernest August I, Duke of Brunswick",
-        "Ernest Augustus",
-        "Ernst August I of Brunswick" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Hanover ;
-    :isBrotherOf data:Princess_Alexandra_of_Hanover ;
-    :isSiblingOf data:Princess_Alexandra_of_Hanover ;
-    :isUncleOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin .
-
-data:Princess_Barbara_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Barbara of Prussia" ;
-    data:posIndicesFull "496:523" ;
-    data:posIndicesPart "1491:1499",
-        "1664:1671",
-        "732:740" ;
-    data:wdtLink wdt:Q3104331 ;
-    :hasChild data:Donata_of_Mecklenburg ;
-    :hasDaughter data:Donata_of_Mecklenburg ;
-    :hasSex data:female ;
-    :isMotherOf data:Donata_of_Mecklenburg ;
-    :isParentOf data:Donata_of_Mecklenburg .
-
-data:Frederick_Francis_IV a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis IV" ;
-    data:posIndicesFull "1292:1312" ;
-    data:wdtLink wdt:Q57930 ;
-    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz IV",
-        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasChild data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :hasSon data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isFatherOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin .
-
-data:Donata_of_Mecklenburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Donata_of_Mecklenburg a :Person ;
     rdfs:label "Donata of Mecklenburg" ;
     data:posIndicesFull "8:29" ;
     data:posIndicesPart "1041:1052",
@@ -87,42 +23,11 @@ data:Donata_of_Mecklenburg a :Person,
         "942:953" ;
     data:wdtLink wdt:Q5311288 ;
     :alsoKnownAs "Donata Prinzessin von Mecklenburg-Schwerin" ;
-    :hasFather data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin ;
-    :hasMother data:Princess_Barbara_of_Prussia ;
     :hasParent data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
         data:Princess_Barbara_of_Prussia ;
-    :hasSex data:female ;
-    :isChildOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Princess_Barbara_of_Prussia ;
-    :isDaughterOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Princess_Barbara_of_Prussia .
+    :hasSex data:female .
 
-data:Princess_Alexandra_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandra of Hanover" ;
-    data:posIndicesFull "1395:1430" ;
-    data:wdtLink wdt:Q61243 ;
-    :alsoKnownAs "Alexandra of Hanover and Cumberland",
-        "Princess Alexandra Louise Marie Olga Elisabeth Therese Vera of Hanover and Cumberland",
-        "Princess Alexandra of Hanover and Cumberland" ;
-    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
-    :hasChild data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :hasSon data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isMotherOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin,
-        data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isSisterOf data:Ernst_August-_Duke_of_Brunswick .
-
-data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin" ;
     data:posIndicesFull "637:699" ;
     data:posIndicesPart "1041:1052",
@@ -141,24 +46,17 @@ data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
         "954:962" ;
     data:wdtLink wdt:Q215791 ;
     :alsoKnownAs "Friedrich Franz V Erbgroßherzog von Mecklenburg-Schwerin" ;
-    :hasBrother data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin ;
-    :hasFather data:Frederick_Francis_IV ;
-    :hasMother data:Princess_Alexandra_of_Hanover ;
     :hasParent data:Frederick_Francis_IV,
         data:Princess_Alexandra_of_Hanover ;
-    :hasSex data:male ;
-    :isBrotherOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin ;
-    :isChildOf data:Frederick_Francis_IV,
-        data:Princess_Alexandra_of_Hanover ;
-    :isSiblingOf data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Frederick_Francis_IV,
-        data:Princess_Alexandra_of_Hanover ;
-    :isUncleOf data:Donata_of_Mecklenburg .
+    :hasSex data:male .
 
-data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Duke Christian Ludwig of Mecklenburg-Schwerin" ;
     data:posIndicesFull "438:473" ;
     data:posIndicesPart "1041:1052",
@@ -180,20 +78,57 @@ data:Duke_Christian_Ludwig_of_Mecklenburg-Schwerin a :Ancestor,
     :alsoKnownAs "Christian Ludwig Großherzog von Mecklenburg-Schwerin",
         "Christian Ludwig Herzog zu Mecklenburg",
         "Duke Christian Louis of Mecklenburg" ;
-    :hasBrother data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :hasChild data:Donata_of_Mecklenburg ;
-    :hasDaughter data:Donata_of_Mecklenburg ;
-    :hasFather data:Frederick_Francis_IV ;
-    :hasMother data:Princess_Alexandra_of_Hanover ;
     :hasParent data:Frederick_Francis_IV,
         data:Princess_Alexandra_of_Hanover ;
-    :hasSex data:male ;
-    :isBrotherOf data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isChildOf data:Frederick_Francis_IV,
-        data:Princess_Alexandra_of_Hanover ;
-    :isFatherOf data:Donata_of_Mecklenburg ;
-    :isParentOf data:Donata_of_Mecklenburg ;
-    :isSiblingOf data:Friedrich_Franz-_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Frederick_Francis_IV,
-        data:Princess_Alexandra_of_Hanover .
+    :hasSex data:male .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover" ;
+    data:posIndicesFull "1446:1486" ;
+    data:posIndicesPart "1644:1650" ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
+    :hasSex data:male .
+
+data:Princess_Barbara_of_Prussia a :Person ;
+    rdfs:label "Princess Barbara of Prussia" ;
+    data:posIndicesFull "496:523" ;
+    data:posIndicesPart "1664:1671",
+        "732:740" ;
+    data:wdtLink wdt:Q3104331 ;
+    :hasSex data:female .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Person ;
+    rdfs:label "Thyra, Crown Princess of Hanover" ;
+    data:posIndicesFull "1491:1516" ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark",
+        "Princess Thyra of Denmark" ;
+    :hasSex data:female .
+
+data:Frederick_Francis_IV a :Person ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "1292:1312" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasSex data:male .
+
+data:Princess_Alexandra_of_Hanover a :Person ;
+    rdfs:label "Princess Alexandra of Hanover" ;
+    data:posIndicesFull "1395:1430" ;
+    data:wdtLink wdt:Q61243 ;
+    :alsoKnownAs "Alexandra of Hanover and Cumberland",
+        "Princess Alexandra Louise Marie Olga Elisabeth Therese Vera of Hanover and Cumberland",
+        "Princess Alexandra of Hanover and Cumberland" ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -2,67 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Count_Ariprand a :Man ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 1996 .
+data:Adolphus_Frederick_VI a :Man,
+        :Person .
 
-data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Woman ;
-    :hasBirthYear 1929 .
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Alexandra_of_Hanover ;
+    :hasSister data:Alexandrine,
+        data:Cecilie ;
+    :hasSon data:Friedrich_Franz .
 
-data:Ernst_August_Junior a :Man ;
-    :hasBirthYear 1983 ;
-    :hasFather data:Ernst_August_von_Hannover ;
-    :hasMother data:Chantal_Hochuli .
+data:Johann_Albrecht a :Man,
+        :Person .
 
-data:Johann_Gustav_Hans_Hochuli a :Ancestor,
-        :Man ;
-    :hasBirthYear 1912 .
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
 
-data:Otto_Heinrich a :Man ;
-    :hasFather data:Prince_Ludwig_Rudolph_of_Hannover .
-
-data:Prince_Christian a :Man ;
-    :hasBirthYear 1985 ;
-    :hasFather data:Ernst_August_von_Hannover ;
-    :hasMother data:Chantal_Hochuli .
-
-data:Prince_Ernst_August_Junior a :Man .
-
-data:Princess_Alexandra a :Woman ;
-    :hasBirthYear 1999 ;
-    :hasFather data:Ernst_August_von_Hannover ;
-    :hasMother data:Princess_Caroline_of_Monaco .
-
-data:Prince_Ernest_Augustus_of_Hannover a :Ancestor,
-        :Man ;
-    :hasBirthYear 1914 ;
-    :hasDeathYear 1987 .
-
-data:Princess_Caroline_of_Monaco a :Ancestor,
+data:Alexandrine a :Person,
         :Woman .
 
-data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+data:Anastasia_Mikhailovna a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Cecilie a :Person,
+        :Woman .
+
+data:Christian_IX a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Frederick_Francis_II .
+
+data:Friedrich_Franz a :Man,
+        :Person .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 1980 .
-
-data:Rosmarie_Lembeck a :Ancestor,
-        :Woman ;
-    :hasBirthYear 1921 ;
-    :hasDeathYear 2011 .
-
-data:Chantal_Hochuli a :Ancestor,
-        :Woman ;
-    :hasBirthYear 1955 ;
-    :hasMother data:Rosmarie_Lembeck .
-
-data:Prince_Ludwig_Rudolph_of_Hannover a :Ancestor,
-        :Man .
-
-data:Ernst_August_von_Hannover a :Ancestor,
-        :Man ;
-    :hasBirthYear 1954 ;
-    :hasFather data:Prince_Ernest_Augustus_of_Hannover ;
-    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
-    :isBrotherOf data:Prince_Ludwig_Rudolph_of_Hannover .
+    :hasFather data:Christian_IX .
 

@@ -69,32 +69,58 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Gerald David Lascelles (/ˈlæsəls/ LASS-əlss; 21 August 1924 – 27 February 1998) was the younger son of Henry Lascelles, 6th Earl of Harewood, and Mary, Princess Royal, the only daughter of King George V and Queen Mary.
-He was a first cousin of Queen Elizabeth II.
-He was styled The Honourable Gerald Lascelles.
-Life
-
-Gerald David Lascelles was born at Goldsborough Hall, near Knaresborough, West Riding of Yorkshire, and was baptised in October 1924 with the Prince of Wales and the Duchess of York (later King Edward VIII and Queen Elizabeth) as his godparents represented there by proxies.
-The baptism was held in private at St. Mary's Church in the village of Goldsborough.
-In 1955, the family moved to Fort Belvedere, Surrey, the former country home of Gerald Lascelles's uncle, Edward VIII (the Duke of Windsor).
-On 17 November 1978, Lascelles married his second wife, actress Elizabeth Colvin (née Elizabeth Evelyn Collingwood, 23 April 1924 – 14 January 2006), in Vienna, Austria.
-They had a son: 
+The Duchess of Montpensier
 
 
-Interests and positions
+The Count of ÉvreuxThe Countess of Évreux
 
-Lascelles was the president of the British Racing Drivers' Club from 1964 to 1991, after the 5th Earl Howe died.
-Lord Howe had asked Lascelles to replace him, who was briefly a driver before this.
-In his role as BRDC president, Lascelles was invited by the Australian Racing Drivers Club, promoters of the Bathurst 1000 Touring car race, to be the Grand Marshal for the 1985 race.
-Death
 
-Lascelles died in Bergerac, France, on 27 February 1998 at the age of 73.
+Princess Béatrice
+
+
+The Duke of OrléansThe Duchess of Orléans
+
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Charles Philippe Marie Louis d'Orléans (born 3 March 1973) is a member of the House of Orléans.
+He is the elder of two sons of Prince Michel d'Orléans and his former wife Béatrice Pasquier de Franclieu.
+His paternal grandfather was Prince Henri d'Orléans, the Orléanist pretender to the French throne.
+The couple's only child, Princess Isabelle d'Orléans, was born on 22 February 2012 in Lisbon, Portugal.
+Her godparents are Princess Maria Theodora zu Löwenstein-Wertheim-Freudenberg and Felipe VI of Spain (then Prince of Asturias).
+Charles-Philippe and Naomi-Valeska's child, Princess Élisabeth Victoire Jeanne Marie d'Orléans, was born on 15 April 2026 in Monaco.
+His acceptance of this role placed the order under the sanction of a dynastic prince of the House of Bourbon, in what is said to be a continuation of a tradition established since the 13th century when the Order of Saint Lazarus came under the protection of King Philippe le Bel.
+Title controversy
+
+On 8 December 2004, he received the title "Duke of Anjou" from his uncle Prince Henri d'Orléans, head of the House of Orléans.
+There is some controversy in the use of this title by an Orléans prince.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +136,9 @@ Lascelles died in Bergerac, France, on 27 February 1998 at the age of 73.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +153,23 @@ Lascelles died in Bergerac, France, on 27 February 1998 at the age of 73.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +187,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +292,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +312,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +322,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +362,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,246 +461,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c48880bf-5b24-4906-b2e2-4d0b85dfecb7)
- Call ID: c48880bf-5b24-4906-b2e2-4d0b85dfecb7
+  AssignClass (99fbc41d-ceeb-4217-b2e2-4c82105d03e3)
+ Call ID: 99fbc41d-ceeb-4217-b2e2-4c82105d03e3
   Args:
-    source: Gerald David Lascelles
+    source: Charles_Philippe_d_Orleans
     type: :Man
-  AssignClass (b54f22d0-b47f-4c52-ac9e-41b30b8c0951)
- Call ID: b54f22d0-b47f-4c52-ac9e-41b30b8c0951
+  AssignClass (47e680d7-437f-4596-ae1c-00e7e9d76605)
+ Call ID: 47e680d7-437f-4596-ae1c-00e7e9d76605
   Args:
-    type: :Man
-    source: Henry Lascelles, 6th Earl of Harewood
-  AssignClass (83d83116-fa6c-420f-b4c3-9eb0e2db8c25)
- Call ID: 83d83116-fa6c-420f-b4c3-9eb0e2db8c25
+    type: :Person
+    source: Charles_Philippe_d_Orleans
+  AddLiteral (ea68484f-9259-4bb7-bc83-ec444c92deb0)
+ Call ID: ea68484f-9259-4bb7-bc83-ec444c92deb0
   Args:
-    source: Mary, Princess Royal
-    type: :Woman
-  AssignClass (50f6f2ea-7817-49de-abc0-4ad19e8108a8)
- Call ID: 50f6f2ea-7817-49de-abc0-4ad19e8108a8
-  Args:
-    type: :Man
-    source: King George V
-  AssignClass (7664a309-4eb6-40eb-84ff-8307f481f29e)
- Call ID: 7664a309-4eb6-40eb-84ff-8307f481f29e
-  Args:
-    type: :Woman
-    source: Queen Mary
-  AssignClass (82a942f7-8d0e-4d66-955a-2cf4225c609f)
- Call ID: 82a942f7-8d0e-4d66-955a-2cf4225c609f
-  Args:
-    source: Queen Elizabeth II
-    type: :Woman
-  AssignClass (29bba0aa-be6b-499d-a6b3-8a10293ee957)
- Call ID: 29bba0aa-be6b-499d-a6b3-8a10293ee957
-  Args:
-    type: :Woman
-    source: Elizabeth Colvin
-  AssignClass (fe59314e-5c59-4fb0-8f81-b275c3f78cc0)
- Call ID: fe59314e-5c59-4fb0-8f81-b275c3f78cc0
-  Args:
-    source: Edward VIII
-    type: :Man
-  AddLiteral (c17244ce-1077-4237-9f93-5bce829d2087)
- Call ID: c17244ce-1077-4237-9f93-5bce829d2087
-  Args:
+    source: Charles_Philippe_d_Orleans
     relation: :hasBirthYear
-    source: Gerald David Lascelles
+    literal_value: 1973
     literal_type: xsd:integer
-    literal_value: 1924
-  AddLiteral (3556210c-e376-4749-8952-3b94eeca5683)
- Call ID: 3556210c-e376-4749-8952-3b94eeca5683
+  AssignClass (f04ab52a-83d2-4c7e-bcfa-f6da7c9517f9)
+ Call ID: f04ab52a-83d2-4c7e-bcfa-f6da7c9517f9
   Args:
-    literal_value: 1998
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Gerald David Lascelles
-  AddTriple (72fea906-4d42-47b8-8475-2f71cf744ca1)
- Call ID: 72fea906-4d42-47b8-8475-2f71cf744ca1
+    source: Michel_d_Orleans
+    type: :Man
+  AssignClass (7d6028d6-c7f3-4076-a263-7d0ec71905da)
+ Call ID: 7d6028d6-c7f3-4076-a263-7d0ec71905da
   Args:
-    target: Henry Lascelles, 6th Earl of Harewood
-    source: Gerald David Lascelles
+    source: Michel_d_Orleans
+    type: :Person
+  AssignClass (f1fd5dda-4f61-498c-90d4-9fe02019349f)
+ Call ID: f1fd5dda-4f61-498c-90d4-9fe02019349f
+  Args:
+    source: Beatrice_Pasquier_de_Franclieu
+    type: :Woman
+  AssignClass (f6a3fe49-e1dd-44a9-ae65-03d71efde55f)
+ Call ID: f6a3fe49-e1dd-44a9-ae65-03d71efde55f
+  Args:
+    source: Beatrice_Pasquier_de_Franclieu
+    type: :Person
+  AddTriple (1e51bf8c-9ce0-4d7d-9e5d-3e7b7ed30751)
+ Call ID: 1e51bf8c-9ce0-4d7d-9e5d-3e7b7ed30751
+  Args:
+    target: Michel_d_Orleans
+    source: Charles_Philippe_d_Orleans
     relation: :hasFather
-  AddTriple (49ec6890-0852-45fa-b65c-2163307eebec)
- Call ID: 49ec6890-0852-45fa-b65c-2163307eebec
+  AddTriple (fb7e7a56-ee14-4e94-bd4d-7348e0b238ea)
+ Call ID: fb7e7a56-ee14-4e94-bd4d-7348e0b238ea
   Args:
-    target: Mary, Princess Royal
     relation: :hasMother
-    source: Gerald David Lascelles
-  AddTriple (6837f493-cd26-4d9c-be1f-d1f6c04bf355)
- Call ID: 6837f493-cd26-4d9c-be1f-d1f6c04bf355
+    source: Charles_Philippe_d_Orleans
+    target: Beatrice_Pasquier_de_Franclieu
+  AssignClass (2e7d302e-2b8b-49fa-9283-36bcca4a1483)
+ Call ID: 2e7d302e-2b8b-49fa-9283-36bcca4a1483
+  Args:
+    source: Henri_d_Orleans
+    type: :Man
+  AssignClass (67d2463f-a651-4f61-89bc-76a03f7855d0)
+ Call ID: 67d2463f-a651-4f61-89bc-76a03f7855d0
+  Args:
+    source: Henri_d_Orleans
+    type: :Person
+  AddTriple (b00d7230-96d7-4ab3-9b7f-16a3a0e1e11a)
+ Call ID: b00d7230-96d7-4ab3-9b7f-16a3a0e1e11a
   Args:
     relation: :hasFather
-    source: Mary, Princess Royal
-    target: King George V
-  AddTriple (f30618d3-6fc2-4322-8306-399e074bab5d)
- Call ID: f30618d3-6fc2-4322-8306-399e074bab5d
+    target: Henri_d_Orleans
+    source: Michel_d_Orleans
+  AssignClass (abdf52e9-17ef-483b-b155-30780966edd2)
+ Call ID: abdf52e9-17ef-483b-b155-30780966edd2
   Args:
-    source: Mary, Princess Royal
+    type: :Woman
+    source: Isabelle_d_Orleans
+  AssignClass (3fa1bbdc-2d66-4f0f-a3e5-1a3f29fd7941)
+ Call ID: 3fa1bbdc-2d66-4f0f-a3e5-1a3f29fd7941
+  Args:
+    type: :Person
+    source: Isabelle_d_Orleans
+  AddTriple (8230c4c9-09cf-477e-90fd-d68f56e0b343)
+ Call ID: 8230c4c9-09cf-477e-90fd-d68f56e0b343
+  Args:
+    relation: :hasFather
+    source: Isabelle_d_Orleans
+    target: Charles_Philippe_d_Orleans
+  AddLiteral (ce24e58d-ba0f-4fd3-8a56-27ec76aa8150)
+ Call ID: ce24e58d-ba0f-4fd3-8a56-27ec76aa8150
+  Args:
+    literal_type: xsd:date
+    literal_value: 2012-02-22
+    relation: :hasBirthYear
+    source: Isabelle_d_Orleans
+  AssignClass (9736230a-2749-4449-9fb8-e6c7142d8157)
+ Call ID: 9736230a-2749-4449-9fb8-e6c7142d8157
+  Args:
+    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
+    type: :Woman
+  AssignClass (876276fa-b744-401a-b019-7a6c7429f561)
+ Call ID: 876276fa-b744-401a-b019-7a6c7429f561
+  Args:
+    type: :Person
+    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
+  AddTriple (08d68f3b-f586-4971-a208-d41909066470)
+ Call ID: 08d68f3b-f586-4971-a208-d41909066470
+  Args:
+    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
+    target: Charles_Philippe_d_Orleans
+    relation: :hasFather
+  AssignClass (b7fc7cf3-f539-47e5-ad2e-aec0c7980a54)
+ Call ID: b7fc7cf3-f539-47e5-ad2e-aec0c7980a54
+  Args:
+    type: :Woman
+    source: Naomi_Valeska
+  AssignClass (448a4449-42d7-48aa-a928-345af5aba1df)
+ Call ID: 448a4449-42d7-48aa-a928-345af5aba1df
+  Args:
+    source: Naomi_Valeska
+    type: :Person
+  AddTriple (3c382188-c79e-47cd-9785-990945303c28)
+ Call ID: 3c382188-c79e-47cd-9785-990945303c28
+  Args:
     relation: :hasMother
-    target: Queen Mary
-  AddTriple (6d85a57b-2956-48bd-8f23-1dc4c4ef9efd)
- Call ID: 6d85a57b-2956-48bd-8f23-1dc4c4ef9efd
+    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
+    target: Naomi_Valeska
+  AddLiteral (6b690290-b6d0-4ec0-a430-53625f84019d)
+ Call ID: 6b690290-b6d0-4ec0-a430-53625f84019d
   Args:
-    target: 1978
-    relation: :hasMarriageYear
-    source: Gerald David Lascelles
-  AddTriple (36088d89-0119-4e91-8b22-b9595a6b6997)
- Call ID: 36088d89-0119-4e91-8b22-b9595a6b6997
-  Args:
-    target: Elizabeth Colvin
-    source: Gerald David Lascelles
-    relation: :hasRelation
-  AddLiteral (73437f30-9c96-4406-a72f-ed28cbb42f04)
- Call ID: 73437f30-9c96-4406-a72f-ed28cbb42f04
-  Args:
-    literal_type: xsd:string
-    literal_value: The Honourable Gerald Lascelles
-    source: Gerald David Lascelles
-    relation: :knownAs
-  Finish (6a5a2d1e-45e5-4958-8914-7d6420b3855c)
- Call ID: 6a5a2d1e-45e5-4958-8914-7d6420b3855c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Edward_VIII a :Man .
-
-  data:Gerald_David_Lascelles a :Man ;
-      :hasBirthYear 1924 ;
-      :hasDeathYear 1998 ;
-      :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;
-      :hasMarriageYear data:1978 ;
-      :hasMother data:Mary%2C_Princess_Royal ;
-      :hasRelation data:Elizabeth_Colvin ;
-      :knownAs "The Honourable Gerald Lascelles"^^xsd:string .
-
-  data:Queen_Elizabeth_II a :Woman .
-
-  data:Elizabeth_Colvin a :Woman .
-
-  data:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .
-
-  data:King_George_V a :Man .
-
-  data:Mary%2C_Princess_Royal a :Woman ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
-
-  data:Queen_Mary a :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1978']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (69f2250d-4268-4159-ad09-4e5bf835f2ed)
- Call ID: 69f2250d-4268-4159-ad09-4e5bf835f2ed
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Gerald David Lascelles
-    literal_value: 1978
-  AddLiteral (6b6aa479-16b0-484d-b050-322d22b28e53)
- Call ID: 6b6aa479-16b0-484d-b050-322d22b28e53
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:string
-    source: Gerald David Lascelles
-    literal_value: 1978
-  AssignClass (56ae1a17-bf5d-419e-ab93-b07f21a0ba63)
- Call ID: 56ae1a17-bf5d-419e-ab93-b07f21a0ba63
-  Args:
-    source: 1978
-    type: :DomainEntity
-  Finish (de8a7a5e-1bff-40c4-9f43-a753e829cb38)
- Call ID: de8a7a5e-1bff-40c4-9f43-a753e829cb38
+    source: Elisabeth_Victoire_Jeanne_Marie_d_Orleans
+    relation: :hasBirthYear
+    literal_value: 2026-04-15
+    literal_type: xsd:date
+  Finish (55bd4902-448e-4235-89c2-906383948b97)
+ Call ID: 55bd4902-448e-4235-89c2-906383948b97
   Args:

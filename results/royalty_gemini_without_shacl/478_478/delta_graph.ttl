@@ -2,37 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Emilie_Charlotte_Le_Breton a :Person,
-        :Woman ;
-    :alsoKnownAs "Lily Langtry"^^xsd:string,
-        "The Jersey Lily"^^xsd:string ;
-    :hasBirthYear 1853 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:William_Corbet_Le_Breton ;
-    :hasMarriageYear 1874,
-        1899 ;
-    :hasMother data:Emilie_Davis_Martin ;
-    :hasRelation data:Edward_Langtry,
-        data:Hugo_Gerald_de_Bathe ;
-    :isMotherOf data:Jeanne_Marie_Langtry ;
-    :knownAs "Lillie Langtry"^^xsd:string .
+data:FrederikX a :Man,
+        :Person ;
+    :hasMother data:QueenMargretheII .
 
-data:Edward_Langtry a :Man,
+data:Nathalie a :Person,
+        :Woman ;
+    :hasMother data:PrincessBenedikte .
+
+data:ConstantineIIOfGreece a :Man,
         :Person .
 
-data:Emilie_Davis_Martin a :Person,
+data:CrownPrinceGustavAdolfOfSweden a :Man,
+        :Person .
+
+data:KingChristianX a :Man,
+        :Person .
+
+data:KingFrederikIX a :Man,
+        :Person ;
+    :hasBrother data:PrinceKnud ;
+    :hasFather data:KingChristianX ;
+    :hasMother data:QueenAlexandrine .
+
+data:PrinceKnud a :Man,
+        :Person .
+
+data:PrincessBenedikte a :Person,
+        :Woman ;
+    :hasBirthYear 1944 ;
+    :hasFather data:KingFrederikIX ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:QueenIngrid ;
+    :hasRelation data:RichardPrinceOfSaynWittgensteinBerleburg ;
+    :isSisterOf data:QueenAnneMarie,
+        data:QueenMargretheII ;
+    :knownAs "Benedikte Astrid Ingeborg Ingrid"^^xsd:string .
+
+data:PrincessMargaretOfConnaught a :Person,
         :Woman .
 
-data:Hugo_Gerald_de_Bathe a :Man,
-        :Person .
+data:QueenAlexandrine a :Person,
+        :Woman .
 
-data:Jeanne_Marie_Langtry a :Person,
+data:QueenAnneMarie a :Person,
         :Woman ;
-    :hasFather data:Prince_Louis_of_Battenberg .
+    :hasRelation data:ConstantineIIOfGreece .
 
-data:Prince_Louis_of_Battenberg a :Man,
-        :Person .
+data:QueenIngrid a :Person,
+        :Woman ;
+    :hasFather data:CrownPrinceGustavAdolfOfSweden ;
+    :hasMother data:PrincessMargaretOfConnaught .
 
-data:William_Corbet_Le_Breton a :Man,
-        :Person .
+data:RichardPrinceOfSaynWittgensteinBerleburg a :Man,
+        :Person ;
+    :hasBirthYear 1934 ;
+    :hasDeathYear 2017 .
+
+data:QueenMargretheII a :Person,
+        :Woman .
 

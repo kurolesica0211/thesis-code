@@ -2,43 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:LeopoldMountbatten a :Man,
+data:PrinceAlexanderFerdinandOfPrussia a :Man,
         :Person ;
-    :formerlyKnownAs "Prince Leopold of Battenberg"^^xsd:string ;
-    :hasBirthYear 1889 ;
-    :hasDeathYear 1922 ;
-    :hasFather data:HenryOfBattenberg ;
-    :hasMother data:BeatriceOfTheUnitedKingdom ;
-    :hasSex data:Male ;
-    :knownAs "Lord Leopold Arthur Louis Mountbatten"^^xsd:string .
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1985 ;
+    :hasFather data:PrinceAugustWilhelmOfPrussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:PrincessAlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg ;
+    :hasRelation data:ArmgardWeygand ;
+    :hasSex data:Male .
 
-data:AlexanderOfHesseAndByRhine a :Ancestor,
+data:ArmgardWeygand a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:MajorFriedrichWeygand ;
+    :hasMother data:KarlaFranziskaOheim ;
+    :hasRelation data:WernerRosendorff ;
+    :hasSex data:Female .
+
+data:KaiserWilhelmII a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
-data:BeatriceOfTheUnitedKingdom a :Ancestor,
+data:KarlaFranziskaOheim a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:PrinceAlbert ;
-    :hasMother data:QueenVictoria .
+    :hasSex data:Female .
 
-data:HenryOfBattenberg a :Ancestor,
+data:MajorFriedrichWeygand a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:AlexanderOfHesseAndByRhine ;
-    :hasMother data:JuliaPrincessOfBattenberg .
+    :hasSex data:Male .
 
-data:JuliaPrincessOfBattenberg a :Ancestor,
+data:PrinceAugustWilhelmOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:KaiserWilhelmII ;
+    :hasSex data:Male .
+
+data:PrincessAlexandraVictoriaOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
+
+data:WernerRosendorff a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
 
 data:Male a :Sex .
-
-data:PrinceAlbert a :Ancestor,
-        :Man,
-        :Person .
-
-data:QueenVictoria a :Ancestor,
-        :Person,
-        :Woman .
 

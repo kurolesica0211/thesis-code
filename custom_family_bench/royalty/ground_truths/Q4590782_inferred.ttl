@@ -1,0 +1,141 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1532:1538"^^xsd:string,
+        "2925:2929"^^xsd:string,
+        "357:361"^^xsd:string,
+        "789:795"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasRelation data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Prince_Tomislav_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Tomislav of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string,
+        "7:29"^^xsd:string ;
+    data:posIndicesPart "1003:1011"^^xsd:string,
+        "1358:1366"^^xsd:string,
+        "1445:1453"^^xsd:string,
+        "1691:1701"^^xsd:string,
+        "1733:1739"^^xsd:string,
+        "1740:1748"^^xsd:string,
+        "1861:1871"^^xsd:string,
+        "1983:1989"^^xsd:string,
+        "1998:2008"^^xsd:string,
+        "2145:2151"^^xsd:string,
+        "2328:2338"^^xsd:string,
+        "2411:2421"^^xsd:string,
+        "2478:2488"^^xsd:string,
+        "2698:2708"^^xsd:string,
+        "272:282"^^xsd:string,
+        "2834:2844"^^xsd:string,
+        "2879:2889"^^xsd:string,
+        "2989:2999"^^xsd:string,
+        "3041:3047"^^xsd:string,
+        "3048:3056"^^xsd:string,
+        "3249:3255"^^xsd:string,
+        "3283:3291"^^xsd:string,
+        "336:342"^^xsd:string,
+        "377:383"^^xsd:string,
+        "384:392"^^xsd:string,
+        "620:630"^^xsd:string,
+        "980:986"^^xsd:string ;
+    data:wdtLink wdt:Q594386 ;
+    :alsoKnownAs "Tomislav of Yugoslavia"^^xsd:string ;
+    :hasBrother data:Prince_Tomislav_of_Yugoslavia ;
+    :hasChild data:Prince_Nikola_of_Serbia ;
+    :hasRelation data:Prince_Nikola_of_Serbia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Nikola_of_Serbia ;
+    :isAncestorOf data:Prince_Nikola_of_Serbia ;
+    :isBloodrelationOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isFatherOf data:Prince_Nikola_of_Serbia ;
+    :isParentOf data:Prince_Nikola_of_Serbia ;
+    :isSiblingOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isUncleOf data:Prince_Nikola_of_Serbia .
+
+data:Princess_Margarita_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Baden"^^xsd:string ;
+    data:posIndicesFull "3211:3238"^^xsd:string ;
+    data:posIndicesPart "3296:3305"^^xsd:string ;
+    data:wdtLink wdt:Q3424937 ;
+    :alsoKnownAs "Margarita Prinzessin von Baden"^^xsd:string,
+        "Margarita von Baden"^^xsd:string ;
+    :hasChild data:Prince_Nikola_of_Serbia ;
+    :hasRelation data:Prince_Nikola_of_Serbia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :hasSon data:Prince_Nikola_of_Serbia ;
+    :isAncestorOf data:Prince_Nikola_of_Serbia ;
+    :isAuntOf data:Prince_Nikola_of_Serbia ;
+    :isBloodrelationOf data:Princess_Margarita_of_Baden ;
+    :isMotherOf data:Prince_Nikola_of_Serbia ;
+    :isParentOf data:Prince_Nikola_of_Serbia ;
+    :isSiblingOf data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Princess_Margarita_of_Baden .
+
+data:Prince_Nikola_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Prince Nikola of Serbia"^^xsd:string ;
+    data:wdtLink wdt:Q4590782 ;
+    :alsoKnownAs "Nikolas Karageorgievich, Prince of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasBrother data:Prince_Nikola_of_Serbia ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMother data:Princess_Margarita_of_Baden ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Prince_Nikola_of_Serbia,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Nikola_of_Serbia ;
+    :isBrotherOf data:Prince_Nikola_of_Serbia ;
+    :isChildOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Prince_Nikola_of_Serbia ;
+    :isSonOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden .
+

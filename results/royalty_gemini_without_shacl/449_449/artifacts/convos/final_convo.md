@@ -69,60 +69,46 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Heinrich XIII Prinz Reuss (German: Heinrich XIII.
-Prinz Reuß, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}pronounced ; born 4 December 1951) is a German businessman, far-right and monarchist activist, and member of the aristocratic – formerly sovereign – House of Reuss.
-A proponent of the Reichsbürger movement and antisemitic conspiracy theories, Reuss was arrested by German Federal Police in December 2022 due to his alleged leadership in the 2022 German coup d'état plot.
+John Ulick Knatchbull, 7th Baron Brabourne, CBE (9 November 1924 – 23 September 2005), professionally known as John Brabourne, was a British peer, television producer and Oscar-nominated film producer.
+Married to the elder daughter of 1st Earl Mountbatten, Brabourne was a survivor of the bombing which killed his father-in-law, mother and son.
 Biography
 
-Personal life and ancestry
+Brabourne was born in 1924, the second son of Michael Knatchbull, 5th Baron Brabourne, and his wife, Lady Doreen Browne.
+Marriage
 
-Reuss was born in Büdingen on 4 December 1951, the fifth of six children and the fourth son born to Prince Heinrich I Reuss and Duchess Woizlawa Feodora of Mecklenburg, who was in turn the only child of the German colonial governor Duke Adolf Friedrich of Mecklenburg.
-Reuss's parents, like all German nobility, had become private citizens in 1919 upon the adoption of the Weimar Constitution, which abolished any privileges and titles that had previously existed for nobility.
-The House of Reuss, from which Reuss is descended, dates to the 12th century and historically administered the regions of Gera and Greiz, a non-contiguous mini-state in what is today Eastern Thuringia.
-Reuss left the family association at his own request around 2009.
-Reuss married Iranian-born Susan Doukht Jalali in 1989, and they have two children, including a son named Heinrich XXVIII (born circa 1991) and a daughter Elena, who has Down syndrome and was born in 1989.
-His wife uses the name Princess Susan Reuss and works as a naturopath.
-Reuss is also reported to have as a girlfriend a Russian national identified by prosecutors as "Vitalia B.", aged 39 in 2022, at their arrest who allegedly had some role in the coup plot.
-Business and family activities
+At the end of the war, Brabourne returned to England and settled in the family seat, Mersham in Kent.
+On 26 October 1946, at Romsey Abbey in Hampshire, at the age of 21, he married Patricia Mountbatten, elder daughter of Louis Mountbatten, 1st Viscount Mountbatten, later 1st
+Earl Mountbatten of Burma.
+Brabourne's best man at the wedding was Squadron Leader Charles Harris-St. John.
+Lady Brabourne was to inherit her father's peerages in due course.
+This would make Lord and Lady Brabourne among the few married couples to each hold peerages in their own right.
+Also, Lady Brabourne was related to the British royal family, and her aunt Louise Mountbatten was at that time the Crown Princess (later Queen) of Sweden.
+In February 1947, only months after the wedding, Brabourne's father-in-law was appointed Viceroy of India.
+In November the same year, Lady Brabourne's first cousin Philip, Duke of Edinburgh, wed Princess Elizabeth, future queen of the United Kingdom.
+Lord and Lady Brabourne had eight children, including Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), Lady Amanda Patricia Victoria Knatchbull (born 26 June 1957), and Nicholas Timothy Charles Knatchbull.
+Career and service
 
-Reuss worked as a real estate developer, operating a company named Büro Prinz Reuss in Frankfurt, and also produced sparkling wine.
-In 1945, the Communist land reform in the Soviet occupation zone (East Germany) expropriated all movable and immovable assets of the House of Reuss.
-Following the reunification of Germany in 1990, Reuss tried to have properties restituted.
-The clan, which consisted of five large families, wanted Gera townhouses, four castles, extensive forestry and agricultural property and the Jugendstil Reuss Theater in Gera, then held by the city of Gera in Thuringia.
-Concerning the theater, Reuss and the mayor of Gera were unable to negotiate a settlement, each blaming the other.
-Reuss spent much of his fortune on lawsuits seeking restitution, but with little success.
-In 2017, he supported the reinterment of the remains of a number of his ancestors, most prominent among them Henry II, Count of Reuss-Gera, in their original location.
-Views and conspiracy theories
+In the late 1940s, shortly after leaving the army, Brabourne began working as an assistant production manager for certain television productions, mostly based on war-related themes.
+John Brabourne received two Academy Award nominations for Best Picture, as producer of Romeo and Juliet (1968) and A Passage to India (1984).
+In 1985, Brabourne was invested as a Fellow of the British Film Institute, an organisation he also served as a Governor.
+Brabourne served as a governor of various schools, including Norton Knatchbull School (founded by an ancestor c. 1630 AD) from 1947 to 2000; Wye College in Kent from 1955 to 2000, and Gordonstoun School from 1964 to 1994.
+IRA bombing
 
-Many of Reuss's views are consistent with monarchism.
-He has spoken in favour of low flat tax for all citizens and against debt-based business models hailing the 10 percent rate in the former Principality of Reuss, saying it let Reuss's citizens lead "happy lives" because it was "straightforward and transparent".
-Reuss contended that the modern German government and European Union were more distant and inaccessible than feudal princes.
-Reuss also gave speeches claiming that Germany had been a vassal state since the Second World War.
-At World Web Forum in Zürich in 2019, Reuss gave a speech accusing the Rothschilds and Freemasons of responsibility for the wars of the 20th century, expressing antisemitic conspiracy theories.
-On 22 December 2018, Reuss and his mother attended the unveiling of a "Flame of Peace" sculpture in Gera in honor of her 100th birthday by the heads of the Vienna-based Association for the Promotion of Peace.
-In 2020, Reuss participated in the celebration of the first International Day of Conscience event in Vienna.
-Assault on journalist Peter Hagen
-
-In August 2022, Reuss attended an official reception held by Thomas Weigelt, the mayor of Bad Lobenstein, where Reuss's hunting lodge Jagdschloss Waidmannsheil  is located.
-Weigelt was known to be sympathetic to the Reichsbürger movement and journalist Peter Hagen asked him why someone associated with the Reichsbürger scene like Reuss would be invited to an official event.
-The next day Hagen approached the mayor at the market festival and tried to film him in familiar conversation with Reuss and AfD-politician Uwe Thrum.
-Afterwards, the current head of the Reuss family, Heinrich XIV Fürst Reuss , objected to his involvement in local politics "in the strongest possible way".
-He called Heinrich XIII, his third cousin, a "distant relative" and "a confused old man peddling in conspiracy theories".
-Involvement in 2022 German coup plot
-
-On 7 December 2022, Reuss was arrested at his home in the Westend district of Frankfurt during an extensive raid of alleged far-right conspirators planning a coup d'état.
-According to police, the coup's conspirators—which included former Bundestag member Birgit Malsack-Winkemann—were proponents of the Reichsbürger movement who hoped to install the 71-year-old Reuss as head of state Reuss's hunting lodge Jagdschloss Waidmannsheil  in Saaldorf , Thuringia was allegedly the site of weapons stockpiles and meetings regarding the conspiracy.
-Reuss and "Vitalia B." are reported to have reached out to the Russian government via its Consulate General in Leipzig, presumably for assistance in the coup.
-Heinrich XIV Fürst Reuss distanced himself and his family again after Reuss was arrested in 2022, calling Reuss a "confused old man" and "a marginal figure" and noting that their last common ancestor lived in the early 19th century.
-He said Reuss's behaviour was a "catastrophe" for the family, whose heritage as tolerant and cosmopolitan rulers was now associated with "terrorists and reactionaries".
-He believes Reuss's anti-government views derive from his resentment at the German judicial system for its failure to recognize his claims to family properties expropriated at the end of World War II.
-The trial of Reuss and eight other plotters began on 21 May 2024 in Frankfurt.
+On 27 August 1979, while the family was on holiday in Mullaghmore, County Sligo, Lord Brabourne's father-in-law, Earl Mountbatten of Burma, took a number of family members out lobstering on his motorboat, Shadow V, in Donegal Bay.
+Having planned to murder Mountbatten, the Irish Republican Army (IRA) placed a bomb inside the boat on the night of the 26th.
+Mountbatten and several members of the party were killed the next morning when the bomb was triggered by an IRA observer onshore who was armed with a radio detonator.
+The dead included Brabourne's 83-year-old mother, the Dowager Baroness Brabourne; one of his twin 14-year-old sons, Nicholas Knatchbull; and 15-year-old Paul Maxwell from County Fermanagh who had been hired for the summer as Mountbatten's boat boy.
+Brabourne, his wife Patricia, and their other twin son Timothy were severely injured, but survived the attack.
+Lord Brabourne died on 23 September 2005 at his home in Kent, aged 80.
+His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +124,9 @@ The trial of Reuss and eight other plotters began on 21 May 2024 in Frankfurt.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +141,23 @@ The trial of Reuss and eight other plotters began on 21 May 2024 in Frankfurt.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,290 +449,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b395891c-a101-4825-ba96-de43d26119dd)
- Call ID: b395891c-a101-4825-ba96-de43d26119dd
+  AssignClass (411eb115-1c9e-4b8c-88b9-d9fbad4c95f4)
+ Call ID: 411eb115-1c9e-4b8c-88b9-d9fbad4c95f4
   Args:
-    source: Heinrich_XIII_Prinz_Reuss
+    source: John_Ulick_Knatchbull
     type: :Man
-  AssignClass (97f9afea-532a-4ab8-8185-3a7d84af6ff7)
- Call ID: 97f9afea-532a-4ab8-8185-3a7d84af6ff7
+  AssignClass (9833f2f9-a480-4f98-991a-1221b137fe9a)
+ Call ID: 9833f2f9-a480-4f98-991a-1221b137fe9a
   Args:
-    source: Heinrich_XIII_Prinz_Reuss
+    source: John_Ulick_Knatchbull
     type: :Person
-  AddLiteral (485ebd8b-52ea-4f6e-8fb5-d50658fa551c)
- Call ID: 485ebd8b-52ea-4f6e-8fb5-d50658fa551c
+  AddLiteral (b023ef13-4f7e-4e03-8b43-0ce33a4c82fe)
+ Call ID: b023ef13-4f7e-4e03-8b43-0ce33a4c82fe
   Args:
+    literal_type: xsd:integer
+    literal_value: 1924
+    source: John_Ulick_Knatchbull
     relation: :hasBirthYear
-    literal_value: 1951
+  AddLiteral (f0de394a-9bf1-48bf-abc8-7cc786bf9f66)
+ Call ID: f0de394a-9bf1-48bf-abc8-7cc786bf9f66
+  Args:
+    source: John_Ulick_Knatchbull
+    literal_value: 2005
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Heinrich_XIII_Prinz_Reuss
-  AddTriple (99398909-d4e5-48e6-8260-24575b0767f7)
- Call ID: 99398909-d4e5-48e6-8260-24575b0767f7
+  AddLiteral (1fd5bfad-7418-4b98-91d4-2b9da833e3e5)
+ Call ID: 1fd5bfad-7418-4b98-91d4-2b9da833e3e5
   Args:
-    relation: :hasSex
-    source: Heinrich_XIII_Prinz_Reuss
-    target: :Male
-  AssignClass (c74af21d-c94b-4e14-a12d-34670c15b325)
- Call ID: c74af21d-c94b-4e14-a12d-34670c15b325
+    literal_type: xsd:string
+    relation: :knownAs
+    source: John_Ulick_Knatchbull
+    literal_value: John Brabourne
+  AssignClass (e3909f13-a0d7-47de-ab2c-e46d2e894c81)
+ Call ID: e3909f13-a0d7-47de-ab2c-e46d2e894c81
   Args:
-    source: Prince_Heinrich_I_Reuss
+    source: Michael_Knatchbull
     type: :Man
-  AssignClass (5f3356ac-85bc-4568-a828-af457c2f1143)
- Call ID: 5f3356ac-85bc-4568-a828-af457c2f1143
+  AssignClass (6f63166e-a326-49cc-ae7d-e35ba83e8a1e)
+ Call ID: 6f63166e-a326-49cc-ae7d-e35ba83e8a1e
   Args:
-    type: :Ancestor
-    source: Prince_Heinrich_I_Reuss
-  AssignClass (e61e569f-4cae-47e2-aa27-adcedce304ea)
- Call ID: e61e569f-4cae-47e2-aa27-adcedce304ea
+    source: Michael_Knatchbull
+    type: :Person
+  AddTriple (49c84f00-7df0-4fdc-820c-bdfa2dd82062)
+ Call ID: 49c84f00-7df0-4fdc-820c-bdfa2dd82062
   Args:
-    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
-    type: :Woman
-  AssignClass (781683d1-a403-4c43-8e3a-2ae1d70b850d)
- Call ID: 781683d1-a403-4c43-8e3a-2ae1d70b850d
-  Args:
-    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
-    type: :Ancestor
-  AddTriple (5810790b-4369-4222-b416-9d173a24aa05)
- Call ID: 5810790b-4369-4222-b416-9d173a24aa05
-  Args:
-    source: Heinrich_XIII_Prinz_Reuss
     relation: :hasFather
-    target: :Prince_Heinrich_I_Reuss
-  AddTriple (c2adb628-422d-411d-8209-489d0cbdd05a)
- Call ID: c2adb628-422d-411d-8209-489d0cbdd05a
+    source: John_Ulick_Knatchbull
+    target: Michael_Knatchbull
+  AssignClass (ec7056f8-0447-4792-b84b-230ea7c05b70)
+ Call ID: ec7056f8-0447-4792-b84b-230ea7c05b70
   Args:
-    target: :Duchess_Woizlawa_Feodora_of_Mecklenburg
-    source: Heinrich_XIII_Prinz_Reuss
+    source: Lady_Doreen_Browne
+    type: :Woman
+  AssignClass (1a88ac5d-0388-4e6a-ac69-9093c7dec361)
+ Call ID: 1a88ac5d-0388-4e6a-ac69-9093c7dec361
+  Args:
+    source: Lady_Doreen_Browne
+    type: :Person
+  AddTriple (32dfa5d1-71c8-4ddc-8fd6-2bc0a8385614)
+ Call ID: 32dfa5d1-71c8-4ddc-8fd6-2bc0a8385614
+  Args:
     relation: :hasMother
-  AssignClass (00333cce-fd92-4c08-ac8d-239fe6502da2)
- Call ID: 00333cce-fd92-4c08-ac8d-239fe6502da2
+    target: Lady_Doreen_Browne
+    source: John_Ulick_Knatchbull
+  AssignClass (b1909b9a-5251-4f5d-bdf2-6119e87b1914)
+ Call ID: b1909b9a-5251-4f5d-bdf2-6119e87b1914
   Args:
-    type: :Man
-    source: Duke_Adolf_Friedrich_of_Mecklenburg
-  AssignClass (f7d08768-2a42-4dac-a9fc-9ea007944e35)
- Call ID: f7d08768-2a42-4dac-a9fc-9ea007944e35
-  Args:
-    type: :Ancestor
-    source: Duke_Adolf_Friedrich_of_Mecklenburg
-  AddTriple (db8ad06b-6668-4a7d-9291-9053393fff3d)
- Call ID: db8ad06b-6668-4a7d-9291-9053393fff3d
-  Args:
-    source: Duchess_Woizlawa_Feodora_of_Mecklenburg
-    relation: :hasFather
-    target: :Duke_Adolf_Friedrich_of_Mecklenburg
-  AssignClass (ac13536d-5e6a-4d5c-8603-24f1c9edab8b)
- Call ID: ac13536d-5e6a-4d5c-8603-24f1c9edab8b
-  Args:
-    source: Susan_Doukht_Jalali
+    source: Patricia_Mountbatten
     type: :Woman
-  AssignClass (d0b10c8d-77bc-4e00-a939-a9a24145c462)
- Call ID: d0b10c8d-77bc-4e00-a939-a9a24145c462
+  AssignClass (68938429-2acc-474a-8053-93f3bb203ed2)
+ Call ID: 68938429-2acc-474a-8053-93f3bb203ed2
   Args:
-    source: Susan_Doukht_Jalali
+    source: Patricia_Mountbatten
     type: :Person
-  AddLiteral (39f3481f-38e7-4ad4-832b-74155ef39759)
- Call ID: 39f3481f-38e7-4ad4-832b-74155ef39759
+  AddTriple (44644f61-0022-4b50-8888-60bd8e6332e2)
+ Call ID: 44644f61-0022-4b50-8888-60bd8e6332e2
   Args:
-    source: Heinrich_XIII_Prinz_Reuss
-    literal_type: xsd:integer
-    literal_value: 1989
-    relation: :hasMarriageYear
-  AddTriple (f3233782-3af9-4428-b571-025fc7196168)
- Call ID: f3233782-3af9-4428-b571-025fc7196168
-  Args:
-    target: :Susan_Doukht_Jalali
-    source: Heinrich_XIII_Prinz_Reuss
+    source: John_Ulick_Knatchbull
+    target: Patricia_Mountbatten
     relation: :hasRelation
-  AssignClass (f8382c5f-70b9-40c4-896f-3af52d32b9e5)
- Call ID: f8382c5f-70b9-40c4-896f-3af52d32b9e5
+  AddLiteral (80c935a5-ae49-4c0d-aa91-b0427dfd95c0)
+ Call ID: 80c935a5-ae49-4c0d-aa91-b0427dfd95c0
   Args:
-    source: Heinrich_XXVIII
+    relation: :hasMarriageYear
+    source: John_Ulick_Knatchbull
+    literal_value: 1946
+    literal_type: xsd:integer
+  AssignClass (9fd8edee-7c5d-439f-a83e-cd89d623977d)
+ Call ID: 9fd8edee-7c5d-439f-a83e-cd89d623977d
+  Args:
+    source: Louis_Mountbatten
     type: :Man
-  AssignClass (961425e4-263e-432a-983d-10650358137c)
- Call ID: 961425e4-263e-432a-983d-10650358137c
+  AssignClass (d931418a-0003-4b28-a4e9-6327c57b8429)
+ Call ID: d931418a-0003-4b28-a4e9-6327c57b8429
   Args:
-    source: Heinrich_XXVIII
+    source: Louis_Mountbatten
     type: :Person
-  AddTriple (8c8f43f8-982a-44d7-9fbf-2d49eb86ca00)
- Call ID: 8c8f43f8-982a-44d7-9fbf-2d49eb86ca00
+  AddTriple (108bf423-e354-48b3-8b53-16305e18eaf9)
+ Call ID: 108bf423-e354-48b3-8b53-16305e18eaf9
   Args:
-    target: :Heinrich_XIII_Prinz_Reuss
+    relation: :hasFather
+    source: Patricia_Mountbatten
+    target: Louis_Mountbatten
+  AssignClass (6883aba6-778e-47af-8d02-735c7e817651)
+ Call ID: 6883aba6-778e-47af-8d02-735c7e817651
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    type: :Man
+  AssignClass (ac28910e-1932-4ff8-8e11-062663e4b663)
+ Call ID: ac28910e-1932-4ff8-8e11-062663e4b663
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    type: :Person
+  AddTriple (d504f492-97b2-42c4-91de-06b4617fbd51)
+ Call ID: d504f492-97b2-42c4-91de-06b4617fbd51
+  Args:
     relation: :isSonOf
-    source: Heinrich_XXVIII
-  AssignClass (0cc68d48-c744-4005-8ceb-de02b51ce679)
- Call ID: 0cc68d48-c744-4005-8ceb-de02b51ce679
+    source: Norton_Louis_Philip_Knatchbull
+    target: John_Ulick_Knatchbull
+  AddTriple (c531ac72-1c76-4dbe-964c-da6b9784100c)
+ Call ID: c531ac72-1c76-4dbe-964c-da6b9784100c
   Args:
-    source: Elena
+    source: Norton_Louis_Philip_Knatchbull
+    target: Patricia_Mountbatten
+    relation: :isSonOf
+  AssignClass (3358491f-17eb-4657-8335-2fdd83f3cb53)
+ Call ID: 3358491f-17eb-4657-8335-2fdd83f3cb53
+  Args:
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
     type: :Woman
-  AssignClass (9b543649-eb2b-43a4-8bd8-0fbbd1b1c335)
- Call ID: 9b543649-eb2b-43a4-8bd8-0fbbd1b1c335
+  AssignClass (2bc93654-434c-4f86-8654-7b754dc5354a)
+ Call ID: 2bc93654-434c-4f86-8654-7b754dc5354a
   Args:
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
     type: :Person
-    source: Elena
-  AddTriple (568295be-eb11-4afa-87f2-eb048a0e735e)
- Call ID: 568295be-eb11-4afa-87f2-eb048a0e735e
+  AddTriple (39c1feff-01b8-47e0-9309-dddf149ad11f)
+ Call ID: 39c1feff-01b8-47e0-9309-dddf149ad11f
   Args:
-    source: Elena
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+    target: John_Ulick_Knatchbull
     relation: :isDaughterOf
-    target: :Heinrich_XIII_Prinz_Reuss
-  Finish (8d08ea70-6de8-45b9-890d-70f323e52561)
- Call ID: 8d08ea70-6de8-45b9-890d-70f323e52561
+  AddTriple (b82ae595-5d11-4670-a702-b3c5962ea9d8)
+ Call ID: b82ae595-5d11-4670-a702-b3c5962ea9d8
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Elena a :Person,
-          :Woman ;
-      :isDaughterOf data:Heinrich_XIII_Prinz_Reuss .
-
-  data:Heinrich_XXVIII a :Man,
-          :Person ;
-      :isSonOf data:Heinrich_XIII_Prinz_Reuss .
-
-  data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
-          :Woman ;
-      :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
-
-  data:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,
-          :Man .
-
-  data:Prince_Heinrich_I_Reuss a :Ancestor,
-          :Man .
-
-  data:Susan_Doukht_Jalali a :Person,
-          :Woman .
-
-  data:Heinrich_XIII_Prinz_Reuss a :Man,
-          :Person ;
-      :hasBirthYear 1951 ;
-      :hasFather data:Prince_Heinrich_I_Reuss ;
-      :hasMarriageYear 1989 ;
-      :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
-      :hasRelation data:Susan_Doukht_Jalali ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f929e13f-f855-4f3a-87b8-b49ec79560a0)
- Call ID: f929e13f-f855-4f3a-87b8-b49ec79560a0
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+    target: Patricia_Mountbatten
+    relation: :isDaughterOf
+  AssignClass (ce6e2bec-26b0-4adc-9e7d-2249f4c4361d)
+ Call ID: ce6e2bec-26b0-4adc-9e7d-2249f4c4361d
   Args:
-    type: :Sex
-    source: Male
-  Finish (cf7d9cc2-4b4f-41bd-b020-48bafcdab6d6)
- Call ID: cf7d9cc2-4b4f-41bd-b020-48bafcdab6d6
+    source: Nicholas_Timothy_Charles_Knatchbull
+    type: :Man
+  AssignClass (eb29454e-03ad-4551-bcab-ab48c8baf98a)
+ Call ID: eb29454e-03ad-4551-bcab-ab48c8baf98a
+  Args:
+    source: Nicholas_Timothy_Charles_Knatchbull
+    type: :Person
+  AddTriple (e37ba99a-55cc-41f7-a695-a64674ff34a2)
+ Call ID: e37ba99a-55cc-41f7-a695-a64674ff34a2
+  Args:
+    relation: :isSonOf
+    source: Nicholas_Timothy_Charles_Knatchbull
+    target: John_Ulick_Knatchbull
+  AddTriple (3f73fe17-0f03-4306-8b4d-85d5c2fdd177)
+ Call ID: 3f73fe17-0f03-4306-8b4d-85d5c2fdd177
+  Args:
+    source: Nicholas_Timothy_Charles_Knatchbull
+    target: Patricia_Mountbatten
+    relation: :isSonOf
+  AssignClass (9bad70d9-73dc-4306-9adf-a2f5ebf822cd)
+ Call ID: 9bad70d9-73dc-4306-9adf-a2f5ebf822cd
+  Args:
+    source: Timothy_Knatchbull
+    type: :Man
+  AssignClass (856c3ff4-f49c-45ee-b96e-0ce31768bbb2)
+ Call ID: 856c3ff4-f49c-45ee-b96e-0ce31768bbb2
+  Args:
+    source: Timothy_Knatchbull
+    type: :Person
+  AddTriple (fd0b657b-8551-4dbe-bb06-f98a395c4be5)
+ Call ID: fd0b657b-8551-4dbe-bb06-f98a395c4be5
+  Args:
+    relation: :isSonOf
+    target: John_Ulick_Knatchbull
+    source: Timothy_Knatchbull
+  AddTriple (8fe555f1-0b7f-4a52-a531-e8abcf78f01b)
+ Call ID: 8fe555f1-0b7f-4a52-a531-e8abcf78f01b
+  Args:
+    relation: :isSonOf
+    source: Timothy_Knatchbull
+    target: Patricia_Mountbatten
+  AssignClass (de09d763-195a-417b-96f6-d60e1a34a547)
+ Call ID: de09d763-195a-417b-96f6-d60e1a34a547
+  Args:
+    source: Louise_Mountbatten
+    type: :Woman
+  AssignClass (c0b71545-da13-40b8-8a2e-9b1b5f7d324b)
+ Call ID: c0b71545-da13-40b8-8a2e-9b1b5f7d324b
+  Args:
+    source: Louise_Mountbatten
+    type: :Person
+  AddTriple (f175399a-88e7-4b53-80c4-bc7f1cc6744e)
+ Call ID: f175399a-88e7-4b53-80c4-bc7f1cc6744e
+  Args:
+    target: Patricia_Mountbatten
+    source: Louise_Mountbatten
+    relation: :isAuntOf
+  Finish (b10fc58d-4fd0-4ab6-a1f2-990215de510a)
+ Call ID: b10fc58d-4fd0-4ab6-a1f2-990215de510a
   Args:

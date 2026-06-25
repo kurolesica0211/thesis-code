@@ -2,51 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Bernhard a :Man,
+data:Georg_von_Habsburg a :Man,
         :Person ;
-    :isFatherOf data:Queen_Beatrix .
+    :hasBirthYear 1964 ;
+    :hasMarriageYear 1997 ;
+    :hasRelation data:Eilika_of_Oldenburg .
 
-data:Prince_Friso a :Man,
-        :Person ;
-    :hasBirthYear 1968 ;
-    :hasChild data:Countess_Emma_Luana_Ninette_Sophie,
-        data:Countess_Joanna_Zaria_Nicoline_Milou ;
-    :hasDeathYear 2013 ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMarriageYear 2004 ;
-    :hasMother data:Queen_Beatrix ;
-    :isBrotherOf data:Prince_Constantijn,
-        data:Willem-Alexander ;
-    :knownAs "Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg"^^xsd:string .
-
-data:Queen_Juliana a :Person,
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
         :Woman ;
-    :isMotherOf data:Queen_Beatrix .
+    :isMotherOf data:Johann_of_Oldenburg .
 
-data:Countess_Emma_Luana_Ninette_Sophie a :Person,
+data:Ilka_of_Ortenburg a :Ancestor,
+        :Person,
         :Woman ;
-    :hasMother data:Mabel_Wisse_Smit .
+    :isMotherOf data:Eilika_of_Oldenburg .
 
-data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Johann_of_Oldenburg .
+
+data:Johann_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Eilika_of_Oldenburg .
+
+data:Eilika_of_Oldenburg a :Person,
         :Woman ;
-    :hasMother data:Mabel_Wisse_Smit .
-
-data:Prince_Constantijn a :Man,
-        :Person ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMother data:Queen_Beatrix .
-
-data:Willem-Alexander a :Man,
-        :Person ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMother data:Queen_Beatrix .
-
-data:Mabel_Wisse_Smit a :Person,
-        :Woman .
-
-data:Claus_von_Amsberg a :Man,
-        :Person .
-
-data:Queen_Beatrix a :Person,
-        :Woman .
+    :hasBirthYear 1972 .
 

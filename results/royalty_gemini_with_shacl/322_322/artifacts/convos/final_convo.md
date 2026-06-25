@@ -85,68 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Henri Philippe Pierre Marie d'Orléans (14 June 1933 – 21 January 2019) was the Orléanist pretender to the defunct French throne as Henry VII.
-Henri was a retired military officer as well as an author and painter.
-Early life
+Duchess Donata of Mecklenburg (born 11 March 1956) is the senior remaining member of the House of Mecklenburg-Schwerin.
+Since there are no males left in the family, the Schwerin branch itself is considered extinct due to the Salic law of succession, leaving Mecklenburg-Strelitz as the only remaining line of the House of Mecklenburg.
+Duchess of Mecklenburg
 
-He was the first son of Henri, Count of Paris (1908–1999), and his wife Princess Isabelle of Orléans-Braganza, and was born in Woluwe-Saint-Pierre, Belgium, a law in 1886 having permanently exiled from France the heads of its formerly reigning dynasties and their eldest sons.
-Despite the ban, while living in Belgium Henri occasionally accompanied his mother on brief visits to France and, later, to his mother's relatives in Brazil.
-While his father sought to play a role in the French resistance, Henri, in 1940 a child of 7, remained at Larache with his mother, siblings, grandmother and father's sisters' families during the Nazi occupation of France, sharing a small desert home that lacked electricity.
-Advised by Henri Giraud's Moroccan command that the Orléans had become unwelcome in the protectorate following the assassination of Vichy regime collaborater François Darlan by the monarchist Fernand Bonnier de La Chapelle, the family relocated to Pamplona in Spain until 1947, when they took up residence at the Quinta do Anjinho, an estate near Sintra, on the Portuguese Riviera.
-During that year, President Vincent Auriol allowed Henri and his brother François to visit France, and in 1948 he was allowed to enroll in a lycée in Bordeaux.
-The law of exile was abrogated in 1950, allowing Henri to repatriate with his parents.
-Later that year, his parents purchased an estate near Paris, the Manoir du Cœur-Volant in Louveciennes, which became Henri's first home in France.
-Henri studied at the Institut d'Études Politiques de Paris (Sciences Po), obtaining his bac in 1957, and on 30 June of that year, his father conferred upon him, as the heir apparent of his house, the title of "Count of Clermont", by which he was generally known during his father's lifetime.
-Career
-
-From October 1959 to April 1962, Henri worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
-Returning to civilian life in 1967, Henri and his family briefly occupied the Blanche Neige pavilion on the grounds of his father's Cœur-Volant estate before renting an apartment of their own in the 15th arrondissement of Paris.
-Henri wrote several books, including:
-
-
-Henri was also a painter and launched his own brand of perfume.
-Marriages and children
-
-Henri met Duchess Marie Therese of Württemberg (born 1934), like himself a descendant of King Louis-Philippe, at a ball given by the Thurn and Taxis family in Munich.
-Five children were born from this union:
-
-
-In 1984, Henri and Marie-Thérèse were divorced.
-On 31 October 1984 Henri entered a civil marriage with Micaëla Anna María Cousiño y Quiñones de León (1938–2022), daughter of Luis Cousiño y Sebire and his wife, Antonia Maria Quiñones de Léon y Bañuelos, 4th Marquesa de San Carlos, and who had previously been divorced from Jean-Robert Bœuf.
-For remarrying without consent, Henri's father initially declared him disinherited, substituting the non-dynastic title Comte de Mortain for his son's Clermont countship (the latter once held in appanage by a son of Louis IX of France, who became ancestor of the Bourbon-Orléans line).
-Henri, though, refused all mail addressed to him as "Mortain".
-On 27 February 1984 Marie-Thérèse, the former Countess of Clermont, was granted the title Duchess of Montpensier by her father-in-law.
-On 11 February 1989 Henri was informed, by a hand-delivered letter written by his former wife, of the engagement of their eldest child Marie, to Prince Gundakar of Liechtenstein, a cousin of the ruler of that principality, the wedding date being set for 29 July 1989.
-Although Henri acknowledged, in a 12 May 1989 Point de Vue interview, that it had been three years since he had seen Marie, he and his second wife, Micaëla Cousiño, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Henri further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
-At the engagement party held the next day at the Palais Pallavicini, the Vienna home of the fiancé's parents, photographs were taken, and would later be published, showing Henri speaking cordially with his daughter, sons, former wife and future son-in-law.
-However, it was on this occasion that Henri learned that he would not be escorting Marie to her bridegroom during the wedding.
-Meanwhile, Marie-Thérèse had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of her grandfather, Monseigneur the Count of Paris who, until then, had largely sided with the Duchess of Montpensier in family matters and had consented to his granddaughter's choice of a spouse.
-Henri and his father refused to attend the wedding but Marie proceeded to marry civilly at Dreux's city hall on 22 July 1989, and religiously at the castle of her mother's brother in Germany, on 29 July 1989.
-All but two of Henri's eight siblings also boycotted the ceremonies, but his sister Diane (wife of Montpensier's brother) hosted, and Henri's mother, Madame the Countess of Paris, was a guest at the religious wedding.
-Tensions lessened after several years, and on 7 March 1991 Henri's father reinstated him as heir apparent and Count of Clermont, simultaneously giving Micaëla the title "Princesse de Joinville".
-In 1980, Henri joined the Grand Orient de France where he became Grand Master of the regular Masonic Lodge "Lys de France" No 1297.
-Head of house
-
-Until he succeeded his father as royal claimant, Henri and his second wife occupied an apartment in Paris.
-On 19 June 1999, Henri's father died and he became the new head of the House of Orléans.
-He took the traditional title, Count of Paris, adding an ancient one, Duke of France, not borne by his Orléans or Bourbon forebears, but used a thousand years ago by his ancestors, before Hugh Capet took the title of king.
-His wife assumed the title "Duchess of France", deferring to the continued use of "Countess of Paris" by Henri's widowed mother until her death on 5 July 2003, whereupon Micaela assumed that title.
-After his father's death, Henri annulled his father's decision to deprive his brothers Michel (Count of Évreux) and Thibaut (the late Count of La Marche) of their succession rights because Michel married a French noblewoman without permission and because Thibaut married a commoner.
-He also bestowed titles upon the sons of his brother Prince Jacques, Duke of Orléans: Prince Charles-Louis d'Orléans, Duke of Chartres (born 1972), and Prince Foulques d'Orléans, Duke of Aumale and Count of Eu (born 1974).
-Henri recognised his disabled eldest son François as his dynastic heir-apparent, with the title Count of Clermont, declaring that François would exercise his prerogatives as head of the dynasty under the "regency" of his younger brother Prince Jean, Duke of Vendôme.
-In 2009, Henri obtained an annulment of his marriage to Marie-Thérèse of Württemberg from the Holy See.
-As Count of Paris, Henri took part in some European royal events attending, for instance, the 2011 marriage of Albert II of Monaco.
-Legal cases
-
-Prior to succeeding his father as royal claimant, Henri launched an unsuccessful court case (1987–1989) in which he challenged the right of his rival paternal 10th cousin Louis-Alphonse, Duke of Anjou, to use the undifferenced royal arms of France and the Anjou title.
-The French courts dismissed the case on the grounds that Henri failed to prove that he had demonstrated a right to the hereditaments in questions, noting also that the court lacked jurisdiction in a dispute over dynastic claims of France's former royal family.
-In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa Boileau, a 17th-century Paris house he had occupied.
+She was born in Kiel in the state of Schleswig-Holstein the eldest daughter of Duke Christian Louis of Mecklenburg-Schwerin and his wife Princess Barbara of Prussia (1920-1994).
+Her father was the younger brother to the last surviving male of the House of Mecklenburg-Schwerin, Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin.
+Her mother was the daughter of Princess Charlotte of Saxe-Altenburg, the eldest daughter of Ernst II, the last duke of Saxe-Altenburg.
+Donata had only one sister Edwina (born 25 September 1960), and as her uncle had no children the House of Mecklenburg-Schwerin became extinct in the male line in 2001 when her uncle died.
+As a result, the Mecklenburg-Strelitz line, headed by Borwin, Duke of Mecklenburg, will become the only surviving line of the House of Mecklenburg when both Donata and Edwina are dead.
+Her paternal grandfather was the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
+She is also a descendant of Christian IX of Denmark as her paternal grandmother, Alexandra of Hanover and Cumberland, a daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark, was the youngest daughter and fifth child of Christian IX of Denmark and Louise of Hesse-Kassel.
+Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Duke Louis IV and Alice, Grand Duchess of Hesse and by Rhine, the second daughter of Queen Victoria.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -162,39 +120,9 @@ In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -209,6 +137,23 @@ In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -226,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -324,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -336,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -344,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -382,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -397,346 +445,444 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (07bd3940-3e32-49f8-ac62-028dea04dc45)
- Call ID: 07bd3940-3e32-49f8-ac62-028dea04dc45
+  AssignClass (a302dcaa-bdc2-4a6f-9ccb-86e70e703a1a)
+ Call ID: a302dcaa-bdc2-4a6f-9ccb-86e70e703a1a
   Args:
-    source: HenriPhilippePierreMariedOrleans
-    type: :Man
-  AssignClass (dcb88312-e1bb-4e6c-a5cb-c6746ba24035)
- Call ID: dcb88312-e1bb-4e6c-a5cb-c6746ba24035
+    source: :Donata_of_Mecklenburg
+    type: :Woman
+  AssignClass (0d30fb9f-c97a-4edd-917e-32a114d7a065)
+ Call ID: 0d30fb9f-c97a-4edd-917e-32a114d7a065
   Args:
+    source: :Donata_of_Mecklenburg
     type: :Person
-    source: HenriPhilippePierreMariedOrleans
-  AddLiteral (1553a167-6a55-4b2f-899c-c271bfdd209d)
- Call ID: 1553a167-6a55-4b2f-899c-c271bfdd209d
+  AddLiteral (055d18e2-8dec-4229-8ab5-d27f4535e698)
+ Call ID: 055d18e2-8dec-4229-8ab5-d27f4535e698
   Args:
     literal_type: xsd:integer
-    source: HenriPhilippePierreMariedOrleans
-    literal_value: 1933
+    literal_value: 1956
     relation: :hasBirthYear
-  AddLiteral (64054d0a-0905-481f-9bae-ef6dbaa90ce4)
- Call ID: 64054d0a-0905-481f-9bae-ef6dbaa90ce4
+    source: :Donata_of_Mecklenburg
+  AssignClass (0b5c8536-acc8-4a7b-915c-c87143955833)
+ Call ID: 0b5c8536-acc8-4a7b-915c-c87143955833
+  Args:
+    source: :Christian_Louis_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (f1e51185-0adc-4236-a9a2-0a45f481846e)
+ Call ID: f1e51185-0adc-4236-a9a2-0a45f481846e
+  Args:
+    source: :Christian_Louis_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (e187d970-27a4-4e65-aff6-bdadf03cb177)
+ Call ID: e187d970-27a4-4e65-aff6-bdadf03cb177
+  Args:
+    source: :Christian_Louis_of_Mecklenburg-Schwerin
+    type: :Person
+  AssignClass (2fde7930-34b8-4c06-919d-35e2a1bb4803)
+ Call ID: 2fde7930-34b8-4c06-919d-35e2a1bb4803
+  Args:
+    source: :Barbara_of_Prussia
+    type: :Woman
+  AssignClass (d663c727-60e5-496c-947b-5a12d8a5e374)
+ Call ID: d663c727-60e5-496c-947b-5a12d8a5e374
+  Args:
+    source: :Barbara_of_Prussia
+    type: :Ancestor
+  AssignClass (16713580-9b0e-47f7-9b08-5c06ca32c33d)
+ Call ID: 16713580-9b0e-47f7-9b08-5c06ca32c33d
+  Args:
+    source: :Barbara_of_Prussia
+    type: :Person
+  AddLiteral (1f274287-5649-49ee-bc28-dbbb2f5ba437)
+ Call ID: 1f274287-5649-49ee-bc28-dbbb2f5ba437
+  Args:
+    literal_value: 1920
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Barbara_of_Prussia
+  AddLiteral (4dbe1d52-9a62-4f08-9fbd-b4738da0b1bf)
+ Call ID: 4dbe1d52-9a62-4f08-9fbd-b4738da0b1bf
+  Args:
+    literal_value: 1994
+    literal_type: xsd:integer
+    source: :Barbara_of_Prussia
+    relation: :hasDeathYear
+  AddTriple (b2134334-22e4-40dd-a23b-0ccd50ae9412)
+ Call ID: b2134334-22e4-40dd-a23b-0ccd50ae9412
+  Args:
+    target: :Christian_Louis_of_Mecklenburg-Schwerin
+    relation: :isDaughterOf
+    source: :Donata_of_Mecklenburg
+  AddTriple (9de6dcb7-8fa8-4cca-ade3-c21bbc35ec5a)
+ Call ID: 9de6dcb7-8fa8-4cca-ade3-c21bbc35ec5a
+  Args:
+    source: :Donata_of_Mecklenburg
+    relation: :isDaughterOf
+    target: :Barbara_of_Prussia
+  AssignClass (aab82bd5-515f-47e9-a3d6-1ad956a36def)
+ Call ID: aab82bd5-515f-47e9-a3d6-1ad956a36def
+  Args:
+    source: :Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (b66643d8-4457-4322-81ad-acccc13bd451)
+ Call ID: b66643d8-4457-4322-81ad-acccc13bd451
+  Args:
+    source: :Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (c43349a6-19aa-4f4e-961d-240bccc17ecc)
+ Call ID: c43349a6-19aa-4f4e-961d-240bccc17ecc
+  Args:
+    target: :Christian_Louis_of_Mecklenburg-Schwerin
+    source: :Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
+    relation: :isBrotherOf
+  AddLiteral (c8073122-69ce-4fef-842d-257f1e761b30)
+ Call ID: c8073122-69ce-4fef-842d-257f1e761b30
   Args:
     relation: :hasDeathYear
-    source: HenriPhilippePierreMariedOrleans
+    source: :Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
+    literal_value: 2001
     literal_type: xsd:integer
-    literal_value: 2019
-  AssignClass (36d14663-9d5e-4612-b5d4-85a950e29465)
- Call ID: 36d14663-9d5e-4612-b5d4-85a950e29465
+  AssignClass (82c042c5-dda8-4c4a-87d3-6a3f129a9a17)
+ Call ID: 82c042c5-dda8-4c4a-87d3-6a3f129a9a17
   Args:
-    type: :Man
-    source: HenriCountOfParis
-  AssignClass (3ec13768-467b-4609-ab30-9a8f6ac9401e)
- Call ID: 3ec13768-467b-4609-ab30-9a8f6ac9401e
+    source: :Charlotte_of_Saxe-Altenburg
+    type: :Woman
+  AssignClass (c5d91b66-25d6-4519-ae26-73f9e20cf168)
+ Call ID: c5d91b66-25d6-4519-ae26-73f9e20cf168
   Args:
-    source: HenriCountOfParis
+    source: :Charlotte_of_Saxe-Altenburg
+    type: :Ancestor
+  AssignClass (3af8aeb2-9dc3-4eaa-9624-391c71961729)
+ Call ID: 3af8aeb2-9dc3-4eaa-9624-391c71961729
+  Args:
+    source: :Charlotte_of_Saxe-Altenburg
     type: :Person
-  AddLiteral (ceb3fe43-4929-43cd-81b3-d399d1162eb9)
- Call ID: ceb3fe43-4929-43cd-81b3-d399d1162eb9
+  AddTriple (e53d7b9c-099f-4fe2-a897-a867a4ef1656)
+ Call ID: e53d7b9c-099f-4fe2-a897-a867a4ef1656
   Args:
+    target: :Barbara_of_Prussia
+    source: :Charlotte_of_Saxe-Altenburg
+    relation: :isMotherOf
+  AssignClass (67561598-653c-4de2-849f-26feeae432fa)
+ Call ID: 67561598-653c-4de2-849f-26feeae432fa
+  Args:
+    source: :Ernst_II_of_Saxe-Altenburg
+    type: :Man
+  AssignClass (fa031d6f-8132-4af8-974d-48053b3cf562)
+ Call ID: fa031d6f-8132-4af8-974d-48053b3cf562
+  Args:
+    source: :Ernst_II_of_Saxe-Altenburg
+    type: :Ancestor
+  AssignClass (3681f105-3a5b-462a-a620-f8a0fd3a39b2)
+ Call ID: 3681f105-3a5b-462a-a620-f8a0fd3a39b2
+  Args:
+    source: :Ernst_II_of_Saxe-Altenburg
+    type: :Person
+  AddTriple (27710825-5760-4543-be86-171bb7ac2cf8)
+ Call ID: 27710825-5760-4543-be86-171bb7ac2cf8
+  Args:
+    target: :Charlotte_of_Saxe-Altenburg
+    relation: :isFatherOf
+    source: :Ernst_II_of_Saxe-Altenburg
+  AssignClass (7cd05d97-e57a-4821-8435-9b855698bf70)
+ Call ID: 7cd05d97-e57a-4821-8435-9b855698bf70
+  Args:
+    source: :Edwina_of_Mecklenburg
+    type: :Woman
+  AssignClass (09336a21-5f8e-4e39-baaf-c3464a647330)
+ Call ID: 09336a21-5f8e-4e39-baaf-c3464a647330
+  Args:
+    source: :Edwina_of_Mecklenburg
+    type: :Person
+  AddLiteral (74ccdbeb-a290-4229-a368-f9da3ea2b99d)
+ Call ID: 74ccdbeb-a290-4229-a368-f9da3ea2b99d
+  Args:
+    source: :Edwina_of_Mecklenburg
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: HenriCountOfParis
-    literal_value: 1908
-  AddLiteral (c9630769-5c00-4dc6-801a-97f9cb049d31)
- Call ID: c9630769-5c00-4dc6-801a-97f9cb049d31
+    literal_value: 1960
+  AddTriple (d466f7df-df68-4e5e-b7ad-e568413bc743)
+ Call ID: d466f7df-df68-4e5e-b7ad-e568413bc743
   Args:
-    source: HenriCountOfParis
-    literal_type: xsd:integer
-    literal_value: 1999
-    relation: :hasDeathYear
-  AssignClass (c3c35580-24c5-43ed-a2a3-2e8634352bf8)
- Call ID: c3c35580-24c5-43ed-a2a3-2e8634352bf8
+    relation: :isSisterOf
+    source: :Edwina_of_Mecklenburg
+    target: :Donata_of_Mecklenburg
+  AddTriple (e0473df6-6c67-4877-afac-0a2212379052)
+ Call ID: e0473df6-6c67-4877-afac-0a2212379052
   Args:
+    target: :Christian_Louis_of_Mecklenburg-Schwerin
+    source: :Edwina_of_Mecklenburg
+    relation: :isDaughterOf
+  AddTriple (62b9c6e7-17de-4544-bd50-8299cf8fb84e)
+ Call ID: 62b9c6e7-17de-4544-bd50-8299cf8fb84e
+  Args:
+    target: :Barbara_of_Prussia
+    relation: :isDaughterOf
+    source: :Edwina_of_Mecklenburg
+  AssignClass (360f3862-0e7b-4447-98fd-9b7feed8b505)
+ Call ID: 360f3862-0e7b-4447-98fd-9b7feed8b505
+  Args:
+    source: :Borwin_Duke_of_Mecklenburg
+    type: :Man
+  AssignClass (5dc47e23-690a-443f-9a28-361d586a147c)
+ Call ID: 5dc47e23-690a-443f-9a28-361d586a147c
+  Args:
+    source: :Borwin_Duke_of_Mecklenburg
+    type: :Person
+  AssignClass (1f779b03-09dd-4a5a-9da0-5be590f13d30)
+ Call ID: 1f779b03-09dd-4a5a-9da0-5be590f13d30
+  Args:
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (1e553407-f3ae-4086-b64e-91e1e3dd2ca3)
+ Call ID: 1e553407-f3ae-4086-b64e-91e1e3dd2ca3
+  Args:
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (7c40e5fe-2fe6-4a3c-b3b5-11e9d8b0d638)
+ Call ID: 7c40e5fe-2fe6-4a3c-b3b5-11e9d8b0d638
+  Args:
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (a7ef6114-c3f0-4a18-a802-99d9b80ccba2)
+ Call ID: a7ef6114-c3f0-4a18-a802-99d9b80ccba2
+  Args:
+    relation: :isFatherOf
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    target: :Christian_Louis_of_Mecklenburg-Schwerin
+  AssignClass (efb26878-a132-4e40-87cc-188a676dd9ec)
+ Call ID: efb26878-a132-4e40-87cc-188a676dd9ec
+  Args:
+    source: :Christian_IX_of_Denmark
+    type: :Man
+  AssignClass (f4a3ecba-84c4-494b-994b-83b81e980a13)
+ Call ID: f4a3ecba-84c4-494b-994b-83b81e980a13
+  Args:
+    source: :Christian_IX_of_Denmark
+    type: :Ancestor
+  AssignClass (f2aa1326-62c4-43ce-8a6c-07d82a1ecadf)
+ Call ID: f2aa1326-62c4-43ce-8a6c-07d82a1ecadf
+  Args:
+    source: :Christian_IX_of_Denmark
+    type: :Person
+  AssignClass (5645de9f-e2a6-42d4-9a3b-aebfdfb77f75)
+ Call ID: 5645de9f-e2a6-42d4-9a3b-aebfdfb77f75
+  Args:
+    source: :Alexandra_of_Hanover_and_Cumberland
     type: :Woman
-    source: PrincessIsabelleOfOrleansBraganza
-  AssignClass (bf62b05c-20b5-44f2-92bf-e5d647db0e23)
- Call ID: bf62b05c-20b5-44f2-92bf-e5d647db0e23
+  AssignClass (9b7894f1-d999-4155-82cc-f557e2edffab)
+ Call ID: 9b7894f1-d999-4155-82cc-f557e2edffab
   Args:
-    source: PrincessIsabelleOfOrleansBraganza
+    source: :Alexandra_of_Hanover_and_Cumberland
+    type: :Ancestor
+  AssignClass (93061efb-489b-4df3-8543-6fce83754d07)
+ Call ID: 93061efb-489b-4df3-8543-6fce83754d07
+  Args:
+    source: :Alexandra_of_Hanover_and_Cumberland
     type: :Person
-  AddTriple (a82b91ef-6fd3-4c0a-8590-eb4b296fd260)
- Call ID: a82b91ef-6fd3-4c0a-8590-eb4b296fd260
+  AddTriple (49441004-6701-4743-8f4a-295c5758d3c9)
+ Call ID: 49441004-6701-4743-8f4a-295c5758d3c9
   Args:
-    relation: :hasFather
-    target: HenriCountOfParis
-    source: HenriPhilippePierreMariedOrleans
-  AddTriple (f0f5cf6c-32ae-495e-9d43-67a5b50bcea9)
- Call ID: f0f5cf6c-32ae-495e-9d43-67a5b50bcea9
+    source: :Alexandra_of_Hanover_and_Cumberland
+    relation: :isMotherOf
+    target: :Christian_Louis_of_Mecklenburg-Schwerin
+  AddTriple (96bc4a0f-8ad7-4d3f-a23b-7c5ae7dedad9)
+ Call ID: 96bc4a0f-8ad7-4d3f-a23b-7c5ae7dedad9
   Args:
-    source: HenriPhilippePierreMariedOrleans
-    target: PrincessIsabelleOfOrleansBraganza
-    relation: :hasMother
-  AssignClass (416dda8d-311d-4c3e-b00a-1042b74c47fb)
- Call ID: 416dda8d-311d-4c3e-b00a-1042b74c47fb
+    relation: :isDaughterOf
+    source: :Alexandra_of_Hanover_and_Cumberland
+    target: :Christian_IX_of_Denmark
+  AssignClass (1496d729-6e8e-442b-87cc-5293867ab7a1)
+ Call ID: 1496d729-6e8e-442b-87cc-5293867ab7a1
   Args:
-    source: MarieThereseOfWurttemberg
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Man
+  AssignClass (e6ab39ac-18bb-4c40-beb5-543ebc3d5ff3)
+ Call ID: e6ab39ac-18bb-4c40-beb5-543ebc3d5ff3
+  Args:
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Ancestor
+  AssignClass (9ef40e30-b614-447a-9994-74c50567006b)
+ Call ID: 9ef40e30-b614-447a-9994-74c50567006b
+  Args:
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Person
+  AssignClass (6fdc870f-1736-469b-8ea4-795c5d694323)
+ Call ID: 6fdc870f-1736-469b-8ea4-795c5d694323
+  Args:
+    source: :Thyra_of_Denmark
     type: :Woman
-  AssignClass (6fab082f-945a-46f4-b315-30633ff1927b)
- Call ID: 6fab082f-945a-46f4-b315-30633ff1927b
+  AssignClass (0ac1e285-0bc3-4ce8-bc78-a6ffef406946)
+ Call ID: 0ac1e285-0bc3-4ce8-bc78-a6ffef406946
   Args:
+    source: :Thyra_of_Denmark
+    type: :Ancestor
+  AssignClass (bcd4611c-1e49-40ac-ad81-273c70ab3cb5)
+ Call ID: bcd4611c-1e49-40ac-ad81-273c70ab3cb5
+  Args:
+    source: :Thyra_of_Denmark
     type: :Person
-    source: MarieThereseOfWurttemberg
-  AddLiteral (2beedf3e-1851-42f4-80f0-2f738bf4eb1d)
- Call ID: 2beedf3e-1851-42f4-80f0-2f738bf4eb1d
+  AddTriple (bc64b2a8-113c-4934-8ec4-ae857ceafecd)
+ Call ID: bc64b2a8-113c-4934-8ec4-ae857ceafecd
   Args:
-    relation: :hasBirthYear
-    source: MarieThereseOfWurttemberg
-    literal_type: xsd:integer
-    literal_value: 1934
-  AddLiteral (c24ab127-168c-4c1a-bb84-9fcdcaccbe27)
- Call ID: c24ab127-168c-4c1a-bb84-9fcdcaccbe27
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    relation: :isFatherOf
+    target: :Alexandra_of_Hanover_and_Cumberland
+  AddTriple (38a217d6-be03-48a6-8dfb-8eaac3bdeabd)
+ Call ID: 38a217d6-be03-48a6-8dfb-8eaac3bdeabd
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1984
-    source: HenriPhilippePierreMariedOrleans
-    literal_type: xsd:integer
-  AssignClass (4193d0c7-8562-4917-ae9b-2c2553110cfd)
- Call ID: 4193d0c7-8562-4917-ae9b-2c2553110cfd
+    source: :Thyra_of_Denmark
+    relation: :isMotherOf
+    target: :Alexandra_of_Hanover_and_Cumberland
+  AddTriple (7a6f0144-32fa-4a7c-aaa4-8e14053ba22d)
+ Call ID: 7a6f0144-32fa-4a7c-aaa4-8e14053ba22d
   Args:
+    target: :Christian_IX_of_Denmark
+    relation: :isDaughterOf
+    source: :Thyra_of_Denmark
+  AssignClass (c8f54eba-b303-4bcb-bb3d-f1b218e87b43)
+ Call ID: c8f54eba-b303-4bcb-bb3d-f1b218e87b43
+  Args:
+    source: :Louise_of_Hesse-Kassel
     type: :Woman
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
-  AssignClass (59f7e255-3422-474b-bd4d-19f5ea3218c7)
- Call ID: 59f7e255-3422-474b-bd4d-19f5ea3218c7
+  AssignClass (dd413a4a-0706-4eb4-afa1-c48984990d49)
+ Call ID: dd413a4a-0706-4eb4-afa1-c48984990d49
   Args:
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
+    source: :Louise_of_Hesse-Kassel
+    type: :Ancestor
+  AssignClass (b01ca053-cb70-4953-9eb7-376fadb6215a)
+ Call ID: b01ca053-cb70-4953-9eb7-376fadb6215a
+  Args:
+    source: :Louise_of_Hesse-Kassel
     type: :Person
-  AddLiteral (196c4e43-3be7-4576-a3c5-f56cfd7b2448)
- Call ID: 196c4e43-3be7-4576-a3c5-f56cfd7b2448
+  AddTriple (3f6fffe6-d341-451e-92d8-1f680aeb638e)
+ Call ID: 3f6fffe6-d341-451e-92d8-1f680aeb638e
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
-    literal_value: 1938
-  AddLiteral (5b207c12-1c77-4264-988c-1010f5ee7beb)
- Call ID: 5b207c12-1c77-4264-988c-1010f5ee7beb
+    source: :Louise_of_Hesse-Kassel
+    relation: :isMotherOf
+    target: :Thyra_of_Denmark
+  AssignClass (ed9b651e-8c97-484a-b013-a216638192db)
+ Call ID: ed9b651e-8c97-484a-b013-a216638192db
   Args:
-    relation: :hasDeathYear
-    literal_value: 2022
-    literal_type: xsd:integer
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
-  AssignClass (77434f11-baa6-4789-a3d8-fcd271ae5710)
- Call ID: 77434f11-baa6-4789-a3d8-fcd271ae5710
-  Args:
+    source: :Sigismund_of_Prussia
     type: :Man
-    source: LuisCousinoYSebire
-  AssignClass (1695f264-0e2f-4879-97fc-26e79693da39)
- Call ID: 1695f264-0e2f-4879-97fc-26e79693da39
+  AssignClass (99bba401-3e2e-4d82-a07f-dd406a00560d)
+ Call ID: 99bba401-3e2e-4d82-a07f-dd406a00560d
   Args:
+    source: :Sigismund_of_Prussia
+    type: :Ancestor
+  AssignClass (f2923696-2a15-4910-9fa2-c78b0f8f9ced)
+ Call ID: f2923696-2a15-4910-9fa2-c78b0f8f9ced
+  Args:
+    source: :Sigismund_of_Prussia
     type: :Person
-    source: LuisCousinoYSebire
-  AssignClass (c56c8df0-8bd7-4a85-8bfa-4d625251ca81)
- Call ID: c56c8df0-8bd7-4a85-8bfa-4d625251ca81
+  AddTriple (69e2cad6-d771-4e0b-8fbf-1e56c6982683)
+ Call ID: 69e2cad6-d771-4e0b-8fbf-1e56c6982683
   Args:
+    target: :Barbara_of_Prussia
+    relation: :isFatherOf
+    source: :Sigismund_of_Prussia
+  AssignClass (4837c8d1-ba18-473b-b86e-496772a2a658)
+ Call ID: 4837c8d1-ba18-473b-b86e-496772a2a658
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (67cbc7f8-4271-4c5c-9adc-431855536994)
+ Call ID: 67cbc7f8-4271-4c5c-9adc-431855536994
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine
+    type: :Ancestor
+  AssignClass (15e2574e-8ed5-4474-a2aa-cb2c6ca2622c)
+ Call ID: 15e2574e-8ed5-4474-a2aa-cb2c6ca2622c
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (2ad258ad-7ec7-4cb1-948a-03f4ea9df8ae)
+ Call ID: 2ad258ad-7ec7-4cb1-948a-03f4ea9df8ae
+  Args:
+    source: :Alice_Grand_Duchess_of_Hesse_and_by_Rhine
     type: :Woman
-    source: AntoniaMariaQuinonesDeLeonYBanuelos
-  AssignClass (3c7f41f0-0922-4832-ba3d-0de05a173143)
- Call ID: 3c7f41f0-0922-4832-ba3d-0de05a173143
+  AssignClass (3a6bc299-bd8a-47d7-aea3-4d0de56c5d1e)
+ Call ID: 3a6bc299-bd8a-47d7-aea3-4d0de56c5d1e
   Args:
-    source: AntoniaMariaQuinonesDeLeonYBanuelos
+    source: :Alice_Grand_Duchess_of_Hesse_and_by_Rhine
+    type: :Ancestor
+  AssignClass (9f48f738-7a90-40e1-87e1-a4b9e9779413)
+ Call ID: 9f48f738-7a90-40e1-87e1-a4b9e9779413
+  Args:
+    source: :Alice_Grand_Duchess_of_Hesse_and_by_Rhine
     type: :Person
-  AddTriple (5c45641d-85e6-47af-a4b5-28fb84c47ef7)
- Call ID: 5c45641d-85e6-47af-a4b5-28fb84c47ef7
+  AssignClass (933dd20d-8e26-42d9-a429-5992c05cdafe)
+ Call ID: 933dd20d-8e26-42d9-a429-5992c05cdafe
   Args:
-    target: LuisCousinoYSebire
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
-    relation: :hasFather
-  AddTriple (ca5d5cb5-014e-4c67-a334-fc7b129d9472)
- Call ID: ca5d5cb5-014e-4c67-a334-fc7b129d9472
-  Args:
-    source: MicaelaAnnaMariaCousinoYQuinonesDeLeon
-    target: AntoniaMariaQuinonesDeLeonYBanuelos
-    relation: :hasMother
-  AssignClass (5f4b1aa1-6ef0-47bd-8aa9-90153156596e)
- Call ID: 5f4b1aa1-6ef0-47bd-8aa9-90153156596e
-  Args:
-    source: JeanRobertBoeuf
-    type: :Man
-  AssignClass (39ae2959-6eed-410a-ba0a-017dc1672abb)
- Call ID: 39ae2959-6eed-410a-ba0a-017dc1672abb
-  Args:
-    source: JeanRobertBoeuf
-    type: :Person
-  AssignClass (26958c10-8aae-49bb-a032-5ecc687ce039)
- Call ID: 26958c10-8aae-49bb-a032-5ecc687ce039
-  Args:
-    source: MarieDOrleans
+    source: :Queen_Victoria
     type: :Woman
-  AssignClass (71dbe6ee-9fea-4a8c-bd08-2c8c7a26112f)
- Call ID: 71dbe6ee-9fea-4a8c-bd08-2c8c7a26112f
+  AssignClass (1c75928a-dbdf-4db7-9298-d9c15c05d2d0)
+ Call ID: 1c75928a-dbdf-4db7-9298-d9c15c05d2d0
   Args:
+    source: :Queen_Victoria
+    type: :Ancestor
+  AssignClass (c9107e3f-7feb-49ba-b663-5c4aa2e63740)
+ Call ID: c9107e3f-7feb-49ba-b663-5c4aa2e63740
+  Args:
+    source: :Queen_Victoria
     type: :Person
-    source: MarieDOrleans
-  AddTriple (fe95c0ae-2896-4981-8504-6560c99230bf)
- Call ID: fe95c0ae-2896-4981-8504-6560c99230bf
+  AddTriple (7f99bc55-d0da-4a5d-bd90-10f7b68abdf5)
+ Call ID: 7f99bc55-d0da-4a5d-bd90-10f7b68abdf5
   Args:
-    relation: :hasFather
-    target: HenriPhilippePierreMariedOrleans
-    source: MarieDOrleans
-  AddTriple (929ed9fd-ff6e-4ab3-b57b-a01c1d85f33d)
- Call ID: 929ed9fd-ff6e-4ab3-b57b-a01c1d85f33d
+    target: :Alice_Grand_Duchess_of_Hesse_and_by_Rhine
+    relation: :isMotherOf
+    source: :Queen_Victoria
+  Finish (b107cae9-c949-4c70-8fb8-00ac92e24656)
+ Call ID: b107cae9-c949-4c70-8fb8-00ac92e24656
   Args:
-    relation: :hasMother
-    source: MarieDOrleans
-    target: MarieThereseOfWurttemberg
-  AssignClass (338650fa-7cea-487c-ae52-539639164e17)
- Call ID: 338650fa-7cea-487c-ae52-539639164e17
-  Args:
-    type: :Man
-    source: PrinceGundakarOfLiechtenstein
-  AssignClass (48cde188-e975-463b-aa26-789dd83c8c82)
- Call ID: 48cde188-e975-463b-aa26-789dd83c8c82
-  Args:
-    type: :Person
-    source: PrinceGundakarOfLiechtenstein
-  AssignClass (e7e6f7ad-3f72-4e4b-9028-a5eb647618f3)
- Call ID: e7e6f7ad-3f72-4e4b-9028-a5eb647618f3
-  Args:
-    type: :Man
-    source: FrancoisDOrleans
-  AssignClass (2363b07c-0047-4787-bd6b-bf64db322bd2)
- Call ID: 2363b07c-0047-4787-bd6b-bf64db322bd2
-  Args:
-    type: :Person
-    source: FrancoisDOrleans
-  AssignClass (6a389371-d497-40d8-b783-62dc6ad143be)
- Call ID: 6a389371-d497-40d8-b783-62dc6ad143be
-  Args:
-    source: MichelDOrleans
-    type: :Man
-  AssignClass (6d4ccaa2-7c8d-4b1e-a699-babec7bc2332)
- Call ID: 6d4ccaa2-7c8d-4b1e-a699-babec7bc2332
-  Args:
-    type: :Person
-    source: MichelDOrleans
-  AssignClass (00b5fe17-2a1e-4ca6-b1de-95f96eb05361)
- Call ID: 00b5fe17-2a1e-4ca6-b1de-95f96eb05361
-  Args:
-    source: ThibautDOrleans
-    type: :Man
-  AssignClass (7be8095e-76de-4abb-8d1c-89bc92468ca2)
- Call ID: 7be8095e-76de-4abb-8d1c-89bc92468ca2
-  Args:
-    source: ThibautDOrleans
-    type: :Person
-  AssignClass (380f1cc1-dfbf-4b7c-a128-b1cfc402a4b7)
- Call ID: 380f1cc1-dfbf-4b7c-a128-b1cfc402a4b7
-  Args:
-    type: :Woman
-    source: DianeDOrleans
-  AssignClass (0e6529b6-bb77-46ec-a39e-71a34e7a1484)
- Call ID: 0e6529b6-bb77-46ec-a39e-71a34e7a1484
-  Args:
-    source: DianeDOrleans
-    type: :Person
-  AssignClass (a9296a84-f369-45c9-95a9-ccbe04b8e581)
- Call ID: a9296a84-f369-45c9-95a9-ccbe04b8e581
-  Args:
-    type: :Man
-    source: PrinceJacquesDOrleans
-  AssignClass (bbff5741-0ae7-4004-8f6d-48ada6324407)
- Call ID: bbff5741-0ae7-4004-8f6d-48ada6324407
-  Args:
-    type: :Person
-    source: PrinceJacquesDOrleans
-  AssignClass (cc52f7c2-5119-4b50-af8b-dfd1a8d3a8ee)
- Call ID: cc52f7c2-5119-4b50-af8b-dfd1a8d3a8ee
-  Args:
-    source: PrinceJeanDOrleans
-    type: :Man
-  AssignClass (19d9f63b-e642-482c-a888-23749df12229)
- Call ID: 19d9f63b-e642-482c-a888-23749df12229
-  Args:
-    source: PrinceJeanDOrleans
-    type: :Person
-  AssignClass (3024c9f7-e49c-481e-9822-b218004eb5db)
- Call ID: 3024c9f7-e49c-481e-9822-b218004eb5db
-  Args:
-    source: PrinceCharlesLouisDOrleans
-    type: :Man
-  AssignClass (c52e11ca-7b87-48e5-8cf3-5f709e23f5cc)
- Call ID: c52e11ca-7b87-48e5-8cf3-5f709e23f5cc
-  Args:
-    source: PrinceCharlesLouisDOrleans
-    type: :Person
-  AddLiteral (f24b7df9-ad79-49e7-abd8-8c4e1aac9363)
- Call ID: f24b7df9-ad79-49e7-abd8-8c4e1aac9363
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: PrinceCharlesLouisDOrleans
-    literal_value: 1972
-  AssignClass (51e1b179-4565-4dc6-ac4b-c3638ce5a585)
- Call ID: 51e1b179-4565-4dc6-ac4b-c3638ce5a585
-  Args:
-    type: :Man
-    source: PrinceFoulquesDOrleans
-  AssignClass (b53e296e-a197-4186-a2bb-cc9923c9cf8e)
- Call ID: b53e296e-a197-4186-a2bb-cc9923c9cf8e
-  Args:
-    source: PrinceFoulquesDOrleans
-    type: :Person
-  AddLiteral (499f8339-1d5e-4091-abf2-e46b4ae52041)
- Call ID: 499f8339-1d5e-4091-abf2-e46b4ae52041
-  Args:
-    relation: :hasBirthYear
-    source: PrinceFoulquesDOrleans
-    literal_type: xsd:integer
-    literal_value: 1974
-  AddTriple (8dfe3611-a508-48ff-8a48-967ec755d364)
- Call ID: 8dfe3611-a508-48ff-8a48-967ec755d364
-  Args:
-    target: PrinceJacquesDOrleans
-    source: PrinceCharlesLouisDOrleans
-    relation: :hasFather
-  AddTriple (e4202355-add9-4b08-9e80-689d04167d3f)
- Call ID: e4202355-add9-4b08-9e80-689d04167d3f
-  Args:
-    target: PrinceJacquesDOrleans
-    source: PrinceFoulquesDOrleans
-    relation: :hasFather
-  AddTriple (5fdfa318-9a05-4464-ad99-a0027b64408c)
- Call ID: 5fdfa318-9a05-4464-ad99-a0027b64408c
-  Args:
-    target: FrancoisDOrleans
-    source: HenriPhilippePierreMariedOrleans
-    relation: :hasBrother
-  AddTriple (ebcca979-35bc-458f-a826-5fe495ab32ab)
- Call ID: ebcca979-35bc-458f-a826-5fe495ab32ab
-  Args:
-    relation: :hasBrother
-    target: MichelDOrleans
-    source: HenriPhilippePierreMariedOrleans
-  AddTriple (d18edcb8-a08c-4505-9c74-9421b97a2b1a)
- Call ID: d18edcb8-a08c-4505-9c74-9421b97a2b1a
-  Args:
-    source: HenriPhilippePierreMariedOrleans
-    target: ThibautDOrleans
-    relation: :hasBrother
-  AddTriple (f59df0fd-bdb0-4bac-9ec6-563c023c3180)
- Call ID: f59df0fd-bdb0-4bac-9ec6-563c023c3180
-  Args:
-    source: HenriPhilippePierreMariedOrleans
-    target: DianeDOrleans
-    relation: :hasSister
-  AddTriple (28afa105-a7bc-429a-aab3-3aefe5ea8b1a)
- Call ID: 28afa105-a7bc-429a-aab3-3aefe5ea8b1a
-  Args:
-    relation: :hasBrother
-    source: HenriPhilippePierreMariedOrleans
-    target: PrinceJacquesDOrleans
-  AddTriple (8c8b2a35-958e-4af7-acbc-028019a301b3)
- Call ID: 8c8b2a35-958e-4af7-acbc-028019a301b3
-  Args:
-    relation: :hasSon
-    source: HenriPhilippePierreMariedOrleans
-    target: PrinceJeanDOrleans
-  ValidateShacl (f30a0f57-56c6-4d40-bf1f-2aaab7c4c3b8)
- Call ID: f30a0f57-56c6-4d40-bf1f-2aaab7c4c3b8
-  Args:
-  Finish (6dc68780-6c2e-418e-b44b-86dd4fd3229f)
- Call ID: 6dc68780-6c2e-418e-b44b-86dd4fd3229f
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -981,283 +1127,95 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:JeanRobertBoeuf a :Man,
+  data:Borwin_Duke_of_Mecklenburg a :Man,
           :Person .
 
-  data:MarieDOrleans a :Person,
+  data:Edwina_of_Mecklenburg a :Person,
           :Woman ;
-      :hasFather data:HenriPhilippePierreMariedOrleans ;
-      :hasMother data:MarieThereseOfWurttemberg .
+      :hasBirthYear 1960 ;
+      :isDaughterOf data:Barbara_of_Prussia,
+          data:Christian_Louis_of_Mecklenburg-Schwerin ;
+      :isSisterOf data:Donata_of_Mecklenburg .
 
-  data:MicaelaAnnaMariaCousinoYQuinonesDeLeon a :Person,
-          :Woman ;
-      :hasBirthYear 1938 ;
-      :hasDeathYear 2022 ;
-      :hasFather data:LuisCousinoYSebire ;
-      :hasMother data:AntoniaMariaQuinonesDeLeonYBanuelos .
-
-  data:PrinceCharlesLouisDOrleans a :Man,
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear 1972 ;
-      :hasFather data:PrinceJacquesDOrleans .
+      :isFatherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-  data:PrinceFoulquesDOrleans a :Man,
+  data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear 1974 ;
-      :hasFather data:PrinceJacquesDOrleans .
+      :isFatherOf data:Charlotte_of_Saxe-Altenburg .
 
-  data:PrinceGundakarOfLiechtenstein a :Man,
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+  data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasDeathYear 2001 ;
+      :isBrotherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+  data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine a :Ancestor,
+          :Man,
           :Person .
 
-  data:AntoniaMariaQuinonesDeLeonYBanuelos a :Person,
+  data:Louise_of_Hesse-Kassel a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Thyra_of_Denmark .
+
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine .
+
+  data:Sigismund_of_Prussia a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Barbara_of_Prussia .
+
+  data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
           :Woman .
 
-  data:DianeDOrleans a :Person,
-          :Woman .
-
-  data:FrancoisDOrleans a :Man,
-          :Person .
-
-  data:HenriCountOfParis a :Man,
-          :Person ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1999 .
-
-  data:HenriPhilippePierreMariedOrleans a :Man,
-          :Person ;
-      :hasBirthYear 1933 ;
-      :hasBrother data:FrancoisDOrleans,
-          data:MichelDOrleans,
-          data:PrinceJacquesDOrleans,
-          data:ThibautDOrleans ;
-      :hasDeathYear 2019 ;
-      :hasFather data:HenriCountOfParis ;
-      :hasMarriageYear 1984 ;
-      :hasMother data:PrincessIsabelleOfOrleansBraganza ;
-      :hasSister data:DianeDOrleans ;
-      :hasSon data:PrinceJeanDOrleans .
-
-  data:LuisCousinoYSebire a :Man,
-          :Person .
-
-  data:MarieThereseOfWurttemberg a :Person,
+  data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+          :Person,
           :Woman ;
-      :hasBirthYear 1934 .
+      :isMotherOf data:Barbara_of_Prussia .
 
-  data:MichelDOrleans a :Man,
+  data:Donata_of_Mecklenburg a :Person,
+          :Woman ;
+      :hasBirthYear 1956 ;
+      :isDaughterOf data:Barbara_of_Prussia,
+          data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+  data:Thyra_of_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :isDaughterOf data:Christian_IX_of_Denmark ;
+      :isMotherOf data:Alexandra_of_Hanover_and_Cumberland .
+
+  data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
+          :Person,
+          :Woman ;
+      :isDaughterOf data:Christian_IX_of_Denmark ;
+      :isMotherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+  data:Christian_IX_of_Denmark a :Ancestor,
+          :Man,
           :Person .
 
-  data:PrinceJeanDOrleans a :Man,
+  data:Barbara_of_Prussia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1920 ;
+      :hasDeathYear 1994 .
+
+  data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
           :Person .
-
-  data:PrincessIsabelleOfOrleansBraganza a :Person,
-          :Woman .
-
-  data:ThibautDOrleans a :Man,
-          :Person .
-
-  data:PrinceJacquesDOrleans a :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceFoulquesDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriCountOfParis', ':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceCharlesLouisDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrincessIsabelleOfOrleansBraganza', ':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceFoulquesDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriCountOfParis', ':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('LuisCousinoYSebire', ':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriPhilippePierreMariedOrleans', ':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceCharlesLouisDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrincessIsabelleOfOrleansBraganza', ':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('AntoniaMariaQuinonesDeLeonYBanuelos', ':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('MarieThereseOfWurttemberg', ':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceFoulquesDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriCountOfParis', ':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('LuisCousinoYSebire', ':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriPhilippePierreMariedOrleans', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for PrinceCharlesLouisDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrinceJacquesDOrleans', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for HenriPhilippePierreMariedOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('PrincessIsabelleOfOrleansBraganza', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('AntoniaMariaQuinonesDeLeonYBanuelos', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('MarieThereseOfWurttemberg', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('HenriPhilippePierreMariedOrleans', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value of 'hasFather' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('LuisCousinoYSebire', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MarieDOrleans is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('MarieThereseOfWurttemberg', ':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value of 'hasMother' for MicaelaAnnaMariaCousinoYQuinonesDeLeon is not an instance of the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('AntoniaMariaQuinonesDeLeonYBanuelos', ':Ancestor')
-
 
 
 
@@ -1269,181 +1227,18 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (0ff7a064-bfac-4aed-a1fe-aa958f62abf8)
- Call ID: 0ff7a064-bfac-4aed-a1fe-aa958f62abf8
+  ValidateShacl (8f2f5e74-00a4-4917-b5a2-199fb02274b7)
+ Call ID: 8f2f5e74-00a4-4917-b5a2-199fb02274b7
   Args:
-    type: :Ancestor
-    source: PrinceJacquesDOrleans
-  AssignClass (b422f2cd-218c-45ea-a2e7-f79c9e4d2124)
- Call ID: b422f2cd-218c-45ea-a2e7-f79c9e4d2124
-  Args:
-    type: :Ancestor
-    source: HenriCountOfParis
-  AssignClass (450249fb-c827-4b8f-a00d-bf8de016bac4)
- Call ID: 450249fb-c827-4b8f-a00d-bf8de016bac4
-  Args:
-    source: PrincessIsabelleOfOrleansBraganza
-    type: :Ancestor
-  AssignClass (9c89b561-3bb6-4179-ac42-a14e06464f91)
- Call ID: 9c89b561-3bb6-4179-ac42-a14e06464f91
-  Args:
-    source: LuisCousinoYSebire
-    type: :Ancestor
-  AssignClass (8cb535f0-e378-4811-9e7c-77c9eae854d2)
- Call ID: 8cb535f0-e378-4811-9e7c-77c9eae854d2
-  Args:
-    type: :Ancestor
-    source: HenriPhilippePierreMariedOrleans
-  AssignClass (0cd4c25e-7445-4fc0-aec2-1324ff89c57f)
- Call ID: 0cd4c25e-7445-4fc0-aec2-1324ff89c57f
-  Args:
-    source: AntoniaMariaQuinonesDeLeonYBanuelos
-    type: :Ancestor
-  AssignClass (cc6da816-ae0e-4c47-822f-daadadae8d7d)
- Call ID: cc6da816-ae0e-4c47-822f-daadadae8d7d
-  Args:
-    type: :Ancestor
-    source: MarieThereseOfWurttemberg
-  ValidateShacl (431dce2e-46a7-4e00-a030-328d58c42000)
- Call ID: 431dce2e-46a7-4e00-a030-328d58c42000
-  Args:
-  Finish (7b852dd1-1f22-4302-bc4d-9016aaf45bf9)
- Call ID: 7b852dd1-1f22-4302-bc4d-9016aaf45bf9
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:JeanRobertBoeuf a :Man,
-          :Person .
-
-  data:MarieDOrleans a :Person,
-          :Woman ;
-      :hasFather data:HenriPhilippePierreMariedOrleans ;
-      :hasMother data:MarieThereseOfWurttemberg .
-
-  data:MicaelaAnnaMariaCousinoYQuinonesDeLeon a :Person,
-          :Woman ;
-      :hasBirthYear 1938 ;
-      :hasDeathYear 2022 ;
-      :hasFather data:LuisCousinoYSebire ;
-      :hasMother data:AntoniaMariaQuinonesDeLeonYBanuelos .
-
-  data:PrinceCharlesLouisDOrleans a :Man,
-          :Person ;
-      :hasBirthYear 1972 ;
-      :hasFather data:PrinceJacquesDOrleans .
-
-  data:PrinceFoulquesDOrleans a :Man,
-          :Person ;
-      :hasBirthYear 1974 ;
-      :hasFather data:PrinceJacquesDOrleans .
-
-  data:PrinceGundakarOfLiechtenstein a :Man,
-          :Person .
-
-  data:AntoniaMariaQuinonesDeLeonYBanuelos a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:DianeDOrleans a :Person,
-          :Woman .
-
-  data:FrancoisDOrleans a :Man,
-          :Person .
-
-  data:HenriCountOfParis a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1999 .
-
-  data:HenriPhilippePierreMariedOrleans a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1933 ;
-      :hasBrother data:FrancoisDOrleans,
-          data:MichelDOrleans,
-          data:PrinceJacquesDOrleans,
-          data:ThibautDOrleans ;
-      :hasDeathYear 2019 ;
-      :hasFather data:HenriCountOfParis ;
-      :hasMarriageYear 1984 ;
-      :hasMother data:PrincessIsabelleOfOrleansBraganza ;
-      :hasSister data:DianeDOrleans ;
-      :hasSon data:PrinceJeanDOrleans .
-
-  data:LuisCousinoYSebire a :Ancestor,
-          :Man,
-          :Person .
-
-  data:MarieThereseOfWurttemberg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1934 .
-
-  data:MichelDOrleans a :Man,
-          :Person .
-
-  data:PrinceJeanDOrleans a :Man,
-          :Person .
-
-  data:PrincessIsabelleOfOrleansBraganza a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:ThibautDOrleans a :Man,
-          :Person .
-
-  data:PrinceJacquesDOrleans a :Ancestor,
-          :Man,
-          :Person .
-
-
 
 ================================= Tool Message =================================
 
 SHACL validation has not produced any violations.
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (0f9915be-bbbe-41f0-beed-6193595c6505)
- Call ID: 0f9915be-bbbe-41f0-beed-6193595c6505
-  Args:
-  Finish (e1edee44-4528-4354-8ffb-d85a076d37d9)
- Call ID: e1edee44-4528-4354-8ffb-d85a076d37d9
+  Finish (eb4eae0a-432d-4123-9663-a90c1b3e5d23)
+ Call ID: eb4eae0a-432d-4123-9663-a90c1b3e5d23
   Args:

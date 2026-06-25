@@ -1,0 +1,394 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_III a :Man ;
+    :hasBrother data:Alexander_III ;
+    :hasRelation data:Alexander_III ;
+    :isBloodrelationOf data:Alexander_III ;
+    :isBrotherOf data:Alexander_III ;
+    :isSiblingOf data:Alexander_III .
+
+data:Alexandra_Feodorovna a :Woman ;
+    :hasRelation data:Alexandra_Feodorovna ;
+    :hasSister data:Alexandra_Feodorovna ;
+    :isBloodrelationOf data:Alexandra_Feodorovna ;
+    :isSiblingOf data:Alexandra_Feodorovna ;
+    :isSisterOf data:Alexandra_Feodorovna .
+
+data:Alexei_Alexandrovich a :Man ;
+    :hasBrother data:Alexei_Alexandrovich ;
+    :hasRelation data:Alexei_Alexandrovich ;
+    :isBloodrelationOf data:Alexei_Alexandrovich ;
+    :isBrotherOf data:Alexei_Alexandrovich ;
+    :isSiblingOf data:Alexei_Alexandrovich .
+
+data:Ernest_Louis a :Man ;
+    :hasBrother data:Ernest_Louis ;
+    :hasRelation data:Ernest_Louis ;
+    :isBloodrelationOf data:Ernest_Louis ;
+    :isBrotherOf data:Ernest_Louis ;
+    :isSiblingOf data:Ernest_Louis .
+
+data:Maria_Feodorovna a :Woman ;
+    :hasRelation data:Maria_Feodorovna ;
+    :hasSister data:Maria_Feodorovna ;
+    :isBloodrelationOf data:Maria_Feodorovna ;
+    :isSiblingOf data:Maria_Feodorovna ;
+    :isSisterOf data:Maria_Feodorovna .
+
+data:Maria_Vladimirovna a :Woman ;
+    :hasRelation data:Maria_Vladimirovna ;
+    :hasSister data:Maria_Vladimirovna ;
+    :isBloodrelationOf data:Maria_Vladimirovna ;
+    :isSiblingOf data:Maria_Vladimirovna ;
+    :isSisterOf data:Maria_Vladimirovna .
+
+data:Michael_Alexandrovich a :Man ;
+    :hasBrother data:Michael_Alexandrovich ;
+    :hasRelation data:Michael_Alexandrovich ;
+    :isBloodrelationOf data:Michael_Alexandrovich ;
+    :isBrotherOf data:Michael_Alexandrovich ;
+    :isSiblingOf data:Michael_Alexandrovich .
+
+data:Nicholas_II a :Man ;
+    :hasBrother data:Nicholas_II ;
+    :hasRelation data:Nicholas_II ;
+    :isBloodrelationOf data:Nicholas_II ;
+    :isBrotherOf data:Nicholas_II ;
+    :isSiblingOf data:Nicholas_II .
+
+data:Paul_Alexandrovich a :Man ;
+    :hasBrother data:Paul_Alexandrovich ;
+    :hasRelation data:Paul_Alexandrovich ;
+    :isBloodrelationOf data:Paul_Alexandrovich ;
+    :isBrotherOf data:Paul_Alexandrovich ;
+    :isSiblingOf data:Paul_Alexandrovich .
+
+data:Xenia a :Woman ;
+    :hasRelation data:Xenia ;
+    :hasSister data:Xenia ;
+    :isBloodrelationOf data:Xenia ;
+    :isSiblingOf data:Xenia ;
+    :isSisterOf data:Xenia .
+
+data:Maria_Pavlovna a :Ancestor,
+        :Woman ;
+    :hasChild data:Kirill_Vladimirovich_Romanov ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Pavlovna ;
+    :hasSon data:Kirill_Vladimirovich_Romanov ;
+    :isAncestorOf data:Kirill_Vladimirovich_Romanov,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Kirill_Vladimirovich_Romanov ;
+    :isBloodrelationOf data:Maria_Pavlovna ;
+    :isMotherOf data:Kirill_Vladimirovich_Romanov ;
+    :isParentOf data:Kirill_Vladimirovich_Romanov ;
+    :isSiblingOf data:Maria_Pavlovna ;
+    :isSisterOf data:Maria_Pavlovna .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Queen_Victoria ;
+    :hasSon data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isAncestorOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isParentOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Alexander_brother_of_Kirill a :Man ;
+    :hasAncestor data:Alexander_II,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasParent data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isBrotherOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isChildOf data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isSonOf data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+
+data:Alfred_Duke_of_Saxe_Coburg_and_Gotha a :Ancestor,
+        :Man ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBrother data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasChild data:Victoria_Melita ;
+    :hasDaughter data:Victoria_Melita ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Queen_Victoria ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isBrotherOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isChildOf data:Queen_Victoria ;
+    :isFatherOf data:Victoria_Melita ;
+    :isParentOf data:Victoria_Melita ;
+    :isSiblingOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :isSonOf data:Queen_Victoria ;
+    :isUncleOf data:Victoria_Melita .
+
+data:Alexander_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Alexander_II ;
+    :hasChild data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :hasDaughter data:Maria_Alexandrovna_of_Russia ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Alexandrovich ;
+    :isAncestorOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_II ;
+    :isBrotherOf data:Alexander_II ;
+    :isFatherOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isParentOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isSiblingOf data:Alexander_II ;
+    :isUncleOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich .
+
+data:Maria_Alexandrovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alexander_II ;
+    :hasBrother data:Vladimir_Alexandrovich ;
+    :hasChild data:Victoria_Melita ;
+    :hasDaughter data:Victoria_Melita ;
+    :hasFather data:Alexander_II ;
+    :hasParent data:Alexander_II ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Alexandrovna_of_Russia ;
+    :isAncestorOf data:Victoria_Melita,
+        data:Vladimir_Kirillovich ;
+    :isAuntOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :isBloodrelationOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isChildOf data:Alexander_II ;
+    :isDaughterOf data:Alexander_II ;
+    :isMotherOf data:Victoria_Melita ;
+    :isParentOf data:Victoria_Melita ;
+    :isSiblingOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isSisterOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich .
+
+data:Vladimir_Kirillovich a :Man ;
+    :hasAncestor data:Alexander_II,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich ;
+    :hasBrother data:Vladimir_Kirillovich ;
+    :hasFather data:Kirill_Vladimirovich_Romanov ;
+    :hasMother data:Victoria_Melita ;
+    :hasParent data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Vladimir_Kirillovich ;
+    :isBrotherOf data:Vladimir_Kirillovich ;
+    :isChildOf data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita ;
+    :isSiblingOf data:Vladimir_Kirillovich ;
+    :isSonOf data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita .
+
+data:Victoria_Melita a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alexander_II,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Queen_Victoria ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasFather data:Alfred_Duke_of_Saxe_Coburg_and_Gotha ;
+    :hasMother data:Maria_Alexandrovna_of_Russia ;
+    :hasParent data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Maria_Alexandrovna_of_Russia ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Victoria_Melita ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Vladimir_Kirillovich ;
+    :isAuntOf data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Victoria_Melita ;
+    :isChildOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Maria_Alexandrovna_of_Russia ;
+    :isDaughterOf data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Maria_Alexandrovna_of_Russia ;
+    :isMotherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Victoria_Melita ;
+    :isSisterOf data:Victoria_Melita .
+
+data:Vladimir_Alexandrovich a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alexander_II ;
+    :hasBrother data:Vladimir_Alexandrovich ;
+    :hasChild data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :hasFather data:Alexander_II ;
+    :hasParent data:Alexander_II ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSister data:Maria_Alexandrovna_of_Russia ;
+    :hasSon data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isAncestorOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isBrotherOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isChildOf data:Alexander_II ;
+    :isFatherOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isParentOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isSiblingOf data:Maria_Alexandrovna_of_Russia,
+        data:Vladimir_Alexandrovich ;
+    :isSonOf data:Alexander_II ;
+    :isUncleOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Victoria_Melita .
+
+data:Kirill_Vladimirovich_Romanov a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alexander_II,
+        data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :hasChild data:Vladimir_Kirillovich ;
+    :hasDeathYear 1938 ;
+    :hasFather data:Vladimir_Alexandrovich ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasParent data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :hasRelation data:Alexander_II,
+        data:Alexander_brother_of_Kirill,
+        data:Alfred_Duke_of_Saxe_Coburg_and_Gotha,
+        data:Kirill_Vladimirovich_Romanov,
+        data:Maria_Alexandrovna_of_Russia,
+        data:Maria_Pavlovna,
+        data:Queen_Victoria,
+        data:Victoria_Melita,
+        data:Vladimir_Alexandrovich,
+        data:Vladimir_Kirillovich ;
+    :hasSon data:Vladimir_Kirillovich ;
+    :isAncestorOf data:Vladimir_Kirillovich ;
+    :isBloodrelationOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isBrotherOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isChildOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isFatherOf data:Vladimir_Kirillovich ;
+    :isParentOf data:Vladimir_Kirillovich ;
+    :isSiblingOf data:Alexander_brother_of_Kirill,
+        data:Kirill_Vladimirovich_Romanov ;
+    :isSonOf data:Maria_Pavlovna,
+        data:Vladimir_Alexandrovich ;
+    :isUncleOf data:Vladimir_Kirillovich .
+

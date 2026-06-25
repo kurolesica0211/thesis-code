@@ -85,28 +85,46 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix of Hohenlohe-Langenburg (German: Beatrix Alice Marie Melita Margarete Prinzessin zu Hohenlohe-Langenburg; 10 July 1936 – 15 November 1997) was a German princess from the House of Hohenlohe-Langenburg.
-She was a niece of Prince Philip, Duke of Edinburgh, and thus a first cousin of King Charles III.
+John Ulick Knatchbull, 7th Baron Brabourne, CBE (9 November 1924 – 23 September 2005), professionally known as John Brabourne, was a British peer, television producer and Oscar-nominated film producer.
+Married to the elder daughter of 1st Earl Mountbatten, Brabourne was a survivor of the bombing which killed his father-in-law, mother and son.
 Biography
 
-Beatrix was born on 10 July 1936 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
-The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to her parents' membership in the Nazi Party.
-Six years later, however, Beatrix and her family were seated in the royal box at  her aunt's coronation in Westminster Abbey.
-In January 1956, Beatrix and her cousin, Princess Christina of Hesse, moved to London into a flat arranged by their uncle, Prince Philip, in Dolphin Square.
-Beatrix took dressmaking classes at the Royal College of Art.
-While Princess Christina eventually settled in the United Kingdom, marrying Prince Andrew of Yugoslavia whom the princesses were close friends with during their stay, Beatrix returned to Germany that same year.
-In 1961, Beatrix became engaged to her first cousin, Maximilian, Hereditary Prince of Baden.
-Maximilian later married Archduchess Valerie of Austria (b. 1941) in 1966 and Beatrix never married.
-In her later years, she served as secretary to Margaret, Princess of Hesse and by Rhine, the sister-in-law of her aunt, Princess Cecilie.
-She lived in Langenburg, Germany, for most of her life.
-She continued to attend family events in Britain, such as the weddings of her cousins Prince Charles (later King Charles III) and Prince Andrew in 1981 and 1986, respectively.
-Beatrix died on 15 November 1997, aged 61, in the town where she was born.
+Brabourne was born in 1924, the second son of Michael Knatchbull, 5th Baron Brabourne, and his wife, Lady Doreen Browne.
+Marriage
+
+At the end of the war, Brabourne returned to England and settled in the family seat, Mersham in Kent.
+On 26 October 1946, at Romsey Abbey in Hampshire, at the age of 21, he married Patricia Mountbatten, elder daughter of Louis Mountbatten, 1st Viscount Mountbatten, later 1st
+Earl Mountbatten of Burma.
+Brabourne's best man at the wedding was Squadron Leader Charles Harris-St. John.
+Lady Brabourne was to inherit her father's peerages in due course.
+This would make Lord and Lady Brabourne among the few married couples to each hold peerages in their own right.
+Also, Lady Brabourne was related to the British royal family, and her aunt Louise Mountbatten was at that time the Crown Princess (later Queen) of Sweden.
+In February 1947, only months after the wedding, Brabourne's father-in-law was appointed Viceroy of India.
+In November the same year, Lady Brabourne's first cousin Philip, Duke of Edinburgh, wed Princess Elizabeth, future queen of the United Kingdom.
+Lord and Lady Brabourne had eight children, including Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), Lady Amanda Patricia Victoria Knatchbull (born 26 June 1957), and Nicholas Timothy Charles Knatchbull.
+Career and service
+
+In the late 1940s, shortly after leaving the army, Brabourne began working as an assistant production manager for certain television productions, mostly based on war-related themes.
+John Brabourne received two Academy Award nominations for Best Picture, as producer of Romeo and Juliet (1968) and A Passage to India (1984).
+In 1985, Brabourne was invested as a Fellow of the British Film Institute, an organisation he also served as a Governor.
+Brabourne served as a governor of various schools, including Norton Knatchbull School (founded by an ancestor c. 1630 AD) from 1947 to 2000; Wye College in Kent from 1955 to 2000, and Gordonstoun School from 1964 to 1994.
+IRA bombing
+
+On 27 August 1979, while the family was on holiday in Mullaghmore, County Sligo, Lord Brabourne's father-in-law, Earl Mountbatten of Burma, took a number of family members out lobstering on his motorboat, Shadow V, in Donegal Bay.
+Having planned to murder Mountbatten, the Irish Republican Army (IRA) placed a bomb inside the boat on the night of the 26th.
+Mountbatten and several members of the party were killed the next morning when the bomb was triggered by an IRA observer onshore who was armed with a radio detonator.
+The dead included Brabourne's 83-year-old mother, the Dowager Baroness Brabourne; one of his twin 14-year-old sons, Nicholas Knatchbull; and 15-year-old Paul Maxwell from County Fermanagh who had been hired for the summer as Mountbatten's boat boy.
+Brabourne, his wife Patricia, and their other twin son Timothy were severely injured, but survived the attack.
+Lord Brabourne died on 23 September 2005 at his home in Kent, aged 80.
+His wife Patricia, Countess Mountbatten of Burma, died in June 2017.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +140,9 @@ Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +157,23 @@ Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +191,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +273,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +296,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +316,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +326,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +366,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,171 +465,258 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bbe6d6c8-4535-4d62-8d7c-a9bab2a7f79a)
- Call ID: bbe6d6c8-4535-4d62-8d7c-a9bab2a7f79a
+  AssignClass (2ec873dc-e256-4b65-ba13-9f74f3daab80)
+ Call ID: 2ec873dc-e256-4b65-ba13-9f74f3daab80
   Args:
-    source: Beatrix_of_Hohenlohe-Langenburg
+    source: John_Ulick_Knatchbull
+    type: :Man
+  AssignClass (492ecc46-5b32-4e06-a790-e385682b2d46)
+ Call ID: 492ecc46-5b32-4e06-a790-e385682b2d46
+  Args:
     type: :Person
-  AssignClass (07ca5744-b9e8-44e4-b5b6-5d497ad10d50)
- Call ID: 07ca5744-b9e8-44e4-b5b6-5d497ad10d50
-  Args:
-    type: :Woman
-    source: Beatrix_of_Hohenlohe-Langenburg
-  AddLiteral (549b0320-ef91-42a6-ad0c-bcd48bd10431)
- Call ID: 549b0320-ef91-42a6-ad0c-bcd48bd10431
+    source: John_Ulick_Knatchbull
+  AddLiteral (28d63e36-1289-4673-b733-815e0812f5cc)
+ Call ID: 28d63e36-1289-4673-b733-815e0812f5cc
   Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Beatrix_of_Hohenlohe-Langenburg
-    literal_value: 1936
-  AddLiteral (80ba8b93-a670-46cf-aae2-bc46682bc3a3)
- Call ID: 80ba8b93-a670-46cf-aae2-bc46682bc3a3
+    source: John_Ulick_Knatchbull
+    literal_value: 1924
+  AddLiteral (f172b317-a106-47a8-bbae-a919c348b7a9)
+ Call ID: f172b317-a106-47a8-bbae-a919c348b7a9
   Args:
     literal_type: xsd:integer
-    literal_value: 1997
     relation: :hasDeathYear
-    source: Beatrix_of_Hohenlohe-Langenburg
-  AssignClass (4240a065-87d6-4694-bdeb-6aab59e227f2)
- Call ID: 4240a065-87d6-4694-bdeb-6aab59e227f2
+    source: John_Ulick_Knatchbull
+    literal_value: 2005
+  AddLiteral (4e9f9ce3-4547-450e-ab4f-cafa169eed47)
+ Call ID: 4e9f9ce3-4547-450e-ab4f-cafa169eed47
   Args:
-    type: :Person
-    source: Gottfried_of_Hohenlohe-Langenburg
-  AssignClass (b84cd2fd-0915-4aec-aadc-cb2e44fd691f)
- Call ID: b84cd2fd-0915-4aec-aadc-cb2e44fd691f
+    relation: :knownAs
+    literal_value: John Brabourne
+    source: John_Ulick_Knatchbull
+    literal_type: xsd:string
+  AssignClass (d0b3ac63-b2d6-45e6-b142-bfe496a131c3)
+ Call ID: d0b3ac63-b2d6-45e6-b142-bfe496a131c3
   Args:
-    source: Gottfried_of_Hohenlohe-Langenburg
+    source: Michael_Knatchbull
     type: :Man
-  AssignClass (260b9679-280e-4ded-b4e3-78a2eee564e0)
- Call ID: 260b9679-280e-4ded-b4e3-78a2eee564e0
+  AssignClass (0ab37852-5ec7-4e0e-9151-46e0c62fd9ca)
+ Call ID: 0ab37852-5ec7-4e0e-9151-46e0c62fd9ca
+  Args:
+    source: Michael_Knatchbull
+    type: :Person
+  AssignClass (836d56e8-1e7f-403e-b4fc-9f1442bc957a)
+ Call ID: 836d56e8-1e7f-403e-b4fc-9f1442bc957a
+  Args:
+    source: Lady_Doreen_Browne
+    type: :Woman
+  AssignClass (280cf953-10d4-4662-b9a1-e6ecddfd6a45)
+ Call ID: 280cf953-10d4-4662-b9a1-e6ecddfd6a45
   Args:
     type: :Person
-    source: Margarita_of_Greece_and_Denmark
-  AssignClass (4f16cce3-4e2e-4dd3-bd9f-a9ba83455bcc)
- Call ID: 4f16cce3-4e2e-4dd3-bd9f-a9ba83455bcc
+    source: Lady_Doreen_Browne
+  AddTriple (e982ac64-2828-4f94-94f1-2f70b2e76e5a)
+ Call ID: e982ac64-2828-4f94-94f1-2f70b2e76e5a
   Args:
-    source: Margarita_of_Greece_and_Denmark
-    type: :Woman
-  AddTriple (48c69d35-44ff-4523-ae42-4d85029721bd)
- Call ID: 48c69d35-44ff-4523-ae42-4d85029721bd
-  Args:
-    source: Beatrix_of_Hohenlohe-Langenburg
+    source: John_Ulick_Knatchbull
+    target: Michael_Knatchbull
     relation: :hasFather
-    target: Gottfried_of_Hohenlohe-Langenburg
-  AddTriple (59c02f6c-64b7-49c7-a56e-75528377c4e7)
- Call ID: 59c02f6c-64b7-49c7-a56e-75528377c4e7
+  AddTriple (589138df-b14b-40f0-9c77-9bb62271fa5a)
+ Call ID: 589138df-b14b-40f0-9c77-9bb62271fa5a
   Args:
-    source: Beatrix_of_Hohenlohe-Langenburg
+    source: John_Ulick_Knatchbull
+    target: Lady_Doreen_Browne
     relation: :hasMother
-    target: Margarita_of_Greece_and_Denmark
-  AssignClass (58a333cd-f6c9-4aee-8e44-3aff51bb69ba)
- Call ID: 58a333cd-f6c9-4aee-8e44-3aff51bb69ba
+  AssignClass (8361ad5c-8871-4c25-a0d1-ad0a20f0501d)
+ Call ID: 8361ad5c-8871-4c25-a0d1-ad0a20f0501d
   Args:
-    source: Prince_Philip
+    source: Patricia_Mountbatten
+    type: :Woman
+  AssignClass (9f27ae34-b99f-46a2-9fb0-f2f8e648e5af)
+ Call ID: 9f27ae34-b99f-46a2-9fb0-f2f8e648e5af
+  Args:
+    source: Patricia_Mountbatten
     type: :Person
-  AssignClass (0a3997a8-664c-4488-ab39-252975974cf1)
- Call ID: 0a3997a8-664c-4488-ab39-252975974cf1
+  AddLiteral (398d8c94-ef3a-40d9-b300-c578c0813783)
+ Call ID: 398d8c94-ef3a-40d9-b300-c578c0813783
   Args:
-    source: Prince_Philip
+    literal_type: xsd:integer
+    source: John_Ulick_Knatchbull
+    literal_value: 1946
+    relation: :hasMarriageYear
+  AddTriple (8a0df723-515e-442f-963f-bd1d3efa4d15)
+ Call ID: 8a0df723-515e-442f-963f-bd1d3efa4d15
+  Args:
+    source: John_Ulick_Knatchbull
+    relation: :hasRelation
+    target: Patricia_Mountbatten
+  AssignClass (bbfd997a-5f58-456e-b7bc-08b433f97f32)
+ Call ID: bbfd997a-5f58-456e-b7bc-08b433f97f32
+  Args:
+    source: Louis_Mountbatten
     type: :Man
-  AddTriple (50bd3a4a-9268-4b97-ad81-038181536faa)
- Call ID: 50bd3a4a-9268-4b97-ad81-038181536faa
+  AssignClass (5d196474-bfcb-4ae7-9548-4a7ccc1dc2d8)
+ Call ID: 5d196474-bfcb-4ae7-9548-4a7ccc1dc2d8
   Args:
-    target: Prince_Philip
-    source: Margarita_of_Greece_and_Denmark
-    relation: :isSisterOf
-  AssignClass (2a5cd41a-446e-4b42-819d-f18a52132a1f)
- Call ID: 2a5cd41a-446e-4b42-819d-f18a52132a1f
-  Args:
+    source: Louis_Mountbatten
     type: :Person
-    source: King_Charles_III
-  AssignClass (5df9d6ee-6fda-40c4-baa7-ca8b7933f412)
- Call ID: 5df9d6ee-6fda-40c4-baa7-ca8b7933f412
+  AddTriple (9f4194cd-f8e7-4fe1-98c3-c7157b8a0ba9)
+ Call ID: 9f4194cd-f8e7-4fe1-98c3-c7157b8a0ba9
   Args:
-    type: :Man
-    source: King_Charles_III
-  AssignClass (d7db73ee-ee37-4423-9cea-19f246a12eec)
- Call ID: d7db73ee-ee37-4423-9cea-19f246a12eec
-  Args:
-    source: Christina_of_Hesse
-    type: :Person
-  AssignClass (c2a36c81-0bc7-44bd-ae5b-51e64a871473)
- Call ID: c2a36c81-0bc7-44bd-ae5b-51e64a871473
-  Args:
-    source: Christina_of_Hesse
-    type: :Woman
-  AssignClass (2f3c7c5f-f872-43ed-87ab-b64364c40b18)
- Call ID: 2f3c7c5f-f872-43ed-87ab-b64364c40b18
-  Args:
-    type: :Person
-    source: Maximilian_of_Baden
-  AssignClass (d92b0154-d817-46d3-88d0-bf6f41fe352a)
- Call ID: d92b0154-d817-46d3-88d0-bf6f41fe352a
-  Args:
-    source: Maximilian_of_Baden
-    type: :Man
-  AssignClass (c83f4c08-935e-432d-91a4-7632ac2f56a8)
- Call ID: c83f4c08-935e-432d-91a4-7632ac2f56a8
-  Args:
-    source: Valerie_of_Austria
-    type: :Person
-  AssignClass (2ff4b048-19af-4d20-ab34-490c69b0fa0b)
- Call ID: 2ff4b048-19af-4d20-ab34-490c69b0fa0b
-  Args:
-    type: :Woman
-    source: Valerie_of_Austria
-  AssignClass (b55a65ae-5dd0-47c2-8810-a0ff0b6d73fc)
- Call ID: b55a65ae-5dd0-47c2-8810-a0ff0b6d73fc
-  Args:
-    type: :Person
-    source: Margaret_of_Hesse_and_by_Rhine
-  AssignClass (75e93642-1975-4c2b-a374-b87e6d49e894)
- Call ID: 75e93642-1975-4c2b-a374-b87e6d49e894
-  Args:
-    type: :Woman
-    source: Margaret_of_Hesse_and_by_Rhine
-  AssignClass (5e400ef2-b960-42ee-b0f0-8983993bc69a)
- Call ID: 5e400ef2-b960-42ee-b0f0-8983993bc69a
-  Args:
-    source: Cecilie_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (ddf60cc0-16aa-4e05-805d-1a0926f17173)
- Call ID: ddf60cc0-16aa-4e05-805d-1a0926f17173
-  Args:
-    type: :Woman
-    source: Cecilie_of_Greece_and_Denmark
-  AssignClass (db916b97-8865-4a66-9124-321f98394277)
- Call ID: db916b97-8865-4a66-9124-321f98394277
-  Args:
-    source: Andrew_of_Yugoslavia
-    type: :Person
-  AssignClass (55f153ec-3c5c-4046-8119-e096cda27472)
- Call ID: 55f153ec-3c5c-4046-8119-e096cda27472
+    target: Louis_Mountbatten
+    relation: :hasFather
+    source: Patricia_Mountbatten
+  AssignClass (379f8061-aa68-42b8-b6e4-61d07ad8c1fd)
+ Call ID: 379f8061-aa68-42b8-b6e4-61d07ad8c1fd
   Args:
     type: :Man
-    source: Andrew_of_Yugoslavia
-  AssignClass (241319c1-12b9-40d9-bda1-5f28a7c25afb)
- Call ID: 241319c1-12b9-40d9-bda1-5f28a7c25afb
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (c8fce027-571f-4e46-b0fa-232ddff3363a)
+ Call ID: c8fce027-571f-4e46-b0fa-232ddff3363a
   Args:
     type: :Person
-    source: Prince_Andrew_UK
-  AssignClass (12903326-c783-429d-95ac-3fcc88128b9a)
- Call ID: 12903326-c783-429d-95ac-3fcc88128b9a
+    source: Norton_Louis_Philip_Knatchbull
+  AddLiteral (15c88d8e-27ab-40ff-be3f-1d655d6403bc)
+ Call ID: 15c88d8e-27ab-40ff-be3f-1d655d6403bc
   Args:
-    source: Prince_Andrew_UK
-    type: :Man
-  AssignClass (c6af20b3-3862-45e8-8786-f04d8c445fb8)
- Call ID: c6af20b3-3862-45e8-8786-f04d8c445fb8
+    literal_type: xsd:integer
+    literal_value: 1947
+    source: Norton_Louis_Philip_Knatchbull
+    relation: :hasBirthYear
+  AddTriple (27281f74-8253-426f-b2c8-7cda31706619)
+ Call ID: 27281f74-8253-426f-b2c8-7cda31706619
   Args:
-    type: :Person
-    source: Elizabeth_II
-  AssignClass (281a9e63-fa49-4e41-bc28-b50f8f394882)
- Call ID: 281a9e63-fa49-4e41-bc28-b50f8f394882
+    relation: :hasFather
+    target: John_Ulick_Knatchbull
+    source: Norton_Louis_Philip_Knatchbull
+  AddTriple (6c000dbd-3da7-46bf-9430-355d45c5f5b5)
+ Call ID: 6c000dbd-3da7-46bf-9430-355d45c5f5b5
   Args:
-    source: Elizabeth_II
+    relation: :hasMother
+    target: Patricia_Mountbatten
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (b15ff5af-4398-4f00-874e-f1f1ae21f2eb)
+ Call ID: b15ff5af-4398-4f00-874e-f1f1ae21f2eb
+  Args:
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
     type: :Woman
-  Finish (8d628873-2be0-45a6-9058-552ea1b34f7e)
- Call ID: 8d628873-2be0-45a6-9058-552ea1b34f7e
+  AssignClass (f796d717-93a7-410a-9d50-00b377f98aa9)
+ Call ID: f796d717-93a7-410a-9d50-00b377f98aa9
   Args:
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+    type: :Person
+  AddLiteral (66ada203-14f9-42ce-b368-4efb4ef5cf60)
+ Call ID: 66ada203-14f9-42ce-b368-4efb4ef5cf60
+  Args:
+    literal_type: xsd:integer
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+    literal_value: 1957
+    relation: :hasBirthYear
+  AddTriple (3413b89c-af1b-4ac5-8106-8962491f5062)
+ Call ID: 3413b89c-af1b-4ac5-8106-8962491f5062
+  Args:
+    relation: :hasFather
+    target: John_Ulick_Knatchbull
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+  AddTriple (babb8b85-5989-49c3-b27e-ddc73a0079e7)
+ Call ID: babb8b85-5989-49c3-b27e-ddc73a0079e7
+  Args:
+    target: Patricia_Mountbatten
+    relation: :hasMother
+    source: Lady_Amanda_Patricia_Victoria_Knatchbull
+  AssignClass (77a4d9d1-f43d-47e0-9879-90593c51481b)
+ Call ID: 77a4d9d1-f43d-47e0-9879-90593c51481b
+  Args:
+    type: :Man
+    source: Nicholas_Timothy_Charles_Knatchbull
+  AssignClass (c111c337-c326-48fd-b705-b8c1c48dc9d8)
+ Call ID: c111c337-c326-48fd-b705-b8c1c48dc9d8
+  Args:
+    source: Nicholas_Timothy_Charles_Knatchbull
+    type: :Person
+  AddTriple (07bd458c-9fc5-4983-95e9-ce57d09f3942)
+ Call ID: 07bd458c-9fc5-4983-95e9-ce57d09f3942
+  Args:
+    target: John_Ulick_Knatchbull
+    relation: :hasFather
+    source: Nicholas_Timothy_Charles_Knatchbull
+  AddTriple (dada28bb-45a1-4786-942f-e9c1ed2072bc)
+ Call ID: dada28bb-45a1-4786-942f-e9c1ed2072bc
+  Args:
+    target: Patricia_Mountbatten
+    relation: :hasMother
+    source: Nicholas_Timothy_Charles_Knatchbull
+  AssignClass (306eee6f-d462-41ce-97c5-65311a547364)
+ Call ID: 306eee6f-d462-41ce-97c5-65311a547364
+  Args:
+    type: :Man
+    source: Timothy_Knatchbull
+  AssignClass (8f81165b-60ed-4e5d-a8b6-87498f8e229b)
+ Call ID: 8f81165b-60ed-4e5d-a8b6-87498f8e229b
+  Args:
+    source: Timothy_Knatchbull
+    type: :Person
+  AddTriple (e9bab25d-2f82-400c-a8b2-ffc194a8051c)
+ Call ID: e9bab25d-2f82-400c-a8b2-ffc194a8051c
+  Args:
+    target: John_Ulick_Knatchbull
+    relation: :hasFather
+    source: Timothy_Knatchbull
+  AddTriple (c613007a-f103-4693-b4ba-4aa8a2ff2067)
+ Call ID: c613007a-f103-4693-b4ba-4aa8a2ff2067
+  Args:
+    source: Timothy_Knatchbull
+    relation: :hasMother
+    target: Patricia_Mountbatten
+  AssignClass (007ccabf-eb0d-4451-9a0b-ae9095ee1f6f)
+ Call ID: 007ccabf-eb0d-4451-9a0b-ae9095ee1f6f
+  Args:
+    type: :Woman
+    source: Louise_Mountbatten
+  AssignClass (42ef96fc-7aea-4ebf-8f8e-e4f5ccd3afaa)
+ Call ID: 42ef96fc-7aea-4ebf-8f8e-e4f5ccd3afaa
+  Args:
+    type: :Person
+    source: Louise_Mountbatten
+  AddTriple (a560a174-4108-4038-a15f-e45f18754df5)
+ Call ID: a560a174-4108-4038-a15f-e45f18754df5
+  Args:
+    source: Louise_Mountbatten
+    target: Patricia_Mountbatten
+    relation: :isAuntOf
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -650,51 +845,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_of_Yugoslavia a :Man,
-          :Person .
-
-  data:Beatrix_of_Hohenlohe-Langenburg a :Person,
+  data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
           :Woman ;
-      :hasBirthYear 1936 ;
-      :hasDeathYear 1997 ;
-      :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
-      :hasMother data:Margarita_of_Greece_and_Denmark .
+      :hasBirthYear 1957 ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
 
-  data:Cecilie_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Christina_of_Hesse a :Person,
-          :Woman .
-
-  data:Elizabeth_II a :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
-          :Person .
-
-  data:Margaret_of_Hesse_and_by_Rhine a :Person,
-          :Woman .
-
-  data:Maximilian_of_Baden a :Man,
-          :Person .
-
-  data:Prince_Andrew_UK a :Man,
-          :Person .
-
-  data:Valerie_of_Austria a :Person,
-          :Woman .
-
-  data:Gottfried_of_Hohenlohe-Langenburg a :Man,
-          :Person .
-
-  data:Margarita_of_Greece_and_Denmark a :Person,
+  data:Louise_Mountbatten a :Person,
           :Woman ;
-      :isSisterOf data:Prince_Philip .
+      :isAuntOf data:Patricia_Mountbatten .
 
-  data:Prince_Philip a :Man,
+  data:Nicholas_Timothy_Charles_Knatchbull a :Man,
+          :Person ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Norton_Louis_Philip_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 1947 ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Timothy_Knatchbull a :Man,
+          :Person ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Lady_Doreen_Browne a :Person,
+          :Woman .
+
+  data:Louis_Mountbatten a :Man,
           :Person .
 
+  data:Michael_Knatchbull a :Man,
+          :Person .
 
+  data:John_Ulick_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2005 ;
+      :hasFather data:Michael_Knatchbull ;
+      :hasMarriageYear 1946 ;
+      :hasMother data:Lady_Doreen_Browne ;
+      :hasRelation data:Patricia_Mountbatten ;
+      :knownAs "John Brabourne"^^xsd:string .
+
+  data:Patricia_Mountbatten a :Person,
+          :Woman ;
+      :hasFather data:Louis_Mountbatten .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (96d207d4-23de-478b-aada-5dd5eb8886e1)
+ Call ID: 96d207d4-23de-478b-aada-5dd5eb8886e1
+  Args:
 
 ================================= Tool Message =================================
 
@@ -704,62 +912,278 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5f806ab1-d5c7-4f23-a3cd-576e7f1b5785)
- Call ID: 5f806ab1-d5c7-4f23-a3cd-576e7f1b5785
+  ValidateShacl (c072531a-6c27-4b64-9342-0ba8951bbee8)
+ Call ID: c072531a-6c27-4b64-9342-0ba8951bbee8
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:33
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Gottfried_of_Hohenlohe-Langenburg, identified as the father of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person Michael_Knatchbull, identified as the father of John_Ulick_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gottfried_of_Hohenlohe-Langenburg, :Ancestor)
+      AssignClass(Michael_Knatchbull, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Margarita_of_Greece_and_Denmark, identified as the mother of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person John_Ulick_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margarita_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Gottfried_of_Hohenlohe-Langenburg, identified as the father of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person John_Ulick_Knatchbull, identified as the father of Timothy_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gottfried_of_Hohenlohe-Langenburg, :Ancestor)
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Margarita_of_Greece_and_Denmark, identified as the mother of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person John_Ulick_Knatchbull, identified as the father of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margarita_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Gottfried_of_Hohenlohe-Langenburg, identified as the father of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person Lady_Doreen_Browne, identified as the mother of John_Ulick_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gottfried_of_Hohenlohe-Langenburg, :Ancestor)
+      AssignClass(Lady_Doreen_Browne, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Margarita_of_Greece_and_Denmark, identified as the mother of Beatrix_of_Hohenlohe-Langenburg, is missing the required :Ancestor class assignment.
+      The person Patricia_Mountbatten, identified as the mother of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Margarita_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Timothy_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Michael_Knatchbull, identified as the father of John_Ulick_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Michael_Knatchbull, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Timothy_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Mountbatten, identified as the father of Patricia_Mountbatten, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Lady_Doreen_Browne, identified as the mother of John_Ulick_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Doreen_Browne, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Timothy_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Michael_Knatchbull, identified as the father of John_Ulick_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Michael_Knatchbull, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Timothy_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Mountbatten, identified as the father of Patricia_Mountbatten, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Lady_Doreen_Browne, identified as the mother of John_Ulick_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Doreen_Browne, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Nicholas_Timothy_Charles_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Norton_Louis_Philip_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Timothy_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Louis_Mountbatten, identified as the father of Patricia_Mountbatten, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_Mountbatten, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person John_Ulick_Knatchbull, identified as the father of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Ulick_Knatchbull, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Patricia_Mountbatten, identified as the mother of Lady_Amanda_Patricia_Victoria_Knatchbull, is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Patricia_Mountbatten, :Ancestor)
 
 
 
@@ -768,19 +1192,46 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bf3e1000-0636-466c-bfba-b5994a8dc77d)
- Call ID: bf3e1000-0636-466c-bfba-b5994a8dc77d
+  AssignClass (9b771139-bbeb-43e2-8b73-aa5744fef9fb)
+ Call ID: 9b771139-bbeb-43e2-8b73-aa5744fef9fb
+  Args:
+    source: Michael_Knatchbull
+    type: :Ancestor
+  AssignClass (ba5e71b3-886e-4a90-b521-75ba123bfb8d)
+ Call ID: ba5e71b3-886e-4a90-b521-75ba123bfb8d
+  Args:
+    source: John_Ulick_Knatchbull
+    type: :Ancestor
+  AssignClass (53a3179e-2960-48d4-adc7-2eda9814ca57)
+ Call ID: 53a3179e-2960-48d4-adc7-2eda9814ca57
+  Args:
+    source: Lady_Doreen_Browne
+    type: :Ancestor
+  AssignClass (8e69927a-6a1c-4612-bbd1-7d59db47cbdf)
+ Call ID: 8e69927a-6a1c-4612-bbd1-7d59db47cbdf
+  Args:
+    source: Patricia_Mountbatten
+    type: :Ancestor
+  AssignClass (9a9563e6-f696-4354-83d6-4267c123aee0)
+ Call ID: 9a9563e6-f696-4354-83d6-4267c123aee0
   Args:
     type: :Ancestor
-    source: Gottfried_of_Hohenlohe-Langenburg
-  AssignClass (31dc02b1-679f-4482-82f9-9f103cfe9e7a)
- Call ID: 31dc02b1-679f-4482-82f9-9f103cfe9e7a
+    source: Louis_Mountbatten
+  ValidateShacl (e48996dd-246e-4037-9759-04f8faa661ee)
+ Call ID: e48996dd-246e-4037-9759-04f8faa661ee
   Args:
-    type: :Ancestor
-    source: Margarita_of_Greece_and_Denmark
-  ValidateShacl (cde6ac0f-0d7f-44c8-bbd3-fcb0b3bc3698)
- Call ID: cde6ac0f-0d7f-44c8-bbd3-fcb0b3bc3698
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -793,51 +1244,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_of_Yugoslavia a :Man,
-          :Person .
-
-  data:Beatrix_of_Hohenlohe-Langenburg a :Person,
+  data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
           :Woman ;
-      :hasBirthYear 1936 ;
-      :hasDeathYear 1997 ;
-      :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
-      :hasMother data:Margarita_of_Greece_and_Denmark .
+      :hasBirthYear 1957 ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
 
-  data:Cecilie_of_Greece_and_Denmark a :Person,
+  data:Louise_Mountbatten a :Person,
+          :Woman ;
+      :isAuntOf data:Patricia_Mountbatten .
+
+  data:Nicholas_Timothy_Charles_Knatchbull a :Man,
+          :Person ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Norton_Louis_Philip_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 1947 ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Timothy_Knatchbull a :Man,
+          :Person ;
+      :hasFather data:John_Ulick_Knatchbull ;
+      :hasMother data:Patricia_Mountbatten .
+
+  data:Lady_Doreen_Browne a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Christina_of_Hesse a :Person,
-          :Woman .
-
-  data:Elizabeth_II a :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
-          :Person .
-
-  data:Margaret_of_Hesse_and_by_Rhine a :Person,
-          :Woman .
-
-  data:Maximilian_of_Baden a :Man,
-          :Person .
-
-  data:Prince_Andrew_UK a :Man,
-          :Person .
-
-  data:Valerie_of_Austria a :Person,
-          :Woman .
-
-  data:Gottfried_of_Hohenlohe-Langenburg a :Ancestor,
+  data:Louis_Mountbatten a :Ancestor,
           :Man,
           :Person .
 
-  data:Margarita_of_Greece_and_Denmark a :Ancestor,
+  data:Michael_Knatchbull a :Ancestor,
+          :Man,
+          :Person .
+
+  data:John_Ulick_Knatchbull a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2005 ;
+      :hasFather data:Michael_Knatchbull ;
+      :hasMarriageYear 1946 ;
+      :hasMother data:Lady_Doreen_Browne ;
+      :hasRelation data:Patricia_Mountbatten ;
+      :knownAs "John Brabourne"^^xsd:string .
+
+  data:Patricia_Mountbatten a :Ancestor,
           :Person,
           :Woman ;
-      :isSisterOf data:Prince_Philip .
-
-  data:Prince_Philip a :Man,
-          :Person .
+      :hasFather data:Louis_Mountbatten .
 
 
 
@@ -849,6 +1308,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (cd71d9e2-7467-48fb-a995-af1d1d07d14e)
- Call ID: cd71d9e2-7467-48fb-a995-af1d1d07d14e
+  Finish (dc272b95-d588-4c7a-ab25-38377eee27ed)
+ Call ID: dc272b95-d588-4c7a-ab25-38377eee27ed
   Args:

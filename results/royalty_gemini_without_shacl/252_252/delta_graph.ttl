@@ -2,18 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatrix a :Woman .
+data:Michael_Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
+    :hasBirthYear 1957 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMarriageYear 1984,
+        2005,
+        2012 ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter .
 
-data:ClausCasimir a :Man ;
-    :hasBirthYear 2004 ;
-    :hasFather data:Constantijn ;
-    :hasMother data:Laurentien .
+data:Damaris_Stuart-William a :Person,
+        :Woman .
 
-data:Margriet a :Woman .
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasFather data:Michael_Bowes-Lyon_grandfather .
 
-data:PieterVanVollenhoven a :Man .
+data:Isobel_Charlotte_Weatherall a :Person,
+        :Woman ;
+    :isSiblingOf data:Percy_Weatherall .
 
-data:Constantijn a :Man .
+data:Karen_Baxter a :Person,
+        :Woman .
 
-data:Laurentien a :Woman .
+data:Mary_Pamela_McCorquodale a :Person,
+        :Woman .
+
+data:Michael_Bowes-Lyon_grandfather a :Man,
+        :Person .
+
+data:Percy_Weatherall a :Man,
+        :Person .
 

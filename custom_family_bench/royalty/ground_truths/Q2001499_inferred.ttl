@@ -1,0 +1,156 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Paul-Annick_Weiller a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul-Annick Weiller"^^xsd:string ;
+    data:posIndicesFull "858:876"^^xsd:string ;
+    data:wdtLink wdt:Q75393705 ;
+    :hasBrother data:Paul-Annick_Weiller ;
+    :hasChild data:Princess_Sibilla_of_Luxembourg ;
+    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
+    :hasRelation data:Paul-Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Paul-Annick_Weiller ;
+    :isBrotherOf data:Paul-Annick_Weiller ;
+    :isFatherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isParentOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSiblingOf data:Paul-Annick_Weiller ;
+    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+
+data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi"^^xsd:string ;
+    data:posIndicesFull "1006:1055"^^xsd:string ;
+    data:posIndicesPart "1400:1406"^^xsd:string,
+        "1520:1526"^^xsd:string,
+        "1599:1605"^^xsd:string ;
+    data:wdtLink wdt:Q4716439 ;
+    :alsoKnownAs "Alessandro Torlonia, 5th Principe di Civitella-Cessi"^^xsd:string ;
+    :hasBrother data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
+    :hasChild data:Olimpia_Torlonia ;
+    :hasDaughter data:Olimpia_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
+    :isBrotherOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
+    :isFatherOf data:Olimpia_Torlonia ;
+    :isParentOf data:Olimpia_Torlonia ;
+    :isSiblingOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
+    :isUncleOf data:Olimpia_Torlonia .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta Beatriz of Spain"^^xsd:string ;
+    data:posIndicesFull "1060:1084"^^xsd:string ;
+    data:wdtLink wdt:Q269493 ;
+    :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi"^^xsd:string,
+        "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain"^^xsd:string ;
+    :hasChild data:Olimpia_Torlonia ;
+    :hasDaughter data:Olimpia_Torlonia ;
+    :hasRelation data:Infanta_Beatriz_of_Spain,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :isAncestorOf data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :isAuntOf data:Olimpia_Torlonia ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Olimpia_Torlonia ;
+    :isParentOf data:Olimpia_Torlonia ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+
+data:Princess_Sibilla_of_Luxembourg a :Person,
+        :Woman ;
+    rdfs:label "Princess Sibilla of Luxembourg"^^xsd:string ;
+    data:posIndicesFull "1300:1307"^^xsd:string,
+        "606:613"^^xsd:string,
+        "714:721"^^xsd:string,
+        "714:736"^^xsd:string ;
+    data:posIndicesPart "1472:1482"^^xsd:string ;
+    data:wdtLink wdt:Q2001499 ;
+    :alsoKnownAs "Sibilla"^^xsd:string,
+        "Sibilla Sandra Weiller"^^xsd:string ;
+    :hasAncestor data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller ;
+    :hasFather data:Paul-Annick_Weiller ;
+    :hasMother data:Olimpia_Torlonia ;
+    :hasParent data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller ;
+    :hasRelation data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Princess_Sibilla_of_Luxembourg ;
+    :isChildOf data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller ;
+    :isDaughterOf data:Olimpia_Torlonia,
+        data:Paul-Annick_Weiller ;
+    :isSiblingOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSisterOf data:Princess_Sibilla_of_Luxembourg .
+
+data:Olimpia_Torlonia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olimpia Torlonia"^^xsd:string ;
+    data:posIndicesFull "958:974"^^xsd:string ;
+    data:wdtLink wdt:Q6049946 ;
+    :alsoKnownAs "Olympia Torlonia"^^xsd:string ;
+    :hasAncestor data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasChild data:Princess_Sibilla_of_Luxembourg ;
+    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
+    :hasFather data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain,
+        data:Olimpia_Torlonia,
+        data:Princess_Sibilla_of_Luxembourg ;
+    :hasSex data:female ;
+    :hasSister data:Olimpia_Torlonia ;
+    :isAncestorOf data:Princess_Sibilla_of_Luxembourg ;
+    :isAuntOf data:Princess_Sibilla_of_Luxembourg ;
+    :isBloodrelationOf data:Olimpia_Torlonia ;
+    :isChildOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :isMotherOf data:Princess_Sibilla_of_Luxembourg ;
+    :isParentOf data:Princess_Sibilla_of_Luxembourg ;
+    :isSiblingOf data:Olimpia_Torlonia ;
+    :isSisterOf data:Olimpia_Torlonia .
+

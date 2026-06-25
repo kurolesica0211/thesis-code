@@ -1,0 +1,130 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Elena_Sanz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elena Sanz"^^xsd:string ;
+    data:posIndicesFull "216:226"^^xsd:string ;
+    data:wdtLink wdt:Q5384669 ;
+    :alsoKnownAs "Elena Sanz y Martinez de Arrizala"^^xsd:string ;
+    :hasChild data:Fernand_Sanz ;
+    :hasRelation data:Alfonso_XIII,
+        data:Elena_Sanz,
+        data:Fernand_Sanz ;
+    :hasSex data:female ;
+    :hasSister data:Elena_Sanz ;
+    :hasSon data:Fernand_Sanz ;
+    :isAncestorOf data:Fernand_Sanz ;
+    :isAuntOf data:Fernand_Sanz ;
+    :isBloodrelationOf data:Elena_Sanz ;
+    :isMotherOf data:Fernand_Sanz ;
+    :isParentOf data:Fernand_Sanz ;
+    :isSiblingOf data:Elena_Sanz ;
+    :isSisterOf data:Elena_Sanz .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XII of Spain"^^xsd:string ;
+    data:posIndicesFull "177:188"^^xsd:string,
+        "177:197"^^xsd:string ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII"^^xsd:string ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Fernand_Sanz ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isAncestorOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isParentOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Alfonso_XIII,
+        data:Fernand_Sanz .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "177:188"^^xsd:string,
+        "177:197"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain ;
+    :hasBrother data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasParent data:Alfonso_XII_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz,
+        data:Fernand_Sanz ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isChildOf data:Alfonso_XII_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isSonOf data:Alfonso_XII_of_Spain .
+
+data:Fernand_Sanz a :Man,
+        :Person ;
+    rdfs:label "Fernand Sanz"^^xsd:string ;
+    data:wdtLink wdt:Q26455 ;
+    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasBrother data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Elena_Sanz ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz,
+        data:Fernand_Sanz ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Fernand_Sanz ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz .
+

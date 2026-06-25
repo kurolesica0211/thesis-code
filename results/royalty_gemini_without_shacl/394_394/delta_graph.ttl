@@ -2,34 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christina_Margarethe_of_Hesse a :Person,
-        :Woman ;
-    :hasBirthYear 1933 ;
-    :hasDeathYear 2011 ;
-    :hasFather data:Prince_Christoph_of_Hesse ;
-    :hasMarriageYear 1956,
-        1962 ;
-    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
-    :hasRelation data:Prince_Andrew_of_Yugoslavia,
-        data:Robert_van_Eyck ;
-    :knownAs "Krista"^^xsd:string .
-
-data:Prince_Andrew_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Christoph_of_Hesse a :Ancestor,
-        :Man,
+data:Aschwin_of_Lippe-Biesterfeld a :Man,
         :Person ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1943 .
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm .
 
-data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1914 ;
-    :hasDeathYear 2001 .
+data:Elisabeth_Johanna_Edle_von_Meinertzhagen a :Person,
+        :Woman .
 
-data:Robert_van_Eyck a :Man,
+data:Frederick_William_Count_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasMarriageYear 1770 .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm .
+
+data:Countess_Karoline_von_Wartensleben a :Person,
+        :Woman .
+
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,
         :Person .
+
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person .
+
+data:Baroness_Armgard_von_Sierstorpff-Cramm a :Person,
+        :Woman .
+
+data:Prince_Bernhard_of_Lippe a :Man,
+        :Person ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Leopold_IV_Prince_of_Lippe ;
+    :hasDeathYear 1934 ;
+    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1909 ;
+    :hasMother data:Countess_Karoline_von_Wartensleben .
 

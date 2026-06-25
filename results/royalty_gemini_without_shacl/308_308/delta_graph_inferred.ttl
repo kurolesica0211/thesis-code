@@ -1,0 +1,87 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male .
+
+data:Female a :Female .
+
+data:Angelica_Philippa_Kauffmann a :Person,
+        :Woman ;
+    :hasRelation data:Angelica_Philippa_Kauffmann ;
+    :hasSex data:Female ;
+    :hasSister data:Angelica_Philippa_Kauffmann ;
+    :isBloodrelationOf data:Angelica_Philippa_Kauffmann ;
+    :isSiblingOf data:Angelica_Philippa_Kauffmann ;
+    :isSisterOf data:Angelica_Philippa_Kauffmann .
+
+data:Mary_Evelyn_Prince a :Person,
+        :Woman ;
+    :hasRelation data:Mary_Evelyn_Prince ;
+    :hasSex data:Female ;
+    :hasSister data:Mary_Evelyn_Prince ;
+    :isBloodrelationOf data:Mary_Evelyn_Prince ;
+    :isSiblingOf data:Mary_Evelyn_Prince ;
+    :isSisterOf data:Mary_Evelyn_Prince .
+
+data:Audrey_Emery a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasRelation data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasSex data:Female ;
+    :hasSister data:Audrey_Emery ;
+    :hasSon data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isAncestorOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isAuntOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isBloodrelationOf data:Audrey_Emery ;
+    :isMotherOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isParentOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isSiblingOf data:Audrey_Emery ;
+    :isSisterOf data:Audrey_Emery .
+
+data:Dmitri_Pavlovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
+    :hasChild data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasRelation data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasSex data:Male ;
+    :hasSon data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isAncestorOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isBloodrelationOf data:Dmitri_Pavlovich_of_Russia ;
+    :isBrotherOf data:Dmitri_Pavlovich_of_Russia ;
+    :isFatherOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isParentOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isSiblingOf data:Dmitri_Pavlovich_of_Russia ;
+    :isUncleOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky .
+
+data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,
+        :Person ;
+    :hasAncestor data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Dmitri_Pavlovich_of_Russia ;
+    :hasMarriageYear 1948,
+        1953 ;
+    :hasMother data:Audrey_Emery ;
+    :hasParent data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia ;
+    :hasRelation data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia,
+        data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isBrotherOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isChildOf data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia ;
+    :isSiblingOf data:Paul_Dmitrievich_Romanovsky-Ilyinsky ;
+    :isSonOf data:Audrey_Emery,
+        data:Dmitri_Pavlovich_of_Russia .
+

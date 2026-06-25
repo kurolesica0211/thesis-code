@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Armgard of Sierstorpff-Cramm"^^xsd:string ;
+    data:posIndicesFull "209:245"^^xsd:string,
+        "334:371"^^xsd:string,
+        "343:371"^^xsd:string ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm"^^xsd:string,
+        "Armgard von Cramm"^^xsd:string,
+        "Baroness Armgard of Sierstorpff-Cramm"^^xsd:string,
+        "Baroness Armgard von Cramm"^^xsd:string,
+        "Countess Bodo von Oeynhausen"^^xsd:string,
+        "Princess Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    :hasChild data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Armgard_of_Sierstorpff-Cramm ;
+    :hasSon data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAuntOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isMotherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_of_Sierstorpff-Cramm .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe"^^xsd:string ;
+    data:posIndicesFull "209:233"^^xsd:string,
+        "216:245"^^xsd:string,
+        "305:329"^^xsd:string ;
+    data:posIndicesPart "1005:1011"^^xsd:string,
+        "1040:1046"^^xsd:string,
+        "1098:1104"^^xsd:string,
+        "1152:1160"^^xsd:string,
+        "1286:1294"^^xsd:string,
+        "1451:1456"^^xsd:string,
+        "459:467"^^xsd:string,
+        "745:751"^^xsd:string ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe"^^xsd:string,
+        "Prince Bernhard of Lippe (1872–1934)"^^xsd:string,
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)"^^xsd:string ;
+    :hasBrother data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    rdfs:label "Prince Aschwin of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string ;
+    data:posIndicesPart "1005:1011"^^xsd:string,
+        "1012:1019"^^xsd:string,
+        "1040:1046"^^xsd:string,
+        "1098:1104"^^xsd:string,
+        "1105:1112"^^xsd:string,
+        "1305:1312"^^xsd:string,
+        "1440:1447"^^xsd:string,
+        "1451:1456"^^xsd:string,
+        "1457:1468"^^xsd:string,
+        "264:271"^^xsd:string,
+        "412:423"^^xsd:string,
+        "589:596"^^xsd:string,
+        "672:679"^^xsd:string,
+        "745:751"^^xsd:string,
+        "752:759"^^xsd:string ;
+    data:wdtLink wdt:Q2336212 ;
+    :alsoKnownAs "Aschwin Prinz zur Lippe-Biesterfeld"^^xsd:string,
+        "Ernst Aschwin Zur Lippe-Biesterfeld"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasBrother data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isSiblingOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "209:245"^^xsd:string,
+        "216:245"^^xsd:string ;
+    data:posIndicesPart "1005:1011"^^xsd:string,
+        "1040:1046"^^xsd:string,
+        "1098:1104"^^xsd:string,
+        "1152:1160"^^xsd:string,
+        "1286:1294"^^xsd:string,
+        "1451:1456"^^xsd:string,
+        "1457:1468"^^xsd:string,
+        "412:423"^^xsd:string,
+        "459:467"^^xsd:string,
+        "745:751"^^xsd:string ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Prince Bernhard of the Netherlands"^^xsd:string,
+        "Prince Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Z.K.H. Prins Bernhard"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasBrother data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isSiblingOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe .
+

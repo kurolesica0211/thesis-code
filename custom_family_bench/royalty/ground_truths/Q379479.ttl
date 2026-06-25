@@ -7,10 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Lorenz-_Archduke_of_Austria-Este a :Person ;
+    rdfs:label "Prince Lorenz, Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q379479 ;
+    :alsoKnownAs "Lorenz Otto Erzherzog von Österreich" ;
+    :hasParent data:Robert-_Archduke_of_Austria-Este ;
+    :hasSex data:male .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Person ;
     rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
     data:posIndicesFull "170:187",
         "890:907" ;
@@ -36,23 +40,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Lorenz-_Archduke_of_Austria-Este a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Lorenz, Archduke of Austria-Este" ;
-    data:wdtLink wdt:Q379479 ;
-    :alsoKnownAs "Lorenz Otto Erzherzog von Österreich" ;
-    :hasFather data:Robert-_Archduke_of_Austria-Este ;
-    :hasParent data:Robert-_Archduke_of_Austria-Este ;
-    :hasSex data:male ;
-    :isChildOf data:Robert-_Archduke_of_Austria-Este ;
-    :isSonOf data:Robert-_Archduke_of_Austria-Este .
-
-data:Robert-_Archduke_of_Austria-Este a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Robert-_Archduke_of_Austria-Este a :Person ;
     rdfs:label "Robert, Archduke of Austria-Este" ;
     data:posIndicesFull "567:599" ;
     data:posIndicesPart "1247:1254",
@@ -65,9 +53,9 @@ data:Robert-_Archduke_of_Austria-Este a :Ancestor,
     :alsoKnownAs "Robert Karl Erzherzog von Österreich",
         "Robert Karl Ludwig Maximilian Michael Maria Anton Franz Ferdinand Joseph Otto Hubert Georg Pius Johannes Marcus d'Aviano",
         "Roberto de Habsburgo" ;
-    :hasChild data:Prince_Lorenz-_Archduke_of_Austria-Este ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Lorenz-_Archduke_of_Austria-Este ;
-    :isFatherOf data:Prince_Lorenz-_Archduke_of_Austria-Este ;
-    :isParentOf data:Prince_Lorenz-_Archduke_of_Austria-Este .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

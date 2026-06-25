@@ -2,15 +2,15 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceGuillaumeOfLuxembourg a :Man,
+data:PrinceGuillaume a :Man,
         :Person ;
-    :hasBirthYear "1963"^^xsd:int ;
+    :hasBirthYear 1963 ;
     :hasFather data:GrandDukeJean ;
-    :hasMarriageYear "1994"^^xsd:int ;
-    :hasMother data:GrandDuchessJosephineCharlotte ;
+    :hasMarriageYear 1994 ;
+    :hasMother data:GrandDuchessJosephine-Charlotte ;
     :hasRelation data:PrincessSibilla .
 
-data:GrandDuchessJosephineCharlotte a :Ancestor,
+data:GrandDuchessJosephine-Charlotte a :Ancestor,
         :Person,
         :Woman .
 
@@ -20,5 +20,5 @@ data:GrandDukeJean a :Ancestor,
 
 data:PrincessSibilla a :Person,
         :Woman ;
-    :hasBirthYear "1968"^^xsd:int .
+    :hasBirthYear 1968 .
 

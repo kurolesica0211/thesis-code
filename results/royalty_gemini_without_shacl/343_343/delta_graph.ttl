@@ -2,41 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Hanover a :Woman ;
-    :hasFather data:Ernest_Augustus ;
-    :hasMother data:Thyra_of_Denmark .
+data:ErnestAugustus a :Man ;
+    :hasBirthYear 1887 ;
+    :hasChild data:PrinceErnestAugustus,
+        data:PrincessFrederica ;
+    :hasDeathYear 1953 ;
+    :hasFather data:ErnestAugustusOfHanover ;
+    :hasMother data:PrincessThyra ;
+    :isBrotherOf data:Christian,
+        data:George .
 
-data:Frederick_Francis_IV a :Man ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1945 ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMarriageYear 1904 ;
-    :hasMother data:Anastasia_Mikhailovna ;
-    :hasSister data:Alexandrine,
-        data:Cecilie ;
-    :hasSon data:Friedrich_Franz_son ;
-    :isSonOf data:Anastasia_Mikhailovna,
-        data:Frederick_Francis_III .
+data:Christian a :Man .
 
-data:Johann_Albrecht a :Man .
+data:ErnestAugustusOfHanover a :Man .
 
-data:Alexandrine a :Woman .
+data:George a :Man .
 
-data:Cecilie a :Woman .
+data:PrinceErnestAugustus a :Man .
 
-data:Christian_IX a :Man .
+data:PrincePaul a :Man .
 
-data:Ernest_Augustus a :Man .
+data:PrincessFrederica a :Woman ;
+    :hasFather data:PrincePaul ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:VictoriaLouise .
 
-data:Frederick_Francis_II a :Man .
+data:PrincessThyra a :Woman .
 
-data:Friedrich_Franz_son a :Man .
+data:VictoriaLouise a :Woman ;
+    :hasFather data:WilhelmII .
 
-data:Thyra_of_Denmark a :Woman ;
-    :hasMother data:Christian_IX .
-
-data:Anastasia_Mikhailovna a :Woman .
-
-data:Frederick_Francis_III a :Man ;
-    :isSonOf data:Frederick_Francis_II .
+data:WilhelmII a :Man .
 

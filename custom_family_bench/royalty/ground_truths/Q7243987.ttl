@@ -7,29 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Marie of Mecklenburg-Strelitz" ;
-    data:posIndicesFull "350:387" ;
-    data:wdtLink wdt:Q69425 ;
-    :alsoKnownAs "Marie Herzogin zu Mecklenburg" ;
-    :hasChild data:Prince_Ernst_August_of_Lippe ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Ernst_August_of_Lippe ;
-    :isMotherOf data:Prince_Ernst_August_of_Lippe ;
-    :isParentOf data:Prince_Ernst_August_of_Lippe .
-
-data:Prince_Friedrich_Wilhelm_of_Lippe a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Friedrich_Wilhelm_of_Lippe a :Person ;
     rdfs:label "Prince Friedrich Wilhelm of Lippe" ;
     data:posIndicesFull "0:26",
         "36:92" ;
@@ -56,16 +34,23 @@ data:Prince_Friedrich_Wilhelm_of_Lippe a :Man,
     data:wdtLink wdt:Q7243987 ;
     :alsoKnownAs "Friedrich Wilhelm Ernst Victor Alexander Prinz zur Lippe",
         "Friedrich Wilhelm of Lippe" ;
-    :hasFather data:Prince_Ernst_August_of_Lippe ;
     :hasParent data:Prince_Ernst_August_of_Lippe ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Ernst_August_of_Lippe ;
-    :isSonOf data:Prince_Ernst_August_of_Lippe .
+    :hasSex data:male .
 
-data:Prince_Ernst_August_of_Lippe a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Person ;
+    rdfs:label "Duchess Marie of Mecklenburg-Strelitz" ;
+    data:posIndicesFull "350:387" ;
+    data:wdtLink wdt:Q69425 ;
+    :alsoKnownAs "Marie Herzogin zu Mecklenburg" ;
+    :hasSex data:female .
+
+data:Prince_Ernst_August_of_Lippe a :Person ;
     rdfs:label "Prince Ernst August of Lippe" ;
     data:posIndicesFull "269:297" ;
     data:posIndicesPart "1040:1046",
@@ -82,13 +67,10 @@ data:Prince_Ernst_August_of_Lippe a :Ancestor,
         "992:998",
         "999:1004" ;
     data:wdtLink wdt:Q2295856 ;
-    :hasChild data:Prince_Friedrich_Wilhelm_of_Lippe ;
-    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz ;
     :hasParent data:Duchess_Marie_of_Mecklenburg-Strelitz ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Friedrich_Wilhelm_of_Lippe ;
-    :isChildOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
-    :isFatherOf data:Prince_Friedrich_Wilhelm_of_Lippe ;
-    :isParentOf data:Prince_Friedrich_Wilhelm_of_Lippe ;
-    :isSonOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

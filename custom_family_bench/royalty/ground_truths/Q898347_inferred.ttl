@@ -1,0 +1,154 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1572:1595"^^xsd:string,
+        "1577:1585"^^xsd:string,
+        "1577:1595"^^xsd:string ;
+    data:posIndicesPart "2046:2052"^^xsd:string,
+        "2829:2835"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Nina_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Nina Georgievna of Russia"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string,
+        "9:34"^^xsd:string ;
+    data:posIndicesPart "1015:1019"^^xsd:string,
+        "1201:1207"^^xsd:string,
+        "1294:1304"^^xsd:string,
+        "1308:1314"^^xsd:string,
+        "1458:1464"^^xsd:string,
+        "1466:1470"^^xsd:string,
+        "1544:1548"^^xsd:string,
+        "1714:1718"^^xsd:string,
+        "1880:1884"^^xsd:string,
+        "2007:2011"^^xsd:string,
+        "2138:2148"^^xsd:string,
+        "2161:2167"^^xsd:string,
+        "2307:2313"^^xsd:string,
+        "2375:2379"^^xsd:string,
+        "244:250"^^xsd:string,
+        "2504:2508"^^xsd:string,
+        "2593:2597"^^xsd:string,
+        "2957:2963"^^xsd:string,
+        "3259:3263"^^xsd:string,
+        "3349:3353"^^xsd:string,
+        "3631:3637"^^xsd:string,
+        "3648:3652"^^xsd:string,
+        "568:572"^^xsd:string,
+        "986:992"^^xsd:string ;
+    data:wdtLink wdt:Q898347 ;
+    :alsoKnownAs "Nina Chavchavadze"^^xsd:string,
+        "Nina Georgievna Chavchavadze"^^xsd:string,
+        "Princess Nina Georgievna of Russia"^^xsd:string ;
+    :hasChild data:David_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:female ;
+    :hasSister data:Nina_Georgievna_of_Russia ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze ;
+    :isAuntOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Nina_Georgievna_of_Russia ;
+    :isMotherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Nina_Georgievna_of_Russia ;
+    :isSisterOf data:Nina_Georgievna_of_Russia .
+
+data:Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul Chavchavadze"^^xsd:string ;
+    data:posIndicesFull "423:440"^^xsd:string ;
+    data:posIndicesPart "2613:2617"^^xsd:string,
+        "2632:2644"^^xsd:string,
+        "2688:2692"^^xsd:string,
+        "2721:2733"^^xsd:string,
+        "3047:3051"^^xsd:string ;
+    data:wdtLink wdt:Q16028068 ;
+    :alsoKnownAs "Paule Chavchavadze"^^xsd:string,
+        "Pavel Aleksandrovich Tchavchavadze, Prince Tchavchavadze"^^xsd:string ;
+    :hasBrother data:Paul_Chavchavadze ;
+    :hasChild data:David_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Paul_Chavchavadze ;
+    :isBrotherOf data:Paul_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Paul_Chavchavadze ;
+    :isUncleOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Man,
+        :Person ;
+    rdfs:label "David Chavchavadze"^^xsd:string ;
+    data:posIndicesFull "3190:3215"^^xsd:string,
+        "3197:3215"^^xsd:string,
+        "3464:3489"^^xsd:string,
+        "3471:3489"^^xsd:string,
+        "504:529"^^xsd:string,
+        "511:529"^^xsd:string,
+        "683:708"^^xsd:string,
+        "690:708"^^xsd:string ;
+    data:posIndicesPart "2632:2644"^^xsd:string,
+        "2721:2733"^^xsd:string ;
+    data:wdtLink wdt:Q2621015 ;
+    :alsoKnownAs "David Tchavchavadze, Prince Tchavchavadze"^^xsd:string,
+        "Prince David Chavchavadze"^^xsd:string ;
+    :hasAncestor data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasBrother data:David_Chavchavadze ;
+    :hasFather data:Paul_Chavchavadze ;
+    :hasMother data:Nina_Georgievna_of_Russia ;
+    :hasParent data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:David_Chavchavadze ;
+    :isBrotherOf data:David_Chavchavadze ;
+    :isChildOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze ;
+    :isSiblingOf data:David_Chavchavadze ;
+    :isSonOf data:Nina_Georgievna_of_Russia,
+        data:Paul_Chavchavadze .
+

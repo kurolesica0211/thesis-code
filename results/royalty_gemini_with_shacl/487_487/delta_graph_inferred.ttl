@@ -1,0 +1,335 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :hasChild data:Otto_d%27Ambrosio ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSon data:Otto_d%27Ambrosio ;
+    :isAncestorOf data:Otto_d%27Ambrosio ;
+    :isBloodrelationOf data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isBrotherOf data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isFatherOf data:Otto_d%27Ambrosio ;
+    :isParentOf data:Otto_d%27Ambrosio ;
+    :isSiblingOf data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isUncleOf data:Otto_d%27Ambrosio .
+
+data:Regina_von_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSister data:Regina_von_Saxe-Meiningen ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio ;
+    :isAuntOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Regina_von_Saxe-Meiningen ;
+    :isMotherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Regina_von_Saxe-Meiningen ;
+    :isSisterOf data:Regina_von_Saxe-Meiningen .
+
+data:Charles_I_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_I_of_Austria ;
+    :hasChild data:Otto_von_Habsburg ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSon data:Otto_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg ;
+    :isBloodrelationOf data:Charles_I_of_Austria ;
+    :isBrotherOf data:Charles_I_of_Austria ;
+    :isFatherOf data:Otto_von_Habsburg ;
+    :isParentOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Charles_I_of_Austria ;
+    :isUncleOf data:Otto_von_Habsburg .
+
+data:Zita_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Otto_von_Habsburg ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSister data:Zita_of_Bourbon-Parma ;
+    :hasSon data:Otto_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg ;
+    :isAuntOf data:Otto_von_Habsburg ;
+    :isBloodrelationOf data:Zita_of_Bourbon-Parma ;
+    :isMotherOf data:Otto_von_Habsburg ;
+    :isParentOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Zita_of_Bourbon-Parma ;
+    :isSisterOf data:Zita_of_Bourbon-Parma .
+
+data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :hasDaughter data:Eleonore_von_Habsburg-Lothringen ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSister data:Francesca_von_Thyssen-Bornemisza ;
+    :hasSon data:Ferdinand_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Otto_d%27Ambrosio ;
+    :isAuntOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isBloodrelationOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isMotherOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isParentOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isSiblingOf data:Francesca_von_Thyssen-Bornemisza ;
+    :isSisterOf data:Francesca_von_Thyssen-Bornemisza .
+
+data:Otto_d%27Ambrosio a :Man,
+        :Person ;
+    :hasAncestor data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasBrother data:Otto_d%27Ambrosio ;
+    :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :hasMother data:Eleonore_von_Habsburg-Lothringen ;
+    :hasParent data:Eleonore_von_Habsburg-Lothringen,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Otto_d%27Ambrosio ;
+    :isBrotherOf data:Otto_d%27Ambrosio ;
+    :isChildOf data:Eleonore_von_Habsburg-Lothringen,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isSiblingOf data:Otto_d%27Ambrosio ;
+    :isSonOf data:Eleonore_von_Habsburg-Lothringen,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio .
+
+data:Ferdinand_Habsburg a :Man,
+        :Person ;
+    :hasAncestor data:Charles_I_of_Austria,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasBrother data:Ferdinand_Habsburg ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasParent data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSister data:Eleonore_von_Habsburg-Lothringen ;
+    :isBloodrelationOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isBrotherOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isChildOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isSonOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isUncleOf data:Otto_d%27Ambrosio .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Charles_I_of_Austria,
+        data:Zita_of_Bourbon-Parma ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasFather data:Charles_I_of_Austria ;
+    :hasMother data:Zita_of_Bourbon-Parma ;
+    :hasParent data:Charles_I_of_Austria,
+        data:Zita_of_Bourbon-Parma ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isChildOf data:Charles_I_of_Austria,
+        data:Zita_of_Bourbon-Parma ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isSonOf data:Charles_I_of_Austria,
+        data:Zita_of_Bourbon-Parma ;
+    :isUncleOf data:Karl_von_Habsburg .
+
+data:Eleonore_von_Habsburg-Lothringen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Charles_I_of_Austria,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasBirthYear 1994 ;
+    :hasBrother data:Ferdinand_Habsburg ;
+    :hasChild data:Otto_d%27Ambrosio ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMarriageYear 2020 ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasParent data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSister data:Eleonore_von_Habsburg-Lothringen ;
+    :hasSon data:Otto_d%27Ambrosio ;
+    :isAncestorOf data:Otto_d%27Ambrosio ;
+    :isAuntOf data:Otto_d%27Ambrosio ;
+    :isBloodrelationOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isChildOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isDaughterOf data:Francesca_von_Thyssen-Bornemisza,
+        data:Karl_von_Habsburg ;
+    :isMotherOf data:Otto_d%27Ambrosio ;
+    :isParentOf data:Otto_d%27Ambrosio ;
+    :isSiblingOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isSisterOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Charles_I_of_Austria,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasBrother data:Karl_von_Habsburg ;
+    :hasChild data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :hasDaughter data:Eleonore_von_Habsburg-Lothringen ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_von_Saxe-Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen ;
+    :hasRelation data:Charles_I_of_Austria,
+        data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Francesca_von_Thyssen-Bornemisza,
+        data:J%C3%A9r%C3%B4me_d%27Ambrosio,
+        data:Karl_von_Habsburg,
+        data:Otto_d%27Ambrosio,
+        data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen,
+        data:Zita_of_Bourbon-Parma ;
+    :hasSon data:Ferdinand_Habsburg ;
+    :isAncestorOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg,
+        data:Otto_d%27Ambrosio ;
+    :isBloodrelationOf data:Karl_von_Habsburg ;
+    :isBrotherOf data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen ;
+    :isFatherOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isParentOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg ;
+    :isSiblingOf data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg,
+        data:Regina_von_Saxe-Meiningen ;
+    :isUncleOf data:Eleonore_von_Habsburg-Lothringen,
+        data:Ferdinand_Habsburg .
+

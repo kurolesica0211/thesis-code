@@ -2,40 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederick_III_German_Emperor a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Prince_Henry_of_Prussia .
-
-data:Prince_Sigismund a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-data:Prince_Waldemar a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
-
-data:Male_Entity a :Male,
-        :Sex .
-
-data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
+data:Alexandra_of_Hohenzollern a :Person,
         :Woman .
 
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
+data:Karl_Friedrich_von_Hohenzollern a :Man,
         :Person ;
-    :hasAncestor data:Queen_Victoria ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1904 ;
-    :hasFather data:Prince_Henry_of_Prussia ;
-    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
-    :hasSex data:Male_Entity .
+    :hasBirthYear 1952 ;
+    :hasBrother data:Albrecht_von_Hohenzollern ;
+    :hasFather data:Friedrich_Wilhelm_von_Hohenzollern ;
+    :hasMother data:Margarita_of_Leiningen .
 
-data:Prince_Henry_of_Prussia a :Ancestor,
+data:Albrecht_von_Hohenzollern a :Man,
+        :Person ;
+    :hasBirthYear 1954 .
+
+data:Friedrich_Wilhelm_von_Hohenzollern a :Ancestor,
         :Man,
         :Person .
+
+data:Margarita_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman .
 

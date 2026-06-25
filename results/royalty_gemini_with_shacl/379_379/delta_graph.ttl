@@ -2,45 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:SophieOfGreeceAndDenmark a :Person,
-        :Woman ;
-    :hasBirthYear "1914"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "2001"^^xsd:nonNegativeInteger ;
-    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
-    :hasMarriageYear "1930"^^xsd:nonNegativeInteger,
-        "1946"^^xsd:nonNegativeInteger ;
-    :hasMother data:PrincessAliceOfBattenberg ;
-    :hasRelation data:PrinceChristophOfHesse,
-        data:PrinceGeorgeWilliamOfHanover ;
-    :isSisterOf data:CecilieOfGreeceAndDenmark,
-        data:MargaritaOfGreeceAndDenmark,
-        data:PrincePhilipDukeOfEdinburgh,
-        data:TheodoraOfGreeceAndDenmark ;
-    :knownAs "Sophie"^^xsd:string .
+data:Max_Margrave_of_Baden a :Man,
+        :Person ;
+    :isSonOf data:Berthold_Prinz_und_Markgraf_von_Baden .
 
-data:CecilieOfGreeceAndDenmark a :Person,
-        :Woman .
+data:Berthold_Prinz_und_Markgraf_von_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Prince_Maximilian_Margrave_of_Baden ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Marie_Louise_of_Hanover ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark .
 
-data:MargaritaOfGreeceAndDenmark a :Person,
-        :Woman .
-
-data:PrinceAndrewOfGreeceAndDenmark a :Ancestor,
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person .
 
-data:PrinceChristophOfHesse a :Man,
+data:Prince_Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man,
         :Person .
 
-data:PrinceGeorgeWilliamOfHanover a :Man,
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
         :Person .
 
-data:PrincePhilipDukeOfEdinburgh a :Man,
-        :Person .
-
-data:PrincessAliceOfBattenberg a :Ancestor,
+data:Princess_Alice_of_Battenberg a :Ancestor,
         :Person,
         :Woman .
 
-data:TheodoraOfGreeceAndDenmark a :Person,
+data:Princess_Marie_Louise_of_Hanover a :Ancestor,
+        :Person,
         :Woman .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
 

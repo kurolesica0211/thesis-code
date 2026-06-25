@@ -2,47 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Daniel_Chatto a :Man,
-        :Person ;
-    :hasFather data:Tom_Chatto ;
-    :hasMother data:Ros_Chatto .
-
-data:Frances_Armstrong-Jones a :Person,
+data:Isabella_Alexandra_May a :Person,
         :Woman ;
-    :hasFather data:Antony_Armstrong-Jones .
+    :isDaughterOf data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman .
 
-data:Jasper_Cable-Alexander a :Man,
+data:King_George_V a :Man,
         :Person ;
-    :hasFather data:Antony_Armstrong-Jones .
+    :isAncestorOf data:Lord_Frederick_Windsor .
 
-data:Polly_Fry a :Person,
+data:Queen_Mary a :Person,
         :Woman ;
-    :hasFather data:Antony_Armstrong-Jones .
+    :isAncestorOf data:Lord_Frederick_Windsor .
 
-data:Sarah_Chatto a :Person,
-        :Woman ;
-    :hasBirthYear 1964 ;
-    :hasFather data:Antony_Armstrong-Jones ;
-    :hasMother data:Princess_Margaret ;
-    :isSiblingOf data:David_Armstrong-Jones .
-
-data:David_Armstrong-Jones a :Man,
-        :Person ;
-    :hasFather data:Antony_Armstrong-Jones ;
-    :hasMother data:Princess_Margaret .
-
-data:Ros_Chatto a :Person,
-        :Woman ;
-    :hasDeathYear 2012 .
-
-data:Tom_Chatto a :Man,
-        :Person ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 1982 .
-
-data:Princess_Margaret a :Person,
+data:Lady_Gabriella a :Person,
         :Woman .
 
-data:Antony_Armstrong-Jones a :Man,
+data:Prince_Michael_of_Kent a :Man,
         :Person .
+
+data:Princess_Michael_of_Kent a :Person,
+        :Woman .
+
+data:Sophie_Winkleman a :Person,
+        :Woman .
+
+data:Lord_Frederick_Windsor a :Man,
+        :Person ;
+    :hasBirthYear 1979 ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMarriageYear 2009 ;
+    :hasMother data:Princess_Michael_of_Kent ;
+    :hasRelation data:Sophie_Winkleman ;
+    :isSiblingOf data:Lady_Gabriella .
 

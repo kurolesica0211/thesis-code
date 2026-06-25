@@ -1,0 +1,198 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "310:347"^^xsd:string ;
+    data:posIndicesPart "476:482"^^xsd:string,
+        "567:573"^^xsd:string,
+        "704:710"^^xsd:string,
+        "837:843"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Paul_Mowatt a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul Mowatt"^^xsd:string ;
+    data:posIndicesFull "623:641"^^xsd:string ;
+    data:posIndicesPart "1084:1090"^^xsd:string,
+        "852:858"^^xsd:string ;
+    data:wdtLink wdt:Q17429006 ;
+    :alsoKnownAs "Paul Julian Mowatt"^^xsd:string ;
+    :hasBrother data:Paul_Mowatt ;
+    :hasChild data:Zenouska_Mowatt ;
+    :hasDaughter data:Zenouska_Mowatt ;
+    :hasRelation data:Angus_Ogilvy,
+        data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt,
+        data:Zenouska_Mowatt ;
+    :hasSex data:male ;
+    :isAncestorOf data:Zenouska_Mowatt ;
+    :isBloodrelationOf data:Paul_Mowatt ;
+    :isBrotherOf data:Paul_Mowatt ;
+    :isFatherOf data:Zenouska_Mowatt ;
+    :isParentOf data:Zenouska_Mowatt ;
+    :isSiblingOf data:Paul_Mowatt ;
+    :isUncleOf data:Zenouska_Mowatt .
+
+data:James_Ogilvy a :Man,
+        :Person ;
+    rdfs:label "James Ogilvy"^^xsd:string ;
+    data:posIndicesFull "440:452"^^xsd:string ;
+    data:wdtLink wdt:Q662282 ;
+    :alsoKnownAs "James Robert Bruce Ogilvy"^^xsd:string ;
+    :hasAncestor data:Angus_Ogilvy ;
+    :hasBrother data:James_Ogilvy ;
+    :hasFather data:Angus_Ogilvy ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasRelation data:Angus_Ogilvy,
+        data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt,
+        data:Zenouska_Mowatt ;
+    :hasSex data:male ;
+    :hasSister data:Marina_Ogilvy ;
+    :isBloodrelationOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isBrotherOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isChildOf data:Angus_Ogilvy ;
+    :isSiblingOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSonOf data:Angus_Ogilvy ;
+    :isUncleOf data:Zenouska_Mowatt .
+
+data:Angus_Ogilvy a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Angus Ogilvy"^^xsd:string ;
+    data:posIndicesFull "95:111"^^xsd:string,
+        "99:111"^^xsd:string ;
+    data:wdtLink wdt:Q544609 ;
+    :alsoKnownAs "Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Angus Ogilvy"^^xsd:string,
+        "Hon. Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Hon. Sir Angus Ogilvy"^^xsd:string,
+        "Rt. Hon. Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Rt. Hon. Sir Angus Ogilvy"^^xsd:string,
+        "Sir Angus James Bruce Ogilvy"^^xsd:string,
+        "Sir Angus Ogilvy"^^xsd:string ;
+    :hasBrother data:Angus_Ogilvy ;
+    :hasChild data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :hasDaughter data:Marina_Ogilvy ;
+    :hasRelation data:Angus_Ogilvy,
+        data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt,
+        data:Zenouska_Mowatt ;
+    :hasSex data:male ;
+    :hasSon data:James_Ogilvy ;
+    :isAncestorOf data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Zenouska_Mowatt ;
+    :isBloodrelationOf data:Angus_Ogilvy ;
+    :isBrotherOf data:Angus_Ogilvy ;
+    :isFatherOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isParentOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSiblingOf data:Angus_Ogilvy ;
+    :isUncleOf data:James_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Zenouska_Mowatt a :Person,
+        :Woman ;
+    rdfs:label "Zenouska Mowatt"^^xsd:string ;
+    data:posIndicesFull "1020:1039"^^xsd:string ;
+    data:wdtLink wdt:Q12379343 ;
+    :alsoKnownAs "Zenouska May Mowatt"^^xsd:string ;
+    :hasAncestor data:Angus_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :hasFather data:Paul_Mowatt ;
+    :hasMother data:Marina_Ogilvy ;
+    :hasParent data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :hasRelation data:Angus_Ogilvy,
+        data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt,
+        data:Zenouska_Mowatt ;
+    :hasSex data:female ;
+    :hasSister data:Zenouska_Mowatt ;
+    :isBloodrelationOf data:Zenouska_Mowatt ;
+    :isChildOf data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :isDaughterOf data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :isSiblingOf data:Zenouska_Mowatt ;
+    :isSisterOf data:Zenouska_Mowatt .
+
+data:Marina_Ogilvy a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marina Ogilvy"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string ;
+    data:posIndicesPart "156:162"^^xsd:string,
+        "476:482"^^xsd:string,
+        "567:573"^^xsd:string,
+        "704:710"^^xsd:string,
+        "837:843"^^xsd:string ;
+    data:wdtLink wdt:Q3312290 ;
+    :alsoKnownAs "Marina Victoria Alexandra Mowatt"^^xsd:string,
+        "Marina Victoria Alexandra Ogilvy"^^xsd:string ;
+    :hasAncestor data:Angus_Ogilvy ;
+    :hasBrother data:James_Ogilvy ;
+    :hasChild data:Zenouska_Mowatt ;
+    :hasDaughter data:Zenouska_Mowatt ;
+    :hasFather data:Angus_Ogilvy ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasRelation data:Angus_Ogilvy,
+        data:James_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Paul_Mowatt,
+        data:Zenouska_Mowatt ;
+    :hasSex data:female ;
+    :hasSister data:Marina_Ogilvy ;
+    :isAncestorOf data:Zenouska_Mowatt ;
+    :isAuntOf data:Zenouska_Mowatt ;
+    :isBloodrelationOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isChildOf data:Angus_Ogilvy ;
+    :isDaughterOf data:Angus_Ogilvy ;
+    :isMotherOf data:Zenouska_Mowatt ;
+    :isParentOf data:Zenouska_Mowatt ;
+    :isSiblingOf data:James_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSisterOf data:James_Ogilvy,
+        data:Marina_Ogilvy .
+

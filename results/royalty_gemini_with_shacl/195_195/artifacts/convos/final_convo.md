@@ -85,38 +85,33 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria di Grazia of Bourbon-Two Sicilies (12 August 1878 – 20 June 1973) was a Princess of Bourbon-Two Sicilies by birth as well as Princess Imperial of Brazil and Princess of Orleans-Braganza through her marriage to Prince Luiz of Orléans-Braganza, secondborn son and pretense heir of Isabel, Princess Imperial of Brazil.
+James Alexander Elphinstone, 18th Lord Elphinstone and 4th Baron Elphinstone, AssocRICS (22 April 1953 – 19 December 1994), was a British nobleman, farmer, and financier.
 Early life and family
 
-Princess Maria was born at their parents' Villa Maria Teresa in Cannes, where her family had been exiled since the 1861 due to the Italian Unification.
-She was the sixth child and third daughter of Prince Alfonso, Count of Caserta and his wife Princess Antonietta of Bourbon-Two Sicilies.
-She was usually called “Maria Pia”.
-Her father, the third son of King Ferdinand II of the Two Sicilies, became Head of the Royal House of the Two Sicilies with the death of his elder brother, King Francis II, in 1894.
-Maria di Grazia was baptized and had Robert I, Duke of Parma, and his first wife, Princess Maria Pia of the Two Sicilies, as godparents.
-Maria di Grazia and her sisters were educated at the College of the Sacred Heart of Aix-Provence, an institution run by nuns near Cannes.
-There, Maria di Grazia spent her childhood and, after finishing her studies, her youth.
-In one of the visits of the Emperor Pedro II of Brazil to Cannes, he visited the Villa Maria Teresa.
-The Count of Caserta gathered all his children to present them to the monarch, and Maria di Grazia, at the age of ten, had to play "Turkish March" by Mozart, on the piano.
-Upon turning 18, Maria di Grazia was taken with her sisters to be presented to the court of Emperor Franz Joseph I of Austria.
-After Austria, the princesses were taken to Munich, where they were given a gala lunch by Luitpold, Prince Regent of Bavaria.
-Marriage and issue
+Lord Elphinstone was the son of Rev. Hon.
+Andrew Charles Victor Elphinstone and Jean Frances Hambro.
+His paternal grandparents were Sidney Buller-Fullerton-Elphinstone, 16th Lord Elphinstone, and the former Lady Mary Bowes-Lyon, elder sister of Queen Elizabeth The Queen Mother.
+Personal life
 
-Princess Maria di Grazia met her future fiancé when they were still young, when Luiz eventually arrived in Europe due to the exile imposed by the proclamation of the republic in Brazil in 1889.
-They later reconnected in 1903 when Prince Luiz, then serving in the Austrian Army, was visiting several relatives in France.
-On 4 November 1908 Princess Maria di Grazia married Prince Luiz Maria of Orléans-Braganza, son of Prince Gaston of Orléans, Count of Eu and Isabel, Princess Imperial of Brazil, in Cannes.
-Later life
+On 22 April 1978, Lord Elphinstone married Willa Mary Gabrielle Chetwode, daughter of Major George David Chetwode and Lady Willa Elliot-Murray-Kynynmound (herself the daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto, and his wife, Marion Cook).
+The couple had four children:
 
-Prince Luiz died in 1920 leaving Maria a widow for the remainder of her life.
-In 1922, Maria accompanied the Brazilian Imperial Family to Brazil for the country's centennial celebrations of its independence.
-During the course of the trip, the Count of Eu died while recumbent upon her shoulder.
-After that, Princess Maria preferred to live with her children in France, where they could have a better education.
-}} Media related to Princess Maria di Grazia of the Two Sicilies at Wikimedia Commons
+
+He was succeeded in his titles by his eldest son, Alexander.
+References
+
+
+
+
+This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +127,9 @@ After that, Princess Maria preferred to live with her children in France, where 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +144,23 @@ After that, Princess Maria preferred to live with her children in France, where 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,119 +452,302 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (59ca3b51-7f43-4e53-85ca-5071cf5e7c0c)
- Call ID: 59ca3b51-7f43-4e53-85ca-5071cf5e7c0c
+  AssignClass (98b767eb-1a06-49ff-a30a-39ba2518bd68)
+ Call ID: 98b767eb-1a06-49ff-a30a-39ba2518bd68
   Args:
-    type: :Woman
-    source: Maria_di_Grazia
-  AssignClass (243c16ae-e451-4468-9b5a-abe6611782ac)
- Call ID: 243c16ae-e451-4468-9b5a-abe6611782ac
-  Args:
+    source: James_Alexander_Elphinstone
     type: :Man
-    source: Alfonso_Count_of_Caserta
-  AssignClass (c62c7241-fdbe-4113-bad6-b87d25809b0d)
- Call ID: c62c7241-fdbe-4113-bad6-b87d25809b0d
+  AssignClass (4873d34c-30c7-4f3b-ab59-1ab707c2524f)
+ Call ID: 4873d34c-30c7-4f3b-ab59-1ab707c2524f
   Args:
-    type: :Woman
-    source: Antonietta_of_Bourbon_Two_Sicilies
-  AssignClass (7931269a-9e5b-435f-99e8-b2339349a075)
- Call ID: 7931269a-9e5b-435f-99e8-b2339349a075
+    source: James_Alexander_Elphinstone
+    type: :Person
+  AddLiteral (e24bdf0f-96ff-4a6e-badd-72091574f336)
+ Call ID: e24bdf0f-96ff-4a6e-badd-72091574f336
   Args:
-    type: :Man
-    source: Luiz_of_Orleans_Braganza
-  AssignClass (43e3665f-f1e1-464e-bf25-119001834052)
- Call ID: 43e3665f-f1e1-464e-bf25-119001834052
-  Args:
-    type: :Man
-    source: Gaston_of_Orleans_Count_of_Eu
-  AssignClass (3edc63b9-bcd9-4215-85e5-0195ad8d9715)
- Call ID: 3edc63b9-bcd9-4215-85e5-0195ad8d9715
-  Args:
-    type: :Woman
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (193383c3-12cc-44f8-8621-a829ce6b6812)
- Call ID: 193383c3-12cc-44f8-8621-a829ce6b6812
-  Args:
-    type: :Man
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (f6080aad-4e61-4f92-9987-654abf90db9f)
- Call ID: f6080aad-4e61-4f92-9987-654abf90db9f
-  Args:
-    type: :Man
-    source: Francis_II_of_the_Two_Sicilies
-  AddLiteral (75060b92-a248-4013-8be1-9f96bea178c3)
- Call ID: 75060b92-a248-4013-8be1-9f96bea178c3
-  Args:
-    literal_value: 1878
-    source: Maria_di_Grazia
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (d923bd08-68fe-45e4-bb47-902a56feefa2)
- Call ID: d923bd08-68fe-45e4-bb47-902a56feefa2
+    source: James_Alexander_Elphinstone
+    literal_value: 1953
+  AddLiteral (f223903f-51c1-4aec-b951-d938ff061d27)
+ Call ID: f223903f-51c1-4aec-b951-d938ff061d27
   Args:
-    literal_type: xsd:integer
+    literal_value: 1994
     relation: :hasDeathYear
-    source: Maria_di_Grazia
-    literal_value: 1973
-  AddLiteral (b69458c4-b537-4ccb-9d9a-56f2c27a57b3)
- Call ID: b69458c4-b537-4ccb-9d9a-56f2c27a57b3
-  Args:
-    source: Maria_di_Grazia
-    literal_value: Maria Pia
-    relation: :knownAs
-    literal_type: xsd:string
-  AddTriple (78744419-27b2-4f9b-b6b7-2c679dcf60e6)
- Call ID: 78744419-27b2-4f9b-b6b7-2c679dcf60e6
-  Args:
-    target: Alfonso_Count_of_Caserta
-    relation: :hasFather
-    source: Maria_di_Grazia
-  AddTriple (6c7824de-d7c1-471c-9484-8fa8c8c0a289)
- Call ID: 6c7824de-d7c1-471c-9484-8fa8c8c0a289
-  Args:
-    source: Maria_di_Grazia
-    relation: :hasMother
-    target: Antonietta_of_Bourbon_Two_Sicilies
-  AddTriple (962e9ae7-767e-4d44-9aaa-43e68dee9aad)
- Call ID: 962e9ae7-767e-4d44-9aaa-43e68dee9aad
-  Args:
-    target: Ferdinand_II_of_the_Two_Sicilies
-    source: Alfonso_Count_of_Caserta
-    relation: :hasFather
-  AddTriple (af06e67c-5d1e-4ef9-a0d8-2deeccab4277)
- Call ID: af06e67c-5d1e-4ef9-a0d8-2deeccab4277
-  Args:
-    source: Alfonso_Count_of_Caserta
-    relation: :hasBrother
-    target: Francis_II_of_the_Two_Sicilies
-  AddTriple (71897f2d-7d31-4a03-8ce8-805a81d24103)
- Call ID: 71897f2d-7d31-4a03-8ce8-805a81d24103
-  Args:
-    relation: :hasFather
-    source: Luiz_of_Orleans_Braganza
-    target: Gaston_of_Orleans_Count_of_Eu
-  AddTriple (af744ebd-f199-4951-bdd1-a8087c5dd2ad)
- Call ID: af744ebd-f199-4951-bdd1-a8087c5dd2ad
-  Args:
-    relation: :hasMother
-    source: Luiz_of_Orleans_Braganza
-    target: Isabel_Princess_Imperial_of_Brazil
-  AddLiteral (e647f20c-e9ef-4268-a94c-f8f288a3a1da)
- Call ID: e647f20c-e9ef-4268-a94c-f8f288a3a1da
-  Args:
     literal_type: xsd:integer
-    source: Maria_di_Grazia
-    literal_value: 1908
+    source: James_Alexander_Elphinstone
+  AssignClass (3826afa1-6782-4649-b905-9b3f65cda932)
+ Call ID: 3826afa1-6782-4649-b905-9b3f65cda932
+  Args:
+    source: Andrew_Charles_Victor_Elphinstone
+    type: :Man
+  AssignClass (a2a2f6da-b0f1-429e-9f34-f7eab40ff064)
+ Call ID: a2a2f6da-b0f1-429e-9f34-f7eab40ff064
+  Args:
+    source: Andrew_Charles_Victor_Elphinstone
+    type: :Person
+  AddTriple (5c65575b-f111-49c6-85ba-6ff8fbaf97b9)
+ Call ID: 5c65575b-f111-49c6-85ba-6ff8fbaf97b9
+  Args:
+    target: Andrew_Charles_Victor_Elphinstone
+    relation: :hasFather
+    source: James_Alexander_Elphinstone
+  AssignClass (75ca66cc-7ee0-4d0f-a94b-2955fe0ccadd)
+ Call ID: 75ca66cc-7ee0-4d0f-a94b-2955fe0ccadd
+  Args:
+    source: Jean_Frances_Hambro
+    type: :Woman
+  AssignClass (df9e2d68-09a9-46ed-a716-781a8517a96f)
+ Call ID: df9e2d68-09a9-46ed-a716-781a8517a96f
+  Args:
+    source: Jean_Frances_Hambro
+    type: :Person
+  AddTriple (1b2e9cc4-bbc4-4eec-92fc-6806f94a649c)
+ Call ID: 1b2e9cc4-bbc4-4eec-92fc-6806f94a649c
+  Args:
+    relation: :hasMother
+    source: James_Alexander_Elphinstone
+    target: Jean_Frances_Hambro
+  AssignClass (3ff75f12-339f-485f-afde-73ae3c9b8c48)
+ Call ID: 3ff75f12-339f-485f-afde-73ae3c9b8c48
+  Args:
+    source: Sidney_Buller-Fullerton-Elphinstone
+    type: :Man
+  AssignClass (9aa3acca-db87-41b6-adba-397923376249)
+ Call ID: 9aa3acca-db87-41b6-adba-397923376249
+  Args:
+    source: Sidney_Buller-Fullerton-Elphinstone
+    type: :Person
+  AddTriple (c5834f0f-39ca-4581-a4b6-830aa8b9a5a7)
+ Call ID: c5834f0f-39ca-4581-a4b6-830aa8b9a5a7
+  Args:
+    target: Sidney_Buller-Fullerton-Elphinstone
+    relation: :hasFather
+    source: Andrew_Charles_Victor_Elphinstone
+  AssignClass (a0a73c8d-d0cb-4662-b74e-ca36b9466f36)
+ Call ID: a0a73c8d-d0cb-4662-b74e-ca36b9466f36
+  Args:
+    source: Mary_Bowes-Lyon
+    type: :Woman
+  AssignClass (5c8050f8-667e-46f4-82e3-3fb221eb2ca9)
+ Call ID: 5c8050f8-667e-46f4-82e3-3fb221eb2ca9
+  Args:
+    source: Mary_Bowes-Lyon
+    type: :Person
+  AddTriple (d144c16c-5099-4544-b626-0193c130a976)
+ Call ID: d144c16c-5099-4544-b626-0193c130a976
+  Args:
+    relation: :hasMother
+    source: Andrew_Charles_Victor_Elphinstone
+    target: Mary_Bowes-Lyon
+  AssignClass (bc68a49a-19e7-439d-a484-b7b14f790f0b)
+ Call ID: bc68a49a-19e7-439d-a484-b7b14f790f0b
+  Args:
+    source: Elizabeth_The_Queen_Mother
+    type: :Woman
+  AssignClass (305050d5-c358-42f2-aff4-a98bdcffc895)
+ Call ID: 305050d5-c358-42f2-aff4-a98bdcffc895
+  Args:
+    source: Elizabeth_The_Queen_Mother
+    type: :Person
+  AddTriple (0ef8ac56-6717-44bf-ba5b-e4c7fc57ec2d)
+ Call ID: 0ef8ac56-6717-44bf-ba5b-e4c7fc57ec2d
+  Args:
+    target: Elizabeth_The_Queen_Mother
+    source: Mary_Bowes-Lyon
+    relation: :isSisterOf
+  AssignClass (51a3836d-7cfd-46ca-a266-68d551f6732d)
+ Call ID: 51a3836d-7cfd-46ca-a266-68d551f6732d
+  Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    type: :Woman
+  AssignClass (5f2a2ea9-d58e-4252-a1b1-3cc9b5e91628)
+ Call ID: 5f2a2ea9-d58e-4252-a1b1-3cc9b5e91628
+  Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    type: :Person
+  AddLiteral (130c8a60-0169-4171-ac79-9e3d43b55cc4)
+ Call ID: 130c8a60-0169-4171-ac79-9e3d43b55cc4
+  Args:
+    literal_value: 1978
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (04ce76b7-1309-4735-a67c-336794223af3)
- Call ID: 04ce76b7-1309-4735-a67c-336794223af3
+    source: James_Alexander_Elphinstone
+  AddTriple (d6bf1222-5003-4c3f-af84-cdd840c35d6a)
+ Call ID: d6bf1222-5003-4c3f-af84-cdd840c35d6a
   Args:
+    source: James_Alexander_Elphinstone
     relation: :hasRelation
-    source: Maria_di_Grazia
-    target: Luiz_of_Orleans_Braganza
-  Finish (8d1d2abd-6596-45a1-9b1d-509290d4fd5e)
- Call ID: 8d1d2abd-6596-45a1-9b1d-509290d4fd5e
+    target: Willa_Mary_Gabrielle_Chetwode
+  AssignClass (78876099-c3d4-4683-a6ce-8b89a2ef92e1)
+ Call ID: 78876099-c3d4-4683-a6ce-8b89a2ef92e1
   Args:
+    source: George_David_Chetwode
+    type: :Man
+  AssignClass (4a7d0674-9fcd-4979-b263-2c75e6681ff9)
+ Call ID: 4a7d0674-9fcd-4979-b263-2c75e6681ff9
+  Args:
+    source: George_David_Chetwode
+    type: :Person
+  AddTriple (84d31e27-abea-4984-95e7-6ee0dc221988)
+ Call ID: 84d31e27-abea-4984-95e7-6ee0dc221988
+  Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    relation: :hasFather
+    target: George_David_Chetwode
+  AssignClass (cbcaeac0-14ff-492a-9806-702adf19247e)
+ Call ID: cbcaeac0-14ff-492a-9806-702adf19247e
+  Args:
+    source: Willa_Elliot-Murray-Kynynmound
+    type: :Woman
+  AssignClass (71dca0c6-58a5-4858-bfe0-e9b695e9c9cf)
+ Call ID: 71dca0c6-58a5-4858-bfe0-e9b695e9c9cf
+  Args:
+    source: Willa_Elliot-Murray-Kynynmound
+    type: :Person
+  AddTriple (22bf81c8-0951-4099-a950-9975693b603d)
+ Call ID: 22bf81c8-0951-4099-a950-9975693b603d
+  Args:
+    target: Willa_Elliot-Murray-Kynynmound
+    source: Willa_Mary_Gabrielle_Chetwode
+    relation: :hasMother
+  AssignClass (196c5ffb-71c0-4db5-ae0f-0345fcabbcb6)
+ Call ID: 196c5ffb-71c0-4db5-ae0f-0345fcabbcb6
+  Args:
+    source: Victor_Elliot-Murray-Kynynmound
+    type: :Man
+  AssignClass (ec7ad173-fed3-4f8c-a951-5e06374c2dac)
+ Call ID: ec7ad173-fed3-4f8c-a951-5e06374c2dac
+  Args:
+    source: Victor_Elliot-Murray-Kynynmound
+    type: :Person
+  AddTriple (4529ebcf-7377-4a76-b210-8693962ca0aa)
+ Call ID: 4529ebcf-7377-4a76-b210-8693962ca0aa
+  Args:
+    target: Victor_Elliot-Murray-Kynynmound
+    relation: :hasFather
+    source: Willa_Elliot-Murray-Kynynmound
+  AssignClass (5e17693f-b76c-4daf-9bf8-ce19bb6f7d99)
+ Call ID: 5e17693f-b76c-4daf-9bf8-ce19bb6f7d99
+  Args:
+    source: Marion_Cook
+    type: :Woman
+  AssignClass (30a6e5a8-3972-40e8-983b-6a135dd3e89a)
+ Call ID: 30a6e5a8-3972-40e8-983b-6a135dd3e89a
+  Args:
+    source: Marion_Cook
+    type: :Person
+  AddTriple (1eea046c-6895-44a9-9b08-e07f6a9a673b)
+ Call ID: 1eea046c-6895-44a9-9b08-e07f6a9a673b
+  Args:
+    source: Willa_Elliot-Murray-Kynynmound
+    relation: :hasMother
+    target: Marion_Cook
+  AssignClass (95eaa394-5c94-47f9-aca6-4b0371d7bc99)
+ Call ID: 95eaa394-5c94-47f9-aca6-4b0371d7bc99
+  Args:
+    source: Alexander_Elphinstone
+    type: :Man
+  AssignClass (baa15fb2-25df-4583-8dad-9883fcf82970)
+ Call ID: baa15fb2-25df-4583-8dad-9883fcf82970
+  Args:
+    source: Alexander_Elphinstone
+    type: :Person
+  AddTriple (edee7cf8-4ccf-4b61-b603-6e197bac10d8)
+ Call ID: edee7cf8-4ccf-4b61-b603-6e197bac10d8
+  Args:
+    relation: :hasFather
+    source: Alexander_Elphinstone
+    target: James_Alexander_Elphinstone
+  AddTriple (b7702c7d-b11d-40b2-baf1-8c4aa2c9580b)
+ Call ID: b7702c7d-b11d-40b2-baf1-8c4aa2c9580b
+  Args:
+    target: Willa_Mary_Gabrielle_Chetwode
+    relation: :hasMother
+    source: Alexander_Elphinstone
+  Finish (7d927257-256f-49b6-a790-a0a96590f785)
+ Call ID: 7d927257-256f-49b6-a790-a0a96590f785
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -560,32 +828,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Maria_di_Grazia a :Woman ;
-      :hasBirthYear 1878 ;
-      :hasDeathYear 1973 ;
-      :hasFather data:Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1908 ;
-      :hasMother data:Antonietta_of_Bourbon_Two_Sicilies ;
-      :hasRelation data:Luiz_of_Orleans_Braganza ;
-      :knownAs "Maria Pia"^^xsd:string .
+  data:Alexander_Elphinstone a :Man,
+          :Person ;
+      :hasFather data:James_Alexander_Elphinstone ;
+      :hasMother data:Willa_Mary_Gabrielle_Chetwode .
 
-  data:Alfonso_Count_of_Caserta a :Man ;
-      :hasBrother data:Francis_II_of_the_Two_Sicilies ;
-      :hasFather data:Ferdinand_II_of_the_Two_Sicilies .
+  data:Andrew_Charles_Victor_Elphinstone a :Man,
+          :Person ;
+      :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
+      :hasMother data:Mary_Bowes-Lyon .
 
-  data:Antonietta_of_Bourbon_Two_Sicilies a :Woman .
+  data:Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
 
-  data:Ferdinand_II_of_the_Two_Sicilies a :Man .
+  data:George_David_Chetwode a :Man,
+          :Person .
 
-  data:Francis_II_of_the_Two_Sicilies a :Man .
+  data:James_Alexander_Elphinstone a :Man,
+          :Person ;
+      :hasBirthYear 1953 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Jean_Frances_Hambro ;
+      :hasRelation data:Willa_Mary_Gabrielle_Chetwode .
 
-  data:Gaston_of_Orleans_Count_of_Eu a :Man .
+  data:Jean_Frances_Hambro a :Person,
+          :Woman .
 
-  data:Isabel_Princess_Imperial_of_Brazil a :Woman .
+  data:Marion_Cook a :Person,
+          :Woman .
 
-  data:Luiz_of_Orleans_Braganza a :Man ;
-      :hasFather data:Gaston_of_Orleans_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+  data:Mary_Bowes-Lyon a :Person,
+          :Woman ;
+      :isSisterOf data:Elizabeth_The_Queen_Mother .
+
+  data:Sidney_Buller-Fullerton-Elphinstone a :Man,
+          :Person .
+
+  data:Victor_Elliot-Murray-Kynynmound a :Man,
+          :Person .
+
+  data:Willa_Elliot-Murray-Kynynmound a :Person,
+          :Woman ;
+      :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+      :hasMother data:Marion_Cook .
+
+  data:Willa_Mary_Gabrielle_Chetwode a :Person,
+          :Woman ;
+      :hasFather data:George_David_Chetwode ;
+      :hasMother data:Willa_Elliot-Murray-Kynynmound .
 
 
 
@@ -597,964 +889,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (db8805d0-bed4-492b-84b0-be411be70a10)
- Call ID: db8805d0-bed4-492b-84b0-be411be70a10
+  ValidateShacl (fa85102e-958c-44cc-85cd-3c5aaaf395d0)
+ Call ID: fa85102e-958c-44cc-85cd-3c5aaaf395d0
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Gaston_of_Orleans_Count_of_Eu is linked as the father of Luiz_of_Orleans_Braganza, but it is not classified as an :Ancestor.
+      The value node Andrew_Charles_Victor_Elphinstone for the property hasFather on James_Alexander_Elphinstone lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gaston_of_Orleans_Count_of_Eu, :Ancestor)
+      AssignClass(node: "Andrew_Charles_Victor_Elphinstone", class: ":Man")
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Ferdinand_II_of_the_Two_Sicilies is linked as the father of Alfonso_Count_of_Caserta, but it is not classified as an :Ancestor.
+      The value node James_Alexander_Elphinstone for the property hasFather on Alexander_Elphinstone lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ferdinand_II_of_the_Two_Sicilies, :Ancestor)
+      AssignClass(node: "James_Alexander_Elphinstone", class: ":Man")
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Isabel_Princess_Imperial_of_Brazil is linked as the mother of Luiz_of_Orleans_Braganza, but it is not classified as an :Ancestor.
+      The value node Sidney_Buller-Fullerton-Elphinstone for the property hasFather on Andrew_Charles_Victor_Elphinstone lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabel_Princess_Imperial_of_Brazil, :Ancestor)
+      AssignClass(node: "Sidney_Buller-Fullerton-Elphinstone", class: ":Man")
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ferdinand_II_of_the_Two_Sicilies is linked as the father of Alfonso_Count_of_Caserta, but it is missing the mandatory :Ancestor class.
+      The value node Jean_Frances_Hambro for the property hasMother on James_Alexander_Elphinstone lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ferdinand_II_of_the_Two_Sicilies, :Ancestor)
+      AssignClass(node: "Jean_Frances_Hambro", class: ":Woman")
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Gaston_of_Orleans_Count_of_Eu is linked as the father of Luiz_of_Orleans_Braganza, but it is missing the mandatory :Ancestor class.
+      The value node Willa_Mary_Gabrielle_Chetwode for the property hasMother on Alexander_Elphinstone lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gaston_of_Orleans_Count_of_Eu, :Ancestor)
+      AssignClass(node: "Willa_Mary_Gabrielle_Chetwode", class: ":Woman")
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alfonso_Count_of_Caserta is linked as the father of Maria_di_Grazia, but it is not classified as an :Ancestor.
+      The value node Mary_Bowes-Lyon for the property hasMother on Andrew_Charles_Victor_Elphinstone lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_Count_of_Caserta, :Ancestor)
+      AssignClass(node: "Mary_Bowes-Lyon", class: ":Woman")
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Isabel_Princess_Imperial_of_Brazil is linked as the mother of Luiz_of_Orleans_Braganza, but it is missing the mandatory :Ancestor class.
+      The value node Andrew_Charles_Victor_Elphinstone for the property hasFather on James_Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabel_Princess_Imperial_of_Brazil, :Ancestor)
+      AssignClass(node: "Andrew_Charles_Victor_Elphinstone", class: ":Ancestor")
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Antonietta_of_Bourbon_Two_Sicilies is linked as the mother of Maria_di_Grazia, but it is not classified as an :Ancestor.
+      The value node James_Alexander_Elphinstone for the property hasFather on Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonietta_of_Bourbon_Two_Sicilies, :Ancestor)
+      AssignClass(node: "James_Alexander_Elphinstone", class: ":Ancestor")
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Ferdinand_II_of_the_Two_Sicilies is linked as the father of Alfonso_Count_of_Caserta, but it is missing the mandatory :Ancestor class.
+      The value node George_David_Chetwode for the property hasFather on Willa_Mary_Gabrielle_Chetwode lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ferdinand_II_of_the_Two_Sicilies, :Ancestor)
+      AssignClass(node: "George_David_Chetwode", class: ":Man")
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Gaston_of_Orleans_Count_of_Eu is linked as the father of Luiz_of_Orleans_Braganza, but it is missing the mandatory :Ancestor class.
+      The value node Sidney_Buller-Fullerton-Elphinstone for the property hasFather on Andrew_Charles_Victor_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gaston_of_Orleans_Count_of_Eu, :Ancestor)
+      AssignClass(node: "Sidney_Buller-Fullerton-Elphinstone", class: ":Ancestor")
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_Count_of_Caserta is linked as the father of Maria_di_Grazia, but it is missing the mandatory :Ancestor class.
+      The value node Victor_Elliot-Murray-Kynynmound for the property hasFather on Willa_Elliot-Murray-Kynynmound lacks the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_Count_of_Caserta, :Ancestor)
+      AssignClass(node: "Victor_Elliot-Murray-Kynynmound", class: ":Man")
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Isabel_Princess_Imperial_of_Brazil is linked as the mother of Luiz_of_Orleans_Braganza, but it is missing the mandatory :Ancestor class.
+      The value node Jean_Frances_Hambro for the property hasMother on James_Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabel_Princess_Imperial_of_Brazil, :Ancestor)
+      AssignClass(node: "Jean_Frances_Hambro", class: ":Ancestor")
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Antonietta_of_Bourbon_Two_Sicilies is linked as the mother of Maria_di_Grazia, but it is missing the mandatory :Ancestor class.
+      The value node Willa_Mary_Gabrielle_Chetwode for the property hasMother on Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonietta_of_Bourbon_Two_Sicilies, :Ancestor)
+      AssignClass(node: "Willa_Mary_Gabrielle_Chetwode", class: ":Ancestor")
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alfonso_Count_of_Caserta is linked as the father of Maria_di_Grazia, but it is missing the mandatory :Ancestor class.
+      The value node Willa_Elliot-Murray-Kynynmound for the property hasMother on Willa_Mary_Gabrielle_Chetwode lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_Count_of_Caserta, :Ancestor)
+      AssignClass(node: "Willa_Elliot-Murray-Kynynmound", class: ":Woman")
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Antonietta_of_Bourbon_Two_Sicilies is linked as the mother of Maria_di_Grazia, but it is missing the mandatory :Ancestor class.
+      The value node Mary_Bowes-Lyon for the property hasMother on Andrew_Charles_Victor_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Antonietta_of_Bourbon_Two_Sicilies, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (8aed1f70-b538-45fa-8f05-891eaa554734)
- Call ID: 8aed1f70-b538-45fa-8f05-891eaa554734
-  Args:
-    type: :Ancestor
-    source: Gaston_of_Orleans_Count_of_Eu
-  AssignClass (9248e0d7-dd27-4981-b1c3-c4d1582f6252)
- Call ID: 9248e0d7-dd27-4981-b1c3-c4d1582f6252
-  Args:
-    type: :Ancestor
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (03ee0f79-a7be-4bb0-891f-0f308a7e76c2)
- Call ID: 03ee0f79-a7be-4bb0-891f-0f308a7e76c2
-  Args:
-    type: :Ancestor
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (4c055fd8-3e8d-41bd-ba1d-e2d443ea3922)
- Call ID: 4c055fd8-3e8d-41bd-ba1d-e2d443ea3922
-  Args:
-    type: :Ancestor
-    source: Alfonso_Count_of_Caserta
-  AssignClass (700ea30b-564e-4294-9e6c-5fee1e0458ad)
- Call ID: 700ea30b-564e-4294-9e6c-5fee1e0458ad
-  Args:
-    type: :Ancestor
-    source: Antonietta_of_Bourbon_Two_Sicilies
-  AddTriple (b41d155a-4355-4102-9e2b-95c451a304ff)
- Call ID: b41d155a-4355-4102-9e2b-95c451a304ff
-  Args:
-    source: Maria_di_Grazia
-    target: Female
-    relation: :hasSex
-  AddTriple (3d3a4fcb-c35c-4e11-b105-b46e67ac2c98)
- Call ID: 3d3a4fcb-c35c-4e11-b105-b46e67ac2c98
-  Args:
-    target: Male
-    source: Alfonso_Count_of_Caserta
-    relation: :hasSex
-  AddTriple (7145e5ac-bc57-4886-ac8b-fe5cd8a443bf)
- Call ID: 7145e5ac-bc57-4886-ac8b-fe5cd8a443bf
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Antonietta_of_Bourbon_Two_Sicilies
-  AddTriple (e3111212-d047-4879-97e9-3812d17ae662)
- Call ID: e3111212-d047-4879-97e9-3812d17ae662
-  Args:
-    relation: :hasSex
-    source: Luiz_of_Orleans_Braganza
-    target: Male
-  AddTriple (30c738e2-e168-424d-ac32-e74d72e36068)
- Call ID: 30c738e2-e168-424d-ac32-e74d72e36068
-  Args:
-    source: Gaston_of_Orleans_Count_of_Eu
-    target: Male
-    relation: :hasSex
-  AddTriple (6b8e4b97-a195-44a1-87eb-0726e36f7acf)
- Call ID: 6b8e4b97-a195-44a1-87eb-0726e36f7acf
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Isabel_Princess_Imperial_of_Brazil
-  AddTriple (9f3458c8-1f62-4a1a-8819-dfdb5b1c1763)
- Call ID: 9f3458c8-1f62-4a1a-8819-dfdb5b1c1763
-  Args:
-    relation: :hasSex
-    source: Ferdinand_II_of_the_Two_Sicilies
-    target: Male
-  AddTriple (922de183-f7b4-44f3-94eb-9112a610885a)
- Call ID: 922de183-f7b4-44f3-94eb-9112a610885a
-  Args:
-    relation: :hasSex
-    target: Male
-    source: Francis_II_of_the_Two_Sicilies
-  Finish (e3ed9699-057b-4d1e-ba33-8c2a0bfea2aa)
- Call ID: e3ed9699-057b-4d1e-ba33-8c2a0bfea2aa
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Maria_di_Grazia a :Woman ;
-      :hasBirthYear 1878 ;
-      :hasDeathYear 1973 ;
-      :hasFather data:Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1908 ;
-      :hasMother data:Antonietta_of_Bourbon_Two_Sicilies ;
-      :hasRelation data:Luiz_of_Orleans_Braganza ;
-      :hasSex data:Female ;
-      :knownAs "Maria Pia"^^xsd:string .
-
-  data:Alfonso_Count_of_Caserta a :Ancestor,
-          :Man ;
-      :hasBrother data:Francis_II_of_the_Two_Sicilies ;
-      :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
-      :hasSex data:Male .
-
-  data:Antonietta_of_Bourbon_Two_Sicilies a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Francis_II_of_the_Two_Sicilies a :Man ;
-      :hasSex data:Male .
-
-  data:Gaston_of_Orleans_Count_of_Eu a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Luiz_of_Orleans_Braganza a :Man ;
-      :hasFather data:Gaston_of_Orleans_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (f1429cbe-387e-45a5-8a69-833afcd486b1)
- Call ID: f1429cbe-387e-45a5-8a69-833afcd486b1
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:79
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Mary_Bowes-Lyon", class: ":Ancestor")
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node Marion_Cook for the property hasMother on Willa_Elliot-Murray-Kynynmound lacks the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Marion_Cook", class: ":Woman")
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node Andrew_Charles_Victor_Elphinstone for the property hasFather on James_Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Andrew_Charles_Victor_Elphinstone", class: ":Man")
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
+      The value node James_Alexander_Elphinstone for the property hasFather on Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "James_Alexander_Elphinstone", class: ":Man")
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
+      The value node George_David_Chetwode for the property hasFather on Willa_Mary_Gabrielle_Chetwode is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "George_David_Chetwode", class: ":Ancestor")
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
+      The value node Sidney_Buller-Fullerton-Elphinstone for the property hasFather on Andrew_Charles_Victor_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Sidney_Buller-Fullerton-Elphinstone", class: ":Man")
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node Victor_Elliot-Murray-Kynynmound for the property hasFather on Willa_Elliot-Murray-Kynynmound is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Victor_Elliot-Murray-Kynynmound", class: ":Ancestor")
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node Jean_Frances_Hambro for the property hasMother on James_Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Jean_Frances_Hambro", class: ":Woman")
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
+      The value node Willa_Mary_Gabrielle_Chetwode for the property hasMother on Alexander_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Willa_Mary_Gabrielle_Chetwode", class: ":Woman")
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
+      The value node Willa_Elliot-Murray-Kynynmound for the property hasMother on Willa_Mary_Gabrielle_Chetwode is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Willa_Elliot-Murray-Kynynmound", class: ":Ancestor")
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
+      The value node Mary_Bowes-Lyon for the property hasMother on Andrew_Charles_Victor_Elphinstone is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Mary_Bowes-Lyon", class: ":Woman")
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
+      The value node Marion_Cook for the property hasMother on Willa_Elliot-Murray-Kynynmound is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
+      AssignClass(node: "Marion_Cook", class: ":Ancestor")
 
 
   Violation [27]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
+      The value node Victor_Elliot-Murray-Kynynmound for the property hasFather on Willa_Elliot-Murray-Kynynmound is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Victor_Elliot-Murray-Kynynmound", class: ":Man")
 
 
   Violation [28]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node George_David_Chetwode for the property hasFather on Willa_Mary_Gabrielle_Chetwode is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "George_David_Chetwode", class: ":Man")
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
+      The value node Marion_Cook for the property hasMother on Willa_Elliot-Murray-Kynynmound is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
+      AssignClass(node: "Marion_Cook", class: ":Woman")
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
+      The value node Willa_Elliot-Murray-Kynynmound for the property hasMother on Willa_Mary_Gabrielle_Chetwode is already handled; ensuring consistency in class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Alfonso_Count_of_Caserta is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Francis_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Ferdinand_II_of_the_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Gaston_of_Orleans_Count_of_Eu is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :Luiz_of_Orleans_Braganza is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Male :Sex
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Isabel_Princess_Imperial_of_Brazil is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Maria_di_Grazia is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :Antonietta_of_Bourbon_Two_Sicilies is not typed as a :Sex class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass :Female :Sex
+      AssignClass(node: "Willa_Elliot-Murray-Kynynmound", class: ":Woman")
 
 
 
@@ -1563,19 +1145,91 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3f32085c-8cdb-43d6-8259-13b89116480f)
- Call ID: 3f32085c-8cdb-43d6-8259-13b89116480f
+  AssignClass (fe3e0fcb-262d-4837-a6a7-e24a1647a71b)
+ Call ID: fe3e0fcb-262d-4837-a6a7-e24a1647a71b
   Args:
-    source: Female
-    type: :Sex
-  AssignClass (18ebb72b-17b2-4566-8830-a2eb88105dec)
- Call ID: 18ebb72b-17b2-4566-8830-a2eb88105dec
+    type: :Ancestor
+    source: Andrew_Charles_Victor_Elphinstone
+  AssignClass (793dbcd4-c478-4b58-8616-dccf422860fd)
+ Call ID: 793dbcd4-c478-4b58-8616-dccf422860fd
   Args:
-    source: Male
-    type: :Sex
-  Finish (30325415-8540-4fbf-a6ab-6fed11e6ce4f)
- Call ID: 30325415-8540-4fbf-a6ab-6fed11e6ce4f
+    type: :Ancestor
+    source: James_Alexander_Elphinstone
+  AssignClass (2c4b7a42-8441-47f6-8af6-5991b1bf95d4)
+ Call ID: 2c4b7a42-8441-47f6-8af6-5991b1bf95d4
   Args:
+    type: :Ancestor
+    source: Sidney_Buller-Fullerton-Elphinstone
+  AssignClass (2b7f9035-b8ee-4851-8ce0-ae3171a2b1d2)
+ Call ID: 2b7f9035-b8ee-4851-8ce0-ae3171a2b1d2
+  Args:
+    source: Jean_Frances_Hambro
+    type: :Ancestor
+  AssignClass (eb9395a2-1777-4173-b4f6-1b7f25c6c7d7)
+ Call ID: eb9395a2-1777-4173-b4f6-1b7f25c6c7d7
+  Args:
+    type: :Ancestor
+    source: Willa_Mary_Gabrielle_Chetwode
+  AssignClass (e6a844fc-ba53-4534-bda9-088658517a7d)
+ Call ID: e6a844fc-ba53-4534-bda9-088658517a7d
+  Args:
+    type: :Ancestor
+    source: Mary_Bowes-Lyon
+  AssignClass (d4509cce-dd1f-40b3-8ea0-0b72590f9a79)
+ Call ID: d4509cce-dd1f-40b3-8ea0-0b72590f9a79
+  Args:
+    source: George_David_Chetwode
+    type: :Ancestor
+  AssignClass (294596d3-75e9-43d0-add9-319515b6347b)
+ Call ID: 294596d3-75e9-43d0-add9-319515b6347b
+  Args:
+    source: Victor_Elliot-Murray-Kynynmound
+    type: :Ancestor
+  AssignClass (489684e4-2dc7-4b0c-91f0-63582a8b2ba2)
+ Call ID: 489684e4-2dc7-4b0c-91f0-63582a8b2ba2
+  Args:
+    type: :Ancestor
+    source: Willa_Elliot-Murray-Kynynmound
+  AssignClass (d1d44b6f-8382-419a-a932-a5babdd3adec)
+ Call ID: d1d44b6f-8382-419a-a932-a5babdd3adec
+  Args:
+    type: :Ancestor
+    source: Marion_Cook
+  Finish (f06fad94-d8aa-4d5d-99b7-ff6f483bdd5b)
+ Call ID: f06fad94-d8aa-4d5d-99b7-ff6f483bdd5b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1588,49 +1242,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Maria_di_Grazia a :Woman ;
-      :hasBirthYear 1878 ;
-      :hasDeathYear 1973 ;
-      :hasFather data:Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1908 ;
-      :hasMother data:Antonietta_of_Bourbon_Two_Sicilies ;
-      :hasRelation data:Luiz_of_Orleans_Braganza ;
-      :hasSex data:Female ;
-      :knownAs "Maria Pia"^^xsd:string .
+  data:Alexander_Elphinstone a :Man,
+          :Person ;
+      :hasFather data:James_Alexander_Elphinstone ;
+      :hasMother data:Willa_Mary_Gabrielle_Chetwode .
 
-  data:Alfonso_Count_of_Caserta a :Ancestor,
-          :Man ;
-      :hasBrother data:Francis_II_of_the_Two_Sicilies ;
-      :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
-      :hasSex data:Male .
+  data:Andrew_Charles_Victor_Elphinstone a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Sidney_Buller-Fullerton-Elphinstone ;
+      :hasMother data:Mary_Bowes-Lyon .
 
-  data:Antonietta_of_Bourbon_Two_Sicilies a :Ancestor,
+  data:Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
+
+  data:George_David_Chetwode a :Ancestor,
+          :Man,
+          :Person .
+
+  data:James_Alexander_Elphinstone a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1953 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Andrew_Charles_Victor_Elphinstone ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Jean_Frances_Hambro ;
+      :hasRelation data:Willa_Mary_Gabrielle_Chetwode .
+
+  data:Jean_Frances_Hambro a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Marion_Cook a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Mary_Bowes-Lyon a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isSisterOf data:Elizabeth_The_Queen_Mother .
 
-  data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Sidney_Buller-Fullerton-Elphinstone a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Francis_II_of_the_Two_Sicilies a :Man ;
-      :hasSex data:Male .
+  data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Gaston_of_Orleans_Count_of_Eu a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+  data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Victor_Elliot-Murray-Kynynmound ;
+      :hasMother data:Marion_Cook .
 
-  data:Luiz_of_Orleans_Braganza a :Man ;
-      :hasFather data:Gaston_of_Orleans_Count_of_Eu ;
-      :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:George_David_Chetwode ;
+      :hasMother data:Willa_Elliot-Murray-Kynynmound .
 
 
 
@@ -1642,8 +1313,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (849901eb-addc-4400-835f-4c310e6fec06)
- Call ID: 849901eb-addc-4400-835f-4c310e6fec06
+  ValidateShacl (0c2b32e3-d833-4c0a-b151-0c14548e9db8)
+ Call ID: 0c2b32e3-d833-4c0a-b151-0c14548e9db8
   Args:
 
 ================================= Tool Message =================================
@@ -1654,6 +1325,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (12ca9340-4291-4c99-8fd7-1dded1748655)
- Call ID: 12ca9340-4291-4c99-8fd7-1dded1748655
+  Finish (629e1406-48d9-41a4-92ff-b72f8881e9f6)
+ Call ID: 629e1406-48d9-41a4-92ff-b72f8881e9f6
   Args:

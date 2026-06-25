@@ -1,0 +1,292 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Princess_Xenia_Georgievna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Princess Xenia Georgievna of Russia"^^xsd:string ;
+    data:posIndicesFull "2073:2108"^^xsd:string ;
+    data:posIndicesPart "2205:2211"^^xsd:string,
+        "2927:2932"^^xsd:string,
+        "2976:2981"^^xsd:string,
+        "3107:3113"^^xsd:string,
+        "3157:3163"^^xsd:string ;
+    data:wdtLink wdt:Q433753 ;
+    :alsoKnownAs "Xenia Georgievna Holstein-Gottorp-Romanova"^^xsd:string,
+        "Xenia Georgievna Romanova"^^xsd:string,
+        "Xenia Georgievna of Holstein-Gottorp"^^xsd:string ;
+    :hasRelation data:Princess_Xenia_Georgievna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Xenia_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSiblingOf data:Princess_Xenia_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Xenia_Georgievna_of_Russia .
+
+data:male a :Male .
+
+data:Prince_Jean_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Jean d’Orléans"^^xsd:string ;
+    data:posIndicesFull "2394:2408"^^xsd:string ;
+    data:posIndicesPart "2793:2799"^^xsd:string,
+        "2856:2862"^^xsd:string,
+        "3181:3187"^^xsd:string,
+        "3377:3383"^^xsd:string,
+        "3607:3613"^^xsd:string,
+        "3757:3763"^^xsd:string ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Jean d’Orléans"^^xsd:string,
+        "Prince Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Prince Jean, Duke of Guise"^^xsd:string ;
+    :hasBrother data:Prince_Jean_dOrléans_1 ;
+    :hasChild data:Princess_Françoise_of_Orléans ;
+    :hasDaughter data:Princess_Françoise_of_Orléans ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :isBloodrelationOf data:Prince_Jean_dOrléans_1 ;
+    :isBrotherOf data:Prince_Jean_dOrléans_1 ;
+    :isFatherOf data:Princess_Françoise_of_Orléans ;
+    :isParentOf data:Princess_Françoise_of_Orléans ;
+    :isSiblingOf data:Prince_Jean_dOrléans_1 ;
+    :isUncleOf data:Princess_Françoise_of_Orléans .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "523:541"^^xsd:string,
+        "528:541"^^xsd:string ;
+    data:posIndicesPart "2173:2179"^^xsd:string,
+        "3779:3785"^^xsd:string,
+        "814:820"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Princess_Françoise_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Françoise of Orléans"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "2297:2326"^^xsd:string,
+        "2306:2326"^^xsd:string ;
+    data:posIndicesPart "1066:1074"^^xsd:string,
+        "1845:1853"^^xsd:string,
+        "2366:2375"^^xsd:string,
+        "2625:2632"^^xsd:string,
+        "2704:2713"^^xsd:string,
+        "991:999"^^xsd:string ;
+    data:wdtLink wdt:Q577228 ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans"^^xsd:string,
+        "Françoise Isabelle Louise Marie of Orléans"^^xsd:string,
+        "Françoise of Guise"^^xsd:string,
+        "Françoise of Orléans"^^xsd:string,
+        "Princess Christopher of Greece and Denmark"^^xsd:string,
+        "Princess François d'Orléans"^^xsd:string,
+        "Princess Françoise Isabelle Louise Marie d'Orléans"^^xsd:string,
+        "Princess Françoise Isabelle Louise Marie of Orléans"^^xsd:string,
+        "Princess Françoise, Princess Christopher of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Prince_Jean_dOrléans_1 ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Jean_dOrléans_1 ;
+    :hasParent data:Prince_Jean_dOrléans_1 ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Françoise_of_Orléans ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Françoise_of_Orléans ;
+    :isChildOf data:Prince_Jean_dOrléans_1 ;
+    :isDaughterOf data:Prince_Jean_dOrléans_1 ;
+    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Françoise_of_Orléans ;
+    :isSisterOf data:Princess_Françoise_of_Orléans .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1204:1212"^^xsd:string,
+        "1204:1222"^^xsd:string,
+        "175:198"^^xsd:string,
+        "180:188"^^xsd:string,
+        "180:198"^^xsd:string,
+        "379:402"^^xsd:string,
+        "384:392"^^xsd:string,
+        "384:402"^^xsd:string ;
+    data:posIndicesPart "2173:2179"^^xsd:string,
+        "2195:2201"^^xsd:string,
+        "3779:3785"^^xsd:string,
+        "543:549"^^xsd:string,
+        "814:820"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "468:475"^^xsd:string ;
+    data:posIndicesPart "1224:1235"^^xsd:string,
+        "1282:1293"^^xsd:string,
+        "1488:1494"^^xsd:string,
+        "1526:1537"^^xsd:string,
+        "1667:1678"^^xsd:string,
+        "1960:1966"^^xsd:string,
+        "1967:1978"^^xsd:string,
+        "2118:2129"^^xsd:string,
+        "2173:2179"^^xsd:string,
+        "2241:2247"^^xsd:string,
+        "2248:2259"^^xsd:string,
+        "2793:2799"^^xsd:string,
+        "2800:2811"^^xsd:string,
+        "2856:2862"^^xsd:string,
+        "2863:2874"^^xsd:string,
+        "3181:3187"^^xsd:string,
+        "3188:3199"^^xsd:string,
+        "321:332"^^xsd:string,
+        "3377:3383"^^xsd:string,
+        "3384:3395"^^xsd:string,
+        "3607:3613"^^xsd:string,
+        "3614:3625"^^xsd:string,
+        "3757:3763"^^xsd:string,
+        "3764:3775"^^xsd:string,
+        "3779:3785"^^xsd:string,
+        "572:583"^^xsd:string,
+        "814:820"^^xsd:string,
+        "852:863"^^xsd:string ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo"^^xsd:string,
+        "Prince Christophoros of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Michael_of_Greece_and_Denmark .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "2715:2751"^^xsd:string ;
+    data:posIndicesPart "2856:2862"^^xsd:string,
+        "3181:3187"^^xsd:string,
+        "3377:3383"^^xsd:string,
+        "3607:3613"^^xsd:string,
+        "3757:3763"^^xsd:string,
+        "3779:3785"^^xsd:string ;
+    data:wdtLink wdt:Q724825 ;
+    :alsoKnownAs "Michel de Grece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_dOrléans_1,
+        data:Princess_Françoise_of_Orléans ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Françoise_of_Orléans ;
+    :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasRelation data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Prince_Jean_dOrléans_1,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Françoise_of_Orléans .
+

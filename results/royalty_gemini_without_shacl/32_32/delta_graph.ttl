@@ -2,26 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:Kazimierz_Wieslaw_Mystkowski a :Man,
+        :Person .
+
 data:Princess_Maria_of_Romania a :Person,
         :Woman ;
     :alsoKnownAs "Marie de Roumanie"^^xsd:string,
         "Mia Mystkowski"^^xsd:string ;
     :hasBirthYear 1964 ;
+    :hasFather data:King_Michael_I ;
     :hasMarriageYear 1995 ;
-    :hasRelation data:Kazimierz_Wies%C5%82aw_Mystkowski ;
-    :isChildOf data:King_Michael_I,
-        data:Queen_Anne_of_Romania ;
-    :isSisterOf data:Princess_Elena,
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasSister data:Princess_Elena,
         data:Princess_Irina,
         data:Princess_Margareta,
         data:Princess_Sophie .
 
-data:Kazimierz_Wies%C5%82aw_Mystkowski a :Man,
-        :Person ;
-    :hasBirthYear 1958 .
-
-data:King_Michael_I a :Ancestor,
-        :Man,
+data:King_Michael_I a :Man,
         :Person .
 
 data:Princess_Elena a :Person,
@@ -36,7 +33,6 @@ data:Princess_Margareta a :Person,
 data:Princess_Sophie a :Person,
         :Woman .
 
-data:Queen_Anne_of_Romania a :Ancestor,
-        :Person,
+data:Queen_Anne_of_Romania a :Person,
         :Woman .
 

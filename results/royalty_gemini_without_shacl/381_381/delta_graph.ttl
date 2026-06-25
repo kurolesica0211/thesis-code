@@ -2,55 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Tatiana_Radziwi%C5%82%C5%82 a :Person,
+data:Sophie_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear 1939 ;
-    :hasBrother data:George_Radziwi%C5%82%C5%82 ;
-    :hasDaughter data:Fabiola_Fruchaud ;
-    :hasDeathYear 2025 ;
-    :hasFather data:Dominik_Rainer_Radziwi%C5%82%C5%82 ;
-    :hasMother data:Eug%C3%A9nie_of_Greece_and_Denmark ;
-    :hasRelation data:Jean_Henri_Fruchaud ;
-    :hasSon data:Alexis_Fruchaud ;
-    :knownAs "Tatiana Maria Renata Eugenia Elisabeth Margarete Radziwiłł"^^xsd:string .
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1930,
+        1946 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_George_William_of_Hanover ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Theodora_of_Greece_and_Denmark .
 
-data:Alexis_Fruchaud a :Man ;
-    :hasFather data:Jean_Henri_Fruchaud .
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Dominik_Rainer_Radziwi%C5%82%C5%82 a :Ancestor,
-        :Man ;
-    :hasFather data:Hieronim_Miko%C5%82aj_Radziwi%C5%82%C5%82 ;
-    :hasMother data:Renata_of_Austria .
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Eug%C3%A9nie_of_Greece_and_Denmark a :Ancestor,
-        :Woman ;
-    :hasFather data:George_of_Greece_and_Denmark ;
-    :hasMother data:Marie_Bonaparte .
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
 
-data:Fabiola_Fruchaud a :Woman ;
-    :hasFather data:Jean_Henri_Fruchaud .
+data:Prince_Christoph_of_Hesse a :Man,
+        :Person .
 
-data:George_I_of_Greece a :Man .
+data:Prince_George_William_of_Hanover a :Man,
+        :Person .
 
-data:George_Radziwi%C5%82%C5%82 a :Man .
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
 
-data:George_of_Greece_and_Denmark a :Man ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia .
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman .
 
-data:Hieronim_Miko%C5%82aj_Radziwi%C5%82%C5%82 a :Man .
-
-data:Marie-F%C3%A9lix_Blanc a :Woman .
-
-data:Marie_Bonaparte a :Woman ;
-    :hasFather data:Roland_Napol%C3%A9on_Bonaparte ;
-    :hasMother data:Marie-F%C3%A9lix_Blanc .
-
-data:Olga_Constantinovna_of_Russia a :Woman .
-
-data:Renata_of_Austria a :Woman .
-
-data:Roland_Napol%C3%A9on_Bonaparte a :Man .
-
-data:Jean_Henri_Fruchaud a :Man .
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
 

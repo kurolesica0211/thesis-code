@@ -69,26 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Edward Lascelles (born 5 October 1953) is an English musician and the second son of the 7th Earl of Harewood and his first wife, Marion.
-Lascelles is a second cousin to King Charles III.
-Music
+Queen Margrethe II
 
-When young, Lascelles had classical piano and drum lessons, and claims that "John Tavener 'taught' him to improvise" by performing duets on a church organ.
-Global Village Trucking Company
 
-Lascelles was a co-founder of the Global Village Trucking Company, known to its fans as "The Globs", in the early 1970s.
-Later career
+Countess Athena of Monpezat (born Athena Marguerite Françoise Marie; 24 January 2012) is a member of the Danish royal family.
+She is the younger child and only daughter of Prince Joachim and Princess Marie of Denmark.
+She is the youngest grandchild of Queen Margrethe II and Prince Henrik, and the niece of King Frederik X. Athena is currently ninth in the line of succession to the Danish throne.
+Biography
 
-Lascelles then became a session musician, until in 1980 he joined The Breakfast Band, a jazz/funk band, which released two albums, Dolphin Ride and Waters Edge, and had a dance hit, "L.A. 14".
-Lascelles played keyboards, synthesisers, and percussion for Cockney Rebel between 2000 and 2023, and continues to perform this role with  his own world music band, Talking Spirits, as of 2024.
-Lascelles also works with disaffected inner-city children.
-As of 2011 Lascelles was appearing with Mike Storey as "The Ivory Brothers".
+Athena was born a princess of Denmark on 24 January 2012 at Rigshospitalet, the Copenhagen University Hospital.
+She has two older half-brothers from her father's first marriage, Nikolai and Felix, and an older brother, Henrik.
+In accordance with Danish royal traditions, her names were not revealed until her christening, which took place on 20 May 2012 at the Møgeltønder Church, where her older brothers Felix and Henrik were also christened.
+She was named Athena Marguerite Françoise Marie for both of her grandmothers as well as for her mother.
+Her godparents are her maternal uncles, Gregory Grandet and Edouard Cavallier; Carina Axelsson, the long-term girlfriend of her father's cousin Gustav, Hereditary Prince of Sayn-Wittgenstein-Berleburg; and friends of her parents, Julie Mirabaud, Diego de Lavandeyra and Henriette Steenstrup.
+Joseph Søstrenes Skole – the same Catholic private school in Ordrup as her brother Henrik.
+In 2019, when Athena and her family moved to France, she was enrolled at the private school EIB Monceau in the 8th arrondissement of Paris alongside her brother.
+Titles and styles
+
+Athena was styled as "Her Highness Princess Athena of Denmark, Countess of Monpezat" from birth until 1 January 2023.
+In September 2022, Queen Margrethe II decided to restrict the titles Prince and Princess to the direct line of succession to the throne.
+Since 1 January 2023, she has been known as "Her Excellency Countess Athena of Monpezat".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +112,9 @@ As of 2011 Lascelles was appearing with Mike Storey as "The Ivory Brothers".
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +129,23 @@ As of 2011 Lascelles was appearing with Mike Storey as "The Ivory Brothers".
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,172 +437,152 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (daf9099a-074d-4d1e-94d5-f00895343112)
- Call ID: daf9099a-074d-4d1e-94d5-f00895343112
+  AssignClass (b87253ed-6240-49f5-b9ea-c5a1e57ea861)
+ Call ID: b87253ed-6240-49f5-b9ea-c5a1e57ea861
   Args:
-    type: :Person
-    source: James_Edward_Lascelles
-  AssignClass (b81bb0ee-b931-4b16-8de1-0fe286928516)
- Call ID: b81bb0ee-b931-4b16-8de1-0fe286928516
-  Args:
-    type: :Man
-    source: James_Edward_Lascelles
-  AddLiteral (8aeecf41-28c9-443d-a268-f36cea4c96ec)
- Call ID: 8aeecf41-28c9-443d-a268-f36cea4c96ec
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1953
-    source: James_Edward_Lascelles
-    relation: :hasBirthYear
-  AddTriple (e0c77fac-bb0f-43e3-a6f8-cf0335a51dd8)
- Call ID: e0c77fac-bb0f-43e3-a6f8-cf0335a51dd8
-  Args:
-    relation: :hasSex
-    source: James_Edward_Lascelles
-    target: :Male
-  AssignClass (3d349f24-0d62-4f02-9666-dbef8ff0fe03)
- Call ID: 3d349f24-0d62-4f02-9666-dbef8ff0fe03
-  Args:
-    type: :Person
-    source: 7th_Earl_of_Harewood
-  AssignClass (19cd05c7-9d07-49a9-8f8c-486045818240)
- Call ID: 19cd05c7-9d07-49a9-8f8c-486045818240
-  Args:
-    type: :Man
-    source: 7th_Earl_of_Harewood
-  AssignClass (3a71f200-6a1f-441d-aab6-5dd48053efb9)
- Call ID: 3a71f200-6a1f-441d-aab6-5dd48053efb9
-  Args:
-    type: :Person
-    source: Marion
-  AssignClass (c2cea465-5704-4d0b-886b-75837a1d8af6)
- Call ID: c2cea465-5704-4d0b-886b-75837a1d8af6
-  Args:
+    source: Athena_of_Monpezat
     type: :Woman
-    source: Marion
-  AddTriple (0e5863f5-69fd-4f1c-866f-3cddfadc3445)
- Call ID: 0e5863f5-69fd-4f1c-866f-3cddfadc3445
+  AssignClass (a52e8323-b48d-41ba-88c6-6d3282d67a8c)
+ Call ID: a52e8323-b48d-41ba-88c6-6d3282d67a8c
   Args:
-    target: :7th_Earl_of_Harewood
-    relation: :hasFather
-    source: James_Edward_Lascelles
-  AddTriple (fb472242-45ae-42a6-a224-e7840bd0e6ff)
- Call ID: fb472242-45ae-42a6-a224-e7840bd0e6ff
-  Args:
-    target: :Marion
-    relation: :hasMother
-    source: James_Edward_Lascelles
-  AssignClass (024d3fcc-e84c-4dc2-aa67-266cc058550d)
- Call ID: 024d3fcc-e84c-4dc2-aa67-266cc058550d
-  Args:
+    source: Athena_of_Monpezat
     type: :Person
-    source: King_Charles_III
-  AddTriple (00c02fb4-2d4f-4699-a44f-508de7a34619)
- Call ID: 00c02fb4-2d4f-4699-a44f-508de7a34619
+  AddLiteral (0149c2ae-d774-4f38-8d5f-47dc7722b8b3)
+ Call ID: 0149c2ae-d774-4f38-8d5f-47dc7722b8b3
   Args:
-    source: James_Edward_Lascelles
-    relation: :isBloodrelationOf
-    target: :King_Charles_III
-  Finish (f14a0127-6ce1-4af5-ba44-fd36c975762c)
- Call ID: f14a0127-6ce1-4af5-ba44-fd36c975762c
+    relation: :knownAs
+    literal_type: xsd:string
+    source: Athena_of_Monpezat
+    literal_value: Athena Marguerite Françoise Marie
+  AddLiteral (da48c7f7-a11f-40ea-b054-286e5c23f1e1)
+ Call ID: da48c7f7-a11f-40ea-b054-286e5c23f1e1
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:James_Edward_Lascelles a :Man,
-          :Person ;
-      :hasBirthYear 1953 ;
-      :hasFather data:7th_Earl_of_Harewood ;
-      :hasMother data:Marion ;
-      :hasSex data:Male ;
-      :isBloodrelationOf data:King_Charles_III .
-
-  data:7th_Earl_of_Harewood a :Man,
-          :Person .
-
-  data:King_Charles_III a :Person .
-
-  data:Marion a :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f9b14dc0-21c4-4167-b428-336e93874f6a)
- Call ID: f9b14dc0-21c4-4167-b428-336e93874f6a
+    literal_value: 2012
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Athena_of_Monpezat
+  AssignClass (635d12fc-4879-4b06-9000-e016bbc17c87)
+ Call ID: 635d12fc-4879-4b06-9000-e016bbc17c87
   Args:
-    type: :Sex
-    source: Male
-  Finish (c366c9ad-82fe-440f-99f0-0f6eb4a9532e)
- Call ID: c366c9ad-82fe-440f-99f0-0f6eb4a9532e
+    source: Prince_Joachim
+    type: :Man
+  AssignClass (f2e88f89-8538-4213-a7e8-5e4bcfe9d570)
+ Call ID: f2e88f89-8538-4213-a7e8-5e4bcfe9d570
+  Args:
+    source: Prince_Joachim
+    type: :Person
+  AssignClass (05055ed3-021d-43a2-88d7-bcec1400ba17)
+ Call ID: 05055ed3-021d-43a2-88d7-bcec1400ba17
+  Args:
+    source: Princess_Marie_of_Denmark
+    type: :Woman
+  AssignClass (33cc91cd-a4b0-4a36-a226-54a8a3d2de3a)
+ Call ID: 33cc91cd-a4b0-4a36-a226-54a8a3d2de3a
+  Args:
+    source: Princess_Marie_of_Denmark
+    type: :Person
+  AddTriple (f51642d0-2b33-4fbf-8398-d45ca972a2ed)
+ Call ID: f51642d0-2b33-4fbf-8398-d45ca972a2ed
+  Args:
+    target: Prince_Joachim
+    relation: :hasFather
+    source: Athena_of_Monpezat
+  AddTriple (6871f069-85b7-4609-89e4-27bed9232713)
+ Call ID: 6871f069-85b7-4609-89e4-27bed9232713
+  Args:
+    source: Athena_of_Monpezat
+    relation: :hasMother
+    target: Princess_Marie_of_Denmark
+  AssignClass (34f2acc8-c700-49f0-8355-39d9931651d1)
+ Call ID: 34f2acc8-c700-49f0-8355-39d9931651d1
+  Args:
+    source: Queen_Margrethe_II
+    type: :Woman
+  AssignClass (251267c9-4df1-4295-a962-0f959b8e8343)
+ Call ID: 251267c9-4df1-4295-a962-0f959b8e8343
+  Args:
+    source: Queen_Margrethe_II
+    type: :Person
+  AssignClass (bcb6a99d-7a1e-4d11-8cbd-fbcabf3e35fd)
+ Call ID: bcb6a99d-7a1e-4d11-8cbd-fbcabf3e35fd
+  Args:
+    source: Prince_Henrik
+    type: :Man
+  AssignClass (60f9b8a7-50a2-4565-af2e-01a68a8b4eff)
+ Call ID: 60f9b8a7-50a2-4565-af2e-01a68a8b4eff
+  Args:
+    source: Prince_Henrik
+    type: :Person
+  AddTriple (fde768fe-a2ec-4918-8d5a-f719c89bf307)
+ Call ID: fde768fe-a2ec-4918-8d5a-f719c89bf307
+  Args:
+    target: Queen_Margrethe_II
+    source: Prince_Joachim
+    relation: :hasParent
+  AddTriple (19fff6a3-6ad0-492e-90de-2c8f23970740)
+ Call ID: 19fff6a3-6ad0-492e-90de-2c8f23970740
+  Args:
+    target: Prince_Henrik
+    relation: :hasParent
+    source: Prince_Joachim
+  AssignClass (ea77876f-f648-4400-9c2c-223e5cb8576d)
+ Call ID: ea77876f-f648-4400-9c2c-223e5cb8576d
+  Args:
+    source: King_Frederik_X
+    type: :Man
+  AssignClass (fc68fa95-0772-4c8e-b385-2d885d6ce47a)
+ Call ID: fc68fa95-0772-4c8e-b385-2d885d6ce47a
+  Args:
+    source: King_Frederik_X
+    type: :Person
+  AssignClass (3cd872f5-f153-4f21-bff9-8a16b9deec28)
+ Call ID: 3cd872f5-f153-4f21-bff9-8a16b9deec28
+  Args:
+    source: Nikolai
+    type: :Man
+  AssignClass (d83f696e-89bb-4acd-ac45-246f0799942c)
+ Call ID: d83f696e-89bb-4acd-ac45-246f0799942c
+  Args:
+    source: Nikolai
+    type: :Person
+  AssignClass (d78a1742-23b1-4bd9-9604-4cfa10885260)
+ Call ID: d78a1742-23b1-4bd9-9604-4cfa10885260
+  Args:
+    source: Felix
+    type: :Man
+  AssignClass (97070a9a-04ba-4c1b-8d24-6037cc4b23a4)
+ Call ID: 97070a9a-04ba-4c1b-8d24-6037cc4b23a4
+  Args:
+    source: Felix
+    type: :Person
+  AssignClass (f8e1b9b7-3cce-49a0-92fc-b0de6bb55833)
+ Call ID: f8e1b9b7-3cce-49a0-92fc-b0de6bb55833
+  Args:
+    source: Henrik
+    type: :Man
+  AssignClass (31622f93-2473-4493-b2ca-4b463b15d92c)
+ Call ID: 31622f93-2473-4493-b2ca-4b463b15d92c
+  Args:
+    source: Henrik
+    type: :Person
+  AddTriple (62cd76ff-ee8b-4d5d-a0e3-5a55de5b3ad3)
+ Call ID: 62cd76ff-ee8b-4d5d-a0e3-5a55de5b3ad3
+  Args:
+    relation: :isSiblingOf
+    source: Athena_of_Monpezat
+    target: Henrik
+  AddTriple (97da0b4f-c7a1-487c-9182-ba289a10c250)
+ Call ID: 97da0b4f-c7a1-487c-9182-ba289a10c250
+  Args:
+    relation: :isSiblingOf
+    source: Athena_of_Monpezat
+    target: Nikolai
+  AddTriple (795283fc-58a6-4202-bac3-98a002d73d5e)
+ Call ID: 795283fc-58a6-4202-bac3-98a002d73d5e
+  Args:
+    target: Felix
+    source: Athena_of_Monpezat
+    relation: :isSiblingOf
+  Finish (63f7df76-5a4f-491f-98e8-261c35ca8c74)
+ Call ID: 63f7df76-5a4f-491f-98e8-261c35ca8c74
   Args:

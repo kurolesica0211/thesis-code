@@ -92,6 +92,8 @@ Pedro Henrique married Princess Maria Elisabeth of Bavaria at Nymphenburg Palace
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +109,9 @@ Pedro Henrique married Princess Maria Elisabeth of Bavaria at Nymphenburg Palace
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +126,23 @@ Pedro Henrique married Princess Maria Elisabeth of Bavaria at Nymphenburg Palace
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,121 +434,248 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (538e6f74-94c2-4bbc-b88c-23585e3ac437)
- Call ID: 538e6f74-94c2-4bbc-b88c-23585e3ac437
+  AssignClass (104bc95f-3857-48e8-ac69-c2c6d7d32061)
+ Call ID: 104bc95f-3857-48e8-ac69-c2c6d7d32061
   Args:
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
+    source: :PedroHenriqueOfOrleansBraganza
     type: :Man
-  AssignClass (3f5f09a4-e751-4b50-aa2a-f23214131184)
- Call ID: 3f5f09a4-e751-4b50-aa2a-f23214131184
+  AssignClass (cbe4503e-715f-4acd-8438-5bf3c203e817)
+ Call ID: cbe4503e-715f-4acd-8438-5bf3c203e817
   Args:
-    source: Prince_Luís_of_Orléans-Braganza
-    type: :Man
-  AssignClass (75ac45a9-778c-42e4-8b2c-6c95336d55af)
- Call ID: 75ac45a9-778c-42e4-8b2c-6c95336d55af
+    source: :PedroHenriqueOfOrleansBraganza
+    type: :Person
+  AddLiteral (9fbe5a4a-5a09-442b-911a-2e42d94c11cc)
+ Call ID: 9fbe5a4a-5a09-442b-911a-2e42d94c11cc
   Args:
-    type: :Woman
-    source: Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies
-  AssignClass (09550019-ad10-48fa-bfab-d59e9f4b3d66)
- Call ID: 09550019-ad10-48fa-bfab-d59e9f4b3d66
-  Args:
-    source: Princess_Isabel_of_Brazil
-    type: :Woman
-  AssignClass (ca03bc7e-7809-420b-abda-08151872fa58)
- Call ID: ca03bc7e-7809-420b-abda-08151872fa58
-  Args:
-    type: :Man
-    source: Prince_Gaston_Count_of_Eu
-  AssignClass (007c3795-4db5-450e-be40-64e4021e0eb8)
- Call ID: 007c3795-4db5-450e-be40-64e4021e0eb8
-  Args:
-    source: Prince_Alfonso_Count_of_Caserta
-    type: :Man
-  AssignClass (c2ffeca7-fc50-400a-99f5-5964c8b7d57b)
- Call ID: c2ffeca7-fc50-400a-99f5-5964c8b7d57b
-  Args:
-    type: :Man
-    source: Luiz_Gastão
-  AssignClass (b55ff86d-144c-40f6-9580-5fa3cac985e3)
- Call ID: b55ff86d-144c-40f6-9580-5fa3cac985e3
-  Args:
-    source: Pia_Maria
-    type: :Woman
-  AssignClass (5189ef56-5a1a-429d-ae57-e19e7911489d)
- Call ID: 5189ef56-5a1a-429d-ae57-e19e7911489d
-  Args:
-    type: :Man
-    source: Prince_Pedro_Gastão_of_Orléans-Braganza
-  AssignClass (dd3ad196-c43f-44a4-b162-a3cc178edc45)
- Call ID: dd3ad196-c43f-44a4-b162-a3cc178edc45
-  Args:
-    source: Pedro_de_Alcântara_Prince_of_Grão-Pará
-    type: :Man
-  AssignClass (d5f5ad74-243d-4caa-99cf-9b5cecd0c390)
- Call ID: d5f5ad74-243d-4caa-99cf-9b5cecd0c390
-  Args:
-    type: :Woman
-    source: Princess_Maria_Elisabeth_of_Bavaria
-  AddLiteral (1e9b8648-d994-4a13-98f2-32919c9981a3)
- Call ID: 1e9b8648-d994-4a13-98f2-32919c9981a3
-  Args:
-    relation: :hasBirthYear
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
+    source: :PedroHenriqueOfOrleansBraganza
     literal_value: 1909
     literal_type: xsd:integer
-  AddLiteral (1837fa02-3894-4cd7-b242-9e860441b809)
- Call ID: 1837fa02-3894-4cd7-b242-9e860441b809
+    relation: :hasBirthYear
+  AddLiteral (0234c10b-cffb-4456-9f7c-3cf60fa4117e)
+ Call ID: 0234c10b-cffb-4456-9f7c-3cf60fa4117e
   Args:
-    literal_value: 1981
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-    literal_type: xsd:integer
     relation: :hasDeathYear
-  AddTriple (3531cb7a-b70b-40dc-8ce8-c285aab1303c)
- Call ID: 3531cb7a-b70b-40dc-8ce8-c285aab1303c
+    literal_value: 1981
+    literal_type: xsd:integer
+    source: :PedroHenriqueOfOrleansBraganza
+  AddLiteral (5cd0850a-e3d7-40ed-9f14-2926161e1ec4)
+ Call ID: 5cd0850a-e3d7-40ed-9f14-2926161e1ec4
   Args:
-    target: Prince_Luís_of_Orléans-Braganza
+    relation: :knownAs
+    literal_type: xsd:string
+    literal_value: The Expected Prince
+    source: :PedroHenriqueOfOrleansBraganza
+  AssignClass (e9afad81-faec-4d3d-9833-b1adc6490a42)
+ Call ID: e9afad81-faec-4d3d-9833-b1adc6490a42
+  Args:
+    type: :Man
+    source: :LuisOfOrleansBraganza
+  AssignClass (a73c330b-a072-4972-bdde-1fb947a37274)
+ Call ID: a73c330b-a072-4972-bdde-1fb947a37274
+  Args:
+    source: :LuisOfOrleansBraganza
+    type: :Person
+  AddTriple (6eb62944-14bb-468d-886b-da4bfd95542f)
+ Call ID: 6eb62944-14bb-468d-886b-da4bfd95542f
+  Args:
+    source: :PedroHenriqueOfOrleansBraganza
+    target: :LuisOfOrleansBraganza
     relation: :hasFather
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-  AddTriple (8f515678-97f4-44ce-bcde-8b7695879cc5)
- Call ID: 8f515678-97f4-44ce-bcde-8b7695879cc5
+  AssignClass (92fa8345-199b-484d-b9af-845a5c8335b6)
+ Call ID: 92fa8345-199b-484d-b9af-845a5c8335b6
   Args:
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
+    type: :Woman
+    source: :MariaDiGraziaOfBourbonTwoSicilies
+  AssignClass (3ed40a0f-8e64-4d8f-9c9d-e1c31f1b2379)
+ Call ID: 3ed40a0f-8e64-4d8f-9c9d-e1c31f1b2379
+  Args:
+    type: :Person
+    source: :MariaDiGraziaOfBourbonTwoSicilies
+  AddTriple (fefb4eed-38b9-4152-aa3c-f8f4123dc91f)
+ Call ID: fefb4eed-38b9-4152-aa3c-f8f4123dc91f
+  Args:
+    target: :MariaDiGraziaOfBourbonTwoSicilies
     relation: :hasMother
-    target: Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies
-  AddTriple (111c289a-e338-47f0-b5ba-71fedebd10e4)
- Call ID: 111c289a-e338-47f0-b5ba-71fedebd10e4
+    source: :PedroHenriqueOfOrleansBraganza
+  AssignClass (222763ed-18f6-4866-bd0b-c07eb36e6fea)
+ Call ID: 222763ed-18f6-4866-bd0b-c07eb36e6fea
   Args:
-    source: Prince_Luís_of_Orléans-Braganza
-    relation: :hasFather
-    target: Prince_Gaston_Count_of_Eu
-  AddTriple (f4e5236c-a623-45b0-938b-456a1421a735)
- Call ID: f4e5236c-a623-45b0-938b-456a1421a735
+    source: :IsabelOfBrazil
+    type: :Woman
+  AssignClass (5acbd82f-394e-4892-b983-c2f330ae958f)
+ Call ID: 5acbd82f-394e-4892-b983-c2f330ae958f
   Args:
-    relation: :hasMother
-    source: Prince_Luís_of_Orléans-Braganza
-    target: Princess_Isabel_of_Brazil
-  AddTriple (e6056150-48ab-4b18-923a-377a565578d7)
- Call ID: e6056150-48ab-4b18-923a-377a565578d7
+    type: :Person
+    source: :IsabelOfBrazil
+  AddTriple (9c5108c7-ca1c-4cac-b68e-dea5fe80e0ad)
+ Call ID: 9c5108c7-ca1c-4cac-b68e-dea5fe80e0ad
   Args:
-    relation: :hasFather
-    source: Prince_Pedro_Gastão_of_Orléans-Braganza
-    target: Pedro_de_Alcântara_Prince_of_Grão-Pará
-  AddTriple (0823a098-1de0-43ee-ae19-905539f5e882)
- Call ID: 0823a098-1de0-43ee-ae19-905539f5e882
+    source: :IsabelOfBrazil
+    relation: :isMotherOf
+    target: :LuisOfOrleansBraganza
+  AssignClass (9affe308-d73f-46c0-821a-6a8a95fed473)
+ Call ID: 9affe308-d73f-46c0-821a-6a8a95fed473
   Args:
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
+    type: :Man
+    source: :GastonCountOfEu
+  AssignClass (b4f77433-a3e3-4724-a550-de7d98ce8fa0)
+ Call ID: b4f77433-a3e3-4724-a550-de7d98ce8fa0
+  Args:
+    source: :GastonCountOfEu
+    type: :Person
+  AddTriple (1ad1c232-2556-4f36-a173-4c0eac1d4d3e)
+ Call ID: 1ad1c232-2556-4f36-a173-4c0eac1d4d3e
+  Args:
+    target: :LuisOfOrleansBraganza
+    relation: :isFatherOf
+    source: :GastonCountOfEu
+  AssignClass (f10ec88b-23e6-42f0-9626-bfed500ff74e)
+ Call ID: f10ec88b-23e6-42f0-9626-bfed500ff74e
+  Args:
+    type: :Man
+    source: :AlfonsoCountOfCaserta
+  AssignClass (8dfe0c8c-9953-45e1-82e0-f50779fc1aa9)
+ Call ID: 8dfe0c8c-9953-45e1-82e0-f50779fc1aa9
+  Args:
+    source: :AlfonsoCountOfCaserta
+    type: :Person
+  AssignClass (848b0ab0-bfaa-4021-8b7f-fb6b35d8d4e6)
+ Call ID: 848b0ab0-bfaa-4021-8b7f-fb6b35d8d4e6
+  Args:
+    source: :LuizGastao
+    type: :Man
+  AssignClass (2eb5e4c9-7fd1-4c30-b8dd-c2dbfacafbc9)
+ Call ID: 2eb5e4c9-7fd1-4c30-b8dd-c2dbfacafbc9
+  Args:
+    type: :Person
+    source: :LuizGastao
+  AddTriple (fb5416a7-8248-484c-b056-9100ee6b37f1)
+ Call ID: fb5416a7-8248-484c-b056-9100ee6b37f1
+  Args:
+    source: :PedroHenriqueOfOrleansBraganza
+    target: :LuizGastao
+    relation: :isSiblingOf
+  AssignClass (dd6ba21e-67a1-446f-801f-671b180833f2)
+ Call ID: dd6ba21e-67a1-446f-801f-671b180833f2
+  Args:
+    type: :Woman
+    source: :PiaMaria
+  AssignClass (a93b23e1-e0ef-4399-9e1b-4ebcfa19423b)
+ Call ID: a93b23e1-e0ef-4399-9e1b-4ebcfa19423b
+  Args:
+    source: :PiaMaria
+    type: :Person
+  AddTriple (e5418409-772e-4694-bff5-e7ffe404e262)
+ Call ID: e5418409-772e-4694-bff5-e7ffe404e262
+  Args:
+    source: :PedroHenriqueOfOrleansBraganza
+    relation: :isSiblingOf
+    target: :PiaMaria
+  AssignClass (5c807b16-a6c4-46b7-83c9-e96dcaacb228)
+ Call ID: 5c807b16-a6c4-46b7-83c9-e96dcaacb228
+  Args:
+    type: :Man
+    source: :PedroGastaoOfOrleansBraganza
+  AssignClass (ac9caa28-fa46-4dda-9469-84c25fed3233)
+ Call ID: ac9caa28-fa46-4dda-9469-84c25fed3233
+  Args:
+    type: :Person
+    source: :PedroGastaoOfOrleansBraganza
+  AssignClass (5dcaeb2b-45fa-4998-96e8-22d5dc6238b5)
+ Call ID: 5dcaeb2b-45fa-4998-96e8-22d5dc6238b5
+  Args:
+    type: :Man
+    source: :PedroDeAlcantaraPrinceOfGraoPara
+  AssignClass (40055e04-77a4-4e12-af41-45231af0f35f)
+ Call ID: 40055e04-77a4-4e12-af41-45231af0f35f
+  Args:
+    type: :Person
+    source: :PedroDeAlcantaraPrinceOfGraoPara
+  AddTriple (69e29fcb-a9ee-40e4-a9fc-a728b8a4b51e)
+ Call ID: 69e29fcb-a9ee-40e4-a9fc-a728b8a4b51e
+  Args:
+    source: :PedroDeAlcantaraPrinceOfGraoPara
+    relation: :isFatherOf
+    target: :PedroGastaoOfOrleansBraganza
+  AssignClass (8490dea8-de25-4db9-a884-c1c4b9cb7dfe)
+ Call ID: 8490dea8-de25-4db9-a884-c1c4b9cb7dfe
+  Args:
+    source: :MariaElisabethOfBavaria
+    type: :Woman
+  AssignClass (67760760-8a31-417d-8ff8-2b1031b5bf8c)
+ Call ID: 67760760-8a31-417d-8ff8-2b1031b5bf8c
+  Args:
+    type: :Person
+    source: :MariaElisabethOfBavaria
+  AddTriple (78640f00-1cd5-4b04-acfb-d148fa5c65a0)
+ Call ID: 78640f00-1cd5-4b04-acfb-d148fa5c65a0
+  Args:
+    target: :MariaElisabethOfBavaria
+    relation: :hasRelation
+    source: :PedroHenriqueOfOrleansBraganza
+  AddLiteral (b72d3b7b-fc24-45d0-94c9-d41ee0b6954c)
+ Call ID: b72d3b7b-fc24-45d0-94c9-d41ee0b6954c
+  Args:
     relation: :hasMarriageYear
-    target: 1937
-  AddLiteral (436620e5-bca5-4747-b7a7-4425fcd4fe8f)
- Call ID: 436620e5-bca5-4747-b7a7-4425fcd4fe8f
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
     literal_value: 1937
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-  Finish (7cbde363-d658-4533-93af-f0807a97f4ca)
- Call ID: 7cbde363-d658-4533-93af-f0807a97f4ca
-  Args:
+    literal_type: xsd:integer
+    source: :PedroHenriqueOfOrleansBraganza
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -541,117 +760,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Luiz_Gast%C3%A3o a :Man .
+  data:AlfonsoCountOfCaserta a :Man,
+          :Person .
 
-  data:Pia_Maria a :Woman .
+  data:GastonCountOfEu a :Man,
+          :Person ;
+      :isFatherOf data:LuisOfOrleansBraganza .
 
-  data:Prince_Alfonso_Count_of_Caserta a :Man .
+  data:IsabelOfBrazil a :Person,
+          :Woman ;
+      :isMotherOf data:LuisOfOrleansBraganza .
 
-  data:Prince_Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .
+  data:PedroDeAlcantaraPrinceOfGraoPara a :Man,
+          :Person ;
+      :isFatherOf data:PedroGastaoOfOrleansBraganza .
 
-  data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;
+  data:PedroHenriqueOfOrleansBraganza a :Man,
+          :Person ;
       :hasBirthYear 1909 ;
       :hasDeathYear 1981 ;
-      :hasFather data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMarriageYear data:1937,
-          1937 ;
-      :hasMother data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies .
+      :hasFather data:LuisOfOrleansBraganza ;
+      :hasMarriageYear 1937 ;
+      :hasMother data:MariaDiGraziaOfBourbonTwoSicilies ;
+      :hasRelation data:MariaElisabethOfBavaria ;
+      :isSiblingOf data:LuizGastao,
+          data:PiaMaria ;
+      :knownAs "The Expected Prince"^^xsd:string .
 
-  data:Princess_Maria_Elisabeth_of_Bavaria a :Woman .
+  data:LuizGastao a :Man,
+          :Person .
 
-  data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .
+  data:MariaDiGraziaOfBourbonTwoSicilies a :Person,
+          :Woman .
 
-  data:Prince_Gaston_Count_of_Eu a :Man .
+  data:MariaElisabethOfBavaria a :Person,
+          :Woman .
 
-  data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Prince_Gaston_Count_of_Eu ;
-      :hasMother data:Princess_Isabel_of_Brazil .
+  data:PedroGastaoOfOrleansBraganza a :Man,
+          :Person .
 
-  data:Princess_Isabel_of_Brazil a :Woman .
+  data:PiaMaria a :Person,
+          :Woman .
 
-  data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1937']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (3ce7bda6-fe21-45ed-abf2-03c00003fd3e)
- Call ID: 3ce7bda6-fe21-45ed-abf2-03c00003fd3e
-  Args:
-    relation: :hasMarriageYear
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-    literal_value: 1937
-    literal_type: xsd:integer
-  AddLiteral (ff4e40a8-0358-4629-80dc-77255de16351)
- Call ID: ff4e40a8-0358-4629-80dc-77255de16351
-  Args:
-    relation: :hasMarriageYear
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-    literal_value: 1937
-    literal_type: xsd:integer
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Luiz_Gast%C3%A3o a :Man .
-
-  data:Pia_Maria a :Woman .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Man .
-
-  data:Prince_Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .
-
-  data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 1981 ;
-      :hasFather data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMarriageYear data:1937,
-          1937 ;
-      :hasMother data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies .
-
-  data:Princess_Maria_Elisabeth_of_Bavaria a :Woman .
-
-  data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .
-
-  data:Prince_Gaston_Count_of_Eu a :Man .
-
-  data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Prince_Gaston_Count_of_Eu ;
-      :hasMother data:Princess_Isabel_of_Brazil .
-
-  data:Princess_Isabel_of_Brazil a :Woman .
-
-  data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .
+  data:LuisOfOrleansBraganza a :Man,
+          :Person .
 
 
 
@@ -659,132 +811,6 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  Finish (198f4892-d017-4384-b698-a9d4ad262e3e)
- Call ID: 198f4892-d017-4384-b698-a9d4ad262e3e
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1937']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (5967dff8-390a-4038-b997-eccce4a116e4)
- Call ID: 5967dff8-390a-4038-b997-eccce4a116e4
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-    literal_value: 1937
-  AddTriple (b035e90e-1509-479b-b934-a3a5bfc5bee4)
- Call ID: b035e90e-1509-479b-b934-a3a5bfc5bee4
-  Args:
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-    target: Marriage_1937
-    relation: :hasMarriageYear
-  AssignClass (c818fbf5-b00f-409a-9d71-cdc195edb72a)
- Call ID: c818fbf5-b00f-409a-9d71-cdc195edb72a
-  Args:
-    type: :DomainEntity
-    source: Marriage_1937
-  Finish (34abf856-73be-41ed-8344-4a58e32b159f)
- Call ID: 34abf856-73be-41ed-8344-4a58e32b159f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Luiz_Gast%C3%A3o a :Man .
-
-  data:Pia_Maria a :Woman .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Man .
-
-  data:Prince_Pedro_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 .
-
-  data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 1981 ;
-      :hasFather data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-      :hasMarriageYear data:1937,
-          data:Marriage_1937 ;
-      :hasMother data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies .
-
-  data:Princess_Maria_Elisabeth_of_Bavaria a :Woman .
-
-  data:Marriage_1937 a :DomainEntity .
-
-  data:Pedro_de_Alc%C3%A2ntara_Prince_of_Gr%C3%A3o-Par%C3%A1 a :Man .
-
-  data:Prince_Gaston_Count_of_Eu a :Man .
-
-  data:Prince_Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Prince_Gaston_Count_of_Eu ;
-      :hasMother data:Princess_Isabel_of_Brazil .
-
-  data:Princess_Isabel_of_Brazil a :Woman .
-
-  data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1937']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (4b301979-acf4-42ce-b1e0-2ff8c20622b3)
- Call ID: 4b301979-acf4-42ce-b1e0-2ff8c20622b3
-  Args:
-    relation: :hasMarriageYear
-    target: 1937
-    source: Prince_Pedro_Henrique_of_Orléans-Braganza
-  Finish (687984d2-ae34-4096-98bc-fb576404e67b)
- Call ID: 687984d2-ae34-4096-98bc-fb576404e67b
+  Finish (89933492-a4be-419b-8dfa-c7b5daaf3c25)
+ Call ID: 89933492-a4be-419b-8dfa-c7b5daaf3c25
   Args:

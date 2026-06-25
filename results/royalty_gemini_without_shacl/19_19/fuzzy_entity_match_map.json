@@ -16,14 +16,14 @@
       "qid": "Q112096",
       "label": "Georg von Habsburg",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Otto_von_Habsburg",
       "qid": "Q76343",
       "label": "Otto von Habsburg",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -38,11 +38,11 @@
       "ground_truth_qid": "Q112096",
       "ground_truth_label": "Georg von Habsburg",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Georg von Habsburg",
       "best_candidate_label": "Georg von Habsburg",
       "best_candidate_qid": "Q112096",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -56,11 +56,11 @@
       "ground_truth_qid": "Q76343",
       "ground_truth_label": "Otto von Habsburg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Otto von Habsburg",
       "best_candidate_label": "Otto von Habsburg",
       "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -78,7 +78,7 @@
       "best_candidate_match_text": "Crown Prince Otto of Austria",
       "best_candidate_label": "Otto von Habsburg",
       "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3111111111111111
     },
     {

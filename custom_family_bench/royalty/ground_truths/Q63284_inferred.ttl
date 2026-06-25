@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    data:posIndicesFull "1256:1303"^^xsd:string ;
+    data:wdtLink wdt:Q4164797 ;
+    :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasRelation data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Prince_Philipp-_Landgrave_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philipp, Landgrave of Hesse"^^xsd:string ;
+    data:posIndicesFull "149:182"^^xsd:string ;
+    data:posIndicesPart "1120:1125"^^xsd:string,
+        "1317:1323"^^xsd:string,
+        "262:271"^^xsd:string,
+        "682:688"^^xsd:string,
+        "692:697"^^xsd:string,
+        "763:769"^^xsd:string,
+        "779:784"^^xsd:string,
+        "820:825"^^xsd:string,
+        "968:973"^^xsd:string ;
+    data:wdtLink wdt:Q60741 ;
+    :alsoKnownAs "Philipp Prinz von Hessen"^^xsd:string,
+        "Philipp de Hesse-Kassel"^^xsd:string,
+        "Philipp von Hessen"^^xsd:string,
+        "Prince Philipp, Landgrave of Hesse"^^xsd:string ;
+    :hasBrother data:Prince_Philipp-_Landgrave_of_Hesse ;
+    :hasChild data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :hasRelation data:Prince_Moritz-_Landgrave_of_Hesse,
+        data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isAncestorOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Prince_Philipp-_Landgrave_of_Hesse ;
+    :isBrotherOf data:Prince_Philipp-_Landgrave_of_Hesse ;
+    :isFatherOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isParentOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isSiblingOf data:Prince_Philipp-_Landgrave_of_Hesse ;
+    :isUncleOf data:Prince_Moritz-_Landgrave_of_Hesse .
+
+data:Princess_Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Mafalda of Savoy"^^xsd:string ;
+    data:posIndicesFull "365:390"^^xsd:string ;
+    data:wdtLink wdt:Q235832 ;
+    :alsoKnownAs "Princess Mafalda, Landgravine of Hesse-Kassel"^^xsd:string ;
+    :hasChild data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :hasRelation data:Prince_Moritz-_Landgrave_of_Hesse,
+        data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Mafalda_of_Savoy ;
+    :hasSon data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isAncestorOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isAuntOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isBloodrelationOf data:Princess_Mafalda_of_Savoy ;
+    :isMotherOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isParentOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isSiblingOf data:Princess_Mafalda_of_Savoy ;
+    :isSisterOf data:Princess_Mafalda_of_Savoy .
+
+data:Prince_Moritz-_Landgrave_of_Hesse a :Man,
+        :Person ;
+    rdfs:label "Prince Moritz, Landgrave of Hesse"^^xsd:string ;
+    data:posIndicesFull "36:73"^^xsd:string ;
+    data:posIndicesPart "1031:1037"^^xsd:string,
+        "1120:1125"^^xsd:string,
+        "1241:1247"^^xsd:string,
+        "1317:1323"^^xsd:string,
+        "262:271"^^xsd:string,
+        "272:278"^^xsd:string,
+        "348:354"^^xsd:string,
+        "554:560"^^xsd:string,
+        "682:688"^^xsd:string,
+        "692:697"^^xsd:string,
+        "763:769"^^xsd:string,
+        "779:784"^^xsd:string,
+        "820:825"^^xsd:string,
+        "870:876"^^xsd:string,
+        "929:935"^^xsd:string,
+        "968:973"^^xsd:string ;
+    data:wdtLink wdt:Q63284 ;
+    :alsoKnownAs "Moritz Friedrich Karl Emanuel Humbert"^^xsd:string ;
+    :hasAncestor data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasBrother data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :hasFather data:Prince_Philipp-_Landgrave_of_Hesse ;
+    :hasMother data:Princess_Mafalda_of_Savoy ;
+    :hasParent data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasRelation data:Prince_Moritz-_Landgrave_of_Hesse,
+        data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isBrotherOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isChildOf data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy ;
+    :isSiblingOf data:Prince_Moritz-_Landgrave_of_Hesse ;
+    :isSonOf data:Prince_Philipp-_Landgrave_of_Hesse,
+        data:Princess_Mafalda_of_Savoy .
+

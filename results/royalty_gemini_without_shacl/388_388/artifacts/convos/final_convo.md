@@ -69,26 +69,24 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Franz Wilhelm Victor Christoph Stephan Prinz von Preussen (born 3 September 1943) is a German businessman and member of the House of Hohenzollern, the former ruling German imperial house and royal house of Prussia.
-He is also the great-grandson of German Emperor Wilhelm II.
-Biography
+Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; 19 September 1852 – 17 May 1923) was a member of the House of Mecklenburg-Schwerin and general of the Mecklenburg cavalry.
+Life
 
-Franz Wilhelm Prince of Prussia was born in Grünberg, Silesia, as the son of Prince Karl Franz of Prussia and his first wife Princess Henriette von Schönaich-Carolath.
-He had a twin brother, Prince Friedrich Christian, who died three weeks after his birth.
-Prince Franz Wilhelm is a grandson of Prince Joachim of Prussia, the youngest son of Emperor Wilhelm II.
-In 2002 Franz Wilhelm with Theodor Tantzen founded the Prinz von Preußen Grundbesitz AG, a project development and project management company which restores old buildings in Germany.
-Personal life
-
-Franz Wilhelm married his third cousin once removed, Grand Duchess Maria Vladimirovna of Russia, great-great-granddaughter of Queen Victoria, civilly on 4 September 1976 at Dinard and religiously on 22 September at the Russian Orthodox Chapel in Madrid.
-Before his marriage, he converted to the Russian Orthodox faith and was created a Grand Duke of Russia with the name Mikhail Pavlovich by his father-in-law Grand Duke Vladimir of Russia.
-Franz Wilhelm and Grand Duchess Maria had one son before divorcing on 19 June 1985 (they separated in 1982), at which point he reverted to his previous title.
-He married Nadia Nour El Etreby (born 2 August 1949) on 14 March 2019, to whom was bestowed upon marriage the courtesy style and title of Her Royal Highness Princess Franz Wilhelm of Prussia.
+Duke Paul Frederick was born in Ludwigslust Castle as the second eldest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz, the daughter of Prince Henry LXIII Reuss of Köstritz.
+Duke Paul Frederick married in Schwerin on 5 May 1881 his cousin, the Austrian born Princess Marie of Windisch-Graetz, the daughter of Prince Hugo of Windisch-Graetz and his wife Duchess Louise of Mecklenburg-Schwerin.
+The couple who had five children who were all raised Roman Catholic, the religion of Princess Marie, lived a quiet life in Venice.
+On 21 April 1884 Duke Paul Frederick renounced his and his sons rights of succession to Mecklenburg-Schwerin in favour of his younger brothers and their sons, so they would take precedence over him and his.
+In 1887, Duke Paul Fredrick raised a Lutheran decided to convert to Roman Catholicism the religion of his wife and children.
+In 1906 after upsetting his nephew Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin, over the amount of money that he was spending Duke Paul Frederick and his wife were ordered to submit to the controller of the royal household.
+Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried in the Louisenkapelle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +102,9 @@ He married Nadia Nour El Etreby (born 2 August 1949) on 14 March 2019, to whom w
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +119,23 @@ He married Nadia Nour El Etreby (born 2 August 1949) on 14 March 2019, to whom w
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +153,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +258,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +278,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +288,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +328,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,193 +427,149 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d1030f76-9c83-4edb-9ab9-ffade05bbcda)
- Call ID: d1030f76-9c83-4edb-9ab9-ffade05bbcda
+  AssignClass (f254fa93-7f6f-4cb9-aff7-b420be820853)
+ Call ID: f254fa93-7f6f-4cb9-aff7-b420be820853
   Args:
+    source: :PaulFrederickOfMecklenburg
     type: :Man
-    source: FranzWilhelmPrinzVonPreussen
-  AssignClass (03ea5c3b-6e3f-4dcc-aaf2-040a9c60b844)
- Call ID: 03ea5c3b-6e3f-4dcc-aaf2-040a9c60b844
+  AssignClass (377713a5-d056-4328-b674-38469dd612ae)
+ Call ID: 377713a5-d056-4328-b674-38469dd612ae
   Args:
+    source: :PaulFrederickOfMecklenburg
     type: :Person
-    source: FranzWilhelmPrinzVonPreussen
-  AssignClass (bda8c2f8-781b-4325-aaaf-389437e214ac)
- Call ID: bda8c2f8-781b-4325-aaaf-389437e214ac
+  AddLiteral (f189144b-e4a9-4382-b5e0-86d94c6aca79)
+ Call ID: f189144b-e4a9-4382-b5e0-86d94c6aca79
   Args:
-    type: :Male
-    source: Male
-  AddLiteral (7714b616-22da-4882-9bbe-25595ac4c096)
- Call ID: 7714b616-22da-4882-9bbe-25595ac4c096
-  Args:
-    source: FranzWilhelmPrinzVonPreussen
+    literal_value: 1852
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1943
-  AddTriple (28dec084-f52c-41fc-b1d6-066e7dff7ca4)
- Call ID: 28dec084-f52c-41fc-b1d6-066e7dff7ca4
+    source: :PaulFrederickOfMecklenburg
+  AddLiteral (309a22c9-a7ed-44ce-8db1-9fcba40c40a8)
+ Call ID: 309a22c9-a7ed-44ce-8db1-9fcba40c40a8
   Args:
-    relation: :hasSex
-    source: FranzWilhelmPrinzVonPreussen
-    target: Male
-  AssignClass (5f548c14-6c29-4410-a0b2-a7b7394c2247)
- Call ID: 5f548c14-6c29-4410-a0b2-a7b7394c2247
+    relation: :hasDeathYear
+    source: :PaulFrederickOfMecklenburg
+    literal_value: 1923
+    literal_type: xsd:integer
+  AssignClass (f23ffa0f-cdf8-499e-b06b-26b8b999d052)
+ Call ID: f23ffa0f-cdf8-499e-b06b-26b8b999d052
   Args:
     type: :Man
-    source: KarlFranzOfPrussia
-  AssignClass (32f52900-3685-4b1a-9ff4-4aa3fe60994b)
- Call ID: 32f52900-3685-4b1a-9ff4-4aa3fe60994b
+    source: :FrederickFrancisII
+  AssignClass (d5cb109d-9836-4c3b-8e2f-2de303b826c9)
+ Call ID: d5cb109d-9836-4c3b-8e2f-2de303b826c9
   Args:
+    source: :FrederickFrancisII
     type: :Person
-    source: KarlFranzOfPrussia
-  AddTriple (cc567276-4eed-4972-b62f-6eb621d127b1)
- Call ID: cc567276-4eed-4972-b62f-6eb621d127b1
-  Args:
-    relation: :isFatherOf
-    source: KarlFranzOfPrussia
-    target: FranzWilhelmPrinzVonPreussen
-  AssignClass (c1121020-1ac0-491a-89bf-8b7e52ad9967)
- Call ID: c1121020-1ac0-491a-89bf-8b7e52ad9967
+  AssignClass (79e20d6b-e743-4110-8715-01c4d0a99b63)
+ Call ID: 79e20d6b-e743-4110-8715-01c4d0a99b63
   Args:
     type: :Woman
-    source: HenrietteVonSchonaichCarolath
-  AssignClass (bb05b571-bb22-4ab0-b35e-cd993296efc6)
- Call ID: bb05b571-bb22-4ab0-b35e-cd993296efc6
+    source: :AugustaReussOfKostritz
+  AssignClass (1e956111-f6bf-417f-a907-726bb27dd4a7)
+ Call ID: 1e956111-f6bf-417f-a907-726bb27dd4a7
   Args:
+    source: :AugustaReussOfKostritz
     type: :Person
-    source: HenrietteVonSchonaichCarolath
-  AddTriple (16c8b240-8155-4cbe-9824-bcb44aa2883f)
- Call ID: 16c8b240-8155-4cbe-9824-bcb44aa2883f
+  AddTriple (d7486034-60e4-4d15-bdbf-a0ec37ed939e)
+ Call ID: d7486034-60e4-4d15-bdbf-a0ec37ed939e
   Args:
-    target: FranzWilhelmPrinzVonPreussen
-    source: HenrietteVonSchonaichCarolath
-    relation: :isMotherOf
-  AssignClass (de580fe3-3107-413e-8796-00daefdfe329)
- Call ID: de580fe3-3107-413e-8796-00daefdfe329
+    target: :FrederickFrancisII
+    relation: :hasFather
+    source: :PaulFrederickOfMecklenburg
+  AddTriple (48c14f20-3cdc-45f6-be21-92b7aae23ec6)
+ Call ID: 48c14f20-3cdc-45f6-be21-92b7aae23ec6
+  Args:
+    target: :AugustaReussOfKostritz
+    relation: :hasMother
+    source: :PaulFrederickOfMecklenburg
+  AssignClass (19a6b516-33fd-4512-b83f-bab44194b4d6)
+ Call ID: 19a6b516-33fd-4512-b83f-bab44194b4d6
   Args:
     type: :Man
-    source: FriedrichChristian
-  AssignClass (52b68812-fef4-4482-94b9-b821b4f33c10)
- Call ID: 52b68812-fef4-4482-94b9-b821b4f33c10
+    source: :HenryLXIIIReussOfKostritz
+  AssignClass (f75be3e9-8562-41d5-a3fd-1e8576533ea2)
+ Call ID: f75be3e9-8562-41d5-a3fd-1e8576533ea2
   Args:
     type: :Person
-    source: FriedrichChristian
-  AddTriple (1d282dcb-0ba6-4dc0-91fb-39f3935796fa)
- Call ID: 1d282dcb-0ba6-4dc0-91fb-39f3935796fa
+    source: :HenryLXIIIReussOfKostritz
+  AddTriple (84e6769a-50dc-404d-a535-9a9872808efd)
+ Call ID: 84e6769a-50dc-404d-a535-9a9872808efd
   Args:
-    relation: :hasBrother
-    source: FranzWilhelmPrinzVonPreussen
-    target: FriedrichChristian
-  AssignClass (f551ecf9-77de-41d9-aec0-e3dc64ee8ce3)
- Call ID: f551ecf9-77de-41d9-aec0-e3dc64ee8ce3
+    relation: :hasFather
+    source: :AugustaReussOfKostritz
+    target: :HenryLXIIIReussOfKostritz
+  AssignClass (8ac3f6bd-3ed7-4c82-b02d-9b757e9e43b9)
+ Call ID: 8ac3f6bd-3ed7-4c82-b02d-9b757e9e43b9
   Args:
-    type: :Man
-    source: JoachimOfPrussia
-  AssignClass (210ebafc-bba6-4530-be5f-40e5c5e87401)
- Call ID: 210ebafc-bba6-4530-be5f-40e5c5e87401
-  Args:
-    type: :Person
-    source: JoachimOfPrussia
-  AddTriple (0fe16d7d-1e37-4a2b-a3e5-28fc471d31cb)
- Call ID: 0fe16d7d-1e37-4a2b-a3e5-28fc471d31cb
-  Args:
-    target: KarlFranzOfPrussia
-    source: JoachimOfPrussia
-    relation: :isFatherOf
-  AssignClass (c40c6f7c-e4b9-4341-8be2-a0ad134ac6e5)
- Call ID: c40c6f7c-e4b9-4341-8be2-a0ad134ac6e5
-  Args:
-    type: :Man
-    source: WilhelmII
-  AssignClass (2cea90ab-4e77-4d28-b511-052a0e87e560)
- Call ID: 2cea90ab-4e77-4d28-b511-052a0e87e560
-  Args:
-    type: :Person
-    source: WilhelmII
-  AddTriple (cf51e798-f9b2-4704-8b42-2f9f2f61442e)
- Call ID: cf51e798-f9b2-4704-8b42-2f9f2f61442e
-  Args:
-    relation: :isFatherOf
-    target: JoachimOfPrussia
-    source: WilhelmII
-  AssignClass (593bb715-c407-445e-84ef-a80d58c7aed7)
- Call ID: 593bb715-c407-445e-84ef-a80d58c7aed7
-  Args:
+    source: :MarieOfWindischGraetz
     type: :Woman
-    source: MariaVladimirovnaOfRussia
-  AssignClass (b38d0cca-b543-4af1-884e-fb358f4fcc5c)
- Call ID: b38d0cca-b543-4af1-884e-fb358f4fcc5c
+  AssignClass (6d3fa8b2-2311-48ba-9b7b-dcd0a1a87f50)
+ Call ID: 6d3fa8b2-2311-48ba-9b7b-dcd0a1a87f50
   Args:
     type: :Person
-    source: MariaVladimirovnaOfRussia
-  AddLiteral (9aa504a6-f27c-4b7d-bf99-8a74b526e1e0)
- Call ID: 9aa504a6-f27c-4b7d-bf99-8a74b526e1e0
+    source: :MarieOfWindischGraetz
+  AddLiteral (497c5d83-7c9f-4598-b0b5-5f1af746b09c)
+ Call ID: 497c5d83-7c9f-4598-b0b5-5f1af746b09c
   Args:
-    literal_value: 1976
     relation: :hasMarriageYear
+    source: :PaulFrederickOfMecklenburg
+    literal_value: 1881
     literal_type: xsd:integer
-    source: FranzWilhelmPrinzVonPreussen
-  AddTriple (11bfd20e-e10c-405b-81f8-287d79dea77b)
- Call ID: 11bfd20e-e10c-405b-81f8-287d79dea77b
+  AddTriple (33c75ebe-18e8-45b6-b2a5-399624962291)
+ Call ID: 33c75ebe-18e8-45b6-b2a5-399624962291
   Args:
-    target: MariaVladimirovnaOfRussia
-    source: FranzWilhelmPrinzVonPreussen
+    target: :MarieOfWindischGraetz
+    source: :PaulFrederickOfMecklenburg
     relation: :hasRelation
-  AssignClass (bfac470d-3685-4a8a-9dbe-9460814a753f)
- Call ID: bfac470d-3685-4a8a-9dbe-9460814a753f
+  AssignClass (40cfa76a-ab42-4cae-90b2-346e3e7e7a17)
+ Call ID: 40cfa76a-ab42-4cae-90b2-346e3e7e7a17
   Args:
-    type: :Woman
-    source: QueenVictoria
-  AssignClass (d3a1b93c-e3c7-40e6-baf7-fb6c168db809)
- Call ID: d3a1b93c-e3c7-40e6-baf7-fb6c168db809
-  Args:
-    type: :Person
-    source: QueenVictoria
-  AssignClass (faa60301-27da-4ef0-b52f-617fed7b792b)
- Call ID: faa60301-27da-4ef0-b52f-617fed7b792b
-  Args:
+    source: :HugoOfWindischGraetz
     type: :Man
-    source: VladimirOfRussia
-  AssignClass (c44493c1-40a4-4b37-8690-0ead04ca6d98)
- Call ID: c44493c1-40a4-4b37-8690-0ead04ca6d98
+  AssignClass (7960b58f-e546-4e23-bfb6-3e510f9ff290)
+ Call ID: 7960b58f-e546-4e23-bfb6-3e510f9ff290
   Args:
+    source: :HugoOfWindischGraetz
     type: :Person
-    source: VladimirOfRussia
-  AddTriple (5f2a5e78-d349-4108-97f0-b2753a5dfca9)
- Call ID: 5f2a5e78-d349-4108-97f0-b2753a5dfca9
-  Args:
-    source: VladimirOfRussia
-    target: MariaVladimirovnaOfRussia
-    relation: :isFatherOf
-  AssignClass (28da8a84-f1a3-47ef-804c-bdb1541167a2)
- Call ID: 28da8a84-f1a3-47ef-804c-bdb1541167a2
+  AssignClass (40a7a1bf-c7a3-4e3b-a3e4-ca6b039f4061)
+ Call ID: 40a7a1bf-c7a3-4e3b-a3e4-ca6b039f4061
   Args:
     type: :Woman
-    source: NadiaNourElEtreby
-  AssignClass (62008acd-f097-42b0-974b-aabcb67954e0)
- Call ID: 62008acd-f097-42b0-974b-aabcb67954e0
+    source: :LouiseOfMecklenburgSchwerin
+  AssignClass (68cd8e38-f988-4980-8599-431651d30c3b)
+ Call ID: 68cd8e38-f988-4980-8599-431651d30c3b
   Args:
+    source: :LouiseOfMecklenburgSchwerin
     type: :Person
-    source: NadiaNourElEtreby
-  AddLiteral (3ba0a288-9fea-49fa-a754-9f76a4905fed)
- Call ID: 3ba0a288-9fea-49fa-a754-9f76a4905fed
+  AddTriple (940d7ac6-c34c-4600-956a-037a2260c497)
+ Call ID: 940d7ac6-c34c-4600-956a-037a2260c497
   Args:
-    source: NadiaNourElEtreby
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1949
-  AddLiteral (551f8ec3-5070-4f98-9665-dd1603fb007e)
- Call ID: 551f8ec3-5070-4f98-9665-dd1603fb007e
+    relation: :hasFather
+    source: :MarieOfWindischGraetz
+    target: :HugoOfWindischGraetz
+  AddTriple (72ec58b3-9a00-48fa-b60b-4ae2bccc5493)
+ Call ID: 72ec58b3-9a00-48fa-b60b-4ae2bccc5493
   Args:
-    literal_type: xsd:integer
-    literal_value: 2019
-    relation: :hasMarriageYear
-    source: FranzWilhelmPrinzVonPreussen
-  AddTriple (2ee8dcd1-5bdc-4906-a03b-0b0919aa4fa0)
- Call ID: 2ee8dcd1-5bdc-4906-a03b-0b0919aa4fa0
+    target: :LouiseOfMecklenburgSchwerin
+    source: :MarieOfWindischGraetz
+    relation: :hasMother
+  AssignClass (b2ec1899-9836-40c3-8cd9-3d4deffd856e)
+ Call ID: b2ec1899-9836-40c3-8cd9-3d4deffd856e
   Args:
+    source: :FrederickFrancisIV
+    type: :Man
+  AssignClass (7a9c6a69-0b6b-411f-aaf1-e07254b58c9e)
+ Call ID: 7a9c6a69-0b6b-411f-aaf1-e07254b58c9e
+  Args:
+    source: :FrederickFrancisIV
+    type: :Person
+  AddTriple (b499fdeb-351e-43bf-aef3-f957b34720a7)
+ Call ID: b499fdeb-351e-43bf-aef3-f957b34720a7
+  Args:
+    target: :FrederickFrancisIV
+    source: :PaulFrederickOfMecklenburg
     relation: :hasRelation
-    target: NadiaNourElEtreby
-    source: FranzWilhelmPrinzVonPreussen
-  Finish (ee61b7b0-a320-4f94-9ac0-feea250ac60d)
- Call ID: ee61b7b0-a320-4f94-9ac0-feea250ac60d
+  Finish (31090f81-cd46-4090-8926-7724d70e25be)
+ Call ID: 31090f81-cd46-4090-8926-7724d70e25be
   Args:

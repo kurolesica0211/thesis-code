@@ -7,74 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Michael I of Romania" ;
-    data:posIndicesFull "193:207",
-        "198:207",
-        "3708:3722",
-        "3713:3722",
-        "499:513",
-        "504:513" ;
-    data:posIndicesPart "1585:1592",
-        "1735:1742",
-        "1766:1773",
-        "1789:1796",
-        "2006:2013",
-        "2319:2326",
-        "265:272",
-        "2714:2721",
-        "3271:3278",
-        "632:639" ;
-    data:wdtLink wdt:Q930013 ;
-    :alsoKnownAs "King Michael I",
-        "King Michael I of Romania",
-        "King Michael I of the Romanians",
-        "Michael I",
-        "Michael I of the Romanians" ;
-    :hasChild data:Princess_Maria_of_Romania ;
-    :hasDaughter data:Princess_Maria_of_Romania ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Maria_of_Romania ;
-    :isParentOf data:Princess_Maria_of_Romania .
-
-data:Queen_Anne_of_Romania a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Anne of Romania" ;
-    data:posIndicesFull "212:222",
-        "212:233",
-        "518:528" ;
-    data:posIndicesPart "1585:1592",
-        "1735:1742",
-        "1766:1773",
-        "1789:1796",
-        "2319:2326",
-        "265:272",
-        "2714:2721",
-        "813:818" ;
-    data:wdtLink wdt:Q563765 ;
-    :alsoKnownAs "Princess Anne of Bourbon-Parma",
-        "Queen Anne",
-        "Queen Anne, Queen Consort of Romania" ;
-    :hasChild data:Princess_Maria_of_Romania ;
-    :hasDaughter data:Princess_Maria_of_Romania ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Maria_of_Romania ;
-    :isParentOf data:Princess_Maria_of_Romania .
-
-data:Princess_Maria_of_Romania a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_of_Romania a :Person ;
     rdfs:label "Princess Maria of Romania" ;
     data:posIndicesFull "109:134",
         "4068:4071",
@@ -115,13 +48,62 @@ data:Princess_Maria_of_Romania a :Person,
         "Mia",
         "The Princess Maria",
         "The Princess Maria of Romania" ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
     :hasParent data:Michael_I_of_Romania,
         data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Michael_I_of_Romania a :Person ;
+    rdfs:label "Michael I of Romania" ;
+    data:posIndicesFull "193:207",
+        "198:207",
+        "3708:3722",
+        "3713:3722",
+        "499:513",
+        "504:513" ;
+    data:posIndicesPart "1585:1592",
+        "1735:1742",
+        "1766:1773",
+        "1789:1796",
+        "2006:2013",
+        "2319:2326",
+        "265:272",
+        "2714:2721",
+        "3271:3278",
+        "632:639" ;
+    data:wdtLink wdt:Q930013 ;
+    :alsoKnownAs "King Michael I",
+        "King Michael I of Romania",
+        "King Michael I of the Romanians",
+        "Michael I",
+        "Michael I of the Romanians" ;
+    :hasSex data:male .
+
+data:Queen_Anne_of_Romania a :Person ;
+    rdfs:label "Queen Anne of Romania" ;
+    data:posIndicesFull "212:222",
+        "212:233",
+        "518:528" ;
+    data:posIndicesPart "1585:1592",
+        "1735:1742",
+        "1766:1773",
+        "1789:1796",
+        "2319:2326",
+        "265:272",
+        "2714:2721",
+        "813:818" ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma",
+        "Queen Anne",
+        "Queen Anne, Queen Consort of Romania" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

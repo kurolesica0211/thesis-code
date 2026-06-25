@@ -1,0 +1,113 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Constantine_I a :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasRelation data:Constantine_I ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isSiblingOf data:Constantine_I .
+
+data:Anne_Bourbon_Parma a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Bourbon_Parma,
+        data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSister data:Anne_Bourbon_Parma ;
+    :isBloodrelationOf data:Anne_Bourbon_Parma ;
+    :isSiblingOf data:Anne_Bourbon_Parma ;
+    :isSisterOf data:Anne_Bourbon_Parma .
+
+data:Elena_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Michael_I ;
+    :hasRelation data:Anne_Bourbon_Parma,
+        data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSister data:Elena_Romania ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isAuntOf data:Michael_I ;
+    :isBloodrelationOf data:Elena_Romania ;
+    :isMotherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Elena_Romania ;
+    :isSisterOf data:Elena_Romania .
+
+data:Ferdinand_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_I ;
+    :hasChild data:Carol_II ;
+    :hasRelation data:Anne_Bourbon_Parma,
+        data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSon data:Carol_II ;
+    :isAncestorOf data:Carol_II,
+        data:Michael_I ;
+    :isBloodrelationOf data:Ferdinand_I ;
+    :isBrotherOf data:Ferdinand_I ;
+    :isFatherOf data:Carol_II ;
+    :isParentOf data:Carol_II ;
+    :isSiblingOf data:Ferdinand_I ;
+    :isUncleOf data:Carol_II .
+
+data:Carol_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_I ;
+    :hasBrother data:Carol_II ;
+    :hasChild data:Michael_I ;
+    :hasFather data:Ferdinand_I ;
+    :hasParent data:Ferdinand_I ;
+    :hasRelation data:Anne_Bourbon_Parma,
+        data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :hasSon data:Michael_I ;
+    :isAncestorOf data:Michael_I ;
+    :isBloodrelationOf data:Carol_II ;
+    :isBrotherOf data:Carol_II ;
+    :isChildOf data:Ferdinand_I ;
+    :isFatherOf data:Michael_I ;
+    :isParentOf data:Michael_I ;
+    :isSiblingOf data:Carol_II ;
+    :isSonOf data:Ferdinand_I ;
+    :isUncleOf data:Michael_I .
+
+data:Michael_I a :Man,
+        :Person ;
+    :hasAncestor data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:Michael_I ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_Romania ;
+    :hasParent data:Carol_II,
+        data:Elena_Romania ;
+    :hasRelation data:Anne_Bourbon_Parma,
+        data:Carol_II,
+        data:Elena_Romania,
+        data:Ferdinand_I,
+        data:Michael_I ;
+    :isBloodrelationOf data:Michael_I ;
+    :isBrotherOf data:Michael_I ;
+    :isChildOf data:Carol_II,
+        data:Elena_Romania ;
+    :isSiblingOf data:Michael_I ;
+    :isSonOf data:Carol_II,
+        data:Elena_Romania .
+

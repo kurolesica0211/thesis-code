@@ -1,0 +1,227 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_V_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V_Hanover ;
+    :hasRelation data:George_V_Hanover ;
+    :isBloodrelationOf data:George_V_Hanover ;
+    :isBrotherOf data:George_V_Hanover ;
+    :isSiblingOf data:George_V_Hanover .
+
+data:Victoria_Louise_Prussia a :Person,
+        :Woman ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :hasSister data:Victoria_Louise_Prussia ;
+    :isBloodrelationOf data:Victoria_Louise_Prussia ;
+    :isSiblingOf data:Victoria_Louise_Prussia ;
+    :isSisterOf data:Victoria_Louise_Prussia .
+
+data:Christian_IX_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_Denmark ;
+    :hasChild data:Thyra_Denmark ;
+    :hasDaughter data:Thyra_Denmark ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :isAncestorOf data:George_William,
+        data:Thyra_Denmark ;
+    :isBloodrelationOf data:Christian_IX_Denmark ;
+    :isBrotherOf data:Christian_IX_Denmark ;
+    :isFatherOf data:Thyra_Denmark ;
+    :isParentOf data:Thyra_Denmark ;
+    :isSiblingOf data:Christian_IX_Denmark ;
+    :isUncleOf data:Thyra_Denmark .
+
+data:George_III_UK a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_III_UK ;
+    :hasChild data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :hasSon data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isAncestorOf data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isBloodrelationOf data:George_III_UK ;
+    :isBrotherOf data:George_III_UK ;
+    :isFatherOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isParentOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isSiblingOf data:George_III_UK ;
+    :isUncleOf data:Ernest_Augustus_Cumberland_GreatGrandfather .
+
+data:Thyra_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_Denmark ;
+    :hasChild data:George_William ;
+    :hasFather data:Christian_IX_Denmark ;
+    :hasParent data:Christian_IX_Denmark ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :hasSister data:Thyra_Denmark ;
+    :hasSon data:George_William ;
+    :isAncestorOf data:George_William ;
+    :isAuntOf data:George_William ;
+    :isBloodrelationOf data:Thyra_Denmark ;
+    :isChildOf data:Christian_IX_Denmark ;
+    :isDaughterOf data:Christian_IX_Denmark ;
+    :isMotherOf data:George_William ;
+    :isParentOf data:George_William ;
+    :isSiblingOf data:Thyra_Denmark ;
+    :isSisterOf data:Thyra_Denmark .
+
+data:Ernest_Augustus_Junior a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:George_III_UK ;
+    :hasBrother data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :hasFather data:Ernest_Augustus_Cumberland ;
+    :hasMarriageYear 1913 ;
+    :hasParent data:Ernest_Augustus_Cumberland ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :isBloodrelationOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isBrotherOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isChildOf data:Ernest_Augustus_Cumberland ;
+    :isSiblingOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isSonOf data:Ernest_Augustus_Cumberland .
+
+data:Ernest_Augustus_Cumberland_GreatGrandfather a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_III_UK ;
+    :hasBrother data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :hasChild data:Ernest_Augustus_Cumberland ;
+    :hasFather data:George_III_UK ;
+    :hasParent data:George_III_UK ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :hasSon data:Ernest_Augustus_Cumberland ;
+    :isAncestorOf data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isBloodrelationOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isBrotherOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isChildOf data:George_III_UK ;
+    :isFatherOf data:Ernest_Augustus_Cumberland ;
+    :isParentOf data:Ernest_Augustus_Cumberland ;
+    :isSiblingOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isSonOf data:George_III_UK ;
+    :isUncleOf data:Ernest_Augustus_Cumberland .
+
+data:Ernest_Augustus_Cumberland a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:George_III_UK ;
+    :hasBrother data:Ernest_Augustus_Cumberland ;
+    :hasChild data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :hasFather data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :hasParent data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :hasSon data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isAncestorOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isBloodrelationOf data:Ernest_Augustus_Cumberland ;
+    :isBrotherOf data:Ernest_Augustus_Cumberland ;
+    :isChildOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isFatherOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isParentOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isSiblingOf data:Ernest_Augustus_Cumberland ;
+    :isSonOf data:Ernest_Augustus_Cumberland_GreatGrandfather ;
+    :isUncleOf data:Ernest_Augustus_Junior,
+        data:George_William .
+
+data:George_William a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:George_III_UK,
+        data:Thyra_Denmark ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Ernest_Augustus_Cumberland ;
+    :hasMother data:Thyra_Denmark ;
+    :hasParent data:Ernest_Augustus_Cumberland,
+        data:Thyra_Denmark ;
+    :hasRelation data:Christian_IX_Denmark,
+        data:Ernest_Augustus_Cumberland,
+        data:Ernest_Augustus_Cumberland_GreatGrandfather,
+        data:Ernest_Augustus_Junior,
+        data:George_III_UK,
+        data:George_William,
+        data:Thyra_Denmark,
+        data:Victoria_Louise_Prussia ;
+    :isBloodrelationOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isBrotherOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isChildOf data:Ernest_Augustus_Cumberland,
+        data:Thyra_Denmark ;
+    :isSiblingOf data:Ernest_Augustus_Junior,
+        data:George_William ;
+    :isSonOf data:Ernest_Augustus_Cumberland,
+        data:Thyra_Denmark .
+

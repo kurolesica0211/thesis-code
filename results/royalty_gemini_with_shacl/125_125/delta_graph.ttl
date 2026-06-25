@@ -2,22 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infante_Carlos_Duke_of_Calabria a :Man ;
-    :hasDeathYear 2015 ;
-    :hasMother data:Infanta_Alicia_Duchess_of_Calabria .
+data:Amedeo_of_Austria-Este a :Man,
+        :Person ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Lorenz_Archduke_of_Austria-Este ;
+    :hasMother data:Princess_Astrid_of_Belgium .
 
-data:Princess_Anne_of_Bourbon-Two_Sicilies a :Woman ;
-    :hasBirthYear 1938 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+data:Jean-Christophe_Prince_Napol%C3%A9on a :Man,
+        :Person .
 
-data:Henri_Count_of_Paris a :Ancestor,
-        :Man .
+data:King_Albert_II a :Man,
+        :Person .
 
-data:Infanta_Alicia_Duchess_of_Calabria a :Ancestor,
-        :Woman ;
-    :hasDeathYear 2017 .
+data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,
+        :Woman .
 
-data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+data:Prince_Nikolaus_of_Liechtenstein a :Man,
+        :Person .
+
+data:Princess_Beatrice_of_York a :Person,
+        :Woman .
+
+data:Princess_Elisabeth_Duchess_of_Brabant a :Person,
+        :Woman .
+
+data:Princess_Margaretha_of_Luxembourg a :Person,
+        :Woman .
+
+data:Queen_Fabiola a :Person,
+        :Woman .
+
+data:Queen_Paola a :Person,
+        :Woman .
+
+data:Lorenz_Archduke_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Astrid_of_Belgium a :Ancestor,
+        :Person,
         :Woman .
 

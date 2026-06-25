@@ -69,56 +69,417 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Xenia Georgievna of Russia (22 August 1903 – 17 September 1965) was the younger daughter of Grand Duke George Mihailovich of Russia and Princess Maria Georgievna of Greece and Denmark.
-She is known for recognizing Anna Anderson as Grand Duchess Anastasia.
-Youth
+Charles III (Charles Philip Arthur George; born 14
+Charles was born during the reign of his maternal grandfather, King George VI, and became heir apparent when his mother, Queen Elizabeth II, acceded to the throne in 1952.
+Charles was educated at Cheam School and Gordonstoun, and later spent six months at the Timbertop campus of Geelong Grammar School in Victoria, Australia.
+He married Lady Diana Spencer in 1981 and they had two sons, William and Harry.
+Charles and Diana divorced in 1996 after years of estrangement and well-publicised extramarital affairs.
+Diana died the following year from injuries sustained in a car crash.
+In 2005, Charles married his long-time partner, Camilla Parker Bowles.
+As heir apparent, Charles undertook official duties and engagements on behalf of his mother and represented the United Kingdom on visits abroad.
+He founded the Prince's Trust in 1976, sponsored the Prince's Charities and became patron or president of more than 800 other charities and organisations.
+An environmentalist, Charles supported organic farming and action to address climate change during his time as manager of the Duchy of Cornwall estates, earning him awards and recognition.
+Charles became king upon his mother's death in 2022.
+At the age of 73 he was the oldest person to accede to the British throne, after having been the longest-serving heir apparent and Prince of Wales in British history.
+Early life, family, and education
 
-Xenia and her older sister Princess Nina Georgievna, who was born in 1901, left Russia in 1914 to spend the war years in England with their mother.
-In 1919, her father, his brother Grand Duke Nicholas Mikhailovich, and their cousins Grand Duke Paul Alexandrovich and Grand Duke Dmitry Konstantinovich, were executed by a Bolshevik firing squad in St. Petersburg.
-Anna Anderson controversy
+Charles was born at 9:14 pm on 14 November 1948 by caesarean section at Buckingham Palace, during the reign of his maternal grandfather, King George VI.
+He was the first child of Princess Elizabeth, Duchess of Edinburgh (later Queen Elizabeth II), and Philip, Duke of Edinburgh.
+He was christened Charles Philip Arthur George on 15 December in the Music Room at Buckingham Palace by the archbishop of Canterbury, Geoffrey Fisher.
+George VI died on 6 February 1952, after which Charles's mother acceded to the throne as Elizabeth II and he became heir apparent.
+Under a charter issued by Edward III in 1337, and as the monarch's eldest son, he automatically assumed the titles of Duke of Cornwall and, in the Scottish peerage, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles, and Prince and Great Steward of Scotland.
+He attended his mother's coronation at Westminster Abbey on 2 June 1953.
+When Charles was five, Catherine Peebles was appointed as his governess to oversee his education at Buckingham Palace.
+He did not receive preferential treatment from the school's founder and headmaster, Stuart Townend, who encouraged the Queen to have Charles train in football, noting that boys on the pitch were never deferential to anyone.
+Charles later attended two of his father's former schools: Cheam School in Hampshire from 1958, followed by Gordonstoun in Moray, where he began classes in April 1962.
+Jonathan Dimbleby's authorised 1994 biography described Elizabeth and Philip as physically and emotionally distant parents, and criticised Philip for disregarding Charles's sensitive nature, including insisting that Charles attend Gordonstoun, where he was bullied.
+Although Charles reportedly referred to the school as "Colditz in kilts", he later praised Gordonstoun for teaching him "a great deal about myself and my own abilities and disabilities".
+In a 1975 interview Charles said he was "glad" to have attended the school and that its "toughness" had been "much exaggerated".
+In 1966, Charles spent two terms at the Timbertop campus of Geelong Grammar School in Victoria, Australia, during which he visited Papua New Guinea on a school trip with his history tutor, Michael Collins Persse.
+Charles later described his time at Timbertop as the most enjoyable part of his education.
+Reflecting on his schooling, Charles later remarked that he "didn't enjoy school as much as I might have", adding that he was "happier at home than anywhere else".
+Breaking royal tradition, Charles proceeded directly to university after completing his A‐levels rather than joining the British Armed Forces.
+During his second year he spent one term at the University College of Wales in Aberystwyth, studying Welsh history and Welsh language.
+Charles became the first British heir apparent to earn a university degree, graduating from Cambridge in June 1970 with a Bachelor of Arts (BA) degree with lower second-class honours (2:2).
+Prince of Wales
 
-In the summer of 1927, Xenia involved herself in the Anna Anderson/Anastasia Tchaikovsky affair by telephoning Gleb Botkin (son of imperial physician Eugene Botkin, who had been murdered along with the former tsar and his family in 1918) with an invitation for Anna to live as a guest at their luxurious estate in New York's Oyster Bay.
-Xenia explains her hospitality: "I had heard that Botkin was arranging to bring 'the invalid' to the United States through a newspaper organization.
-As children, Xenia and her sister Nina had played frequently with the two youngest daughters of Tsar Nicholas II, Grand Duchesses Maria Nikolaevna and Anastasia Nikolaevna, as well as the youngest child and only boy, Tsarevitch Alexei.
-Through her father, Xenia was Anastasia's second cousin, once removed and through her mother they were second cousins.
-According to Xenia, Anastasia "cheated at games, kicked, scratched, pulled hair, and generally knew how to make herself obnoxious.
+Charles was created Prince of Wales and Earl of Chester on 26 July 1958, although his investiture did not take place until 1 July 1969, when he was crowned by his mother in a televised ceremony at Caernarfon Castle.
+The event was controversial in Wales amid rising Welsh nationalist sentiment.
+He took his seat in the House of Lords the following year, delivering his maiden speech on 13 June 1974, the first royal to speak from the floor since the future Edward VII in 1884.
+Charles increasingly undertook public duties, founding the Prince's Trust in 1976 and travelling to the United States in 1981.
+Charles later remarked, "so, what are you supposed to think when you are prepared to do something to help and you are just told you're not wanted?"
+
+Military training and career
+
+Charles served in the Royal Air Force (RAF) and the Royal Navy during the 1970s.
+After the passing-out parade that September, Charles embarked on a naval career and undertook a six-week course at the Royal Naval College, Dartmouth.
+That same year he qualified as a helicopter pilot at RNAS Yeovilton, and during his helicopter training completed commando instruction at the Commando Training Centre Royal Marines at Lympstone.
+Charles then joined 845 Naval Air Squadron, a Royal Marines air support unit of the Fleet Air Arm, serving as a pilot aboard HMS Hermes and flying the Royal Marines commando variant of the Westland Wessex helicopter.
+Charles spent his final ten months of active naval service commanding the coastal minehunter HMS Bronington, beginning on 9 February 1976.
+Charles gave up flying after crash-landing a BAe 146 in Islay in 1994, when, as a passenger invited to fly the aircraft, he was at the controls; a board of inquiry found the crew negligent.
+Relationships and marriages
+
+Bachelorhood
+
+In his youth, Charles was romantically linked to several women.
+Charles's great-uncle Lord Mountbatten advised him to "sow his wild oats and have as many affairs as he can before settling down", but, for a wife, he "should choose a suitable, attractive, and sweet-charactered girl before she has met anyone else she might fall for ...
+Early in 1974, Mountbatten began corresponding with 25-year-old Charles about a potential marriage to his granddaughter, Amanda Knatchbull.
+Charles wrote to Amanda's mother, Lady Brabourne, who was also his godmother, expressing interest in her daughter.
+Four years later, Mountbatten arranged for Amanda and himself to accompany Charles on his 1980 visit to India.
+Both fathers, however, objected: Prince Philip feared that his famous uncle would eclipse Charles, while Lord Brabourne warned that a joint visit would concentrate media attention on the cousins before they could decide whether to become a couple.
+In August 1979, before Charles was due to depart alone for India, Mountbatten was assassinated by the Provisional Irish Republican Army.
+When Charles returned, he proposed to Amanda.
+But in addition to her grandfather, she had lost her paternal grandmother and younger brother in the bomb attack, and was now reluctant to join the royal family.
+Lady Diana Spencer
+
+Charles first met Lady Diana Spencer in 1977, while he was visiting her home, Althorp.
+He was then the companion of her elder sister Sarah and did not consider Diana romantically until mid-1980.
+While Charles and Diana were sitting together on a bale of hay at a friend's barbecue in July, she mentioned that he had looked forlorn and in need of care at the funeral of Lord Mountbatten.
+Charles's cousin Norton Knatchbull and his wife told Charles that Diana appeared awestruck by his position and that he did not seem to be in love with her.
+When Charles's father told him that the media speculation would injure Diana's reputation if Charles did not come to a decision about marrying her soon, and realising that she was a suitable royal bride (according to Mountbatten's criteria), Charles construed his father's advice as a warning to proceed without further delay.
+He proposed to Diana in February 1981, with their engagement becoming official on 24 February; the wedding took place at St Paul's Cathedral on 29 July.
+Upon his marriage, Charles reduced his voluntary tax contribution from the profits of the Duchy of Cornwall from 50 per cent to 25 per cent.
+The couple lived at Kensington Palace and Highgrove House, near Tetbury, and had two children: William, in 1982, and Harry, in 1984.
+As of 2025, Charles has an estranged relationship with his son Harry, who relinquished his royal family obligations and moved to the United States in 2020.
+In 1986 Charles had fully resumed his affair with former girlfriend, Camilla Parker Bowles.
+In a video tape recorded by Peter Settelen in 1992, Diana admitted that, from 1985 to 1986, she had been "deeply in love with someone who worked in this environment."
+It was assumed that she was referring to Barry Mannakee, who had been transferred to the Diplomatic Protection Squad in 1986, after his managers determined his relationship with Diana had been inappropriate.
+Diana later commenced a relationship with Major James Hewitt, the family's former riding instructor.
+Charles and Diana's evident discomfort in each other's company led to them being dubbed "The Glums" by the press.
+Diana exposed Charles's affair with Parker Bowles in a book by Andrew Morton, Diana: Her True Story.
+Audio tapes of her own extramarital flirtations also surfaced, as did persistent suggestions that Hewitt is Prince Harry's father, based on a physical similarity between Hewitt and Harry.
+However, Harry had already been born by the time Diana's affair with Hewitt began.
+Early the following year, the British press published transcripts of a passionate, bugged telephone conversation between Charles and Parker Bowles that had taken place in 1989, which was dubbed "Tampongate" and "Camillagate".
+Charles subsequently sought public understanding in a television film with Dimbleby, Charles: The Private Man, the Public Role, broadcast in June 1994.
+In an interview in the film, Charles confirmed his own extramarital affair with Parker Bowles, saying that he had rekindled their association in 1986, only after his marriage to Diana had "irretrievably broken down".
+This was followed by Diana's own admission of marital troubles in an interview on the BBC current affairs programme Panorama, broadcast in November 1995.
+Referring to Charles's relationship with Parker Bowles, she said, "well, there were three of us in this marriage.
+Charles and Diana divorced on 28 August 1996, after being advised by the Queen in December 1995 to end the marriage.
+Diana died following a car crash in Paris on 31 August 1997.
+Charles flew to Paris with Diana's sisters to accompany her body back to Britain.
+In 2003, Diana's butler Paul Burrell published a note that he claimed had been written by Diana in 1995, in which there were allegations that Charles was "planning 'an accident' in  car, brake failure and serious head injury", so that he could remarry.
+She had allegedly expressed similar concerns in October 1995 to Lord Mishcon, her solicitor, that "reliable sources" had told her "that she and Camilla would be put aside" for Charles to marry Tiggy Legge-Bourke.
+When questioned by the Metropolitan Police inquiry team as a part of Operation Paget, Charles told the authorities that he did not know about his former wife's note from 1995 and could not understand why she had those feelings.
+The allegations were later revealed to have been among the smears spread by journalist Martin Bashir to secure an interview with Diana for the BBC.
+Camilla Parker Bowles
+
+Because Charles and Parker Bowles were romantically involved periodically, both before and during their respective first marriages, their relationship received criticism from the public and the media.
+Following both of their divorces, Charles declared his relationship with Parker Bowles was "non-negotiable" and appointed Mark Bolland to enhance Parker Bowles's public profile.
+In 1999 Charles and Parker Bowles made their first public appearance as a couple at the Ritz London Hotel and the following year, she met Queen Elizabeth II at the 60th birthday party of former King Constantine II of Greece, which was seen as  an apparent seal of approval by the Queen on the relationship.
+In 2003, Parker Bowles moved into Charles's official residence, Clarence House  and she accompanied Charles on almost all of his official events, including the annual Highland Games in Scotland.
+Former Archbishop of Canterbury, George Carey, told The Times that Charles and Parker Bowles should marry, "He is heir to the throne and he loves her.
+The Queen's consent to the marriage – as required by the Royal Marriages Act 1772 – was recorded in a Privy Council meeting on 2 March.
+In Canada, the Department of Justice determined the consent of the Queen's Privy Council for Canada was not required, as the union would not produce any heirs to the Canadian throne.
+Charles was the only member of the royal family to have a civil, rather than a church, wedding in England.
+British government documents from the 1950s and 1960s, published by the BBC, stated that such a marriage was illegal; these claims were dismissed by Charles's spokesman and explained by the sitting government to have been repealed by the Registration Service Act 1953.
+The union was scheduled to take place in a civil ceremony at Windsor Castle, with a subsequent religious blessing at the castle's St George's Chapel.
+Four days before the event, it was postponed from the originally scheduled date of 8 April until the following day in order to allow Charles and some of the invited dignitaries to attend the funeral of Pope John Paul II.
+Charles's parents did not attend the marriage ceremony; the Queen's reluctance to attend possibly arose from her position as Supreme Governor of the Church of England.
+The blessing by Archbishop of Canterbury Rowan Williams was televised.
+Since their marriage in 2005, Charles has paid tribute to Camilla repeatedly in public letters, speeches and interviews, thanking her for "steadfast support" and referring to her as "my darling wife".
+Official duties
+
+In 1965, Charles undertook his first public engagement by attending a student garden party at the Palace of Holyroodhouse.
+During his time as Prince of Wales, he undertook official duties on behalf of the Queen, completing 10,934 engagements between 2002 and 2022.
+Charles made regular tours of Wales, fulfilling a week of engagements each summer, and attending important national occasions, such as opening the Senedd.
+The six trustees of the Royal Collection Trust met three times a year under his chairmanship.
+Charles also represented his mother at the independence celebrations in Fiji in 1970, The Bahamas in 1973, Papua New Guinea in 1975, Zimbabwe in 1980 and Brunei in 1984.
+In 1983, a man named Christopher John Lewis, who had fired a shot with a .22 rifle at the Queen in 1981, attempted to escape a psychiatric hospital in order to assassinate Charles, who was visiting New Zealand with Diana and William.
+While Charles was visiting Australia on Australia Day in January 1994, David Kang fired two shots at him from a starting pistol in protest against the treatment of several hundred Cambodian asylum-seekers held in detention camps.
+In 1995 Charles became the first member of the royal family to visit the Republic of Ireland in an official capacity.
+In 1997 he represented the Queen at the Hong Kong handover ceremony.
+At the funeral of Pope John Paul II in 2005, Charles caused controversy when he shook hands with Zimbabwean president Robert Mugabe, who had been seated next to him.
+Charles's office subsequently released a statement saying that he could not avoid shaking Mugabe's hand and that he "finds the current Zimbabwean regime abhorrent".
+Charles represented the Queen at the opening ceremony of the 2010 Commonwealth Games in Delhi, India.
+In November 2013 he represented the Queen for the first time at a Commonwealth Heads of Government Meeting, in Colombo, Sri Lanka.
+Charles and Camilla made their first joint trip to the Republic of Ireland in May 2015.
+During the trip, he shook hands in Galway with Gerry Adams, leader of Sinn Féin and widely believed to be the leader of the IRA, the militant group that had assassinated Lord Mountbatten in 1979.
+Commonwealth heads of government decided at their 2018 meeting that Charles would be the next Head of the Commonwealth after the Queen.
+In March 2019, at the request of the British government, Charles and Camilla went on an official tour of Cuba, making them the first British royals to visit the country.
+Charles contracted COVID-19 during the pandemic in March 2020.
+Several newspapers were critical that Charles and Camilla were tested promptly at a time when many National Health Service doctors, nurses and patients had been unable to be tested expeditiously.
+Charles attended the November 2021 ceremonies to mark Barbados's transition into a parliamentary republic, abolishing the position of monarch of Barbados.
+He was invited by Prime Minister Mia Mottley as the future Head of the Commonwealth; it was the first time that a member of the royal family attended the transition of a realm to a republic.
+In May of the following year, Charles attended the State Opening of the British Parliament, delivering the Queen's Speech on behalf of his mother, as a counsellor of state.
+Reign
+
+Charles acceded to the British throne on his mother's death on 8 September 2022.
+Charles was the oldest person to succeed to the British throne, at the age of 73, surpassing the previous record holder, William IV, who was 64 when he became king in 1830.
+Charles gave his first speech to the nation at 6 pm on 9 September, in which he paid tribute to his mother and announced the appointment of his elder son, William, as Prince of Wales.
+The following day, the Accession Council publicly proclaimed Charles as king, the ceremony being televised for the first time.
+Attendees included Queen Camilla, Prince William and the British prime minister, Liz Truss, along with her six living predecessors.
+Other realms signed and read their own proclamations, as did Scotland, Wales, Northern Ireland, the British Overseas Territories, the Crown Dependencies, Canadian provinces and Australian states.
+In November 2022, the King and Queen hosted the South African president, Cyril Ramaphosa, during the first official state visit to Britain of Charles's reign.
+The following March, they undertook a state visit to Germany, where Charles became the first British monarch to address the Bundestag.
+On 6 May 2023, Charles and Camilla's coronation took place at Westminster Abbey, in a ceremony planned for many years under the code name Operation Golden Orb.
+Prior to Charles's accession, reports suggested that the coronation would be "shorter, smaller, less expensive, and more representative of different faiths and community groups than that of his mother in 1953, reflecting the King's wish to acknowledge the ethnic diversity of modern Britain".
+In July 2023, the royal couple attended a national service of thanksgiving at St Giles' Cathedral, where Charles was presented with the Honours of Scotland.
+In September, Charles became the first British monarch to give a speech from the French Senate chamber during a state visit to France.
+In May 2024, the British prime minister, Rishi Sunak, asked the King to call a general election; subsequently, royal engagements that could divert attention from the election campaign were postponed.
+In June 2024, Charles and Camilla travelled to Normandy to attend the 80th anniversary commemorations of D-Day.
+In July, the annual Holyrood Week, which is usually spent in Scotland, was shortened so that Charles could return to London and appoint a new prime minister following the general election.
+After Sunak's Conservative Party lost the election to the Labour Party led by Sir Keir Starmer, Charles appointed Starmer as prime minister.
+In October 2024, the King and Queen toured Australia and Samoa; Australia was the first Commonwealth realm Charles visited since his accession.
+Charles temporarily paused his cancer treatment during the tour.
+Zelenskyy later told The Guardian that Charles played a quiet but influential role in altering US president Donald Trump's attitude toward Ukraine.
+The King and Queen initially cancelled a planned visit to Vatican City during their state visit to Italy, but on 9 April 2025 – their 20th wedding anniversary – they visited Pope Francis at Domus Sanctae Marthae as he was recovering from pneumonia.
+The King, accompanied by the Queen, made his first visit to Canada as monarch in May 2025 at the invitation of Prime Minister Mark Carney, a trip that took place during a period of tension with the United States after President Trump made comments questioning Canada's sovereignty.
+In June 2025, the King approved the decommissioning of the British Royal Train ahead of its maintenance contract ending in 2027.
+Described by the Keeper of the Privy Purse as part of a commitment to "fiscal discipline", the decision marked the end of 180 years of the royal family's use of a dedicated royal train.
+In October 2025, during his state visit to the Holy See, Charles became the first British monarch to pray alongside a pope since the Reformation, joining Pope Leo XIV for a church service in the Sistine Chapel of the Apostolic Palace in Vatican City.
+Later that month, Charles undertook his first official engagement in support of the LGBT+ community, unveiling "An Opened Letter", the UK's first national memorial honouring LGBT armed forces veterans, at the National Memorial Arboretum in Staffordshire.
+On 30 October, amid continuing controversy surrounding his brother Andrew's association with the American financier and child sex offender Jeffrey Epstein, Charles initiated a formal process to remove his style, titles and honours.
+Following Andrew's arrest on 19 February 2026 on suspicion of misconduct in public office, the King expressed his "deepest concern" and stated that "the law must take its course".
+In April 2026, during a state visit to the United States, Charles became the second British monarch to address a joint meeting of Congress, after his mother Elizabeth II in 1991.
+Health
+
+In March 1998, Charles had laser keyhole surgery on his right knee and in March 2003, he underwent surgery at King Edward VII's Hospital to treat a hernia injury.
+In January 2024, Charles underwent a "corrective procedure" at the London Clinic to treat benign prostate enlargement, which resulted in the postponement of some of his public engagements.
+In February Buckingham Palace announced that cancer had been discovered during the treatment, but that it was not prostate cancer.
+Although his public duties were postponed, it was reported Charles would continue to fulfil his constitutional functions during his outpatient treatment.
+In March, Camilla deputised for him in his absence at the Commonwealth Day service at Westminster Abbey and at the Royal Maundy at Worcester Cathedral.
+He made his first major public appearance since his cancer diagnosis at the Easter service held at St George's Chapel, Windsor Castle, on 31 March.
+In March 2025, Charles was briefly admitted to hospital after experiencing temporary side effects from his cancer treatment.
+Diet
+
+As early as 1985, Charles was questioning meat consumption.
+In the 1985 Royal Special television programme, he told the host, Alastair Burnet, that "I actually now don't eat as much meat as I used to.
+In 2021, Charles spoke to the BBC about the environment and revealed that, two days per week, he eats no meat nor fish and, one day per week, he eats no dairy products.
+Ahead of Christmas dinner in 2022, Charles confirmed to the animal rights group People for the Ethical Treatment of Animals that foie gras would not be served at any royal residences; he had stopped the use of foie gras at his own properties for more than a decade before becoming king.
+During a September 2023 state banquet at the Palace of Versailles, it was reported that he did not want foie gras or out-of-season asparagus on the menu.
+Charity work
+
+Since founding the Prince's Trust in 1976, using his £7,500 of severance pay from the Royal Navy, Charles has established 16 more charitable organisations and now serves as president of each.
+Together they form a loose alliance, the Prince's Charities, which describes itself as "the largest multi-cause charitable enterprise in the United Kingdom, raising more than £100 million annually ...  active across a broad range of areas including education and young people, environmental sustainability, the built environment, responsible business and enterprise, and international".
+King Charles III Charitable Fund has donated over £73 million to various causes since 1979.
+By September 2020 the Prince's Trust had supported over 1,000,000 young people and created 125,000 entrepreneurs.
+As Prince of Wales, Charles became patron or president of more than 800 other charities and organisations.
+He received a Gold Blue Peter badge in 2023 for his environmental work and for his support of young people through the Prince's Trust.
+The Prince's Charities Canada was established in 2010, in a similar fashion to its namesake in Britain.
+Charles uses his tours of Canada as a way to help to draw attention to youth, the disabled, the environment, the arts, medicine, the elderly, heritage conservation and education.
+He has also set up the Prince's Charities Australia, based in Melbourne, to provide a co-ordinating presence for his Australian and international charitable endeavours.
+Charles has supported humanitarian projects; for example, he has been known to donate his blood to raise awareness for health causes..
+Charles and his sons took part in ceremonies that marked the 1998 International Day for the Elimination of Racial Discrimination.
+Charles expressed strong concerns about the human rights record of the Romanian dictator Nicolae Ceaușescu.
+Charles has also supported humanitarian causes in Israel, including a private donation to the Peres Center for Peace and Innovation in 2020.
+Investigations of donations
+
+Two of Charles's charities, the Prince's Foundation and the Prince of Wales's Charitable Fund (later renamed the King's Foundation and King Charles III Charitable Fund), came under scrutiny in 2021 and 2022 for accepting donations many in the media deemed inappropriate.
+In August 2021 it was announced that the Prince's Foundation was launching an investigation into the reports, with Charles's support.
+The Charity Commission also launched an investigation into allegations that the donations meant for the Prince's Foundation had been instead sent to the Mahfouz Foundation.
+In February 2022, the Metropolitan Police launched an investigation into the cash-for-honours allegations linked to the foundation, passing their evidence to the Crown Prosecution Service for deliberation in October.
+In August 2023 the Metropolitan Police announced that they had concluded their investigations and no further action would be taken.
+The Times reported in June 2022 that, between 2011 and 2015, Charles accepted €3 million in cash from the Prime Minister of Qatar, Hamad bin Jassim bin Jaber Al Thani.
+In the same month, The Times reported that the Prince of Wales's Charitable Fund received a donation of £1 million from Bakr bin Laden and Shafiq bin Laden – both half-brothers of Osama bin Laden – during a private meeting in 2013.
+Personal interests
+
+From young adulthood, Charles encouraged the understanding of Indigenous voices, saying they held crucial messages about preservation of the land, respecting community and shared values, resolving conflict, and recognising and making good on past iniquities.
+At the 2022 Commonwealth Heads of Government Meeting Charles, who was representing his mother, raised that reconciliation process as an example for dealing with the history of slavery in the British Empire, for which he expressed his sorrow.
+Letters sent by Charles to British government ministers in 2004 and 2005 expressing his concerns over various policy issues – known as the black spider memos – presented potential embarrassment following a challenge by The Guardian to release the letters under the Freedom of Information Act 2000.
+In March 2015 the Supreme Court of the United Kingdom decided that Charles's letters must be released.
+The reaction was largely supportive of Charles, with little criticism of him; the press variously described the memos as "underwhelming" and "harmless", and concluded that their release had "backfired on those who seek to belittle him".
+It was revealed in the same year that Charles had access to confidential Cabinet papers.
+In October 2020, a letter sent by Charles to the Governor-General of Australia, Sir John Kerr, after Kerr's dismissal of Prime Minister Gough Whitlam in 1975, was released as part of the collection of palace letters regarding the Australian constitutional crisis.
+In the letter, Charles was supportive of Kerr's decision, writing that what Kerr "did last year was right and the courageous thing to do".
+The Times reported in June 2022 that Charles had privately described the British government's Rwanda asylum plan as "appalling" and he feared that it would overshadow the Commonwealth Heads of Government Meeting in Rwanda that same month.
+It was later claimed that Cabinet ministers had warned Charles to avoid making political comments, as they feared a constitutional crisis could arise if he continued to make such statements once he became King.
+Built environment
+
+Charles has openly expressed his views on architecture and urban planning; he fostered the advancement of New Classical architecture and asserted that he "care deeply about issues such as the environment, architecture, inner-city renewal, and the quality of life."
+In a speech given for the 150th anniversary of the Royal Institute of British Architects in May 1984, he described a proposed extension to the National Gallery in London as a "monstrous carbuncle on the face of a much-loved friend" and deplored the "glass stumps and concrete towers" of modern architecture.
+Charles called for local community involvement in architectural choices and asked, "why has everything got to be vertical, straight, unbending, only at right angles – and functional?"
+Charles has "a deep understanding of Islamic art and architecture", according to the Oxford professor Mohammed Talib, and has been involved in the construction of a building and garden at the Oxford Centre for Islamic Studies that combine Islamic and Oxford architectural styles.
+In Charles's 1989 book A Vision of Britain, and in speeches and essays, he has been critical of modern architecture, arguing that traditional designs and methods should guide contemporary ones.
+Two of his charities – the Prince's Regeneration Trust and the Prince's Foundation for Building Community, which were later merged into one charity – promote his views.
+The village of Poundbury was built on land owned by the Duchy of Cornwall to a master plan by Léon Krier, under the guidance of Charles and in line with his philosophy.
+In 2013 developments for the suburb of Nansledan began on the estate of the Duchy of Cornwall with Charles's endorsement.
+Charles helped purchase Dumfries House and its complete collection of 18th century furnishings in 2007, taking a £20 million loan from his charitable trust to contribute towards the £45 million cost.
+The house and gardens remain property of the Prince's Foundation and serve as a museum and community and skills training centre.
+After lamenting in 1996 the unbridled destruction of many of Canada's historic urban cores, Charles offered his assistance to the Department of Canadian Heritage in creating a trust modelled on Britain's National Trust, a plan that was implemented with the passage of the federal budget in 2007.
+In 1999 Charles agreed to the use of his title for the Prince of Wales Prize for Municipal Heritage Leadership, awarded by the National Trust for Canada to municipal governments that have committed to the conservation of historic places.
+Whilst visiting the US and surveying the damage caused by Hurricane Katrina, Charles received the National Building Museum's Vincent Scully Prize in 2005 for his efforts in regard to architecture; he donated US$25,000 of the prize money towards restoring storm-damaged communities.
+For his work as patron of New Classical architecture, Charles was awarded the 2012 Driehaus Architecture Prize from the University of Notre Dame.
+The Worshipful Company of Carpenters installed Charles as an Honorary Liveryman "in recognition of his interest in London's architecture.
 "
 
 
-Xenia was on a cruise with her husband William in the West Indies at the time of Anna's arrival in New York.
-She had arranged for Anna to stay with Annie Burr Jennings, a friend of Xenia's who lived in a Park Avenue townhouse.
-Upon her return, Xenia sneaked unannounced into Annie Jennings's crowded salon to observe Anna.
-After watching Anna offer her hand to Gleb Botkin, Xenia declared that she knew she was watching an equal.
+Charles has occasionally intervened in projects that employ architectural styles such as modernism and functionalism.
+In 2009 he wrote to the Qatari royal family – the financier of the redevelopment of the Chelsea Barracks site – labelling Lord Rogers's design for the site "unsuitable".
+Rogers claimed that Charles had also intervened to block his designs for the Royal Opera House and Paternoster Square.
+CPC Group, the project developer, took a case against Qatari Diar to the High Court.
+After the suit was settled, the CPC Group apologised to Charles "for any offence caused ... during the course of the proceedings".
+Natural environment
+
+Since the 1970s, Charles has promoted environmental awareness.
+Charles was named one of Time Magazine's 100 most influential climate leaders of 2025.
+An avid gardener, Charles has also emphasised the importance of talking to plants, stating that "I happily talk to the plants and trees, and listen to them.
+Upon moving into Highgrove House, Charles developed an interest in organic farming, which culminated in the 1990 launch of his own organic brand, Duchy Originals, which sells more than 200 different sustainably produced products; the profits (more than £6 million by 2010) are donated to the Prince's Charities.
+Charles became involved with farming and various industries within it, regularly meeting with farmers to discuss their trade.
+A prominent critic of the practice, Charles has also spoken against the use of genetically modified crops, and in a letter to Tony Blair in 1998 he criticised the development of genetically modified foods.
+The Sustainable Markets Initiative – a project that encourages putting sustainability at the centre of all activities – was launched by Charles at the World Economic Forum's annual meeting in Davos in January 2020.
+The holy chrism oil used at Charles's coronation was vegan, made from oils of olive, sesame, rose, jasmine, cinnamon, neroli and benzoin, along with amber and orange blossom.
+His mother's chrism oil contained animal-based oils.
+Charles delivered a speech at the 2021 G20 Rome summit, describing COP26 as "the last chance saloon" for preventing climate change and asking for actions that would lead to a green-led, sustainable economy.
+In 2022, the media alleged that Liz Truss had advised Charles against attending COP27, to which advice he agreed.
+Charles delivered the opening speech at COP28, saying among others he prayed "with all my heart that COP28 will be a critical turning point towards genuine transformational action."
+Charles, who is patron of the Cambridge Institute for Sustainability Leadership, introduced the Climate Action Scholarships for students from small island nations in partnership with the University of Cambridge, the University of Toronto, the University of Melbourne, McMaster University and the University of Montreal in March 2022.
+In 2010, he funded the Prince's Countryside Fund (renamed the Royal Countryside Fund in 2023), a charity that aims for a "confident, robust and sustainable agricultural and rural community".
+Alternative medicine
+
+Charles has controversially championed alternative medicine, including homeopathy.
+Similarly, the Prince's Foundation for Integrated Health (FIH) attracted opposition from the scientific and medical community over its campaign encouraging general practitioners to offer herbal and other alternative treatments to NHS patients.
+That year, Ernst published a book with Simon Singh called Trick or Treatment: Alternative Medicine on Trial and mockingly dedicated to "HRH the Prince of Wales".
+The last chapter is highly critical of Charles's advocacy of complementary and alternative treatments.
+Charles's Duchy Originals produced a variety of complementary medicinal products, including a "Detox Tincture" that Ernst denounced as "financially exploiting the vulnerable" and "outright quackery".
+Charles personally wrote at least seven letters to the Medicines and Healthcare products Regulatory Agency shortly before it relaxed the rules governing labelling of such herbal products, a move that was widely condemned by scientists and medical bodies.
+It was reported in October 2009 that Charles had lobbied the health secretary, Andy Burnham, regarding greater provision of alternative treatments in the NHS.
+The FIH was re-branded and re-launched later in 2010 as the College of Medicine, of which Charles became a patron in 2019.
+Sports
+
+From his youth until 2005, Charles was an avid player of competitive polo.
+Charles also frequently took part in fox hunting until the sport was banned in the United Kingdom, also in 2005.
+By the late 1990s opposition to the activity was growing when Charles's participation was viewed as a "political statement" by those who were opposed to it.
+Charles suffered several polo- and hunting-related injuries throughout the years, including a two-inch scar on his left cheek in 1980, a broken arm in 1990, a torn cartilage in his left knee in 1992, a broken rib in 1998, and a fractured shoulder in 2001.
+Charles has been a keen salmon angler since youth and supported Orri Vigfússon's efforts to protect the North Atlantic salmon.
+Charles is a supporter of Burnley F.C.
+
+
+Apart from hunting, Charles has also participated in target rifle competitions, representing the House of Lords in the Vizianagram Match (Lords vs. Commons) at Bisley.
+Visual, performing, and literary arts
+
+Charles has been involved in performance since his youth, and appeared in sketches and revues while studying at Cambridge.
+Charles is president or patron of more than 20 performing arts organisations, including the Royal College of Music, Royal Opera, English Chamber Orchestra, Philharmonia Orchestra, Welsh National Opera, Royal Shakespeare Company (attending performances in Stratford-Upon-Avon, supporting fundraising events, and attending the company's annual general meeting), British Film Institute, and Purcell School.
+In 2000 he revived the tradition of appointing an official harpist to the Prince of Wales, in order to foster Welsh talent at playing the national instrument of Wales.
+Charles is a keen watercolourist, having published books on the subject and exhibited and sold a number of his works to raise money for charity; in 2016 it was estimated that he had sold lithographs of his watercolours for a total of £2 million from a shop at his Highgrove House residence.
+For his 50th birthday 50 of his watercolours were exhibited at Hampton Court Palace and, for his 70th birthday, his works were exhibited at the National Gallery of Australia.
+Charles founded the Royal Drawing School in 2000, which offers drawing classes to children and the public.
+To mark the 25th anniversary of his investiture as Prince of Wales in 1994, the Royal Mail issued a series of postage stamps that featured his paintings.
+Charles is Honorary President of the Royal Academy of Arts Development Trust and, in 2015, 2022 and 2023, commissioned paintings of 12 D-Day veterans, seven Holocaust survivors, and ten members of the Windrush generation, respectively, which went on display at the Queen's Gallery in Buckingham Palace.
+Charles is the author of several books and has contributed a foreword or preface to numerous books by others.
+Religion and philosophy
+
+Shortly after his accession to the throne, Charles publicly described himself as "a committed Anglican Christian"; at age 16, during Easter 1965, he had been confirmed into the Anglican Communion by Archbishop of Canterbury Michael Ramsey in St George's Chapel, Windsor Castle.
+He attends services at various Anglican churches close to Highgrove and attends the Church of Scotland's Crathie Kirk with the rest of the royal family when staying at Balmoral Castle.
+Laurens van der Post became a friend of Charles in 1977; he was dubbed Charles's "spiritual guru" and was godfather to Prince William.
+From van der Post, Charles developed a focus on philosophy and an interest in other religions.
+Charles expressed his philosophical views in his 2010 book, Harmony: A New Way of Looking at Our World, which won a Nautilus Book Award.
+Charles also attended the consecration of Britain's first Syriac Orthodox cathedral, St Thomas Cathedral, Acton.
+Charles is patron of the Oxford Centre for Islamic Studies at the University of Oxford and attended the inauguration of the Markfield Institute of Higher Education, which is dedicated to Islamic studies in a multicultural context.
+In his 1994 documentary with Dimbleby, Charles said that, when king, he wished to be seen as a "defender of faith", rather than the British monarch's traditional title of Defender of the Faith, "prefer to embrace all religious traditions and 'the pattern of the divine, which I think is in all of us.'"
+Charles reaffirmed this theme shortly after his accession and declared that his duties as sovereign included "the duty to protect the diversity of our country, including by protecting the space for faith itself and its practice through the religions, cultures, traditions, and beliefs to which our hearts and minds direct us as individuals."
+Although the text of the coronation oath was not altered, because the process of passing new legislation through Parliament would be lengthy and liable to raise divisive issues, a preamble spoken by the Archbishop of Canterbury was added to the text:
+
+
+Your Majesty, the Church established by law, whose settlement you will swear to maintain, is committed to the true profession of the Gospel, and, in so doing, will seek to foster an environment in which people of all faiths and beliefs may live freely.
+In line with his multi-faith approach, Charles has served as a patron of the Council of Christians and Jews and of the Jewish Museum London.
+Media image and public opinion
+
+Since his birth, Charles has received close media attention, which increased as he matured.
+It has been an ambivalent relationship, largely impacted by his marriages to Diana and Camilla and their aftermath, but also centred on his future conduct as king.
+Described as the "world's most eligible bachelor" in the late 1970s, Charles was subsequently overshadowed by Diana.
+After her death the media regularly breached Charles's privacy and printed exposés.
+In September 2025, The Economist analysed all Charles's public speeches over the past 30 years and concluded that he has mellowed over the past three decades.
+In 2009, Charles was named the world's best-dressed man by Esquire magazine.
+Fashion magazine British GQ described Charles as "the true guardian of traditional British menswear" in 2012 and named him one of the most stylish people of 2025.
+Italian designer Donatella Versace once said Charles "is an archetype of style".
+In 2023 the New Statesman named Charles as the fourth-most-powerful right-wing figure of the year, describing him as a "romantic traditionalist" and "the very last reactionary in public life" for his support of various traditionalist think tanks and previous writings.
+Charles and Camilla topped Tatler's Social Power Index for 2022 and 2023.
+A 2018 BMG Research poll found that 46 per cent of Britons wanted Charles to abdicate immediately on his mother's death, in favour of William.
+On his accession to the throne, The Statesman reported an opinion poll that put Charles's popularity with the British people at 42 per cent.
+As of August 2025, Charles continues to hold majority support with an approval rating of 59 per cent, and 62 percent of the public say "he is doing a good job", according to YouGov.
+Reaction to press treatment
+
+In 1994, the German tabloid Bild published nude photos of Charles that were taken while he was vacationing in Le Barroux; they had reportedly been put up for sale for £30,000.
+Buckingham Palace reacted by stating that it was "unjustifiable for anybody to suffer this sort of intrusion".
+Charles, "so often a target of the press, got his chance to return fire" in 2002, when addressing "scores of editors, publishers, and other media executives" gathered at St Bride's Fleet Street to celebrate 300 years of journalism.
 "
 
 
-Xenia recognized Anna Anderson as the Grand Duchess Anastasia at once, asserting that Anna was herself at all times, never giving the slightest impression of playing a part.
-The two remained great friends for life even after Anna Anderson had to leave Xenia's home after quarreling.
-Then her treatment of the Grand Duchess Xenia, sister of the last Tsar, led to a quarrel with William Leeds, who turned her out of the house.
-Pierre Gilliard, tutor for the five children of Tsar Nicholas II from 1905 to 1918, pointed out that Princess Xenia had last seen her second cousin when Xenia was 10 and Anastasia was 12.
-Xenia responded that she did not recognize Anastasia visually, but felt she was qualified to tell the difference between a member of the Romanov family and a "Polish peasant woman."
-Anderson bore a strong family resemblance to Tsarina Alexandra's family and her moodiness and temper also reminded Xenia of her cousin Anastasia.
-Prince Dmitri, son of Grand Duchess Xenia, wrote about what Princess Xenia had stated,
+In 2006, Charles filed a court case against The Mail on Sunday, after excerpts of his personal journals were published, revealing his opinions on matters such as the transfer of sovereignty over Hong Kong to China in 1997, in which Charles described the Chinese government officials as "appalling old waxworks".
+Charles and Camilla were named in 2011 as individuals whose confidential information was reportedly targeted or actually acquired in conjunction with the news media phone hacking scandal.
+The Independent noted in 2015 that Charles would only speak to broadcasters "on the condition they have signed a 15-page contract, demanding that Clarence House attends both the 'rough cut' and 'fine cut' edits of films and, if it is unhappy with the final product, can 'remove the contribution in its entirety from the programme'."
+This contract stipulated that all questions directed at Charles must be pre-approved and vetted by his representatives.
+Residences and finance
 
 
-Xenia's irresponsible statement should be somehow refuted ...
-We know she left Russia in 1914 aged 10 years old, I also know that Nina (her sister) and Xenia never saw Uncle Nicky's family very often, and when they did see them that was when they were very young.
-Personal life
+In 2023, The Guardian estimated Charles's personal wealth at £1.8 billion.
+This estimate includes the assets of the Duchy of Lancaster worth £653 million (and paying Charles an annual income of £20 million), jewels worth £533 million, real estate worth £330 million, shares and investments worth £142 million, a stamp collection worth at least £100 million, racehorses worth £27 million, artworks worth £24 million and cars worth £6.3 million.
+Most of this wealth, which he inherited from his mother, Elizabeth II, was exempt from inheritance tax.
+Clarence House, previously the residence of the Queen Mother, was Charles's official London residence from 2003, after being renovated at a cost of £6.1 million.
+He previously shared apartments eight and nine at Kensington Palace with Diana before moving to York House at St James's Palace, which remained his principal residence until 2003.
+Highgrove House in Gloucestershire is owned by the Duchy of Cornwall, having been purchased for Charles's use in 1980, and which he rented for £336,000 per annum.
+Since William became Duke of Cornwall, Charles is expected to pay £700,000 per annum for use of the property.
+Charles also owns a property near the village of Viscri in Romania.
+As Prince of Wales, Charles's primary source of income was generated from the Duchy of Cornwall, which owns 133,658 acres of land (around 54,090 hectares), including farming, residential, and commercial properties, as well as an investment portfolio.
+Since 1993, he has paid tax voluntarily under the Memorandum of Understanding on Royal Taxation, updated in 2013.
+Titles, styles, honours, and arms
 
-Xenia married twice.
-At age 18 she married William Bateman Leeds Jr. (19 September 1902 – 31 December 1971), the son and heir of the American tin magnate William B. Leeds Sr. and the stepson of Xenia's maternal uncle Prince Christopher of Greece and Denmark, through his marriage to William’s mother, the former Nonie Stewart Leeds.
-Xenia and William had a daughter on 25 February 1925, Nancy Helen Marie Leeds.
-Xenia and William Leeds divorced in 1930.
-Xenia's second marriage was with Herman Jud (1911–1987), whom she married at Glen Cove, New York, on 10 August 1946.
-Death
+Titles and styles
 
-Princess Xenia Georgievna died on 17 September 1965, aged 62, survived by her second husband and by her daughter, Nancy Leeds Wynkoop, and by granddaughter Alexandra.
+Charles has held many titles and honorary military positions throughout the Commonwealth, is sovereign of many orders in his own countries and has received honours and awards from around the world.
+Charles is also styled Defender of the Faith.
+There had been speculation throughout Elizabeth II's reign as to what regnal name Charles would choose upon his accession; instead of Charles III, he could have chosen to reign as George VII or used one of his other given names.
+It was reported that he might use George in honour of his grandfather George VI and to avoid associations with previous controversial kings named Charles.
+Charles's office asserted in 2005 that no decision had yet been made.
+Speculation continued for a few hours following his mother's death, until Prime Minister Liz Truss announced and Clarence House confirmed that Charles had chosen the regnal name Charles III.
+Charles, who left active military service in 1976, was awarded the highest rank in all three armed services in 2012 by his mother: Admiral of the Fleet, Field Marshal, and Marshal of the Royal Air Force.
+Arms
+
+As Prince of Wales, Charles's coat of arms was based on the arms of the United Kingdom, differenced with a white label and an inescutcheon of the Principality of Wales, surmounted by the heir apparent's crown, and with the motto Ich dien (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}German: , "I serve") instead of Dieu et mon droit.
+When Charles became king, he inherited the royal coats of arms of the United Kingdom and of Canada.
+The design of his royal cypher, featuring a depiction of the Tudor Crown instead of St Edward's Crown, was revealed on 27 September 2022.
+On 10 October 2024, designed by artist Timothy Noad, the new Royal Arms, alongside the new Lesser Arms, used by the UK government were officially unveiled, with both arms reflecting the stylistic changes made after Charles's accession.
+Banners, flags, and standards
+
+As heir apparent
+
+The banners used by Charles as Prince of Wales varied depending upon location.
+His personal standard for the United Kingdom was the Royal Standard of the United Kingdom differenced as in his arms, with a label of three points argent and the escutcheon of the arms of the Principality of Wales in the centre.
+It was used outside Wales, Scotland, Cornwall and Canada, and throughout the entire United Kingdom when Charles was acting in an official capacity associated with the British Armed Forces.
+The personal flag for use in Wales was based upon the Royal Badge of Wales.
+In Scotland the personal banner used between 1974 and 2022 was based upon three ancient Scottish titles: Duke of Rothesay (heir apparent to the King of Scots), High Steward of Scotland, and Lord of the Isles.
+In Cornwall, the banner was the arms of the Duke of Cornwall.
+In 2011, the Canadian Heraldic Authority introduced a personal heraldic banner for the Prince of Wales for Canada, consisting of the shield of the Royal Coat of Arms of Canada defaced with both a blue roundel of the Prince of Wales's feathers surrounded by a wreath of gold maple leaves and a white label of three points.
+As sovereign
+
+The royal standard of the United Kingdom is used to represent the King in the United Kingdom and on official visits overseas, except in Australia and Canada.
+It is the royal arms in banner form undifferentiated, having been used by successive British monarchs since 1702.
+The royal standard of Canada is used by the King in Canada and while acting on behalf of Canada overseas.
+It is the escutcheon of the Royal Coat of Arms of Canada in banner form undifferentiated.
+Ancestry
+
+Published works
+
+As Prince of Wales, Charles wrote four books and was a co-author of other works.
+See also
+
+Notes
+
+References
+
+Citations
+
+Bibliography
+
+Further reading
+
+External links
+
+  Royal Navy (1SL & CNS)
+
+
+  British Army (CGS)
+
+
+  Royal Air Force (CAS)
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +495,9 @@ Princess Xenia Georgievna died on 17 September 1965, aged 62, survived by her se
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +512,23 @@ Princess Xenia Georgievna died on 17 September 1965, aged 62, survived by her se
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +546,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +628,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +651,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +671,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +681,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +721,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,183 +820,155 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4e557bb6-6db0-4fb5-9824-ce1397171fd6)
- Call ID: 4e557bb6-6db0-4fb5-9824-ce1397171fd6
+  AssignClass (a14d98fb-605f-42d2-bbac-0748968403fe)
+ Call ID: a14d98fb-605f-42d2-bbac-0748968403fe
   Args:
-    type: :Woman
-    source: Xenia Georgievna
-  AssignClass (3186ea45-c82e-4978-9b78-bd073268ab4b)
- Call ID: 3186ea45-c82e-4978-9b78-bd073268ab4b
+    source: Charles_III
+    type: :Man
+  AssignClass (99c7cf61-f2a5-4fa8-8876-187e64c61ef6)
+ Call ID: 99c7cf61-f2a5-4fa8-8876-187e64c61ef6
+  Args:
+    source: Charles_III
+    type: :Person
+  AssignClass (3fbe689e-e759-48a0-9e7b-fab50948f1f8)
+ Call ID: 3fbe689e-e759-48a0-9e7b-fab50948f1f8
+  Args:
+    source: George_VI
+    type: :Man
+  AssignClass (48a69a28-af4f-4a94-86dc-e40fb24feea1)
+ Call ID: 48a69a28-af4f-4a94-86dc-e40fb24feea1
   Args:
     type: :Person
-    source: Xenia Georgievna
-  AssignClass (5825b226-18cb-4ef4-842a-fe9651b65af9)
- Call ID: 5825b226-18cb-4ef4-842a-fe9651b65af9
+    source: George_VI
+  AssignClass (53971272-0eca-458b-a45b-c4ed7e7f9bb5)
+ Call ID: 53971272-0eca-458b-a45b-c4ed7e7f9bb5
   Args:
-    type: :Ancestor
-    source: Xenia Georgievna
-  AssignClass (53f74336-11f4-4410-b1af-0940d4055915)
- Call ID: 53f74336-11f4-4410-b1af-0940d4055915
+    source: Elizabeth_II
+    type: :Woman
+  AssignClass (e57b2c49-e95f-4165-b680-daa10eba10bd)
+ Call ID: e57b2c49-e95f-4165-b680-daa10eba10bd
+  Args:
+    type: :Person
+    source: Elizabeth_II
+  AssignClass (4c0f607d-dd29-4506-a044-f2f9d1ed1efb)
+ Call ID: 4c0f607d-dd29-4506-a044-f2f9d1ed1efb
+  Args:
+    source: Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (5b5ac09d-a849-41d5-a1b8-8e14da9d29f3)
+ Call ID: 5b5ac09d-a849-41d5-a1b8-8e14da9d29f3
+  Args:
+    type: :Person
+    source: Philip_Duke_of_Edinburgh
+  AssignClass (bba17481-3bf9-4f69-8b2a-e29dacbe5c71)
+ Call ID: bba17481-3bf9-4f69-8b2a-e29dacbe5c71
+  Args:
+    type: :Woman
+    source: Lady_Diana_Spencer
+  AssignClass (2c15852b-c9a9-47d7-aa08-f8c031900c26)
+ Call ID: 2c15852b-c9a9-47d7-aa08-f8c031900c26
+  Args:
+    source: Lady_Diana_Spencer
+    type: :Person
+  AssignClass (a55dc4f3-ad34-493e-b4fb-60e82c83ee31)
+ Call ID: a55dc4f3-ad34-493e-b4fb-60e82c83ee31
   Args:
     type: :Man
-    source: George Mihailovich
-  AssignClass (864c57db-864f-4d87-a19e-ced9b1b77a6e)
- Call ID: 864c57db-864f-4d87-a19e-ced9b1b77a6e
+    source: William_Prince_of_Wales
+  AssignClass (d0a3e5ba-ca75-40c8-bc25-9f78f09c779c)
+ Call ID: d0a3e5ba-ca75-40c8-bc25-9f78f09c779c
   Args:
+    source: William_Prince_of_Wales
     type: :Person
-    source: George Mihailovich
-  AssignClass (39cfd74d-65e6-4482-80cd-94e865069a71)
- Call ID: 39cfd74d-65e6-4482-80cd-94e865069a71
+  AssignClass (648740c1-1efc-44e1-aaeb-5e56282dc2f7)
+ Call ID: 648740c1-1efc-44e1-aaeb-5e56282dc2f7
   Args:
-    type: :Ancestor
-    source: George Mihailovich
-  AssignClass (65dbd447-f9c4-46e4-9b69-98edb6e1681d)
- Call ID: 65dbd447-f9c4-46e4-9b69-98edb6e1681d
+    source: Harry_Duke_of_Sussex
+    type: :Man
+  AssignClass (3632977a-fafd-4cdd-a270-6aa4cc9dd18d)
+ Call ID: 3632977a-fafd-4cdd-a270-6aa4cc9dd18d
+  Args:
+    source: Harry_Duke_of_Sussex
+    type: :Person
+  AssignClass (77aa2c7b-db4d-44aa-8cad-9ad88536c444)
+ Call ID: 77aa2c7b-db4d-44aa-8cad-9ad88536c444
   Args:
     type: :Woman
-    source: Maria Georgievna
-  AssignClass (36d4d125-fd5d-46c5-8c23-66ba6e3cebcb)
- Call ID: 36d4d125-fd5d-46c5-8c23-66ba6e3cebcb
+    source: Camilla_Parker_Bowles
+  AssignClass (312270ad-9c50-4394-b07e-f8f09db7d58d)
+ Call ID: 312270ad-9c50-4394-b07e-f8f09db7d58d
   Args:
+    source: Camilla_Parker_Bowles
     type: :Person
-    source: Maria Georgievna
-  AssignClass (013efc2a-81e0-4098-afdc-e3810b332132)
- Call ID: 013efc2a-81e0-4098-afdc-e3810b332132
+  AddTriple (3f681b74-df2c-4ec7-ba6a-c71fcf9ad513)
+ Call ID: 3f681b74-df2c-4ec7-ba6a-c71fcf9ad513
   Args:
-    type: :Ancestor
-    source: Maria Georgievna
-  AddLiteral (0dc3a1d1-621b-46d0-aee9-e7fa275ae444)
- Call ID: 0dc3a1d1-621b-46d0-aee9-e7fa275ae444
-  Args:
-    literal_value: 1903
-    relation: :hasBirthYear
-    source: Xenia Georgievna
-    literal_type: xsd:integer
-  AddLiteral (827513e7-d39b-422e-95f4-6a0d33540866)
- Call ID: 827513e7-d39b-422e-95f4-6a0d33540866
-  Args:
-    literal_value: 1965
-    literal_type: xsd:integer
-    source: Xenia Georgievna
-    relation: :hasDeathYear
-  AddTriple (8f0a6753-6bdf-4d17-8d1d-dcee3c2557e2)
- Call ID: 8f0a6753-6bdf-4d17-8d1d-dcee3c2557e2
-  Args:
-    source: Xenia Georgievna
+    source: Charles_III
     relation: :hasFather
-    target: George Mihailovich
-  AddTriple (596e568c-b2e0-443a-a95d-948604591a13)
- Call ID: 596e568c-b2e0-443a-a95d-948604591a13
+    target: Philip_Duke_of_Edinburgh
+  AddTriple (24eecdba-f61a-458b-b71d-1c367aa7d985)
+ Call ID: 24eecdba-f61a-458b-b71d-1c367aa7d985
   Args:
-    target: Maria Georgievna
-    source: Xenia Georgievna
     relation: :hasMother
-  AssignClass (e8a71e1c-7a1e-4140-8165-1b06ce8f7941)
- Call ID: e8a71e1c-7a1e-4140-8165-1b06ce8f7941
+    source: Charles_III
+    target: Elizabeth_II
+  AddTriple (6842622c-fc1d-4147-9269-81f075f85099)
+ Call ID: 6842622c-fc1d-4147-9269-81f075f85099
   Args:
-    type: :Woman
-    source: Nina Georgievna
-  AssignClass (adb84ade-914e-4781-b4d0-143ad5cd9eef)
- Call ID: adb84ade-914e-4781-b4d0-143ad5cd9eef
-  Args:
-    type: :Person
-    source: Nina Georgievna
-  AddTriple (97c63a7f-61b4-4032-9e46-e750f7fdb4a2)
- Call ID: 97c63a7f-61b4-4032-9e46-e750f7fdb4a2
-  Args:
-    source: Xenia Georgievna
-    relation: :hasSister
-    target: Nina Georgievna
-  AddTriple (583c2fbe-e5b6-40f0-b9e8-e299e5c17cd2)
- Call ID: 583c2fbe-e5b6-40f0-b9e8-e299e5c17cd2
-  Args:
-    target: Xenia Georgievna
-    source: Nina Georgievna
-    relation: :hasSister
-  AssignClass (cf4c0de9-6f30-4a01-a67b-d5ce52d896a2)
- Call ID: cf4c0de9-6f30-4a01-a67b-d5ce52d896a2
-  Args:
-    type: :Man
-    source: William Bateman Leeds Jr.
-  AssignClass (dd954c58-9d7a-4512-b6e1-4eb8982a7462)
- Call ID: dd954c58-9d7a-4512-b6e1-4eb8982a7462
-  Args:
-    type: :Person
-    source: William Bateman Leeds Jr.
-  AddTriple (08c90d59-419d-4b04-9133-67c4f4ce2f08)
- Call ID: 08c90d59-419d-4b04-9133-67c4f4ce2f08
-  Args:
-    target: William Bateman Leeds Jr.
-    relation: :hasRelation
-    source: Xenia Georgievna
-  AddLiteral (4190166f-9b9e-4706-b178-7a0832ebb9fb)
- Call ID: 4190166f-9b9e-4706-b178-7a0832ebb9fb
-  Args:
-    relation: :hasMarriageYear
-    source: Xenia Georgievna
-    literal_type: xsd:integer
-    literal_value: 1921
-  AssignClass (5a211b8f-e464-419b-a150-896c3933bf1b)
- Call ID: 5a211b8f-e464-419b-a150-896c3933bf1b
-  Args:
-    type: :Woman
-    source: Nancy Helen Marie Leeds
-  AssignClass (563c7e00-2154-4343-9cb5-2285b3a2155a)
- Call ID: 563c7e00-2154-4343-9cb5-2285b3a2155a
-  Args:
-    type: :Person
-    source: Nancy Helen Marie Leeds
-  AddTriple (4a7add39-df52-4e98-b51a-ec06cddb7670)
- Call ID: 4a7add39-df52-4e98-b51a-ec06cddb7670
-  Args:
-    source: Xenia Georgievna
-    relation: :hasDaughter
-    target: Nancy Helen Marie Leeds
-  AddTriple (15b547de-fe8c-4ab1-8909-2caa4c23d59c)
- Call ID: 15b547de-fe8c-4ab1-8909-2caa4c23d59c
+    target: George_VI
+    relation: :hasFather
+    source: Elizabeth_II
+  AddTriple (8b66498b-a56a-4ef7-94c2-345f5ac9302b)
+ Call ID: 8b66498b-a56a-4ef7-94c2-345f5ac9302b
   Args:
     relation: :hasFather
-    source: Nancy Helen Marie Leeds
-    target: William Bateman Leeds Jr.
-  AssignClass (a1e1c86e-8bd2-4aa1-b8af-c193e01f5c32)
- Call ID: a1e1c86e-8bd2-4aa1-b8af-c193e01f5c32
+    source: Charles_III
+    target: Philip_Duke_of_Edinburgh
+  AddLiteral (36f90f8d-8068-4011-aa9c-63f880acfca0)
+ Call ID: 36f90f8d-8068-4011-aa9c-63f880acfca0
   Args:
-    type: :Man
-    source: Herman Jud
-  AssignClass (6762e780-36b1-4ea1-a912-1916775d9380)
- Call ID: 6762e780-36b1-4ea1-a912-1916775d9380
+    source: Charles_III
+    literal_type: xsd:integer
+    literal_value: 1948
+    relation: :hasBirthYear
+  AddTriple (e279e739-481e-4a61-9a99-14d3b86dad0f)
+ Call ID: e279e739-481e-4a61-9a99-14d3b86dad0f
   Args:
-    type: :Person
-    source: Herman Jud
-  AddTriple (f55c4ec8-0780-47d2-b031-be0b1e362978)
- Call ID: f55c4ec8-0780-47d2-b031-be0b1e362978
+    target: Charles_III
+    relation: :hasFather
+    source: William_Prince_of_Wales
+  AddTriple (f91b8c15-f3c0-4d0a-ba09-b0f370fbfee1)
+ Call ID: f91b8c15-f3c0-4d0a-ba09-b0f370fbfee1
   Args:
-    target: Herman Jud
-    source: Xenia Georgievna
-    relation: :hasRelation
-  AddLiteral (672d1baf-a08d-4f77-bb4e-f3f171af106c)
- Call ID: 672d1baf-a08d-4f77-bb4e-f3f171af106c
+    target: Lady_Diana_Spencer
+    relation: :hasMother
+    source: William_Prince_of_Wales
+  AddTriple (1311dd70-110b-45af-9736-238b8a90dfc6)
+ Call ID: 1311dd70-110b-45af-9736-238b8a90dfc6
   Args:
-    literal_value: 1946
+    relation: :hasFather
+    source: Harry_Duke_of_Sussex
+    target: Charles_III
+  AddTriple (ef1ba619-b883-4408-be07-b1a046b984db)
+ Call ID: ef1ba619-b883-4408-be07-b1a046b984db
+  Args:
+    relation: :hasMother
+    source: Harry_Duke_of_Sussex
+    target: Lady_Diana_Spencer
+  AddLiteral (08405972-adff-48b0-885e-f5d46063a13f)
+ Call ID: 08405972-adff-48b0-885e-f5d46063a13f
+  Args:
+    literal_value: 1981
+    literal_type: xsd:integer
+    source: Charles_III
+    relation: :hasMarriageYear
+  AddLiteral (61e51b2c-8c91-417f-9bec-1a8c7cbd7fdc)
+ Call ID: 61e51b2c-8c91-417f-9bec-1a8c7cbd7fdc
+  Args:
+    literal_value: 2005
+    source: Charles_III
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: Xenia Georgievna
-  AssignClass (8704058f-41c1-4c1a-be39-b1faa4b713f2)
- Call ID: 8704058f-41c1-4c1a-be39-b1faa4b713f2
-  Args:
-    type: :Man
-    source: Nicholas Mikhailovich
-  AssignClass (39bf2f07-621c-40b4-b7d3-e270872480a8)
- Call ID: 39bf2f07-621c-40b4-b7d3-e270872480a8
-  Args:
-    type: :Person
-    source: Nicholas Mikhailovich
-  AddTriple (344fef55-0b7c-43fa-8da9-3977ab803a22)
- Call ID: 344fef55-0b7c-43fa-8da9-3977ab803a22
-  Args:
-    target: Nicholas Mikhailovich
-    relation: :hasBrother
-    source: George Mihailovich
-  Finish (7b3f3e21-999a-417e-b4b1-aa3e09b15303)
- Call ID: 7b3f3e21-999a-417e-b4b1-aa3e09b15303
+  Finish (28a2db61-43bf-4c0f-a74e-50c92a83306f)
+ Call ID: 28a2db61-43bf-4c0f-a74e-50c92a83306f
   Args:

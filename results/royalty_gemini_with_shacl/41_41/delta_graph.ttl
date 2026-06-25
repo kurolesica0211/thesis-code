@@ -8,27 +8,37 @@ data:Alfonso_of_Spain a :Man,
     :hasDeathYear 1964 ;
     :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
     :hasMarriageYear 1936 ;
-    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-    :hasRelation data:Alice_of_Bourbon-Parma .
+    :hasMother data:Maria_de_las_Mercedes ;
+    :hasRelation data:Alice_of_Bourbon-Parma ;
+    :hasSex data:Male .
 
 data:Alice_of_Bourbon-Parma a :Person,
         :Woman ;
-    :hasFather data:Elias_Duke_of_Parma_and_Piacenza ;
-    :hasMother data:Maria_Anna_of_Austria .
+    :hasFather data:Elias_of_Parma ;
+    :hasMother data:Maria_Anna_of_Austria ;
+    :hasSex data:Female .
 
 data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
-data:Elias_Duke_of_Parma_and_Piacenza a :Ancestor,
+data:Elias_of_Parma a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
 data:Maria_Anna_of_Austria a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
 
-data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
+data:Maria_de_las_Mercedes a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

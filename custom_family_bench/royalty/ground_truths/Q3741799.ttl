@@ -7,28 +7,22 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Flora_Vesterberg a :Person ;
+    rdfs:label "Flora Vesterberg" ;
+    data:wdtLink wdt:Q3741799 ;
+    :alsoKnownAs "Flora Ogilvy" ;
+    :hasParent data:Julia_Ogilvy ;
+    :hasSex data:female .
+
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Flora_Vesterberg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Flora Vesterberg" ;
-    data:wdtLink wdt:Q3741799 ;
-    :alsoKnownAs "Flora Ogilvy" ;
-    :hasMother data:Julia_Ogilvy ;
-    :hasParent data:Julia_Ogilvy ;
-    :hasSex data:female ;
-    :isChildOf data:Julia_Ogilvy ;
-    :isDaughterOf data:Julia_Ogilvy .
-
-data:Julia_Ogilvy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Julia_Ogilvy a :Person ;
     rdfs:label "Julia Ogilvy" ;
     data:posIndicesFull "169:193" ;
     data:posIndicesPart "346:352",
@@ -36,9 +30,7 @@ data:Julia_Ogilvy a :Ancestor,
     data:wdtLink wdt:Q15956270 ;
     :alsoKnownAs "Julia Caroline Rawlinson",
         "Julia Rawlinson" ;
-    :hasChild data:Flora_Vesterberg ;
-    :hasDaughter data:Flora_Vesterberg ;
-    :hasSex data:female ;
-    :isMotherOf data:Flora_Vesterberg ;
-    :isParentOf data:Flora_Vesterberg .
+    :hasSex data:female .
+
+data:female a :Female .
 

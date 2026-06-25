@@ -2,49 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Davina_Katherine_Bowes-Lyon .
-
-data:Elizabeth_Mary_Hyde_Parker a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Emily_Mary_Julia_Stonor .
+data:Frederick_Calvert_6th_Baron_Baltimore a :Man,
+        :Person .
 
 data:John_David_James_Dalrymple a :Man,
         :Person ;
-    :hasAncestor data:Frederick_Calvert_6th_Baron_Baltimore ;
     :hasBirthYear 1961 ;
     :hasFather data:John_Dalrymple_13th_Earl_of_Stair ;
     :hasMarriageYear 2006 ;
     :hasMother data:Davina_Katherine_Bowes-Lyon ;
     :hasRelation data:Emily_Mary_Julia_Stonor .
 
-data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Emily_Mary_Julia_Stonor .
+data:Queen_Elizabeth a :Person,
+        :Woman .
 
-data:Frederick_Calvert_6th_Baron_Baltimore a :Ancestor,
+data:David_Bowes-Lyon a :Ancestor,
         :Man,
         :Person .
+
+data:Davina_Katherine_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1930 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:David_Bowes-Lyon .
+
+data:Elizabeth_Mary_Hyde_Parker a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Emily_Mary_Julia_Stonor a :Person,
+        :Woman ;
+    :hasFather data:Ralph_Stonor_7th_Baron_Camoys ;
+    :hasMother data:Elizabeth_Mary_Hyde_Parker .
 
 data:John_Dalrymple_13th_Earl_of_Stair a :Ancestor,
         :Man,
         :Person ;
     :hasMother data:Violet_Evelyn_Dalrymple .
 
+data:Ralph_Stonor_7th_Baron_Camoys a :Ancestor,
+        :Man,
+        :Person .
+
 data:Violet_Evelyn_Dalrymple a :Ancestor,
         :Person,
-        :Woman .
-
-data:Davina_Katherine_Bowes-Lyon a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1930 ;
-    :hasDeathYear 2017 .
-
-data:Emily_Mary_Julia_Stonor a :Person,
         :Woman .
 

@@ -69,75 +69,31 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George Henry Hubert Lascelles, 7th Earl of Harewood (7 February 1923 – 11 July 2011), styled The Honourable George Lascelles before 1929 and Viscount Lascelles between 1929 and 1947, was a British classical music administrator and author, and a member of the extended British royal family, as a maternal grandson of King George V and Queen Mary, and thus a first cousin of Queen Elizabeth II.
-Harewood was the elder son of the 6th Earl of Harewood and Princess Mary, Princess Royal, the only daughter of King George V and Queen Mary.
-Lord Harewood was the eldest grandchild of King George V and Queen Mary, nephew of both King Edward VIII and King George VI and first cousin of Queen Elizabeth II.
-He was the first member of the Royal Family to obtain a divorce (as opposed to an annulment).
-he was the director of the Edinburgh Festival from 1961-1965
+Princess Beatrix*
 
 
-Early life
-
-George Henry Hubert Lascelles was born at his parents' London home of Chesterfield House on 7 February 1923, the first child of Henry, Viscount Lascelles, and Princess Mary, Viscountess Lascelles, and first grandchild of King George V and Queen Mary, who stood as sponsors at his christening.
-The christening took place on 25 March 1923 at St Mary's Church in the village of Goldsborough, near Knaresborough adjoining the family home Goldsborough Hall.
-After his paternal grandfather's death in 1929, he was styled as Viscount Lascelles as his father succeeded to the earldom.
-He served as a Page of Honour at the coronation of his uncle King George VI in May 1937.
-He was raised at Harewood House in Yorkshire.
-Military service
-
-Lascelles joined the British Army where he was commissioned as a second lieutenant into the Grenadier Guards (his father's regiment) in 1942, attaining the rank of captain.
-As the nephew of King George VI, Lascelles was one of the Prominente at Colditz, considered a potential bargaining chip by the Nazis.
-— Lord Harewood, Desert Island Discs, 1982
-In March 1945, Adolf Hitler signed his death warrant; the SS general in command of prisoner-of-war camps, Gottlob Berger, realizing the war was lost, refused to carry out the sentence and released Lascelles to the Swiss.
-Lord Harewood served as a Counsellor of State in 1947, 1953–54, and 1956.
-House of Lords
-
-Lascelles succeeded his father in 1947.
-Career
-
-Opera
-
-A music enthusiast, Lord Harewood devoted most of his career to opera with his Yorkshire heritage fostering his interest; in March 1949, as a young single man, he had been among the audience at the Leeds Town Hall for a  performance of operatic works by the Yorkshire Symphony Orchestra.
-He was director of the Royal Opera House, Covent Garden from 1951 to 1953 and again from 1969 to 1972.
-Lord Harewood served as a governor of the BBC from 1985 to 1987 and as the president of the British Board of Film Classification from 1985 to 1996.
-Public life
-
-Lascelles was the only person to serve as Counsellor of State without being a Prince of the United Kingdom, serving from 1945 to 1951, then from 1952 to 1956.
-The estate and house, Harewood House, are held by a charity with £9 million of assets, and were not counted as part of his wealth.
-Honours
-
-Queen Elizabeth II created him a Knight Commander of the Order of the British Empire (KBE) in the Queen's Birthday Honours List on 13 June 1986.
-In 1959, Harewood received the Grand Decoration in Silver with Sash for Services to the Republic of Austria.
-Personal life
-
-Marriages and children
-
-On 29 September 1949 at St. Mark's Church, London, Lord Harewood married Marion Stein, a concert pianist and the daughter of the Viennese music publisher Erwin Stein.
-Because of Harewood's position in the line of succession, the marriage was subject to approval from the sovereign, under the Royal Marriages Act 1772.
-Queen Mary, mother of George VI, objected to the marriage but permission was eventually granted.
-Benjamin Britten, a friend of the Stein family, composed an anthem, "Amo Ergo Sum", for the wedding ceremony.
-Lord and Lady Harewood had three sons:
+Princess Margriet*Pieter van Vollenhoven*
 
 
-The earl's marriage to Marion Stein ended in divorce in 1967, after the earl's mistress, Patricia "Bambi" Tuckwell – an Australian violinist and sister of the musician Barry Tuckwell – gave birth to his son.
-Stein went on to marry politician Jeremy Thorpe.
-Lord Harewood married Tuckwell (24 November 1926 – 4 May 2018) on 31 July 1967.
-They were obliged to be married abroad as, in England, registry office marriages were barred at the time for persons covered by the Royal Marriages Act, and divorcees could not marry in the Church of England.
-They had one son: Mark Lascelles.
-Death
+Count Claus-Casimir of Orange-Nassau, Jonkheer van Amsberg (Claus-Casimir Bernhard Marius Max; born 21 March 2004), is the second child of Prince Constantijn and Princess Laurentien of the Netherlands and their only son.
+Life
 
-Lord Harewood died peacefully at home, on 11 July 2011, aged 88 years.
-Arms
+His birth was overshadowed by the death, only a day before, of his great-grandmother Queen Juliana.
+Claus-Casimir's godparents are King Willem-Alexander, Prince Maurits of Orange-Nassau, van Vollenhoven, Ed P. Spanjaard, and Countess Tatiana Razumovsky von Wigstein.
+Claus-Casimir grew up in Brussels before moving to The Hague in 2015.
+After attending high school at Vrijzinnig Christelijk Lyceum (VCL) in The Hague, Claus-Casimir moved to Scotland in 2020 to attend Gordonstoun School, leaving in 2022.
+Titles and styles
 
-Books
-
-The Tongs and the Bones: The Memoirs of Lord Harewood, published by George Weidenfeld & Nicolson (1981), .mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}ISBN 0-297-77960-5 is George Lascelles's autobiography.
+By royal decree of 11 May 2001 (nr. 227), it was determined that the children born from the marriage of Prince Constantijn and Princess Laurentien of the Netherlands would bear the title Count/Countess of Orange‐Nassau and the honorific Jonkheer/Jonkvrouwe van Amsberg with the surname Van Oranje-Nassau van Amsberg.
+Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although they continue to be members of the royal family and in the line of succession to the Dutch throne.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +109,9 @@ The Tongs and the Bones: The Memoirs of Lord Harewood, published by George Weide
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +126,23 @@ The Tongs and the Bones: The Memoirs of Lord Harewood, published by George Weide
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,162 +434,101 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (223bf7d6-6584-4811-82ca-1c08ea1941be)
- Call ID: 223bf7d6-6584-4811-82ca-1c08ea1941be
-  Args:
-    source: George_Henry_Hubert_Lascelles
-    type: :Man
-  AssignClass (2fadba6d-20e6-483e-8183-e9755db26af6)
- Call ID: 2fadba6d-20e6-483e-8183-e9755db26af6
+  AssignClass (8162fe97-6315-440a-bde4-0fe94263eb4f)
+ Call ID: 8162fe97-6315-440a-bde4-0fe94263eb4f
   Args:
     type: :Person
-    source: George_Henry_Hubert_Lascelles
-  AddLiteral (bc7265c7-e403-4bd9-a796-9065cc47378f)
- Call ID: bc7265c7-e403-4bd9-a796-9065cc47378f
+    source: Princess_Beatrix
+  AssignClass (e6caf60e-cb38-4515-a784-27e05f44b404)
+ Call ID: e6caf60e-cb38-4515-a784-27e05f44b404
   Args:
-    source: George_Henry_Hubert_Lascelles
+    source: Princess_Beatrix
+    type: :Woman
+  AssignClass (2e4b8e6f-5ada-4fde-88c1-452640997e80)
+ Call ID: 2e4b8e6f-5ada-4fde-88c1-452640997e80
+  Args:
+    source: Princess_Margriet
+    type: :Person
+  AssignClass (eae87f92-b588-49c8-a5a6-713dc75044ef)
+ Call ID: eae87f92-b588-49c8-a5a6-713dc75044ef
+  Args:
+    source: Princess_Margriet
+    type: :Woman
+  AssignClass (9060cf37-834e-4c2c-88be-e8f556efd798)
+ Call ID: 9060cf37-834e-4c2c-88be-e8f556efd798
+  Args:
+    type: :Person
+    source: Pieter_van_Vollenhoven
+  AssignClass (f2311ae0-20f5-44f2-ba31-df4ac1055913)
+ Call ID: f2311ae0-20f5-44f2-ba31-df4ac1055913
+  Args:
+    source: Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (0574fd9e-92a4-47f4-8378-f4fdf025de20)
+ Call ID: 0574fd9e-92a4-47f4-8378-f4fdf025de20
+  Args:
+    type: :Person
+    source: Claus-Casimir_of_Orange-Nassau
+  AssignClass (342b7369-c5d3-4ae5-982a-2946701acda9)
+ Call ID: 342b7369-c5d3-4ae5-982a-2946701acda9
+  Args:
+    type: :Man
+    source: Claus-Casimir_of_Orange-Nassau
+  AssignClass (3230befc-fc47-422b-84c0-f6a763edd1c6)
+ Call ID: 3230befc-fc47-422b-84c0-f6a763edd1c6
+  Args:
+    source: Prince_Constantijn
+    type: :Person
+  AssignClass (e6456767-910e-4600-a118-f756e9ae6979)
+ Call ID: e6456767-910e-4600-a118-f756e9ae6979
+  Args:
+    type: :Man
+    source: Prince_Constantijn
+  AssignClass (a17e8705-378a-48e5-ab88-d475c1928b21)
+ Call ID: a17e8705-378a-48e5-ab88-d475c1928b21
+  Args:
+    source: Princess_Laurentien
+    type: :Person
+  AssignClass (9bf80b89-9ee3-4496-a389-ec56a6a88217)
+ Call ID: 9bf80b89-9ee3-4496-a389-ec56a6a88217
+  Args:
+    type: :Woman
+    source: Princess_Laurentien
+  AssignClass (b91c5854-c8f3-4975-8777-41cbe2669116)
+ Call ID: b91c5854-c8f3-4975-8777-41cbe2669116
+  Args:
+    source: Queen_Juliana
+    type: :Person
+  AssignClass (c5667812-9415-45b3-b4bd-a98ed19e17b9)
+ Call ID: c5667812-9415-45b3-b4bd-a98ed19e17b9
+  Args:
+    type: :Woman
+    source: Queen_Juliana
+  AddLiteral (bc683a84-3cb9-4619-98c7-8aa68e099aa3)
+ Call ID: bc683a84-3cb9-4619-98c7-8aa68e099aa3
+  Args:
+    source: Claus-Casimir_of_Orange-Nassau
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1923
-  AddLiteral (96fed020-7d13-489c-9928-c2c3465c303c)
- Call ID: 96fed020-7d13-489c-9928-c2c3465c303c
+    literal_value: 2004
+  AddTriple (fda7c904-11d0-47a0-b790-369e3fe23059)
+ Call ID: fda7c904-11d0-47a0-b790-369e3fe23059
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2011
-    source: George_Henry_Hubert_Lascelles
-  AssignClass (154ca2da-e750-4a63-bf08-c571ab4be7ca)
- Call ID: 154ca2da-e750-4a63-bf08-c571ab4be7ca
+    target: Prince_Constantijn
+    source: Claus-Casimir_of_Orange-Nassau
+    relation: :isSonOf
+  AddTriple (b06de829-97f6-4f71-beec-e6745ff6cbd6)
+ Call ID: b06de829-97f6-4f71-beec-e6745ff6cbd6
   Args:
-    type: :Man
-    source: Henry_Viscount_Lascelles
-  AssignClass (92bc30af-33f8-416e-9526-6a6328e77393)
- Call ID: 92bc30af-33f8-416e-9526-6a6328e77393
+    source: Claus-Casimir_of_Orange-Nassau
+    relation: :isSonOf
+    target: Princess_Laurentien
+  AddTriple (a4463b89-e01b-4d48-a1c7-09cd9c35253d)
+ Call ID: a4463b89-e01b-4d48-a1c7-09cd9c35253d
   Args:
-    type: :Person
-    source: Henry_Viscount_Lascelles
-  AssignClass (95ca6cbf-9f73-429d-85c1-af79afd057a9)
- Call ID: 95ca6cbf-9f73-429d-85c1-af79afd057a9
-  Args:
-    type: :Woman
-    source: Princess_Mary_Princess_Royal
-  AssignClass (6245366b-c27c-40f1-bcfe-d38c52e7d049)
- Call ID: 6245366b-c27c-40f1-bcfe-d38c52e7d049
-  Args:
-    source: Princess_Mary_Princess_Royal
-    type: :Person
-  AddTriple (eeb2eaf0-493a-4487-830e-18ef46b2efe9)
- Call ID: eeb2eaf0-493a-4487-830e-18ef46b2efe9
-  Args:
-    relation: :hasFather
-    target: Henry_Viscount_Lascelles
-    source: George_Henry_Hubert_Lascelles
-  AddTriple (0d911139-bc2e-45d5-ba55-4c7a478b61f1)
- Call ID: 0d911139-bc2e-45d5-ba55-4c7a478b61f1
-  Args:
-    target: Princess_Mary_Princess_Royal
-    relation: :hasMother
-    source: George_Henry_Hubert_Lascelles
-  AssignClass (9c03532f-b986-4210-9658-c56554f95726)
- Call ID: 9c03532f-b986-4210-9658-c56554f95726
-  Args:
-    source: King_George_V
-    type: :Man
-  AssignClass (0c5ececc-afd1-460b-b82d-4654a82b64f1)
- Call ID: 0c5ececc-afd1-460b-b82d-4654a82b64f1
-  Args:
-    source: King_George_V
-    type: :Person
-  AssignClass (c4a62f2e-a9ce-4eb6-b7c0-6081bcb8596c)
- Call ID: c4a62f2e-a9ce-4eb6-b7c0-6081bcb8596c
-  Args:
-    type: :Woman
-    source: Queen_Mary
-  AssignClass (5e5a4208-37f6-4543-9cfa-58995c4750d2)
- Call ID: 5e5a4208-37f6-4543-9cfa-58995c4750d2
-  Args:
-    type: :Person
-    source: Queen_Mary_ consort_of_George_V
-  AddTriple (c39cfdc8-9281-46a4-a3e3-a3cd6e098f5f)
- Call ID: c39cfdc8-9281-46a4-a3e3-a3cd6e098f5f
-  Args:
-    relation: :hasFather
-    target: King_George_V
-    source: Princess_Mary_Princess_Royal
-  AddTriple (d398d186-c8ef-46c1-bc40-df300b7c3181)
- Call ID: d398d186-c8ef-46c1-bc40-df300b7c3181
-  Args:
-    source: Princess_Mary_Princess_Royal
-    target: Queen_Mary
-    relation: :hasMother
-  AssignClass (d3c5c66d-7a83-4266-a745-4562515e49b2)
- Call ID: d3c5c66d-7a83-4266-a745-4562515e49b2
-  Args:
-    source: Marion_Stein
-    type: :Woman
-  AssignClass (a7d31b89-baba-4df0-80b7-fad69558eb2c)
- Call ID: a7d31b89-baba-4df0-80b7-fad69558eb2c
-  Args:
-    type: :Person
-    source: Marion_Stein
-  AddTriple (b11f82fc-e815-40ba-a946-335a54978946)
- Call ID: b11f82fc-e815-40ba-a946-335a54978946
-  Args:
-    relation: :hasRelation
-    target: Marion_Stein
-    source: George_Henry_Hubert_Lascelles
-  AddLiteral (568c3606-a8ee-4a7e-907d-4ad69f296313)
- Call ID: 568c3606-a8ee-4a7e-907d-4ad69f296313
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1949
-    source: George_Henry_Hubert_Lascelles
-  AssignClass (494a9d4c-58b4-4b58-a5fe-61ba49691ed7)
- Call ID: 494a9d4c-58b4-4b58-a5fe-61ba49691ed7
-  Args:
-    source: Patricia_Tuckwell
-    type: :Woman
-  AssignClass (83149a93-d9b8-4030-a7ee-9970bec5fe4e)
- Call ID: 83149a93-d9b8-4030-a7ee-9970bec5fe4e
-  Args:
-    type: :Person
-    source: Patricia_Tuckwell
-  AddTriple (27b07f21-038e-49b9-b6a0-3fb0493915e7)
- Call ID: 27b07f21-038e-49b9-b6a0-3fb0493915e7
-  Args:
-    source: George_Henry_Hubert_Lascelles
-    relation: :hasRelation
-    target: Patricia_Tuckwell
-  AddLiteral (cd3a354b-d3ef-4810-8407-3a80b8da8dcc)
- Call ID: cd3a354b-d3ef-4810-8407-3a80b8da8dcc
-  Args:
-    source: George_Henry_Hubert_Lascelles
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1967
-  AssignClass (80b3faa1-8044-4d98-9649-d3b256654417)
- Call ID: 80b3faa1-8044-4d98-9649-d3b256654417
-  Args:
-    source: Mark_Lascelles
-    type: :Man
-  AssignClass (bf97fef6-60f7-4ef4-9e72-e8d4d377910d)
- Call ID: bf97fef6-60f7-4ef4-9e72-e8d4d377910d
-  Args:
-    type: :Person
-    source: Mark_Lascelles
-  AddTriple (6e9f1117-3547-4661-949d-fdc9774b7ca3)
- Call ID: 6e9f1117-3547-4661-949d-fdc9774b7ca3
-  Args:
-    source: Mark_Lascelles
-    target: George_Henry_Hubert_Lascelles
-    relation: :hasFather
-  AddTriple (af28e34a-2bb3-4354-b3f1-4a8d16e07a30)
- Call ID: af28e34a-2bb3-4354-b3f1-4a8d16e07a30
-  Args:
-    source: Mark_Lascelles
-    target: Patricia_Tuckwell
-    relation: :hasMother
-  Finish (0119ba61-3245-4727-a0dd-71298dd283d8)
- Call ID: 0119ba61-3245-4727-a0dd-71298dd283d8
+    target: Queen_Juliana
+    source: Claus-Casimir_of_Orange-Nassau
+    relation: :hasAncestor
+  Finish (56edbc15-c79b-4f7f-b103-040448149e1c)
+ Call ID: 56edbc15-c79b-4f7f-b103-040448149e1c
   Args:

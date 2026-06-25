@@ -2,48 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Claus_von_Amsberg a :Man,
-        :Person ;
-    :hasFather data:Claus_Felix_von_Amsberg ;
-    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+data:Adelaide_of_Lippe-Biesterfeld a :Woman ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Karoline_von_Wartensleben ;
+    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
 
-data:Anna-Elisabeth_von_Pfuel a :Person,
+data:Modeste_Christiane_von_Unruh a :Woman .
+
+data:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,
+        :Man .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man ;
+    :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+data:Georg_II_of_Saxe-Meiningen a :Ancestor,
+        :Man .
+
+data:Karoline_von_Wartensleben a :Ancestor,
         :Woman .
-
-data:Elise_von_Vieregge a :Ancestor,
-        :Person,
-        :Woman .
-
-data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1902 ;
-    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
-    :hasDeathYear 1996 ;
-    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
-    :hasRelation data:Claus_Felix_von_Amsberg .
-
-data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
-        :Person,
-        :Woman .
-
-data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
-        :Man,
-        :Person .
-
-data:Julius_von_dem_Bussche-Haddenhausen a :Man,
-        :Person ;
-    :hasRelation data:Anna-Elisabeth_von_Pfuel .
-
-data:Wilhelm_von_Amsberg a :Ancestor,
-        :Man,
-        :Person .
-
-data:Claus_Felix_von_Amsberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Wilhelm_von_Amsberg ;
-    :hasMother data:Elise_von_Vieregge .
 

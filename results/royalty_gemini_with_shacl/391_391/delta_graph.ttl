@@ -2,53 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marie_Alix_of_Schaumburg-Lippe a :Ancestor,
+data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1923 ;
-    :hasBrother data:Georg_Moritz_of_Schaumburg-Lippe ;
-    :hasDeathYear 2021 ;
-    :hasFather data:Stefan_of_Schaumburg-Lippe ;
-    :hasMarriageYear 1947 ;
-    :hasMother data:Ingeborg_Alix ;
-    :hasRelation data:Peter_of_Schleswig-Holstein ;
-    :hasSex data:Female .
+    :isMotherOf data:Amanda_Ellingworth .
 
-data:Georg_Moritz_of_Schaumburg-Lippe a :Ancestor,
+data:7th_Baron_Brabourne a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Stefan_of_Schaumburg-Lippe ;
-    :hasMother data:Ingeborg_Alix ;
-    :hasSex data:Male .
+    :isFatherOf data:Amanda_Ellingworth .
 
-data:Marie_Melita_of_Hohenlohe-Langenburg a :Ancestor,
+data:Charles_Prince_of_Wales a :Man,
+        :Person .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :isAncestorOf data:Amanda_Ellingworth .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isMotherOf data:Princess_Alice .
 
-data:Peter_of_Schleswig-Holstein a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Wilhelm_Friedrich_of_Schleswig-Holstein ;
-    :hasMother data:Marie_Melita_of_Hohenlohe-Langenburg ;
-    :hasSex data:Male .
+data:Amanda_Knatchbull a :Person .
 
-data:Wilhelm_Friedrich_of_Schleswig-Holstein a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Charles_Vincent_Ellingworth a :Man,
+        :Person .
 
-data:Ingeborg_Alix a :Ancestor,
+data:Princess_Alice a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isAncestorOf data:Amanda_Ellingworth .
 
-data:Stefan_of_Schaumburg-Lippe a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Amanda_Ellingworth a :Person,
+        :Woman ;
+    :alsoKnownAs data:Amanda_Knatchbull ;
+    :hasBirthYear 1957 ;
+    :hasMarriageYear 1987 ;
+    :hasRelation data:Charles_Vincent_Ellingworth .
 

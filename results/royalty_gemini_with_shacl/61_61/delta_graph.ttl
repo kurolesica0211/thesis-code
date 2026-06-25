@@ -2,39 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
+data:Alexia a :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-data:Willem-Alexander a :Man ;
-    :hasBirthYear 1967 ;
-    :hasBrother data:Constantijn,
-        data:Friso ;
-    :hasChild data:Alexia,
-        data:Ariane,
-        data:Catharina-Amalia ;
+data:Ariane a :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Catharina-Amalia a :Woman ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Wilhelmina a :Woman .
+
+data:William_III a :Man .
+
+data:Bernhard a :Ancestor,
+        :Man .
+
+data:Constantijn a :Man ;
+    :hasBirthYear 1969 ;
     :hasFather data:Claus ;
     :hasMother data:Beatrix .
 
-data:Alexia a :Woman .
+data:Friso a :Man ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus ;
+    :hasMother data:Beatrix .
 
-data:Ariane a :Woman .
+data:Juliana a :Ancestor,
+        :Woman .
 
 data:Beatrix a :Ancestor,
         :Woman ;
     :hasFather data:Bernhard ;
     :hasMother data:Juliana .
 
-data:Bernhard a :Ancestor,
-        :Man .
-
-data:Catharina-Amalia a :Woman .
-
 data:Claus a :Ancestor,
         :Man .
 
-data:Constantijn a :Man .
+data:Willem-Alexander a :Ancestor,
+        :Man ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Constantijn,
+        data:Friso ;
+    :hasFather data:Claus ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Beatrix ;
+    :hasRelation data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-data:Friso a :Man .
-
-data:Juliana a :Ancestor,
+data:M%C3%A1xima_Zorreguieta_Cerruti a :Ancestor,
         :Woman .
 

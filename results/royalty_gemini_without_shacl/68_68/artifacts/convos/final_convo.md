@@ -84,6 +84,8 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +101,9 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +118,23 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,112 +426,289 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d4e9618b-410a-4dad-8749-7b537bb9ebf5)
- Call ID: d4e9618b-410a-4dad-8749-7b537bb9ebf5
+  AssignClass (b436c7c1-674b-4550-ad12-6bbeded392ee)
+ Call ID: b436c7c1-674b-4550-ad12-6bbeded392ee
   Args:
     type: :Man
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
-  AssignClass (16663fb7-bc7e-4253-8e56-e202dac5a38f)
- Call ID: 16663fb7-bc7e-4253-8e56-e202dac5a38f
+    source: Charles_Augustus
+  AssignClass (e340234a-d50b-44c0-86a5-781802222fb1)
+ Call ID: e340234a-d50b-44c0-86a5-781802222fb1
   Args:
-    source: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
+    source: Charles_Augustus
+    type: :Person
+  AddLiteral (9f3a6456-48be-4168-9558-d70dccf93ba7)
+ Call ID: 9f3a6456-48be-4168-9558-d70dccf93ba7
+  Args:
+    source: Charles_Augustus
+    relation: :hasBirthYear
+    literal_value: 1912
+    literal_type: xsd:integer
+  AddLiteral (f9b86a50-3c62-4afb-8404-f2b7d78c1285)
+ Call ID: f9b86a50-3c62-4afb-8404-f2b7d78c1285
+  Args:
+    source: Charles_Augustus
+    relation: :hasDeathYear
+    literal_value: 1988
+    literal_type: xsd:integer
+  AssignClass (90bb84d2-8ab3-455e-b154-ffb7c7d81bd1)
+ Call ID: 90bb84d2-8ab3-455e-b154-ffb7c7d81bd1
+  Args:
+    source: Wilhelm_Ernst
     type: :Man
-  AssignClass (db70f732-8522-42f6-92fb-beb1dc145bc3)
- Call ID: db70f732-8522-42f6-92fb-beb1dc145bc3
+  AssignClass (0579d4ea-ae8c-4097-89d8-1bee5adb6ec6)
+ Call ID: 0579d4ea-ae8c-4097-89d8-1bee5adb6ec6
+  Args:
+    type: :Person
+    source: Wilhelm_Ernst
+  AddTriple (fce029ed-f869-4774-b79a-12d86cbb87be)
+ Call ID: fce029ed-f869-4774-b79a-12d86cbb87be
+  Args:
+    source: Wilhelm_Ernst
+    target: Charles_Augustus
+    relation: :isFatherOf
+  AssignClass (e1ac9f4f-7eb0-405a-90e3-425425ca7d4d)
+ Call ID: e1ac9f4f-7eb0-405a-90e3-425425ca7d4d
   Args:
     source: Feodora_of_Saxe-Meiningen
     type: :Woman
-  AssignClass (30e9928a-6a47-4e95-8693-b2d1cfb5aa55)
- Call ID: 30e9928a-6a47-4e95-8693-b2d1cfb5aa55
+  AssignClass (3a1804ed-9264-4759-87c8-64c83ac0e5b6)
+ Call ID: 3a1804ed-9264-4759-87c8-64c83ac0e5b6
   Args:
-    source: Michael_of_Saxe-Weimar-Eisenach
+    source: Feodora_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (9657a688-b072-4ec5-b62e-7b1867d64e19)
+ Call ID: 9657a688-b072-4ec5-b62e-7b1867d64e19
+  Args:
+    target: Charles_Augustus
+    source: Feodora_of_Saxe-Meiningen
+    relation: :isMotherOf
+  AssignClass (29dac8a1-d7fa-4a85-9b97-c2d8e35d74b5)
+ Call ID: 29dac8a1-d7fa-4a85-9b97-c2d8e35d74b5
+  Args:
+    source: Michael
     type: :Man
-  AssignClass (24f01d9f-da60-4181-847e-130a7305e166)
- Call ID: 24f01d9f-da60-4181-847e-130a7305e166
+  AssignClass (d514d2d4-ce96-49c1-996c-9c87c47520e2)
+ Call ID: d514d2d4-ce96-49c1-996c-9c87c47520e2
   Args:
-    source: Elisabeth_of_Wangenheim-Winterstein
-    type: :Woman
-  AssignClass (2f259a65-10a3-4fae-b57a-4b85dc211627)
- Call ID: 2f259a65-10a3-4fae-b57a-4b85dc211627
+    type: :Person
+    source: Michael
+  AddTriple (80fad9d7-55da-4978-a801-cfbb9c87b1d6)
+ Call ID: 80fad9d7-55da-4978-a801-cfbb9c87b1d6
   Args:
-    source: Othmar_von_Wangenheim-Winterstein
-    type: :Man
-  AssignClass (9fdd0661-6644-4499-a318-902136765ca0)
- Call ID: 9fdd0661-6644-4499-a318-902136765ca0
-  Args:
-    type: :Woman
-    source: Maud_von_Trützschler
-  AddLiteral (f032cdb4-a77f-4f23-b154-9188f648ebd7)
- Call ID: f032cdb4-a77f-4f23-b154-9188f648ebd7
-  Args:
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1912
-  AddLiteral (28555426-6aa3-49da-9c58-cc3611019049)
- Call ID: 28555426-6aa3-49da-9c58-cc3611019049
-  Args:
-    literal_value: 1988
-    literal_type: xsd:integer
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
-    relation: :hasDeathYear
-  AddTriple (8500d5a3-f6f5-4181-997c-b34b9b6bb5db)
- Call ID: 8500d5a3-f6f5-4181-997c-b34b9b6bb5db
-  Args:
-    target: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
-    relation: :hasFather
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
-  AddTriple (ac5bc308-183b-4410-8373-6a8a2e5ceefa)
- Call ID: ac5bc308-183b-4410-8373-6a8a2e5ceefa
-  Args:
-    target: Feodora_of_Saxe-Meiningen
-    relation: :hasMother
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
-  AddTriple (bd1d703c-70f5-4c21-88bb-fe8c9c84dda9)
- Call ID: bd1d703c-70f5-4c21-88bb-fe8c9c84dda9
-  Args:
-    target: Michael_of_Saxe-Weimar-Eisenach
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
     relation: :isFatherOf
-  AddLiteral (c591994c-8e45-476a-8bad-40122280a2cd)
- Call ID: c591994c-8e45-476a-8bad-40122280a2cd
+    target: Michael
+    source: Charles_Augustus
+  AssignClass (acc11395-9e4f-4678-9fe9-75782fc171e6)
+ Call ID: acc11395-9e4f-4678-9fe9-75782fc171e6
   Args:
-    literal_value: 1944
+    type: :Woman
+    source: Elisabeth_of_Wangenheim-Winterstein
+  AssignClass (1b912a54-e4ec-4907-a21f-9f2978b9ff0f)
+ Call ID: 1b912a54-e4ec-4907-a21f-9f2978b9ff0f
+  Args:
+    type: :Person
+    source: Elisabeth_of_Wangenheim-Winterstein
+  AddLiteral (8513fe70-3f2b-4a7d-81cd-21f7ce336fb8)
+ Call ID: 8513fe70-3f2b-4a7d-81cd-21f7ce336fb8
+  Args:
     literal_type: xsd:integer
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
     relation: :hasMarriageYear
-  AddTriple (a39655c1-e8c9-4682-a2bc-74c710a4c1d2)
- Call ID: a39655c1-e8c9-4682-a2bc-74c710a4c1d2
+    literal_value: 1944
+    source: Charles_Augustus
+  AddTriple (bd5da9c4-ffa2-4451-ab22-1b8523984856)
+ Call ID: bd5da9c4-ffa2-4451-ab22-1b8523984856
   Args:
-    relation: :hasRelation
-    source: Charles_Augustus_of_Saxe-Weimar-Eisenach
     target: Elisabeth_of_Wangenheim-Winterstein
-  AddLiteral (dd7dad1e-1e77-4fa3-b44d-dac74e57b2ef)
- Call ID: dd7dad1e-1e77-4fa3-b44d-dac74e57b2ef
+    source: Charles_Augustus
+    relation: :hasRelation
+  AddLiteral (02d9976a-3c03-4390-b1a6-eacd974e5c17)
+ Call ID: 02d9976a-3c03-4390-b1a6-eacd974e5c17
   Args:
+    literal_type: xsd:integer
     literal_value: 1912
     relation: :hasBirthYear
     source: Elisabeth_of_Wangenheim-Winterstein
-    literal_type: xsd:integer
-  AddLiteral (5820c858-855b-49ce-8644-01c3c5838870)
- Call ID: 5820c858-855b-49ce-8644-01c3c5838870
+  AddLiteral (2c497176-6c8e-45e6-8cb6-42c7cc50ad97)
+ Call ID: 2c497176-6c8e-45e6-8cb6-42c7cc50ad97
   Args:
-    literal_value: 2010
+    source: Elisabeth_of_Wangenheim-Winterstein
     relation: :hasDeathYear
-    source: Elisabeth_of_Wangenheim-Winterstein
+    literal_value: 2010
     literal_type: xsd:integer
-  AddTriple (e0666fd4-94c3-4fa4-bc2a-c46fe3c9fd14)
- Call ID: e0666fd4-94c3-4fa4-bc2a-c46fe3c9fd14
+  AssignClass (f72b5a65-8055-423e-bc71-3dc8f577e885)
+ Call ID: f72b5a65-8055-423e-bc71-3dc8f577e885
   Args:
-    target: Othmar_von_Wangenheim-Winterstein
-    relation: :hasFather
-    source: Elisabeth_of_Wangenheim-Winterstein
-  AddTriple (cd220c28-e9b0-4aa9-9a9f-b24b02ad24ea)
- Call ID: cd220c28-e9b0-4aa9-9a9f-b24b02ad24ea
+    type: :Man
+    source: Othmar_Baron_von_Wangenheim-Winterstein
+  AssignClass (1fc952e6-88a0-427c-bff3-fe0cf3557c3c)
+ Call ID: 1fc952e6-88a0-427c-bff3-fe0cf3557c3c
   Args:
-    source: Elisabeth_of_Wangenheim-Winterstein
-    relation: :hasMother
-    target: Maud_von_Trützschler
-  Finish (b05a6f00-cb3d-48d6-9109-f3c8e838fa98)
- Call ID: b05a6f00-cb3d-48d6-9109-f3c8e838fa98
+    type: :Person
+    source: Othmar_Baron_von_Wangenheim-Winterstein
+  AddTriple (b2b52cc7-7270-4fa7-9afe-be9a799121d9)
+ Call ID: b2b52cc7-7270-4fa7-9afe-be9a799121d9
+  Args:
+    target: Elisabeth_of_Wangenheim-Winterstein
+    source: Othmar_Baron_von_Wangenheim-Winterstein
+    relation: :isFatherOf
+  AssignClass (18fa3044-adec-468b-b626-e0286c0d08c4)
+ Call ID: 18fa3044-adec-468b-b626-e0286c0d08c4
+  Args:
+    source: Maud_von_Trützschler
+    type: :Woman
+  AssignClass (44725623-a24b-4910-87e0-bdc58a0bd516)
+ Call ID: 44725623-a24b-4910-87e0-bdc58a0bd516
+  Args:
+    source: Maud_von_Trützschler
+    type: :Person
+  AddTriple (9c24b70d-4664-41f0-99bf-bfb7e2755487)
+ Call ID: 9c24b70d-4664-41f0-99bf-bfb7e2755487
+  Args:
+    source: Maud_von_Trützschler
+    target: Elisabeth_of_Wangenheim-Winterstein
+    relation: :isMotherOf
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Feodora_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :isMotherOf data:Charles_Augustus .
+
+  data:Maud_von_Tr%C3%BCtzschler a :Person,
+          :Woman ;
+      :isMotherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+  data:Othmar_Baron_von_Wangenheim-Winterstein a :Man,
+          :Person ;
+      :isFatherOf data:Elisabeth_of_Wangenheim-Winterstein .
+
+  data:Wilhelm_Ernst a :Man,
+          :Person ;
+      :isFatherOf data:Charles_Augustus .
+
+  data:Michael a :Man,
+          :Person .
+
+  data:Charles_Augustus a :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1988 ;
+      :hasMarriageYear 1944 ;
+      :hasRelation data:Elisabeth_of_Wangenheim-Winterstein ;
+      :isFatherOf data:Michael .
+
+  data:Elisabeth_of_Wangenheim-Winterstein a :Person,
+          :Woman ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2010 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (81c9b184-9fa6-4c68-b190-972c7b7979a5)
+ Call ID: 81c9b184-9fa6-4c68-b190-972c7b7979a5
   Args:

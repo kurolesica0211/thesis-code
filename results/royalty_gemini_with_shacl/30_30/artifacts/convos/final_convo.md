@@ -125,6 +125,8 @@ In October 2018, Alexandra converted to Catholicism, thereby renouncing her dist
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +142,9 @@ In October 2018, Alexandra converted to Catholicism, thereby renouncing her dist
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +159,23 @@ In October 2018, Alexandra converted to Catholicism, thereby renouncing her dist
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,106 +467,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3cc9cd83-c7ee-4b13-9814-c67aa1bfd838)
- Call ID: 3cc9cd83-c7ee-4b13-9814-c67aa1bfd838
-  Args:
-    type: :Person
-    source: Princess_Alexandra_of_Hanover
-  AssignClass (57adb1e8-9907-48b1-adbf-ce3a52f1f3b8)
- Call ID: 57adb1e8-9907-48b1-adbf-ce3a52f1f3b8
+  AssignClass (062e75a7-718c-4e88-9daa-f4a3cfbad8cb)
+ Call ID: 062e75a7-718c-4e88-9daa-f4a3cfbad8cb
   Args:
     type: :Woman
-    source: Princess_Alexandra_of_Hanover
-  AssignClass (82a05249-ade0-4d18-b5be-a2294130dab4)
- Call ID: 82a05249-ade0-4d18-b5be-a2294130dab4
+    source: Alexandra_of_Hanover
+  AssignClass (3a4f93bc-e2a1-496a-8812-18c57aad14e3)
+ Call ID: 3a4f93bc-e2a1-496a-8812-18c57aad14e3
   Args:
     type: :Person
-    source: Princess_Caroline_of_Monaco
-  AssignClass (8162b56a-fcb7-434c-a565-148fe183357f)
- Call ID: 8162b56a-fcb7-434c-a565-148fe183357f
+    source: Alexandra_of_Hanover
+  AddLiteral (69413e54-7dc7-4a89-80b9-bf2ce13f3458)
+ Call ID: 69413e54-7dc7-4a89-80b9-bf2ce13f3458
   Args:
+    literal_type: xsd:integer
+    literal_value: 1999
+    relation: :hasBirthYear
+    source: Alexandra_of_Hanover
+  AssignClass (597ef78a-1126-4a87-b063-684729ebd047)
+ Call ID: 597ef78a-1126-4a87-b063-684729ebd047
+  Args:
+    source: Princess_Caroline_of_Monaco
     type: :Woman
-    source: Princess_Caroline_of_Monaco
-  AssignClass (d4a8f698-30e1-4560-8adb-cd5f7602348c)
- Call ID: d4a8f698-30e1-4560-8adb-cd5f7602348c
+  AssignClass (af34a2ff-245e-4311-a73f-a9ae961cba0f)
+ Call ID: af34a2ff-245e-4311-a73f-a9ae961cba0f
   Args:
-    type: :Person
-    source: Ernst_August_Prince_of_Hanover
-  AssignClass (bfd578fd-4767-4d72-902a-91aeeaafbc8f)
- Call ID: bfd578fd-4767-4d72-902a-91aeeaafbc8f
+    type: :Ancestor
+    source: Princess_Caroline_of_Monaco
+  AssignClass (bc8da054-ca5d-4820-9ed0-b862906baaf1)
+ Call ID: bc8da054-ca5d-4820-9ed0-b862906baaf1
   Args:
     type: :Man
     source: Ernst_August_Prince_of_Hanover
-  AddLiteral (5b5f6361-a7a7-4f2e-8641-b156df386811)
- Call ID: 5b5f6361-a7a7-4f2e-8641-b156df386811
+  AssignClass (618b5f64-2af9-4597-b179-06803fb5ee66)
+ Call ID: 618b5f64-2af9-4597-b179-06803fb5ee66
   Args:
-    literal_value: 1999
-    source: Princess_Alexandra_of_Hanover
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (6717a3b6-654b-4c0b-b642-13a42358ad8a)
- Call ID: 6717a3b6-654b-4c0b-b642-13a42358ad8a
+    type: :Ancestor
+    source: Ernst_August_Prince_of_Hanover
+  AddTriple (29a4a1b8-6222-4194-8085-e381433daa08)
+ Call ID: 29a4a1b8-6222-4194-8085-e381433daa08
   Args:
     relation: :hasMother
     target: Princess_Caroline_of_Monaco
-    source: Princess_Alexandra_of_Hanover
-  AddTriple (09d8e665-2614-4adf-8a90-9a3eb4008a5e)
- Call ID: 09d8e665-2614-4adf-8a90-9a3eb4008a5e
+    source: Alexandra_of_Hanover
+  AddTriple (e7f4b14d-d3d2-4ef2-a72f-80bd81d5c6b5)
+ Call ID: e7f4b14d-d3d2-4ef2-a72f-80bd81d5c6b5
   Args:
-    source: Princess_Alexandra_of_Hanover
     target: Ernst_August_Prince_of_Hanover
     relation: :hasFather
-  AssignClass (1a42bcd1-daaf-4d82-aaaa-203421056245)
- Call ID: 1a42bcd1-daaf-4d82-aaaa-203421056245
-  Args:
-    type: :Person
-    source: Hereditary_Prince_Ernst_August
-  AssignClass (b893091c-28cb-4b7e-8ec7-cd586dc12146)
- Call ID: b893091c-28cb-4b7e-8ec7-cd586dc12146
+    source: Alexandra_of_Hanover
+  AssignClass (30ae7bda-9bf8-4fa4-ab59-1cfd9efc021a)
+ Call ID: 30ae7bda-9bf8-4fa4-ab59-1cfd9efc021a
   Args:
     type: :Man
     source: Hereditary_Prince_Ernst_August
-  AssignClass (d78219d3-191b-4b33-b7e1-48ca84f1d43e)
- Call ID: d78219d3-191b-4b33-b7e1-48ca84f1d43e
+  AssignClass (c43d582c-f92e-42d1-ace1-ca36213d3868)
+ Call ID: c43d582c-f92e-42d1-ace1-ca36213d3868
   Args:
-    type: :Person
     source: Prince_Christian_of_Hanover
-  AssignClass (eb067c81-156d-4f53-bab9-1d5b955d1f79)
- Call ID: eb067c81-156d-4f53-bab9-1d5b955d1f79
-  Args:
     type: :Man
-    source: Prince_Christian_of_Hanover
-  AddTriple (09330184-9484-4833-b360-cec9ac07e120)
- Call ID: 09330184-9484-4833-b360-cec9ac07e120
+  AddTriple (b5e70f77-d761-4a5f-a392-586ed6eb4d29)
+ Call ID: b5e70f77-d761-4a5f-a392-586ed6eb4d29
   Args:
-    source: Princess_Alexandra_of_Hanover
     target: Hereditary_Prince_Ernst_August
     relation: :hasBrother
-  AddTriple (a83db5b0-dcff-411e-8413-b51b5b4a10fe)
- Call ID: a83db5b0-dcff-411e-8413-b51b5b4a10fe
+    source: Alexandra_of_Hanover
+  AddTriple (0324db25-a6f9-4e3d-a310-dfa8b4b795b9)
+ Call ID: 0324db25-a6f9-4e3d-a310-dfa8b4b795b9
   Args:
-    relation: :hasBrother
     target: Prince_Christian_of_Hanover
-    source: Princess_Alexandra_of_Hanover
-  AssignClass (01d870b8-13f7-474f-9375-8fe5b96cdc80)
- Call ID: 01d870b8-13f7-474f-9375-8fe5b96cdc80
-  Args:
-    type: :Person
-    source: Albert_II_of_Monaco
-  AssignClass (81b1cb22-a5ce-44b9-961f-a9bae7888b5b)
- Call ID: 81b1cb22-a5ce-44b9-961f-a9bae7888b5b
+    relation: :hasBrother
+    source: Alexandra_of_Hanover
+  AssignClass (941cf9e8-899f-4cd2-80f3-c7b9e4272681)
+ Call ID: 941cf9e8-899f-4cd2-80f3-c7b9e4272681
   Args:
     type: :Man
     source: Albert_II_of_Monaco
-  AddTriple (c54e4c47-d87d-441f-9e63-769d11f6dd53)
- Call ID: c54e4c47-d87d-441f-9e63-769d11f6dd53
+  AddTriple (3c493306-3da7-4ada-ad31-72499aa8e69b)
+ Call ID: 3c493306-3da7-4ada-ad31-72499aa8e69b
   Args:
-    source: Princess_Alexandra_of_Hanover
-    relation: :hasRelation
-    target: Albert_II_of_Monaco
-  Finish (6fac489e-5cf5-4055-81ba-071d8324dd8b)
- Call ID: 6fac489e-5cf5-4055-81ba-071d8324dd8b
+    source: Albert_II_of_Monaco
+    relation: :isUncleOf
+    target: Alexandra_of_Hanover
+  AssignClass (79969728-d660-46db-90b3-2ecc12f24641)
+ Call ID: 79969728-d660-46db-90b3-2ecc12f24641
   Args:
+    type: :Woman
+    source: Charlotte_Casiraghi
+  AddTriple (1b0dc243-103c-4a90-b861-ce83694cf9ec)
+ Call ID: 1b0dc243-103c-4a90-b861-ce83694cf9ec
+  Args:
+    source: Alexandra_of_Hanover
+    target: Charlotte_Casiraghi
+    relation: :hasSister
+  AssignClass (51b8f419-3089-4e03-a030-e1100f41b746)
+ Call ID: 51b8f419-3089-4e03-a030-e1100f41b746
+  Args:
+    source: Alexandra_Princess_of_Leiningen
+    type: :Woman
+  AddTriple (58b9f859-14bb-47de-8cc9-c3b8f3fb1894)
+ Call ID: 58b9f859-14bb-47de-8cc9-c3b8f3fb1894
+  Args:
+    source: Alexandra_Princess_of_Leiningen
+    relation: :isAuntOf
+    target: Alexandra_of_Hanover
+  Finish (a99e22f4-803f-442c-8cf4-dc70e85933b6)
+ Call ID: a99e22f4-803f-442c-8cf4-dc70e85933b6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -551,29 +654,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Alexandra_of_Hanover a :Person,
+  data:Albert_II_of_Monaco a :Man ;
+      :isUncleOf data:Alexandra_of_Hanover .
+
+  data:Alexandra_Princess_of_Leiningen a :Woman ;
+      :isAuntOf data:Alexandra_of_Hanover .
+
+  data:Charlotte_Casiraghi a :Woman .
+
+  data:Ernst_August_Prince_of_Hanover a :Ancestor,
+          :Man .
+
+  data:Hereditary_Prince_Ernst_August a :Man .
+
+  data:Prince_Christian_of_Hanover a :Man .
+
+  data:Princess_Caroline_of_Monaco a :Ancestor,
+          :Woman .
+
+  data:Alexandra_of_Hanover a :Person,
           :Woman ;
       :hasBirthYear 1999 ;
       :hasBrother data:Hereditary_Prince_Ernst_August,
           data:Prince_Christian_of_Hanover ;
       :hasFather data:Ernst_August_Prince_of_Hanover ;
       :hasMother data:Princess_Caroline_of_Monaco ;
-      :hasRelation data:Albert_II_of_Monaco .
-
-  data:Albert_II_of_Monaco a :Man,
-          :Person .
-
-  data:Ernst_August_Prince_of_Hanover a :Man,
-          :Person .
-
-  data:Hereditary_Prince_Ernst_August a :Man,
-          :Person .
-
-  data:Prince_Christian_of_Hanover a :Man,
-          :Person .
-
-  data:Princess_Caroline_of_Monaco a :Person,
-          :Woman .
+      :hasSister data:Charlotte_Casiraghi .
 
 
 
@@ -585,126 +691,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (49da70b3-d104-4517-9db7-faf9a71f5ed0)
- Call ID: 49da70b3-d104-4517-9db7-faf9a71f5ed0
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Ernst_August_Prince_of_Hanover' is assigned as the father of 'Princess_Alexandra_of_Hanover' via 'hasFather', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Caroline_of_Monaco' is assigned as the mother of 'Princess_Alexandra_of_Hanover' via 'hasMother', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Caroline_of_Monaco', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Ernst_August_Prince_of_Hanover' is assigned as the father of 'Princess_Alexandra_of_Hanover' via 'hasFather', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Caroline_of_Monaco' is assigned as the mother of 'Princess_Alexandra_of_Hanover' via 'hasMother', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Caroline_of_Monaco', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Ernst_August_Prince_of_Hanover' is assigned as the father of 'Princess_Alexandra_of_Hanover' via 'hasFather', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Caroline_of_Monaco' is assigned as the mother of 'Princess_Alexandra_of_Hanover' via 'hasMother', but it lacks the required ':Ancestor' class membership.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Caroline_of_Monaco', class=':Ancestor')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (a31a812a-9ad7-4040-a7e5-9157cfb54842)
- Call ID: a31a812a-9ad7-4040-a7e5-9157cfb54842
-  Args:
-    type: :Ancestor
-    source: Ernst_August_Prince_of_Hanover
-  AssignClass (9264e7ff-39ec-486a-a527-cfda1bab2dba)
- Call ID: 9264e7ff-39ec-486a-a527-cfda1bab2dba
-  Args:
-    source: Princess_Caroline_of_Monaco
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Alexandra_of_Hanover a :Person,
-          :Woman ;
-      :hasBirthYear 1999 ;
-      :hasBrother data:Hereditary_Prince_Ernst_August,
-          data:Prince_Christian_of_Hanover ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasMother data:Princess_Caroline_of_Monaco ;
-      :hasRelation data:Albert_II_of_Monaco .
-
-  data:Albert_II_of_Monaco a :Man,
-          :Person .
-
-  data:Ernst_August_Prince_of_Hanover a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Hereditary_Prince_Ernst_August a :Man,
-          :Person .
-
-  data:Prince_Christian_of_Hanover a :Man,
-          :Person .
-
-  data:Princess_Caroline_of_Monaco a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (922b07c9-0394-4b00-a338-56fc3aee86f8)
- Call ID: 922b07c9-0394-4b00-a338-56fc3aee86f8
+  ValidateShacl (34d72cc4-a60e-4af3-98ac-7a301e23e873)
+ Call ID: 34d72cc4-a60e-4af3-98ac-7a301e23e873
   Args:
 
 ================================= Tool Message =================================
@@ -715,6 +703,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f5fbc99c-242b-406b-bd89-80aad64086f7)
- Call ID: f5fbc99c-242b-406b-bd89-80aad64086f7
+  Finish (2aa4a4c5-13c4-43cd-a58a-fc1aa667ced3)
+ Call ID: 2aa4a4c5-13c4-43cd-a58a-fc1aa667ced3
   Args:

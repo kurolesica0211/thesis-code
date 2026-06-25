@@ -1,0 +1,196 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "899:941"^^xsd:string ;
+    data:posIndicesPart "1182:1187"^^xsd:string,
+        "1196:1202"^^xsd:string,
+        "1256:1261"^^xsd:string,
+        "1279:1285"^^xsd:string,
+        "1305:1310"^^xsd:string,
+        "1311:1318"^^xsd:string,
+        "1319:1324"^^xsd:string ;
+    data:wdtLink wdt:Q538532 ;
+    :alsoKnownAs "Crown Princess Maria Vladimirovna"^^xsd:string,
+        "Crown Princess Maria Vladimirovna of Russia"^^xsd:string,
+        "Grand Duchess Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Crown Princess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Mariya Vladimirovna Romanov, Grand Duchess of Russia"^^xsd:string ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "248:273"^^xsd:string,
+        "263:273"^^xsd:string,
+        "263:274"^^xsd:string,
+        "636:646"^^xsd:string,
+        "636:647"^^xsd:string ;
+    data:posIndicesPart "1293:1300"^^xsd:string,
+        "292:299"^^xsd:string,
+        "662:669"^^xsd:string,
+        "852:859"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Joachim_of_Prussia ;
+    :isAncestorOf data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Joachim_of_Prussia ;
+    :isParentOf data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Joachim_of_Prussia .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Franz Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:38"^^xsd:string,
+        "0:57"^^xsd:string,
+        "1603:1636"^^xsd:string ;
+    data:posIndicesPart "1287:1292"^^xsd:string,
+        "1293:1300"^^xsd:string,
+        "286:291"^^xsd:string,
+        "292:299"^^xsd:string,
+        "300:306"^^xsd:string,
+        "310:317"^^xsd:string,
+        "477:483"^^xsd:string,
+        "543:549"^^xsd:string,
+        "550:555"^^xsd:string,
+        "556:563"^^xsd:string,
+        "656:661"^^xsd:string,
+        "662:669"^^xsd:string,
+        "846:851"^^xsd:string,
+        "852:859"^^xsd:string ;
+    data:wdtLink wdt:Q64217 ;
+    :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan"^^xsd:string,
+        "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen"^^xsd:string ;
+    :hasAncestor data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia ;
+    :hasRelation data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isChildOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSonOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Prince_Joachim_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Prussia"^^xsd:string ;
+    data:posIndicesFull "581:606"^^xsd:string,
+        "588:595"^^xsd:string ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim"^^xsd:string,
+        "Joachim Franz Hubert"^^xsd:string,
+        "Prince Joachim Franz Humbert of Prussia"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Joachim_of_Prussia ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isAncestorOf data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Prince_Karl_Franz_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Karl Franz of Prussia"^^xsd:string ;
+    data:posIndicesFull "363:391"^^xsd:string ;
+    data:posIndicesPart "1287:1292"^^xsd:string,
+        "477:483"^^xsd:string,
+        "543:549"^^xsd:string,
+        "550:555"^^xsd:string,
+        "656:661"^^xsd:string,
+        "846:851"^^xsd:string ;
+    data:wdtLink wdt:Q635489 ;
+    :alsoKnownAs "Karl Franz Joseph"^^xsd:string,
+        "Karl Franz Joseph Prinz von Preußen"^^xsd:string,
+        "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia"^^xsd:string ;
+    :hasAncestor data:Prince_Joachim_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Karl_Franz_of_Prussia ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasParent data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isChildOf data:Prince_Joachim_of_Prussia ;
+    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSonOf data:Prince_Joachim_of_Prussia ;
+    :isUncleOf data:Prince_Franz_Wilhelm_of_Prussia .
+

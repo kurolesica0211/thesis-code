@@ -69,51 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexandra of Greece and Denmark (Greek: Αλεξάνδρα; romanized: Alexándra), later known as Grand Duchess Alexandra Georgievna of Russia (Russian: Алекса́ндра Гео́ргиевна); 30 August  1870 – 24 September  1891), was a member of the Greek royal family by birth and of the Russian imperial family by marriage.
-Alexandra was the daughter of George I of Greece and Olga Constantinovna of Russia, and grew up in Athens.
-In 1889, she married Grand Duke Paul Alexandrovich of Russia, her first cousin once removed.
-The couple settled in Saint Petersburg and they had two children: Grand Duchess Maria Pavlovna (1890–1958) and Grand Duke Dmitri Pavlovich (1891–1942).
-Early life
+Prince Karl of Leiningen (Karl Vladimir Ernst Heinrich; 2 January 1928 – 28 September 1990) was the second son of Karl, 6th Prince of Leiningen (1898–1946), and Grand Duchess Maria Kirillovna of Russia.
+She was the elder daughter of Grand Duke Kirill Vladimirovich of Russia and Princess Victoria Melita of Edinburgh.
+As such, Karl was a great-great-grandson of both Queen Victoria of the United Kingdom and Emperor Alexander II of Russia (as Victoria Melita and Kirill Vladimirovich were both grandchildren of Alexander II).
+Biography
 
-Princess Alexandra of Greece and Denmark was born on 30 August  1870 at Mon Repos, the summer residence of the Greek royal family on the island of Corfu.
-She was the third child and eldest daughter of King George I of Greece and his wife, Grand Duchess Olga Constantinovna of Russia.
-Alexandra's father was not a native Greek, but he had been born a Danish prince named Christian Wilhelm of Schleswig-Holstein-Sonderburg-Glücksburg, a son of Christian IX, King of Denmark, and he had been elected to the Greek throne at the age of seventeen.
-Five of his sons (Constantine, George, Nicholas, Andrew and Christopher), and two daughters (Alexandra and Maria), attained adulthood.
-King George was a taciturn man, but contrary to the general approach of the time, he believed in happy rambunctious children.
-The long corridors of the royal palace in Athens were used by Alexandra and her siblings for all types of play and sometimes a "bike ride" would be led by the King himself.
-Alexandra, nicknamed "Aline" within her family, or Greek Alix, to distinguish her from her aunt and godmother, Alexandra, Princess of Wales, had a sunny disposition and was much loved by her family.
-"She looked young and beautiful, and ever since she was a child, life looked as it had nothing but joy and happiness in store for her.
-"
+Career
 
+Born in Coburg, Germany, he worked mainly as a salesman in Paris as a young man.
+With his wife, Karl subsequently resolved to take up a business career in Toronto, Canada.
+Marriage and issue
 
-Alexandra's playmates were her brother Nicholas and her sister Maria, who followed her in age.
-Alexandra spent many holidays in Denmark visiting her paternal grandparents.
-In Denmark, Alexandra and her siblings met their Russian and British cousins in large family gatherings.
-Marriage and children
-
-When she was 18 years old, she was married to Grand Duke Paul Alexandrovich of Russia, her maternal first cousin once removed and the youngest child and sixth son of Emperor Alexander II and his first wife, Princess Marie of Hesse and by Rhine.
-They had become close when Grand Duke Paul spent winters in Greece due to his frequent respiratory illnesses.
-The Greek royal family also frequently spent holidays with the Romanov family on visits to Russia or Denmark.
-The wedding took place on 17 June  1889 in St. Petersburg, at the chapel of the Winter Palace.
-They had two children:
+Karl met Princess Marie Louise of Bulgaria in Madrid, where she was living with her mother.
+She was the only daughter of Boris III of Bulgaria by his wife Princess Giovanna of Italy.
+Karl announced his engagement to Marie Louise in December 1956.
+Amorbach had been the residence of the House of Leiningen since 1803, and the town's streets were lined with hundreds of cheering spectators; Karl's family owns huge estates in South Germany, and was considered to be one of the wealthiest of Germany's noble families.
+Karl traveled to Canada early in their marriage, and the couple decided to settle there.
+The marriage produced two sons:
 
 
-Death
+The marriage was unhappy, and Karl and Marie Louise divorced on 4 December 1968.
+Later in life, Karl reminisced, "Princes are expected to marry princesses, so I married Marie-Louise, the daughter of Bulgarian ex-King Boris III".
+Later life
 
-Seven months into her second pregnancy, Alexandra took a walk with her friends on the bank of the Moskva River and jumped directly into a boat that was permanently moored there, but fell as she got in.
-The Grand Duchess was buried in the Peter and Paul Cathedral, St. Petersburg.
-Her husband later morganatically remarried Olga Karnovich.
-Alexandra's son would be involved in the murder of Grigori Rasputin, a friend of Tsarina Alexandra Feodorovna, in 1916.
-In 1939 during the reign of her nephew George II of Greece, the Greek government obtained permission from the Soviet government under Joseph Stalin to rebury Princess Alexandra in Greece.
-It was finally laid to rest near the Tatoi Palace.
-Alexandra's marble tombstone over an empty tomb is still in its place in the Peter and Paul Cathedral.
-The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens was later named in her memory by another nephew, King Paul; it was affiliated with the University of Athens with a special remit to research and combat postpartum maternal mortality.
+Karl eventually became a naturalized Canadian citizen.
+Persuaded by some Jewish friends to visit Israel, Karl eventually found a job through the help of new-found Israeli friends.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +117,9 @@ The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +134,23 @@ The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,153 +442,123 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (636b55e8-52a6-4a89-bdb1-0d72f1209274)
- Call ID: 636b55e8-52a6-4a89-bdb1-0d72f1209274
+  AssignClass (f4775bcc-11ca-419c-9690-00007a0345cb)
+ Call ID: f4775bcc-11ca-419c-9690-00007a0345cb
   Args:
-    type: :Woman
-    source: Alexandra_of_Greece_and_Denmark
-  AssignClass (9a83e90f-9846-4487-a0bb-1d501ceffb48)
- Call ID: 9a83e90f-9846-4487-a0bb-1d501ceffb48
+    source: Karl_of_Leiningen
+    type: :Man
+  AddLiteral (6b10c277-1384-4fe3-89f5-39e9ff4ae0fb)
+ Call ID: 6b10c277-1384-4fe3-89f5-39e9ff4ae0fb
   Args:
-    type: :Person
-    source: Alexandra_of_Greece_and_Denmark
-  AddLiteral (6eaa1897-8ff6-49ff-b035-fdd033beb97b)
- Call ID: 6eaa1897-8ff6-49ff-b035-fdd033beb97b
+    literal_value: 1928
+    literal_type: xsd:integer
+    source: Karl_of_Leiningen
+    relation: :hasBirthYear
+  AddLiteral (c41dce2d-7a86-49fd-975d-4df29d7139ce)
+ Call ID: c41dce2d-7a86-49fd-975d-4df29d7139ce
   Args:
-    relation: :knownAs
-    source: Alexandra_of_Greece_and_Denmark
-    literal_type: xsd:string
-    literal_value: Alexandra
-  AddLiteral (feac5f92-37f5-4bfd-97e2-3612687220e0)
- Call ID: feac5f92-37f5-4bfd-97e2-3612687220e0
+    literal_value: 1990
+    relation: :hasDeathYear
+    source: Karl_of_Leiningen
+    literal_type: xsd:integer
+  AssignClass (5287f570-6e43-4bfd-9e58-87716496a534)
+ Call ID: 5287f570-6e43-4bfd-9e58-87716496a534
   Args:
-    literal_value: Aline
-    literal_type: xsd:string
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :alsoKnownAs
-  AddLiteral (89dba22f-888a-4b70-8557-e9deaefa77ab)
- Call ID: 89dba22f-888a-4b70-8557-e9deaefa77ab
+    source: Karl_6th_Prince_of_Leiningen
+    type: :Man
+  AddLiteral (ac73e82f-510b-4174-97eb-d2da0d870a3d)
+ Call ID: ac73e82f-510b-4174-97eb-d2da0d870a3d
   Args:
-    literal_value: 1870
-    source: Alexandra_of_Greece_and_Denmark
+    literal_value: 1898
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (109c0ca2-dc99-4aad-aace-4762a4732e41)
- Call ID: 109c0ca2-dc99-4aad-aace-4762a4732e41
+    source: Karl_6th_Prince_of_Leiningen
+  AddLiteral (68756fa9-5536-4d7e-8bc6-91e2a5327d84)
+ Call ID: 68756fa9-5536-4d7e-8bc6-91e2a5327d84
   Args:
-    literal_value: 1891
-    source: Alexandra_of_Greece_and_Denmark
+    literal_value: 1946
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (dfedb953-41d8-4159-9503-bd98fdab0ad2)
- Call ID: dfedb953-41d8-4159-9503-bd98fdab0ad2
-  Args:
-    type: :Man
-    source: George_I_of_Greece
-  AssignClass (f18f0edb-3207-4502-bed4-63fce4ff0bb2)
- Call ID: f18f0edb-3207-4502-bed4-63fce4ff0bb2
-  Args:
-    type: :Ancestor
-    source: George_I_of_Greece
-  AssignClass (e59f67d7-4fd0-44d4-9178-6b79a3409d89)
- Call ID: e59f67d7-4fd0-44d4-9178-6b79a3409d89
-  Args:
-    type: :Person
-    source: George_I_of_Greece
-  AssignClass (7ea2695c-49eb-48a9-8a70-6a40745c0bab)
- Call ID: 7ea2695c-49eb-48a9-8a70-6a40745c0bab
+    source: Karl_6th_Prince_of_Leiningen
+  AssignClass (34814fef-5136-4497-86bb-0abb272a10ef)
+ Call ID: 34814fef-5136-4497-86bb-0abb272a10ef
   Args:
     type: :Woman
-    source: Olga_Constantinovna_of_Russia
-  AssignClass (b944a0a7-1ae6-4079-9800-477119c7f00f)
- Call ID: b944a0a7-1ae6-4079-9800-477119c7f00f
+    source: Maria_Kirillovna_of_Russia
+  AddTriple (3302084a-0110-4397-9cc4-aaa59d000ef9)
+ Call ID: 3302084a-0110-4397-9cc4-aaa59d000ef9
   Args:
-    type: :Ancestor
-    source: Olga_Constantinovna_of_Russia
-  AssignClass (eec0f88d-b3f9-49cc-a4f6-eec57562c563)
- Call ID: eec0f88d-b3f9-49cc-a4f6-eec57562c563
-  Args:
-    type: :Person
-    source: Olga_Constantinovna_of_Russia
-  AddTriple (b2b3f591-6e54-4c60-8f3b-aa046c8a65b9)
- Call ID: b2b3f591-6e54-4c60-8f3b-aa046c8a65b9
-  Args:
-    target: George_I_of_Greece
+    source: Karl_of_Leiningen
     relation: :hasFather
-    source: Alexandra_of_Greece_and_Denmark
-  AddTriple (5d336638-a30b-4f07-9c99-62ef977fc76a)
- Call ID: 5d336638-a30b-4f07-9c99-62ef977fc76a
+    target: Karl_6th_Prince_of_Leiningen
+  AddTriple (c94a3f3c-27da-4a37-a4ad-42b7bdf2a457)
+ Call ID: c94a3f3c-27da-4a37-a4ad-42b7bdf2a457
   Args:
-    target: Olga_Constantinovna_of_Russia
     relation: :hasMother
-    source: Alexandra_of_Greece_and_Denmark
-  AssignClass (857f8dd0-7bf2-4971-808a-79ae276df501)
- Call ID: 857f8dd0-7bf2-4971-808a-79ae276df501
+    source: Karl_of_Leiningen
+    target: Maria_Kirillovna_of_Russia
+  AssignClass (b03aa930-9e80-4c3d-9196-e50a3dc1cb80)
+ Call ID: b03aa930-9e80-4c3d-9196-e50a3dc1cb80
   Args:
+    source: Kirill_Vladimirovich_of_Russia
     type: :Man
-    source: Paul_Alexandrovich_of_Russia
-  AssignClass (ad08ab3c-3d6b-4304-b70e-9dd0072b54d3)
- Call ID: ad08ab3c-3d6b-4304-b70e-9dd0072b54d3
+  AssignClass (37e5203c-a267-4768-8bab-ed09032df08f)
+ Call ID: 37e5203c-a267-4768-8bab-ed09032df08f
   Args:
-    type: :Person
-    source: Paul_Alexandrovich_of_Russia
-  AddLiteral (f7129d7a-73b7-47b3-bd98-227fb0fed48b)
- Call ID: f7129d7a-73b7-47b3-bd98-227fb0fed48b
-  Args:
-    literal_value: 1889
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Alexandra_of_Greece_and_Denmark
-  AddTriple (048bef6e-08bf-4138-b738-f023d0f1053b)
- Call ID: 048bef6e-08bf-4138-b738-f023d0f1053b
-  Args:
-    target: Paul_Alexandrovich_of_Russia
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasRelation
-  AssignClass (e19e3632-edb8-45af-8599-0633e7ee8454)
- Call ID: e19e3632-edb8-45af-8599-0633e7ee8454
-  Args:
+    source: Victoria_Melita_of_Edinburgh
     type: :Woman
-    source: Maria_Pavlovna
-  AssignClass (11d9b78f-05f0-4f5a-905f-e2f2427934b2)
- Call ID: 11d9b78f-05f0-4f5a-905f-e2f2427934b2
+  AddTriple (1440bc43-7253-4f97-abdf-56ce3baf18a1)
+ Call ID: 1440bc43-7253-4f97-abdf-56ce3baf18a1
   Args:
-    type: :Person
-    source: Maria_Pavlovna
-  AssignClass (4e197a16-e456-45c3-8939-f2873b810758)
- Call ID: 4e197a16-e456-45c3-8939-f2873b810758
+    source: Maria_Kirillovna_of_Russia
+    relation: :hasFather
+    target: Kirill_Vladimirovich_of_Russia
+  AddTriple (99cdb345-9260-45cb-8a6e-2a61611e2504)
+ Call ID: 99cdb345-9260-45cb-8a6e-2a61611e2504
+  Args:
+    relation: :hasMother
+    source: Maria_Kirillovna_of_Russia
+    target: Victoria_Melita_of_Edinburgh
+  AssignClass (c8db253b-22fb-4f68-a4d1-cc46313d40cc)
+ Call ID: c8db253b-22fb-4f68-a4d1-cc46313d40cc
+  Args:
+    source: Marie_Louise_of_Bulgaria
+    type: :Woman
+  AssignClass (b99bbffc-fcdf-4dd7-adc0-63e9ce76c0c1)
+ Call ID: b99bbffc-fcdf-4dd7-adc0-63e9ce76c0c1
   Args:
     type: :Man
-    source: Dmitri_Pavlovich
-  AssignClass (537f564c-3a53-484f-8c57-e9ca2a61ddb2)
- Call ID: 537f564c-3a53-484f-8c57-e9ca2a61ddb2
+    source: Boris_III_of_Bulgaria
+  AssignClass (9574e28a-d1ce-45c5-b940-8ae5f69a4569)
+ Call ID: 9574e28a-d1ce-45c5-b940-8ae5f69a4569
   Args:
-    type: :Person
-    source: Dmitri_Pavlovich
-  AddTriple (d8167cc9-ab8e-496a-8fec-df50469b7dcd)
- Call ID: d8167cc9-ab8e-496a-8fec-df50469b7dcd
+    source: Giovanna_of_Italy
+    type: :Woman
+  AddTriple (84601bd8-24c6-4220-96bc-8d65836449cc)
+ Call ID: 84601bd8-24c6-4220-96bc-8d65836449cc
   Args:
-    target: Maria_Pavlovna
-    relation: :hasChild
-    source: Alexandra_of_Greece_and_Denmark
-  AddTriple (51050f58-d9be-45b2-95c8-bf6b817b7f3f)
- Call ID: 51050f58-d9be-45b2-95c8-bf6b817b7f3f
+    source: Marie_Louise_of_Bulgaria
+    relation: :hasFather
+    target: Boris_III_of_Bulgaria
+  AddTriple (8b69ba0d-e6fa-45a2-9461-a04d7986dbfe)
+ Call ID: 8b69ba0d-e6fa-45a2-9461-a04d7986dbfe
   Args:
-    relation: :hasChild
-    source: Alexandra_of_Greece_and_Denmark
-    target: Dmitri_Pavlovich
-  AddTriple (e7010441-e09c-44a1-9c07-e7921e3f2dc6)
- Call ID: e7010441-e09c-44a1-9c07-e7921e3f2dc6
+    source: Marie_Louise_of_Bulgaria
+    relation: :hasMother
+    target: Giovanna_of_Italy
+  AddLiteral (e739c5f7-7dfd-4fa7-9af8-066d71c9062a)
+ Call ID: e739c5f7-7dfd-4fa7-9af8-066d71c9062a
   Args:
-    source: Paul_Alexandrovich_of_Russia
-    relation: :hasChild
-    target: Maria_Pavlovna
-  AddTriple (fa6fbfa6-1317-4c43-8621-a8f38f00ed2f)
- Call ID: fa6fbfa6-1317-4c43-8621-a8f38f00ed2f
+    literal_type: xsd:integer
+    source: Karl_of_Leiningen
+    relation: :hasMarriageYear
+    literal_value: 1956
+  AddTriple (fe52793e-fe44-4cbe-a19f-15ded9ee6746)
+ Call ID: fe52793e-fe44-4cbe-a19f-15ded9ee6746
   Args:
-    source: Paul_Alexandrovich_of_Russia
-    relation: :hasChild
-    target: Dmitri_Pavlovich
-  Finish (0a332889-96b4-4481-9e14-623a2ff0bbf5)
- Call ID: 0a332889-96b4-4481-9e14-623a2ff0bbf5
+    relation: :hasRelation
+    source: Karl_of_Leiningen
+    target: Marie_Louise_of_Bulgaria
+  Finish (a8ff2b71-847c-4581-aa47-bf389def2b47)
+ Call ID: a8ff2b71-847c-4581-aa47-bf389def2b47
   Args:

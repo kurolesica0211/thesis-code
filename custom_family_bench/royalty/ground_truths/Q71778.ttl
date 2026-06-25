@@ -7,16 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Donatus-_Landgrave_of_Hesse a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Donatus-_Landgrave_of_Hesse a :Person ;
     rdfs:label "Prince Donatus, Landgrave of Hesse" ;
     data:posIndicesFull "48:80" ;
     data:posIndicesPart "1043:1048",
@@ -66,16 +57,16 @@ data:Prince_Donatus-_Landgrave_of_Hesse a :Ancestor,
     :alsoKnownAs "Donatus, Landgrave of Hesse",
         "Heinrich Donatus Philipp Umberto",
         "Heinrich Donatus Philipp Umberto Prinz von Hessen-Kassel Landgraf von Hessen" ;
-    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
     :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
-    :isSonOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+    :hasSex data:male .
 
-data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person ;
     rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg" ;
     data:posIndicesFull "324:371" ;
     data:posIndicesPart "1945:1953",
@@ -85,9 +76,9 @@ data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
         "2415:2423" ;
     data:wdtLink wdt:Q4164797 ;
     :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg" ;
-    :hasChild data:Prince_Donatus-_Landgrave_of_Hesse ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Donatus-_Landgrave_of_Hesse ;
-    :isMotherOf data:Prince_Donatus-_Landgrave_of_Hesse ;
-    :isParentOf data:Prince_Donatus-_Landgrave_of_Hesse .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

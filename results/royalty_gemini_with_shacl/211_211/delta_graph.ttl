@@ -2,28 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
-    :hasAncestor data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1904 ;
-    :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;
-    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
-    :hasSex data:Male ;
-    :knownAs "Paul Frederick Charles Alexander Michael Hugh"^^xsd:string .
-
-data:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Ancestor,
-        :Man ;
+data:David_Michael_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1970 ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Nadejda_Mikhailovna_of_Torby ;
+    :hasRelation data:Prince_Philip_of_Greece_and_Denmark ;
     :hasSex data:Male .
 
-data:Female a :Sex .
-
-data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
-        :Man ;
+data:George_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Nadejda_Mikhailovna_of_Torby ;
     :hasSex data:Male .
 
-data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Prince_Philip_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasMarriageYear 1947 ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSex data:Male .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
         :Woman ;
     :hasSex data:Female .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Nadejda_Mikhailovna_of_Torby a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
 
 data:Male a :Sex .
 

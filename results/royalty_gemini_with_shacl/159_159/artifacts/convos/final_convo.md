@@ -85,186 +85,141 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Cecilie of Greece and Denmark (Greek: Καικιλία, romanized: Kaikilía; 22 June 1911 – 16 November 1937) was by birth a Greek and Danish princess who became titular Hereditary Grand Duchess of Hesse and by Rhine through her marriage to Prince Georg Donatus, pretender to the throne of the Grand Duchy of Hesse.
-She was also the third-eldest sister to Prince Philip of Greece and Denmark (later Duke of Edinburgh).
-The third of five children of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Cecilie had a happy childhood.
-For the young princess and her relatives, these conflicts had dramatic consequences and led to their exile in Switzerland (between 1917 and 1920), and then in France (from 1922 to 1936).
-During their exile, Cecilie and her family depended on the generosity of their foreign relatives, in particular Marie Bonaparte (who offered them accommodation in Saint-Cloud) and Lady Louis Mountbatten (who supported them financially).
-The year 1929 was a turning point in Cecilie's life.
-She formed a relationship with her maternal cousin, Georg Donatus, Hereditary Grand Duke of Hesse.
-After marrying Georg Donatus in 1931, Cecilie moved to Darmstadt.
-Soon after, the princess and her family (except for Johanna who stayed behind),  embarked on a trip to the United Kingdom, where they were to attend the wedding of her brother-in-law Louis, Prince of Hesse and by Rhine, to Margaret Campbell Geddes.
-Repatriated to Darmstadt, their remains were buried in the Grand Ducal new mausoleum of Rosenhöhe Park on 23 November 1937.
-Biography
+Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin (20 September 1886 – 6 May 1954) was the last German Crown Princess and Crown Princess of Prussia as the wife of Wilhelm, German Crown Prince, the son of Wilhelm II, German Emperor.
+Cecilie was a daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
+She was brought up with simplicity, and her early life was peripatetic, spending summers in Mecklenburg and the rest of the year in Southern France.
+After the death of her father, she traveled every summer between 1898 and 1904 to her mother's native Russia.
+On 6 June 1905, she married German Crown Prince Wilhelm.
+Cecilie, tall and statuesque, became popular in Germany for her sense of style.
+After the fall of the German monarchy, at the end of World War I, Cecilie and her husband lived mostly apart.
+During the Weimar Republic and the Nazi period, Cecilie lived a private life mainly at Cecilienhof Palace in Potsdam.
+Early years
 
-Childhood
+Born on 20 September 1886 in Schwerin, Cecilie was the youngest daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
+She spent most of her childhood in Schwerin, at the royal residences of Ludwigslust Palace and the Gelbensande hunting lodge, only a few kilometres from the Baltic Sea coast.
+Her father suffered badly from asthma and the wet damp cold climate of Mecklenburg was not good for his health.
+As a result, Cecilie spent a large amount of time with her family in Cannes in the south of France, favoured at the time by European royalty, including some whom Cecilie met such as Empress Eugénie and her future husband's great-uncle, Edward VII.
+During the winter visit of 1897, Cecilie's sister, Alexandrine, met her future husband, Crown Prince Christian, later Christian X of Denmark, shortly before the death of their father at the age of 46.
+After returning to Schwerin, Cecilie spent time with her widowed mother in Denmark.
+After the death of her father, she traveled every summer, from 1898 to 1904, visiting her relatives in Russia.
+Cecilie lived there in Mikhailovskoe on Kronstadt Bay, the country home of her maternal grandfather, Grand Duke Michael Nikolaevich of Russia.
+Engagement
 
-The Balkan Wars and the First World War
-
-The third daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Cecilie was born at Tatoi Palace, near Athens, on 22 June 1911.
-Baptised on 10 July, her godparents were King George V of the United Kingdom, Ernest Louis, Grand Duke of Hesse, Prince Nicholas of Greece and Denmark and Grand Duchess Vera Konstantinovna of Russia.
-Cecilie spent a happy childhood within a united household that was already made up of two daughters, Margarita (1905–1981) and Theodora (1906–1969), and was further expanded with the arrival of Sophie (1914–2001).
-Coming from a cosmopolitan dynasty, Cecilie and her sisters communicated in English with their mother, but they also used French, German, and Greek with their relatives and their governesses.
-In 1911 and 1913, Cecilie thus went to the United Kingdom and Germany, where she was introduced to her mother's relatives.
-Cecilie's early years were marked by the instability that the Kingdom of Greece experienced at the start of the twentieth century.
-Between 1912 and 1913, Greece engaged in the Balkan Wars, during which Prince Andrew served under Crown Prince Constantine while Princess Alice worked as a nurse for wounded soldiers.
-They were, however, especially affected by the First World War, which created division between different branches of their family as Greece set aside its neutrality due to the Triple Entente.
-Cecilie and her sisters were in the royal palace of Athens when it was bombarded by the French Navy during the battle in the capital on 1 December 1916.
-Exile in Switzerland
-
-In June 1917, King Constantine I was finally deposed and driven out of Greece by the Allies, who replaced him on the throne by his second son, the young Alexander.
-Fifteen days later, Cecilie's family was in turn forced into exile in order to remove the possibility of the new monarch being influenced by those close to him.
-Following the Russian Revolution in 1917, some of Cecilie's Romanov relatives were murdered in Russia.
-Shortly after these events, the Grand Ducal family of Hesse, to which Cecilie was closely related through her mother, was overthrown along with all the other German dynasties during the winter of 1918–1919.
-Finally, the family went through some health problems, with Cecilie contracting the flu and scarlet fever in 1920.
-At the beginning of 1919, Cecilie reunited with her paternal grandmother, the Dowager Queen Olga, spared by the Bolsheviks thanks to the diplomatic intervention of the Danes.
-In the months that followed, Cecilie attended a family reunion with her maternal grandparents, and met her aunt Louise and uncle Louis Mountbatten.
-For Cecilie, who now formed a duo with her younger sister Sophie, exile was not only synonymous with sadness; it was also an opportunity for long family reunions and walks in the mountains.
-Brief return to Greece
-
-On 2 October 1920, King Alexander, cousin of Cecilie, was bitten by a domestic monkey during a walk in Tatoi.
-The death of the sovereign caused a violent institutional crisis in Greece.
-Humiliated, he retired abroad while a referendum reinstalled Constantine I on the throne.
-Prince Andrew was received triumphantly in Athens on 23 November 1920, and his wife and four daughters joined him a few days later.
-Cecilie then returned to live in Corfu with her family.
-At the same time, Princess Alice found out that she was pregnant again.
-On 10 June 1921, the family welcomed Philip (1921–2021), later the Duke of Edinburgh.
-The joy that surrounded this birth, however, was obscured by the absence of Prince Andrew, who joined the Greek forces in Asia Minor during the Occupation of Smyrna.
-Despite worries about the war, Cecilie and her siblings enjoyed life at Mon Repos, where they received a visit from their maternal grandmother and their aunt Louise in the spring of 1922.
-In the park near the palace, built on an ancient cemetery, the princesses devoted themselves to archeology and discovered some pottery, bronze pieces and bones.
-During this period, Cecilie and her sisters also participated, for the first time, in a number of great social events.
-In March 1921, the princesses attended in Athens the wedding of their cousin Helen to Crown Prince Carol of Romania.
-In July 1922, they went to the United Kingdom to be bridesmaids at the wedding of their uncle Louis Mountbatten to the wealthy heiress Edwina Ashley, whose beauty fascinated Cecilie.
-However, the military defeat of Greece against Turkey and the political unrest that it caused disrupted the life of Cecilie and her family.
-In September 1922, Constantine I abdicated in favor of his eldest son, George II.
-A month later, Prince Andrew was arrested before being tried by a military tribunal, which declared him responsible for the defeat of the Sakarya.
-Saved from execution by the intervention of foreign chancelleries, the prince was condemned to banishment and cashiering.
-The prince and his relatives hurriedly left Greece aboard HMS Calypso in early December 1922.
-Teenage years and young adulthood
-
-In the UK and France
-
-After a journey of several weeks, which led them successively to Italy, France and the United Kingdom, Cecilie, her parents and her siblings settled in Saint-Cloud in 1923.
-Settled in a house adjoining that of Princess Marie Bonaparte, the family depended for seven years on her generosity, and two other aunts of Cecilie: first Princess Anastasia and then Lady Louis Mountbatten.
-Marie Bonaparte financed the studies of her nieces and nephew, while Lady Mountbatten got into the habit of offering her nieces her "used" clothes.
-In fact, Cecilie's parents had little income and the children were the regular witnesses to their money problems and their difficulty in maintaining a household.
-Deprived of their Greek nationality after the proclamation of the Second Hellenic Republic in March 1924, Cecilie and her family received Danish passports from their cousin King Christian X. In Saint-Cloud, the small group spent a relatively simple life.
-Cecilie and her siblings continued their studies in private institutions, and, during their free time, their father took them regularly to Paris or to the Bois de Boulogne.
-Every Sunday, the family was received for lunch by Princess Marie Bonaparte and Prince George of Greece and Denmark.
-Cecilie and her family also regularly met Prince Nicholas of Greece and Denmark and his wife Elena Vladimirovna of Russia, who had also chosen France to spend their time in exile with their daughters.
-Finally, they often saw their cousin Princess Margaret of Denmark, who settled in the Paris region after her marriage to Prince René of Bourbon-Parma.
-Cecilie and her relatives made frequent stays abroad, and in particular in the United Kingdom.
-In 1923, the princess was invited to London to be a bridesmaid at the wedding of her aunt Louise Mountbatten to the future Gustav VI Adolf of Sweden.
-Engagement and family difficulties
-
-Considered by her maternal grandmother, the Dowager Marchioness of Milford Haven, as the prettiest of the four daughters of Andrew and Alice, Cecilie made her debut in the United Kingdom, during the summer of 1928.
-Aged 17, she took part in her first ball at the Earl and Countess of Ellesmere's Bridgewater House, before attending the Cowes Week and then being invited by King George V to stay a few days in Balmoral, Scotland.
-Although her two elder sisters were still single, and the relative poverty of her parents was not unrelated to this situation, Cecilie's family did not give up on finding a good match for her.
-Now Crown Princess of Sweden, her aunt Louise was planning to betroth her to Crown Prince Frederik of Denmark, but the plan did not succeed.
-Since her childhood, Cecilie had in fact been in contact with her cousins, Princes Georg Donatus and Louis of Hesse, whom she first met in 1919, while she was living in exile in Switzerland.
-The relationship between the princess and Georg Donatus turned into a romance during the year 1929 and the two were unofficially engaged in early 1930.
-At that time, Cecilie was just 18 years old and Georg Donatus, the pretender to the throne of Hesse, was 23.
-The happiness of the princess was however clouded by the situation of her mother, whose mental health deteriorated sharply after the celebration of her silver wedding anniversary with Prince Andrew, in 1928.
-Struck by a mental health crisis, the princess convinced herself that she possessed healing powers and that she was receiving divine messages about potential husbands for her daughters.
-Distraught by the situation, Prince Andrew finally made the decision to place his wife in a sanatorium.
-He took advantage of his family's stay in Darmstadt, on the occasion of the celebration for Cecilie's official engagement in April 1930, to send Alice to a psychiatric hospital located in Kreuzlingen, Switzerland.
-Marriage and settling in Germany
-
+During the wedding festivities of her brother Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin in Schwerin in June 1904, the 17-year-old Duchess Cecilie got to know her future husband, Wilhelm, German Crown Prince.
+Kaiser Wilhelm II had sent his eldest son to the festivities as his personal representative.
+Taller than most women of her time at 182 centimetres (over 5'11"), Cecilie was as tall as the German Crown Prince.
+Wilhelm was struck by her great beauty, and her dark hair and eyes.
+On 4 September 1904, the young couple celebrated their engagement at the Mecklenburg-Schwerin hunting lodge, Gelbensande.
 Wedding
 
-With her sister Sophie having become engaged almost at the same time as her to another member of the House of Hesse, Prince Christoph of Hesse, Cecilie made the preparations for her wedding in the company of her younger sister, aged 16.
-The nuptials of Sophie and Christoph were celebrated at Schlosshotel Kronberg in Kronberg im
-The wedding of Cecilie and Georg Donatus took place at the Neue Palais in Darmstadt on 2 February 1931.
-To the surprise of the foreign guests, who expected a much colder welcome from a population that had dethroned Grand Duke Ernest Louis in 1918, the wedding aroused the enthusiasm of the people, who gathered in droves to attend the event and cheer their former princely family.
-The ceremony brought together some fifty guests from all over Europe, but took place in the absence of the bride's mother Princess Alice, who was still hospitalized in Switzerland.
-Motherhood and reconnecting with Alice
+The wedding of Duchess Cecilie of Mecklenburg-Schwerin and the German Crown Prince Wilhelm took place on 6 June 1905 in Berlin.
+Arriving from Schwerin at Berlin's Lehrter Station, the future Crown Princess was greeted on the platform with a gift of dark red roses.
+She was greeted at Bellevue Palace by the entire German imperial family and later made a joyeuse entrée through the Brandenburg Gate to a gun salute in the Tiergarten.
+Kaiser Wilhelm II greeted her at the palace and conducted her to the Knight's Hall where over fifty guests from different European royal houses awaited the young bride including Grand Duke Michael Alexandrovich of Russia, Archduke Franz Ferdinand, as well as representatives from Denmark, Italy, Belgium, Portugal and the Netherlands.
+On her wedding day, Kaiser Wilhelm II presented his daughter-in-law with the Order of Louise.
+On her wedding day, Duchess Cecilie of Mecklenburg-Schwerin became Her Imperial and Royal Highness The German Crown Princess and Crown Princess of Prussia.
+She was expected to one day become German empress and queen of Prussia.
+German Crown Princess
 
-After their marriage, Cecilie and Georg Donatus moved to Schloß Wolfsgarten, the main residence of Grand Duke Ernest Louis and his wife Grand Duchess Eleonore, since their deposition.
-In Hesse, the young couple led a relatively simple life, punctuated by frequent stays abroad.
-Cecilie was involved in several charitable organizations and became the head of Alice Frauen Verein, an association dedicated to women.
-She also quickly gave birth to three children: Prince Ludwig (born 25 October 1931), Prince Alexander (born 14 April 1933) and Princess Johanna of Hesse (born 20 September 1936).
-Very close to her family, Cecilie was concerned about the situation of her mother, who remained institutionalized until the beginning of 1933.
-During this period, the relationship between Alice and her children became complicated.
-Cecilie maintained correspondence with her mother, and visited her once in Kreuzlingen.
-However, Alice was angry with those close to her for having her institutionalized and her anger manifested itself in fits of rage, which pushed her, for example, to tear up the photograph that Cecilie sent her after the birth of her first child.
-Once released from the hospital, Alice made known her desire to stay away from her family and four years passed before she put an end to her voluntary exile.
-During this period, Cecilie continued, despite everything, to write to her and to send her photos of the family.
-In December 1936, Alice finally made the decision to reconnect with her family, and it was Cecilie that she got closer to first.
-Association with the Nazi Party and restoration of the monarchy in Greece
+As German crown princess, Cecilie quickly became one of the most beloved members of the German imperial house.
+It was not long before her fashion style was copied by many women throughout the German Empire.
+After the end of the wedding festivities, the crown princely couple made their summer residence at the Marble Palace in Potsdam.
+Every year at the beginning of the court season in January, the couple would return to the Crown Prince Palace in Berlin on Unter den Linden.
+Cecilie's first child was born on 4 July 1906 and given the traditional Hohenzollern name of Wilhelm.
+At the time, the German monarchy appeared to be very secure.
+Although in public the marriage of the crown prince and princess appeared to be perfect, cracks quickly appeared due to the crown prince's wandering eye and controlling behaviour.
+In spite of her husband's unfaithfulness, however, Cecilie had given birth to six children by 1917.
+On discovering that Dungern was also having an affair with another woman at court, she confessed to her husband who told him to resign with the words: "Only my consideration for his imperial majesty (his father, Kaiser William II) prevents me from grinding you into the dust.
+"
 
-Prince Christoph of Hesse, Cecilie's brother-in-law, joined the Nazi Party in 1931 and the SS in 1932.
-For their part, the princes of Hesse kept their distance from the far-right party for a long time because the Grand Duke Ernest Louis had no sympathy for the Führer's ideas.
-On that date, Georg Donatus and Louis, the two sons of the former sovereign, joined the Nazi Party.
-Following the example of her husband and her brother-in-law, Cecilie joined the party at the same time.
-While in Germany the establishment of the Nazi regime prevented any plans to restore the monarchy, in Greece the republic collapsed after the putsch of General Georgios Kondylis in November 1935.
-Reinstalled on the throne by a referendum, George II then lifted the banishment sentence issued against Cecilie's father in 1922.
-In November 1936, the King of the Hellenes also organized the return of the remains and ashes of members of the Greek royal family who died in exile.
-This event was the opportunity for Cecilie and her family to return, for the first time, to Greece after fourteen years of banishment.
-Titular Grand Duchess of Hesse and by Rhine
 
-In 1937, Cecilie became pregnant again.
-At the same time, the health of her father-in-law, Grand Duke Ernest Louis, deteriorated sharply.
-Suffering from lung cancer, the former ruler hoped to live long enough to attend the wedding of his second son, Louis, to Hon.
-Margaret Campbell Geddes, scheduled to take place in London on 23 October 1937.
-However, the Grand Duke died a fortnight before the ceremony, on 9 October, making Georg Donatus the new head of House of Hesse-Darmstadt.
-Under these circumstances, the marriage of Prince Louis was postponed to 20 November, in order to give his family time to organize the funeral of Ernest Louis, which took place on 12 October.
-Death
+Impact as German Crown Princess
 
-With Prince Louis' wedding approaching, Cecilie and her family went to Frankfurt on 16 November 1937 to board a plane of the Belgian company Sabena which was to take them to London, via a stopover in Ostend where it was planned to pick up two other passengers.
-The small group, which consisted of Cecilie (eight months pregnant), Georg Donatus, their two sons Ludwig (aged 6) and Alexander (aged 4) and the Dowager Grand Duchess Eleonore, was accompanied by Baron Joachim von Riedesel, chosen by Louis to be his witness, and Alice Hahn.
-According to biographer Philip Eade, Cecilie hated taking the plane and she always dressed in black when she made a trip like this.
-However, during the maneuver, the aircraft struck the chimney of a factory, causing the destruction of a wing and an engine of the aircraft.
-The accident caused the immediate death of all passengers, including a newborn baby whom Cecilie seemed to have given birth to during the flight.
-Funeral
+Cecilie made considerable impact in a number of areas including women's education.
+On 6 December 1906, at AG Vulcan Stettin's shipyard, she christened  the Norddeutscher Lloyd steamship SS Kronprinzessin Cecilie.
+For Cecilie, who had a great passion for the sea since childhood, the gesture brought her great joy and honour.
+Cecilie's life in Berlin was a constant round of royal duties: attending military parades, gala state banquets, official ceremonies, and other courtly activities.
+In May 1911, Cecilie and the crown prince visited the Russian imperial court in Saint Petersburg.
+Queen Mary was particularly fond of the imperial couple and maintained contact with Cecilie until her death in 1953.
+The 1911 visit to London was Cecilie's last as representative of the German Empire.
+Revolution and the overthrow of the German monarchy
 
-Despite the death of his family, Prince Louis married Margaret Campbell Geddes, in London, the day after the plane crash.
-After the wedding, which took place in a climate of extreme gloom, the couple went to Belgium to collect the remains of Cecilie and her family, kept until then at the civil hospital in Ostend.
-Once back in Darmstadt, Louis and his wife adopted their niece, Johanna, the only child of Cecilie and Georg Donatus not to have taken part in the plane trip due to her very young age.
-The funeral of Cecilie and her relatives took place in Darmstadt on 23 November 1937.
-It was also an opportunity for Cecilie's parents to meet for the first time since 1931.
-Reconciled by tragedy, Andrew and Alice nevertheless continued separate lives after the funeral.
-The trauma of her daughter's death healed Alice, whose mental state returned to a completely normal level once the funeral was over.
-After the ceremony, the remains of Cecilie and her family were buried in a family vault at the Grand Ducal mausoleum of Rosenhöhe, not far from the graves of her godfather and father-in-law Grand Duke Ernest Louis and his daughter Elisabeth.
-In popular culture
+The political and economic situation in the last year of the war became more and more hopeless.
+On 6 November 1918, the new German imperial Chancellor, Prince Maximilian of Baden, met with Minister Wilhelm Solf to discuss the future of the German Empire.
+They were both of the opinion that the monarchy could only survive with the removal of the kaiser and his son the crown prince and the setting up of a regency under the nominal rule of the young son of Crown Princess Cecilie.
+Both the kaiser and the crown prince crossed the border to seek exile in the neutral Netherlands.
+Cecilie with her young children was living in Potsdam during the revolutionary period.
+It was here that the Empress Auguste Viktoria informed her daughter-in-law, "The revolution has broken out.
+"
 
-Commemoration
 
-On 16 November 2017 in Darmstadt, the Hessian State Archives, in collaboration with the Foundation of the House of Hesse (Hessische Hausstiftung), held a commemorative ceremony in honor of the victims of the accident in Ostend.
-On this occasion, wreaths were placed on the vault of Cecilie and her family, in Rosenhöhe.
-Documentaries
+Life under the republic
 
-The plane crash that caused the death of Princess Cecilie and her family was recounted in the sixth episode of the documentary series Mémoires d'exil (1999) by Frédéric Mitterrand.
-TV series
+The former crown princess was nothing but realistic about the new political situation confronting her family and Germany.
+The crown princess was quite prepared to do the same, but wanted to stay in Germany with her children if at all possible.
+As a result of a change of circumstances, Cecilie reduced her household staff by 50%.
+Her children's tutor also left her service and as a result her two eldest sons, Princes Wilhelm and Louis Ferdinand, for the first time attended as day students at a nearby school.
+Cecilie had considerable sympathy for the plight of the German people.
+In reply to an address from the German Women's Union in Berlin, the former crown princess stated, "I need no sympathy.
+I have the beautiful situation that can befall any German woman, the education of my children as good German citizens.
+"
 
-The death of Cecilie and her family is also mentioned by the character of Prince Philip, in the third episode ("Windsor") of the first season of the series The Crown (2016), and by a journalist, in the second episode ("A Company of Men") of the second season (2017).
-It is also depicted in the ninth episode of season 2 ("Paterfamilias"), during a flashback to Philip's early years.
-In this episode, Princess Cecilie is portrayed by German actress Leonie Benesch.
-However, this fictionalised version wrongly implied that Philip was to blame for Cecilie taking the flight, whereas in reality "her decision to travel to London had nothing to do with Philip".
-Novels
 
-The death of Cecilie and her family is also recounted in the novel A Matter of Honor by Jeffrey Archer (1986).
-In this fictionalized version, the accident in Ostend is caused by the KGB, which wants to recover the jewels of Tsarina Alexandra Fedorovna, bequeathed to the House of Hesse-Darmstadt after the Russian Revolution.
-Ancestry
+Wilhelm was only allowed to return to Germany from his enforced exile in 1923.
+Castle Oels, a castle with 10,000 hectares of workable land in Silesia, now in modern day Poland, provided substantial income for Cecilie's family.
+In the absence of her husband, Cecilie became the leading figure in the once ruling House of Hohenzollern.
+The former crown princess was under no illusions that the empire would be restored, unlike her father-in-law exiled in Doorn in the Netherlands.
+With the election of Gustav Stresemann as chancellor of the Weimar Republic in August 1923, negotiations for the former crown prince commenced.
+On the evening of 13 November 1923, Cecilie met her husband at Castle Oels.
+The years of separation and the behavior of Wilhelm had made the marriage now merely one in name only, but Cecilie was determined to keep things together even at a distance.
+Cecilie remained active within several charity organizations such as the Queen Louise Fund, Chair of the Fatherland's Women Union and the Ladies of the Order of St. John, while keeping clear of any political involvement.
+Under Nazi German rule 1933-1939
 
-Notes and references
+During 1933–1945, Cecilie lived a private life at Cecilienhof.
+Her eldest son Wilhelm forfeited his position as possible heir when he married Dorothea von Salviati on 3 June 1933.
+The former crown prince and princess were more understanding of their son than the exiled kaiser.
+Cecilie was not perturbed and made the best of the situation and was delighted when she became a grandmother for the first time on 7 June 1934.
+In 1935, Cecilie's second son worked, after studying economics and working for a time in the United States as a mechanic for Ford Motor Company, then with Lufthansa.
+Her third son, Hubertus, after spending a period of time farming joined the military and then the air force to become a pilot.
+In May 1938, Prince Louis Ferdinand married Grand Duchess Kira Kirillovna of Russia, daughter of the pretender to the Russian throne, Grand Duke Cyril Vladimirovich, at Cecilienhof.
+World War II
 
-Notes
+A period of relative calm for Cecilie's family and for Germany came to an end with the outbreak of World War II in September 1939.
+Cecilie's 24-year-old nephew, Prince Oskar, fell as a casualty five days after the start of the invasion of Poland.
+More personal tragedy occurred when Wilhelm was mortally wounded in battle at Valenciennes in France on 23 May 1940.
+Over 50,000 people lined the way to his final resting place in the Antique Temple near the remains of his grandmother, former Empress Auguste Viktoria.
+The huge turnout in respect for a prince, who had died a hero's death, from the former ruling dynasty, alarmed and infuriated Adolf Hitler.
+As a result, no prince from a former German dynasty was allowed to serve at the front and in 1943 Hitler ordered that they all be discharged from the armed forces.
+In 1941, the former Kaiser Wilhelm II died.
+At the age of 55, Cecilie's husband became Head of the House of Hohenzollern.
+While under the monarchy this would have meant a great change for Cecilie and her husband, the change was potentially dangerous because of the leader of the Nazi German state.
+During this time, Cecilie and her husband increasingly retreated to Castle Oels to live a quiet life, far away from the dangers of Berlin.
+With the war going badly, Cecilie and her family left the advancing danger of the Soviet Army to return to Potsdam where they celebrated Christmas in December 1944.
+In February 1945, Cecilie left Cecilienhof for the last time.
+Final years
 
-References
-
-Bibliography
-
-On Cecilie and her family
-
-Biographies of Cecilie's relatives
-
-Other works on royal families
+Cecilie fled the Soviet Army in February 1945 to the sanatorium of Dr. Paul Sotier (personal physician of Kaiser Wilhelm II) Fürstenhof in Bad Kissingen in Bavaria.
+Wilhelm had settled into a small house in Hechingen.
+Tragedy struck again when yet another son, Hubertus, died from appendicitis on 8 April 1950.
+In early 1951, the health of the former Crown Prince deteriorated and on 20 July he died.
+On 26 July, his funeral took place at Castle Hohenzollern where he was buried in the ground near an urn containing the ashes of the late Hubertus.
+On the arm of her son, Louis Ferdinand, Cecilie bade a final farewell to her husband.
+In 1952, Cecilie's memoirs, 'Remembrances' were published.
+In an act of healing and friendship, the former Crown Princess Cecilie was received by King George V's widow, Queen Mary, in May 1952 during a visit to England.
+Cecilie visited for the first time to attend the christening of her granddaughter, Princess Victoria Marina of Prussia, the daughter of her son Frederick.
+Tragedy once again struck when Cecilie's sister, the Danish Queen Mother, Queen Alexandrine, died on 28 December of the same year.
+On 3 January 1953, Cecilie attended her funeral at Roskilde Cathedral in Denmark.
+From this time on, the former crown princess never fully recovered.
+On 12 May 1954, her funeral took place and her remains were interred next to Crown Prince Wilhelm in the grounds of Castle Hohenzollern.
+}} Media related to Cecilie of Mecklenburg-Schwerin, German Crown Princess at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -280,39 +235,9 @@ Other works on royal families
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -327,6 +252,23 @@ Other works on royal families
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -344,6 +286,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -411,29 +368,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -442,6 +391,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -454,6 +411,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -462,17 +421,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -500,6 +461,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -515,286 +560,339 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (accd7b3e-0c4b-4050-bc69-01c51e5704b9)
- Call ID: accd7b3e-0c4b-4050-bc69-01c51e5704b9
+  AssignClass (37594473-5b30-48b5-b82a-d881c24405a3)
+ Call ID: 37594473-5b30-48b5-b82a-d881c24405a3
   Args:
-    source: Cecilie_of_Greece_and_Denmark
+    source: Cecilie_of_Mecklenburg-Schwerin
     type: :Woman
-  AssignClass (9d1dacb9-a900-45b9-b3be-3fd8441ba8e8)
- Call ID: 9d1dacb9-a900-45b9-b3be-3fd8441ba8e8
+  AssignClass (9cdb08ad-5d3e-4cd1-bbf2-2cf6289f30aa)
+ Call ID: 9cdb08ad-5d3e-4cd1-bbf2-2cf6289f30aa
   Args:
-    type: :Person
-    source: Cecilie_of_Greece_and_Denmark
-  AddLiteral (b6a61471-07e0-43a3-826c-b4cfedbae5fc)
- Call ID: b6a61471-07e0-43a3-826c-b4cfedbae5fc
-  Args:
-    literal_value: 1911-06-22
-    relation: :hasBirthYear
-    literal_type: xsd:date
-    source: Cecilie_of_Greece_and_Denmark
-  AddLiteral (5455247c-36a9-4868-b85a-54b5a3172275)
- Call ID: 5455247c-36a9-4868-b85a-54b5a3172275
-  Args:
-    source: Cecilie_of_Greece_and_Denmark
-    literal_type: xsd:date
-    relation: :hasDeathYear
-    literal_value: 1937-11-16
-  AssignClass (b92c9175-08bd-46ba-86ab-b4826e24df69)
- Call ID: b92c9175-08bd-46ba-86ab-b4826e24df69
-  Args:
-    source: Andrew_of_Greece_and_Denmark
+    source: Wilhelm_German_Crown_Prince
     type: :Man
-  AssignClass (236bb2d2-8154-4ef2-b425-a6237392d315)
- Call ID: 236bb2d2-8154-4ef2-b425-a6237392d315
+  AssignClass (acc644a1-ecf7-4637-95b2-5a12497f88bc)
+ Call ID: acc644a1-ecf7-4637-95b2-5a12497f88bc
   Args:
-    type: :Ancestor
-    source: Andrew_of_Greece_and_Denmark
-  AssignClass (904474ab-ad73-44b3-8776-7da2bfcda8b0)
- Call ID: 904474ab-ad73-44b3-8776-7da2bfcda8b0
+    source: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (8e86b250-87f6-4bd8-b97a-74ec8bf5a603)
+ Call ID: 8e86b250-87f6-4bd8-b97a-74ec8bf5a603
   Args:
-    source: Alice_of_Battenberg
     type: :Woman
-  AssignClass (d842d5e6-3676-48cd-82f1-d0c2c8e1d379)
- Call ID: d842d5e6-3676-48cd-82f1-d0c2c8e1d379
+    source: Anastasia_Mikhailovna_of_Russia
+  AssignClass (fd16e98a-190f-4bf0-8c9e-4ee6f5a76afb)
+ Call ID: fd16e98a-190f-4bf0-8c9e-4ee6f5a76afb
   Args:
-    type: :Ancestor
-    source: Alice_of_Battenberg
-  AddTriple (3b1ed375-5f3b-4f09-a985-2130a06d736b)
- Call ID: 3b1ed375-5f3b-4f09-a985-2130a06d736b
+    source: Wilhelm_II_German_Emperor
+    type: :Man
+  AssignClass (a3812d25-82f9-4b44-b247-1dd1865bcf06)
+ Call ID: a3812d25-82f9-4b44-b247-1dd1865bcf06
   Args:
-    source: Cecilie_of_Greece_and_Denmark
-    target: Andrew_of_Greece_and_Denmark
+    type: :Woman
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AssignClass (aaa37fb5-14ad-424b-93e3-2847401de8c7)
+ Call ID: aaa37fb5-14ad-424b-93e3-2847401de8c7
+  Args:
+    type: :Man
+    source: Christian_X_of_Denmark
+  AssignClass (a41a079b-094b-4bcd-b066-df573e51cb97)
+ Call ID: a41a079b-094b-4bcd-b066-df573e51cb97
+  Args:
+    source: Michael_Nikolaevich_of_Russia
+    type: :Man
+  AssignClass (7560e004-7962-43ec-b56d-518b18d38a6c)
+ Call ID: 7560e004-7962-43ec-b56d-518b18d38a6c
+  Args:
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (edc83785-38cf-4e25-98b7-ea25f7095dee)
+ Call ID: edc83785-38cf-4e25-98b7-ea25f7095dee
+  Args:
+    source: Dorothea_von_Salviati
+    type: :Woman
+  AssignClass (8ea94557-ff64-417e-a683-379c7806ad44)
+ Call ID: 8ea94557-ff64-417e-a683-379c7806ad44
+  Args:
+    source: Kira_Kirillovna_of_Russia
+    type: :Woman
+  AssignClass (41f61b73-048a-4c86-9866-88d43664f72a)
+ Call ID: 41f61b73-048a-4c86-9866-88d43664f72a
+  Args:
+    source: Cyril_Vladimirovich_of_Russia
+    type: :Man
+  AssignClass (f0d30844-c2b9-4e5b-a44b-742af0271ed4)
+ Call ID: f0d30844-c2b9-4e5b-a44b-742af0271ed4
+  Args:
+    source: Auguste_Viktoria
+    type: :Woman
+  AssignClass (5d53c9e3-ea5c-48a5-b0f3-f1021242ed32)
+ Call ID: 5d53c9e3-ea5c-48a5-b0f3-f1021242ed32
+  Args:
+    type: :Man
+    source: Hubertus_of_Prussia
+  AssignClass (1c409b77-1914-4892-bd6c-deee2a01aae5)
+ Call ID: 1c409b77-1914-4892-bd6c-deee2a01aae5
+  Args:
+    type: :Man
+    source: Louis_Ferdinand_of_Prussia
+  AssignClass (4eaa41e8-8b1b-4afd-9730-37d9169d8fd5)
+ Call ID: 4eaa41e8-8b1b-4afd-9730-37d9169d8fd5
+  Args:
+    source: Wilhelm_of_Prussia_son_of_Cecilie
+    type: :Man
+  AssignClass (5cb9abb6-c870-41d8-b965-da74364e2a49)
+ Call ID: 5cb9abb6-c870-41d8-b965-da74364e2a49
+  Args:
+    source: Frederick_of_Prussia
+    type: :Man
+  AssignClass (aab9245f-f304-4052-bd45-4c9105d81d11)
+ Call ID: aab9245f-f304-4052-bd45-4c9105d81d11
+  Args:
+    type: :Woman
+    source: Victoria_Marina_of_Prussia
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman .
+
+  data:Anastasia_Mikhailovna_of_Russia a :Woman .
+
+  data:Auguste_Viktoria a :Woman .
+
+  data:Cecilie_of_Mecklenburg-Schwerin a :Woman .
+
+  data:Christian_X_of_Denmark a :Man .
+
+  data:Cyril_Vladimirovich_of_Russia a :Man .
+
+  data:Dorothea_von_Salviati a :Woman .
+
+  data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man .
+
+  data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man .
+
+  data:Frederick_of_Prussia a :Man .
+
+  data:Hubertus_of_Prussia a :Man .
+
+  data:Kira_Kirillovna_of_Russia a :Woman .
+
+  data:Louis_Ferdinand_of_Prussia a :Man .
+
+  data:Michael_Nikolaevich_of_Russia a :Man .
+
+  data:Victoria_Marina_of_Prussia a :Woman .
+
+  data:Wilhelm_German_Crown_Prince a :Man .
+
+  data:Wilhelm_II_German_Emperor a :Man .
+
+  data:Wilhelm_of_Prussia_son_of_Cecilie a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (4cecfd85-d3c7-400a-a5d0-35b9de2a45f8)
+ Call ID: 4cecfd85-d3c7-400a-a5d0-35b9de2a45f8
+  Args:
+    target: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
     relation: :hasFather
-  AddTriple (254be1f4-93ff-45cd-8ebb-9d5a877a2001)
- Call ID: 254be1f4-93ff-45cd-8ebb-9d5a877a2001
+    source: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (c4f4e651-2d59-4a12-90ae-05c3802753f1)
+ Call ID: c4f4e651-2d59-4a12-90ae-05c3802753f1
   Args:
-    source: Cecilie_of_Greece_and_Denmark
+    target: Anastasia_Mikhailovna_of_Russia
     relation: :hasMother
-    target: Alice_of_Battenberg
-  AssignClass (53ad5b6e-86ea-415f-8696-bc378a8b4015)
- Call ID: 53ad5b6e-86ea-415f-8696-bc378a8b4015
+    source: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (90a60a57-4371-40e9-b2aa-c87bb94a3542)
+ Call ID: 90a60a57-4371-40e9-b2aa-c87bb94a3542
   Args:
-    type: :Man
-    source: Georg_Donatus_of_Hesse
-  AssignClass (6627262d-970a-4167-85ea-e68328471621)
- Call ID: 6627262d-970a-4167-85ea-e68328471621
+    target: Wilhelm_II_German_Emperor
+    source: Wilhelm_German_Crown_Prince
+    relation: :hasFather
+  AddTriple (e0843416-18de-4e53-b863-8a377052a82e)
+ Call ID: e0843416-18de-4e53-b863-8a377052a82e
   Args:
-    type: :Ancestor
-    source: Georg_Donatus_of_Hesse
-  AddLiteral (6bd5c477-3a4b-4170-a897-626f7cdea795)
- Call ID: 6bd5c477-3a4b-4170-a897-626f7cdea795
-  Args:
-    source: Cecilie_of_Greece_and_Denmark
-    relation: :hasMarriageYear
-    literal_type: xsd:date
-    literal_value: 1931-01-01
-  AddTriple (0af492a2-7f26-44c2-9524-d875026a4cc9)
- Call ID: 0af492a2-7f26-44c2-9524-d875026a4cc9
-  Args:
-    relation: :hasRelation
-    target: Georg_Donatus_of_Hesse
-    source: Cecilie_of_Greece_and_Denmark
-  AssignClass (de8f8d64-9720-4ddb-9dc5-2579b2791a14)
- Call ID: de8f8d64-9720-4ddb-9dc5-2579b2791a14
-  Args:
-    source: Philip_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (aee7aba6-8f42-4391-aff2-4c84e00cba01)
- Call ID: aee7aba6-8f42-4391-aff2-4c84e00cba01
-  Args:
-    source: Philip_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (0989bb6d-4b82-4cbc-9d20-318e9ea73c73)
- Call ID: 0989bb6d-4b82-4cbc-9d20-318e9ea73c73
-  Args:
-    source: Philip_of_Greece_and_Denmark
-    target: Cecilie_of_Greece_and_Denmark
+    source: Cecilie_of_Mecklenburg-Schwerin
     relation: :hasSister
-  AssignClass (25081a73-45df-430e-8d7f-f302460c34c6)
- Call ID: 25081a73-45df-430e-8d7f-f302460c34c6
+    target: Alexandrine_of_Mecklenburg-Schwerin
+  AddTriple (adc93623-29c7-464d-b1d3-2c530eaf2f0e)
+ Call ID: adc93623-29c7-464d-b1d3-2c530eaf2f0e
   Args:
-    type: :Woman
-    source: Margarita_of_Greece_and_Denmark
-  AssignClass (7edf7b52-8705-4222-b1a5-fcdbcdb9dd71)
- Call ID: 7edf7b52-8705-4222-b1a5-fcdbcdb9dd71
+    source: Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasBrother
+    target: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  AddTriple (c3c6964b-f7e6-4e0a-a635-84ba96041a52)
+ Call ID: c3c6964b-f7e6-4e0a-a635-84ba96041a52
   Args:
-    type: :Person
-    source: Margarita_of_Greece_and_Denmark
-  AddTriple (0acb87a1-adc8-43fa-8794-69e8e1cadcec)
- Call ID: 0acb87a1-adc8-43fa-8794-69e8e1cadcec
+    target: Anastasia_Mikhailovna_of_Russia
+    relation: :hasMother
+    source: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (ca0b4f14-a142-4673-b5df-40bd63e7f994)
+ Call ID: ca0b4f14-a142-4673-b5df-40bd63e7f994
   Args:
-    source: Margarita_of_Greece_and_Denmark
-    relation: :isSisterOf
-    target: Cecilie_of_Greece_and_Denmark
-  AssignClass (5fb608f6-902f-4923-a780-f0df088d66d8)
- Call ID: 5fb608f6-902f-4923-a780-f0df088d66d8
+    relation: :hasMother
+    source: Alexandrine_of_Mecklenburg-Schwerin
+    target: Anastasia_Mikhailovna_of_Russia
+  AddTriple (2b02a4f9-34e5-401e-a724-306e442cc682)
+ Call ID: 2b02a4f9-34e5-401e-a724-306e442cc682
   Args:
-    source: Theodora_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (73c8bd66-96a4-4b21-82d4-d07831194c75)
- Call ID: 73c8bd66-96a4-4b21-82d4-d07831194c75
+    relation: :hasFather
+    source: Alexandrine_of_Mecklenburg-Schwerin
+    target: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+  AddTriple (31f85582-567f-4a32-848e-1940aa510f46)
+ Call ID: 31f85582-567f-4a32-848e-1940aa510f46
   Args:
-    source: Theodora_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (34cb22b5-02c5-4e12-bf0f-c5fb16df11c9)
- Call ID: 34cb22b5-02c5-4e12-bf0f-c5fb16df11c9
+    target: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+    relation: :hasFather
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  AddTriple (a5131f17-565d-413f-97c7-80cf088af698)
+ Call ID: a5131f17-565d-413f-97c7-80cf088af698
   Args:
-    target: Cecilie_of_Greece_and_Denmark
-    relation: :isSisterOf
-    source: Theodora_of_Greece_and_Denmark
-  AssignClass (ced47995-cc17-4dca-bbdf-864c7c489262)
- Call ID: ced47995-cc17-4dca-bbdf-864c7c489262
+    target: Anastasia_Mikhailovna_of_Russia
+    relation: :hasMother
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  AddTriple (04c596eb-dc7d-4a7e-8cb2-723f7b1295fd)
+ Call ID: 04c596eb-dc7d-4a7e-8cb2-723f7b1295fd
   Args:
-    source: Sophie_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (7aaeb32a-5c5f-4c12-ab40-be579d6165e7)
- Call ID: 7aaeb32a-5c5f-4c12-ab40-be579d6165e7
+    source: Anastasia_Mikhailovna_of_Russia
+    relation: :hasFather
+    target: Michael_Nikolaevich_of_Russia
+  AddTriple (a85a151a-ee2e-47f5-b353-129a8cdd1ef5)
+ Call ID: a85a151a-ee2e-47f5-b353-129a8cdd1ef5
   Args:
-    source: Sophie_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (9697c41c-e506-4668-97cf-069e911625e2)
- Call ID: 9697c41c-e506-4668-97cf-069e911625e2
+    source: Wilhelm_of_Prussia_son_of_Cecilie
+    relation: :hasFather
+    target: Wilhelm_German_Crown_Prince
+  AddTriple (42243d1a-1d89-475f-8732-81e2509a4068)
+ Call ID: 42243d1a-1d89-475f-8732-81e2509a4068
   Args:
-    relation: :isSisterOf
-    target: Cecilie_of_Greece_and_Denmark
-    source: Sophie_of_Greece_and_Denmark
-  AssignClass (c8ba2e23-e560-49d1-9a9c-bf4ea8d67532)
- Call ID: c8ba2e23-e560-49d1-9a9c-bf4ea8d67532
+    target: Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasMother
+    source: Wilhelm_of_Prussia_son_of_Cecilie
+  AddTriple (591a0cc0-e663-4051-904c-2d53ccae3b24)
+ Call ID: 591a0cc0-e663-4051-904c-2d53ccae3b24
   Args:
-    type: :Man
-    source: Ludwig_of_Hesse
-  AssignClass (4269a554-c065-4825-959d-f611e70feb38)
- Call ID: 4269a554-c065-4825-959d-f611e70feb38
+    relation: :hasFather
+    source: Louis_Ferdinand_of_Prussia
+    target: Wilhelm_German_Crown_Prince
+  AddTriple (ae27d048-846e-4ef8-8ee9-4082f7fc44b5)
+ Call ID: ae27d048-846e-4ef8-8ee9-4082f7fc44b5
   Args:
-    type: :Person
-    source: Ludwig_of_Hesse
-  AddTriple (470e812a-7b92-4963-ab26-45a0580c3330)
- Call ID: 470e812a-7b92-4963-ab26-45a0580c3330
+    target: Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasMother
+    source: Louis_Ferdinand_of_Prussia
+  AddTriple (ceff3b79-8cb5-4a4c-8dfa-9e1c2da785cb)
+ Call ID: ceff3b79-8cb5-4a4c-8dfa-9e1c2da785cb
   Args:
-    relation: :isSonOf
-    target: Cecilie_of_Greece_and_Denmark
-    source: Ludwig_of_Hesse
-  AddTriple (be99c4a5-80cc-4c8b-86a8-4a718934350e)
- Call ID: be99c4a5-80cc-4c8b-86a8-4a718934350e
+    target: Wilhelm_German_Crown_Prince
+    source: Hubertus_of_Prussia
+    relation: :hasFather
+  AddTriple (ba8d2879-2aa0-4e9b-a82e-b00cca3f28ef)
+ Call ID: ba8d2879-2aa0-4e9b-a82e-b00cca3f28ef
   Args:
-    source: Ludwig_of_Hesse
-    target: Georg_Donatus_of_Hesse
-    relation: :isSonOf
-  AssignClass (26f33312-caf8-4935-9f21-3d8f3e1d1df9)
- Call ID: 26f33312-caf8-4935-9f21-3d8f3e1d1df9
+    target: Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasMother
+    source: Hubertus_of_Prussia
+  AddTriple (b777a64b-57ff-4ea5-b735-d4d98b36a2a9)
+ Call ID: b777a64b-57ff-4ea5-b735-d4d98b36a2a9
   Args:
-    type: :Man
-    source: Alexander_of_Hesse
-  AssignClass (659852ae-ac47-4ad3-9b9b-4c87de48dccb)
- Call ID: 659852ae-ac47-4ad3-9b9b-4c87de48dccb
+    source: Frederick_of_Prussia
+    relation: :hasFather
+    target: Wilhelm_German_Crown_Prince
+  AddTriple (dbcfd71d-e1de-49da-a70a-e9fa590d48b2)
+ Call ID: dbcfd71d-e1de-49da-a70a-e9fa590d48b2
   Args:
-    type: :Person
-    source: Alexander_of_Hesse
-  AddTriple (37ad49c4-a7cd-4694-b238-54a2925b7099)
- Call ID: 37ad49c4-a7cd-4694-b238-54a2925b7099
+    relation: :hasMother
+    source: Frederick_of_Prussia
+    target: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (88be5d10-f2f1-4094-ac6c-f525f8380893)
+ Call ID: 88be5d10-f2f1-4094-ac6c-f525f8380893
   Args:
-    source: Alexander_of_Hesse
-    target: Cecilie_of_Greece_and_Denmark
-    relation: :isSonOf
-  AddTriple (9cb6d166-bee4-493a-a9cb-d6fff404bc9d)
- Call ID: 9cb6d166-bee4-493a-a9cb-d6fff404bc9d
+    relation: :hasFather
+    source: Victoria_Marina_of_Prussia
+    target: Frederick_of_Prussia
+  AddTriple (beeb8f85-18a6-40f5-9f2e-ae49035b9831)
+ Call ID: beeb8f85-18a6-40f5-9f2e-ae49035b9831
   Args:
-    target: Georg_Donatus_of_Hesse
-    relation: :isSonOf
-    source: Alexander_of_Hesse
-  AssignClass (5ea0b6b2-a547-4b4b-bc30-bfd5e9037bde)
- Call ID: 5ea0b6b2-a547-4b4b-bc30-bfd5e9037bde
-  Args:
-    source: Johanna_of_Hesse
-    type: :Woman
-  AssignClass (d4aace3f-17e1-42c3-8c62-de9b9e2e1171)
- Call ID: d4aace3f-17e1-42c3-8c62-de9b9e2e1171
-  Args:
-    type: :Person
-    source: Johanna_of_Hesse
-  AddTriple (a3a7629f-bbe5-4295-9394-da130877e1b2)
- Call ID: a3a7629f-bbe5-4295-9394-da130877e1b2
-  Args:
-    source: Johanna_of_Hesse
-    relation: :isDaughterOf
-    target: Cecilie_of_Greece_and_Denmark
-  AddTriple (975fd5b4-126f-4a11-9e50-59185d620c42)
- Call ID: 975fd5b4-126f-4a11-9e50-59185d620c42
-  Args:
-    relation: :isDaughterOf
-    target: Georg_Donatus_of_Hesse
-    source: Johanna_of_Hesse
-  Finish (2a96bca1-cf85-449b-b5b7-29e5e4c815ee)
- Call ID: 2a96bca1-cf85-449b-b5b7-29e5e4c815ee
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: Cyril_Vladimirovich_of_Russia
+    source: Kira_Kirillovna_of_Russia
+    relation: :hasFather
 
 ================================= Tool Message =================================
 
@@ -881,58 +979,72 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Auguste_Viktoria a :Woman .
 
-  data:Johanna_of_Hesse a :Person,
-          :Woman ;
-      :isDaughterOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Christian_X_of_Denmark a :Man .
 
-  data:Ludwig_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Dorothea_von_Salviati a :Woman .
 
-  data:Margarita_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Hubertus_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Philip_of_Greece_and_Denmark a :Man,
-          :Person ;
-      :hasSister data:Cecilie_of_Greece_and_Denmark .
+  data:Kira_Kirillovna_of_Russia a :Woman ;
+      :hasFather data:Cyril_Vladimirovich_of_Russia .
 
-  data:Sophie_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Louis_Ferdinand_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Theodora_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Victoria_Marina_of_Prussia a :Woman ;
+      :hasFather data:Frederick_of_Prussia .
 
-  data:Alice_of_Battenberg a :Ancestor,
-          :Woman .
+  data:Wilhelm_of_Prussia_son_of_Cecilie a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Andrew_of_Greece_and_Denmark a :Ancestor,
-          :Man .
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia .
 
-  data:Georg_Donatus_of_Hesse a :Ancestor,
-          :Man .
+  data:Cyril_Vladimirovich_of_Russia a :Man .
 
-  data:Cecilie_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear "1911-06-22"^^xsd:date ;
-      :hasDeathYear "1937-11-16"^^xsd:date ;
-      :hasFather data:Andrew_of_Greece_and_Denmark ;
-      :hasMarriageYear "1931-01-01"^^xsd:date ;
-      :hasMother data:Alice_of_Battenberg ;
-      :hasRelation data:Georg_Donatus_of_Hesse .
+  data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+  data:Frederick_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+  data:Michael_Nikolaevich_of_Russia a :Man .
+
+  data:Wilhelm_II_German_Emperor a :Man .
+
+  data:Anastasia_Mikhailovna_of_Russia a :Woman ;
+      :hasFather data:Michael_Nikolaevich_of_Russia .
+
+  data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Man .
+
+  data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+      :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+      :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+
+  data:Wilhelm_German_Crown_Prince a :Man ;
+      :hasFather data:Wilhelm_II_German_Emperor .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (34cf516b-4c5a-4d23-aaf6-cbf1b5ecd253)
+ Call ID: 34cf516b-4c5a-4d23-aaf6-cbf1b5ecd253
+  Args:
 
 ================================= Tool Message =================================
 
@@ -942,86 +1054,446 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5ccd5729-7824-461b-a3d6-9bab225a1b2e)
- Call ID: 5ccd5729-7824-461b-a3d6-9bab225a1b2e
+  ValidateShacl (e60d5b43-a5f6-49f9-88eb-da677d326e22)
+ Call ID: e60d5b43-a5f6-49f9-88eb-da677d326e22
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:54
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Ludwig_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Alexander_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Ludwig_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Alexander_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Wilhelm_II_German_Emperor' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Johanna_of_Hesse' via the 'isDaughterOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Ludwig_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Alexander_of_Hesse' via the 'isSonOf' relationship, is not correctly identified as an 'Ancestor'.
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Johanna_of_Hesse' via the 'isDaughterOf' relationship, is not correctly identified as an 'Ancestor'.
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Greece_and_Denmark', which is the parent of 'Johanna_of_Hesse' via the 'isDaughterOf' relationship, is not correctly identified as an 'Ancestor'.
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_of_Prussia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_of_Prussia', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Michael_Nikolaevich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_Nikolaevich_of_Russia', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Cyril_Vladimirovich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cyril_Vladimirovich_of_Russia', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_II_German_Emperor' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_of_Prussia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_of_Prussia', class=':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Michael_Nikolaevich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_Nikolaevich_of_Russia', class=':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Cyril_Vladimirovich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cyril_Vladimirovich_of_Russia', class=':Ancestor')
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_German_Crown_Prince' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Wilhelm_II_German_Emperor' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Cecilie_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [46]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [47]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [48]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Michael_Nikolaevich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_Nikolaevich_of_Russia', class=':Ancestor')
+
+
+  Violation [49]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_of_Prussia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_of_Prussia', class=':Ancestor')
+
+
+  Violation [50]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [51]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Cyril_Vladimirovich_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cyril_Vladimirovich_of_Russia', class=':Ancestor')
+
+
+  Violation [52]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father node 'Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [53]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [54]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother node 'Anastasia_Mikhailovna_of_Russia' is missing the mandatory class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
 
 
 
@@ -1030,68 +1502,144 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (cabbd239-72a1-4fe4-9d71-e96129cea3e0)
- Call ID: cabbd239-72a1-4fe4-9d71-e96129cea3e0
+  AssignClass (af367eb9-2fb5-45f7-85de-71ed60313816)
+ Call ID: af367eb9-2fb5-45f7-85de-71ed60313816
   Args:
-    source: Cecilie_of_Greece_and_Denmark
+    source: Wilhelm_German_Crown_Prince
     type: :Ancestor
+  AssignClass (98f26ce6-b72b-4a24-b92e-ee6c141f491b)
+ Call ID: 98f26ce6-b72b-4a24-b92e-ee6c141f491b
+  Args:
+    type: :Ancestor
+    source: Wilhelm_II_German_Emperor
+  AssignClass (229bc408-a5f1-432c-8c9a-376a1963bb1c)
+ Call ID: 229bc408-a5f1-432c-8c9a-376a1963bb1c
+  Args:
+    type: :Ancestor
+    source: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+  AssignClass (2a37d228-45f5-42ea-8722-6773425965cf)
+ Call ID: 2a37d228-45f5-42ea-8722-6773425965cf
+  Args:
+    type: :Ancestor
+    source: Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (ba7a283a-776f-4195-8fb5-9a1f68f7a150)
+ Call ID: ba7a283a-776f-4195-8fb5-9a1f68f7a150
+  Args:
+    type: :Ancestor
+    source: Anastasia_Mikhailovna_of_Russia
+  AssignClass (9732d706-9f7b-47e7-90e8-efa618ff7ab8)
+ Call ID: 9732d706-9f7b-47e7-90e8-efa618ff7ab8
+  Args:
+    source: Frederick_of_Prussia
+    type: :Ancestor
+  AssignClass (2c5278ea-1c05-4c61-ad49-4200661d65d8)
+ Call ID: 2c5278ea-1c05-4c61-ad49-4200661d65d8
+  Args:
+    type: :Ancestor
+    source: Michael_Nikolaevich_of_Russia
+  AssignClass (bd7243ba-fb85-4ec4-82f8-3b3805712861)
+ Call ID: bd7243ba-fb85-4ec4-82f8-3b3805712861
+  Args:
+    type: :Ancestor
+    source: Cyril_Vladimirovich_of_Russia
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexander_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Auguste_Viktoria a :Woman .
 
-  data:Johanna_of_Hesse a :Person,
-          :Woman ;
-      :isDaughterOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Christian_X_of_Denmark a :Man .
 
-  data:Ludwig_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Cecilie_of_Greece_and_Denmark,
-          data:Georg_Donatus_of_Hesse .
+  data:Dorothea_von_Salviati a :Woman .
 
-  data:Margarita_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Hubertus_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Philip_of_Greece_and_Denmark a :Man,
-          :Person ;
-      :hasSister data:Cecilie_of_Greece_and_Denmark .
+  data:Kira_Kirillovna_of_Russia a :Woman ;
+      :hasFather data:Cyril_Vladimirovich_of_Russia .
 
-  data:Sophie_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Louis_Ferdinand_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Theodora_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isSisterOf data:Cecilie_of_Greece_and_Denmark .
+  data:Victoria_Marina_of_Prussia a :Woman ;
+      :hasFather data:Frederick_of_Prussia .
 
-  data:Alice_of_Battenberg a :Ancestor,
-          :Woman .
+  data:Wilhelm_of_Prussia_son_of_Cecilie a :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Andrew_of_Greece_and_Denmark a :Ancestor,
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+  data:Cyril_Vladimirovich_of_Russia a :Ancestor,
           :Man .
 
-  data:Georg_Donatus_of_Hesse a :Ancestor,
+  data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Man ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+  data:Frederick_of_Prussia a :Ancestor,
+          :Man ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
+
+  data:Michael_Nikolaevich_of_Russia a :Ancestor,
           :Man .
 
-  data:Cecilie_of_Greece_and_Denmark a :Ancestor,
-          :Person,
+  data:Wilhelm_II_German_Emperor a :Ancestor,
+          :Man .
+
+  data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
           :Woman ;
-      :hasBirthYear "1911-06-22"^^xsd:date ;
-      :hasDeathYear "1937-11-16"^^xsd:date ;
-      :hasFather data:Andrew_of_Greece_and_Denmark ;
-      :hasMarriageYear "1931-01-01"^^xsd:date ;
-      :hasMother data:Alice_of_Battenberg ;
-      :hasRelation data:Georg_Donatus_of_Hesse .
+      :hasFather data:Michael_Nikolaevich_of_Russia .
+
+  data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man .
+
+  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+          :Woman ;
+      :hasBrother data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+      :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+
+  data:Wilhelm_German_Crown_Prince a :Ancestor,
+          :Man ;
+      :hasFather data:Wilhelm_II_German_Emperor .
 
 
 
@@ -1099,8 +1647,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (4b33c5eb-aace-41d8-b16e-2bf52af2d01b)
- Call ID: 4b33c5eb-aace-41d8-b16e-2bf52af2d01b
+  ValidateShacl (ba2f27a6-ea35-468f-b06b-13a9aa2256f3)
+ Call ID: ba2f27a6-ea35-468f-b06b-13a9aa2256f3
   Args:
 
 ================================= Tool Message =================================
@@ -1111,6 +1659,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (238f2dc9-6e71-4dab-a4be-c1baf06424ae)
- Call ID: 238f2dc9-6e71-4dab-a4be-c1baf06424ae
+  Finish (ae9bc6b5-5387-4a77-8216-a6cdff53eb36)
+ Call ID: ae9bc6b5-5387-4a77-8216-a6cdff53eb36
   Args:

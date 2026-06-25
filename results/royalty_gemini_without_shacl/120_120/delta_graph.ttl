@@ -5,44 +5,38 @@
 data:Sigismund a :Man,
         :Person ;
     :hasBirthYear 1966 ;
-    :hasFather data:Leopoldo_Franz ;
+    :hasFather data:LeopoldoFranz ;
     :hasMarriageYear 1999 ;
-    :hasMother data:Laetitia_d_Arenberg ;
-    :hasRelation data:Elyssa_Edmonstone .
+    :hasMother data:LaetitiaDArenberg ;
+    :hasRelation data:ElyssaEdmonstone .
 
-data:Archibald_Bruce_Edmonstone a :Ancestor,
-        :Man,
+data:ArchibaldBruceEdmonstone a :Man,
         :Person .
 
-data:Elyssa_Edmonstone a :Person,
+data:ElyssaEdmonstone a :Person,
         :Woman ;
     :hasBirthYear 1973 ;
-    :hasFather data:Archibald_Bruce_Edmonstone ;
-    :hasMother data:Julieta_Isabel_Deakin .
+    :hasFather data:ArchibaldBruceEdmonstone ;
+    :hasMother data:JulietaIsabelDeakin .
 
-data:Ferdinand_IV a :Ancestor,
-        :Man,
+data:FerdinandIV a :Man,
         :Person .
 
-data:Gottfried_of_Austria a :Ancestor,
-        :Man,
+data:Gottfried a :Man,
         :Person .
 
-data:Julieta_Isabel_Deakin a :Ancestor,
-        :Person,
+data:JulietaIsabelDeakin a :Person,
         :Woman ;
-    :hasFather data:Peter_Deakin .
+    :hasFather data:PeterDeakin .
 
-data:Laetitia_d_Arenberg a :Person,
+data:LaetitiaDArenberg a :Person,
         :Woman .
 
-data:Leopoldo_Franz a :Ancestor,
-        :Man,
+data:LeopoldoFranz a :Man,
         :Person ;
-    :hasAncestor data:Ferdinand_IV ;
-    :hasFather data:Gottfried_of_Austria .
+    :hasAncestor data:FerdinandIV ;
+    :hasFather data:Gottfried .
 
-data:Peter_Deakin a :Ancestor,
-        :Man,
+data:PeterDeakin a :Man,
         :Person .
 

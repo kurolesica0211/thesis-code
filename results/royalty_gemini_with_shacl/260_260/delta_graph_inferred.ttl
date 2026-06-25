@@ -1,0 +1,234 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :hasRelation data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBloodrelationOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isBrotherOf data:Alexander_Crown_Prince_of_Yugoslavia ;
+    :isSiblingOf data:Alexander_Crown_Prince_of_Yugoslavia .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:King_Paul_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasRelation data:King_Paul_of_Greece ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isSiblingOf data:King_Paul_of_Greece .
+
+data:King_Simeon_of_Bulgaria a :Man,
+        :Person ;
+    :hasBrother data:King_Simeon_of_Bulgaria ;
+    :hasRelation data:King_Simeon_of_Bulgaria ;
+    :isBloodrelationOf data:King_Simeon_of_Bulgaria ;
+    :isBrotherOf data:King_Simeon_of_Bulgaria ;
+    :isSiblingOf data:King_Simeon_of_Bulgaria .
+
+data:Prince_Andrew_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Yugoslavia ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Andrew_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Andrew_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Andrew_of_Yugoslavia .
+
+data:Princess_Beatrix_of_Hohenlohe_Langenburg a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isSiblingOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isSisterOf data:Princess_Beatrix_of_Hohenlohe_Langenburg .
+
+data:Princess_Christina_of_Hesse a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Christina_of_Hesse ;
+    :hasSister data:Princess_Christina_of_Hesse ;
+    :isBloodrelationOf data:Princess_Christina_of_Hesse ;
+    :isSiblingOf data:Princess_Christina_of_Hesse ;
+    :isSisterOf data:Princess_Christina_of_Hesse .
+
+data:Queen_Anne_Marie_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Anne_Marie_of_Greece ;
+    :hasSister data:Queen_Anne_Marie_of_Greece ;
+    :isBloodrelationOf data:Queen_Anne_Marie_of_Greece ;
+    :isSiblingOf data:Queen_Anne_Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne_Marie_of_Greece .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Queen_Frederica_of_Greece a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Frederica_of_Greece ;
+    :hasSister data:Queen_Frederica_of_Greece ;
+    :isBloodrelationOf data:Queen_Frederica_of_Greece ;
+    :isSiblingOf data:Queen_Frederica_of_Greece ;
+    :isSisterOf data:Queen_Frederica_of_Greece .
+
+data:King_Peter_II_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia .
+
+data:Prince_Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasBrother data:Prince_Maximilian_of_Baden ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Margarita_of_Baden .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    :hasBrother data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Tomislav_of_Yugoslavia .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold_Margrave_of_Baden ;
+    :hasChild data:Princess_Margarita_of_Baden ;
+    :hasDaughter data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Berthold_Margrave_of_Baden ;
+    :isBrotherOf data:Berthold_Margrave_of_Baden ;
+    :isFatherOf data:Princess_Margarita_of_Baden ;
+    :isParentOf data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Berthold_Margrave_of_Baden ;
+    :isUncleOf data:Princess_Margarita_of_Baden .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:Princess_Margarita_of_Baden ;
+    :hasDaughter data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Margarita_of_Baden ;
+    :isAuntOf data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Margarita_of_Baden ;
+    :isParentOf data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasAncestor data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasBirthYear 1932 ;
+    :hasBrother data:Prince_Maximilian_of_Baden ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Berthold_Margrave_of_Baden,
+        data:King_Peter_II_of_Yugoslavia,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden ;
+    :isChildOf data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isDaughterOf data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Prince_Maximilian_of_Baden,
+        data:Princess_Margarita_of_Baden .
+

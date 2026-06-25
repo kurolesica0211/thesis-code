@@ -1,0 +1,185 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "476:488"^^xsd:string,
+        "785:797"^^xsd:string ;
+    data:posIndicesPart "854:861"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII .
+
+data:Infante_Alfonso_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Infante Alfonso of Spain"^^xsd:string ;
+    data:posIndicesFull "0:24"^^xsd:string ;
+    data:posIndicesPart "367:372"^^xsd:string,
+        "374:381"^^xsd:string,
+        "498:503"^^xsd:string,
+        "590:597"^^xsd:string,
+        "773:780"^^xsd:string,
+        "854:861"^^xsd:string ;
+    data:wdtLink wdt:Q704310 ;
+    :alsoKnownAs "Alfonso Cristino de Borbón y Borbón"^^xsd:string ;
+    :hasBrother data:Infante_Alfonso_of_Spain ;
+    :hasRelation data:Infante_Alfonso_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Alfonso_of_Spain ;
+    :isBrotherOf data:Infante_Alfonso_of_Spain ;
+    :isSiblingOf data:Infante_Alfonso_of_Spain .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
+        :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo"^^xsd:string ;
+    data:posIndicesFull "526:530"^^xsd:string ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime"^^xsd:string,
+        "Jaime de Borbón y Landaluce"^^xsd:string,
+        "Jaime di Borbone-Due Sicilie"^^xsd:string ;
+    :hasBrother data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasRelation data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isBrotherOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo .
+
+data:male a :Male .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria"^^xsd:string ;
+    data:posIndicesFull "870:901"^^xsd:string ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma"^^xsd:string,
+        "Princess Alicia of Bourbon-Parma"^^xsd:string ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAuntOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isMotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia-_Duchess_of_Calabria .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "María de las Mercedes, Princess of Asturias"^^xsd:string ;
+    data:posIndicesFull "290:333"^^xsd:string,
+        "395:438"^^xsd:string ;
+    data:posIndicesPart "541:549"^^xsd:string,
+        "557:565"^^xsd:string,
+        "708:716"^^xsd:string ;
+    data:wdtLink wdt:Q129179 ;
+    :alsoKnownAs "María de las Mercedes of Spain"^^xsd:string ;
+    :hasChild data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:female ;
+    :hasSister data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSon data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAuntOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isBloodrelationOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isMotherOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSiblingOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSisterOf data:María_de_las_Mercedes-_Princess_of_Asturias .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Alfonso, Duke of Calabria"^^xsd:string ;
+    data:wdtLink wdt:Q1333222 ;
+    :hasAncestor data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasBrother data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasMother data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isChildOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isFatherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSonOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isUncleOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "248:285"^^xsd:string,
+        "255:285"^^xsd:string ;
+    data:posIndicesPart "590:597"^^xsd:string,
+        "953:957"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasFather data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSonOf data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria .
+

@@ -2,24 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,
+data:Michael_I a :Man,
         :Person ;
-    :hasBirthYear 1970 ;
-    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
-    :hasMarriageYear 2003 ;
-    :hasMother data:Princess_Charlotte_of_Croy ;
-    :hasRelation data:Saskia_Binder .
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasRelation data:Anne_of_Bourbon-Parma .
 
-data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man,
+data:Anne_of_Bourbon-Parma a :Person,
+        :Woman .
+
+data:Constantine_I a :Man,
+        :Person .
+
+data:Elena_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:Constantine_I .
+
+data:Ferdinand_I a :Man,
+        :Person .
+
+data:Prince_Nicolae a :Man,
         :Person ;
-    :hasBirthYear 1935 ;
-    :hasDeathYear 2004 .
+    :hasBrother data:Carol_II .
 
-data:Princess_Charlotte_of_Croy a :Person,
-        :Woman ;
-    :hasBirthYear 1938 .
-
-data:Saskia_Binder a :Person,
-        :Woman ;
-    :hasBirthYear 1973 .
+data:Carol_II a :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicolae ;
+    :hasFather data:Ferdinand_I .
 

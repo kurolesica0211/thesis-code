@@ -1,0 +1,531 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Louis_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Louis_of_Hesse ;
+    :hasRelation data:Louis_of_Hesse,
+        data:Margaret_Campbell_Geddes ;
+    :isBloodrelationOf data:Louis_of_Hesse ;
+    :isBrotherOf data:Louis_of_Hesse ;
+    :isSiblingOf data:Louis_of_Hesse .
+
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman ;
+    :hasRelation data:Louis_of_Hesse,
+        data:Margaret_Campbell_Geddes ;
+    :hasSister data:Margaret_Campbell_Geddes ;
+    :isBloodrelationOf data:Margaret_Campbell_Geddes ;
+    :isSiblingOf data:Margaret_Campbell_Geddes ;
+    :isSisterOf data:Margaret_Campbell_Geddes .
+
+data:Georg_Donatus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Georg_Donatus ;
+    :hasChild data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :hasDaughter data:Johanna_of_Hesse ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isAncestorOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBloodrelationOf data:Georg_Donatus ;
+    :isBrotherOf data:Georg_Donatus ;
+    :isFatherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isParentOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isSiblingOf data:Georg_Donatus ;
+    :isUncleOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse .
+
+data:Alexander_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Johanna_of_Hesse ;
+    :isBloodrelationOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBrotherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isChildOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :isSiblingOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isSonOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus .
+
+data:Johanna_of_Hesse a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Johanna_of_Hesse ;
+    :isBloodrelationOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isChildOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :isDaughterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :isSiblingOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isSisterOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse .
+
+data:Ludwig_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Johanna_of_Hesse ;
+    :isBloodrelationOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBrotherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isChildOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus ;
+    :isSiblingOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isSonOf data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasDaughter data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isParentOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Prince_Philip a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :hasDaughter data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isParentOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Cecilie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :hasDaughter data:Johanna_of_Hesse ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Alexander_of_Hesse,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Georg_Donatus,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse,
+        data:Margarita,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isAncestorOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isAuntOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isParentOf data:Alexander_of_Hesse,
+        data:Johanna_of_Hesse,
+        data:Ludwig_of_Hesse ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+

@@ -2,33 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Waldemar_of_Prussia a :Man,
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
         :Person ;
-    :hasBirthYear 1889 ;
-    :hasDeathYear 1945 ;
-    :hasFather data:Prince_Henry_of_Prussia ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
-    :hasRelation data:Princess_Calixta_of_Lippe ;
-    :hasSex data:Male .
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 2019 ;
+    :hasFather data:Prince_Harry_Duke_of_Sussex ;
+    :hasMother data:Meghan_Duchess_of_Sussex .
 
-data:Prince_Henry_of_Prussia a :Ancestor,
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Meghan_Duchess_of_Sussex a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Harry_Duke_of_Sussex a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:King_Charles_III .
 
-data:Princess_Calixta_of_Lippe a :Person,
-        :Woman ;
-    :hasBirthYear 1895 ;
-    :hasDeathYear 1982 ;
-    :hasSex data:Female .
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person .
 
-data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+data:Queen_Elizabeth_II a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+        :Woman .
 

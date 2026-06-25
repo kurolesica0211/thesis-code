@@ -85,28 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Friedrich Wilhelm of Lippe (German: Friedrich Wilhelm Ernst Viktor Alexander Prinz zur Lippe; born 7 September 1947) is a claimant to the headship of the House of Lippe.
-Early life
+The Dowager Princess Napoléon
 
-Friedrich Wilhelm was born out of wedlock at Neuwied, West Germany, the first child of Prince Ernst August of Lippe (1917–1990; son of Prince Julius Ernst of Lippe and Duchess Marie of Mecklenburg-Strelitz) and his wife, Christa von Arnim (b. 1923; daughter of Curt David von Arnim and his wife, Stephanie von Stechow).
-Marriage
 
-Friedrich Wilhelm married on 18 September 1991 in Munich to Andrea Messner (b. 1966), daughter of Günther Messner, and his wife, Lieselotte Trzoska.
-House of Lippe
+Olympia Bonaparte, Princess Napoléon (Olympia Elene Marie; née Countess Olympia von und zu Arco-Zinneberg, born 4 January 1988), is the wife of Jean-Christophe, Prince Napoléon, the disputed head of the House of Bonaparte and, in the view of Bonapartists, the pretender to the abolished French imperial throne.
+Early life and family
 
-On 30 December 1949 his father's first cousin Prince Armin succeeded his father, Leopold IV as head of the House of Lippe.
-On 22 March 1953, he renounced his position in favour of his older half-brother, Prince Leopold.
-Prince Leopold later in 1958 renounced the headship in favour of his older brother, Hereditary Prince Ernst.
-Later in that year the Hereditary Prince called a family council where it was agreed by the princes in attendance that the oldest prince living in Germany would be head of the house.
-Therefore, the position went to Prince Simon Casimir (1900–1980).
-His father died in 1990 and Friedrich Wilhelm continued the claim, despite his illegitimate birth.
-Prince Armin, who has said he did not think his decision in 1953 was irrevocable, also claimed to be head of the house until his death in 2015, with his son Stephan, Prince of Lippe continuing his claim.
+Countess Olympia Elene Marie von und zu Arco-Zinneberg was born on 4 January 1988 in Munich to Count Riprand von und zu Arco-Zinneberg (1955-2021) and his wife, Archduchess Maria Beatrice of Austria-Este.
+Through her father she is a great-great-granddaughter of Ludwig III and Maria Theresa of Austria-Este, the last king and queen of Bavaria.
+Through her mother she is the granddaughter of Robert, Archduke of Austria-Este and Princess Margherita of Savoy-Aosta.
+She is a great-granddaughter of Charles I and Zita of Bourbon-Parma, the last emperor and empress of Austria.
+Olympia is also the great-great-great-great-grandniece of Marie Louise, Duchess of Parma, the second wife of Napoleon I.
+
+
+Personal life
+
+Olympia graduated from Yale University with a bachelor's degree in political science and from Columbia University in 2015 with a Master of Arts degree in art history.
+She met Jean-Christophe, Prince Napoléon during a semester studying abroad in Paris.
+Olympia and Jean-Christophe first held a civil marriage on 17 October 2019 at the town hall of Neuilly-sur-Seine.
+The wedding festivities were attended by members of European royal and noble families including Henri, Grand Duke of Luxembourg; Guillaume, Hereditary Grand Duke of Luxembourg; Stéphanie, Hereditary Grand Duchess of Luxembourg; Princess Maria Laura of Belgium, Archduchess of Austria-Este; Pavlos, Crown Prince of Greece; Princess Maria-Olympia of Greece and Denmark; Prince Philippos of Greece and Denmark; Nina Flohr; Prince Félix of Luxembourg; Princess Claire of Luxembourg; Prince Christian of Hanover; Princess Christian of Hanover; Princess Beatrice of York; and Edoardo Mapelli Mozzi.
+The Princess gave birth to a son, Louis Charles Riprand Victor Jérôme Marie, on 7 December 2022 in Paris.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +128,9 @@ Prince Armin, who has said he did not think his decision in 1953 was irrevocable
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +145,23 @@ Prince Armin, who has said he did not think his decision in 1953 was irrevocable
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,363 +453,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0ee362c1-202b-4e7b-8052-fabd98e247c5)
- Call ID: 0ee362c1-202b-4e7b-8052-fabd98e247c5
+  AssignClass (dae07cd2-7dea-4653-9943-c3e88af29879)
+ Call ID: dae07cd2-7dea-4653-9943-c3e88af29879
   Args:
-    type: :Man
-    source: Friedrich_Wilhelm_of_Lippe
-  AssignClass (f093fa69-ed4a-473a-ba6e-e6cf82d79ffb)
- Call ID: f093fa69-ed4a-473a-ba6e-e6cf82d79ffb
+    source: OlympiaBonaparte
+    type: :Woman
+  AssignClass (fe04bc32-24a0-45dd-9676-7a8e37c49a84)
+ Call ID: fe04bc32-24a0-45dd-9676-7a8e37c49a84
   Args:
     type: :Person
-    source: Friedrich_Wilhelm_of_Lippe
-  AddLiteral (ec6daa66-751c-4601-b987-29046d156811)
- Call ID: ec6daa66-751c-4601-b987-29046d156811
+    source: OlympiaBonaparte
+  AddLiteral (e10f65c2-fb93-461d-bf60-50763a39c8f1)
+ Call ID: e10f65c2-fb93-461d-bf60-50763a39c8f1
   Args:
-    literal_type: xsd:positiveInteger
     relation: :hasBirthYear
-    literal_value: 1947
-    source: Friedrich_Wilhelm_of_Lippe
-  AddTriple (d97bcc6d-24b1-4696-9537-dd9aef69fb29)
- Call ID: d97bcc6d-24b1-4696-9537-dd9aef69fb29
+    source: OlympiaBonaparte
+    literal_value: 1988
+    literal_type: xsd:integer
+  AssignClass (46ba78ac-5dc3-4cb5-92a7-6940515ca829)
+ Call ID: 46ba78ac-5dc3-4cb5-92a7-6940515ca829
   Args:
-    relation: :hasSex
-    target: :Male
-    source: Friedrich_Wilhelm_of_Lippe
-  AssignClass (dc156c1c-ad38-40d3-8be0-0fb8f3cc62ad)
- Call ID: dc156c1c-ad38-40d3-8be0-0fb8f3cc62ad
+    source: Jean-ChristophePrinceNapoleon
+    type: :Man
+  AssignClass (3f2bc3f5-feac-47f8-ae24-7283db4d4ca6)
+ Call ID: 3f2bc3f5-feac-47f8-ae24-7283db4d4ca6
+  Args:
+    type: :Person
+    source: Jean-ChristophePrinceNapoleon
+  AssignClass (77604cc0-0a19-4107-bb8b-01edcd8e4f75)
+ Call ID: 77604cc0-0a19-4107-bb8b-01edcd8e4f75
   Args:
     type: :Man
-    source: Ernst_August_of_Lippe
-  AssignClass (0f6bca9b-0496-4d88-9d3e-c0e502b28c42)
- Call ID: 0f6bca9b-0496-4d88-9d3e-c0e502b28c42
+    source: RiprandVonUndZuArco-Zinneberg
+  AssignClass (be7fba1a-9ee2-4d83-8664-cd10e21cd0d9)
+ Call ID: be7fba1a-9ee2-4d83-8664-cd10e21cd0d9
   Args:
-    source: Ernst_August_of_Lippe
     type: :Person
-  AddTriple (265f5bb2-6ff3-41ea-8463-df2afcf5366a)
- Call ID: 265f5bb2-6ff3-41ea-8463-df2afcf5366a
+    source: RiprandVonUndZuArco-Zinneberg
+  AddLiteral (abd045bd-028b-47f5-8a36-c38a1d02ce1a)
+ Call ID: abd045bd-028b-47f5-8a36-c38a1d02ce1a
   Args:
-    source: Ernst_August_of_Lippe
-    target: :Friedrich_Wilhelm_of_Lippe
-    relation: :hasSon
-  AssignClass (a9ddabf2-524f-4883-bf6f-1501f4902160)
- Call ID: a9ddabf2-524f-4883-bf6f-1501f4902160
+    source: RiprandVonUndZuArco-Zinneberg
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1955
+  AddLiteral (efa1b13f-84ae-4fcd-82ad-af849b918525)
+ Call ID: efa1b13f-84ae-4fcd-82ad-af849b918525
   Args:
-    source: Christa_von_Arnim
+    source: RiprandVonUndZuArco-Zinneberg
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2021
+  AssignClass (6f76f35f-e7af-4d47-a433-fd61fa07f9c7)
+ Call ID: 6f76f35f-e7af-4d47-a433-fd61fa07f9c7
+  Args:
     type: :Woman
-  AssignClass (51c11861-2771-4bb9-94eb-c00e03fb4e85)
- Call ID: 51c11861-2771-4bb9-94eb-c00e03fb4e85
-  Args:
-    source: Christa_von_Arnim
-    type: :Person
-  AddTriple (28fe1ce0-0a15-445c-8860-2a58110bdbe9)
- Call ID: 28fe1ce0-0a15-445c-8860-2a58110bdbe9
-  Args:
-    source: Friedrich_Wilhelm_of_Lippe
-    relation: :hasMother
-    target: :Christa_von_Arnim
-  AssignClass (a264b522-0af2-49c4-bf6e-77b3464cdaeb)
- Call ID: a264b522-0af2-49c4-bf6e-77b3464cdaeb
-  Args:
-    type: :Man
-    source: Julius_Ernst_of_Lippe
-  AssignClass (dcb25625-c59e-4ba9-99aa-09df542185cb)
- Call ID: dcb25625-c59e-4ba9-99aa-09df542185cb
-  Args:
-    source: Julius_Ernst_of_Lippe
-    type: :Person
-  AddTriple (7d578618-18ad-46f3-a623-736d39003eef)
- Call ID: 7d578618-18ad-46f3-a623-736d39003eef
-  Args:
-    source: Julius_Ernst_of_Lippe
-    relation: :hasSon
-    target: :Ernst_August_of_Lippe
-  AssignClass (4465ded1-b5c9-497b-8695-38cefc3d525c)
- Call ID: 4465ded1-b5c9-497b-8695-38cefc3d525c
-  Args:
-    source: Marie_of_Mecklenburg_Strelitz
-    type: :Woman
-  AssignClass (a1e2c8d0-cf42-48c9-adbe-ccda80267c67)
- Call ID: a1e2c8d0-cf42-48c9-adbe-ccda80267c67
+    source: MariaBeatriceOfAustria-Este
+  AssignClass (336d41c5-e534-4366-a5b6-7b51988eb709)
+ Call ID: 336d41c5-e534-4366-a5b6-7b51988eb709
   Args:
     type: :Person
-    source: Marie_of_Mecklenburg_Strelitz
-  AddTriple (0058e9c6-f9c0-4623-a4f3-bf091e95832e)
- Call ID: 0058e9c6-f9c0-4623-a4f3-bf091e95832e
+    source: MariaBeatriceOfAustria-Este
+  AddTriple (dedbb655-7e0f-4cb9-9476-d313b326b9a6)
+ Call ID: dedbb655-7e0f-4cb9-9476-d313b326b9a6
   Args:
-    source: Ernst_August_of_Lippe
-    target: :Marie_of_Mecklenburg_Strelitz
-    relation: :hasMother
-  AssignClass (fcca4d42-7953-480a-88ae-9c4f5ccea8dd)
- Call ID: fcca4d42-7953-480a-88ae-9c4f5ccea8dd
-  Args:
-    source: Curt_David_von_Arnim
-    type: :Man
-  AssignClass (daa64179-c805-4054-a7a1-ca84b52e6e55)
- Call ID: daa64179-c805-4054-a7a1-ca84b52e6e55
-  Args:
-    type: :Person
-    source: Curt_David_von_Arnim
-  AddTriple (2e774a73-95b6-474c-8765-6d765ac35b9d)
- Call ID: 2e774a73-95b6-474c-8765-6d765ac35b9d
-  Args:
+    target: RiprandVonUndZuArco-Zinneberg
     relation: :hasFather
-    target: :Curt_David_von_Arnim
-    source: Christa_von_Arnim
-  AssignClass (3f06f714-2358-4370-b441-a0906d1b261b)
- Call ID: 3f06f714-2358-4370-b441-a0906d1b261b
-  Args:
-    type: :Woman
-    source: Stephanie_von_Stechow
-  AssignClass (12ecec56-b93f-4a3a-8739-8633bf73e30c)
- Call ID: 12ecec56-b93f-4a3a-8739-8633bf73e30c
-  Args:
-    type: :Person
-    source: Stephanie_von_Stechow
-  AddTriple (9e92a572-426b-4f3e-aea2-6602bcc211ec)
- Call ID: 9e92a572-426b-4f3e-aea2-6602bcc211ec
+    source: OlympiaBonaparte
+  AddTriple (c045d644-baf2-4360-aa15-da311e79c8ff)
+ Call ID: c045d644-baf2-4360-aa15-da311e79c8ff
   Args:
     relation: :hasMother
-    target: :Stephanie_von_Stechow
-    source: Christa_von_Arnim
-  AssignClass (9d625588-cf8e-40aa-a307-6f4a5a156f46)
- Call ID: 9d625588-cf8e-40aa-a307-6f4a5a156f46
+    source: OlympiaBonaparte
+    target: MariaBeatriceOfAustria-Este
+  AddTriple (40322221-5a3b-4ead-9f83-1d3a4279b75a)
+ Call ID: 40322221-5a3b-4ead-9f83-1d3a4279b75a
   Args:
-    source: Andrea_Messner
-    type: :Woman
-  AssignClass (5fc84c9d-63dd-4720-b836-ba644310be1e)
- Call ID: 5fc84c9d-63dd-4720-b836-ba644310be1e
-  Args:
-    type: :Person
-    source: Andrea_Messner
-  AddTriple (fd7ae2d2-0592-4d82-b5dc-1682fbc8dbe4)
- Call ID: fd7ae2d2-0592-4d82-b5dc-1682fbc8dbe4
-  Args:
-    relation: :hasRelation
-    target: :Andrea_Messner
-    source: Friedrich_Wilhelm_of_Lippe
-  AddLiteral (2857a03c-916c-47f9-9efe-3381cbcebd0c)
- Call ID: 2857a03c-916c-47f9-9efe-3381cbcebd0c
-  Args:
-    source: Friedrich_Wilhelm_of_Lippe
-    literal_value: 1991
+    target: Jean-ChristophePrinceNapoleon
     relation: :hasMarriageYear
-    literal_type: xsd:positiveInteger
-  AssignClass (d281631d-9854-481a-a2f4-62e1e2ec83d5)
- Call ID: d281631d-9854-481a-a2f4-62e1e2ec83d5
+    source: OlympiaBonaparte
+  AddLiteral (46ba00ca-9086-47d3-ab62-5e5c54891ab6)
+ Call ID: 46ba00ca-9086-47d3-ab62-5e5c54891ab6
+  Args:
+    literal_value: 2019
+    literal_type: xsd:integer
+    source: OlympiaBonaparte
+    relation: :hasMarriageYear
+  AssignClass (395d395f-2286-462a-9d10-6de9bfb61274)
+ Call ID: 395d395f-2286-462a-9d10-6de9bfb61274
   Args:
     type: :Man
-    source: Günther_Messner
-  AssignClass (e3f83c41-33b0-4ed5-848d-5b7e6fc4b854)
- Call ID: e3f83c41-33b0-4ed5-848d-5b7e6fc4b854
+    source: LouisCharlesRiprandVictorJeromeMarie
+  AssignClass (9f88f47f-169b-48cf-bb9c-43780711119b)
+ Call ID: 9f88f47f-169b-48cf-bb9c-43780711119b
   Args:
     type: :Person
-    source: Günther_Messner
-  AddTriple (9e78bb87-3177-4603-b3ea-2492f63d415e)
- Call ID: 9e78bb87-3177-4603-b3ea-2492f63d415e
+    source: LouisCharlesRiprandVictorJeromeMarie
+  AddTriple (13791255-d9a5-4da0-bb85-e65d8c5440a2)
+ Call ID: 13791255-d9a5-4da0-bb85-e65d8c5440a2
   Args:
+    source: LouisCharlesRiprandVictorJeromeMarie
     relation: :hasFather
-    target: :Günther_Messner
-    source: Andrea_Messner
-  AssignClass (47d9470e-ce55-41b0-a7ea-2cd85bad3de2)
- Call ID: 47d9470e-ce55-41b0-a7ea-2cd85bad3de2
+    target: Jean-ChristophePrinceNapoleon
+  AddTriple (f09479e8-b6b2-4094-912b-75423a68c064)
+ Call ID: f09479e8-b6b2-4094-912b-75423a68c064
   Args:
-    source: Lieselotte_Trzoska
-    type: :Woman
-  AssignClass (a03f41ff-229e-4e3d-bda4-0bb9248b51c9)
- Call ID: a03f41ff-229e-4e3d-bda4-0bb9248b51c9
-  Args:
-    type: :Person
-    source: Lieselotte_Trzoska
-  AddTriple (82a402fb-a2a3-4466-bdbd-92f7c6aebf59)
- Call ID: 82a402fb-a2a3-4466-bdbd-92f7c6aebf59
-  Args:
-    source: Andrea_Messner
     relation: :hasMother
-    target: :Lieselotte_Trzoska
-  AssignClass (baadeb12-bf11-4df1-93ba-b56f3b22386c)
- Call ID: baadeb12-bf11-4df1-93ba-b56f3b22386c
+    source: LouisCharlesRiprandVictorJeromeMarie
+    target: OlympiaBonaparte
+  Finish (4b6a1829-3f9e-409d-b233-2fd4f2b93b26)
+ Call ID: 4b6a1829-3f9e-409d-b233-2fd4f2b93b26
   Args:
-    type: :Man
-    source: Armin_of_Lippe
-  AssignClass (1e48cec2-3f80-4484-b120-9d78228b97ed)
- Call ID: 1e48cec2-3f80-4484-b120-9d78228b97ed
-  Args:
-    source: Armin_of_Lippe
-    type: :Person
-  AssignClass (227d63ce-7732-4c1b-97ec-7e563466b998)
- Call ID: 227d63ce-7732-4c1b-97ec-7e563466b998
-  Args:
-    type: :Man
-    source: Leopold_IV_of_Lippe
-  AssignClass (a031ceb0-c1b0-439d-ab19-5ee221ea10a4)
- Call ID: a031ceb0-c1b0-439d-ab19-5ee221ea10a4
-  Args:
-    source: Leopold_IV_of_Lippe
-    type: :Person
-  AddTriple (d7521ef0-6a86-476a-a4fa-8091456e736c)
- Call ID: d7521ef0-6a86-476a-a4fa-8091456e736c
-  Args:
-    source: Leopold_IV_of_Lippe
-    target: :Armin_of_Lippe
-    relation: :hasSon
-  AssignClass (317e692d-e12a-49f8-b909-22f837758bdd)
- Call ID: 317e692d-e12a-49f8-b909-22f837758bdd
-  Args:
-    source: Leopold_of_Lippe
-    type: :Man
-  AssignClass (3694a0ab-31c1-4740-999e-580bc94fb18c)
- Call ID: 3694a0ab-31c1-4740-999e-580bc94fb18c
-  Args:
-    type: :Person
-    source: Leopold_of_Lippe
-  AssignClass (e3958ea1-3de1-44f6-9736-011efd782695)
- Call ID: e3958ea1-3de1-44f6-9736-011efd782695
-  Args:
-    type: :Man
-    source: Ernst_of_Lippe
-  AssignClass (79b8a134-544c-40cf-b0b4-84ec4ada34fa)
- Call ID: 79b8a134-544c-40cf-b0b4-84ec4ada34fa
-  Args:
-    source: Ernst_of_Lippe
-    type: :Person
-  AssignClass (1b0f47ee-aaaa-4371-bd57-367525c7edeb)
- Call ID: 1b0f47ee-aaaa-4371-bd57-367525c7edeb
-  Args:
-    type: :Man
-    source: Simon_Casimir_of_Lippe
-  AssignClass (fd6d84ed-0fab-4a22-b31b-b01ccba0c253)
- Call ID: fd6d84ed-0fab-4a22-b31b-b01ccba0c253
-  Args:
-    source: Simon_Casimir_of_Lippe
-    type: :Person
-  AssignClass (ff880ccd-4e07-46e3-8478-0a9b90047cd6)
- Call ID: ff880ccd-4e07-46e3-8478-0a9b90047cd6
-  Args:
-    type: :Man
-    source: Stephan_of_Lippe
-  AssignClass (34a213d8-124c-48f5-b88c-1f143f3c2fca)
- Call ID: 34a213d8-124c-48f5-b88c-1f143f3c2fca
-  Args:
-    source: Stephan_of_Lippe
-    type: :Person
-  AddTriple (31efa17c-680f-4ca1-8c0e-05c0b231c6d4)
- Call ID: 31efa17c-680f-4ca1-8c0e-05c0b231c6d4
-  Args:
-    relation: :hasFather
-    target: :Armin_of_Lippe
-    source: Stephan_of_Lippe
-  Finish (31507ae1-71e4-446b-a63b-5f25145f8b60)
- Call ID: 31507ae1-71e4-446b-a63b-5f25145f8b60
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -794,66 +644,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ernst_of_Lippe a :Man,
-          :Person .
-
-  data:Julius_Ernst_of_Lippe a :Man,
+  data:LouisCharlesRiprandVictorJeromeMarie a :Man,
           :Person ;
-      :hasSon data:Ernst_August_of_Lippe .
+      :hasFather data:Jean-ChristophePrinceNapoleon ;
+      :hasMother data:OlympiaBonaparte .
 
-  data:Leopold_IV_of_Lippe a :Man,
-          :Person ;
-      :hasSon data:Armin_of_Lippe .
+  data:MariaBeatriceOfAustria-Este a :Person,
+          :Woman .
 
-  data:Leopold_of_Lippe a :Man,
-          :Person .
-
-  data:Simon_Casimir_of_Lippe a :Man,
-          :Person .
-
-  data:Stephan_of_Lippe a :Man,
-          :Person ;
-      :hasFather data:Armin_of_Lippe .
-
-  data:Andrea_Messner a :Person,
+  data:OlympiaBonaparte a :Person,
           :Woman ;
-      :hasFather data:G%C3%BCnther_Messner ;
-      :hasMother data:Lieselotte_Trzoska .
+      :hasBirthYear 1988 ;
+      :hasFather data:RiprandVonUndZuArco-Zinneberg ;
+      :hasMarriageYear data:Jean-ChristophePrinceNapoleon,
+          2019 ;
+      :hasMother data:MariaBeatriceOfAustria-Este .
 
-  data:Christa_von_Arnim a :Person,
-          :Woman ;
-      :hasFather data:Curt_David_von_Arnim ;
-      :hasMother data:Stephanie_von_Stechow .
-
-  data:Curt_David_von_Arnim a :Man,
-          :Person .
-
-  data:Ernst_August_of_Lippe a :Man,
+  data:RiprandVonUndZuArco-Zinneberg a :Man,
           :Person ;
-      :hasMother data:Marie_of_Mecklenburg_Strelitz ;
-      :hasSon data:Friedrich_Wilhelm_of_Lippe .
+      :hasBirthYear 1955 ;
+      :hasDeathYear 2021 .
 
-  data:Friedrich_Wilhelm_of_Lippe a :Man,
-          :Person ;
-      :hasBirthYear "1947"^^xsd:positiveInteger ;
-      :hasMarriageYear "1991"^^xsd:positiveInteger ;
-      :hasMother data:Christa_von_Arnim ;
-      :hasRelation data:Andrea_Messner ;
-      :hasSex data:Male .
-
-  data:G%C3%BCnther_Messner a :Man,
-          :Person .
-
-  data:Lieselotte_Trzoska a :Person,
-          :Woman .
-
-  data:Marie_of_Mecklenburg_Strelitz a :Person,
-          :Woman .
-
-  data:Stephanie_von_Stechow a :Person,
-          :Woman .
-
-  data:Armin_of_Lippe a :Man,
+  data:Jean-ChristophePrinceNapoleon a :Man,
           :Person .
 
 
@@ -866,246 +678,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4bc8fc3c-058d-4917-9f46-675a8b779a0a)
- Call ID: 4bc8fc3c-058d-4917-9f46-675a8b779a0a
+  ValidateShacl (19a9b22e-fe17-4219-9c43-adbe0dda3dbb)
+ Call ID: 19a9b22e-fe17-4219-9c43-adbe0dda3dbb
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:29
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal string, but the model requires an object of class ':Sex'.
+      The node Jean-ChristophePrinceNapoleon is assigned to the hasFather property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Remove the literal 'hasSex' using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and then add the correct relationship using AddTriple(Friedrich_Wilhelm_of_Lippe, :hasSex, :Male_Sex_Object) after ensuring the object is assigned to :Sex.
+      AssignClass(Jean-ChristophePrinceNapoleon, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Armin_of_Lippe' assigned to 'hasFather' for 'Stephan_of_Lippe' does not have the required ':Ancestor' or ':Man' class assignment.
+      The node OlympiaBonaparte is assigned to the hasMother property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Armin_of_Lippe, :Ancestor) to ensure the node meets the class requirements.
+      AssignClass(OlympiaBonaparte, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Marie_of_Mecklenburg_Strelitz' assigned to 'hasMother' for 'Ernst_August_of_Lippe' does not have the required ':Ancestor' or ':Woman' class assignment.
+      The node RiprandVonUndZuArco-Zinneberg is assigned to the hasFather property of OlympiaBonaparte but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Marie_of_Mecklenburg_Strelitz, :Ancestor) to ensure the node meets the class requirements.
+      AssignClass(RiprandVonUndZuArco-Zinneberg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Christa_von_Arnim' assigned to 'hasMother' for 'Friedrich_Wilhelm_of_Lippe' does not have the required ':Ancestor' or ':Woman' class assignment.
+      The node Jean-ChristophePrinceNapoleon is assigned to the hasFather property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Christa_von_Arnim, :Ancestor) to ensure the node meets the class requirements.
+      AssignClass(Jean-ChristophePrinceNapoleon, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal, while it should be an instance of class ':Sex'.
+      The node MariaBeatriceOfAustria-Este is assigned to the hasMother property of OlympiaBonaparte but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct instance of :Sex using AddTriple.
+      AssignClass(MariaBeatriceOfAustria-Este, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal, while it should be an instance of class ':Sex'.
+      The node OlympiaBonaparte is assigned to the hasMother property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct instance of :Sex using AddTriple.
+      AssignClass(OlympiaBonaparte, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Armin_of_Lippe' for 'hasFather' of 'Stephan_of_Lippe' lacks the required ':Ancestor' class.
+      The node RiprandVonUndZuArco-Zinneberg is assigned to the hasFather property of OlympiaBonaparte but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Armin_of_Lippe, :Ancestor).
+      AssignClass(RiprandVonUndZuArco-Zinneberg, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Curt_David_von_Arnim' for 'hasFather' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
+      The node Jean-ChristophePrinceNapoleon is assigned to the hasFather property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Curt_David_von_Arnim, :Ancestor).
+      AssignClass(Jean-ChristophePrinceNapoleon, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'G%C3%BCnther_Messner' for 'hasFather' of 'Andrea_Messner' lacks the required ':Ancestor' class.
+      The node MariaBeatriceOfAustria-Este is assigned to the hasMother property of OlympiaBonaparte but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(G%C3%BCnther_Messner, :Ancestor).
+      AssignClass(MariaBeatriceOfAustria-Este, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Marie_of_Mecklenburg_Strelitz' for 'hasMother' of 'Ernst_August_of_Lippe' lacks the required ':Ancestor' class.
+      The node OlympiaBonaparte is assigned to the hasMother property of LouisCharlesRiprandVictorJeromeMarie but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Marie_of_Mecklenburg_Strelitz, :Ancestor).
+      AssignClass(OlympiaBonaparte, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Christa_von_Arnim' for 'hasMother' of 'Friedrich_Wilhelm_of_Lippe' lacks the required ':Ancestor' class.
+      The node RiprandVonUndZuArco-Zinneberg is assigned to the hasFather property of OlympiaBonaparte but lacks the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Christa_von_Arnim, :Ancestor).
+      AssignClass(RiprandVonUndZuArco-Zinneberg, :Ancestor)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Stephanie_von_Stechow' for 'hasMother' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
+      The node MariaBeatriceOfAustria-Este is assigned to the hasMother property of OlympiaBonaparte but lacks the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Stephanie_von_Stechow, :Ancestor).
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Lieselotte_Trzoska' for 'hasMother' of 'Andrea_Messner' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Lieselotte_Trzoska, :Ancestor).
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal, invalidating the :Sex class constraint.
-    LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct node via AddTriple.
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal, invalidating the :Sex class constraint.
-    LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct node via AddTriple.
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal, invalidating the :Sex class constraint.
-    LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct node via AddTriple.
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Armin_of_Lippe' for 'hasFather' of 'Stephan_of_Lippe' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Armin_of_Lippe, :Ancestor).
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Curt_David_von_Arnim' for 'hasFather' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Curt_David_von_Arnim, :Ancestor).
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'G%C3%BCnther_Messner' for 'hasFather' of 'Andrea_Messner' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(G%C3%BCnther_Messner, :Ancestor).
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Marie_of_Mecklenburg_Strelitz' for 'hasMother' of 'Ernst_August_of_Lippe' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Marie_of_Mecklenburg_Strelitz, :Ancestor).
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Christa_von_Arnim' for 'hasMother' of 'Friedrich_Wilhelm_of_Lippe' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Christa_von_Arnim, :Ancestor).
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Stephanie_von_Stechow' for 'hasMother' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Stephanie_von_Stechow, :Ancestor).
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Lieselotte_Trzoska' for 'hasMother' of 'Andrea_Messner' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Lieselotte_Trzoska, :Ancestor).
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal instead of a node of class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct node via AddTriple.
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' of 'Friedrich_Wilhelm_of_Lippe' is a literal instead of a node of class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      Remove the literal using RemoveLiteral(Friedrich_Wilhelm_of_Lippe, :hasSex, 'Male') and add the correct node via AddTriple.
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Curt_David_von_Arnim' for 'hasFather' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Curt_David_von_Arnim, :Ancestor).
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'G%C3%BCnther_Messner' for 'hasFather' of 'Andrea_Messner' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(G%C3%BCnther_Messner, :Ancestor).
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Stephanie_von_Stechow' for 'hasMother' of 'Christa_von_Arnim' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Stephanie_von_Stechow, :Ancestor).
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Lieselotte_Trzoska' for 'hasMother' of 'Andrea_Messner' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass(Lieselotte_Trzoska, :Ancestor).
+      AssignClass(MariaBeatriceOfAustria-Este, :Ancestor)
 
 
 
@@ -1114,74 +790,59 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (94d5ebb9-8478-4c66-ba45-7b50216e3cba)
- Call ID: 94d5ebb9-8478-4c66-ba45-7b50216e3cba
+  AssignClass (9d0c58fa-c10f-45dd-8589-e743cec29ccf)
+ Call ID: 9d0c58fa-c10f-45dd-8589-e743cec29ccf
+  Args:
+    source: Jean-ChristophePrinceNapoleon
+    type: :Ancestor
+  AssignClass (64938d0e-833f-4521-ba90-6050696d6769)
+ Call ID: 64938d0e-833f-4521-ba90-6050696d6769
+  Args:
+    source: OlympiaBonaparte
+    type: :Ancestor
+  AssignClass (b282e4ae-1325-4b90-ac93-77101a4d42d1)
+ Call ID: b282e4ae-1325-4b90-ac93-77101a4d42d1
+  Args:
+    type: :Ancestor
+    source: RiprandVonUndZuArco-Zinneberg
+  AssignClass (f30c1713-74d8-4caa-bfc0-7624325cb0e8)
+ Call ID: f30c1713-74d8-4caa-bfc0-7624325cb0e8
+  Args:
+    type: :Ancestor
+    source: MariaBeatriceOfAustria-Este
+  AddTriple (1cfda585-40ae-470b-8197-2fbf987d3c90)
+ Call ID: 1cfda585-40ae-470b-8197-2fbf987d3c90
   Args:
     relation: :hasSex
-    source: Friedrich_Wilhelm_of_Lippe
+    source: OlympiaBonaparte
+    target: :Female
+  AddTriple (b0232a7f-5c67-4c6a-a6ef-2e0fb5b4d5df)
+ Call ID: b0232a7f-5c67-4c6a-a6ef-2e0fb5b4d5df
+  Args:
+    relation: :hasSex
+    source: Jean-ChristophePrinceNapoleon
     target: :Male
-  AssignClass (8553c64c-25cd-4beb-8988-497255a95399)
- Call ID: 8553c64c-25cd-4beb-8988-497255a95399
+  AddTriple (4a12c536-ac64-4ad5-a013-5056e8536663)
+ Call ID: 4a12c536-ac64-4ad5-a013-5056e8536663
   Args:
-    type: :Male
-    source: Male_Entity
-  AssignClass (b13d4b6d-441a-4763-b943-c3aa6693704d)
- Call ID: b13d4b6d-441a-4763-b943-c3aa6693704d
-  Args:
-    source: Male_Entity
-    type: :Sex
-  AddTriple (1b742b7a-5f03-4f06-8eb0-c190fe890c93)
- Call ID: 1b742b7a-5f03-4f06-8eb0-c190fe890c93
-  Args:
-    target: :Male_Entity
-    source: Friedrich_Wilhelm_of_Lippe
+    source: RiprandVonUndZuArco-Zinneberg
+    target: :Male
     relation: :hasSex
-  AssignClass (e47a0e56-923a-4339-b95d-6dae93482c94)
- Call ID: e47a0e56-923a-4339-b95d-6dae93482c94
+  AddTriple (30b4aede-22da-416d-ab25-9057fec82305)
+ Call ID: 30b4aede-22da-416d-ab25-9057fec82305
   Args:
-    source: Armin_of_Lippe
-    type: :Ancestor
-  AssignClass (487bc9f3-7acb-4de7-b7e3-4342963ae96d)
- Call ID: 487bc9f3-7acb-4de7-b7e3-4342963ae96d
+    target: :Female
+    source: MariaBeatriceOfAustria-Este
+    relation: :hasSex
+  AddTriple (9e716b09-2df0-46e3-a66f-b355ab312241)
+ Call ID: 9e716b09-2df0-46e3-a66f-b355ab312241
   Args:
-    source: Marie_of_Mecklenburg_Strelitz
-    type: :Ancestor
-  AssignClass (9dbde40e-bc7d-461f-8611-a0440f50142a)
- Call ID: 9dbde40e-bc7d-461f-8611-a0440f50142a
+    target: :Male
+    source: LouisCharlesRiprandVictorJeromeMarie
+    relation: :hasSex
+  ValidateShacl (cb98052b-39c8-4bfd-98aa-d81afdc27ee4)
+ Call ID: cb98052b-39c8-4bfd-98aa-d81afdc27ee4
   Args:
-    type: :Ancestor
-    source: Christa_von_Arnim
-  AssignClass (7cd9215c-df39-4b28-9f04-170ab05ff364)
- Call ID: 7cd9215c-df39-4b28-9f04-170ab05ff364
-  Args:
-    source: Curt_David_von_Arnim
-    type: :Ancestor
-  AssignClass (43611e4a-a6e2-43b3-993d-78ea6db58815)
- Call ID: 43611e4a-a6e2-43b3-993d-78ea6db58815
-  Args:
-    source: Günther_Messner
-    type: :Ancestor
-  AssignClass (28c9108c-c29e-42fe-a580-41b3ff7c0fe5)
- Call ID: 28c9108c-c29e-42fe-a580-41b3ff7c0fe5
-  Args:
-    type: :Ancestor
-    source: Stephanie_von_Stechow
-  AssignClass (4848ac08-6d60-4ed9-9741-03332881b4c6)
- Call ID: 4848ac08-6d60-4ed9-9741-03332881b4c6
-  Args:
-    type: :Ancestor
-    source: Lieselotte_Trzoska
-  Finish (c05d147b-f9c9-424e-b0f3-ca0eb043c242)
- Call ID: c05d147b-f9c9-424e-b0f3-ca0eb043c242
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1222,91 +883,532 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ernst_of_Lippe a :Man,
-          :Person .
-
-  data:Julius_Ernst_of_Lippe a :Man,
+  data:LouisCharlesRiprandVictorJeromeMarie a :Man,
           :Person ;
-      :hasSon data:Ernst_August_of_Lippe .
+      :hasFather data:Jean-ChristophePrinceNapoleon ;
+      :hasMother data:OlympiaBonaparte ;
+      :hasSex data:Male .
 
-  data:Leopold_IV_of_Lippe a :Man,
-          :Person ;
-      :hasSon data:Armin_of_Lippe .
-
-  data:Leopold_of_Lippe a :Man,
-          :Person .
-
-  data:Simon_Casimir_of_Lippe a :Man,
-          :Person .
-
-  data:Stephan_of_Lippe a :Man,
-          :Person ;
-      :hasFather data:Armin_of_Lippe .
-
-  data:Andrea_Messner a :Person,
-          :Woman ;
-      :hasFather data:G%C3%BCnther_Messner ;
-      :hasMother data:Lieselotte_Trzoska .
-
-  data:Christa_von_Arnim a :Ancestor,
+  data:MariaBeatriceOfAustria-Este a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Curt_David_von_Arnim ;
-      :hasMother data:Stephanie_von_Stechow .
+      :hasSex data:Female .
 
-  data:Curt_David_von_Arnim a :Ancestor,
+  data:OlympiaBonaparte a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1988 ;
+      :hasFather data:RiprandVonUndZuArco-Zinneberg ;
+      :hasMarriageYear data:Jean-ChristophePrinceNapoleon,
+          2019 ;
+      :hasMother data:MariaBeatriceOfAustria-Este ;
+      :hasSex data:Female .
+
+  data:RiprandVonUndZuArco-Zinneberg a :Ancestor,
           :Man,
-          :Person .
-
-  data:Ernst_August_of_Lippe a :Man,
           :Person ;
-      :hasMother data:Marie_of_Mecklenburg_Strelitz ;
-      :hasSon data:Friedrich_Wilhelm_of_Lippe .
+      :hasBirthYear 1955 ;
+      :hasDeathYear 2021 ;
+      :hasSex data:Male .
 
-  data:Friedrich_Wilhelm_of_Lippe a :Man,
+  data:Jean-ChristophePrinceNapoleon a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear "1947"^^xsd:positiveInteger ;
-      :hasMarriageYear "1991"^^xsd:positiveInteger ;
-      :hasMother data:Christa_von_Arnim ;
-      :hasRelation data:Andrea_Messner ;
-      :hasSex data:Male_Entity .
-
-  data:G%C3%BCnther_Messner a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Lieselotte_Trzoska a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Male_Entity a :Male,
-          :Sex .
-
-  data:Marie_of_Mecklenburg_Strelitz a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Stephanie_von_Stechow a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Armin_of_Lippe a :Ancestor,
-          :Man,
-          :Person .
+      :hasSex data:Male .
 
 
 
 ================================= Tool Message =================================
 
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+VALIDATION RESULTS
+Total violations:52
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'RiprandVonUndZuArco-Zinneberg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [45]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Jean-ChristophePrinceNapoleon' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'LouisCharlesRiprandVictorJeromeMarie' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [50]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [51]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'MariaBeatriceOfAustria-Este' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [52]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' of node 'OlympiaBonaparte' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (cdc60750-7aac-4df7-b961-9b38e30a0cb9)
- Call ID: cdc60750-7aac-4df7-b961-9b38e30a0cb9
+  AssignClass (53dbb74a-78cf-4879-8c33-629bd4c1571a)
+ Call ID: 53dbb74a-78cf-4879-8c33-629bd4c1571a
   Args:
+    source: Female
+    type: :Sex
+  AssignClass (b08b9fd3-641b-49ac-a0db-536ccd2d6c2e)
+ Call ID: b08b9fd3-641b-49ac-a0db-536ccd2d6c2e
+  Args:
+    type: :Sex
+    source: Male
+  ValidateShacl (71dd6617-a8e2-48ff-b862-82862458fac2)
+ Call ID: 71dd6617-a8e2-48ff-b862-82862458fac2
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:LouisCharlesRiprandVictorJeromeMarie a :Man,
+          :Person ;
+      :hasFather data:Jean-ChristophePrinceNapoleon ;
+      :hasMother data:OlympiaBonaparte ;
+      :hasSex data:Male .
+
+  data:MariaBeatriceOfAustria-Este a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:OlympiaBonaparte a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1988 ;
+      :hasFather data:RiprandVonUndZuArco-Zinneberg ;
+      :hasMarriageYear data:Jean-ChristophePrinceNapoleon,
+          2019 ;
+      :hasMother data:MariaBeatriceOfAustria-Este ;
+      :hasSex data:Female .
+
+  data:RiprandVonUndZuArco-Zinneberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1955 ;
+      :hasDeathYear 2021 ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Jean-ChristophePrinceNapoleon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Male a :Sex .
+
+
 
 ================================= Tool Message =================================
 
@@ -1316,6 +1418,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c120fb2c-fbae-42fd-acf9-f01e4ee42359)
- Call ID: c120fb2c-fbae-42fd-acf9-f01e4ee42359
+  Finish (8d5cd53a-6b9f-4718-9421-996d1502058f)
+ Call ID: 8d5cd53a-6b9f-4718-9421-996d1502058f
   Args:

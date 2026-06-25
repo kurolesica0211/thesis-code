@@ -69,43 +69,47 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+Amélie of Orléans (French: Marie Amélie Louise Hélène; 28 September 1865 – 25 October 1951) was the last Queen of Portugal as the wife of Carlos I of Portugal.
+She was regent of Portugal during the absence of her husband in 1895.
+She was the eldest daughter of Prince Philippe, Count of Paris, and Princess Marie Isabelle d'Orléans, and a "Princess of Orléans" by birth.
+Amélie's paternal grandparents were Prince Ferdinand Philippe, Duke of Orléans, and Duchess Helena of Mecklenburg-Schwerin.
+Her maternal grandparents were Prince Antoine, Duke of Montpensier, and the Infanta Luisa Fernanda of Spain.
+The Dukes of Orléans and Montpensier were siblings, both sons of King Louis-Philippe I of France, and Maria Amalia of the Two Sicilies.
+Marriage and issue
+
+On 22 May 1886, Amélie married Carlos, Prince Royal of Portugal.
+He was the eldest son of King Luís I of Portugal and Maria Pia of Savoy.
+At first, the marriage was not popular and Queen Maria Pia was expecting to marry Carlos to Archduchess Marie Valerie of Austria, Princess Mathilde of Saxony, Princess Viktoria of Prussia or Princess Victoria of Wales.
+However, Amélie and Carlos came to live quite harmoniously with each other.
+They had three children:
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+Queen consort
 
+On 19 October 1889, King Luís died and Carlos succeeded him on the throne.
+Amélie became the new Queen consort of Portugal.
+Amélie played an active role as a queen, and somewhat softened the growing criticism towards the monarchy with her personal popularity, though she did receive some criticism for her expenses.
+In 1892, Pope Leo XIII gave a Golden Rose to Amélie.
+On their way to the Palace of Necessidades, the carriage carrying Carlos and his family passed through the Rua do Arsenal.
+The King died immediately, his heir Prince Dom Luís Filipe was mortally wounded and Infante Dom Manuel was hit in the arm.
+Queen Amélie remained unharmed as she tried to defend her youngest son, the new king Manuel II, with the flower bouquet she kept in her hand.
+About twenty minutes later, Prince Luís Filipe died and the next day Manuel was acclaimed King of Portugal, the last of the Braganza dynasty.
+Manuel II was deposed in a military coup, later known as the 5 October 1910 revolution, which resulted in the establishment of the Portuguese First Republic.
+Queen Amélie left Portugal with the rest of the royal family and went into exile.
+During the Second World War, the Portuguese government invited her to return to Portugal, but she declined the offer.
+She visited Portugal for the last time in 1945.
+Later years and death
 
-The Dowager Duchess of Calabria
-
-
-Infanta Margarita, Duchess of Soria, 2nd Duchess of Hernani (Margarita María de la Victoria Esperanza
-Jacoba Felicidad Perpetua de Todos los Santos de Borbón y Borbón; born 6 March 1939), is the younger sister of King Juan Carlos I and aunt of the reigning King Felipe VI of Spain.
-Early life
-
-Infanta Margarita was born at Hotel Firenze Anglo American in Rome as the younger daughter of Infante Juan, Count of Barcelona, and Princess Mercedes of the Two Sicilies.
-Margarita has been blind since birth.
-Marriage
-
-She married the physician and aristocrat Carlos Zurita y Delgado on 12 October 1972 in Estoril at St. Anthony's Church.
-They have two children:
-
-
-Activities
-
-In 1989, alongside her husband, they created The Duke and Duchess of Soria Cultural Foundation (Spanish: Fundación Cultural Duques de Soria), a nonprofit organization dedicated to the promotion of Spanish culture, Hispanic studies, science and knowledge, as well as the preservation of cultural heritage.
-Titles, styles and honours
-
-Infanta Margarita renounced her right of succession to the Spanish throne upon marriage because it was not a dynastic wedding.
-On 6 January 1979, the Infanta's distant cousin Manfredo de Borbón, 1st Duke of Hernani, died and willed his ducal title to be inherited by Margarita.
-The King granted this request in 1977 and, on 27 May 1981, she became 2nd Duchess of Hernani, accompanied by the dignity of Grandee.
-The peerage title refers to the town Hernani, Spain.
-The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria (referring to the city Soria, Spain); this title is a title of the Royal House and cannot be inherited by her children.
+In 1949, Amélie left her Portuguese possessions to her godson, Duarte Pio, Duke of Braganza, at the request of Prime Minister António de Oliveira Salazar.
+She was given a state funeral and buried at the Pantheon of the Braganzas located in the Monastery of São Vicente de Fora, in Lisbon, Portugal.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +125,9 @@ The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +142,23 @@ The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,122 +450,269 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (52952e72-7362-43a2-9219-0763cf269664)
- Call ID: 52952e72-7362-43a2-9219-0763cf269664
+  AssignClass (c2ce5903-8a3a-403e-9663-f6dafc22e1ae)
+ Call ID: c2ce5903-8a3a-403e-9663-f6dafc22e1ae
   Args:
+    source: Amélie_of_Orléans
     type: :Woman
-    source: Infanta_Margarita
-  AssignClass (e038302a-a24d-4267-bd35-3214f90856e6)
- Call ID: e038302a-a24d-4267-bd35-3214f90856e6
+  AssignClass (2d55f36d-2df3-4ebb-b4c5-e353ec68d683)
+ Call ID: 2d55f36d-2df3-4ebb-b4c5-e353ec68d683
   Args:
     type: :Person
-    source: Infanta_Margarita
-  AssignClass (735294b8-da00-451b-b72a-25194525989b)
- Call ID: 735294b8-da00-451b-b72a-25194525989b
+    source: Amélie_of_Orléans
+  AddLiteral (7153fbec-d5c0-4380-adb1-28fa9872198f)
+ Call ID: 7153fbec-d5c0-4380-adb1-28fa9872198f
   Args:
-    type: :Man
-    source: Juan_Carlos_I
-  AssignClass (1d500a82-f1cb-4c99-8896-2e2c1e49e12b)
- Call ID: 1d500a82-f1cb-4c99-8896-2e2c1e49e12b
-  Args:
-    type: :Person
-    source: Juan_Carlos_I
-  AssignClass (822e4f67-54ac-4f4a-b357-503739fc421b)
- Call ID: 822e4f67-54ac-4f4a-b357-503739fc421b
-  Args:
-    type: :Man
-    source: Felipe_VI
-  AssignClass (f4349cab-c93c-4859-bb96-94ff52fc99c2)
- Call ID: f4349cab-c93c-4859-bb96-94ff52fc99c2
-  Args:
-    type: :Person
-    source: Felipe_VI
-  AssignClass (6f055697-35c7-4f18-a8b2-27cfa1783ac2)
- Call ID: 6f055697-35c7-4f18-a8b2-27cfa1783ac2
-  Args:
-    type: :Man
-    source: Infante_Juan
-  AssignClass (df2bb904-1f03-4d01-ab4b-5057ad811940)
- Call ID: df2bb904-1f03-4d01-ab4b-5057ad811940
-  Args:
-    type: :Person
-    source: Infante_Juan
-  AssignClass (7f5a26ba-275a-4acf-bbb6-a1bd720a2043)
- Call ID: 7f5a26ba-275a-4acf-bbb6-a1bd720a2043
-  Args:
-    type: :Woman
-    source: Princess_Mercedes
-  AssignClass (093b9eee-b3b3-46cf-9e4d-b02a8785111c)
- Call ID: 093b9eee-b3b3-46cf-9e4d-b02a8785111c
-  Args:
-    type: :Person
-    source: Princess_Mercedes
-  AssignClass (53d661ab-e883-44e9-9625-a623b3054dfd)
- Call ID: 53d661ab-e883-44e9-9625-a623b3054dfd
-  Args:
-    type: :Man
-    source: Carlos_Zurita_y_Delgado
-  AssignClass (9fb8dc59-1ce0-4365-9eb5-6c3067f789d4)
- Call ID: 9fb8dc59-1ce0-4365-9eb5-6c3067f789d4
-  Args:
-    type: :Person
-    source: Carlos_Zurita_y_Delgado
-  AddLiteral (d4c1ea0a-08c4-4f08-9383-638736b6ba04)
- Call ID: d4c1ea0a-08c4-4f08-9383-638736b6ba04
-  Args:
-    literal_value: 1939
+    literal_value: 1865
+    source: Amélie_of_Orléans
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Infanta_Margarita
-  AddTriple (31b104c5-8c84-46ae-95fb-9b9517d7155d)
- Call ID: 31b104c5-8c84-46ae-95fb-9b9517d7155d
+  AddLiteral (9a92d253-03ac-4f28-ab72-8161d3d5a8fe)
+ Call ID: 9a92d253-03ac-4f28-ab72-8161d3d5a8fe
   Args:
-    relation: :isSisterOf
-    target: Juan_Carlos_I
-    source: Infanta_Margarita
-  AddTriple (6cf1b1ab-5e73-474f-b575-aba97f91e24f)
- Call ID: 6cf1b1ab-5e73-474f-b575-aba97f91e24f
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Amélie_of_Orléans
+    literal_value: 1951
+  AssignClass (f47ba2d8-e1ed-4b15-a508-58118961697c)
+ Call ID: f47ba2d8-e1ed-4b15-a508-58118961697c
   Args:
-    target: Felipe_VI
-    source: Infanta_Margarita
-    relation: :isAuntOf
-  AddTriple (429baab6-ced6-4eb8-a654-97474ff3dc05)
- Call ID: 429baab6-ced6-4eb8-a654-97474ff3dc05
+    source: Carlos_I_of_Portugal
+    type: :Man
+  AssignClass (6dd3d0fb-e577-4050-842c-f44e305615da)
+ Call ID: 6dd3d0fb-e577-4050-842c-f44e305615da
   Args:
-    source: Infanta_Margarita
-    target: Infante_Juan
-    relation: :hasFather
-  AddTriple (83c9b0a1-6db6-4f25-855d-382498596703)
- Call ID: 83c9b0a1-6db6-4f25-855d-382498596703
+    type: :Person
+    source: Carlos_I_of_Portugal
+  AddTriple (dfdb2133-1ff0-46fd-814b-5d4a7e296818)
+ Call ID: dfdb2133-1ff0-46fd-814b-5d4a7e296818
   Args:
-    target: Princess_Mercedes
-    source: Infanta_Margarita
-    relation: :hasMother
-  AddTriple (b3901bcc-8a2e-46e0-9dd9-6683ae8edb01)
- Call ID: b3901bcc-8a2e-46e0-9dd9-6683ae8edb01
-  Args:
-    source: Juan_Carlos_I
-    target: Infante_Juan
-    relation: :hasFather
-  AddTriple (e1761936-e94f-4542-92d8-be60693b0b45)
- Call ID: e1761936-e94f-4542-92d8-be60693b0b45
-  Args:
-    relation: :hasMother
-    source: Juan_Carlos_I
-    target: Princess_Mercedes
-  AddLiteral (d4106bfa-0935-4a69-9416-5d6104794de3)
- Call ID: d4106bfa-0935-4a69-9416-5d6104794de3
+    source: Amélie_of_Orléans
+    target: Carlos_I_of_Portugal
+    relation: :hasRelation
+  AddLiteral (9a95085c-bbe2-441c-8a2f-4a4cb0e65033)
+ Call ID: 9a95085c-bbe2-441c-8a2f-4a4cb0e65033
   Args:
     relation: :hasMarriageYear
-    literal_value: 1972
-    source: Infanta_Margarita
     literal_type: xsd:integer
-  AddTriple (21fabdc1-4297-40d2-bbbd-71e8d569f685)
- Call ID: 21fabdc1-4297-40d2-bbbd-71e8d569f685
+    source: Amélie_of_Orléans
+    literal_value: 1886
+  AssignClass (f7b6eb20-832a-4d2f-8b69-7145e838e7fc)
+ Call ID: f7b6eb20-832a-4d2f-8b69-7145e838e7fc
   Args:
-    target: Carlos_Zurita_y_Delgado
-    source: Infanta_Margarita
-    relation: :hasRelation
-  Finish (267811fc-b2fd-4852-9b31-862cf751e7d9)
- Call ID: 267811fc-b2fd-4852-9b31-862cf751e7d9
+    source: Philippe_Count_of_Paris
+    type: :Man
+  AssignClass (dbbcf03c-8298-464e-8b03-160c5fb124d4)
+ Call ID: dbbcf03c-8298-464e-8b03-160c5fb124d4
+  Args:
+    type: :Person
+    source: Philippe_Count_of_Paris
+  AssignClass (e5b1e6cf-9e33-4ab0-bb39-f299cb4966f5)
+ Call ID: e5b1e6cf-9e33-4ab0-bb39-f299cb4966f5
+  Args:
+    type: :Woman
+    source: Marie_Isabelle_dOrléans
+  AssignClass (533e5020-00b5-40e8-8b4a-c397737f685c)
+ Call ID: 533e5020-00b5-40e8-8b4a-c397737f685c
+  Args:
+    source: Marie_Isabelle_dOrléans
+    type: :Person
+  AddTriple (11a5a52a-3756-4a2a-9a02-811cbfbf6d5b)
+ Call ID: 11a5a52a-3756-4a2a-9a02-811cbfbf6d5b
+  Args:
+    target: Philippe_Count_of_Paris
+    source: Amélie_of_Orléans
+    relation: :hasFather
+  AddTriple (27053471-2386-475d-b876-505ab1036682)
+ Call ID: 27053471-2386-475d-b876-505ab1036682
+  Args:
+    relation: :hasMother
+    target: Marie_Isabelle_dOrléans
+    source: Amélie_of_Orléans
+  AssignClass (540d6141-77b1-40c9-a877-5f8d3bf5a419)
+ Call ID: 540d6141-77b1-40c9-a877-5f8d3bf5a419
+  Args:
+    source: Ferdinand_Philippe_Duke_of_Orléans
+    type: :Man
+  AssignClass (098697c2-917c-4d10-b565-b12b0f42e28f)
+ Call ID: 098697c2-917c-4d10-b565-b12b0f42e28f
+  Args:
+    type: :Person
+    source: Ferdinand_Philippe_Duke_of_Orléans
+  AssignClass (fe1cb2c6-1bf2-4845-8b3d-a05386b221dd)
+ Call ID: fe1cb2c6-1bf2-4845-8b3d-a05386b221dd
+  Args:
+    source: Helena_of_Mecklenburg_Schwerin
+    type: :Woman
+  AssignClass (8f1428ad-5e6a-4ef8-a2e9-a2d560a7b74f)
+ Call ID: 8f1428ad-5e6a-4ef8-a2e9-a2d560a7b74f
+  Args:
+    source: Helena_of_Mecklenburg_Schwerin
+    type: :Person
+  AddTriple (736f732f-55f1-452d-ad52-a357fe89b651)
+ Call ID: 736f732f-55f1-452d-ad52-a357fe89b651
+  Args:
+    target: Ferdinand_Philippe_Duke_of_Orléans
+    source: Philippe_Count_of_Paris
+    relation: :hasFather
+  AddTriple (fca24245-0737-4ed7-ae44-f6e21be179c4)
+ Call ID: fca24245-0737-4ed7-ae44-f6e21be179c4
+  Args:
+    source: Philippe_Count_of_Paris
+    target: Helena_of_Mecklenburg_Schwerin
+    relation: :hasMother
+  AssignClass (dc5ab1ed-4873-4aa4-ab0a-020db0eb6201)
+ Call ID: dc5ab1ed-4873-4aa4-ab0a-020db0eb6201
+  Args:
+    source: Antoine_Duke_of_Montpensier
+    type: :Man
+  AssignClass (9c537c77-ff8a-49de-9e8f-8f0f65e619b3)
+ Call ID: 9c537c77-ff8a-49de-9e8f-8f0f65e619b3
+  Args:
+    source: Antoine_Duke_of_Montpensier
+    type: :Person
+  AssignClass (fce367b8-20ed-465e-a76a-0a6ac9ff3c70)
+ Call ID: fce367b8-20ed-465e-a76a-0a6ac9ff3c70
+  Args:
+    source: Luisa_Fernanda_of_Spain
+    type: :Woman
+  AssignClass (f897fe22-8f87-468b-840d-8df11a533777)
+ Call ID: f897fe22-8f87-468b-840d-8df11a533777
+  Args:
+    source: Luisa_Fernanda_of_Spain
+    type: :Person
+  AddTriple (b4580e84-9d17-4dc0-9964-d3c07e2b2a99)
+ Call ID: b4580e84-9d17-4dc0-9964-d3c07e2b2a99
+  Args:
+    relation: :hasFather
+    source: Marie_Isabelle_dOrléans
+    target: Antoine_Duke_of_Montpensier
+  AddTriple (4b5c4c72-04c0-4b6a-877f-2350aa2fbef6)
+ Call ID: 4b5c4c72-04c0-4b6a-877f-2350aa2fbef6
+  Args:
+    source: Marie_Isabelle_dOrléans
+    target: Luisa_Fernanda_of_Spain
+    relation: :hasMother
+  AssignClass (5807dc42-0235-44d6-8f76-fb1ce5956d17)
+ Call ID: 5807dc42-0235-44d6-8f76-fb1ce5956d17
+  Args:
+    type: :Man
+    source: Louis_Philippe_I_of_France
+  AssignClass (7ae97f0f-24af-49e6-b9ba-18ff29f3b2b4)
+ Call ID: 7ae97f0f-24af-49e6-b9ba-18ff29f3b2b4
+  Args:
+    source: Louis_Philippe_I_of_France
+    type: :Person
+  AssignClass (a5cbf22f-70e7-4b05-bb19-f11361e9cfd5)
+ Call ID: a5cbf22f-70e7-4b05-bb19-f11361e9cfd5
+  Args:
+    source: Maria_Amalia_of_the_Two_Sicilies
+    type: :Woman
+  AssignClass (fa485c2f-5f67-41d7-8e03-3b2da34b93b5)
+ Call ID: fa485c2f-5f67-41d7-8e03-3b2da34b93b5
+  Args:
+    type: :Person
+    source: Maria_Amalia_of_the_Person
+  AddTriple (a419ec02-60a0-4391-bc2a-0f1062edca7d)
+ Call ID: a419ec02-60a0-4391-bc2a-0f1062edca7d
+  Args:
+    relation: :isFatherOf
+    target: Ferdinand_Philippe_Duke_of_Orléans
+    source: Louis_Philippe_I_of_France
+  AddTriple (1ba183e9-dc47-483b-9116-c2469014a315)
+ Call ID: 1ba183e9-dc47-483b-9116-c2469014a315
+  Args:
+    source: Louis_Philippe_I_of_France
+    target: Antoine_Duke_of_Montpensier
+    relation: :isFatherOf
+  AddTriple (b5a95bf1-bfc1-4fd2-bccc-b74fd62bd217)
+ Call ID: b5a95bf1-bfc1-4fd2-bccc-b74fd62bd217
+  Args:
+    target: Ferdinand_Philippe_Duke_of_Orléans
+    source: Maria_Amalia_of_the_Two_Sicilies
+    relation: :isMotherOf
+  AddTriple (1c1671fa-e73f-44ed-b031-a0db2b6d4680)
+ Call ID: 1c1671fa-e73f-44ed-b031-a0db2b6d4680
+  Args:
+    relation: :isMotherOf
+    target: Antoine_Duke_of_Montpensier
+    source: Maria_Amalia_of_the_Two_Sicilies
+  AssignClass (e838f8b2-dd89-459c-bf2a-2b6ea71bf292)
+ Call ID: e838f8b2-dd89-459c-bf2a-2b6ea71bf292
+  Args:
+    type: :Man
+    source: Luís_I_of_Portugal
+  AssignClass (661af91c-89b2-4b93-93e0-73f7c23815f0)
+ Call ID: 661af91c-89b2-4b93-93e0-73f7c23815f0
+  Args:
+    type: :Person
+    source: Luís_I_of_Portugal
+  AssignClass (282cba6b-57be-42e7-a4c7-7c8224dbf32a)
+ Call ID: 282cba6b-57be-42e7-a4c7-7c8224dbf32a
+  Args:
+    source: Maria_Pia_of_Savoy
+    type: :Woman
+  AssignClass (c94e0655-2ded-44b5-b45b-00b4cf769e8d)
+ Call ID: c94e0655-2ded-44b5-b45b-00b4cf769e8d
+  Args:
+    type: :Person
+    source: Maria_Pia_of_Savoy
+  AddTriple (fa420fc9-3c02-4619-b2fe-2a16939a49c7)
+ Call ID: fa420fc9-3c02-4619-b2fe-2a16939a49c7
+  Args:
+    source: Carlos_I_of_Portugal
+    target: Luís_I_of_Portugal
+    relation: :hasFather
+  AddTriple (e5cd1069-321d-44f3-a625-c371b7a35927)
+ Call ID: e5cd1069-321d-44f3-a625-c371b7a35927
+  Args:
+    relation: :hasMother
+    target: Maria_Pia_of_Savoy
+    source: Carlos_I_of_Portugal
+  AssignClass (9af4a4e6-d52f-425e-aa9a-99f4dd14cbe7)
+ Call ID: 9af4a4e6-d52f-425e-aa9a-99f4dd14cbe7
+  Args:
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    type: :Man
+  AssignClass (f98131dc-ce32-4d6e-baab-d0d92e563b48)
+ Call ID: f98131dc-ce32-4d6e-baab-d0d92e563b48
+  Args:
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    type: :Person
+  AssignClass (e316e54e-a6ca-4920-9560-2140532ae859)
+ Call ID: e316e54e-a6ca-4920-9560-2140532ae859
+  Args:
+    type: :Man
+    source: Manuel_II_of_Portugal
+  AssignClass (e4042553-fecf-47d8-9e8f-2f731c0da1fe)
+ Call ID: e4042553-fecf-47d8-9e8f-2f731c0da1fe
+  Args:
+    type: :Person
+    source: Manuel_II_of_Portugal
+  AddTriple (00bdf1fb-2b97-4dc1-8f07-9cb08c70175f)
+ Call ID: 00bdf1fb-2b97-4dc1-8f07-9cb08c70175f
+  Args:
+    relation: :hasFather
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    target: Carlos_I_of_Portugal
+  AddTriple (5eeaabc8-2f57-4ef1-b4d2-ae1b8783a6b1)
+ Call ID: 5eeaabc8-2f57-4ef1-b4d2-ae1b8783a6b1
+  Args:
+    target: Amélie_of_Orléans
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    relation: :hasMother
+  AddTriple (88180ef4-51a9-4f5f-9c52-a8d9f4ce2893)
+ Call ID: 88180ef4-51a9-4f5f-9c52-a8d9f4ce2893
+  Args:
+    relation: :hasFather
+    source: Manuel_II_of_Portugal
+    target: Carlos_I_of_Portugal
+  AddTriple (9bc92bdd-a0a0-437a-b64c-d5f8766ec192)
+ Call ID: 9bc92bdd-a0a0-437a-b64c-d5f8766ec192
+  Args:
+    target: Amélie_of_Orléans
+    source: Manuel_II_of_Portugal
+    relation: :hasMother
+  Finish (ec174c87-8220-4784-b44f-865a3e8c4b81)
+ Call ID: ec174c87-8220-4784-b44f-865a3e8c4b81
   Args:

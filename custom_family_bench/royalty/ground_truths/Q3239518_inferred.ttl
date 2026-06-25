@@ -1,0 +1,314 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Jaime_de_Marichalar a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Jaime de Marichalar"^^xsd:string ;
+    data:posIndicesFull "1628:1647"^^xsd:string,
+        "199:218"^^xsd:string ;
+    data:posIndicesPart "1471:1481"^^xsd:string,
+        "2440:2450"^^xsd:string,
+        "381:391"^^xsd:string ;
+    data:wdtLink wdt:Q726890 ;
+    :alsoKnownAs "Jaime de Marichalar y Saenz de Tejada"^^xsd:string ;
+    :hasBrother data:Jaime_de_Marichalar ;
+    :hasChild data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borbón ;
+    :hasRelation data:Felipe_de_Marichalar_y_Borbón,
+        data:Jaime_de_Marichalar,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:male ;
+    :hasSon data:Felipe_de_Marichalar_y_Borbón ;
+    :isAncestorOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isBloodrelationOf data:Jaime_de_Marichalar ;
+    :isBrotherOf data:Jaime_de_Marichalar ;
+    :isFatherOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isParentOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isSiblingOf data:Jaime_de_Marichalar ;
+    :isUncleOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "261:274"^^xsd:string ;
+    data:posIndicesPart "1106:1110"^^xsd:string,
+        "1111:1117"^^xsd:string,
+        "1121:1126"^^xsd:string,
+        "1812:1816"^^xsd:string,
+        "1817:1823"^^xsd:string,
+        "2167:2171"^^xsd:string,
+        "2172:2178"^^xsd:string,
+        "2404:2408"^^xsd:string,
+        "2472:2477"^^xsd:string,
+        "631:636"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasDaughter data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:male ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isBloodrelationOf data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Juan_Carlos_I_of_Spain ;
+    :isFatherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
+    :isUncleOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Sofía of Spain"^^xsd:string ;
+    data:posIndicesFull "279:290"^^xsd:string,
+        "279:299"^^xsd:string ;
+    data:posIndicesPart "1121:1126"^^xsd:string,
+        "2472:2477"^^xsd:string,
+        "622:627"^^xsd:string,
+        "631:636"^^xsd:string ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark"^^xsd:string,
+        "Queen Sofia of Spain"^^xsd:string,
+        "Queen Sofía"^^xsd:string,
+        "Queen Sofía, Queen Consort of Spain"^^xsd:string ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasDaughter data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Queen_Sofía_of_Spain,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Queen_Sofía_of_Spain ;
+    :isMotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSiblingOf data:Queen_Sofía_of_Spain ;
+    :isSisterOf data:Queen_Sofía_of_Spain .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "324:333"^^xsd:string ;
+    data:posIndicesPart "1121:1126"^^xsd:string,
+        "1461:1467"^^xsd:string,
+        "2087:2093"^^xsd:string,
+        "2397:2403"^^xsd:string,
+        "2472:2477"^^xsd:string,
+        "560:566"^^xsd:string,
+        "631:636"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasAncestor data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBrotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSonOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isUncleOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón .
+
+data:Felipe_de_Marichalar_y_Borbón a :Man,
+        :Person ;
+    rdfs:label "Felipe de Marichalar y Borbón"^^xsd:string ;
+    data:posIndicesFull "119:126"^^xsd:string,
+        "1250:1257"^^xsd:string,
+        "12:19"^^xsd:string,
+        "2182:2189"^^xsd:string,
+        "2409:2416"^^xsd:string,
+        "763:792"^^xsd:string,
+        "966:973"^^xsd:string ;
+    data:posIndicesPart "1461:1467"^^xsd:string,
+        "1471:1481"^^xsd:string,
+        "381:391"^^xsd:string,
+        "560:566"^^xsd:string ;
+    data:wdtLink wdt:Q3239518 ;
+    :alsoKnownAs "Felipe Juan Froilán De Marichalar Y De Borbon"^^xsd:string,
+        "Felipe Juan Froilán de Marichalar y Borbon"^^xsd:string,
+        "Felipe Juan Froilán de Marichalar y Borbón"^^xsd:string,
+        "Felipe Juan Froilán de Todos los Santos de Marichalar y de Borbón"^^xsd:string,
+        "Froilán"^^xsd:string ;
+    :hasAncestor data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_de_Marichalar_y_Borbón ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:male ;
+    :hasSister data:Victoria_de_Marichalar_y_Borbón ;
+    :isBloodrelationOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isBrotherOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isChildOf data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isSonOf data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar .
+
+data:Victoria_de_Marichalar_y_Borbón a :Person,
+        :Woman ;
+    rdfs:label "Victoria de Marichalar y Borbón"^^xsd:string ;
+    data:posIndicesFull "695:726"^^xsd:string ;
+    data:posIndicesPart "1471:1481"^^xsd:string,
+        "2440:2450"^^xsd:string,
+        "2453:2459"^^xsd:string ;
+    data:wdtLink wdt:Q3232562 ;
+    :alsoKnownAs "Victoria Federica de Marichalar y Borbón"^^xsd:string,
+        "Victoria Federica de Todos los Santos Marichalar y de Borbón"^^xsd:string ;
+    :hasAncestor data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_de_Marichalar_y_Borbón ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:female ;
+    :hasSister data:Victoria_de_Marichalar_y_Borbón ;
+    :isBloodrelationOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isChildOf data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isDaughterOf data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isSisterOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón .
+
+data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta Elena, Duchess of Lugo"^^xsd:string ;
+    data:posIndicesFull "163:176"^^xsd:string,
+        "163:193"^^xsd:string ;
+    data:posIndicesPart "614:621"^^xsd:string,
+        "653:658"^^xsd:string,
+        "985:989"^^xsd:string ;
+    data:wdtLink wdt:Q54386 ;
+    :alsoKnownAs "Elena Maria Isabela Dominica de Silas de Borbón y Grecia, Infanta de España"^^xsd:string,
+        "Elena de Borbón"^^xsd:string,
+        "Infanta Elena"^^xsd:string,
+        "Infanta Elena of Spain"^^xsd:string ;
+    :hasAncestor data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasChild data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasDaughter data:Victoria_de_Marichalar_y_Borbón ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Felipe_de_Marichalar_y_Borbón,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasSon data:Felipe_de_Marichalar_y_Borbón ;
+    :isAncestorOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isAuntOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isMotherOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isParentOf data:Felipe_de_Marichalar_y_Borbón,
+        data:Victoria_de_Marichalar_y_Borbón ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSisterOf data:Felipe_VI_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo .
+

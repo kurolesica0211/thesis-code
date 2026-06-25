@@ -2,45 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 1874 ;
-    :hasDeathYear 1947 ;
-    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear 1906 ;
-    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Johann_Georg_of_Saxony .
-
-data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person .
-
-data:Ferdinand_II_of_Portugal a :Ancestor,
-        :Man,
-        :Person .
-
-data:Frederick_Augustus_III_of_Saxony a :Man,
-        :Person .
-
-data:George_of_Saxony a :Man,
-        :Person .
-
-data:Johann_Georg_of_Saxony a :Man,
+data:KarlAdolfAndreasOfHesse a :Man,
         :Person ;
-    :hasBrother data:Frederick_Augustus_III_of_Saxony ;
-    :hasFather data:George_of_Saxony ;
-    :hasMother data:Maria_Anna_of_Portugal .
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:PrinceChristophOfHesse ;
+    :hasMother data:PrincessSophieOfGreeceAndDenmark .
 
-data:Maria_Anna_of_Portugal a :Person,
+data:KingCharlesIII a :Man,
+        :Person .
+
+data:KingPaulOfGreece a :Man,
+        :Person .
+
+data:PrinceWolfgangOfHesse a :Man,
+        :Person ;
+    :isBrotherOf data:PrinceChristophOfHesse .
+
+data:QueenFrederica a :Person,
+        :Woman .
+
+data:PrinceGeorgeWilliamOfHanover a :Man,
+        :Person .
+
+data:PrincePhilipDukeOfEdinburgh a :Man,
+        :Person .
+
+data:PrincessSophieOfGreeceAndDenmark a :Person,
         :Woman ;
-    :hasFather data:Ferdinand_II_of_Portugal ;
-    :hasMother data:Maria_II_of_Portugal .
+    :hasMarriageYear 1946 ;
+    :hasRelation data:PrinceGeorgeWilliamOfHanover ;
+    :isSisterOf data:PrincePhilipDukeOfEdinburgh .
 
-data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Maria_II_of_Portugal a :Ancestor,
-        :Person,
-        :Woman .
+data:PrinceChristophOfHesse a :Man,
+        :Person .
 

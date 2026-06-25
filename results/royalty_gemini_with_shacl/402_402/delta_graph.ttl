@@ -2,33 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:IvarMountbatten a :Man,
+data:Michael_I a :Man,
         :Person ;
-    :hasBirthYear 1963 ;
-    :hasBrother data:GeorgeMountbatten ;
-    :hasFather data:DavidMountbatten ;
-    :hasMarriageYear data:PenelopeAnneVereThompson,
-        1994 ;
-    :hasMother data:JanetMercedesBryce ;
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasRelation data:Anne_of_Bourbon-Parma ;
     :hasSex data:Male .
 
-data:DavidMountbatten a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:GeorgeMountbatten a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:JanetMercedesBryce a :Ancestor,
+data:Anne_of_Bourbon-Parma a :Person,
         :Woman ;
     :hasSex data:Female .
 
-data:PenelopeAnneVereThompson a :Person,
+data:Carol_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Ferdinand_I ;
+    :hasSex data:Male .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Elena_of_Romania a :Ancestor,
+        :Person,
         :Woman ;
+    :hasFather data:Constantine_I_of_Greece ;
     :hasSex data:Female .
 
-data:Female a :Sex .
+data:Ferdinand_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Male a :Sex .
+data:Female a :Female .
+
+data:Male a :Male .
 

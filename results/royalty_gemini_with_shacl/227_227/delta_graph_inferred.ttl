@@ -1,0 +1,91 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Female a :Female,
+        :Sex .
+
+data:MariaCarolina a :Person,
+        :Woman ;
+    :hasRelation data:CamillaCrociani,
+        data:MariaCarolina,
+        data:MariaChiara,
+        data:PrinceCarlo ;
+    :hasSex data:Female ;
+    :hasSister data:MariaCarolina,
+        data:MariaChiara ;
+    :isBloodrelationOf data:MariaCarolina,
+        data:MariaChiara ;
+    :isSiblingOf data:MariaCarolina,
+        data:MariaChiara ;
+    :isSisterOf data:MariaCarolina,
+        data:MariaChiara .
+
+data:CamillaCrociani a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaChiara ;
+    :hasDaughter data:MariaChiara ;
+    :hasRelation data:CamillaCrociani,
+        data:MariaCarolina,
+        data:MariaChiara,
+        data:PrinceCarlo ;
+    :hasSex data:Female ;
+    :hasSister data:CamillaCrociani ;
+    :isAncestorOf data:MariaChiara ;
+    :isAuntOf data:MariaChiara ;
+    :isBloodrelationOf data:CamillaCrociani ;
+    :isMotherOf data:MariaChiara ;
+    :isParentOf data:MariaChiara ;
+    :isSiblingOf data:CamillaCrociani ;
+    :isSisterOf data:CamillaCrociani .
+
+data:PrinceCarlo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceCarlo ;
+    :hasChild data:MariaChiara ;
+    :hasDaughter data:MariaChiara ;
+    :hasRelation data:CamillaCrociani,
+        data:MariaCarolina,
+        data:MariaChiara,
+        data:PrinceCarlo ;
+    :hasSex data:Male ;
+    :isAncestorOf data:MariaChiara ;
+    :isBloodrelationOf data:PrinceCarlo ;
+    :isBrotherOf data:PrinceCarlo ;
+    :isFatherOf data:MariaChiara ;
+    :isParentOf data:MariaChiara ;
+    :isSiblingOf data:PrinceCarlo ;
+    :isUncleOf data:MariaChiara .
+
+data:MariaChiara a :Person,
+        :Woman ;
+    :hasAncestor data:CamillaCrociani,
+        data:PrinceCarlo ;
+    :hasBirthYear 2005 ;
+    :hasFather data:PrinceCarlo ;
+    :hasMother data:CamillaCrociani ;
+    :hasParent data:CamillaCrociani,
+        data:PrinceCarlo ;
+    :hasRelation data:CamillaCrociani,
+        data:MariaCarolina,
+        data:MariaChiara,
+        data:PrinceCarlo ;
+    :hasSex data:Female ;
+    :hasSister data:MariaCarolina,
+        data:MariaChiara ;
+    :isBloodrelationOf data:MariaCarolina,
+        data:MariaChiara ;
+    :isChildOf data:CamillaCrociani,
+        data:PrinceCarlo ;
+    :isDaughterOf data:CamillaCrociani,
+        data:PrinceCarlo ;
+    :isSiblingOf data:MariaCarolina,
+        data:MariaChiara ;
+    :isSisterOf data:MariaCarolina,
+        data:MariaChiara .
+

@@ -85,49 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
-John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
-Background
+Lady Mary Cecilia Colman (née Bowes-Lyon; 30 January 1932 – 2 January 2021) was an English socialite, philanthropist, and extra lady-in-waiting to Princess Alexandra, The Honourable Lady Ogilvy.
+The daughter of Michael Bowes-Lyon and Elizabeth Margaret Cator, her paternal aunt was Queen Elizabeth
+The Queen Mother, and she was thus a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
+Early life
 
-Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
-Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
-Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
-Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
-Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
-The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
-Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
-Controversy
+Mary Cecilia Bowes-Lyon was born on 30 January 1932 at Gastlings, the Bowes-Lyon family home in Biggleswade, Bedfordshire.
+Her father, Michael Bowes-Lyon (1893–1953), was the fifth son of Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne (née Cavendish-Bentinck).
+Her mother, Elizabeth Margaret Cator (1899–1959), was a great-granddaughter of Charles Yorke, 4th Earl of Hardwicke.
+She had a twin sister, Patricia Maud, later Lady Patricia Tetley, an older brother, Fergus Michael Claude, later Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne, and a younger brother, Michael Albemarle.
+Lady Mary was also a godmother to Diana, Princess of Wales.
+In 1949, a coming-out ball was held for her and her twin sister Patricia at Londonderry House, which was attended by their aunt, the Queen, and their cousins, The Princess Elizabeth and The Princess Margaret.
+Marriage and children
 
-Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
-According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
-When Nerissa died in 1986, none of her family attended the funeral.
-Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
-Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
-The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
-Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
-David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
-According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
-Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
-The Queen's Hidden Cousins
+On 10 November 1951 at St Bartholomew-the-Great in London, Mary married the then-Lieutenant Timothy Colman, son of the cricketer Geoffrey Colman.
+Work and later life
 
-In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
-The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
-"
-
-
-Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
-Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
-She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
-Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
-Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
+In 1970, Mary was appointed an Extra Lady-in-waiting to another of the Queen's first cousins, Princess Alexandra, The Hon.
+After her elder brother succeeded their cousin as 17th Earl of Strathmore and Kinghorne, she received the title and precedence of a daughter of an earl by royal warrant of precedence in 1974.
+Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 88.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -143,39 +128,9 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -190,6 +145,23 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -207,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -305,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -317,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -325,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -363,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -378,170 +453,280 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9b5560e9-3fad-4569-8e5a-005d5d6520df)
- Call ID: 9b5560e9-3fad-4569-8e5a-005d5d6520df
+  AssignClass (c6f4d231-e099-4f30-8a26-fea96ff34e7e)
+ Call ID: c6f4d231-e099-4f30-8a26-fea96ff34e7e
   Args:
+    source: :Mary_Cecilia_Colman
     type: :Woman
-    source: Nerissa_Bowes-Lyon
-  AssignClass (fa9938e1-37c0-4ae3-9c03-370f0b8228ec)
- Call ID: fa9938e1-37c0-4ae3-9c03-370f0b8228ec
+  AssignClass (c06ea962-371c-464f-81b5-260811664f6d)
+ Call ID: c06ea962-371c-464f-81b5-260811664f6d
   Args:
-    type: :Woman
-    source: Katherine_Bowes-Lyon
-  AssignClass (0b1362fb-4f57-4703-a662-b2b090494d47)
- Call ID: 0b1362fb-4f57-4703-a662-b2b090494d47
+    type: :Person
+    source: :Mary_Cecilia_Colman
+  AddLiteral (da148c6f-0ea5-4872-9933-7158e8e89ee8)
+ Call ID: da148c6f-0ea5-4872-9933-7158e8e89ee8
   Args:
-    type: :Man
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (d3c7909c-f685-40f7-8c78-b2a32ced0d9d)
- Call ID: d3c7909c-f685-40f7-8c78-b2a32ced0d9d
-  Args:
-    type: :Woman
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (0db42791-6ebe-495a-a498-f6fd123f82dd)
- Call ID: 0db42791-6ebe-495a-a498-f6fd123f82dd
-  Args:
-    type: :Man
-    source: Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (2ce58e30-fcc5-4c8e-8b0a-06e8c62615e8)
- Call ID: 2ce58e30-fcc5-4c8e-8b0a-06e8c62615e8
-  Args:
-    type: :Woman
-    source: Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AssignClass (418096a4-533c-4bda-969d-4a049d20b152)
- Call ID: 418096a4-533c-4bda-969d-4a049d20b152
-  Args:
-    type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AssignClass (9a3b13c2-e64f-4586-b469-29ea0457b078)
- Call ID: 9a3b13c2-e64f-4586-b469-29ea0457b078
-  Args:
-    type: :Woman
-    source: Lady_Jane_McDonnell
-  AssignClass (2633a4ba-2b44-4512-8fe4-eab98c6385c9)
- Call ID: 2633a4ba-2b44-4512-8fe4-eab98c6385c9
-  Args:
-    type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AssignClass (dce85413-0f34-4cef-b67e-7ae021df3226)
- Call ID: dce85413-0f34-4cef-b67e-7ae021df3226
-  Args:
-    type: :Woman
-    source: Harriet_Williamina_Hepburn-Forbes
-  AssignClass (b6a931fc-25f0-4771-b3ea-c133901f6a4f)
- Call ID: b6a931fc-25f0-4771-b3ea-c133901f6a4f
-  Args:
-    type: :Woman
-    source: Elizabeth_Bowes-Lyon
-  AddLiteral (e1fdaa2a-e603-426f-86bd-7e3cf4ebf883)
- Call ID: e1fdaa2a-e603-426f-86bd-7e3cf4ebf883
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Nerissa_Bowes-Lyon
-    literal_value: 1919
-  AddLiteral (9ca82696-aab1-4bfe-9d18-e8446a663af5)
- Call ID: 9ca82696-aab1-4bfe-9d18-e8446a663af5
-  Args:
-    literal_value: 1986
-    source: Nerissa_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddLiteral (bdca11bc-5265-4a6f-96c7-a367d2794116)
- Call ID: bdca11bc-5265-4a6f-96c7-a367d2794116
-  Args:
+    source: :Mary_Cecilia_Colman
+    literal_value: 1932
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Katherine_Bowes-Lyon
-    literal_value: 1926
-  AddLiteral (6c72c805-14c4-4237-9adb-ddcb77cf2d7b)
- Call ID: 6c72c805-14c4-4237-9adb-ddcb77cf2d7b
+  AddLiteral (75c26399-08ec-4c1d-8c4c-3c653757fd6a)
+ Call ID: 75c26399-08ec-4c1d-8c4c-3c653757fd6a
   Args:
-    literal_value: 2014
-    source: Katherine_Bowes-Lyon
-    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (79591870-6bba-4024-8368-4e31ad948bcc)
- Call ID: 79591870-6bba-4024-8368-4e31ad948bcc
+    relation: :hasDeathYear
+    source: :Mary_Cecilia_Colman
+    literal_value: 2021
+  AddLiteral (e4b37ee3-703a-4ed7-a87f-d411f8a0a38a)
+ Call ID: e4b37ee3-703a-4ed7-a87f-d411f8a0a38a
   Args:
-    target: John_Herbert_Bowes-Lyon
+    source: :Mary_Cecilia_Colman
+    literal_value: 1951
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (5095562a-3ce6-453a-be6b-91bc057a1f8b)
+ Call ID: 5095562a-3ce6-453a-be6b-91bc057a1f8b
+  Args:
+    type: :Man
+    source: :Michael_Bowes-Lyon
+  AssignClass (eb938b4e-56ca-437a-8e9e-f647c7607c18)
+ Call ID: eb938b4e-56ca-437a-8e9e-f647c7607c18
+  Args:
+    type: :Person
+    source: :Michael_Bowes-Lyon
+  AssignClass (27395870-d73f-437d-90f6-ffa737a3c0cf)
+ Call ID: 27395870-d73f-437d-90f6-ffa737a3c0cf
+  Args:
+    type: :Ancestor
+    source: :Michael_Bowes-Lyon
+  AddLiteral (15c18c0d-3122-46f5-b2cc-6a636e06b250)
+ Call ID: 15c18c0d-3122-46f5-b2cc-6a636e06b250
+  Args:
+    source: :Michael_Bowes-Lyon
+    literal_value: 1893
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (2f2d51e8-9749-497a-ad48-85c809cdfc09)
+ Call ID: 2f2d51e8-9749-497a-ad48-85c809cdfc09
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Michael_Bowes-Lyon
+    literal_value: 1953
+  AssignClass (47937692-9de0-45e2-a6a5-6af3cec90afd)
+ Call ID: 47937692-9de0-45e2-a6a5-6af3cec90afd
+  Args:
+    type: :Woman
+    source: :Elizabeth_Margaret_Cator
+  AssignClass (9c657568-98b2-439e-a42b-30cf428465cf)
+ Call ID: 9c657568-98b2-439e-a42b-30cf428465cf
+  Args:
+    type: :Person
+    source: :Elizabeth_Margaret_Cator
+  AssignClass (d338ea8f-237b-4eed-9807-f725d7e7d1d5)
+ Call ID: d338ea8f-237b-4eed-9807-f725d7e7d1d5
+  Args:
+    type: :Ancestor
+    source: :Elizabeth_Margaret_Cator
+  AddLiteral (41bd74ff-f997-4278-a325-7d3a6754668b)
+ Call ID: 41bd74ff-f997-4278-a325-7d3a6754668b
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Elizabeth_Margaret_Cator
+    literal_value: 1899
+  AddLiteral (d7bd3adf-06d5-4b61-9273-42b86731ca84)
+ Call ID: d7bd3adf-06d5-4b61-9273-42b86731ca84
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Elizabeth_Margaret_Cator
+    literal_value: 1959
+  AddTriple (244dc53d-83da-4706-8711-e2a4aa10d2ff)
+ Call ID: 244dc53d-83da-4706-8711-e2a4aa10d2ff
+  Args:
+    source: :Mary_Cecilia_Colman
+    target: :Michael_Bowes-Lyon
     relation: :hasFather
-    source: Nerissa_Bowes-Lyon
-  AddTriple (759aa5d7-bd22-4c8e-af24-fdcf8b6ec6f9)
- Call ID: 759aa5d7-bd22-4c8e-af24-fdcf8b6ec6f9
-  Args:
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    relation: :hasMother
-    source: Nerissa_Bowes-Lyon
-  AddTriple (9110f59e-fc9c-4c0d-a68a-086f9858d672)
- Call ID: 9110f59e-fc9c-4c0d-a68a-086f9858d672
-  Args:
-    target: John_Herbert_Bowes-Lyon
-    relation: :hasFather
-    source: Katherine_Bowes-Lyon
-  AddTriple (1a77b4b6-354d-450a-9a98-264f17ad87fe)
- Call ID: 1a77b4b6-354d-450a-9a98-264f17ad87fe
-  Args:
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    source: Katherine_Bowes-Lyon
-    relation: :hasMother
-  AddTriple (cf1c7f70-4204-4096-8f1a-6b4ecad6dc3d)
- Call ID: cf1c7f70-4204-4096-8f1a-6b4ecad6dc3d
-  Args:
-    source: John_Herbert_Bowes-Lyon
-    relation: :hasFather
-    target: Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AddTriple (8d0c2605-d989-4382-8159-cdffc488e38e)
- Call ID: 8d0c2605-d989-4382-8159-cdffc488e38e
-  Args:
-    source: John_Herbert_Bowes-Lyon
-    relation: :hasMother
-    target: Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AddTriple (8b231ccb-dd80-48b8-90bb-1892137e2007)
- Call ID: 8b231ccb-dd80-48b8-90bb-1892137e2007
+  AddTriple (86886e76-138e-43cc-b3e8-a0a3bf4a360e)
+ Call ID: 86886e76-138e-43cc-b3e8-a0a3bf4a360e
   Args:
     relation: :hasMother
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AddTriple (079c971f-a169-4eaa-af08-a7c6dd9c8503)
- Call ID: 079c971f-a169-4eaa-af08-a7c6dd9c8503
+    target: :Elizabeth_Margaret_Cator
+    source: :Mary_Cecilia_Colman
+  AssignClass (08c6e0da-9b59-450d-9439-8948dde4919e)
+ Call ID: 08c6e0da-9b59-450d-9439-8948dde4919e
+  Args:
+    type: :Man
+    source: :Claude_Bowes-Lyon
+  AssignClass (3b743205-1688-4600-b585-90a564918066)
+ Call ID: 3b743205-1688-4600-b585-90a564918066
+  Args:
+    source: :Claude_Bowes-Lyon
+    type: :Person
+  AssignClass (e5672018-3cd6-43fd-bd4f-c37b49dc9163)
+ Call ID: e5672018-3cd6-43fd-bd4f-c37b49dc9163
+  Args:
+    source: :Claude_Bowes-Lyon
+    type: :Ancestor
+  AddTriple (12ce588b-7a28-419a-a571-0e9f3c25e54c)
+ Call ID: 12ce588b-7a28-419a-a571-0e9f3c25e54c
   Args:
     relation: :hasFather
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AddTriple (d0249fee-47e9-4766-a08c-1cc12150c41b)
- Call ID: d0249fee-47e9-4766-a08c-1cc12150c41b
+    target: :Claude_Bowes-Lyon
+    source: :Michael_Bowes-Lyon
+  AssignClass (f78e851e-65e1-41d3-a6a3-27fd0b51035d)
+ Call ID: f78e851e-65e1-41d3-a6a3-27fd0b51035d
   Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    type: :Woman
+    source: :Cecilia_Bowes-Lyon
+  AssignClass (15e7045a-53f3-4de4-b7ce-28f82f9f6466)
+ Call ID: 15e7045a-53f3-4de4-b7ce-28f82f9f6466
+  Args:
+    source: :Cecilia_Bowes-Lyon
+    type: :Person
+  AssignClass (2134039f-1d60-4a8b-bf06-bdb4ee645098)
+ Call ID: 2134039f-1d60-4a8b-bf06-bdb4ee645098
+  Args:
+    source: :Cecilia_Bowes-Lyon
+    type: :Ancestor
+  AddTriple (4f8845a2-fecd-4eeb-8e3a-f51d89463a59)
+ Call ID: 4f8845a2-fecd-4eeb-8e3a-f51d89463a59
+  Args:
     relation: :hasMother
-    target: Harriet_Williamina_Hepburn-Forbes
-  AddTriple (860ccc26-b7b2-436a-8ae5-32333c973244)
- Call ID: 860ccc26-b7b2-436a-8ae5-32333c973244
+    target: :Cecilia_Bowes-Lyon
+    source: :Michael_Bowes-Lyon
+  AssignClass (93467cc0-6ec1-4bdc-85d6-f23230740583)
+ Call ID: 93467cc0-6ec1-4bdc-85d6-f23230740583
   Args:
+    type: :Woman
+    source: :Patricia_Maud_Tetley
+  AssignClass (6bd76fc0-8c77-4462-ab8b-b6a25026854c)
+ Call ID: 6bd76fc0-8c77-4462-ab8b-b6a25026854c
+  Args:
+    type: :Person
+    source: :Patricia_Maud_Tetley
+  AddTriple (31ebe3ab-e0b3-431e-b5b4-3fc4b41c0556)
+ Call ID: 31ebe3ab-e0b3-431e-b5b4-3fc4b41c0556
+  Args:
+    source: :Mary_Cecilia_Colman
+    target: :Patricia_Maud_Tetley
+    relation: :isSiblingOf
+  AssignClass (250caf4e-c69f-4c64-ad20-49c98565e5fd)
+ Call ID: 250caf4e-c69f-4c64-ad20-49c98565e5fd
+  Args:
+    source: :Fergus_Michael_Claude_Bowes-Lyon
+    type: :Man
+  AssignClass (aa49ee96-96f7-4887-9381-505fccc5c29b)
+ Call ID: aa49ee96-96f7-4887-9381-505fccc5c29b
+  Args:
+    type: :Person
+    source: :Fergus_Michael_Claude_Bowes-Lyon
+  AddTriple (f8368769-f5c4-46ab-8379-daf6249323cf)
+ Call ID: f8368769-f5c4-46ab-8379-daf6249323cf
+  Args:
+    source: :Mary_Cecilia_Colman
+    relation: :isSiblingOf
+    target: :Fergus_Michael_Claude_Bowes-Lyon
+  AssignClass (954fe23a-0495-41b1-8611-ec4d47493c45)
+ Call ID: 954fe23a-0495-41b1-8611-ec4d47493c45
+  Args:
+    type: :Man
+    source: :Michael_Albemarle_Bowes-Lyon
+  AssignClass (c65ddc00-f328-4713-880c-347b7272cbef)
+ Call ID: c65ddc00-f328-4713-880c-347b7272cbef
+  Args:
+    source: :Michael_Albemarle_Bowes-Lyon
+    type: :Person
+  AddTriple (46e7babe-38ae-4a67-b966-6b071b757b66)
+ Call ID: 46e7babe-38ae-4a67-b966-6b071b757b66
+  Args:
+    relation: :isSiblingOf
+    target: :Michael_Albemarle_Bowes-Lyon
+    source: :Mary_Cecilia_Colman
+  AssignClass (7ad76a6a-1b11-4bf3-9b4b-37dfe2a3b28d)
+ Call ID: 7ad76a6a-1b11-4bf3-9b4b-37dfe2a3b28d
+  Args:
+    source: :Timothy_Colman
+    type: :Man
+  AssignClass (a457a2be-f661-4d0b-9e20-08c8c9cae381)
+ Call ID: a457a2be-f661-4d0b-9e20-08c8c9cae381
+  Args:
+    type: :Person
+    source: :Timothy_Colman
+  AddTriple (78f33a6c-4004-4583-9ee7-3d9a3ab35037)
+ Call ID: 78f33a6c-4004-4583-9ee7-3d9a3ab35037
+  Args:
+    source: :Mary_Cecilia_Colman
+    target: :Timothy_Colman
+    relation: :hasRelation
+  AssignClass (e2448234-1ead-4da7-981b-380a1afedcaf)
+ Call ID: e2448234-1ead-4da7-981b-380a1afedcaf
+  Args:
+    source: :Geoffrey_Colman
+    type: :Man
+  AssignClass (e60f8bd6-9452-4440-966f-8b5a3891b21b)
+ Call ID: e60f8bd6-9452-4440-966f-8b5a3891b21b
+  Args:
+    type: :Person
+    source: :Geoffrey_Colman
+  AddTriple (fc13401c-0cc5-4889-a786-bed9075eccfe)
+ Call ID: fc13401c-0cc5-4889-a786-bed9075eccfe
+  Args:
+    source: :Timothy_Colman
+    target: :Geoffrey_Colman
     relation: :hasFather
-    source: Elizabeth_Bowes-Lyon
-    target: Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AddTriple (51357e8c-3576-4fbe-8b69-41d303c05878)
- Call ID: 51357e8c-3576-4fbe-8b69-41d303c05878
+  Finish (ea5e1907-0015-4517-b505-82274f04ba42)
+ Call ID: ea5e1907-0015-4517-b505-82274f04ba42
   Args:
-    relation: :hasMother
-    source: Elizabeth_Bowes-Lyon
-    target: Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AddTriple (64d09172-566e-4880-bc58-21d3075a6820)
- Call ID: 64d09172-566e-4880-bc58-21d3075a6820
-  Args:
-    target: John_Herbert_Bowes-Lyon
-    source: Elizabeth_Bowes-Lyon
-    relation: :isSisterOf
-  AddTriple (8e2fe3b4-f51a-4369-8b91-f29e93aee603)
- Call ID: 8e2fe3b4-f51a-4369-8b91-f29e93aee603
-  Args:
-    target: Katherine_Bowes-Lyon
-    relation: :isSisterOf
-    source: Nerissa_Bowes-Lyon
-  Finish (3d0627ff-7c27-45a3-ae69-72e1a0fe0c79)
- Call ID: 3d0627ff-7c27-45a3-ae69-72e1a0fe0c79
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -658,44 +843,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_Bowes-Lyon a :Woman ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne ;
-      :isSisterOf data:John_Herbert_Bowes-Lyon .
+  data:Mary_Cecilia_Colman a :Person,
+          :Woman ;
+      :hasBirthYear 1932 ;
+      :hasDeathYear 2021 ;
+      :hasFather data:Michael_Bowes-Lyon ;
+      :hasMarriageYear 1951 ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasRelation data:Timothy_Colman ;
+      :isSiblingOf data:Fergus_Michael_Claude_Bowes-Lyon,
+          data:Michael_Albemarle_Bowes-Lyon,
+          data:Patricia_Maud_Tetley .
 
-  data:Lady_Jane_McDonnell a :Woman .
+  data:Cecilia_Bowes-Lyon a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Nerissa_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :isSisterOf data:Katherine_Bowes-Lyon .
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Man .
+  data:Elizabeth_Margaret_Cator a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1959 .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Fergus_Michael_Claude_Bowes-Lyon a :Man,
+          :Person .
 
-  data:Harriet_Williamina_Hepburn-Forbes a :Woman .
+  data:Geoffrey_Colman a :Man,
+          :Person .
 
-  data:Katherine_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+  data:Michael_Albemarle_Bowes-Lyon a :Man,
+          :Person .
 
-  data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Woman .
+  data:Michael_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon .
 
-  data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Man .
+  data:Patricia_Maud_Tetley a :Person,
+          :Woman .
 
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
-      :hasMother data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
-
-  data:John_Herbert_Bowes-Lyon a :Man ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
+  data:Timothy_Colman a :Man,
+          :Person ;
+      :hasFather data:Geoffrey_Colman .
 
 
 
@@ -707,302 +903,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (77974677-98e1-489b-8d53-3d568ac8e784)
- Call ID: 77974677-98e1-489b-8d53-3d568ac8e784
+  ValidateShacl (0e4331de-05fa-465c-bb44-d746715eadc2)
+ Call ID: 0e4331de-05fa-465c-bb44-d746715eadc2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:36
+Total violations:3
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton is missing the required class :Ancestor.
+      The node 'Geoffrey_Colman', which is the value of the 'hasFather' property for 'Timothy_Colman', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'Geoffrey_Colman'.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
+      The node 'Geoffrey_Colman' is still failing the class membership check for the 'hasFather' property as it lacks the required ':Ancestor' definition.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
+      Use 'AssignClass' to add ':Man' to 'Geoffrey_Colman' to ensure it meets the required range constraints.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Harriet_Williamina_Hepburn-Forbes is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
+      The node 'Geoffrey_Colman' is missing the explicit classification required by the SHACL shape for the 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Harriet_Williamina_Hepburn-Forbes is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Harriet_Williamina_Hepburn-Forbes is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is invalid for the property :hasMother, which requires a :Woman or :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Fenella_Hepburn-Stuart-Forbes-Trefusis, :hasMother, Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton)
+      Use 'AssignClass' to ensure 'Geoffrey_Colman' is correctly typed as both ':Man' and ':Ancestor'.
 
 
 
@@ -1011,63 +943,34 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (5baa9af0-09b6-4b95-ba2a-3dc553f46983)
- Call ID: 5baa9af0-09b6-4b95-ba2a-3dc553f46983
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    type: :Ancestor
-  AssignClass (f0c46b79-c124-4ef2-879b-897180dd1cde)
- Call ID: f0c46b79-c124-4ef2-879b-897180dd1cde
+  AssignClass (53cd13a6-5aba-4b43-a25d-4bd37a6bbac4)
+ Call ID: 53cd13a6-5aba-4b43-a25d-4bd37a6bbac4
   Args:
     type: :Ancestor
-    source: Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (3f7543fb-1f8c-474a-846b-f3a088aecd39)
- Call ID: 3f7543fb-1f8c-474a-846b-f3a088aecd39
+    source: :Geoffrey_Colman
+  AssignClass (4e795017-4088-410b-a5ff-4da4bd5bd5e6)
+ Call ID: 4e795017-4088-410b-a5ff-4da4bd5bd5e6
+  Args:
+    source: :Patricia_Maud_Tetley
+    type: :Ancestor
+  AssignClass (c1a6892d-b65e-4fb2-9419-4970c73fc1ae)
+ Call ID: c1a6892d-b65e-4fb2-9419-4970c73fc1ae
+  Args:
+    source: :Fergus_Michael_Claude_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (e6773002-b56d-474b-83f1-03dfdce4a06c)
+ Call ID: e6773002-b56d-474b-83f1-03dfdce4a06c
+  Args:
+    source: :Michael_Albemarle_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (34a8667d-5dbb-4a87-bd54-feffa527ab1b)
+ Call ID: 34a8667d-5dbb-4a87-bd54-feffa527ab1b
   Args:
     type: :Ancestor
-    source: Harriet_Williamina_Hepburn-Forbes
-  AssignClass (3abe41dc-4f81-483b-9868-3c6e9469e874)
- Call ID: 3abe41dc-4f81-483b-9868-3c6e9469e874
+    source: :Timothy_Colman
+  ValidateShacl (f4345cc2-fe37-463d-88c2-fc9f1ea43346)
+ Call ID: f4345cc2-fe37-463d-88c2-fc9f1ea43346
   Args:
-    type: :Ancestor
-    source: Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AssignClass (a063d2e5-3581-4b67-9a00-66664f39fef6)
- Call ID: a063d2e5-3581-4b67-9a00-66664f39fef6
-  Args:
-    type: :Ancestor
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (d4293c4f-f754-414a-a19e-cd9767e033a9)
- Call ID: d4293c4f-f754-414a-a19e-cd9767e033a9
-  Args:
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    type: :Ancestor
-  RemoveTriple (1175431d-7dc7-4de0-8e46-4807c9149094)
- Call ID: 1175431d-7dc7-4de0-8e46-4807c9149094
-  Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    relation: :hasMother
-  AddTriple (ef759f6e-5287-4867-ae6a-67c9b39685e7)
- Call ID: ef759f6e-5287-4867-ae6a-67c9b39685e7
-  Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    relation: :hasFather
-  ValidateShacl (d734f618-5ff5-4724-9297-8b8848530ca2)
- Call ID: d734f618-5ff5-4724-9297-8b8848530ca2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1092,158 +995,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_Bowes-Lyon a :Woman ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne ;
-      :isSisterOf data:John_Herbert_Bowes-Lyon .
-
-  data:Lady_Jane_McDonnell a :Woman .
-
-  data:Nerissa_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :isSisterOf data:Katherine_Bowes-Lyon .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor,
-          :Man .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-  data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
-          :Woman .
-
-  data:Katherine_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
-
-  data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Woman .
-
-  data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Man .
-
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+  data:Mary_Cecilia_Colman a :Person,
           :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
+      :hasBirthYear 1932 ;
+      :hasDeathYear 2021 ;
+      :hasFather data:Michael_Bowes-Lyon ;
+      :hasMarriageYear 1951 ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasRelation data:Timothy_Colman ;
+      :isSiblingOf data:Fergus_Michael_Claude_Bowes-Lyon,
+          data:Michael_Albemarle_Bowes-Lyon,
+          data:Patricia_Maud_Tetley .
 
-  data:John_Herbert_Bowes-Lyon a :Ancestor,
-          :Man ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:4
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is assigned the class :Man, but the SHACL constraint for the property :hasFather requires the value to be an instance of :Ancestor as well.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is assigned the class :Man, but the SHACL constraint for the property :hasFather requires the value to be an instance of :Ancestor as well.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is assigned the class :Man, but the SHACL constraint for the property :hasFather requires the value to be an instance of :Ancestor as well.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton is assigned the class :Man, but the SHACL constraint for the property :hasFather requires the value to be an instance of :Ancestor as well.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f484ccfd-59ce-47b3-b936-cb4827af6e30)
- Call ID: f484ccfd-59ce-47b3-b936-cb4827af6e30
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    type: :Ancestor
-  ValidateShacl (162df950-89f1-469f-83f6-c4ad489e3bf4)
- Call ID: 162df950-89f1-469f-83f6-c4ad489e3bf4
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Elizabeth_Bowes-Lyon a :Woman ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne ;
-      :isSisterOf data:John_Herbert_Bowes-Lyon .
-
-  data:Lady_Jane_McDonnell a :Woman .
-
-  data:Nerissa_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :isSisterOf data:Katherine_Bowes-Lyon .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor,
-          :Man .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
-          :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-  data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
+  data:Cecilia_Bowes-Lyon a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Katherine_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Woman .
-
-  data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Man .
-
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+  data:Elizabeth_Margaret_Cator a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1959 .
 
-  data:John_Herbert_Bowes-Lyon a :Ancestor,
-          :Man ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
+  data:Fergus_Michael_Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Geoffrey_Colman a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Michael_Albemarle_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Michael_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon .
+
+  data:Patricia_Maud_Tetley a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Timothy_Colman a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Geoffrey_Colman .
 
 
 
@@ -1255,6 +1060,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (210878b0-bc3c-4b5d-9cd3-05b2174ee290)
- Call ID: 210878b0-bc3c-4b5d-9cd3-05b2174ee290
+  Finish (efafc410-3f95-48d7-b009-50d37fd50c35)
+ Call ID: efafc410-3f95-48d7-b009-50d37fd50c35
   Args:

@@ -7,44 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "420:435",
-        "436:452",
-        "530:545" ;
-    data:wdtLink wdt:Q10633 ;
-    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
-        "Elizabeth Angela Marguerite, Duchess of York",
-        "Elizabeth Bowes-Lyon",
-        "Elizabeth, Duchess of York",
-        "Elizabeth, Queen Consort of the British Empire",
-        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
-        "Hon. Elizabeth Bowes-Lyon",
-        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
-        "Lady Elizabeth Bowes-Lyon",
-        "Queen Elizabeth",
-        "Queen Elizabeth Angela Marguerite",
-        "Queen-Empress Elizabeth",
-        "The Queen Mother",
-        "The Queen Mum" ;
-    :hasSex data:female ;
-    :hasSister data:Rose_Leveson-Gower-_Countess_Granville ;
-    :isAuntOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :isSiblingOf data:Rose_Leveson-Gower-_Countess_Granville ;
-    :isSisterOf data:Rose_Leveson-Gower-_Countess_Granville .
-
-data:Granville_Leveson-Gower-_6th_Earl_Granville a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Granville_Leveson-Gower-_6th_Earl_Granville a :Person ;
     rdfs:label "Granville Leveson-Gower, 6th Earl Granville" ;
     data:posIndicesFull "0:37",
         "0:57",
@@ -67,41 +30,16 @@ data:Granville_Leveson-Gower-_6th_Earl_Granville a :Man,
         "Granville George Fergus Leveson-Gower",
         "Granville George Fergus Leveson-Gower, 6th Earl Granville",
         "Granville Leveson-Gower" ;
-    :hasFather data:Granville_Leveson-Gower-_5th_Earl_Granville ;
     :hasParent data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :hasSex data:male ;
-    :isChildOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :isSonOf data:Granville_Leveson-Gower-_5th_Earl_Granville .
+    :hasSex data:male .
 
-data:Rose_Leveson-Gower-_Countess_Granville a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Rose Leveson-Gower, Countess Granville" ;
-    data:posIndicesFull "309:347" ;
-    data:posIndicesPart "1039:1048",
-        "1156:1165",
-        "1309:1318",
-        "1412:1421",
-        "614:623",
-        "641:650",
-        "669:676",
-        "789:798" ;
-    data:wdtLink wdt:Q7367831 ;
-    :alsoKnownAs "Lady Rose Constance Bowes-Lyon" ;
-    :hasChild data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSon data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :isMotherOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :isParentOf data:Granville_Leveson-Gower-_5th_Earl_Granville ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Granville_Leveson-Gower-_5th_Earl_Granville a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Granville_Leveson-Gower-_5th_Earl_Granville a :Person ;
     rdfs:label "Granville Leveson-Gower, 5th Earl Granville" ;
     data:posIndicesFull "251:294" ;
     data:posIndicesPart "1039:1048",
@@ -115,13 +53,25 @@ data:Granville_Leveson-Gower-_5th_Earl_Granville a :Ancestor,
         "789:798" ;
     data:wdtLink wdt:Q25998958 ;
     :alsoKnownAs "Granville James Leveson-Gower" ;
-    :hasChild data:Granville_Leveson-Gower-_6th_Earl_Granville ;
-    :hasMother data:Rose_Leveson-Gower-_Countess_Granville ;
     :hasParent data:Rose_Leveson-Gower-_Countess_Granville ;
-    :hasSex data:male ;
-    :hasSon data:Granville_Leveson-Gower-_6th_Earl_Granville ;
-    :isChildOf data:Rose_Leveson-Gower-_Countess_Granville ;
-    :isFatherOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
-    :isParentOf data:Granville_Leveson-Gower-_6th_Earl_Granville ;
-    :isSonOf data:Rose_Leveson-Gower-_Countess_Granville .
+    :hasSex data:male .
+
+data:Rose_Leveson-Gower-_Countess_Granville a :Person ;
+    rdfs:label "Rose Leveson-Gower, Countess Granville" ;
+    data:posIndicesFull "309:347" ;
+    data:posIndicesPart "1039:1048",
+        "1156:1165",
+        "1309:1318",
+        "1412:1421",
+        "614:623",
+        "641:650",
+        "669:676",
+        "789:798" ;
+    data:wdtLink wdt:Q7367831 ;
+    :alsoKnownAs "Lady Rose Constance Bowes-Lyon" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -1,0 +1,279 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Bernhard_Jr a :Man,
+        :Person ;
+    :hasBrother data:Prince_Bernhard_Jr ;
+    :hasRelation data:Prince_Bernhard_Jr ;
+    :isBloodrelationOf data:Prince_Bernhard_Jr ;
+    :isBrotherOf data:Prince_Bernhard_Jr ;
+    :isSiblingOf data:Prince_Bernhard_Jr .
+
+data:Prince_Felix_of_Luxembourg a :Man,
+        :Person ;
+    :hasBrother data:Prince_Felix_of_Luxembourg ;
+    :hasRelation data:Prince_Felix_of_Luxembourg ;
+    :isBloodrelationOf data:Prince_Felix_of_Luxembourg ;
+    :isBrotherOf data:Prince_Felix_of_Luxembourg ;
+    :isSiblingOf data:Prince_Felix_of_Luxembourg .
+
+data:Princess_Anne_of_Bourbon-Parma a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Anne_of_Bourbon-Parma ;
+    :hasSister data:Princess_Anne_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Princess_Anne_of_Bourbon-Parma ;
+    :isSiblingOf data:Princess_Anne_of_Bourbon-Parma ;
+    :isSisterOf data:Princess_Anne_of_Bourbon-Parma .
+
+data:Princess_Armgard_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Armgard_of_Lippe-Biesterfeld ;
+    :hasSister data:Princess_Armgard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Princess_Armgard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Princess_Armgard_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Princess_Armgard_of_Lippe-Biesterfeld .
+
+data:William_II_of_the_Netherlands a :Man,
+        :Person ;
+    :hasBrother data:William_II_of_the_Netherlands ;
+    :hasRelation data:William_II_of_the_Netherlands ;
+    :isBloodrelationOf data:William_II_of_the_Netherlands ;
+    :isBrotherOf data:William_II_of_the_Netherlands ;
+    :isSiblingOf data:William_II_of_the_Netherlands .
+
+data:Jorge_Guillermo a :Man,
+        :Person ;
+    :hasBrother data:Jorge_Guillermo ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Jorge_Guillermo ;
+    :isBrotherOf data:Jorge_Guillermo ;
+    :isSiblingOf data:Jorge_Guillermo .
+
+data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person ;
+    :hasBrother data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isBrotherOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isSiblingOf data:Prince_Carlos_Hugo_of_Bourbon-Parma .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Princess_Christina_of_the_Netherlands ;
+    :hasDaughter data:Princess_Christina_of_the_Netherlands ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Princess_Christina_of_the_Netherlands ;
+    :isParentOf data:Princess_Christina_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Princess_Christina_of_the_Netherlands .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Juliana_of_the_Netherlands ;
+    :hasDaughter data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Princess_Christina_of_the_Netherlands,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isAuntOf data:Queen_Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Queen_Juliana_of_the_Netherlands ;
+    :isParentOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasChild data:Princess_Christina_of_the_Netherlands ;
+    :hasDaughter data:Princess_Christina_of_the_Netherlands ;
+    :hasMother data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Princess_Christina_of_the_Netherlands ;
+    :isAuntOf data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Juliana_of_the_Netherlands ;
+    :isChildOf data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Queen_Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Princess_Christina_of_the_Netherlands ;
+    :isParentOf data:Princess_Christina_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Queen_Juliana_of_the_Netherlands .
+
+data:Princess_Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+
+data:Princess_Irene a :Person,
+        :Woman ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Christina"^^xsd:string,
+        "Princess Marijke"^^xsd:string ;
+    :hasAncestor data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1975 ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Jorge_Guillermo,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSister data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isChildOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+

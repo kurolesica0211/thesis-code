@@ -1,0 +1,143 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marie Alix, Duchess of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "1560:1599"^^xsd:string ;
+    data:posIndicesPart "1864:1873"^^xsd:string,
+        "1878:1886"^^xsd:string,
+        "1955:1964"^^xsd:string,
+        "2154:2163"^^xsd:string,
+        "2164:2172"^^xsd:string,
+        "2321:2330"^^xsd:string,
+        "2331:2339"^^xsd:string,
+        "2581:2590"^^xsd:string,
+        "2591:2599"^^xsd:string ;
+    data:wdtLink wdt:Q6490795 ;
+    :alsoKnownAs "Marie-Alix Prinzessin zu Schaumburg-Lippe"^^xsd:string,
+        "Princess Marie Alix of Schaumburg-Lippe"^^xsd:string ;
+    :hasChild data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasRelation data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein,
+        data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :hasSon data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isAncestorOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isAuntOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isMotherOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isParentOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isSiblingOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isSisterOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein .
+
+data:Peter-_Duke_of_Schleswig-Holstein a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Peter, Duke of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "1499:1532"^^xsd:string ;
+    data:posIndicesPart "1864:1873"^^xsd:string,
+        "1878:1886"^^xsd:string,
+        "1955:1964"^^xsd:string,
+        "2146:2150"^^xsd:string,
+        "2154:2163"^^xsd:string,
+        "2164:2172"^^xsd:string,
+        "2321:2330"^^xsd:string,
+        "2331:2339"^^xsd:string,
+        "2581:2590"^^xsd:string,
+        "2591:2599"^^xsd:string ;
+    data:wdtLink wdt:Q739253 ;
+    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg"^^xsd:string ;
+    :hasBrother data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasChild data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasRelation data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein,
+        data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isAncestorOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isBrotherOf data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isFatherOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isParentOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isSiblingOf data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isUncleOf data:Prince_Christoph_of_Schleswig-Holstein .
+
+data:Prince_Christoph_of_Schleswig-Holstein a :Man,
+        :Person ;
+    rdfs:label "Prince Christoph of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "0:31"^^xsd:string,
+        "78:115"^^xsd:string ;
+    data:posIndicesPart "1062:1071"^^xsd:string,
+        "1195:1204"^^xsd:string,
+        "1205:1213"^^xsd:string,
+        "1265:1274"^^xsd:string,
+        "1379:1388"^^xsd:string,
+        "1447:1456"^^xsd:string,
+        "1457:1465"^^xsd:string,
+        "1613:1622"^^xsd:string,
+        "1711:1720"^^xsd:string,
+        "1864:1873"^^xsd:string,
+        "1878:1886"^^xsd:string,
+        "1955:1964"^^xsd:string,
+        "2039:2048"^^xsd:string,
+        "2154:2163"^^xsd:string,
+        "2164:2172"^^xsd:string,
+        "2214:2223"^^xsd:string,
+        "2310:2316"^^xsd:string,
+        "2321:2330"^^xsd:string,
+        "2331:2339"^^xsd:string,
+        "2382:2391"^^xsd:string,
+        "2581:2590"^^xsd:string,
+        "2591:2599"^^xsd:string,
+        "2621:2630"^^xsd:string,
+        "2730:2736"^^xsd:string,
+        "2955:2964"^^xsd:string,
+        "370:379"^^xsd:string,
+        "380:388"^^xsd:string,
+        "446:455"^^xsd:string,
+        "456:464"^^xsd:string,
+        "767:776"^^xsd:string,
+        "954:963"^^xsd:string,
+        "964:972"^^xsd:string ;
+    data:wdtLink wdt:Q1210791 ;
+    :alsoKnownAs "Christoph Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg"^^xsd:string,
+        "Christoph Prinz zu Schleswig-Holstein"^^xsd:string,
+        "Christoph of Schleswig-Holstein"^^xsd:string ;
+    :hasAncestor data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasBrother data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasFather data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasMother data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :hasParent data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein,
+        data:Prince_Christoph_of_Schleswig-Holstein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isBrotherOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isChildOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Prince_Christoph_of_Schleswig-Holstein ;
+    :isSonOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Peter-_Duke_of_Schleswig-Holstein .
+

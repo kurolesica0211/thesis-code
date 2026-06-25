@@ -5,22 +5,23 @@
 data:Eilika a :Person,
         :Woman .
 
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    :isBrotherOf data:Georg_von_Habsburg .
+
 data:Georg_von_Habsburg a :Man,
         :Person ;
     :alsoKnownAs "Georg Habsburg-Lothringen"^^xsd:string,
         "Habsburg György"^^xsd:string ;
     :formerlyKnownAs "Paul Georg Maria Joseph Dominikus"^^xsd:string ;
     :hasBirthYear 1964 ;
-    :hasBrother data:Karl_von_Habsburg ;
     :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1993 ;
     :hasMother data:Regina_Prinzessin_von_Sachsen-Meiningen .
 
-data:Karl_von_Habsburg a :Man,
+data:Otto_von_Habsburg a :Man,
         :Person .
 
-data:Otto_von_Habsburg a :Ancestor,
-        :Man .
-
-data:Regina_Prinzessin_von_Sachsen-Meiningen a :Ancestor,
+data:Regina_Prinzessin_von_Sachsen-Meiningen a :Person,
         :Woman .
 

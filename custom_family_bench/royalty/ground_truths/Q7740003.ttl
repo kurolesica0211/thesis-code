@@ -7,37 +7,28 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Leo_Löwenstein a :Person ;
+    rdfs:label "Leo Löwenstein" ;
+    data:wdtLink wdt:Q7740003 ;
+    :hasParent data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasSex data:male .
+
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Person ;
     rdfs:label "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg" ;
     data:posIndicesFull "369:426" ;
     data:posIndicesPart "572:582",
         "688:698" ;
     data:wdtLink wdt:Q104235 ;
     :alsoKnownAs "Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg" ;
-    :hasChild data:Leo_Löwenstein ;
-    :hasSex data:male ;
-    :hasSon data:Leo_Löwenstein ;
-    :isFatherOf data:Leo_Löwenstein ;
-    :isParentOf data:Leo_Löwenstein .
+    :hasSex data:male .
 
-data:Leo_Löwenstein a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Leo Löwenstein" ;
-    data:wdtLink wdt:Q7740003 ;
-    :hasFather data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
-    :hasParent data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
-    :hasSex data:male ;
-    :isChildOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
-    :isSonOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg .
+data:male a :Male .
 

@@ -69,40 +69,75 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg Donatus, Hereditary Grand Duke of Hesse (Georg Donatus Wilhelm Nikolaus Eduard Heinrich Karl, 8 November 1906 – 16 November 1937), was the first child of Ernest Louis, Grand Duke of Hesse, and his second wife, Princess Eleonore of Solms-Hohensolms-Lich.
-Marriage and children
+Catherine Oxenberg (born September 22, 1961) is an American actress.
+Oxenberg is the daughter of Princess Elizabeth of Yugoslavia and her first husband, Howard Oxenberg (1919–2010).
+She twice played Diana, Princess of Wales on screen, in The Royal Romance of Charles and Diana (1982) and Charles and Diana: Unhappily Ever After (1992), and has appeared in many other films.
+Early life and education
 
-On 2 February 1931, in Darmstadt, Georg Donatus, a great-grandson of Queen Victoria, married his first cousin once removed, Princess Cecilie of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, sister of Prince Philip, Duke of Edinburgh, and great-great-granddaughter of Queen Victoria and Prince Albert.
-The couple had four children:
+Oxenberg was born in New York City, and grew up in London.
+She is the eldest daughter of Princess Elizabeth of Yugoslavia (born 1936), a member of the House of Karađorđević, and her first husband Howard Oxenberg (1919–2010), a Jewish self-made textile and clothing tycoon and close friend of the Kennedy family.
+Her sister is Christina Oxenberg.
+Princess Elizabeth is the only daughter of Prince Paul of Yugoslavia (who served as regent for his cousin's eldest son King Peter II of Yugoslavia) and Princess Olga of Greece and Denmark.
+Through her maternal grandmother, Catherine is a first cousin once removed of: Prince Edward, Duke of Kent, Princess Alexandra, The Honourable Lady Ogilvy and Prince Michael of Kent.
+Oxenberg is a second cousin once removed of Queen Sofía of Spain and Charles III of the United Kingdom, making Catherine a third cousin of Felipe VI of Spain and William, Prince of Wales.
+She is also a third cousin once removed of Margrethe II of Denmark and Harald V of Norway; and a fourth cousin to Grand Duke Henri of Luxembourg and King Philippe of Belgium.
+Oxenberg was educated at the Lycée Français Charles de Gaulle in Kensington, London, St. Paul's School, and Columbia University, though she did not finish college.
+Ancestry
+
+Through her maternal grandfather, Prince Paul of Yugoslavia of the House of Karađorđević, Catherine Oxenberg is a great-great-great-granddaughter of Karađorđe, who started the First Serbian Uprising against the Ottoman Empire in 1804.
+Her maternal grandmother, Princess Olga, was the daughter of Grand Duchess Elena Vladimirovna of Russia and Prince Nicholas of Greece and Denmark, himself the son of another Romanov grand duchess, Queen Olga Konstantinovna of the Hellenes and her Danish-born husband King George of Greece, brother of Queen Alexandra of the United Kingdom and the Empress Maria Fyodorovna.
+Career
+
+Oxenberg made her acting debut in the 1982 made-for-television film The Royal Romance of Charles and Diana, in which she played Diana, Princess of Wales.
+In 1984, Oxenberg joined the hit ABC prime time soap opera Dynasty—then at its height of popularity—in the role of Amanda Carrington.
+Oxenberg left Dynasty in 1986, following a salary dispute after the end of her second season, and the role was recast with Karen Cellini.
+Though Oxenberg's publicist insisted that the actress left Dynasty voluntarily, several media outlets reported that she was fired.
+Oxenberg was the guest host on the May 10, 1986, episode of Saturday Night Live, making her the only descendant of a royal family to host the show.
+Oxenberg starred as Princess Elysa in the 1987 television film Roman Holiday.
+She also appeared in The Lair of the White Worm in 1988, and reprised the role of Diana, Princess of Wales in the TV film Charles and Diana: Unhappily Ever After in 1992.
+From 1993 to 1994, she starred in the short-lived series Acapulco H.E.A.T.
 
 
-• Prince Ludwig Ernst Andreas of Hesse and by Rhine (25 October 1931 – 16 November 1937), killed in the air accident.
-• Prince Alexander Georg Karl Heinrich of Hesse and by Rhine (14 April 1933 – 16 November 1937), killed in the air accident.
-• Princess Johanna Marina Eleonore of Hesse and by Rhine (20 September 1936 – 14 June 1939), died from meningitis.
-On 1 May 1937, Georg Donatus and Cecilie both joined the Nazi Party.
-Death
+Oxenberg was portrayed by Rachael Taylor in the 2005 telemovie Dynasty: The Making of a Guilty Pleasure, a fictionalized retelling of the behind-the-scenes goings-on during the production of Dynasty.
+In 2006, Oxenberg appeared in the TV special, Dynasty Reunion: Catfights & Caviar, in which she was reunited with her former Dynasty castmates to reminisce about the series.
+In 2019, Catherine Oxenberg produced and narrated Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter in which Andrea Roth portrayed her.
+Personal life
 
-In October 1937, Georg Donatus's father, Grand Duke Ernest Louis of Hesse, died.
-A few weeks after the funeral, his younger brother, Prince Louis, was due to marry the Hon.
-On 16 November 1937, Georg Donatus, Cecilie, their two young sons, Georg Donatus's mother, Grand Duchess Eleonore, the children's nurse, a family friend, a pilot, and two crewmen took off in a Sabena Junkers Ju 52 aeroplane from Darmstadt, bound for the United Kingdom, where Louis's marriage ceremony was to take place.
-Cecilie was in an advanced state of pregnancy with their fourth child at the time of the crash.
-The remains of the newborn baby were found in the wreckage, indicating that Cecilie had gone into labour during the flight.
-The funeral and burial of Georg Donatus and his family took place at the Rosenhöhe, Darmstadt, Hesse, a few days later.
-Among those attending were Prince Philip, Prince Christoph of Hesse, Gottfried, Prince of Hohenlohe-Langenburg, Prince Philipp of Hesse, Berthold, Margrave of Baden, Prince August Wilhelm of Prussia, and Lord Louis Mountbatten.
-A photograph of the funeral procession, showing Prince Louis as chief mourner, depicts crowds saluting the mourners with the Hitler salute.
-Georg Donatus and Cecilie's 14‐month‐old daughter, Johanna, was the only member of the immediate family who was not on board the aircraft.
-She was adopted by her uncle Louis and aunt Margaret in early 1938.
-Johanna died of meningitis in 1939.
-With the death of the childless Louis in 1968, the male line of the Hesse and by Rhine became extinct.
-Titles
+In June 1991, Oxenberg had a daughter, India Riven Oxenberg, whose father was later revealed to be the convicted drug smuggler William Weitz Shaffer.
+In December 1992, Oxenberg was living with her daughter in Coldwater Canyon, Los Angeles, California.
+Oxenberg's first marriage was to the producer Robert Evans, in Beverly Hills, California, on July 12, 1998, but the marriage was annulled nine days later.
+Oxenberg met the actor Casper Van Dien during the filming of the 1999 TV movie The Collectors, and they worked together again the same year in the Evangelical Christian thriller The Omega Code.
+Van Dien and Oxenberg have two daughters.
+In 2005, the couple appeared in their own reality series, I Married a Princess, which aired on the Lifetime Television channel in the United States and on LIVINGtv in the United Kingdom.
+Van Dien filed for divorce from Oxenberg in 2015.
+While Oxenberg and Van Dien were married, and before India joined NXIVM, Oxenberg and Van Dien were celebrity ambassadors for the non-profit organization Childhelp.
+In June 2023, Oxenberg revealed her engagement to businessman Ellis Jones.
+They began dating shortly after Jones offered Oxenberg a place to stay following her losing her home in the 2018 California wildfires.
+NXIVM
 
-Georg Donatus never acceded to the grand‐ducal throne, as it had been abolished at the end of the First World War.
+Oxenberg acknowledged in November 2017 that she had had interactions with Keith Raniere and his NXIVM organization, bringing her daughter India into NXIVM in 2011 for what she thought would be "a self-help, business-oriented program."
+Oxenberg confirmed that her daughter became heavily involved in the cult and that she had initiated what proved to be a failed intervention for India.
+In August 2018, Oxenberg revealed that India had left NXIVM in June, after the arrest of Raniere, and they were working on their relationship.
+In August 2018, Oxenberg's book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult co-written by former People magazine writer Natasha Stoynoff was published.
+In 2020, Oxenberg was featured in The Vow, a documentary series for HBO, directed by Jehane Noujaim and Karim Amer, which follows Oxenberg's attempts to rescue her daughter India.
+Oxenberg also appears in Seduced: Inside the NXIVM Cult a documentary series for Starz, directed by Cecilia Peck and Inbal B. Lessner, which features India speaking out about her experiences for the first time.
+Filmography
+
+Film
+
+Television
+
+Accolades
+
+For playing Amanda Carrington, Oxenberg won two Soap Opera Digest Awards in 1985, for Outstanding Supporting Actress and Outstanding Female Newcomer.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +153,9 @@ Georg Donatus never acceded to the grand‐ducal throne, as it had been abolishe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +170,23 @@ Georg Donatus never acceded to the grand‐ducal throne, as it had been abolishe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +204,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +286,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +309,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +329,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +339,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +379,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,185 +478,205 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (de9b4427-299d-436a-9eb6-12cd7c37404f)
- Call ID: de9b4427-299d-436a-9eb6-12cd7c37404f
+  AssignClass (6572544e-1930-47cd-a549-511d899613fd)
+ Call ID: 6572544e-1930-47cd-a549-511d899613fd
   Args:
-    type: :Man
-    source: Georg_Donatus
-  AssignClass (9fb638a5-8c6c-4a5c-abd2-721d3fb8fc8a)
- Call ID: 9fb638a5-8c6c-4a5c-abd2-721d3fb8fc8a
-  Args:
-    type: :Man
-    source: Ernest_Louis
-  AssignClass (f724e4c8-9635-4e32-bf5e-4c1dace20851)
- Call ID: f724e4c8-9635-4e32-bf5e-4c1dace20851
-  Args:
+    source: Catherine_Oxenberg
     type: :Woman
-    source: Eleonore_of_Solms-Hohensolms-Lich
-  AssignClass (0901280a-8fe9-4c85-9e5f-e5859256cc16)
- Call ID: 0901280a-8fe9-4c85-9e5f-e5859256cc16
+  AssignClass (7d9405a2-fe0f-47db-ac7b-5158b957122b)
+ Call ID: 7d9405a2-fe0f-47db-ac7b-5158b957122b
   Args:
-    type: :Woman
-    source: Cecilie_of_Greece_and_Denmark
-  AssignClass (20292f0b-63d9-48b9-b903-d1c6c27caa12)
- Call ID: 20292f0b-63d9-48b9-b903-d1c6c27caa12
-  Args:
-    type: :Man
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (921f4d48-ae11-4ffc-866d-e4179ffcc2bd)
- Call ID: 921f4d48-ae11-4ffc-866d-e4179ffcc2bd
-  Args:
-    type: :Woman
-    source: Princess_Alice_of_Battenberg
-  AssignClass (702c8e70-ddfd-4d1a-b46c-23b5b87471c7)
- Call ID: 702c8e70-ddfd-4d1a-b46c-23b5b87471c7
-  Args:
-    type: :Man
-    source: Ludwig_Ernst_Andreas
-  AssignClass (c2e4eb89-5043-4996-b8d0-f90b6944daa3)
- Call ID: c2e4eb89-5043-4996-b8d0-f90b6944daa3
-  Args:
-    type: :Man
-    source: Alexander_Georg_Karl_Heinrich
-  AssignClass (cafc4c94-f89e-4591-8521-15ca0a114b4b)
- Call ID: cafc4c94-f89e-4591-8521-15ca0a114b4b
-  Args:
-    type: :Woman
-    source: Johanna_Marina_Eleonore
-  AssignClass (137fab83-6e92-470b-9c42-2b6f83e9422e)
- Call ID: 137fab83-6e92-470b-9c42-2b6f83e9422e
-  Args:
-    type: :Man
-    source: Prince_Louis
-  AddLiteral (0008e790-e105-44aa-8e76-6c4fc764fad1)
- Call ID: 0008e790-e105-44aa-8e76-6c4fc764fad1
-  Args:
-    source: Georg_Donatus
-    literal_value: 1906
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (722161ac-9c64-47d7-b278-062e51d0323b)
- Call ID: 722161ac-9c64-47d7-b278-062e51d0323b
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Georg_Donatus
-    literal_value: 1937
-  AddTriple (f7af48d2-9a03-4282-8ac1-091aeffa32e6)
- Call ID: f7af48d2-9a03-4282-8ac1-091aeffa32e6
-  Args:
-    target: Ernest_Louis
-    relation: :hasFather
-    source: Georg_Donatus
-  AddTriple (5b981e2a-76cb-4569-abae-92455c2c9d82)
- Call ID: 5b981e2a-76cb-4569-abae-92455c2c9d82
-  Args:
-    source: Georg_Donatus
-    relation: :hasMother
-    target: Eleonore_of_Solms-Hohensolms-Lich
-  AddLiteral (a01557a1-071a-4445-90bb-3375a9366fbb)
- Call ID: a01557a1-071a-4445-90bb-3375a9366fbb
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Georg_Donatus
-    literal_value: 1931
-  AddTriple (ebf12c23-c33f-403c-9886-88d772763419)
- Call ID: ebf12c23-c33f-403c-9886-88d772763419
-  Args:
-    target: Prince_Andrew_of_Greece_and_Denmark
-    source: Cecilie_of_Greece_and_Denmark
-    relation: :hasFather
-  AddTriple (02f23ff4-c4c8-4e46-b115-6a90865c5b85)
- Call ID: 02f23ff4-c4c8-4e46-b115-6a90865c5b85
-  Args:
-    relation: :hasMother
-    source: Cecilie_of_Greece_and_Denmark
-    target: Princess_Alice_of_Battenberg
-  AddTriple (63e1a6ce-d5b9-4b4b-a0be-6235f300cb66)
- Call ID: 63e1a6ce-d5b9-4b4b-a0be-6235f300cb66
-  Args:
-    target: Georg_Donatus
-    source: Ludwig_Ernst_Andreas
-    relation: :hasFather
-  AddTriple (cea48196-833e-48a7-bf6b-14fd9397e98a)
- Call ID: cea48196-833e-48a7-bf6b-14fd9397e98a
-  Args:
-    target: Cecilie_of_Greece_and_Denmark
-    source: Ludwig_Ernst_Andreas
-    relation: :hasMother
-  AddLiteral (55f11334-265b-400f-a760-3d11ca457b83)
- Call ID: 55f11334-265b-400f-a760-3d11ca457b83
+    type: :Person
+    source: Catherine_Oxenberg
+  AddLiteral (1c722996-2d93-4e42-bd59-65ce2e814868)
+ Call ID: 1c722996-2d93-4e42-bd59-65ce2e814868
   Args:
     relation: :hasBirthYear
+    literal_value: 1961
+    source: Catherine_Oxenberg
     literal_type: xsd:integer
-    source: Ludwig_Ernst_Andreas
-    literal_value: 1931
-  AddLiteral (5957104b-bf71-4dce-a008-46dfeafd6d61)
- Call ID: 5957104b-bf71-4dce-a008-46dfeafd6d61
+  AssignClass (8d1460f0-0910-4bc1-a300-82ccdb647e4f)
+ Call ID: 8d1460f0-0910-4bc1-a300-82ccdb647e4f
   Args:
-    relation: :hasDeathYear
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Woman
+  AssignClass (2ca60468-d76c-40a3-8503-16f270cffab2)
+ Call ID: 2ca60468-d76c-40a3-8503-16f270cffab2
+  Args:
+    type: :Person
+    source: Princess_Elizabeth_of_Yugoslavia
+  AddLiteral (e78baf32-e610-498a-9ec3-84485ce5b53f)
+ Call ID: e78baf32-e610-498a-9ec3-84485ce5b53f
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
     literal_type: xsd:integer
-    source: Ludwig_Ernst_Andreas
-    literal_value: 1937
-  AddTriple (716ec17d-7ef7-456c-9a6a-d06462f4dd55)
- Call ID: 716ec17d-7ef7-456c-9a6a-d06462f4dd55
-  Args:
-    relation: :hasFather
-    source: Alexander_Georg_Karl_Heinrich
-    target: Georg_Donatus
-  AddTriple (25509d03-17ac-4fb6-90c0-4baef7c16a3b)
- Call ID: 25509d03-17ac-4fb6-90c0-4baef7c16a3b
-  Args:
-    target: Cecilie_of_Greece_and_Denmark
-    source: Alexander_Georg_Karl_Heinrich
-    relation: :hasMother
-  AddLiteral (23fdb362-cc3f-4fec-8967-9b9458e08bd3)
- Call ID: 23fdb362-cc3f-4fec-8967-9b9458e08bd3
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Alexander_Georg_Karl_Heinrich
-    literal_value: 1933
-  AddLiteral (a60398e2-6659-49b6-81c6-01ca8da83531)
- Call ID: a60398e2-6659-49b6-81c6-01ca8da83531
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Alexander_Georg_Karl_Heinrich
-    literal_value: 1937
-  AddTriple (0e51fdee-822c-4bc2-bcdb-e4053d8ee0d0)
- Call ID: 0e51fdee-822c-4bc2-bcdb-e4053d8ee0d0
-  Args:
-    target: Georg_Donatus
-    source: Johanna_Marina_Eleonore
-    relation: :hasFather
-  AddTriple (9a54d846-55c9-45ea-9e15-d44153180970)
- Call ID: 9a54d846-55c9-45ea-9e15-d44153180970
-  Args:
-    target: Cecilie_of_Greece_and_Denmark
-    relation: :hasMother
-    source: Johanna_Marina_Eleonore
-  AddLiteral (d16d889d-2981-408b-b593-085017544489)
- Call ID: d16d889d-2981-408b-b593-085017544489
-  Args:
-    source: Johanna_Marina_Eleonore
     literal_value: 1936
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (fca48108-e0c3-4894-83be-acc1ca1c1940)
- Call ID: fca48108-e0c3-4894-83be-acc1ca1c1940
+  AssignClass (74c33191-c36c-444d-9605-040d09d6614d)
+ Call ID: 74c33191-c36c-444d-9605-040d09d6614d
   Args:
-    literal_value: 1939
-    source: Johanna_Marina_Eleonore
+    source: Howard_Oxenberg
+    type: :Man
+  AssignClass (8b0d8961-962a-400e-a42e-7be4cc300242)
+ Call ID: 8b0d8961-962a-400e-a42e-7be4cc300242
+  Args:
+    type: :Person
+    source: Howard_Oxenberg
+  AddLiteral (654807e3-ba64-4abf-b015-0274d7eaad78)
+ Call ID: 654807e3-ba64-4abf-b015-0274d7eaad78
+  Args:
+    source: Howard_Oxenberg
     literal_type: xsd:integer
+    literal_value: 1919
+    relation: :hasBirthYear
+  AddLiteral (c6ecedce-70ba-4665-b275-161767e3fc4c)
+ Call ID: c6ecedce-70ba-4665-b275-161767e3fc4c
+  Args:
+    literal_value: 2010
     relation: :hasDeathYear
-  AddTriple (70202847-d51b-4608-948b-a91b34cb0f96)
- Call ID: 70202847-d51b-4608-948b-a91b34cb0f96
+    literal_type: xsd:integer
+    source: Howard_Oxenberg
+  AddTriple (507924d1-2213-465e-8462-92b868bdf1a7)
+ Call ID: 507924d1-2213-465e-8462-92b868bdf1a7
   Args:
-    relation: :isBrotherOf
-    source: Prince_Louis
-    target: Georg_Donatus
-  Finish (1b476534-8001-4e48-92d8-a2ad09ae7faa)
- Call ID: 1b476534-8001-4e48-92d8-a2ad09ae7faa
+    target: Princess_Elizabeth_of_Yugoslavia
+    source: Catherine_Oxenberg
+    relation: :hasMother
+  AddTriple (4b1eded4-1da3-4870-81a0-647caf3bc112)
+ Call ID: 4b1eded4-1da3-4870-81a0-647caf3bc112
+  Args:
+    source: Catherine_Oxenberg
+    target: Howard_Oxenberg
+    relation: :hasFather
+  AssignClass (1a67c081-dccd-4db5-9a84-3a0983c1d803)
+ Call ID: 1a67c081-dccd-4db5-9a84-3a0983c1d803
+  Args:
+    type: :Woman
+    source: Christina_Oxenberg
+  AssignClass (fa40f140-abe7-4d6f-b7e5-f7e6a0aa28ca)
+ Call ID: fa40f140-abe7-4d6f-b7e5-f7e6a0aa28ca
+  Args:
+    source: Christina_Oxenberg
+    type: :Person
+  AddTriple (e32c18c0-2546-45f4-8e30-4977609a92fe)
+ Call ID: e32c18c0-2546-45f4-8e30-4977609a92fe
+  Args:
+    target: Christina_Oxenberg
+    source: Catherine_Oxenberg
+    relation: :hasSister
+  AddTriple (3fc8ad94-ddb9-45c9-8749-898660548c5f)
+ Call ID: 3fc8ad94-ddb9-45c9-8749-898660548c5f
+  Args:
+    target: Princess_Elizabeth_of_Yugoslavia
+    source: Christina_Oxenberg
+    relation: :hasMother
+  AddTriple (ef9b19ac-26ac-4be1-a78c-e2a7d1a9439d)
+ Call ID: ef9b19ac-26ac-4be1-a78c-e2a7d1a9439d
+  Args:
+    relation: :hasFather
+    target: Howard_Oxenberg
+    source: Christina_Oxenberg
+  AssignClass (b5be955d-fe29-4b55-9047-c9fec4a7b9d1)
+ Call ID: b5be955d-fe29-4b55-9047-c9fec4a7b9d1
+  Args:
+    type: :Man
+    source: Prince_Paul_of_Yugoslavia
+  AssignClass (b10cf35b-92a1-4bd9-b4bb-6bd42035c995)
+ Call ID: b10cf35b-92a1-4bd9-b4bb-6bd42035c995
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Person
+  AssignClass (e86acaaa-f82b-422d-82e3-86162160e12f)
+ Call ID: e86acaaa-f82b-422d-82e3-86162160e12f
+  Args:
+    type: :Woman
+    source: Princess_Olga_of_Greece_and_Denmark
+  AssignClass (85f43e4c-52e0-4a2b-8020-55deaffb6c04)
+ Call ID: 85f43e4c-52e0-4a2b-8020-55deaffb6c04
+  Args:
+    type: :Person
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddTriple (42c55943-1b45-4df6-bc77-e8a8b7f88cec)
+ Call ID: 42c55943-1b45-4df6-bc77-e8a8b7f88cec
+  Args:
+    relation: :isFatherOf
+    source: Prince_Paul_of_Yugoslavia
+    target: Princess_Elizabeth_of_Yugoslavia
+  AddTriple (04b4ac78-1c1c-4f6d-b524-e720eeb281bb)
+ Call ID: 04b4ac78-1c1c-4f6d-b524-e720eeb281bb
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Princess_Elizabeth_of_Yugoslavia
+    relation: :isMotherOf
+  AssignClass (bea06d16-df8f-420b-9607-9aa7737c5379)
+ Call ID: bea06d16-df8f-420b-9607-9aa7737c5379
+  Args:
+    type: :Woman
+    source: India_Riven_Oxenberg
+  AssignClass (eb23d7b6-9c0a-4419-83a8-4ea804d96ecf)
+ Call ID: eb23d7b6-9c0a-4419-83a8-4ea804d96ecf
+  Args:
+    source: India_Riven_Oxenberg
+    type: :Person
+  AddTriple (a6448ea6-f095-4c49-80c7-cb05e823a19c)
+ Call ID: a6448ea6-f095-4c49-80c7-cb05e823a19c
+  Args:
+    relation: :hasMother
+    target: Catherine_Oxenberg
+    source: India_Riven_Oxenberg
+  AssignClass (defd35c3-661a-41b5-8404-65e68c56401e)
+ Call ID: defd35c3-661a-41b5-8404-65e68c56401e
+  Args:
+    type: :Man
+    source: William_Weitz_Shaffer
+  AssignClass (4c6702d5-f81e-4600-a84f-841fff44c634)
+ Call ID: 4c6702d5-f81e-4600-a84f-841fff44c634
+  Args:
+    source: William_Weitz_Shaffer
+    type: :Person
+  AddTriple (9d0bcde3-22f7-4e9b-8c48-523abafe3dca)
+ Call ID: 9d0bcde3-22f7-4e9b-8c48-523abafe3dca
+  Args:
+    relation: :hasFather
+    target: William_Weitz_Shaffer
+    source: India_Riven_Oxenberg
+  AssignClass (c5376d80-e327-4287-8c09-c383b0dd6449)
+ Call ID: c5376d80-e327-4287-8c09-c383b0dd6449
+  Args:
+    type: :Man
+    source: Robert_Evans
+  AssignClass (bf007b73-3f22-4033-9683-9bb6772b0a2a)
+ Call ID: bf007b73-3f22-4033-9683-9bb6772b0a2a
+  Args:
+    source: Robert_Evans
+    type: :Person
+  AddLiteral (d4f89689-7e43-4756-8927-2f2d16aff0e5)
+ Call ID: d4f89689-7e43-4756-8927-2f2d16aff0e5
+  Args:
+    literal_value: 1998
+    relation: :hasMarriageYear
+    source: Robert_Evans
+    literal_type: xsd:integer
+  AssignClass (f826c920-5e26-420b-a19f-021f04a38612)
+ Call ID: f826c920-5e26-420b-a19f-021f04a38612
+  Args:
+    type: :Man
+    source: Casper_Van_Dien
+  AssignClass (19c38c3a-e0e8-4758-b335-e81478040c02)
+ Call ID: 19c38c3a-e0e8-4758-b335-e81478040c02
+  Args:
+    type: :Person
+    source: Casper_Van_Dien
+  AssignClass (0ecc59da-3ada-4130-bdb6-0f592d8da3ec)
+ Call ID: 0ecc59da-3ada-4130-bdb6-0f592d8da3ec
+  Args:
+    source: Ellis_Jones
+    type: :Man
+  AssignClass (21ced138-9a70-478c-9b11-35885534e96c)
+ Call ID: 21ced138-9a70-478c-9b11-35885534e96c
+  Args:
+    source: Ellis_Jones
+    type: :Person
+  Finish (67e7655b-4606-4d13-a24a-99ebfac56581)
+ Call ID: 67e7655b-4606-4d13-a24a-99ebfac56581
   Args:

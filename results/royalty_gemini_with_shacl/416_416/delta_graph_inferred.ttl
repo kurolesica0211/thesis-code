@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBrother data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia .
+
+data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasChild data:Prince_Hubertus_of_Prussia ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Prince_Hubertus_of_Prussia ;
+    :isAncestorOf data:Prince_Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isBrotherOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isFatherOf data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm_of_Germany ;
+    :isUncleOf data:Prince_Hubertus_of_Prussia .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Hubertus_of_Prussia ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Prince_Hubertus_of_Prussia ;
+    :isAncestorOf data:Prince_Hubertus_of_Prussia ;
+    :isAuntOf data:Prince_Hubertus_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Prince_Hubertus_of_Prussia ;
+    :isParentOf data:Prince_Hubertus_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Princess_Magdalena_Reuss_of_K%C3%B6stritz ;
+    :isBloodrelationOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Prince_Hubertus_of_Prussia,
+        data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:Crown_Prince_Wilhelm_of_Germany,
+        data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+

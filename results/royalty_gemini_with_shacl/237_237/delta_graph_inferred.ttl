@@ -1,0 +1,317 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christian_of_Oldenburg a :Man,
+        :Person ;
+    :hasBrother data:Christian_of_Oldenburg ;
+    :hasRelation data:Christian_of_Oldenburg ;
+    :isBloodrelationOf data:Christian_of_Oldenburg ;
+    :isBrotherOf data:Christian_of_Oldenburg ;
+    :isSiblingOf data:Christian_of_Oldenburg .
+
+data:Donata_of_Castell_Rudenhausen a :Person,
+        :Woman ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Donata_of_Castell_Rudenhausen ;
+    :isBloodrelationOf data:Donata_of_Castell_Rudenhausen ;
+    :isSiblingOf data:Donata_of_Castell_Rudenhausen ;
+    :isSisterOf data:Donata_of_Castell_Rudenhausen .
+
+data:Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marie_Cecile_of_Prussia ;
+    :hasDaughter data:Marie_Cecile_of_Prussia ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:Marie_Cecile_of_Prussia ;
+    :isAuntOf data:Marie_Cecile_of_Prussia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia ;
+    :isMotherOf data:Marie_Cecile_of_Prussia ;
+    :isParentOf data:Marie_Cecile_of_Prussia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Ferdinand_of_Prussia ;
+    :hasChild data:Marie_Cecile_of_Prussia ;
+    :hasDaughter data:Marie_Cecile_of_Prussia ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Marie_Cecile_of_Prussia ;
+    :isBloodrelationOf data:Louis_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_of_Prussia ;
+    :isFatherOf data:Marie_Cecile_of_Prussia ;
+    :isParentOf data:Marie_Cecile_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand_of_Prussia ;
+    :isUncleOf data:Marie_Cecile_of_Prussia .
+
+data:Bathildis_of_Schaumburg_Lippe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasDaughter data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Bathildis_of_Schaumburg_Lippe ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg,
+        data:Helena_of_Waldeck_and_Pyrmont ;
+    :isAuntOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Bathildis_of_Schaumburg_Lippe ;
+    :isMotherOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Bathildis_of_Schaumburg_Lippe ;
+    :isSisterOf data:Bathildis_of_Schaumburg_Lippe .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Nikolaus_of_Oldenburg ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin ;
+    :hasSon data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isAuntOf data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin ;
+    :isMotherOf data:Nikolaus_of_Oldenburg ;
+    :isParentOf data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin ;
+    :isSisterOf data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasChild data:Nikolaus_of_Oldenburg ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSon data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isFatherOf data:Nikolaus_of_Oldenburg ;
+    :isParentOf data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II_of_Oldenburg ;
+    :isUncleOf data:Nikolaus_of_Oldenburg .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasChild data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasDaughter data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg,
+        data:Helena_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isBrotherOf data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isFatherOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isUncleOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Marie_Cecile_of_Prussia a :Person,
+        :Woman ;
+    :hasAncestor data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia ;
+    :hasParent data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Marie_Cecile_of_Prussia ;
+    :isBloodrelationOf data:Marie_Cecile_of_Prussia ;
+    :isChildOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isDaughterOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Marie_Cecile_of_Prussia ;
+    :isSisterOf data:Marie_Cecile_of_Prussia .
+
+data:Friedrich_August_of_Oldenburg a :Man,
+        :Person ;
+    :hasAncestor data:Bathildis_of_Schaumburg_Lippe,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Friedrich_August_of_Oldenburg ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Friedrich_August_of_Oldenburg ;
+    :isBrotherOf data:Friedrich_August_of_Oldenburg ;
+    :isChildOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Friedrich_August_of_Oldenburg ;
+    :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isUncleOf data:Christian_of_Oldenburg .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Bathildis_of_Schaumburg_Lippe,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasChild data:Friedrich_August_of_Oldenburg ;
+    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg_Lippe ;
+    :hasParent data:Bathildis_of_Schaumburg_Lippe,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasSon data:Friedrich_August_of_Oldenburg ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg ;
+    :isAuntOf data:Friedrich_August_of_Oldenburg ;
+    :isBloodrelationOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isChildOf data:Bathildis_of_Schaumburg_Lippe,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isDaughterOf data:Bathildis_of_Schaumburg_Lippe,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isMotherOf data:Friedrich_August_of_Oldenburg ;
+    :isParentOf data:Friedrich_August_of_Oldenburg ;
+    :isSiblingOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasBrother data:Nikolaus_of_Oldenburg ;
+    :hasChild data:Friedrich_August_of_Oldenburg ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin ;
+    :hasParent data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasRelation data:Bathildis_of_Schaumburg_Lippe,
+        data:Donata_of_Castell_Rudenhausen,
+        data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_August_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia,
+        data:Marie_Cecile_of_Prussia,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSon data:Friedrich_August_of_Oldenburg ;
+    :isAncestorOf data:Friedrich_August_of_Oldenburg ;
+    :isBloodrelationOf data:Nikolaus_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus_of_Oldenburg ;
+    :isChildOf data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :isFatherOf data:Friedrich_August_of_Oldenburg ;
+    :isParentOf data:Friedrich_August_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus_of_Oldenburg ;
+    :isSonOf data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin,
+        data:Frederick_Augustus_II_of_Oldenburg ;
+    :isUncleOf data:Friedrich_August_of_Oldenburg .
+

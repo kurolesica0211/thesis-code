@@ -7,29 +7,48 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Adalbert_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Adalbert_of_Prussia a :Person ;
     rdfs:label "Prince Adalbert of Prussia" ;
     data:posIndicesFull "116:144",
         "790:816" ;
-    data:posIndicesPart "1078:1084",
-        "1112:1118",
-        "1119:1127",
-        "1224:1230",
-        "1231:1239",
-        "1491:1497",
-        "1575:1581",
-        "1582:1590",
+    data:posIndicesPart "1021:1027",
+        "1028:1036",
+        "1132:1138",
+        "1166:1172",
+        "1173:1181",
+        "1278:1284",
+        "1285:1293",
+        "1545:1551",
+        "1629:1635",
+        "1636:1644",
         "304:310",
         "455:461",
-        "520:526",
-        "967:973",
-        "974:982" ;
+        "520:526" ;
     data:wdtLink wdt:Q50998 ;
     :alsoKnownAs "Prince Adalbert Ferdinand Berengar Viktor of Prussia" ;
+    :hasParent data:Wilhelm_II ;
     :hasSex data:male .
+
+data:Princess_Adelaide_of_Saxe-Meiningen a :Person ;
+    rdfs:label "Princess Adelaide of Saxe-Meiningen" ;
+    data:posIndicesFull "0:35",
+        "116:144",
+        "790:816" ;
+    data:posIndicesPart "1365:1373",
+        "1374:1382",
+        "1666:1674",
+        "1675:1683",
+        "258:266",
+        "355:359",
+        "360:369",
+        "536:544",
+        "566:574",
+        "918:926" ;
+    data:wdtLink wdt:Q261826 ;
+    :alsoKnownAs "Princess Adalbert of Prussia",
+        "Princess Adelheid, Princess Adalbert of Prussia" ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -37,14 +56,11 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person ;
     rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
     data:posIndicesFull "210:248" ;
-    data:posIndicesPart "1320:1328",
-        "1621:1629",
+    data:posIndicesPart "1374:1382",
+        "1675:1683",
         "258:266",
         "536:544",
         "566:574",
@@ -52,38 +68,29 @@ data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
         "622:633",
         "677:682",
         "773:781",
-        "864:872" ;
+        "918:926" ;
     data:wdtLink wdt:Q2085981 ;
-    :hasChild data:Princess_Adelaide_of_Saxe-Meiningen ;
-    :hasDaughter data:Princess_Adelaide_of_Saxe-Meiningen ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Adelaide_of_Saxe-Meiningen ;
-    :isParentOf data:Princess_Adelaide_of_Saxe-Meiningen .
+    :hasSex data:female .
 
-data:Princess_Adelaide_of_Saxe-Meiningen a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Adelaide of Saxe-Meiningen" ;
-    data:posIndicesFull "0:35",
-        "116:144",
-        "790:816" ;
-    data:posIndicesPart "1311:1319",
-        "1320:1328",
-        "1612:1620",
-        "1621:1629",
-        "258:266",
-        "355:359",
-        "360:369",
-        "536:544",
-        "566:574",
-        "864:872" ;
-    data:wdtLink wdt:Q261826 ;
-    :alsoKnownAs "Princess Adalbert of Prussia",
-        "Princess Adelheid, Princess Adalbert of Prussia" ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "1222:1232",
+        "895:905" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -85,44 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Philipp, Prince and Landgrave of Hesse (6 November 1896 – 25 October 1980) was head of the Electoral House of Hesse from 1940 to 1980.
-Philipp was a grandson of Frederick III, German Emperor, and a great-grandson of Queen Victoria, as well as the son-in-law of Victor Emmanuel III of Italy.
-Early life
+Don Alessandro Torlonia, 5th Prince of Civitella-Cesi (7 December 1911 – 1 May/12 May 1986) was an Italian banking heir and a member of the House of Torlonia.
+About
 
-Philipp was born at Schloss Rumpenheim in Offenbach, the third son of Prince Frederick Charles of Hesse and of his wife Princess Margaret of Prussia (sister of the German Emperor Wilhelm II).
-He held the rank of lieutenant (Leutnant, an extremely low rank considering his aristocratic background) and was mostly responsible for the procurement of munitions.
-In 1916, Philipp's oldest brother Friedrich Wilhelm died (in World War I) and Philipp became second in line to succeed his uncle as Head of the Electoral House of Hesse.
-It was intended that Philipp would eventually succeed his father as Head of the House of Hesse, while his (younger) twin brother Wolfgang would be heir to the Finnish throne.
-He made several visits to Greece where his aunt, Princess Sophie of Prussia was the wife of King Constantine I. In 1922, he left university without completing a degree and took a job at the Kaiser-Friedrich-Museum in Berlin.
+Born in Rome on 7 December 1911, Torlonia was the son of Marino Torlonia, 4th Prince di Civitella-Cesi and his American wife, Mary Elsie Moore.
+Don Alessandro's youngest sister was Donna Marina Torlonia di Civitella-Cesi, grandmother of the American actress Brooke Shields.
+In 1941, when his mother was dying in New York City, Torlonia took a high speed boat from Portugal and was arrested in error by FBI, thinking he was an enemy of the state and taken to Ellis Island.
+Not to be confused with his cousin with the same name, Alessandro Torlonia (1925–2017), Prince of Fucino and Prince assistant to the papal throne, head of another branch of the family.
+In the 1980s, this cousin Torlonia held the title as the "richest man in Rome", as he was the heir to a banking fortune and owner of the famous Torlonia Collection of ancient art.
+He died in the Palazzo Nuñez-Torlonia, Rome, in 1986.
 Marriage and children
 
-He married Princess Mafalda of Savoy, daughter of King Victor Emmanuel III of Italy, on 23 September 1925 at the Castello di Racconigi near Turin.
-The couple had four children:
-
-
-The family lived mostly at Villa Polissena (named after Queen Polyxena), part of Villa Savoia, the King of Italy's estate on the outskirts of Rome.
-On his return to Germany in October 1930, he joined the National Socialist German Workers' Party.
-Through his party membership, Philipp became a particularly close friend of Hermann Göring, the future head of the German Air Force (Luftwaffe).
-Following the appointment of Adolf Hitler as the German Chancellor on 30 January 1933, Philipp was appointed Oberpräsident (Governor) of Hesse-Nassau on 7 June 1933 by Prussian Minister-President Göring, who also named him to the Prussian State Council in July.
-For this purpose, the Reich Chancellery established a special account for him at the German Embassy in Rome, over which Prince Philipp could freely dispose.
-In 1940/41, German art purchases in Italy increased to such an extent that the Fascist government prohibited the sale of art treasures to foreigners in September 1941.
-As governor of Hesse-Nassau, Philipp was associated with the Aktion T4 euthanasia programme.
-As the war progressed, the attitude of the National Socialist authorities towards members of the German princely houses changed.
-In late April 1943, Philipp was ordered to report to Hitler's headquarters, where he stayed for most of the next four months.
-On 25 January 1944, his political disgrace became public when he was dismissed from his office as Oberpräsident of Hesse-Nassau.
-Philipp's wife Mafalda was arrested and placed under military custody in Rome.
-In August 1944, the factory was bombed by the Allies.
-Mafalda was seriously injured and died several days later following a belated operation by camp medical staff.
-After only ten days, he was transferred to Tyrol to Hotel "Bachmann" along with about 140 other prominent prisoners (for example Kurt Schuschnigg, Bogislaw von Bonin, Hjalmar Schacht, Martin Niemöller, Georg Thomas, and Alexander von Falkenhausen), freed by the Wehrmacht on 30 April 1945 (SS-Obergruppenführer Karl Wolff received a telephone call from the SS guards and ordered them to hand over the prisoners to the German army officers Hauptmann Wichard von Alvensleben and Hauptmann Gebhard von Alvensleben), and was then arrested by U.S. troops on 4 May 1945 in Niederdorf in the Italian Dolomites due to his role in the Nazi Party.
-On 28 May 1940, Philipp succeeded his father as Head of the Electoral House of Hesse.
-In 1968, upon the death of his distant agnatic relative, Louis, Prince of Hesse and by Rhine (who was also his second cousin as Philipp's mother and Louis' father were grandchildren of Queen Victoria), Philipp succeeded as head of the entire House of Hesse, including grand ducal Hesse (Hesse and by Rhine/Hesse-Darmstadt).
-Louis had nominally adopted Philipp's son Moritz, who at that time inherited the Hessian and by-Rhine properties, including remarkable cultural collections: for the first time since the division of Hesse into branches after the death of Philip the Magnanimous in 1567, all sovereign branches of the house of Hesse were reunited again.
+On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Beatriz of Spain (1909–2002), a daughter of King Alfonso XIII of Spain and of Princess Victoria Eugenie of Battenberg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +120,9 @@ Louis had nominally adopted Philipp's son Moritz, who at that time inherited the
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +137,23 @@ Louis had nominally adopted Philipp's son Moritz, who at that time inherited the
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,257 +445,136 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cf9be6d7-1b16-4ab3-93e0-73efa30e256c)
- Call ID: cf9be6d7-1b16-4ab3-93e0-73efa30e256c
+  AssignClass (d9813222-68e0-43a3-8574-8475071336a3)
+ Call ID: d9813222-68e0-43a3-8574-8475071336a3
   Args:
     type: :Man
-    source: Philipp_Prince_of_Hesse
-  AssignClass (58db631c-b89b-482e-9c16-542922f41253)
- Call ID: 58db631c-b89b-482e-9c16-542922f41253
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AssignClass (b1337db4-1cc7-41fe-9d22-db5ccd14be07)
+ Call ID: b1337db4-1cc7-41fe-9d22-db5ccd14be07
   Args:
     type: :Person
-    source: Philipp_Prince_of_Hesse
-  AssignClass (534234c9-d6e2-43f8-90df-a494916eef93)
- Call ID: 534234c9-d6e2-43f8-90df-a494916eef93
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AddLiteral (1f2b6b12-7cfa-416c-901a-05aca9777127)
+ Call ID: 1f2b6b12-7cfa-416c-901a-05aca9777127
   Args:
-    type: :Male
-    source: Male_Sex
-  AddTriple (dd953916-6620-4caf-83d0-4426f6ea7903)
- Call ID: dd953916-6620-4caf-83d0-4426f6ea7903
-  Args:
-    target: Male_Sex
-    relation: :hasSex
-    source: Philipp_Prince_of_Hesse
-  AddLiteral (b3757249-7583-4a95-899c-9f545c3cb569)
- Call ID: b3757249-7583-4a95-899c-9f545c3cb569
-  Args:
-    literal_value: 1896
-    source: Philipp_Prince_of_Hesse
+    literal_value: 1911
+    literal_type: xsd:integer
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (a05f4f77-0eae-4ea3-bc83-90d552fb970d)
- Call ID: a05f4f77-0eae-4ea3-bc83-90d552fb970d
+  AddLiteral (6b19aa14-41ff-4ddc-ae53-c241d3681845)
+ Call ID: 6b19aa14-41ff-4ddc-ae53-c241d3681845
   Args:
-    literal_value: 1980
+    literal_value: 1986
     literal_type: xsd:integer
-    source: Philipp_Prince_of_Hesse
     relation: :hasDeathYear
-  AssignClass (2a1fbd3b-8706-4fad-b61c-913782936232)
- Call ID: 2a1fbd3b-8706-4fad-b61c-913782936232
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AssignClass (db15e988-c888-4ad6-ba1f-8d3c09c513f3)
+ Call ID: db15e988-c888-4ad6-ba1f-8d3c09c513f3
   Args:
+    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
     type: :Man
-    source: Frederick_Charles_of_Hesse
-  AssignClass (efc789f6-c5ba-407e-997b-82484f52070d)
- Call ID: efc789f6-c5ba-407e-997b-82484f52070d
+  AssignClass (9e0b7159-f7f3-4085-8735-efdd319ee225)
+ Call ID: 9e0b7159-f7f3-4085-8735-efdd319ee225
   Args:
     type: :Person
-    source: Frederick_Charles_of_Hesse
-  AssignClass (188b8c5e-a5ca-4cb6-83d7-301010c8ffe4)
- Call ID: 188b8c5e-a5ca-4cb6-83d7-301010c8ffe4
+    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
+  AssignClass (be8d6f14-4e8c-4ffd-afac-1744812a6432)
+ Call ID: be8d6f14-4e8c-4ffd-afac-1744812a6432
   Args:
+    source: Mary_Elsie_Moore
     type: :Woman
-    source: Margaret_of_Prussia
-  AssignClass (e6289a22-4791-4945-8174-50242bd86dd1)
- Call ID: e6289a22-4791-4945-8174-50242bd86dd1
+  AssignClass (ccb7d275-5776-46b0-bbaf-bfaba5ea2ed1)
+ Call ID: ccb7d275-5776-46b0-bbaf-bfaba5ea2ed1
   Args:
+    source: Mary_Elsie_Moore
     type: :Person
-    source: Margaret_of_Prussia
-  AddTriple (7a79480b-2186-46e1-ab18-8dca5c72f387)
- Call ID: 7a79480b-2186-46e1-ab18-8dca5c72f387
+  AddTriple (daf3c475-9852-4e60-8b36-95252788b5a6)
+ Call ID: daf3c475-9852-4e60-8b36-95252788b5a6
   Args:
-    source: Philipp_Prince_of_Hesse
+    target: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
     relation: :hasFather
-    target: Frederick_Charles_of_Hesse
-  AddTriple (c6c3bb3a-c177-43e2-bb07-d58763eccc3e)
- Call ID: c6c3bb3a-c177-43e2-bb07-d58763eccc3e
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AddTriple (71992b23-f3e9-4019-b91f-c3ffcc5446a5)
+ Call ID: 71992b23-f3e9-4019-b91f-c3ffcc5446a5
   Args:
-    source: Philipp_Prince_of_Hesse
     relation: :hasMother
-    target: Margaret_of_Prussia
-  AssignClass (67a4d1e3-9111-46d5-a3a2-5103cfae4328)
- Call ID: 67a4d1e3-9111-46d5-a3a2-5103cfae4328
-  Args:
-    type: :Man
-    source: Friedrich_Wilhelm_of_Hesse
-  AssignClass (d802f05f-d846-4120-8db7-b30632d4a113)
- Call ID: d802f05f-d846-4120-8db7-b30632d4a113
-  Args:
-    type: :Person
-    source: Friedrich_Wilhelm_of_Hesse
-  AddTriple (efc08f72-f17b-4896-bc7d-cc2651a40a6e)
- Call ID: efc08f72-f17b-4896-bc7d-cc2651a40a6e
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    relation: :isBrotherOf
-    target: Philipp_Prince_of_Hesse
-  AssignClass (e2bf0f4c-7e7f-473e-9799-8e2ab71ffa19)
- Call ID: e2bf0f4c-7e7f-473e-9799-8e2ab71ffa19
-  Args:
-    type: :Man
-    source: Wolfgang_of_Hesse
-  AssignClass (601f2455-f155-4093-8dcd-474e494b1a21)
- Call ID: 601f2455-f155-4093-8dcd-474e494b1a21
-  Args:
-    type: :Person
-    source: Wolfgang_of_Hesse
-  AddTriple (8826beec-d5f2-4656-9547-06d1e2c9399e)
- Call ID: 8826beec-d5f2-4656-9547-06d1e2c9399e
-  Args:
-    source: Wolfgang_of_Hesse
-    relation: :isBrotherOf
-    target: Philipp_Prince_of_Hesse
-  AssignClass (75e50e11-be93-4349-86e1-88e089b93f2f)
- Call ID: 75e50e11-be93-4349-86e1-88e089b93f2f
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+    target: Mary_Elsie_Moore
+  AssignClass (470e3358-cca2-400d-a780-f7a15d160605)
+ Call ID: 470e3358-cca2-400d-a780-f7a15d160605
   Args:
     type: :Woman
-    source: Mafalda_of_Savoy
-  AssignClass (d9ea491f-21ad-4b59-a2da-6f48087e25f9)
- Call ID: d9ea491f-21ad-4b59-a2da-6f48087e25f9
+    source: Marina_Torlonia_di_Civitella_Cesi
+  AssignClass (25dd2bba-bd17-4971-954e-6a7a8ff043b5)
+ Call ID: 25dd2bba-bd17-4971-954e-6a7a8ff043b5
   Args:
     type: :Person
-    source: Mafalda_of_Savoy
-  AddTriple (b6f17071-2e17-4619-9496-f043344cc532)
- Call ID: b6f17071-2e17-4619-9496-f043344cc532
+    source: Marina_Torlonia_di_Civitella_Cesi
+  AddTriple (bcee21c0-0f75-4859-b7fa-14742d1e642a)
+ Call ID: bcee21c0-0f75-4859-b7fa-14742d1e642a
   Args:
-    target: Mafalda_of_Savoy
-    source: Philipp_Prince_of_Hesse
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+    relation: :hasSister
+    target: Marina_Torlonia_di_Civitella_Cesi
+  AssignClass (fbda717e-7a31-4ec9-8897-95cf56332a97)
+ Call ID: fbda717e-7a31-4ec9-8897-95cf56332a97
+  Args:
+    source: Infanta_Beatriz_of_Spain
+    type: :Woman
+  AssignClass (16bf7b60-cba0-4825-9ea3-7943c9de358d)
+ Call ID: 16bf7b60-cba0-4825-9ea3-7943c9de358d
+  Args:
+    source: Infanta_Beatriz_of_Spain
+    type: :Person
+  AddTriple (8b092379-9ec5-4195-a072-341d2cd77cff)
+ Call ID: 8b092379-9ec5-4195-a072-341d2cd77cff
+  Args:
+    target: Infanta_Beatriz_of_Spain
     relation: :hasRelation
-  AddLiteral (67be2e62-ed38-41d5-9015-7330633e4dfc)
- Call ID: 67be2e62-ed38-41d5-9015-7330633e4dfc
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AddLiteral (baf1cf2b-2782-4781-bae5-6f2928deb03b)
+ Call ID: baf1cf2b-2782-4781-bae5-6f2928deb03b
   Args:
-    literal_value: 1925
+    literal_value: 1935
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: Philipp_Prince_of_Hesse
-  AssignClass (6277fa2f-44a2-446d-8391-35dbca734973)
- Call ID: 6277fa2f-44a2-446d-8391-35dbca734973
+    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+  AssignClass (0be56e28-443a-487e-86a0-06f0d974247e)
+ Call ID: 0be56e28-443a-487e-86a0-06f0d974247e
   Args:
     type: :Man
-    source: Victor_Emmanuel_III_of_Italy
-  AssignClass (664b0da6-f00b-486b-9bbf-92fae547c839)
- Call ID: 664b0da6-f00b-486b-9bbf-92fae547c839
+    source: Alfonso_XIII_of_Spain
+  AssignClass (fe6501f5-2638-49cd-bafc-06f201c1e7ba)
+ Call ID: fe6501f5-2638-49cd-bafc-06f201c1e7ba
   Args:
+    source: Alfonso_XIII_of_Spain
     type: :Person
-    source: Victor_Emmanuel_III_of_Italy
-  AddTriple (1ba4489e-20cb-4a6f-b9f2-6396b28b5aa5)
- Call ID: 1ba4489e-20cb-4a6f-b9f2-6396b28b5aa5
+  AssignClass (7eaad6bc-0bc2-4680-93b9-4db6f553d198)
+ Call ID: 7eaad6bc-0bc2-4680-93b9-4db6f553d198
   Args:
-    relation: :hasFather
-    source: Mafalda_of_Savoy
-    target: Victor_Emmanuel_III_of_Italy
-  AssignClass (b4762f3f-10de-494d-80e5-26fd8e584b48)
- Call ID: b4762f3f-10de-494d-80e5-26fd8e584b48
-  Args:
-    type: :Man
-    source: Moritz_of_Hesse
-  AssignClass (b5e34010-a74a-4c8e-abc5-95bd34e89c2a)
- Call ID: b5e34010-a74a-4c8e-abc5-95bd34e89c2a
-  Args:
-    type: :Person
-    source: Moritz_of_Hesse
-  AddTriple (f248f256-e9a6-4f08-b2a5-a8b36614b546)
- Call ID: f248f256-e9a6-4f08-b2a5-a8b36614b546
-  Args:
-    target: Philipp_Prince_of_Hesse
-    source: Moritz_of_Hesse
-    relation: :isSonOf
-  AssignClass (884eda4c-5ee0-412c-b989-6fcbb71893e9)
- Call ID: 884eda4c-5ee0-412c-b989-6fcbb71893e9
-  Args:
+    source: Victoria_Eugenie_of_Battenberg
     type: :Woman
-    source: Sophie_of_Prussia
-  AssignClass (059efbec-940a-46e4-bdfb-00604c53f262)
- Call ID: 059efbec-940a-46e4-bdfb-00604c53f262
+  AssignClass (827376bc-ed0a-4b7c-a723-04cbd7805d21)
+ Call ID: 827376bc-ed0a-4b7c-a723-04cbd7805d21
   Args:
+    source: Victoria_Eugenie_of_Battenberg
     type: :Person
-    source: Sophie_of_Prussia
-  AddTriple (a0188526-a65f-4236-ae84-194671d844d7)
- Call ID: a0188526-a65f-4236-ae84-194671d844d7
+  AddTriple (5e092c85-0046-4deb-bc61-c0f22645def8)
+ Call ID: 5e092c85-0046-4deb-bc61-c0f22645def8
   Args:
-    relation: :isAuntOf
-    source: Sophie_of_Prussia
-    target: Philipp_Prince_of_Hesse
-  AssignClass (c1421a95-c616-41b3-b7a4-c4ec430882bc)
- Call ID: c1421a95-c616-41b3-b7a4-c4ec430882bc
+    source: Infanta_Beatriz_of_Spain
+    relation: :hasFather
+    target: Alfonso_XIII_of_Spain
+  AddTriple (d271e359-a0e2-49b8-9f00-30c0c4236e98)
+ Call ID: d271e359-a0e2-49b8-9f00-30c0c4236e98
   Args:
-    type: :Man
-    source: Constantine_I_of_Greece
-  AssignClass (d183d2f9-bd88-4021-98ef-577d2152f195)
- Call ID: d183d2f9-bd88-4021-98ef-577d2152f195
+    target: Victoria_Eugenie_of_Battenberg
+    source: Infanta_Beatriz_of_Spain
+    relation: :hasMother
+  Finish (b6440f5a-b9fd-4c7b-994c-bcf17577861f)
+ Call ID: b6440f5a-b9fd-4c7b-994c-bcf17577861f
   Args:
-    type: :Person
-    source: Constantine_I_of_Greece
-  AddTriple (47d56a9a-f599-43ca-9564-4e7b9ebc3a86)
- Call ID: 47d56a9a-f599-43ca-9564-4e7b9ebc3a86
-  Args:
-    source: Sophie_of_Prussia
-    relation: :hasRelation
-    target: Constantine_I_of_Greece
-  AssignClass (6ebaf075-88dd-4ddf-b361-d90cfb510d5c)
- Call ID: 6ebaf075-88dd-4ddf-b361-d90cfb510d5c
-  Args:
-    type: :Man
-    source: Louis_Prince_of_Hesse_and_by_Rhine
-  AssignClass (c4176f55-2c1e-4982-bbad-cf7ab2d807f0)
- Call ID: c4176f55-2c1e-4982-bbad-cf7ab2d807f0
-  Args:
-    type: :Person
-    source: Louis_Prince_of_Hesse_and_by_Rhine
-  Finish (e311aafb-0298-475b-ad5f-7e71750d2572)
- Call ID: e311aafb-0298-475b-ad5f-7e71750d2572
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -720,53 +671,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Wilhelm_of_Hesse a :Man,
+  data:Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi a :Man,
           :Person ;
-      :isBrotherOf data:Philipp_Prince_of_Hesse .
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi ;
+      :hasMarriageYear 1935 ;
+      :hasMother data:Mary_Elsie_Moore ;
+      :hasRelation data:Infanta_Beatriz_of_Spain ;
+      :hasSister data:Marina_Torlonia_di_Civitella_Cesi .
 
-  data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+  data:Alfonso_XIII_of_Spain a :Man,
           :Person .
 
-  data:Moritz_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Philipp_Prince_of_Hesse .
-
-  data:Sophie_of_Prussia a :Person,
+  data:Infanta_Beatriz_of_Spain a :Person,
           :Woman ;
-      :hasRelation data:Constantine_I_of_Greece ;
-      :isAuntOf data:Philipp_Prince_of_Hesse .
+      :hasFather data:Alfonso_XIII_of_Spain ;
+      :hasMother data:Victoria_Eugenie_of_Battenberg .
 
-  data:Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Philipp_Prince_of_Hesse .
-
-  data:Constantine_I_of_Greece a :Man,
-          :Person .
-
-  data:Frederick_Charles_of_Hesse a :Man,
-          :Person .
-
-  data:Mafalda_of_Savoy a :Person,
-          :Woman ;
-      :hasFather data:Victor_Emmanuel_III_of_Italy .
-
-  data:Male_Sex a :Male .
-
-  data:Margaret_of_Prussia a :Person,
+  data:Marina_Torlonia_di_Civitella_Cesi a :Person,
           :Woman .
 
-  data:Victor_Emmanuel_III_of_Italy a :Man,
+  data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi a :Man,
           :Person .
 
-  data:Philipp_Prince_of_Hesse a :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1925 ;
-      :hasMother data:Margaret_of_Prussia ;
-      :hasRelation data:Mafalda_of_Savoy ;
-      :hasSex data:Male_Sex .
+  data:Mary_Elsie_Moore a :Person,
+          :Woman .
+
+  data:Victoria_Eugenie_of_Battenberg a :Person,
+          :Woman .
 
 
 
@@ -778,8 +711,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (15294461-b1a1-481a-97ba-ec154b473a98)
- Call ID: 15294461-b1a1-481a-97ba-ec154b473a98
+  ValidateShacl (ab42575f-b692-4444-b217-b39f3d9bc8eb)
+ Call ID: ab42575f-b692-4444-b217-b39f3d9bc8eb
   Args:
 
 ================================= Tool Message =================================
@@ -789,99 +722,99 @@ Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Moritz_of_Hesse has an isSonOf relationship to Philipp_Prince_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Philipp_Prince_of_Hesse", class: ":Ancestor")
+      AssignClass Marino_Torlonia_4th_Prince_di_Civitella_Cesi :Man
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasFather relationship to Frederick_Charles_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Mary_Elsie_Moore is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Frederick_Charles_of_Hesse", class: ":Ancestor")
+      AssignClass Mary_Elsie_Moore :Woman
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasMother relationship to Margaret_of_Prussia, but the target node is missing the mandatory class :Ancestor.
+      The value Alfonso_XIII_of_Spain is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Margaret_of_Prussia", class: ":Ancestor")
+      AssignClass Alfonso_XIII_of_Spain :Man
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Moritz_of_Hesse has an isSonOf relationship to Philipp_Prince_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Philipp_Prince_of_Hesse", class: ":Ancestor")
+      AssignClass Marino_Torlonia_4th_Prince_di_Civitella_Cesi :Man
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasFather relationship to Frederick_Charles_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Frederick_Charles_of_Hesse", class: ":Ancestor")
+      AssignClass Victoria_Eugenie_of_Battenberg :Woman
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mafalda_of_Savoy has a hasFather relationship to Victor_Emmanuel_III_of_Italy, but the target node is missing the mandatory class :Ancestor.
+      The value Mary_Elsie_Moore is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victor_Emmanuel_III_of_Italy", class: ":Ancestor")
+      AssignClass Mary_Elsie_Moore :Woman
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasMother relationship to Margaret_of_Prussia, but the target node is missing the mandatory class :Ancestor.
+      The value Alfonso_XIII_of_Spain is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Margaret_of_Prussia", class: ":Ancestor")
+      AssignClass Alfonso_XIII_of_Spain :Man
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Moritz_of_Hesse has an isSonOf relationship to Philipp_Prince_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Philipp_Prince_of_Hesse", class: ":Ancestor")
+      AssignClass Marino_Torlonia_4th_Prince_di_Civitella_Cesi :Man
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasFather relationship to Frederick_Charles_of_Hesse, but the target node is missing the mandatory class :Ancestor.
+      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Frederick_Charles_of_Hesse", class: ":Ancestor")
+      AssignClass Victoria_Eugenie_of_Battenberg :Woman
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mafalda_of_Savoy has a hasFather relationship to Victor_Emmanuel_III_of_Italy, but the target node is missing the mandatory class :Ancestor.
+      The value Mary_Elsie_Moore is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victor_Emmanuel_III_of_Italy", class: ":Ancestor")
+      AssignClass Mary_Elsie_Moore :Woman
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philipp_Prince_of_Hesse has a hasMother relationship to Margaret_of_Prussia, but the target node is missing the mandatory class :Ancestor.
+      The value Alfonso_XIII_of_Spain is missing the mandatory class :Man or :Ancestor required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Margaret_of_Prussia", class: ":Ancestor")
+      AssignClass Alfonso_XIII_of_Spain :Man
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mafalda_of_Savoy has a hasFather relationship to Victor_Emmanuel_III_of_Italy, but the target node is missing the mandatory class :Ancestor.
+      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Victor_Emmanuel_III_of_Italy", class: ":Ancestor")
+      AssignClass Victoria_Eugenie_of_Battenberg :Woman
 
 
 
@@ -890,28 +823,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4583792c-2ea1-4aee-80ea-f2adbd04d415)
- Call ID: 4583792c-2ea1-4aee-80ea-f2adbd04d415
+  AssignClass (d53cbaa3-ed97-4ec4-8b9f-60fc9c47a234)
+ Call ID: d53cbaa3-ed97-4ec4-8b9f-60fc9c47a234
+  Args:
+    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
+    type: :Ancestor
+  AssignClass (5f447956-1f51-4814-a79c-df8121991ee5)
+ Call ID: 5f447956-1f51-4814-a79c-df8121991ee5
+  Args:
+    source: Mary_Elsie_Moore
+    type: :Ancestor
+  AssignClass (f3fa9587-11b7-4d6e-9723-9500b25651ac)
+ Call ID: f3fa9587-11b7-4d6e-9723-9500b25651ac
   Args:
     type: :Ancestor
-    source: Philipp_Prince_of_Hesse
-  AssignClass (e21d010d-7237-41b6-b467-b82c30854f80)
- Call ID: e21d010d-7237-41b6-b467-b82c30854f80
+    source: Alfonso_XIII_of_Spain
+  AssignClass (f9cc1586-09b3-47ce-b4e1-dd4612f1828c)
+ Call ID: f9cc1586-09b3-47ce-b4e1-dd4612f1828c
   Args:
     type: :Ancestor
-    source: Frederick_Charles_of_Hesse
-  AssignClass (28ad3b1e-576b-4658-a882-9425effec606)
- Call ID: 28ad3b1e-576b-4658-a882-9425effec606
-  Args:
-    type: :Ancestor
-    source: Margaret_of_Prussia
-  AssignClass (b0030383-114b-4f31-9de0-1bcc38b3752b)
- Call ID: b0030383-114b-4f31-9de0-1bcc38b3752b
-  Args:
-    type: :Ancestor
-    source: Victor_Emmanuel_III_of_Italy
-  ValidateShacl (d4b0bfef-d591-430f-bb5a-5d19316cc02c)
- Call ID: d4b0bfef-d591-430f-bb5a-5d19316cc02c
+    source: Victoria_Eugenie_of_Battenberg
+  ValidateShacl (b6d148e6-d239-4505-bd2e-d140db7a1047)
+ Call ID: b6d148e6-d239-4505-bd2e-d140db7a1047
   Args:
 
 ================================= Tool Message =================================
@@ -933,57 +866,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Wilhelm_of_Hesse a :Man,
+  data:Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi a :Man,
           :Person ;
-      :isBrotherOf data:Philipp_Prince_of_Hesse .
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi ;
+      :hasMarriageYear 1935 ;
+      :hasMother data:Mary_Elsie_Moore ;
+      :hasRelation data:Infanta_Beatriz_of_Spain ;
+      :hasSister data:Marina_Torlonia_di_Civitella_Cesi .
 
-  data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
-          :Person .
-
-  data:Moritz_of_Hesse a :Man,
-          :Person ;
-      :isSonOf data:Philipp_Prince_of_Hesse .
-
-  data:Sophie_of_Prussia a :Person,
-          :Woman ;
-      :hasRelation data:Constantine_I_of_Greece ;
-      :isAuntOf data:Philipp_Prince_of_Hesse .
-
-  data:Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Philipp_Prince_of_Hesse .
-
-  data:Constantine_I_of_Greece a :Man,
-          :Person .
-
-  data:Frederick_Charles_of_Hesse a :Ancestor,
+  data:Alfonso_XIII_of_Spain a :Ancestor,
           :Man,
           :Person .
 
-  data:Mafalda_of_Savoy a :Person,
+  data:Infanta_Beatriz_of_Spain a :Person,
           :Woman ;
-      :hasFather data:Victor_Emmanuel_III_of_Italy .
+      :hasFather data:Alfonso_XIII_of_Spain ;
+      :hasMother data:Victoria_Eugenie_of_Battenberg .
 
-  data:Male_Sex a :Male .
+  data:Marina_Torlonia_di_Civitella_Cesi a :Person,
+          :Woman .
 
-  data:Margaret_of_Prussia a :Ancestor,
+  data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Mary_Elsie_Moore a :Ancestor,
           :Person,
           :Woman .
 
-  data:Victor_Emmanuel_III_of_Italy a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Philipp_Prince_of_Hesse a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1980 ;
-      :hasFather data:Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1925 ;
-      :hasMother data:Margaret_of_Prussia ;
-      :hasRelation data:Mafalda_of_Savoy ;
-      :hasSex data:Male_Sex .
+  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -995,6 +910,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (be9096db-c2af-40c0-818b-2f32129327c4)
- Call ID: be9096db-c2af-40c0-818b-2f32129327c4
+  Finish (3ad92f6e-feb4-4b75-9622-2cd6ad582cbc)
+ Call ID: 3ad92f6e-feb4-4b75-9622-2cd6ad582cbc
   Args:

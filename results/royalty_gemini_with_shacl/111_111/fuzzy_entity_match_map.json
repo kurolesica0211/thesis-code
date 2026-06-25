@@ -16,35 +16,28 @@
       "qid": "Q1936171",
       "label": "India Hicks",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#David_Nightingale_Hicks",
       "qid": "Q5238032",
       "label": "David Nightingale Hicks",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Lady_Pamela_Hicks",
       "qid": "Q3268202",
       "label": "Lady Pamela Hicks",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Edwina_Mountbatten-_Countess_Mountbatten_of_Burma",
       "qid": "Q271995",
       "label": "Edwina Mountbatten, Countess Mountbatten of Burma",
       "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
-      "qid": "Q116062",
-      "label": "Princess Alice of Battenberg",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -59,11 +52,11 @@
       "ground_truth_qid": "Q5238032",
       "ground_truth_label": "David Nightingale Hicks",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "David Nightingale Hicks",
       "best_candidate_label": "David Nightingale Hicks",
       "best_candidate_qid": "Q5238032",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -77,11 +70,11 @@
       "ground_truth_qid": "Q1936171",
       "ground_truth_label": "India Hicks",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "India Hicks",
       "best_candidate_label": "India Hicks",
       "best_candidate_qid": "Q1936171",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,30 +88,12 @@
       "ground_truth_qid": "Q3268202",
       "ground_truth_label": "Lady Pamela Hicks",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Lady Pamela Mountbatten",
       "best_candidate_label": "Lady Pamela Hicks",
       "best_candidate_qid": "Q3268202",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Countess_Mountbatten_of_Burma",
-      "extracted_local_name": "Countess_Mountbatten_of_Burma",
-      "embedding_text": "Countess Mountbatten of Burma",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.8548387096774194,
-      "ground_truth_uri": "http://example.com/data#Edwina_Mountbatten-_Countess_Mountbatten_of_Burma",
-      "ground_truth_qid": "Q271995",
-      "ground_truth_label": "Edwina Mountbatten, Countess Mountbatten of Burma",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Countess Mountbatten",
-      "best_candidate_label": "Edwina Mountbatten, Countess Mountbatten of Burma",
-      "best_candidate_qid": "Q271995",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8548387096774194
     },
     {
       "extracted_uri": "http://example.org/data/David_Flint_Wood",
@@ -135,31 +110,13 @@
       "best_candidate_match_text": "David Hicks",
       "best_candidate_label": "David Nightingale Hicks",
       "best_candidate_qid": "Q5238032",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.5185185185185185
-    },
-    {
-      "extracted_uri": "http://example.org/data/Earl_Mountbatten_of_Burma",
-      "extracted_local_name": "Earl_Mountbatten_of_Burma",
-      "embedding_text": "Earl Mountbatten of Burma",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.5185185185185185
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 4,
-    "entities_unmatched": 2
+    "entities_total": 4,
+    "entities_matched": 3,
+    "entities_unmatched": 1
   }
 }

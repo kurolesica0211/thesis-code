@@ -69,56 +69,58 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Christina of the Netherlands (Maria Christina; 18 February 1947 – 16 August 2019) was the youngest of four daughters of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-She taught singing in New York and was a long-term supporter of the Youth Music Foundation in the Netherlands.
-Christina died of bone cancer in 2019.
-Early life
+Princess Xenia Georgievna of Russia (22 August 1903 – 17 September 1965) was the younger daughter of Grand Duke George Mihailovich of Russia and Princess Maria Georgievna of Greece and Denmark.
+She is known for recognizing Anna Anderson as Grand Duchess Anastasia.
+Youth
 
-Princess Christina, who was known as Princess Marijke in her youth, was born on 18 February 1947, at Soestdijk Palace, Baarn, the Netherlands.
-Her parents were Crown Princess Juliana, the only child of Queen Wilhelmina of the Netherlands, and Prince Bernhard of Lippe-Biesterfeld.
-At the time of her birth, she was fifth in the line to the throne after her mother and three older sisters: Princess Beatrix, Princess Irene and Princess Margriet.
-She was baptised on 9 October 1947 and her godparents included Queen Wilhelmina (her maternal grandmother), her eldest sister Princess Beatrix, Sir Winston Churchill (for whom her father stood proxy), her paternal grandmother Princess Armgard of Lippe-Biesterfeld, Prince Felix of Luxembourg, and his niece Princess Anne of Bourbon-Parma.
-On 4 September 1948, after a reign of nearly 58 years, Christina's grandmother Queen Wilhelmina (68) abdicated the throne and her mother was inaugurated as Queen of the Kingdom of the Netherlands on 6 September 1948.
-Childhood and education
+Xenia and her older sister Princess Nina Georgievna, who was born in 1901, left Russia in 1914 to spend the war years in England with their mother.
+In 1919, her father, his brother Grand Duke Nicholas Mikhailovich, and their cousins Grand Duke Paul Alexandrovich and Grand Duke Dmitry Konstantinovich, were executed by a Bolshevik firing squad in St. Petersburg.
+Anna Anderson controversy
 
-While her mother was pregnant with Christina, she contracted either measles or rubella and as a result, Christina was born nearly blind.
-In 1963, she stopped using her first name Maria, from then on referring to herself merely as Christina.
-Marriage
+In the summer of 1927, Xenia involved herself in the Anna Anderson/Anastasia Tchaikovsky affair by telephoning Gleb Botkin (son of imperial physician Eugene Botkin, who had been murdered along with the former tsar and his family in 1918) with an invitation for Anna to live as a guest at their luxurious estate in New York's Oyster Bay.
+Xenia explains her hospitality: "I had heard that Botkin was arranging to bring 'the invalid' to the United States through a newspaper organization.
+As children, Xenia and her sister Nina had played frequently with the two youngest daughters of Tsar Nicholas II, Grand Duchesses Maria Nikolaevna and Anastasia Nikolaevna, as well as the youngest child and only boy, Tsarevitch Alexei.
+Through her father, Xenia was Anastasia's second cousin, once removed and through her mother they were second cousins.
+According to Xenia, Anastasia "cheated at games, kicked, scratched, pulled hair, and generally knew how to make herself obnoxious.
+"
 
-While living in New York as Christina van Oranje, the Princess started a relationship with Cuban exile Jorge Guillermo.
-Although societal attitudes were changing, because Guillermo was a Catholic, it was still possible that a marriage could cause a public scandal in the Netherlands such as the one that occurred in 1964 when Christina's sister Princess Irene married the Catholic Prince Carlos Hugo of Bourbon-Parma.
-Accordingly, Princess Christina, at that time ninth in line for the Dutch throne, renounced her and her descendants' rights to the throne before officially announcing her engagement on St. Valentine's Day, 1975.
-After their wedding, they lived in New York but later moved to the Netherlands, where they built Villa Eikenhorst  in Wassenaar, near The Hague.
-She recorded and released several CDs (classical, Broadway) in 2000 and 2002, and was a long-term supporter of the Youth Music Foundation in the Netherlands.
-In 1989, she allowed her name to be used for the Prinses Christina Concours, an annual competition held in the Netherlands to encourage the musical talents of children in the Netherlands.
-One of her few public performances was at the marriage of her nephew Prince Bernhard Jr.
-She also sang at the funerals of both of her parents Princess Juliana and Prince Bernhard in the New Church (Delft).
-Early 2019, Christina made headlines when she decided to sell several works of art.
-These works came to her through inheritance from the Dutch royal family: art lover William II of the Netherlands.
+
+Xenia was on a cruise with her husband William in the West Indies at the time of Anna's arrival in New York.
+She had arranged for Anna to stay with Annie Burr Jennings, a friend of Xenia's who lived in a Park Avenue townhouse.
+Upon her return, Xenia sneaked unannounced into Annie Jennings's crowded salon to observe Anna.
+After watching Anna offer her hand to Gleb Botkin, Xenia declared that she knew she was watching an equal.
+"
+
+
+Xenia recognized Anna Anderson as the Grand Duchess Anastasia at once, asserting that Anna was herself at all times, never giving the slightest impression of playing a part.
+The two remained great friends for life even after Anna Anderson had to leave Xenia's home after quarreling.
+Then her treatment of the Grand Duchess Xenia, sister of the last Tsar, led to a quarrel with William Leeds, who turned her out of the house.
+Pierre Gilliard, tutor for the five children of Tsar Nicholas II from 1905 to 1918, pointed out that Princess Xenia had last seen her second cousin when Xenia was 10 and Anastasia was 12.
+Xenia responded that she did not recognize Anastasia visually, but felt she was qualified to tell the difference between a member of the Romanov family and a "Polish peasant woman."
+Anderson bore a strong family resemblance to Tsarina Alexandra's family and her moodiness and temper also reminded Xenia of her cousin Anastasia.
+Prince Dmitri, son of Grand Duchess Xenia, wrote about what Princess Xenia had stated,
+
+
+Xenia's irresponsible statement should be somehow refuted ...
+We know she left Russia in 1914 aged 10 years old, I also know that Nina (her sister) and Xenia never saw Uncle Nicky's family very often, and when they did see them that was when they were very young.
+Personal life
+
+Xenia married twice.
+At age 18 she married William Bateman Leeds Jr. (19 September 1902 – 31 December 1971), the son and heir of the American tin magnate William B. Leeds Sr. and the stepson of Xenia's maternal uncle Prince Christopher of Greece and Denmark, through his marriage to William’s mother, the former Nonie Stewart Leeds.
+Xenia and William had a daughter on 25 February 1925, Nancy Helen Marie Leeds.
+Xenia and William Leeds divorced in 1930.
+Xenia's second marriage was with Herman Jud (1911–1987), whom she married at Glen Cove, New York, on 10 August 1946.
 Death
 
-In June 2018, it was announced that Princess Christina had been diagnosed with bone cancer.
-Titles, styles and honours
-
-Honours
-
-National honours
-
-Foreign honours
-
-Ancestry
-
-References
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+Princess Xenia Georgievna died on 17 September 1965, aged 62, survived by her second husband and by her daughter, Nancy Leeds Wynkoop, and by granddaughter Alexandra.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +136,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +153,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +187,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +292,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +312,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +322,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +362,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,217 +461,160 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (db569ef2-52a2-4d12-9234-53e4fd0122e7)
- Call ID: db569ef2-52a2-4d12-9234-53e4fd0122e7
+  AssignClass (92ff8ead-f93f-4ccc-821c-e3c316b60b23)
+ Call ID: 92ff8ead-f93f-4ccc-821c-e3c316b60b23
   Args:
-    source: Princess_Christina_of_the_Netherlands
     type: :Woman
-  AssignClass (17ca058e-18b0-4872-bbfe-084bd04b96a7)
- Call ID: 17ca058e-18b0-4872-bbfe-084bd04b96a7
+    source: :XeniaGeorgievna
+  AssignClass (f41f6ae6-7bda-4c2d-9f8f-abde0ec128fc)
+ Call ID: f41f6ae6-7bda-4c2d-9f8f-abde0ec128fc
   Args:
+    source: :XeniaGeorgievna
     type: :Person
-    source: Princess_Christina_of_the_Netherlands
-  AddLiteral (3a4c5857-b331-433d-aece-570bc6189e32)
- Call ID: 3a4c5857-b331-433d-aece-570bc6189e32
+  AddLiteral (9b095231-f926-40d1-b72a-d5fbbc7dd593)
+ Call ID: 9b095231-f926-40d1-b72a-d5fbbc7dd593
   Args:
-    source: Princess_Christina_of_the_Netherlands
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (023c4779-b9c0-4949-863f-ad6066bba30b)
- Call ID: 023c4779-b9c0-4949-863f-ad6066bba30b
-  Args:
-    source: Princess_Christina_of_the_Netherlands
-    literal_type: xsd:integer
-    literal_value: 1947
+    literal_value: 1903
+    source: :XeniaGeorgievna
     relation: :hasBirthYear
-  AddLiteral (b6cc2b59-b468-4f52-9528-f4abd9a0f604)
- Call ID: b6cc2b59-b468-4f52-9528-f4abd9a0f604
-  Args:
-    source: Princess_Christina_of_the_Netherlands
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 2019
-  AddLiteral (716a24e5-4581-44f5-a154-d3dc32db8e0f)
- Call ID: 716a24e5-4581-44f5-a154-d3dc32db8e0f
+  AddLiteral (1bb250ae-f5e9-47fd-8446-5cff2d555bfa)
+ Call ID: 1bb250ae-f5e9-47fd-8446-5cff2d555bfa
   Args:
-    source: Princess_Christina_of_the_Netherlands
-    literal_value: Princess Marijke
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-  AddLiteral (09a3d7b7-69d7-4391-9196-d9b409929216)
- Call ID: 09a3d7b7-69d7-4391-9196-d9b409929216
+    literal_value: 1965
+    literal_type: xsd:integer
+    source: :XeniaGeorgievna
+    relation: :hasDeathYear
+  AssignClass (dcf951fa-b60c-4275-a3fe-6a01a406328c)
+ Call ID: dcf951fa-b60c-4275-a3fe-6a01a406328c
   Args:
-    literal_type: xsd:string
-    literal_value: Christina van Oranje
-    relation: :alsoKnownAs
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (e4037359-3b4b-4183-a790-690a72eda100)
- Call ID: e4037359-3b4b-4183-a790-690a72eda100
+    source: :GeorgeMihailovich
+    type: :Man
+  AssignClass (72f9871b-1a2a-4339-8cf7-1af2e82a3b9d)
+ Call ID: 72f9871b-1a2a-4339-8cf7-1af2e82a3b9d
+  Args:
+    source: :GeorgeMihailovich
+    type: :Person
+  AssignClass (68f47c5b-b834-444d-a674-ec283368da35)
+ Call ID: 68f47c5b-b834-444d-a674-ec283368da35
   Args:
     type: :Woman
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (33d0f5ea-258f-448a-a4fc-951d3649bce5)
- Call ID: 33d0f5ea-258f-448a-a4fc-951d3649bce5
+    source: :MariaGeorgievna
+  AssignClass (590fa403-9b3c-4ced-95e8-b84c03a4f564)
+ Call ID: 590fa403-9b3c-4ced-95e8-b84c03a4f564
   Args:
-    source: Queen_Juliana_of_the_Netherlands
-    type: :Ancestor
-  AssignClass (e399198e-5904-4ce0-88cd-cf8a8c2ea7cb)
- Call ID: e399198e-5904-4ce0-88cd-cf8a8c2ea7cb
+    source: :MariaGeorgievna
+    type: :Person
+  AddTriple (498da19b-c578-4d9f-b42f-c5bac9a0c785)
+ Call ID: 498da19b-c578-4d9f-b42f-c5bac9a0c785
   Args:
-    type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AssignClass (8dd4270b-b3dd-43e0-812d-8e94b5fafdd2)
- Call ID: 8dd4270b-b3dd-43e0-812d-8e94b5fafdd2
-  Args:
-    type: :Ancestor
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AddTriple (f2860a4a-62ba-4665-9453-fb71174fb19a)
- Call ID: f2860a4a-62ba-4665-9453-fb71174fb19a
-  Args:
-    relation: :hasMother
-    target: Queen_Juliana_of_the_Netherlands
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (7502d7f9-e3c9-4ca8-b90b-10cc273652d1)
- Call ID: 7502d7f9-e3c9-4ca8-b90b-10cc273652d1
-  Args:
-    source: Princess_Christina_of_the_Netherlands
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
     relation: :hasFather
-  AssignClass (047eb920-1909-47d6-9445-2a6e4386b3cf)
- Call ID: 047eb920-1909-47d6-9445-2a6e4386b3cf
+    source: :XeniaGeorgievna
+    target: :GeorgeMihailovich
+  AddTriple (3b2e887b-f046-4020-aeac-00f9f573ad19)
+ Call ID: 3b2e887b-f046-4020-aeac-00f9f573ad19
   Args:
-    type: :Woman
-    source: Queen_Wilhelmina_of_the_Netherlands
-  AssignClass (f475feaa-b1df-423d-91f5-cdd549daa9a1)
- Call ID: f475feaa-b1df-423d-91f5-cdd549daa9a1
-  Args:
-    source: Queen_Wilhelmina_of_the_Netherlands
-    type: :Ancestor
-  AddTriple (431c71b8-8285-414b-afd0-6f4bf6efdb0f)
- Call ID: 431c71b8-8285-414b-afd0-6f4bf6efdb0f
-  Args:
-    target: Queen_Wilhelmina_of_the_Netherlands
+    source: :XeniaGeorgievna
     relation: :hasMother
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (18b92a6d-df34-46c6-a3ff-2024ecbfa10c)
- Call ID: 18b92a6d-df34-46c6-a3ff-2024ecbfa10c
-  Args:
-    source: Princess_Beatrix
-    type: :Woman
-  AssignClass (1685dbd4-de32-4ff4-ac82-4fb06a2e310d)
- Call ID: 1685dbd4-de32-4ff4-ac82-4fb06a2e310d
+    target: :MariaGeorgievna
+  AssignClass (746f7126-197e-4628-ab14-f76193961db7)
+ Call ID: 746f7126-197e-4628-ab14-f76193961db7
   Args:
     type: :Woman
-    source: Princess_Irene
-  AssignClass (756bec4e-dc77-466f-aa88-92e23b796e0c)
- Call ID: 756bec4e-dc77-466f-aa88-92e23b796e0c
-  Args:
-    source: Princess_Margriet
-    type: :Woman
-  AddTriple (56beb496-2eba-4948-9dce-f7cecf7b014d)
- Call ID: 56beb496-2eba-4948-9dce-f7cecf7b014d
-  Args:
-    relation: :isSisterOf
-    target: Princess_Beatrix
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (8777df87-0b75-4854-bf05-ec04c8a58c66)
- Call ID: 8777df87-0b75-4854-bf05-ec04c8a58c66
-  Args:
-    target: Princess_Irene
-    relation: :isSisterOf
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (156ba257-9558-4d85-8fbd-abc37a16b5e6)
- Call ID: 156ba257-9558-4d85-8fbd-abc37a16b5e6
-  Args:
-    target: Princess_Margriet
-    relation: :isSisterOf
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (d41a3938-1e7c-4925-a3fe-0d5c04c20b78)
- Call ID: d41a3938-1e7c-4925-a3fe-0d5c04c20b78
-  Args:
-    source: Jorge_Guillermo
-    type: :Man
-  AssignClass (a653603f-938f-4f7f-950c-04d3089eaeef)
- Call ID: a653603f-938f-4f7f-950c-04d3089eaeef
+    source: :NinaGeorgievna
+  AssignClass (827ea5bf-4208-4d62-986f-061ceb73edc5)
+ Call ID: 827ea5bf-4208-4d62-986f-061ceb73edc5
   Args:
     type: :Person
-    source: Jorge_Guillermo
-  AddLiteral (3cd38f98-c600-47df-8e7e-4c9d4dba4bb4)
- Call ID: 3cd38f98-c600-47df-8e7e-4c9d4dba4bb4
+    source: :NinaGeorgievna
+  AddTriple (6b72a2ae-f854-4bf8-ba47-872a542e1076)
+ Call ID: 6b72a2ae-f854-4bf8-ba47-872a542e1076
   Args:
-    source: Jorge_Guillermo
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-  AddTriple (b840da09-8909-4074-b138-f3dd9bef5b1b)
- Call ID: b840da09-8909-4074-b138-f3dd9bef5b1b
+    target: :NinaGeorgievna
+    source: :XeniaGeorgievna
+    relation: :isSisterOf
+  AddTriple (b7976540-e9d7-41f7-9e5b-205d98e00e93)
+ Call ID: b7976540-e9d7-41f7-9e5b-205d98e00e93
   Args:
-    target: Jorge_Guillermo
+    relation: :hasFather
+    source: :NinaGeorgievna
+    target: :GeorgeMihailovich
+  AddTriple (1e5cf9a3-de31-45e5-8472-ac8b8ca2e102)
+ Call ID: 1e5cf9a3-de31-45e5-8472-ac8b8ca2e102
+  Args:
+    target: :MariaGeorgievna
+    relation: :hasMother
+    source: :NinaGeorgievna
+  AssignClass (0e8889f4-e2ca-4968-b71d-5a73a8ed6913)
+ Call ID: 0e8889f4-e2ca-4968-b71d-5a73a8ed6913
+  Args:
+    type: :Man
+    source: :NicholasMikhailovich
+  AssignClass (3fbd7ca1-d326-4c76-937e-1861c2cdf06b)
+ Call ID: 3fbd7ca1-d326-4c76-937e-1861c2cdf06b
+  Args:
+    source: :NicholasMikhailovich
+    type: :Person
+  AddTriple (2bc9d5ce-809a-45a0-8b83-491ec8156590)
+ Call ID: 2bc9d5ce-809a-45a0-8b83-491ec8156590
+  Args:
+    source: :NicholasMikhailovich
+    relation: :isBrotherOf
+    target: :GeorgeMihailovich
+  AssignClass (7e317eb4-7509-4ea0-82d9-c256555c4eb1)
+ Call ID: 7e317eb4-7509-4ea0-82d9-c256555c4eb1
+  Args:
+    source: :WilliamBatemanLeedsJr
+    type: :Man
+  AssignClass (18343605-1880-4925-af71-ed46ba24d3f5)
+ Call ID: 18343605-1880-4925-af71-ed46ba24d3f5
+  Args:
+    source: :WilliamBatemanLeedsJr
+    type: :Person
+  AddTriple (7b133fe7-3ef6-4a2b-8874-4bae37eb11c0)
+ Call ID: 7b133fe7-3ef6-4a2b-8874-4bae37eb11c0
+  Args:
     relation: :hasRelation
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (ed73782f-454b-4dd2-85fb-b039a1a30861)
- Call ID: ed73782f-454b-4dd2-85fb-b039a1a30861
+    source: :XeniaGeorgievna
+    target: :WilliamBatemanLeedsJr
+  AssignClass (7f1b78e4-c09b-4aa1-8c37-daf1528ec693)
+ Call ID: 7f1b78e4-c09b-4aa1-8c37-daf1528ec693
+  Args:
+    source: :NancyHelenMarieLeeds
+    type: :Woman
+  AssignClass (358e3f46-e339-4e92-83ee-93a1cd8b5ccc)
+ Call ID: 358e3f46-e339-4e92-83ee-93a1cd8b5ccc
+  Args:
+    source: :NancyHelenMarieLeeds
+    type: :Person
+  AddTriple (4684dd52-8f2f-45b0-908d-4fac67a78175)
+ Call ID: 4684dd52-8f2f-45b0-908d-4fac67a78175
+  Args:
+    target: :XeniaGeorgievna
+    relation: :isDaughterOf
+    source: :NancyHelenMarieLeeds
+  AddTriple (d2972295-7475-4bb9-9f8a-7649c53e3681)
+ Call ID: d2972295-7475-4bb9-9f8a-7649c53e3681
+  Args:
+    target: :WilliamBatemanLeedsJr
+    relation: :isDaughterOf
+    source: :NancyHelenMarieLeeds
+  AssignClass (b85aab7c-3bf7-465f-ad38-7d317cca3fc6)
+ Call ID: b85aab7c-3bf7-465f-ad38-7d317cca3fc6
   Args:
     type: :Man
-    source: Prince_Carlos_Hugo_of_Bourbon-Parma
-  AssignClass (734395a0-b3a5-4361-8c4b-91054591f7b1)
- Call ID: 734395a0-b3a5-4361-8c4b-91054591f7b1
+    source: :HermanJud
+  AssignClass (8f52a4a9-55d1-48cc-aa19-bd6f0ddaebe0)
+ Call ID: 8f52a4a9-55d1-48cc-aa19-bd6f0ddaebe0
   Args:
-    source: Prince_Carlos_Hugo_of_Bourbon-Parma
+    source: :HermanJud
     type: :Person
-  AddTriple (3cf27d78-0491-4929-9f17-144253f5284b)
- Call ID: 3cf27d78-0491-4929-9f17-144253f5284b
+  AddTriple (7ad0bb12-205d-48ff-a817-82909ae2a0b7)
+ Call ID: 7ad0bb12-205d-48ff-a817-82909ae2a0b7
   Args:
-    source: Princess_Irene
+    target: :HermanJud
+    source: :XeniaGeorgievna
     relation: :hasRelation
-    target: Prince_Carlos_Hugo_of_Bourbon-Parma
-  AssignClass (c00b6e42-1e67-4987-8fca-bc9b154ecafa)
- Call ID: c00b6e42-1e67-4987-8fca-bc9b154ecafa
-  Args:
-    source: Prince_Bernhard_Jr
-    type: :Man
-  AssignClass (0f0d4df7-153e-4cb9-8f84-675b8401995b)
- Call ID: 0f0d4df7-153e-4cb9-8f84-675b8401995b
-  Args:
-    source: Prince_Bernhard_Jr
-    type: :Person
-  AddTriple (47aab0d1-a43d-4e26-97cf-eb7234cff138)
- Call ID: 47aab0d1-a43d-4e26-97cf-eb7234cff138
-  Args:
-    target: Prince_Bernhard_Jr
-    relation: :isBloodrelationOf
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (88d0e8fc-445b-4bb1-b813-deac031577bc)
- Call ID: 88d0e8fc-445b-4bb1-b813-deac031577bc
-  Args:
-    type: :Woman
-    source: Princess_Armgard_of_Lippe-Biesterfeld
-  AssignClass (15d92d02-8696-42ef-b6c4-386bd840e7ff)
- Call ID: 15d92d02-8696-42ef-b6c4-386bd840e7ff
-  Args:
-    source: Princess_Armgard_of_Lippe-Biesterfeld
-    type: :Ancestor
-  AssignClass (25c628c4-614d-4084-9c6d-f30624f85ca7)
- Call ID: 25c628c4-614d-4084-9c6d-f30624f85ca7
-  Args:
-    type: :Man
-    source: Prince_Felix_of_Luxembourg
-  AssignClass (60040a0a-8cbd-4656-80e4-8f3e808afde0)
- Call ID: 60040a0a-8cbd-4656-80e4-8f3e808afde0
-  Args:
-    source: Prince_Felix_of_Luxembourg
-    type: :Ancestor
-  AssignClass (d452a9ad-7ec2-4305-b272-5dd45bbd22ad)
- Call ID: d452a9ad-7ec2-4305-b272-5dd45bbd22ad
-  Args:
-    source: Princess_Anne_of_Bourbon-Parma
-    type: :Woman
-  AssignClass (c1aa51c5-78f4-4a8b-8b36-061860f73689)
- Call ID: c1aa51c5-78f4-4a8b-8b36-061860f73689
-  Args:
-    source: Princess_Anne_of_Bourbon-Parma
-    type: :Person
-  Finish (5efafa1a-8571-4851-8e8f-5f521c72979f)
- Call ID: 5efafa1a-8571-4851-8e8f-5f521c72979f
+  Finish (3a1801b9-d176-442b-938b-3bc29dd6d243)
+ Call ID: 3a1801b9-d176-442b-938b-3bc29dd6d243
   Args:

@@ -201,7 +201,7 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasFather
     Value: Henri_Count_of_Paris
     Constraint: ClassConstraintComponent
@@ -280,9 +280,9 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasMother
-    Value: Isabelle_of_Orl%C3%A9ans-Braganza
+    Value: Isabelle_of_Orleans_Braganza
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -443,7 +443,7 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasFather
     Value: Henri_Count_of_Paris
     Constraint: ClassConstraintComponent
@@ -522,9 +522,9 @@ Violations:
 
   Violation [7]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasMother
-    Value: Isabelle_of_Orl%C3%A9ans-Braganza
+    Value: Isabelle_of_Orleans_Braganza
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -602,7 +602,7 @@ Violations:
 
   Violation [8]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasFather
     Value: Henri_Count_of_Paris
     Constraint: ClassConstraintComponent
@@ -681,9 +681,9 @@ Violations:
 
   Violation [9]:
     Severity: Violation
-    Focus node: Claude_of_Orl%C3%A9ans
+    Focus node: Claude_of_Orleans
     Path: hasMother
-    Value: Isabelle_of_Orl%C3%A9ans-Braganza
+    Value: Isabelle_of_Orleans_Braganza
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -766,4 +766,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The entity \'Aimone_Duke_of_Aosta\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Amedeo_of_Savoy_Duke_of_Aosta\'.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Aimone_Duke_of_Aosta\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Amedeo_of_Savoy_Duke_of_Aosta\'.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Henri_Count_of_Paris\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Isabelle_of_Orl%C3%A9ans-Braganza\' is missing the required class \':Ancestor\' to be a valid value for the \'hasMother\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orl%C3%A9ans-Braganza\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Aimone_Duke_of_Aosta\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Amedeo_of_Savoy_Duke_of_Aosta\'.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Henri_Count_of_Paris\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Isabelle_of_Orl%C3%A9ans-Braganza\' is missing the required class \':Ancestor\' to be a valid value for the \'hasMother\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orl%C3%A9ans-Braganza\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Henri_Count_of_Paris\' is missing the required class \':Ancestor\' to be a valid value for the \'hasFather\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity \'Isabelle_of_Orl%C3%A9ans-Braganza\' is missing the required class \':Ancestor\' to be a valid value for the \'hasMother\' property of \'Claude_of_Orl%C3%A9ans\'.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orl%C3%A9ans-Braganza\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHFzaKdhLLhCvbv0VWaQUgHmZ2qe2LZmsdod3JR1IZqLVZvFWgydgJcIp8vAZg'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Aimone_Duke_of_Aosta, identified as the father of Amedeo_of_Savoy_Duke_of_Aosta, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Aimone_Duke_of_Aosta is missing the required :Man class, which is expected for a father relationship.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Man\')"\n    },\n    {\n      "explanation": "The node Henri_Count_of_Paris, identified as the father of Claude_of_Orleans, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Isabelle_of_Orleans_Braganza, identified as the mother of Claude_of_Orleans, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans_Braganza\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Aimone_Duke_of_Aosta is already processed, but ensure it is confirmed as a :Man to satisfy the :Person-hasFather constraint for Amedeo_of_Savoy_Duke_of_Aosta.",\n      "instruction": "AssignClass(node=\'Aimone_Duke_of_Aosta\', class=\':Man\')"\n    },\n    {\n      "explanation": "The node Henri_Count_of_Paris is missing the required :Man class to satisfy the :Person-hasFather constraint for Claude_of_Orleans.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Man\')"\n    },\n    {\n      "explanation": "The node Isabelle_of_Orleans_Braganza is missing the required :Woman class to satisfy the :Person-hasMother constraint for Claude_of_Orleans.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans_Braganza\', class=\':Woman\')"\n    },\n    {\n      "explanation": "The node Henri_Count_of_Paris is missing the required :Ancestor class to satisfy the :Person-hasFather constraint for Claude_of_Orleans.",\n      "instruction": "AssignClass(node=\'Henri_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Isabelle_of_Orleans_Braganza is missing the required :Ancestor class to satisfy the :Person-hasMother constraint for Claude_of_Orleans.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans_Braganza\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHOXb6Sn7VLmGsyB61FGXlJRvMsGlxqTHSB+0lEU94nWUVHG/kOmMlQGkl/cIK'}}]

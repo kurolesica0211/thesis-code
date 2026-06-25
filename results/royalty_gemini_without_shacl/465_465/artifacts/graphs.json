@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Regina_von_Habsburg a :Person,\n        :Woman ;\n    :alsoKnownAs \"Archduchess Regina of Austria\"^^xsd:string ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2010 ;\n    :hasRelation data:Otto_von_Habsburg .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IsabellaAlexandraMay a :Person,\n        :Woman ;\n    :isChildOf data:FrederickWindsor,\n        data:SophieWinkleman .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasRelation data:SophieWinkleman ;\n    :isSiblingOf data:LadyGabriella .\n\ndata:LadyGabriella a :Person,\n        :Woman .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman .\n\ndata:SophieWinkleman a :Person,\n        :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Regina_von_Habsburg a :Person,\n        :Woman ;\n    :alsoKnownAs \"Archduchess Regina of Austria\"^^xsd:string ;\n    :hasBirthYear 1925 ;\n    :hasDeathYear 2010 ;\n    :hasRelation data:Otto_von_Habsburg .\n\ndata:Otto_von_Habsburg a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:IsabellaAlexandraMay a :Person,\n        :Woman ;\n    :isChildOf data:FrederickWindsor,\n        data:SophieWinkleman .\n\ndata:FrederickWindsor a :Man,\n        :Person ;\n    :hasBirthYear 1979 ;\n    :hasFather data:PrinceMichaelOfKent ;\n    :hasMother data:PrincessMichaelOfKent ;\n    :hasRelation data:SophieWinkleman ;\n    :isSiblingOf data:LadyGabriella .\n\ndata:LadyGabriella a :Person,\n        :Woman .\n\ndata:PrinceMichaelOfKent a :Man,\n        :Person .\n\ndata:PrincessMichaelOfKent a :Person,\n        :Woman .\n\ndata:SophieWinkleman a :Person,\n        :Woman .\n\n"
     }
 ]

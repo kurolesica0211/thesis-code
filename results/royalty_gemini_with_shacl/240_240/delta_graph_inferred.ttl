@@ -1,0 +1,284 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jaime_de_Marichalar a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jaime_de_Marichalar ;
+    :hasChild data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:Felipe ;
+    :isAncestorOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Jaime_de_Marichalar ;
+    :isBrotherOf data:Jaime_de_Marichalar ;
+    :isFatherOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Jaime_de_Marichalar ;
+    :isUncleOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n .
+
+data:Infanta_Sof%C3%ADa a :Person,
+        :Woman ;
+    :hasAncestor data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasFather data:King_Felipe_VI ;
+    :hasParent data:King_Felipe_VI ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSister data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isChildOf data:King_Felipe_VI ;
+    :isDaughterOf data:King_Felipe_VI ;
+    :isSiblingOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias .
+
+data:Leonor%2C_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasAncestor data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasFather data:King_Felipe_VI ;
+    :hasParent data:King_Felipe_VI ;
+    :hasRelation data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSister data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isChildOf data:King_Felipe_VI ;
+    :isDaughterOf data:King_Felipe_VI ;
+    :isSiblingOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias .
+
+data:King_Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Juan_Carlos_I ;
+    :hasChild data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :hasDaughter data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Infanta_Sof%C3%ADa,
+        data:Jaime_de_Marichalar,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSon data:King_Felipe_VI ;
+    :isAncestorOf data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:King_Juan_Carlos_I ;
+    :isBrotherOf data:King_Juan_Carlos_I ;
+    :isFatherOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isParentOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isSiblingOf data:King_Juan_Carlos_I ;
+    :isUncleOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI .
+
+data:Queen_Sof%C3%ADa_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :hasDaughter data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Infanta_Sof%C3%ADa,
+        data:Jaime_de_Marichalar,
+        data:King_Felipe_VI,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Sof%C3%ADa_of_Spain,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSon data:King_Felipe_VI ;
+    :isAncestorOf data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isBloodrelationOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isMotherOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isParentOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isSiblingOf data:Queen_Sof%C3%ADa_of_Spain ;
+    :isSisterOf data:Queen_Sof%C3%ADa_of_Spain .
+
+data:Felipe a :Man,
+        :Person ;
+    :hasAncestor data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasBrother data:Felipe ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :hasParent data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBrotherOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isSonOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar .
+
+data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasBirthYear 2000 ;
+    :hasBrother data:Felipe ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :hasParent data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isChildOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isDaughterOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isSisterOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n .
+
+data:King_Felipe_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasBrother data:King_Felipe_VI ;
+    :hasChild data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasParent data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasRelation data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Infanta_Sof%C3%ADa,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasSister data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :isAncestorOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isBrotherOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isChildOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :isFatherOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias ;
+    :isSiblingOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isSonOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :isUncleOf data:Felipe,
+        data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n .
+
+data:Infanta_Elena%2C_Duchess_of_Lugo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasBrother data:King_Felipe_VI ;
+    :hasChild data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasDaughter data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasParent data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :hasRelation data:Felipe,
+        data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar,
+        data:King_Felipe_VI,
+        data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :hasSister data:Infanta_Elena%2C_Duchess_of_Lugo ;
+    :hasSon data:Felipe ;
+    :isAncestorOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isAuntOf data:Felipe,
+        data:Infanta_Sof%C3%ADa,
+        data:Leonor%2C_Princess_of_Asturias,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isBloodrelationOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isChildOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :isDaughterOf data:King_Juan_Carlos_I,
+        data:Queen_Sof%C3%ADa_of_Spain ;
+    :isMotherOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isParentOf data:Felipe,
+        data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n ;
+    :isSiblingOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI ;
+    :isSisterOf data:Infanta_Elena%2C_Duchess_of_Lugo,
+        data:King_Felipe_VI .
+

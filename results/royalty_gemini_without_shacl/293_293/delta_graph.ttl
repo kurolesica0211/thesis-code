@@ -2,30 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:AlexandraOfHanover a :Woman ;
-    :hasFather data:ErnstAugust_PrinceOfHanover .
+data:SamuelChatto a :Man,
+        :Person ;
+    :hasAncestor data:ElizabethII,
+        data:PrincessMargaret ;
+    :hasBirthYear 1996 ;
+    :hasFather data:DanielChatto ;
+    :hasMother data:LadySarahChatto .
 
-data:EkaterinaIgorievnaMalysheva a :Woman ;
-    :hasBirthYear 1986 ;
-    :hasFather data:IgorMalyshev ;
-    :hasMother data:SvetlanaMalysheva .
+data:DanielChatto a :Man,
+        :Person .
 
-data:ErnstAugust_HereditaryPrinceOfHanover a :Man ;
-    :hasBirthYear 1983 ;
-    :hasBrother data:ChristianOfHanover ;
-    :hasFather data:ErnstAugust_PrinceOfHanover ;
-    :hasMarriageYear 2017 ;
-    :hasMother data:ChantalHochuli .
+data:ElizabethII a :Person,
+        :Woman .
 
-data:ChristianOfHanover a :Man ;
-    :hasFather data:ErnstAugust_PrinceOfHanover ;
-    :hasMother data:ChantalHochuli .
+data:LadySarahChatto a :Person,
+        :Woman .
 
-data:IgorMalyshev a :Man .
-
-data:SvetlanaMalysheva a :Woman .
-
-data:ChantalHochuli a :Woman .
-
-data:ErnstAugust_PrinceOfHanover a :Man .
+data:PrincessMargaret a :Person,
+        :Woman .
 

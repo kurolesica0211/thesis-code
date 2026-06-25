@@ -2,55 +2,59 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_of_Denmark a :Man,
+data:Eliane_Sophia_Carolina_van_Vollenhoven a :Person,
+        :Woman ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Person,
+        :Woman ;
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Prince_Floris_van_Vollenhoven ;
+    :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
 
-data:Henrik_of_Denmark a :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Eleonoor_Stammeijer a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Isabella_of_Denmark a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Margrethe_II a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Marie_of_Denmark a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Patricia_Bailey a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Frederik_X a :Ancestor,
+data:Hans_S%C3%B6hngen a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Josephine_of_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 2011 ;
-    :hasBrother data:Vincent_of_Denmark ;
-    :hasFather data:Frederik_X ;
-    :hasMother data:Mary_of_Denmark ;
-    :hasSex data:Female ;
-    :isSiblingOf data:Vincent_of_Denmark .
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person .
 
-data:Mary_of_Denmark a :Ancestor,
+data:Prince_Bernhard a :Man,
+        :Person .
+
+data:Prince_Maurits a :Man,
+        :Person .
+
+data:Prince_Pieter_Christiaan a :Man,
+        :Person .
+
+data:Princess_Margriet a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Aim%C3%A9e_S%C3%B6hngen a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Hans_S%C3%B6hngen ;
+    :hasMother data:Eleonoor_Stammeijer .
 
-data:Vincent_of_Denmark a :Man,
+data:Prince_Floris_van_Vollenhoven a :Ancestor,
+        :Man,
         :Person ;
-    :hasSex data:Male ;
-    :hasSister data:Josephine_of_Denmark .
-
-data:Male a :Sex .
-
-data:Female a :Sex .
+    :hasBirthYear 1975 ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :isSiblingOf data:Prince_Bernhard,
+        data:Prince_Maurits,
+        data:Prince_Pieter_Christiaan .
 

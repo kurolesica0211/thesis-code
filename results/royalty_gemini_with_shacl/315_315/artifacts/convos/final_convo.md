@@ -85,39 +85,19 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Adalbert Ferdinand Berengar Viktor of Prussia (14 July 1884 – 22 September 1948) was the third son of Wilhelm II, German Emperor, and Augusta Victoria of Schleswig-Holstein.
-Early life
+Prince Carlo Alessandro della Torre e Tasso, 3rd Duke of Castel Duino (born 10 February 1952) is the current head of the Castel Duino branch of the House of Thurn and Taxis.
+Family
 
-Prince Adalbert was born on 14 July 1884 as the third son of the then Prince Wilhelm of Prussia and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
-He was born in the Marmorpalais of Potsdam in the Province of Brandenburg, where his parents resided until his father acceded to the throne as Emperor Wilhelm II in 1888.
-He spent his childhood with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother’s ancestral Schleswig-Holstein.
-His bride was Princess Adelheid "Adi" of Saxe-Meiningen (16 August 1891 – 25 April 1971), daughter of Prince Frederick and Countess Adelaide of Lippe-Biesterfeld.
-They married on 3 August 1914 in Wilhelmshaven, Germany, and had three children, five grandchildren, six great-grandchildren and two great-great-grandchildren:
-
-
-Kaiserliche Marine
-
-Regimental Commissions
-
-Source:
-
-
-Chivalric Orders
-
-Source:
-
-
-Military Decorations
-
-Death
-
-Adalbert died in La Tour de Peilz, Switzerland, aged 64.
+Carlo Alessandro is the only child of Raimundo, 2nd Duke of Castel Duino and his wife Princess Eugénie of Greece and Denmark.
+He is a maternal second cousin of Charles III, King of the United Kingdom, through their shared great-grandparents, King George I and Queen Olga of Greece, born a Grand Duchess of Russia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +113,9 @@ Adalbert died in La Tour de Peilz, Switzerland, aged 64.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +130,23 @@ Adalbert died in La Tour de Peilz, Switzerland, aged 64.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,186 +438,61 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2e42051d-e050-410c-98ca-9878a937fad1)
- Call ID: 2e42051d-e050-410c-98ca-9878a937fad1
+  AssignClass (8878a2c5-4d26-4e58-b37f-63e6f4d540e8)
+ Call ID: 8878a2c5-4d26-4e58-b37f-63e6f4d540e8
+  Args:
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    type: :Man
+  AssignClass (3f6d17df-4899-41d5-b3e7-f5d0b0a474bc)
+ Call ID: 3f6d17df-4899-41d5-b3e7-f5d0b0a474bc
   Args:
     type: :Man
-    source: Prince_Adalbert_of_Prussia
-  AssignClass (1be23c6c-3db5-4189-8f26-8d8ef5624559)
- Call ID: 1be23c6c-3db5-4189-8f26-8d8ef5624559
+    source: Raimundo
+  AssignClass (82ef691a-0f6f-4992-82fc-14506ae8cdf7)
+ Call ID: 82ef691a-0f6f-4992-82fc-14506ae8cdf7
   Args:
-    type: :Person
-    source: Prince_Adalbert_of_Prussia
-  AddLiteral (1150cce8-2759-44ae-bb1d-912528bbbb1f)
- Call ID: 1150cce8-2759-44ae-bb1d-912528bbbb1f
+    type: :Woman
+    source: Eugenie_of_Greece_and_Denmark
+  AddLiteral (f6eeead1-b8b8-4fd7-8109-d9bcd7fe8bae)
+ Call ID: f6eeead1-b8b8-4fd7-8109-d9bcd7fe8bae
   Args:
-    literal_value: 1884
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_Adalbert_of_Prussia
-    literal_type: xsd:integer
-  AddLiteral (f4006367-e743-44fc-84c4-93f43754fa25)
- Call ID: f4006367-e743-44fc-84c4-93f43754fa25
-  Args:
-    literal_value: 1948
-    relation: :hasDeathYear
-    source: Prince_Adalbert_of_Prussia
-    literal_type: xsd:integer
-  AssignClass (705fb8e2-f24d-43d1-9dd5-5c02a15a086e)
- Call ID: 705fb8e2-f24d-43d1-9dd5-5c02a15a086e
-  Args:
-    type: :Man
-    source: Wilhelm_II_German_Emperor
-  AssignClass (ffa5fb9e-727d-46ce-9be9-925b5cf0fda2)
- Call ID: ffa5fb9e-727d-46ce-9be9-925b5cf0fda2
-  Args:
-    type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (40ead629-4c75-4a33-8baa-bd5cec49c87f)
- Call ID: 40ead629-4c75-4a33-8baa-bd5cec49c87f
-  Args:
-    source: Augusta_Victoria_of_Schleswig_Holstein
-    type: :Woman
-  AssignClass (c12211f6-2b57-48fd-b073-2ce419b0631d)
- Call ID: c12211f6-2b57-48fd-b073-2ce419b0631d
-  Args:
-    source: Augusta_Victoria_of_Schleswig_Holstein
-    type: :Person
-  AddTriple (2b1515e4-996d-4b7e-9e2d-84d3ff061d27)
- Call ID: 2b1515e4-996d-4b7e-9e2d-84d3ff061d27
-  Args:
-    target: Wilhelm_II_German_Emperor
-    relation: :hasFather
-    source: Prince_Adalbert_of_Prussia
-  AddTriple (42054b04-e455-475b-86fe-8f04ff1b026a)
- Call ID: 42054b04-e455-475b-86fe-8f04ff1b026a
-  Args:
-    relation: :hasMother
-    source: Prince_Adalbert_of_Prussia
-    target: Augusta_Victoria_of_Schleswig_Holstein
-  AssignClass (3b8f34f5-b7af-4e31-a5f8-84fc53e17441)
- Call ID: 3b8f34f5-b7af-4e31-a5f8-84fc53e17441
-  Args:
-    source: Princess_Adelheid_of_Saxe_Meiningen
-    type: :Woman
-  AssignClass (ebe9827c-0adf-449f-ae81-ea47134d521d)
- Call ID: ebe9827c-0adf-449f-ae81-ea47134d521d
-  Args:
-    source: Princess_Adelheid_of_Saxe_Meiningen
-    type: :Person
-  AddLiteral (fbe3eb7b-178a-460b-a4c4-3808b65e905f)
- Call ID: fbe3eb7b-178a-460b-a4c4-3808b65e905f
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Princess_Adelheid_of_Saxe_Meiningen
-    literal_value: 1891
-  AddLiteral (1fb43e0a-6cc9-40f6-b2b2-19d586937561)
- Call ID: 1fb43e0a-6cc9-40f6-b2b2-19d586937561
-  Args:
-    literal_value: 1971
-    relation: :hasDeathYear
-    source: Princess_Adelheid_of_Saxe_Meiningen
-    literal_type: xsd:integer
-  AddLiteral (0b51a575-f5f3-40b1-888d-ec6fa727130e)
- Call ID: 0b51a575-f5f3-40b1-888d-ec6fa727130e
-  Args:
-    relation: :hasMarriageYear
-    source: Prince_Adalbert_of_Prussia
-    literal_type: xsd:integer
-    literal_value: 1914
-  AddTriple (c2bed887-7a9a-46be-868a-daa36da13b82)
- Call ID: c2bed887-7a9a-46be-868a-daa36da13b82
-  Args:
-    source: Prince_Adalbert_of_Prussia
-    relation: :hasRelation
-    target: Princess_Adelheid_of_Saxe_Meiningen
-  AssignClass (e3232a8c-a555-4c2a-b947-b8d088c38059)
- Call ID: e3232a8c-a555-4c2a-b947-b8d088c38059
-  Args:
-    source: Prince_Frederick_of_Saxe_Meiningen
-    type: :Man
-  AssignClass (b17fbe4b-03ed-492d-885e-90f38569b869)
- Call ID: b17fbe4b-03ed-492d-885e-90f38569b869
-  Args:
-    source: Prince_Frederick_of_Saxe_Meiningen
-    type: :Person
-  AssignClass (1004f683-2c9a-4acf-9c18-2097d6855368)
- Call ID: 1004f683-2c9a-4acf-9c18-2097d6855368
-  Args:
-    type: :Woman
-    source: Countess_Adelaide_of_Lippe_Biesterfeld
-  AssignClass (9c35bde9-402a-4e0b-81ad-0a70b4d5274e)
- Call ID: 9c35bde9-402a-4e0b-81ad-0a70b4d5274e
-  Args:
-    type: :Person
-    source: Countess_Adelaide_of_Lippe_Biesterfeld
-  AddTriple (a0694ebf-5709-4584-b1d4-805ee2034a14)
- Call ID: a0694ebf-5709-4584-b1d4-805ee2034a14
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    literal_value: 1952
+  AddTriple (e36d760d-20c9-45f7-9b23-a3f12d6bbb63)
+ Call ID: e36d760d-20c9-45f7-9b23-a3f12d6bbb63
   Args:
     relation: :hasFather
-    source: Princess_Adelheid_of_Saxe_Meiningen
-    target: Prince_Frederick_of_Saxe_Meiningen
-  AddTriple (3392292a-528d-4840-821e-5ef2a6a5087d)
- Call ID: 3392292a-528d-4840-821e-5ef2a6a5087d
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    target: Raimundo
+  AddTriple (2c0b7149-2330-4801-a99f-a5e358633b8a)
+ Call ID: 2c0b7149-2330-4801-a99f-a5e358633b8a
   Args:
-    source: Princess_Adelheid_of_Saxe_Meiningen
+    target: Eugenie_of_Greece_and_Denmark
+    source: Carlo_Alessandro_della_Torre_e_Tasso
     relation: :hasMother
-    target: Countess_Adelaide_of_Lippe_Biesterfeld
-  Finish (86caacfa-b3f8-4bf7-a93f-d6b4d47b6ea4)
- Call ID: 86caacfa-b3f8-4bf7-a93f-d6b4d47b6ea4
+  AddTriple (621f945a-07cb-4db0-8b9d-f6c1976d66bb)
+ Call ID: 621f945a-07cb-4db0-8b9d-f6c1976d66bb
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: :Male
+    relation: :hasSex
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+  AddTriple (5870e2d9-a3b5-44f5-bd4e-108396bf53d6)
+ Call ID: 5870e2d9-a3b5-44f5-bd4e-108396bf53d6
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Raimundo
+  AddTriple (00e150b3-cfcc-4b81-aea9-261cafb3e094)
+ Call ID: 00e150b3-cfcc-4b81-aea9-261cafb3e094
+  Args:
+    relation: :hasSex
+    source: Eugenie_of_Greece_and_Denmark
+    target: :Female
+  Finish (47f13deb-3e3e-4882-881a-20c30e78ec14)
+ Call ID: 47f13deb-3e3e-4882-881a-20c30e78ec14
+  Args:
 
 ================================= Tool Message =================================
 
@@ -588,33 +533,17 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Adalbert_of_Prussia a :Man,
-          :Person ;
-      :hasBirthYear 1884 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:Wilhelm_II_German_Emperor ;
-      :hasMarriageYear 1914 ;
-      :hasMother data:Augusta_Victoria_of_Schleswig_Holstein ;
-      :hasRelation data:Princess_Adelheid_of_Saxe_Meiningen .
+  data:Carlo_Alessandro_della_Torre_e_Tasso a :Man ;
+      :hasBirthYear 1952 ;
+      :hasFather data:Raimundo ;
+      :hasMother data:Eugenie_of_Greece_and_Denmark ;
+      :hasSex data:Male .
 
-  data:Augusta_Victoria_of_Schleswig_Holstein a :Person,
-          :Woman .
+  data:Eugenie_of_Greece_and_Denmark a :Woman ;
+      :hasSex data:Female .
 
-  data:Countess_Adelaide_of_Lippe_Biesterfeld a :Person,
-          :Woman .
-
-  data:Prince_Frederick_of_Saxe_Meiningen a :Man,
-          :Person .
-
-  data:Princess_Adelheid_of_Saxe_Meiningen a :Person,
-          :Woman ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1971 ;
-      :hasFather data:Prince_Frederick_of_Saxe_Meiningen ;
-      :hasMother data:Countess_Adelaide_of_Lippe_Biesterfeld .
-
-  data:Wilhelm_II_German_Emperor a :Man,
-          :Person .
+  data:Raimundo a :Man ;
+      :hasSex data:Male .
 
 
 
@@ -626,110 +555,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ab1f936c-15ee-4fd9-abd1-fa6d560e83d5)
- Call ID: ab1f936c-15ee-4fd9-abd1-fa6d560e83d5
+  ValidateShacl (08cb53cc-c249-44e5-a93f-ce8571ce6898)
+ Call ID: 08cb53cc-c249-44e5-a93f-ce8571ce6898
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:30
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the hasFather property of Prince_Adalbert_of_Prussia is not classified as an :Ancestor or :Man.
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig_Holstein for the hasMother property of Prince_Adalbert_of_Prussia is not classified as an :Ancestor or :Woman.
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Augusta_Victoria_of_Schleswig_Holstein, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the hasFather property of Prince_Adalbert_of_Prussia is missing the mandatory classification :Ancestor.
+      The node 'Raimundo' assigned as 'hasFather' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
+      AssignClass(Raimundo, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Frederick_of_Saxe_Meiningen for the hasFather property of Princess_Adelheid_of_Saxe_Meiningen is not classified as an :Ancestor or :Man.
+      The node 'Eugenie_of_Greece_and_Denmark' assigned as 'hasMother' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Saxe_Meiningen, :Ancestor)
+      AssignClass(Eugenie_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig_Holstein for the hasMother property of Prince_Adalbert_of_Prussia is missing the mandatory classification :Ancestor.
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Augusta_Victoria_of_Schleswig_Holstein, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Countess_Adelaide_of_Lippe_Biesterfeld for the hasMother property of Princess_Adelheid_of_Saxe_Meiningen is not classified as an :Ancestor or :Woman.
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe_Biesterfeld, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Wilhelm_II_German_Emperor for the hasFather property of Prince_Adalbert_of_Prussia is missing the mandatory classification :Ancestor.
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
+      AssignClass(Female, :Sex)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Prince_Frederick_of_Saxe_Meiningen for the hasFather property of Princess_Adelheid_of_Saxe_Meiningen is missing the mandatory classification :Ancestor.
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Saxe_Meiningen, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value Augusta_Victoria_of_Schleswig_Holstein for the hasMother property of Prince_Adalbert_of_Prussia is missing the mandatory classification :Ancestor.
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Augusta_Victoria_of_Schleswig_Holstein, :Ancestor)
+      AssignClass(Male, :Sex)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Countess_Adelaide_of_Lippe_Biesterfeld for the hasMother property of Princess_Adelheid_of_Saxe_Meiningen is missing the mandatory classification :Ancestor.
+      The node 'Raimundo' assigned as 'hasFather' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe_Biesterfeld, :Ancestor)
+      AssignClass(Raimundo, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Frederick_of_Saxe_Meiningen for the hasFather property of Princess_Adelheid_of_Saxe_Meiningen is missing the mandatory classification :Ancestor.
+      The node 'Eugenie_of_Greece_and_Denmark' assigned as 'hasMother' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Saxe_Meiningen, :Ancestor)
+      AssignClass(Eugenie_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Raimundo' assigned as 'hasFather' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Raimundo, :Ancestor)
+
+
+  Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Countess_Adelaide_of_Lippe_Biesterfeld for the hasMother property of Princess_Adelheid_of_Saxe_Meiningen is missing the mandatory classification :Ancestor.
+      The node 'Eugenie_of_Greece_and_Denmark' assigned as 'hasMother' to 'Carlo_Alessandro_della_Torre_e_Tasso' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe_Biesterfeld, :Ancestor)
+      AssignClass(Eugenie_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Carlo_Alessandro_della_Torre_e_Tasso' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Raimundo' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Male, :Sex)
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Eugenie_of_Greece_and_Denmark' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Female, :Sex)
 
 
 
@@ -738,28 +811,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3e02c88f-7a21-4243-ae7e-1d0d6e299843)
- Call ID: 3e02c88f-7a21-4243-ae7e-1d0d6e299843
+  AssignClass (a3b98d26-b6c9-41d4-b7e6-1617b07804d2)
+ Call ID: a3b98d26-b6c9-41d4-b7e6-1617b07804d2
+  Args:
+    source: Male
+    type: :Sex
+  AssignClass (1a465039-9d07-42c1-9274-07add32f65ba)
+ Call ID: 1a465039-9d07-42c1-9274-07add32f65ba
+  Args:
+    type: :Sex
+    source: Female
+  AssignClass (8f6de308-1061-4f07-a253-1548d4ed706d)
+ Call ID: 8f6de308-1061-4f07-a253-1548d4ed706d
   Args:
     type: :Ancestor
-    source: Wilhelm_II_German_Emperor
-  AssignClass (bc694f7c-96a1-48d4-a0ba-36d21d3651c8)
- Call ID: bc694f7c-96a1-48d4-a0ba-36d21d3651c8
-  Args:
-    source: Augusta_Victoria_of_Schleswig_Holstein
-    type: :Ancestor
-  AssignClass (07d202c5-a545-444b-85df-4d7a9e07bebf)
- Call ID: 07d202c5-a545-444b-85df-4d7a9e07bebf
+    source: Raimundo
+  AssignClass (d0a5eea4-ba8c-499f-834d-d70c60a11a7d)
+ Call ID: d0a5eea4-ba8c-499f-834d-d70c60a11a7d
   Args:
     type: :Ancestor
-    source: Prince_Frederick_of_Saxe_Meiningen
-  AssignClass (cdf1e265-121f-4d23-ae1a-259987973552)
- Call ID: cdf1e265-121f-4d23-ae1a-259987973552
-  Args:
-    source: Countess_Adelaide_of_Lippe_Biesterfeld
-    type: :Ancestor
-  ValidateShacl (0e5d199c-7c8e-434a-8850-42b5ab5be038)
- Call ID: 0e5d199c-7c8e-434a-8850-42b5ab5be038
+    source: Eugenie_of_Greece_and_Denmark
+  Finish (eb7219c7-5496-4c9a-96fc-0280739de45f)
+ Call ID: eb7219c7-5496-4c9a-96fc-0280739de45f
   Args:
 
 ================================= Tool Message =================================
@@ -781,39 +854,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Adalbert_of_Prussia a :Man,
-          :Person ;
-      :hasBirthYear 1884 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:Wilhelm_II_German_Emperor ;
-      :hasMarriageYear 1914 ;
-      :hasMother data:Augusta_Victoria_of_Schleswig_Holstein ;
-      :hasRelation data:Princess_Adelheid_of_Saxe_Meiningen .
+  data:Carlo_Alessandro_della_Torre_e_Tasso a :Man ;
+      :hasBirthYear 1952 ;
+      :hasFather data:Raimundo ;
+      :hasMother data:Eugenie_of_Greece_and_Denmark ;
+      :hasSex data:Male .
 
-  data:Augusta_Victoria_of_Schleswig_Holstein a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Countess_Adelaide_of_Lippe_Biesterfeld a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Frederick_of_Saxe_Meiningen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Adelheid_of_Saxe_Meiningen a :Person,
+  data:Eugenie_of_Greece_and_Denmark a :Ancestor,
           :Woman ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1971 ;
-      :hasFather data:Prince_Frederick_of_Saxe_Meiningen ;
-      :hasMother data:Countess_Adelaide_of_Lippe_Biesterfeld .
+      :hasSex data:Female .
 
-  data:Wilhelm_II_German_Emperor a :Ancestor,
-          :Man,
-          :Person .
+  data:Female a :Sex .
+
+  data:Raimundo a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Male a :Sex .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a2d06cbf-a70b-48e0-8622-a5ba593f94c5)
+ Call ID: a2d06cbf-a70b-48e0-8622-a5ba593f94c5
+  Args:
 
 ================================= Tool Message =================================
 
@@ -823,6 +894,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ac70910c-3ac4-46f4-9ad3-a793a3063c3b)
- Call ID: ac70910c-3ac4-46f4-9ad3-a793a3063c3b
+  Finish (b7ef22bb-64b8-4002-9a4d-75ab16baae17)
+ Call ID: b7ef22bb-64b8-4002-9a4d-75ab16baae17
   Args:

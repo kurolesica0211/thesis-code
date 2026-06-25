@@ -69,48 +69,36 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
-Biography
+Lord Nicholas Charles Edward Jonathan Windsor (born 25 July 1970) is a relative of the British royal family, the youngest child of Prince Edward, Duke of Kent.
+Lord Nicholas has voiced strong anti-abortion views.
+Early years
 
-Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
-She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
-At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
-As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
-The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
-Alexia grew up in exile and was raised in between Rome and London.
-The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
-Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
-Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
-Marriage and children
+Nicholas Charles Edward Jonathan Windsor was born on 25 July 1970 at King's College Hospital in Denmark Hill, London, to Prince Edward, Duke of Kent and Katharine, Duchess of Kent.
+He has an older brother, Earl of St Andrews, and a sister, Lady Helen Taylor.
+He was baptised later that year at Windsor Castle.
+His godparents included his paternal second cousin Charles, Prince of Wales (later King Charles III), and Donald Coggan, at the time Archbishop of York and later Archbishop of Canterbury.
+Religion
 
-Queen Anne-Marie
-
-
-Queen Sofía of Spain
+Nicholas's mother, the Duchess of Kent, had been received into the Catholic Church in 1994.
+On 14 July 2011, Nicholas became an Honorary Vice-president of the Friends of the Personal Ordinariate of Our Lady of Walsingham, an Anglican Ordinariate within the Catholic Church.
+Nicholas is also a patron of the Society of King Charles the Martyr and, though it is a largely Anglican society, he identifies it with his Catholic faith.
+In a passage written by Windsor for the Society's website, he extols Charles's virtues: "In the King's personal piety, devotion and support of the Church, his ecumenical understanding (far advanced for his day), his patronage of the Arts in the service of God, his inspiration of the Christian classic, Eikon Basilike and of course his martyrdom, we have much to REMEMBER and be thankful for.
+"
 
 
-Marina, consort of Prince Michael
+Nicholas has voiced strong views on the issue of abortion, which he has stated is, as a societal threat, "worse than al-Qaeda".
+Marriage and family
 
-
-On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
-In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
-Alexia and Carlos were the only two people out of the thirteen on board to be injured.
-Alexia suffered a broken collarbone and Carlos a fractured kneecap.
-At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
-Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
-Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
-The couple have four children: 
-
-
-Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
-Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
-The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
+Nicholas met his future wife, Paola Doimi de Lupis Frankopan Šubić Zrinski, at a party in New York City in 1999 to mark the Millennium.
+By the marriage, the bride became Lady Nicholas Windsor.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +114,9 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +131,23 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,151 +439,306 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (56fc30e0-8829-4e15-a8a6-5d81abfddb91)
- Call ID: 56fc30e0-8829-4e15-a8a6-5d81abfddb91
+  AssignClass (32d2847b-4e72-402c-bdb7-b1a7f72ca21e)
+ Call ID: 32d2847b-4e72-402c-bdb7-b1a7f72ca21e
   Args:
-    type: :Woman
-    source: Alexia_of_Greece_and_Denmark
-  AssignClass (61dfe8a1-a359-4272-9467-28ab7b27d42c)
- Call ID: 61dfe8a1-a359-4272-9467-28ab7b27d42c
-  Args:
+    source: Nicholas Windsor
     type: :Man
-    source: Constantine_II_of_Greece
-  AssignClass (6f70a4a2-b159-4e40-91ea-9cae7d7a2ef0)
- Call ID: 6f70a4a2-b159-4e40-91ea-9cae7d7a2ef0
+  AssignClass (0a8848b8-b548-41f6-97a8-1da7225ae24e)
+ Call ID: 0a8848b8-b548-41f6-97a8-1da7225ae24e
   Args:
-    source: Anne-Marie_of_Greece
-    type: :Woman
-  AssignClass (076e0ea4-6445-4e89-8aab-a521b8c701fb)
- Call ID: 076e0ea4-6445-4e89-8aab-a521b8c701fb
+    type: :Person
+    source: Nicholas Windsor
+  AddLiteral (289f6d60-74ac-4460-820b-271f5c4568b1)
+ Call ID: 289f6d60-74ac-4460-820b-271f5c4568b1
   Args:
-    type: :Man
-    source: Pavlos_of_Greece
-  AssignClass (1265642e-b135-4510-b8a2-6ed365cad77b)
- Call ID: 1265642e-b135-4510-b8a2-6ed365cad77b
-  Args:
-    type: :Man
-    source: Carlos_Javier_Morales_Quintana
-  AssignClass (84f03fe6-4749-4d61-a650-f660a327b00b)
- Call ID: 84f03fe6-4749-4d61-a650-f660a327b00b
-  Args:
-    source: Theodora_of_Greece
-    type: :Woman
-  AssignClass (cb8385d0-cac5-444f-a0ef-94b4371e4190)
- Call ID: cb8385d0-cac5-444f-a0ef-94b4371e4190
-  Args:
-    source: Maria-Olympia_of_Greece
-    type: :Woman
-  AssignClass (b8e29e00-ff8d-43bb-b730-2d3d8478b4ce)
- Call ID: b8e29e00-ff8d-43bb-b730-2d3d8478b4ce
-  Args:
-    type: :Woman
-    source: Mafalda_of_Preslav
-  AssignClass (b328ae24-db8d-42ca-80d1-c03a591d86f5)
- Call ID: b328ae24-db8d-42ca-80d1-c03a591d86f5
-  Args:
-    source: Kyril_of_Preslav
-    type: :Man
-  AssignClass (e974c6c6-9dcb-4f7c-83f8-a8b0687dd517)
- Call ID: e974c6c6-9dcb-4f7c-83f8-a8b0687dd517
-  Args:
-    type: :Man
-    source: Simeon_of_Bulgaria
-  AssignClass (6450bbaf-872a-4409-bd45-06f0ecaad4b4)
- Call ID: 6450bbaf-872a-4409-bd45-06f0ecaad4b4
-  Args:
-    source: Ingrid_of_Denmark
-    type: :Woman
-  AssignClass (5c7c01c1-c297-4fc9-a8b9-2b9feeef0129)
- Call ID: 5c7c01c1-c297-4fc9-a8b9-2b9feeef0129
-  Args:
-    source: Sofia_of_Spain
-    type: :Woman
-  AssignClass (b6e785cf-8ef3-437a-bbe4-89dcfb4ef62d)
- Call ID: b6e785cf-8ef3-437a-bbe4-89dcfb4ef62d
-  Args:
-    type: :Man
-    source: Felipe_VI_of_Spain
-  AddLiteral (5b134704-86bb-4815-baf4-e29842ead9c4)
- Call ID: 5b134704-86bb-4815-baf4-e29842ead9c4
-  Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Alexia_of_Greece_and_Denmark
-    literal_value: 1965
-  AddTriple (bd12dcc1-54aa-4812-9f86-346e1027207b)
- Call ID: bd12dcc1-54aa-4812-9f86-346e1027207b
-  Args:
-    relation: :hasFather
-    source: Alexia_of_Greece_and_Denmark
-    target: Constantine_II_of_Greece
-  AddTriple (14e27a49-2d08-4dee-b69f-ab71481065e3)
- Call ID: 14e27a49-2d08-4dee-b69f-ab71481065e3
-  Args:
-    source: Alexia_of_Greece_and_Denmark
-    relation: :hasMother
-    target: Anne-Marie_of_Greece
-  AddTriple (a0e5ee79-ea29-40f0-a607-01bd0be32aaf)
- Call ID: a0e5ee79-ea29-40f0-a607-01bd0be32aaf
-  Args:
-    target: Pavlos_of_Greece
-    relation: :hasBrother
-    source: Alexia_of_Greece_and_Denmark
-  AddTriple (a1c752ef-2fbc-46dc-a040-af1997bb7896)
- Call ID: a1c752ef-2fbc-46dc-a040-af1997bb7896
-  Args:
-    relation: :hasFather
-    source: Pavlos_of_Greece
-    target: Constantine_II_of_Greece
-  AddTriple (4eb0d434-5a8d-4210-a58a-e6c1d7ec82a4)
- Call ID: 4eb0d434-5a8d-4210-a58a-e6c1d7ec82a4
-  Args:
-    target: Anne-Marie_of_Greece
-    relation: :hasMother
-    source: Pavlos_of_Greece
-  AddTriple (f92f4ed1-3163-448d-933e-da2a3dd77d69)
- Call ID: f92f4ed1-3163-448d-933e-da2a3dd77d69
-  Args:
-    target: Theodora_of_Greece
-    relation: :hasSister
-    source: Alexia_of_Greece_and_Denmark
-  AddTriple (e356ebe2-ce4b-4bc0-aff1-cbd5a2fad4f9)
- Call ID: e356ebe2-ce4b-4bc0-aff1-cbd5a2fad4f9
-  Args:
-    target: Constantine_II_of_Greece
-    source: Theodora_of_Greece
-    relation: :hasFather
-  AddTriple (5414fab0-c38c-4faa-a444-c72e871ec597)
- Call ID: 5414fab0-c38c-4faa-a444-c72e871ec597
-  Args:
-    target: Anne-Marie_of_Greece
-    source: Theodora_of_Greece
-    relation: :hasMother
-  AddLiteral (f6f5d517-1fd8-47c9-a5e6-5f0a16a50c91)
- Call ID: f6f5d517-1fd8-47c9-a5e6-5f0a16a50c91
-  Args:
-    source: Alexia_of_Greece_and_Denmark
-    relation: :hasMarriageYear
+    literal_value: 1970
     literal_type: xsd:integer
-    literal_value: 1999
-  AddTriple (c8f8dc86-9b3f-4053-a4d0-6095889ad808)
- Call ID: c8f8dc86-9b3f-4053-a4d0-6095889ad808
+    source: Nicholas Windsor
+  AddTriple (4f06b188-9914-4d93-9028-86eab6ba4261)
+ Call ID: 4f06b188-9914-4d93-9028-86eab6ba4261
   Args:
-    target: Carlos_Javier_Morales_Quintana
+    target: :Male
+    source: Nicholas Windsor
+    relation: :hasSex
+  AssignClass (807efdcb-46e9-42a5-8d23-41efff232dde)
+ Call ID: 807efdcb-46e9-42a5-8d23-41efff232dde
+  Args:
+    source: Prince Edward, Duke of Kent
+    type: :Man
+  AssignClass (5364b620-8e4b-4897-9aa0-3465d4bfbd17)
+ Call ID: 5364b620-8e4b-4897-9aa0-3465d4bfbd17
+  Args:
+    source: Prince Edward, Duke of Kent
+    type: :Person
+  AddTriple (1620c45f-154a-403e-81dc-0f36b5f57eda)
+ Call ID: 1620c45f-154a-403e-81dc-0f36b5f57eda
+  Args:
+    target: :Male
+    source: Prince Edward, Duke of Kent
+    relation: :hasSex
+  AssignClass (50963de8-3be8-47ed-938e-b11aca0db1ba)
+ Call ID: 50963de8-3be8-47ed-938e-b11aca0db1ba
+  Args:
+    source: Katharine, Duchess of Kent
+    type: :Woman
+  AssignClass (c7e1f7a7-0a1d-4bc8-ba5e-ef6e73a65dbe)
+ Call ID: c7e1f7a7-0a1d-4bc8-ba5e-ef6e73a65dbe
+  Args:
+    type: :Person
+    source: Katharine, Duchess of Kent
+  AddTriple (01cd5b6b-667e-4303-a720-cb7ee36a900e)
+ Call ID: 01cd5b6b-667e-4303-a720-cb7ee36a900e
+  Args:
+    relation: :hasSex
+    source: Katharine, Duchess of Kent
+    target: :Female
+  AddTriple (342a5625-66b8-4645-9142-aca1e0051081)
+ Call ID: 342a5625-66b8-4645-9142-aca1e0051081
+  Args:
+    target: :Prince Edward, Duke of Kent
+    source: Nicholas Windsor
+    relation: :hasFather
+  AddTriple (a31003e1-d091-443d-9d59-0e043da35981)
+ Call ID: a31003e1-d091-443d-9d59-0e043da35981
+  Args:
+    target: :Katharine, Duchess of Kent
+    source: Nicholas Windsor
+    relation: :hasMother
+  AssignClass (06ef6e08-56c0-4ada-ae16-91197750ebac)
+ Call ID: 06ef6e08-56c0-4ada-ae16-91197750ebac
+  Args:
+    type: :Man
+    source: Earl of St Andrews
+  AssignClass (85d4d049-7af5-4b69-bb9b-63842275cdc7)
+ Call ID: 85d4d049-7af5-4b69-bb9b-63842275cdc7
+  Args:
+    source: Earl of St Andrews
+    type: :Person
+  AddTriple (93062503-38b0-4780-85d0-122075de17a4)
+ Call ID: 93062503-38b0-4780-85d0-122075de17a4
+  Args:
+    relation: :hasSex
+    source: Earl of St Andrews
+    target: :Male
+  AddTriple (4088e09d-f5f9-4eb2-b19f-09018957de68)
+ Call ID: 4088e09d-f5f9-4eb2-b19f-09018957de68
+  Args:
+    relation: :hasBrother
+    target: :Earl of St Andrews
+    source: Nicholas Windsor
+  AssignClass (34088901-004d-4c7e-8451-08a9524e524b)
+ Call ID: 34088901-004d-4c7e-8451-08a9524e524b
+  Args:
+    type: :Woman
+    source: Lady Helen Taylor
+  AssignClass (ba632f5b-de54-43ab-b0c8-4bf53f16d280)
+ Call ID: ba632f5b-de54-43ab-b0c8-4bf53f16d280
+  Args:
+    type: :Person
+    source: Lady Helen Taylor
+  AddTriple (ba100519-00b0-4694-9681-71c6f38e371e)
+ Call ID: ba100519-00b0-4694-9681-71c6f38e371e
+  Args:
+    target: :Female
+    source: Lady Helen Taylor
+    relation: :hasSex
+  AddTriple (9804970c-d782-4c84-bb1b-e372d31626fb)
+ Call ID: 9804970c-d782-4c84-bb1b-e372d31626fb
+  Args:
+    relation: :hasSister
+    source: Nicholas Windsor
+    target: :Lady Helen Taylor
+  AssignClass (05024eea-911e-4640-a842-712703eb7f55)
+ Call ID: 05024eea-911e-4640-a842-712703eb7f55
+  Args:
+    type: :Woman
+    source: Paola Doimi de Lupis Frankopan Šubić Zrinski
+  AssignClass (50ab825f-4de8-41f4-b9f5-ae19d04a7021)
+ Call ID: 50ab825f-4de8-41f4-b9f5-ae19d04a7021
+  Args:
+    source: Paola Doimi de Lupis Frankopan Šubić Zrinski
+    type: :Person
+  AddTriple (b0bfbdc5-dd6d-4f9a-baa1-7b8a2d4f7e60)
+ Call ID: b0bfbdc5-dd6d-4f9a-baa1-7b8a2d4f7e60
+  Args:
+    relation: :hasSex
+    source: Paola Doimi de Lupis Frankopan Šubić Zrinski
+    target: :Female
+  AddTriple (9d2c81fd-2dc1-40a7-86de-10f2f50349e0)
+ Call ID: 9d2c81fd-2dc1-40a7-86de-10f2f50349e0
+  Args:
     relation: :hasRelation
-    source: Alexia_of_Greece_and_Denmark
-  AddTriple (360c6794-7a6a-417a-a94a-0e27fe60ab62)
- Call ID: 360c6794-7a6a-417a-a94a-0e27fe60ab62
+    target: :Paola Doimi de Lupis Frankopan Šubić Zrinski
+    source: Nicholas Windsor
+  Finish (9ee3e9c6-1701-40d0-985c-afee1bef0313)
+ Call ID: 9ee3e9c6-1701-40d0-985c-afee1bef0313
   Args:
-    target: Kyril_of_Preslav
-    relation: :hasFather
-    source: Mafalda_of_Preslav
-  AddTriple (73592aa2-3488-44f0-8407-eb4ebcfad20e)
- Call ID: 73592aa2-3488-44f0-8407-eb4ebcfad20e
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Nicholas_Windsor a :Man,
+          :Person ;
+      :hasBirthYear 1970 ;
+      :hasBrother data:Earl_of_St_Andrews ;
+      :hasFather data:Prince_Edward%2C_Duke_of_Kent ;
+      :hasMother data:Katharine%2C_Duchess_of_Kent ;
+      :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski ;
+      :hasSex data:Male ;
+      :hasSister data:Lady_Helen_Taylor .
+
+  data:Earl_of_St_Andrews a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Katharine%2C_Duchess_of_Kent a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Lady_Helen_Taylor a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Paola_Doimi_de_Lupis_Frankopan_%C5%A0ubi%C4%87_Zrinski a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Prince_Edward%2C_Duke_of_Kent a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Female', 'Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (7b16910a-ceb5-4a85-9bd0-1c1ade8d663e)
+ Call ID: 7b16910a-ceb5-4a85-9bd0-1c1ade8d663e
   Args:
-    relation: :hasFather
-    source: Kyril_of_Preslav
-    target: Simeon_of_Bulgaria
-  Finish (83707582-9e28-49bc-abf7-a54fc4bb7092)
- Call ID: 83707582-9e28-49bc-abf7-a54fc4bb7092
+    type: :Male
+    source: Male
+  AssignClass (f0e3361e-a096-435b-9ef4-f121e9f26aa4)
+ Call ID: f0e3361e-a096-435b-9ef4-f121e9f26aa4
+  Args:
+    source: Female
+    type: :Female
+  Finish (b7f9a97c-94d6-43bc-a4b8-576f14cd3f0b)
+ Call ID: b7f9a97c-94d6-43bc-a4b8-576f14cd3f0b
   Args:

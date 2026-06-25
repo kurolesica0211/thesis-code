@@ -1,0 +1,159 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:EdwardLangtry a :Man,
+        :Person ;
+    :hasBrother data:EdwardLangtry ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :isBloodrelationOf data:EdwardLangtry ;
+    :isBrotherOf data:EdwardLangtry ;
+    :isSiblingOf data:EdwardLangtry .
+
+data:HugoGeraldDeBathe a :Man,
+        :Person ;
+    :hasBrother data:HugoGeraldDeBathe ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :isBloodrelationOf data:HugoGeraldDeBathe ;
+    :isBrotherOf data:HugoGeraldDeBathe ;
+    :isSiblingOf data:HugoGeraldDeBathe .
+
+data:LouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:LouisOfBattenberg ;
+    :hasChild data:JeanneMarieLangtry ;
+    :hasDaughter data:JeanneMarieLangtry ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :isAncestorOf data:JeanneMarieLangtry ;
+    :isBloodrelationOf data:LouisOfBattenberg ;
+    :isBrotherOf data:LouisOfBattenberg ;
+    :isFatherOf data:JeanneMarieLangtry ;
+    :isParentOf data:JeanneMarieLangtry ;
+    :isSiblingOf data:LouisOfBattenberg ;
+    :isUncleOf data:JeanneMarieLangtry .
+
+data:EmilieDavisMartin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:EmilieCharlotteLangtry ;
+    :hasDaughter data:EmilieCharlotteLangtry ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :hasSister data:EmilieDavisMartin ;
+    :isAncestorOf data:EmilieCharlotteLangtry,
+        data:JeanneMarieLangtry ;
+    :isAuntOf data:EmilieCharlotteLangtry ;
+    :isBloodrelationOf data:EmilieDavisMartin ;
+    :isMotherOf data:EmilieCharlotteLangtry ;
+    :isParentOf data:EmilieCharlotteLangtry ;
+    :isSiblingOf data:EmilieDavisMartin ;
+    :isSisterOf data:EmilieDavisMartin .
+
+data:WilliamCorbetLeBreton a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilliamCorbetLeBreton ;
+    :hasChild data:EmilieCharlotteLangtry ;
+    :hasDaughter data:EmilieCharlotteLangtry ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :isAncestorOf data:EmilieCharlotteLangtry,
+        data:JeanneMarieLangtry ;
+    :isBloodrelationOf data:WilliamCorbetLeBreton ;
+    :isBrotherOf data:WilliamCorbetLeBreton ;
+    :isFatherOf data:EmilieCharlotteLangtry ;
+    :isParentOf data:EmilieCharlotteLangtry ;
+    :isSiblingOf data:WilliamCorbetLeBreton ;
+    :isUncleOf data:EmilieCharlotteLangtry .
+
+data:JeanneMarieLangtry a :Person,
+        :Woman ;
+    :hasAncestor data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :hasFather data:LouisOfBattenberg ;
+    :hasMother data:EmilieCharlotteLangtry ;
+    :hasParent data:EmilieCharlotteLangtry,
+        data:LouisOfBattenberg ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :hasSister data:JeanneMarieLangtry ;
+    :isBloodrelationOf data:JeanneMarieLangtry ;
+    :isChildOf data:EmilieCharlotteLangtry,
+        data:LouisOfBattenberg ;
+    :isDaughterOf data:EmilieCharlotteLangtry,
+        data:LouisOfBattenberg ;
+    :isSiblingOf data:JeanneMarieLangtry ;
+    :isSisterOf data:JeanneMarieLangtry .
+
+data:EmilieCharlotteLangtry a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:EmilieDavisMartin,
+        data:WilliamCorbetLeBreton ;
+    :hasBirthYear 1853 ;
+    :hasChild data:JeanneMarieLangtry ;
+    :hasDaughter data:JeanneMarieLangtry ;
+    :hasDeathYear 1929 ;
+    :hasFather data:WilliamCorbetLeBreton ;
+    :hasMarriageYear 1874,
+        1899 ;
+    :hasMother data:EmilieDavisMartin ;
+    :hasParent data:EmilieDavisMartin,
+        data:WilliamCorbetLeBreton ;
+    :hasRelation data:EdwardLangtry,
+        data:EmilieCharlotteLangtry,
+        data:EmilieDavisMartin,
+        data:HugoGeraldDeBathe,
+        data:JeanneMarieLangtry,
+        data:LouisOfBattenberg,
+        data:WilliamCorbetLeBreton ;
+    :hasSister data:EmilieCharlotteLangtry ;
+    :isAncestorOf data:JeanneMarieLangtry ;
+    :isAuntOf data:JeanneMarieLangtry ;
+    :isBloodrelationOf data:EmilieCharlotteLangtry ;
+    :isChildOf data:EmilieDavisMartin,
+        data:WilliamCorbetLeBreton ;
+    :isDaughterOf data:EmilieDavisMartin,
+        data:WilliamCorbetLeBreton ;
+    :isMotherOf data:JeanneMarieLangtry ;
+    :isParentOf data:JeanneMarieLangtry ;
+    :isSiblingOf data:EmilieCharlotteLangtry ;
+    :isSisterOf data:EmilieCharlotteLangtry ;
+    :knownAs "Emilie Charlotte Langtry"^^xsd:string .
+

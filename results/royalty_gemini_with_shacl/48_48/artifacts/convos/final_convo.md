@@ -141,6 +141,7 @@ Engineers reclaimed vast amounts of land that had been under water by building t
 However, Wilhelmina intervened because she felt the planned location was "too close" to the royal family's summer residence.
 Aside from economical and security matters, Queen Wilhelmina used most of the 1930s to find a suitable husband for Juliana.
 Many prospects from the United Kingdom and Sweden either declined or were turned down by Juliana.
+Finally, mother and daughter found a suitable match in German Prince Bernhard of Lippe-Biesterfeld.
 Wilhelmina had her lawyers draft a very detailed prenuptial agreement that specified exactly what her future son-in-law could and could not do.
 World War II
 
@@ -193,12 +194,21 @@ Eponyms
 Lèse-majesté case
 
 After Wilhelmina had taken office in 1890, rumours were spread by Socialist satirical magazine De Roode Duivel ("The Red Devil") that William III was not her real father, but Emma's confidant, Sebastiaan Mattheus Sigismund de Ranitz .
+References
+
+Sources
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -214,39 +224,9 @@ After Wilhelmina had taken office in 1890, rumours were spread by Socialist sati
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -261,6 +241,23 @@ After Wilhelmina had taken office in 1890, rumours were spread by Socialist sati
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -278,6 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -345,29 +357,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -376,6 +380,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -388,6 +400,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -396,17 +410,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -434,6 +450,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -449,119 +549,242 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (38db4e47-910b-4473-800e-dff2e87e804a)
- Call ID: 38db4e47-910b-4473-800e-dff2e87e804a
+  AssignClass (71189010-d3b7-40a5-9a47-bde446c14a6e)
+ Call ID: 71189010-d3b7-40a5-9a47-bde446c14a6e
   Args:
-    type: :Person
-    source: Wilhelmina
-  AssignClass (ca945d84-102a-4048-8366-5178f3296a9e)
- Call ID: ca945d84-102a-4048-8366-5178f3296a9e
-  Args:
-    source: Wilhelmina
     type: :Woman
-  AssignClass (d5ca9a1b-8a4d-43fc-ac32-96697929b2ac)
- Call ID: d5ca9a1b-8a4d-43fc-ac32-96697929b2ac
+    source: :Wilhelmina
+  AssignClass (55936497-14e2-4451-aa15-3ce0d1c17c06)
+ Call ID: 55936497-14e2-4451-aa15-3ce0d1c17c06
   Args:
     type: :Person
-    source: William_III
-  AssignClass (32a93f04-8aed-48b6-88af-4688440884d6)
- Call ID: 32a93f04-8aed-48b6-88af-4688440884d6
-  Args:
-    type: :Man
-    source: William_III
-  AssignClass (e7fc93c0-857d-4341-85aa-9f6a33749ae9)
- Call ID: e7fc93c0-857d-4341-85aa-9f6a33749ae9
-  Args:
-    source: William_III
-    type: :Ancestor
-  AssignClass (7fa708a6-2caa-4f63-963b-361193f39ac0)
- Call ID: 7fa708a6-2caa-4f63-963b-361193f39ac0
-  Args:
-    type: :Person
-    source: Emma
-  AssignClass (913c5981-d225-4d36-a205-ea2c30eed47c)
- Call ID: 913c5981-d225-4d36-a205-ea2c30eed47c
-  Args:
-    source: Emma
-    type: :Woman
-  AssignClass (d0d008f0-5722-4e40-a5e3-cac569fdf549)
- Call ID: d0d008f0-5722-4e40-a5e3-cac569fdf549
-  Args:
-    type: :Ancestor
-    source: Emma
-  AssignClass (29c44787-f989-4983-bdc4-ba287286b0d8)
- Call ID: 29c44787-f989-4983-bdc4-ba287286b0d8
-  Args:
-    type: :Person
-    source: Juliana
-  AssignClass (a3061c63-3f76-4805-a70e-93b763adb46e)
- Call ID: a3061c63-3f76-4805-a70e-93b763adb46e
-  Args:
-    source: Juliana
-    type: :Woman
-  AssignClass (363c4bdc-900f-4f62-af36-b141e3630023)
- Call ID: 363c4bdc-900f-4f62-af36-b141e3630023
-  Args:
-    type: :Person
-    source: Henry_of_Mecklenburg-Schwerin
-  AssignClass (9c8d21f0-c599-4678-8339-6bda7348bd18)
- Call ID: 9c8d21f0-c599-4678-8339-6bda7348bd18
-  Args:
-    type: :Man
-    source: Henry_of_Mecklenburg-Schwerin
-  AddLiteral (c07b92c9-53e7-4626-8b56-a1d9ffd41e27)
- Call ID: c07b92c9-53e7-4626-8b56-a1d9ffd41e27
+    source: :Wilhelmina
+  AddLiteral (ca55cbeb-0f8b-4f53-bb76-8e24cb31e3f2)
+ Call ID: ca55cbeb-0f8b-4f53-bb76-8e24cb31e3f2
   Args:
     literal_value: 1880
-    source: Wilhelmina
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (cb0bf702-1941-4b43-b3bd-859498353ca3)
- Call ID: cb0bf702-1941-4b43-b3bd-859498353ca3
+    literal_type: xsd:integer
+    source: :Wilhelmina
+  AddLiteral (7bf706d1-3efd-4404-b749-b0e60dc0b808)
+ Call ID: 7bf706d1-3efd-4404-b749-b0e60dc0b808
   Args:
     relation: :hasDeathYear
-    source: Wilhelmina
-    literal_type: xsd:integer
     literal_value: 1962
-  AddTriple (cdaa752f-bcca-40f7-9d38-944a00652be6)
- Call ID: cdaa752f-bcca-40f7-9d38-944a00652be6
+    source: :Wilhelmina
+    literal_type: xsd:integer
+  AssignClass (0e6a1f3f-f397-4583-b0f3-cae2d004a389)
+ Call ID: 0e6a1f3f-f397-4583-b0f3-cae2d004a389
   Args:
-    source: Wilhelmina
-    target: William_III
+    source: :William_III
+    type: :Man
+  AssignClass (c2856224-984d-43c2-a3ac-11dd2c335bc2)
+ Call ID: c2856224-984d-43c2-a3ac-11dd2c335bc2
+  Args:
+    type: :Person
+    source: :William_III
+  AssignClass (6868c126-34d4-4e8d-81af-efecb1a59498)
+ Call ID: 6868c126-34d4-4e8d-81af-efecb1a59498
+  Args:
+    type: :Woman
+    source: :Emma_of_Waldeck_and_Pyrmont
+  AssignClass (ebc21913-29ac-4089-9955-64a6f3e8fc95)
+ Call ID: ebc21913-29ac-4089-9955-64a6f3e8fc95
+  Args:
+    source: :Emma_of_Waldeck_and_Pyrmont
+    type: :Person
+  AddTriple (b2f53408-266d-4f2f-bca1-6d47adab953f)
+ Call ID: b2f53408-266d-4f2f-bca1-6d47adab953f
+  Args:
     relation: :hasFather
-  AddTriple (a5cae9dd-d553-41d5-86e2-ebc4a5ad7016)
- Call ID: a5cae9dd-d553-41d5-86e2-ebc4a5ad7016
+    target: :William_III
+    source: :Wilhelmina
+  AddTriple (2f594254-4311-44ed-ad1e-deb010dbeeb7)
+ Call ID: 2f594254-4311-44ed-ad1e-deb010dbeeb7
   Args:
+    source: :Wilhelmina
     relation: :hasMother
-    target: Emma
-    source: Wilhelmina
-  AddTriple (fedfb0f8-485c-44e1-bd90-a284f1fc368a)
- Call ID: fedfb0f8-485c-44e1-bd90-a284f1fc368a
+    target: :Emma_of_Waldeck_and_Pyrmont
+  AssignClass (cf093631-0198-4e9d-91b8-3cea6838f786)
+ Call ID: cf093631-0198-4e9d-91b8-3cea6838f786
   Args:
-    source: Wilhelmina
-    target: Juliana
-    relation: :hasDaughter
-  AddTriple (eb8372ab-6bf1-424c-8a84-751dc4be7649)
- Call ID: eb8372ab-6bf1-424c-8a84-751dc4be7649
+    source: :Juliana
+    type: :Woman
+  AssignClass (29c814a9-0d29-4c24-be39-ccdc6844c1c2)
+ Call ID: 29c814a9-0d29-4c24-be39-ccdc6844c1c2
   Args:
+    type: :Person
+    source: :Juliana
+  AddTriple (8f056f0b-a331-49cc-9b66-2d1ea9fcec21)
+ Call ID: 8f056f0b-a331-49cc-9b66-2d1ea9fcec21
+  Args:
+    source: :Juliana
+    target: :Wilhelmina
+    relation: :hasMother
+  AssignClass (e20dddbb-cf93-4709-a5f0-b266e1cb4e5d)
+ Call ID: e20dddbb-cf93-4709-a5f0-b266e1cb4e5d
+  Args:
+    source: :Henry_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (460eecda-a3fa-4d92-813f-5d8eef5efe35)
+ Call ID: 460eecda-a3fa-4d92-813f-5d8eef5efe35
+  Args:
+    source: :Henry_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (412a39b5-f9c3-434b-b8d0-d648de0124a7)
+ Call ID: 412a39b5-f9c3-434b-b8d0-d648de0124a7
+  Args:
+    source: :Juliana
+    relation: :hasFather
+    target: :Henry_of_Mecklenburg-Schwerin
+  AddLiteral (d0901b9f-7f78-4b97-bad0-2d54ae4cf2ed)
+ Call ID: d0901b9f-7f78-4b97-bad0-2d54ae4cf2ed
+  Args:
+    literal_type: xsd:integer
+    source: :Wilhelmina
+    literal_value: 1901
     relation: :hasMarriageYear
-    source: Wilhelmina
-    target: 1901
-  AddTriple (ad87ffd6-922b-4e68-a272-41486f14b23d)
- Call ID: ad87ffd6-922b-4e68-a272-41486f14b23d
+  AddTriple (5f330af8-d20b-4cfe-83d9-ffbc3b70989a)
+ Call ID: 5f330af8-d20b-4cfe-83d9-ffbc3b70989a
   Args:
+    relation: :hasRelation
+    target: :Henry_of_Mecklenburg-Schwerin
+    source: :Wilhelmina
+  AssignClass (faa9bc13-87f3-47db-a5c1-db4f78a446c9)
+ Call ID: faa9bc13-87f3-47db-a5c1-db4f78a446c9
+  Args:
+    source: :Alexander
+    type: :Man
+  AssignClass (5b2ca468-7cc1-463a-b9a8-7d88b3a398d7)
+ Call ID: 5b2ca468-7cc1-463a-b9a8-7d88b3a398d7
+  Args:
+    source: :Alexander
+    type: :Person
+  AddTriple (07672945-cae3-4e60-b253-ef7d54991fc9)
+ Call ID: 07672945-cae3-4e60-b253-ef7d54991fc9
+  Args:
+    target: :William_III
     relation: :hasFather
-    source: Juliana
-    target: Henry_of_Mecklenburg-Schwerin
-  AddTriple (d0ee8d01-c6ab-4249-aad8-5b5797dece8e)
- Call ID: d0ee8d01-c6ab-4249-aad8-5b5797dece8e
+    source: :Alexander
+  AssignClass (df2001c9-7087-4551-acbf-954d99bf57de)
+ Call ID: df2001c9-7087-4551-acbf-954d99bf57de
   Args:
-    source: Juliana
-    target: Wilhelmina
+    type: :Woman
+    source: :Sophie_of_Wurttemberg
+  AssignClass (76392a61-577f-453b-b065-3d7279d4cbea)
+ Call ID: 76392a61-577f-453b-b065-3d7279d4cbea
+  Args:
+    type: :Person
+    source: :Sophie_of_Wurttemberg
+  AddTriple (4a574a32-d5f2-435a-8326-896a075e784d)
+ Call ID: 4a574a32-d5f2-435a-8326-896a075e784d
+  Args:
+    source: :Alexander
     relation: :hasMother
-  Finish (d4a4bf4b-6208-4df0-a061-2310e5775135)
- Call ID: d4a4bf4b-6208-4df0-a061-2310e5775135
+    target: :Sophie_of_Wurttemberg
+  AssignClass (a2b061a3-809c-4cdf-98ec-0024ff9f9616)
+ Call ID: a2b061a3-809c-4cdf-98ec-0024ff9f9616
   Args:
+    source: :Beatrix
+    type: :Woman
+  AssignClass (5ba58556-efa7-4091-8868-46fcd517618a)
+ Call ID: 5ba58556-efa7-4091-8868-46fcd517618a
+  Args:
+    source: :Beatrix
+    type: :Person
+  AddTriple (c9033ee8-e678-4893-8b7c-9c050dca85a0)
+ Call ID: c9033ee8-e678-4893-8b7c-9c050dca85a0
+  Args:
+    relation: :hasMother
+    target: :Juliana
+    source: :Beatrix
+  AssignClass (8539c466-15e1-4d13-a90f-2fae30570d54)
+ Call ID: 8539c466-15e1-4d13-a90f-2fae30570d54
+  Args:
+    type: :Woman
+    source: :Margriet
+  AssignClass (95007e00-6795-4c60-a536-e150f2d2fdac)
+ Call ID: 95007e00-6795-4c60-a536-e150f2d2fdac
+  Args:
+    source: :Margriet
+    type: :Person
+  AddTriple (50bfd1a2-6d64-4ba2-8ea0-04050f2ea8ca)
+ Call ID: 50bfd1a2-6d64-4ba2-8ea0-04050f2ea8ca
+  Args:
+    source: :Margriet
+    target: :Juliana
+    relation: :hasMother
+  AssignClass (09605bf4-290e-42e2-bca7-7808690387ae)
+ Call ID: 09605bf4-290e-42e2-bca7-7808690387ae
+  Args:
+    source: :Bernhard_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (b05a2928-5693-408d-89a0-9dce8860adc3)
+ Call ID: b05a2928-5693-408d-89a0-9dce8860adc3
+  Args:
+    source: :Bernhard_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (aefec6a7-abab-4dad-89f3-c98f21068825)
+ Call ID: aefec6a7-abab-4dad-89f3-c98f21068825
+  Args:
+    source: :Juliana
+    relation: :hasFather
+    target: :Bernhard_of_Lippe-Biesterfeld
+  Finish (0db14d78-dc3a-4241-949a-c5ffb4796c61)
+ Call ID: 0db14d78-dc3a-4241-949a-c5ffb4796c61
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -646,29 +869,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Emma a :Ancestor,
-          :Person,
+  data:Alexander a :Man,
+          :Person ;
+      :hasFather data:William_III ;
+      :hasMother data:Sophie_of_Wurttemberg .
+
+  data:Beatrix a :Person,
+          :Woman ;
+      :hasMother data:Juliana .
+
+  data:Margriet a :Person,
+          :Woman ;
+      :hasMother data:Juliana .
+
+  data:Bernhard_of_Lippe-Biesterfeld a :Man,
+          :Person .
+
+  data:Emma_of_Waldeck_and_Pyrmont a :Person,
           :Woman .
+
+  data:Sophie_of_Wurttemberg a :Person,
+          :Woman .
+
+  data:Wilhelmina a :Person,
+          :Woman ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1962 ;
+      :hasFather data:William_III ;
+      :hasMarriageYear 1901 ;
+      :hasMother data:Emma_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Henry_of_Mecklenburg-Schwerin .
 
   data:Henry_of_Mecklenburg-Schwerin a :Man,
           :Person .
 
   data:Juliana a :Person,
           :Woman ;
-      :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+      :hasFather data:Bernhard_of_Lippe-Biesterfeld,
+          data:Henry_of_Mecklenburg-Schwerin ;
       :hasMother data:Wilhelmina .
 
-  data:Wilhelmina a :Person,
-          :Woman ;
-      :hasBirthYear 1880 ;
-      :hasDaughter data:Juliana ;
-      :hasDeathYear 1962 ;
-      :hasFather data:William_III ;
-      :hasMarriageYear data:1901 ;
-      :hasMother data:Emma .
-
-  data:William_III a :Ancestor,
-          :Man,
+  data:William_III a :Man,
           :Person .
 
 
@@ -681,62 +922,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b16567b6-7aff-48c2-9ba5-b8e0b5746fc8)
- Call ID: b16567b6-7aff-48c2-9ba5-b8e0b5746fc8
+  ValidateShacl (f8bcec06-f90d-4279-9e15-50a58ffbdef7)
+ Call ID: f8bcec06-f90d-4279-9e15-50a58ffbdef7
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Henry_of_Mecklenburg-Schwerin' is assigned as the father of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value William_III for the property hasFather of node Alexander is not an instance of the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henry_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(William_III, :Man)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value Sophie_of_Wurttemberg for the property hasMother of node Alexander is not an instance of the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
+      AssignClass(Sophie_of_Wurttemberg, :Woman)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Henry_of_Mecklenburg-Schwerin' is assigned as the father of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value William_III for the property hasFather of node Alexander is not an instance of the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henry_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(William_III, :Man)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value Henry_of_Mecklenburg-Schwerin for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
+      AssignClass(Henry_of_Mecklenburg-Schwerin, :Man)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Henry_of_Mecklenburg-Schwerin' is assigned as the father of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value Bernhard_of_Lippe-Biesterfeld for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henry_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(Bernhard_of_Lippe-Biesterfeld, :Man)
 
 
   Violation [6]:
+    SHACL message: More than 1 values on data:Juliana->:hasFather
+    LLM-provided explanation of the violation:
+      The node Juliana has more than one value for the property hasFather, which is restricted to a maximum of one.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Juliana, :hasFather, [value_to_remove])
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value William_III for the property hasFather of node Wilhelmina is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_III, :Man)
+
+
+  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelmina' is assigned as the mother of 'Juliana', but it lacks the required ':Ancestor' class.
+      The value Sophie_of_Wurttemberg for the property hasMother of node Alexander is not an instance of the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelmina', class=':Ancestor')
+      AssignClass(Sophie_of_Wurttemberg, :Woman)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Wilhelmina for the property hasMother of node Juliana is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelmina, :Woman)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Margriet is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Emma_of_Waldeck_and_Pyrmont for the property hasMother of node Wilhelmina is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Emma_of_Waldeck_and_Pyrmont, :Woman)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Beatrix is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value William_III for the property hasFather of node Alexander is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_III, :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Henry_of_Mecklenburg-Schwerin for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henry_of_Mecklenburg-Schwerin, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Bernhard_of_Lippe-Biesterfeld for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Bernhard_of_Lippe-Biesterfeld, :Man)
+
+
+  Violation [16]:
+    SHACL message: More than 1 values on data:Juliana->:hasFather
+    LLM-provided explanation of the violation:
+      The node Juliana has more than one value for the property hasFather, which is restricted to a maximum of one.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Juliana, :hasFather, [value_to_remove])
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value William_III for the property hasFather of node Wilhelmina is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_III, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Sophie_of_Wurttemberg for the property hasMother of node Alexander is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_of_Wurttemberg, :Woman)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Wilhelmina for the property hasMother of node Juliana is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelmina, :Woman)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Margriet is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Emma_of_Waldeck_and_Pyrmont for the property hasMother of node Wilhelmina is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Emma_of_Waldeck_and_Pyrmont, :Woman)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Beatrix is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Henry_of_Mecklenburg-Schwerin for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henry_of_Mecklenburg-Schwerin, :Man)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Bernhard_of_Lippe-Biesterfeld for the property hasFather of node Juliana is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Bernhard_of_Lippe-Biesterfeld, :Man)
+
+
+  Violation [25]:
+    SHACL message: More than 1 values on data:Juliana->:hasFather
+    LLM-provided explanation of the violation:
+      The node Juliana has more than one value for the property hasFather, which is restricted to a maximum of one.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Juliana, :hasFather, [value_to_remove])
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value William_III for the property hasFather of node Wilhelmina is not an instance of the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_III, :Man)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Wilhelmina for the property hasMother of node Juliana is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelmina, :Woman)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Beatrix is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Juliana for the property hasMother of node Margriet is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Woman)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Emma_of_Waldeck_and_Pyrmont for the property hasMother of node Wilhelmina is not an instance of the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Emma_of_Waldeck_and_Pyrmont, :Woman)
 
 
 
@@ -745,19 +1178,74 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bc13f6aa-2652-46c8-ae07-871c14532a6b)
- Call ID: bc13f6aa-2652-46c8-ae07-871c14532a6b
+  AssignClass (42bb2de9-1b2e-4a59-89cd-a9e7b499ac89)
+ Call ID: 42bb2de9-1b2e-4a59-89cd-a9e7b499ac89
+  Args:
+    source: :William_III
+    type: :Ancestor
+  AssignClass (962e0f52-8845-4d47-a54b-1a8c7ae01244)
+ Call ID: 962e0f52-8845-4d47-a54b-1a8c7ae01244
   Args:
     type: :Ancestor
-    source: Henry_of_Mecklenburg-Schwerin
-  AssignClass (ae800b6a-fa5c-4e0d-86c9-b52792a5db42)
- Call ID: ae800b6a-fa5c-4e0d-86c9-b52792a5db42
+    source: :Sophie_of_Wurttemberg
+  AssignClass (f3ba6f7c-ce3a-4476-bc7a-c71f6d0e605c)
+ Call ID: f3ba6f7c-ce3a-4476-bc7a-c71f6d0e605c
   Args:
     type: :Ancestor
-    source: Wilhelmina
-  Finish (674a9100-2169-4fe9-ac06-938d2fa1d71c)
- Call ID: 674a9100-2169-4fe9-ac06-938d2fa1d71c
+    source: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (61ee2c91-20e9-467f-8894-e695c8fe3dcc)
+ Call ID: 61ee2c91-20e9-467f-8894-e695c8fe3dcc
   Args:
+    type: :Ancestor
+    source: :Bernhard_of_Lippe-Biesterfeld
+  AssignClass (1e5f42f8-2789-4ed3-9aba-dd7a5c0d560c)
+ Call ID: 1e5f42f8-2789-4ed3-9aba-dd7a5c0d560c
+  Args:
+    source: :Wilhelmina
+    type: :Ancestor
+  AssignClass (069a0fe7-d25b-476c-97f9-b4244df8f27d)
+ Call ID: 069a0fe7-d25b-476c-97f9-b4244df8f27d
+  Args:
+    source: :Juliana
+    type: :Ancestor
+  AssignClass (d3ae8442-2dfb-4ee6-8bf5-55aadbb935d6)
+ Call ID: d3ae8442-2dfb-4ee6-8bf5-55aadbb935d6
+  Args:
+    source: :Emma_of_Waldeck_and_Pyrmont
+    type: :Ancestor
+  RemoveTriple (6647dacd-5947-42bf-92c0-8fa0a78c6c9e)
+ Call ID: 6647dacd-5947-42bf-92c0-8fa0a78c6c9e
+  Args:
+    source: :Juliana
+    relation: :hasFather
+    target: :Bernhard_of_Lippe-Biesterfeld
+  Finish (dc3200ad-03fe-4780-8592-8b0bb0bce254)
+ Call ID: dc3200ad-03fe-4780-8592-8b0bb0bce254
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -770,28 +1258,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Emma a :Ancestor,
-          :Person,
-          :Woman .
+  data:Alexander a :Man,
+          :Person ;
+      :hasFather data:William_III ;
+      :hasMother data:Sophie_of_Wurttemberg .
 
-  data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+  data:Beatrix a :Person,
+          :Woman ;
+      :hasMother data:Juliana .
+
+  data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
           :Man,
           :Person .
 
-  data:Juliana a :Person,
+  data:Margriet a :Person,
           :Woman ;
-      :hasFather data:Henry_of_Mecklenburg-Schwerin ;
-      :hasMother data:Wilhelmina .
+      :hasMother data:Juliana .
+
+  data:Emma_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Sophie_of_Wurttemberg a :Ancestor,
+          :Person,
+          :Woman .
 
   data:Wilhelmina a :Ancestor,
           :Person,
           :Woman ;
       :hasBirthYear 1880 ;
-      :hasDaughter data:Juliana ;
       :hasDeathYear 1962 ;
       :hasFather data:William_III ;
-      :hasMarriageYear data:1901 ;
-      :hasMother data:Emma .
+      :hasMarriageYear 1901 ;
+      :hasMother data:Emma_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Henry_of_Mecklenburg-Schwerin .
+
+  data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Juliana a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+      :hasMother data:Wilhelmina .
 
   data:William_III a :Ancestor,
           :Man,
@@ -807,8 +1317,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (39e3a3d2-130a-4492-bda3-6b3d184462fe)
- Call ID: 39e3a3d2-130a-4492-bda3-6b3d184462fe
+  ValidateShacl (5741b07a-201b-4e44-84a3-20c06b545c69)
+ Call ID: 5741b07a-201b-4e44-84a3-20c06b545c69
   Args:
 
 ================================= Tool Message =================================
@@ -819,97 +1329,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d3e0cd12-bbc6-4361-9d16-ef53f8e675f3)
- Call ID: d3e0cd12-bbc6-4361-9d16-ef53f8e675f3
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1901']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (b53d07e7-c54a-40f8-ba8f-5a71117df26f)
- Call ID: b53d07e7-c54a-40f8-ba8f-5a71117df26f
-  Args:
-    target: 1901
-    source: Wilhelmina
-    relation: :hasMarriageYear
-  AddLiteral (0957f60f-ce94-4a80-a985-3cb8bfc70074)
- Call ID: 0957f60f-ce94-4a80-a985-3cb8bfc70074
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1901
-    literal_type: xsd:integer
-    source: Wilhelmina
-  ValidateShacl (44dc7fd4-49f0-4dd5-8d30-dab37e2eedff)
- Call ID: 44dc7fd4-49f0-4dd5-8d30-dab37e2eedff
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Emma a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Henry_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Juliana a :Person,
-          :Woman ;
-      :hasFather data:Henry_of_Mecklenburg-Schwerin ;
-      :hasMother data:Wilhelmina .
-
-  data:Wilhelmina a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1880 ;
-      :hasDaughter data:Juliana ;
-      :hasDeathYear 1962 ;
-      :hasFather data:William_III ;
-      :hasMarriageYear 1901 ;
-      :hasMother data:Emma .
-
-  data:William_III a :Ancestor,
-          :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (12c00d90-037d-4adf-9c4f-79de3e86049d)
- Call ID: 12c00d90-037d-4adf-9c4f-79de3e86049d
+  Finish (010a84b5-a117-4b82-a01a-d4f9922e8529)
+ Call ID: 010a84b5-a117-4b82-a01a-d4f9922e8529
   Args:

@@ -7,33 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Infanta_Maria_Teresa_Isabel_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
-    data:posIndicesFull "1311:1323",
-        "402:414" ;
-    data:posIndicesPart "1143:1148",
-        "1408:1413",
-        "1514:1519",
-        "2154:2159",
-        "2230:2236",
-        "2323:2328",
-        "2377:2382",
-        "2606:2611",
-        "667:672",
-        "861:866",
-        "998:1003" ;
-    data:wdtLink wdt:Q255389 ;
-    :alsoKnownAs "Maria Teresa",
-        "Maria Teresa de Borbón y Habsburgo, Infanta de España" ;
-    :hasSex data:female .
-
-data:Luís_de_Orléans_e_Bragança a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Luís_de_Orléans_e_Bragança a :Person ;
     rdfs:label "Luís de Orléans e Bragança" ;
     data:posIndicesFull "225:256",
         "232:256" ;
@@ -44,39 +18,7 @@ data:Luís_de_Orléans_e_Bragança a :Ancestor,
         "Prince Luís of Orléans-Braganza" ;
     :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Alfonso-_Count_of_Caserta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Alfonso, Count of Caserta" ;
-    data:posIndicesFull "552:584" ;
-    data:posIndicesPart "1329:1334",
-        "1338:1345",
-        "1724:1730",
-        "2000:2006",
-        "2142:2148",
-        "2188:2194",
-        "2214:2219",
-        "2290:2296",
-        "2533:2538" ;
-    data:wdtLink wdt:Q439014 ;
-    :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
-    :hasChild data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasDaughter data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Maria_Pia_of_the_Two_Sicilies ;
-    :isParentOf data:Princess_Maria_Pia_of_the_Two_Sicilies .
-
-data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_Pia_of_the_Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Pia of the Two Sicilies" ;
     data:posIndicesFull "0:24",
         "1770:1794",
@@ -84,6 +26,7 @@ data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
         "2721:2745",
         "943:981" ;
     data:posIndicesPart "1143:1148",
+        "1311:1316",
         "1408:1413",
         "1514:1519",
         "2323:2328",
@@ -92,6 +35,7 @@ data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
         "2606:2611",
         "354:362",
         "363:368",
+        "402:407",
         "598:606",
         "629:632",
         "633:641",
@@ -105,9 +49,32 @@ data:Princess_Maria_Pia_of_the_Two_Sicilies a :Ancestor,
     data:wdtLink wdt:Q2624237 ;
     :alsoKnownAs "Maria Pia di Borbone-Due Sicilie",
         "Princess Maria di Grazia" ;
-    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
     :hasParent data:Prince_Alfonso-_Count_of_Caserta ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Alfonso-_Count_of_Caserta ;
-    :isDaughterOf data:Prince_Alfonso-_Count_of_Caserta .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Alfonso-_Count_of_Caserta a :Person ;
+    rdfs:label "Prince Alfonso, Count of Caserta" ;
+    data:posIndicesFull "552:584" ;
+    data:posIndicesPart "1329:1334",
+        "1338:1345",
+        "1724:1730",
+        "2000:2006",
+        "2142:2148",
+        "2188:2194",
+        "2214:2219",
+        "2290:2296",
+        "2533:2538" ;
+    data:wdtLink wdt:Q439014 ;
+    :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 
